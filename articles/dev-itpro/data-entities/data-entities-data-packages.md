@@ -248,6 +248,7 @@ This section provides troubleshooting information for the different stages of da
 ### Export process troubleshooting
 - If you get an error during the export process, click **View execution log** and review the log text, staging log details, and Infolog for more information.
 - If you get an error during the export process with a note directing you to not skip staging, turn off the **Skip staging** option, and then add the entity. If you are exporting multiple data entities, you can use the **Skip staging** button for individual data entities.
+- There is a limitation os 256MB on the file size that can be handled via exports. If there are large number of records that will be exported, it must be made sure that the resulting file size does not exceed this limit. Alternate approaches to handle such scenarios would be to use filters on entity to export a sub set of data at a time. But, if this is not feasible then, bring your own database must be considered in the overall solution.
 
 ### Import process troubleshooting
 When uploading data entity files:
