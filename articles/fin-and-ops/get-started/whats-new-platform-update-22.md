@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,15 +45,15 @@ Wondering about upcoming and recently released capabilities in any of our busine
 For information about the bug fixes included in each of the updates that are part of Platform update 22, sign in to Lifecycle Services (LCS) and view this KB article. XXX
 
 ## Extensibility enhancements
-With Platform update 22, a third wave of platform extensibility enhancements are available. For more information, see [Platform extensibility enhancements wave 3](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3).
+With Platform update 22, a third wave of platform extensibility enhancements are available. For more information, see [Platform extensibility enhancements wave 3](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3).
 
 ## Export up to one million rows to Excel
 The Export to Excel feature can now be configured to allow users to export up to one million rows from a grid in Finance and Operations, a substantial increase from the previous 10,000 row limit. By default, the export limit is set to 50,000 rows, but through the **Client performance options** page, system administrators can adjust the export limit as high as one million rows.
 
-For more information, see the article on [Export up to one million rows to Excel](/business-applications-release-notes/October18/dynamics365-finance-operations/export-more-rows).
+For more information, see the article on [Export up to one million rows to Excel](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/export-more-rows).
 
 ## Improved usability of the navigation pane
-The navigation pane is a highly-used navigation mechanism in Finance and Operations that provides access to favorites, recently opened pages, workspaces, and notably the main menu. Because of its high usage, the navigation pane has been enhanced in a few ways to improve its usability. These changes are available starting in Platform Update 22. To learn more, see [Improved usability of the navigation pane](/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane).
+The navigation pane is a highly-used navigation mechanism in Finance and Operations that provides access to favorites, recently opened pages, workspaces, and notably the main menu. Because of its high usage, the navigation pane has been enhanced in a few ways to improve its usability. These changes are available starting in Platform Update 22. To learn more, see [Improved usability of the navigation pane](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane).
 
 ## Restyled personalizatin toolbar
 The personalization toolbar has been restyled in Platform Update 22 to help users more easily tailor their own experiences in Finance and Operations. The following changes were made: 
