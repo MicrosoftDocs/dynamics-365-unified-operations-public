@@ -93,7 +93,6 @@ result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
 ```
 ### Samples showoing how to access  APIs
 
-```
 **Get Current cart**
 ```
 // Gets the current cart.
