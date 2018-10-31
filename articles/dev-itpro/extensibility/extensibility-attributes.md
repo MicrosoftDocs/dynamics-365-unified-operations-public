@@ -53,7 +53,7 @@ For public methods, you can opt out by adding **\[Hookable(false)\]** to the met
 
 You can opt in for private and protected methods by adding **\[Hookable(true)\]** to the method.
 
-If a method is explicitly marked as **\[Hookable(false)\]*, then it is also not wrappable.
+If a method is explicitly marked as **\[Hookable(false)\]**, then it is not wrappable.
 
 ## Final keyword
 Methods adorned with the **final** keyword can't be overridden, are not hookable, and are not wrappable.
