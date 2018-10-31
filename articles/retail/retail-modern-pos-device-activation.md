@@ -47,10 +47,13 @@ The self-service process lets you download the appropriate version of the Retail
 - Initialize settings for easy Retail Modern POS functioning (number sequence, hardware profile, merchant information) as the first touchpoint of the POS.
 - Comply with payment card industry (PCI) standards, and report on device information from Retail headquarters.
 
+> [!NOTE}
+> - If you are installing Modern POS for use with an on-prem environment, Modern POS does not use Azure Active Directory credentials for device activation
+
 ## Setup
 Before you start the steps that are outlined in this topic, follow these steps.
 
-- Verify that you have Azure AD credentials that you can use to sign in to Retail headquarters.
+- Verify that you have credentials to sign in to Retail headquarters.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
 - Verify that the Microsoft Dynamics 365 for Retail, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
@@ -58,20 +61,19 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ## <a id="Install"> </a>Download and install Retail Modern POS
 ### Verify that the device is correctly configured
 
-1. Use your Azure AD credentials to sign in to the Retail trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channels** &gt; **Channel deployment**.
-3. On the **Channel deployment** page, select the **Registers** tile.
-4. On the **Registers** page, select a store register.
+1. In Retail headquarters, go to **Retail** &gt; **Channels** &gt; **Channel deployment**.
+2. On the **Channel deployment** page, select the **Registers** tile.
+3. On the **Registers** page, select a store register.
 
     > [!NOTE]
     > The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
 
-5. Select a register by selecting the register number in the **Register number** column.
+4. Select a register by selecting the register number in the **Register number** column.
 
     > [!NOTE]
     > In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
 
-6. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**.
+5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**.
 
     > [!NOTE]
     > To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
@@ -110,6 +112,10 @@ Before you start the steps that are outlined in this topic, follow these steps.
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
 >     - **Value:** 1
+
+If you are installing Retail Modern POS for use with an on-prem environment, you must start the installer from command line as follows:
+
+ModernPosSetupOffline.exe -UseAdfsAuthentication
 
 The Retail Modern POS installer first extracts the associated files and then starts the installation.
 
