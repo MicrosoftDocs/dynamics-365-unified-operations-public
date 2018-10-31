@@ -41,8 +41,8 @@ on a product, are processed.
 
 - **Discount concurrency control model**
 - **Pricing Priority**
-- **Discount type (e.g. Simple, Mix and Match, Quantity, Threshold)**
-- **Discount concurrency mode (e.g. Exclusive, Best price and Compound)**
+- **Discount type (Simple, Mix and Match, Quantity, Threshold)**
+- **Discount concurrency mode (Exclusive, Best price, and Compound)**
 - **Multiple occurrences mode** , when it's set to **Favor retailer** (for mix-and-match least-expensive discounts only).
 
 The **Discount concurrency control model** is described below in detail; however, the rest of the properties are covered in the [Retail discounts](retail-discounts-overview.md) overview.
