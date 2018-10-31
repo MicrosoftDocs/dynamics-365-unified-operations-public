@@ -1026,7 +1026,9 @@
         - name: Fiscal calendars, fiscal years, and periods
           href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
         - name: Configure account structures
-          href: ../financials/general-ledger/configure-account-structures.md        
+          href: ../financials/general-ledger/configure-account-structures.md
+        - name: Dual currency
+          href: ../financials/general-ledger/dual-currency.md
       - name: Journals and ledgers
         items:
         - name: General journal processing
