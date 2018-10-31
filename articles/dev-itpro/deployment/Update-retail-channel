@@ -29,6 +29,7 @@ Both Apply updates and Apply extension operation will involve a downtime of up t
 
 - Cloud-hosted retail channels will not function (unless POS offline capability is enabled).
 - POS devices with offline capability enabled will have reduced functionality.
+- Any e-commerce clients dependent on Retail Server will be disrupted
 - Channels hosted on Retail Store Scale Units will remain unaffected.
 - Head office functionality will remain unaffected.
 
