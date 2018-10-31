@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 
 
 ## Overview
-This topic provides an overview of the discounts functionality in the Dynamics 365 for Retail. It explains the various properties found on the various discount forms, and best practices for discount management, but it does not cover the various discounts types i.e. Simple, Quantity, Mix and Match and Threshold discounts in detail. Those will be covered in sepearate documents created for individual discounts.
+This topic provides an overview of the discounts functionality in the Dynamics 365 for Retail. It explains the various properties found on the various discount forms, and best practices for discount management, but it does not cover the various discounts types in detail, for example; Simple, Quantity, Mix and Match, and Threshold discounts. The details will be covered in separate documents created for individual discounts.
 
-Because retailers require flexible discounting and discount styles and types vary by retail industry, there are many ways to define discounts in Dynamics 365 for Retail. The discounting functionality in Retail was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. Furthermore, the discount types can be configured for five different entities--customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy. 
+Because retailers require flexible discounting, and discount styles and types vary by retail industry, there are many ways to define discounts in Dynamics 365 for Retail. The discounting functionality in Retail was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. Furthermore, the discount types can be configured for five different entities--customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy. 
 
 ## Creating discounts
 
