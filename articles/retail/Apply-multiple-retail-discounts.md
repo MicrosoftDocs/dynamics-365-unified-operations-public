@@ -35,9 +35,7 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 
 
 ## Overview
-In this document, we will review all the factors considered when **multiple discounts can be applied to a product**. 
-In this situation, the retail pricing engine applies as many discounts as it can, to maximize the total discount amount on a product.
-Multiple options affect the order in which the discounts are applied. Throughout this document we have noted when a setting affects 
+In this document, we review all the factors considered when multiple discounts can be applied to a product. In this situation, the retail pricing engine applies as many discounts as it can, to maximize the total discount amount on a product. Multiple options affect the order in which the discounts are applied. Throughout this document we note when a setting affects 
 the order of discount application and exclusivity of a discount. Here are the settings that affect how multiple discounts, applicable
 on a product, are processed.
 
@@ -45,9 +43,9 @@ on a product, are processed.
 - **Pricing Priority**
 - **Discount type (e.g. Simple, Mix and Match, Quantity, Threshold)**
 - **Discount concurrency mode (e.g. Exclusive, Best price and Compound)**
-- **Multiple occurrences mode** , when it's set to **Favor retailer** (for mix-and-match least-expensive discounts only)
+- **Multiple occurrences mode** , when it's set to **Favor retailer** (for mix-and-match least-expensive discounts only).
 
-The Discount concurrency control model is described below in detail; however, the rest of the properties are covered in the Retail discounts overview article.
+The **Discount concurrency control model** is described below in detail; however, the rest of the properties are covered in the [Retail discounts](retail-discounts-overview.md) overview.
 
 ## Discount concurrency control model
 
