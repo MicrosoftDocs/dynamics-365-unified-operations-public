@@ -149,7 +149,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
-# [Retail 8.1.1 and later](#tab/retail-8-1-1)
+# [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
 The Generic Tax Engine component is a part of sealed extensions.
 
@@ -191,7 +191,7 @@ Follow these steps to create deployable packages that contain Retail components,
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
-    # [Retail 8.1.1 and later](#tab/retail-8-1-1)
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.Extensions.GenericTaxEngine" />
@@ -233,7 +233,7 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
     ```
 
-    # [Retail 8.1.1 and later](#tab/retail-8-1-1)
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
     > [!NOTE]
     > This step doesn't apply to this version.
@@ -290,7 +290,7 @@ Follow these steps to create deployable packages that contain Retail components,
     <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    # [Retail 8.1.1 and later](#tab/retail-8-1-1)
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
     > [!NOTE]
     > This step doesn't apply to this version.
