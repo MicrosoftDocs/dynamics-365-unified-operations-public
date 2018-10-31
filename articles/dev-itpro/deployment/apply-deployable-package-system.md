@@ -213,9 +213,11 @@ In a production environment, unlike in a sandbox environment or other types of e
     
 - When you close a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
-## Deploying packages in Retail environments
+## Applying retail updates and extensions
 
-If you're using retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md).
+If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have enabled reduced downtime updates for Retail channel components in the cloud, you will also need to update Retail channel components. For more information, see [Apply updates & extensions to Retail channel components in the cloud]().
+
+If you're using retail components (such as Retail Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md).
 
 ## Packages, runbooks, and the AXUpdateInstaller in depth
 
