@@ -42,17 +42,17 @@ The following table lists all the steps in the process, with the expected durati
 |   |                       Action                       |                                                 Duration/When                                                  |                Who                |                                                                             Notes                                                                             |
 |---|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1 |             Update Go-live date in LCS             |                                      At the latest 2-3 months in advance                                       |         Partner/Customer          |                                              The milestone dates should be kept up-to-date on an   ongoing basis                                              |
-| 2 |            Complete and send check list            |                                               After UAT complete                                               |         Partner/Customer          |                                                     Follow instructions in FastTrack   Go-live Assessment                                                     |
+| 2 |            Complete and send check list            |                                               After UAT complete                                               |         Partner/Customer          |                                                     Follow the instructions provided in the section FastTrack   Go-live Assessment later in this article                                                    |
 | 3 |   Project Assessment    (Fast Track Essentials)    |             2 business days for initial report, plus additional time   for mitigation, if required             |        FastTrack Architect        | Architect delivers assessment after checklist is received   and continues review until questions are clarified and mitigations are in   place, if applicable. |
 |   |          Project Workshop   (Fast Track)           |                                     To coordinate with architect assigned                                      |        FastTrack Architect        |                                                                                                                                                               |
-| 4 |         Release for production deployment          |                                     Upon successfully completed assessment                                     |        FastTrack Architect        |                                 If the production deployment request has already been   submitted, deployment will start now                                  |
+| 4 |         Release for production deployment          |                                     Upon successfully completed assessment                                     |        FastTrack Architect        |                                 If the production deployment request has already been   submitted, deployment will start now. However, we request that you only submit the Production request once the assessment has been successfully completed.                                   |
 | 5 |           Production deployment request            |                                                  Self-service                                                  |             Customer              |                    The production deployment request should only be submitted   after the FastTrack Architect has finished the assessment                     |
 |   |                       Sizing                       | Immediate in case of automatic sizing.    Could require further clarifications of the subscription   estimate. |            Sizing team            |                                   Automatic sizing based on subscription estimate by   default, manual sizing by exception.                                   |
-|   |                     Deployment                     |                                                    48 hours                                                    | Dynamic Service Engineering (DSE) |                                                        Status in LCS reflects the deployment progress                                                         |
-| 6 |      Deployable Package Installation request       |                                                  Self-service                                                  |             Customer              |                                                    Follow the instructions in Apply a   deployable package                                                    |
-|   |                Package installation                |          Depends on number of packages, minimum 5 hours lead time   and 4 hours downtime per package           | Dynamic Service Engineering (DSE) |                                                                                                                                                               |
+|   |                     Deployment                     |                                                    48 hours                                                    | Dynamic Service Engineering (DSE) |                                                        Status in LCS reflects the deployment progress. Should there be any questions about your request, they will be posted as Comments on the service request.                                                          |
+| 6 |      Deployable Package Installation request       |                                                  Self-service                                                  |             Customer              |                                                    Follow the instructions in the article "Apply a deployable package"                                                    |
+|   |                Package installation                |          Depends on number of packages, minimum 5 hours lead time   and 4 hours downtime per package           | Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than an hour. We still recommend to provide a downtime window of 4 hours in case a rollback is required for any reason. If the package deployment succeeds, which it does almost all of the time, the environment will be available as soon as the package deployment has finished, meaning that the longer downtime window does not have any negative effect on the availability of the system.                                                                                                                                                              |
 | 7 | Database Copy from Sandbox request (if applicable) |                                                  Self-service                                                  |             Customer              |   Must exactly follow instructions documented in Copy   a Finance and Operations database from SQL Server to a production Azure SQL   Database environment    |
-|   |                   Copy database                    |                                     5 hours lead time and 2 hours downtime                                     | Dynamic Service Engineering (DSE) |                                                                                                                                                               |
+|   |                   Copy database                    |                                     5 hours lead time and 2 hours downtime                                     | Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than an hour. We still recommend to provide a downtime window of 2 hours in case a rollback is required for any reason.                                                                                                                                                               |
 | 8 |                  Production ready                  |                                  After all previous steps have been completed                                  |         Customer/Partner          |                                               Customer/Partner can take control of the production   environment                                               |
 |   |                 Cutover activities                 |                                             Depends on the project                                             |         Customer/Partner          |                                                                                                                                                               |
 | 9 |                      Go live                       |                                             Depends on the project                                             |             Customer              |                                                                                                                                                               |
@@ -74,7 +74,7 @@ It's good practice to complete the steps in the methodology as you make progress
 
 ## UAT for your solution
 
-During the UAT phase, you should test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox: Standard Acceptance Test environment in the implementation project. To help guarantee a successful go-live, you should keep the following points in mind as you complete the UAT phase:
+During the UAT phase, you must test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox: Standard Acceptance Test environment in the implementation project. To help guarantee a successful go-live, you should keep the following points in mind as you complete the UAT phase:
 
 - Test cases cover the whole scope of requirements.
 - Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.
@@ -90,9 +90,9 @@ It isn't enough that you test in an environment that is a developer or demo topo
 
 ## FastTrack Go-live assessment
 
-Finance and Operations customers should complete a Pre go-live review with the Microsoft FastTrack team before they request their production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
+All Finance and Operations customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be sucessfully completed before you request your Production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
 
-About eight weeks before go-live, the FastTrack team will ask you to fill in a Pre go-live checklist:
+About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist:
 
 - If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, the solution architect will contact you.
 - If you have 20–149 seats, the checklist will be sent to you from <go-live@microsoft.com>.
@@ -100,22 +100,30 @@ About eight weeks before go-live, the FastTrack team will ask you to fill in a P
 
 You can also [download the checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops).
 
-The project manager or a key project member must complete Pre go-live checklist during the Pre go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.
+The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.
 
-When you've completed the Pre go-live checklist, follow one of these steps:
+When you've completed the go-live checklist, follow one of these steps:
 
 - If you have 20–149 seats, send the checklist to <go-live@microsoft.com>.
 - If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, send the checklist to the solution architect.
 
 After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.
 
-If you request the production environment before the assessment is completed, the deployment will be put on hold until the assessment is successfully completed.
+If you request the production environment before the assessment is completed, the deployment will remain in Queued state until the assessment is successfully completed.
+
+You can cancel an environment deployment request while it is in Queued state by following these steps:
+- Click the Queued button
+- Select the Customer sign-off tab
+- Click Clear sign-off
+
+This will set the environment back into Configure state and allow you to make chnges to the Configuration such as selecting a different data center or environment topology).
+
 
 ## Requesting the production environment
 
-After you've completed the Analysis, Design and develop, and Test phases in the LCS methodology, and the Go-live assessment has concluded that the project is ready, you can request your production environment.
+After you've completed the Analysis, Design and develop, and Test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.
 
-We recommend that you select a generic user account as the Admin user of the environments that you deploy. If you use a named user account, you might not be able to access an environment if that user isn't available. Here are some scenarios where the Admin user must access an environment:
+We recommend that you select a service account, i.e. a generic user account, as the Admin user of the environments that you deploy. If you use a named user account, you might not be able to access an environment if that user isn't available. Here are some scenarios where the Admin user must access an environment:
 
 - **First sign-in to any environment after initial deployment** – In this case, the Admin user is the only user who can access the environment.
 - **First sign-in to a sandbox environment after a database refresh from the production environment** – In this case, all user accounts except the Admin account are disabled.
