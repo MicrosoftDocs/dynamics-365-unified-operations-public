@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 8.1
 You can dispose of fixed assets for any of the following reasons:
 
   - An asset is sold to other legal entities or private individuals.
-  - An asset is transferred and used as a deposit in joint activities or as a charter capital.
+  - An asset is transferred and used as a deposit in joint activities or as charter capital.
   - An asset is donated or used as another type of non-compensated transfer.
   - An asset is liquidated because of an accident or natural disaster.
   - An asset is exchanged through an exchange agreement.
@@ -51,7 +51,7 @@ There are three ways to create a disposal transaction:
 
 
 > [!NOTE]
-> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual period that the asset is used before its disposal [Set up automatic creation of deferrals account](#Set-up-the-automatic-creation-of-a-deferrals-account).
+> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual period that the asset is used before its disposal. For more information, see [Set up automatic creation of deferrals account](#Set-up-the-automatic-creation-of-a-deferrals-account).
 
 You can record the sale of fixed assets in Fixed assets, or you can create a sales order or a free text invoice in Accounts receivable. When you sell a fixed asset, you must calculate its depreciation during that period.
 
@@ -72,7 +72,7 @@ However, if the invoice expenses are included in the order line that corresponds
 
 1.  Click **Fixed assets** \> **Setup** \> **Depreciation group**.
 2.  Click the **Deferrals** FastTab, and then set up the parameters for creating deferrals when a loss is realized.
-3.  Select **Disposal**, if you want to dispose of the fixed asset entirely, or **Partial dismantlement** to dispose of part of the fixed asset.
+3.  Select **Disposal** if you want to dispose of the fixed asset entirely, or **Partial dismantlement** to dispose of part of the fixed asset.
 4.  Fill in  the **Model number**, **Deferrals group** and **Expense code** fields.
 
 
@@ -81,16 +81,16 @@ However, if the invoice expenses are included in the order line that corresponds
 
 1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders** and create a new sales order.
 2.  Enter information about the sales order.
-3.  Click the Lines tab in the lower pane. 
-4.  In the Item number field, select the item number, which is related to the fixed asset group. On the **Line detail** /> **Fixed asset** tab, enter the fixed assets (Fixed asset (Russia)). If you select an item with the Service product type in the sales line you can enter several fixed assets. In this case, the quantity of fixed assets should be equal to the quantity that is specified on the sales line. You can also enter a fixed asset on the sales line, if you select the item with the Item product type.
-    > [!NOTE]
-    > For creation a new item, see [Create released product](../../supply-chain/pim/tasks/create-released-product-single-company.md).
+3.  Click the **Lines** tab in the lower pane. 
+4.  In the **Item number** field, select the item number, which is related to the fixed asset group. On the **Line detail > Fixed asset** tab, enter the fixed assets (Fixed asset (Russia)). If you select an item with the Service product type in the sales line you can enter several fixed assets. In this case, the quantity of fixed assets should be equal to the quantity that is specified on the sales line. You can also enter a fixed asset on the sales line if you select the item with the Item product type. To create a new item, see [Create released product](../../supply-chain/pim/tasks/create-released-product-single-company.md).
 
     > [!NOTE]
+    > To create a new item, see [Create released product](../../supply-chain/pim/tasks/create-released-product-single-company.md).
+    >
     > Click **Inventory management** &gt; **Setup** &gt; **Inventory** &gt; **Item model groups**. If the **Physical negative inventory** check box is selected, then you can sell an item that is a fixed asset type without entering an inventory item. If not, you can sell an inventory asset that has a **Purchased** status.
 
 12. Click **Posting** \> **Facture** to post the sales order.
-13. Click **OK** to post the sales invoice. An invoice, facture, ledger, and fixed asset transactions are created, and the **Status** of the sales invoice changes to **Shipped**. The status of fixed asset, changes to **Written off (sale)**. The **Disposal (sale)** and **Gain/Loss** fields are updated on the **FA balances** page. The **Disposal date** and **Disposal cost** fields are updated on the **FA Value models** page.
+13. Click **OK** to post the sales invoice. An invoice, facture, ledger, and fixed asset transactions are created, and the **Status** of the sales invoice changes to **Shipped**. The status of fixed asset changes to **Written off (sale)**. The **Disposal (sale)** and **Gain/Loss** fields are updated on the **FA balances** page. The **Disposal date** and **Disposal cost** fields are updated on the **FA Value models** page.
 
 ## Create a free text invoice for a fixed asset
 
@@ -112,8 +112,8 @@ However, if the invoice expenses are included in the order line that corresponds
     > When including references to the fixed asset in an invoice line, its status changes to **Sold (waiting for posting)**.
 
 15. Click **Posting** \> **Update facture** to open the **Post facture** page.
-16. Click **OK** to post the facture. An invoice, facture, and ledger and fixed asset transactions are created, and the status changes to **Shipped**. The status of the asset is **Written off (sale)**.
-17. Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**. to open **FA Value Models** form. The disposal date and cost of the fixed asset are displayed in the **Disposal date** and **Disposal cost** fields.
-18. Click **Balance** to open the **FA balances** form. The details are displayed in the **Leaving (sale)** and **Gain/Loss** fields.
+16. Click **OK** to post the facture. An invoice, facture, ledger, and fixed asset transactions are created, and the status changes to **Shipped**. The status of the asset is **Written off (sale)**.
+17. Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets** to open **FA Value Models** page. The disposal date and cost of the fixed asset are displayed in the **Disposal date** and **Disposal cost** fields.
+18. Click **Balance** to open the **FA balances** page. The details are displayed in the **Leaving (sale)** and **Gain/Loss** fields.
 
 
