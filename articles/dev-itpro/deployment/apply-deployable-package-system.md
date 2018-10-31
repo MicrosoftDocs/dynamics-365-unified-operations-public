@@ -60,8 +60,10 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created in a development or build environment.
 - **Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft.
-- **Combined Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
-- **Merged package** – A package that is created by combining one package of each type. For example, one binary update package, one AOT package, and one Retail package can be combined. The packages are merged in the Asset library for the project in LCS.
+- **Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
+- **Merged package** – A package that is created by combining one package of each type. For example, you can merge one binary update package and one AOT package, or one AOT package and one Retail deployable package. The packages are merged in the Asset library for the project in LCS.
+> [!NOTE] 
+> A binary package and a Retail deployable package can't be included in the same merged package.
 
 ## Prerequisite steps
 

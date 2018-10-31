@@ -271,7 +271,7 @@
     href: ../supply-chain/pim/search-products-product-variants.md
 - name: Loyalty
   items:
-  - name: Set up customer loyalty programs
+  - name: Loyalty overview
     href: set-up-customer-loyalty-program.md
 - name: Inventory
   items:
@@ -307,6 +307,8 @@
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
+  - name: Fiscal integration for Retail channel
+    href: localizations/fiscal-integration-for-retail-channel.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
@@ -331,6 +333,10 @@
       href: localizations/apac-ind-loc-deployment-guidelines.md
     - name: Support for upgrade and N-1 for India
       href: localizations/apac-ind-n-1-for-india.md
+  - name: Italy
+    items:
+    - name: Fiscal printer integration
+      href: localizations/emea-ita-fpi-sample.md
   - name: Norway
     items:
     - name: Cash register functionality

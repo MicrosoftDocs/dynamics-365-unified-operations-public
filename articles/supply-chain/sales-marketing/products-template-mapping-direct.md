@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](/powerapps/administrator/data-integrator.md).
+> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 This topic discusses the templates and underlying tasks that are used to synchronize products directly from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales.
 
