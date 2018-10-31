@@ -41,7 +41,7 @@ This topic describes features that are either new or changed in Core HR.
 This new navigation functionality allows you to link from Talent to Finance and Operations, giving you direct navigation into Finance and Operations pages. When links are configured, you can specify the name and group of the link, where the link should surface in Talent, and the target page to be opened within Finance and Operations.
 
 ### Coming soon
-Field context will be added in the future to allow for direct navigation to corresponding records in Finance and Operations. For example, you can use “Link to field” to provide the context to navigate directly to a specific employee or position in Finance and Operations.
+Field context will be added in the future to allow for direct navigation to corresponding records in Finance and Operations. For example, you can use **Link to field** to provide the context to navigate directly to a specific employee or position in Finance and Operations.
 
 ### Configure target systems
 
@@ -49,55 +49,56 @@ In Talent, system administrators can define links that will be surfaced through 
 
 ### Configure Links
 
-Each link that is created will have the following information defined:
+Each link that is created will have the following information defined.
 
 - Link: Name of the link, used for identification only.
 
-- Enable this Link: Set this to Yes if you want to display the link to users of Talent.
+- Enable this Link: Set this to **Yes** if you want to display the link to users of Talent.
 
 - Display Name: Define the name that will appear as a link to Finance and Operations. This data currenlty is not translated.
 
-- Surface link on form: Choose which form you would like to display the link.
+- Surface link on form: Choose which page you would like to display the link on.
 
-- Group: Groups are not required, but if you want to orgainize your links using groups select an existing group or create a new one using the Group field.
+- Group: Groups are not required, but if you want to orgainize your links using groups, select an existing group or create a new one using the **Group** field.
 
-- Target system: Select the target system, that was created using the Configure target system option. This will be the Fianance and Operations environment that will be used when navgating using the link.
+- Target system: Select the target system that was created using the **Configure target system** option. This will be the Fianance and Operations environment that will be used when navgating by means of the link.
 
-- Use user's current Company: Select yes if you would like to use the Users current company context when navigating to Finance and Opersions. If No is selected, then you can select the company that should be used when navigating.
+- Use user's current Company: Select **Yes** if you would like to use the User's current company context when navigating to Finance and Opersions. If **No** is selected, then you can select the company that should be used.
 
-- Target menu item: Enter the menu item from Finance and Operation that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and Operations and open the form that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Fiance and operations enter the value you see after the "&mi" in the URL. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
+- Target menu item: Enter the menu item from Finance and Operation that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and Operations and open the page that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Fiance and operations, enter the value you see after the "&mi" in the URL. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
 
-- Link to data source: Select from the drop down list the source of data that the link is referencing. The most common sources like Worker and position are avialble to select.
+- Link to data source: Select from the drop down list the source of data that the link is referencing. The most common sources like **Worker** and **Position** are avialable.
 
-- **Coming soon**: Link to field: We will also enable field selection to allow for direct navigation from a single record in Talent to a single record in Finance and Operations.
+- **Coming soon** Link to field: field selection will be enabled to allow for direct navigation from a single record in Talent to a single record in Finance and Operations.
 
-## Access to Links
+### Access to Links
 
-System administrators will see the newly created links on the defined forms even if the "Enable this link" option is set to no. This will also for testing of the links prior to surfacing to other employees. All other roles will only see the configured links after the Enable this link option is set to yes. Employees that have access to the forms in which the links are surfaced will have access to the links.
-Individuals must also have secuirty rights within Finance and Operations defined to the forms in question. If you don't, standard security dialogs be displayed when navigating using the link.
+System administrators will see the newly created links on the defined pages even if the **Enable this link** option is set to **No**. This will also for testing of the links prior to surfacing them to other employees. All other roles will only see the configured links after the **Enable this link** option is set to **Yes**. Employees that have access to the pages in which the links are surfaced will have access to the links.
+
+Individuals must also have secuirty rights within Finance and Operations defined to access the pages in Finance and Operations. If they don't, standard security dialogs be displayed when navigating using the link.
 
 
 ## Other changes/fixes
 
-## Positions with a future start date cannot be assign to a new Employee.
+### Positions with a future start date cannot be assigned to a new Employee
 
-Changes have been made to allow employee assignments to future dated positions. Positions that have start dates in the future can be selected and the employee assignment will be made upon save or completion of the workflow (if workflow is enabled)
+Changes have been made to allow employee assignments to future dated positions. Positions that have start dates in the future can be selected and the employee assignment will be made upon save or completion of the workflow (if the workflow is enabled).
 
 ## New employee cannot be assigned existing position
 
 Additional changes have been made when evaluating available for assignment dates to allow for employee assignment to existing positions.
 
-## Seniority date/Office location disappears when the employment start date is in the past and the record is saved.
+## Seniority date/Office location disappears when the employment start date is in the past and the record is saved
 
-Changes have been made to correct the User experience visibiltiy of the Senority date and Office location when saving changes for past employees.
+Changes have been made to correct the visibiltiy of the **Senority date** and **Office location** when saving changes for past employees.
 
-## Can't enter data for Future Dated Employments On the worker form
+## Can't enter data for Future Dated Employments on the worker page
 
-Employment data for future dated employments has been disabled on the main worker form. Employment data can be entered through the Date Manager forms. Additonal changes will be made in future releases to enable employment data direclty during the workflow process.
+Employment data for future dated employments has been disabled on the main worker page. Employment data can be entered through the **Date Manager** pages. Additonal changes will be made in future releases to enable entering employment data direclty during the workflow process.
 
 ## Add ValidFrom and ValidTo to HcmPersonalContactPersonEntity
 
-DMF (Data Management Framework) entity HcmPersonalContactPersonEntity has been updated to include valid from and valid to dates to enable certain benefit integration scenarios. 
+DMF (Data Management Framework) entity HcmPersonalContactPersonEntity has been updated to include "valid from" and "valid to" dates to enable certain benefit integration scenarios. 
 
 ## Known issue
 - **Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. 
