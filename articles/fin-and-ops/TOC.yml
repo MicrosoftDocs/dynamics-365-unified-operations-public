@@ -2126,6 +2126,8 @@
       - name: Poland
         href: ../financials/localizations/poland.md
         items:
+        - name: Activate storno accounting
+          href: ../financials/localizations/emea-pol-red-storno.md
         - name: Calculate line discounts from the unit price
           href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
         - name: Correction notes
