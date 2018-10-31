@@ -55,7 +55,7 @@ Each link that is created will have the following information defined.
 
 - Enable this Link - Set to **Yes** if you want to display the link to users of Talent.
 
-- Display Name - Define the name that will appear as a link to Finance and Operations. This data is currently is not translated.
+- Display name - Define the name that will appear as a link to Finance and Operations. This data is currently is not translated.
 
 - Surface link on form - Choose which page you would like to display the link on.
 
