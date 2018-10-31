@@ -211,9 +211,9 @@ it is priority 5 for all the products.
 
 | **Transaction quantity** | **Product** | **Discount applied** | **Discounted price** | **Priority 5** (**C4**) | **Amount due** |**Explanation** |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Prod1 | C1, C2 | $8.1 | $.81\*\* | 8.1- .81 = $7.29 | For Threshold discounts, Priority 5 is highest applicable priority for this product, so any applicable threshold discounts at priority 5 will be compounded with the applied discounts, if the applied discounts are of discount concurrency mode \*Compound\*. Since Prod1 has compound discounts only, so the compound threshold discounts can be compounded |
+| 1 | Prod1 | C1, C2 | $8.1 | $.81\*\* | 8.1- .81 = $7.29 | For Threshold discounts, Priority 5 is highest applicable priority for this product, so any applicable threshold discounts at priority 5 will be compounded with the applied discounts, if the applied discounts are of discount concurrency mode \*Compound\*. Since Prod1 has compound discounts only, so the compound threshold discounts can be compounded. |
 | 1 | Prod2 | BP1 | $17 |  (NA) | $17 | For Threshold discounts, Priority 5 is highest applicable priority for this product, so any applicable threshold discounts at priority 5 will be compounded with the applied discounts if the applied discounts are of discount concurrency mode \*Compound\*. Since Prod2 has a "Best price" discount, so other discounts CANNOT be applied to this product.|
-| 1 | Prod3 | C3 | $7.5 | $.75\*\* | 7.5 - .75 = $6.75 | For Threshold discounts, Priority 5 is highest applicable priority for this product, so any applicable threshold discounts at priority 5 will be compounded with the applied discounts, if the applied discounts are of discount concurrency mode \*Compound\*. Since Prod3 has compound discounts only, so the compound threshold discounts can be compounded |
+| 1 | Prod3 | C3 | $7.5 | $.75\*\* | 7.5 - .75 = $6.75 | For Threshold discounts, Priority 5 is highest applicable priority for this product, so any applicable threshold discounts at priority 5 will be compounded with the applied discounts, if the applied discounts are of discount concurrency mode \*Compound\*. Since Prod3 has compound discounts only, so the compound threshold discounts can be compounded. |
 
 So, the final amount due for Prod1 is 7.29, Prod 2 is 17, Prod 3 is 6.75.
 
@@ -311,7 +311,7 @@ there are none for prod3 at priority 5.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Prod1 | $10 | $1 | $1 | $1.50\*\* | $10 - 1.50 = $8.50 | Since the compound discounts are treated as the "Best price"; discounts for this discount concurrency control model, so the compound discounts will not combine. Rather they all compete for the best discount. Since, BP1 gives the highest discount so BP1 gets applied at priority 10. |
 | 1 | Prod2 | $20 | $1 | $2 | $3\*\* | $20 - 3 = $17.00 | Same as above. Since, BP1 gives the highest discount so BP1 gets applied at priority 10.   |
-| 1 | Prod3 | $10 |   |   |   | $10 | No discounts applicable at priority 10 |
+| 1 | Prod3 | $10 |   |   |   | $10 | No discounts applicable at priority 10. |
 
 
 
@@ -340,8 +340,6 @@ discounts which have been applied at a higher priority
 | 1 | Prod1 | BP1 | C3 | $6.37 | (NA) | $6.37 | For Threshold discounts, Priority 5 is highest applicable priority for this product. But the threshold discount at priority 5 will only get applied if there is no other discount applied at the priority 5. This is because both best price and compound discounts are treated as "Best price" and only one discount per priority is allowed with this discount concurrency control. So, the threshold discount is ignored. |
 | 1 | Prod2 | BP1 | C3 | $12.75 | (NA) | $12.75 | Same as above |
 | 1 | Prod3 |   | C3 | $7.5 | (NA) | $7.5 | Same as above |
-
-
 
 So, the final amount due for prod1 is 6.37, Prod 2 is 12.75, Prod 3 is 7.5.
 
