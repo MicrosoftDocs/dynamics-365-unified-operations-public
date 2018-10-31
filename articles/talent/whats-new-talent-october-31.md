@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)"
+# What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -38,13 +38,13 @@ ms.dyn365.ops.version: Talent
 This topic describes features that are either new or changed in Core HR.
 
 ## Create links from Talent to Finance and Operations
-This new navigation functionality allows for Talent to link directly to Finance and Operations giving you direct navigation into Finance and Operations forms. When links are configured you can specify the name and group of the link, where the link should surface in talent and the target form to be opened within Finance and Operations.
+This new navigation functionality allows you to link from Talent to Finance and Operations, giving you direct navigation into Finance and Operations pages. When links are configured, you can specify the name and group of the link, where the link should surface in Talent, and the target page to be opened within Finance and Operations.
 
-**Coming soon**: Field context will also be added in the future to allow for direct navigation to corresponding records in Finance and Operations. For Example: Links will allow defining a “Link to field” which will provide the context to navigate directly to a specific employee or position in Finance and Operations.
+**Coming soon**: Field context will also be added in the future to allow for direct navigation to corresponding records in Finance and Operations. For example, you can use “Link to field” to provide the context to navigate directly to a specific employee or position in Finance and Operations.
 
 **Configure target systems**
 
-In Talent, System Administrators can define links that will be surfaced through System Administration workspace. Part of the definition is defining the Finance and Operations environments that you would like to navigate to as the "target" of the link. You do this by naming the giving the target system a name and providing the URL of the Finance and Operations environment. Here is an example of a Finance and Operations URL that you will provide: https://devax00124aos.cloud.test.dynamics.com/. Once you have configured your target systems now you can define your links.
+In Talent, system administrators can define links that will be surfaced through the System Administration workspace. Part of the configuration is the Finance and Operations environments that you would like to navigate to as the "target" of the link. You do this by giving the target system a name and providing the URL of the Finance and Operations environment. Here is an example of a Finance and Operations URL that you would provide: https://devax00124aos.cloud.test.dynamics.com/. Once you have configured your target systems,  you can define your links.
 
 **Configure Links**
 
