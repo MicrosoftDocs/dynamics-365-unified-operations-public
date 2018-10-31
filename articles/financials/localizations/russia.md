@@ -52,7 +52,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
 - [Set up fixed asset locations and numbering](rus-fixed-assets-locations-numbering.md)
 - [Set up depreciation](rus-depreciation-setup.md)
-- [Depreciation methods](us-depreciation-methods.md)
+- [Depreciation methods](rus-depreciation-methods.md)
 - [Depreciation bonuses](rus-bonus-depreciation.md)
 - [Calculate depreciation](rus-depreciation-calculation.md)
 
