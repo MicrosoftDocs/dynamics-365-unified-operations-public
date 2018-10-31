@@ -44,6 +44,8 @@ Pre-requisites
 
 Before you can start installation of Retail channel components, you must first complete all prior installation steps for an on-prem environment as listed here (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments).
 
+You must also ensure that you only use a secure network to connect Retail Store Scale Unit (RSSU) to Retail headquarters that is not publically accessible. You must also restrict network access to Retail headquarters only to known RSSU devices devices via network filtering or other means.
+
 Installation steps
 
 1.	On the previously created file share, create a new folder called RetailSelfServicePackages
