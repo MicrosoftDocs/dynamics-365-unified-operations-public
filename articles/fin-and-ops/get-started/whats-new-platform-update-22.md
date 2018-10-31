@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/30/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,8 +69,3 @@ The following image shows how the personalization toolbar appeared before Platfo
 The following image shows how the personaliation toolbar appears in Platform update 22 and later.
 
 ![Personalization toolbar in Platform Update 22 and later](media/restyledPersonalizationToolbar.png  "Personalization toolbar in Platform Update 22 and later]")
-
-
-
-
-
