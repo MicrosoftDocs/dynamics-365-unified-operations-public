@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Power BI integration for workspaces
-description: This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
+description: This topic describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
 ms.date: 01/09/2018
@@ -42,7 +42,7 @@ This functionality requires a one-time configuration of your environment. An adm
 
 Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to show a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the Finance and Operations workspace. The fact that the Finance and Operations server contacts the Power BI service "on behalf of a user" is important. When a user, such as `D365User@contoso.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from D365User's PowerBI.com subscription.
 
-By completing this configuration step, you enable Microsoft Dynamics 365 Finance and Operations to contact the PowerBI.com service.
+By completing this configuration step, you enable Finance and Operations to contact the PowerBI.com service.
 
 ## Things you must know before you start 
 
@@ -54,35 +54,35 @@ By completing this configuration step, you enable Microsoft Dynamics 365 Finance
 
 ## Registration process 
 
-1. Log in https://portal.azure.com/ by using Azure tenant admin account<br>
-   **Reminder:** The user executing this procedure must have Admin rights for the tenant to register applications
+1. Log in to https://portal.azure.com/ using Azure tenant admin account.<br>
+> [!NOTE]
+> The user who completes this procedure must have Admin rights for the tenant to register applications.
 
-2. Go to **Azure Active Directory >> App registrations >>  New application registration** 
+2. Go to **Azure Active Directory** > **App registrations** > **New application registration**.<br>
     ![Azure Portal App Registration](media/Azure-Portal-AppRegistration.png)
 
-3. Enter the following values in the dialog.
-	**Name:** Your app name
-	**Application type:** Web app / API
-	**Sign-on URL:** The base URL of your Finance and Operations client, and then add the OAuth suffix<br>
-			 For example: http://contosoax7.cloud.dynamics.com/oauth
+3. Enter the following values in the dialog:
+
+- **Name**: Your app name.
+- **Application type**: Web app / API
+- **Sign-on URL**: The base URL of your Finance and Operations client and the OAuth suffix. For example, http://contosoax7.cloud.dynamics.com/oauth.
 			 
-4. Click **Create** button
-5. Copy the value of **Application ID** which will be used in Finance and Operations to connect to PowerBI.com service
-6. Click **Settings >> Required permissions >> Add >> Select an API >> Power BI Service (Power BI)**
+4. Click **Create**.
+5. Copy the **Application ID**. This will be used in Finance and Operations to connect to the PowerBI.com service.
+6. Click **Settings** > **Required permissions** > **Add** > **Select an API** > **Power BI Service (Power BI)**.
 7. Click **Select**.
-8. Enable Access as below and click **Select**
+8. Enable Access and click **Select**.<br>
     ![Azure Portal App Permissions](media/Azure-Portal-AppPermissions.png)
 
-9. Now, Click **Done**
-10. Click **Grant Permissions**.
-11. Click **Settings >> Keys**.
-12. Set value for **Key description** and **Expires**, and then Click **Save** button
+9. Click **Done** and then click **Grant Permissions**.
+10. Click **Settings** > **Keys**.
+11. Enter a value for **Key description** and **Expires**, and then click **Save**.
 
 Make a note of the **Application ID** and **Application Key**. You will use these values in the next procedure.
 
 ## Specify Power BI settings in Finance and Operations
 
-1. In the Finance and Operations client, open the **Power BI configuration** page.
+1. In the Finance and Operations client, open the **Power BI configuration** page.<br>
     ![Power BI configuration dialog](./media/D365-PBI-Configuration.png)
 
 2. Select **Edit**.
@@ -92,30 +92,31 @@ Make a note of the **Application ID** and **Application Key**. You will use thes
 
     You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released with Finance and Operations uses this convention.
 
-6. Select **Save** button to apply changes
+6. Click **Save**.
 
-Now, use the following steps to verify the changes to enabled PowerBI.com integrations.
+Complete the steps in the next section to verify the changes and enable PowerBI.com integrations.
 
 ## Pin tiles to a workspace
 
-1. To validate the PowerBI.com configuration, select **Get started** action.<br>
-   **Note:** You may need to refresh the browser to apply the changes
-    ![Authorize Power BI](./media/D365-PBI-GetStarted.png)
+1. To validate the PowerBI.com configuration, click **Get started**.<br>
+> [!NOTE]
+> You may need to refresh the browser to apply the changes. <br>
+> ![Authorize Power BI](./media/D365-PBI-GetStarted.png)
 
 If you're starting Power BI from Finance and Operations for the first time, you're prompted to authorize sign-in to Power BI from the Finance and Operations client. Select **Click here to provide authorization to Power BI**.
 
 Users must complete this step the first time they pin Power BI content.
 
-4. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.
+2. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.
 
-5. Because you're already signed in to Azure AD in Finance and Operations, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between Finance and Operations and Power BI. Authorize the connection, and then return to the original tab.
+3. Because you're already signed in to Azure AD in Finance and Operations, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between Finance and Operations and Power BI. Authorize the connection, and then return to the original tab.
 
-6. A list of tiles from your PowerBI.com account appears. Select one or more tiles to pin to the selected workspace.
+4. A list of tiles from your PowerBI.com account appears. Select one or more tiles to pin to the selected workspace.
     ![Validate Power BI integration](./media/D365-PBI-Validation.png)
 
 ## Troubleshooting common errors
 
-After you select **Accept** in the previous procedure, you might receive the following error message if the process is unsuccessful. Notice that details of the error appear at the bottom of the message. Additional technical information provide clues that can help you determine what went wrong.
+In the procedure above, after you click **Accept**, you might receive the following error message if the process is unsuccessful. Note that the details of the error appear at the bottom of the message. Additional technical information provides clues that can help you determine what went wrong.
 
 ### Some common issues and the resolution steps
 
