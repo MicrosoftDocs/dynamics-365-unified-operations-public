@@ -84,19 +84,19 @@ Individuals must also have secuirty rights within Finance and Operations defined
 
 Changes have been made to allow employee assignments to future dated positions. Positions that have start dates in the future can be selected and the employee assignment will be made upon save or completion of the workflow (if the workflow is enabled).
 
-## New employee cannot be assigned existing position
+### New employee cannot be assigned existing position
 
 Additional changes have been made when evaluating available for assignment dates to allow for employee assignment to existing positions.
 
-## Seniority date/Office location disappears when the employment start date is in the past and the record is saved
+### Seniority date/Office location disappears when the employment start date is in the past and the record is saved
 
 Changes have been made to correct the visibiltiy of the **Senority date** and **Office location** when saving changes for past employees.
 
-## Can't enter data for Future Dated Employments on the worker page
+### Can't enter data for Future Dated Employments on the worker page
 
 Employment data for future dated employments has been disabled on the main worker page. Employment data can be entered through the **Date Manager** pages. Additonal changes will be made in future releases to enable entering employment data direclty during the workflow process.
 
-## Add ValidFrom and ValidTo to HcmPersonalContactPersonEntity
+### Add ValidFrom and ValidTo to HcmPersonalContactPersonEntity
 
 DMF (Data Management Framework) entity HcmPersonalContactPersonEntity has been updated to include "valid from" and "valid to" dates to enable certain benefit integration scenarios. 
 
