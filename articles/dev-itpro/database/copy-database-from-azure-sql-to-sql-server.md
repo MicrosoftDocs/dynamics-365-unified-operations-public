@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from Azure SQL Database to SQL Serv
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -119,6 +119,23 @@ Run the following script against the copy of the database to turn off change tra
 
 ```
 --Prepare a database in Azure SQL ddatabase for export to SQL Server.
+
+--Remove certificates in database from Electronic Signature usage
+DECLARE @SQL nvarchar(512)
+DECLARE certCursor CURSOR for
+select 'DROP CERTIFICATE ' + QUOTENAME(c.name) + ';'
+from sys.certificates c;
+OPEN certCursor;
+FETCH certCursor into @SQL;
+WHILE @@Fetch_Status = 0
+BEGIN
+print @SQL;
+exec(@SQL);
+FETCH certCursor into @SQL;
+END;
+CLOSE certCursor;
+DEALLOCATE certCursor;
+
 
 -- Re-assign full rext catalogs to [dbo]
 BEGIN

@@ -72,7 +72,7 @@ class InventTableMy_EventHandler
     {
         InventTable inventTable = sender as InventTable;
         // Call the method as if it was defined directly on InventTable.
-        inventTable.defaultMyInventLocationId();
+        inventTable.myDefaultInventLocationId();
     }
 }
 
