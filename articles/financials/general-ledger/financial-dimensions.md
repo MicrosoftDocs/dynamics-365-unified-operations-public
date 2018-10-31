@@ -54,9 +54,9 @@ Here are some of the limitations:
 
 ## Custom dimensions
 
-To create a user-defined financial dimension, in the **Use values from** field, select **&lt;&nbsp;Custom dimension&nbsp;&gt;**.
+To create a user-defined financial dimension, in the **Use values from** field, select **Custom dimension**.
 
-You can also specify an account mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-). You can also enter number signs (\#) and ampersands (&) as placeholders for characters that will change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **&lt;&nbsp;Custom dimension&nbsp;&gt;** in the **Use values from** field.
+You can also specify an account mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-). You can also enter number signs (\#) and ampersands (&) as placeholders for characters that will change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **Custom dimension** in the **Use values from** field.
 
 **Example**
 
@@ -115,19 +115,19 @@ Enter the dimension combinations that should be derived from the dimension in th
  
 By default, the derived dimension process doesn't override existing values for derived dimensions. For example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if you change the cost center, the values that have already been established aren't changed. Therefore, you can establish default dimensions on master records, and those dimensions won't be changed by derived dimensions.
 
-You can change the behavior of derived dimensions to override existing values by clicking on the “Replace existing dimension values with derived values” check box on the Derived dimensions page. Once this value is checked, you can enter a dimension with derived dimension values and those derived dimension values will override any values that already exist. Using the previous example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if the values were already department 50 and location 60, the values will now be changed to department 20 and location 30.
+You can change the behavior of derived dimensions to override existing values by selecting the **Replace existing dimension values with derived values** check box on the **Derived dimensions** page. If this field is selected, you can enter a dimension with derived dimension values and those derived dimension values will override any values that already exist. Using the previous example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if the values were already department 50 and location 60, the values will now be changed to department 20 and location 30.
  
 Derived dimensions with this setting do not automatically replace the existing default dimensions values when dimension values are defaulted. Dimension values will only be overridden when you enter a new dimension value on a page and there are existing derived values for that dimension on the page.
 
 ### Preventing changes with derived dimensions
  
-When you add a segment as a derived dimension, an option is provided at the bottom of the slider that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off so it does not prevent the derived dimension values from being changed. Change the setting to Yes if you want prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the Prevent changes setting is Yes. 
+When you add a segment as a derived dimension, an option is provided at the bottom of the slider that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off so it does not prevent the derived dimension values from being changed. Change the setting to **Yes** if you want prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the **Prevent changes** setting is **Yes**. 
  
 The setting does not prevent changes if the dimension value is valid but it is not listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you will not be able to edit Department 20. However, if you enter Cost center 20 and it is not in the list of derived dimensions for Cost center, then you can edit the Department value. 
  
 In all cases, the account value and all dimensions values will still be validated against the account structures after the derived dimensions values have been applied. If you use derived dimensions and they fail validation when used on a page, you must change the derived dimensions values on the derived dimensions page before you can use them in transactions. 
  
-When you change dimensions in the Financials dimensions fast tab, the dimension that is marked to prevent changes will not be editable. If you are entering an account and dimensions into the segmented entry control on a page, the dimensions are editable. However, when you tab off the segmented entry control and move to another field or take an action, the account and dimensions will be validated against the derived dimensions list and the account structures to ensure that you have entered the appropriate values. 
+When you change dimensions on the **Financials dimensions** FastTab, the dimension that is marked to prevent changes will not be editable. If you are entering an account and dimensions into the segmented entry control on a page, the dimensions are editable. However, when you move the highlight off the segmented entry control and move to another field or take an action, the account and dimensions will be validated against the derived dimensions list and the account structures to ensure that you have entered the appropriate values. 
 
 ### Derived dimensions and entities
 
