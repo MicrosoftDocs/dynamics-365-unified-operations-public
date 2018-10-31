@@ -345,6 +345,11 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.RestrictingShiftDuration" />
     ```
 
+# [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+> [!NOTE]
+> No actions are required, because RestrictingShiftDuration is a part of sealed extensions.
+
 # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
 > [!NOTE]
@@ -398,12 +403,21 @@ You must complete the following procedure to enable the extensions in offline mo
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
+    # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
+
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
     - SalesTransactionSignatureSample
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
 
     ---
 
@@ -420,12 +434,21 @@ You must complete the following procedure to enable the extensions in offline mo
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
+    # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
+
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
     - SalesTransactionSignatureSample
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
 
     ---
 
@@ -445,6 +468,29 @@ You must complete the following procedure to enable the extensions in offline mo
     },
     {
         "baseUrl": "RestrictingShiftDuration"
+    },
+    {
+        "baseUrl": "SalesTransBuildNumberSample"
+    }
+    ```
+
+    # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+    ``` json
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+    },
+    {
+        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    },
+    {
+        "baseUrl": "SequentialSignature"
+    },
+    {
+        "baseUrl": "AuditEventSignatureSample"
     },
     {
         "baseUrl": "SalesTransBuildNumberSample"
@@ -495,12 +541,21 @@ You must complete the following procedure to enable the extensions in offline mo
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
+    # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
+
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
     - SalesTransactionSignatureSample
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
 
     ---
 
@@ -517,12 +572,21 @@ You must complete the following procedure to enable the extensions in offline mo
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
+    # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
+
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
     - SalesTransactionSignatureSample
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
+    - Microsoft/AuditEvent.FR
 
     ---
 
@@ -542,6 +606,29 @@ You must complete the following procedure to enable the extensions in offline mo
     },
     {
         "baseUrl": "RestrictingShiftDuration"
+    },
+    {
+        "baseUrl": "SalesTransBuildNumberSample"
+    }
+    ```
+
+    # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+    ``` json
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+    },
+    {
+        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    },
+    {
+        "baseUrl": "SequentialSignature"
+    },
+    {
+        "baseUrl": "AuditEventSignatureSample"
     },
     {
         "baseUrl": "SalesTransBuildNumberSample"
@@ -605,6 +692,19 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
         ```
 
+        # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+        ``` xml
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.CommonFrance" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsFrance" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtFrance" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureFrance" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
+        ```
+
         # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
         ``` xml
@@ -651,6 +751,20 @@ Follow these steps to create deployable packages that contain Retail components,
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.CommonFrance.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsFrance.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RestrictingShiftDuration.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtFrance.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureFrance.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsFrance.dll" />
+        ```
+
+        # [Retail 7.3.5 and later](#tab/retail-7-3-5)
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.CommonFrance.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsFrance.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtFrance.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureFrance.dll" />
