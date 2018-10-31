@@ -98,6 +98,7 @@ pricing priorities.
 Below are two examples that show how the retail pricing engine processes a pool of discounts for different concurrency 
 control models.
 
+#### Example 1
 In the first scenario, **Best price and compound within priority, never compound across priorities** is selected as the 
 discount concurrency control model. We have two pricing priorities, and for each pricing priority, there is one discount of each
 discount type, for example. **Simple, Mix and Match, Quantity, Threshold**. Let's assume there are discounts at two priorities 5 
@@ -124,7 +125,7 @@ gets an exclusive discount, no other discounts can be applied to this product at
 
 >[!NOTE]
 > Mix-and-match, least-expensive discounts that have the **Multiple occurrences mode** property set to **Favor retailer** are 
-skipped in this step. Once all the exclusive discounts (**Simple, Quantity and Mix and Match**) at pricing priority 10
+skipped in this step. Once all the **Exclusive** discounts (**Simple, Quantity and Mix and Match**) at pricing priority 10
 have been applied, then the exclusive mix-and-match **Favor retailer** discounts, at pricing priority 10, are applied to any 
 undiscounted products. The **Favor retailer** and **Favor customer** settings of mix-and-match discounts will be explained in detail in a different article.
 
@@ -155,9 +156,7 @@ products, but a **Compound** threshold discount applies to undiscounted products
 **Compound** (**Simple, Quantity and Mix and Match**) discount.
 
 >[!NOTE]
->If there were threshold discounts set at a higher priority, for example 11, and all the other discount types were at priority 10 and 5, 
-then the threshold discounts would have evaluated at priority 11 and then compounded with the simple, quantity and mix and 
-match discounts at priority 10. This is important because simple, quantity and mix and match discounts are evaluated within 
+> If there were threshold discounts set at a higher priority, for example if it's set to 11, and all the other discount types were at priority 10 and 5, then the threshold discounts would have evaluated at priority 11 and then compounded with the simple, quantity and mix and match discounts at priority 10. This is important because simple, quantity and mix and match discounts are evaluated within 
 their highest priority and the threshold discounts are the are evaluated within their highest priority and then compounded. Any 
 threshold discounts at the lower priority are ignored.
 
@@ -169,7 +168,7 @@ but the difference is in the way pricing algorithm treats discounts at different
 
 ![Detailed pricing logic](./media/Detailed%20pricing%20logic.png "Detailed pricing logic")
 
-**Example:** Let's assume the following setup-
+In this example, let's assume the following setup-
 
 **Product information:**
 
@@ -178,7 +177,6 @@ but the difference is in the way pricing algorithm treats discounts at different
 | Prod1 | $10 |
 | Prod2 | $20 |
 | Prod3 | $10 |
-
 
 
 **Discount setup:**
@@ -195,23 +193,20 @@ but the difference is in the way pricing algorithm treats discounts at different
 **Step 1:** For each product, determine the highest priority where a Simple, Quantity or Mix and Match discount exists. In this case,
 for prod1 it is priority 10, for prod2 it is priority 10 and for prod3 it is priority 5
 
-Step 2: For each product, find Simple, Quantity or Mix and Match discounts, with discount concurrency as Exclusive, at the highest
-priority applicable to individual products. In this case there are none for prod1 and prod2 at priority 10 and similarly, there are
-none for prod3 at priority 5.
+**Step 2:** For each product, find **Simple**, **Quantity** or **Mix and Match** discounts, with discount concurrency as **Exclusive**, at the highest priority applicable to individual products. In this case, there are none for prod1 and prod2 at priority 10 and similarly, there are none for prod3 at priority 5.
 
-**Step 3:** For each product,evaluate Simple, Quantity or Mix and Match discounts, with discount concurrency as **Best price** and
-**Compound** , at the highest priority applicable to individual products - See table below
+**Step 3:** For each product, evaluate **Simple**, **Quantity** or **Mix and Match** discounts, with discount concurrency as **Best price** and **Compound** , at the highest priority applicable to individual products. See the table below
 
 >[!NOTE]
-> "**" indicates the discount that gets applied to a product
+> "\*\*" indicates the discount that gets applied to a product.
 
 | **Transaction quantity** | **Product** | **Price** | **Priority 10** (**C1 +C2**) | **Priority 10** (**BP1**) | **Priority 5** ( **C3**) | **Priority 5** (**BP2**) | **Total** | **Explanation** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Prod1 | $10 | $1.90\*\* | $1.50 |  (NA) | (NA) | $10 - 1.90 = $8.1 | Since the combination of compound discounts is more than the best price discount, so C1 and C2 are applied on the product. The discounts at lower priority i.e. 5 are ignored |
-| 1 | Prod2 | $20 | $2.90 | $3\*\* | (NA) | (NA) | $20 - 3 = $17.00 | Since the best price discount is more than the combination of compound discounts, so BP1 is applied on the product. The discounts at lower priority i.e. 5 are ignored |
+| 1 | Prod1 | $10 | $1.90\*\* | $1.50 |  (NA) | (NA) | $10 - 1.90 = $8.1 | Since the combination of compound discounts is more than the best price discount, so C1 and C2 are applied on the product. The discounts at lower priority i.e. 5 are ignored. |
+| 1 | Prod2 | $20 | $2.90 | $3\*\* | (NA) | (NA) | $20 - 3 = $17.00 | Since the best price discount is more than the combination of compound discounts, so BP1 is applied on the product. The discounts at lower priority i.e. 5 are ignored. |
 | 1 | Prod3 | $10 |   |   | $2.50\*\* | $2.0 | $10 - 2.50 = $7.5 | Priority 5 is highest applicable priority for this product. The compound discount is more than the best price discount, so C3 is applied on the product. |
 
-**Step 4:** Evaluate Threshold discounts applicable to the individual products at the highest priority. For our example, 
+**Step 4:** Evaluate **Threshold** discounts applicable to the individual products at the highest priority. For our example, 
 it is priority 5 for all the products.
 
 | **Transaction quantity** | **Product** | **Discount applied** | **Discounted price** | **Priority 5** (**C4**) | **Amount due** |**Explanation** |
@@ -222,67 +217,65 @@ it is priority 5 for all the products.
 
 So, the final amount due for Prod1 is 7.29, Prod 2 is 17, Prod 3 is 6.75.
 
+#### Example 2
 In the second scenario,"**Best price only within priority, always compound across priorities**" is selected as the 
-discount concurrency control model while rest of the discounts remain as is.
+discount concurrency control model while rest of the discounts remain as-is.
 
-1. Given that a discount concurrency control model is selected, for each product, the retail pricing engine next considers the
+1. Given that **Discount concurrency control model** is selected, for each product the retail pricing engine next considers the
 highest pricing priority of the discounts that are applicable on a product. If, for a product, discounts from more than one priority
 are applicable, then each is evaluated independently, and in descending order. Thus, the retail pricing engine first evaluates and
 applies the simple, quantity, and mix-and-match discounts with priority 10 followed by the discounts at priority 5.
 
 >[!NOTE]
->Like the previous discount concurrency control model, the Threshold discounts are not evaluated yet.
+> Like the previous discount concurrency control model, the **Threshold** discounts are not evaluated yet.
 
 2. Within priority 10, the retail pricing engine first considers the discounts that have the concurrency mode set to **Exclusive**.
 If there are more than one exclusive discount applicable to the product, then the best exclusive discount is applied. Once a product 
 gets an exclusive discount, no other discounts can be applied to this product at any priority.
 
 >[!NOTE]
->Mix-and-match, least-expensive discounts that have the **Multiple occurrences mode** property set to **Favor retailer** are 
-skipped in this step. Once all the **Exclusive**** (Simple, Quantity and Mix and Match) **discounts at pricing priority
-10 have been applied, then the** Exclusive **mix-and-match** Favor retailer **discounts, at pricing priority 10, are applied**
-to any undiscounted products**. The Favor retailer and Favor customer settings of Mix and Match discounts will be explained in 
-detail in a different documentation on Mix and Match discounts.
+> Mix-and-match, least-expensive discounts that have the **Multiple occurrences mode** property set to **Favor retailer** are 
+skipped in this step. Once all the **Exclusive** discounts (**Simple**, **Quantity** and **Mix and Match**) at pricing priority
+10 have been applied, then the **Exclusive** mix-and-match **Favor retailer** discounts, at pricing priority 10, are applied
+to any undiscounted products. The **Favor retailer** and **Favor customer** settings of **Mix and Match** discounts will be explained in 
+detail in a different article.
 
 3. Within priority 10, the retail pricing engine then considers the discounts that have the discount concurrency mode set to 
 **Best price** and **Compound**. As stated before, for this discount concurrency control model, discounts with **Discount 
-concurrency mode** set to **best price** and **compound** are **all treated as 'best price'; within a single pricing priority.**
-So, ifmultiple **Compound** and **Best price** discounts apply to a product, then all these discounts compete for best price and only
+concurrency mode** set to **Best price** and **Compound** are all treated as "best price"; within a single pricing priority.
+So, if multiple **Compound** and **Best price** discounts apply to a product, then all these discounts compete for best price and only
 the best discount wins within a priority. Like the previous step, mix-and-match least-expensive discounts that have the **Multiple
-occurrences mode** property set to **Favor retailer** are skipped in this step. Once all the **Best price and Compound** discounts
+occurrences mode** property set to **Favor retailer** are skipped in this step. Once all the **Best price** and **Compound** discounts
 at pricing priority 10 have been applied, then **Best price** and **Compound** mix-and-match **Favor retailer** discounts are 
-evaluated against each other and applied. Since both **Best**** price **and** Compound** are treated as Best price, so only one 
+evaluated against each other and applied. Since both **Best price** and **Compound** are treated as best price, so only one 
 discount can be applied per product at a given priority.
 
 4. The retail pricing engine repeats the steps 1 through 3 for any simple, quantity, and mix-and-match discounts at 
-**pricing priority 5**.
+pricing priority 5.
 
 >[!NOTE]
->The retail pricing engine completes steps 1 through 3, one time, for every pricing priority that applies to the transaction. 
+> The retail pricing engine completes steps 1 through 3, one time, for every pricing priority that applies to the transaction. 
 Therefore, we recommend that you keep the number of pricing priorities to a minimum, based on for your business requirements.
 
 At this point, all the simple, quantity, and mix-and-match discounts at all priorities have been evaluated and applied.
 
-5. Next, within **priority 10** , the retail pricing engine evaluates threshold discounts that have the concurrency mode set to 
+5. Next, within priority 10, the retail pricing engine evaluates threshold discounts that have the concurrency mode set to 
 **Exclusive**. An **Exclusive** threshold discount can't be applied to a product that already has a discount applied, so a 
 threshold amount is applied and evaluated only on undiscounted products. If more than one of these discounts apply to the transaction,
 the discounts compete, and the largest discount is applied.
 
 6. Next, within priority 10, the retail pricing engine evaluates threshold discounts that have the concurrency mode set to 
-**Best price** and **Compound.** Since, **Best price** and **compound** are all treated as 'Best price', so these 
-discounts compete for the best discount. ** ** The selected threshold discount gets applied to those products which do not 
-have any other types of discounts already applied at priority 10. If there are other discounts e.g. simple, Mix and Match, Quantity etc. 
-then the threshold discount is not applied since, both Best price and Compound discounts are treated as Best price and only one 
+**Best price** and **Compound.** Since **Best price** and **Compound** are all treated as "best price", these 
+discounts compete for the best discount. The selected threshold discount gets applied to those products which do not 
+have any other types of discounts already applied at priority 10. If there are other discounts, then the threshold discount is not applied since, both Best price and Compound discounts are treated as Best price and only one 
 discount per priority is allowed with this discount concurrency control.
 
 >[!NOTE]
->If there were threshold discounts set at a higher priority e.g. 11 and all the other discount types were at priority 10 and 5, 
-then the threshold discounts would have evaluated at **priority 11** and the best threshold discount would have been applied at
-priority 11 (assuming there is no \*Exclusive\* Simple, Quantity or Mix and Match discount applied at a lower priority).
+> If there were threshold discounts set at a higher priority, for example, it's set to 11 and all the other discount types were at priority 10 and 5, then the threshold discounts would have evaluated at priority 11 and the best threshold discount would have been applied at priority 11 (assuming there is no **Exclusive** discount (**Simple**, **Quantity** or **Mix and Match**) applied at a lower priority).
 
-7. The retail pricing engine repeats the steps 5 and 6 for threshold discounts at **pricing priority 5**.
+7. The retail pricing engine repeats the steps 5 and 6 for threshold discounts at pricing priority 5.
 
-**Example:** Using the same example as before.
+Let's use the same example as before.
 
 **Product information:**
 
@@ -304,19 +297,15 @@ priority 11 (assuming there is no \*Exclusive\* Simple, Quantity or Mix and Matc
 | C4 | Compound | 5 | 10% | Threshold only | All products |
 
 
+**Step 1:** For each product, determine the highest priority where a **Simple**, **Quantity** or **Mix and Match** discount exists. In this case, for prod1 it is priority 10, for prod2 it is priority 10 and for prod3 it is priority 5.
 
-**Step 1:** For each product, determine the highest priority where a Simple, Quantity or Mix and Match discount exists -  
-In this case, for prod1 it is priority 10, for prod2 it is priority 10 and for prod3 it is priority 5
-
-**Step 2:** For each product, find Simple, Quantity or Mix and Match discounts, with discount concurrency as Exclusive, at 
-the highest priority applicable to individual products -  In this case there are none for prod1 and prod2 at priority 10 and 
+**Step 2:** For each product, find **Simple**, **Quantity** or **Mix and Match** discounts, with discount concurrency as **Exclusive**, at the highest priority applicable to individual products. In this case there are none for prod1 and prod2 at priority 10 and 
 there are none for prod3 at priority 5.
 
-**Step 3:** For each product, evaluate Simple, Quantity or Mix and Match discounts, with discount concurrency as Best price and 
-Compound, at the highest priority applicable to individual products - See table below
+**Step 3:** For each product, evaluate **Simple**, **Quantity** or **Mix and Match** discounts, with discount concurrency as **Best price** and **Compound**, at the highest priority applicable to individual products. See the table below.
 
 >[!NOTE]
-> "**" indicates the discount that gets applied to a product
+> "\*\*" indicates the discount that gets applied to a product.
 
 | **Transaction quantity** | **Product** | **Price** | **Priority 10** (**C1**) | **Priority 10** (**C2**) | **Priority 10** (**BP1**) | **Total** | **Explanation** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -326,16 +315,15 @@ Compound, at the highest priority applicable to individual products - See table 
 
 
 
-**Step 4:** For each product, determine the next highest priority where a Simple, Quantity or Mix and Match discount exists - 
-In this case, it is priority 5 for all three products
+**Step 4:** For each product, determine the next highest priority where a **Simple**, **Quantity** or **Mix and Match** discount exists. In this case, it is priority 5 for all three products.
 
-**Step 5:** At priority 5, find Simple, Quantity or Mix and Match discounts with discount concurrency mode as Exclusive - None
+**Step 5:** At priority 5, find **Simple**, **Quantity** or **Mix and Match** discounts with discount concurrency mode as **Exclusive**. In this case, none.
 
 >[!NOTE]
->If an exclusive discount existed at priority 5, then it would have been ignored as exclusive discounts cannot co-exist with other 
+> If an exclusive discount existed at priority 5, then it would have been ignored as exclusive discounts cannot co-exist with other 
 discounts which have been applied at a higher priority
 
-**Step 6:** At priority 5, evaluate Simple, Quantity or Mix and Match discounts - See table below
+**Step 6:** At priority 5, evaluate **Simple**, **Quantity** or **Mix and Match** discounts. See the table below.
 
 | **Transaction quantity** | **Product** | **Discounted Price** | **Priority 5** (**C3**) | **Priority 5** (**BP2**) | **Total** | **Explanation** |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -345,11 +333,11 @@ discounts which have been applied at a higher priority
 
 
 
-**Step 7:** Evaluate Threshold discounts
+**Step 7:** Evaluate **Threshold** discounts.
 
 | **Transaction quantity** | **Product** | **Discount applied at priority 10** | **Discount applied at priority 5** | **Discounted price** | **Priority 5** (**C4**) | **Amount due** | **Explanation** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Prod1 | BP1 | C3 | $6.37 | (NA) | $6.37 | For Threshold discounts, Priority 5 is highest applicable priority for this product. But the threshold discount at priority 5 will only get applied if there is no other discount applied at the priority 5. This is because both Best price and Compound discounts are treated as Best price and only one discount per priority is allowed with this discount concurrency control So, the Threshold discount is ignored |
+| 1 | Prod1 | BP1 | C3 | $6.37 | (NA) | $6.37 | For Threshold discounts, Priority 5 is highest applicable priority for this product. But the threshold discount at priority 5 will only get applied if there is no other discount applied at the priority 5. This is because both best price and compound discounts are treated as "Best price" and only one discount per priority is allowed with this discount concurrency control. So, the threshold discount is ignored. |
 | 1 | Prod2 | BP1 | C3 | $12.75 | (NA) | $12.75 | Same as above |
 | 1 | Prod3 |   | C3 | $7.5 | (NA) | $7.5 | Same as above |
 
@@ -358,4 +346,4 @@ discounts which have been applied at a higher priority
 So, the final amount due for prod1 is 6.37, Prod 2 is 12.75, Prod 3 is 7.5.
 
 >[!NOTE]
->For the same discount setting, the results are vastly differ depending on which discount concurrency control model is selected.
+> For the same discount setting, the results are vastly differ depending on which discount concurrency control model is selected.
