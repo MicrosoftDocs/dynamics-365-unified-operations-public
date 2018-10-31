@@ -2142,6 +2142,8 @@
           href: ../financials/localizations/emea-pol-returnable-packages.md
         - name: Sales tax reports
           href: ../financials/localizations/emea-pol-sales-tax-reports.md
+        - name: Set up number sequences by warehouse
+          href: ../financials/localizations/emea-pol-number-sequence-warehouses.md          
         - name: Standard audit file
           href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
         - name: Tax interest and free-hand interest
