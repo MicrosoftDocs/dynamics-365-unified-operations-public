@@ -40,35 +40,36 @@ This topic describes features that are either new or changed in Core HR.
 ## Create links from Talent to Finance and Operations
 This new navigation functionality allows you to link from Talent to Finance and Operations, giving you direct navigation into Finance and Operations pages. When links are configured, you can specify the name and group of the link, where the link should surface in Talent, and the target page to be opened within Finance and Operations.
 
-**Coming soon**: Field context will also be added in the future to allow for direct navigation to corresponding records in Finance and Operations. For example, you can use “Link to field” to provide the context to navigate directly to a specific employee or position in Finance and Operations.
+### Coming soon
+Field context will be added in the future to allow for direct navigation to corresponding records in Finance and Operations. For example, you can use “Link to field” to provide the context to navigate directly to a specific employee or position in Finance and Operations.
 
-**Configure target systems**
+### Configure target systems
 
 In Talent, system administrators can define links that will be surfaced through the System Administration workspace. Part of the configuration is the Finance and Operations environments that you would like to navigate to as the "target" of the link. You do this by giving the target system a name and providing the URL of the Finance and Operations environment. Here is an example of a Finance and Operations URL that you would provide: https://devax00124aos.cloud.test.dynamics.com/. Once you have configured your target systems,  you can define your links.
 
-**Configure Links**
+### Configure Links
 
 Each link that is created will have the following information defined:
 
-Link: 				                Name of the link, used for identification only.
+- Link: Name of the link, used for identification only.
 
-Enable this Link: 		        Set this to Yes if you want to display the link to users of Talent.
+- Enable this Link: Set this to Yes if you want to display the link to users of Talent.
 
-Display Name: 			          Define the name that will appear as a link to Finance and Operations. This data currenlty is not translated.
+- Display Name: Define the name that will appear as a link to Finance and Operations. This data currenlty is not translated.
 
-Surface link on form:         Choose which form you would like to display the link.
+- Surface link on form: Choose which form you would like to display the link.
 
-Group: 				                Groups are not required, but if you want to orgainize your links using groups select an existing group or create a new one using the Group field.
+- Group: Groups are not required, but if you want to orgainize your links using groups select an existing group or create a new one using the Group field.
 
-Target system: 			          Select the target system, that was created using the Configure target system option. This will be the Fianance and Operations environment that will be used when navgating using the link.
+- Target system: Select the target system, that was created using the Configure target system option. This will be the Fianance and Operations environment that will be used when navgating using the link.
 
-Use user's current Company: 	Select yes if you would like to use the Users current company context when navigating to Finance and Opersions. If No is selected, then you can select the company that should be used when navigating.
+- Use user's current Company: Select yes if you would like to use the Users current company context when navigating to Finance and Opersions. If No is selected, then you can select the company that should be used when navigating.
 
-Target menu item: 		        Enter the menu item from Finance and Operation that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and Operations and open the form that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Fiance and operations enter the value you see after the "&mi" in the URL. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
+- Target menu item: Enter the menu item from Finance and Operation that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and Operations and open the form that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Fiance and operations enter the value you see after the "&mi" in the URL. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
 
-Link to data source: 		      Select from the drop down list the source of data that the link is referencing. The most common sources like Worker and position are avialble to select.
+- Link to data source: Select from the drop down list the source of data that the link is referencing. The most common sources like Worker and position are avialble to select.
 
-**Coming soon**: Link to field - We will also enable field selection to allow for direct navigation from a single record in Talent to a single record in Finance and Operations.
+- **Coming soon**: Link to field: We will also enable field selection to allow for direct navigation from a single record in Talent to a single record in Finance and Operations.
 
 ## Access to Links
 
