@@ -229,6 +229,8 @@
     href: set-up-rfm-analysis.md
 - name: Discounts and price adjustments
   items:
+  - name: Retail discounts
+    href: retail-discounts-overview.md
   - name: Retail sales price management
     href: price-management.md
   - name: Price adjustments and discounts
