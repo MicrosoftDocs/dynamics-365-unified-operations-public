@@ -2186,6 +2186,8 @@
             href: ../financials/localizations/rus-fixed-assets-revaluation.md            
           - name: Partial fixed asset disassembly (liquidation)
             href: ../financials/localizations/rus-fixed-assets-disassembly.md
+          - name: Sell, dispose, and write-off assets
+            href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
           - name: Set up fixed asset locations and numbering
             href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
           - name: Set up depreciation 

@@ -50,12 +50,12 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
 - [Revaluate fixed asset cost and depreciation](rus-fixed-assets-revaluation.md)
 - [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
+- [Sell, dispose, and write-off assets](rus-sell-dispose-write-off-fixed-assets.md)
 - [Set up fixed asset locations and numbering](rus-fixed-assets-locations-numbering.md)
 - [Set up depreciation](rus-depreciation-setup.md)
 - [Depreciation methods](rus-depreciation-methods.md)
 - [Depreciation bonuses](rus-bonus-depreciation.md)
 - [Calculate depreciation](rus-depreciation-calculation.md)
-
 
 ## Additional resources
 
