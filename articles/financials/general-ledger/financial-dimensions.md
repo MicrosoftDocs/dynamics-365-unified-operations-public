@@ -121,7 +121,7 @@ Derived dimensions with this setting do not automatically replace the existing d
 
 ### Preventing changes with derived dimensions
  
-When you add a segment as a derived dimension, an option is provided at the bottom of the slider that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off so it does not prevent the derived dimension values from being changed. Change the setting to **Yes** if you want prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the **Prevent changes** setting is **Yes**. 
+When you use **Add segment"** on the **Derived dimensions page** to add a segment as a derived dimension, an option is provided at the bottom of the **Add segment** page that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off so it does not prevent the derived dimension values from being changed. Change the setting to **Yes** if you want prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the **Prevent changes** setting is **Yes**. 
  
 The setting does not prevent changes if the dimension value is valid but it is not listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you will not be able to edit Department 20. However, if you enter Cost center 20 and it is not in the list of derived dimensions for Cost center, then you can edit the Department value. 
  
@@ -134,7 +134,7 @@ When you change dimensions on the **Financials dimensions** FastTab, the dimensi
 You can set up the derived dimensions segments and values by using entities.
 
 - The Derived dimensions entity sets up the driving dimensions and the segments that are used for those dimensions.
-- The DerivedDimensionValue entity lets you import the values that should be derived for each driving dimension.
+- The Derived dimensions value entity lets you import the values that should be derived for each driving dimension.
 
 When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
 
