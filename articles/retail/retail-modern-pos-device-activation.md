@@ -5,7 +5,7 @@ title: Configure, install, and activate Retail Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 03/27/2017
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
