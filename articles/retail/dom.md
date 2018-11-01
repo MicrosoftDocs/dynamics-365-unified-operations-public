@@ -77,17 +77,17 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
 4. Navigate to **Retail > Distributed order management > Setup > DOM parameters > Number sequences** tab
 
-     + Assign the required number sequences to the different DOM entities. The Number sequences needs to be defined under **Organization administration > Number sequences > Number sequences** before they can be assigned to the entities
+     - Assign the required number sequences to the different DOM entities. The Number sequences needs to be defined under **Organization administration > Number sequences > Number sequences** before they can be assigned to the entities
 
 5. The DOM feature supports the definition of different types of DOM rules and these DOM rules can be defined for a group of locations or individual locations and for a certain product category, product or variant. These grouping of locations that needs to be used for the DOM rules can be created as per the below steps:
 
-	+ Navigate to **Retail > Channel setup > Fulfillment groups**
+	- Navigate to **Retail > Channel setup > Fulfillment groups**
 
-	+ Click New and assign a group Name and Description
+	- Click New and assign a group Name and Description
 
-	+ Click Save
+	- Click Save
 
-	+ Use the buttons ‘Add line’ or ‘Add lines’ to add the different locations to this group
+	- Use the buttons ‘Add line’ or ‘Add lines’ to add the different locations to this group
 
 6. The DOM feature supports the definition of different types of DOM rules and organizations can choose to configure multiple rules of a type based on business needs. These rules can be defined under the following path: **Retail > Distributed order management > Setup > Manage rules**.
 
@@ -99,11 +99,11 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
 	c.  **Partial orders rule:** This rule allows organization to configure if an order or order lines can be fulfilled partially. The below are the details of the behavior of the different parameters on the rule:
   
-      + Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
+      	   	- Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
        
-      + Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
+      		- Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
        
-      + Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
+      		- Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
        
       The below table explains the behavior with a combination of the above parameters:
 
