@@ -69,10 +69,10 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
 
  **Notes:**
+ 
+   1.  Organizations should not use the ‘Simplified Solver’ in Production environments
 
- 	1.  Organizations should not use the ‘Simplified Solver’ in Production environments
-
- 	2.  While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
+   2.  While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
 	
 
 4.  Navigate to **Retail > Distributed order management > Setup > DOM parameters > Number sequences** tab
@@ -99,11 +99,11 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
 	c.  **Partial orders rule:** This rule allows organization to configure if an order or order lines can be fulfilled partially. The below are the details of the behavior of the different parameters on the rule:
   
-       	    + Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
+       + Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
        
-            + Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
+       + Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
        
-            + Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
+       + Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
        
        The below table explains the behavior with a combination of the above parameters:
 
