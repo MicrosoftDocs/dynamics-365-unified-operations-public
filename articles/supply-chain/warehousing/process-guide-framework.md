@@ -56,7 +56,8 @@ The container is then returned to the translator, which then serializes the xml,
 
 The sequence diagram below gives an overview of the execution flow. Please note that the diagram is more of a schematic overview and is not a 1:1 representation of the actual code.
 
-![](media/745a343e5cf6510b2a1e9e5adc8e58e4.png)
+![Schematic overview of the process](media/schematic-overview.png)	
+
 
 ### Reason for the redesign
 
@@ -82,7 +83,7 @@ A new framework needs a new name, and we chose the name “ProcessGuide”. This
 
 So, we started off by beginning to identify the components. If we take, for example, the Production Start process (WhsWorkExecuteDisplayProdStart class), here is a schematic of the process:
 
-![Image of schematic process]()
+![Image of schematic process](media/production-start-process-schematic.png)
 
 Looking at the control flow, we inferred the need for a few components:
 
