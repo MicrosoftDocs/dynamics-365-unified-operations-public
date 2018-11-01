@@ -2,10 +2,10 @@
 # required metadata
 
 title: Extend a Retail Server OData controller
-description: This article provides code that extends the CustomController class.
+description: This topic provides code that extends the CustomController class.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article provides code that extends the CustomersController class.
+This topic provides code that extends the CustomersController class.
 
-A controller is a mapping for a commerce entity that controls create, read, update, and delete (CRUD) behaviors and actions for a commerce entity type. Each commerce entity must have a corresponding controller. You can extend a controller that is included with Microsoft Dynamics 365 for Retail to add new business actions that meet your business requirement. To extend an existing controller, you must define a new class that extends an existing controller class. When you create a new controller that extends an existing controller, the new controller may create new or override existing methods in the controller that is being extended, all methods in the extended controller that have not been overridden will continue to function as before. In this example, the **ExtendedCustomersController** class extends the **CustomersController** class, the **CustomersController** class is the controller for the **Customers** entity type.  Furthermore, you will need to update the **extensionComposition** section of the Retail Server Web.config file. For more information, see the **How to call the new retail server API from MPOS/Cloud POS** section of [Commerce runtime (CRT) and Retail Server extensibility](commerce-runtime-extensibility.md).  You can find the sample code from this topic in the Retail software development kit (SDK). 
+A controller is a mapping for a commerce entity that controls create, read, update, and delete (CRUD) behaviors and actions for a commerce entity type. Each commerce entity must have a corresponding controller. You can extend a controller that is included with Microsoft Dynamics 365 for Retail to add new business actions that meet your business requirement. To extend an existing controller, you must define a new class that extends an existing controller class. When you create a new controller that extends an existing controller, the new controller can create new or override existing methods in the controller that is being extended. All methods in the extended controller that have not been overridden will continue to function as before. In this example, the **ExtendedCustomersController** class extends the **CustomersController** class, and the **CustomersController** class is the controller for the **Customers** entity type.  You will need to update the **extensionComposition** section of the Retail Server Web.config file. For more information, see the **How to call the new retail server API from MPOS/Cloud POS** section of [Commerce runtime (CRT) and Retail Server extensibility](commerce-runtime-extensibility.md). You can find the sample code from this topic in the Retail software development kit (SDK). 
 
 ```csharp
 using System.Web.Http;
