@@ -68,9 +68,9 @@ In short, Distributed order management (DOM) has surpassed from a top trend to 
 
  **Note:**
 
-1.  Organizations should not use the ‘Simplified Solver’ in Production environments
+ 1.  Organizations should not use the ‘Simplified Solver’ in Production environments
 
-2.  While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
+ 2.  While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
 
 4.  Navigate to **Retail > Distributed order management > Setup > DOM parameters > Number sequences** tab
 
@@ -118,108 +118,108 @@ In short, Distributed order management (DOM) has surpassed from a top trend to 
 
 *If ‘Fulfill partial order’ is set to No, then ‘Fulfill partial lines’ is always considered to be No irrespective of what has been set for it.
 
-	d.  **Offline fulfillment location rule:** This rule allows the organization to specify a location or group of locations as off-line or unavailable to DOM for assigning orders for fulfillment
-
-	e.  **Maximum rejects rule:** This rule allows the organization to define a threshold for rejects, and on hitting that threshold, the DOM processor will mark an order or order line for exception and exclude it from further processing.
-
-   	After order lines are assigned to a location, the location has an option to ‘Reject’ the assigned order line as they may not be able to fulfill it for multiple reasons. Such rejected lines are marked as exception and put back in the pool for processing in the next run. In the next run, DOM will try and assign that line to 	a different location. After assignment, that location can also reject the order line for fulfillment. This cycle of assignment & rejection can happen multiple times and the moment the rejection count hits the threshold as defined by this rule, DOM will mark this order line as an exception of permanent nature and 	will not pick this line for assignment again.
-
-    	Only if a user resets the status of this order line manually, will DOM consider it again for assignment.
-
-	f.  **Maximum distance rule:** This rule allows the organization to define the maximum distance, a location or group of locations can go out to fulfill the order. If there are overlapping maximum distance rules define for a location, then DOM will apply the lower of the defined maximum distance for that 	location.
-
-	g.  **Maximum orders rule:** This rule allows the organization to define the maximum number of orders a location or group of locations can process in a calendar day. If a location is assigned the maximum no. of orders in each day, then DOM will not assign any more orders to that location for that calendar 	day.
-
-	Some of the common attributes that can be defined for all the above rule types are explained below:
-
-	a.  Start date / End date: Every rule can date bound using the Start date & End date fields
-
-	b.  Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
-
-	b.  Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied.
-
-   	 In the second iteration, the rules that are not defined as hard constraints are removed and the order / order lines that are not assigned to locations when the full rule set was applied, are attempted to be assigned to locations with a reduced rule count (as the not hard constraints rules are removed).
+   d.  **Offline fulfillment location rule:** This rule allows the organization to specify a location or group of locations as off-line or unavailable to DOM for assigning orders for fulfillment
+   
+   e.  **Maximum rejects rule:** This rule allows the organization to define a threshold for rejects, and on hitting that threshold, the DOM processor will mark an order or order line for exception and exclude it from further processing.
+   
+   After order lines are assigned to a location, the location has an option to ‘Reject’ the assigned order line as they may not be able to fulfill it for multiple reasons. Such rejected lines are marked as exception and put back in the pool for processing in the next run. In the next run, DOM will try and assign that line to 	a different location. After assignment, that location can also reject the order line for fulfillment. This cycle of assignment & rejection can happen multiple times and the moment the rejection count hits the threshold as defined by this rule, DOM will mark this order line as an exception of permanent nature and 	will not pick this line for assignment again.
+   
+   Only if a user resets the status of this order line manually, will DOM consider it again for assignment.
+   
+   f.  **Maximum distance rule:** This rule allows the organization to define the maximum distance, a location or group of locations can go out to fulfill the order. If there are overlapping maximum distance rules define for a location, then DOM will apply the lower of the defined maximum distance for that location.
+   
+   g.  **Maximum orders rule:** This rule allows the organization to define the maximum number of orders a location or group of locations can process in a calendar day. If a location is assigned the maximum no. of orders in each day, then DOM will not assign any more orders to that location for that calendar day.
+   
+   Some of the common attributes that can be defined for all the above rule types are explained below:
+   
+   a.  Start date / End date: Every rule can date bound using the Start date & End date fields
+   
+   b.  Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
+   
+   c.  Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied.
+   
+   In the second iteration, the rules that are not defined as hard constraints are removed and the order / order lines that are not assigned to locations when the full rule set was applied, are attempted to be assigned to locations with a reduced rule count (as the not hard constraints rules are removed).
 
 
 7.  Fulfillment profiles are used to bring together a collection of rules, legal entities, sales order origins & modes of delivery and every DOM run is for a specific Fulfillment profile. Doing so, enables organization to define & execute a set of rules for a set of legal entities, sales order origins and modes of delivery. So, if different set of rules are to be executed for different set of sales order origins or modes of delivery, they can be configured and executed by defining the fulfillment profiles accordingly
 
 The below are the steps to set-up the Fulfillment profiles:
 
-	a.  Navigate to **Retail > Distributed order management > Setup > Fulfillment profiles**
-
-	b.  Click **New**
-
-	c.  Specify a value for ‘Profile’ and ‘Description’ fields
-
-	d.  In the ‘Auto apply result’ field, choose the relevant value (Yes / No). If this field is set to Yes, the results of the DOM execution for this profile will be automatically applied to the sales order lines. If set to No, the results can only be viewed in the Fulfillment plan and they will not be applied to the sales order 	lines
-
-	e.  If you want the DOM profile to be executed for orders with every sales order origin value including undefined ones, then set the field **‘Process orders with empty sales origin’** to Yes. If you want to execute the profile for few sales order origins only, then you can define those in the Setup section of the 	profiles (explained in one of the below points)
-
-	f.  In the **Legal entities** fast tab, click **Add** and select a legal entity. (In this release of the feature, only one legal entity can be selected)
-
-	g.  In the **Rules** fast tab, click **Add** and from the drop-down option in the ‘Rule’ field, select the rule that you want to link to the profile
-
-	h.  Repeat the above step till all the required rules are associated to the profile
-
-	i.  Click **Save**
-
-	. Click **Setup > Modes of delivery**
-
-	k. Click **New**
-
-	l. From the drop down in the Company field, select the legal entity (The list of companies available in the drop down will be limited to the company added in the Legal entity section of the fulfillment profiles)
-
-	m. From the drop down in the Mode of delivery field, select the mode of delivery for which you want to associate this profile. **Note:** The same mode of delivery cannot be associated to multiple active profiles
-
-	n. Repeat the above step till all the required mode of delivery are associated to the profile
-
-	o. Close the form
-
-	p. Click **Setup > Sales order origins**
-
-	q. Click **New**
-
-	r. From the drop down in the Company field, select the legal entity (The list of companies available in the drop down will be limited to the company added in the Legal entity section of the fulfillment profiles)
-
-	s. From the drop down in the sales origin field, select the sales origin for which you want to associate this profile. **Note:** The same Sales origin cannot be associated to multiple active profiles
-
-	t. Repeat the above step till all the required Sales origin are associated to the profile
-
-	u. Close the form
-
-	v. Set the field **“Enable profile’** to Yes. If there are any errors in the setup, the system will give relevant warning message when trying to set this field to Yes.
+   a.  Navigate to **Retail > Distributed order management > Setup > Fulfillment profiles**
+   
+   b.  Click **New**
+   
+   c.  Specify a value for ‘Profile’ and ‘Description’ fields
+   
+   d.  In the ‘Auto apply result’ field, choose the relevant value (Yes / No). If this field is set to Yes, the results of the DOM execution for this profile will be automatically applied to the sales order lines. If set to No, the results can only be viewed in the Fulfillment plan and they will not be applied to the sales order lines
+   
+   e.  If you want the DOM profile to be executed for orders with every sales order origin value including undefined ones, then set the field **‘Process orders with empty sales origin’** to Yes. If you want to execute the profile for few sales order origins only, then you can define those in the Setup section of the 	profiles (explained in one of the below points)
+   
+   f.  In the **Legal entities** fast tab, click **Add** and select a legal entity. (In this release of the feature, only one legal entity can be selected)
+   
+   g.  In the **Rules** fast tab, click **Add** and from the drop-down option in the ‘Rule’ field, select the rule that you want to link to the profile
+   
+   h.  Repeat the above step till all the required rules are associated to the profile
+   
+   i.  Click **Save**
+   
+   j.Click **Setup > Modes of delivery**
+   
+   k. Click **New**
+   
+   l. From the drop down in the Company field, select the legal entity (The list of companies available in the drop down will be limited to the company added in the Legal entity section of the fulfillment profiles)
+   
+   m. From the drop down in the Mode of delivery field, select the mode of delivery for which you want to associate this profile. **Note:** The same mode of delivery cannot be associated to multiple active profiles
+   
+   n. Repeat the above step till all the required mode of delivery are associated to the profile
+   
+   o. Close the form
+   
+   p. Click **Setup > Sales order origins**
+   
+   q. Click **New**
+   
+   r. From the drop down in the Company field, select the legal entity (The list of companies available in the drop down will be limited to the company added in the Legal entity section of the fulfillment profiles)
+   
+   s. From the drop down in the sales origin field, select the sales origin for which you want to associate this profile. **Note:** The same Sales origin cannot be associated to multiple active profiles
+   
+   t. Repeat the above step till all the required Sales origin are associated to the profile
+   
+   u. Close the form
+   
+   v. Set the field **“Enable profile’** to Yes. If there are any errors in the setup, the system will give relevant warning message when trying to set this field to Yes.
 
 **DOM Processing**
 
 DOM is expected to be run in batch. To configure the batch job for the DOM runs, please follow the below steps:
 
-	1.  Navigate to **Retail > Distributed order management > Batch processing > DOM processor job setup**
-
-	2.  In the Fulfillment profile field, select a profile for which the DOM execution must be run
-
-	3.  Select a configured Batch group
-
-	4.  Use the Recurrence tab to define the recurrence of the batch job
-
-	5.  Click **OK**
+   1.  Navigate to **Retail > Distributed order management > Batch processing > DOM processor job setup**
+   
+   2.  In the Fulfillment profile field, select a profile for which the DOM execution must be run
+   
+   3.  Select a configured Batch group
+   
+   4.  Use the Recurrence tab to define the recurrence of the batch job
+   
+   5.  Click **OK**
 
 At the time of processing, DOM will consider the order and order lines as outlined below:
 
 Order lines that meet the criteria for Sales order origins, modes of delivery and legal entity as defined in the DOM profile and
 
-	a.  are created from retail channels
-
-	b.  are never brokered by DOM.
-
-	c.  have been brokered by DOM before but are marked as exception and are below the maximum threshold attempt
-
-	d.  where the mode of delivery is not ‘Pick-up’
-
-	e.  are not marked for delivery
-
-	f.  are not manually excluded
-
-	g.  Orders that are not ‘On hold’
+   a.  are created from retail channels
+   
+   b.  are never brokered by DOM
+   
+   c.  have been brokered by DOM before but are marked as exception and are below the maximum threshold attempt
+   
+   d.  where the mode of delivery is not ‘Pick-up’
+   
+   e.  are not marked for delivery
+   
+   f.  are not manually excluded
+   
+   g.  Orders that are not ‘On hold’
 
 After applying the rules, inventory constraints & optimization, DOM will pick a location that is closest to the customer’s delivery address.
 
@@ -256,14 +256,14 @@ If the Fulfillment profile is set to “Auto apply”, the results of the execut
     b.  Complete – The order line is successfully brokered and assigned to a location
 
     c.  Exception – The order line is brokered but cannot be assigned to a location. There are multiple sub-types for exceptions which can be viewed from the DOM workspace. The sub-types for exception are as follows:
-
-        i.  No quantity available – Inventory is not available in the locations to assign the order to
-
-        ii.  Maximum rejections – The order line has reached the maximum threshold in terms of locations rejecting the order
-
-        iii.  Data modification conflict – The sales order line has been changed since the order was brokered and as such the fulfillment plan cannot be applied to the order
-
-        iv.  Order line specific exception – There are multiple reasons for this exception
+    
+       i.  No quantity available – Inventory is not available in the locations to assign the order to
+       
+       ii.  Maximum rejections – The order line has reached the maximum threshold in terms of locations rejecting the order
+       
+       iii.  Data modification conflict – The sales order line has been changed since the order was brokered and as such the fulfillment plan cannot be applied to the order
+       
+       iv.  Order line specific exception – There are multiple reasons for this exception
 
 3.  DOM can be run in an interactive mode during the sales order entry process. While entering the order line, after specifying the product & qty, the user can use the option ‘Suggest fulfillment location’ under the path **Update line > DOM** to get a list of locations based on DOM rules that can fulfill the qty on the order line. The list of locations is sorted by distance and choosing a location sets the relevant site & warehouse on the sales order line
 
@@ -273,22 +273,22 @@ If the Fulfillment profile is set to “Auto apply”, the results of the execut
 
 As DOM runs are being executed, fulfillment plans get created. Over a period, the system will have numerous fulfillment plans. To manage this, a batch job can be configured to delete older fulfillment plans based on the value defined the parameter ‘Retention period in days’. The steps for the same are outlined below:
 
-	1.  Navigate to **Retail > Distributed order management > Batch processing > DOM fulfillment data deletion job setup**
-
-	2.  Select a configured Batch group
-
-	3.  Use the Recurrence tab to define the recurrence of the batch job
-
-	4.  Click **OK**
+   1.  Navigate to **Retail > Distributed order management > Batch processing > DOM fulfillment data deletion job setup**
+   
+   2.  Select a configured Batch group
+   
+   3.  Use the Recurrence tab to define the recurrence of the batch job
+   
+   4.  Click **OK**
 
 **Additional information**
 
 The below are some of the things to factor for in the usage of DOM feature:
 
-	1.  For this release of the feature, DOM only looks at orders created from Retail channels. Sales orders are identified as retail sales orders when the field ‘Retail sale’ is set to Yes.
-
-	2.  DOM has not been tested with Advanced warehouse management features. As such, due diligence from customers and partners is required to determine if DOM is compatible with the Advanced warehouse management capabilities & processes that are relevant for them.
-
-	3.  DOM is only available on the Cloud version of the product. DOM is not supported in an on-prem deployment.
+   1.  For this release of the feature, DOM only looks at orders created from Retail channels. Sales orders are identified as retail sales orders when the field ‘Retail sale’ is set to Yes.
+   
+   2.  DOM has not been tested with Advanced warehouse management features. As such, due diligence from customers and partners is required to determine if DOM is compatible with the Advanced warehouse management capabilities & processes that are relevant for them.
+   
+   3.  DOM is only available on the Cloud version of the product. DOM is not supported in an on-prem deployment.
 
 
