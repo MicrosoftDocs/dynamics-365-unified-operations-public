@@ -98,12 +98,12 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 	b.  **Fulfillment location priority rule:** This rule type allows organizations to define a hierarchy of locations using ‘Priority’, that the DOM engine should consider when trying to identify fulfillment locations for specific products. Locations with higher priority are considered first before resolving to other locations. A location with a priority of 1 is of higher priority as compared to a location with priority 2.
 
 	c.  **Partial orders rule:** This rule allows organization to configure if an order or order lines can be fulfilled partially. The below are the details of the behavior of the different parameters on the rule:
-  
-      	   	- Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
-       
-      		- Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
-       
-      		- Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
+	
+	  - Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
+	  
+	  - Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
+	  
+	  - Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
        
       The below table explains the behavior with a combination of the above parameters:
 
