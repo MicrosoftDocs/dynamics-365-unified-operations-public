@@ -38,9 +38,9 @@ This topic explains how you can use self-service to configure Retail Store Scale
 ## Before you begin
 
 > [!IMPORTANT]
-> To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and key (secret) for each retail store that is created. This step requires a new Web App.
+> To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and key (secret) for each retail store that is created. This step requires a new Web app.
 
-1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This article reviews Azure user permissions and requirements, and explains how to generate an app registration. 
+1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This topic reviews Azure user permissions and requirements, and explains how to generate an app registration. 
 
     If you are installing Retail Store Scale Unit for use with an on-premises environment using AD FS, instead of Azure, create an application ID and key using AD FS. For instructions, see [Create an application in AD FS](/windows-server/identity/ad-fs/development/enabling-oauth-confidential-clients-with-ad-fs#create-an-application-group-in-ad-fs-2016).
     
@@ -55,7 +55,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 3. In the **Channel database ID** field, enter a unique value.
 4. In the **Channel data group** field, select the **Default** option.
 
-    You can select any other option that you've already created.
+    You can select any option that you've already created.
 
 5. In the **Type** field, leave the default value (**Channel database**) selected.
 6. You can leave the **Data sync interval** field blank. Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
@@ -126,7 +126,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 Before you run the Retail Store Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements.md) are met. 
 
-If you are installing Retail Store Scale Unit for use with an on-premises environment, you must start it from commandline using administrator priviledges as follows:
+If you are installing Retail Store Scale Unit for use with an on-premises environment, you must start it from a command line using administrator priviledges as follows:
 
 StoreSystemSetup.exe -UseAdfsAuthentication -AzureAuthority <AD FS URL>
 
@@ -170,7 +170,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     > [!NOTE]
     > - The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must be entered in the **Host name** field for the selected Store system entry.
 
-8. Enter the application ID (client ID) and key (secret) that are associated with this Retail Store Scale Unit installation. Additionally, verify the channel database ID, which is automatically entered from the configuration file. Then select **Install**. If you will use Retail Cloud POS, make sure that the **Configure Retail Cloud POS** check box at the bottom of the page is selected. This configuration requests Azure AD sign-in and automatically generates all required information in Azure, so that Retail Cloud POS can be used on-premises. If you are installing Retail Store Scale Unit for use with an on-premises environment, you must un-select this option.
+8. Enter the application ID (client ID) and key (secret) that are associated with this Retail Store Scale Unit installation. Additionally, verify the channel database ID, which is automatically entered from the configuration file. Then select **Install**. If you will use Retail Cloud POS, make sure that the **Configure Retail Cloud POS** check box at the bottom of the page is selected. This configuration requests Azure AD sign-in and automatically generates all required information in Azure, so that Retail Cloud POS can be used on-premises. If you are installing Retail Store Scale Unit for use with an on-premises environment, you must clear this option.
 
     For information about how to create web applications in Azure, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
     
@@ -180,7 +180,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
 9. After the application ID (client ID) and key (secret) are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Retail. Follow the next procedure to finish the configuration in Retail headquarters.
-10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files. We recommend that you keep this final health page open until you've completed the configuration of Retail Store Scale Unit and all components are working correctly.
+10. After the installation is complete, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files. We recommend that you keep this final health page open until you've completed the configuration of Retail Store Scale Unit and all components are working correctly.
 
 ### Finish the Retail Store Scale Unit configuration in headquarters
 
@@ -290,7 +290,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 
 4. Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps. 
 
-    For more information about Azure Web Apps, how to create them, and how to generate new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI aren't important.
+    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI are not important.
 
 5. When setup is successful, don't exit the installer. 
 
