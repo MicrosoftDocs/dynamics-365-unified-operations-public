@@ -35,7 +35,7 @@ This article will cover installation steps for Retail channel components in an o
 
 ## Overview
 
-Retail channel functionality, in an on-premises environment, is enabled exclusively via use of Retail Store Scale Unit. For an overview of Retail Store Scale Unit, see [Retail Store Scale Unit](../../retail/dev-itpro/retail-store-system-begin). 
+Retail channel functionality, in an on-premises environment, is enabled exclusively via use of Retail Store Scale Unit. For an overview of Retail Store Scale Unit, see [Retail Store Scale Unit](../../retail/dev-itpro/retail-store-system-begin.md). 
 
 Unlike in a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of Retail channel components via Lifecyclse Services (LCS). The only way to use Retail channel components is via installation of Retail Store Scale Unit.
 
@@ -52,9 +52,9 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 
 ```powershell
 .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database -DatabaseName 'Database name for AOS database ' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages>’ -SendProductSupportTelemetryToMicrosoft <True/False>
-```powershell
+```
   
-3.	Download the binary update from LCS. For instructions, see [Download updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs).
-4.	Extract zip file and copy ModenPOSSetup.exe and StoreSystemSetup.exe under the RetailSelfServicePackages folder created in the file share location above.
-5.	Follow installation steps for installing Retail Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation)
+3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+4.	Extract the zip file and copy ModenPOSSetup.exe and StoreSystemSetup.exe under the RetailSelfServicePackages folder created in the file share location above.
+5.	Follow the installation steps for installing the Retail Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).
 
