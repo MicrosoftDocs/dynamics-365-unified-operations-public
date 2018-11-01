@@ -74,7 +74,7 @@ It's good practice to complete the steps in the methodology as you make progress
 
 ## UAT for your solution
 
-During the UAT phase, you must test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox: Standard Acceptance Test environment in the implementation project. To help ensure a successful go-live, you should consider the following as you complete the UAT phase:
+During the UAT phase, you must test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox, or Standard Acceptance Test, environment in the implementation project. To help ensure a successful go-live, you should consider the following as you complete the UAT phase:
 
 - Test cases cover the entire scope of requirements.
 - Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.
@@ -82,7 +82,7 @@ During the UAT phase, you must test all the business processes that you've imple
 - Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
 - Document all features, and obtain approval and sign-off from the customer.
 
-It isn't enough that you test in an environment that is a developer or demo topology, regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD). Here are the reasons:
+Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology. Here are the reasons:
 
 - The topology of the Tier-1 environments differs from the topology of your production environment. It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription. It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and retail devices in the sandbox environment.
 - System performance can't be measured when you do the UAT on local virtual machines (VMs) or VMs that are privately hosted.
