@@ -47,8 +47,8 @@ The self-service process lets you download the appropriate version of the Retail
 - Initialize settings for easy Retail Modern POS functioning (number sequence, hardware profile, merchant information) as the first touchpoint of the POS.
 - Comply with payment card industry (PCI) standards, and report on device information from Retail headquarters.
 
-> [!NOTE}
-> - If you are installing Modern POS for use with an on-prem environment, Modern POS does not use Azure Active Directory credentials for device activation
+> [!NOTE]
+> If you are installing Modern POS for use with an on-premises environment, Modern POS does not use Azure Active Directory credentials for device activation.
 
 ## Setup
 Before you start the steps that are outlined in this topic, follow these steps.
@@ -113,7 +113,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 >     - **Property:** AllowAllTrustedApps
 >     - **Value:** 1
 
-If you are installing Retail Modern POS for use with an on-prem environment, you must start the installer from command line as follows:
+If you are installing Retail Modern POS for use with an on-premises environment, you must start the installer from command line as follows:
 
 ModernPosSetupOffline.exe -UseAdfsAuthentication
 
