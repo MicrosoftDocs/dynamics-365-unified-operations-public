@@ -47,10 +47,10 @@ For information about the bug fixes included in each of the updates that are par
 ## Extensibility enhancements
 With Platform update 22, a third wave of platform extensibility enhancements are available. For more information, see [Platform extensibility enhancements wave 3](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3).
 
-## Export up to one million rows to Excel
-The Export to Excel feature can now be configured to allow users to export up to one million rows from a grid in Finance and Operations. This is a substantial increase from the previous 10,000 row limit. By default, the export limit is set to 50,000 rows, but on the **Client performance options** page, system administrators can adjust the export limit to up to one million rows.
+## Export up to 1 million rows to Excel
+The Export to Excel feature can now be configured to allow users to export up to 1 million rows from a grid in Finance and Operations. This is a substantial increase from the previous 10,000 row limit. By default, the export limit is set to 50,000 rows, but on the **Client performance options** page, system administrators can adjust the export limit to up to 1 million rows.
 
-For more information, see [Export up to one million rows to Excel](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/export-more-rows).
+For more information, see [Export up to 1 million rows to Excel](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/export-more-rows).
 
 ## Improved usability of the navigation pane
 The navigation pane is a highly used navigation mechanism in Finance and Operations that provides access to favorites, recently opened pages, workspaces, and notably the main menu. Because of its high usage, the navigation pane has been enhanced in a few ways to improve its usability. These changes are available starting in Platform Update 22. To learn more, see [Improved usability of the navigation pane](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane).
