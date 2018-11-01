@@ -497,7 +497,9 @@
     - name: Add custom controls to POS views
       href: dev-itpro/pos-custom-control.md
     - name: Add POS operations to POS layouts using Button grid designer
-      href: dev-itpro/add-POS-operations.md     
+      href: dev-itpro/add-POS-operations.md  
+    - name: Retail POS APIs
+      href: dev-itpro/POS-APIs.md
     - name: POS payment extension
       href: dev-itpro/pos-payment-extension.md
     - name: Support for external gift cards
