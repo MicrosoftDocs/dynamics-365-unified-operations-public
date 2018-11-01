@@ -121,6 +121,7 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
 *If ‘Fulfill partial order’ is set to No, then ‘Fulfill partial lines’ is always considered to be No irrespective of what has been set for it.
 
+
    d.  **Offline fulfillment location rule:** This rule allows the organization to specify a location or group of locations as off-line or unavailable to DOM for assigning orders for fulfillment
    
    e.  **Maximum rejects rule:** This rule allows the organization to define a threshold for rejects, and on hitting that threshold, the DOM processor will mark an order or order line for exception and exclude it from further processing.
@@ -135,11 +136,11 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
    
    Some of the common attributes that can be defined for all the above rule types are explained below:
    
-   a.  Start date / End date: Every rule can date bound using the Start date & End date fields
+   + Start date / End date: Every rule can date bound using the Start date & End date fields
    
-   b.  Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
+   + Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
    
-   c.  Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied.
+   + Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied.
    
    In the second iteration, the rules that are not defined as hard constraints are removed and the order / order lines that are not assigned to locations when the full rule set was applied, are attempted to be assigned to locations with a reduced rule count (as the not hard constraints rules are removed).
 
@@ -192,6 +193,7 @@ The below are the steps to set-up the Fulfillment profiles:
    
    v. Set the field **“Enable profile’** to Yes. If there are any errors in the setup, the system will give relevant warning message when trying to set this field to Yes.
 
+
 **DOM Processing**
 
 DOM is expected to be run in batch. To configure the batch job for the DOM runs, please follow the below steps:
@@ -210,19 +212,19 @@ At the time of processing, DOM will consider the order and order lines as outlin
 
 Order lines that meet the criteria for Sales order origins, modes of delivery and legal entity as defined in the DOM profile and
 
-   a.  are created from retail channels
+   + are created from retail channels
    
-   b.  are never brokered by DOM
+   + are never brokered by DOM
    
-   c.  have been brokered by DOM before but are marked as exception and are below the maximum threshold attempt
+   + have been brokered by DOM before but are marked as exception and are below the maximum threshold attempt
    
-   d.  where the mode of delivery is not ‘Pick-up’
+   + where the mode of delivery is not ‘Pick-up’
    
-   e.  are not marked for delivery
+   + are not marked for delivery
    
-   f.  are not manually excluded
+   + are not manually excluded
    
-   g.  Orders that are not ‘On hold’
+   + Orders that are not ‘On hold’
 
 After applying the rules, inventory constraints & optimization, DOM will pick a location that is closest to the customer’s delivery address.
 
@@ -241,13 +243,14 @@ If the Fulfillment profile is set to “Auto apply”, the results of the execut
 
 4.  The order details section of the plan shows the original sales order lines that was part of the execution. Beyond the standard sales order line fields, the order details section also show the three DOM related fields as below:
 
-    a.  **Fulfillment type:** Indicates if the sales order line is fully brokered / Partially brokered / Not brokered at all to a location
+    + **Fulfillment type:** Indicates if the sales order line is fully brokered / Partially brokered / Not brokered at all to a location
 
-    b.  **Split:** Indicates if one sales order line has been split and brokered to different locations
+    + **Split:** Indicates if one sales order line has been split and brokered to different locations
 
-    c.  **No. of fulfillment locations:** Indicates how many fulfillment lines were created for one sales order lines (based on how many locations was that one original sales order line brokered to)
+    + **No. of fulfillment locations:** Indicates how many fulfillment lines were created for one sales order lines (based on how many locations was that one original sales order line brokered to)
 
 5.  The order fulfillment details section shows the assignment of the original sales order lines to different locations along with their quantities.
+
 
 **Order line actions & statuses**
 
@@ -255,11 +258,11 @@ If the Fulfillment profile is set to “Auto apply”, the results of the execut
 
 2.  On the **General** tab of the sales order line, there is a field called as ‘DOM status’. The DOM status field can one of three values as explained below:
 
-    a.  None – The order line has never been brokered
+    + None – The order line has never been brokered
 
-    b.  Complete – The order line is successfully brokered and assigned to a location
+    + Complete – The order line is successfully brokered and assigned to a location
 
-    c.  Exception – The order line is brokered but cannot be assigned to a location. There are multiple sub-types for exceptions which can be viewed from the DOM workspace. The sub-types for exception are as follows:
+    + Exception – The order line is brokered but cannot be assigned to a location. There are multiple sub-types for exceptions which can be viewed from the DOM workspace. The sub-types for exception are as follows:
     
        i.  No quantity available – Inventory is not available in the locations to assign the order to
        
