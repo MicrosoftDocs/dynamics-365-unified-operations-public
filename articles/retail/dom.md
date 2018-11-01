@@ -73,8 +73,7 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
    	 > Organizations should not use the ‘Simplified Solver’ in Production environments
 
    	 > While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
-	
-
+	 
 4. Navigate to **Retail > Distributed order management > Setup > DOM parameters > Number sequences** tab
 
      - Assign the required number sequences to the different DOM entities. The Number sequences needs to be defined under **Organization administration > Number sequences > Number sequences** before they can be assigned to the entities
@@ -136,11 +135,11 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
    
    Some of the common attributes that can be defined for all the above rule types are explained below:
    
-   + Start date / End date: Every rule can date bound using the Start date & End date fields
+   - Start date / End date: Every rule can date bound using the Start date & End date fields
    
-   + Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
+   - Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
    
-   + Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied.
+   - Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied.
    
    In the second iteration, the rules that are not defined as hard constraints are removed and the order / order lines that are not assigned to locations when the full rule set was applied, are attempted to be assigned to locations with a reduced rule count (as the not hard constraints rules are removed).
 
