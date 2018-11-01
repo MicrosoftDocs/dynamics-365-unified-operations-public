@@ -95,7 +95,7 @@ However, if the invoice expenses are included in the order line that corresponds
 ## Create a free text invoice for a fixed asset
 
 1.  Click **Accounts receivable** \> **Common** \> **Free text invoices** \> **All free text invoices**.
-2.  Press CTRL+N to create a new invoice. For more information, see [Create a free text invoice](../financials/accounts-receivable/create-free-text-invoice-template-new.md).
+2.  Press CTRL+N to create a new invoice. For more information, see [Create a free text invoice](../accounts-receivable/create-free-text-invoice-template-new.md).
 3.  In the **Customer account** field, select a customer account.
 4.  In the **Date** field, enter an invoice date.
 5.  In the **Currency** field, select an invoice currency.
