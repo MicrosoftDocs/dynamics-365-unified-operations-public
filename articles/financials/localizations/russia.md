@@ -46,7 +46,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Fixed asset counting](rus-fixed-assets-counting.md)
 - [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
 - [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
-
+- [Sell, dispose, and write-off assets](rus-sell-dispose-write-off-fixed-assets.md)
 
 ## Additional resources
 
