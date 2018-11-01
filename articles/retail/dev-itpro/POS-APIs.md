@@ -248,7 +248,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 
 ### ScanResults
 
-BThe following is a list of APIs exposed to perform scan results-related functionality.
+The following is a list of APIs exposed to perform scan results-related functionality.
 
 | POS API                    |
 |----------------------------|
@@ -256,7 +256,7 @@ BThe following is a list of APIs exposed to perform scan results-related functio
 
 ### Customer
 
-BThe following is a list of APIs exposed to perform customer-related functionality.
+The following is a list of APIs exposed to perform customer-related functionality.
 
 | POS API                  |
 |--------------------------|
