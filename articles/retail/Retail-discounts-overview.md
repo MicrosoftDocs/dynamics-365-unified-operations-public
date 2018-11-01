@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail discounts
-description: This topic provides an overview of the discounts functionality in the Dynamics 365 for Retail. It explains the various properties found on the various discount forms, and best practices for discount management.
+description: This topic provides an overview of the discount functionality in Dynamics 365 for Retail. It explains the properties found on the various discount forms, and best practices for discount management.
 author: shajain
 manager: AnnBe
 ms.date: 10/23/2018
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 
 
 ## Overview
-This topic provides an overview of the discounts functionality in the Dynamics 365 for Retail. It explains the various properties found on the various discount forms, and best practices for discount management, but it does not cover the various discounts types in detail, for example; Simple, Quantity, Mix and Match, and Threshold discounts. The details will be covered in separate documents created for individual discounts.
+This topic provides an overview of the discounts functionality in the Dynamics 365 for Retail. It explains the properties found on the various discount forms, and best practices for discount management. However, this topic does not cover the various discounts types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate topics created for each of these discount types.
 
-Because retailers require flexible discounting, and discount styles and types vary by retail industry, there are many ways to define discounts in Dynamics 365 for Retail. The discounting functionality in Retail was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. Furthermore, the discount types can be configured for five different entities--customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy. 
+Because retailers require flexible discounting, and discount styles and types vary by retail industry, there are many ways to define discounts in Dynamics 365 for Retail. The discounting functionality in Retail was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. As a result, the discount types can be configured for five different entities--customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy. 
 
 ## Creating discounts
 
@@ -73,9 +73,9 @@ This section describes the properties that are common to all types of retail dis
 
 When you manage retail discounts, it&#39;s important that you understand each discount option individually, but it is equally 
 important that you understand which options affect each other and how. The common settings for discounts fall into two categories. 
-In the first category are settings that filter discounts for consideration. Examples include **Status** , **Currency** , and **Unit
+In the first category are settings that filter discounts for consideration. Examples include **Status**, **Currency**, and **Unit
 of measure**. Settings in the second category control the order in which multiple discounts are considered and applied. Examples 
-include **Discount concurrency mode** and **Pricing priority**. The below image shows the various properties of a discount.
+include **Discount concurrency mode** and **Pricing priority**. The following image shows the various properties of a discount.
 
 ![Discount properties](./media/discount%20properties.png "Discount properties")
 
@@ -84,16 +84,16 @@ include **Discount concurrency mode** and **Pricing priority**. The below image 
 This field is labeled **Discount** and holds a unique ID for each discount. It's set when you
 first create a discount and can't be changed later. In **Retail parameters**, you can set up independent number sequences for each 
 type of discount. In this case, make sure that the number sequences won't collide. For example, you can use a unique prefix for 
-each discount type. For example, D for **d** iscount, Q for **q** uantity, MM for **m** ix and **m** atch, and T for **t** hreshold.
+each discount type. For example, D for **d**iscount, Q for **q**uantity, MM for **m**ix and **m**atch, and T for **t**hreshold.
 
 ### Discount name
 
 This field is a short free text field that is used to describe the discount. The string value in this field is shown in the MPOS 
-and CPOS cart line and **printed on MPOS/CPOS customer receipts**. Therefore, your cashiers and end customers will see this description. It is the primary means for MPOS/CPOS users and customers to know which discount was applied.
+and CPOS cart line and printed on Retail Modern Point of Sale (MPOS) and Cloud POS (CPOS) customer receipts. Therefore, your cashiers and end customers will see this description. It is the primary means for MPOS/CPOS users and customers to know which discount was applied.
 
 ### Discount type
 
-There are four types of retail discounts in Dynamics 365 for Retail: **Discount** , **Quantity** , **Mix and match** , 
+There are four types of retail discounts in Dynamics 365 for Retail: **Discount**, **Quantity**, **Mix and match**, 
 and **Threshold**. The discount type is set when you first create a discount and can't be changed later. The discount type 
 determines whether there is a quantity or amount criterion that must be met to qualify for the discount.
 
@@ -130,40 +130,40 @@ are always evaluated and applied before **Best price** and **Compound** discount
 **Exclusive** and **Best price** discount never compete for the best price. Two or more **Exclusive** discounts will compete for
 the best price, as will two or more **Best price** discounts.
 
-When the value is **Compound** , the discount can be compounded with any other discount that is also set to **Compound**. 
+When the value is **Compound**, the discount can be compounded with any other discount that is also set to **Compound**. 
 Therefore, two or more **Compound** discounts will all be applied to a transaction line. When multiple **Compound** discounts are
 applied to a transaction line, they are applied in the following order:
 
-1. _Discount price_ discounts
-2. _Amount-off_ discounts
-3. _Percentage-off_ discounts
+1. Discount price discounts
+2. Amount-off discounts
+3. Percentage-off discounts
 
 **Compound** discounts compete with **Best price** discounts when both types apply to a transaction line. Therefore, the **Compound**
 setting is used to determine which discounts are combined. Depending on the discount concurrency control mode used, two or more
-**Compound** discounts can be combined together and compete with the **Best price** discounts that apply to the same products. 
+**Compound** discounts can be combined and compete with the **Best price** discounts that apply to the same products. 
 The discount or discounts that have the largest total discount amount are applied.
 
 ### Discount account
 
 Dynamics 365 for Retail lets you post discount amounts for a transaction to a separate general ledger (GL) account. The discount GL account is set by the product or customer. Dynamics 365 for Retail offers a unique way
-to separate the discount amounts during posting. You can post each type of discount to a specific GL account. Both options can help
+to separate the discount amounts during posting. You can post each type of discount to a specific GL account. Both options can
 make it easier for you to determine which discounts or discount types are being used in your general ledger.
 
->[!NOTE]
->When the retail discount account posting feature is enabled, then an additional debit entry and credit entry are made to 
+> [!NOTE]
+> When the retail discount account posting feature is enabled, then an additional debit entry and credit entry are made to 
 reclassify the discount posting out of the Dynamics 365 for Retail discount GL account and 
 into the retail discount GL account.
 
 ### Coupon code required
 
-From Dynamics 365 for Retail version 7.2, the call center coupons are merged with retail discounts. For a discount, when 
-**Coupon code required** is set to **Yes**, the **Status** field and the standard date fields **Effective date** and
-**Expiration date** are disabled. These properties are controlled by equivalent properties of the coupon that are on the **Coupons** page.
+Starting with Dynamics 365 for Retail version 7.2, the call center coupons are now merged with retail discounts. For a discount, when 
+**Coupon code required** is set to **Yes**, the **Status** field and the standard date fields, **Effective date** and
+**Expiration date**, are not available. These properties are controlled by equivalent properties that are on the **Coupons** page.
 
 When **Coupon code required** is set to **Yes** on a discount, the discount is applied to a transaction only if the coupon 
-code or bar code is provided at the MPOS/CPOS. The values of the coupon codes and bar codes are defined and configured in a 
+code or bar code is provided by MPOS/CPOS. The values of the coupon codes and bar codes are defined and configured in a 
 separate page named **Coupons**. The Coupons page is where the coupon is linked to the discount. When Coupon code required is 
-set to **No** , a coupon code isn't required, and the discount will always be applied through its price groups.
+set to **No**, a coupon code isn't required, and the discount will always be applied through its price groups.
 
 ### Override priority and Pricing priority
 
@@ -186,7 +186,7 @@ This is a free-form text field. It isn't used in the MPOS/CPOS system or in tran
 This field is on all discount lines. The possible values are **Include** and **Exclude**. This field is used in combination with 
 the **Category**, **Product**, and **Variant** fields to define the set of products that the discount is applied to. Exclude 
 discount lines always override include discount lines. When **Line type** is **Exclude** many of the other fields on the discount
-line become disabled, as they do not apply.
+line are grayed out, as they do not apply.
 
 ### Unit of measure
 
@@ -194,14 +194,13 @@ line become disabled, as they do not apply.
 to a transaction line. The UoM on the transaction line must match the UoM on the discount line. Otherwise, the discount line isn't 
 considered during discount calculation. No UoM conversion is done during discount calculation.
 
-### Category, product, variant and dimensions
+### Category, product, variant, and dimensions
 
-**Category**, **Product**, **Variant and dimensions** are the last discount settings that are common to all retail discounts. 
+**Category**, **Product**, **Variant, and dimensions** are the last discount settings that are common to all retail discounts. 
 These fields are set on each discount line and specify what is being discounted. They act as a filter when the retail pricing engine
-searches for discounts that can be applied to a transaction. These fields are related to each other as follows: categories contain 
-products, and products can come in different variations of size, color, style, and configuration.
+searches for discounts that can be applied to a transaction. These fields are related to each other according to these rules - categories contain products, and products can come in different variations of size, color, style, and configuration.
 
-The retail pricing engine does **not** use the parent/child relationships of categories, products, and variants to order retail 
+The retail pricing engine does not use the parent/child relationships of categories, products, and variants to order retail 
 discounts during discount calculation. This behavior differs from the way that the retail pricing engine handles sales price trade
 agreements. For example, both a discount for 10 percent on a category and a discount for 5 percent on a product in the same category
 will be considered. The larger of the two discount amounts will then be used, provided that all other properties are the same and the
@@ -209,9 +208,9 @@ discounts aren't set to **Compound,** in which they both will be combined. If yo
 a category discount you can use pricing priority or the discount's concurrence mode to cause one discount to be applied before 
 another.
 
-When you edit discounts, the **Category**, **Product**, **Variant** and **Dimensions** settings act as filters for each other. 
+When you edit discounts, the **Category**, **Product**, **Variant**, and **Dimensions** settings act as filters for each other. 
 The **Category** and **Product** fields are automatically set from the _Retail Category Hierarchy_ if a product or variant is 
-entered directly. Below is a description of each of these fields in more detail.
+entered directly. The following sections provide detailed descriptions of each of these fields.
 
 #### Category
 
@@ -221,16 +220,17 @@ other non-retail hierarchies. If only a category is specified on a discount line
 that category, even products that are added to the category after the discount has been created, provided that all other discount
 criteria are met, such as currency and UoM.
 
-**Tip:** The category that you select on a discount line is hierarchy-specific. Therefore, you can't specify a value by 
+> [!NOTE]
+> The category that you select on a discount line is hierarchy specific. Therefore, you can't specify a value by 
 typing a partial value in the field, as you can in most Dynamics 365 for Retail fields. If you type in a full category
 name, the drop-down list will expand, and that category will be selected. In addition, you can press Alt+Down arrow to expand the
 selection dialog box and then press Tab to move between the hierarchy selection and hierarchy tree within the drop-down list, so 
 that you can use the field without using a mouse.
 
-**The capability to work with categories is a key differentiator between retail discounts and trade agreement discounts, and the 
-main reason that we discourage you from using trade agreement discounts.** Categories are organized in a multi-level hierarchy. 
+The capability to work with categories is a key differentiator between retail discounts and trade agreement discounts, and the 
+main reason that we discourage you from using trade agreement discounts. Categories are organized in a multi-level hierarchy. 
 By contrast, the item discount groups that are used by trade agreements are only a single level of grouping, and each group is 
-specific to one of the three trade agreement discount types i.e. Line discount, Multiline discount and Total discount. Therefore,
+specific to one of the three trade agreement discount types, such as Line discount, Multiline discount, and Total discount. Therefore,
 for trade agreements, if you want to use the same set of products in all three trade agreement discount types, you must create 
 and manage three independent discount groups. However, for retail discounts, you must maintain only one category. You can then 
 use that category in all four retail discount types. You can also use the same category in price adjustments, assortment management,
@@ -238,7 +238,7 @@ and loyalty management.
 
 #### Product
 
-The product can be a released product or a released product master. All retail discounts are company-specific. Therefore, they 
+The product can be a released product or a released product master. All retail discounts are company specific. Therefore, they 
 work only with released products. If you select a product master, the discount will be applied to all variants of the product, 
 even variants that are released after the discount is created, provided that all other discount criteria are met, such as currency
 and UoM.
@@ -250,21 +250,19 @@ criteria are met, such as currency and UoM.
 
 #### Dimensions
 
-As a part of Dynamics 365 for Retail October 2018 release, we have added the capability to set up discounts at a dimension level of 
-a product. This provides the flexibility to choose one or more dimensions of a product as discount lines and thus saves the
-merchandizing manager from individually adding the variants on which the discounts apply. For e.g. you can specify a discount on
+Starting with the Dynamics 365 for Retail October 2018 release, we have added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the
+merchandizing manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on
 all variants with a specific or you can specify a discount on all variants that are of a specific color and style.
 
 ## Best practices
 
-- Before you start to create discounts, document your discounting strategy and procedure. Keep your documentation up to date as 
+- Before you create discounts, document your discounting strategy and procedure. Keep your documentation up to date as 
 your use of the product evolves.
 - Use independent number sequences for each discount type and configure the number sequences so that the discount ID by itself
-indicates the discount type. For example, prefix the ID each discount type with a different alphanumeric constant: **Q** for quantity,
-**MM** for mix and match, and so on.
-- Test your discount configuration using the **price simulator** before you enable discounts. The price simulator has an option that
+indicates the discount type. For example, prefix the ID of each discount type with a different alphanumeric constant: **Q** for quantity, **MM** for mix and match, and so on.
+- Test your discount configuration using the price simulator before you enable discounts. The price simulator has an option that
 lets you treat disabled discounts as enabled. This option was designed specifically for testing discounts before they are enabled.
 - Expire discounts when they are no longer valid. In this way, you prevent the total number of discounts that the retail pricing engine
 considers during a transaction from growing unbounded. Otherwise, the performance of discount calculation can be affected over time.
-- Leverage the supplemental categories to group the products e.g. Clearance products, Last season products etc.
+- Leverage the supplemental categories to group the products, for example clearance products or last season products.
 - Always avoid or minimize overlapping discount lines.
