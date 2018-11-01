@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure Power BI integration for workspaces
-description: This topic describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
+description: This topic describes how to configure a new Microsoft Dynamics 365 for Finance and Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,7 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations lets users pin tiles, dashboar
 
 This functionality requires a one-time configuration of your environment. An administrator must do this step to enable Finance and Operations and Microsoft Power BI to communicate and authenticate correctly.
 
-Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to show a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the Finance and Operations workspace. The fact that the Finance and Operations server contacts the Power BI service "on behalf of a user" is important. When a user, such as `D365User@contoso.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from D365User's PowerBI.com subscription.
+Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to show a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the Finance and Operations workspace. The fact that the Finance and Operations server contacts the Power BI service "on behalf of a user" is important. When a user, such as `D365User@contoso.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from the user's PowerBI.com subscription.
 
 By completing this configuration step, you enable Finance and Operations to contact the PowerBI.com service.
 
@@ -50,22 +50,22 @@ By completing this configuration step, you enable Finance and Operations to cont
 - You must have a PowerBI.com account. You can create a trial account if you don't have an account. (A Pro license isn't required for this configuration step.)
 - You must have at least one dashboard and one report in your Power BI account. Although the dashboard and report aren't required for this configuration step, you might not be able to validate the configuration if you don't have any content in your PowerBI.com account.
 - You must be an administrator for your Microsoft Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform this configuration step for you.
-- The Azure AD domain that is configured for Finance and Operations must be the same domain that you used for your PowerBI.com account. For an example, if you provisioned Finance and Operations in the Contoso.com domain, you must have Power BI accounts in that domain, such as `Tim@ContosoAX7.onmicrosoft.com`.
+- The Azure AD domain that is configured for Finance and Operations must be the same domain that you used for your PowerBI.com account. For example, if you provisioned Finance and Operations in the Contoso.com domain, you must have Power BI accounts in that domain, such as `Tim@ContosoAX7.onmicrosoft.com`.
 
 ## Registration process 
 
-1. Log in to https://portal.azure.com/ using Azure tenant admin account.<br>
+1. Sign in to https://portal.azure.com/ using an Azure tenant admin account.<br>
 > [!NOTE]
 > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
 2. Go to **Azure Active Directory** > **App registrations** > **New application registration**.<br>
     ![Azure Portal App Registration](media/Azure-Portal-AppRegistration.png)
 
-3. Enter the following values in the dialog:
+3. Enter the following values:
 
-- **Name**: Your app name.
-- **Application type**: Web app / API
-- **Sign-on URL**: The base URL of your Finance and Operations client and the OAuth suffix. For example, http://contosoax7.cloud.dynamics.com/oauth.
+- **Name** - Your app name.
+- **Application type** - Web app/API
+- **Sign-on URL** - The base URL of your Finance and Operations client and the OAuth suffix. For example, http://contosoax7.cloud.dynamics.com/oauth.
 			 
 4. Click **Create**.
 5. Copy the **Application ID**. This will be used in Finance and Operations to connect to the PowerBI.com service.
@@ -123,7 +123,7 @@ In the procedure above, after you click **Accept**, you might receive the follow
 | Error                                                       | Resolution |
 |-------------------------------------------------------------|------------|
 | The Power BI service is unavailable.                        | This issue doesn't occur very often, but the Power BI service might sometimes be unreachable. You don't have to re-register. Try to pin a tile to a workspace later. |
-| You can't access the application.                           | You probably didn't select all the check boxes under **Step 3 Choose APIs to access** during the registration process. Start Power BI, and rerun the registration process. |
+| You can't access the application.                           | You probably didn't select all the check boxes under **Step 3 Choose APIs to access** during the registration process. Start Power BI, and re-run the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
-| Error when Authorizing Power BI                             | Within the Azure Admin Dashboard, under **Users and Groups \> User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
+| Error when authorizing Power BI                             | On the Azure Admin dashboard, under **Users and Groups \> User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
 
