@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -248,6 +248,7 @@ This section provides troubleshooting information for the different stages of da
 ### Export process troubleshooting
 - If you get an error during the export process, click **View execution log** and review the log text, staging log details, and Infolog for more information.
 - If you get an error during the export process with a note directing you to not skip staging, turn off the **Skip staging** option, and then add the entity. If you are exporting multiple data entities, you can use the **Skip staging** button for individual data entities.
+- There is a 256 MB limit for the file size that can be handled via export. If there are a large number of records that will be exported, be sure that the resulting file size does not exceed this limit. An alternate way to handle such scenarios would be to use filters on the entity to export only a subset of data. If this is not feasible, then bring your own database must be considered for the overall solution.
 
 ### Import process troubleshooting
 When uploading data entity files:
@@ -276,8 +277,8 @@ The following features are enabled via flighting. *Flighting* is a concept that 
     - Flight name = DMFEnableAllCompanyExport
     - Enabled = 1
     - Flight service ID = 12719367
-    - Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-    - RecID = same ID as partition
+    - Partition = Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+    - RecID = Same ID as partition.
     - RecVersion = 1
 
 **DMFExportToPackageForceSync** - This flight represents the feature to enable synchronous behavior on the ExportToPackage integration API. By default, the behavior is asynchronous. This can be changed to synchronous in production environments by creating a support request. For non-production environments, the following steps must be followed.
@@ -288,11 +289,25 @@ INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight servic
 - Flight name = DMFExportToPackageForceSync
 - Enabled = 1
 - Flight service ID = 12719367
-- Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-- RecID = same ID as partition
+- Partition = Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+- RecID = Same ID as partition.
 - RecVersion = 1
 
 -Restart IIS
-    
+
+**EntityNamesInPascalCaseInXMLFiles** - This flight can be enabled if you want to have the entity names in Pascal Case in the XML files for entities. This might be useful if the integration pipe has been plumbed with this specification. However, if there is no such dependency, then this flight can be ignored and by default, the XML files will have the entity names in capital case. To enable this flight in production environments, a support case must be logged. 
+
+For non-production environments, the following steps must be followed.
+
+- Add a record with this Insert statement, replacing the appropriate values:
+
+INSERT INTO SYSFLIGHTING VALUES ('EntityNamesInPascalCaseInXMLFiles', 1, Flight service ID, Partition, RecID, 1) 
+- Flight name = DMFExportToPackageForceSync
+- Enabled = 1
+- Flight service ID = 12719367
+- Partition = Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+- RecID = Same ID as partition.
+- RecVersion = 1
+
 ## Additional resources
 - [Data entities](data-entities.md)

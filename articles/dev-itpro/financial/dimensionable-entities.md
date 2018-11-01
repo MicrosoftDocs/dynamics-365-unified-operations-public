@@ -5,7 +5,7 @@ title: Make backing tables consumable as financial dimensions
 description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/20/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -79,8 +79,13 @@ The first step is to create a view in the same model as your backing table. Befo
 1. Enter **Value** in the **TitleField1** field in the **Properties** pane.
 1. Enter **Name** in the **TitleField2** field in the **Properties** pane.
 1. Review the backing table properties and identify the config key it is using. On **View**, enter the same **Configuration key** as the backing table.
-1. Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
-1. Right-click **View** and select **View Code**. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable.
+
+  > [!IMPORTANT]
+  > Security access must be granted to non-admin users for the new view.
+  > - For releases 7.2 and earlier where over-layering is used - Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
+  > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag-and-drop the newly created **Security Privilege** into the **Privileges list**.  
+       
+14. Right-click **View** and select **View Code**. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable.
       ```
       [SubscribesTo(classstr(DimensionEnabledType),
       delegatestr(DimensionEnabledType,
@@ -91,9 +96,9 @@ The first step is to create a view in the same model as your backing table. Befo
          _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
       }
       ```
-1. Select **Microsoft Dynamics 365** and click **Options**. Select **Best Practices**. Select your model and then scroll until you find
+15. Select **Microsoft Dynamics 365** and click **Options**. Select **Best Practices**. Select your model and then scroll until you find
     **Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker**. Verify that the rule and its children are selected.
-1.  Build and then synchronize the view.
+16.  Build and then synchronize the view.
 
 ## Step 2: Validate that the view returns the correct data in SQL
 

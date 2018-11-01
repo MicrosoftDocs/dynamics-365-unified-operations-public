@@ -197,7 +197,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Add/remove form as a favorite (with focus on a form in the navigation pane)   | Shift+F                    |
 | Move to the standard Action Pane                                              | Alt+M,A or Ctrl+F6         |
 | Move to the Filter pane (which may include opening it)                        | Alt+M,F or Ctrl+F3         |
-| Move focus to the page content (with focus in the navigation list)            | Alt+M,M or Ctrl+F3         |
+| Move focus to the page content (with focus in the Filter pane)                | Alt+M,M or Ctrl+F3         |
 | Move to the navigation list on Details form (which may include opening it)    | Alt+M,S or Ctrl+F8         |
 | Move focus to the page content (with focus in the navigation list)            | Alt+M,M or Ctrl+F8         |
 | Close the navigation list on Details form (with focus in the navigation list) | Esc                        |

@@ -305,8 +305,6 @@
         href: extensibility/change-caption-form.md
       - name: Modify form control properties
         href: extensibility/modify-control-properties.md
-      - name: Change labels using label extension files
-        href: extensibility/change-label.md
       - name: Extend the scope of number sequences
         href: extensibility/extend-number-sequence-scope.md
       - name: Add new inventory dimensions
@@ -319,6 +317,8 @@
         href: extensibility/maps-as-interfaces.md
       - name: Extend table maps used for versioning
         href: extensibility/maps-with-versioning.md
+      - name: Extending decimal point precision for selected data types
+        href: extensibility/decimal-point-precision.md
     - name: Creating extensible solutions
       items:
       - name: Write extensible code
@@ -536,7 +536,7 @@
       href: user-interface/workspace-filter-group-subpattern.md
   - name: Control extensibility
     items:
-    - name: Build aextensible controls
+    - name: Build extensible controls
       href: user-interface/build-extensible-control.md
     - name: Keyboard shortcuts for extensible controls
       href: user-interface/keyboard-shortcuts-controls.md
@@ -1023,6 +1023,8 @@
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools
       href: dev-tools/update-development-tools.md
+    - name: Plan and prepare for compiling code against the latest update
+      href: migration-upgrade/compile-considerations.md
   - name: Upgrade to a recent update (on-premises)
     items:
     - name: Apply updates to on-premises deployments
@@ -1088,6 +1090,12 @@
       href: sysadmin/batch-server-overview.md
     - name: Create batch jobs
       href: sysadmin/tasks/create-batch-job.md
+    - name: Copy a batch job
+      href: sysadmin/copy-batch-job.md
+    - name: Active batch periods
+      href: sysadmin/activeperiod.md
+    - name: Batch manager security role
+      href: sysadmin/runby.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:

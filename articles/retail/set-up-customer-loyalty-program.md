@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up customer loyalty programs
-description: This article describes how to set up a loyalty program. Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.
+title: Loyalty overview
+description: This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,16 +31,13 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Set up customer loyalty programs
+# Loyalty overview
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up a loyalty program. Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.
+Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the Retailer's brand. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel. This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 
-Loyalty features
-----------------
-
-You can set up your loyalty program so that they include the following options:
+You can set up your loyalty program so that they include the following options.
 
 -   Set up multiple types of rewards that you offer in your loyalty programs, and track participation in your loyalty programs.
 -   Set up loyalty programs that represent the different reward incentives that you offer. You can include loyalty program tiers to offer greater incentives and rewards to customers who shop more frequently or spend more money in your stores.
@@ -49,7 +46,7 @@ You can set up your loyalty program so that they include the following options:
 -   Manually adjust loyalty cards, or transfer the loyalty rewards balance from one card to another to accommodate or reward a customer.
 
 ## Setting up loyalty programs
-You must set up several components to enable the loyalty feature in Dynamics 365 for Retail. The following diagram illustrates the loyalty components and how they relate to each other. ![Loyalty setup process flow](./media/loyaltyprocess.gif)
+You must set up several components to enable the loyalty feature in Dynamics 365 for Retail. The following diagram illustrates the loyalty components and how they relate to each other. ![Loyalty setup process flow](./media/loyaltyprocess.gif "Loyalty components and how they relate to each other")
 
 ## Loyalty components
 The following table describes each component and where it's used in the loyalty setup.
@@ -74,10 +71,62 @@ The following table describes the processes that must be run to send the loyalty
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | 1050 (loyalty information)           | Run this process to send the loyalty data from Dynamics 365 for Retail to the retail stores. It's a good idea to schedule this process to run frequently, so that loyalty data is transmitted to all stores.                                                                                                                                                                                               | Distribution schedule                |
 | Process loyalty schemes              | Run this process to associate loyalty schemes with the retail channels that the loyalty scheme is assigned to. This process can be scheduled to run as a batch process. You must run this process if you change loyalty configuration data, such as loyalty schemes, loyalty programs, or loyalty reward points.                                                                                               | Process loyalty schemes              |
-| Process offline loyalty transactions | Run this process to update loyalty cards so that they include transactions that were processed offline. This process applies only if the **Earn offline** check box is selected on the **Retail shared parameters **page, so that rewards can be earned offline.                                                                                                                                               | Process offline loyalty transactions |
+| Process offline loyalty transactions | Run this process to update loyalty cards so that they include transactions that were processed offline. This process applies only if the **Earn offline** check box is selected on the **Retail shared parameters** page, so rewards can be earned offline.                                                                                                                                               | Process offline loyalty transactions |
 | Update loyalty card tiers            | Run this process to evaluate the customer’s earning activity against the tier rules for a loyalty program, and to update the customer’s tier status. This process is required only if you change the tier rules in loyalty programs and want the updated rules to be retroactively applied to loyalty cards that have already been issued. This process can be run as a batch process or for individual cards. | Update loyalty card tiers            |
 
+## Loyalty enhancements
 
+Retail has new loyalty functionality as a part of the October 2018 release. Each of the new enhancements is explained below.
 
+- As a part of a loyalty scheme in previous releases, retailers could create different earning and redemption rules by tiers to differentiate the rewards for customers in different tiers. Retailers can now include "affiliations" as a part of the earning and redemption rules so that certain group of customers can be a part of existing tiers, but still be rewarded differently. Thise prevents the need to create additional tiers.
+	
+	> [!NOTE]
+	> The earning rules within a loyalty scheme are additional. For example, if you create a rule to reward a gold tier member 10 points for each US dollar, and you also create a rule for a customer with "veteran" affiliation to reward 5 points for each US dollar, then a veteran who is also a gold tier member would earn 15 points for 1 US dollar, as the customer qualifies for both lines. However, if the veteran customer was not a gold tier member, then he would earn 5 points for each dollar. To reflect the changes in the channels, run the **Process loyalty schemes** and **1050** (loyalty information) jobs.
+	
+	![Affiliation based earning](./media/Affiliation%20based%20earning.png "Affiliation based earnings")
 
+- Retailers often have special prices for a certain group of customers that they don't want loyalty programs applied to. For example, wholesalers or employees who get special pricing and no loyalty points. Commonly, "affiliations" are used to provide the special pricing to such customer groups. To restrict certain customer groups of customers from earning loyalty points, the retailer can specify one or more affiliations under the **Excluded affiliations** section of the loyalty scheme. That way, when customers belonging to excluded affiliations are existing loyalty members, they won't be able to earn loyalty points for their purchases. To reflect the changes in the channels, run the **Process loyalty schemes** and **1050** (loyalty information) jobs.
 
+	![Excluded affiliations](./media/Excluded%20affiliations.png "Exclude affiliations from earning loyalty points")
+	
+- Retailers can generate loyalty card numbers in the channels. Prior to the October 2018 update, retailers could use physical loyalty cards or generate a loyalty card using some unique customer information such as a phone number. To enable the automatic generation of loyalty cards in the retail stores, turn on **Generate loyalty card number** in the functionality profile associated to the store. For online channels, retailers can use the IssueLoyaltyCard API to issue loyalty cards to customers. Retailers can either provide a loyalty card number to this API, which will be used to generate the loyalty card, or the system will use the loyalty card number sequence set in Dynamics 365 for Retail. However, if the number sequence is not present, and the retailer does not provide a loyalty card number while calling the API, then an error is displayed.
+
+![Generate loyalty card](./media/Generate%20loyalty%20card.png "Automatically generate loyalty card number")
+
+- Earned and redeemed loyalty points are now saved for each transaction and sales orders against the sales line, so that the same amount can be refunded or taken back in the case of full or partial returns. Moreover, having the visibility for points at the sales line level provides the capability for call center users to answer customer questions on how many points were earned or redeemed for each line. Prior to this change, reward points were always recalculated during returns, which resulted in a different amount than the original, if the earning or redemption rules were changed and also the call center users did not have the visibility on the points breakdown. The points can be viewed under the **Card transactions** form for each loyalty card.
+	
+- Retailers can now define the vesting period for each reward point. A vesting period configuration will define the duration from the earn date, after which the reward points would become available to the customers. Unvested points can be viewed in the **Unvested points** column on the **Loyalty cards** page. Additionally, retailers can define the maximum loyalty reward point limit per loyalty card. This field can be used to reduce the impact of loyalty fraud. When the maximum award points have been reached, the user cannot earn more points. The retailer can decide to block such cards until they have investigated for potential fraud. If the retailer determines fraud, the retailer cannot only block the loyalty card for the customer but also mark the customer as blocked. To do so, set the **Block customer for loyalty enrollment** property to **Yes** under **All customers** on the **Retail** FastTab. The blocked customers will not be able to be issued a loyalty card in any of the channels.
+
+![Vesting and maximum reward points](./media/Vesting%20and%20maximum%20reward%20points.png "Define vesting and maximum reward points")
+
+- Affiliations are used to provide special pricing and discounts, but there be some affiliations that retailers do not want their customers to see. For example, an affiliation titled "High spend customer" might not be well received by some customers. Moreover, there are some affiliations that should not be managed in the store, for example, employees, because you do not want the cashiers to decide who is an employee and thus provide employee-based discounts. Retailers can now select the affiliations which should be hidden in the retail channels. Affiliations marked as **Hide in channels** cannot be viewed, added, or removed in the POS. However, the pricing and discounts associated with the affiliation will still be applied to the products.
+
+![Hide affiliations](./media/Hide%20affiliations.png "Hide affiliations in channels")
+	
+- Call center users can now more easily search for a customer using their loyalty card information, and navigate to the customer's loyalty card and loyalty card transaction pages from the **Customer service** page. 
+
+![Customer service](./media/Customer%20service.png "Find loyalty information for the customer")
+	
+- If a loyalty card is compromised, a replacement card needs to be generated and the existing points transferred to the new card. The replacement card flow has been simplified in this release. Additionally, customers can gift some or all of their loyalty points to friends and family. When points are transferred, points adjustment entries are created for each loyalty card. The replacement card and transfer balance functionality can be accessed from the **Loyalty cards** page.
+
+![Replace and transfer points](./media/Replace%20and%20transfer%20points.png "Replace loyalty card or transfer balance")
+	
+- Retailers may want to capture the effectiveness of a particular channel to enroll customers into a loyalty program. The enrollment source for the loyalty cards is now saved so that retailers can run reports on this data. The enrollments source is automatically captured for all the issued loyalty cards from MPOS/CPOS or e-Commerce channels. For the loyalty cards issued from the back office application, the call center user can select an appropriate channel.
+
+- In earlier releases, retailers could use MPOS/CPOS to redeem loyalty points for customers in a store. However, in those releases, because the loyalty balance is displayed in loyalty points, the cashier could not view the currency value amount that could be applied toward the current transaction. The cashier had to do the points to currency conversion before paying by loyalty points. In the current release, after lines are added to the transaction the cashier can see the amount that the loyalty points can cover for the current transaction, making it easy to apply some or all of the loyalty points to the transaction. Additionally, the cashier can see the points that will be expiring in next 30 days, so they can upsell or cross-sell to motivate the customer to spend the expiring points at that transaction.
+
+![Points covered by loyalty balance](./media/Points%20covered%20by%20loyalty%20balance.png "Show balance covered by loyalty points")
+
+![Expiring points](./media/Expiring%20points.png "View expiring points")
+	
+## Upcoming enhancements
+
+The following features will be available in the future monthly updates of Dynamics 365 for Retail.
+	
+- Customers want the ability to view their loyalty balance details on the consumer-facing channels. Similarly, it is important for the cashiers to view the customer's history of the loyalty points in MPOS/CPOS to quickly answer any queries from the customer. In an upcoming monthly release, customers and cashiers will be able to see loyalty history details.
+
+- Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. In the future, we'll be adding the ability to award loyalty points for any customer activity. To do so, the retailer can define an "Other activity type" and define the earning rules for these activities. We will also expose a Retail Server API that can be called when an activity is identified that will use the earning rule to award the required loyalty points.
+
+- To enable a true omni-channel retail experience, we will allow the customers to earn and redeem loyalty points across all channels. 
+
+- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, we will introduce a new type of promotion in which the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.

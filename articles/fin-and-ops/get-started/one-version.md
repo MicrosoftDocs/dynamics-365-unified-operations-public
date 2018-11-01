@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: One version service updates FAQ
+title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# One version service updates FAQ
+# One Version service updates FAQ
 [!include[banner](../includes/banner.md)]
 
 In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
@@ -37,8 +37,8 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 ### What product versions are impacted by service updates?
 | Version | Description |
 |---------|-------|
-| 8.1 and later | All customers on 8.1 and later will be scheduled for updates monthly with a combined application and platform update starting November 2018.  You will be required to have an update that's no older than 3 months.                                                                                                                                                                      |
-| 8.0           | Customers on 8.0 will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by December 1, 2018. This process is like a regular package update. Detailed documentation to follow.                                                   |
+| 8.1 and later | All customers on 8.1 and later will be scheduled for updates monthly with a combined application and platform update starting November 2018.  You will be required to have an update that's no older than 3 months.                   |
+| 8.0           | Customers on 8.0 will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months. The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by December 1, 2018. This process is like a regular package update. For detailed documentation, see the [Update environments from version 8.0 to 8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) topic.  | 
 | 7.x           | Customers on 7.x will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  You are required to upgrade to 8.1 before April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). Starting April 2019, the service will be updated to version 10.0. |
 
 ### What does the update contain?
@@ -56,6 +56,9 @@ There will be 2 major updates in April and October where new experiences will be
 ### What does it mean when an update is backward compatible?
 Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs. Functional compatibility is about user experience. All new experiences will be opt-in.
 
+### Do these updates apply to on-premises?
+Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. The process of the updates outlined in this topic only apply to the cloud service. 
+
 ## Process
 
 ### Can I select the day and time to update?
@@ -71,7 +74,7 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 Deprecation will be announced by a notice 12 months prior to the deprecation. The functionality will only be deprecated during a major update.
 
 ### Can I delay an update?
-You can pause an update up to 3 months through LCS configuration. After this period, an update will be scheduled and monthly updates resumed.
+You can pause an update up to 3 months by way of LCS configuration. After this period, an update will be scheduled and monthly updates resumed. The update experience for a delayed update will incur additional downtime.
 
 ### What if I find an issue during the sandbox update?
 If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification. The request will be reviewed by Microsoft and if approved you will be left out of that month's update.
@@ -99,12 +102,13 @@ You can join the [First release program](https://experience.dynamics.com/insider
 ### Is there tooling available to support testing the latest release?
 The [Regression Suite Automation Tool](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests) for Finance and Operations is [available now](https://www.microsoft.com/en-us/download/details.aspx?id=57357). This tool significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your Dynamics 365 for Finance and Operations production environment. It enables functional power users to record business tasks using the Finance and Operations Task recorder and convert them into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services using the Business Process Modeler (BPM) libraries and fully integrated with Azure DevOps for test execution, reporting, and investigation. Test data parameters are decoupled from test steps and stored in Excel data files.
 
+### How can I test and validate that the integrations continue to work?
 Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. You can also use automated testing of data entities by using task outcome validation. For more information, see the [Data task automation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation) topic.
 
 ### How can I determine what's changed in a service update?
 The [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/) are the primary source of information for all new features and changes for a release. Features will also include help topics in docs.microsoft.com as needed. An impact analysis tool will be available in LCS to help you better understand the impact to the features that you use.
 
-## Preparing for ONE version
+## Preparing for One Version
 
 ### How can I log an extensibility request?
 Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests) topic. Please note the following timelines to log and use the available extensions.
@@ -124,4 +128,45 @@ Individual hotfixes will not be supported after 8.1. Customers must update to th
 
 ### How can I upgrade to 8.x?
 Refer to the [Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) will not require any data upgrade and will be a self-serve update with much reduced downtime.
+
+## Retail service updates
+
+### What components of my solution will be impacted by One Version service updates?
+
+All cloud components including Retail Server and Cloud POS will be updated at the same cadence as your Dynamics 365 headquarters.
+
+### What options are available to minimize impact to my Retail cloud components?
+
+Retail cloud components will require the same down time as your Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our [documentation](https://docs.microsoft.com/en-us/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/#pivot=products&panel=products1) sites for additional details on RCSU.
+
+### Will there be options to take individual hotfixes for my retail solution components?
+
+All fixes and updates for retail components will be cumulative.
+
+### What are the maintenance downtime requirements that may impact channel operations?
+
+For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../retail/pos-operations.md).
+
+### When will I need to update my in-store components?
+
+All in-instore components must be running released software that is less than one year old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
+
+### Will there continue to be backward compatibility for the in-store retail components?
+
+Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the Retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Retail Store Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
+
+### What options are available for updating in-store components across my organization?
+
+Customers can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager, Microsoft Intune, etc.
+
+### What options do I have to slowly enable new functionality across my retail channels?
+
+Microsoft provides several mechanisms to progressively roll-out and enable functional enhancements across stores, devices, and users.
+
+  -  **Screen layout designer** - Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [Screen layouts for the point of sale (POS)](../../retail/pos-screen-layouts.md).
+
+  - **Functionality profiles, POS permissions, Retail parameters** - Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, retail parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
+
+  - **Modern Point of Sale and Retail Store Scale Unit** - Because Modern Point of Sale and Retail Store Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.
+
 
