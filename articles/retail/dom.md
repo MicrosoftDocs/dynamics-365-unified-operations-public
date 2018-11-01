@@ -68,18 +68,18 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
       + Specify a value in the field ‘Solver type’. There are two Solver types that are shipped out of the box – ‘Production Solver’ & ‘Simplified Solver’. The ‘Production Solver’ needs a special license key which is already licensed & deployed on production environments. For other environments, this special license key must be manually deployed. The ‘Simplified Solver’ is a mechanism to try out the DOM feature without having to deploy this special license.
 
 
- **Notes:**
+ > [!NOTE] **Notes:**
  
-   1.  Organizations should not use the ‘Simplified Solver’ in Production environments
+   - Organizations should not use the ‘Simplified Solver’ in Production environments
 
-   2.  While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
+   - While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
 	
 
-4.  Navigate to **Retail > Distributed order management > Setup > DOM parameters > Number sequences** tab
+4. Navigate to **Retail > Distributed order management > Setup > DOM parameters > Number sequences** tab
 
      + Assign the required number sequences to the different DOM entities. The Number sequences needs to be defined under **Organization administration > Number sequences > Number sequences** before they can be assigned to the entities
 
-5.  The DOM feature supports the definition of different types of DOM rules and these DOM rules can be defined for a group of locations or individual locations and for a certain product category, product or variant. These grouping of locations that needs to be used for the DOM rules can be created as per the below steps:
+5. The DOM feature supports the definition of different types of DOM rules and these DOM rules can be defined for a group of locations or individual locations and for a certain product category, product or variant. These grouping of locations that needs to be used for the DOM rules can be created as per the below steps:
 
 	+ Navigate to **Retail > Channel setup > Fulfillment groups**
 
@@ -89,23 +89,23 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
 	+ Use the buttons ‘Add line’ or ‘Add lines’ to add the different locations to this group
 
-6.  The DOM feature supports the definition of different types of DOM rules and organizations can choose to configure multiple rules of a type based on business needs. These rules can be defined under the following path: **Retail > Distributed order management > Setup > Manage rules**.
+6. The DOM feature supports the definition of different types of DOM rules and organizations can choose to configure multiple rules of a type based on business needs. These rules can be defined under the following path: **Retail > Distributed order management > Setup > Manage rules**.
 
     The below is the complete list of DOM rules that are supported in this release of the feature:
 
 	a.  **Minimum inventory rule:** This rule type helps organization to ringfence certain qty of a product for non-order fulfillment purposes. For e.g.: organizations may not want all the inventory that is available in a Store to be considered by DOM for order fulfillment. They may want to reserve some qty to 	service their walk-in customers. This can be achieved by leveraging this rule type. A minimum inventory to be retained can be defined per location or a group of locations for a category of products, individual product or product variant.
 
-	b.  **Fulfillment location priority rule:** This rule type allows organizations to define a hierarchy of locations using ‘Priority’, that the DOM engine should consider when trying to identify fulfillment locations for specific products. Locations with higher priority are considered first before resolving to other 	          	locations. A location with a priority of 1 is of higher priority as compared to a location with priority 2.
+	b.  **Fulfillment location priority rule:** This rule type allows organizations to define a hierarchy of locations using ‘Priority’, that the DOM engine should consider when trying to identify fulfillment locations for specific products. Locations with higher priority are considered first before resolving to other locations. A location with a priority of 1 is of higher priority as compared to a location with priority 2.
 
 	c.  **Partial orders rule:** This rule allows organization to configure if an order or order lines can be fulfilled partially. The below are the details of the behavior of the different parameters on the rule:
   
-       + Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
+      + Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
        
-       + Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
+      + Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
        
-       + Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
+      + Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
        
-       The below table explains the behavior with a combination of the above parameters:
+      The below table explains the behavior with a combination of the above parameters:
 
 | **#** | **Fulfill partial order** | **Fulfill Partial lines** | **Fulfill from one location only** | **Description**                                                                                                                                                                                  |
 |--------|---------------------------|---------------------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
