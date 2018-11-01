@@ -35,7 +35,7 @@ This article will cover installation steps for Retail channel components in an o
 
 ## Overview
 
-Retail channel functionality, in an on-premises environment, is enabled exclusively via use of Retail Store Scale Unit. For an overview of Retail Store Scale Unit, see [Retail Store Scale Unit](../../retail/dev-itpro/retail-store-system-begin.md). 
+Retail channel functionality, in an on-premises environment, is enabled exclusively via use of Retail Store Scale Unit. For an overview of Retail Store Scale Unit, see [Retail Store Scale Unit](../retail/dev-itpro/retail-store-system-begin.md). 
 
 Unlike in a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of Retail channel components via Lifecyclse Services (LCS). The only way to use Retail channel components is via installation of Retail Store Scale Unit.
 
