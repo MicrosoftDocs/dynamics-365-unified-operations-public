@@ -2166,6 +2166,8 @@
             href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
           - name: Partial fixed asset disassembly (liquidation)
             href: ../financials/localizations/rus-fixed-assets-disassembly.md
+          - name: Sell, dispose, and write-off assets
+            href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
         - name: Set up and process payment orders
           href: ../financials/localizations/rus-payment-order-settings-processing.md                
         - name: Set up exchange rates for currency transactions
