@@ -113,7 +113,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 >     - **Property:** AllowAllTrustedApps
 >     - **Value:** 1
 
-If you are installing Retail Modern POS for use with an on-premises environment, you must start the installer from command line as follows:
+If you are installing Retail Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
 ModernPosSetupOffline.exe -UseAdfsAuthentication
 
