@@ -250,9 +250,9 @@ criteria are met, such as currency and UoM.
 
 #### Dimensions
 
-Starting with the Dynamics 365 for Retail October 2018 release, we have added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the
+Starting with the Dynamics 365 for Retail 8.1.1 release, we have added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the
 merchandizing manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on
-all variants with a specific or you can specify a discount on all variants that are of a specific color and style.
+all variants with a specific style or you can specify a discount on all variants that are of a specific color and style.
 
 ## Best practices
 
