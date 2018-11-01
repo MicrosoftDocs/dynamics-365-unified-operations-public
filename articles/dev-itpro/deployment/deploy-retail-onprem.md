@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Installation steps for Retail channel components in an on-premises envionrment
-description: This article will cover installation steps for Retail channel components in an on-prem envionrment. 
+title: Installation steps for Retail channel components in an on-premises environment
+description: This topic covers the installation steps for Retail channel components in an on-premises environment. 
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 11/01/2018
@@ -27,23 +27,23 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# Installation steps for Retail channel components in an on-premises envionrment
+# Installation steps for Retail channel components in an on-premises environment
 
 [!include[banner](../includes/banner.md)]
 
-This article will cover installation steps for Retail channel components in an on-prem environment.
+This topic covers the installation steps for Retail channel components in an on-premises environment.
 
 ## Overview
 
 Retail channel functionality, in an on-premises environment, is enabled exclusively via use of Retail Store Scale Unit. For an overview of Retail Store Scale Unit, see [Retail Store Scale Unit](../../retail/dev-itpro/retail-store-system-begin.md). 
 
-Unlike in a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of Retail channel components via Lifecyclse Services (LCS). The only way to use Retail channel components is via installation of Retail Store Scale Unit.
+Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of Retail channel components via Lifecycle Services (LCS). The only way to use Retail channel components is by installing Retail Store Scale Unit.
 
-## Pre-requisites 
+## Prerequisites 
 
-Before you can start installation of Retail channel components, you must first complete all prior installation steps for an on-premises environment, as listed in [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md).
+Before you can start installation of Retail channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md).
 
-You must also ensure that you use a secure network to connect Retail Store Scale Unit (RSSU) to Retail headquarters that is not publically accessible. You must also restrict network access to Retail headquarters only to known RSSU devices devices via network filtering or other means.
+You must also ensure that you use a secure network to connect Retail Store Scale Unit (RSSU) to Retail headquarters that is not publicly  accessible. You must also restrict network access to Retail headquarters only to known RSSU devices via network filtering or other means.
 
 ## Installation steps
 
@@ -55,6 +55,6 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 ```
   
 3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
-4.	Extract the zip file and copy ModenPOSSetup.exe and StoreSystemSetup.exe under the RetailSelfServicePackages folder created in the file share location above.
+4.	Extract the zip file and copy ModenPOSSetup.exe and StoreSystemSetup.exe found in the RetailSelfServicePackages folder that was created in the file share location above.
 5.	Follow the installation steps for installing the Retail Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).
 
