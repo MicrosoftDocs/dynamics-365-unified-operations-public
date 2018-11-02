@@ -2,7 +2,7 @@
 # required metadata
 
 title: Analytic reports are not being updated
-description: 
+description: The customer's data changes don't show up on any of their workspaces.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Talent
 
 **Issue:**
 
-The customer's data changes Dont show up on the **Analytics** tabs of any of their workspaces.
+The customer's data changes don't show up on the **Analytics** tabs of any of their workspaces.
 
 **Cause:**
 
