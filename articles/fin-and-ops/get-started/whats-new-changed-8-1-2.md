@@ -50,3 +50,5 @@ For information about the bug fixes included in each of the updates that are par
 Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see 
 [What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)](whats-new-platform-update-22.md).
 
+## Extensibility enhancements
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.2](../../dev-itpro/extensibility/extensibility-changes-812.md).
