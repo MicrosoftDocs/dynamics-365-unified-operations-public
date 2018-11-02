@@ -36,30 +36,30 @@ ms.dyn365.ops.version: Platform update 8
 You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
 
 ## Get started
-- [Dynamics 365 for Finance and Operations (on-premises) overview](on-premises-overview.md)
-- [Planning for your on-premises deployment](plan-onprem-deployment.md)
+- [On-premises deployment option](on-premises-overview.md)
+- [Plan and prepare for on-premises deployments](plan-onprem-deployment.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Purchase Dynamics 365 for Finance and Operations (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
-- [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
+- [Buy Finance and Operations (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Comparison of cloud and on-premises features](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## Onboard
-- [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md)
 - [Set up and deploy on-premises environments (Platform update 8 and 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
-- [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md)
+- [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md)
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
 - [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md)
-- [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
-- [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
-- [Configure reverse proxy for your on-premises environment](onprem-reverseproxy.md)
-- [Set up technical support](../lifecycle-services/support-experience.md)
-- [Client Internet connection troubleshooting](../user-interface/client-disconnected.md)
-- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
-- [Redeploy an on-premises deployment](redeploy-on-prem.md)
+- [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
+- [Configure reverse proxies for on-premises environments](onprem-reverseproxy.md)
+- [Set up technical support for Finance and Operations](../lifecycle-services/support-experience.md)
+- [Client internet connectivity](../user-interface/client-disconnected.md)
+- [Apply updates to on-premises deployments](apply-updates-on-premises.md)
+- [Redeploy on-premises environments](redeploy-on-prem.md)
 
 ## Retail
 - [Retail capabilities that are available in on-premises deployments](../../retail/retail-onprem.md)
