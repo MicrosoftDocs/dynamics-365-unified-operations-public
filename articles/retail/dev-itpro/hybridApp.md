@@ -44,9 +44,15 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 Open **Control Panel > Programs and Features**, choose the **Visual Studio 2015** item, and click **Change**. When the installer opens, click **Modify**
 
   1.  **Cross-Platform Mobile Development > C#/.NET (Xamarin)**. This will also automatically select various Android tools under Common Tools and Software Development Kits. This option should also update any existing Xamarin installation. Select all **Common Tools and Software Development Kits**
+  
+  ![VS Xamarin Android Development Kit](./media/VSInstall.PNG)
+  
       Click the Install button and let the process run. Again, this will take some time to complete
 
   2.  Once installation is complete, launch Visual Studio and sign in with your Microsoft account if prompted (this is the same account you use with Windows). Then check for Xamarin updates through **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**, where you’ll find a **Check Now** link:
+  
+  ![Xamarin update](./media/XamarinUpdate.png)
+  
       If you do not see an option for Xamarin in **Tools > Options**, double-check your installation, or try restarting Visual Studio. You can also search for Xamarin in the Options dialog. Download and install latest version.
       
   3.  From the Retail SDK folder Open SampleExtensions\HybridApp\Android\solution and build/deploy on emulator and verify.
@@ -66,6 +72,12 @@ Open **Control Panel > Programs and Features**, choose the **Visual Studio 2015*
   4.  From the Retail SDK folder, Open SampleExtensions\HybridApp\iOS\solution.
       After connecting to mac and building the application in Visual Studio, we need to select the iOS device type and deploy the app on selected device.
       
+         ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
+      
   5.  On Emulator, go to Settings -> RetailMPos ->please enter Retail Server URL.
-  
+      
+         ![POS iOS app setting](./media/iOSApp.png)
+      
+         ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
+      
   6.  Launch the MPos app, you should be able to login and activate the device.
