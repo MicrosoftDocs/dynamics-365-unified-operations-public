@@ -43,38 +43,37 @@ on a product, are processed.
 - **Pricing Priority**
 - **Discount type (Simple, Mix and Match, Quantity, Threshold)**
 - **Discount concurrency mode (Exclusive, Best price, and Compound)**
-- **Multiple occurrences mode** , when it's set to **Favor retailer** (for mix-and-match least-expensive discounts only).
+- **Multiple occurrences mode**, when it's set to **Favor retailer** (for mix-and-match least-expensive discounts only)
 
 The **Discount concurrency control model** is described below in detail; however, the rest of the properties are covered in the [Retail discounts](retail-discounts-overview.md) overview.
 
 ## Discount concurrency control model
 
-Discount concurrency control model changes when and how multiple discounts are applied to products in a transaction. The setting, **Best price and compound concurrency control model** is on the **Discounts** tab on the **Retail 
-parameters** page, and is different from the **Discount concurrency mode** property on each discount.
+Discount concurrency control model changes when and how multiple discounts are applied to products in a transaction. The**Best price and compound concurrency control model** option on the **Discounts** tab on the **Retail 
+parameters** page is different from the **Discount concurrency mode** property on each discount.
 
-Previously the system had only one way that it applied multiple discounts based on the **discount type**, **discount concurrency
-mode**, and **pricing priority** (if used) properties of discounts. The discount concurrency control model setting affects how all discounts compete and compound together.
+In earlier versions of Dynamics 365 for Retail, there was only one way to apply multiple discounts based on the **discount type**, **discount concurrency mode**, and **pricing priority** (if used) properties of discounts. Now, the discount concurrency control model setting affects how all discounts compete and compound together.
 
 ### Background on why this change was made in Dynamics 365 for Retail
 
-In previous versions of Dynamics 365 for Retail and Dynamics AX 2012, partners and customers could directly customize the price engine by overlaying their custom business logic in the price engine. With the transition to an online service and to improve overall 
-application lifecycle management, the Dynamics application has been sealed and overlaying customizations are no longer allowed. 
-New extensibility points have been added to the system to enable the same types of customizations that were the most common. 
-Most discount customizations we see fall into three categories.
+In previous versions of Dynamics 365 for Retail, partners and customers could directly customize the price engine by overlaying their custom business logic in the price engine. With the transition to an online service and to improve overall 
+application lifecycle management, the Dynamics 365 application has been sealed and overlaying customizations are no longer allowed. 
+New extensibility points have been added to enable the same types of customizations that were the most common. 
+Most discount customizations are in one of the following categories.
 
-- **Minor changes to existing discounts**. For example, moving the start and end date from the discount header to the discount lines.
+- **Minor changes to existing discounts**. For example, moving the start date and end date from the discount header to the discount lines.
 - **New discount types**. In some cases, companies need to introduce a new type of discount. For example, capping the total discount
 amount for a simple discount.
 - **Changing the when and how (the flow) of multiple discounts being applied**. For example, having all mix and match discounts 
-applied on top of quantity or simple discounts while still having quantity and simple discount compete for best price or having
-store specific and customer specific discount compete for best price and then compound the winning discount with loyalty program 
+applied on top of quantity or simple discounts while still having quantity and simple discounts compete for best price or having
+store-specific and customer-specific discounts compete for best price and then compound the winning discount with loyalty program 
 discounts.
 
 The first two types of customizations are handled by providing a new extensibility model within the price engine that enables 
 these scenarios. However, to address the third type of customization we expanded the functional capabilities of the system by 
 introducing this setting. A discount's concurrency mode and pricing priority already gave the user significant flexibility
 over the order of discount application. By introducing a new configuration setting that affects how a discount's concurrency 
-mode and pricing priority interact, we found we could cover all the customizations to discount ordering we reviewed. Thus, we 
+mode and pricing priority interact, we can cover all the customizations to discount ordering. Thus, we 
 introduced the concurrency model option.
 
 ### Best price and compound within priority, never compound across priorities
@@ -87,7 +86,7 @@ pricing priorities are ignored.
 ### Best price only within priority, always compound across priority
 
 This is the new way multiple discounts can be processed. When this option is selected, discounts with **Discount concurrency mode** 
-set to **Best price** and **Compound** are all treated as "best price" within a single pricing priority. Once applied, 
+set to **Best price** and **Compound** are all treated as "best price" within a single pricing priority. When applied, 
 the best price discount, within a priority, is compounded with the best price and compound discounts at lower pricing priorities. 
 In this concurrency control model, only a single discount can be applied to a product per pricing priority, and if that single 
 discount is a best price or compound discount, then it will compound with all additional best price or compound discounts at lower 
@@ -95,13 +94,13 @@ pricing priorities.
 
 ### Examples
 
-Below are two examples that show how the retail pricing engine processes a pool of discounts for different concurrency 
+The following examples show how the retail pricing engine processes a pool of discounts for different concurrency 
 control models.
 
 #### Example 1
 In the first scenario, **Best price and compound within priority, never compound across priorities** is selected as the 
-discount concurrency control model. We have two pricing priorities, and for each pricing priority, there is one discount of each
-discount type, for example. **Simple, Mix and Match, Quantity, Threshold**. Let's assume there are discounts at two priorities 5 
+discount concurrency control model. There are two pricing priorities, and for each pricing priority, there is one discount of each
+discount type, for example **Simple, Mix and Match, Quantity, Threshold**. Let's assume there are discounts at two priorities 5 
 and 10 and all products have multiple discounts at both these priorities. The pool of possible pricing priorities is determined 
 by the price groups and discounts that can be applied to the product.
 
@@ -111,23 +110,23 @@ the simple, quantity, and mix-and-match discounts with priority 10.
 
 >[!NOTE]
 >Threshold discounts are not evaluated yet because, as indicated by their name, they will be evaluated against the transaction amount,
-once all the other discounts have been applied
+after all the other discounts have been applied
 
-The below image shows a concise view of how pricing algorithm loops through the discounts across various priorities. Please note 
+The following image shows a concise view of how pricing algorithm loops through the discounts across various priorities. Please note 
 that this diagram applies for both the discount concurrency control models, but the difference is in the way pricing algorithm 
-treats discounts at different priorities. This difference is elaborated using an example below.
+treats discounts at different priorities. This difference is elaborated using the example below.
 
 ![Simplified pricing logic](./media/Simplified%20pricing%20logic.png "Simplified pricing logic")
 
 2. Within priority 10, the retail pricing engine first considers the discounts that have the concurrency mode set to **Exclusive**. 
-If there are more than one exclusive discount applicable to the product, then the best exclusive discount is applied. Once a product
+If there is more than one exclusive discount applicable to the product, then the best exclusive discount is applied. When a product
 gets an exclusive discount, no other discounts can be applied to this product at any priority.
 
 >[!NOTE]
 > Mix-and-match, least-expensive discounts that have the **Multiple occurrences mode** property set to **Favor retailer** are 
-skipped in this step. Once all the **Exclusive** discounts (**Simple, Quantity and Mix and Match**) at pricing priority 10
+skipped in this step. After all the **Exclusive** discounts (**Simple, Quantity and Mix and Match**) at pricing priority 10
 have been applied, then the exclusive mix-and-match **Favor retailer** discounts, at pricing priority 10, are applied to any 
-undiscounted products. The **Favor retailer** and **Favor customer** settings of mix-and-match discounts will be explained in detail in a different article.
+undiscounted products. 
 
 3. Within priority 10, the retail pricing engine then considers the discounts that have the discount concurrency mode set to 
 **Best price** and **Compound**. If multiple **Compound** discounts apply to a product, then they are compounded, and the resulting
@@ -139,7 +138,7 @@ are skipped in this step. Once all the **Best price** and **Compound** discounts
 A **Best price** discount applies only to undiscounted products, but a **Compound** discount applies to undiscounted products 
 and products that are discounted with another **Compound** discounts at the same pricing priority.
 
-4. Since the discount concurrency control mode is set to **Best price and compound within priority, never compound across priorities** so the simple, quantity, and mix-and-match discounts applicable to the product, at pricing priority 5 do not compete with the 
+4. Because the discount concurrency control mode is set to **Best price and compound within priority, never compound across priorities** so the simple, quantity, and mix-and-match discounts applicable to the product, at pricing priority 5 do not compete with the 
 applied discounts. At this point, for a product, all the simple, quantity, and mix-and-match discounts at the highest priority 
 have been evaluated.
 
