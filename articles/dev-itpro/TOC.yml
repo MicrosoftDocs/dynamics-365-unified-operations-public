@@ -905,6 +905,8 @@
         href: deployment/setup-deploy-on-premises-pu12.md
       - name: Deploy on-premises environments on Platform updates 8 and 11
         href: deployment/setup-deploy-on-premises-pu8-pu11.md
+      - name: Installation steps for Retail channel components in an on-premises environment
+        href: deployment/deploy-retail-onprem.md
     - name: Develop and deploy custom models to on-premises environments
       href: deployment/develop-deploy-custom-models-on-premises.md
     - name: Configure reverse proxies for on-premises environments
