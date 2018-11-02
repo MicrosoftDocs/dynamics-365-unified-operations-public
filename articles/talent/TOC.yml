@@ -274,7 +274,7 @@
       href: create-envi-powerapps-admin-ctr.md
     - name: The client disconnects
       href: client-disconnects.md
-    - name: How are database backups handled?
+    - name: How database backups are handled
       href: database-backups.md
     - name: How to avoid text truncation on position hierarchy and export to Visio
       href: avoid-text-truncation-position-hierarchy-visio.md
