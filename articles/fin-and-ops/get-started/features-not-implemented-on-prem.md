@@ -52,7 +52,7 @@ The following features have not yet been implemented in on-premises deployments.
 |Trace Parser and PerfTimer |These tools are not working or have limited functionality for this release. These features will be implemented in a future release. |
 |SSRS scale out  |Currently SQL Server Reporting Services (SSRS) does not support scaling out. This feature will be added in a future release. |
 |Telemetry  |Currently no telemetry is transferred into the cloud. In a future update we will start transferring telemetry data into the cloud. |
-|Data Task Automation  |[Data Task automation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation) is not currently implemented. |
+|Data task automation  |[Data task automation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation) is not currently implemented. |
 
 ## Features available in 8.1
 | **Feature**                                                      | **Description**                                                                                                                                                                          |
