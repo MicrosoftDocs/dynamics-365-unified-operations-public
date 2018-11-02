@@ -460,7 +460,7 @@ A **down-cast** happens when assigning an expression of a base type to a derived
 
     Horse h = new Animal();
 
-Both up-casts and down-casts are supported in X++. However, down-casts are dangerous and should be avoided whenever possible. The example above will fail with an InvalidCastException at runtime, since the assignment doesn't make sense. X++ supports late binding on a handful of types, like object and formrun. This means that the compiler won't diagnose any errors at compile-time when it sees a method being called on those types, if that method isn't declared explicitly on the type. It's assumed that the developer knows what they're doing. For instance, the following code may be found in a form.
+Both up-casts and down-casts are supported in X++. However, down-casts are dangerous and should be avoided whenever possible. The example above will fail with an InvalidCastException at runtime, since the assignment doesn't make sense. X++ supports late binding on a few types, like object and formrun. This means that the compiler won't diagnose any errors at compile-time when it sees a method being called on those types, if that method isn't declared explicitly on the type. It's assumed that the developer knows what they're doing. For instance, the following code may be found in a form.
 
     Object o = element.args().caller();
       o.MyMethod(3.14, “Banana”);
@@ -586,7 +586,7 @@ Set a breakpoint on the assignment statement. Make your class the startup object
 
 ### The Auto and Infolog Windows
 
-The debugger will allow you to easily access certain parts of the state of the application. This information is available in the autos window, where the current company, the partition, the transaction level, and the current user id are listed. [![Autos\_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) There is also a window showing the data that is written to the Infolog. [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
+The debugger will allow you to easily access certain parts of the state of the application. This information is available in the autos window, where the current company, the partition, the transaction level, and the current user ID are listed. [![Autos\_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) There is also a window showing the data that is written to the Infolog. [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
 
 ### New breakpoint features
 
