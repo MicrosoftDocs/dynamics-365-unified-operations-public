@@ -49,16 +49,12 @@ Here is the documentation for compensation:
 
 SETUP:
 
-1.  Compensation plans  
-    <https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/compensation-plans>
+1.  [Compensation plans](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/compensation-plans).
 
-2.  Create fixed compensation plans  
-    <https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans>
+2.  [Create fixed compensation plans](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans).
 
-3.  Create variable compensation plans  
-    <https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans>
+3.  [Create variable compensation plans](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans).
 
 PROCESS:
 
-1.  Process compensation  
-    [https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
+1.  [Process compensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
