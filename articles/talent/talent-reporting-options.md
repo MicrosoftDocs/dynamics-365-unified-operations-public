@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reporting options in Talent
-description: 
+description: The customer wants to customize Talent reports or create new reports.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -37,15 +37,15 @@ ms.dyn365.ops.version: Talent
 
 **Environment details:** 
 
->   All environments
+All environments.
 
 **Symptom:** 
 
->   Customer would like to customize the Talent reports or create new reports. 
+- Customer wants to customize Talent reports or create new reports. 
 
 **Problem:** 
 
--   The user is not able to customize the embedded PowerBI reports.
+- The user is not able to customize the embedded PowerBI reports.
 
 
 **Solution:** 
