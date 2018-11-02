@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to save and replay task guides from LCS
-description: 
+title: How to save task guides to LCS and replay them
+description: This topic describes how to save task guides to LCS and then replay them.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# How to save and replay task guides from LCS
+# How to save task guides to LCS and replay them
 
 [!include [banner](includes/banner.md)]
 
