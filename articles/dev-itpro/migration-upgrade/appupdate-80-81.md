@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 8.1
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to the 8.1 application release.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,9 +34,6 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 This topic explains the steps required to update existing Dynamics 365 for Finance and Operations 8.0 environments to the 8.1 application release.
-
-> [!NOTE]
-> The 8.1 binary update package is currently not available, but will be released soon. This package impacts steps 5-7, which means that steps 1-4 can be started after October 1, 2018.
 
 ## Background
 
@@ -92,12 +89,15 @@ In Lifecycle Services, go to the Asset Library, and then click the **Software de
 Locate both your new 8.1 software deployable package and the 8.1 binary update package that was just saved.  Highlight both packages and select **Merge**. This will combine the files in to a merged update package.  You are now ready to apply this package to your various test environments.
 
 ## Deploy to target environments for validation
-Using the merged update package, deploy this to your various test environments.  For more on how to do this, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).  At a minimum, you must deploy this to the sandbox Tier-2 environment that comes with your subscription.  After you have finished with validation, mark the merged update package as a Release Candidate.
+Using the merged update package, deploy this to your various test environments.  For more on how to do this, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).  This merged update package can be deployed to your Tier1/OneBox environments as well as Tier-2 sandboxes. At a minimum, you must deploy this to the sandbox Tier-2 environment that comes with your subscription.  After you have finished with validation, mark the merged update package as a Release Candidate.
 
 ## Deploy to Production
 After you have marked the Release Candidate in your Asset Library, you can schedule the deployment to your Production environment.  This will follow the same process for applying other software deployable packages.
 
 ## Known issues
+
+### Deploying the 8.1 binary update to Developer environments causes ApplicationSuite compilation errors
+The package can be applied to your 8.0 environments and it will update your source code.  Compiling of your extension packages should not be impacted.  If you had overlayering and have removed objects from the ApplicationSuite package, and try to recompile it, you may run in to errors.  Until this is resolved, please redeploy your developer environments on 8.1 Platform Update 20 and sync in your source code from version control.
 
 ### Cannot find 8.1 binary update package on the All Binary Updates tile on the My environment details page
 It was originally communicated that the package would be found on the **All Binary Updates** tile. To prevent customers who want to simply get the latest binaries for release 8.0 from accidentally updating to release 8.1, we have moved the binary package to the Shared Asset Library. This topic has been updated to reflect this change.
@@ -109,5 +109,7 @@ Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadat
 ```
 To prevent this from occurring, ensure that you compile your extensions on an 8.1 developer machine. To resolve this issue, rename any of your extension objects with a vanity extension naming convention, such as SystemAdministration.*Customer*.
 
-### Deployment on my environment fails with error on DVTs
-There is a known issue where IIS/Application Pools are not fully restarted when the DVT step runs. The failure occurs because the DVTs are trying to connect to your environment's URL. To resolve this issue, click **Resume** on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry tp resolve this issue.
+### Deployment on my environment fails with error on DVTs or ETWs
+There is a known issue where IIS/Application Pools are not fully restarted when the DVT or ETW step runs. The failure occurs because the DVTs are trying to connect to your environment's URL. To resolve this issue, click **Resume** on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry to resolve this issue.
+
+
