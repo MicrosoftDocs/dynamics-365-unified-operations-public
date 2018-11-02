@@ -38,7 +38,7 @@ This topic outlines the lifecycle and support policies for Microsoft Dynamics 36
 ## Modern Lifecycle Policy 
 Microsoft Dynamics 365 for Finance and Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy).  
 
-Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations on-premises software in accordance with the following servicing and system requirements.  This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance and Operations (on-premises) software. 
+Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations on-premises software in accordance with the following servicing and system requirements. This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance and Operations (on-premises) software. 
 
 ## On-premises software update policies 
 The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the Dynamics 365 for Finance and Operations (on-premises) software through December 31, 2027, at a minimum, but only if the customer keeps the deployed software current according to this policy.
@@ -50,7 +50,7 @@ Critical fixes and non-critical updates are handled in the following way:
 ## Dynamics 365 for Finance and Operations on-premises release dates
 Application and Platform releases expire at the end of the month of their software lifecycle.
 
-### Application Releases
+### Application releases
 
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
@@ -59,9 +59,9 @@ Application and Platform releases expire at the end of the month of their softwa
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
 
 
-\* All customers must be on the latest version of Finance and Operations by April 30, 2019.  However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+\* All customers must be on the latest version of Finance and Operations by April 30, 2019. However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
-### Platform Releases
+### Platform releases
 
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
