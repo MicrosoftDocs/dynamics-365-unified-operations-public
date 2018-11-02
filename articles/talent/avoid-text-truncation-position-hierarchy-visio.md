@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: How to avoid text truncation on position hierarchy and export to Visio
@@ -45,17 +46,11 @@ hierarchy and distribute.
 
 ![](media/position-h.png)
 
-**CAUSE:**
+**Cause:**
 
-**==========================**
+By design.  
 
-By designed.  
-
- 
-
-**RESOLUTION:**
-
-**==========================**
+ **Resolution:**
 
 Unfortunately the size of the text is not something that is easily modified by
 the user.However, you can export out of Talent and an import into Visio. This
@@ -135,7 +130,7 @@ Steps to export to Visio
 
 ![](media/hierarchy.png)
 
-**Additional Option**
+**Additional option:**
 
 In Talent, you may also be able to leverage the People workspace as well to view
 some hierarchy related information.
