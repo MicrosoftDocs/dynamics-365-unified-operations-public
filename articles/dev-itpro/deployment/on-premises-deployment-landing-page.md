@@ -40,12 +40,12 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 - [Planning for your on-premises deployment](plan-onprem-deployment.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Purchase Dynamics 365 for Finance and Operations(on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Purchase Dynamics 365 for Finance and Operations (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## Onboard
 - [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Set up and deploy on-premises environments (Platform update 12)](setup-deploy-on-premises-pu12.md)
+- [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md)
 - [Set up and deploy on-premises environments (Platform update 8 and 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md)
@@ -70,9 +70,9 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 
 
 ## Other resources
-- [Troubleshoot Dynamics 365 for Finance and Operations on-premises](troubleshoot-on-prem.md)
+- [Troubleshoot on-premises deployments](troubleshoot-on-prem.md)
 - [On-premises diagnostics](on-premises-diagnostics.md)
-- [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
-- [Deprecated features](../migration-upgrade/deprecated-features.md)
+- [Features that aren't implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
+- [Removed or deprecated features](../migration-upgrade/deprecated-features.md)
 - [Software lifecycle policy and on-premises releases](../migration-upgrade/on-prem-version-update-policy.md)
  
