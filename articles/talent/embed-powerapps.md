@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 
@@ -35,15 +35,15 @@ ms.dyn365.ops.version: Talent
 [!include [banner](includes/banner.md)]
 
 
-**ISSUE:**
+**Issue:**
 
 The PowerApps menu item from System administration module disappeared.
 
-**CAUSE:**
+**Cause:**
 
 Design changed to include PowerApps in standard personalization model.
 
-**RESOLUTION:**
+**Resolution:**
 
 PowerApps embedding has been modified. Power apps are now added through the
 personalization model and can added to almost all forms with Dynamics 365 for
@@ -59,7 +59,7 @@ From almost any page within Talent, locate the PowerApps button in the upper
 right corner of the page. This button will give you access to insert a power
 app.
 
-E.g.:
+Example:
 
 Personnel management \> Links \> Workers \> Employees
 
