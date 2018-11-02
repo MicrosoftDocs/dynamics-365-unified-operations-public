@@ -409,13 +409,14 @@ The method wrapping feature requires specific functionality that is emitted by a
 
 ### Methods on types nested within forms can be wrapped in Platform update 16 or later
 The ability to wrap methods on types nested within forms (data sources and controls) by using class extensions was added in Platform update 16. This means that Chain of Command can be used to provide overrides for data source methods and form control methods.
-However, wrapping (extension) of purely X++ methods on those nested types (form controls and form data sources) is not yet supported like it is on other types (forms, tables, data entities). Currently, if a developer uses Chain of Command on purely X++ methods on types inside forms then it compiles but the extension methods are not invoked at runtime. This capability is scheduled to be added in Platform update 24.
 
-### Unimplemented system methods on tables and data entities can be wrapped in Platform update 22 or later
+However, wrapping (extension) of purely X++ methods on those nested types (form controls and form data sources) is not yet supported like it is on other types (forms, tables, data entities). Currently, if a developer uses Chain of Command on purely X++ methods on types inside forms, then it compiles, but the extension methods are not invoked at runtime. This capability is scheduled to be added in a future update.
+
+### Unimplemented system methods on tables and data entities can be wrapped in Platform update 22 and later
 The ability to wrap methods in nested classes by using class extensions was added in Platform update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods.
 
-### Next calls can be put inside try/catch/finally in Platform update 21 or later 
-In a CoC extension method, the next call must not be called conditionally. However, in Platform update 21 or later next calls can be placed inside a try/catch/finally to allow for standard handling of exceptions and resource cleanup.
+### Next calls can be put inside try/catch/finally in Platform update 21 and later 
+In a CoC extension method, the next call must not be called conditionally. However, in Platform update 21 and later next calls can be placed inside a try/catch/finally to allow for standard handling of exceptions and resource cleanup.
 
 ```C#
     public void someMethod()
