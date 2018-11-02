@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: How to embed PowerApps in Core HRdescription: The PowerApps menu item disappeared from the System administration module.
+title: How to embed PowerApps in Core HR
+description: The PowerApps menu item disappeared from the System administration module.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
