@@ -409,7 +409,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
@@ -417,7 +416,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     ---
 
@@ -440,7 +438,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
@@ -448,7 +445,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     ---
 
@@ -547,7 +543,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
@@ -555,7 +550,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     ---
 
@@ -578,7 +572,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
@@ -586,7 +579,6 @@ You must complete the following procedure to enable the extensions in offline mo
     - SequentialSignature
     - AuditEventSignatureSample
     - SalesTransBuildNumberSample
-    - Microsoft/AuditEvent.FR
 
     ---
 
