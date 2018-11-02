@@ -410,7 +410,7 @@ The method wrapping feature requires specific functionality that is emitted by a
 ### Methods on types nested within forms can be wrapped in Platform update 16 and later
 The ability to wrap methods on types nested within forms (data sources and controls) by using class extensions was added in Platform update 16. This means that Chain of Command can be used to provide overrides for data source methods and form control methods.
 
-However, wrapping (extension) of purely X++ methods on those nested types (form controls and form data sources) is not yet supported like it is on other types (forms, tables, data entities). Currently, if a developer uses Chain of Command on purely X++ methods on types inside forms, then it compiles, but the extension methods are not invoked at runtime. This capability is scheduled to be added in a future update.
+However, wrapping (extension) of purely X++ methods on those nested types (form controls and form data sources) is not yet supported like it is on other types (forms, tables, data entities). Currently, if a developer uses Chain of Command on purely X++ methods on types inside forms, then it compiles, but the extension methods are not invoked at runtime. This capability is planned for a future update.
 
 ### Unimplemented system methods on tables and data entities can be wrapped in Platform update 22 and later
 The ability to wrap methods in nested classes by using class extensions was added in Platform update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods.
@@ -435,7 +435,7 @@ In a CoC extension method, the next call must not be called conditionally. Howev
 ```
 
 ### Extensions of extensions are not yet supported
-Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is scheduled to be added in Platform update 23.
+Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future release.
 
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Dynamics 365 for Finance and Operations Platform update 10.
