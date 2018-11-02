@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cannot create an environment in the PowerApps Admin center
+title: The client disconnects
 description: 
 author: Darinkramer
 manager: AnnBe
@@ -24,13 +24,13 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: josaw
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 
 ---
 
-# Client disconnects
+# The client disconnects
 
 [!include [banner](includes/banner.md)]
 
