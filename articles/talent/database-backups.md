@@ -62,11 +62,11 @@ Production environments provisioned through Lifecycle Services (LCS).
 
 -   Moving a database from a Production to a Test environment is presently a
     DevOps motion. Microsoft does not currently provide a way to move or copy
-    DBs in the LCS (Life Cycle Services) experience today. This is a feature
+    DBs in the LCS experience today. This is a feature
     that has been requested but has not been completed yet. The recommended
     option is making use of data entity packages for export / import between
     environments.
 
 **Long-term solution:**
 
-Longer term future plans to add an option to copy a Production database to a test environment.
+Longer term future plans to add an option to copy a production database to a test environment.
