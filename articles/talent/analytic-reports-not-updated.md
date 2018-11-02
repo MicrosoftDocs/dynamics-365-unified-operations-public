@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 
@@ -34,16 +34,16 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-**ISSUE:**
+**Issue:**
 
 My changed data doesn’t show up on the Analytics tabs of any of my workspaces.
 
-**CAUSE:**
+**Cause:**
 
 By default, PowerBI reports are refreshed every 4 hours as the “deploy
 measurement” batch job is scheduled.
 
-**RESOLUTION:**
+**Resolution:**
 
 This may just be timing, the steps below list the process to initiate the batch
 job and update the analytics workspaces.
