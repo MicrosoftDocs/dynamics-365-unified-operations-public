@@ -54,6 +54,11 @@ The following features have not yet been implemented in on-premises deployments.
 |Telemetry  |Currently no telemetry is transferred into the cloud. In a future update we will start transferring telemetry data into the cloud. |
 |Data Task Automation  |[Data Task automation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation) is not currently implemented. |
 
+## Features available in 8.1
+| **Feature**                                                      | **Description**                                                                                                                                                                          |
+|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Retail  |To see a list of currently available retail capabilities in on-premises deployments, see Retail capabilities available in on-premises deployments. For more information about availability of Retail features, see Dynamics 365 for Retail On-Premises – Enabling Flexible Deployment Options.|
+
 ## Features not intended for use in on-premises deployments
 The following features are not intended for use in on-premises deployments. There are no plans to implement these features in on-premises deployments.
 
