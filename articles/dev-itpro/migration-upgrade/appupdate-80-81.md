@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 8.1
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to the 8.1 application release.
 author: laneswenka
 manager: AnnBe
-ms.date: 11/1/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -89,7 +89,7 @@ In Lifecycle Services, go to the Asset Library, and then click the **Software de
 Locate both your new 8.1 software deployable package and the 8.1 binary update package that was just saved.  Highlight both packages and select **Merge**. This will combine the files in to a merged update package.  You are now ready to apply this package to your various test environments.
 
 ## Deploy to target environments for validation
-Using the merged update package, deploy this to your various test environments.  For more on how to do this, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).  This merged update package can be deployed to your Tier1 / OneBox environments as well as Tier-2 sandboxes. At a minimum, you must deploy this to the sandbox Tier-2 environment that comes with your subscription.  After you have finished with validation, mark the merged update package as a Release Candidate.
+Using the merged update package, deploy this to your various test environments.  For more on how to do this, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).  This merged update package can be deployed to your Tier1/OneBox environments as well as Tier-2 sandboxes. At a minimum, you must deploy this to the sandbox Tier-2 environment that comes with your subscription.  After you have finished with validation, mark the merged update package as a Release Candidate.
 
 ## Deploy to Production
 After you have marked the Release Candidate in your Asset Library, you can schedule the deployment to your Production environment.  This will follow the same process for applying other software deployable packages.
