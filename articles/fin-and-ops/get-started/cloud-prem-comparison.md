@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: robinarh
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -120,11 +120,8 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Visual Studio development |  | Yes | Yes |
 
 
-## Dynamics 365 for Retail 
-
-| Area | Feature | Cloud | On-premises|
-|---|---|---|---|
-| All Retail areas | All Retail features | Yes | No |
+### Retail 
+To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../retail/retail-onprem.md).
 
 ## Dynamics 365 for Talent
 
