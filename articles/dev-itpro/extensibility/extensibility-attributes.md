@@ -5,7 +5,7 @@ title: Attributes that make methods extensible
 description: This topic provides information about attributes that make methods extensible.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,7 +43,7 @@ The following table provides an overview of the default support for extensibilit
 | **private** | No | N/A | N/A | Accessible from within class it is defined in. | Signature can be changed |
 | **protected internal** | No | No | No | Accessible from with the class it is defined and from derived classes in the same model | Signature can be changed |
 | **internal** | No | No | No | Accessible in the same model. | Signature can be changed |
-| **protected** | No | Yes | No | Accessible from with the class it is defined and from derived classes | Signature must remain compatibled |
+| **protected** | No | Yes | No | Accessible from with the class it is defined and from derived classes | Signature must remain compatible |
 | **public** | Yes | Yes | No | Accessible from within the class it is defined, derived classes, and other classes that have access to the defining class | Signature must remain compatible |
 
 ## Hookable
@@ -53,6 +53,8 @@ For public methods, you can opt out by adding **\[Hookable(false)\]** to the met
 
 You can opt in for private and protected methods by adding **\[Hookable(true)\]** to the method.
 
+If a method is explicitly marked as **\[Hookable(false)\]**, then it is not wrappable.
+
 ## Final keyword
 Methods adorned with the **final** keyword can't be overridden, are not hookable, and are not wrappable.
 
@@ -61,8 +63,6 @@ When a method is hookable, the compiler generates extra intermediate language (I
 
 ## Wrappable
 If a method is wrappable, extenders can wrap it by using Chain of Command (CoC). Extenders must call next, because they aren't allowed to break the CoC.
-
-To be wrappable, a method must also be hookable. Therefore, methods that are wrappable are hookable.
 
 For protected and public methods, you can opt out by adding **\[Wrappable(false)\]** to the method.
 
@@ -96,18 +96,3 @@ When a method is replaceable, it can be extended by using CoC, and the execution
 + **Don't** write logic that has a different responsibility than the logic that is being replaced.
 + **Do** call the base functionality (call next) when the replacement logic doesn't apply.
 + **Avoid** replacing logic completely by not calling the base functionality (call next).
-
-## Using the attributes in conjunction with each other
-
-The general rule is that \[Hookable\] is required by \[Wrappable\], which is required by \[Replaceable\]. The following table outlines the dependencies.
-
-|   | Hookable | Wrappable | Replaceable |
-|---|----------|-----------|-------------|
-| **\[Hookable(true)\]** | Yes | No | No |
-| **\[Hookable(false)\]** |	No | No | No |
-| **\[Wrappable(true)\]** |	Yes | Yes |	No |
-| **\[Wrappable(false)\]** | Maybe, depending on whether the method is hookable (see the table earlier in this topic) | No | No |
-| **\[Replaceable(true)\]** | Yes | Yes | Yes |
-| **\[Replaceable(false)\]** | Maybe, depending on whether the method is hookable (see the table earlier in this topic) | Maybe, depending on whether the method is wrappable (see the table earlier in this topic) | No |
-
-

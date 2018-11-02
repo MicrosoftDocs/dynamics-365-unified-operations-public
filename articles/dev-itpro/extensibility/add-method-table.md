@@ -6,7 +6,7 @@ title: Add methods to tables through extension
 description: This topic describes how to add a method to a table by using an extension.
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,15 +38,15 @@ ms.dyn365.ops.version: Platform update 4
 
 When you extend the business logic that is related to a table, the general coding principles that help keep your code clean still apply. Therefore, you must eventually encapsulate actions in separate methods on the table. In Microsoft Dynamics AX 2012, you completed that task by adding the method directly on the table through overlayering. To complete the same task through extension, you use a different approach. Specifically, you create an augmentation class.
 
-For example, a new field that is named **MyInventLocationId** was added to the InventTable table through extension. A data event handler was also created for the **Inserting** event, and you must implement the logic of filling the new field there. To encapsulate that action, you will create a new method on InventTable and name that method **defaultMyInventLocationId**.
+For example, a new field that is named **MyInventLocationId** was added to the InventTable table through extension. A data event handler was also created for the **Inserting** event, and you must implement the logic of filling the new field there. To encapsulate that action, you will create a new method on InventTable and name that method **myDefaultInventLocationId**.
 
 You first create a new class in the extension model. This class will augment the InventTable table, and enable access to the table's fields and methods in a manner that is easy to read and understand. It's important that you choose the correct name for your augmentation class. This name must be unique across all types in all models that are deployed. For more information, see [Naming guidelines for model extensions](naming-guidelines-extensions.md).
 
 ```
 [ExtensionOf(tableStr(InventTable))]
-final class MyInventTable_Extension
+final class InventTableMy_Extension
 {
-    public void defaultMyInventLocationId()
+    public void myDefaultInventLocationId()
     {
         // This would have partner specific logic to initialize the new field.
         this.MyInventLocationId = this.inventLocationId();
@@ -65,14 +65,14 @@ There are a few rules for augmentation classes:
 Now you can use your new method, for example, from an event handler:
 
 ```
-class MyInventTable_EventHandler
+class InventTableMy_EventHandler
 {
     [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
     public static void InventTable_onInserting(Common sender, DataEventArgs e)
     {
         InventTable inventTable = sender as InventTable;
         // Call the method as if it was defined directly on InventTable.
-        inventTable.defaultMyInventLocationId();
+        inventTable.myDefaultInventLocationId();
     }
 }
 

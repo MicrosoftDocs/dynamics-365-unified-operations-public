@@ -35,13 +35,13 @@ ms.dyn365.ops.version: 7.3
 You can create a load that has multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
 
 > [!NOTE]
-> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the [Inventory management](inventory-management.md) module.
+> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the Inventory management  module.
 
 You can generate one or more fiscal documents for a load, depending on the sales orders that the load is created for. The quantity on a fiscal document line is the pick-up quantity for the load line, not the quantity from the sales order line.
 
 The following example shows how you can create load lines and loads for sales order lines and sales orders, and how fiscal documents are generated for each load.
 
-**Sales orders and sales order lines**
+### Sales orders and sales order lines
 
 1. Sales order 1 for customer C1 has the following sales order lines:
 
@@ -53,7 +53,7 @@ The following example shows how you can create load lines and loads for sales or
     1. Sales order line 2.1, which has 200 units of item C
     2. Sales order line 2.2, which has 100 units of item D
 
-**Loads and load lines**
+### Loads and load lines
 
 1. You create load 1 that has the following load lines:
 
@@ -66,7 +66,7 @@ The following example shows how you can create load lines and loads for sales or
     1. Load line 2.1 for sales order line 1.1. This load line has the remaining 20 units of item A.
     2. Load line 2.2 for sales order line 2.1. This load line has 50 units of item C.
 
-**Fiscal documents**
+### Fiscal documents
 
 1. The following fiscal documents are generated for load 1:
 
@@ -93,10 +93,6 @@ The following table shows the prerequisites that must be in place before you sta
 </thead>
 <tbody>
 <tr>
-<td>Version</td>
-<td>Microsoft Dynamics AX 2012 R3</td>
-</tr>
-<tr>
 <td>Country/region</td>
 <td>The primary address for the legal entity must be in Brazil.</td>
 </tr>
@@ -104,9 +100,9 @@ The following table shows the prerequisites that must be in place before you sta
 <td>Related setup tasks</td>
 <td>
 <ul>
-<li>Create a fiscal establishment group and a fiscal establishment. For more information, see <a href="bra-create-a-fiscal-establishment-group.md">(BRA) Create a fiscal establishment group</a> and <a href="bra-create-a-fiscal-establishment.md">(BRA) Create a fiscal establishment</a>.</li>
-<li>Set up a fiscal document type, and then assign it to customers, vendors, or inventory items. For more information, see <a href="bra-set-up-fiscal-document-types.md">(BRA) Set up fiscal document types</a> and <a href="bra-assign-fiscal-document-types-for-customers-or-vendors.md">(BRA) Assign fiscal document types for customers or vendors</a>.</li>
-<li>Set up a transportation management shipping carrier that has the same vendor that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the <strong>Sales and Marketing</strong> module. For more information, see <a href="set-up-shipping-carriers-and-carrier-groups.md">Set up shipping carriers and carrier groups</a> and <a href="https://technet.microsoft.com/en-us/library/jj710592(v=ax.60)">(BRA) Carrier (modified form)</a>.</li>
+<li>Create a fiscal establishment group and a fiscal establishment. </li>
+<li>Set up a fiscal document type, and then assign it to customers, vendors, or inventory items.</li>
+<li>Set up a transportation management shipping carrier that has the same vendor that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the <strong>Sales and Marketing</strong> module.</li>
 </ul>
 </td>
 </tr>

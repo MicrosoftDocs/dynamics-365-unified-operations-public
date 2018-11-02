@@ -1026,7 +1026,9 @@
         - name: Fiscal calendars, fiscal years, and periods
           href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
         - name: Configure account structures
-          href: ../financials/general-ledger/configure-account-structures.md        
+          href: ../financials/general-ledger/configure-account-structures.md
+        - name: Dual currency
+          href: ../financials/general-ledger/dual-currency.md
       - name: Journals and ledgers
         items:
         - name: General journal processing
@@ -1820,7 +1822,11 @@
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
-          items:
+          items:     
+          - name: Import configuration
+            href: ../financials/general-ledger/tax-engine-import-configuration.md
+          - name: Tax engine applicability
+            href: ../financials/general-ledger/tax-engine-applicability.md
           - name: Tax engine integration
             href: ../financials/general-ledger/tax-engine-integration.md
           - name: Extending the Tax engine
@@ -2122,6 +2128,8 @@
       - name: Poland
         href: ../financials/localizations/poland.md
         items:
+        - name: Activate storno accounting
+          href: ../financials/localizations/emea-pol-red-storno.md
         - name: Calculate line discounts from the unit price
           href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
         - name: Correction notes
@@ -2138,6 +2146,8 @@
           href: ../financials/localizations/emea-pol-returnable-packages.md
         - name: Sales tax reports
           href: ../financials/localizations/emea-pol-sales-tax-reports.md
+        - name: Set up number sequences by warehouse
+          href: ../financials/localizations/emea-pol-number-sequence-warehouses.md          
         - name: Standard audit file
           href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
         - name: Tax interest and free-hand interest
@@ -2153,19 +2163,43 @@
           - name: Create an advance holder
             href: ../financials/localizations/emea-advance-holders.md#create-an-advance-holder
           - name: Daily operations for advance holders
-            href: ../financials/localizations/rus-advance-holders-daily-operations.md            
+            href: ../financials/localizations/rus-advance-holders-daily-operations.md
+          - name: Advance reports with budget control
+            href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+          - name: Revaluate foreign currency for advance holders
+            href: ../financials/localizations/rus-advance-adjustment-parameters.md
+          - name: Advance holder reports
+            href: ../financials/localizations/rus-local-management-reports-primary-forms.md
         - name: Fixed assets
           items: 
           - name: Acquiring fixed assets and putting them into operation
             href: ../financials/localizations/rus-fixed-asset-acquisition.md
+          - name: Register fixed assets acquisitions
+            href: ../financials/localizations/rus-register-acquisition.md
           - name: Create and post budget journals for fixed asset acquisitions
             href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
           - name: Fixed asset counting
             href: ../financials/localizations/rus-fixed-assets-counting.md
           - name: Fixed assets currency revaluation
             href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+          - name: Revaluate fixed asset cost and depreciation
+            href: ../financials/localizations/rus-fixed-assets-revaluation.md            
           - name: Partial fixed asset disassembly (liquidation)
             href: ../financials/localizations/rus-fixed-assets-disassembly.md
+          - name: Sell, dispose, and write-off assets
+            href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+          - name: Set up fixed asset locations and numbering
+            href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+          - name: Set up depreciation 
+            href: ../financials/localizations/rus-depreciation-setup.md
+          - name: Depreciation methods
+            href: ../financials/localizations/rus-depreciation-methods.md
+          - name: Depreciation bonuses
+            href: ../financials/localizations/rus-bonus-depreciation.md
+          - name: Calculate depreciation
+            href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Company divisions
+          href: ../financials/localizations/rus-company-divisions.md
         - name: Set up and process payment orders
           href: ../financials/localizations/rus-payment-order-settings-processing.md                
         - name: Set up exchange rates for currency transactions
@@ -2180,6 +2214,8 @@
           href: ../financials/localizations/rus-tax-agent.md
         - name: Set up dimension control for settlements
           href: ../financials/localizations/rus-transactions-settlement-date.md
+        - name: Invoices for payment
+          href: ../financials/localizations/rus-invoice-payment.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:

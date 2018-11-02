@@ -65,5 +65,5 @@ To complete this task, you must perform the following steps:
 
 The classes, interfaces, and extensions described in these steps are shown in the following diagram.
 
-![MapClassExtensions](media/MapsWithVersioning3.png)
+![MapClassExtensions](media/TableMaps.png)
 
