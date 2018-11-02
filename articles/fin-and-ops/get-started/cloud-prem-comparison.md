@@ -121,7 +121,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 
 
 ## Dynamics 365 for Retail 
-To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../retail/retail-onprem.md).
+To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../retail/retail-onprem.md).
 
 ## Dynamics 365 for Talent
 
