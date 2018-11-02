@@ -3,9 +3,7 @@
 # required metadata
 
 title: How to avoid text truncation on position hierarchy and export to Visio
-description: When the customer views the position hierarchy in Talent, the names of individuals and
-positions are truncated, making it impossible to capture a screenshot or print the
-hierarchy.
+description: When the customer views the position hierarchy in Talent, the names of individuals and positions are truncated, making it impossible to capture a screenshot or print the hierarchy.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
