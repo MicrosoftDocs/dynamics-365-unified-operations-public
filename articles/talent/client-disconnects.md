@@ -2,7 +2,7 @@
 # required metadata
 
 title: The client disconnects
-description: 
+description: The customer is getting disconnected form their environment and doesn’t know why.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -41,7 +41,7 @@ All
 
 **Symptom:** 
 
-Customer is getting disconnected form their environment and doesn’t know why.
+The customer is getting disconnected form their environment and doesn’t know why. The customer receives one of the following errors.
 
 -   “We've lost your connection. Click Close to continue working.”
 
@@ -59,7 +59,7 @@ would see this issue.
 
 Browser type(s) = Chrome, Internet Explorer, Edge
 
-The Talent Platform disconnects users when two different sessions are opened at
+The Talent platform disconnects users when two different sessions are opened at
 the same time for the same user and browser type. (e.g. User A is looking at
 Environment 1 and Environment 2 within Chrome) It doesn't matter if they open in
 in different browser windows or just different tabs, if it is the same user
