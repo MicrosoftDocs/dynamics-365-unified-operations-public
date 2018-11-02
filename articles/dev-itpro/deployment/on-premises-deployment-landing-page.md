@@ -5,7 +5,7 @@ title: On-premises deployments home page
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 09/11/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,6 @@ ms.dyn365.ops.version: Platform update 8
 You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
 
 ## Get started
-- [What's new or changed in on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with platform update 12 (March 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
 - [Dynamics 365 for Finance and Operations (on-premises) overview](on-premises-overview.md)
 - [Planning for your on-premises deployment](plan-onprem-deployment.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -61,6 +60,14 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 - [Client Internet connection troubleshooting](../user-interface/client-disconnected.md)
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
 - [Redeploy an on-premises deployment](redeploy-on-prem.md)
+
+## Retail
+- [Retail capabilities available in on-premises deployments](../../retail/retail-onprem.md)
+- [Installation steps for Retail channel components in an on-premises envionrment](deploy-retail-onprem.md)
+- [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+
+
 
 ## Other resources
 - [Troubleshoot Dynamics 365 for Finance and Operations on-premises](troubleshoot-on-prem.md)
