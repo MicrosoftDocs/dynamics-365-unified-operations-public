@@ -62,7 +62,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 - [Redeploy an on-premises deployment](redeploy-on-prem.md)
 
 ## Retail
-- [Retail capabilities available in on-premises deployments](../../retail/retail-onprem.md)
+- [Retail capabilities that are available in on-premises deployments](../../retail/retail-onprem.md)
 - [Installation steps for Retail channel components in an on-premises envionrment](deploy-retail-onprem.md)
 - [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
 - [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
