@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Class extension via method wrapping and Chain of Command (CoC)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 The functionality for class extension, or class augmentation, has been improved in Microsoft Dynamics 365 for Finance and Operations. You can now wrap logic around methods that are defined in the base class that you're augmenting. You can extend the logic of public and protected methods without having to use event handlers. When you wrap a method, you can also access public and protected methods, and variables of the base class. In this way, you can start transactions and easily manage state variables that are associated with your class.
 
