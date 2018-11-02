@@ -374,8 +374,7 @@ final class TableToExtend_Extension
 }
 ```
 
-#### Data Entities
-
+#### Data entities
 In this example, **DataEntityToExtend** is the data entity and **validateDelete** and **validateWrite** are methods that can be wrapped in the data entity.
 
 ```C#
