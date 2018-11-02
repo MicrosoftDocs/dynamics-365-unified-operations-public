@@ -3,9 +3,9 @@
 # required metadata
 
 title: How to avoid text truncation on position hierarchy and export to Visio
-description: When I view the position hierarchy in Talent the names of individuals and
-positions are truncated, making it impossible to screenshot or print the
-hierarchy and distribute it.
+description: When the customer views the position hierarchy in Talent, the names of individuals and
+positions are truncated, making it impossible to capture a screenshot or print the
+hierarchy.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -40,9 +40,7 @@ ms.dyn365.ops.version: Talent
 
 **Issue:**
 
-When I view the position hierarchy in Talent the names of individuals and
-positions are truncated, making it impossible to screenshot / print the
-hierarchy and distribute.
+When the customer views the position hierarchy in Talent, the names of individuals and positions are truncated, making it impossible to take a screenshot or print the hierarchy and distribute it.
 
 ![](media/position-h.png)
 
@@ -52,15 +50,14 @@ By design.  
 
 **Resolution:**
 
-Unfortunately the size of the text is not something that is easily modified by
+Unfortunately, the size of the text is not something that is easily modified by
 the user.However, you can export out of Talent and an import into Visio. This
 article was written for AX 2012, but the process is still applicable for Talent
 as well.
 
-[https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio
-](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio)
+[https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio)
 
-Steps to export to Visio
+Steps to export to Visio:
 
 1.  Open the positions list. (note if you want to include more information in
     the Org structure diagram, add fields to the Position list to make them
@@ -132,5 +129,4 @@ Steps to export to Visio
 
 **Additional option:**
 
-In Talent, you may also be able to leverage the People workspace as well to view
-some hierarchy related information.
+In Talent, you may also be able to leverage the **People** workspace as well to view some hierarchy related information.
