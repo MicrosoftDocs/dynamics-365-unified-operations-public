@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How are database backups handled?
+title: How database backups are handled
 description: Customer wants to understand SQL backups.
 author: Darinkramer
 manager: AnnBe
@@ -24,20 +24,20 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 
 ---
 
-# How are database backups handled?
+# How database backups are handled
 
 [!include [banner](includes/banner.md)]
 
 
 **Environment details:** 
 
->   Production environments provisioned through LCS
+Production environments provisioned through LCS.
 
 **Problem:** 
 
@@ -50,9 +50,7 @@ ms.dyn365.ops.version: Talent
 **Solution:** 
 
 -   We use a Standard Azure SQL SKU for Talent, and you can learn more about the
-    backup story here:
-
->   <https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups>.
+    backup story here:<https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups>.
 
 -   Restoring an in-place Production environment backup is a Development
     Operations (DevOps) procedure that is something that should be considered
@@ -69,7 +67,6 @@ ms.dyn365.ops.version: Talent
     option is making use of data entity packages for export / import between
     environments.
 
-Long-term solution:
+**Long-term solution:**
 
--   Longer term future plans to add an option to copy a Production database to a
-    Test environment.
+Longer term future plans to add an option to copy a Production database to acTest environment.
