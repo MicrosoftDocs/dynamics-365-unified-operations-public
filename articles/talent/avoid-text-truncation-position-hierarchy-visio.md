@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Talent
 [!include [banner](includes/banner.md)]
 
 
-**ISSUE:**
+**Issue:**
 
 When I view the position hierarchy in Talent the names of individuals and
 positions are truncated, making it impossible to screenshot / print the
@@ -50,7 +50,7 @@ hierarchy and distribute.
 
 By design.  
 
- **Resolution:**
+**Resolution:**
 
 Unfortunately the size of the text is not something that is easily modified by
 the user.However, you can export out of Talent and an import into Visio. This
