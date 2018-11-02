@@ -64,14 +64,14 @@ The following image shows how the personalization toolbar appeared before Platfo
 
 ![Personalization toolbar before Platform Update 22](media/oldPersonalizationToolbar.png  "Personalization toolbar before Platform Update 22")
 
-The following image shows how the personaliation toolbar appears in Platform update 22 and later.
+The following image shows how the personalization toolbar appears in Platform update 22 and later.
 
 ![Personalization toolbar in Platform Update 22 and later](media/restyledPersonalizationToolbar.png  "Personalization toolbar in Platform Update 22 and later]")
 
 ## Optimized "is one of" filtering experience
-The "is one of" filtering operator is available for most fields when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a field based on multiple, different values. A new and improved experience for the "is one of" operator is available in Platform Update 22. To learn more, see [Optimized "is one of" filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+The "is one of" filtering operator is available for most fields when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a field based on multiple, different values. A new and improved experience for the "is one of" operator is available in Platform update 22. To learn more, see [Optimized "is one of" filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ## Paste lists from Excel into filter fields with the "is one of" operator
-For some tasks, users might have a list of values in Excel that they'd like to use to filter data in Finance and Operations. As an example, a finance user might have identified a set of vouchers from a report that need additional research in the system, and it would be ideal for this user to be able to copy the list directly from Excel into a filter field in Finance and Operations.
+For some tasks, users might have a list of values in Excel that they'd like to use to filter data in Finance and Operations. For example, a finance user might have identified a set of vouchers from a report that need additional research in the system, and it would be ideal for this user to be able to copy the list directly from Excel into a filter field in Finance and Operations.
 
-Starting in Platform Update 22, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter field. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter fields with the "is one of" operator](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Starting in Platform update 22, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter field. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter fields with the "is one of" operator](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
