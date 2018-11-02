@@ -2,7 +2,7 @@
 # required metadata
 
 title: Access to private addresses by security role
-description: Customer is unable to access private addresses.
+description: The customer is unable to access private addresses.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -36,19 +36,17 @@ ms.dyn365.ops.version: Talent
 
 **Issue:**
 
-After duplicating a Security Role and logging in as that new Role you were not
+After duplicating a Security Role and logging in as that new Role, the customer isn't
 able to see addresses that were marked as private. In order to resolve this
-issue, you need to perform the following steps with the duplicated security
+issue, the customer needs to perform the following steps with the duplicated security
 role.
 
 **Resolution:**
 
-1. Navigate to Organization administration/Global address book/Global address
-book parameters.
+1. Navigate to **Organization administration > Global address book > Global address book parameters**.
 
-2. Select Private location security
+2. Select **Private location security**.
 
-3. Move the new security role from the Available Roles list to the Selected
-Roles list and save.
+3. Move the new security role from the **Available Roles** list to the **Selected Roles** list and then click **Save**.
 
 ![](media/GAD-parameters.png)
