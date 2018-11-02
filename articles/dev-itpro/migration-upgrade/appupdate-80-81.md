@@ -110,6 +110,6 @@ Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadat
 To prevent this from occurring, ensure that you compile your extensions on an 8.1 developer machine. To resolve this issue, rename any of your extension objects with a vanity extension naming convention, such as SystemAdministration.*Customer*.
 
 ### Deployment on my environment fails with error on DVTs or ETWs
-There is a known issue where IIS/Application Pools are not fully restarted when the DVT or ETW step runs. The failure occurs because the DVTs are trying to connect to your environment's URL. To resolve this issue, click **Resume** on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry tp resolve this issue.
+There is a known issue where IIS/Application Pools are not fully restarted when the DVT or ETW step runs. The failure occurs because the DVTs are trying to connect to your environment's URL. To resolve this issue, click **Resume** on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry to resolve this issue.
 
 
