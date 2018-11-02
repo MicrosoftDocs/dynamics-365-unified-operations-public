@@ -41,7 +41,7 @@ Unlike a cloud deployment, an on-premises environment does not enable seamless, 
 
 ## Prerequisites 
 
-Before you can start installation of Retail channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments (Platform update 12 and later](setup-deploy-on-premises-pu12.md).
+Before you can start installation of Retail channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md).
 
 You must also ensure that you use a secure network to connect Retail Store Scale Unit (RSSU) to Retail headquarters that is not publicly  accessible. You must also restrict network access to Retail headquarters only to known RSSU devices via network filtering or other means.
 
