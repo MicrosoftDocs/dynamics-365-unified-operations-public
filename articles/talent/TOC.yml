@@ -268,6 +268,27 @@
       href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json     
   - name: Troubleshoot Talent
     items:
-    -  name: 
+    - name: Analytic reports are not being updated
+      href: analytic-reports-not-updated.md
+    - name: Can't create an environment in the PowerApps Admin center
+      href: create-envi-powerapps-admin-ctr.md
+    - name: The client disconnects
+      href: client-disconnects.md
+    - name: How are database backups handled?
+      href: database-backups.md
+    - name: How to avoid text truncation on position hierarchy and export to Visio
+      href: avoid-text-truncation-position-hierarchy-visio.md
+    - name: How to run the compensation process
+      href: run-compensation-process.md
+    - name: How to save and replay task guides from LCS
+      href: save-play-task-guides-LCS.md
+    - name: Access to private addresses by security role
+      href: security-roles-addresses.md
+    - name: Talent app doesn't appear in Microsoft Dynamics 365 apps (CDS1.0)
+      href: talent-not-in-home-CDS.md
+    - name: User can access Core HR but not Onboard or Attract apps
+      href: user-access-core-hr.md
+    - name: Reporting options in Talent
+      href: talent-reporting-options.md
   
   
