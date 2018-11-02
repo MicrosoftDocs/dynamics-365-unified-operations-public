@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to run the compensation process
-description: Customer is trying to run compensation process in Dynamics 365 for talent without success.
+description: The customer is trying to run the compensation process in Dynamics 365 for Talent without success.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -41,7 +41,7 @@ The customer is trying to run the compensation process in Dynamics 365 for Talen
 
 **Cause:**
 
-THe customer needs the documentation.
+The customer needs the documentation.
 
 **Resolution:**
 
