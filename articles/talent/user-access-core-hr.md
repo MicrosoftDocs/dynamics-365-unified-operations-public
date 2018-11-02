@@ -36,25 +36,21 @@ ms.dyn365.ops.version: Talent
 
 
 
-**Environment details**
+**Environment details:**
 
-LCS deployment performed by User A
+- The Lifecycle Services (LCS) deployment was performed by User A.
 
-User A added User B as a user to Core HR
+- User A added User B as a user to Core HR.
 
 **Problem:**
 
->   User B is able to access Core HR, but not the Attract or Onboard apps.
-
->   When navigating to Experience apps, User B is taken to a trial environment
->   instead.
+User B is able to access Core HR, but not the Attract or Onboard apps. When navigating to Experience apps, User B is taken to a trial environment instead.
 
 **Solution:**
 
->   User B does not have rights to view the PowerApps environment created by
->   User A during the provisioning process.
+- User B does not have rights to view the PowerApps environment created by User A during the provisioning process.
 
-See the ‘Granting access to the environment’ section in these instructions: <https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent>.
+See the ‘Granting access to the environment’ section in [Provision talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 **Long-term solution:**
 
