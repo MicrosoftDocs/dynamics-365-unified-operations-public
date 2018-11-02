@@ -280,7 +280,7 @@
       href: avoid-text-truncation-position-hierarchy-visio.md
     - name: How to run the compensation process
       href: run-compensation-process.md
-    - name: How to save and replay task guides from LCS
+    - name: How to save task guides to LCS and replay them
       href: save-play-task-guides-LCS.md
     - name: Access to private addresses by security role
       href: security-roles-addresses.md
