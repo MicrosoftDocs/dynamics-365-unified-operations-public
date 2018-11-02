@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Cannot create an environment in the PowerApps Admin center
+# Can't create an environment in the PowerApps Admin center
 
 [!include [banner](includes/banner.md)]
 
-**Problem** 
+**Problem:** 
 
 -   The tenant/environment admin is unable to create an environment in the
     PowerApps admin center.
@@ -42,7 +42,7 @@ ms.dyn365.ops.version: Talent
 -   The user performing the environment creation is not directly assigned a
     license that gives them rights to do so.
 
-**Solution(s)** 
+**Solution:** 
 
 -   Ensure the tenant admin has assigned a valid PowerApps P2 license directly
     to the user that will be performing the environment creation step. Here are
