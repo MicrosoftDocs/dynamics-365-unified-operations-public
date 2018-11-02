@@ -78,7 +78,7 @@ Developers are able to suppress hyperlinks on form controls by setting the **Ena
 Currently when users click on some hyperlinks, it results in an attempted navigation and then an error message, as there is no target form to open. Suppressing hyperlinks in these scenarios will improve the user experience by removing these confusing hyperlinks.  
 
 ## Chain of Command on nested types 
-In this release, we’ve enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Nested class methods in forms can be wrapped in Platform update 16 or later](../../dev-itpro/extensibility/method-wrapping-coc.md#nested-class-methods-in-forms-can-be-wrapped-in-platform-update-16-or-later).
+In this release, we’ve enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Nested class methods in forms can be wrapped in Platform update 16 or later](../../dev-itpro/extensibility/method-wrapping-coc.md#methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-or-later).Methods on types nested within forms can be wrapped in Platform update 16 or later
 
 ## Change form patterns to custom using form extensions
 With this update, you can change a form's pattern to custom by using a form extension. This allows for more
