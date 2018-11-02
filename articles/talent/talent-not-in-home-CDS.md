@@ -39,7 +39,7 @@ ms.dyn365.ops.version: Talent
 
 Customer is not seeing the Talent app in Microsoft Dynamics 365 apps.
 
-**RESOLUTION:**
+**Resolution:**
 
 User doesn't belong to Environment Maker role for the environment in PowerApps.
 
@@ -48,11 +48,11 @@ User doesn't belong to Environment Maker role for the environment in PowerApps.
 
 <https://preview.admin.powerapps.com/>
 
-1.  Click on Environments and select the correct environment for Talent
+1.  Click **Environments** and select the correct environment for Talent.
 
-2.  Select the security tab
+2.  Select the **Security** tab
 
-3.  Click on Environment roles \> Environment Maker
+3.  Click **Environment roles \> Environment Maker**.
 
 ![](media/environment-roles.png)
 
@@ -60,11 +60,11 @@ User doesn't belong to Environment Maker role for the environment in PowerApps.
 
 ![](media/environment-maker.png)
 
-1.  Click on Save
+1.  Click **Save**.
 
-2.  Now, user must go to [https://home.dynamics.com/](https://home.dynamics.com/)
+2.  The user must now go to [https://home.dynamics.com/](https://home.dynamics.com/)
 
-3.  Click on Sync button to update user apps. Once complete Talent will now show
+3.  Click the **Sync** button to update user apps. Once the sync is complete, Talent will show
     up in the Home Page.
 
 ![](media/get-more.png)
