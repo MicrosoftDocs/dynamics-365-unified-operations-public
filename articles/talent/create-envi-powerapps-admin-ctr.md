@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 
@@ -53,8 +53,7 @@ ms.dyn365.ops.version: Talent
 | Dynamics 365 for Operations          | PowerApps for Dynamics 365    |
 | Dynamics 365 Plan Enterprise Edition | PowerApps for Dynamics 365    |
 
->   Note that various Office SKUs also provide the right, along with standalone
->   PowerApps Plan 2 SKUs. The key is that one of these must be present.
+Note that various Office SKUs also provide the right, along with standalone PowerApps Plan 2 SKUs. The key is that one of these must be present.
 
 -   Navigate to [https://preview.admin.powerapps.com/environments
     ](https://preview.admin.powerapps.com/environments)
