@@ -408,9 +408,9 @@ The following sections describe restrictions on the use of CoC and method wrappi
 ### X++ classes that are compiled by using Platform update 8 or earlier 
 The method wrapping feature requires specific functionality that is emitted by an X++ compiler that is part of Platform update 9 or later. Methods that are compiled by using earlier versions don't have the infrastructure to support this feature.
 
-### Nested class methods in forms can be wrapped in Platform update 16 or later
-The ability to wrap methods in nested classes by using class extensions was added in Platform update 16. The concept of nested classes in forms applies to overriding data source methods and form control methods.
-However, wrapping (extension) of purely X++ methods on those nested classes is not yet supported. Currently, if a developer uses Chain of Command on purely X++ methods on types inside forms then it compiles but the extension methods are not invoked at runtime. This capability is scheduled to be added in Platform update 24.
+### Methods on types nested within forms can be wrapped in Platform update 16 or later
+The ability to wrap methods on types nested within forms (data sources and controls) by using class extensions was added in Platform update 16. This means that Chain of Command can be used to provide overrides for data source methods and form control methods.
+However, wrapping (extension) of purely X++ methods on those nested types (form controls and form data sources) is not yet supported like it is on other types (forms, tables, data entities). Currently, if a developer uses Chain of Command on purely X++ methods on types inside forms then it compiles but the extension methods are not invoked at runtime. This capability is scheduled to be added in Platform update 24.
 
 ### Unimplemented system methods on tables and data entities can be wrapped in Platform update 22 or later
 The ability to wrap methods in nested classes by using class extensions was added in Platform update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods.
