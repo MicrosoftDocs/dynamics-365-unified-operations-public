@@ -35,17 +35,17 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-**ISSUE:**
+**Issue:**
 
-We are trying to run the compensation process in Dynamics 365 for Talent without success.
+The customer is trying to run the compensation process in Dynamics 365 for Talent without success.
 
-**CAUSE:**
+**Cause:**
 
-Documentation/setup.
+THe customer needs the documentation.
 
-**RESOLUTION:**
+**Resolution:**
 
-Here is the documentation around Compensation:
+Here is the documentation for compensation:
 
 SETUP:
 
