@@ -41,19 +41,19 @@ All environments.
 
 **Symptom:** 
 
-- Customer wants to customize Talent reports or create new reports. 
+The customer wants to customize Talent reports or create new reports. 
 
 **Problem:** 
 
-- The user is not able to customize the embedded PowerBI reports.
+The user is not able to customize the embedded PowerBI reports.
 
 
 **Solution:** 
 
--   The Core HR data that flows to CDS can be reported on via the Power Apps
-    Common Data Service (CDS) connector to Power BI desktop.Note that CDS
+-   The Core HR data that flows to CDS (Common Data Service) can be reported on via the Power Apps
+    CDS connector to Power BI desktop. Note that CDS
     contains a subset of Core HR data. Learn more about Power BI and Dashboards
-    here:<https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi/>.
+    by reading [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
 
 -   Global electronic reporting (GER) is available for certain reports in
     Talent, and allows for customer-driven customizations via the GER
@@ -65,4 +65,4 @@ All environments.
 
 **Long-term solution:** 
 
-Additional PowerBI options will be available and more date/entities will be part of the CDS (Common Data Service).
+Additional PowerBI options will be available and more date/entities will be part of the CDS.
