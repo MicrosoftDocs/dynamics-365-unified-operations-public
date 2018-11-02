@@ -2170,6 +2170,12 @@
             href: ../financials/localizations/rus-advance-adjustment-parameters.md
           - name: Advance holder reports
             href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+        - name: Bank
+          items: 
+          - name: Set up bank accounts
+            href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
+          - name: Set up and process payment orders
+            href: ../financials/localizations/rus-payment-order-settings-processing.md 
         - name: Fixed assets
           items: 
           - name: Acquiring fixed assets and putting them into operation
@@ -2200,16 +2206,12 @@
             href: ../financials/localizations/rus-depreciation-calculation.md
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
-        - name: Set up and process payment orders
-          href: ../financials/localizations/rus-payment-order-settings-processing.md                
         - name: Set up exchange rates for currency transactions
           href: ../financials/localizations/rus-exchange-difference.md
         - name: Preview ledger transactions
           href: ../financials/localizations/rus-ledger-transactions-preview.md
         - name: Set up officials
           href: ../financials/localizations/rus-officials.md
-        - name: Set up bank accounts
-          href: ../financials/localizations/rus-local-settings-requisites-bank-module.md   
         - name: Value-added tax (VAT) for tax agents
           href: ../financials/localizations/rus-tax-agent.md
         - name: Set up dimension control for settlements
