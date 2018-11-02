@@ -2,7 +2,7 @@
 # required metadata
 
 title: Talent app doesn't appear in Microsoft Dynamics 365 apps (CDS1.0)
-description: The customer isn't seeing the Talent app in Microsoft Dynamics 365 apps
+description: The customer doesn't see the Talent app with the Microsoft Dynamics 365 apps.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -37,22 +37,20 @@ ms.dyn365.ops.version: Talent
 
 **Problem:**
 
-Customer is not seeing the Talent app in Microsoft Dynamics 365 apps.
+The customer doesn't see the Talent app with the Microsoft Dynamics 365 apps.
 
 **Resolution:**
 
-User doesn't belong to Environment Maker role for the environment in PowerApps.
+The user doesn't belong to the **Environment Maker** role for the environment in PowerApps.
 
-1.  The admin user who has PowerApps Plan 2 license will need to go to PowerApps
-    Admin portal
-
-<https://preview.admin.powerapps.com/>
+1.  The admin user who has a PowerApps Plan 2 license must go to the [PowerApps
+    Admin portal](https://preview.admin.powerapps.com/).
 
 1.  Click **Environments** and select the correct environment for Talent.
 
 2.  Select the **Security** tab
 
-3.  Click **Environment roles \> Environment Maker**.
+3.  Click **Environment roles > Environment Maker**.
 
 ![](media/environment-roles.png)
 
@@ -62,9 +60,8 @@ User doesn't belong to Environment Maker role for the environment in PowerApps.
 
 1.  Click **Save**.
 
-2.  The user must now go to [https://home.dynamics.com/](https://home.dynamics.com/)
+2.  The user must now go to the [Dynamics login](https://home.dynamics.com/).
 
-3.  Click the **Sync** button to update user apps. Once the sync is complete, Talent will show
-    up in the Home Page.
+3.  Click the **Sync** button to update the user apps. Once the sync is complete, Talent will appear in the Home Page.
 
 ![](media/get-more.png)
