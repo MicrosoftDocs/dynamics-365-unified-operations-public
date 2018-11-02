@@ -47,13 +47,11 @@ Open **Control Panel > Programs and Features**, choose the **Visual Studio 2015*
   
   ![VS Xamarin Android Development Kit](./media/VSInstall.PNG)
   
-      Click the Install button and let the process run. Again, this will take some time to complete
+  Click the Install button and let the process run. Again, this will take some time to complete
 
   2.  Once installation is complete, launch Visual Studio and sign in with your Microsoft account if prompted (this is the same account you use with Windows). Then check for Xamarin updates through **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**, where you’ll find a **Check Now** link:
-  
-  ![Xamarin update](./media/XamarinUpdate.png)
-  
-      If you do not see an option for Xamarin in **Tools > Options**, double-check your installation, or try restarting Visual Studio. You can also search for Xamarin in the Options dialog. Download and install latest version.
+      
+If you do not see an option for Xamarin in **Tools > Options**, double-check your installation, or try restarting Visual Studio. You can also search for Xamarin in the Options dialog. Download and install latest version.
       
   3.  From the Retail SDK folder Open SampleExtensions\HybridApp\Android\solution and build/deploy on emulator and verify.
   
