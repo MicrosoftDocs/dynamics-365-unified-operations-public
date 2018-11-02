@@ -97,7 +97,7 @@ After you have marked the Release Candidate in your Asset Library, you can sched
 ## Known issues
 
 ### Deploying the 8.1 binary update to Developer environments causes ApplicationSuite compilation errors
-The package can be applied to your 8.0 environments and it will update your source code.  Compiling of your extension packages should not be impacted.  If you had overlayering and have removed objects from the ApplicationSuite package, and try to recompile it, you may run in to errors.  Until this is resolved, please re-deploy your developer environments on 8.1 PU20 and sync in your source code from version control.
+The package can be applied to your 8.0 environments and it will update your source code.  Compiling of your extension packages should not be impacted.  If you had overlayering and have removed objects from the ApplicationSuite package, and try to recompile it, you may run in to errors.  Until this is resolved, please redeploy your developer environments on 8.1 Platform Update 20 and sync in your source code from version control.
 
 ### Cannot find 8.1 binary update package on the All Binary Updates tile on the My environment details page
 It was originally communicated that the package would be found on the **All Binary Updates** tile. To prevent customers who want to simply get the latest binaries for release 8.0 from accidentally updating to release 8.1, we have moved the binary package to the Shared Asset Library. This topic has been updated to reflect this change.
