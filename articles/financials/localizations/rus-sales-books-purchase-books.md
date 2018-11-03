@@ -219,7 +219,7 @@ In **General ledger parameters** page, on **Sales tax** tab, **Tax options** fas
 
 4.	Enable **Date of reporting** to Filter factures by reporting date rather than facture date.
 
-5.	Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
+5.	Enable **Create XML file** to create electronic xml report in addition to Excel report.
 
 6.	Click OK to print facture accounting journals for the selected period.
 
