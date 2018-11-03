@@ -109,7 +109,7 @@ Choose the Purchase book journal line in the **Purchase book journals** page and
 Define the following parameters in the **Purchase book to Microsoft office Excel** dialog:
 
 - Review **From date** and **To date** - this is the sales book reporting period
-- Enable **Group by factures** to group factures with the same Facture number into one line with total amount.
+ - Enable **Group by factures** to group factures with the same Facture number into one line with total amount.
 - Enable **Exclude storno** to exclude both original and storno transactions in specified period from the printing form report
 - Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
 
@@ -138,21 +138,23 @@ In **General ledger parameters** page, on **Sales tax** tab, **Tax options** fas
 - **FACTURE ACCOUNTNG JOURNAL Format mapping** – Electronic reporting format for facture journal in xml.
 
 
-### Print a facture accounting journal
+### Print a facture accounting journal 
 
-1.	Run report through **General ledger > Inquiries and reports > Journal reports > Facture accounting journal**. In the opened dialog **Facture accounting journal** define the following parameters:
+Run report from **General ledger > Inquiries and reports > Journal reports > Facture accounting journal**. 
 
-2.	Choose reporting period in the **Date interval code** field or define **From date** and **To date**
+In the opened dialog **Facture accounting journal** define the following parameters:
 
-3.	In the field **Outgoing** choose the criteria for inclusion of intermediary deals factures into the facture journal: 
+- Choose reporting period in the **Date interval code** field or define **From date** and **To date**
 
-- **Date of the registration** - Issued factures journal contains all intermediary deals factures regardless confirmation to principal (intermediary deal information for such factures may be empty); 
+- In the field **Outgoing** choose the criteria for inclusion of intermediary deals factures into the facture journal: 
 
-- **Confirmation date** - Issued factures journal contains only confirmed intermediary deals factures (intermediary deal information for such factures is filled with received factures from principal)
+   - **Date of the registration** - Issued factures journal contains all intermediary deals factures regardless confirmation to principal (intermediary deal information for such factures may be empty); 
 
-4.	Enable **Date of reporting** to Filter factures by reporting date rather than facture date.
+   - **Confirmation date** - Issued factures journal contains only confirmed intermediary deals factures (intermediary deal information for such factures is filled with received factures from principal)
 
-5.	Enable **Create XML file** to create electronic xml report in addition to Excel report.
+- Enable **Date of reporting** to Filter factures by reporting date rather than facture date.
 
-6.	Click OK to print facture accounting journals for the selected period.
+- Enable **Create XML file** to create electronic xml report in addition to Excel report.
+
+Click OK to print facture accounting journals for the selected period.
 
