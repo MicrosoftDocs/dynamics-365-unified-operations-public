@@ -32,11 +32,11 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
   
-# Generate Sales book, Purchase book and Additional sheets
+## Generate Sales book, Purchase book and Additional sheets
 
 Sales and purchase books are legacy documents which must be prepared and stored during the tax period. They should be submitted to Tax authorities periodically and at request. VAT books contain issued and received invoice-factures.
 
-## Set up parameters
+### Set up parameters for sales and purchase books
 
 1.	In the **Accounts receivable parameters** page, define Number sequence for Sales book.
 2.	In the **Accounts payable parameters** page, define Number sequence for Purchase book.
@@ -46,9 +46,9 @@ Sales and purchase books are legacy documents which must be prepared and stored 
 6.	In the **Accounts payable parameters** page, in the **Ledger and sales tax** tab, in the **Purchase book** fast tab, choose Electronic reporting formats for Purchase book and Purchase book additional sheet in xml.
 
 
-## Generate and print sales book
+### Generate and print sales book
 
-### Generate sales book
+#### Generate sales book
 
 1.	Create a new sales book journal in **Accounts receivable > Periodic tasks > Sales book > Sales book journal**
 [!NOTE] The **New** button is available only if all books that are listed in the form are closed. The **Code** field is updated automatically, based on the sales book numbering sequence.
@@ -66,7 +66,7 @@ Sales and purchase books are legacy documents which must be prepared and stored 
 | **Print > Sales book** | Click to print sales book report |
 | **Print > Print additional list** | Click to print sales book additional sheet report |
 
-### Print sales book
+#### Print sales book
 Choose the Sales book journal line in the **Sales book journals** page and click **Print > Sales book** 
 Define the following parameters in the **Sales book to Microsoft office Excel** dialog:
 2.	Review **From date** and **To date** - this is the sales book reporting period
@@ -75,13 +75,13 @@ Define the following parameters in the **Sales book to Microsoft office Excel** 
 5.	Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
 6.	Click **OK**
 
-### Print sales book additional sheet
+#### Print sales book additional sheet
 Choose the Sales book journal line in the **Sales book journals** page and click **Print > Print additional list** 
 Additional sheets for all tax settlement periods which were corrected in the chosen period of sales book will be generated and printed. Currently only corrective and revision factures which decrease VAT amount to be paid to tax authorities in the corrected period are considered for Additional sheet generation. Corrective and revision factures which increase the VAT amount are printed in the Sales book of current period. 
 
-## Generate and print purchase book
+### Generate and print purchase book
 
-### Generate purchase book
+#### Generate purchase book
 1.	Create a new purchase book journal in **Accounts payable > Periodic tasks > Purchase book > Purchase book journal**
 [!NOTE] The **New** button is available only if all books that are listed in the form are closed. The **Code** field is updated automatically, based on the purchase book numbering sequence.
 2.	In the **Name** field, enter a name for the book.
@@ -90,7 +90,7 @@ Additional sheets for all tax settlement periods which were corrected in the cho
 -	Enable **Close the book** to close the book after the update. Upon closure, you cannot create new factures in a closed period. 
 -	Click **OK**. The lines of the purchase book are generated, and the closing date is saved in the **Closed date** field of the purchase book journal.
 
-### Functions available on the Purchase books journals page
+#### Functions available on the Purchase books journals page
 | **Function** | **Description** |
 | ----- | ----- |
 | **Lines** | Click to open the Purchase book lines form to verify the purchase book line details |
@@ -98,7 +98,7 @@ Additional sheets for all tax settlement periods which were corrected in the cho
 | **Print > Purchase book** | Click to print purchase book report |
 | **Print > Print additional list** | Click to print purchase book additional sheet report |
 
-### Print purchase book
+#### Print purchase book
 Choose the Purchase book journal line in the **Purchase book journals** page and click **Print > Purchase book** 
 Define the following parameters in the **Purchase book to Microsoft office Excel** dialog:
 1.	Review **From date** and **To date** - this is the sales book reporting period
@@ -107,23 +107,23 @@ Define the following parameters in the **Purchase book to Microsoft office Excel
 4.	Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
 5.	Click **OK**
 
-### Print purchase book additional sheet
+#### Print purchase book additional sheet
 Choose the Sales book journal line in the **Sales book journals** page and click **Print > Print additional list** .
 Additional sheets for all tax settlement periods which were corrected in the chosen period of purchase book will be generated and printed. Currently only corrective and revision factures which increase VAT amount to be deducted in the corrected period are considered for Additional sheet generation. Corrective and revision factures which decrease the VAT amount to be deducted in the corrected period, are printed in the Purchase book of current period. 
 
 
-# Print issued and received factures journal
+## Print issued and received factures journal
     
 Facture accounting journal contains list of issued and received invoice-factures related to activities for the benefit of another entity, like agent transactions or commission.
 
-## Set up parameters for factures journal
+### Set up parameters for factures journal
 
 In **General ledger parameters** page, on **Sales tax** tab, **Tax options** fast tab, fill the following fields:
 
 - **Facture operation code delimiter** – delimiter to be used in case several operation types codes are assigned to a single facture
 - **FACTURE ACCOUNTNG JOURNAL Format mapping** – Electronic reporting format for facture journal in xml.
 
-## Print a facture accounting journal
+### Print a facture accounting journal
 
 1.	Run report through **General ledger > Inquiries and reports > Journal reports > Facture accounting journal**. In the opened dialog **Facture accounting journal** define the following parameters:
 
