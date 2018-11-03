@@ -4,9 +4,9 @@
 
 title: Class extension - Method wrapping and Chain of Command
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping.
-author: robadawy
+author: ChrisGarty
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robadawy
+ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Class extension via method wrapping and Chain of Command (CoC)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 The functionality for class extension, or class augmentation, has been improved in Microsoft Dynamics 365 for Finance and Operations. You can now wrap logic around methods that are defined in the base class that you're augmenting. You can extend the logic of public and protected methods without having to use event handlers. When you wrap a method, you can also access public and protected methods, and variables of the base class. In this way, you can start transactions and easily manage state variables that are associated with your class.
 
@@ -86,10 +87,10 @@ This is a temporary situation until the next release of the Dynamics 365 for Fin
 The following sections give more details about the capabilities of method wrapping and CoC.
 
 ### Wrapping public and protected methods
-Protected or public methods of classes, tables, or forms can be wrapped by using an extension class that augments that class, table, or form. The wrapper method must have the same signature as the base method.
+Protected or public methods of classes, tables, data entities, or forms can be wrapped by using an extension class. The wrapper method must have the same signature as the base method.
 
 - When you augment form classes, only root-level methods can be wrapped. You can't wrap methods that are defined in nested classes.
-- Only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes.
+- Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future update.
 
 ### What about default parameters?
 Methods that have default parameters can be wrapped by extension classes. However, the method signature in the wrapper method must not include the default value of the parameter.
@@ -250,6 +251,7 @@ class AnyClass2
 }
 ```
 
+
 ### Extensions of form-nested concepts such as data sources, data fields, and controls
 
 In order to implement CoC methods for form-nested concepts, such as data sources, data fields, and controls, an extension class is required for each nested concept. 
@@ -274,6 +276,9 @@ final class FormDataSource1_Extension
         //...
         ret = next validateWrite();
         //...
+        return ret;
+    }
+}
 ```
 
 #### Form data fields
@@ -290,6 +295,9 @@ final class FormDataField1_Extension
         //...
         ret = next validate();
         //...
+        return ret;
+    }
+}
 ```
 
 #### Controls
@@ -304,6 +312,8 @@ final class FormButton1_Extension
     {
         next clicked();
         //...
+    }
+}
 ```
 
 #### Requirements and considerations when you write CoC methods on extensions for form-nested concepts
@@ -323,22 +333,110 @@ final class FormButton1_Extension
             {
                 info("Hi from methodInButton1");
                 //...
-    }
     ```
 
 - You do **not** have to recompile the module where the original form is defined to support CoC methods on nested concepts on that form from an extension. For example, if the **FormToExtend** form from the previous examples is in the **ApplicationSuite** module, you don't have to recompile **ApplicationSuite** to extend it with CoC for nested concepts on that form from a different module.
 
+### Extensions of tables and data entities
+
+An extension class is required for each concept. 
+
+#### Tables
+
+In this example, **TableToExtend** is the table and **delete**, **canSubmitToWorkflow**, and **caption** are methods that can be wrapped in the table.
+
+```C#
+[ExtensionOf(tablestr(TableToExtend))]
+final class TableToExtend_Extension
+{
+    public void delete()
+    {
+        next delete();
+        //...
+    }
+ 
+     public boolean canSubmitToWorkflow(str _workflowType)
+    {
+        boolean ret;
+        //...
+        ret = next canSubmitToWorkflow(_workflowType);
+        //...
+        return ret;
+    }
+        
+    public str caption()
+    {
+        str ret;
+        //...
+        ret = next caption();
+        //...
+        return ret;
+    }
+}
+```
+
+#### Data entities
+In this example, **DataEntityToExtend** is the data entity and **validateDelete** and **validateWrite** are methods that can be wrapped in the data entity.
+
+```C#
+[ExtensionOf(TableStr(LedgerJournalEntity))]
+final class LedgerJournalEntity_Extension
+{
+        public boolean validateDelete()
+    {
+        boolean ret;
+        //...
+        ret = next validateDelete();
+        //...
+        return ret;
+    }
+
+    public boolean validateWrite()
+    {
+        boolean ret;
+        //...
+        ret = next validateWrite();
+        //...
+        return ret;
+    }
+}
+```
+
 ## Restrictions on wrapper methods
 The following sections describe restrictions on the use of CoC and method wrapping.
-
-### Kernel methods can't be wrapped
-Kernel classes aren't X++ classes. Instead, they are classes that are defined in the kernel of the Microsoft Dynamics 365 Unified Operations platform. Even though extension classes are supported for kernel classes, method wrapping isn't supported for methods of kernel classes. In other words, if you want to wrap a method, the base method must be an X++ method.
 
 ### X++ classes that are compiled by using Platform update 8 or earlier 
 The method wrapping feature requires specific functionality that is emitted by an X++ compiler that is part of Platform update 9 or later. Methods that are compiled by using earlier versions don't have the infrastructure to support this feature.
 
-### Nested class methods in forms can be wrapped in Platform update 16 or later
+### Methods on types nested within forms can be wrapped in Platform update 16 and later
+The ability to wrap methods on types nested within forms (data sources and controls) by using class extensions was added in Platform update 16. This means that Chain of Command can be used to provide overrides for data source methods and form control methods.
+
+However, wrapping (extension) of purely X++ methods on those nested types (form controls and form data sources) is not yet supported like it is on other types (forms, tables, data entities). Currently, if a developer uses Chain of Command on purely X++ methods on types inside forms, then it compiles, but the extension methods are not invoked at runtime. This capability is planned for a future update.
+
+### Unimplemented system methods on tables and data entities can be wrapped in Platform update 22 and later
 The ability to wrap methods in nested classes by using class extensions was added in Platform update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods.
+
+### Next calls can be put inside try/catch/finally in Platform update 21 and later 
+In a CoC extension method, the next call must not be called conditionally. However, in Platform update 21 and later next calls can be placed inside a try/catch/finally to allow for standard handling of exceptions and resource cleanup.
+
+```C#
+    public void someMethod()
+    {
+        try
+        {
+            //...
+            next updateBalances();
+            //...
+        }
+        catch(Exception::Error)
+        {
+            //...
+        }
+    }
+```
+
+### Extensions of extensions are not yet supported
+Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future release.
 
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Dynamics 365 for Finance and Operations Platform update 10.

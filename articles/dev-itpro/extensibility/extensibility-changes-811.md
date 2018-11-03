@@ -37,7 +37,7 @@ ms.dyn365.ops.version: App 8.1.1
 
 [!include [preview-banner](../includes/preview-banner.md)]
 
-This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 8.1. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 8.1.1. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Enumerations made extensible
 

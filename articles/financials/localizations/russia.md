@@ -41,6 +41,11 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Advance reports with budget control](rus-advance-holders-reports-dailyops.md)
 - [Advance holder reports](rus-local-management-reports-primary-forms.md)
 
+## Bank
+
+- [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
+- [Set up and process payment orders](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-payment-order-settings-processing)
+
 ## Russia fixed assets
 
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
@@ -65,9 +70,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Company divisions](rus-company-divisions.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
-- [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up officials](rus-officials.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
-- [Set up and process payment orders](rus-payment-order-settings-processing.md)
 - [Invoices for payment](rus-invoice-payment.md)
