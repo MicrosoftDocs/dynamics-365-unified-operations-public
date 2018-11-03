@@ -66,23 +66,29 @@ Sales and purchase books are legacy documents which must be prepared and stored 
 | **Print > Print additional list** | Click to print sales book additional sheet report |
 
 #### Print sales book
-Choose the Sales book journal line in the **Sales book journals** page and click **Print > Sales book** 
+Choose the Sales book journal line in the **Sales book journals** page and click **Print > Sales book**.
+
 Define the following parameters in the **Sales book to Microsoft office Excel** dialog:
-2.	Review **From date** and **To date** - this is the sales book reporting period
-3.	Enable **Group by factures** to group factures with the same Facture number into one line with total amount.
-4.	Enable **Exclude storno** to exclude both original and storno transactions in specified period from the printing form report
-5.	Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
-6.	Click **OK**
+
+- Review **From date** and **To date** - this is the sales book reporting period
+- Enable **Group by factures** to group factures with the same Facture number into one line with total amount.
+- Enable **Exclude storno** to exclude both original and storno transactions in specified period from the printing form report
+- Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
+
+Click **OK** to print sales book.
 
 #### Print sales book additional sheet
-Choose the Sales book journal line in the **Sales book journals** page and click **Print > Print additional list** 
-Additional sheets for all tax settlement periods which were corrected in the chosen period of sales book will be generated and printed. Currently only corrective and revision factures which decrease VAT amount to be paid to tax authorities in the corrected period are considered for Additional sheet generation. Corrective and revision factures which increase the VAT amount are printed in the Sales book of current period. 
+Choose the Sales book journal line in the **Sales book journals** page and click **Print > Print additional list**.
+
+Additional sheets for all tax settlement periods which were corrected in the chosen period of sales book will be generated and printed.
+
+Currently only corrective and revision factures which decrease VAT amount to be paid to tax authorities in the corrected period are considered for Additional sheet generation. Corrective and revision factures which increase the VAT amount are printed in the Sales book of current period. 
 
 ### Generate and print purchase book
 
 #### Generate purchase book
-1.	Create a new purchase book journal in **Accounts payable > Periodic tasks > Purchase book > Purchase book journal**
-[!NOTE] The **New** button is available only if all books that are listed in the form are closed. The **Code** field is updated automatically, based on the purchase book numbering sequence.
+
+1.	Create a new purchase book journal in **Accounts payable > Periodic tasks > Purchase book > Purchase book journal**. You can create a new book only if all books that are listed in the form are closed.
 2.	In the **Name** field, enter a name for the book.
 3.	Click **Update** to generate lines in the purchase book journal. In the opened dialog **Purchase book** define the following parameters:
 -	Review **From date** and **To date** fields which are determined automatically by the tax settlement period. 
@@ -98,16 +104,20 @@ Additional sheets for all tax settlement periods which were corrected in the cho
 | **Print > Print additional list** | Click to print purchase book additional sheet report |
 
 #### Print purchase book
-Choose the Purchase book journal line in the **Purchase book journals** page and click **Print > Purchase book** 
+Choose the Purchase book journal line in the **Purchase book journals** page and click **Print > Purchase book**.
+
 Define the following parameters in the **Purchase book to Microsoft office Excel** dialog:
-1.	Review **From date** and **To date** - this is the sales book reporting period
-2.	Enable **Group by factures** to group factures with the same Facture number into one line with total amount.
-3.	Enable **Exclude storno** to exclude both original and storno transactions in specified period from the printing form report
-4.	Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
-5.	Click **OK**
+
+- Review **From date** and **To date** - this is the sales book reporting period
+- Enable **Group by factures** to group factures with the same Facture number into one line with total amount.
+- Enable **Exclude storno** to exclude both original and storno transactions in specified period from the printing form report
+- Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
+
+Click **OK** to print purchase book.
 
 #### Print purchase book additional sheet
-Choose the Sales book journal line in the **Sales book journals** page and click **Print > Print additional list** .
+
+Choose the Purhase book journal line in the **Purchase book journals** page and click **Print > Print additional list** .
 Additional sheets for all tax settlement periods which were corrected in the chosen period of purchase book will be generated and printed. Currently only corrective and revision factures which increase VAT amount to be deducted in the corrected period are considered for Additional sheet generation. Corrective and revision factures which decrease the VAT amount to be deducted in the corrected period, are printed in the Purchase book of current period. 
 
 
