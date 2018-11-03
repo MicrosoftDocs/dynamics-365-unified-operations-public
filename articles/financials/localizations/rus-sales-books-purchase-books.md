@@ -172,8 +172,7 @@ VAT debt accrual is generated according to sales book entries. All factures for 
 
 11. In the **To date** field, select the end date of the settlement period for which the sales book is updated.
     
-    > [!NOTE]
-    > <P>When you create the first book, you can set only the end date. The dates cannot be edited for later books. The **From date** and **To date** fields are determined by the tax settlement period.
+    > [!NOTE    > <P>When you create the first book, you can set only the end date. The dates cannot be edited for later books. The **From date** and **To date** fields are determined by the tax settlement period.
 
 12. Select the **Close the book** check box to close the book after the update.
     
