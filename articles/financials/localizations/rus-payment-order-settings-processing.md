@@ -56,7 +56,7 @@ Before you can generate a payment order, you must create payment order lines.
 4. In the **Date** field, select the date of payment.
 5. In the **Account** field, select the vendor account.
 6. In the **Transaction text** field, enter text that describes the transaction.
-7. In the **Debit** field, enter the sum of the payment.
+ 7. In the **Debit** field, enter the sum of the payment.
 8. In the **Currency** field, select the currency code.
 9. In the **Offset account type** field, select the account type for the selected account.
 10. In the **Offset account** field, select the offset account for the transaction.
@@ -111,4 +111,20 @@ You can generate a payment order for a money return to a customer.
 5. In the **Payment documented on** field, select the customer account that should receive the payment return.
 6. On the Action Pane, select **Functions \> Generate payments** to generate a payment order.
 
-You can review generated payment orders for customers on the **Registry of payment orders** page (**Accounts receivable \> Inquiries \> Payment \> Payment order register**).
+You can review generated payment orders for customers on the **Registry of payment orders** page (**Accounts receivable \> Inquiries \> Payment \> Payment order register**). 
+
+
+# Review Registry of payment orders
+
+The registry of payment orders report contains the list of payment orders for bank account in the period and has the following data for each payment order: Number and date, name and bank account number of counteragent, payment purpose, payment amount and currency code, status of payment and a remark whether the payment is electronic.
+
+To run the report, go to **Accounts payable > Inquiries and reports > Payment > Payment order register**.
+In the opened form, click **Print > Registry of payment orders**.
+
+In the opened dialog define the following parameters:
+
+- Define **From date** and **To date**
+- Define filters for payment orders: **Payment order status**, **Curreny code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form)
+
+Click **OK** to generate the report.
+
