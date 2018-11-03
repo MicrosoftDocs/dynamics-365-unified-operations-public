@@ -126,6 +126,10 @@ The additional page contains information about purchase book totals at the end o
     > [!NOTE]
     > If you do not want to create a facture for a particular invoice line, clear the **To facture** check box on the **Invoice lines** tab.
 
+
+
+
+
 16. Click **Posting** \> **Update facture** to post the facture journal.
     
     > [!NOTE]
@@ -185,3 +189,31 @@ VAT debt accrual is generated according to sales book entries. All factures for 
     
     > [!NOTE]
     > In the **Sales books journal** page, click **Lines** to open the **Sales book lines** form to verify the sales book line details.
+    
+    
+    
+    
+    
+# Print issued and received factures journal legacy format
+    
+Facture accounting journal contains list of issued and received invoice-factures related to activities for the benefit of another entity, like agent transactions or commission.
+
+## Set up parameters for factures journal
+
+In **General ledger parameters** page, on **Sales tax** tab, **Tax options** fast tab, fill the following fields:
+
+**Facture operation code delimiter** – delimiter to be used in case several operation types codes are assigned to a single facture
+**FACTURE ACCOUNTNG JOURNAL Format mapping** – Electronic reporting format for facture journal in xml.
+
+## Print a facture accounting journal
+
+1.	Run report through **General ledger > Inquiries and reports > Journal reports > Facture accounting journal**. In the opened dialog **Facture accounting journal** define the following parameters:
+
+2.	Choose reporting period in the **Date interval code** field or define **From date** and **To date**
+3.	In the field **Outgoing** choose the criteria for inclusion of intermediary deals factures into the facture journal: 
+**Date of the registration** - Issued factures journal contains all intermediary deals factures regardless confirmation to principal (intermediary deal information for such factures may be empty); 
+**Confirmation date** - Issued factures journal contains only confirmed intermediary deals factures (intermediary deal information for such factures is filled with received factures from principal)
+4.	Enable **Date of reporting** to Filter factures by reporting date rather than facture date.
+5.	Enable **Create XML file** to create electronic report in legacy format in addition to Excel report.
+6.	Click OK to print facture accounting journals for the selected period.
+
