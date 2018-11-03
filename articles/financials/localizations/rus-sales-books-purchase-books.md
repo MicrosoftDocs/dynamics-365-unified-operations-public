@@ -50,10 +50,9 @@ Sales and purchase books are legacy documents which must be prepared and stored 
 
 #### Generate sales book
 
-1.	Create a new sales book journal in **Accounts receivable > Periodic tasks > Sales book > Sales book journal**
-[!NOTE] The **New** button is available only if all books that are listed in the form are closed. The **Code** field is updated automatically, based on the sales book numbering sequence.
+1.	Create a new sales book journal in **Accounts receivable > Periodic tasks > Sales book > Sales book journal**. You can create a new book only if all books that are listed in the form are closed.
 2.	In the **Name** field, enter a name for the book.
-3.	Click **Functions >Update** to generate lines in the sales book journal. In the opened dialog **Sales book** define the following parameters:
+3.	Click **Functions > Update** to generate lines in the sales book journal. In the opened dialog **Sales book** define the following parameters:
 -	Review **From date** and **To date** fields which are determined automatically by the tax settlement period. 
 -	Enable **Close the book** to close the book after the update. Upon closure, you cannot create new factures in a closed period. 
 -	Click **OK**. The lines of the sales book are generated, and the closing date is saved in the **Closed date** field of the sales book journal.
