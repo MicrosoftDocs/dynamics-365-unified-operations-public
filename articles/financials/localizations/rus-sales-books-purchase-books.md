@@ -52,7 +52,7 @@ Sales and purchase books are legacy documents which must be prepared and stored 
 
 1.	Create a new sales book journal in **Accounts receivable > Periodic tasks > Sales book > Sales book journal**. You can create a new book only if all books that are listed in the form are closed.
 2.	In the **Name** field, enter a name for the book.
-3.	Click **Functions > Update** to generate lines in the sales book journal. In the opened dialog **Sales book** define the following parameters:
+3.	Click **Functions > Update** to generate lines in the sales book journal. In the opened dialog **Sales book** define the following parameters: 
 -	Review **From date** and **To date** fields which are determined automatically by the tax settlement period. 
 -	Enable **Close the book** to close the book after the update. Upon closure, you cannot create new factures in a closed period. 
 -	Click **OK**. The lines of the sales book are generated, and the closing date is saved in the **Closed date** field of the sales book journal.
@@ -117,13 +117,18 @@ Click **OK** to print purchase book.
 
 #### Print purchase book additional sheet
 
-Choose the Purhase book journal line in the **Purchase book journals** page and click **Print > Print additional list** .
-Additional sheets for all tax settlement periods which were corrected in the chosen period of purchase book will be generated and printed. Currently only corrective and revision factures which increase VAT amount to be deducted in the corrected period are considered for Additional sheet generation. Corrective and revision factures which decrease the VAT amount to be deducted in the corrected period, are printed in the Purchase book of current period. 
+Choose the Purhase book journal line in the **Purchase book journals** page and click **Print > Print additional list**.
+
+Additional sheets for all tax settlement periods which were corrected in the chosen period of purchase book will be generated and printed. 
+
+Currently only corrective and revision factures which increase VAT amount to be deducted in the corrected period are considered for Additional sheet generation. Corrective and revision factures which decrease the VAT amount to be deducted in the corrected period, are printed in the Purchase book of current period. 
+
 
 
 ## Print issued and received factures journal
     
 Facture accounting journal contains list of issued and received invoice-factures related to activities for the benefit of another entity, like agent transactions or commission.
+
 
 ### Set up parameters for factures journal
 
@@ -131,6 +136,7 @@ In **General ledger parameters** page, on **Sales tax** tab, **Tax options** fas
 
 - **Facture operation code delimiter** – delimiter to be used in case several operation types codes are assigned to a single facture
 - **FACTURE ACCOUNTNG JOURNAL Format mapping** – Electronic reporting format for facture journal in xml.
+
 
 ### Print a facture accounting journal
 
