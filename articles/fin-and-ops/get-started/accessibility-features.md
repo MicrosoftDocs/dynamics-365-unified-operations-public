@@ -70,9 +70,11 @@ However, you can also run the action more directly. From anywhere on the page, p
 
 In the search box, type words that describe the action. The action is made available to you, and you can run it directly. For example, by typing **email**, **notific** (a partial word), or **log**, you can "jump" to the Email notification log functionality.
 
-!["Email" entered in the search box](media/image4.png "'email' entered in the search box") 
-!["Notific" entered in the search box](media/image5.png "'notific' entered in the search box") 
-!["Log" entered in the search box](media/image6.png "'log' entered in the search box")
+!["Email" entered in the search box](media/image4.png "'email' entered in the Search box") 
+
+!["Notific" entered in the search box](media/image5.png "'notific' entered in the Search box")
+
+!["Log" entered in the search box](media/image6.png "'log' entered in the Search box")
 
 When you've finished, you can press Ctrl+Apostrophe again to return focus to the field that you were working with before you ran the action search.
 
