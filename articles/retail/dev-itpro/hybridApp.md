@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up POS Hybrid app on Android and iOS
-description: This topic shows how to set up set up POS Hybrid app on Android and iOS.
+description: This topic shows how to set up set up the POS Hybrid app on Android and iOS.
 author: mugunthanm 
 manager: AnnBe
 ms.date: 10/29/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Set up POS Hybrid app on Android and iOS
 [!include [banner](../includes/banner.md)]
 
-This topic shows how to set up set up POS Hybrid app on Android and iOS.
+This topic shows how to set up set up the POS Hybrid app on Android and iOS.
 
 ## Set up and install Xamarin on Windows
 
@@ -41,11 +41,11 @@ This topic shows how to set up set up POS Hybrid app on Android and iOS.
 -   Recommended - A physical Windows computer (not a VM) running Windows 8 or later.
 -   You can use a computer with Windows 7 or earlier, in which case you’ll use the Xamarin Player for Android as the emulator.
 
-### Set up 
+### Set up and install
 
 1. Open **Control Panel > Programs and Features**, select  **Visual Studio 2015**. Click **Change**. When the installer opens, click **Modify**.
 
-2. Go to **Cross-Platform Mobile Development > C#/.NET (Xamarin)**. Select **Common Tools and Software Development Kits** so that all of the options are selected. Selecting this option should also update an existing Xamarin installation, if neeeded.
+2. Go to **Cross-Platform Mobile Development > C#/.NET (Xamarin)**. Select **Common Tools and Software Development Kits**, this will automatically select all of the options for Common Tools and Software Development Kits. Selecting this option should also update any existing Xamarin installations, if neeeded.
   
   ![VS Xamarin Android Development Kit](./media/VSInstall.PNG)
   
