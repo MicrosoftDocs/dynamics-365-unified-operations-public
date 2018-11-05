@@ -35,26 +35,40 @@ This topic provides an overview of the Dynamics 365 Payment Connector for Adyen,
 
 ## Key terms
 
-## Related Articles
-
 ## Overview
+This article covers the following sections to assist you to evaluate and setup the Dynamics 365 Payment Connector for Adyen: 
+
+- **[Supported Features and Functionalities](#Supported-Features-and-Functionalities)** – This section describes the set of features and functionalities that the Dynamics 365 Payment Connector for Adyen supports).
+- **[Sign Up with Adyen](#Sign-Up-with-Adyen)** – This section describes how to sign up for a merchant account with Adyen.
+- **[Setup and Configuration](#Setup-and-Configuration)** – This section explains in detail how to setup and configure the Dynamics 365 Payment Connector for Adyen across the POS, Call Center, and E-Commerce channels.
 
 ## Supported Features and Functionalities
 
 ## Sign Up with Adyen
-
-### Terminal Onboard
-- key passphrase
-- key identifier
-- key version
+TODO
 
 ## Setup and Configuration
+> [!NOTE]
+> These instructions assume that you have already signed up for a Merchant Account with Adyen and have access to the Adyen merchant dashboard.
 
-### Pre-Requisites
+### Setup POS Payment Terminal
 
-### POS
+#### Board and Configure Adyen Payment Terminal
+> [!NOTE]
+> These instructions assume that you have access to an Adyen Payment Terminal.
 
-#### POS Hardware Profile
+Navigate to the Adyen [Point of sale](https://docs.adyen.com/developers/point-of-sale) page and follow the instructions to board your specific Adyen terminal. Skip any steps that instruct you to download Adyen specific apps. As part of the onboarding note down the following details for each payment terminal (these are required for the [Configure Payment Terminal IP Address and EFT POS Register Number](#Configure-Payment-Terminal-IP-Address-and-EFT-POS-Register-Number) step below:
+
+- Terminal's IP Address
+- POIID
+
+Once onboarded, navigate to the terminal you would like to configure on the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml) and retrieve the following details for each payment termina (these are required to setup the [EFT Service](#EFT-Service) described below):
+
+- Key identifier
+- Key passphrase
+- Key version
+
+#### Setup Dynammics 365 POS Hardware Profile
 1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > PRO profiles > Hardware profiles**.
 2. Select the hardware profile for which you would like to add the Dynamics 365 Payment Connector for Adyen.
 
@@ -84,28 +98,26 @@ This topic provides an overview of the Dynamics 365 Payment Connector for Adyen,
 ##### PIN pad
 1. Under the **PIN pad** tab set the value for **PIN pad** to `Network` and the value for the **Device name** to `MicrosoftAdyenDeviceV001`.
 
-#### Register
+#### Setup Dynamics 365 Register
 > [!NOTE]
 > These instructions assume that there is a dedicated mapping between a Point of Sale register and an Adyen terminal.
 
-##### Board Adyen terminal
-Navigate to the Adyen [Point of sale](https://docs.adyen.com/developers/point-of-sale) page and follow the instructions to board your specific Adyen terminal. Skip any steps that instruct you to download Adyen specific apps. For each terminal retrieve the following details:
-
-- Terminal's IP Address
-- POIID
-
-##### Configure IP Address
+##### Configure Payment Terminal IP Address and EFT POS Register Number 
 1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > Registers**.
 2. Select the register you would like to link to the Adyen terminal.
-3. In the newly opened POS Registers form, under the **PROFILES** tab **General** section set the **Hardware profile** to the hardware profile configured above.
-4. In the top menu select **REGISTER** and under the **HARDWARE** section click on `Configure IP addresses`.
-5. In the newly opened IP address configuration form, under the **PIN pad** section enter the **IP address** for the terminal following this pattern and the values retrieved above when boarding the Adyen Terminal:
+3. In the newly opened POS Registers form, in the **General** tab under the **EFT** section enter a unique number for the **EFT POS register number**. Note, the number must be exactly 4 digits ling and unique across all POS registers.
+4. In the same POS Registers form, in the **General** tab under the **PROFILES** section set the **Hardware profile** to the hardware profile configured above.
+5. In the top menu select **REGISTER** and under the **HARDWARE** section click on `Configure IP addresses`.
+6. In the newly opened IP address configuration form, under the **PIN pad** section enter the **IP address** for the terminal following this pattern and the values retrieved above when boarding the Adyen Terminal:
   - `https://<IP address>:8443/nexo/<POIID>` (e.g. `https://192.168.1.3:8443/nexo/MX925-123456789`).
 
 ### Call Center
 
 ### E-Commerce
 
-## Troubleshooting
+## Troubleshooting Steps
 
 ## Common Issues
+
+## Related Articles
+- **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
