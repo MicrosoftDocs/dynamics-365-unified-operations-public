@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 12/14/2017
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -208,10 +208,10 @@ The deployment process determines if there are any modification to the database 
 Channel Database extensions are provided by authoring one or more T-SQL script files and including them in a [deployable package](./retail-sdk/retail-sdk-packaging.md). This process is described in the [Retail SDK](./retail-sdk/retail-sdk-overview.md) documentation.
 
 Extension script files must be written using [T-SQL](https://docs.microsoft.com/en-us/sql/t-sql/language-reference) and compatible with [Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-features).
-The script files must end with the *.sql* file extension, any other files will be ignored or may induce a packaging or deployment failure. If you intend to deploy your Channel Database extensions as part of Retail Store Scale Unit or Modern Pos Offline,
+The script files must end with the *.sql* file extension, any other files will be ignored or may induce a packaging or deployment failure. If you intend to deploy your Channel Database extensions as part of Retail Store Scale Unit or Modern POS offline,
 the scripts must also be compatible with the version of SQL Express and/or SQL Server that will be used for those components.
 
-During deployment and installation, the extension scripts are executed, in alphabetical order based on the script file name.
+During deployment and installation, the extension scripts are executed in alphabetical order based on the script file name.
 Each script is run to completion and then a metadata record is added to the Channel Database's CRT.RETAILUPGRADEHISTORY table to track the completion of that extension script.
 The script will not be executed again for the same Channel Database in subsequent deployments if that metadata record is present.
 If a script fails during execution and does not complete successfully, its metadata will not be stored and the script will be rerun on subsequent deployments.
@@ -220,29 +220,28 @@ If the deployment or installation is combined with an update of the product, the
 
 To author a successful Channel Database extension, you must adhere to the following guidelines.
 
-### Use a naming convention that guarantees stable order when sorted alphabetically
+### Use a naming convention that ensures stable order when sorted alphabetically
 
-Since extension scripts are executed in alphabetical order, based on the file name, you should establish a naming convention that guarantees the right execution order you desire when sorted.
+Because extension scripts are executed in alphabetical order based on the file name, you should establish a naming convention that ensures that the correct execution order is used when sorted.
 
-One example would be naming files with the following pattern: "<ISO 8601 date>_<descriptio>.sql", where **<ISO 8601 date>** is a ISO 8601 formated date and **<description>** is a descriptive text to identify the purpose of the script.
+One example would be naming files with the following pattern: "<ISO 8601 date>_<descriptio>.sql", where **<ISO 8601 date>** is a ISO 8601 formatted date and **<description>** is descriptive text to identify the purpose of the script.
 For instance, *"20180501_CustomerDetails.sql"* and *"20181102_CustomerDetailsIndex.sql"*.
-The former would represent an extension script authored on May 1st of 2018 that is related to "Customer Details" feature and the latter an extension script associated to indexes related to the previous feature authored on November 2nd of 2018.
+The former would represent an extension script authored on May 1, 2018 that is related to "Customer Details" feature and the latter an extension script associated to indexes related to the previous feature authored on November 2, 2018.
 
-Another simpler alternative is to use a incremental numeric prefix, like: "0001_CustomerDetails.sql" and "0002_CustomerDetailsIndex.sql".
+Another simpler alternative is to use an incremental numeric prefix, such as "0001_CustomerDetails.sql" and "0002_CustomerDetailsIndex.sql".
 
-If one script depends on another having executed successfully previously, you must name then in a way that guarantees that their file name alphabetical order matches the execution order desired.
+If one script depends on another having executed successfully, you must name then in a way that ensures that the file name in alphabetical order matches the required execution order.
 
 ### Do not alter extension scripts that have been published
 
 If you have released a deployable package or installer extension that contains Channel Database extension scripts, do not alter those scripts. Extension scripts are run only once per Channel Database instance.
 If you alter published scripts and those scripts may have already been run against a Channel Database, the modifications to an already executed script will not be applied to the database.
 
-Instead, provide the modifications in a new script file. Consider the naming convention discussion above to guarantee that it runs after its dependencies.
+Instead, provide the modifications in a new script file. Consider the naming convention noted above to ensure that it runs after its dependencies.
 
 ### Do not remove old extension scripts that have been published
 
-That is to say, your deployable package or installer extension must represent a cummulative update for your database extensions. There should be no dependencies on previous versions of a extension package or installer.
-A customer should be able to apply your extension package or installer without depending on a previous version of your package or extension.
+Your deployable package or installer extension must represent a cumulative update for your database extensions. There should be no dependencies on previous versions of an extension package or installer. A customer should be able to apply your extension package or installer without depending on a previous version of your package or extension.
 
 If your extension scripts have been published as part of a deployable package or installer extension, do not remove them from subsequent updates in your package or installer. To account for disaster recovery, upgrade and scale out scenarios, extension packages may be
 used to bring a new instance of the Channel Database to the same version of the last deployed extension package.
