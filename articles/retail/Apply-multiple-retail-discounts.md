@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 
 
 ## Overview
-This topic reviews all the factors considered when multiple discounts can be applied to a product. In this situation, the retail pricing engine applies as many discounts as it can, to maximize the total discount amount on a product. Multiple options affect the order in which the discounts are applied. Throughout this topic it’s noted when a setting affects the order of discount application and exclusivity of a discount. Here are the settings that affect how multiple discounts, applicable on a product, are processed.
+This topic reviews all the factors considered when multiple discounts can be applied to a product. In this scenario, the retail pricing engine applies as many discounts as it can, to maximize the total discount amount on a product. Multiple options affect the order in which the discounts are applied. Throughout this topic it’s noted when a setting affects the order of discount application and exclusivity of a discount. The following settings affect how multiple discounts, applicable on a product, are processed.
 
 - **Discount concurrency control model**
 - **Pricing Priority**
@@ -302,7 +302,7 @@ there are none for prod3 at priority 5.
 
 | **Transaction quantity** | **Product** | **Price** | **Priority 10** (**C1**) | **Priority 10** (**C2**) | **Priority 10** (**BP1**) | **Total** | **Explanation** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Prod1 | $10 | $1 | $1 | $1.50\*\* | $10 - 1.50 = $8.50 | Because the compound discounts are treated as the "Best price" for discounts for this discount concurrency control model, sthe compound discounts will not combine. Rather they all compete for the best discount. Because BP1 gives the highest discount, BP1 gets applied at priority 10. |
+| 1 | Prod1 | $10 | $1 | $1 | $1.50\*\* | $10 - 1.50 = $8.50 | Because the compound discounts are treated as the "Best price" for discounts for this discount concurrency control model, the compound discounts will not combine. Rather they all compete for the best discount. Because BP1 gives the highest discount, BP1 gets applied at priority 10. |
 | 1 | Prod2 | $20 | $1 | $2 | $3\*\* | $20 - 3 = $17.00 | Same as above. Because BP1 gives the highest discount, BP1 gets applied at priority 10.   |
 | 1 | Prod3 | $10 |   |   |   | $10 | No discounts applicable at priority 10. |
 
