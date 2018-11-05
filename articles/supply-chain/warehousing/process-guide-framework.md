@@ -96,7 +96,7 @@ Looking at the control flow, we inferred the need for a few components:
 
 Once done, we realized the need for another change. In the flow above, if we look closely at step 1, we start by processing the data from the previous step, and end with building a UI, whose data would be processed in the next step. This introduces a tight coupling between consecutive steps, which we would need to break. With this in mind, our new high-level schematic would look like below:
 
-![Image of high-level schematic process]()
+![Image of high-level schematic process](media/high-level-schematic.png)
 
 With these concepts explained, now let us start taking a closer look at the actual design. Following are the key players in the redesigned process:
 
@@ -136,7 +136,7 @@ would return with a ProcessGuidePage object, which is a virtual representation o
 
 The sequence diagram below explains this control flow. Please note, though, that this is the most common control flow, simplified for explaining the design.
 
-![](media/2dc98c4b707c30333185909512dddab9.png)
+![Control flow simplified](media/control-flow.png)
 
 When the user takes an action on the mobile device by clicking a button (or scanning a value – which typically triggers the default action) – the request arrives at the createResponse() method in the ProcessGuideController class through the same route. This time, however, the controller knows from the session state information which step the user is in. Accordingly, it instantiates the appropriate ProcessGuideStep class and invokes the execute method. The ProcessGuideStep, in turn, reads the action name invoked by the user and then instantiates the appropriate ProcessGuideAction class and calls
 execute().
@@ -146,15 +146,11 @@ The ProcessGuideAction class is deemed responsible for executing the specific ac
 The first one is the ProcessGuideOKAction class. This action implies the user wants to confirm and move forward in the process. In accordance to that – this method actually does a callback to the ProcessGuideStep class. Therein – the step invokes processData() in ProcessGuideDataProcessor, to process the data that the user has entered, and then updates the state of the step and sends the
 result back to the controller. Depending on the outcome of the processor, the step invokes the page builder to build the appropriate user interface or sets the status of the step as completed. This is reflected in the top half of the sequence diagram below.
 
-![sequence diagram]()
-
 The other exception is the cancellation action, implemented in the ProcessGuideCancelResetProcessAction and ProcessGuideCancelExitProcessAction classes. These actions represent an intent to cancel the process and go back to either the start of the process or exit the process altogether. Similar to the OK action, these actions also perform a callback to the step, which signals the intent to the ProcessGuideController. The controller then performs the necessary cleanup of state variables and either moves control to the initial step in the process or terminates the process altogether.
-
-
 
 Once the execution of the step is done, if the status of the step is set to Completed, then the controller instantiates the ProcessGuideNavigationAgent, which returns the name of the next step. The controller then instantiates this step and invokes the execute() method – and the cycle continues. Most commonly, the new step would invoke the corresponding ProcessGuidePageBuilder to build the user interface for the next screen to be presented to the user, which is then sent back. This flow is depicted in the lower half of the sequence diagram below.
 
-![](media/d40ca4129ac35076c2b0833c79ea85dd.png)
+![sequence diagram](media/sequence-diagram.png)
 
 Building a new process using the ProcessGuide framework
 =======================================================
@@ -166,15 +162,12 @@ Overview of the production start process
 
 Let’s start by understanding the process flow. In the first step, the user is prompted for production order Id.
 
-![](media/c2072d03792bdb0b3df76fc625e0efce.png)
+![Prompt for production ID](media/production-id-prompt.png)
 
 Once the user enters the production order id, the order number is validated. Some of the validations that are the run are whether the order is in the same warehouse as the user is logged in to, and the status of the order. If the validation fails, the user is shown an error message. If the validation succeeds, then the user is shown details of the production order and item.
 
-![](media/ad89ed675896784288d6253888e7e1df.png)
-
 The user can either cancel from here to go back to the start of the process or hit OK to confirm. In the latter case, the production order is set to Started status, the corresponding journals are posted, and the control moves back to the first step, and the “Work Completed” message is shown to the user.
 
-![](media/f3275f24867d5f4934b97a6721e38354.png)
 
 Creating the controller
 -----------------------
@@ -182,7 +175,8 @@ Creating the controller
 The first step in building the business process is creating the controller class, extending from ProcessGuideController abstract class which implements the default behaviors of a controller. We name our new class as ProdProcessGuideProductionStartController and decorate it with the WHSWorkExecuteMode value of StartProdOrder. We use the same SysExtension based instantiation as was used in the WHSWorkExecuteDisplay classes; thus, this attribute helps instantiating the controller when the user executes a menu item
 for this mode.
 
-![](media/2b5733622a707e10ba6c528cd253642f.png)
+``[WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
+public class ProdProcessGuideProductionStartController extends ProcessGuideController``
 
 > [!NOTE]
 > The naming pattern of the class - we use the convention \<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller. This is the pattern we intend to use for the controller classes going forward, and extend to other classes as well, as you will see below.
@@ -197,11 +191,14 @@ The task of instantiating the class is delegated to a step factory, which is inv
 
 -   Decorate the ProdProcessGuidePromptProductionIdStep class with a ProcessGuideStepName attribute, like this
 
-    ![](media/93063c6b6ec1616ede26b7fa7893cdf2.png)
+    ``[ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep``
 
 -   In the controller class, implement the abstract method initialStepName() to return the step name.
 
-    ![](media/445fbb26ce3041c32fc1d35f281edda8.png)
+    ``protected final ProcessGuideStepName initialStepName()
+    {
+        return classStr(ProdProcessGuidePromptProductionIdStep);
+     }``   
     
 > [!NOTE]
 > that it is not a requirement that the value we put in the ProcessGuideStepName attribute need to exactly match the class name as shown
@@ -223,11 +220,14 @@ The instantiation mechanism of the class is very similar to how the step was ins
 
 -   Decorate the ProdProcessGuidePromptProductionIdPageBuilder class with a ProcessGuidePageBuilderName attribute, like this
 
-![](media/29ad0dc1908cb94798fd822a3312b546.png)
+``[ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))] public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder``
 
 -   In the ProdProcessGuidePromptProductionIdStep class, implement the abstract method pageBuilderName() to return this name
 
-    ![](media/7ad3dd333e55adb3105ee1d87e7a8451.png)
+    ``protected final ProcessGuidePageBuilderName pageBuilderName()
+    {
+        return classStr(ProdProcessGuidePromptProductionIdPageBuilder);
+     }``    
 
 > [!TIP]
 > Similar to the step factory, we also have an abstract factory pattern implement for the page builder factory. So, in the very rare case you want a different strategy for instantiating the page builder, you can do the following:
@@ -242,11 +242,19 @@ To implement this, we override 2 methods in the ProdProcessGuidePromptProduction
 
 -   addDataControls() method, to add the textbox
 
-    ![](media/2091a182e8d11cf6609f848cb7ea94c4.png)
+    ``protected final void addDataControls(ProcessGuidePage _page)
+    {
+        _page.addTextBox(ProcessGuideDataTypeNames::ProdId, "@SYS4398", extendedTypeNum(ProdId));
+     }``   
 
 -   addActionControls() method, to add the OK and cancel buttons
 
-    ![](media/a3b66a9edcff4fe7f42e236cd6bc8c82.png)
+    ``protected final void addActionControls(ProcessGuidePage _page)
+    {
+        #ProcessGuideActionNames
+        _page.addButton(step.createAction(#ActionOK), true);
+        _page.addButton(step.createAction(#ActionCancelExitProcess));
+     }``   
 
 We will skip explaining the step.createAction() for now – it is enough to know that the above 2 lines add the buttons. We will get back to createAction() later.
 
@@ -265,7 +273,13 @@ The processing of the data is done in the ProcessGuideDataProcessorDefault class
 
 Finally, once the validation succeeds, it is time to mark the step as completed. That is done in the base class, however, we need to implement the condition to determine the step completion. The following overridden method does that:
 
-![](media/52928b54f65ae85ba6383df466b1a84c.png)
+``protected final boolean isComplete()
+{
+    WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+    ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
+    
+    return (prodId != '');
+ }``   
 
 Step two: view order details and confirm
 ----------------------------------------
@@ -274,7 +288,14 @@ In the second step in the process, the user is shown a screen with details about
 
 The ProdProcessGuideConfirmProductionOrderStep class looks as below – no surprises here, the code is quite self-explanatory.
 
-![](media/5a99dc1a63d6757ac1bfc6117d44eaab.png)
+``[ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
+public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
+{
+    protected final ProcessGuidePageBuilderName pageBuilderName()
+    {
+        return classStr(ProdProcessGuideConfirmProductionOrderPageBuilder);
+     }
+ }``     
 
 Since the user does not enter any values here, we do not need to override the isComplete() method – the step is deemed complete when the user clicks the OK button.
 
@@ -282,7 +303,7 @@ The page builder class, unsurprisingly, overrides the addDataControls() method t
 
 The addActionControls() is then overridden to add 2 buttons – the OK button, and the button to Cancel the process and go back to the start of the process.
 
-![](media/43407fc2dd7f5944d4d38ec4f9391d08.png)
+![Process guide page builder code](media/process-builder-page-code.png)
 
 Step three: start the production order
 --------------------------------------
