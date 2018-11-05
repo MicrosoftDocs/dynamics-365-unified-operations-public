@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,8 +57,28 @@ For information about the bug fixes included in each of the updates that are par
 Some of the most typical changes that a user makes to a grid are adding, removing, resizing, and reordering
 columns. In this update, we’ve made adding and removing columns easier by promoting the **Add columns** and **Hide this column** actions directly into the grid column header context menus. 
 
+## Improved behavior of non-replacing lookups
+Some lookups in Finance and Operations are *non-replacing*, meaning that when a value is selected from the lookup, it doesn’t replace what was already in the field, but instead it appends the selected value into the field. As an example, the lookups in the **Advanced filter/sort** dialog box are non-replacing by default.  
+
+The behavior of non-replacing lookups has been improved in the following ways: 
+
+- Type-ahead behavior has been turned off for non-replacing lookups. 
+
+- Only characters typed after the lookup has been opened are used to position in the lookup grid.
+
+- The selected value from the lookup is appended to what was in the field before the lookup was opened (that is, any characters typed while the lookup was open are replaced when appending the selected value from the lookup).  
+
+- A new icon now appears on non-replacing lookups to visually differentiate them from regular lookups.
+
+These adjustments make it easier for users to filter data using the **Advanced filter/sort** dialog box.
+
+## Suppressing hyperlinks 
+Developers are able to suppress hyperlinks on form controls by setting the **EnableFormRef** property to **No**. This property can be set on both forms and form extensions. When a hyperlink is suppressed, the corresponding **View details** option in the right-click context menu is also suppressed. 
+ 
+Currently when users click on some hyperlinks, it results in an attempted navigation and then an error message, as there is no target form to open. Suppressing hyperlinks in these scenarios will improve the user experience by removing these confusing hyperlinks.  
+
 ## Chain of Command on nested types 
-In this release, we’ve enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Nested class methods in forms can be wrapped in Platform update 16 or later](../../dev-itpro/extensibility/method-wrapping-coc.md#nested-class-methods-in-forms-can-be-wrapped-in-platform-update-16-or-later).
+In this release, we’ve enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Nested class methods in forms can be wrapped in Platform update 16 or later](../../dev-itpro/extensibility/method-wrapping-coc.md#methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-and-later). Methods on types nested within forms can be wrapped in Platform update 16 or later
 
 ## Change form patterns to custom using form extensions
 With this update, you can change a form's pattern to custom by using a form extension. This allows for more
@@ -164,7 +184,15 @@ If the **Personalization** toolbar is open, the page is still read-only but is n
 
 For more information about personalization, see [Personalize the user experience](personalize-user-experience.md).
 
-## Updates to the Performance software development kit
-As of Platform update 20, you don’t need to create certificates or sign in to your test environment using Remote
-Desktop to configure the Performance software development kit (Perf SDK). The new Perf SDK uses the Azure Active
-Directory (AAD) application to authenticate test users.
+## Batch manager security role
+Before Platform update 20, users needed to be assigned to the system admin or IT admin security role to manage batch jobs. With the release of Platform update 20 there is a more targeted role, Batch manager. With this security role, a user now has permission to copy batch jobs, change who will execute jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege is part of the Batch manager security role, this allows a user to create an ad hoc batch job and grant privileges to other users.
+
+For more information, see [Batch manager role](../../dev-itpro/sysadmin/runby.md).
+
+## Copy batch job
+
+ You can now create a copy of the same batch jobs for different legal entities, and then you can use the copy batch job functionality to copy an existing batch job and the batch tasks, including recurrences.
+
+You can simultaneously set the description, company, schedule start date and time, recurrence, and the run by account. When you copy the batch job, any alerts and dependencies from the source job will also be copied.
+
+For more information, see [Copy batch job](../../dev-itpro/sysadmin/copy-batch-job.md).

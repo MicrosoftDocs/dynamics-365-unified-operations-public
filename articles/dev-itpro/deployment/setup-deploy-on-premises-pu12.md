@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments (Platform update 12)
-description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
+title: Set up and deploy on-premises environments (Platform update 12 and later)
+description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations with Platform update 12 and later.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Set up and deploy on-premises environments (Platform update 12)
+# Set up and deploy on-premises environments (Platform update 12 and later)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform update 12. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md). 
+This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations (on-premises) with Platform update 12 and later.
 
 > [!IMPORTANT]
-> This topic applies only to deploying on-premises environments on Platform update 12. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
+> This topic applies only to deploying on-premises environments on Platform update 12 and later. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
 
@@ -435,6 +435,14 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
+> [!IMPORTANT]
+> Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
+> Ensure the installer files are named as defined in NodeTopologyDefinition.xml.
+> msodbcsql.ms
+> SSMS-Setup-*.exe
+> vcredist_x64.exe
+> AccessDatabaseEngine_x64.exe
+
 #### Follow these steps for each VM, or use remoting from a single machine
 
 > [!NOTE]
@@ -569,7 +577,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    4. Check **Encrypt data access**.
    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
    6. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
-    
+
       >[!NOTE]
       > You may need to enable **Computers** under **Object Types** to add machines or enable **Service Accounts** under **Object Types** to add service accounts.
 
@@ -578,6 +586,36 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (contoso\\svc-LocalAgent$).
+
+    ```PowerShell
+    # Specify user names
+    $AOSDomainUser = 'Contoso\AXServiceUser';
+    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
+
+    # Specify the path
+    $AosStorageFolderPath = 'D:\aos-storage';
+    $AgentFolderPath = 'D:\agent';
+
+    # Create new directory
+    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
+    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
+
+    # Create new SMB share
+    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
+    New-SmbShare –Name agent -Path $AgentFolderPath
+
+    # Set ACL for AOS storage folder
+    $Acl = Get-Acl $AosStorageFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AosStorageFolder.FullName $Acl;
+
+    # Set ACL for AgentFolder
+    $Acl = Get-Acl $AgentFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AgentFolder.FullName $Acl;
+    ```
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
@@ -802,16 +840,16 @@ Finance and Operations requires additional configuration beyond the default out-
 
 1. Configure the AD FS identifier so that it matches the AD FS token issuer.
 
-  This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance and Operations client.
+   This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance and Operations client.
 
-    ```powershell
+    ```PowerShell
     $adfsProperties = Get-AdfsProperties
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-  This command is related to using forms authentication upon signing into the Finance and Operations client. Other options, such as single sign-on, may be available which require additional setup.
+   This command is related to using forms authentication upon signing into the Finance and Operations client. Other options, such as single sign-on, may be available which require additional setup.
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
@@ -819,7 +857,7 @@ Finance and Operations requires additional configuration beyond the default out-
 
 3. For sign-in, the user's email address must be an acceptable authentication input.
 
-  This command is related to setting up email claims. Other options, such as transformation rules, may be available which require additional setup.
+   This command is related to setting up email claims. Other options, such as transformation rules, may be available which require additional setup.
 
     ```powershell
     Add-Type -AssemblyName System.Net

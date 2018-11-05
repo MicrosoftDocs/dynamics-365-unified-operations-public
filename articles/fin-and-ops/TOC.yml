@@ -48,6 +48,10 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Platform update 22 (November 2018)
+        href: get-started/whats-new-platform-update-22.md
+      - name: Finance and Operations version 8.1.2 (November 2018)
+        href: get-started/whats-new-changed-8-1-2.md
       - name: Finance and Operations version 8.1.1 (October 2018)
         href: get-started/whats-new-changed-8-1-1.md 
       - name: Finance and Operations version 8.1 (October 2018)
@@ -306,7 +310,7 @@
       href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
     - name: Data integration APIs
       items:
-      - name: Data management package API
+      - name: Data management package REST API
         href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
       - name: Service endpoints
         href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -315,10 +319,12 @@
           href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
       - name: OData
         href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-      - name: Custom services
+      - name: Custom service development
         href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
       - name: Recurring integrations
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+      - name: Test services using third-party utilities
+        href: ../dev-itpro/data-entities/third-party-service-test.md
     - name: Development for integration
       items:
       - name: Data integration using data entities
@@ -330,9 +336,9 @@
           href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
         - name: Configure financial cross-company data sharing
           href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-        - name: Create a record template to facilitate data entry
+        - name: Create record templates to facilitate data entry
           href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-        - name: Use a record template to create a new record
+        - name: Create records using record templates
           href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
       - name: Data integration using the Common Data Service
         href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
@@ -389,6 +395,8 @@
       - name: Copy configuration data between companies or legal entities
         href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
         items:
+        - name: Configuration data packages
+          href: ../dev-itpro/data-entities/configuration-data-packages.md
         - name: Configuration data packages (July 2017 release only)
           href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
       - name: Configuration data templates
@@ -397,6 +405,10 @@
         href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
       - name: Find information about standard data entities
         href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+      - name: Data templates with multiple worksheets
+        href: ../dev-itpro/data-entities/excel-template-multiple.md
+      - name: Enable change tracking for entities
+        href: ../dev-itpro/data-entities/entity-change-track.md 
       - name: Configuration keys and data entities
         href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
       - name: Configuration data packages
@@ -408,6 +420,8 @@
         href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
     - name: Development for data entities
       items:
+      - name: Design principles and best practices for data entities
+        href: ../dev-itpro/dev-tools/design-best-practices.md
       - name: Create new data entities
         href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Data entity properties
@@ -430,12 +444,16 @@
         href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Use third-party service testing utilities
         href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+      - name: Create read-only entities that expose financial dimensions
+        href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Data task automation
       href: ../dev-itpro/data-entities/data-task-automation.md
-    - name: Data validation workspace
+    - name: Data validation checklist workspace
       href: ../dev-itpro/user-interface/data-validation-workspace.md
+    - name: Data management error descriptions
+      href: ../dev-itpro/data-entities/dm-error-descriptions.md  
   - name: Financial management
     href: ../financials/index.md
     items:
@@ -1012,7 +1030,9 @@
         - name: Fiscal calendars, fiscal years, and periods
           href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
         - name: Configure account structures
-          href: ../financials/general-ledger/configure-account-structures.md        
+          href: ../financials/general-ledger/configure-account-structures.md
+        - name: Dual currency
+          href: ../financials/general-ledger/dual-currency.md
       - name: Journals and ledgers
         items:
         - name: General journal processing
@@ -1055,6 +1075,8 @@
           href: ../financials/general-ledger/import-currency-exchange-rates.md
         - name: One voucher
           href: ../financials/general-ledger/one-voucher.md
+        - name: Ledger settlements
+          href: ../financials/general-ledger/ledger-settlements.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -1804,7 +1826,11 @@
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
-          items:
+          items:     
+          - name: Import configuration
+            href: ../financials/general-ledger/tax-engine-import-configuration.md
+          - name: Tax engine applicability
+            href: ../financials/general-ledger/tax-engine-applicability.md
           - name: Tax engine integration
             href: ../financials/general-ledger/tax-engine-integration.md
           - name: Extending the Tax engine
@@ -2106,6 +2132,8 @@
       - name: Poland
         href: ../financials/localizations/poland.md
         items:
+        - name: Activate storno accounting
+          href: ../financials/localizations/emea-pol-red-storno.md
         - name: Calculate line discounts from the unit price
           href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
         - name: Correction notes
@@ -2122,6 +2150,8 @@
           href: ../financials/localizations/emea-pol-returnable-packages.md
         - name: Sales tax reports
           href: ../financials/localizations/emea-pol-sales-tax-reports.md
+        - name: Set up number sequences by warehouse
+          href: ../financials/localizations/emea-pol-number-sequence-warehouses.md          
         - name: Standard audit file
           href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
         - name: Tax interest and free-hand interest
@@ -2137,33 +2167,61 @@
           - name: Create an advance holder
             href: ../financials/localizations/emea-advance-holders.md#create-an-advance-holder
           - name: Daily operations for advance holders
-            href: ../financials/localizations/rus-advance-holders-daily-operations.md            
+            href: ../financials/localizations/rus-advance-holders-daily-operations.md
+          - name: Advance reports with budget control
+            href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+          - name: Revaluate foreign currency for advance holders
+            href: ../financials/localizations/rus-advance-adjustment-parameters.md
+          - name: Advance holder reports
+            href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+        - name: Bank
+          items: 
+          - name: Set up bank accounts
+            href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
+          - name: Set up and process payment orders
+            href: ../financials/localizations/rus-payment-order-settings-processing.md 
         - name: Fixed assets
           items: 
           - name: Acquiring fixed assets and putting them into operation
             href: ../financials/localizations/rus-fixed-asset-acquisition.md
+          - name: Register fixed assets acquisitions
+            href: ../financials/localizations/rus-register-acquisition.md
           - name: Create and post budget journals for fixed asset acquisitions
             href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
           - name: Fixed asset counting
             href: ../financials/localizations/rus-fixed-assets-counting.md
           - name: Fixed assets currency revaluation
             href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+          - name: Revaluate fixed asset cost and depreciation
+            href: ../financials/localizations/rus-fixed-assets-revaluation.md            
           - name: Partial fixed asset disassembly (liquidation)
             href: ../financials/localizations/rus-fixed-assets-disassembly.md
-        - name: Set up and process payment orders
-          href: ../financials/localizations/rus-payment-order-settings-processing.md                
+          - name: Sell, dispose, and write-off assets
+            href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+          - name: Set up fixed asset locations and numbering
+            href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+          - name: Set up depreciation 
+            href: ../financials/localizations/rus-depreciation-setup.md
+          - name: Depreciation methods
+            href: ../financials/localizations/rus-depreciation-methods.md
+          - name: Depreciation bonuses
+            href: ../financials/localizations/rus-bonus-depreciation.md
+          - name: Calculate depreciation
+            href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Company divisions
+          href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
           href: ../financials/localizations/rus-exchange-difference.md
         - name: Preview ledger transactions
           href: ../financials/localizations/rus-ledger-transactions-preview.md
         - name: Set up officials
           href: ../financials/localizations/rus-officials.md
-        - name: Set up bank accounts
-          href: ../financials/localizations/rus-local-settings-requisites-bank-module.md   
         - name: Value-added tax (VAT) for tax agents
           href: ../financials/localizations/rus-tax-agent.md
         - name: Set up dimension control for settlements
           href: ../financials/localizations/rus-transactions-settlement-date.md
+        - name: Invoices for payment
+          href: ../financials/localizations/rus-invoice-payment.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:

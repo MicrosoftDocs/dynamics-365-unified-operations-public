@@ -34,6 +34,7 @@ ms.dyn365.ops.version: 8.0.2
 
 [!include [banner](../includes/banner.md)]
 
+
 ## What is One voucher?
 
 The existing functionality for financial journals (the general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions (customer, vendor, fixed assets, project, and bank) in the context of a single voucher. Microsoft refers to this functionality as *One voucher*. You can create a single voucher by using one of the following methods:
@@ -87,102 +88,100 @@ Based on conversations with customers, Microsoft has compiled the following list
 
 The following scenarios can be accomplished only by using the One voucher functionality. If your organization has any of these scenarios, you must enable multiple transactions to be entered in a voucher by changing the setting of the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page. These functional gaps will be filled through other features in later releases.
 
-- **Posting vendor or customer payments in summary form to a bank account**
+### Post vendor or customer payments in summary form to a bank account
 
-    - An organization communicates a list of vendors and amounts to its bank, and the bank uses this list to pay the vendors on the organization's behalf. The bank posts the sum of the payments as a single withdrawal on the bank account.
+**Scenario** An organization communicates a list of vendors and amounts to its bank, and the bank uses this list to pay the vendors on the organization's behalf. The bank posts the sum of the payments as a single withdrawal on the bank account.
 
-        Summarization of vendor payments is supported only through One voucher. Each vendor is entered as a separate line to maintain details in the Accounts payable subledger. However, the summarized amount for all the payments is offset to a single line for the bank account. Therefore, the withdrawal is shown as a single summarized amount in the bank subledger.
+Summarization of vendor payments is supported only through One voucher. Each vendor is entered as a separate line to maintain details in the Accounts payable subledger. However, the summarized amount for all the payments is offset to a single line for the bank account. Therefore, the withdrawal is shown as a single summarized amount in the bank subledger.
 
-    - An organization deposits customer payments, or the bank deposits customer payments on the organization's behalf, and the deposit is shown as a lump sum on the bank account.
+**Scenario** An organization deposits customer payments, or the bank deposits customer payments on the organization's behalf, and the deposit is shown as a lump sum on the bank account.
 
-        Summarization of customer payments is typically supported through the deposit functionality. However, if you're using "bridging" on the method of payment, this scenario is supported only through One voucher. The customer payments are entered in the same manner that is described for vendor payment summarization.
+Summarization of customer payments is typically supported through the deposit functionality. However, if you're using "bridging" on the method of payment, this scenario is supported only through One voucher. The customer payments are entered in the same manner that is described for vendor payment summarization.
 
-- **Mechanism to group transactions from a business event**
+### Mechanism to group transactions from a business event
 
-    An organization has a single business event that triggers multiple transactions. However, the Accounting department wants to view the accounting entries together for better auditability.
+**Scenario** An organization has a single business event that triggers multiple transactions. However, the Accounting department wants to view the accounting entries together for better auditability.
 
-    If an organization must view the accounting entries from a business event together, it must use One voucher.
+If an organization must view the accounting entries from a business event together, it must use One voucher. 
 
-- **Country/region-specific features**
+### Country-specific features
 
-    The Single Administrative Document (SAD) feature for Poland currently requires that a single voucher be used. Until a grouping option is available for this feature, you must continue to use One voucher.
-    
-    Other country/region-specific features might also require the One voucher functionality.
+**Scenario** The Single Administrative Document (SAD) feature for Poland currently requires that a single voucher be used. Until a grouping option is available for this feature, you must continue to use the One voucher functionality. There may be additional country-specific features that require the One voucher functionality.
 
-- **Customer prepayment payment journal that has taxes on multiple "lines"**
+### Customer prepayment payment journal that has taxes on multiple "lines"
 
-    A customer makes a prepayment for an order, and the lines of the order have different taxes that must be recorded for the prepayment. The prepayment customer payment is one transaction that simulates the lines of the order, so that the appropriate tax can be recorded for the amount on each line.
+In this scenario, the customers in the single voucher are the same customer, because the transaction simulates the lines of a customer order. The prepayment must be entered in a single voucher, because the tax calculation must be made on the "lines" of the single payment that the customer made.
 
-    In this scenario, the customers in the single voucher are the same customer, because the transaction simulates the lines of a customer order. The prepayment must be entered in a single voucher, because the tax calculation must be made on the "lines" of the single payment that the customer made.
+### Customer reimbursement
 
-- **Fixed asset maintenance: Catch-up depreciation, split assets, and calculation of depreciation on disposal**
+**Scenario** A customer makes a prepayment for an order, and the lines of the order have different taxes that must be recorded for the prepayment. The prepayment customer payment is one transaction that simulates the lines of the order, so that the appropriate tax can be recorded for the amount on each line.
 
-    The following fixed asset transactions also create multiple transactions in a single voucher:
+If the Reimbursement periodic task is run from the Accounts receivable module, it creates a transaction to move the balance from a customer to a vendor. For this scenario, One voucher must be used to reimburse the customer.
 
-    - An additional acquisition is made on an asset, and "catch-up" depreciation is calculated.
-    - An asset is split.
-    - A parameter to calculate depreciation on disposal is turned on, and then the asset is disposed of.
-    - An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
+### Fixed asset maintenance: Catch-up depreciation, split asset, calculate depreciation on disposal
+The following fixed asset transactions also create multiple transactions in a single voucher:
 
-- **Customer reimbursement**
+- An additional acquisition is made on an asset, and "catch-up" depreciation is calculated.
+- An asset is split.
+- A parameter to calculate depreciation on disposal is turned on, and then the asset is disposed of.
+- An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
 
-    If the Reimbursement periodic task is run from the Accounts receivable module, it creates a transaction to move the balance from a customer to a vendor. For this scenario, One voucher must be used to reimburse the customer.
+### Bills of exchange and promissory notes
+Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable ledger account to another, based on the state of the payment.
 
-- **Bills of exchange and promissory notes**
-
-    Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable ledger account to another, based on the state of the payment.
-
-### Scenarios that don't require One voucher
+## Scenarios that don't require One voucher
 
 The following scenarios can be accomplished through other means and should not use the One voucher functionality.
 
-- **Posting customer payments in summary form to the bank account**
+### Post customer payments in summary form to the bank account
 
-    An organization deposits customer payments, or the bank deposits customer payments on the organization's behalf, and the deposit is shown as a lump sum on the bank account.
+An organization deposits customer payments, or the bank deposits customer payments on the organization's behalf, and the deposit is shown as a lump sum on the bank account.
 
-    Summarization of customer payments is supported through the deposit functionality when "bridging" isn't used on the method of payment.
+Summarization of customer payments is supported through the deposit functionality when "bridging" isn't used on the method of payment.
 
-- **Netting**
+### Netting
 
-    In netting, the balances for a vendor and customer are netted against each other, because the vendor and customer are the same party. This approach minimizes the exchange of money between an organization and the customer/vendor party.
+In netting, the balances for a vendor and customer are netted against each other, because the vendor and customer are the same party. This approach minimizes the exchange of money between an organization and the customer/vendor party.
 
-    Netting can be accomplished by entering the increase and decrease in separate vouchers, and then posting the offset to a clearing ledger account.
+Netting can be accomplished by entering the increase and decrease in separate vouchers, and then posting the offset to a clearing ledger account.
 
-- **Posting in summary to the general ledger**
+### Post in summary to the general ledger
 
-    Organizations often want to post to the general ledger in summary form to minimize the amount of data. However, those organizations typically still require that the transaction details be maintained. When posting is done in summary form through a single voucher, the transaction details aren't known and can't be maintained.
+Organizations often want to post to the general ledger in summary form to minimize the amount of data. However, those organizations typically still require that the transaction details be maintained. When posting is done in summary form through a single voucher, the transaction details aren't known and can't be maintained.
 
-    - Because the transaction details currently can't be maintained, we recommend that organization **not** use One voucher to post in summary form.
-    - After support for One voucher is removed, the Source document and Accounting frameworks can be implemented in the journals. These frameworks will then maintain the transaction details and support summarization into the general ledger.
+- Because the transaction details currently can't be maintained, we recommend that organization **not** use One voucher to post in summary form.
+- After support for One voucher is removed, the Source document and Accounting frameworks can be implemented in the journals. These frameworks will then maintain the transaction details and support summarization into the general ledger.
 
-- **Settling multiple unposted payments to the same invoice**
 
-    This scenario is typically found in retail organizations where customers can use multiple methods of payment to pay for purchases. In this scenario, the organization must be able to record multiple unposted payments and settle them against the customer invoice.
+### Settle multiple unposted payments to the same invoice
 
-    A new feature that was added in Microsoft Dynamics 365 for Operations version 1611 (November 2016) enables multiple unposted payments to be settled against a single invoice. Multiple customer payments no longer have to be entered in a single voucher.
+This scenario is typically found in retail organizations where customers can use multiple methods of payment to pay for purchases. In this scenario, the organization must be able to record multiple unposted payments and settle them against the customer invoice.
 
-- **Importing bank statement transactions**
+A new feature that was added in Microsoft Dynamics 365 for Operations version 1611 (November 2016) enables multiple unposted payments to be settled against a single invoice. Multiple customer payments no longer have to be entered in a single voucher.
 
-    Banks often pay and receive payments on an organization's behalf, and those transactions are recorded in Finance and Operations through a file that is received from the bank. Organizations often want to group together those transactions by using the bank statement number in the file. Because each transaction is shown in detail on the bank statement, no summarization is required in the bank subledger.
+### Import bank statement transactions
 
-    Transactions can be grouped by using other fields on the journal, such as the journal batch number itself or the document number.
+Banks often pay and receive payments on an organization's behalf, and those transactions are recorded in Finance and Operations through a file that is received from the bank. Organizations often want to group together those transactions by using the bank statement number in the file. Because each transaction is shown in detail on the bank statement, no summarization is required in the bank subledger.
 
-- **Transferring balances**
+Transactions can be grouped by using other fields on the journal, such as the journal batch number itself or the document number.
 
-    An organization might have to transfer a balance from one vendor to another vendor, either because of a mistake or because another vendor has taken over the liability. Transfers of this type also occur for account types such as **Customer** and **Bank**.
 
-    Balance transfers from one account (vendor, customer, bank, and so on) to another account can be done through separate vouchers, and the offset can be posted to a clearing ledger account.
+### Transfer balances
 
-- **Entering beginning balances**
+An organization might have to transfer a balance from one vendor to another vendor, either because of a mistake or because another vendor has taken over the liability. Transfers of this type also occur for account types such as **Customer** and **Bank**.
 
-    Organizations often enter beginning balances for subledger accounts (vendors, customers, fixed assets, and so on) as one voucher transaction. Beginning balances for each subledger account can be entered as separate vouchers, and the offset can be posted to a clearing ledger account.
+Balance transfers from one account (vendor, customer, bank, and so on) to another account can be done through separate vouchers, and the offset can be posted to a clearing ledger account.
 
-- **Correcting the accounting entry of a posted customer or vendor document**
+### Enter beginning balances
 
-    An organization might have to correct the Accounts receivable or Accounts payable ledger account for an accounting entry of a posted invoice, but that invoice can't be reversed or corrected through another mechanism.
+Organizations often enter beginning balances for subledger accounts (vendors, customers, fixed assets, and so on) as one voucher transaction. Beginning balances for each subledger account can be entered as separate vouchers, and the offset can be posted to a clearing ledger account.
 
-    If a correction must be made to the Accounts receivable or Accounts payable ledger account, an adjustment must be made directly to the ledger account. The adjustment can't be made by posting through the vendor or customer. This approach requires that the adjustment be made during a "down time," so that the ledger account can temporarily allow manual entry.
+### Correct the accounting entry of a posted customer or vendor document
 
-- **"The system allows it"**
+An organization might have to correct the Accounts receivable or Accounts payable ledger account for an accounting entry of a posted invoice, but that invoice can't be reversed or corrected through another mechanism.
 
-    Organizations often use the One voucher functionality merely because the system lets them use it, without understanding the implications.
+If a correction must be made to the Accounts receivable or Accounts payable ledger account, an adjustment must be made directly to the ledger account. The adjustment can't be made by posting through the vendor or customer. This approach requires that the adjustment be made during a "down time," so that the ledger account can temporarily allow manual entry.
+
+### "The system allows it"
+
+Organizations often use the One voucher functionality merely because the system lets them use it, without understanding the implications.
