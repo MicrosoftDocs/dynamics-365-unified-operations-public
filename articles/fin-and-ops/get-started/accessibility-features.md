@@ -45,7 +45,7 @@ For most users, everyday system use involves lots of data entry and keyboard int
 
 Any page that is accessed by using the Navigation pane menu, the left-most pane, is also available from the **Search** box. Press Alt+G to move focus to the **Search** box, and then type the name or description of the page.
 
-!["Bank account" entered in the Search box](media/6d08b0be32808221023e2aa92d69fd70.png  "'Bank account' entered in the Search box")
+!["Bank accounts" entered in the Search box](media/6d08b0be32808221023e2aa92d69fd70.png  "'bank accounts' entered in the Search box")
 
 For more information, see [Navigation search](navigation-search.md).
 
@@ -60,7 +60,7 @@ Every action that is provided on a page can be accessed from a keyboard, via the
 
 You want to run the **Email notification log** action that appears in the **Email notification** group on the **Sales order** tab on the Action Pane.
 
-![Email notification log action on the Action Pane](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "Email notification log action on the Action Pane")
+![Email notification log action on the Action Pane](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "'Email notification log' action on the Action Pane")
 
 One option is to use your keyboard. Press Ctrl+F6 to move focus to the Action Pane, and then press Tab repeatedly to move through all the tabs and actions, until the **Email notification log** action has focus.
 
@@ -84,7 +84,7 @@ In everyday system use, not every field is required in order to perform typical 
 
 However, you might find that some fields that you often use to perform tasks aren't included in the default tab sequence. In this case, if you use Windows Narrator, you can use Windows Narrator's keyboard actions to access those fields and inspect their content. Alternatively, you can turn on the **Enhanced tab sequence** option on the **Options** page. This option makes all editable and read-only fields part of the tab sequence. You can then use page personalization to create a custom tab sequence and omit fields that don't have to be part of the tab sequence. For more information about personalization, see [Personalize the user experience](personalize-user-experience.md).
 
-![Enhanced tab sequence option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "Enhanced tab sequence option")
+!["Enhanced tab sequence" option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "'Enhanced tab sequence' option")
 
 ## Form patterns
 
