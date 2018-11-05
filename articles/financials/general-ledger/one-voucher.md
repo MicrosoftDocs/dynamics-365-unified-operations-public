@@ -126,11 +126,11 @@ The following scenarios can be accomplished only by using the One voucher functi
 
 - **Customer reimbursement**
 
-    If the Reimbursement periodic task is run under Accounts receivable, it creates a transaction to move the balance from a customer to a vendor. For this scenario, One voucher must be used to reimburse the customer.
+    If the Reimbursement periodic task is run from the Accounts receivable module, it creates a transaction to move the balance from a customer to a vendor. For this scenario, One voucher must be used to reimburse the customer.
 
 - **Bills of exchange and promissory notes**
 
-    Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable account to another, based on the state of the payment.
+    Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable ledger account to another, based on the state of the payment.
 
 ### Scenarios that don't require One voucher
 
