@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: Sales and purchase books for Russia 
-description: This topic provides information about sales books and purchase books for Russia.
+title: Sales books, purchase books, and invoice-factures journals for Russia 
+description: This topic provides information about sales books, purchase books for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -27,23 +27,23 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Sales and purchase books. Invoice-factures journals.
+# Sales books, purchase books, and invoice-factures journals
 
 [!include [banner](../includes/banner.md)]
 
   
 ## Generate Sales book, Purchase book and Additional sheets
 
-Sales and purchase books are legacy documents which must be prepared and stored during the tax period. They should be submitted to Tax authorities periodically and at request. VAT books contain issued and received invoice-factures.
+Sales and purchase books are legacy documents which must be prepared and stored during the tax period. They should be submitted to Tax authorities periodically and at request. VAT books contain invoices-factures that are issued and received.
 
 ### Set up parameters for sales and purchase books
 
-1.	In the **Accounts receivable parameters** page, define Number sequence for Sales book.
-2.	In the **Accounts payable parameters** page, define Number sequence for Purchase book.
-3.	In the **Tax > Indirect tax > Sales tax > Sales tax settlement periods** create tax period.
-4.	In the **General ledger parameters** page, in the **Sales tax** tab, in the **Tax options** fast tab, in the field **Sale/purchase book date and number delimiter**, define the delimiter between date and number of invoice-facture in the printing format of sales/purchase book.
-5.	In the **Accounts receivable parameters** page, in the **Ledger and sales tax** tab, in the **Sales book** fast tab, choose Electronic reporting formats for Sales book and Sales book additional sheet in xml.
-6.	In the **Accounts payable parameters** page, in the **Ledger and sales tax** tab, in the **Purchase book** fast tab, choose Electronic reporting formats for Purchase book and Purchase book additional sheet in xml.
+1.	On the **Accounts receivable parameters** page, define Number sequence for Sales book.
+2.	On the **Accounts payable parameters** page, define Number sequence for Purchase book.
+3.	On the **Tax > Indirect tax > Sales tax > Sales tax settlement periods** create tax period.
+4.	On the **General ledger parameters** page, in the **Sales tax** tab, in the **Tax options** fast tab, in the field **Sale/purchase book date and number delimiter**, define the delimiter between date and number of invoice-facture in the printing format of sales/purchase book.
+5.	On the **Accounts receivable parameters** page, in the **Ledger and sales tax** tab, in the **Sales book** FastTab, choose Electronic reporting formats for Sales book and Sales book additional sheet in XML.
+6.	On the **Accounts payable parameters** page, in the **Ledger and sales tax** tab, in the **Purchase book** FastTab, choose Electronic reporting formats for Purchase book and Purchase book additional sheet in XML.
 
 
 ### Generate and print sales book
@@ -123,12 +123,9 @@ Additional sheets for all tax settlement periods which were corrected in the cho
 
 Currently only corrective and revision factures which increase VAT amount to be deducted in the corrected period are considered for Additional sheet generation. Corrective and revision factures which decrease the VAT amount to be deducted in the corrected period, are printed in the Purchase book of current period. 
 
-
-
 ## Print issued and received factures journal
     
 Facture accounting journal contains list of issued and received invoice-factures related to activities for the benefit of another entity, like agent transactions or commission.
-
 
 ### Set up parameters for factures journal
 
@@ -140,21 +137,14 @@ In **General ledger parameters** page, on **Sales tax** tab, **Tax options** fas
 
 ### Print a facture accounting journal 
 
-Run report from **General ledger > Inquiries and reports > Journal reports > Facture accounting journal**. 
-
-In the opened dialog **Facture accounting journal** define the following parameters:
-
-- Choose reporting period in the **Date interval code** field or define **From date** and **To date**
-
-- In the field **Outgoing** choose the criteria for inclusion of intermediary deals factures into the facture journal: 
+1. Go to **General ledger > Inquiries and reports > Journal reports > Facture accounting journal**. 
+2. Choose a reporting period in the **Date interval code** field or specify your own date range..
+3. In the field **Outgoing** choose the criteria for inclusion of intermediary deals factures into the facture journal: 
 
    - **Date of the registration** - Issued factures journal contains all intermediary deals factures regardless confirmation to principal (intermediary deal information for such factures may be empty); 
 
    - **Confirmation date** - Issued factures journal contains only confirmed intermediary deals factures (intermediary deal information for such factures is filled with received factures from principal)
-
-- Enable **Date of reporting** to Filter factures by reporting date rather than facture date.
-
-- Enable **Create XML file** to create electronic xml report in addition to Excel report.
-
-Click OK to print facture accounting journals for the selected period.
+4. Set the **Date of reporting** option to be **Yes** to filter factures by reporting date rather than facture date.
+5. Set the **Create XML file** option to be **Yes** to create an electronic xml report in addition to Excel report.
+6. Click **OK** to print facture accounting journals for the selected period.
 
