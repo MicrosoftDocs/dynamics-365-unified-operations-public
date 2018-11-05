@@ -116,16 +116,19 @@ You can review generated payment orders for customers on the **Registry of payme
 
 ## Review Registry of payment orders
 
-The registry of payment orders report contains the list of payment orders for bank account in the period and has the following data for each payment order: Number and date, name and bank account number of counteragent, payment purpose, payment amount and currency code, status of payment and a remark whether the payment is electronic.
+The registry of payment orders report contains the list of payment orders for a bank account in a period. This report includes the following data for each payment order:
 
-To run the report, go to **Accounts payable \> Inquiries and reports \> Payment \> Payment order register** or **Accounts receivable \> Inquiries \> Payment \> Payment order register**.
+- Number and date
+- Name and bank account number of counteragent
+- Payment purpose
+- Payment amount and currency code
+- Status of payment
+- Note indicating if the payment is electronic
 
-In the opened form, click **Print \> Registry of payment orders**.
-
-In the opened dialog define the following parameters:
-
-- Define **From date** and **To date**
-- Define filters for payment orders: **Payment order status**, **Curreny code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form)
-
-Click **OK** to generate the report.
+To run the report, complete the following steps.
+1. Go to **Accounts payable > Inquiries and reports > Payment > Payment order register** or **Accounts receivable > Inquiries > Payment > Payment order register**.
+2. Click **Print > Registry of payment orders**.
+3. Select the **From date** and **To date**.
+4. Define the following filters for payment orders: **Payment order status**, **Curreny code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form).
+5. Click **OK** to generate the report.
 
