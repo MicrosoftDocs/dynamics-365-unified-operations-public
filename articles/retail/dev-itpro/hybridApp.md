@@ -45,36 +45,34 @@ This topic shows how to set up set up POS Hybrid app on Android and iOS.
 
 1. Open **Control Panel > Programs and Features**, select  **Visual Studio 2015**. Click **Change**. When the installer opens, click **Modify**.
 
-2. Go to **Cross-Platform Mobile Development > C#/.NET (Xamarin)**. This will also automatically select various Android tools under Common Tools and Software Development Kits. This option should also update any existing Xamarin installation. Select all **Common Tools and Software Development Kits**.
+2. Go to **Cross-Platform Mobile Development > C#/.NET (Xamarin)**. Select **Common Tools and Software Development Kits** so that all of the options are selected. Selecting this option should also update an existing Xamarin installation, if neeeded.
   
   ![VS Xamarin Android Development Kit](./media/VSInstall.PNG)
   
 3. Click **Install** and let the process run. This will take some time to complete.
 
-4. When installation is complete, launch Visual Studio and sign in with your Microsoft account, if requested (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you’ll find a **Check Now** link.
+4. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you’ll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the Options dialog box. If needed, download and install the latest version.
       
-If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the Options dialog box. If needed, download and install the latest version.
-      
-5.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy on the Emulator and verify that everything appears as it should.
+5.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
   
-6.  On the Emulator, enter the Retail Server URL and save.
+6.  Using the emulator, enter the Retail Server URL and save.
   
 7.  You should be able to sign in and activate the device.
 
  ## Set up and install Xamarin on iOS
 
-  1.  Download and install Xcode from <https://developer.apple.com/xcode/>. Add your Apple ID using the instructions desrcibed on [Adding Your Account to XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+  1.  Download and install Xcode from <https://developer.apple.com/xcode/>. Add your Apple ID using the instructions desrcibed in [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
   
-  2.  Download and install Xamarin by following the instructions on [Installing and Configuring Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
+  2.  Download and install Xamarin by following the instructions in [Installing and Configuring Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
   
-  3.  When you have completed installing Xamarin on both the Windows and Mac computers, follow the instructions on [Connecting to the Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com). After you do this, ou can work with iOS and Mac from Visual Studio on the Windows computer.
+  3.  When you have completed installing Xamarin on both the Windows and Mac computers, follow the instructions in [Connecting to the Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com). After you do this, you can work with iOS and Mac from Visual Studio on the Windows computer.
   
   4.  In the Retail SDK folder, open SampleExtensions\HybridApp\iOS\solution.
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
          ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
       
-  5.  On the Emulator, go to **Settings > RetailMPOS**. Enter the Retail Server URL.
+  5.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Retail Server URL.
       
          ![POS iOS app setting](./media/iOSApp.png)
       
