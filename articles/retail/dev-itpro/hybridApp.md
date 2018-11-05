@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 ---
-# Set up POS Hybrid App on Android and iOS
+# Set up POS Hybrid app on Android and iOS
 [!include [banner](../includes/banner.md)]
 
 This topic shows how to set up set up POS Hybrid app on Android and iOS.
