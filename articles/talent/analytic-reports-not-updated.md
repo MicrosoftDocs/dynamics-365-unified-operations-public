@@ -40,16 +40,16 @@ The customer's data changes don't show up on the **Analytics** tabs of any of th
 
 **Cause:**
 
-By default, PowerBI reports are refreshed every 4 hours as the “deploy measurement” batch job is scheduled.
+By default, Power BI reports are refreshed every 4 hours as the “deploy measurement” batch job is scheduled.
 
 **Resolution:**
 
-This may just be timing, the steps below list the process to initiate the batch job and update the analytics workspaces.
+This may just be timing. The steps below list the process to initiate the batch job and update the analytics workspaces.
 
-1.  Navigate to the batch jobs page at **System administration \> Links \> Batch jobs \> Batch jobs**, or use **Search** and enter “Batch Jobs”.
+1.  Navigate to the batch jobs page at **System administration > Links > Batch jobs > Batch jobs**, or use **Search** and enter “Batch Jobs”.
 
 1.  Find the **Deploy measurement** job in the list.
 
 1.  Select the **Edit** button on the top of the page and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.
 
-![](media/batch-jobs.png)
+![Batch jobs](media/batch-jobs.png)
