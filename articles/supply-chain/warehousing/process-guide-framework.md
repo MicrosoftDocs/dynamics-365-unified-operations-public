@@ -175,8 +175,9 @@ Creating the controller
 The first step in building the business process is creating the controller class, extending from ProcessGuideController abstract class which implements the default behaviors of a controller. We name our new class as ProdProcessGuideProductionStartController and decorate it with the WHSWorkExecuteMode value of StartProdOrder. We use the same SysExtension based instantiation as was used in the WHSWorkExecuteDisplay classes; thus, this attribute helps instantiating the controller when the user executes a menu item
 for this mode.
 
-``[WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
-public class ProdProcessGuideProductionStartController extends ProcessGuideController``
+<pre><code>
+[WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
+public class ProdProcessGuideProductionStartController extends ProcessGuideController</code></pre>
 
 > [!NOTE]
 > The naming pattern of the class - we use the convention \<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller. This is the pattern we intend to use for the controller classes going forward, and extend to other classes as well, as you will see below.
