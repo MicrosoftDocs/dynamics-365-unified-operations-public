@@ -38,9 +38,9 @@ ms.dyn365.ops.version: Talent
 
 **Issue:**
 
-When the customer views the position hierarchy in Talent, the names of individuals and positions are truncated, making it impossible to take a screenshot or print the hierarchy and distribute it.
+When the customer views the position hierarchy in Talent, the names of individuals and positions are truncated, making it difficult to take a screenshot or print the hierarchy and distribute it.
 
-![](media/position-h.png)
+![position hierarchy](media/position-h.png)
 
 **Cause:**
 
@@ -49,7 +49,7 @@ By design.  
 **Resolution:**
 
 Unfortunately, the size of the text is not something that is easily modified by
-the user.However, you can export out of Talent and an import into Visio. This
+the user. However, you can export out of Talent and an import into Visio. This
 article was written for AX 2012, but the process is still applicable for Talent
 as well.
 
@@ -57,73 +57,72 @@ as well.
 
 Steps to export to Visio:
 
-1.  Open the positions list. (note if you want to include more information in
-    the Org structure diagram, add fields to the Position list to make them
-    available during the Wizard Phase below.
+1.  Open the **Positions** list. (If you want to include more information in
+    the Org structure diagram, add fields to the **Position** list to make them
+    available during the Wizard phase below.
 
-2.  Click the ‘Export to Excel’ button in the action pane (Ctrl-T)
+2.  Click **Export to Excel** in the action pane (Ctrl-T).
 
-![](media/org-admin.png)
+![organization administration](media/org-admin.png)
 
 1.  Save the Excel file that has been exported.
 
-![](media/export-excel.png)
+![Export to Excel](media/export-excel.png)
 
-1.  Open Visio - Create New within Visio and choose the Business template
+1.  Open **Visio - Create New** within Visio and choose the "Business template"
     category.
 
-![](media/new.png)
+![new diagram](media/new.png)
 
-1.  Choose the ‘Organization Chart Wizard’ and click Create.
+1.  Choose the **Organization Chart Wizard** and click **Create**.
 
-![](media/orgchart-wizard.png)
+![org chart wizard 1](media/orgchart-wizard.png)
 
-1.  Choose to create from information already stored in a file or database and
-    click Next.
+1.  Select **Information that's already stored in a file or database** and
+    click **Next**.
 
-![](media/orgchart-wizard7.png)
+![org chart wizard 2](media/orgchart-wizard7.png)
 
-1.  Choose to create from an Excel file and click Next.
+1.  Choose **A text, Org Plus (\*.txt), or Excel file** and click **Next**.
 
-![](media/orgchart-wizard3.png)
+![org chart wizard 3](media/orgchart-wizard3.png)
 
-1.  Choose to create from your recently created Excel file containing the
-    hierarchy and click Next.
+1.  Choose to create from your recently created Excel file containing the hierarchy and click **Next**.
 
-![](media/orgchart-wizard2.png)
+![org chart wizard 4](media/orgchart-wizard2.png)
 
-1.  Set **Name** to ‘Position’ and **Reports to** to ‘Reports to position’ and
-    click Next.
+1.  Set **Name** to "Position" and **Reports to** to "Reports to position" and
+    click **Next**.
 
-![](media/orgchart-wizard1.png)
+![org chart wizard 5](media/orgchart-wizard1.png)
 
-1.  Choose the fields to display on each node and click Next.
+1.  Choose the fields to display on each node and click **Next**.
 
-![](media/orgchart-wizard5.png)
+![org chart wizard 6](media/orgchart-wizard5.png)
 
-1.  Choose the ‘Position’ column to appear as shape data fields and click Next.
+1.  Choose the "Position" column to appear as **Shape data fields** and click **Next**.
 
-![](media/orgchart-wizard6.png)
+![org chart wizard 7](media/orgchart-wizard6.png)
 
-1.  Click Next
+1.  Click **Next**.
 
-2.  Pictures aren’t currently available
+2.  Pictures aren’t currently available.
 
-3.  Select to automatically break across pages
+3.  Select **I want the wizard to automatically break my organization chart across pages**.
 
-![](media/orgchart-wizard4.png)
+![org chart wizard 8](media/orgchart-wizard4.png)
 
-1.  Finish.
+1.  Click **Finish**.
 
     1.  If there are positions not in the structure you will be asked to include
         those in the diagram.
 
-    2.  Diagram will show each manager on a worksheet with in Visio.
+    2.  The diagram will show each manager on a worksheet within Visio.
 
-    3.  Based on what you included in the diagram you will see that information
+    3.  Based on what you included in the diagram, you will see the information
         when you generate the Visio file in each node.
 
-![](media/hierarchy.png)
+![hierarchy diagram](media/hierarchy.png)
 
 **Additional option:**
 
