@@ -37,11 +37,11 @@ ms.dyn365.ops.version: Talent
 
 **Problem:**
 
-The customer doesn't see the Talent app with the Microsoft Dynamics 365 apps.
+The customer doesn't see the Talent app with the other Microsoft Dynamics 365 apps.
 
 **Resolution:**
 
-The user doesn't belong to the **Environment Maker** role for the environment in PowerApps.
+The user doesn't belong to the "Environment Maker" role for the environment in PowerApps.
 
 1.  The admin user who has a PowerApps Plan 2 license must go to the [PowerApps
     Admin portal](https://preview.admin.powerapps.com/).
@@ -52,11 +52,11 @@ The user doesn't belong to the **Environment Maker** role for the environment in
 
 3.  Click **Environment roles > Environment Maker**.
 
-![](media/environment-roles.png)
+![environment roles](media/environment-roles.png)
 
 1.  Add the user or your organization.
 
-![](media/environment-maker.png)
+![environment maker](media/environment-maker.png)
 
 1.  Click **Save**.
 
