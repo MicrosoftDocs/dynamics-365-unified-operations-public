@@ -50,7 +50,7 @@ User B is able to access Core HR, but not the Attract or Onboard apps. When navi
 
 - User B does not have rights to view the PowerApps environment created by User A during the provisioning process.
 
-See the ‘Granting access to the environment’ section in [Provision talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+See the "Granting access to the environment" section in [Provision talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 **Long-term solution:**
 
