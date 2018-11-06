@@ -378,32 +378,29 @@ Now that we have gone through all the bits and pieces, let’s make a comprehens
 1.  **ProdProcessGuideProductionStartController**
 
     1.  Override initialStepName() to provide the name of the first step
-
     2.  Override initializeNavigationRoute() to construct the navigation map
 
-        ![](media/a80eeff9c7b36767ac83c612979dfc12.png)
+        ![Construct navigation map](media/construct-navigation-map.png)
 
 2.  **ProdProcessGuidePromptProductionIdStep**
 
     1.  Override isComplete() to specify when the step is considered complete
-
     2.  Override pageBuilderName() to specify the page builder to be used
 
-![](media/38939aca17acc49aadf578e5d1c165b1.png)
+![Specify page builder](media/specify-page-builder.png)
 
-1.  **ProdProcessGuidePromptProductionIdPageBuilder**
+3.  **ProdProcessGuidePromptProductionIdPageBuilder**
 
     1.  Override addDataControls() to add the Prod Id textbox.
-
     2.  Override addActionControls() to add the OK and Cancel buttons.
 
-        ![](media/afee3ba75249e35b2587bd6bef8a0cf2.png)
+        ![Override addActionControls](media/override-add-data-controls.png)
 
-2.  **ProdProcessGuideConfirmProductionOrderStep**
+4.  **ProdProcessGuideConfirmProductionOrderStep**
 
     1.  Override pageBuilderName() to specify the page builder to be used
 
-        ![](media/466fa22b6ceb549eae1271951f94677c.png)
+        ![Override pageBuilderName](media/override-page-builder-name.png)
 
 3.  **ProdProcessGuideConfirmProductionOrderPageBuilder**
 
@@ -411,7 +408,7 @@ Now that we have gone through all the bits and pieces, let’s make a comprehens
 
     2.  Override addActionControls() to add the OK and Cancel buttons.
 
-        ![](media/5a5fcd0a6bcae7a34e3d7c4eea03d71c.png)
+        ![Override addActionControls](media/override-controls.png)
 
         > [!NOTE]
         > The generateItemInfoForProdId() method, which is used for generating the item information labels, is excluded from this discussion. This just queries a few tables to get item id, description and dimensions. Feel free to look into the source code if you are curious about how this looks.
@@ -421,7 +418,7 @@ Now that we have gone through all the bits and pieces, let’s make a comprehens
     1.  Override doExecute() to perform the production start process and add the
         process completion message.
 
-![](media/5b8cf118508abab1eed5d110ffd0663f.png)
+![ProdProcessGuideStartProductionOrderStep](media/add-process-completion-message.png)
 
 > [!NOTE]
 > A notable aspect is a lot of the common patterns (regeneration of UI on error, setting process completion message, OK and Cancel behavior) have been moved to the framework – thus saving the application developer from writing boilerplate code that is both error prone, and has a risk of inconsistent behavior across processes. Where the scenario needs to deviate from the common path, though, the application developer is provided the option of overriding suitable methods – but then that is an intentional deviation that is both explicit and trackable.
