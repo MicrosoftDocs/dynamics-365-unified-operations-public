@@ -6,7 +6,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 11/3/2018
+ms.date: 11/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
