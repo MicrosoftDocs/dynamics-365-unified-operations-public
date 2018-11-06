@@ -442,8 +442,8 @@ In our example all the actions should be set up to run separately as it is suppo
 Action log is filled in automatically, so all the actions done with the message are logged.
 Now you may either delete or update message status. To update message status, click on “Update status” button and select new status as “Prepared”:
 ![Update status button](media/update-status.png)
-As a result, the message status is updated to “Prepared” and now you may generate the report. To do so, click on the “Generate report” button. The report will be generated, Message status and Action log updated. You may review generated report by the Attachment button on the Action pane:
-Pic.13
+As a result, the message status is updated to “Prepared” and now you may generate the report. To do so, click on the “Generate report” button. The report will be generated, Message status and Action log updated. To view the generated report, click the attachment button on Action pane.
+
 
 
 
