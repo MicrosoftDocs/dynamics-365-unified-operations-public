@@ -78,6 +78,11 @@ You can set up the derived dimensions segments and values by using entities.
 
 For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
 
+## Dual currency
+Reporting currency can now be repurposed and used as a second accounting currency. This functionality is referred to as dual currency. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
+
+For more information, see [Dual currency](../../financials/general-ledger/dual-currency.md).
+
 ## Extensibility enhancements
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md) 
 
