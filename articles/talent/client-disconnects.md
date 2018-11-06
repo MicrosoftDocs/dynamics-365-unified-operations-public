@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: The client disconnects
+title: Talent client disconnects
 description: The customer is getting disconnected form their environment and doesn’t know why.
 author: Darinkramer
 manager: AnnBe
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# The client disconnects
+# Talent client disconnects
 
 [!include [banner](includes/banner.md)]
 
 **Environment details:** 
 
-All
+All environments.
  
 
 **Symptom:** 
@@ -57,12 +57,11 @@ would see this issue.
 
 **Problem:** 
 
-Browser type(s) = Chrome, Internet Explorer, Edge
+Browser types: Chrome, Internet Explorer, Edge.
 
 The Talent platform disconnects users when two different sessions are opened at
-the same time for the same user and browser type. (e.g. User A is looking at
-Environment 1 and Environment 2 within Chrome) It doesn't matter if they open in
-in different browser windows or just different tabs, if it is the same user
+the same time for the same user and browser type (for example, User A is looking at
+Environment 1 and Environment 2 within Chrome.) It doesn't matter if they open different browser windows or just different tabs, if it is the same user
 credentials logging into environment 1 and environment 2 at the same time from
 the same browser, Talent will disconnect one of the sessions.
 
@@ -73,5 +72,5 @@ can open multiple sessions (tabs within the same browser) to the same
 environment.
 
 If users want to jump between two different environments at the same time, open
-each one in a different browser type. (e.g. User A can look at Environment 1 in
+each one in a different browser type (for example, User A can look at Environment 1 in
 Chrome, and Environment 2 in Edge.)
