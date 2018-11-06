@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process guide framework
-description: This topic provides informationa about the process guide framework for developers who are extending our warehouse mobile processes in X++.
+description: This topic provides information about the process guide framework for developers who are extending our warehouse mobile processes in X++.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/01/2018
@@ -34,13 +34,13 @@ ms.dyn365.ops.version: 8.0
 
 [!include [banner](../includes/banner.md)]
 
-Over the last few months, we have been working towards making the warehouse mobile processes more extensible. The way we would achieve this is by breaking down the mobile processes into smaller steps, and extracting the business logic and user interface building of each individual step into their own classes, that would allow extensibility.
+This topic provides information about the process guide framework for developers who are extending the warehouse mobile processes in X++. The warehouse mobile processes is extensible as a result of the processes being broken into small steps. The business logic and user interface building of each step has been extracted into individual classes, which allows for extensibility.
 
 ## Overview of the existing design
 
-The warehouse mobile execution flows are exposed through a single custom service endpoint. The request arrives from the mobile app in the form of an xml string, which contains the metadata of the user interface presented in the mobile app, as well as the values entered by the user.
+The warehouse mobile execution flows are exposed through a single custom service endpoint. The request arrives from the mobile app in the form of an XML string, which contains the metadata of the user interface presented in the mobile app, as well as the values entered by the user.
 
-Once the request is received, the first step is to deserialize this xml. The WHSMobileAppServiceXMLTranslator class converts this xml into a container – which contains both the control information, as well as some session information.
+When the request is received, the first step is to deserialize this XML. The WHSMobileAppServiceXMLTranslator class converts this XML into a container, which contains both the control information, as well as some session information.
 
 Following this, the information in the container is used to deduce which warehouse process the user is working on, or about to start (represented by the WHSWorkExecuteMode enumeration), and accordingly instantiate a derived class of WHSWorkExecuteDisplay. The displayform() method is invoked, which then does the following:
 
@@ -52,12 +52,11 @@ Following this, the information in the container is used to deduce which warehou
 
 -   Builds the container representing the new user interface (typically in a build…() method)
 
-The container is then returned to the translator, which then serializes the xml, and sends it back as response to the mobile device.
+The container is then returned to the translator, which then serializes the XML, and sends it back as response to the mobile device.
 
-The sequence diagram below gives an overview of the execution flow. Please note that the diagram is more of a schematic overview and is not a 1:1 representation of the actual code.
+The following sequence diagram shows an overview of the execution flow. Note that the diagram is more of a schematic overview and is not a 1:1 representation of the actual code.
 
 ![Schematic overview of the process](media/schematic-overview.png)	
-
 
 ### Reason for the redesign
 
