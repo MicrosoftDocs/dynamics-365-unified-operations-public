@@ -235,6 +235,8 @@
     href: price-management.md
   - name: Price adjustments and discounts
     href: price-adjustments-discounts.md
+  - name: Apply multiple Retail discounts to a product
+    href: Apply-multiple-retail-discounts.md
   - name: Determine the optimal combination of overlapping discounts
     href: optimal-combination-overlapping-discounts.md
   - name: Define channel-specific discounts
