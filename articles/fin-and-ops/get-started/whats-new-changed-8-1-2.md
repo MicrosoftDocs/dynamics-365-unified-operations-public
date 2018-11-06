@@ -54,8 +54,7 @@ Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platfor
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.2](../../dev-itpro/extensibility/extensibility-changes-812.md).
 
 ## Third-party miscellaneous charges for Russia
-This release includes functionality for the registration of 3rd party miscellaneous charges and allocation by the following regimes: 
+This release includes functionality for the registration of third-party miscellaneous charges and allocation by the following regimes: 
 - Inclusion into cost of purchased goods (allocation to invoices lines from other vendors) 
 - Redrawing to other parties 
 - Re-allocation to other expense accounts
-
