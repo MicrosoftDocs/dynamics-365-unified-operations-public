@@ -37,11 +37,11 @@ ms.dyn365.ops.version: Talent
 
 **Issue:**
 
-The PowerApps menu item disappeared from the System administration module.
+The PowerApps menu item disappeared from the **System administration** module.
 
 **Cause:**
 
-Design changed to include PowerApps in standard personalization model.
+The user interface (UI) design changed to include PowerApps in standard personalization model.
 
 **Resolution:**
 
@@ -54,24 +54,27 @@ You can learn how to embed PowerApps with Talent by reading [Embed PowerApps app
 Any PowerApps customer has embedded before the change should've been upgraded to
 the new model.
 
-From almost any page within Talent, locate the PowerApps button in the upper
-right corner of the page. This button will give you access to insert a power
-app.
+From almost any page within Talent, locate the **PowerApps** button in the upper
+right corner of the page. This button will give you access to insert a Power App.
 
 Example:
 
-Personnel management \> Links \> Workers \> Employees
+1. Go to **Personnel management > Links > Workers > Employees**.
 
-![](media/png.png)
+2. Click **Insert a PowerApp**.
 
-![](media/insert-powerapp.png)
+![PowerApp button](media/png.png)
 
-You can also navigate to the personalization options on the form by going to:
-OPTIONS \> PERSONALIZE \> Personalize this form.
+3. Fill out the **Insert a PowerApp** dialog.
 
-![](media/options.png)
+![Insert PowerApp](media/insert-powerapp.png)
 
-The personalization toolbar will open, and you can now select to Insert a power
-app directly from this menu.
+Or, you can do the following:
 
-![](media/powerapp-bar.png)
+1. Navigate to the personalization options on the page by going to **Options > Personalize > Personalize this form**.
+
+![personalize toolbar](media/options.png)
+
+2. The personalization toolbar will open. Select **Insert** and then click **PowerApp**.
+
+![PowerApp bar](media/powerapp-bar.png)
