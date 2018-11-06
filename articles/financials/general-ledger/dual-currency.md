@@ -71,8 +71,8 @@ The following modules use the reporting currency as a second accounting currency
 
 - [General ledger](#general-ledger)
 - [Financial reporting](#financial-reporting)
-- [Accounts payable](#accounts-payable/accounts-receivable)
-- [Accounts receivable](#accounts-payable/accounts-receivable)
+- [Accounts payable](#accounts-payable-and-accounts-receivable)
+- [Accounts receivable](#accounts-payable-and-accounts-receivable)
 - [Cash and bank management](#cash-and-bank-management)
 - [Fixed assets](#fixed-assets)
 
@@ -94,7 +94,7 @@ An enhancement to the **Financial reporting** module lets you include reporting 
 
 This change is available through the **Currency display** setting in the column definition. If you select **Reporting currency from ledger**, amounts in the column aren't translated. Instead, they are reported directly from the general ledger. If you want the column to show translated amounts, select the **Translate to XXXX** option, where *XXXX* is the reporting currency that the column should show. In this case, accounting currency amounts will be translated to the selected currency by using the existing translation functionality.
 
-### Accounts payable/Accounts receivable
+### Accounts payable and Accounts receivable
 
 The **Accounts payable** and **Accounts receivable** modules already tracked reporting currency amounts. However, the amounts weren't shown or used for various processes. The following changes were made:
 
