@@ -47,7 +47,7 @@ The **Discount concurrency control model** is described below in detail; however
 
 ## Discount concurrency control model
 
-The discount concurrency control model changes when and how multiple discounts are applied to products in a transaction. The**Best price and compound concurrency control model** option on the **Discounts** tab on the **Retail 
+The discount concurrency control model changes when and how multiple discounts are applied to products in a transaction. The **Best price and compound concurrency control model** option on the **Discounts** tab on the **Retail 
 parameters** page is different from the **Discount concurrency mode** property on each discount.
 
 In earlier versions of Dynamics 365 for Retail, there was only one way to apply multiple discounts based on the **discount type**, **discount concurrency mode**, and **pricing priority** (if used) properties of discounts. Now, the discount concurrency control model setting affects how all discounts compete and compound together.
