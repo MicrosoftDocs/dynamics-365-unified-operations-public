@@ -277,8 +277,7 @@ Finally, once the validation succeeds, it is time to mark the step as completed.
 {
     WhsrfPassthrough pass = controller.parmSessionState().parmPass();
     ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
-    
-    return (prodId != '');
+        return (prodId != '');
  }``   
 
 Step two: view order details and confirm
@@ -303,7 +302,7 @@ The page builder class, unsurprisingly, overrides the addDataControls() method t
 
 The addActionControls() is then overridden to add 2 buttons – the OK button, and the button to Cancel the process and go back to the start of the process.
 
-![Process guide page builder code](media/process-builder-page-code.png)
+![Process guide page builder code](media/process-guide-page-builder-code.png)
 
 Step three: start the production order
 --------------------------------------
@@ -314,7 +313,7 @@ The ProcessGuideStepWithoutPrompt abstract class implements the default behavior
 
 The following code snippet shows the class and the doExecute() method implementation. The method simply retrieves the order id and user id from the session state and invokes the method to start this production order.
 
-![](media/c111cde49669378b51512e1ab20ced28.png)
+![](media/class-and-method-implementation.png)
 
 In case of an exception, the framework exception handling logic ensures that the process is rolled back to the previous step.
 
@@ -328,7 +327,7 @@ Building the navigation through the steps
 So far, we have looked at the implementation of the steps, but skipped the discussion on how to navigate from one step to the next. The
 ProcessGuideNavigationAgent class does exactly that. The ProcessGuideController base class instantiates the ProcessGuideNavigationAgentDefault class, which relies on a pre-defined navigation route, which is nothing but a simple map of source and destination steps. For the production start scenario, since there is not conditional branching, this implementation would suffice. Therefore, all we need is to override the initializeNavigationRoute() method to define the navigation route.
 
-![](media/93c801d51c8c8fa2b2851d93d2a0409c.png)
+![Override method code](media/override-method-code.png)
 
 Now, there will be processes where there will be conditional branching (based on user actions, or any other conditions). Such processes would need to do the following:
 
@@ -345,7 +344,18 @@ Action classes
 
 We mentioned briefly that the Action classes represent user actions. Let us take an example of OK action, as an example of understanding how the actions are created.
 
-![](media/7f5ccd403ff5eb75d298f43e90b1e982.png)
+``[ProcessGuideActionName(#ActionOK)]
+public class ProcessGuideOKAction extends ProcessGuideAction
+{
+    public final str label()
+    {
+        return "@SYS5473";
+     }
+     protected final void doExecute()
+     {
+        step.executeOKAction();
+      }
+  }``    
 
 The class must implement 2 abstract methods:
 
@@ -355,7 +365,7 @@ The class must implement 2 abstract methods:
 
 The actions are instantiated using SysExtension framework based on the ProcessGuideActionName attribute. Similar to the instantiation of page builders, the step class implements the default action factory, and it is possible to override that. The page builder adds a button control like this:
 
-![](media/35b8eedb6286e799a5377cd680f43092.png)
+``_page.addButton(step.createAction(#ActionOK), true);``
 
 In doing so, it asks the step to create an action class for the passed name and ties that action to the button.
 
