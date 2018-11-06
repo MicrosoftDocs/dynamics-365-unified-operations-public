@@ -50,8 +50,8 @@ The user is not able to customize the embedded PowerBI reports.
 
 **Solution:** 
 
--   The Core HR data that flows to CDS (Common Data Service) can be reported on via the Power Apps
-    CDS connector to Power BI desktop. Note that CDS
+-   The Core HR data that flows to CDS (Common Data Service) can be reported on via the PowerApps
+    CDS connector to PowerBI desktop. Note that CDS
     contains a subset of Core HR data. Learn more about Power BI and Dashboards
     by reading [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
 
