@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Talent
 
 **Environment details:** 
 
-Talent deployed via Lifecycle Services (LCS).
+Dynamics 365 for Talent deployed via Lifecycle Services (LCS).
 
 **Problem:**
 
@@ -70,7 +70,7 @@ The customer wants to save new task recordings to their LCS project and replay t
 11. When complete choose to **Save to LCS**.
     
 
-    ![](media/task-guides.png)
+    ![Save to LCS](media/task-guides.png)
 
 12. Select the BPM library and node where you want to save the recording.
 
