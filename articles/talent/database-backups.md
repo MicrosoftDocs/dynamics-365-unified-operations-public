@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# How database backups are handled
+# How database backups are handled 
 
 [!include [banner](includes/banner.md)]
 
@@ -52,7 +52,7 @@ Production environments provisioned through Lifecycle Services (LCS).
 -   Talent uses a Standard Azure SQL SKU. You can learn more about the
     backup story by reading [Learn about automatic SQL Database backups](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups).
 
--   Restoring an in-place Production environment backup is a Development
+-   Restoring an in-place production environment backup is a Development
     Operations (DevOps) procedure that is something that should be considered
     expensive. In fact, we have limits how far back we can restore since the
     code packages are being upgraded nearly every week, and we wouldn’t want to
@@ -60,11 +60,11 @@ Production environments provisioned through Lifecycle Services (LCS).
     package. So, we would have to consider the best approach on a case-by-case
     basis.
 
--   Moving a database from a Production to a Test environment is presently a
-    DevOps motion. Microsoft does not currently provide a way to move or copy
+-   Moving a database from a production to a test environment is presently a
+    DevOps operation. Microsoft does not currently provide a way to move or copy
     DBs in the LCS experience today. This is a feature
     that has been requested but has not been completed yet. The recommended
-    option is making use of data entity packages for export / import between
+    option is making use of data entity packages for export/import between
     environments.
 
 **Long-term solution:**
