@@ -65,54 +65,54 @@ Steps to export to Visio:
 
 ![organization administration](media/org-admin.png)
 
-1.  Save the Excel file that has been exported.
+3.  Save the Excel file that has been exported.
 
 ![Export to Excel](media/export-excel.png)
 
-1.  Open **Visio - Create New** within Visio and choose the "Business template"
+4.  Open **Visio - Create New** within Visio and choose the "Business template"
     category.
 
 ![new diagram](media/new.png)
 
-1.  Choose the **Organization Chart Wizard** and click **Create**.
+5.  Choose the **Organization Chart Wizard** and click **Create**.
 
 ![org chart wizard 1](media/orgchart-wizard.png)
 
-1.  Select **Information that's already stored in a file or database** and
+6.  Select **Information that's already stored in a file or database** and
     click **Next**.
 
 ![org chart wizard 2](media/orgchart-wizard7.png)
 
-1.  Choose **A text, Org Plus (\*.txt), or Excel file** and click **Next**.
+7.  Choose **A text, Org Plus (\*.txt), or Excel file** and click **Next**.
 
 ![org chart wizard 3](media/orgchart-wizard3.png)
 
-1.  Choose to create from your recently created Excel file containing the hierarchy and click **Next**.
+8.  Choose to create from your recently created Excel file containing the hierarchy and click **Next**.
 
 ![org chart wizard 4](media/orgchart-wizard2.png)
 
-1.  Set **Name** to "Position" and **Reports to** to "Reports to position" and
+9.  Set **Name** to "Position" and **Reports to** to "Reports to position" and
     click **Next**.
 
 ![org chart wizard 5](media/orgchart-wizard1.png)
 
-1.  Choose the fields to display on each node and click **Next**.
+10.  Choose the fields to display on each node and click **Next**.
 
 ![org chart wizard 6](media/orgchart-wizard5.png)
 
-1.  Choose the "Position" column to appear as **Shape data fields** and click **Next**.
+11.  Choose the "Position" column to appear as **Shape data fields** and click **Next**.
 
 ![org chart wizard 7](media/orgchart-wizard6.png)
 
-1.  Click **Next**.
+12.  Click **Next**.
 
-2.  Pictures aren’t currently available.
+13.  Pictures aren’t currently available.
 
-3.  Select **I want the wizard to automatically break my organization chart across pages**.
+14.  Select **I want the wizard to automatically break my organization chart across pages**.
 
 ![org chart wizard 8](media/orgchart-wizard4.png)
 
-1.  Click **Finish**.
+15.  Click **Finish**.
 
     1.  If there are positions not in the structure you will be asked to include
         those in the diagram.
