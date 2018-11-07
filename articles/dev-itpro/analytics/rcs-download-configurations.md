@@ -52,34 +52,33 @@ The following steps explain how a user in the System Administrator or Electronic
 7. Close the page. 
 
 ### Register a new ER repository 
-1. In the list, mark the selected row. 
-   - Select Litware, Inc. provider. 
+1. In the list, select **Litware, Inc. provider**. 
 
-2. Click Repositories. 
+2. Click **Repositories**. 
 
-3. Click Add to open the drop dialog. 
+3. Click **Add** to open the drop dialog. 
 
-4. In the Configuration repository type field, enter 'RCS'. 
+4. In the **Configuration repository type** field, enter **RCS**. 
 
-5. Click Create repository. 
+5. Click **Create repository**. 
 
-6. In the RCS environment display name field, enter or select a value. Select the desired RCS instance. Note that you can have several of them. 
+6. In the **RCS environment display name** field, select the desired RCS instance. Note that you can have several of them. 
 
-7. Click OK. 
+7. Click **OK**. 
 
 ### Import ER configurations from RCS based repository 
 
-1. Click Show filters. 
+1. Click **Show filters**. 
 
-2. Apply the following filter: Enter a filter value of "RCS" on the "Name" field using the "begins with" filter operator. 
+2. Enter a filter value of **RCS** for the **Name** field using the **begins with** filter operator. 
 
-3. When you open the selected repository, on the “Connect to Regulatory Configuration Service” page click “Click here to connect to Regulatory Configuration Service” link. 
+3. When you open the selected repository, on the **Connect to Regulatory Configuration Service** page click **Click here to connect to Regulatory Configuration Service** link. 
 
-4. Click Open. 
+4. Click **Open**. 
 
-5. Click Close. 
+5. Click **Close**. 
 
-6. Select the desired version of ER configuration and click ‘Import’ to bring it in the current Finance and Operations instance.
+6. Select the desired version of ER configuration and click **Import** to import it into Finance and Operations.
 
 ## Additional resource
 - [Electronic reporting overview](general-electronic-reporting.md)
