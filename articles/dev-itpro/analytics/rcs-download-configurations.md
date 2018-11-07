@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
-description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. 
+description: This topic provides information about importing electronic reporting configurations from Regulatory Configuration Services. 
 author: NickSelin
 manager: AnnBe
 ms.date: 11/07/2018
