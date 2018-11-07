@@ -50,10 +50,21 @@ The following list describes the set of Dynamics 365 payment features supported 
 | Feature | Descrition | Supported | 
 | --- | --- | :-: |
 | **Duplicate Payment Protection** | Check to prevent duplicate payment scenarios in case the POS crashes and is unable to retrieve the signal from the payment terminal that the payment has been successfully processed. | ✔ |
-| **Omni-channel tokanization** | Support for omni-channel payment scenarios, such as buy online and pick up in store using existing authorization and card tokens. | ✔ |
+| **Omni-channel tokenization** | Support for omni-channel payment scenarios, such as buy online and pick up in store using existing authorization and card tokens. | ✔ |
 
 ## Sign Up with Adyen
-TODO
+Use of the connector requires a separate agreement with Adyen. To learn more about their services or create a test merchant account that can be used for the Dynamics 365 Payment Connector for Adyen, navigate to Adyen's website by clicking [here](https://www.adyen.com/partners/dynamics).
+
+If you would prefer to have Adyen contact you directly, send an email to partnerships@adyen.com. In the subject line of the email, include the term "Microsoft Dynamics connector". 
+In the body of the email, be sure to include enough information to help them route the inquiry properly:
+- Business name
+- Nature of business (i.e. merchant or Microsoft partner)
+- Business website
+- Business address
+- Contact name, title, email and phone
+- Annual processing volume(Optional)
+- Description of required services (i.e. e-Commerce only, e-Commerce and card present with 'X' number of payment terminals, etc.)
+
 
 ## Setup and Configuration
 > [!NOTE]
