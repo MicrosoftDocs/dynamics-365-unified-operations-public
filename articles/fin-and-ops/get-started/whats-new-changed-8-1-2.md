@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.2. This version was released in November 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/06/2018
+ms.date: 11/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,6 +52,10 @@ Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platfor
 
 ## Extensibility enhancements
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.2](../../dev-itpro/extensibility/extensibility-changes-812.md).
+
+## Derived dimension values
+This release includes functionality that lets you prevent changes to derived dimension values and override existing dimension values with derived dimension values. For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
+
 
 ## Third-party miscellaneous charges for Russia
 This release includes functionality for the registration of third-party miscellaneous charges and allocation by the following regimes: 
