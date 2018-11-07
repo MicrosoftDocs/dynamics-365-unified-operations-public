@@ -271,6 +271,8 @@ Follow these steps to create deployable packages that contain Retail components,
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
+    Add the following lines to the **ItemGroup** section.
+
     ```xml
     <_bin_ext_Z3_x86_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x86\*.*" />
     <_bin_ext_Z3_x64_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x64\*.*" />
