@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.1.2
 
 ---
 
-# Dynamics 365 SDK privacy data notice
+# Dynamics 365 payment SDK privacy data notice
 This topic provides an overview of the data that is provided to payment connectors via the payments SDK for Microsoft Dyanmics 365. All data listed in this topic is available through the payments SDK to help facilitate payments. The data used to conduct payments through a payment connector is subject to the terms of the party supplying the payment connector and the parties providing the payment services. 
 The data made available through the payment connector is may be used by the payment service provider in the United States or any other country in which it hosts services. 
 In certain cases, Microsoft may share your contact information with the third party service provider to operate and troubleshoot the service or prevent misuse.
@@ -38,7 +38,7 @@ In certain cases, Microsoft may share your contact information with the third pa
 ## Definition of "Customer data"
 Any data that could be used- by itself or combined with other data- to identify a party who uses Microsoft services is considered to be "Customer data". For the purposes of this document, the "Customer" is most commonly a business conducting transasctions through he payment connector. Other customers could be the VARs amd ISVs who helps to set up, test and write connectors that make those transactions possible. Whenever that data is transmitted to a third party, Microsoft confirms that the other party has protections in place to ensure that data is being protected or, in cases where Microsoft may not control where that data is sent, provides notices to indicate customer data is leaving its protection boundary. 
 
-## "Card Present" Customer data
+### "Card Present" Customer data
 When a payment terminal is implemented using the INamedRequestHandler, it is typically referred to as a "Card present" payment connector. The term card present is a way to describe such a payment connector due to the fact that is supports transactions where a physcical card is presented. In such an implementation, the following data is available through the payment SDK to facitlitate the transaction. That data may or may not be used by the payment connector. In such an implementation, the following data is available through the payment SDK to facitlitate the transaction. That data may or may not be used by the payment connector. 
 
 | Datapoint | Description |  
@@ -51,7 +51,7 @@ When a payment terminal is implemented using the INamedRequestHandler, it is typ
 | PaymentRequest.SaleData.SaleToAcquirerData	| Sale information intended for the acquirer. |
 | TransactionStatusRequest.MessageReference.SaleID	| Unique identifier of the Point of Sale. |
  
- ## "Card Not Present" Customer data
+ ### "Card Not Present" Customer data
 Payment connectors implemented for use in the back office, call center, or used in e-Commerce integrations are implemented using the IPaymentProcessor, are typically referred to as "Card not present" payment connectors. In this case, those connectors are described as "Card not present" because the card number has traditionally been manually entered or provided by some means other than a physical swipe or dip.  
 
 | Datapoint | Description |  
