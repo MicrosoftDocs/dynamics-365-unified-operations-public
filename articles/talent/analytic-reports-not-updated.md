@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Analytic reports are not being updated
-description: The customer's data changes don't show up on any of their workspaces.
+title: Analytic reports are not updated
+description: This topic explains what to do if a customer's data changes don't appear in any of the customer's workspaces.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -30,26 +30,24 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Analytic reports are not being updated
+# Analytic reports are not updated
 
 [!include [banner](includes/banner.md)]
 
-**Issue:**
+**Issue**
 
-The customer's data changes don't show up on the **Analytics** tabs of any of their workspaces.
+A customer's data changes don't appear on the **Analytics** tabs of any of the customer's workspaces.
 
-**Cause:**
+**Cause**
 
-By default, Power BI reports are refreshed every 4 hours as the “deploy measurement” batch job is scheduled.
+By default, Microsoft Power BI reports are refreshed every four hours, according to the schedule of the Deploy measurement batch job.
 
-**Resolution:**
+**Resolution**
 
-This may just be timing. The steps below list the process to initiate the batch job and update the analytics workspaces.
+This issue might just be a matter of timing. Follow these steps to start the batch job and update the analytics workspaces.
 
-1.  Navigate to the batch jobs page at **System administration > Links > Batch jobs > Batch jobs**, or use **Search** and enter “Batch Jobs”.
-
-1.  Find the **Deploy measurement** job in the list.
-
-1.  Select the **Edit** button on the top of the page and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.
+1. Open the **Batch jobs** page at **System administration \> Links \> Batch jobs \> Batch jobs**. Alternatively, use Search, and enter **Batch Jobs**.
+1. Find the **Deploy measurement** job in the list.
+1. Select **Edit** at the top of the page, and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.
 
 ![Batch jobs](media/batch-jobs.png)
