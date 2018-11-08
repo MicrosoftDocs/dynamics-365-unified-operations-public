@@ -304,29 +304,28 @@ The third step is where the business logic of starting the production order is e
 
 The ProcessGuideStepWithoutPrompt abstract class implements the default behavior for such steps. The current step, therefore, should extend the ProcessGuideStepWithoutPrompt class and override the doExecute() method.
 
-The following code snippet shows the class and the doExecute() method implementation. The method simply retrieves the order ID and user ID from the session state and invokes the method to start this production order.
+The following code example shows the class and the doExecute() method implementation. The method simply retrieves the order ID and user ID from the session state and invokes the method to start this production order.
 
 ![](media/class-and-method-implementation.png)
 
 In case of an exception, the framework exception handling logic ensures that the process is rolled back to the previous step.
 
 > [!NOTE]
-> An interesting line of code is the invoke to addProcessCompletionMessage(). What this does is, adds the “Work completed” message to the navigation parameters. The next step (assuming it has a user interface) will display this message. The base classes handle this logic, and no specific code needs to be added to the process classes to achieve this behavior.
+> The invoke to addProcessCompletionMessage() adds the “Work completed” message to the navigation parameters. The next step (assuming it has a user interface) will display this message. The base classes handle this logic, and no specific code needs to be added to the process classes to achieve this behavior.
 
 
 Building the navigation through the steps
 -----------------------------------------
 
-So far, we have looked at the implementation of the steps, but skipped the discussion on how to navigate from one step to the next. The
-ProcessGuideNavigationAgent class does exactly that. The ProcessGuideController base class instantiates the ProcessGuideNavigationAgentDefault class, which relies on a pre-defined navigation route, which is nothing but a simple map of source and destination steps. For the production start scenario, since there is not conditional branching, this implementation would suffice. Therefore, all we need is to override the initializeNavigationRoute() method to define the navigation route.
+The ProcessGuideController base class instantiates the ProcessGuideNavigationAgentDefault class, which relies on a pre-defined navigation route, which is a simple map of source and destination steps. For the production start scenario, because there is no conditional branching, this implementation would suffice. Therefore, you only need to override the initializeNavigationRoute() method to define the navigation route.
 
 ![Override method code](media/override-method-code.png)
 
-Now, there will be processes where there will be conditional branching (based on user actions, or any other conditions). Such processes would need to do the following:
+There are processes where there will be conditional branching (based on user actions, or any other conditions). Such processes need to do the following:
 
--   Implement specific navigation agents inherited from ProcessGuideNavigationAgent class.
+-   Implement specific navigation agents inherited from the ProcessGuideNavigationAgent class.
 
--   Implement specific navigation agent factory inherited from ProcessGuideNavigationAgentAbstractFactory class, containing logic to     instantiate the correct navigation agent based on current step, session state, user action or any other logic.
+-   Implement the specific navigation agent factory inherited from the ProcessGuideNavigationAgentAbstractFactory class, containing logic to instantiate the correct navigation agent based on current step, session state, user action, or other logic.
 
 -   Optionally, override navigationAgentCreationParameters() in the controller class to pass suitable parameters.
 
@@ -335,7 +334,7 @@ Now, there will be processes where there will be conditional branching (based on
 Action classes
 --------------
 
-We mentioned briefly that the Action classes represent user actions. Let us take an example of OK action, as an example of understanding how the actions are created.
+Action classes represent user actions. Let's use the **OK** action as an example of understanding how the actions are created.
 
 ``[ProcessGuideActionName(#ActionOK)]
 public class ProcessGuideOKAction extends ProcessGuideAction
@@ -352,11 +351,11 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 The class must implement 2 abstract methods:
 
--   label() which returns the label to be displayed in a button control tied to this action
+-   label(), which returns the label to be displayed in a button control tied to this action.
 
--   doExecute() which performs the action. As mentioned before, the OK button simply performs a callback to the step. However, other actions might have more complex logic here.
+-   doExecute(), which performs the action. As mentioned earlier, the **OK** button simply performs a callback to the step. However, other actions might have more complex logic here.
 
-The actions are instantiated using SysExtension framework based on the ProcessGuideActionName attribute. Similar to the instantiation of page builders, the step class implements the default action factory, and it is possible to override that. The page builder adds a button control like this:
+The actions are instantiated using SysExtension framework based on the ProcessGuideActionName attribute. Similar to the instantiation of page builders, the step class implements the default action factory, and it is possible to override that. The page builder adds a button control like this.
 
 ``_page.addButton(step.createAction(#ActionOK), true);``
 
@@ -365,45 +364,45 @@ In doing so, it asks the step to create an action class for the passed name and 
 To summarize
 ============
 
-Now that we have gone through all the bits and pieces, let’s make a comprehensive summary of the code we needed for the process:
+To summarize all of what's been explained in this topic, here's a comprehensive summary of the code needed for the process:
 
 1.  **ProdProcessGuideProductionStartController**
 
-    1.  Override initialStepName() to provide the name of the first step
-    2.  Override initializeNavigationRoute() to construct the navigation map
+    1.  Override initialStepName() to provide the name of the first step.
+    2.  Override initializeNavigationRoute() to construct the navigation map.
 
         ![Construct navigation map](media/construct-navigation-map.png)
 
 2.  **ProdProcessGuidePromptProductionIdStep**
 
-    1.  Override isComplete() to specify when the step is considered complete
-    2.  Override pageBuilderName() to specify the page builder to be used
+    1.  Override isComplete() to specify when the step is considered complete.
+    2.  Override pageBuilderName() to specify the page builder to be used.
 
 ![Specify page builder](media/specify-page-builder.png)
 
 3.  **ProdProcessGuidePromptProductionIdPageBuilder**
 
-    1.  Override addDataControls() to add the Prod Id textbox.
-    2.  Override addActionControls() to add the OK and Cancel buttons.
+    1.  Override addDataControls() to add the Prod ID textbox.
+    2.  Override addActionControls() to add the **OK** and **Cancel** buttons.
 
         ![Override addActionControls](media/override-add-data-controls.png)
 
 4.  **ProdProcessGuideConfirmProductionOrderStep**
 
-    1.  Override pageBuilderName() to specify the page builder to be used
+    1.  Override pageBuilderName() to specify the page builder to be used.
 
         ![Override pageBuilderName](media/override-page-builder-name.png)
 
 3.  **ProdProcessGuideConfirmProductionOrderPageBuilder**
 
-    1.  Override addDataControls() to add the order, item and qty information labels
+    1.  Override addDataControls() to add the order, item and quantity information labels.
 
-    2.  Override addActionControls() to add the OK and Cancel buttons.
+    2.  Override addActionControls() to add the **OK** and **Cancel** buttons.
 
         ![Override addActionControls](media/override-controls.png)
 
         > [!NOTE]
-        > The generateItemInfoForProdId() method, which is used for generating the item information labels, is excluded from this discussion. This just queries a few tables to get item id, description and dimensions. Feel free to look into the source code if you are curious about how this looks.
+        > The generateItemInfoForProdId() method, which is used for generating the item information labels, is excluded from this topic. This just queries a few tables to get item ID, description, and dimensions. If you want a better understanding of generateItemInfoForProdId(), look at the source code.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -419,7 +418,7 @@ Now that we have gone through all the bits and pieces, let’s make a comprehens
 Extending a business process
 ============================
 
-So far, we have looked at how to build a new process using the ProcessGuide framework. In this final section, let us look at some examples of how this business process can be extended.
+So far, this topic has highlighed how to build a new process using the ProcessGuide framework. In this final section, you will find some examples of how this business process can be extended.
 
 Add a step in a flow (using ProcessGuideNavigationAgentDefault)
 ---------------------------------------------------------------
@@ -439,7 +438,7 @@ Where to extend:
 
 -   Child of ProdProcessGuideNavigationAgentFactory/ProdProcessGuideNavigationAgent.
 
-How:
+How to extend:
 
 -   Create a new child class of ProcessGuideNavigationAgent that returns the desired step name.
 
@@ -454,7 +453,7 @@ Where to extend:
 
 -   Child of ProdProcessGuidePageBuilder for the step.
 
-How:
+How to extend:
 
 -   Extend the addDataControls() method and add the additional control.
 
@@ -465,7 +464,7 @@ Where to extend:
 
 -   Child of ProdProcessGuideStep.
 
-How:
+How to extend:
 
 -   Create a new child class of ProdProcessGuidePageBuilder class, and implement the desired user interface.
 
@@ -478,6 +477,6 @@ Where to extend:
 
 -   Child of ProdProcessGuideStep.
 
-How:
+How to extend:
 
 -   Extend the isComplete() method to build the additional logic.
