@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Talent app doesn't appear in Microsoft Dynamics 365 apps (CDS1.0)
-description: The customer doesn't see the Talent app with the Microsoft Dynamics 365 apps.
+title: Talent doesn't appear among the Microsoft Dynamics 365 apps (CDS1.0)
+description: This topic explains what to do if the customer doesn't see the Microsoft Dynamics 365 for Talent app among the Microsoft Dynamics 365 apps.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -30,38 +30,32 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Talent app doesn't appear in Microsoft Dynamics 365 apps (CDS1.0)
+# Talent doesn't appear among the Microsoft Dynamics 365 apps (CDS1.0)
 
 [!include [banner](includes/banner.md)]
 
+**Issue**
 
-**Problem:**
+The customer doesn't see the Microsoft Dynamics 365 for Talent app among the Microsoft Dynamics 365 apps.
 
-The customer doesn't see the Talent app with the other Microsoft Dynamics 365 apps.
+**Resolution**
 
-**Resolution:**
+The user must be added to the Environment Maker role for the environment in Microsoft PowerApps.
 
-The user doesn't belong to the "Environment Maker" role for the environment in PowerApps.
+1. The admin user who has a PowerApps Plan 2 license must open the [PowerApps Admin portal](https://preview.admin.powerapps.com/).
+2. Select **Environments**, and select the correct environment for Talent.
+3. On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.
 
-1.  The admin user who has a PowerApps Plan 2 license must go to the [PowerApps
-    Admin portal](https://preview.admin.powerapps.com/).
+    ![Environment roles tab](media/environment-roles.png)
 
-1.  Click **Environments** and select the correct environment for Talent.
+4. On the **Users** tab, add the user or your organization.
 
-2.  Select the **Security** tab
+    ![Users tab](media/environment-maker.png)
 
-3.  Click **Environment roles > Environment Maker**.
+5. Select **Save**.
+6. The user must now sign in to [Microsoft Dynamics 365](https://home.dynamics.com/).
+7. Select **Sync** to update the user apps.
 
-![environment roles](media/environment-roles.png)
+    ![Sync button](media/get-more.png)
 
-1.  Add the user or your organization.
-
-![environment maker](media/environment-maker.png)
-
-1.  Click **Save**.
-
-2.  The user must now go to the [Dynamics login](https://home.dynamics.com/).
-
-3.  Click the **Sync** button to update the user apps. Once the sync is complete, Talent will appear in the Home Page.
-
-![](media/get-more.png)
+    After synchronization is completed, Talent will appear on the home page.
