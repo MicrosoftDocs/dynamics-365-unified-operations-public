@@ -1,4 +1,4 @@
----
+----
 # required metadata
 
 title: Financial reporting (Russia)
@@ -43,9 +43,9 @@ You should also configure electronic message processing so that one step lets an
 
 Complete the following tasks to set up the financial reports:
 
-- Set up report names.
-- Set up report cells.
-- Set up calculation rules for report cells.
+1. Set up report names.
+2. Set up report cells.
+3. Set up calculation rules for report cells.
 
 ### Set up report names
 1. Go to **General ledger \> Financial reports setup \> Financial reports** to open the **Reports** page. The **Overview** tab shows a list of all the reports that are set up in the system.
@@ -100,8 +100,7 @@ You can set up the cells of a report either manually or by copying them from ano
     > [!TIP]
     > For example, you can use a concatenation of XML tag names from the official electronic format of the report. 
 
-3. Credit transaction amount for the ledger in correspondence with other ledger accounts for the period.
-4. Enter a description of the line.
+3. Enter a description of the line.
 
 The tabs in the upper pane, and the fields on each tab, are the same as the tabs and fields on the **Reports** page. Values that are entered for a report cell on the **Requisites setup** page supersede the values that are entered for the report on the **Reports** page.
 
@@ -218,16 +217,20 @@ Use the following procedure to create operations for report cells.
 13. Optional: The **General**, **Posting layer**, and **Financial dimensions** tabs have the same fields as the corresponding tabs in upper pane of the **Requisites setup** page and the **Reports** page. On each tab, set values for the operation lines. Values that are entered for an operation supersede the default values that are entered for the cell and/or the report.
 14. After you've finished creating the operation lines, you can arrange them in the correct order. Select a line, and then select the **Up** or **Down** button to move it one position up or down.
 
-## Configure ER to take the results of financial report calculations
+## Configure ER to use the results of financial report calculations
 
 For more information about ER, see [Electronic reporting](../../dev-itpro/lcs-solutions/country-region.md#electronic-reporting). 
+https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting 
 
-The following example shows how to configure ER to take the results of financial report calculations.
+The following example shows how to configure ER to use the results of financial report calculations.
 
-1. Create a data model for financial reports. Create a model node that is named **Items**, and that is of the **Record list** type.
-2. Create the following nodes under the **Items** node.
+1.	Create a new Data model ER configuration for Financial reports (review this page for more details about design of ER data models).
+2.	In ER model designer, create root item and name it Model.
+3.	Under Root item, create item of data type Record list and name it Items.
 
-    | Node name | Data type | Description |
+Create the following fields under Items:
+
+    | Field name | Data type | Description |
     |-----------|-----------|-------------|
     | Code | String | This node gets information from the report cell code. |
     | ReportCode | String | This node gets the code of the financial report. |
@@ -236,11 +239,13 @@ The following example shows how to configure ER to take the results of financial
 
     ![Data model](media/model.jpg)
 
-3.	Follow these steps to create the model mapping:
+Create a new ER model mapping configuration under the added ER model configuration (review this page https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11 for more details about design of ER model mappings).
+
+4.	Create Model mapping. In Model mapping designer do the following:
 
     1. Create the User input parameter for **Report code**:
 
-        1. In the Model mapping designer, in the left pane, on the **Mapping** tab, under **Data source types**, select **General**, and then select the **User input parameter** line.
+        1. In the left pane, on the **Mapping** tab, under **Data source types**, select **General**, and then select the **User input parameter** line.
         2. In the **Data sources** pane on the right, select **Add root**. 
         3. In the **Name** field, enter **FinancialReport\_UIP** as the name of the User input parameter. In the **Operations data type name (EDT, enum)** field, select the **LedgerRRGRepCode\_RU** extended data type (EDT).
 
@@ -250,13 +255,13 @@ The following example shows how to configure ER to take the results of financial
 
         ![User input parameter for Base date](media/base-date-uip.jpg)
 
-4. Create and set up the User input parameter for **Reporting date** (for example, use the **ReportingDate\_RU** EDT):
+    3. Create and set up the User input parameter for **Reporting date** (for example, use the **ReportingDate\_RU** EDT):
 
-    1. Add the **LedgerRRGCustomReportHelper\_RU** class as a data source that is named **$RRGCustom**.
+    4. Add the **LedgerRRGCustomReportHelper\_RU** class as a data source that is named **$RRGCustom**.
 
         ![$RRGCustom data source](media/data-source-rrg-custom.jpg)
 
-    2. Create a calculated field that is named **$DataCustom**, and that has the following formula:
+    5. Create a calculated field that is named **$DataCustom**, and that has the following expression:
 
         '$RRGCustom'.getCustomReportData(FinancialReport\_UIP, BaseDate\_UIP, ReportingDate\_UIP)
 
@@ -269,22 +274,25 @@ The following example shows how to configure ER to take the results of financial
     - **ParmFieldAmount** – The value of the calculated cell if it has a data type of **Real**.
     - **ParmFieldText** – The value of the calculated cell if it has a data type of **String**.
 
-5. Bind the data source to model nodes:
+    6. Bind the data source to model items:
 
-    1. Bind the **$DataCustom** calculated field to the **Items** model node.
-    2. Bind the record list fields in the following way:
+       1. Bind the **$DataCustom** calculated field to the **Items** model item.
+       2. Bind the record list fields in the following way:
 
-        - Items \> Code \<-\> ParmFieldId
-        - Items \> Text \<-\> ParmFieldText
-        - Items \> Value \<-\> ParmFieldAmount 
-        - Items \> ReportCode \<-\> FinancialReport\_UIP
+           - Items \> Code \<-\> ParmFieldId
+           - Items \> Text \<-\> ParmFieldText
+           - Items \> Value \<-\> ParmFieldAmount 
+           - Items \> ReportCode \<-\> FinancialReport\_UIP
 
     ![Binding](media/binding.jpg)
 
-6. Set up the format of the report. In the format configuration, filter the **Items** record list by a constant value of **Items.Code**. Bind the **Items.Text** or **Items.Value** nodes of the filtered line to the respective format nodes.
-7. Run the report from the **Electronic reporting** workspace. Set the following fields:
+6. Set up the format of the report. Find more derails on how to add a new format congfiguration https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-configuration-2016-11 
 
-    - **Calculation date** – Specify the base date for the period of financial report identification.
+In the format configuration, filter the **Items** record list by a constant value of **Items.Code**. Bind the **Items.Text** or **Items.Value** nodes of the filtered line to the respective format nodes.
+
+7. Run configured format from the **Electronic reporting** workspace to generate report. Set the following fields:
+
+    - **Calculation date** – Specify the base date to identify the period for the financial report.
     - **Report code** – Select the code for the financial report.
     - **Reporting date** – Optionally specify the date that you're generating the report.
 
