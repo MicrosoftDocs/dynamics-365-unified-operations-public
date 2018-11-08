@@ -32,7 +32,11 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Build POS Hybrid app on Android and iOS
 [!include [banner](../includes/banner.md)]
 
-This topic shows how to build and run the Retail POS hybrid app on Android and iOS devices. Retail hybrid app is shell built using  [Xamarin](https://docs.microsoft.com/en-us/xamarin/) and inside the shell we added WebView controller which loads the cloud POS based on the Retail server URL specified in the settings of this app. This is not a native app for iOS or Android instead we created Retail hybrid app shell for Android and iOS which will internally loads the [Cloud POS.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/mpos-or-cpos).
+This topic shows how to build and run the Retail POS hybrid app on Android and iOS devices. 
+
+## Overview
+
+Retail hybrid app is shell built using  [Xamarin](https://docs.microsoft.com/en-us/xamarin/) and inside the shell we added WebView controller which loads the cloud POS based on the Retail server URL specified in the settings of this app. This is not a native app for iOS or Android instead we created Retail hybrid app shell for Android and iOS which will internally loads the [Cloud POS.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/mpos-or-cpos).
 
 ## Development tools
 The Retail hybrid app supports the Android and iOS phone platforms. The app is built by using Xamarin, and you must install Xamarin on your development computer. To build the iOS app, you must have a Mac that has Xamarin installed. Although you can do development for both Android and iOS on a computer that runs Microsoft Windows, you must use a Mac to complete the build for the iOS platform. If your Mac is a shared team resource, you might want to use a Mac just for the build process. You must copy the Retail software development kit (Retail SDK) on all the computers you use for development. Retail SDK is available in all developer VM provisioned/downloaded using [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)
