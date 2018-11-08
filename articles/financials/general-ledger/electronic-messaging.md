@@ -130,7 +130,7 @@ You can manually set up an executable class on the **Executable class settings**
 
 ### Populate records actions
 
-You use populate records actions to set up actions that add records to the **Massage items** table so that they can be added further to an **Electronic message**. For example, if your electronic message must report customer invoices you need to set up a **Populate records** action with a data source on customer invoice journal. You can set up populate records actions on the **Populate records action** page (**Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**). Create a new record for every action that should add records to the table, and set the following fields.
+You use populate records actions to set up actions that add records to the Message items table so that they can be added to an electronic message. For example, if your electronic message must report customer invoices, you must set up a **Populate records** action that has a data source on the customer invoice journal. You can set up populate records actions on the **Populate records action** page (**Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**). Create a new record for every action that should add records to the table, and set the following fields.
 
 | Field       | Description                                                               |
 |-------------|---------------------------------------------------------------------------|
@@ -156,21 +156,21 @@ You use web service settings to set up direct data transmission to a web service
 
 The following table describes the fields on the **Web service settings** page.
 
-| Field                   | Description                                                                                                     |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Web service             | Enter a name for the web service.                                                                               |
-| Description             | Enter a description of the web service.                                                                         |
-| Internet address        | Enter the internet address of the web service.                                                                  |
+| Field                   | Description |
+|-------------------------|-------------|
+| Web service             | Enter a name for the web service. |
+| Description             | Enter a description of the web service. |
+| Internet address        | Enter the internet address of the web service. |
 | Certificate             | Select a Key Vault certificate that has previously been set up. |
-| The response type – XML | Set this option to **Yes** if the response type is XML.                                                         |
-| Request method          | Specify the method of the request. HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. It can be 'GET', 'POST' or other HTTP method.                                                                             |
-| Request headers         | Specify request headers. A request header is an HTTP header that can be used in an HTTP request, and that doesn't relate to the content of the message.                                                                                        |
-| Accept encoding         | Specify the Accept-Encoding. The Accept-Encoding request HTTP header advertises which content encoding, usually a compression algorithm, the client is able to understand.                                                                                    |
-| Content type            | Specify the content type. The Content-Type entity header is used to indicate the media type of the resource.                                                                                      |
+| The response type – XML | Set this option to **Yes** if the response type is XML. |
+| Request method          | Specify the method of the request. HTTP defines a set of request methods that indicate the action that should be performed for a given resource. The method can be **GET**, **POST**, or another HTTP method. |
+| Request headers         | Specify request headers. A request header is an HTTP header that can be used in an HTTP request, and that isn't related to the content of the message. |
+| Accept encoding         | Specify the Accept-Encoding. The Accept-Encoding request HTTP header advertises the content encoding that the client can understand. This content encoding is usually a compression algorithm. |
+| Content type            | Specify the content type. The Content-Type entity header indicates the media type of the resource. |
 
 ### Message processing actions
 
-You use message processing actions to create actions for your processes and to set up their parameters. You can set up message processing actions on the **Message processing actions** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**).
+You use message processing actions to create actions for your processes and set up their parameters. You can set up message processing actions on the **Message processing actions** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**).
 
 The following tables describe the fields on the **Message processing actions** page.
 
@@ -178,7 +178,7 @@ The following tables describe the fields on the **Message processing actions** p
 
 | Field                   | Description |
 |-------------------------|-------------|
-| Action type             | Select the type of action. For information about the available options, see the [Action types](#action-types) section. |
+| Action type             | Select the type of action. For information about the available options, see the [Message processing action types](#message-processing-action-types) section. |
 | Format mapping          | Select the ER format that should be called for the action. This field is available only for actions of the **Electronic reporting export**, **Electronic reporting import**, and **Electronic reporting export message** types. |
 | Message item type       | Select the type of records that the action should be evaluated for. This field is available for actions of the **Message item execution level**, **Electronic reporting export**, and **Electronic reporting import** types, and also some other types. If you leave this field blank, all the message item types that are defined for the message processing are evaluated. |
 | Executable class        | Select executable class settings that were previously created. This field is available only for actions of the **Message item execution level** and **Message item execution level** types. |
@@ -188,7 +188,7 @@ The following tables describe the fields on the **Message processing actions** p
 
 The following options are available in the **Action type** field:
 
-- **Populate records** – A **Populate records** action must be set up previously. Associate it with an action of "Populate records" type to let included it to a processing. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
+- **Populate records** – A **Populate records** action must previously be set up. Associate it with an action of the **Populate records** type to let included it to a processing. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
 - **Create message** – Use this type to let users manually create messages on the **Electronic message** page. An initial status can't be set up for an action of this type.
 - **Message execution level** – Use this type to set up an executable class that should be evaluated at the message level.
 - **Message item execution level** – Use this type to set up an executable class that should be evaluated at the message item level.
@@ -198,7 +198,6 @@ The following options are available in the **Action type** field:
 - **Message level user processing** – Use this type for actions that assume some manual actions by the user. For example, the user might update the status of messages.
 - **User processing** – Use this type for actions that assume some manual action by the user. For example, the user might update the status of messages items.
 - **Web service** – Use this type for actions that should transmit a generated report to a web service. This action type isn't used for Italian Purchase and Sales Invoices Communication reporting.
-
 - **Request verification** – Use this type to request verification from a server.
 
 #### Initial statuses FastTab
@@ -224,7 +223,7 @@ The following options are available in the **Action type** field:
 
 Electronic message processing is a basic concept of the Electronic messages functionality. It aggregates actions that should be evaluated for the electronic message. The actions can be linked via an initial status and a result status. Alternatively, actions of the **User processing** type can be started independently. On the **Electronic message processing** page (**Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**), you can also select additional fields that should be supported for the processing.
 
-The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately (user actions must be run separately only), or whether it can be initiated by the processing.
+The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately, or whether it can be initiated by the processing. (User actions must be run separately.)
 
 The **Message item additional fields** FastTab lets you add predefined additional fields that are related to message items. You must add additional fields for each type of message item that the fields are related to.
 
@@ -238,7 +237,7 @@ The **Batch** FastTab lets you set up processing to work in a batch regime.
 
 If you're working at the message level, the **Electronic messages** page (**Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**) is more useful. If you're operating at the data collection (message item) level, the **Electronic message items** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic message items**) is more useful.
 
-### Electronic messages 
+### Electronic messages
 
 The **Electronic messages** page presents the processing that is available to you, based on your role. Security roles are associated with processing in the setup of that processing. For each processing that is available to you, the page shows electronic messages and information that is related to them.
 
@@ -269,9 +268,9 @@ To review an attachment that is related to a specific action that was previously
 
 You can also run either the whole processing or just a specific action by selecting **Run processing** on the Action Pane.
 
-### Electronic message items 
+### Electronic message items
 
-**Electronic message items** page presents all message items and a log of the actions that have been run for each message item. It also shows the additional fields that are defined for the message items, and the values of those additional fields.
+The **Electronic message items** page presents all message items and a log of the actions that have been run for each message item. It also shows the additional fields that are defined for the message items, and the values of those additional fields.
 
 The following table describes the fields on the **Message items** tab.
 
@@ -320,7 +319,7 @@ The following table describes the fields on the **Message items** tab.
 </tr>
 <tr>
 <td>Account number</td>
-<td>The account number of a customer or vendor (or another field value, depending on the field that is defined on the populate records action). This field can be filled in automatically only when an invoice is added to the Message items table.</td>
+<td>The account number of a customer or vendor (or another field value, depending on the field that is defined on the <strong>Populate records</strong> action). This field can be filled in automatically only when an invoice is added to the Message items table.</td>
 </tr>
 <tr>
 <td>Message</td>
@@ -349,7 +348,7 @@ Select **Generate report** on the Action Pane to generate a report. This button 
 
 #### Update status
 
-Select **Update status** on the Action Pane to update the status of one or more message items. In the **Update status** dialog box, use the **Records to include** FastTab to select message items for update. Make sure that you correctly define the selection criteria, because message items statuses will be updated according to these criteria, the initial status of the selected action, and the **New status** value that you set. After a status update is completed, it will be difficult to determine which items were just updated. Therefore, it will be difficult to roll back status updates.
+Select **Update status** on the Action Pane to update the status of one or more message items. In the **Update status** dialog box, use the **Records to include** FastTab to select message items for update. Make sure that you correctly define the selection criteria, because message item statuses will be updated according to these criteria, the initial status of the selected action, and the **New status** value that you set. After a status update is completed, it will be difficult to determine which items were just updated. Therefore, it will be difficult to roll back status updates.
 
 #### Electronic messages
 
@@ -369,81 +368,93 @@ Select **Original document** on the Action Pane to open the original document fo
 
 ## Example
 
-If you have created and mapped to data source(s) and completed your ER format, you can run it using the Electronic reporting workspace to get a generated report. You can then save the generated report locally. If you want to control the following aspects of the reporting process, you need to set up electronic messaging processing:
+After you've created your ER format, mapped it to data sources, and completed it, you can run it by using the **Electronic reporting** workspace. A report is generated that you can save locally.
 
-- log information about who generated the report
-- log when the report was generated
-- save the reports generated for the previous period(s)
+To control the following aspects of the reporting process, you must set up electronic messaging processing:
 
-This section provides an example of how you might set up the Electronic messages functionality to build a reporting process.
+- Log information about who generated the report.
+- Log when the report was generated.
+- Save the reports that were generated for previous periods.
+
+This section provides an example that shows how you might set up the Electronic messages functionality to build a reporting process.
 
 ### Set up and run processing to call a simple ER exporting format to generate an Excel report
 
-This paragraph proposes an example of how you may set up Electronic messaging to run generation of a report based on a ER Excel exporting format. To follow ER Excel exporting format is already created, mapped to data source(s) and completed. It is also supposed that a number sequence for Electronic messages is set up.
-Building a processing, it is helpful to define first the processing actions and statuses which are going to be set up. For this example, the processing would look like:
+This section provides an example that shows how you can set up electronic messaging to generate a report that is based on an ER Excel exporting format. To follow this example, the ER Excel exporting format must already be created, mapped to data sources, and completed. A number sequence must already be set up for electronic messages.
 
-![processing scheme](media/processing-scheme.png)
+When you build processing, it's helpful if you first define the processing actions and statuses that will be set up. The following illustration shows what the processing looks like for this example.
+
+![Processing scheme](media/processing-scheme.png)
 
 #### Create message statuses
 
-1. Go to **Tax > Setup > Electronic messages > Message statuses**.
+1. Go to **Tax \> Setup \> Electronic messages \> Message statuses**.
 2. Create the following message statuses:
-  -	New
-  -	Prepared
-  -	Generated
 
-![Message status creation](media/message-statuses.png)
+    - New
+    - Prepared
+    - Generated
 
-3. Select the **Allow delete** check box to let the user delete messages in the “New” status.
+    ![Message statuses](media/message-statuses.png)
+
+3. On the line for the **New** status, select the **Allow delete** check box to let users delete messages that have this status.
 
 #### Create additional fields
 
-1. Go to **Tax > Setup > Electronic messages > Additional fields**.
-2. Add an Additional field and its values, for example:
+1. Go to **Tax \> Setup \> Electronic messages \> Additional fields**.
+2. Add an additional field and its values. Here is an example.
 
-![Additional fields](media/additional-fields.png)
+    ![Additional fields](media/additional-fields.png)
 
-3. Select the **User edit** check box to let users edit the field.
+3. Set the **User edit** option to **Yes** to let users edit the field.
 
 #### Create message processing actions
-For this example, you'll create the following actions:
-  - **Create message**
-  - **Update to Prepared**
-  - **Generate report**
-  - **Update to initial status** (Optional) 
 
-1. Go to **Tax > Setup > Electronic messages > Message processing actions**.
-2. Create an action called **Create message** with the following fields completed:
-    - Action type = **Create message** 
-3. Create an action called **Update to Prepared** with the following fields completed:
-    - Action type = **Message level user processing**
-    - Initial statuses = **New**
-    - Result statuses = **Prepared** with a **Response type** = Successfully executed.
-4. Create an action called **Generate report**.
-    - Action type = Electronic reporting export
-    - Format mapping - Select the ER exporting format. Your options are: **Excel**, **XML**, **JSON**, **Text**, **other**.
-    - Initial statuses
-    - Result statuses
-  
-  ![Generate report action](media/generate-report-action.png)
-  
-5. (Optional) To allow the user to re-generate a report several times, you can set up an **Update to initial status** action with the following fields completed:
-    - Action type = Message level user processing
+For this example, you will create the following actions:
+
+- **Create message**
+- **Update to Prepared**
+- **Generate report**
+- **Update to initial status** (optional)
+
+1. Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
+2. Create an action that is named **Create message**. On the **General** FastTab, in the **Action type** field, select **Create message**.
+3. Create an action that is named **Update to Prepared**, and set the following fields:
+
+    - On the **General** FastTab, in the **Action type** field, select **Message level user processing**.
+    - On the **Initial statuses** FastTab, in the **Message status** field, select **New**.
+    - On the **Result statuses** FastTab, in the **Message status** field, select **Prepared**. In the **Response type** field, enter **Successfully executed**.
+
+4. Create an action that is named **Generate report**, and set the following fields:
+
+    - On the **General** FastTab, in the **Action type** field, select **Electronic reporting export**. In the **Format mapping** field, select the ER exporting format. The options are **Excel**, **XML**, **JSON**, **Text**, and **Other**.
+    - On the **Initial statuses** FastTab, in the **Message status** field, select **Prepared**.
+    - On the **Result statuses** FastTab, in the **Message status** field, select **Generated**. In the **Response type** field, enter **Successfully executed**.
+
+    ![Generate report action](media/generate-report-action.png)
+
+5. Optional: To let users regenerate a report several times, you can create an **Update to initial status** action and set the following fields:
+
+    - On the **General** FastTab, in the **Action type** field, select **Message level user processing**.
     - Initial statuses
     - Result statuses
 
 #### Electronic message processing
-In our example all the actions should be set up to run separately as it is supposed that each action will be initialized by user.
-1. Go to **Tax > Setup > Electronic messages > Electronic message processing**.
-2. Add one record for your processing and add all previously defined actions and an additional field.
-3. (Optional) Expand the **Security roles** FastTab to define security roles for your processing to restrict access to a specific reporting. 
-4. Go to **Tax > Inquires and reports > Electronic messages > Electronic messages** and click **New** to create a new message. At this point, you can add dates, a description and update the value of the Additional field (if needed):
-![Create electronic message](media/create-electronic-message.png)
-Action log is filled in automatically, so all the actions done with the message are logged.
-Now you may either delete or update message status. To update message status, click on “Update status” button and select new status as “Prepared”:
-![Update status button](media/update-status.png)
-As a result, the message status is updated to “Prepared” and now you may generate the report. To do so, click on the “Generate report” button. The report will be generated, Message status and Action log updated. To view the generated report, click the attachment button on Action pane.
 
+In this example, all the actions should be set up so that they run separately. The assumption is that every action will be initialized by the user.
 
+1. Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
+2. Add a record for your processing, and add all previously defined actions and an additional field.
+3. Optional: On the **Security roles** FastTab, define security roles for your processing to restrict access to specific reporting.
+4. Go to **Tax \> Inquires and reports \> Electronic messages \> Electronic messages**.
+5. Select **New** to create a message. At this point, you can add dates and a description. You can also update the value of the additional field as you require.
 
+    ![Create an electronic message](media/create-electronic-message.png)
 
+The grid on the **Action log** FastTab is automatically filled in with a log of all actions that are performed on the message.
+
+You can now either delete or update the message status. To update the message status, select **Update status**, and then, in the **New status** field, select **Prepared**. Then select **OK**.
+
+![Update the message status](media/update-status.png)
+
+The message status is updated to **Prepared**, and you can now generate the report by selecting **Generate report**. The report is generated, and the message status and action log are updated. To view the generated report, select the **Attachment** button on the Action Pane.
