@@ -2,7 +2,7 @@
 # required metadata
 
 title: Talent client disconnects
-description: The customer is getting disconnected form their environment and doesn’t know why.
+description: This topic explains what to do if the customer is disconnected from his or her environment and doesn't know why.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -34,43 +34,29 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-**Environment details:** 
+**Environment details** 
 
-All environments.
- 
+This issue can occur in all environments.
+ 
+**Symptom** 
 
-**Symptom:** 
+The customer is disconnected from his or her environment and doesn't know why. The customer receives one of the following error messages:
 
-The customer is getting disconnected form their environment and doesn’t know why. The customer receives one of the following errors.
+- We've lost your connection. Click Close to continue working.
+- It appears you lost network connectivity, click Retry to try again.
 
--   “We've lost your connection. Click Close to continue working.”
+**Red flag**
 
--   “It appears you lost network connectivity, click Retry to try again.”
+This issue often occurs when users are in the implementation stage, are comparing information across production and test environments, and forget that they are moving between sessions. If users are at this stage, they will most likely experience this issue.
 
-**Red flag:**
+**Issue** 
 
-This often happens when users are in the implementation stage since they are
-comparing information across Production and Test environments and forget that
-they are moving between sessions. If they are at this stage, most likely they
-would see this issue.
-   
+**Browser types:** Google Chrome, Internet Explorer, and Microsoft Edge
 
-**Problem:** 
+The Microsoft Dynamics 365 for Talent platform disconnects users when two different sessions are open at the same time for the same user and the same browser type. (For example, user A is viewing both environment 1 and environment 2 in Chrome.) It doesn't matter whether the users open different browser windows or different tabs. If the same user credentials are used to sign in to both environment 1 and environment 2 at the same time and in the same browser type, Talent disconnects one of the sessions.
 
-Browser types: Chrome, Internet Explorer, Edge.
+**Solution**
 
-The Talent platform disconnects users when two different sessions are opened at
-the same time for the same user and browser type (for example, User A is looking at
-Environment 1 and Environment 2 within Chrome.) It doesn't matter if they open different browser windows or just different tabs, if it is the same user
-credentials logging into environment 1 and environment 2 at the same time from
-the same browser, Talent will disconnect one of the sessions.
+Make sure that only one environment is open at a time for a given browser type. Users can open multiple sessions to the same environment (that is, multiple tabs in the same browser).
 
-**Solution:** 
-
-Ensure only one environment is open at a time for a given browser type. Users
-can open multiple sessions (tabs within the same browser) to the same
-environment.
-
-If users want to jump between two different environments at the same time, open
-each one in a different browser type (for example, User A can look at Environment 1 in
-Chrome, and Environment 2 in Edge.)
+Users who want to jump between two environments at the same time should open each environment in a different browser type. (For example, user A can view environment 1 in Chrome and environment 2 in Microsoft Edge.)
