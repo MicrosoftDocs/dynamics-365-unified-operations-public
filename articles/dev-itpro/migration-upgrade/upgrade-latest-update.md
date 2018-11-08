@@ -105,12 +105,12 @@ This scenario describes the process for upgrading code from an earlier release t
 
 | Source environment | Expected content of the AX7.version file for the source | Target environment | Is the code upgrade service required? |
 |--------------------|---------------------------------------------------------|--------------------|---------------------------------------|
-| Application 7.3                               | 7.3.11971.56116 | Application release 8.0 | Yes |
-| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 8.0 or 7.3 | Yes |
-| Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 8.0, 7.3, or July 2017 (7.2) | Yes |
-| August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 8.0, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
-| May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 8.0, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
-| February 2016 release (Application 7.0)                      | 7.0.1265.3015 |  Application release 8.0, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
+| Application 7.3                               | 7.3.11971.56116 | Application release 8.x | Yes |
+| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 8.x or 7.3 | Yes |
+| Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 8.x, 7.3, or July 2017 (7.2) | Yes |
+| August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 8.x, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
+| May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 8.x, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
+| February 2016 release (Application 7.0)                      | 7.0.1265.3015 |  Application release 8.x, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
 | Microsoft Dynamics AX 2012                                     | Not applicable | Application release 7.3 or July 2017 (7.2)  | Yes |
 | Application release 7.3         | Not applicable | Newer version of the platform | No |
 | July 2017 release (Application 7.2)         | Not applicable | Newer version of the platform | No |

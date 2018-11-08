@@ -3,7 +3,7 @@
 
 title: Revaluate foreign currency for advance holders (Russia)
 description: This topic provides information about foreign currency revaluation for advance holders in Russia.
-author: 
+author: ilkond
 manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
