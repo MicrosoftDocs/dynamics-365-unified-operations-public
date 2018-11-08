@@ -2,7 +2,7 @@
 # required metadata
 
 title: Can't create an environment in the PowerApps Admin center
-description: The administrator is unable to create an environment in the PowerApps admin center.
+description: This topic explains what to do if the admin can't create an environment in the Microsoft PowerApps Admin center.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -34,27 +34,21 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-**Problem:** 
+**Issue**
 
--   The tenant/environment administrator is unable to create an environment in the
-    PowerApps admin center.
+- The tenant/environment admin can't create an environment in the Microsoft PowerApps Admin center.
+- A licence that gives users the right to perform the environment creation step hasn't been assigned directly to the user who is performing that step.
 
--   The user performing the environment creation is not directly assigned a
-    license that gives them rights to do so.
+**Solution**
 
-**Solution:** 
+Make sure that the tenant admin has assigned a valid PowerApps P2 license directly to the user who will perform the environment creation step. Here are the Microsoft Dynamics service plans that provide that right.
 
--   Ensure the tenant admin has assigned a valid PowerApps P2 license directly
-    to the user that will be performing the environment creation step. Here are
-    the Dynamics service plans that provide that right:
+| Overall product stock keeping unit (SKU)       | PowerApps P2 service plan  |
+|------------------------------------------------|----------------------------|
+| Microsoft Dynamics 365 for Operations          | PowerApps for Dynamics 365 |
+| Microsoft Dynamics 365 Plan Enterprise Edition | PowerApps for Dynamics 365 |
 
-| **Overall Product SKU**              | **PowerApps P2 service plan** |
-|--------------------------------------|-------------------------------|
-| Dynamics 365 for Operations          | PowerApps for Dynamics 365    |
-| Dynamics 365 Plan Enterprise Edition | PowerApps for Dynamics 365    |
+Note that various Microsoft Office SKUs also provide the right, together with standalone PowerApps Plan 2 SKUs. The important point is that one of these SKUs must be present.
 
-Note that various Office SKUs also provide the right, along with standalone PowerApps Plan 2 SKUs. The key is that one of these must be present.
-
--   Navigate to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
-
--   Create the environments following the instructions in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+1. Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
+2. Create the environments by following the instructions in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
