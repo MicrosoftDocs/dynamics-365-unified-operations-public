@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reporting options in Talent
-description: The customer wants to customize Talent reports or create new reports.
+description: This topic explains how to resolve the issue where a customer wants to customize Microsoft Dynamics 365 for Talent reports or create new reports.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -34,35 +34,24 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
+**Environment details**
 
-**Environment details:** 
+This issue applies to all environments.
 
-All environments.
+**Symptom**
 
-**Symptom:** 
+The customer wants to customize Microsoft Dynamics 365 for Talent reports or create new reports.
 
-The customer wants to customize Talent reports or create new reports. 
+**Issue**
 
-**Problem:** 
+The user can't customize the embedded Microsoft Power BI reports.
 
-The user is not able to customize the embedded PowerBI reports.
+**Solution**
 
+- The Core HR data that flows to Common Data Service for Apps can be reported on via the PowerApps CDS connector to Power BI Desktop. Note that Common Data Service for Apps contains a subset of Core HR data. For more information about Power BI and dashboards, see [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
+- Electronic reporting (ER) is available for some reports in Talent. Customer-driven customizations can be done via the ER configuration options.
+- Data can be exported to Microsoft Excel or Microsoft Word by using the various data entities that Talent provides through the Microsoft Office integration.
 
-**Solution:** 
+**Long-term solution**
 
--   The Core HR data that flows to CDS (Common Data Service) can be reported on via the PowerApps
-    CDS connector to PowerBI desktop. Note that CDS
-    contains a subset of Core HR data. Learn more about Power BI and Dashboards
-    by reading [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
-
--   Global electronic reporting (GER) is available for certain reports in
-    Talent, and allows for customer-driven customizations via the GER
-    configuration options. 
-
--   Data can be exported to Excel and/or Word using the various data entities
-    provided by Talent with office integration.
-
-
-**Long-term solution:** 
-
-Additional PowerBI options will be available and more date/entities will be part of the CDS.
+Additional Power BI options will be available, and more data and entities will be part of Common Data Service for Apps.
