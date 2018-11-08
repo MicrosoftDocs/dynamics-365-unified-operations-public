@@ -1,11 +1,12 @@
 ---
+
 # required metadata
 
 title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 08/27/2018
+ms.date: 11/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -65,6 +66,12 @@ This table lists the major releases of the application. For monthly cloud update
 <tbody>
 <tr class="even">
 </tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.1.2</td>
+<td>8.1.195  </td>
+<td>November 2018</td>
+  <td><a href="whats-new-changed-8-1-2.md">What&#39;s new or changed in Dynamics 365 for Finance and Operations version 8.1.2 (November 2018)</a></td>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1.1</td>
@@ -143,6 +150,11 @@ This table lists the major releases of the application. For monthly cloud update
 </thead>
 <tbody>
 <tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 22</td>
+<td>7.0.5095</td>
+<td>October 2018</td>
+<td><a href="whats-new-platform-update-22.md">What’s new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)</a></td><tbody><tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Platform update 21</td>
 <td>7.0.5073</td>

@@ -3,7 +3,7 @@
 
 title: Security and role management in Attract
 description: This topic provides information about role security in Microsoft Dynamics 365 for Talent - Attract.
-author: 
+author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 

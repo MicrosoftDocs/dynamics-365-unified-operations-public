@@ -229,10 +229,14 @@
     href: set-up-rfm-analysis.md
 - name: Discounts and price adjustments
   items:
+  - name: Retail discounts
+    href: retail-discounts-overview.md
   - name: Retail sales price management
     href: price-management.md
   - name: Price adjustments and discounts
     href: price-adjustments-discounts.md
+  - name: Apply multiple Retail discounts to a product
+    href: Apply-multiple-retail-discounts.md
   - name: Determine the optimal combination of overlapping discounts
     href: optimal-combination-overlapping-discounts.md
   - name: Define channel-specific discounts
@@ -271,7 +275,7 @@
     href: ../supply-chain/pim/search-products-product-variants.md
 - name: Loyalty
   items:
-  - name: Set up customer loyalty programs
+  - name: Loyalty overview
     href: set-up-customer-loyalty-program.md
 - name: Inventory
   items:
@@ -307,6 +311,8 @@
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
+  - name: Fiscal integration for Retail channel
+    href: localizations/fiscal-integration-for-retail-channel.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
@@ -331,6 +337,10 @@
       href: localizations/apac-ind-loc-deployment-guidelines.md
     - name: Support for upgrade and N-1 for India
       href: localizations/apac-ind-n-1-for-india.md
+  - name: Italy
+    items:
+    - name: Fiscal printer integration
+      href: localizations/emea-ita-fpi-sample.md
   - name: Norway
     items:
     - name: Cash register functionality
@@ -491,7 +501,9 @@
     - name: Add custom controls to POS views
       href: dev-itpro/pos-custom-control.md
     - name: Add POS operations to POS layouts using Button grid designer
-      href: dev-itpro/add-POS-operations.md     
+      href: dev-itpro/add-POS-operations.md  
+    - name: Retail POS APIs
+      href: dev-itpro/POS-APIs.md
     - name: POS payment extension
       href: dev-itpro/pos-payment-extension.md
     - name: Support for external gift cards

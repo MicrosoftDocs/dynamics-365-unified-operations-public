@@ -7,6 +7,8 @@
     - name: What's new or changed
       href: whats-new.md
       items:  
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)
+        href: whats-new-talent-october-31.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (October 19, 2018)
         href: whats-new-talent-october-19.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (October 15, 2018)
@@ -37,6 +39,8 @@
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR and Common Data Service for Apps
       href: CoreHREntities.md
+    - name: Integrations
+      href: talent-financeandoperations-integration.md
     - name: Access preview features
       href: access-preview-feature.md
     - name: Configure the payroll integration between Talent and Dayforce
