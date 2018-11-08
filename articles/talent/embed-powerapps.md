@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to embed PowerApps in Core HR
-description: The PowerApps menu item disappeared from the System administration module.
+title: Embed PowerApps apps in Core HR
+description: This topic explains how to resolve the issue where the PowerApps menu item has disappeared from the System administration module.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
@@ -30,51 +30,47 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# How to embed PowerApps in Core HR
+# Embed PowerApps apps in Core HR
 
 [!include [banner](includes/banner.md)]
 
+**Issue**
 
-**Issue:**
+The **PowerApps** menu item has disappeared from the **System administration** module.
 
-The PowerApps menu item disappeared from the **System administration** module.
+**Cause**
 
-**Cause:**
+The user interface (UI) design has been changed, and Microsoft PowerApps is now included in the standard personalization model.
 
-The user interface (UI) design changed to include PowerApps in standard personalization model.
+**Resolution**
 
-**Resolution:**
+The way that PowerApps apps are embedded has been changed. PowerApps apps are now added through the personalization model. You can add PowerApps apps to almost all pages in Microsoft Dynamics 365 for Talent.
 
-PowerApps embedding has been modified. Power apps are now added through the
-personalization model and can added to almost all forms with Dynamics 365 for
-Talent.
+For information about how to embed PowerApps apps in Talent, see [Embed PowerApps apps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
-You can learn how to embed PowerApps with Talent by reading [Embed PowerApps apps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Any PowerApps customer who embedded apps before the change should have been upgraded to the new model.
 
-Any PowerApps customer has embedded before the change should've been upgraded to
-the new model.
+The **PowerApps** button is in the upper-right corner of almost every page in Talent. You can use this button to insert a PowerApps app.
 
-From almost any page within Talent, locate the **PowerApps** button in the upper
-right corner of the page. This button will give you access to insert a Power App.
+Here is an example.
 
-Example:
+1. Go to **Personnel management \> Links \> Workers \> Employees**.
+2. Select the **PowerApps** button, and then select **Insert a PowerApp**.
 
-1. Go to **Personnel management > Links > Workers > Employees**.
+    ![PowerApps button](media/png.png)
 
-2. Click **Insert a PowerApp**.
+3. Complete the fields in the **Insert a PowerApp** dialog box.
 
-![PowerApp button](media/png.png)
+    ![Insert a PowerApp dialog box](media/insert-powerapp.png)
 
-3. Fill out the **Insert a PowerApp** dialog.
+Alternatively, follow these steps.
 
-![Insert PowerApp](media/insert-powerapp.png)
+1. On the page's Action Pane, on the **Options** tab, in the **Personalize** group, select **Personalize this form**.
 
-Or, you can do the following:
+    ![Personalize group on the Options tab](media/options.png)
 
-1. Navigate to the personalization options on the page by going to **Options > Personalize > Personalize this form**.
+    The personalization toolbar appears.
 
-![personalize toolbar](media/options.png)
+2. On the toolbar, select **Insert \> PowerApp**.
 
-2. The personalization toolbar will open. Select **Insert** and then click **PowerApp**.
-
-![PowerApp bar](media/powerapp-bar.png)
+    ![Insert a PowerApps app by using the personalization toolbar](media/powerapp-bar.png)
