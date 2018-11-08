@@ -115,7 +115,7 @@ Use the following procedure to create operations for report cells.
 
     ![Setup of operations for report cells](media/cells-setup-operations.jpg)
 
-3. In the **Operator** field, select the mathematical operator that that should be applied to the cell value.
+3. In the **Operator** field, select the mathematical operator that should be applied to the cell value.
 
     > [!NOTE] 
     > The **Operator** field specifies the mathematical sign for the amount that is calculated for the cell. The mathematical sign is also used when you set up multiline operations. Typically, vouchers of the **Credit balance**, **Credit activity**, and **Turnover in correspondence credit** types should use a minus sign (-).
@@ -147,35 +147,35 @@ Use the following procedure to create operations for report cells.
     </tr>
     <tr>
     <td>Credit balance</td>
-    <td>The transaction amount for the credit ledger account on the date</td>
+    <td>The credit transaction amount for the ledger account on the date</td>
     </tr>
     <tr>
     <td>Debit balance</td>
-    <td>The transaction amount for the debit ledger account on the date</td>
+    <td>The debit transaction amount for the ledger account on the date</td>
     </tr>
     <tr>
     <td>Turnover</td>
-    <td>The transaction amount for the ledger for the period</td>
+    <td>The transaction amount for the ledger account for the period</td>
     </tr>
     <tr>
     <td>Credit activity</td>
-    <td>The credit transaction amount for the ledger for the period</td>
+    <td>The credit transaction amount for the ledger account for the period</td>
     </tr>
     <tr>
     <td>Debit activity</td>
-    <td>The debit transaction amount for the ledger for the period</td>
+    <td>The debit transaction amount for the ledger account for the period</td>
     </tr>
     <tr>
     <td>Turnover in correspondence (only for the <strong>Transactions</strong> line type)</td>
-    <td>The transaction amount for the ledger in correspondence with other ledger accounts for the period</td>
+    <td>The transaction amount for the ledger account in correspondence with other ledger accounts for the period</td>
     </tr>
     <tr>
     <td>Turnover in correspondence credit (only for the <strong>Transactions</strong> line type)</td>
-    <td>Credit transaction amount for the ledger in correspondence with other ledger accounts for the period</td>
+    <td>The credit transaction amount for the ledger account in correspondence with other ledger accounts for the period</td>
     </tr>
     <tr>
     <td>Turnover in correspondence debit (only for the <strong>Transactions</strong> line type)</td>
-    <td>Debit transaction amount for the ledger in correspondence with other ledger accounts for the period</td>
+    <td>The debit transaction amount for the ledger account in correspondence with other ledger accounts for the period</td>
     </tr>
     <tr>
     <td>Active balance (debit) (only for the <strong>Transactions</strong> and <strong>Contractor</strong> line types)</td>
