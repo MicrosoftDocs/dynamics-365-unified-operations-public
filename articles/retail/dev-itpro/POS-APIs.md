@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 ---
 # Retail POS APIs
+[!include [banner](../includes/banner.md)]
 
 Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. you can consume APIs that will do the work for you. To do this, you need to simply call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
