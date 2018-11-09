@@ -323,6 +323,21 @@ The following Core HR entities are available in CDS for Apps.
 | Worker                                | Lookup         | X        | X          |
 | Worker Fixed Compensation Number      | Text           | X        | X          |
 
+**Worker person identification number**
+
+| Fields                 | Data type   | Required | Searchable |
+|------------------------|-------------|----------|------------|
+| Description            | Text        |          | X          |
+| Entry Type             | Text        |          | X          |
+| Expiration Date        | Date Only   |          | X          |
+| Identification Number  | Text        | X        | X          |
+| Identification Type    | Lookup      | X        | X          |
+| Is Primary             | Two Options |          | X          |
+| Issue Date             | Date Only   |          | X          |
+| Issuing Agency         | Lookup      | X        | X          |
+| Worker                 | Lookup      | X        | X          |
+
+
 ## Position entities
 
 **Job position**
