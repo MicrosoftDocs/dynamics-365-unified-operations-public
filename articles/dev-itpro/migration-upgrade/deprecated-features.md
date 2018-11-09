@@ -103,7 +103,7 @@ Feature for creating templates of new profit tax registers. This feature creates
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Tax |
 | **Deployment option**              | All |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1.3 with platform update 20. |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
 
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
