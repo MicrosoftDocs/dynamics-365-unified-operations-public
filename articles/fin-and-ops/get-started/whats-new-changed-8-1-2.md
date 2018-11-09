@@ -62,3 +62,7 @@ This release includes functionality for the registration of third-party miscella
 - Inclusion into cost of purchased goods (allocation to invoices lines from other vendors) 
 - Redrawing to other parties 
 - Re-allocation to other expense accounts
+
+
+## Intrastat format changes for Belgium
+This release includes changes of XML Intrastat format for Belgium applicable for 2019 reporting. 
