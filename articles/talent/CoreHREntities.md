@@ -645,3 +645,41 @@ The following Core HR entities are available in CDS for Apps.
 | Description     | Text          |              | X              |
 | Name            | Text          | X            | X              |
 | Type            | Optin Set     | X            | X              |
+
+**Compensation Pay Frequency**
+
+| **Fields**                  | **Data type**   | **Required** | **Searchable** |
+|-----------------------------|-----------------|--------------|----------------|
+| Annual Conversion Factor    | Decimal Number  |              | X              |
+| Company                     | Lookup          | X            | X              |
+| Description                 | Text            |              | X              |
+| Hourly Conversion Factor    | Decimal Number  |              | X              |
+| Monthly Conversion Factor   | Decimal Number  |              | X              |
+| Name                        | Text            | X            | X              |
+| Period                      | Option Set      |              | X              |
+| Weekly Conversion Factor    | Option Set      |              | X              |
+
+
+**Compensation Reference Point Setup**
+
+| **Fields**          | **Data type**   | **Required** | **Searchable** |
+|---------------------|-----------------|--------------|----------------|
+| Company             | Lookup          | X            | X              |
+| Compensation Type   | Option Set      | X            | X              |
+| Description         | Text            | X            | X              |
+| Name                | Text            | X            | X              |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
