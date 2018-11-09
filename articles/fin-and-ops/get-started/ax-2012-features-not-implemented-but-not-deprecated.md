@@ -525,7 +525,7 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 <tr class="odd">
 <td>[Russia] AP/AR - 3rd party miscellaneous charges</td>
 <td>Registration of 3rd party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
- <td>Not implemented</td>
+ <td>Implemented in 8.1.1</td>
 </tr>
 
 <tr class="odd">
