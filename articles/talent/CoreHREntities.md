@@ -627,6 +627,44 @@ The following Core HR entities are available in CDS for Apps.
 | Is Remainder                     | Two Options    |              | X              |
 | Priority                         | Whole Number   |              | X              |
 
+**Person Identification Issuing Agency**
+
+| **Fields**           | **Data type** | **Required** | **Searchable** |
+|----------------------|---------------|--------------|----------------|
+| Address Description  | Text          |              | X              |
+| Address Line 1       | Text          |              | X              |
+| Address Line 2       | Text          |              | X              |
+| Address Line 3       | Text          |              | X              |
+| City                 | Text          |              | X              |
+| Country or Region    | Option Set    |              | X              |
+| County               | Text          |              | X              |
+| Description          | Text          |              | X              |
+| Email                | Text          |              | X              |
+| Extension            | Text          |              | X              |
+| Fax                  | Text          |              | X              |
+| Issuing Agency Name  | Text          | X            | X              |
+| Mobile Phone         | Text          |              | X              |
+| Page                 | Text          |              | X              |
+| Postal Code          | Text          |              | X              |
+| Post Office Box      | Text          |              | X              |
+| SMS                  | Text          |              | X              |
+| State or Province    | Text          |              | X              |
+| Telephone            | Text          |              | X              |
+| Telex                | Text          |              | X              |
+| Website URL          | Text          |              | X              |
+
+**Worker Person Identification Type**
+
+| **Fields**                        | **Data type**  | **Required** | **Searchable** |
+|-----------------------------------|----------------|--------------|----------------|
+| Allowed Values                    | Option Set     |              | X              |
+| Country or Region                 | Text           |              | X              |
+| Description                       | Text           |              | X              |
+| Fixed Length                      | Whole Number   |              | X              |
+| Identification Number Format      | Text           |              | X              |
+| Type                              | Option Set     |              | X              |
+| Worker Person Identification Type | Text           | X            | X              |
+
 ## Fixed Compensation Entitites
 
 **Compensation Fixed Plan**
