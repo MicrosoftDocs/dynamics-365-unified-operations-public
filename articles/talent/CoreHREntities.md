@@ -301,6 +301,28 @@ The following Core HR entities are available in CDS for Apps.
 | Worker Bank Account Number | Text          |              | X              |
 | Worker Bank Account Number | Text          | X            | X              |
 
+**Worker fixed compensation**
+
+| Fields                                | Data type      | Required | Searchable |
+|---------------------------------------|----------------|----------|------------|
+| Company                               | Lookup         | X        | X          |
+| Compensation Type                     | Option Set     |          | X          |
+| Currency                              | Lookup         |          | X          |
+| Effective Date                        | Date Only      |          | X          |
+| Event                                 | Lookup         | X        | X          |
+| Exchange Rate                         | Decimal Number |          | X          |
+| Expiration Date                       | Date Only      |          | X          |
+| Line Number                           | Decimal Number |          | X          |
+| Pay Frequency                         | Lookup         | X        | X          |
+| Pay Rate                              | Currency       |          | X          |
+| Pay Rate (Base)                       | Currency       |          | X          |
+| Plan                                  | Lookup         | X        | X          |
+| Position                              | Lookup         | X        | X          |
+| Process Type                          | Option Set     | X        | X          |
+| Reference Point Setup Line            | Lookup         |          | X          |
+| Worker                                | Lookup         | X        | X          |
+| Worker Fixed Compensation Number      | Text           | X        | X          |
+
 ## Position entities
 
 **Job position**
