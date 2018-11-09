@@ -669,12 +669,47 @@ The following Core HR entities are available in CDS for Apps.
 | Description         | Text            | X            | X              |
 | Name                | Text            | X            | X              |
 
+**Compensation Reference Point Setup Line**
 
+| **Fields**            | **Data type**   | **Required** | **Searchable** |
+|-----------------------|-----------------|--------------|----------------|
+| Company               | Lookup          | X            | X              |
+| Description           | Text            | X            | X              |
+| Line Number           | Decimal Number  | X            | X              |
+| Name                  | Text            | X            | X              |
+| Reference Point Setup | Lookup          | X            | X              |
 
+**Compensation Region**
 
+| **Fields**      | **Data type** | **Required** | **Searchable** |
+|-----------------|---------------|--------------|----------------|
+| Description     | Text          | X            | X              |
+| Name            | Text          | X            | X              |
 
+**Compensation structure**
 
+| **Fields**                    | **Data type**   | **Required** | **Searchable** |
+|-------------------------------|---------------  |--------------|----------------|
+| Amount                        | Currency        |              | X              |
+| Amount Base                   | Currency        |              | X              |
+| Company                       | Lookup          | X            | X              |
+| Compensation Structure Number | Text            | X            | X              |
+| Currency                      | Lookup          |              | X              |
+| Exchange Rate                 | Decimal Number  |              | X              |
+| Grid                          | Lookup          | X            | X              |
+| Level                         | Lookup          | X            | X              |
+| Reference Point               | Lookup          | X            | X              |
+| Reference Point Line Setup    | Lookup          | X            | X              |
 
+**Fixed Compensation Event**
+
+| **Fields**            | **Data type**   | **Required** | **Searchable** |
+|-----------------------|-----------------|--------------|----------------|
+| Company               | Lookup          | X            | X              |
+| Description           | Text            | X            | X              |
+| Event Type            | Option Set      | X            | X              |
+| Is Active             | Two Options     | X            |                |
+| Name                  | Text            | X            | X              |
 
 
 
