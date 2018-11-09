@@ -604,3 +604,44 @@ The following Core HR entities are available in CDS for Apps.
 | Exchange Rate                    | Decimal Number |              | X              |
 | Is Remainder                     | Two Options    |              | X              |
 | Priority                         | Whole Number   |              | X              |
+
+## Fixed Compensation Entitites
+
+**Compensation Fixed Plan**
+
+| **Fields**                  | **Data type** | **Required** | **Searchable** |
+|-----------------------------|---------------|--------------|----------------|
+| Company                     | Lookup        | X            | X              |
+| Compensation Grid           | Lookup        |              | X              |
+| Currency                    | Lookup        | X            | X              |
+| Description                 | Text          | X            | X              |
+| Effective Date              | Date Only     | X            | X              |
+| Expiration Date             | Date Only     | X            | X              |
+| Hire Rule                   | Option Set    | X            | X              |
+| Name                        | Text          | X            | X              |
+| Out of Range Tolerance      | Option Set    | X            | X              |
+| Pay Frequency               | Lookup        | X            | X              |
+| Recommendation Allowed      | Two Options   | X            | X              |
+| Reference Point Line Setup  | Lookup        |              | X              |
+| Type                        | Option Set    | X            | X              |
+
+**Compensation Grid**
+
+| **Fields**                  | **Data type** | **Required** | **Searchable** |
+|-----------------------------|---------------|--------------|----------------|
+| Company                     | Lookup        | X            | X              |
+| Currency                    | Lookup        |              | X              |
+| Description                 | Text          | X            | X              |
+| Effective Date              | Date Only     |              | X              |
+| Expiration Date             | Date Only     |              | X              |
+| Name                        | Text          | X            | X              |
+| Reference Point Setup       | Lookup        | X            | X              |
+| Type                        | Option Set    | X            | X              |
+
+**Compensation Level**
+
+| **Fields**      | **Data type** | **Required** | **Searchable** |
+|-----------------|---------------|--------------|----------------|
+| Description     | Text          |              | X              |
+| Name            | Text          | X            | X              |
+| Type            | Optin Set     | X            | X              |
