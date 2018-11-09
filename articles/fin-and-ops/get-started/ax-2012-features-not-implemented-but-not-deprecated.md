@@ -452,7 +452,7 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 
 <tr class="odd">
 <td>[Russia] Tax registers</td>
-<td>Tax registers: Current period incomes; Tax expenses; Other expenses of current period; Unrealized expenses of current period; Other unrealized expenses; Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement; Procedure for writing-off AR bad debts; Accounts payable debt - inventory; Accounts payable debt movement; Procedure for writing-off AP bad debts; Goods cost calculation; FA object information; IA object information; FA depreciation; IA depreciation; FA/IA sale; Depreciation bonus recovery; Profit tax registers wizard </td>
+<td>Tax registers: Current period incomes; Tax expenses; Other expenses of current period; Unrealized expenses of current period; Other unrealized expenses; Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement; Procedure for writing-off AR bad debts; Accounts payable debt - inventory; Accounts payable debt movement; Procedure for writing-off AP bad debts; Goods cost calculation; FA object information; IA object information; FA depreciation; IA depreciation; FA/IA sale; Depreciation bonus recovery </td>
  <td>Not implemented</td>
 </tr>
 
