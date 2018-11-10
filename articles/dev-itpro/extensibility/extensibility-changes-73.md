@@ -588,7 +588,7 @@ The group of changes in this section includes several different approaches to ex
 |FormLetterJournalPost.post|
 |FormletterService.run|
 |From ProjTable.init|
-|HierarchyTemplateCopying.copyHierachy|
+|HierarchyTemplateCopying.copyHierarchy|
 |HrmAbsenceRequestAction.run|
 |InterCompanyUpdateRemPhys_PurchLine::synchronizeExternal|
 |InterCompanyUpdateRemPhys_PurchLine::synchronizeInternal|
