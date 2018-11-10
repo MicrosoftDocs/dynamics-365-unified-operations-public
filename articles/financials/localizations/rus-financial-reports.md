@@ -211,7 +211,7 @@ Use the following procedure to create operations for report cells.
 11. If you selected **Contractor** in the **Line type** field in step 4, on the **General** tab, in the **Balance detail** field, select the analytical level that the active or passive balance for the contractor should be calculated for: **Document**, **Agreement**, or **Contractor**.
 12. If you selected **Register** in the **Line type** field, follow these steps:
 
-    1. On the **Tax registers** tab, in the **Register code** field, select **Profit**. Then, in the **Register field** field, select the name of a register field. The data from the selected register field will be considered in the calculation.
+    1. On the **Tax registers** tab, in the **Register code** field, select the Profit tax register code. Then, in the **Register field** field, select the name of a register field. The data from the selected register field will be considered in the calculation.
     2. Optional: In the **Account/Interval** field, select **Account** to set up the calculation of the tax register for one expense code. Then, in the **Account** field, select the expense code. Alternatively, to set up the calculation for a range of expense codes, select **Interval**. Then select **Setup \> Account interval**, and define the interval of expense codes.
 
 13. Optional: The **General**, **Posting layer**, and **Financial dimensions** tabs have the same fields as the corresponding tabs in upper pane of the **Requisites setup** page and the **Reports** page. On each tab, set values for the operation lines. Values that are entered for an operation supersede the default values that are entered for the cell and/or the report.
@@ -220,7 +220,7 @@ Use the following procedure to create operations for report cells.
 ## Configure ER to use the results of financial report calculations
 
 For more information about ER, see [Electronic reporting](../../dev-itpro/lcs-solutions/country-region.md#electronic-reporting). 
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting 
+[use this link instead !!! ] https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting 
 
 The following example shows how to configure ER to use the results of financial report calculations.
 
@@ -230,12 +230,12 @@ The following example shows how to configure ER to use the results of financial 
 
 Create the following fields under Items:
 
-    | Field name | Data type | Description |
-    |-----------|-----------|-------------|
-    | Code | String | This node gets information from the report cell code. |
-    | ReportCode | String | This node gets the code of the financial report. |
-    | Text | String | This node gets the value of the report cell if the calculated value is a value of the **String** type. |
-    | Value | Real | This node gets the value of the report cell if the calculated value is a value of the **Real** type. |
+   | Field name | Data type | Description |
+   |-----------|-----------|-------------|
+   | Code | String | This field gets information from the report cell code. |
+   | ReportCode | String | This field gets the code of the financial report. |
+   | Text | String | This field gets the value of the report cell if the calculated value is a value of the **String** type. |
+   | Value | Real | This field gets the value of the report cell if the calculated value is a value of the **Real** type. |
 
     ![Data model](media/model.jpg)
 
@@ -288,7 +288,7 @@ Create a new ER model mapping configuration under the added ER model configurati
 
 6. Set up the format of the report. Find more derails on how to add a new format congfiguration https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-configuration-2016-11 
 
-In the format configuration, filter the **Items** record list by a constant value of **Items.Code**. Bind the **Items.Text** or **Items.Value** nodes of the filtered line to the respective format nodes.
+In the format configuration, filter the **Items** record list by a constant value of **Items.Code**. Bind the **Items.Text** or **Items.Value** fields of the filtered line to the respective format elements.
 
 7. Run configured format from the **Electronic reporting** workspace to generate report. Set the following fields:
 
