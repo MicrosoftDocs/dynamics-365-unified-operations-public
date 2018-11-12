@@ -2,7 +2,7 @@
 # required metadata
 
 title: Standard and targeted platform releases
-description: 
+description: This topic provides information about the different release options for Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 01/29/2018
