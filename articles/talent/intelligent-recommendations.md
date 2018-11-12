@@ -3,7 +3,7 @@
 
 title: Intelligent recommendations
 description: This topic explains how machine learning can be used to provide recommendations for jobs and job candidates.
-author: 
+author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
