@@ -38,6 +38,9 @@ This topic provides the steps that you need to follow if you want to make a back
 
 > [!IMPORTANT]
 > Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. 
+> Views cannot be used as a source of dimension values for a DimAttribute<view>. Doing so may seem to work, but will cause MR to fallback to row-by-row processing in order to get the dimension fact data imported to their database. This results in extremely slow performance or totally broken reports.
+> The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table.  The extended Name column can come from another source joined (such as DirPartyTable or elsewhere) since it is used only for displaying more context to the user and is not used to resolve uniqueness on natural key entry.
+     
 - 	Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
 Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
