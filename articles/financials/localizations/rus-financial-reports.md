@@ -302,7 +302,7 @@ In the format configuration, filter the **Items** record list by a constant valu
 
 ## Configure electronic messages to generate the financial report and store the results
 
-For more information, see [Electronic messaging](electronic-messaging.md). The following example shows how to configure electronic messages to run the ER configuration for financial reports.
+For more information, see [Electronic messaging](../general-ledger/electronic-messaging.md). The following example shows how to configure electronic messages to run the ER configuration for financial reports.
 
 1. On the **Message statuses** page, create message statuses that are applicable to the report (for example, **Created** and **Generated**).
 2. On the **Message processing action** page, create the following actions:
