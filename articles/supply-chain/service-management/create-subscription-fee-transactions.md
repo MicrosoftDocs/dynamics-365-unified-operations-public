@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create subscription fee transactions
-description: 
+description: This topic describes how to create subscription fee transactions.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
