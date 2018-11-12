@@ -5,7 +5,7 @@ title: Install and configure Microsoft Dynamics 365 for Finance and Operations &
 description: This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
