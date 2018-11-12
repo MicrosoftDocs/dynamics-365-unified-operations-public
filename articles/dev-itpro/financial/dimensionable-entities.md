@@ -5,7 +5,7 @@ title: Make backing tables consumable as financial dimensions
 description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
-ms.date: 10/17/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,20 +38,24 @@ This topic provides the steps that you need to follow if you want to make a back
 
 > [!IMPORTANT]
 > Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. 
-- 	Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
+> Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. Views cannot be used as a source of dimension values for a DimAttribute. Although this may seem to work, it will cause MR to fall back to row-by-row processing in order to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
+
+> The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and is not used to resolve uniqueness on natural key entry.
+     
+Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
 Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
-     - Documents
-     - Sales orders
-     - Purchase orders
-     - Transactions
-     - Checks
-     - Serials
-     - Tickets
-     - License numbers 
+
+ - Documents
+ - Sales orders
+ - Purchase orders
+ - Transactions
+ - Checks
+ - Serials
+ - Tickets
+ - License numbers 
 
 These are referred to as degenerate dimensions. Tracking these values should be done outside of financial dimensions. This means that you should use customizations for the transactional records that need information, and these values should not be stored along with the financial dimension values.
-
 
 By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
 
