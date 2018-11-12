@@ -47,7 +47,7 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 
 ## Installation steps
 
-1.	On the previously created file share, create a new folder called **RetailSelfServicePackages**.
+1.	On the previously created [file share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11#setupfile), create a new folder called **RetailSelfServicePackages**.
 2.	On each AOS computer, run the following PowerShell script:
 
 ```powershell
