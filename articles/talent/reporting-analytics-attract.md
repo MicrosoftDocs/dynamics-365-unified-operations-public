@@ -3,7 +3,7 @@
 
 title: Reporting and analytics in Attract
 description: This topic provides information about the reporting and analytics features in Microsoft Dynamics 365 for Talent - Attract.
-author: 
+author: josaw
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
