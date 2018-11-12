@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance reports with budget control (Russia)
-description: 
+description: This topic shows how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/04/2018
