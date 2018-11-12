@@ -1,4 +1,4 @@
-----
+---
 # required metadata
 
 title: Financial reporting (Russia)
@@ -219,16 +219,14 @@ Use the following procedure to create operations for report cells.
 
 ## Configure ER to use the results of financial report calculations
 
-For more information about ER, see [Electronic reporting](../../dev-itpro/lcs-solutions/country-region.md#electronic-reporting). 
-[use this link instead !!! ] https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting 
+For more information, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
 
 The following example shows how to configure ER to use the results of financial report calculations.
 
-1.	Create a new Data model ER configuration for Financial reports (review this page for more details about design of ER data models).
-2.	In ER model designer, create root item and name it Model.
-3.	Under Root item, create item of data type Record list and name it Items.
-
-Create the following fields under Items:
+1. Create a new Data model ER configuration for Financial reports (review this page for more details about design of ER data models).
+2. In ER model designer, create root item and name it Model.
+3. Under Root item, create item of data type Record list and name it **Items**.
+4. Create the following fields under **Items**:
 
    | Field name | Data type | Description |
    |-----------|-----------|-------------|
@@ -239,9 +237,9 @@ Create the following fields under Items:
 
     ![Data model](media/model.jpg)
 
-Create a new ER model mapping configuration under the added ER model configuration (review this page https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11 for more details about design of ER model mappings).
+5. Create a new ER model mapping configuration under the added ER model configuration. For more information, see [Define ER model mappings and select data sources for them]( ../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
-4.	Create Model mapping. In Model mapping designer do the following:
+6.	Create Model mapping. In Model mapping designer do the following:
 
     1. Create the User input parameter for **Report code**:
 
@@ -286,11 +284,11 @@ Create a new ER model mapping configuration under the added ER model configurati
 
     ![Binding](media/binding.jpg)
 
-6. Set up the format of the report. Find more derails on how to add a new format congfiguration https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-configuration-2016-11 
+7. Set up the format of the report. For more derails on how to add a new format congfiguration, see [ER Create a format configuration]( ../../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md). 
 
 In the format configuration, filter the **Items** record list by a constant value of **Items.Code**. Bind the **Items.Text** or **Items.Value** fields of the filtered line to the respective format elements.
 
-7. Run configured format from the **Electronic reporting** workspace to generate report. Set the following fields:
+8. Run configured format from the **Electronic reporting** workspace to generate report. Set the following fields:
 
     - **Calculation date** – Specify the base date to identify the period for the financial report.
     - **Report code** – Select the code for the financial report.
@@ -304,9 +302,7 @@ In the format configuration, filter the **Items** record list by a constant valu
 
 ## Configure electronic messages to generate the financial report and store the results
 
-For more information, see [Electronic messaging](electronic-messaging.md).
-
-The following example shows how to configure electronic messages to run the ER configuration for financial reports.
+For more information, see [Electronic messaging](electronic-messaging.md). The following example shows how to configure electronic messages to run the ER configuration for financial reports.
 
 1. On the **Message statuses** page, create message statuses that are applicable to the report (for example, **Created** and **Generated**).
 2. On the **Message processing action** page, create the following actions:
