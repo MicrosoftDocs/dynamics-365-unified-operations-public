@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.2. This version was released in November 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/07/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -65,5 +65,5 @@ This release includes functionality for the registration of third-party miscella
 
 
 ## Intrastat format changes for Belgium
-This release includes changes to the XML Intrastat format for Belgium that is applicable for 2019 reporting. To apply the new format, you need to import the following version (or a later version) of the ER configuration from LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about importing configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
+This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
