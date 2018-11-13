@@ -121,17 +121,17 @@ Run the following script against the copy of the database to turn off change tra
 --Prepare a database in Azure SQL ddatabase for export to SQL Server.
 
 --Remove certificates in database from Electronic Signature usage
-DECLARE @SQL nvarchar(512)
+DECLARE @SQLElectronicSig nvarchar(512)
 DECLARE certCursor CURSOR for
 select 'DROP CERTIFICATE ' + QUOTENAME(c.name) + ';'
 from sys.certificates c;
 OPEN certCursor;
-FETCH certCursor into @SQL;
+FETCH certCursor into @SQLElectronicSig;
 WHILE @@Fetch_Status = 0
 BEGIN
-print @SQL;
-exec(@SQL);
-FETCH certCursor into @SQL;
+print @SQLElectronicSig;
+exec(@SQLElectronicSig);
+FETCH certCursor into @SQLElectronicSig;
 END;
 CLOSE certCursor;
 DEALLOCATE certCursor;
@@ -183,6 +183,11 @@ ALTER DATABASE
 -- SET THE NAME OF YOUR DATABASE BELOW
 MyNewCopy
 set CHANGE_TRACKING = OFF
+
+--Change ownership of alternate schemas to DBO
+ALTER AUTHORIZATION ON schema::shadow TO [dbo]
+ALTER AUTHORIZATION ON schema::[BACKUP] TO [dbo]
+
 --Remove the database level users from the database
 --these will be recreated after importing in SQL Server.
 declare
@@ -221,7 +226,7 @@ TRUNCATE TABLE BATCHSERVERCONFIG
 TRUNCATE TABLE BATCHSERVERGROUP
 --Remove records which could lead to accidentally sending an email externally.
 UPDATE SysEmailParameters
-SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' --LANE.SWENKA 9/12/18 Forcing SMTP as Exchange provider can still email on refresh
+SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' 
 --Remove encrypted SMTP Password record(s)
 TRUNCATE TABLE SYSEMAILSMTPPASSWORD
 GO
