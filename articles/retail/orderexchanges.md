@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Make an exchange on a return order
-description: This topic describes how to process an exchange on a return order in Dynamics 365 for Retail.
+title: Configure and process an exchange on a return order
+description: This topic describes how to configure an exchange on a return in Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
