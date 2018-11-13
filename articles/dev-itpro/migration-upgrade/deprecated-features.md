@@ -95,11 +95,11 @@ Feature exporting generated electronic files of declarations to folder for furth
 
 
 ### Profit tax register wizard
-Feature for creating templates of new profit tax registers. This feature creates X++ objects for new registers and further engineer is taking the created objects as templates and add calculation logic into it.
+Feature for creating templates for new profit tax registers. This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model |
+| **Reason for deprecation/removal** | Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Tax |
 | **Deployment option**              | All |
