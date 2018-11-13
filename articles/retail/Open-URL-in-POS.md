@@ -1,7 +1,37 @@
+---
+# required metadata
 
+title: Open URL in POS
+description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
+author: AamirAllaq
+manager: AnnBe
+ms.date: 11/13/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: sericks007
+ms.search.scope: Core, Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 141393
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: shajain
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: 
+
+---
 # Overview
 
-This article describes how you can configure a button in POS to open a URL. This feature does not require a code customization, and the feature can be configured by a non-developer persona.
+This topic describes how you can configure a button in POS to open a URL. This feature does not require a code customization, and the feature can be configured by a non-developer persona.
 This feature allows configuration of a button in POS, using button grid designer to open a URL. This feature is currently supported in the following configurations
 
 ## Open in new window
@@ -26,14 +56,14 @@ For Windows, see Enable apps for websites using app URI handlers, for iOS, see U
 | Modern POS on iOS       | ✓*                |    ✓          |       X                  |  *Opens in new browser tab        |
 | Modern POS on Android   | ✓*                |    ✓          |       X                  |  *Opens in new browser tab        |
 
-##Before you begin
+## Before you begin
 Before you begin, review how to configure Screen Layouts for POS. 
 Open URL in POS
 To configure a URL to be opened in POS, perform the following steps
-1.	In head office, navigate to Retail> Channel Setup > POS Setup > POS > Screen Layouts
-2.	Select Button Grids > Designer
+1.	In head office, go to **Retail > Channel Setup > POS Setup > POS > Screen Layouts**.
+2.	Select **Button Grids > Designer**.
 3.	Create New Button
-4.	Select Button properties
-5.	Select Open URL as the Action
-6.	Enter desired URL
+4.	Select **Button** properties.
+5.	Select **Open URL** as the Action
+6.	Enter desired URL.
 7.	Configure whether to open the URL in a new window
