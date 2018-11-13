@@ -141,9 +141,9 @@ Some of the common attributes that can be defined for all the above rule types a
 	
 	3. Enter values in the **Profile** and **Description** fields.
 	
-	4. In the **Auto apply result** field, enter **Yes** or **No**. If this field is set to Yes, the results of the DOM execution for the profile will be automatically applied to the sales order lines. If it is set to **No**, the results can only be viewed in the fulfillment plan and they will not be applied to the sales order lines.
+	4. In the **Auto apply result** field, enter **Yes** or **No**. If this field is set to **Yes**, the results of the DOM execution for the profile will be automatically applied to the sales order lines. If it is set to **No**, the results can only be viewed in the fulfillment plan and they will not be applied to the sales order lines.
 	
-	5. If you want the DOM profile to be executed for orders with every sales order origin value including undefined ones,  set the field **Process orders with empty sales origin** to Yes. If you want to execute the profile for a few sales order origins only,  you can define those in the "Setup" section of the profiles (explained below).
+	5. If you want the DOM profile to be executed for orders with every sales order origin value including undefined ones, set the field **Process orders with empty sales origin** to **Yes**. If you want to execute the profile for a few sales order origins only, you can define those in the "Setup" section of the profiles (explained below).
 		
 	6. On the **Legal entities** fast tab, click **Add** and select a legal entity.
 	
