@@ -77,6 +77,9 @@ The System Administrator account in the target environment ( UserId of 'Admin' )
 > [!NOTE]
 > As of October 2018, database refresh requests must be signed off before another refresh of the same environment can be started. This is to support future automation of database movement operations. To sign off, visit your Environment Details page and click the **Signoff** button. You can create many database refresh service requests out in to the future, however you must sign off in between each one.
 
+> [!IMPORTANT]
+> Service requests for Database Refresh will not be accepted for servicing dates after January 31, 2019.  After this date, all refresh operations will be performed via the self-service actions outlined above.
+
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
 1. In LCS, on the Project home page, select **Service requests**.
