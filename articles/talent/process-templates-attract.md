@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a process template in Attract
-description: This topic provides informationabout how to create a process template in Attract.
+description: This topic provides information about how to create a process template in Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 10/15/2017
