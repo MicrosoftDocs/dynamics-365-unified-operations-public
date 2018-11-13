@@ -28,6 +28,8 @@ ms.dyn365.ops.version: 8.1
 
 # Set up bank accounts (Russia)
 
+[!include [banner](../includes/banner.md)]
+
 Before working in the **Bank management** workspace, you should complete the following procedures to ensure that you have the prerequisites needed for setting up bank accounts for Russia.
 
 ## Enter bank group information

@@ -5,7 +5,7 @@ title: Installation steps for Retail channel components in an on-premises enviro
 description: This topic covers the installation steps for Retail channel components in an on-premises environment. 
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 
 ## Installation steps
 
-1.	On the previously created file share, create a new folder called **RetailSelfServicePackages**.
+1.	On the previously created [file share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11#setupfile), create a new folder called **RetailSelfServicePackages**.
 2.	On each AOS computer, run the following PowerShell script:
 
 ```powershell
