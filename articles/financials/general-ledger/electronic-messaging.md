@@ -55,7 +55,7 @@ The Electronic messages functionality supports the following scenarios:
 
 - Manually create messages and generate reports that are based on associated exporting ER formats of various types: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text, and Microsoft Word.
 - Automatically create and process messages that are based on information that was requested and obtained from an authority via an associated importing ER format.
-- Collect and process information from a data source Finance and Operations tables as message items.
+- Collect and process information from a data source (Finance and Operations table) as message items.
 - Store additional information, and evaluate various values by calling specifically defined executable classes in relation to messages or message items.
 - Aggregate information that is collected in message items, split that information by message, and generate reports that are in associated exporting ER formats.
 - Transmit reports that are generated to a web service by using security information that is stored in Azure Key Vault.
@@ -130,7 +130,7 @@ You can manually set up an executable class on the **Executable class settings**
 
 ### Populate records actions
 
-You use populate records actions to set up actions that add records to the Message items table so that they can be added to an electronic message. For example, if your electronic message must report customer invoices, you must set up a **Populate records** action that has a data source on the customer invoice journal. You can set up populate records actions on the **Populate records action** page (**Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**). Create a new record for every action that should add records to the table, and set the following fields.
+You use populate records actions to set up actions that add records to the Message items table so that they can be added to an electronic message. For example, if your electronic message must report customer invoices, you must set up a **Populate records** action that is linked on **Customer invoice journal** table (in **Data source** field). You can set up populate records actions on the **Populate records action** page (**Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**). Create a new record for every action that should add records to the table, and set the following fields.
 
 | Field       | Description                                                               |
 |-------------|---------------------------------------------------------------------------|
@@ -188,7 +188,7 @@ The following tables describe the fields on the **Message processing actions** p
 
 The following options are available in the **Action type** field:
 
-- **Populate records** – A **Populate records** action must previously be set up. Associate it with an action of the **Populate records** type to let included it to a processing. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
+- **Populate records** – A **Populate records** action must previously be set up. Associate it with an action of the **Populate records** type to enable it to be included in processing. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
 - **Create message** – Use this type to let users manually create messages on the **Electronic message** page. An initial status can't be set up for an action of this type.
 - **Message execution level** – Use this type to set up an executable class that should be evaluated at the message level.
 - **Message item execution level** – Use this type to set up an executable class that should be evaluated at the message item level.
@@ -380,7 +380,7 @@ This section provides an example that shows how you might set up the Electronic 
 
 ### Set up and run processing to call a simple ER exporting format to generate an Excel report
 
-This section provides an example that shows how you can set up electronic messaging to generate a report that is based on an ER Excel exporting format. To follow this example, the ER Excel exporting format must already be created, mapped to data sources, and completed. A number sequence must already be set up for electronic messages.
+This section provides an example that shows how you can set up electronic messaging to generate a report that is based on an exporting ER format for Excel. To follow this example, the ER Excel exporting format must already be created, mapped to data sources, and completed. A number sequence must already be set up for electronic messages.
 
 When you build processing, it's helpful if you first define the processing actions and statuses that will be set up. The following illustration shows what the processing looks like for this example.
 
@@ -427,7 +427,7 @@ For this example, you will create the following actions:
 
 4. Create an action that is named **Generate report**, and set the following fields:
 
-    - On the **General** FastTab, in the **Action type** field, select **Electronic reporting export**. In the **Format mapping** field, select the ER exporting format. The options are **Excel**, **XML**, **JSON**, **Text**, and **Other**.
+    - On the **General** FastTab, in the **Action type** field, select **Electronic reporting export**. In the **Format mapping** field, select the exporting ER format. The options are **Excel**, **XML**, **JSON**, **Text**, and **Other**.
     - On the **Initial statuses** FastTab, in the **Message status** field, select **Prepared**.
     - On the **Result statuses** FastTab, in the **Message status** field, select **Generated**. In the **Response type** field, enter **Successfully executed**.
 
@@ -436,8 +436,8 @@ For this example, you will create the following actions:
 5. Optional: To let users regenerate a report several times, you can create an **Update to initial status** action and set the following fields:
 
     - On the **General** FastTab, in the **Action type** field, select **Message level user processing**.
-    - Initial statuses
-    - Result statuses
+    - o	On the **Initial statuses** FastTab, in the **Message status** field, select **Generated**.
+    - o	On the **Result statuses** FastTab, in the **Message status** field, select **Prepared** or (and) **New**. In the **Response type** field, enter **Successfully executed**.
 
 #### Electronic message processing
 
