@@ -97,7 +97,7 @@ The lifecycle of a sales order within a DOM system is illustrated below.
 		- **Fulfill partial lines**: If this is set to **Yes**, DOM can fulfill a partial quantity of order lines.This is achieved by splitting the order line.  
 		- **Fulfill from one location**: If this is set to **Yes**, DOM will ensure that all lines on an order will be fulfilled from a single location.
        
-      The table below explains the behavior when a combination of the above parameters are defined.
+The table below explains the behavior when a combination of the above parameters are defined.
 
 |  | **Fulfill partial order** | **Fulfill Partial lines** | **Fulfill from one location only** | **Description**                                                                                                                                                                                  |
 |--------|---------------------------|---------------------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -122,10 +122,13 @@ The lifecycle of a sales order within a DOM system is illustrated below.
 
 - **Maximum orders rule:** This rule allows the organization to define the maximum number of orders a location or group of locations can process in a calendar day. If a location is assigned the maximum number of orders in a single day, then DOM will not assign any more orders to that location for that calendar day.
    
-   Some of the common attributes that can be defined for all the above rule types are as follows.
-		- **Start date** and **End date**: Every rule can be date-bound using the these fields.
-		- **Disabled**: Rules that have a value of **No** defined in this field are the only rules that are considered in a DOM run.   
-		- **Hard constraint**: A rule can be defined either as a hard constraint or not as a hard constraint. Every DOM run goes through two iterations as follows. In the first iteration, every rule is treated as a hard constraint rule regardless of this setting. In other words, every rule is applied. The exception is the **Location priority** rule. In the second iteration, the rules that were not defined as hard constraints are removed and the order or order lines that are not assigned to locations when the full rule set was applied are assigned to locations with a reduced rule count (as the non-hard constraints rules are removed).
+Some of the common attributes that can be defined for all the above rule types are as follows.
+
+- **Start date** and **End date**: Every rule can be date-bound using the these fields.
+
+- **Disabled**: Rules that have a value of **No** defined in this field are the only rules that are considered in a DOM run.
+
+- **Hard constraint**: A rule can be defined either as a hard constraint or not as a hard constraint. Every DOM run goes through two iterations as follows. In the first iteration, every rule is treated as a hard constraint rule regardless of this setting. In other words, every rule is applied. The exception is the **Location priority** rule. In the second iteration, the rules that were not defined as hard constraints are removed and the order or order lines that are not assigned to locations when the full rule set was applied are assigned to locations with a reduced rule count (as the non-hard constraints rules are removed).
 
 
 7.  Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. That way, organizations can define and execute a set of rules for a set of legal entities, on orders with specific sales order origins and modes of delivery. So, if different set of rules are to be executed for different sets of sales order origins or modes of delivery, they can be configured and executed by defining the fulfillment profiles accordingly.
