@@ -65,7 +65,15 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
       -	Specify a value (in miles) in the field ‘Local store region radius’. This parameter helps to configure as to how locations are grouped and considered to be equal in terms of distance. For e.g.: if the value in this parameter is set to 100, then every store / DC within 100-mile radius of the fulfillment address is considered equal in terms of distance.
       
-      -	Specify a value in the field ‘Solver type’. There are two Solver types that are shipped out of the box – ‘Production Solver’ & ‘Simplified Solver’. The ‘Production Solver’ needs a special license key which is already licensed & deployed on production environments. For other environments, this special license key must be manually deployed. The ‘Simplified Solver’ is a mechanism to try out the DOM feature without having to deploy this special license.
+      -	Specify a value in the field ‘Solver type’. There are two Solver types that are shipped out of the box – ‘Production Solver’ & ‘Simplified Solver’. The ‘Production Solver’ needs a special license key which is already licensed & deployed on production environments. For other environments, this special license key must be manually deployed. You can do the same by downloading the "DOM license" file from LCS > Shared asset library > Model and deploying the same as per the steps outlined below: 
+      
+      - Open IIS manager right click on AOSService website and click Explore. This will open windows explorer window at <AOS service root>\webroot. Note the <AOS Service root> path for the next step
+      - Place the configuration file in <AOS Service root>\PackagesLocalDirectory\DOM\bin directory
+      - Navigate to HQ client, open DOM Parameters form. Select Solver tab. Change the solver mode to production and confirm that no error messages are displayed
+      
+      Perform the above steps on all machines that are intended to run DOM (all servers that are part of the DOMBatch group)
+      
+      The ‘Simplified Solver’ is a mechanism to try out the DOM feature without having to deploy this special license. 
 
 
 	 > [!NOTE]
