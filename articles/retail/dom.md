@@ -31,15 +31,13 @@ ms.dyn365.ops.version:
 ---
 # Distributed order management (DOM)
 
-## Overview
+In the new paradigm of retail operations, retailers strive to provide personalized customer engagement, omni-channel experiences, and frictionless interactions. With so many choices available, consumers can shop wherever they can get a more favorable experience. Price and product are commonly no longer the top deciders for them.
 
-In the new paradigm of retail, retailers strive to provide personalized customer engagement, omni-channel experiences and friction less interactions to consumers. Retailers expect to compete mainly on customer experience. With so many choices available to consumers, they’ll shop with whoever provides a more favorable experience. Price and product will no longer be the top deciders.
+To help improve the customer experience, retailers need visibility into their inventory in real-time across all their channels. A single, holistic view of all the inventory can help optimize order fulfillment, allocation, and distribution.
 
-To improve the customer experience, retailers must gain real-time inventory visibility across all their channels. A single, holistic view of all inventory allows companies to optimize order fulfillment, allocation, and distribution.
+To that end, adaptation and implementation of a distributed order management (DOM) system is becoming more imperative for retailers. DOM optimizes order fulfillment across a complex network of systems and processes. It relies on a single, global view of inventory across an entire organization to intelligently manage orders, so order are fulfilled accurately and more cost-effectively. DOM helps to improve the efficiency of a retailer’s supply chain, allowing them to better meet customer expectations.
 
-As such, adaptation & implementation of a Distributed Order Management (DOM) system is no longer a matter of choice for retailers. DOM optimizes order fulfillment across a complex network of systems and processes. It relies on a single, global view of inventory across an entire organization to intelligently manage orders, so they are fulfilled accurately and cost effectively. Distributed order management improves the efficiency of a retailer’s supply chain, allowing them to better meet customer expectations.
-
-In short, DOM has surpassed from a top trend to a necessity for retailers. The lifecycle of a sales order in the context of DOM can be better understood with the help of the below image:
+The lifecycle of a sales order within a DOM system is illustrated below.
 
 
 
