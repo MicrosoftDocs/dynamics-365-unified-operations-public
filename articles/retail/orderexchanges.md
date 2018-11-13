@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 In Dynamics 365 for Retail, returns against customer orders have been processed using the return order document in HQ. The return order only supports the processing of products being returned, which is denoted by the negative quantity on the return order lines. Sales are denoted by a positive quantity, which the return order document doesn't support. Because of this limitation, it hasn't been possible to achieve scenarios like exchanges using the return order document in previous versions of Dynamics 365 for Retail.
 
-Functionality has been added to support exchange scenarios on return orders. Retail now leverages the Sales order document instead of the Return order document to process these types of transactions.
+Functionality was added to support scenarios where exchanges are made on return orders. Retail now leverages the sales order document instead of the return order document to process these types of transactions.
 
 ## Configure Retail to support exchanges on return orders
 
