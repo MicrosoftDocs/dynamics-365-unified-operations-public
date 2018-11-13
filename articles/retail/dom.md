@@ -109,93 +109,60 @@ The lifecycle of a sales order within a DOM system is illustrated below.
 | 9*    | No                        | -                         | Yes                                | All order lines must be fulfilled and all the order lines have to be fulfilled from one location only                                                                                            |
 
 \* If **Fulfill partial order** is set to **No**, then **Fulfill partial lines** is always considered to be **No**, regardless of how it's set.
-
 	- **Offline fulfillment location rule:** This rule allows the organization to specify a location or group of locations as off-line or unavailable to DOM for assigning orders for fulfillment.
-	- **Maximum rejects rule:** This rule allows the organization to define a threshold for rejects, and on hitting that threshold, the DOM processor will mark an order or order line for exception and exclude it from further processing.
+	- **Maximum rejects rule:** This rule allows the organization to define a threshold for rejects. Upon hitting the rejects threshold, the DOM processor will mark an order or order line for exception and exclude it from further processing.
+          After order lines are assigned to a location, the location has the option to reject the assigned order line, as they may not be able to fulfill it for multiple reasons. Rejected lines are marked as exception and put back in the pool for processing in the next run. In the next run, DOM will try and assign that line to a different location. After assignment, the new location can also reject the order line for fulfillment. This cycle of assignment and rejection can happen multiple times and the moment the rejection count hits the threshold as defined by this rule, DOM will mark this order line as a permanent exception and won't pick the line for assignment again. DOM will consider the order line again for reassignment only if a user manually resets the status of the order line.
+   	- **Maximum distance rule:** This rule allows the organization to define the maximum distance a location or group of locations can go out to fulfill the order. If there are overlapping maximum distance rules define for a location, then DOM will apply the lower of the defined maximum distance for that location.
+	- **Maximum orders rule:** This rule allows the organization to define the maximum number of orders a location or group of locations can process in a calendar day. If a location is assigned the maximum number of orders in a single day, then DOM will not assign any more orders to that location for that calendar day.
    
-   After order lines are assigned to a location, the location has an option to ‘Reject’ the assigned order line as they may not be able to fulfill it for multiple reasons. Such rejected lines are marked as exception and put back in the pool for processing in the next run. In the next run, DOM will try and assign that line to 	a different location. After assignment, that location can also reject the order line for fulfillment. This cycle of assignment & rejection can happen multiple times and the moment the rejection count hits the threshold as defined by this rule, DOM will mark this order line as an exception of permanent nature and 	will not pick this line for assignment again.
-   
-   Only if a user resets the status of this order line manually, will DOM consider it again for assignment.
-   
-   f.  **Maximum distance rule:** This rule allows the organization to define the maximum distance, a location or group of locations can go out to fulfill the order. If there are overlapping maximum distance rules define for a location, then DOM will apply the lower of the defined maximum distance for that location.
-   
-   g.  **Maximum orders rule:** This rule allows the organization to define the maximum number of orders a location or group of locations can process in a calendar day. If a location is assigned the maximum no. of orders in a single day, then DOM will not assign any more orders to that location for that calendar day.
-   
-   Some of the common attributes that can be defined for all the above rule types are explained below:
-   
-   - Start date / End date: Every rule can be date bound using the Start date & End date fields
-   
-   - Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
-   
-   - Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied. Exception to this is the Location priority rule.
-   
-   In the second iteration, the rules that were not defined as hard constraints are removed and the order / order lines that are not assigned to locations when the full rule set was applied, are attempted to be assigned to locations with a reduced rule count (as the non-hard constraints rules are removed).
+   Some of the common attributes that can be defined for all the above rule types are as follows.
+	- **Start date** and **End date**: Every rule can be date-bound using the these fields.
+ 	- **Disabled**: Rules that have a value of **No** defined in this field are the only rules that are considered in a DOM run.   
+	- **Hard constraint**: A rule can be defined either as a hard constraint or not as a hard constraint. Every DOM run goes through two iterations as follows. In the first iteration, every rule is treated as a hard constraint rule regardless of this setting. In other words, every rule is applied. The exception is the **Location priority** rule. In the second iteration, the rules that were not defined as hard constraints are removed and the order or order lines that are not assigned to locations when the full rule set was applied are assigned to locations with a reduced rule count (as the non-hard constraints rules are removed).
 
 
-7.  Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins & modes of delivery and every DOM run is for a specific Fulfillment profile. Doing so enables organizations to define & execute a set of rules for a set of legal entities, on orders with specific sales order origins and modes of delivery. So, if different set of rules are to be executed for different set of sales order origins or modes of delivery, they can be configured and executed by defining the fulfillment profiles accordingly
+7.  Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. That way, organizations can define and execute a set of rules for a set of legal entities, on orders with specific sales order origins and modes of delivery. So, if different set of rules are to be executed for different sets of sales order origins or modes of delivery, they can be configured and executed by defining the fulfillment profiles accordingly.
 
-The below are the steps to set-up the Fulfillment profiles:
-
-   a.  Navigate to **Retail > Distributed order management > Setup > Fulfillment profiles**
-   
-   b.  Click **New**
-   
-   c.  Specify a value for ‘Profile’ and ‘Description’ fields
-   
-   d.  In the ‘Auto apply result’ field, choose the relevant value (Yes / No). If this field is set to Yes, the results of the DOM execution for this profile will be automatically applied to the sales order lines. If set to No, the results can only be viewed in the Fulfillment plan and they will not be applied to the sales order lines
-   
-   e.  If you want the DOM profile to be executed for orders with every sales order origin value including undefined ones, then set the field **‘Process orders with empty sales origin’** to Yes. If you want to execute the profile for few sales order origins only, then you can define those in the Setup section of the 	profiles (explained in one of the below points)
-   
-   f.  In the **Legal entities** fast tab, click **Add** and select a legal entity. (In this release of the feature, only one legal entity can be selected)
-   
-   g.  In the **Rules** fast tab, click **Add** and from the drop-down option in the ‘Rule’ field, select the rule that you want to link to the profile
-   
-   h.  Repeat the above step till all the required rules are associated to the profile
-   
-   i.  Click **Save**
-   
-   j.Click **Setup > Modes of delivery**
-   
-   k. Click **New**
-   
-   l. From the drop down in the Company field, select the legal entity (The list of companies available in the drop down will be limited to the company added in the Legal entity section of the fulfillment profiles)
-   
-   m. From the drop down in the Mode of delivery field, select the mode of delivery for which you want to associate this profile. **Note:** The same mode of delivery cannot be associated to multiple active profiles
-   
-   n. Repeat the above step till all the required mode of delivery are associated to the profile
-   
-   o. Close the form
-   
-   p. Click **Setup > Sales order origins**
-   
-   q. Click **New**
-   
-   r. From the drop down in the Company field, select the legal entity (The list of companies available in the drop down will be limited to the company added in the Legal entity section of the fulfillment profiles)
-   
-   s. From the drop down in the sales origin field, select the sales origin for which you want to associate this profile. **Note:** The same Sales origin cannot be associated to multiple active profiles
-   
-   t. Repeat the above step till all the required Sales origin are associated to the profile
-   
-   u. Close the form
-   
-   v. Set the field **“Enable profile’** to Yes. If there are any errors in the setup, the system will give relevant warning message when trying to set this field to Yes.
+	To set up fulfillment profiles, do the following.
+		1. Go to **Retail > Distributed order management > Setup > Fulfillment profiles**.
+		1. Click **New**.
+		1. Enter values in the **Profile** and **Description** fields.
+ 		1. In the **Auto apply result** field, enter **Yes** or **No**. If this field is set to Yes, the results of the DOM execution for the profile will be automatically applied to the sales order lines. If it is set to **No**, the results can only be viewed in the fulfillment plan and they will not be applied to the sales order lines.
+		1. If you want the DOM profile to be executed for orders with every sales order origin value including undefined ones,  set the field **Process orders with empty sales origin** to Yes. If you want to execute the profile for a few sales order origins only,  you can define those in the "Setup" section of the profiles (explained below).
+		1. On the **Legal entities** fast tab, click **Add** and select a legal entity.
+		1. On the **Rules** fast tab, click **Add** and then select the rule that you want to link to the profile.
+		1. Repeat the previous two steps until all the required rules are associated to the profile.
+		1. Click **Save**.
+		1. On the menu, click **Setup** and then click **Modes of delivery**.
+		1. Click **New**.
+		1. In the **Company** field, select the legal entity. The list of companies available is limited to the company added in the "Legal entity" section of the fulfillment profiles.   
+		1. In the **Mode of delivery** field, select the mode of delivery for which you want to associate this profile. A mode of delivery cannot be associated to multiple active profiles.
+		1. Repeat the previous two steps until all the required modes of delivery are associated to the profile.
+		1. Close the page.
+		1. On the menu, click **Setup** and then click **Sales order origins**.
+		1. Click **New**.
+ 		1. In the **Company** field, select the legal entity. The list of companies available is limited to the company added in the "Legal entity" section of the fulfillment profiles.
+		1. In the **Sales origin** field, select the sales origin for which you want to associate this profile. A sales origin cannot be associated to multiple active profiles.
+		1. Repeat the previous two steps until all the required sales origins are associated to the profile.
+		1. Close the page.
+		1. Set **Enable profile** to **Yes**. If there are any errors in the setup, the system will produce a warning message.
 
 
-**DOM Processing**
+## DOM processing
 
-DOM will only run in batch. To configure the batch job for the DOM runs, please follow the below steps:
+DOM will only run in a batch job. To configure the batch job for the DOM runs, do the following.
 
-   1.  Navigate to **Retail > Distributed order management > Batch processing > DOM processor job setup**
+1. Go to **Retail > Distributed order management > Batch processing > DOM processor job setup**.
    
-   2.  In the Fulfillment profile field, select a profile for which the DOM execution must be run
+1. In the **Fulfillment profile** field, select a profile for which the DOM execution must be run.
    
-   3.  Select a configured Batch group
+1. Select a configured Batch group.
    
-   4. Specify a name for the batch job 
+1. Specify a name for the batch job. 
     
-   5. Use the Recurrence tab to define the recurrence of the batch job
+1. On the **Recurrence** tab, define the recurrence of the batch job.
    
-   6.  Click **OK**
+1. Click **OK**
 
 At the time of processing, DOM will consider the order and order lines as outlined below:
 
