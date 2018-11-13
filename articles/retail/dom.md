@@ -69,42 +69,32 @@ The lifecycle of a sales order within a DOM system is illustrated below.
                 - Copy the configuration file in the <AOS Service root>\PackagesLocalDirectory\DOM\bin directory.
 		- Go to the to HQ client and open the **DOM Parameters** page. On the  **Solver** tab, in the **Solver type** field, select **Production solver** and confirm that no error messages are displayed.
       
+      
       	 > [!NOTE]
     	 > "Simplified Solver" is provided so retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the "Simplified Solver" in Production environments
-
-   	 > While the ‘Simplified Solver’ provides the same set of capabilities as the ‘Production Solver’, there are limitations around performance (no. of order / order lines it can handle in a run) & convergence of results (may not be the best result with a batch of orders in specific scenarios)
+   	 > While "Simplified Solver" provides the same set of capabilities as "Production Solver", there are limitations around performance (number of orders and order lines it can handle in a run) and convergence of results (may not be the best result with a batch of orders in specific scenarios).
 	 
-4. Navigate to **Retail > Distributed order management > Setup > DOM parameters > Number sequences** tab
+4. Go back to **Retail > Distributed order management > Setup > DOM parameters**. on the **Number sequences** tab, assign the required number sequences to the different DOM entities. The number sequences must be defined under **Organization administration > Number sequences > Number sequences** before they can be assigned to the entities.
 
-     -	Assign the required number sequences to the different DOM entities. The Number sequences needs to be defined under **Organization administration > Number sequences > Number sequences** before they can be assigned to the entities
+5. The DOM feature supports the definition of different types of DOM rules. DOM rules can be defined for a group of locations or individual locations, and for a certain product category, product, or variant. The grouping of locations that needs to be used for the DOM rules can be created using the following steps.
 
-5. The DOM feature supports the definition of different types of DOM rules and these DOM rules can be defined for a group of locations or individual locations and for a certain product category, product or variant. These grouping of locations that needs to be used for the DOM rules can be created as per the below steps:
+	- Go to **Retail > Channel setup > Fulfillment groups**.
 
-	-	Navigate to **Retail > Channel setup > Fulfillment groups**
+	- Click **New** and enter a group name and description.
 
-	-	Click New and assign a group Name and Description
+	- Click **Save**.
 
-	-	Click Save
+	- Click **Add line** to add a signle location to the group, or **Add lines** to add multiple locations.
 
-	-	Use the buttons ‘Add line’ or ‘Add lines’ to add the different locations to this group
-
-6. The DOM feature supports the definition of different types of DOM rules and organizations can choose to configure multiple rules of a type based on business needs. These rules can be defined under the following path: **Retail > Distributed order management > Setup > Manage rules**.
-
-    The below is the complete list of DOM rules that are supported in this release of the feature:
-
-	a.  **Minimum inventory rule:** This rule type helps organization to ringfence a certain qty of a product for non-order fulfillment purposes. For e.g.: organizations may not want all the inventory that is available in a Store to be considered by DOM for order fulfillment. They may want to reserve some qty to 	service their walk-in customers. This can be achieved by leveraging this rule type. A minimum inventory to be retained can be defined per location or a group of locations for a category of products, individual product or a product variant.
-
-	b.  **Fulfillment location priority rule:** This rule type allows organizations to define a hierarchy of locations using ‘Priority’, that the DOM engine should consider when trying to identify fulfillment locations for specific products. Locations with higher priority are considered first before resolving to other locations. A location with a priority of 1 is of higher priority as compared to a location with priority 2. The valid range of priorities is 1 to 10. If the rule is defined as a hard constraint rule, then the orders are only brokered to locations that have priorities defined for them.
-
-	c.  **Partial orders rule:** This rule allows organization to configure if an order or order lines can be fulfilled partially. The below are the details of the behavior of the different parameters on the rule:
-	
-	  - Fulfill partial orders: If this is set to Yes, it indicates that DOM is allowed to fulfill only part of the qty on an order line by splittig the order line
-	  
-	  - Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
-	  
-	  - Fulfill from one location: If this is set to Yes, DOM will ensure that all lines on an order must be fulfilled from a single location
+6. DOM supports the definition of different types of DOM rules, and organizations can choose to configure multiple rules based on business needs. Rules can be defined at **Retail > Distributed order management > Setup > Manage rules**. Below are all the currently supported DOM rules.
+	- **Minimum inventory rule:** This rule type helps organizations to ring fence a specific quantity of a product for non-order fulfillment purposes. For example, organizations may not want all the inventory that is available in a store to be considered by DOM for order fulfillment. They may want to reserve some quantity for their walk-in customers. This can be achieved by leveraging this rule type. A minimum inventory to be retained can be defined per location or a group of locations for a category of products, individual product, or a product variant.
+	- **Fulfillment location priority rule:** This rule type allows organizations to define a hierarchy of locations by the priority which the DOM engine will consider when trying to identify fulfillment locations for specific products. Locations with higher priority are considered first before resolving to other locations. A location with a priority of 1 is of higher priority than a location with priority 2. The valid range of priorities is 1 to 10. If the rule is defined as a hard constraint rule, then the orders are only brokered to locations that have priorities defined for them.
+	- **Partial orders rule:** This rule allows an organization to define whether an order or order lines can be fulfilled partially. The behavior resulting from the available parameters are as follows.
+		  - **Fulfill partial orders**: If this is set to **Yes**, DOM is allowed to fulfill only part of the quantity on an order line. This is achieved by splittig the order line.
+		  - **Fulfill partial lines**: If this is set to **Yes**, DOM can fulfill a partial quantity of order lines.This is achieved by splitting the order line.  
+		  - **Fulfill from one location**: If this is set to **Yes**, DOM will ensure that all lines on an order will be fulfilled from a single location.
        
-      The below table explains the behavior with a combination of the above parameters:
+      The table below explains the behavior when a combination of the above parameters are defined.
 
 | **#** | **Fulfill partial order** | **Fulfill Partial lines** | **Fulfill from one location only** | **Description**                                                                                                                                                                                  |
 |--------|---------------------------|---------------------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
