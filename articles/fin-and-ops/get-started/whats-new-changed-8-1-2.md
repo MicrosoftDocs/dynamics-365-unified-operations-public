@@ -65,5 +65,5 @@ This release includes functionality for the registration of third-party miscella
 
 
 ## Intrastat format changes for Belgium
-This release includes changes of XML Intrastat format for Belgium applicable for 2019 reporting. To apply new format, you need to import the following or a higher version of the ER configuration from LCS shared asset library: Intrastat (BE).version.2.6.xml 
+This release includes changes to the XML Intrastat format for Belgium that is applicable for 2019 reporting. To apply the new format, you need to import the following version (or a later version) of the ER configuration from LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about importing configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
