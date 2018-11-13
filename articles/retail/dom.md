@@ -182,7 +182,7 @@ Some of the common attributes that can be defined for all the above rule types a
 
 ## DOM processing
 
-DOM will only run in a batch job. To configure the batch job for the DOM runs, do the following.
+DOM will only run in a batch job. To configure the batch job for DOM runs, do the following.
 
 1. Go to **Retail > Distributed order management > Batch processing > DOM processor job setup**.
    
@@ -196,94 +196,102 @@ DOM will only run in a batch job. To configure the batch job for the DOM runs, d
    
 1. Click **OK**
 
-At the time of processing, DOM will consider the order and order lines as outlined below:
+At the time of processing, DOM will consider the order and order lines as described below.
 
-Order lines that meet the criteria for Sales order origins, modes of delivery and legal entity as defined in the DOM profile and
+- Order lines that meet the criteria for sales order origins, modes of delivery, and legal entity as defined in the DOM profile, and:
 
-   + are created from retail channels
+   - Are created from retail channels.
    
-   + are never brokered by DOM
+   - Are never brokered by DOM.
    
-   + have been brokered by DOM before but are marked as exception and are below the maximum threshold attempt
+   - Have been brokered by DOM before but are marked as exception and are below the maximum threshold attempt.
    
-   + where the mode of delivery is not ‘Pick-up’ or electronic delivery
+   - Where the mode of delivery is not pick-up or electronic delivery.
    
-   + are not marked for delivery
+   - Are not marked for delivery.
    
-   + are not manually excluded
+   - Are not manually excluded.
    
-   + Orders that are not ‘On hold’
+   - Orders that are not on hold.
 
-After applying the rules, inventory constraints & optimization, DOM will pick a location that is closest to the customer’s delivery address.
+After applying the rules, inventory constraints, and& optimization, DOM will pick a location that is closest to the customer’s delivery address.
 
 ![Sales order criteria](./media/ordercriteria.png "Sales order criteria")
 
 
-**DOM execution results**
+## DOM execution results
 
-If the Fulfillment profile is set to “Auto apply”, the results of the execution run will be automatically applied to the sales order lines and the fulfillment plan also be viewed separately. However, if the Fulfillment profile is not set to “Auto apply”, then the results of the execution can be seen only from the fulfillment plan view. The below are the steps to see all the generated fulfillment plans:
+If the fulfillment profile is set to “Auto apply”, the results of the execution run will be automatically applied to the sales order lines and the fulfillment plan can be viewed separately. However, if the fulfillment profile is not set to “Auto apply”, then the results of the execution can be seen only from the fulfillment plan view. 
 
-1.  Navigate to the DOM workspace through the Home page or **through Retail > Distributed order management > Distributed order management**
+To view all of the generated fulfillment plans, do the following.
 
-2.  Click on the **Fulfillment plans** tile
+1.  Go to **Retail > Distributed order management**.
 
-3.  Click on the relevant Order fulfillment plan id to see the fulfillment plan
+2.  Click the **Fulfillment plans** tile.
 
-4.  The order details section of the plan shows the original sales order lines that was part of the execution. Beyond the standard sales order line fields, the order details section also show the three DOM related fields as below:
+3.  Click the relevant order fulfillment plan ID to see the fulfillment plan.
 
-    + **Fulfillment type:** Indicates if the sales order line is fully brokered / Partially brokered / Not brokered at all to a location
+4.  The order details section of the plan shows the original sales order lines that were part of the execution. Beyond the standard sales order line fields, the order details section also shows the following three DOM related fields.
 
-    + **Split:** Indicates if one sales order line has been split and brokered to different locations
+- **Fulfillment type:** This field indicates whether the sales order line is fully brokered, partially brokered, not brokered at all to a location.
 
-    + **No. of fulfillment locations:** Indicates how many fulfillment lines were created for one sales order lines (based on how many locations was that one original sales order line brokered to)
+- **Split:** This field indicates if one sales order line has been split and brokered to different locations.
+
+- **No. of fulfillment locations:** This field indicates how many fulfillment lines were created for one sales order line (based on how many locations was that one original sales order line brokered to).
 
 5.  The order fulfillment details section shows the assignment of the original sales order lines to different locations along with their quantities.
 
 
-**Order line actions & statuses**
+## Order line actions and statuses
+<!---
+I don't know where this UI is for any of these items. Please be more specific
+-->
+<!---
+fix the wording here
+-->
 
-1.  On the **General** tab of the sales order & sales order line, there is a field called ‘Exclude from DOM processing’. Setting this field to Yes, will exclude the order / order line from DOM processing
+- If you set the **Exclude from DOM processing** field on the **General** tab to **Yes**, the order or order line will be excluded from DOM processing.
 
-2.  On the **General** tab of the sales order line, there is a field called as ‘DOM status’. The DOM status field can one of three values as explained below:
+- The **DOM status** field on the **General** tab of the sales order line can be set to one of the values below.
 
-    + None – The order line has never been brokered
+	- **None:** The order line has never been brokered.
 
-    + Complete – The order line is successfully brokered and assigned to a location
+	- **Complete:** The order line is successfully brokered and assigned to a location.
 
-    + Exception – The order line is brokered but cannot be assigned to a location. There are multiple sub-types for exceptions which can be viewed from the DOM workspace. The sub-types for exception are as follows:
+	- **Exception:** The order line is brokered but cannot be assigned to a location. There are multiple sub-types for exceptions which can be viewed from the DOM workspace. The sub-types for exception are as follows.
     
-       i.  No quantity available – Inventory is not available in the locations to assign the order to
+	1. **No quantity available:** Inventory is not available in the locations to assign the order to.
        
-       ii.  Maximum rejections – The order line has reached the maximum threshold in terms of locations rejecting the order
+	2. **Maximum rejections:** The order line has reached the maximum rejection threshold.
        
-       iii.  Data modification conflict – The sales order line has been changed since the order was brokered and as such the fulfillment plan cannot be applied to the order
+	3. **Data modification conflict:** The sales order line has been changed since the order was brokered and therefore the fulfillment plan cannot be applied to the order.
        
-       iv.  Order line specific exception – There are multiple exceptions on the order line
+	4. **Order line specific exception:** There are multiple exceptions on the order line.
 
-3.  DOM can be run in an interactive mode during the sales order entry process. While entering the order line, after specifying the product & qty, the user can use the option ‘Suggest fulfillment location’ under the path **Update line > DOM** to get a list of locations based on DOM rules that can fulfill the qty on the order line. The list of locations is sorted by distance and choosing a location sets the relevant site & warehouse on the sales order line. There needs to be an existing and active fulfillment profile that matches the sals origin and delivery mode as on the sales line for this feature to work.
+- DOM can be run in an interactive mode during the sales order entry process. While entering the order line, after specifying the product and quantity, the user can use the option **Suggest fulfillment location** under **Update line > DOM** to get a list of locations based on DOM rules that can fulfill the quantity on the order line. The list of locations is sorted by distance. Choosing a location sets the relevant site and warehouse on the sales order line. For this functionality to work, there must be an existing and active fulfillment profile that matches the sales origin and delivery mode as on the sales line.
 
-4.  The user has capability to see the DOM run logs for a sales order line using the option ‘View DOM logs’ under the path **Sales order line > DOM.** The DOM logs will show the user all the events and logs generated by the DOM run which will help the users to understand as to why a specific location was assigned to the order line and what rules & constraints were considered as a part of that assignment.The DOM logs are also available at the Sales order header level on the Manage tab.
+- The user can see the DOM run logs for a sales order line using the option **View DOM logs** under **Sales order line > DOM.** The DOM logs show the user all the events and logs generated by the DOM run. The logs can help the user understand why a specific location was assigned to the order line and what rules and constraints were considered as a part of the assignment. The DOM logs are also available at the sales order header level on the **Manage** tab.
 
-### **DOM fulfillment plan clean-up job**
+## Run a DOM fulfillment plan clean-up job
 
-As DOM runs are being executed, fulfillment plans get created. Over a period, the system will have numerous fulfillment plans. To manage this, a batch job can be configured to delete older fulfillment plans based on the value defined the parameter ‘Retention period in days’. The steps for the same are outlined below:
+As DOM runs are being executed, fulfillment plans get created. Over a period, the system will retain numerous fulfillment plans. To manage the number of fulfillment plans that are retained, a batch job based on the **Retention period in days** value can be configured to delete older fulfillment plans.
 
-   1.  Navigate to **Retail > Distributed order management > Batch processing > DOM fulfillment data deletion job setup**
+1. Go to **Retail > Distributed order management > Batch processing > DOM fulfillment data deletion job setup**.
    
-   2.  Select a configured Batch group
+1. In the **Batch group** field, select a configured batch group.
    
-   3.  Use the Recurrence tab to define the recurrence of the batch job
+1. Click the **Recurrence** tab to define the recurrence of the batch job.
    
-   4.  Click **OK**
+1. Click **OK**
 
-**Additional information**
+## More information
 
 The below are some of the things to factor for in the usage of DOM feature:
 
-   1.  For this release of the feature, DOM only looks at orders created from Retail channels. Sales orders are identified as retail sales orders when the field ‘Retail sale’ is set to Yes.
+- Currently, DOM only looks at orders created from Retail channels. Sales orders are identified as retail sales orders when the field **Retail sale** is set to **Yes**.
    
-   2.  DOM has not been tested with Advanced warehouse management features. As such, due diligence from customers and partners is required to determine if DOM is compatible with the Advanced warehouse management capabilities & processes that are relevant for them.
+- Microsoft has not tested DOM with advanced warehouse management features. Due diligence from customers and partners is required to determine whether DOM is compatible with the advanced warehouse management capabilities and processes that are relevant to them.
    
-   3.  DOM is only available on the Cloud version of the product. DOM is not supported in an on-prem deployment.
+- DOM is only available on the Cloud version of Dynamics 365 for Retail. It is not supported in an on-prem deployment.
 
 
