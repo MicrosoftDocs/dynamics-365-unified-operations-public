@@ -39,7 +39,7 @@ To improve the customer experience, retailers must gain real-time inventory visi
 
 As such, adaptation & implementation of a Distributed Order Management (DOM) system is no longer a matter of choice for retailers. DOM optimizes order fulfillment across a complex network of systems and processes. It relies on a single, global view of inventory across an entire organization to intelligently manage orders, so they are fulfilled accurately and cost effectively. Distributed order management improves the efficiency of a retailer’s supply chain, allowing them to better meet customer expectations.
 
-In short, Distributed order management (DOM) has surpassed from a top trend to a necessity for retailers. The lifecycle of a sales order in the context of DOM can be better understood with the help of the below image:
+In short, DOM has surpassed from a top trend to a necessity for retailers. The lifecycle of a sales order in the context of DOM can be better understood with the help of the below image:
 
 
 
@@ -63,7 +63,7 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
 3.  Navigate to **Retail > Distributed order management > Setup > DOM parameters > Solver** tab
 
-      -	Specify a value (no. of) in the field “Max auto-fulfillment attempts”. This parameter governs how many attempts will the DOM engine make to broker an order line to a location. If the DOM engine is not able to broker the order line to a location in the no. of attempts as defined in this parameter, then the DOM engine will flag the relevant order line as an exception and will skip the line from future execution runs till its status is manually re-set
+      -	Specify a value (no. of) in the field “Max auto-fulfillment attempts”. This parameter governs how many attempts the DOM engine will make to broker an order line to a location. If the DOM engine is not able to broker the order line to a location in the no. of attempts as defined in this parameter, then the DOM engine will flag the relevant order line as an exception and will skip the line from future execution runs till its status is manually reset
 
       -	Specify a value (in miles) in the field ‘Local store region radius’. This parameter helps to configure as to how locations are grouped and considered to be equal in terms of distance. For e.g.: if the value in this parameter is set to 100, then every store / DC within 100-mile radius of the fulfillment address is considered equal in terms of distance.
       
@@ -102,17 +102,17 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
 
     The below is the complete list of DOM rules that are supported in this release of the feature:
 
-	a.  **Minimum inventory rule:** This rule type helps organization to ringfence certain qty of a product for non-order fulfillment purposes. For e.g.: organizations may not want all the inventory that is available in a Store to be considered by DOM for order fulfillment. They may want to reserve some qty to 	service their walk-in customers. This can be achieved by leveraging this rule type. A minimum inventory to be retained can be defined per location or a group of locations for a category of products, individual product or product variant.
+	a.  **Minimum inventory rule:** This rule type helps organization to ringfence a certain qty of a product for non-order fulfillment purposes. For e.g.: organizations may not want all the inventory that is available in a Store to be considered by DOM for order fulfillment. They may want to reserve some qty to 	service their walk-in customers. This can be achieved by leveraging this rule type. A minimum inventory to be retained can be defined per location or a group of locations for a category of products, individual product or a product variant.
 
 	b.  **Fulfillment location priority rule:** This rule type allows organizations to define a hierarchy of locations using ‘Priority’, that the DOM engine should consider when trying to identify fulfillment locations for specific products. Locations with higher priority are considered first before resolving to other locations. A location with a priority of 1 is of higher priority as compared to a location with priority 2. The valid range of priorities is 1 to 10. If the rule is defined as a hard constraint rule, then the orders are only brokered to locations that have priorities defined for them.
 
 	c.  **Partial orders rule:** This rule allows organization to configure if an order or order lines can be fulfilled partially. The below are the details of the behavior of the different parameters on the rule:
 	
-	  - Fulfill partial orders: If this is set to Yes, it indicates that DOM should assign fulfillment locations to lines even if only few of the lines in the order can be fulfilled
+	  - Fulfill partial orders: If this is set to Yes, it indicates that DOM is allowed to fulfill only part of the qty on an order line by splittig the order line
 	  
 	  - Fulfill partial lines: If this is set to Yes, it indicates that DOM can fulfill partial qty of order lines and this is achieved by splitting the order line
 	  
-	  - Fulfill from one location: If this is set to Yes, DOM will ensure that few lines of an order can be fulfilled from one location and others from a different location
+	  - Fulfill from one location: If this is set to Yes, DOM will ensure that all lines on an order must be fulfilled from a single location
        
       The below table explains the behavior with a combination of the above parameters:
 
@@ -141,20 +141,20 @@ In short, Distributed order management (DOM) has surpassed from a top trend to a
    
    f.  **Maximum distance rule:** This rule allows the organization to define the maximum distance, a location or group of locations can go out to fulfill the order. If there are overlapping maximum distance rules define for a location, then DOM will apply the lower of the defined maximum distance for that location.
    
-   g.  **Maximum orders rule:** This rule allows the organization to define the maximum number of orders a location or group of locations can process in a calendar day. If a location is assigned the maximum no. of orders in each day, then DOM will not assign any more orders to that location for that calendar day.
+   g.  **Maximum orders rule:** This rule allows the organization to define the maximum number of orders a location or group of locations can process in a calendar day. If a location is assigned the maximum no. of orders in a single day, then DOM will not assign any more orders to that location for that calendar day.
    
    Some of the common attributes that can be defined for all the above rule types are explained below:
    
-   - Start date / End date: Every rule can date bound using the Start date & End date fields
+   - Start date / End date: Every rule can be date bound using the Start date & End date fields
    
    - Disabled: Rules that have a value of No for this field are the only ones that are considered in a DOM run
    
    - Hard constraint: A rule can be defined either as a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule irrespective of this setting, in other words, every rule is applied. Exception to this is the Location priority rule.
    
-   In the second iteration, the rules that are not defined as hard constraints are removed and the order / order lines that are not assigned to locations when the full rule set was applied, are attempted to be assigned to locations with a reduced rule count (as the not hard constraints rules are removed).
+   In the second iteration, the rules that were not defined as hard constraints are removed and the order / order lines that are not assigned to locations when the full rule set was applied, are attempted to be assigned to locations with a reduced rule count (as the non-hard constraints rules are removed).
 
 
-7.  Fulfillment profiles are used to bring together a collection of rules, legal entities, sales order origins & modes of delivery and every DOM run is for a specific Fulfillment profile. Doing so, enables organization to define & execute a set of rules for a set of legal entities, sales order origins and modes of delivery. So, if different set of rules are to be executed for different set of sales order origins or modes of delivery, they can be configured and executed by defining the fulfillment profiles accordingly
+7.  Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins & modes of delivery and every DOM run is for a specific Fulfillment profile. Doing so enables organizations to define & execute a set of rules for a set of legal entities, on orders with specific sales order origins and modes of delivery. So, if different set of rules are to be executed for different set of sales order origins or modes of delivery, they can be configured and executed by defining the fulfillment profiles accordingly
 
 The below are the steps to set-up the Fulfillment profiles:
 
@@ -205,7 +205,7 @@ The below are the steps to set-up the Fulfillment profiles:
 
 **DOM Processing**
 
-DOM is expected to be run in batch. To configure the batch job for the DOM runs, please follow the below steps:
+DOM will only run in batch. To configure the batch job for the DOM runs, please follow the below steps:
 
    1.  Navigate to **Retail > Distributed order management > Batch processing > DOM processor job setup**
    
@@ -213,9 +213,11 @@ DOM is expected to be run in batch. To configure the batch job for the DOM runs,
    
    3.  Select a configured Batch group
    
-   4.  Use the Recurrence tab to define the recurrence of the batch job
+   4. Specify a name for the batch job 
+    
+   5. Use the Recurrence tab to define the recurrence of the batch job
    
-   5.  Click **OK**
+   6.  Click **OK**
 
 At the time of processing, DOM will consider the order and order lines as outlined below:
 
@@ -263,7 +265,7 @@ If the Fulfillment profile is set to “Auto apply”, the results of the execut
 
 **Order line actions & statuses**
 
-1.  On the **General** tab of the sales order & sales order line, there is a field called as ‘Exclude from DOM processing’. Setting this field to Yes, will exclude the order / order line from DOM processing
+1.  On the **General** tab of the sales order & sales order line, there is a field called ‘Exclude from DOM processing’. Setting this field to Yes, will exclude the order / order line from DOM processing
 
 2.  On the **General** tab of the sales order line, there is a field called as ‘DOM status’. The DOM status field can one of three values as explained below:
 
@@ -279,9 +281,9 @@ If the Fulfillment profile is set to “Auto apply”, the results of the execut
        
        iii.  Data modification conflict – The sales order line has been changed since the order was brokered and as such the fulfillment plan cannot be applied to the order
        
-       iv.  Order line specific exception – There are multiple reasons for this exception
+       iv.  Order line specific exception – There are multiple exceptions on the order line
 
-3.  DOM can be run in an interactive mode during the sales order entry process. While entering the order line, after specifying the product & qty, the user can use the option ‘Suggest fulfillment location’ under the path **Update line > DOM** to get a list of locations based on DOM rules that can fulfill the qty on the order line. The list of locations is sorted by distance and choosing a location sets the relevant site & warehouse on the sales order line
+3.  DOM can be run in an interactive mode during the sales order entry process. While entering the order line, after specifying the product & qty, the user can use the option ‘Suggest fulfillment location’ under the path **Update line > DOM** to get a list of locations based on DOM rules that can fulfill the qty on the order line. The list of locations is sorted by distance and choosing a location sets the relevant site & warehouse on the sales order line. There needs to be an existing and active fulfillment profile that matches the sals origin and delivery mode as on the sales line for this feature to work.
 
 4.  The user has capability to see the DOM run logs for a sales order line using the option ‘View DOM logs’ under the path **Sales order line > DOM.** The DOM logs will show the user all the events and logs generated by the DOM run which will help the users to understand as to why a specific location was assigned to the order line and what rules & constraints were considered as a part of that assignment.The DOM logs are also available at the Sales order header level on the Manage tab.
 
