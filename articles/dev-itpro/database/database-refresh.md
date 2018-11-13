@@ -35,29 +35,29 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional database of your production environment into the target, sandbox UAT environment.  This process includes copying of the Financial Reporting database. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional database of your production environment into the target, sandbox UAT environment. This process includes copying the Financial Reporting database. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
 This functionality lets you use production data to test upcoming code changes in a UAT environment. You can also copy a production database into a UAT environment for debugging purposes.
 
-> [!important]
+> [!Important]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.  
 
 ## Database refresh via self-service (Public preview)
-With the goal of providing Application Lifecycle Management capabilities to our customers without needing to rely on human or manual processes, the Lifecycle Services team has introduced an automated Refresh Database action.  To refresh your sandbox environment with data from another environment, you can now perform this action as part of self-service action that is in Public preview.  The process is outlined below, and is fully-supported functionality.
+With the goal of providing Application Lifecycle Management capabilities to our customers without relying on human or manual processes, the Lifecycle Services team has introduced an automated Refresh Database action. To refresh your sandbox environment with data from another environment, you can perform this action as part of the Self-service action that is in Public preview. This process is outlined below, and is fully-supported functionality.
 
-1. Enable the Public preview feature by logging in to LCS and select the **Preview feature management** tile from the home screen.  Find the feature titled **Restore database from another environment** and set the **Preview feature enabled** value to **True**.
-2. Visit your target sandbox environment details page, and click the **Maintain** > **Move database** menu option.
+1. Enable the Public preview feature by signing in to LCS and select the **Preview feature management** tile on the home screen. Find the **Restore database from another environment** feature and set **Preview feature enabled** to **True**.
+2. Visit your target sandbox **Environment Details** page , and click the **Maintain** > **Move database** menu option.
 3. Select the **Refresh database** option and choose your source environment.
-4. Note the warnings and see the list of data elements below which are not copied from the source environment.
+4. Note the warnings and review the list of data elements that are not copied from the source environment.
 5. The refresh operation will begin immediately.
-6. Once the refresh operation is completed, you must **Sign off** on the operation before being able to perform another servicing operation, such as package deployment, database movement, or upgrade.
+6. After the refresh operation is completed, you must **Sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
 
 ### Refresh operation failed
-In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began.  This is made possible by the Azure SQL Point-in-time restore capability to restore the database.  This is often required if a customization is present in the target sandbox that cannot complete a Database Synchronization with the newly refreshed data.  
+In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL Point-in-time restore capability to restore the database. This is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly refreshed data.  
 
 To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
 
-### Data elements which aren't copied during refresh
+### Data elements that aren't copied during refresh
 When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.  This is because the data is either environment specific, or could cause operational issues such as sending realistic email out of a non-production environment.  These data elements include:
 
 * Email addresses in the LogisticsElectronicAddress table.
@@ -72,15 +72,14 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * All batch jobs are set to Withhold status.
 
 ### Environment administrator
-The System Administrator account in the target environment (UserId of 'Admin') is reset to the value of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database.  This also means that the Tenant of the environment will be that of the Environment Administrator.  If you require a different account to be used, you will need to deallocate and delete the target sandbox, and redeploy selecting your account of choice.  Thereafter, perform another Refresh Database action to restore the data.
+The System Administrator account in the target environment (UserId of 'Admin') is reset to the value of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.  If you require a different account to be used, you will need to deallocate and delete the target sandbox, and redeploy selecting another account. After this, you can perform another refresh database action to restore the data.
 
 ## Database refresh via service request
 
 > [!NOTE]
 > As of October 2018, database refresh requests must be signed off before another refresh of the same environment can be started. This is to support future automation of database movement operations. To sign off, visit your **Environment Details** page and click the **Signoff** button. You can create many database refresh service requests out in to the future, however you must sign off in between each one.
-
-> [!IMPORTANT]
-> Service requests for Database Refresh will not be accepted for servicing dates after January 31, 2019.  After this date, all refresh operations will be performed via the self-service actions outlined above.
+>
+> Service requests for database refresh will not be accepted for servicing dates after January 31, 2019.  After this date, all refresh operations will be performed via the self-service actions outlined above.
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
@@ -119,18 +118,18 @@ Here is the list of requirements and conditions of operation for a database refr
 ## Steps to complete after a database refresh for environments that use Retail functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
-## Known Issues
+## Known issues
 
-### Incompatible version of Financial Reporting between Source and Target Environments
-The database refresh process (self-service or via Service Request) cannot be completed successfully if the version of Financial Reporting is different between the source and target environment.  To resolve, update both environments to have the latest version of Financial Reporting.
+### Incompatible version of Financial Reporting between source and target environments
+The database refresh process (self-service or via service request) cannot be completed successfully if the version of Financial Reporting is different between the source and target environment. To resolve this issue, update both environments to have the latest version of Financial Reporting.
 
-* Visit the **Asset Library** in your implementation project, and then click on the *Software deployable package* section.
-* Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and pick this for import.
+* Visit the **Asset Library** in your implementation project, and then click **Software deployable package**.
+* Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
 * Apply this package to both the source and target environments to ensure they are both using the latest version.
 
-### Incompatible application versions between Source and Target Environments
-The database refresh process (self-service or via Service Request) cannot be completed if the Application Release of your source and target environment are not the same.  This is because the data upgrade process is not executed by database movement operations such as Refresh, and data loss can occur.  
+### Incompatible application versions between source and target environments
+The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.  
 
-If upgrading your sandbox UAT environment to a newer application version ( 7.3 to 8.1 for example ), then be sure to perform the database refresh action prior to starting the upgrade.  Once your sandbox is upgraded to the newer version, you cannot restore an older Production environment database in to the sandbox UAT environment.  
+If upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.  
 
-Conversely, if your Production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refersh or simply Deallocate, Delete, and Redeploy prior to performing the refresh.
+Conversely, if your production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
