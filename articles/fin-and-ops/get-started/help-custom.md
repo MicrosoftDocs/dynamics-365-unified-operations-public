@@ -43,4 +43,4 @@ The process for setting up a custom Help solution consists of publishing content
 - [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## See also
-[Create documentation or training by using task recordings](../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md)
