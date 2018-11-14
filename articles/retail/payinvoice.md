@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Enhancement to Pay Invoices
-description: Enhancement to Pay Invoices
+title: Set up pay invoice scenarios
+description: This topic describes how to configure Dynamics 365 for Retail to support various scenarios relating to invoice payments.
 author: josaw1
 manager: AnnBe
-ms.date: 10/31/2018
+ms.date: 11/14/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -25,32 +25,31 @@ ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2018-10-31
+ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 
 ---
-# Enhancement to Pay invoice operation
+# Set up pay invoice scenarios
 
-## Overview
+[!include [banner](includes/banner.md)]
 
-The ‘Pay invoice’ operation that existed in the product supported the payment of a a single open sales order invoice at a time using the POS application. It did not allow the user to pay off multiple sales order invoices in a single POS transaction and nor did it support payment of other customer invoice types like Free text invoice, Project based invoices, Credit notes etc.
+The "Pay invoice" functionality in Dynamics 365 for Operations has been expanded to support:
+- Pay off multiple sales order invoices in a single POS transaction.
+- Payment of various customer invoice types including free text invoice, project-based invoices, and credit notes.
 
-The Pay invoice operation has been significantly enhanced to support these scenarios.
+To enable these scenarios, the functionality profile for stores must be configured as outlined in the steps below.  
 
-**Setup**
+1. Go to **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.
 
-The enhancements around the Pay invoice operation can be leveraged by configuring the functionality profile for stores as per the below steps:
+1. On the **Functions** tab, configure the following parameters as needed.
 
-1.  Navigate to **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** and choose a profile linked to the stores where you want the users to have the enhanced Pay invoice operation
+    - **Sales order invoice:** Select **Yes** to allow users to pay one or more sales order-based invoice in a single POS transaction.
 
-2.  In the **Functions** tab of the Functionality profiles, there are four new parameters that are introduced and the details for the same are as follows:
+    - **Free text invoice:** Select **Yes** to allow users to pay one or more free text-based invoice in a single POS transaction.
 
-    1.  **Sales order invoice**: Setting this field to Yes will allow users to pay one or more sales order-based invoices in a single POS transaction
+    - **Project invoice:** Select **Yes** to allow users to pay one or more project-based invoice in a single POS transaction.
 
-    2.  **Free text invoice:** Setting this field to Yes will allow users to pay one or more free text-based invoices in a single POS transaction
+    - **Sales order credit note:** Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process the refund to the customer for the open credit note.
 
-    3.  **Project invoice:** Setting this field to Yes will allow users to pay one or more project-based invoices in a single POS transaction
-
-    4.  **Sales order credit note:** Setting this field to Yes will allow users to settle multiple sales order-based credit notes against open invoices or process the refund to the customer for the open credit note
-
-**Notes:** The enhancement around Pay invoice operation still does not support payment / settlement of partial amounts for the support document types.
+> [!NOTE]
+> Payment or settlement of partial amounts is not yet supported.
