@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Overview
+# Open URL in POS
 
 This topic describes how you can configure a button in POS to open a URL. This feature does not require a code customization, and the feature can be configured by someone in a non-developer role.
 
