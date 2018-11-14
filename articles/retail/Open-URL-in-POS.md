@@ -69,7 +69,7 @@ To configure a URL to be opened in POS, perform the following steps.
 
 1.	In head office, go to **Retail > Channel Setup > POS Setup > POS > Screen Layouts**.
 2.	Select **Button Grids > Designer**.
-3.	Create New Button
+3.	Create new button.
 4.	Select **Button** properties.
 5.	Select **Open URL** as the action.
 6.	Enter desired URL.
