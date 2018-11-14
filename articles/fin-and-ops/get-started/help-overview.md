@@ -123,7 +123,7 @@ To begin the guided, interactive experience, click **Start task guide** at the b
 > [!IMPORTANT] 
 > The data that you enter when you play a task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
 
-You can use Task recorder to create your own custom task guides. For more information, see [Create documentation or training by using task recordings](../dev-itpro/user-interface/task-recorder-training-docs.md).
+You can use Task recorder to create your own custom task guides. For more information, see [Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## In-product Help
 To access Help content within Finance and Operations, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
