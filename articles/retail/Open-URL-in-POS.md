@@ -46,12 +46,12 @@ Opening a web URL within POS is currently only supported for Modern POS on Windo
 ## Open a native app
 This feature also allows you to specify non-web URLs to open a native app. As an example, you can specify URL protocols such as MailTo, SIP, IM, MSTEAMS, etc., which can then be handled by respective native apps on the host device. To enable this, you must configure the URL with the **Open in new window** option checked. 
 
-On Windows computers, see [Export or Import Default Application Associations](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) to set the default protocol associations if you are setting up your computer using DISM. If you are using MDM, such as Intune to manage your Windows computers, see [Application defaults](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationdefaults). If you are a developer building a custom website, see [Launch the default app for a URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app). 
+On Windows computers, see [Export or Import Default Application Associations](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) to set the default protocol associations if you are setting up your computer using DISM. If you are using MDM, such as Intune to manage your Windows computers, see [Policy CSP - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults). If you are a developer building a custom website, see [Launch the default app for a URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app). 
 
 ## Open a native app seamlessly
 Windows, iOS, and Android also allow opening of apps more seamlessly, based on app protocol association. If your desired app is not already configured to handle opening from a web browser, you may need a developer to configure this first.
 
-For Windows, see [Enable apps for websites using app URI handlers](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking), for iOS, see [Universal Links](https://developer.apple.com/ios/universal-links/) and for Android, see [Android App Links](https://developer.android.com/training/app-links/).  
+For Windows, see [Enable apps for websites using app URI handlers](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking), for iOS, see [Universal Links for Developers](https://developer.apple.com/ios/universal-links/) and for Android, see [Handling Android App Links](https://developer.android.com/training/app-links/).  
 
 
 |   Client                |Open in new window |Open native app | Open within POS	        | Details                           |
