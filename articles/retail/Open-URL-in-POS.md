@@ -62,7 +62,7 @@ For Windows, see [Enable apps for websites using app URI handlers](https://docs.
 | Modern POS on Android   | ✓*                |    ✓          |       X                  |  *Opens in new browser tab        |
 
 ## Before you begin
-Before you begin, review how to configure [Screen layouts for the point of sale (POS)](pos-screen-layouts.md)
+Before you begin, review how to configure [Screen layouts for the point of sale (POS)](pos-screen-layouts.md).
 
 ## Open URL in POS
 To configure a URL to be opened in POS, perform the following steps.
