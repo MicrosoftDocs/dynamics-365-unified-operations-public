@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -72,9 +72,19 @@ Translated task guides were first shipped in the May 2016 APQC Unified Library, 
 > -   If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Creating custom help
+You can use task guides to create custom help, or connect a website to the Help pane. 
+
+### Create custom help with task guides
 You can create custom help for Finance and Operations, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent. 
 
 For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+
+### Connect a custom site
+Microsoft has provided a white paper and sample code that describe how to create and connect a custom help site to the Help pane. For more information, see: 
+- [Create Custom Help for Finance and Operations (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)
+
+
 
 Additional resources
 --------

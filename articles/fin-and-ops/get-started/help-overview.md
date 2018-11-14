@@ -2,10 +2,10 @@
 # required metadata
 
 title: Finance and Operations Help system
-description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system.
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. 
 
 > [!NOTE] 
 > The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
@@ -52,8 +52,6 @@ Finance and Operations includes a Help system that is based on two main componen
 You can access help from the Help pane in whichever product you are using. The following screenshot shows Finance and Operations.
 
 ![Help pane](./media/help-pane-ops-task-guides.png)
-
-This topic describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 > [!IMPORTANT]
 > **Task guides** are not currently available for Retail, or in the Help pane for Talent (a few task guides are available in the Getting Started pane for Talent). Procedural help is available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
@@ -88,7 +86,7 @@ To subscribe to an RSS feed of all updates to the Unified Operations content, us
 ### Give feedback 
 We really like customer feedback. You can either comment or suggest changes to our content through GitHub. For more information about our feedback system, see [this blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### Leave us feedback 
+#### Leave us feedback 
 If you have feedback or questions about a topic, leave us a comment at the bottom of the page.  
 
 1. Click **Feedback** to get to the comments at the bottom of the page, and then click either **Product feedback**, or **Sign in to give documentation feedback**.
@@ -98,8 +96,6 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 2. Start typing your comments, and then click **Submit feedback**.
 
 ![Post comment](./media/feedback.png)
-
-
 
 ##### Suggest a change or contribute content through GitHub
 To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement.  After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.  
@@ -127,22 +123,7 @@ To begin the guided, interactive experience, click **Start task guide** at the b
 > [!IMPORTANT] 
 > The data that you enter when you play a task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
 
-### It all begins with Task Recorder
-
-Task guides are created by using Task Recorder. When you use Task Recorder, all the actions that you perform in the Finance and Operations UI (such as clicking menus, changing settings, and entering data) are recorded. The steps that you record are collectively called a task recording. As we explained in the previous section, task recordings can be displayed in the Help pane and played as task guides. However, there are other ways that you can use task recordings:
-
--   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. 
-
-    > [!Note]
-    > To display a task recording in the Finance and Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
-    
--   **Save task recordings as Word documents** – By saving a task recording as a Microsoft Word document, you can easily produce printable training guides for your organization.
-
-For more information about Task Recorder, see [Task recorder in Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
-
-### Creating customized task recordings
-
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+You can use Task recorder to create your own custom task guides. For more information, see [Create documentation or training by using task recordings](../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## In-product Help
 To access Help content within Finance and Operations, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
@@ -189,6 +170,11 @@ After a System administrator has completed these steps, you can open the Help pa
 Translated Task guides are released in libraries with "All languages" in the title. In Finance and Operations, to see localized Task guide help, make sure that you are connected to an appropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
 -   If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
 -   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
+
+## Creating custom help
+You can create help for your users by creating custom task guides, or connect your own website to the Help pane. For details, see: 
+- [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+- [Create Custom Help for Finance and Operations (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## Additional resources
 
