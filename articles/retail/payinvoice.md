@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-The "Pay invoice" functionality in Dynamics 365 for Operations has been expanded to support:
+The "Pay invoice" functionality in Dynamics 365 for Retail has been expanded to support:
 - Payoff of multiple sales order invoices in a single POS transaction.
 - Payment of various customer invoice types including free text invoice, project-based invoices, and credit notes.
 
