@@ -1075,7 +1075,7 @@ Starting from PU20 and above, there is database synchronization log issue where 
 
 To resolve this issue:
 Go to <SF-dir>\AOS_<x>\ Fabric\work\Applications\AXSFType_App<X>\log - eg.:C:\ProgramData\SF\AOS_11\Fabric\work\Applications\AXSFType_App183\log
-Here you can see the output from Datadabase-sync in the Code_AXSF_M_<X>.out files. And trouble shoot any issues regarding this component.
+Here you can see the output from DatabaseSynchronize in the Code_AXSF_M_<X>.out files. And trouble shoot any issues regarding this component.
 
 ## Unable to access AX: AADSTS50058: A silent sign-in request was sent but no user is signed in
 This error might happen during login to AX. After entering user credentials, browser will show application layout for a second, then it will try to redirect outside of LBD and fail with following error:
