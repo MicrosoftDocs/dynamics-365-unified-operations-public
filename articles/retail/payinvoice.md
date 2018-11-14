@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 The "Pay invoice" functionality in Dynamics 365 for Operations has been expanded to support:
-- Pay off multiple sales order invoices in a single POS transaction.
+- Payoff of multiple sales order invoices in a single POS transaction.
 - Payment of various customer invoice types including free text invoice, project-based invoices, and credit notes.
 
 To enable these scenarios, the functionality profile for stores must be configured as outlined in the steps below.  
