@@ -5,7 +5,7 @@ title: Core HR entities in Common Data Service for Apps
 description: Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and integration scenarios.
 author: jcart
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -415,7 +415,7 @@ The following Core HR entities are available in CDS for Apps.
 
 ## Leave and absence entities
 
-**Leave Enrollment**
+**Leave enrollment**
 
 | **Fields**            | **Data type** | **Required** | **Searchable** |
 |-----------------------|---------------|--------------|----------------|
@@ -642,7 +642,7 @@ The following Core HR entities are available in CDS for Apps.
 | Is Remainder                     | Two Options    |              | X              |
 | Priority                         | Whole Number   |              | X              |
 
-**Person Identification Issuing Agency**
+**Person identification issuing agency**
 
 | **Fields**           | **Data type** | **Required** | **Searchable** |
 |----------------------|---------------|--------------|----------------|
@@ -668,7 +668,7 @@ The following Core HR entities are available in CDS for Apps.
 | Telex                | Text          |              | X              |
 | Website URL          | Text          |              | X              |
 
-**Worker Person Identification Type**
+**Worker person identification type**
 
 | **Fields**                        | **Data type**  | **Required** | **Searchable** |
 |-----------------------------------|----------------|--------------|----------------|
@@ -680,9 +680,9 @@ The following Core HR entities are available in CDS for Apps.
 | Type                              | Option Set     |              | X              |
 | Worker Person Identification Type | Text           | X            | X              |
 
-## Fixed Compensation Entitites
+## Fixed compensation entities
 
-**Compensation Fixed Plan**
+**Compensation fixed plan**
 
 | **Fields**                  | **Data type** | **Required** | **Searchable** |
 |-----------------------------|---------------|--------------|----------------|
@@ -700,7 +700,7 @@ The following Core HR entities are available in CDS for Apps.
 | Reference Point Line Setup  | Lookup        |              | X              |
 | Type                        | Option Set    | X            | X              |
 
-**Compensation Grid**
+**Compensation grid**
 
 | **Fields**                  | **Data type** | **Required** | **Searchable** |
 |-----------------------------|---------------|--------------|----------------|
@@ -713,15 +713,15 @@ The following Core HR entities are available in CDS for Apps.
 | Reference Point Setup       | Lookup        | X            | X              |
 | Type                        | Option Set    | X            | X              |
 
-**Compensation Level**
+**Compensation level**
 
 | **Fields**      | **Data type** | **Required** | **Searchable** |
 |-----------------|---------------|--------------|----------------|
 | Description     | Text          |              | X              |
 | Name            | Text          | X            | X              |
-| Type            | Optin Set     | X            | X              |
+| Type            | Option Set     | X            | X              |
 
-**Compensation Pay Frequency**
+**Compensation pay frequency**
 
 | **Fields**                  | **Data type**   | **Required** | **Searchable** |
 |-----------------------------|-----------------|--------------|----------------|
@@ -735,7 +735,7 @@ The following Core HR entities are available in CDS for Apps.
 | Weekly Conversion Factor    | Option Set      |              | X              |
 
 
-**Compensation Reference Point Setup**
+**Compensation reference point setup**
 
 | **Fields**          | **Data type**   | **Required** | **Searchable** |
 |---------------------|-----------------|--------------|----------------|
@@ -744,7 +744,7 @@ The following Core HR entities are available in CDS for Apps.
 | Description         | Text            | X            | X              |
 | Name                | Text            | X            | X              |
 
-**Compensation Reference Point Setup Line**
+**Compensation reference point setup line**
 
 | **Fields**            | **Data type**   | **Required** | **Searchable** |
 |-----------------------|-----------------|--------------|----------------|
@@ -754,7 +754,7 @@ The following Core HR entities are available in CDS for Apps.
 | Name                  | Text            | X            | X              |
 | Reference Point Setup | Lookup          | X            | X              |
 
-**Compensation Region**
+**Compensation region**
 
 | **Fields**      | **Data type** | **Required** | **Searchable** |
 |-----------------|---------------|--------------|----------------|
@@ -776,7 +776,7 @@ The following Core HR entities are available in CDS for Apps.
 | Reference Point               | Lookup          | X            | X              |
 | Reference Point Line Setup    | Lookup          | X            | X              |
 
-**Fixed Compensation Event**
+**Fixed compensation event**
 
 | **Fields**            | **Data type**   | **Required** | **Searchable** |
 |-----------------------|-----------------|--------------|----------------|
@@ -785,11 +785,3 @@ The following Core HR entities are available in CDS for Apps.
 | Event Type            | Option Set      | X            | X              |
 | Is Active             | Two Options     | X            |                |
 | Name                  | Text            | X            | X              |
-
-
-
-
-
-
-
-
