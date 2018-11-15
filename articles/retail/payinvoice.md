@@ -33,23 +33,23 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-The "Pay invoice" functionality in Dynamics 365 for Retail has been expanded to support:
+The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:
 - Payoff of multiple sales order invoices in a single POS transaction.
-- Payment of various customer invoice types including free text invoice, project-based invoices, and credit notes.
+- Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.
 
-To enable these scenarios, the functionality profile for stores must be configured as outlined in the steps below.  
+To enable these scenarios, the functionality profile for stores must be configured as outlined in below.  
 
 1. Go to **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.
 
 1. On the **Functions** tab, configure the following parameters as needed.
 
-    - **Sales order invoice:** Select **Yes** to allow users to pay one or more sales order-based invoice in a single POS transaction.
+    - **Sales order invoice** - Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.
 
-    - **Free text invoice:** Select **Yes** to allow users to pay one or more free text-based invoice in a single POS transaction.
+    - **Free text invoice** - Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.
 
-    - **Project invoice:** Select **Yes** to allow users to pay one or more project-based invoice in a single POS transaction.
+    - **Project invoice** - Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.
 
-    - **Sales order credit note:** Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process the refund to the customer for the open credit note.
+    - **Sales order credit note** - Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.
 
 > [!NOTE]
 > Payment or settlement of partial amounts is not yet supported.
