@@ -58,7 +58,8 @@ This feature also allows you to specify non-web URLs to open a native app. For e
 Windows, iOS, and Android also allow opening of apps more seamlessly, based on app protocol association. If your app is not already configured to handle opening from a web browser, you may need a developer to configure this.
 
 - For Windows, see [Enable apps for websites using app URI handlers](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
-- For iOS, see [Universal Links for Developers](https://developer.apple.com/ios/universal-links/) and for Android, see [Handling Android App Links](https://developer.android.com/training/app-links/).  
+- For iOS, see [Universal Links for Developers](https://developer.apple.com/ios/universal-links/).
+- For Android, see [Handling Android App Links](https://developer.android.com/training/app-links/).  
 
 
 |   Client                |Open in new window |Open native app | Open within POS	        | Details                           |
