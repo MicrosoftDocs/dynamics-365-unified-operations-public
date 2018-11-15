@@ -137,4 +137,4 @@ Here are some typical examples of service requests that will be denied:
 |                                | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
 |                                | Production | IP whitelist rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
-|                                | Production | Special fonts | Five hours | Two hours |
+
