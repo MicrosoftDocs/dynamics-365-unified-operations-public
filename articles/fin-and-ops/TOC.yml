@@ -152,6 +152,8 @@
         href: get-started/help-overview.md
       - name: Connect the Help system
         href: get-started/help-connect.md
+      - name: Connect a custom help site
+        href: get-started/help-custom.md        
       - name: View and export field descriptions
         href: get-started/view-export-field-descriptions.md
       - name: Task guides and task recorder
@@ -4149,6 +4151,8 @@
         href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
       - name: Pick oldest batch on a mobile device
         href: ../supply-chain/warehousing/pick-oldest-batch.md
+      - name: Process guide framework
+        href: ../supply-chain/warehousing/process-guide-framework.md
     - name: Upgrade and migration
       items:
       - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
