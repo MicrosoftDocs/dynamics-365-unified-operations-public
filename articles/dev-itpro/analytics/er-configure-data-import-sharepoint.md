@@ -5,7 +5,7 @@ title: Configure data import from SharePoint
 description: This topic explains how to import data from Microsoft SharePoint.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220314
