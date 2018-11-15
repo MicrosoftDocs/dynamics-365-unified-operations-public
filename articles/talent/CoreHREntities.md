@@ -5,7 +5,7 @@ title: Core HR entities in Common Data Service for Apps
 description: Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and integration scenarios.
 author: jcart
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -301,6 +301,43 @@ The following Core HR entities are available in CDS for Apps.
 | Worker Bank Account Number | Text          |              | X              |
 | Worker Bank Account Number | Text          | X            | X              |
 
+**Worker fixed compensation**
+
+| Fields                                | Data type      | Required | Searchable |
+|---------------------------------------|----------------|----------|------------|
+| Company                               | Lookup         | X        | X          |
+| Compensation Type                     | Option Set     |          | X          |
+| Currency                              | Lookup         |          | X          |
+| Effective Date                        | Date Only      |          | X          |
+| Event                                 | Lookup         | X        | X          |
+| Exchange Rate                         | Decimal Number |          | X          |
+| Expiration Date                       | Date Only      |          | X          |
+| Line Number                           | Decimal Number |          | X          |
+| Pay Frequency                         | Lookup         | X        | X          |
+| Pay Rate                              | Currency       |          | X          |
+| Pay Rate (Base)                       | Currency       |          | X          |
+| Plan                                  | Lookup         | X        | X          |
+| Position                              | Lookup         | X        | X          |
+| Process Type                          | Option Set     | X        | X          |
+| Reference Point Setup Line            | Lookup         |          | X          |
+| Worker                                | Lookup         | X        | X          |
+| Worker Fixed Compensation Number      | Text           | X        | X          |
+
+**Worker person identification number**
+
+| Fields                 | Data type   | Required | Searchable |
+|------------------------|-------------|----------|------------|
+| Description            | Text        |          | X          |
+| Entry Type             | Text        |          | X          |
+| Expiration Date        | Date Only   |          | X          |
+| Identification Number  | Text        | X        | X          |
+| Identification Type    | Lookup      | X        | X          |
+| Is Primary             | Two Options |          | X          |
+| Issue Date             | Date Only   |          | X          |
+| Issuing Agency         | Lookup      | X        | X          |
+| Worker                 | Lookup      | X        | X          |
+
+
 ## Position entities
 
 **Job position**
@@ -378,7 +415,7 @@ The following Core HR entities are available in CDS for Apps.
 
 ## Leave and absence entities
 
-**Leave Enrollment**
+**Leave enrollment**
 
 | **Fields**            | **Data type** | **Required** | **Searchable** |
 |-----------------------|---------------|--------------|----------------|
@@ -604,3 +641,147 @@ The following Core HR entities are available in CDS for Apps.
 | Exchange Rate                    | Decimal Number |              | X              |
 | Is Remainder                     | Two Options    |              | X              |
 | Priority                         | Whole Number   |              | X              |
+
+**Person identification issuing agency**
+
+| **Fields**           | **Data type** | **Required** | **Searchable** |
+|----------------------|---------------|--------------|----------------|
+| Address Description  | Text          |              | X              |
+| Address Line 1       | Text          |              | X              |
+| Address Line 2       | Text          |              | X              |
+| Address Line 3       | Text          |              | X              |
+| City                 | Text          |              | X              |
+| Country or Region    | Option Set    |              | X              |
+| County               | Text          |              | X              |
+| Description          | Text          |              | X              |
+| Email                | Text          |              | X              |
+| Extension            | Text          |              | X              |
+| Fax                  | Text          |              | X              |
+| Issuing Agency Name  | Text          | X            | X              |
+| Mobile Phone         | Text          |              | X              |
+| Page                 | Text          |              | X              |
+| Postal Code          | Text          |              | X              |
+| Post Office Box      | Text          |              | X              |
+| SMS                  | Text          |              | X              |
+| State or Province    | Text          |              | X              |
+| Telephone            | Text          |              | X              |
+| Telex                | Text          |              | X              |
+| Website URL          | Text          |              | X              |
+
+**Worker person identification type**
+
+| **Fields**                        | **Data type**  | **Required** | **Searchable** |
+|-----------------------------------|----------------|--------------|----------------|
+| Allowed Values                    | Option Set     |              | X              |
+| Country or Region                 | Text           |              | X              |
+| Description                       | Text           |              | X              |
+| Fixed Length                      | Whole Number   |              | X              |
+| Identification Number Format      | Text           |              | X              |
+| Type                              | Option Set     |              | X              |
+| Worker Person Identification Type | Text           | X            | X              |
+
+## Fixed compensation entities
+
+**Compensation fixed plan**
+
+| **Fields**                  | **Data type** | **Required** | **Searchable** |
+|-----------------------------|---------------|--------------|----------------|
+| Company                     | Lookup        | X            | X              |
+| Compensation Grid           | Lookup        |              | X              |
+| Currency                    | Lookup        | X            | X              |
+| Description                 | Text          | X            | X              |
+| Effective Date              | Date Only     | X            | X              |
+| Expiration Date             | Date Only     | X            | X              |
+| Hire Rule                   | Option Set    | X            | X              |
+| Name                        | Text          | X            | X              |
+| Out of Range Tolerance      | Option Set    | X            | X              |
+| Pay Frequency               | Lookup        | X            | X              |
+| Recommendation Allowed      | Two Options   | X            | X              |
+| Reference Point Line Setup  | Lookup        |              | X              |
+| Type                        | Option Set    | X            | X              |
+
+**Compensation grid**
+
+| **Fields**                  | **Data type** | **Required** | **Searchable** |
+|-----------------------------|---------------|--------------|----------------|
+| Company                     | Lookup        | X            | X              |
+| Currency                    | Lookup        |              | X              |
+| Description                 | Text          | X            | X              |
+| Effective Date              | Date Only     |              | X              |
+| Expiration Date             | Date Only     |              | X              |
+| Name                        | Text          | X            | X              |
+| Reference Point Setup       | Lookup        | X            | X              |
+| Type                        | Option Set    | X            | X              |
+
+**Compensation level**
+
+| **Fields**      | **Data type** | **Required** | **Searchable** |
+|-----------------|---------------|--------------|----------------|
+| Description     | Text          |              | X              |
+| Name            | Text          | X            | X              |
+| Type            | Option Set     | X            | X              |
+
+**Compensation pay frequency**
+
+| **Fields**                  | **Data type**   | **Required** | **Searchable** |
+|-----------------------------|-----------------|--------------|----------------|
+| Annual Conversion Factor    | Decimal Number  |              | X              |
+| Company                     | Lookup          | X            | X              |
+| Description                 | Text            |              | X              |
+| Hourly Conversion Factor    | Decimal Number  |              | X              |
+| Monthly Conversion Factor   | Decimal Number  |              | X              |
+| Name                        | Text            | X            | X              |
+| Period                      | Option Set      |              | X              |
+| Weekly Conversion Factor    | Option Set      |              | X              |
+
+
+**Compensation reference point setup**
+
+| **Fields**          | **Data type**   | **Required** | **Searchable** |
+|---------------------|-----------------|--------------|----------------|
+| Company             | Lookup          | X            | X              |
+| Compensation Type   | Option Set      | X            | X              |
+| Description         | Text            | X            | X              |
+| Name                | Text            | X            | X              |
+
+**Compensation reference point setup line**
+
+| **Fields**            | **Data type**   | **Required** | **Searchable** |
+|-----------------------|-----------------|--------------|----------------|
+| Company               | Lookup          | X            | X              |
+| Description           | Text            | X            | X              |
+| Line Number           | Decimal Number  | X            | X              |
+| Name                  | Text            | X            | X              |
+| Reference Point Setup | Lookup          | X            | X              |
+
+**Compensation region**
+
+| **Fields**      | **Data type** | **Required** | **Searchable** |
+|-----------------|---------------|--------------|----------------|
+| Description     | Text          | X            | X              |
+| Name            | Text          | X            | X              |
+
+**Compensation structure**
+
+| **Fields**                    | **Data type**   | **Required** | **Searchable** |
+|-------------------------------|---------------  |--------------|----------------|
+| Amount                        | Currency        |              | X              |
+| Amount Base                   | Currency        |              | X              |
+| Company                       | Lookup          | X            | X              |
+| Compensation Structure Number | Text            | X            | X              |
+| Currency                      | Lookup          |              | X              |
+| Exchange Rate                 | Decimal Number  |              | X              |
+| Grid                          | Lookup          | X            | X              |
+| Level                         | Lookup          | X            | X              |
+| Reference Point               | Lookup          | X            | X              |
+| Reference Point Line Setup    | Lookup          | X            | X              |
+
+**Fixed compensation event**
+
+| **Fields**            | **Data type**   | **Required** | **Searchable** |
+|-----------------------|-----------------|--------------|----------------|
+| Company               | Lookup          | X            | X              |
+| Description           | Text            | X            | X              |
+| Event Type            | Option Set      | X            | X              |
+| Is Active             | Two Options     | X            |                |
+| Name                  | Text            | X            | X              |
