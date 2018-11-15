@@ -340,12 +340,14 @@ The following section describes all data points sent to the payment connector fo
 | L3Data | PickupRecordNumber | Record number of the pickup. |
 | L3Data | CarrierShipmentNumber | Shipment number of the carrier. |
 | L3Data | UNSPSCCode | UNSPSC Code. |
-| L2Data | TaxDetails[].TaxRate | List with individual tax rates applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxDescription | List of individual tax rates applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxAmount | List of individual descriptions of the taxes applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxTypeIdentifier | List of type identifiers of the taxes applied to the specific line item part of the order. |
-| L2Data | MiscellaneousCharges[].ChargeType | List of charge types applied to the specific line item part of the order. |
-| L2Data | MiscellaneousCharges[].ChargeAmount | List of charge amounts applied to the specific line item part of the order. |
+| L3Data | TaxDetails[].TaxRate | List with individual tax rates applied to the specific line item part of the order. |
+| L3Data | TaxDetails[].TaxDescription | List of individual tax rates applied to the specific line item part of the order. |
+| L3Data | TaxDetails[].TaxAmount | List of individual descriptions of the taxes applied to the specific line item part of the order. |
+| L3Data | TaxDetails[].TaxTypeIdentifier | List of type identifiers of the taxes applied to the specific line item part of the order. |
+| L3Data | MiscellaneousCharges[].ChargeType | List of charge types applied to the specific line item part of the order. |
+| L3Data | MiscellaneousCharges[].ChargeAmount | List of charge amounts applied to the specific line item part of the order. |
+
+
 
 ## Related Artciles
 - **[Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)**
