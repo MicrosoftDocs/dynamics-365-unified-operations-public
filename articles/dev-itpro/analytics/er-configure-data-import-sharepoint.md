@@ -73,7 +73,7 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
     [![Document management setting – SharePoint server](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
 
 3. Open the configured SharePoint site, and 
-    3.1 create the following folders where the incoming files can be stored:
+   1. create the following folders where the incoming files can be stored:
 
     - Files import source (main)
     - Files import source (alternative)
@@ -82,7 +82,7 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 
     [![Document management setting – SharePoint server](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
 
-    3.2 create the following folders where the files can be stored after iimport: for successful imported files, for imported files but with warning and for failed files (this is optional folder):
+   2. create the following folders where the files can be stored after iimport: for successful imported files, for imported files but with warning and for failed files (this is optional folder):
    
     - Files archive folder
     - Files warning folder
