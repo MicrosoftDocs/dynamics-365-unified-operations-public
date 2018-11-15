@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -134,6 +134,8 @@ configuration of data projects. You can also configure and trigger the execution
 of import/export operations, such as the setup of demo data and golden
 configuration data, and other tasks that are related to data migration. You can
 also create automated testing of data entities by using task outcome validation.
+
+For more information, see [Data task automation](../../dev-itpro/data-entities/data-task-automation.md).
 
 ## Extensibility enhancements
 Platform update 20 includes the following extensibility enhancements:
