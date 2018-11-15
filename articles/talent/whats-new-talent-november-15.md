@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent Core HR (November 15, 2018)"
+# What's new or changed in Dynamics 365 for Talent Core HR (November 15, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ This topic describes features that are either new or changed in Core HR.
 
 A change has been made to enable position transfers when the position is only avialble in the future. 
 
-### Position does not display when creating a new employee.
+### Position does not display when creating a new employee
 
 A change has been made to display all open positions that are available for assignment when hiring new employees in Talent. This includes historical positions or if they have been future dataed. Positions will now appear correctly based on the employment start date entered. 
 
@@ -51,11 +51,12 @@ A change has been made to display all open positions that are available for assi
 
 A change has been made to the past employees list to account for any timezone offsets for the employees preferred timezone when viewing the termination date.
 
-### Work Items Assigned to me links not displaying the correct information
+### Work items assigned to me links not displaying the correct information
 
 This issue only occured with advanced security options. With this change, navigation to the details of the individual work items in the list will display the correct information for the item selected.
 
 
-### Known issue
+## Known issue
+
 - **Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. 
 - **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed. If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
