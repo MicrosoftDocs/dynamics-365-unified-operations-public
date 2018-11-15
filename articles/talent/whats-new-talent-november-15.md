@@ -39,21 +39,21 @@ This topic describes features that are either new or changed in Core HR.
 
 ## Other changes/fixes
 
-### Not possible to change employee´s current position to a future open position
+### Unable to change employee´s current position to a future open position
 
-A change has been made to enable position transfers when the position is only avialble in the future. 
+A change has been made to enable position transfers when the position is only available in the future. 
 
 ### Position does not display when creating a new employee
 
-A change has been made to display all open positions that are available for assignment when hiring new employees in Talent. This includes historical positions or if they have been future dataed. Positions will now appear correctly based on the employment start date entered. 
+A change has been made to display all open positions that are available for assignment when hiring new employees in Talent. This includes historical positions or if the postitions have been future dated. Positions will now appear correctly based on the employment start date. 
 
 ### Termination date is displaying based on user settings
 
-A change has been made to the past employees list to account for any timezone offsets for the employees preferred timezone when viewing the termination date.
+A change has been made to the past employees list to account for any time zone offsets for the employees preferred time zone when viewing the termination date.
 
 ### Work items assigned to me links not displaying the correct information
 
-This issue only occured with advanced security options. With this change, navigation to the details of the individual work items in the list will display the correct information for the item selected.
+With this change, navigation to the details of the individual work items in the list will display the correct information for the item selected. This issue only occurred with advanced security options.
 
 
 ## Known issue
