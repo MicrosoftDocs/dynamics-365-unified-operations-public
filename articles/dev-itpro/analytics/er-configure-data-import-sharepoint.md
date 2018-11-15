@@ -72,7 +72,8 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 
     [![Document management setting – SharePoint server](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
 
-3. Open the configured SharePoint site, and create the following folders where the incoming files can be stored:
+3. Open the configured SharePoint site, and 
+    3.1 create the following folders where the incoming files can be stored:
 
     - Files import source (main)
     - Files import source (alternative)
@@ -81,15 +82,27 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 
     [![Document management setting – SharePoint server](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
 
+    3.2 create the following folders where the files can be stored after iimport: for successful imported files, for imported files but with warning and for failed files (this is optional folder):
+   
+    - Files archive folder
+    - Files warning folder
+    - Files error folder
+
 4. In Finance and Operations, on the **Document types** page, create the following document types that will be used to access the SharePoint folders that you just created:
 
     - SP Main
     - SP Alternative
+    - SP Archive
+    - SP Warning
+    - SP Error
 
 5. For created document types, in the **Group** field, enter **File** and in the **Location** field, enter **SharePoint**. Then enter the address of the SharePoint folder:
 
     - For the **SP Main** document type: Files import source (main)
     - For the **SP Alternative** document type: Files import source (alternative)
+    - For the **SP Archive** document type: Files archive folder
+    - For the **SP Warning** document type: Files warning folder
+    - For the **SP Error** document type: Files error folder
 
     [![SharePoint setting – new document type](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
@@ -97,13 +110,14 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 1. Click **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
 2. On the **Electronic reporting source** page, configure the source files for data import by using the configured ER format.
 3. Define a file name mask, so that only files with the .xlsx extension are imported. The file name mask is optional and is used only when it has been defined. You can define only one mask for each ER format.
-4. Select both SharePoint folders that you created earlier.
+4. Change **Sort files before import** to Do not sort, if there are a lot of files for import and the import order is not important
+5. Select all SharePoint folders that you created earlier.
 
     [![ER files source setting](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - The ER *source* is defined for each application company individually. By contrast, ER *configurations* are shared across companies.
-> - When you delete an ER source setting for an ER format, all connected file states (see below) are also deleted.
+> - When you delete an ER source setting for an ER format, all connected file states (see below) are also deleted by confirmation.
 
 ## Review the files states for the ER format
 1. On the **Electronic reporting source** page, select **File states for the sources** to review the content of the configured file sources for the current ER format.
@@ -141,13 +155,9 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     [![Run ER model mapping](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. The model mapping can run unattended in batch mode. In this case, every time that a batch runs this ER format, a single file is imported from the configured file sources. Use the following code to implement this batch run.
+4. The model mapping can run unattended in batch mode. In this case, every time that a batch runs this ER format, a single file is imported from the configured file sources.
 
-    ```
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
-    ```
-
-    When a file is successfully imported from the SharePoint folder, it's deleted from that folder.
+    When a file is successfully imported from the SharePoint folder, it's deleted from that folder and moved to folder fo successful imported files or to folder to imported with warning files. Otherwise it's moved to folder for failed files or stay in this folder if folder for failed files isn't set up. 
 
 5. Enter the voucher ID, such as **V-00001**, and then select **OK**.
 
