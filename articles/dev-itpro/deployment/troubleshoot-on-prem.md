@@ -1057,7 +1057,7 @@ System.Management.Automation.RuntimeException: Error: **The GUID passed was not 
 To resolve: Restart the application package that generated the warning message. For more information see, [Restart applications (such as AOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos).
 
 ## The internal time zone version number stored in the database is higher than the version supported by the kernel (13/12)
-This database sync error can result in deploying old platform build (platform update 12) on top of a database that had a newer build (platform update 15).
+This database sync error can result in deploying old platform build (Platform update 12) on top of a database that had a newer build (Platform update 15).
 
 To resolve this issue, note the SYSTIMEZONESVERSION value:
 
@@ -1071,31 +1071,27 @@ update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 Ensure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.
 
 ## Ax-DatabaseSynchronize is not being populated with events
-In Platform udpate 20 and later, there is database synchronization log issue where the synchronization logs are not written in the event viewer under Ax-DatabaseSynchronize. 
+In Platform update 20 and later, there is database synchronization log issue where the synchronization logs are not written in the event viewer under Ax-DatabaseSynchronize. 
 
 To resolve this issue, go to <SF-dir>\AOS_<x>\Fabric\work\Applications\AXSFType_App<X>\log. For example, C:\ProgramData\SF\AOS_11\Fabric\work\Applications\AXSFType_App183\log.
     
 Here you can see the output from DatabaseSynchronize in the Code_AXSF_M_<X>.out files. Troubleshoot any issues regarding this component.
 
 ## Unable to access Finance and Operations: AADSTS50058: A silent sign-in request was sent but no user is signed in
-This error may occurr when logging in to Finance and Operations. After a user enters credentials, the browser will show the application layout for a second, then it will try to redirect outside of Finance and Operations and fail with following error:
+This error may occur when logging in to Finance and Operations. After a user enters credentials, the browser will briefly display the application layout, then it will try to redirect outside of Finance and Operations and fail with following error:
 
-AADSTS50058: A silent sign-in request was sent but no user is signed in. 
+> AADSTS50058: A silent sign-in request was sent but no user is signed in. 
 
-The cookies used to represent the user's session were not sent in the request to Azure AD. This can happen if the user is using Internet Explorer or Edge, and the web app sending the silent sign-in request is in different IE security zone than the Azure AD endpoint (login.microsoftonline.com).
+The cookies used to represent the user's session were not sent in the request to Azure AD. This can happen if the user is using Internet Explorer or Edge, and the web app sending the silent sign-in request is in a different IE security zone than the Azure AD endpoint (login.microsoftonline.com).
 
 This happens because there was a change in Skype Presence API and on-premises environments are connecting to it by default.
 
-To resolve the issue:
-
-Run this SQL Server query: update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
+To resolve the issue, run this SQL Server query: update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
 
 -OR-
 
 Turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration > Setup > Client performance options**).
 
-In order to do so, one must log in to Finance and Operations. Redirection should be blocked in the browser so that the user can log in and perform that action. After disabling the Skype presence, redirection can be unblocked again.
+To do this, you must sign in to Finance and Operations. Redirection should be blocked in the browser so that you can sign in and perform that action. After disabling the Skype presence, redirection can be unblocked again.
 
 The Chrome browser blocks redirection by default.
-
-
