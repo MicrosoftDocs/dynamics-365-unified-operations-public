@@ -4,7 +4,7 @@ title: Sales books, purchase books, and invoice-factures journals for Russia
 description: This topic provides information about sales books, purchase books, and invoice-factures journals for Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/05/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -87,11 +87,11 @@ The following commands are available on the Action Pane of the **Sales books jou
 
 #### Print a sales book additional sheet
 
-- On the **Sales books journal** page, select the sales books journal line, and then select **Print \> Print additional list**.
+On the **Sales books journal** page, select the sales books journal line, and then select **Print \> Print additional list**.
 
-    Additional sheets are generated and printed for all tax settlement periods that were corrected during the selected period for the sales book.
+Additional sheets are generated and printed for all tax settlement periods that were corrected during the selected period for the sales book.
 
-    Currently, only corrective and revision factures that decrease the VAT amount that must be paid to the tax authorities during the corrected period are considered when additional sheets are generated. Corrective and revision factures that increase the VAT amount that must be paid are included in the sales book for the current period.
+Currently, only corrective and revision factures that decrease the VAT amount that must be paid to the tax authorities during the corrected period are considered when additional sheets are generated. Corrective and revision factures that increase the VAT amount that must be paid are included in the sales book for the current period.
 
 ### Generate and print a purchase book
 
@@ -132,11 +132,11 @@ The following commands are available on the Action Pane of the **Purchase books 
 
 #### Print a purchase book additional sheet
 
-- On the **Purchase books journal** page, select the purchase books journal line, and then select **Print \> Print additional list**.
+On the **Purchase books journal** page, select the purchase books journal line, and then select **Print \> Print additional list**.
 
-    Additional sheets are generated and printed for all tax settlement periods that were corrected during the selected period for the purchase book.
+Additional sheets are generated and printed for all tax settlement periods that were corrected during the selected period for the purchase book.
 
-    Currently, only corrective and revision factures that increase the VAT amount that must be deducted during the corrected period are considered when additional sheets are generated. Corrective and revision factures which decrease the VAT amount that must be deducted during the corrected period are included in the purchase book for the current period.
+Currently, only corrective and revision factures that increase the VAT amount that must be deducted during the corrected period are considered when additional sheets are generated. Corrective and revision factures which decrease the VAT amount that must be deducted during the corrected period are included in the purchase book for the current period.
 
 ## Print an issued and received factures journal
 
@@ -144,10 +144,10 @@ The facture accounting journal contains a list of issued and received invoice-fa
 
 ### Set up parameters for a factures journal
 
-- On the **General ledger parameters** page, on the **Sales tax** tab, on the **Tax options** FastTab, define the following parameters:
+On the **General ledger parameters** page, on the **Sales tax** tab, on the **Tax options** FastTab, define the following parameters:
 
-    - **Facture operation code delimiter** – Define the delimiter that is used if several operation type codes are assigned to one facture.
-    - **Facture accounting journal format mapping** – Select the ER format for facture journal in XML format.
+   - **Facture operation code delimiter** – Define the delimiter that is used if several operation type codes are assigned to one facture.
+   - **Facture accounting journal format mapping** – Select the ER format for facture journal in XML format.
 
 ### Print a facture accounting journal
 
