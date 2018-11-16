@@ -84,5 +84,5 @@ For troubleshooting and diagnostics, you can connect to the Entity store databas
     * The server name is the first portion of the **SQL Server\Database Name** field.  This should be used in the format of **SQLServerName.database.windows.net** where SQLServerName is the value from LCS.
     * The authentication type should be changed from Windows Authentication to SQL Server Authentication.
     * The login will be axdwadmin and the password will be the value from LCS.
-3. Using the **Options** button or by browsing to the **Connection Properties** tab, change the **Connect to database** property from '<default>' to your **Database Name** value from LCS.
+3. Using the **Options** button or by browsing to the **Connection Properties** tab, change the **Connect to database** property from the default value to your **Database Name** value from LCS.
 4. Click **Connect** to access the database.
