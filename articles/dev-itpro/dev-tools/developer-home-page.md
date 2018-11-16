@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Develop and customize by using Visual Studio
+title: Develop and customize 
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Develop and customize by using Visual Studio
+# Develop and customize 
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,8 +56,8 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Development system requirements](development-system-requirements.md)
 -   [Deprecated features](../migration-upgrade/deprecated-features.md)
 -   [Deprecated API’s](../migration-upgrade/deprecated-apis.md)
--   [Rename and reboot machines for Visual Studio Team Services](../migration-upgrade/vso-machine-renaming.md)
--   [Introduction to Visual Studio Team Services (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
+-   [Rename and reboot machines for Azure DevOps](../migration-upgrade/vso-machine-renaming.md)
+-   [Introduction to Azure DevOps (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
 <!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
 <!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
 <!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->
@@ -92,7 +92,7 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
 -   [Virtual machines that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md)
-<!--  [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
+<!--  [Configure version control with Azure DevOps (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
 
 ## X++ programming language
 ### Tutorials

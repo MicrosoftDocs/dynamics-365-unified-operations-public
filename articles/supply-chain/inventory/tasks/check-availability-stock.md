@@ -1,30 +1,30 @@
----
-# required metadata
-
+--- 
+# required metadata 
+ 
 title: Check the availability of stock
-description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number.
-author: perlynne
-manager: AnnBe
-ms.date: 11/14/2016
-ms.topic: business-process
+description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. 
+author: ShylaThompson
+manager: AnnBe 
+ms.date: 08/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: perlynne
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+# ms.search.industry: 
+ms.author: ShylaThompson
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Check the availability of stock
 
@@ -70,3 +70,4 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 4. Click Display Dimensions.
 5. Click OK.
 6. Close the page.
+

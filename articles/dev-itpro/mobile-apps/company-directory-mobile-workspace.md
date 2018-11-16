@@ -2,7 +2,7 @@
 # required metadata
 
 title: Company directory mobile workspace
-description: This topic provides information abou the Company directory mobile workspace, which lets users view and contact other employees in their organization.
+description: This topic provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017

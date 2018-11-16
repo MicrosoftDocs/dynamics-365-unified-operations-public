@@ -1,30 +1,30 @@
----
-# required metadata
-
+--- 
+# required metadata 
+ 
 title: Create a consignment replenishment order
-description: This procedure shows how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory.
+description: This procedure shows how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. 
 author: mkirknel
-manager: AnnBe
-ms.date: 10/13/2016
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 08/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a consignment replenishment order
 
@@ -63,7 +63,7 @@ This procedure shows how to create a consignment replenishment order where you c
 ## Receive items
 1. Click Product receipt.
 2. In the External product receipt field, type a value.
-3. In the Quantity field, enter a number that’s lower than the number that’s shown there.
+3. In the Quantity field, enter a number that’s lower than the number that’s shown there. 
 4. Click OK.
 
 ## Check the on-hand inventory
@@ -73,3 +73,4 @@ This procedure shows how to create a consignment replenishment order where you c
     * The items that have been received as consignment inventory owned by the vendor are available on-hand. The remaining quantity on the consignment replenishment order is shown in the Ordered in total field.  
 4. Close the page.
 5. Click Close.
+

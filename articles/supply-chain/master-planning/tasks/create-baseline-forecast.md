@@ -5,7 +5,7 @@ title: Create a baseline forecast
 description: A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 111/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupAllocKeys, ReqDemPlanForecastParameters, ReqDemPlanCreateForecastDialog, SysQueryForm, ReqDemPlanForecastViewer   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a baseline forecast
 
@@ -46,7 +46,7 @@ A production planner can create a baseline forecast either by using time series 
 7. Close the page.
 8. Close the page.
 
-## Set up the demand forecasting parameters
+## Set up the demand forecasting paramters
 1. Go to Master planning > Setup > Demand forecasting > Demand forecasting parameters.
 2. Expand the Forecast algorithm parameters section.
 3. In the Forecast generation strategy field, select 'Copy over historical demand'.
@@ -83,5 +83,5 @@ A production planner can create a baseline forecast either by using time series 
     * In the cell, enter a different number than the one that was forecasted, for example, 400.  
 4. You have made a manual adjustment to the forecast. Notice the graphical indication in the next step.
 5. Click Forecast line details.
-    * On this page, you can see the accuracy values, historical demand, and forecast. You can make changes to the forecast as well.  
+    * In this page, you can see the accuracy values, historical demand, and forecast. You can make changes to the forecast as well.  
 

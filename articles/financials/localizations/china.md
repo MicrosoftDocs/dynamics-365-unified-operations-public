@@ -35,14 +35,14 @@ ms.dyn365.ops.version: AX 7.0.1
 This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in China.
 
 -   [Bill of materials comparison](apac-chn-bom-comparison.md)
--   [Chart of accounts hierarchy](/tasks/china-hierarchy-chart-accounts.md)
+-   [Chart of accounts hierarchy](tasks/china-hierarchy-chart-accounts.md) 
 -   [Chinese vouchers](apac-chn-vouchers.md)
     -   [Continuity check](tasks/chinese-voucher-continuity-check.md)
     -   [Post vouchers from other modules](tasks/post-vouchers-other-modules-like-sales-invoices.md)
-    -   [Post vouchers from the general journal]/tasks/post-vouchers-general-journal.md)
+    -   [Post vouchers from the general journal](tasks/post-vouchers-general-journal.md)
     -   [Set up Chinese vouchers](tasks/set-up-chinese-vouchers.md)
 -   [Configure tax integration](apac-chn-tax-integration.md)
-    -   [Chinese tax integration modification for VAT customer invoices FAQ](/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
     -   [VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
     -   [Set up basic tax integration profile](tasks/set-up-basic-tax-integration-profile-china.md)
 -   [Depreciation methods for fixed assets ](apac-chn-depreciation-methods-fixed-assets.md)

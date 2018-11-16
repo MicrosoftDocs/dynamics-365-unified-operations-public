@@ -1,32 +1,32 @@
----
-# required metadata
-
-title: Maintain bar code types
-description: This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report.
+--- 
+# required metadata 
+ 
+title: Maintain barcode types
+description: This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report. 
 author: perlynne
-manager: AnnBe
-ms.date: 03/02/2016
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 08/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: BarcodeSetup, InventParameters   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Maintain bar code types
+# Maintain barcode types
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -47,3 +47,4 @@ This procedure shows you how to set up a new barcode definition which can then b
     * Select the barcode setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process. For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.  
 12. Click Save.
 13. Close the page.
+

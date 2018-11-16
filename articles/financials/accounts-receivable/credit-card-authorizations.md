@@ -48,10 +48,12 @@ To use credit cards, you must set up and activate a payment service on the Payme
 
 ## Adding a new credit card
 You can create new credit card records on the Customers page by using Customer, Set up, Credit card. You can also create credit card records when you enter sales orders on the Sales order page, by using Manage, Customer, Credit card, Register.
+
 Adding a credit card to a sales order
 -------------------------------------
 
 You can add a credit card to a sales order by selecting a credit card in the credit card lookup on the Price and discounts FastTab on the Sales order page. To start the authorization process, on the Action Pane, on the Manage tab, select Credit card and Authorize.
+
 Authorizing a credit card
 -------------------------
 

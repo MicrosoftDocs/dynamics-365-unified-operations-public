@@ -5,7 +5,7 @@ title: Overhead calculation
 description: This topic describes the typical processes for calculating and allocating overhead costs.
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -194,8 +194,7 @@ In some cases, part of the cost is a fixed fee, and the remaining cost is based 
 </tbody>
 </table>
 
-For detailed information about cost behavior, see Cost behavior policy. (Note that this topic isn't competed yet but is coming soon.)
-
+For more information, see [Create and assign a cost behavior policy to a cost control unit](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).
 ### Step 2: Process the cost distribution calculation
 
 Cost distribution is used to redistribute cost from one cost object to one or more other cost objects by applying a relevant allocation base. Cost distribution and cost allocation differ in that cost distribution always occurs at the level of the primary cost element of the original cost.
@@ -433,7 +432,7 @@ The fixed cost should be distributed evenly to the individual cost objects that 
 </tbody>
 </table>
 
-For detailed information about cost distribution and allocation bases, see Cost distribution policy and Allocation bases. (Note that this topic isn't competed yet but is coming soon.)
+For more information, see [Create and assign a cost distribution policy to a cost control unit](tasks/create-assign-cost-distribution-policy-cost-control-unit.md). 
 
 ### Step 3: Process the overhead rate calculation
 
@@ -621,7 +620,7 @@ The following table shows the result when the HR projects are applied as an allo
 </tbody>
 </table>
 
-For detailed information about overhead rate policy, see Overhead rate policy and Allocation bases. (Note that this topic isn't competed yet but is coming soon.)
+For more information, see [Perform overhead calculation](cost-rollup.md#perform-overhead-calculation).
 
 ### Step 4: Process the cost allocation calculation
 
@@ -728,7 +727,8 @@ Cost object CC004 Packaging contributes to several cost objects. A statistical d
 </tbody>
 </table>
 
-**Note:** In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data. For more detailed information about statistical measure providers, see Statistical measure provider template. (Note that this topic isn't completed yet but is coming soon.) The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
+> [!NOTE]
+> In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data. For more information, see [Statistical measure provider template](statistical-measure-provider-template.md#statistical-measure-provider-template). The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
 
 <table>
 <thead>
@@ -1415,7 +1415,7 @@ In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dumm
 </table>
 
 > [!NOTE]
-> This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more detailed information, see Cost roll-up policy. (Note that this topic isn't competed yet but is coming soon.)
+> This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost roll-up](cost-rollup.md).
 
 
 

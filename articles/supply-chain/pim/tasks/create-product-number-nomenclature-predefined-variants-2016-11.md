@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create a product number for predefined product variants
+title: Create a product number nomenclature for predefined product variants
 description: This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create a product number for predefined product variants
+# Create a product number nomenclature for predefined product variants
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -37,7 +37,7 @@ This guide shows you how to set up a product number nomenclature for predefined 
 1. Click Product variant model definition.
 2. Click Product nomenclature.
 3. Click New.
-4. In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize.
+4. In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize..
 5. In the Description field, type a value.
 6. Click Add.
 7. Click Product master number.

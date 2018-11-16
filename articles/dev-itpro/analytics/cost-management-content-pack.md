@@ -174,7 +174,7 @@ The following tables provide an overview of the visualizations in the **Cost man
 |                                         | Top 10 resources by unfavorable production variance  |
 |                                         | Top 10 resources by favorable production variance    |
 
-### Understanding the data model and entities
+## Understanding the data model and entities
 
 Data from Microsoft Dynamics 365 for Finance and Operations is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with entity store](power-bi-integration-entity-store.md).
 

@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Customer registration IDs and other information (Mexico)
+title: MX-00007 Customer registration IDs and other information
 description: This procedure walks you through creating a customer with the fiscal information and other related information used in electronic invoices and legal reports for Mexico. 
 author: sndray
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CustTable, DirPartyQuickCreateForm,  DefaultDashboard   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Customer registration IDs and other information (Mexico)
+# MX-00007 Customer registration IDs and other information
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

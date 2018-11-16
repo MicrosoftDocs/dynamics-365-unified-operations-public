@@ -5,7 +5,7 @@ title: Dynamics 365 for Unified Operations mobile app home page
 description: This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -66,7 +66,7 @@ Navigation in the mobile app consists of four basic concepts: the dashboard, wor
 ## Implementation process
 The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces. 
 
-![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)
+[![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces. The numbers in the first column correspond to the numbered steps in the previous illustration.
 
@@ -143,9 +143,10 @@ The following table includes links to resources that can help you implement both
 <td>8</td>
 <td>User</td>
 <td>Download and install the mobile app.</td>
-<td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Android phones</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></li></ul>
+<td>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations app for Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations app for iOS</a><BR/>
+(Windows Phone unsupported)
 </td>
 </tr>
 <tr class="odd">

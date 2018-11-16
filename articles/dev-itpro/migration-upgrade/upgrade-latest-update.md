@@ -6,7 +6,7 @@ description: This topic explains the process for upgrading to the latest update 
 author: robadawy
 manager: AnnBe
 
-ms.date: 11/20/2017
+ms.date: 10/03/2018
 
 ms.topic: article
 ms.prod: 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
 
-For information about the contents of each release that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
+For information about the contents of each release of Dynamics 365 for Finance and Operations, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
 ## Definitions
 
@@ -70,7 +70,7 @@ Use this scenario when one or more small hotfixes are required in order to addre
 
 This process is required before you can use scenario 3. A developer must complete this process before other activities can begin.
 
-Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
+Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
 ### Scenario 3: Upgrade to the latest application release
 
@@ -105,12 +105,12 @@ This scenario describes the process for upgrading code from an earlier release t
 
 | Source environment | Expected content of the AX7.version file for the source | Target environment | Is the code upgrade service required? |
 |--------------------|---------------------------------------------------------|--------------------|---------------------------------------|
-| Application 7.3                               | 7.3.11971.56116 | Application release 8.0 | Yes |
-| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 8.0 or 7.3 | Yes |
-| Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 8.0, 7.3, or July 2017 (7.2) | Yes |
-| August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 8.0, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
-| May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 8.0, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
-| February 2016 release (Application 7.0)                      | 7.0.1265.3015 |  Application release 8.0, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
+| Application 7.3                               | 7.3.11971.56116 | Application release 8.x | Yes |
+| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 8.x or 7.3 | Yes |
+| Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 8.x, 7.3, or July 2017 (7.2) | Yes |
+| August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 8.x, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
+| May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 8.x, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
+| February 2016 release (Application 7.0)                      | 7.0.1265.3015 |  Application release 8.x, 7.3, July 2017 (7.2) or 1611 (7.1) | Yes |
 | Microsoft Dynamics AX 2012                                     | Not applicable | Application release 7.3 or July 2017 (7.2)  | Yes |
 | Application release 7.3         | Not applicable | Newer version of the platform | No |
 | July 2017 release (Application 7.2)         | Not applicable | Newer version of the platform | No |
@@ -136,18 +136,21 @@ Regardless of whether you're a live customer or you're still in the implementati
 
 3. Complete the code migration steps.
 
-    1. Connect your development VM to Microsoft Visual Studio Team Services (VSTS), and map your local metadata folder to the VSTS branch that contains your upgraded code.
+    1. Connect your development VM to Microsoft Azure DevOps, and map your local metadata folder to the Azure DevOps branch that contains your upgraded code.
     2. Synchronize, resolve any conflicts, build, and test.
-    3. Merge the VSTS branch that contains your upgraded code with your main development branch. For more information, see [Merge folders and files](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files).
+    3. Merge the Azure DevOps branch that contains your upgraded code with your main development branch. For more information, see [Merge folders and files](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files).
     4. Build and test.
     5. Create deployable packages of your code.
 
 4. Install any hotfixes that apply to the environment.
 5. Upload deployable packages to the LCS Asset library of your project.
 
-For more details of the code migration steps, see [Code migration](../dev-tools/developer-home-page.md#code-migration). After you've completed the code migration, continue to scenario 3.
+For details about the code migration steps, see [Code migration](../dev-tools/developer-home-page.md#code-migration). After you've completed the code migration, continue to scenario 3.
 
 ## Scenario 3: Upgrade to the latest application release
+
+> [!Important]
+> If you are on application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from 8.0 to 8.1](./appupdate-80-81.md).
 
 These steps apply to customers who are live on an earlier release and want to do a full upgrade to the most recent platform and application releases. The steps might also apply to customers who have already deployed and configured a production environment, even if they haven't yet gone live. If you aren't upgrading your application but just want to upgrade your platform, use scenario 4 instead.
 
@@ -165,7 +168,7 @@ To run the data upgrade process, follow the steps in [Process for data upgrade f
 
 > [!IMPORTANT]
 > - Data upgrade in a development environment is a required step. It helps reduce the risk of extended downtime and upgrade errors later, when you upgrade sandbox user acceptance testing (UAT) and production environments.
-> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to VSTS. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
+> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to Azure DevOps. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
  
 ### Upgrade your Tier2/Standard Acceptance Test (or higher) sandbox environment
 
@@ -182,10 +185,10 @@ DSE will upgrade one Tier 2 (Standard Acceptance Test) or higher sandbox environ
 
 2. Select the target version that you're upgrading to, and specify the start and end times of your preferred downtime window.
     - A date and time picker will show the available times.
-    - To help guarantee that the upgrade can be done within your expected timeframe, you must submit your upgrade request a minimum of five working days before you expect to upgrade. The advance notice is required so that a new environment can be prepared before your downtime window.
+    - To help ensure that the upgrade can be done within your expected timeframe, you must submit your upgrade request a minimum of five working days before you expect to upgrade. The advance notice is required so that a new environment can be prepared before your downtime window.
     
     > [!IMPORTANT] 
-    > Requests are subject to availability of the DSE team, therefore, we cannot guarantee the availability of a specific upgrade window. It is best to request your upgrade window as soon as you can commit to it
+    > Requests are subject to availability of the DSE team, therefore, we cannot ensure the availability of a specific upgrade window. It is best to request your upgrade window as soon as you can commit to it.
     
     - You must allow for at least eight hours between the start and end of the downtime. This time is required in order to swap in the new environment and complete the data upgrade process.
 
@@ -195,13 +198,13 @@ DSE will upgrade one Tier 2 (Standard Acceptance Test) or higher sandbox environ
 
     > [!IMPORTANT]
     > - If you don't select application deployable packages in your service request, DSE might reject the request.
-    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is a intended as a pre-production validation of the upgrade process.
+    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is intended as a pre-production validation of the upgrade process.
     > - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. You can then resolve the issue that caused the failure and reschedule the upgrade at a new time.
     > - If you're using Retail features, a minimum of 16 hours of downtime is required, because additional upgrade steps are required.
 
 #### Validate your sandbox environment
 
-When the DSE team completes the upgrade process, the service request status will change to **Ready for Validation**. The system is available at this stage. The updated environment will have the same URL, the same environment name, and the same machine names as the old environment. Validate and then change the status of the service request to **Validation Successful** or **Validation Failed**. If you set the service request to **Validation Failed**, a rollback of the upgrade is initiated. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+When the DSE team completes the upgrade process, the service request status will change to **Ready for Validation**. The system is available at this stage. The updated environment will have the same URL, the same environment name, and the same machine names as the old environment. Validate and then change the status of the service request to **Validation Successful** or **Validation Failed**. If you set the service request to **Validation Failed**, a rollback of the upgrade can be requested creating a support request. For more information, see [Manage Finance and Operations support experiences](../lifecycle-services/cloud-powered-support-lcs.md). The typical time for the support team to perform the rollback is 2-4 hours. You have up to five working days to request a rollback.  After that time, Microsoft will retire the old environment.
 
 #### Upgrade additional Tier 2 or higher sandbox environments
 
@@ -209,12 +212,12 @@ You don't have to upgrade any additional Tier 2 or higher sandbox environments. 
 
 #### Upgrade Tier 1 environments
 
-You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version and then synchronizing to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version and then synchronizing to your upgraded Azure DevOps branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your production environment
 
 1. Use LCS to submit an upgrade request to update the production environment, just as you did for the sandbox environment.
-2. Complete your validation, testing, and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** to rollback. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+2. Complete your validation, testing, and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** and then submit a production outage. For more information, see [Report production outage](https://docs.microsoft.com/en-us/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage). Typical time for the DSE team to perform the rollback is 2-4 hours. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
 

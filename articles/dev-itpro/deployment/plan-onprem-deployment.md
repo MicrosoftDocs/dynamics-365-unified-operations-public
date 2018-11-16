@@ -230,7 +230,7 @@ The following table outlines the services that are used to store customer data i
 |---------------------------------------|----------------------------------------------------|
 | Microsoft Dynamics Lifecycle Services | Project content and files are stored in a project. This includes application configuration data, code, metadata, and data assets that include the application and business process models. |
 | Microsoft Office signup portal        | Customer information that is collected during the onboarding process.  |
-| Microsoft Azure Active Directory      | Authentication for LCS and Visual Studio Team Services.   |
+| Microsoft Azure Active Directory      | Authentication for LCS and Azure DevOps.   |
 
 Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center. For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment.
 

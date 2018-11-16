@@ -96,7 +96,7 @@ After the update is applied, Microsoft validates that it was successful, and tha
 We do not offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
 We plan to add this option into LCS so that you can reschedule an update directly through LCS. 
 
-### How do I opt out of the the current maintenance cycle?
+### How do I opt out of the current maintenance cycle?
 To opt out of the current maintenance cycle, file a support ticket with Microsoft. Your environment will be excluded from the maintenance cycle for the current month. However, your environment will be updated the next month.
 
 ### How do I report an issue that is identified during validation of the updates that were applied to the environment?

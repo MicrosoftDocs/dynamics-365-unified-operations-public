@@ -2,7 +2,7 @@
 # required metadata
 
 title: Attract features and capabilities
-description: Attract provides capabilities to manage the process of hiring new talent. Candidates can be added to open jobs and advanced from stage to stage until an offer is extended or the application is rejected. 
+description: This topic describes the features that Attract provides for managing the process of hiring new talent.
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
@@ -33,21 +33,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-Attract provides capabilities to manage the process of hiring new talent. Candidates can be added to open jobs and advanced from stage to stage until an offer is extended or the application is rejected. In each stage, candidates move through activities like screening calls, assessments, or the scheduling of interviews. After they apply, candidates get an email inviting them to sign in to Attract, where they can follow the status of the job, their application, and respond to any tasks that are assigned to them.
+Attract provides capabilities for managing the process of hiring new talent. Candidates can be added to open jobs, and they can then be advanced from stage to stage until either an offer is extended or the application is rejected. During each stage, candidates move through activities such as screening calls, assessments, and interviews. After they apply, candidates receive an email that invites them to sign in to Attract, where they can follow the status of the job and their application. They can also respond to any tasks that are assigned to them.
 
-Attract provides the following features.
+This topic describes the features that Attract provides.
 
-### Attract dashboard
-This is where hiring team members can see the details for the jobs they are a participating in. It's also where a hiring manager or recruiter can add a new job to Attract, either by creating one individually or importing a number of them at once from an Excel spreadsheet.
+## Attract dashboard
+On the dashboard, hiring team members can view the details of the jobs that they participate in. The dashboard also where a hiring manager or recruiter can add new jobs to Attract, either by creating them individually or by importing several at the same time from a Microsoft Excel spreadsheet.
 
-### Jobs
-On the **Job** page, details such as job description and job location can be viewed and edited. The **Job** page is where the hiring team is put together and where you can add or change the recruiters and interviewers on the team. New candidates can also be added on the **Job** page.
+## Jobs
+On the **Job** page, details such as the job description and job location can be viewed and edited. The **Job** page is also where the hiring team is put together, and where you can add or change the recruiters and interviewers on the team. New candidates can also be added on the **Job** page.
 
-### Candidates
-Candidates can be added to a job individually or uploaded in larger numbers from an Excel spreadsheet. All candidates are automatically added to the first stage, the Apply stage, in the hiring process for any job. All of the candidate's application information can be seen and managed here. Additional documents can be uploaded and viewed, along with contact information like email addresses, phone numbers, and links to their social media accounts. If the candidate provided a link to their LinkedIn profile, and the LinkedIn integration (which requires a LinkedIn recruiter license) has been set up, the candidate’s profile will be shown.
+## Candidates
+Candidates can be added to a job individually, or they can be uploaded in larger numbers from an Excel spreadsheet. All candidates are automatically added to the Apply stage, which is the first stage in the hiring process for every job. During this stage, all a candidate's application information can be viewed and managed. Additional documents can be uploaded and viewed, together with contact information such as email addresses, phone numbers, and links to social media accounts. If a candidate provided a link to his or her LinkedIn profile, and if LinkedIn integration has been set up, the candidate's profile is shown. (LinkedIn integration requires a LinkedIn recruiter license.)
 
-### Stages
-Attract provides a predefined hiring process that contains four basic stages: Apply, Screen, Interview, and Offer. New candidates start in the application stage where their resume, cover letter, portfolio, and other application documents are reviewed. From there, a candidate can be advanced to the screening stage, where they are invited to participate in a screening phone call or Skype video interview. The hiring manager and recruiter can provide feedback about the candidate and advance them to the next stage. In-person interviews are then scheduled with available members of the hiring team, and can be customized to be one-on-one or panel interviews of various lengths. After the interviews, feedback from the interview team is captured and reviewed. Select candidates are advanced to the final stage, where an offer is made and prepared for their review and approval. 
+## Stages
+Attract provides a predefined hiring process that has four basic stages: Apply, Screen, Interview, and Offer. New candidates start in the Apply stage, where their resume, cover letter, portfolio, and other application documents are reviewed. From there, candidates can be advanced to the Screen stage, where they are invited to participate in a screening phone call or a Skype video interview. The hiring manager and recruiter can provide feedback about candidates and advance them to the next stage, which is the Interview stage. In-person interviews are then scheduled with available members of the hiring team. These interviews can be customized as one-on-one or panel interviews of various lengths. After the interviews, feedback from the interview team is captured and reviewed. Selected candidates are then advanced to the final stage, the Offer stage. During this stage, an offer is made and prepared for the candidate's review and approval.
 
-### Candidate app
-Candidates receive an email as soon as they have been added to a job with a link to get the app. This web app provides candidates with job details and is the tool to communicate with the hiring team. Candidates can also submit their availability for interviews.
+## Candidate app
+As soon as they have been added to a job, candidates receive an email that includes a link to get the web app. The app provides job details and is used to communicate with the hiring team. Candidates can use it to also submit their availability for interviews.
