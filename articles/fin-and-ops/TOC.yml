@@ -1209,6 +1209,8 @@
         href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
       - name: Reset the financial reporting data mart
         href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+    - name: Electronic messaging
+      href: ../financials/general-ledger/electronic-messaging.md
   - name: Localization and regulatory features
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
     items:
