@@ -147,7 +147,7 @@ The facture accounting journal contains a list of issued and received invoice-fa
 - On the **General ledger parameters** page, on the **Sales tax** tab, on the **Tax options** FastTab, define the following parameters:
 
     - **Facture operation code delimiter** – Define the delimiter that is used if several operation type codes are assigned to one facture.
-    - **FACTURE ACCOUNTNG JOURNAL Format mapping** – Select the ER format for facture journal in xml.
+    - **Facture accounting journal format mapping** – Select the ER format for facture journal in XML format.
 
 ### Print a facture accounting journal
 
@@ -155,7 +155,7 @@ The facture accounting journal contains a list of issued and received invoice-fa
 2. In the **Facture accounting journal** dialog box, in the **Date interval code** field, select a reporting period. Alternatively, specify your own date range by using the **From date** and **To date** fields.
 3. In the **Outgoing** field, select the criterion for including intermediary deals factures in the facture journal:
 
-    - **Date of the registration** – The issued factures journal contains all intermediary deals factures, even if they haven't been confirmed to the principal. (The intermediary deal information for those factures might be empty.)
+    - **Date of the registration** – The issued factures journal contains all intermediary deals factures, even if they haven't been confirmed with the principal. (The intermediary deal information for those factures might be empty.)
     - **Confirmation date** – The issued factures journal contains only confirmed intermediary deals factures. (The intermediary deal information for those factures is filled with the factures that have been received from the principal.)
 
 4. Set the **Date of reporting** option to **Yes** to filter factures by reporting date instead of facture date.
