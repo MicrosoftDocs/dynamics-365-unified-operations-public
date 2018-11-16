@@ -47,7 +47,6 @@ On-premises deployment defines two types of Service Fabric standalone clusters: 
 - Management Reporter (MR) – Provides financial reporting functionality. 
 - SQL Server Reporting Services (SSRS) – Provides document reporting functionality. 
 - Environment Orchestrator – Enables on-premises environment management from LCS. 
-Note: Retail Server is not supported in on-premises deployments at this time. 
 
 Figure 1 shows a logical diagram of the node types deployed in a Service Fabric standalone cluster. 
 
