@@ -2226,6 +2226,8 @@
           href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Invoices for payment
           href: ../financials/localizations/rus-invoice-payment.md
+        - name: Financial reporting
+          href: ../financials/localizations/rus-financial-reports.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
