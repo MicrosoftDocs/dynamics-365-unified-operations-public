@@ -1094,7 +1094,7 @@ Run this SQL Server query: update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled 
 
 Turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration > Setup > Client performance options**).
 
-In order to do so, one must log in to Finance and Operations. Redirection should be blocked in browser so user can login and perform that action. After disabling Skype presence, redirection can be unblocked again.
+In order to do so, one must log in to Finance and Operations. Redirection should be blocked in the browser so that the user can login and perform that action. After disabling the Skype presence, redirection can be unblocked again.
 
 The Chrome browser blocks redirection by default.
 
