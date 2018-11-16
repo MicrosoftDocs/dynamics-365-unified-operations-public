@@ -452,7 +452,28 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 
 <tr class="odd">
 <td>[Russia] Tax registers</td>
-<td>Tax registers: Current period incomes; Tax expenses; Other expenses of current period; Unrealized expenses of current period; Other unrealized expenses; Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement; Procedure for writing-off AR bad debts; Accounts payable debt - inventory; Accounts payable debt movement; Procedure for writing-off AP bad debts; Goods cost calculation; FA object information; IA object information; FA depreciation; IA depreciation; FA/IA sale; Depreciation bonus recovery; Profit tax registers wizard </td>
+<td>Legal entities can use registers to disclose their revenues and expenses. The registers are used to track revenue and expense data from the time that primary documents, such as sales invoices and delivery notes, are first entered by using the calculation of cost prices for production. The data from the registers is used to confirm the declared profit of the legal entity. This functionality includes the following features: <ul>
+ <li> Current period incomes</li>
+ <li> Tax expenses</li>
+ <li> Other expenses of current period</li>
+ <li> Unrealized expenses of current period</li>
+ <li> Other unrealized expenses</li>
+ <li> Accounts receivable debt – inventory</li>
+ <li> Bad debts reserve calculation</li>
+ <li> Bad debts reserve movement</li>
+ <li> Accounts receivable movement</li>
+ <li> Procedure for writing-off AR bad debts</li>
+ <li> Accounts payable debt - inventory</li>
+ <li> Accounts payable debt movement</li>
+ <li> Procedure for writing-off AP bad debts</li>
+ <li> Goods cost calculation</li>
+ <li> FA object information</li>
+ <li> IA object information</li>
+ <li> FA depreciation</li>
+ <li> IA depreciation</li>
+ <li> FA/IA sale</li>
+ <li> Depreciation bonus recovery</li>
+ </ul> </td>
  <td>Not implemented</td>
 </tr>
 
@@ -525,7 +546,7 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 <tr class="odd">
 <td>[Russia] AP/AR - 3rd party miscellaneous charges</td>
 <td>Registration of 3rd party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
- <td>Not implemented</td>
+ <td>Implemented in 8.1.1</td>
 </tr>
 
 <tr class="odd">
