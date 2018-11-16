@@ -5,7 +5,7 @@ title: Electronic messaging
 description: This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/02/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -436,8 +436,8 @@ For this example, you will create the following actions:
 5. Optional: To let users regenerate a report several times, you can create an **Update to initial status** action and set the following fields:
 
     - On the **General** FastTab, in the **Action type** field, select **Message level user processing**.
-    - o	On the **Initial statuses** FastTab, in the **Message status** field, select **Generated**.
-    - o	On the **Result statuses** FastTab, in the **Message status** field, select **Prepared** or (and) **New**. In the **Response type** field, enter **Successfully executed**.
+    - On the **Initial statuses** FastTab, in the **Message status** field, select **Generated**.
+    - On the **Result statuses** FastTab, in the **Message status** field, select **Prepared** or (and) **New**. In the **Response type** field, enter **Successfully executed**.
 
 #### Electronic message processing
 
