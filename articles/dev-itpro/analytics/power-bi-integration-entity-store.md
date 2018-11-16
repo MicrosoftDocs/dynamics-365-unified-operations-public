@@ -76,13 +76,13 @@ This page includes a list of aggregate measurements. You can stage any of these 
 The batch framework is used for scheduling. Therefore, refresh jobs can be monitored, load balanced, and prioritized by using the capabilities of the batch framework. As of the May 2016 update, we support only full updates. However, we will enable incremental updates soon. Eventually, in a future update, the system will update Entity store based on actual usage patterns. Therefore, as an administrator, you will have to use the **Configure refresh** dialog box only as an exception.
 
 ### Connecting to the Entity store database
-For troubleshooting and diagnostics, you can connect to the Entity Store database directly from the related sandbox environment.  To connect:
+For troubleshooting and diagnostics, you can connect to the Entity store database directly from a related sandbox environment.  To connect:
 
-1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from your Environment Details Page after you have Whitelisted your IP address.
-2. Open SQL Server Management Studio, and connect to the server specified on your Environment Details Page.  
-    * Find the section titled Database Accounts.  Locate the entry for User name 'axdwadmin'.  
-    * The server name is the first portion of the SQL Server\Database Name field.  This should be used in the format of SQLServerName.database.windows.net where SQLServerName is the value from LCS.
+1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from the **Environment Details** page after you have whitelisted your IP address.
+2. Open SQL Server Management Studio, and connect to the server specified on the **Environment Details** page.  
+    * Find the section titled **Database Accounts**.  Locate the entry for the user with the name **axdwadmin**.  
+    * The server name is the first portion of the **SQL Server\Database Name** field.  This should be used in the format of **SQLServerName.database.windows.net** where SQLServerName is the value from LCS.
     * The authentication type should be changed from Windows Authentication to SQL Server Authentication.
     * The login will be axdwadmin and the password will be the value from LCS.
-3. Using the Options Button or browsing to the Connection Properties tab, change the 'Connect to database' property from '<default>' to your Database Name value from LCS.
-4. Hit connect to access the database.
+3. Using the **Options** button or by browsing to the **Connection Properties** tab, change the **Connect to database** property from '<default>' to your **Database Name** value from LCS.
+4. Click **Connect** to access the database.
