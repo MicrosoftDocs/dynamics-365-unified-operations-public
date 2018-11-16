@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/17/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1071,23 +1071,31 @@ update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 Ensure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.
 
 ## Ax-DatabaseSynchronize is not being populated with events
-Starting from PU20 and above, there is database synchronization log issue where the synchronization logs are not written in the event viewer under Ax-DatabaseSynchronize. 
+In Platform udpate 20 and later, there is database synchronization log issue where the synchronization logs are not written in the event viewer under Ax-DatabaseSynchronize. 
 
-To resolve this issue:
-Go to <SF-dir>\AOS_<x>\ Fabric\work\Applications\AXSFType_App<X>\log - eg.:C:\ProgramData\SF\AOS_11\Fabric\work\Applications\AXSFType_App183\log
-Here you can see the output from DatabaseSynchronize in the Code_AXSF_M_<X>.out files. And trouble shoot any issues regarding this component.
+To resolve this issue, go to <SF-dir>\AOS_<x>\Fabric\work\Applications\AXSFType_App<X>\log. For example, C:\ProgramData\SF\AOS_11\Fabric\work\Applications\AXSFType_App183\log.
+    
+Here you can see the output from DatabaseSynchronize in the Code_AXSF_M_<X>.out files. Troubleshoot any issues regarding this component.
 
-## Unable to access AX: AADSTS50058: A silent sign-in request was sent but no user is signed in
-This error might happen during login to AX. After entering user credentials, browser will show application layout for a second, then it will try to redirect outside of LBD and fail with following error:
-AADSTS50058: A silent sign-in request was sent but no user is signed in. The cookies used to represent the user's session were not sent in the request to Azure AD. This can happen if the user is using Internet Explorer or Edge, and the web app sending the silent sign-in request is in different IE security zone than the Azure AD endpoint (login.microsoftonline.com).
-This happens because there was a change in Skype Presence API and OnPrem environments are connecting to it by default.
+## Unable to access Finance and Operations: AADSTS50058: A silent sign-in request was sent but no user is signed in
+This error may occurr when logging in to Finance and Operations. After a user enters credentials, the browser will show the application layout for a second, then it will try to redirect outside of Finance and Operations and fail with following error:
+
+AADSTS50058: A silent sign-in request was sent but no user is signed in. 
+
+The cookies used to represent the user's session were not sent in the request to Azure AD. This can happen if the user is using Internet Explorer or Edge, and the web app sending the silent sign-in request is in different IE security zone than the Azure AD endpoint (login.microsoftonline.com).
+
+This happens because there was a change in Skype Presence API and on-premises environments are connecting to it by default.
 
 To resolve the issue:
-Run this SQL query: update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
-OR 
-Turn off Skype Presence option in the following page:
-System administration -> Setup -> Client performance options -> Client internet connectivity -> Skype presence enabled
-In order to do so, one must login to AX. Redirection should be blocked in browser so user can login and perform that action. After disabling Skype presence, redirection can be unblocked again.
-Chrome browser blocks redirection by default.
+
+Run this SQL Server query: update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
+
+-OR-
+
+Turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration > Setup > Client performance options**).
+
+In order to do so, one must log in to Finance and Operations. Redirection should be blocked in browser so user can login and perform that action. After disabling Skype presence, redirection can be unblocked again.
+
+The Chrome browser blocks redirection by default.
 
 
