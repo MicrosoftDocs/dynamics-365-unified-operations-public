@@ -5,7 +5,7 @@ title: Advance reports with budget control (Russia)
 description: 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/04/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ ms.search.validFrom: 2018-10-31
 
 An advance report is used to report travel expenses that an employee incurs during a business trip. You can distribute the expense amount across ledger dimensions. You can view the ledger entries and verify the distribution of the expense amount. Advance report posting supports ledger line functions, exchange adjustments, and advance adjustments. If the advance report transactions are split by distribution, the canceled advance report supports the creation of a storno accounting transaction to account the distribution.
 
-For more information, see [Daily operations for advance holders in Russia](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-advance-holders-daily-operations)
+For more information, see [Daily operations for advance holders in Russia](rus-advance-holders-daily-operations.md).
 
 ## Budget control for advance reports
 
