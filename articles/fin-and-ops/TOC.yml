@@ -2228,6 +2228,8 @@
           href: ../financials/localizations/rus-invoice-payment.md
         - name: Financial reporting
           href: ../financials/localizations/rus-financial-reports.md
+        - name: Create a purchase book
+          href: ../financials/localizations/rus-sales-books-purchase-books.md   
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
