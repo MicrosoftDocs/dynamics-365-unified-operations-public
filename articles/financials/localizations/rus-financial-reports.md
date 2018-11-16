@@ -3,8 +3,8 @@
 
 title: Financial reporting (Russia)
 description: This topic provides information about financial reporting for Russia.
-author: AnastasiaYashenina
-ms.date: 10/11/2018
+author: Anasyash
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
