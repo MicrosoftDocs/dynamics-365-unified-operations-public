@@ -490,6 +490,8 @@
     items:
     - name: Retail POS screen layouts
       href: pos-screen-layouts.md
+    - name: Open URL in POS
+      href: Open-URL-in-POS.md
     - name: Install the POS Layout designer
       href: install-pos-layout-designer.md
     - name: Retail Modern POS in offline mode
