@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -92,6 +92,19 @@ Feature exporting generated electronic files of declarations to folder for furth
 | **Product areas affected**         | General Ledger, Tax |
 | **Deployment option**              | All |
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+
+
+### Profit tax register wizard
+Feature for creating templates for new profit tax registers. This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Tax |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+
 
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
 No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.
