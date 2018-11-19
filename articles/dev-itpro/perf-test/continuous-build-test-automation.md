@@ -54,11 +54,11 @@ Compare Azure DevOps features required for your organization: <https://www.visua
 -   **Free Azure DevOps accounts provide only one build pipeline**. For each Visual Studio Enterprise subscriber in your organization you're granted an additional pipeline. 
 
 
-To use more build pipelines than you're currently granted, set up your Azure DevOps account with Azure billing: [Set up billing for your account](/VSTS/billing/set-up-billing-for-your-account-vs) 
+To use more build pipelines than you're currently granted, set up your Azure DevOps account with Azure billing: [Set up billing for your account](https://docs.microsoft.com/en-us/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs?view=vsts) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
--   After your account is linked with the Azure subscription, follow the instructions in the Azure management portal to purchase more concurrent pipelines - [Concurrent pipelines in VSTS](/VSTS/build-release/concepts/licensing/concurrent-pipelines-ts) 
+-   After your account is linked with the Azure subscription, follow the instructions in the Azure management portal to purchase more concurrent pipelines - [Concurrent pipelines in VSTS](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs-vsts?branch=master&view=vsts) 
 
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
