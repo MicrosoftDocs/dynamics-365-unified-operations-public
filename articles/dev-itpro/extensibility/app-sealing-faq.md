@@ -83,12 +83,6 @@ We plan to provide monthly updates of platform and application after Microsoft D
 
 Some extensibility requests break changes. Some of the more common potentially breaking requests are listed here along with potential workarounds. In addition, read [Creating extensions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value) to understand the existing platform extension capabilities and [Tips for logging extensibility requests](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/) to learn more about how to create solid requests if a capability doesn't exist in the latest release.
 
-### Why can't EDT.StringSize be made extensible?
-
-- Request: Make EDT.StringSize changeable via extension.
-- Problem: When a table string field (FieldX) is of type “parent EDT" and is associated (through table relations) with another table’s field (FieldY) of type EDT2 (EDT2 is derived from “parent EDT”). If FieldY could have a larger string by allowing EDT2.StringSize to increase, FieldX would not be able to handle the new string size. 
-- Workaround: Create a new EDT and use that for the table field FieldY.
-
 ### Why can't a unique table index be made extensible?
 
 - Request: Make unique table indexes changeable via extension, for example by allowing an extra field to be added.
