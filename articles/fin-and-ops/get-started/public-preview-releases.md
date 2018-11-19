@@ -58,5 +58,7 @@ Preview early access program (PEAP) is available for customers, partner and ISVs
 ## Service update experience
 All service updates will have a ONE-V experience of Onboard-\>Notice-\>Execute-\>Validate.
 
+![service update experience](media/service-update-experience.png)
+
 ## Access targeted releases for customers
 If you are interested in participating in the targeted releases of Finance and Operations and would like to learn more about the CEAP or PEAP program, see the [Insider program.](https://experience.dynamics.com/)
