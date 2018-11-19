@@ -44,7 +44,7 @@ The first release after development is complete is a **targeted release.** This 
 
 The next release is the first release for customers who opt in. After the targeted general availability, the new release is made available to all customers. This series of progressive validation is in place to make sure that the release is as robust as possible. The releases are shown in the following graphic.
 
-![](media/814cefcc8bc1b2fd60f37ed5ae37ea88.png)
+![release process](media/release-process.png)
 
 ## Standard release
 The standard release is the default option. With this release you can access the most recent release of Finance and Operations when it is released to all Finance and Operations customers. In the standard release you configure the update date and time to ensure predictability. You can also designate an environment for user acceptance testing. This environment is updated prior to updating the production environment.
