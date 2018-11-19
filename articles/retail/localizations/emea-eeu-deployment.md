@@ -30,8 +30,6 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 
 This topic shows how to enable the Microsoft Dynamics 365 for Retail localization for Czech Republic, Hungary, and Poland. The localization consists of several extensions of Retail components. These extensions let you print the **Advance Invoice** report from Point of Sale (POS). For more information about the Retail localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
 

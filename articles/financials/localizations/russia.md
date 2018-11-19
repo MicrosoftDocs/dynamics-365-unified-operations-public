@@ -74,3 +74,5 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Invoices for payment](rus-invoice-payment.md)
+- [Financial reporting](rus-financial-reports.md)
+- [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
