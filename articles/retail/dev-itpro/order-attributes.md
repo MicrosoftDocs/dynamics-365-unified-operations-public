@@ -41,6 +41,9 @@ If you want to add new fields to cash-and-carry transactions, customer orders, o
 
 This first version supports only the **String** attribute type, but future versions will support other attribute types. If you want the data to come from the master table, and that data involves complex search logic and core business logic in X++, you should use extension properties.
 
+> [!NOTE]
+> We only support attributes on customer orders and cash-and-carry transactions, no other transaction types are supported.
+
 ## Define attribute types
 
 First, you must define the attribute types and assign valid ranges to them.

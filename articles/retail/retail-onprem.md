@@ -5,7 +5,7 @@ title: Retail capabilities that are available in on-premises deployments
 description: This topic lists the retail capabilities available in on-premises deployments.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 03/16/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,59 +35,59 @@ This topic lists retail capabilities that are available in on-premises deploymen
 
 For more information about on-premises deployments, see [On-premises deployment home page](../dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
-| **Component**        | **On-premises status** |
-|----------------------|------------------------|
-| Cloud Point of Sale  | Not available          |
-| Retail Point of Sale | Not available          |
-| Modern Point of Sale | Not available          |
-| Retail Server        | Not available          |
-| Channel database     | Not available          |
-| Hardware station     | Not available          |
-|                      |                        |
+| **Component**        | **On-premises status**   |
+|----------------------|--------------------------|
+| Cloud Point of Sale  | Available                |
+| Retail Point of Sale | Available                |
+| Modern Point of Sale | Available                |
+| Retail Server        | Available                |
+| Channel database     | Available                |
+| Hardware station     | Not available            |
+| AX 2012 N-1 support  | Not available            |
 
 ## Head office capability
 
 ### Channel management
 The following table indicates which channel management components are available in on-premises deployments.
 
-| **Component**                         | **On-premises status** |
-|---------------------------------------|------------------------|
-| All stores                            | Not available          |
-| Online stores                         | Not available          |
-| Call center                           | Not available          |
-| Registers                             | Not available          |
-| Devices                               | Not available          |
-| POS permissions and permission groups | Not available          |
-| Info codes                            | Not available          |
-| Retail payment methods                | Not available          |
-| Email receipts                        | Not available          |
-| Email notifications                   | Not available          |
-| Sales tax overrides                   | Not available          |
-| Functionality profiles                | Not available          |
-| Sales tax groups                      | Available              |
+| **Component**                         | **On-premises status**      |
+|---------------------------------------|---------------------------- |
+| All stores                            | Available                   |
+| Online stores                         | Not available               |
+| Call center                           | Available                   |
+| Registers                             | Available                   |
+| Devices                               | Available                   |
+| POS permissions and permission groups | Available                   |
+| Info codes                            | Available                   |
+| Retail payment methods                | Available                   |
+| Email receipts                        | Available                   |
+| Email notifications                   | Available                   |
+| Sales tax overrides                   | Available                   |
+| Functionality profiles                | Available                   |
+| Sales tax groups                      | Available                   |
 
 ### Pricing and discounts
 The following table indicates which pricing and discount components are available in on-premises deployments.
 
-| **Component**                                         | **On-premises status** |
-|-------------------------------------------------------|------------------------|
-| All discounts                                         | Not available          |
-| Price groups, price adjustments, category price rules | Available              |
-| Trade agreements                                      | Not available          |
-| Channel navigation category                           | Not available          |
-| Affiliation price groups                              | Not available          |
-| Retail channel price groups                           | Not available          |
-| Pricing priorities                                    | Available              |
-| Price simulator                                       | Not available          |
+| **Component**                                         | **On-premises status**      |
+|-------------------------------------------------------|-----------------------------|
+| All discounts                                         | Available                   |
+| Price groups, price adjustments, category price rules | Available                   |
+| Trade agreements                                      | Available                   |
+| Channel navigation category                           | Available                   |
+| Affiliation price groups                              | Available                   |
+| Retail channel price groups                           | Available                   |
+| Pricing priorities                                    | Available                   |
+| Price simulator                                       | Not available               |
 
 ### Customer
 The following table indicates which customer components are available in on-premises deployments.
 
 | **Component**   | **On-premises status** |
 |-----------------|------------------------|
-| Loyalty schemes | Not available          |
-| Loyalty cards   | Not available          |
-| Loyalty points  | Not available          |
+| Loyalty schemes | Available              |
+| Loyalty cards   | Available              |
+| Loyalty points  | Available              |
 
 ### Merchandising
 The following table indicates which merchandising components are available in on-premises deployments.
@@ -95,14 +95,14 @@ The following table indicates which merchandising components are available in on
 | **Component**                               | **On-premises status** |
 |---------------------------------------------|------------------------|
 | Products by category                        | Available              |
-| Product categories                          | Not available          |
-| Channel categories and product attributes   | Not available          |
-| Assortments                                 | Not available          |
-| Retail catalogs                             | Not available          |
-| Retail product kits                         | Not available          |
-| Retail product files                        | Not available          |
+| Product categories                          | Available              |
+| Channel categories and product attributes   | Available              |
+| Assortments                                 | Available              |
+| Retail catalogs                             | Available              |
+| Retail product kits                         | Available              |
+| Retail product files                        | Available              |
 | Variant groups (size, color, style)         | Available              |
-| Attribute, attribute type, attribute groups | Not available          |
+| Attribute, attribute type, attribute groups | Available              |
 | Vendor catalogs                             | Available              |
 | Bar codes                                   | Available              |
 
@@ -112,11 +112,12 @@ The following table indicates which inventory management components are availabl
 | **Component**                  | **On-premises status** |
 |--------------------------------|------------------------|
 | Packing slip                   | Available              |
-| Store locator groups           | Not available          |
-| Cross docking and buyer’s push | Not available          |
-| Qty on hand                    | Not available          |
-| Stock counts                   | Not available          |
+| Fulfilment groups              | Available              |
+| Cross docking and buyer’s push | Available              |
+| Qty on hand                    | Available              |
+| Stock counts                   | Available              |
 | Inventory adjustment           | Available              |
 | Models of delivery             | Available              |
-| Return locations               | Not available          |
+| Return locations               | Available              |
+| Distributed order management   | Not available          |
 

@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/20/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Troubleshoot the Office integration
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
+
 
 This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
@@ -83,13 +86,15 @@ To check processing time in the Excel Add-in versus the server/service, follow t
     - If the time from a request to its response is large, the bottleneck is the server/service.
     - If the time from a response to the next request is large, the bottleneck is the Excel Add-in (that is, the client).
 
-### Why is the Export to Excel functionality limited to 10,000 records?
+### Why is the Export to Excel functionality limited to 10,000 records (prior to Platform update 22)?
 
-The Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. The fact that the form is used means that the export occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client. 
+Prior to Platform update 22, the Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. Because the form is used during the export, it occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client.
 
-The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and it takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF)/Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators. 
+With Platform update 22 and later, Export to Excel has a progress dialog box and is no longer a blocking process for other users, so larger datasets can be exported. Exporting data via Export to Excel will be slower than using the Excel Add-in or the Data Management framework, but it will return exactly the data shown in the grid. This is useful for filtered datasets. The user is presented with a dialog box that allows them to stop at any point. Because the export can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
 
-If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points: 
+The ideal alternative to Export to Excel is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators.
+
+If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points:
 
 - The entities should have all the validation and logic that the forms have. If they don't, it's a bug. 
 - The way that entities are secured resembles the way that forms are secured. Therefore, if a user should not have permission to update or write data by using a form that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 

@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from Azure SQL Database to SQL Serv
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/04/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -120,6 +120,23 @@ Run the following script against the copy of the database to turn off change tra
 ```
 --Prepare a database in Azure SQL ddatabase for export to SQL Server.
 
+--Remove certificates in database from Electronic Signature usage
+DECLARE @SQLElectronicSig nvarchar(512)
+DECLARE certCursor CURSOR for
+select 'DROP CERTIFICATE ' + QUOTENAME(c.name) + ';'
+from sys.certificates c;
+OPEN certCursor;
+FETCH certCursor into @SQLElectronicSig;
+WHILE @@Fetch_Status = 0
+BEGIN
+print @SQLElectronicSig;
+exec(@SQLElectronicSig);
+FETCH certCursor into @SQLElectronicSig;
+END;
+CLOSE certCursor;
+DEALLOCATE certCursor;
+
+
 -- Re-assign full rext catalogs to [dbo]
 BEGIN
     DECLARE @catalogName nvarchar(256);
@@ -166,6 +183,11 @@ ALTER DATABASE
 -- SET THE NAME OF YOUR DATABASE BELOW
 MyNewCopy
 set CHANGE_TRACKING = OFF
+
+--Change ownership of alternate schemas to DBO
+ALTER AUTHORIZATION ON schema::shadow TO [dbo]
+ALTER AUTHORIZATION ON schema::[BACKUP] TO [dbo]
+
 --Remove the database level users from the database
 --these will be recreated after importing in SQL Server.
 declare
@@ -204,7 +226,7 @@ TRUNCATE TABLE BATCHSERVERCONFIG
 TRUNCATE TABLE BATCHSERVERGROUP
 --Remove records which could lead to accidentally sending an email externally.
 UPDATE SysEmailParameters
-SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' --LANE.SWENKA 9/12/18 Forcing SMTP as Exchange provider can still email on refresh
+SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' 
 --Remove encrypted SMTP Password record(s)
 TRUNCATE TABLE SYSEMAILSMTPPASSWORD
 GO
@@ -345,14 +367,6 @@ If change tracking was enabled in the source database, ensure to enable change t
 
 To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
 
-### Re-provision the target environment
-
-[!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-### Reset the Financial Reporting database
-
-If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
-
 ## Start to use the new database
 
 To switch the environment and use the new database, first stop the following services:
@@ -364,6 +378,14 @@ To switch the environment and use the new database, first stop the following ser
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
+
+### Re-provision the target environment
+
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+### Reset the Financial Reporting database
+
+If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
 ## Re-enter data from encrypted and environment-specific fields in the target database
 

@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1. This version was released in October 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Release 8.1
 [!include [banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.136.
+
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new).
 
 ### Announcing the Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
@@ -75,6 +77,11 @@ You can configure a dimension so that information for other dimensions is automa
 You can set up the derived dimensions segments and values by using entities.
 
 For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
+
+## Dual currency
+Reporting currency can now be repurposed and used as a second accounting currency. This functionality is referred to as dual currency. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
+
+For more information, see [Dual currency](../../financials/general-ledger/dual-currency.md).
 
 ## Extensibility enhancements
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md) 

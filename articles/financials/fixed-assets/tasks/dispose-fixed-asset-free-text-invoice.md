@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Dispose of a fixed asset using a free text invoice
 
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to dispose of a fixed asset using the free text invoice.
 
