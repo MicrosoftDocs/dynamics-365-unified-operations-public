@@ -5,7 +5,7 @@ title: Standard and targeted service updates
 description: 
 author: meeramahabala
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,28 +38,29 @@ With Dynamics 365 Finance and Operations, you receive new service updates and fe
 Service updates will contain application (including financial reporting and Retail) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be opt-in. 
 
 ## Release processes
-Each new release is designed and developed by the Dynamics 365 Finance and Operations team. Any new release is first tested and validated by the feature team, then by the entire Dynamic 365 Finance and Operations and Retail team. During this time various test topologies are used.
+Each new release is designed and developed by the Dynamics 365 Finance and Operations team. Any new release is first tested and validated by the feature team, then by the entire Dynamic 365 Finance and Operations and Retail teams. During this time extensive testing is done on various test topologies. A compatibility checker runs tests to ensure backward compatibility. Further several customer data bases and code are benchmark tested with automation to ensure no breaks.
 
-The first release after development is complete is a **targeted release** (also known as **First release**). This release is available to customers who opt-in through the [insider program](https://experience.dynamics.com/). During this targeted release, Microsoft monitors telemetry, collects feedback and further validates quality by monitoring key metrics. There are two phases of the targeted release. In the first phase, partners and ISVs use the release to validate their customizations and provide feedback. 
+The first release after development is complete is a **targeted release**.
+This release is available to customers who opt-in through the [insider program](https://experience.dynamics.com/). During this targeted release, Microsoft monitors telemetry, collects feedback and further validates quality by monitoring key metrics. There are two phases of the targeted release. In the first phase, preview phase, partners customers and ISVs use the release to validate their customizations and provide feedback. This release cannot be used in production.
 
-The next release is targeted release for customers who opt in. After the targeted general availability, the new release is made available to all customers. This series of progressive validation is in place to make sure that the release is as robust as possible. The releases are shown in the following graphic.
+The next release is the first release for customers who opt in. After the targeted general availability, the new release is made available to all customers. This series of progressive validation is in place to make sure that the release is as robust as possible. The releases are shown in the following graphic.
 
 ![Ring releases](./media/release_rings_365_Jan22.png)
 
 ### Standard release
-The standard release is the default option. With this release you can access the most recent release of Finance and Operations when it is released to all Finance and Operations customers. In the standard release you configure the update date and time to ensure predictability. 
+The standard release is the default option. With this release you can access the most recent release of Finance and Operations when it is released to all Finance and Operations customers. In the standard release you configure the update date and time to ensure predictability. You can also designate an environment for user acceptance testing. This environment is updated prior to updating the production environment.
 
-### Targeted release (First release) to CAAP
-With a targeted release, Microsoft automatically deploys the latest service update to a specified Tier 2 sandbox. Continuous Auto-update Advantage Program (CAAP) participants can then work in the new environment while providing feedback directly to Microsoft. CAAP participants will receive direct support from Microsoft for any issues that are submitted. This is followed by applying the validated update to Production in a subsequent week.
+### First release
+With a targeted release, Microsoft makes available the latest production service update to a specified Tier 2 sandbox. Customers can participate in this program know as partner early access program (CEAP). Participants can then work in the new environment while providing feedback directly to Microsoft. CEAP participants will receive direct support from Microsoft for any issues that are submitted.  This is followed by applying the validated update to Production in a subsequent week.
 
-### Targeted release (First release) to CEAP
-A new program is available to just update a Tier 2 sandbox to the latest service update in the same timeframe. This has the additional value of testing updates early prior to updating the production environments.
+### Targeted release 
+Preview early access program (PEAP) is available for customers, partner and ISVs to deploy into their sandbox and/ or production. The participant is required to self-update the to the latest service update in this timeframe. The participants can raise issues to Microsoft. This has the additional value of testing updates early prior to updating the production environments.
 
 ### Service update experience
-All service updates will have a similar experience of configure-> view -> update -> validate. 
+All service updates will have a ONE-V experience of Onboard->Notice->Execute->Validate.
 
 ![Service update experience](./media/service-update-experience.png)
 
 ### Access targeted releases for customers
-If you are interested in participating in the targeted releases of Finance and Operations and would like to learn more about the CAAP or CEAP program, see the [Insider program](https://experience.dynamics.com/).
+If you are interested in participating in the targeted releases of Finance and Operations and would like to learn more about the CEAP or PEAP program, see the [Insider program](https://experience.dynamics.com/).
 
