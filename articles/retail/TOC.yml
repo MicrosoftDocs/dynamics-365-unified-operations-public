@@ -577,6 +577,8 @@
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:
+    - name: Upcoming changes in the Retail SDK
+      href: dev-itpro/UpcomingSDKChanges.md
     - name: Merge the build systems for Retail and Finance and Operations
       href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
     - name: Retail SDK extensibility samples
