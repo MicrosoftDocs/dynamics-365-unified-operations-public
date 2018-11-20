@@ -47,6 +47,8 @@
     href: dev-itpro/updating-environments.md
   - name: Testing and performance issues
     href: dev-itpro/retail-implementation-testing-performance.md   
+- name: Distributed order management (DOM)
+  href: dom.md
 - name: Payments
   items:
   - name: Payment methods
@@ -55,6 +57,8 @@
     href: ../financials/accounts-receivable/credit-card-authorizations.md
   - name: Configure cash denominations for the POS
     href: cash-denominations.md
+  - name: Set up pay invoice scenarios
+    href: payinvoice.md
   - name: Payments FAQ
     href: dev-itpro/payments-retail.md
 - name: Purchase orders
@@ -213,6 +217,8 @@
     href: Order-fulfillment-POS-setup.md
   - name: Show order notifications in the POS
     href: Notifications-POS.md
+- name: Configure and process an exchange on a return order
+  href: orderexchanges.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
