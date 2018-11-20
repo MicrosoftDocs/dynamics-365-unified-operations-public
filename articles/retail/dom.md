@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 
 In the new paradigm for retail operations, retailers strive to provide personalized customer engagement, omni-channel experiences, and frictionless interactions. Because so many choices are available, consumers will shop wherever they can have the most favorable experience. In many cases, prices and products are no longer the top deciding factors for consumers.
 
-To help improve the customer experience, retailers must have visibility into their inventory in real time, across all their channels. A single, holistic view of all the inventory can help optimize order fulfillment, allocation, and distribution. Therefore, adaptation and implementation of a distributed order management (DOM) system are becoming more imperative for retailers.
+To help improve the customer experience, retailers must have visibility into their inventory in real time, across all their channels. A single, holistic view of all the inventory can help optimize order fulfillment, allocation, and distribution. Therefore, adoption and implementation of a distributed order management (DOM) system are becoming more imperative for retailers.
 
 DOM optimizes order fulfillment across a complex network of systems and processes. It relies on a single, global view of inventory across the whole organization to intelligently manage orders, so that they are fulfilled accurately and in a more cost-effective manner. By improving the efficiency of a retailer's supply chain, DOM helps the retailer better meet customer expectations.
 
