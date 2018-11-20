@@ -596,7 +596,7 @@ self.colors = [
 <div data-dyn-bind="vars...">
 <div data-dyn-bind="text...">2. (600) Technology</div>
 <div data-dyn-bind="vars... foreach...">
-<div data-dyn-bind="text...">2.1 (600.343) Microsoft Coporation</div>
+<div data-dyn-bind="text...">2.1 (600.343) Microsoft Corporation</div>
 <div data-dyn-bind="text...">2.2 (600.117) Enterprise Resource Planning</div>
 </div>
 </div>
