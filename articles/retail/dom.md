@@ -200,13 +200,8 @@ To view all the fulfillment plans that are generated, follow these steps.
     The order fulfillment details section shows the assignment of the original sales order lines to different locations, together with their quantities.
 
 ## Order line actions and statuses
-<!---
-I don't know where this UI is for any of these items. Please be more specific
--->
-<!---
-fix the wording here
--->
 
+The following describes settings on the order line. To open the order line, go to **Retail \> Customers \> All sales orders**.
 - If you set the **Exclude from DOM processing** option on the **General** tab of the sales order line to **Yes**, the order or order line will be excluded from DOM processing.
 - The **DOM status** field on the **General** tab of the sales order line can be set to one of the following values:
 
