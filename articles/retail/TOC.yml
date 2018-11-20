@@ -518,6 +518,8 @@
       href: dev-itpro/gift-card.md
     - name: Create and apply branding to the Retail Experience app
       href: dev-itpro/create-retail-experience-app.md
+    - name: Set up POS Hybrid app on Android and iOS
+      href: dev-itpro/hybridApp.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
