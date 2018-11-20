@@ -5,7 +5,7 @@ title: Upcoming changes in the Retail SDK
 description: This topic contains a list of upcoming changes in the Retail software development kit (SDK).
 author: mugunthanm 
 manager: AnnBe
-ms.date: 11/o9/2018
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
