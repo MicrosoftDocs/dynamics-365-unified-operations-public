@@ -204,6 +204,7 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | CreateEmptyCartServiceRequest                   |
 | GetTaxOverridesServiceRequest                   |
 | UpdateTenderLineSignatureServiceRequest         |
+| CarryoutSelectedProductsOperationRequest |
 
 ### Payments
 
@@ -264,6 +265,7 @@ The following is a list of APIs exposed to perform customer-related functionalit
 | GetCustomerClientRequest |
 |CreateCustomerServiceRequest |
 |UpdateCustomerServiceRequest |
+|SelectCustomerClientRequest |
 
 
 ### Authentication
@@ -359,6 +361,7 @@ The following is a list of APIs exposed to perform products-related functionalit
 | SelectProductVariantClientRequest          |
 | GetSerialNumberClientRequest               |
 | GetRefinerValuesByTextServiceRequest       |
+| SelectProductClientRequest |
 
 ### SalesOrders
 
