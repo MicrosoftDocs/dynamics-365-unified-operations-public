@@ -119,6 +119,8 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
     ![Result](./media/postman15.png)
 
+**Note:** If you are working against downloaded VHD, Onebox or local hosted Tier1, you might need to disable the **"SSL certificate verification"** inside the **"File"** -> **"Settings"**
+
 In our example, we have now successfully authenticated and then used the OData service to read a customer record.
 
 ## Query the Finance and Operations SOAP custom service by using SoapUI
