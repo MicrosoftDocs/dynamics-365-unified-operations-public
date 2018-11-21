@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic ledger accounting statements
-description: This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
+description: This article explains how to set up and generate the general ledger XML files that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 author: sndray
 manager: AnnBe
 ms.date: 12/06/2017
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
+This article explains how to set up and generate the general ledger XML files that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 
-All companies in Mexico are required to report ledger accounting statements to the Mexican tax authorities (Servicio de Administración Tributaria \[SAT\]) every month. Annex 24 of Miscellaneous Tax Resolution for 2015 requires that you submit general ledger XML files version 1.1. You can generate the following XML files per company:
+All companies in Mexico are required to report ledger accounting statements to the Mexican tax authorities (Servicio de Administración Tributaria \[SAT\]) every month. Annex 24 of Miscellaneous Tax Resolution requires that you submit general ledger XML files. You can generate the following XML files per company:
 
 -   Chart of account
 -   Monthly Trial Balance
@@ -43,8 +43,6 @@ All companies in Mexico are required to report ledger accounting statements to t
 -   Auxiliary ledger account
 
 This functionality is available only when the country/region of the company is defined as MEX. 
-> [!NOTE]
->  The government also requires an additional auxiliary XML file (folios) that details all fiscal documents (CFDI, CFD, and others). This file isn't included in the current feature, because this information is included in the Journal transactions XML file, as specified in Chapter 2.8, section 2.8.1.3 of the Miscellaneous Tax Resolution for 2015 (Second section) of December 30, 2014. For more information, refer to government documentation.
 
 ## Prerequisites
 The following process lists the prerequisites that must be in place before you start to generate the XML files that SAT requires. Parameters determine how the data will be exposed in the XML files, and all of them are required. Missing parameters can cause inconsistencies or incorrect validations in the government validation tool.
@@ -111,17 +109,22 @@ Users can now include this information in transactions that are generated from t
 
 ### Electronic reporting
 
-This feature is based on Electronic reporting configuration (ER), where each XML file format is defined by using the model and format designer for electronic reporting. Use the **AX resources** repository configuration type to import these configurations into the current company and enable the generation of XML files. Click **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Repositories**.
+This feature is based on Electronic reporting configuration (ER), where each XML file format is defined by using the model and format designer for electronic reporting. 
 
-You must upload the following repository models and formats:
-
+You need to download the following latest versions of the ER configurations models and formats from **LCS shared asset library**
 1.  Electronic ledger accounting model MX
 2.  Auxiliary Ledger XML MX (format)
 3.  Chart of Account XML MX (format)
 4.  Journal XML MX (format)
 5.  Trial Balance XML MX (format)
 
-After the repository is available in your environment, you must identify these formats in the general ledger parameters. Click **General ledger** &gt; **Ledger setup** &gt; **General ledger parameters**, and then, in the **Electronic reporting mapping** field group, select the format to use to generate the XML files.
+Then, you need to import the above files in Dynamics 365 for Operations
+
+1. **Organization administration > Electronic Reporting > Configurations**
+2. **Exchange > Load from XML file** and **OK** to confirm. You need to repeat this action for each XML file.
+
+
+After the repository is updated in your environment with the recently files loaded, you must identify these formats in the general ledger parameters. Click **General ledger** &gt; **Ledger setup** &gt; **General ledger parameters**, and then, in the **Electronic reporting mapping** field group, select the format to use to generate the XML files.
 
 ## Generate electronic ledger accounting files
 Click **General ledger** &gt; **Inquire and reports** &gt; **Ledger reports** &gt; **Electronic ledger accounting statement** to generate the required XML files and download them to your environment. The following table describes the parameters that you must set.
