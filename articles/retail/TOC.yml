@@ -518,6 +518,8 @@
       href: dev-itpro/gift-card.md
     - name: Create and apply branding to the Retail Experience app
       href: dev-itpro/create-retail-experience-app.md
+    - name: Set up POS Hybrid app on Android and iOS
+      href: dev-itpro/hybridApp.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
@@ -575,6 +577,8 @@
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:
+    - name: Upcoming changes in the Retail SDK
+      href: dev-itpro/UpcomingSDKChanges.md
     - name: Merge the build systems for Retail and Finance and Operations
       href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
     - name: Retail SDK extensibility samples
