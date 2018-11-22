@@ -54,7 +54,7 @@ Before you can create tax agent transactions, you must set up the parameters for
 1. Select **Tax** \> **Setup** \> **Sales tax** \> **VAT operation codes**.
 2. In the **VAT operation code** field, enter the operation code for the VAT declaration.
 3. In the **Description** field, enter a description for the transaction code.
-4. Press Ctrl+S, or close the page.
+4. Close the page.
 
 ### Set up the sales tax code for tax agent transactions
 
