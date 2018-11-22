@@ -150,8 +150,8 @@ On the **Vendor payment proposal** page, you can create payment proposals that y
 ### Create a prepayment
 
 1. Select **Accounts payable** \> **Payments** \> **Payment journal**.
-2. Press Ctrl+N to create a journal, and then select **Lines** to open the **Vendor payments** page.
-3. Press Ctrl+N to create a new journal line, select the vendor, and enter a prepayment amount.
+2. Create a journal, and then select **Lines** to open the **Vendor payments** page.
+3. Create a new journal line, select the vendor, and enter a prepayment amount.
 4. Specify the sales tax group and item sales tax group that contain the sales tax code that has the required setup of the VAT charge.
 
     > [!NOTE]
