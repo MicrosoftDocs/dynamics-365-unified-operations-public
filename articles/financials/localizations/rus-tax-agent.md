@@ -125,7 +125,7 @@ In the Vendor payment journal, two options for paying VAT as a tax agent are imp
 On the **Vendor payment proposal** page, you can create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate VAT payments to a tax authority.
 
 1. Select **Accounts payable** \> **Payments** \> **Payment journal**.
-2. Press Ctrl+N to create a journal, and then select **Lines** to open the **Vendor payments** page.
+2. Create a journal, and then select **Lines** to open the **Vendor payments** page.
 3. Select **Payment proposal** \> **Create payment proposal** to open the **Vendor payment proposal** page.
 4. In the **Select invoices by** field, select the type of payment proposal to create. You can create the proposal by due date, by cash discount date, or by both due date and cash discount date.
 5. Select **Records to include**, and then select **Filter** to define the criteria for the payment proposal. For example, you can use the vendor account as a criterion.
