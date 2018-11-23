@@ -226,15 +226,15 @@ Application 1 contains information about fixed assets that are used in nontaxabl
 Application 1 is generated in the last reporting period of the calendar year and contains the restored VAT amount for the fixed asset calculated for the entire calendar year. Data for the section are generated based on VAT restoration journal entries.
 
 This section contains:
-o	name of fixed asset (line 010)
-o	putting into operation date (line 030)
-o	depreciation start date (line 040)
-o	initial cost of fixed asset (line 050)
-o	incoming VAT amount related to fixed asset which was deducted (line 060)
-o	the year that the VAT restoration begins until the tenth year of depreciation for fixed asset (line 070, column 1)
-o	the date when the fixed asset was first used in non-taxable operations (line 070, column 2)
-o	the percentage of revenue for nontaxable goods and export operations (line 070, column 3)
-o	VAT amount restored for fixed asset in a year (line 070, column 4)
+- name of fixed asset (line 010)
+- putting into operation date (line 030)
+- depreciation start date (line 040)
+- initial cost of fixed asset (line 050)
+- incoming VAT amount related to fixed asset which was deducted (line 060)
+- the year that the VAT restoration begins until the tenth year of depreciation for fixed asset (line 070, column 1)
+- the date when the fixed asset was first used in non-taxable operations (line 070, column 2)
+- the percentage of revenue for nontaxable goods and export operations (line 070, column 3)
+- VAT amount restored for fixed asset in a year (line 070, column 4)
 
 
 ## Sections for export taxed at 0% rate.
@@ -272,7 +272,9 @@ In this example, the deadline for collecting all document for export 0% rate con
 *November 2018* - Facture2 for left part of purchase by Invoice V1 is received. So, incoming VAT deduction for left part of Invoice V1 purchase is posted:
     Amount incl. VAT 35 400 RUB, incl. VAT 18% 5 400 RUB (this is for goods purchased by Invoice C2)
 
+
 VAT declaration for III Quarter 2018 will contain Chapter 4 and Chapter 6
+
 VAT declaration for IV Quarter 2018 will contain Chapter 5 
 
 Find more details for this example below.
@@ -281,22 +283,25 @@ Find more details for this example below.
 ### Section 4 Calculation of VAT amounts for export sales where tax rate 0% is confirmed during the period
 
 This section represents amounts for export factures if 0% rate was confirmed during the reporting period. Data are grouped by VAT operation code. The following data is exported:
-o	VAT operation code (line 010)
-o	Tax base (line 020)
-o	VAT amount deductible from the purchase of items used in export confirmed at 0% rate (line 030)
-o	Adjustment: VAT amount deductible which was paid in previous periods when 0% rate wasn’t confirmed yet (line 040).
-o	Adjustment: VAT amount restoration which was deducted in previous periods for not confirmed export (line 050).
+- VAT operation code (line 010)
+- Tax base (line 020)
+- VAT amount deductible from the purchase of items used in export confirmed at 0% rate (line 030)
+- Adjustment: VAT amount deductible which was paid in previous periods when 0% rate wasn’t confirmed yet (line 040).
+- Adjustment: VAT amount restoration which was deducted in previous periods for not confirmed export (line 050).
 Corrections of amounts for goods return:
-o	VAT operation code (line 060)
-o	Tax base (line 070)
+- VAT operation code (line 060)
+- Tax base (line 070)
 
-Example
+**Example**
+
 In example above, the following data will be present in Section 4 of VAT declaration for III quarter 2018:
+
 | Requisite | Line | Value |
 |----|-----|
 | VAT operation code | 010 | 1011410 (as per the user setup for respective Sales tax code) |
 | Tax base | 020| 27 000 |
 | VAT amount deductible from the purchase of items used in export confirmed at 0% rate | 030 | 3 600 |
+
 
 ### Section 5 – Calculation of VAT deduction amounts of the reporting period for export sales where tax rate 0% was confirmed or not confirmed in previous periods.
 
