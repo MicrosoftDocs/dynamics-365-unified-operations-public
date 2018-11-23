@@ -296,6 +296,7 @@ Corrections of amounts for goods return:
 
 In example above, the following data will be present in Section 4 of VAT declaration for III quarter 2018:
 
+
 | Requisite | Line | Value |
 |----|-----|
 | VAT operation code | 010 | 1011410 (as per the user setup for respective Sales tax code) |
@@ -344,6 +345,7 @@ Corrections of amounts for goods return:
 - Adjustment: VAT amount from the purchase of items used in export, previously deducted and to be restored for goods return (line 100)
 
 In example above, the following data will be present in Section 6 of VAT declaration for III quarter 2018:
+
 
 | Requisite | Line | Value |
 |----|-----|
