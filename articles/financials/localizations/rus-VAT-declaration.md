@@ -195,22 +195,22 @@ You should define the following names of Financial report cells so that the calc
 Section 3 is represented in VAT declaration model (RU) by model element **Declaration items**. 
 In ER configuration **VAT declaration model mapping (RU)** this element is bound to the data source **$RRG.$Section3.$data** that is configured as **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**. It refers to two data sources: 
 
-   o	**$RRG.$Section3.$data.$dataStd**: This data source is configured to access the application class **VAT Declaration helper (RU)** by calling the method **getSection3data** which is producing the list with amounts of several Section 3 boxes 
+   - **$RRG.$Section3.$data.$dataStd**: This data source is configured to access the application class **VAT Declaration helper (RU)** by calling the method **getSection3data** which is producing the list with amounts of several Section 3 boxes 
 
-   o	**$RRG.$Section3.$data.$dataCustom**: This data source is configured to access the application class **LedgerRRGCustomReportHelper_RU** by calling the method **getCustomReportData** which is producing the record list with calculated amounts for some Financial report cells configured by user
+   - **$RRG.$Section3.$data.$dataCustom**: This data source is configured to access the application class **LedgerRRGCustomReportHelper_RU** by calling the method **getCustomReportData** which is producing the record list with calculated amounts for some Financial report cells configured by user
 
 To customize the declaration, you can do either of the following:
 
-   o	set up Financial report to calculate cells which are not calculated automatically by **VAT Declaration helper (RU)** class
+   - set up Financial report to calculate cells which are not calculated automatically by **VAT Declaration helper (RU)** class
 In this case you should to set up Financial report calculation rules for report cells not marked with *** above
 
-   o	set up Financial report to calculate cells fully based on user setup instead of automatic calculation. 
+   - set up Financial report to calculate cells fully based on user setup instead of automatic calculation. 
    In this case you should do the following: 
       1.	Set up Financial report calculation rules for all required cells, including those marked with ***
       2.	Create customized Model mapping ER configuration as derived from the one provided by Microsoft configuration provider 
       3.	In customized Model mapping ER configuration (created on the previous step), redefine model mapping data source **$RRG.$Section3.$data = '$dataCustom'** instead of  **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**
 
-   o	extend the **VAT Declaration helper (RU) class** (use methods starting from "getSection3data" like getSection3dataDomesticVAT) or create alternative helper methods in a similar manner which calculate required cells values. 
+   - extend the **VAT Declaration helper (RU) class** (use methods starting from "getSection3data" like getSection3dataDomesticVAT) or create alternative helper methods in a similar manner which calculate required cells values. 
    In this case you should do the following:
       1.	Create customized Model mapping ER configuration as derived from the one provided by Microsoft configuration provider 
       2.	Redefine the model mapping data source element $RRG.$Section3.$data.$dataStd
