@@ -109,4 +109,36 @@ A separate section for each Tax agent is created which contains the following in
 - VAT amount calculated for tax agent transactions (line 060)
 - VAT operation code (line 070)
 
+## Section 3 Calculation of VAT amounts to be paid to budget or to be reclaimed
+
+In the Section 3 of VAT declaration, amounts of the registered factures, incoming VAT and restored VAT amounts from the sales and purchase books are reflected, as shown in the following table. These amounts are generated automatically based on registered documents.
+
+| Line number	| Column number	| Name	| XML attribute, element name	| Description |
+|---|---|---|---|---|
+|**VAT payable** |
+|010	| 3	| Transfer of goods, services and property rights	| РеалТов18\ НалБаза	| Tax base of outgoing customer invoices with VAT at 18 percent. |
+| 010	| 4	| Transfer of goods, services and property rights	| РеалТов18\ СумНал	| VAT amount of outgoing customer invoices with VAT at 18 percent.|
+| 020	| 3	| Transfer of goods, services and property rights	| РеалТов10\ НалБаза	| Tax base of outgoing customer invoices with VAT at 10 percent.|
+| 020	| 4	| Transfer of goods, services and property rights	| РеалТов10\ СумНал	| VAT amount of outgoing customer invoices with VAT at 10 percent.|
+| 070	| 3	| Prepayments or partial payments received from customers for future shipments	| ОплПредПост\ НалБаза	| Tax base of factures for prepayments received from customers for future shipments.|
+| 070	| 4	| Prepayments or partial payments received from customers for future shipments	| ОплПредПост\ СумНал	| VAT amount of factures for prepayments received from customers for future shipments| 
+| 080	| 4	| Tax amounts that were accepted for deduction, which are subject to restoration, total	| СумНалВосст\ СумНалВс	| The amount of restored VAT based on the following outgoing VAT processing data: -- Incoming factures related to nontaxable shipments for the current reporting period. - Outgoing factures on prepayments made to vendors. - Fixed assets used in nontaxable operations. |
+| 090	| 4	| Tax amounts that were accepted for deduction and which are subject to restoration, for prepayments to vendors	| СумНалВосст\ СумНал170.3.3	| The amount of restored VAT based on outgoing factures on prepayments made to vendors. The VAT restoration occurs in the current reporting period| 
+| 100	| 4	| Tax amounts that were accepted for deduction and which are subject to restoration for operations subject to 0% VAT rate |  СумНалВосст\ СумНалОперСт0 | 	The amount of restored VAT for all export factures during the current reporting period|
+| **VAT receivable / deductible** |
+| 120	| 3	| Tax amount accepted during acquisition of goods, services, and property rights that are subject to tax deduction |  НалПредНППриоб	| The amount of incoming VAT subject to reimbursement of factures on purchase invoices. The purchases include goods, services, and property rights that are subject to tax deduction. |
+| 130	| 3	| Tax amounts accepted when prepayments are made to vendors for future acquisitions that are subject to tax deduction |	НалПредНППок	| The amount of incoming VAT subject to reimbursement of factures on prepayments made to vendors.|
+| 150	| 3	| Tax amount that was accepted for deduction when goods were imported for internal consumption |	НалУплТамож	| The VAT amount of factures of GTD and KTS types when goods are imported from territories other than Belarus.|
+| 160	| 3	| Tax amount that was accepted for deduction when goods were imported from Belarus	| НалУплНОТовТС	| The VAT amount of factures with types GTD (Custom declaration), and KTS (Customs values correction) when goods are imported from Belarus.|
+| 170	| 3	| Tax amount that was accepted for deduction after delivery of goods to customers	НалИсчПрод	The amount of incoming VAT of factures on prepayments received from customers for future shipments. The amount is subject to refund after goods are delivered or services are rendered|
+| 180	| 3	| Tax amount that was accepted for deduction for a buyer-tax agent	| НалУплПокНА	| The VAT amount of factures on tax agent transactions with the Facture source = Tax correction|
+
+In Section 3 you can also get amounts of Financial report which is set up for VAT declaration. 
+You should set up Financial report and financial report cells to calculate required cells values. You can find more details in Financial reporting (Russia) article.
+
+You should define the following names of Financial report cells so that the calculated amounts are automatically exported to VAT declaration format 5.05:
+
+
+
+
 
