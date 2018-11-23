@@ -35,17 +35,18 @@ To start working with VAT declaration, you should do the following:
 1.	Download ER configurations from LCS Shared asset library
 You need to download the latest version of ER configuration VAT declaration format.
 
-For example, to generate VAT declaration for reporting period 2018 year, download the latest versions of the following configurations:
+For example, to generate VAT declaration for reporting period 2018 year, download the latest versions of the following configurations  
 
-   VAT declaration model (RU)
-       VAT declaration model mapping (RU)
-       VAT declaration format 5.05
+  - VAT declaration model (RU)
+     - VAT declaration model mapping (RU)
+     - VAT declaration format 5.05
 
 Fix downloading instructions are here:
 https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs 
 
-2.	Optionally set up **Financial report** for VAT declaration and calculation rules for **Financial report cells**. Set it up if you are going to use Financial reports for generating data for some cells in Chapter 3 of VAT declaration based on financial reports cells setup.
-You can find more details about how to set up Financial reports in Financial reporting (Russia) article 
+2.	Optionally set up **Financial report** for VAT declaration and calculation rules for **Financial report cells**. Set it up if you are going to use Financial reports for generating data for some cells in Section 3 of VAT declaration based on financial reports cells setup.
+You can find more details about how to set up Financial reports in (Financial reporting (Russia) article https://docs.microsoft.com/ru-ru/dynamics365/unified-operations/financials/localizations/rus-financial-reports
+
 
 3.	For the first use, optionally Upload Data management package settings to work with Russian VAT declaration
 
@@ -55,8 +56,8 @@ You can find more details about how to set up Financial reports in Financial rep
    3)	In the **Data management** workspace of Dynamics 365 for Finance and operations, click **Import**
    4)	Fill in **Job details** group of fields:
   
-      a.	In the field **Name** enter the job name
-      b.	In the **Data source format** field, select value “Package”
+      1. In the field **Name** enter the job name
+      2. In the **Data source format** field, select value “Package”
       
    5)	In the **Upload data file**, click **Upload** and choose the RU VAT Declaration.zip file downloaded on the previous step.
    6)	When upload of Data entities finishes, click on button **Import**.
@@ -64,40 +65,41 @@ You can find more details about how to set up Financial reports in Financial rep
 
 ## Overview
 
-Russian VAT declaration version 5.05 contains the following information:
+Russian VAT declaration version 5.05 in XML format is configured in **Electronic reporting** module and contains the following information:
 
-Section 1 – Total VAT amount to be paid to budget, or to be reclaimed. This chapter contains cumulative amounts from chapters 3,4,5,6,7
+- *Section 1* – Total VAT amount to be paid to budget, or to be reclaimed. This section contains cumulative amounts from sections 3,4,5,6,7
 
-Section 2 – VAT amount to be paid to budget by Tax agent. 
+- *Section 2* – VAT amount to be paid to budget by Tax agent. 
 
-Section 3 – Calculation of VAT amounts to be paid to budget or to be reclaimed
+- *Section 3* – Calculation of VAT amounts to be paid to budget or to be reclaimed
 
-Application 1 to Section 3 – VAT amounts previously deducted and which are now subject to restoration and payment to budget for fixed assets used in non-taxable operations
+  - *Application 1 to Section 3* – VAT amounts previously deducted and which are now subject to restoration and payment to budget for fixed assets used in non-taxable operations
 
-Section 4 – Calculation of VAT amounts for export sales where tax rate 0% is confirmed during the period
+- *Section 4* – Calculation of VAT amounts for export sales where tax rate 0% is confirmed during the period
 
-Section 5 – Calculation of VAT deduction amounts of the reporting period for export sales where tax rate 0% was confirmed in previous periods.
+- *Section 5* – Calculation of VAT deduction amounts of the reporting period for export sales where tax rate 0% was confirmed in previous periods.
 
-Section 6 – Calculation of VAT amounts for export sales where tax rate 0% is should have been but was not confirmed during the period
+- *Section 6* – Calculation of VAT amounts for export sales where tax rate 0% is should have been but was not confirmed during the period
 
-Section 8 – Information from Purchase book
+- *Section 8* – Information from Purchase book
 
-Section 8.1 – Appendix to Chapter 8 – Information from additional sheets to purchase book
+  - *Section 8.1* – Appendix to Chapter 8 – Information from additional sheets to purchase book
 
-Section 9 – Information from Sales book
+- *Section 9* – Information from Sales book
 
-Section 9.1 – Appendix to Chapter 9 – Information from additional sheets to sales book
+  - *Section 9.1* – Appendix to Chapter 9 – Information from additional sheets to sales book
 
-Section 10 – Information from Issued factures journal regarding intermediary deals
+- *Section 10* – Information from Issued factures journal regarding intermediary deals
 
-Section 11 - Information from Received factures journal regarding intermediary deals
+- *Section 11* - Information from Received factures journal regarding intermediary deals
 
 You can find more details about how to generate Sales, purchase books and facture accounting journal in https://msdyneng.visualstudio.com/web/wi.aspx?pcguid=a1559462-dfa9-4e8b-8925-9299fe8a88ab&id=148853 article
 
 
 ## Section 2 VAT amount to be paid to budget by Tax agent.
 
-In the Section 2 of VAT declaration, VAT amounts calculated based on Tax agent transactions, are reflected. 
+Section 2 of VAT declaration contains VAT amounts which are calculated based on Tax agent transactions. 
+
 You can find more details about how to set up and register Tax agent transactions in Value-added tax (VAT) for tax agents (Russia) article https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-tax-agent.
 
 A separate section for each Tax agent is created which contains the following information:
@@ -111,7 +113,7 @@ A separate section for each Tax agent is created which contains the following in
 
 ## Section 3 Calculation of VAT amounts to be paid to budget or to be reclaimed
 
-In the Section 3 of VAT declaration, amounts of the registered factures, incoming VAT and restored VAT amounts from the sales and purchase books are reflected, as shown in the following table. These amounts are generated automatically based on registered documents.
+Section 3 of VAT declaration, contains amounts of the registered factures, incoming VAT and restored VAT amounts from the sales and purchase books, as shown in the following table. These amounts are generated automatically based on registered documents.
 
 | Line number	| Column number	| Name	| XML attribute, element name	| Description |
 |---|---|---|---|---|
@@ -134,9 +136,9 @@ In the Section 3 of VAT declaration, amounts of the registered factures, incomin
 | 180	| 3	| Tax amount that was accepted for deduction for a buyer-tax agent	| НалУплПокНА	| The VAT amount of factures on tax agent transactions with the Facture source = Tax correction|
 
 In Section 3 you can also get amounts of Financial report which is set up for VAT declaration. 
-You should set up Financial report and financial report cells to calculate required cells values. You can find more details in Financial reporting (Russia) article.
+You should set up Financial report and financial report cells to calculate required cells values. You can find more details in Financial reporting (Russia) article https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-financial-reports
 
-You should define the following names of Financial report cells so that the calculated amounts are automatically exported to VAT declaration format 5.05:
+You should define the following names of Financial report cells so that the calculated amounts are automatically exported to Section 3 of VAT declaration format 5.05:
 
 |**Name of cell** |	**Line-Column of Section 3** |
 | --- | --- |
@@ -183,11 +185,12 @@ You should define the following names of Financial report cells so that the calc
 | НалУплПокНА	| 180-3 *** |
 | НалВыч171.14	| 185-3 |
 
-   Note. Requisites marked with *** are calculated automatically based on registered documents as described above. 
-     If you set up Financial report cells calculation rules for them, the calculated amounts of Financial report will be added to automatically calculated amount. 
-     If you want to replace automatic calculation by Financial report cell calculation, review **How to customize Section 3 of VAT declaration** section of this article.
+Note. Requisites marked with *** are calculated automatically based on registered documents as described above. 
+  If you set up Financial report cells calculation rules for them, the calculated amounts of Financial report will be added to automatically calculated amounts. 
+  
+  If you want to replace automatic calculation by Financial report cell calculation, review **How to customize Section 3 of VAT declaration** section of this article.
 
-   Tip. You can download demo setup of Financial report for VAT declaration from Data package RU VAT declaration demo setup of LCS Shared asset library.
+Tip. You can download demo setup of Financial report for VAT declaration from Data package **RU VAT declaration demo setup** of LCS Shared asset library.
 
 
 ### How to customize Section 3 of VAT declaration
@@ -353,8 +356,5 @@ In example above, the following data will be present in Section 6 of VAT declara
 | VAT amount deductible from the purchase of items used in not confirmed export | 040 | 9 000 |
 
 
-Links:
+
 How to start working with VAT declaration https://support.microsoft.com/en-us/help/4477332/rus-russia-vat-declaration-in-electronic-format?preview
-
-
-
