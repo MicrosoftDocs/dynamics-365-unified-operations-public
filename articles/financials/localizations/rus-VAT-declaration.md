@@ -132,7 +132,7 @@ Section 3 of VAT declaration, contains amounts of the registered factures, incom
 | 130	| 3	| Tax amounts accepted when prepayments are made to vendors for future acquisitions that are subject to tax deduction |	НалПредНППок	| The amount of incoming VAT subject to reimbursement of factures on prepayments made to vendors.|
 | 150	| 3	| Tax amount that was accepted for deduction when goods were imported for internal consumption |	НалУплТамож	| The VAT amount of factures of GTD and KTS types when goods are imported from territories other than Belarus.|
 | 160	| 3	| Tax amount that was accepted for deduction when goods were imported from Belarus	| НалУплНОТовТС	| The VAT amount of factures with types GTD (Custom declaration), and KTS (Customs values correction) when goods are imported from Belarus.|
-| 170	| 3	| Tax amount that was accepted for deduction after delivery of goods to customers	НалИсчПрод	The amount of incoming VAT of factures on prepayments received from customers for future shipments. The amount is subject to refund after goods are delivered or services are rendered|
+| 170	| 3	| Tax amount that was accepted for deduction after delivery of goods to customers	| НалИсчПрод	| The amount of incoming VAT of factures on prepayments received from customers for future shipments. The amount is subject to refund after goods are delivered or services are rendered|
 | 180	| 3	| Tax amount that was accepted for deduction for a buyer-tax agent	| НалУплПокНА	| The VAT amount of factures on tax agent transactions with the Facture source = Tax correction|
 
 In Section 3 you can also get amounts of Financial report which is set up for VAT declaration. 
