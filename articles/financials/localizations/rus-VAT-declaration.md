@@ -296,9 +296,8 @@ Corrections of amounts for goods return:
 
 In example above, the following data will be present in Section 4 of VAT declaration for III quarter 2018:
 
-
 | Requisite | Line | Value |
-|----|-----|
+|----|----|-----|
 | VAT operation code | 010 | 1011410 (as per the user setup for respective Sales tax code) |
 | Tax base | 020| 27 000 |
 | VAT amount deductible from the purchase of items used in export confirmed at 0% rate | 030 | 3 600 |
@@ -346,9 +345,8 @@ Corrections of amounts for goods return:
 
 In example above, the following data will be present in Section 6 of VAT declaration for III quarter 2018:
 
-
 | Requisite | Line | Value |
-|----|-----|
+|----|----|-----|
 | VAT operation code | 010 | 1011410 (as per the user setup for respective Sales tax code) |
 | Tax base | 020 | 108 000 |
 | VAT amount payable calculated from the tax base for not confirmed export | 030 | 19 440 |
