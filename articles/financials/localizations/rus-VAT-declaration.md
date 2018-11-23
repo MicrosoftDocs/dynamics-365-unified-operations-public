@@ -49,19 +49,16 @@ You can find more details about how to set up Financial reports in (Financial re
 
 
 3.	For the first use, optionally Upload Data management package settings to work with Russian VAT declaration
-
-
-   1)	In the LCS Shared asset library https://lcs.dynamics.com/V2, click on **Shared asset library** tile.
-   2)	Select asset type **Data package**. Download package with name “RU VAT Declaration demo setup”. As result, file RU VAT  Declaration.zip will be downloaded.
-   3)	In the **Data management** workspace of Dynamics 365 for Finance and operations, click **Import**
-   4)	Fill in **Job details** group of fields:
-  
-      1. In the field **Name** enter the job name
-      2. In the **Data source format** field, select value “Package”
+  1. 	In the LCS Shared asset library https://lcs.dynamics.com/V2, click on **Shared asset library** tile.
+  2. Select asset type **Data package**. Download package with name “RU VAT Declaration demo setup”. As result, file RU VAT  Declaration.zip will be downloaded.
+  3. In the **Data management** workspace of Dynamics 365 for Finance and operations, click **Import**
+  4. Fill in **Job details** group of fields
+     1. In the field **Name** enter the job name
+     2. In the **Data source format** field, select value “Package”
       
-   5)	In the **Upload data file**, click **Upload** and choose the RU VAT Declaration.zip file downloaded on the previous step.
-   6)	When upload of Data entities finishes, click on button **Import**.
-   7)	Validate the imported Financial report at **General ledger > Financial reports setup > Financial reports**
+  5. In the **Upload data file**, click **Upload** and choose the RU VAT Declaration.zip file downloaded on the previous step.
+  6. When upload of Data entities finishes, click on button **Import**.
+  7. Validate the imported Financial report at **General ledger > Financial reports setup > Financial reports**
 
 ## Overview
 
