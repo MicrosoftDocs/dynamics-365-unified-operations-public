@@ -67,17 +67,29 @@ You can find more details about how to set up Financial reports in Financial rep
 Russian VAT declaration version 5.05 contains the following information:
 
 Section 1 – Total VAT amount to be paid to budget, or to be reclaimed. This chapter contains cumulative amounts from chapters 3,4,5,6,7
+
 Section 2 – VAT amount to be paid to budget by Tax agent. 
+
 Section 3 – Calculation of VAT amounts to be paid to budget or to be reclaimed
+
 Application 1 to Section 3 – VAT amounts previously deducted and which are now subject to restoration and payment to budget for fixed assets used in non-taxable operations
+
 Section 4 – Calculation of VAT amounts for export sales where tax rate 0% is confirmed during the period
+
 Section 5 – Calculation of VAT deduction amounts of the reporting period for export sales where tax rate 0% was confirmed in previous periods.
+
 Section 6 – Calculation of VAT amounts for export sales where tax rate 0% is should have been but was not confirmed during the period
+
 Section 8 – Information from Purchase book
+
 Section 8.1 – Appendix to Chapter 8 – Information from additional sheets to purchase book
+
 Section 9 – Information from Sales book
+
 Section 9.1 – Appendix to Chapter 9 – Information from additional sheets to sales book
+
 Section 10 – Information from Issued factures journal regarding intermediary deals
+
 Section 11 - Information from Received factures journal regarding intermediary deals
 
 You can find more details about how to generate Sales, purchase books and facture accounting journal in https://msdyneng.visualstudio.com/web/wi.aspx?pcguid=a1559462-dfa9-4e8b-8925-9299fe8a88ab&id=148853 article
