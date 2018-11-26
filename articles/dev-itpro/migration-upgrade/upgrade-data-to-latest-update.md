@@ -105,6 +105,7 @@ To obtain the latest data upgrade deployable package for a target environment th
     - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. Select the package that corresponds to the release you are upgrading to. 
     - If you're upgrading from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**.
     - If you're upgrading from a previous release of Finance and Operations to release 8.0 (April 2018), the package names starts with **DataUpgrade-8-0**.
+    - If you're upgrading from a previous release of Finance and Operations to release 8.1 (October 2018), the package names starts with **DataUpgrade-8-1**.
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.
