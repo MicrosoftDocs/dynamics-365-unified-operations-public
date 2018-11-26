@@ -58,3 +58,6 @@ During the tax settlement process, the system will generate offset tax transacti
 
 ## Extensibility enhancements
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.1](../../dev-itpro/extensibility/extensibility-changes-811.md) 
+
+## VAT declaration for Russia
+In this release, you can review the ER configurations for generating VAT declaration for Russia in electronic format. For detailed information, see [RUS/Russia VAT Declaration in electronic format](https://support.microsoft.com/en-us/help/4477332/rusrussiavatdeclarationinelectronicformat)
