@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Italy
+ms.search.region: Poland
 ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-2-1
