@@ -44,25 +44,25 @@ This topic describes features that are either new or changed in Core HR.
 
 A change has been made for an issue when attempting to edit or create a note in the case log of Case Management.
 
-### Misspelled word in the analytics tab of compensation workspace 
+### Misspelled word on the analytics tab in the compensation workspace 
 
-A change has been made to correct the spelling of Ethnic Origin in the compensation analytics chart of the compensation workspace.
+A change has been made to correct the spelling of 'Ethnic Origin' in the compensation analytics chart in the compensation workspace.
 
-### Employee self-service worspace not diplaying when user isn't assigned to a worker 
+### Employee self-service workspace not displaying when a user isn't assigned to a worker 
 
-A change has been made for when the **Employee self-service** workspace is selected as the initial page on startup for a user who is not assigned to a worker. In this situation the default dashboard will be displayed.
+A change has been made when the **Employee self-service** workspace is selected as the initial page on startup for a user who is not assigned to a worker. In this situation, the default dashboard will be displayed.
 
-### Leave and Absence Error: Object reference not set to an instance of an object
+### Leave and Absence error: Object reference not set to an instance of an object
 
 Changes have been made to Leave and Absence to correct this error after approving leave and absence records in the **Work items assigned to me** list.
 
 ### Unable to recall an image workflow
 
-Now, after recalling an image workflow, the workflow will be set to "cancelled" and the existing request can be deleted in the employee self-service workspace.
+After recalling an image workflow, the workflow will be set to "cancelled" and the existing request can be deleted in the employee self-service workspace.
 
-### Rehired employees or contractors after termination show up multiple times in exited section
+### Rehired employees or contractors show up multiple times after termination 
 
-With this update, terminated employees that are rehired will only display once in the list. 
+With this update, terminated employees that are rehired will only display one time in the exited list. 
 
 ## Known issue
 
