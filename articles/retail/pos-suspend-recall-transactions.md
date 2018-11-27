@@ -37,7 +37,7 @@ POS users can suspend an in-progress transaction and resume it at a later time o
 ## Configurating supsend/resume
 
 ### POS Operations
-Suspend and resume scenarios are enabled in POS by using two [POS operations](../pos-operations.md), which can be assigned to [button grids](../pos-screen-layouts.md) on the transaction screen or welcome screen.
+Suspend and resume scenarios are enabled in POS by using two [POS operations](pos-operations.md), which can be assigned to [button grids](pos-screen-layouts.md) on the transaction screen or welcome screen.
 
 - 503: Suspend transaction
 - 504: Recall transaction
