@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-11-27
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent Core HR (November 27, 2018)"
+# What's new or changed in Dynamics 365 for Talent Core HR (November 27, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -50,17 +50,17 @@ A change has been made to correct the spelling of Ethnic Origin in the compensat
 
 ### Employee self-service worspace not diplaying when user isn't assigned to a worker 
 
-A change has been made to when the employee self-service workspace is selected as the initial Page on startup for a user who is not assigned to a worker. In this situation the default dashboard will be displayed.
+A change has been made for when the **Employee self-service** workspace is selected as the initial page on startup for a user who is not assigned to a worker. In this situation the default dashboard will be displayed.
 
 ### Leave and Absence Error: Object reference not set to an instance of an object
 
-Changes have been made to leave and absence to correct this error after approving leave and absence records in the work items assigned to me list.
+Changes have been made to Leave and Absence to correct this error after approving leave and absence records in the **Work items assigned to me** list.
 
 ### Unable to recall an image workflow
 
-Now, after recalling an image workflow, the workflow will be set to cancelled and the existing request can be deleted in the employee self-service workspace.
+Now, after recalling an image workflow, the workflow will be set to "cancelled" and the existing request can be deleted in the employee self-service workspace.
 
-### Rehired employees or contractors after termination,show up multiple cards in exited section
+### Rehired employees or contractors after termination show up multiple times in exited section
 
 With this update, terminated employees that are rehired will only display once in the list. 
 
