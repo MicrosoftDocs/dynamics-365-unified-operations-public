@@ -48,7 +48,7 @@ The POS can be confiugred to generate a printed slip when a transaction is suspe
 To enable this, you must add the **Suspended transaction** receipt format to the store's **Receipt profile**.  The format itself can be designed to include or exclude details about the transaction, including a barcode to enable scanning.
 
 ### Receipt numbering
-As with other POS transaction types that generates a printed receipt, the number sequence can be defined in the **Receipt numbering** section of the store's **Functionality Profile**. 
+As with other POS transaction types that generates a printed receipt, the number sequence can be defined in the **Receipt numbering** section of the store's **Functionality profile**. 
 
 ### Void when closing shift
 When enabled this option will require that users either complete or void any suspended transactions before closing their shift. During the close shift operation, the POS will prompt the user to either view or void any outstanding suspended transactions. 
