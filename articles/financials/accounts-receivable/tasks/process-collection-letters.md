@@ -72,7 +72,12 @@ This procedure shows how to create, print, and post collection letters. This tas
 6. In the Printed field, select an option.
 
 # Control collection letters at the customer level
-When collection letters are processed, each overdue transaction is reviewed and assigned to a collection letter. It is possible for collection letters to be sent out for different transactions depending on the grace periods used for each collection letter in the collection letter sequence. You can set up collection letters at the customer level so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored on the customer. The single collection letter will contain all transactions that are overdue for the customer and the next collection letter will not be sent until the number of grace days has passed for the next collection letter in the sequence.
+You can now choose to set up collection letters at the customer level so that the collection letter code for each transaction is 
+tracked but the collection letter processing will be based on a single collection letter level that is stored on the customer. 
+The single collection letter will contain all transactions that are overdue for the customer. Since the grace days are 
+now tracked on the customer level, the next collection letter will not be sent until the number of grace days has 
+passed for the next collection letter in the sequence, even though transactions become overdue after 
+the last collection letter was sent. This option reduces the number of collection letters you will send per customer. 
 
 ## Set up the customer to control collection letters at the customer level
 1.  Go to **Credit and collections > Setup > Accounts receivable parameters** and click on the Collections tab. 
@@ -80,7 +85,7 @@ When collection letters are processed, each overdue transaction is reviewed and 
 3.  Go to **Credit and collections > Collection letter > Review and process collection letters**. Only one collection letter will be generated for a customer with all the overdue transactions.
 
 # Ignore payments and credit memos when calculating the collection letter code
-You can control how payments and credit memos control the collection letter code. In some cases, you may still have old credit memos that will make it appear that the customer has old transactions. 
+If you include payments and credit memos in the transactions that will be included in the collection letters, you may have payments or credit memos that will trigger a collection letter. You can control how payments and credit memos control the collection letter code by changing the value of the **Ignore payments and credit memos when calculating the collection letter code** parameter. 
 
 To ignore payments and credit memos when calculating the collection letter code:
 1) Go to **Credit and collections > Setup > Accounts receivable parameters** and click on the Collections tab. 
