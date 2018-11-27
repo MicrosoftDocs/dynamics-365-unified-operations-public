@@ -56,6 +56,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | ShowChangeDueClientRequestHandler          | Executed when the change due dialog box is shown at the end of transaction.                             |
 | GetReceiptEmailAddressClientRequestHandler | Executed when you get a receipt email address.                                                 |
 | DepositOverrideOperationRequestHandler     | Executed when you override a deposit.                                                          |
+| GetShippingChargeClientRequestHandler      | Executed when get shipping charge workflow initiated during customer order flow.                                                             |
 
 **Payment extension handler:**
 
@@ -87,6 +88,10 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | PaymentTerminalCancelOperationRequestHandler                  | Executed when a card payment is cancelled using a payment terminal/device.                                                                                          |
 | PaymentTerminalEndTransactionRequestHandler                   | Executed when a card payment is ended using a payment terminal/device.                                                                                              |
 | CashDrawerOpenRequestHandler                                  | Executed when a cash drawer open request is initiated by POS.                                                                                                     |
+| PaymentTerminalActivateGiftCardPeripheralRequestHandler       | Executed when activate gift card request is initiated by POS.                                                                                                     |
+| PaymentTerminalAddBalanceToGiftCardPeripheralRequestHandler   | Executed when add balance to gift card request is initiated by POS.                                                                                                     |
+ 
+ 
 
 **Scan request handler**
 
@@ -99,6 +104,8 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | Request name                         | Description                                                          |
 |--------------------------------------|----------------------------------------------------------------------|
 | PrintPackingSlipClientRequestHandler | Executed when you print a packing slip from the store fulfillment view. |
+| MarkAsPickedServiceRequestHandler    | Executed when you mark a sales line as picked from the store fulfillment view. |
+
 
 **Store operations request handler**
 
@@ -126,6 +133,8 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | Request name                                           | Description                                               |
 |--------------------------------------------------------|-----------------------------------------------------------|
 | GetGiftReceiptsClientRequestHandler		         | Executed when you print a gift receipt in POS.          |
+| SelectCustomerOrderTypeClientRequestHandler		 | Executed when we show a dialog with options to choose between Customer order or quote.          |
+
 
 
 **How to override a handler in POS**
