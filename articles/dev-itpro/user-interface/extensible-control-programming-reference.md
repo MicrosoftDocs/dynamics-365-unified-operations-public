@@ -70,7 +70,7 @@ You must supply the following arguments:
 
 The following example shows a typical class and attribute declaration for a control named "MyControl".
 
-    [FormControlAttribute('MyControl', '/resources/html/MyControl', classstr(MyControlBuild))]
+    [FormControlAttribute('MyControl', '/resources/html/MyControl', classStr(MyControlBuild))]
     class MyControl extends FormTemplateControl
 
 ## Runtime: FormCommandAttribute
@@ -111,13 +111,13 @@ The following example shows a typical property declaration. Most properties shar
 
 ```
 [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-private void parmText(str value = textProperty.parmValue())
+private str parmText(str _value = textProperty.parmValue())
 {
-        if(!prmisDefault(value))
-        {
-                textProperty.setValueOrBinding(value);
-        }
-        return textProperty.parmValue();
+    if(!prmIsDefault(_value))
+    {
+        textProperty.setValueOrBinding(_value);
+    }
+    return textProperty.parmValue();
 }
 ```
 
@@ -134,40 +134,43 @@ private void parmText(str value = textProperty.parmValue())
 The following example shows a **FormProperty** being used in a typical controls’ X++ runtime class.
 
 ```
-[FormControlAttribute("MyControl", "/resources/html/MyControl", classstr(BuildMyControl))]
+[FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
 class MyControl extends FormTemplateControl
 {             
-        FormProperty textProperty;          
+    FormProperty textProperty;          
 
-        public void new(FormBuildControl _build, FormRun _formRun)
-        {
-                super(_build, _formRun);
-                this.setTemplateId("MyControl");
-                this.setResourceBundleName("/resources/html/MyControl");
-                textProperty = this.addProperty(
-                methodStr(MyControl, parmText), Types::String);
-        }
+    public void new(FormBuildControl _build, FormRun _formRun)
+    {
+        super(_build, _formRun);
+        
+        this.setTemplateId("MyControl");
+        this.setResourceBundleName("/resources/html/MyControl");
+        textProperty = this.addProperty(
+        methodStr(MyControl, parmText), Types::String);
+    }
 
-        public void applyBuild()
-        {
-                BuildMyControl build;
-                super();
-                build = this.build();
-                if(build)
-                {
-                        this.parmText(build.Text());
-                }
-        }
+    public void applyBuild()
+    {
+        BuildMyControl build;
+        
+        super();
 
-        [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-        private void parmText(str value = textProperty.parmValue())
+        build = this.build();
+        if(build)
         {
-                if(!prmisDefault(value))
-                {
-                        textProperty.setValueOrBinding(value);
-                }
-                return textProperty.parmValue();
+            this.parmText(build.Text());
         }
+    }
+
+    [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
+    private str parmText(str _value = textProperty.parmValue())
+    {
+        if(!prmIsDefault(_value))
+        {
+            textProperty.setValueOrBinding(_value);
+        }
+        return textProperty.parmValue();
+    }
 }
 ```
 
@@ -180,40 +183,43 @@ The **applyBuild** method on a control’s X++ runtime class is called as a part
 ## Runtime: FormBindingUtil::initbinding method
 The **FormBindingUtil** is an API provided by the control framework. It is used to bind FormProperties to data fields and data methods on a data source. The following example binds the data field with name "Value" on the data source with name "DataSource1" to the textProperty FormProperty of the runtime class.
 
-    [FormControlAttribute("MyControl", "/resources/html/MyControl", classstr(BuildMyControl))]
+    [FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
     class MyControl extends FormTemplateControl
     {
-            FormProperty textProperty;
-            public void new(FormBuildControl _build, FormRun _formRun)
-            {
-                    super(_build, _formRun);
-                    this.setTemplateId("MyControl");
-                    this.setResourceBundleName("/resources/html/MyControl");
-                    textProperty = this.addProperty(
-                    methodStr(MyControl, parmText), Types::String);
-            }
+        FormProperty textProperty;
 
-            public void applyBuild()
-            {
-                    BuildMyControl build;
-                    super();
-                    build = this.build();
-                    if(build)
-                    {
-                            this.parmText(FormBindingUtil::initBinding(
-                            "DataSource1", "Value", this.formRun()));
-                    }
-            }
+        public void new(FormBuildControl _build, FormRun _formRun)
+        {
+            super(_build, _formRun);
+            this.setTemplateId("MyControl");
+            this.setResourceBundleName("/resources/html/MyControl");
+            textProperty = this.addProperty(
+            methodStr(MyControl, parmText), Types::String);
+        }
 
-            [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-            private void parmText(str value = textProperty.parmValue())
+        public void applyBuild()
+        {
+            BuildMyControl build;
+            
+            super();
+           
+            build = this.build();
+            if(build)
             {
-                    if(!prmisDefault(value))
-                    {
-                            textProperty.setValueOrBinding(value);
-                    }
-                    return textProperty.parmValue();
+                this.parmText(FormBindingUtil::initBinding(
+                "DataSource1", "Value", this.formRun()));
             }
+        }
+
+        [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
+        private str parmText(str _value = textProperty.parmValue())
+        {
+            if(!prmIsDefault(_value))
+            {
+                textProperty.setValueOrBinding(_value);
+            }
+            return textProperty.parmValue();
+        }
     }
 
 ## Design time: The X++ build class
@@ -234,17 +240,17 @@ Placing this attribute on a method in the design time class will result in a new
     [FormDesignControlAttribute("MyControl")]
     class MyControlBuild extends FormBuildControl
     {
-            str text; 
+        str text; 
 
-            [FormDesignPropertyAttribute("Text", "Data")]
-            public str Text(str value = text)
+        [FormDesignPropertyAttribute("Text", "Data")]
+        public str Text(str _value = text)
+        {
+            if(!prmIsDefault(_value))
             {
-                    if(!prmisDefault(value))
-                    {
-                            text = value;
-                    }
-                    return text;
+                text = _value;
             }
+            return text;
+        }
     }
 
 ## Design time: FormDesignProperty** **Attribute
@@ -276,56 +282,58 @@ The following example shows standard properties used to allow a Form developer t
     [FormDesignControlAttribute("MyControl")]
     class MyControlBuild extends FormBuildControl
     {
-            str dataSource; 
-            str dataField;
-            str dataMethod;
+        str dataSource; 
+        str dataField;
+        str dataMethod;
 
-            [FormDesignPropertyAttribute("Data source", "Data"),
-            FormDesignPropertyDataSourceAttribute]
-            public str DataSource(str value = dataSource)
+        [FormDesignPropertyAttribute("Data source", "Data"),
+         FormDesignPropertyDataSourceAttribute]
+        public str DataSource(str _value = dataSource)
+        {
+            if(!prmIsDefault(_value))
             {
-                    if(!prmisDefault(value))
-                    {
-                            dataSource = value;
-                    }
-                    return dataSource;
+                dataSource = _value;
             }
+            return dataSource;
+        }
 
-            [FormDesignPropertyAttribute("Data Field", "Data"),
-            FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
-            public str DataField(str value = dataField)
+        [FormDesignPropertyAttribute("Data Field", "Data"),
+         FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
+        public str DataField(str _value = dataField)
+        {
+            if(!prmIsDefault(dataField))
             {
-                    if(!prmisDefault(dataField))
-                    {
-                            dataField = value;
-                    }
-                    return dataField;
+                dataField = _value;
             }
+            return dataField;
+        }
 
-            [FormDesignPropertyAttribute("Data Method", "Data"),
-            FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
-            public str DataMethod(str value = dataMethod)
+        [FormDesignPropertyAttribute("Data Method", "Data"),
+         FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
+        public str DataMethod(str _value = dataMethod)
+        {
+            if(!prmIsDefault(dataMethod))
             {
-                    if(!prmisDefault(dataMethod))
-                    {
-                            dataMethod = value;
-                    }
-                    return dataMethod;
+                dataMethod = _value;
             }
+            return dataMethod;
+        }
     }
 
 A control with a design time class like the one above can then bind to the specified data source and data field inside of the applyBuild method, as show below.
 
     public void applyBuild()
     {
-            BuildMyControl build;
-            super();
-            build = this.build();
-            if(build)
-            {
-                    this.parmText(FormBindingUtil::initBinding(
-                    build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
-            }
+        BuildMyControl build;
+
+        super();
+
+        build = this.build();
+        if(build)
+        {
+            this.parmText(FormBindingUtil::initBinding(
+            build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
+        }
     }
 
 If you supply both a data field and data method to FormBindingUtil::initBinding, the data field binding will override the data method binding.
@@ -404,8 +412,8 @@ The following example shows an alert message “Hello” when the element is cli
 <script>
 ... // boilerplate code
 self.ElementClicked = function (event) {
-/* handle the click event */
-alert('Hello');
+    /* handle the click event */
+    alert('Hello');
 };
 ...
 </script>
@@ -421,16 +429,16 @@ The following example prevents the click event on child elements from bubbling u
 <script>
 ... // boilerplate code
 self.ParentElementClicked = function (event) {
-        /* handle the click event */
-        alert('Hi');
+    /* handle the click event */
+    alert('Hi');
 };
 
 self.ElementClicked = function (event) {
-        /* prevents the event form bubbling up to parent elements*/
-        event.stopPropagation();
+    /* prevents the event form bubbling up to parent elements*/
+    event.stopPropagation();
 
-        /* handle the click event */
-        alert('Hello');
+    /* handle the click event */
+    alert('Hello');
 };
 
 ...
@@ -561,18 +569,18 @@ The following examples shows a nested **foreach** binding. This example showcase
 <script>
 ... // boilerplate code
 self.colors = [
-{
+    {
         Name: 'Red',
         Variants: ['Maroon','Burgundy','Sunrise']
-},
-{
+    },
+    {
         Name: 'Green',
         Variants: ['Sage','Forest','Lime']
-},
-{
+    },
+    {
         Name: 'Blue',
         Variants: ['Navy','Sky','Ice']
-}
+    }
 ];
 ...
 </script>
@@ -836,16 +844,14 @@ The following example shows how a function can automatically subscribe to observ
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
 $dyn.observe(
-function ()
-{
+    function () {
         // Joann + " " + Gordon
-            return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
-},
-function (value)
-{
-            // "Joanne Gordon"
-            console.log(value);
-}
+        return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
+    },
+    function (value) {
+        // "Joanne Gordon"
+        console.log(value);
+    }
 );
 ```
 
@@ -854,18 +860,16 @@ The following example performs similarly to the previous example. However, this 
 ```
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
-self.myComp = $dyn.computed(function ()
-{
-        // Joanne + " " + Gordon
-        return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
+self.myComp = $dyn.computed(function () {
+    // Joanne + " " + Gordon
+    return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
 });
 $dyn.observe(
-self.myComp,
-function (value)
-{
+    self.myComp,
+    function (value) {
         // "Joanne Gordon"
         console.log(value)
-);
+    );
 },
 {FirstNameLabel: label1, LastNameLabel: label2}
 );
@@ -1005,7 +1009,7 @@ The callback function to call when the supplied Function has returned. The callb
 ```
 self.Name = "Joanne M Gordon";
 var printName = function () {
-        console.log(this.Name);
+    console.log(this.Name);
 };
 $dyn.callFunction(printName, self);
 ```
@@ -1014,11 +1018,11 @@ The following example calls the **getWholeName** function.
 
 ```
 var getWholeName = function (first, middle, last) {
-        var wholeName = first + " " + middle + " " + last;
-        return wholeName;
+    var wholeName = first + " " + middle + " " + last;
+    return wholeName;
 };
 var printName = function (wholeName) {
-console.log("Your name is: " + wholeName);
+    console.log("Your name is: " + wholeName);
 };
 var firstName = "Joanne";
 var middleName = "M";
@@ -1077,8 +1081,8 @@ The label string in the current culture, if the Identifier is found. Otherwise, 
 
 ```
 Globalize.addCultureInfo("en", {
-messages: {
-    "greeting": "Hello!"
+    messages: {
+        "greeting": "Hello!"
     },
 });
 console.log($dyn.label("greeting"));
@@ -1103,8 +1107,3 @@ For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible 
 
 ### Control Instantiation
 [![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
-
-
-
-
-
