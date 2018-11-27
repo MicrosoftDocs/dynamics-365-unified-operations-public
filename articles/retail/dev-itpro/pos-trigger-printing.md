@@ -52,7 +52,9 @@ The following table lists the available triggers and denotes whether they can be
 | PostLogOnTriggerTrigger   | Non-cancelable | Executed after the POS log on.                                                                                                       |
 | PostLogOffTrigger         | Non-cancelable | Executed after the POS log off.                                                                                                      | 
 | PreLockTerminalTrigger    | Cancelable     | Executed before the POS register lock.  |
-| PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   |     
+| PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
+| PostDeviceActivation      | Non-Cancelable | Executed after the POS activation.   | 
+
 
 ## Cash management triggers
 
