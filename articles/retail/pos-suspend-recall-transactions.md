@@ -67,9 +67,12 @@ A suspended transaction does not impact sales or inventory availability informat
 ### Resuming suspended transactions
 Suspendeded transactions can be recalled and resumed within the same store, by any user with suffiencient privileges and with a layout containing the **Recall transaction** operation.
 
-Transactions suspended while in offline mode, prior to going offline will not be available in the offline database.  Transactions suspended while offline, can be resumed on that register while offline, but will not be available after returning to offline mode.
-
 Suspeneded transactions can quickly and easily be recalled by scanning the barcode on the printed slip while viewing the list of transactions from the **Recall transaction** operation.
+
+#### Offline mode considerations #### 
+
+- Any transaction which is suspended in online-mode cannot be resumed in offline-mode as the data is not synced to the offline database.
+- If the user suspended a transaction while in offline-mode they can recall those transactions in offline mode as long as POS is not switched back to online from the time the transaction was suspended. Once switched back to online the suspended transaction data is moved to the online database and is removed from the offline database. Therefore, these transactions can only be resumed in online mode. If the user switches back to offline they won't be able to resume those suspended transaction as they are already removed from the offline database.
 
 ### Voiding suspended transactions
 Suspended transactions can be voided either by recalling the transaction and then performing the **Void transaction** operation or by selecting the transaction from the **Recall transaction** list and choosing Void from the app bar.  Alternatively, the store can be configured to prompt users to void suspeneded transactions when closing their shift. 
