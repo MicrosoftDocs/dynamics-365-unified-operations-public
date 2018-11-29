@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -1017,8 +1017,8 @@ This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | With the change to a Web based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client, where the Job Card Device provides a production floor user interface that is optimize for touch and tablet form factors. |
-| **Replaced by another feature?**   | Yes. The Job Card Device, which is a native part of Dynamics AX 7.0                                                                           |
+| **Reason for deprecation/removal** | With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client. The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors. |
+| **Replaced by another feature?**   | Yes. The Job Card Device, which is a native part of Dynamics AX 7.0.                                                                           |
 | **Product areas affected**         | Production control                                                |
 | **Status**                         | Deprecated: A removal date from the Microsoft store has not yet been set for this feature.                                                |
 
