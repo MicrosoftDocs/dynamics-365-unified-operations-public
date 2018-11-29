@@ -1012,6 +1012,17 @@ Product builder was used to dynamically configure items from a sales order, purc
 | **Product areas affected**         | Product information management, Sales and marketing  |
 | **Status**                         | Removed as of Dynamics AX 7.0.      |
 
+### Production Floor app
+This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | With the change to a Web based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client, where the Job Card Device provides a production floor user interface that is optimize for touch and tablet form factors. |
+| **Replaced by another feature?**   | Yes. The Job Card Device, which is a native part of Dynamics AX 7.0                                                                           |
+| **Product areas affected**         | Production control                                                |
+| **Status**                         | Deprecated: A removal date from the Microsoft store has not yet been set for this feature.                                                |
+
+
 ### Rename product dimension
 
 This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements. Renaming included all the labels where the product dimension name was used.
