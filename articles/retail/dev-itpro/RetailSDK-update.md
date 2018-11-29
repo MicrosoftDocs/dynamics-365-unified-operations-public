@@ -117,24 +117,25 @@ If you are completing a code upgrade, the following Retail SDK components must b
 
 - **POS:** If you have any POS extensions, including the generated proxy, copy your POS extensions from *…\\RetailSDK\\POS\\Extensions* to the new Retail SDK POS extension folder, *RetailSDK\\POS\\Extensions*. After you copy the extensions,  update and merge the extension.json file inside the *POS\\Extensions* folder with the new POS extensions folder you copied.
 
-For example, if you copied the **CustomExtension** folder, then you would update the extension.json as shown below:
-```Typescript
+  For example, if you copied the **CustomExtension** folder, then you would update the extension.json as shown below:
+  ```Typescript
 
- {
- "extensionPackages": [
- {
-   "baseUrl": "SampleExtensions"
- },
- {
-  "baseUrl": "SampleExtensions2"
- },
- {
-  "baseUrl": "CustomExtension"
- }
-]
- }
-```
-You should also update the tsconfig.json with the custom extension package so that the POS can compile the changes during build.
+   {
+   "extensionPackages": [
+   {
+     "baseUrl": "SampleExtensions"
+   },
+   {
+    "baseUrl": "SampleExtensions2"
+   },
+   {
+    "baseUrl": "CustomExtension"
+   }
+  ]
+   }
+  ```
+ 
+ You should also update the tsconfig.json with the custom extension package so that the POS can compile the changes during build.
 
 - **Reference:** Copy all of your extension output assemblies, such as **Commerce runtime**, **Hardware station**, **proxy**, and any external assemblies, to the reference folder. Include any assemblies that you want included as part of your deployment and packaging.
 
