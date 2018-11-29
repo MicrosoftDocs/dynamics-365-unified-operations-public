@@ -49,3 +49,7 @@ For information about the bug fixes included in each of the updates that are par
 ## Platform update 22
 Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see 
 [What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)](whats-new-platform-update-22.md).
+
+## Catch weight
+[content to be included soon]
+
