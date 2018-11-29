@@ -32,14 +32,14 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Upcoming changes in the Retail SDK
 [!include [banner](../includes/banner.md)]
 
-Starting April 2019 Microsoft has planned a set of new features to simplify the development and servicing process for retail channel customization. To uptake some of these features, you might have to upgrade, recompile, or do some minor code changes in the extensions that you've built. No changes will be required in the extension logic files or manifest that you've created. However, you will have to move your extension files to the new templates, update the packaging model, and recompile Commerce runtime, proxy and Retail server extension to map to the new library reference model and integrated development environment (IDE).
+In the April 2019 release, a set of new features is planned to simplify the development and servicing process for retail channel customization. To uptake some of these features, you may need to upgrade, recompile, or do some minor code changes in the extensions that you've built. No changes will be required in the extension logic files or manifest that you've created. However, you will have to move your extension files to the new templates, update the packaging model, and recompile Commerce runtime, proxy, and Retail server extensions to map to the new library reference model and integrated development environment (IDE).
 
-Microsoft is publishing this topic before the new features are released, so that you can plan and be prepared to uptake them.
+Microsoft is publishing this topic before the new features are released, so that you can plan and prepare to uptake them.
 
 Here is the list of new features that are planned for enhancement of the Retail software development kit (SDK), and that will require some work on your side before you uptake them.
 
 ## Independent packaging model
-Microsoft is developing a new feature that is named the *independent packaging model*. This packaging model helps separate the extensions from the core and services independently. Microsoft plans eventually to support separate packages for extensions too. When there is independent software vendor (ISV) solutions and partner extensions, they can be packaged and serviced separately. ISV solutions and partner extensions no longer have to be combined. 
+Microsoft is developing a new feature that is named the *independent packaging model*. This packaging model helps separate the extensions from the core and services independently. Microsoft plans eventually to support separate packages for extensions too. If there are independent software vendor (ISV) solutions and partner extensions, they can be packaged and serviced separately. ISV solutions and partner extensions no longer have to be combined. 
 
 To enable Retail Modern POS to support this new packaging model, Microsoft is changing the point of sale (POS) framework so that it supports the Microsoft Windows optional package extension model. The way that extensions are developed won't change. Only the way that extensions are packaged and deployed will change. In the new model, all Modern POS extensions will be created as separate .appx files. Core POS will load those files as add-ins, and it will run under the core Modern POS app identity. Previously, core POS and extensions were packaged as one .appx file. Now, there will be .appx files for both core and extension add-ins, so that developers can independently service just your extension .appx files. The extensions that are developed will work for both Cloud POS and Modern POS. Although the template might differ, the code is shared between both apps.
 
@@ -52,7 +52,7 @@ Independent package model development is not supported in Windows server OS or L
 
 - Visual Studio 2017, version 15.1
 - Windows 10, version 1703
-- Windows 10, version 1703 SDK. 
+- Windows 10, version 1703 SDK
 
 ## Development tools
 Currently, the Retail SDK samples and other templates inside the Retail SDK work only with Microsoft Visual Studio 2015. To support some of the upcoming changes in the Retail SDK and the new independent packaging model, Microsoft is planning to upgrade from Visual Studio 2015 to either Microsoft Visual Studio 2017 or the latest version.
