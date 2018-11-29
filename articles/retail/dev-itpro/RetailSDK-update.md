@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: How to upgrade Retail channel extension to the latest Retail SDK
-description: This topic explains the process of upgrading the retail channel extension from earlier releases to the latest update of Retail SDK. 
+title: Upgrade the Retail channel extension to the latest Retail SDK
+description: This topic explains how to upgrade the retail channel extension from earlier releases to the latest update of the Retail SDK. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/28/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: kfendd
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 68673
@@ -30,64 +30,46 @@ ms.dyn365.ops.version: AX 7.3.5
 
 ---
 
-# How to upgrade Retail channel extension to the latest Retail SDK
+# Upgrade the Retail channel extension to the latest Retail SDK
 
 [!include [banner](../includes/banner.md)]
 
-**Retail SDK upgrade:**
+This topic provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, bu this topic doesn’t provide detailed instructions of every step in the process. This topic is applicable for Dynamics 365 for Retail and Dynamics 365 for Finance and Operations 7.3 version and higher.
+The following sections will walk through how to manually move your extension to the new Retail SDK, however you can do this using any source control system like VSTS or Git.
 
-This topic explains the process of upgrading from earlier releases to the latest update of Retail SDK. It describes the overall process and the supported scenarios but doesn’t provide detailed instructions of every step of the process and this topic is applicable for Dynamics 365 for Retail and Dynamics 365 for Finance and Operations 7.3 version and higher, we will walkthrough how to manually move your extension to the new Retail SDK, but you can do this using any source control system like VSTS or Git.
+## Update the Retail SDK
+When you update the Retail SDK by applying a new binary hotfix, a new **Update** folder is created inside the existing RetailSDK folder and a copy of the updated SDK is made. If you deploy a new environment, the new Retail SDK is located in the services volume of the VM or in the C drive of the downloadable VHD.
 
-Update Retail SDK:
-------------------
+### Retail SDK components
 
-When you update the Retail SDK by applying a new binary hotfix, we create a new **Update** folder inside the existing RetailSDK folder and copy the updated SDK. Or if you deploy a new environment you should be able to find the new RetailSDK in that VM in services volume or in C drive for downloadable VHD.
+The Retail SDK updates consist mainly of the following components:
 
-**Retail SDK components:**
+-   Assets: Configuration file changes related to extensions
+-   Build tools: Customization package and versioning settings
+-   Database: Extension DB scripts
+-   Documents: Instructions to run the samples
+-   Package: Deployment package
+-   Payment Externals: Payment packaging folders
+-   Payment: Payment sample code
+-   POS: Modern and Cloud POS App code and samples
+-   References: All binary reference and commerce analyzer proxy tool
+-   SampleExtensions: Extension sample projects
 
-Retail SDK updates consist mainly of the following components:
+## Upgrade scenarios
+Upgrade can be completed for one of the following scenarios:
 
--   Assets - Configuration files changes related to extensions.
+  - Update to a specific binary hotfix
+  - Upgrade your custom code
+  - Upgrade to the latest application release
 
--   Build tools – Customization package and versioning settings.
+The process for SDK upgrade varies between versions. With version 7.3 and higher, we sealed all of the Retail components and customizations must be completed only by using the extension points. This should result in an easier code upgrade experience. However, if you are upgrading from 7.0, 7.1, or 7.2 and if you have made inline changes, you must move the inline changes to extensions. This will require additional work.
 
--   Database – Extension DB scripts.
+The following tables provide some high-level information about on which version the code is sealed. If you are upgrading from an unsealed version to a sealed version, you should identify all of your customizations and move any inline customizations to extensions. To move the inline customizations, verify that you have allof the necessary extension points to do this. If you don't, submit an extensibility request. 
 
--   Documents – Instructions to run the samples.
+> [!NOTE]
+> You might have to rewrite some of the POS inline changes that were completed in 7.1 when you upgrade to version 7.3 or higher.
 
--   Package – Deployment package.
-
--   Payment Externals – Payment packaging folders.
-
--   Payment – Payment sample code.
-
--   POS – Modern and Cloud POS App code and samples.
-
--   References – All binary reference and commerce analyzer proxy tool.
-
--   SampleExtensions – Extension sample projects.
-
-**Introduction to the upgrade scenarios:**
-
-  - Update to a specific binary hotfix.
-  - Upgrade your custom code.
-  - Upgrade to the latest application release.
-
-The process for SDK upgrade varies between different version, starting form 7.3 and higher versions we sealed all the Retail components and customization must be done only using the extension points, so code upgrade should be easy. But if you are upgrading from 7.0 or 7.1 and if you have done inline changes then you must move the inline changes to extensions, this should require some additional work:
-
-Below tables provide some high-level info on which version the code is sealed, if you are upgrading from the unsealed version to sealed version then you should consider the below steps:
-
-  1.  First identify all your customizations.
-
-  2.  Move all your inline customizations to extensions.
-
-      a.  Validate if you all the necessary extension point to do this, if not raise a support request:
-
-        <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests>
-
-**Note:** Sometimes you need to rewrite some of the POS inline changes done in 7.1 when you want to upgrade to 7.3 or higher versions.
-
-| **Application version**                 | **CRT Sealed** | **HWS Sealed** | **POS Sealed** | **DB Sealed** | **Retail proxy Sealed** |
+| **Application version**                 | **CRT sealed** | **HWS sealed** | **POS sealed** | **DB sealed** | **Retail proxy sealed** |
 |-----------------------------------------|----------------|----------------|----------------|---------------|-------------------------|
 | Application release 8.1                 | Yes            | Yes            | Yes            | Yes           | Yes                     |
 | Application release 8.0                 | Yes            | Yes            | Yes            | Yes           | Yes                     |
@@ -96,47 +78,46 @@ Below tables provide some high-level info on which version the code is sealed, i
 | Release 1611 (application 7.1)          | Yes            | No             | No             | No            | No                      |
 | February 2016 release (Application 7.0) | No             | No             | No             | No            | No                      |
 
-**How to upgrade the retail channel extension from 7.3 to higher versions:**
+## Upgrade the Retail channel extension from 7.3 to a higher version
 
-For code upgrade you must Consider upgrading the below Retail SDK components (each of these components are folders inside Retail SDK):
+If you are completing a code upgrade, the following Retail SDK components must be upgraded. Each of these components are folders inside Retail SDK.
 
-**Note:** The code upgrade can be done using some source control/merge tool, we recommend using some source control tool for this process, so that you can keep track of the changes and revert if required. If you are not using any source control, please take the backup of the old and new retail SDK folder before your upgrade the code.
+> [!NOTE]
+> Code upgrade can be completed using a source control/merge tool. We recommend using a source control tool for this process so that you can track the changes and revert if required. If you are not using any source control, before you upgrade the code, take the backup of the old and new retail SDK folder.
 
-1.  **Assets:** If you have modified any of the below extension config files to include your custom assemblies then you must move those changes to the same config files in the new Asset folder.
+- **Assets:** If you have modified any of the following extension config files to include your custom assemblies, you must move those changes to the same config files in the new **Asset folder**:
 
-    1.  CommerceRuntime.Ext.config - CRT extensions.
+  - CommerceRuntime.Ext.config - CRT extensions.
+  - CommerceRuntime.MPOSOffline.Ext.config - CRT offline extensions.
+  - HardwareStation.Extension.config - Hardware station and payment extensions.
+  - RetailProxy.MPOSOffline.ext.config - Retail proxy extensions.
 
-    2.  CommerceRuntime.MPOSOffline.Ext.config - CRT offline extensions.
+- **Build tools:** The **Build tools** folder contains the files related to packaging, build settings and pfx, and snk files. Merge or update the following files if you have made any changes in the older versions:
 
-    3.  HardwareStation.Extension.config - Hardware station and payment extensions.
+  - Customization.settings
+  - Microsoft.Dynamics.RetailSdk.Build.props
+  - Any custom pfx or snk files you created
 
-    4.  RetailProxy.MPOSOffline.ext.config - Retail proxy extensions.
+- **Database:** Copy and drop all your custom SQL scripts: ...\\RetailSDK\\Database\\Upgrade\\Custom
 
-2.  **Build tools:** In the Build tools folder we have the files related to the packaging, build settings and pfx, snk files. Merge or update the below files if you have done any changes in the older versions:
+- **Online Store:** If you have an online store web project or online extension code, include it in this folder. 
+  > [!NOTE]
+  > Retail deployable package will not include online store code for packaging.
 
-    1.  Customization.settings
+- **Payment Externals**: Copy and paste all of your payment extension assemblies to the following **Payment assemblies** folders:
 
-    2.  Microsoft.Dynamics.RetailSdk.Build.props
+  - IPaymentDeviceAssemblies
+  - IPaymentProcessorAssemblies
+  - PaymentWebFiles
 
-    Also include any custom pfx, snk created.
+- **Payments:** Merge all of your payment extension projects into this folder.
 
-3.  **Database:** Copy and drop all your custom SQL scripts: ...\\RetailSDK\\Database\\Upgrade\\Custom
+  > [!NOTE]
+  > If you created a new payment extension project and did not modify anything in this folder, you can include it as part of the build and packaging process. Update the **dirs.proj** in the **RetailSDK** folder to build your custom project. Next, update the **Customization.settings** file with the payment extension drop location so that during package creation your custom project is built. Make sure to include the extension as part of the packaging.
 
-4.  **Online Store:** If you have any online store web project or online extension code then include it part of this folder. **Note:** Retail deployable package will not include online store code for packaging.
+- **POS:** If you have any POS extensions, including the generated proxy, copy your POS extensions from *…\\RetailSDK\\POS\\Extensions* to the new Retail SDK POS extension folder, *RetailSDK\\POS\\Extensions*. After you copy the extensions,  update and merge the extension.json file inside the *POS\\Extensions* folder with the new POS extensions folder you copied.
 
-5.  **Payment Externals:** Copy and paste all your payment extension assemblies to the below Payment assemblies folder:
-
-       1.  IPaymentDeviceAssemblies
-       2.  IPaymentProcessorAssemblies
-       3.  PaymentWebFiles
-
-6.  **Payments:** Merge/drop all your payment extension project to this folder.
-
-**Note:** If you have created completely new payment extension project and not modified anything in this folder then you can just include it part of the build and packaging process. Update the dirs.proj in the RetailSDK folder to build your custom project and update the Customization.settings file with the payment extension drop location, so that during package creation we build your custom project and include the extension part of the packaging.
-
-7.  **POS:** If you have any POS extensions including the generated proxy, then copy your POS extensions from …\\RetailSDK\\POS\\Extensions to the new Retail SDK POS extension folder (RetailSDK\\POS\\Extensions). After you copied the extensions update/merge the extension.json file inside the POS\\Extensions folder with your new POS extensions folder you copied.
-
-Ex: If you copied one of your extension say "**CustomExtension**" folder the you will update the extension.json like below:
+For example, if you copied the **CustomExtension** folder, then you would update the extension.json as shown below:
 ```Typescript
 
  {
@@ -153,40 +134,31 @@ Ex: If you copied one of your extension say "**CustomExtension**" folder the you
 ]
  }
 ```
-Also update the tsconfig.json with the custom extension package so the POS can compile those changes during build.
+You should also update the tsconfig.json with the custom extension package so that the POS can compile the changes during build.
 
-8.  **Reference:** Copy all your extension output assemblies like Commerce runtime, Hardware station, proxy and any external assemblies to reference folder. Include any assemblies which you want to include part of your deployment and packaging.
+- **Reference:** Copy all of your extension output assemblies, such as **Commerce runtime**, **Hardware station**, **proxy**, and any external assemblies, to the reference folder. Include any assemblies that you want included as part of your deployment and packaging.
 
-9.  **Commerce runtime (CRT) and retail server (RS) extensions:** Copy all your CRT and RS extension project under the Retail SDK folder and make sure you include the CRT and RS extension solution file details in the dirs.proj file under the RetailSDK folder, so that during msbuild we build all the extension project and set output path for the project assemblies to the RetailSDK\\Reference folder
+- **Commerce runtime (CRT) and retail server (RS) extensions:** Copy all ofyour CRT and RS extension projects under the **Retail SDK** folder. Make sure to include the CRT and RS extension solution file details in the dirs.proj file under the **RetailSDK folder** so that during msbuild, all of the extension project is built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
-10.  **Hardware station (HWS) and payment extensions:** Copy all your HWS and payment extension project under the Retail SDK folder and make sure you include the HWS and payment extension solution file details in the dirs.proj file under the RetailSDK folder, so that during msbuild we build all the extension project and set output path for the project assemblies to the RetailSDK\\Reference folder
+- **Hardware station (HWS) and payment extensions:** Copy all of your hardware station (HWS) and payment extension projects under the **Retail SDK** folder. Make sure to include the HWS and payment extension solution file details in the dirs.proj file under the **RetailSDK** folder so that during msbuild, all of the extension project is built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
-11.  **Retail proxy extensions:** Copy all your retail proxy extension project under the Retail SDK folder and make sure you include the proxy solution file details in the dirs.proj file under the RetailSDK folder, so that during msbuild we build all the extension project and set output path for the project assemblies to the RetailSDK\\Reference folder.
+- **Retail proxy extensions:** Copy all of your retail proxy extension projects under the **Retail SDK** folder. Make sure to include the proxy solution file details in the dirs.proj file under the **RetailSDK** folder so that during msbuild, all of the extension project is build and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
-**Note:** Run **msbuild** on the root of the Retail SDK folder. Use the Microsoft Visual Studio developer command-line tool to generate the retail deployable packages.
+> [!NOTE]
+> Run **msbuild** on the root of the Retail SDK folder. Use the Microsoft Visual Studio developer command-line tool to generate the retail deployable packages.
 
-12.  Deploy the retail deployable packages and validate.
+AFter you have upgraded all of the components, deploy the Retail deployable packages, validate the deployment, and add the Retail SDK files to the respository.
 
-13.  Add Retail SDK files to the repository.
+## Upgrade the Retail channel extension from 7.2 a higher version
+The steps mentioned  in the previous section, **Upgrade the retail channel extension from 7.3 to higher versions**, will remain same for all the retail components except the Retail proxy. In 7.2, you must have completed inline changes in the retail proxy project if you have CRT with RS extension and the typescript proxy was auto-generated based on the **customization.settings** file.
 
-**How to upgrade the retail channel extension from 7.2 to higher versions:**
+To upgrade your proxy to 7.3, complete the steps in the topic, [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md) and then move the proxy to the Retail SDK folder and then update the config file, **RetailProxy.MPOSOffline.ext.config**.
 
-The steps mentioned above will remain same for all the retail components except the Retail proxy. In 7.2 you must have done inline changes in the retail proxy project if you have CRT with RS extension and the typescript proxy was auto generated based on the customization.settings file.
+## Upgrade the retail channel extension from 7.1 to a higher version
+In 7.1, you should have completed most of the POS and Proxy customizations inline. To upgrade to higher application release, you should move all of your inline changes to extensions. If it is a binary hotfix upgrade, then you must perform a code merge with the new Retail SDK and then regenerate the package.
 
-To upgrade your proxy to 7.3, follow the below steps mentioned in the below link and then move it to the Retail SDK folder and update the RetailProxy.MPOSOffline.ext.config config file.
+## Upgrade the retail channel extension from 7.0 to a higher version
+In 7.0, you should have completed most of the customizations inline. To upgrade to higher application releas,e you should move all of your inline changes to extensions. If it is binary hotfix upgrade, you must perform a code merge with the new Retail SDK and regenerate the package.
 
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos>
-
-**How to upgrade the retail channel extension from 7.1 to higher versions:**
-
-In 7.1 you should have done most of the POS and Proxy customization are done inline, if you want to upgrade to higher application release then you should move all your inline changes to extensions. If its binary hotfix upgrade, then you must do code merge with the new RetailSDK and regenerate the package.
-
-**How to upgrade the retail channel extension from 7.0 to higher versions:**
-
-In 7.0 you should have done most of the customization are done inline, if you want to upgrade to higher application release then you should move all your inline changes to extensions. If its binary hotfix upgrade, then you must do code merge with the new RetailSDK and regenerate the package.
-
-**Generate Deployable package for validation:**
-
-Follow the below steps mentioned in the below link to generate the retail deployable package:
-
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging>
+## Generate a deployable package for validation
+Complete the steps in the topic,[Create retail deployable packages](retail-sdk/retail-sdk-packaging.md), to generate the deployable package for validation.
