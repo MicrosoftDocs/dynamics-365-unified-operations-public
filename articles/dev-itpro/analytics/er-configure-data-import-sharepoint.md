@@ -5,7 +5,7 @@ title: Configure data import from SharePoint
 description: This topic explains how to import data from Microsoft SharePoint.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,63 +48,54 @@ To complete the examples in this topic, you must have the following access:
 - ER format and model configurations for 1099 payments
 
 ### Create required ER configurations
-Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from external Microsoft Excel files. For more information, see [Parse incoming documents in Microsoft Excel](parse-incoming-documents-excel.md). Fianlly, you will have:
+Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Microsoft Excel](parse-incoming-documents-excel.md). After you have completed the task guides, you will have the following set up.
 
-- ER configurations:
+#### ER configurations
 
-    - ER model configuration, **1099 Payments model**
-    - ER format configuration, **Format for importing vendors' transactions from Excel**
+- ER model configuration, **1099 Payments model**
+- ER format configuration, **Format for importing vendors' transactions from Excel**
 
-    [![ER configurations for importing data from SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![ER configurations for importing data from SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
-- Sample of the incoming file for data import:
+#### Sample of the incoming file for data import
 
-    - Excel file **1099import-data.xlsx**, with vendor transactions that should be imported into Finance and Operations
+- Excel file **1099import-data.xlsx**, with vendor transactions that should be imported into Finance and Operations.
 
-    [![Sample Microsoft Excel file for importing from SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)](./media/GERImportFromSharePoint-02-Excel.PNG)
-
+![Sample Microsoft Excel file for importing from SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+    
 > [!NOTE]
 > The format for importing vendor transactions is selected as the default model mapping. Therefore, if you run a model mapping of the **1099 Payments model**, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
 
-## Configure Document management parameters
-1. On the **Document management parameters** page, configure access to the SharePoint Server instance that will be used by the company that you're currently signed in to. In this example, the company is USMF.
-2. Test the connection to the SharePoint Server instance to make sure that you've been granted access.
+## Configure access to SharePoint for file storage
+To store electronic report files in a SharePoint location, you must configure access to the SharePoint Server instance that will be used by the current company. In this example, the company is USMF. For instructions, see [Configure SharePoint storage](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-    [![Document management setting – SharePoint server](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
+1. Complete the steps in [Configure SharePoint storage](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+2. Open the configured SharePoint site.
+3. Create the following folders where incoming electronic reporting files can be stored:
 
-3. Open the configured SharePoint site, and 
-   1. Create the following folders where the incoming files can be stored:
+     - Files import source (main) (Example shown in screenshot below)
+     - Files import source (alternative)
 
-    - Files import source (main)
-    - Files import source (alternative)
+    ![Files import source (main)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
-    [![Document management setting – SharePoint server](./media/GERImportFromSharePoint-04-SharePointFolder1.png)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+4. (Optional) Create the following folders where the files can be stored after import. 
 
-    [![Document management setting – SharePoint server](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
+    - Files archive folder - This folder would be for successfully imported files.
+    - Files warning folder - This folder would be for files that were imported with a warning.
+    - Files error folder - This folder would be for files that failed to import.
 
-   2. Create the following folders where the files can be stored after import: for successful imported files, for imported files but with warning and for failed files (this is optional folder):
-   
-    - Files archive folder
-    - Files warning folder
-    - Files error folder
+4. In Finance and Operations, go to **Organization administration > Document management > Document types**.
+5. Create the following document types that will be used to access the SharePoint folders that you just created. For instructions, see [Configure document types](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
 
-4. In Finance and Operations, on the **Document types** page, create the following document types that will be used to access the SharePoint folders that you just created:
+|Document type       | Group              | Location      | SharePoint folder      |
+|--------------------|--------------------|---------------|------------------------|
+|SP Main             |File                |SharePoint     |Files import source (main)|
+|SP Alternative             |File                |SharePoint     |Files import source (alternative)|
+|SP Archive             |File                |SharePoint     |Files archive folder|
+|SP Warning             |File                |SharePoint     |Files warning folder|
+|SP Error             |File                |SharePoint     |Files error folder|
 
-    - SP Main
-    - SP Alternative
-    - SP Archive
-    - SP Warning
-    - SP Error
-
-5. For created document types, in the **Group** field, enter **File** and in the **Location** field, enter **SharePoint**. Then enter the address of the SharePoint folder:
-
-    - For the **SP Main** document type: Files import source (main)
-    - For the **SP Alternative** document type: Files import source (alternative)
-    - For the **SP Archive** document type: Files archive folder
-    - For the **SP Warning** document type: Files warning folder
-    - For the **SP Error** document type: Files error folder
-
-    [![SharePoint setting – new document type](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint setting – new document type](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## Configure ER sources for the ER format
 1. Click **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
