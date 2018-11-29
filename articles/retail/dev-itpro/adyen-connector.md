@@ -49,8 +49,8 @@ This article covers the following sections to assist you to evaluate and setup t
 
 ## Supported Features and Functionalities
 
-### Dynamics 365 Payment Features
-The following list describes the set of Dynamics 365 payment features supported by the Dynamics 365 Payment Connector for Adyen. These capabilities utilize enhancements to the payment SDK and some retail components and are not exclusive to the Adyen connector. 
+### Dynamics 365 Payment Features- SDK enhancements
+The following list describes the set of Dynamics 365 payment features supported by the Dynamics 365 Payment Connector for Adyen. These capabilities utilize enhancements introduced in December of 2018 to the payment SDK, and some retail components, and are not exclusive to the Adyen connector. For more information about how to uptake these enhancements with a different payment connector, please refer to [payment connector extensiblity documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)
 
 | Feature | Descrition | Supported | 
 | --- | --- | :-: |
