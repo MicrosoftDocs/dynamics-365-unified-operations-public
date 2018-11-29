@@ -34,6 +34,11 @@ ms.dyn365.ops.version: AX 7.0.1
 This topic provides an overview of the Dynamics 365 Payment Connector for Adyen, including a comprehensive list of features and functionalities that are supported, a guide on how to setup and configure the connector, and common troubleshooting steps and common issues.
 
 ## Key terms
+| Term | Description | 
+| --- | --- |
+| Payment Connector | This term denotes an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this article was implemented using the standard payments SDK. 
+| Card Present | When a payment terminal is implemented using the `INamedRequestHandler`, it is typically referred to as a "Card present" payment connector. The term card present is a way to describe such a payment connector due to the fact that is supports transactions where a physcical card is presented. |
+| Card Not Present | Payment connectors implemented for use in the back office, call center, or used in e-Commerce integrations are implemented using the `IPaymentProcessor`, are typically referred to as "Card not present" payment connectors. |
 
 ## Overview
 This article covers the following sections to assist you to evaluate and setup the Dynamics 365 Payment Connector for Adyen: 
