@@ -46,7 +46,7 @@ To enable Retail Modern POS to support this new packaging model, Microsoft is ch
 > [!NOTE] 
 > When you uptake the new feature, changes are required in the extensions that you previously built. You must move your extension files to the new project type in a separate package and then complete a configuration update. No change is required in the extension logic files or the manifest that you created. However, you must move your extension logic files and manifest to the new template, and then rebuild, test, and validate them.
 
-Independent package model development is not supported in Windows server OS or LCS development box you must use your own Windows 10 box. 
+Independent package model development is not supported in Windows server operating system or LCS development box, you must use your own Windows 10 box. 
 
 ## Prerequisites
 
