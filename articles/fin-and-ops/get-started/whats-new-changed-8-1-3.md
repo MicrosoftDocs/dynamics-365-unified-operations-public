@@ -47,7 +47,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 For information about the bug fixes included in each of the updates that are part of Platform update 22, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2037783) (**not yet available**).
 
 ## Platform update 22
-Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see 
+Microsoft Dynamics 365 for Finance and Operations version 8.1.3 includes Platform update 22. To learn more about Platform update 22, see 
 [What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)](whats-new-platform-update-22.md).
 
 ## Catch weight
