@@ -48,6 +48,15 @@ This article covers the following sections to assist you to evaluate and setup t
 - **[Setup and Configuration](#Setup-and-Configuration)** – This section explains in detail how to setup and configure the Dynamics 365 Payment Connector for Adyen across the POS, Call Center, and E-Commerce channels.
 
 ## Supported Features and Functionalities
+The out of box payment connector uses the standard payments SDK. As such, the payment connector for Adyen does not have special capabilites which are not available for other payment connectors to utilize. 
+
+Supported payment instrument types:
+| Card type | Description | Supported brands | 
+| --- | --- | --- |
+| Credit card | Standard credit card transactions are supported | VISA, MasterCard
+
+### Dynamics 365 Payment Features- Standard capabilities
+ 
 
 ### Dynamics 365 Payment Features- SDK enhancements
 The following list describes the set of Dynamics 365 payment features supported by the Dynamics 365 Payment Connector for Adyen. These capabilities utilize enhancements introduced in December of 2018 to the payment SDK, and some retail components, and are not exclusive to the Adyen connector. For more information about how to uptake these enhancements with a different payment connector, please refer to [payment connector extensiblity documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)
