@@ -138,6 +138,6 @@ The connector supports the following requests:
 
 ### Configuration
 The configuration file is found in **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the connector provider from the HQ. The file format aligned fiscal Integration configuration requirements. The following settings have been added:
-- Connection string - The string describes the details of connection to device. See POSNET driver documentation for details.
+- Connection string - The string describes the details of connection to device in format supported by driver. See POSNET driver documentation for details.
 - Date and time synchronization - This indicates if you need to the sync date and time of the printer with the connected hardware station. The date and time of the printer will be synchronized with the Hardware station time.
 - Device timeout - The time in milliseconds the driver will wait for response from device. See POSNET driver dcoumentation for details.
