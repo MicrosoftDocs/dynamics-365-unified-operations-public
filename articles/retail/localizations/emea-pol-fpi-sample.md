@@ -113,9 +113,9 @@ The request handler DocumentProviderPosnetProtocol is the entry point for the re
 The handler is inherited from the INamedRequestHandler interface. The Method HandlerName is responsible for returning the name of the handler. It should match the connector document provider name specified in HQ.
 
 The connector supports the following requests:
-- GetFiscalDocumentDocumentProviderRequest- Contains information about what document should be generated. Returns a printer-specific document that should be registered in the fiscal printer.
-- GetSupportedRegistrableEventsDocumentProviderRequest - Returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
-- SaveFiscalRegistrationResultDocumentProviderRequest- Saves the response from the printer.
+- **GetFiscalDocumentDocumentProviderRequest** - Contains information about what document should be generated. Returns a printer-specific document that should be registered in the fiscal printer.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** - Returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
+- **SaveFiscalRegistrationResultDocumentProviderRequest**- Saves the response from the printer.
 
 
 ### Configuration
@@ -131,9 +131,9 @@ The purpose of the extension (Connector) is to communicate with the fiscal print
 The request handler FiscalPrinterHandler is the entry point for handling request to the fiscal peripheral device. The handler is inherited from INamedRequestHandler interface. Method HandlerName is responsible for returning the name of the handler, it should match the fiscal connector name specified in HQ.
 
 The connector supports the following requests:
-- SubmitDocumentFiscalDeviceRequest - Sends document to printers and returns response from the fiscal printer.
-- IsReadyFiscalDeviceRequest - Used for a health check of the device.
-- InitializeFiscalDeviceRequest - Used for printer initialization.
+- **SubmitDocumentFiscalDeviceRequest** - Sends document to printers and returns response from the fiscal printer.
+- **IsReadyFiscalDeviceRequest** - Used for a health check of the device.
+- **InitializeFiscalDeviceRequest** - Used for printer initialization.
 
 
 ### Configuration
