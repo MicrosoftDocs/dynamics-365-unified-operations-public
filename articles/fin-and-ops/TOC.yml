@@ -3382,6 +3382,8 @@
           href: ../supply-chain/production-control/batch-attributes.md
         - name: Batch balancing
           href: ../supply-chain/production-control/batch-balancing.md
+        - name: Catch weight product processing
+          href: ../supply-chain/warehousing/catch-weight-processing.md
         - name: Copy a formula
           href: ../supply-chain/production-control/tasks/copy-formula.md
         - name: Create a formula by copying from an existing formula
