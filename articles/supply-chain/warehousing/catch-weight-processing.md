@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable catch weight product processing with warehouse management
+title: Catch weight product processing with warehouse management
 description: This topic describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: perlynne
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Enable catch weight product processing with warehouse management
+# Catch weight product processing with warehouse management
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,6 @@ You can enable the catch weight product processing with warehouse management fun
 
 > [!NOTE]
 > Both the **Warehouse and transportation management** and the **Process distribution catch weight** license configuration keys must be enabled as well.
-
 
 When the license configuration key is enabled, you can create a new released product with **Catch weight** selected and associated with a storage dimension group that has the parameter **Use warehouse management processes** selected.
 
@@ -48,7 +47,6 @@ Before you can use the product in Warehouse management, some basic product-speci
 -	Definition of the minimum and maximum weight tolerances as part of the catch weight unit setup
 -	Use of unit sequence group where the catch weight unit must be defined as the lowest stock keeping unit.
 -	Use of catch weight item handling policy
-
 
 ## Transaction adjustments
 
