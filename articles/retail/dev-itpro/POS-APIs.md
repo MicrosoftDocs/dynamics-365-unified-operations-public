@@ -47,7 +47,7 @@ POS APIs are categorized into three different scenarios:
 Many APIs can be consumed in extensions. For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item. Within the consume, the APIs are sub categorized by module like cart, peripherals, store operations, etc.
 
 > [!NOTE]
-> A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts).
+> A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts). Extension must consume only the exposed request and response from the POS.Api.d.ts and no modification is allowed to Pos.Api.d.ts. Extension should not consume or update any POS APIs, properties, methods or handlers directly from POS commerce or sessions objects. 
 
 ## How to consume APIs in your extension
 
