@@ -1,1 +1,80 @@
+---
+# required metadata
+
+title: Duplicate payment protection- Functional experience
+description: Duplicate payment protection- Functional experience
+author: rubendel
+manager: AnnBe
+ms.date: 11/22/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: rubendel
+ms.search.validFrom: 2018-11-01
+ms.dyn365.ops.version: AX 7.0.1
+
+---
+
+# Duplicate payment protection- Functional experience
+This topic provides an overview of the user experience to be expected when duplicate payments are detected. Duplicate payment protection is a feature supported by the payments SDK. In order for duplicate payment protection to work, the payment connectors must be updated to support this new capability. 
+
+## Key terms
+| Term | Description | 
+| --- | --- |
+
+## Overview
+This article describes the user experience when the point of sale recovers from a loss of communication with the payment terminal which causes the point of sale and the payment terminal to be out of sync. This scenario is rare and may never be encountered, but when it does occur, the store associate will encounter a situation that they may not expect. 
+
+Duplicate payment protection ensures that every time the point of sale initiates communication witht the payment terminal, a unique ID for the transaction is requested. This unique ID is shared between the point of sale, payment terminal and payment processor. If, later in the transaction, one of the components provides a different unique ID from what is expected, the components will stop the current operation and only allow themselves to continue when they are both again in the same state. 
+
+## Supported Features and Functionalities
+Following is a scenario that could cause duplicate payment detection to be used. To test this scenario, rather than unplug the point of sale register, the MPOS could be closed any dllhost processes associated with MPOS could be ended. 
+
+Scenario:
+1. Associate clicks 'Pay card' and sends the amount to the device.
+2. While the customer is completing the payment on the payment terminal, the POS terminal becomes unplugged. 
+3. The cashier restarts the POS machine and Modern POS client, then logs in. 
+4. There is no payment visible in the point of sale client, but the payment has been authorized by the payment terminal in the meantime.
+
+###Duplicate card payment detection
+In the above scenario, the cashier may log back into the point of sale client and see that the same transaction is still loaded, but the amount due has not been updated. From this they would likely deduce that the payment failed and initiate a new card payment. 
+
+Upon initiation of the second card payment, duplicate payment protection would kick in. Once the cashier sends the payment request, the payment connector will identify a conflict and inform the user that a payment has been recovered and the most recent payment request will not proceed. 
+
+For the store associate, the only action that can be taken is to click 'OK'. At this point, the recovered payment is added to the point of sale transaction as a tender line. If the recovered payment transaction is equal to the amount due, the transaction is concluded. If the recovered payment transaction is less than the balance for the transaction, the associate will be able to add another tender until the transaction is concluded. 
+
+###Alternate payment detection
+In some cases, such as network issues, the failure of communication between the POS and payment terminal may be more suble. In cases where a payment fails for unclear reasons, a customer may decide to pay with an alternate tender such as cash or maybe try to partially tender with the same card. 
+
+In these cases, the payment connector will still detect that a payment has already been made and inform the user that a payment has recovered. 
+
+When the second payment is a card payment, the recovery is the same as for duplicate card payment protection as described above. 
+
+When susequent payments are not credit or debit payments, the workflow is a bit different. In these cases, the customer is instructed to select the 'Pay card' payment method. That will allow the previous payment to be added to the transaction. 
+
+## Prerequisites
+In order for duplicate payment protection to work, the payment connector must be updated to take advantage of this new capability of the SDK. For technical information related to implementing duplicate payment protection, see the [Duplicate Payment Protection] - SDK implementation document. 
+
+## Troubleshooting Steps
+
+## Common Issues
+In certain cases, they customer may choose to leave the store without making a purchase before the payment is recovered. In these cases, the cashier will not have any choice but to follow the duplicate payment protection workflow. The result would be that the customer is charged without receiving goods. From an auditing standpoint, the point of sale and payment service would still be in sync, but the customer has been charged. Linked refunds are being implemented to recover from this scenario, but until that capability is enabled, reversing the payment will have to be done manually through the payment service itself.    
+
+## Related Articles
+- **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
