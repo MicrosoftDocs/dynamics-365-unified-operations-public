@@ -42,6 +42,8 @@ This article describes the user experience when the point of sale recovers from 
 
 Duplicate payment protection ensures that every time the point of sale initiates communication witht the payment terminal, a unique ID for the transaction is requested. This unique ID is shared between the point of sale, payment terminal and payment processor. If, later in the transaction, one of the components provides a different unique ID from what is expected, the components will stop the current operation and only allow themselves to continue when they are both again in the same state. 
 
+When duplicate payment protection occurs, the associate can only conclude the transaction using pay card. In order to avoid phantom credit card charges, any attempt to void or suspend the transaction is inhibited so that the POS, payment connector and payment terminal are back in sync. 
+
 ## Supported Features and Functionalities
 Following is a scenario that could cause duplicate payment detection to be used. To test this scenario, rather than unplug the point of sale register, the MPOS could be closed any dllhost processes associated with MPOS could be ended. 
 
