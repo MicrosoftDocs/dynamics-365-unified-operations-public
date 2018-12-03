@@ -47,6 +47,8 @@ For information about the bug fixes included in each of the updates that are par
 ## Legal entity filtering using grid column headers
 Starting in Platform update 23, for grids with cross-company queries, users are able to filter the *Legal entity* column using the column drop-down menu, similar to other columns in the grid. For example, if a user is looking at the global transactions for a specific customer, he might want to find the transactions within a small subset of companies. Prior to this feature, he would have had to filter using the Customer range tab on the Advanced filter or sort dialog, or utilize page-specific custom filters.
 
+![Filter by legal entity](media/legalEntityFiltering.png  "Filter by legal entity")
+
 ## Export to Excel
 In Platform update 22, the Export to Excel feature was improved to allow users to export up to 1 million rows from a grid in Finance and Operations, a substantial increase from the previous 10,000-row limit. 
 
