@@ -36,8 +36,8 @@ This topic provides an overview of the data that is managed by the payment conne
 ## Key terms
 | Term | Description |
 | --- | --- |
-| Card present | The term *card present* describes the use of a payment connector processing transactions where a physical card is present, such as at a point of sale (POS) register. |
-| Card not present | The term *card not present* describes the use of a payment connector processing transactions where a physical card isn't present, such as in call center or e-Commerce scenarios. |
+| Card present | The term *card present* describes the use of a payment connector to process transactions where a physical card is present, such as at a point of sale (POS) register. |
+| Card not present | The term *card not present* describes the use of a payment connector to process transactions where a physical card isn't present, such as in call center or e-Commerce scenarios. |
 
 ## Overview
 This topic provides specific details about the following areas with respect to data that is managed by the payment connectors:
@@ -279,7 +279,7 @@ This section describes data that is sent to the payment connector for card-not-p
 | L2Data | TaxAmount | The tax amount that is applied to the specific line item part of the order. |
 | L2Data | TaxDescription | The description of the taxes that are applied to the specific line item part of the order. | 
 | L2Data | TaxTypeIdentifier | The type identifier of the taxes that are applied to the specific line item part of the order. |
-| L2Data | RequesterName | The name of the request. |
+| L2Data | RequesterName | The name of the requester. |
 | L2Data | TotalAmount | The total amount of the specific line item part of the order. |
 | L2Data | PurchaseCardType | The card type of the purchaser. |
 | L2Data | AmexLegacyDescription1 | Legacy American Express description field 1. |
@@ -287,8 +287,8 @@ This section describes data that is sent to the payment connector for card-not-p
 | L2Data | AmexLegacyDescription3 | Legacy American Express description field 3. |
 | L2Data | AmexLegacyDescription4 | Legacy American Express description field 4. |
 | L2Data | TaxDetails[].TaxRate | The list of individual tax rates that are applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxDescription | The list of individual tax rates that are applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxAmount | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails[].TaxDescription | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails[].TaxAmount | The list of individual tax amounts that are applied to the specific line item part of the order. |
 | L2Data | TaxDetails[].TaxTypeIdentifier | The list of type identifiers of the taxes that are applied to the specific line item part of the order. |
 | L2Data | MiscellaneousCharges[].ChargeType | The list of charge types that are applied to the specific line item part of the order. |
 | L2Data | MiscellaneousCharges[].ChargeAmount | The list of charge amounts that are applied to the specific line item part of the order. |
@@ -332,9 +332,9 @@ This section describes data that is sent to the payment connector for card-not-p
 | L3Data | PickupRecordNumber | The record number of the pickup. |
 | L3Data | CarrierShipmentNumber | The shipment number of the carrier. |
 | L3Data | UNSPSCCode | The United Nations Standard Products and Services Code (UNSPSC). |
-| L3Data | TaxDetails[].TaxRate | The list of individual tax rates that are applied to the specific line item part of the order. |
-| L3Data | TaxDetails[].TaxDescription | The list of individual tax rates that are applied to the specific line item part of the order. |
-| L3Data | TaxDetails[].TaxAmount | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails[].TaxRate | The list of individual tax rates that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails[].TaxDescription | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails[].TaxAmount | The list of individual tax amounts that are applied to the specific line item part of the order. |
 | L3Data | TaxDetails[].TaxTypeIdentifier | The list of type identifiers of the taxes that are applied to the specific line item part of the order. |
 | L3Data | MiscellaneousCharges[].ChargeType | The list of charge types that are applied to the specific line item part of the order. |
 | L3Data | MiscellaneousCharges[].ChargeAmount | The list of charge amounts that are applied to the specific line item part of the order. |
