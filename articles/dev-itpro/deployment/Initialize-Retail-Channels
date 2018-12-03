@@ -8,9 +8,9 @@ If you are using a Tier-2 Sandbox or Production environment on application versi
 Pre-requisites
 
 1. You must first deploy a Tier-2 Sandbox or Production environment with application version 8.1.2.x or newer to proceed.
-2. In LCS, file a service request of type 'Other' and state the following:
+2. In LCS, create a new support request and state the following:
 
-"Access request for Retail reduced downtime servicing"
+"Access request for cloud hosted Retail channel components"
 
 Request will be completed within 5 business days or less.
 
