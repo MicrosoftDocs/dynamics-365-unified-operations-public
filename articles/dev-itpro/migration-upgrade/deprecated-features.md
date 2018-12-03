@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -1011,6 +1011,17 @@ Product builder was used to dynamically configure items from a sales order, purc
 | **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Product areas affected**         | Product information management, Sales and marketing  |
 | **Status**                         | Removed as of Dynamics AX 7.0.      |
+
+### Production Floor app
+This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client. The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors. |
+| **Replaced by another feature?**   | Yes. The Job Card Device, which is a native part of Dynamics AX 7.0.                                                                           |
+| **Product areas affected**         | Production control                                                |
+| **Status**                         | Deprecated: A removal date from the Microsoft store has not yet been set for this feature.                                                |
+
 
 ### Rename product dimension
 
