@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
-.md
+
 # Set up and maintain vendor collaboration
 
 [!include [banner](../includes/banner.md)]
