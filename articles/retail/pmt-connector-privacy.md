@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 payment SDK privacy data notice
-description: Dynamics 365 SDK privacy data notice
+title: Dynamics 365 Payment Data Use
+description: Dynamics 365 Payment Data Use
 author: rubendel
 manager: AnnBe
 ms.date: 11/06/2018
@@ -30,30 +30,22 @@ ms.dyn365.ops.version: AX 8.1.2
 
 ---
 
-# Dynamics 365 Payment Connector Privacy Data Notice
-This topic provides an overview of the customer data that is provided to payment connectors for Microsoft Dyanmics 365. 
+# Dynamics 365 Payment Data Use
+This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dyanmics 365. 
 
 ## Key Terms
 | Term | Description | 
 | --- | --- |
-| Card Present | When a payment terminal is implemented using the `INamedRequestHandler`, it is typically referred to as a "Card present" payment connector. The term card present is a way to describe such a payment connector due to the fact that is supports transactions where a physcical card is presented. |
-| Card Not Present | Payment connectors implemented for use in the back office, call center, or used in e-Commerce integrations are implemented using the `IPaymentProcessor`, are typically referred to as "Card not present" payment connectors. |
+| Card Present | The term card present describes the use of a payment connector processing transactions where a physical card is present, such as at a point of sale register. |
+| Card Not Present | The term card not present describes the use of a payment connector processing transactions where a physical card is not present, such as call center or E-Commerce scenarios. |
 
 ## Overview
-All data listed in this topic is available through the payment connectors for card present, i.e. `INamedRequestHandler`, and card not present, i.e. `IPaymentProcessor`, to help facilitate payments. 
-The data used to conduct payments through a payment connector is subject to the terms of the party supplying the payment connector and the parties providing the payment services. 
-The data made available through the payment connector is may be used by the payment service provider in the United States or any other country in which it hosts services. 
-In certain cases, Microsoft may share your contact information with the third party service provider to operate and troubleshoot the service or prevent misuse.
-This topic provides specific details on the following areas with respect to customer data:
+This topic provides specific details on the following areas with respect to data managed by the payment connectors:
 
-- **[Definition of Customer Data](#Definition-of-Customer-Data)**: Provides a detailed description on what defined customer data.
-- **[Customer Data used in Card Present Scenarios](#Customer-Data-used-in-Card-Present-Scenarios)**: Provides an exhaustive list of customer data fields and the corresponding descriptions that are passed to the payment connector for card present scenarios.
-- **[Customer Data used in Card Not Present Scenarios](#Customer-Data-used-in-Card-Not-Present-Scenarios)**: Provides an exhaustive list of customer data fields and the corresponding descriptions that are passed to the payment connector for card not present scenarios.
+- **[Data used in Card Present Scenarios](#Data-used-in-Card-Present-Scenarios)**: Provides a list of data fields and the corresponding descriptions that are passed to the payment connector for card present scenarios.
+- **[Data used in Card Not Present Scenarios](#Data-used-in-Card-Not-Present-Scenarios)**: Provides a list of data fields and the corresponding descriptions that are passed to the payment connector for card not present scenarios.
 
-## Definition of Customer Data
-Any data that could be used- by itself or combined with other data- to identify a party who uses Microsoft services is considered to be "Customer data". For the purposes of this document, the "Customer" is most commonly a business conducting transasctions through he payment connector. Other customers could be the VARs amd ISVs who helps to set up, test and write connectors that make those transactions possible. Whenever that data is transmitted to a third party, Microsoft confirms that the other party has protections in place to ensure that data is being protected or, in cases where Microsoft may not control where that data is sent, provides notices to indicate customer data is leaving its protection boundary. 
-
-## Customer Data used in Card Present Scenarios
+## Data used in Card Present Scenarios
 The following section describes all data points sent to the payment connector for card present scenarios. That data may or may not be used by the payment connector.
 
 ### Payment Connector Request Specific Data
@@ -62,7 +54,7 @@ The following section describes all data points sent to the payment connector fo
 
 | Field | Description |
 | --- | --- |
-| merchantInformation | The merchant information that is defined on the POS hardware profile page in the Finance and Operations client. |
+| merchantInformation | The merchant information that is defined on the POS hardware profile page in the Microsoft Dynamics 365 for Finance and Operations client. |
 | invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
 
 
@@ -155,8 +147,8 @@ The following section describes all data points sent to the payment connector fo
 | ExternalReceipt | The external receipt data from the payment provider. |
 | TerminalId | The unique identifier of the terminal that handled the payment.	|
  
-## Customer Data used in Card Not Present Scenarios
-The following section describes all data points sent to the payment connector for card not present scenarios. That data may or may not be used by the payment connector.
+## Data used in Card Not Present Scenarios
+The following section describes data sent to the payment connector for card not present scenarios. Each connector varies in the specific data it processes and may not use all of the data provided.
 
 ### Payment Connector Method Specific Data
 
@@ -164,7 +156,7 @@ The following section describes all data points sent to the payment connector fo
 
 | Namespace | Field | Description |
 | --- | --- | --- |
-| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Microsoft Dynamics 365 for Finance and Operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card used for the payment. | 
 | PaymentCard | UniqueCardId | Unique randomized identifier for the card used for the payment. |
 | PaymentCard | ExpirationYear | Expiration year of the card used for the payment. |
@@ -186,7 +178,7 @@ The following section describes all data points sent to the payment connector fo
 
 | Namespace | Field | Description |
 | --- | --- | --- |
-| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Microsoft Dynamics 365 for Finance and Operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code of the transaction. |
 | PurchaseLevelData | L2Data | List of "Level 2" data. See the section on [L2 Data](#L2-Data) below for additional details. |
@@ -197,7 +189,7 @@ The following section describes all data points sent to the payment connector fo
 
 | Namespace | Field | Description |
 | --- | --- | --- |
-| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Microsoft Dynamics 365 for Finance and Operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code of the transaction. |
 
@@ -205,7 +197,7 @@ The following section describes all data points sent to the payment connector fo
 
 | Namespace | Field | Description |
 | --- | --- | --- |
-| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Microsoft Dynamics 365 for Finance and Operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card used for the payment. | 
 | PaymentCard | UniqueCardId | Unique randomized identifier for the card used for the payment. |
 | PaymentCard | ExpirationYear | Expiration year of the card used for the payment. |
@@ -226,8 +218,8 @@ The following section describes all data points sent to the payment connector fo
 
 | Namespace | Field | Description |
 | --- | --- | --- |
-| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Finance and Operations client. |
-| PaymentCard | Name | The name of the customer. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the POS hardware profile page in the Microsoft Dynamics 365 for Finance and Operations client. |
+| PaymentCard | Name | The name of the cardholder. |
 | PaymentCard | StreetAddress | Street of the billing address associated with the card used for the payment. |
 | PaymentCard | City | City of the billing address associated with the card used for the payment .|
 | PaymentCard | State | State of the billing address associated with the card used for the payment. |
@@ -244,7 +236,7 @@ The following section describes all data points sent to the payment connector fo
 
 #### L2 Data
 > [!NOTE]
-> L2 data is only sent to the connector if explicitly configured through the corresponding connector configuration in the Dynamics 365 back office.
+> L2 data is only sent to the connector if explicitly configured through the corresponding connector configuration in the Microsoft Dynamics 365 for Finance and Operations Client.
 
 | Namespace | Field | Description |
 | --- | --- | --- |
@@ -256,7 +248,7 @@ The following section describes all data points sent to the payment connector fo
 | L2Data | SummaryCommodityCode | Commodity code associated with the product. |
 | L2Data | MerchantContact | Contact information for the merchant. |
 | L2Data | MerchantTaxId | Unique tax identifier for the merchant. |
-| L2Data | MerchantType | Uninque merchant identifier maintained by the payment processor. |
+| L2Data | MerchantType | Unique merchant identifier maintained by the payment processor. |
 | L2Data | PurchaserId | Unique identifier of the pruchaser. |
 | L2Data | PurchaserTaxId | Unique tax identifier of the purchaser. |
 | L2Data | ShipToCity | City of the shipping address. |
@@ -290,10 +282,10 @@ The following section describes all data points sent to the payment connector fo
 | L2Data | RequesterName | Name of the request. |
 | L2Data | TotalAmount | Total amount of the specific line item part of the order. |
 | L2Data | PurchaseCardType | The card type of the purchaser. |
-| L2Data | AmexLegacyDescription1 | Legacy Amex description field 1. |
-| L2Data | AmexLegacyDescription2 | Legacy Amex description field 2. |
-| L2Data | AmexLegacyDescription3 | Legacy Amex description field 3. |
-| L2Data | AmexLegacyDescription4 | Legacy Amex description field 4. |
+| L2Data | AmexLegacyDescription1 | Legacy American Express description field 1. |
+| L2Data | AmexLegacyDescription2 | Legacy American Express description field 2. |
+| L2Data | AmexLegacyDescription3 | Legacy American Express description field 3. |
+| L2Data | AmexLegacyDescription4 | Legacy American Express description field 4. |
 | L2Data | TaxDetails[].TaxRate | List with individual tax rates applied to the specific line item part of the order. |
 | L2Data | TaxDetails[].TaxDescription | List of individual tax rates applied to the specific line item part of the order. |
 | L2Data | TaxDetails[].TaxAmount | List of individual descriptions of the taxes applied to the specific line item part of the order. |
@@ -303,7 +295,7 @@ The following section describes all data points sent to the payment connector fo
 
 #### L3 Data
 > [!NOTE]
-> L3 data is only sent to the connector if explicitly configured through the corresponding connector configuration in the Dynamics 365 back office.
+> L3 data is only sent to the connector if explicitly configured through the corresponding connector configuration in the Microsoft Dynamics 365 for Finance and Operations Client.
 
 | Namespace | Field | Description |
 | --- | --- | --- |
@@ -349,7 +341,7 @@ The following section describes all data points sent to the payment connector fo
 
 
 
-## Related Artciles
+## Related Articles
 - **[Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)**
-  - Contains additional details on how to write payment connector and non customer data fields.
+  - Describes how to author a custom payment connector. 
 
