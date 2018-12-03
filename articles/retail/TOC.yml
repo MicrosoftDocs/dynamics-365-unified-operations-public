@@ -520,6 +520,8 @@
       href: dev-itpro/create-retail-experience-app.md
     - name: Set up POS Hybrid app on Android and iOS
       href: dev-itpro/hybridApp.md
+    - name: Override POS request handler
+      href: dev-itpro/pos-handler.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
