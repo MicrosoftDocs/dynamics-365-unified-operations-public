@@ -45,27 +45,28 @@ Wondering about upcoming and recently released capabilities in any of our busine
 For information about the bug fixes included in each of the updates that are part of Platform update 23, sign in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=) (**not yet available**).
 
 ## Legal entity filtering using grid column headers
-Starting in Platform update 23, for grids with cross-company queries, users are able to filter the *Legal entity* column using the column drop-down menu, similar to other columns in the grid. For example, if a user is looking at the global transactions for a specific customer, he might want to find the transactions within a small subset of companies. Prior to this feature, he would have had to filter using the Customer range tab on the Advanced filter or sort dialog, or utilize page-specific custom filters.
+Starting in Platform update 23, for grids with cross-company queries, users are able to filter the *Legal entity* column using the column drop-down menu, similar to other columns in the grid. For example, if a user is looking at the global transactions for a specific customer, he might want to find the transactions within a small subset of companies. Prior to this feature, he would have had to filter using the Customer range tab on the Advanced filter or sort dialog box, or utilize page-specific custom filters.
 
 ![Filter by legal entity](media/legalEntityFiltering.png  "Filter by legal entity")
 
 ## Export to Excel
 In Platform update 22, the Export to Excel feature was improved to allow users to export up to 1 million rows from a grid in Finance and Operations, a substantial increase from the previous 10,000-row limit. 
 
-In Platform udpate 23, we've continued to enhance this feature. After the export completes, users will now receive a notification in the Action center alerting them that the export has finished. The notification includes a link to download the Excel file containing the exported data. The link and notification are accessible for roughly three days after the export completes. 
+In Platform update 23, we've continued to enhance this feature. After the export completes, users will now receive a notification in the Action center alerting them that the export has finished. The notification includes a link to download the Excel file containing the exported data. The link and notification are accessible for approximately three days after the export completes. 
 
 ## Manage access to network printers across legal entities
-Access to the new System administration utility is managed by the Carbon Flighting Service. Platform Update 23 includes the **System network printers management** form that System Administrators can use, along with the Document Routing Agent (DRA) to register network printers with Dynamics 365 for Finance and Operations.
-After you have enabled the feature, a **Preview** link will appear on the **System ntwork printers** form (**Organization administration** > **Setup** > **Network printers** and click **System network printers**). 
+Access to the new System administration utility is managed by the Carbon Flighting Service. Platform update 23 includes the **System network printers management** form that System Administrators can use, along with the Document Routing Agent (DRA) to register network printers with Dynamics 365 for Finance and Operations.
+
+After you have enabled this feature, a **Preview** link will appear on the **System network printers** form (**Organization administration** > **Setup** > **Network printers** and click **System network printers**). 
 After you register the network printers with the service using the DRA, you will see the configuration information for each legal entity in the organization.
 
 ## Enabling index hints in X++ again
-Microsoft Dynamics AX 2009 and prior versions supported INDEX HINTS from X++.  However, this was deprecated when Dynamics AX 2012 was released. For more information, see [Deprecated: X++ index hint clause](../../../dynamicsax-2012/appuser-itpro/deprecated-x-index-hint-clause.md)
+Microsoft Dynamics AX 2009 and earlier versions supported INDEX HINTS from X++. However, this was deprecated when Dynamics AX 2012 was released. For more information, see [Deprecated: X++ index hint clause](../../../dynamicsax-2012/appuser-itpro/deprecated-x-index-hint-clause.md).
 
-One of the main reasons this was deprecated was because an ill advised index hit could hurt the queries and little could be done until the query is fixed. Now, after seeing thousands of queries in hundreds of tenants and seeing SQL come up with less optimal plans for some simple queries at times, Finance and Operations has brought back the X++ hints with extra caution.
+One of the main reasons this was deprecated was because a misguided index hit could damage the queries and little could be done until the query is fixed. Now, after seeing thousands of queries in hundreds of tenants and seeing SQL come up with less optimal plans for some simple queries, Finance and Operations has brought back X++ hints. However, X++ hints should only be used with extremem caution.  
 
 We have added a new API on common **allowIndexHint** with a default behavior of **False**. This allows developers to opt-in and explicitly enable index hint. The old syntax on the select statement for specifying index hint is reused.
-If there is an existing X++ code that specifies index hint, there is no change to the current behavior in Rainier until the new API is invoked. See the following example:
+If there is an existing X++ code that specifies index hint, there is no change to the current behavior until the new API is invoked. See the following example for details.
 
     public void testIndexHintRegularTable()
         {
@@ -78,5 +79,3 @@ If there is an existing X++ code that specifies index hint, there is no change t
 
 > [!NOTE]
 > Index hints should be used sparingly, and only when you can ensure that it causes more benefit than harm. With the new API, knowledgeable power developers are empowered to pass the right hints when needed. Power developers should use this new feature with caution. When in doubt, avoid using index hints.
-
-
