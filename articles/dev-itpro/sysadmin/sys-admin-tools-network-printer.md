@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: System administrator network printers
-description: This topic provides information about using the System administrator network utility to set up network printers.
+title: System admin network printers
+description: This topic how you can use the new System administration utility to set up network printers.
 author: tjvass
 manager: AnnBe
 ms.date: 12/03/2018
@@ -30,36 +30,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# System administrator network printers
+# System admin network printers
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
-> Access to the new System administration utility is managed by the Carbon Flighting Service. Platform Update 23 includes the **System network printers management** form for System administrators. 
+> Access to the new System administration utility is managed by the Carbon Flighting Service. Microsoft Dynamics 365 for Finance and Operations platform update 23 (December 2018) includes the **System network printers management** page for system admins.
 
-Domain Administrators register the network printers with the Dynamics 365 for Finance and Operations service using the Document Routing Agent (DRA). After the printers are registered, it’s the responsibility of the Organization administrator to make printers available to end users. These settings are managed in the **Network printers** form (**Organization administration** > **Setup** > **Network printers**).   
- 
-Because the settings presented in this form are intended for Organization administrators, the data is restricted to the active legal entity. System administrators can't manage network printer settings across legal entities. This can makeit difficult to update settings across legal entities in some situations. 
-These situations can include network printer changes such as deleting a network printer instance, which occurs when a network printer path is updated or hardware is replaced. Or, trying to purge all documents in the printer queue.
+Domain admins register network printers with the Microsoft Dynamics 365 for Finance and Operations service by using the Document Routing Agent (DRA). After the printers are registered, the organization admin is responsible for making them available to users. The settings are managed on the **Manage network printers** page (**Organization administration** \> **Setup** \> **Network printers**).
 
-The System administration utility is a recovery tool for inadvertent print instructions and a way to simplify the task of managing network printer settings, including access from specific legal entities. 
+Because the settings on the **Manage network printers** page are intended for organization admins, the data is limited to the active legal entity. Because system admins can't manage network printer settings across legal entities, it can be difficult to update settings across legal entities in some situations, such as when network printer changes occur. For example, a network printer instance is deleted when a network printer path is updated or hardware is replaced, or someone tries to purge all documents in the printer queue.
 
- 
+The System administration utility is a recovery tool for inadvertent print instructions. It also simplifies the task of managing network printer settings, such as access from specific legal entities.
+
 ## Access the feature
-After the feature has been enabled through feature flighting, a **Preview** link will appear in the **Network printers** form.
+After the feature has been turned on through feature flighting, a **Preview** group will appear on the **Options** tab of the Action Pane on the **Manage network printers** page.
 
-![Preview link](./media/network-printer-01.png) 
+![Preview group on the Action Pane](./media/network-printer-01.png)
 
-1. Click **Organization administration** > **Setup** > **Network printers**.
-2. Click **System network printers**. 
-3. On the **System network printers** form, register the network printers with the service by using the DRA. You will see the configuration information for each legal entity in the organization. 
- 
+1. Select **Organization administration** > **Setup** > **Network printers**.
+2. On the Action Pane, in the **Preview** group, select **System network printers**.
+3. On the **System network printers** page, register the network printers with the service by using the DRA. You will see the configuration information for each legal entity in the organization.
+
 ## Supported operations
-Currently, the administration tool is limited to support **Delete** operations only. Deleting network printers using the **System network printers management** form causes the following: 
+Currently, the System administration utility supports only Delete operations. Here are the results if you delete network printers by using the **System network printers management** page:
 
-- All documents in the printer queue that are directed at the printer are deleted 
-- The network printer is deleted for all legal entities in the organization 
-- The domain admins can register devices using the old printer name 
-- The organization admins can continue to use the existing tools to manage network printer settings for a single legal entity 
+- All documents in the printer queue that are directed at the printer are deleted.
+- The network printer is deleted for all legal entities in the organization.
+- Domain admins can register devices by using the old printer name.
+- The organization admins can continue to use the existing tools to manage network printer settings for a single legal entity.
