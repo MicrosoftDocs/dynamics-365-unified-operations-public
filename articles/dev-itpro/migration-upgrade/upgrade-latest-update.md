@@ -227,6 +227,21 @@ Should you run in to an issue that is causing undue downtime on your Production 
 **Upgrade additional environments** - 
 You can choose to upgrade additional sandbox environments in this same fashion.  You also can simply Deallocate, and Delete your other sandbox environments and then re-deploy on the newer version.  Using the [Database Refresh](../database/database-refresh.md) self-service action, you can copy in the upgraded database from another Sandbox or Production environment.
 
+**Known Issues**
+
+*Prepare operation could not start.  Microsoft support has been notified.  If the issue persists, please contact support with this ID*
+This is a known issue around environment certificates on the LCS backend.  If this impacts you please submit a support ticket with your ActivityID from the error message and we will work to get it resolved.  Going forward we are building a list of impacted environments and will proactively fix this issue.
+
+*I want to cancel the upgrade and try again at a later time*
+To cancel you can use the Cancel Upgrade action from the Maintain menu.  The Maintain menu is visible from the old or original Sandbox View, and not from the Upgrade-in-progress view.
+
+*Upgrade failed at step X: DVT script for service model: MRProcessService*
+This DVT error is intermittent and is resolved by using the Resume button for your data upgrade package.  Click Resume and the process will pick up at this step and move forward.  Going forward we are trying to reliably reproduce this issue and will produce a fix.
+
+*Application configuration sync failed.  Call to TTSCOMMIT without first calling TTSBEGIN.*
+This TTSCOMMIT error is intermittent and is resolved by using the Resume button for your data upgrade package.  Click Resume and the process will pick up at this step and move forward.  Going forward we are trying to reliably reproduce this issue and will produce a fix.
+
+
 ## Scenario 4: Upgrade to the most current platform only
 
 If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, and Directory and Test Essentials), you can do an in-place update of your platform without upgrading to a new environment. For more information about this process, see [Upgrade Finance and Operations to the latest platform update](upgrade-latest-platform-update.md). If you upgrade only your platform, you don't have to do a code upgrade (scenario 2 in this topic) or run data upgrade scripts.
