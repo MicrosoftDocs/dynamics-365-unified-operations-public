@@ -42,10 +42,10 @@ To learn more about this feature, complete the example in this topic. Alternativ
 
 This example shows how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an ER configuration from RCS. In this example, you select the desired version of the ER configuration that has been configured in an RCS instance, and you import that version into the current Finance and Operations instance for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.
 
-To complete the steps in this example, you must first complete the steps in [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md). You must also have access to an RCS instance that contains at least one ER configuration that has a status of either **Completed** or **Shared**.
+To complete the steps in this example, you must first complete the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md). You must also have access to an RCS instance that contains at least one ER configuration that has a status of either **Completed** or **Shared**.
 
 1. Go to **Organization administration \> Workspaces \> Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the configuration provider for the Litware, Inc. sample company is listed, and that it's marked as **Active**. If you don't see this configuration provider, follow the steps in [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md).
+2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the configuration provider for the Litware, Inc. sample company is listed, and that it's marked as **Active**. If you don't see this configuration provider, follow the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. If no RCS environment has been provisioned for your company, in the **External Links** section, select **Regulatory services – Configuration**. Then follow the instructions to provision an RCS environment.
 4. In the **Related links** section, select **Electronic reporting parameters**.
 5. On the **Electronic reporting parameters** page, select the **RCS** tab.
