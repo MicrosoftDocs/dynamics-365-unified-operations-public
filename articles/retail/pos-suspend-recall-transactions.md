@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Suspend and resume transactions in the point of sale (POS)
-description: Users can suspend an in-progress transaction and resume it at a later time or on a different register using Dynamics 365 for Retail.
+title: Suspend and resume a transaction in the point of sale (POS)
+description: This topic explains how users can suspend in-progress transactions and then resume them later or on a different register by using Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 11/27/2018
@@ -32,47 +32,50 @@ ms.dyn365.ops.version: Version 1611
 
 # Suspend and resume transactions in the point of sale (POS)
 
-POS users can suspend an in-progress transaction and resume it at a later time or on a different register. A common scenario involving suspending a transaction is to quickly free up a register for a different task without losing any progress on the current transaction. For example, a store associate begins processing a customer's transaction on a mobile device, but needs to complete it on register with a cash drawer. The user would suspend the transaction on their mobile device so it could be recalled and resumed on a different register.
+[!include [banner](includes/banner.md)]
 
-## Configure suspend and resume
+Point of sale (POS) users can suspend in-progress transactions, and then resume them later or on a different register. Transactions are often suspended to quickly free up a register for a different task without losing any progress on the current transaction. For example, a store associate starts to process a customer's transaction on a mobile device but must complete it on a register that has a cash drawer. In this case, the store associate can suspend the transaction on the mobile device, and then recall and resume it on a register.
 
-### POS Operations
-Suspend and resume scenarios are enabled in POS by using two [POS operations](pos-operations.md), which can be assigned to [button grids](pos-screen-layouts.md) on the transaction screen or welcome screen.
+## Configure suspend and resume functionality
+
+### POS operations
+Two [POS operations](pos-operations.md) let the POS support suspend and resume scenarios. You can assign these operations to [button grids](pos-screen-layouts.md) on the transaction page or the welcome page.
 
 - 503: Suspend transaction
 - 504: Recall transaction
 
 ### Receipt template
-The POS can be configured to generate a printed slip when a transaction is suspended so that the slip can be used to quickly identify and recall the transaction at a later time.  
+The POS can be configured to generate a printed slip when a transaction is suspended. That slip can then be used to quickly identify and recall the transaction later.
 
-To enable printing a slip, you must add the **Suspended transaction** receipt format to the store's **Receipt profile**.  The format itself can be designed to include or exclude details about the transaction, including a barcode to enable scanning.
+To enable the POS to print a slip, you must add the **Suspended transaction** receipt format to the store's receipt profile. You can design the receipt format so that it includes or excludes specific details about the transaction. For example, the format can include a barcode to support scanning.
 
 ### Receipt numbering
-As with other POS transaction types that generates a printed receipt, the number sequence can be defined in the **Receipt numbering** section of the store's **Functionality profile**. 
+As for other POS transaction types that generate a printed receipt, you can define a number sequence for suspended transactions in the **Receipt numbering** section of the store's functionality profile.
 
 ### Void when closing shift
-When enabled, the "void when closing shift" option will require that users either complete or void any suspended transactions before closing their shift. During the close shift operation, the POS will prompt the user to either view or void any outstanding suspended transactions. 
+You can use the **Void when closing shift** option to require that users either complete or void any suspended transactions before they close their shift. During the **Close shift** operation, the POS will prompt users to either view or void any outstanding suspended transactions.
 
 ## Suspend and resume a transaction
 
 ### Suspend a transaction
-Users with suffiencent privileges and with a screen layout containing the **Suspended transaction** operation can suspend a transaction to be recalled at a later time or from a different register.  
+Users who have sufficient privileges, and who have a screen layout that includes the **Suspend transaction** operation, can suspend a transaction so that it can be recalled later or on a different register.
 
-Transactions can only be suspended if they do not contain:
+Transactions can be suspended only if they do **not** contain the following types of lines:
+
 - Active payment lines
-- Gift card lines (issue or add to).
+- Gift card lines (either to issue a gift card or to add to the gift card balance)
 
-A suspended transaction does not impact sales or inventory availability information for the store.
+A suspended transaction doesn't affect sales information or inventory availability information for the store.
 
 ### Resume a suspended transaction
-Suspendeded transactions can be recalled and resumed within the same store by any user with suffiencient privileges and with a layout containing the **Recall transaction** operation.
+Suspended transactions can be recalled and resumed in the same store by any user who has sufficient privileges, and who also has a layout that includes the **Recall transaction** operation.
 
-Suspended transactions can quickly and easily be recalled by scanning the barcode on the printed slip while viewing the list of transactions from the **Recall transaction** operation.
+To quickly and easily recall a suspended transaction, scan the barcode on the printed slip while you're viewing the list of transactions from the **Recall transaction** operation.
 
 ### Considerations for offline mode
 
-- Any transaction which is suspended in online mode cannot be resumed in offline mode, as the data is not synced to the offline database.
-- If the user suspended a transaction while in offline mode, they can recall those transactions in offline mode as long as POS is not switched back to online from the time the transaction was suspended. Once switched back to online, the suspended transaction data is moved to the online database and is removed from the offline database. Therefore, the transactions can only be resumed in online mode. If the user switches back to offline they won't be able to resume those suspended transaction as they are already removed from the offline database.
+- Any transaction that is suspended while the POS is in online mode can't be resumed in offline mode, because the data isn't synced to the offline database.
+- If you suspend a transaction while the POS is in offline mode, you can recall it in offline mode, provided that the POS wasn't switched back to online mode at any time since you suspended the transaction. When the POS is switched back to online mode, data about suspended transactions is moved to the online database and removed from the offline database. Therefore, the transactions can be resumed only in online mode. If you switch the POS back to offline mode, you won't be able to resume those suspended transaction, because they have already been removed from the offline database.
 
 ### Void a suspended transaction
-Suspended transactions can be voided either by recalling the transaction and then performing the **Void transaction** operation or by selecting the transaction from the **Recall transaction** list and choosing **Void** from the app bar. Alternatively, the store can be configured to prompt users to void suspeneded transactions when closing their shift. 
+You can void suspended transactions either by recalling the transaction and then performing the **Void transaction** operation, or by selecting the transaction in the **Recall transaction** list and selecting **Void** on the app bar. Alternatively, the store can be configured to prompt users to void suspended transactions when they close their shift.
