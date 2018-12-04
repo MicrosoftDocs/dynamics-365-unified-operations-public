@@ -3,10 +3,10 @@
 
 title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations.
-author: robadawy
+author: laneswenka
 manager: AnnBe
 
-ms.date: 10/03/2018
+ms.date: 12/04/2018
 
 ms.topic: article
 ms.prod: 
@@ -35,34 +35,26 @@ ms.dyn365.ops.version: Platform update 1
 # Process for moving to the latest update of Finance and Operations
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
+This topic explains the process of updating or upgrading to the latest release of Microsoft Dynamics 365 for Finance and Operations.  It describes the overall process and supported scenarios, but doesn’t provide detailed instructions for every step of the process.
 
 For information about the contents of each release of Dynamics 365 for Finance and Operations, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
 ## Definitions
 
-Finance and Operations platform updates consist mainly of the following components:
+* Public preview – This is a feature that has been made generally available to all, and the functionality is supported.  There are potentially additional functionality improvements, or Known Issues, that look to be resolved to end the preview phase.
+* Deprecation – This is a feature or process that will not be supported long term.  The date of when this feature or process ends support should be stated.
+* Upgrade – This is the process of moving from one official release of Finance and Operations to the next, but prior to version 8.0.  Some examples would be moving from 7.1 to 7.3, or 7.3 to 8.1 and so forth.  This involves standing up a free Sandbox environment, Code Upgrade, and Data Upgrade.
+* Update – This is the process of applying a binary package to your environment to advance it from one official release of Finance and Operations to the next, starting with version 8.0.  This involves drastically lower downtime requirements, and involves no Data Upgrade.
 
-- Application Object Server (AOS)
-- Analytics and reporting
-- Microsoft Office integration
-- Data management
-- Integration services
-- The web client
-- Other binaries
-
-They also include the following Application Object Tree (AOT) models:
-
-- Application Platform
-- Application Foundation
-- Directory and Test Essentials
-
-All other components are referred to as the Finance and Operations application.
 
 ## Introduction to the scenarios
 
-### Scenario 1: Update to a specific application hotfix
+### Scenario 1: Update to a specific application hotfix [To Be Deprecated]
+
+> [!Important]
+> This will be deprecated by April, 2019 when all customers should be on version 8.1 or newer.  Version 8.1 no longer releases or supports individual X++ hotfixes.
 
 Use this scenario when one or more small hotfixes are required in order to address a specific issue, but business factors such as time or cost limitations prohibit a complete application update.
 
@@ -74,13 +66,9 @@ Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow cu
 
 ### Scenario 3: Upgrade to the latest application release
 
-Use this scenario when business factors such as time or cost limitations prohibit an update to the complete latest application release. Here are some examples of application updates:
+Use this scenario to advance to the latest release of Finance and Operations.  
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (also known as 7.2)
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3
-- Microsoft Dynamics 365 for Finance and Operations 8.0
-
-To install a platform-only update, use scenario 4 instead.
+Using the defined process below, you will be able to stand up a free Sandbox environment and will be in full control of your downtime window in both your pre-production and Production environments.
 
 ### Scenario 4: Upgrade to the latest platform only
 
@@ -93,7 +81,10 @@ Use this scenario to update to the latest release of the platform when no applic
 > [!IMPORTANT]
 > Microsoft Dynamics AX with platform update 1 (May 2016) and Platform update 2 enabled overlayering of platform X++ code. In later platform updates, the platform-level X++ is locked for overlayering. If you're upgrading from Platform update 1 or Platform update 2, your developers must refactor the overlayering as extensions before you can upgrade. If you're upgrading from Microsoft Dynamics 365 for Operations with platform update 3 (November 2016) or later to a later platform update, you don't have to refactor your X++ code.
 
-## Scenario 1: Update to a specific application hotfix
+## Scenario 1: Update to a specific application hotfix [To Be Deprecated]
+
+> [!Important]
+> This will be deprecated by April, 2019 when all customers should be on version 8.1 or newer.  Version 8.1 no longer releases or supports individual X++ hotfixes.
 
 Use this scenario when one or more small hotfixes are required in order to address a specific issue, but business factors such as time or cost limitations currently prevent you from doing a complete major application update.
 
@@ -147,7 +138,7 @@ Regardless of whether you're a live customer or you're still in the implementati
 
 For details about the code migration steps, see [Code migration](../dev-tools/developer-home-page.md#code-migration). After you've completed the code migration, continue to scenario 3.
 
-## Scenario 3: Upgrade to the latest application release
+## Scenario 3: Upgrade to the latest application release [Public Preview]
 
 > [!Important]
 > If you are on application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from 8.0 to 8.1](./appupdate-80-81.md).
@@ -172,52 +163,53 @@ To run the data upgrade process, follow the steps in [Process for data upgrade f
  
 ### Upgrade your Tier2/Standard Acceptance Test (or higher) sandbox environment
 
-When the following conditions are met, you must request that the Microsoft Servicing Engineering Team (DSE) run this process for you. You submit the request via LCS.
+When you’ve completed the code and have been able to execute a data upgrade in your development environment end-to-end without manipulating data in SQL Server, you may elect to begin the process in Sandbox.
 
-- You've completed the code upgrade process and have tested the data upgrade in your development environment.
-- You're live in production, or you've already deployed your production environment.
+To do so, ensure that your account has the Self-Service Upgrade feature enabled by visiting Lifecycle Services -> Preview feature management.  Locate the option for Upgrade environment self serve and ensure it is set to Enabled.
 
-DSE will upgrade one Tier 2 (Standard Acceptance Test) or higher sandbox environment. This upgrade process is used as a control and is a required step. The same upgrade process, including the same customization packages, will be used for your production environment upgrade. DSE uses this process as a mock upgrade to ensure a successful upgrade of your production environment.
+####Prerequisite####
+As a precursor to beginning your upgrade, it is highly recommended to ensure your Sandbox environment has the latest Production data.  This will give you a higher degree of confidence that the upgrade will work in Production if the data set is current.  To do this, please use our other self-service action for [Database Refresh](../database/database-refresh.md).
 
-#### Use LCS to submit an upgrade request to DSE
+####Begin the Upgrade####
+On your sandbox environment, visit the Maintain menu and select the Upgrade button.  A new slider will open for you to select the latest Application and Platform combination.
+*Note* – if you receive an error for Preparation Failed, see the Known Issues list below.
 
-1. On the **Environment details** page for the environment that you're upgrading, select **Maintain**, and then select **Upgrade**. A dialog box appears, where you can enter the upgrade request.
+####Preparation####
+The environment details screen will now refresh to show two distinct Sandbox environments in the top right corner.  You can toggle back and forth between to get to your old Sandbox or your new Upgrade-in-progress Sandbox.  
 
-2. Select the target version that you're upgrading to, and specify the start and end times of your preferred downtime window.
-    - A date and time picker will show the available times.
-    - To help ensure that the upgrade can be done within your expected timeframe, you must submit your upgrade request a minimum of five working days before you expect to upgrade. The advance notice is required so that a new environment can be prepared before your downtime window.
-    
-    > [!IMPORTANT] 
-    > Requests are subject to availability of the DSE team, therefore, we cannot ensure the availability of a specific upgrade window. It is best to request your upgrade window as soon as you can commit to it.
-    
-    - You must allow for at least eight hours between the start and end of the downtime. This time is required in order to swap in the new environment and complete the data upgrade process.
+The preparation phase can take upwards of 8 hours as it is similar to a full environment deployment.  The key difference with your Upgrade-in-progress Sandbox is that it is connected to an empty Azure SQL database, and that it is running on the newer version you have selected to deploy.
 
-3. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select application (AOT) deployable packages during your upgrade request. Select the AOT deployable packages that contain your upgraded custom code and the required X++ hotfixes that were created in your development or build environment. Use the **Customize solution assets** tab, as shown in the following illustration.
+During this time, your original Sandbox is left untouched and there is zero downtime impact.  
 
-    ![Customize solution assets tab](./media/selectsolutionassets.PNG)
+*Note* - if you receive an error that Staging Deployment has failed, Microsoft Dynamics Service Engineering (DSE) team has been notified and we will proactively resolve the issue for you.  You will receive an email when the Staging Deployment has completed successfully.  This can occur if Microsoft Azure doesn’t have the required resources available in your region, we will work with them to provide more allocation.
 
-    > [!IMPORTANT]
-    > - If you don't select application deployable packages in your service request, DSE might reject the request.
-    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is intended as a pre-production validation of the upgrade process.
-    > - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. You can then resolve the issue that caused the failure and reschedule the upgrade at a new time.
-    > - If you're using Retail features, a minimum of 16 hours of downtime is required, because additional upgrade steps are required.
+####Package Application####
+Once the Staging Deployment completes, you can revisit the Environment Details page -> Upgrade-in-progress view.  On this view, you will see a new Upgrade sub-menu.  
 
-#### Validate your sandbox environment
+Under this Upgrade menu, you will have an option for Apply Updates.  This is how you can apply your Software Deployable Packages on the new environment.  This includes any binary package be it from an ISV solution, your own Customization packages, and Platform Binary Update packages.  
 
-When the DSE team completes the upgrade process, the service request status will change to **Ready for Validation**. The system is available at this stage. The updated environment will have the same URL, the same environment name, and the same machine names as the old environment. Validate and then change the status of the service request to **Validation Successful** or **Validation Failed**. If you set the service request to **Validation Failed**, a rollback of the upgrade can be requested creating a support request. For more information, see [Manage Finance and Operations support experiences](../lifecycle-services/cloud-powered-support-lcs.md). The typical time for the support team to perform the rollback is 2-4 hours. You have up to five working days to request a rollback.  After that time, Microsoft will retire the old environment.
+As you apply a new package to the environment, it is the same process as normal environment servicing.  When complete, you will be required to use the Sign Off button on that package before you can move forward or apply another package.
 
-#### Upgrade additional Tier 2 or higher sandbox environments
+If a package deployment fails, you can use the Rollback button to reverse that package deployment.  Note, this is NOT the Rollback option under the Upgrade sub-menu.  Each package deployment can around one hour to complete.
 
-You don't have to upgrade any additional Tier 2 or higher sandbox environments. Instead, delete and redeploy them, and then create a database refresh request to copy a database from a Tier 2 or higher environment that has already been upgraded. Alternatively, you can manually upgrade these environments by following the steps in [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md).
+####Data Upgrade & Environment Swap####
+Once all packages are applied to your Upgrade-in-progress Sandbox and signed off, you can begin the Data Upgrade.  Note, this will begin the downtime for your original Sandbox environment.
 
-#### Upgrade Tier 1 environments
+Using the Upgrade sub-menu, click the Data Upgrade option.  This will power down your original Sandbox environment, and will swap the database connection so that your new environment is connected to the original database.  This process can take up to one hour.
 
-You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version and then synchronizing to your upgraded Azure DevOps branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+After this, the Data Upgrade package for your target version will be automatically applied for you.  The process of applying the Data Upgrade package can vary depending on the size of your database.
 
-### Upgrade your production environment
+####Commit or Rollback####
+After the Data Upgrade operation completes, you can review the environment and have your users perform business validation activities.  If this validation is successful, you can mark the entire upgrade as a success by using the Commit action from the Upgrade sub-menu.  You must Commit the upgrade to move on to your Production environment.
 
-1. Use LCS to submit an upgrade request to update the production environment, just as you did for the sandbox environment.
-2. Complete your validation, testing, and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** and then submit a production outage. For more information, see [Report production outage](https://docs.microsoft.com/en-us/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage). Typical time for the DSE team to perform the rollback is 2-4 hours. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+If the validation fails, you can use the Rollback action from the Upgrade sub-menu.  This will perform a Point-in-time restore of the database, and will swap the database connection back to your original Sandbox and bring it back online.  This will provide the Sandbox back in its previous state. 
+
+####Upgrade Production####
+By reaching this stage you have finished the upgrade process.  You can now begin the same process on your Production environment and can follow the exact same steps.
+Should you run in to an issue that is causing undue downtime on your Production upgrade, please use the [Report production outage](https://docs.microsoft.com/en-us/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage) process to alert Microsoft for assistance.
+
+####Upgrade additional environments####
+You can choose to upgrade additional sandbox environments in this same fashion.  You also can simply Deallocate, and Delete your other sandbox environments and then re-deploy on the newer version.  Using the [Database Refresh](../database/database-refresh.md) self-service action, you can copy in the upgraded database from another Sandbox or Production environment.
 
 ## Scenario 4: Upgrade to the most current platform only
 
