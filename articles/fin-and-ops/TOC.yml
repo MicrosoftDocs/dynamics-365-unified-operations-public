@@ -2741,6 +2741,8 @@
           href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
         - name: Import configurations from Lifecycle Services
           href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+        - name: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
+          href: ../dev-itpro/analytics/rcs-download-configurations.md
         - name: Download configurations from Lifecycle Services
           href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
         - name: Import configurations
