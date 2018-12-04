@@ -41,29 +41,28 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Domain Administrators register the network printers with the Dynamics 365 for Finance and Operations service using the Document Routing Agent (DRA). After the printers are registered, it’s the responsibility of the Organization administrator to make printers available to end users. These settings are managed in the **Network printers** form (**Organization administration** > **Setup** > **Network printers**).   
  
-Because the settings presented in this form are intended for Organization administrators, the data is restricted to the active legal entity. System administrators can't manage network printer settings across legal entities. This makes it difficult to update settings across Legal Entities in response to network printer changes. 
-SCENARIOS 
-System administrator needs to Delete a network printer instance – this is common for cases where the network printer path is updated or hardware has been replaced 
-Organization wants to purge all documents in the printer queue – documents rendered by service that are waiting to be printed can be deleted using options available in the System network printers form 
-Quickly toggle availability of network printers for multiple legal entities – manage the printer properties including the Active state for a printer in multiple Legal Entities using a single view (Coming soon…!) 
-Provide friendly names for network printers for multiple legal entities – establish friendly names and descriptions for printers the makes sense to the users associated with individual Legal Entities (Coming soon…!) 
-This is both a recovery tool for inadvertent print instructions and a means of simplifying the task of managing network printer settings including access from specific Legal Entities. 
+Because the settings presented in this form are intended for Organization administrators, the data is restricted to the active legal entity. System administrators can't manage network printer settings across legal entities. This can makeit difficult to update settings across legal entities in some situations. 
+These situations can include network printer changes such as deleting a network printer instance, which occurs when a network printer path is updated or hardware is replaced. Or, trying to purge all documents in the printer queue.
 
-Page Break
+The System administration utility is a recovery tool for inadvertent print instructions and a way to simplify the task of managing network printer settings, including access from specific Legal Entities. 
+
  
-How do I access the feature? 
-Once the feature has been enabled through Feature Flighting, a Preview link will appear in the Organization administration > Setup > Network printers form 
+## Access the feature
+After the feature has been enabled through feature flighting, a **Preview** link will appear in the **Network printers** form.
+
+![Preview link](./media/network-printer-01.png) 
+
+1. Click **Organization administration** > **Setup** > **Network printers**.
+2. Click **System network printers**. 
+3. On the **System network printers** form, register the network printers with the service by using the DRA. You will see the configuration information for each legal entity in the organization. 
  
-Click on the System network printers link 
-This navigates you directly into the System network printers form.  After registering network printers with the service using the DRA, you will see the configuration information for each Legal Entity in the organization. 
- 
-What options do I have? 
-Currently, the administration tool is limited to support Delete operations only.  However, we will be lighting up the ability to Edit settings for individual Legal Entities using this form in a future update.   
-Deleting network printers using the management form triggers the following events: 
-All documents in the printer queue directed at the printer are deleted 
-Network printer is deleted for all Legal Entities in the organization 
-Domain admins may register devices using the old printer name 
-Organization admins may continue to use the existing tools to manage network printer settings for a single Legal Entity 
+## Supported operations
+Currently, the administration tool is limited to support Delete operations only. Deleting network printers using the **System network printers management** form triggers the following events: 
+
+- All documents in the printer queue that are directed at the printer are deleted 
+- The network printer is deleted for all legal entities in the organization 
+- The domain admins can register devices using the old printer name 
+- The organization admins can continue to use the existing tools to manage network printer settings for a single legal entity 
  
 
 
