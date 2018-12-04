@@ -167,54 +167,54 @@ When you’ve completed the code and have been able to execute a data upgrade in
 
 To do so, ensure that your account has the Self-Service Upgrade feature enabled by visiting Lifecycle Services -> Preview feature management.  Locate the option for Upgrade environment self serve and ensure it is set to Enabled.
 
-1. **Prerequisite** - 
+**Prerequisite** - 
 As a precursor to beginning your upgrade, it is highly recommended to ensure your Sandbox environment has the latest Production data.  This will give you a higher degree of confidence that the upgrade will work in Production if the data set is current.  To do this, please use our other self-service action for [Database Refresh](../database/database-refresh.md).
 
-2. **Begin the Upgrade** - 
+**Begin the Upgrade** - 
 On your sandbox environment, visit the Maintain menu and select the Upgrade button.
-<br/><img src="media/UpgradeAutomation/01_Select.png" width="100px" />
+<br/><img src="media/UpgradeAutomation/01_Select.png" width="500px" /><br/>
 A new slider will open for you to select the latest Application and Platform combination.
-<br/><img src="media/UpgradeAutomation/02_Prepare.png" width="100px" />
+<br/><img src="media/UpgradeAutomation/02_Prepare.png" width="500px" /><br/>
 *Note* – if you receive an error for Preparation Failed, see the Known Issues list below.
 
-3. **Preparation** - 
+**Preparation** - 
 The environment details screen will now refresh to show two distinct Sandbox environments in the top right corner.  You can toggle back and forth between to get to your old Sandbox or your new Upgrade-in-progress Sandbox.  
-<br/><img src="media/UpgradeAutomation/03_Provision.png" width="100px" />
+<br/><img src="media/UpgradeAutomation/03_Provision.png" width="500px" /><br/>
 The preparation phase can take upwards of 8 hours as it is similar to a full environment deployment.  The key difference with your Upgrade-in-progress Sandbox is that it is connected to an empty Azure SQL database, and that it is running on the newer version you have selected to deploy.
 
 During this time, your original Sandbox is left untouched and there is zero downtime impact.  
 
 *Note* - if you receive an error that Staging Deployment has failed, Microsoft Dynamics Service Engineering (DSE) team has been notified and we will proactively resolve the issue for you.  You will receive an email when the Staging Deployment has completed successfully.  This can occur if Microsoft Azure doesn’t have the required resources available in your region, we will work with them to provide more allocation.
 
-4. **Package Application** - 
+**Package Application** - 
 Once the Staging Deployment completes, you can revisit the Environment Details page -> Upgrade-in-progress view.  On this view, you will see a new Upgrade sub-menu.  
 
 Under this Upgrade menu, you will have an option for Apply Updates.  This is how you can apply your Software Deployable Packages on the new environment.  This includes any binary package be it from an ISV solution, your own Customization packages, and Platform Binary Update packages.  
-<br/><img src="media/UpgradeAutomation/05_ApplyUpdates.png" width="100px" />
+<br/><img src="media/UpgradeAutomation/06_ApplyUpdates.png" width="500px" /><br/>
 
 As you apply a new package to the environment, it is the same process as normal environment servicing.  When complete, you will be required to use the Sign Off button on that package before you can move forward or apply another package.
 
 If a package deployment fails, you can use the Rollback button to reverse that package deployment.  Note, this is NOT the Rollback option under the Upgrade sub-menu.  Each package deployment can around one hour to complete.
 
-5. **Data Upgrade & Environment Swap** - 
+**Data Upgrade & Environment Swap** - 
 Once all packages are applied to your Upgrade-in-progress Sandbox and signed off, you can begin the Data Upgrade.  *Note*, this will begin the downtime for your original Sandbox environment.
 
 Using the Upgrade sub-menu, click the Data Upgrade option.  This will power down your original Sandbox environment, and will swap the database connection so that your new environment is connected to the original database.  This process can take up to one hour.
-<br/><img src="media/UpgradeAutomation/08_DataUpgrade.png" width="100px" />
-<br/><img src="media/UpgradeAutomation/09_Swap.png" width="100px" />
+<br/><img src="media/UpgradeAutomation/08_DataUpgrade.png" width="500px" /><br/>
+<br/><img src="media/UpgradeAutomation/09_Swap.png" width="500px" /><br/>
 
 After this, the Data Upgrade package for your target version will be automatically applied for you.  The process of applying the Data Upgrade package can vary depending on the size of your database.
 
-6. **Commit or Rollback** - 
+**Commit or Rollback** - 
 After the Data Upgrade operation completes, you can review the environment and have your users perform business validation activities.  If this validation is successful, you can mark the entire upgrade as a success by using the Commit action from the Upgrade sub-menu.  You must Commit the upgrade to move on to your Production environment.
-<br/><img src="media/UpgradeAutomation/10_Commit.png" width="100px" />
+<br/><img src="media/UpgradeAutomation/10_Commit.png" width="500px" /><br/>
 If the validation fails, you can use the Rollback action from the Upgrade sub-menu.  This will perform a Point-in-time restore of the database, and will swap the database connection back to your original Sandbox and bring it back online.  This will provide the Sandbox back in its previous state. 
 
-7. **Upgrade Production** - 
+**Upgrade Production** - 
 By reaching this stage you have finished the upgrade process.  You can now begin the same process on your Production environment and can follow the exact same steps.
 Should you run in to an issue that is causing undue downtime on your Production upgrade, please use the [Report production outage](https://docs.microsoft.com/en-us/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage) process to alert Microsoft for assistance.
 
-8. **Upgrade additional environments** - 
+**Upgrade additional environments** - 
 You can choose to upgrade additional sandbox environments in this same fashion.  You also can simply Deallocate, and Delete your other sandbox environments and then re-deploy on the newer version.  Using the [Database Refresh](../database/database-refresh.md) self-service action, you can copy in the upgraded database from another Sandbox or Production environment.
 
 ## Scenario 4: Upgrade to the most current platform only
