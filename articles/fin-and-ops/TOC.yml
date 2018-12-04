@@ -50,6 +50,8 @@
         href: get-started/features-not-implemented-on-prem.md
       - name: Finance and Operations version 8.1.3 (December 2018)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Platform update 23 (December 2018)
+        href: get-started/whats-new-platform-update-23.md
       - name: Platform update 22 (November 2018)
         href: get-started/whats-new-platform-update-22.md
       - name: Finance and Operations version 8.1.2 (November 2018)
@@ -2751,6 +2753,8 @@
           href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
         - name: Import configurations from Lifecycle Services
           href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+        - name: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
+          href: ../dev-itpro/analytics/rcs-download-configurations.md
         - name: Download configurations from Lifecycle Services
           href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
         - name: Import configurations
