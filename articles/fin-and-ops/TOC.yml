@@ -48,6 +48,8 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Finance and Operations version 8.1.3 (December 2018)
+        href: get-started/whats-new-changed-8-1-3.md
       - name: Platform update 22 (November 2018)
         href: get-started/whats-new-platform-update-22.md
       - name: Finance and Operations version 8.1.2 (November 2018)
