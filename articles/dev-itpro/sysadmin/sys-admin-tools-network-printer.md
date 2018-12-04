@@ -44,7 +44,7 @@ Domain Administrators register the network printers with the Dynamics 365 for Fi
 Because the settings presented in this form are intended for Organization administrators, the data is restricted to the active legal entity. System administrators can't manage network printer settings across legal entities. This can makeit difficult to update settings across legal entities in some situations. 
 These situations can include network printer changes such as deleting a network printer instance, which occurs when a network printer path is updated or hardware is replaced. Or, trying to purge all documents in the printer queue.
 
-The System administration utility is a recovery tool for inadvertent print instructions and a way to simplify the task of managing network printer settings, including access from specific Legal Entities. 
+The System administration utility is a recovery tool for inadvertent print instructions and a way to simplify the task of managing network printer settings, including access from specific legal entities. 
 
  
 ## Access the feature
@@ -57,12 +57,9 @@ After the feature has been enabled through feature flighting, a **Preview** link
 3. On the **System network printers** form, register the network printers with the service by using the DRA. You will see the configuration information for each legal entity in the organization. 
  
 ## Supported operations
-Currently, the administration tool is limited to support Delete operations only. Deleting network printers using the **System network printers management** form triggers the following events: 
+Currently, the administration tool is limited to support **Delete** operations only. Deleting network printers using the **System network printers management** form causes the following: 
 
 - All documents in the printer queue that are directed at the printer are deleted 
 - The network printer is deleted for all legal entities in the organization 
 - The domain admins can register devices using the old printer name 
 - The organization admins can continue to use the existing tools to manage network printer settings for a single legal entity 
- 
-
-
