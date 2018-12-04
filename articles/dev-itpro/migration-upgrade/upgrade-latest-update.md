@@ -180,8 +180,10 @@ A new slider will open for you to select the latest Application and Platform com
 *Note* – if you receive an error for Preparation Failed, see the Known Issues list below.
 
 **Preparation** - 
-The environment details screen will now refresh to show two distinct Sandbox environments in the top right corner.  You can toggle back and forth between to get to your old Sandbox or your new Upgrade-in-progress Sandbox.  
+The environment details screen will now refresh to show two distinct Sandbox environments in the top right corner.  You can toggle back and forth between to get to your old Sandbox or your new Upgrade-in-progress Sandbox.
+
 <br/><img src="media/UpgradeAutomation/03_Provision.png" width="700px" /><br/>
+
 The preparation phase can take upwards of 8 hours as it is similar to a full environment deployment.  The key difference with your Upgrade-in-progress Sandbox is that it is connected to an empty Azure SQL database, and that it is running on the newer version you have selected to deploy.
 
 During this time, your original Sandbox is left untouched and there is zero downtime impact.  
