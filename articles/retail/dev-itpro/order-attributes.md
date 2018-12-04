@@ -5,7 +5,7 @@ title: Define and set order attributes
 description: This topic explains how to edit and set attributes values for orders directly in Retail headquarters, the POS, and CRT.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 Previously, the attribute framework supported attributes only in online orders. However, the framework has been extended so that it now supports attributes in cash-and-carry transactions, customer orders, and call center orders. This enhancement lets you edit and set attribute values for orders directly in Retail headquarters, the point of sale (POS), and the Commerce runtime (CRT). Retail headquarters now includes pages for editing and updating attribute values. Therefore, you can set the values for call center orders in Retail headquarters. Although no out-of-box user interface (UI) for setting attribute values is available in the POS, you can extend the POS to add a new UI. If you don't require a UI and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Retail headquarters configurations. No database changes are required. Previously, you had to create new tables in Retail headquarters and the channel database, and then modify those tables.
 
-## Why and when you should customer attributes
+## Why and when you should order attributes
 
 If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or Retail headquarters, use customer attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in Retail headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and Retail headquarters. However, customer attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables, but you still need to create the core business logic and the POS UI.
 
@@ -95,6 +95,31 @@ Next, you must define the attributes. Follow these steps for each attribute that
 1. Go to **Retail** > **Retail IT** > **Distribution schedule**.
 2. Select **Products (1040)**, and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**. This step is required only if you added any new attributes, attribute types, or attribute groups.
 3. Select **Channel configuration job (1070)**, and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
+
+# Show order attributes in the POS transaction screen using the Attribute control (this feature is available in version 8.1.3 and later)
+
+## Retail headquarters
+
+1. Select **Retail > Channel setup > POS Setup > POS > Screen layouts**.
+2. On the screen layout page, click **New** to create a new screen layout, or select an existing screen layout.
+3. Enter the ID and name for the screen layout.
+4. On the **Layout sizes** FastTab, select the **Add** button to add new layout sizes for the POS.
+5. In the **Name** field, select the POS screen resolution.
+6. On the **Layout sizes** FastTab, click the **Layout designer** button.
+7. If you're prompted, select **Yes** to download and install the Retail Designer Host by using the **Install/Run** button.
+8. When you're prompted, enter the Microsoft Dynamics 365 user name and password to start the designer.
+9. After the designer is started, drag the Attributes panel anywhere in the screen layout designer and adjust the size according to your screen width.
+	10. When you've finished, select **OK** to save your changes.
+	11. Close the screen layout designer by clicking the **Close** button (X) in the upper-right corner. When you're prompted, select **Yes** to save your changes.
+	12. Go to **Retail > Retail IT > Distribution schedule**.
+	13. Select the Registers job (1090), and then, on the Action Pane, select **Run now**. When you're prompted, select Yes.
+
+## POS
+
+1. Start POS, and add any item to a transaction. You should see the Attribute panel in the transaction screen with the configured attributes both for header and lines.
+2. Click the **Edit** icon in the attribute panel to update the attribute value.
+3. Click the header or lines tab in the attribute panel to view the header or lines attribute. 
+4. The lines attribute will refresh automatically based on the lines selected in the transaction.
 
 ## Set attribute values for call center orders
 
@@ -181,6 +206,10 @@ You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensi
     ```
 
 ## Extend attributes to do some business logic in the POS
+
+> [!NOTE]
+> The following changes are required only if you are running the application with version 8.1.2 or earlier. 
+Starting in 8.1.3, you can use the new Attributes panel to set or update the attribute value in POS. With this control you no longer  need to write any additional code or create UI to set the attribute value in POS. In the attribute control UI has been added to set or update the attribute value. Refer to the **Show Order attributes in the POS transaction screen using the Attribute control** section in this document for more details.
 
 A new sample that has been added to the Retail SDK sets the business logic for order attributes in the POS. This sample includes code only for the business logic. It doesn't show how to save or read attribute values, because read and write operations for attributes are automated. You can set the values for attributes in either CRT or the POS, based on your scenario. If your values are based on customer input, set them in the POS client. If some business logic is involved, set the values in CRT.
 
