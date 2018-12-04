@@ -43,8 +43,8 @@ For information about the contents of each release of Dynamics 365 for Finance a
 
 - *Public preview* – This is a feature that has been made generally available to all, and the functionality is supported.  There are potentially additional functionality improvements, or Known Issues, that look to be resolved to end the preview phase.
 - *Deprecation* – This is a feature or process that will not be supported long term.  The date of when this feature or process ends support should be stated.
-- *Upgrade* – This is the process of moving from one official release of Finance and Operations to the next, but prior to version 8.0.  Some examples would be moving from 7.1 to 7.3, or 7.3 to 8.1 and so forth.  This involves standing up a free Sandbox environment, Code Upgrade, and Data Upgrade.
-- *Update* – This is the process of applying a binary package to your environment to advance it from one official release of Finance and Operations to the next, starting with version 8.0.  This involves drastically lower downtime requirements, and involves no Data Upgrade.
+- *Upgrade* – This is the process of moving from one official release of Finance and Operations to the next for source environments prior to version 8.0.  Some examples would be moving from 7.1 to 7.3, or 7.3 to 8.0 and so forth.  This involves standing up a free Sandbox environment, Code Upgrade, and Data Upgrade.
+- *Update* – This is the process of applying a binary package to your environment to advance it from one official release of Finance and Operations to the next, for source environments starting with version 8.0.  This involves drastically lower downtime requirements, and involves no Data Upgrade.
 
 
 ## Introduction to the scenarios
@@ -184,11 +184,11 @@ The environment details screen will now refresh to show two distinct Sandbox env
 
 <br/><img src="media/UpgradeAutomation/03_Provision.png" width="700px" /><br/>
 
-The preparation phase can take upwards of 8 hours as it is similar to a full environment deployment.  The key difference with your Upgrade-in-progress Sandbox is that it is connected to an empty Azure SQL database, and that it is running on the newer version you have selected to deploy.
+The preparation phase can take upwards of 8 hours as it is similar to a full environment deployment.  The Upgrade-in-progress Sandbox is initially connected to an empty Azure SQL database to improve deployment time, and allow for faster application of software deployable packages.
 
-During this time, your original Sandbox is left untouched and there is zero downtime impact.  
+During the deployment time, your original Sandbox is left untouched and there is zero downtime impact at this stage.  
 
-*Note* - if you receive an error that Staging Deployment has failed, Microsoft Dynamics Service Engineering (DSE) team has been notified and we will proactively resolve the issue for you.  You will receive an email when the Staging Deployment has completed successfully.  This can occur if Microsoft Azure doesn’t have the required resources available in your region, we will work with them to provide more allocation.
+*Note* - if you receive an error that Staging Deployment has failed, Microsoft Dynamics Service Engineering (DSE) team has been notified and we will proactively resolve the issue for you.  You will receive an email when the Staging Deployment has completed successfully.  This can occur if Microsoft Azure doesn’t have the required resources available in your region, we will work with the Azure engineers to provide more allocation.
 
 **Package Application** - 
 Once the Staging Deployment completes, you can revisit the Environment Details page -> Upgrade-in-progress view.  On this view, you will see a new Upgrade sub-menu.  
