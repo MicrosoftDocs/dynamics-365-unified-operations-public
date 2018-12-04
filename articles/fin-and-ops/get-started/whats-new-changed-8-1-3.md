@@ -50,4 +50,5 @@ For information about the bug fixes included in each of the updates that are par
 Microsoft Dynamics 365 for Finance and Operations version 8.1.3 includes Platform update 22. To learn more about Platform update 22, see 
 [What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)](whats-new-platform-update-22.md).
 
-
+## Collcction letters
+You can now choose to set up collection letters at the customer level so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored on the customer. 
