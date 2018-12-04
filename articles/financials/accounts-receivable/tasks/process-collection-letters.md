@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: CustPosting, SysQueryForm, CustCollectionLetterNote   
+ms.search.form: CustPosting, CustCollectionLetterNote   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
@@ -23,13 +23,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0
+ms.search.validFrom: 2018-12-01 
+ms.dyn365.ops.version: 8.1.3
 
 ---
 # Process collection letters
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
 
 This procedure shows how to create, print, and post collection letters. This task uses the USMF demo company.
 
