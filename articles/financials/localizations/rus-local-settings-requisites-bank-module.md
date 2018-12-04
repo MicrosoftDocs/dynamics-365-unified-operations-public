@@ -32,11 +32,11 @@ ms.dyn365.ops.version: 8.1
 
 Before working in the **Bank management** workspace, you should complete the following procedures to ensure that you have the prerequisites needed for setting up bank accounts for Russia.
 
-## Enter bank group information
+## Create a bank manually
 
-1. Go to **Cash and bank management > Setup > Bank groups** and click **Update bank accounts**.
-2. Select a bank group. 
-2. Enter Russia-specific information for the bank group.  
+1. Go to **Cash and bank management > Setup > Bank groups**.
+2. Select a bank or create a new one. 
+2. Enter Russia-specific information for the bank.  
    - **BIC** – Bank identifification code 
    - **Corr. Bank account** – Corresponding bank account
    - **Bank type** – Select either **Main**, **Foreign**, or **Branch**. If you select, **Foreign**, select a **Vendor account** on the **General** FastTab. If you select **Branch**, select a value in the **Main bank** field.
@@ -45,8 +45,26 @@ Before working in the **Bank management** workspace, you should complete the fol
 > [!NOTE]
 > Before defining a document template, create the templates as files and attach them to the record. You can determine if a document is attached by using the number indicator on the **Document attachment** icon.
 
-  ![Bank](media/rus-bank.jpg)
-    
+
+## Create banks by importing list of banks
+
+### Set up for importing bank list
+
+1.	Import the ‘Bank BIC catalog (RU)’ Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).
+Fix downloading instructions are here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs 
+
+2. Go to **Cash and bank management > Setup > Cash and bank management parameters**. In the **General** fast tab, in the **Import list of banks** felds group, in the field **Import format configuration**, select the ER configuration ‘Bank BIC catalog (RU)’## Importing list of banks 
+
+### Import list of banks
+
+Go to **Cash and bank management > Setup > Bank groups**and click **Load bank list**.
+
+The bank list may be updated for marked states or for chosen banks only.
+Use the following buttons for choosing the banks included for update.
+  - Select existing – mark and update the banks existing in the system
+  - Select all - mark and update the all banks in chosen states
+  - Deselect all - unmark all banks 
+
 
 ## Create a Bank account
 
