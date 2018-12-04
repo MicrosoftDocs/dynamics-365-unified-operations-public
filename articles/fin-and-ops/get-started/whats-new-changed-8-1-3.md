@@ -52,3 +52,7 @@ Microsoft Dynamics 365 for Finance and Operations version 8.1.3 includes Platfor
 
 ## Collection letters
 You can now set up collection letters at the customer level, so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored for the customer. 
+
+## Settle remainder
+You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions.
+
