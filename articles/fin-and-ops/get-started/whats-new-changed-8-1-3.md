@@ -46,7 +46,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 ### Bug fixes
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 8.1.3, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=) (**not yet available**).
 
-## Platform update 23
+### Platform update 23
 Microsoft Dynamics 365 for Finance and Operations version 8.1.3 includes Platform update 23. To learn more about Platform update 23, see 
 [What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (December 2018)](whats-new-platform-update-23.md).
 
