@@ -5,7 +5,7 @@ title: Rename local environments to access Azure DevOps
 description: Renaming a local development VMs is required in order to access a Azure DevOps project across multiple machines.
 author: MargoC
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
