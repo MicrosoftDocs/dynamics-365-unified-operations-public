@@ -68,6 +68,12 @@ This table lists the major releases of the application. For monthly cloud update
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.1.3</td>
+<td>8.1.227  </td>
+<td>December 2018</td>
+  <td><a href="whats-new-changed-8-1-3.md">What&#39;s new or changed in Dynamics 365 for Finance and Operations version 8.1.3 (December 2018)</a></td>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1.2</td>
 <td>8.1.195  </td>
 <td>November 2018</td>
