@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process for moving to the latest update of Finance and Operations
-description: This topic explains the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
 ms.date: 12/04/2018
@@ -41,10 +41,10 @@ For information about the contents of each release of Dynamics 365 for Finance a
 
 ## Definitions
 
-* Public preview – This is a feature that has been made generally available to all, and the functionality is supported.  There are potentially additional functionality improvements, or Known Issues, that look to be resolved to end the preview phase.
-* Deprecation – This is a feature or process that will not be supported long term.  The date of when this feature or process ends support should be stated.
-* Upgrade – This is the process of moving from one official release of Finance and Operations to the next, but prior to version 8.0.  Some examples would be moving from 7.1 to 7.3, or 7.3 to 8.1 and so forth.  This involves standing up a free Sandbox environment, Code Upgrade, and Data Upgrade.
-* Update – This is the process of applying a binary package to your environment to advance it from one official release of Finance and Operations to the next, starting with version 8.0.  This involves drastically lower downtime requirements, and involves no Data Upgrade.
+- *Public preview* – This is a feature that has been made generally available to all, and the functionality is supported.  There are potentially additional functionality improvements, or Known Issues, that look to be resolved to end the preview phase.
+- *Deprecation* – This is a feature or process that will not be supported long term.  The date of when this feature or process ends support should be stated.
+- *Upgrade* – This is the process of moving from one official release of Finance and Operations to the next, but prior to version 8.0.  Some examples would be moving from 7.1 to 7.3, or 7.3 to 8.1 and so forth.  This involves standing up a free Sandbox environment, Code Upgrade, and Data Upgrade.
+- *Update* – This is the process of applying a binary package to your environment to advance it from one official release of Finance and Operations to the next, starting with version 8.0.  This involves drastically lower downtime requirements, and involves no Data Upgrade.
 
 
 ## Introduction to the scenarios
