@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform 23
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 23. This version has a build number of 7.0.XXXX.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 23. This version has a build number of 7.0.5126.
 
 ### Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
