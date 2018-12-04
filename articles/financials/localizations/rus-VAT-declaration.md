@@ -224,9 +224,9 @@ In this case you should to set up Financial report calculation rules for report 
       1.	Create customized Model mapping ER configuration as derived from the one provided by Microsoft configuration provider 
       2.	Redefine the model mapping data source element $RRG.$Section3.$data.$dataStd
 
-Learn how to create a derived version of ER configurations to do customization by using the (ER Upgrade your format by adopting a new, base version of that format topic) https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upgrade-format.
+For more information about creating a derived version of ER configurations to do customization, see [ER Upgrade your format by adopting a new, base version of that format](../../dev-itpro/analytics/tasks/er-upgrade-format.md).
 
-Learn how to define model mappings in the (Define ER model mappings and select data sources for them article) https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11?toc=/fin-and-ops/toc.json
+For more information about defining model mappings, see [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 
 ## Application 1 to Section 3 
@@ -362,6 +362,6 @@ In example above, the following data will be present in Section 6 of VAT declara
 | VAT amount payable calculated from the tax base for not confirmed export | 030 | 19 440 |
 | VAT amount deductible from the purchase of items used in not confirmed export | 040 | 9 000 |
 
-
+## Additional resources
 [How to start working with VAT declaration](https://support.microsoft.com/en-us/help/4477332/rusrussiavatdeclarationinelectronicformat)
 
