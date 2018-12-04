@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-Before working in the **Bank management** workspace, you should complete the following procedures to ensure that you have the prerequisites needed for setting up bank accounts for Russia.
+Before working in the **Bank management** workspace, you should complete the following procedures to ensure that you have the prerequisites needed for using bank accounts in Russian legal entitites.
 
-## Create a bank manually
+## Create a bank manually or update information for a bank
 
 1. Go to **Cash and bank management > Setup > Bank groups**.
 2. Select a bank or create a new one. 
@@ -53,7 +53,7 @@ Before working in the **Bank management** workspace, you should complete the fol
 1.	Import the ‘Bank BIC catalog (RU)’ Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).
 Fix downloading instructions are here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs 
 
-2. Go to **Cash and bank management > Setup > Cash and bank management parameters**. In the **General** fast tab, in the **Import list of banks** felds group, in the field **Import format configuration**, select the ER configuration ‘Bank BIC catalog (RU)’## Importing list of banks 
+2. Go to **Cash and bank management > Setup > Cash and bank management parameters**. In the **General** fast tab, in the **Import list of banks** felds group, in the field **Import format configuration**, select the ER configuration ‘Bank BIC catalog (RU)’
 
 ### Import list of banks
 
