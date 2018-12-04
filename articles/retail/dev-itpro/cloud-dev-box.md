@@ -5,7 +5,7 @@ title: Development in cloud-hosted development environments without admin access
 description: This topic demonstrates the configuration steps for Retail developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
