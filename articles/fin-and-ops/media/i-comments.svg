@@ -1,7 +1,0 @@
-<?xml version="1.0" standalone="no"?>
-<?xml-stylesheet type="text/css" href="../styles/icons.css"?>
-
-<svg id="testing"  data-name="testing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-	<title>i</title>
-	<path class="testing"  d="M16,0V11H5.71L2,14.71V11H0V0ZM15,1H1v9H3v2.29L5.29,10H15ZM6,6H5V4H7V6a1,1,0,0,1-.08.39,1,1,0,0,1-.53.53A1,1,0,0,1,6,7Zm4,0H9V4h2V6a1,1,0,0,1-.08.39,1,1,0,0,1-.53.53A1,1,0,0,1,10,7Z"/>
-</svg>
