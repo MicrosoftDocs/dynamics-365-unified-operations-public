@@ -576,6 +576,8 @@
       href: dev-itpro/payment-custom-error-messages.md
     - name: Create Windows installers for payment connectors
       href: dev-itpro/create-windows-installer-payment-connector.md
+    - name: Payment data use
+      href: payment-connector-data-fields.md
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:
