@@ -1,4 +1,36 @@
-Overview
+---
+# required metadata
+
+title: Initialize cloud-hosted Retail channel components
+description: This article will cover the steps to initialize cloud-hosted Retail channel components.
+author: AamirAllaq
+manager: AnnBe
+ms.date: 12/05/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope: Retail, Operations 
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: retail
+ms.author: aamiral
+ms.search.validFrom: 2018-4-30 
+ms.dyn365.ops.version: 8.0 
+---
+
+
+# Initialize cloud-hosted Retail channel components
+
+[!include[banner](../includes/banner.md)]
 
 This article will cover the steps to initialize cloud hosted Retail channel components.
 
