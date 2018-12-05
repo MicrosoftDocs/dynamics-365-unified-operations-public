@@ -147,6 +147,8 @@
     href: POS-search-improvements.md
   - name: Inventory lookup in the POS
     href: product-variants-POS.md
+  - name: Suspend and resume transactions in the POS
+    href: pos-suspend-recall-transactions.md
   - name: Hardware peripherals
     items:
     - name: Retail peripherals
