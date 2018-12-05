@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (December 2018)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
