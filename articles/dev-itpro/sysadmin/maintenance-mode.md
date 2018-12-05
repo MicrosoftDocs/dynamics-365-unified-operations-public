@@ -36,10 +36,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 
-Microsoft Dynamics 365 for Finance and Operations includes a new system-wide setting that is named maintenance mode. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off.
+Microsoft Dynamics 365 for Finance and Operations includes a new system-wide setting that is named maintenance mode. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off. When maintenance mode is off, you can't edit the **License configuration** page.
 
-## Turning maintenance mode on and off
-When maintenance mode is off, you can't edit the **License configuration** page.
+## Turning maintenance mode on and off on Sandbox and Production through Lifecycle Services (IN PREVIEW)
+You can now turn maintenance mode on and off directly through LCS on your sandbox and production environments. Below are the steps to take:
+
+1. Navigate to environment details page and under **Maintain** menu and click on **Configure Maintenance Mode**.
+2. This new menu item will show up on for customers added to the preview.
+3. This will open a slider and you can toggle the button to **turn maintenance mode on** for the environment and select **Confirm**.
+4. Once this is done, a servicing operation is started to put your system in maintenance mode.
+5. On completion your environment state will be **In Maintenance**.
+6. At this point, only the **system administrator** will have access to the environment.
+7. Once you are done making system wide changes, you can disable maintenance mode by clicking on **Disable Maintenance Mode** in the environment updates section.
+8. This will start a servicing operation to take your environment out of maintenance mode. You can see the progress of the operation in the environment details page.
+9. Once this is complete your environment goes back to **Deployed** state. Now all users can login to the environment.
+10. You can check the environment history page to see when the maintenance mode was turned on and turned off. To get to the environment history page, select **History** and **Environment changes** on the environment details page.
+
+Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. Hence if turning maintenance mode on or off fails, you will see options like servicing such as **Resume** , **Rollback** and **Abort**. You also have the option to **download the logs** to troubleshoot further on why the operation failed.
+ 
+## Turning maintenance mode on and off 
+### Maintenance mode in non-production environments
 You can turn on maintenance mode locally by running the following command. 
 
 **Note:** On some virtual machines (VMs), the exact location of the Deployment.Setup.exe tool might differ. Check AosServiceWebRootbin.
@@ -68,7 +84,7 @@ You can turn off maintenance mode by running the following command.
 
     J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 
-## Maintenance mode in production environments
+### Maintenance mode in production environments
 To turn on maintenance mode in a production environment, you must submit a request to the Dynamics Service Engineering (DSE) team by using the **Other request** form in LCS on the **Service requests** page. For more information about submitting a request through LCS, see , see [Submit a request to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md). 
 
 The Dynamics Service Engineering team will move your system into maintenance mode and work with you to complete the configuration updates. After the team receives a confirmation from you that the updates are complete, they will remove your system from maintenance mode.
