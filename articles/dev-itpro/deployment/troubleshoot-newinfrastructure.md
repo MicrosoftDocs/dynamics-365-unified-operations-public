@@ -32,3 +32,5 @@ ms.dyn365.ops.version: AX 7.0.0
 # Diagnose issues 
 
 [!include [banner](../includes/banner.md)]
+
+[![Diagnose Issues](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
