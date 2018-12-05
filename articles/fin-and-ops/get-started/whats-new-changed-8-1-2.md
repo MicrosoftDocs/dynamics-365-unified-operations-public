@@ -56,14 +56,50 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 ## Derived dimension values
 This release includes functionality that lets you prevent changes to derived dimension values and override existing dimension values with derived dimension values. For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
 
+## Intrastat format changes for Belgium
+This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
-## Third-party miscellaneous charges for Russia
-This release includes functionality for the registration of third-party miscellaneous charges and allocation by the following regimes: 
+## Russian-specific features:
+THis release includes the following feautres specific for Russia:
+
+### Third-party miscellaneous charges for Russia
 - Inclusion into cost of purchased goods (allocation to invoices lines from other vendors) 
 - Redrawing to other parties 
 - Re-allocation to other expense accounts
 
+### Bailment for Russia
 
-## Intrastat format changes for Belgium
-This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
+**Accounting at Bailee side**:
+ - Accounting of inventory receipt for bailment as required by the Law and generation of primary form MX-1. 
+ - Accounting of inventory return from bailment and generation of primary form MX-3. 
+ - Bailment costs calculation from Bailee side
+ 
+ **Accounting at Owner side**:
+ - Accounting of inventory transfer to bailment and inventory return from bailment on Goods Owner side under bailment service contract
+
+### Goods in transit for Russia
+
+**Sales to customer with postponed passing of property**
+ - Post sales invoice with postponed property transfer: no customer debts posted, all outgoing taxes are posted, items are transferred to transit warehouse 
+ - Register passing of property with posting debts and items sale from transit warehouse
+
+**Goods in transit from vendor**
+ - Registering goods in transit from vendor by special posting profile with Items type "purchased items en route" 
+ - Creating Act of inventory holdings en route (INV-6)
+
+### Optional posting of transfer orders to GL
+Option to post/not post transactions to General ledger when posting Transfer order
+
+### Profit tax registers in are of assets
+Tax registers: 
+ - Goods cost calculation
+ - FA object information 
+ - IA object information 
+ - FA depreciation 
+ - IA depreciation 
+ - FA/IA sale 
+ - Depreciation bonus recovery
+
+
+
 
