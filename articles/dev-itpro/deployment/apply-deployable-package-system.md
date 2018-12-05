@@ -5,7 +5,7 @@ title: Apply updates to cloud environments
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
