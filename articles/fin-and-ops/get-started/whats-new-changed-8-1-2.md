@@ -103,7 +103,7 @@ Tax registers:
 ### Sales, purchase books, additional sheets, invoice-factures journal in electronic format
 In this release you can review electronic formats of sales, purchase books, additional sheets and factures journals which are configured with Electronic reporting. 
 
-To apply the new formats, you need to import the following (or a later) versions of the ER configurations from LCS shared asset library:  
+To apply the new formats, you need to import the following or higher versions of the ER configurations from LCS shared asset library:  
  - VAT declaration model (RU).version.46
  - VAT declaration model mapping (RU).version.46.68
  - Purchase book format.version.46.13
@@ -116,3 +116,4 @@ For more information about how to import configurations, see [Import a configura
 
 Mentioned configurations versions are released as public preview and will be updated based on feedback received.
 Use them to learn how electronic formats of sales, purchase books, additional sheets and factures journals are configured with Electronic reporting. Don't use these configurations as base configurations for derived customized configurations in live environment.
+
