@@ -63,7 +63,8 @@ This release contains the following feautres specific for Russia:
  - Tax registers: Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement 
  - Procedure for writing-off AR bad debts
  
- ### Accounts payable debts tax registers. AP bad debts writing-off
+### Accounts payable debts tax registers. AP bad debts writing-off
  - Tax registers: Accounts payable debt - inventory; Accounts payable debt movement 
  - Procedure for writing-off AP bad debts 
 
+### Client-bank interface and reconciliation procedure (import part)
