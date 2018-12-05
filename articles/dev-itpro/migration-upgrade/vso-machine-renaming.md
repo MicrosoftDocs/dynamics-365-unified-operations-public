@@ -5,7 +5,7 @@ title: Renaming a local development (VHD) environment to access Azure DevOps or 
 description: Renaming a VHD environment is required in order to access a Azure DevOps project across multiple machines and to successfully install One Version service updates.
 author: MargoC
 manager: AnnBe
-ms.date: 12/04/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 * Access a single Azure DevOps project across multiple machines
 * Install One Version service updates such as 8.1.x
 
-Azure DevOps (formerly known as Visual Studio Online (VSO) or Visual Studio Team Services (VSTS)) is needed to support using version control. In development topologies, multiple VMs cannot access the same Azure DevOps project if they have the same machine name. Azure DevOps uses the machine name for identification. If you are developing on local VMs downloaded from Microsoft Lifecycle Services (LCS), you may encounter issues.
+Azure DevOps, formerly known as Visual Studio Online (VSO) or Visual Studio Team Services (VSTS), is needed to support using version control. In development topologies, multiple VMs cannot access the same Azure DevOps project if they have the same machine name. Azure DevOps uses the machine name for identification. If you are developing on local VMs downloaded from Microsoft Lifecycle Services (LCS), you may encounter issues.
 
 One Version service updates must be installed on VHD environments using a runbook. These steps are needed to ensure the runbook will complete successfully.
 
@@ -59,7 +59,7 @@ Update the SQL Server Reporting Service database using the Reporting Services Co
 ## Additional steps required to install One Version service updates
 The following steps are required to install One Version service updates on a VHD environment.
 
-## Update the Azure Storage Emulator
+### Update the Azure Storage Emulator
 Update the Azure Storage Emulator and make sure it is running. From the start menu, Open the *Microsoft Azure Storage Emulator - v4.0* and use the following commands.
 
 This command starts the emulator.
@@ -79,7 +79,7 @@ If the init command fails, delete the storage emulator database using SQL Server
 
     AzureStorageEmulator.exe init
 
-## Update financial reporting
+### Update financial reporting
 Update the server name for financial reporting using a script included in the One Version service update. To get the command, you have to download and expand the One Version service update. Open a PowerShell command window as an administrator and run the following command. The command contains the default passwords that may need to be updated. Make sure to update the **new_name** in the command.
 
     cd <update folder>\MROneBox\Scripts\Update
