@@ -25,6 +25,8 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30 
 ms.dyn365.ops.version: 8.0 
+---
+
 
 # Apply updates and extensions to cloud hosted retail channel components
 
