@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 
 ---
-**Cost configuration**
+# Cost configuration
 
 **Overview**
 
@@ -81,9 +81,9 @@ The below section explains how each of the combination of the Cost type & Calcul
 
 -   Calculation type: This field determines how the cost is calculated for a specific mode of delivery. There are two supported calculation types:
 
-    a.  Fixed: This denotes that a flat cost as defined in the Cost field is the cost for the mode of delivery
+        a.  Fixed: This denotes that a flat cost as defined in the Cost field is the cost for the mode of delivery
 
-    b.  Per distance unit: This denotes that the cost for the mode of delivery is computed as the cost defined in the Cost field times the distance between the delivery address & the locations
+        b.  Per distance unit: This denotes that the cost for the mode of delivery is computed as the cost defined in the Cost field times the distance between the delivery address & the locations
 
 -   Cost: This field is used to define the Cost value that is used in conjunction with the Calculation type to compute the cost for a mode of delivery
 
@@ -117,9 +117,9 @@ The below section explains how each of the combination of the Cost type & Calcul
 
 -   Calculation type: This field determines how the cost is calculated for a specific mode of delivery & tiered distance. There are two supported calculation types:
 
-    c.  Fixed: This denotes that a flat cost as defined in the Cost field is the cost for the mode of delivery & the tiered distance
+        a.  Fixed: This denotes that a flat cost as defined in the Cost field is the cost for the mode of delivery & the tiered distance
 
-    d.  Per distance unit: This denotes that the cost for the mode of delivery and tiered distance is computed as the cost defined in the Cost field times the distance between the delivery address & the locations
+        b.  Per distance unit: This denotes that the cost for the mode of delivery and tiered distance is computed as the cost defined in the Cost field times the distance between the delivery address & the locations
 
 -   Cost: This field is used to define the Cost value that is used in conjunction with the Calculation type to compute the cost for a mode of delivery
 
@@ -183,5 +183,5 @@ The below section explains how each of the combination of the Cost type & Other 
 
 -   Cost: This field is used to define the Cost value for a non-shipping cost at a fulfillment group or fulfillment location level.
 
-
+The Cost factor needs to be added to the relevant Fulfillment profile for DOM to consider these costs in its execution
 
