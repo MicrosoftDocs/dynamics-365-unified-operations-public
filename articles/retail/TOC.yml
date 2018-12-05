@@ -48,7 +48,11 @@
   - name: Testing and performance issues
     href: dev-itpro/retail-implementation-testing-performance.md   
 - name: Distributed order management (DOM)
-  href: dom.md
+  items:
+  - name: DOM overview
+    href: dom.md
+  - name: DOM flexible cost factors
+    href: cost.md
 - name: Payments
   items:
   - name: Payment methods
