@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply updates and extensions to cloud hosted retail channel components
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This article will cover steps to apply updates and extensions to cloud-hosted Retail channel components.
 author: AamirAllaq
 manager: AnnBe
 ms.date: 12/05/2018
