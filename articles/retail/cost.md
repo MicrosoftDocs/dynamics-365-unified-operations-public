@@ -174,5 +174,5 @@ The fields that must be set up for this combination are:
 
 -   **Cost**: This field is used to define the cost value for a non-shipping cost at a fulfillment group or fulfillment location level. 
 
-**The cost factor needs to be added to the relevant fulfillment profile for DOM to consider these costs in its execution.
+#### The cost factor needs to be added to the relevant fulfillment profile for DOM to consider these costs in its execution.
 
