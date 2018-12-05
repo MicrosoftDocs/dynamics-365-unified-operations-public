@@ -59,8 +59,8 @@ This release includes functionality that lets you prevent changes to derived dim
 ## Intrastat format changes for Belgium
 This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
-## Russian-specific features:
-THis release includes the following feautres specific for Russia:
+## Russian-specific features
+This release includes the following features specific for Russia:
 
 ### Third-party miscellaneous charges for Russia
 - Inclusion into cost of purchased goods (allocation to invoices lines from other vendors) 
@@ -90,7 +90,7 @@ THis release includes the following feautres specific for Russia:
 ### Optional posting of transfer orders to GL
 Option to post/not post transactions to General ledger when posting Transfer order
 
-### Profit tax registers in are of assets
+### Profit tax registers in the area of assets
 Tax registers: 
  - Goods cost calculation
  - FA object information 
@@ -99,7 +99,3 @@ Tax registers:
  - IA depreciation 
  - FA/IA sale 
  - Depreciation bonus recovery
-
-
-
-
