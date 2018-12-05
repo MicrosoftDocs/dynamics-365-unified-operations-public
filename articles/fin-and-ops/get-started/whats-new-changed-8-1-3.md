@@ -56,3 +56,14 @@ You can now set up collection letters at the customer level, so that the collect
 ## Settle remainder
 You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions.
 
+## Russian-specific features
+This release contains the following feautres specific for Russia:
+
+### Accounts receivable debts tax registers. AR bad debts writing-off
+ - Tax registers: Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement 
+ - Procedure for writing-off AR bad debts
+ 
+ ### Accounts payable debts tax registers. AP bad debts writing-off
+ - Tax registers: Accounts payable debt - inventory; Accounts payable debt movement 
+ - Procedure for writing-off AP bad debts 
+
