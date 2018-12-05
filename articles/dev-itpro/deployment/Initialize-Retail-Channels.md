@@ -34,44 +34,40 @@ ms.dyn365.ops.version: 8.0
 
 This article will cover the steps to initialize cloud hosted Retail channel components.
 
-If you are using a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer, you will first need to initialize Retail channel components in the cloud, before you can use retail channel functionality for Point of Sale operations, or for E-commerce operations that utilize Retail Server in the cloud.
+If you are using a Tier-2 sandbox or production environment on application version 8.1.2.x or later, you will first need to initialize Retail channel components in the cloud, before you can use Retail channel functionality for point of sale operations, or for e-commerce operations that utilize Retail Server in the cloud.
 
+## Prerequisites
 
-Pre-requisites
+1. You must first deploy a Tier-2 sandbox or production environment with application version 8.1.2.x or later.
+2. In Lifecycle Services (LCS), create a new support request and state the following: "Access request for cloud-hosted Retail channel components"
 
-1. You must first deploy a Tier-2 Sandbox or Production environment with application version 8.1.2.x or newer to proceed.
-2. In LCS, create a new support request and state the following:
+The request will be completed within 5 business days or less.
 
-"Access request for cloud hosted Retail channel components"
+## Initialize cloud-hosted Retail channel components as part of a new environment deployment
 
-Request will be completed within 5 business days or less.
-
-Initialize cloud hosted Retail channel components as part of a new environment deployment.
-
-1. In LCS, go to Environment details page and select ***ENVIRONMENT FEATURES > Retail***
-2. On the Retail setup deployment page, select ***Initialize***
+1. In LCS, go to Environment details page and select **Environment Features > Retail**.
+2. On the Retail setup deployment page, select **Initialize**.
 3. On the selection panel, select a version of Retail channel components to initialize.
 
-Additional considerations when initializing in an existing environment.
+## Additional considerations when initializing in an existing environment
 
-If you are already using Retail cloud hosted channel components, initialization will allow for reduced downtime updates for cloud hosted retail channel components. You will require additional planning before you initialize this capability.
+If you are already using Retail cloud-hosted channel components, initialization will allow for reduced downtime updates for cloud-hosted Retail channel components. You will require additional planning before you initialize this capability.
 
-1. Ensure all shifts at POS are closed
-2. Ensure all P-jobs have successfully completed
-3. Log-out of all Point of Sale devices
-3. Plan for a 5 hour downtime window for store and any Retail Server dependent online channel operations
+1. Ensure all shifts at POS are closed.
+2. Ensure all P-jobs have successfully completed.
+3. Log-out of all point of sale devices.
+3. Plan for a 5 hour downtime window for store and any Retail Server dependent online channel operations.
 
 During the initialization period, the following will occur:
-
-  - Cloud-hosted retail channels will not function (unless POS offline capability is enabled).
-  - POS devices with offline capability enabled will have reduced functionality.
-  - Any e-commerce clients dependent on Retail Server will be disrupted
+  - Cloud-hosted Retail channels will not function (unless POS offline capability is enabled).
+  - POS devices with the offline capability enabled will have reduced functionality.
+  - Any e-commerce clients dependent on Retail Server will be disrupted.
   - Channels hosted on Retail Store Scale Units will remain unaffected.
   - Head office functionality will remain unaffected.
 
-After initlization has completed, 
-  - Device activation state of all activated POS devices will be preserved, and will not need to be re-activated
-  - Stand-alone hardware station instances will continue to operate
-  - POS channel side reports will be reset and not show data from before the initialization
+After initlization has completed:
+  - Device activation state of all activated POS devices will be preserved, and will not need to be re-activated.
+  - Stand-alone hardware station instances will continue to operate.
+  - POS channel-side reports will be reset and not show data from before the initialization.
   
 
