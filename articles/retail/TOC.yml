@@ -51,7 +51,7 @@
   items:
   - name: DOM overview
     href: dom.md
-  - name: DOM flexible cost factors
+  - name: Cost configuration
     href: cost.md
 - name: Payments
   items:
