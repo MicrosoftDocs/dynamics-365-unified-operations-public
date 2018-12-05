@@ -122,7 +122,7 @@ The fields that needs to be set up for this combination of configuration are:
 ### Other cost type
 The section below explains how each combination of cost type and other cost type for non-shipping cost can be set up and how they are used by the DOM solver.
 
-####  Cost type = Other and Cost type = Sales order
+####  Cost type = Other and Other cost type = Sales order
 
 This combination of cost type and other cost type is used to define non-shipping costs at a sales order level.
 
@@ -138,7 +138,7 @@ The fields that must be set up for this combination are:
 
 -   **Cost**: This field is used to define the cost value for a non-shipping cost at a sales order level.
 
-####  Cost type = Other and Cost type = sales line
+####  Cost type = Other and Other cost type = sales line
 
 This combination of cost type and other cost type is used to define non-shipping costs at a sales order line level.
 
@@ -154,7 +154,7 @@ The fields that must be set up for this combination are:
 
 -   **Cost**: This field is used to define the cost value for a non-shipping cost at a sales order line level.
 
-####  Cost type = Other and Cost type = Location
+####  Cost type = Other and Other cost type = Location
 
 This combination of cost type and other cost type is used to define non-shipping costs for a group of locations or individual location.
 
