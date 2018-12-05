@@ -33,6 +33,7 @@ ms.dyn365.ops.version: Version 1611
 # Suspend and resume transactions in the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Point of sale (POS) users can suspend in-progress transactions, and then resume them later or on a different register. Transactions are often suspended to quickly free up a register for a different task without losing any progress on the current transaction. For example, a store associate starts to process a customer's transaction on a mobile device but must complete it on a register that has a cash drawer. In this case, the store associate can suspend the transaction on the mobile device, and then recall and resume it on a register.
 
