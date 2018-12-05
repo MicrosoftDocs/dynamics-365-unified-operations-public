@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (December 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 23 (December 2018). 
+title: What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 23 (January 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/04/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (December 2018)
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
