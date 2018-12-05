@@ -5,7 +5,7 @@ title: Development and build VMs that don't allow admin access FAQ
 description: This topic provides answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
-ms.date: 05/03/2018
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
