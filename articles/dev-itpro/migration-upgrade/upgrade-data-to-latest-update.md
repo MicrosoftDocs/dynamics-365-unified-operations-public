@@ -38,7 +38,7 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
 The topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment. The instructions also apply to Standard/Premier Acceptance Test sandbox environments (Tier 2 or 3) or higher sandbox tiers.
 
-In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release).
+In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md).
 
 > [!IMPORTANT]
 > - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations 7.3.
