@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Platform update 3
 
 This topic describes the steps for performing a data upgrade on a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher sandbox environment.
 
-In some environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release-public-preview-1).
+In some environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md).
 
 > [!NOTE]
 > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
