@@ -117,3 +117,4 @@ For more information about how to import configurations, see [Import a configura
 Mentioned configurations versions are released as public preview and will be updated based on feedback received.
 Use them to learn how electronic formats of sales, purchase books, additional sheets and factures journals are configured with Electronic reporting. Don't use these configurations as base configurations for derived customized configurations in live environment.
 
+Find more details about how to generate and print sales, purchase books, additional sheets and facture journal in the article [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books)
