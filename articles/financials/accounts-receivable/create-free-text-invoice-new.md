@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create a free text invoice
-description: This article demonstrates how to create a free text invoice. 
+title: Create free text invoices
+description: This topic explains how to create free text invoices. 
 author: mikefalkner
 manager: AnnBe 
-ms.date: 05/29/2018
+ms.date: 08/24/2018
 ms.topic: article 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -23,57 +23,71 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mfalkner
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2018-08-30 
+ms.dyn365.ops.version: 8.0.4
+
 ---
 
-# Create a free text invoice
+# Create free text invoices
 
 [!include [banner](../includes/banner.md)]
 
-This article demonstrates how to create a free text invoice. For this procedure, use the USMF demo company.
+This topic explains how to create free text invoices. For the procedure, use the **USMF** demo company.
 
 ## Create a free text invoice
 
-1. Go to Accounts receivable > Invoices > All free text invoices.
-2. Click New.
-3. In the Customer account field, select a value.
-    * The invoice account will default to the same account used for the customer account.   
-    * The accounting status starts with In process if the invoice is not posted.   
-    * The invoice number will be assigned when the invoice is posted.  
-    * If you are using SEPA mandates, the direct debit mandate will be automatically populated with a mandate when you select the customer account.  
-4. In the Description field, type a value.
-5. In the Main account field, specify an account number without dimensions.
-    * You can also enter one or more characters for the main account and use the lookup to find your account. You will enter dimensions later on in this guide.  
-6. Expand the Line details fasttab so you can add dimensions to your main account.
-7. Click the Financial dimensions line tab.
-    * The dimensions are for the selected line only.    
-    * The sales tax group is populated from the customer. If the customer does not have a sales tax group, the sales tax group from the main account is used.  
-    * The items sales tax group is populated from the main account. If the main account does not have an item sales tax group, then the item sales tax group in the General ledger sales tax parameters is used.    
-8. In the Quantity field, enter a number.
-    * The quantity is optional.  
-9. In the Unit price field, enter a number.
-    * The unit price is optional.  
-    * The amount is calculated as the quantity times the unit price. However, you can override that calculation and enter an amount.  
-10. Click on Sales tax to view the sales tax calculated for your invoice.
-    * View the sales tax amounts in this page or you can override the amounts on the Adjustment tab.  
-11. Click OK.
-12. Click Charges to add a charge to your invoice. 
-13. In the Charges code field, type a value.
-14. In the Charges value field, enter a number.
+1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
+2. Select **New**.
+3. In the **Customer account** field, select a value.
+
+    * By default, the account that is selected as the customer account is used as the invoice account.
+    * If the invoice isn't posted, the accounting status starts with **In process**.
+    * The invoice number will be assigned when the invoice is posted.
+    * If you're using Single Euro Payments Area (SEPA) mandates, the direct debit mandate is automatically entered when you select the customer account.
+
+4. In the **Description** field, enter a value.
+5. In the **Main account** field, specify an account number that doesn't have dimensions. You will enter dimensions later in this topic.
+
+    You can also enter one or more characters for the main account, and use the lookup to find the account.
+
+6. Select the **Line details** FastTab to add dimensions to the main account.
+7. Select the **Financial dimensions line** tab.
+
+    * The dimensions are for the selected line only.
+    * The sales tax group is filled in from the customer. If the customer doesn't have a sales tax group, the sales tax group from the main account is used.
+    * The items sales tax group is filled in from the main account. If the main account doesn't have an item sales tax group, the item sales tax group that is specified in the sales tax parameters in General ledger is used.
+
+8. Optional: In the **Quantity** field, enter a number.
+9. Optional: In the **Unit price** field, enter a number.
+
+    The amount is calculated as the quantity times the unit price. However, you can override that calculation by entering an amount.
+
+10. Select **Sales tax** to view the sales tax that is calculated for the invoice.
+
+    You can view the sales tax amounts on this page, or you can override the amounts on the **Adjustment** tab.
+
+11. Select **OK**.
+12. Select **Charges** to add a charge to the invoice.
+13. In the **Charges code** field, enter a value.
+14. In the **Charges value** field, enter a number.
 15. Close the page.
-16. Click Totals to view the summary invoice details and totals.
-17. Click Close.
-18. Click Post to post the invoice. You will be able to cancel before you post.
-    * To change the timing of your invoice printing:  Select Current to print each invoice as it is updated   or  Select After to print after all invoices have been updated.  
-    * If you want to change how the customer's credit limit is checked before posting, change the Credit limit type.  
-    * If you want to print the invoice, select Yes.  
-    * If you want to post the invoice, select Yes. You can print the invoice without posting.  
-19. Click OK.
+16. Select **Totals** to view a summary of the invoice details and totals.
+17. Select **Close**.
+18. Select **Post** to post the invoice. You will still have an opportunity to cancel before you actually post.
+
+    * You can change the timing of invoice printing. Select **Current** to print each invoice as it's updated. Select **After** to print after all invoices have been updated.
+    * To change how the customer's credit limit is verified before the invoice is posted, change the value in the **Credit limit type** field.
+    * To print the invoice, set the option to **Yes**.
+    * To post the invoice, set the option to **Yes**. You can print the invoice without posting it.
+
+19. Select **OK**.
 
 ## Copy lines
-To copy lines on the free text invoice, select one or more lines and then click Copy selected lines. You can specify the number of copies that you want to make, and you can also copy notes and attachments. You can copy the distributions or allow them to be recreated when you post. Once you copy the lines, you can edit the information as needed. 
+To copy lines on a free text invoice, select one or more lines, and then select **Copy selected lines**. You can specify the number of copies to make, and you can also copy notes and attachments. You can either copy the distributions or let them be re-created when you post.
+
+After you copy lines, you can edit the information as you require.
 
 ## Create a free text invoice from a template
-You can create a free text invoice from a template. When you select New from template from the Invoice tab, you can select a template name and the customer account for the new free text invoice. You can also choose to default values such as the terms of payment and method of payment from the customer or use the values that were saved with the template. A new free text invoice will be created and you can edit the values in that invoice. 
+You can create a free text invoice from a template. When you select **New from template** on the **Invoice** tab, you can select a template name and the customer account for the new free text invoice. Default values, such as the terms of payment and method of payment, can be automatically filled in from the customer, or you can use the values that were saved in the template.
 
+A new free text invoice is created, and you can edit the values as you require.

@@ -5,7 +5,7 @@ title: On-premises deployment option
 description: Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises or Local Business Data (LBD) deployment option. 
 author: kfend
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,7 +47,6 @@ On-premises deployment defines two types of Service Fabric standalone clusters: 
 - Management Reporter (MR) – Provides financial reporting functionality. 
 - SQL Server Reporting Services (SSRS) – Provides document reporting functionality. 
 - Environment Orchestrator – Enables on-premises environment management from LCS. 
-Note: Retail Server is not supported in on-premises deployments at this time. 
 
 Figure 1 shows a logical diagram of the node types deployed in a Service Fabric standalone cluster. 
 
@@ -67,7 +66,7 @@ Table 1: Customer data stored in Microsoft Azure data centers located in the Uni
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft Dynamics Lifecycle Services | Project content and files are stored in a project. This includes application configuration data, code, metadata, and data assets that comprise the application and business process models. Also included is anonymized user activity logs and information that is collected during the onboarding process. |
 | Microsoft Office signup portal        | Customer information that is collected during the onboarding process.                                                                                                                                                                                                                                 |
-| Microsoft Azure Active Directory      | Authentication for LCS and Visual Studio Team Services.                                                                                                                                                                                                               |
+| Microsoft Azure Active Directory      | Authentication for LCS and Azure DevOps.                                                                                                                                                                                                               |
   
 
 Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center. For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment. 

@@ -135,6 +135,8 @@ GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03
 
 After the client downloads the data, an acknowledgment must be sent back to Finance and Operations, so that you can mark the data as received.
 
+In cases when there was no file uploaded to the blob, the dequeue API will return a response indicating as such.
+
 ### API for acknowledgment
 Use the following API.
 
@@ -177,6 +179,9 @@ The following table lists the possible status values.
 | PreProcessingError   | The import/export operation failed in the pre-processing stage                       |
 | ProcessedWithErrors  | The import/export operation completed with errors                                    |
 | PostProcessingFailed | the import/export operation failed during post-processing                            |
+
+> [!NOTE]
+> The file in the blob storage will remain in the storage for seven days, after which it will be automatically deleted.
 
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments (Platform update 12)
-description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
+title: Set up and deploy on-premises environments (Platform update 12 and later)
+description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations with Platform update 12 and later.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/08/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Set up and deploy on-premises environments (Platform update 12)
+# Set up and deploy on-premises environments (Platform update 12 and later)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform update 12. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md). 
+This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations (on-premises) with Platform update 12 and later.
 
 > [!IMPORTANT]
-> This topic applies only to deploying on-premises environments on Platform update 12. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
+> This topic applies only to deploying on-premises environments on Platform update 12 and later. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
 
@@ -53,7 +53,7 @@ The Finance and Operations application consists of three main components:
 
 These components depend on the following system software:
 
-- Microsoft Windows Server 2016 (only English language installations are supported)
+- Microsoft Windows Server 2016 (only English OS installations are supported)
 - Microsoft SQL Server 2016 SP1, which has the following features:
   - Full-text index search is enabled.
   - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
@@ -94,7 +94,11 @@ Setup of Finance and Operations will deploy a set of applications inside Service
 
 ## Infrastructure
 
-Finance and Operations is designed to work on a Hyper-V virtualized environment that is based on Windows Servers.
+Finance and Operations falls under Microsoft’s standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/en-us/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
+
+If you are using VMWare, you must implement the fixes that are documented on the following web pages:
+- [After upgrading a virtual machine to hardware version 11, network dependent workloads experience performance degradation (2129176)](https://kb.vmware.com/s/article/2129176)
+- [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
  > [!WARNING]
  > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.
@@ -151,7 +155,8 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| AOS       | SNAC – ODBC driver 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows Features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows Features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | AOS       | Internet Information Services (IIS) | **Windows Features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
@@ -214,12 +219,12 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | |
 | Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords.  | <p> The certificate must be created by using the provider **Microsoft Enhanced Cryptographic Provider v1.0**. </p><p>The certificate key usage must include Data Encipherment (10) and should not include Server authentication or Client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p> |
 | AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p><p>You can use the same wild card certificate that you used as the Service Fabric Server certificate.</p> | <p>In this example, the domain name ax.d365ffo.onprem.contoso.com must be added to the Subject Alternative Name (SAN) as in the Service  Fabric Server certificate.</p> |
-| Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | This certificate is also the File Share certificate that will used at the time of deployment from LCS. |
+| Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | This certificate is also the File Share certificate that will be used at the time of deployment from LCS. |
 | Data Encryption certificate                  | This certificate is used by the AOS to encrypt sensitive information.  | This must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. |
 | Data Signing certificate                     | This certificate is used by AOS to encrypt sensitive information.  | This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. |  |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| **Do not reuse the Financial Reporting Client certificate.** |
-| On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premise local agent certificate is needed for a tenant.</p> | |
+| On-Premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premises local agent certificate is needed for a tenant.</p> | |
 
 The following is an example of a Service Fabric Server certificate combined with an AOS SSL certificate.
 
@@ -424,10 +429,19 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 | Component | Download link |
 |-----------|---------------|
-| SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| SNAC – ODBC driver 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| SNAC – ODBC driver 17 | <https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
 | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms> |
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
+
+> [!IMPORTANT]
+> Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
+> Ensure the installer files are named as defined in NodeTopologyDefinition.xml.
+> msodbcsql.ms
+> SSMS-Setup-*.exe
+> vcredist_x64.exe
+> AccessDatabaseEngine_x64.exe
 
 #### Follow these steps for each VM, or use remoting from a single machine
 
@@ -563,7 +577,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    4. Check **Encrypt data access**.
    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
    6. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
-    
+
       >[!NOTE]
       > You may need to enable **Computers** under **Object Types** to add machines or enable **Service Accounts** under **Object Types** to add service accounts.
 
@@ -572,6 +586,36 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (contoso\\svc-LocalAgent$).
+
+    ```PowerShell
+    # Specify user names
+    $AOSDomainUser = 'Contoso\AXServiceUser';
+    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
+
+    # Specify the path
+    $AosStorageFolderPath = 'D:\aos-storage';
+    $AgentFolderPath = 'D:\agent';
+
+    # Create new directory
+    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
+    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
+
+    # Create new SMB share
+    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
+    New-SmbShare –Name agent -Path $AgentFolderPath
+
+    # Set ACL for AOS storage folder
+    $Acl = Get-Acl $AosStorageFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AosStorageFolder.FullName $Acl;
+
+    # Set ACL for AgentFolder
+    $Acl = Get-Acl $AgentFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AgentFolder.FullName $Acl;
+    ```
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
@@ -792,22 +836,28 @@ For more information, see [Install integration services](https://docs.microsoft.
 
 Before you can complete this procedure, AD FS must be deployed on Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
-Finance and Operations requires additional configuration beyond the default out-of-box configuration of AD FS. For the following steps, Windows PowerShell runs on a machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account.
+Finance and Operations requires additional configuration beyond the default out-of-box configuration of AD FS. The following Windows PowerShell commands must be run on the machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account. For complex AD FS scenarios, consult your domain administrator.
 
 1. Configure the AD FS identifier so that it matches the AD FS token issuer.
 
-    ```powershell
+   This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance and Operations client.
+
+    ```PowerShell
     $adfsProperties = Get-AdfsProperties
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
+   This command is related to using forms authentication upon signing into the Finance and Operations client. Other options, such as single sign-on, may be available which require additional setup.
+
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
     ```
 
 3. For sign-in, the user's email address must be an acceptable authentication input.
+
+   This command is related to setting up email claims. Other options, such as transformation rules, may be available which require additional setup.
 
     ```powershell
     Add-Type -AssemblyName System.Net

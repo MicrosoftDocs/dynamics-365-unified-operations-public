@@ -2,7 +2,7 @@
 # required metadata
 
 title: Development and build VMs that don't allow admin access FAQ
-description: This topic provides answers to frequantly asked questions (FAQs) about virtual machines that don't allow administrator access.
+description: This topic provides answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
 ms.date: 05/03/2018
@@ -50,7 +50,7 @@ You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Ser
 Yes, you have full access to the service volume drive. Therefore, you can clean up the monitoring data, and so on.
 
 ## What are the alternatives to VMs that don't allow administrator access?
-Both a Microsoft Azure VM on a private Azure subscription and a local virtual hard disk (VHD) allow administrator access. However, you must run Visual Studio as an administrator. This requirement applies because the administrator has access to these alternatives only through the **administrator** group, not explicitly.
+Both a Microsoft Azure environment on a private Azure subscription and a local virtual hard disk (VHD) allow administrator access. However, you must run Visual Studio as an administrator. This requirement applies because the administrator has access to these alternatives only through the **administrator** group, not explicitly.
 
 ## Can I run Visual Studio as an administrator?
 Starting with Platform update 12, you're no longer required to run Visual Studio as an administrator. You can no longer use the Remote Desktop Protocol (RDP) to connect as an administrator to VMs that are under a Microsoft-owned Azure subscription. These VMs include the Tier 1 VM that is included in the subscription and Tier 1 add-on VMs. However, if you're connecting as an administrator to a VM that isn't under a Microsoft-owned subscription, you must still run Visual Studio as an administrator.
@@ -60,6 +60,11 @@ You must use IIS Express. See the next question for more information.
 
 ## What are the instructions for using IIS Express?
 When IIS Express is started, an icon appears in the notification area (near the clock). When you right-click on the IIS Express icon, all the running sites are listed. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
+
+To ensure that debugging functions properly with IIS Express and Unified Operations Visual Studio projects, we recommend the following Internet Options settings:
+
+- Go to **Control Panel** > **Internet Options** > **Security** tab > **Internet**, and clear the **Enable Protected Mode** check box.
+- Go to **Control Panel** > **Internet Options** > **Security** tab > **Restricted sites**, and clear the **Enable Protected Mode** check box.
 
 ## Can I install additional development tools (such as Fiddler and Pepper)?
 No, you can't install additional development tools.

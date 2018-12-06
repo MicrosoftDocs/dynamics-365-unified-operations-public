@@ -12,6 +12,10 @@
     href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
   - name: Deployment options
     href: dev-itpro/choose-deployment.md
+  - name: Get support for Retail
+    href: retail-support.md
+  - name: One Version service updates FAQ
+    href: ../fin-and-ops/get-started/one-version.md
 - name: Understand the implementation lifecycle
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -37,12 +41,14 @@
     href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md   
   - name: Implement Finance and Operations Retail projects
     href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-  - name: Set up new environments, VSTS, and branches for Retail projects
+  - name: Set up new environments, Azure DevOps, and branches for Retail projects
     href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
   - name: Update code and environments for Retail projects
     href: dev-itpro/updating-environments.md
   - name: Testing and performance issues
     href: dev-itpro/retail-implementation-testing-performance.md   
+- name: Distributed order management (DOM)
+  href: dom.md
 - name: Payments
   items:
   - name: Payment methods
@@ -51,6 +57,8 @@
     href: ../financials/accounts-receivable/credit-card-authorizations.md
   - name: Configure cash denominations for the POS
     href: cash-denominations.md
+  - name: Set up pay invoice scenarios
+    href: payinvoice.md
   - name: Payments FAQ
     href: dev-itpro/payments-retail.md
 - name: Purchase orders
@@ -131,18 +139,20 @@
     href: MPOS-or-CPOS.md
   - name: Online and offline POS operations
     href: pos-operations.md
+  - name: Device activation of a customized Retail Modern POS
+    href: dev-itpro/retail-POS-activation-changes.md
   - name: Demo data screen layouts in MPOS and Cloud POS
     href: demo-data.md
   - name: Product and customer search in the POS
     href: POS-search-improvements.md
   - name: Inventory lookup in the POS
     href: product-variants-POS.md
+  - name: Suspend and resume transactions in the POS
+    href: pos-suspend-recall-transactions.md
   - name: Hardware peripherals
     items:
     - name: Retail peripherals
       href: retail-peripherals-overview.md
-    - name: Microsoft-tested POS hardware peripherals
-      href: microsoft-tested-pos-hardware-peripherals.md
     - name: Retail peripheral simulator
       href: dev-itpro/retail-peripheral-simulator.md
     - name: Connect peripherals to the POS
@@ -209,6 +219,8 @@
     href: Order-fulfillment-POS-setup.md
   - name: Show order notifications in the POS
     href: Notifications-POS.md
+- name: Configure and process an exchange on a return order
+  href: orderexchanges.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
@@ -225,10 +237,14 @@
     href: set-up-rfm-analysis.md
 - name: Discounts and price adjustments
   items:
+  - name: Retail discounts
+    href: retail-discounts-overview.md
   - name: Retail sales price management
     href: price-management.md
   - name: Price adjustments and discounts
     href: price-adjustments-discounts.md
+  - name: Apply multiple Retail discounts to a product
+    href: Apply-multiple-retail-discounts.md
   - name: Determine the optimal combination of overlapping discounts
     href: optimal-combination-overlapping-discounts.md
   - name: Define channel-specific discounts
@@ -267,7 +283,7 @@
     href: ../supply-chain/pim/search-products-product-variants.md
 - name: Loyalty
   items:
-  - name: Set up customer loyalty programs
+  - name: Loyalty overview
     href: set-up-customer-loyalty-program.md
 - name: Inventory
   items:
@@ -303,6 +319,18 @@
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
+  - name: Fiscal integration for Retail channel
+    href: localizations/fiscal-integration-for-retail-channel.md
+  - name: Eastern Europe
+    items: 
+    - name: Advance invoices for Retail for Eastern Europe
+      href: localizations/emea-eeu-advance-invoices-for-retail.md
+    - name: Petty cash management for Retail for Eastern Europe
+      href: localizations/emea-eeu-petty-cash-for-retail.md
+    - name: Retail customer invoices and return sales orders in Eastern European countries
+      href: localizations/emea-eeu-retail-invoices.md
+    - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+      href: localizations/emea-eeu-deployment.md
   - name: France
     items:
     - name: Cash register functionality
@@ -315,6 +343,12 @@
       href: localizations/apac-ind-cash-registers.md
     - name: Deployment guidelines for cash registers
       href: localizations/apac-ind-loc-deployment-guidelines.md
+    - name: Support for upgrade and N-1 for India
+      href: localizations/apac-ind-n-1-for-india.md
+  - name: Italy
+    items:
+    - name: Fiscal printer integration
+      href: localizations/emea-ita-fpi-sample.md
   - name: Norway
     items:
     - name: Cash register functionality
@@ -464,6 +498,8 @@
     items:
     - name: Retail POS screen layouts
       href: pos-screen-layouts.md
+    - name: Open URL in POS
+      href: Open-URL-in-POS.md
     - name: Install the POS Layout designer
       href: install-pos-layout-designer.md
     - name: Retail Modern POS in offline mode
@@ -475,13 +511,19 @@
     - name: Add custom controls to POS views
       href: dev-itpro/pos-custom-control.md
     - name: Add POS operations to POS layouts using Button grid designer
-      href: dev-itpro/add-POS-operations.md     
+      href: dev-itpro/add-POS-operations.md  
+    - name: Retail POS APIs
+      href: dev-itpro/POS-APIs.md
     - name: POS payment extension
       href: dev-itpro/pos-payment-extension.md
     - name: Support for external gift cards
       href: dev-itpro/gift-card.md
     - name: Create and apply branding to the Retail Experience app
       href: dev-itpro/create-retail-experience-app.md
+    - name: Set up POS Hybrid app on Android and iOS
+      href: dev-itpro/hybridApp.md
+    - name: Override POS request handler
+      href: dev-itpro/pos-handler.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
@@ -536,9 +578,13 @@
       href: dev-itpro/payment-custom-error-messages.md
     - name: Create Windows installers for payment connectors
       href: dev-itpro/create-windows-installer-payment-connector.md
+    - name: Payment data use
+      href: payment-connector-data-fields.md
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:
+    - name: Upcoming changes in the Retail SDK
+      href: dev-itpro/UpcomingSDKChanges.md
     - name: Merge the build systems for Retail and Finance and Operations
       href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
     - name: Retail SDK extensibility samples

@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Depreciation adjustments for additional acquisitions in the second year (Germany)
+title: DE-00002 Depreciation adjustments for additional acquisitions in the second year
 description: This guide demonstrates how to set up the calculation of depreciation for additional acquisitions. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 05/09/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetParameters, AssetDepreciationProfile   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Depreciation adjustments for additional acquisitions in the second year (Germany)
+# DE-00002 Depreciation adjustments for additional acquisitions in the second year
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

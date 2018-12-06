@@ -5,7 +5,7 @@ title: X++ statements, loops, and exception handling
 description: This topic describes statements, loops, and exception handling in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ This topic describes statements, loops, and exception handling in X++.
 Comments
 --------
 
-It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the <strong>//</strong> style or the <strong>/\</strong><em>…</em><em>\*/</em>* style. However, a best practice is to use the <strong>//</strong> style for comments, and even for multiline comments.
+It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
 
     // This is an example of a comment.
     /* Here is another example of a comment. */
@@ -256,7 +256,7 @@ This section describes some **Global** class methods in more detail. These class
 
 The following code shows how the **error** method is declared.
 
-    server client static Exception error
+    static Exception error
         (SysInfoLogStr txt,
         URL helpURL = '',
         SysInfoAction _sysInfoAction = null)
@@ -277,7 +277,7 @@ Occasionally, you want to do nothing inside your **catch** block. However, the X
 
 ### Exceptions inside transactions
 
-If an exception is thrown inside a transaction, the transaction is automatically aborted (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception. Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
+If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception. Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
 
 ### Examples of exception handling
 
@@ -563,6 +563,7 @@ The following table shows the exception literals that are the values of the **Ex
 | UpdateConflict                    | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
 | Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
+| [TransientSqlConnectionError](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
 
 ## Loop statements: for, while, and do...while
 There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
@@ -579,7 +580,7 @@ The **for** loop repeatedly executes one or more statements for as long as the c
 
     // An example where all items are printed in 
     // a fixed array called ra with 100 reals. 
-    int ra[10];
+    int ra[100];
     int i; // Control variable.
     for (i=1; i<=100; i+=1)
     {
@@ -646,7 +647,7 @@ The **continue** statement causes execution to move directly to the next iterati
     // and i is incremented before the if statement is tried again.
     int i;
     int Iarray[100];
-    for (i=1; i<100; i++)
+    for (i=1; i<=100; i++)
     {
         if (Iarray[i] <= 0)
         continue;
@@ -692,17 +693,17 @@ You use the **print** statement to show messages (text or selected results) in a
 ## TODO comments
 The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. Here are the rules for using **TODO** in comments:
 
-- The <strong>TODO</strong> string can appear in a comment that uses either the <strong>//</strong> style or the <strong>/\</strong><em>...</em><em>\*/</em>* style.
+- The **TODO** string can appear in a comment that uses either the **//** style or the **/** style.
 - The **TODO** string must be the very first non–white space string in the comment. A carriage return, a line feed, a tab, and a space are all considered white space.
 - No white space is required between the start of the comment and the **TODO**.
 - The **TODO** string is case-insensitive. However, the convention is to type **TODO** in all uppercase letters, instead of **ToDo** or another variation.
 - The **TODO** string can have any characters appended to it. However, the convention is either to append a colon to the **TODO** string or to follow it with a white space.
 - The rest of the comment after the **TODO** string is reported as the task description. If the comment is longer than 200 characters, it might appear truncated on the **Tasks** tab.
-- The <strong>TODO</strong> task description can be spread over multiple lines when the <strong>/\</strong><em>...</em><em>\*/</em>* comment style is used.
+- The**TODO** task description can be spread over multiple lines when the **/** comment style is used.
 
 ### Examples of TODO comments
 
-The following examples show <strong>TODO</strong> comments that use the <strong>//</strong> and <strong>/\</strong><em>...</em><em>\*/</em>* styles.
+The following examples show <strong>TODO</strong> comments that use the **//** and **/** styles.
 
     // An example of using TODO in the // style of comment.
     public boolean isLate()
@@ -755,6 +756,3 @@ In this syntax, *statement* can be a block of statements, and *expression* decla
             textFromFile = sr.ReadToEnd();
         }
     }
-
-
-

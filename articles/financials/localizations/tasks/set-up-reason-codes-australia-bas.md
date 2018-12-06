@@ -5,7 +5,7 @@ title: Set up reason codes for Australia BAS
 description: This procedure walks you through setting up the Additional BAS reconciliation account, the BAS PAYG reason codes and the BAS fringe benefit reason code which are required to generate the Australia Business Activity Statement. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TaxReportLedgerAccounts, TaxPAYGVariationTable, TaxFringeVariationTable   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Australia
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up reason codes for Australia BAS
 

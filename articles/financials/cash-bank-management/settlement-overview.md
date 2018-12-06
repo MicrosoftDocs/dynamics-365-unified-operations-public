@@ -25,8 +25,8 @@ ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 
 ---
 
@@ -59,3 +59,4 @@ If a [payment is less than the invoice amount](../accounts-payable/vendor-paymen
 
 ## Additional resources
 - [Settle remainder](../financials/cash-bank-management/settle-remainder.md)
+

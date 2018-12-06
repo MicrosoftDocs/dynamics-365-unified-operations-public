@@ -5,7 +5,7 @@ title: Data integration by using Common Data Service
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,6 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can use Common Data Service to enable the flow of data between Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. For example, customer information in Microsoft Dynamics 365 for Sales can flow to Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. You don’t have to manually move the data or use a third-party data integration tool.
 
-For more information about the Common Data Service data integration feature, see [Dynamics 365 Data Integration](/common-data-service/entity-reference/dynamics-365-integration) in the Common Data Service documentation.
+For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) in the PowerApps documentation.
 
 For an example of using Common Data Service, see [Configure a prospect to cash scenario](../../supply-chain/sales-marketing/prospect-to-cash.md).

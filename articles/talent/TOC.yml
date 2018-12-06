@@ -1,11 +1,34 @@
-- name: Welcome to Dynamics 365 for Talent
+- name: Dynamics 365 for Talent
   href: index.md
   items:
   - name: Get started
     href: talent-get-started.md
     items:
     - name: What's new or changed
+      href: whats-new.md
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (November 27, 2018)
+        href: whats-new-talent-november-27.md            
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (November 15, 2018)
+        href: whats-new-talent-november-15.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)
+        href: whats-new-talent-october-31.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 19, 2018)
+        href: whats-new-talent-october-19.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 15, 2018)
+        href: whats-new-talent-october-11.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 8, 2018)
+        href: whats-new-talent-october-8.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 1, 2018)
+        href: whats-new-talent-october-01.md 
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)
+        href: whats-new-talent-september-24.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
+        href: whats-new-talent-september-17-2018.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
+        href: whats-new-talent-september-10.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
+        href: whats-new-talent-august2018.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
         href: whats-new-talent-july2018.md
     - name: System requirements and update policy
@@ -18,10 +41,16 @@
       href: modular-app-tech-faq.md
     - name: Embed PowerApps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Core HR and Common Data Service for Apps
+      href: CoreHREntities.md
+    - name: Integrations
+      href: talent-financeandoperations-integration.md
     - name: Access preview features
       href: access-preview-feature.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
+    - name: Get support for Talent
+      href: talent-support.md
   - name: Organize your workforce by using departments, jobs, and positions
     href: departments-jobs-positions.md
     items:
@@ -39,12 +68,43 @@
       href: formalize-business-processes.md
     - name: Use workflows to manage employee information
       href: workflow-manage-employee-information.md
-    - name: Leave and absence management
-      href: leave-absence-overview.md
+  - name: Manage leave and absence
+    href: leave-absence-overview.md
+    items:
+    - name: Accrue time off based on hours worked
+      href: leave-accrue-hours-worked.md
+    - name: Working time calendars
+      href: working-time-calendars.md
   - name: Staff your organization
     items:
     - name: Attract features and capabilities
       href: attract-overview.md
+    - name: Creating a process template in Attract
+      href: Process-templates-Attract.md
+    - name: Creating, approving, and posting jobs in Attract
+      href: Creating-jobs-Attract.md
+    - name: Sourcing with Talent Pools
+      href: attract-talent-pools.md
+    - name: Sourcing with LinkedIn Recruiter
+      href: attract-linked-in-recruiter.md
+    - name: Hiring Process activities in Attract 
+      href: activities-attract.md
+    - name: Extensibility
+      href: extensibility-attract.md
+    - name: Career site and candidate experiences
+      href: career-site.md
+    - name: Setting up offer management
+      href: offer-setup.md
+    - name: Creating, approving, and signing offers
+      href: creating-offers.md
+    - name: Creating and managing email templates
+      href: email-templates.md
+    - name: Security and role management in Attract
+      href: security-attract.md
+    - name: Admin settings in Attract
+      href: Admin-Settings-Attract.md
+    - name: Intelligent recommendations
+      href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
   - name: Motivate employees
@@ -57,6 +117,8 @@
       href: create-variable-compensation-plans.md
     - name: Process compensation
       href: process-compensation.md
+    - name: Set up the components of a job
+      href: create-job.md
   - name: Develop and train employees
     items:
     - name: Performance management
@@ -206,3 +268,29 @@
       href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Create a performance review
       href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json     
+  - name: Troubleshoot Talent
+    items:
+    - name: Analytic reports are not updated
+      href: analytic-reports-not-updated.md
+    - name: Can't create an environment in the PowerApps Admin center
+      href: create-envi-powerapps-admin-ctr.md
+    - name: Talent client disconnects
+      href: client-disconnects.md
+    - name: How database backups are handled
+      href: database-backups.md
+    - name: Avoid text truncation on the position hierarchy and export to Visio
+      href: avoid-text-truncation-position-hierarchy-visio.md
+    - name: Run the compensation process
+      href: run-compensation-process.md
+    - name: Save task guides to LCS and replay them
+      href: save-play-task-guides-LCS.md
+    - name: Access to private addresses by security role
+      href: security-roles-addresses.md
+    - name: Talent doesn't appear among the Microsoft Dynamics 365 apps (CDS1.0)
+      href: talent-not-in-home-CDS.md
+    - name: User can access Core HR but not the Onboard or Attract app
+      href: user-access-core-hr.md
+    - name: Reporting options in Talent
+      href: talent-reporting-options.md
+  
+  

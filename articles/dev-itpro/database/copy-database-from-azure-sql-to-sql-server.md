@@ -3,9 +3,9 @@
 
 title: Copy Finance and Operations databases from Azure SQL Database to SQL Server environments
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
-author: maertenm
+author: laneswenka
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 203764
 ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -82,7 +82,7 @@ Because of a technical limitation that is related to the certificate that is use
 | FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework (DIXF). |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
 | HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since Microsoft Dynamics AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
-| SysEmailSMPTPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
+| SysEmailSMTPPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
@@ -118,13 +118,54 @@ Run the following script against the copy of the database to turn off change tra
 > You must edit the following **ALTER DATABASE** command so that it uses the name of your database copy.
 
 ```
---Prepare a database in Azure SQL Database for export to SQL Server.
+--Prepare a database in Azure SQL ddatabase for export to SQL Server.
+
+--Remove certificates in database from Electronic Signature usage
+DECLARE @SQLElectronicSig nvarchar(512)
+DECLARE certCursor CURSOR for
+select 'DROP CERTIFICATE ' + QUOTENAME(c.name) + ';'
+from sys.certificates c;
+OPEN certCursor;
+FETCH certCursor into @SQLElectronicSig;
+WHILE @@Fetch_Status = 0
+BEGIN
+print @SQLElectronicSig;
+exec(@SQLElectronicSig);
+FETCH certCursor into @SQLElectronicSig;
+END;
+CLOSE certCursor;
+DEALLOCATE certCursor;
+
+
+-- Re-assign full rext catalogs to [dbo]
+BEGIN
+    DECLARE @catalogName nvarchar(256);
+    DECLARE @sqlStmtTable nvarchar(512)
+
+    DECLARE reassignFullTextCatalogCursor CURSOR
+       FOR SELECT DISTINCT name
+       FROM sys.fulltext_catalogs 
+       
+       -- Open cursor and disable on all tables returned
+       OPEN reassignFullTextCatalogCursor
+       FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
+
+       WHILE @@FETCH_STATUS = 0
+       BEGIN
+              SET @sqlStmtTable = 'ALTER AUTHORIZATION ON Fulltext Catalog::[' + @catalogName + '] TO [dbo]'
+              EXEC sp_executesql @sqlStmtTable
+              FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
+       END
+       CLOSE reassignFullTextCatalogCursor
+       DEALLOCATE reassignFullTextCatalogCursor
+END
+
 --Disable change tracking on tables where it is enabled.
 declare
 @SQL varchar(1000)
 set quoted_identifier off
 declare changeTrackingCursor CURSOR for
-select 'ALTER TABLE ' + t.name + ' DISABLE CHANGE_TRACKING'
+select 'ALTER TABLE [' + t.name + '] DISABLE CHANGE_TRACKING'
 from sys.change_tracking_tables c, sys.tables t
 where t.object_id = c.object_id
 OPEN changeTrackingCursor
@@ -142,13 +183,18 @@ ALTER DATABASE
 -- SET THE NAME OF YOUR DATABASE BELOW
 MyNewCopy
 set CHANGE_TRACKING = OFF
+
+--Change ownership of alternate schemas to DBO
+ALTER AUTHORIZATION ON schema::shadow TO [dbo]
+ALTER AUTHORIZATION ON schema::[BACKUP] TO [dbo]
+
 --Remove the database level users from the database
 --these will be recreated after importing in SQL Server.
 declare
 @userSQL varchar(1000)
 set quoted_identifier off
 declare userCursor CURSOR for
-select 'DROP USER ' + name
+select 'DROP USER [' + name + ']'
 from sys.sysusers
 where issqlrole = 0 and hasdbaccess = 1 and name <> 'dbo'
 OPEN userCursor
@@ -175,9 +221,14 @@ where name = 'TEMPTABLEINAXDB'
 TRUNCATE TABLE SYSSERVERCONFIG
 TRUNCATE TABLE SYSSERVERSESSIONS
 TRUNCATE TABLE SYSCORPNETPRINTERS
+TRUNCATE TABLE SYSCLIENTSESSIONS
+TRUNCATE TABLE BATCHSERVERCONFIG
+TRUNCATE TABLE BATCHSERVERGROUP
 --Remove records which could lead to accidentally sending an email externally.
 UPDATE SysEmailParameters
-SET SMTPRELAYSERVERNAME = ''
+SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' 
+--Remove encrypted SMTP Password record(s)
+TRUNCATE TABLE SYSEMAILSMTPPASSWORD
 GO
 UPDATE LogisticsElectronicAddress
 SET LOCATOR = ''
@@ -316,14 +367,6 @@ If change tracking was enabled in the source database, ensure to enable change t
 
 To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
 
-### Re-provision the target environment
-
-[!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-### Reset the Financial Reporting database
-
-If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
-
 ## Start to use the new database
 
 To switch the environment and use the new database, first stop the following services:
@@ -335,6 +378,14 @@ To switch the environment and use the new database, first stop the following ser
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
+
+### Re-provision the target environment
+
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+### Reset the Financial Reporting database
+
+If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
 ## Re-enter data from encrypted and environment-specific fields in the target database
 
@@ -348,21 +399,11 @@ In the Finance and Operations client, enter the values that you documented for t
 | FiscalEstablishmentStaging.CSC                           | This field is used by DIXF. |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
 | HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
-| SysEmailSMPTPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
+| SysEmailSMTPPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
 ## Known issues
-
-### I can't drop users in source database
-
-When you drop users in the source database, the axdbadmin or axdeployuser user might not be deleted, because that user is the current owner of the full-text catalog. This issue occurs if the database was originally created for CTP7 or CTP8 of Dynamics AX 7 (Finance and Operations). To resolve the issue, run the following Transact-SQL (T-SQL) command to change the owner to the **dbo** user.
-
-```
-ALTER AUTHORIZATION ON Fulltext Catalog:: TO [dbo]; 
-```
-
-For more information about this command, see [ALTER AUTHORIZATION](https://msdn.microsoft.com/en-us/library/ms187359.aspx).
 
 ### I can't download Management Studio installation files
 

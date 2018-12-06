@@ -199,13 +199,13 @@ This means two things:
 
 2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
 
-### Delete platform metadata hotfixes from your VSTS project (Platform update 2 or earlier)
+### Delete platform metadata hotfixes from your Azure DevOps project (Platform update 2 or earlier)
 
 > [!NOTE]
 > This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
 
-Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
-Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
+Before you install the new platform update, you must clean up your Microsoft Azure DevOps source control project.
+Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your Azure DevOps project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
 
 -   Application Platform
 -   Application Foundation

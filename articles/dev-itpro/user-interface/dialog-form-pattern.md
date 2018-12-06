@@ -5,7 +5,7 @@ title: Dialog form pattern
 description: This topic provides information about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel.
 author: jasongre
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,9 +46,9 @@ A dialog box represents an action or activity that users can explicitly commit o
 -   **Large** – This size is a three-column-wide dialog. If your dialog contains more content than can comfortably fit within a medium dialog, but a full-width dialog isn’t required, you should use this size.
 -   **Full** – A large dialog is nearly the full width of the browser viewport. Its size varies, depending on the viewport width, and it will always be the largest dialog size option. Use this size if your dialog has a lot of wide elements, or if it requires an unusually large amount of horizontal space.
 
-For more detail about the various dialog sizes, see the table in the appendix of this article, under “Selecting the correct dialog size.” We strongly recommend that you review that table. Five patterns are described in this document:
+For more detail about the various dialog sizes, see the table in the appendix of this topic, under “Selecting the correct dialog size.” We strongly recommend that you review that table. Five patterns are described in this document:
 
--   **Dialog** – This is the basic dialog pattern. If you don’t have a reason to use one of the other two patterns, you should use this one.
+-   **Dialog** – This is the basic dialog pattern. Use this dialog if you don't have a reason to use one of the other Dialog patterns.
 -   **Dialog w/tabs** – This is a more specific version of the Dialog pattern. It incorporates a Tab control in the dialog. You can also optionally provide a header for the Tab, and also a footer.
 -   **Dialog w/FastTabs** – This closely resembles the Dialog w/tabs pattern but uses FastTabs instead of regular tabs to organize the information.
 -   **Dialog w/double tabs** – This closely resembles the Dialog w/tabs pattern but has a second Tab control immediately after the first one.

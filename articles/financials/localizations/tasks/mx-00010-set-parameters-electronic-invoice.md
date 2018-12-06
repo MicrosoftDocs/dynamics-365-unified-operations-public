@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set parameters for an electronic invoice (Mexico)
+title: MX-00010 Set parameters for an electronic invoice
 description: This procedure walks you through setting up an electronic invoice and the PAC account to get the approval and the digital stamp. 
 author: sndray
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: EInvoiceCFDIPACTable_MX, EInvoiceParameters_MX, DigitalCertificateLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set parameters for an electronic invoice (Mexico)
+# MX-00010 Set parameters for an electronic invoice
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

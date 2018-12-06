@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,13 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
+
 This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
 ## Frequently asked questions
 
 ### What platforms do the Office Add-ins support?
 
-The Microsoft Excel Add-in and Microsoft Word Add-in are built by using the Office Web/JavaScript Add-in framework. This framework was originally released for Microsoft Office 2013 but received significant updates in Microsoft Office 2016. For more information, see [Office Add-in host and platform availability](http://dev.office.com/add-in-availability). The Excel Add-in requires ExcelAPI 1.2. Therefore, use the [Office Add-in host and platform availability](http://dev.office.com/add-in-availability) matrix to determine which platforms support the Excel Add-in. For many users, the phrase "Excel 2016 with the latest updates" is sufficient.
+The Microsoft Excel Add-in and Microsoft Word Add-in are built by using the Office Web/JavaScript Add-in framework. This framework was originally released for Microsoft Office 2013 but received significant updates in Microsoft Office 2016. For more information, see [Office Add-in host and platform availability](https://dev.office.com/add-in-availability). The Excel Add-in requires ExcelAPI 1.2. Therefore, use the [Office Add-in host and platform availability](https://dev.office.com/add-in-availability) matrix to determine which platforms support the Excel Add-in. For many users, the phrase "Excel 2016 with the latest updates" is sufficient.
 
 ### Are the Office Add-ins safe?
 
@@ -48,7 +51,7 @@ In an age of malware, full connectivity, and compliance risks, nothing is comple
 
 ### Does the Excel Add-in support Office for Mac?
 
-No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](http://dev.office.com/add-in-availability).
+No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](https://dev.office.com/add-in-availability).
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
@@ -68,28 +71,30 @@ The Excel Add-in runs inside an Internet Explorer window. By default, the Excel 
 
 ### The Excel Add-in seems to be slow when it publishes records. How can I learn more about what is occurring?
 
-Most of the work that the Excel Add-in does should occur on the server. To learn where the time is being spent, you can use [Fiddler (a free download)](http://www.telerik.com/fiddler) to make sure that the Excel Add-in works as you expect.
+Most of the work that the Excel Add-in does should occur on the server. To learn where the time is being spent, you can use [Fiddler (a free download)](https://www.telerik.com/fiddler) to make sure that the Excel Add-in works as you expect.
 
 The Excel Add-in sends the published records as a request. When those records are processed, the response is sent back from the server. The Excel Add-in then creates another message that contains the next set of records to publish, and sends that request. Five to ten seconds of processing time in the Excel Add-in should be required between the previous response from the server and the next request to the server.
 
 To check processing time in the Excel Add-in versus the server/service, follow these steps.
 
-1. Start [Fiddler](http://www.telerik.com/fiddler). 
+1. Start [Fiddler](https://www.telerik.com/fiddler). 
 2. Publish a few records to test the process.
-3. Make sure that you can view that request and response in Fiddler ([make sure that HTTPS traffic is being decrypted](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/DecryptHTTPS)).
+3. Make sure that you can view that request and response in Fiddler ([make sure that HTTPS traffic is being decrypted](https://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/DecryptHTTPS)).
 4. Publish a larger number of records. 
 5. In Fiddler, watch the time that is required from a request to its response, and from a response to the next request.
 
     - If the time from a request to its response is large, the bottleneck is the server/service.
     - If the time from a response to the next request is large, the bottleneck is the Excel Add-in (that is, the client).
 
-### Why is the Export to Excel functionality limited to 10,000 records?
+### Why is the Export to Excel functionality limited to 10,000 records (prior to Platform update 22)?
 
-The Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. The fact that the form is used means that the export occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client. 
+Prior to Platform update 22, the Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. Because the form is used during the export, it occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client.
 
-The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and it takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF)/Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators. 
+With Platform update 22 and later, Export to Excel has a progress dialog box and is no longer a blocking process for other users, so larger datasets can be exported. Exporting data via Export to Excel will be slower than using the Excel Add-in or the Data Management framework, but it will return exactly the data shown in the grid. This is useful for filtered datasets. The user is presented with a dialog box that allows them to stop at any point. Because the export can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
 
-If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points: 
+The ideal alternative to Export to Excel is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators.
+
+If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points:
 
 - The entities should have all the validation and logic that the forms have. If they don't, it's a bug. 
 - The way that entities are secured resembles the way that forms are secured. Therefore, if a user should not have permission to update or write data by using a form that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 
@@ -159,7 +164,7 @@ The permissions SMTP user account is `serviceacct@d365forops.onmicrosoft.com1`.
 
 **Long-term fix:** The long-term fix for this issue was put in place on May 10, 2016. The Office Add-ins now use a new Dialog API that the Office team added. 
 
-**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](http://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page. 
+**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](https://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page. 
 
 If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office 2016](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx). 
 
@@ -185,29 +190,29 @@ This workaround requires user knowledge and extra steps. After users have been e
 
 **Solution:** Because this issue is a customer-specific network issue, it requires a customer-specific resolution. If AD FS is used, make sure that the AD FS URL uses HTTPS. Additionally, make sure that all the following URLs are accessible from the user's computer.
 
-The following URLs are accessed for loading:
+The following URLs are accessed for loading.
 
-- `http://az689774.vo.msecnd.net:443`
+- `https://az689774.vo.msecnd.net:443`
 - `https://az689774.vo.msecnd.net`
-- `http://appsforoffice.microsoft.com:443`
+- `https://appsforoffice.microsoft.com:443`
 - `https://appsforoffice.microsoft.com`
-- `http://secure.aadcdn.microsoftonline-p.com:443`
+- `https://secure.aadcdn.microsoftonline-p.com:443`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `http://az416426.vo.msecnd.net:443`
+- `https://az416426.vo.msecnd.net:443`
 - `https://az416426.vo.msecnd.net`
-- `http://telemetryservice.firstpartyapps.oaspapps.com:443`
+- `https://telemetryservice.firstpartyapps.oaspapps.com:443`
 - `https://telemetryservice.firstpartyapps.oaspapps.com`
-- `http://nexus.officeapps.live.com:443`
+- `https://nexus.officeapps.live.com:443`
 - `https://nexus.officeapps.live.com`
-- `http://browser.pipe.aria.microsoft.com:443`
+- `https://browser.pipe.aria.microsoft.com:443`
 - `https://browser.pipe.aria.microsoft.com`
 - `http://schemas.microsoft.com`
 
-The following URLs are accessed for authentication:
+The following URLs are accessed for authentication.
 
-- `http://login.windows.net:443`
+- `https://login.windows.net:443`
 - `https://login.windows.net`
-- `http://login.microsoftonline.com:443`
+- `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
 ## Additional resources

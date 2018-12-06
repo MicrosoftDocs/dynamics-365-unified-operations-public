@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for cloud deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 07/19/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,8 +49,7 @@ To find the latest release for each web browser, go to the software manufacturer
 
 > [!NOTE]
 > - To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
-> - The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit-compatible operating system.
-> - The Report Designer for Financial reporting is started as a ClickOnce application. It requires a 64-bit-compatible operating system. If you're using Chrome, you must install a ClickOnce extension to download the Report Designer client. If you use Chrome in Incognito mode, make sure that the ClickOnce extension is also enabled for Incognito mode.
+> - The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
 > - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 
 ### Supported web browsers for Retail Cloud POS
@@ -86,6 +85,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 
 > [!NOTE]
 > If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires SQL Server 2012 with Service Pack 3 or later, SQL Server 2014 with Service Pack 2 or later, or SQL Server 2016.  The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
+> Starting October 1, 2018, Retail Modern POS and other client-side components require that the Microsoft .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ### Supported Windows operating systems
 
@@ -112,6 +112,10 @@ The following Microsoft Office applications are supported in cloud and on-premis
 - Android OS 6.0 or later
 
 ## Retail hardware station requirements
+
+> [!NOTE]
+> Starting October 1, 2018, Retail hardware station and other client-side components require that the .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+
 ### Supported operating systems
 
 - Retail hardware station is a 32-bit application, but it will run on both x86 and x64 architectures.
@@ -135,6 +139,10 @@ The computer must meet all system requirements for installing and using the foll
 - Third-party hardware
 
 ## Retail Store Scale Unit requirements
+
+> [!NOTE]
+> Starting October 1, 2018, Retail Store Scale Unit and other client-side components require that the .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+
 Take note that the minimum system requirements listed below are the bare minimum necessary to get a Retail Store Scale Unit to function in a test scenario.  The following is not representative of a realistic production environment.  It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users.
 
 ### Supported operating systems
@@ -193,6 +201,10 @@ It would be in an organization's best interest to also take the following items 
 ## Requirements for development on local VMs
 
 For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
+
+## Database collation
+
+The only supported collation for Finance and Operations databases in the cloud is **SQL_Latin1_General_CP1_CI_AS**. Please ensure that your SQL Server and database collations in development environments are set to this. Also ensure that any configuration environments that are published to Sandbox have this same collation.
 
 ## Additional resources
 

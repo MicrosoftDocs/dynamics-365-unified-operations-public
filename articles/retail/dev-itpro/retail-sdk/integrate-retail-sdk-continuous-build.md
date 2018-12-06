@@ -2,7 +2,7 @@
 # required metadata
 
 title: Merge the build systems for Retail and Finance and Operations
-description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Visual Studio Team Services.  
+description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Azure DevOps.  
 author: andreash1
 manager: AnnBe
 ms.date: 09/19/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Visual Studio Team Services. 
+This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Azure DevOps. 
 
 ## Enable the build system
 
@@ -40,7 +40,7 @@ To get started, you must follow all the steps to get a full continuous build sys
 
 ## Prepare the Retail SDK
 ### Getting the Retail SDK
-If you don't already have the Retail software development kit (SDK) in the same Microsoft Visual Studio Team Services (VSTS) project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same VSTS project as Retail, you can start.
+If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
 
 ## Add a repository mapping for the Retail SDK
 Edit the build definition so that it includes the location of the Retail SDK. (In other words, add a map.) [![Adding a repository mapping for the Retail SDK](./media/build-map-addition.png)](./media/build-map-addition.png)
@@ -62,5 +62,5 @@ Make sure that this step occurs after the “PowerShell: Generate packages” st
 You must complete this task only if you must add built Retail binaries to the Retail package. In this case, you must follow these three steps:
 
 1.  Use a normal AXReference in your Retail project.
-2.  Add the corresponding AXReference folder and the XML file inside it to VSTS.
+2.  Add the corresponding AXReference folder and the XML file inside it to Azure DevOps.
 3.  Update the Copy-RetailBinaries.ps1 file with the appropriate file commands to get the binary file from the Retail SDK to the Retail bin folder. The Microsoft Windows PowerShell file includes a sample that copies the PricingEngine.dll file into the ApplicationSuite bin folder. Depending on the modules that you're building, the files and folders must be changed so that they are in a different location.
