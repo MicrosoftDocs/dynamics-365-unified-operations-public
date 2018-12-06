@@ -5,7 +5,7 @@ title: Settlement overview
 description: This article provides general information about the settlement process. It describes the types of transactions that can be settled, when and how transactions can be settled, and the results of the settlement process.
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,4 +57,5 @@ As transactions are settled, the outstanding balance of each transaction is incr
 If a [payment is less than the invoice amount](../accounts-payable/vendor-payments-partial-amount.md) because of a cash discount, write-off, or underpayment, the invoice and payment might still be closed, depending on the setup of settlement in Accounts payable parameters and Accounts receivable parameters. Settlement can also generate transactions. For example, the settlement of an invoice and payment might produce a cash discount, realized gain or loss, sales tax adjustments, write-offs, or penny differences.
 
 
-
+## Additional resources
+- [Settle remainder](../financials/cash-bank-management/settle-remainder.md)
