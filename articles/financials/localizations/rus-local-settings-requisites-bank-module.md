@@ -48,12 +48,12 @@ Before working in the **Bank management** workspace, you should complete the fol
 
 ## Create banks by importing list of banks
 
-### Set up for importing bank list
+### Preqrequisites 
 
 1.	Import the ‘Bank BIC catalog (RU)’ Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).
-Fix downloading instructions are here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs 
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. Go to **Cash and bank management > Setup > Cash and bank management parameters**. In the **General** fast tab, in the **Import list of banks** felds group, in the field **Import format configuration**, select the ER configuration ‘Bank BIC catalog (RU)’
+2. Go to **Cash and bank management > Setup > Cash and bank management parameters**. In the **General** fast tab, in the **Import list of banks** felds group, in the field **Import format configuration**, select the ER configuration ‘Bank BIC catalog (RU)’.
 
 
 ### Import list of banks
