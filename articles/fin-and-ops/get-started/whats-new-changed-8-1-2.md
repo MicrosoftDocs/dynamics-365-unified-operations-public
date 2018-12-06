@@ -105,7 +105,7 @@ In this release you can review electronic formats of sales, purchase books, addi
 
 To apply the new formats, you need to import the following or higher versions of the ER configurations from LCS shared asset library:  
  - VAT declaration model (RU).version.46
- - VAT declaration model mapping (RU).version.46.68
+ - VAT declaration model mapping (RU).version.46.70
  - Purchase book format.version.46.13
  - Sales book format.version.46.13
  - Purchase book additional sheet format.version.46.9
