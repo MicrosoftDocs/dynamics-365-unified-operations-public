@@ -5,7 +5,7 @@ title: Standard and targeted service updates
 description: This topic provides information about the different release options for Microsoft Dynamics 365 for Finance and Operations.
 author: meeramahabala
 manager: AnnBe
-ms.date: 11/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,30 +35,36 @@ ms.dyn365.ops.version: Platform update 11
 
 With Dynamics 365 for Finance and Operations, you receive new service updates and features monthly instead of doing expensive upgrades every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first. You can designate that only certain environments receive the updates. Or, you can remain on the default release schedule and receive the updates later. This article explains the different release options and how you can use them for your organization.
 
-Service updates will contain application (including financial reporting and Retail) and platform changes that are critical improvements to the service, including regulatory updates. New experiences will be opt-in.
+Service updates will contain application (including financial reporting and Retail) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be opt-in. 
 
 ## Release processes
-Each new release is designed and developed by the Dynamics 365 for Finance and Operations team. Any new release is first tested and validated by the feature team, then by the entire Finance and Operations and Retail teams. During this time extensive testing is done on various, test topologies. A compatibility checker runs tests to ensure backward compatibility. Further, several customer databases and code are benchmark tested with automation to ensure no breaks.
+Each new release is designed and developed by the Dynamics 365 for Finance and Operations team. Any new release is first tested and validated by the feature team, then by the entire Dynamic 365 for Finance and Operations and Retail teams. During this time extensive testing is done on various test topologies. A compatibility checker runs tests to ensure backward compatibility. Further several customer data bases and code are benchmark tested with automation to ensure no breaks.
 
-The first release after development is complete is a **targeted release.** This release is available to customers who opt-in through the [insider program](https://experience.dynamics.com/). During this targeted release, Microsoft monitors telemetry, collects feedback, and validates quality by monitoring key metrics. There are two phases of the targeted release. In the first phase, the preview phase, partners, customers, and ISVs use the release to validate their customizations and provide feedback. This release cannot be used in production.
+Ring 2 is a targeted release. This release is available to partners, customers and ISVs who opt-in through the [insider program](https://experience.dynamics.com/). During this targeted release, Microsoft monitors telemetry, collects feedback and further validates quality by monitoring key metrics. During this phase the release must only be deployed on Dev/Test or UAR environments for early testing. In this preview phase, partners customers and ISVs use the release to validate their customizations and provide feedback. This release cannot be used in production.
 
-The next release is the first release for customers who opt in. After the targeted general availability, the new release is made available to all customers. This series of progressive validations is in place to make sure that the release is as robust as possible. The releases are shown in the following graphic.
+Ring 3 is also referred to as production ready “first release” for customers who opt in. During this ring the customers have the option of taking the release all the way to production and can choose between Microsoft managing the update and self managing the update. This option has a lot of benefit of being on close watch from the engineering to ensure success. 
+
+The final and default ring 4 is standard and available for all Microsoft managed updates.
+The releases are shown in the following graphic.
+
+
 
 ![release process](media/release-process.png)
 
-## Standard release
-The standard release is the default option. With this release you can access the most recent release of Finance and Operations when it is released to all Finance and Operations customers. In the standard release you configure the update date and time to ensure predictability. You can also designate an environment for user acceptance testing. This environment is updated prior to updating the production environment.
+## Standard release (Ring 4)
+The standard release or Ring 4  is the default option. With this release, you can access the most recent release of Finance and Operations when it is released to all Finance and Operations customers. In the standard release, you configure the update day and time to ensure predictability. You can also designate an environment for user acceptance testing. This environment is updated 5 business days prior to updating the production environment.
 
-## First release
-With a targeted release, Microsoft makes available the latest production service update to a specified Tier 2 sandbox. Customers can participate in this program known as partner early access program (CEAP). Participants can then work in the new environment while providing feedback directly to Microsoft. CEAP participants will receive direct support from Microsoft for any issues that are submitted. This is followed by applying the validated update to Production in a subsequent week.
+## First release  (Ring 3)
+With the First release, Microsoft makes available the latest production ready service update to customers who sign up for one of the following programs:
 
-## Targeted release
-Preview early access program (PEAP) is available for customers, partners, and ISVs to deploy into sandbox and/or production. The participant is required to self-update the to the latest service update in this timeframe. The participants can raise issues to Microsoft. This has the additional value of testing updates early prior to updating the production environments.
+1. 1.	First release auto update – In this program, Microsoft manages the update to both a designated UAT and Production. In this model you will be informed of an upcoming update followed by a subsequent update to a specified Tier 2 sandbox. Participants can then work in the new environment while providing feedback directly to Microsoft. The participants will receive direct support from Microsoft for any issues that are submitted.  This is followed by applying the validated update to Production in a subsequent week.
 
-## Service update experience
-All service updates will have a One Version experience of Onboard > Notice > Execute > Validate, as shown in the following chart.
+2. 2.	First release self update – In this program, you will have early access to the production ready update and can choose to apply it on an environment of your choice (Sandbox or Production). Applying the updates is managed by the customer and issues can still be reported to Microsoft. This program has the advantage of providing additional time for validation as needed.
+
+## Targeted release (Ring 2)
+Preview early access program (PEAP) is available for customers, partners, and ISVs to deploy into their sandbox. The participant is required to self-update  to the latest service update in this timeframe. The participants can raise issues to Microsoft. This has the additional value of testing updates early prior to updating the production environments.
 
 ![service update experience](media/service-update-experience.png)
 
-## Access targeted releases for customers
-If you are interested in participating in the targeted releases of Finance and Operations and would like to learn more about the CEAP or PEAP program, see the [Insider program.](https://experience.dynamics.com/)
+## Access targeted releases or First release 
+If you are interested in participating in the targeted or first releases of Finance and Operations and would like to learn more about the programs, see the [Insider program.](https://experience.dynamics.com/)
