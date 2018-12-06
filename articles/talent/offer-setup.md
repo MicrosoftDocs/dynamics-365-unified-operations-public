@@ -117,7 +117,7 @@ To upload the offer data rules file, do the following.
 
 1.  You can delete an existing rule set upload if the placeholder being defined is not being used in another document template.
 
->[!NOTES]
+>[!NOTE]
 > - Each placeholder can only have one unique set of columns that it is dependent on. For example, if **Annual Salary** is dependent on **Job Location** and **Level**, you can't upload another rule set where **Annual Salary** is dependent on a different set of columns.
 
 > - You can download sample offer data rule sets on the **Samples** tab on the **Offer data rules** page.
@@ -149,7 +149,7 @@ To create an offer document template, do the following.
     - Hashtag the offer data placeholder directly into position. Type **\#** and then start typing the name of the offer data
         placeholder. Options will appear in the drop-down list. Click or press **Enter** to insert the offer data placeholder.
 
-    >[!NOTES]
+    >[!NOTE]
     > - To associate a placeholder to the offer document template without exposing its value to the candidate, hover over the offer data placeholder and click the **Pin** icon. This will push the placeholder to the **Pinned offer data** section of the offer document template. To unpin, follow the same steps but click **Unpin** in the list of offer data placeholders.
 
     > - To view the list of active offer data placeholders, switch to the **Active** tab in the right pane.
@@ -188,7 +188,7 @@ Offer packages are the offer artifacts that are shared with the candidate and co
 
 1.  Click **Add template**.
 
-    >[!NOTES]
+    >[!NOTE]
     > - You can choose to create a new template or choose from an existing one.
 
     > - If you choose to add an existing template, you need to make sure that the
@@ -218,7 +218,10 @@ offers.
 
 - **Candidate’s offer experience** - As administrator, you can choose to set whether all offers have an expiration date, and if so, what the default offset for the expiration date should be. You can also configure whether candidates can decline an offer.
 
-- **e-Signatures** - Currently, the only electronic signature option available is for candidates to type their name in the offer package while accepting the offer. We will introduce partner integrations with other electronic signature providers in the future.
+- **E-Signatures** - As an administrator, you can also choose what is the method that candidates can use to sign the offers.
+1. Adobe Sign: All offer packages will be sent and signed via Adobe Sign. Each offer creator publishing the offer needs to have their Adobe Sign license connected to Attract. 
+
+2. ESign: This is the default option we provide out of the box where a can sign an offer by typing their name and initials.
 
 
 To learn more about the offer creation process, see [Creating, approving, and signing offers](./creating-offers.md).
