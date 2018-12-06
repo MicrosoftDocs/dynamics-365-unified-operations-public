@@ -887,6 +887,8 @@
       href: deployment/expressroute.md
     - name: Finance and Operations architecture
       href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+    - name: Apply updates to cloud environments
+      href: deployment/apply-deployable-package-system.md
   - name: On-premises deployment
     href: deployment/on-premises-deployment-landing-page.md
     items:
@@ -927,8 +929,6 @@
     items:
     - name: Create deployable packages of models
       href: deployment/create-apply-deployable-package.md
-    - name: Apply updates to cloud environments
-      href: deployment/apply-deployable-package-system.md
     - name: Install deployable packages from the command line
       href: deployment/install-deployable-package.md
     - name: Uninstall a package
