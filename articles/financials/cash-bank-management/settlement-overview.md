@@ -58,5 +58,5 @@ If a [payment is less than the invoice amount](../accounts-payable/vendor-paymen
 
 
 ## Additional resources
-- [Settle remainder](../financials/cash-bank-management/settle-remainder.md)
+- [Settle remainder](settle-remainder.md)
 
