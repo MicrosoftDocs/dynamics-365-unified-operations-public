@@ -67,8 +67,10 @@ The Activity tab shows a predefined set of queries for advanced troubleshooting.
   - Deadlocks
   - Crashes
 
-[!IMPORTANT] The data shown on the Overview and Activity tabs is retained for only 30 days.
+> [!IMPORTANT]
+> The data shown on the Overview and Activity tabs is retained for only 30 days.
 
-[!NOTE] The Environment monitoring will also  also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is being worked on and will be added shortly. 
+> [!NOTE] 
+> The Environment monitoring will also  also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is being worked on and will be added shortly. 
 
 
