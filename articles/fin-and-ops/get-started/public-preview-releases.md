@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Standard and targeted service updates
+# Standard and First release service updates
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ The releases are shown in the following image.
 ![release process](media/release-process.png)
 
 ## Standard release (Ring 4)
-The standard release, or Ring 4, is the default option. With this release, you can access the most recent release of Finance and Operations when it is released to all customers. In the standard release, you configure the update day and time to ensure predictability. You can also designate an environment for user-acceptance testing (UAT). This environment is updated five business days prior to updating the production environment.
+The standard release, or Ring 4, is the default option. With this release, you can access the most recent release of Finance and Operations when it is released to all customers. In the standard release, you configure the update day and time to ensure predictability. You can also designate an environment for user-acceptance testing (UAT). This environment is updated five business days prior to updating the production environment.Please see the [service update FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version) for more details.
 
 ## First release (Ring 3)
 With the First release, Microsoft makes available the latest production-ready service update to customers who sign up for one of the following programs through the [Insider program](https://experience.dynamics.com/):
