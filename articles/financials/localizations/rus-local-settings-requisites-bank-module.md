@@ -55,15 +55,18 @@ Fix downloading instructions are here: https://docs.microsoft.com/en-us/dynamics
 
 2. Go to **Cash and bank management > Setup > Cash and bank management parameters**. In the **General** fast tab, in the **Import list of banks** felds group, in the field **Import format configuration**, select the ER configuration ‘Bank BIC catalog (RU)’
 
+
 ### Import list of banks
 
-Go to **Cash and bank management > Setup > Bank groups**and click **Load bank list**.
+Go to **Cash and bank management > Setup > Bank groups**and click **Load bank list**. The **Import of data** dialog will open.
 
-The bank list may be updated for marked states or for chosen banks only.
-Use the following buttons for choosing the banks included for update.
-  - Select existing – mark and update the banks existing in the system
-  - Select all - mark and update the all banks in chosen states
-  - Deselect all - unmark all banks 
+The bank list may be updated for marked states or for the chosen banks only.
+
+In the upper pane of **Import of data** dialog, mark states for importing/updating all banks from the marked state.
+In the lower pane of **Import of data** dialog, use the following buttons for choosing the banks to be included for update:
+  - **Select existing**: mark and update the banks which exist in the system
+  - **Select all**: mark and update all banks in the marked states
+  - **Deselect all**: unmark all banks 
 
 
 ## Create a Bank account
