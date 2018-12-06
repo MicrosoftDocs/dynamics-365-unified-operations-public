@@ -51,8 +51,15 @@ Microsoft Dynamics 365 for Finance and Operations version 8.1.3 includes Platfor
 [What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (December 2018)](whats-new-platform-update-23.md).
 
 ## Collection letters
-You can now set up collection letters at the customer level, so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored for the customer. 
+You can now set up collection letters at the customer level, so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored for the customer. For more information, see [Process collection letters](../../financials/accounts-receivable/tasks/process-collection-letters.md).
 
 ## Settle remainder
-You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions.
+You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions. For more information, see [Settle remainder](../../financials/cash-bank-management/settle-remainder.md).
 
+## Globalization
+
+### Electronic reporting: import from files in JSON format
+You can now configure an ER format to parse incoming files in JSON format. You can then set up ER mappings that specify how information from JSON files is used to update application data.
+
+### Electronic reporting: support country context specific ER model mappings
+You can now specify a country context for ER model mapping. You can also manage multiple country-specific mappings for a signle ER data model. This allows you to isolate country specific logic of data access in a single ER model mapping. Depending on the legal entity's primary address, the appropriate country/region-specific model mapping will be used when an ER format is used to generate an electronic document. 
