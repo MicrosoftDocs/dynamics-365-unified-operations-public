@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: Fiscal printer integration sample for Poland
