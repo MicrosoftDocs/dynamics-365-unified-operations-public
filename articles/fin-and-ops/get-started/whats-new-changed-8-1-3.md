@@ -56,3 +56,9 @@ You can now set up collection letters at the customer level, so that the collect
 ## Settle remainder
 You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions.
 
+## Globalization
+### Electronic reporting: import from files in JSON format
+You can now configure and ER format to parse incoming files in JSON format. You can then set up ER mappings specifying how information from JSON files is used to update application data.
+
+### Electronic reporting: support country context specific ER model mappings
+You can now restrict the usage of an ER model mapping by specifying a particular country context for it. You can now manage for an ER data model many country context specific ER model mappings simultaneously. It allows you isolate country specific logic of data access in a single ER model mapping. Appropriate ER model mapping will be automatically selected when an ER format is executed depending on the country context of a legal entity in scope of which this execution is performed and depending on settings of available ER model mappings.
