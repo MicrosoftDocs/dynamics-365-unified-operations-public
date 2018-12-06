@@ -67,6 +67,10 @@ The Interview activity is optional. This activity has three components: Candidat
 - To live-stream or have a conference call by using Skype for Business, set the **Online meeting** field to **Skype for Business**. The correct **Join Skype Meeting** link will then be added in the interview meeting request.
 - To send email to candidates to finalize the schedule, set the **Send mail to candidate** option to **On**. If you set the option to **Off**, candidates will receive the interview schedule only when they sign in to the Candidate portal.
 
+>[!NOTE]
+> For all the 1:1 interviews, reminders are sent to the interviewers every 24 hours if they have not responded (accepted or declined) to the interview request.
+> For all the panel interviews, there are no automated reminders to respond to interview request. To trigger a reminder manually, edit the interview even and use the Update & Send option to send the requset back to the interviewers.  
+
 The Feedback component lets people enter recommendations for an applicant. They can also enter any feedback comments that they have. If you turn on the **Inherit feedback participants from Hiring Team** option, the recruiter, hiring manager, and interviewers are automatically entered in the Feedback component. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it.
 
 ## PowerApps activity
