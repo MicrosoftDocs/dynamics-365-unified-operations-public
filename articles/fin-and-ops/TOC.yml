@@ -487,6 +487,8 @@
           href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
         - name: Configure settlement
           href: ../financials/cash-bank-management/configure-settlement.md
+        - name: Settle remainder
+          href: ../financials/cash-bank-management/settle-remainder.md
         - name: Vendor payment overview
           href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
         - name: Vendor payments workspace
