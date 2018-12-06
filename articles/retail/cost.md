@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Cost configuration for DOM
-description: This topic describes cost configuration for distributed order management (DOM) functionality in Microsoft Dynamics 365 for Retail.
+title: Cost configuration for distributed order management (DOM)
+description: This topic describes cost configuration for the distributed order management (DOM) functionality in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -29,150 +29,148 @@ ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: 
 
 ---
-# Cost configuration for DOM
+# Cost configuration for distributed order management (DOM)
 
-Organizations cosider multiple cost components when determining the optimal location from which to fulfill an order. Some of these cost components are shipping cost, handling cost, and packaging cost. A combination of these costs is computed to determine the fulfillment location. 
+Organizations consider multiple cost components to determine the optimal location to fulfill an order from. Some of these cost components are shipping cost, handling cost, and packaging cost. A combination of these costs is calculated to determine the fulfillment location.
 
-The first iteration of DOM in Retail only factored for distance when optimizing the assignment of orders to locations. While distance can be co-related with cost, it is not the same. For example, an over-night shipping method will cost higher than a 3-day shipping or a 7-day shipping for the same distance. 
+When the first iteration of distributed order management (DOM) in Microsoft Dynamics 365 for Retail optimized the assignment of orders to fulfillment locations, it factored in distance only. Although distance can be correlated with cost, it isn't the same as cost. For example, an overnight shipping method costs more than three-day shipping or seven-day shipping over the same distance.
 
-The cost configuration feature allows retailers to define and configure additional cost components that will be calculated and factored in when deciding the optimal location for the fulfillment of order lines.  
+The cost configuration feature lets retailers define and configure additional cost components that will be calculated and factored in to determine the optimal location to fulfill order lines from.
 
-When cost components are configured, the DOM solver will use only these cost definitions to decide the optimal location for order fulfillment. It will not weigh in the distance component as a cost at all. If no cost components are configured, then the DOM solver will fall back to the distance component as a cost to determine the fulfillment location for orders.
+When cost components are configured, the DOM solver uses only those cost definitions to determine the optimal location for order fulfillment. It doesn't consider the distance component as a cost. However, if no cost components are configured, the DOM solver does use the distance component as a cost to determine the optimal location for order fulfillment.
 
 ## Set up cost components
 
-There are two major cost component types that can be defined in the system -- shipping, and other.
+Two major cost component types can be defined in the system: **Shipping** and **Other**.
 
-Both support multiple calculation basis as explained in the table below.
+Both cost component types support multiple calculation bases, as shown in the following table.
 
-| Cost type | Calculation basis |
-|-----------|-------------------|
-| Shipping  | Simple            |
-|           | Tiered            |
-| Other     | Sales order       |
-|           | Sales line        |
-|           | Location          |
+<table>
+<thead>
+<tr>
+<th>Cost component type</th>
+<th>Calculation basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shipping</td>
+<td>
+<ul>
+<li>Simple</li>
+<li>Tiered</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>
+<ul>
+<li>Sales order</li>
+<li>Sales line</li>
+<li>Location</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
-### Shipping cost type
-The section below explains how each combination of the cost type and calculation basis for shipping cost can be set up and how they are used by the DOM solver.
+### Shipping cost component type
 
-#### Cost type = Shipping and Calculation basis= Simple
+This section explains how to set up each combination of the **Shipping** cost component type and a calculation basis for shipping costs. It also explains how the DOM solver uses each combination.
 
-This combination of cost type and calculation basis is used to define shipping cost for a mode of delivery either based on a flat cost or per distance.
+#### Cost component type = Shipping and Calculation basis = Simple
 
-The fields that need to be set up for this combination are:
+If a combination of the **Shipping** cost component type and the **Simple** calculation basis is used, the shipping cost for a mode of delivery is based on either a flat cost or distance.
 
--   **Cost factor**: This is the unique identifier id for the cost factor.
+You must set up the following fields for this combination:
 
--   **Description**: This is the name and description of the cost factor.
+- **Cost factor** – Enter a unique identifier for the cost factor.
+- **Description** – Enter the name and description of the cost factor.
+- **Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range. If you leave these fields blank, the cost factor is valid for an indefinite period.
+- **Active** – Indicate whether the cost factor is active. The DOM considers only active cost factors that are associated with the fulfillment profile.
+- **Company** – Specify the legal entity that the cost factor is configured for. All lines of the calculation criteria must be for the same legal entity.
+- **Modes of delivery** – Specify the modes of delivery that the cost is configured for.
+- **Calculation type** – Specify how the cost should be calculated for a specific mode of delivery. Two calculation types are supported:
 
--   **Start date** and **End date**: These fields can be used to restrict the cost factor for a given date range. If the fields are left blank, the cost factors are valid for an indefinite period.
+    - **Fixed** – A flat cost is used for the mode of delivery. If you select this calculation type, the **Cost** field defines the flat cost.
+    - **Per-distance unit** – The cost for the mode of delivery is calculated as the cost value that is specified in the **Cost** field times the distance between the delivery address and the locations.
 
--   **Active**: This field is used to mark whether the cost factor is active or not. Only active cost factors that are associated to the fulfillment profile are considered by DOM.
+- **Cost** – Specify the cost value that is used in conjunction with the **Calculation type** field to compute the cost for a mode of delivery.
 
--   **Company**: This is the Legal entity for which the cost factor is configured. All lines of the calculation criteria need to be for one legal entity.
+#### Cost component type = Shipping and Calculation basis = Tiered
 
--   **Modes of delivery**: This field specifies the modes of delivery for which the cost is configured.
+If a combination of the **Shipping** cost component type and the **Tiered** calculation basis is used, the shipping cost for a mode of delivery is based on either a flat cost or distance. However, in this combination, the distance is based on a tiered range of distances.
 
--   **Calculation type**: This field determines how the cost is calculated for a specific mode of delivery. There are two supported calculation types:
-        -  Fixed: This denotes that a flat cost as defined in the cost field is the cost for the mode of delivery.
-        -  Per-distance unit: This denotes that the cost for the mode of delivery is computed as the cost defined in the cost field times the distance between the delivery address and the locations.
+You must set up the following fields for this combination:
 
--   **Cost**: This field is used to define the cost value that is used in conjunction with the **Calculation type** to compute the cost for a mode of delivery.
+- **Cost factor** – Enter a unique identifier for the cost factor.
+- **Description** – Enter the name and description of the cost factor.
+- **Default cost** – Specify the cost that should be used for a mode of delivery if the distance between the delivery address and the location doesn't fall into any of the tiered distances for the mode of delivery.
+- **Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range. If you leave these fields blank, the cost factor is valid for an indefinite period.
+- **Active** – Indicate whether the cost factor is active. The DOM considers only active cost factors that are associated with the fulfillment profile.
+- **Company** – Specify the legal entity that the cost factor is configured for. All lines of the calculation criteria must be for the same legal entity.
+- **Modes of delivery** – Specify the modes of delivery that the cost is configured for.
+- **Distance type** – Specify whether the tiered distance definition is an aerial distance or a road distance.
+- **Distance units** – Specify the unit that the tiered distance is measured in.
+- **Distance from** – Specify the start range for the tiered distance.
+- **Distance to** – Specify the end range for the tiered distance.
+- **Calculation type** – Specify how the cost should be calculated for a specific mode of delivery and tiered distance. Two calculation types are supported:
 
-#### Cost type = Shipping and Calculation basis = Tiered
+    - **Fixed** – A flat cost is used for the mode of delivery. If you select this calculation type, the **Cost** field defines the flat cost.
+    - **Per distance unit** – The cost for the mode of delivery and tiered distance is calculated as the cost value that is specified in the **Cost** field times the distance between the delivery address and the locations.
 
-This combination is used to define shipping cost for a mode of delivery either based on a flat cost or per distance based on a tiered range of distances.
+- **Cost** – Specify the cost value that is used in conjunction with the **Calculation type** field to compute the cost for a mode of delivery.
 
-The fields that needs to be set up for this combination of configuration are:
+> [!NOTE]
+> - When you define tiered distances, the system validates that there are no missing or overlapping distances.
+> - The distance type that is used for a mode of delivery must be the same across all the tiered distances.
 
--   **Cost factor**: This is the unique identifier id for the cost factor.
+### Other cost component type
 
--   **Description**: This is the name and description of the cost factor.
+This section explains how to set up each combination of the **Other** cost component type and an other cost type for non-shipping costs. It also explains how the DOM solver uses each combination.
 
--   **Default cost**: If the distance between the delivery address and the location does not fall into any of the tiered distances for a mode of delivery, then the value in the **Default cost** field is used as the cost for that mode of delivery for that tiered distance.
+#### Cost component type = Other and Other cost type = Sales order
 
--   **Start date** and **End date**: These fields can be used to restrict the cost factor for a given date range. If left blank, the cost factors are valid for an indefinite period.
+A combination of the **Other** cost component type and the **Sales order** other cost type is used to define non-shipping costs at the sales order level.
 
--   **Active**: This field is used to mark whether the cost factor is active or not. Only active cost factors that are associated to the fulfillment profile are considered by DOM.
+You must set up the following fields for this combination:
 
--   **Company**: This is the legal entity for which the cost factor is configured. All lines of the calculation criteria need to be for one legal entity.
+- **Cost factor** – Enter a unique identifier for the cost factor.
+- **Description** – Enter the name and description of the cost factor.
+- **Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range. If you leave these fields blank, the cost factor is valid for an indefinite period.
+- **Active** – Indicate whether the cost factor is active. The DOM considers only active cost factors that are associated with the fulfillment profile.
+- **Cost** – Specify the cost value for a non-shipping cost at the sales order level.
 
--   **Modes of delivery**: This field specifies the modes of delivery for which the cost is configured.
+#### Cost component type = Other and Other cost type = Sales line
 
--   **Distance type**: This field is used to define whether the tiered distance definition is in aerial distance or road distance.
+A combination of the **Other** cost component type and the **Sales line** other cost type is used to define non-shipping costs at the sales order line level.
 
--   **Distance units**: This field is used to specify the unit in which the tiered distance is defined.
+You must set up the following fields for this combination:
 
--   **Distance from**: This field defines the beginning range of the tiered distance.
+- **Cost factor** – Enter a unique identifier for the cost factor.
+- **Description** – Enter the name and description of the cost factor.
+- **Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range. If you leave these fields blank, the cost factor is valid for an indefinite period.
+- **Active** – Indicate whether the cost factor is active. The DOM considers only active cost factors that are associated with the fulfillment profile.
+- **Cost** – Specify the cost value for a non-shipping cost at the sales order line level.
 
--   **Distance to**: This field defines the end range for the tiered distance.
+#### Cost component type = Other and Other cost type = Location
 
--   **Calculation type**: This field determines how the cost is calculated for a specific mode of delivery and tiered distance. There are two supported calculation types:
-        - Fixed: This denotes that a flat cost as defined in the cost field is the cost for the mode of delivery and the tiered distance.
-        - Per distance unit: This denotes that the cost for the mode of delivery and tiered distance is computed as the cost defined in the cost field times the distance between the delivery address and the locations.
+A combination of the **Other** cost component type and the **Location** other cost type is used to define non-shipping costs for a group of locations or an individual location.
 
--   **Cost**: This field is used to define the cost value that is used in conjunction with the **Calculation type** to compute the cost for a mode of delivery.
+You must set up the following fields for this combination:
 
- **Notes:**
--   When defining tiered distances, the system will validate that there are no missing or overlapping distances.
+- **Cost factor** – Enter a unique identifier for the cost factor.
+- **Description** – Enter the name and description of the cost factor.
+- **Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range. If you leave these fields blank, the cost factor is valid for an indefinite period.
+- **Active** – Indicate whether the cost factor is active. The DOM considers only active cost factors that are associated with the fulfillment profile.
+- **Fulfillment group** – Specify the group of locations that the non-shipping cost is defined for.
+- **Fulfillment location** – Specify the location that the non-shipping cost is defined for.
 
--   The **Distance type** used for a mode of delivery must be the same across all the tiered distances.
+    > [!NOTE]
+    > You can't specify a fulfillment group and a fulfillment location on the same line for location-based calculation criteria.
 
-### Other cost type
-The section below explains how each combination of cost type and other cost type for non-shipping cost can be set up and how they are used by the DOM solver.
+- **Cost** – Specify the cost value for a non-shipping cost at the fulfillment group level or fulfillment location level.
 
-####  Cost type = Other and Other cost type = Sales order
-
-This combination of cost type and other cost type is used to define non-shipping costs at a sales order level.
-
-The fields that must be set up for this combination are:
-
--   **Cost factor**: This is the unique identifier id for the cost factor.
-
--   **Description**: This is the name and description of the cost factor.
-
--   **Start date** and **End date**: These fields can be used to restrict the cost factor for a given date range. If left blank, the cost factors are valid for an indefinite period.
-
--   **Active**: This field is used to mark whether the cost factor is active or not. Only active cost factors that are associated to the fulfillment profile are considered by DOM.
-
--   **Cost**: This field is used to define the cost value for a non-shipping cost at a sales order level.
-
-####  Cost type = Other and Other cost type = sales line
-
-This combination of cost type and other cost type is used to define non-shipping costs at a sales order line level.
-
-The fields that must be set up for this combination are:
-
--   **Cost factor**: This is the unique identifier id for the cost factor.
-
--   **Description**: This is the name and description of the cost factor.
-
--   **Start date** and **End date**: These fields can be used to restrict the cost factor for a given date range. If left blank, the cost factors are valid for an indefinite period.
-
--   **Active**: This field is used to mark whether the cost factor is active or not. Only active cost factors that are associated to the fulfillment profile are considered by DOM.
-
--   **Cost**: This field is used to define the cost value for a non-shipping cost at a sales order line level.
-
-####  Cost type = Other and Other cost type = Location
-
-This combination of cost type and other cost type is used to define non-shipping costs for a group of locations or individual location.
-
-The fields that must be set up for this combination are:
-
--   **Cost factor**: This is the unique identifier id for the cost factor.
-
--   **Description**: This is the name and description of the cost factor.
-
--   **Start date** and **End date**: These fields can be used to restrict the cost factor for a given date range. If left blank, the cost factors are valid for an indefinite period.
-
--   **Active**: This field is used to mark whether the cost factor is active or not. Only active cost factors that are associated to the fulfillment profile are considered by DOM.
-
--   **Fulfillment group**: The group of locations for which the non-shipping cost is defined.
-
--   **Fulfillment location** The location for which the non-shipping cost is defined. Configuration of fulfillment group and fulfillment location on the same line for location-based calculation criteria is not supported.
-
--   **Cost**: This field is used to define the cost value for a non-shipping cost at a fulfillment group or fulfillment location level. 
-
-#### The cost factor needs to be added to the relevant fulfillment profile for DOM to consider these costs in its execution.
-
+> [!IMPORTANT]
+> For DOM to consider these costs when it's run, you must add the cost factor to the relevant fulfillment profile.
