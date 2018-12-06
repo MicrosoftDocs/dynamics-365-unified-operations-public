@@ -5,7 +5,7 @@ title: Unit of measure conversion per product variant
 description: 
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
