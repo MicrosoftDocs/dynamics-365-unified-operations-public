@@ -45,6 +45,10 @@ Before you can start installation of Retail channel components, you must first c
 
 You must also ensure that you use a secure network to connect Retail Store Scale Unit (RSSU) to Retail headquarters that is not publicly  accessible. You must also restrict network access to Retail headquarters only to known RSSU devices via network filtering or other means.
 
+NEWNENWNEWNEWNENENWWNEENWNEWNWNENENEWNENEWNNEWENNWENEWNENWNENEW
+NEWNENWNEWNEWNENENWWNEENWNEWNWNENENEWNENEWNNEWENNWENEWNENWNENEW
+NEWNENWNEWNEWNENENWWNEENWNEWNWNENENEWNENEWNNEWENNWENEWNENWNENEW
+
 ## Installation steps
 
 1.	On the previously created [file share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11#setupfile), create a new folder called **RetailSelfServicePackages**.
