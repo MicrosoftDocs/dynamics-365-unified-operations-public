@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a new environment
-description: This topic explains how to deploy a new environment on the New Infrastructure Stack
+description: This topic explains how to deploy a new environment with the new infrastructure.
 author: manado
 manager: AnnBe
-ms.date: 07/02/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,8 +24,8 @@ ms.custom: 24211
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-12-31
+ms.dyn365.ops.version: 8.1.1
 
 ---
 
@@ -33,11 +33,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks through the process of deploying Sandbox (Tier 2 and above) and Production environment in the [New Infrastructure Stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409). 
-This is now a self-service operation and you can follow the below steps to deploy these environments.
+This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409). This is now a self-service operation and you can follow the below steps to deploy these environments.
 
 1. Select **Configure** on the project dashboard page.
-2. Select the **Application** and **Platform** version for the environment that you want to deploy. **Versions 8.1 and above** are only **supported**.
+2. Select the **Application** and **Platform** version for the environment that you want to deploy. **Versions 8.1 and above** are  supported.
 3. Provide a **unique name** for the environment.
 4. Select the **region** where you want this environment to be deployed. The current options are:
 
@@ -46,12 +45,12 @@ This is now a self-service operation and you can follow the below steps to deplo
 - EU West
 - EU North
 
-1. Select if you want to load **demo data** in your environment or if you want an **empty database**.
-2. Select the **BPM library** that will be set as the Getting started library in the product.
-3. Select from a list of available **AOT packages** (customization packages) on the Software Deployable tabs in the Asset Library if you want to apply customizations. Only packages generated from a build environment on version 8.1 and above should be selected. Applying a package from an incompatible version will have an adverse effect on the environment.
-4. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
-5. Select the **email address** of the **user** that will be set as the **system administrator** in the Finance and Operations product.
-6. After you validate the configurations, click **Submit** to trigger the deployment.
+5. Select if you want to load **demo data** in your environment or if you want an **empty database**.
+6. Select the **BPM library** that will be set as the Getting started library in the product.
+7. Select from a list of available **AOT packages** (customization packages) on the Software Deployable tabs in the Asset Library if you want to apply customizations. Only packages generated from a build environment on version 8.1 and above should be selected. Applying a package from an incompatible version will have an adverse effect on the environment.
+8. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
+9. Select the **email address** of the **user** that will be set as the **system administrator** in the Finance and Operations product.
+10. After you validate the configurations, click **Submit** to trigger the deployment.
 
 The environment deployment starts immediately and could take anywhere between **1-2 hours** to complete. This is a significant improvement over the 48-hour SLA in the current infrastructure.
 
