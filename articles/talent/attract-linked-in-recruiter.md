@@ -128,7 +128,7 @@ Using LinkedIn recruiter, you can track whether a candidate has applied to other
 6.  Select the **Notes** tab to see notes that have been captured for this applicant in Attract.
 
 > [!NOTE]
-> Candidate and application data will not be synced to LinkedIn Recruiter if candidate hasn't moved past the prospect stage.
+> Candidate and application data will not be synced to LinkedIn Recruiter if the candidate hasn't moved past the prospect stage.
 
 ### InMail history
 
