@@ -88,7 +88,7 @@ The following features are deprecated and will not be implemented in the new dep
 ### Known issues in this release
 Known issues are listed below. These are bugs that are being worked on actively. Hotfixes will be provided in future releases.
 
-### Financial reporting
+#### Financial reporting
 
 -   **Default reports are not imported by default:** To import the default reports, do the following:
 
