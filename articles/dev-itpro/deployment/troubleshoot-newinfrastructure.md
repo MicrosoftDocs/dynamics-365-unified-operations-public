@@ -33,13 +33,16 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can troubleshoot issues on an environment deployed in the New Infrastructure Stack. When a user reports an issue, you can use various tools in LCS for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
+This topic explains how you can troubleshoot issues on an environment deployed in the new infrastructure stack. When a user reports an issue, you can use various tools in Lifecycle Servcies (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
+
+> [!Note] 
+> This topic applies to deployments of Finance and Operations 8.1 and higher.
 
 To navigate to the **Environment Monitoring** dashboard, follow the steps listed below:
 
-1. Open **LCS** , and navigate to the appropriate **project**.
-2. In the  **Environments**  section, select the  **environment**  to view, and then click  **Full details**.
-3. On the  **Environment details**  page, click  **Environment monitoring**  to open the Monitoring and diagnostics portal.
+1. Open LCS and navigate to the appropriate project.
+2. In the **Environments** section, select the environment that you want to view, and then click **Full details**.
+3. On the **Environment details** page, click **Environment monitoring** to open the Monitoring and diagnostics portal.
 
 On the Environment Monitoring dashboard, you will see two tabs:
 
