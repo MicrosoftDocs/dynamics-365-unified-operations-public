@@ -88,11 +88,11 @@ After LinkedIn Recruiter capabilities has been enabled by the Attract Admin it i
 You can view the candidate’s LinkedIn profile in Attract. The LinkedIn widget will display the candidate profile when the ATS information matches the LinkedIn information of its users.
 
 To view a profile, go the candidate profile either from a job or talent pool. In the candidate profile, select the **LinkedIn** tab and the profile widget will load. You can also save the candidate to your LinkedIn Recruiter projects from this page.
-1. If LinkedIn found the match based on e-mail and LinkedIn member ID (exact match), the candidate's profile will be shown. The user still has an option to link/unlink the profile.
+1. If LinkedIn found the match based on email and LinkedIn member ID (exact match), the candidate's profile will be shown. The user still has an option to link/unlink the profile.
 
 2. If LinkedIn cannot find the candidate based on their email or member ID, it will show a list of possible candidate matches based on candidate name and the user can choose one of them and link the profile.  
 
-3. If linkedIn cannot find any candidate based on the name, it will say no match.
+3. If LinkedIn cannot find any candidate based on the name, it will return that no match was found.
 
 ### 1-click export 
 
