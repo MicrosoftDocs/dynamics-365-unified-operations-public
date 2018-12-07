@@ -110,6 +110,8 @@ An additional mapping also needs to be added. Select the last None field to add 
 
 The updated mappings should look like this:
 
+![Departments to Operating units task](./media/DepartmentMapping.png)
+
 
 Jobs to Job Detail task needs the following mappings updated:
 
@@ -120,6 +122,8 @@ Jobs to Job Detail task needs the following mappings updated:
 
 
 The updated mappings should look like this:
+
+![Jobs to Job Detail task](./media/JobMapping.png)
 
 Workers to Work task needs the following mappings updated:
 
@@ -135,6 +139,8 @@ The Gender field transform also needs to be updated. Select the fn map type for 
 | 75440002    | None        |
 | 75440003    | NonSpecific |
 
-
-
 The updated mappings should look like this:
+
+![Workers to Worker task](./media/WorkerMapping.png)
+
+![Gender field transform](./media/WorkerTransform.png)
