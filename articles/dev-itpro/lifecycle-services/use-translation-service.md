@@ -55,6 +55,8 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
     | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business needs multiple target languages translated for the same source language, you can select all target languages in one request. Make sure you actually select the target languages using the checkbox next to the language name.  This saves your time to submit multiple translation requests individually and you can also track all the target languages translation status in one request.  The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. Therefore, Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
 
+![Selecting languages](./media/dts-target-lang.png "Selecting languages")
+
     > [!NOTE]
     > To take advantage of the Microsoft-trained MT system for Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
     >
@@ -74,6 +76,8 @@ Create one zip file that contains all the UI files in the source language that y
 
 ### Upload XLIFF translation memory files (Optional)
 If you have XLIFF TM files from a previous UI translation request, or if you used the [Align tool](use-translation-service-tm.md) to create an XLIFF TM, create a zip file that contains all TM files before you upload them. Strings that match are then recycled to help guarantee consistency between product versions. For more information about XLIFF TMs, see [Microsoft Dynamics 365 Translation service - Translation memory](use-translation-service-tm.md).
+
+![TM upload](./media/dts-tm-upload.png "TM upload")
 
 If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
