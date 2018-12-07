@@ -96,6 +96,10 @@ Changes have beeen made to correct attachments. When adding a new attachment to 
 
 ### Mapping errors in the integration with Finance and Operations
 
+The following issues have been identified in the current template for integrating Talent with Finance and Operations. A new template will be published soon and will be applied to any NEW integration projects that are created. For existing integration projects, the task mappings can be updated. See the items below for the updated mappings. 
+
+Job Positions to Positions Parent Job Assignment task isn't integrating data. This is an issue that is currently being resolved. There isn't a workaround in the current mapping. 
+
 Departments to Operating unit task needs the following mappings updated:
 
 | Existing Source Field          | New Source Field |
@@ -144,3 +148,4 @@ The updated mappings should look like this:
 ![Workers to Worker task](./media/WorkerMapping.png)
 
 ![Gender field transform](./media/WorkerTransform.png)
+
