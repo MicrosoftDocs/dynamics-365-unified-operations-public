@@ -187,6 +187,56 @@ Click **General ledger** &gt; **Inquire and reports** &gt; **Ledger reports** &g
 </table>
 
 
+## Produce Mexican electronic ledger accounting report (MX-00020)
+
+This task walks through all necessary steps to configure the generation of electronic ledger accounting XML files by using the Electronic Reporting tool. You need to download the higher version of ER model and configurations from LCS shared library-GER configurations.
+
+-   Model: Electromic ledger accounting model MX 
+-   Format file: Chart of account XML(MX)
+-   Format file: Trial Balance XML (MX). Monthly Trial Balance
+-   Format file : Journals XML (MX). Journal transactions, together with the related subledger transactions (Comprobante Fiscal Digital a través de Internet \[CFDI\], Comprobante Fiscal Digital \[CFD\], and other operations)
+-   Format file: Auxiliary ledger XML (MX) 
+
+
+### Import a configuration including XML formats
+1. Go to Organization administration > Workspaces > Electronic reporting.
+2. In the Configuration providers list, click Set active on the Microsoft provider box.
+    * If the Microsoft provider is already the active provider, you can skip this step.  
+3. Click Reporting configurations
+4. Click Exchange and select the option Load from XML file
+5. Select and browse the XML model file previously downloaded from LCS and then click OK to confirm
+6. Repeat the steps 4 and 5 to import the rest of XML file formats
+    * You will be able to see one (1) model and the four (4) XML formats that you previously imported.  
+
+### Configure general ledger parameters for electronic reporting mapping
+1. Go to General ledger > Ledger setup > General ledger parameters.
+2. In the Trial balance field, click the drop-down button to open the lookup.
+3. In the list, select the Trial Balance XML format
+4. In the list, click the link in the selected row.
+5. In the Auxiliary ledger field, click the drop-down button to open the lookup.
+6. In the list, selecy the Auxiliary ledger XML format
+7. In the Ledger entries field, click the drop-down button to open the lookup.
+8. In the list, select the Journal XML format
+9. In the list, click the link in the selected row.
+10. In the Chart of accounts field, click the drop-down button to open the lookup.
+11. In the list, select the Chart of Account XML format.
+12. Click Save.
+
+### Generate XML files
+1. Go to General ledger > Inquiries and reports > Ledger reports > Electronic ledger accounting statement.
+2. In the SAT consolidation account group field, click the drop-down button to open the lookup.
+3. In the list, find and select the desired record.
+4. In the list, click the link in the selected row.
+5. In the Period field, enter a date.
+6. Check or uncheck the Trial Balance opcion
+    * This option generates the Chart of Account and Trial Balance XML files.  
+7. Select or clear the Ledger entries check box.
+8. Select or clear the Auxiliary ledger check box.
+9. In the Request type field, select an option.
+10. In the Order number field, type a value.
+11. Click OK.
+
+
 ## Additional resources
 
 - [CFDI Version 3.3](latam-mex-cfdi-3-3.md)
