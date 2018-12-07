@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 
-##Lifecycle Services (LCS)
+## Lifecycle Services (LCS)
 
 ### Features not yet implemented
 The following LCS features are not yet implemented in the new deployment experience. These features have not been deprecated.
