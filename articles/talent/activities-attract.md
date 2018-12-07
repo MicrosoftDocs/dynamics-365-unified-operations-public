@@ -5,7 +5,7 @@ title: Activities in the processes
 description: This topic provides information about the various types of activities that can be used in the hiring process.
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
