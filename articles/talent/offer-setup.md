@@ -5,7 +5,7 @@ title: Set up offer management
 description: This topic describes how to set up offers in Talent.
 author: josaw
 manager: AnnBe
-ms.date: 11/07/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
