@@ -192,9 +192,8 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     [![ER file states page for the selected sources](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-    The **Sources log for the import format** section indicates that the import process failed and that the file is still in the SharePoint folder (the **Is deleted** check box is not selected). If you fix this file on SharePoint by adding the proper vendor code and then change the status of the file from **Failed** to **Ready** in the **Sources log for the import format** section, you can import the file again.
+   The **Sources log for the import format** section indicates that the import process failed and that the file is in the Files error SharePoint folder (the **Is deleted** check box is not selected). If you fix this file on SharePoint by adding the proper vendor code and then move it to the Files import source (main) SharePoint folder, you can import the file again.
 
-11. Review the **Files import source (main)** SharePoint folder. Notice that the Excel file that wasn't imported is still in this folder.
-12. In Finance and Operations, select **Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s**, enter appropriate values in the **From date** and **To date** fields, and then select **Manual 1099 transactions**.
+11. In Finance and Operations, select **Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s**, enter appropriate values in the **From date** and **To date** fields, and then select **Manual 1099 transactions**.
 
     Only transactions for voucher V-00001 are available. No transactions for voucher V-00002 are available even though the error for the last imported transaction has been found in the Excel file.
