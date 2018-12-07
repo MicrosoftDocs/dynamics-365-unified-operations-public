@@ -433,8 +433,6 @@ These methods have been refactored to support extensibility.
 
 ## Other changes
 
-The following table lists additional changes that have been made for extensibility.
+The following additional changes have been made for extensibility.
 
-| Change |
-| -------------|
-- |Updated aging and balance list classes and forms to support the ability of a customization to increase the number of aging buckets calculated. |
+- Updated aging and balance list classes and forms to support the ability for customizations to increase the number of calculated aging buckets. 
