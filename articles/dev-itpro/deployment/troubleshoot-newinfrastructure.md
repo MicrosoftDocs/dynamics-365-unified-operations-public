@@ -44,26 +44,26 @@ To navigate to the **Environment Monitoring** dashboard, follow the steps listed
 2. In the **Environments** section, select the environment that you want to view, and then click **Full details**.
 3. On the **Environment details** page, click **Environment monitoring** to open the Monitoring and diagnostics portal.
 
-On the Environment Monitoring dashboard, you will see two tabs:
+On the Environment Monitoring dashboard, you will see two tabs: **Overview** and **Activity**.
 
 [![Diagnose Issues](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
 
-**Overview:**
+## Overview tab
 
-The Overview tab provides a storyboard view that shows how the environment is being used during a specific period. You can use the filters on this page to narrow the information logs. Here are some of the filters that are available:
+The **Overview** tab provides a storyboard view that shows how the environment was being used during a specific period. You can use the filters on this page to narrow the information logs. Here are some of the filters that are available:
 
-  - **Time duration**  – Go back 60 minutes from the selected date and time.
-  - **User**  – View a specific user&#39;s activities.
-  - **Search terms**  – Create a search that is based on the issue that is being investigated.
+  - **Time duration**: Go back 60 minutes from the selected date and time.
+  - **User**: View a specific user's activities.
+  - **Search terms**: Create a search that is based on the issue that is being investigated.
 
 In addition, you will also see two sections:
 
-  - The  **User interaction**  chart shows a user&#39;s activities on various machines in the environment and the SQL utilization trend.
-  - The  **User activity**  grid shows the various activities that users performed, based on their session timestamp. It shows the           active sessions in the left hand side grid and for each session, it shows the Form:Control:Command and the corresponding timestamp       when the action was taken. You can trace back the exact steps of the user using the information presented in this grid.
+  - The **User interaction** chart shows a user's activities on various machines in the environment and the SQL utilization trend.
+  - The **User activity** grid shows the various activities that users performed, based on their session timestamp. It shows the           active sessions in the left-hand side grid and for each session, it shows the Form:Control:Command and the corresponding timestamp       when the action was taken. You can trace back the exact steps of the user using the information presented in this grid.
 
-**Activity** :
+## Activity tab
 
-The Activity tab shows a predefined set of queries for advanced troubleshooting. This gives you access to the raw information logs. You can then export the logs to do more advanced analysis. The following types of queries are available:
+The **Activity** tab shows a predefined set of queries for advanced troubleshooting. This gives you access to the raw information logs. You can then export the logs to do more advanced analysis. The following types of queries are available:
 
   - User related errors
   - Slow queries
@@ -71,9 +71,9 @@ The Activity tab shows a predefined set of queries for advanced troubleshooting.
   - Crashes
 
 > [!IMPORTANT]
-> The data shown on the Overview and Activity tabs is retained for only 30 days.
+> The data shown on the **Overview** and **Activity** tabs is retained for only 30 days.
 
 > [!NOTE] 
-> The Environment monitoring will also  also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is being worked on and will be added shortly. 
+> The Environment monitoring will also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is being worked on and will be added shortly. 
 
 
