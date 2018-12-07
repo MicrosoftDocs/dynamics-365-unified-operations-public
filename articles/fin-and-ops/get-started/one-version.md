@@ -61,6 +61,9 @@ Refer to the [Software lifecycle policy and on-premises releases](https://docs.m
 
 ## Process
 
+### How will Microsoft ensure quality of releases?
+Ensuring quality of the release is  a fundamental principle that’s enabled through a series of progressive, rigorous, automated validations as describe in [Standard and First release service updates](public-preview-releases.md). 
+
 ### Can I select the day and time to update?
 Customers can configure the day and maintenance time windows in Lifecycle Services (LCS). Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 5 business days for testing and validation. Customers can optionally choose to apply the update earlier to all environments through Lifecycle Services and even earlier through early access programs. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments.
 
@@ -122,9 +125,6 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
 
 All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is.
-
-### How will Microsoft ensure quality of releases?
-Ensuring quality of the release is  a fundamental principle that’s enabled through a series of progressive, rigorous, automated validations as describe in [Standard and First release service updates](public-preview-releases.md). 
 
 ### Will individual hotfixes be supported?
 Individual hotfixes will not be supported after 8.1. Customers must update to the latest cumulative update available to apply the fix (such as 8.1.1). Critical fixes will also be cumulative and available through the LCS servicing experience.
