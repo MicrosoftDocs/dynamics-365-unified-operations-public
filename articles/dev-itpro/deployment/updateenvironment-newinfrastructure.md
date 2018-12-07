@@ -56,9 +56,9 @@ To apply code customizations to your Sandbox and Production environments, you ne
 
 # Microsoft updates
 
-To get access to Microsoft Updates navigate to the environment details page for your environment and you will see a single tile that shows a cumulative binary update of all the application and platform fixes. To apply this update, select the package and Save Package to the asset library. This will save the Microsoft update to the project asset library.
+To get access to Microsoft Updates navigate to the environment details page for your environment and you will see a **single tile** that shows a cumulative binary update of all the application and platform fixes. To apply this update, select the package and **Save Package** to the asset library. This will save the Microsoft update to the project asset library.
 
-# Applying code customizations and Microsoft updates
+# Apply updates
 
 ## Tier 1 Sandbox/Develop and Test/Demo/Build environments
 
@@ -72,18 +72,14 @@ To apply updates to a Tier 1 Sandbox/Develop and Test/Demo/Build environment dep
 
 Before you begin, verify that the deployable package has been uploaded to the Project Asset library in LCS and that validations have succeeded.
 
-> [!NOTE]
-
-> Only packages that have been successfully validated can be applied to an environment.
-
 Once you have this package in the Project Asset Library, follow the below steps to update your environment:
 
 1. 1)Open the **Environment details** view for the environment where you want to apply the package.
-2. 2)Click **Maintain \&gt; Apply updates** to apply an update.
+2. 2)Click **Maintain > Apply updates** to apply an update.
 3. 3)Select the package to apply. Use the filter at the top to find your package. You will see Application and platform binary package and Application deployable package that have passed validation from the asset library showing up in the list.
 4. 4)Click **Apply**.
 5. 5)The status in the upper-right corner of the Environment details view changes from **Queued** to **Servicing** and then on completion to **Deployed**.
-6. 6)On completion, the environment History accessible from **History \&gt; Environment** changes on the environment details page is updated to show the completed package deployed.
+6. 6)On completion, the environment History accessible from **History > Environment** changes on the environment details page is updated to show the completed package deployed.
 7. 7)You can also download the **logs** from the environment history page.
 
 > [!IMPORTANT]
