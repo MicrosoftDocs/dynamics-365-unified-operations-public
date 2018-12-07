@@ -39,9 +39,8 @@ This topic walks through the process of applying updates to a Dynamics 365 Finan
 
 > With the next gen infrastructure, updates are applied differently from the current flow. **Whatever is supplied in the package is applied to the environment and it OVERWRITES what is already present in the environment**. This means that you **need** to create a single deployable package that contains all customizations and ISV solutions from your build environment. If there is a difference in the list of models between what is on the environment and what is in the package, you will be warned before applying the update. For details about creating a single package, visit the [Manage runtime packages](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages) topic.
 
-> [!NOTE]
-
-> The [New Infrastructure Stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409) supports only Version 8.1 and above.
+> [!Note] 
+> This topic applies to deployments of Finance and Operations 8.1 and above.
 
 # Supported package types
 
