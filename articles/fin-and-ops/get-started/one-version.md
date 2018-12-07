@@ -123,6 +123,9 @@ Microsoft will not provide any fixes to issues on versions that have reached end
 
 All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is.
 
+### How will Microsoft ensure quality of releases?
+Ensuring quality of the release is  a fundamental principle that’s enabled through a series of progressive, rigorous, automated validations as describe in [Standard and First release service updates](public-preview-releases.md). 
+
 ### Will individual hotfixes be supported?
 Individual hotfixes will not be supported after 8.1. Customers must update to the latest cumulative update available to apply the fix (such as 8.1.1). Critical fixes will also be cumulative and available through the LCS servicing experience.
 
