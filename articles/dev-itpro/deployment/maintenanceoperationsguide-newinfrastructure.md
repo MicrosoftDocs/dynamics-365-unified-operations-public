@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to do perform maintenance operations guide for a Finance and Operations environment deployed on the [New Infrastructure Stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409).
+This document explains how to perform maintenance operations for a Finance and Operations environment deployed on the [New Infrastructure Stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409).
 
 # Restart Services
 
