@@ -5,7 +5,7 @@ title: Sourcing with LinkedIn Recruiter
 description: This topic provides information about using machine learning to get job and job candidate recommendations.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
