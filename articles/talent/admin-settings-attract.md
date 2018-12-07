@@ -41,7 +41,7 @@ Enter a display name for the company, and add a company logo. The display name a
 
 ## LinkedIn Integration
 
-Set up the integration with LinkedIn Recruiter System Connect (RSC). After you connect to LinkedIn by using your LinkedIn credentials, you can sync a candidate's LinkedIn profile, applications, interview feedback, and hiring team notes. A full LinkedIn recruiter license is required. For more information about RSC, see [Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483).
+Set up the integration with LinkedIn Recruiter System Connect (RSC). After you connect to LinkedIn by using your LinkedIn credentials, you can sync a candidate's LinkedIn profile, applications, interview feedback, and hiring team notes. A full LinkedIn recruiter license is required. For more information about LinkedIn Recruiter, see [Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## User permissions
 
