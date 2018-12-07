@@ -5,7 +5,7 @@ title: Admin settings in Attract
 description: This topic explains how to enable feature functionality for organizations and users in Attract.
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
