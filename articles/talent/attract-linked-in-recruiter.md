@@ -135,9 +135,7 @@ Using LinkedIn recruiter, you can track whether a candidate has applied to other
 The LinkedIn InMail history is available with contract-level access with LinkedIn Recruiter. When it is enabled, you can view your entire InMail history with the candidate. You can also see who else from your organization has exchanged InMail with the candidate, 
 however you can't view the messages between them.
 
-To view InMail history, go to a candidate’s profile, go to the **LinkedIn**
-tab and scroll to the bottom of the page to view the history. You can view the
-InMail history as long as you have talked to the candidate. The messages from InMail sync with
+To view InMail history, go to a candidate’s profile, go to the **LinkedIn** tab and scroll to the bottom of the page to view the history. You can view InMail history if you have had a discussion with the candidate. The messages from InMail will sync with
 Attract every couple of hours.
 
 ### Notes history 
@@ -150,6 +148,6 @@ notes about the candidate from LinkedIn Recruiter.
 
 ### InMail stub profile
 
-The InMail stub profile is available with contract-level access with LinkedIn Recruiter. If candidates agree to share their LinkedIn profiles with any user in your organization, you can track the candidates in Attract and a new candidate record will be created for each candidate. You can view candidate's email address if the candidate was already existing in the system with an email address or had chosen to share with the recruiter.
+The InMail stub profile is available with contract-level access with LinkedIn Recruiter. If candidates agree to share their LinkedIn profiles with any user in your organization, you can track the candidates in Attract and a new candidate record will be created for each candidate. You can view candidate's email address if the candidate already exists in the system with an email address or has chosen to share their address with the recruiter.
 
 To view the list of candidates, go to **Talent pools** to see a system-created LinkedIn talent pool. This talent pool contains the list candidates and their stub profiles as received from LinkedIn, showing the candidate's first name and last name. The candidate’s email ID will be displayed if the candidate had chosen to share their email address.
