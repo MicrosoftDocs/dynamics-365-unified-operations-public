@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
 ms.search.validFrom: 2018-12-31
-ms.dyn365.ops.version: 8.1.1
+ms.dyn365.ops.version: 8.1
 
 ---
 
