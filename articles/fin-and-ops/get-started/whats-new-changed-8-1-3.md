@@ -60,11 +60,17 @@ You can settle the amount remaining from settlement activity by applying that am
 This release contains the following feautres specific for Russia:
 
 ### Accounts receivable debts tax registers. AR bad debts writing-off
- - Tax registers: Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement 
+ - Tax registers: Accounts receivable inventory act in tax and business accounting; Bad debts reserve calculation in tax and business accounting; Bad debts reserve movement in tax and business accounting; Accounts receivable movement in tx and business accounting
  - Procedure for writing-off AR bad debts
  
 ### Accounts payable debts tax registers. AP bad debts writing-off
- - Tax registers: Accounts payable debt - inventory; Accounts payable debt movement 
+ - Tax registers: Accounts payable inventory act; Accounts payable debt movement 
  - Procedure for writing-off AP bad debts 
 
-### Client-bank interface and reconciliation procedure (import part)
+### Client-bank interface and reconciliation procedure
+Added the interface and GER configurations examples required to use the Client-Bank functionality.
+To use this feature, following GER configurations should be imported from LCS and selected in the settings:
+•	Payment model.version.22
+•	Payment model mapping to destination (RU).version.22.4
+•	Bank statement (RU).version.22.6
+•	Payment order (RU).version.22.4
