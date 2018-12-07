@@ -51,8 +51,7 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
     | File type | Select **Documentation**. This option is only available if you've turned on the **Dynamics 365 Translation Service - Documentation Translation Support** preview feature in LCS. For more information, see [Accessing LCS preview features](./translation-service-overview.md#accessing-lcs-preview-features). |
     | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
-    | Target country/region | Select the country or region where the translated file will be released. |
-    | Translation source language, Translation target language | Select the pair of languages to translate from and to. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. Therefore, Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
+    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business needs multiple target languages translated for the same source language, you can select all target languages in one request. Make sure you actually select the target languages using the checkbox next to the language name. This saves your time to submit multiple translation requests individually and you can also track all the target languages translation status in one request. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. Therefore, Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
 
     > [!NOTE]
     > To take advantage of the Microsoft-trained MT system for Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
@@ -68,13 +67,19 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
 ## Upload files
 Select the plus sign (**+**) in each section to open the **File upload** page.
 
-### Upload the files to translate (Required)
-Currently, only files in Microsoft Word (.docx) format are accepted for translation. Create a zip file that includes all the .docx files that you want to translate. You can upload only one zip file.
+### Upload files to translate (Required)
+Currently, only files in Microsoft Word (.docx) format are accepted for translation. Create a zip file that includes all the .docx files in the source language that you want to translate from. You can upload only one zip file. Note that DTS doesn't change the source files that you upload. The source files are only used to create files in the corresponding target languages you requested.
 
-### Upload XLIFF or TMX TM files (Optional)
-If you have a TM in Translation Memory eXchange (TMX) format from a previous DTS request, and/or if you have a XLIFF TM from UI file translation, you can attach those TMs so that they can be recycled in the new document that you're submitting. Create a zip file that includes all the TM files. You can upload only one zip file.
+### Upload XLIFF or TMX translation memory files (Optional)
+If you have a TM in Translation Memory eXchange (TMX) format from a previous DTS request, and/or if you have a XLIFF TM from UI file translation, you can attach those TMs so that they can be recycled in the new document that you're submitting. Create a zip file that includes all the TM files. You can upload only one zip file. If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
-After you've finished uploading files, select **Submit** to start the translation process. After you submit the request, a new request ID is created on the DTS dashboard. Select the request ID, and then, on the request details page, select the **Request status** tab to view a summary of the request and its status.
+With the translation memory file you are providing, you have an option to decide whether you want to create a custom MT system trained with it. This option may take longer time to complete the request. You must choose Yes or No to be able to continue with the TM file upload.  
+
+After you've finished uploading file, select **Submit** to start the translation process. 
+
+After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status is displayed in a seperate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.
+
+To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information..
 
 ![Request status tab](./media/dts-request-status-ua.png "Request status tab")
 
@@ -107,10 +112,10 @@ When you edit the .docx review file, note of the following guidelines:
 ### Regenerate output files
 When you've finished reviewing and editing a .docx review file, you must regenerate the output file in the source document style. You can then apply the latest translations (that is, your edited versions of the translations) to the documentation files in the target language.
 
-1. On the **Request output** tab, select **Regenerate**. A new tab that is named **Regenerate(By Partner)** appears.
-2. Select the plus sign (**+**) to open the **File upload** page.
-3. Zip the edited XLIFF files, and then select **Upload**. Don't change the name that DTS provided for the .docx review file on the **Request output** tab.
-3. You're prompted to confirm the upload action. DTS then regenerates the updated .docx file in the source document style. This process might require some time. When it's completed, you receive an automated email notification. You can then download the final output files on the **Regenerate(By Partner)** tab.
+1. Click the **Regenerate** icon next to the target language section. It brings in the **File upload** slider.
+2. Zip the edited .docx files, and then select **Upload**. Don't change the name that DTS originally provided for the .docx review file.
+3. You're prompted to confirm the upload action. 
+4. Once the regenerate is processed, the **Request output** tab refreshes the content. This process may take some time to complete. 
 
     ![Regenerated output](./media/dts-regenerate-output-ua.png "Regenerated output")
 
