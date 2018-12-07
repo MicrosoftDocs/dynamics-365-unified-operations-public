@@ -62,7 +62,7 @@ Refer to the [Software lifecycle policy and on-premises releases](https://docs.m
 ## Process
 
 ### How will Microsoft ensure quality of releases?
-Ensuring quality of the release is  a fundamental principle that’s enabled through a series of progressive, rigorous, automated validations as describe in [Standard and First release service updates](public-preview-releases.md). 
+Ensuring quality of the release is  a fundamental principle that’s enabled through a series of progressive, rigorous, automated validations as described in [Standard and First release service updates](public-preview-releases.md). 
 
 ### Can I select the day and time to update?
 Customers can configure the day and maintenance time windows in Lifecycle Services (LCS). Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 5 business days for testing and validation. Customers can optionally choose to apply the update earlier to all environments through Lifecycle Services and even earlier through early access programs. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments.
