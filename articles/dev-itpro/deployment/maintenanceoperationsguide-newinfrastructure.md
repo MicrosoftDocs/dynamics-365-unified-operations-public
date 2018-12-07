@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Maintenance Operations guide for an environment
+# Maintenance operations for deployments
 
 [!include [banner](../includes/banner.md)]
 
