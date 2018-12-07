@@ -2105,8 +2105,6 @@
           href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
         - name: Post a free text invoice
           href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-        - name: Produce Mexican electronic ledger accounting report version 1.1
-          href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
         - name: Set parameters for an electronic invoice
           href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
         - name: Set up sales tax codes for Mexico
