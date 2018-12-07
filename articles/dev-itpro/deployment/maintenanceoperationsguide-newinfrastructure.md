@@ -35,6 +35,9 @@ ms.dyn365.ops.version: 8.1
 
 This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed on the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409).
 
+> [!Note] 
+> This topic applies to deployments of Finance and Operations 8.1 and higher.
+
 # Restart services
 You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription.
 
