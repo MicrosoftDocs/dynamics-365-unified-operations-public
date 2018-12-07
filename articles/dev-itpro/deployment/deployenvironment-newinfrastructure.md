@@ -40,10 +40,10 @@ This topic walks through the process of deploying sandbox (Tier 2 and above) and
 3. Provide a **unique name** for the environment.
 4. Select the **region** where you want this environment to be deployed. The current options are:
 
-  - Central US
-  - East US
-  - EU West
-  - EU North
+   - Central US
+   - East US
+   - EU West
+   - EU North
 
 5. Select if you want to load **demo data** in your environment or if you want an **empty database**.
 6. Select the **BPM library** that will be set as the Getting started library in the product.
