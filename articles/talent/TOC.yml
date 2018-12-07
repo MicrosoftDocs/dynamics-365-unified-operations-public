@@ -276,8 +276,6 @@
       href: create-envi-powerapps-admin-ctr.md
     - name: Talent client disconnects
       href: client-disconnects.md
-    - name: How database backups are handled
-      href: database-backups.md
     - name: Avoid text truncation on the position hierarchy and export to Visio
       href: avoid-text-truncation-position-hierarchy-visio.md
     - name: Run the compensation process
