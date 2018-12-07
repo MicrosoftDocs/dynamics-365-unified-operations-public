@@ -36,14 +36,14 @@ ms.dyn365.ops.version: 8.1.1
 This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409). This is now a self-service operation and you can follow the below steps to deploy these environments.
 
 1. Select **Configure** on the project dashboard page.
-2. Select the **Application** and **Platform** version for the environment that you want to deploy. **Versions 8.1 and above** are  supported.
+2. Select the **Application** and **Platform** version for the environment that you want to deploy. Versions 8.1 and above are  supported.
 3. Provide a **unique name** for the environment.
 4. Select the **region** where you want this environment to be deployed. The current options are:
 
-- Central US
-- East US
-- EU West
-- EU North
+  - Central US
+  - East US
+  - EU West
+  - EU North
 
 5. Select if you want to load **demo data** in your environment or if you want an **empty database**.
 6. Select the **BPM library** that will be set as the Getting started library in the product.
@@ -56,6 +56,6 @@ The environment deployment starts immediately and could take anywhere between **
 
 To closely monitor the deployment progress, you can view the **Environment details** page. The environment state should change to either **Deploying** or **Deployed/Failed**.
 
-If the deployment **succeeds** , the environment state will be **Deployed** , and the user set as the environment administrator will be able to sign in to the environment.
+If the deployment **succeeds**, the environment state will be **Deployed**, and the user set as the environment administrator will be able to sign in to the environment.
 
-If the deployment **fails** , then create a Microsoft [support ticket](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support) and provide the **Last Activity ID** (available under **Manage environment** on the **Environment details** page) in the support ticket.
+If the deployment **fails**, then create a Microsoft [support ticket](../lifecycle-services/lcs-support.md) and provide the **Last Activity ID** (available under **Manage environment** on the **Environment details** page) in the support ticket.
