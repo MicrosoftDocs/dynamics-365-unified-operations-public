@@ -91,3 +91,50 @@ Additional information is displayed when number sequences are in use, to better 
 ### Attachments buttons disabled for workers
 
 Changes have beeen made to correct attachments. When adding a new attachment to a worker, the **New** and **Edit** buttons are now available when fact boxes are open on the worker form. 
+
+## Known issues
+
+### Mapping errors in the integration with Finance and Operations
+
+Departments to Operating unit task needs the following mappings updated:
+
+| Existing Source Field          | New Source Field |
+| -------------------------------|------------------|
+| cdm_description (Description)  | cdm_name (Name)  |
+
+An additional mapping also needs to be added. Select the last None field to add the following mapping:
+
+| Source Field                   | Destination Field    |
+| -------------------------------|----------------------|
+| cdm_description (Description)  | NAMEALIAS (NAMEALIAS)|
+
+The updated mappings should look like this:
+
+
+Jobs to Job Detail task needs the following mappings updated:
+
+| Existing Source Field          | New Source Field                   |
+| -------------------------------|------------------------------------|
+| cdm_name (Name)                | cdm_description (Description)      |
+| cdm_name (Description)         | cdm_jobdescription(Job Description)|
+
+
+The updated mappings should look like this:
+
+Workers to Work task needs the following mappings updated:
+
+| Existing Source Field                 | New Source Field                               |
+| --------------------------------------|------------------------------------------------|
+| cdm_emailaddress1 (Email Address 1)   | cdm_primaryemailaddress (Primary Email Address |
+| cdm_telephone1 (Telephone 1)          | cdm_primarytelephone (Primary Telephone)       |
+
+The Gender field transform also needs to be updated. Select the fn map type for Gender and update the following value mappings:
+
+| 75440000    | Male        |
+| 75440001    | Female      |
+| 75440002    | None        |
+| 75440003    | NonSpecific |
+
+
+
+The updated mappings should look like this:
