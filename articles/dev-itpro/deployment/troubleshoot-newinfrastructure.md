@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Diagnose issues
-description: This topic explains how to diagnose issues in an environment on the New Infrastructure Stack
+title: Diagnose issues with deployments
+description: This topic explains how to diagnose issues in an environment on the new infrastructure stack.
 author: manado
 manager: AnnBe
-ms.date: 07/02/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -20,16 +20,16 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 24211
+ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-12-31
+ms.dyn365.ops.version: 8.1
 
 ---
 
-# Diagnose issues 
+# Diagnose issues with deployments
 
 [!include [banner](../includes/banner.md)]
 
