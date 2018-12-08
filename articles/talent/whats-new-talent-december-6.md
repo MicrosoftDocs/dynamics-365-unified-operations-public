@@ -90,7 +90,7 @@ Additional information is displayed when number sequences are in use, to better 
  
 ### Attachments buttons not available for workers
 
-Changes have been made to correct attachments. When adding a new attachment to a worker, the **New** and **Edit** buttons are now available when FactBoxes are open on the worker form. 
+Changes have been made to correct attachments. When adding a new attachment to a worker, the **New** and **Edit** buttons are now available when FactBoxes are open on the worker window. 
 
 ## Known issues
 
@@ -137,12 +137,14 @@ The Workers to Work task needs the following mappings updated.
 | cdm_emailaddress1 (Email Address 1)   | cdm_primaryemailaddress (Primary Email Address |
 | cdm_telephone1 (Telephone 1)          | cdm_primarytelephone (Primary Telephone)       |
 
-The Gender field transform also needs to be updated. Select the fn map type for Gender and update the following value mappings.
+The Gender field transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
-| 75440000    | Male        |
-| 75440001    | Female      |
-| 75440002    | None        |
-| 75440003    | NonSpecific |
+| CDS Value   | Finance and Operations value |
+| ------------|------------------ -----------|
+| 75440000    | Male                         |
+| 75440001    | Female                       |
+| 75440002    | None                         | 
+| 75440003    | NonSpecific                  |
 
 The updated mappings should look like this.
 
