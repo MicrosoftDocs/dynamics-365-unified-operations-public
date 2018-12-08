@@ -100,6 +100,9 @@ When you use an asynchronous pattern, the caller receives an immediate response 
 
 Here are some typical scenarios that use OData integrations.
 
+> [!NOTE]
+> Use of OData for PowerBI reports is discouraged. Using entity store for such scenarios is encouraged.
+
 ### Create and update product information
 
 A manufacturer runs Finance and Operations, but defines and configures its product by using a third-party application that is hosted on-premises. This manufacturer wants to move its production information from the on-premises application to Finance and Operations. When a product is defined, or when it's changed in the on-premises application, the user should see the same change, in real time, in Finance and Operations.
