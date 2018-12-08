@@ -267,47 +267,31 @@ During data entity import:
 - If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
 
 ## Features flighted in data management and enabling flighted features
-The following features are enabled via flighting. *Flighting* is a concept that allows a feature to be ON or OFF by default. The following process must be followed to enable or disable a feature that is being flighted.
+The following features are enabled via flighting. *Flighting* is a concept that allows a feature to be ON or OFF by default. 
 
-**DMFEnableAllCompanyExport** - This flight represents the feature to export data to bring your own database (BYOD) from all companies using a single export job. By default, this is OFF. A support case must be created to enable this on a production environment. To enable this on a sandbox environment, the following steps must be followed.
+| Flight name                           | Description |
+|---------------------------------------|---------------|
+| DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job. By default, this is OFF. |
+| DMFExportToPackageForceSync           | Enables synchronuous execution of data package API export. By default, it's asynchronous. |
+| EntityNamesInPascalCaseInXMLFiles     | Eanbles old behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
+| DMFByodMissingDelete                  | Enables the old behavior where under certain conditions, certain delete operations were not synced to BYOD using change tracking. |
+| DMFEnableExportFieldsMappingCache     | Enables caching logic when building target field mapping |
+| EnableAttachmentForPackageApi         | Enables attachments functionality in the package API |
+| FailErrorOnBatchForExport             | Enables fail on error at execution unit or level for export jobs |
+| IgnorePreventUploadWhenZeroRecord     | Disables 'prevent upload when zero records' functionality |
 
-- Add a record with this Insert statement, replacing the appropriate values. 
+The steps to enable a flight in a non-production environment is as follows. Execute the following SQL command.
 
-  INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, Flight service ID, Partition, RecID, 1) 
-    - Flight name = DMFEnableAllCompanyExport
-    - Enabled = 1
-    - Flight service ID = 12719367
-    - Partition = Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-    - RecID = Same ID as partition.
-    - RecVersion = 1
+INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
 
-**DMFExportToPackageForceSync** - This flight represents the feature to enable synchronous behavior on the ExportToPackage integration API. By default, the behavior is asynchronous. This can be changed to synchronous in production environments by creating a support request. For non-production environments, the following steps must be followed.
-
-- Add a record with this Insert statement, replacing the appropriate values
-
-INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight service ID, Partition, RecID, 1) 
-- Flight name = DMFExportToPackageForceSync
-- Enabled = 1
-- Flight service ID = 12719367
-- Partition = Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-- RecID = Same ID as partition.
+The parameter descriptions are below.
+    - <Flight name> is the name of the flight that must be enabled or disabled.
+    - Enabled (1)
+    - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+    - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition id + 'n' to ensure it has a unique value
 - RecVersion = 1
 
--Restart IIS
 
-**EntityNamesInPascalCaseInXMLFiles** - This flight can be enabled if you want to have the entity names in Pascal Case in the XML files for entities. This might be useful if the integration pipe has been plumbed with this specification. However, if there is no such dependency, then this flight can be ignored and by default, the XML files will have the entity names in capital case. To enable this flight in production environments, a support case must be logged. 
-
-For non-production environments, the following steps must be followed.
-
-- Add a record with this Insert statement, replacing the appropriate values:
-
-INSERT INTO SYSFLIGHTING VALUES ('EntityNamesInPascalCaseInXMLFiles', 1, Flight service ID, Partition, RecID, 1) 
-- Flight name = DMFExportToPackageForceSync
-- Enabled = 1
-- Flight service ID = 12719367
-- Partition = Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-- RecID = Same ID as partition.
-- RecVersion = 1
 
 ## Additional resources
 - [Data entities](data-entities.md)
