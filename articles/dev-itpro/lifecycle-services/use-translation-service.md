@@ -57,6 +57,9 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
 
 ![Selecting languages](./media/dts-target-lang.png "Selecting languages")
 
+3. Select **Create**. Verify the request details were selected correctly and click Yes to continue. 
+
+
     > [!NOTE]
     > To take advantage of the Microsoft-trained MT system for Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
     >
@@ -66,7 +69,6 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
     > | Japanese | English – United States | Microsoft-trained MT system |
     > | German | Japanese | Generic MT system, unless the user provides a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF) and has more than 10,000 translation units (TUs) |
 
-3. Select **Create**. Verify the request details were selected correctly and click Yes to continue. 
 
 ## Upload files
 Select the plus sign (**+**) in each section to open the **File upload** page.
