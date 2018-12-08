@@ -53,7 +53,10 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
     | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business needs multiple target languages translated for the same source language, you can select all target languages in one request. Make sure you actually select the target languages using the checkbox next to the language name. This saves your time to submit multiple translation requests individually and you can also track all the target languages translation status in one request. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. Therefore, Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
 
-![Selecting languages](./media/dts-target-lang.png "Selecting languages")
+    ![Selecting languages](./media/dts-target-lang.png "Selecting languages")
+
+3. Select **Create**.
+
 
     > [!NOTE]
     > To take advantage of the Microsoft-trained MT system for Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
@@ -64,7 +67,7 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
     > | Japanese | English – United States | Microsoft-trained MT system |
     > | German | Japanese | Generic MT system, unless the user provides a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF) and has more than 10,000 translation units (TUs) |
 
-3. Select **Create**.
+
 
 ## Upload files
 Select the plus sign (**+**) in each section to open the **File upload** page.
