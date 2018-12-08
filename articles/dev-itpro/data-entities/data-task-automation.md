@@ -126,6 +126,11 @@ The **\<JobDefinition\>** element defines the data project definition. There can
     <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
     <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
     <LegalEntity>DAT</LegalEntity>
+    <PackageAPIExecute>true</PackageAPIExecute>
+    <PackageAPIOverwrite>false</PackageAPIOverwrite>
+    <PackageAPIReexecute>false</PackageAPIReexecute>
+    <DefinitionGroupID>TestExport</DefinitionGroupID>
+    <PackageName>TestExportPackage</PackageName>
 </JobDefinition>
 ```
 
@@ -146,6 +151,11 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 |                   | \<UseCompanyFromMessage\>        | 1..1                |           | This is a Boolean field which can be set to Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*. |
 |                   | \<LegalEntity\>                  | 1..1                |           | This is used to specify the legal entity in which the import/export job must be executed. |
 |                   | \<ConfigurationOnly\>            | 1..1                |           | This is used to create data projects and recurring schedules to be configured. The operation of import or export will not be executed. However, it is required to specify the operation and mode for the data project to be configured correctly. This is a Boolean field which takes Yes or No. |
+|                   | \<PackageAPIExecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
+|                   | \<PackageAPIOverwrite\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
+|                   | \<PackageAPIReexecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
+|                   | \<DefinitionGroupID\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a string field. |
+|                   | \<PackageName\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a string field. |
 
 ### Entity setup
 The **Entity setup** section defines the characteristics of an entity that a task in the manifest will use. There can be more than one definition, one for each entity that is used by the tasks in the manifest.
