@@ -28,340 +28,341 @@ ms.dyn365.ops.version: 8.1.1
 
 # VAT declaration (Russia)
 
-To start working with VAT declaration, you should do the following:
+[!include [banner](../includes/banner.md)]
 
-1.	Download ER configurations from [Lifecycle Services](https://lcs.dynamics.com/V2) Shared asset library. 
+To start to work with the value-added tax (VAT) declaration, follow these steps.
 
-You need to download the latest version of ER configuration VAT declaration format.
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the VAT declaration format.
 
-For example, to generate VAT declaration for reporting period 2018 year, download the latest versions of the following configurations  
+    For example, to generate the VAT declaration for the year 2018 reporting period, download the latest versions of the following configurations:
 
-  - VAT declaration model (RU)
-     - VAT declaration model mapping (RU)
-     - VAT declaration format 5.05
+    - VAT declaration model (RU)
+    - VAT declaration model mapping (RU)
+    - VAT declaration format 5.05
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). 
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2.	Optionally set up **Financial report** for VAT declaration. Set up calculation rules for **Financial report cells**. 
-You should set it up if you are going to use Financial reports for generating data for some cells in Section 3 of VAT declaration based on financial reports cells setup.
+2. Optional: Set up a financial report for the VAT declaration. Set up calculation rules for financial report cells.
 
-For more information about setting up financial reports for Russia, see [Financial reporting (Russia)](rus-financial-reports.md).
+    You should complete this optional step if you will use financial reports to generate data for some cells in section 3 of the VAT declaration, based on the setup of financial report cells.
 
+    For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](rus-financial-reports.md).
 
-3.	For first use, you can optionally Upload Data management package settings to work with Russian VAT declaration by completing the following steps.
-  1. In the LCS Shared asset library, click **Shared asset library**.
-  2. Select asset type **Data package**. Download package with name **RU VAT Declaration demo setup**. As result, file RU VAT  Declaration.zip will be downloaded.
-  3. In the **Data management** workspace of Dynamics 365 for Finance and operations, click **Import**.
-  4. Fill in **Job details** group of fields.
-     1. Enter the job name.
-     2. In the **Data source format** field, select value **Package**.
-      
-  5. In the **Upload data file**, click **Upload** and choose the RU VAT Declaration.zip file downloaded on the previous step.
-  6. When upload of Data entities finishes, click on button **Import**.
-  7. Validate the imported Financial report at **General ledger > Financial reports setup > Financial reports**
+3. Optional: For the first use, you can upload Data management package settings to work with the Russian VAT declaration. Follow these steps:
+
+    1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **RU VAT Declaration demo setup**. The file that is downloaded is named RU VAT Declaration.zip.
+    2. In Microsoft Dynamics 365 for Finance and Operations, in the **Data management** workspace, select **Import**.
+    3. In the **Job details** section, set the following values:
+
+        - Enter a name for the job.
+        - In the **Data source format** field, select **Package**.
+
+    4. In the **Upload data file** field, select **Upload**, and then select the **RU VAT Declaration.zip** file that you downloaded earlier.
+    5. After the data entities are uploaded, select **Import**.
+    6. Go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial report that you imported.
 
 ## Russian VAT declaration version 5.05 in XML format
 
-Russian VAT declaration version 5.05 in XML format is configured in **Electronic reporting** module and contains the following information:
+You configure the Russian VAT declaration version 5.05 in XML format in the **Electronic reporting** module. It contains the following information:
 
-- *Section 1* – Total VAT amount to be paid to budget, or to be reclaimed. This section contains cumulative amounts from sections 3,4,5,6,7
+- **Section 1** – The total VAT amount that must be paid to budget or reclaimed. This section contains cumulative amounts from sections 3 through 7.
+- **Section 2** – The VAT amount that must be paid to budget by the tax agent.
+- **Section 3** – Calculation of VAT amounts that must be paid to budget or reclaimed.
 
-- *Section 2* – VAT amount to be paid to budget by Tax agent. 
+    - **Application 1 to section 3** – The VAT amounts that were previously deducted, and that are now subject to restoration and payment to budget for fixed assets that were used in non-taxable operations.
 
-- *Section 3* – Calculation of VAT amounts to be paid to budget or to be reclaimed
+- **Section 4** – Calculation of VAT amounts for export sales where a tax rate of 0 percent was confirmed during the period.
+- **Section 5** – Calculation of VAT deduction amounts for the reporting period, for export sales where a tax rate of 0 percent was either confirmed or unconfirmed in previous periods.
+- **Section 6** – Calculation of VAT amounts for export sales where a tax rate of 0 percent should have been confirmed during the period but wasn't confirmed.
+- **Section 8** – Information from the purchase book.
 
-  - *Application 1 to Section 3* – VAT amounts previously deducted and which are now subject to restoration and payment to budget for fixed assets used in non-taxable operations
+    - **Section 8.1** – Appendix to chapter 8. Information from additional sheets for the purchase book.
 
-- *Section 4* – Calculation of VAT amounts for export sales where tax rate 0% is confirmed during the period
+- **Section 9** – Information from the sales book.
 
-- *Section 5* – Calculation of VAT deduction amounts of the reporting period for export sales where tax rate 0% was confirmed in previous periods.
+    - **Section 9.1** – Appendix to chapter 9. Information from additional sheets for the sales book.
 
-- *Section 6* – Calculation of VAT amounts for export sales where tax rate 0% is should have been but was not confirmed during the period
-
-- *Section 8* – Information from Purchase book
-
-  - *Section 8.1* – Appendix to Chapter 8 – Information from additional sheets to purchase book
-
-- *Section 9* – Information from Sales book
-
-  - *Section 9.1* – Appendix to Chapter 9 – Information from additional sheets to sales book
-
-- *Section 10* – Information from Issued factures journal regarding intermediary deals
-
-- *Section 11* - Information from Received factures journal regarding intermediary deals
+- **Section 10** – Information about intermediary deals from the Issued factures journal.
+- **Section 11** – Information about intermediary deals from the Received factures journal.
 
 For more information, see [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md).
 
+## Section 2 – The VAT amount that must be paid to budget by the tax agent
 
-## Section 2 VAT amount to be paid to budget by Tax agent
-
-Section 2 of VAT declaration contains VAT amounts which are calculated based on Tax agent transactions. 
+Section 2 of the VAT declaration contains VAT amounts that are calculated based on tax agent transactions.
 
 For more information, see [Value-added tax (VAT) for tax agents (Russia)](rus-tax-agent.md).
 
-A separate section for each Tax agent is created which contains the following information:
+A separate section is created for each tax agent. Each section contains the following information:
 
-- name of organization for which legal entity is acting as Tax agent (line 020)
-- tax registration Id of type of organization for which legal entity is acting as Tax agent (line 030)
-- budget classification code (line 040)
-- territory code (line 050)
-- VAT amount calculated for tax agent transactions (line 060)
-- VAT operation code (line 070)
+- The name of the organization that the legal entity is acting as a tax agent for (line 020)
+- The tax registration ID of the type of organization that the legal entity is acting as a tax agent for (line 030)
+- The budget classification code (line 040)
+- The territory code (line 050)
+- The VAT amount that is calculated for tax agent transactions (line 060)
+- The VAT operation code (line 070)
 
-## Section 3 Calculation of VAT amounts to be paid to budget or to be reclaimed
+## Section 3 – Calculation of VAT amounts that must be paid to budget or reclaimed
 
-Section 3 of VAT declaration, contains amounts of the registered factures, incoming VAT and restored VAT amounts from the sales and purchase books, as shown in the following table. These amounts are generated automatically based on registered documents.
-
+Section 3 of the VAT declaration contains the amounts of the registered factures, incoming VAT amounts, and restored VAT amounts from the sales and purchase books, as shown in the following tables. These amounts are automatically generated based on registered documents.
 
 ### VAT payable
-| Line number	| Column number	| Name	| XML attribute, element name	| Description |
+
+| Line number | Column number | Name | XML attribute/element name | Description |
 |---|---|---|---|---|
-|010	| 3	| Transfer of goods, services and property rights	| РеалТов18\ НалБаза	| Tax base of outgoing customer invoices with VAT at 18 percent. |
-| 010	| 4	| Transfer of goods, services and property rights	| РеалТов18\ СумНал	| VAT amount of outgoing customer invoices with VAT at 18 percent.|
-| 020	| 3	| Transfer of goods, services and property rights	| РеалТов10\ НалБаза	| Tax base of outgoing customer invoices with VAT at 10 percent.|
-| 020	| 4	| Transfer of goods, services and property rights	| РеалТов10\ СумНал	| VAT amount of outgoing customer invoices with VAT at 10 percent.|
-| 070	| 3	| Prepayments or partial payments received from customers for future shipments	| ОплПредПост\ НалБаза	| Tax base of factures for prepayments received from customers for future shipments.|
-| 070	| 4	| Prepayments or partial payments received from customers for future shipments	| ОплПредПост\ СумНал	| VAT amount of factures for prepayments received from customers for future shipments| 
-| 080	| 4	| Tax amounts that were accepted for deduction, which are subject to restoration, total	| СумНалВосст\ СумНалВс	| The amount of restored VAT based on the following outgoing VAT processing data: <br></br>-- Incoming factures related to nontaxable shipments for the current reporting period. <br></br>- Outgoing factures on prepayments made to vendors. <br></br>- Fixed assets used in nontaxable operations. |
-| 090	| 4	| Tax amounts that were accepted for deduction and which are subject to restoration, for prepayments to vendors	| СумНалВосст\ СумНал170.3.3	| The amount of restored VAT based on outgoing factures on prepayments made to vendors. The VAT restoration occurs in the current reporting period| 
-| 100	| 4	| Tax amounts that were accepted for deduction and which are subject to restoration for operations subject to 0% VAT rate |  СумНалВосст\ СумНалОперСт0 | 	The amount of restored VAT for all export factures during the current reporting period|
+| 010 | 3 | Transfer of goods, services and property rights | РеалТов18/НалБаза | The tax base of outgoing customer invoices that have VAT at 18 percent. |
+| 010 | 4 | Transfer of goods, services and property rights | РеалТов18/СумНал | The VAT amount of outgoing customer invoices that have VAT at 18 percent. |
+| 020 | 3 | Transfer of goods, services and property rights | РеалТов10/НалБаза | The tax base of outgoing customer invoices that have VAT at 10 percent. |
+| 020 | 4 | Transfer of goods, services and property rights | РеалТов10/СумНал | The VAT amount of outgoing customer invoices that have VAT at 10 percent. |
+| 070 | 3 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/НалБаза | The tax base of factures on prepayments that were received from customers for future shipments. |
+| 070 | 4 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/СумНал | The VAT amount of factures on prepayments that were received from customers for future shipments. | 
+| 080 | 4 | Tax amounts that were accepted for deduction, which are subject to restoration, total | СумНалВосст/СумНалВс | The amount of restored VAT, based on the following outgoing VAT processing data:<ul><li>Incoming factures that are related to non-taxable shipments for the current reporting period</li><li>Outgoing factures on prepayments that were made to vendors</li><li>Fixed assets that were used in non-taxable operations</li></ul> |
+| 090 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration, for prepayments to vendors | СумНалВосст/СумНал170.3.3 | The amount of restored VAT, based on outgoing factures on prepayments that were made to vendors. The VAT restoration occurs in the current reporting period. | 
+| 100 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration for operations subject to 0% VAT rate | СумНалВосст/СумНалОперСт0 | The amount of restored VAT for all export factures during the current reporting period. |
 
-### VAT receivable / deductible
+### VAT receivable/deductible
 
-| Line number	| Column number	| Name	| XML attribute, element name	| Description |
+| Line number | Column number | Name | XML attribute/element name | Description |
 |---|---|---|---|---|
-| 120	| 3	| Tax amount accepted during acquisition of goods, services, and property rights that are subject to tax deduction |  НалПредНППриоб	| The amount of incoming VAT subject to reimbursement of factures on purchase invoices. The purchases include goods, services, and property rights that are subject to tax deduction. |
-| 130	| 3	| Tax amounts accepted when prepayments are made to vendors for future acquisitions that are subject to tax deduction |	НалПредНППок	| The amount of incoming VAT subject to reimbursement of factures on prepayments made to vendors.|
-| 150	| 3	| Tax amount that was accepted for deduction when goods were imported for internal consumption |	НалУплТамож	| The VAT amount of factures of GTD and KTS types when goods are imported from territories other than Belarus.|
-| 160	| 3	| Tax amount that was accepted for deduction when goods were imported from Belarus	| НалУплНОТовТС	| The VAT amount of factures with types GTD (Custom declaration), and KTS (Customs values correction) when goods are imported from Belarus.|
-| 170	| 3	| Tax amount that was accepted for deduction after delivery of goods to customers	| НалИсчПрод	| The amount of incoming VAT of factures on prepayments received from customers for future shipments. The amount is subject to refund after goods are delivered or services are rendered|
-| 180	| 3	| Tax amount that was accepted for deduction for a buyer-tax agent	| НалУплПокНА	| The VAT amount of factures on tax agent transactions with the Facture source = Tax correction|
+| 120 | 3 | Tax amount accepted during acquisition of goods, services, and property rights that are subject to tax deduction | НалПредНППриоб | The amount of incoming VAT that is subject to reimbursement of factures on purchase invoices. The purchases include goods, services, and property rights that are subject to tax deduction. |
+| 130 | 3 | Tax amounts accepted when prepayments are made to vendors for future acquisitions that are subject to tax deduction | НалПредНППок | The amount of incoming VAT that is subject to reimbursement of factures on prepayments that were made to vendors. |
+| 150 | 3 | Tax amount that was accepted for deduction when goods were imported for internal consumption | НалУплТамож | The VAT amount of factures of the GTD (Custom declaration) and KTS (Customs values correction) types when goods are imported from territories other than Belarus. |
+| 160 | 3 | Tax amount that was accepted for deduction when goods were imported from Belarus | НалУплНОТовТС | The VAT amount of factures of the GTD and KTS types when goods are imported from Belarus. |
+| 170 | 3 | Tax amount that was accepted for deduction after delivery of goods to customers | НалИсчПрод | The incoming VAT amount of factures on prepayments that were received from customers for future shipments. The amount is subject to refund after goods are delivered or services are rendered. |
+| 180 | 3 | Tax amount that was accepted for deduction for a buyer-tax agent | НалУплПокНА | The VAT amount of factures on tax agent transactions where the **Facture source** value is **Tax correction**. |
 
-In Section 3 you can also get amounts of Financial report which is set up for VAT declaration. 
-You should set up Financial report and financial report cells to calculate required cells values. For more information, see [Financial reporting (Russia)](rus-financial-reports.md).
+In section 3, you can also get the amounts of the financial report that is set up for the VAT declaration.
 
-You should define the following names of Financial report cells so that the calculated amounts are automatically exported to Section 3 of VAT declaration format 5.05:
+You should set up the financial report and financial report cells to calculate required cells values. For more information, see [Financial reporting (Russia)](rus-financial-reports.md).
+
+You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.05.
 
 **Tax payable**
 
-|**Name of cell** |	**Line-Column of Section 3** |
-| --- | --- |
-| РеалТов18НалБаза	| 010-3 *** |
-| РеалТов18СумНал	| 010-4 *** |
-| РеалТов10НалБаза	| 020-3 *** |
-| РеалТов10СумНал	| 020-4 *** |
-| РеалСрок151.1_118НалБаза	| 041-3|
-| РеалСрок151.1_118СумНал	| 041-4|
-| РеалСрок151.1_110НалБаза	| 042-3|
-| РеалСрок151.1_110СумНал	| 042-4|
-| РеалПредИКНалБаза	| 050-3 |
-| РеалПредИКСумНал	| 050-4 |
-| ВыпСМРСобНалБаза	| 060-3 |
-| ВыпСМРСобСумНал	| 060-4 |
-| ОплПредПостНалБаза	| 070-3 *** |
-| ОплПредПостСумНал	| 070-4 *** |
-| СумНалВосстСумНалВс	| 080-4 *** |
-| СумНалВосстСумНал170.3.3	| 090-4 *** |
-| СумНалВосстСумНалОперСт0	| 100-4 *** |
-| КорРеалТов18НалБаза	| 105-3 |
-| КорРеалТов18СумНал	| 105-4 |
-| КорРеалТов10НалБаза	| 106-3 |
-| КорРеалТов10СумНал	| 106-4 |
-| КорРеалТов118НалБаза	| 107-3 |
-| КорРеалТов118СумНал	| 107-4 |
-| КорРеалТов110НалБаза	| 108-3 |
-| КорРеалТов110СумНал	| 108-4 |
-| КорРеалПредИКНалБаза	| 109-3 |
-| КорРеалПредИКСумНал	| 109-4 |
-| УплДеклар151.1НалБаза	| 110-3 |
-| УплДеклар151.1СумНал	| 110-4 |
-| УплДеклар173.6НалБаза	| 115-3 |
-| УплДеклар173.6СумНал	| 115-4 |
+| Name of cell | Line-column in section 3 |
+|---|---|
+| РеалТов18НалБаза | 010-3\* |
+| РеалТов18СумНал | 010-4\* |
+| РеалТов10НалБаза | 020-3\* |
+| РеалТов10СумНал | 020-4\* |
+| РеалСрок151.1\_118НалБаза | 041-3 |
+| РеалСрок151.1\_118СумНал | 041-4 |
+| РеалСрок151.1\_110НалБаза | 042-3 |
+| РеалСрок151.1\_110СумНал | 042-4 |
+| РеалПредИКНалБаза | 050-3 |
+| РеалПредИКСумНал | 050-4 |
+| ВыпСМРСобНалБаза | 060-3 |
+| ВыпСМРСобСумНал | 060-4 |
+| ОплПредПостНалБаза | 070-3\* |
+| ОплПредПостСумНал | 070-4\* |
+| СумНалВосстСумНалВс | 080-4\* |
+| СумНалВосстСумНал170.3.3 | 090-4\* |
+| СумНалВосстСумНалОперСт0 | 100-4\* |
+| КорРеалТов18НалБаза | 105-3 |
+| КорРеалТов18СумНал | 105-4 |
+| КорРеалТов10НалБаза | 106-3 |
+| КорРеалТов10СумНал | 106-4 |
+| КорРеалТов118НалБаза | 107-3 |
+| КорРеалТов118СумНал | 107-4 |
+| КорРеалТов110НалБаза | 108-3 |
+| КорРеалТов110СумНал | 108-4 |
+| КорРеалПредИКНалБаза | 109-3 |
+| КорРеалПредИКСумНал | 109-4 |
+| УплДеклар151.1НалБаза | 110-3 |
+| УплДеклар151.1СумНал | 110-4 |
+| УплДеклар173.6НалБаза | 115-3 |
+| УплДеклар173.6СумНал | 115-4 |
 
-**Tax receivable and deductible**
+**Tax receivable/deductible**
 
-|**Name of cell** |	**Line-Column of Section 3** |
-| --- | --- |
-| НалПредНППриоб |	120-3 *** |
-| НалПредНПКапСтр	| 125-3 |
-| НалПредНППок	| 130-3 *** |
-| НалИсчСМР	| 140-3 |
-| НалУплТамож	| 150-3 *** |
-| НалУплНОТовТС | 160-3 *** |
-| НалИсчПрод	| 170-3 *** |
-| НалУплПокНА	| 180-3 *** |
-| НалВыч171.14	| 185-3 |
+| Name of cell | Line-column in section 3 |
+|---|---|
+| НалПредНППриоб | 120-3\* |
+| НалПредНПКапСтр | 125-3 |
+| НалПредНППок | 130-3\* |
+| НалИсчСМР | 140-3 |
+| НалУплТамож | 150-3\* |
+| НалУплНОТовТС | 160-3\* |
+| НалИсчПрод | 170-3\* |
+| НалУплПокНА | 180-3\* |
+| НалВыч171.14 | 185-3 |
 
 > [!NOTE]
-> Requisites marked with *** are calculated automatically based on registered documents as described above. 
-> If you set up Financial report cells calculation rules for them, the calculated amounts of Financial report will be added to automatically calculated amounts. 
-> If you want to replace automatic calculation by Financial report cell calculation, review **How to customize Section 3 of VAT declaration** section of this article.
-> You can download demo setup of Financial report for VAT declaration from Data package **RU VAT declaration demo setup** of LCS Shared asset library.
+> Requisites that are marked with an asterisk (\*) in the preceding tables are automatically calculated based on registered documents, as described earlier in this topic. If you set up financial report cell calculation rules for them, the calculated amounts of the financial report will be added to the automatically calculated amounts. If you want to replace the automatic calculation with the financial report cell calculation, see the [Customize section 3 of the VAT declaration](#customize-section-3-of-the-vat-declaration) section of this topic. You can download a demo setup of the financial report for the VAT declaration from the **RU VAT declaration demo setup** data package in the LCS Shared asset library.
 
+### Customize section 3 of the VAT declaration
 
-### How to customize Section 3 of VAT declaration
+In the **VAT declaration model (RU)** ER configuration, section 3 is represented by the **Declaration items** element. In the **VAT declaration model mapping (RU)** ER configuration, this element is bound to the **$RRG.$Section3.$data** data source. This data source is configured as **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**. It refers to two data sources:
 
-Section 3 is represented in VAT declaration model (RU) by model element **Declaration items**. 
-In ER configuration **VAT declaration model mapping (RU)** this element is bound to the data source **$RRG.$Section3.$data** that is configured as **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**. It refers to two data sources: 
+- **$RRG.$Section3.$data.$dataStd** – This data source is configured to access the **VAT Declaration helper (RU)** application class by calling the **getSection3data** method. This method produces a list that has the amounts of several boxes in section 3.
+- **$RRG.$Section3.$data.$dataCustom** – This data source is configured to access the **LedgerRRGCustomReportHelper\_RU** application class by calling the **getCustomReportData** method. This method produces the record list that has calculated amounts for some financial report cells that were configured by the user.
 
-   - **$RRG.$Section3.$data.$dataStd**: This data source is configured to access the application class **VAT Declaration helper (RU)** by calling the method **getSection3data** which is producing the list with amounts of several Section 3 boxes 
+To customize the declaration, follow one of these steps.
 
-   - **$RRG.$Section3.$data.$dataCustom**: This data source is configured to access the application class **LedgerRRGCustomReportHelper_RU** by calling the method **getCustomReportData** which is producing the record list with calculated amounts for some Financial report cells configured by user
+- Set up the financial report to calculate cells that aren't automatically calculated by the **VAT Declaration helper (RU)** class.
 
-To customize the declaration, you can do either of the following:
+    In this case, you should to set up financial report calculation rules for report cells that aren't marked with an asterisk (\*) in the tables in the previous section.
 
-   - set up Financial report to calculate cells which are not calculated automatically by **VAT Declaration helper (RU)** class
-In this case you should to set up Financial report calculation rules for report cells not marked with *** above
+- Set up the financial report to fully calculate cells based on the user setup instead of through automatic calculation.
 
-   - set up Financial report to calculate cells fully based on user setup instead of automatic calculation. 
-   In this case you should do the following: 
-      1.	Set up Financial report calculation rules for all required cells, including those marked with ***
-      2.	Create customized Model mapping ER configuration as derived from the one provided by Microsoft configuration provider 
-      3.	In customized Model mapping ER configuration (created on the previous step), redefine model mapping data source **$RRG.$Section3.$data = '$dataCustom'** instead of  **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**
+    In this case, follow these steps:
 
-   - extend the **VAT Declaration helper (RU) class** (use methods starting from "getSection3data" like getSection3dataDomesticVAT) or create alternative helper methods in a similar manner which calculate required cells values. 
-   In this case you should do the following:
-      1.	Create customized Model mapping ER configuration as derived from the one provided by Microsoft configuration provider 
-      2.	Redefine the model mapping data source element $RRG.$Section3.$data.$dataStd
+    1. Set up financial report calculation rules for all required cells, including the cells that marked with an asterisk (\*) in the tables in the previous section.
+    2. Create a customized **Model mapping** ER configuration. Derive it from the configuration that is provided by the Microsoft configuration provider.
+    3. In the customized **Model mapping** ER configuration that you created in the previous step, redefine the model mapping data source so that it's configured as **$RRG.$Section3.$data = '$dataCustom'** instead of **$RRG.$Section3.$data = LISTJOIN(@.'$dataStd', @.'$dataCustom')**.
 
-For more information about creating a derived version of ER configurations to do customization, see [ER Upgrade your format by adopting a new, base version of that format](../../dev-itpro/analytics/tasks/er-upgrade-format.md).
+- Extend the **VAT Declaration helper (RU)** class (use methods that start with **getSection3data**, such as **getSection3dataDomesticVAT**). Or, in a similar manner, create alternative helper methods that calculate the required cells values.
 
-For more information about defining model mappings, see [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+    In this case, follow these steps:
 
+    1. Create a customized **Model mapping** ER configuration. Derive it from the configuration that is provided by the Microsoft configuration provider.
+    2. Redefine the **$RRG.$Section3.$data.$dataStd** model mapping data source element.
 
-## Application 1 to Section 3 
+For more information about how to create a derived version of ER configurations to do customization, see [ER Upgrade your format by adopting a new, base version of that format](../../dev-itpro/analytics/tasks/er-upgrade-format.md).
 
-Application 1 contains information about fixed assets that are used in nontaxable activities. 
-Application 1 is generated in the last reporting period of the calendar year and contains the restored VAT amount for the fixed asset calculated for the entire calendar year. Data for the section are generated based on VAT restoration journal entries.
+For more information about how to define model mappings, see [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
-This section contains:
-- name of fixed asset (line 010)
-- putting into operation date (line 030)
-- depreciation start date (line 040)
-- initial cost of fixed asset (line 050)
-- incoming VAT amount related to fixed asset which was deducted (line 060)
-- the year that the VAT restoration begins until the tenth year of depreciation for fixed asset (line 070, column 1)
-- the date when the fixed asset was first used in non-taxable operations (line 070, column 2)
-- the percentage of revenue for nontaxable goods and export operations (line 070, column 3)
-- VAT amount restored for fixed asset in a year (line 070, column 4)
+## Application 1 to section 3
 
+Application 1 contains information about fixed assets that are used in non-taxable activities. It's generated in the last reporting period of the calendar year and contains the restored VAT amount for the fixed asset that was calculated for the whole calendar year. Data for application 1 is generated based on VAT restoration journal entries.
 
-## Sections for export taxed at 0% rate
+Application 1 contains the following information:
 
-Before generating these sections of VAT declaration, you should do the following settings:
-1.	Create VAT operation codes for export trade at Tax > Setup > Sales tax > VAT operation codes
-2.	Assign VAT operation codes to Sales tax codes at Tax > Indirect taxes > Sales tax > Sales tax codes
+- The name of the fixed asset (line 010)
+- The date when the fixed asset was put into operation (line 030)
+- The depreciation start date (line 040)
+- The initial cost of the fixed asset (line 050)
+- The incoming VAT amount that is related to the fixed asset and that was deducted (line 060)
+- The year when VAT restoration begins, until the tenth year of depreciation for the fixed asset (line 070, column 1)
+- The date when the fixed asset was first used in non-taxable operations (line 070, column 2)
+- The percentage of revenue for non-taxable goods and export operations (line 070, column 3)
+- The VAT amount that was restored for the fixed asset in a year (line 070, column 4)
+
+## Sections for exports that are taxed at a rate of 0 percent
+
+Before you generate the sections of VAT declaration for exports that are taxed at a rate of 0 percent, follow these steps.
+
+1. Go to **Tax \> Setup \> Sales tax \> VAT operation codes**, and create VAT operation codes for export trade.
+2. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and assign VAT operation codes to sales tax codes.
 
 ### Overview and example
 
-Sections for export are generated based on Export factures registration and VAT restoration journal entries.
-You can find more details about how to process export transactions in the Processing invoice-factures for Export trade article when it’s available.
-
-**Example**:
-
-*January 2018* – Products are purchased:
-
-   Invoice V1/Facture1 – 10 pcs., at amount 118 000 RUB, incl. VAT 18% 18 000 RUB
-
-*January 2018* – Incoming VAT deduction for Facture1: Amount incl. VAT 82 600 RUB, incl. VAT 18% 12 600 RUB
-  Notice that incoming Facture contains only part of goods purchased with Invoice V1.
-
-*April 2018* – Products are sold for export (at exchange rate 45 RUB / USD):
-
-   Invoice C1 – 2 pcs., amount 600 USD = 27 000 RUB (respective incoming VAT amount is 3 600 RUB)
-   Invoice C2 – 8 pcs., amount 2 400USD = 108 000 RUB (respective incoming VAT amount is 14 400 RUB)
-
-In this example, the deadline for collecting all document for export 0% rate confirmation is September 2018
-
-*August 2018* - Export for Invoice C1 confirmed in time.
-
-*September 2018* - Export for Invoice C2 wasn’t confirmed by deadline. As result, VAT at domestic VAT rate 18% was calculated for this invoice.  108 000 * 18% = 19 440 RUB. 
-    Respective incoming VAT deduction amount for not confirmed export is 9 000 RUB.
-
-*November 2018* - Facture2 for left part of purchase by Invoice V1 is received. So, incoming VAT deduction for left part of Invoice V1 purchase is posted:
-    Amount incl. VAT 35 400 RUB, incl. VAT 18% 5 400 RUB (this is for goods purchased by Invoice C2)
-
-
-VAT declaration for III Quarter 2018 will contain Chapter 4 and Chapter 6
-
-VAT declaration for IV Quarter 2018 will contain Chapter 5 
-
-Find more details for this example below.
-
-
-### Section 4 Calculation of VAT amounts for export sales where tax rate 0% is confirmed during the period
-
-This section represents amounts for export factures if 0% rate was confirmed during the reporting period. Data are grouped by VAT operation code. The following data is exported:
-- VAT operation code (line 010)
-- Tax base (line 020)
-- VAT amount deductible from the purchase of items used in export confirmed at 0% rate (line 030)
-- Adjustment: VAT amount deductible which was paid in previous periods when 0% rate wasn’t confirmed yet (line 040).
-- Adjustment: VAT amount restoration which was deducted in previous periods for not confirmed export (line 050).
-Corrections of amounts for goods return:
-- VAT operation code (line 060)
-- Tax base (line 070)
+Sections for export are generated based on the registration of export factures and on VAT restoration journal entries. For more information about how to process export transactions, see the "Processing invoice factures for export trade" topic (not currently available).
 
 **Example**
 
-In example above, the following data will be present in Section 4 of VAT declaration for III quarter 2018:
+- **January 2018:** Products are purchased.
 
-| Requisite | Line | Value |
-|----|----|-----|
-| VAT operation code | 010 | 1011410 (as per the user setup for respective Sales tax code) |
-| Tax base | 020| 27 000 |
-| VAT amount deductible from the purchase of items used in export confirmed at 0% rate | 030 | 3 600 |
+    - Invoice V1/Facture1: 10 pieces for a total amount of 118,000 Russian rubles (RUB), which includes 18-percent VAT (18,000 RUB)
 
+- **January 2018:** Incoming VAT deduction for Facture1.
 
-### Section 5 – Calculation of VAT deduction amounts of the reporting period for export sales where tax rate 0% was confirmed or not confirmed in previous periods.
+    - 82,600 RUB, which includes 18-percent VAT (12,600 RUB)
 
-This section represents VAT amounts deductible in the reporting period for export sales where 0% rate was confirmed or not confirmed in previous periods (“later” deductions of VAT amounts).  
-Data are grouped by the period when respective export was declared, and VAT operation code. The following data is exported:
+    Note that the incoming facture includes only some of the goods that were purchased by using invoice V1.
 
-- Year when respective export was declared (line 010)
-- Reporting period code when respective export was declared (line 020)
-- VAT operation code (line 030)
-- Tax base from the purchase of items used in confirmed export (line 040)
-- VAT amount deductible from the purchase of items used in confirmed export (line 050)
-- Tax base from the purchase of items used in not confirmed export (line 060)
-- VAT amount deductible from the purchase of items used in not confirmed export (line 070)
+- **April 2018:** Products are sold for export, at an exchange rate of 45 RUB to 1 US dollar (USD).
+
+    - Invoice C1: 2 pieces at 600 USD = 27,000 RUB (The corresponding incoming VAT amount is 3,600 RUB.)
+    - Invoice C2: 8 pieces at 2,400 USD = 108,000 RUB (The corresponding incoming VAT amount is 14,400 RUB.)
+
+    In this example, September 2018 is the deadline for collecting all the documents for confirmation of export at a rate of 0 percent.
+
+- **August 2018:** Export for invoice C1 is confirmed before the deadline.
+- **September 2018:** Export for invoice C2 isn't confirmed before the deadline. Therefore, VAT for this invoice is calculated at the domestic VAT rate of 18 percent (108,000 × 18 percent = 19,440 RUB).
+
+    The amount of the corresponding incoming VAT deduction for the unconfirmed export is 9,000 RUB.
+
+- **November 2018:** Facture2 is received for the remaining goods that were purchased by using invoice V1. Therefore, the incoming VAT deduction for the remaining part of invoice V1 is posted.
+
+    - 35,400 RUB, which includes 18-percent VAT (5,400 RUB) (This amount is for the goods that were purchased by using invoice C2.)
+
+The VAT declaration for the third quarter of 2018 will contain chapter 4 and chapter 6.
+
+The VAT declaration for the fourth quarter of 2018 will contain chapter 5.
+
+The following sections provide more details for this example.
+
+### Section 4 – Calculation of VAT amounts for export sales where a tax rate of 0 percent was confirmed during the period
+
+Section 4 of the VAT declaration represents amounts for export factures if a rate of 0 percent was confirmed during the reporting period. Data is grouped by VAT operation code.
+
+The following data is exported:
+
+- The VAT operation code (line 010)
+- The tax base (line 020)
+- The VAT amount deductible from the purchase of items that are used in an export that was confirmed at a rate of 0 percent (line 030)
+- Adjustment: The VAT amount deductible that was paid in previous periods when a rate of 0 percent wasn't yet confirmed (line 040)
+- Adjustment: The VAT amount restoration that was deducted in previous periods for an unconfirmed export (line 050)
+
+Corrections of amounts for the return of goods:
+
+- The VAT operation code (line 060)
+- The tax base (line 070)
 
 **Example**
 
-In example above, the following data will be present in Section 5 of VAT declaration for IV quarter 2018:
+For the previous example, the following data will be present in section 4 of the VAT declaration for the third quarter of 2018.
 
 | Requisite | Line | Value |
-|----|----|-----|
-| Year when respective export was declared | 010 | 2018 |
-| Reporting period code when respective export was declared | 020 | 23 – period code for III quarter |
+|---|---|---|
+| VAT operation code | 010 | 1011410 (per the user setup for the appropriate sales tax code) |
+| Tax base | 020| 27,000 |
+| VAT amount deductible from the purchase of items that are used in an export that was confirmed at a rate of 0 percent | 030 | 3,600 |
+
+### Section 5 – Calculation of VAT deduction amounts for the reporting period, for export sales where a tax rate of 0 percent was either confirmed or unconfirmed in previous periods
+
+Section 5 of the VAT declaration represents VAT amounts deductible in the reporting period for export sales where a rate of 0 percent was either confirmed or unconfirmed in previous periods (that is, "later" deductions of VAT amounts). Data is grouped by the period when the corresponding export was declared, and also by VAT operation code.
+
+The following data is exported:
+
+- The year when the corresponding export was declared (line 010)
+- The code for the reporting period when the corresponding export was declared (line 020)
+- The VAT operation code (line 030)
+- The tax base from the purchase of items that are used in a confirmed export (line 040)
+- The VAT amount deductible from the purchase of items that are used in a confirmed export (line 050)
+- The tax base from the purchase of items that are used in an unconfirmed export (line 060)
+- The VAT amount deductible from the purchase of items that were used in an unconfirmed export (line 070)
+
+**Example**
+
+For the earlier example, the following data will be present in section 5 of the VAT declaration for the fourth quarter of 2018.
+
+| Requisite | Line | Value |
+|---|---|---|
+| Year when the corresponding export was declared | 010 | 2018 |
+| Code for the reporting period when the corresponding export was declared | 020 | 23 (period code for the third quarter) |
 | VAT operation code | 030 | 1011410 |
-| Tax base from the purchase of items used in not confirmed export | 060 | 108 000 |
-| VAT amount deductible from the purchase of items used in not confirmed export | 070 | 5 400 |
+| The tax base from the purchase of items that are used in an unconfirmed export | 060 | 108,000 |
+| VAT amount deductible from the purchase of items that are used in an unconfirmed export | 070 | 5,400 |
 
+### Section 6 – Calculation of VAT amounts for export sales where a tax rate of 0 percent should have been confirmed during the period but wasn't confirmed
 
-### Section 6 – Calculation of VAT amounts for export sales where tax rate 0% is should have been but was not confirmed during the period
+Section 6 of the VAT declaration represents amounts for export factures if a rate of 0 percent wasn't confirmed, and if the deadline expired during the reporting period. Data is grouped by VAT operation code.
 
-This section represents amounts for export factures if 0% rate was not confirmed and deadline expired during the reporting period. Data are grouped by VAT operation code. The following data is exported:
+The following data is exported:
 
-- VAT operation code (line 010)
-- Tax base (line 020)
-- VAT amount payable calculated from the tax base for not confirmed export (line 030)
-- VAT amount deductible from the purchase of items used in not confirmed export (line 040)
+- The VAT operation code (line 010)
+- The tax base (line 020)
+- The VAT amount payable that is calculated from the tax base for an unconfirmed export (line 030)
+- The VAT amount deductible from the purchase of items that are used in an unconfirmed export (line 040)
 
-Corrections of amounts for goods return:
-- VAT operation code (line 070)
-- Tax base of goods return (line 080)
-- VAT amount of goods return which is decreasing VAT amount payable (line 090)
-- Adjustment: VAT amount from the purchase of items used in export, previously deducted and to be restored for goods return (line 100)
+Corrections of amounts for the return of goods:
 
-In example above, the following data will be present in Section 6 of VAT declaration for III quarter 2018:
+- The VAT operation code (line 070)
+- The tax base of the return of goods (line 080)
+- The VAT amount of the return of goods that is decreasing the VAT amount payable (line 090)
+- Adjustment: The VAT amount, from the purchase of items that are used in an export, that was previously deducted and must be restored for the return of goods (line 100)
+
+For the earlier example, the following data will be present in section 6 of the VAT declaration for the third quarter of 2018.
 
 | Requisite | Line | Value |
-|----|----|-----|
-| VAT operation code | 010 | 1011410 (as per the user setup for respective Sales tax code) |
-| Tax base | 020 | 108 000 |
-| VAT amount payable calculated from the tax base for not confirmed export | 030 | 19 440 |
-| VAT amount deductible from the purchase of items used in not confirmed export | 040 | 9 000 |
+|---|---|---|
+| VAT operation code | 010 | 1011410 (per the user setup for the appropriate sales tax code) |
+| Tax base | 020 | 108,000 |
+| VAT amount payable that is calculated from the tax base for the unconfirmed export | 030 | 19,440 |
+| The VAT amount deductible from the purchase of items that are used in an unconfirmed export | 040 | 9,000 |
 
 ## Additional resources
-[How to start working with VAT declaration](https://support.microsoft.com/en-us/help/4477332/rusrussiavatdeclarationinelectronicformat)
 
+[How to start working with VAT declaration](https://support.microsoft.com/help/4477332/rusrussiavatdeclarationinelectronicformat)
