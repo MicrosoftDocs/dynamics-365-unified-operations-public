@@ -96,7 +96,7 @@ A slider pane will open on the page, then use the **Export database** action:
 
 The environment will be unavailable for other servicing operations such as Sandbox Refresh or Package Deployment during this time.  The source environment will be usable from a Dynamics user perspective.  
 
-Once the export operation completes successfully, signoff on the servicing operation on your environment details page.  You can then see the asset in your Asset Library under the *Database backups* section:
+Once the export operation completes successfully, signoff on the servicing operation on your environment details page.  You can then see the asset in your Asset Library under the **Database backups** section:
 <img src="media/AssetLibrary_Backups.png" width="800px" alt="Asset library backup files"/>
 
 The .bacpac files are stored here and can be manually downloaded to your Tier1 Developer environments for import.  In the future, Microsoft will provide APIs to trigger Export action, as well as list the avaialble backup files in your asset library.  This includes the secured URL for automatically downloading a backup asset file or copying it directly to your own secure blob storage using Microsoft Azure Storage SDKs.
