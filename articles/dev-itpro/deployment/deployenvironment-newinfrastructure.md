@@ -35,6 +35,9 @@ ms.dyn365.ops.version: 8.1.1
 
 This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409). This is now a self-service operation. Refer to the following procedure to deploy these environments.
 
+> [!Note] 
+> This topic applies to deployments of Finance and Operations 8.1 and above.
+
 1. Select **Configure** on the project dashboard page.
 2. Select the **Application** and **Platform** version for the environment that you want to deploy. Versions 8.1 and above are  supported.
 3. Provide a **unique name** for the environment.
