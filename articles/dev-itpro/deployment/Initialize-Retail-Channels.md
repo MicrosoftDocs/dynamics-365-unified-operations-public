@@ -45,7 +45,7 @@ The request will be completed within five business days.
 
 ## Initialize cloud-hosted Retail channel components as part of a new environment deployment
 
-1. In LCS, on the Environment details page, select **Environment features \> Retail**.
+1. In LCS, on the environment details page, select **Environment features \> Retail**.
 2. On the Retail setup deployment page, select **Initialize**.
 3. Select the version of the Retail channel components to initialize.
 
