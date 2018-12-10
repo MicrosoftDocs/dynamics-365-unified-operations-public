@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 
-Please refer to the known issues list if your scenario is not listed here.  
+Please refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
 ## Why do I see only application version 8.1.1 and platform update 21 when I try to deploy my sandbox environment? 
 
