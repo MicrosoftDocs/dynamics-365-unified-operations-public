@@ -31,12 +31,17 @@ ms.dyn365.ops.version: 8.1
 
 ## About working clothes, and special rigging accounting
 An organization must account for each working clothes item or special rigging asset that is issued to an employee, and create a Working clothes or Special rigging issue record. You can create queries to display all assets that are on-hand for employees and print the Working clothes issue sheet (No. MB-7). You can cancel or return the Working clothes or Special rigging issue to the inventory, and calculate the net book value and residual wearing period.
+
 Working clothes and special rigging assets are regulated by their useful life cycle. This period starts when the item is written off from a warehouse and issued to an employee, and ends after a stipulated period of use. The useful lifetime is specified in months for each item. All of the data that pertains to an item is linked. This includes the identity of the employee, the useful life of the item, the date when the item is issued to the employee, and the calculated end date based on the rating of the item. When the end of the useful life approaches, the item is written off, so that it is no longer assigned to the employee.
+
 During their life cycle, the cost of these types of assets must be amortized. If the life cycle is longer than 12 months, which is the legally defined rate, the linear method of depreciation is used. If it is less than 12 months, the cost is written off when the item is issued to the employee.
+
 The Working clothes and Special rigging forms are similar to the Fixed assets page, which accounts for all issued working clothes and special rigging.
 
 It is necessary to execute the following settings for accounting working clothes item or special rigging assets.
+
 ## Set up types of issue and usage rates
+
 Use the **Types of issue and usage rates** page to define the types of issue and usage rates that determine which working clothes and special rigging are issued to employees.
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Type of rate**.
@@ -49,7 +54,9 @@ Use the **Types of issue and usage rates** page to define the types of issue and
     
     > [!NOTE]
     > <P>If this check box is selected, the rate type is used only to specify the wear or usage period of an asset.</P>
+    
 ## Set up issue and usage rates for items
+
 Use the **Issue and usage rates** page to define the types of issue and usage rates that determine the working clothes and special rigging items that are issued to employees.
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Issue and usage rates**.
@@ -89,6 +96,7 @@ Use the **Issue and usage rates** page to define the types of issue and usage ra
 12. In the **Lifetime** field, enter the useful period of the item.
 
 ## Set up the item relation to working clothes and special rigging
+
 Use this procedure to relate an item or an item group to a fixed asset (FA) group. You can use the following pagess to set up an item relation with a fixed asset group:
 
   - **Conditions for FA group definition** – Set up a period when the item relation is valid, and set up the maximum and minimum cost limits and the service life period for the item.
@@ -138,6 +146,7 @@ Use this procedure to relate an item or an item group to a fixed asset (FA) grou
 16. Click **OK** to copy the item relations with fixed asset groups.
 
 ## Set up types of work
+
 Use the **Types of works** page to define the types of work that employees perform. This information helps you determine the wear or usage period for each working clothes item, or the useful product output or mileage for each special rigging item.
 
 1.  Click **Organization administration** \> **Setup** \> **Types of works**.
@@ -145,9 +154,6 @@ Use the **Types of works** page to define the types of work that employees perfo
 2.  In the **Type of works** field, enter an identification code for the type of work.
 
 3.  In the **Name** field, enter the name of the type of work.
-
-
-
 
 ## Set up worker details for working clothes and special rigging
 Use this procedure to indicate the type of work that is performed by an employee or worker to whom a working clothes item or special rigging item is issued.
@@ -157,6 +163,7 @@ Use this procedure to indicate the type of work that is performed by an employee
 2.  In the **Title** field, select the official title of the worker.
 
 ## Register special rigging manually
+
 Use this procedure to manually register and manage special rigging items.
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Special rigging**. Click **Special rigging** to create a new special rigging item, or double-click an existing special rigging item.
@@ -184,6 +191,7 @@ Use this procedure to manually register and manage special rigging items.
 12. In the **Initial quantity** field, enter the initial quantity of the item that is used.
 
 ## Register working clothes manually
+
 Use this procedure to manually register and manage working clothes.
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Working clothes**. Click **Working clothes** to create a new working clothes item, or double-click an existing working clothes item.
@@ -210,3 +218,125 @@ Use this procedure to manually register and manage working clothes.
 
 12. In the **Initial quantity** field, enter the initial quantity of the item that is used.
 
+## Create a working clothes or special rigging issue journal 
+
+Use the **Working clothes/Special rigging/NVFA issue** form to issue an item from the warehouse to an employee. Working clothes, special rigging items, and not valuable fixed assets (NVFAs) are separate assets. When an issue journal is posted, separate cards are created in the **Working clothes**, **Special rigging**, and **Not valuable FAs** pages.
+
+When new working clothes or special rigging items are issued, the following actions occur:
+
+  - A working clothes or special rigging card is created for each journal line, and the lines are updated in the **Working clothes** or **Special rigging** page.
+
+  - The fixed asset (FA) number for the asset is generated based on the number sequence that is specified in the **Fixed asset parameters** page.
+
+  - The quantity of the working clothes or special rigging item is equal to the item quantity that is specified on the journal line. In the **Componentry** form, the quantity of the corresponding item is updated to 1 for each asset that is created.
+
+  - The value models and depreciation group are also updated in the cards. If you select the **Service life by rate** check box in the **FA value models** form, the wearing period, or usage, is determined based on the depreciation groups. If the **Service life by rate** check box is cleared, the wearing period is selected from the issued journal line. The cost is the same for all value models and is selected from the cost price of this item line.
+
+  - The status of the asset is updated to **Scheduled**. Additionally, the acquisition date is updated with the date of the journal transaction, and the acquisition amount is updated with the cost price that is posted for the item line.
+
+When a used working clothes or special rigging card is issued, if the serial number of the card for the issued item has already been filled in the inventory transaction that corresponds to the posted journal line, the following actions occur:
+
+  - The issue journal that was created earlier is searched and copied by using the serial number inventory dimension.
+
+  - The cost price is selected from the item cost price for the base value model.
+
+  - The useful life is updated for the working clothes or special rigging item.
+
+  - The residual wearing or usage period is calculated by subtracting the past lifetime from the lifetime by rate.
+
+> [!NOTE]
+> For an issue or reissue transaction, when the journal is posted, fixed asset journals are created and posted automatically. These fixed asset journals contain transactions for putting the asset into operation, depreciation transactions, and write-off transactions.
+
+
+1.  Click **Fixed assets (Russia)** \> **Journals** \> **Working clothes/Special rigging/NVFA issue**.
+
+2.  Create a new journal. In the **Date** field, select the transaction date.
+
+3.  In the **Acquisition** field, select the fixed asset journal that is used for acquisition transactions.
+
+4.  In the **Depreciation** field, select the fixed asset journal that is used for depreciation transactions.
+
+5.  In the **Warehouse** field, select the warehouse for the transaction.
+
+6.  In the **Person in charge** field, select the identification code of the employee to whom the asset is issued.
+
+7.  In the **Location** field, select the location of the asset.
+
+8.  Click **Lines**.
+
+9.  Create a new journal line. In the **Item** field, select the item code.
+
+10. In the **Quantity** field, enter the item quantity.
+
+11. In the **Type of rate** field, select the type of issue rate for the item.
+
+12. In the **Resource** field, select the resource or resource group that is assigned to the item.
+    
+    > [!NOTE]
+    > The **Lifetime** field is updated with the useful life of the item for the selected combination of the following: item number, type of rate in the priority unit of the organization unit, job title, and type of work of the employee.
+
+13. On the **Product dimensions** tab, in the **Warehouse** field, select the warehouse where the item is located.
+
+14. In the **Inventory profile** field, select the inventory profile for the item.
+
+15. In the **Batch number** field, select the batch number of the item.
+
+16. In the **Serial number** field, select the serial number of the item.
+
+17. Close the page.
+
+18. In the **Working clothes/Special rigging/NVFA issue journal** form, click **Validate** to validate the journal.
+
+19. Click **FA journals** \> **FA journal (putting into operation)** to put the asset into operation.
+    
+    –or–
+    
+    Click **FA journals** \> **FA journal (depreciation)** to depreciate the asset.
+
+20. Click **Close** to post the journal.
+
+To reverse the issue of the working clothes or special rigging item, in the **Working clothes/Special rigging/NVFA issue journal** page, click **Cancel issue**.
+
+## Return working clothes or special rigging to the warehouse 
+
+Use this procedure to return a working clothes item or special rigging item to a warehouse.
+
+1.  Click **Fixed assets (Russia)** \> **Common** \> **Working clothes**. Double-click an existing working clothes item.
+    
+    –or–
+    
+    Click **Fixed assets (Russia)** \> **Common** \> **Special rigging**. Double-click an existing special rigging item.
+
+2.  Click **Componentry** \> **Componentry**.
+
+3.  Select the fixed asset item or component that is required, and then click **Add to remains**.
+
+4.  In the **Quantity** field, enter the remaining quantity of the item.
+
+5.  Click **OK** to add the working clothes item or special rigging item to item remainders. The lines that are marked in the upper pane of the **Componentry** form are moved to the lower pane.
+
+6.  In the lower pane, click **Calculating prices** to calculate the balance value, depreciation, and depreciated cost for each item that is returned. The calculations are based on the price calculation method that is selected.
+
+7.  Close the page.
+
+8.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
+
+9.  Create a new fixed asset (FA) journal.
+
+10. In the **Name** field, select a journal name.
+
+11. Click **Lines**.
+
+12. Click **New** to open the **Add to journal** page.
+
+13. In the **Transaction date** field, select the transaction date.
+
+14. In the **Transaction type** field, select **Disposal (dismantlement)**.
+
+15. In the **FA inventory number** field, select the inventory number of the fixed asset.
+
+16. Click **OK**. The value model lines for the asset record are created in the journal.
+
+17. Click **Validate** \> **Validate** to validate the journal.
+
+18. Click **Post** \> **Post** to post the journal.
