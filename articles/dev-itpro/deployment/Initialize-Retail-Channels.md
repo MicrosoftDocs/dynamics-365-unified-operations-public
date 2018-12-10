@@ -5,7 +5,7 @@ title: Initialize cloud-hosted Retail channel components
 description: This topics explains how to initialize cloud-hosted Retail channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 12/05/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
