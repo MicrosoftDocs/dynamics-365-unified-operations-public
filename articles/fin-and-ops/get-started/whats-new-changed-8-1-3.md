@@ -50,6 +50,9 @@ For information about the bug fixes included in each of the updates that are par
 Microsoft Dynamics 365 for Finance and Operations version 8.1.3 includes Platform update 23. To learn more about Platform update 23, see 
 [What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)](whats-new-platform-update-23.md).
 
+## Extensibility enhancements
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.3](../../dev-itpro/extensibility/extensibility-changes-813.md).
+
 ## Collection letters
 You can now set up collection letters at the customer level, so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored for the customer. For more information, see [Process collection letters](../../financials/accounts-receivable/tasks/process-collection-letters.md).
 
