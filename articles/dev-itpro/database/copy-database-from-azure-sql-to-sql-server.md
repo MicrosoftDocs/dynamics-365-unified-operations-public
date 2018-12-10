@@ -99,13 +99,13 @@ The environment will be unavailable for other servicing operations such as Sandb
 Once the export operation completes successfully, signoff on the servicing operation on your environment details page.  You can then see the asset in your Asset Library under the **Database backups** section:
 <img src="media/AssetLibrary_Backups.png" width="800px" alt="Asset library backup files"/>
 
-The .bacpac files are stored here and can be manually downloaded to your Tier1 Developer environments for import.  In the future, Microsoft will provide APIs to trigger Export action, as well as list the avaialble backup files in your asset library.  This includes the secured URL for automatically downloading a backup asset file or copying it directly to your own secure blob storage using Microsoft Azure Storage SDKs.
+The .bacpac files are stored here and can be manually downloaded to your Tier 1 developer environments for import.  In the future, Microsoft will provide APIs to trigger the export action, as well as list the avaialble backup files in your asset library.  This includes the secured URL for automatically downloading a backup asset file or copying it directly to your own secure blob storage using Microsoft Azure Storage SDKs.
 
 ## Import the database
 
-When you have downloaded a .bacpac file you can begin the manual Import operation on your Tier1 environment.  When you import the database, we recommend that you follow these guidelines:
+When you have downloaded a .bacpac file, you can begin the manual import operation on your Tier 1 environment.  When you import the database, we recommend that you follow these guidelines:
 
-- Retain a copy of the existing AxDB database, so that you can revert to it later if you must.
+- Retain a copy of the existing AxDB database so that you can revert to it later, if needed.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
 To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window and run the following commands.
