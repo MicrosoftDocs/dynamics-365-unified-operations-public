@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -272,26 +272,24 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | Flight name                           | Description |
 |---------------------------------------|---------------|
 | DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job. By default, this is OFF. |
-| DMFExportToPackageForceSync           | Enables synchronuous execution of data package API export. By default, it's asynchronous. |
-| EntityNamesInPascalCaseInXMLFiles     | Eanbles old behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
+| DMFExportToPackageForceSync           | Enables synchronous execution of data package API export. By default, it's asynchronous. |
+| EntityNamesInPascalCaseInXMLFiles     | Enables behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
 | DMFByodMissingDelete                  | Enables the old behavior where under certain conditions, certain delete operations were not synced to BYOD using change tracking. |
-| DMFEnableExportFieldsMappingCache     | Enables caching logic when building target field mapping |
-| EnableAttachmentForPackageApi         | Enables attachments functionality in the package API |
-| FailErrorOnBatchForExport             | Enables fail on error at execution unit or level for export jobs |
-| IgnorePreventUploadWhenZeroRecord     | Disables 'prevent upload when zero records' functionality |
+| DMFEnableExportFieldsMappingCache     | Enables caching logic when building target field mapping. |
+| EnableAttachmentForPackageApi         | Enables attachments functionality in the package API. |
+| FailErrorOnBatchForExport             | Enables fail on error at execution unit or level for export jobs. |
+| IgnorePreventUploadWhenZeroRecord     | Disables 'prevent upload when zero records' functionality. |
 
-The steps to enable a flight in a non-production environment is as follows. Execute the following SQL command.
+The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
 INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
 
 The parameter descriptions are below.
-    - <Flight name> is the name of the flight that must be enabled or disabled.
-    - Enabled (1)
-    - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-    - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition id + 'n' to ensure it has a unique value
-- RecVersion = 1
-
-
+ - <Flight name> is the name of the flight that must be enabled or disabled.
+ - Enabled (1)
+ - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+ - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value
+    - RecVersion = 1
 
 ## Additional resources
 - [Data entities](data-entities.md)
