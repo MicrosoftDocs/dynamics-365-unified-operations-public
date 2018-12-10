@@ -38,14 +38,13 @@ The following LCS features are not yet implemented in the new deployment experie
 
 | **Feature**             | **Description**  |
 ------------------------------|---------------------------------------------------------|
-| Data movement scenarios | The self-service automation to move database bacpacs/copy databases across environments is not yet implemented. At this time, you will need to log a Support ticket to perform these operations. In the coming weeks, the following self-service feature will be enabled - Golden config bacpac move to Sandbox environment. |
+| Data movement scenarios | The self-service automation to move database bacpacs and copy databases across environments is not yet implemented. At this time, you will need to log a support ticket to perform these operations. In the future, the following self-service feature is planned to be enabled: Golden config bacpac move to sandbox environment. |
 | Monitoring page         | The LCS page that allows you to monitor the Finance and Operations environment is not yet implemented. |
-| Package deployments     | Applying binary, app, and X++ updates is not yet enabled. Currently, you can only update your environment by deleting and redeploying. Slipstreaming is enabled.     |
+| Package deployments     | Applying binary, application, and X++ updates is not yet enabled. Currently, you can only update your environment by deleting and redeploying. Slipstreaming is enabled.     |
 | LCS tiles experience    | Not yet enabled.  |
 
 ### Features not intended to be implemented
-The following LCS features are deprecated and will not be implemented in the new
-deployment experience.
+The following LCS features are deprecated and will not be implemented in the new deployment experience.
 
 | **Feature**        | **Description**   |
 |--------------------|--------|
@@ -53,17 +52,17 @@ deployment experience.
 | Service requests   | Service requests are being replaced with self-service actions. |
 
 ### Known issues in this release
-Know issues are bugs that will be addressed in the upcoming release. Every 2 weeks there is a new release of LCS.
+Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
 
--   Logs on failures are not yet available through LCS. Currently, you need to log failures as a Support incident.
+-   Logs on failures are not yet available through LCS. Currently, you need to log failures as a support incident.
 
--   LCS integration from a Dynamics 365 for Finance and Operations environment does not work. The features that are not available as a result of this include:
+-   LCS integration from a Finance and Operations environment does not work. The features that are not available as a result of this include:
 
     -   Getting started
 
-    -   Online Help enabled through BPM libraries. Online Help to docs.microsoft.com is available.
+    -   Online Help enabled through BPM libraries. Online Help from docs.microsoft.com is available.
 
-    -   Raising Support tickets from within Finance and Operations. Cloud-powered Support from LCS is enabled.
+    -   Raising support tickets from within Finance and Operations. Cloud-powered support from LCS is enabled.
 
 ## Finance and Operations 
 
@@ -74,9 +73,9 @@ The following features that have infrastructure dependencies are not yet impleme
 | **Feature**                 | **Description**                                           |
 |-----------------------------|-----------------------------------------------------------|
 | Retail                      | Retail support is not yet enabled.                        |
-| Trace Parser                | Perf Tools are not yet supported.                         |
+| Trace Parser                | Perf tools are not yet supported.                         |
 | Reporting – Print to Screen | Only print to PDF is supported at this time.              |
-| Export to word              | Export to Word functionality is not enabled at this time. |
+| Export to Word              | Export to Word functionality is not enabled at this time. |
 
 ### Finance and Operations features not intended to be implemented
 The following features are deprecated and will not be implemented in the new deployment experience.
