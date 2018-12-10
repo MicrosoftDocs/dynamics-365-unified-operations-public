@@ -42,7 +42,7 @@ To move a database, use the self-service action to export the database from Azur
 
 The high-level process for a database move includes the following phases:
 
-1. Export your source environment to the LCS Asset Library
+1. Export your source environment to the LCS Asset Library.
 2. Import the database into SQL Server.
 3. Run a SQL script to update the database.
 
@@ -54,7 +54,7 @@ The following prerequisites must be met before you can move a database:
 - Only a sandbox environment database can be exported. If you must copy the production environment, you must first refresh that environment to the sandbox environment. 
 
     > [!NOTE]
-    > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2+) or higher environment connected to a SQL Azure database.
+    > In this topic, the term *sandbox* is used to refer to a Standard or Premier Acceptance Testing (Tier 2+) or higher environment connected to a SQL Azure database.
 
 - The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
 
@@ -87,28 +87,28 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Self-service database export
 
-From your sanbox environment details page, click the **Maintain** menu and then select the **Move database** option.  
+From your sandbox environment details page, click the **Maintain** menu and then select **Move database**.  
 <img src="media/DBMovement_Menu.png" width="400px" alt="Move database menu" />
 
-A slider pane will open on the page, then use the **Export database** action:
+A slider pane will open on the page where you can use the **Export database** action.
 <br/>
 <img src="media/Export_Menu.png" width="400px" alt="Export database menu"/>
 
 The environment will be unavailable for other servicing operations such as Sandbox Refresh or Package Deployment during this time.  The source environment will be usable from a Dynamics user perspective.  
 
-Once the export operation completes successfully, signoff on the servicing operation on your environment details page.  You can then see the asset in your Asset Library under the **Database backups** section:
+After the export operation completes successfully, sign off on the servicing operation on your environment details page. You can then see the asset in your Asset Library in the **Database backups** section.
 <img src="media/AssetLibrary_Backups.png" width="800px" alt="Asset library backup files"/>
 
-The .bacpac files are stored here and can be manually downloaded to your Tier 1 developer environments for import.  In the future, Microsoft will provide APIs to trigger the export action, as well as list the avaialble backup files in your asset library.  This includes the secured URL for automatically downloading a backup asset file or copying it directly to your own secure blob storage using Microsoft Azure Storage SDKs.
+The .bacpac files are stored here and can be manually downloaded to your Tier 1 developer environments for import. In the future, Microsoft will provide APIs to trigger the export action, as well as list the available backup files in your asset library. This includes the secured URL for automatically downloading a backup asset file or copying it directly to your own secure blob storage using Microsoft Azure Storage SDKs.
 
 ## Import the database
 
-When you have downloaded a .bacpac file, you can begin the manual import operation on your Tier 1 environment.  When you import the database, we recommend that you follow these guidelines:
+After you have downloaded a .bacpac file, you can begin the manual import operation on your Tier 1 environment. When you import the database, we recommend that you follow these guidelines:
 
 - Retain a copy of the existing AxDB database so that you can revert to it later, if needed.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
-To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window and run the following commands.
+To help ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window and run the following commands.
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
@@ -201,7 +201,7 @@ If change tracking was enabled in the source database, ensure to enable change t
 ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
 ```
 
-To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
+To ensure that the current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity, as this is needed to trigger the refresh of store procedure.
 
 ## Start to use the new database
 
