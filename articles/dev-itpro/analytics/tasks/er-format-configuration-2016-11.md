@@ -100,7 +100,7 @@ The following steps explain how a user in the System Administrator or Electronic
 47. Click **OK**.
 48. In the tree, select **Xml\Message\Payments\Item\Vendor**.
 49. Click **Copy**.
-50. In the tree, select 'Xml\Message\Payments\Item'.
+50. In the tree, select **Xml\Message\Payments\Item**.
 51. Click **Paste**.
 52. In the **Name** field, type **Payer**.
 53. In the tree, select **Xml\Message\Payments\Item**.
@@ -118,49 +118,47 @@ The following steps explain how a user in the System Administrator or Electronic
 65. Click **OK**.
 
 ## Prepare format components for mapping to data model elements
-1. In the tree, select 'Xml\Message\ProcessingDate'.
-2. Click Add to open the drop dialog.
-3. In the tree, select 'Text\DateTime'.
-4. In the Format field, type 'yyyy-MM-dd'.
-    * yyyy-MM-dd  
-5. Click OK.
-6. In the tree, select 'Xml\Message\Payments\Item\TransDate'.
-7. Click Add DateTime.
-8. In the Format field, type 'yyyy-MM-dd'.
-    * yyyy-MM-dd  
-9. In the DateTime type field, select 'Date'.
-10. Click OK.
-11. In the tree, select 'Xml\Message\MessageId'.
-12. Click Add to open the drop dialog.
-13. In the tree, select 'Text\String'.
-14. Click OK.
-15. In the tree, select 'Xml\Message\Payments\Item\Vendor\Name'.
-16. Click Add String.
-17. Click OK.
-18. In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber'.
-19. Click Add String.
-20. Click OK.
-21. In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\AccountNumber'.
-22. Click Add String.
-23. Click OK.
-24. In the tree, select 'Xml\Message\Payments\Item\Payer\Name'.
-25. Click Add String.
-26. Click OK.
-27. In the tree, select 'Xml\Message\Payments\Item\Payer\Bank\RoutingNumber'.
-28. Click Add String.
-29. Click OK.
-30. In the tree, select 'Xml\Message\Payments\Item\Payer\Bank\AccountNumber'.
-31. Click Add String.
-32. Click OK.
-33. In the tree, select 'Xml\Message\Payments\Item\Currency'.
-34. Click Add String.
-35. Click OK.
-36. In the tree, select 'Xml\Message\Payments\Item\Description'.
-37. Click Add String.
-38. Click OK.
-39. In the tree, select 'Xml\Message\Payments\Item\Amount'.
-40. Click Add String.
-41. Click OK.
-42. Click Save.
+1. In the tree, select **Xml\Message\ProcessingDate**.
+2. Click **Add** to open the drop dialog.
+3. In the tree, select **Text\DateTime**.
+4. In the **Format** field, type **yyyy-MM-dd**.
+5. Click **OK**.
+6. In the tree, select **Xml\Message\Payments\Item\TransDate**.
+7. Click **Add DateTime**.
+8. In the **Format** field, type **yyyy-MM-dd**.
+9. In the **DateTime** type field, select **Date**.
+10. Click **OK**.
+11. In the tree, select **Xml\Message\MessageId**.
+12. Click **Add** to open the drop dialog.
+13. In the tree, select **Text\String**.
+14. Click **OK**.
+15. In the tree, select **Xml\Message\Payments\Item\Vendor\Name**.
+16. Click **Add String**.
+17. Click **OK**.
+18. In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.
+19. Click **Add String**.
+20. Click **OK**.
+21. In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.
+22. Click **Add String**.
+23. Click **OK**.
+24. In the tree, select **Xml\Message\Payments\Item\Payer\Name**.
+25. Click **Add String**.
+26. Click **OK**.
+27. In the tree, select **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.
+28. Click **Add String**.
+29. Click **OK**.
+30. In the tree, select **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.
+31. Click **Add String**.
+32. Click **OK**.
+33. In the tree, select **Xml\Message\Payments\Item\Currency**.
+34. Click **Add String**.
+35. Click **OK**.
+36. In the tree, select **Xml\Message\Payments\Item\Description**.
+37. Click **Add String**.
+38. Click **OK**.
+39. In the tree, select **Xml\Message\Payments\Item\Amount**.
+40. Click **Add String**.
+41. Click **OK**.
+42. Click **Save**.
 43. Close the page.
 
