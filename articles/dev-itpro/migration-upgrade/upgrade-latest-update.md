@@ -203,11 +203,12 @@ When you apply a new package to the environment, the process is the same as the 
 
 If package deployment fails, you can use the **Rollback** button to reverse it. Note that this button is **not** the same as the **Rollback** option on the **Upgrade** menu.
 
-**Upgrade Financial Reporting Binaries**
-Database Refresh and other operations are blocked if your Sandbox and Production environments aren't on the same version of Financial Reporter.  During upgrade, it is an opportune time to uptake the latest binaries for Financial Reporting.  
-* Visit the Asset Library in your implementation project, and then click *Software deployable package*.
-* Click the *Import* button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
-* Apply this package to your Upgrade-in-progress enviroment.
+#### Upgrade Financial Reporting binaries
+Database Refresh and other operations are blocked if your sandbox and production environments aren't on the same version of Financial Reporter.  During upgrade, it is an opportune time to uptake the latest binaries for Financial Reporting.  
+
+* Visit the Asset Library in your implementation project, and then click **Software deployable package**.
+* Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
+* Apply this package to your upgrade-in-progress enviroment.
 
 Deployment of packages typically lasts about one hour.
 
