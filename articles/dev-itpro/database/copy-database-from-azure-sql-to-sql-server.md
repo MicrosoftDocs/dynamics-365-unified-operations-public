@@ -91,7 +91,7 @@ From your sanbox environment details page, click on the **Maintain** menu and th
 <img src="media/DBMovement_Menu.png" width="400px" alt="Move database menu" />
 
 A slider will open on the page, use the **Export database** action:
-<img src="media/Export_Menu.png" width="200px" alt="Export database menu"/>
+<img src="media/Export_Menu.png" width="400px" alt="Export database menu"/>
 
 The environment will be unavailable for other servicing operations such as Sandbo Refresh or Package Deployment during this time.  The source environment will be usable from a Dynamics user perspective.  
 
