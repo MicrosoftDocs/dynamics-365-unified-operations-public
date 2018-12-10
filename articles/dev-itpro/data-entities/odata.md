@@ -207,7 +207,12 @@ public int CalculateMaintenanceDuration()
 
 In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.
 
-[![Exposed method in the OData $metadata](./media/1_odata.png)](./media/1_odata.png)
+```
+<Action Name="CalcMaintenanceDuration" m:IsAlwaysBindable="true" IsBindable="true" ReturnType="Edm.Int32">
+    <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
+</Action>
+
+```
 
 The following example of an OData action takes in a parameter and returns a list.
 
