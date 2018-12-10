@@ -88,7 +88,7 @@ The values on the following pages are either environment-specific or encrypted i
 ## Self-service database export
 
 From your sanbox environment details page, click on the **Maintain** menu and then select the **Move database** option.  
-<img src="media/MoveDatabase_Menu.png" width="500px" alt="Move database menu" />
+<img src="media/DBMovement_Menu.png" width="500px" alt="Move database menu" />
 
 A slider will open on the page, use the **Export database** action:
 <img src="media/Export_Menu.png" width="500px" alt="Export database menu"/>
