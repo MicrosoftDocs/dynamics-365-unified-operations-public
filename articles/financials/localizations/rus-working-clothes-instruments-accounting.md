@@ -34,6 +34,7 @@ An organization must account for each working clothes item or special rigging as
 Working clothes and special rigging assets are regulated by their useful life cycle. This period starts when the item is written off from a warehouse and issued to an employee, and ends after a stipulated period of use. The useful lifetime is specified in months for each item. All of the data that pertains to an item is linked. This includes the identity of the employee, the useful life of the item, the date when the item is issued to the employee, and the calculated end date based on the rating of the item. When the end of the useful life approaches, the item is written off, so that it is no longer assigned to the employee.
 During their life cycle, the cost of these types of assets must be amortized. If the life cycle is longer than 12 months, which is the legally defined rate, the linear method of depreciation is used. If it is less than 12 months, the cost is written off when the item is issued to the employee.
 The Working clothes and Special rigging forms are similar to the Fixed assets page, which accounts for all issued working clothes and special rigging.
+
 It is necessary to execute the following settings for accounting working clothes item or special rigging assets.
 ## Set up issue and usage rates for items
 Use the **Issue and usage rates** page to define the types of issue and usage rates that determine the working clothes and special rigging items that are issued to employees.
