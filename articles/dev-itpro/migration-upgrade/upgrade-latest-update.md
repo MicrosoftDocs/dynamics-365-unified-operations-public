@@ -60,7 +60,7 @@ This scenario is required before you can use scenario 3. A developer must comple
 
 In version 8.0 and later, customization can't be done by overlayering Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
-### Scenario 3: Upgrade to the latest application release (Public Preview)
+### Scenario 3: Upgrade to the latest application release
 
 Use this scenario to move to the latest release of Finance and Operations.
 
