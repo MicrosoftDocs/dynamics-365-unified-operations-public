@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment FAQ
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic provides answers to some frequently asked questions about deployment. 
 author: sarvanisathish
 manager: AnnBe
 ms.date: 12/07/2018
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 
-Please refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
+This topic provides answers to some frequently asked questions about deployment. Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
-## Why do I see only application version 8.1.1 and platform update 21 when I try to deploy my sandbox environment? 
+## Why do I see only application version 8.1.1 and Platform update 21 when I try to deploy my sandbox environment? 
 
-The deployment preview launches on application version 8.1.1 with platform update 21.  
+The deployment preview launches on application version 8.1.1 with Platform update 21.  
 
 ## My development environment is on application version 8.1. Am I still able to move my customization to the sandbox environment? 
 
@@ -43,7 +43,7 @@ Yes. Application version 8.1.1 is fully backward compatible with application 8.1
 
 ## What is the minimum supported application and platform version? 
 
-Application version 8.1 with platform update 20 is the minimum supported version. 
+Application version 8.1 with Platform update 20 is the minimum supported version. 
 
 ## What do I do if deployment fails? 
 
