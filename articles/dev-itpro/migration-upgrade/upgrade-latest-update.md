@@ -208,7 +208,7 @@ Database Refresh and other operations are blocked if your sandbox and production
 
 * Visit the Asset Library in your implementation project, and then click **Software deployable package**.
 * Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
-* Apply this package to your upgrade-in-progress enviroment.
+* Apply this package to your upgrade-in-progress environment.
 
 Deployment of packages typically lasts about one hour.
 
@@ -249,7 +249,7 @@ You can upgrade additional sandbox environments in this same way. You also can d
 
 **Prepare operation could not start. Microsoft support has been notified. If the issue persists, please contact support with this ID.**
 
-This known issue involves environment certificates on the LCS back end. If if affect you, submit a support ticket, and include the activity ID from the error message. Microsoft will work to resolve the issue. Microsoft is compiling a list of affect environments and intends to proactively fix this issue in the future.
+This known issue involves environment certificates on the LCS back end. If it affects you, submit a support ticket, and include the activity ID from the error message. Microsoft will work to resolve the issue. Microsoft is compiling a list of affect environments and intends to proactively fix this issue in the future.
 
 **I want to cancel the upgrade and try again later.**
 
