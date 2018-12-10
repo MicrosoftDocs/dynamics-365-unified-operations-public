@@ -2,7 +2,7 @@
 # required metadata
 
 title: Known issues with the new deployment experience
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic explains how to view the known issues that you might experience during deployment.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 12/07/2018
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 
+This topic explains how to view the known issues that you might experience during deployment.
+
 ## Lifecycle Services (LCS)
 
 ### Features not yet implemented
@@ -38,7 +40,7 @@ The following LCS features are not yet implemented in the new deployment experie
 
 | **Feature**             | **Description**  |
 ------------------------------|---------------------------------------------------------|
-| Data movement scenarios | The self-service automation to move database bacpacs and copy databases across environments is not yet implemented. At this time, you will need to log a support ticket to perform these operations. In the future, the following self-service feature is planned to be enabled: Golden config bacpac move to sandbox environment. |
+| Data movement scenarios | The self-service automation to move database bacpacs and copy databases across environments is not yet implemented. At this time, you will need to log a support ticket to perform these operations. The following self-service feature is planned for a future release: Golden config bacpac move to sandbox environment. |
 | Monitoring page         | The LCS page that allows you to monitor the Finance and Operations environment is not yet implemented. |
 | Package deployments     | Applying binary, application, and X++ updates is not yet enabled. Currently, you can only update your environment by deleting and redeploying. Slipstreaming is enabled.     |
 | LCS tiles experience    | Not yet enabled.  |
@@ -77,7 +79,7 @@ The following features that have infrastructure dependencies are not yet impleme
 | Reporting – Print to Screen | Only print to PDF is supported at this time.              |
 | Export to Word              | Export to Word functionality is not enabled at this time. |
 
-### Finance and Operations features not intended to be implemented
+### Features not intended to be implemented
 The following features are deprecated and will not be implemented in the new deployment experience.
 
 | **Feature**  | **Description**                     |
