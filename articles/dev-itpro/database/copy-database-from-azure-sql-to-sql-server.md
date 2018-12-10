@@ -87,14 +87,14 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Self-service database export
 
-From your sanbox environment details page, click on the **Maintain** menu and then select the **Move database** option.  
+From your sanbox environment details page, click the **Maintain** menu and then select the **Move database** option.  
 <img src="media/DBMovement_Menu.png" width="400px" alt="Move database menu" />
 
-A slider will open on the page, use the **Export database** action:
+A slider pane will open on the page, then use the **Export database** action:
 <br/>
 <img src="media/Export_Menu.png" width="400px" alt="Export database menu"/>
 
-The environment will be unavailable for other servicing operations such as Sandbo Refresh or Package Deployment during this time.  The source environment will be usable from a Dynamics user perspective.  
+The environment will be unavailable for other servicing operations such as Sandbox Refresh or Package Deployment during this time.  The source environment will be usable from a Dynamics user perspective.  
 
 Once the export operation completes successfully, signoff on the servicing operation on your environment details page.  You can then see the asset in your Asset Library under the *Database backups* section:
 <img src="media/AssetLibrary_Backups.png" width="800px" alt="Asset library backup files"/>
