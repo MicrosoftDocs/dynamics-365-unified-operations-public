@@ -36,6 +36,19 @@ During their life cycle, the cost of these types of assets must be amortized. If
 The Working clothes and Special rigging forms are similar to the Fixed assets page, which accounts for all issued working clothes and special rigging.
 
 It is necessary to execute the following settings for accounting working clothes item or special rigging assets.
+## Set up types of issue and usage rates
+Use the **Types of issue and usage rates** page to define the types of issue and usage rates that determine which working clothes and special rigging are issued to employees.
+
+1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Type of rate**.
+
+2.  In the **Type of rate** field, enter the identification code for the rate type.
+
+3.  In the **Description** field, enter a short description for the rate type.
+
+4.  Select the **Over-rate** check box to indicate that quantity control of the item issue by the defined rate is not required for the specified rate type.
+    
+    > [!NOTE]
+    > <P>If this check box is selected, the rate type is used only to specify the wear or usage period of an asset.</P>
 ## Set up issue and usage rates for items
 Use the **Issue and usage rates** page to define the types of issue and usage rates that determine the working clothes and special rigging items that are issued to employees.
 
@@ -76,7 +89,7 @@ Use the **Issue and usage rates** page to define the types of issue and usage ra
 12. In the **Lifetime** field, enter the useful period of the item.
 
 ## Set up the item relation to working clothes and special rigging
-Use this procedure to relate an item or an item group to a fixed asset (FA) group. You can use the following forms to set up an item relation with a fixed asset group:
+Use this procedure to relate an item or an item group to a fixed asset (FA) group. You can use the following pagess to set up an item relation with a fixed asset group:
 
   - **Conditions for FA group definition** – Set up a period when the item relation is valid, and set up the maximum and minimum cost limits and the service life period for the item.
 
@@ -133,19 +146,7 @@ Use the **Types of works** page to define the types of work that employees perfo
 
 3.  In the **Name** field, enter the name of the type of work.
 
-## Set up types of issue and usage rates
-Use the **Types of issue and usage rates** form to define the types of issue and usage rates that determine which working clothes and special rigging are issued to employees.
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Type of rate**.
-
-2.  In the **Type of rate** field, enter the identification code for the rate type.
-
-3.  In the **Description** field, enter a short description for the rate type.
-
-4.  Select the **Over-rate** check box to indicate that quantity control of the item issue by the defined rate is not required for the specified rate type.
-    
-    > [!NOTE]
-    > <P>If this check box is selected, the rate type is used only to specify the wear or usage period of an asset.</P>
 
 
 ## Set up worker details for working clothes and special rigging
