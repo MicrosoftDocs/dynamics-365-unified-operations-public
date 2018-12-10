@@ -55,7 +55,7 @@ You can enable change tracking when you publish one or more entities to a data s
     | Enable Custom query  | Select a set of custom fields from any tables that must trigger a change in entity. |
 
     > [!NOTE]
-    > If a change is triggered, the entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.
+    > If a change is triggered, the change is tracked on the entire record and not at the field level. The entire entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.
 
 ## Custom query for change tracking
 The following example shows how to add a static method to an entity. You must make sure that the method returns a query, and that the root node is the same as the entity. For example, for the Customer entity, the root node is custTable, and the change tracking query for it is also custtable.
