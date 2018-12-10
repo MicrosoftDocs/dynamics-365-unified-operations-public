@@ -59,7 +59,7 @@ To perform Analyze activities before you purchase Finance and Operations, you ne
 
 If you have an existing LCS project for AX 2012, you must still sign up for an additional LCS project for Finance and Operations.
 
-For information about how to get an LCS trial project for customers, go to https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
+For information about how to get an LCS trial project for customers, go to https://go.microsoft.com/fwlink/?LinkId=2017742&clcid=0x409.
 
 For information about how to get an LCS partner project, go to https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
 
