@@ -53,11 +53,11 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
     | File type | Select **User Interface**. |
     | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
-    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business needs multiple target languages translated for the same source language, you can select all target languages in one request. Make sure you actually select the target languages using the checkbox next to the language name.  This saves your time to submit multiple translation requests individually and you can also track all the target languages translation status in one request.  The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. Therefore, Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
+    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all of the target languages in one request. Select the target languages using the check box next to the language name. This saves time and allows you to track the status of all the target language translations in one request. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. This means that Microsoft-trained machine translation (MT) systems are available in those languages and the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
 
 ![Selecting languages](./media/dts-target-lang.png "Selecting languages")
 
-3. Select **Create**. Verify the request details were selected correctly and click Yes to continue. 
+3. Select **Create**. Verify the request details were selected correctly and then click **Yes** to continue. 
 
 
     > [!NOTE]
@@ -89,7 +89,7 @@ However, if neither the source language nor the target language is a Microsoft G
 
 After you've finished uploading files, select **Submit** to start the translation process. 
 
-After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status is displayed in a seperate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.  
+After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status displayed n a seperate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.  
 
 To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information.
 
@@ -113,18 +113,18 @@ For UI translation requests, two types of output file are available after the tr
 + **For translation review** – Download the XLIFF file to review and, as required, edit the translations. The file shows the source and target languages side by side.
 + **Translated native format** – Download this file if you don't intend to review or edit the translations. *Native format* means that the file is in the same format as the source file that you submitted.
 
-Simply click an individual file link or the download links to download a single file, all files for one target language or all files for all target languages in one zip for convenience. A download prompt will show up. 
+Click an individual file link or the download links to download a single file, all files for one target language, or all files for all target languages in one zip for convenience.  
 
 ### Review and edit the translations in the XLIFF file
 We recommend that you review and edit the translations in the XLIFF file that DTS provides, to verify that the translation output meets your product's quality standards. For more information about how to edit the XLIFF file, see [Editing an XLIFF translation memory](use-translation-service-tm.md#editing-an-xliff-translation-memory).
 
 ### Regenerate output files
-When you've finished reviewing and editing the translation files in XLIFF, you now must regenerate the translated native format files. You can then apply the latest translations (that is, your edited versions of the translations) to the UI files in the target language. Regenerate can be applied to any number of files from the output files set per target language.  
+When you've finished reviewing and editing the translation files in XLIFF, you must regenerate the translated native format files next. You can then apply the latest translations (that is, your edited versions of the translations) to the UI files in the target language. You can regenerate any number of files from the output files set per target language.  
 
-1. Click the **Regenerate** icon next to the target language section. It brings in the **File upload** slider.
-2. Zip the edited XLIFF files, and then select **Upload**. Don't change the XLIFF file name that DTS originally provided. 
-3. You're prompted to confirm the upload action. 
-4. The **Request output** tab promptly refreshes the content. Expand the target language node you just regenerated to verify the Modified timestamp. Download the updated output files. 
+1. Click the **Regenerate** icon next to the target language section. The **File upload** slider will open.
+2. Zip the edited XLIFF files, and then click **Upload**. Don't change the XLIFF file name that DTS originally provided. 
+3. In the prompt, confirm the upload. 
+4. The **Request output** tab promptly refreshes the content. Expand the target language node you just regenerated to verify the **Modified** timestamp and then download the updated output files. 
 
 ![Regenerated output](./media/dts-regenerate-output.png "Regenerated output")
 
