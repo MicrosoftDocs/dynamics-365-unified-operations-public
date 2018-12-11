@@ -51,9 +51,10 @@ Finance and Operations customers who are provisioned with an LCS project on or a
 
 ## Release build version
 
-| Application | 8.1.1     |
+|    |   |
 |-------------|-----------|
-| Platform    | Update 21 |
+| **Application** | 8.1.1     |
+| **Platform**   | Update 21 |
 
 ## Customizations
 
