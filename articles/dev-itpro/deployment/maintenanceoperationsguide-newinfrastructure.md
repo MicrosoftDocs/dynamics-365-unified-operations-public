@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment on the new infrastructure stack.
 author: manado
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed on the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409).
+This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed on the [modern infrastructure stack](infrastructure-stack.md).
 
 > [!Note] 
 > This topic applies to deployments of Finance and Operations 8.1 and above.
@@ -63,10 +63,10 @@ To enable/disable maintenance mode, create a support ticket and provide the foll
 - **Start time for disabling maintenance mode**: Provide a start time in UTC for when you want to disable maintenance mode.
 
 > [!NOTE]
-> This flow will be self-service through Lifecycle Services (LCS) in the early 2019.
+> This flow will be self-service through Lifecycle Services (LCS) in early 2019.
 
 # Access database
-Environments deployed on the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409) have Remote Desktop Access turned off. As part of implementing Finance and Operations, if you need to connect to the database on your Standard Acceptance Test environments for troubleshooting, create a support ticket and provide the following details:
+Environments deployed on the [modern infrastructure stack](infrastructure-stack.md) have Remote Desktop Access turned off. As part of implementing Finance and Operations, if you need to connect to the database on your Standard Acceptance Test environments for troubleshooting, create a support ticket and provide the following details:
 
 - **Project ID**: ID of the LCS project.
 - **Environment ID**: GUID available in the URL (EnvironmentID) for the environment.
