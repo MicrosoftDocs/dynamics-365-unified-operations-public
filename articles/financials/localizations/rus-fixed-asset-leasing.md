@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# (RUS) Create a fixed asset lease and a return from lease transaction 
+# Create a fixed asset lease and a return from lease transaction (RUS) 
 [!include [banner](../includes/banner.md)]
 
 
