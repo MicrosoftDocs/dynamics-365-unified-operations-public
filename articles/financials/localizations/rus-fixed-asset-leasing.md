@@ -38,7 +38,7 @@ You can register the lease of an asset and the subsequent return of the leased a
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 
-2.  On the **Overview** tab, select the fixed asset to be leased, and then click **History** \> **Lease** to open the **FA leased** form.
+2.  On the **Overview** tab, select the fixed asset to be leased, and then click **History** \> **Lease** to open the **FA leased** page.
 
 3.  Create a new line.
 
@@ -64,11 +64,11 @@ You can register the lease of an asset and the subsequent return of the leased a
 
 14. Click **New** to open the **Add to journal** page.
 
-15. In the **Transaction date** field, select the date of the transaction. You must specify a date that is the same as or later than the date specified on the **FA on loan** form.
+15. In the **Transaction date** field, select the date of the transaction. You must specify a date that is the same as or later than the date specified on the **FA leased** page.
 
 16. In the **Transaction type** field, select **Lease**.
 
-17. In the **FA number** field, select the leased fixed asset number.
+17. In the **FA inventory number** field, select the leased fixed asset number.
 
 18. In the **Value model** field, select a fixed asset value model.
 
@@ -90,7 +90,7 @@ You can register the lease of an asset and the subsequent return of the leased a
     
 
     > [!NOTE]
-    > <P>The status of the fixed asset changes from <STRONG>Exploitation</STRONG> to <STRONG>Lending</STRONG> in the <STRONG>Fixed assets</STRONG> form.</P>
+    > <P>The status of the fixed asset changes from <STRONG>In operation</STRONG> to <STRONG>Lending</STRONG> in the <STRONG>Fixed assets</STRONG> page.</P>
 
 
 ## Register the return of a leased fixed asset
@@ -99,7 +99,7 @@ You can register the return of a leased fixed asset in the same way that you reg
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 
-2.  On the **Overview** tab, select the leased fixed asset to be returned, and then click **History** \> **Lease** to open the **FA leased** form.
+2.  On the **Overview** tab, select the leased fixed asset to be returned, and then click **History** \> **Lease** to open the **FA leased** page.
 
 3.  Create a new line.
 
@@ -119,7 +119,7 @@ You can register the return of a leased fixed asset in the same way that you reg
     
 
     > [!NOTE]
-    > <P>The status of the fixed asset changes from <STRONG>Lending</STRONG> to <STRONG>Exploitation</STRONG> in the <STRONG>Fixed assets</STRONG> form.</P>
+    > <P>The status of the fixed asset changes from <STRONG>Lending</STRONG> to <STRONG>In operation</STRONG> in the <STRONG>Fixed assets</STRONG> form.</P>
 
 
 
