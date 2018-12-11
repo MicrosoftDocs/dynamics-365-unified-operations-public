@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update an environment
-description: This topic explains how to update an environment on the new infrastructure stack.
+description: This topic explains how to update an environment on the modern infrastructure stack.
 author: manado
 manager: AnnBe
 ms.date: 12/10/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks through the process of applying updates to a Dynamics 365 for Finance and Operations environment deployed on the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409).
+This topic walks through the process of applying updates to a Dynamics 365 for Finance and Operations environment deployed on the [modern infrastructure stack](infrastructure-stack.md).
 
 > [!IMPORTANT]
 > With the next generation infrastructure, updates are applied differently from the current flow. **Whatever is supplied in the package is applied to the environment and it OVERWRITES what is already present in the environment**. This means that you **must** create a single deployable package that contains all customizations and ISV solutions from your build environment. If there is a difference in the list of models between what is on the environment and what is in the package, you will be warned before applying the update. For details about creating a single package, see [Manage third-party models and runtime packages by using source control](../dev-tools/manage-runtime-packages.md).
@@ -42,7 +42,7 @@ This topic walks through the process of applying updates to a Dynamics 365 for F
 > This topic applies to deployments of Finance and Operations 8.1 and later.
 
 # Supported package types
-Because environments deployed on the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409) will be on 8.1 and later, we support the following package types:
+Because environments deployed on the [modern infrastructure stack](infrastructure-stack.md) will be on 8.1 and later, we support the following package types:
 
 - **AOT deployable package** - A deployable package that is generated from application metadata and source code. This deployable package is created in a **build** environment.
 - **Binary update package** - A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft.
@@ -77,7 +77,7 @@ After you have this package in the project asset library, use the following step
 7. You can also download the logs from the environment history page.
 
 > [!IMPORTANT]
-> For environments deployed in the new infrastructure stack, if servicing fails, the environment is automatically rolled back. To understand why the operation failed, you can download the logs from the environment history page as mentioned in the steps above.
+> For environments deployed in the modern infrastructure stack, if servicing fails, the environment is automatically rolled back. To understand why the operation failed, you can download the logs from the environment history page as mentioned in the steps above.
 
 ## Production environments
 Applying updates to production has not been enabled yet. To improve the reliability of updates being applied to production, when this flow is enabled you have the option to move either the latest copy or a designated snapshot of the sandbox environment to production. There is no way to select an update and move that to production. This ensures a more reliable experience as the update will not be applied again; rather an image of the sandbox will be promoted to production.
