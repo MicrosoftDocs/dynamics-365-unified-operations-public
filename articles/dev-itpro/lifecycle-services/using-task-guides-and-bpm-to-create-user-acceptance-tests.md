@@ -97,12 +97,22 @@ If you have saved your recordings (AXTR files) to disk, follow these steps to up
 2. Go to **Settings** > **Task recorder**.
 3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
 
+### Guidelines for recording test cases
+
+Follow these guidelines when authoring and recording your test cases, especially if you are planning to automate test execution.
+1. The process and tools described in this article apply to business process acceptance tests, it is not meant to replace component and unit testing that is typically owned by developers.
+2. Author a limited number of test cases that, when combined, cover complete end to end processes.
+3. Focus on business processes that have been customized.
+4. An individual test case (recording) should cover 1 or 2 business tasks only, typically executed by one persona. This will simplify maintenance of task recordings. Do not combine a complete end to end business process such as "Procure to Pay" or "Order to Cash" into one large task recording. For example, instead of having RFQ -> Purchase Order -> Product Receipt -> Vendor Invoice -> Vendor Payment as one test case, divide the process into 3 or 4 test cases. You will have the opportunity to combine these tests into an ordered test suite later.
+5. A test case should have at least one validation. Try to validate critical fields that cover the impact of other fields. For example: Validation of totals on sales or purchase orders cover the unit price/quantity/discount/tax ...etc.
+6.	Avoid printing of a report in a test case. If a test case needs to print a report, it should be selected on screen.
+7.	80+% of test cases should be of transactions or source documents. Master data should be limited to up to 20% of test cases only.
+
 ## Synchronize and configure your test plan in Azure DevOps
 
 An acceptance test library is your starting point. It typically contains all test cases (task recordings) of a particular application organized by business process. During a particular test pass, you usually do not need to execute all test cases. What test cases you select depends on the phase of your implementation or the nature of the update you are planning to apply to your production environment. Azure DevOps enables you to organize your test cases in test plans and test suites. A test plan contains one or more test suites (A subset of your test library); test cases can belong to more than one test suite.
 
 Once you have selected your acceptance testing BPM library, synchronize it with Azure DevOps and create your test plan and test suites.
-
 
 ### Sync with Azure DevOps
 Synchronize your BPM library with your Azure DevOps project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops). 
@@ -128,10 +138,10 @@ You can also start Azure DevOps synchronization from the toolbar in a BPM librar
 In addition to the test steps, the task recording XML file is attached to the Azure DevOps test case. This file will be needed if you want to automate test execution. 
 
 ### Create a test suite in Azure DevOps
-Next, you will need to create a test suite in Azure DevOps. This will allow you to run a suite of tests so you can easily manage, investigate, and track the results. 
+Next, you will need to create a test plan and test suite in Azure DevOps. This will allow you to execute an ordered suite of test cases and easily manage, investigate, and track the results. 
 
 1. Sign in to Azure DevOps and select the project and test plan that you want to test in. 
-2. On the toolbar, select **Test**.
+2. On the toolbar, select **Test** > **Test Plans**.
 3. In the left pane, select **+**, and then select **Static suite**. 
 4. Enter a name for the suite.
 5. Click **Add existing** and query the tag **LCS:Test Cases**.
@@ -139,12 +149,12 @@ Next, you will need to create a test suite in Azure DevOps. This will allow you 
 
 ![Add test cases](./media/add_test_cases.PNG "Add test cases")
  
-7. Select the test case to view details and the attached XML file, and to create a work item.   
+7. Select the test case to view details and the attached XML file.   
 
 ![Test case details](./media/test_case_details.png.PNG "Test case details")
 
  >[!NOTE]
- > This example shows how to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
+ > This example shows how to create a comprehensive acceptance test suite with all test cases added. Instead you should create various test suites under the same test plan and use custom queries to add specific test cases to a test suite. A test case can belong to more than one test suite.
 
 ## Execute your tests
 
