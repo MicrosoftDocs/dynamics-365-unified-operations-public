@@ -895,6 +895,8 @@
       href: deployment/apply-deployable-package-system.md
     - name: Apply updates and extensions to cloud hosted retail channel components
       href: deployment/Update-retail-channel.md  
+    - name: Initialize cloud-hosted Retail channel components
+      href: deployment/Initialize-Retail-Channels.md  
   - name: On-premises deployment
     href: deployment/on-premises-deployment-landing-page.md
     items:

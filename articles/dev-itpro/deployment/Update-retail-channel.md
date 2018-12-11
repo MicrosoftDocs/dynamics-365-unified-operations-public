@@ -5,7 +5,7 @@ title: Apply updates and extensions to cloud hosted Retail channel components
 description: This topic shows how to apply updates and extensions to cloud-hosted Retail channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 12/05/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ Updates to Retail channel components are cumulative. This means that any update 
 
 ## Prerequisites
 
-Before you proceed, you must first apply updates and extensions (if applicable) to the environment. For more information, see [Apply updates to cloud environments](/../apply-deployable-package-system).
+Before you proceed, you must first apply updates and extensions (if applicable) to the environment. For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md).
 
 To update cloud-hosted Retail channel components, do the following:
 
