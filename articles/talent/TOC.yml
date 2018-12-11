@@ -7,6 +7,8 @@
     - name: What's new or changed
       href: whats-new.md
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (December 6, 2018)
+        href: whats-new-talent-december-6.md 
       - name: What's new or changed in Dynamics 365 for Talent Core HR (November 27, 2018)
         href: whats-new-talent-november-27.md            
       - name: What's new or changed in Dynamics 365 for Talent Core HR (November 15, 2018)
@@ -276,8 +278,6 @@
       href: create-envi-powerapps-admin-ctr.md
     - name: Talent client disconnects
       href: client-disconnects.md
-    - name: How database backups are handled
-      href: database-backups.md
     - name: Avoid text truncation on the position hierarchy and export to Visio
       href: avoid-text-truncation-position-hierarchy-visio.md
     - name: Run the compensation process
