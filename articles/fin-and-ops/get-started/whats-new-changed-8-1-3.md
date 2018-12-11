@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.3. This version was released in December 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,7 +57,7 @@ You can now set up collection letters at the customer level, so that the collect
 You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions.
 
 ## Russian-specific features
-This release contains the following feautres specific for Russia:
+This release contains the following features for Russia.
 
 ### Accounts receivable debts tax registers. AR bad debts writing-off
 - Tax registers: Accounts receivable inventory act in tax and business accounting; Bad debts reserve calculation in tax and business accounting; Bad debts reserve movement in tax and business accounting; Accounts receivable movement in tx and business accounting
