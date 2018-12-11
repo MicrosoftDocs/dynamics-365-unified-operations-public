@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance operations for deployments
-description: This topic explains how to perform maintenance operations for an environment on the new infrastructure stack.
+description: This topic explains how to perform maintenance operations for an environment on the modern infrastructure stack.
 author: manado
 manager: AnnBe
 ms.date: 12/11/2018
