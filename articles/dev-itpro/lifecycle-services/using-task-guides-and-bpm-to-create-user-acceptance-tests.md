@@ -100,13 +100,14 @@ If you have saved your recordings (AXTR files) to disk, follow these steps to up
 ### Guidelines for recording test cases
 
 Follow these guidelines when authoring and recording your test cases, especially if you are planning to automate test execution.
-1. The process and tools described in this article apply to business process acceptance tests, it is not meant to replace component and unit testing that is typically owned by developers.
-2. Author a limited number of test cases that, when combined, cover complete end to end processes.
-3. Focus on business processes that have been customized.
-4. An individual test case (recording) should cover 1 or 2 business tasks only, typically executed by one persona. This will simplify maintenance of task recordings. Do not combine a complete end to end business process such as "Procure to Pay" or "Order to Cash" into one large task recording. For example, instead of having RFQ -> Purchase Order -> Product Receipt -> Vendor Invoice -> Vendor Payment as one test case, divide the process into 3 or 4 test cases. You will have the opportunity to combine these tests into an ordered test suite later.
-5. A test case should have at least one validation. Try to validate critical fields that cover the impact of other fields. For example: Validation of totals on sales or purchase orders cover the unit price/quantity/discount/tax ...etc.
-6.	Avoid printing of a report in a test case. If a test case needs to print a report, it should be selected on screen.
-7.	80+% of test cases should be of transactions or source documents. Master data should be limited to up to 20% of test cases only.
+The process and tools described in this article apply to business process acceptance tests. They are not meant to replace component and unit testing that is typically owned by developers.
+
+- Author a limited number of test cases that, when combined, cover complete end-to-end processes.
+- Focus on business processes that have been customized.
+- An individual test case (recording) should cover one or two business tasks only, typically executed by one person. This simplifies task recording maintenance. Do not combine a complete end-to-end business process such as "Procure to Pay" or "Order to Cash" into one large task recording. For example, instead of having RFQ > Purchase Order > Product Receipt > Vendor Invoice > Vendor Payment as one test case, divide the process into three or four test cases. You will have the opportunity to combine these tests into an ordered test suite later.
+- A test case should have at least one validation. Try to validate critical fields that cover the impact of other fields. For example: Validation of totals on sales or purchase orders cover the unit price/quantity/discount/tax ...etc.
+- Avoid printing a report in a test case. If a test case needs to print a report, it should be selected on screen.
+- 80+% of test cases should be of transactions or source documents. Master data should be limited to up to 20% of test cases only.
 
 ## Synchronize and configure your test plan in Azure DevOps
 
@@ -154,7 +155,7 @@ Next, you will need to create a test plan and test suite in Azure DevOps. This w
 ![Test case details](./media/test_case_details.png.PNG "Test case details")
 
  >[!NOTE]
- > This example shows how to create a comprehensive acceptance test suite with all test cases added. Instead you should create various test suites under the same test plan and use custom queries to add specific test cases to a test suite. A test case can belong to more than one test suite.
+ > This example shows how to create one comprehensive acceptance test suite with all test cases added. Instead, you should create various test suites under the same test plan and then use custom queries to add specific test cases to a test suite. A test case can belong to more than one test suite.
 
 ## Execute your tests
 
