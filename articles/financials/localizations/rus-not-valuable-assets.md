@@ -32,25 +32,16 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-You can also track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset. Not valuable fixed assets (NVFAs) are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
+You can track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset. Not valuable fixed assets (NVFAs) are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
 
 If the purchase price of a fixed asset is less than the value that is specified in the **Max cost of the NVFA** field in the **Fixed asset parameters** form, the item is considered to be an NVFA. You cannot specify a fixed asset inventory number for this item in the **Purchase order** form. You cannot register the NVFA directly in the **Not valuable FAs** form until the purchase order process is completed.
 
+In the process of Fixed asset purchasing the system divide fixed assets and NVFAs by price according to the **Max cost of the NVFA** parametr value. 
 After you purchase and register the NVFAs, you can perform the following tasks:
-
-  - Divide fixed assets and NVFAs by price when you post purchase orders.
 
   - Automate the placement of NVFAs into operation and into subsequent depreciation transactions.
 
   - Print the MB-2, MB-4, and MB-8 reports.
-
-An organization must account for each working clothes item or special rigging asset that is issued to an employee, and create a Working clothes or Special rigging issue card. You can create queries to display all assets that are on-hand for employees and print the **Working clothes issue sheet (No. MB-7)**. You can cancel or return the Working clothes or Special rigging issue card to the warehouse, and calculate the net book value and residual wearing period.
-
-Working clothes and special rigging assets are regulated by their useful life cycle. This period starts when the item is written off from a warehouse and issued to an employee, and ends after a stipulated period of use. The useful lifetime is specified in months for each item. All of the data that pertains to an item is linked. This includes the identity of the employee, the useful life of the item, the date when the item is issued to the employee, and the calculated end date based on the rating of the item. When the end of the useful life approaches, the item is written off, so that it is no longer assigned to the employee.
-
-During their life cycle, the cost of these types of assets must be amortized. If the life cycle is longer than 12 months, which is the legally defined rate, the linear method of depreciation is used. If it is less than 12 months, the cost is written off when the item is issued to the employee.
-
-The **Working clothes** and **Special rigging** pages are similar to the **Fixed assets** page, which accounts for all issued working clothes and special rigging.
 
 ## Register an NVFA using a purchase order 
 
