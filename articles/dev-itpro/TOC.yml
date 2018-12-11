@@ -885,6 +885,7 @@
     items:
     - name: Deploy a new environment
       href: deployment/deployenvironment-newinfrastructure.md
+      items:
       - name: Diagnose issues with deployments
         href: deployment/troubleshoot-newinfrastructure.md
       - name: Maintenance operations for deployments
