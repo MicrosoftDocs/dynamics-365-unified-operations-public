@@ -883,7 +883,12 @@
     href: deployment/deploy-demo-environment.md
   - name: Cloud deployment
     items:
-    - name: Complete Azure Resource Manager onboarding
+    - name: Modern infrastructure stack
+      href: deployment/insider-program.md
+    - name: Deployment FAQ
+      href: deployment/deploymentFAQ.md
+    - name: Known issues with the new deployment experience
+      href: deployment/known-issues-new-deployment-experience.md- name: Complete Azure Resource Manager onboarding
       href: deployment/arm-onboarding.md
     - name: Azure ExpressRoute and Finance and Operations
       href: deployment/expressroute.md
