@@ -887,7 +887,7 @@
       href: deployment/insider-program.md
     - name: Deployment FAQ
       href: deployment/deploymentFAQ.md
-    - name: Known issues with the new deployment experience
+    - name: Known issues with deployments using the infrastructure stack
       href: deployment/known-issues-new-deployment-experience.md
     - name: Complete Azure Resource Manager onboarding
       href: deployment/arm-onboarding.md
