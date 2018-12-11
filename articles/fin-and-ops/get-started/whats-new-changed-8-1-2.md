@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.2. This version was released in November 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -112,9 +112,9 @@ To apply the new formats, you need to import the following or higher versions of
  - Sales book additional sheet format.version.46.13
  - Factures journal format.version.46.4
  
-For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
+For more information, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
 Mentioned configurations versions are released as public preview and will be updated based on feedback received.
 Use them to learn how electronic formats of sales, purchase books, additional sheets and factures journals are configured with Electronic reporting. Don't use these configurations as base configurations for derived customized configurations in live environment.
 
-Find more details about how to generate and print sales, purchase books, additional sheets and facture journal in the article [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books)
+For more information, see [Sales books, purchase books, and invoice-factures journals](../../financials/localizations/rus-sales-books-purchase-books).
