@@ -51,7 +51,7 @@ In scenarios where a stable Internet connection is available and there is low la
 -   If you choose the one-box Store Scale Unit option, most of the settings are pre-configured. For a multi-box topology you will have to manually configure connections between components.
 -   In Store Scale Unit, users can perform cross-terminal scenarios across multiple POS devices, like suspend/recall transactions and shift operations.
 -   In Store Scale Unit, users cannot perform any real time operations such as issuing gift cards, looking up products, or performing credit card transactions, unless there is Internet connectivity to HQ or a payment provider. If the majority of your transactions involve real time transactions, then your Store Scale Unit will always need Internet connectivity to enable the connection to HQ or payment provider.
--   Direct database connectivity from POS to the channel database is not supported in the Store Scale Unit. The POS devices in the Store Scale Unit will always use the Retail Server for performing operations. You will need customization to enable direct database connectivity and bypass Retail Server.
+-   Direct database connectivity from POS to the channel database is not supported in the Store Scale Unit. The POS devices in the Store Scale Unit will always use the Retail Server for performing operations.
 
 > [!NOTE]
 > It is critical to note that a Retail Store Scale Unit does not replace offline.  Retail Modern POS with an offline database is the only true way to have offline capabilities at this time. 
