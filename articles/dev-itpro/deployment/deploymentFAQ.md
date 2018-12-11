@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment FAQ
-description: This topic provides answers to some frequently asked questions about deployment. 
+description: his topic provides answers to some frequently asked questions about deployment with the modern infrastructure stack.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 12/07/2018
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides answers to some frequently asked questions about deployment. Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
+This topic provides answers to some frequently asked questions about deployment with the [modern infrastructure stack](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
 ## Why do I see only application version 8.1.1 and Platform update 21 when I try to deploy my sandbox environment? 
 
