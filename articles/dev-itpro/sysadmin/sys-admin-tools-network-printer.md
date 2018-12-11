@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System admin network printers
-description: This topic how you can use the new System administration utility to set up network printers.
+title: Manage access to network printers across legal entities
+description: This topic provides information about how to use the new System administration utility to set up network printers.
 author: tjvass
 manager: AnnBe
-ms.date: 12/03/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# System admin network printers
+# Manage access to network printers across legal entities
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +46,7 @@ Because the settings on the **Manage network printers** page are intended for or
 The System administration utility is a recovery tool for inadvertent print instructions. It also simplifies the task of managing network printer settings, such as access from specific legal entities.
 
 ## Access the feature
-After the feature has been turned on through feature flighting, a **Preview** group will appear on the **Options** tab of the Action Pane on the **Manage network printers** page.
+After the feature has been turned on, a **Preview** group will appear on the **Options** tab of the Action Pane on the **Manage network printers** page.
 
 ![Preview group on the Action Pane](./media/network-printer-01.png)
 
