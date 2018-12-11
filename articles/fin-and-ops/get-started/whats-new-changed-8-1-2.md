@@ -91,14 +91,14 @@ This release includes the following features specific for Russia:
 Option to post/not post transactions to General ledger when posting Transfer order
 
 ### Profit tax registers in the area of assets
-Tax registers: 
- - Goods cost calculation
- - FA object information 
- - IA object information 
- - FA depreciation 
- - IA depreciation 
- - FA/IA sale 
- - Depreciation bonus recovery
+The following tax registers are available:
+ - **Goods cost calculation**
+ - **FA object information** 
+ - **IA object information** 
+ - **FA depreciation** 
+ - **IA depreciation** 
+ - **FA/IA sale**
+ - **Depreciation bonus recovery**
 
 ### Sales, purchase books, additional sheets, invoice-factures journal in electronic format
 In this release you can review electronic formats of sales, purchase books, additional sheets and factures journals which are configured with Electronic reporting. 
