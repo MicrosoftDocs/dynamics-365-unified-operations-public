@@ -27,17 +27,17 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Insider program
+# Modern Infrastructure Stack
 
 [!include[banner](../includes/banner.md)]
 
 ## Overview
 
-Thank you for signing up for the Dynamics 365 for Finance and Operations Insider program! We are excited to launch Finance and Operations service on our next generation infrastructure. This multi-tenant architecture will benefit both customers and Microsoft, as it will provide easier deployment options.
+Welcome to the modern infrastructure stack for Dynamics 365 Finance & Operations! We are excited to launch Finance and Operations service on our next generation infrastructure. This new architecture will benefit both customers and Microsoft, as it will provide easier deployment options.
 
 ## Value proposition
 
-As a customer onboarding to the new infrastructure, some of the key benefits you will experience are:
+As a customer onboarding to the modern infrastructure stack, some of the key benefits you will experience are:
 
 -   **Significantly reduced deployment times:** Deployment times reduced by more than 30% - 50%.
 
@@ -45,9 +45,9 @@ As a customer onboarding to the new infrastructure, some of the key benefits you
 
 -   **Repeatable deployments:** You will now have a high degree of repeatability and reliability in pushing your customization updates from Sandbox to Production.
 
-## Who is eligible for the preview?
+## Who is eligible to deploy on the modern infrastructure stack?
 
-Finance and Operations customers who have signed up for the Dynamics 365 for Finance and Operations Deployment Insider program are eligible for the preview.
+Finance and Operations customers who are provisioned with an LCS project on or after 12/10/2018 are eligible to deploy on the modern infrastruture.
 
 ## Release build version
 
@@ -61,13 +61,7 @@ Customizations built on Application version 8.1 and Platform update 20 are compa
 
 ## What’s new or changed?
 
--   LCS project: As part of the Insider program, you will be assigned a new Lifecycle Services (LCS) project that will be different from the current implementation project type. You will use this project to perform all actions related to the preview. Environment types and actions included in the preview are for Sandbox environments only. There is no change in experience to the Dev/Test environments.
-
--   No subscription estimator: You will no longer need to fill out the subscription estimator and go through the sizing process. Microsoft will be able to scale your workload as needed based on the following:
-
-    -   The number of licenses purchased
-
-    -   Your workload
+-   LCS project: You will be assigned a new Lifecycle Services (LCS) project that is different from the current implementation project type. You will use this project to perform all actions on your environments. Environment types and actions included in the modern infrastructure are for Tier 2+ Sandbox environments only. There is no change in experience to the Tier 1 Sandbox environments.
 
 -   Self-service deployment: You will now be able to trigger the environment deployment directly from LCS, which means that you no longer need a service request for deployment.
 
