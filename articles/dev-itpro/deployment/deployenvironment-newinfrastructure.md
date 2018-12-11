@@ -5,7 +5,7 @@ title: Deploy a new environment
 description: This topic explains how to deploy a new environment with the new infrastructure stack in Dynamics 365 for Finance and Operations.
 author: manado
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
