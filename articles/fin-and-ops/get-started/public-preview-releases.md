@@ -5,7 +5,7 @@ title: Standard and targeted service updates
 description: This topic provides information about the different release options for Microsoft Dynamics 365 for Finance and Operations.
 author: meeramahabala
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
