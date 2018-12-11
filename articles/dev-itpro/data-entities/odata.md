@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 11/10/2017
+ms.date: 12/10/2017
 
 ms.topic: article
 ms.prod: 
@@ -53,8 +53,7 @@ For more information about OData, see the following webpages.
 | Topic                                                               | Webpage                                                 |
 |---------------------------------------------------------------------|---------------------------------------------------------|
 | OData standards                                                     | <http://www.odata.org/documentation/>                   |
-| OData: Data access for the web, the cloud, mobile devices, and more | <http://msdn.microsoft.com/en-us/data/hh237663.aspx>    |
-| OData through examples                                              | <http://msdn.microsoft.com/en-us/library/ff478141.aspx> |
+| OData: Data access for the web, the cloud, mobile devices, and more | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
@@ -208,7 +207,12 @@ public int CalculateMaintenanceDuration()
 
 In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.
 
-[![Exposed method in the OData $metadata](./media/1_odata.png)](./media/1_odata.png)
+```
+<Action Name="CalcMaintenanceDuration" m:IsAlwaysBindable="true" IsBindable="true" ReturnType="Edm.Int32">
+    <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
+</Action>
+
+```
 
 The following example of an OData action takes in a parameter and returns a list.
 
