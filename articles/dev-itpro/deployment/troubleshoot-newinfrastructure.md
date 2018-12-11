@@ -2,10 +2,10 @@
 # required metadata
 
 title: Diagnose issues with deployments
-description: This topic explains how to diagnose issues in an environment on the new infrastructure stack.
+description: This topic explains how to diagnose issues in an environment on the modern infrastructure stack.
 author: manado
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can troubleshoot issues on an environment deployed in the new infrastructure stack. When a user reports an issue, you can use various tools in Lifecycle Services (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
+This topic explains how you can troubleshoot issues on an environment deployed in the modern infrastructure stack. When a user reports an issue, you can use various tools in Lifecycle Services (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
 
 > [!Note] 
 > This topic applies to deployments of Finance and Operations 8.1 and above.
