@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 23 (January 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/05/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,7 +55,7 @@ In Platform update 22, the Export to Excel feature was improved to allow users t
 In Platform update 23, we've continued to enhance this feature. After the export completes, users will now receive a notification in the Action center alerting them that the export has finished. The notification includes a link to download the Excel file containing the exported data. The link and notification are accessible for approximately three days after the export completes. 
 
 ## Manage access to network printers across legal entities
-Access to the new System administration utility is managed by the Carbon Flighting Service. Platform update 23 includes the **System network printers management** form that System Administrators can use, along with the Document Routing Agent (DRA) to register network printers with Dynamics 365 for Finance and Operations.
+Platform update 23 includes the **System network printers management** form that System Administrators can use, along with the Document Routing Agent (DRA) to register network printers with Dynamics 365 for Finance and Operations.
 
 After you have enabled this feature, a **Preview** link will appear on the **System network printers** form (**Organization administration** > **Setup** > **Network printers** and click **System network printers**). 
 After you register the network printers with the service using the DRA, you will see the configuration information for each legal entity in the organization.

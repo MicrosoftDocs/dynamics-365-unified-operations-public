@@ -1027,8 +1027,6 @@
       href: migration-upgrade/upgrade-latest-platform-update.md
     - name: Upgrade the Dynamics AX platform to the August 2016 release
       href: migration-upgrade/update-platform-each-release.md
-    - name: Upgrade sandbox environments
-      href: migration-upgrade/upgrade-sandbox-environment.md
     - name: Upgrade data in development, demo, or sandbox environments
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools
