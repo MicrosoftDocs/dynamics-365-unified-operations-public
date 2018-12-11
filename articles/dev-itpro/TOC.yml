@@ -883,7 +883,7 @@
     href: deployment/deploy-demo-environment.md
   - name: Cloud deployment
     items:
-    - name: Modern infrastructure stack
+    - name: Infrastructure stack
       href: deployment/insider-program.md
     - name: Deployment FAQ
       href: deployment/deploymentFAQ.md
