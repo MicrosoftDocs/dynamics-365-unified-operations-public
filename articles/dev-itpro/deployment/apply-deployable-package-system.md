@@ -5,7 +5,7 @@ title: Apply updates to cloud environments
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 10/17/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -123,7 +123,7 @@ If package application isn't successful, you can download either the logs or the
 2. Unzip the log files.
 3. Select the role that a step failed for, such as **AOS** or **BI**.
 4. Select the VM where the step failed. This information appears in the **Machine name** column in the **Environment updates** section.
-5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the <strong>ExecuteRunbook\</strong>* folder.
+5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the **ExecuteRunbook** folder.
 
     For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
 
@@ -213,9 +213,11 @@ In a production environment, unlike in a sandbox environment or other types of e
     
 - When you close a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
-## Deploying packages in Retail environments
+## Applying retail updates and extensions
 
-If you're using retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md).
+If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have enabled reduced downtime updates for Retail channel components in the cloud, you will also need to update Retail channel components. For more information, see [Apply updates and extensions to cloud hosted retail channel components](Update-retail-channel.md).
+
+If you're using retail components (such as Retail Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md).
 
 ## Packages, runbooks, and the AXUpdateInstaller in depth
 
