@@ -31,12 +31,12 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to view the known issues that you might experience during deployment.
+This topic explains how to view the known issues that you might experience during deployment on the modern infrastructure stack.
 
 ## Lifecycle Services (LCS)
 
 ### Features not yet implemented
-The following LCS features are not yet implemented in the new deployment experience. These features have not been deprecated.
+The following LCS features are not yet implemented in the modern deployment experience. These features have not been deprecated.
 
 | **Feature**             | **Description**  |
 ------------------------------|---------------------------------------------------------|
@@ -46,7 +46,7 @@ The following LCS features are not yet implemented in the new deployment experie
 | LCS tiles experience    | Not yet enabled.  |
 
 ### Features not intended to be implemented
-The following LCS features are deprecated and will not be implemented in the new deployment experience.
+The following LCS features are deprecated and will not be implemented in the modern deployment experience.
 
 | **Feature**        | **Description**   |
 |--------------------|--------|
@@ -70,7 +70,7 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 
 ### Features not yet implemented
 
-The following features that have infrastructure dependencies are not yet implemented in the new deployment experience. These features have not been deprecated.
+The following features that have infrastructure dependencies are not yet implemented in the modern deployment experience. These features have not been deprecated.
 
 | **Feature**                 | **Description**                                           |
 |-----------------------------|-----------------------------------------------------------|
@@ -80,7 +80,7 @@ The following features that have infrastructure dependencies are not yet impleme
 | Export to Word              | Export to Word functionality is not enabled at this time. |
 
 ### Features not intended to be implemented
-The following features are deprecated and will not be implemented in the new deployment experience.
+The following features are deprecated and will not be implemented in the modern deployment experience.
 
 | **Feature**  | **Description**                     |
 |--------------|-------------------------------------|
