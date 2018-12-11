@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Known issues with the new deployment experience
-description: This topic explains how to view the known issues that you might experience during deployment.
+title: Known issues with deployments using the infrastructure stack
+description: This topic lists known issues that you might experience during deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Known issues with the new deployment experience
+# Known issues with deployments using the infrastructure stack
 
 [!include[banner](../includes/banner.md)]
 
