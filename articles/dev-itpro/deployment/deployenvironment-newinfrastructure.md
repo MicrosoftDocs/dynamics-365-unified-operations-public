@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [new infrastructure stack](https://go.microsoft.com/fwlink/?linkid=2044792&amp;clcid=0x409). This is now a self-service operation. Refer to the following procedure to deploy these environments.
+This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [modern infrastructure stack](infrastructure-stack.md). This is now a self-service operation. Refer to the following procedure to deploy these environments.
 
 > [!Note] 
 > This topic applies to deployments of Finance and Operations 8.1 and above.
