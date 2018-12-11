@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 12/04/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Platform update 1
 # Process for moving to the latest update of Finance and Operations
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains the process of updating or upgrading to the latest release of Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.
 
@@ -61,7 +60,7 @@ This scenario is required before you can use scenario 3. A developer must comple
 
 In version 8.0 and later, customization can't be done by overlayering Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
-### Scenario 3: Upgrade to the latest application release (Public Preview)
+### Scenario 3: Upgrade to the latest application release
 
 Use this scenario to move to the latest release of Finance and Operations.
 
@@ -135,7 +134,7 @@ Regardless of whether you're a live customer or are still in the implementation 
 
 For details about the code migration steps, see [Code migration](../dev-tools/developer-home-page.md#code-migration). After you've completed the code migration, continue to scenario 3.
 
-## Scenario 3: Upgrade to the latest application release (Public Preview)
+## Scenario 3: Upgrade to the latest application release
 
 > [!IMPORTANT]
 > If you're using application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from 8.0 to 8.1](./appupdate-80-81.md).
@@ -158,11 +157,9 @@ To run the data upgrade process, follow the steps in [Process for data upgrade f
 > - Data upgrade in a development environment is a required step. It helps reduce the risk of extended downtime and upgrade errors later, when you upgrade sandbox user acceptance testing (UAT) and production environments.
 > - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to Azure DevOps. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
  
-### Upgrade your Tier2/Standard Acceptance Test (or higher) sandbox environment (Public Preview)
+### Upgrade your Tier2+ Standard Acceptance Test sandbox environment
 
-When you've completed the code and have been able to do an end-to-end data upgrade in your development environment without having to manipulate data in Microsoft SQL Server, you can begin the process in your sandbox environment.
-
-First, make sure that the preview feature for self-service upgrades is turned on for your account. In LCS, go to **Preview feature management**, select the **Upgrade environment self serve** feature in the list, and make sure that the **Preview feature enabled** option is set to **Yes**.
+When you've completed the code upgrade and have been able to do an end-to-end data upgrade in your development environment, without having to manipulate data in Microsoft SQL Server, you can then begin the process in your sandbox environment.
 
 #### Prerequisite
 
@@ -178,7 +175,7 @@ A dialog box appears, where you can select the latest application and platform c
 
 <img src="media/UpgradeAutomation/02_Prepare.png" width="500px" alt="Prepare upgrade environment dialog box" />
 
-> [!NOTE]
+> [!IMPORTANT]
 > If you receive an error that states that preparation failed, see the [Known issues](#known-issues) section later in this topic.
 
 #### Preparation
@@ -191,7 +188,7 @@ The preparation stage can take eight hours or longer, because it's similar to a 
 
 During this time, your original sandbox is left untouched, and there is no downtime impact at this stage. 
 
-> [!NOTE]
+> [!IMPORTANT]
 > If you receive an error that states that staging deployment failed, the Microsoft Dynamics Service Engineering (DSE) team will be notified and will proactively resolve the issue for you. This issue can occur if Azure doesn't have the required resources available in your region. Microsoft DSE will work with the Azure engineers to allocate more resources. When staging deployment is successfully completed, you will receive an email. 
 
 #### Package application
@@ -206,13 +203,20 @@ When you apply a new package to the environment, the process is the same as the 
 
 If package deployment fails, you can use the **Rollback** button to reverse it. Note that this button is **not** the same as the **Rollback** option on the **Upgrade** menu.
 
-Deployment of each package can take about one hour.
+#### Upgrade Financial Reporting binaries
+Database Refresh and other operations are blocked if your sandbox and production environments aren't on the same version of Financial Reporter.  During upgrade, it is an opportune time to uptake the latest binaries for Financial Reporting.  
+
+* Visit the Asset Library in your implementation project, and then click **Software deployable package**.
+* Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
+* Apply this package to your upgrade-in-progress environment.
+
+Deployment of packages typically lasts about one hour.
 
 #### Data upgrade and environment swap
 
 After all packages are applied to your upgrade-in-progress sandbox, and you've signed off on them, you can begin the data upgrade.
 
-> [!NOTE]
+> [!IMPORTANT]
 > This stage will begin the downtime for your original sandbox environment.
 
 On the **Upgrade** menu, select **Data upgrade**. Your original sandbox environment will be turned off, and the database connection will be swapped so that your new environment is connected to the original database. This process can take up to one hour.
@@ -245,7 +249,7 @@ You can upgrade additional sandbox environments in this same way. You also can d
 
 **Prepare operation could not start. Microsoft support has been notified. If the issue persists, please contact support with this ID.**
 
-This known issue involves environment certificates on the LCS back end. If if affect you, submit a support ticket, and include the activity ID from the error message. Microsoft will work to resolve the issue. Microsoft is compiling a list of affect environments and intends to proactively fix this issue in the future.
+This known issue involves environment certificates on the LCS back end. If it affects you, submit a support ticket, and include the activity ID from the error message. Microsoft will work to resolve the issue. Microsoft is compiling a list of affect environments and intends to proactively fix this issue in the future.
 
 **I want to cancel the upgrade and try again later.**
 
