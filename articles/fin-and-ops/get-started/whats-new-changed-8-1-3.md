@@ -76,17 +76,17 @@ This release contains the following features for Russia.
   -  **Accounts receivable – bad debts reserve** register
   -  **Accounts receivable - bad debt reserve movement** register 
   -  **Accounts receivable movement** register 
-- Accounts receivable bad debts can now be written off
+- Accounts receivable bad debts can now be written off.
  
 ### Accounts payable
  - Tax registers allow you to track and manage taxable profits and losses in accordance with Russian tax accounting principles. The following tax registers are now available.
    - **Accounts payable inventory act** register
    - **Accounts payable debt movement** register 
- - Accounts payable bad debts can now be written off 
+ - Accounts payable bad debts can now be written off.
 
 ### Client-bank interface and reconciliation procedure
-Added the interface and electronic reporting configurations examples required to use the Client-Bank functionality.
-To use this feature, the following electronic reporting configurations should be imported from Lifecycle Services and selected in the settings:
+This release adds the interface and electronic reporting configurations examples required to use the Client-Bank functionality.
+To use this feature, the following electronic reporting configurations should be imported from Lifecycle Services and selected in the following settings:
 - Payment model.version.22
 - Payment model mapping to destination (RU).version.22.4
 - Bank statement (RU).version.22.6
