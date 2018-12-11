@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sell, dispose, and write-off assets (Russia)
+title: Create a fixed asset lease and a return from lease transaction (Russia)
 description: This topic explains how to sell, dispose, and write-off assets in Microsoft Dynamics 365 for Finance and Operations in Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 12/04/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Create a fixed asset lease and a return from lease transaction (RUS) 
+# Create a fixed asset lease and a return from lease transaction (Russia)
 [!include [banner](../includes/banner.md)]
 
 
@@ -78,20 +78,15 @@ You can register the lease of an asset and the subsequent return of the leased a
 
 21. Click **OK**. The lines for the leased asset are displayed in the journal.
     
-
     > [!NOTE]
-    > <P>You can also click <STRONG>Group operations</STRONG> &gt; <STRONG>Lending</STRONG> to create transactions for several fixed assets.</P>
-
-
+    > You can also click **Group operations > Lending** to create transactions for several fixed assets.
 
 22. Click **Validate** \> **Validate** to validate the transaction.
 
 23. Click **Post** \> **Post** to post the journal. Fixed asset and ledger transactions are created.
     
-
     > [!NOTE]
-    > <P>The status of the fixed asset changes from <STRONG>In operation</STRONG> to <STRONG>Lending</STRONG> in the <STRONG>Fixed assets</STRONG> page.</P>
-
+    > The status of the fixed asset changes from **In operation** to **Lending** in the **Fixed assets** page.
 
 ## Register the return of a leased fixed asset
 
@@ -105,26 +100,19 @@ You can register the return of a leased fixed asset in the same way that you reg
 
 4.  In the **Actual return date** field, view or modify the date.
 
-5.  Repeat steps 9 through 22 in the Lease a fixed asset topic.
+5.  Repeat steps 9 through 22 in the [Lease a fixed asset topic](#lease-a-fixed-asset) procedure.
     
-
     > [!NOTE]
-    > <P>You must select <STRONG>Return from lease</STRONG> in the <STRONG>Transaction type</STRONG> field to create a <STRONG>Return from lease</STRONG> transaction.</P>
+    > You must select **Return from lease** in the **Transaction type** field to create a **Return from lease** transaction.
 
 
+6.  Click **Validate > Validate** to validate the transaction.
 
-6.  Click **Validate** \> **Validate** to validate the transaction.
-
-7.  Click **Post** \> **Post** to post the journal. Fixed asset and ledger transactions are created.
+7.  Click **Post > Post** to post the journal. Fixed asset and ledger transactions are created.
     
-
     > [!NOTE]
-    > <P>The status of the fixed asset changes from <STRONG>Lending</STRONG> to <STRONG>In operation</STRONG> in the <STRONG>Fixed assets</STRONG> form.</P>
+    > The status of the fixed asset changes from **Lending** to **In operation** on the **Fixed assets** page.
 
 
-
-8.  Press CTRL+S or close the form
-    
-
-    > [!NOTE]
-    > <P>Lease and return from lease transactions are reversed in the same manner as acquisition transactions.</P>
+> [!TIP]
+> Lease and return-from-lease transactions are reversed in the same manner as acquisition transactions.
