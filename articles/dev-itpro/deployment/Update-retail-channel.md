@@ -38,7 +38,7 @@ Updates to Retail channel components are cumulative. This means that any update 
 
 ## Prerequisites
 
-Before you proceed, you must first apply updates and extensions (if applicable) to the environment. For more information, see [Apply updates to cloud environments](apply-deployable-package-system).
+Before you proceed, you must first apply updates and extensions (if applicable) to the environment. For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md).
 
 To update cloud-hosted Retail channel components, do the following:
 
