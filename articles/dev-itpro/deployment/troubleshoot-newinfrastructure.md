@@ -32,6 +32,7 @@ ms.dyn365.ops.version: 8.1.1
 # Diagnose issues with deployments
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/limited-availability.md)]
 
 This topic explains how you can troubleshoot issues on an environment deployed in the [modern infrastructure stack](infrastructure-stack.md). When a user reports an issue, you can use various tools in Lifecycle Services (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
 
