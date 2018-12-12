@@ -5,7 +5,7 @@ title: Infrastructure stack
 description: This topic provides an overview of the modern infrastructure stack for Dynamics 365 Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
