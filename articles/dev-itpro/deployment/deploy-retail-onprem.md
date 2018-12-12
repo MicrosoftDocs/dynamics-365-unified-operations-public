@@ -55,7 +55,7 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 ```
 > [!NOTE]
 > The parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
-> The parameter **-envName** should be known BY NEWNENWNENEWNENWNENWNEENWNEWNENEWNENWNENEWNEW
+> The parameter **-envName** should be known based on creation when the environment is generated.
 > The parameter **-RetailSelfServicePackages** is the full path location created in the previous step.
 > The parameter **-SendProductSupportTelemetryToMicrosoft** is a required value to enable telemetry to Microsoft.  This is critical to maximize support from Microsoft.
 > This script will perform a variety of actions, including updating the Retail Service user and role and updating Retail registry keys.
