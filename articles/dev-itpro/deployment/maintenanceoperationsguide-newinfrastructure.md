@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment on the modern infrastructure stack.
 author: manado
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
 ms.search.validFrom: 2018-12-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.1.1
 
 ---
 
@@ -34,9 +34,6 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed on the [modern infrastructure stack](infrastructure-stack.md).
-
-> [!Note] 
-> This topic applies to deployments of Finance and Operations 8.1 and above.
 
 # Restart services
 You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription.
