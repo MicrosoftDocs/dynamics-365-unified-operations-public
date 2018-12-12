@@ -57,6 +57,9 @@ In addition, you will also see two sections:
 
   - The **User interaction** chart shows a user's activities on various machines in the environment and the SQL utilization trend.
   - The **User activity** grid shows the various activities that users performed, based on their session timestamp. The active sessions display on the left side of the grid. For each session, the Form:Control:Command and the corresponding timestamp show when the action was taken. You can trace the exact steps that the user was taking in the information presented in this grid.
+  
+ > [!NOTE]
+ > The Overview tab will also include the CPU and memory health metrics to help with diagnostics.  This feature is currently not available but will be added soon. 
 
 ## Activity tab
 
@@ -71,3 +74,5 @@ The **Activity** tab shows a predefined set of queries for advanced troubleshoot
 > The data shown on the **Overview** and **Activity** tabs is only retained for 30 days.
 >
 > The Environment monitoring will also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is currently not available but will be added soon. 
+
+
