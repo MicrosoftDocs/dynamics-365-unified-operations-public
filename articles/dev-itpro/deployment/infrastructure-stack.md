@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 8.1.1
 # Infrastructure stack
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/limited-availability.md)]
 
 The modern infrastructure stack for Dynamics 365 Finance and Operations is the next generation of infrastructure. This new architecture will benefit both customers and Microsoft, as it will provide easier deployment options.
 
