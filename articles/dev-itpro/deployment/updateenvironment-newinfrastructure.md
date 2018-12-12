@@ -5,7 +5,7 @@ title: Update an environment
 description: This topic explains how to update an environment on the modern infrastructure stack.
 author: manado
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
 ms.search.validFrom: 2018-12-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.1.1
 
 ---
 
@@ -37,9 +37,6 @@ This topic walks through the process of applying updates to a Dynamics 365 for F
 
 > [!IMPORTANT]
 > With the next generation infrastructure, updates are applied differently from the current flow. **Whatever is supplied in the package is applied to the environment and it OVERWRITES what is already present in the environment**. This means that you **must** create a single deployable package that contains all customizations and ISV solutions from your build environment. If there is a difference in the list of models between what is on the environment and what is in the package, you will be warned before applying the update. For details about creating a single package, see [Manage third-party models and runtime packages by using source control](../dev-tools/manage-runtime-packages.md).
-
-> [!Note] 
-> This topic applies to deployments of Finance and Operations 8.1 and later.
 
 # Supported package types
 Because environments deployed on the [modern infrastructure stack](infrastructure-stack.md) will be on 8.1 and later, we support the following package types:
