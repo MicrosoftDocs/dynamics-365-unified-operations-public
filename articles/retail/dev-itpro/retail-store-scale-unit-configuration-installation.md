@@ -106,6 +106,11 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > To help ensure that the Retail Store Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
+    > [!ON-PREMISES]
+    > For on-premises depoyments (Local Business Data (LBD)), the configuration file (at this time) requires manual editing:
+    > - AADTokenIssuerPrefix should have the value NEWNENWNWENENWNENWNENEWNWENENWWNENEWNEW
+    > - TransactionServiceAzureAuthority should have the value NEWNENWNWENENWNENWNENEWNWENENWWNENEWNEW
+    > - TransactionServiceAzureResource should have the value NEWNENWNWENENWNENWNENEWNWENENWWNENEWNEW
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
