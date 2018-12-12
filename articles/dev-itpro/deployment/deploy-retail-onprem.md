@@ -63,6 +63,9 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 4.	Extract the zip file and copy all six Self-service installers (AsyncServerConnectorServiceSetup.exe, RealtimeServiceAX63Setup.exe, HardwareStationSetup.exe, ModernPosSetup.exe, ModernPosSetupOffline.exe, and StoreSystemSetup.exe) into the folder **RetailSelfServicePackages** defined and created in step 1 in each of the AOS machines.
 5.	Follow the installation steps for installing the Retail Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).
+6.  NEWNENWNENWNENWENNWENWNENEWNENWENWENWENNWENWNE
+    Use PS script to create the ADFS Client ID and Secret    .\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'      STORED IN SAME PLACE AS OTHER PS SCRIPT
+
 
 > [!NOTE]
 > The installers will not download from their relevant pages the first time a download is attempted.  This is due to the installers have only just been placed into the download location and the associated database values not yet existing.  In headquarters, when the **Download** functionality is attempted (Retail Store Scale Unit or Retail Modern POS, for example), an error will be shown and then an automated upload functionality will be initiated to allow the installers to be downloaded correctly the second time it is attempted (Allow one minute of time before attempting to download the installer again).
