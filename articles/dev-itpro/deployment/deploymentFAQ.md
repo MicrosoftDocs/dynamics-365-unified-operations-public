@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 8.1.1
 # Deployment FAQ
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/limited-availability.md)]
 
 This topic provides answers to some frequently asked questions about deployment with the [modern infrastructure stack](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
