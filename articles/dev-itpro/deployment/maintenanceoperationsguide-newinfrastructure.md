@@ -32,6 +32,7 @@ ms.dyn365.ops.version: 8.1.1
 # Maintenance operations for deployments
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/limited-availability.md)]
 
 This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed on the [modern infrastructure stack](infrastructure-stack.md).
 
