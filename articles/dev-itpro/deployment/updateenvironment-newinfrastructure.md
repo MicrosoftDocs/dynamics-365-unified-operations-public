@@ -32,6 +32,7 @@ ms.dyn365.ops.version: 8.1.1
 # Update an environment
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/limited-availability.md)]
 
 This topic walks through the process of applying updates to a Dynamics 365 for Finance and Operations environment deployed on the [modern infrastructure stack](infrastructure-stack.md).
 
