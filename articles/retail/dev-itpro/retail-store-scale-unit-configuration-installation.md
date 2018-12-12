@@ -42,7 +42,7 @@ This topic explains how you can use self-service to configure Retail Store Scale
 
 1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This topic reviews Azure user permissions and requirements, and explains how to generate an app registration. 
 
-    If you are installing Retail Store Scale Unit for use with an on-premises environment using AD FS, instead of Azure, create an application ID and key using AD FS. For instructions, see [Create an application in AD FS](/windows-server/identity/ad-fs/development/enabling-oauth-confidential-clients-with-ad-fs#create-an-application-group-in-ad-fs-2016).
+    If you are installing Retail Store Scale Unit for use with an on-premises environment using AD FS, instead of Azure, create an application ID and key using AD FS. For instructions, see [Create an application in AD FS](/windows-server/identity/ad-fs/development/enabling-oauth-confidential-clients-with-ad-fs#create-an-application-group-in-ad-fs-2016).\
     
 2. After an application ID (client ID) and key are created for Retail Store Scale Unit, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
@@ -65,12 +65,26 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 7. On the **Retail channel** FastTab, select **Add**, and then, in the **Channel** field, select the appropriate Retail store channel. Repeat this step to add all the channels that should use this database.
 
     You can also add channels that don't use this database. In this way, you keep the data for those channels in the Retail Store Scale Unit channel database. The Retail store channels that actively use this database can then access that data locally.
+    
+    > [!ON-PREMISES]
+    > For on-premises deployments, select the **Download** button in the action pane and select the **Retail Store Scale Unit** option.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed.  Provide one minute of time for the upload logic to complete.
 
 8. On the **Store Scale Unit package** FastTab, in the **Name** field, select the appropriate Retail Store Scale Unit package.
 
     Each environment generates a base Retail Store Scale Unit package. Therefore, this field always contains at least one option.
 
 9. On the Action Pane, select **Save**.
+
+    > [!ON-PREMISES]
+    > For on-premises deployments:
+    > a. Navigate CDBG
+    > b. Create CDBG
+    > c. Associate CDB
+    > d. Save
+    > e. Navigate to Dist Sche
+    > f. Associate for each job, new CDBG
+    > g. Save
+
 10. Go to **Retail** &gt; **Channel setup** &gt; **Channel profiles**.
 11. On the Action Pane, select **New**.
 12. In the **Name** field, enter a unique name for the channel profile.
@@ -88,6 +102,10 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 20. On the Action Pane, select **Save**.
+
+    > [!NOTE]
+    > As media is commonly used, it will be necessary to generate a **Media server URL** NEWNENWNENNWENWENWEN as well for the profile.  For testing and simplicity, the URL that exists for the **Default** Channel profile may be reused.
+
 21. Go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 22. Select the Retail channel ID for the retail store that will use the new channel database.
 23. On the details page for the selected store, on the Action Pane, select **Edit**.
@@ -96,6 +114,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 26. On the **General** FastTab for the store, in the **Channel profile** field, select the channel profile that you created in step 12.
 27. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
 28. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
+
+    > [!ON-PREMISES]
+    > For on-premises deployments, do not select the **Default** data group.  Instead select the data group created back in the on-premises note shown above in step nine.
 
 ### Download the Retail Store Scale Unit installer
 
@@ -106,11 +127,13 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > To help ensure that the Retail Store Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
+    
     > [!ON-PREMISES]
     > For on-premises depoyments (Local Business Data (LBD)), the configuration file (at this time) requires manual editing:
-    > - AADTokenIssuerPrefix should have the value NEWNENWNWENENWNENWNENEWNWENENWWNENEWNEW
-    > - TransactionServiceAzureAuthority should have the value NEWNENWNWENENWNENWNENEWNWENENWWNENEWNEW
-    > - TransactionServiceAzureResource should have the value NEWNENWNWENENWNENWNENEWNWENENWWNENEWNEW
+    > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (For example, **https://myContosoURL.com/namespaces/AXSF/**).
+    > - AADTokenIssuerPrefix should have the value **https://NOTUSED.microsoft.com**
+    > - TransactionServiceAzureAuthority should have the value **https://<ADFS FQDN including .com>/adfs**
+    > - TransactionServiceAzureResource should have the same value as the **StoreSystemAosUrl** listed in the same configuration file.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
@@ -180,7 +203,8 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     For information about how to create web applications in Azure, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
     
     > [!NOTE] 
-    > - If you are installing Retail Store Scale Unit for use with an on-premises environment, Retail Cloud POS does not require an Azure or AD FS application to be configured.
+    > - When installing Retail Store Scale Unit for use with an on-premises environment, Retail Cloud POS does not require an Azure or AD FS application to be configured, so it is important to deselect the **Configure Retail Cloud POS** NEWNENNWENEWNWENNWENWENNWENEW.
+    > - When installing Retail Store Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed at the end of the on-premises environment configuration steps performed in step six of the [](../../dev-itpro/deployment/deploy-retail-onprem.md) document.
 
     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
