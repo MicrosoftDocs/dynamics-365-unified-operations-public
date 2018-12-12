@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 8.1.1
 This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [modern infrastructure stack](infrastructure-stack.md). This is now a self-service operation. Refer to the following procedure to deploy these environments.
 
 1. Select **Configure** on the project dashboard page.
-2. Select the **Application** and **Platform** version for the environment that you want to deploy. Versions 8.1 and above are  supported.
+2. Select the **Application** and **Platform** version for the environment that you want to deploy. 
 3. Provide a **unique name** for the environment.
 4. Select the **region** where you want this environment to be deployed. 
 5. Choose whether you want to load **demo data** in your environment or if you want an **empty database**.
@@ -53,3 +53,10 @@ To closely monitor the deployment progress, you can view the **Environment detai
 If the deployment **succeeds**, the environment state will be **Deployed**, and the user set as the environment administrator will be able to sign in to the environment.
 
 If the deployment **fails**, then create a Microsoft [support ticket](../lifecycle-services/lcs-support.md) and provide the **Last Activity ID** (available under **Manage environment** on the **Environment details** page) in the support ticket.
+
+## Delete an environment
+
+You can delete an environment that is in the deployed state directly through the environment details page. To delete an environment navigate to the environment details page and click on the  **Delete** button in the action bar. This will show a confirmation dialog asking you to enter the name of the environment you want to delete. Once you enter the environment name and select **Yes** it will start the deletion operation. Once the deletion operation completes, the **Configure** button for this environment will be enabled on the project dashboard if you want to re-deploy the environment. 
+
+[!NOTE]
+> To redeploy an environment, you will need to Delete the environment and then Deploy it again using the steps listed above. 
