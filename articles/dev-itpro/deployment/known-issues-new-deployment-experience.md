@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 8.1.1
 # Known issues with deployments using the infrastructure stack
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/limited-availability.md)]
 
 This topic explains how to view the known issues that you might experience during deployment on the modern infrastructure stack.
 
