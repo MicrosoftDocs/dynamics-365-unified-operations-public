@@ -55,7 +55,7 @@ After the feature has been turned on, a **Preview** group will appear on the **O
 3. On the **System network printers** page, register the network printers with the service by using the DRA. You will see the configuration information for each legal entity in the organization.
 
 ## Supported operations
-Currently, the System administration utility supports only Delete operations. Here are the results if you delete network printers by using the **System network printers management** page:
+Currently, the System administration utility supports only Delete operations. Here are the results if you delete network printers by using the **System network printers** page:
 
 - All documents in the printer queue that are directed at the printer are deleted.
 - The network printer is deleted for all legal entities in the organization.
