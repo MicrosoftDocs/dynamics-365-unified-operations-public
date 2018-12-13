@@ -42,8 +42,9 @@ This topic explains how you can use self-service to configure Retail Store Scale
 
 1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This topic reviews Azure user permissions and requirements, and explains how to generate an app registration. 
 
-    If you are installing Retail Store Scale Unit for use with an on-premises environment using AD FS, instead of Azure, follow the instructions in the Retail installation document for on-premises environments.  See [Installation steps for Retail channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md).
-    
+> [!ON-PREMISES]
+> If you are installing Retail Store Scale Unit for use with an on-premises environment using AD FS, instead of Azure, follow the instructions in the Retail installation document for on-premises environments.  See [Installation steps for Retail channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md).
+
 2. After an application ID (client ID) and key are created for Retail Store Scale Unit, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure a new Retail Store Scale Unit
