@@ -51,13 +51,19 @@ This article covers the following sections to assist you to evaluate and setup t
 The out of box payment connector uses the standard payments SDK. As such, the payment connector for Adyen does not have special capabilites which are not available for other payment connectors to utilize. 
 
 Supported payment instrument types:
+
 | Brand | Variants | Supported |
 | --- | --- | --- |
-| MasterCard | Standard | ✔ |
+| MasterCard | Credit | ✔ |
+| - | Debit | ✔ |
 | - | Alpha Bank Bonus | ✔ |
 | - | Apple Pay | ✔ |
 | - | Samsung Pay | ✔ |
-| VISA | Standard | ✔ |
+| - | Maestro | ✔ |
+| - | Maestro Samsung Pay |
+| - | Maestro UK | ✔ |
+| VISA | Credit | ✔ |
+| - | Debit | ✔ |
 | - | Alpha Bank Bonus | ✔ |
 | - | Android Pay | ✔ |
 | - | Apple Pay | ✔ |
@@ -66,7 +72,8 @@ Supported payment instrument types:
 | - | VISA Dankort | ✔ |
 | - | VISA Hipotecario | ✔ |
 | - | VISA Aravia Card | ✔ |
-| AMEX | Android Pay | ✔ |
+| AMEX | Credit | ✔ |
+| - | Debit | ✔ |
 | - | Android Pay | ✔ |
 | - | Apple Pay | ✔ |
 | - | Samsung Pay | ✔ |
@@ -74,8 +81,17 @@ Supported payment instrument types:
 | - | AMEX Consumer | ✔ |
 | - | AMEX Corporate | ✔ |
 | - | AMEX Small Business | ✔ |
+| Discover | Standard | ✔ |
+| - | Android Pay | ✔ |
+| - | Apple Pay | ✔ |
+| - | Samsung Pay | ✔ |
+| Diners | Standard | ✔ |
+| Dineromai | Standard | ✔ |
+| JCB | Standard | ✔ |
+| - | Apple Pay | ✔ |
+| - | Apple Pay | ✔ |
 
-
+#Todo: Manual entry, cash back not supported. Alipay and Wechat not supported yet. Supported input methods.
 ### Dynamics 365 Payment Features- Standard capabilities
  
 
