@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 8.1.1
 
 This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed on the [modern infrastructure stack](infrastructure-stack.md).
 
-# Restart services
+## Restart services
 You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription.
 
 To restart a service, create a support ticket and provide the following details:
@@ -50,8 +50,8 @@ To restart a service, create a support ticket and provide the following details:
 > [!NOTE]
 > This flow will be self-service through Lifecycle Services (LCS) in early 2019.
 
-# Maintenance mode
-Finance and Operations includes a system-wide setting that is named **Maintenance Mode**. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users assigned to the Maintenance mode user role can sign in to the system. By default, maintenance mode is turned off.
+## Maintenance mode
+Finance and Operations includes a system-wide setting that is named [Maintenance mode](../sysadmin/maintenance-mode.md). When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users assigned to the Maintenance mode user role can sign in to the system. By default, maintenance mode is turned off.
 
 To enable/disable maintenance mode, create a support ticket and provide the following details:
 
@@ -63,7 +63,7 @@ To enable/disable maintenance mode, create a support ticket and provide the foll
 > [!NOTE]
 > This flow will be self-service through Lifecycle Services (LCS) in early 2019.
 
-# Access database
+## Access database
 Environments deployed on the [modern infrastructure stack](infrastructure-stack.md) have Remote Desktop Access turned off. As part of implementing Finance and Operations, if you need to connect to the database on your Standard Acceptance Test environments for troubleshooting, create a support ticket and provide the following details:
 
 - **Project ID**: ID of the LCS project.
