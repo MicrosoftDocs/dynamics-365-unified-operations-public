@@ -62,38 +62,36 @@ You must also ensure that you use a secure network to connect Retail Store Scale
   
 3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 4.	Extract the zip file and copy all six Self-service installers (AsyncServerConnectorServiceSetup.exe, RealtimeServiceAX63Setup.exe, HardwareStationSetup.exe, ModernPosSetup.exe, ModernPosSetupOffline.exe, and StoreSystemSetup.exe) into the folder **RetailSelfServicePackages** defined and created in step 1 in each of the AOS machines.
-5.	Follow the installation steps for installing the Retail Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).
-6.  Navigate to the same file directory where the previously run Retail PowerShell script was located (**RetailUpdateDatabase.ps1**) to find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
-7.  Run this script in a new PowerShell window using the command **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'**, where the **HostUrl** value is the AOS URL to access headquarters without the **/namespaces/AXSF/** portion of the URL.
-8.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
-9.  Edit the newly generated Server application and select to **Reset the Secret**.
+5.  Navigate to the same file directory where the previously run Retail PowerShell script was located (**RetailUpdateDatabase.ps1**) to find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
+6.  Run this script in a new PowerShell window using the command **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'**, where the **HostUrl** value is the AOS URL to access headquarters without the **/namespaces/AXSF/** portion of the URL.
+7.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
+8.  Edit the newly generated Server application and select to **Reset the Secret**.
 
 > [!NOTE]
 > It is critical to keep this secret safe.  This secret should only ever be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Retail Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Retail Store Scale Unit that used the previous secret.
 
-10.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
-11.  Select **Edit** on the Action pane.
-12.  In the **Profile** field, enter the value **Default**.  If desired, enter a description in the **Description** field.
+9.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
+10.  Select **Edit** on the Action pane.
+11.  In the **Profile** field, enter the value **Default**.  If desired, enter a description in the **Description** field.
 
 > [!NOTE]
 > It is possible for the following fields in steps 13 through 15 to already have values.  If this is correct, it is correct to skip those steps and continue forward from there.  What is important is to have a selectable profile title (Default in this case).
 
-13.  In the  **Web application name** field, enter the value **RetailCDXRealTimeService**.
-14.  In the **Protocol** field, select the value **https**.
-15.  In the **Common name** field, enter the value **AXServiceUser@contoso.com**.
-16.  Select **Save** from the Action pane.
-17.  In Retail headquarters, navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
-18.  Select the **Security** tab.
-19.  Under the sub-heading **TRANSACTION SERVICE LEGACY PROPERTIES**, select the field **Real-time Service profile** and select the newly created **Default** value.
-20.  Select the **Identity providers** tab.
-21.  On the **Identity providers** FastTab, select **+Add**.
-22.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
-23.  Select **Save** from the Action pane.
-24.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
-25.  On the **General** tab, select the **Initialize** link to configure seed data for Retail functionality.
+12.  In the  **Web application name** field, enter the value **RetailCDXRealTimeService**.
+13.  In the **Protocol** field, select the value **https**.
+14.  In the **Common name** field, enter the value **AXServiceUser@contoso.com**.
+15.  Select **Save** from the Action pane.
+16.  In Retail headquarters, navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+17.  Select the **Security** tab.
+18.  Under the sub-heading **TRANSACTION SERVICE LEGACY PROPERTIES**, select the field **Real-time Service profile** and select the newly created **Default** value.
+19.  Select the **Identity providers** tab.
+20.  On the **Identity providers** FastTab, select **+Add**.
+21.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
+22.  Select **Save** from the Action pane.
+23.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
+24.  On the **General** tab, select the **Initialize** link to configure seed data for Retail functionality.
 
 > [!NOTE]
 > The installers will not download from their relevant pages the first time a download is attempted.  This is due to the installers have only just been placed into the download location and the associated database values not yet existing.  In headquarters, when the **Download** functionality is attempted (Retail Store Scale Unit or Retail Modern POS, for example), an error will be shown and then an automated upload functionality will be initiated to allow the installers to be downloaded correctly the second time it is attempted (Allow one minute of time before attempting to download the installer again).
-> 
-> At multiple locations in the **Configure and install Retail Store Scale Unit** document (linked above) there will be notes referencing changes to the instructions for an on-premises deployment.
 
+25.	Follow the installation steps for installing the Retail Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment.  It is important to take note.
