@@ -63,11 +63,20 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 4.	Extract the zip file and copy all six Self-service installers (AsyncServerConnectorServiceSetup.exe, RealtimeServiceAX63Setup.exe, HardwareStationSetup.exe, ModernPosSetup.exe, ModernPosSetupOffline.exe, and StoreSystemSetup.exe) into the folder **RetailSelfServicePackages** defined and created in step 1 in each of the AOS machines.
 5.	Follow the installation steps for installing the Retail Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).
-6.  NEWNENWNENWNENWENNWENWNENEWNENWENWENWENNWENWNE
-    Use PS script to create the ADFS Client ID and Secret    .\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'      STORED IN SAME PLACE AS OTHER PS SCRIPT    MUST RESET SECRET MANUALLY FOR NEWLY CREATED CLIENT ID.
-7.  Navigate to Retail Shared Parameters subheading Identity providers NENWENENWNEWNEWNWENWE
-8.  Add new Identity provider **https://sts.windows.net/**   NEWNNWENEW
-9. Navigate to Retail parameters .... run **Initialize** NEWNNENWENW
+6.  Navigate to the same file directory where the previously run Retail PowerShell script was located (**RetailUpdateDatabase.ps1**) to find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
+7.  Run this script in a new PowerShell window using the command **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'**, where the **HostUrl** value is the AOS URL to access headquarters without the **/namespaces/AXSF/** portion of the URL.
+8.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
+9.  Edit the newly generated Server application and select to **Reset the Secret**.
+
+> [!NOTE]
+> It is critical to keep this secret safe.  This secret should only ever be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Retail Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Retail Store Scale Unit that used the previous secret.
+
+10.  In Retail headquarters, navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+11.  Select **Identity providers**.
+12.  On the **Identity providers** FastTab, select **+Add**.
+13.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
+14.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
+15.  On the **General** tab, select the **Initialize** link to configure seed data for Retail functionality.
 
 > [!NOTE]
 > CURRENTLY must go to Connector for Microsoft Dynamics AX to create a RTS profile, and go to RetailSharedParameters  -> Security -> Transaction service legacy properties -> real-time service profile, and select the created RTS profile.   NEWNENWNNEWNENWNEWNENWNENWNENWENEW
