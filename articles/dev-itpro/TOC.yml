@@ -887,7 +887,7 @@
     items:
       - name: Infrastructure stack
         href: deployment/infrastructure-stack.md
-       items:
+        items:
         - name: Deploy a new environment
           href: deployment/deployenvironment-newinfrastructure.md
         - name: Deployment FAQ
