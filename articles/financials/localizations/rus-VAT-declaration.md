@@ -347,7 +347,7 @@ The following data is exported:
 - The VAT amount payable that is calculated from the tax base for an unconfirmed export (line 030)
 - The deductible VAT amount from the purchase of items that are used in an unconfirmed export (line 040)
 
-Corrections of amounts for the return of goods:
+If goods are returned, the following data is exported for corrections of amounts:
 
 - The VAT operation code (line 070)
 - The tax base of the return of goods (line 080)
