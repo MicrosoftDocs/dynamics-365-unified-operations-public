@@ -45,7 +45,7 @@ The following steps explain how a user in the System Administrator or Electronic
     * BACS vendor payment format (UK fictitious)  
     * The active configuration provider is automatically entered here. This provider will be able to maintain this configuration. Other providers can use this configuration, but will not be able to maintain it.  
     * A particular format of electronic document can be defined. Leave this field blank if you want to select a format at run-time.  
-8. In the Data model definition field, enter or select a value.
+8. In the Data model definition field, enter or select the CustomerCreditTransferInitiation value.
 9. Click Create configuration.
     * A new configuration has been created. The draft version can be used to store the design format for managing electronic documents.  
 
