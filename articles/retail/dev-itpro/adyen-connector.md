@@ -51,9 +51,30 @@ This article covers the following sections to assist you to evaluate and setup t
 The out of box payment connector uses the standard payments SDK. As such, the payment connector for Adyen does not have special capabilites which are not available for other payment connectors to utilize. 
 
 Supported payment instrument types:
-| Card type | Description | Supported brands | 
+| Brand | Variants | Supported |
 | --- | --- | --- |
-| Credit card | Standard credit card transactions are supported | VISA, MasterCard
+| MasterCard | Standard | ✔ |
+| - | Alpha Bank Bonus | ✔ |
+| - | Apple Pay | ✔ |
+| - | Samsung Pay | ✔ |
+| VISA | Standard | ✔ |
+| - | Alpha Bank Bonus | ✔ |
+| - | Android Pay | ✔ |
+| - | Apple Pay | ✔ |
+| - | Samsung Pay | ✔ |
+| - | VISA Checkout | ✔ |
+| - | VISA Dankort | ✔ |
+| - | VISA Hipotecario | ✔ |
+| - | VISA Aravia Card | ✔ |
+| AMEX | Android Pay | ✔ |
+| - | Android Pay | ✔ |
+| - | Apple Pay | ✔ |
+| - | Samsung Pay | ✔ |
+| - | AMEX Commercial | ✔ |
+| - | AMEX Consumer | ✔ |
+| - | AMEX Corporate | ✔ |
+| - | AMEX Small Business | ✔ |
+
 
 ### Dynamics 365 Payment Features- Standard capabilities
  
