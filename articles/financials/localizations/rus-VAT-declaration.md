@@ -293,7 +293,7 @@ The following data is exported:
 - The tax base (line 020)
 - The deductible VAT amount from the purchase of items that are used in an export that was confirmed at a rate of 0 percent (line 030)
 - Adjustment: The deductible VAT amount that was paid in previous periods when a rate of 0 percent wasn't yet confirmed (line 040)
-- Adjustment: The VAT amount restoration that was deducted in previous periods for an unconfirmed export (line 050)
+- Adjustment: The restored VAT amount that was deducted in previous periods for an unconfirmed export (line 050)
 
 Corrections of amounts for the return of goods:
 
