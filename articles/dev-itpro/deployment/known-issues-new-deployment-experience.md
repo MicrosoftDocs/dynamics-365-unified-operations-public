@@ -5,7 +5,7 @@ title: Known issues with deployments using the infrastructure stack
 description: This topic lists known issues that you might experience during deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
