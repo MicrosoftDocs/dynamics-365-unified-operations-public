@@ -40,15 +40,15 @@ Customers provisioned on the modern infrastructure stack will see the following 
 
 -   Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy and verify that the environment is deployed. This experience is the same as the current experience.
 
-  ![](media/e3fea0697961cb6b8ef7db0e3d599072.png)
+  ![Deployment settings](media/deployment-settings.png)
 
 -   You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database** menu option.
 
-  ![](media/80f785446ac86e9e89dd478585ebd1ed.png)
+  ![Self-service actions](media/self-service-actions.png)
 
 - The diagnostics capabilities will remain the same, which enables troubleshooting without remote desktop access.
 
-  ![](media/21fd4643fc2f2fc0e09e09ad7b178e3e.jpg)
+  ![Environment monitoring](media/environment-monitoring.jpg)
 
 -   You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
 
