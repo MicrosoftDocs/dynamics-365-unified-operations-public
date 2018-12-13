@@ -5,7 +5,7 @@ title: Diagnose issues with deployments
 description: This topic explains how to diagnose issues in an environment on the modern infrastructure stack.
 author: manado
 manager: AnnBe
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
