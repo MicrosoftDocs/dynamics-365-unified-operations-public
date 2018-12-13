@@ -5,7 +5,7 @@ title: Maintenance mode
 description: This topic provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. Maintenance mode is a system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 author: manalidongre
 manager: AnnBe
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
