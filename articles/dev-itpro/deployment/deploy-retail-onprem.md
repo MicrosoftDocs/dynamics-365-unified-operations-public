@@ -71,19 +71,29 @@ You must also ensure that you use a secure network to connect Retail Store Scale
 > [!NOTE]
 > It is critical to keep this secret safe.  This secret should only ever be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Retail Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Retail Store Scale Unit that used the previous secret.
 
-10.  In Retail headquarters, navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
-11.  Select **Identity providers**.
-12.  On the **Identity providers** FastTab, select **+Add**.
-13.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
-14.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
-15.  On the **General** tab, select the **Initialize** link to configure seed data for Retail functionality.
+10.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
+11.  Select **Edit** on the Action pane.
+12.  In the **Profile** field, enter the value **Default**.  If desired, enter a description in the **Description** field.
 
 > [!NOTE]
-> CURRENTLY must go to Connector for Microsoft Dynamics AX to create a RTS profile, and go to RetailSharedParameters  -> Security -> Transaction service legacy properties -> real-time service profile, and select the created RTS profile.   NEWNENWNNEWNENWNEWNENWNENWNENWENEW
+> It is possible for the following fields in steps 13 through 15 to already have values.  If this is correct, it is correct to skip those steps and continue forward from there.  What is important is to have a selectable profile title (Default in this case).
 
-
+13.  In the  **Web application name** field, enter the value **RetailCDXRealTimeService**.
+14.  In the **Protocol** field, select the value **https**.
+15.  In the **Common name** field, enter the value **AXServiceUser@contoso.com**.
+16.  Select **Save** from the Action pane.
+17.  In Retail headquarters, navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+18.  Select the **Security** tab.
+19.  Under the sub-heading **TRANSACTION SERVICE LEGACY PROPERTIES**, select the field **Real-time Service profile** and select the newly created **Default** value.
+20.  Select the **Identity providers** tab.
+21.  On the **Identity providers** FastTab, select **+Add**.
+22.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
+23.  Select **Save** from the Action pane.
+24.  Navigate to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
+25.  On the **General** tab, select the **Initialize** link to configure seed data for Retail functionality.
 
 > [!NOTE]
 > The installers will not download from their relevant pages the first time a download is attempted.  This is due to the installers have only just been placed into the download location and the associated database values not yet existing.  In headquarters, when the **Download** functionality is attempted (Retail Store Scale Unit or Retail Modern POS, for example), an error will be shown and then an automated upload functionality will be initiated to allow the installers to be downloaded correctly the second time it is attempted (Allow one minute of time before attempting to download the installer again).
+> 
 > At multiple locations in the **Configure and install Retail Store Scale Unit** document (linked above) there will be notes referencing changes to the instructions for an on-premises deployment.
 
