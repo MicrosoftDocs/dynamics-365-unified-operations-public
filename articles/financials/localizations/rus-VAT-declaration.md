@@ -72,7 +72,7 @@ You configure the Russian VAT declaration version 5.05 in XML format in the **El
     - **Application 1 to section 3** – The VAT amounts that were previously deducted, and that are now subject to restoration and payment to budget for fixed assets that were used in non-taxable operations.
 
 - **Section 4** – Calculation of VAT amounts for export sales where a tax rate of 0 percent was confirmed during the period.
-- **Section 5** – Calculation of VAT deduction amounts for the reporting period, for export sales where a tax rate of 0 percent was either confirmed or unconfirmed in previous periods.
+- **Section 5** – Calculation of deductible VAT amounts for the reporting period, for export sales where a tax rate of 0 percent was either confirmed or unconfirmed in previous periods.
 - **Section 6** – Calculation of VAT amounts for export sales where a tax rate of 0 percent should have been confirmed during the period but wasn't confirmed.
 - **Section 8** – Information from the purchase book.
 
@@ -216,7 +216,7 @@ To customize the declaration, follow one of these steps.
     In this case, follow these steps:
 
     1. Create a customized **Model mapping** ER configuration. Derive it from the configuration that is provided by the Microsoft configuration provider.
-    2. Redefine the **$RRG.$Section3.$data.$dataStd** model mapping data source element.
+    2. Redefine the **$RRG.$Section3.$data.$dataStd** data source element of the model mapping.
 
 For more information about how to create a derived version of ER configurations to do customization, see [ER Upgrade your format by adopting a new, base version of that format](../../dev-itpro/analytics/tasks/er-upgrade-format.md).
 
@@ -251,7 +251,7 @@ Sections for export are generated based on the registration of export factures a
 
 **Example**
 
-- **January 2018:** Products are purchased.
+- **January 2018:** Products are purchased and documents Invoice V1 and Facture1 are received.
 
     - Invoice V1/Facture1: 10 pieces for a total amount of 118,000 Russian rubles (RUB), which includes 18-percent VAT (18,000 RUB)
 
@@ -291,8 +291,8 @@ The following data is exported:
 
 - The VAT operation code (line 010)
 - The tax base (line 020)
-- The VAT amount deductible from the purchase of items that are used in an export that was confirmed at a rate of 0 percent (line 030)
-- Adjustment: The VAT amount deductible that was paid in previous periods when a rate of 0 percent wasn't yet confirmed (line 040)
+- The deductible VAT amount from the purchase of items that are used in an export that was confirmed at a rate of 0 percent (line 030)
+- Adjustment: The deductible VAT amount that was paid in previous periods when a rate of 0 percent wasn't yet confirmed (line 040)
 - Adjustment: The VAT amount restoration that was deducted in previous periods for an unconfirmed export (line 050)
 
 Corrections of amounts for the return of goods:
@@ -308,9 +308,9 @@ For the previous example, the following data will be present in section 4 of the
 |---|---|---|
 | VAT operation code | 010 | 1011410 (per the user setup for the appropriate sales tax code) |
 | Tax base | 020| 27,000 |
-| VAT amount deductible from the purchase of items that are used in an export that was confirmed at a rate of 0 percent | 030 | 3,600 |
+| Deductible VAT amount from the purchase of items that are used in an export that was confirmed at a rate of 0 percent | 030 | 3,600 |
 
-### Section 5 – Calculation of VAT deduction amounts for the reporting period, for export sales where a tax rate of 0 percent was either confirmed or unconfirmed in previous periods
+### Section 5 – Calculation of deductible VAT amounts for the reporting period, for export sales where a tax rate of 0 percent was either confirmed or unconfirmed in previous periods
 
 Section 5 of the VAT declaration represents VAT amounts deductible in the reporting period for export sales where a rate of 0 percent was either confirmed or unconfirmed in previous periods (that is, "later" deductions of VAT amounts). Data is grouped by the period when the corresponding export was declared, and also by VAT operation code.
 
@@ -320,9 +320,9 @@ The following data is exported:
 - The code for the reporting period when the corresponding export was declared (line 020)
 - The VAT operation code (line 030)
 - The tax base from the purchase of items that are used in a confirmed export (line 040)
-- The VAT amount deductible from the purchase of items that are used in a confirmed export (line 050)
+- The deductible VAT amount from the purchase of items that are used in a confirmed export (line 050)
 - The tax base from the purchase of items that are used in an unconfirmed export (line 060)
-- The VAT amount deductible from the purchase of items that were used in an unconfirmed export (line 070)
+- The deductible VAT amount from the purchase of items that were used in an unconfirmed export (line 070)
 
 **Example**
 
@@ -334,7 +334,7 @@ For the earlier example, the following data will be present in section 5 of the 
 | Code for the reporting period when the corresponding export was declared | 020 | 23 (period code for the third quarter) |
 | VAT operation code | 030 | 1011410 |
 | The tax base from the purchase of items that are used in an unconfirmed export | 060 | 108,000 |
-| VAT amount deductible from the purchase of items that are used in an unconfirmed export | 070 | 5,400 |
+| THe deductible VAT amount from the purchase of items that are used in an unconfirmed export | 070 | 5,400 |
 
 ### Section 6 – Calculation of VAT amounts for export sales where a tax rate of 0 percent should have been confirmed during the period but wasn't confirmed
 
@@ -345,7 +345,7 @@ The following data is exported:
 - The VAT operation code (line 010)
 - The tax base (line 020)
 - The VAT amount payable that is calculated from the tax base for an unconfirmed export (line 030)
-- The VAT amount deductible from the purchase of items that are used in an unconfirmed export (line 040)
+- The deductible VAT amount from the purchase of items that are used in an unconfirmed export (line 040)
 
 Corrections of amounts for the return of goods:
 
@@ -361,7 +361,7 @@ For the earlier example, the following data will be present in section 6 of the 
 | VAT operation code | 010 | 1011410 (per the user setup for the appropriate sales tax code) |
 | Tax base | 020 | 108,000 |
 | VAT amount payable that is calculated from the tax base for the unconfirmed export | 030 | 19,440 |
-| The VAT amount deductible from the purchase of items that are used in an unconfirmed export | 040 | 9,000 |
+| The deductible VAT amount from the purchase of items that are used in an unconfirmed export | 040 | 9,000 |
 
 ## Additional resources
 
