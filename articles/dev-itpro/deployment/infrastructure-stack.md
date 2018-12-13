@@ -5,7 +5,7 @@ title: Infrastructure stack
 description: This topic provides an overview of the modern infrastructure stack for Dynamics 365 Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,39 +32,24 @@ ms.dyn365.ops.version: 8.1.1
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-The modern infrastructure stack for Dynamics 365 Finance and Operations is the next generation of infrastructure. This new architecture will benefit both customers and Microsoft, as it will provide easier deployment options.
+The modern infrastructure stack for Dynamics 365 Finance and Operations is the next generation of infrastructure. While most changes are transparent, this new architecture will benefit both customers and Microsoft, as it will provide easier deployment options and significantly reduced deployment times.
 
-## Overview
+## What’s new or changed
 
-As a customer onboarding to the modern infrastructure stack, some of the key benefits you will experience are:
+Customers provisioned on the modern infrastructure stack will see the following changes in their Lifecycle Services (LCS) experience.
 
--   **Significantly reduced deployment times** - Deployment times reduced by more than 30% - 50%.
+-   Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy and verify that the environment is deployed. This experience is the same as the current experience.
 
--   **Self-service deployment** - Self-service deployment is now available, which means that you no longer need to log a service request to acquire an environment.
+  ![](media/e3fea0697961cb6b8ef7db0e3d599072.png)
 
--   **Repeatable deployments** - You will now have a high degree of repeatability and reliability in pushing your customization updates from Sandbox to Production.
+-   You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database** menu option.
 
-## Who is eligible to deploy on the modern infrastructure stack?
+  ![](media/80f785446ac86e9e89dd478585ebd1ed.png)
 
-Finance and Operations customers who are provisioned with a Lifecycle Services (LCS) project on or after December 10, 2018 are eligible to deploy on the modern infrastructure.
+- The diagnostics capabilities will remain the same, which enables troubleshooting without remote desktop access.
 
-## What release build version does this pertain to?
+  ![](media/21fd4643fc2f2fc0e09e09ad7b178e3e.jpg)
 
-|    |   |
-|-------------|-----------|
-| **Application** | 8.1.1     |
-| **Platform**   | Update 21 |
+-   You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
 
-## What about customizations?
-
-Customizations built on Application version 8.1 and Platform update 20 are compatible with the current release.
-
-## What’s new or changed?
-
--   LCS project - You will be assigned a new Lifecycle Services project that is different from the current implementation project type. You will use this project to perform all actions on your environments. Environment types and actions included in this infrastructure are for Tier 2+ Sandbox environments only. There is no change in experience to the Tier 1 Sandbox environments.
-
--   Self-service deployment - You will now be able to trigger the environment deployment directly from LCS, which means that you no longer need a service request for deployment.
-
--   Move customizations from DevTest to Sandbox - Self-service will be enabled so you can easily apply updates and database movement scenarios across all environments.
-
--   No remote desktop access - You will no longer be able to remote desktop into Sandbox environments. Self-service will be enabled for all tasks that are commonly performed on these environments.
+-   You will need to provide a combined deployable package for customizations. Delta packages will not be supported. This was always a recommended best practice and is now enforced.
