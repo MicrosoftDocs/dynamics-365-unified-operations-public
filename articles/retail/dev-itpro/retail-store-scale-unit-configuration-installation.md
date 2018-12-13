@@ -50,12 +50,22 @@ This topic explains how you can use self-service to configure Retail Store Scale
 
 To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Run the Retail Store Scale Unit installer" section. To complete the configuration and installation, you must first do the initial configuration in Retail headquarters. Next, you must complete the installation. Finally, you must return to Retail headquarters to finish the configuration, so that Retail Store Scale Unit works correctly.
 
+    > [!ON-PREMISES]
+    > For on-premises deployments, perform the following steps:
+    > a. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database group**.
+    > b. On the Action pane, select **+New**.
+    > c. In the **Name** field, enter the value **Default**.  Enter a description in the **Description** field, if desired.
+    > d. In the **Retail channel schema** field, select the drop-down value **AX7**.
+    > e. In the **Working folders** field, select the drop-down value **File storage**.
+    > f. On the Action Pane, select **Save**.
+
 1. In Retail headquarters, go to  **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 2. On the **Channel database** page, on the Action Pane, select **New**.
 3. In the **Channel database ID** field, enter a unique value.
-4. In the **Channel data group** field, select the **Default** option.
+4. In the **Channel data group** field, select the **Default** option. Select any option that has been created.
 
-    You can select any option that you've already created.
+    > [!ON-PREMISES]
+    > For on-premises deployments, this value will be the **Default** value described previously in this document.
 
 5. In the **Type** field, leave the default value (**Channel database**) selected.
 6. You can leave the **Data sync interval** field blank. Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
@@ -74,37 +84,33 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     Each environment generates a base Retail Store Scale Unit package. Therefore, this field always contains at least one option.
 
 9. On the Action Pane, select **Save**.
+10. Go to **Retail** &gt; **Channel setup** &gt; **Channel profiles**.
+11. On the Action Pane, select **+New**.
+12. In the **Name** field, enter a unique name for the channel profile.
 
     > [!ON-PREMISES]
-    > For on-premises deployments:
-    > a. Navigate CDBG
-    > b. Create CDBG
-    > c. Associate CDB
-    > d. Save
-    > e. Navigate to Dist Sche
-    > f. Associate for each job, new CDBG
-    > g. Save
+    > For on-premises deployments, use the value **Default** in this field.
 
-10. Go to **Retail** &gt; **Channel setup** &gt; **Channel profiles**.
-11. On the Action Pane, select **New**.
-12. In the **Name** field, enter a unique name for the channel profile.
 13. On the Action Pane, select **Save**.
 14. On the **Profile properties** FastTab for the new channel profile, select **Add**.
 15. In the **Property key** field, select **Retail server URL**.
 16. In the **Property value** field, enter the URL of the Retail Server that should be installed for Retail Store Scale Unit.
 
-    The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is either the fully qualified domain name (FQDN) of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
+    The standard format for the URL of Retail Server is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is either the fully qualified domain name (FQDN) of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 17. On the **Profile properties** FastTab for the new channel profile, select **Add**.
 18. In the **Property key** field, select **Cloud POS URL**.
 19. In the **Property value** field, enter the URL of the Retail Cloud POS instance that should be installed for Retail Store Scale Unit.
 
-    The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
+    The standard format for the URL of Cloud POS is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 20. On the Action Pane, select **Save**.
 
     > [!NOTE]
-    > As media is commonly used, it will be necessary to generate a **Media server URL** NEWNENWNENNWENWENWEN as well for the profile.  For testing and simplicity, the URL that exists for the **Default** Channel profile may be reused.
+    > As media is commonly used, it will be necessary to generate a **Media Server Base URL** as well for the profile.  For testing and simplicity, the URL that exists for the **Default** Channel profile may be reused.
+    
+    > [!ON-PREMISES]
+    > For on-premises deployments, the **Media Server Base URL** will be where all media is stored for POS devices.  
 
 21. Go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 22. Select the Retail channel ID for the retail store that will use the new channel database.
@@ -115,8 +121,8 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 27. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
 28. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
 
-    > [!ON-PREMISES]
-    > For on-premises deployments, do not select the **Default** data group.  Instead select the data group created back in the on-premises note shown above in step nine.
+    > [!NOTE]
+    > After the first Retail Store Scale Unit is created, it requires less data generation to perform a full data sync from the Channel database instead of the Channel data group.
 
 ### Download the Retail Store Scale Unit installer
 
