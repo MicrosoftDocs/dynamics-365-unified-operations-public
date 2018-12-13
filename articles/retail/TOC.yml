@@ -147,6 +147,8 @@
     href: POS-search-improvements.md
   - name: Inventory lookup in the POS
     href: product-variants-POS.md
+  - name: Suspend and resume transactions in the POS
+    href: pos-suspend-recall-transactions.md
   - name: Hardware peripherals
     items:
     - name: Retail peripherals
@@ -480,6 +482,8 @@
       href: dev-itpro/overview-upgrade-n-minus1.md
     - name: Phased Rollout (N-1) installation, configuration, and cutover
       href: dev-itpro/n-1-installation-configuration.md
+    - name: Upgrade the Retail channel extension to the latest Retail SDK
+      href: dev-itpro/retailSDK-update.md
   - name: Implementation guidance
     items:
     - name: Device management implementation guidance
@@ -576,6 +580,8 @@
       href: dev-itpro/payment-custom-error-messages.md
     - name: Create Windows installers for payment connectors
       href: dev-itpro/create-windows-installer-payment-connector.md
+    - name: Payment data use
+      href: payment-connector-data-fields.md
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:

@@ -260,7 +260,9 @@
       - name: Extensibility changes version 8.1.1
         href: extensibility/extensibility-changes-811.md   
       - name: Extensibility changes version 8.1.2
-        href: extensibility/extensibility-changes-812.md   
+        href: extensibility/extensibility-changes-812.md
+      - name: Extensibility changes version 8.1.3
+        href: extensibility/extensibility-changes-813.md  
     - name: Fundamentals
       items:
       - name: Intrusive customizations
@@ -883,11 +885,17 @@
     href: deployment/deploy-demo-environment.md
   - name: Cloud deployment
     items:
-    - name: Deploy a new environment
-      href: deployment/deployenvironment-newinfrastructure.md
-      items:
+  - name: Infrastructure stack
+    href: deployment/infrastructure-stack.md
+    items:
+      - name: Deploy a new environment
+        href: deployment/deployenvironment-newinfrastructure.md
+      - name: Deployment FAQ
+        href: deployment/deploymentFAQ.md
       - name: Diagnose issues with deployments
         href: deployment/troubleshoot-newinfrastructure.md
+      - name: Known issues with deployments using the infrastructure stack
+        href: deployment/known-issues-new-deployment-experience.md
       - name: Maintenance operations for deployments
         href: deployment/maintenanceoperationsguide-newinfrastructure.md
       - name: Update an environment
@@ -898,6 +906,12 @@
       href: deployment/expressroute.md
     - name: Finance and Operations architecture
       href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+    - name: Apply updates to cloud environments
+      href: deployment/apply-deployable-package-system.md
+    - name: Apply updates and extensions to cloud hosted retail channel components
+      href: deployment/Update-retail-channel.md  
+    - name: Initialize cloud-hosted Retail channel components
+      href: deployment/Initialize-Retail-Channels.md  
   - name: On-premises deployment
     href: deployment/on-premises-deployment-landing-page.md
     items:
@@ -940,8 +954,6 @@
     items:
     - name: Create deployable packages of models
       href: deployment/create-apply-deployable-package.md
-    - name: Apply updates to cloud environments
-      href: deployment/apply-deployable-package-system.md
     - name: Install deployable packages from the command line
       href: deployment/install-deployable-package.md
     - name: Uninstall a package
@@ -1030,8 +1042,6 @@
       href: migration-upgrade/upgrade-latest-platform-update.md
     - name: Upgrade the Dynamics AX platform to the August 2016 release
       href: migration-upgrade/update-platform-each-release.md
-    - name: Upgrade sandbox environments
-      href: migration-upgrade/upgrade-sandbox-environment.md
     - name: Upgrade data in development, demo, or sandbox environments
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22 (November 2018). 
+title: What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (December 2018)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22 (December 2018). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (December 2018)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -42,7 +42,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
 
 ### Platform update 22 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 22, sign in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=2037790) (**not yet available**).
+For information about the bug fixes included in each of the updates that are part of Platform update 22, sign in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=2037790).
 
 ## Extensibility enhancements
 With Platform update 22, a third wave of platform extensibility enhancements are available. For more information, see [Platform extensibility enhancements wave 3](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3).
