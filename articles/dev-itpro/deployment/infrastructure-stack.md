@@ -44,11 +44,11 @@ Customers provisioned on the modern infrastructure stack will see the following 
 
 - You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database** menu option.
 
-   ![Self-service actions](media/self-service-actions.png)
+   ![Self-service actions](media/Self-service-actions.png)
 
 - The diagnostics capabilities will remain the same, which enables troubleshooting without remote desktop access.
 
-   ![Environment monitoring](media/environment-monitoring.jpg)
+   ![Environment monitoring](media/environment-monitoring.png)
 
 - You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
 
