@@ -5,7 +5,7 @@ title: Update an environment
 description: This topic explains how to update an environment on the modern infrastructure stack.
 author: manado
 manager: AnnBe
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
