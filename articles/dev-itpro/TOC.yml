@@ -885,21 +885,21 @@
     href: deployment/deploy-demo-environment.md
   - name: Cloud deployment
     items:
-  - name: Infrastructure stack
-    href: deployment/infrastructure-stack.md
-    items:
-      - name: Deploy a new environment
-        href: deployment/deployenvironment-newinfrastructure.md
-      - name: Deployment FAQ
-        href: deployment/deploymentFAQ.md
-      - name: Diagnose issues with deployments
-        href: deployment/troubleshoot-newinfrastructure.md
-      - name: Known issues with deployments using the infrastructure stack
-        href: deployment/known-issues-new-deployment-experience.md
-      - name: Maintenance operations for deployments
-        href: deployment/maintenanceoperationsguide-newinfrastructure.md
-      - name: Update an environment
-        href: deployment/updateenvironment-newinfrastructure.md
+      - name: Infrastructure stack
+        href: deployment/infrastructure-stack.md
+       items:
+        - name: Deploy a new environment
+          href: deployment/deployenvironment-newinfrastructure.md
+        - name: Deployment FAQ
+          href: deployment/deploymentFAQ.md
+        - name: Diagnose issues with deployments
+          href: deployment/troubleshoot-newinfrastructure.md
+        - name: Known issues with deployments using the infrastructure stack
+          href: deployment/known-issues-new-deployment-experience.md
+        - name: Maintenance operations for deployments
+          href: deployment/maintenanceoperationsguide-newinfrastructure.md
+        - name: Update an environment
+          href: deployment/updateenvironment-newinfrastructure.md
     - name: Complete Azure Resource Manager onboarding
       href: deployment/arm-onboarding.md
     - name: Azure ExpressRoute and Finance and Operations
