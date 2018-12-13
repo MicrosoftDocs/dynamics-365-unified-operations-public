@@ -76,11 +76,11 @@ You configure the Russian VAT declaration version 5.05 in XML format in the **El
 - **Section 6** – Calculation of VAT amounts for export sales where a tax rate of 0 percent should have been confirmed during the period but wasn't confirmed.
 - **Section 8** – Information from the purchase book.
 
-    - **Section 8.1** – Appendix to chapter 8. Information from additional sheets for the purchase book.
+    - **Section 8.1** – Appendix to Section 8. Information from additional sheets for the purchase book.
 
 - **Section 9** – Information from the sales book.
 
-    - **Section 9.1** – Appendix to chapter 9. Information from additional sheets for the sales book.
+    - **Section 9.1** – Appendix to Section 9. Information from additional sheets for the sales book.
 
 - **Section 10** – Information about intermediary deals from the Issued factures journal.
 - **Section 11** – Information about intermediary deals from the Received factures journal.
@@ -277,9 +277,9 @@ Sections for export are generated based on the registration of export factures a
 
     - 35,400 RUB, which includes 18-percent VAT (5,400 RUB) (This amount is for the goods that were purchased by using invoice C2.)
 
-The VAT declaration for the third quarter of 2018 will contain chapter 4 and chapter 6.
+The VAT declaration for the third quarter of 2018 will contain Section 4 and Section 6.
 
-The VAT declaration for the fourth quarter of 2018 will contain chapter 5.
+The VAT declaration for the fourth quarter of 2018 will contain Section 5.
 
 The following sections provide more details for this example.
 
