@@ -38,18 +38,18 @@ The modern infrastructure stack for Dynamics 365 Finance and Operations is the n
 
 Customers provisioned on the modern infrastructure stack will see the following changes in their Lifecycle Services (LCS) experience.
 
--   Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy and verify that the environment is deployed. This experience is the same as the current experience.
+- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy and verify that the environment is deployed. This experience is the same as the current experience.
 
-  ![Deployment settings](media/deployment-settings.png)
+   ![Deployment settings](media/deployment-settings.png)
 
--   You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database** menu option.
+- You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database** menu option.
 
-  ![Self-service actions](media/self-service-actions.png)
+   ![Self-service actions](media/self-service-actions.png)
 
 - The diagnostics capabilities will remain the same, which enables troubleshooting without remote desktop access.
 
-  ![Environment monitoring](media/environment-monitoring.jpg)
+   ![Environment monitoring](media/environment-monitoring.jpg)
 
--   You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
+- You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
 
--   You will need to provide a combined deployable package for customizations. Delta packages will not be supported. This was always a recommended best practice and is now enforced.
+- You will need to provide a combined deployable package for customizations. Delta packages will not be supported. This was always a recommended best practice and is now enforced.
