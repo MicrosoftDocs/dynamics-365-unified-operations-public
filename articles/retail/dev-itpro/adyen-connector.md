@@ -91,7 +91,7 @@ Supported payment instrument types:
 | - | Apple Pay | ✔ |
 | - | Apple Pay | ✔ |
 
-#Todo: Manual entry, cash back not supported. Alipay and Wechat not supported yet. Supported input methods.
+#Todo: Supported version. Manual entry, cash back not supported. Alipay and Wechat not supported yet. Supported input methods.
 ### Dynamics 365 Payment Features- Standard capabilities
  
 
