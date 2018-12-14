@@ -32,17 +32,17 @@ ms.dyn365.ops.version: 8.1.1
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic provides answers to some frequently asked questions about deployment with the [modern infrastructure stack](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
+This topic provides answers to some frequently asked questions about deployment using the [self-service deployment](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
-## Why do I see only application version 8.1.1 and Platform update 21 when I try to deploy my sandbox environment? 
+## Why do I see only application version 8.1.1 and Platform update 21 when I try to deploy my sandbox environment using the self-service deployment flow? 
 
-The modern infrastructure stack supports only application version 8.1.1 with Platform update 21.  
+Self-service deployment supports only application version 8.1.1 with Platform update 21.  
 
 ## My development environment is on application version 8.1. Am I still able to move my customization to the sandbox environment? 
 
 Yes. Application version 8.1.1 is fully backward compatible with application 8.1. 
 
-## What is the minimum supported application and platform version on the modern infrastructure stack? 
+## What is the minimum supported application and platform version when trying to use the self-service deployment? 
 
 Application version 8.1 with Platform update 20 is the minimum supported version. 
 
