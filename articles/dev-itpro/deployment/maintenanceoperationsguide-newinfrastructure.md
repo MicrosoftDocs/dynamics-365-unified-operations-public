@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment deployed using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 12/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed using the [self-service experience](infrastructure-stack.md).
+This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed using the [self-service deployment](infrastructure-stack.md) experience.
 
 ## Restart services
 You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription.
