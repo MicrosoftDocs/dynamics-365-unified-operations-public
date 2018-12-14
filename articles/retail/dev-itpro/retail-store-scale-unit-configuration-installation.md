@@ -5,7 +5,7 @@ title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -51,7 +51,7 @@ This topic explains how you can use self-service to configure Retail Store Scale
 
 To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Run the Retail Store Scale Unit installer" section. To complete the configuration and installation, you must first do the initial configuration in Retail headquarters. Next, you must complete the installation. Finally, you must return to Retail headquarters to finish the configuration, so that Retail Store Scale Unit works correctly.
 
-    > [!ON-PREMISES]
+    > [Note]
     > For on-premises deployments, perform the following steps:
     > a. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database group**.
     > b. On the Action pane, select **+New**.
@@ -65,7 +65,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 3. In the **Channel database ID** field, enter a unique value.
 4. In the **Channel data group** field, select the **Default** option. Select any option that has been created.
 
-    > [!ON-PREMISES]
+    > [Note]
     > For on-premises deployments, this value will be the **Default** value described previously in this document.
 
 5. In the **Type** field, leave the default value (**Channel database**) selected.
@@ -77,7 +77,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     You can also add channels that don't use this database. In this way, you keep the data for those channels in the Retail Store Scale Unit channel database. The Retail store channels that actively use this database can then access that data locally.
     
-    > [!ON-PREMISES]
+    > [Note]
     > For on-premises deployments, select the **Download** button in the action pane and select the **Retail Store Scale Unit** option.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed.  Provide one minute of time for the upload logic to complete.
 
 8. On the **Store Scale Unit package** FastTab, in the **Name** field, select the appropriate Retail Store Scale Unit package.
@@ -89,7 +89,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 11. On the Action Pane, select **+New**.
 12. In the **Name** field, enter a unique name for the channel profile.
 
-    > [!ON-PREMISES]
+    > [Note]
     > For on-premises deployments, use the value **Default** in this field.
 
 13. On the Action Pane, select **Save**.
@@ -110,7 +110,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > [!NOTE]
     > As media is commonly used, it will be necessary to generate a **Media Server Base URL** as well for the profile.  For testing and simplicity, the URL that exists for the **Default** Channel profile may be reused.
     
-    > [!ON-PREMISES]
+    > [!Note]
     > For on-premises deployments, the **Media Server Base URL** will be where all media is stored for POS devices.  
 
 21. Go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
@@ -135,7 +135,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > [!NOTE]
     > To help ensure that the Retail Store Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
     
-    > [!ON-PREMISES]
+    > [!NOTE]]
     > For on-premises depoyments (Local Business Data (LBD)), the configuration file (at this time) requires manual editing:
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (For example, **https://myContosoURL.com/namespaces/AXSF/**).
     > - AADTokenIssuerPrefix should have the value **https://NOTUSED.microsoft.com**
@@ -161,7 +161,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 Before you run the Retail Store Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements.md) are met. 
 
-> [!ON-PREMISES]
+> [!NOTE]]
 > If you are installing Retail Store Scale Unit for use with an on-premises environment, you must start it from a command line using administrator priviledges as follows:
 > StoreSystemSetup.exe -UseAdfsAuthentication -AzureAuthority <AD FS URL>
 
@@ -209,7 +209,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
     For information about how to create web applications in Azure, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
     
-    > [!ON-PREMISES] 
+    > [!NOTE]] 
     > - When installing Retail Store Scale Unit for use with an on-premises environment, Retail Cloud POS does not require an Azure or AD FS application to be configured, so it is important to deselect the **Configure Retail Cloud POS**.
     > - When installing Retail Store Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in step six of the [Installation steps for Retail channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md) document.
 
