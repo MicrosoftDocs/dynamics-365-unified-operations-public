@@ -885,7 +885,7 @@
     href: deployment/deploy-demo-environment.md
   - name: Cloud deployment
     items:
-    - name: Infrastructure stack
+    - name: Self-service deployment
       href: deployment/infrastructure-stack.md
       items:
       - name: Deploy a new environment
@@ -894,7 +894,7 @@
         href: deployment/deploymentFAQ.md
       - name: Diagnose issues with deployments
         href: deployment/troubleshoot-newinfrastructure.md
-      - name: Known issues with deployments using the infrastructure stack
+      - name: Known issues with self-service deployment
         href: deployment/known-issues-new-deployment-experience.md
       - name: Maintenance operations for deployments
         href: deployment/maintenanceoperationsguide-newinfrastructure.md
