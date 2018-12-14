@@ -2,7 +2,7 @@
 # required metadata
 
 title: Diagnose issues with deployments
-description: This topic explains how to diagnose issues in an environment on the modern infrastructure stack.
+description: This topic explains how to diagnose issues in an environment deployed using the self-service experience.
 author: manado
 manager: AnnBe
 ms.date: 12/13/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic explains how you can troubleshoot issues on an environment deployed in the [modern infrastructure stack](infrastructure-stack.md). When a user reports an issue, you can use various tools in Lifecycle Services (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
+This topic explains how you can troubleshoot issues on an environment deployed using the [self-service experience](infrastructure-stack.md). When a user reports an issue, you can use various tools in Lifecycle Services (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
 
 To open the **Environment Monitoring** dashboard, follow the steps listed below:
 
