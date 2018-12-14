@@ -59,5 +59,5 @@ If the deployment **fails**, then create a Microsoft [support ticket](../lifecyc
 
 You can delete an environment that is in the deployed state directly through the environment details page. To delete an environment, go to the environment details page and click the  **Delete** button on the action bar. A confirmation dialog box will display asking you to enter the name of the environment that you want to delete. After you enter the environment name and select **Yes**, the deletion operation will start. When the deletion operation is complete, the **Configure** button for this environment will be enabled on the project dashboard if you want to redeploy the environment. 
 
-[!NOTE]
+> [!NOTE]
 > To redeploy an environment, you will need to delete the environment and then deploy it again using the steps listed above. 
