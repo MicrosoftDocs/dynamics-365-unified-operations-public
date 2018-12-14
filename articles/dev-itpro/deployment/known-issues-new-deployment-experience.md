@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Known issues when using self-service deployment
+# Known issues with self-service deployment
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
