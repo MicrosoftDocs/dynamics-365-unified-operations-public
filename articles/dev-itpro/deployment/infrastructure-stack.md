@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Infrastructure stack
+title: Self-Service Deployment for Dynamics 365 for Finance and Operations
 description: This topic provides an overview of the modern infrastructure stack for Dynamics 365 Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
@@ -27,22 +27,22 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Infrastructure stack
+# Self-Service Deployment for Dynamics 365 for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-The modern infrastructure stack for Dynamics 365 Finance and Operations is the next generation of infrastructure. While most changes are transparent, this new architecture will benefit both customers and Microsoft, as it will provide easier deployment options and significantly reduced deployment times.
+We are excited to announce the availability of self-service deployment for Dynamics 365 for Finance and Operations cloud environments. While most changes will be transparent to you, in the coming weeks you will see some changes in the Lifecycle Services (LCS) experience for new customers . For now, the experience for existing customers will remain unchanged.  
 
 ## What’s new or changed
 
-Customers provisioned on the modern infrastructure stack will see the following changes in their Lifecycle Services (LCS) experience.
+Customers with the self-service capabilities will see the following changes in their LCS experience. 
 
-- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy and verify that the environment is deployed. This experience is the same as the current experience.
+- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy and verify that the environment is deployed. This experience is the same as the current experience. 
 
    ![Deployment settings](media/deployment-settings.png)
 
-- You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database** menu option.
+- You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu option**. 
 
    ![Self-service actions](media/Self-service-actions.png)
 
