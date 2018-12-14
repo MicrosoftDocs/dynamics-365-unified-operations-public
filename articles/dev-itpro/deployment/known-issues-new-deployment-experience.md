@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic describes the known issues with self-service deployment.
+This topic describes the known issues with [self-service deployment](infrastructure-stack.md).
 
 ## Lifecycle Services (LCS)
 
