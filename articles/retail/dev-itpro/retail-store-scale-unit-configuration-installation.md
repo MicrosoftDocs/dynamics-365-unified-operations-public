@@ -135,8 +135,8 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > [!NOTE]
     > To help ensure that the Retail Store Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
     
-    > [!NOTE]]
-    > For on-premises depoyments (Local Business Data (LBD)), the configuration file (at this time) requires manual editing:
+    > [!NOTE]
+    > For on-premises depoyments, the configuration file (at this time) requires manual editing:
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (For example, **https://myContosoURL.com/namespaces/AXSF/**).
     > - AADTokenIssuerPrefix should have the value **https://NOTUSED.microsoft.com**
     > - TransactionServiceAzureAuthority should have the value **https://<ADFS FQDN including .com>/adfs**
