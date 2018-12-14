@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update an environment
-description: This topic explains how to update an environment on the modern infrastructure stack.
+description: This topic explains how to update an environment deployed using the self-service experience.
 author: manado
 manager: AnnBe
 ms.date: 12/13/2018
@@ -34,13 +34,13 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic walks through the process of applying updates to a Dynamics 365 for Finance and Operations environment deployed on the [modern infrastructure stack](infrastructure-stack.md).
+This topic walks through the process of applying updates to a Dynamics 365 for Finance and Operations environment deployed using the [self-service experience](infrastructure-stack.md).
 
 > [!IMPORTANT]
 > With the next generation infrastructure, updates are applied differently from the current flow. **Whatever is supplied in the package is applied to the environment and it OVERWRITES what is already present in the environment**. This means that you **must** create a single deployable package that contains all customizations and ISV solutions from your build environment. If there is a difference in the list of models between what is on the environment and what is in the package, you will be warned before applying the update. For details about creating a single package, see [Manage third-party models and runtime packages by using source control](../dev-tools/manage-runtime-packages.md).
 
 # Supported package types
-Because environments deployed on the [modern infrastructure stack](infrastructure-stack.md) will be on 8.1 and later, we support the following package types:
+Because environments deployed using the [self-service experience](infrastructure-stack.md) will be on 8.1 and later, we support the following package types:
 
 - **AOT deployable package** - A deployable package that is generated from application metadata and source code. This deployable package is created in a **build** environment.
 - **Binary update package** - A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft.
