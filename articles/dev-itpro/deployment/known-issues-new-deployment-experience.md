@@ -47,7 +47,7 @@ The following LCS features are deprecated and will not be implemented in self-se
 ### Known issues in this release
 Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
 
--   Logs about failures are not yet available through LCS. Currently, you can open a support ticket if you need the logs.
+-   Log files listing deployment failures are not yet available through LCS. Currently, you can open a support ticket if you need the log files.
 
 -   LCS integration from a Finance and Operations environment does not work. The features that are not available as a result of this include:
 
