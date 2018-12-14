@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Self-service deployment for Finance and Operations
+title: Self-service deployment
 description: This topic provides an overview self-service deployment for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
