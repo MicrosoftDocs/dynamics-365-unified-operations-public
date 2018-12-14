@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Self-service deployment for Finance and Operations
+# Self-service deployment
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
