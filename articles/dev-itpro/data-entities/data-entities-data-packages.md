@@ -279,6 +279,11 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | EnableAttachmentForPackageApi         | Enables attachments functionality in the package API. |
 | FailErrorOnBatchForExport             | Enables fail on error at execution unit or level for export jobs. |
 | IgnorePreventUploadWhenZeroRecord     | Disables 'prevent upload when zero records' functionality. |
+| DMFInsertStagingLogToContainer        | By default this is ON. This improves performance and functional issues with error logs in staging table. |
+| ExportWhileDataEntityListIsBeingRefreshed     | When enabled, additional validations are made on mappings when a job is scheduled while entity refresh is in progress. By default, this is OFF.|
+| DMFDisableXSLTTransformationForCompositeEntity     | By default, this is OFF. This can disable application of transformsations on composite entities. |
+| DMFDisableInputFileCheckInPackageImport     | Additional validations are made to ensure if any entity file is missing from a data package, error message is shown. This is the default behavior. If required this can be turned OFF by this flight.  |
+
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
