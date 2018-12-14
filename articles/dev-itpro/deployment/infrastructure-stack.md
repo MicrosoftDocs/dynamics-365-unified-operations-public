@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Self-Service Deployment for Dynamics 365 for Finance and Operations
-description: This topic provides an overview of the modern infrastructure stack for Dynamics 365 Finance and Operations.
+title: Self-service deployment for Finance and Operations
+description: This topic provides an overview self-service deployment for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,22 +27,22 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Self-Service Deployment for Dynamics 365 for Finance and Operations
+# Self-service deployment for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-We are excited to announce the availability of self-service deployment for Dynamics 365 for Finance and Operations cloud environments. While most changes will be transparent to you, in the coming weeks you will see some changes in the Lifecycle Services (LCS) experience for new customers . For now, the experience for existing customers will remain unchanged.  
+Self-service deployment is available for Dynamics 365 for Finance and Operations cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
 
 ## What’s new or changed
 
-Customers with the self-service capabilities will see the following changes in their LCS experience. 
+Customers using the self-service capabilities will see the following changes in their LCS experience. 
 
-- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy and verify that the environment is deployed. This experience is the same as the current experience. 
+- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy, and verify that the environment is deployed. This experience is the same as the current experience. 
 
    ![Deployment settings](media/deployment-settings.png)
 
-- You will no longer have Remote desktop access to the Tier 2+ Sandbox environments. All operations that need Remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu option**. 
+- You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu option**. 
 
    ![Self-service actions](media/Self-service-actions.png)
 
