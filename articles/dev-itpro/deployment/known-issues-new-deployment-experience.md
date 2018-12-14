@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Known issues when using self-service deployment.
-description: This topic lists known issues that you might experience during deployment.
+title: Known issues with self-service deployment
+description: This topic lists known issues that you might experience when using self-service deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,12 +32,12 @@ ms.dyn365.ops.version: 8.1.1
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic describes the known issues you might experience using self-service deployment.
+This topic describes the known issues with self-service deployment.
 
 ## Lifecycle Services (LCS)
 
 ### Features not intended to be implemented
-The following LCS features are deprecated and will not be implemented in the modern deployment experience.
+The following LCS features are deprecated and will not be implemented in self-service deployment.
 
 | **Feature**        | **Description**   |
 |--------------------|--------|
