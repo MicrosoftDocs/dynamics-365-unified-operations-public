@@ -52,3 +52,5 @@ You can use warehouse levels to create a hierarchy that supports transfer orders
 
 > [!TIP]
 > <P>If you want to assign a warehouse for refilling, you must first set up the warehouse as a storage dimension in the <STRONG>Storage dimension groups</STRONG> form. In this form, select the <STRONG>Active</STRONG> field and the <STRONG>Coverage plan by dimension</STRONG> field for the warehouse.</P>
+
+Note that you must also set up the transport lead time between the warehouses on the **Transport days** page. Go to **Inventory management > Setup > Distribution > Transport days**, select **Receiving point** = warehouse, select the  **Shipping warehouse** and **Receiving warehouse** and the **Transport days**. You are also able to set transport time depending on the mode of delivery under the **Transport days per mode of delivery tab**.
