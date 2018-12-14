@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a new environment
-description: This topic explains how to deploy a new environment with the modern infrastructure stack in Dynamics 365 for Finance and Operations.
+description: This topic explains how to deploy a new environment using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 12/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [modern infrastructure stack](infrastructure-stack.md). This is now a self-service operation. Refer to the following procedure to deploy these environments.
+This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [self-service deployment](infrastructure-stack.md) experience. Refer to the following procedure to deploy these environments.
 
 1. Select **Configure** on the project dashboard page.
 2. Select the **Application** and **Platform** version for the environment that you want to deploy. 
