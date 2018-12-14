@@ -52,44 +52,42 @@ The out of box payment connector uses the standard payments SDK. As such, the pa
 
 Supported payment instrument types:
 
-| Brand | Variants | Supported |
-| --- | --- | --- |
-| MasterCard | Credit | ✔ |
-| - | Debit | ✔ |
-| - | Alpha Bank Bonus | ✔ |
-| - | Apple Pay | ✔ |
-| - | Samsung Pay | ✔ |
-| - | Maestro | ✔ |
-| - | Maestro Samsung Pay |
-| - | Maestro UK | ✔ |
-| VISA | Credit | ✔ |
-| - | Debit | ✔ |
-| - | Alpha Bank Bonus | ✔ |
-| - | Android Pay | ✔ |
-| - | Apple Pay | ✔ |
-| - | Samsung Pay | ✔ |
-| - | VISA Checkout | ✔ |
-| - | VISA Dankort | ✔ |
-| - | VISA Hipotecario | ✔ |
-| - | VISA Aravia Card | ✔ |
-| AMEX | Credit | ✔ |
-| - | Debit | ✔ |
-| - | Android Pay | ✔ |
-| - | Apple Pay | ✔ |
-| - | Samsung Pay | ✔ |
-| - | AMEX Commercial | ✔ |
-| - | AMEX Consumer | ✔ |
-| - | AMEX Corporate | ✔ |
-| - | AMEX Small Business | ✔ |
-| Discover | Standard | ✔ |
-| - | Android Pay | ✔ |
-| - | Apple Pay | ✔ |
-| - | Samsung Pay | ✔ |
-| Diners | Standard | ✔ |
-| Dineromai | Standard | ✔ |
-| JCB | Standard | ✔ |
-| - | Apple Pay | ✔ |
-| - | Apple Pay | ✔ |
+| Brand | Variants | Supported | Card present | Card not present |
+| --- | --- | --- | ---| --- |
+| MasterCard | Credit | ✔ | ✔ | ✔ |
+| - | Debit | ✔ | ✔ | ✔ |
+| - | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| - | Apple Pay | ✔ | ✔ | - |
+| - | Samsung Pay | ✔ | ✔ | - |
+| - | Maestro | ✔ | ✔ | ✔ |
+| - | Maestro Samsung Pay | ✔ | - |
+| - | Maestro UK | ✔ | ✔ | ✔ |
+| VISA | Credit | ✔ | ✔ | ✔ |
+| - | Debit | ✔ | ✔ | ✔ |
+| - | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| - | Android Pay | ✔ | ✔ | - |
+| - | Apple Pay | ✔ | ✔ | - |
+| - | Samsung Pay | ✔ | ✔ | - |
+| - | VISA Checkout | ✔ | ✔ | ✔ |
+| - | VISA Dankort | ✔ | ✔ | ✔ |
+| - | VISA Hipotecario | ✔ | ✔ | ✔ |
+| - | VISA Aravia Card | ✔ | ✔ | ✔ |
+| AMEX | Credit | ✔ | ✔ | ✔ |
+| - | Debit | ✔ | ✔ | ✔ |
+| - | Android Pay | ✔ | ✔ | - |
+| - | Apple Pay | ✔ | ✔ | - |
+| - | Samsung Pay | ✔ | ✔ | - |
+| - | AMEX Commercial | ✔ | ✔ | ✔ |
+| - | AMEX Consumer | ✔ | ✔ | ✔ |
+| - | AMEX Corporate | ✔ | ✔ | ✔ |
+| - | AMEX Small Business | ✔ | ✔ | ✔ |
+| Discover | Standard | ✔ | ✔ | ✔ |
+| - | Android Pay | ✔ | ✔ | - |
+| - | Apple Pay | ✔ | ✔ | - |
+| - | Samsung Pay | ✔ | ✔ | - |
+| Diners | Standard | ✔ | ✔ | ✔ |
+| Dineromai | Standard | ✔ | ✔ | ✔ |
+| JCB | Standard | ✔ | ✔ | ✔ |
 
 #Todo: Supported version. Manual entry, cash back not supported. Alipay and Wechat not supported yet. Supported input methods.
 ### Dynamics 365 Payment Features- Standard capabilities
