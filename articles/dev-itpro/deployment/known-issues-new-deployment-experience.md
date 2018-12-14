@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Known issues with deployments using the infrastructure stack
-description: This topic lists known issues that you might experience during deployment.
+title: Known issues with self-service deployment
+description: This topic lists known issues that you might experience when using self-service deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,27 +27,17 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Known issues with deployments using the infrastructure stack
+# Known issues with self-service deployment
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic explains how to view the known issues that you might experience during deployment on the modern infrastructure stack.
+This topic describes the known issues with self-service deployment.
 
 ## Lifecycle Services (LCS)
 
-### Features not yet implemented
-The following LCS features are not yet implemented in the modern deployment experience. These features have not been deprecated.
-
-| **Feature**             | **Description**  |
-------------------------------|---------------------------------------------------------|
-| Data movement scenarios | The self-service automation to move database bacpacs and copy databases across environments is not yet implemented. At this time, you will need to log a support ticket to perform these operations. The following self-service feature is planned for a future release: Golden config bacpac move to sandbox environment. |
-| Monitoring page         | The LCS page that allows you to monitor the Finance and Operations environment is not yet implemented. |
-| Package deployments     | Applying binary, application, and X++ updates is not yet enabled. Currently, you can only update your environment by deleting and redeploying. Slipstreaming is enabled.     |
-| LCS tiles experience    | Not yet enabled.  |
-
 ### Features not intended to be implemented
-The following LCS features are deprecated and will not be implemented in the modern deployment experience.
+The following LCS features are deprecated and will not be implemented in self-service deployment.
 
 | **Feature**        | **Description**   |
 |--------------------|--------|
@@ -57,7 +47,7 @@ The following LCS features are deprecated and will not be implemented in the mod
 ### Known issues in this release
 Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
 
--   Logs on failures are not yet available through LCS. Currently, you need to log failures as a support incident.
+-   Log files listing deployment failures are not yet available through LCS. Currently, you can open a support ticket if you need the log files.
 
 -   LCS integration from a Finance and Operations environment does not work. The features that are not available as a result of this include:
 
