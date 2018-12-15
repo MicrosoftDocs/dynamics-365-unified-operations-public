@@ -47,14 +47,19 @@ This article covers the following sections to assist you to evaluate and setup t
 - **[Sign Up with Adyen](#Sign-Up-with-Adyen)** – This section describes how to sign up for a merchant account with Adyen.
 - **[Setup and Configuration](#Setup-and-Configuration)** – This section explains in detail how to setup and configure the Dynamics 365 Payment Connector for Adyen across the POS, Call Center, and E-Commerce channels.
 
-### FAQ
-
-
 ## Supported Features and Functionalities
 The out of box payment connector uses the standard payments SDK. As such, the payment connector for Adyen does not have special capabilites which are not available for other payment connectors to utilize. 
 
-### Supported payment instruments
+### Supported versions
+The Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 8.1.3 and above. the first pary Adyen connector is not available in previous versions, though there may be 3rd party connectors available. 
 
+### Device support
+The Dynamics 365 Payment Connector for Adyen is payment terminal agnostic. As long as a payment terminal is supported by the Adyen payment SDK, the connector should support the same device. 
+
+### Re-use of existing devices
+In general, if a payment terminal is in 
+
+### Supported payment instruments
 Supported debit and credit cards:
 
 | Brand | Variants | Supported | Card present | Card not present |
@@ -105,10 +110,8 @@ Supported wallets:
 
 | Scheme | Card present | Card not present |
 | --- | --- | --- |
-| Alipay | Future release | - |
-| WeChat | Future release | - |
-
-*Note: Alipay and WeChat support will be added in a future release
+| Alipay | Future release | --- |
+| WeChat | Future release | --- |
 
 #Todo: Supported version. Manual entry, cash back not supported. Alipay and Wechat not supported yet. Supported input methods.
 ### Dynamics 365 Payment Features- Standard capabilities
