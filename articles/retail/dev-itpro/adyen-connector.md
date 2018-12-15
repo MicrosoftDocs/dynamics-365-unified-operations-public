@@ -57,7 +57,14 @@ The Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 
 The Dynamics 365 Payment Connector for Adyen is payment terminal agnostic. As long as a payment terminal is supported by the Adyen payment SDK, the connector should support the same device. 
 
 ### Re-use of existing devices
-In general, if a payment terminal is in 
+Existing devices that have been programmed to work with a payment processor should not be reused with a different payment processor. While it may technically feasible in some cases, it is not normal practice. Devices for use with Adyen should new from Adyen. 
+
+### Supported input methods
+
+| Connector type | Dip | Swipe | Tap | Manual entry | 
+| --- | --- | --- | --- | --- |
+| Card present | ✔ | ✔ | ✔ | - |
+| Card not present | - | - | - | ✔ |
 
 ### Supported payment instruments
 Supported debit and credit cards:
