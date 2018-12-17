@@ -116,7 +116,7 @@ An additional mapping also needs to be added. Select the last **None** field to 
 | -------------------------------|----------------------|
 | cdm_description (Description)  | NAMEALIAS (NAMEALIAS)|
 
-The updated mappings should look like the screenshot below.
+The updated mappings should look like the image below.
 
 ![Departments to Operating units task](./media/DepartmentMapping.png)
 
@@ -129,7 +129,7 @@ The Jobs to Job Detail task needs the following mappings updated.
 | cdm_name (Description)         | cdm_jobdescription(Job Description)|
 
 
-The updated mappings should look like the screenshot below.
+The updated mappings should look like the image below.
 
 ![Jobs to Job Detail task](./media/JobMapping.png)
 
@@ -149,7 +149,7 @@ The Gender field transform also needs to be updated. Select the **fn** (function
 | 75440002    | None                         | 
 | 75440003    | NonSpecific                  |
 
-The updated mappings should look like the screenshots below.
+The updated mappings should look like the images below.
 
 ![Workers to Worker task](./media/WorkerMapping.png)
 
