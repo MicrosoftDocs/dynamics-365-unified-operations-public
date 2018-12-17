@@ -51,14 +51,14 @@ This topic explains how you can use self-service to configure Retail Store Scale
 
 To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Run the Retail Store Scale Unit installer" section. To complete the configuration and installation, you must first do the initial configuration in Retail headquarters. Next, you must complete the installation. Finally, you must return to Retail headquarters to finish the configuration, so that Retail Store Scale Unit works correctly.
 
-    > [!IMPORTANT]
-    > For on-premises deployments, perform the following steps:
-    > a. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database group**.
-    > b. On the Action pane, select **+New**.
-    > c. In the **Name** field, enter the value **Default**.  Enter a description in the **Description** field, if desired.
-    > d. In the **Retail channel schema** field, select the drop-down value **AX7**.
-    > e. In the **Working folders** field, select the drop-down value **File storage**.
-    > f. On the Action Pane, select **Save**.
+> [!IMPORTANT]
+> For on-premises deployments, perform the following steps:
+> a. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database group**.
+> b. On the Action pane, select **+New**.
+> c. In the **Name** field, enter the value **Default**.  Enter a description in the **Description** field, if desired.
+> d. In the **Retail channel schema** field, select the drop-down value **AX7**.
+> e. In the **Working folders** field, select the drop-down value **File storage**.
+> f. On the Action Pane, select **Save**.
 
 1. In Retail headquarters, go to  **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 2. On the **Channel database** page, on the Action Pane, select **New**.
@@ -223,6 +223,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 The last steps require validation and verification that the Azure application ID (client ID) and key (secret) are correctly accepted in Retail headquarters, so that connections can be made between the environment and the new Retail Store Scale Unit.
 
 1. After the application ID (client ID) and key (secret) are created for Retail Store Scale Unit and entered in the installer, the application ID (client ID) must be accepted in Retail headquarters. In Retail headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+
 2. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Retail.
 
     1. In Retail headquarters, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
