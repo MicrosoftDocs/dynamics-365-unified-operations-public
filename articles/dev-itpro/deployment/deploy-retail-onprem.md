@@ -52,7 +52,7 @@ Before you can start installation of Retail channel components, you must first c
 2.	On each AOS computer, run the following PowerShell script:
 
 ```powershell
-.\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database> -DatabaseName 'Database name for AOS database ' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages>’ -SendProductSupportTelemetryToMicrosoft
+.\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages>’ -SendProductSupportTelemetryToMicrosoft
 ```
 > [!NOTE]
 > The parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
