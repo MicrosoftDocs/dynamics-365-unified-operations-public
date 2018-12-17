@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Maintain fixed assets (Major repair and Temporarily inactivate) (Russia)
+# Maintain fixed assets (Major repair and Temporarily inactivation) (Russia)
 [!include [banner](../includes/banner.md)]
 
 If a fixed asset is closed down or inactive for more than three months, or if refurbishment of the asset is conducted for more than 12 months, calculation of depreciation is suspended. It resumes when the fixed asset is put back into service.
