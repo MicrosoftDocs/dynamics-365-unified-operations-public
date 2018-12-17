@@ -38,17 +38,17 @@ This topic describes features that are either new or changed in Core HR.
 
 ## Changes
 
-### US - ACA (Affordable Care Act) Support for tax year 2018 1095-B and 1095-C forms
+### US - ACA (Affordable Care Act) support for tax year 2018 1095-B and 1095-C forms
 
-Each year ALEs (Applicable Large Employers) must provide each of its full-time employees with a 1095-C. In addition, if the employer provides self-insured coverage they must provide the 1095-C (if they are an ALE) and a 1095-B (if they are a small employer) to any employee, full-time or part-time, covered under one of their offered health plans. This feature provides printable forms for both the 1095-C and 1095-B.
+Each year, Applicable Large Employers (ALEs) must provide each full-time employees with a 1095-C. In addition, if the employer provides self-insured coverage they must provide the 1095-C (if they are an ALE) and a 1095-B (if they are a small employer) to any employee, full-time or part-time, covered under one of their offered health plans. This feature provides printable forms for both the 1095-C and 1095-B.
 
 ### During import SubmittedByPersonId field on HcmPerfJournalEntity is ignored
 
 When importing/exporting performance journal entries, the **Submitted by** field is ignored. With this change, the value **imported/exported** will reflect the value in the table during the export, when importing the system will be updated with the value supplied in the import file.
 
-### Analytics tab on 'Leave and absence' workspace throws "OpenConnectionError" for Non-System Admin roles
+### Analytics tab on 'Leave and absence' workspace displays "OpenConnectionError" error for non-system Admin roles
 
-With this update, no errors will be issued when opening the **Analytics** tab of on the **Leave and Absence** workspace.
+With this update, no errors will be issued when opening the **Analytics** tab on the **Leave and Absence** workspace.
 
 ### Employee self-service, Position Hierarchy drill-down from tile fails to get parent node
 
@@ -56,15 +56,15 @@ A change has been made to correct the error "Getting the parent node failed" whe
 
 ### Must be System Admin to see the Payroll tab in the Position Form
 
-A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change by default the Payroll Administrator will have access to the Ppyroll fields on the position form.
+A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change, by default, the Payroll Administrator will have access to the Payroll fields on the Position form.
 
-### Error when submitting performance review to manager and you have used %Reviews.PerfPeriod% placeholder in the Submission Instructions
+### Error when submitting performance review to manager and the %Reviews.PerfPeriod% placeholder is used in the Submission instructions
 
-A change has been made which corrects the "Null Reference" error when using the %Reviews.PerfPeriod% placeholder in the Submission Instructions.
+A change has been made that corrects the "Null Reference" error when using the %Reviews.PerfPeriod% placeholder in the Submission instructions.
 
-### Workforce PowerBI report shows error when worker seniority date is a leap day
+### Workforce Power BI report shows error when worker seniority date is a leap day
 
-With this change, leap days are supported in PowerBI.
+With this change, leap days are now supported in Power BI.
 
 ### Integration between Core HR and Attract
 
@@ -83,7 +83,7 @@ Job Opening
 Job Opening Participants
 -	Provides Hiring Manager
 
-Once a candidate is added to Personnel Management, the candidate can now also be dismissed using a new option available on the candidate card.
+When a candidate is added to Personnel Management, the candidate can now also be dismissed using a new option available on the candidate card.
 
 ## Coming soon
 
@@ -116,7 +116,7 @@ An additional mapping also needs to be added. Select the last **None** field to 
 | -------------------------------|----------------------|
 | cdm_description (Description)  | NAMEALIAS (NAMEALIAS)|
 
-The updated mappings should look like the image below.
+The updated mappings should look like the following image.
 
 ![Departments to Operating units task](./media/DepartmentMapping.png)
 
@@ -142,14 +142,14 @@ The Workers to Work task needs the following mappings updated.
 
 The Gender field transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
-| CDS Value                   | Finance and Operations value                     |
+| CDS value                   | Finance and Operations value                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Male                                             |
 | 75440001                    | Female                                           |
 | 75440002                    | None                                             | 
 | 75440003                    | NonSpecific                                      |
 
-The updated mappings should look like the images below.
+The updated mappings should look like the following images.
 
 ![Workers to Worker task](./media/WorkerMapping.png)
 
