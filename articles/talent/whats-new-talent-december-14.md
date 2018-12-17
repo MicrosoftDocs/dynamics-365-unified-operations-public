@@ -68,7 +68,7 @@ With this change, leap days are supported in PowerBI.
 
 ### Integration between Core HR and Attract
 
-A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following CDS entities are used:
+A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following CDS for Apps (CDS 2.0) entities are used:
 
 Job Application
 - Status Reason needs to be set to Offer Accepted
