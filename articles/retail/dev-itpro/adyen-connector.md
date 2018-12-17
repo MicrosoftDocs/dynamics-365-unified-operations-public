@@ -117,8 +117,8 @@ Supported wallets:
 
 | Scheme | Card present | Card not present |
 | --- | --- | --- |
-| Alipay | Future release | --- |
-| WeChat | Future release | --- |
+| Alipay | Future release | - |
+| WeChat | Future release | - |
 
 #Todo: Supported version. Manual entry, cash back not supported. Alipay and Wechat not supported yet. Supported input methods.
 ### Dynamics 365 Payment Features- Standard capabilities
