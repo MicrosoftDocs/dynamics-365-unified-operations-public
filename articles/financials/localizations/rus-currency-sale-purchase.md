@@ -116,7 +116,7 @@ Use the **Cash and bank management parameters** page to assign a number sequence
 
 ## Create a currency sale transaction
 
-### Create a payment journal for a foreign currency sale transaction
+### Create a foreign currency sale transaction
 
 1.	Go to **Accounts payable > Payments > Payment journal**. Create a new payment journal.
 2.	Click **Lines** and create a new journal line.
@@ -146,3 +146,41 @@ In the **Account** field, select the vendor account number which is associated w
 The **Transit account**, **Foreign counteragent**, **Contracts group**, and **Contract of the deal** fields are updated on the **Payment** tab.
 14.	Click **Print > Currency sale order** to print the currency sales order. The report contains the following information:
 15.	Validate and post the journal
+
+
+### Create transactions for bank commission and received currency as result of foreign currency sale.
+
+After you have posted payment order for currency sale, you can register bank commission and received currency (rubles) as result from the currency conversion. 
+
+1.	Go to **Accounts payable > Payments > Payment journal**. Create new journal. Click **Lines**
+2.	Create a new line for bank commission withdrawal. Fill the fields in line:
+
+| **Field** | **Description** |
+|-----------|---------------|
+|**Account** | Select the vendor account used on the previous step in currency sale transaction |
+|**Credit** | Enter the bank commission amount |
+| **Currency** | Select the currency of bank commission |
+|**Offset account type**| Select **Ledger** |
+|**Offset account**| Select the Ledger account for bank commission losses |.
+|Tab **Bank** | |
+|**Bank transaction type**| Select the transaction type with extended type **Currency sale** |
+|Tab **Payment** | |
+|**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit”|
+
+3.	Create a new line for received currency. Fill the fields in line:
+
+| **Field** | **Description** |
+|-----------|---------------|
+|**Account** | Select the vendor account used on the previous step in currency sale transaction |**Credit** | Enter the amount of received currency|
+|**Currency**| Select the accounting currency which is a currency received as result of foreign currency sale. The selected currency must be equal to accounting currency|
+|**Offset account type**| Select **Bank** |
+|**Offset account**| Select the Bank account to which the accounting currency is received |
+|Tab **Bank** | |
+|**Bank transaction type**| Select the transaction type with extended type **Currency sale** |
+|Tab **Payment**, group of fields **Currency conversion**| | |
+| **Currency** | Select the currency which was sold. The selected currency must differ from the accounting currency |
+| **Bank exchange rate** | Enter the bank exchange rate which was applied for foreign currency sale. |
+|Tab **Payment** | |
+|**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit”|
+
+4.	Post the journal.
