@@ -130,10 +130,13 @@
     - name: Set up training courses
       href: courses.md
   - name: Define and manage a benefits program
-    href: manage-benefit-program.md
-  - name: Benefit eligibility policies
-    href: benefit-eligibility-policies.md
     items:
+    - name: Manage a benefits program
+      href: manage-benefit-program.md
+    - name: Benefit eligibility policies
+      href: benefit-eligibility-policies.md
+    - name: Generate Affordable Care Act (ACA) reports
+      href: generate-aca-reports.md
     - name: Manage items lent to workers
       href: loan-items.md
   - name: Gather information using questionnaires
