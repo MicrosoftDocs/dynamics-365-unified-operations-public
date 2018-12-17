@@ -31,8 +31,8 @@ ms.dyn365.ops.version: 8.1
 # Major repair and Temporarily inactivation fixad assets (Russia)
 [!include [banner](../includes/banner.md)]
 
-If a fixed asset is closed down or inactive for more than three months, or if refurbishment of the asset is conducted for more than 12 months, calculation of depreciation is suspended. It resumes when the fixed asset is put back into service.
-For example, a fixed asset may be inactivated in the case of capital improvement.
+If a fixed asset is closed down or inactive for more than three months, or if refurbishment of the asset is conducted for more than 12 months, calculation of depreciation is suspended. It resumes when the fixed asset is put back into operation.
+For example, a fixed asset may be inactivated in the case of capital improvements.
 "Capital improvements" is a special asset category that includes capital renovations, improvements, technical updates, additional construction, and the acquisition of additional equipment for a fixed asset. When you update capital improvements, calculated depreciation isn't revalued. However, the depreciated cost and service life of the fixed asset are changed.
 
 When major repair work is done on a fixed asset, bonus depreciation can be applied to the asset on or after the transaction date of the major repair. You can create a transaction for a major repair of a fixed asset, and you can specify the bonus depreciation and bonus start date. The start date of the bonus depreciation can be the same as the transaction date of the major repair, or it can be the next depreciation date.
