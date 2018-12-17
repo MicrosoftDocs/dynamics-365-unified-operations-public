@@ -94,7 +94,7 @@ Before you can start installation of Retail channel components, you must first c
 17.  Select the **Security** tab.
 18.  Under the sub-heading **Transaction service legacy properties**, select the **Real-time Service profile** field, and select the newly created **Default** value.
 19.  Select the **Identity providers** tab.
-20.  On the **Identity providers** FastTab, select **+Add**.
+20.  On the **Identity providers** FastTab, select **Add**.
 21.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
 22.  Select **Save** on the Action pane.
 23.  Go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
