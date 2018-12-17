@@ -5,7 +5,7 @@ title: Installation steps for Retail channel components in an on-premises enviro
 description: This topic covers the installation steps for Retail channel components in an on-premises environment. 
 author: jashanno
 manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ Unlike a cloud deployment, an on-premises environment does not enable seamless, 
 
 ## Prerequisites 
 
-Before you can start installation of Retail channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md).  Further, update version 8.1.1 must be installed for Retail to function fully.  It is recommended to update to version 8.1.2.
+Before you can start installation of Retail channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md).  Further, version 8.1.1 must be installed for Retail to function fully.  It is recommended to update to version 8.1.2.
 
 > [!NOTE]
 > It is critical to ensure that a secure network, that is not publicly  accessible, is used to connect Retail Store Scale Unit (RSSU) to Retail headquarters. You must also restrict network access to Retail headquarters only to known RSSU devices via network filtering or other means.  This means that a firewall must exist and whitelisting is highly recommended.
@@ -62,7 +62,7 @@ Before you can start installation of Retail channel components, you must first c
 > This script will perform a variety of actions, including updating the Retail Service user and role and updating Retail registry keys.
   
 3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
-4.	Extract the zip file and copy all six Self-service installers (AsyncServerConnectorServiceSetup.exe, RealtimeServiceAX63Setup.exe, HardwareStationSetup.exe, ModernPosSetup.exe, ModernPosSetupOffline.exe, and StoreSystemSetup.exe) into the folder **selfservicepackages** defined and created in step 1 in each of the AOS machines.
+4.	Extract the zip file and copy all six self-service installers (AsyncServerConnectorServiceSetup.exe, RealtimeServiceAX63Setup.exe, HardwareStationSetup.exe, ModernPosSetup.exe, ModernPosSetupOffline.exe, and StoreSystemSetup.exe) into the folder **selfservicepackages** defined and created in step 1 in each of the AOS machines.
 5.  Navigate to the ADFS machine, then to the InfrastructureScripts folder.  This is the same file directory where the previously run Retail PowerShell script was located (**RetailUpdateDatabase.ps1**).  Find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
 6.  On the ADFS machine currently viewing, run this script in a new PowerShell window using the command **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'**, where the **HostUrl** value can be found in Service Fabric.  To find the **HostUrl** value, navigate to **Service Fabric** &gt; **Application fabric:/AXSF** &gt; **Details** &gt; **Aad_AADValidAudience**.
 7.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
