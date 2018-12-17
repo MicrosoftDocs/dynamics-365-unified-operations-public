@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)"
+# What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -40,45 +40,48 @@ This topic describes features that are either new or changed in Core HR.
 
 ### US - ACA (Affordable Care Act) Support for tax year 2018 1095-B and 1095-C forms
 
-Each year ALEs (Applicable Large Employers) must provide each of its full-time employees with a 1095-C.  In addition, if the Employer provides self-insured coverage they must provide the 1095-C (if they are an ALE) and a 1095-B (if they are a small employer) to any employee, full-time or part-time covered under one of their offered health plans. This feature provides printable forms for both the 1095-C and 1095-B.
+Each year ALEs (Applicable Large Employers) must provide each of its full-time employees with a 1095-C. In addition, if the employer provides self-insured coverage they must provide the 1095-C (if they are an ALE) and a 1095-B (if they are a small employer) to any employee, full-time or part-time, covered under one of their offered health plans. This feature provides printable forms for both the 1095-C and 1095-B.
 
 ### During import SubmittedByPersonId field on HcmPerfJournalEntity is ignored
 
-When importing/exporting performance journal entries the submitted by field is ignored. With this change the value imported/exported will reflect the value in the table during the export, when importing the system will be updated with the value supplied in the import file.
+When importing/exporting performance journal entries, the **Submitted by** field is ignored. With this change, the value **imported/exported** will reflect the value in the table during the export, when importing the system will be updated with the value supplied in the import file.
 
 ### Analytics tab on 'Leave and absence' workspace throws "OpenConnectionError" for Non-System Admin roles
 
-With this update, no errors will be issued when opening the analytics tab of on the Leave and Absence workspace.
+With this update, no errors will be issued when opening the **Analytics** tab of on the **Leave and Absence** workspace.
 
 ### Employee self-service, Position Hierarchy drill-down from tile fails to get parent node
 
-A change has been made to correct an error "Getting the parent node failed" when the position hierarchy has been personalized to appear on an existing workspace and a position is selected in the hierarchy.  
+A change has been made to correct the error "Getting the parent node failed" when the position hierarchy has been personalized to appear on an existing workspace and a position is selected in the hierarchy.  
 
-### Must be System Admin to see the Payroll Tab in the Position Form
+### Must be System Admin to see the Payroll tab in the Position Form
 
-A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change by default the Payroll Administrator will have access to the Payroll fields on the position form.
+A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change by default the Payroll Administrator will have access to the Ppyroll fields on the position form.
 
 ### Error when submitting performance review to manager and you have used %Reviews.PerfPeriod% placeholder in the Submission Instructions
 
-A change has been made which corrects the Null Reference error when using the %Reviews.PerfPeriod% placeholder in the Submission Instructions.
+A change has been made which corrects the "Null Reference" error when using the %Reviews.PerfPeriod% placeholder in the Submission Instructions.
 
 ### Workforce PowerBI report shows error when worker seniority date is a leap day
 
-With this change leap days are supported in PowerBI
+With this change, leap days are supported in PowerBI.
 
 ### Integration between Core HR and Attract
 
-A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the Personnel Management workspace, the following CDS entities are used:
+A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following CDS entities are used:
 
 Job Application
-•	Status Reason needs to be set to Offer Accepted
-•	Provides Candidate and Job Opening
+- Status Reason needs to be set to Offer Accepted
+-	Provides Candidate and Job Opening
+
 Candidate
-•	Provides Candidate information
+-	Provides Candidate information
+
 Job Opening
-•	Provides Job Opening ID and Job Opening Participants
+-	Provides Job Opening ID and Job Opening Participants
+
 Job Opening Participants
-•	Provides Hiring Manager
+-	Provides Hiring Manager
 
 Once a candidate is added to Personnel Management, the candidate can now also be dismissed using a new option available on the candidate card.
 
@@ -86,7 +89,7 @@ Once a candidate is added to Personnel Management, the candidate can now also be
 
 ### Leave and absence: Future leave and forecasting leave balances
 
-With the changes being made to allow for employees to forecast time off and request future time off requests without impacting their current time off balances, the way time off balances are displayed is also changing. 
+With the changes being made to allow for employees to forecast time off and request future time off requests without impacting their current time off balances, the way the time off balances are displayed is also changing. 
 
 The available balance currently displayed is the amount of time off available for requests including accruals through today and all approved leave requests to the end of time. 
 
@@ -96,7 +99,7 @@ When the ability to forecast is released, the balance displayed changes to  be t
 
 ### Mapping errors in the integration with Finance and Operations
 
-The following issues have been identified in the current template for integrating Talent with Finance and Operations. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
+The following issues have been identified in the current template for integrating Talent with Dynamics 365 for Finance and Operations. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
 
 >[!NOTE]
 > The Job Positions to Positions Parent Job Assignment task does not integrate data. This is an issue that is currently being researched. There is no workaround in the current mapping. 
@@ -113,7 +116,7 @@ An additional mapping also needs to be added. Select the last **None** field to 
 | -------------------------------|----------------------|
 | cdm_description (Description)  | NAMEALIAS (NAMEALIAS)|
 
-The updated mappings should look like this.
+The updated mappings should look like the screenshot below.
 
 ![Departments to Operating units task](./media/DepartmentMapping.png)
 
@@ -126,7 +129,7 @@ The Jobs to Job Detail task needs the following mappings updated.
 | cdm_name (Description)         | cdm_jobdescription(Job Description)|
 
 
-The updated mappings should look like this.
+The updated mappings should look like the screenshot below.
 
 ![Jobs to Job Detail task](./media/JobMapping.png)
 
@@ -146,7 +149,7 @@ The Gender field transform also needs to be updated. Select the **fn** (function
 | 75440002    | None                         | 
 | 75440003    | NonSpecific                  |
 
-The updated mappings should look like this.
+The updated mappings should look like the screenshots below.
 
 ![Workers to Worker task](./media/WorkerMapping.png)
 
