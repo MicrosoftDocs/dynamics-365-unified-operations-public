@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot environments deployed through self-service deployment
-description: This topic explains how to diagnose issues in an environment that was deployed using the self-service deployment experience.
+description: This topic explains how to troubleshoot and diagnose issues in an environment that was deployed using the self-service deployment experience.
 author: manado
 manager: AnnBe
 ms.date: 12/18/2018
