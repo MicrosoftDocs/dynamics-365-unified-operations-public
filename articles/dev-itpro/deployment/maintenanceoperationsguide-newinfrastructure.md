@@ -71,4 +71,9 @@ Environments deployed using the [self-service deployment](infrastructure-stack.m
 - **Query that needs to be executed**: Query that you want to execute.
 
 > [!NOTE]
-> This functionality will be self-service through Lifecycle Services (LCS) in early 2019.
+> This functionality will be self-service through Lifecycle Services (LCS) in early 2019. The access to the Azure SQL database will not be persistent; however, you can request access to the database directly through Lifecycle Services environment details page.   The process of getting access will be as follows:
+>- Enable access to Azure SQL through LCS by whitelisting the IP address of the machine that you will use to connect to the Azure SQL database using SQL management studio. 
+>- Once this is done, you can now request access to see the database credentials through LCS by entering a reason for requesting access. 
+>- As soon as you submit the request, it gets **auto-approved**. You will be able to see the database access credentials within a minute or two, in the LCS environment details page. 
+>- Please note that the credentials are valid for 8 hours and will expire after that duration. After 8 hours the access expires and you will need to request access again. 
+
