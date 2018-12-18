@@ -212,3 +212,49 @@ Post settlement of currency sale transactions to generate profit and loss transa
 8.	You can also post unsettlement of transactions. In the page **Bank groups** click **Functions >> Closed transitions editing**, mark transactions and click **Reverse**.
 
 
+
+## Create a currency purchase transaction
+
+### Create a transaction of rubles movement for currency purchase
+
+1.	Go to **Accounts payable > Payments > Payment journal**. Create a new payment journal.
+2.	Click **Lines** and create a new journal line. 
+
+|**Field** | **Description** | 
+|----------|-----------------|
+|**Account**| Select the vendor account number which is associated with Bank account used for currency conversion transactions. This value is filled automatically when the bank account is selected in the **Offset account** field and if **Debit** field has amount and **Bank transaction type** contains the transaction of extended type Value |
+| **Debit**, **Currency** | Enter the transaction amount in accounting currency which is rubles and the code of accounting currency|
+| **Offset account type**, **Offset account** |  Select “Bank” and the Bank account where from rubles are moved for currency purchase|.
+| **Method of payment** | Select the method of payment for the currency purchase created earlier|
+| Tab **Bank** | |
+| **Bank transaction type** | Validate the value, which is automatically filled from the **Method of payment**, or select the transaction type for the currency purchase transaction|
+| Tab **Payment** ||
+| **Posting profile** | Validate the value, which should contain the profile for posting on ledger account “money in transit”|
+
+3.	Click **Generate payments**.
+4.	Select **Method of payment** and select the method of payment for currency purchase.
+5.	In the **Bank account** field, select the bank account for the payment. Click **OK**.
+6.	In the opened **Bank currency transfer** dialog and fill required information:
+
+|**Field**|	**Comment**|
+|---------|---------|
+|**Worker**|	Select the worker responsible for currency purchase|
+|**Transit account**|	Select the bank account where foreign currency purchased should be received (result of currency conversion)|
+|**Currency**|	Choose currency of money to be received on transit account after foreign currency purchase|
+|**Bank exchange rate**|	Identify currency exchange rate of currency conversion, for printing in the currency purchase order|
+|**Supplier account**, **Purchase agreement**|	Select information about contract in currency which is the basis for currency purchase transaction|
+|**Print Document**|	Enable parameter to print Currency purchase order along with payment generation|
+
+13.	Click **OK**. The Payment status field of the payment journal line is updated as **Sent**. 
+
+The **Transit account**, **Foreign counteragent**, **Contracts group**, and **Contract of the deal** fields are updated on the **Payment** tab.
+
+The following is validated during currency purchase order generation: 
+-	Currency of **Transit account** is not equal to the accounting currency. 
+-	Currency of **Transit account** is equal to the currency chosen in the **Bank currency transfer** dialog.
+-	Currency of the payment journal line is accounting currency.
+
+14.	Click **Print > Currency purchase order** to print the currency purchase order (the template is taken from the transit bank account of **Bank currency transfer** dialog).
+15.	Validate and post the journal
+
+
