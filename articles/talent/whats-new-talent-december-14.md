@@ -54,9 +54,9 @@ With this update, no errors will be issued when opening the **Analytics** tab on
 
 A change has been made to correct the error "Getting the parent node failed" when the position hierarchy has been personalized to appear on an existing workspace and a position is selected in the hierarchy.  
 
-### Must be System Admin to see the Payroll tab in the Position Form
+### Must be System Admin to see the Payroll tab in the Position page
 
-A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change, by default, the Payroll Administrator will have access to the Payroll fields on the Position form.
+A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change, by default, the Payroll Administrator will have access to the Payroll fields on the Position page.
 
 ### Error when submitting performance review to manager and the %Reviews.PerfPeriod% placeholder is used in the Submission instructions
 
