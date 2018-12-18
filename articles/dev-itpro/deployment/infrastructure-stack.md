@@ -49,8 +49,8 @@ Customers using the self-service capabilities will see the following changes in 
 
 - You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu option**. 
 
-> [!Important]
-> Remote desktop access will be restricted only to environments deployed using the self-service deployment. There is no change to existing environments or existing customers.
+   > [!Important]
+   > Remote desktop access will be restricted only to environments deployed using the self-service deployment. There is no change to existing environments or existing customers.
 
    ![Self-service actions](media/Self-service-actions.png)
 
