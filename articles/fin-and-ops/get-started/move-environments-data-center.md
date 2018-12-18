@@ -28,6 +28,7 @@ ms.dyn365.ops.version: AX 7.0
 ---
 
 # Move environments between data centers
+
 [!include [banner](../includes/banner.md)]
 
 Occasionally, you must move Microsoft Dynamics 365 for Finance and Operations environments that are managed by Microsoft to a different Microsoft Azure data center. Here are some scenarios where this move might be required:
@@ -43,9 +44,11 @@ You can verify the data center that an environment is deployed to on the **Manag
 To change the data center, you must redeploy all environments. The process differs for sandbox environments (sandbox standard acceptance test environments, and sandbox develop and test environments) and production environments.
 
 ## Move sandbox environments
+
 Because this move is a self-service action, the partner and/or customer must move the existing sandbox environments without Microsoft involvement. Although this action requires little effort on the part of the partner or customer resources, completion of the end-to-end process might require a few days. To streamline the data movement between environments, you should develop a plan to determine the best sequence before you begin the move.
 
 ### Save data
+
 Before you begin the move, you must save your data.
 
 - **Tier 1 environment database that is based on Microsoft SQL Server:** Make a backup of the database.
@@ -57,6 +60,7 @@ Before you begin the move, you must save your data.
     - **Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.
 
 ### Move the environments
+
 After you've saved your data, follow these steps.
 
 1. Verify that all code packages have been uploaded to the Asset library in LCS.
@@ -69,11 +73,12 @@ After you've saved your data, follow these steps.
     5. In the **Geography/location** field, select the data center to use.
     6. After the environment is deployed, apply the code packages.
     7. If the redeployed environment is used as the build environment, complete the required configurations that are described in [Deployment with continuous build and test automation](../../dev-itpro/perf-test/continuous-build-test-automation.md).
-    8.	Restore the data.
+    8. Restore the data.
 
-> [!NOTE] 
+> [!NOTE]
 > - The movement of files that are stored in Azure Blob Storage isn't supported in sandbox environments.
 > - Retail customers should be aware that extra steps are required for Retail components to work correctly after a move. For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## Move production environments
+
 If you already have a production environment deployed, you must open a Support request to move the production environment to another data center after you've finished moving all the sandbox environments. This scenario is rare, and there is no automated/self-service action to complete the move. In this scenario, files that are stored in Azure Blob Storage will also be moved. For information about the maintenance window and downtime that are required in order to move a production environment to a different data center, see [Service Description](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409) and the related service-level agreement (SLA) documents.
