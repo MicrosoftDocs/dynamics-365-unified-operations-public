@@ -104,3 +104,8 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Request: Make Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, and/or IgnoreEDTRelation changeable via extension.
 - Problem: The ability to change the "Allow Edit", "Allow Edit On Create", "Mandatory", and "IgnoreEDTRelation" properties on Table Fields would result in breaking changes. Changing a field to allow editing changes the intent of the field. Not allowing a field to be edited can break existing behavior. Changing a relation breaks the original intent of that relation, which is a breaking change. Making a field mandatory can result in breaking existing behavior.
 - Workaround: Add new Table Fields via extension and control those as needed.
+
+### Why can't Security Privileges be made extensible?
+- Request: Make Security Privilege changeable via extension.
+- Problem: The ability to change the Security Privilege would result in breaking changes since they are the lowest level of security metadata.
+- Workaround: Create a new Security Privilege if needed and use that.
