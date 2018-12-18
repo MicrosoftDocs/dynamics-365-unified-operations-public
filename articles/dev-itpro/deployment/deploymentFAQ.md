@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 8.1.1
 
 This topic provides answers to some frequently asked questions about [self-service deployment](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
-## Why do I see only application version 8.1.1 and Platform update 21 when I try to deploy my sandbox environment using self-service deployment? 
+## Why do I see only application version 8.1.1 and Platform update 21 and above when I try to deploy my sandbox environment using self-service deployment? 
 
-Self-service deployment supports only application version 8.1.1 with Platform update 21.  
+Self-service deployment supports only application version 8.1.1 with Platform update 21 and above at this time.  
 
 ## My development environment is on application version 8.1. Am I still able to move my customization to the sandbox environment? 
 
