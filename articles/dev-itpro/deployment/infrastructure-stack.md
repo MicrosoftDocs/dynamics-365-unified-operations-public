@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 8.1.1
 Self-service deployment is available for Dynamics 365 for Finance and Operations **Tier 2 through 5** cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
 
 [!Important]
-We are rolling out this experience in waves. Currently, this experience is available only to a small number of NEW customers signing up for Finance & Operations. There is no change to the experience of our current customers having existing environments. 
+We are rolling out this experience in waves. At this time, this experience is available only to NEW customers signing up for Finance & Operations. Also, not all customer signing up for Finance & Operations will see the experience. There is no change to the experience of our current customers having existing environments. 
 
 ## What’s new or changed
 
@@ -48,7 +48,7 @@ Customers using the self-service capabilities will see the following changes in 
 - You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu option**. 
 
 [!Important]
-Remote desktop access will not be avaiable only to environments deployed using the self-service deployment. There is no change to the existing environments.
+Remote desktop access will be restricted only to environments deployed using the self-service deployment. There is no change to existing environments or existing customers.
 
    ![Self-service actions](media/Self-service-actions.png)
 
