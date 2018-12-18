@@ -35,7 +35,8 @@ ms.dyn365.ops.version: 8.1.1
 Self-service deployment is available for Dynamics 365 for Finance and Operations **Tier 2 through 5** cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
 
 [!Important]
-We are rolling out this experience in waves. At this time, this experience is available only to NEW customers signing up for Finance & Operations. Also, not all customer signing up for Finance & Operations will see the experience. There is no change to the experience of our current customers having existing environments. 
+We are rolling out this experience in waves. At this time, this experience is available only to NEW customers signing up for Finance & Operations. There is no change to the experience of our current customers having existing environments. 
+**Note:** Not all NEW customers signing up for Finance & Operations will see the experience. We will gradually increase the number of NEW customers seeing this experience.
 
 ## What’s new or changed
 
