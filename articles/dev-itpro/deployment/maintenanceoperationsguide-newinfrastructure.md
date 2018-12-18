@@ -76,5 +76,5 @@ Environments deployed using the [self-service deployment](infrastructure-stack.m
 >- Once this is done, you can now request access to see the database credentials through LCS by entering a reason for requesting access. 
 >- As soon as you submit the request, it gets **auto-approved**. You will be able to see the database access credentials within a minute or two, in the LCS environment details page. 
 >- Please note that the credentials are valid for 8 hours and will expire after that duration. After 8 hours the access expires and you will need to request access again. 
-> More specifics on how to perform the above steps  will be published as soon as this feature is made available through Lifecycle Services.
+> More specifics on how to perform the above steps  will be published as soon as this feature is made available in January through Lifecycle Services.
 
