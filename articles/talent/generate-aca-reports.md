@@ -5,7 +5,7 @@ title: Generate Affordable Care Act (ACA) reports
 description: Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the Employer Mandate portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -59,7 +59,7 @@ On the **Dependent coverage date manager** page, you can indicate the dates the 
 ## Generate 1095B and 1095C forms
 You can also generate 109-B and 1095-C forms from with in the product, and distribute them to each of your employees. Electronically generating 1095-C and the corresponding 1094-C transmittal files which can be used to send to the IRS, can also be generated from the system.  
 
-When generating the 1095-C form enter in the appropriate calendar or tax year as well as if you want to print the two-page or three page form. The three-page form is only needed if the Employer provided self-insured coverage and an employee has more than six covered dependents including themselves. When generating the Two page form the system will automatically detect if an employee has more than 6 covered dependents and will not include that employee when generating the form. Additionally, when generating the three-page form the system will only include those employees that have more than six covered dependents.
+When generating the 1095-C form, enter in the appropriate tax year and indicate if social security numbers should be masked. If you are printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. It’s recommended that you increase the **Maximum file size** in the **Document management parameters** window to 150 MB.
 
 ## Viewing information
 You can use the **Worker Affordable Care coverage** page to see which employees have been assigned to each coverage group, which employees don’t need to be included on a report, and which employees are unassigned.

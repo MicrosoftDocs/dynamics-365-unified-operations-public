@@ -34,13 +34,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane in Microsoft Dynamics 365 for Finance and Operations. 
+Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane in Microsoft Dynamics 365 for Finance and Operations.
 
 The process for setting up a custom Help solution consists of publishing content as HTML, deploying a site and extending the help pane to connect to the site.
 
 ## Resources
+
 - [Create Custom Help for Finance and Operations (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## See also
+
 [Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md)
