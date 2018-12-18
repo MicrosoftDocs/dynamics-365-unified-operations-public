@@ -5,7 +5,7 @@ title: Unit of measure conversion per product variant
 description: 
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,9 +44,7 @@ Configure the parameters for using the feature for products enabled for **All pr
 
 ### Set up a product for unit conversion per variant
 
-Product variants can only be created for products of **Product subtype**: **Product master**. For more information about creating a product master with variants see:
-
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/tasks/create-product-master
+Product variants can only be created for products of **Product subtype**: **Product master**. For more information, see [Create a product master](tasks/create-product-master.md).
 
 The feature is not enabled for products that are set up for Catch Weight processes. 
 
