@@ -39,42 +39,46 @@ This topic describes the various elements that make up a workflow.
 A workflow consists of elements. The sections that follow describe each type of element.
 
 ## Tasks
+
 A *task* is a unit of work that must be performed. Two types of tasks can be added to a workflow: manual tasks and automated tasks.
 
 ### Manual task
 
 A *manual task* is a unit of work that must be performed by a user. For example, an expense report workflow can have manual tasks that require the assigned users to complete the following actions:
 
--   Review the receipts that are submitted together with an expense report.
--   Call an employee's manager.
+- Review the receipts that are submitted together with an expense report.
+- Call an employee's manager.
 
 ### Automated task
 
 An *automated task* is a unit of work that must be performed by the system. No human interaction is required. For example, a sales order workflow can have automated tasks that require the system to complete the following actions:
 
--   Perform a credit check.
--   Create a customer record for the customer, if a record doesn't already exist.
+- Perform a credit check.
+- Create a customer record for the customer, if a record doesn't already exist.
 
 ## Approval processes
+
 An *approval process* is a process that consists of separate steps. At each approval step, the user can perform the following actions:
 
--   Approve the document.
--   Reject the document.
--   Request a change to the document.
--   Assign the document to another user for approval.
+- Approve the document.
+- Reject the document.
+- Request a change to the document.
+- Assign the document to another user for approval.
 
 ## Line-item workflow elements
+
 A workflow can be created to process either documents or the line items on a document. For example, you've created an approval workflow for timesheets. (We will refer to this workflow as the *document workflow*.) You can add a *line-item workflow* element to that document workflow. When the line-item element is run, each line item on the document is submitted for processing. You might want all the line items to be processed by the same line-item workflow, or you might want each line item to be processed by a different line-item workflow. Imagine that an employee has submitted a timesheet that resembles the following figure.
 
-![Workflow with line items](./media/workflow_lineitemworkflow.gif) 
+![Workflow with line items](./media/workflow_lineitemworkflow.gif)
 
 In this scenario, you might want to create the following line-item workflows:
 
--   **Line-item workflow 1** – This workflow is used to process line items where the project ID is 1111.
--   **Line-item workflow 2** – This workflow is used to process line items where the project ID is 2222.
--   **Line-item workflow 3** – This workflow is used to process line items where the project ID is 3333.
+- **Line-item workflow 1** – This workflow is used to process line items where the project ID is 1111.
+- **Line-item workflow 2** – This workflow is used to process line items where the project ID is 2222.
+- **Line-item workflow 3** – This workflow is used to process line items where the project ID is 3333.
 
 ## Flow-control elements
+
 The following elements let you design workflows that have alternate branches or branches that run at the same time.
 
 ### Manual decision
@@ -92,6 +96,3 @@ A *parallel activity* is a workflow element that includes two or more workflow b
 ### Subworkflow
 
 A *subworkflow* is a workflow that runs in the context of another workflow.
-
-
-

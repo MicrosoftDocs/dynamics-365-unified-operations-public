@@ -55,7 +55,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding a project</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
-  
+
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
@@ -69,7 +69,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../financials/public-sector/public-sector-functionality.md">Public sector</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Human resources</a></h3>
+<h3><a href="hr/hr-landing-page.md">Human resources</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Benefits</a></p>
 <p><a href="../talent/performance-management-overview.md">Employee development and training</a></p>
 <p><a href="../talent/questionnaires.md">Questionnaire</a></p>
