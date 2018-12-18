@@ -184,3 +184,37 @@ After you have posted payment order for currency sale, you can register bank com
 |**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit”|
 
 4.	Post the journal.
+
+### Post settlement of currency sale transactions
+
+Post settlement of currency sale transactions to generate profit and loss transactions from the currency sale and currency exchange difference transactions.
+
+1.	Go to **Cash and bank management > Setup > Bank groups** to open list of banks.
+2.	Select a bank, and then click **Functions > Settle open transactions** to settle currency sale transactions.
+3.	In the **Settlement posting date** field, select the posting date type: **Latest date**, **Today’s date** or **Selected date**, enter the posting date manually if you have chosen the latter.
+4.	Review transactions to be settled: 
+
+-	Tab **Overview** contains information specific to currency sale the fields **Transit account** and **Bank account - inflow**:
+
+     Positive transactions have in the field **Transit account** the value equal to the transit bank account which was defined by user on the dialog **Bank currency transfer** in the field **Transit account** for currency sale transaction.
+
+     Negative transactions have in the field **Bank account - inflow** the value equal to the bank account to which the accounting currency amount is received as result of the foreign currency sale transaction.
+
+     Values in these fields should be equal in transactions marked for settlement. 
+
+-	Tab **General** contains information specific to currency sale, in the group of fields **Currency conversion**
+
+5.	Mark transactions for settlement. The following information is validated during settlement:
+
+-	Both transactions have **Transaction type** of extended type **Currency sale**
+-	The value in the field **Currency** of group **Currency conversion** on tab **General** of positive transaction (foreign currency sale) is equal to the value in the field **Currency** on tab **Overview** of negative transaction (accounting currency receipt as result of foreign currency sale)
+-	The bank account number specified in the **Transit account** field of positive transaction is equal to the account number specified in the field **Bank account - inflow** of negative transaction.
+
+6.	Click **Post**. As result, the following transactions are generated:
+-	Unrealized currency exchange difference (if the currency exchange rate of sold foreign currency on the date of currency sale differs from the currency exchange rate of sold foreign currency on the accounting currency receipt date)
+-	Currency sale profit or loss (in case of bank exchange rate of sold foreign currency differs from the Central bank exchange rate of sold foreign currency on the date of accounting currency receipt transaction)
+
+7.	You can review the generated transactions in the page **Bank groups** by clicking the **Transactions** button.
+8.	You can also post unsettlement of transactions. In the page **Bank groups** click **Functions >> Closed transitions editing**, mark transactions and click **Reverse**.
+
+
