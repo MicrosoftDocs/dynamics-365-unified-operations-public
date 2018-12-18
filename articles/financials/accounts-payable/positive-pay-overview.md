@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank. 
+This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank.  
 
 Positive pay is used to generate an electronic list of checks that can be presented to a bank. Positive pay files can help banks prevent check fraud. You set up positive pay to generate an electronic list of checks every time that checks are printed. Then, when a check is presented to the bank, the bank compares the check with the list of checks that you previously submitted. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
 
