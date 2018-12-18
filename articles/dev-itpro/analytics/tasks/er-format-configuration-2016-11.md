@@ -50,6 +50,7 @@ The following steps explain how a user in the System Administrator or Electronic
  > [!NOTE]
  > If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.
 
+
 ## Design the format of an electronic document
 1. Click **Designer**.
 2. Click **Add root** to open the drop dialog.

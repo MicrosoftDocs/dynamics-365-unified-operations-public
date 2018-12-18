@@ -168,13 +168,24 @@ To learn how to register a new ER provider, play the task guide, **ER Create a c
 
 #### Repository
 
-An ER repository stores ER configurations. Two types of ER repositories are currently supported, **Operations resources** and **LCS project**.
+An ER repository stores ER configurations. Four types of ER repositories are currently supported: **Operations resources**, **LCS project (LCS)**, **File system**, and **Regulatory Configuration Services (RCS)**.
 
 An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, releases as part of the Finance and Operations solution. Those configurations can be imported into the current Finance and Operations instance and used for electronic reporting. They can also be used for additional localizations and customizations.
 
 An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected at the repository registration stage. ER lets you upload shared configurations from the current Finance and Operations instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current Finance and Operations instance.
 
-Required **LCS project** repositories can be registered individually for each configuration provider of the current Finance and Operations instance. Each repository can be dedicated to a specific configuration provider.
+A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can  import configurations from a **File system** repository into the current Finance and Operations instance. 
+Note that this repository type is accessible in the following Dynamics 365 for Finance and Operations environments:
+- cloud hosted environments deployed for development purposes (containing test models of enclosed suites)
+- deployed locally environments (on-premise or local business data deployment (LBD))
+
+Visit the [Import Electronic reporting (ER) configurations](/electronic-reporting-import-ger-configurations.md) page for more details about this.
+
+An **RCS instance** repository provides access to the list of configurations of a specific RCS instance that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current Finance and Operations instance and used for electronic reporting.
+
+Visit the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](/rcs-download-configurations.md) page for more details about this.
+
+Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current Finance and Operations instance. Each repository can be dedicated to a specific configuration provider.
 
 ## Supported scenarios
 ### Building a data model
