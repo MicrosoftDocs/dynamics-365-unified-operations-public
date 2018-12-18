@@ -5,7 +5,7 @@ title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -107,5 +107,5 @@ Some extensibility requests break changes. Some of the more common potentially b
 
 ### Why can't Security Privileges be made extensible?
 - Request: Make Security Privilege changeable via extension.
-- Problem: The ability to change the Security Privilege would result in breaking changes since they are the lowest level of security metadata.
+- Problem: The ability to change the Security Privilege would result in breaking changes because this are the lowest level of security metadata.
 - Workaround: Create a new Security Privilege if needed and use that.
