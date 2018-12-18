@@ -57,16 +57,10 @@ Use the **Currency revaluation accounts** page to set up the loss or gain calcul
 
 1.	Go to **General ledger > Currencies > Currency parameters**.
 2.	In the **Legal entities** field, select a company.
-3.	On the **General** FastTab, in the **Ledger posting** grid, select the main accounts to post the exchange rate profits or losses for ledger transactions.
-4.	On the **Sales/customers** FastTab, in the **Customer posting** grid, select the main accounts to post the exchange rates profits or losses for customer transactions.
-5.	In the **Expense code** field, select the expense code that corresponds to the transaction for an exchange rate loss that occurs when transactions are settled for a customer. 
-6.	In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate profit that occurs when transactions are settled for a customer. 
-7.	On the **Purchases/Vendors** FastTab, in the **Vendor posting** grid, select the main accounts for vendor posting.
-8.	In the **Revenue code (currency conversion)** field, select the revenue code for a currency conversion transaction if the exchange adjustment is a profit.
-9.	In the **Expense code (currency conversion)** field, select the revenue code for a currency conversion transaction if the exchange adjustment is a loss.
-10.	On the **Purchases/Advance holders** FastTab, select the relevant main accounts for advance holder posting.
-11.	In the **Expense code** field, select the expense code that corresponds to the transaction for an exchange rate loss that occurs when transactions are settled for an advance holder.
-12.	In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate profit that occurs when transactions are settled for an advance holder.
+3.	On the **Purchases/Vendors** FastTab, define 
+
+- ledger accounts for currency conversion: **Conversion gain** and **Conversion loss**.
+- revenue and income codes for currency conversion: **Revenue code (currency conversion)**, **Expense code (currency conversion)**.
 
 
 ### Set up a bank which is used in currency conversion transactions
