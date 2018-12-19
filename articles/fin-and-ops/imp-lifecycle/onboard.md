@@ -43,7 +43,7 @@ After your LCS **Implementation project** workspace is provisioned, the Microsof
 
 The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype. During this call, the team will introduce the FastTrack program and help you with the initial configuration of the LCS project and related tasks:
 
-- Tenant validation 
+- Tenant validation
 - Introduction to LCS
 - Setup of LCS project users
 - Setup of Microsoft Azure DevOps
