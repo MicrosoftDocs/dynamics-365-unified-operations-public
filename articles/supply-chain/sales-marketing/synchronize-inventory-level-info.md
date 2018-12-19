@@ -40,14 +40,14 @@ This topic discusses the templates and underlying tasks that are used to synchro
 The following template and underlying tasks are used to run synchronization of inventory on-hand levels from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 
 **Name of the template in Data integration:**
-	- Product Inventory (Fin and Ops to Field Service)
+- Product Inventory (Fin and Ops to Field Service)
   
 **Names of the tasks in the Data integration project:**
-	- Product inventory
+- Product inventory
 
 The following synchronization tasks are required before synchronization of inventory levels can occur:
-	- Warehouses (Fin and Ops to Field Service) 
-	- Field Service Products with Inventory unit (Fin and Ops to Sales) 
+- Warehouses (Fin and Ops to Field Service) 
+- Field Service Products with Inventory unit (Fin and Ops to Sales) 
 
 ## Entity set
 
