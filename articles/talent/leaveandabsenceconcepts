@@ -202,6 +202,61 @@ Current balance (7) = Accrual amount (5*3) - Request amount (8)
   - Monday forecasted balance = Current balance - Request(s) + Accrual(s) - Carry-forward adjustment
  
 
+### Forecasted balance examples
+ 
+ #### Annual plan
+ 
+ Plan setup:
+ 
+| Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|------------------|-------------------|----------------------|-----------------------|
+|     1/1/2018    |     1/1/2018     |       Annual      |    Plan start date   | End of accrual period |
+ 
+Accruals are processed on **2/15/2019** (to include the entire period ). 
+
+Results: 
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance  | Forecasted balance (as of 2/15/2019) |
+|----------------|-----------------|-----------------------|------------------|--------------------------------------|
+|       20       |        0        |          20           |        40        |                40                    |
+
+Forecasted balance (40) = Accrual amount (20) + Current balance (40) - Carry-forward adjustment (20)
+
+ #### Semimonthly plan
+
+ Plan setup:
+ 
+| Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|------------------|-------------------|----------------------|-----------------------|
+|     1/1/2018    |     2/1/2018     |    Semimonthly    |    Plan start date   | End of accrual period |
+ 
+Accruals are processed on **2/15/2019** (to include the entire period ). 
+
+Results: 
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance  | Forecasted balance (as of 2/15/2019) |
+|----------------|-----------------|-----------------------|------------------|--------------------------------------|
+|       5        |        0        |          20           |        40        |                35                    |
+
+Forecasted balance (35) = Accrual amount (5*3) + Current balance (40) - Carry-forward adjustment (20)
+
+#### Monthly plan
+
+ Plan setup:
+ 
+| Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|------------------|-------------------|----------------------|-----------------------|
+|     1/1/2018    |     2/1/2018     |    Semimonthly    |    Plan start date   | End of accrual period |
+ 
+Accruals are processed on **2/15/2019** (to include the entire period ). 
+
+Results: 
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance  | Forecasted balance (as of 2/15/2019) |
+|----------------|-----------------|-----------------------|------------------|--------------------------------------|
+|       10       |        0        |          20           |        40        |                30                    |
+
+Forecasted balance (30) = Accrual amount (10*1) + Current balance (40) - Carry-forward adjustment (20)
  
  
  
