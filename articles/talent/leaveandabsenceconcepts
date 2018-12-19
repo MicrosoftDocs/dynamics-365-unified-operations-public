@@ -1,0 +1,82 @@
+---
+# required metadata
+
+title: Leave and absence concepts and balances
+description: This topic describes leave and absence concepts and how time off balances are determined. 
+author: jcart
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: LeaveAbsenceWorkspace
+audience: Application user
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Talent
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: jcart
+ms.search.validFrom: 2019-01-01
+ms.dyn365.ops.version: 
+---
+
+# Leave and absence concepts
+
+[!include[banner](../includes/banner.md)]
+
+The concepts and terms below help to determine how an employee is awarded time off and how his or her balances are calculated. For more information on leave and absence management, see 
+[Leave and absence management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/leave-absence-overview).
+
+
+## Leave plan details
+
+### Start date
+- Start of accrual processing and serves as the anniversary date to calculate carry-forward amounts
+
+## Accruals
+
+Accruals determine when and how often an employee is awareded time off. Policies areoun when the accruals should be awarded as well as proration are also
+defined in the accruals section. 
+
+### Accrual frequency
+- How often leave is accrued or awarded
+- Options include:
+  - Daily
+  - Weekly
+  - Biweekly
+  - Semimonthly
+  - Monthly
+  - Quarterly
+  - Semiannually
+  - Annually
+  - None
+
+### Accrual period basis
+- Determines the date used for calculating accrual periods
+- Options include:
+  - Plan start date
+  - Employee specific date
+    - When selected, determines the source for the intiail date value used for calculating accrual periods. 
+    - Options include:
+      - Custom
+      - Anniversary date
+      - Original hire date
+      - Seniority date
+      - Worker's adjusted start date
+      - Worker's start date
+
+### Accrual award date
+- Determines when an employee is awarded time off. 
+- Options included:
+  - Accrual period end date
+    - Employee will be awarded time off on the last day of the award period
+  - Accrual period start date
+    - Employee will be awarded time off on the first day of the award period
+
