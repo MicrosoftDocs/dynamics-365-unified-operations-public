@@ -36,7 +36,7 @@ This topic provides answers to some frequently asked questions about [self-servi
 
 ## Why do I see only application version 8.1.1 and Platform update 21 and above when I try to deploy my sandbox environment using self-service deployment? 
 
-Self-service deployment supports only application version 8.1.1 with Platform update 21 and above at this time.  
+Currently, self-service deployment supports only application version 8.1.1 with Platform update 21 and above.  
 
 ## My development environment is on application version 8.1. Am I still able to move my customization to the sandbox environment? 
 
