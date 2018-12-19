@@ -258,12 +258,53 @@ Results:
 
 Forecasted balance (30) = Accrual amount (10*1) + Current balance (40) - Carry-forward adjustment (20)
  
+ ### Proration balance examples
+ 
+ #### Prorated monthly plan
+ 
+ Plan setup:
+ 
+| Plan start date | Accrual frequency | Accrual period basis | 
+|-----------------|-------------------|----------------------|
+|     1/1/2018    |      Monthly       |    Plan start date  | 
+ 
+Results: 
+
+| Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
+|---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
+| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.53    |
  
  
+  #### Full accrual monthly plan
  
+ Plan setup:
  
+| Plan start date | Accrual frequency | Accrual period basis | 
+|-----------------|-------------------|----------------------|
+|     1/1/2018    |      Monthly       |    Plan start date  | 
  
+Results: 
+
+| Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
+|---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
+| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 3.00    |
  
+  #### No accrual monthly plan
+ 
+ Plan setup:
+ 
+| Plan start date | Accrual frequency | Accrual period basis | 
+|-----------------|-------------------|----------------------|
+|     1/1/2018    |      Monthly       |    Plan start date  | 
+ 
+Results: 
+
+| Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
+|---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
+| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
  
  
  
