@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/17/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -275,13 +275,13 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DMFExportToPackageForceSync           | Enables synchronous execution of data package API export. By default, it's asynchronous. |
 | EntityNamesInPascalCaseInXMLFiles     | Enables behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
 | DMFByodMissingDelete                  | Enables the old behavior where under certain conditions, certain delete operations were not synced to BYOD using change tracking. |
-| DMFEnableExportFieldsMappingCache     | Enables caching logic when building target field mapping. |
+| DMFDisableExportFieldsMappingCache    | Disables caching logic when building target field mapping. |
 | EnableAttachmentForPackageApi         | Enables attachments functionality in the package API. |
 | FailErrorOnBatchForExport             | Enables fail on error at execution unit or level for export jobs. |
 | IgnorePreventUploadWhenZeroRecord     | Disables 'prevent upload when zero records' functionality. |
 | DMFInsertStagingLogToContainer        | By default this is ON. This improves performance and functional issues with error logs in the staging table. |
 | ExportWhileDataEntityListIsBeingRefreshed     | When enabled, additional validations are made on mappings when a job is scheduled while entity refresh is in progress. By default, this is OFF.|
-| DMFDisableXSLTTransformationForCompositeEntity     | By default, this is OFF. This can disable the application of transformations on composite entities. |
+| DMFDisableXSLTTransformationForCompositeEntity     | This can disable the application of transformations on composite entities. |
 | DMFDisableInputFileCheckInPackageImport     | Additional validations are made to ensure if any entity file is missing from a data package, error message is shown. This is the default behavior. If required, this can be turned OFF by this flight.  |
 
 
