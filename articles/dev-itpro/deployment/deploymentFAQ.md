@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deployment FAQ
+title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: sarvanisathish
 manager: AnnBe
@@ -59,44 +59,43 @@ Application version 8.1 with Platform update 20 is the minimum supported version
 
 You may be trying to reuse the environment name of a deployment that you just deleted. Wait 5–10 minutes before retrying the deployment. 
 
-## I do not have Remote desktop access to my Sandbox environment. How do I perform the critical actions that need Remote desktop access today?
+## I don't have Remote Desktop access to my sandbox environment. How do I perform critical actions that require Remote Desktop access today?
 
-While you will no longer have remote desktop access, you will be able to continue operating your Tier 2+ sandbox environments, as we are providing self-service capabilities and tools to perform the common actions as listed below.
+Although you will no longer have Microsoft Remote Desktop access, you can continue to operate your Tier 2+ sandbox environments, because Microsoft is providing self-service capabilities and tools that you can use to perform the common critical actions that are described here.
 
-### Access Azure SQL database
-You may access the SQL Azure database by following the below steps.
-1. Whitelist the IP address of the machine that you will use to connect to the Azure SQL database, using SQL management studio, from LCS.  
-2. Request access to **see** the database credentials through LCS JIT. You will need to provide a reason for requesting access. 
-3. As soon as you submit the request, it gets **auto-approved**. Within a minute or two, you will be able to **see the database access credentials** in the LCS environment details page. 
+### Access the Azure SQL database
+You can access the Microsoft Azure SQL database by following these steps.
 
-You may use the credentials to connect to the Azure SQL database. **Note:** The credentials are valid for 8 hours and will expire after that duration. On expiration, you will need to request access again. 
+1. Whitelist the IP address of the machine that you will use to connect to the SQL database, using Microsoft SQL Server Management Studio, from Microsoft Dynamics Lifecycle Services (LCS).
+2. Use LCS just-in-time (JIT) to request access to see the database credentials. You must provide a reason for requesting access. 
 
-### Access F&O Logs
-You are able to view and download all F&O logs on the activity tab in the LCS environment monitoring page.
+As soon as you submit the request, it's automatically approved. Within a minute or two, you will be able to see the database access credentials on the LCS environment details page. You can use the credentials to connect to the SQL database.
+
+> [!NOTE]
+> The credentials are valid for eight hours, and then they will expire. After the credentials expire, you will have to request access again. 
+
+### Access Finance and Operation logs
+You can view and download all Finance and Operations logs from the **Activity** tab on the LCS environment monitoring page.
 
 ### Use perfmon tools
-While you will no longer be able to remote desktop in and use perfmon.exe to diagnose performance issues, you will be able to monitor critical health metrics on CPU and memory consumption through LCS. In addition, you will have the option to run pre-defined queries on demand and execute pre-defined actions to mitigate performance issues on your Tier 2+ environments. 
+Although you can no longer use Remote Desktop and then use perfmon.exe to diagnose performance issues, you can monitor critical health metrics for CPU and memory consumption through LCS. In addition, you can run predefined queries on demand, and you can run predefined actions to mitigate performance issues on your Tier 2+ environments. 
 
-### Access Self-service Logs
-All logs related to any self-service operations on the environment through LCS, such as deployment, servicing, database movement, are available for download from LCS. You may download the log folders from the LCS environment history page.
+### Access self-service logs
+All logs that are related to self-service operations that are performed on the environment through LCS are available for download from LCS. These self-service operations include deployment, servicing, and database movement. You can download the log folders from the LCS environment history page.
 
-### Set Maintenance mode on/off
-You will be able to turn-on and off maintenance mode on your environment through a self-service action on LCS that will be available with the January 2019 release. 
+### Turn Maintenance mode on/off
+Starting in the January 2019 release, you will be able to turn Maintenance mode in your environment on and off through a self-service action in LCS.
 
 ### Restart services
-You will able to restart services through a self-service action on LCS that will be available with the January 2019 release.
+Starting in the January 2019 release, you will able to restart services through a self-service action in LCS.
 
-### Configure Regression Suite automation tool
-We are working on tooling by which you will no longer need Remote desktop access to update the certificate thumbprints in the wif.config file. This is scheduled for release in February 2019. If you need to use the Regression suite automation tool before then, please log a support request.
+### Configure the Regression suite automation tool
+Microsoft is working on tooling that will let you update certificate thumbprints in the wif.config file without having to use Remote Desktop. This tooling is scheduled for release in February 2019. If you must use the Regression suite automation tool before then, log a support request.
 
-## I need to perform a critical action listed above and the self-service feature is not yet available. How do I get help?
+## I must perform one of the critical actions that are listed earlier in this topic, but the self-service feature isn't yet available. How do I get help?
 
-Please log a support ticket and we will help you perform the necessary action on your environment.
+Log a support ticket, and Microsoft will help you perform the action on your environment.
 
-## I do not have Remote desktop access to my Sandbox environment. And I do not see my critical action listed above. How do I get help?
+## I don't have Remote Desktop access to my sandbox environment, and the critical action that I must perform isn't listed in this topic. How do I get help?
 
-If you do not see your critical action in the list above, do comment below or log a documentation bug and we will address your requirement.
-
-
-
- 
+If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
