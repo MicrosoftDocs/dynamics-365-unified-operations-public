@@ -48,16 +48,16 @@ Before you can start installation of Retail channel components, you must first c
 
 ## Installation steps
 
-1.	On the previously created [file share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile), create a new folder called **selfservicepackages** on each AOS machine.
-2.	On each AOS computer, run the following PowerShell script:
+1.	On the previously created [file share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile), create a new folder called **selfservicepackages** in the root directory of the share location.  
+2.	On each AOS computer, create an easily accessible directory, such as **C:/selfservicepackages**.  Then run the following PowerShell script on that AOS computer:
 
 ```powershell
-.\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages>’ -SendProductSupportTelemetryToMicrosoft
+.\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
 ```
   > [!NOTE]
   > - The parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
   > - The parameter **-envName** should be known based on creation when the environment is generated.
-  > - The parameter **-RetailSelfServicePackages** is the full path location created in the first step (**selfservicepackages**).
+  > - The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
   > - The parameter **-SendProductSupportTelemetryToMicrosoft** is a required value to enable telemetry to Microsoft.  This is critical to maximize support from Microsoft.
   > - This script will perform a variety of actions, including updating the Retail Service user and role and updating Retail registry keys.
   
