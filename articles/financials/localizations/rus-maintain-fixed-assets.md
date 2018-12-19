@@ -35,7 +35,6 @@ If a fixed asset is closed down or inactive for more than three months, or if re
 For example, a fixed asset may be inactivated in the case of capital improvements.
 "Capital improvements" is a special asset category that includes capital renovations, improvements, technical updates, additional construction, and the acquisition of additional equipment for a fixed asset. When you update capital improvements, calculated depreciation isn't revalued. However, the depreciated cost and service life of the fixed asset are changed.
 
-When major repair work is done on a fixed asset, bonus depreciation can be applied to the asset on or after the transaction date of the major repair. You can create a transaction for a major repair of a fixed asset, and you can specify the bonus depreciation and bonus start date. The start date of the bonus depreciation can be the same as the transaction date of the major repair, or it can be the next depreciation date.
 
 ## Temporarily inactivate a fixed asset
 
@@ -101,3 +100,6 @@ You must complete the following tasks before you can post an update for a major 
 6. In the **Depreciation method** and **Depreciation subgroup** fields, select a depreciation method and subgroup.
 7. In the **Reason code** field, select a reason code.
 8. In the **Reason comment** field, update the reason for the transaction.
+
+> [!NOTE]
+> When major repair work is done on a fixed asset, bonus depreciation can be applied to the asset on or after the transaction date of the major repair. You can create a transaction for a major repair of a fixed asset, and you can specify the bonus depreciation and bonus start date. The start date of the bonus depreciation can be the same as the transaction date of the major repair, or it can be the next depreciation date.
