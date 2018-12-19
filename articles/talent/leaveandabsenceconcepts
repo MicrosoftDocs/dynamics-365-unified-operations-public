@@ -77,6 +77,75 @@ defined in the accruals section.
 - Options included:
   - Accrual period end date
     - Employee will be awarded time off on the last day of the award period
+    *Accrual process needs to include entire period in order to accrue the correct amount. For example, if the accrual period is
+    1/1/2018 - 1/31/2018, to include January, the accrual has to be run for 2/1/2018.*
   - Accrual period start date
     - Employee will be awarded time off on the first day of the award period
 
+### Accrual policy on enrollment
+- Policy for calculating accrual when the employee is enrolled in the middle of an accrual period
+- Options include:
+  - Prorated
+    - When processing accruals, the range between enrollment date and start date is used to determine the difference in days. That
+      difference is applied when processing accruals. 
+  - Full accrual
+    - Full accrual amount based on the tier is awarded during the first accrual processing
+  - No accrual
+    - No accrual is awarded until the next accrual period
+
+### Accrual policy on unenrollment
+- Policy for calculating accrual when the employee is unenrolled in the middle of an accrual period
+- Options include:
+  - Prorated
+    - When processing accruals, the range between enrollment date and start date is used to determine the difference in days. That
+      difference is applied when processing accruals. 
+  - Full accrual
+    - Full accrual amount based on the tier is awarded during the first accrual processing
+  - No accrual
+    - No accrual is awarded until the next accrual period
+    
+ ## Accrual schedule
+ 
+ The accrual schedule determines how an employee will accrue time off and what amounts he or she will accrue and carry-forward. Tiers
+ can be created to awared time off based on different levels. 
+ 
+ ### Months of service
+ - Minimum number of months to be entitled for accruals. If no mininmum is required for employees, set to 0
+ 
+ ### Hours worked
+ - Mininmum number of hours worker per accrual period to be entitled for accruals. If there is no minimum required for employees, 
+   set to 0
+   
+ ### Accrual amount
+ - Number of hours or days employees will accrue per period
+ - Period is based on the accrual frequency
+ 
+ ### Minimum balance
+ - Negative value can be used for minimum balance if employees can request more leave than what they have available
+ 
+ ### Maximum carry-forward
+ - Accrual process will adjust leave balances which exceed the maximum carry-forward balance on the anniversary of the start date
+ 
+ ### Grant amount
+ - Initial number of hours or days employees will be granted upon enrollment in the leave plan
+ - Doesn't accrue for each accrual period
+ 
+ 
+ ## Enrollments and balances
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
