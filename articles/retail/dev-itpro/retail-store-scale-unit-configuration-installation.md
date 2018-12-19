@@ -78,7 +78,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     You can also add channels that don't use this database. In this way, you keep the data for those channels in the Retail Store Scale Unit channel database. The Retail store channels that actively use this database can then access that data locally.
     
     > [!IMPORTANT]
-    > For on-premises deployments, select the **Download** button on the Action pane and select **Retail Store Scale Unit**.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed. Allow for one minut3 while the upload logic completes.
+    > For on-premises deployments, select the **Download** button on the Action pane and select **Retail Store Scale Unit**.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed. Allow for one minute while the upload logic completes.
 
 8. On the **Store Scale Unit package** FastTab, in the **Name** field, select the appropriate Retail Store Scale Unit package.
 
