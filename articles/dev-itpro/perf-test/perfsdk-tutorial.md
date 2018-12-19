@@ -65,7 +65,7 @@ This topic describes the Performance software development kit (SDK) and shows ho
 
     A C# test is generated in the Generated folder for the project that you selected.
 
-## Run a single-user performance test by using the Performance SDK.
+## Run a single-user performance test by using the Performance SDK
 
 1. In Control Panel in Microsoft Windows, select **System and Security** &gt; **System** &gt; **Advanced System Settings**. Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
 
