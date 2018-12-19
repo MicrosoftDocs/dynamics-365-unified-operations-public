@@ -62,7 +62,7 @@ Before you can start installation of Retail channel components, you must first c
   > - This script will perform a variety of actions, including updating the Retail Service user and role and updating Retail registry keys.
   
 3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
-4.	Extract the zip file and copy all self-service installers into the folder **selfservicepackages** defined and created in step 1 in each of the AOS machines. The six self-service installers include: 
+4.	Extract the zip file and copy all self-service installers into the folder **C:/selfservicepackages** defined and created in step 2 in each of the AOS machines. The six self-service installers include: 
     - AsyncServerConnectorServiceSetup.exe
     - RealtimeServiceAX63Setup.exe
     - HardwareStationSetup.exe
