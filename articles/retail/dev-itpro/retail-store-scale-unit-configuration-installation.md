@@ -5,7 +5,7 @@ title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -42,20 +42,31 @@ This topic explains how you can use self-service to configure Retail Store Scale
 
 1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This topic reviews Azure user permissions and requirements, and explains how to generate an app registration. 
 
-    If you are installing Retail Store Scale Unit for use with an on-premises environment using AD FS, instead of Azure, create an application ID and key using AD FS. For instructions, see [Create an application in AD FS](/windows-server/identity/ad-fs/development/enabling-oauth-confidential-clients-with-ad-fs#create-an-application-group-in-ad-fs-2016).
-    
+> [!IMPORTANT]
+> If you are installing Retail Store Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Retail installation document for on-premises environments. For more information, see [Installation steps for Retail channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md).
+
 2. After an application ID (client ID) and key are created for Retail Store Scale Unit, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure a new Retail Store Scale Unit
 
 To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Run the Retail Store Scale Unit installer" section. To complete the configuration and installation, you must first do the initial configuration in Retail headquarters. Next, you must complete the installation. Finally, you must return to Retail headquarters to finish the configuration, so that Retail Store Scale Unit works correctly.
 
+> [!IMPORTANT]
+> For on-premises deployments, perform the following steps:
+>   1. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database group**.
+>   2. On the Action pane, select **New**.
+>   3. In the **Name** field, enter **Default**. Enter a description in the **Description** field, if needed.
+>   4. In the **Retail channel schema** field, select **AX7**.
+>   5. In the **Working folders** field, select **File storage**.
+>   6. On the Action Pane, select **Save**.
+
 1. In Retail headquarters, go to  **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 2. On the **Channel database** page, on the Action Pane, select **New**.
 3. In the **Channel database ID** field, enter a unique value.
-4. In the **Channel data group** field, select the **Default** option.
+4. In the **Channel data group** field, select the **Default** option. Select any option that has been created.
 
-    You can select any option that you've already created.
+    > [!IMPORTANT]
+    > For on-premises deployments, this value will be the **Default** value that was previously described in this topic.
 
 5. In the **Type** field, leave the default value (**Channel database**) selected.
 6. You can leave the **Data sync interval** field blank. Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
@@ -65,6 +76,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 7. On the **Retail channel** FastTab, select **Add**, and then, in the **Channel** field, select the appropriate Retail store channel. Repeat this step to add all the channels that should use this database.
 
     You can also add channels that don't use this database. In this way, you keep the data for those channels in the Retail Store Scale Unit channel database. The Retail store channels that actively use this database can then access that data locally.
+    
+    > [!IMPORTANT]
+    > For on-premises deployments, select the **Download** button on the Action pane and select **Retail Store Scale Unit**.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed. Allow for one minute while the upload logic completes.
 
 8. On the **Store Scale Unit package** FastTab, in the **Name** field, select the appropriate Retail Store Scale Unit package.
 
@@ -74,20 +88,30 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 10. Go to **Retail** &gt; **Channel setup** &gt; **Channel profiles**.
 11. On the Action Pane, select **New**.
 12. In the **Name** field, enter a unique name for the channel profile.
+
+    > [!IMPORTANT]
+    > For on-premises deployments, use the value **Default** in this field.
+
 13. On the Action Pane, select **Save**.
 14. On the **Profile properties** FastTab for the new channel profile, select **Add**.
 15. In the **Property key** field, select **Retail server URL**.
 16. In the **Property value** field, enter the URL of the Retail Server that should be installed for Retail Store Scale Unit.
 
-    The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is either the fully qualified domain name (FQDN) of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
+    The standard format for the URL of Retail Server is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is either the fully qualified domain name (FQDN) of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 17. On the **Profile properties** FastTab for the new channel profile, select **Add**.
 18. In the **Property key** field, select **Cloud POS URL**.
 19. In the **Property value** field, enter the URL of the Retail Cloud POS instance that should be installed for Retail Store Scale Unit.
 
-    The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
+    The standard format for the URL of Cloud POS is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 20. On the Action Pane, select **Save**.
+
+    > [!NOTE]
+    > If media is commonly used, it will be necessary to generate a **Media Server Base URL** for the profile.  For testing and simplicity, the URL that exists for the **Default** Channel profile can be reused. 
+    >
+    > For on-premises deployments, the **Media Server Base URL** will be where all media is stored for POS devices.  
+
 21. Go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 22. Select the Retail channel ID for the retail store that will use the new channel database.
 23. On the details page for the selected store, on the Action Pane, select **Edit**.
@@ -96,6 +120,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 26. On the **General** FastTab for the store, in the **Channel profile** field, select the channel profile that you created in step 12.
 27. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
 28. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
+
+    > [!NOTE]
+    > After the first Retail Store Scale Unit is created, it requires less data generation to perform a full data sync from the Channel database instead of the Channel data group.
 
 ### Download the Retail Store Scale Unit installer
 
@@ -106,6 +133,12 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > To help ensure that the Retail Store Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
+    >
+    > For on-premises deployments, the configuration file (at this time) requires manual editing:
+    > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, **https://myContosoURL.com/namespaces/AXSF/**).
+    > - AADTokenIssuerPrefix should have the value **https://NOTUSED.microsoft.com**
+    > - TransactionServiceAzureAuthority should have the value **https://<ADFS FQDN including .com>/adfs**.
+    > - TransactionServiceAzureResource should have the same value as the **StoreSystemAosUrl** listed in the same configuration file.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
@@ -126,9 +159,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 Before you run the Retail Store Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements.md) are met. 
 
-If you are installing Retail Store Scale Unit for use with an on-premises environment, you must start it from a command line using administrator priviledges as follows:
-
-StoreSystemSetup.exe -UseAdfsAuthentication -AzureAuthority <AD FS URL>
+> [!IMPORTANT]
+> If you are installing Retail Store Scale Unit for use with an on-premises environment, you must start it from a command line using administrator privileges as follows:
+> StoreSystemSetup.exe -UseAdfsAuthentication
 
 The Retail Store Scale Unit installer first extracts the associated files. It then begins the installation.
 
@@ -174,8 +207,9 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
     For information about how to create web applications in Azure, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
     
-    > [!NOTE] 
-    > - If you are installing Retail Store Scale Unit for use with an on-premises environment, Retail Cloud POS does not require an Azure or AD FS application to be configured.
+    > [!IMPORTANT] 
+    > - When installing Retail Store Scale Unit for use with an on-premises environment, Retail Cloud POS does not require an Azure or AD FS application to be configured, so it is important to unmark **Configure Retail Cloud POS**.
+    > - When installing Retail Store Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in steps 6-8 in the [Installation steps for Retail channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md) topic. (Step 6 creates the Client ID and step 8 resets the Secret to be copied.)
 
     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
@@ -187,18 +221,19 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 The last steps require validation and verification that the Azure application ID (client ID) and key (secret) are correctly accepted in Retail headquarters, so that connections can be made between the environment and the new Retail Store Scale Unit.
 
 1. After the application ID (client ID) and key (secret) are created for Retail Store Scale Unit and entered in the installer, the application ID (client ID) must be accepted in Retail headquarters. In Retail headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+
 2. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Retail.
 
     1. In Retail headquarters, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set, based on your selection.
-    4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed on the final health page of the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
-    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
+    4. On the **Relying parties** FastTab, select **Add**. Enter the client ID that is listed on the final health page of the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
+    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
     6. On the Action Pane, select **Save**.
 
 3. In Retail headquarters, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
 4. Select **Identity providers**.
-5. On the **Identity providers** FastTab, select **+Add**.
+5. On the **Identity providers** FastTab, select **Add**.
 6. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit. At the end of the URL, add **/auth**. The URL will resemble `https://<My Case-Sensitive Computer Name>:<Port Number>/RetailServer/auth`.
 
     > [!NOTE]
@@ -213,7 +248,7 @@ The last steps require validation and verification that the Azure application ID
 
 9. On the Action Pane, select **Save**.
 10. On the **Identity providers** FastTab, select the newly created line. The values on the **Relying parties** FastTab are set, based on your selection.
-11. On the **Relying parties** FastTab, select **+Add**, and add the following two entries:
+11. On the **Relying parties** FastTab, select **Add**, and add the following two entries:
 
     - In the **ClientId** column, enter **Cloud POS**. Set the **Type** field to **Public** and the **UserType** field to **Worker**.
     - In the **ClientId** column, enter **Modern POS**. Set the **Type** field to **Public** and the **UserType** field to **Worker**.
@@ -295,7 +330,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 5. When setup is successful, don't exit the installer. 
 
     > [!NOTE]
-    > At first, the healthcheck ping won't be successful, because the database isn't yet set up correctly. After you've completed the remaining steps of this procedure, you can test the healthcheck again.
+    > At first, the health check ping won't be successful, because the database isn't yet set up correctly. After you've completed the remaining steps of this procedure, you can test the health check again.
 
 6. Start **Microsoft Internet Information Services (IIS)**, select the **Retail Store Scale Unit** website, and select the **Retail Server** web application.
 7. Explore the working directory.
@@ -310,8 +345,8 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
     1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set, based on your selection.
-    4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
-    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
+    4. On the **Relying parties** FastTab, select **Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
+    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
     6. On the Action Pane, select **Save**.
 
 11. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
