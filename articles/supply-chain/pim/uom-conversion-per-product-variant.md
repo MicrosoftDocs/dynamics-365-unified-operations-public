@@ -34,6 +34,8 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
+[!include [pivate-preview](../includes/pivate-preview-banner.md)
+
 This topic explains how unit of measure conversions can be set up on product variants. It includes an example of the setup.
 
 This feature makes it possible for companies to define different unit conversion between the variants of the same product. The following example is used in this topic. A company sells T-shirts in sizes Small, Medium, Large, and Extra-Large. The T-shirt is defined as a product, and the different sizes are defined as variants of the product. The T-shirts are packed in boxes and there can be five T-shirts in a box, except for the Extra-Large size where there is only space for four T-shirts. The company wants to track the different variants of the T-shirts in the unit **Pieces** but is selling the T-shirts in the unit **Boxes**. The conversion between the inventory unit and the sales unit is 1 Box = 5 Pieces, except for the variant Extra-Large, where the conversion is 1 Box = 4 Pieces.
