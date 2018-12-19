@@ -35,8 +35,9 @@ ms.dyn365.ops.version: 8.1.1
 Self-service deployment is available for Dynamics 365 for Finance and Operations cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
 
 > [IMPORTANT]
-> The functionality for this feature will be released incrementally based on your Azure country/region. At this time however, functionality is available only for new customers who are in the process of signing up for Finance and Operations. There is no change in existing environments for current customers. 
-> Note that not all new customers will see this functionality. The number of new customers who have access to this will gradually increase. 
+> The functionality for this feature will be released incrementally, based on your Microsoft Azure country/region. However, this functionality is currently available only for new customers who are in the process of signing up for Finance and Operations. There is no change in existing environments for current customers.
+>
+> Note that not all new customers will see this functionality. However, the number of new customers who have access to it will gradually increase. 
 
 ## What’s new or changed
 
