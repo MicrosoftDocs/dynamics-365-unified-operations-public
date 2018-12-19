@@ -133,9 +133,75 @@ defined in the accruals section.
  
  ## Enrollments and balances
  
+ ### Enrollment date
+ - Determines when an employee can start accruing time off
+ - For example, Jay Norman is enrolled in a vacation plan on 6/15/2018. He can't accrue any time off before 6/15/2018. 
+ 
+ ### Current balance
+ - Amount of leave available for time off requests that includes accruals, approved requests and adjustments through today
+ 
+ ### Current balance examples
+ 
+ #### Annual plan
+ 
+ Plan setup:
+ 
+| Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|------------------|-------------------|----------------------|-----------------------|
+|     1/1/2018    |     1/1/2018     |       Annual      |    Plan start date   | End of accrual period |
+ 
+Accruals are processed on **1/1/2019** (to include the entire period ). 
 
+Results: 
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount  | Current balance  (as of 1/1/2019) |
+|----------------|-----------------|-----------------------|-----------------|-----------------------------------|
+|       200      |        0        |          120          |        40       |                160                |
+
+Current balance (160) = Accrual amount (200) - Request amount (40)
+
+ #### Semimonthly plan
+
+ Plan setup:
  
+| Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|------------------|-------------------|----------------------|-----------------------|
+|     1/1/2018    |     2/1/2018     |    Semimonthly    |    Plan start date   | End of accrual period |
  
+Accruals are processed on **5/1/2018** (to include the entire period ). 
+
+Results: 
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount  | Current balance  (as of 1/1/2019) |
+|----------------|-----------------|-----------------------|-----------------|-----------------------------------|
+|       5        |        0        |          120          |        8        |                22                 |
+
+Current balance (22) = Accrual amount (5*6) - Request amount (8)
+
+#### Monthly plan
+
+ Plan setup:
+ 
+| Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|------------------|-------------------|----------------------|-----------------------|
+|     1/1/2018    |     2/1/2018     |    Semimonthly    |    Plan start date   | End of accrual period |
+ 
+Accruals are processed on **5/1/2018** (to include the entire period ). 
+
+Results: 
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount  | Current balance  (as of 1/1/2019) |
+|----------------|-----------------|-----------------------|-----------------|-----------------------------------|
+|       5        |        0        |          120          |        8        |                7                  |
+
+Current balance (7) = Accrual amount (5*3) - Request amount (8)
+
+### Forecasted balance
+ - Amount of leave available on future date that forecasts accruals and carry-forward adjustments up to that date
+ - Formula:
+  - Monday forecasted balance = Current balance - Request(s) + Accrual(s) - Carry-forward adjustment
+ 
+
  
  
  
