@@ -41,6 +41,7 @@ The following template and underlying tasks are used to run synchronization of p
 
 **Name of the template in Data integration:**
 - Projects (Fin and Ops to Field Service)
+
 **Names of the tasks in the Data integration project:**
 - Projects
 
