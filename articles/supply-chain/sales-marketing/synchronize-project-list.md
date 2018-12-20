@@ -70,6 +70,6 @@ Enable change tracking for Data entity Projects
 ## Template mapping in Data integration
 
 
-### Projects (Fin and Ops to Field Service): Projects
+### Projects (Finance and Operations to Field Service): Projects
 
 [![Template mapping in Data integration](./media/FSProject1.png)](./media/FSProject1.png)
