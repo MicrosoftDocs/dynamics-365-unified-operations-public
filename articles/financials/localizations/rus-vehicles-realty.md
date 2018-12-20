@@ -91,7 +91,7 @@ Before you put a realty fixed asset into operation and calculate depreciation, y
 
 ## Set up the depreciation starting date for vehicles and realty 
 
-Use the **Depreciation groups** form to set up the depreciation starting date for fixed assets of type **Realty** or **Vehicle**. Depreciation is calculated based on the registration date for the asset. If an asset is registered after it is put to use, depreciation is calculated from the first day of the month of registration. If an asset is registered before it is put to use, depreciation is calculated from the first day of the month after the asset is put to use.
+Use the **Depreciation groups** page to set up the depreciation starting date for fixed assets of type **Realty** or **Vehicle**. Depreciation is calculated based on the registration date for the asset. If an asset is registered after it is put into operation, depreciation is calculated from the first day of the month of registration. If an asset is registered before it is put into operation, depreciation is calculated from the first day of the month after the asset is put into operation.
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
 
@@ -103,30 +103,20 @@ Use the **Depreciation groups** form to set up the depreciation starting date fo
 
 ## Depreciate a fixed asset by using a fixed asset journal 
 
-After you put a fixed asset of the **Vehicle** or **Realty** type into operation, you can use the **FA journal** form to start depreciating the asset from the date of registration.
+After you put a fixed asset of the **Vehicle** or **Realty** type into operation, you can use the **FA journal**  to start depreciating the asset from the date of registration.
 
 1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 
-2.  Click **New** to create a fixed asset journal. For more information, see
+2.  Click **New** to create a fixed asset journal.
 
 3.  In the **Name** and **Description** fields, select a journal name and enter a description for the journal.
 
-4.  Click **Lines** to open the **Journal voucher** form.
+4.  Click **Lines** to open the **Journal voucher** page and create a journal line.
 
-5.  Create a journal voucher.
+5. Click **OK**. The depreciation line for the value model that is registered in the fixed asset account is displayed on the **Journal voucher** page.
 
-6.  In the **Add to journal** form, in the **Transaction date** field, select the transaction date.
+6. Click **Validate** \> **Validate** to validate the depreciation transaction.
 
-7.  In the **Transaction type** field, select **Depreciation**.
-
-8.  In the **FA inventory number** field, select the inventory number of the fixed asset.
-
-9.  In the **Value model** and **Reason code** fields, select the value model for the fixed asset and the reason code.
-
-10. Click **OK**. The depreciation line for the value model that is registered in the fixed asset account is displayed in the **Journal voucher** form.
-
-11. Click **Validate** \> **Validate** to validate the depreciation transaction.
-
-12. Click **Post** \> **Post** to post the transaction.
+7. Click **Post** \> **Post** to post the transaction.
 
 
