@@ -116,8 +116,16 @@ Before you create fixed assets transfers between companies, you must adjust the 
 
 8.  Create the required number of lines and close the form.
 9.  Click **Close** in the **Tranference to another company** page. The **Posted** check box will be selected, and information about the transfer will be displayed in the history of the FA/IAs specified in the journal lines.
-10. Post the transfer transaction in the FA journal.
+10. Click **Fixed assets (Russia) > Journals > FA journal**.
+11. Click **Lines** and enter the transference transactions in the journal lines. This process is similar to creating an acquisition transaction.
+    
+    > [!NOTE]
+    > The date of the transaction on the **Fixed asset** page cannot be earlier than the date when the transference to another company was registered in the asset history. You must use a group transaction to create lines. Lines will be automatically created for all fixed assets for which history information about transference to another company has been specified.
 
+
+16. Click **Validate > Validate** to validate the journal.
+17. Click **Post > Post** to create the transactions in the ledger and in fixed assets.
+  
 ## Receive a group of fixed assets from another company 
 
 You can register the receipt of several fixed assets or inventory assets at the same time. 
