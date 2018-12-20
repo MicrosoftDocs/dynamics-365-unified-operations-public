@@ -58,15 +58,15 @@ For information about the bug fixes included in each of the updates that are par
 
 The Finance and Operations web client has started its journey of aligning to Microsoft Fluent Design. As a result, users on Platform Update 20 will see several restyled elements in the product including: 
 
--  **General form styling** - Small but effective styling changes have been made to several page elements. FastTabs and grids now have box shadows that give the appearance of these controls being lifted off the page. 
+-  **General form styling** - Small but effective styling changes have been made to several page elements. FastTabs and grids now have box shadows that give the appearance of these controls being lifted off the page. This same treatment was also applied when hovering over input fields. Record context fields and FastTab headers have smaller but bolder fonts to maintain their importance but remove extra whitespace. 
 -  **Dashboard** - Workspace cards on the dashboard now have a more tile-like appearance, with a white background color and box shadow to make them stand out more from the page background. The font size and weight have also been adjusted to allow more room for workspace titles.  
--  **Action pane** - Action panes no longer display with a theme-inspired background color; instead, the Action pane has a gray background color. This was done not only to align with Fluent, but also to address some usability issues where users were not associated the Action pane with the rest of the page because of the stark color difference.  
+-  **Action pane** - Action panes no longer display with a theme-inspired background color; instead, the Action pane has a gray background color. This was done not only to align with Fluent, but also to address some usability issues where users were not associating the Action pane with the rest of the page because of the stark difference in background color.  
 -  **Filter pane** - The Filter pane has been completely restyled with a lighter background color, a pill-like appearance to filter fields, and repositioning of the "Add a filter field" button to the top of the pane.  
--  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version shows as the "Related information" blade along the right edge of the screen, instead of being a small icon that could easily be overlooked.  
+-  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooed icon on the right.  
 
 
 
-| Before Platform update 20   | After Platform update 20   |
+| Before    | After    |
 |-----------------------------|----------------------------|
 | ![Old dashboard](media/prePU20-dashboard.png  "Old dashboard")  |  ![New dashboard](media/postPU20-dashboard.png  "New dashboard") |
 | ![Old list page](media/prePU20-customers.png  "Old list page")  |  ![New list page](media/postPU20-customers.png  "New list page") |
