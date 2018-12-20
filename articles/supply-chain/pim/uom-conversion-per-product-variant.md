@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)
+[!include [pivate-preview](../includes/pivate-preview-banner.md)]
 
 This topic explains how unit of measure conversions can be set up on product variants. It includes an example of the setup.
 
