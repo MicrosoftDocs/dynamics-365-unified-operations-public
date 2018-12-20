@@ -5,7 +5,7 @@ title: Synchronize inventory transfers and adjustments from Field Service to Fin
 description: 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
