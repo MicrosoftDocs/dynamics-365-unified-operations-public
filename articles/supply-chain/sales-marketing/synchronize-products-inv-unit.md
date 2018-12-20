@@ -2,10 +2,10 @@
 # required metadata
 
 title: Synchronize products with inventory unit from Finance and Operations to Field Service
-description: 
+description: This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ This topic discusses the templates and underlying task that are used to synchron
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-The used **Field Service Products (Fin and Ops to Field Service)** template is based on the **Products (Fin and Ops to Sales) – Direct** template from Prospect to Cash. For more information, see [Products (Fin and Ops to Sales) – Direct](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+The used **Field Service Products (Fin and Ops to Field Service)** template is based on the **Products (Fin and Ops to Sales) – Direct** template from Prospect to Cash. For more information, see [Products (Fin and Ops to Sales) – Direct](products-template-mapping-direct.md).
 
 This topic only describes the differences between the **Field Service Products (Fin and Ops to Field Service)** and **Field Service Products (Fin and Ops to Field Service)** templates.
 
