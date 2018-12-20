@@ -65,7 +65,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 -  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version shows as the "Related information" blade along the right edge of the screen, instead of being a small icon that could easily be overlooked.  
 
 
-> [!div class="mx-tableFixed"]
+
 | Before Platform update 20   | After Platform update 20   |
 |-----------------------------|----------------------------|
 | ![Old dashboard](media/prePU20-dashboard.png  "Old dashboard")  |  ![New dashboard](media/postPU20-dashboard.png  "New dashboard") |
