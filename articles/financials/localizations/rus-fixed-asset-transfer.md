@@ -30,9 +30,12 @@ ms.dyn365.ops.version: 8.1
 
 # Transfer fixed assets (Russia)
 [!include [banner](../includes/banner.md)]
+
 You may transfer fixed assets from one location (person in cahrge) to another location (person in charge) or transfer fixed assets between companies. 
 
 ## Transfer multiple assets using the Fixed asset transfer journal 
+
+Use these steps to transfer a fixed asset of fixed asset group from one location and/or person in charge to another location and/or person in charge.
 
 1.  Click **Fixed assets (Russia) > Journals > Transfer journals > FA transfer**.
 2.  Click **New** then enter the required details.
@@ -56,10 +59,9 @@ You can create individual transfer transactions to transfer assets to another co
 
 Before you create fixed assets transfers between companies, you must adjust the settings of the value models.
 
-1.  Click **Fixed assets (Russia) > Setup > Value models**.
-2.  On the **Overview** tab, press CTRL+N and create a value model.
-3.  On the **Map** tab, in the **Company accounts ID** field, select the company code that the asset will be transferred to.
-4.  In the **Value model** field, select the value model number that corresponds to the current account for the company.
+1.  Click **Fixed assets (Russia) > Setup > Value models** and create a new value model.
+2.  On the **Map** FastTab, in the **Company accounts ID** field, select the company code that the asset will be transferred to.
+3.  In the **Value model** field, select the value model number that corresponds to the current account for the company.
 
 ## Transfer an asset to another company
 
@@ -81,15 +83,14 @@ Before you create fixed assets transfers between companies, you must adjust the 
  10. The value model, balance cost, and book depreciation for the asset that was transferred are displayed, along with the period that the asset was used prior to the transfer.
 
 11.  Click **Fixed assets (Russia) > Journals > Transfer journals > Transfer to another company**.
-12.  Click **Lines**. Enter the transfer transaction in the lines of the journal. This is similar to creating an acquisition transaction.
+12.  Click **Lines**. Enter the transfer transaction in the lines of the journal.
     
     > [!NOTE]
     > The date of the transaction in the fixed assets journal cannot be earlier than the date that the transfer was registered in the asset history.
 
-13. Click **Post > Post**. If the transaction included all value models, the status of the asset is **Written off**. Value model information for the receiving company is updated in the **Transfer** form.
-    
+13. Click **Close** button to post the journal. If the transaction included all value models, the status of the asset is **Written off**.     
     > [!NOTE]
-    > In the **Receipt from another company** page, the fields on the **Overview** and **Value models** tabs are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset being transferred and accepted is not verified automatically. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
+    > In the **Receipt from another company** page, the fields on the list page and **Value models** tabs are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset being transferred and accepted is not verified automatically. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
 
 ## Transfer groups of fixed assets
 
@@ -102,11 +103,11 @@ Before you create fixed assets transfers between companies, you must adjust the 
 
 
 4.  Click **Lines**.
-5.  In the **Lines of FA transfer journal** form, press CTRL+N to create a new line.
-6.  In the **Source** field, select the number for the asset that is being transferred.
+5.  In the **Lines of FA transfer journal** page create a new line.
+6.  In the **Source** field, select the fixed asset inventory number that is being transferred.
     
     > [!NOTE]
-    > Available assets have an **Exploitation**status. The name of the asset being transferred is displayed in the **Account name** field. If the receiving company is specified for the journal, its name is displayed in the **Destination company** field.
+    > Available assets have an **In operation** status. The name of the asset being transferred is displayed in the **Account name** field. If the receiving company is specified for the journal, its name is displayed in the **Destination company** field.
 
 7.  In the **Destination** field, select the asset number of the receiving company that corresponds to the asset that is being transferred.
     
@@ -114,21 +115,20 @@ Before you create fixed assets transfers between companies, you must adjust the 
     > Available assets have a **Scheduled** or **Written off** status. The account that the asset is transferred to is displayed in the **Account name** field based on your entry in the **Destination** field.
 
 8.  Create the required number of lines and close the form.
-9.  Click **Close** in the **Issue to another company** form. The **Posted** check box on the **Overview** tab will be selected, and information about the transfer will be displayed in the history of the FA/IAs specified in the journal lines.
+9.  Click **Close** in the **Tranference to another company** page. The **Posted** check box will be selected, and information about the transfer will be displayed in the history of the FA/IAs specified in the journal lines.
 10. Post the transfer transaction in the FA journal.
 
 ## Receive a group of fixed assets from another company 
 
-You can register the receipt of several fixed assets or inventory assets at a time by using transfer journals. This can be done when the transferring company has posted asset numbers in the FA journal. If information about value models is not displayed, you must enter or modify the information manually.
+You can register the receipt of several fixed assets or inventory assets at the same time. 
 
-1.  Click **Fixed assets (Russia) > Journals > Transfer journals > Receipt from another company**.
-2.  On the **Overview** tab, press CTRL+N.
-3.  In the **Date** field, enter the date of the transfer of the assets from the other company.
-4.  In the **Company accounts ID** field, enter the account ID of the company that is receiving the assets, if this company is in the same database.
+1.  Click **Fixed assets (Russia) > Journals > Transfer journals > Receipt from another company** and create a new journal.
+2.  In the **Date** field, enter the date of the transfer of the assets from the other company.
+3.  In the **Company accounts ID** field, enter the account ID of the company that is receiving the assets, if this company is in the same database.
     > [!NOTE]
     > A journal number is displayed in the **Journal number** field, based on the configured number sequence. You can also enter the journal number manually.
 
-5.  Click **Lines** and press CTRL+N in the **Lines of FA transfer journal** form.
+4.  Click **Lines** and create the lines on the **Lines of FA transfer journal** page.
 6.  In the **Source** field, select the inventory number of the asset being accepted from the other company.
  
     > [!NOTE]
@@ -139,12 +139,12 @@ You can register the receipt of several fixed assets or inventory assets at a ti
     > [!NOTE]
     > This button is available only if an asset number is displayed in the **Source** field, but no destination is selected. This may occur if the recipient is not specified in the asset transfer transaction to another company.
 
-8.  In the **Create fixed asset** form, select the FA group that the asset belongs to. An inventory number for the fixed asset or inventory asset will be assigned automatically.
+8.  On the **Create fixed asset** page, select the FA group that the asset belongs to. An inventory number for the fixed asset or inventory asset will be assigned automatically.
 9.  Click **OK**. An asset record will be created and a destination will be displayed.
-10. In the **Lines of FA transfer journal** form, click **Creating from issue** to automatically create lines in the **Receipt from another company** form.
-11. Select the journal in the upper pane of the **Adding fixed assets from issue journals for another company** form, and then click **Copy journal** to copy all the information from the specified transfer journal into the receipt journal.
-12. In the lower pane of the form, click **Copy journal line** to copy individual lines of the transfer journal into the receipt journal.
-13. In the **Receipt from another company** form, click **Close**. The information from the receipt will be updated in the asset records.
+10. On the **Lines of FA transfer journal** page, click **Creating from FA transference journal** to automatically create lines on the **Receipt from another company** page.
+11. Select the journal on the upper pane of the **Adding fixed assets from issue journals for another company** page, and then click **Copy journal** to copy all the information from the specified transfer journal into the receipt journal.
+12. In the lower pane of the page, click **Copy journal line** to copy individual lines of the transfer journal into the receipt journal.
+13. On the **Receipt from another company** page, click **Close**. The information from the receipt will be updated in the asset records.
 14. Click **Fixed assets (Russia) > Journals > FA journal**.
 15. Click **Lines** and enter the receipt transaction in the journal lines. This process is similar to creating an acquisition transaction.
     
