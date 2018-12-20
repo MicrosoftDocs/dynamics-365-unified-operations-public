@@ -2,10 +2,10 @@
 # required metadata
 
 title: Synchronize project list from Finance and Operations to Field Service
-description: 
+description: This topic discusses the templates and underlying tasks that are used to synchronize projects from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,13 +42,13 @@ This topic discusses the templates and underlying tasks that are used to synchro
 The following template and underlying tasks are used to run synchronization of projects from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 
 **Name of the template in Data integration:**
-- Projects (Fin and Ops to Field Service)
+- Projects (Finance and Operations to Field Service)
 
 **Names of the tasks in the Data integration project:**
 - Projects
 
 The following synchronization tasks are required before synchronization of project list can occur:
-- Accounts (Sales to Fin and Ops) 
+- Accounts (Sales to Finance and Operations) 
 
 ## Entity set
 Field Service	Finance and Operations
