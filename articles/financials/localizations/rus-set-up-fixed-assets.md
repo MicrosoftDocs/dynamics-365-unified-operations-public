@@ -39,7 +39,7 @@ You define a value model so that you can create fixed asset transactions in the 
 
 Use this procedure to set up value models for fixed assets.
 
-1.  Click **Fixed assets** \> **Setup** \> **Value models**.
+1.  Click **Fixed assets (Russia)** \> **Setup** \> **Value models**.
 
 2.  Press the **New** button to create a new value model.
 
@@ -72,7 +72,7 @@ Use this procedure to set up value models for fixed assets.
 
 You can set up posting profiles for fixed assets. Posting profiles define the ledger accounts that are used for each fixed asset transaction.
 
-1.  Click **Fixed assets** \> **Setup** \> **Fixed asset posting profiles**.
+1.  Click **Fixed assets (Russia)** \> **Setup** \> **Fixed asset posting profiles**.
 
 2.  On the left pane, press the **New** button to create a new fixed asset posting profile.
 
@@ -181,16 +181,16 @@ Use the **FA groups** page list to define fixed asset groups for fixed assets, w
 3.  In the **FA group** and **Name** fields, enter the code and the name for the fixed asset group.
 
 4.  In the **Type of group** field, select **Fixed assets**, **Working clothes**, **Special rigging**, or **NVFA** (not valuable fixed asset) as the type of fixed asset group.
-
-5.  Select the **Autonumeration FA** check box to generate a fixed asset number automatically when you create fixed assets for the group in the **Fixed assets** form.
-
-6.  In the **FA autonumbering sequence** field, select a number series for automatic number generation.
-
-7.  In the **VAT refunding** field, select the start date for refunding value-added tax (VAT) for the fixed assets. Select one of the following options:
+5.  In the **VAT refunding** field, select the start date for refunding value-added tax (VAT) for the fixed assets. Select one of the following options:
     
       - **Acquisition date** – Start refunding VAT from the acquisition date.
     
       - **Depreciation run date** – Start refunding VAT from the date of depreciation.
+
+6.  Select the **Autonumeration FA** check box to generate a fixed asset number automatically when you create fixed assets for the group in the **Fixed assets** form.
+
+7.  In the **FA autonumbering sequence** field, select a number series for automatic number generation.
+
 
 8.  Select the **Barcodes autonumeration** check box to generate bar codes automatically for the fixed assets in the group.
 
@@ -255,4 +255,4 @@ Use the **FA groups** page list to define fixed asset groups for fixed assets, w
 
 15. On the **Financial dimensions** tab, select the financial dimension codes for the fixed asset transactions.
 
-16. On the **Number sequences** tab, select a number series for **FA number**, **Bar code** and **FA revaluation**, **FA inventory**, **FA transfer**, **Writing off on lifetime** , **Assessed tax register journal number** journals.
+16. On the **Number sequences** tab, select a number series for **FA inventory number**, **Bar code** and **FA revaluation**, **FA counting**, **FA transfer**, **Writing off on condition** , **Assessed tax register journal number**.
