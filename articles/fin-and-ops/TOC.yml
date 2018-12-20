@@ -373,6 +373,18 @@
             href: ../supply-chain/sales-marketing/field-service-work-order.md
           - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
             href: ../supply-chain/sales-marketing/field-service-invoice.md
+          - name: Synchronize inventory transfers and adjustments from Field Service to Finance and Operations
+            href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+          - name: Synchronize inventory level information from Finance and Operations to Field Service 
+            href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+          - name: Synchronize products with inventory unit from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+          - name: Synchronize project list from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-project-list.md
+          - name: Synchronize warehouses from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+          - name: Synchronize work orders from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-work-orders.md        
         - name: Configure Project Service Automation integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
           items:
