@@ -2,10 +2,10 @@
 # required metadata
 
 title: Synchronize inventory level information from Finance and Operations to Field Service 
-description: 
+description: This topic discusses the templates and underlying tasks that are used to synchronize inventory level information from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
