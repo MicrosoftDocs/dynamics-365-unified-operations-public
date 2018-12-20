@@ -85,6 +85,14 @@ For more information about job postings, see [Career site functionality in Attra
 > [!NOTE]
 > The job posting functionality is available only with the Comprehensive Hiring Add-on for Attract.
 
+Three things to note about job posting process to LinkedIn
+1) It takes upto 24 hours for jobs posted to LinkedIn to show up for candidates in LinkedIn. This is due to batch data ingestion and posting process for LinkedIn jobs.
+2) While posting jobs to LinkedIn, we pass on the Microsoft 365 Organation name against the job (Previously called Office 365). LinkedIn matches it to a company on LinkedIn and links the jobs to the company based on the organization name we pass. In case your job is listed against the wrong company on LinkedIn, please make sure that your Microsoft 365 Organization name to match the organization name on LinkedIn. Link: https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more?view=o365-worldwide
+If you have problems after this step as well, please contact LinkedIn support.
+3) Jobs posted to LinkedIn are posted as "Limited Listings" jobs. <Link>. If you would like to promote jobs posted to LinkedIn from attract, you should work with LinkedIn and enable "Job Wrapping" <Link>
+
+
+
 ## Activate
 
 After a job is activated, it can be posted, and prospects and applicants can be added to it. The option to add prospects to a job is set in the Prospect activity in the hiring process.
