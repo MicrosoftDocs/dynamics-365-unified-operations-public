@@ -38,14 +38,17 @@ These topics describe the programs, tools, and processes available related to th
 [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md)
 
 ## Tools
+
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)
 
 [Overview of Lifecycle Services for Customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## Processes
+
 [Onboarding your implementation project](onboard.md)
 
-[Preparing for go-live](prepare-go-live.md) 
+[Preparing for go-live](prepare-go-live.md)
 
 ## Frequently asked questions
+
 [Go-live FAQ](go-live-faq.md)

@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.2. This version was released in December 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,28 +32,32 @@ ms.dyn365.ops.version: Release 8.1.2
 # What's new or changed in Dynamics 365 for Finance and Operations version 8.1.2 (December 2018)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.2. This version was released in December 2018 and has a build number of 8.1.195.
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new).
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new).
 
 ### Dynamics 365 October '18 release notes
-Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ## Bug fixes
+
 For information about the bug fixes included in each of the updates that are part of Platform update 22, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2037783).
 
 ## Platform update 22
-Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see 
-[What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)](whats-new-platform-update-22.md).
+
+Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)](whats-new-platform-update-22.md).
 
 ## Extensibility enhancements
+
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.2](../../dev-itpro/extensibility/extensibility-changes-812.md).
 
 ## Derived dimension values
+
 This release includes functionality that lets you prevent changes to derived dimension values and override existing dimension values with derived dimension values. For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
 
 ## Intrastat format changes for Belgium
@@ -87,7 +91,7 @@ This release includes the following features specific for Russia:
  - Register goods in transit from vendor by special posting profile with Item type "purchased items en route". 
  - Creating Act of inventory holdings en route (INV-6).
 
-### Optional posting of transfer orders to GL
+### Optional posting of transfer orders to general ledger
 Option to post or not post transactions to General ledger when posting a transfer order.
 
 ### Profit tax registers for assets
@@ -117,3 +121,4 @@ For more information, see [Import a configuration from Lifecycle Services](../..
 These configuration versions are released as public preview and will be updated based on feedback received. Use them to learn how electronic formats of sales, purchase books, additional sheets, and factures journals are configured with Electronic reporting. Do not use these configurations as base configurations for derived customized configurations in a live environment.
 
 For more information, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
+
