@@ -28,8 +28,9 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Invoices for payment (Russia)
+# Transfer fixed assets (Russia)
 [!include [banner](../includes/banner.md)]
+You may transfer fixed assets from one location (person in cahrge) to another location (person in charge) or transfer fixed assets between companies. 
 
 ## Transfer multiple assets using the Fixed asset transfer journal 
 
@@ -55,16 +56,15 @@ You can create individual transfer transactions to transfer assets to another co
 
 Before you create fixed assets transfers between companies, you must adjust the settings of the value models.
 
-1.  Click **Fixed assets > Setup > Value models**.
+1.  Click **Fixed assets (Russia) > Setup > Value models**.
 2.  On the **Overview** tab, press CTRL+N and create a value model.
 3.  On the **Map** tab, in the **Company accounts ID** field, select the company code that the asset will be transferred to.
 4.  In the **Value model** field, select the value model number that corresponds to the current account for the company.
 
 ## Transfer an asset to another company
 
-1.  Click **Fixed assets > Common > Fixed assets > Fixed assets**.
-2.  On the **Overview** tab, select the asset to be transferred.
-3.  Click **History** \> **Issue**.
+1.  Click **Fixed assets (Russia) > Common > Fixed assets** and select the asset to be transferred.
+2.  Click **History** \> **Transference**.
 4.  In the **Date** field, enter the date of the transfer.
 5.  In the **Company accounts ID** field enter the code for the company receiving the asset, if necessary.
 6.  In the **Fixed asset** field, modify the code for the asset, if necessary.
@@ -72,21 +72,21 @@ Before you create fixed assets transfers between companies, you must adjust the 
     > [!NOTE]
     > After you select the company that is receiving the asset, you can select the inventory number that corresponds to the asset after the transfer. The statuses of the assets are **Scheduled** and **Written off**. Assets with a **Written off** status can be returned after transfer only if you have selected a company in the **Company** field.
 
-7.  The **Posted** field in the **Issue to another company** form is updated after a transfer transaction in the fixed assets journal is posted. The ledger accounts of the receiving company are updated to acknowledge the transaction.
+7.  The **Posted** field in the **Transference to another company** page is updated after a transfer transaction in the fixed assets journal is posted. The ledger accounts of the receiving company are updated to acknowledge the transaction.
     
-    1. On the **General** tab, information is displayed about the transfer journal used to transfer the asset, if the journal was created and closed. If the journal was not created, you can enter the document number and date manually.
+8. Click **Transfer journal** button to display the transfer journal used to transfer the asset, if the journal was created and closed. If the journal was not created, you can enter the document number and date manually.
     
-    2. Information on the **Value models** tab is displayed when posting a transfer transaction in the fixed assets journal. This information cannot be modified. The number of lines displayed on the **Value models** tab must be equal to the number of models that the transaction was posted for.
+ 9. Information on the **Value models** tab is displayed when posting a transfer transaction in the fixed assets journal. This information cannot be modified. The number of lines displayed on the **Value models** tab must be equal to the number of models that the transaction was posted for.
     
-    3. The value model, balance cost, and book depreciation for the asset that was transferred are displayed, along with the period that the asset was used prior to the transfer.
+ 10. The value model, balance cost, and book depreciation for the asset that was transferred are displayed, along with the period that the asset was used prior to the transfer.
 
-8.  Click **Fixed assets (Russia) > Journals > FA journal**.
-9.  Click **Lines**. Enter the transfer transaction in the lines of the journal. This is similar to creating an acquisition transaction.
+11.  Click **Fixed assets (Russia) > Journals > Transfer journals > Transfer to another company**.
+12.  Click **Lines**. Enter the transfer transaction in the lines of the journal. This is similar to creating an acquisition transaction.
     
     > [!NOTE]
     > The date of the transaction in the fixed assets journal cannot be earlier than the date that the transfer was registered in the asset history.
 
-10. Click **Post > Post**. If the transaction included all value models, the status of the asset is **Written off**. Value model information for the receiving company is updated in the **Transfer** form.
+13. Click **Post > Post**. If the transaction included all value models, the status of the asset is **Written off**. Value model information for the receiving company is updated in the **Transfer** form.
     
     > [!NOTE]
     > In the **Receipt from another company** page, the fields on the **Overview** and **Value models** tabs are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset being transferred and accepted is not verified automatically. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
