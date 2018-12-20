@@ -149,7 +149,7 @@ You can register the receipt of several fixed assets or inventory assets at the 
 15. Click **Lines** and enter the receipt transaction in the journal lines. This process is similar to creating an acquisition transaction.
     
     > [!NOTE]
-    > The date of the transaction in the **Fixed asset** form cannot be earlier than the date when the receipt was registered in the asset history. You must use a group transaction to create lines. Lines will be automatically created for all fixed assets for which history information about receipt from another company has been specified.
+    > The date of the transaction on the **Fixed asset** page cannot be earlier than the date when the receipt was registered in the asset history. You must use a group transaction to create lines. Lines will be automatically created for all fixed assets for which history information about receipt from another company has been specified.
 
 
 
