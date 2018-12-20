@@ -45,7 +45,7 @@ Use these steps to transfer a fixed asset of fixed asset group from one location
 6.  Click **OK** to open the **Lines of FA transfer journal** page.
     
     > [!NOTE]
-    > Records are created in the journal for all assets or inventory assets that have entries in the **Location** and **Previous person in charge** fields. The form header shows the information specified in the journal batch. Where applicable, you can add or delete lines on the **Overview**> tab.</P>
+    > Records are created in the journal for all assets or inventory assets that have entries in the **Location** and **Previous person in charge** fields. The form header shows the information specified in the journal batch. Where applicable, you can add or delete lines on the **Lines of FA transfer journal**> page.</P>
 
 7.  Click **Close**. Information about the asset transfer will be kept in history.
 8.  Click **Print** to set the print options and print an invoice for the asset transfer.
