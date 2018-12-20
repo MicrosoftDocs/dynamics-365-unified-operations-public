@@ -54,6 +54,26 @@ For information about the bug fixes included in each of the updates that are par
 - [Platform update 17 KB article](https://go.microsoft.com/fwlink/?linkid=875608&clcid=0x409)
 - Platform update 16 was not released for General Availability, no KB article
 
+## Restyled web client 
+
+The Finance and Operations web client has started its journey of aligning to Microsoft Fluent Design. As a result, users on Platform Update 20 will see several restyled elements in the product including: 
+
+-  **General form styling** - Small but effective styling changes have been made to several page elements. FastTabs and grids now have box shadows that give the appearance of these controls being lifted off the page. 
+-  **Dashboard** - Workspace cards on the dashboard now have a more tile-like appearance, with a white background color and box shadow to make them stand out more from the page background. The font size and weight have also been adjusted to allow more room for workspace titles.  
+-  **Action pane** - Action panes no longer display with a theme-inspired background color; instead, the Action pane has a gray background color. This was done not only to align with Fluent, but also to address some usability issues where users were not associated the Action pane with the rest of the page because of the stark color difference.  
+-  **Filter pane** - The Filter pane has been completely restyled with a lighter background color, a pill-like appearance to filter fields, and repositioning of the "Add a filter field" button to the top of the pane.  
+-  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version shows as the "Related information" blade along the right edge of the screen, instead of being a small icon that could easily be overlooked.  
+
+
+> [!div class="mx-tableFixed"]
+| Before Platform update 20   | After Platform update 20   |
+|-----------------------------|----------------------------|
+| ![Old dashboard](media/prePU20-dashboard.png  "Old dashboard")  |  ![New dashboard](media/postPU20-dashboard.png  "New dashboard") |
+| ![Old list page](media/prePU20-customers.png  "Old list page")  |  ![New list page](media/postPU20-customers.png  "New list page") |
+| ![Old details page](media/prePU20-customerDetails.png  "Old details page")  |  ![Newd details page](media/postPU20-customerDetails.png  "New details page") |
+| ![Old Factbox pane](media/prePU20-expandedFactBox.png  "Old FactBox pane")  |  ![New FactBox pane](media/postPU20-expandedFactBox.png  "New FactBox pane") |
+
+
 ## Adding and removing columns in a grid is easier
 
 Some of the most typical changes that a user makes to a grid are adding, removing, resizing, and reordering columns. In this update, we've made adding and removing columns easier by promoting the **Add columns** and **Hide this column** actions directly into the grid column header context menus.
