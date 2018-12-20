@@ -162,8 +162,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 5. Register the CRT change in the extensions configuration file.
 
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
+    ```
+
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
     > [!WARNING]
