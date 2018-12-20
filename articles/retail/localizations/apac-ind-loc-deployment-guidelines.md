@@ -57,6 +57,11 @@ The CRT extension components are included in the CRT samples. To complete the fo
 1. Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.
 2. Find the following files:
 
+      > [!IMPORTANT]
+      > Library and .NET FX version number may be differ. Example: Newtonsoft.Json.9.0.5\lib\net47
+
+     # [Retail 7.3.1](#tab/retail-7-3-1)
+
    - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
     
        - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
@@ -65,9 +70,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
        - Newtonsoft.Json.dll
 
-     # [Retail 7.3.1](#tab/retail-7-3-1)
-
-     In the **Reference\\TaxEngine** folder:
+   - In the **Reference\\TaxEngine** folder:
 
      - Microsoft.Dynamics365.Tax.Core.dll
      - Microsoft.Dynamics365.Tax.DataAccessor.dll
@@ -79,32 +82,71 @@ The CRT extension components are included in the CRT samples. To complete the fo
      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
      - Microsoft.Dynamics365.XppSupportLayer.dll
 
-     Find the following folders in the **Reference\\Z3** folder:
+   - Find the following folders in the **Reference\\Z3** folder:
 
      - x86
      - x64
 
      # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-     In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
+    - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
+    
+       - Contoso.Commerce.Runtime.GenericTaxEngine.dll
+    
+    - In the **References\\Newtonsoft.Json.9.0.1\lib\net45** folder:
 
-     - Microsoft.Dynamics365.LocalizationFramework.dll
-     - Microsoft.Dynamics365.Tax.Core.dll
-     - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-     - Microsoft.Dynamics365.Tax.DataAccessor.dll
-     - Microsoft.Dynamics365.Tax.DataModel.dll
-     - Microsoft.Dynamics365.Tax.Metadata.dll
+      - Newtonsoft.Json.dll
 
-     In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
+    - In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
 
-     - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-     - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-     - Microsoft.Dynamics365.XppSupportLayer.dll
+      - Microsoft.Dynamics365.LocalizationFramework.dll
+      - Microsoft.Dynamics365.Tax.Core.dll
+      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+      - Microsoft.Dynamics365.Tax.DataAccessor.dll
+      - Microsoft.Dynamics365.Tax.DataModel.dll
+      - Microsoft.Dynamics365.Tax.Metadata.dll
 
-     Find the following folders in the **Reference\\Z3.4.5.0\\lib\\net40** folder:
+    - In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
 
-     - x86
-     - x64
+      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+      - Microsoft.Dynamics365.XppSupportLayer.dll
+
+    - Find the following folders in the **$(SdkReferencesPath)\\Z3.4.5.0\\lib\\net40** folder:
+
+      - x86
+      - x64
+     
+
+	 # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+     - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
+    
+       - Contoso.Commerce.Runtime.GenericTaxEngine.dll
+    
+     - In the **References\\Newtonsoft.Json.9.0.1\lib\net45** folder:
+
+       - Newtonsoft.Json.dll
+
+     - In the **References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** folder:
+
+       - Microsoft.Dynamics365.LocalizationFramework.dll
+       - Microsoft.Dynamics365.Tax.Core.dll
+       - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+       - Microsoft.Dynamics365.Tax.DataAccessor.dll
+       - Microsoft.Dynamics365.Tax.DataModel.dll
+       - Microsoft.Dynamics365.Tax.Metadata.dll
+
+     - In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** folder:
+
+       - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+       - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+       - Microsoft.Dynamics365.XppSupportLayer.dll
+
+     - Find the following folders in the **$(SdkReferencesPath)\\\Z3.4.5.0\\lib\\net40** folder:
+
+       - x86
+       - x64
 
     ---
 
@@ -162,7 +204,7 @@ Follow these steps to create deployable packages that contain Retail components,
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     ``` xml
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.GenericTaxEngine.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Core.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Metadata.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessor.dll" />
@@ -172,16 +214,32 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
+    ```
+	
+	# [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+    ``` xml
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.GenericTaxEngine.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Core.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Metadata.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessor.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessFramework.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataModel.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFramework.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
     ```
 
 3. Modify the following files to include the Z3 libraries in deployable packages.:
 
-   - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
-   - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
-   - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
-
      # [Retail 7.3.1](#tab/retail-7-3-1)
+
+	 - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
+     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
+     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
      Add the following lines to the **ItemGroup** section
 
@@ -190,21 +248,53 @@ Follow these steps to create deployable packages that contain Retail components,
        <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
      ```
 
-     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-
-     ```xml
-       <_bin_ext_Z3_x86_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x86\*.*" />
-       <_bin_ext_Z3_x64_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x64\*.*" />
-     ```
-
-    ---
-
-    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+     For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
 
         ```xml
             <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
             <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
         ```
+
+     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+     - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
+     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
+     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
+
+	 Add the following lines to the **ItemGroup** section
+
+     ```xml
+       <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
+       <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
+     ```
+
+     For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+
+        ```xml
+            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+        ```
+
+	 # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+     - Packages\\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj"
+     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
+
+	 Add the following lines to the **ItemGroup** section
+
+     ```xml
+       <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
+       <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
+     ```
+
+	 For **Sdk.ModernPos.Shared.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+
+        ```xml
+            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+        ```
+
+    ---
 
     For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
 
