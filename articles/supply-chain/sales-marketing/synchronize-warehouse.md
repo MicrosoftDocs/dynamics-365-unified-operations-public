@@ -68,6 +68,13 @@ Note: It is possible to create multiple warehouses in Field Services (with **Is 
 ### In the Data Integration project
 Before synchronization of the warehouses make sure to update the Advanced query and filtering on the project to only include the warehouses that you want to bring from Finance and Operations to Field Service. Note that you will need the warehouse in Field Service to apply it on work orders, adjustments and transfers.  
 
+Ensure the **Integration key** exist for **msdyn_warehouses**
+1. Go to Data Integration
+2. Select **Connection Set** tab
+3. Select the Connection set used for Work order synchronization
+4. Select **Integration key** tab
+5. Find msdyn_warehouses and check that the key **msdyn_name (name)** is added. If it is not shown, add it by click **Add key** and click **Save** in the top of the page
+
 ## Template mapping in Data integration
 
 The following illustrations show the template mapping in Data integration.
