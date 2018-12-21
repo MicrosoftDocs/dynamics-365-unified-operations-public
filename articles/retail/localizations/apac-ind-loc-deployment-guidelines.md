@@ -58,7 +58,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 2. Find the following files:
 
       > [!IMPORTANT]
-      > Library and .NET FX version number may be differ. Example: Newtonsoft.Json.9.0.5\lib\net47
+      > The version numbers of the assemblies may differ from the below examples, e.g. Newtonsoft.Json.9.0.5\lib\net47\NewtonsoftJson.dll
 
      # [Retail 7.3.1](#tab/retail-7-3-1)
 
