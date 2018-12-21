@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Leave and absence concepts and balances
+title: Leave and absence concepts
 description: This topic describes leave and absence concepts and how time off balances are determined. 
 author: jcart
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
