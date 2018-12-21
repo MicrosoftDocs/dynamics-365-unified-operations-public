@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: 
+title: Foreign currency sale, purchase and transfer
+description: The article describes the functionality for registering the transactions for the sale, purchase and transfer of currency.
 author: anasyash
 manager: AnnBe
 ms.date: 09/25/2018
