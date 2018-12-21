@@ -81,18 +81,18 @@ For more information about activities that can be added to the hiring process, s
 After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Microsoft Dynamics 365 for Talent career site) or LinkedIn. 
 
 > [!NOTE]
-> There are three important things to note about job posting process to LinkedIn:
+> There are three important things to note about job posting process to LinkedIn.
 > 1. Jobs posted to LinkedIn are posted as "Limited Listings" jobs. Limited listing jobs cannot be promoted across the LinkedIn site. If you want to promote limited listing jobs posted to LinkedIn from Attract, you should work with LinkedIn to enable "Job Wrapping". Please refer to links below and contact LinkedIn support for more details.
 >
 >    [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
 >
 >    [Job Wrapping FAQ](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
 >
-> 1. When posting jobs to LinkedIn, Attract passes the Microsoft 365 Organization name on against the job. LinkedIn links the jobs to a company on the LinkedIn side based on the organization name that is passed. If your job is listed against the wrong company on LinkedIn, check that your Microsoft 365 Organization name matches the company name on LinkedIn.  
+> 1. When posting jobs to LinkedIn, Attract passes the Microsoft 365 Organization name against the job. LinkedIn links the jobs to a company on the LinkedIn side based on the organization name that is passed. If your job is listed against the wrong company on LinkedIn, check that your Microsoft 365 Organization name matches the company name on LinkedIn.  
 >
 >    [Change Address Contact and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
 >
->    If you have problems after this step as well, please contact LinkedIn support. 
+>    If you have problems after this step, please contact LinkedIn support. 
 > 
 > 1. It may take up to 24 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
 
