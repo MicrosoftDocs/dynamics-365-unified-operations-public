@@ -2,7 +2,7 @@
 # required metadata
 
 title: Entity store in an Azure Data Lake
-description: This topic provides information about enabling the Entity store as an Azure Data Lake.
+description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
 ms.date: 12/17/2018
@@ -31,134 +31,139 @@ ms.dyn365.ops.version: Platform Update 23
 
 ---
 
-# Entity store is a data lake
+# Entity store is an Azure Data Lake
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
-> Access to this scenario is enabled by using the Carbon Flighting Service and is being released through multiple platform updates as follows:
+> Access to this scenario is made available via the Carbon Flighting Service. The scenario is being released through multiple platform updates:
+>
+> - **Automated Entity store refresh:** Available in Platform update 23
+> - **Entity store data in Microsoft Azure Data Lake (full push):** Available in Platform update 23 (Restricted)
+> - **DataFlows for Entity store schemas on PowerBI.com:** Available in a future platform update
+> - **Entity store data in Azure Data Lake (trickle feed):** Available in a future platform update
+> - **Analytical workspaces extensible with PowerBI.com:** Available in a future platform update
 
-> - Automated Entity store refresh - Available in Platform update 23 
-> - Entity store data in Azure Data Lake (full push) – Available in Platform update 23(Restricted) 
-> - DataFlows for Entity store schemas in PowerBI.com – Available in a future Platform update 
-> - Entity store data in Azure Data Lake (trickle feed) – Available in a future Platform update 
-> - Analytical workspaces extensible with PowerBI.com - Available in a future Platform update 
+## Automated Entity store refresh
 
-## Automated Entity store refresh  
-1. Go to **System Administration** > **Set up** > **Entity store**. In the **Entity store** form, you will see a message indicating that you can switch to the **Automated Entity store refresh** option which is managed by the system. An administrator does not need to schedule or monitor the Entity store refresh.   
+1. Go to **System administration** \> **Set up** \> **Entity store**.
 
- 
-2. Choose **Switch now**.
+    On the **Entity store** page, a message indicates that you can switch to the **Automated Entity store refresh** option. This option is managed by the system. An admin doesn't have to schedule or monitor the Entity store refresh.
+
+2. Select **Switch now**.
+
+    > [!IMPORTANT]
+    > This action isn't reversible. After you switch to the **Automated Entity store refresh** option, you can't revert to the old user interface (UI) experience.
+
+3. Select **Yes** to continue.
+
+You will now see the new experience.
+
+![New UI experience](./media/entity-store-data-lake-03.png)
+
+After the new experience is turned on, you can define the refresh for each aggregate measurement. The following refresh options are available:
+
+- Every hour
+- Twice a day
+- Once a day
+- Once a week
+
+In addition, an admin can refresh any aggregate measurement on demand by selecting the **Refresh now** button. Additional options will be added in future platform updates. These options will include options for real-time refresh.
+
+## Entity store data in Azure Data Lake
 
 > [!IMPORTANT]
-> This is a non-reversible option. After you have selected this option, you can't re-enable the legacy UI. 
+> This restricted feature is turned on via flighting. This feature is available only if your environment is included in the flight.
 
-3. Select **Yes** to continue. You will now see the new experience. 
+When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store.
 
- ![New UI experience](./media/entity-store-data-lake-03.png)
- 
-After the new experience is enabled, you will be able to define the refresh for each of the aggregate measurements.  
-Following refresh options are available to choose: 
+Before you start, you must complete these tasks in the Azure portal.
 
-- Every hour 
-- Twice a day 
-- Once a day 
-- Once a week 
+1. **Create storage accounts.** Provision a storage account in the same data center where your Microsoft Dynamics 365 for Finance and Operations environment is provisioned. Make a note of the connection string for the storage account, because you will have to provide it later.
+2. **Create a Key Vault and a secret.** Provision an Azure Key Vault in your own subscription. You will need the Domain Name System (DNS) name of the Key Vault entry that you created. Also add a secret to the Key Vault. As the value, specify the connection string that you made a note of in the previous task. Make a note of the name of the secret, because you will have to provide it later.
+3. **Register the app.** Create an Azure Active Directory (Azure AD) application, and grant application programming interface (API) access to the Key vault. Make a note of the application ID and its application key (secret), because you will have to provide them later.
+4. **Add a service principal to the Key Vault.** In the Key Vault, use the **Access policies** option to grant the Azure AD application **Get** and **List** permissions. In this way, the application will have access to the secrets in the Key Vault.
 
-In addition to these options, administrator can refresh any aggregate measurement on demand by selecting the Refresh now button. 
-Additional options, including options for real-time refresh will be added in future platform updates.  
- 
-## Entity store data in Azure Data Lake 
-> [!IMPORTANT]
-> This restricted feature is enabled via flighting. This feature is only available if your environment is included in the flight. 
+The following sections describe each task in more detail.
 
-With this feature enabled, Entity store data is populated in an Azure Data Lake (storage gen2) account in your own subscription instead of the relational Entity store in Microsoft subscription. 
-You can use full capabilities of PowerBI.com and other Azure tools to work with Entity store. 
-Before you start, in the Azure portal, you will need to complete the steps in the following sections:
+### Create storage accounts
 
-- **Create storage accounts**: Provision a storage account using Azure portal in the same data center that your Dynamics 365 for Finance and Operations is provisioned. Store the connection string to the storage account as you will need to provide it later.
-- **Create a key value and a secret**: Provision a Key Vault in your own subscription using Azure portal. You will need the DNS name of the KeyVault entry you created. Add a secret to the Key Vault with the value of the connection string. Note down the name of the secret that you added to Key Vault as you will need to provide it later.
-- **Register the app**: Create an Azure Active Directory Application and grant API access to the Azure Key vault. Store the Application ID and its Application Key/secret. You will need to provide the **Application ID** and **Application Secret** later. 
-- **Add service principle to the Key vault**: In the Key vault, using the **Access policies** option, grant the application **Get** and **List** permissions. This grants the Azure application with access to the secrets in the Key Vault.  
+1. In the Azure portal, create a new storage account.
+2. In the **Create storage account** dialog box, provide values for the following parameter fields:
 
-  
-## Create storage accounts 
-1. Open the Azure portal and create a new storage account. 
-2. In the **Create storage account** dialog, in the parameter fields, provide following specific values: 
+    - **Location:** Select the data center where your Finance and Operations environment is located. If the data center that you select is in a different Azure region, you will incur additional data movement costs. If your Microsoft Power BI and/or data warehouse is in a different region. You can use replication to move storage between regions.
+    - **Performance:** We recommend that you select **Standard**.
+    - **Account kind:** You must select **StorageV2**.
 
- - **Location**: Select the data center where your Finance and Operations environment is located. If you select a data center which is in a different Azure region, you will incur additional data movement costs. If your PowerBI and/or data warehouse is in a different region. You can choose replication as a strategy to move storage between regions. 
-- Performance: Standard is recommended 
-- Account Kind: you must choose StorageV2 
- 
-3. In the **Advanced options** dialog, disable the **Data Lake storage Gen2 (preview)** option.  
+3. In the **Advanced options** dialog box, turn off the **Data Lake storage Gen2 (preview)** option.
 
-> [!NOTE]
-> This mode will be enabled in a later update. Until then, you can't consume data using ADLS APIs. 
-> You may not see this option if you are not part of the preview program for ADLS Gen2 
+    > [!NOTE]
+    > This mode will be made available in a later update. Until then, you can't consume data by using Azure Data Lake Storage APIs.
+    >
+    > If you aren't part of the preview program for Data Lake Storage Gen2, you might not see the **Data Lake storage Gen2 (preview)** option.
 
-4. Select **Review and create**. When the deployment is complete, the new resource will be shown in the Azure portal. 
-5. Select the resource and then click **Settings** > **Access keys**.  
-6. Make note of the connection string parameter value as you will need it again. 
- 
-## Create a key vault and a secret 
+4. Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
+5. Select the resource, and then select **Settings** \> **Access keys**.
+6. Make a note of the connection string value, because you will have to provide it later.
 
-1. Open the Azure portal and create a new Key vault. 
-2. In the **Create key vault** dialog, in the **Location** field, select the data center where your Finance and Operations environment is located. 
-3. When the key vault is created, select it from the list, and then select **Secrets**.  
-4. Select **Generate/Import**.  
-5. In the **Create a secret** dialog, in the **Upload options** field, select **Manual**. 
-6. Enter a name for the secret. Write the name down as you will need to provide it later. 
-7. Enter the connection string you obtained from the storage account in previous step in the value field 
-Select enabled and select the Create button 
-Your secret will be created and added to the key vault 
- 
-## Register the App 
+### Create a Key Vault and a secret
 
-1. In the Azure portal, choose Azure Active Directory and then open **App registrations**. 
-2. Select **New Application registration** and enter the following information: 
-  - **Name**: App name 
-  - **Application type**: Web API 
-  - **Sign-on URL**: Copy and paste the root URL of Dynamics 365 Finance and Operations 
+1. In the Azure portal, create a new Key Vault.
+2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your Finance and Operations environment is located.
+3. After the Key Vault is created, select it in the list, and then select **Secrets**.
+4. Select **Generate/Import**.
+5. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
+6. Enter a name for the secret. Make a note of the name, because you will have to provide it later.
+7. In the value field, enter the connection string that you obtained from the storage account in the previous procedure.
+8. Select **Enabled**, and then select **Create**. The secret is created and added to the Key Vault.
 
-3. After the application is created, select the application and click the **Settings** icon.  
+### Register the app
+
+1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
+2. Select **New application registration**, and enter the following information:
+
+    - **Name:** Enter the name of the app.
+    - **Application type:** Select **Web API**.
+    - **Sign-on URL:** Copy the root URL for Finance and Operations, and paste it here.
+
+3. After the application is created, select it, and then select **Settings**.
 4. Select the **Required permissions** option.
-5. Un the dialog that opens, select **Add option**, and then select **Add API**.  
+5. In the dialog box that appears, select **Add option**, and then select **Add API**.
 6. In the list of APIs, select **Azure Key Vault**.
-7. Select **Delegated permissions** check box,  select to grant permissions, and then click **Done** to save your changes.  
-8. In the Application menu of the new app, select **Keys**. 
-9. In the **Key Description** field, enter a name. Next, choose a duration and then click **Save**.
-10. A secret will be generated in the **Value** field. Copy this secret to clipboard immediately as it will disappear within a minute or two. You will need to provide this key to the application later. 
- 
-## Add service principal to Key vault 
+7. Select the **Delegated permissions** check box, select to grant permissions, and then select **Done** to save your changes.
+8. On the **Application** menu of the new app, select **Keys**.
+9. In the **Key Description** field, enter a name.
+10. Select a duration, and then select **Save**. A secret is generated in the **Value** field.
+11. Immediately copy the secret to the clipboard, because it will disappear within one or two minutes. You will have to provide this key to the application later.
 
-1. In the Azure portal, open the Key Vault you created earlier. 
-2. Select **Access policies** and then click the **Add** icon to create a new access policy. 
-3. In the **Select principal** field, choose the name of the application you previously registered. 
-4. In the **Key permissions** field, choose Get and List permissions. 
-5. In the **Secret permissions** field, choose Get and List permissions.
+### Add a service principal to the Key Vault
 
- ![Get and list permissions](./media/entity-store-data-lake-05.png)
+1. In the Azure portal, open the Key Vault that you created earlier.
+2. Select **Access policies**, and then select **Add** to create a new access policy.
+3. In the **Select principal** field, select the name of the application that you previously registered.
+4. In the **Key permissions** field, select **Get** and **List** permissions.
+5. In the **Secret permissions** field, select **Get** and **List** permissions.
 
-6. Click **Save**.
- 
-## Work in Entity store in Azure Data Lake 
+    ![Get and List permissions](./media/entity-store-data-lake-05.png)
 
-1. Click **System Administration** > **Set up** > **System parameters**. 
-  
-  ![System parameters and Data connections tab](./media/entity-store-data-lake-04.png)
-  
-2. Click the tab, **Data connections** and enter the following information:
+6. Select **Save**.
 
-  - The information you noted earlier in the Data connections tab in the system parameters form 
-  - The Azure Active Direction Application ID you registered above in the Application ID field.  
-  - The Application key/ secret in the Azure Active Directory application in the Application Secret field. 
-  - The DNS name of the Key Vault in the DNS Name field. 
-  - The name of the secret you added to the key vault with connection string information in the secret name field. 
-3. Select Test Azure Key Vault and Test Azure storage links to validate whether the configuration information you provided is accessible to the system. 
-4. Select the **Enable data connection** check box. 
+## Work in Entity store in Data Lake
 
-With this configuration, Entity store data should be populated into the storage location you provided instead of the Relational Entity store database. 
-Aggregate measurements and refresh options you choose in Entity store UI should now apply to data copied to Data lake. 
-  
- 
+1. Go to **System administration** \> **Set up** \> **System parameters**.
+2. On the **Data connections** tab, enter the following information that you made a note of earlier in this topic:
+
+    - **Application ID:** Enter the application ID of the Azure AD application that you registered earlier.
+    - **Application Secret:** Enter the application key (secret) for the Azure AD application.
+    - **DNS name:** Enter the DNS name of the Key Vault.
+    - **Secret name:** Enter the name of the secret that you added to the Key Vault together with connection string information.
+
+    ![Data connections tab on the System parameters page](./media/entity-store-data-lake-04.png)
+
+3. Select the **Test Azure Key Vault** and **Test Azure Storage** links to validate that system can access the configuration information that you provided.
+4. Select the **Enable data connection** check box.
+
+Entity store data should now be populated in the storage location that you provided, not in the relational Entity store database.
+
+The aggregate measurements and refresh options that you select in the Entity store UI should now apply to data that is copied to Data Lake.
