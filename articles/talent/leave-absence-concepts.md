@@ -38,113 +38,92 @@ The concepts and terms below can help to determine how an employee is awarded ti
 ## Leave plan details
 
 ### Start date
-- Start of accrual processing and serves as the anniversary date to calculate carry-forward amounts
+The start of accrual processing. Start date also serves as the anniversary date to calculate carry-forward amounts.
 
 ## Accruals
 
-Accruals determine when and how often an employee is awareded time off. Policies areoun when the accruals should be awarded as well as proration are also
-defined in the accruals section. 
+Accruals determine when and how often an employee is awareded time off. Policies around when the accruals should be awarded as well as proration are also defined in the accruals section. 
 
 ### Accrual frequency
-- How often leave is accrued or awarded
-- Options include:
-  - Daily
-  - Weekly
-  - Biweekly
-  - Semimonthly
-  - Monthly
-  - Quarterly
-  - Semiannually
-  - Annually
-  - None
+Accrual frequency defines how often leave is accrued or awarded. Options include:
+- Daily
+- Weekly
+- Biweekly
+- Semimonthly
+- Monthly
+- Quarterly
+- Semiannually
+- Annually
+- None
 
 ### Accrual period basis
-- Determines the date used for calculating accrual periods
-- Options include:
-  - Plan start date
-  - Employee specific date
-    - When selected, determines the source for the intiail date value used for calculating accrual periods. 
-    - Options include:
-      - Custom
-      - Anniversary date
-      - Original hire date
-      - Seniority date
-      - Worker's adjusted start date
-      - Worker's start date
+Accrual period basis determines the date used for calculating accrual periods. Options include:
+- Plan start date
+- Employee specific date
+    - When selected, this determines the source for the initial date value used for calculating accrual periods. Options include:
+     - Custom
+     - Anniversary date
+     - Original hire date
+     - Seniority date
+     - Worker's adjusted start date
+     - Worker's start date
 
 ### Accrual award date
-- Determines when an employee is awarded time off. 
-- Options included:
+This date determines when an employee is awarded time off. Options include:
   - Accrual period end date
-    - Employee will be awarded time off on the last day of the award period
-    *Accrual process needs to include entire period in order to accrue the correct amount. For example, if the accrual period is
-    1/1/2018 - 1/31/2018, to include January, the accrual has to be run for 2/1/2018.*
-  - Accrual period start date
-    - Employee will be awarded time off on the first day of the award period
+    - The employee will be awarded time off on the last day of the award period.
+    - The accrual process needs to include the entire period in order to accrue the correct amount. For example, if the accrual period is 1/1/2018 - 1/31/2018, in order to include January, the accrual has to be run for 2/1/2018.
+  - Accrual period start date: the employee will be awarded time off on the first day of the award period.
 
 ### Accrual policy on enrollment
-- Policy for calculating accrual when the employee is enrolled in the middle of an accrual period
-- Options include:
-  - Prorated
-    - When processing accruals, the range between enrollment date and start date is used to determine the difference in days. That
-      difference is applied when processing accruals. 
-  - Full accrual
-    - Full accrual amount based on the tier is awarded during the first accrual processing
-  - No accrual
-    - No accrual is awarded until the next accrual period
+The policy for calculating accrual when the employee is enrolled in the middle of an accrual period. Options include:
+  - Prorated: when processing accruals, the range between enrollment date and start date is used to determine the difference in days. That difference is applied when processing accruals. 
+  - Full accrual: full accrual amount based on the tier is awarded during the first accrual processing.
+  - No accrual: no accrual is awarded until the next accrual period.
 
 ### Accrual policy on unenrollment
-- Policy for calculating accrual when the employee is unenrolled in the middle of an accrual period
-- Options include:
-  - Prorated
-    - When processing accruals, the range between enrollment date and start date is used to determine the difference in days. That
-      difference is applied when processing accruals. 
-  - Full accrual
-    - Full accrual amount based on the tier is awarded during the first accrual processing
-  - No accrual
-    - No accrual is awarded until the next accrual period
+The policy for calculating accrual when the employee is unenrolled in the middle of an accrual period. Options include:
+  - Prorated: when processing accruals, the range between enrollment date and start date is used to determine the difference in days. That difference is applied when processing accruals. 
+  - Full accrual: full accrual amount based on the tier is awarded during the first accrual processing.
+  - No accrual: no accrual is awarded until the next accrual period.
     
- ## Accrual schedule
+## Accrual schedule
  
  The accrual schedule determines how an employee will accrue time off and what amounts he or she will accrue and carry-forward. Tiers
  can be created to awared time off based on different levels. 
  
- ### Months of service
- - Minimum number of months to be entitled for accruals. If no mininmum is required for employees, set to 0
+### Months of service
+This value defines the minimum number of months to be entitled for accruals. If no mininmum is required for employees, set to 0.
  
- ### Hours worked
- - Mininmum number of hours worker per accrual period to be entitled for accruals. If there is no minimum required for employees, 
-   set to 0
+### Hours worked
+Hours worked is the minimum number of hours worker per accrual period to be entitled for accruals. If there is no minimum required for employees, set to 0.
    
- ### Accrual amount
- - Number of hours or days employees will accrue per period
- - Period is based on the accrual frequency
+### Accrual amount
+The accrual amount is the number of hours or days employees will accrue per period. The period is based on the accrual frequency.
  
- ### Minimum balance
- - Negative value can be used for minimum balance if employees can request more leave than what they have available
+### Minimum balance
+A negative value that can be used for minimum balance if employees can request more leave than what they have available.
  
- ### Maximum carry-forward
- - Accrual process will adjust leave balances which exceed the maximum carry-forward balance on the anniversary of the start date
+### Maximum carry-forward
+The accrual process will adjust leave balances which exceed the maximum carry-forward balance on the anniversary of the start date.
  
- ### Grant amount
- - Initial number of hours or days employees will be granted upon enrollment in the leave plan
- - Doesn't accrue for each accrual period
+### Grant amount
+This amount is the initial number of hours or days employees will be granted upon enrollment in the leave plan. The amount doesn't accrue for each accrual period.
  
  
- ## Enrollments and balances
+## Enrollments and balances
  
- ### Enrollment date
- - Determines when an employee can start accruing time off
- - For example, Jay Norman is enrolled in a vacation plan on 6/15/2018. He can't accrue any time off before 6/15/2018. 
+### Enrollment date
+The enrollment date determines when an employee can start accruing time off. For example, if the employee is enrolled in a vacation plan on 6/15/2018, she can't accrue any time off before 6/15/2018. 
  
- ### Current balance
- - Amount of leave available for time off requests that includes accruals, approved requests and adjustments through today
+### Current balance
+The current balance is the amount of leave available for time off requests that includes accruals, approved requests, and adjustments through today.
  
- ### Current balance examples
+### Current balance examples
  
- #### Annual plan
+#### Annual plan
  
- Plan setup:
+Plan setup:
  
 | Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|------------------|-------------------|----------------------|-----------------------|
@@ -160,9 +139,9 @@ Results:
 
 Current balance (160) = Accrual amount (200) - Request amount (40)
 
- #### Semimonthly plan
+#### Semimonthly plan
 
- Plan setup:
+Plan setup:
  
 | Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|------------------|-------------------|----------------------|-----------------------|
@@ -180,7 +159,7 @@ Current balance (22) = Accrual amount (5*6) - Request amount (8)
 
 #### Monthly plan
 
- Plan setup:
+Plan setup:
  
 | Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|------------------|-------------------|----------------------|-----------------------|
@@ -242,7 +221,7 @@ Forecasted balance (35) = Accrual amount (5*3) + Current balance (40) - Carry-fo
 
 #### Monthly plan
 
- Plan setup:
+Plan setup:
  
 | Plan start date | Enrollment date  | Accrual frequency | Accrual period basis | Accrual award date    |
 |-----------------|------------------|-------------------|----------------------|-----------------------|
@@ -258,11 +237,11 @@ Results:
 
 Forecasted balance (30) = Accrual amount (10*1) + Current balance (40) - Carry-forward adjustment (20)
  
- ### Proration balance examples
+### Proration balance examples
  
- #### Prorated monthly plan
+#### Prorated monthly plan
  
- Plan setup:
+Plan setup:
  
 | Plan start date | Accrual frequency | Accrual period basis | 
 |-----------------|-------------------|----------------------|
@@ -276,9 +255,9 @@ Results:
 | Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.53    |
  
  
-  #### Full accrual monthly plan
+#### Full accrual monthly plan
  
- Plan setup:
+Plan setup:
  
 | Plan start date | Accrual frequency | Accrual period basis | 
 |-----------------|-------------------|----------------------|
@@ -291,9 +270,9 @@ Results:
 | Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 3.00    |
  
-  #### No accrual monthly plan
+#### No accrual monthly plan
  
- Plan setup:
+Plan setup:
  
 | Plan start date | Accrual frequency | Accrual period basis | 
 |-----------------|-------------------|----------------------|
