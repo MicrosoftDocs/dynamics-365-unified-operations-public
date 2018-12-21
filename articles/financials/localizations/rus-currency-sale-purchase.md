@@ -257,4 +257,44 @@ The following is validated during currency purchase order generation:
 14.	Click **Print > Currency purchase order** to print the currency purchase order (the template is taken from the transit bank account of **Bank currency transfer** dialog).
 15.	Validate and post the journal
 
+### Create transactions for bank commission and received currency as result of foreign currency purchase.
+
+After you have posted payment order for currency purchase, you can register bank commission and received foreign currency as result from the currency conversion. 
+
+1.	Go to **Accounts payable > Payments > Payment journal**. Create new journal. Click **Lines**
+2.	Create a new line for bank commission withdrawal. Fill the fields in line:
+
+| **Field** | **Description** |
+|-----------|---------------|
+|**Account** | Select the vendor account used on the previous step in currency purchase transaction |
+|**Credit** | Enter the bank commission amount |
+| **Currency** | Select the currency of bank commission |
+|**Offset account type**| Select **Ledger** |
+|**Offset account**| Select the Ledger account for bank commission losses |.
+|Tab **Bank** | |
+|**Bank transaction type**| Select the transaction type with extended type **Currency purchase** |
+|Tab **Payment** | |
+|**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit” |
+
+3.	Create a new line for received currency. Fill the fields in line:
+
+| **Field** | **Description** |
+|-----------|---------------|
+|**Account** | Select the vendor account used on the previous step in currency purchase transaction |**Credit** | Enter the amount of received foreign currency|
+|**Currency**| Select the code of the purchased currency|
+|**Offset account type**| Select **Bank** |
+|**Offset account**| Select the Bank account to which the foreign currency is received. Bank of this bank account should have a relation for the vendor account chosen in the field **Account** |
+|Tab **Bank** | |
+|**Bank transaction type**| Select the transaction type with extended type **Currency purchase** |
+|Tab **Payment**, group of fields **Currency conversion**| | |
+| **Currency** | Select the accounting currency which is used for foreign currency purchase|
+| **Bank exchange rate** | Enter the bank exchange rate which was applied for foreign currency purchase |
+|Tab **Payment** | |
+|**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit”|
+
+4.	Post the journal.
+The following is validated during posting:
+-	The transaction currency must not be equal to the accounting currency of the company.
+-	The currency code in the field **Currency** on the **Payment** tab is equal to the accounting currency of the company.
+-	The fields **Currency** and **Bank exchange rate** on the **Payment** must be filled out.
 
