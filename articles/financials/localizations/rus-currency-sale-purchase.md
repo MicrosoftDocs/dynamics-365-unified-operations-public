@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-# Currency sale and purchase
+# Foreign currency sale, purchase and transfer
 
 The functionality allows you to do the following:
 - Register the transactions for the sale, purchase and transfer of currency which is carried out using the ledger account "Money transfers in transit";
@@ -245,7 +245,7 @@ Post settlement of currency sale transactions to generate profit and loss transa
 |**Supplier account**, **Purchase agreement**|	Select information about contract in currency which is the basis for currency purchase transaction|
 |**Print Document**|	Enable parameter to print Currency purchase order along with payment generation|
 
-13.	Click **OK**. The Payment status field of the payment journal line is updated as **Sent**. 
+7.	Click **OK**. The Payment status field of the payment journal line is updated as **Sent**. 
 
 The **Transit account**, **Foreign counteragent**, **Contracts group**, and **Contract of the deal** fields are updated on the **Payment** tab.
 
@@ -254,8 +254,8 @@ The following is validated during currency purchase order generation:
 -	Currency of **Transit account** is equal to the currency chosen in the **Bank currency transfer** dialog.
 -	Currency of the payment journal line is accounting currency.
 
-14.	Click **Print > Currency purchase order** to print the currency purchase order (the template is taken from the transit bank account of **Bank currency transfer** dialog).
-15.	Validate and post the journal
+8.	Click **Print > Currency purchase order** to print the currency purchase order (the template is taken from the transit bank account of **Bank currency transfer** dialog).
+9.	Validate and post the journal
 
 ### Create transactions for bank commission and received currency as result of foreign currency purchase.
 
