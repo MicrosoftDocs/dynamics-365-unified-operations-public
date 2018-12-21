@@ -323,9 +323,9 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
     ```
 
-# [Retail 7.3.2 and later](#tab/retail-7-3-2)
-
 #### RestrictingShiftDuration component
+
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
 1. Find the **Runtime.Extensions.RestrictingShiftDuration** project, and build it.
 2. In the **Extensions.RestrictingShiftDuration\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.RestrictingShiftDuration.dll** assembly file.
@@ -348,12 +348,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
 # [Retail 7.3.5 and later](#tab/retail-7-3-5)
 
 > [!NOTE]
-> No actions are required, because RestrictingShiftDuration is a part of sealed extensions.
+> No additional actions are required.
 
 # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
 > [!NOTE]
-> No actions are required, because RestrictingShiftDuration is a part of sealed extensions.
+> No additional actions are required.
 
 ---
 
