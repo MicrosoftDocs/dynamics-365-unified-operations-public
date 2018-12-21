@@ -75,7 +75,7 @@
   - name: Manage leave and absence
     href: leave-absence-overview.md
     items:
-    - name: Leave and absence content
+    - name: Leave and absence concepts
       href: leave-absence-concepts.md
     - name: Accrue time off based on hours worked
       href: leave-accrue-hours-worked.md
