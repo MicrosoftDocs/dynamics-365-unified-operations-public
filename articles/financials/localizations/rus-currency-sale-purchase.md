@@ -37,8 +37,14 @@ ms.dyn365.ops.version: 8.1
 The functionality allows you to do the following:
 - Register the transactions for the sale, purchase and transfer of currency which is carried out using the ledger account "Money transfers in transit";
 - Automatically calculate the profit / loss amounts because of currency conversion for currency sale/purchase (the currency exchange rate of the Central Bank and the exchange rate of the legal entity’s bank on the date of currency transfer are considered for calculation). Automatically create the transactions on profit / loss from conversion (purchase / sale of currency),
-- Automatically generate the transactions on the unrealized exchange rate difference, if the exchange rate of the sold currency on the currency sale date differs from the rate of this currency on the date when rubles received for sold currency.
+- Automatically generate the transactions on the unrealized exchange rate difference, because of different exchange rates on the currency transactions dates.
 - Print currency transfer order.
+
+<give here links to places in this document>
+     Set up (Setting up currency sale and purchase.)
+     Currency sale (Create a currency sale transaction)
+     Currency purchase (Create a currency purchase transaction)
+     Currency transfer (Create a currency transfer transaction)
 
 ## Setting up currency sale and purchase.
 
