@@ -298,3 +298,19 @@ The following criteria are validated during posting:
 -	The currency code in the field **Currency** on the **Payment** tab is equal to the accounting currency of the company.
 -	The fields **Currency** and **Bank exchange rate** on the **Payment** must be filled out.
 
+### Post settlement of currency purchase transactions
+
+Post settlement of currency purchase transactions to generate profit and loss transactions from the currency purchase
+
+1.	Go to **Cash and bank management > Setup > Bank groups** to open list of banks.
+2.	Select a bank, and then click **Functions > Settle open transactions** to settle currency purchase transactions.
+3.	Mark transactions for settlement. The following information is validated during settlement:
+
+-	Both transactions have **Transaction type** of extended type **Currency purchase**
+-	The value in the field **Currency** of group **Currency conversion** on tab **General** of foreign currency purchase transaction is equal to the value in the field **Currency** on tab **Overview** of transaction for foreign currency receipt.
+-	The bank account number specified in the **Transit account** field of foreign currency purchase transaction is equal to the bank account where the foreign currency is received.
+
+4.	Click **Post**. As result, the transaction for profit or loss from the currency purchase is generated (in case of bank exchange rate of purchased foreign currency differs from the Central bank exchange rate of purchased foreign currency on the date of foreign currency receipt)
+
+5.	You can review the generated transactions on the page **Bank groups** by clicking the **Transactions** button.
+6.	You can also post unsettlement of transactions. In the page **Bank groups** click **Functions >> Closed transitions editing**, mark transactions and click **Reverse**.
