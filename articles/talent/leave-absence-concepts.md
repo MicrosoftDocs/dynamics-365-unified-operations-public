@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-The concepts and terms below help to determine how an employee is awarded time off and how his or her balances are calculated. For more information on leave and absence management, see 
+The concepts and terms below can help to determine how an employee is awarded time off and how his or her time balances are calculated. For more information on leave and absence management, see 
 [Leave and absence management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/leave-absence-overview).
 
 
