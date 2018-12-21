@@ -314,3 +314,72 @@ Post settlement of currency purchase transactions to generate profit and loss tr
 
 5.	You can review the generated transactions on the page **Bank groups** by clicking the **Transactions** button.
 6.	You can also post unsettlement of transactions. In the page **Bank groups** click **Functions >> Closed transitions editing**, mark transactions and click **Reverse**.
+
+
+## Create a currency transfer transaction
+
+### Create a currency movement for currency transfer
+
+1.	Go to **Accounts payable > Payments > Payment journal**. Create a new payment journal.
+2.	Click **Lines** and create a new journal line. 
+
+|**Field** | **Description** | 
+|----------|-----------------|
+|**Account**| Select the vendor account number which is associated with Bank account used for currency conversion transactions
+| **Debit**, **Currency** | Enter the transaction amount and currency code for currency transfer|
+| **Offset account type**, **Offset account** | Select “Bank” and the Bank account where from the currency transfer is generated. The bank of the selected bank account must be associated with the vendor account chosen in the field “Account”|.
+| **Method of payment** | Select the method of payment for the currency transfer created earlier|
+| Tab **Bank** | |
+| **Bank transaction type** | Validate the value, which is automatically filled from the **Method of payment**, or select the transaction type for the currency transfer transaction|
+| Tab **Payment** ||
+| **Posting profile** | Validate the value, which should contain the profile for posting on ledger account “money in transit” |
+
+3.	Validate and post the journal
+
+### Create transactions for bank commission and result of currency transfer
+
+1.	Go to **Accounts payable > Payments > Payment journal**. Create new journal. Click **Lines**
+2.	Create a new line for bank commission withdrawal. Fill the fields in line:
+
+| **Field** | **Description** |
+|-----------|---------------|
+|**Account** | Select the vendor account related to bank account of currency transfer |
+|**Credit** | Enter the bank commission amount |
+| **Currency** | Select the currency of bank commission |
+|**Offset account type**| Select **Ledger** |
+|**Offset account**| Select the Ledger account for bank commission losses |.
+|Tab **Bank** | |
+|**Bank transaction type**| Select the transaction type with extended type **Currency transfer** |
+|Tab **Payment** | |
+|**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit” |
+
+3.	Create a new line for receiving transferred currency
+
+| **Field** | **Description** |
+|-----------|---------------|
+|**Account** | Select the vendor account related to bank account used in currency transfer| |**Credit** | Enter the amount of transferred currency|
+|**Currency**| Select the code of the transferred currency|
+|**Offset account type**| Select **Bank** |
+|**Offset account**| Select the Bank account to which the foreign currency is received. Bank of this bank account should have a relation for the vendor account chosen in the field **Account** |
+|Tab **Bank** | |
+|**Bank transaction type**| Select the transaction type with extended type **Currency transfer** |
+|Tab **Payment** | |
+|**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit” |
+
+4.	Post the journal.
+
+### Post settlement of currency transfer transactions
+
+Post settlement of currency purchase transactions to generate currency exchange difference transactions.
+
+1.	Go to **Cash and bank management > Setup > Bank groups** to open list of banks.
+2.	Select a bank, and then click **Functions > Settle open transactions** to settle currency purchase transactions.
+3.	Mark transactions for settlement. The following information is validated during settlement:
+
+-	Both transactions have **Transaction type** of extended type **Currency transfer**
+-	Currency codes of transactions are equal
+
+4.	Click **Post**. As result, the exchange rate difference transaction is generated. Ledger accounts for currency exchange difference are taken from the **Realized gain** and **Realized loss* accounts of the currency parameters setup.
+
+5.	You can review the generated transactions on the page **Bank groups** by clicking the **Transactions** button.
+6.	You can also post unsettlement of transactions. In the page **Bank groups** click **Functions >> Closed transitions editing**, mark transactions and click **Reverse**.
