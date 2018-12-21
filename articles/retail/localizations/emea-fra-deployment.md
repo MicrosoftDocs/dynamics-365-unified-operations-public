@@ -474,10 +474,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -497,10 +497,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -608,10 +608,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -631,10 +631,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
