@@ -257,7 +257,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 #### SequentialSignatureRegister component
 
 1. Find the **Runtime.Extensions.SequentialSignatureRegister** project.
-2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. The value must be a string that is 40 characters long and that doesn't include any delimiters. For more information, see [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
+2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. The value must be a string that is 40 characters long in upper case and that doesn't include any delimiters. For more information, see [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
