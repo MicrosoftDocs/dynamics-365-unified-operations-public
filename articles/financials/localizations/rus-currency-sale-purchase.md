@@ -293,7 +293,7 @@ After you have posted payment order for currency purchase, you can register bank
 |**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit”|
 
 4.	Post the journal.
-The following is validated during posting:
+The following criteria are validated during posting:
 -	The transaction currency must not be equal to the accounting currency of the company.
 -	The currency code in the field **Currency** on the **Payment** tab is equal to the accounting currency of the company.
 -	The fields **Currency** and **Bank exchange rate** on the **Payment** must be filled out.
