@@ -57,45 +57,38 @@ The CRT extension components are included in the CRT samples. To complete the fo
 1. Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.
 2. Find the following files:
 
-     # [Retail 7.3.1](#tab/retail-7-3-1)
-
-   - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
-    
-       - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
-    
-   - In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
-
-       - Newtonsoft.Json.dll
-
-   - In the **Reference\\TaxEngine** folder:
-
-     - Microsoft.Dynamics365.Tax.Core.dll
-     - Microsoft.Dynamics365.Tax.DataAccessor.dll
-     - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-     - Microsoft.Dynamics365.Tax.DataModel.dll
-     - Microsoft.Dynamics365.Tax.Metadata.dll
-     - Microsoft.Dynamics365.LocalizationFramework.dll
-     - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-     - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-     - Microsoft.Dynamics365.XppSupportLayer.dll
-
-   - Find the following folders in the **Reference\\Z3** folder:
-
-     - x86
-     - x64
-
-     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+    # [Retail 7.3.1](#tab/retail-7-3-1)
 
     - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
+      - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
     
-       - Contoso.Commerce.Runtime.GenericTaxEngine.dll
-    
-    - In the **References\\Newtonsoft.Json.9.0.1\lib\net45** folder:
+    - In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
+      - Newtonsoft.Json.dll
 
+    - In the **Reference\\TaxEngine** folder:
+      - Microsoft.Dynamics365.Tax.Core.dll
+      - Microsoft.Dynamics365.Tax.DataAccessor.dll
+      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+      - Microsoft.Dynamics365.Tax.DataModel.dll
+      - Microsoft.Dynamics365.Tax.Metadata.dll
+      - Microsoft.Dynamics365.LocalizationFramework.dll
+      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+      - Microsoft.Dynamics365.XppSupportLayer.dll
+
+    - Find the following folders in the **Reference\\Z3** folder:
+      - x86
+      - x64
+
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+    - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
+      - Contoso.Commerce.Runtime.GenericTaxEngine.dll
+  
+    - In the **References\\Newtonsoft.Json.9.0.1\lib\net45** folder:
       - Newtonsoft.Json.dll
 
     - In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
-
       - Microsoft.Dynamics365.LocalizationFramework.dll
       - Microsoft.Dynamics365.Tax.Core.dll
       - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
@@ -104,63 +97,51 @@ The CRT extension components are included in the CRT samples. To complete the fo
       - Microsoft.Dynamics365.Tax.Metadata.dll
 
     - In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
-
       - Microsoft.Dynamics365.ElectronicReportingMapping.dll
       - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
       - Microsoft.Dynamics365.XppSupportLayer.dll
 
     - Find the following folders in the **$(SdkReferencesPath)\\Z3.4.5.0\\lib\\net40** folder:
-
       - x86
       - x64
-     
 
-	 # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
-     - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
+    - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:  
+      - Contoso.Commerce.Runtime.GenericTaxEngine.dll
     
-       - Contoso.Commerce.Runtime.GenericTaxEngine.dll
-    
-     - In the **References\\Newtonsoft.Json.9.0.1\lib\net45** folder:
+    - In the **References\\Newtonsoft.Json.9.0.1\lib\net45** folder:
+      - Newtonsoft.Json.dll
 
-       - Newtonsoft.Json.dll
+    - In the **References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** folder:
+      - Microsoft.Dynamics365.LocalizationFramework.dll
+      - Microsoft.Dynamics365.Tax.Core.dll
+      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+      - Microsoft.Dynamics365.Tax.DataAccessor.dll
+      - Microsoft.Dynamics365.Tax.DataModel.dll
+      - Microsoft.Dynamics365.Tax.Metadata.dll
 
-     - In the **References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** folder:
+    - In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** folder:
+      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+      - Microsoft.Dynamics365.XppSupportLayer.dll
 
-       - Microsoft.Dynamics365.LocalizationFramework.dll
-       - Microsoft.Dynamics365.Tax.Core.dll
-       - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-       - Microsoft.Dynamics365.Tax.DataAccessor.dll
-       - Microsoft.Dynamics365.Tax.DataModel.dll
-       - Microsoft.Dynamics365.Tax.Metadata.dll
-
-     - In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** folder:
-
-       - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-       - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-       - Microsoft.Dynamics365.XppSupportLayer.dll
-
-     - Find the following folders in the **$(SdkReferencesPath)\\\Z3.4.5.0\\lib\\net40** folder:
-
-       - x86
-       - x64
-
-    ---
+    - Find the following folders in the **$(SdkReferencesPath)\\\Z3.4.5.0\\lib\\net40** folder:
+      - x86
+      - x64
+   ---
 
 3. Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:
-
     - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
     - **Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.
 
 4. Find the extensions configuration file for CRT:
-
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extensions configuration file.
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
@@ -172,6 +153,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    ---
 
 ### Set up required parameters in Retail headquarters
 
@@ -236,76 +218,75 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
     ```
+    ---
 
 3. Modify the following files to include the Z3 libraries in deployable packages.:
 
-     # [Retail 7.3.1](#tab/retail-7-3-1)
+    # [Retail 7.3.1](#tab/retail-7-3-1)
 
-	 - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
-     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
-     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
+	  - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
+    - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
+    - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-     Add the following lines to the **ItemGroup** section
+    Add the following lines to the **ItemGroup** section
 
-     ```xml
-       <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
-       <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
-     ```
+    ```xml
+      <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
+      <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
+    ```
 
-     For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
 
-        ```xml
-            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
-        ```
+    ```xml
+      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    ```
 
-     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-     - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
-     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
-     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
+    - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
+    - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
+    - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-	 Add the following lines to the **ItemGroup** section
+	  Add the following lines to the **ItemGroup** section
 
+    ```xml
+      <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
+      <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
+    ```
+
+    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+
+    ```xml
+      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    ```
+
+	  # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+    - Packages\\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj"
+    - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
+
+	  Add the following lines to the **ItemGroup** section
      ```xml
        <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
        <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
      ```
 
-     For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+	  For **Sdk.ModernPos.Shared.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
 
-        ```xml
-            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
-        ```
-
-	 # [Retail 8.1.3 and later](#tab/retail-8-1-3)
-
-     - Packages\\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj"
-     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
-
-	 Add the following lines to the **ItemGroup** section
-
-     ```xml
-       <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
-       <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
-     ```
-
-	 For **Sdk.ModernPos.Shared.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
-
-        ```xml
-            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
-        ```
+    ```xml
+      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    ```
 
     ---
 
     For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
-
-        ```xml
-            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
-        ```
+    ```xml
+      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    ```
 
 4. Run **msbuild** for the whole Retail SDK to create deployable packages.
 
