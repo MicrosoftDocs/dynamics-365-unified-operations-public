@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Retail localization for India.
 author: 
 manager: ralin
-ms.date: 03/29/2018
+ms.date: 12/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
