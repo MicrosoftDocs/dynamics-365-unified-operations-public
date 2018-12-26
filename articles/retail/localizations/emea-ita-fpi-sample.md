@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ## Introduction
 
-The Microsoft Dynamics 365 for Retail functionality for Italy includes a sample of integration of POS with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) to work with [Epson FP-90III Series](http://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) from Epson and enables the communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only.
+The Microsoft Dynamics 365 for Retail functionality for Italy includes a sample of integration of POS with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) to work with [Epson FP-90III Series](http://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) from Epson and enables the communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in form of source code and is part of the Retail SDK.
 
 Microsoft does not ship any hardware, software or documentation from Epson. Please contact [Epson Italia S.p.A](http://www.epson.it) for information on how to acquire the fiscal printer and operate it.
  
