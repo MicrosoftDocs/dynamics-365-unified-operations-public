@@ -60,4 +60,4 @@ Customers using the self-service capabilities will see the following changes in 
 
 - You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
 
-- You will need to provide a combined deployable package for customizations. Delta packages will not be supported. This was always a recommended best practice and is now enforced.
+- You will need to provide a combined deployable package for customizations. That is, all custom extension packages, including ISV packages, must be deployed as a single software deployable package. You will not be able to deploy one module at a time. This was always a recommended best practice and is now enforced.
