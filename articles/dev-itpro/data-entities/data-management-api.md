@@ -5,7 +5,7 @@ title: Data management package REST API
 description: This topic describes the data management framework's package REST API.
 
 author: Sunil-Garg
-ms.date: 08/31/2018
+ms.date: 12/26/2018
 manager: AnnBe
 ms.topic: article
 ms.prod: 
@@ -62,6 +62,64 @@ The data management framework's package API uses OAuth 2.0 for authorizing acces
 
 ## Import APIs
 The following APIs are used to do file (data package) imports.
+
+### GetImportTargetErrorKeysFileUrl
+
+The GetImportTargetErrorKeysFileUrl API is used to get the url of the error file containing the keys of the import records that failed at the staging to target step of import for a single entity.  
+
+This API returns the url of the error file if it is available or an empty string if the error file is still being generated or there is no error file.
+
+> [!IMPORTANT] 
+> Before calling this API, call the GenerateImportTargetErrorKeysFile API to generate the error file. If the GenerateImportTargetErrorKeysFile API returns true, call this API in a loop until it returns a non-empty string. If the GenerateImportTargetErrorKeysFile API returns false, this API will always return an empty string since there are no errors.
+
+Pseudocode example:
+
+	errorsExist = GenerateImportTargetErrorKeysFile(executionId, entityName)
+
+	if (errorsExist)
+	{
+	    errorFileUrl = null
+
+    while (errorFileUrl is not a non-empty string)
+    {
+        errorFileUrl = GetImportTargetErrorKeysFileUrl(executionId, entityName)
+        if (errorFileUrl is not a non-empty string)
+        {
+            wait for some time before retrying
+        }
+    }
+	}
+
+```CSharp
+POST
+/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportTargetErrorKeysFileUrl
+
+Body
+{
+    "executionId":"<string>",
+    "entityName":"<string>"
+}
+Successful Response:
+HTTP/1.1 200 OK
+{
+  "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+  "value":"<errorkeysfileurl>"
+}
+```
+**Input Parameters**
+
+| Parameter         | Description |
+|-------------------|-------------|
+| string executionId | Execution ID of import. |
+| string entityName | Name of the entity for which to get the error file |
+
+
+**Output Parameters
+
+| Parameter         | Description |
+|-------------------|-------------|
+| string errorkeysfileurl | The url of the error keys file if it is available.  This method returns an empty string if the error file is still being generated or no errors exist. |
+
 
 ### GetAzureWritableUrl
 The **GetAzureWritableUrl** API is used to get a writable blob URL. This method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container for Finance and Operations. For on-premises deployments, this API will still return the URL which has been abstracted to local storage.
