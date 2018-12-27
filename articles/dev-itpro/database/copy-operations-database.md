@@ -49,7 +49,7 @@ There are several situations where you might want to keep a copy of a Finance an
 Be aware that Microsoft also provides a standard feature that lets you restore an Azure SQL database environment to a specific point in time within the last 35 days. This restore is done via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-point-in-time-restore.md).
 
 > [!NOTE]
-> This process used to require Remote Desktop access on your Tier-2 or higher environments but does no longer.  These operations can be performed using Self-service actions from within Lifecycle Services.
+> This process used to require Remote Desktop access on your Tier-2 or higher environments but no longer does. These operations can be performed using the Self-service actions in Lifecycle Services.
 
 ## Self-service database export
 
