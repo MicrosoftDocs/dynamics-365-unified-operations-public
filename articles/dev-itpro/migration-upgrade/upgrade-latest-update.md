@@ -229,7 +229,7 @@ On the **Upgrade** menu, select **Data upgrade**. Your original sandbox environm
 
 Next, the data upgrade package for your target version will be automatically applied. The time that is required to apply the data upgrade package varies, depending on the size of your database.
 
-**If the data upgrade fails** you must use the Package rollback button to undo the data upgrade package step, and then you must use the **Upgrade** menu to select the **Rollback** to restore your database to the point it was before the data upgrade began.  Before you do this, it is highly recommended to download the logs and determine the root cause of the failure so that you can ensure your next Data Upgrade execution will go more smoothly.
+**If the data upgrade fails** you must use the **Package rollback** button to undo the data upgrade package step, and then use the **Upgrade** menu to select **Rollback** to restore your database to the point it was before the data upgrade began. Before you do this, it is highly recommended to download the logs and determine the root cause of the failure so that you can ensure your next Data Upgrade execution will go more smoothly.
 
 #### Commit or rollback
 
@@ -241,9 +241,11 @@ If the business validation fails, you can select **Rollback** on the **Upgrade**
 
 #### Post upgrade actions
 
-After you have signed off on your upgrade, there are a few actions which must be performed on the environment.  These are listed below:
+After you have signed off on your upgrade, there are a few actions which must be performed on the environment. These are listed below:
 
-* Aggregate Measurements - these must be refreshed after a major upgrade.  To do this visit **System Administration -> Setup -> Entity Store** and use the Refresh button for all.  Note, these can be scheduled to run via Batch.
+* Aggregate Measurements - these must be refreshed after a major upgrade.  To do this, go to **System Administration** > **Setup** > **Entity Store** and then click **Refresh**.  
+> [!NOTE]
+> These can be scheduled to run using Batch.
 
 #### Upgrade production
 
@@ -273,9 +275,9 @@ This DVT error is intermittent and can be resolved by using the **Resume** butto
 
 This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process will resume at this step. Microsoft is trying to reliably reproduce this issue and intends to produce a fix in the future.
 
-**Upgrade was Committed but environment remains in 'Upgrade cleanup in progress' state.**
+**Upgrade was Committed but the environment remains in 'Upgrade cleanup in progress' state.**
 
-This is an issue we have noticed on some Sandbox and Production environments.  We have created a bug to resolve this problem.  In the mean time, we will be alerted proactively when this occurs and will cleanup the environment state manually.  When the bug is resolved, we will remove this issue from the Known Issues list.
+This is an issue we have noticed on some Sandbox and Production environments. We have created a bug to resolve this problem. In the mean time, we will be alerted proactively when this occurs and will cleanup the environment state manually. When the bug is resolved, we will remove this issue from the Known Issues list.
 
 ## Scenario 4: Upgrade to the most current platform only
 
