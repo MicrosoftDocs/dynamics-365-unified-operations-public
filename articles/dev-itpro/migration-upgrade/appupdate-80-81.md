@@ -60,12 +60,12 @@ On average this takes 3-4 hours and can be done simultaneously. For the build en
 In Azure DevOps, visit your existing Build Definition and ensure that it is not using your new agent pool for 8.1. This will keep your new build agent from trying to compile older application code.
 
 ### Apply the latest binary update to your build and development servers
-In Lifecycle Services, go to your **build server** deployed in step 1.  Using the Update Tiles at the bottom of the environment details page, grab the latest updates available and store this in your project's Asset Library using the **Save package** button.  For example, this could be saving the 8.1.3 PU23 package to the Asset Library.
+In Lifecycle Services, go to the **build server** that you deployed in step 1. Using the **Update** tiles at the bottom of the **Environment details** page, grab the latest updates available and store it in your project's **Asset Library** using the **Save package** button.  For example, this could be saving the 8.1.3 PU23 package to the **Asset Library**.
 
-Apply this same package back to the build server in which you saved the package, as well as any of the new 8.1 developer environments you have deployed.
+Apply this same package back to the build server where you saved the package, as well as any of the new 8.1 developer environments you have deployed.
 
 > [!NOTE]
-> In earlier versions of this document, the update process used the 8.1 PU20 package from the global Shared Asset Library.  This package has become out of date and is no longer recommended.  Instead, we recommend the above approach of taking the latest updates such as 8.1.3 PU23 which will be available from the Update Tiles when you deploy your 8.1 PU20 build server.  
+> In earlier versions of this document, the update process used the 8.1 PU20 package from the global Shared Asset Library. This package has become out of date and is no longer recommended. Instead, we recommend the above approach of taking the latest updates such as 8.1.3 PU23 which will be available from the **Update** tiles when you deploy your 8.1 PU20 build server.  
 
 ## Begin branch work for version control and remove any application hotfixes
 While the new environments are deploying, begin the branching work for your update. Use the following branch structure in version control as an example.  Branching design varies for each customer, so be careful to adjust your steps accordingly based on how your branches are set up.
@@ -92,7 +92,7 @@ Now you are ready to map this branch to a new development environment and compil
 After you have compiled in a developer environment and there are no errors to resolve, start a build in Azure DevOps using your new 8.1 build environment agent that was setup earlier. When this is complete, a deployable package artifact will be attached to your build results. Download this package and upload it to the Lifecycle Services Asset Library.  This single package should have all of your extensions and ISV solutions.
 
 ## Merge the deployable package with the 8.1 binary update package
-In your project's Asset Library, locate both your new 8.1 software deployable package ( your customization package that includes your ISVs ) and the 8.1.X PU2X binary update package that was saved in Step 1.  Highlight both packages and select **Merge**. This will combine the files in to a merged update package.  You are now ready to apply this package to your various test environments.
+In your project's **Asset Library**, locate both your new 8.1 software deployable package (your customization package that includes your ISVs) and the 8.1.X PU2X binary update package that was saved in Step 1 at the beginning of the topic. Highlight both packages and select **Merge**. This will combine the files into a merged update package. You can now apply this package to your various test environments.
 
 ## Deploy to target environments for validation
 Using the merged update package, deploy this to your various test environments.  For more on how to do this, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).  This merged update package can be deployed to your Tier1/OneBox environments as well as Tier-2 sandboxes. At a minimum, you must deploy this to the sandbox Tier-2 environment that comes with your subscription.  After you have finished with validation, mark the merged update package as a Release Candidate.
