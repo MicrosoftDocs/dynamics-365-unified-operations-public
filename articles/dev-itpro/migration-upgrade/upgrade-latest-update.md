@@ -197,7 +197,7 @@ After staging deployment is completed, go back to the environment details page, 
 
 The **Upgrade** menu will include an **Apply updates** option. You can select this option to apply your software deployable packages to the new environment. These packages include any binary package, whether it's from an independent software vendor (ISV) solution, your own customization packages, or platform binary update packages. 
 
-**We highly recommend** applying the latest platform update as your first step.  If you are upgrading to version 8.1, we recommend getting the latest binary update package such as 8.1.3 for example, which will also include the latest platform update.  This ensures you have the latest hotfixes available and will reduce errors further along in the process.
+**We highly recommend** applying the latest platform update as your first step. If you are upgrading to version 8.1, we recommend getting the latest binary update package such as 8.1.3 for example, which will also include the latest platform update. This ensures you have the latest hotfixes available and will reduce errors further along in the process.
 
 <img src="media/UpgradeAutomation/06_ApplyUpdates.png" width="700px" alt="Apply updates option on the Upgrade menu" />
 
