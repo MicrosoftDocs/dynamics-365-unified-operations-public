@@ -417,6 +417,8 @@
           href: ../dev-itpro/data-entities/configuration-data-packages.md
         - name: Configuration data packages (July 2017 release only)
           href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+        - name: Make Entity Store available as a Data Lake
+          href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
       - name: Configuration data templates
         href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
       - name: Track changes to an entity
