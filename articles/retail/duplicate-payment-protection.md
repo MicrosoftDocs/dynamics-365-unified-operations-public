@@ -83,28 +83,23 @@ The main principal behind the duplicate payment protection feature is to put the
 - **Cashier invokes another payment for a different amount**.
 - **Cashier attempts to void the transaction**.
 
+![Recover Payment](media/Payments/Recover-Payment.png)
+
 ### How to skip Payment Recovery
 In some cases the cashier might explicitly chose to skip the duplicate payment protection and opt not to recover a previous payment.
 In those cases, the cashier can follow the steps described below to void the transaction without recovering the payment:
 
-1. TODO
+1. **Relaunch the Dynamics 365 for Retail Modern POS**:
+    - After the Dynamics 365 for Retail Modern POS has lost connectivity to the payment terminal, re-launch the POS.
+2. **Void Transaction**:
+    - Navigate to the cart page and click the `Void Transaction` button.
+    - A new dialog will appear indicating that a recovered payment is available. Click the `Ignore` button to skip the payment recovery.
+    
+![Skip Payment Recovery](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### How to handle the case when the customer leaves the store
 In some cases, the customer might chose to leave the store before the cashier can finalize the transaction. 
-In those cases it is recommended to follow the steps described below to avoid the customer from being charged.
-
-1. **Cashier launches the Dynamics 365 for Retail Modern POS**:
-    - The cashier relaunches the Dynamics 365 for Retail Modern POS to recover from the previous issues that were encountered.
-2. **Cashier recovers the previous payment**:
-    - Cashier clicks on the `Pay Card` button and follows the steps to run a regular card payment. 
-    - Once done, the cashier will be shown that a payment was recovered.
-    - Once the cashier clicks the `OK` button the payment line is automatically added to the cart.
-3. **Cashier voids the previous payment**:
-    - Cashier clicks on the `Void payment` button and voids all payment lines that were added, including the recovered payment line.
-4. **Cashier voids the transaction**:
-    - Once all payment lines are voided the cashier can then void the entire transaction.
-  
-Following these instructions will ensure that the customer will not be charged for the payment.
+In those cases it is recommended to follow the steps described in the [How to skip Payment Recovery](#How-to-skip-Payment-Recovery) section to void the transaction and manually void the payment on the portal of the payment gateway/processor.
 
 ## Troubleshooting Steps
 
