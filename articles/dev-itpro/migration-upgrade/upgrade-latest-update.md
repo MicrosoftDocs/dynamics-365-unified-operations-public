@@ -197,6 +197,8 @@ After staging deployment is completed, go back to the environment details page, 
 
 The **Upgrade** menu will include an **Apply updates** option. You can select this option to apply your software deployable packages to the new environment. These packages include any binary package, whether it's from an independent software vendor (ISV) solution, your own customization packages, or platform binary update packages. 
 
+**We highly recommend** applying the latest platform update as your first step. If you are upgrading to version 8.1, we recommend getting the latest binary update package such as 8.1.3 for example, which will also include the latest platform update. This ensures you have the latest hotfixes available and will reduce errors further along in the process.
+
 <img src="media/UpgradeAutomation/06_ApplyUpdates.png" width="700px" alt="Apply updates option on the Upgrade menu" />
 
 When you apply a new package to the environment, the process is the same as the process for regular environment servicing. When package application is completed, you must use the **Sign Off** button for that package before you can move on or apply another package.
@@ -227,13 +229,23 @@ On the **Upgrade** menu, select **Data upgrade**. Your original sandbox environm
 
 Next, the data upgrade package for your target version will be automatically applied. The time that is required to apply the data upgrade package varies, depending on the size of your database.
 
+**If the data upgrade fails** you must use the **Package rollback** button to undo the data upgrade package step, and then use the **Upgrade** menu to select **Rollback** to restore your database to the point it was before the data upgrade began. Before you do this, it is highly recommended to download the logs and determine the root cause of the failure so that you can ensure your next Data Upgrade execution will go more smoothly.
+
 #### Commit or rollback
 
 After the data upgrade package is applied, you can review the environment, and your users can perform business validation activities. If this validation is successful, you can mark the whole upgrade as a success by selecting **Commit** on the **Upgrade** menu. You must commit the upgrade to move on to your production environment.
 
 <img src="media/UpgradeAutomation/10_CommitRollback.png" width="700px" alt="Commit option on the Upgrade menu" />
 
-If the validation fails, you can select **Rollback** on the **Upgrade** menu. This option will perform a point-in-time restore of the database, swap the database connection back to your original sandbox, and bring your original sandbox back online. The sandbox will then be back in its previous state.
+If the business validation fails, you can select **Rollback** on the **Upgrade** menu. This option will perform a point-in-time restore of the database, swap the database connection back to your original sandbox, and bring your original sandbox back online. The sandbox will then be back in its previous state.
+
+#### Post upgrade actions
+
+After you have signed off on your upgrade, there are a few actions which must be performed on the environment. These are listed below:
+
+* Aggregate Measurements - these must be refreshed after a major upgrade.  To do this, go to **System Administration** > **Setup** > **Entity Store** and then click **Refresh**.  
+> [!NOTE]
+> These can be scheduled to run using Batch.
 
 #### Upgrade production
 
@@ -262,6 +274,10 @@ This DVT error is intermittent and can be resolved by using the **Resume** butto
 **Application configuration sync failed. Call to TTSCOMMIT without first calling TTSBEGIN.**
 
 This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process will resume at this step. Microsoft is trying to reliably reproduce this issue and intends to produce a fix in the future.
+
+**Upgrade was Committed but the environment remains in 'Upgrade cleanup in progress' state.**
+
+This is an issue we have noticed on some Sandbox and Production environments. We have created a bug to resolve this problem. In the mean time, we will be alerted proactively when this occurs and will cleanup the environment state manually. When the bug is resolved, we will remove this issue from the Known Issues list.
 
 ## Scenario 4: Upgrade to the most current platform only
 
