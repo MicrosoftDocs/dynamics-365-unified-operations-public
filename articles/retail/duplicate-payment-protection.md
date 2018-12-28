@@ -79,9 +79,11 @@ As the cashier continues to interact with the previous transaction there are sev
 In each of these scenarios the cashier is shown a dialog indicating that a previous payment has already been made, which is automatically recovered and added as a payment line to the cart.
 The main principal behind the duplicate payment protection feature is to put the Dynamics 365 for Retail Modern POS back into the same state it would be if the original payment would have been successfully processed and the corresponding payment line was added to the cart.
 
-- **Cashier invokes another payment for the same amount using any payment method**.
-- **Cashier invokes another payment for a different amount**.
+- **Cashier invokes another payment for any amount using a card payment**.
+- **Cashier invokes another payment for any amount using a cash payment**.
+- **Cashier attempts to void a line on the cart**.
 - **Cashier attempts to void the transaction**.
+- **Cashier attempts to suspend the transaction**.
 
 ![Recover Payment](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
