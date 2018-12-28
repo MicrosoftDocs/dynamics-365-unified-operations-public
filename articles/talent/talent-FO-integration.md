@@ -152,11 +152,11 @@ project in Finance and Operations. If the task number is 9 in Data Integrator, t
 
 ![](media/1801a3b66b1ac2b5f344737d0f59cee0.png)
 
-1. Track the execution time of the project.
+2. Track the execution time of the project.
 
 ![](media/7a18e2f06607a94711e34c81ad754203.png)
 
-1. In Finance and Operations, identify index - 1. In this example, the
+3. In Finance and Operations, identify index - 1. In this example, the
 project with suffix "8" and execution time of index "0" project matches with
 the execution time in Step 2.
 
@@ -191,7 +191,7 @@ During implementation of Talent, verify that the number sequences are not the sa
 Talent and Finance and Operations. Validate that all number sequences are not
 identical where data may be maintained in both systems.
 
-## Q: When creating my connection set, I am unable to see the connection in the Connection drop down. What sdo I do?
+## Q: When creating my connection set, I am unable to see the connection in the Connection drop down. What do I do?
 
 Make sure when creating your connections, you choose Dynamics 365 for Operations (currently in preview) and Common Data Service.
 
@@ -211,9 +211,6 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
 ![cid:image002.png\@01D49839.6C126650](media/edf1033809985cfd217308af8d5f98af.png)
 
-cid:image002.png\@01D49839.6C126650
-
-cid:image002.png\@01D49839.6C126650
 
 ## For more information
 
