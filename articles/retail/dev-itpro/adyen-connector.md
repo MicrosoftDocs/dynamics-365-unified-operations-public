@@ -37,8 +37,8 @@ This topic provides an overview of the Dynamics 365 Payment Connector for Adyen,
 | Term | Description | 
 | --- | --- |
 | Payment Connector | An extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this article was implemented using the standard payments SDK. 
-| Card Present | When a payment terminal is implemented using the `INamedRequestHandler`, it is typically referred to as a "Card present" payment connector. The term card present is a way to describe such a payment connector due to the fact that is supports transactions where a physcical card is presented. |
-| Card Not Present | Payment connectors implemented for use in the back office, call center, or used in e-Commerce integrations are implemented using the `IPaymentProcessor`, are typically referred to as "Card not present" payment connectors. |
+| Card Present | When a payment terminal is implemented using the `INamedRequestHandler` interface, it is typically referred to as a "Card present" payment connector. The term card present is a way to describe such a payment connector due to the fact that is supports transactions where a physcical card is presented. |
+| Card Not Present | Payment connectors implemented for use in the back office, call center, or used in e-Commerce integrations are implemented using the `IPaymentProcessor` interface and typically referred to as "Card not present" payment connectors. |
 
 ## Overview
 This article covers the following sections to assist you to evaluate and setup the Dynamics 365 Payment Connector for Adyen: 
@@ -101,7 +101,7 @@ The Dynamics 365 Payment Connector for Adyen leverages the [Adyen Payment Termin
 | Discover | Apple Pay | ✔ | ✔ | - |
 | Discover | Samsung Pay | ✔ | ✔ | - |
 | Diners | Standard | ✔ | ✔ | ✔ |
-| Dineromai | Standard | ✔ | ✔ | ✔ |
+| Dineromail | Standard | ✔ | ✔ | ✔ |
 | JCB | Standard | ✔ | ✔ | ✔ |
 
 #### Gift Cards
