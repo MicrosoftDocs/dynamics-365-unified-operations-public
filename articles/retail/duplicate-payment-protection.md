@@ -63,16 +63,16 @@ In most cases, the cashier will trigger a subsequent payment on the payment term
 
 ### How Duplicate Payments Scenarios are triggered
 1. **Cashier initiates payments**:
-  - Cashier initiaties a card payment by clicking on `Pay card` on the Dynamics 365 for Retail Modern POS, navigates to the `Payment Page`, and click the `Tender` button.
+    - Cashier initiaties a card payment by clicking on `Pay card` on the Dynamics 365 for Retail Modern POS, navigates to the `Payment Page`, and click the `Tender` button.
 2. **Customer interacts with payment terminal**:
-  - Once the payment is initiated the payment terminal is lid up prompting the customer for payment. The customer initiates the payment process on the payment terminal. 
+    - Once the payment is initiated the payment terminal is lid up prompting the customer for payment. The customer initiates the payment process on the payment terminal. 
 3. **Dynamics 365 for Retail Modern POS loses connectivity to the payment terminal**:
-  - While the customer is running a payment on the payment terminal the Dynamics 365 for Retail Modern POS loses connectivity to the payment terminal because it either crashes, loses network connectivity, is closed, or the terminal is rebooted.
-  - The cashier will re-launch or Dynamics 365 for Retail Modern POS or address any connectivity issues.
+    - While the customer is running a payment on the payment terminal the Dynamics 365 for Retail Modern POS loses connectivity to the payment terminal because it either crashes, loses network connectivity, is closed, or the terminal is rebooted.
+    - The cashier will re-launch or Dynamics 365 for Retail Modern POS or address any connectivity issues.
 4. **Customer completes payment on the payment terminal**:
-  - As the Dynamics 365 for Retail Modern POS is being reset the customer completes the payment on the payment terminal and is charged.
+    - As the Dynamics 365 for Retail Modern POS is being reset the customer completes the payment on the payment terminal and is charged.
 5. **Dynamics 365 for Retail Modern POS is launched**:
-  - The cashier completes the reset/launch of the Dynamics 365 for Retail Modern POS but the payment is not added to the cart.
+    - The cashier completes the reset/launch of the Dynamics 365 for Retail Modern POS but the payment is not added to the cart.
 
 ### How Previous Payments are recovered
 As the cashier continues to interact with the previous transaction there are several ways in which the previous payment done through the terminal is automatically recovered.
@@ -94,15 +94,15 @@ In some cases, the customer might chose to leave the store before the cashier ca
 In those cases it is recommended to follow the steps described below to avoid the customer from being charged.
 
 1. **Cashier launches the Dynamics 365 for Retail Modern POS**:
-  - The cashier relaunches the Dynamics 365 for Retail Modern POS to recover from the previous issues that were encountered.
+    - The cashier relaunches the Dynamics 365 for Retail Modern POS to recover from the previous issues that were encountered.
 2. **Cashier recovers the previous payment**:
-  - Cashier clicks on the `Pay Card` button and follows the steps to run a regular card payment. 
-  - Once done, the cashier will be shown that a payment was recovered.
-  - Once the cashier clicks the `OK` button the payment line is automatically added to the cart.
+    - Cashier clicks on the `Pay Card` button and follows the steps to run a regular card payment. 
+    - Once done, the cashier will be shown that a payment was recovered.
+    - Once the cashier clicks the `OK` button the payment line is automatically added to the cart.
 3. **Cashier voids the previous payment**:
-  - Cashier clicks on the `Void payment` button and voids all payment lines that were added, including the recovered payment line.
+    - Cashier clicks on the `Void payment` button and voids all payment lines that were added, including the recovered payment line.
 4. **Cashier voids the transaction**:
-  - Once all payment lines are voided the cashier can then void the entire transaction.
+    - Once all payment lines are voided the cashier can then void the entire transaction.
   
 Following these instructions will ensure that the customer will not be charged for the payment.
 
@@ -119,7 +119,7 @@ Even when the duplicate payment protection feature is invoked it is generally re
 ## Common Issues
 
 ### Payment Recovery Fails
-| Title | Payment Recover Fails |
+| Title | Payment Recovery Fails |
 | :-- | :-- |
 | **Symptom** | An error occurs while a previous payment is being recovered on the Dynamics 365 for Retail Modern POS. |
 | **Root Cause** | This can happen when there is an issue in the payment connector or payment gateway/processor ths does not allow the previous payment to be recovered. |
