@@ -62,7 +62,7 @@ As a result, the customer's card (e.g. credit card) is charged but the payment l
 In most cases, the cashier will trigger a subsequent payment on the payment terminal, which results in a duplicate payment for the customer.
 
 ### How Duplicate Payments Scenarios are triggered
-1. **Cashier initiates payments**:
+1. **Cashier initiates payment**:
     - Cashier initiaties a card payment by clicking on `Pay card` on the Dynamics 365 for Retail Modern POS, navigates to the `Payment Page`, and click the `Tender` button.
 2. **Customer interacts with payment terminal**:
     - Once the payment is initiated the payment terminal is lid up prompting the customer for payment. The customer initiates the payment process on the payment terminal. 
