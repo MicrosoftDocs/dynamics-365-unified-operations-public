@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Talent to Finance and Operations integration
-description: This topic explains what data is synchronized in a Talent and Finanace and Operations integration.
+title: Talent to Finance and Operations integration FAQ
+description: This topic explains what data is synchronized in a Talent and Finance and Operations integration.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/28/2018
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Talent to Finance and Operations integration
+# Talent to Finance and Operations integration FAQ
 
 [!include [banner](includes/banner.md)]
 
-This topic explains what data is synchronized when Dynamics 365 for Talent is integrated with Dynamics 365 for Finanace and Operations.
+This topic answers common questions associated about what data is synchronized when Dynamics 365 for Talent is integrated with Dynamics 365 for Finance and Operations.
 
 **Scenario: Is all data synchronized or just some data entities?**
 
