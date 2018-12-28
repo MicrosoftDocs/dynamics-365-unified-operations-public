@@ -73,36 +73,36 @@ Adyen devices are injected with the Adyen software. As a result, existing paymen
 | Brand | Variants | Supported | Card present | Card not present |
 | --- | --- | --- | ---| --- |
 | MasterCard | Credit | ✔ | ✔ | ✔ |
-| - | Debit | ✔ | ✔ | ✔ |
-| - | Alpha Bank Bonus | ✔ | ✔ | ✔ |
-| - | Apple Pay | ✔ | ✔ | - |
-| - | Samsung Pay | ✔ | ✔ | - |
-| - | Maestro | ✔ | ✔ | ✔ |
-| - | Maestro Samsung Pay | ✔ | - |
-| - | Maestro UK | ✔ | ✔ | ✔ |
+| MasterCard | Debit | ✔ | ✔ | ✔ |
+| MasterCard | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| MasterCard | Apple Pay | ✔ | ✔ | - |
+| MasterCard | Samsung Pay | ✔ | ✔ | - |
+| MasterCard | Maestro | ✔ | ✔ | ✔ |
+| MasterCard | Maestro Samsung Pay | ✔ | - |
+| MasterCard | Maestro UK | ✔ | ✔ | ✔ |
 | VISA | Credit | ✔ | ✔ | ✔ |
-| - | Debit | ✔ | ✔ | ✔ |
-| - | Alpha Bank Bonus | ✔ | ✔ | ✔ |
-| - | Android Pay | ✔ | ✔ | - |
-| - | Apple Pay | ✔ | ✔ | - |
-| - | Samsung Pay | ✔ | ✔ | - |
-| - | VISA Checkout | ✔ | ✔ | ✔ |
-| - | VISA Dankort | ✔ | ✔ | ✔ |
-| - | VISA Hipotecario | ✔ | ✔ | ✔ |
-| - | VISA Aravia Card | ✔ | ✔ | ✔ |
+| VISA | Debit | ✔ | ✔ | ✔ |
+| VISA | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| VISA | Android Pay | ✔ | ✔ | - |
+| VISA | Apple Pay | ✔ | ✔ | - |
+| VISA | Samsung Pay | ✔ | ✔ | - |
+| VISA | VISA Checkout | ✔ | ✔ | ✔ |
+| VISA | VISA Dankort | ✔ | ✔ | ✔ |
+| VISA | VISA Hipotecario | ✔ | ✔ | ✔ |
+| VISA | VISA Aravia Card | ✔ | ✔ | ✔ |
 | AMEX | Credit | ✔ | ✔ | ✔ |
-| - | Debit | ✔ | ✔ | ✔ |
-| - | Android Pay | ✔ | ✔ | - |
-| - | Apple Pay | ✔ | ✔ | - |
-| - | Samsung Pay | ✔ | ✔ | - |
-| - | AMEX Commercial | ✔ | ✔ | ✔ |
-| - | AMEX Consumer | ✔ | ✔ | ✔ |
-| - | AMEX Corporate | ✔ | ✔ | ✔ |
-| - | AMEX Small Business | ✔ | ✔ | ✔ |
+| AMEX | Debit | ✔ | ✔ | ✔ |
+| AMEX | Android Pay | ✔ | ✔ | - |
+| AMEX | Apple Pay | ✔ | ✔ | - |
+| AMEX | Samsung Pay | ✔ | ✔ | - |
+| AMEX | AMEX Commercial | ✔ | ✔ | ✔ |
+| AMEX | AMEX Consumer | ✔ | ✔ | ✔ |
+| AMEX | AMEX Corporate | ✔ | ✔ | ✔ |
+| AMEX | AMEX Small Business | ✔ | ✔ | ✔ |
 | Discover | Standard | ✔ | ✔ | ✔ |
-| - | Android Pay | ✔ | ✔ | - |
-| - | Apple Pay | ✔ | ✔ | - |
-| - | Samsung Pay | ✔ | ✔ | - |
+| Discover | Android Pay | ✔ | ✔ | - |
+| Discover | Apple Pay | ✔ | ✔ | - |
+| Discover | Samsung Pay | ✔ | ✔ | - |
 | Diners | Standard | ✔ | ✔ | ✔ |
 | Dineromai | Standard | ✔ | ✔ | ✔ |
 | JCB | Standard | ✔ | ✔ | ✔ |
