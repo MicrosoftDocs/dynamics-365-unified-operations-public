@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Duplicate payment protection- Functional experience
-description: Duplicate payment protection- Functional experience
+title: Duplicate Payment Protection
+description: Duplicate Payment Protection
 author: rubendel
 manager: AnnBe
 ms.date: 11/22/2018
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Duplicate Payment Protection Functional Experience
+# Duplicate Payment Protection
 This topic provides an overview of the duplicate payments protection feature for the Dynamics 365 for Retail Modern POS.
 
 ## Key terms
