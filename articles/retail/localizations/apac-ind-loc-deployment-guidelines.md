@@ -129,7 +129,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - Find the following folders in the **$(SdkReferencesPath)\\\Z3.4.5.0\\lib\\net40** folder:
       - x86
       - x64
-   ---
+
+    ---
 
 3. Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:
     - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
@@ -151,9 +152,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
+    ```
+
+    ---
+
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
-    ---
 
 ### Set up required parameters in Retail headquarters
 
@@ -165,9 +172,22 @@ Follow these steps to create deployable packages that contain Retail components,
 
 1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
 
+    # [Retail 7.3.1](#tab/retail-7-3-1)
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
+
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
+    ```
+
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
+    ```
+
+    ---
 
 2. In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
 
@@ -202,8 +222,8 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
     ```
-	
-	# [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.GenericTaxEngine.dll" />
@@ -218,13 +238,14 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
     ```
+
     ---
 
 3. Modify the following files to include the Z3 libraries in deployable packages.:
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-	  - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
+    - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
@@ -242,13 +263,19 @@ Follow these steps to create deployable packages that contain Retail components,
       <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
+    For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    ```xml
+      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    ```
+
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-	  Add the following lines to the **ItemGroup** section
+    Add the following lines to the **ItemGroup** section
 
     ```xml
       <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
@@ -262,31 +289,37 @@ Follow these steps to create deployable packages that contain Retail components,
       <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-	  # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+    For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    ```xml
+      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    ```
+
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
     - Packages\\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj"
     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-	  Add the following lines to the **ItemGroup** section
+    Add the following lines to the **ItemGroup** section
      ```xml
        <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
        <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
      ```
 
-	  For **Sdk.ModernPos.Shared.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    For **Sdk.ModernPos.Shared.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
 
     ```xml
       <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
       <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    ---
-
     For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
     ```xml
       <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
       <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
+
+    ---
 
 4. Run **msbuild** for the whole Retail SDK to create deployable packages.
 
