@@ -248,7 +248,6 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 If you are packaging your own Modern POS using the Retail SDK then these steps have to be performed only once in the SDK code before the installer is packaged. Otherwise, these steps have to be performed after the standard Modern POS or IIS Hardware Station is installed.
 
 1. Open the `dllhost.exe.config` (for Modern POS) or `web.config` (for IIS Hardware Station).
-  - On a standard installer this can be found under `C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\dllhost.exe.config`.
 2. Update the `PreloadedConfiguration` section to switch from the legacy to the standard `PaymentDeviceAdapter` as shown below.
 ``` xml
 <PreloadedComposition>
@@ -301,10 +300,10 @@ When payment transactions fail to process through the Adyen Payment Terminal the
 
 #### EFT Terminal ID is Not Set
 | Title | EFT Terminal ID is not Set |
-| --- | --- |
+| :-- | :-- |
 | **Symptom** | Payment Authorization calls fail with a Hardware error. The Event log contains an error message that the `EFT Terminal ID` is not set. |
 | **Root Cause** | This can happen when the `EFT POS Register Number` is not set on the Register or the IIS Hardware Station. This can also happen if the values are set but not properly synchronized to the POS terminal or when they are cached. |
 | **Fix** | Follow the instructions on the [Setup Dynamics 365 Register](#Setup-Dynamics-365-Register) section of this document. Once done, run the `1070` and `1090` distribution schedules. If this does not resolve the issue, consider re-activating the Modern POS as the value for the `EFT POS Register Number` might potentially be cached and needs to be reset. | 
 
 ## Related Articles
-- **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)**
