@@ -242,7 +242,7 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 4. In the same POS Registers form, in the **General** tab under the **PROFILES** section set the **Hardware profile** to the hardware profile configured above.
 5. In the top menu select **REGISTER** and under the **HARDWARE** section click on `Configure IP addresses`.
 6. In the newly opened IP address configuration form, under the **PIN pad** section enter the **IP address** for the terminal following this pattern and the values retrieved above when boarding the Adyen Terminal:
-  - `https://<IP address>:8443/nexo/<POIID>` (e.g. `https://192.168.1.3:8443/nexo/MX925-123456789`).
+    - `https://<IP address>:8443/nexo/<POIID>` (e.g. `https://192.168.1.3:8443/nexo/MX925-123456789`).
   
 #### Update Modern POS or IIS Hardware Station config
 If you are packaging your own Modern POS using the Retail SDK then these steps have to be performed only once in the SDK code before the installer is packaged. Otherwise, these steps have to be performed after the standard Modern POS or IIS Hardware Station is installed.
