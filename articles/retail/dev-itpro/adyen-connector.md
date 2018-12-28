@@ -47,27 +47,28 @@ This article covers the following sections to assist you to evaluate and setup t
 - **[Sign Up with Adyen](#Sign-Up-with-Adyen)** – This section describes how to sign up for a merchant account with Adyen.
 - **[Setup and Configuration](#Setup-and-Configuration)** – This section explains in detail how to setup and configure the Dynamics 365 Payment Connector for Adyen across the POS, Call Center, and E-Commerce channels.
 
-## Supported Features and Functionalities
+## Supported Features, Functionalities, and Payment Terminals
 The out of box payment connector uses the standard payments SDK. As such, the payment connector for Adyen does not have special capabilites which are not available for other payment connectors to utilize. 
 
-### Supported versions
-The Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 8.1.3 and above. the first pary Adyen connector is not available in previous versions, though there may be 3rd party connectors available. 
+### Dynamics Versions
+The first party out of box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 for Finance and Operations or Retail 8.1.3 and above. However, other third party developed payment connectors for Adyen can still be developed for earlier versions of Dynamics 365. 
 
-### Device support
-The Dynamics 365 Payment Connector for Adyen is payment terminal agnostic. As long as a payment terminal is supported by the Adyen payment SDK, the connector should support the same device. 
+### Payment Terminals
+The Dynamics 365 Payment Connector for Adyen leverages the [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api), which is device agnostic and supports all payment terminals supported by this API. Visit the [Adyen POS Terminals](https://www.adyen.com/pos-payments/terminals) page for a complete list of supported payment terminals.
 
-### Re-use of existing devices
-Existing devices that have been programmed to work with a payment processor should not be reused with a different payment processor. While it may technically feasible in some cases, it is not normal practice. Devices for use with Adyen should new from Adyen. 
+### Re-use of Existing Payment Terminals
+Adyen devices are injected with the Adyen software. As a result, existing payment terminals that are not pre-configured with Adyen cannot be re-used with the Dynamics 365 Payment Connector for Adyen.
 
-### Supported input methods
+### Input Methods
 
 | Connector type | Dip | Swipe | Tap | Manual entry | 
 | --- | --- | --- | --- | --- |
 | Card present | ✔ | ✔ | ✔ | - |
 | Card not present | - | - | - | ✔ |
 
-### Supported payment instruments
-Supported debit and credit cards:
+### Payment Instruments
+
+#### Debit and Credit Cards
 
 | Brand | Variants | Supported | Card present | Card not present |
 | --- | --- | --- | ---| --- |
@@ -106,32 +107,28 @@ Supported debit and credit cards:
 | Dineromai | Standard | ✔ | ✔ | ✔ |
 | JCB | Standard | ✔ | ✔ | ✔ |
 
-Supported gift cards:
+#### Gift Cards
 
 | Scheme | Card present | Card not present |
 | --- | --- | --- |
-| Givex | ✔ | Future release |
-| SVS | ✔ | Future release |
+| Givex | ✔ (8.1.3) | Future release |
+| SVS | ✔ (8.1.3) | Future release |
 
-Supported wallets:
+#### Wallets
 
 | Scheme | Card present | Card not present |
 | --- | --- | --- |
 | Alipay | Future release | - |
 | WeChat | Future release | - |
 
-#Todo: Supported version. Manual entry, cash back not supported. Alipay and Wechat not supported yet. Supported input methods.
-### Dynamics 365 Payment Features- Standard capabilities
- 
-
-### Dynamics 365 Payment Features- SDK enhancements
+#### Dynamics 365 Payment Features
 The following list describes the set of Dynamics 365 payment features supported by the Dynamics 365 Payment Connector for Adyen. These capabilities utilize enhancements introduced in December of 2018 to the payment SDK, and some retail components, and are not exclusive to the Adyen connector. For more information about how to uptake these enhancements with a different payment connector, please refer to [payment connector extensiblity documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)
 
-| Feature | Descrition | Supported | 
-| --- | --- | :-: |
-| **Duplicate Payment Protection** | Check to prevent duplicate payment scenarios in case the POS crashes and is unable to retrieve the signal from the payment terminal that the payment has been successfully processed. | ✔ |
-| **Omni-channel tokenization** | Support for omni-channel payment scenarios, such as buy online and pick up in store using existing authorization and card tokens. | ✔ |
-| **Refusal receipt printing** | Ability to print receipts when a payment is refused or cannot otherwise be completed successfully. | ✔ |
+| Scheme | Card present | Card not present |
+| --- | --- | --- |
+| Duplicate Payment Protection | ✔ (8.1.3) | - |
+| Omni Channel Tokenization | ✔ (8.1.3) | ✔ (8.1.3) |
+| Linked Refunds | Future release | Future release |
 
 ## Sign Up with Adyen
 Use of the connector requires a separate agreement with Adyen. To learn more about their services or create a test merchant account that can be used for the Dynamics 365 Payment Connector for Adyen, navigate to Adyen's website by clicking [here](https://www.adyen.com/partners/dynamics).
@@ -146,7 +143,6 @@ In the body of the email, be sure to include enough information to help them rou
 - Annual processing volume(Optional)
 - Description of required services (i.e. e-Commerce only, e-Commerce and card present with 'X' number of payment terminals, etc.)
 
-
 ## Setup and Configuration
 > [!NOTE]
 > These instructions assume that you have already signed up for a Merchant Account with Adyen and have access to the Adyen merchant dashboard.
@@ -154,8 +150,8 @@ In the body of the email, be sure to include enough information to help them rou
 ### Prerequisites
 The following prerequisites need to be met for payments to be configured in any channel.
 
-#### Setup processor for new credit cards
-In order to process any payments across POS terminals, Call Center, or E-Commerce a newdefault payment procesor has to be configured for new credit cards. The default payment prceossor can be configured using the following steps:
+#### Setup Processor for New Credit Cards
+In order to process any payments across POS terminals, Call Center, or E-Commerce a new default payment procesor has to be configured for new credit cards. The default payment prceossor can be configured using the following steps:
 
 1. Sign in to Retail headquarters and navigate to **Accounts receivable > Payments setup > Payment services**.
 2. Click on `+ New` in the top navigate pane and fill out the following values in the **Setup** tab.
@@ -176,19 +172,19 @@ In order to process any payments across POS terminals, Call Center, or E-Commerc
 | **Service Account ID** | Unique identifier for the setup of the merchant properties. The identifier is stamped on payment transactions and used to identify the merchant properties that should be used by downstream processes (i.e. invoicing). | ✔ | ✔ | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
 | **Version** | Version of the Dynamics 365 Payment Connector for Adyen to use. At this point only version `V001` is supported. | ✔ | ✔ | V001 |
 | **Gateway environment** | Adyen gateway environment to map to. Possible values are `Test` and `Live`. | ✔ | ✔ | Live |
-| **Optional Domain** | TODO | | | TODO |
+| **Optional Domain** | The domain to use when making payment requests to Adyen. | | | https://terminal-api-live.adyen.com/sync |
 | **Merchand account ID** | Unique Adyen Merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | MerchantIdenfier |
 | **Terminal architecture** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
 | **Local Password phrase** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
 | **Local Key Identifier** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
 | **Local Key Version** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
-| **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | TODO | TODO |
-| **Cloud API Key** | Adyen cloud API key. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | TODO |
-| **Supported Currencies** | The currencies that should be processed by the connector. | ✔ | ✔ | USD;EUR |
+| **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | ✔ | 1 |
+| **Cloud API Key** | Adyen cloud API key. This can be retrieved by following the instructions provided on the Adyen page on [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key). | ✔ | | *Long String* |
+| **Supported Currencies** | The currencies that should be processed by the connector. Please note, additional currencies are supported by Adyen through the [Dynamics Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) once the transaction request is sent to the payment terminal. This value shoud match the store currencies that amp this specific connector configuration. | ✔ | ✔ | USD;EUR |
 | **Supported Tender Types** | The tender types that should be processed by the connector. | ✔ | ✔ | Visa;MasterCard;Amex;Discover;Debit |
-| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | TODO |
+| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | SVS |
 
-### Setup POS Payment Terminal
+### POS Payment Terminal
 
 #### Board and Configure Adyen Payment Terminal
 > [!NOTE]
@@ -206,7 +202,7 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 - Key version
 
 #### Setup Dynammics 365 POS Hardware Profile
-1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > PRO profiles > Hardware profiles**.
+1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > POS profiles > Hardware profiles**.
 2. Select the hardware profile for which you would like to add the Dynamics 365 Payment Connector for Adyen.
 
 ##### EFT Service
@@ -223,21 +219,21 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 | **Optional Domain** | TODO | | | TODO |
 | **Merchand account ID** | Unique Adyen Merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | MerchantIdenfier |
 | **Terminal architecture** | Adyen Terminal API architecture to use. Possible values are `Local` or `Cloud`. In most cases when the Microsoft Dynamics 365 for Retail Modern POS is on the same network as the Adyen Payment Terminal the `Local` setting should be used. For additional information about the different Terminal API architectures please view the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | ✔ | ✔ | Local |
-| **Local Password phrase** | Adyen key passphrase for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | keypassphrase123 |
-| **Local Key Identifier** | Adyen key identifier for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | mykey |
-| **Local Key Version** | Adyen key version for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | 0 |
-| **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | TODO | TODO |
-| **Cloud API Key** | Adyen cloud API key. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | TODO |
-| **Supported Currencies** | The currencies that should be processed by the connector. | ✔ | ✔ | USD;EUR |
+| **Local Password phrase** | Adyen key passphrase for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | keypassphrase123 |
+| **Local Key Identifier** | Adyen key identifier for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | mykey |
+| **Local Key Version** | Adyen key version for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | 0 |
+| **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | ✔ | 1 |
+| **Cloud API Key** | This field is only used for the Card Not Present Payment integration and should be left blank. | | ✔ | *Leave Blank.* |
+| **Supported Currencies** |The currencies that should be processed by the connector. Please note, additional currencies are supported by Adyen through the [Dynamics Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) once the transaction request is sent to the payment terminal. This value shoud match the store currencies that amp this specific connector configuration. | ✔ | ✔ | USD;EUR |
 | **Supported Tender Types** | The tender types that should be processed by the connector. | ✔ | ✔ | Visa;MasterCard;Amex;Discover;Debit |
-| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | TODO |
+| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | SVS |
 
 ##### PIN pad
 1. Under the **PIN pad** tab set the value for **PIN pad** to `Network` and the value for the **Device name** to `MicrosoftAdyenDeviceV001`.
 
 #### Setup Dynamics 365 Register
 > [!NOTE]
-> These instructions assume that there is a dedicated mapping between a Point of Sale register and an Adyen terminal.
+> These instructions assume that there is a dedicated mapping between a Point of Sale register and an Adyen terminal. For IIS based Hardware Station follow the same instructions on the `Hardware Stations` tab of the **Retail > Channels > Retail stores > All retail stores** page corresponding to the specific store you are setting up.
 
 ##### Configure Payment Terminal IP Address and EFT POS Register Number 
 1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > Registers**.
@@ -247,6 +243,23 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 5. In the top menu select **REGISTER** and under the **HARDWARE** section click on `Configure IP addresses`.
 6. In the newly opened IP address configuration form, under the **PIN pad** section enter the **IP address** for the terminal following this pattern and the values retrieved above when boarding the Adyen Terminal:
   - `https://<IP address>:8443/nexo/<POIID>` (e.g. `https://192.168.1.3:8443/nexo/MX925-123456789`).
+  
+#### Update Modern POS or IIS Hardware Station config
+If you are packaging your own Modern POS using the Retail SDK then these steps have to be performed only once in the SDK code before the installer is packaged. Otherwise, these steps have to be performed after the standard Modern POS or IIS Hardware Station is installed.
+
+1. Open the `dllhost.exe.config` (for Modern POS) or `web.config` (for IIS Hardware Station).
+  - On a standard installer this can be found under `C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\dllhost.exe.config`.
+2. Update the `PreloadedConfiguration` section to switch from the legacy to the standard `PaymentDeviceAdapter` as shown below.
+``` xml
+<PreloadedComposition>
+  <composition>
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
+    <!-- Switch from legacy to standard Payement Device Adapter.
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter" />
+    -->
+  </composition>
+</PreloadedComposition>
+```
 
 ### Call Center
 In order to configure the Dynamics 365 Payment Connector for Adyen for Call Center payments follow the instructions desceibed in the [Setup processor for new credit cards](#Setup-processor-for-new-credit-cards) section. 
@@ -263,21 +276,35 @@ In order to configure the Dynamics 365 Payment Connector for Adyen for Call Cent
 | **Service Account ID** | Unique identifier for the setup of the merchant properties. The identifier is stamped on payment transactions and used to identify the merchant properties that should be used by downstream processes (i.e. invoicing). | ✔ | ✔ | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
 | **Version** | Version of the Dynamics 365 Payment Connector for Adyen to use. At this point only version `V001` is supported. | ✔ | ✔ | V001 |
 | **Gateway environment** | Adyen gateway environment to map to. Possible values are `Test` and `Live`. | ✔ | ✔ | Live |
-| **Optional Domain** | TODO | | | TODO |
+| **Optional Domain** | The domain to use when making payment requests to Adyen. | | | https://terminal-api-live.adyen.com/sync |
 | **Merchand account ID** | Unique Adyen Merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | MerchantIdenfier |
 | **Terminal architecture** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
 | **Local Password phrase** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
 | **Local Key Identifier** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
 | **Local Key Version** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
-| **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | TODO | TODO |
-| **Cloud API Key** | Adyen cloud API key. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | TODO |
+| **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | TODO | 1 |
+| **Cloud API Key** | Adyen cloud API key. This can be retrieved by following the instructions provided on the Adyen page on [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key). | ✔ | | *Long String* |
 | **Supported Currencies** | The currencies that should be processed by the connector. | ✔ | ✔ | USD;EUR |
 | **Supported Tender Types** | The tender types that should be processed by the connector. | ✔ | ✔ | Visa;MasterCard;Amex;Discover;Debit |
-| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | TODO |
+| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | SVS |
 
 ## Troubleshooting Steps
 
+### POS Payment Terminals
+
+#### Failing Payment Transactions
+When payment transactions fail to process through the Adyen Payment Terminal the corresponding error messages in the Dynamics 365 POS will contain a `PSP Reference` number. Provide this reference number when contacting Adyen support to assist with a specific transactions.
+
 ## Common Issues
+
+### POS Payment Terminals
+
+#### EFT Terminal ID is Not Set
+| Title | EFT Terminal ID is not Set |
+| --- | --- |
+| **Symptom** | Payment Authorization calls fail with a Hardware error. The Event log contains an error message that the `EFT Terminal ID` is not set. |
+| **Root Cause** | This can happen when the `EFT POS Register Number` is not set on the Register or the IIS Hardware Station. This can also happen if the values are set but not properly synchronized to the POS terminal or when they are cached. |
+| **Fix** | Follow the instructions on the [Setup Dynamics 365 Register](#Setup-Dynamics-365-Register) section of this document. Once done, run the `1070` and `1090` distribution schedules. If this does not resolve the issue, consider re-activating the Modern POS as the value for the `EFT POS Register Number` might potentially be cached and needs to be reset. | 
 
 ## Related Articles
 - **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
