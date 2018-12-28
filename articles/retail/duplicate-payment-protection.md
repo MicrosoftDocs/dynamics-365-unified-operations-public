@@ -43,13 +43,13 @@ This article describes the user experience when the point of sale recovers from 
 The duplicate payment protection features ensures that the Dynamics 365 for Retail Modern POS can seamlessly recover from these type of error escenarios without requiring the shopper to run another payment through the payment terminal, which can lead to duplicate payments. 
 This article covers the following aspects of the duplicate payment protection feature:
 
-- **[Pre-requisites](#Pre-requisites)** - Set of pre-requisites to leverage this feature in the Dynamics 365 for Retail Modern POS.
+- **[Prerequisites](#Prerequisites)** - Set of prerequisites to leverage this feature in the Dynamics 365 for Retail Modern POS.
 - **[Scenario Details](#Scenario-Details)** - Detailed description of the scenarios covered by the duplicate payment protection feature.
 - **[Troubleshooting Steps](#Troubleshooting-Steps)** - Detailed troubleshooting steps when encountering issues with duplicate payment protection feature.
 - **[Common Issues](#Common-Issues)** - List of common issues you might encounter when using the duplicate payment protection feature, including the symptoms, root cause, and potential fix for each of them.
 - **[Related Articles](#Related-Articles)** - List of related articles you might find useful when using the duplicate payment protection feature.
 
-## Pre-requisites
+## Prerequisites
 This feature quires the payment connector and corresponding payment gateway or processor to support this feature. 
 If a given connector implments the cooresponding duplicate payment protection interfaces the feature is automatically enabled in the Dynamics 365 for Retail Modern POS.
 Otherwise it is automatically disabled. 
