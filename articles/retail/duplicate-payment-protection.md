@@ -83,7 +83,7 @@ The main principal behind the duplicate payment protection feature is to put the
 - **Cashier invokes another payment for a different amount**.
 - **Cashier attempts to void the transaction**.
 
-![Recover Payment](media/Payments/Recover-Payment.png)
+![Recover Payment](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
 ### How to skip Payment Recovery
 In some cases the cashier might explicitly chose to skip the duplicate payment protection and opt not to recover a previous payment.
@@ -93,6 +93,7 @@ In those cases, the cashier can follow the steps described below to void the tra
     - After the Dynamics 365 for Retail Modern POS has lost connectivity to the payment terminal, re-launch the POS.
 2. **Void Transaction**:
     - Navigate to the cart page and click the `Void Transaction` button.
+3. **Ignore Recovered Payment**:
     - A new dialog will appear indicating that a recovered payment is available. Click the `Ignore` button to skip the payment recovery.
     
 ![Skip Payment Recovery](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
