@@ -119,7 +119,7 @@ Even when the duplicate payment protection feature is invoked it is generally re
 | :-- | :-- |
 | **Symptom** | An error occurs while a previous payment is being recovered on the Dynamics 365 for Retail Modern POS. |
 | **Root Cause** | This can happen when there is an issue in the payment connector or payment gateway/processor ths does not allow the previous payment to be recovered. |
-| **Fix** | Since the previous payment cannot be recovered the cashier has to skip the recovery as described in the [How to skip Duplicate Payment Protection](#How-to-skip-Duplicate-Payment-Protection) section. | 
+| **Fix** | Since the previous payment cannot be recovered the cashier has to skip the recovery as described in the [How to skip Payment Recovery](#How-to-skip-Payment-Recovery) section. | 
 
 ## Related Articles
 - **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)**
