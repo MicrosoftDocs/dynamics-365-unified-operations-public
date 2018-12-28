@@ -83,7 +83,7 @@ The main principal behind the duplicate payment protection feature is to put the
 - **Cashier invokes another payment for a different amount**.
 - **Cashier attempts to void the transaction**.
 
-### How to skip Duplicate Payment Protection
+### How to skip Payment Recovery
 In some cases the cashier might explicitly chose to skip the duplicate payment protection and opt not to recover a previous payment.
 In those cases, the cashier can follow the steps described below to void the transaction without recovering the payment:
 
