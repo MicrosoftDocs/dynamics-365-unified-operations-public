@@ -291,6 +291,11 @@ In order to configure the Dynamics 365 Payment Connector for Adyen for Call Cent
 
 ### POS Payment Terminals
 
+#### General Issues
+For all general issues you should always consult the Modern POS or IIS Hardware Station Event Logs first. These can be found under the nodes in the Windows Event Log:
+  - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
+  - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
+
 #### Failing Payment Transactions
 When payment transactions fail to process through the Adyen Payment Terminal the corresponding error messages in the Dynamics 365 POS will contain a `PSP Reference` number. Provide this reference number when contacting Adyen support to assist with a specific transactions.
 
