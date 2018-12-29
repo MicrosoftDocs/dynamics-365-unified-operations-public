@@ -45,7 +45,7 @@ This topic describes how to enable duplicate payment protection functionality in
 
 - **[Required Articles](#Required-Articles)** - List of articles that should be read before starting the implementation of the duplicate payment protection functionality in a payment connector. 
 - **[Prerequisites](#Prerequisites)** - List of prerequisites to enable duplicate payment protection in a payment connector implementation.
-- **[Understanding Duplicate Payment Protection Flows](#Duplicate-Payment-Flows)** - Describes the various flows where the duplicate payment protection is invoked in the POS.
+- **[Understanding Duplicate Payment Protection Flows](#Understanding-Duplicate-Payment-Protection-Flows)** - Describes the various flows where the duplicate payment protection is invoked in the POS.
 - **[Implement Duplicate Payment Requests](#Implement-Duplicate-Payment-Requests)** - Describes the various payment related requests that need to be implemented to support the duplicate payment protection feature.
 
 
