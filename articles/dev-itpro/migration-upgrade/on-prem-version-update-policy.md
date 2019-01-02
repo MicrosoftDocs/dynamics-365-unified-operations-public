@@ -50,14 +50,14 @@ Critical fixes and non-critical updates are handled in the following way:
 ## Dynamics 365 for Finance and Operations on-premises release dates
 Application and Platform releases expire at the end of the month of their software lifecycle.
 
-### Continuous releases
+### Continuous update releases
 As of November 2018, on-premises releases are released continuously, as are cloud releases.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md).
 
 ### Application releases
 
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-| [Continuous releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - | - |
+| [Continuous update releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - | - |
 |  Dynamics 365 for Finance and Operations (on-premises) | 8.1 | 8.1.136 | November 2018 | April 2019     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
@@ -69,7 +69,7 @@ As of November 2018, on-premises releases are released continuously, as are clou
 
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
-| [Continuous releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - |
+| [Continuous update releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - |
 |  Platform update 20 | 7.0.5030.XXXX  | November 2018  | February 2019 | December 2027     |
 |  Platform update 15 | 7.0.4841.XXXX  | June 2018  | September 2018 | December 2027     |
 |  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
