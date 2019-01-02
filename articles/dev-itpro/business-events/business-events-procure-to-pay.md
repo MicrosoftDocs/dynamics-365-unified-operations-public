@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: o	Business events in procure to pay business process
+title: Business events in procure to pay business process
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: Sunil-Garg
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# o	Business events in procure to pay business process
+# Business events in procure to pay business process
 
 [!include[banner](../includes/banner.md)]
 
