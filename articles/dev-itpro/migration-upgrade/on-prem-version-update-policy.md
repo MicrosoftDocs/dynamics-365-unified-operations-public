@@ -69,6 +69,7 @@ As of November 2018, on-premises releases are released continuously, as are clou
 
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
+| [Continuous releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - |
 |  Platform update 20 | 7.0.5030.XXXX  | November 2018  | February 2019 | December 2027     |
 |  Platform update 15 | 7.0.4841.XXXX  | June 2018  | September 2018 | December 2027     |
 |  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
