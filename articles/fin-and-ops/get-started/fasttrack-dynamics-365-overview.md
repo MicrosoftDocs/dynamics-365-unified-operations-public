@@ -64,7 +64,7 @@ After your **Implementation project** workspace is provisioned in Microsoft Dyna
 ### Tiered services for Finance and Operations
 
 | Number of seats                                                                         | TechTalks | Workshops     | Assessments                  | Dedicated FastTrack solution architect | Community |
-|-----------------------------------------------------------------------------------------|:---------:|:-------------:|:----------------------------:|:--------------------------------------:|:---------:|
+|-----------------------------------------------------------------------------------------|-----------|---------------|------------------------------|----------------------------------------|-----------|
 | 20–149 combined eligible App or Plan user subscription licenses, or the equivalent      | ✓         | Not available | Go-live assessment via email | Not available                          | ✓         |
 | 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | ✓         | ✓             | Go-live assessment workshop  | ✓                                      | ✓         |
 
@@ -85,7 +85,6 @@ TechTalks provide a basic understanding that will increase the value and efficie
 
 ## Community
 The FastTrack Finance and Operations community provides a platform where customers and partners can post questions and get answers from FastTrack solution architects about best practices and guidance. To participate in the community, see [FastTrack Finance and Operations Forum](https://community.dynamics.com/365/fasttrack/f/770) or [FastTrack Finance and Operations On-premises Forum](https://community.dynamics.com/365/fasttrack/f/772).
-
 
 ## Workshops
 

@@ -5,7 +5,7 @@ title: Export copies of Finance and Operations databases to restore later
 description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 12/27/2018
 
 ms.topic: article
 ms.prod: 
@@ -48,58 +48,12 @@ There are several situations where you might want to keep a copy of a Finance an
 
 Be aware that Microsoft also provides a standard feature that lets you restore an Azure SQL database environment to a specific point in time within the last 35 days. This restore is done via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-point-in-time-restore.md).
 
-> [!IMPORTANT]
-> This topic documents the only supported method of retaining a copy of a Finance and Operations database. In a Finance and Operations environment, no copies of Azure SQL database may be kept running. Therefore, use of the CREATE DATABASE AS COPY OF statement is disallowed. Any unsupported copies of Azure SQL databases older than 7 days will be deleted without warning.
-
-## Prerequisites
-To export a database from a sandbox environment, you must install the latest version of Microsoft SQL Server Management Studio for Microsoft SQL Server 2016 on the computer that runs Application Object Server (AOS) in that environment. You must then do the export on that AOS computer. There are two reasons for this requirement:
-
-- Because of an Internet Protocol (IP) access restriction on the sandbox instance of Microsoft SQL Server, connections are allowed only from a computer in that environment.
-- The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
-
-## Export the Finance and Operations database
-
-### Stop services
-
-Use Remote Desktop to connect to all the computers in the environment, and stop the following Microsoft Windows services by using services.msc. These services will have open connections to the Finance and Operations database.
-
-- World wide web publishing service (on all AOS computers)
-- Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
-- Management Reporter 2012 Process Service (on business intelligence \[BI\] computers only)
-
-### Run sqlpackage to export the Finance and Operations database
-
-Open a **Command Prompt** window as an administrator, and run the following commands.
-
-```
-cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
-
-SqlPackage.exe /a:export /ssn:<server>.database.windows.net /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /sp:<SQL password> /su:<SQL user>
-```
-
-Here is an explanation of the parameters:
-
-- **ssn (source server name)** – The name of the Azure SQL Database server to export from.
-- **sdn (source database name)** – The name of the database to export.
-- **tf (target file)** – The path and name of the file to export to.
-- **sp (source password)** – The SQL password for the source SQL Server.
-- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every SQL instance during deployment. You can retrieve the password for this user from your project in Microsoft Dynamics Lifecycle Services (LCS).
-
-The command creates a .bacpac file in the D:\\Exportedbacpac folder. By copying or uploading this file to secure location, you can import it into another environment later. You can use the AzCopy command-line utility to upload the file to an Azure storage account and then download it to the target AOS computer. For more information, see [Copy or upload the file to an Azure storage account](/azure/storage/storage-use-azcopy).
-
 > [!NOTE]
-> Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription.
+> This process used to require Remote Desktop access on your Tier-2 or higher environments but no longer does. These operations can be performed using the Self-service actions in Lifecycle Services.
 
-> [!IMPORTANT]
-> Be aware of the behavior of drive D on Azure virtual machines (VMs). Don't permanently store your exported database files on this drive. Otherwise, you might lose them. For more information, see the [Understanding the temporary drive on Windows Azure virtual machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) blog post.
+## Self-service database export
 
-### Start services
-
-Use services.msc to restart the services that you stopped earlier:
-
-- World wide web publishing service (on all AOS computers)
-- Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
-- Management Reporter 2012 Process Service (on BI computers only)
+[!include [dbmovement-export](../includes/dbmovement-export.md)]
 
 ## Import the Finance and Operations database
 
@@ -180,12 +134,17 @@ EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
 EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
 EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
+CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from LCS>'
+EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+
 CREATE USER axretailruntimeuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
 CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+
+
 
 GO
 -- Begin Refresh Retail FullText Catalogs

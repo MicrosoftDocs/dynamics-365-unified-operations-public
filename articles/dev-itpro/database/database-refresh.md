@@ -5,7 +5,7 @@ title: Request sandbox database refreshes
 description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 12/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Request sandbox database refreshes
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional database of your production environment into the target, sandbox UAT environment. This process includes copying the Financial Reporting database. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
@@ -42,15 +41,14 @@ This functionality lets you use production data to test upcoming code changes in
 > [!Important]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.  
 
-## Database refresh via self-service (Public preview)
+## Self-service database refresh
 With the goal of providing Application Lifecycle Management capabilities to our customers without relying on human or manual processes, the Lifecycle Services team has introduced an automated Refresh Database action. To refresh your sandbox environment with data from another environment, you can perform this action as part of the Self-service action that is in Public preview. This process is outlined below, and is fully-supported functionality.
 
-1. Enable the Public preview feature by signing in to LCS and select the **Preview feature management** tile on the home screen. Find the **Restore database from another environment** feature and set **Preview feature enabled** to **True**.
-2. Visit your target sandbox **Environment Details** page , and click the **Maintain** > **Move database** menu option.
-3. Select the **Refresh database** option and choose your source environment.
-4. Note the warnings and review the list of data elements that are not copied from the source environment.
-5. The refresh operation will begin immediately.
-6. After the refresh operation is completed, you must **Sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
+1. Visit your target sandbox **Environment Details** page , and click the **Maintain** > **Move database** menu option.
+2. Select the **Refresh database** option and choose your source environment.
+3. Note the warnings and review the list of data elements that are not copied from the source environment.
+4. The refresh operation will begin immediately.
+5. After the refresh operation is completed, you must **Sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
 
 ### Refresh operation failed
 In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL Point-in-time restore capability to restore the database. This is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly refreshed data.  

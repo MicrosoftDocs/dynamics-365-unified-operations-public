@@ -2,7 +2,7 @@
 # required metadata
 
 title: WebSearchAX page has been retired
-description: We’ve had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it.
+description: We've had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it.
 author: margoc
 manager: AnnBe
 ms.date: 10/12/2017
@@ -34,11 +34,10 @@ ms.dyn365.ops.version: AX 2012
 
 [!include [banner](../includes/banner.md)]
 
-We’ve had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it.  For example: 
+We've had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it. For example:
 
 site:technet.microsoft.com dynamics ax 2012 "search term"
 
--or-
+–or–
 
-site:msdn.microsoft.com dynamics ax 2012 “search term”
-
+site:msdn.microsoft.com dynamics ax 2012 "search term"
