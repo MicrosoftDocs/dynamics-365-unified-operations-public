@@ -57,7 +57,7 @@ As of November 2018, on-premises releases are released continuously, as are clou
 
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-| [Continuous releases](on-prem-version-update-policy.md#continuous-releasese)|
+| [Continuous releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - | - |
 |  Dynamics 365 for Finance and Operations (on-premises) | 8.1 | 8.1.136 | November 2018 | April 2019     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
