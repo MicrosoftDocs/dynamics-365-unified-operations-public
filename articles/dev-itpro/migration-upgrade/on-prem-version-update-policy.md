@@ -50,7 +50,7 @@ Critical fixes and non-critical updates are handled in the following way:
 ## Dynamics 365 for Finance and Operations on-premises release dates
 Application and Platform releases expire at the end of the month of their software lifecycle.
 
-### Continuous releasese
+### Continuous releases
 As of November 2018, on-premises releases are released continuously, as are cloud releases.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md).
 
 ### Application releases
