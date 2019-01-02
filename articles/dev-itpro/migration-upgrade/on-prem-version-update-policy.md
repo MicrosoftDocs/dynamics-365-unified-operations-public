@@ -51,7 +51,7 @@ Critical fixes and non-critical updates are handled in the following way:
 Application and Platform releases expire at the end of the month of their software lifecycle.
 
 ### Continuous update releases
-As of November 2018, on-premises releases are released continuously, as are cloud releases.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md).
+As of November 2018, on-premises releases are released continuously.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md).
 
 ### Application releases
 
