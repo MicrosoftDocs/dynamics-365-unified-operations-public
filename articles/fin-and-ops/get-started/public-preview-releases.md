@@ -5,7 +5,7 @@ title: Standard and targeted service updates
 description: This topic provides information about the different release options for Microsoft Dynamics 365 for Finance and Operations.
 author: meeramahabala
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,6 +44,9 @@ Each new release is designed and developed by the Dynamics 365 for Finance and O
 - Ring 2 is a targeted release. This release is available to partners, customers, and ISVs who opt in through the [Insider program](https://experience.dynamics.com/) and join the Preview Early Access Program (PEAP). During a targeted release, Microsoft monitors telemetry, collects feedback, and further validates quality by monitoring key metrics. During this phase, the release must be deployed on Dev/Test environments. In this preview phase, partners, customers, and ISVs use the release to validate their customizations and provide feedback. This release cannot be used in production.
 - Ring 3 is a production-ready, *first release* for customers who opt in. During this phase, customers have the option of taking the release all the way to production and can choose between Microsoft managing the update or self-managing the update. Participating in the First release program has the benefit of having the Microsoft engineering team closely monitoring the update for any aberrations to ensure a successful update.
 - Ring 4 is the final, default ring and is available to all customers. Microsoft will manage and update all environments based on the configured maintenance window.
+
+> [!Note]
+> The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to Ring 3 and Ring 4.
 
 The releases are shown in the following image.
 
