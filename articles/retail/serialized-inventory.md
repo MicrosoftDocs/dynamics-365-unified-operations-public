@@ -31,8 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-## Overview 
-Based on the settings in Retail headquarters, products can be classified as either serialized or non-serialized. When products are serialized, each item can be assigned a unique number that helps track warranties, trace items, and confirm ownership. Although, the ability to provide serial numbers for serialized products existed in our Modern/Cloud Point of Sale (POS), some improvements have been added to help cashiers save time and be more productive.  
+## Overview
+
+Based on the settings in Retail headquarters, products can be classified as either serialized or non-serialized. When products are serialized, each item can be assigned a unique number that helps track warranties, trace items, and confirm ownership. Although, the ability to provide serial numbers for serialized products existed in our Modern/Cloud Point of Sale (POS), some improvements have been added to help cashiers save time and be more productive.
 
 ## POS improvements
 
@@ -40,8 +41,8 @@ Based on the settings in Retail headquarters, products can be classified as eith
 
     For each serialized item where the serial number was skipped, a comment appears under the transaction line. This comment states that the serial number hasn't been provided for the item. Therefore, the cashier can quickly find items that are missing a serial number.
 
-    A new **Add serial number** operation also provides the serial number for items that are missing a serial number. After the serial number is provided, it can't be edited. The cashier must void the line and add the product again. 
+    A new **Add serial number** operation also provides the serial number for items that are missing a serial number. After the serial number is provided, it can't be edited. The cashier must void the line and add the product again.
 	
-- **Serial numbers aren't required in order to place customer orders** – Customer orders can be placed in one store and fulfilled from another. A cashier who places a customer order doesn't have to provide the serial number. The serial number will be provided during the picking or pickup step. However, a serial number must be provided for all line items that the **Carry out** delivery type is selected for. Otherwise, the transaction can't be completed. 	
+- **Serial numbers aren't required in order to place customer orders** – Customer orders can be placed in one store and fulfilled from another. A cashier who places a customer order doesn't have to provide the serial number. The serial number will be provided during the picking or pickup step. However, a serial number must be provided for all line items that the **Carry out** delivery type is selected for. Otherwise, the transaction can't be completed.
 - **Serialized products aren't aggregated on the transaction screen** – The **Aggregate products** setting in the **Terminal** field group on the **Functionality profile** page lets you aggregate the same non-serialized products on the transaction screen. When the same products are aggregated, they are easier to see in the transaction grid. However, because serial numbers are generally unique, and sales associates don't have to enter serial numbers until checkout, the **Aggregate products** setting doesn't apply to serialized products. Therefore, serialized products won't be aggregated on the transaction screen if the **Aggregate products** setting is selected.
-- **Ability to search the journals by serial number** - The journals can now be additionally searched by serial numbers. To do so, open the "Journals" operation and press the "Advanced search" button in the app bar. Using the "Add filter" button, a filter can be applied to search for the serial numbers as well.
+- **Ability to search the journals by serial number** – The journals can now be additionally searched by serial numbers. To do so, open the "Journals" operation and press the "Advanced search" button in the app bar. Using the "Add filter" button, a filter can be applied to search for the serial numbers as well.
