@@ -5,7 +5,7 @@ title: Leave and absence concepts
 description: This topic describes leave and absence concepts, and how time-off balances are determined. 
 author: jcart
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -42,7 +42,7 @@ The start date is the date when accrual processing begins. The start date also s
 
 ## Accruals
 
-Accruals determine when and how often an employee is awarded time off. Policies about when accruals should be awarded and policies about proration are defined in the **Accruals** section.
+Accruals determine when and how often an employee is awarded time off. Policies about when accruals should be awarded and policies about proration are defined in the **Accruals** section when setting up the leave and absence plan.
 
 ### Accrual frequency
 
