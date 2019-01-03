@@ -76,7 +76,7 @@ No, you can't run Windows PowerShell commands and commands at a prompt command a
 Trace Parser currently requires the user to be an administrator.
 
 ## Is the Admin user provisioning tool supported?
-The **Admin user provisioning tool** currently requires the user to be an administrator. The admin user provisioning tool is often used  to change the tenant of the environment, but that should not be necessary. You can update the login information in the databse for the Admin user or any other user. You only need the SID and network alias (email address) from a user that can access the environment or  another environment on the same tenant. In many cases, the SID and network alias can be found in the database that came with the environment originally. Run the following commands to get the good SID and network alias from the source environment and update them in th target environment, respectively.
+The **Admin user provisioning** tool currently requires the user to be an administrator. The **Admin user provisioning** tool is often used  to change the tenant of the environment, but that should not be necessary. You can update the login information in the databse for the Admin user or any other user. You only need the SID and network alias (email address) from a user that can access the environment or  another environment on the same tenant. In many cases, the SID and network alias can be found in the database that came with the environment originally. Run the following commands to get the good SID and network alias from the source environment and update them in th target environment, respectively.
 
     -- get value from source env.
     select ID, SID, NETWORKALIAS from USERINFO where ID = 'Admin'
