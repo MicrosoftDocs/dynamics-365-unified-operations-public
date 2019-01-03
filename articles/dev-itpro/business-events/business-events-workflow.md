@@ -5,7 +5,7 @@ title: Business events in workflow
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/02/2019
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,5 +29,6 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events in workflow
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Content goes here.
