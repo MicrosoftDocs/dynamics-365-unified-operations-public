@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Application buisness events
+title: Application business events
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: Sunil-Garg
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Application buisness events
+# Application business events
 
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
