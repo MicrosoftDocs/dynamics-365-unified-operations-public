@@ -168,7 +168,7 @@ In order to process any payments across POS terminals, Call Center, or E-Commerc
 | **Assembly Name** | Name of the Dynamics 365 Payment Connector for Adyen assembly | ✔ | ✔ | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
 | **Service Account ID** | Unique identifier for the setup of the merchant properties. The identifier is stamped on payment transactions and used to identify the merchant properties that should be used by downstream processes (i.e. invoicing). | ✔ | ✔ | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
 | **Version** | Version of the Dynamics 365 Payment Connector for Adyen to use. At this point only version `V001` is supported. | ✔ | ✔ | V001 |
-| **Gateway environment** | Adyen gateway environment to map to. Possible values are `Test` and `Live`. | ✔ | ✔ | Live |
+| **Gateway environment** | Adyen gateway environment to map to. Possible values are `Test` and `Live`. `Live` should only be used for production devices and transactions. | ✔ | ✔ | Live |
 | **Optional Domain** | The domain to use when making payment requests to Adyen. | | | https://terminal-api-live.adyen.com/sync |
 | **Merchand account ID** | Unique Adyen Merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | MerchantIdenfier |
 | **Terminal architecture** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
@@ -177,7 +177,7 @@ In order to process any payments across POS terminals, Call Center, or E-Commerc
 | **Local Key Version** | This field is only used for the POS Payment Terminal integration and should be left blank. | | ✔ | *Leave Blank.* |
 | **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | ✔ | 1 |
 | **Cloud API Key** | Adyen cloud API key. This can be retrieved by following the instructions provided on the Adyen page on [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key). | ✔ | | *Long String* |
-| **Supported Currencies** | The currencies that should be processed by the connector. Please note, additional currencies are supported by Adyen through the [Dynamics Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) once the transaction request is sent to the payment terminal. This value shoud match the store currencies that amp this specific connector configuration. | ✔ | ✔ | USD;EUR |
+| **Supported Currencies** | The currencies that should be processed by the connector. Please note- in card present scnearios, additional currencies can supported by Adyen through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) once the transaction request is sent to the payment terminal. | ✔ | ✔ | USD;EUR |
 | **Supported Tender Types** | The tender types that should be processed by the connector. | ✔ | ✔ | Visa;MasterCard;Amex;Discover;Debit |
 | **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | SVS |
 
@@ -192,7 +192,7 @@ Navigate to the Adyen [Point of sale](https://docs.adyen.com/developers/point-of
 - Terminal's IP Address
 - POIID
 
-Once onboarded, navigate to the terminal you would like to configure on the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml) and retrieve the following details for each payment termina (these are required to setup the [EFT Service](#EFT-Service) described below):
+Once onboarded, navigate to the terminal you would like to configure on the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml) and retrieve the following details for each payment terminal (these are required to setup the [EFT Service](#EFT-Service) described below):
 
 - Key identifier
 - Key passphrase
@@ -207,12 +207,12 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 2. Under the **Connectors** sub-tab click the `+ New` button and select the **Dynamics 365 Payment Connector for Adyen** from the drop down and make sure the **Sequence Number** is lower than all other connectors.
 3. Under the **Connector Properties** section set the following values and click the `Save` button in the top left corner once done:
 
-| Field | Description | Required | Auto-Pupulated | Sample Value | 
+| Field | Description | Required | Auto-Populated | Sample Value | 
 | --- | --- | :-: | :-: | --- |
 | **Assembly Name** | Name of the Dynamics 365 Payment Connector for Adyen assembly | ✔ | ✔ | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
 | **Service Account ID** | Unique identifier for the setup of the merchant properties. The identifier is stamped on payment transactions and used to identify the merchant properties that should be used by downstream processes (i.e. invoicing). | ✔ | ✔ | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
 | **Version** | Version of the Dynamics 365 Payment Connector for Adyen to use. At this point only version `V001` is supported. | ✔ | ✔ | V001 |
-| **Gateway environment** | Adyen gateway environment to map to. Possible values are `Test` and `Live`. | ✔ | ✔ | Live |
+| **Gateway environment** | Adyen gateway environment to map to. Possible values are `Test` and `Live`. `Live` should only be used for production devices and transactions. | ✔ | ✔ | Live |
 | **Optional Domain** | The domain to use when making payment requests to Adyen. | | | https://terminal-api-live.adyen.com/sync |
 | **Merchand account ID** | Unique Adyen Merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | MerchantIdenfier |
 | **Terminal architecture** | Adyen Terminal API architecture to use. Possible values are `Local` or `Cloud`. In most cases when the Microsoft Dynamics 365 for Retail Modern POS is on the same network as the Adyen Payment Terminal the `Local` setting should be used. For additional information about the different Terminal API architectures please view the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | ✔ | ✔ | Local |
@@ -221,9 +221,9 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 | **Local Key Version** | Adyen key version for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | 0 |
 | **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | ✔ | 1 |
 | **Cloud API Key** | This field is only used for the Card Not Present Payment integration and should be left blank. | | ✔ | *Leave Blank.* |
-| **Supported Currencies** |The currencies that should be processed by the connector. Please note, additional currencies are supported by Adyen through the [Dynamics Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) once the transaction request is sent to the payment terminal. This value shoud match the store currencies that amp this specific connector configuration. | ✔ | ✔ | USD;EUR |
+| **Supported Currencies** |The currencies that should be processed by the connector. This value should match the currency set up for the store in Dynamics 365 for Retail. Please note- in card present scnearios, additional currencies can supported by Adyen through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) once the transaction request is sent to the payment terminal. | ✔ | ✔ | USD;EUR |
 | **Supported Tender Types** | The tender types that should be processed by the connector. | ✔ | ✔ | Visa;MasterCard;Amex;Discover;Debit |
-| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | SVS |
+| **Gift card provider** | The gift card provider that the connector uses to process gift cards. `SVS` or `GIVEX`. | | | SVS |
 
 ##### PIN pad
 1. Under the **PIN pad** tab set the value for **PIN pad** to `Network` and the value for the **Device name** to `MicrosoftAdyenDeviceV001`.
@@ -235,10 +235,11 @@ Once onboarded, navigate to the terminal you would like to configure on the [Ady
 ##### Configure Payment Terminal IP Address and EFT POS Register Number 
 1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > Registers**.
 2. Select the register you would like to link to the Adyen terminal.
-3. In the newly opened POS Registers form, in the **General** tab under the **EFT** section enter a unique number for the **EFT POS register number**. Note, the number must be exactly 4 digits ling and unique across all POS registers.
+3. In the newly opened POS Registers form, in the **General** tab under the **EFT** section enter a unique number for the **EFT POS register number**. Note, the number must be exactly 4 digits ling and unique across all POS registers under the same Adyen merchant account ID.
 4. In the same POS Registers form, in the **General** tab under the **PROFILES** section set the **Hardware profile** to the hardware profile configured above.
-5. In the top menu select **REGISTER** and under the **HARDWARE** section click on `Configure IP addresses`.
-6. In the newly opened IP address configuration form, under the **PIN pad** section enter the **IP address** for the terminal following this pattern and the values retrieved above when boarding the Adyen Terminal:
+5. Save changes.
+6. In the top menu select **REGISTER** and under the **HARDWARE** section click on `Configure IP addresses`.
+7. In the newly opened IP address configuration form, under the **PIN pad** section enter the **IP address** for the terminal following this pattern and the values retrieved above when boarding the Adyen Terminal:
     - `https://<IP address>:8443/nexo/<POIID>` (e.g. `https://192.168.1.3:8443/nexo/MX925-123456789`).
   
 #### Update Modern POS or IIS Hardware Station config
@@ -258,7 +259,7 @@ If you are packaging your own Modern POS using the Retail SDK then these steps h
 ```
 
 ### Call Center
-In order to configure the Dynamics 365 Payment Connector for Adyen for Call Center payments follow the instructions desceibed in the [Setup processor for new credit cards](#Setup-processor-for-new-credit-cards) section. 
+In order to configure the Dynamics 365 Payment Connector for Adyen for Call Center payments follow the instructions described in the [Setup processor for new credit cards](#Setup-processor-for-new-credit-cards) section. 
 
 ### E-Commerce
 1. Sign in to Retail headquarters and navigate to **Retail > Channels > Online stores**.
@@ -282,7 +283,7 @@ In order to configure the Dynamics 365 Payment Connector for Adyen for Call Cent
 | **Cloud API Key** | Adyen cloud API key. This can be retrieved by following the instructions provided on the Adyen page on [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key). | ✔ | | *Long String* |
 | **Supported Currencies** | The currencies that should be processed by the connector. | ✔ | ✔ | USD;EUR |
 | **Supported Tender Types** | The tender types that should be processed by the connector. | ✔ | ✔ | Visa;MasterCard;Amex;Discover;Debit |
-| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | SVS |
+| **Gift card provider** | The gift card provider that the connector uses to process gift cards. `SVS` or `GIVEX` | | | SVS |
 
 ## Frequently Asked Questions
 
@@ -291,6 +292,9 @@ No. Adyen payment terminals are injected with the Adyen software. As a result, e
 
 ### Do I need a static IP address for the Adyen Payment Terminal
 Yes. The Dynamics 365 for Retail Modern POS requires a know IP address to communicate with the Adyen Payment Terminal. Although the IP address of the Adyen Payment Terminal can be changed in the Dynamics 365 for Retail client, there is significant overhead and potential business disruption in trying to keep up with changing IP addresses.
+
+### Can I use my merchant bank?
+Yes. Adyen can work with any merchant bank.  
 
 ## Troubleshooting Steps
 
