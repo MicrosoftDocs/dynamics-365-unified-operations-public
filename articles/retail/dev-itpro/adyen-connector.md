@@ -111,6 +111,8 @@ The Dynamics 365 Payment Connector for Adyen leverages the [Adyen Payment Termin
 | Givex | ✔ (8.1.3) | Future release |
 | SVS | ✔ (8.1.3) | Future release |
 
+To support these external gift card schemes through the payment connector, additional steps must be followed. Please refer to [external gift card setup documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/gift-card) for more information. 
+
 #### Wallets
 
 | Scheme | Card present | Card not present |
