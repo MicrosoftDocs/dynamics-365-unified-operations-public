@@ -5,7 +5,7 @@ title: Software lifecycle policy and on-premises releases
 description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 author: meeramahabala
 manager: AnnBe
-ms.date: 01/02/2019
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,16 +48,16 @@ Critical fixes and non-critical updates are handled in the following way:
   - **Non-critical updates** – Customers must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates.   
 
 ## Dynamics 365 for Finance and Operations on-premises release dates
-Application and Platform releases expire at the end of the month of their software lifecycle.
 
 ### Continuous update releases
 As of November 2018, on-premises releases are released continuously.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md).
 
 ### Application releases
+Application releases expire at the end of the month of their software lifecycle.
 
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-| [Continuous update releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - | - |
+| [Continuous update releases](on-prem-version-update-policy.md#continuous-update-releases)| - | - | - | - | - |
 |  Dynamics 365 for Finance and Operations (on-premises) | 8.1 | 8.1.136 | November 2018 | April 2019     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
@@ -66,10 +66,11 @@ As of November 2018, on-premises releases are released continuously.  For more i
 \* All customers must be on the latest version of Finance and Operations by April 30, 2019. However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
 ### Platform releases
+Platform releases expire at the end of the month of their software lifecycle.
 
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
-| [Continuous update releases](on-prem-version-update-policy.md#continuous-releasese)| - | - | - | - |
+| [Continuous update releases](on-prem-version-update-policy.md#continuous-update-releases)| - | - | - | - |
 |  Platform update 20 | 7.0.5030.XXXX  | November 2018  | February 2019 | December 2027     |
 |  Platform update 15 | 7.0.4841.XXXX  | June 2018  | September 2018 | December 2027     |
 |  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
