@@ -5,7 +5,7 @@ title: Financial dimensions
 description: This topic describes the various types of financial dimensions and how they are set up.
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -96,6 +96,8 @@ You can use values from master records, such as customer and vendor, as default 
 This feature is controlled by a setting in the dimension. This setting is named **Copy values to this dimension on each new DimensionName created**, where **DimensionName** is the name of the dimension. By default, the feature is turned off. However, it can be turned on at any time.
 
 If records already exist for the dimension, the master records are updated when you turn the feature on. However, existing documents and transactions aren't updated.
+
+If you are using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value will default from the new customer number when you create the new customer.  
 
 ## Derived dimensions
 
