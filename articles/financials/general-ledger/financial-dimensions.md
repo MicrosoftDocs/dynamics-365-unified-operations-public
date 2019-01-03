@@ -97,6 +97,8 @@ This feature is controlled by a setting in the dimension. This setting is named 
 
 If records already exist for the dimension, the master records are updated when you turn the feature on. However, existing documents and transactions aren't updated.
 
+If you are using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you are creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value will default from the new customer number when you create the new customer.  
+
 ## Derived dimensions
 
 You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
