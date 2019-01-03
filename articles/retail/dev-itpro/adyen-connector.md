@@ -308,7 +308,7 @@ For all general issues you should always consult the Modern POS or IIS Hardware 
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
 
 #### Failing Payment Transactions
-When payment transactions fail to process through the Adyen Payment Terminal the corresponding error messages in the Dynamics 365 POS will contain a `PSP Reference` number. Provide this reference number when contacting Adyen support to assist with a specific transactions.
+When payment transactions fail to process through the Adyen Payment Terminal the corresponding error messages in the Dynamics 365 POS will contain a `PSP Reference` number. Provide this reference number when contacting Adyen support to assist with specific transactions.
 
 ## Common Issues
 
@@ -320,6 +320,14 @@ When payment transactions fail to process through the Adyen Payment Terminal the
 | **Symptom** | Payment Authorization calls fail with a Hardware error. The Event log contains an error message that the `EFT Terminal ID` is not set. |
 | **Root Cause** | This can happen when the `EFT POS Register Number` is not set on the Register or the IIS Hardware Station. This can also happen if the values are set but not properly synchronized to the POS terminal or when they are cached. |
 | **Fix** | Follow the instructions on the [Setup Dynamics 365 Register](#Setup-Dynamics-365-Register) section of this document. Once done, run the `1070` and `1090` distribution schedules. If this does not resolve the issue, consider re-activating the Modern POS as the value for the `EFT POS Register Number` might potentially be cached and needs to be reset. | 
+
+#### Modern POS or IIS Hardware Station config not updated
+| Title | Config is not updated |
+| :-- | :-- |
+| **Symptom** | MPOS error: Sign in Error. The initialization data couldn't be loaded. |
+| **Root Cause** | This can occur when the POS is redeployed, but the dllhost.config file has not been updated. |
+| **Fix** | Follow the instructions on the [Update Modern POS or IIS Hardware Station config](#### Update Modern POS or IIS Hardware Station config) section of this document. Once complete, close the POS and end the dllhost.exe task through Detail tab in the Task Manager, then relaunch the MPOS. If using IIS hardware station, reset IIS. | 
+
 
 ## Related Articles
 - **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)**
