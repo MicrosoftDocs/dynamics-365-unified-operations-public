@@ -176,7 +176,7 @@ Follow the steps in this section if you are also configuring for Retail.
 
 1.  Run the RetailTenantUpdateTool.
     -   The icon for this tool is available on the desktop.
-    -   This tool is also available at the following location: C:\windowsSystem32WindowsPowerShellv1.0PowerShell.exe -File C:\RetailSDKToolsRetailTenantUpdateTool.ps1
+    -   This tool is also available at the following location: C:\windows\System32\WindowsPowerShell\v1.0\PowerShell.exe -File C:\RetailSDK\Tools\RetailTenantUpdateTool.ps1
 
 2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
 
