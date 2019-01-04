@@ -115,6 +115,7 @@ Continue adding project lines, as needed, to complete your timesheet.
 Click **Submit** to send the timesheet to the approval workflow.
 
 Timesheets to review
+====================
 
 A listing of the timesheets that need to be reviewed is available in the side
 drawer. This option is only available if the worker has been designated as a
