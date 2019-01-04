@@ -53,13 +53,14 @@ Before enabling this feature, ensure you have tested and trained your employees 
 
 ## Additional POS Operations
 
-In order for Advanced Auto-charges to work properly in your POS application environment, 3 new POS operations have been added.  These operations must be added to your POS screen layouts and deployed to the POS devices as you roll out this feature.  If these operations are not added, users will not be able to manage or maintain misc charges on the POS transactions and would have no way of adjusting or changing the charges values that are systematically calculated based on auto-charges configurations.  At minimum we would suggest deploying the **Manage Charges** operation to your POS layout.
+In order for Advanced Auto-charges to work properly in your POS application environment, 4 new POS operations have been added.  These operations must be added to your POS screen layouts and deployed to the POS devices as you roll out this feature.  If these operations are not added, users will not be able to manage or maintain misc charges on the POS transactions and would have no way of adjusting or changing the charges values that are systematically calculated based on auto-charges configurations.  At minimum we would suggest deploying the **Manage Charges** operation to your POS layout.
 
 The 3 new operations are:
 
-- **Manage Auto-charges**
-- **Add Header Charges**
-- **Add Line Charges**
+- **Manage charges**
+- **Add header charges**
+- **Add line charges**
+- **Recalculate charges**
 
 As with all POS operations, security configurations can be done to require manager approval in order to execute the operation.
 
