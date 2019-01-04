@@ -20,6 +20,8 @@
     href: ../financials/accounts-receivable/credit-card-authorizations.md
   - name: Configure payment methods for POS
     href: cash-denominations.md
+  - name: Dynamics 365 Payment Connector for Adyen
+    href: dev-itpro/adyen-connector.md
   - name: Payments FAQ
     href: dev-itpro/payments-retail.md
 - name: Purchase orders
@@ -102,9 +104,7 @@
     href: MPOS-or-CPOS.md
   - name: POS operations, online and offline
     href: pos-operations.md
-  - name: Demo data screen layouts in MPOS/CPOS
-    href: demo-data.md
-  - name: Overview of product and customer search in Point of Sale
+  - name: Overview of product and customer search in POS
     href: POS-search-improvements.md
   - name: Inventory lookup in the Point of Sale
     href: product-variants-POS.md
@@ -120,6 +120,8 @@
       href: define-maintain-channel-clients-registers-hw-stations.md
   - name: Screen layout
     items:
+    - name: Demo data screen layouts in MPOS/CPOS
+      href: demo-data.md
     - name: Configure screen layouts for POS
       href: pos-screen-layouts.md
     - name: Install the Retail POS Layout designer
