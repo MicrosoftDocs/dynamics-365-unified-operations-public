@@ -199,6 +199,7 @@
       href: get-started/implement-multiple-projects-aad-tenant.md
   - name: Business events
     href: ../dev-itpro/business-events/home-page.md
+    items:
     - name: Application business events
       href: ../dev-itpro/business-events/app-business-events.md
     - name: Business events in workflow
