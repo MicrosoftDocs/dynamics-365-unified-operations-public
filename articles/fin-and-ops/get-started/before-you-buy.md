@@ -5,7 +5,7 @@ title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations.  
 author: kfend
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 01/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,7 +69,7 @@ There are two ways to buy a subscription for an on-premises deployment
 
 ### Buy through volume licensing
 
-If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/licensing/how-to-buy/how-to-buy.aspx).
+If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365).
 
 In Volume Licensing, Finance and Operations is available through:
 
