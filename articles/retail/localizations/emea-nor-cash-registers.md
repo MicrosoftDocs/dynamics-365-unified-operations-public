@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash registers for Norway
+title: Cash register functionality for Norway
 description: This topic provides an overview of the cash register functionality that is available for Norway. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
@@ -26,7 +26,7 @@ ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ---
-# Cash registers for Norway
+# Cash register functionality for Norway
 
 [!include [banner](../includes/banner.md)]
 

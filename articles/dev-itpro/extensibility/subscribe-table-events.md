@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Perform business actions throughout the lifecycle of a table record
+title: Perform business actions throughout the lifecycle of table records
 description: This topic provides information about business actions that you can perform throughout the lifecycle of a table record.
 author: ivanv-microsoft
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Perform business actions throughout the lifecycle of a table record
+# Perform business actions throughout the lifecycle of table records
 
 [!include [banner](../includes/banner.md)]
 

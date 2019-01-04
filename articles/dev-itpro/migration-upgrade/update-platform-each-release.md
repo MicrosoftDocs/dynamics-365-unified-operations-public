@@ -75,9 +75,9 @@ From a process perspective, a platform upgrade package is similar to a binary ho
 -   To apply the package to your demo, sandbox tier-2, or production environments, follow the instructions for a binary hotfix in the topic [Apply a Deployable package](../deployment/apply-deployable-package-system.md).
 
 ## Apply the platform update package on your development environment
-### Delete any platform metadata hotfixes from your VSTS project
+### Delete any platform metadata hotfixes from your Azure DevOps project
 
-Before you install the new platform update, you need to clean up your Visual Studio Team Services (VSTS) source control project. Remove any X++ or metadata hotfixes you have installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in your VSTS project for any of the following Microsoft models, delete them from your project using the Visual Studio Source Control Explorer.
+Before you install the new platform update, you need to clean up your Azure DevOps source control project. Remove any X++ or metadata hotfixes you have installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in your Azure DevOps project for any of the following Microsoft models, delete them from your project using the Visual Studio Source Control Explorer.
 
 -   Application Platform
 -   Application Foundation
@@ -173,7 +173,7 @@ Before you apply the platform update package on your development instance, follo
 -   Directory
 -   TestEssentials
 
-1.  In Visual Studio, check in all pending changes to your Microsoft Visual Studio Team Services (VSTS) version control project.
+1.  In Visual Studio, check in all pending changes to your Microsoft Azure DevOps version control project.
 2.  Exit Visual Studio.
 3.  Apply the platform update deployable package as described earlier in this topic.
 4.  Start Visual Studio.

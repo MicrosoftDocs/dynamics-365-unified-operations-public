@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: H Classes
+title: H classes
 description: System API classes that start with the letter H.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# H Classes
+# H classes
 
 [!include [banner](../includes/banner.md)]
 

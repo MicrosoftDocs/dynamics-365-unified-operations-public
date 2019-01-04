@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Out-of-the-box security reports
+title: Out-of-box security reports
 description: Dynamics 365 for Finance and Operations provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role.
 author:  maertenm
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Out-of-the-box security reports
+# Out-of-box security reports
 
 [!include [banner](../includes/banner.md)]
 

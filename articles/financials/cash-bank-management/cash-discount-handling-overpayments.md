@@ -3,7 +3,7 @@
 
 title: Handling cash discounts for overpayments
 description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, Ledge
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14171

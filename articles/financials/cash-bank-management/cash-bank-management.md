@@ -3,7 +3,7 @@
 
 title: Cash and bank management home page
 description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -17,14 +17,14 @@ ms.search.form: BankTreasurerWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

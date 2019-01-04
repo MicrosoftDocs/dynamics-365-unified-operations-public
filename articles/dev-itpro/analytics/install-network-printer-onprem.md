@@ -62,7 +62,7 @@ The environment administrator uses the information in this section to enable net
 
 The system administrator of Finance and Operations uses the information in this section to define network printers.
 
-1. Go to **Organization administration** > **Setup** > **Network printers**.
+1. Go to **Organization administration** \> **Setup** \> **Network printers**.
 2. On the **Network printers** page, add new printers. For each printer, specify a name, description, path, and status. Make sure that the printer path matches the network path of the installed printer.
 
 Items that are marked **Active** immediately become available to application users, so that they can begin to print document-style reports on network printer devices.

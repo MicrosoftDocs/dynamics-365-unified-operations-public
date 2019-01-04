@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Advance payment to an employee (Eastern Europe)
+title: EEU-00047 Advance payment to employee
 description: This procedure demonstrates how to set up and register transactions for an advance holder. 
 author: v-oloski
 manager: AnnBe 
-ms.date: 10/25/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: RCashTable, LedgerJournalSetup, HcmWorkerGroup_RU, EmplPosting_RU, VendParameters, RCashPosting, BankParameters, PaymTerm, HcmWorker, HcmWorkerNewWorker, HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU, PurchTable, PurchCreateOrder, HcmAdvHolderLookup_RU, InventItemIdLookupPurchase, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, EmplTrans_RU, EmplBalance_RU   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Advance payment to an employee (Eastern Europe)
+# EEU-00047 Advance payment to employee
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

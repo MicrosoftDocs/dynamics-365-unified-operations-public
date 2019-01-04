@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design a configuration to import data from an external file in CSV format (ER)
+title: Design ER configurations to import data from external CSV files
 description: Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file in CSV format. 
 author: NickSelin
 manager: AnnBe 
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 
 ---
-# Design a configuration to import data from an external file in CSV format (ER)
+# Design ER configurations to import data from external CSV files
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

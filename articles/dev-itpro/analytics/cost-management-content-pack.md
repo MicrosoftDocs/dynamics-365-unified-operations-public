@@ -3,7 +3,7 @@
 
 title: Cost management Power BI content
 description: This topic describes what is included in the Cost management Power BI content. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The **Cost management** Microsoft Power BI content is intended for inventory accountants or individuals in the organization who are responsible for or interested in the status of inventory or work in progress (WIP), or who are responsible for or interested in analyzing standard cost variances.
 
-> [!Note]
+> [!NOTE]
 > The **Cost management** Power BI content described in this this topic applies to Dynamics 365 for Finance and Operations 8.0.
 > 
 > The **Cost management** Power BI content pack, available on the AppSource site, has been deprecated. For more information about that deprecation, see [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -174,7 +174,7 @@ The following tables provide an overview of the visualizations in the **Cost man
 |                                         | Top 10 resources by unfavorable production variance  |
 |                                         | Top 10 resources by favorable production variance    |
 
-### Understanding the data model and entities
+## Understanding the data model and entities
 
 Data from Microsoft Dynamics 365 for Finance and Operations is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with entity store](power-bi-integration-entity-store.md).
 
@@ -191,25 +191,24 @@ The following table shows the key calculated measurements in the Power BI conten
 
 | Measure                            | Calculation |
 |------------------------------------|-------------|
-| Beginning balance                  | Beginning balance = [Ending balance]-[Net change] |
-| Beginning balance qty.             | Beginning balance qty. = [Ending balance qty.]-[Net change qty.] |
-| Ending balance                     | Ending balance = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Ending balance qty.                | Ending balance qty. = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Net change                         | Net change = SUM([AMOUNT]) |
-| Net change qty.                    | Net change qty. = SUM([QTY]) |
-| Inventory turnover ratio by amount | Inventory turnover ratio by amount = if(OR([Inventory average balance] \<= 0, [Inventory sold or consumed issues] \>= 0), 0, ABS([Inventory sold or consumed issues])/[Inventory average balance]) |
-| Inventory average balance          | Inventory average balance = (([Ending balance] + [Beginning balance]) / 2) |
-| Days inventory on-hand             | Days inventory onhand = 365 / CostObjectStatementEntries[Inventory turnover ratio by amount] |
-| Inventory accuracy                 | Inventory accuracy by amount = IF([Ending balance] \<= 0, IF(OR([Inventory counted amount] \<\> 0, [Ending balance] \< 0), 0, 1), MAX(0, ([Ending balance] - ABS([Inventory counted amount]))/[Ending balance])) |
+| Beginning balance                  | Beginning balance = \[Ending balance\]-\[Net change\] |
+| Beginning balance qty.             | Beginning balance qty. = \[Ending balance qty.\]-\[Net change qty.\] |
+| Ending balance                     | Ending balance = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Ending balance qty.                | Ending balance qty. = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Net change                         | Net change = SUM(\[AMOUNT\]) |
+| Net change qty.                    | Net change qty. = SUM(\[QTY\]) |
+| Inventory turnover ratio by amount | Inventory turnover ratio by amount = if(OR(\[Inventory average balance\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Inventory sold or consumed issues\])/\[Inventory average balance\]) |
+| Inventory average balance          | Inventory average balance = ((\[Ending balance\] + \[Beginning balance\]) / 2) |
+| Days inventory on-hand             | Days inventory onhand = 365 / CostObjectStatementEntries\[Inventory turnover ratio by amount\] |
+| Inventory accuracy                 | Inventory accuracy by amount = IF(\[Ending balance\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Ending balance\] \< 0), 0, 1), MAX(0, (\[Ending balance\] - ABS(\[Inventory counted amount\]))/\[Ending balance\])) |
 
 The following key dimensions are used as filters to slice the aggregate measurements, so that you can achieve greater granularity and gain deeper analytical insights.
 
 
-|                         Entity                          |             Examples of attributes              |
+| Entity                                                  | Examples of attributes                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Products                         | Product number, Product name, Unit, Item groups |
-| Category hierarchies (Assigned to role Cost management) |       Category hierarchy, Category level        |
-|                     Legal entities                      |               Legal entity names                |
-|                    Fiscal calendars                     |  Fiscal calendar, Year, Quarter, Period, Month  |
-|                          Site                           |        ID, Name, Address, State, Country        |
-
+| Products                                                | Product number, Product name, Unit, Item groups |
+| Category hierarchies (Assigned to role Cost management) | Category hierarchy, Category level              |
+| Legal entities                                          | Legal entity names                              |
+| Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
+| Site                                                    | ID, Name, Address, State, Country               |

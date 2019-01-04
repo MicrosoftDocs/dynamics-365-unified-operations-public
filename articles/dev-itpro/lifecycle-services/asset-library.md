@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Asset library (LCS)
+title: Asset library in Lifecycle Services (LCS)
 description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Asset library (LCS)
+# Asset library in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

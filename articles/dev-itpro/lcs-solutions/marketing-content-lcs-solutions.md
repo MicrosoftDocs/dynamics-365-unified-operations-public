@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Stage and publish a Microsoft Dynamics 365 for Finance and Operations solution
+title: Stage and publish Finance and Operations solutions
 description: This topic explains how to upload the marketing content for your Microsoft Dynamics Lifecycle Services (LCS) solution package to the Microsoft Cloud Partner Portal, and how to stage and publish your solution.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Stage and publish a Microsoft Dynamics 365 for Finance and Operations solution
+# Stage and publish Finance and Operations solutions
 
 [!include [banner](../includes/banner.md)]
 

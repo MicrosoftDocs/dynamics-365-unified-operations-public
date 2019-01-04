@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ container run-time functions
+title: X++ container runtime functions
 description: This topic describes the container run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ container run-time functions
+# X++ container runtime functions
 
 [!include [banner](../includes/banner.md)]
 

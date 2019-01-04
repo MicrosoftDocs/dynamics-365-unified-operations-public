@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Hyperlink
+title: Hyperlink module
 description: Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Hyperlink 
+# Hyperlink module
 
 [!include [banner](../../../../includes/banner.md)]
 

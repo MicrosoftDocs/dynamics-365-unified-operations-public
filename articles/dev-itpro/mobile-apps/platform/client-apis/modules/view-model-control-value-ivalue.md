@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Value
+title: Value module
 description: This is the base class for single value controls.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Value 
+# Value module
 
 [!include [banner](../../../../includes/banner.md)]
 

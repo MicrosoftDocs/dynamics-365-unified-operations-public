@@ -1,30 +1,30 @@
----
-# required metadata
-
+--- 
+# required metadata 
+ 
 title: Inspect the quality of goods
-description: This procedure shows you how to process a quality order.
+description: This procedure shows you how to process a quality order. 
 author: perlynne
-manager: AnnBe
-ms.date: 11/14/2016
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 08/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Inspect the quality of goods
 
@@ -58,3 +58,4 @@ This procedure shows you how to process a quality order. You can run this guide 
 4. Click Select.
 5. Click OK.
 6. Close the page.
+

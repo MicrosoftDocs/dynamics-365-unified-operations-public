@@ -33,7 +33,9 @@ ms.search.validFrom: 2017-12-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information about India Goods and Services Tax (GST).
+This topic provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following video.
+
+- [Tax engine overview (YouTube video)](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 
 ## Prerequisites
 

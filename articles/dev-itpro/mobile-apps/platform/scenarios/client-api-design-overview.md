@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Client-side design APIs overview
+title: Client-side design APIs
 description: This topic provides an overview of the client-side design APIs and includes recommendations for using them.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Client-side design APIs overview
+# Client-side design APIs
 
 [!include [banner](../../../includes/banner.md)]
 

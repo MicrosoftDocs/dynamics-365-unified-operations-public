@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deprecated APIs in Finance and Operations
+title: Deprecated APIs
 description: This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 author: aneesmsft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deprecated APIs in Finance and Operations
+# Deprecated APIs
 
 [!include [banner](../includes/banner.md)]
 

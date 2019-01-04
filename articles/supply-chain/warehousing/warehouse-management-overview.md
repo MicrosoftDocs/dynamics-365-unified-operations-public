@@ -3,7 +3,7 @@
 
 title: Warehouse management
 description: Use Warehouse management to monitor and automate warehouse processes. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: WHSParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

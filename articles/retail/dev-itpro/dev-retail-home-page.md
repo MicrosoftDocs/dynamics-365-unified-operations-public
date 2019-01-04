@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Retail for IT pros and developers
+title: Retail for IT pros and developers home page
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Microsoft Dynamics 365 for Retail for IT pros and developers
+# Retail for IT pros and developers home page
 
 [!include [banner](../includes/banner.md)]
 
@@ -111,7 +111,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 ## Retail SDK
 - [Retail SDK Overview](retail-sdk/retail-sdk-overview.md)
 - [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
-- [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Integrate the Retail SDK with the continuous build system (Azure DevOps)](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail SDK samples](retail-sdk/retail-sdk-samples.md)
 - [Channel database (DB) extensions](channel-db-extensions.md) 
 - [CDX extensibility](cdx-extensibility.md)

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: CDX extensibility
+title: Enable custom Commerce Data Exchange synchronization via extension
 description: This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
-# CDX extensibility
+# Enable custom Commerce Data Exchange synchronization via extension
 
 [!include [banner](../../includes/banner.md)]
 
@@ -208,8 +208,8 @@ If you add new columns and want to pull in part of the existing table, use the f
 ```
 <Subjob Id="RetailTransactionTable" TargetTableName="CONTOSORETAILTRANSACTIONTABLE" TargetTableSchema="ext"  OverrideTarget="false">
     <AxFields>
-        <Field Name="seatNumber"/>
-        <Field Name="serverStaffId"/>
+        <Field Name="ContosoRetailSeatNumber"/>
+        <Field Name="ContosoRetailServerStaffId"/>
     </AxFields>
 </Subjob>
 ```
@@ -233,7 +233,7 @@ In the next sections, we discuss the steps and best practices for customizing Re
 
 ### Setup steps
 
-We recommend that you implement these changes on an untouched Retail software development kit (SDK). Alternatively, you can put the SDK under source control, such as Microsoft Visual Studio Team Services (VSTS), so that you can easily revert your changes at any step. To begin, you import the .axpp package that is located in the SDK. You then run the SQL update script on your channel database.
+We recommend that you implement these changes on an untouched Retail software development kit (SDK). Alternatively, you can put the SDK under source control, such as Microsoft Azure DevOps, so that you can easily revert your changes at any step. To begin, you import the .axpp package that is located in the SDK. You then run the SQL update script on your channel database.
 
 1. Import the package on the Finance and Operations side that contains the customization code:
 
@@ -295,8 +295,8 @@ The sample CDX resource file in the Retail SDK contains additional customization
                 <!--Notice that there is no mention of the <ScheduledByJobs></ScheduledByJobs> because the subjob is already part of an upload job. -->
                 <AxFields>
                     <!--If you notice the existing columns are not listed here in the <Field> tag, it's because the existing fields are already mapped in the main RetailCdxSeedData resource file, we only add the delta here. -->
-                    <Field Name="SeatNumber" />
-                    <Field Name="ServerStaffId" />
+                    <Field Name="ContosoRetailSeatNumber" />
+                    <Field Name="ContosoRetailServerStaffId" />
                 </AxFields>
             </Subjob>
         </Subjobs>

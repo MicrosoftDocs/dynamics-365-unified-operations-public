@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design expressions to call application class methods (ER)
+title: Design ER expressions to call application class methods
 description: This guide provides information about how to reuse the existing application logic in Electronic reporting (ER) configurations by calling required methods of application classes in ER expressions. 
 author: NickSelin
 manager: AnnBe 
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 
 ---
-# Design expressions to call application class methods (ER)
+# Design ER expressions to call application class methods
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

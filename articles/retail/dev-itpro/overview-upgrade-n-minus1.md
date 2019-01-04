@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of upgrade and N-1 support for Dynamics 365 for Retail 
+title: Upgrade and N-1 support for Retail
 description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 for Retail. N-1 support lets customers who have stores that run AX 2012 R3 CU10 work with Dynamics 365 for Retail headquarters after an upgrade. 
 author: athinesh99
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 ---
 
-# Overview of upgrade and N-1 support for Dynamics 365 for Retail
+# Upgrade and N-1 support for Retail
 
 [!include [banner](../../includes/banner.md)]
 

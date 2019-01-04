@@ -36,6 +36,10 @@ The Tax engine is an essential part of the configurable business application exp
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
 
+For a quick overview of the tax engine, watch the following video.
+
+- [Tax engine overview (YouTube video)](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
+
 ## Key concepts
 
 | Concept           | Description |

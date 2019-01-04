@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Server-side APIs
+title: Server-side development (workspace X++ APIs)
 description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app that enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: RobinARH
 manager: AnnBe

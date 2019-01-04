@@ -5,7 +5,7 @@ title: Create sales orders
 description: This procedure shows you how to create a sales order. 
 author: omulvad
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create sales orders
 

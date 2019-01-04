@@ -5,7 +5,7 @@ title: Localize Retail extension resources and label files
 description: This topic explains how to modify POS UI labels, POS messages, receipt labels, and error message for Retail server or CRT. It also explains how you can add custom error messages for Retail server or CRT.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/11/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -60,7 +60,7 @@ You can override the default strings in the POS by using the language text entri
 4. On the Action Pane, select **Save**.
 5. Go to **Retail &gt; Retail IT &gt; Distribution schedule**.
 6. Select the **Registers** (**1090**) job, and then select **Run now**.
-7. Deactivate and reactivate the POS to show the updated labels or messages.
+7. After the data is pushed, sign off, and then sign in to Cloud POS or Modern POS to see the changed labels.
 
 ### Get the text ID for POS strings
 
@@ -139,5 +139,9 @@ For example, you want to add a new exception message in US English (en-us) and U
 The following example shows how to use this new message in your CRT extension code.
 
 ```C#
-throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error");
+throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error")
+                    {
+                        LocalizedMessage = "My new message in US English.",
+                        LocalizedMessageParameters = new object[] { }
+                    };
 ```

@@ -5,7 +5,7 @@ title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,8 +49,8 @@ The following sections describe some basic similarities and differences between 
 The following X++ features are the same for C#:
 -   Single line (`//`) and multi-line (/\* \*/) comments.
 -   `==` (equal) operator for determining whether two values are equal.
--   != (not equal to) operator for determining whether two values are not equivalent.
--   + (plus sign) operator for string concatenation.
+-   `!=` (not equal to) operator for determining whether two values are not equivalent.
+-   `+` (plus sign) operator for string concatenation.
 
 ### Differences
 
@@ -58,11 +58,10 @@ The following table lists X++ features that are different in C#.
 
 | Feature | X++ | C# | Comments |
 |---|---|---|---|
-| Declarations | All declarations must be at the start of the method, before any X++ statements. | Declarations can occur anywhere in the method. | Both languages permit multiple variables of the same type to be listed together in one declaration. Both languages allow you to assign an initial value in the declaration statement. |
 | `if` and `else` conditional statements | The `if` statement accepts any type of expression that it can automatically convert to a Boolean. Common examples include an `int` for which 0 means false, or an object for which null means false. | The `if` statement requires a Boolean expression. | The syntax structure regarding curly braces and parentheses is exactly the same between X++ and C#. |
 | Literal string | A literal string can be delimited by either of the following:<ul><li>A pair of double quotation mark (") characters.</li><li>A pair of single quotation mark (') characters.</li></ul> | A literal string must be delimited by a pair of double quotation mark (") characters. | For X++, the double quotation mark characters are usually used to delimit strings. However, it is convenient delimit a string with single quotation mark characters when your string must contain a double quotation mark character.|
 | char `type` | There is no `char` or character type in X++. You can declare a `str` of length one, but it is still a string:<br> `str 1 myString = "a";` | There is a `char` in C#. You cannot pass a `char` as the parameter to a method that inputs a `string` parameter, although you can first explicitly convert the `char` to a `string`.| For more information about X++ data types, see Primitive Data Types.|
-| Output of messages| X++ delivers messages to the user in the Infolog window. Common methods include the following:<ul><li>The <strong>print</strong> statement:</li><li>static methods on the `Global` class:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| For a command line C# program, messages can be delivered to the console. Common methods include the following:<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>| The <strong>print</strong> statement is not a function nor a method. Recommended use would be `print mystring;` rather than `print(mystring);`. A `pause;` statement is always useful shortly after a <strong>print</strong> statement. The print statement is convenient for testing because it automatically converts <strong>int</strong> and other primitive values to strings for display. For more information, see Print Statements. The `Global` class has special recognition in the X++ compiler. The `info` method can be called without including the Global:: prefix.|
+| Output of messages| X++ delivers messages to the user in the Infolog window. Common methods include the following:<ul><li>The <strong>print</strong> statement:</li><li>static methods on the `Global` class:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| For a command line program, messages can be delivered to the console. Common methods include the following:<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>|  |
 
 ### X++ and C++ Samples
 
@@ -71,8 +70,8 @@ This section contains two simple code samples. One sample is written in X++, and
 -   /\* \*/ multi-line comment
 -   `if` statement
 -   `==` operator
--   != operator
--   + operator to concatenate strings
+-   `!=` operator
+-   `+` operator to concatenate strings
 -   Global::info for message output, with and without the Global:: prefix
 -   Global::error for message output
 -   The use of single and double quotation characters (' and ") as string delimiters.
@@ -199,7 +198,7 @@ The **while** keyword supports looping in both X++ and C#.
     static void JobRs002a_LoopsWhile(Args _args)
     {
         int nLoops = 1;
-        while (nLoops &lt;= 88)
+        while (nLoops <= 88)
         {
             print nLoops;
             pause;
@@ -279,7 +278,7 @@ In X++ the counter variable cannot be declared as part of the **for** statement.
     static void JobRs002a_LoopsWhileFor(Args _args)
     {
         int ii; // The counter.
-        for (ii=1; ii &lt; 5; ii++)
+        for (ii=1; ii < 5; ii++)
         {
             print ii;
             pause;

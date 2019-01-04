@@ -3,7 +3,7 @@
 
 title: Inventory management home page
 description: This topic provides an overview of Inventory management.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: InventParameters
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 2094

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a Retail Experience app
+title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Create a Retail Experience app
+# Create and apply branding to the Retail Experience app
 
 [!include [banner](../includes/banner.md)]
 

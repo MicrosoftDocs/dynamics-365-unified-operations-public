@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Assign a payment slip format to a customer account (Denmark)
+title: Assign a payment slip format to a customer account
 description: This procedure walks you through setting up the payment slip attachment format for a selected customer. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 02/16/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CustTable   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Assign a payment slip format to a customer account (Denmark)
+# Assign a payment slip format to a customer account
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

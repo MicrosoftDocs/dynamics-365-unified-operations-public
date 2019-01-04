@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Exchange rate calculation (Hungary)
+title: HU-00001 Exchange rate calculation
 description: This task walks you through running an average exchange rate calculation. 
 author: v-oloski
 manager: AnnBe 
-ms.date: 10/27/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Hungary
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Exchange rate calculation (Hungary)
+# HU-00001 Exchange rate calculation
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

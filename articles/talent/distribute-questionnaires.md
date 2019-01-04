@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Distribute and complete a questionnaire
+title: Distribute and schedule questionnaires
 description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 author: kherr75
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Distribute and complete a questionnaire
+# Distribute and schedule questionnaires
 
 [!include [banner](includes/banner.md)]
 

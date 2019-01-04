@@ -3,9 +3,9 @@
  
 title: Create configuration rules
 description: This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: BOMTable, BOMConfigRule, ConfigItemIdLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create configuration rules
 

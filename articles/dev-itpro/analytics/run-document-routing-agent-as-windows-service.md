@@ -96,19 +96,19 @@ The Document Routing Agent is now running as a Windows service.
 ### Verify the network printer connection
 - Verify that the active account has enough access rights to the network printer.
 - Verify that the user account can successfully print to the network device by using Notepad or another local application.
-    
+
 ### Verify security roles
 - To access the application links that are used to install the Document Routing Agent, the user must be part of the **Document routing client** security role.
-    
+
 ### Review the service account's access rights
 - Verify that the **DocumentRoutingService** service is running as a domain account that has access to the network devices.
-    
-### Refresh the Azure service token  
+
+### Refresh the Azure service token
 - Azure authentication tokens must be **refreshed every 90 days** while the Document Routing Agent is running as a Windows service. To refresh the service token, start the client, and then sign out and sign back in by using the menu items.
-    
+
 ### Disable shared printers for remote access
-- When you connect to the host machine by using Microsoft Remote Desktop, make sure that you clear the **Printers** option in the **Local devices and resources** section on the **Local Resources** tab. 
-    
+- When you connect to the host machine by using Microsoft Remote Desktop, make sure that you clear the **Printers** option in the **Local devices and resources** section on the **Local Resources** tab.
+
 ### Review the event logs
 1. On the host machine, start Event Viewer.
-2. Review the logs at **Application and Services Logs** > **Microsoft** > **Dynamics** > **AX-DocumentRouting**.
+2. Review the logs at **Application and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-DocumentRouting**.

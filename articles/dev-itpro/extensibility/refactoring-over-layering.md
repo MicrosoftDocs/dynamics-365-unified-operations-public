@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Relax model restrictions to enable the refactoring of over-layering into extensions
+title: Relax model restrictions to refactor overlayering into extensions
 description: This topic provides information about relaxing model restrictions to enable the refactoring of over-layering into extensions. This is needed because the models are sealed in Microsoft Dynamics 365 for Finance and Operations 8.0. 
 author: CGarty
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 14
 
 ---
 
-# Relax model restrictions to enable the refactoring of over-layering into extensions
+# Relax model restrictions to refactor overlayering into extensions
 
 [!include [banner](../includes/banner.md)]
 

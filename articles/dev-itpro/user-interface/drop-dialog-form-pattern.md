@@ -5,7 +5,7 @@ title: Drop Dialog form pattern
 description: This topic provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 author: jasongre
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -108,7 +108,7 @@ The verification checklist shows you the steps for manually verifying that the f
         -   **Exceptions:** Lookups, Enhanced preview, and View details navigation
     -   There is no editable grid (select-only grids are allowed).
 -   Focus should be in the first editable field on the Drop dialog when it is first opened.
--   A Drop dialog should have a **main instruction** at the top.
+-   A Drop dialog should have a **main instruction** (form caption) at the top.
     -   The main instruction should be used to explain concisely what the user should do in the Drop dialog. The instruction should be a specific statement, an imperative direction, or a question. Good instructions communicate the user’s objective with the Drop dialog rather than focusing purely on the mechanics of manipulating it.
     -   A final period should not be included if the main instruction is a statement. If the instruction is a question, a question mark should be included.
     -   Besides the main instruction, a secondary instruction to the user should be displayed, and it should present additional information that will help the user understand or use the Drop dialog. The secondary instruction should consist of a complete sentence in sentence case and should have end punctuation.

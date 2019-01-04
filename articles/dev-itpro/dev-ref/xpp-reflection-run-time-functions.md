@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ reflection run-time functions
+title: X++ reflection runtime functions
 description: This topic describes the reflection run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ reflection run-time functions
+# X++ reflection runtime functions
 
 [!include [banner](../includes/banner.md)]
 
@@ -311,19 +311,6 @@ The ID of the index.
             idx = indexName2Id(id, "AddrIdx");
             print "Index ID for index name AddrIdx of table Address is " + int2Str(idx);
     }
-
-## refPrintAll (no content)
-Summary
-
-    void refPrintAll(class object, str filename, str title)
-
-### Parameters
-
-| Parameter | Description |
-|-----------|-------------|
-| object    | Description |
-| filename  | Description |
-| title     | Description |
 
 ## tableId2Name
 Retrieves a string that contains the name of a table.

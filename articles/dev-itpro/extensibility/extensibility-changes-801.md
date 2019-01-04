@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extensibility changes in Dynamics 365 for Finance and Operations update 8.0.1
+title: Extensibility changes in Finance and Operations update 8.0.1
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations update 8.0.1.
 author: FrankDahl
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: App 8.0.1
 
 ---
 
-# Extensibility changes in Dynamics 365 for Finance and Operations update 8.0.1
+# Extensibility changes in Finance and Operations update 8.0.1
 
 [!include [banner](../includes/banner.md)]
 

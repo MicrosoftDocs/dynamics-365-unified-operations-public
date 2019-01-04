@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Input
+title: Input module
 description: Input controls are typically used on task pages for collecting user input, for example, for a new control.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Input 
+# Input module
 
 [!include [banner](../../../../includes/banner.md)]
 

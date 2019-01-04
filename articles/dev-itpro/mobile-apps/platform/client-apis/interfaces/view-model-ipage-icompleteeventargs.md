@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: CompleteEventArgs
+title: CompleteEventArgs type
 description: CompleteEventArgs type
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# CompleteEventArgs Type
+# CompleteEventArgs type
 
 [!include [banner](../../../../includes/banner.md)]
 

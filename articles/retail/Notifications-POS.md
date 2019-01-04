@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Show order notifications in the point of sale
+title: Show order notifications in the point of sale (POS)
 description: This topic describes how to enable order notifications in the point of sale and the notification framework. Eventually, developers will be able to extend these notifications to operations besides order fulfillment operations. 
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Show order notifications in the point of sale
+# Show order notifications in the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 

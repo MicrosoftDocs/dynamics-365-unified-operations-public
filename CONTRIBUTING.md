@@ -101,5 +101,5 @@ Here are some guiding rules that you should keep in mind when you're contributin
 - **Do** use the [template](./template.md) file as the starting point of your work.
 - **Do** create a separate branch on your fork before working on topics. This makes it easier to recover from problems in your branches and go back to a good, known point.
 - **Do** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).    
-- **Don't** treat the repo as a general database store. Only store text and media files in the repository. 
+- **Don't** treat the repo as a general database store. Only store markdown text and media files in the repository. Only .md files and image files are allowed. 
 - **Don't** check in anything that should not be seen by other people, for example an email address, password, access token, or internal server name. Even if you delete the text from the file, it will remain in the history and can be viewed from there. 

@@ -3,7 +3,7 @@
 
 title: Budget planning overview
 description: This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BudgetPlanningConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17251

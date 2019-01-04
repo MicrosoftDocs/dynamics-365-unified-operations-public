@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Extend table maps used as interfaces
+title: Extend table maps that are used as interfaces
 description: This topic describes how to extend table maps that are used as interfaces.
 author: LarsBlaaberg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Extend table maps used as interfaces
+# Extend table maps that are used as interfaces
 
 [!include [banner](../includes/banner.md)]
 

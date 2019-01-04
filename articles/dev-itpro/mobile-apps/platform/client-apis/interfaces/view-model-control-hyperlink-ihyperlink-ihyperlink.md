@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: HyperLink
+
+title: HyperLink type
 description: Hyperlink control type. Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
 author: shadykdc
 manager: AnnBe
@@ -9,7 +10,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,9 +25,10 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom:
 ms.dyn365.ops.version:
+
 ---
 
-# HyperLink Type
+# HyperLink type
 
 [!include [banner](../../../../includes/banner.md)]
 

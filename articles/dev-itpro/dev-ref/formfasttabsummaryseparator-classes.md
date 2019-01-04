@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormFastTabSummarySeparator to FormGridControl
+title: F classes (FormFastTabSummarySeparator to FormGridControl)
 description: API reference for classes from FormFastTabSummarySeparator to FormGridControl.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormFastTabSummarySeparator to FormGridControl
+# F classes (FormFastTabSummarySeparator to FormGridControl)
 
 [!include [banner](../includes/banner.md)]
 

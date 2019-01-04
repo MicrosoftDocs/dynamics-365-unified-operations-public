@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business logic events overview
+title: Business logic events
 description: Code that executes in business logic can make runtime modifications to the metadata of Pages, Actions and Controls.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Business logic events overview
+# Business logic events
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ run-time functions
+title: X++ runtime functions
 description: This topic describes the X++ run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ run-time functions
+# X++ runtime functions
 
 [!include [banner](../includes/banner.md)]
 

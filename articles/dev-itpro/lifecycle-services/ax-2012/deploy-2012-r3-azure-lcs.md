@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
+title: Deploy AX 2012 R3 on Azure by using Lifecycle Services (LCS)
 description: This topic provides information about how use Lifecycle Services (LCS) to deploy Microsoft Dynamics AX 2012 R3.  
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
+# Deploy AX 2012 R3 on Azure by using Lifecycle Services (LCS)
 
 [!include [banner](../../includes/banner.md)]
 

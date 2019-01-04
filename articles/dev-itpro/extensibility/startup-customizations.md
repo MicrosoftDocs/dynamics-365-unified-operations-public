@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use delegates to customize Application startup
+title: Customize application startup by using delegates
 description: This topic explains how you can add new data sources to existing forms by using extensions.
 author: robadawy
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Use delegates to customize Application startup
+# Customize application startup by using delegates
 
 [!include [banner](../includes/banner.md)]
 

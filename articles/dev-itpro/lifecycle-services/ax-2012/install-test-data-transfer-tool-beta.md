@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
+title: Install the Test Data Transfer Tool (beta)
 description: This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
+# Install the Test Data Transfer Tool (beta)
 
 [!include [banner](../../includes/banner.md)]
 

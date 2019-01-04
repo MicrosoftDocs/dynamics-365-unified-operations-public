@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Hire an existing employee through recruiting
+title: Hire existing employees through recruitment
 description: Sometimes open positions can be filled by candidates who are already employees in your organization. 
 author: rschloma
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Hire an existing employee through recruiting
+# Hire existing employees through recruitment
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

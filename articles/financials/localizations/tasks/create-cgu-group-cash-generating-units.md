@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create CGU group and cash generating units (Japan)
+title: Create CGU group and cash generating units
 description: In Japan, an impairment on fixed assets can be based on either individual fixed assets or cash generating units. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 10/30/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmentCashGenUnit_JP   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create CGU group and cash generating units (Japan)
+# Create CGU group and cash generating units
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -81,7 +81,7 @@ This procedure was created using the demo data company JPMF.
 2. Use the Quick Filter to find the CGU to edit.
     * Enter the first cash generating unit number that you noted previously.  
 3. Click Massive import.
-    * We recommend that you specify a condition that adds all the assets with that hit with the condition at once. You can also enter assets one by one in the grid.  
+    * We recommend you to specify a condition that adds all the assets with that hit with the condition at once.   You can also enter asset one by one in the grid.  
 4. In the Criteria field, type a value.
     * For example: Location = FUKUOKA  
 5. Click OK.

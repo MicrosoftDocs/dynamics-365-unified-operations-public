@@ -3,7 +3,7 @@
 
 title: Accounts receivable in the public sector
 description: This topic describes the Accounts receivable functionality that is available for the public sector.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26281

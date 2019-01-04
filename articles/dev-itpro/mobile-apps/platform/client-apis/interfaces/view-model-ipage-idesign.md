@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Design
+title: Design type
 description: Design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Design Type
+# Design type
 
 [!include [banner](../../../../includes/banner.md)]
 

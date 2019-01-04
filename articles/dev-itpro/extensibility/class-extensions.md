@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Class extensions
+title: Class extension model in X++
 description: This article describes the new class extension model in X++.
 author: pvillads
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Class extensions
+# Class extension model in X++
 
 [!include [banner](../includes/banner.md)]
 

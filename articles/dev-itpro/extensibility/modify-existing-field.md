@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Modify an existing field in a table
+title: Modify existing fields in a table through extension
 description: This topic provides information about how to modify an existing field in a table.
 author: ivanv-microsoft
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Modify an existing field in a table
+# Modify existing fields in a table through extension
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Redeploy an on-premises environment
+title: Redeploy on-premises environments
 description: This topic provides information about redeploying an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
 ---
-# Redeploy an on-premises environment
+# Redeploy on-premises environments
 
 [!include [banner](../includes/banner.md)]
 

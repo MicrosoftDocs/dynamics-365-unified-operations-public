@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Test Data Transfer Tool (beta) (AX 2012)
+# Test Data Transfer Tool (beta)
 
 [!include [banner](../../includes/banner.md)]
 

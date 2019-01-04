@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Commerce runtime and Retail Server extensibility
+title: Commerce runtime (CRT) and Retail Server extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/02/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Commerce runtime and Retail Server extensibility
+# Commerce runtime (CRT) and Retail Server extensibility
 
 [!include [banner](../includes/banner.md)]
 
@@ -723,12 +723,15 @@ For new entities, you must also override the factory’s **BuildEntitySets()** m
 
 Before calling the new retail server API please make sure you have performed the below steps:
 
-1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt;
+1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt; under the extensionComposition section.
 2.  Add the new retail server extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
-3.  Drop both the CRT and Retail server extension dlls into the retail server bin folder. If you have any CRT extension that is related to the new retail server api then update that information in commerceRuntime configuration file under retail server bin folder.
+3.  Move both the CRT and Retail server extension dlls into the **…\\RetailServer\\webroot\\bin\\Ext** folder. If you have a CRT extension that is related to the new retail server API, then update that information in the CommerceRuntime.Ext.config file in the **…\\RetailServer\\webroot\\bin\\Ext** folder.
 4.  &lt;add source="assembly" value="**Your assembly name**" /&gt;
 5.  Use inetmgr to browse to the retail server metadata and verify whether your entity is exposed in the xml.
 6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the retail server metadata, so that you can call the new entities using the commerce context like below:
+
+> [!NOTE]
+> Do not change or add anything in the Retail server web.config file or Retail server folder, with the expection of the extension composition section and possibly to copy custom assemblies in the bin\ext folder. During deployment, only the extensionComposition section in the web.config file will be merged, all the other sections will be overwritten and only the assemblies in the **...\\RetailServer\\webroot\\bin\\Ext** folder be merged with other assemblies. This file will be overwritten based on the latest binary package. Do not use the Retail server web.config file to add or modify any custom app settings.
 
 #### Cross loyalty sample:
 

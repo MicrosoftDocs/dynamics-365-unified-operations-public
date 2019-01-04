@@ -13,21 +13,19 @@ ms.technology:
 
 # optional metadata
 
-ms.search.: RetailMCRChannelDetailPage, MCROrderParameters
-# ROBOTS: 
+ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.custom: 
+# ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
@@ -42,6 +40,7 @@ When you create a sales order, you can select a delivery mode on the sales order
 Retail has capabilities that let users limit the delivery modes that can be used by a channel, the delivery modes that can be used for a product, and the delivery modes that are valid for specific shipping destinations. Charges can also be defined so that additional fees are added to a customer's order, based on the delivery modes that are selected for the sales order and the total order value.
 
 ## Define delivery modes
+
 Before you specify which delivery modes can be used for call center orders, and define the associated rules and charges, you must define the delivery modes. Go to **Sales and marketing \> Setup \> Distribution \> Modes of delivery**. Select **New** to create a new delivery mode. Alternatively, select an existing delivery mode in the list, and then select **Edit** to make changes.
 
 In the **Mode of delivery** field, you can enter any combination alphanumeric characters, based on your business requirement. You can then use the **Description** field to provide additional context. The **Charges group** and **Expedite** fields are optional and will be explained in more detail later in this topic.
@@ -53,11 +52,13 @@ On the **Products** FastTab, you can specify which products and/or product categ
 On the **Addresses** FastTab, you can specify which countries or regions, or states, the delivery mode can and can't be used for. For example, orders that are shipped to Hawaii or Alaska aren't eligible for ground delivery. Therefore, these states should be excluded from any delivery mode that is associated with a ground delivery service but included in any delivery mode that is associated with an air delivery service.
 
 ## Validate delivery modes for a call center order
+
 After the delivery modes are defined, you must run the **Process delivery modes** batch job. This job makes the delivery modes available so that they can be used in sales order processes for Retail channels. To run the **Process delivery modes** job, go to **Retail \> Retail IT \> Process delivery modes**. This job should be run any time that new delivery modes are added to a retail channel or changes are made to existing delivery mode/channel relationships.
 
 After you run the **Process delivery modes** batch job, you can go to **Retail \> Channels \> Call centers \> All call centers**. On the **All call centers** page, on the Action Pane, on the **Set up** tab, select **Modes of delivery**. The **Modes of delivery** page lists all the valid delivery modes for the selected call center channel. To edit existing delivery modes or add new delivery modes, select **Manage modes of delivery**. Note that the **Process delivery modes** job must be run whenever changes are made.
 
 ## Define charges for delivery services
+
 When sales orders are created for customers, a company might want to add charges that are automatically calculated based on the delivery modes that are selected for the order. These charges can be configured so that they are the same for all customers and delivery modes. Alternatively, the charges can vary, depending on the customer and/or the delivery modes that are selected for the sales order.
 
 To define the charges, go to **Retail \> Channel setup \> Charges \> Auto charges**. Select **New** to add new charges. Alternatively, select an existing entry, and then select **Edit**.
@@ -79,6 +80,7 @@ You can use a mixture of categories for charges, depending on your business requ
 ![Mixed tiered charges example](media/mixedtieredcharges.png)
 
 ## Apply delivery modes during order entry in a call center
+
 When a new sales order is created, a value must be specified in the **Mode of delivery** field on the **Delivery** FastTab of the sales order header. This field might be filled in automatically, based on default values from the customer record.
 
 The delivery mode that is defined on the order header is automatically copied to the sales order lines as they are created. However, you can change the delivery mode setup for a specific line item on the **Delivery** tab in the **Line details** section of the sales order entry page.
@@ -86,11 +88,13 @@ The delivery mode that is defined on the order header is automatically copied to
 If the selected delivery mode isn't valid for the product or the delivery address that is defined for the order or order line, you receive an error message. You must then select a delivery mode that has been defined to support that product or address configuration.
 
 ## Calculation of delivery charges during entry of order
+
 If the **Enable order completion** setting is turned on for your call center channel, shipping charges are automatically calculated for sales orders when users select **Complete**. The following message appears at the top of the **Sales order summary** page: "Tiered charges calculated." The charges that are calculated are added to the value of the **Sales total** field. On the **Amount** FastTab, the **Charges** field shows the total amount of all charges that have been calculated for the order and lines. To see a more detailed breakdown of the charges, select **Order** on the **Sales order summary** page, and then select the **Charges** option to view, add, or edit the charges. Note that the calculation of delivery charges on the order header is based on the delivery mode that is linked to the header. Line-level delivery charges are calculated based on the delivery mode that is configured for the sales line. If multiple delivery modes are used on different lines, multiple charges might be applied and added together. The total amount is then shown in the **Charges** field on the **Sales order summary** page.
 
 If the **Enable order completion** setting is turned off, users must manually trigger the calculation of charges. On the **Sales order** page, on the Action Pane, on the **Sell** tab, in the **Calculate** group, select **Tiered charges**. The "Tiered charges calculated" message appears. You can then select the **Charges** option on the **Sell** tab to view, edit, or delete the calculated charges.
 
 ## Use expedited delivery modes on call center orders
+
 You can optionally link an expedite code to any delivery mode that you configure. This code is used as a prioritization sorting and reporting tool. It doesn't currently cause additional fees to be applied to the order. To set up expedite codes, go to **Sales and marketing \> Setup \> Distribution \> Expedite codes**.
 
 For example, for orders that will be shipped by next-day air, picking must be done in the warehouse by 1 PM every day. In this case, an expedite code can be created, and that code can be linked to any next-day delivery mode that is configured in the system. When the warehouse creates its pick wave, the appropriate expedite code in the **Expedite** field can be used as a filter, so that picking is run only for orders that have delivery modes that are linked to that code.

@@ -3,7 +3,7 @@
 
 title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19641

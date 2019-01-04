@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use quick import/export
+title: Quick import export
 description: The purpose of Quick import export is to let you import and export with fewer steps.
 author: margoc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 ---
 
-# Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
+# Quick import export
 
 [!include [banner](../../includes/banner.md)]
 

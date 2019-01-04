@@ -3,9 +3,9 @@
 
 title: Master planning home page
 description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -61,13 +61,13 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Quick links
 
-|      |   |
-|------|---|
-|        [Master plans](master-plans.md)       |     [Generate a constrained plan](./tasks/constrained-plan.md)  |
-| [Create a material plan for co-products](./tasks/create-material-plan-co-products.md)   |  [Master planning and multisite functionality](master-plan-multisite-functionality.md)  |
-| [Create an intercompany plan](./tasks/create-intercompany-plan.md) | [Demand forecasting overview](introduction-demand-forecasting.md)  | 
-|[Reduction keys](reduction-keys.md)| [Master planning essentials](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (requires CustomerSource account)     |
-|  [Master planning for Process manufacturing](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (requires CustomerSource account) | [Intercompany master planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (requires CustomerSource account)|
+- [Master plans](master-plans.md)  
+- [Generate a constrained plan](./tasks/constrained-plan.md)
+- [Create a material plan for co-products](./tasks/create-material-plan-co-products.md)
+- [Master planning and multisite functionality](master-plan-multisite-functionality.md)
+- [Create an intercompany plan](./tasks/create-intercompany-plan.md)
+- [Demand forecasting overview](introduction-demand-forecasting.md)
+- [Reduction keys](reduction-keys.md)
                                   
 ## Additional resources
 

@@ -17,7 +17,7 @@ ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreeme
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9554

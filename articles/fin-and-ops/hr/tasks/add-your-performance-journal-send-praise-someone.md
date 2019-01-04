@@ -5,26 +5,26 @@ title: Add to your performance journal and send praise to someone
 description: The performance journal holds information that relates to how you met your goals or how you performed during a period. 
 author: ShielaSogge
 manager: AnnBe 
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-talent 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shielas
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Add to your performance journal and send praise to someone
 
@@ -46,7 +46,7 @@ The performance journal holds information that relates to how you met your goals
 9. In the Keywords field, type a value.
 10. Click Add external link.
 11. In the Description field, type 'Envision'.
-12. In the Internet address field, type '<https://www.microsoft.com/en/envision/default>'.
+12. In the Internet address field, type 'https://www.microsoft.com/en/envision/default'.
 13. Click on the caption below the Save button called "Performance journal" to return to the grid.
     * You can add the selected journal or journals to a goal so that it appears when you open the goal. A link will be added in the Links fast tab.    If you add a journal to a goal and then add the goal to a review, the journal will appear on the review automatically.  
     * You can add the selected journal or journals to a review so that it appears when you open the review.    A link will be added in the Links fast tab.  

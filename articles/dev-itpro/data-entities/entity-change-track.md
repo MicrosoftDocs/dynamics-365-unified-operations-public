@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Enable change tracking for an entity
+title: Enable change tracking for entities
 description: Use change tracking to enable incremental export of data from Microsoft Dynamics 365 for Finance and Operations.
 author: Milindav2
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,11 +29,11 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Enable change tracking for an entity by using a custom query
+# Enable change tracking for entities
 
 [!include [banner](../includes/banner.md)]
 
-Change tracking is a feature that enables incremental export of data from Microsoft Dynamics 365 for Finance and Operations, by using Data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. If you don't enable change tracking on an entity, you can enable only full export each time.
+Change tracking enables incremental export of data from Microsoft Dynamics 365 for Finance and Operations by using Data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. If you don't enable change tracking on an entity, you can only enable a full export each time. For bring your own database (BYOD) use cases, change tracking can also track deletes if the entity supports this.
 
 ## Enable change tracking
 You can enable change tracking when you publish one or more entities to a data store (BYOD).
@@ -55,7 +55,7 @@ You can enable change tracking when you publish one or more entities to a data s
     | Enable Custom query  | Select a set of custom fields from any tables that must trigger a change in entity. |
 
     > [!NOTE]
-    > If a change is triggered, the entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.
+    > If a change is triggered, the change is tracked on the entire record and not at the field level. The entire entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.
 
 ## Custom query for change tracking
 The following example shows how to add a static method to an entity. You must make sure that the method returns a query, and that the root node is the same as the entity. For example, for the Customer entity, the root node is custTable, and the change tracking query for it is also custtable.

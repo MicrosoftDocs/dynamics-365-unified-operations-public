@@ -5,7 +5,7 @@ title: Set up permissions for ordering products on behalf of someone else
 description: This procedure shows how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 08/23/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: PurchReqAuthorization, HcmWorkerLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up permissions for ordering products on behalf of someone else
 

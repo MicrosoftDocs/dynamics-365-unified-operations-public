@@ -17,14 +17,14 @@ ms.search.form: JmgShopSupervisorWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: johanho
-ms.search.validfrom: 2017-12-31
+ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
 # Visibility into material exceptions

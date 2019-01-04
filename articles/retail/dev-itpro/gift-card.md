@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: External gift card support
+title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 for Retail.
 author: sericks007
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
 ---
 
-# External gift card support
+# Support for external gift cards
 
 [!include [banner](../../includes/banner.md)]
 

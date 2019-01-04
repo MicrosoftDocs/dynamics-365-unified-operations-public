@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend the metadata
+title: Extend the default Retail Server metadata controller
 description: This article provides code to extend the CommerceModelFactory class.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Extend the metadata
+# Extend the default Retail Server metadata controller
 
 [!include [banner](../includes/banner.md)]
 

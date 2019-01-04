@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Modern POS architecture
+title: Retail Modern POS (MPOS) architecture
 description: This topic describes the POS topology.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail Modern POS architecture
+# Retail Modern POS (MPOS) architecture
 
 [!include [banner](../includes/banner.md)]
 

@@ -3,7 +3,7 @@
 
 title: Product identifiers 
 description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
-auhor: cvocph
+author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
@@ -14,10 +14,9 @@ ms.technology:
 # optional metadata
 
 ms.search.form: EcoResProductEntityIdentifierCode
-# ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

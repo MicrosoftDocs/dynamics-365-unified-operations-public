@@ -3,7 +3,7 @@
 
 title: Recalculate replacement costs and insured values for fixed asset groups
 description: This article explains the process to update the replacement costs and insured values for fixed assets.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3261

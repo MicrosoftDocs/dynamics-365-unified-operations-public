@@ -3,7 +3,7 @@
 
 title: Update the bank journal composite entity
 description: The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221654

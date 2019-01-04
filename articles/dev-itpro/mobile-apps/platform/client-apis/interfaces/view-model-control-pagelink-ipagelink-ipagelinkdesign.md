@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageLinkDesign
+title: PageLinkDesign type
 description: Pagelink design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageLinkDesign Type
+# PageLinkDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

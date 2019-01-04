@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing
-description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. T
+description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment.
 author: aprilolson
 manager: AnnBe
 ms.date: 11/10/2017

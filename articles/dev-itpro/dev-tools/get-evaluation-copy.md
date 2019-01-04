@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get an evaluation copy
+title: Get evaluation copies
 description: A public preview is available. 
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get an evaluation copy
+# Get evaluation copies
 
 [!include [banner](../includes/banner.md)]
 

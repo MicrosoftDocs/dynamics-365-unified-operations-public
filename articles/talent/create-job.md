@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Setting up the components of a job
+title: Set up the components of a job
 description: This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Setting up the components of a job
+# Set up the components of a job
 
 [!include [banner](includes/banner.md)]
 

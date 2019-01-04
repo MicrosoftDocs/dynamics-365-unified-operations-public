@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy a payment connector
+title: Deploy payment connectors
 description: This topic describes how to deploy a payment connector package to the appropriate components. 
 author: aamirallaqaband
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Deploy a payment connector
+# Deploy payment connectors
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Table properties
+title: Table properties in the Application Object Tree (AOT)
 description: This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Table properties
+# Table properties in the Application Object Tree (AOT)
 
 [!include [banner](../../includes/banner.md)]
 

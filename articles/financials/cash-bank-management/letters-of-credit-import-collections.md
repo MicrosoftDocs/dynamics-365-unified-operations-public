@@ -3,7 +3,7 @@
 
 title: Letters of credit and import collections
 description: This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BankLCImport
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18321

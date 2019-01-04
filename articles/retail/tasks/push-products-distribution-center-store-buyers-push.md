@@ -5,30 +5,30 @@ title: Push products from distribution center to store using buyer's push
 description: This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores. 
 author: rubencdelgado
 manager: AnnBe 
-ms.date: 02/17/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Push products from distribution center to store using buyer's push
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores. The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store. This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights. This procedure uses the USRT demo company.
 

@@ -17,14 +17,14 @@ ms.search.form: CAMDimension
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 ms.search.region: global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

@@ -5,30 +5,30 @@ title: Retail price adjustments
 description: This procedure will walk through creating a retail price adjustment. 
 author: josaw1
 manager: AnnBe 
-ms.date: 06/07/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailDiscountPriceGroup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Retail price adjustments
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure will walk through creating a retail price adjustment. A retail price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price. This procedure uses the USRT demo data company.
 

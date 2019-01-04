@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Client internet connection  
+title: Client internet connectivity
 description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 
-# Client internet connection 
+# Client internet connectivity
 
 [!include [banner](../includes/banner.md)]
 

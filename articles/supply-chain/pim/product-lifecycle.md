@@ -17,7 +17,7 @@ ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleState
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

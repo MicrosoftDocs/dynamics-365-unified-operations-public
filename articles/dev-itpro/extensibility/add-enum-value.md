@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add an enum value
+title: Add values to enums through extension
 description: This topic explains how to add new values to an enum by extending the enum.
 author: smithanataraj
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Add an enum value
+# Add values to enums through extension
 
 [!include [banner](../includes/banner.md)]
 

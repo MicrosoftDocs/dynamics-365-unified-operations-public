@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports
+title: ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1 - Design format)
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports
+# ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -40,8 +40,7 @@ To complete these steps, you must first complete these three task guides:
 
 “ER Use financial dimensions as a data source (Part 2: Model mapping)”
 
-You must also download and save a local copy of the template with a sample report found here, [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
-
+You must also download and save a local copy of the template with a sample report found here, [Sample Financial Dimensions Web Service Report](https://go.microsoft.com/fwlink/?linkid=862266).
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

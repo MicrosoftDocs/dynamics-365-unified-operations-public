@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Lookup
+title: Lookup module
 description: A lookup is an input control that is used to select an input from a list of options.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Lookup 
+# Lookup module
 
 [!include [banner](../../../../includes/banner.md)]
 

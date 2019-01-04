@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Form pattern add-ins
+title: Visual Studio add-ins that support form patterns
 description: The tools for Visual Studio include a number of add-ins that support pattern usage. 
 author: jasongre
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Form pattern add-ins
+# Visual Studio add-ins that support form patterns
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Set up I-9 document types
+title: Set up Form I-9 document types
 description: This procedure shows how to view and set up document types that are used for I-9 verification. 
 author: ShielaSogge
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Set up I-9 document types
+# Set up Form I-9 document types
 
 [!include [task guide banner](../../../includes/task-guide-banner.md)]
 

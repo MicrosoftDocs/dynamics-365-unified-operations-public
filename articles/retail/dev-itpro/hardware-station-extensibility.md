@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Hardware Station overview and extensibility
+title: Hardware Station extensibility
 description: This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,9 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Hardware Station overview and extensibility
+# Hardware Station extensibility
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
 
 This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 

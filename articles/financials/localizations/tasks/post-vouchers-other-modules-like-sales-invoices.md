@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Post vouchers from other modules (China)
+title: Post vouchers from other modules, like sales invoices
 description: You can post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 10/27/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, InventProductDimensionLookup, DimensionLookup, InventTrans, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustTrans   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Post vouchers from other modules (China)
+# Post vouchers from other modules, like sales invoices
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

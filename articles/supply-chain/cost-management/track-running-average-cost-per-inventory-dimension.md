@@ -17,7 +17,7 @@ ms.search.form: InventOnhandItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 75053

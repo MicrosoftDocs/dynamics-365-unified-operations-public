@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Field
+title: Field module
 description: Represents the run-time instance of a field.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Field 
+# Field module
 
 [!include [banner](../../../../includes/banner.md)]
 

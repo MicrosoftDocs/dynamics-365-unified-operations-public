@@ -1,34 +1,34 @@
 --- 
 # required metadata 
  
-title: Manage assortments 
+title: Manage assortments (November 2016)
 description: This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. 
 author: jashanno
 manager: AnnBe 
-ms.date: 10/31/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCategoryAndProductAssortment, RetailAssortmentDetails, RetailOperatingUnitPicker, EcoResCategorySingleLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Manage assortments 
+# Manage assortments (November 2016)
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. This procedure requires Dynamics AX application 7.0.1 or later, and Dynamics AX platform 7.1.  
 

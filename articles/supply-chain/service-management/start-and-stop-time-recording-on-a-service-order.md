@@ -3,7 +3,7 @@
 
 title: Start and stop time recording on a service order 
 description: Start and stop time recording on a service order.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: SMAServiceOrderTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: YuyuScheller
+ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

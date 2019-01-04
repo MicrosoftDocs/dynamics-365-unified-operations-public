@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add a methodology to a Microsoft Dynamics 365 for Finance and Operations solution
+title: Add methodologies to Finance and Operations solutions
 description: This topic explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services (LCS). It also provides information about the requirements for methodologies.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Add a methodology to a Microsoft Dynamics 365 for Finance and Operations solution
+# Add methodologies to Finance and Operations solutions
 
 [!include[banner](../includes/banner.md)]
 

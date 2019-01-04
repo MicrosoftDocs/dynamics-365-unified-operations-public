@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cloud deployment overview  
+title: Cloud deployment option
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Microsoft Dynamics 365 for Finance and Operations. 
 author: kfend
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Cloud deployment overview for Microsoft Dynamics 365 for Finance and Operations
+# Cloud deployment option
 
 [!include [banner](../includes/banner.md)]
  
@@ -45,7 +45,7 @@ Microsoft assumes that all customers will follow a lifecycle similar to the foll
 - Test customizations, partner solutions and data configuration on a tier-2 sandbox environment
 - Deploy customizations and data configurations to a production environment with high availability
 
-At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
+At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 You may hear the terms, Customer, Partner, and Microsoft subscriptions. A *customer or partner subscription* means that the customer or partner brings their own Azure subscription and deploys Dynamics 365 for Finance and Operations environments to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
 A *Microsoft subscription* means that the customer purchases Dynamics 365 for Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. With each Enterprise offer, three environments are included by default. 
@@ -54,7 +54,7 @@ A *Microsoft subscription* means that the customer purchases Dynamics 365 for Fi
 - One Tier-2 sandbox (multi-box environment) for user acceptance testing (UAT).
 - One production environment with High Availability (HA). This environment is managed and operated by Microsoft.
 
-Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
+Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 Here's how the lifecycle maps to the available environments.
 
@@ -107,7 +107,7 @@ Windows Remoting (WinRM) is disabled on all environments. Although you can enabl
 > Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. 
 
 ## Availability
-The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.5%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
+The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
 
 ### High-availability features
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Dynamics 365 for Operations cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. For more information about Azure availability sets, see [Azure availability sets guidelines for Windows VMs](/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines).
@@ -122,9 +122,10 @@ Finance and Operations production environments are configured with Azure disaste
 Only primary data stores are supported by replication. This means that some Finance and Operations application components, such as Management Reporter, and Entity store, which use transformed data from the primary database, must be generated after the recovery site has been set up and the service has started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of 10 hours and a Recovery Point Objective of 5 minutes. For more information, see [Azure SQL Database Point in Time Restore](https://azure.microsoft.com/en-us/blog/azure-sql-database-point-in-time-restore/).
 
 ## Service availability 
-Finance and Operations can be deployed into different Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location.
+Finance and Operations can be deployed into different Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
 
-**Important:** Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
+> [!IMPORTANT]
+> Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
 For more information, see [Where your Finance and Operations data is stored](https://www.microsoft.com/en-us/trustcenter/privacy/dynamics365-operations-location).
 
 ## Frequently asked questions

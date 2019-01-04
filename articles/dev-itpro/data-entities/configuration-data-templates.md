@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data templates
-description: This topic describes configuration data templates and explains how to create them. 
+description: This topic describes configuration data templates and explains how to create them.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/29/2017
@@ -91,37 +91,37 @@ The following table shows how the templates were set up to handle dependencies. 
 
 | Module                    | Unit | Level |
 |---------------------------|------|-------|
-| System setup              | 1    |  10 	 | 
-| Global address book       | 1    |  15 	 |
-| General ledger shared     | 1    |  20   |
-| Workflow                  | 1    |  22 	 | 
-| General ledger            | 1    |  25 	 | 
-| Band 1 for dependencies   | 1    |  30 	 | 
-| Band 2 for dependencies   | 1    |  40 	 | 
-| Band 3 for dependencies   | 1    |  50 	 | 
-| Band 4 for dependencies   | 1    |  60 	 | 
-| Band 5 for dependencies   | 1    |  70 	 |
-| Band 6 for dependencies   | 1    |  80 	 | 
-| Band 7 for dependencies   | 1    |  90 	 | 
-| Bank                      | 1    | 100 	 |
-| Accounts payable          | 1    | 120 	 |
-| Tax                       | 1    | 130 	 |
-| Accounts receivable       | 1    | 140 	 |
-| Fixed assets              | 1    | 150 	 |
-| Budgeting                 | 1    | 160 	 |
-| Inventory management      | 1    | 300 	 |
-| Product management        | 1    | 310 	 |
-| Procurement               | 1    | 320 	 | 
-| Sales and Marketing       | 1    | 330 	 |
-| Quality management        | 1    | 395 	 |
-| Warehouse management      | 1    | 400 	 |
-| Transportation management | 1    | 405 	 |
-| Production control        | 1    | 410 	 |
-| Process manufacturing     | 1    | 412 	 |
-| Costing                   | 1    | 420 	 |
-| Retail (See the note.)    | 1    | 500 	 | 
-| Expense management        | 1    | 600 	 |
-| Project accounting        | 1    | 650 	 |
+| System setup              | 1    | 10    |
+| Global address book       | 1    | 15    |
+| General ledger shared     | 1    | 20    |
+| Workflow                  | 1    | 22    |
+| General ledger            | 1    | 25    |
+| Band 1 for dependencies   | 1    | 30    |
+| Band 2 for dependencies   | 1    | 40    |
+| Band 3 for dependencies   | 1    | 50    |
+| Band 4 for dependencies   | 1    | 60    |
+| Band 5 for dependencies   | 1    | 70    |
+| Band 6 for dependencies   | 1    | 80    |
+| Band 7 for dependencies   | 1    | 90    |
+| Bank                      | 1    | 100   |
+| Accounts payable          | 1    | 120   |
+| Tax                       | 1    | 130   |
+| Accounts receivable       | 1    | 140   |
+| Fixed assets              | 1    | 150   |
+| Budgeting                 | 1    | 160   |
+| Inventory management      | 1    | 300   |
+| Product management        | 1    | 310   |
+| Procurement               | 1    | 320   |
+| Sales and Marketing       | 1    | 330   |
+| Quality management        | 1    | 395   |
+| Warehouse management      | 1    | 400   |
+| Transportation management | 1    | 405   |
+| Production control        | 1    | 410   |
+| Process manufacturing     | 1    | 412   |
+| Costing                   | 1    | 420   |
+| Retail (See the note.)    | 1    | 500   |
+| Expense management        | 1    | 600   |
+| Project accounting        | 1    | 650   |
 
 > [!NOTE]
 > The Retail template is scheduled to be released in Finance and Operations, App update 3.

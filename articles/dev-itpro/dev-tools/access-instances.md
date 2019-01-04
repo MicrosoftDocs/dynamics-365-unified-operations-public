@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Access instances
+title: Deploy and access development environments
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: robadawy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deploy and access development environments 
+# Deploy and access development environments
 
 [!include [banner](../includes/banner.md)]
 
@@ -176,7 +176,7 @@ Follow the steps in this section if you are also configuring for Retail.
 
 1.  Run the RetailTenantUpdateTool.
     -   The icon for this tool is available on the desktop.
-    -   This tool is also available at the following location: C:\windowsSystem32WindowsPowerShellv1.0PowerShell.exe -File C:\RetailSDKToolsRetailTenantUpdateTool.ps1
+    -   This tool is also available at the following location: C:\windows\System32\WindowsPowerShell\v1.0\PowerShell.exe -File C:\RetailSDK\Tools\RetailTenantUpdateTool.ps1
 
 2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
 
@@ -232,7 +232,7 @@ Follow the steps in this section if you are also configuring for Retail.
 
 ### Base URL of the local application
 
-After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: https://usnconeboxax1aos.cloud.onebox.dynamics.com. If you're using version control and plan to connect multiple development VMs to the same Visual Studio Team Services (VSTS) project, rename your local VM. For instructions, see [Rename a local development VM to enable access to Visual Studio Team Services](../migration-upgrade/vso-machine-renaming.md).
+After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: https://usnconeboxax1aos.cloud.onebox.dynamics.com. If you're using version control and plan to connect multiple development VMs to the same Azure DevOps project, rename your local VM. For instructions, see [Rename a local development VM to enable access to Azure DevOps](../migration-upgrade/vso-machine-renaming.md).
 
 #### Retail configuration
 

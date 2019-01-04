@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Copy configuration data from one company or legal entity to another
+title: Copy configuration data between companies or legal entities
 description: This topic describes how to use a configuration data project and configuration data templates to move configuration data for a company or legal entity between instances of Microsoft Dynamics 365 for Finance and Operations.
 
 author: mikefalkner
@@ -29,13 +29,13 @@ ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
 
 ---
-# Copy configuration data from one company or legal entity to another
+# Copy configuration data between companies or legal entities
 
 [!include [banner](../includes/banner.md)]
 
 There are two options for copying configuration data in Microsoft Dynamics 365 for Finance and Operations:
 
-- To move data between instances of Finance and Operations, you must first export it from one company and then import it to another company. 
+- To move data between instances of Finance and Operations, you must first export it from one company and then import it to another company.
 - To move data from one legal entity to another legal entity in the same instance, you can use the **Copy into legal entity** feature.
 
 ## Export a configuration
@@ -81,6 +81,7 @@ When the export is completed, complete the following tasks:
 ## Setup considerations for some entities that are used to export configurations
 
 Currently, several entities require additional steps when you build configurations. Follow these recommendations as you build your configurations.
+
 > [!IMPORTANT]
 > This list will be updated as the Copy configuration feature is improved.
 
@@ -94,11 +95,11 @@ The following entities require special handling when they are used in configurat
 | GL Shared | Account structures active group | This composite entity will export and import only the active account structures. If you use any other account structure entities, the status of the active account structures will be changed to **Draft**, and you must activate them before they can be used. |
 | | Advanced rule structures active group | This composite entity is used in combination with the account structures active group entity. It will export and import only the active advanced rule structures. If you use any other advanced rule structure entities, the status of the advanced rule structures will be changed to **Draft**, and you must activate them before they can be used. |
 | | Financial dimension values | All dimension values will be exported, even values that are based on system-defined entities such as projects or customers. Remove the system-defined values before you import them. If you leave the system-defined values in the package, they won't be imported. However, they will be filled as you import the data that backs the system-defined dimension. |
-| Workflow | Workflow version | Change the owner for every record in the package data to **Admin**, unless the users in the workflow are already imported. |  
-| | Workflow expression | Some workflow expressions might be too long for an Excel cell. Use XML instead of Excel as the export format. |  
+| Workflow | Workflow version | Change the owner for every record in the package data to **Admin**, unless the users in the workflow are already imported. |
+| | Workflow expression | Some workflow expressions might be too long for an Excel cell. Use XML instead of Excel as the export format. |
 | Tax | Sales tax parameters | The default value for the marginal base calculations method is **Total** for sales tax parameters. The Ledger Parameters entity doesn't set that value. However, the marginal base that some tax codes use, **Line**, will fail validation. A new entity that is named the Sales tax parameters preset entity was created so that you can import the marginal base calculation method first. You can then import tax codes. | 
 | Accounts receivable | Customers | The Customers entity was designed to be used for OData scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities let you import the basic information about a customer. In this way, you enable entities that require that a customer have that information earlier in the import process. The Customer details entity contains additional information about a customer that you can add after parameters and reference data have been set up. |
-| Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in version 7.2.3, (App update 3 of the July 2017 release).| 
+| Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in version 7.2.3, (App update 3 of the July 2017 release). | 
 | Product information management | Products | The Products and Released Products entities should be used for configurations. The Product master and Released product master entities should be used for OData scenarios. |
 | | Product document attachments | For attachments to product documents released product documents, you must never skip staging, because additional steps are performed in the staging environment. You must use a data package for export and import, because the export file must be accompanied by a resources folder that contains the attachments. The entities support images, documents, notes, and links. When you export, you will see an image file that has a name that resembles a globally unique identifier (GUID). This file is a valid data package that is required in order to complete the import. |
 | | Product attribute values | Product attribute values are assigned only when a user opens the **Attribute values** page from the **Products details** page. Currently, you can't import the values unless this step was performed in the golden build. |
@@ -142,7 +143,7 @@ The following entities require filters or special handling when you export the d
 | Area | Entity | Action |
 |------|--------|--------|
 | System setup | Legal entities | Apply a filter to Company. |
-| | Number sequence code | <p>The number sequence codes can be shared, or they can be specific to a legal entity. To import all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you want only shared number sequences, apply a filter to remove the number sequences that are specific to a legal entity. If you want the number sequences only for a specific legal entity, apply a filter to Company.</p><p>Number sequences can also have scope. You must delete number sequences when the following conditions are met:<ul><li>The **SCOPETYPE** value is **DataArea**, and the **SCOPEVALUE** value either isn't equal to the legal entity or is blank.</li><li>The **SCOPETYPE** value is **LegalEntity**, and the **SCOPEVALUE** value isn't equal to the legal entity.</li><li>The **SCOPETYPE** value is **DataAreaFiscalCalendar**, and the **SCOPEVALUE** value isn't equal to the legal entity.</li></ul> |
+| | Number sequence code | The number sequence codes can be shared, or they can be specific to a legal entity. To import all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you want only shared number sequences, apply a filter to remove the number sequences that are specific to a legal entity. If you want the number sequences only for a specific legal entity, apply a filter to Company.<p>Number sequences can also have scope. You must delete number sequences when the following conditions are met:</p><ul><li>The **SCOPETYPE** value is **DataArea**, and the **SCOPEVALUE** value either isn't equal to the legal entity or is blank.</li><li>The **SCOPETYPE** value is **LegalEntity**, and the **SCOPEVALUE** value isn't equal to the legal entity.</li><li>The **SCOPETYPE** value is **DataAreaFiscalCalendar**, and the **SCOPEVALUE** value isn't equal to the legal entity.</li></ul> |
 | | Number sequence references | Number sequence references can also have scope. You must delete the number sequence references when the following conditions are met:<ul><li>The **SCOPETYPE** value is equal to **DataArea**, **DataAreaFiscalCalendar**, or **LegalEntity**.</li><li>The **SCOPEVALUE** value either isn't equal to the legal entity that you want in the data or is blank.</li></ul> |
 | | Organization hierarchies | There is no legal entity filter. Manually remove any references to the other legal entities that you aren't importing. For example, if you've set up centralized payments, but you're loading only one legal entity, you must not import the Centralized payments hierarchy. |
 | Global address book | Multiple entities | The global address book contains data for all legal entities. All legal entities will be created when you import the data, unless you remove the data for the legal entities that you don't want to load. To help guarantee that other legal entities aren't created, delete all records for those other legal entities. Alternatively, apply a filter to the Legal entity data area (&lt;&gt; blank). You must also remove global address book records that are used in the other legal entities. |
@@ -179,14 +180,13 @@ The following entities require filters or special handling when you export the d
 | | Budget plan process administration | You will experience the same issue that is described for the Budget plan stage rule entity. |
 | | Budget transfer rules | Apply a filter to Legal entity. |
 | Inventory management | Warehouse current postal address | Apply a filter to Company. |
-| | Site current postal address | Apply a filter to Company. | 
-| | Tracking number groups | The entity automatically filters the Number sequence scope data area by the legal entity. Therefore, you don't require a filter. However, if you must change the legal entity, the legal entity is stored in the table. | 
+| | Site current postal address | Apply a filter to Company. |
+| | Tracking number groups | The entity automatically filters the Number sequence scope data area by the legal entity. Therefore, you don't require a filter. However, if you must change the legal entity, the legal entity is stored in the table. |
 | Retail | POS registers | Apply a filter to Legal entity. This entity was added to the Retail template version 7.2.3, (App update 3 of the July 2017 release). | 
-| | Retail store address book | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template inversion 7.2.3, (App update 3 of the July 2017 release). | 
-| | Retail locator group member | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in version 7.2.3, (App update 3 of the July 2017 release). | 
-| | Retail locator group owner | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in version 7.2.3, (App update 3 of the July 2017 release). | 
-| | Retail devices | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in version 7.2.3, (App update 3 of the July 2017 release). | 
-                      
+| | Retail store address book | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template inversion 7.2.3, (App update 3 of the July 2017 release). |
+| | Retail locator group member | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in version 7.2.3, (App update 3 of the July 2017 release). |
+| | Retail locator group owner | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in version 7.2.3, (App update 3 of the July 2017 release). |
+| | Retail devices | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in version 7.2.3, (App update 3 of the July 2017 release). |
 
 ### Changing the legal entity value before import
 
@@ -213,12 +213,12 @@ To import a configuration, follow these steps.
 4. Set the operation type for the data project to **Import**, and set the project category to **Configuration**.
 5. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
-   - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
-   - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
-   - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources, and the source data format will be set automatically. If you haven't set up the default file name extensions, you must select a source data format before you select the file.
-   - **Add a template** – Select from a list of templates that you've loaded in your instance.
+    - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
+    - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
+    - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources, and the source data format will be set automatically. If you haven't set up the default file name extensions, you must select a source data format before you select the file.
+    - **Add a template** – Select from a list of templates that you've loaded in your instance.
 
-     When you load a package, the **Import** page first reads the list of entities from the package. A progress indicator shows how much of the package has been read. After the list of entities is read, the **Import** page starts to load the data in the package. This process can take some time.
+    When you load a package, the **Import** page first reads the list of entities from the package. A progress indicator shows how much of the package has been read. After the list of entities is read, the **Import** page starts to load the data in the package. This process can take some time.
 
 6. Select **Remove entity** to remove any selected entities, as required.
 7. After you've completed the configuration, select **Import** to start the import. You can monitor the results on the **Execution details** page that appears.
@@ -243,26 +243,26 @@ To copy a configuration from one legal entity to another legal entity in the sam
 5. Select the legal entity that should be the source of the data to copy. By default, the legal entity that you're currently using is selected.
 6. On the **Legal entities** FastTab, you can select existing legal entities as a destination, or you can create new legal entities:
 
-   - **Select** – Select one or more legal entities in the list, and then select **Add selected**. The legal entities are added to the list of destination legal entities.
-   - **Create** – Enter the legal entity ID, the legal entity name, and the region that the legal entity belongs in. Then select **Create legal entity**. The legal entity is created and added to the list of destination legal entities.
+    - **Select** – Select one or more legal entities in the list, and then select **Add selected**. The legal entities are added to the list of destination legal entities.
+    - **Create** – Enter the legal entity ID, the legal entity name, and the region that the legal entity belongs in. Then select **Create legal entity**. The legal entity is created and added to the list of destination legal entities.
 
-     > [!NOTE]
-     > The functionality for creating destination legal entities is available in Finance and Operations 7.2.3.
+    > [!NOTE]
+    > The functionality for creating destination legal entities is available in Finance and Operations 7.2.3.
 
 7. After you've added the destination legal entities, select **Yes** if the number sequences should be copied. The entities that are required in order to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level, and sequence number for these entities are set to the numbers in the default System and Shared templates. If you aren't using the default templates, adjust the entity sequences so that they are first in the list.
 8. If you selected **Yes** for number sequences, select **Yes** or **No** to specify whether those number sequences should be reset to the smallest value.
 9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
-   - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
-   - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
-   - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources.
-   - **Add a template** – Select from a list of templates that you've loaded in your instance.
+    - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
+    - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
+    - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources.
+    - **Add a template** – Select from a list of templates that you've loaded in your instance.
 
-     To help guarantee that the correct order is maintained, we recommend that you use the default templates. Then add and remove entities to match the data that you want to copy. You can remove the entities that you don't want to copy.
+    To help guarantee that the correct order is maintained, we recommend that you use the default templates. Then add and remove entities to match the data that you want to copy. You can remove the entities that you don't want to copy.
 
-     > [!NOTE]
-     > - If an entity has a field that represents the legal entity, a filter will be applied to that entity, so that only the data for the source legal entity is included. The value for that field will be changed to the destination legal entity.
-     > - Document, transaction, and composite entities aren't available when you copy to a legal entity.
+    > [!NOTE]
+    > - If an entity has a field that represents the legal entity, a filter will be applied to that entity, so that only the data for the source legal entity is included. The value for that field will be changed to the destination legal entity.
+    > - Document, transaction, and composite entities aren't available when you copy to a legal entity.
 
 10. Select **Remove entity** to remove any selected entities, as required.
 11. After you've completed the configuration, select **Copy into legal entity** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor the results on the **Execution summary** page that appears. All import projects that are related to the Copy into legal entity project will appear in a list on the left of the page.
@@ -283,7 +283,7 @@ The following entities require special handling when they are used to copy into 
 
 | Area | Entity | Action |
 |------|--------|--------|
-| System setup | Number sequences | If you use a number sequence for vendors and customers on the parameters forms and then you copy customers and vendors, you need to make sure that the "Allow user to change to a lower number" settings on the number sequences to Yes. The "No" settings will cause the import to reject vendor and customer numbers since they were created before using numbers lower than the next available number sequence. If you use the Reset to smallest feature, you need to change the  "Allow user to change to a higher number" since the vendor and customer numbers are higher than the next available number sequence. |
+| System setup | Number sequences | If you use a number sequence for vendors and customers on the parameters forms and then you copy customers and vendors, you need to make sure that the "Allow user to change to a lower number" settings on the number sequences to Yes. The "No" settings will cause the import to reject vendor and customer numbers since they were created before using numbers lower than the next available number sequence. If you use the Reset to smallest feature, you need to change the "Allow user to change to a higher number" since the vendor and customer numbers are higher than the next available number sequence. |
 | System setup | Workflow | Workflow requires additional changes before it can be copied. Workflow copies are not supported at this time. |
 | Accounts payable | Vendors | Vendors have many settings that are dependent on the values that come from other entities. For example, if you update the matching settings to require three-way matching but you have vendors set for two-way matching, the vendor will fail validation. If you use auto sequencing for new vendor, you will need to unmap the vendor account before you do the copy into legal entity. In addition, if an auto-sequenced vendor has an invoice account, that vendor account is not transformed and may fail. You may see similar issues in other areas such as vendors in posting accounts and approved vendor list by products. |
 | Accounts receivable | Customers | Customers have many settings that are dependent on the values that come from other entities. For example, if you have a default warehouse and site for a customer, you must add sites and warehouses first or the customer will fail validation. The collections contact will also fail if the contact is not available in the new company. If you use auto sequencing for new customers, you will need to unmap the customer account before you do the copy into legal entity. In addition, if an auto-sequenced customer has an invoice account, that invoice account is not transformed and may fail. You may see similar issues in other areas such as customers in posting accounts.|
@@ -294,14 +294,13 @@ The following entities require special handling when they are used to copy into 
 | General ledger | Ledger allocation rules destination| If you are running a version of Finance and Operations earlier than version 7.3, if you have cross company allocation rules, you will not see the destination rules for legal entities that do not match the source legal entity. The copy into legal entity feature will only copy the destination records when the destination is equal to the source. The issue has been resolved in version 7.3.|
 | General ledger | Ledger fiscal calendar year/period| The process is currently exporting all of the legal entities instead of just the source legal entity. The copy process works correctly. The issue has been resolved in version 7.3.|
 | General ledger | Ledger parameters | If you check for continuous number sequences but you have number sequences that are used on journal names and are not continuous, the imports will fail. You should temporarily turn off that setting in the ledger parameters. In addition, the ledger parameters must be processed first. Change the sequence on your data project for ledger parameters to 15 (instead of 40). We will update the default templates in the monthly application release 3 to this value. |
-| Inventory management | Inventory dimension parameters | There is an issue where an error on import is shown but the correct number of parameters are imported. The issue will be addressed in a future release.| 
-| Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in version 7.2.3, (App update 3 of the July 2017 release). | 
-| Master planning | Intercompany master plan associations | The copy into legal entity feature does not support intercompany master plan associations at this time. The issue will be addressed in a future release.| 
-| Retail | POS registers | This entity is global and cannot be copied to another legal entity.| 
-| Retail | Retail channel | This entity is global and cannot be copied to another legal entity.| 
-| Retail | Retail store address book | This entity has a dependency on Retail channel so it cannot be used.| 
-| Sales and marketing | Intercompany trading partnerships | The copy into legal entity feature does not support intercompany trading partnerships at this time. The issue will be addressed in a future release.| 
-
+| Inventory management | Inventory dimension parameters | There is an issue where an error on import is shown but the correct number of parameters are imported. The issue will be addressed in a future release.|
+| Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in version 7.2.3, (App update 3 of the July 2017 release). |
+| Master planning | Intercompany master plan associations | The copy into legal entity feature does not support intercompany master plan associations at this time. The issue will be addressed in a future release.|
+| Retail | POS registers | This entity is global and cannot be copied to another legal entity.|
+| Retail | Retail channel | This entity is global and cannot be copied to another legal entity.|
+| Retail | Retail store address book | This entity has a dependency on Retail channel so it cannot be used.|
+| Sales and marketing | Intercompany trading partnerships | The copy into legal entity feature does not support intercompany trading partnerships at this time. The issue will be addressed in a future release.|
 
 ### Rules
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Modify model and mapping to generate documents with application data
+title: Modify models and mappings to generate documents that have application data
 description: To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 2 - Generate documents)”. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Modify model and mapping to generate documents with application data
+# Modify models and mappings to generate documents that have application data
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

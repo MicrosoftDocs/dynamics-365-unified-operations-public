@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dimension entry control subpattern
+title: Dimension Entry Control subpattern
 description: This article provides information about the Dimension Entry Control subpattern. This subpattern is used when you have a group or tab page that uses the Dimension Entry control (DEC). 
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dimension entry control subpattern
+# Dimension Entry Control subpattern
 
 [!include [banner](../includes/banner.md)]
 

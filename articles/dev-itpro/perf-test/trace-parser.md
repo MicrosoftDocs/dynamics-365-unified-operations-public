@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Diagnose problems and analyze performance issues using Trace parser
+title: Diagnose issues and analyze performance by using Trace parser
 description: This topic explains how you can use the Trace parser to consume traces and analyze performance in your deployment. 
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Diagnose problems and analyze performance issues using Trace parser
+# Diagnose issues and analyze performance by using Trace parser
 
 [!include [banner](../includes/banner.md)]
 

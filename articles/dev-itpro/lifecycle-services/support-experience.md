@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up technical support
+# Set up technical support for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,10 +39,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created during the subscription setup for Microsoft Dynamics 365 for Finance and Operations.
 
-## Create a Visual Studio Team Services project
-The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a VSTS project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on their own behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.
+## Create an Azure DevOps project
+The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a Azure DevOps project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the Azure DevOps project, and must authorize LCS to access Azure DevOps on their own behalf. Most users don't have access to LCS or Azure DevOps. Therefore, in the Azure DevOps project, you should create a special system account that can be used to submit issues.
 
-### Create a new VSTS project
+### Create a new Azure DevOps project
 
 1.  Go to <https://www.visualstudio.com/>.
 2.  Click **Sign in** in the upper-right corner.
@@ -51,10 +51,10 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visua
 5.  Specify an account URL, and then click **Create Account**.
 6.  Name your project, and specify a process template. Your project should now be created.
 
-### Add users to the VSTS project
+### Add users to the Azure DevOps project
 
 1.  In the upper-left corner, click **Team Services**.
-2.  On the **Users** tab, click **Add**, and invite users who will use the Support experience to the VSTS account. For each user that you invite, select either **Basic** or **Stakeholder**.
+2.  On the **Users** tab, click **Add**, and invite users who will use the Support experience to the Azure DevOps account. For each user that you invite, select either **Basic** or **Stakeholder**.
 3.  In the upper-left corner, click **Team Services**.
 4.  Click **Browse**, and browse to the project that you created in the previous procedure.
 5.  In the **Members** section of the project home page, click **Add**, and add the users that you invited in step 2.
@@ -83,13 +83,13 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visua
 ## Configure LCS
 1.  Sign in to LCS by using an account that has the **Owner** role for the LCS project that Finance and Operations is deployed in.
 2.  Open the project in LCS.
-3.  Click **Project settings**, and then click the **Visual Studio Team Services** link.
+3.  Click **Project settings**, and then click the **Azure DevOps** link.
 
     [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
     [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
-4.  Click **Setup Visual Studio Team Services**.
-5.  In the **Visual Studio Team Services site URL** field, enter the URL of the VSTS project that you created in the previous section.
+4.  Click **Setup Azure DevOps**.
+5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
 6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. [![LCS-Project-Settings-VSO-Setup-1](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
 7.  Click **Continue**.
 8.  Select the VSO project to use, and then click **Continue**.
@@ -102,7 +102,7 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visua
 ## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Dynamics AX platform update 1 or update 2, or Finance and Operations platform update 3)
 If you are on Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.
 
-**Important:** If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is not available.
+**Important:** If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Azure DevOps project is not available.
 
 1.  In the client, click the **Help** menu, or question mark icon, in the upper-right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
 2.  Click **Contact your support team**.
@@ -120,7 +120,7 @@ You should receive a confirmation message that states that the issue has been su
 ## Create an issue in the Finance and Operations client (Finance and Operations platform update 4 and platform update 3 KB 4010473)
 If you have not taken platform update 4 for Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
 
-**Important:** If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is not available.
+**Important:** If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Azure DevOps project is not available.
 
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
@@ -137,15 +137,15 @@ After you connect to LCS, you can search for existing Microsoft published update
 Based on the duties assigned to you, you will see either the **Download view** or the **Request view**. 
 - **Download view** - By default, this view is only available to system administrators. From this view, you can directly download the hotfix. 
 **Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
-- **Request view** - By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
+- **Request view** - By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the Azure DevOps project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
 
-### Search for project work items in Visual Studio Team Services (VSTS)
+### Search for project work items in Azure DevOps
 
-The Visual Studio Team Services (VSTS) administrator can publish project work items to your organization users by tagging the work items with **#SearchableInFinanceAndOperations**. The tagged work items will be searchable for users from the client support search box. The search result will include tagged VSTS work items in addition to Microsoft published updates and fixes. The following graphic shows a tagged VSTS work item for publishing.
+The Azure DevOps administrator can publish project work items to your organization users by tagging the work items with **#SearchableInFinanceAndOperations**. The tagged work items will be searchable for users from the client support search box. The search result will include tagged Azure DevOps work items in addition to Microsoft published updates and fixes. The following graphic shows a tagged Azure DevOps work item for publishing.
 
 [![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
 
-When you search for published VSTS work items using the support search box, search results show the work item's type, title, state, and description in a new browser tab with **view** mode.  Users with proper permissions can edit the work item in Visual Studio Team Services. The following graphic shows the search result of a published VSTS work item.
+When you search for published Azure DevOps work items using the support search box, search results show the work item's type, title, state, and description in a new browser tab with **view** mode.  Users with proper permissions can edit the work item in Azure DevOps. The following graphic shows the search result of a published Azure DevOps work item.
 
 [![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
@@ -156,7 +156,7 @@ If you don’t see a fix in the search results, you can create a new issue by cl
 
 ## Work with issues in LCS
 ### View issues
-In the LCS **Support** tile, issues are stored as work items in the VSTS project that is associated with the LCS project. Specifically, issues are stored as work items of the **Issue** or **Impediment** type, depending on the type of VSTS project, in the **AxAndLcsGeneratedIssues** area. Every work item of one of those types in that area will be included in the list of issues in the **Support** tile. If an issue is modified in VSTS, the changes will be reflected in Support issues. Issues can be assigned to any user in the VSTS project. Users don't need to have access to LCS to work with issues in VSTS.
+In the LCS **Support** tile, issues are stored as work items in the Azure DevOps project that is associated with the LCS project. Specifically, issues are stored as work items of the **Issue** or **Impediment** type, depending on the type of Azure DevOps project, in the **AxAndLcsGeneratedIssues** area. Every work item of one of those types in that area will be included in the list of issues in the **Support** tile. If an issue is modified in Azure DevOps, the changes will be reflected in Support issues. Issues can be assigned to any user in the Azure DevOps project. Users don't need to have access to LCS to work with issues in Azure DevOps.
 
 1.  Go to [lcs.dynamics.com,](https://lcs.dynamics.com/en/) and sign in.
 2.  Open the LCS project that is associated with the environment that you want to view issues for.
@@ -165,11 +165,11 @@ In the LCS **Support** tile, issues are stored as work items in the VSTS projec
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
-2.  If necessary, sign in to Visual Studio Team Services by using an account that has access to the VSTS project that you set up in the first section of this topic, **Create a Visual Studio Team Services project**. 
+2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this topic, **Create an Azure DevOps project**. 
 
-**Note:** There is an issue in VSTS, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to VSTS, go back to LCS, and click the title of the issue in the issue grid again.
+**Note:** There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.
 
-3.  The VSTS editor opens. Edit the issue, and then save your changes. The changes will be reflected in the **Support** tile.
+3.  The Azure DevOps editor opens. Edit the issue, and then save your changes. The changes will be reflected in the **Support** tile.
 
 ### Troubleshoot issues
 **Note:** The information in this section is not applicable to on-premises deployments.

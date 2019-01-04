@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Finance and Operations cloud platform monthly updates FAQ
+title: Cloud platform monthly updates FAQ
 description: This topic provides some important information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-03-31
 
 ---
 
-# Finance and Operations cloud platform monthly updates FAQ
+# Cloud platform monthly updates FAQ
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,6 +41,12 @@ This topic provides important information about the monthly updates of the Micro
 Since Platform update 3, Microsoft has been committed to backward compatibility in the cloud platform for Finance and Operations and has removed the capability to make intrusive customizations in the platform. (That method of customization is also known as *over-layering*.) In addition, because platform updates are binary-compatible with your custom code, you don't have to compile your code to take a platform update. Therefore, you can make rich customizations that use extensions, but you can still stay up to date without having to do costly code upgrades.
 
 Starting with Platform update 4, monthly updates are released for the cloud platform. Therefore, you can keep new and existing environments up to date with the latest innovations at the click of a button. Monthly platform updates are compatible, and an explicit opt-in option will be added for features that modify the behavior of existing functionality.
+
+## What does it mean when a platform update is backward compatible?
+
+Backward compatibility covers binary and functional compatibility. 
+Binary compatibility means that you can apply a platform update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public APIs and public metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs.
+Functional compatibility is about user experience. Major changes to the user experience or business process flows that require re-training of Finance and Operations users will be not be enabled by default. New functionality will use flighting or side-by-side exeprience. This has not be fully enforced in the past, but is the current direction.
 
 ## Why do I have to move to the latest platform update?
 

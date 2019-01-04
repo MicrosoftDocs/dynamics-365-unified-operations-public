@@ -3,7 +3,7 @@
 
 title: Direct deliveries
 description: This article provides information about direct deliveries. Direct deliveries are deliveries that are sent directly from the vendor to your customer.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: PurchCreateFromSalesOrder, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9704

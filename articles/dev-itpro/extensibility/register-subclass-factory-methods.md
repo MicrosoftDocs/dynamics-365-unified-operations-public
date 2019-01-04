@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Register a subclass for factory methods
+title: Register subclasses for factory methods
 description: This topic describes how to register your own variations for the factories.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Register a subclass for factory methods
+# Register subclasses for factory methods
 
 [!include [banner](../includes/banner.md)]
 

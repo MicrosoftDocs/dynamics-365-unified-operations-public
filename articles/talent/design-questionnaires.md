@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Design a questionnaire
+title: Design questionnaires
 description: This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 author: kherr75
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
-# Design a questionnaire
+# Design questionnaires
 
 [!include [banner](includes/banner.md)]
 

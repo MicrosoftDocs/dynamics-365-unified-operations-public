@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Back up the database for a Microsoft Dynamics 365 for Finance and Operations solution
+title: Back up the databases for Finance and Operations solutions
 description: This topic provides information about the database backup that is required for your Microsoft Dynamics Lifecycle Services (LCS) solution package.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Back up the database for a Microsoft Dynamics 365 for Finance and Operations solution
+# Back up the databases for Finance and Operations solutions
 
 [!include[banner](../includes/banner.md)]
 

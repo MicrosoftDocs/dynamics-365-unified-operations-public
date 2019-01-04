@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce runtime overview
+title: Commerce runtime (CRT) architecture and configuration
 description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel. 
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Commerce runtime overview
+# Commerce runtime (CRT) architecture and configuration
 
 [!include [banner](../includes/banner.md)]
 

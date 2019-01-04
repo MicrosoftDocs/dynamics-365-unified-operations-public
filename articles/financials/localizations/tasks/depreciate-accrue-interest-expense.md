@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Depreciate and accrue the interest expense for asset retirement obligations (Japan)
+title: Depreciate and accrue the interest expense for asset retirement obligations
 description: For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 02/15/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Depreciate and accrue the interest expense for asset retirement obligations (Japan)
+# Depreciate and accrue the interest expense for asset retirement obligations
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

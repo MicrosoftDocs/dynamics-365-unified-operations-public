@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Modify the properties of a table
+title: Modify table properties through extension
 description: This topic describes how to modify properties on a table by using an extension.
 author: ivanv-microsoft
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Modify the properties of a table
+# Modify table properties through extension
 
 [!include [banner](../includes/banner.md)]
 

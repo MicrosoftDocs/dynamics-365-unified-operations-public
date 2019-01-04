@@ -1,21 +1,21 @@
-# Testing the new code owners feature in GitHub. Please contact Margo if you have questions.
+# Testing the new code owners feature in GitHub. Please contact DAX Content Publishing FTEs if you have questions.
 
-/articles/dev-itpro/analytics	@margoc @kfend
-/articles/dev-itpro/database	@margoc @kfend
-/articles/dev-itpro/data-entities	@margoc @kfend
-/articles/dev-itpro/deployment	@margoc @kfend
-/articles/dev-itpro/dev-ref	@margoc @kfend
-/articles/dev-itpro/dev-tools	@margoc @kfend
-/articles/dev-itpro/extensibility	@margoc @kfend
+/articles/dev-itpro/analytics	@sericks007 @kfend
+/articles/dev-itpro/database	@sericks007 @kfend
+/articles/dev-itpro/data-entities	@sericks007 @kfend
+/articles/dev-itpro/deployment	@sericks007 @kfend
+/articles/dev-itpro/dev-ref	@kfend
+/articles/dev-itpro/dev-tools	@kfend
+/articles/dev-itpro/extensibility	@kfend
 /articles/dev-itpro/financial @shylaw
-/articles/dev-itpro/lcs-solutions	@margoc @kfend
-/articles/dev-itpro/lifecycle-services	@margoc @kfend
-/articles/dev-itpro/migration-upgrade	@margoc @kfend
-/articles/dev-itpro/mobile-apps	@margoc @kfend
-/articles/dev-itpro/office-integration	@margoc @kfend
-/articles/dev-itpro/perf-test	@margoc @kfend
-/articles/dev-itpro/sysadmin	@margoc @kfend
-/articles/dev-itpro/user-interface	@margoc @kfend
+/articles/dev-itpro/lcs-solutions	@sericks007 @kfend
+/articles/dev-itpro/lifecycle-services	@sericks007 @kfend
+/articles/dev-itpro/migration-upgrade	@sericks007 @kfend
+/articles/dev-itpro/mobile-apps	@sericks007c @kfend
+/articles/dev-itpro/office-integration	@sericks007 @kfend
+/articles/dev-itpro/perf-test	@sericks007 @kfend
+/articles/dev-itpro/sysadmin	@sericks007
+/articles/dev-itpro/user-interface	@sericks007 @kfend
 /articles/financials/accounts-payable	@shylaw
 /articles/financials/accounts-receivable	@shylaw
 /articles/financials/budgeting	@shylaw
@@ -27,13 +27,13 @@
 /articles/financials/localizations	@shylaw
 /articles/financials/project-management	@josaw1
 /articles/financials/public-sector	@shylaw
-/articles/fin-and-ops/get-started	@margoc @kfend
+/articles/fin-and-ops/get-started	@sericks007 @kfend
 /articles/fin-and-ops/hr	@josaw1
 /articles/fin-and-ops/hr/localizations	@shylaw
-/articles/fin-and-ops/organization-administration	@margoc @kfend
+/articles/fin-and-ops/organization-administration	@sericks007
 /articles/retail	@josaw1
-/articles/retail/dev-itpro	@margoc @kfend
-/articles/retail/dev-itpro/retail-sdk	@margoc @kfend
+/articles/retail/dev-itpro	@sericks007 @kfend
+/articles/retail/dev-itpro/retail-sdk	@kfend
 /articles/retail/get-started	@josaw1
 /articles/retail/localizations	@shylaw
 /articles/supply-chain/cost-management	@shylaw @josaw1

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a Windows installer for a payment connector
+title: Create Windows installers for payment connectors
 description: This topic describes how to create a Windows installer for a payment connector. 
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Create a Windows installer for a payment connector
+# Create Windows installers for payment connectors
 
 [!include [banner](../includes/banner.md)]
 

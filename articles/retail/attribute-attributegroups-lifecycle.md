@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+title: Attributes and attribute groups
 description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
 manager: AnnBe
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
-# Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+# Attributes and attribute groups
 
 [!include [banner](includes/banner.md)]
 
 *Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or retail channels. The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.
- 
+
 For example, a typical television product might have the following attributes.
 
 | Category   | Attribute                | Permissible values          | Default value |
@@ -53,7 +53,7 @@ For example, a typical television product might have the following attributes.
 | Plasma     | Operating Temp From      | 32–110 degrees              | 32            |
 |            | Operating Temp To        | 32–110 degrees              | 100           |
 | Projection | Projection Tube Warranty | 6, 12, or 18 months         | 12            |
-|            | # of Projection Tubes    | 1–5                         | 3             |
+|            | \# of Projection Tubes   | 1–5                         | 3             |
 
 ## Attributes and attribute types
 
@@ -93,7 +93,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 For retail products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this topic.
 
-As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **"Can be refined"** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values. Only attributes for which you may set the **"Can be refined"** option to **"Yes"**, will show up for refinement or filtering of products in the retail POS.
+As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values. Only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the retail POS.
 
 Here are the remaining attribute metadata options on the **Attributes** page:
 
@@ -107,7 +107,7 @@ Here are the remaining attribute metadata options on the **Attributes** page:
 
 These options were originally intended to improve the search functionality for the online storefront. Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
-For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## Filter settings for attributes
 
@@ -124,7 +124,7 @@ The **Filter display preferences** page includes the following fields:
 - **Display control** – The following options are available:
 
     - **List** – This option is available for the all attribute types.
-    - **Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**. 
+    - **Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
     - **Slider** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
     - **Slider with bars** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
 
@@ -231,13 +231,13 @@ The default values of attributes can be overridden for individual products at th
 5. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
 6. On the following FastTabs, update the values of the required attributes:
 
-   - Shared product media
-   - Shared product attributes
-   - Channel media
-   - Channel product attributes
+    - Shared product media
+    - Shared product attributes
+    - Channel media
+    - Channel product attributes
 
-     > [!NOTE]
-     > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
+    > [!NOTE]
+    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
 
 ![Catalog product attribute groups](media/CatalogProdAttrValues.png)
 
@@ -253,10 +253,10 @@ The default values of attributes can be overridden for individual products at th
 
 5. On the following FastTabs, update the values of the required attributes:
 
-   - Shared product media
-   - Shared product attributes
-   - Channel media
-   - Channel product attributes
+    - Shared product media
+    - Shared product attributes
+    - Channel media
+    - Channel product attributes
 
-     > [!NOTE]
-     > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
+    > [!NOTE]
+    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Resources for responding to a GDPR data request
+title: Resources for responding to GDPR data requests
 description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation, and other Dynamics products.
 author: rschloma
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Resources for responding to a GDPR data request
+# Resources for responding to GDPR data requests
 
 [!include [banner](../includes/banner.md)]
 

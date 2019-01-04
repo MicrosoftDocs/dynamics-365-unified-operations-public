@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormBuildFilterPaneControl to FormBuildRealControl
+title: F classes (FormBuildFilterPaneControl to FormBuildRealControl)
 description: System API classes that start with the letter F.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormBuildFilterPaneControl to FormBuildRealControl
+# F classes (FormBuildFilterPaneControl to FormBuildRealControl)
 
 [!include [banner](../includes/banner.md)]
 

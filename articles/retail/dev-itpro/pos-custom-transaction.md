@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add custom controls to Retail Modern POS transaction pages
+title: Add custom controls to Retail Modern POS (MPOS) transaction pages
 description: This topic explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Add custom controls to Retail Modern POS transaction pages
+# Add custom controls to Retail Modern POS (MPOS) transaction pages
 
 [!include [banner](../../includes/banner.md)]
 

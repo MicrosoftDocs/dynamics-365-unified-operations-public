@@ -1,34 +1,36 @@
 --- 
 # required metadata 
-
-title: Manage vendor debit and credit for GST (Malaysia)
+ 
+title: MY-00004 Manage vendor Debit note and Credit note for GST
 description: This procedure walks you through the Creation and printing of Vendor debit note and credit note tax invoice. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
 ms.technology:  
-
+ 
 # optional metadata 
-
-# ms.search.form:   
+ 
+ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, VendInvoiceJourLookup_MY, TaxGroupLookup, TaxTmpWorkTrans, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, SrsReportViewerForm, DefaultDashboard   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Manage vendor debit and credit for GST (Malaysia)
+# MY-00004 Manage vendor Debit note and Credit note for GST
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
+
+
 
 This procedure walks you through the Creation and printing of Vendor debit note and credit note tax invoice.
 

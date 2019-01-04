@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: B2B functionality in Dynamics 365 for Finance and Operations
+title: Export business-to-business (B2B) users to Azure Active Directory
 description: This topic provides information about implementing the business-to-business transaction functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/11/2017
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Export B2B users to Azure AD
+# Export business-to-business (B2B) users to Azure Active Directory
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ You can automatically export business-to-business (B2B) users to Azure Active Di
 
 In the past, B2B users were exported manually to a .csv file. Then the Azure AD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal. 
 
-To enable the automatic export feature, a one-time setup and configuration process must be completed. When the process is completed, you can use the **Provision new user** workflow task to automatically export B2B users to Azure AD.
+To enable the automatic export feature, a one-time setup and configuration process must be completed. When the process is completed, you can use the **Provision Azure AD B2B user** workflow task to automatically export B2B users to Azure AD.
 
 The one-time set up and configuration means that you'll need to: 
 1. Set up a B2B invitation service application in Azure AD.
@@ -67,9 +67,10 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 8. In the **Add API access** pane, do the following:
     1. Click the **Select an API** tab. Click **Microsoft Graph**, and then click **Select**.
     
-    2. In the **Select permissions** tab, select the following application permissions:
-         - **Read and write all users' full profiles**
+    2. In the **Select permissions** tab, select the following **application permissions**:
+         - **Invite guest users to the organization**
          - **Read and write directory data**
+         - **Read and write all users' full profiles**
     
     3. Select the following delegated permission:
          - **Sign in and read user profile**
@@ -103,4 +104,4 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 
 7. **Save** the settings.
 
-Now you can start using the **Provision new users** workflow task in your workflows to automatically export B2B users to Azure AD.
+Now you can start using the **Provision Azure AD B2B user** workflow task in your workflows to automatically export B2B users to Azure AD.

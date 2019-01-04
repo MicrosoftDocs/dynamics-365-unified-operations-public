@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Symbol font
+title: Dynamics Symbol font
 description: This topic provides a link to the list of available symbols for each release. A description of the various locations where symbols are used in the product and usage guidelines for each location are also included.  
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Symbol font
+# Dynamics Symbol font
 
 [!include [banner](../includes/banner.md)]
 

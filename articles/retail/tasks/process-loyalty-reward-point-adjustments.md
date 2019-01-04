@@ -5,30 +5,30 @@ title: Process loyalty reward point adjustments
 description: This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. 
 author: scott-tucker
 manager: AnnBe 
-ms.date: 03/02/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Process loyalty reward point adjustments
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. The demo data company used to create this task is USRT. This task is intended for the Retail operations manager role or a Customer service manager role.
 

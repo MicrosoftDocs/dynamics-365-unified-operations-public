@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: U Classes
+title: U classes
 description: System API classes that start with the letter U.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# U Classes
+# U classes
 
 [!include [banner](../includes/banner.md)]
 

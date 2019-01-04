@@ -3,7 +3,7 @@
 
 title: Fixed asset depreciation
 description: This topic provides an overview of depreciation for fixed assets.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AssetBonus, AssetBookTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3121

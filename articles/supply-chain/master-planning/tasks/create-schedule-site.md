@@ -3,9 +3,9 @@
  
 title: Create a schedule for a site
 description: This procedure shows how to schedule production orders that are not yet started for a site. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
-ms.date: 06/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a schedule for a site
 

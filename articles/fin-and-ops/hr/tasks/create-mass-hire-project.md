@@ -5,7 +5,7 @@ title: Create a mass hire project
 description: This procedure walks through the process of setting up a mass hire project. 
 author: kherr75
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a mass hire project
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Programming language support
+title: Changes in X++ and the X++ compiler
 description: This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Finance and Operations.
 author: pvillads
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Programming language support
+# Changes in X++ and the X++ compiler
 
 [!include [banner](../includes/banner.md)]
 

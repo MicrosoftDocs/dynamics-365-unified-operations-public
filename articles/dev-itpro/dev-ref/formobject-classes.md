@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormObject to FormRealControl
+title: F classes (FormObject to FormRealControl)
 description: API reference for classes from FormObject to FormRealControl.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormObject to FormRealControl
+# F classes (FormObject to FormRealControl)
 
 [!include [banner](../includes/banner.md)]
 

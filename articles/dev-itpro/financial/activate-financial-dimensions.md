@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Activate financial dimensions
+title: Financial dimension activation
 description: This topic contains information about the activating financial dimension process.
 author: aprilolson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Activate financial dimensions
+# Financial dimension activation
 
 [!include [banner](../includes/banner.md)]
 

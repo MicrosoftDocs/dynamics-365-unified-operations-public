@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend the Person search report with your own data
+title: Extend the Person search report
 description: This topic walks you through the process of extending the Person search report for Microsoft Dynamics 365 for Finance and Operations.
 author: rschloma
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Extend the Person search report with your own data (Customer or ISV)
+# Extend the Person search report
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get access to Dynamics AX 2012 through a Cloud Service Provider
+title: Download AX 2012 if you purchased Finance and Operations through a Cloud Solution Provider
 description: Customers who have purchased Finance and Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics AX 2012 R3 from CustomerSource. 
 author: margoc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Information for customers who purchased Finance and Operations through a Cloud Service Provider
+# Download AX 2012 if you purchased Finance and Operations through a Cloud Solution Provider
 
 [!include [banner](../includes/banner.md)]
 

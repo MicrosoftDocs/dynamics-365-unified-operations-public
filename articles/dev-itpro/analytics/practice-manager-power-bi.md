@@ -47,7 +47,6 @@ All the amounts in the content are shown in the system currency. You can set the
 
 The **Practice manager** Power BI content is shown in the **Project management** workspace.
 
-
 ## Reports that are included in the Power BI content
 
 The following table provides details about the metrics that are found on each report page in the **Practice manager** Power BI content.
@@ -90,8 +89,7 @@ The following sections describe the aggregate measurements that are used in each
 
 | Key aggregate measurement | Field                                             | Description |
 |---------------------------|---------------------------------------------------|-------------|
-| Number of projects        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | The count of available projects. |
-
+| Number of projects        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | The count of available projects. |
 
 ### Entity: ProjectAccountingCube\_Forecasts
 **Data source:** ProjTransBudget
@@ -114,17 +112,15 @@ The following sections describe the aggregate measurements that are used in each
 
 | Key aggregate measurement    | Field | Description |
 |------------------------------|-------|-------------|
-| Cost performance index       | ProjectAccountingCube\_Projects[Earned value] ÷ ProjectAccountingCube\_Projects[Total actual cost of completed tasks] | The calculation of the total earned value divided by the total actual cost. |
-| Schedule performance index   | ProjectAccountingCube\_Projects[Earned value] ÷ ProjectAccountingCube\_Projects[Total planned cost of completed tasks] | The calculation of the total earned value divided by the total planned cost. |
-| Percentage of work completed | Percentage of work completed = ProjectAccountingCube\_Projects[Total actual cost of completed tasks] ÷ (ProjectAccountingCube\_Projects[Total actual cost of completed tasks] + ProjectAccountingCube\_Projects[Total planned cost of project] – ProjectAccountingCube\_Projects[Total planned cost of completed tasks]) | The total percentage of completed work, based on the total actual cost of completed tasks and the planned cost of the project. |
-| Actual billable hours ratio  | ProjectAccountingCube\_Projects[Project total actual billable utilized hours] ÷ (ProjectAccountingCube\_Projects[Project total actual billable utilized hours] + ProjectAccountingCube\_Projects[Project total actual billable burden hours]) | The total actual billable hours, based on the utilized hours and the burden hours. |
-| Earned value                 | ProjectAccountingCube\_Projects[Total planned cost of project] × ProjectAccountingCube\_Projects[Percentage of work completed] | The total planned cost multiplied by the percentage of completed work. |
+| Cost performance index       | ProjectAccountingCube\_Projects\[Earned value\] ÷ ProjectAccountingCube\_Projects\[Total actual cost of completed tasks\] | The calculation of the total earned value divided by the total actual cost. |
+| Schedule performance index   | ProjectAccountingCube\_Projects\[Earned value\] ÷ ProjectAccountingCube\_Projects\[Total planned cost of completed tasks\] | The calculation of the total earned value divided by the total planned cost. |
+| Percentage of work completed | Percentage of work completed = ProjectAccountingCube\_Projects\[Total actual cost of completed tasks\] ÷ (ProjectAccountingCube\_Projects\[Total actual cost of completed tasks\] + ProjectAccountingCube\_Projects\[Total planned cost of project\] – ProjectAccountingCube\_Projects\[Total planned cost of completed tasks\]) | The total percentage of completed work, based on the total actual cost of completed tasks and the planned cost of the project. |
+| Actual billable hours ratio  | ProjectAccountingCube\_Projects\[Project total actual billable utilized hours\] ÷ (ProjectAccountingCube\_Projects\[Project total actual billable utilized hours\] + ProjectAccountingCube\_Projects\[Project total actual billable burden hours\]) | The total actual billable hours, based on the utilized hours and the burden hours. |
+| Earned value                 | ProjectAccountingCube\_Projects\[Total planned cost of project\] × ProjectAccountingCube\_Projects\[Percentage of work completed\] | The total planned cost multiplied by the percentage of completed work. |
 
 ### Entity: ProjectAccountingCube\_TotalEstimatedCosts 
 **Data source:** ProjTable
 
-
-|    Key aggregate measurement    |        Field        |                                          Description                                           |
-|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
+| Key aggregate measurement       | Field               | Description |
+|---------------------------------|---------------------|-------------|
 | Completed activity planned cost | Sum(TotalCostPrice) | The total cost price in estimates for all project transaction types that have completed tasks. |
-

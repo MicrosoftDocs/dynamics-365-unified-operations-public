@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add customer preference data to a channel database
+title: Add customer preference data to channel databases
 description: This tutorial shows how to add the RetailCustPreferences table to the commerce runtime (CRT) for the retail channel, and how to create a subjob to move the data in the new table to the channel database.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,9 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Add customer preference data to a channel database
+# Add customer preference data to channel databases
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
 
 This tutorial shows how to add the RetailCustPreferences table to the commerce runtime (CRT) for the retail channel, and how to create a subjob to move the data in the new table to the channel database.
 
@@ -100,8 +103,4 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
 16. Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler job**.
 17. On the **Scheduler job** page, click **1010** to select the “Customers” job.
 18. On the **Subjobs** tab, click **New**, and then enter **RetailCustPreference** as the subjob number. Click **Save**.
-19. On the <strong>Retail channel schema</strong> page, select <strong>Dynamics 365 for Retail **as the schema name, and then click **Generate queries</strong>.
-
-
-
-
+19. On the <strong>Retail channel schema</strong> page, select **Dynamics 365 for Retail** as the schema name, and then click **Generate queries**.

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Application
+title: Application module
 description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it. Each application consists of pages, actions, data queries and logic that glue them together. An application is primarily described with a declarative metadata system, and can have an accompanying imperative extension model. &lt;br&gt;
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Application 
+# Application module
 
 [!include [banner](../../../../includes/banner.md)]
 

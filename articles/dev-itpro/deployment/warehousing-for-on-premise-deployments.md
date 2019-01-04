@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Warehousing for on-premises deployment
+title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: MarkusFogelberg
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 
 ---
-# Warehousing for on-premises deployments
+# Configure the Warehousing app for on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
@@ -92,7 +92,7 @@ To enable Dynamics 365 for Finance and Operations to use your AD FS application,
 
 ## Certificates 
 
-Make sure that the devices with the app installed have the right certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device. For more information, see [Create and export a self-signed
+Make sure that the devices with the app installed have the correct certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device by importing star(AX) and AD FS to the trusted route of the computer account/user account. For more information, see [Create and export a self-signed
 certificate](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx).
 
 ## Configure the application

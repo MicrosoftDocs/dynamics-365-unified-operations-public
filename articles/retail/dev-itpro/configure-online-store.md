@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure an online store
+title: Configure online stores
 description: This article provides links to topics that will help you centrally configure and manage an online store.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Configure an online store
+# Configure online stores
 
 [!include [banner](../includes/banner.md)]
 

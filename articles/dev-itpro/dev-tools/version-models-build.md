@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Version models in the automated build
+title: Update model versions in the automated build
 description: The topic explains how you can update the models in a source package and deployable package of the build output with the version of the build that produced them.
 author: jorisdg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Version models in the automated build
+# Update model versions in the automated build
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,10 +56,10 @@ In the client, follow these steps to find the version numbers of models that are
 All version numbers are in .NET assembly format. They consist of four numbers that are separated by a dot (.), such as **1.2.3.4**.
 
 ## The purpose of model versioning
-As code is updated, the build is used to produce new packages that can be deployed to environments. Microsoft Visual Studio Team Services (VSTS) tracks the changes that have been included in each build since the previous build. When the version number of the build is included in the models that are produced, it provides end-to-end traceability of the code changes that are available in a specific environment. You can find the build number and then review the changes that are included in that build in VSTS. For customers and partners that use builds on different branches, or that use different build definitions for nightly builds, gated check-in builds, or deployment builds, each build can have a different versioning scheme. This approach helps differentiate the model metadata in the deployable packages and tie them back to their originating build definition.
+As code is updated, the build is used to produce new packages that can be deployed to environments. Microsoft Azure DevOps tracks the changes that have been included in each build since the previous build. When the version number of the build is included in the models that are produced, it provides end-to-end traceability of the code changes that are available in a specific environment. You can find the build number and then review the changes that are included in that build in Azure DevOps. For customers and partners that use builds on different branches, or that use different build definitions for nightly builds, gated check-in builds, or deployment builds, each build can have a different versioning scheme. This approach helps differentiate the model metadata in the deployable packages and tie them back to their originating build definition.
 
 ## Setting up versioning
-For build definitions that are created by Platform update 6 or newer deployments, the task to include build version in models is automatically added and active. The default build number of a new build definition in VSTS consists of the year, month, and day, and the incremental number of the build for that day. For more information about build numbers in VSTS, and the options that are available, see [Build definition options](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) on the Microsoft Visual Studio docs site.
+For build definitions that are created by Platform update 6 or newer deployments, the task to include build version in models is automatically added and active. The default build number of a new build definition in Azure DevOps consists of the year, month, and day, and the incremental number of the build for that day. For more information about build numbers in Azure DevOps, and the options that are available, see [Build definition options](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) on the Microsoft Visual Studio docs site.
 
 The automated build will apply the build version number to the models that are built.
 
@@ -78,7 +78,7 @@ For build definitions that were created before Platform update 6, a new task mus
 > [!NOTE]
 > This feature can be added to a build definition only after the build virtual machine (VM) has been updated to Platform update 6 or later.
 
-1. In VSTS, on the **Build & Release** page, under **Builds**, on the **All Definitions** tab, find your build definition. 
+1. In Azure DevOps, on the **Build & Release** page, under **Builds**, on the **All Definitions** tab, find your build definition. 
 1. Click the ellipsis (…), and then click **Edit**.
 
     ![Edit the build definition](media/builddef_edit.png)

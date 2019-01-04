@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Multi-Lookup
+title: Multi-Lookup module
 description: Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Multi-Lookup 
+# Multi-Lookup module
 
 [!include [banner](../../../../includes/banner.md)]
 

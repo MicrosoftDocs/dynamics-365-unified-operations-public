@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormReferenceControl to FormStringControl
+title: F classes (FormReferenceControl to FormStringControl)
 description: API reference for classes from FormReferenceControl to FormStringControl.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormReferenceControl to FormStringControl
+# F classes (FormReferenceControl to FormStringControl)
 
 [!include [banner](../includes/banner.md)]
 

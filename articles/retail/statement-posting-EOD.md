@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Improvements to statement posting
+title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: josaw1
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# Improvements to statement posting
+# Improvements to statement posting functionality
 
 [!include[banner](includes/banner.md)]
 
@@ -62,11 +62,12 @@ As part of the improvements to the statement posting feature, three new paramete
 
 Additionally, the **Maximum number of parallel statement posting** field has been introduced on the **Batch processing** FastTab. This field defines the number of batch tasks should be run at the same time. Currently, you must manually set the value of this field.
 
-Also, with the new posting process, it is required to define a **Gift card product**  on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page. This is true even if no Gift cards are used by the organization. 
+Also, with the new posting process, it is required to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page. This is true even if no Gift cards are used by the organization.
 
 Note that all settings and parameters that are related to statement postings, and that are defined on Retail stores and on the **Retail parameters** page, are applicable to the improved statement posting feature.
 
 ## Processing
+
 Statements can be calculated and posted in batch using the menu items **Calculate statements in batch** and **Post statements in batch**. Alternatively, statements can be manually calculated and posted by using the **Retail statements** menu item that the improved statement posting feature provides.
 
 The process and steps for calculating and posting statements in a batch are the same as they were in the legacy statement posting feature. However, significant improvements have been made in the core back-end processing of the statements. These improvements make the process more resilient, and provide for better visibility into the states and error information. Therefore, users can address the root cause of errors and then continue the posting process without causing data corruption and without causing data fixes to be required.
@@ -74,6 +75,7 @@ The process and steps for calculating and posting statements in a batch are the 
 The following sections describe some of the major improvements for the statement posting feature that appear in the user interface for retail statements and posted statements.
 
 ### Status details
+
 A new state model has been introduced in the statement posting routine across the calculation and posting processes.
 
 The following table describes the various states and their order during the calculation process.
@@ -112,9 +114,11 @@ Every state in the preceding tables is independent in nature, and a hierarchical
 Additionally, the header of the second and third sections shows the overall status of the relevant process.
 
 ### Event logs
+
 A statement goes through various operations (for example, Create, Calculate, Clear, and Post), and multiple instances of the same operation might be called during the statement's lifecycle. For example, after a statement is created and calculated, a user can clear the statement and calculate it again. The **Event logs** button in the **Execution details** group of the statement provides a complete audit trail of the various operations that were called on a statement, together with information about when those operations were called.
 
 ### Aggregated transactions
+
 During the posting process, the sales transactions are aggregated based on the configuration. These aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. You can view the aggregated transactions by using the **Aggregated transactions** button in the **Execution details** group of the statement.
 
 The **Sales order detail** tab of an aggregated transaction shows the following information:
@@ -139,11 +143,13 @@ The aggregated transaction view provides the following benefits:
 - Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
 
 ### Journal vouchers
+
 The **Journal vouchers** button in the **Execution details** group of the statement shows all the various voucher transactions that are created for a statement, and that are related to discounts, income/expense accounts, gift cards, and so on.
 
 Currently, the program shows this data only for posted statements.
 
 ### Payment journals
+
 The **Payment journals** button in the **Execution details** group of the statement shows all the various payment journals that are created for a statement.
 
 Currently, the program shows this data only for posted statements.

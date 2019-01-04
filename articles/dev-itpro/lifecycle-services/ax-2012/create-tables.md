@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create tables
+title: Create tables by using the Application Object Tree (AOT)
 description: This topic provides information about how to use the Application Object Tree (AOT) to create tables in which to store data.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create tables
+# Create tables by using the Application Object Tree (AOT)
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash registers for France
+title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
 
 ---
-# Cash registers for France
+# Cash register functionality for France
 
 [!include[banner](../includes/banner.md)]
 

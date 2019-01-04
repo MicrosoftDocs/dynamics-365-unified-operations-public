@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Product search and customer search in POS
+title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
-# Overview of product and customer search in Point of Sale
+# Product search and customer search in the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 
@@ -70,7 +70,7 @@ The experience for local product searches is now more user-friendly. The followi
 - Retailers can now configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
 
-![Product suggestions](./media/Productsuggestions.png "Product suggestions")
+    ![Product suggestions](./media/Productsuggestions.png "Product suggestions")
 
 ## Customer search
 

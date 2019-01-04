@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Split generated files based on file size and content quantity
+title: Split generated XML files based on file size and content quantity
 description: This topic provides information about how to split generated files based on the file size and content item quantity.
 author: NickSelin
 manager: AnnBe
@@ -54,4 +54,3 @@ To learn more about this feature, play the **ER Split XML files based on the fil
 [Electronic reporting destinations](electronic-reporting-destinations.md)
 
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
-

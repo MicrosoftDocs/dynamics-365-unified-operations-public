@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Generate a fixed asset transfer between warehouses document (Lithuania)
+title: LT-00003 Generate a fixed asset transfer between warehouses document
 description: If your organization needs to move a fixed asset from one department to another and the two departments are not in the same location, the transfer must be verified by a packing slip. 
 author: KimANelson
 manager: AnnBe 
-ms.date: 02/17/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: VehicleModelTable_W, LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, AssetWarehouseTransfer, HcmWorkerLookUp, SysQueryForm, LtAssetPackingSlip, TransportationDocument, LogisticsPostalAddressLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: twheeloc
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Lithuania
 # ms.search.industry: 
 ms.author: knelson
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Generate a fixed asset transfer between warehouses document (Lithuania)
+# LT-00003 Generate a fixed asset transfer between warehouses document
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

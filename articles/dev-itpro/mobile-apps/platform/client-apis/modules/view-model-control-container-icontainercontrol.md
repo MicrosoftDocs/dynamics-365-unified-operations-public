@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Container
+title: Container module
 description: A container control can contain any number of controls.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Container 
+# Container module
 
 [!include [banner](../../../../includes/banner.md)]
 

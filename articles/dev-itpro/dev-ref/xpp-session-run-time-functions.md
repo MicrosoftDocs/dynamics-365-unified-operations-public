@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ session run-time functions
+title: X++ session runtime functions
 description: This topic describes the session run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ session run-time functions
+# X++ session runtime functions
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,10 +46,6 @@ Retrieves the extension that is used for the current company.
 ### Return value
 
 The extension for the current company.
-
-### Remarks
-
-Use this method to avoid a call to the server tier. The alternative is the **company** method of the **Application** class, which does call the server tier.
 
 ### Example
 

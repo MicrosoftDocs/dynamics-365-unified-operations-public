@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up VAT ID
+title: EUR-00015 Set up VAT ID
 description: This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. 
 author: v-oloski
 manager: AnnBe 
-ms.date: 10/25/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up VAT ID
+# EUR-00015 Set up VAT ID
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

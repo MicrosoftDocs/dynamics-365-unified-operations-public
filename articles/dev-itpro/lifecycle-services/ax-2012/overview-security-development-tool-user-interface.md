@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Security Development Tool (AX 2012)
+title: Security Development Tool
 description: This topic describes the user interface of the Security Development Tool.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Security Development Tool (AX 2012)
+# Security Development Tool
 
 [!include [banner](../../includes/banner.md)]
 

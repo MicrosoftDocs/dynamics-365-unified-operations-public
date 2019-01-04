@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Element usage
+title: Commands for determining how elements are used
 description: This article reviews the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application. 
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Element usage
+# Commands for determining how elements are used
 
 [!include [banner](../includes/banner.md)]
 

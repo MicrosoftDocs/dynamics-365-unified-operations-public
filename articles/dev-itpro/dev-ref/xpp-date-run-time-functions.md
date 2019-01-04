@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ date run-time functions
+title: X++ date runtime functions
 description: This topic describes the date run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ date run-time functions
+# X++ date runtime functions
 
 [!include [banner](../includes/banner.md)]
 

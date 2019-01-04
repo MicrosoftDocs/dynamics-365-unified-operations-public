@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrades, updates, and hotfixes
+title: Upgrades, updates, and hotfixes home page
 description: These topics describe the process for upgrading, updating, and applying hotfixes to your Dynamics 365 for Finance and Operations environment and data.
 author: margoc
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Upgrades, updates, and hotfixes
+# Upgrades, updates, and hotfixes home page
 
 [!include [banner](../includes/banner.md)]
 

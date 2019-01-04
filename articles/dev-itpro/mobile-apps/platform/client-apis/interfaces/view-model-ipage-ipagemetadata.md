@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageMetadata
+title: PageMetadata type
 description: PageMetadata type
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageMetadata Type
+# PageMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

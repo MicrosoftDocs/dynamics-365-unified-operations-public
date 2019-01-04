@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Models
+title: Models and packages
 description: This article describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
 author: robadawy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Models
+# Models and packages
 
 [!include [banner](../includes/banner.md)]
 

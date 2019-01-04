@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development tools overview
+title: Development tools in Visual Studio
 description: Visual Studio 2015 is the exclusive integrated development environment (IDE) for development.
 author: robadawy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development tools overview
+# Development tools in Visual Studio
 
 [!include [banner](../includes/banner.md)]
 

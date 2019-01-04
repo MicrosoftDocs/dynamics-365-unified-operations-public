@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prevent discounts for retail products
+title: Options for preventing discounts for retail products
 description: There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.
 author: jblucher
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Prevent discounts for retail products
+# Options for preventing discounts for retail products
 
 [!include [banner](includes/banner.md)]
 
@@ -38,10 +38,10 @@ There are various reasons why retailers may want to prevent some products from b
 
 The following options, which can be found on the **Retail** tab of released products, will allow the product to be configured to prevent all or manual discounts. The settings can also be specified at the category level from the retail category hierarchy.
 
-**Prevent all discounts**: Select this option to prevent all types of discounts from being applied to this product. This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.
+- **Prevent all discounts** – Select this option to prevent all types of discounts from being applied to this product. This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.
+- **Prevent manual discounts** – Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user. Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.
 
-**Prevent manual discounts**: Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user. Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.
+> [!NOTE]
+> These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.
 
-**Note**: These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.  
-
-[![prevent discounts field](./media/prevent discounts.png)](./media/prevent discounts.png)
+[![prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)

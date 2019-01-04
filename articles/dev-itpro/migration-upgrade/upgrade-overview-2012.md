@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations 
+title: Upgrade from AX 2012 to Finance and Operations 
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations
+# Upgrade from AX 2012 to Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ To perform Analyze activities before you purchase Finance and Operations, you ne
 
 If you have an existing LCS project for AX 2012, you must still sign up for an additional LCS project for Finance and Operations.
 
-For information about how to get an LCS trial project for customers, go to https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
+For information about how to get an LCS trial project for customers, go to https://go.microsoft.com/fwlink/?LinkId=2017742&clcid=0x409.
 
 For information about how to get an LCS partner project, go to https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: K Classes
+title: K classes
 description: System API classes that start with the letter K.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# K Classes
+# K classes
 
 [!include [banner](../includes/banner.md)]
 

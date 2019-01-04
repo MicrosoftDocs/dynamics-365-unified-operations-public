@@ -5,7 +5,7 @@ title: X++ data selection and manipulation
 description: This topic describes the support for data selection and manipulation in the X++ language.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -544,7 +544,7 @@ A **while select** statement is used to handle data. It's the most widely used f
 
 ### while select example
 
-The following example prints the name reference and telephone number of every customer in the CustTable table whose account number is within a specified range.
+The following example prints the account number and sales group of every customer in the CustTable table whose account number is within a specified range.
 
     static void JobPrintTel(Args _args)
     {

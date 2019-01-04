@@ -36,30 +36,30 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 
-Embedded business intelligence
-------------------------------
+## Embedded business intelligence
+
 
 The term embedded business intelligence (BI) refers to experiences that use highly intuitive and fluid visualizations to provide insights that are relevant to a task, so that user is more informed and can make better choices. For example, a rental clerk in a car rental organization views the previous rental preferences of a customer when the customer makes a reservation. In this case, the clerk can see the vehicles and colors that the customer has selected in the past, and therefore can offer options that are likely to please the customer. Embedded BI is used throughout the user interface. At a technical level, building rich visualizations requires a powerful charting framework, and also an efficient way to access aggregated data that enables the display of fluid visualizations. Finance and Operations meets both of these requirements, so that application developers can build rich and deep embedded BI–enabled scenarios.
 
 ## Where are the perspectives?
 Perspectives were a concept that was designed to present data from a reporting point of view. Perspectives have evolved over the past three releases for analytical scenarios.
 
-| Version                               | Description                                                                                                                                    |
-|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microsoft Dynamics AX 4.0             | Perspectives provided the ability to model ad-hoc reporting models.                                                                            |
-| Microsoft Dynamics AX 2009            | Perspectives added support for modeling analysis cubes.                                                                                        |
-| Microsoft Dynamics AX 2012            | Perspective modeling capabilities were improved through richer modeling support and deeper integration with the Application Object Tree (AOT). |
+| Version                                           | Description                                                                                                                                    |
+|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microsoft Dynamics AX 4.0                         | Perspectives provided the ability to model ad-hoc reporting models.                                                                            |
+| Microsoft Dynamics AX 2009                        | Perspectives added support for modeling analysis cubes.                                                                                        |
+| Microsoft Dynamics AX 2012                        | Perspective modeling capabilities were improved through richer modeling support and deeper integration with the Application Object Tree (AOT). |
 | Microsoft Dynamics 365 for Finance and Operations | Perspectives are a first-class citizen in the data access framework. They can be consumed via X++ or C\# code, and also in a model-driven way. |
 
 In Finance and Operations, perspectives reside within the analytics collection in the Application Explorer. Perspectives have undergone a major upgrade and now incorporate the following improvements:
 
--   You can model new aggregate models and customize existing aggregate models as a star schema within Application Explorer.
--   Modeling for key performance indicators (KPIs) in Application Explorer is supported.
--   You can model data entities by referencing aggregate models. Data entities can be exposed to external reporting tools, such as PowerBI, as OData endpoints. Data entities can also be consumed within Microsoft Dynamics 365 for Finance and Operations.
--   You can consume aggregate models directly in the programming model by using X++ or C\# code. You no longer have to write MDX code to consume aggregate data.
--   Aggregate data is a first-class citizen within Finance and Operations data access. Its behavior is similar to the behavior of detailed data. For example, aggregate data can be enriched with extended data types (EDTs) and enumerations, and you can help secure them by using Finance and Operations security concepts.
--   The aggregate data infrastructure is maintained completely within the environment. By default, aggregate measurements are real-time. As a system administrator, you can manage the latency of aggregate data and controls based on available resources and business needs, without having to deal with the complexity of scheduling and external tools.
--   Finance and Operations perspectives enable an easier and more predictable modeling experience that takes advantage of business concepts that are already available throughout Finance and Operations. This lets developers reuse existing business models, and makes the modeling process quicker and easier.
+- You can model new aggregate models and customize existing aggregate models as a star schema within Application Explorer.
+- Modeling for key performance indicators (KPIs) in Application Explorer is supported.
+- You can model data entities by referencing aggregate models. Data entities can be exposed to external reporting tools, such as PowerBI, as OData endpoints. Data entities can also be consumed within Microsoft Dynamics 365 for Finance and Operations.
+- You can consume aggregate models directly in the programming model by using X++ or C\# code. You no longer have to write MDX code to consume aggregate data.
+- Aggregate data is a first-class citizen within Finance and Operations data access. Its behavior is similar to the behavior of detailed data. For example, aggregate data can be enriched with extended data types (EDTs) and enumerations, and you can help secure them by using Finance and Operations security concepts.
+- The aggregate data infrastructure is maintained completely within the environment. By default, aggregate measurements are real-time. As a system administrator, you can manage the latency of aggregate data and controls based on available resources and business needs, without having to deal with the complexity of scheduling and external tools.
+- Finance and Operations perspectives enable an easier and more predictable modeling experience that takes advantage of business concepts that are already available throughout Finance and Operations. This lets developers reuse existing business models, and makes the modeling process quicker and easier.
 
 Projects that were generated by using perspectives from Dynamics AX 2012 and later can be upgraded to Finance and Operations metadata equivalents.
 
@@ -80,7 +80,3 @@ In Finance and Operations, aggregate measurements are deployed to Microsoft SQL 
 
 ## KPI modeling and customization
 In AX 2012 and earlier versions, KPIs and business indicators had to be modeled by using native SQL Server development tools. Although users could pin a KPI or business indicator to a Role Center by using the **Business Overview** Web Part, they could not modify a KPI definition, such as the goal. In Finance and Operations, users can use a rich client form to modify a KPI definition that was built and shipped by a developer. Users can also define new KPIs by using the aggregate data that is contained in aggregate measurements. A developer can model a KPI definition in Microsoft Visual Studio and ship it to a customer, either as a project or together with an independent software vendor (ISV) solution. After a KPI is defined, users can customize it at run time.
-
-
-
-

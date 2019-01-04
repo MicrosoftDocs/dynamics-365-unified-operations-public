@@ -3,7 +3,7 @@
  
 title: Add variant products to purchase orders using variant weights
 description: This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

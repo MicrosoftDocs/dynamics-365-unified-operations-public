@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Leave and absence management overview
+title: Leave and absence management
 description: This topic provides an overview of the Leave and absence management module. 
 author: ryansandness
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Leave and absence management overview
+# Leave and absence management
 
 [!include [banner](includes/banner.md)]
 
