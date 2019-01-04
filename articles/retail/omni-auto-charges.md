@@ -57,24 +57,83 @@ In order for Advanced Auto-charges to work properly in your POS application envi
 
 The new operations are:
 
-- **Manage charges**
-- **Add header charges**
-- **Add line charges**
-- **Recalculate charges**
+- **Manage charges** - use this operation to allow POS users to view and edit misc charges for the POS transaction that were either added manually or systematically through auto-charges calculations.
+- **Add header charges** - use this operation to give the user the ability to manually add a header level misc charge to any POS sales transaction (and select the charges code to be used).
+- **Add line charges** - use this operation to give the user the ability to manually add a line level misc charge to any POS sales transaction line (and select the charges code to be used).
+- **Recalculate charges** - use this operation to perform a full re-calculation of the charges for the sales transaction.  Any previously user-overwritten auto-charges will be recalculated based on the current cart configuration.  
 
 As with all POS operations, security configurations can be done to require manager approval in order to execute the operation.
 
-## POS auto-charges header charges example
+## Use Case Examples
+The remainder of this documentation will cover some sample use cases to better understand the configuration and usage of auto-charges and misc. charges within the context of Retail channel orders.   Note that these examples will illustrate the behavior of the application when the **Use advanced auto-charges** parameter has been enabled.
+
+### Auto-charges header charges example
+#### Use case scenario description:  
+
+_A retailer wishes to automatically add charges for freight when transactions are created in any Retail channel that require a shipment of products to the customer.  The retailer offers 2 methods of delivery: Ground and Air.   If a customer chooses Ground delivery and the order value is less than $100, the retailer wishes to charge the customer a freight charge of $10.  If the order is over $100 in value and the customer chooses ground shipping, the customer will not be charged any additional freight fees.   If the customer chooses the Air method of delivery, all orders, regardless of their total value will be charged a freight fee of $20.00._
+
+#### Setup and Configuration
+
+#### Sales processing in POS
 
 
-## POS auto-charges line charges example
-
-## POS manual header charges example
-
-## POS manual line charges example
-
-## Editing charges on a POS transaction
+#### Sales processing in call center
 
 
-## Refunding charges on a POS transaction
+#### Sales processing through Ecommerce connector
+
+
+
+### Auto-charges line charges example
+#### Use case scenario description:
+_A retailer wishes to add an additional charge to the customer for setup fees whenever the customer purchases a particular model of computer.  This particular computer requires additional non-optional setup actions that the retailer will perform for the customer.  The retailer has informed customers that there will be an additional fee for this setup.  The retailer prefers to manage the charges related to this fee seperately from the product sales price for finanical reporting purposes.   A setup fee of $19.99 will be charged to the customer whenver this particular computer is purchased in any retail channel._
+
+#### Setup and Configuration
+
+#### Sales processing in POS
+
+
+#### Sales processing in call center
+
+
+#### Sales processing through Ecommerce connector
+
+### Manual header charges example
+  #### Use case scenario description:
+_A retailer is making an exception to normal processes and is offering to provide a special home delivery of products to a particular customer.  The retailer and the customer have agreed that the customer will pay an additional $25 handling fee for this service.  The order taker needs to add this additional fee to the transaction.  Because the fee is a blanket fee and not related to any single product on the order, a header charge will be utilized._
+
+#### Setup and Configuration
+
+#### Sales processing in POS
+
+
+#### Sales processing in call center
+
+
+#### Sales processing through Ecommerce connector
+
+### Manual line charges example
+ #### Use case scenario description:
+_A customer has requested that 2 of the 5 items on their sales order be gift-wrapped. The retailer offers this optional service for a fee of $2.00 per item.  The order taker will need to add these fees to the specific items that need to be gift-wrapped._
+
+#### Setup and Configuration
+
+#### Sales processing in POS
+
+
+#### Sales processing in call center
+
+
+#### Sales processing through Ecommerce connector
+
+## Additional Features
+### Editing charges on a POS sales transaction
+
+### Editing charges on a Call Center sales transaction
+
+### Editing charges on an Ecommerce transaction
+
+### Refunding charges on a POS return transaction
+
+### Refunding charges on a Return Order transaction in HQ
 
