@@ -65,7 +65,7 @@ The new operations are:
 As with all POS operations, security configurations can be done to require manager approval in order to execute the operation.
 
 ## Use Case Examples
-The remainder of this documentation will cover some sample use cases to better understand the configuration and usage of auto-charges and misc. charges within the context of Retail channel orders.   Note that these examples will illustrate the behavior of the application when the **Use advanced auto-charges** parameter has been enabled.
+This section of documentation will cover some sample use cases to better understand the configuration and usage of auto-charges and misc. charges within the context of Retail channel orders.   Note that these examples will illustrate the behavior of the application when the **Use advanced auto-charges** parameter has been enabled.
 
 ### Auto-charges header charges example
 #### Use case scenario description:  
