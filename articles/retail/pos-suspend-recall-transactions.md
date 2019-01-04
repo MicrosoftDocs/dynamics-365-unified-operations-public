@@ -40,25 +40,30 @@ Point of sale (POS) users can suspend in-progress transactions, and then resume 
 ## Configure suspend and resume functionality
 
 ### POS operations
+
 Two [POS operations](pos-operations.md) let the POS support suspend and resume scenarios. You can assign these operations to [button grids](pos-screen-layouts.md) on the transaction page or the welcome page.
 
 - 503: Suspend transaction
 - 504: Recall transaction
 
 ### Receipt template
+
 The POS can be configured to generate a printed slip when a transaction is suspended. That slip can then be used to quickly identify and recall the transaction later.
 
 To enable the POS to print a slip, you must add the **Suspended transaction** receipt format to the store's receipt profile. You can design the receipt format so that it includes or excludes specific details about the transaction. For example, the format can include a barcode to support scanning.
 
 ### Receipt numbering
+
 As for other POS transaction types that generate a printed receipt, you can define a number sequence for suspended transactions in the **Receipt numbering** section of the store's functionality profile.
 
 ### Void when closing shift
+
 You can use the **Void when closing shift** option to require that users either complete or void any suspended transactions before they close their shift. During the **Close shift** operation, the POS will prompt users to either view or void any outstanding suspended transactions.
 
 ## Suspend and resume a transaction
 
 ### Suspend a transaction
+
 Users who have sufficient privileges, and who have a screen layout that includes the **Suspend transaction** operation, can suspend a transaction so that it can be recalled later or on a different register.
 
 Transactions can be suspended only if they do **not** contain the following types of lines:
@@ -69,6 +74,7 @@ Transactions can be suspended only if they do **not** contain the following type
 A suspended transaction doesn't affect sales information or inventory availability information for the store.
 
 ### Resume a suspended transaction
+
 Suspended transactions can be recalled and resumed in the same store by any user who has sufficient privileges, and who also has a layout that includes the **Recall transaction** operation.
 
 To quickly and easily recall a suspended transaction, scan the barcode on the printed slip while you're viewing the list of transactions from the **Recall transaction** operation.
@@ -79,4 +85,5 @@ To quickly and easily recall a suspended transaction, scan the barcode on the pr
 - If you suspend a transaction while the POS is in offline mode, you can recall it in offline mode, provided that the POS wasn't switched back to online mode at any time since you suspended the transaction. When the POS is switched back to online mode, data about suspended transactions is moved to the online database and removed from the offline database. Therefore, the transactions can be resumed only in online mode. If you switch the POS back to offline mode, you won't be able to resume those suspended transaction, because they have already been removed from the offline database.
 
 ### Void a suspended transaction
+
 You can void suspended transactions either by recalling the transaction and then performing the **Void transaction** operation, or by selecting the transaction in the **Recall transaction** list and selecting **Void** on the app bar. Alternatively, the store can be configured to prompt users to void suspended transactions when they close their shift.

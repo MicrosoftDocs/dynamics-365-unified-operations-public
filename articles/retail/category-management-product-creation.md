@@ -59,4 +59,3 @@ Additionally, in the enhanced Retail product category structure, a merchandising
 You can use the new enhanced structure for product properties to select updated product properties that must be pushed to the associated products. On the **Retail product hierarchy** page, on the Action Pane, select **Category**, and then select **Update products** to open the **Update products** dialog box.
 
 ![Update products dialog box](media/NewUpdateProductsEnhancedView.PNG)
-
