@@ -137,3 +137,4 @@ _A customer has requested that 2 of the 5 items on their sales order be gift-wra
 
 ### Refunding charges on a Return Order transaction in HQ
 
+### Configuring POS receipts to show charges
