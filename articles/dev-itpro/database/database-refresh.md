@@ -5,7 +5,7 @@ title: Request sandbox database refreshes
 description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 1/4/2019
+ms.date: 1/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
