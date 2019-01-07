@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: 
+ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
 ms.search.validFrom: 2019-01-01
