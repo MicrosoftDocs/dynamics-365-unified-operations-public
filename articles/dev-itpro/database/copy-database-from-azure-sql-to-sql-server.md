@@ -201,7 +201,7 @@ To switch the environment and use the new database, first stop the following ser
 
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
-To rename the database use the following ALTER DATABASE command:
+To rename the database, use the following ALTER DATABASE command:
 ```
 ALTER DATABASE [your database name] MODIFY NAME = [new database name];
 ```
