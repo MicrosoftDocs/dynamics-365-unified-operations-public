@@ -4,7 +4,7 @@ title: VAT declaration (Russia)
 description: This topic provides information about VAT declaration for Russia.
 author: anasyash
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
