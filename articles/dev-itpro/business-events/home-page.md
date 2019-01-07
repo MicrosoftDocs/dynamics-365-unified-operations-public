@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events home page
-description: Business events happen when a business process gets executed. 
+description: Business events provide a mechanism for external systems to receive notifications from Finance and Operations and hence allowing such applications to take a business action in response to the business event.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/03/2019
