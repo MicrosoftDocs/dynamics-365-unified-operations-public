@@ -77,7 +77,7 @@ The System Administrator account in the target environment (UserId of 'Admin') i
 > [!NOTE]
 > As of October 2018, database refresh requests must be signed off before another refresh of the same environment can be started. This is to support future automation of database movement operations. To sign off, visit your **Environment Details** page and click the **Signoff** button. You can create many database refresh service requests out in to the future, however you must sign off in between each one.
 >
-> Service requests for database refresh **will not be accepted for servicing dates after January 31, 2019**.  After this date, all refresh operations will be performed via the self-service actions outlined above.
+> Service requests for database refresh **will not be accepted for servicing dates after January 31, 2019**. After this date, all refresh operations will be performed using the self-service actions outlined above.
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
@@ -125,7 +125,7 @@ The database refresh process (self-service or via service request) cannot be com
 * Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
 * Apply this package to both the source and target environments to ensure they are both using the latest version.
 
-For help in checking your current version, please watch the [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w) video.
+For instructions about how to determine the version you're using, watch the [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w) video.
 
 ### Incompatible application versions between source and target environments
 The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.  
