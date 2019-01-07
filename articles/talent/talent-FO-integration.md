@@ -59,7 +59,7 @@ For data that resides in Finance and Operations but does not exist in Talent,
 link the two systems together by using **Configure Links** in Talent. For more
 information on configuring links between Talent and Finance and Operations, see: [What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
 
-![](media/e3284e2a58880a2d680b1b22156f3372.png)
+![](media/MapFinancialDimensions.png)
 
 ## Q: Often when I import employees, they go into inactive workers in Finance and Operations. Why?
 
@@ -77,7 +77,7 @@ integration mapping or not.
 With the use of "Advanced query", you can filter and reshape source data before
 passing it into the destination.
 
-![](media/7933e9e7cf373fcdc11a3c716f024b4e.png)
+![](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## Q: Can I specify which fields to send to Finance and Operations for a specific entity?
 
@@ -85,7 +85,7 @@ Fields can be added or removed from the integration task. Not all data fields
 that exist on the CDS for Apps (CDS 2.0) entity will be populated from Core HR.
 Additional data may be populated via PowerApps.
 
-![](media/972f11442c01ea4064e45795382055a9.png)
+![](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## Q: I set up integration as a batch job but Talent lost connection to the destination system. How can I send the same set of changes to the destination system?
 
@@ -150,17 +150,17 @@ project in Finance and Operations. If the task number is 9 in Data Integrator, t
 
 1. Capture the task index from Data Integrator (in our example it is "9".)
 
-![](media/1801a3b66b1ac2b5f344737d0f59cee0.png)
+![](media/CaptureTaskIndex.png)
 
 2. Track the execution time of the project.
 
-![](media/7a18e2f06607a94711e34c81ad754203.png)
+![](media/CaptureTimeOfExecution.png)
 
 3. In Finance and Operations, identify index - 1. In this example, the
 project with suffix "8" and execution time of index "0" project matches with
 the execution time in Step 2.
 
-![](media/18790db37e8d4dfd81590534d899b992.png)
+![](media/IdentifyIndex.png)
 
 ## Q: After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
 
@@ -169,7 +169,7 @@ that the Talent data is updated and available in CDS. This is a near real-time
 sync and can be verified in PowerApps by looking at the data within the data
 entities.
 
-![](media/dbfb351a24b74e60283055598f4e1f1f.png)
+![](media/DataInCDS.png)
 
 If the data is not appearing as expected in CDS, verify that the entity is
 supported in the integration. To include additional data in CDS, a change will be required on the Microsoft side.
@@ -209,7 +209,7 @@ Refresh the data entities in Finance and Operations: **Data management \> Framew
 Parameters \> Entity settings \> Refresh entity list.** This should take a couple
 of minutes to complete, then you should see those mappings. This issue occurs when brand new projects are spun up.
 
-![cid:image002.png\@01D49839.6C126650](media/edf1033809985cfd217308af8d5f98af.png)
+![cid:image002.png\@01D49839.6C126650](media/MissingFieldMapping.png)
 
 
 ## For more information
