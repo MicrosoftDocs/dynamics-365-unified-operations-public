@@ -6,7 +6,6 @@ description: This topic explains how to move a Microsoft Dynamics 365 for Financ
 author: laneswenka
 manager: AnnBe
 ms.date: 10/26/2018
-
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
