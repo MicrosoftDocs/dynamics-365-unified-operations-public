@@ -2,18 +2,7 @@
 # required metadata
 
 title: Business events home page
-description: Business events happen when a business process gets executed. As part of
-executing a business process, users participating in the business process take
-business actions to complete tasks that make up the business process. In
-Dynamics 365 for Finance and Operations, a business action taken by a user can
-be a workflow action or a non-workflow action. Approving a purchase requisition
-is an example of a workflow action while, confirming a purchase order is a
-non-workflow action. However, both actions are eligible to generate business
-events which could be of interest to external systems for integration and
-notification use cases. Hence, business events in Finance and Operations enables
-a mechanism for external systems receive business events and hence allowing such
-applications to take a business action in response to the business event.
-
+description: Business events happen when a business process gets executed. 
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/03/2019
