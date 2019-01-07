@@ -5,7 +5,7 @@ title: Install the Document Routing Agent to enable network printing
 description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: TJVass
 manager: AnnBe
-ms.date: 09/11/2018
+ms.date: 01/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -128,7 +128,7 @@ The Document Routing Agent now supports running in the background as a service. 
 
 ### Do I need to update credentials or refresh Azure authentication tokens on a recurring basis?
 
-Yes. The Azure Active Directory token must be refreshed every 90 days.  Failing to do so will prevent the DRA from being able to authenticate and retrieve printing instructions from D365F&O applications.
+Yes. The Azure Active Directory token must be refreshed every 90 days. Failing to do so will prevent the DRA from being able to authenticate and retrieve printing instructions from Dynamics 365 for Finance and Operations applications.
 
 ### Will Microsoft add support for Microsoft Windows Server 2008 servers?
 
