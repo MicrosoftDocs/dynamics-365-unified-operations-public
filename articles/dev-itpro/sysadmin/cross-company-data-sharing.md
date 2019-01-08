@@ -5,7 +5,7 @@ title: Cross-company data sharing
 description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment.
 author: aprilolson
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -89,9 +89,8 @@ Cross-company data sharing isn't supported for the following scenarios:
 -   Complex scenarios, such as replication of subtype/supertype tables or tables that have date effectivity rules
 -   Master data management
 
-##Customer and Vendor master data sharing (preview)
-Customer and Vendor master data sharing feature enables sharing of customers, vendors across multiple companies. This feature is available for customers on version 8.0 and later on a restricted basis. If you would like to be included in the preview program, complete the survey below and contact product support.
-https://aka.ms/MSDYN365FODataSharing
+## Customer and vendor master data sharing (preview)
+Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. This feature is available for customers on version 8.0 and later on a restricted basis. If you would like to be included in the preview program for this feature, complete the following survey and contact product support, [Data sharing application](https://aka.ms/MSDYN365FODataSharing).
 
 ## Download a cross-company data sharing template from LCS
 1.  Sign in to LCS.
