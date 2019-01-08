@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events in Microsoft Flow
-description: Business events are available for consumption in Microsoft Flow via the Finance and Operations connector.
+description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/08/2019
@@ -31,38 +31,35 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-Business events are available for consumption in Microsoft Flow via the Finance and Operations connector. The Finance and Operations connector has a trigger called **when a business event happens** which can be used to subscribe to any of the business events available in the target Finance and Operations instance.
+Business events can be consumed in Microsoft Flow via the Microsoft Finance and Operations connector. The Finance and Operations connector has a trigger that is named **when a business event happens**. This trigger can be used to subscribe to any of the business events that are available in the target instance of Microsoft Dynamics 365 for Finance and Operations.
 
 ## Prerequisite
 
-Understanding of business events is important which is explained in the [Business events](home-page.md) documentation.
+It's important that you understand business events. For more information, see the [Business events](home-page.md) documentation.
 
-> [!Important]
+> [!IMPORTANT]
+> - The Finance and Operations connector for Microsoft Flow is in preview.
+> - The **when a business event happens** trigger works only with Finance and Operations instances that run Platform update 24 or later, because business events aren't available in earlier platform releases.
 
-> -   The Finance and Operations connector for Flow is in preview.
->
-> -   The trigger **when a business event happens** will only work with Finance and Operations instances that are running platform update 24 or later since business events are not available prior to that platform release.
+## Subscribing to business events and unsubscribing from them
 
-## Subscribing and un-subscribing a business event
-Once the trigger **when a business event happens** is added to the Flow, the following information must be provided.
+After the **when a business event happens** trigger is added to a flow, the following information must be provided:
 
--   **Instance** – This is the URL of the Finance and Operations instance where business events happen.
+- **Instance** – Specify the URL of the Finance and Operations instance where business events occur.
+- **Category** – Select the category of business events. The **Business event** field then shows the business events in that category.
+- **Business event** – The catalog of business events in the selected category.
+- **Legal entity** – Specify the legal entity where the business event is being subscribed to. By default, this field is blank. When the field is blank, the business event is subscribed to in **all** legal entities. In this case, the flow will be triggered when the business event occurs in any legal entity in Finance and Operations.
 
--   **Category** – This is the category of business events. Selecting a category will show business events from the chosen category in the following field.
+When the flow is saved, it's automatically subscribed to the selected business event. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
 
--   **Business event** – This shows the catalog of business events in the chosen category.
+If either the trigger or the flow is deleted, the business event is automatically unsubscribed from.
 
--   **Legal entity** – This can be used to specify a legal entity in which the business event is being subscribed. By default, there is no selection which implies **all** legal entities. Subscribing to a business event in all legal entities will trigger the Flow when the business event happens in any of the legal entities in Finance and Operations.
+Multiple flows can subscribe to the same business event in different legal entities.
 
-When the Flow is saved, the Flow is automatically subscribed to the selected business event. The required endpoint set up and the activation of the corresponding business event is completed as part of the subscription.
+## Other ways to consume business events in Microsoft Flow
 
-When the trigger is deleted or the Flow is deleted, the business event is automatically unsubscribed.
+The previous section explains how you can subscribe to business events directly from Microsoft Flow by using the trigger in the Finance and Operations connector. However, you can also consume business events in Microsoft Flow from Microsoft Azure Event Grid, by using the [Event Grid connector for Microsoft Flow](https://docs.microsoft.com/connectors/azureeventgrid/).
 
-Multiple Flows can subscribe to the same business event in different legal entities.
+Event Grid might be a viable approach for consuming business events in Microsoft Flow if it's already being used for other integrations in an implementation. If a business event in the same legal entity must trigger multiple flows, you should consider consuming the business event from Event Grid.
 
-## Alternate ways to consume business events in Flow
-In addition to directly subscribing to business events from Flow using the trigger in the Finance and Operations connector, one can also consume business events from Azure event grid in Flow using the [event grid connector for Flow](https://docs.microsoft.com/en-us/connectors/azureeventgrid/).
-
-If Azure event grid is already in use for other integrations in an implementation, then using event grid to also consume business events in Flow could be a viable option. If a business event in the same legal entity needs to trigger multiple Flows then, consuming the business event from Azure event grid is an approach to consider.
-
-This approach is applicable to any messaging/event platform used as an endpoint for business events provided it has a connector available in Flow.
+This approach is applicable to any messaging or event platform that is used as an endpoint for business events, provided that a connector is available for it in Microsoft Flow.
