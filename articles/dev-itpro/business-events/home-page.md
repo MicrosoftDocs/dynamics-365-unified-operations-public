@@ -37,7 +37,7 @@ Business events happen when a business process gets executed. As part of executi
 
 In Dynamics 365 for Finance and Operations, a business action taken by a user can be a workflow action or a non-workflow action. Approving a purchase requisition is an example of a workflow action, while confirming a purchase order is a non-workflow action. However, both actions are eligible to generate business events which could be of interest to external systems for integration and notification use cases. 
 
-## Pre-requisites
+## Prerequisites
 
 Since business events can be consumed via Microsoft Flow or Azure Service Bus or Azure Event Grid, customers must bring their subscriptions to the corresponding asset which would then help consume business events.
 
@@ -96,11 +96,11 @@ The Azure-based endpoints must be in the customers’ Azure subscription. As an 
 
 ## Azure service bus queue
 
-Clicking **New** starts the experience to create a new endpoint. To create an Azure service bus queue endpoint, select the appropriate endpoint type as shown.
+Clicking **New** starts the experience to create a new endpoint. To create an Azure service bus queue endpoint, select the appropriate endpoint type, as shown.
 
 ![Business events new endpoint](../media/businesseventsnewendpoint1.png)
 
-Click **Next** to configure the endpoint name and Azure service bus queue name. In addition, Azure key vault must be set up to provide the necessary secret to the Azure messaging resource. Azure active directory application ID and application secret must also be set up as shown below.
+Click **Next** to configure the endpoint name and Azure service bus queue name. In addition, Azure key vault must be set up to provide the necessary secret to the Azure messaging resource. Azure active directory application ID and application secret must also be set up, as shown below.
 
 ![Business events new endpoint](../media/businesseventsnewendpoint2.png)
 
