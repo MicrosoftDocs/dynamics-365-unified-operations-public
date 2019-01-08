@@ -5,7 +5,7 @@ title: Vehicles and realty as fixed assets (Russia)
 description: This topic provides information about setting up and using vehicles and realty as fixed assets for Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/28/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
