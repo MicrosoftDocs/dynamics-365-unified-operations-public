@@ -89,6 +89,10 @@ Cross-company data sharing isn't supported for the following scenarios:
 -   Complex scenarios, such as replication of subtype/supertype tables or tables that have date effectivity rules
 -   Master data management
 
+##Customer and Vendor master data sharing (preview)
+Customer and Vendor master data sharing feature enables sharing of customers, vendors across multiple companies. This feature is available for customers on version 8.0 and later on a restricted basis. If you would like to be included in the preview program, complete the survey below and contact product support.
+https://aka.ms/MSDYN365FODataSharing
+
 ## Download a cross-company data sharing template from LCS
 1.  Sign in to LCS.
 2.  On the home page, click **Shared asset library**.
@@ -140,7 +144,6 @@ For details about how to configure Finance and Operations to use a template, see
 </tr>
 </tbody>
 </table>
-
 
 
 Additional resources
