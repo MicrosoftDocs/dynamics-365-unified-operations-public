@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 23 (January 2019). 
+title: What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (MONTH 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 24 (MONTH 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,17 +25,17 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.search.validFrom: 2018-12-31 
-ms.dyn365.ops.version: Platform 23
+ms.search.validFrom: 20189-XX-XX
+ms.dyn365.ops.version: Platform 24
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (MONTH 2019)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 23. This version has a build number of 7.0.5126.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 24. This version has a build number of 7.0.XXXX.
 
 ### Dynamics 365 October '18 release notes
 
@@ -43,10 +43,18 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
-### Platform update 23 bug fixes
+### Platform update 24 bug fixes
 
-For information about the bug fixes included in each of the updates that are part of Platform update 23, sign in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=2049368).
+For information about the bug fixes included in each of the updates that are part of Platform update 24, sign in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink).
 
-## Legal entity filtering using grid column headers
+## Feature heading
 
-Starting in Platform update 23, for grids with cross-company queries, users are able to filter the *Legal entity* column using the column drop-down menu, similar to other columns in
+Feature description.
+
+## Feature heading
+
+Feature description.
+
+## Feature heading
+
+Feature description.
