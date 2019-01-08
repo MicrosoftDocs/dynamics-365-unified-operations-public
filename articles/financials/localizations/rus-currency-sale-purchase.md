@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 8.1
 
 # Foreign currency sale, purchase and transfer
 
-The functionality allows you to do the following:
-- Register the transactions for the sale, purchase and transfer of currency which is carried out using the ledger account "Money transfers in transit";
-- Automatically calculate the profit / loss amounts because of currency conversion for currency sale/purchase (the currency exchange rate of the Central Bank and the exchange rate of the legal entity’s bank on the date of currency transfer are considered for calculation). Automatically create the transactions on profit / loss from conversion (purchase / sale of currency),
+Finance and Operations lets you complete the following tasks:
+- Register transactions for the sale, purchase and transfer of currency which is carried out using the ledger account **Money transfers in transit**
+- Automatically calculate the profit/loss amounts because of currency conversion for currency sale/purchase (the currency exchange rate of the Central Bank and the exchange rate of the legal entity’s bank on the date of currency transfer are considered for calculation). Automatically create the transactions on profit / loss from conversion (purchase / sale of currency),
 - Automatically generate the transactions on the unrealized exchange rate difference, because of different exchange rates on the currency transactions dates.
 - Print currency transfer order.
 
@@ -49,12 +49,12 @@ The functionality allows you to do the following:
 ## Setting up currency sale and purchase.
 
 Complete the following tasks to calculate the exchange adjustment and profit or loss on the Remittance en route account:
-- Set up an exchange rate
-- Set up a bank transaction type
-- Set up a method of payment
-- Set up a number sequence
-- Set up a bank
-- Set up a bank account
+- [Set up an exchange rate](#set-up-an-exchange-rate)
+- [Set up a bank which is used in currency conversion transactions](#set-up-a-bank-which-is-used-in-currency-conversion-transactions)
+- [Set up a bank transaction type](#set-up-a-bank-transaction-type)
+- [Set up a method of payment](#set-up-a-method-of-payment)
+- [Set up a number sequence](#set-up-a-number-sequence)
+- [Set up a bank account](#set-up-a-bank-account)
 
 
 ### Set up an exchange rate
@@ -194,25 +194,25 @@ Post settlement of currency sale transactions to generate profit and loss transa
 3.	In the **Settlement posting date** field, select the posting date type: **Latest date**, **Today’s date** or **Selected date**, enter the posting date manually if you have chosen the latter.
 4.	Review transactions to be settled: 
 
--	Tab **Overview** contains information specific to currency sale the fields **Transit account** and **Bank account - inflow**:
+     -	Tab **Overview** contains information specific to currency sale the fields **Transit account** and **Bank account - inflow**:
 
-     Positive transactions have in the field **Transit account** the value equal to the transit bank account which was defined by user on the dialog **Bank currency transfer** in the field **Transit account** for currency sale transaction.
+          Positive transactions have in the field **Transit account** the value equal to the transit bank account which was defined by user on the dialog **Bank currency transfer** in the field **Transit account** for currency sale transaction.
 
-     Negative transactions have in the field **Bank account - inflow** the value equal to the bank account to which the accounting currency amount is received as result of the foreign currency sale transaction.
+          Negative transactions have in the field **Bank account - inflow** the value equal to the bank account to which the accounting currency amount is received as result of the foreign currency sale transaction.
 
-     Values in these fields should be equal in transactions marked for settlement. 
+          Values in these fields should be equal in transactions marked for settlement. 
 
 -	Tab **General** contains information specific to currency sale, in the group of fields **Currency conversion**
 
 5.	Mark transactions for settlement. The following information is validated during settlement:
 
--	Both transactions have **Transaction type** of extended type **Currency sale**
--	The value in the field **Currency** of group **Currency conversion** on tab **General** of positive transaction (foreign currency sale) is equal to the value in the field **Currency** on tab **Overview** of negative transaction (accounting currency receipt as result of foreign currency sale)
--	The bank account number specified in the **Transit account** field of positive transaction is equal to the account number specified in the field **Bank account - inflow** of negative transaction.
+     -	Both transactions have **Transaction type** of extended type **Currency sale**
+     -	The value in the field **Currency** of group **Currency conversion** on tab **General** of positive transaction (foreign currency sale) is equal to the value in the field **Currency** on tab **Overview** of negative transaction (accounting currency receipt as result of foreign currency sale)
+     -	The bank account number specified in the **Transit account** field of positive transaction is equal to the account number specified in the field **Bank account - inflow** of negative transaction.
 
 6.	Click **Post**. As result, the following transactions are generated:
--	Unrealized currency exchange difference (if the currency exchange rate of sold foreign currency on the date of currency sale differs from the currency exchange rate of sold foreign currency on the accounting currency receipt date)
--	Currency sale profit or loss (in case of bank exchange rate of sold foreign currency differs from the Central bank exchange rate of sold foreign currency on the date of accounting currency receipt transaction)
+     -	Unrealized currency exchange difference (if the currency exchange rate of sold foreign currency on the date of currency sale differs from the currency exchange rate of sold foreign currency on the accounting currency receipt date)
+     -	Currency sale profit or loss (in case of bank exchange rate of sold foreign currency differs from the Central bank exchange rate of sold foreign currency on the date of accounting currency receipt transaction)
 
 7.	You can review the generated transactions in the page **Bank groups** by clicking the **Transactions** button.
 8.	You can also post unsettlement of transactions. In the page **Bank groups** click **Functions >> Closed transitions editing**, mark transactions and click **Reverse**.
@@ -253,12 +253,12 @@ Post settlement of currency sale transactions to generate profit and loss transa
 
 7.	Click **OK**. The Payment status field of the payment journal line is updated as **Sent**. 
 
-The **Transit account**, **Foreign counteragent**, **Contracts group**, and **Contract of the deal** fields are updated on the **Payment** tab.
+     The **Transit account**, **Foreign counteragent**, **Contracts group**, and **Contract of the deal** fields are updated on the **Payment** tab.
 
-The following is validated during currency purchase order generation: 
--	Currency of **Transit account** is not equal to the accounting currency. 
--	Currency of **Transit account** is equal to the currency chosen in the **Bank currency transfer** dialog.
--	Currency of the payment journal line is accounting currency.
+     The following is validated during currency purchase order generation: 
+     -	Currency of **Transit account** is not equal to the accounting currency. 
+     -	Currency of **Transit account** is equal to the currency chosen in the **Bank currency transfer** dialog.
+     -	Currency of the payment journal line is accounting currency.
 
 8.	Click **Print > Currency purchase order** to print the currency purchase order (the template is taken from the transit bank account of **Bank currency transfer** dialog).
 9.	Validate and post the journal
@@ -298,11 +298,11 @@ After you have posted payment order for currency purchase, you can register bank
 |Tab **Payment** | |
 |**Posting profile** | Review that the value equals to the profile for posting on ledger account “money in transit”|
 
-4.	Post the journal.
+4.   Post the journal.
 The following criteria are validated during posting:
--	The transaction currency must not be equal to the accounting currency of the company.
--	The currency code in the field **Currency** on the **Payment** tab is equal to the accounting currency of the company.
--	The fields **Currency** and **Bank exchange rate** on the **Payment** must be filled out.
+     -	The transaction currency must not be equal to the accounting currency of the company.
+     -	The currency code in the field **Currency** on the **Payment** tab is equal to the accounting currency of the company.
+     -	The fields **Currency** and **Bank exchange rate** on the **Payment** must be filled out.
 
 ### Post settlement of currency purchase transactions
 
@@ -312,9 +312,9 @@ Post settlement of currency purchase transactions to generate profit and loss tr
 2.	Select a bank, and then click **Functions > Settle open transactions** to settle currency purchase transactions.
 3.	Mark transactions for settlement. The following information is validated during settlement:
 
--	Both transactions have **Transaction type** of extended type **Currency purchase**
--	The value in the field **Currency** of group **Currency conversion** on tab **General** of foreign currency purchase transaction is equal to the value in the field **Currency** on tab **Overview** of transaction for foreign currency receipt.
--	The bank account number specified in the **Transit account** field of foreign currency purchase transaction is equal to the bank account where the foreign currency is received.
+     -    Both transactions have **Transaction type** of extended type **Currency purchase**
+     -	The value in the field **Currency** of group **Currency conversion** on tab **General** of foreign currency purchase transaction is equal to the value in the field **Currency** on tab **Overview** of transaction for foreign currency receipt.
+     -	The bank account number specified in the **Transit account** field of foreign currency purchase transaction is equal to the bank account where the foreign currency is received.
 
 4.	Click **Post**. As result, the transaction for profit or loss from the currency purchase is generated (in case of bank exchange rate of purchased foreign currency differs from the Central bank exchange rate of purchased foreign currency on the date of foreign currency receipt)
 
@@ -382,8 +382,8 @@ Post settlement of currency purchase transactions to generate currency exchange 
 2.	Select a bank, and then click **Functions > Settle open transactions** to settle currency purchase transactions.
 3.	Mark transactions for settlement. The following information is validated during settlement:
 
--	Both transactions have **Transaction type** of extended type **Currency transfer**
--	Currency codes of transactions are equal
+     -	Both transactions have **Transaction type** of extended type **Currency transfer**
+     -	Currency codes of transactions are equal
 
 4.	Click **Post**. As result, the exchange rate difference transaction is generated. Ledger accounts for currency exchange difference are taken from the **Realized gain** and **Realized loss* accounts of the currency parameters setup.
 
