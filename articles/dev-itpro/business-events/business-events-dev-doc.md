@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This documentation will walk through the development process and best practice for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-Implementing a business event
+## Implementing a business event
 
 There are two classes that need to be implemented - 1) The business event. 2)
 The business event contract. The business event class extends BusinessEventsBase
