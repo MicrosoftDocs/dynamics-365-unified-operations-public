@@ -43,12 +43,12 @@ The following table shows the prerequisites must be in place before you start.
 > [!NOTE]
 > The cases and payroll features are available only in Microsoft Dynamics 365 for Finance and Operations.
 
-| Category                  | Prerequisite |
-|---------------------------|--------------|
-| Task                      | Verify that the settings on the **Human resources parameters** and **Case category type security** pages are accurate. |
-| Knowledge and experience  | Be familiar with cases and how they work. |
-| Planning                  | Determine whether you will integrate FMLA with Payroll. |
-| Country/region            | (USA) The primary address for the legal entity must be in the United States. |
+| Category                 | Prerequisite |
+|--------------------------|--------------|
+| Task                     | Verify that the settings on the **Human resources parameters** and **Case category type security** pages are accurate. |
+| Knowledge and experience | Be familiar with cases and how they work. |
+| Planning                 | Determine whether you will integrate FMLA with Payroll. |
+| Country/region           | (USA) The primary address for the legal entity must be in the United States. |
 
 ## Determine work eligibility
 
@@ -88,12 +88,12 @@ To create an FMLA case, follow these steps.
 
 ## Recalculate FMLA eligibility (if required)
 
-After you create an FMLA case for a worker, you can recalculate the worker’s eligibility at any time. To recalculate a worker’s eligibility, follow these steps.
+After you create an FMLA case for a worker, you can recalculate the worker's eligibility at any time. To recalculate a worker's eligibility, follow these steps.
 
 1. On the **FMLA cases** page, open the case to log hours for.
-3. On the **Action Pane**, in the **Maintain** group, click **Recalculate FMLA eligibility**.
-4. Select the fields that should be updated based on the worker's current information. 
-5. Click **Recalculate**.
+2. On the **Action Pane**, in the **Maintain** group, click **Recalculate FMLA eligibility**.
+3. Select the fields that should be updated based on the worker's current information. 
+4. Click **Recalculate**.
 
 ## Enter FMLA hours that have been taken (if required)
 
@@ -104,7 +104,7 @@ After an FMLA case is approved, you can change and track the number of hours tha
 3. Click **Add line**, and enter the earning date, the number of hours that have been taken, and any applicable notes.
 
 > [!NOTE]
-> The **Source** column is always set to **Manual**. If you’re using Finance and Operations and Payroll, the **Source** column can be updated automatically, based on the earning code that is used on the employee’s pay statement.
+> The **Source** column is always set to **Manual**. If you're using Finance and Operations and Payroll, the **Source** column can be updated automatically, based on the earning code that is used on the employee's pay statement.
 
 ## Set up Payroll for integration with FMLA (if required)
 

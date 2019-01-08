@@ -56,8 +56,8 @@ On the **Inventory lookup** page, you can use the numeric keyboard to enter a pr
 
 The list of locations includes two types of entities:
 
-- **Retail stores** – The list shows stores that are configured by using the store locator group for the current store in the Retail headquarters. 
-- **Distribution centers** – Various types of distribution centers (such as warehouses) can be configured in Microsoft Dynamics 365 for Retail. However, the list shows inventory availability information only for distribution centers of the **Standard** default type. 
+- **Retail stores** – The list shows stores that are configured by using the store locator group for the current store in the Retail headquarters.
+- **Distribution centers** – Various types of distribution centers (such as warehouses) can be configured in Microsoft Dynamics 365 for Retail. However, the list shows inventory availability information only for distribution centers of the **Standard** default type.
 
     > [!NOTE]
     > Inventory availability information isn't shown for warehouses of the **Transit**, **Quarantine**, and **Goods in Route** types for the POS.
@@ -90,7 +90,7 @@ In the **Dimension based matrix** view, the cells for the product variants inclu
 | **0** (zero)                             | A variant has been released to the selected location, but the item isn't available in selected location. However, you can perform additional actions in the cell. (These actions are described in more detail later in this topic.) |
 | **n/a** or an inactive cell              | A variant hasn't been released to the selected location, and you can't perform additional actions in the cell. |
 
-You can also change the pivot for dimensions by selecting the new dimension to use. 
+You can also change the pivot for dimensions by selecting the new dimension to use.
 
 ![Changing the pivot](media/ChangePivot.png)
 
@@ -112,13 +112,11 @@ Additionally, in the **Dimension based matrix** view, more actions can be perfor
 
 The following table provides more information about the additional actions that are available.
 
-
-|        Action        |                                                                                                                    Description                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Sell now       |                               Add the selected item variant to the transaction, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.)                               |
-|   Pick up in store   |      Create a customer order for the product variant that will be picked up from the selected location, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.)       |
-|     Ship product     |                                                 Create a customer order for the product variant that will be shipped from the selected location, and redirect the user to the transaction screen.                                                 |
-|     Availability     |                                                                             Show the ATP information for the selected variant combination for the selected location.                                                                              |
-|  Show all locations  | Switch to the standard inventory lookup view, and highlight inventory availability information for the item variant across all stores in the store locator group, and also in distribution centers of the <strong>Standard/Default</strong> type. |
-| View product details |                                                                         Redirect the user to the <strong>Product details</strong> page of the associated product master.                                                                          |
-
+| Action               | Description |
+|----------------------|-------------|
+| Sell now             | Add the selected item variant to the transaction, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.) |
+| Pick up in store     | Create a customer order for the product variant that will be picked up from the selected location, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.) |
+| Ship product         | Create a customer order for the product variant that will be shipped from the selected location, and redirect the user to the transaction screen. |
+| Availability         | Show the ATP information for the selected variant combination for the selected location. |
+| Show all locations   | Switch to the standard inventory lookup view, and highlight inventory availability information for the item variant across all stores in the store locator group, and also in distribution centers of the **Standard/Default** type. |
+| View product details | Redirect the user to the **Product details** page of the associated product master. |

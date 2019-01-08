@@ -25,7 +25,7 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Standard and targeted platform releases
+      - name: Standard and First release service updates
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
         items:
@@ -34,7 +34,7 @@
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
-      - name: One version service updates FAQ
+      - name: One Version service updates FAQ
         href: get-started/one-version.md
       - name: Software lifecycle policy and cloud releases
         href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
@@ -373,6 +373,18 @@
             href: ../supply-chain/sales-marketing/field-service-work-order.md
           - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
             href: ../supply-chain/sales-marketing/field-service-invoice.md
+          - name: Synchronize inventory transfers and adjustments from Field Service to Finance and Operations
+            href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+          - name: Synchronize inventory level information from Finance and Operations to Field Service 
+            href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+          - name: Synchronize products with inventory unit from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+          - name: Synchronize project list from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-project-list.md
+          - name: Synchronize warehouses from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+          - name: Synchronize work orders from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-work-orders.md        
         - name: Configure Project Service Automation integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
           items:
@@ -388,8 +400,8 @@
             href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
           - name: Synchronize project actuals to the project integration journal
             href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
-        - name: Consuming external web services
-          href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+    - name: Consuming external web services
+      href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
   - name: Data management
     href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
     items:
@@ -405,6 +417,8 @@
           href: ../dev-itpro/data-entities/configuration-data-packages.md
         - name: Configuration data packages (July 2017 release only)
           href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+        - name: Make Entity Store available as a Data Lake
+          href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
       - name: Configuration data templates
         href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
       - name: Track changes to an entity
@@ -2105,8 +2119,6 @@
           href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
         - name: Post a free text invoice
           href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-        - name: Produce Mexican electronic ledger accounting report version 1.1
-          href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
         - name: Set parameters for an electronic invoice
           href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
         - name: Set up sales tax codes for Mexico

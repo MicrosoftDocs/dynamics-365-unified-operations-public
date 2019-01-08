@@ -5,7 +5,7 @@ title: Activities in the processes
 description: This topic provides information about the various types of activities that can be used in the hiring process.
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -66,6 +66,10 @@ The Interview activity is optional. This activity has three components: Candidat
 - To send email to candidates to request their availability, set the **Request candidate availability** option to **On**. If you set the option to **Off**, this step won't be shown in the hiring process on the job.
 - To live-stream or have a conference call by using Skype for Business, set the **Online meeting** field to **Skype for Business**. The correct **Join Skype Meeting** link will then be added in the interview meeting request.
 - To send email to candidates to finalize the schedule, set the **Send mail to candidate** option to **On**. If you set the option to **Off**, candidates will receive the interview schedule only when they sign in to the Candidate portal.
+
+>[!NOTE]
+> - For all 1:1 interviews, reminders are sent to the interviewers every 24 hours if the interviewer has not responded (accepted or declined) to the interview request.
+> - For all panel interviews, there are no automated reminders to respond to interview request. To trigger a reminder manually, edit the interview and use the **Update & Send** option to send the request back to the interviewers.
 
 The Feedback component lets people enter recommendations for an applicant. They can also enter any feedback comments that they have. If you turn on the **Inherit feedback participants from Hiring Team** option, the recruiter, hiring manager, and interviewers are automatically entered in the Feedback component. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it.
 

@@ -33,22 +33,24 @@ ms.dyn365.ops.version: Platform 21
 
 [!include [banner](../includes/banner.md)]
 
-
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 21. This version was released in October 2018 and has a build number of 7.0.5073.
 
 ## Dynamics 365 October '18 release notes
-Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ## Bug fixes
+
 For information about the bug fixes included in each of the updates that are part of Platform update 21, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2033925).
 
 ## Extensibility enhancements
 
-The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](https://docs.microsoft.com/en-us/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
+The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
 
 ## TransientSqlConnectionError X++ exception
+
 During an X++ SQL query execution, when a transient SQL connection error occurs on the server side, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
 
 This exception usually occurs during a large transaction or when the database is under a lot of processing pressure.
@@ -60,21 +62,22 @@ If an application transaction takes a long time to process, you can use multiple
 For more information, see [SQL connection error X++ exception](../../dev-itpro/dev-ref/sql-connection-error.md).
 
 ## Sticky default actions in grids
+
 Many grids in Finance and Operations have a defined *default action*. This is a single column in the grid where the value in every row always appears as a hyperlink, as opposed to other columns where only the value in the active row appears as a hyperlink. This default action always appears on the first textual column in a grid before any user personalization is applied. For example, consider the **Account** column in the **Customer** list below.
 
-![Customer list](media/customerGrid.png  "Customer list")
+![Customer list](media/customerGrid.png "Customer list")
 
-The **sticky default action** feature, which is available starting in Platform update 21, controls where the default action column appears in the grid after personalizations that change the order or visibility of columns are applied.   
+The **sticky default action** feature, which is available starting in Platform update 21, controls where the default action column appears in the grid after personalizations that change the order or visibility of columns are applied.
 
-With sticky default actions off, which corresponds to how default actions work prior to Platform update 21, the default action hyperlink would change to whatever column is the first textual column after personalizations are applied. For example, if you move the **Account** column to be fourth column in the grid (or alternatively if you hide the **Account** column), the hyperlink representing the default action moves to the **Name** column. 
+With sticky default actions off, which corresponds to how default actions work prior to Platform update 21, the default action hyperlink would change to whatever column is the first textual column after personalizations are applied. For example, if you move the **Account** column to be fourth column in the grid (or alternatively if you hide the **Account** column), the hyperlink representing the default action moves to the **Name** column.
 
-![Sticky default actions off](media/stickyDAOff.png  "With sticky default actions off, the Name column becomes the default action column if the Account column is moved to not be the first column.")
+![Sticky default actions off](media/stickyDAOff.png "With sticky default actions off, the Name column becomes the default action column if the Account column is moved to not be the first column.")
 
 With sticky default actions on, the default action hyperlink will be on the same column regardless of any personalizations applied to the form. This means that for this customer list, the **Account** column will continue to be the default action column regardless of whether the **Account** column is moved or hidden.
 
-![Sticky default actions off](media/stickyDAOn.png  "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
+![Sticky default actions off](media/stickyDAOn.png "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
 
-With Platform update 21, the sticky default action feature is off, but a system administrator can turn it on for an environment. To turn on this feature, go to the **Client performance options** page under **System administration** and find the **Enable sticky default action** option.  
+With Platform update 21, the sticky default action feature is off, but a system administrator can turn it on for an environment. To turn on this feature, go to the **Client performance options** page under **System administration** and find the **Enable sticky default action** option.
 
 ## Batch active periods
 

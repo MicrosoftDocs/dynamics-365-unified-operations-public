@@ -44,9 +44,10 @@ To begin, here are a few important concepts:
 - **Environment topology** – The composition of the environment and the purpose. Examples include **Develop** and **Build and Test** for Tier-1 environments.
 - **Environment tier** – The type or category of the environment. Examples include Tier-1 environments and Tier-2 environments.
 
-For more information, about the various environments and tiers, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
+For more information, about the various environments and tiers, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
 
 ### Environment types
+
 You can use the following environment types for your project:
 
 - **Standard** – This environment is included in the standard offer and is managed by Microsoft in a Microsoft subscription. Standard environments include the production environment, a Tier-2 Standard Acceptance Test environment, and one Tier-1 develop and test environment.
@@ -58,11 +59,12 @@ You can use the following environment types for your project:
 > In a *customer or partner Azure subscription*, the customer or partner brings its own Azure subscription, and deploys Finance and Operations environments to that subscription for evaluation and development purposes only. The customer or partner pays for the resources that are deployed to its Azure subscription. The amount that the customer or partner pays is based on the Azure price list. By contrast, in a *Microsoft subscription*, the customer purchases Finance and Operations licenses. These licenses then allow the customer to deploy environments to an Azure subscription that is managed by Microsoft. Therefore, the customer has no separate Azure billing.
 
 ### Tier-1 vs. Tier-2 and higher
+
 | Tier-1 | Tier-2 and higher |
 |--------|-------------------|
 | Single-box environment | Multi-box environment |
 | All components are installed on the same server. These components include Application Object Server (AOS), the database, Microsoft Dynamics 365 for Retail, and Management Reporter. | Components are installed on multiple servers. |
-| Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/) is used. |
+| Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is used. |
 | The architecture differs from the architecture of the production environment to maximize the efficiency of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
 | The environment can be deployed in various ways. For example, it can be deployed as an add-on, it can be cloud-hosted, or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |
 | The environment isn't suitable for UAT or performance testing. | The environment is suitable for UAT and performance testing. |
@@ -76,7 +78,7 @@ Each Finance and Operations standard cloud offer includes three environments:
 - **Production environment** – One production instance is provided per tenant. The production multi-box instance includes disaster recovery and high availability. It will be provisioned when the implementation approaches the Operate phase, after the required activities in the Microsoft Dynamics Lifecycle Services (LCS) methodology and a successful go-live assessment are completed. Additionally, some file storage and database storage are included in the offer:
 
     - **File storage:** Every customer receives 100 gigabytes (GB) of file/Azure blob cloud storage for files and binary data. Additional file/blob storage can be purchased.
-    - **Database storage:** Every Finance and Operations subscription includes 10 GB of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device service licenses. For more information about the various environments and the various types of storage, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
+    - **Database storage:** Every Finance and Operations subscription includes 10 GB of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device service licenses. For more information about the various environments and the various types of storage, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
 
 ### Provisioning of standard environments
 
@@ -105,7 +107,7 @@ Production system readiness includes, but isn't limited to, the following condit
 
 Customers should use the production environment to **operate** the solution, not build it. The production environment is sized to run your business. The sizing is based on the subscription estimate and diagnostic data from performance testing. After deployment, customers can and should do a mock cutover and a final round of validation on the production environment. Before the final cutover, customers can request a Point in time restore to restore the production environment to a clean snapshot (up to 35 days in the past).
 
-To select the appropriate data center for the production environment, consider the latency from the geographic locations where the business operates. Use tools such as [PsPing](https://docs.microsoft.com/en-us/sysinternals/downloads/psping) and [azurespeed.com](http://azurespeed.com/) to test latency to Azure data centers.
+To select the appropriate data center for the production environment, consider the latency from the geographic locations where the business operates. Use tools such as [PsPing](https://docs.microsoft.com/sysinternals/downloads/psping) and [azurespeed.com](http://azurespeed.com/) to test latency to Azure data centers.
 
 The following illustrations shows the environment planning process.
 
@@ -137,7 +139,7 @@ The following table compares the deployment options.
 |---------------------------------------|-----------------|--------------|-------------------|
 | Public URL                            | ✓ | ✓ | Not supported |
 | Integration development               | ✓ | ✓ | Extra setup is required. (For example, run the admin user provisioning tool.) |
-| Azure DevOps                                  | ✓ | ✓ | Extra setup is required. (For example, rename the computer.) |
+| Azure DevOps                          | ✓ | ✓ | Extra setup is required. (For example, rename the computer.) |
 | Applying deployable packages from LCS | Automated | Automated | Manual through runbooks |
 | Deploying data packages from LCS      | ✓ | ✓ | Not supported |
 | Maintenance                           | Managed by Microsoft | Managed by the customer/partner | Managed by the customer/partner |
@@ -158,7 +160,7 @@ After a subscription estimate is activated, you can view transaction lines per h
 ![Subscription estimate](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
-> The upcoming admin lockdown for Tier-2 or higher environments will no longer allow Remote Desktop Protocol (RDP) connections to the servers. As part of the Microsoft roadmap, the most common actions where RDP access is required are being replaced by self-service tasks in LCS. For example, the procedure that is currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) will be available as a service from Microsoft. Therefore, to copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment, you will have to create a service request in LCS. More information will be available through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/).
+> The upcoming admin lockdown for Tier-2 or higher environments will no longer allow Remote Desktop Protocol (RDP) connections to the servers. As part of the Microsoft roadmap, the most common actions where RDP access is required are being replaced by self-service tasks in LCS. For example, the procedure that is currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) will be available as a service from Microsoft. Therefore, to copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment, you will have to create a service request in LCS. More information will be available through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/).
 
 ### Purchasing add-on environments
 
@@ -169,7 +171,7 @@ The following illustration shows the process for purchasing add-on environments.
 ![Procuring add-ons](./media/environment-planning-5-procuring-add-on.png)
 
 > [!IMPORTANT]
-> If you have a Microsoft Volume Licensing agreement, you can subscribe to add-on environments on a monthly basis through the Microsoft Products and Services Agreement (MPSA) licensing program. Alternatively, you can subscribe to them through the Microsoft Cloud Solution Provider (CSP) program. For more information about the various environments and tiers, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
+> If you have a Microsoft Volume Licensing agreement, you can subscribe to add-on environments on a monthly basis through the Microsoft Products and Services Agreement (MPSA) licensing program. Alternatively, you can subscribe to them through the Microsoft Cloud Solution Provider (CSP) program. For more information about the various environments and tiers, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
 
 ## Environments plan
 

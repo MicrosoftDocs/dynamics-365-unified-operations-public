@@ -7,6 +7,10 @@
     - name: What's new or changed
       href: whats-new.md
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
+        href: whats-new-talent-december-14.md 
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (December 6, 2018)
+        href: whats-new-talent-december-6.md 
       - name: What's new or changed in Dynamics 365 for Talent Core HR (November 27, 2018)
         href: whats-new-talent-november-27.md            
       - name: What's new or changed in Dynamics 365 for Talent Core HR (November 15, 2018)
@@ -71,6 +75,8 @@
   - name: Manage leave and absence
     href: leave-absence-overview.md
     items:
+    - name: Leave and absence concepts
+      href: leave-absence-concepts.md
     - name: Accrue time off based on hours worked
       href: leave-accrue-hours-worked.md
     - name: Working time calendars
@@ -128,10 +134,13 @@
     - name: Set up training courses
       href: courses.md
   - name: Define and manage a benefits program
-    href: manage-benefit-program.md
-  - name: Benefit eligibility policies
-    href: benefit-eligibility-policies.md
     items:
+    - name: Manage a benefits program
+      href: manage-benefit-program.md
+    - name: Benefit eligibility policies
+      href: benefit-eligibility-policies.md
+    - name: Generate Affordable Care Act (ACA) reports
+      href: generate-aca-reports.md
     - name: Manage items lent to workers
       href: loan-items.md
   - name: Gather information using questionnaires
@@ -276,8 +285,6 @@
       href: create-envi-powerapps-admin-ctr.md
     - name: Talent client disconnects
       href: client-disconnects.md
-    - name: How database backups are handled
-      href: database-backups.md
     - name: Avoid text truncation on the position hierarchy and export to Visio
       href: avoid-text-truncation-position-hierarchy-visio.md
     - name: Run the compensation process
