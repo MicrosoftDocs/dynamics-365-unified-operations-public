@@ -5,7 +5,7 @@ title: Loyalty overview
 description: This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -131,7 +131,7 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
 
 ![Loyalty card setup](./media/LoyaltyCardSetup.png "Loyalty card setup")
 
-With this setup in place, the customers can redeem their loyalty points in call center. Addtionally, we are enhancing the user experience further to show the 'Amount covered by loyalty points', so that the call center users do not have to navigate to a different screen to view the loyalty balance.
+With this setup in place, customers can redeem their loyalty points in the call center. Additionally, we are enhancing the user experience further to show the "Amount covered by loyalty points", so that the call center users do not have to navigate to a different screen to view the loyalty balance.
 
 - Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. To do so, the retailer can define any number of "Other activity type" and define the corresponding earning rules for these activities. We have also exposed a Retail Server API "PostNonTransactionalActivityLoyaltyPoints" that can be called when an activity is identified that should reward the customer with some loyalty points. This API expects the Loyalty card ID, Channel ID and the Other Activity Type ID, so that it can look up the customer who should be rewarded and look up the earning rule for the activity. Moreover, in an upcoming monthly release, we will be releasing a data entity for recording such activities so that points can be rewarded in bulk using DIXF framework or by OData API. Additionally, the business users will be able to view and verify these activities in a journal and once verified, will be able to either  post the activity lines manually or run a batch job to post all the pending activities.
 
