@@ -122,21 +122,19 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
 
     ![Expiring points](./media/Expiring%20points.png "View expiring points")
 
-- With the 8.1.3 release, we have enabled the "pay by loyalty" option in the call center channel as well. To enable this option, create a loyalty tender type and associate it with the call center. 
+- With the 8.1.3 release, we have enabled the "pay by loyalty" option in the call center channel. To enable this option, create a loyalty tender type and associate it with the call center. 
 
 >[!NOTE]
-> Since the loyalty payments are set up as card payments, you will have to select a card from the **Card setup** page. R
-
-
+> Because the loyalty payments are set up as card payments, you will have to select a card from the **Card setup** page. 
 
 ![Loyalty card setup](./media/LoyaltyCardSetup.png "Loyalty card setup")
 
-With this setup in place, customers can redeem their loyalty points in the call center. Additionally, we are enhancing the user experience further to show the "Amount covered by loyalty points", so that the call center users do not have to navigate to a different screen to view the loyalty balance.
+After this is set up, customers can redeem their loyalty points in the call center. Additionally, we are enhancing the user experience further to show the "Amount covered by loyalty points", so that the call center users do not have to navigate to a different screen to view the loyalty balance.
 
-- Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. To do so, the retailer can define any number of "Other activity type" and define the corresponding earning rules for these activities. We have also exposed a Retail Server API "PostNonTransactionalActivityLoyaltyPoints" that can be called when an activity is identified that should reward the customer with some loyalty points. This API expects the Loyalty card ID, Channel ID and the Other Activity Type ID, so that it can look up the customer who should be rewarded and look up the earning rule for the activity. Moreover, in an upcoming monthly release, we will be releasing a data entity for recording such activities so that points can be rewarded in bulk using DIXF framework or by OData API. Additionally, the business users will be able to view and verify these activities in a journal and once verified, will be able to either  post the activity lines manually or run a batch job to post all the pending activities.
+- Many retailers award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for completing an online survey, visiting a store, liking the retailers on Facebook, or tweeting about the retailer. To do this, the retailer can define any number of "Other activity type" and define the corresponding earning rules for these activities. We have also exposed a Retail Server API "PostNonTransactionalActivityLoyaltyPoints" that can be called when an activity is identified that should reward the customer with loyalty points. This API expects the Loyalty card ID, Channel ID, and the Other Activity Type ID, so that the customer who should be rewarded can be located and the earning rule for the activity can be identified. In a future release, we will provide a data entity for recording such activities so that points can be rewarded in bulk using DIXF framework or by OData API. Additionally, business users will be able to view and verify these activities in a journal and once verified, will be able to either post the activity lines manually or run a batch job to post all the pending activities.
 
 > [!NOTE]
-> Currently, the system forces the users to set up a number sequence for "other activity types", but this will not be mandatory in future releases. To set up a number sequence navigate to **Retail shared parameters > Number sequences and select a number sequence for "Loyalty other activity type id"**.
+> Currently, the system forces users to set up a number sequence for "other activity types", but this will not be a required step in future releases. To set up a number sequence, go to **Retail shared parameters > Number sequences** and select a number sequence for **Loyalty other activity type ID**.
 
 	
 ## Upcoming enhancements
