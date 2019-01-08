@@ -5,7 +5,7 @@ title: Loyalty overview
 description: This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -121,12 +121,26 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
     ![Points covered by loyalty balance](./media/Points%20covered%20by%20loyalty%20balance.png "Show balance covered by loyalty points")
 
     ![Expiring points](./media/Expiring%20points.png "View expiring points")
+
+- With the 8.1.3 release, we have enabled the "pay by loyalty" option in the call center channel. To enable this option, create a loyalty tender type and associate it with the call center. 
+
+>[!NOTE]
+> Because the loyalty payments are set up as card payments, you will have to select a card from the **Card setup** page. 
+
+![Loyalty card setup](./media/LoyaltyCardSetup.png "Loyalty card setup")
+
+After this is set up, customers can redeem their loyalty points in the call center. Additionally, we are enhancing the user experience further to show the "Amount covered by loyalty points", so that the call center users do not have to navigate to a different screen to view the loyalty balance.
+
+- Many retailers award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for completing an online survey, visiting a store, liking the retailers on Facebook, or tweeting about the retailer. To do this, the retailer can define any number of "Other activity type" and define the corresponding earning rules for these activities. We have also exposed a Retail Server API "PostNonTransactionalActivityLoyaltyPoints" that can be called when an activity is identified that should reward the customer with loyalty points. This API expects the Loyalty card ID, Channel ID, and the Other Activity Type ID, so that the customer who should be rewarded can be located and the earning rule for the activity can be identified. In a future release, we will provide a data entity for recording such activities so that points can be rewarded in bulk using DIXF framework or by OData API. Additionally, business users will be able to view and verify these activities in a journal and once verified, will be able to either post the activity lines manually or run a batch job to post all the pending activities.
+
+> [!NOTE]
+> Currently, the system forces users to set up a number sequence for "other activity types", but this will not be a required step in future releases. To set up a number sequence, go to **Retail shared parameters > Number sequences** and select a number sequence for **Loyalty other activity type ID**.
+
 	
 ## Upcoming enhancements
 
 The following features will be available in the future monthly updates of Dynamics 365 for Retail.
 	
 - Customers want the ability to view their loyalty balance details on the consumer-facing channels. Similarly, it is important for the cashiers to view the customer's history of the loyalty points in MPOS/CPOS to quickly answer any queries from the customer. In an upcoming monthly release, customers and cashiers will be able to see loyalty history details.
-- Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. In the future, we'll be adding the ability to award loyalty points for any customer activity. To do so, the retailer can define an "Other activity type" and define the earning rules for these activities. We will also expose a Retail Server API that can be called when an activity is identified that will use the earning rule to award the required loyalty points.
-- To enable a true omni-channel retail experience, we will allow the customers to earn and redeem loyalty points across all channels.
+
 - Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, we will introduce a new type of promotion in which the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
