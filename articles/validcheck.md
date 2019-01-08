@@ -29,8 +29,7 @@ ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 
 ---
-# Distributed order management (DOM)
-**Retail transaction consistency checker**
+# Retail transaction consistency checker
 
 **Overview**
 
