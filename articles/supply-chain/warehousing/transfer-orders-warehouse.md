@@ -5,7 +5,7 @@ title: Set up warehouses for transfer orders
 description: This topic describes how you can set up warehouses for transfer orders.
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-#ms.custom: 
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mirzaab
@@ -53,7 +53,9 @@ You can use warehouse levels to create a hierarchy that supports transfer orders
 > [!TIP]
 > <P>If you want to assign a warehouse for refilling, you must first set up the warehouse as a storage dimension in the <STRONG>Storage dimension groups</STRONG> form. In this form, select the <STRONG>Active</STRONG> field and the <STRONG>Coverage plan by dimension</STRONG> field for the warehouse.</P>
 
-Note that you must also set up the transport lead time between the warehouses on the **Transport days** page. 
+## Set up transport lead time
+
+You must also set up the transport lead time between the warehouses on the **Transport days** page. 
 1. Go to **Inventory management > Setup > Distribution > Transport days**.
 2. In the **Receiving point** field, select "warehouse".
 3. Select the  **Shipping warehouse**, **Receiving warehouse**, and **Transport days**. 
