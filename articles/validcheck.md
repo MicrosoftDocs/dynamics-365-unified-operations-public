@@ -54,7 +54,7 @@ transactions before they are picked up by the statement posting process,
 a consistency checker feature has been introduced and the below chart
 explains the posting process with the transaction consistency checker
 
-<img src="media/image1.png" style="width:6.5in;height:3.10556in" />
+![Statement posting process with retail transsaction consistency checker](./media/validcheck.png "Statement posting process with retail transsaction consistency checker")
 
 **Consistency checker**
 
