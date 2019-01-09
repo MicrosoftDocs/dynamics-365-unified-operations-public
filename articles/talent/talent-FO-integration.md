@@ -86,7 +86,7 @@ Additional data can be populated via PowerApps.
 
 ![](media/SpecifyFieldsIncludedInIntegration.png)
 
-## I set up integration as a batch job but Talent lost connection to the destination system. How can I send the same set of changes to the destination system?
+## I set up integration as a batch job, but Talent lost connection to the destination system. How can I send the same set of changes to the destination system?
 
 No special setup is required for exception handling. The Data Integrator will automatically catch and report errors which occur at the source and destination and will allow manual retries. However, it doesn’t allow manual data correction. If data updates are needed, that should happen either at the source or the destination.
 
