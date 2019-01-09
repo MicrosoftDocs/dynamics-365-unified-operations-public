@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1.1 (October 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.1. This version was released in October 2018.
+title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1.1 (November 2018)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.1. This version was released in November 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/26/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,11 +29,11 @@ ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations version 8.1.1 (October 2018)
+# What's new or changed in Dynamics 365 for Finance and Operations version 8.1.1 (November 2018)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.170.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.1 (November 2018). This version was released in November 2018 and has a build number of 8.1.170.
 
 To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new).
 

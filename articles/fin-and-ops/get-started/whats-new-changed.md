@@ -161,8 +161,8 @@ This table lists the major releases of the application. For monthly cloud update
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Platform update 21</td>
 <td>7.0.5073</td>
-<td>October 2018</td>
-<td><a href="whats-new-platform-update-21.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (October 2018)</a></td>
+<td>November 2018</td>
+<td><a href="whats-new-platform-update-21.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (November 2018)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
