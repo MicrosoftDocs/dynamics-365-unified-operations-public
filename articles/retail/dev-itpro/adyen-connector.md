@@ -68,7 +68,7 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 
 | Connector type | Dip | Swipe | Tap | Manual entry |
 |---|---|---|---|---|
-| Card present | Yes | Yes | Yes | No |
+| Card present | Yes | Yes | Yes | Yes |
 | Card not present | No | No | No | Yes |
 
 ### Supported payment instruments
