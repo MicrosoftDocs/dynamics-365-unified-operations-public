@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Duplicate Payment Protection
-description: Duplicate Payment Protection
+title: Duplicate payments prevention
+description: This topic describes how Dynamics 365 for Retail helps to prevent duplicate payments in the Modern POS.
 author: rubendel
 manager: AnnBe
-ms.date: 11/22/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Duplicate Payment Protection
+# Duplicate payments prevention
 This topic provides an overview of the duplicate payments protection feature for the Dynamics 365 for Retail Modern POS.
 
 ## Key terms
