@@ -208,6 +208,6 @@ Use the **FA groups** list page to define fixed asset groups for accounting of f
     - **Tax** – When you create a fixed asset tax journal in the ledger, the details of the journal lines are generated according to the tax codes.
     - **Total** – When you generate transactions in the fixed asset tax journal in the ledger, the total of the transactions is generated. The details of the journal lines aren't generated according to the tax codes.
 
-15. On the **Document** tab, select the analysis code, and set up the number sequences for fixed assed documents.
+15. On the **Document** tab, select the analysis code, and set up the number sequences for fixed asset documents.
 16. On the **Financial dimensions** tab, select the financial dimension codes for the fixed asset transactions.
 17. On the **Number sequences** tab, select a number sequence for **FA inventory number**, **Bar code**, **FA revaluation**, **FA counting**, **FA transfer**, **Writing off on condition**, and **Assessed tax register journal number**.
