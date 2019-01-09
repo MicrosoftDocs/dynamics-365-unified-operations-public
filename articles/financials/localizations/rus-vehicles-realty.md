@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vehicles and realty as fixed assets (Russia)
-description: This topic provides information about setting up and using vehicles and realty as fixed assets for Russia.
+description: This topic explains how to set up and use vehicles and realty as fixed assets for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/08/2019
@@ -33,90 +33,63 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-## Set up fixed asset parameters for vehicles and realty 
+## Set up fixed asset parameters for vehicles and realty
 
-Use the **Fixed asset parameters** form to set up parameters for fixed assets of type **Realty** or **Vehicle**. You can also select the method to be used to determine the starting date used to calculate depreciation.
+Use the **Fixed asset parameters** page to set up parameters for fixed assets of the **Realty** and **Vehicle** types. You can also select the method that is used to determine the start date for the calculation of depreciation.
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Parameters**.
+1. Select **Fixed assets (Russia)** \> **Setup** \> **Parameters**.
+2. On the **Tax reporting** tab, in the **Date of including in the tax base** field, specify when the fixed asset should be entered in the assessed register tax base:
 
-2.  Click the **Tax reporting** tab.
+    - **Putting into operation date** – The date when the fixed asset is put to use.
+    - **Date of the registration** – The registration date of the fixed asset.
 
-3.  In the **Date of including in the tax base** field, specify the date to enter the fixed asset in the assessed register tax base from the following options:
-    
-      - **Putting into operation date** – The date when the fixed asset is put to use.
-    
-      - **Date of the registration** – The registration date for the fixed asset.
-      
-## Register realty as a fixed asset 
+## Register realty as a fixed asset
 
-Before you put a realty fixed asset into operation and calculate depreciation, you need to register the fixed asset in the assessed tax registers. Use the **Fixed assets** page to register a fixed asset of the **Realty** type.
+Before you put a realty fixed asset into operation and calculate depreciation, you must register the fixed asset in the assessed tax registers. Use the **Fixed assets** page to register a fixed asset of the **Realty** type.
 
-1.  Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
-
-2.  Click **New** to create a fixed asset, and then enter the required details. For more information, see [(RUS) Create fixed assets](rus-create-fixed-assets.md).
-
-3.  On the **General** FastTab, in the **Type** field, select **Realty**.
-
-4.  Click the **Technical information** FastTab, and then, in the **Date of the registration** field, select the registration date for the fixed asset.
-    
+1. Select **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
+2. Select **New** to create a fixed asset, and enter the required details. For more information, see [(RUS) Create fixed assets](rus-create-fixed-assets.md).
+3. On the **General** FastTab, in the **Type** field, select **Realty**.
+4. On the **Technical information** FastTab, in the **Date of the registration** field, select the registration date of the fixed asset.
 
     > [!NOTE]
-    > <P>If you selected <STRONG>Date of the registration</STRONG> in the <STRONG>Depreciation start date</STRONG> field in the <STRONG>Depreciation groups</STRONG> form, you must specify the registration date for the fixed asset. Otherwise, the depreciation transactions are not created. If you modify the registration date, the starting date for depreciation is updated.</P>
+    > If you selected **Date of the registration** in the **Depreciation start date** field on the **Depreciation groups** page, you must specify the registration date of the fixed asset. Otherwise, depreciation transactions aren't created. If you change the registration date, the start date for depreciation is updated.
 
-
-
-5.  In the **Removal from the register date** field, select the date when the asset is scheduled for removal from the tax register.
-    
+5. In the **Removal from the register date** field, select the date when the asset should be removed from the tax register.
 
     > [!NOTE]
-    > <P>The <STRONG>Date of the registration</STRONG> and <STRONG>Removal from the register date</STRONG> fields are available only if you selected <STRONG>Realty</STRONG> or <STRONG>Vehicle</STRONG> in the <STRONG>Type</STRONG> field on the <STRONG>General</STRONG> tab.</P>
+    > The **Date of the registration** and **Removal from the register date** fields are available only if you selected **Realty** or **Vehicle** in the **Type** field on the **General** FastTab.
 
-
-
-6.  Click the **Tax reporting** FastTab.
-
-7.  In the **Assessed tax** field group, in the **Asset kind** field, select the type of asset.
-    
+6. On the **Tax reporting** FastTab, in the **Assessed tax** section, in the **Asset kind** field, select the type of asset.
 
     > [!NOTE]
-    > <P>The <STRONG>Assessed tax</STRONG> field group is not available if you selected <STRONG>Vehicle</STRONG> or <STRONG>Ground area</STRONG> in the <STRONG>Type</STRONG> field on the <STRONG>General</STRONG> FastTab.</P>
+    > The **Assessed tax** section isn't available if you selected **Vehicle** or **Ground area** in the **Type** field on the **General** FastTab.
 
-
-
-8.  In the **Sales tax code** and **Exemption from tax** fields, select the sales tax code for the assessed tax and the tax benefit code for the transport tax.
-    
+7. In the **Sales tax code** field, select the sales tax code for the assessed tax.
 
     > [!NOTE]
-    > <P>The <STRONG>Sales tax code</STRONG> field is available only if you selected <STRONG>1</STRONG> or <STRONG>3</STRONG> in the <STRONG>Asset kind</STRONG> field.</P>
+    > The **Sales tax code** field is available only if you selected **1** or **3** in the **Asset kind** field.
 
-## Set up the depreciation starting date for vehicles and realty 
+8. In the **Exemption from tax** field, select the tax benefit code for the transport tax.
 
-Use the **Depreciation groups** page to set up the depreciation starting date for fixed assets of type **Realty** or **Vehicle**. Depreciation is calculated based on the registration date for the asset. If an asset is registered after it is put into operation, depreciation is calculated from the first day of the month of registration. If an asset is registered before it is put into operation, depreciation is calculated from the first day of the month after the asset is put into operation.
+## Set up the depreciation start date for vehicles and realty
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
+Use the **Depreciation groups** page to set up the start date for depreciation of fixed assets of the **Realty** and **Vehicle** types. Depreciation is calculated based on the registration date of the asset. If an asset is registered after it's put into operation, depreciation is calculated from the first day of the month of registration. If an asset is registered before it's put into operation, depreciation is calculated from the first day of the month after the asset is put into operation.
 
-2.  Create a depreciation group, and then enter the required details.
+1. Select **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
+2. Create a depreciation group, and enter the required details.
+3. On the **General** FastTab, in the **Depreciation start date** field, select **Date of the registration** to specify that the registration date of a fixed asset should be used as the depreciation start date.
 
-3.  Click the **General** tab.
+## Depreciate a fixed asset by using a fixed asset journal
 
-4.  In the **Depreciation start date** field, select **Date of the registration** to specify the registration date for a fixed asset as the depreciation starting date.
+After you put a fixed asset of the **Vehicle** or **Realty** type into operation, you can use the **FA journal** page to start to depreciate the asset from the registration date.
 
-## Depreciate a fixed asset by using a fixed asset journal 
-
-After you put a fixed asset of the **Vehicle** or **Realty** type into operation, you can use the **FA journal**  to start depreciating the asset from the date of registration.
-
-1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-
-2.  Click **New** to create a fixed asset journal.
-
-3.  In the **Name** and **Description** fields, select a journal name and enter a description for the journal.
-
-4.  Click **Lines** to open the **Journal voucher** page and create a journal line.
-
-5. Click **OK**. The depreciation line for the value model that is registered in the fixed asset account is displayed on the **Journal voucher** page.
-
-6. Click **Validate** \> **Validate** to validate the depreciation transaction.
-
-7. Click **Post** \> **Post** to post the transaction.
-
-
+1. Select **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
+2. Select **New** to create a fixed asset journal.
+3. In the **Name** field, select a journal name.
+4. In the **Description** field, enter a description of the journal.
+5. Select **Lines** to open the **Journal voucher** page.
+6. Select **New** to create a journal line.
+7. Select **OK**. The depreciation line for the value model that is registered in the fixed asset account is shown on the **Journal voucher** page.
+8. Select **Validate** \> **Validate** to validate the depreciation transaction.
+9. Select **Post** \> **Post** to post the transaction.
