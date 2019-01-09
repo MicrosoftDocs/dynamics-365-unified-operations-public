@@ -47,8 +47,7 @@ This article covers the following aspects of the duplicate payment protection fe
 
 - **[Prerequisites](#Prerequisites)** - Set of prerequisites to leverage this feature in the Dynamics 365 for Retail Modern POS.
 - **[Scenario details](#Scenario-details)** - Detailed description of the scenarios covered by the duplicate payment protection feature.
-- **[Troubleshooting steps](#Troubleshooting-steps)** - Detailed troubleshooting steps when encountering issues with duplicate payment protection feature.
-- **[Common issues](#Common-issues)** - List of common issues you might encounter when using the duplicate payment protection feature, including the symptoms, root cause, and potential fix for each of them.
+- **[Troubleshooting steps](#Troubleshooting-steps)** - Steps to take when encountering issues with duplicate payment protection feature.
 - **[Related articles](#Related-articles)** - List of related articles you might find useful when using the duplicate payment protection feature.
 
 ## Prerequisites
@@ -102,28 +101,25 @@ In some cases, the cashier might explicitly chose to skip the duplicate payment 
     
 ![Skip Payment Recovery](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
-### How to handle the case when the customer leaves the store
-In some cases, the customer might chose to leave the store before the cashier can finalize the transaction. 
-In those cases it is recommended to follow the steps described in the [How to skip Payment Recovery](#How-to-skip-Payment-Recovery) section to void the transaction and manually void the payment on the portal of the payment gateway/processor.
+### What to do if the customer leaves the store
+In some cases, the customer might chose to leave the store before the cashier can finalize the transaction. In those cases, follow the steps described in the [How to skip payment recovery](#How-to-skip-payment-recovery) section to void the transaction and manually void the payment on the portal of the payment gateway/processor.
 
-## Troubleshooting Steps
+## Troubleshooting steps
 
-### General Issues
-For all general issues you should always consult the Modern POS or IIS Hardware Station Event Logs first. These can be found under the nodes in the Windows Event Log:
+### General issues
+For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs first. The logs can be found under the nodes in the Windows event log:
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
 
-### Validating that the customer is not double charged
-Even when the duplicate payment protection feature is invoked it is generally recommended that the merchant verifies that no double charge has occurred by checkin all transactions on the corresponding payment gateway/processor portal.
+### Validate that the customer is not double charged
+Even when the duplicate payment protection feature is invoked, it is generally recommended that the merchant verifies that no double charge has occurred. To do this, check all transactions on the corresponding payment gateway/processor portal.
 
-## Common Issues
-
-### Payment Recovery Fails
+### Payment recovery fails
 | Title | Payment Recovery Fails |
 | :-- | :-- |
 | **Symptom** | An error occurs while a previous payment is being recovered on the Dynamics 365 for Retail Modern POS. |
-| **Root Cause** | This can happen when there is an issue in the payment connector or payment gateway/processor ths does not allow the previous payment to be recovered. |
-| **Fix** | Since the previous payment cannot be recovered the cashier has to skip the recovery as described in the [How to skip Payment Recovery](#How-to-skip-Payment-Recovery) section. | 
+| **Root Cause** | This can happen when there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. |
+| **Fix** | Since the previous payment cannot be recovered, the cashier has to skip the recovery as described in the [How to skip Payment Recovery](#How-to-skip-payment-recovery) section. | 
 
 ## Related Articles
 - **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)**
