@@ -46,8 +46,8 @@ This topic covers the following aspects of the duplicate payment protection feat
 - **[Related articles](#Related-articles)** - List of related articles you might find useful when using the duplicate payment protection feature.
 
 ## Prerequisites
-- The payment connector and corresponding payment gateway or processor must support this feature. The payment connector is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
-- If a connector implements the corresponding duplicate payment protection interfaces, the feature is automatically enabled in the Dynamics 365 for Retail Modern POS. Otherwise, it is automatically turned off.
+- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- If a connector implements the corresponding duplicate payment protection interfaces, the feature is automatically enabled in Dynamics 365 for Retail Modern POS. Otherwise, it is automatically turned off.
 
 <!---
 The [Implement Duplicate Payment Protection](TODO) article describes in detail how to implement support for the duplicate payment protection feature for a given payment connector.
@@ -56,7 +56,7 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 
 
 ## Scenario details
-The duplicate payment protection feature is applicable to any scenario in which a payment is initiated and completed on a payment terminal, but the Dynamics 365 for Retail Modern POS is unable to receive the corresponding response. As a result, the customer's card (such as a credit card) is charged but the payment line is not added to the POS. In most cases, the cashier will trigger a subsequent payment on the payment terminal, which results in a duplicate payment for the customer.
+The duplicate payment protection feature is applicable to any scenario in which a payment is initiated and completed on a payment terminal, but Dynamics 365 for Retail Modern POS is unable to receive the corresponding response. As a result, the customer's card (such as a credit card) is charged but the payment line is not added to the POS. In most cases, the cashier will trigger a subsequent payment on the payment terminal, which results in a duplicate payment for the customer.
 
 ### How duplicate payments scenarios are triggered
 1. **Cashier initiates payment**
@@ -72,7 +72,7 @@ The duplicate payment protection feature is applicable to any scenario in which 
     - The cashier completes the reset/launch of Dynamics 365 for Retail Modern POS but the payment is not added to the cart.
 
 ### How previous payments are recovered
-As the cashier continues to interact with the previous transaction, there are several ways in which the previous payment through the terminal is automatically recovered. In each of these scenarios the cashier is shown a dialog box indicating that a previous payment has already been made. The payment is automatically recovered and added as a payment line to the cart.
+As the cashier continues to interact with the previous transaction, there are several ways in which the previous payment through the terminal is automatically recovered. In each of these scenarios the cashier is shown a dialog box indicating that a payment has already been made. The payment is automatically recovered and added as a payment line to the cart.
 
 The primary function of the duplicate payment protection feature is to put Dynamics 365 for Retail Modern POS back into the same state it would be if the original payment would have been successfully processed and the corresponding payment line was added to the cart.
 
@@ -88,7 +88,7 @@ The primary function of the duplicate payment protection feature is to put Dynam
 In some cases, the cashier might explicitly choose to skip the duplicate payment protection and opt not to recover a previous payment. In those cases, the cashier can use the following steps described to void the transaction without recovering the payment.
 
 1. **Re-launch Dynamics 365 for Retail Modern POS**
-    - After the Dynamics 365 for Retail Modern POS has lost connectivity to the payment terminal, re-launch the POS.
+    - After Dynamics 365 for Retail Modern POS has lost connectivity to the payment terminal, re-launch the POS.
 2. **Void the transaction**
     - Navigate to the cart page and click **Void Transaction**.
 3. **Ignore the recovered payment**
@@ -110,7 +110,7 @@ For all general issues, you should always consult the Modern POS or IIS Hardware
 Even if the duplicate payment protection feature is enabled, it is generally recommended that the merchant verifies that no double charge has occurred. To do this, check all transactions on the corresponding payment gateway/processor portal.
 
 ### Payment recovery fails
-An error can occur while a previous payment is being recovered on Dynamics 365 for Retail Modern POS. This can happen when there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because  the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#How-to-skip-payment-recovery) section. | 
+An error may occur while a previous payment is being recovered on Dynamics 365 for Retail Modern POS. This can happen if there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because  the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#How-to-skip-payment-recovery) section. | 
 
 ## Additional resources
-- **[Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)**
+- [Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
