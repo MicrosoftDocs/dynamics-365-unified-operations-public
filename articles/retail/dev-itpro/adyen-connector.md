@@ -68,8 +68,8 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 
 | Connector type | Dip | Swipe | Tap | Manual entry |
 |---|---|---|---|---|
-| Card present | ✔ | ✔ | ✔ | No |
-| Card not present | No | No | No | ✔ |
+| Card present | Yes | Yes | Yes | No |
+| Card not present | No | No | No | Yes |
 
 ### Supported payment instruments
 
@@ -77,40 +77,45 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 
 | Brand | Variant | Supported | Card present | Card not present |
 |---|---|---|---|---|
-| MasterCard | Credit | ✔ | ✔ | ✔ |
-| MasterCard | Debit | ✔ | ✔ | ✔ |
-| MasterCard | Alpha Bank Bonus | ✔ | ✔ | ✔ |
-| MasterCard | Apple Pay | ✔ | ✔ | No |
-| MasterCard | Samsung Pay | ✔ | ✔ | No |
-| MasterCard | Maestro | ✔ | ✔ | ✔ |
-| MasterCard | Maestro Samsung Pay | ✔ | No |
-| MasterCard | Maestro UK | ✔ | ✔ | ✔ |
-| VISA | Credit | ✔ | ✔ | ✔ |
-| VISA | Debit | ✔ | ✔ | ✔ |
-| VISA | Alpha Bank Bonus | ✔ | ✔ | ✔ |
-| VISA | Android Pay | ✔ | ✔ | No |
-| VISA | Apple Pay | ✔ | ✔ | No |
-| VISA | Samsung Pay | ✔ | ✔ | No |
-| VISA | VISA Checkout | ✔ | ✔ | ✔ |
-| VISA | VISA Dankort | ✔ | ✔ | ✔ |
-| VISA | VISA Hipotecario | ✔ | ✔ | ✔ |
-| VISA | VISA Aravia Card | ✔ | ✔ | ✔ |
-| AMEX | Credit | ✔ | ✔ | ✔ |
-| AMEX | Debit | ✔ | ✔ | ✔ |
-| AMEX | Android Pay | ✔ | ✔ | No |
-| AMEX | Apple Pay | ✔ | ✔ | No |
-| AMEX | Samsung Pay | ✔ | ✔ | No |
-| AMEX | AMEX Commercial | ✔ | ✔ | ✔ |
-| AMEX | AMEX Consumer | ✔ | ✔ | ✔ |
-| AMEX | AMEX Corporate | ✔ | ✔ | ✔ |
-| AMEX | AMEX Small Business | ✔ | ✔ | ✔ |
-| Discover | Standard | ✔ | ✔ | ✔ |
-| Discover | Android Pay | ✔ | ✔ | No |
-| Discover | Apple Pay | ✔ | ✔ | No |
-| Discover | Samsung Pay | ✔ | ✔ | No |
-| Diners | Standard | ✔ | ✔ | ✔ |
-| Dineromail | Standard | ✔ | ✔ | ✔ |
-| JCB | Standard | ✔ | ✔ | ✔ |
+| MasterCard | Credit | ✔ | Yes | Yes |
+| MasterCard | Debit | ✔ | Yes | Yes |
+| MasterCard | Alpha Bank Bonus | ✔ | Yes | Yes |
+| MasterCard | Apple Pay | ✔ | Yes | No |
+| MasterCard | Samsung Pay | ✔ | Yes | No |
+| MasterCard | Maestro | ✔ | Yes | Yes |
+| MasterCard | Maestro Samsung Pay | ✔ | Yes | No |
+| MasterCard | Maestro UK | ✔ | Yes | Yes |
+| VISA | Credit | ✔ | Yes | Yes |
+| VISA | Debit | ✔ | Yes | Yes |
+| VISA | Alpha Bank Bonus | ✔ | Yes | Yes |
+| VISA | Android Pay | ✔ | Yes | No |
+| VISA | Apple Pay | ✔ | Yes | No |
+| VISA | Samsung Pay | ✔ | Yes | No |
+| VISA | VISA Checkout | ✔ | Yes | Yes |
+| VISA | VISA Dankort | ✔ | Yes | Yes |
+| VISA | VISA Hipotecario | ✔ | Yes | Yes |
+| VISA | VISA Aravia Card | ✔ | Yes | Yes |
+| AMEX | Credit | ✔ | Yes | Yes |
+| AMEX | Debit | ✔ | Yes | Yes |
+| AMEX | Android Pay | ✔ | Yes | No |
+| AMEX | Apple Pay | ✔ | Yes | No |
+| AMEX | Samsung Pay | ✔ | Yes | No |
+| AMEX | AMEX Commercial | ✔ | Yes | Yes |
+| AMEX | AMEX Consumer | ✔ | Yes | Yes |
+| AMEX | AMEX Corporate | ✔ | Yes | Yes |
+| AMEX | AMEX Small Business | ✔ | Yes | Yes |
+| Discover | Standard | ✔ | Yes | Yes |
+| Discover | Android Pay | ✔ | Yes | No |
+| Discover | Apple Pay | ✔ | Yes | No |
+| Discover | Samsung Pay | ✔ | Yes | No |
+| Diners | Standard | ✔ | Yes | Yes |
+| Dineromail | Standard | ✔ | Yes | Yes |
+| JCB | Standard | ✔ | Yes | Yes |
+| Union Pay* | Standard | Support will be added in a future release. | No | Not applicable |
+| Interac Debit | Standard | Support will be added in a future release. | No | No |
+
+*Adyen does not support recurring tokens for Union Pay, so it cannot be used for card not present purchases.
+
 
 #### Supported gift cards
 
@@ -130,12 +135,12 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 #### Supported Dynamics 365 payment features
 
-The following table shows the set of Dynamics 365 payment features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payment SDK and some Retail components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
+The following table shows the set of Dynamics 365 payment features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some Retail components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
 
 | Scheme | Card present | Card not present |
 |---|---|---|
-| Duplicate Payment Protection | ✔ (version 8.1.3) | No |
-| Omni Channel Tokenization | ✔ (version 8.1.3) | ✔ (version 8.1.3) |
+| Duplicate Payment Protection | Yes (version 8.1.3) | No |
+| Omni Channel Tokenization | Yes (version 8.1.3) | Yes (version 8.1.3) |
 | Linked Refunds | Support will be added in a future release. | Support will be added in a future release. |
 
 ## Sign up with Adyen
@@ -191,7 +196,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Local Key Identifier | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Key Version | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
-    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | *Long String* |
+    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | *✔ |* |
     | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. | No | No | SVS |
@@ -206,7 +211,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
 Go to the [Point of sale](https://docs.adyen.com/developers/point-of-sale) page on the Adyen website, and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You will need this information in the [Configure the payment terminal IP address and EFT POS register number](#Configure-the-payment-terminal-IP-address-and-EFT-POS-register-number) section later in this topic.
 
 - IP address of the payment terminal
-- POIID
+- POIID (POIID is comprised of the serial number and model number of the device. It is used to uniquely identify the device.)
 
 After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You will need this information in the [EFT service](#EFT-service) section later in this topic.
 
@@ -271,7 +276,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 If you're packaging your own version of Modern POS by using the Retail SDK, you must follow these steps only one time in the SDK code before the installer is packaged. Otherwise, you must follow these steps after the standard Modern POS or IIS Hardware Station is installed.
 
 1. Open the **dllhost.exe.config** file (for Modern POS) or the **web.config** file (for IIS Hardware Station).
-2. Update the **PreloadedConfiguration** section as shown here, to switch from the legacy payment device adapter to the standard payment device adapter.
+2. Update the **PreloadedComposition** section as shown here, to switch from the legacy payment device adapter to the standard payment device adapter.
 
     ``` xml
     <PreloadedComposition>
@@ -309,7 +314,7 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     | Local Key Identifier | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Key Version | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | No | 1 |
-    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | *Long String* |
+    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | *The full cloud API key* |
     | Supported Currencies | Enter the currencies that the connector should process. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. The possible values are **SVS** and **GIVEX**. | No | No | SVS |
@@ -343,7 +348,7 @@ For all general issues, you should always consult the Modern POS or IIS Hardware
 
 #### Failing payment transactions
 
-When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS will contain a PSP reference number. Provide this reference number when you contact Adyen support for help with specific transactions.
+When payment transactions aren't successfully processed through the Adyen payment terminal, the corresponding error messages in the Dynamics 365 POS will contain a PSP reference number(PSP is the reference ID provided by Adyen used to uniquely identify each transaction). Provide this reference number when you contact Adyen support for help with specific transactions.
 
 ## Common issues
 
