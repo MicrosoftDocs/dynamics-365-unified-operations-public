@@ -37,7 +37,7 @@ You can register the lease of a fixed asset and the subsequent return of the lea
 ## Lease a fixed asset
 
 1. Go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
-2. On the **Overview** tab, select the fixed asset to lease, and then, on the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Lease** to open the **FA leased** page.
+2. Select the fixed asset to lease, and then, on the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Lease** to open the **FA leased** page.
 3. Create a new line.
 4. In the **Date of lease** field, select the date when the fixed asset was leased out.
 5. In the **Expected return date** field, select the planned return date.
@@ -59,7 +59,7 @@ You can register the lease of a fixed asset and the subsequent return of the lea
 21. Select **OK**. The lines for the leased fixed asset appear in the journal.
 
     > [!NOTE]
-    > To create transactions for several fixed assets, you can select **Group operations** \> **Lending** on the Action Pane of the **Journal voucher** page.
+    > To create transactions for several fixed assets, you can select **Group operations** \> **Lease** on the Action Pane of the **Journal voucher** page.
 
 22. Select **Validate** \> **Validate** to validate the transaction.
 23. Select **Post** \> **Post** to post the journal. Fixed asset and ledger transactions are created.
@@ -71,7 +71,7 @@ You can register the lease of a fixed asset and the subsequent return of the lea
 You can register the return of a leased fixed asset in the same way that you registered the lease. Create a return-from-lease transaction on the **FA journal** page, and then verify the return date on the **FA on loan** and **Journal transactions** pages.
 
 1. Go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
-2. On the **Overview** tab, select the leased fixed asset to return, and then, on the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Lease** to open the **FA leased** page.
+2. Select the leased fixed asset to return, and then, on the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Lease** to open the **FA leased** page.
 3. Create a new line.
 4. In the **Actual return date** field, view or modify the date, and then close the page.
 5. Follow steps 9 through 21 in the [Lease a fixed asset](#lease-a-fixed-asset) procedure.
