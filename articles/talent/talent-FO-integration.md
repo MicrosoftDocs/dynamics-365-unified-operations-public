@@ -5,7 +5,7 @@ title: Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integr
 description: This topic explains what data is synchronized in a Talent and Finance and Operations integration.
 author: Darinkramer
 manager: AnnBe
-ms.date: 12/28/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -150,17 +150,17 @@ project in Finance and Operations. If the task number is 9 in Data Integrator, t
 
 1. Capture the task index from Data Integrator (in our example it is "9".)
 
-![](media/CaptureTaskIndex.png)
+![Capture task index from Data Integrator](media/CaptureTaskIndex.png)
 
 2. Track the execution time of the project.
 
-![](media/CaptureTimeOfExecution.png)
+![Track execution time of project](media/CaptureTimeOfExecution.png)
 
 3. In Finance and Operations, identify index - 1. In this example, the
 project with suffix "8" and execution time of index "0" project matches with
 the execution time in Step 2.
 
-![](media/IdentifyIndex.png)
+![Identify index](media/IdentifyIndex.png)
 
 ## Q: After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
 
@@ -169,7 +169,7 @@ that the Talent data is updated and available in CDS. This is a near real-time
 sync and can be verified in PowerApps by looking at the data within the data
 entities.
 
-![](media/DataInCDS.png)
+![Data in CDS](media/DataInCDS.png)
 
 If the data is not appearing as expected in CDS, verify that the entity is
 supported in the integration. To include additional data in CDS, a change will be required on the Microsoft side.
@@ -209,7 +209,7 @@ Refresh the data entities in Finance and Operations: **Data management \> Framew
 Parameters \> Entity settings \> Refresh entity list.** This should take a couple
 of minutes to complete, then you should see those mappings. This issue occurs when brand new projects are spun up.
 
-![cid:image002.png\@01D49839.6C126650](media/MissingFieldMapping.png)
+![Missing field mapping](media/MissingFieldMapping.png)
 
 
 ## For more information
