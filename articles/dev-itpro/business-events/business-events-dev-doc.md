@@ -2,10 +2,10 @@
 # required metadata
 
 title: Business events developer documentation
-description: This documentation will walk through the development process and best practice for implementing business events.
+description: This documentation walks through the development process and best practice for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,26 +33,23 @@ ms.dyn365.ops.version: 2019-02-28
 
 ## Implementing a business event
 
-There are two classes that need to be implemented - 1) The business event. 2)
-The business event contract. The business event class extends BusinessEventsBase
-and provides support for constructing, payload building, and sending the
-business event. The business event contract class extends
-BusinessEventsContract. It provides the definition of the business event payload
-and provides for the population of the contract at runtime.
+There are two classes that need to be implemented:
+1. The business event. 
+2. The business event contract. 
 
-**BusinessEventsBase extension**
+The business event class extends BusinessEventsBase and provides support for constructing, payload building, and sending the business event. The business event contract class extends BusinessEventsContract. It provides the definition of the business event payload and provides for the population of the contract at runtime.
 
-**Naming convention**  
-A \<noun/noun phrase\>\<action phrase\>BusinessEvent pattern should be followed
-for business event names.  
-Examples: VendorInvoicePostedBusinessEvent, CollectionLetterSentBusinessEvent.
-The 'noun/noun phrase' portion should comply with existing application area
-prefix definitions.
+### BusinessEventsBase extension
 
-Implementing a BusinessEventsBase extension is straight forward. It consists of
-extending the BusinessEventsBase class and implementing a static construction
-method, a private new method, methods to maintain internal state, and the
-buildContract method.
+#### Naming convention  
+A \<noun/noun phrase\>\<action phrase\>BusinessEvent pattern should be followed for business event names.  
+
+Examples: VendorInvoicePostedBusinessEvent, CollectionLetterSentBusinessEvent 
+
+The 'noun/noun phrase' portion should comply with existing application area prefix definitions.
+
+#### Implementation
+Implementing a BusinessEventsBase extension is straight forward. It consists of extending the BusinessEventsBase class and implementing a static construction method, a private new method, methods to maintain internal state, and the buildContract method.
 
 1.  Extend the BusinessEventsBase class
 
@@ -63,13 +60,10 @@ buildContract method.
 public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 ```
 
-Note the BusinessEvents attribute. This provided the business events framework
-with information on the business event's contract, name, description, and the
-module it is part of. Labels need to be defined for the name and description
-arguments.
+Note the BusinessEvents attribute. This provided the business events framework with information on the business event's contract, name, description, and the module it is a part of. Labels must be defined for the name and description arguments.
 
-2.  Implement a static newFrom\<foo\> method. Where foo is a typically a table
-    buffer used to initialize the business event contract.
+2.  Implement a static newFrom\<foo\> method. Where foo is a typically a table buffer used to initialize the business event contract.
+
 ```
 static public SalesInvoicePostedBusinessEvent
 newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
@@ -85,7 +79,9 @@ return businessEvent;
 
 }
 ```
+
 3. Implement a private new method. The new method is only called from the static constructor.
+
 ```
 private void new()
 
@@ -93,7 +89,9 @@ private void new()
 
 }
 ```
+
 4. Implement private parm methods to maintain internal state.
+
 ```
 private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour \_custInvoiceJour = custInvoiceJour)
 {
@@ -104,6 +102,7 @@ return custInvoiceJour;
 
 }
 ```
+
 5. Implement buildContract method.
 
 ```
@@ -119,12 +118,9 @@ SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour)
 }
 ```
 
-The buildContract method is attributed with the Wrappable(true) and
-Replaceable(true) attributes for extensibility. The buildContract method will
-only be called when a business event is enabled for a company.
+The buildContract method is attributed with the Wrappable(true) and Replaceable(true) attributes for extensibility. The buildContract method will only be called when a business event is enabled for a company.
 
-Below is the complete implementation of the sales order invoice posted business
-event.
+Below is the complete implementation of the sales order invoice posted business event.
 
 ```
 /// \<summary\>
@@ -199,17 +195,11 @@ public BusinessEventsContract buildContract()
 
 }
 ```
-**BusinessEventsContract extension**
 
-A business event contract class extends BusinessEventsContract and provides the
-definition and population of the business event payload. Although there is some
-variation across business events the basic structure for the business event
-contract is consistent.
+### BusinessEventsContract extension
+A business event contract class extends BusinessEventsContract and provides the definition and population of the business event payload. Although there is some variation across business events, the basic structure for the business event contract is consistent.
 
-Implementing a business event contract consist of extending the
-BusinessEventContract class, defining internal state, implementing an
-initialization method, providing a static construction method, and the
-implementation of parm methods for accessing contract state.
+Implementing a business event contract consist of extending the BusinessEventContract class, defining internal state, implementing an initialization method, providing a static construction method, and the implementation of parm methods for accessing contract state.
 
 1.  Extending BusinessEventContract
 
@@ -219,6 +209,7 @@ implementation of parm methods for accessing contract state.
 public final class SalesInvoicePostedBusinessEventContract extends
 BusinessEventsContract
 ```
+
 2. Add private variables to hold contract state.
 
 ```
@@ -238,9 +229,11 @@ private TaxAmount invoiceTaxAmount;
 
 private LegalEntityDataAreaId legalEntity;
 ```
+
 The class must be attributed with the [DataContract] attribute.
 
 1.  Implement private initialization method.
+
 ```
 private void initialize(CustInvoiceJour \_custInvoiceJour)
 
@@ -265,10 +258,10 @@ legalEntity = \_custInvoiceJour.DataAreaId;
 }
 ```
 
-The initialize method is responsible for setting the contract classes private
-state based on data provided through the static constructor method.
+The initialize method is responsible for setting the contract classes private state based on data provided through the static constructor method.
 
 3. Provide a static constructor method.
+
 ```
 public static SalesInvoicePostedBusinessEventContract
 newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
@@ -284,8 +277,8 @@ return contract;
 }
 
 ```
-The static constructor methods calls a private initialize method to initialize
-the private class state.
+
+The static constructor methods calls a private initialize method to initialize the private class state.
 
 4. Implement parm methods for accessing contract state.
 
@@ -303,6 +296,7 @@ return invoiceAccount;
 }
 
 ```
+
 Parm methods should be attributed using the [DataMember('\<name\>')] attribute. The name provided on the attribute (e.g. 'InvoiceAccount') will be the name visible to data contract consumers.
 
     > [!Note]
@@ -312,12 +306,10 @@ Parm methods should be attributed using the [DataMember('\<name\>')] attribute. 
 ```
 status = enum2Symbol(enumNum(CustVendDisputeStatus), \_custDispute.Status);
 ```
-In some cases population of the data contract's internal state will require
-additional retrieval methods to be implemented. This should be implemented as
-private methods and called from the initialize method.
 
-Below is the complete implementation of the sales order invoice posted business
-event contract.
+In some cases population of the data contract's internal state will require additional retrieval methods to be implemented. This should be implemented as private methods and called from the initialize method.
+
+Below is the complete implementation of the sales order invoice posted business event contract.
 
 ```
 /// \<summary\>
@@ -503,6 +495,7 @@ return legalEntity;
 
 }
 ```
+
 ### Sending a business event
 
 Application code must be modified to send the business event at the appropriate point. Often it is possible to do this a common point within a framework. Documents that extend SourceDocument have a common point for creation and sending of a business event. See [Source document framework support](https://msdyneng.visualstudio.com/FinOps/_wiki/wikis/FinOps.wiki?wikiVersion=GBwikiMaster&pagePath=%2FHome%2FD365%20Finance%20and%20Operations%2FAuthoring%20business%20events#Source-document-framework-support).
@@ -512,9 +505,7 @@ VendVoucher.createBusinessEvent as examples.
 
 The sending of a business event is tied to the commit of the underlying transaction. If the underlying transaction is aborted the business event will not be sent. This allows applications to "send" the business event a the point where the payload information is available.
 
-Whether a business event is published to a consumer is determine by the business events framework. As a general rule applications should always "send" a business event without regard to whether the business event is enabled or not. If there
-is significant additional logic required or the logic for sending a business event has a performance impact an application can check if a particular business event is enabled before executing business logic associated with the sending of
-the business events. This is done through the BusinessEventsConfigurationReader::isBusinessEventEnabled method.
+Whether a business event is published to a consumer is determine by the business events framework. As a general rule applications should always "send" a business event without regard to whether the business event is enabled or not. If there is significant additional logic required or the logic for sending a business event has a performance impact an application can check if a particular business event is enabled before executing business logic associated with the sending of the business events. This is done through the BusinessEventsConfigurationReader::isBusinessEventEnabled method.
 
 ```
 if (BusinessEventsConfigurationReader::isBusinessEventEnabled(new
