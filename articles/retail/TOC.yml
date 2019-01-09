@@ -57,6 +57,8 @@
     href: cash-denominations.md
   - name: Payments FAQ
     href: dev-itpro/payments-retail.md
+  - name: Duplicate payments prevention
+    href: duplicate-payment-protection.md
 - name: Purchase orders
   items:
   - name: Purchase order overview
