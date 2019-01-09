@@ -301,7 +301,8 @@ Parm methods should be attributed using the [DataMember('\<name\>')] attribute. 
 
    > [!Note]
    > **RecIds** should not be part of a business event payload. Use the alternate key (AK) instead.
-   > **Enum values** must be converted to their symbol value for publishing. Use the enum2Symbol method to convert form the enum's value to the symbol string. For example:
+   >
+   > **Enum values** must be converted to their symbol value for publishing. Use the enum2Symbol method to convert from the enum's value to the symbol string. For example:
 
 ```
 status = enum2Symbol(enumNum(CustVendDisputeStatus), \_custDispute.Status);
@@ -496,16 +497,16 @@ return legalEntity;
 }
 ```
 
-### Sending a business event
+## Sending a business event
 
 Application code must be modified to send the business event at the appropriate point. Often it is possible to do this a common point within a framework. Documents that extend SourceDocument have a common point for creation and sending of a business event. See [Source document framework support](https://msdyneng.visualstudio.com/FinOps/_wiki/wikis/FinOps.wiki?wikiVersion=GBwikiMaster&pagePath=%2FHome%2FD365%20Finance%20and%20Operations%2FAuthoring%20business%20events#Source-document-framework-support).
 
-Other frameworks also provide common points for the sending of business events. For example the CustVendVoucher class hierarchy has a post method that is leveraged for sending business events related to the posting of Customer or Vendor vouchers. Overriding base class implementation provides specialization of the business event send logic. See CustVoucher.createBusinessEvent or
+Other frameworks also provide common points for the sending of business events. For example the CustVendVoucher class hierarchy has a post method that is leveraged for sending business events related to the posting of customer or vendor vouchers. Overriding base class implementation provides specialization of the business event send logic. See CustVoucher.createBusinessEvent or
 VendVoucher.createBusinessEvent as examples.
 
-The sending of a business event is tied to the commit of the underlying transaction. If the underlying transaction is aborted the business event will not be sent. This allows applications to "send" the business event a the point where the payload information is available.
+The sending of a business event is tied to the commit of the underlying transaction. If the underlying transaction is aborted, the business event will not be sent. This allows applications to "send" the business event a the point where the payload information is available.
 
-Whether a business event is published to a consumer is determine by the business events framework. As a general rule applications should always "send" a business event without regard to whether the business event is enabled or not. If there is significant additional logic required or the logic for sending a business event has a performance impact an application can check if a particular business event is enabled before executing business logic associated with the sending of the business events. This is done through the BusinessEventsConfigurationReader::isBusinessEventEnabled method.
+Whether a business event is published to a consumer is determine by the business events framework. As a general rule, applications should always "send" a business event without regard to whether the business event is enabled or not. If there is significant additional logic required or the logic for sending a business event has a performance impact an application can check if a particular business event is enabled before executing business logic associated with the sending of the business events. This is done through the BusinessEventsConfigurationReader::isBusinessEventEnabled method.
 
 ```
 if (BusinessEventsConfigurationReader::isBusinessEventEnabled(new
@@ -537,22 +538,20 @@ CollectionStatusUpdatedBusinessEvent::newFromCustDispute(dispute).send();
 
 }
 ```
-### Source document framework support
 
-The source document framework supports the sending of business events automatically as part of the transition from an in-process state to a completed state for the document. In order for documents extending the source document framework to leverage this capability they need to implement an extension to the SourceDocumentStateInProcess.getBusinessEvent method to create and return the
-correct BusinessEventsBase extension type.
+## Source document framework support
 
-Extending a business event payload
-==================================
+The source document framework supports the sending of business events automatically as part of the transition from an in-process state to a completed state for the document. In order for documents extending the source document framework to leverage this capability, they need to implement an extension to the SourceDocumentStateInProcess.getBusinessEvent method to create and return the correct BusinessEventsBase extension type.
 
-There may be additional information that you wish to publish as part of the payload of a business event. Sending this additional information can be accomplished by following these steps to extend the business event's standard
-payload.
+## Extending a business event payload
 
-Example scenario
-----------------
+There may be additional information that you wish to publish as part of the payload of a business event. Sending this additional information can be accomplished by following these steps to extend the business event's standard payload.
+
+### Example scenario
+
 Extend the CustFreeTextInvoicePostedBusinessEventContract to include a customer classification. This is a custom classification that is industry based.
 
-### Step 1: Create an extended business event contract
+#### Step 1: Create an extended business event contract
 
 Create a new contract that is composed of the standard business event contract plus any additional information to be included in the payload.
 
@@ -576,7 +575,7 @@ private str customerClassification;
 }
 ```
 
-### Step 2: Initialize method
+#### Step 2: Initialize method
 
 Create an initialize() method that initializes the value of the private contract.
 
@@ -593,9 +592,10 @@ custFreeTextInvoicePostedBusinessEventContract =
 
 ```
 
-### Step 3: static NewFrom method
+#### Step 3: static NewFrom method
 
 Create a static newFrom method that takes the standard contract as an argument and calls the initialize() method.
+
 ```
 public static CustFreeTextInvoicePostedBusinessEventExtendedContract
 newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
@@ -613,7 +613,7 @@ return contract;
 
 ```
 
-### Step 4: Map parm methods
+#### Step 4: Map parm methods
 
 Copy the parm methods from the standard data contract and modify each method to get and set values in the your class' standard contract instance.
 
@@ -642,7 +642,8 @@ return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
 }
 
 ```
-**Step 5: Add parms methods for additional payload data**
+
+#### Step 5: Add parms methods for additional payload data**
 
 ```
 [DataMember('CustomerClassification')]
@@ -809,7 +810,8 @@ return customerClassification;
 }
 
 ```
-### Step 7: Wrap the buildContract() method.
+
+#### Step 6: Wrap the buildContract() method.
 
 Provide a build contract implementation that calls 'next' to load the standard business event contract and populates any payload extensions. Below is the complete class.
 
@@ -837,8 +839,6 @@ return businessEventContract;
 }
 ```
 
-Summary
--------
-
+## Summary
 The payload of a business event payload can be easily extended by implementing a business event contract that supplements the standard business event contract and an extension class that uses chain-of-command (CoC) to wrap the implementation of the buildContract() method.
 
