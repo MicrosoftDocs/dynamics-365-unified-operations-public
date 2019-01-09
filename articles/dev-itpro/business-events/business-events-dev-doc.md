@@ -232,7 +232,7 @@ private LegalEntityDataAreaId legalEntity;
 
 The class must be attributed with the [DataContract] attribute.
 
-1.  Implement private initialization method.
+3.  Implement private initialization method.
 
 ```
 private void initialize(CustInvoiceJour \_custInvoiceJour)
@@ -260,7 +260,7 @@ legalEntity = \_custInvoiceJour.DataAreaId;
 
 The initialize method is responsible for setting the contract classes private state based on data provided through the static constructor method.
 
-3. Provide a static constructor method.
+4. Provide a static constructor method.
 
 ```
 public static SalesInvoicePostedBusinessEventContract
@@ -280,7 +280,7 @@ return contract;
 
 The static constructor methods calls a private initialize method to initialize the private class state.
 
-4. Implement parm methods for accessing contract state.
+5. Implement parm methods for accessing contract state.
 
 ```
 [DataMember('InvoiceAccount')]
