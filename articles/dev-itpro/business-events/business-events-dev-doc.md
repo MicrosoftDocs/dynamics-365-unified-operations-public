@@ -299,9 +299,9 @@ return invoiceAccount;
 
 Parm methods should be attributed using the [DataMember('\<name\>')] attribute. The name provided on the attribute (e.g. 'InvoiceAccount') will be the name visible to data contract consumers.
 
-    > [!Note]
-    > **RecIds** should not be part of a business event payload. Use the alternate key (AK) instead.
-    > **Enum values** must be converted to their symbol value for publishing. Use the enum2Symbol method to convert form the enum's value to the symbol string. For example:
+   > [!Note]
+   > **RecIds** should not be part of a business event payload. Use the alternate key (AK) instead.
+   > **Enum values** must be converted to their symbol value for publishing. Use the enum2Symbol method to convert form the enum's value to the symbol string. For example:
 
 ```
 status = enum2Symbol(enumNum(CustVendDisputeStatus), \_custDispute.Status);
