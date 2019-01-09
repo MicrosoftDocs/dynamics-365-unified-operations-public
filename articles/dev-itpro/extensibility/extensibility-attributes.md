@@ -5,7 +5,7 @@ title: Attributes that make methods extensible
 description: This topic provides information about attributes that make methods extensible.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
