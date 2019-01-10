@@ -85,7 +85,7 @@ Under each of the above scenarios, if there was a previous payment which must be
 
 ![Recover Payment](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
-After the cashier reviews the The payment is automatically recovered and added as a payment line to the cart.
+After the cashier selects *OK*, the payment is automatically recovered and added as a payment line to the cart.
 
 The primary function of the duplicate payment protection feature is to put Dynamics 365 for Retail Modern POS back into the same state it would be if the original payment would have been successfully processed and the corresponding payment line was added to the cart.
 
