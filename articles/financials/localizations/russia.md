@@ -45,6 +45,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
 - [Fixed asset counting](rus-fixed-assets-counting.md)
 - [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
+- [Maintain fixed assets](rus-maintain-fixed-assets.md)
 - [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
 
 
