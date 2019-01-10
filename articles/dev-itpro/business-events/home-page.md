@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events
-description: Business events provide a mechanism for external systems to receive notifications from Finance and Operations and hence allow such applications to take a business action in response to the business event.
+description: This topic provides information about business events. Business events provide a mechanism for external systems to receive notifications from Microsoft Dynamics 365 for Finance and Operations. Therefore, those systems can perform business actions in response to the business events.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/08/2019
@@ -31,161 +31,162 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-Business events provide a mechanism for external systems to receive notifications from Finance and Operations and hence allow such applications to take a business action in response to the business event.
+Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 for Finance and Operations. In this way, the systems can perform business actions in response to the business events.
 
-Business events happen when a business process gets executed. As part of executing a business process, users participating in the business process take business actions to complete tasks that make up the business process. 
+Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
-In Dynamics 365 for Finance and Operations, a business action taken by a user can be a workflow action or a non-workflow action. Approving a purchase requisition is an example of a workflow action, while confirming a purchase order is a non-workflow action. However, both actions are eligible to generate business events which could be of interest to external systems for integration and notification use cases. 
+In Finance and Operations, a business action that a user performs can be either a workflow action or a non-workflow action. Approval of a purchase requisition is an example of a workflow action, whereas confirmation of a purchase order is an example of a non-workflow action. Both types of actions can generate business events that external systems can use in integration and notification scenarios. 
 
 ## Prerequisites
 
-Since business events can be consumed via Microsoft Flow or Azure Service Bus or Azure Event Grid, customers must bring their subscriptions to the corresponding asset which would then help consume business events.
-
-Business events are available in Platform update 24 and later. Hence, having this platform version at a minimum is a pre-requisite.
+- Business events can be consumed via Microsoft Flow, Microsoft Azure Service Bus, or Azure Event Grid. Therefore, customers must bring their subscriptions to the asset that will help consume business events.
+- Business events are available in Platform update 24 and later. Therefore, at least Platform update 24 is required.
 
 > [!IMPORTANT]
-> Business events must not be construed as a mechanism to export data out of Finance and Operations. The reason for this being, by definition, events are supposed to be lightweight and nimble. Hence, it is not expected for a business event to carry large payloads to fulfill data export scenarios. 
+> Business events must not be considered a mechanism for exporting data out of Finance and Operations. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
 
 ## Enabling business events
 
-Business event functionality is disabled by default. It can be enabled by following the below steps.
+By default, the business event functionality is turned off. To turn it on, follow one of these steps.
 
-1.  Enable the **BusinessEventsMaster** flight by executing the following SQL statement in non-production environments followed by an IIS reset.
+- In non-production environments, turn on the BusinessEventsMaster flight by running the following SQL statement and then doing a reset of Microsoft Internet Information Services (IIS).
 
-    To enable on production environments, a support case must be created with Microsoft.
+    ```
+    INSERT INTO SYSFLIGHTING VALUES ('BusinessEventsMaster', 1, 12719367, <Partition>, <RecID>, 1)
+    ```
 
-    INSERT INTO SYSFLIGHTING VALUES (‘**BusinessEventsMaster’**, 1, 12719367, Partition, RecID, 1)
+    - **\<Partition\>** is the partition ID from the environment. To obtain this value, query (select) for any record. Every record will have a partition ID that you can copy.
+    - **\<RecID\>** can be the same as the partition ID. However, if multiple flights are enabled, this value might be the partition ID + *n*, to help guarantee a unique value.
 
--   Partition is the partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+- In production environments, you must create a support case with Microsoft.
 
--   RecID can be same as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value.
+## Business events that are implemented in Finance and Operations
 
-## Business events implemented in Finance and Operations
+In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md) and [Business events in workflow](business-events-workflow.md).
 
-Dynamics 365 for Finance and Operations has business events implemented in certain business processes out-of-the-box. These business events cover both workflow and non-workflow business events. This is explained in detail [Application business events](app-business-events.md) and [Business events in workflow](business-events-workflow.md).
-
-Any new business event that must be implemented will be a developer experience using extensions. This is explained in detail in [Business events developer documentation](business-events-dev-doc.md).
+A developer must use extensions to implement new business events. For more information, see [Business events developer documentation](business-events-dev-doc.md).
 
 ## Business event catalog
 
-The business event catalog shows the list of business events available in the specific instance of Finance and Operations. The catalog is useful to know which business events are available and can be filtered by category, business event ID, and name. The business event category identifies the source of the business event in Finance and Operations. Business events that originate in workflow are categorized as **Workflow** while business events from other modules will be categorized using the corresponding module name. 
+The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
 
-The business event catalog is built during DB sync at deployment time and hence, it is expected for users to see the complete list of business events in the catalog. However, if an explicit refresh of the catalog is required under certain circumstances, it can be affected from **Manage \> Rebuilt business events catalog**.
+The category of a business event identifies its source in Finance and Operations. Business events that originate from the workflow system are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name. 
 
-![Business events catalog](../media/businesseventscatalog.png)
+The business event catalog is built during database synchronization at the time of deployment. Therefore, users should see the complete list of business events in the catalog. However, if an explicit update of the catalog is required, you can select **Manage \> Rebuild business events catalog**.
 
-For a business event, the catalog shows the description of the business event which helps to understand more about what the business event is about and its context in the business process. The list of data fields which will be sent out in the event is also shown in the catalog. For use cases where external integration systems would like to know the schema of the payload for a business event during development, the **Download schema** option can be used to download the JSON schema.
+![Business event catalog](../media/businesseventscatalog.png)
 
-In summary, the business event catalog helps to identify which business events are needed for an implementation and the schema for each of the identified business event. The next step is to manage the end points.
+For each business event, the business event catalog shows a description. This description can help you better understand the business event and its context in the business process. The catalog also shows the list of data fields that will be sent out in the event.
 
-## Endpoints
+In scenarios where external integration systems require the schema of the payload for a business event during development, you can select **Download schema** to download the JavaScript Object Notation (JSON) schema.
 
-Endpoints allow you to manage the destination to which business events must be sent to by Finance and Operations. The following endpoint types are currently supported and hence, endpoints can be created for these messaging and event brokers out-of-the-box.
+In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
--   Azure service bus queue
+The next step is to manage the endpoints.
 
--   Azure service bus topic
+## Managing endpoints
 
--   Azure event grid
+Endpoints let you manage the destinations that Finance and Operations must send business events to. The following types of endpoints are currently supported. Therefore, endpoints can be created for these messaging and event brokers out of the box.
 
-Scenarios where multiple endpoints are needed to allow for organized distribution of business events to consumers, can be realized by creating multiple endpoints, as needed.
+- Azure Service Bus Queue
+- Azure Service Bus Topic
+- Azure Event Grid
 
-The Azure-based endpoints must be in the customers’ Azure subscription. As an example, if an Azure event grid is being used as an endpoint then, the event grid must be from the customer’s Azure subscription. Finance and Operations does not provision the endpoints but, will use the provided endpoint to send business events to. There may be additional costs incurred by customers for using these endpoints in their Azure subscription.
+Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
+
+The Azure-based endpoints must be in the customer's Azure subscription. For example, if Event Grid is used as an endpoint, the endpoint must be in the customer's Azure subscription.
+
+Finance and Operations doesn't provision the endpoints. It just sends events to the endpoints that are provided. Customer might incur additional costs if they use these endpoints in their Azure subscription.
 
 ![Business events endpoint](../media/businesseventsendpoint.png)
 
-## Azure service bus queue
+### Create an Azure Service Bus Queue endpoint
 
-Clicking **New** starts the experience to create a new endpoint. To create an Azure service bus queue endpoint, select the appropriate endpoint type, as shown.
+To create a new endpoint, select **New**. Then, in the **Endpoint type** field, select the appropriate endpoint type. To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.
 
 ![Business events new endpoint](../media/businesseventsnewendpoint1.png)
 
-Click **Next** to configure the endpoint name and Azure service bus queue name. In addition, Azure key vault must be set up to provide the necessary secret to the Azure messaging resource. Azure active directory application ID and application secret must also be set up, as shown below.
+Select **Next**, and specify the name of the endpoint and the Service Bus queue. In addition, you must set up Azure Key Vault to provide the secret to the Azure messaging resource. You must also set up the Azure Active Directory (Azure AD) application ID and application secret.
 
 ![Business events new endpoint](../media/businesseventsnewendpoint2.png)
 
-The **Azure active directory application ID** is the application ID created in your azure active directory in the Azure portal as shown below.
+In the **Azure Active Directory application ID** field, enter the application ID that is created in Azure AD in the Azure portal.
 
-![Business events configure AAD](../media/businesseventsaad1.png)
+![Business events configure Azure AD](../media/businesseventsaad1.png)
 
-The **Azure application secret** is the secret value for the application created above. This is shown below.
+In the **Azure application secret** field, enter the secret value for the application.
 
-![Business events configure AAD](../media/businesseventsaad2.png)
+![Business events configure Azure AD](../media/businesseventsaad2.png)
 
-The **Key vault DNS name** is the name from your key vault set up. This is shown below.
+In the **Key vault DNS name** field, enter the name from your Key Vault setup.
 
-![Business events configure Azure key vault](../media/businesseventskeyvault1.png)
+![Business events configure Azure Key Vault](../media/businesseventskeyvault1.png)
 
-The **Key vault secret name** is the secret name for the endpoint resource which must be created in your Azure key vault. This is shown below.
+In the **Key vault secret name** field, enter the secret name for the endpoint resource that must be created in Key Vault.
 
-![Business events configure Azure key vault](../media/businesseventskeyvault2.png)
+![Business events configure Azure Key Vault](../media/businesseventskeyvault2.png)
 
-## Azure service bus topic
+### Create an Azure Service Bus Topic endpoint
 
-Like creating an Azure service bus queue, an endpoint to Azure service bus topic can be created by choosing the appropriate endpoint type. The **topic name** must be the name of the service bus topic. The key vault information set up is like what is explained in the Azure service bus queue set up.
+To create an endpoint to a Service Bus topic, select **New**, and then, in the **Endpoint type** field, select **Azure Service Bus Topic**. The **Topic name** field must be set to the name of the Service Bus topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint.
 
-## Azure event grid
+### Create an Azure Event Grid endpoint
 
-An endpoint to Azure event grid can be created by choosing the appropriate endpoint type. The **endpoint URL** will be the URL from your Azure event grid topic. The key vault information set up is like what is explained in the Azure service bus queue set up.
+To create an endpoint to Event Grid, select **New**, and then, in the **Endpoint type** field, select **Azure Event Grid**. In the **Endpoint URL** field, enter the URL from the Event Grid topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint.
 
-Once the endpoint(s) are created as needed, the next step is to activate the business events.
+After you've created the endpoints that you require, the next step is to activate the business events.
 
-## Activating a business event
+## Activating business events
 
-Business events in the catalog are not active by default. Business events that are required must be activated from the catalog. One or more business events can be selected for activation which is done by clicking the **Activate** button.
+Business events in the business event catalog aren't active by default. From the catalog, you can activate any business events that you require. Select one or more business events, and then select **Activate**.
 
 ![Activating a business event](../media/businesseventsactivation.png)
 
-Business events can be activated for all legal entities or for specific legal entities. If the legal entity is left blank, then the selected business event(s) will be activated in all legal entities. If a business event is required only for specific legal entities, then it must be configured separately per legal entity. Endpoint must also be assigned to the selected business event(s) that are being activated.
+Business events can be activated either in all legal entities or in specific legal entities. If you leave the **Legal entity** field blank, the selected business events will be activated in *all* legal entities. If a business event is required only for specific legal entities, it must be configured separately for each legal entity.
 
-When business events happen as business processes are executed, the system will perform outbound processing of the event only for activated business events. Business events that are not activated will not be subjected to outbound processing.
+Endpoints must be assigned to the business events that are activated.
 
-Activated business events will show up in the **Active events** tab as shown below.
+When business events occur as business processes are run, the system will do outbound processing only for business events that have been activated.
+
+After business events are activated, they appear on the **Active events** tab.
 
 ![Active business events](../media/businesseventsactivetab.png)
 
-From the **active events** tab, business events can be deactivated. The system will not perform outbound processing for deactivated events. Deactivated events will show up in the **Inactive events** tab.
+From the **Active events** tab, you can inactivate business events. The system won't do outbound processing for inactivated events.
 
-![Inctive business events](../media/businesseventsinactivetab.png)
+After businessevents are inactivated, they appear on the **Inactive events** tab.
 
-Deactivation of business events can be used in cases when business event processing needs to be paused for a duration due to certain system maintenance activities in the integration landscape.
+![Inactive business events](../media/businesseventsinactivetab.png)
 
-When business requirements change and certain business events are no longer needed, such business events can be deactivated as opposed to deleting them from the active list. This approach will be useful in cases if the history of errors on these business events must be preserved. Such deactivated business events can be deleted later when there is no more business need to keep them deactivated.
+Business events can be inactivated when processing of business events must be paused for a period because of specific system maintenance activities in the integration landscape.
+
+When business requirements change, some business events might no longer be required. In this case, you can inactivate them instead of deleting them from the list of active events. This approach is useful if the history of errors for the business events must be preserved. Inactivated business events can be deleted later, when there is no longer a business need to keep them inactivated.
 
 ## Errors
 
-While performing outbound processing of business events, errors can happen which could prevent the system from successfully delivering the business event to the endpoint. The system retries several times to successfully process the business event. However, if all retries fail, the business event is saved in an error log. Error logs are accessible from the **Active events**, **Inactive events**, and **Errors** tab. The **Errors** tab shows all errors across all business events while the other tabs show errors in the context of a specific business event.
+While the system does outbound processing of business events, errors can occur. These errors might prevent the system from successfully delivering a business event to the endpoint. If an error occurs, the system retries several times to successfully process the business event. However, if all attempts are unsuccessful, the business event is saved in an error log.
 
-Each error can be subjected to on-demand outbound processing via the **Resend** action. Resending invokes the outbound processing logic with retries. If the outbound processing still fails, the error is logged in the error log. In such cases, the **Last process time** gives an indication of when the event was attempted to be processed. This information is available in the **Errors** tab.
+Error logs can be accessed from the **Active events**, **Inactive events**, and **Errors** tabs. The **Errors** tab shows all errors across all business events, whereas the other two tabs show errors in the context of a specific business event.
 
-In cases where the error cannot be successfully processed, the payload from the event can be downloaded using the **Download payload** option for offline processing, if needed.
+You can do on-demand outbound processing on each error by using the **Resend** action. This action invokes the outbound processing logic. This logic includes retries. If the outbound processing is still unsuccessful, the error is logged in the error log. In this case, the **Last process time** field on the **Errors** tab indicates when the last attempt to process the event occurred.
 
-> [!Note]
-> If an endpoint is deleted and a new endpoint is associated to business events, all errors associated to such business events are still available for resending. In such cases, the system will perform outbound processing to send to the new endpoint associated to the corresponding business event. This allows for a graceful recovery from misconfiguration or other error states.
+If an error can't be successfully processed, you can use the **Download payload** option to download the payload from the event for offline processing, as you require.
+
+> [!NOTE]
+> If an endpoint is deleted and a new endpoint is associated with business events, all errors that are associated with the business events can still be resent. In this case, the system will do outbound processing to send to the new endpoint that is associated with the corresponding business event. This functionality allows for graceful recovery from misconfiguration or other error states.
 
 ## Business event consumption models
 
-Integration requirements and integration solution design for implementations vary. These requirements will play a role in identifying a consumption model for business events. Finance and Operations enables the following consumption models.
+The integration requirements and integration solution design for implementations vary. The integration requirements play a role in identifying the consumption model for business events. The following illustration shows the consumption models that Finance and Operations makes available.
 
 ![Business events consumption model](../media/businesseventsconsumptionmodel.png)
 
-In summary, the following must be taken into consideration when designing integrations using business events.
+In summary, you must consider the following points when you design integrations that use business events:
 
--   Business events can be consumed either via Microsoft Flow or Azure service bus or Azure event grid.
-
--   Customer’s must bring their own subscriptions for using Azure service bus or Azure event grid or Microsoft Flow.
-
--   A business event can be activated in all or specific legal entities.
-
--   A business event in a legal entity can be sent to one and only one endpoint; messaging brokers enable 1:N consumption.
-
--   A business event across unique legal entities can be sent to unique endpoints or same endpoints.
-
--   Microsoft Flow can directly subscribe to business events.
-
--   Endpoints like Azure service bus or Azure event grids enables ‘n’ consumers to subscribe and receive the events.
-
-
-
-
-
+- Business events can be consumed via Microsoft Flow, Service Bus, or Event Grid.
+- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, or Event Grid.
+- A business event can be activated in all legal entities or in specific legal entities.
+- A business event in a legal entity can be sent to only one endpoint. Messaging brokers make one-to-many (1:N) consumption available.
+- A business event across unique legal entities can be sent to unique endpoints or the same endpoints.
+- Microsoft Flow can directly subscribe to business events.
+- Endpoints such as Service Bus or Event Grid endpoints enable *n* consumers to subscribe to and receive the events.
