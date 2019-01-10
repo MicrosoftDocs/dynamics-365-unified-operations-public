@@ -31,26 +31,11 @@ ms.dyn365.ops.version: 10.0
 ---
 # Retail transaction consistency checker
 
-With Retail statement posting, it has been observed that the posting
-process fails at times due to inconsistent data in the retail
-transaction tables. The data in the retail transaction tables get
-inconsistent either due to a bug in the POS application or when these
-transactions are incorrectly imported from third party POS systems. Some
-examples of this inconsistent data that has been observed in the past
-are a) transaction total on the header table does not match the
-transaction total on the lines b) line count on the header table does
-not match with the no. of lines in the transaction table c) taxes on the
-header table does not match the tax amount on the lines etc. When these
-inconsistent transactions are picked up by statement posting process, it
-ends up creating inconsistent Sales invoices & payment journals and the
-entire statement posting process fails as a result. Recovering the
-statements from such a state involves complex data fixes across multiple
-transaction tables.
+This article describes the retail transaction consistency checker functionality that was introduced in XXXX in Microsoft Dynamics 365 for Retail. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
 
-To address this issue and to identify & isolate these inconsistent
-transactions before they are picked up by the statement posting process,
-a consistency checker feature has been introduced and the below chart
-explains the posting process with the transaction consistency checker
+When a statement is posted in Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by to a bug in the point of sale (POS) application, or when transactions are incorrectly imported from third party POS systems. Examples of how these inconsistencies may appear are: the transaction total on the header table does not match the transaction total on the lines, the line count on the header table does not match with the number of lines in the transaction table, or taxes on the header table do not match the tax amount on the lines. When inconsistent transactions are picked up by the statement posting process, inconsistent sales invoices and payment journals are created, and the entire statement posting process fails as a result. Recovering the statements from such a state involves complex data fixes across multiple transaction tables. The retail transaction consistency checker prevents such issues.
+
+The chart below illustrates the posting process with the transaction consistency checker.
 
 ![Statement posting process with retail transsaction consistency checker](./media/validchecker.png "Statement posting process with retail transsaction consistency checker")
 
