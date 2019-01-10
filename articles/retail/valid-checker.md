@@ -31,7 +31,9 @@ ms.dyn365.ops.version: 10.0
 ---
 # Retail transaction consistency checker
 
+
 [!include [banner](includes/banner.md)]
+[!include [preview banner](includes/preview-banner.md)]
 
 This topic describes the retail transaction consistency checker functionality introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1.3. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
 
