@@ -5,7 +5,7 @@ title: Catch weight product processing with warehouse management
 description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 manager: AnnBe
-ms.date: 11/30/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2018-11-30
+ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
 
 ---
