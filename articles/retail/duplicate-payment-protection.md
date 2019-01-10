@@ -74,14 +74,12 @@ The duplicate payment protection feature is applicable to any scenario in which 
 ### Payment recovery scenarios
 Once the point of sale or network communications have been recovered, there are several scenarios that will result in the cashier being prompted to use the previous payment. Here are a few scenarios that can trigger payment recovery:
 
-**If there is a un-recovered payment and the cashier 
-- **Invokes another payment for any amount using a card payment**.
-- **Invokes another payment for any amount using a cash payment**.
-- **Attempts to void a line on the cart**.
-- **Attempts to void the transaction**.
-- **Attempts to suspend the transaction**.
-
-Under each of the above scenarios, if there was a previous payment which must be used, the cashier is shown a dialog box indicating that a payment has already been made.
+If there is a unrecovered payment and the cashier takes one of the following actions, the cashier is shown a dialog box indicating that a payment has already been made.
+- Invokes another payment for any amount using a card payment.
+- Invokes another payment for any amount using a cash payment.
+- Attempts to void a line on the cart.
+- Attempts to void the transaction.
+- Attempts to suspend the transaction.
 
 ![Recover Payment](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
