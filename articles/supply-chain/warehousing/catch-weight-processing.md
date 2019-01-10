@@ -45,10 +45,10 @@ After the license configuration key is turned on, when you create a released pro
 
 Before you can use the product in Warehouse management, you must do some basic product-specific setup for catch weight:
 
-- Definition of the nominal weight between the catch weight unit (box) and the inventory unit (kilogram \[kg\]) as part of a unit conversion definition
-- Definition of the minimum and maximum weight tolerances as part of the catch weight unit setup
-- Use of a unit sequence group where the catch weight unit is defined as the lowest stock keeping unit (SKU)
-- Use of a catch weight item handling policy
+- Define the nominal weight conversion between the catch weight unit (box) and the inventory unit (kilogram \[kg\]) as part of a unit conversion definition.
+- Define the minimum and maximum weight tolerances as part of the catch weight unit setup.
+- Set up a unit sequence group where the catch weight unit is defined as the lowest stock keeping unit (SKU).
+- Set up a catch weight item handling policy.
 
 For more information, see [Setting up and maintaining catch weight items](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
@@ -93,7 +93,7 @@ You can also define how the weight is captured. In one of the two main flows, ca
 
 The process of tracking catch weight tags can be used for items that won't change weight during the storage period. The weight will be captured only during the inbound warehouse process. During the outbound process, the catch weight tags will just be scanned, and the weights that are associated with the tags will be used for the outbound transactional processing.
 
-## Methods for capturing inbound catch weight
+### How to capture catch weight
 
 When catch weight tag tracking is used, a tag must always be created for every catch weigh unit that is received, and every tag must always be associated with a weight.
 
@@ -110,8 +110,7 @@ Not all workflows support catch weight product processing with warehouse managem
 ### Configuring catch weight products for warehouse management processes
 
 - For catch weight products, the storage dimension group for items can't be changed (so that warehouse management processes can be used for them).
-- Only "finished goods" are supported as part of formulas for catch weight products.
-- Only "raw components" are supported as part of formulas for catch weight products.
+- Only formula processing is supported for catch weight products (not bill of materials).
 - Catch weight products can't be associated with a tracking dimension group by using the Owner dimension.
 - Catch weight products can't be used as services.
 - Catch weight products can be used as "stocked products" only as part the item model group.
@@ -127,12 +126,12 @@ Not all workflows support catch weight product processing with warehouse managem
 ### Order processing
 
 - Intercompany order processing isn't supported.
-- The creation of ASNs (packing structures) doesn't support weight information.
-- The ordering quantity must be maintained based on the catch weight unit.
+- The creation of advance ship notice (ASN/packing structures) doesn't support weight information.
+- The order quantity must be maintained based on the catch weight unit.
  
 ### Inbound warehouse processing
 
-- Receiving license plates requires that weights be assigned during registration, because weight information isn't supported as part of the advanced shipping notification. When catch weight tag processes are used, the tag number must be manually assigned per catch weight unit.
+- Receiving license plates requires that weights be assigned during registration, because weight information isn't supported as part of the advance ship notice. When catch weight tag processes are used, the tag number must be manually assigned per catch weight unit.
 - Receiving mixed license plates isn't supports for catch weight products.
  
 ### Inventory and warehouse operations
@@ -164,7 +163,7 @@ Not all workflows support catch weight product processing with warehouse managem
 
 - For catch weight products, only batch orders for formula products are supported.
 - Kanban functionality isn't supported for catch weight products.
-- For catch weight products, serials can't be registered before consumption.
+- For catch weight products, serial numbers can't be registered before consumption.
 - The functionality for reversing license plates isn't supported for catch weight products.
 - For catch weight products, reporting as finished can be registered by serial number.
 
@@ -185,17 +184,17 @@ Not all workflows support catch weight product processing with warehouse managem
 
 Currently, the functionality for catch weight tags is supported only as part of the following scenarios:
 
-- Purchase order warehouse app receiving processing.
-- Load receiving warehouse app processing.
+- When processing purchase order warehouse app receiving.
+- When processing load receiving via warehouse app.
 - For license plate receiving that is related to a purchase order load, weight assignment is requested during the receiving process. By contrast, for transfer order receiving, the weight from the shipment data for the transfer order is used.
-- Transfer order item and line receiving that comes from a non-warehouse management process warehouse.
+- For transfer order item and line receiving that comes from a non-warehouse management process warehouse.
 - The processing of sales return order receiving can record catch weight tags, but the processing won't be validated if the tags are the same tags that were originally shipped for a particular sales order line.
-- The inventory status is changed by using the warehouse app.
-- A warehouse transfer is done by using the warehouse app.
-- Adjustment in and out via the warehouse app.
-- Picking work is processed for sales and transfer orders. (Note that catch weight tags can't be recorded for production component picking.)
-- Picked quantities are reduced from load lines, regardless of whether containers are used.
-- Products are packed into containers at a packing station.
-- Containers are reopened.
-- Formula products are reported as finished by using the warehouse app.
-- Transport loads are processed by using the warehouse app.
+- When processing a inventory status changed by using the warehouse app.
+- When a warehouse transfer is done by using the warehouse app.
+- When processing adjustment in and out via the warehouse app.
+- When picking work is processed for sales and transfer orders. (Note that catch weight tags can't be recorded for production component picking.)
+- When picked quantities are reduced from load lines, regardless of whether containers are used.
+- When products are packed into containers at a packing station.
+- When containers are reopened.
+- When formula products are reported as finished by using the warehouse app.
+- When transport loads are processed by using the warehouse app.
