@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project timesheet mobile application 
-description: This topic provides information about the Microsoft Dynamics 365 Project Timesheet mobile application. The Project Timesheet mobile app enables users to submit and approve timesheet for projects on their mobile device.
+description: This topic provides information about the Microsoft Dynamics 365 Project Timesheet mobile application. The Project Timesheet mobile app enables users to submit and approve timesheets for projects on their mobile device.
 author: abruer
 manager: AnnBe
 ms.date: 01/09/2019
@@ -37,8 +37,7 @@ ms.search.validFrom: 2019-01-15
 ## Overview
 
 The Microsoft Dynamics 365 Project Timesheet mobile app enables users to submit
-and approve timesheet for projects on their mobile device (iPhone or Android),
-anywhere and anytime. This mobile app surfaces the timesheet functionality that
+and approve timesheets for projects on their mobile device (iPhone or Android). This mobile app surfaces the timesheet functionality that
 resides in the Project management and accounting area of Microsoft Dynamics 365
 for Finance and Operations, improving user productivity and efficiency, as well
 as enabling timely entry and approval of project timesheets.
@@ -50,7 +49,7 @@ Android or iPhone from the mobile store for your device.
 
 ## Enable the app 
 
-In Microsoft Dynamics 365 for Finance and Operations, the Project Timesheet
+In Dynamics 365 for Finance and Operations, the Project Timesheet
 mobile app must be enabled. To enable the functionality, go to **Project
 management and accounting parameters \> Timesheet** and select the **Enable Microsoft
 Dynamics 365 Project Timesheet** parameter.
@@ -86,11 +85,11 @@ or the **Copy time from** action. The **Copy time from** action will copy projec
 line information, but not the hours. The **Copy time from** menu includes the
 following options:
 
-- **Copy from existing timesheet**: Copy timesheet lines from an existing timesheet.
+- **Copy from existing timesheet** - Copy timesheet lines from an existing timesheet.
 
-- **Copy from favorite**: Create new timesheet lines by using the timesheet settings that you selected as favorites.
+- **Copy from favorite** - Create new timesheet lines by using the timesheet settings that you selected as favorites.
 
-- **Copy from assignment**; Create new timesheet lines from assigned projects.
+- **Copy from assignment** - Create new timesheet lines from assigned projects.
 
 The project information that is displayed is dependent on the mobile parameters
 that you defined on the **Project management and accounting parameters** page.
@@ -112,7 +111,7 @@ management and accounting parameters. When the project/category and
 category/resource parameters are enabled, the **Line property** value will be set to
 the default value you have defined for this validation. When the
 project/category and category/resource parameters are not enabled, the **Line
-property** value will be defaulted according to the **Enable default line property**
+property** value will default according to the **Enable default line property**
 field on the **Project management and accounting parameters** page. The **Line
 property** value can be overridden.
 
@@ -135,7 +134,7 @@ Click **Submit** to send the timesheet to the approval workflow.
 
 ## Review timesheets
 
-A list of the timesheets that you need to be reviewed is available in the side
+A list of the timesheets that need to be reviewed is available in the side
 drawer. This option is only available if you have been designated as a
 workflow approver. Both header and line approval are supported. Line level
 approval offers the ability to mark one or more lines for approval. After
