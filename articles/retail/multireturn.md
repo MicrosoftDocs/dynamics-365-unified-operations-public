@@ -44,4 +44,4 @@ returns could only be processed by a single invoice at a time.
 
 Once the parameter is turned on and the changes are synchronized to the stores, the cashier in the store can select multiple sales orders for a customer for their return.
 
-When the orders are selected, a list of all the returnable products across all the invoices for the orders will some up. The cashier can then select the products to return. A single return order will be created for all the selected products.
+When the orders are selected, a list of all the returnable products across all the invoices for the orders will come up. The cashier can then select the products to return. A single return order will be created for all the selected products.
