@@ -5,7 +5,7 @@ title: Configure, install, and activate Retail Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 03/27/2017
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -47,31 +47,35 @@ The self-service process lets you download the appropriate version of the Retail
 - Initialize settings for easy Retail Modern POS functioning (number sequence, hardware profile, merchant information) as the first touchpoint of the POS.
 - Comply with payment card industry (PCI) standards, and report on device information from Retail headquarters.
 
+> [!NOTE]
+> If you are installing Modern POS for use with an on-premises environment, Modern POS does not use Azure Active Directory credentials for device activation.
+
 ## Setup
+
 Before you start the steps that are outlined in this topic, follow these steps.
 
-- Verify that you have Azure AD credentials that you can use to sign in to Retail headquarters.
+- Verify that you have credentials to sign in to Retail headquarters.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
 - Verify that the Microsoft Dynamics 365 for Retail, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
 
-## <a id="Install"> </a>Download and install Retail Modern POS
+## Download and install Retail Modern POS
+
 ### Verify that the device is correctly configured
 
-1. Use your Azure AD credentials to sign in to the Retail trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channels** &gt; **Channel deployment**.
-3. On the **Channel deployment** page, select the **Registers** tile.
-4. On the **Registers** page, select a store register.
+1. In Retail headquarters, go to **Retail** &gt; **Channels** &gt; **Channel deployment**.
+2. On the **Channel deployment** page, select the **Registers** tile.
+3. On the **Registers** page, select a store register.
 
     > [!NOTE]
     > The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
 
-5. Select a register by selecting the register number in the **Register number** column.
+4. Select a register by selecting the register number in the **Register number** column.
 
     > [!NOTE]
     > In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
 
-6. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**.
+5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**.
 
     > [!NOTE]
     > To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
@@ -105,11 +109,16 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ### Run the installer on a Windows computer
 
 > [!NOTE]
-> Before you run the Retail Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+> - Before you run the Retail Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
->     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
->     - **Property:** AllowAllTrustedApps
->     - **Value:** 1
+>
+>    - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
+>    - **Property:** AllowAllTrustedApps
+>    - **Value:** 1
+
+If you are installing Retail Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
+
+ModernPosSetupOffline.exe -UseAdfsAuthentication
 
 The Retail Modern POS installer first extracts the associated files and then starts the installation.
 
@@ -123,7 +132,7 @@ The Retail Modern POS installer first extracts the associated files and then sta
 
     > [!NOTE]
     > - The installer tries to download the correct language. However, if you require a specific language, we highly recommend that you manually install SQL Server. If the installer can't correctly determine the language, it installs the English version of SQL Server 2014 Express with SP2 by default. Typically, after the SQL installation is completed, the system requires a restart before the installation of Retail Modern POS can continue.
-    > - This process might require a long time, depending on the speed of the computer and the Internet connection. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the “Troubleshooting” section of this topic.
+    > - This process might require a long time, depending on the speed of the computer and the Internet connection. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
 
 3. The installer installs Retail Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
@@ -151,6 +160,7 @@ You can now start the program.
 You can now start the program.
 
 ## Create a worker
+
 For this topic, we have already created workers and assigned them to the Houston address book in the demo data that is provided. Therefore, this topic will use pre-generated data.
 
 ### Create a worker
@@ -164,7 +174,7 @@ For this topic, we have already created workers and assigned them to the Houston
 7. Select **Continue**.
 8. On the Action Pane, select **Complete** to finish creating the new worker.
 9. Return to the worker list. Search for the newly created worker (for example, John Smith). Select the worker's name to see the details of the new worker.
-10. On the Action Pane, select  **Edit**.
+10. On the Action Pane, select **Edit**.
 11. Verify that the language for the worker is **en-us**.
 12. Under **Worker summary**, in the **Address books** field, select the **Houston** store.
 13. On the **Retail** tab, you can reset the POS password. For this tutorial, reset the password to **123**.
@@ -198,15 +208,16 @@ This procedure should be completed before you activate Retail Cloud POS or Retai
 
 ### Run the Validate Devices for Activation check
 
-1. In Retail headquarters, open the **Device** page (**Retail** **and commerce**&gt; **Setup POS** &gt; **Devices**).
+1. In Retail headquarters, open the **Device** page (**Retail and commerce** &gt; **Setup POS** &gt; **Devices**).
 2. Select the device to validate for device activation, and then select **Validate Devices for Activation**. For example, select device **HOUSTON-3**.
 3. In the dialog box that appears, select the worker to validate the device for (that is, the worker that you mapped to the Azure AD account in the previous procedure). For example, select worker **000160**.
 4. Select **OK**, and make sure that you receive the following message: "Pre-Activation validation completed for Device HOUSTON-3 and Staff 000160. Validation: Passed"
 
 ## Activate a device
+
 1. Start Retail Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.
-3. Enter the Azure AD account that you mapped earlier, such as **admin@&lt;MyCompany&gt;.onmicrosoft.com**, and the password.
+3. Enter the Azure AD account that you mapped earlier, such as `admin@<MyCompany>.onmicrosoft.com`, and the password.
 4. When activation is completed, select **Get Started**.
 5. Sign in to Retail Modern POS by using worker account **000160** and the password **123**.
 
@@ -214,15 +225,15 @@ The device should now be activated and ready to use.
 
 ## Update the Retail Modern POS application
 
-
-**Note:** To learn more about deployable packages, see the article [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
-
+> [!NOTE]
+> To learn more about deployable packages, see the article [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
 
 1. After a Retail Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
-2. To update the Retail Modern POS application, follow the steps in the [Download and install Retail Modern POS](#Install) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
+2. To update the Retail Modern POS application, follow the steps in the [Download and install Retail Modern POS](#download-and-install-retail-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
 3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Retail, an update won't change the Retail Modern POS application settings.
 
 ## Troubleshooting
+
 ### Troubleshoot installation
 
 - Your browser blocks the download pop-up that is generated.
@@ -249,11 +260,15 @@ The device should now be activated and ready to use.
     1. Open a **Command Prompt** window as an administrator.
     2. Enter the following command.
 
-            lodctr /s:"perf_backup.txt"
+        ```
+        lodctr /s:"perf_backup.txt"
+        ```
 
     3. Enter the following command.
 
-            lodctr /R
+        ```
+        lodctr /R
+        ```
 
     4. If the system doesn't rebuild the performance counter settings from the system backup, rerun the **lodctr /R** command.
     5. Rerun the Retail Modern POS installer.
@@ -263,7 +278,7 @@ The device should now be activated and ready to use.
     - **Solution 1:** In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
     - **Solution 2:** A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V. You must manually edit permissions before the packages can be downloaded correctly. Follow these steps:
 
-        1. In File Explorer, browse to **C:\Microsoft Dynamics 365\70\Retail Server**.
+        1. In File Explorer, browse to **C:\\Microsoft Dynamics 365\\70\\Retail Server**.
         2. Right-click the **SelfServicePackages** folder, and then select **Properties**.
         3. On the **Security** tab, select **Edit**.
         4. In the **Permissions for SelfServiceDeployment** dialog box, select **Add**.
@@ -288,7 +303,7 @@ The device should now be activated and ready to use.
     **Solution:** Follow this checklist to verify that all data is correct:
 
     - Complete the Validate Devices for Activation check in Retail headquarters, and make sure that the device passes validation.
-    - On the client computer where you're activating the device, access the Retail Server URL health check, and make sure that the health check is passed. Use the following format for the URL: https://MyCompanyNameret.axcloud.dynamics.com/commerce/healthcheck?testname=ping
+    - On the client computer where you're activating the device, access the Retail Server URL health check, and make sure that the health check is passed. Use the following format for the URL: `https://MyCompanyNameret.axcloud.dynamics.com/commerce/healthcheck?testname=ping`
     - The worker must be mapped to an Azure AD account (under **External identity**).
     - The Azure AD account that is mapped must belong to the same tenant.
     - To map the worker to the Azure AD account, sign in to Retail headquarters by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
@@ -303,9 +318,10 @@ The device should now be activated and ready to use.
     - Make sure that the electronic funds transfer (EFT) configuration value is present.
 
 ### Troubleshoot Retail Modern POS connectivity
+
 On a single-computer system, such as a developer topology or a demo environment, or when Retail Store Scale Unit and Retail Modern POS are installed on the same computer, Retail Modern POS can't complete device activation.
 
-**Solution:** This issue occurs because Retail Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Retail Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](https://msdn.microsoft.com/en-us/library/windows/apps/hh780593.aspx).
+**Solution:** This issue occurs because Retail Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Retail Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](https://msdn.microsoft.com/library/windows/apps/hh780593.aspx).
 
 ## Additional resources
 

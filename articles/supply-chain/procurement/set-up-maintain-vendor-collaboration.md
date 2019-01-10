@@ -5,7 +5,7 @@ title: Set up and maintain vendor collaboration
 description: This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
-.md
+
 # Set up and maintain vendor collaboration
 
 [!include [banner](../includes/banner.md)]
@@ -123,7 +123,7 @@ To set up this branching, create a new workflow of the **User Request Workflow (
 #### Branch to provision new users
 
 1. Assign an approval task to the person who is responsible for approving that new users should be granted access to vendor collaboration information.
-2. Assign a task to the person who is responsible for requesting new Microsoft Azure Active Directory (Azure AD) user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, B2B users can be automatically exported to Azure AD. For more information, see [Export B2B users to Azure AD](../../dev-itpro/sysadmin/implement-b2b.md).
+2. Assign a task to the person who is responsible for requesting new Microsoft Azure Active Directory (Azure AD) user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, and later versions, B2B users can be automatically exported to Azure AD. Use the predefined **Provision Azure AD B2B user**. For more information, see [Export B2B users to Azure AD](../../dev-itpro/sysadmin/implement-b2b.md).
 3. Assign an approval task to the person who uploads to Azure. If an account isn't successfully created, this person rejects the task and ends the workflow. This approval task can be skipped if you've included the step that automatically exports new user accounts to Azure via the B2B application programming interface (API).
 4. Add an automated task that provisions a new user in Finance and Operations. Use the predefined **Automated provision user** task for this step.
 5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Finance and Operations. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portal URL%** tag. When the welcome email is generated, this tag which will be replaced by the URL of the Finance and Operations tenant.

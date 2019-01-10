@@ -54,11 +54,12 @@ The following workflow types are available for Procurement and sourcing.
 | Vendor add application workflow  | Create review and approval workflows for adding new vendors via vendor requests. |
 
 ## Creating a workflow
+
 To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.  
 
 In the workflow canvas you can drag workflow elements into the designer and link the elements into a flow. The workflow elements should be configured. For approval and task workflow elements you can configure which participant should take action.
- Types of participants
-----------------------
+
+## Types of participants
 
 You can assign an approval step to the following groups of participants.
 
@@ -72,12 +73,11 @@ You can assign an approval step to the following groups of participants.
 
 
 
-Additional resources
---------
+## Additional resources
 
-[Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+- [Purchase requisition workflow](purchase-requisitions-workflow.md)
 
-[Onboarding vendors](vendor-onboarding.md)
+- [Onboarding vendors](vendor-onboarding.md)
 

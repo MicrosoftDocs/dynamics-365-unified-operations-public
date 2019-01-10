@@ -52,7 +52,8 @@ You can use the **Preview Features** setting in the Microsoft Dynamics 365 for T
 1. Sign in to Microsoft Dynamics 365 for Talent: Attract.
 2. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin settings**.
 3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue.
-4. Refresh your browser to start to see the new features. (Any users who are already signed in will see the features the next time that they sign in, or they can refresh their browser to see the features immediately.)
+4. Optionally you can control individual features by enabling/disabling specific features on this page.
+5. Refresh your browser to start to see the new features. (Any users who are already signed in will see the features the next time that they sign in, or they can refresh their browser to see the features immediately.)
 
 #### Core HR
 
@@ -67,10 +68,9 @@ You can use the **Preview Features** setting in the Microsoft Dynamics 365 for T
 
 ### Attract
 
-- **Job templates** – You can now create hiring process templates. Users can already customize the hiring process for a specific job. However, they can now create templates for the process and then select the appropriate template when a specific job is created. Therefore, this feature helps streamline the job setup process.
-- **Career site** – The current version of the career site just lists all open jobs. However, more capabilities will be added to the site in the future. Jobs can be marked as either internal or external. Internal users who sign in to the site will see both internal jobs and external jobs. However, non-internal users and users who aren't signed in will see only external jobs.
-- **Job posting** – You can now post jobs to the career site.
-- **LinkedIn job posting** – You can now post jobs to LinkedIn.
+- **Relevant Candidates in a Job** – Recruiters and hiring managers can easily see which candidates may be the most relevant for the job across all applicants. The top 5 applicants are shown based on their the relevance of their resume/profile to the job description.
+- **Relevant Jobs** – Candidates now see a list of other jobs that are relevant to them based on their resume/profile and the job descriptions.  Currently this is shown to candidates once they apply as a suggestion for other opportunities.
+- **EEO/OFCCP Support** – New activity types enable the use of a predefined form for the collection of Equal Employment Opportunity  (EEO) and Office of Federal Contract Compliance Program (OFCCP) data from the candidate.  This is a predefined form and is not editable.
 
     > [!NOTE]
     > Jobs that are posted are visible only to customers who subscribe to one or more LinkedIn job listing products. Otherwise, customers see a job only if they explicitly search for it. There is a delay when jobs are posted to LinkedIn. A job might take up to a few hours to appear after it's posted from Attract.

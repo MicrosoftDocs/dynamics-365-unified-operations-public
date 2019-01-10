@@ -99,12 +99,12 @@ This sections includes "How do I?" topics that explain how to customize specific
 + [Change the caption on a form](change-caption-form.md)
 + [Modify form control properties](modify-control-properties.md)
 
+### Others
++ [Extending decimal point precision](decimal-point-precision.md)
+
 ### Reports
 + [Extend the list of Electronic reporting functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
 + [Customize App Suite reports](../analytics/customize-app-suite-reports-with-extensions.md)
-
-### Labels
-+ [Change a label](change-label.md)
 
 ### Blog posts
 

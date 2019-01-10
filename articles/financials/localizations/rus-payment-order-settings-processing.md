@@ -111,4 +111,24 @@ You can generate a payment order for a money return to a customer.
 5. In the **Payment documented on** field, select the customer account that should receive the payment return.
 6. On the Action Pane, select **Functions \> Generate payments** to generate a payment order.
 
-You can review generated payment orders for customers on the **Registry of payment orders** page (**Accounts receivable \> Inquiries \> Payment \> Payment order register**).
+You can review generated payment orders for customers on the **Registry of payment orders** page (**Accounts receivable \> Inquiries \> Payment \> Payment order register**). 
+
+
+## Review Registry of payment orders
+
+The registry of payment orders report contains the list of payment orders for a bank account in a period. This report includes the following data for each payment order:
+
+- Number and date
+- Name and bank account number of counteragent
+- Payment purpose
+- Payment amount and currency code
+- Status of payment
+- Note indicating if the payment is electronic
+
+To run the report, complete the following steps.
+1. Go to **Accounts payable > Inquiries and reports > Payment > Payment order register** or **Accounts receivable > Inquiries > Payment > Payment order register**.
+2. Click **Print > Registry of payment orders**.
+3. Select the **From date** and **To date**.
+4. Define the following filters for payment orders: **Payment order status**, **Curreny code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form).
+5. Click **OK** to generate the report.
+

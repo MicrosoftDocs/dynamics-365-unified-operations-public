@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -248,6 +248,7 @@ This section provides troubleshooting information for the different stages of da
 ### Export process troubleshooting
 - If you get an error during the export process, click **View execution log** and review the log text, staging log details, and Infolog for more information.
 - If you get an error during the export process with a note directing you to not skip staging, turn off the **Skip staging** option, and then add the entity. If you are exporting multiple data entities, you can use the **Skip staging** button for individual data entities.
+- There is a 256 MB limit for the file size that can be handled via export. If there are a large number of records that will be exported, be sure that the resulting file size does not exceed this limit. An alternate way to handle such scenarios would be to use filters on the entity to export only a subset of data. If this is not feasible, then bring your own database must be considered for the overall solution.
 
 ### Import process troubleshooting
 When uploading data entity files:
@@ -266,33 +267,34 @@ During data entity import:
 - If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
 
 ## Features flighted in data management and enabling flighted features
-The following features are enabled via flighting. *Flighting* is a concept that allows a feature to be ON or OFF by default. The following process must be followed to enable or disable a feature that is being flighted.
+The following features are enabled via flighting. *Flighting* is a concept that allows a feature to be ON or OFF by default. 
 
-**DMFEnableAllCompanyExport** - This flight represents the feature to export data to bring your own database (BYOD) from all companies using a single export job. By default, this is OFF. A support case must be created to enable this on a production environment. To enable this on a sandbox environment, the following steps must be followed.
+| Flight name                           | Description |
+|---------------------------------------|---------------|
+| DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job. By default, this is OFF. |
+| DMFExportToPackageForceSync           | Enables synchronous execution of data package API export. By default, it's asynchronous. |
+| EntityNamesInPascalCaseInXMLFiles     | Enables behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
+| DMFByodMissingDelete                  | Enables the old behavior where under certain conditions, certain delete operations were not synced to BYOD using change tracking. |
+| DMFDisableExportFieldsMappingCache    | Disables caching logic when building target field mapping. |
+| EnableAttachmentForPackageApi         | Enables attachments functionality in the package API. |
+| FailErrorOnBatchForExport             | Enables fail on error at execution unit or level for export jobs. |
+| IgnorePreventUploadWhenZeroRecord     | Disables 'prevent upload when zero records' functionality. |
+| DMFInsertStagingLogToContainer        | By default this is ON. This improves performance and functional issues with error logs in the staging table. |
+| ExportWhileDataEntityListIsBeingRefreshed     | When enabled, additional validations are made on mappings when a job is scheduled while entity refresh is in progress. By default, this is OFF.|
+| DMFDisableXSLTTransformationForCompositeEntity     | This can disable the application of transformations on composite entities. |
+| DMFDisableInputFileCheckInPackageImport     | Additional validations are made to ensure if any entity file is missing from a data package, error message is shown. This is the default behavior. If required, this can be turned OFF by this flight.  |
 
-- Add a record with this Insert statement, replacing the appropriate values. 
 
-  INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, Flight service ID, Partition, RecID, 1) 
-    - Flight name = DMFEnableAllCompanyExport
-    - Enabled = 1
-    - Flight service ID = 12719367
-    - Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-    - RecID = same ID as partition
+The following steps enable a flight in a non-production environment. Execute the following SQL command.
+
+INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+
+The parameter descriptions are below.
+ - <Flight name> is the name of the flight that must be enabled or disabled.
+ - Enabled (1)
+ - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+ - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value
     - RecVersion = 1
 
-**DMFExportToPackageForceSync** - This flight represents the feature to enable synchronous behavior on the ExportToPackage integration API. By default, the behavior is asynchronous. This can be changed to synchronous in production environments by creating a support request. For non-production environments, the following steps must be followed.
-
-- Add a record with this Insert statement, replacing the appropriate values
-
-INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight service ID, Partition, RecID, 1) 
-- Flight name = DMFExportToPackageForceSync
-- Enabled = 1
-- Flight service ID = 12719367
-- Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
-- RecID = same ID as partition
-- RecVersion = 1
-
--Restart IIS
-    
 ## Additional resources
 - [Data entities](data-entities.md)

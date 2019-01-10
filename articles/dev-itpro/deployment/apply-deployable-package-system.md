@@ -5,7 +5,7 @@ title: Apply updates to cloud environments
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,21 +47,23 @@ The following topologies support package deployment that uses automated flows in
 > [!NOTE]
 > Regardless of the project type, if you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
 
-For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
+For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install deployable packages from the command line](install-deployable-package.md).
 
 - Local development environments (Downloadable virtual hard disk [VHD])
 - Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
 
 ## Key concepts
 
-Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
+Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](apply-deployable-package-system.md#packages-runbooks-and-the-axupdateinstaller-in-depth) at the end of this topic.
 
 ## Supported package types
 
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created in a development or build environment.
 - **Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft.
-- **Combined Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
-- **Merged package** – A package that is created by combining one package of each type. For example, one binary update package, one AOT package, and one Retail package can be combined. The packages are merged in the Asset library for the project in LCS.
+- **Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
+- **Merged package** – A package that is created by combining one package of each type. For example, you can merge one binary update package and one AOT package, or one AOT package and one Retail deployable package. The packages are merged in the Asset library for the project in LCS.
+> [!NOTE] 
+> A binary package and a Retail deployable package can't be included in the same merged package.
 
 ## Prerequisite steps
 
@@ -121,7 +123,7 @@ If package application isn't successful, you can download either the logs or the
 2. Unzip the log files.
 3. Select the role that a step failed for, such as **AOS** or **BI**.
 4. Select the VM where the step failed. This information appears in the **Machine name** column in the **Environment updates** section.
-5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the <strong>ExecuteRunbook\</strong>* folder.
+5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the **ExecuteRunbook** folder.
 
     For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
 
@@ -147,7 +149,7 @@ In a production environment, unlike in a sandbox environment or other types of e
 1. Download an update from LCS. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 
     - For a binary update, upload the update deployable package directly to the Asset library.
-    - For an application/X++ update, apply the package in a development environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
+    - For an application/X++ update, apply the package in a development environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create deployable packages of models](create-apply-deployable-package.md).
 
 2. On the **Asset library** page in LCS, on the tab that corresponds to the asset type (**Software deployable package**), select a package, and then click **Release candidate**.
 3. Apply the package in a sandbox environment by using the instructions earlier in this topic.
@@ -211,9 +213,11 @@ In a production environment, unlike in a sandbox environment or other types of e
     
 - When you close a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
-## Deploying packages in Retail environments
+## Applying retail updates and extensions
 
-If you're using retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](../../retail/retail-modern-pos-device-activation.md).
+If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have enabled reduced downtime updates for Retail channel components in the cloud, you will also need to update Retail channel components. For more information, see [Apply updates and extensions to cloud hosted retail channel components](Update-retail-channel.md).
+
+If you're using retail components (such as Retail Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md).
 
 ## Packages, runbooks, and the AXUpdateInstaller in depth
 
@@ -231,4 +235,4 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 
 ## Additional resources
 
-[Install a deployable package](install-deployable-package.md)
+[Install deployable packages from the command line](install-deployable-package.md)

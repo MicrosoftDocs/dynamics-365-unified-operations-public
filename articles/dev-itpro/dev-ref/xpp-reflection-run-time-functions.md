@@ -312,19 +312,6 @@ The ID of the index.
             print "Index ID for index name AddrIdx of table Address is " + int2Str(idx);
     }
 
-## refPrintAll (no content)
-Summary
-
-    void refPrintAll(class object, str filename, str title)
-
-### Parameters
-
-| Parameter | Description |
-|-----------|-------------|
-| object    | Description |
-| filename  | Description |
-| title     | Description |
-
 ## tableId2Name
 Retrieves a string that contains the name of a table.
 

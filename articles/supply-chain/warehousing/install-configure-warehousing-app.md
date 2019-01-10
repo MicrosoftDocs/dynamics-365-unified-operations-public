@@ -5,7 +5,7 @@ title: Install and configure Microsoft Dynamics 365 for Finance and Operations &
 description: This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,13 +77,12 @@ To enable the app to interact with a specific Finance and Operations server, you
 ## Create and configure a user account in Finance and Operations
 To enable Finance and Operations to use your Azure AD application, you need to complete the following configuration steps:
 
-1.  Create a new user account in Azure Active Directory for the Finance and Operations tenant. The purpose of this user account is to access the specific custom service of the warehousing app, which the Finance and Operations server exposes. After completing this step, you will have WMDP user credentials, which consist of a WMDP email address and a WMDP password. To learn about the basic steps for adding users to Azure AD and Finance and Operations, refer to this tutorial: [Sign up for a Finance and Operations subscription](../../dev-itpro/dev-tools/sign-up-preview-subscription.md).
-2.  Create a Finance and Operations user that corresponds to the warehousing app user credentials.
+1.  Create a Finance and Operations user that corresponds to the warehousing app user credentials.
     1.  In Finance and Operations, go to **System administration** &gt; **Common** &gt; **Users**.
     2.  Create a new user.
     3.  Assign the Warehouse mobile device user, as shown in the following screenshot. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
-3.  Associate your Azure Active Directory application with the warehousing app user.
+2.  Associate your Azure Active Directory application with the warehousing app user.
     1.  In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
     2.  Create a new line.
     3.  Enter the **Client ID** (obtained in the last section), give it a name, and select the previously created user. We recommend that you tag all your devices so that you can easily remove their access to Finance and Operations from this page in case they are lost. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)

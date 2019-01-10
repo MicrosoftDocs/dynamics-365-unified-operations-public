@@ -452,7 +452,7 @@ Run the following code in the debugger by including it in a static main method:
     creditCardNumber = "12345678901234567890Excess string";
 
 ## Casting
-The previous version of X++ was very permissive in its treatment of type casting. Both up-casting and down-casting were allowed without intervention from the programmer. Some of the casting permitted in legacy X++ can’t be implemented in the confines of the .NET runtime environment. In object oriented programming languages, including X++, casting refers to assignments between variables whose declared types are both in the same inheritance chain. A cast is either a down-cast or an up-cast. To set the stage for this discussion, we introduce a few self-explanatory class hierarchies: [![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) As you can see, the MotorVehicle class isn't related to the Animal cast. An **up-cast** happens when assigning an expression of a derived type to a base type:
+The previous version of X++ was very permissive in its treatment of type casting. Both up-casting and down-casting were allowed without intervention from the programmer. Some of the casting permitted in legacy X++ can’t be implemented in the confines of the .NET runtime environment. In object oriented programming languages, including X++, casting refers to assignments between variables whose declared types are both in the same inheritance chain. A cast is either a down-cast or an up-cast. To set the stage for this discussion, we introduce a few self-explanatory class hierarchies: [![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) As you can see, the MotorVehicle class isn't related to the Animal class. An **up-cast** happens when assigning an expression of a derived type to a base type:
 
       Animal a = new Horse();
 
@@ -460,12 +460,12 @@ A **down-cast** happens when assigning an expression of a base type to a derived
 
     Horse h = new Animal();
 
-Both up-casts and down-casts are supported in X++. However, down-casts are dangerous and should be avoided whenever possible. The example above will fail with an InvalidCastException at runtime, since the assignment doesn't make sense. X++ supports late binding on a handful of types, like object and formrun. This means that the compiler won't diagnose any errors at compile-time when it sees a method being called on those types, if that method isn't declared explicitly on the type,. It's assumed that the developer knows what they're doing. For instance, the following code may be found in a form.
+Both up-casts and down-casts are supported in X++. However, down-casts are dangerous and should be avoided whenever possible. The example above will fail with an InvalidCastException at runtime, since the assignment doesn't make sense. X++ supports late binding on a few types, like object and formrun. This means that the compiler won't diagnose any errors at compile-time when it sees a method being called on those types, if that method isn't declared explicitly on the type. It's assumed that the developer knows what they're doing. For instance, the following code may be found in a form.
 
     Object o = element.args().caller();
       o.MyMethod(3.14, “Banana”);
 
-The compiler can't check the parameters, return values, etc. for the MyMethod method, since this method isn't declared on the object class. At runtime, the call will be made using reflection, which is orders of magnitude slower than normal calls. note that calls to methods that are actually defined on the late binding types will be naturally checked. For example, the call to ToString():
+The compiler can't check the parameters, return values, etc. for the MyMethod method, since this method isn't declared on the object class. At runtime, the call will be made using reflection, which is orders of magnitude slower than normal calls. Note that calls to methods that are actually defined on the late binding types will be naturally checked. For example, the call to ToString():
 
     o.ToString(45);
 
@@ -546,14 +546,14 @@ The following statements are no longer supported.
 
 ### Pause and Window statements
 
-The X++ pause statement is no longer supported because the pop-up **Print Window** that it affected has been removed. the pause and window statement were mainly used for debugging within the MorphX development environment, which was the same as the execution environment. Since the two are now separated, with Visual Studio taking the place of the MorphX environment, these statements are no longer relevant.
+The X++ pause statement is no longer supported because the pop-up **Print Window** that it affected has been removed. The pause and window statements were mainly used for debugging within the MorphX development environment, which was the same as the execution environment. Since the two are now separated, with Visual Studio taking the place of the MorphX environment, these statements are no longer relevant.
 
 ### Print statement
 
 The X++ print statement is another statement that existed only for debugging purposes. It still exists, and its basic idea is unchanged. But print now outputs through System.Diagnostics.WriteLine. The product configuration determines the detail of the written information is sent. [![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)](./media/debuggingadmin_debugfeatures.png) You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.
 
 ## The Ignore list
-Since the legacy environment was all interpreted, it was possible to have some parts not compile, and use the rest. As long as you only called methods that compiled correctly, you were fine; however, you would run into trouble if you tried to call methods that weren't successfully compiled. This way of working doesn't work in CIL. Assemblies are generated from successful compilations and the runtime system can't load incomplete assembles. However, there are legitimate scenarios when porting legacy applications into the new environment where it's beneficial to get things running in a staged fashion and where parts of the application need to be tested before everything is ported. While this is useful for this very limited scenario, it shouldn't be used once the application is ready for production, since you would be hiding problems that will occur at runtime, after the system has been deployed. This is how it currently works: You can specify a method in an XML by selecting, "Edit Best Practice Suppressions," from the context menu on the project. This will open an XML document where the exclusions are maintained.
+Since the legacy environment was all interpreted, it was possible to have some parts not compile, and use the rest. As long as you only called methods that compiled correctly, you were fine; however, you would run into trouble if you tried to call methods that weren't successfully compiled. This way of working doesn't work in CIL. Assemblies are generated from successful compilations and the runtime system can't load incomplete assemblies. However, there are legitimate scenarios when porting legacy applications into the new environment where it's beneficial to get things running in a staged fashion and where parts of the application need to be tested before everything is ported. While this is useful for this very limited scenario, it shouldn't be used once the application is ready for production, since you would be hiding problems that will occur at runtime, after the system has been deployed. This is how it currently works: You can specify a method in an XML by selecting, "Edit Best Practice Suppressions," from the context menu on the project. This will open an XML document where the exclusions are maintained.
 
 ## New Debugger features
 This section provides information about the new features that we've added to the debugging experience in Visual Studio.
@@ -586,7 +586,7 @@ Set a breakpoint on the assignment statement. Make your class the startup object
 
 ### The Auto and Infolog Windows
 
-The debugger will allow you to easily access certain parts of the state of the application easily. This information is available in the autos window, where the current company, the partition, the transaction level, and the current user id are listed. [![Autos\_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) There is also a window showing the data that is written to the Infolog. [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
+The debugger will allow you to easily access certain parts of the state of the application. This information is available in the autos window, where the current company, the partition, the transaction level, and the current user ID are listed. [![Autos\_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) There is also a window showing the data that is written to the Infolog. [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
 
 ### New breakpoint features
 

@@ -5,7 +5,7 @@ title: Data task automation
 description: This topic explains how you can use data task automation in Microsoft Dynamics 365 for Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -88,7 +88,7 @@ The **Shared setup** section defines general task parameters and behaviors for a
 
 | Parent element   | Element         | Element Cardinality | Attributes | Attribute description            |
 |------------------|-----------------|---------------------|------------|----------------------------------|
-| \<TestManifest\> | \<SharedSetup\> | 1..1                | \-         | This element takes no attributes |
+| \<TestManifest\> | \<SharedSetup\> | 1..1                | \-         | This element takes no attributes. |
 
 ### Data files
 **\<DataFile\>** elements define the data packages and data files that the tasks in the manifest will use. The data files must be either in the LCS asset library of your LCS project or in the Shared asset library.
@@ -104,7 +104,7 @@ The **Shared setup** section defines general task parameters and behaviors for a
 |-----------------|--------------|---------------------|--------------|-----------------------|
 | \<SharedSetup\> | \<DataFile\> | 1..n                | \-           | \- |
 |                 | \<DataFile\> | \-                  | ID           | |
-|                 | \<DataFile\> | \-                  | name         | Name of the asset that represents the data file |
+|                 | \<DataFile\> | \-                  | name         | Name of the asset that represents the data file. |
 |                 | \<DataFile\> | \-                  | assetType    | The asset type in LCS asset library that stores the data file. This is the asset type name as shown in LCS asset library. |
 |                 | \<DataFile\> | \-                  | lcsProjectId | The LCS project that has the data file in its asset library. If the project ID is specified as '' then, it indicates the Shared asset library. |
 
@@ -126,15 +126,20 @@ The **\<JobDefinition\>** element defines the data project definition. There can
     <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
     <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
     <LegalEntity>DAT</LegalEntity>
+    <PackageAPIExecute>true</PackageAPIExecute>
+    <PackageAPIOverwrite>false</PackageAPIOverwrite>
+    <PackageAPIReexecute>false</PackageAPIReexecute>
+    <DefinitionGroupID>TestExport</DefinitionGroupID>
+    <PackageName>TestExportPackage</PackageName>
 </JobDefinition>
 ```
 
 | Parent element    | Element                          | Element cardinality | Attribute | Description |
 |-------------------|----------------------------------|---------------------|-----------|-------------|
 | \<SharedSetup\>   | \<JobDefinition\>                | 1..n                | ID        | The job definition ID is used in the tasks to reference the definition to be used for the data project. |
-| \<JobDefinition\> | \<Operation\>                    | 1..1                | \-        | The operation to be performed is specified by the following values. |
+| \<JobDefinition\> | \<Operation\>                    | 1..1                | \-        | The operation to be performed is specified by the following values: <br> - Import <br> - Export |
 |                   | \<Truncate\>                     | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Import*. |
-|                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are: |
+|                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are:<br>- Import async <br>- Export async <br>- Recurring batch: This uses the enqueue/dequeue API’s.|
 |                   | \<ConfigurationOnly\>            | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation. |
 |                   | \<BatchFrequencyInMinutes\>      | 1..1                | \-        | This specifies the frequency in which the batch must be scheduled. This is applicable only when mode is set to *recurring batch*. |
 |                   | \<NumberOfTimesToRunBatch\>      | 1..1                | \-        | This is used to set a limit to how many times the scheduled batch should run. This is applicable only when mode is set to *recurring batch*. |
@@ -146,6 +151,11 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 |                   | \<UseCompanyFromMessage\>        | 1..1                |           | This is a Boolean field which can be set to Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*. |
 |                   | \<LegalEntity\>                  | 1..1                |           | This is used to specify the legal entity in which the import/export job must be executed. |
 |                   | \<ConfigurationOnly\>            | 1..1                |           | This is used to create data projects and recurring schedules to be configured. The operation of import or export will not be executed. However, it is required to specify the operation and mode for the data project to be configured correctly. This is a Boolean field which takes Yes or No. |
+|                   | \<PackageAPIExecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
+|                   | \<PackageAPIOverwrite\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
+|                   | \<PackageAPIReexecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
+|                   | \<DefinitionGroupID\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a string field. |
+|                   | \<PackageName\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a string field. |
 
 ### Entity setup
 The **Entity setup** section defines the characteristics of an entity that a task in the manifest will use. There can be more than one definition, one for each entity that is used by the tasks in the manifest.
@@ -198,7 +208,7 @@ The **Entity setup** section defines the characteristics of an entity that a tas
 |                        | \<MappingDetail\>                    | \-                  | DefaultValue      | This is the default value to be used if auto defaulting is enabled. |
 |                        | \<MappingDetail\>                    | \-                  | IgnoreBlankValues | This is a Boolean field with possible values of Yes or No for enabling/disabling this option. |
 |                        | \<MappingDetail\>                    | \-                  | TextQualifier     | This is a Boolean field with possible values of Yes or No for enabling/disabling this option. |
-|                        | \<MappingDetail\>                    | \-                  | UseEnumLabel      | ThThis is a Boolean field with possible values of Yes or No for enabling/disabling this option. |
+|                        | \<MappingDetail\>                    | \-                  | UseEnumLabel      | This is a Boolean field with possible values of Yes or No for enabling/disabling this option. |
 
 ### Test groups
 Test groups can be used to organize related tasks in a manifest. There can be more than one test group in a manifest.
