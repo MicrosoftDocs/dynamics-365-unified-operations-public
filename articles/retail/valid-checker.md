@@ -5,7 +5,7 @@ title: Retail transaction consistency checker
 description: This topic describes the retail transaction consistency checker functionality in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 1/08/2019
+ms.date: 01/08/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,30 +31,38 @@ ms.dyn365.ops.version: 10.0
 ---
 # Retail transaction consistency checker
 
-This article describes the retail transaction consistency checker functionality that was introduced in XXXX in Microsoft Dynamics 365 for Retail. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
+[!include [banner](includes/banner.md)]
 
-When a statement is posted in Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by to a bug in the point of sale (POS) application, or when transactions are incorrectly imported from third party POS systems. Examples of how these inconsistencies may appear are: the transaction total on the header table does not match the transaction total on the lines, the line count on the header table does not match with the number of lines in the transaction table, or taxes on the header table do not match the tax amount on the lines. When inconsistent transactions are picked up by the statement posting process, inconsistent sales invoices and payment journals are created, and the entire statement posting process fails as a result. Recovering the statements from such a state involves complex data fixes across multiple transaction tables. The retail transaction consistency checker prevents such issues.
+This topic describes the retail transaction consistency checker functionality that was introduced in XXXX in Microsoft Dynamics 365 for Retail. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
 
-The chart below illustrates the posting process with the transaction consistency checker.
+When a statement is posted in Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
+
+  - The transaction total on the header table does not match the transaction total on the lines.
+  - The line count on the header table does not match with the number of lines in the transaction table.
+  - Taxes on the header table do not match the tax amount on the lines. 
+  
+When inconsistent transactions are picked up by the statement posting process, inconsistent sales invoices and payment journals are created, and the entire statement posting process fails as a result. Recovering the statements from such a state involves complex data fixes across multiple transaction tables. The retail transaction consistency checker prevents such issues.
+
+The following chart illustrates the posting process with the transaction consistency checker.
 
 ![Statement posting process with retail transaction consistency checker](./media/validchecker.png "Statement posting process with retail transsaction consistency checker")
 
-The “Validate store transactions” batch process checks the consistency for the retail transaction tables for the following two scenarios.
+The **Validate store transactions** batch process checks the consistency of the retail transaction tables for the following scenarios.
 
-- Customer account: Validates that the customer account in the retail transaction tables exists in the HQ customer master.
-- Line count: Validates that the number of lines as captured on the transaction header table matches the number of lines in the sales transaction tables.
+- Customer account - Validates that the customer account in the retail transaction tables exists in the HQ customer master.
+- Line count - Validates that the number of lines, as captured on the transaction header table, matches the number of lines in the sales transaction tables.
 
 ## Set up the consistency checker
-Configure the batch process “Validate store transactions”, at **Retail \> Retail IT \> POS posting**, for periodic runs. The batch job can be scheduled based on store organization hierarchy, similar to how the "Calculate statement in batch" and "Post statement in batch" processes are set up. It is recommended that you configure this batch process to run multiple times in a day and schedule it so that it runs at the end of every P-job execution.
+Configure the "Validate store transactions" batch process, at **Retail \> Retail IT \> POS posting**, for periodic runs. The batch job can be scheduled based on store organization hierarchy, similar to how the "Calculate statement in batch" and "Post statement in batch" processes are set up. We recommend that you configure this batch process to run multiple times in a day and schedule it so that it runs at the end of every P-job execution.
 
 ## Results of validation process
-The results of the validation check by the batch process are tagged on the appropriate retail transaction. The **Validation status** field on the retail transaction record is either set to “Successful” or “Error”, and the date of the last validation run appears on the **Last validation time** field.
+The results of the validation check by the batch process are tagged on the appropriate retail transaction. The **Validation status** field on the retail transaction record is either set to **Successful** or **Error**, and the date of the last validation run appears on the **Last validation time** field.
 
 To view more descriptive error text relating to a validation failure, select the relevant retail store transaction record and click the **Validation errors** button.
 
-Transactions that fail the validation check and transactions that have not yet been validated will not be pulled into statements. During the "Calculate statement" process, users will get notified if there are transactions that could have been included in the statement but weren't.
+Transactions that fail the validation check and transactions that have not yet been validated will not be pulled into statements. During the "Calculate statement" process, users will be notified if there are transactions that could have been included in the statement but weren't.
 
-If a validation error is found, the only way to fix the error as of now is to contact Microsoft Support. In a future release, capability will be added so that users can fix the records that failed through the user interface, and logging and auditing capabilities will be made available to trace the history of the modifications.
+If a validation error is found, the only way to fix the error is to contact Microsoft Support. In a future release, capability will be added so that users can fix the records that failed through the user interface. Logging and auditing capabilities will also be made available to trace the history of the modifications.
 
 > [!NOTE]
-> Additional validation rules for will be added in future releases.
+> Additional validation rules for will be added in a future release.
