@@ -25,13 +25,11 @@ ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-01-15
+ms.dyn365.ops.version: 10.0
 
 ---
 # Retail transaction consistency checker
-
-**Overview**
 
 With Retail statement posting, it has been observed that the posting
 process fails at times due to inconsistent data in the retail
