@@ -31,10 +31,10 @@ ms.dyn365.ops.version: 10.0
 ---
 # Return items across multiple customer orders and invoices
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
+[!include [preview banner](includes/preview-banner.md)]
 
-In Dynamics 365 for Retail, returns can now be made across multiple orders and invoices, whereas in previous releases, 
-returns could only be processed by a single invoice at a time. 
+In Dynamics 365 for Finanace and Operations version 10.0, returns can be made across multiple orders and invoices, whereas in releases prior to 10.0, returns could only be processed by a single invoice at a time. 
 
 ## Configure Retail to support returns across multiple customer order and invoices
 
