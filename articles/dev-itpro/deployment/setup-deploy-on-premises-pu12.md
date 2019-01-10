@@ -977,6 +977,16 @@ See the [Reconfigure your environment](../lifecycle-services/reconfigure-environ
 ### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
 
+## Additional resources
+- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
+- [Redeploy an on-premises deployment](redeploy-on-prem.md)
+- [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md)
+- [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
+- [Configure reverse proxies for on-premises environments](onprem-reverseproxy.md)
+- [Set up technical support for Finance and Operations](../lifecycle-services/support-experience.md)
+- [Client internet connectivity](../user-interface/client-disconnected.md)
+
 ## Known issues
 
 ### Error "Key does not exist" when running the New-D365FOGMSAAccounts cmdlet
@@ -999,7 +1009,3 @@ This error occurs because of an OpenID scope **allatclaims** that is required by
 
 ### Error "ADMIN0077: Access control policy does not exist: Permit everyone" when running the Publish-ADFSApplicationGroup cmdlet
 When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
-
-## Additional resources
-- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
-- [Redeploy an on-premises deployment](redeploy-on-prem.md)

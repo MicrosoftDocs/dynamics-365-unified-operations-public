@@ -90,4 +90,4 @@ For technical questions that are related to signing in to and accessing Customer
 </tbody>
 </table>
 
-For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
+For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://dynamics.microsoft.com/en-us/support/).
