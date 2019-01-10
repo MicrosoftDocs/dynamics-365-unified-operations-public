@@ -37,21 +37,11 @@ returns could only be processed by a single invoice at a time.
 
 ## Configure Retail to support returns across multiple customer order and invoices
 
-Follow these steps to configure the system to support returns across
-multiple customer order & invoices:
+1. Go to **Retail parameters \> Customer orders**.
+1. Turn on the **Enable returns for multiple orders** parameter. 
 
-1.  A new parameter has been introduced under the path Retail
-    parameters &gt; Customer orders called as "Enable returns for
-    multiple orders" which needs to be turned on to enable this feature
+## Process returns
 
-**Process returns**
+Once the parameter is turned on and the changes are synchronized to the stores, the cashier in the store can select multiple sales orders for a customer for their return.
 
-1.  Once the parameter is turned on and the changes are synchronized to
-    the stores, the cashier in the store would be able to select
-    multiple sales orders for a given customer for which returns have to
-    be processed for
-
-2.  Selecting the orders will return a list of all the returnable
-    products across all the invoices for the orders. The cashier can
-    then select the products to return and process a single return order
-    for all the products.
+When the orders are selected, a list of all the returnable products across all the invoices for the orders will some up. The cashier can then select the products to return. A single return order will be created for all the selected products.
