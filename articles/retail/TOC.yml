@@ -285,6 +285,8 @@
   items:
   - name: Loyalty overview
     href: set-up-customer-loyalty-program.md
+- name: Retail transaction consistency checker
+  href: valid-checker.md
 - name: Inventory
   items:
   - name: Store inventory management
