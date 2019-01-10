@@ -70,14 +70,13 @@ Dynamics 365 Project Timesheet** parameter.
 You can create and submit a project timesheet in the app. You can base a new timesheet on
 information from a previous timesheet, saved lines, or project assignments. If
 you are designated as a delegate, you can also enter a timesheet for another
-worker. To create a timesheet as a delegate, select the resource name in the
-side drawer.
+worker. To create a timesheet as a delegate, select the **Menu** button and then select a resource name..
 
 The timesheet page will create a new timesheet for the timesheet period, based
 on the current date. The work week will be displayed. If the timesheet period
 covers multiple weeks, you can select another work week from the work week tabs.
 If a timesheet exists for the current date, it will be displayed. If you need to
-create a new timesheet in a different timesheet period, use the side drawer action
+create a new timesheet in a different timesheet period, select the **Menu** button and then select
 **New timesheet**.
 
 You can enter project information by clicking the **Add time** action
@@ -134,9 +133,7 @@ Click **Submit** to send the timesheet to the approval workflow.
 
 ## Review timesheets
 
-A list of the timesheets that need to be reviewed is available in the side
-drawer. This option is only available if you have been designated as a
-workflow approver. Both header and line approval are supported. Line level
+A list of the timesheets that need to be reviewed is available in the menu. This option is only available if you have been designated as a workflow approver. Both header and line approval are supported. Line level
 approval offers the ability to mark one or more lines for approval. After
 reviewing the timesheet information, click **Approve**, **Delegate**, or
 **Return** to continue the workflow.
