@@ -37,55 +37,24 @@ When a statement is posted in Retail, posting can fail due to inconsistent data 
 
 The chart below illustrates the posting process with the transaction consistency checker.
 
-![Statement posting process with retail transsaction consistency checker](./media/validchecker.png "Statement posting process with retail transsaction consistency checker")
+![Statement posting process with retail transaction consistency checker](./media/validchecker.png "Statement posting process with retail transsaction consistency checker")
 
-**Consistency checker**
+The “Validate store transactions” batch process checks the consistency for the retail transaction tables for the following two scenarios.
 
--   A new batch process called as “Validate store transactions” has been
-    introduced under the area path: ‘Retail &gt; Retail IT &gt; POS
-    posting’ which needs to be configured for periodic runs. The set-up
-    of this batch process is very similar to the ‘Calculate statement in
-    batch’ and ‘Post statement in batch’ process wherein the batch job
-    can be scheduled based on Store organization hierarchy. It is
-    recommended that customers configure this batch process to run
-    multiple times in a day and schedule it such that it runs at the end
-    of every P-job execution. In the current release, this batch process
-    checks the consistency for the retail transaction tables for the
-    below two scenarios:
+- Customer account: Validates that the customer account in the retail transaction tables exists in the HQ customer master.
+- Line count: Validates that the number of lines as captured on the transaction header table matches the number of lines in the sales transaction tables.
 
-    -   Customer account: Validates the customer account on the retail
-        transaction tables exist in the HQ customer master
+## Set up the consistency checker
+Configure the batch process “Validate store transactions”, at **Retail \> Retail IT \> POS posting**, for periodic runs. The batch job can be scheduled based on store organization hierarchy, similar to how the "Calculate statement in batch" and "Post statement in batch" processes are set up. It is recommended that you configure this batch process to run multiple times in a day and schedule it so that it runs at the end of every P-job execution.
 
-    -   Line count: Validates that the no. of lines as captured on the
-        transaction header table matches the no. of lines in the sales
-        transaction tables.
+## Results of validation process
+The results of the validation check by the batch process are tagged on the appropriate retail transaction. The **Validation status** field on the retail transaction record is either set to “Successful” or “Error”, and the date of the last validation run appears on the **Last validation time** field.
 
--   The result of the validation check by the batch process are
-    appropriately tagged on the retail transaction. Accordingly, the
-    “Validation status” field on the retail transaction record is either
-    set to “Successful” or “Error” and the date of the last validation
-    run is set on the field “Last validation time”.
+To view more descriptive error text relating to a validation failure, select the relevant retail store transaction record and click the **Validation errors** button.
 
--   Users can have more descriptive error text of the validation failure
-    by selecting the relevant retail store transaction record and
-    clicking on the “Validation errors” button
+Transactions that fail the validation check and transactions that have not yet been validated will not be pulled into statements. During the "Calculate statement" process, users will get notified if there are transactions that could have been included in the statement but weren't.
 
--   Transactions that fail the validation check or transactions that
-    have not been validated will not be pulled into the statements.
-    During the Calculate statement process, users will get notified if
-    there are transactions that could have been included on the
-    statement but have not been done so as they are failing the
-    validation check or have not been validated.
+If a validation error is found, the only way to fix the error as of now is to contact Microsoft Support. In a future release, capability will be added so that users can fix the records that failed through the user interface, and logging and auditing capabilities will be made available to trace the history of the modifications.
 
--   As of date, the only mechanism to fix the transaction with
-    validation errors is by contacting Microsoft Support. In a future
-    release, capability will be built for users to fix the validation
-    failed records through the user interface and adequate logging &
-    auditing capabilities will be made available to trace the history of
-    the modifications.
-
-Notes:
-
--   Additional rules for consistency check will be added in future
-    releases to ensure that the transactions records are validated for
-    all the possible scenarios before they are pulled into statements
+> [!NOTE]
+> Additional validation rules for will be added in future releases.
