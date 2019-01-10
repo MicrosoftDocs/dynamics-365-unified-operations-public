@@ -2164,6 +2164,8 @@
             href: ../financials/localizations/rus-fixed-assets-counting.md
           - name: Fixed assets currency revaluation
             href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+          - name: Maintain fixed assets
+            href: ../financials/localiations/rus-maintain-fixed-assets.md
           - name: Partial fixed asset disassembly (liquidation)
             href: ../financials/localizations/rus-fixed-assets-disassembly.md
         - name: Set up and process payment orders
