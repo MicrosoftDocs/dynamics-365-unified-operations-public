@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Return across multiple customer order & invoices
-description: This topic describes the return across multiple customer order & invoices functionality in Microsoft Dynamics 365 for Retail.
+title: Return items across multiple customer orders and invoices
+description: This topic describes the functionality enabling returns across multiple customer orders and invoices in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 1/08/2019
@@ -25,25 +25,17 @@ ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-01-15
+ms.dyn365.ops.version: 10.0
 
 ---
-# Return across multiple customer order & invoices
+# Return items across multiple customer orders and invoices
+
+In Dynamics 365 for Retail, returns can now be made across multiple orders and invoices, whereas in previous releases, 
+returns could only be processed by a single invoice at a time. 
 
 
-In the previous versions of the product, a cashier was able to process a
-return order only for a single invoice at a time. If a customer wanted
-to return products in the store that was fulfilled across multiple
-invoices for an order, or if the products were purchased across multiple
-customer orders, the only way the returns could be processed by the
-cashier would be perform multiple return transactions and have it
-processed invoice by invoice. This is a cumbersome experience for the
-cashier and is not a true omni-channel experience for the end customer
-as well.
-
-**Configure retail to support returns across multiple customer order &
-invoices**
+## Configure Retail to support returns across multiple customer order and invoices
 
 Follow these steps to configure the system to support returns across
 multiple customer order & invoices:
