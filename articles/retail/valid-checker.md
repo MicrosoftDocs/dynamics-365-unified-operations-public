@@ -65,4 +65,4 @@ Transactions that fail the validation check and transactions that have not yet b
 If a validation error is found, the only way to fix the error is to contact Microsoft Support. In a future release, capability will be added so that users can fix the records that failed through the user interface. Logging and auditing capabilities will also be made available to trace the history of the modifications.
 
 > [!NOTE]
-> Additional validation rules for will be added in a future release.
+> Additional validation rules to support more scenarios will be added in a future release.
