@@ -40,10 +40,10 @@ This topic describes features that are either new or changed in Core HR.
 ## Changes
 
 ### Validate leave requests by forecasting available balance
-Changes made in this release allow employees to book future time without subtracting from current balance. Standard workflows will be used for any future requests made. 
+Changes made in this release allow employees to request future time without subtracting from current balance. Standard workflows will be used for any future requests made. 
 
 ### View forecasted leave balance in ESS and People
-This feature enables viewing of balances for future leave periods by HR and employees. Employees can view future balances in Employee Self-Service and HR will have access to the same information through the People workspace.
+This feature enables viewing of balances for future leave periods by HR, managers and employees. Employees can view future balances from Employee Self-Service and HR will have access to the same information through the People workspace.
 
 ### Notifications for changing leave balances
 With these changes leave balances will display the employees current balance. Future balances are available via ESS and People workspaces by entering an “as of date” to calculate the forecasted balance.
