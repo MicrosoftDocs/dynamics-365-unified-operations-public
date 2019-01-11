@@ -144,6 +144,6 @@ The first step is external to Microsoft Dynamics 365 for Retail e.g. tweeting ab
 > [!NOTE]
 > Currently, the system forces users to set up a number sequence for "other activity types", but this will not be a required step in future releases. To set up a number sequence, go to **Retail shared parameters > Number sequences** and select a number sequence for **Loyalty other activity type ID**.
 
-- To provide a good customer service and effectively resolve customer queries, it is important for the cashiers to have access to complete customer's profile. With 10.0 release, the cashiers will be able to see loyalty history details along with the associated loyalty program and tier information on POS.
 
+- To provide a good customer service and effectively resolve customer queries, it is important for the cashiers to have access to complete customer's profile. With 10.0 release, the cashiers will be able to see loyalty history details along with the associated loyalty program and tier information on POS.
 - Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, we have introduced a new type of promotion in which the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
