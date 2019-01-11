@@ -40,7 +40,7 @@ This topic describes features that are either new or changed in Core HR.
 ## Changes
 
 ### Validate leave requests by forecasting available balance
-Changes made in this release allow employees to request future time without subtracting from current balance. Standard workflows will be used for any future requests made. 
+Changes made in this release allow employees to request future time without subtracting from current balance. Standard workflows will be used for any future requests made. Additional information can be found: https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/leave-accrue-hours-worked 
 
 ### View forecasted leave balance in ESS and People
 This feature enables viewing of balances for future leave periods by HR, managers and employees. Employees can view future balances from Employee Self-Service and HR will have access to the same information through the People workspace.
