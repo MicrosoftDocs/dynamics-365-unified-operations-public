@@ -63,7 +63,7 @@ This change allows for the plan end date to be updated (extended or expired) aft
 The Payroll Administrator role has been updated to have access to the payroll information during the request process.
 
 ### Employee self-service | Position hierarchy drill-down from tile fails to get parent node
-Changes have been made to permit eliminating an error that may occur when adding the position hierarchy to new workspaces and navigating within the organizational structure.
+Changes have been made to eliminate an error that occurred when adding the position hierarchy to new workspaces and navigating within the organizational structure.
 
 ### New validation message when personnel number sequence is in use
 A change has been made to clarify what the issue is when you hire an employee and the next personnel number is in use.
