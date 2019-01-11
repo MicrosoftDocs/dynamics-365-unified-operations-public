@@ -121,6 +121,7 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
     ![Points covered by loyalty balance](./media/Points%20covered%20by%20loyalty%20balance.png "Show balance covered by loyalty points")
 
     ![Expiring points](./media/Expiring%20points.png "View expiring points")
+    
 
 - With the 8.1.3 release, we have enabled the "pay by loyalty" option in the call center channel. To enable this option, create a loyalty tender type and associate it with the call center. 
 
@@ -131,16 +132,18 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
 
 After this is set up, customers can redeem their loyalty points in the call center. Additionally, we are enhancing the user experience further to show the "Amount covered by loyalty points", so that the call center users do not have to navigate to a different screen to view the loyalty balance.
 
-- Many retailers award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for completing an online survey, visiting a store, liking the retailers on Facebook, or tweeting about the retailer. To do this, the retailer can define any number of "Other activity type" and define the corresponding earning rules for these activities. We have also exposed a Retail Server API "PostNonTransactionalActivityLoyaltyPoints" that can be called when an activity is identified that should reward the customer with loyalty points. This API expects the Loyalty card ID, Channel ID, and the Other Activity Type ID, so that the customer who should be rewarded can be located and the earning rule for the activity can be identified. In a future release, we will provide a data entity for recording such activities so that points can be rewarded in bulk using DIXF framework or by OData API. Additionally, business users will be able to view and verify these activities in a journal and once verified, will be able to either post the activity lines manually or run a batch job to post all the pending activities.
+- Many retailers award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for completing an online survey, visiting a store, liking the retailers on Facebook, or tweeting about the retailer. To do this, the retailer can define any number of "Other activity type" and define the corresponding earning rules for these activities. We have also exposed a Retail Server API "PostNonTransactionalActivityLoyaltyPoints" that can be called when an activity is identified that should reward the customer with loyalty points. This API expects the Loyalty card ID, Channel ID, and the Other Activity Type ID, so that the customer who should be rewarded can be located and the earning rule for the activity can be identified. 
+
+Awarding points for non-transaction activities generally has two major steps
+- Realizing an activity has occurred which should be rewarded
+- Rewarding the appropriate points. 
+
+The first step is external to Microsoft Dynamics 365 for Retail e.g. tweeting about the brand, liking the brand on Facebook. Once this activity has been recognized, the retailers can call the above-mentioned Retail server API and award loyalty points in real time. In such scenarios, there is no need for a review step because an activity has been occurred and corresponding points should be awarded. However, there are scenarios where the retailer would want to review the records prior to awarding the points. For e.g. retailer has set up a workshop in the store for which the customers sign up on the ecommerce website or any other event registering application. However, only the attending customers should earn loyalty points. For such scenarios, with 10.0 release, we have now introduced a data entity named **“Retail loyalty other activity type lines”**. This data entity enables the retailers to use either Data Import/Export Framework (DIXF) or OData API to record the activities which should award customers with loyalty points. The data entity stores the activities in a journal named **“Loyalty lines for other activities”** which can be used for review and modification purposes. Once the data has been reviewed, the IT user can either manually post the activity lines or run a job named **“Process other activity type for loyalty lines”** which will post all the unposted activity lines and award the points to the customers based on the earning rules. In the above scenario, the event registration application would call OData API to send the signed-up customer information to Microsoft Dynamics 365 for Retail. However, the IT user can post the activity lines for only those customers who attended the workshop and delete the activity lines for the other customers. 
+
 
 > [!NOTE]
 > Currently, the system forces users to set up a number sequence for "other activity types", but this will not be a required step in future releases. To set up a number sequence, go to **Retail shared parameters > Number sequences** and select a number sequence for **Loyalty other activity type ID**.
 
-	
-## Upcoming enhancements
+- To provide a good customer service and effectively resolve customer queries, it is important for the cashiers to have access to complete customer's profile. With 10.0 release, the cashiers will be able to see loyalty history details along with the associated loyalty program and tier information on POS.
 
-The following features will be available in the future monthly updates of Dynamics 365 for Retail.
-	
-- Customers want the ability to view their loyalty balance details on the consumer-facing channels. Similarly, it is important for the cashiers to view the customer's history of the loyalty points in MPOS/CPOS to quickly answer any queries from the customer. In an upcoming monthly release, customers and cashiers will be able to see loyalty history details.
-
-- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, we will introduce a new type of promotion in which the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
+- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, we have introduced a new type of promotion in which the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
