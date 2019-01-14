@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Synchronize work orders from Finance and Operations to Field Service
+title: Synchronize work orders with project from Field Service to Finance and Operations
 description: This topic discusses the templates and underlying task that are used to synchronize work orders with a project number from Microsoft Dynamics 365 for Field Service to Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
