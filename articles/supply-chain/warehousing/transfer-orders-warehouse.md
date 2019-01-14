@@ -42,21 +42,19 @@ You can use warehouse levels to create a hierarchy that supports transfer orders
 
 4.  In the **Main warehouse** field, select the warehouse that you want to assign as the refilling warehouse. Master scheduling calculates a transfer requirement for the selected warehouse and generates a planned transfer order from the assigned **Main warehouse**.
    
-
     > [!NOTE]
-    > <P>If you clear the <STRONG>Refilling</STRONG> check box, the selected warehouse is assigned a warehouse level with regard to the <STRONG>Main warehouse</STRONG>, but the <STRONG>Main warehouse</STRONG> is not set up as a refilling warehouse.</P>
+    > <P>If you clear the <STRONG>Refilling</STRONG> check box, the selected warehouse is assigned a warehouse level in regard to the <STRONG>Main warehouse</STRONG>, but the <STRONG>Main warehouse</STRONG> is not set up as a refilling warehouse.</P>
 
-
-5.  Close the form to apply the new setup.
+5.  Close the page to apply the new setup.
 
 
 > [!TIP]
-> <P>If you want to assign a warehouse for refilling, you must first set up the warehouse as a storage dimension in the <STRONG>Storage dimension groups</STRONG> form. In this form, select the <STRONG>Active</STRONG> field and the <STRONG>Coverage plan by dimension</STRONG> field for the warehouse.</P>
+> <P>If you want to assign a warehouse for refilling, you must first set up the warehouse as a storage dimension on the <STRONG>Storage dimension groups</STRONG> page. On this page, select the <STRONG>Active</STRONG> field and the <STRONG>Coverage plan by dimension</STRONG> field for the warehouse.</P>
 
 ## Set up transport lead time
 
 You must also set up the transport lead time between the warehouses on the **Transport days** page. 
 1. Go to **Inventory management > Setup > Distribution > Transport days**.
-2. In the **Receiving point** field, select "warehouse".
-3. Select the  **Shipping warehouse**, **Receiving warehouse**, and **Transport days**. 
-4. (Optional)You are also able to set transport time depending on the mode of delivery under the **Transport days per mode of delivery** tab.
+2. In the **Receiving point** field, select **warehouse**.
+3. Select the **Shipping warehouse**, **Receiving warehouse**, and **Transport days**. 
+4. (Optional) You can also set transport time, depending on the mode of delivery, under the **Transport days per mode of delivery** tab.
