@@ -123,27 +123,36 @@ The UserConnection class represents an auxiliary connection to the SQL database,
 
 SQL statements are executed, and results are returned in the context of a UserConnection class. The UserConnection class can be used to obtain a separate transaction scope.
 
+Note: Userconnection.finalize() needs to be called in the finally block to prevent user connection leak.  Number of open user connections is limited on the server, when it reaches the limit, no more connections can be opened, which can leads to business logic failures
+
 ### Examples
 
     static void example()  
     { 
-        UserConnection Con; 
-        Statement Stmt; 
-        Str sql; 
-        ResultSet R; 
-        SqlStatementExecutePermission perm; 
-        Con = new UserConnection(); 
-        sql = 'SELECT VALUE FROM SQLSYSTEMVARIABLES'; 
-        Stmt = Con.createStatement(); 
-        perm = new SqlStatementExecutePermission(sql); 
-        // Check for permission to use the statement. 
-        perm.assert(); 
-        R = Stmt.executeQuery(sql); 
-        while ( R.next() ) 
-        { 
-            print R.getString(1); 
-        } 
-    }
+        UserConnection Con;
+        try
+        {
+            Statement Stmt; 
+            Str sql; 
+            ResultSet R; 
+            SqlStatementExecutePermission perm; 
+            Con = new UserConnection(); 
+            sql = 'SELECT VALUE FROM SQLSYSTEMVARIABLES'; 
+            Stmt = Con.createStatement(); 
+            perm = new SqlStatementExecutePermission(sql); 
+            // Check for permission to use the statement. 
+            perm.assert(); 
+            R = Stmt.executeQuery(sql); 
+            while ( R.next() ) 
+            { 
+                print R.getString(1); 
+            } 
+        }
+        finally
+        {
+            con.finalize();
+        }
+     }
 
 ### Methods
 
