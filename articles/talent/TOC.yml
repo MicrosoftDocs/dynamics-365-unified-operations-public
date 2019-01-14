@@ -172,14 +172,14 @@
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Publish a mobile workspace
       href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
- - name: Integration
-   items:
-   - name: Integrate to Dynamics 365 for Finance and Operations
-     href: talent-financeandoperations-integration.md
-   - name: Configure the payroll integration between Talent and Dayforce
-     href: configure-payroll-integration.md
-   - name: Integration FAQ
-     href: talent-fo-integration.md
+  - name: Integration
+    items:
+    - name: Integrate to Dynamics 365 for Finance and Operations
+      href: talent-financeandoperations-integration.md
+    - name: Configure the payroll integration between Talent and Dayforce
+      href: configure-payroll-integration.md
+    - name: Integration FAQ
+      href: talent-fo-integration.md
  - name: Office integration
     items:
     - name: Office integration tutorial
