@@ -61,7 +61,7 @@ Field Service	Finance and Operations
 Projects are created in Finance and Operations. Projects with **Project type** Time and material and **Project stage** In process will synchronize to the **External Project** entity in Field Service, including Project number, Project name, Project stage and Customer account information. The list of **External Project** is used to pair Field service Work orders with Finance and Operations projects.
 Field Service CRM solution
 The External Project is a new entity that gets all the Projects from Operations.
-The External Project field has been added to the Work Order entity. This field is a lookup and buy tagging your Work Order with a project the Sales Order will then be connected to a Project within Operations. Ones the System Status changes Open – In Progress(690,970,000) to a higher status the External Project field will be locked and you can't add, remove or change the value.
+The **External Project** field has been added to the **Work Order** entity. This field is a lookup and buy tagging your Work Order with a project the Sales Order will then be connected to a Project within Operations. One the **System Status** changes Open – In Progress(690,970,000) to a higher status the **External Project** field will be locked and you can't add, remove or change the value.
 
 ## Prerequisites and mapping setup
 ### In Finance and Operations
