@@ -343,9 +343,13 @@ The events are transmitted to tax authorities by using Electronic messages funct
 
 The following illustrations show the actions that are performed and the status of message items that causes each event to be approved or rejected when it's delivered for the first time (Insertion), updated (Amendment/Update), or canceled or deleted (Cancel/Delete).
 
+![Flow-actions](media/bra-flow-actions.jpg)
+
 #### **Insertion**
 
 This flow is used to deliver any event for the first time.
+
+![Flow-insertion](media/
 
 #### **Amendment/Update**
 
