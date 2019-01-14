@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events developer documentation
-description: This documentation walks through the development process and best practice for implementing business events.
+description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/09/2019
@@ -33,812 +33,531 @@ ms.dyn365.ops.version: 2019-02-28
 
 ## Implementing a business event
 
-There are two classes that need to be implemented:
-1. The business event. 
-2. The business event contract. 
+Two classes must be implemented:
 
-The business event class extends BusinessEventsBase and provides support for constructing, payload building, and sending the business event. The business event contract class extends BusinessEventsContract. It provides the definition of the business event payload and provides for the population of the contract at runtime.
+- **Business event** – This class extends the **BusinessEventsBase** class. It provides support for constructing, building the payload, and sending the business event.
+- **Business event contract** – This class extends the **BusinessEventsContract** class. It defines the payload of the business event and allows for population of the contract at runtime.
 
 ### BusinessEventsBase extension
 
-#### Naming convention  
-A \<noun/noun phrase\>\<action phrase\>BusinessEvent pattern should be followed for business event names.  
+#### Naming convention
 
-Examples: VendorInvoicePostedBusinessEvent, CollectionLetterSentBusinessEvent 
+The names of business events should follow this pattern: \<noun/noun phrase\>\<action phrase\>BusinessEvent
 
-The 'noun/noun phrase' portion should comply with existing application area prefix definitions.
+**Examples**
+
+- VendorInvoicePostedBusinessEvent
+- CollectionLetterSentBusinessEvent
+
+The \<noun/noun phrase\> part of the name should comply with existing definitions for application area prefixes.
 
 #### Implementation
-Implementing a BusinessEventsBase extension is straight forward. It consists of extending the BusinessEventsBase class and implementing a static construction method, a private new method, methods to maintain internal state, and the buildContract method.
 
-1.  Extend the BusinessEventsBase class
+The process of implementing a **BusinessEventsBase** extension is straightforward. It involves extending the **BusinessEventsBase** class, and implementing a static constructor method, a private **new** method, methods to maintain internal state, and the **buildContract** method.
 
-```
-[BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-"\@AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","\@AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+1. Extend the **BusinessEventsBase** class.
 
-public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
-```
+    ```
+    [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
+    "\@AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","\@AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+    ```
 
-Note the BusinessEvents attribute. This provided the business events framework with information on the business event's contract, name, description, and the module it is a part of. Labels must be defined for the name and description arguments.
+    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments.
 
-2.  Implement a static newFrom\<foo\> method. Where foo is a typically a table buffer used to initialize the business event contract.
+2. Implement a static **newFrom\<foo\>** method. The \<foo\> part of the method name is typically the table buffer that is used to initialize the business event contract.
 
-```
-static public SalesInvoicePostedBusinessEvent
-newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
+    ```
+    static public SalesInvoicePostedBusinessEvent
+    newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
+    {
+        SalesInvoicePostedBusinessEvent businessEvent = new
+        SalesInvoicePostedBusinessEvent();
+        businessEvent.parmCustInvoiceJour(_custInvoiceJour);
+        return businessEvent;
+    }
+    ```
 
-{
+3. Implement a private **new** method. This method is called only from the static constructor method.
 
-SalesInvoicePostedBusinessEvent businessEvent = new
-SalesInvoicePostedBusinessEvent();
+    ```
+    private void new()
+    {
+    }
+    ```
 
-businessEvent.parmCustInvoiceJour(_custInvoiceJour);
+4. Implement private **parm** methods to maintain internal state.
 
-return businessEvent;
+    ```
+    private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour \_custInvoiceJour = custInvoiceJour)
+    {
+        custInvoiceJour = \_custInvoiceJour;
+        return custInvoiceJour;
+    }
+    ```
 
-}
-```
+5. Implement the **buildContract** method.
 
-3. Implement a private new method. The new method is only called from the static constructor.
+    ```
+    [Wrappable(true), Replaceable(true)]
+    public BusinessEventsContract buildContract()
+    {
+        return
+        SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour);
+    }
+    ```
 
-```
-private void new()
+    For extensibility, the **buildContract** method must be attributed with the **Wrappable(true)** and **Replaceable(true)** attributes. The **buildContract** method will be called only when a business event is enabled for a company.
 
-{
-
-}
-```
-
-4. Implement private parm methods to maintain internal state.
-
-```
-private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour \_custInvoiceJour = custInvoiceJour)
-{
-
-custInvoiceJour = \_custInvoiceJour;
-
-return custInvoiceJour;
-
-}
-```
-
-5. Implement buildContract method.
-
-```
-[Wrappable(true), Replaceable(true)]
-
-public BusinessEventsContract buildContract()
-
-{
-
-return
-SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour);
-
-}
-```
-
-The buildContract method is attributed with the Wrappable(true) and Replaceable(true) attributes for extensibility. The buildContract method will only be called when a business event is enabled for a company.
-
-Below is the complete implementation of the sales order invoice posted business event.
+Here is the complete implementation of the "Sales order invoice posted" business event.
 
 ```
 /// \<summary\>
-
 /// Sales order invoice posted business event.
-
 /// \</summary\>
-
 [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
 '\@AccountsReceivable:SalesOrderInvoicePostedBusinessEventName',
 '\@AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',
 ModuleAxapta::SalesOrder)]
-
 public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
-
 {
-
-private CustInvoiceJour custInvoiceJour;
-
-private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour \_custInvoiceJour =
-custInvoiceJour)
-
-{
-
-custInvoiceJour = \_custInvoiceJour;
-
-return custInvoiceJour;
-
-}
-
-/// \<summary\>
-
-/// Creates a \<c\>SalesInvoicePostedBusinessEvent\</c\> from a
-\<c\>CustInvoiceJour\</c\> record.
-
-/// \</summary\>
-
-/// \<param name = "_custInvoiceJour"\> A \<c\>CustInvoiceJour\</c\>
-record.\</param\>
-
-/// \<returns\>A \<c\>SalesInvoicePostedBusinessEvent\</c\>.\</returns\>
-
-static public SalesInvoicePostedBusinessEvent
-newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
-
-{
-
-  SalesInvoicePostedBusinessEvent businessEvent = new
-  SalesInvoicePostedBusinessEvent();
-
-  businessEvent.parmCustInvoiceJour(_custInvoiceJour);
-
-  return businessEvent;
-
-}
-
-private void new()
-
-{
-
-}
-
-[Wrappable(true), Replaceable(true)]
-
-public BusinessEventsContract buildContract()
-
-{
-
-  return SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour);
-
-}
-
+    private CustInvoiceJour custInvoiceJour;
+    private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour \_custInvoiceJour =
+    custInvoiceJour)
+    {
+        custInvoiceJour = \_custInvoiceJour;
+        return custInvoiceJour;
+    }
+    /// \<summary\>
+    /// Creates a \<c\>SalesInvoicePostedBusinessEvent\</c\> from a \<c\>CustInvoiceJour\</c\> record.
+    /// \</summary\>
+    /// \<param name = "_custInvoiceJour"\> A \<c\>CustInvoiceJour\</c\> record.\</param\>
+    /// \<returns\>A \<c\>SalesInvoicePostedBusinessEvent\</c\>.\</returns\>
+    static public SalesInvoicePostedBusinessEvent
+    newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
+    {
+        SalesInvoicePostedBusinessEvent businessEvent = new
+        SalesInvoicePostedBusinessEvent();
+        businessEvent.parmCustInvoiceJour(_custInvoiceJour);
+        return businessEvent;
+    }
+    private void new()
+    {
+    }
+    [Wrappable(true), Replaceable(true)]
+    public BusinessEventsContract buildContract()
+    {
+        return SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour);
+    }
 }
 ```
 
 ### BusinessEventsContract extension
-A business event contract class extends BusinessEventsContract and provides the definition and population of the business event payload. Although there is some variation across business events, the basic structure for the business event contract is consistent.
 
-Implementing a business event contract consist of extending the BusinessEventContract class, defining internal state, implementing an initialization method, providing a static construction method, and the implementation of parm methods for accessing contract state.
+A business event contract class extends the **BusinessEventsContract** class. It defines and populates the payload of the business event. Although there is some variation across business events, the basic structure of the business event contract is consistent.
 
-1.  Extending BusinessEventContract
+The process of implementing a business event contract involves extending the **BusinessEventContract** class, defining internal state, implementing an initialization method, providing a static constructor method, and implementing **parm** methods to access the contract state.
 
-```
-[DataContract]
+1. Extend the **BusinessEventContract** class.
 
-public final class SalesInvoicePostedBusinessEventContract extends
-BusinessEventsContract
-```
+    ```
+    [DataContract]
+    public final class SalesInvoicePostedBusinessEventContract extends
+    BusinessEventsContract
+    ```
 
-2. Add private variables to hold contract state.
+    The class must be attributed with the **DataContract** attribute.
 
-```
-private CustInvoiceAccount invoiceAccount;
+2. Add private variables to hold the contract state.
 
-private CustInvoiceId invoiceId;
+    ```
+    private CustInvoiceAccount invoiceAccount;
+    private CustInvoiceId invoiceId;
+    private SalesIdBase salesId;
+    private TransDate invoiceDate;
+    private DueDate invoiceDueDate;
+    private AmountMST invoiceAmount;
+    private TaxAmount invoiceTaxAmount;
+    private LegalEntityDataAreaId legalEntity;
+    ```
 
-private SalesIdBase salesId;
+3. Implement a private initialization method.
 
-private TransDate invoiceDate;
+    ```
+    private void initialize(CustInvoiceJour \_custInvoiceJour)
+    {
+        invoiceAccount = \_custInvoiceJour.InvoiceAccount;
+        invoiceId = \_custInvoiceJour.InvoiceId;
+        salesId = \_custInvoiceJour.SalesId;
+        invoiceDate = \_custInvoiceJour.InvoiceDate;
+        invoiceDueDate = \_custInvoiceJour.DueDate;
+        invoiceAmount = \_custInvoiceJour.InvoiceAmountMST;
+        invoiceTaxAmount = \_custInvoiceJour.SumTaxMST;
+        legalEntity = \_custInvoiceJour.DataAreaId;
+    }
+    ```
 
-private DueDate invoiceDueDate;
-
-private AmountMST invoiceAmount;
-
-private TaxAmount invoiceTaxAmount;
-
-private LegalEntityDataAreaId legalEntity;
-```
-
-The class must be attributed with the [DataContract] attribute.
-
-3.  Implement private initialization method.
-
-```
-private void initialize(CustInvoiceJour \_custInvoiceJour)
-
-{
-
-invoiceAccount = \_custInvoiceJour.InvoiceAccount;
-
-invoiceId = \_custInvoiceJour.InvoiceId;
-
-salesId = \_custInvoiceJour.SalesId;
-
-invoiceDate = \_custInvoiceJour.InvoiceDate;
-
-invoiceDueDate = \_custInvoiceJour.DueDate;
-
-invoiceAmount = \_custInvoiceJour.InvoiceAmountMST;
-
-invoiceTaxAmount = \_custInvoiceJour.SumTaxMST;
-
-legalEntity = \_custInvoiceJour.DataAreaId;
-
-}
-```
-
-The initialize method is responsible for setting the contract classes private state based on data provided through the static constructor method.
+    The **initialize** method is responsible for setting the business event contract class's private state, based on data that is provided through the static constructor method.
 
 4. Provide a static constructor method.
 
-```
-public static SalesInvoicePostedBusinessEventContract
-newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
+    ```
+    public static SalesInvoicePostedBusinessEventContract
+    newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
+    {
+        var contract = new SalesInvoicePostedBusinessEventContract();
+        contract.initialize(_custInvoiceJour);
+        return contract;
+    }
+    ```
 
-{
+    The static constructor method calls a private **initialize** method to initialize the private class state.
 
-var contract = new SalesInvoicePostedBusinessEventContract();
+5. Implement **parm** methods to access the contract state.
 
-contract.initialize(_custInvoiceJour);
+    ```
+    [DataMember('InvoiceAccount')]
+    public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount \_invoiceAccount = invoiceAccount)
+    {
+        invoiceAccount = \_invoiceAccount;
+        return invoiceAccount;
+    }
+    ```
 
-return contract;
+    The **parm** methods should be attributed with the **DataMember('\<name\>')** attribute. The name that you provide on the attribute (for example **'InvoiceAccount'**) will be visible to data contract consumers.
 
-}
+> [!NOTE]
+> - **RecId** values should not be part of a business event payload. Use the alternate key (AK) instead.
+> - Enumeration (enum) values must be converted to their symbol value for publishing. Use the **enum2Symbol** method to convert an enum's value to the symbol string. Here is an example:
+>
+>    ```
+>    status = enum2Symbol(enumNum(CustVendDisputeStatus), \_custDispute.Status);
+>    ```
 
-```
+In some cases, population of the data contract's internal state will require that you implement additional retrieval methods. These retrieval methods should be implemented as private methods, and they should be called from the **initialize** method.
 
-The static constructor methods calls a private initialize method to initialize the private class state.
-
-5. Implement parm methods for accessing contract state.
-
-```
-[DataMember('InvoiceAccount')]
-
-public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount \_invoiceAccount = invoiceAccount)
-
-{
-
-invoiceAccount = \_invoiceAccount;
-
-return invoiceAccount;
-
-}
-
-```
-
-Parm methods should be attributed using the [DataMember('\<name\>')] attribute. The name provided on the attribute (e.g. 'InvoiceAccount') will be the name visible to data contract consumers.
-
-   > [!Note]
-   > **RecIds** should not be part of a business event payload. Use the alternate key (AK) instead.
-   >
-   > **Enum values** must be converted to their symbol value for publishing. Use the enum2Symbol method to convert from the enum's value to the symbol string. For example:
-
-```
-status = enum2Symbol(enumNum(CustVendDisputeStatus), \_custDispute.Status);
-```
-
-In some cases population of the data contract's internal state will require additional retrieval methods to be implemented. This should be implemented as private methods and called from the initialize method.
-
-Below is the complete implementation of the sales order invoice posted business event contract.
+Here is the complete implementation of the "Sales order invoice posted" business event contract.
 
 ```
 /// \<summary\>
-
 /// The data contract for a \<c\>SalesInvoicePostedBusinessEvent\</c\>.
-
 /// \</summary\>
-
 [DataContract]
-
 public final class SalesInvoicePostedBusinessEventContract extends
 BusinessEventsContract
-
 {
-
-private CustInvoiceAccount invoiceAccount;
-
-private CustInvoiceId invoiceId;
-
-private SalesIdBase salesId;
-
-private TransDate invoiceDate;
-
-private DueDate invoiceDueDate;
-
-private AmountMST invoiceAmount;
-
-private TaxAmount invoiceTaxAmount;
-
-private LegalEntityDataAreaId legalEntity;
-
-/// \<summary\>
-
-/// Creates a \<c\>SalesInvoicePostedBusinessEventContract\</c\> from a
-\<c\>CustInvoiceJour\</c\> record.
-
-/// \</summary\>
-
-/// \<param name = "_custInvoiceJour"\>A \<c\>CustInvoiceJour\</c\>
-record.\</param\>
-
-/// \<returns\>A \<c\>SalesInvoicePostedBusinessEventContract\</c\>.\</returns\>
-
-public static SalesInvoicePostedBusinessEventContract
-newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
-
-{
-
-var contract = new SalesInvoicePostedBusinessEventContract();
-
-contract.initialize(_custInvoiceJour);
-
-return contract;
-
-}
-
-private void initialize(CustInvoiceJour \_custInvoiceJour)
-
-{
-
-invoiceAccount = \_custInvoiceJour.InvoiceAccount;
-
-invoiceId = \_custInvoiceJour.InvoiceId;
-
-salesId = \_custInvoiceJour.SalesId;
-
-invoiceDate = \_custInvoiceJour.InvoiceDate;
-
-invoiceDueDate = \_custInvoiceJour.DueDate;
-
-invoiceAmount = \_custInvoiceJour.InvoiceAmountMST;
-
-invoiceTaxAmount = \_custInvoiceJour.SumTaxMST;
-
-legalEntity = \_custInvoiceJour.DataAreaId;
-
-}
-
-private void new()
-
-{
-
-}
-
-[DataMember('InvoiceAccount')]
-
-public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount \_invoiceAccount
-= invoiceAccount)
-
-{
-
-invoiceAccount = \_invoiceAccount;
-
-return invoiceAccount;
-
-}
-
-[DataMember('InvoiceId')]
-
-public CustInvoiceId parmInvoiceId(CustInvoiceId \_invoiceId = invoiceId)
-
-{
-
-invoiceId = \_invoiceId;
-
-return invoiceId;
-
-}
-
-[DataMember('SalesOrderId')]
-
-public SalesIdBase parmSaleOrderId(SalesIdBase \_salesId = salesId)
-
-{
-
-salesId = \_salesId;
-
-return salesId;
-
-}
-
-[DataMember('InvoiceDate')]
-
-public TransDate parmInvoiceDate(TransDate \_invoiceDate = invoiceDate)
-
-{
-
-invoiceDate = \_invoiceDate;
-
-return invoiceDate;
-
-}
-
-[DataMember('InvoiceDueDate')]
-
-public DueDate parmInvoiceDueDate(DueDate \_invoiceDueDate = invoiceDueDate)
-
-{
-
-invoiceDueDate = \_invoiceDueDate;
-
-return invoiceDueDate;
-
-}
-
-[DataMember('InvoiceAmountInAccountingCurrency')]
-
-public AmountMST parmInvoiceAmount(AmountMST \_invoiceAmount = invoiceAmount)
-
-{
-
-invoiceAmount = \_invoiceAmount;
-
-return invoiceAmount;
-
-}
-
-[DataMember('InvoiceTaxAmount')]
-
-public TaxAmount parmInvoiceTaxAmount(TaxAmount \_invoiceTaxAmount =
-invoiceTaxAmount)
-
-{
-
-invoiceTaxAmount = \_invoiceTaxAmount;
-
-return invoiceTaxAmount;
-
-}
-
-[DataMember('LegalEntity')]
-
-public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId \_legalEntity
-= legalEntity)
-
-{
-
-legalEntity = \_legalEntity;
-
-return legalEntity;
-
-}
-
+    private CustInvoiceAccount invoiceAccount;
+    private CustInvoiceId invoiceId;
+    private SalesIdBase salesId;
+    private TransDate invoiceDate;
+    private DueDate invoiceDueDate;
+    private AmountMST invoiceAmount;
+    private TaxAmount invoiceTaxAmount;
+    private LegalEntityDataAreaId legalEntity;
+    /// \<summary\>
+    /// Creates a \<c\>SalesInvoicePostedBusinessEventContract\</c\> from a \<c\>CustInvoiceJour\</c\> record.
+    /// \</summary\>
+    /// \<param name = "_custInvoiceJour"\>A \<c\>CustInvoiceJour\</c\> record.\</param\>
+    /// \<returns\>A \<c\>SalesInvoicePostedBusinessEventContract\</c\>.\</returns\>
+    public static SalesInvoicePostedBusinessEventContract
+    newFromCustInvoiceJour(CustInvoiceJour \_custInvoiceJour)
+    {
+        var contract = new SalesInvoicePostedBusinessEventContract();
+        contract.initialize(_custInvoiceJour);
+        return contract;
+    }
+    private void initialize(CustInvoiceJour \_custInvoiceJour)
+    {
+        invoiceAccount = \_custInvoiceJour.InvoiceAccount;
+        invoiceId = \_custInvoiceJour.InvoiceId;
+        salesId = \_custInvoiceJour.SalesId;
+        invoiceDate = \_custInvoiceJour.InvoiceDate;
+        invoiceDueDate = \_custInvoiceJour.DueDate;
+        invoiceAmount = \_custInvoiceJour.InvoiceAmountMST;
+        invoiceTaxAmount = \_custInvoiceJour.SumTaxMST;
+        legalEntity = \_custInvoiceJour.DataAreaId;
+    }
+    private void new()
+    {
+    }
+    [DataMember('InvoiceAccount')]
+    public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount \_invoiceAccount
+    = invoiceAccount)
+    {
+        invoiceAccount = \_invoiceAccount;
+        return invoiceAccount;
+    }
+    [DataMember('InvoiceId')]
+    public CustInvoiceId parmInvoiceId(CustInvoiceId \_invoiceId = invoiceId)
+    {
+    invoiceId = \_invoiceId;
+    return invoiceId;
+    }
+    [DataMember('SalesOrderId')]
+    public SalesIdBase parmSaleOrderId(SalesIdBase \_salesId = salesId)
+    {
+        salesId = \_salesId;
+        return salesId;
+    }
+    [DataMember('InvoiceDate')]
+    public TransDate parmInvoiceDate(TransDate \_invoiceDate = invoiceDate)
+    {
+        invoiceDate = \_invoiceDate;
+        return invoiceDate;
+    }
+    [DataMember('InvoiceDueDate')]
+    public DueDate parmInvoiceDueDate(DueDate \_invoiceDueDate = invoiceDueDate)
+    {
+        invoiceDueDate = \_invoiceDueDate;
+        return invoiceDueDate;
+    }
+    [DataMember('InvoiceAmountInAccountingCurrency')]
+    public AmountMST parmInvoiceAmount(AmountMST \_invoiceAmount = invoiceAmount)
+    {
+        invoiceAmount = \_invoiceAmount;
+        return invoiceAmount;
+    }
+    [DataMember('InvoiceTaxAmount')]
+    public TaxAmount parmInvoiceTaxAmount(TaxAmount \_invoiceTaxAmount =
+    invoiceTaxAmount)
+    {
+        invoiceTaxAmount = \_invoiceTaxAmount;
+        return invoiceTaxAmount;
+    }
+    [DataMember('LegalEntity')]
+    public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId \_legalEntity
+    = legalEntity)
+    {
+        legalEntity = \_legalEntity;
+        return legalEntity;
+    }
 }
 ```
 
 ## Sending a business event
 
-Application code must be modified to send the business event at the appropriate point. Often it is possible to do this a common point within a framework. Documents that extend SourceDocument have a common point for creation and sending of a business event. See [Source document framework support](https://msdyneng.visualstudio.com/FinOps/_wiki/wikis/FinOps.wiki?wikiVersion=GBwikiMaster&pagePath=%2FHome%2FD365%20Finance%20and%20Operations%2FAuthoring%20business%20events#Source-document-framework-support).
+You must modify application code so that it sends the business event at the appropriate point. Often, you can use a common point within a framework. Documents that extend **SourceDocument** have a common point for creating and sending a business event. For more information, see [Source document framework support](https://msdyneng.visualstudio.com/FinOps/_wiki/wikis/FinOps.wiki?wikiVersion=GBwikiMaster&pagePath=%2FHome%2FD365%20Finance%20and%20Operations%2FAuthoring%20business%20events#Source-document-framework-support).
 
-Other frameworks also provide common points for the sending of business events. For example the CustVendVoucher class hierarchy has a post method that is leveraged for sending business events related to the posting of customer or vendor vouchers. Overriding base class implementation provides specialization of the business event send logic. See CustVoucher.createBusinessEvent or
-VendVoucher.createBusinessEvent as examples.
+Other frameworks also provide common points for sending business events. For example, the **CustVendVoucher** class hierarchy has a **post** method that is used to send business events that are related to posting customer or vendor vouchers. Overrides of the base class implementation provide specialization of the logic for sending business events. For an example, see **CustVoucher.createBusinessEvent** or **VendVoucher.createBusinessEvent**.
 
-The sending of a business event is tied to the commit of the underlying transaction. If the underlying transaction is aborted, the business event will not be sent. This allows applications to "send" the business event a the point where the payload information is available.
+The sending of a business event is linked to the commit of the underlying transaction. If the underlying transaction is aborted, the business event won't be sent. Therefore, applications can "send" the business event at the point where the payload information is available.
 
-Whether a business event is published to a consumer is determine by the business events framework. As a general rule, applications should always "send" a business event without regard to whether the business event is enabled or not. If there is significant additional logic required or the logic for sending a business event has a performance impact an application can check if a particular business event is enabled before executing business logic associated with the sending of the business events. This is done through the BusinessEventsConfigurationReader::isBusinessEventEnabled method.
+The business events framework determines whether a business event is published to a consumer. As a general rule, applications should always "send" a business event, regardless of whether the business event is enabled. If significant additional logic is required, or if the logic for sending a business event has a performance impact, an application can check whether a specific business event is enabled before it runs business logic that is associated with sending business events. This check is done through the **BusinessEventsConfigurationReader::isBusinessEventEnabled** method.
 
 ```
 if (BusinessEventsConfigurationReader::isBusinessEventEnabled(new
 CollectionStatusUpdatedBusinessEvent()))
-
 {
-
-while select dispute
-
-where dispute.Status == CustVendDisputeStatus::PromiseToPay
-
-&& dispute.FollowUpDate \< \_currentDate
-
-exists join custTrans
-
-where custTrans.RecId == dispute.CustTrans
-
-&& !custTrans.Closed
-
-exists join \_tmpCustAging
-
-where \_tmpCustAging.AccountNum == custTrans.AccountNum
-
-{
-
-CollectionStatusUpdatedBusinessEvent::newFromCustDispute(dispute).send();
-
-}
-
+    while select dispute
+    where dispute.Status == CustVendDisputeStatus::PromiseToPay
+    && dispute.FollowUpDate \< \_currentDate
+    exists join custTrans
+    where custTrans.RecId == dispute.CustTrans
+    && !custTrans.Closed
+    exists join \_tmpCustAging
+    where \_tmpCustAging.AccountNum == custTrans.AccountNum
+    {
+        CollectionStatusUpdatedBusinessEvent::newFromCustDispute(dispute).send();
+    }
 }
 ```
 
 ## Source document framework support
 
-The source document framework supports the sending of business events automatically as part of the transition from an in-process state to a completed state for the document. In order for documents extending the source document framework to leverage this capability, they need to implement an extension to the SourceDocumentStateInProcess.getBusinessEvent method to create and return the correct BusinessEventsBase extension type.
+The source document framework supports sending business events automatically as part of the transition from an in-process state to a completed state for the document. To take advantage of this capability, documents that extend the source document framework must implement an extension of the **SourceDocumentStateInProcess.getBusinessEvent** method to create and return the correct **BusinessEventsBase** extension type.
 
 ## Extending a business event payload
 
-There may be additional information that you wish to publish as part of the payload of a business event. Sending this additional information can be accomplished by following these steps to extend the business event's standard payload.
+You might want to publish additional information as part of the payload of a business event. To send this additional information, you must extend the business event's standard payload.
 
 ### Example scenario
 
-Extend the CustFreeTextInvoicePostedBusinessEventContract to include a customer classification. This is a custom classification that is industry based.
+This example shows how to extend the **CustFreeTextInvoicePostedBusinessEventContract** so that it includes a customer classification. This customer classification is an industry-based custom classification.
 
 #### Step 1: Create an extended business event contract
 
-Create a new contract that is composed of the standard business event contract plus any additional information to be included in the payload.
+Create a contract that consists of the standard business event contract plus any additional information that must be included in the payload.
 
-```
-[DataContract]
+    ```
+    [DataContract]
+    public final class CustFreeTextInvoicePostedBusinessEventExtendedContract
+    extends BusinessEventsContract
+    {
+        // standard contract
+        private CustFreeTextInvoicePostedBusinessEventContract
+        custFreeTextInvoicePostedBusinessEventContract;
+        // contract extensions
+        private str customerClassification;
+    }
+    ```
 
-public final class CustFreeTextInvoicePostedBusinessEventExtendedContract
-extends BusinessEventsContract
+#### Step 2: Create an initialize method
 
-{
+Create an **initialize** method that initializes the value of the private contract.
 
-// standard contract
+    ```
+    private void initialize(CustFreeTextInvoicePostedBusinessEventContract
+    \_custFreeTextInvoicePostedBusinessEventContract)
+    {
+        custFreeTextInvoicePostedBusinessEventContract =
+        \_custFreeTextInvoicePostedBusinessEventContract;
+    }
+    ```
 
-private CustFreeTextInvoicePostedBusinessEventContract
-custFreeTextInvoicePostedBusinessEventContract;
+#### Step 3: Create a static newFrom method
 
-// contract extensions
+Create a static **newFrom** method that takes the standard contract as an argument and calls the **initialize** method.
 
-private str customerClassification;
-
-}
-```
-
-#### Step 2: Initialize method
-
-Create an initialize() method that initializes the value of the private contract.
-
-```
-private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-\_custFreeTextInvoicePostedBusinessEventContract)
-
-{
-
-custFreeTextInvoicePostedBusinessEventContract =
-\_custFreeTextInvoicePostedBusinessEventContract;
-
-}
-
-```
-
-#### Step 3: static NewFrom method
-
-Create a static newFrom method that takes the standard contract as an argument and calls the initialize() method.
-
-```
-public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-\_custFreeTextInvoicePostedBusinessEventContract)
-
-{
-
-var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-
-contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-
-return contract;
-
-}
-
-```
+    ```
+    public static CustFreeTextInvoicePostedBusinessEventExtendedContract
+    newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
+    \_custFreeTextInvoicePostedBusinessEventContract)
+    {
+        var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
+        contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
+        return contract;
+    }
+    ```
 
 #### Step 4: Map parm methods
 
-Copy the parm methods from the standard data contract and modify each method to get and set values in the your class' standard contract instance.
+Copy the **parm** methods from the standard data contract, and modify each method so that it gets and sets values in the class's standard contract instance.
 
 ```
 [DataMember('InvoiceAccount')]
-
 public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount \_invoiceAccount
 = custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-
 {
-
-return
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-
+    return
+    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
 }
-
 [DataMember('InvoiceId')]
-
 public CustInvoiceId parmInvoiceId(CustInvoiceId \_invoiceId =
 custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-
 {
-
-return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-
+    return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
 }
-
 ```
 
-#### Step 5: Add parms methods for additional payload data**
+#### Step 5: Add parms methods for additional payload data
 
 ```
 [DataMember('CustomerClassification')]
-
 public CustomerClassification parmCustomerClassification(CustomerClassification
 \_customerClassification = customerClassification)
-
 {
-
-customerClassification = \_customerClassification;
-
-return customerClassification;
-
+    customerClassification = \_customerClassification;
+    return customerClassification;
 }
 ```
 
-Below is the complete implementation of the extended business contract.
+Here is the complete implementation of the extended business contract.
 
 ```
 [DataContract]
-
 public final class CustFreeTextInvoicePostedBusinessEventExtendedContract
 extends BusinessEventsContract
-
 {
-
-// standard contract
-
-private CustFreeTextInvoicePostedBusinessEventContract
-custFreeTextInvoicePostedBusinessEventContract;
-
-// contract extensions
-
-private str customerClassification;
-
-public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-\_custFreeTextInvoicePostedBusinessEventContract)
-
-{
-
-var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-
-contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-
-return contract;
-
+    // standard contract
+    private CustFreeTextInvoicePostedBusinessEventContract
+    custFreeTextInvoicePostedBusinessEventContract;
+    // contract extensions
+    private str customerClassification;
+    public static CustFreeTextInvoicePostedBusinessEventExtendedContract
+    newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
+    \_custFreeTextInvoicePostedBusinessEventContract)
+    {
+        var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
+        contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
+        return contract;
+    }
+    private void initialize(CustFreeTextInvoicePostedBusinessEventContract
+    \_custFreeTextInvoicePostedBusinessEventContract)
+    {
+        custFreeTextInvoicePostedBusinessEventContract =
+        \_custFreeTextInvoicePostedBusinessEventContract;
+    }
+    private void new()
+    {
+    }
+    [DataMember('InvoiceAccount')]
+    public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount \_invoiceAccount
+    = custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
+    {
+        return
+        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
+    }
+    [DataMember('InvoiceId')]
+    public CustInvoiceId parmInvoiceId(CustInvoiceId \_invoiceId =
+    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
+    {
+        return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
+    }
+    [DataMember('InvoiceDate')]
+    public TransDate parmInvoiceDate(TransDate \_invoiceDate =
+    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate())
+    {
+        return
+        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate(_invoiceDate);
+    }
+    [DataMember('InvoiceDueDate')]
+    public DueDate parmInvoiceDueDate(DueDate \_invoiceDueDate =
+    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate())
+    {
+        return
+        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate(_invoiceDueDate);
+    }
+    [DataMember('InvoiceAmountInAccountingCurrency')]
+    public AmountMST parmInvoiceAmount(AmountMST \_invoiceAmount =
+    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount())
+    {
+        return
+        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount(_invoiceAmount);
+    }
+    [DataMember('InvoiceTaxAmount')]
+    public TaxAmount parmInvoiceTaxAmount(TaxAmount \_invoiceTaxAmount =
+    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount())
+    {
+        return
+        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount(_invoiceTaxAmount);
+    }
+    [DataMember('LegalEntity')]
+    public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId \_legalEntity
+    = custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity())
+    {
+        return
+        custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity(_legalEntity);
+    }
+    // contract extensions
+    [DataMember('CustomerClassification')]
+    public CustomerClassification parmCustomerClassification(CustomerClassification
+    \_customerClassification = customerClassification)
+    {
+        customerClassification = \_customerClassification;
+        return customerClassification;
+    }
 }
-
-private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-\_custFreeTextInvoicePostedBusinessEventContract)
-
-{
-
-custFreeTextInvoicePostedBusinessEventContract =
-\_custFreeTextInvoicePostedBusinessEventContract;
-
-}
-
-private void new()
-
-{
-
-}
-
-[DataMember('InvoiceAccount')]
-
-public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount \_invoiceAccount
-= custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-
-{
-
-return
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-
-}
-
-[DataMember('InvoiceId')]
-
-public CustInvoiceId parmInvoiceId(CustInvoiceId \_invoiceId =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-
-{
-
-return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-
-}
-
-[DataMember('InvoiceDate')]
-
-public TransDate parmInvoiceDate(TransDate \_invoiceDate =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate())
-
-{
-
-return
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate(_invoiceDate);
-
-}
-
-[DataMember('InvoiceDueDate')]
-
-public DueDate parmInvoiceDueDate(DueDate \_invoiceDueDate =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate())
-
-{
-
-return
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate(_invoiceDueDate);
-
-}
-
-[DataMember('InvoiceAmountInAccountingCurrency')]
-
-public AmountMST parmInvoiceAmount(AmountMST \_invoiceAmount =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount())
-
-{
-
-return
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount(_invoiceAmount);
-
-}
-
-[DataMember('InvoiceTaxAmount')]
-
-public TaxAmount parmInvoiceTaxAmount(TaxAmount \_invoiceTaxAmount =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount())
-
-{
-
-return
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount(_invoiceTaxAmount);
-
-}
-
-[DataMember('LegalEntity')]
-
-public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId \_legalEntity
-= custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity())
-
-{
-
-return
-custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity(_legalEntity);
-
-}
-
-// contract extensions
-
-[DataMember('CustomerClassification')]
-
-public CustomerClassification parmCustomerClassification(CustomerClassification
-\_customerClassification = customerClassification)
-
-{
-
-customerClassification = \_customerClassification;
-
-return customerClassification;
-
-}
-
-}
-
 ```
 
-#### Step 6: Wrap the buildContract() method.
+#### Step 6: Wrap the buildContract method
 
-Provide a build contract implementation that calls 'next' to load the standard business event contract and populates any payload extensions. Below is the complete class.
+Provide a build contract implementation that calls **next** to load the standard business event contract and populates any payload extensions. Here is the complete class.
 
 ```
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
-
 public final class FreeTextInvoicePostedBusinessEventContract_Extension
-
 {
-
-public BusinessEventsContract buildContract()
-
-{
-
-var businessEventContract =
-CustFreeTextInvoicePostedBusinessEventExtendedContract::newFromCustFreeTextInvoicePostedBusinessEventContract(next
-buildContract());
-
-businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
-
-return businessEventContract;
-
-}
-
+    public BusinessEventsContract buildContract()
+    {
+        var businessEventContract =
+        CustFreeTextInvoicePostedBusinessEventExtendedContract::newFromCustFreeTextInvoicePostedBusinessEventContract(next
+        buildContract());
+        businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
+        return businessEventContract;
+    }
 }
 ```
 
 ## Summary
-The payload of a business event payload can be easily extended by implementing a business event contract that supplements the standard business event contract and an extension class that uses chain-of-command (CoC) to wrap the implementation of the buildContract() method.
 
+You can easily extend the payload of a business event by implementing a business event contract that supplements the standard business event contract, and an extension class that uses Chain of Command (CoC) to wrap the implementation of the **buildContract** method.
