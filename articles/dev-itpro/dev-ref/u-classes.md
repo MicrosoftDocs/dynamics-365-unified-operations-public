@@ -5,7 +5,7 @@ title: U classes
 description: System API classes that start with the letter U.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
