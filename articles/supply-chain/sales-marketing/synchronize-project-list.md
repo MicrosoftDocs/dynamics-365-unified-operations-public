@@ -5,7 +5,7 @@ title: Synchronize project list from Finance and Operations to Field Service
 description: This topic discusses the templates and underlying tasks that are used to synchronize projects from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 01/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,31 +41,29 @@ This topic discusses the templates and underlying tasks that are used to synchro
 ## Templates and tasks
 The following template and underlying tasks are used to run synchronization of projects from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 
-**Name of the template in Data integration:**
+**Template in Data integration**
 - Projects (Finance and Operations to Field Service)
 
-**Names of the tasks in the Data integration project:**
+**Task in the Data integration project**
 - Projects
 
 The following synchronization tasks are required before synchronization of project list can occur:
 - Accounts (Sales to Finance and Operations) 
 
 ## Entity set
-Field Service	Finance and Operations
-
 | Field Service           | Finance and Operations  |
 |-------------------------|-------------------------|
 |msdynce_externalprojects |	Projects                |
 
 ## Entity flow
-Projects are created in Finance and Operations. Projects with **Project type** Time and material and **Project stage** In process will synchronize to the **External Project** entity in Field Service, including Project number, Project name, Project stage and Customer account information. The list of **External Project** is used to pair Field service Work orders with Finance and Operations projects.
-Field Service CRM solution
-The External Project is a new entity that gets all the Projects from Operations.
-The External Project field has been added to the Work Order entity. This field is a lookup and buy tagging your Work Order with a project the Sales Order will then be connected to a Project within Operations. Ones the System Status changes Open – In Progress(690,970,000) to a higher status the External Project field will be locked and you can't add, remove or change the value.
+Projects are created in Finance and Operations. Projects with **Project type** set to **Time and material** and **Project stage** set to **In process** will synchronize to the **External Project** entity in Field Service, including Project number, Project name, Project stage, and Customer account information. The **External Project** list is used to pair Field service work orders with Finance and Operations projects.
+
+## Field Service CRM solution
+The **External Project** entity gets all the projects from Finance and Operations. The **External Project** field has been added to the **Work Order** entity. This is a lookup field, so by tagging your work order with a project, the sales order will be connected to a project within Finance and Operations. After the **System Status** changes **Open – In Progress(690,970,000)** to a higher status, the **External Project** field will be locked and you can no longer add, remove, or change the value.
 
 ## Prerequisites and mapping setup
-### In Finance and Operations
-Enable change tracking for Data entity Projects
+### Finance and Operations
+Enable change tracking for Data entity projects.
 
 ## Template mapping in Data integration
 
