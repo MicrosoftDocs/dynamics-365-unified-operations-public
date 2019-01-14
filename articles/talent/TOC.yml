@@ -180,7 +180,7 @@
       href: configure-payroll-integration.md
     - name: Integration FAQ
       href: talent-fo-integration.md
- - name: Office integration
+  - name: Office integration
     items:
     - name: Office integration tutorial
       href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
