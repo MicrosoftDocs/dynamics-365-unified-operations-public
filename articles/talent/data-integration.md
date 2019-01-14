@@ -95,16 +95,15 @@ The CDS entities and the associated APIs are the best option for accessing
 Talent data from web applications, web services/APIs, and from any other
 application that knows how to connect to OData feeds.
 
-NOTE: With the decision to make CDS for Apps the preferred data interface for
+> [!NOTE]
+> With the decision to make CDS for Apps the preferred data interface for
 Talent (Core HR) being relatively recent, you may find that the Core HR data
-entities you need for your integration are not yet available in CDS[^1]. If the
+entities you need for your integration are not yet available in CDS\*. If the
 Core HR entities required for your integration are not yet available, you will
 need to wait for the data entities to be made available or you will need to use
 one of the other integration technologies described below.
 
-[^1]: For a list of Core HR entities available in CDS, please refer to
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/corehrentities>.
-NOTE: For Attract and Onboard, all entities are available in CDS.
+
 
 ### DMF/DIXF Entities
 Dynamics 365 for Talent (Core HR), built primarily on the same platform as
@@ -257,3 +256,8 @@ allowing integrating applications access to the data. This paper has described
 the available integration technologies and some of their key characteristics.
 This information should help you make better decisions on which approaches to
 leverage for your integration projects.
+
+\* For a list of Core HR entities available in CDS, please refer to
+<https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/corehrentities>.
+> [!NOTE]
+> For Attract and Onboard, all entities are available in CDS.
