@@ -80,9 +80,9 @@ For information about the bug fixes included in each of the updates that are par
 -   Expose business events as 'triggers' in Microsoft Flow
 
 
-## Feature heading
+## New APIs
 
-Feature description.
+New APIs have been added to help data integration retrieve errors that occurred during the import execution runs in a data project. For more information, see [Data management package REST API](../../dev-itpro/data-entities/data-management-api.md).
 
 ## Feature heading
 
