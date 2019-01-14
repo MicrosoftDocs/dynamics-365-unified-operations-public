@@ -178,6 +178,8 @@
       href: talent-financeandoperations-integration.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
+    - name: Data integration guidance for Dynamics 365 for Talent
+      href: data-integration.md
     - name: Integration FAQ
       href: talent-fo-integration.md
   - name: Office integration
