@@ -129,7 +129,7 @@ To set up Electronic messages functionality for SPED-Reinf event communications,
 
 Every event that is created, delivered, and received is represented by a message and a message item.
 
-![](media/8c8631d99a2bf4faa9ea297400278133.png)
+![Electronic-messages-structure](media/bra-electronic-messages-structure.png)
 
 The message item is represented by the XML event message, and it also includes the following additional information that is stored in the message or updated in Microsoft Dynamics:
 
