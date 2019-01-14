@@ -194,15 +194,15 @@ Every time that a message is created, prepared, validated, delivered, or receive
 
 -   **Preparation items (Preparacao dos eventos) –** This action is used to create and prepare the XML message. It requests additional parameters, such as **Booking date**, **CNPJ**, and **CNPJ root**, because the events are generated based on this information.
 
-![](media/1977101b4869f5d20d58963ebc2ddbea.png)
+![Preparation-items](media/bra-preparation-items.png)
 
 -   **Process response (Processo de reposta)** – This action is used to update the delivered message when it's approved by the government by using a protocol number. Additionally, the message is updated as registered on the     government website.
 
-![](media/bc0301f56b39d57c9724bae8d1eef41f.png)
+![Preparation-items-process-response](media/bra-preparation-items-process-response.png)
 
 -   **Report generation (Geracao de relatório)** – This action is used to send and receive the message item.
 
-![](media/316d613dc632acd38df4cbc65d1ce3f6.png)
+![Generate-reports-parameters](media/bra-generate-reports-parameters.png)
 
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.*
@@ -214,7 +214,7 @@ Before a message is delivered, you must set up XML schema validation to prevent 
 Go to **Organization administration \> Document management \> Document management parameters**, and enable XSD files by adding **XSD** as a new file
 type.
 
-![](media/c08bd2384ef3ad9a4077934a6ba8d5e8.png)
+![Document-management-parameters](media/bra-document-management-parameters.png)
 
 Go to **Tax \> Setup \> Electronic messages \> Message processing actions**, and select **New \> File** to attach the schemas (.xsd files) for the following
 actions:
@@ -229,11 +229,11 @@ actions:
 
 Go to **Tax \> Setup \> Electronic messages \> Message processing actions**, select the **Populate** (**Incluir**) action, and then, in the **Populate records action** field, select **Registrar transacões**.
 
-![](media/6aa558926bd5a64a11134c0c8da6abfd.png)
+![Message-Processing-actions](media/bra-message-processing-actions.png)
 
 Go to **Tax \> Setup \> Electronic messages \> Web service settings**, and set up a web services connection and certificates for issuing and inquiring about events.
 
-![](media/1be0f06dd1f0ba760e86bc4fba579871.png)
+![Webservices-settings](media/bra-web-service-settings.png)
 
 Note: In the settings for **SPED Reinf asynchronous (SPED Reinf – assíncrono)**, include the web service address for inquire event R-5011.
 
@@ -245,7 +245,7 @@ The service type table represents table 06 that the tax authorities have establi
 
 2.  Select **New**, enter a classification code that has been established by the tax authorities, and enter a description.
 
-![](media/d04daa95a4da41cbbb62da0a3856ba20.png)
+![Service-types](media/bra-service-type-setup.png)
 
 After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management \> Setup \> Fiscal information \> Service code**, and then, for each service, assign the related service type.
 
@@ -253,23 +253,23 @@ After the list of service types is created, the service types must be assigned t
 
 Go to **Fiscal books \> Setup \> SPED Reinf \> Tax classification codes** and enter the available classification types.
 
-![](media/f0ef06f334ea7f91250cc8c122e927db.png)
+![Tax-classification](media/bra-tax-classification-codes.png)
 
 This information is assigned to the fiscal organization on the **General** FastTab at **Fiscal books \> Setup \> Fiscal organization**.
 
-![](media/9d568209aafc6ed4d9c4bbe8d3dc374c.png)
+![Fiscal-organization](media/bra-fiscal-organization-setup.png)
 
 ### **Set up codes explanation suspension**
 
 Go to **Fiscal books \> Setup \> SPED Reinf \> Codes explanation suspension**, and set up the codes that are used in event R-1070 when suspension of withholding applies. These codes are assigned at **Fiscal books \> Periodic \> SPED Reinf \> Administrative and judicial process**.
 
-![](media/2ee109056b3ae7b5ee31b9feeb6de8ac.png)
+![Explanation-codes](media/bra-codes-explanation-suspension.png)
 
 ### **Set up fiscal books parameters**
 
 Go to **Fiscal books \> Setup \> Fiscal books parameters**, and set up the number sequence for events R-2010 and R-2020.
 
-![](media/ccfca4a85f258f6e1200665f6a6d64fd.png)
+![Fiscal-books-parameters](media/bra-sped-fiscal-books-parameters.png)
 
 **Note**: If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To start the wizard, go to **Organization administration \> Number sequences \> Number sequences**, and select **Generate**. You will then be able to configure the related number sequence.
 
@@ -337,7 +337,7 @@ The events in the SPED-Reinf must be transmitted by using a valid digital certif
 
 3.  The web service returns the result of processing. If the events or batch of events is successfully received, a receiving protocol is returned. Otherwise, an error message is returned. In that case, the taxpayer can resolve the errors and resubmit the event through a new batch.
 
-![Machine generated alternative text: Contribuinte Eventos Gera Evento XML Assina Digitalmente & 80 T rata Rsultados Lote de Ev Clialte Notificaqäo de Retomo EFD-REINF Rec.cäo e Val idacäo (Lotede Eventosi BD Controle ](media/64212780b681aa1d6ce4064d3ef1eea6.png)
+![Machine generated alternative text: Contribuinte Eventos Gera Evento XML Assina Digitalmente & 80 T rata Rsultados Lote de Ev Clialte Notificaqäo de Retomo EFD-REINF Rec.cäo e Val idacäo (Lotede Eventosi BD Controle ](media/bra-general-process.png)
 
 The events are transmitted to tax authorities by using Electronic messages functionality to establish a two-way, automated, and instantaneous relationship between the government web services and the taxpayer.
 
