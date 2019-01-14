@@ -45,7 +45,7 @@ The following template and underlying tasks are used to synchronize inventory ad
 - Inventory Adjustment (Field Service to Finance and Operations)
 - Inventory Transfers (Field Service to Finance and Operations)
 
-**Tasks in Data integration projects**
+**Tasks in the Data integration projects**
 - Inventory Adjustments
 - Inventory Transfers
 
