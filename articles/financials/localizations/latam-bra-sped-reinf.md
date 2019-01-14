@@ -147,21 +147,21 @@ The message item is represented by the XML event message, and it also includes t
 
 You can find this configuration at **Tax \> Setup \> Electronic messages \> Additional fields**.
 
-![](media/53f405f96ac7240f3df436117f87a81d.png)
+![Electronic-messages-additional-fields](media/bra-electronic-messaging-additional-fields.png)
 
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.*
 
 The message item types are classified by the type of event at **Tax \> Setup \> Electronic messages \> Message item types**.
 
-![](media/e2972b3722a6841416c90184d51d8836.png)
+![Message-types](media/bra-message-types.png)
 
 > [!NOTE]
 > Don't remove this configuration. These types configuration are included in the package.*
 
 Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Number sequences** tab, select **Message** and **Message item** to set up the sequence number for message items.
 
-![](media/d4f6e1a5f816b9cbb86959806d986197.png)
+![Electronic-messages-number-sequences](media/bra-electronic-messages-number-sequences.png)
 
 > [!NOTE]
 > The number sequence must be defined as non-continuous.*
