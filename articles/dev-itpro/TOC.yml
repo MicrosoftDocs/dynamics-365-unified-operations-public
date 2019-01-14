@@ -1075,8 +1075,6 @@
 - name: System administration
   href: sysadmin/system-administration-home-page.md
   items:
-  - name: Cloud platform monthly updates FAQ
-    href: sysadmin/faq-platform-monthly-updates.md
   - name: Add links to your legal terms and privacy statement
     href: sysadmin/legal-terms-privacy-statement.md
   - name: License codes and configuration keys report
