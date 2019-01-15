@@ -143,7 +143,6 @@ Not all workflows support catch weight product processing with warehouse managem
 - Changes to inventory status that are defined by a query aren't supported for catch weight products. (Changes to quality order inventory status aren't supported either.)
 - For catch weight products, the inventory status can't be changed from the **On-hand by location** page.
 - For catch weight products, the inventory status can't be changed as part of warehouse app movement work.
-- For catch weight products, weight can't be assigned during processing for warehouse work counting.
 - License plate loading to initialize warehouse stock isn't supported for catch weight products.
 - Batch balancing processes aren't supported for catch weight products.
 - Handling of negative physical inventory isn't supported for catch weight products.
