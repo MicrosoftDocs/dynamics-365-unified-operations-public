@@ -43,22 +43,44 @@ The Expense management Power BI content requires the TrvBiExpenseMeasurement mea
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the Power BI content.
 
-| Report page                      | Chart                                                                                                                         | Tile                                          |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Cost control by fiscal period    | Actual cost and Budget cost by Cost element hierarchy level                                                                   | Actual cost vs Budget cost                    |
-|                                  | Budget variance by Cost element hierarchy level                                                                               | Actual cost rate vs Budget cost rate          |
-|                                  | Top 10 Budget variance in percentage by Cost element                                                                          | Actual magnitude vs Budget magnitude          |
-| Cost control by Year to date     | Actual cost and Budget cost by Calendar Year Period                                                                           | Actual cost vs Budget cost                    |
-|                                  | Budget variance by Calendar Year Period                                                                                       | Actual cost rate vs Budget cost rate          |
-|                                  | Top 10 Budget variance in percentage by Cost element                                                                          | Actual magnitude vs Budget magnitude          |
-| Cost rate by fiscal year         | Actual cost rate by Cost behavior                                                                                             | Actual cost rate vs Budget cost rate          |
-|                                  | Actual cost rate, Budget cost rate variance, Budget cost rate percentage and Budget cost rate by Cost element hierarchy level | Actual magnitude vs Budget magnitude          |
-|                                  | Budget variance by Cost element hierarchy level                                                                               |                                               |
-|                                  | Top 10 Budget variance in percentage by Cost element                                                                          |                                               |
-| Flexible budget by fiscal period | Actual cost, Budget cost and Flexible budget cost by Cost element hierarchy level                                             | Actual magnitude vs Budget magnitude          |
-|                                  | Budget variance and Flexible budget variance by Cost element hierarchy level                                                  | Actual cost vs Flexible budget cost           |
-|                                  | Actual cost, Budget cost and Flexible cost by Cost behavior and Cost element hierarchy level                                  | Actual cost rate vs Flexible budget cost rate |
-| Cost statement by fiscal period  | Actual cost by Cost element hierarchy level and Cost object dimension member name                                             |                                               |
-|                                  | Actual cost by Cost object dimension member name and Cost element dimension member name                                       |                                               |
+Personal expenses content pack
+| Report page | Visualization                                                                                                                
+|---------------------------------------------------------|
+| My expenses | Amount of mileage                         |
+|             | In process expense reports                |
+|             | No. of Unsubmitted expenses               |
+|             | Personal expenses to be paid              |
+|             |	Amount unsubmitted                        |
+|             | Amount submitted                          |
+|             | Amount awaiting reimbursement             |
+|             | Expense reports with amounts and status   |
+|             | Submitted but unapproved expense reports  |
+|             | Expenses by cost type                     |
+|             | Expenses by merchant                      |
+|             | Expenses by processed expenses            |
+|             | Expenses by project                       |
+|             | Total transaction amount over time        |
 
-                                                                                      |
+Admin expenses
+| Report page         | Visualization                                                                                                                
+|---------------------------------------------------------------|
+| Expense Overview    | Draft expenses amount                   |
+|                     | Number of draft expense lines           |
+|                     | Draft expense lines                     |
+|                     | Expense report policy violations        |
+|                     | Amount outstanding                      |
+|                     | Submitted but unapproved expenses       |
+|                     | Approved expenses                       |
+|                     | Total expense amount                    |
+|                     | Expense report summaries                |
+|                     | Expenses by cost type                   |
+|                     | Expenses by merchant                    |
+|                     | Expenses by employees                   |
+|                     | Expenses vs project                     |
+| Employee Comparison |	Expense amounts                         |
+|                     | Expense amounts over time by employee   |
+| Employee Statistics | Expense reports by cost type            |
+|                     | Personal expenses                       |
+|                     | Expense reports by statistics group     |
+
+
