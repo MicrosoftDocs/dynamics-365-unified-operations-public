@@ -44,8 +44,9 @@ The Expense management Power BI content requires the TrvBiExpenseMeasurement mea
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the Power BI content.
 
 Personal expenses content pack
-| Report page | Visualization                                                                                                                
-|---------------------------------------------------------|
+
+| Report page | Visualization                             |
+|-------------|-------------------------------------------|
 | My expenses | Amount of mileage                         |
 |             | In process expense reports                |
 |             | No. of Unsubmitted expenses               |
@@ -62,8 +63,9 @@ Personal expenses content pack
 |             | Total transaction amount over time        |
 
 Admin expenses
-| Report page         | Visualization                                                                                                                
-|---------------------------------------------------------------|
+
+| Report page         | Visualization                           |           
+|---------------------|-----------------------------------------|
 | Expense Overview    | Draft expenses amount                   |
 |                     | Number of draft expense lines           |
 |                     | Draft expense lines                     |
@@ -82,5 +84,3 @@ Admin expenses
 | Employee Statistics | Expense reports by cost type            |
 |                     | Personal expenses                       |
 |                     | Expense reports by statistics group     |
-
-
