@@ -259,4 +259,4 @@ entities, and recommends CDS as the preferred data interface when coverage is
 available. Currently, CDS data coverage is low relative to DMF
 and OData-enabled entities.
 
-\*\*\* SQL database can be accessed programmatically, however.
+\*\*\* SQL database can be accessed programmatically.
