@@ -42,7 +42,7 @@ The used **Field Service Products (Finance and Operations to Field Service)** te
 
 This topic only describes the differences between the **Field Service Products (Finance and Operations to Field Service)** and **Field Service Products (Finance and Operations to Field Service)** templates.
 
-The main difference is that this template include mapping of the project number asigned to the Work order in Field Service, ensuring that the Sales order created in Finance and Operations include the project number and that invoicing can happen on the related project. Besides this the template use Advanced Query and Filtering.
+The main difference is that this template includes mapping of the project number asigned to the Work order in Field Service, ensuring that the Sales order created in Finance and Operations include the project number and that invoicing can happen on the related project. Besides this the template use Advanced Query and Filtering.
 
 ## Templates and tasks
 
