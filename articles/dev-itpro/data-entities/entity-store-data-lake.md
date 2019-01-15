@@ -47,7 +47,7 @@ ms.dyn365.ops.version: Platform Update 23
 > - **Extend analytical workspaces by using PowerBI.com:** Available in a future platform update
 
 ## Automated Entity store refresh
-
+You need to enable automated Entity store refresh before enabling Data Lake integration 
 1. Go to **System administration** \> **Set up** \> **Entity store**.
 
     On the **Entity store** page, a message indicates that you can switch to the **Automated Entity store refresh** option. This option is managed by the system. An admin doesn't have to schedule or monitor the Entity store refresh.
@@ -71,6 +71,10 @@ After the new experience is turned on, you can define the refresh for each aggre
 - Once a week
 
 In addition, an admin can refresh any aggregate measurement on demand by selecting the **Refresh** button. Additional options will be added in future platform updates. These options will include options for real-time refresh.
+
+> [!IMPORTANT]
+> When the automated refresh is enabled, the system may disable refresh of Aggregate measurements in some cases. You must revist aggregate measurements and validate that appropriate refresh intervals have been applied by the system.
+>
 
 ## Entity store data in Azure Data Lake (full push)
 
