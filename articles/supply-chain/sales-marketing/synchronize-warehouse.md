@@ -56,7 +56,7 @@ The following template and underlying tasks are used to run synchronization of w
 Warehouses that are created and maintained in Finance and Operations can be synchronized to Field Service via a Common Data Service (CDS) Data integration project. The warehouses that you want to synchronize to Field Service can be controlled with the Advanced query and filtering on the project. Warehouses that synchronize from Finance and Operations are created in Field Service with the **Is maintained externally** field set to **Yes** and the record is read only.
 
 ## Field Service CRM solution
-To support the integration between Field Service and Finance and Operations, additional functionality from the Field Service CRM solution is required. The solution includes the following changes. The **Is Maintained Externally** field has been added to the **Warehouse (msdyn_warehouses)** entity. This field helps to identify if the warehouse is handled from Finance and Operations or if it only exists in Field Service. The settings for this field include:
+To support the integration between Field Service and Finance and Operations, additional functionality from the Field Service CRM solution is required. In the solution, the **Is Maintained Externally** field has been added to the **Warehouse (msdyn_warehouses)** entity. This field helps to identify if the warehouse is handled from Finance and Operations or if it only exists in Field Service. The settings for this field include:
 - **Yes** – The warehouse originated from Finance and Operations and won't be editable in Sales.
 - **No** – The warehouse was entered directly in Field Service and is maintained here.
 
