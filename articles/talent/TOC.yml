@@ -49,12 +49,8 @@
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR and Common Data Service for Apps
       href: CoreHREntities.md
-    - name: Integrations
-      href: talent-financeandoperations-integration.md
     - name: Access preview features
       href: access-preview-feature.md
-    - name: Configure the payroll integration between Talent and Dayforce
-      href: configure-payroll-integration.md
     - name: Get support for Talent
       href: talent-support.md
   - name: Organize your workforce by using departments, jobs, and positions
@@ -176,6 +172,16 @@
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Publish a mobile workspace
       href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Integration
+    items:
+    - name: Integrate to Dynamics 365 for Finance and Operations
+      href: talent-financeandoperations-integration.md
+    - name: Configure the payroll integration between Talent and Dayforce
+      href: configure-payroll-integration.md
+    - name: Data integration guidance for Dynamics 365 for Talent
+      href: data-integration.md
+    - name: Integration FAQ
+      href: talent-fo-integration.md
   - name: Office integration
     items:
     - name: Office integration tutorial
