@@ -86,6 +86,8 @@ You can define when the weight is captured for sales and transfer order processi
 
 If the actual weight is captured at the packing station during the container packing processes, warehouse workers won't be prompted to capture the weight during picking work. Instead, the average weight of the physical inventory will be used as the weight of the picked inventory that goes to the packing area.
 
+For internal warehouse management processes like counting and adjustment corrections it is possible to define if the weight should be captured or not. If not captured the nominal weight will be used.
+
 You can also define how the weight is captured. In one of the two main flows, catch weight tags are tracked and used to capture the weight. In the other flow, catch weight tags aren't tracked.
 
 - **Yes** – The item uses catch weight tags. Each tag number represents one catch weight unit (box), and a weight and other information are associated with the tag. For outbound processes, the weight that is associated with the tag is used.
