@@ -22,8 +22,9 @@ This topic describes what is included in the Expense Management Power BI content
 
 ## Overview
 Two Power BI content packs are available for use with Expense Management in version 8.1 and newer. 
-•	There is a personal dashboard designed for employees submitting expense reports. The dashboard is tailored to providing key information to individuals on unsubmitted and submitted amounts as well as a history and insights into their expense transaction history.
-The personal dashboard is a single page containing the most important information for the user. 
+•	There is a personal dashboard designed for employees submitting expense reports. 
+
+The dashboard is tailored to providing key information to individuals on unsubmitted and submitted amounts as well as a history and insights into their expense transaction history. The personal dashboard is a single page containing the most important information for the user. 
 
 •	There is an admin dashboard designed for accounts payable clerks and managers. The dashboard is tailored towards tracking and reporting on overall employee expenses. It provides key expense metrics, such as unsubmitted expenses, mileage, and average expense report amount. It uses transactional data and provides aggregate views of expense management across all companies. It also provides a breakdown per employee and can have financial dimension data added.
 The Admin expense analytics content is three pages containing:
@@ -34,7 +35,7 @@ The Admin expense analytics content is three pages containing:
 All the amounts are shown in the company currency. Data for all companies are shown, but you can add a company filter. 
 
 ## Accessing the Power BI content
-You can find the **xyz** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+You can find the Expense Admin Dashboard.pbix and Expense Personal Dashboard.pbix Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 The content is available from the Expense Management workspace as embedded Power Bi content. Any expense owner can access personal expenses for themselves, while only Accounts Payable clerks and managers have access to the Admin content to view all user's expense data.
 
 ## Refreshing the Power BI content
@@ -43,7 +44,7 @@ The Expense management Power BI content requires the TrvBiExpenseMeasurement mea
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the Power BI content.
 
-Personal expenses content pack
+Personal expenses analytics
 
 | Report page | Visualization                             |
 |-------------|-------------------------------------------|
@@ -62,7 +63,7 @@ Personal expenses content pack
 |             | Expenses by project                       |
 |             | Total transaction amount over time        |
 
-Admin expenses
+Admin expenses analytics
 
 | Report page         | Visualization                           |           
 |---------------------|-----------------------------------------|
