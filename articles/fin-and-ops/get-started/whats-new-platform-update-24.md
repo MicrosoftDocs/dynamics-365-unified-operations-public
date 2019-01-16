@@ -75,7 +75,7 @@ Some capabilities that will be included are:
 
 New APIs have been added to help data integration retrieve errors that occurred during the import execution runs in a data project. For more information, see [Data management package REST API](../../dev-itpro/data-entities/data-management-api.md).
 
-## Client Alert support for Email notifications
+## Client Alert support for Email notifications **[PREVIEW]**
 Stay on top of your business data with integrated change tracking tools.  With Platform Update 24, users will be able to create Alert Rules that automatically dispatch email notifications to contacts when triggered by an event.  This capability has the honor of being the #1 requested feature in the Dynamics Ideas customer forum.  With Dynamics 365 for Finance & Operations, users are able to define custom Alert Rules to monitor filtered views of their data.  The option of receiving email notifications is available for all supported Alert types and can be enabled for existing Alert Rules.  
 
 Supported scenarios include using intuitive controls to create Alerts Rules that monitor filtered views of System Batch jobs.  Move beyond the burden of constantly checking reports for changes to business data and let the Dynamics 365 for Finance & Operations intelligent change detection service do the monitoring for you.
@@ -83,3 +83,5 @@ Supported scenarios include using intuitive controls to create Alerts Rules that
 ## Feature heading
 
 Feature description.
+
+**NOTE** - Join the Dynamics 365 Insider Program to get early access to **PREVIEW** features.
