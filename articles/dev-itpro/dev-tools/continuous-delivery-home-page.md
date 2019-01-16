@@ -54,7 +54,7 @@ FAQ and guidelines
 
 ### Blogs
 
-- [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
+- [Insider tips on development and customization (blog)](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax)
 
 ## Servicing
 - [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
