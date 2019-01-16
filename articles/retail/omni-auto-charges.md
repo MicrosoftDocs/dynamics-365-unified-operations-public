@@ -174,6 +174,8 @@ From the **Manage charges** form in POS, the user can view both Header and Line 
 
 If the **Charge override reason code** has been configured on the Retail parameters setup in HQ (Customer Orders tab>Charges section), the user will be prompted to provide a reason code whenever charges have been modified in the POS application.
 
+If reason codes have been captured for overwritten charges, a new report is also available to review these overrides.  This can be found in **Retail>Inquiries and reports>Charge override history
+
 ### Refunding charges on a POS return transaction
 
 If any charges should be systematically refunded to a customer, ensure the related charges code has been configured as **Refundable** in HQ.  This setting is found on the Charges code setup form.  Ensure these settings have been synchronized to your Retail channel databases.
@@ -191,4 +193,6 @@ These elements are:
 ?
 ?
 ?
+### Preventing charges from calculating until the POS order is completed
 
+Some organizations may prefer to wait until the user has finished adding all of the sales lines to the POS transaction before calculating charges.  To prevent calculation of charges as items are added to the POS transaction, the organization should turn on the **Manual charge calculation** parameter in the **Functionality profile** that will be used by the store.   Enabling this parameter will require the POS user to use the **Calculate totals** operation when they have completed adding the products to the POS transaction.   This **Calculate totals** operation will then trigger the calculation of any auto charges for the order header or lines as applicable.
