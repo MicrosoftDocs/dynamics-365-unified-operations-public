@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscription groups 
-description: 
+description: This topic outlines what is defined in subscription group.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018

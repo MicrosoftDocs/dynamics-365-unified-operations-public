@@ -48,10 +48,10 @@ This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 f
     {
         "extensionPackages": [
             {
-                "baseUrl": " SampleExtensions"
+                "baseUrl": "SampleExtensions"
             },
             {
-                "baseUrl": " SampleExtensions2"
+                "baseUrl": "SampleExtensions2"
             }
         ] 
     }

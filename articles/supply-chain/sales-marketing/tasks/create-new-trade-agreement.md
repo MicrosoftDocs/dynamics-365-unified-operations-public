@@ -5,7 +5,7 @@ title: Create a new trade agreement
 description: This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. 
 author: omulvad
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 11/16/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -70,3 +70,6 @@ This procedure shows you how to create a trade agreement where you register a ne
     * Review the details of the price trade agreement you have just created.    
 5. Close the page.
 
+## Additional resources
+### Community blogs
+- [Sales prices in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)

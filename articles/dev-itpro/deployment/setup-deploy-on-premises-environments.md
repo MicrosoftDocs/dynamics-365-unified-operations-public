@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments home page
 description: This topic provides links to topics about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 8
 The process for deploying on-premises environments differs between Platform update 12 and earlier platform updates. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md). 
 
 For setup instructions, see: 
-- [Set up and deploy on-premises environments (Platform update 12)](setup-deploy-on-premises-pu12.md)
+- [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md)
 - [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md)
 
 

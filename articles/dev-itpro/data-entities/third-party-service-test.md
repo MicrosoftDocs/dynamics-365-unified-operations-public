@@ -48,7 +48,7 @@ Before you can test a service by using an external application, you must registe
 
 For details, see:
 
-- [Register an application with AAD](services-home-page.md#register-a-native-application-with-aad)
+- [Register an application with AAD](services-home-page.md#register-a-web-application-with-aad)
 - [Register your external application in Finance and Operations](services-home-page.md#register-your-external-application-in-finance-and-operations)
 
 ## Query Finance and Operations OData by using Postman

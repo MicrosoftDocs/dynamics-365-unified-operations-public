@@ -5,7 +5,7 @@ title: Set up automatic freight reconciliation
 description: This procedure shows how to set up data for automatic freight reconciliation. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -38,9 +38,9 @@ This procedure shows how to set up data for automatic freight reconciliation. Th
     * The freight bill type defines how freight bills and carrier invoices  should be matched.  
 2. Click New.
 3. In the Freight bill type field, type a value.
-4. In the Engine assembly field, type 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.
+4. In the Engine assembly field, type 'Microsoft.Dynamics.Ax.Tms.dll'.
     * This is the standard Transportation management matching engine code library.  
-5. In the Engine class field, type 'Microsoft.Dynamics.Ax.Tms.dll'.
+5. In the Engine class field, type 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.
     * This is the standard Transportation management matching engine class.  
 6. Click New.
 7. In the Description field, choose the value that should match on the freight bill and the carrier invoice.  

@@ -46,24 +46,29 @@ In addition to supporting order creation, the call center module also provides a
 This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Dynamics 365 for Retail.
 
 ## Configure the call center
+
 [Set up order processing options](set-up-order-processing-options.md)
 
 ## Configure order processing
+
 [Set up fraud alerts](set-up-fraud-alerts.md)
 
 [Manual Order Holds](work-with-order-holds.md)
 
 ## Configure payment processing
+
 [Payment methods in a call center](work-with-payments.md)
 
 ## Configure delivery modes
+
 [Configure call center delivery modes and charges](configure-call-center-delivery.md)
 
 ## Configure direct marketing
+
 [Call center catalogs](call-center-catalogs.md)
 
 [Set up RFM analysis](set-up-rfm-analysis.md)
 
 ## Configure continuity programs
-[Set up a continuity program for a call center](set-up-continuity-program.md)
 
+[Set up a continuity program for a call center](set-up-continuity-program.md)

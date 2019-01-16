@@ -2,10 +2,10 @@
 # required metadata
 
 title: Product receipt against purchase orders
-description: This article describes the various options for registering products as received.
+description: This topic describes the various options for registering products as received.
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [retail name](../includes/retail-name.md)]
 
-This article describes the various options for registering products as received.
+This topic describes the various options for registering products as received.
 
 Product receipt is the process of recording that products that were ordered have been received, so that the purchase order (PO) lines can then be processed for invoicing. In some cases, products go through preregistration, where additional information from the supplier is recorded before the products are received. When products arrive, they are first marked as **Registered**. The products might then go through additional processes, such as quality management, before they are finally marked as **Received**.
 
@@ -52,8 +52,6 @@ Products that are received in a warehouse might go through quality inspection be
 
 ## Product receipt
 Most often, the **Product receipt** action on the **Purchase orders** page is used to mark products as **Received** on the PO. The **Posting product receipt** page has various options for the quantity that is accounted as received. For example, you can set the **Quantity** field to **Ordered quantity** or **Receive now quantity**. Alternatively, if a warehouse arrival process has been used, you will often set this field to **Registered quantity**. You can modify the quantities on each order line that will be marked as **Received**, to account for any discrepancies, such as under-delivery and over-delivery. During product receipt, you must specify a product receipt identifier, which is typically a reference to the packing slip from the supplier. This identifier is required for accounting, because it enables checks or audits of supplier packing slips against what has been received, and the accounted inventory or expense.  
-
-If an employee ordered goods by using a purchase requisition, that employee might be asked to confirm receipt of the product himself or herself. You configure this behavior by using a workflow. You can configure the workflow conditions so that they match your business process.  
 
 POs can be created for products that aren’t intended as inventory but are considered an expense. This category includes order lines where the products are marked as **Not stocked** by their inventory model group, and also lines that use procurement categories. In this case, the items might not go through arrival registration and receipt in the warehouse. Instead, the **Product receipt** action is used to record the receipt directly on the PO, and the receipt is based on the ordered quantity, not a registered quantity.  
 

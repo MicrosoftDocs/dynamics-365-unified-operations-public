@@ -5,7 +5,7 @@ title: Advance holders
 description: Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: LizaGolub
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,12 +38,16 @@ Learn about advance holder functionality in Microsoft Dynamics 365 for Finance a
 An *advance holder* is an employee of a company who is accountable for an expense amount that is provided by the organization. Only a company's worker can be an advance holder. When a procurement happens, an advance holder reports to the company about the expenditures that were made. The company reimburses the employee for the expense amount. A company controls a balance for each advance holder. Users in legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia can reflect specific transactions accompanying operations with company’s employees who are accountable for the expense amount that is provided by the organization.
 
 ## Set up an advance holder
-To set up an advance holder, the following tasks should be completed in order.
-1.  Create advance holder groups.
-2.  Set up an employee posting profile.
-3.  Set up account payable parameters.
-4.  Create a specific terms of payment for the advance holder.
-5.  Create an advance holder.
+This section walks you through setting up an advance holder. Be sure to complete the tasks in this section in the following order.
+
+> [!div class="checklist"]
+> * 1. Create advance holder groups
+> * 2. Set up an employee posting profile
+> * 3. Set up account payable parameters
+> * 4. Create a specific terms of payment for the advance holder
+> * 5. Create a specific terms of payment for the advance holder
+> * 6. Create an advance holder
+
 
 ### Advance holder groups
 
@@ -85,20 +89,32 @@ To reflect advance holder’s transactions you must set up the following on the 
 ### Terms of payment for advance holder
 
 To correctly register and post a purchase order through an advance holder, you must use a Terms of payment that was set up with the **From advance holder** option set to **True**.
-### Create an advance holder creation
 
-Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide).](../../fin-and-ops/hr/tasks/enter-worker-information.md) Use the **Advance holders** page to set up a worker as an advance holder. Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**. You must also complete the following fields.
+### Create an advance holder
 
-|                |                                                                                             |
-|----------------|---------------------------------------------------------------------------------------------|
-| **Field**      | **Description**                                                                             |
-| **Group**      | Select an advance holder group.                                                             |
-| **Series**     | Enter the series of the document that is used to verify the identity of the advance holder. |
-| **Number**     | Enter the number of the document that is used to verify the identity of the advance holder. |
-| **Issue date** | Select or enter the document issue date.                                                    |
-| **Issued by**  | Enter the details of the authority or person who issued the document.                       |
+Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide).](../../fin-and-ops/hr/tasks/enter-worker-information.md) 
+
+1. Select **Accounts payable** \> **Advance holders** \> **Advance holders**.
+
+    > [!NOTE]
+    > You can't add or delete employees on the **Advance holders** page. Employees must first be hired in the **Human resources** module. On the **Employee posting profiles** page, you can set up the employee posting profile that is used to post advance holder balances.
+
+2. Select an employee, and then select **Edit**.
+3. On the **General** FastTab, set the **Advance holder** option to **Yes** to indicate that the employee is an advance holder.
+4. In the **Group** field, select the advance holder group that the employee belongs to.
+5. Under **Identity document**, provide the details of an identification document.
+    - **Series** -- Enter the series of the document that is used to verify the identity of the advance holder.
+    - **Number** -- Enter the number of the document that is used to verify the identity of the advance holder.
+    - **Issue date** -- Select or enter the document issue date.
+    - **Issued by** -- Enter the details of the authority or person who issued the document.
+6. Select **Save**, or close the page.
+
+> [!NOTE]
+> If the **Advance holder sorting** option is set to **Yes** on the **Accounts payable parameters** page, advance holders appear at the top of the grid on the **Advance holders** page.
+
 
 ## Advance holder inquiries and reports
+
 ### Advance holder transactions inquiry
 
 For a list of transactions for an advance holder, click the **Transactions** button on the **Advance holders** page. To see transactions for all advance holders or to create a specific inquiry based on advance holders’ transactions, click **Accounts payable** &gt; **Inquiries and reports** &gt; **Advance holders inquiries and reports** &gt; Transactions. Click **Voucher** to open the **Voucher transactions** page.
@@ -149,6 +165,7 @@ After the slip journal is processed, if the amount in the **Amount to be transfe
 ## Additional resources
 
 - [Advance payment to an employee (Eastern Europe)](tasks/advance-payment-employee.md)
+- [Advance holders for Russia](rus-advance-holders.md)
 
 
 

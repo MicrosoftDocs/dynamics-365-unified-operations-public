@@ -208,8 +208,8 @@ If you add new columns and want to pull in part of the existing table, use the f
 ```
 <Subjob Id="RetailTransactionTable" TargetTableName="CONTOSORETAILTRANSACTIONTABLE" TargetTableSchema="ext"  OverrideTarget="false">
     <AxFields>
-        <Field Name="seatNumber"/>
-        <Field Name="serverStaffId"/>
+        <Field Name="ContosoRetailSeatNumber"/>
+        <Field Name="ContosoRetailServerStaffId"/>
     </AxFields>
 </Subjob>
 ```
@@ -295,8 +295,8 @@ The sample CDX resource file in the Retail SDK contains additional customization
                 <!--Notice that there is no mention of the <ScheduledByJobs></ScheduledByJobs> because the subjob is already part of an upload job. -->
                 <AxFields>
                     <!--If you notice the existing columns are not listed here in the <Field> tag, it's because the existing fields are already mapped in the main RetailCdxSeedData resource file, we only add the delta here. -->
-                    <Field Name="SeatNumber" />
-                    <Field Name="ServerStaffId" />
+                    <Field Name="ContosoRetailSeatNumber" />
+                    <Field Name="ContosoRetailServerStaffId" />
                 </AxFields>
             </Subjob>
         </Subjobs>

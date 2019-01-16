@@ -99,12 +99,12 @@ This sections includes "How do I?" topics that explain how to customize specific
 + [Change the caption on a form](change-caption-form.md)
 + [Modify form control properties](modify-control-properties.md)
 
+### Others
++ [Extending decimal point precision](decimal-point-precision.md)
+
 ### Reports
 + [Extend the list of Electronic reporting functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
 + [Customize App Suite reports](../analytics/customize-app-suite-reports-with-extensions.md)
-
-### Labels
-+ [Change a label](change-label.md)
 
 ### Blog posts
 
@@ -122,7 +122,7 @@ Information about customization is also shared through blogs where various topic
 
 ## How do I create an extensible solution?
 
-This section includes some best paratices on how to create/make your solution extensible, so that consumers of your code can extend your solution.
+This section includes some best practices on how to create/make your solution extensible, so that consumers of your code can extend your solution.
 
 + [Writing extensible code](writing-extensible-code.md)
 + [Classes](extensible-classes.md)

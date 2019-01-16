@@ -5,7 +5,7 @@ title: Currency revaluation in a consolidation company
 description: This topic describes how to revalue currency in a consolidation company. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ When you consolidate data from one accounting currency to another, you must stil
 ## Company setup
 -   **Source/operating company (USMF)** – US dollars (USD) are used as the accounting and reporting currency.
 -   **Consolidated company (CON)** – Euros (EUR) are used as the accounting and reporting currency.
-    -   **Realized gain **– Ledger account 801500
+    -   **Realized gain**– Ledger account 801500
     -   **Realized loss** – Ledger account 801600
     -   **Unrealized gain** – Ledger account 801600
     -   **Unrealized loss** – Ledger account 801400

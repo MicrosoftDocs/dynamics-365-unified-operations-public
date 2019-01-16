@@ -42,6 +42,7 @@ Before you can set up ER, you must set up the required document types in Documen
 - A document type for Microsoft Office documents that are used as templates for ER reports.
 - A document type that is used to store the output of ER reports in the jobs archive.
 - A document type that is used to store the output of ER reports so that they can be viewed in other programs.
+- A document type that is used to keep baselines of outputs of ER configurations.
 - A document type that is used to handle files in the ER framework for all other purposes.
 
 For each document type, the following attribute values can be selected.
@@ -55,9 +56,11 @@ For each document type, the following attribute values can be selected.
 ## Set up ER
 Use the following procedure to set up the basic functionality of ER for all legal entities.
 
-1. On the **Electronic reporting parameters** page, on the **Attachments** tab, define the types of documents that should be used for file storage in the ER framework.
-2. On the **LCS** tab, define the number of parallel threads that should be used to load an ER configuration from repositories in Microsoft Dynamics Lifecycle Services (LCS), so that the configurations are loaded in the most efficient manner. The value can vary from **1** to **15**, depending on the available resources of the current program. Note that the real number of threads will be defined automatically, based on this setting, and on the number of other tasks and their priorities.
-3. On the **Configuration provider table** page, create ER provider records. Each provider can be marked as **Active**. The active provider's name and Internet address are stored in an ER configuration as attributes of the owner of the configuration.
+1. Open the **Electronic reporting** workspace page.
+2. Click **Electronic reporting parameters**.
+3. On the **Electronic reporting parameters** page, on the **Attachments** tab, define the types of documents that should be used for file storage in the ER framework.
+4. On the **LCS** tab, define the number of parallel threads that should be used to load an ER configuration from repositories in Microsoft Dynamics Lifecycle Services (LCS), so that the configurations are loaded in the most efficient manner. The value can vary from **1** to **15**, depending on the available resources of the current program. Note that the real number of threads will be defined automatically, based on this setting, and on the number of other tasks and their priorities.
+5. On the **Configuration provider table** page, create ER provider records. Each provider can be marked as **Active**. The active provider's name and Internet address are stored in an ER configuration as attributes of the owner of the configuration.
 
 ## Optional setup for ER
 In addition to the basic functionality, ER has other functionality that you can set up.

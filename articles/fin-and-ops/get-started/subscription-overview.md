@@ -28,6 +28,7 @@ ms.dyn365.ops.version: AX 7.0
 ---
 
 # Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
+
 [!include [banner](../includes/banner.md)]
 
 When customers subscribe to Microsoft Dynamics 365 for Finance and Operations through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Azure Active Directory (Azure AD) tenant, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production instance of Finance and Operations. For more information about these core concepts, see [Finance and operations architecture overview](../imp-lifecycle/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.

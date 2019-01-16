@@ -5,7 +5,7 @@ title: On-premises deployment option
 description: Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises or Local Business Data (LBD) deployment option. 
 author: kfend
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,7 +47,6 @@ On-premises deployment defines two types of Service Fabric standalone clusters: 
 - Management Reporter (MR) – Provides financial reporting functionality. 
 - SQL Server Reporting Services (SSRS) – Provides document reporting functionality. 
 - Environment Orchestrator – Enables on-premises environment management from LCS. 
-Note: Retail Server is not supported in on-premises deployments at this time. 
 
 Figure 1 shows a logical diagram of the node types deployed in a Service Fabric standalone cluster. 
 

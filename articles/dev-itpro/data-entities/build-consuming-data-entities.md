@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -91,6 +91,9 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 2. Select **Data Entity**, and then set the **Name** property to **FMLabCustomerEntity**.
 3. Click **Add**.
 4. In the **Data entity** wizard, specify the properties for the data entity that you're creating. Use the values that are shown in the following screen shot.
+
+    > [!NOTE]
+    > The name of an entity must not have '_' or any numeric digits (0…9). Using these characters may result in mapping errors later.
 
     [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 

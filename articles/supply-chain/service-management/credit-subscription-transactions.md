@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit subscription transactions  
-description: 
+description: This topic shows how to credit subscription transactions.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018

@@ -36,14 +36,15 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains how to upgrade an older database to the latest Finance and Operations application release.
 
-The topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment. The instructions also apply to Standard/Premier Acceptance Test sandbox environments (Tier 2 or 3) or higher sandbox tiers.
+The topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment. 
 
-In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release).
+In Tier 2 or higher environments, including Production, you will run through the self-service upgrade steps as outlined in [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md).
 
 > [!IMPORTANT]
-> - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations 7.3.
+> - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations 8.0.
 > - This process doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 > - All upgraded custom code has to be applied on the environment before running the data upgrade process.
+> - If you are on version 8.0 or later of Finance and Operations, there is no longer a data upgrade between application versions.
 
 ## Before you begin
 
@@ -105,6 +106,7 @@ To obtain the latest data upgrade deployable package for a target environment th
     - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. Select the package that corresponds to the release you are upgrading to. 
     - If you're upgrading from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**.
     - If you're upgrading from a previous release of Finance and Operations to release 8.0 (April 2018), the package names starts with **DataUpgrade-8-0**.
+    - If you're upgrading from a previous release of Finance and Operations to release 8.1 (October 2018), the package names start with **DataUpgrade-8-1**.
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.
@@ -438,4 +440,4 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 
 ## Additional resources
 
-[Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
+[Process for moving to the latest update of Finance & Operations](upgrade-latest-update.md)

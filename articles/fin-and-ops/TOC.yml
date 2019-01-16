@@ -25,7 +25,7 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Standard and targeted platform releases
+      - name: Standard and First release service updates
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
         items:
@@ -34,16 +34,34 @@
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
+      - name: One Version service updates FAQ
+        href: get-started/one-version.md
       - name: Software lifecycle policy and cloud releases
         href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
       - name: Software lifecycle policy and on-premises releases
         href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: get-started/mainstream-support-ax-2009-2012.md
       - name: Removed or deprecated features
         href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
       - name: AX 2012 features that were postponed
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Finance and Operations version 8.1.3 (January 2019)
+        href: get-started/whats-new-changed-8-1-3.md
+      - name: Platform update 23 January 2019)
+        href: get-started/whats-new-platform-update-23.md
+      - name: Platform update 22 (December 2018)
+        href: get-started/whats-new-platform-update-22.md
+      - name: Finance and Operations version 8.1.2 (December 2018)
+        href: get-started/whats-new-changed-8-1-2.md
+      - name: Finance and Operations version 8.1.1 (November 2018)
+        href: get-started/whats-new-changed-8-1-1.md 
+      - name: Finance and Operations version 8.1 (October 2018)
+        href: get-started/whats-new-changed-8-1-October-2018.md 
+      - name: Platform update 21 (November 2018)
+        href: get-started/whats-new-platform-update-21.md
       - name: Platform update 20 (September 2018)
         href: get-started/whats-new-platform-update-20.md
       - name: Finance and Operations version 8.0 (April 2018)
@@ -138,6 +156,8 @@
         href: get-started/help-overview.md
       - name: Connect the Help system
         href: get-started/help-connect.md
+      - name: Connect a custom help site
+        href: get-started/help-custom.md        
       - name: View and export field descriptions
         href: get-started/view-export-field-descriptions.md
       - name: Task guides and task recorder
@@ -296,7 +316,7 @@
       href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
     - name: Data integration APIs
       items:
-      - name: Data management package API
+      - name: Data management package REST API
         href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
       - name: Service endpoints
         href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -305,10 +325,12 @@
           href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
       - name: OData
         href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-      - name: Custom services
+      - name: Custom service development
         href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
       - name: Recurring integrations
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+      - name: Test services using third-party utilities
+        href: ../dev-itpro/data-entities/third-party-service-test.md
     - name: Development for integration
       items:
       - name: Data integration using data entities
@@ -320,9 +342,9 @@
           href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
         - name: Configure financial cross-company data sharing
           href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-        - name: Create a record template to facilitate data entry
+        - name: Create record templates to facilitate data entry
           href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-        - name: Use a record template to create a new record
+        - name: Create records using record templates
           href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
       - name: Data integration using the Common Data Service
         href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
@@ -351,6 +373,18 @@
             href: ../supply-chain/sales-marketing/field-service-work-order.md
           - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
             href: ../supply-chain/sales-marketing/field-service-invoice.md
+          - name: Synchronize inventory transfers and adjustments from Field Service to Finance and Operations
+            href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+          - name: Synchronize inventory level information from Finance and Operations to Field Service 
+            href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+          - name: Synchronize products with inventory unit from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+          - name: Synchronize project list from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-project-list.md
+          - name: Synchronize warehouses from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+          - name: Synchronize work orders from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-work-orders.md        
         - name: Configure Project Service Automation integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
           items:
@@ -366,8 +400,8 @@
             href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
           - name: Synchronize project actuals to the project integration journal
             href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
-        - name: Consuming external web services
-          href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+    - name: Consuming external web services
+      href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
   - name: Data management
     href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
     items:
@@ -379,14 +413,22 @@
       - name: Copy configuration data between companies or legal entities
         href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
         items:
+        - name: Configuration data packages
+          href: ../dev-itpro/data-entities/configuration-data-packages.md
         - name: Configuration data packages (July 2017 release only)
           href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+        - name: Make Entity Store available as a Data Lake
+          href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
       - name: Configuration data templates
         href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
       - name: Track changes to an entity
         href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
       - name: Find information about standard data entities
         href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+      - name: Data templates with multiple worksheets
+        href: ../dev-itpro/data-entities/excel-template-multiple.md
+      - name: Enable change tracking for entities
+        href: ../dev-itpro/data-entities/entity-change-track.md 
       - name: Configuration keys and data entities
         href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
       - name: Configuration data packages
@@ -398,6 +440,8 @@
         href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
     - name: Development for data entities
       items:
+      - name: Design principles and best practices for data entities
+        href: ../dev-itpro/dev-tools/design-best-practices.md
       - name: Create new data entities
         href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Data entity properties
@@ -420,12 +464,16 @@
         href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Use third-party service testing utilities
         href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+      - name: Create read-only entities that expose financial dimensions
+        href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Data task automation
       href: ../dev-itpro/data-entities/data-task-automation.md
-    - name: Data validation workspace
+    - name: Data validation checklist workspace
       href: ../dev-itpro/user-interface/data-validation-workspace.md
+    - name: Data management error descriptions
+      href: ../dev-itpro/data-entities/dm-error-descriptions.md  
   - name: Financial management
     href: ../financials/index.md
     items:
@@ -495,6 +543,8 @@
           href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
         - name: Configure settlement
           href: ../financials/cash-bank-management/configure-settlement.md
+        - name: Settle remainder
+          href: ../financials/cash-bank-management/settle-remainder.md
         - name: Vendor payment overview
           href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
         - name: Vendor payments workspace
@@ -598,6 +648,8 @@
         href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Set up and generate accounts receivable aging information
         href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Copy customers by using shared number sequences
+        href: ../financials/accounts-receivable/copy-customer.md
       - name: Customer workflow
         href: ../financials/accounts-receivable/customer-workflow.md
       - name: Payments and settlements
@@ -1000,7 +1052,9 @@
         - name: Fiscal calendars, fiscal years, and periods
           href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
         - name: Configure account structures
-          href: ../financials/general-ledger/configure-account-structures.md        
+          href: ../financials/general-ledger/configure-account-structures.md
+        - name: Dual currency
+          href: ../financials/general-ledger/dual-currency.md
       - name: Journals and ledgers
         items:
         - name: General journal processing
@@ -1043,6 +1097,8 @@
           href: ../financials/general-ledger/import-currency-exchange-rates.md
         - name: One voucher
           href: ../financials/general-ledger/one-voucher.md
+        - name: Ledger settlements
+          href: ../financials/general-ledger/ledger-settlements.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -1209,6 +1265,8 @@
         href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
       - name: Reset the financial reporting data mart
         href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+    - name: Electronic messaging
+      href: ../financials/general-ledger/electronic-messaging.md
   - name: Localization and regulatory features
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
     items:
@@ -1792,7 +1850,11 @@
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
-          items:
+          items:     
+          - name: Import configuration
+            href: ../financials/general-ledger/tax-engine-import-configuration.md
+          - name: Tax engine applicability
+            href: ../financials/general-ledger/tax-engine-applicability.md
           - name: Tax engine integration
             href: ../financials/general-ledger/tax-engine-integration.md
           - name: Extending the Tax engine
@@ -2057,8 +2119,6 @@
           href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
         - name: Post a free text invoice
           href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-        - name: Produce Mexican electronic ledger accounting report version 1.1
-          href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
         - name: Set parameters for an electronic invoice
           href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
         - name: Set up sales tax codes for Mexico
@@ -2094,6 +2154,8 @@
       - name: Poland
         href: ../financials/localizations/poland.md
         items:
+        - name: Activate storno accounting
+          href: ../financials/localizations/emea-pol-red-storno.md
         - name: Calculate line discounts from the unit price
           href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
         - name: Correction notes
@@ -2110,12 +2172,84 @@
           href: ../financials/localizations/emea-pol-returnable-packages.md
         - name: Sales tax reports
           href: ../financials/localizations/emea-pol-sales-tax-reports.md
+        - name: Set up number sequences by warehouse
+          href: ../financials/localizations/emea-pol-number-sequence-warehouses.md          
         - name: Standard audit file
           href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
         - name: Tax interest and free-hand interest
           href: ../financials/localizations/emea-pol-interest-calculation.md
         - name: Turnover balances statement
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+      - name: Russia
+        href: ../financials/localizations/russia.md
+        items:
+        - name: Advance holders
+          href: ../financials/localizations/rus-advance-holders.md
+          items:
+          - name: Create an advance holder
+            href: ../financials/localizations/emea-advance-holders.md#create-an-advance-holder
+          - name: Daily operations for advance holders
+            href: ../financials/localizations/rus-advance-holders-daily-operations.md
+          - name: Advance reports with budget control
+            href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+          - name: Revaluate foreign currency for advance holders
+            href: ../financials/localizations/rus-advance-adjustment-parameters.md
+          - name: Advance holder reports
+            href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+        - name: Bank
+          items: 
+          - name: Set up bank accounts
+            href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
+          - name: Set up and process payment orders
+            href: ../financials/localizations/rus-payment-order-settings-processing.md 
+        - name: Fixed assets
+          items: 
+          - name: Acquiring fixed assets and putting them into operation
+            href: ../financials/localizations/rus-fixed-asset-acquisition.md
+          - name: Register fixed assets acquisitions
+            href: ../financials/localizations/rus-register-acquisition.md
+          - name: Create and post budget journals for fixed asset acquisitions
+            href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+          - name: Fixed asset counting
+            href: ../financials/localizations/rus-fixed-assets-counting.md
+          - name: Fixed assets currency revaluation
+            href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+          - name: Maintain fixed assets
+            href: ../financials/localizations/rus-maintain-fixed-assets.md
+          - name: Revaluate fixed asset cost and depreciation
+            href: ../financials/localizations/rus-fixed-assets-revaluation.md            
+          - name: Partial fixed asset disassembly (liquidation)
+            href: ../financials/localizations/rus-fixed-assets-disassembly.md
+          - name: Sell, dispose, and write-off assets
+            href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+          - name: Set up fixed asset locations and numbering
+            href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+          - name: Set up depreciation 
+            href: ../financials/localizations/rus-depreciation-setup.md
+          - name: Depreciation methods
+            href: ../financials/localizations/rus-depreciation-methods.md
+          - name: Depreciation bonuses
+            href: ../financials/localizations/rus-bonus-depreciation.md
+          - name: Calculate depreciation
+            href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Company divisions
+          href: ../financials/localizations/rus-company-divisions.md
+        - name: Set up exchange rates for currency transactions
+          href: ../financials/localizations/rus-exchange-difference.md
+        - name: Preview ledger transactions
+          href: ../financials/localizations/rus-ledger-transactions-preview.md
+        - name: Set up officials
+          href: ../financials/localizations/rus-officials.md
+        - name: Value-added tax (VAT) for tax agents
+          href: ../financials/localizations/rus-tax-agent.md
+        - name: Set up dimension control for settlements
+          href: ../financials/localizations/rus-transactions-settlement-date.md
+        - name: Invoices for payment
+          href: ../financials/localizations/rus-invoice-payment.md
+        - name: Financial reporting
+          href: ../financials/localizations/rus-financial-reports.md
+        - name: Create a purchase book
+          href: ../financials/localizations/rus-sales-books-purchase-books.md   
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2635,6 +2769,8 @@
           href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
         - name: Import configurations from Lifecycle Services
           href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+        - name: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
+          href: ../dev-itpro/analytics/rcs-download-configurations.md
         - name: Download configurations from Lifecycle Services
           href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
         - name: Import configurations
@@ -4043,6 +4179,8 @@
         href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
       - name: Pick oldest batch on a mobile device
         href: ../supply-chain/warehousing/pick-oldest-batch.md
+      - name: Process guide framework
+        href: ../supply-chain/warehousing/process-guide-framework.md
     - name: Upgrade and migration
       items:
       - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
