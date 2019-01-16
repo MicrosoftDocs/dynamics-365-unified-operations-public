@@ -3,7 +3,7 @@
 
 title: Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ
 description: This topic explains what data is synchronized in a Talent and Finance and Operations integration.
-author: Darinkramer
+author: negudava
 manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: negudava
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
 

@@ -956,7 +956,7 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.NO.Extension"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -973,7 +973,7 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.NO.Extension"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -1238,7 +1238,6 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ``` xml
             <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
             <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />

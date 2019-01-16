@@ -64,7 +64,7 @@ The following illustration shows the main interfaces and classes that make up th
 ## Writing an exchange rate provider
 Code examples are taken from the **ExchangeRateProviderOanda** class. Follow these steps to create an exchange rate provider.
 
-1.  In the **Currency** model, create a class that implements the **IExchangeRateProvider** interface.
+1.  In your own model, create a class that implements the **IExchangeRateProvider** interface.
 
         using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
         using Microsoft.Dynamics.Currency.Instrumentation;
