@@ -348,12 +348,19 @@ The following illustrations show the actions that are performed and the status o
 #### **Insertion**
 
 This flow is used to deliver any event for the first time.
+![Insertion](media/bra-insertion-flow.png)
 
 #### **Amendment/Update**
 
+![Update](media/bra-amendment-update-flow.png)
+
 #### **Cancel/Delete**
 
+![Cancel](media/bra-cancel-delete-flow.png)
+
 #### **Inquire event 5011 (from event R-2099)**
+
+![Inquire-event-5011](media/bra-inquire-event-5011.png)
 
 #### **Manage electronic messages** 
 
@@ -465,7 +472,7 @@ Because communications can fail for technical reasons, such as a time-out or an 
 
 3.  Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Incluir**.
 
-    ![](media/bd6d2e74eeaaa7ef6ca678fd48a9d578.png)
+    ![Insertion](media/bra-insertion-flow.png)
 
 4.  Select **OK** to confirm the settings.
 
