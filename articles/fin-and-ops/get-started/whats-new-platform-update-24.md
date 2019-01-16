@@ -48,22 +48,13 @@ Wondering about upcoming and recently released capabilities in any of our busine
 For information about the bug fixes included in each of the updates that are part of Platform update 24, sign in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink).
 
 ## Business Events
->   This new capability will provide a framework that will allow business
->   processes in Finance and Operations to capture business events as business
->   processes are executed, and send the events to an external system or
->   application.
+This new capability will provide a framework that will allow business processes in Finance and Operations to capture business events as business processes are executed, and send the events to an external system or application.
 
->   This will allow, for example, a purchase order approval to trigger a
->   fulfillment in the vendor organization sooner than later; a receipt of a
->   damaged part to trigger the vendor claim process in real time; and so on.
->   Since these events happen in the context of business processes, they are
->   called *Business events* which enable *business process integration*.
+This will allow, for example, a purchase order approval to trigger a fulfillment in the vendor organization sooner than later; a receipt of a damaged part to trigger the vendor claim process in real time; and so on. Since these events happen in the context of business processes, they are called *Business events* which enable *business process integration*.
 
->   External business processes will subscribe to specific business events from
->   Finance and Operations to get notified when they occur. The business events
->   can also be consumed as "triggers" in the Finance and Operations connector.
+External business processes will subscribe to specific business events from Finance and Operations to get notified when they occur. The business events can also be consumed as "triggers" in the Finance and Operations connector.
 
->   Some capabilities that will be included are:
+Some capabilities that will be included are:
 
 -   Business events framework - for partner- and customer-implement business
     events
