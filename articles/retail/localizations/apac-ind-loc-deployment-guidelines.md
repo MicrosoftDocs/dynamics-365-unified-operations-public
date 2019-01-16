@@ -61,7 +61,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
       - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
-    
+
     - In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
       - Newtonsoft.Json.dll
 
@@ -118,7 +118,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
       - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
       - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    - Find the following folders in the **$(SdkReferencesPath)\\Z3.4.5.0\\lib\\net40** folder:
+    - Find the following folders in the **References\\Z3.4.5.0\\lib\\net40** folder:
       - x86
       - x64
 
@@ -160,7 +160,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
       - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
       - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    - Find the following folders in the **$(SdkReferencesPath)\\\Z3.4.5.0\\lib\\net40** folder:
+    - Find the following folders in the **References\\Z3.4.5.0\\lib\\net40** folder:
       - x86
       - x64
 
@@ -287,7 +287,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
     ---
 
-3. Modify the following files to include the Z3 libraries in deployable packages.:
+3. Modify the following files to include the Z3 libraries in deployable packages:
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
