@@ -5,7 +5,7 @@ title: Retail peripherals
 description: This topic explains the concepts that are related to retail peripherals. 
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -746,7 +746,6 @@ The following peripherals were tested by using a dedicated (not shared) IIS hard
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Custom    | Connected via network     |
-| Star         | TSP100   | OPOS      | Requires TSP650II drivers |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### Bar code scanner
@@ -821,7 +820,6 @@ The following peripherals were tested by using a shared IIS hardware station tog
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Custom    | Connected via network     |
-| Star         | TSP100   | OPOS      | Requires TSP650II drivers |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### Payment terminal
