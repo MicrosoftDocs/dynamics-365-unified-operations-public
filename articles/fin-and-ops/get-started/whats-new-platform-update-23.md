@@ -90,5 +90,8 @@ public void testIndexHintRegularTable()
 > [!NOTE]
 > Index hints should be used sparingly, and only when you can ensure that it causes more benefit than harm. With the new API, knowledgeable power developers are empowered to pass the right hints when needed. Power developers should use this new feature with caution. When in doubt, avoid using index hints.
 
-## Entity Store as a Data Lake
-In Platform update 23, you can select to use Entity Store as a Data Lake. When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store. For more information about how to access and use this functionality, see [Entity Store is a Data Lake](../../dev-itpro/data-entities/entity-store-data-lake.md)
+## Automated refresh of Entity Store (opt-in)
+You can let the system manage Entity store refresh as opposed to scheduling refresh yourself. When enabled, the system let's you choose a desired refresh pattern (Hourly, Twice a day, Daily and Weekly are the options provided at this point). Once specified, the system keeps the entity store updated for the desired pattern. The system will also switch to the new update form where you are notified in case of refresh issues and the status.  
+
+## Entity Store as a Data Lake (preview)
+In Platform update 23, you can select to use Entity Store as a Data Lake. When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store. To preview and use this functionality, join the Platform Early Access Preview (PEAP) Program vua experience.dynamics.com/insider 
