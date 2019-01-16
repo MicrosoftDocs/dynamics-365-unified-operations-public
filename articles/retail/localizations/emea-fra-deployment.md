@@ -257,7 +257,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 #### SequentialSignatureRegister component
 
 1. Find the **Runtime.Extensions.SequentialSignatureRegister** project.
-2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. The value must be a string that is 40 characters long and that doesn't include any delimiters. For more information, see [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
+2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. The value must be a string that is 40 characters long in upper case and that doesn't include any delimiters. For more information, see [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -323,9 +323,9 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
     ```
 
-# [Retail 7.3.2 and later](#tab/retail-7-3-2)
-
 #### RestrictingShiftDuration component
+
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
 1. Find the **Runtime.Extensions.RestrictingShiftDuration** project, and build it.
 2. In the **Extensions.RestrictingShiftDuration\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.RestrictingShiftDuration.dll** assembly file.
@@ -348,12 +348,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
 # [Retail 7.3.5 and later](#tab/retail-7-3-5)
 
 > [!NOTE]
-> No actions are required, because RestrictingShiftDuration is a part of sealed extensions.
+> No additional actions are required.
 
 # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
 > [!NOTE]
-> No actions are required, because RestrictingShiftDuration is a part of sealed extensions.
+> No additional actions are required.
 
 ---
 
@@ -474,10 +474,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -497,10 +497,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -608,10 +608,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -631,10 +631,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
