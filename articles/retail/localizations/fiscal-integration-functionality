@@ -1,0 +1,92 @@
+---
+# required metadata
+
+title: Fiscal integration functionality
+description: This topic provides an overview of the fiscal integration for Retail POS. 
+author: josaw
+manager: annbe
+ms.date: 01/16/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: v-kikozl
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10.0
+
+---
+
+# Fiscal integration functionality
+
+[!include [banner](../includes/banner.md)]
+
+This topic is an overview of the fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. The fiscal integration is designed to support local fiscal laws that are aimed to prevent fraud in the Retail industry. Typical scenarios that could be covered by using fiscal integration include:
+
+- Printing a fiscal receipt and giving it to the customer.
+- Secured submission of the information related to sales and returns performed on POS to an external service provided by the authority.
+- Using data protection with a digital signature authorized by the authority.
+
+The fiscal integration is a framework which provides a common solution for further development and customization of integration between Retail POS and fiscal devices and services. Microsoft releases fiscal integration samples that support some basic Retail scenarios for a specific country and are working with a specific fiscal device or service. The fiscal integration sample consists of several extensions of Retail components. For more information about released fiscal integration samples, see [Released samples of the fiscal integration](...). All fiscal integration samples are a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview).
+
+If you want to extend functionality of the fiscal integration with support of other fiscal device model, or other fiscal service, or support of the legal requirements for other country, or to cover other business needs with implementing some specific  scenarios, then you should either make a cusomization of the fiscal integration sample or develop the integration with a fiscal device or service based on the extensions included in the fiscal integration sample.
+
+## Components of the fiscal integration sample
+
+The example below demonstrates a common execution flow of integration with a fiscal printer. A fiscal printer integration sample includes two components:
+
+  - **CRT extension** which implements functionality related to a **Fiscal document provider**. This component is responsible for generation fiscal documents for receipts in a format supported by the fiscal printer, parsing and saving responses from the fiscal printer.
+
+  - **HWS extension** is related to a **Fiscal connector** functionality. This component is responsible for initialization of the fiscal printer, sending requests and direct commands to it, and getting response from the fiscal printer. 
+
+The fiscal integration sample contains CRT and HWS extensions as well as configurations for Fiscal document provider and Fiscal connector. For more details about uploading Fiscal document provider and Fiscal connector configurations and changing its parameters, see [How to set up a fiscal registration process]().
+
+  - **Document Provider configuratio** defines an output method and a format of fiscal documents. This configuration also contains data mapping for taxes and payment methods in order to make data from Retail POS compatible with the values predefined in the fiscal printer firmware. 
+
+  - **Fiscal Connector configuration** is responsible for physical communication with a specific fiscal device or service.
+
+Fiscal registration with a fiscal printer considers the following sequence:
+
+  1. CRT extension identifies if the current event, e.g. a sales transaction conlude, is an object of the fiscal registration. Subscription of events and transactions to the fiscal registration is defined in the code of CRT extension.
+
+  2. HWS extension searches a fiscal connector by matching connector functional profiles, which are included in the connector group specified on the current step of the fiscal registration process, with the connector functional profiles assigned to the hardware profile.
+
+  3. CRT extension generates an XML document representing a fiscal receipt to be sent to the fiscal printer. On this step some data such as taxes, payments is transformed using **Data mapping** details from the Fiscal document provider configurations. 
+
+  4. HWS extension sends an XML document generated by Document provider to the fiscal printer, and gets a response from the fiscal printer.
+
+  5. CRT extension analyzes a response from the fiscal printer in order to decide if the fiscal registration passed successfully or not, and saves a fiscal response to the database.
+
+## Fiscal text for discounts
+
+Some countries have specific requirements on the additional text that must be printed in fiscal receipts when the discount is applied. At the same time most of fiscal devices have a limitation on a number of discounts that might be applied to the same transaction line.
+
+The fiscal integration handles all discounts applied to a transaction line as one cumulative product discount. It also supports setting up a special text to be printed in fiscal receipt after discount line. A fiscal text may be specified for Info codes and Discounts, so it's possible to print a special text for any channel-specific discount as well as for any type of manual discount applied on POS. If fiscal text was set up for several discounts, a text line in a fiscal receipt would concatenate fiscal text from all applied discounts. For more details about setting up a fiscal text for discounts, see [Setting up a fiscal text for discounts]().
+
+## Saving payment adjustments
+
+## Error handling
+
+### Health check
+
+### Optional fiscal registration
+
+## Fiscal transactions
+
+## Printing fiscal X and fiscal Z reports
+
+## Released samples of the fiscal integration
+
+  - [Fiscal printer integration sample for Italy]()
+  - [Fiscal printer integration sample for Poland]()
