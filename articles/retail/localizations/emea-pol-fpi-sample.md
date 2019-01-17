@@ -46,19 +46,29 @@ NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HA
 
 ## Overview
 
-This fiscal printer integration sample includes the following functionality:
-- Integration with fiscal printer using serial port connection solution.
-- Registration of the following events in POS:
-	- Print receipt for sale.
-	- Print receipt for sale return.
-	- Print fiscal X report.
-	- Print fiscal Z report.
-
-Receipts for sale and sale return operations also support the following scenarios:  
-- Print discounts.
-- Exclude gift cards from the receipt.
-- Exclude the customer deposit amount.
-- Print fiscal receipt in customer order scenarios.
+The following scenarios are covered by the fiscal printer integration sample for Poland:
+  - Sales scenarios:
+    - Printing a fiscal receipt for a simple sale
+	- Printing a fiscal receipt for a simple return
+	- Capturing a response from the fiscal printer and storing in Channel DB
+	- Taxes:
+	  - Mapping to fiscal printer's tax codes
+	  - Printing in a fiscal receipt
+  - Payments:
+		  - Mapping to fiscal printer's methods of payment
+	      - Printing in a fiscal receipt
+		  - Printing change information
+		- Printing line discounts
+		- Gift cards:
+	      - Excluding an issued/re-charged gift card line from a fiscal receipt
+		  - Printing a payment with a gift card as a regular method of payment
+		- Printing fiscal receipts for customer orders order operations:
+	      - Carry-out lines of a hybrid customer order
+		  - Customer order pickup
+		  - Return order
+		- End of day statements (X/Z report or Shift report)
+	- Basic error handling (i.e. retry is possible): printer not connected/not ready/not responding, printer out of paper, paper jam, etc.
+    - Advanced error handling (i.e. retry is not possible): skipping fiscal registration or marking the transaction as registered manually, including info codes to capture the reason of failure and additional information.
 
 ## Design
 
@@ -76,15 +86,15 @@ The integration for the fiscal printer is implemented in the following two exten
 The CRT extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, CommerceRuntimeSamples.sln, under **RetailSdk\SampleExtensions\CommerceRuntime**.
 
 1. Find the **Runtime.Extensions.DocumentProvider.PosnetSample** project and build it.
-1. In the **Extensions.DocumentProvider.PosnetSample\bin\Debug** folder, find the **Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll** assembly file.
-1. Copy the assembly file to the CRT extensions folder:
+2. In the **Extensions.DocumentProvider.PosnetSample\bin\Debug** folder, find the **Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
 	- Retail Server: Copy the assembly to the **\bin\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
 	- Local CRT on Modern POS: Copy the assembly to the **\ext** folder under the local CRT client broker location.
-1. Find the extensions configuration file for CRT:
+4. Find the extensions configuration file for CRT:
 	- Retail Server: The file is named commerceruntime.ext.config, and it's in the bin\ext folder under the IIS Retail Server site location.
 	- Local CRT on Modern POS: The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-1. Register the CRT change in the extensions configuration file. Add source="assembly" **value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample"**
-1. Restart the Retail service:
+5. Register the CRT change in the extensions configuration file. Add source="assembly" **value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample"**
+6. Restart the Retail service:
 	- Retail Server: Restart the Retail service site from IIS Manager.
 	- Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
 
@@ -92,15 +102,15 @@ The CRT extension components are included in the Retail SDK. To complete the fol
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\SampleExtensions\HardwareStation**.
 
 1. Find the **Extension.PosnetThermalFVFiscalPrinterSample** project and build it.
-1. In the **Extension.PosnetThermalFVFiscalPrinterSample\bin\Debug** folder, find the **Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll** assembly file.
-1. Copy the files to a deployed Hardware station machine:
+2. In the **Extension.PosnetThermalFVFiscalPrinterSample\bin\Debug** folder, find the **Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll** assembly file.
+3. Copy the files to a deployed Hardware station machine:
 	- Remote Hardware station: Copy the files to the bin folder under the Microsoft Internet Information Services (IIS) Hardware station site location. Copy printer driver libraries (libposcmbth.dll, libcmbth_serial.dll, cmbth_pl.lng).
-1. Find the configuration file for the Hardware station's extensions. The file is named HardwareStation.Extension.config:
+4. Find the configuration file for the Hardware station's extensions. The file is named HardwareStation.Extension.config:
 	- Remote Hardware station: The file is located under the IIS Hardware station site location.
 
-1. Add the following section to the composition section of the config file.	
+5. Add the following section to the composition section of the config file.	
 	<add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
-1. Restart the Hardware station service:
+6. Restart the Hardware station service:
 	- Remote Hardware station: Restart the Hardware station site from IIS Manager.
 
 ### Set up the registration process
