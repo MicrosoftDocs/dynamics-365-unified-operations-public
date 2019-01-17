@@ -46,13 +46,20 @@ Each payment type that a retailer accepts must be configured when the system is 
 
 ### To restrict payment methods when returns are made without a receipt.
 
-![Retail Store Setup](../../media/NoReceiptReturns1.png "Retail Store Setup") 
+![Retail Store Setup]( media/NoReceiptReturns1.png "Retail Store Setup") 
 
 1. For each store payment method, 'Restrict for refunds without receipt' toggle needs to be edited.
 2. Default value of the toggle is set to 'No' - this ensures that the payment method is allowed for refunds. 
 
-![Retail Store payment method](../../media/NoReceiptReturns3.png "Retail Store Payment Method") 
+![Retail Store payment method]( media/NoReceiptReturns3.png "Retail Store Payment Method") 
 
 3. When the toggle is set to 'Yes', the selected payment method will not be allowed for refunds. 
+
+#### Note:
+When a cashier selects a payment method that is restricted for refund without a receipt, a notification message prompting the acceptable payment methods will be displayed.
+![Acceptable payment methods](media/NoReceiptReturns4.png "Acceptable payment methods") 
+
+In case a transaction has both a receipted return and a return without a receipt - the restriction conditions are not enforced as it is considered to be a return workflow with a receipt. 
+
 
 
