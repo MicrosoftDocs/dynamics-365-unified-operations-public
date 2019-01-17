@@ -38,7 +38,7 @@ Delivery timelines might change, and projected functionality might change or mig
 
 For a list of the localizions that are supported for Dynamics 365 for Finance and Operations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck)
 
-# Planned Regulatory updates:
+## Planned updates:
 
 |Planned release date|Release version|Country|Feature|
 |                    |               |       |       |
