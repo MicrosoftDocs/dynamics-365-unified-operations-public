@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent Core HR (January 17, 201
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
-ms.date: 1/17/2019
+ms.date: 01/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -40,10 +40,10 @@ This topic describes features that are either new or changed in Core HR.
 ## Minor changes and bug fixes included in this release
 
 ### New position assignment start date/time default has been corrected
-When transfering employees, the system will default the date/time to the date selected and the time at the beginning of the day, in the users timezone.
+When transferring employees, the system will default the date/time to the date selected and the time at the beginning of the day, for the user's time zone.
 
 ### All employees have the same position description in the exited worker task management list
-An update has been made to display the correct position descriptions for all employees that have recently exited the company in the Task Management workspace.
+An update has been made in the **Task Management** workspace to display the correct position descriptions for all employees that have recently exited the company.
 
-### The "Action requested by" field is now populated by Talent on Workers action form
-With this change the action requested by field is now defaulted to the user that is requesting the change.
+### "Action requested by" field is now populated by Talent on Workers action form
+With this change, the default for the **Action requested by** field is now the user that is requesting the change.
