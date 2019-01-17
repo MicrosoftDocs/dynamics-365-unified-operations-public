@@ -97,10 +97,10 @@ Before using the fiscal integration functionality, the following settings should
         - **Internal** - select this type for fiscal services and applications connected via CRT.
         - **External** - select this type for external fiscal services like a web-portal provided by a tax authority.
 
-	  Parameters on tabs **Device** and **Settings** could be changed in a connector technical profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration.
-      
-     >[!NOTE]
-      > While loading a new version of an XML configuration, user gets an infolog-message notifying if the current fiscal connector or fiscal document provider is already in use. This procedure do now override manual changes made in connector functional profiles and connector technical profiles earlier. In order to apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page and **Connector technical profiles** page.
+       >[!NOTE]
+      > Currently connector types Internal and External are hidden in UI, since already released fiscal integration samples work with fiscal devices connected to a hardware station.
+
+	  Parameters on tabs **Device** and **Settings** could be changed in a connector technical profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration. While loading a new version of an XML configuration, user gets an infolog-message notifying if the current fiscal connector or fiscal document provider is already in use. This procedure do now override manual changes made in connector functional profiles and connector technical profiles earlier. In order to apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page and **Connector technical profiles** page.
 
 4.  Create **Fiscal connector groups**.
 
