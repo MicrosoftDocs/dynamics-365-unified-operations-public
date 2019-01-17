@@ -181,6 +181,9 @@ Fiscal register proccesses have some additional settings to define possible opti
 
 3. Options **Skip** and **Mark as registered** in the error handling dialog allow users to enter an additional information on POS when the fiscal registration has failed. The info codes **Skip** and **Mark as registered** should be specified on a fiscal connector group to make is possible entering additional details on POS and saving this information as an Info code transaction linked with a fiscal transaction. You can find more details regarding info codes in the topic [Info codes and info code groups](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/info-codes-retail).
 
+    >[!NOTE]
+     > It's not reccomended to set up info codes **Skip** and **Mark as registered** as info codes with the trigger function having value *Product*.
+
   - Open the **Fiscal connector groups** page.
   - on the tab **Info codes** select info codes or info code groups in fields **Skip** and **Mark as registered**.
 
