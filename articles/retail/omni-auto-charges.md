@@ -3,9 +3,9 @@
 
 title: Omni-Channel Advanced Auto Charges
 description: This topic describes capabilities for managing additional order charges for Retail channel orders using Advanced Auto Charges features.
-author: hhaines
-manager: AnnBe
-ms.date: 1/4/2019
+author: 
+manager: 
+ms.date: 1/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,12 +20,12 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
-ms.custom: 16231
-ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
+ms.custom: 
+ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
-ms.search.validFrom: 2016-02-28
+ms.author: hhaines
+ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0
 
 
@@ -35,27 +35,33 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](includes/banner.md)]
 
-This topic will provide information on configuration and deployment of the Advanced Auto Charges feature.
+This topic will provide information on configuration and deployment of the Advanced Auto Charges feature which will be available in version 10.0 an later.
 
-By enabling the Advanced Auto Charges features in Dynamics 365 for Commerce, orders created in any supported Retail channel (POS, Call Center and Online), will be able to take advantage of the [Auto-Charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the backoffice application for both header and line level related charges.  This feature becomes available in our 10.0 product release.
+By enabling the Advanced Auto Charges features in Dynamics 365 for Commerce, orders created in any supported Retail channel (POS, Call Center and Online), will be able to take advantage of the [Auto-Charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the backoffice application for both header and line level related charges.  
 
-In previous releases, the [auto-charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations were only accessible by orders created in Ecommerce and Call Center channels.  With this feature change, POS created orders will now be able to leverage these same auto-charges configurations, which will allow for additional misc charges to systematically be added to these sales transactions.
+In release prior to 10.0, the [auto-charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations were only accessible by orders created in Ecommerce and Call Center channels.  With this feature change, POS created orders will now be able to leverage these same auto-charges configurations, which will allow for additional misc charges to systematically be added to these sales transactions.
 
-Before the release of the Advanced Auto Charges feature, a POS user was only prompted to manually enter a shipping fee during the creation of a "ship all" or "ship selected" POS transaction.   While this feature utilized the misc charges capabilities of the application in respect to how the charges were written to the order, it did not provide a systematic calculation and relied on the users input to determine the value of the charges.  These charges were also only able to be added as a single "shipping" related charges code and could not easily be edited or changed in the POS once created. With the new Advanced Auto Charges feature, POS users will now be able to have systematic calculations for any defined misc charges code based on auto-charges setup tables.  In addition, users will have the ability to add or edit an unlimited amount of additional charges/fees to any POS sales transaction at the header or line level (cash and carry or customer order).
+Before the release of the Advanced Auto Charges feature, a POS user was only prompted to manually enter a shipping fee during the creation of a "ship all" or "ship selected" POS transaction.   While this feature utilized the misc charges capabilities of the application in respect to how the charges were written to the order, it did not provide a systematic calculation and relied on the users input to determine the value of the charges.  These charges were also only able to be added as a single "shipping" related charges code and could not easily be edited or changed in the POS once created. 
+
+It is important to note that these capabilities of manual prompts to add shipping charges are still functional after release 10.0.  If the organization does NOT enable the Advanced Auto Charges parameter, the behavior of POS prompting for manual entry of charges will remain.
+
+With the new Advanced Auto Charges feature, POS users will now be able to have systematic calculations for any defined misc charges code based on auto-charges setup tables.  In addition, users will have the ability to add or edit an unlimited amount of additional charges/fees to any POS sales transaction at the header or line level (cash and carry or customer order).
 
 ## Enabling Advanced Auto Charges
 
-From the Retail Parameters form **Retail>Headquarters setup>Parameters>Retail parameters** navigate to the **Customer orders** tab.  In the **Charges** fasttab, locate the **Use Advanced Auto-charges** toggle and set to **Yes**.
+From the Retail Parameters form **Retail>Headquarters setup>Parameters>Retail parameters** navigate to the **Customer orders** tab.  In the **Charges** fasttab, locate the **Use advanced auto-charges** toggle and set to **Yes**.
 
 ![Advanced Auto-Charges Parameter](media/advancedchargesparameter.png)
 
-Please note that when Advanced auto-charges are enabled, users will no longer be prompted to manually enter a shipping charge at the POS terminal when creating a Ship-all or Ship-selected customer order.   By turning on this feature, POS order charges will now be systematically calculated and added to the POS transaction (if a corresponding auto-charges table that matches the criterion of the order being created is found). Users will also now have the ability to add or maintain header or line level charges manually through newly added POS operations that can be added to your POS layouts. .
+Please note that when Advanced auto-charges are enabled, users will no longer be prompted to manually enter a shipping charge at the POS terminal when creating a Ship-all or Ship-selected customer order.   By turning on this feature, POS order charges will now be systematically calculated and added to the POS transaction (if a corresponding auto-charges table that matches the criterion of the order being created is found). Users will also now have the ability to add or maintain header or line level charges manually through newly added POS operations that can be added to your POS layouts.  
+
+Also note that once Advanced Auto Charges is enabled, the existing **Retail parameters** for **Shipping charges code** and **Refund shipping charges** are no longer utilized.  These parameters are only applicable if the **Use advanced auto-charges** parameter is set to **No**.
 
 Before enabling this feature, ensure you have tested and trained your employees as this will change the business process flow of how shipping or other charges are calculated and added to POS sales orders. Ensure you understand the impact of the process flow to POS transaction creation before you enable this feature.  For Call Center and Ecommerce orders, the impact of enabling Advanced Auto Charges is minimal in the first release of this feature. Call Center and Ecommerce applications will continue to have the same behavior they have had historically related to the auto-charges tables to calculate additional order fees.   Call Center channel users will continue to have the ability to manually edit any system calculated auto-charges at the header or line level or manually add additional misc charges at the header or line level.
 
 ## Additional POS Operations
 
-In order for Advanced Auto-charges to work properly in your POS application environment, new POS operations have been added.  These operations must be added to your POS screen layouts and deployed to the POS devices as you roll out this feature.  If these operations are not added, users will not be able to manage or maintain misc charges on the POS transactions and would have no way of adjusting or changing the charges values that are systematically calculated based on auto-charges configurations.  At minimum it is suggested that you deploy the **Manage Charges** operation to your POS layout.
+In order for Advanced Auto-charges to work properly in your POS application environment, new POS operations have been added.  These operations must be added to your POS screen layouts and deployed to the POS devices as you deploy this feature.  If these operations are not added, users will not be able to manage or maintain misc charges on the POS transactions and would have no way of adjusting or changing the charges values that are systematically calculated based on auto-charges configurations.  At minimum it is suggested that you deploy the **Manage Charges** operation to your POS layout.
 
 The new operations are:
 
@@ -80,25 +86,25 @@ This scenario requires the configuration of 2 different auto-charges tables.
 
 From Headquarters, navigate to **Accounts receivable>Charges setup>Auto charges**.  
 
-Configure two Header auto charges, one for the Ground mode of delivery and one for the Air mode of delivery and configured for All customers.  
+Configure two differe Header level auto charges, one for the Ground mode of delivery and one for the Air mode of delivery. For this scenario, they will be configured to be used for All customers.  
 
-For the Ground delivery charges, in the lines section, define a charge that will be applied for orders between $.01 and $100 as $10.00.  Another charges line should be created to indicate orders over $100.01 will have no charges.
+For the Ground delivery charges, in the lines section of the auto-charges form, define a charge that will be applied for orders between $.01 and $100 as $10.00.  Another charges line should be created to indicate orders over $100.01 will have no charges.
 
 ![Auto charges example](media/headerchargesexample.png)
 
-For the Air delivery charges, in the lines section, define a charge of $20.00 that will be applied to all orders (to and from value of $.01 to $9,999,999)
+For the Air delivery charges, in the lines section of the auto-charges form, define a charge of $20.00 that will be applied to all orders (to and from value of $.01 to $9,999,999)
 
 These charges must then be sent to the Retail Server/Channel DB so that the POS can utilize them. This is done by running the 1040 distribution schedule job.
 
 #### Sales processing for this scenario
 
-Once the configurations steps outlined in the previous section are complete and the changes have been applied to the channel database, any customer orders or sales transactions created in the POS, Call Center or Ecommerce channels that have the Ground or Air delivery methods set at the header level will utilize these charges and automatically apply them to the sale.   
+Once the configuration steps outlined in the previous section are complete and the changes have been applied to the channel database, any customer orders or sales transactions created in the POS, Call Center or Ecommerce channels that have the Ground or Air delivery methods set at the header level will utilize these charges and automatically apply them to the sale.   
 
 It is important to note that at this time the charges will apply to all sales transactions created within the legal entity that utilize these delivery modes as there is no ability at this time to designate that an auto-charge configuration will only apply to a specific selling channel.
 
 For POS and Ecommerce scenarios, since there is no clearly defined "header" on these orders, header level charges will only apply if all sales lines on the transaction are set to ship with the exact same mode of delivery.   If there are "mixed-modes" of fulfillment on the transactions created by POS or Ecommerce, only line level auto-charges will be considered and applied.
 
-In call center scenarios, the user has control over the setting of the delivery mode at the order header, therefore header level charges will apply for these orders, even if some of the sales lines have been configured to use a different mode of delivery.
+In call center scenarios, the user has control over the setting of the delivery mode at the order header, therefore header level charges will apply for these orders, even if some of the sales lines have been configured to use a different mode of delivery. Header level charges for call center orders will always be based on the mode of delivery that is defined at the order header level of the sales order.
 
 ### Auto-charges line charges example
 #### Use case scenario description:
@@ -132,11 +138,11 @@ Ensure the charges code that will be used in this scenario has been properly con
 
 ![Charges example](media/chargesexample.png)
 
-Note that if this charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, the **Shipping charge** toggle on the charges code should be set to **Yes**.   If this charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, the **Refundable** toggle should also be set to **Yes**
+Note that if this charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, the **Shipping charge** toggle on the charges code should be set to **Yes**.   If this charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, the **Refundable** toggle should also be set to **Yes**.  It's important to note that the **Refundable** flag is only applicable when the **Use advanced auto-charges** parameter is set to **Yes**.   
 
 New charges codes created in HQ must be distributed to the retail channels for use in POS application scenario.  This data is distributed through the 1040 distribution schedule job.
 
-The **Add header charge** operation must be configured in your POS layout so that a button that is accessible to the user from POS can call this operation (operation 141).   These screen layout changes must be distributed to the retail channel as well through the distribution schedule function. 
+The **Add header charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 141).  These screen layout changes must be distributed to the retail channel as well through the distribution schedule function. 
 
 #### Sales processing of manual header charges
 
@@ -152,11 +158,11 @@ _A customer has requested that 2 of the 5 items on their sales order be gift-wra
 
 Ensure the charges code that will be used in this scenario has been properly configured in Headquarters.  This is done by navigating to **Accounts Receivable>Charges setup>Charges** and defining an appropriate charges code for the scenario.
 
-Note that if this charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, the **Shipping charge** toggle on the charges code should be set to **Yes**.   If this charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, the **Refundable** toggle should also be set to **Yes**
+Note that if this charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, the **Shipping charge** toggle on the charges code should be set to **Yes**.   If this charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, the **Refundable** toggle should also be set to **Yes**.  It's important to note that the **Refundable** flag is only applicable when the **Use advanced auto-charges** parameter is set to **Yes**.  
 
 New charges codes created in HQ must be distributed to the retail channels for use in POS application scenario.  This data is distributed through the 1040 distribution schedule job.
 
-The **Add line charge** operation must be configured in your POS layout so that a button that is accessible to the user from POS can call this operation (operation 140).   These screen layout changes must be distributed to the retail channel as well through the distribution schedule function. 
+The **Add line charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 140).  These screen layout changes must be distributed to the retail channel as well through the distribution schedule function. 
 
 #### Sales processing of the manual line charge
 
@@ -168,7 +174,7 @@ Note that this same process can be applied in the Call Center by using the exist
 
 ### Editing charges on a POS sales transaction
 
-The **Manage charges** operation (142) should be added to the POS screen layout to support the ability for a user to view and edit/override any system calculated or manually created header or line level charges.   If this operation is not added, users will not be able to adjust the value of the charges on the POS transaction, nor will they be able to view the details of the charges such as the type of charges code that was tied to the charge.  
+The **Manage charges** operation (142) should be added to the [POS screen layout](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-screen-layouts) to support the ability for a user to view and edit/override any system calculated or manually created header or line level charges.   If this operation is not added, users will not be able to adjust the value of the charges on the POS transaction, nor will they be able to view the details of the charges such as the type of charges code that was tied to the charge.  
 
 From the **Manage charges** form in POS, the user can view both Header and Line level charges details.  The user can utilize the **Edit** function available on this form to make changes to the amount charged to a specific charges line.  
 
@@ -178,21 +184,28 @@ If reason codes have been captured for overwritten charges, a new report is also
 
 ### Refunding charges on a POS return transaction
 
-If any charges should be systematically refunded to a customer, ensure the related charges code has been configured as **Refundable** in HQ.  This setting is found on the Charges code setup form.  Ensure these settings have been synchronized to your Retail channel databases.
+If the **Use advanced auto-charges** parameter is set to **Yes**, it is important to note that the existing Retail parameter for **Refund shipping charges** is no longer applicable.  To indicate which charges should be systematically refunded to a customer when using advanced atuo-charges, ensure the related charges code has been configured as **Refundable** in HQ.  This setting is found on the **Charges code** setup form.  Ensure these settings have been synchronized to your Retail channel databases through distribution schedule processing.
 
 ### Refunding charges on a Return Order transaction in HQ
 
-At this time, charges are not systematically refunded to **Return orders** created in HQ.  Users are required to select the **Copy charges** option when creating the **Return order**.  If this is not selected, charges from the original sales transaction will not be automatically refunded.
+At this time, charges are not systematically refunded to **Return orders** created in HQ.  Users are required to select the **Copy charges** option when creating the **Return order**.  If this is not selected, charges from the original sales transaction will not be automatically refunded.  At this time, if **Copy charges** is selected, all charges will be copied to the Return order and the user can manually edit/remove any charges they wish to not have refunded.  The call center return order process currently does not acknowledge the **Refundable** flag on the **Charges code** setup.
 
 ### Configuring POS receipts to show charges
 
-New receipt elements have been added to the Receipt Line and Footer to support the Advanced Auto Charges feature.
+New receipt elements have been added to the Receipt Line and Footer to support the Advanced Auto-charges feature.
 
-These elements are:
-?
-?
-?
-?
+Two free text elements -  **Total shipping charges** and **Total other charges** can be placed at the footer level to outline the additional fees related to the order on the receipt.
+
+Four new elements have been added to support the display of charges on the receipt that can be used at the line or footer level:
+
+**Order shipping charges details** - this will display the descriptions of the charge codes applied to the order or order lines that have been flagged as **Shipping** charges in the **Charges code** setup form.
+
+**Order shipping charges**  - this shows the dollar value of the shipping related charge.
+
+**Order other charges details** - this will display the description of the charges codes applied to the order or order lines that have NOT been flagged as shipping related charges.
+
+**Order other charges** - this will display the dollar value of the other charges that are not shipping related.
+
 ### Preventing charges from calculating until the POS order is completed
 
 Some organizations may prefer to wait until the user has finished adding all of the sales lines to the POS transaction before calculating charges.  To prevent calculation of charges as items are added to the POS transaction, the organization should turn on the **Manual charge calculation** parameter in the **Functionality profile** that will be used by the store.   Enabling this parameter will require the POS user to use the **Calculate totals** operation when they have completed adding the products to the POS transaction.   This **Calculate totals** operation will then trigger the calculation of any auto charges for the order header or lines as applicable.
