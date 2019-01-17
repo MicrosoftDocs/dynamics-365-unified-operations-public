@@ -32,7 +32,11 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-<!--Intro text should go here-->
+This topic lists the Regulatory updates that are planned for release in Microsoft Dynamics 365 for Finance and Operations supported localizations. 
+
+Delivery timelines might change, and projected functionality might change or might not be released (see Microsoft policy). When a month is used in the Date column, the feature will be delivered sometime within that month. The delivery date can be any day within that month, not just on the first day of the month.
+
+For a list of the localizions that are supported for Dynamics 365 for Finance and Operations, see the International availability guide.
 
 |Planned release date|Release version|Country|Feature|
 |                    |               |       |       |
