@@ -59,8 +59,7 @@ The app is available on Android and Windows operating systems. To use this app, 
     - [Finance and Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
 > [!NOTE]
-> 
-> Zebra App Gallery has been retired and Finance and Operations - Warehousing will no longer be available for download there.
+> The Zebra App Gallery has been retired, which means that the Finance and Operations - Warehousing app will no longer be available for download from that location.
 
 ## Create a web service application in Azure Active Directory
 To enable the app to interact with a specific Finance and Operations server, you must register a web service application in an Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
