@@ -41,6 +41,9 @@ For a list of the localizions that are supported for Dynamics 365 for Finance an
 ## Planned updates:
 
 |Planned release date|Release version|Country|Feature|
+|--------------------|---------------|-------|-------|
+|                    |               |       |       |
+|                    |               |       |       |
 |                    |               |       |       |
 
 ## Additional resources
