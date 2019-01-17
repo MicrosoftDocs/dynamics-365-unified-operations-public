@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-01-17
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent Core HR (January 17, 2019)"
+# What's new or changed in Dynamics 365 for Talent Core HR (January 17, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,9 +37,9 @@ ms.dyn365.ops.version: Talent
 
 This topic describes features that are either new or changed in Core HR.
 
-## Minor changes/bug fixes included in this release
+## Minor changes and bug fixes included in this release
 
-### New position assignment start date/time default has been corrected.
+### New position assignment start date/time default has been corrected
 When transfering employees, the system will default the date/time to the date selected and the time at the beginning of the day, in the users timezone.
 
 ### All employees have the same position description in the exited worker task management list
