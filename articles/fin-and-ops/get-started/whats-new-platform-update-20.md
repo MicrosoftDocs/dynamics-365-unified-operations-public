@@ -67,11 +67,13 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
 | Before    | After    |
 |-----------------------------|----------------------------|
-| ![Old dashboard](media/prePU20-dashboard.png  "Old dashboard")  |  ![New dashboard](media/postPU20-dashboard.png  "New dashboard") |
+| [![Old dashboard](media/prePU20-dashboard.png  "Old dashboard"](media/prePU20-dashboard.png#lightbox)  |  [![New dashboard](media/postPU20-dashboard.png  "New dashboard"](media/postPU20-dashboard.png#lightbox) |
 | ![Old list page](media/prePU20-customers.png  "Old list page")  |  ![New list page](media/postPU20-customers.png  "New list page") |
 | ![Old details page](media/prePU20-customerDetails.png  "Old details page")  |  ![Newd details page](media/postPU20-customerDetails.png  "New details page") |
 | ![Old Factbox pane](media/prePU20-expandedFactBox.png  "Old FactBox pane")  |  ![New FactBox pane](media/postPU20-expandedFactBox.png  "New FactBox pane") |
 
+
+[![](media/contribute-how-to-use-lightboxes/xamarin-inline-1.png "Choose File > New Solution and create an iOS app")](media/contribute-how-to-use-lightboxes/xamarin-expanded-1.png#lightbox)
 
 ## Adding and removing columns in a grid is easier
 
