@@ -115,16 +115,19 @@ The Hardware station extension components are included in the Retail SDK. To com
 	- Remote Hardware station: Restart the Hardware station site from IIS Manager.
 
 ### Set up the registration process
+
 To enable the registration process, set up the Headquarters using the following steps:
-1. Open **Retail\Channel Setup\Fiscal Integration\Fiscal Connectors**. Import the configuration from **RetailSdk\SampleExtensions\HardwareStation\Extension.Posnet.ThermalDeviceSample\Configuration\ConnectorConnectorPosnetThermalFVEJ.xml**.
-2. Open **Retail\Channel Setup\Fiscal Integration\Fiscal Document providers**. Import the configuration from **RetailSdk\SampleExtensions\CommerceRuntime\Extension.DocumentProvider.PosnetSample\Configuration\DocumentProviderPosnetSample.xml**.
-3. Open **Retail\Channel Setup\Fiscal Integration\Connector Technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
-4. Open **Retail\Channel Setup\Fiscal Integration\Connector Functional profiles**. Create a new profile and select the loaded connector and document provider from the steps above. Update data mapping settings, if needed.
-5. Open **Retail\Channel Setup\Fiscal Integration\Connector Functional group**. Create a new group and select the connector functional profile from the step above.
-6. Open **Retail\Channel Setup\Fiscal Integration\Registration process**. Create a new process. Select the connector functional group from the step above.
+1. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Connectors**. Import the configuration from **RetailSdk\SampleExtensions\HardwareStation\Extension.Posnet.ThermalDeviceSample\Configuration\ConnectorConnectorPosnetThermalFVEJ.xml**.
+2. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Document providers**. Import the configuration from **RetailSdk\SampleExtensions\CommerceRuntime\Extension.DocumentProvider.PosnetSample\Configuration\DocumentProviderPosnetSample.xml**.
+3. Open **Retail > Channel Setup > Fiscal Integration > Connector Technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
+4. Open **Retail > Channel Setup > Fiscal Integration > Connector Functional profiles**. Create a new profile and select the loaded connector and document provider from the steps above. Update data mapping settings, if needed.
+5. Open **Retail > Channel Setup > Fiscal Integration > Connector Functional group**. Create a new group and select the connector functional profile from the step above.
+6. Open **Retail > Channel Setup > Fiscal Integration > Registration process**. Create a new process. Select the connector functional group from the step above.
 7. Open the Functionality profile linked to the store where the registration process should be activated. Expand the **Fiscal registration process** FastTab. Select the registration process created in the step above.
 8. Open the Hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
 9. Open the Distribution scheduler and select job **1070** to transfer data to the Channel database.
+
+For more details, see [How to set up a fiscal registration process]().
 
 ## Commerce runtime extension design
 
