@@ -67,7 +67,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
 | Before    | After    |
 |-----------------------------|----------------------------|
-| [![Old dashboard](media/prePU20-dashboard.png  "Old dashboard")](media/prePU20-dashboard.png#lightbox)  |  [![New dashboard](media/postPU20-dashboard.png  "New dashboard")](media/postPU20-dashboard.png#lightbox) |
+| [![Old dashboard](media/prePU20-dashboard-cropped.png  "Old dashboard")](media/prePU20-dashboard.png#lightbox)  |  [![New dashboard](media/postPU20-dashboard-cropped.png  "New dashboard")](media/postPU20-dashboard.png#lightbox) |
 | [![Old list page](media/prePU20-customers.png  "Old list page")](media/prePU20-customers.png#lightbox)  |  [![New list page](media/postPU20-customers.png  "New list page")](media/postPU20-customers.png#lightbox) |
 | [![Old details page](media/prePU20-customerDetails.png  "Old details page")](media/prePU20-customerDetails.png#lightbox)  |  [![Newd details page](media/postPU20-customerDetails.png  "New details page")](media/postPU20-customerDetails.png#lightbox) |
 | [![Old Factbox pane](media/prePU20-expandedFactBox.png  "Old FactBox pane")](media/prePU20-expandedFactBox.png#lightbox)  |  [![New FactBox pane](media/postPU20-expandedFactBox.png  "New FactBox pane")](media/postPU20-expandedFactBox.png#lightbox) |
