@@ -154,3 +154,10 @@ The configuration file is found in **Configuration** folder of the extension pro
 - **Connection string** - The string describes the details of the connection to the device in the format supported by the driver. See POSNET driver documentation for details.
 - **Date and time synchronization** - This indicates if you need to sync the date and time of the printer with the connected hardware station. The date and time of the printer will be synchronized with the Hardware station time.
 - **Device timeout** - The time in milliseconds the driver will wait for response from device. See POSNET driver documentation for details.
+
+## Limitations of the sample
+
+  - The fiscal printer supports the scenarios with salex tax included in price only. So, the parameter **Price include sales tax** must be set to **Yes** both for retail stores and customers.
+  - Daily reports (fiscal X, fiscal Z) are printed using the embedded format *Shift report*.
+  - Printing of barcode in fiscal receips is considered as a potenatial customization, since this feaure is not supported in the embedded formats and can be implemented through using the customizable report *Super-format* only.
+  - Mixed transactions are not supported by the fiscal printer. The parameter **Prohibit mixing sales and returns in one receipt** should be set to **Yes** in POS functionality profiles.
