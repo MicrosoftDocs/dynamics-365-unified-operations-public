@@ -45,4 +45,5 @@ For a list of the localizions that are supported for Dynamics 365 for Finance an
 
 ## Additional resources
 Planned & released Regulatory updates information can also be found/searched for through [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) - Log in required
+
 For additional information about locaization & translation support, see the [Product localization and translation availability guide](https://aka.ms/ax-availabilityguide)
