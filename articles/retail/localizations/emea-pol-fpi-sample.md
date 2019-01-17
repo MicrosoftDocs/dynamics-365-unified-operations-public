@@ -54,7 +54,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 	- Taxes:
 	  - Mapping to fiscal printer's tax codes
 	  - Printing in a fiscal receipt
-  - Payments:
+    - Payments:
 		  - Mapping to fiscal printer's methods of payment
 	      - Printing in a fiscal receipt
 		  - Printing change information
@@ -67,6 +67,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 		  - Customer order pickup
 		  - Return order
 		- End of day statements (X/Z report or Shift report)
+  - Error handling:
 	- Basic error handling (i.e. retry is possible): printer not connected/not ready/not responding, printer out of paper, paper jam, etc.
     - Advanced error handling (i.e. retry is not possible): skipping fiscal registration or marking the transaction as registered manually, including info codes to capture the reason of failure and additional information.
 
