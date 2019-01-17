@@ -273,7 +273,7 @@ This DVT error is intermittent and can be resolved by using the **Resume** butto
 
 **Application configuration sync failed. Call to TTSCOMMIT without first calling TTSBEGIN.**
 
-This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process will resume at this step. This is fixed in PU21.
+This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process will resume at this step. (This is fixed in Platform update 21.)
 
 **Upgrade was Committed but the environment remains in 'Upgrade cleanup in progress' state.**
 
