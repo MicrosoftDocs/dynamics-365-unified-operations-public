@@ -56,7 +56,7 @@ Each payment type that a retailer accepts must be configured when the system is 
 3. When the toggle is set to 'Yes', the selected payment method will not be allowed for refunds. 
 
 #### Note:
-When a cashier selects a payment method that is restricted for refund without a receipt, a notification message prompting the acceptable payment methods will be displayed.
+When a cashier selects a payment method that is restricted for refund without a receipt, a notification message prompting the acceptable payment methods.
 ![Acceptable payment methods](media/NoReceiptReturns4.png "Acceptable payment methods") 
 
 In case a transaction has both a receipted return and a return without a receipt - the restriction conditions are not enforced as it is considered to be a return workflow with a receipt. 
