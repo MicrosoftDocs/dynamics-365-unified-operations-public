@@ -50,6 +50,9 @@ Each payment type that a retailer accepts must be configured when the system is 
 
 1. For each store payment method, 'Restrict for refunds without receipt' toggle needs to be edited.
 2. Default value of the toggle is set to 'No' - this ensures that the payment method is allowed for refunds. 
+
+![Retail Store payment method](../media/NoReceiptReturns3.png "Retail Store Payment Method") 
+
 3. When the toggle is set to 'Yes', the selected payment method will not be allowed for refunds. 
 
 
