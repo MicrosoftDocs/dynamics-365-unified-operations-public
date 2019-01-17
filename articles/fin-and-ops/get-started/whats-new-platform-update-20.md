@@ -72,9 +72,6 @@ The Finance and Operations web client has started its journey of aligning to Mic
 | [![Old details page](media/prePU20-customerDetails.png  "Old details page")](media/prePU20-customerDetails.png#lightbox)  |  [![Newd details page](media/postPU20-customerDetails.png  "New details page")](media/postPU20-customerDetails.png#lightbox) |
 | [![Old Factbox pane](media/prePU20-expandedFactBox.png  "Old FactBox pane")](media/prePU20-expandedFactBox.png#lightbox)  |  [![New FactBox pane](media/postPU20-expandedFactBox.png  "New FactBox pane")](media/postPU20-expandedFactBox.png#lightbox) |
 
-
-[![](media/contribute-how-to-use-lightboxes/xamarin-inline-and-expanded-2.png "Select watchOS > App > WatchKit App")](media/contribute-how-to-use-lightboxes/xamarin-inline-and-expanded-2.png#lightbox)
-
 ## Adding and removing columns in a grid is easier
 
 Some of the most typical changes that a user makes to a grid are adding, removing, resizing, and reordering columns. In this update, we've made adding and removing columns easier by promoting the **Add columns** and **Hide this column** actions directly into the grid column header context menus.
