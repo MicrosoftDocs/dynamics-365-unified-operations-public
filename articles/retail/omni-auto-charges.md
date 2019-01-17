@@ -192,19 +192,21 @@ At this time, charges are not systematically refunded to **Return orders** creat
 
 ### Configuring POS receipts to show charges
 
-New receipt elements have been added to the Receipt Line and Footer to support the Advanced Auto-charges feature.
+Six new receipt elements have been added to the Receipt Line and Footer to support the Advanced Auto-charges feature.
 
-Two free text elements -  **Total shipping charges** and **Total other charges** can be placed at the footer level to outline the additional fees related to the order on the receipt.
+**Line Shipping Charges** - this line level element can be used to recap specific charges codes that have been applied to the sales line.  Only charges codes that have been flagged as **Shipping** charges in the **Charges code** form setup will display here.
 
-Four new elements have been added to support the display of charges on the receipt that can be used at the line or footer level:
+**Line Other Charges** - this line level element can be used to recap any non-shipping specific charge codes that have been applied to the sales line.  These are charges codes where the **Shipping** flag on the **Charges code** setup has not been enabled.
 
-**Order shipping charges details** - this will display the descriptions of the charge codes applied to the order or order lines that have been flagged as **Shipping** charges in the **Charges code** setup form.
+**Order Shipping Charges Details** - this footer level element will display the descriptions of the charge codes applied to the order that have been flagged as **Shipping** charges in the **Charges code** setup form.
 
-**Order shipping charges**  - this shows the dollar value of the shipping related charge.
+**Order Shipping Charges**  - this footer level element shows the dollar value of the shipping related charges.
 
-**Order other charges details** - this will display the description of the charges codes applied to the order or order lines that have NOT been flagged as shipping related charges.
+**Order Other Charges Details** - this footer level element will display the description of the charges codes applied to the order that have NOT been flagged as shipping related charges.
 
-**Order other charges** - this will display the dollar value of the other charges that are not shipping related.
+**Order Other Charges** - this footer level element will display the dollar value of the other charges that are not shipping related.
+
+It is suggested that the organization add some free text fields to their receipt footer as well to define the areas where charges will be recapped.  See the included sample receipt for general idea.  In this sample, free text elements using the text "Total shipping charges" and "Total other charges" were added above their respective footer elements.
 
 ![receipt example](media/receiptexample.png)
 
