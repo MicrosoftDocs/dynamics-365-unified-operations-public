@@ -48,7 +48,7 @@ Retail provides several configuration options and POS operations to support a wi
 
 ### Fixed till
 
-Traditionally, this scenario has been used most often. It's still extensively used. In a "fixed till" shift, the shift and till are associated with a specific register. They aren't moved from one register to another. A "fixed till" shift can be used by a single user or shared among multiple users. "Fixed till" shifts don't require any special configuration.
+Traditionally, this scenario has been used most often. It's still extensively used. In a "fixed till" shift, the shift and cash drawer are associated with a specific register. They aren't moved from one register to another. A "fixed till" shift can be used by a single user or shared among multiple users. "Fixed till" shifts don't require any special configuration.
 
 ### Floating till
 
