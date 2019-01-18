@@ -75,6 +75,27 @@ The fiscal integration handles all discounts applied to a transaction line as on
 
 ## Handling gift cards and customer order deposits
 
+Printing some details, like gift cards, customer deposits, in fiscal receipts is requlated by local fiscal legislation. There're three parameters in a fiscal document provider configuration that allow support such requirements without additional development efforts:
+
+  - **Exclude gift cards**. Enabling this parameter results in the following: 
+    - Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from a fiscal receipt.
+    - Do not print a fiscal receipt if it has sales lines marked as gift cards only.
+    - Deduct total amount of gift cards issued or re-charged in a transaction from payment lines. 
+    - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction.
+
+    >[!NOTE]
+     > Even with the enabled parameter **Exclude gift cards** payment by gift card is considered as a regular payment.
+
+  - **Exclude deposit**. Enabling this parameter results in the following: 
+    - Do not print a fiscal receipt if a customer order deposit or a customer order deposit refund only.
+    - Display an amount of previously paid deposit in a fiscal receipt for customer order pickup.
+    - Deduct customer order deposit amount from payment lines when a hybrid customer order is created.
+    - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction for hybrid customer order.
+
+  - **Exclude change line**. If this parameter is enabled, a fiscal receipt doesn't display the change amount in a separate line, and merges it with the payment line having the same payment method as a change line.
+
+      >[!NOTE]
+     > By default this parameter is disabled in fiscal document provider configurations. 
 ## Error handling
 
 The fiscal integration framework provides the following options to sort out the problems happening while the fiscal registration:
