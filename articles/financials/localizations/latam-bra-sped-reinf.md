@@ -5,7 +5,7 @@ title: SPED-Reinf tax statement (Brazil)
 description: This topic provides information about setting up SPED-Reinf events using Fiscal books and the SII reporting register framework in Microsoft Dynamics 365 for Finance and Operations for Brazil.
 author: sndray
 manager: AnnBe
-ms.date: 12/19/2018
+ms.date: 01/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -434,7 +434,7 @@ Because communications can fail for technical reasons, such as a time-out or an 
 
 10.  Select **OK** to confirm the settings. The **Generate reports** dialog box automatically appears. On the **Records to include** FastTab, in the filter options, the ID of the message item type that is requesting generation of an XML file is selected in the **Message item** field.
 
-![Generate-reports](media/bra-generate-reports.png.png)
+![Generate-reports](media/bra-generate-reports.png)
 
 11.  Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Gerado**.
 
@@ -478,12 +478,12 @@ include all related information.
 
 1.  Go to **Fiscal books \> Periodic \> SPED Reinf \> Administrative and judicial process**.
 
-![Administrative-judicial-process](bra-administrative-judicial-process.png)
+![Administrative-judicial-process](media/bra-administrative-judicial-process.png)
 
 1.  Select **New**, and set the following fields.
 
-| **Field**                    | **Description**                                                                                                                                                       |
-|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Field**                    | **Description**        |
+|------------------------------|-----------------------|
 | Number of the process        | Enter the process number that was assigned by the competent authorities. The tax authority system validates the format, because there is a specific rule to consider. |
 | Author of process            | Select the source that the process originated from:                                                                                                                   |
 | Type of process              | Select the type of process:                                                                                                                                           |
