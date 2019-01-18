@@ -2210,6 +2210,8 @@
             href: ../financials/localizations/rus-register-acquisition.md
           - name: Create and post budget journals for fixed asset acquisitions
             href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+          - name: Create a fixed asset lease and a return from lease transaction
+            href: ../financials/localizations/rus-fixed-asset-leasing.md
           - name: Fixed asset counting
             href: ../financials/localizations/rus-fixed-assets-counting.md
           - name: Fixed assets currency revaluation
