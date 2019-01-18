@@ -55,10 +55,10 @@ The following scenarios are covered by the fiscal printer integration sample for
 	  - Mapping to fiscal printer's tax codes
 	  - Printing in a fiscal receipt
     - Payments:
-		  - Mapping to fiscal printer's methods of payment
-	      - Printing in a fiscal receipt
-		  - Printing change information
-		- Printing line discounts
+		- Mapping to fiscal printer's methods of payment
+	    - Printing in a fiscal receipt
+		- Printing change information
+	- Printing line discounts
     - Gift cards:
 	  - Excluding an issued/re-charged gift card line from a fiscal receipt
 	  - Printing a payment with a gift card as a regular method of payment
