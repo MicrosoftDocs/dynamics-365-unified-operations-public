@@ -30,23 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-**Introduction**
-
 This topic describes default dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension. Examples showing the user interface as well as SQL table queries with output are included along with some explanation of APIs and usage examples.
-
-This blog post series includes:
-
--   [Financial dimensions discovery] (This post)
-
--   [Control uptake and storage](dimension-defaulting-part2.md)
-
--   [Copy patterns](dimension-defaulting-part3.md)
-
--   [Merging patterns](dimension-defaulting-part4.md)
-
--   [Ledger dimension creation](dimension-defaulting-part5.md)
-
--   [Common pattern APIs](dimension-defaulting-part6.md)
 
 ## Financial dimensions discovery
 
@@ -259,19 +243,18 @@ As shown in Figure 1 above, choosing the Financials-\>Distribute amounts option 
 
 ![](media/104bc96cf18b1685e0f581625a22ebcf.png)
 
-[![DefaultDimension5-3SQLDefaultSource.png](./media/DefaultDimension5-3SQLDefaultSource.png)](./media/DefaultDimension5-3SQLDefaultSource.png) 
-[![DefaultDimension5-3SQLResultDefaultSource.png](./media/DefaultDimension5-3SQLResultDefaultSource.png)](./media/DefaultDimension5-3SQLResultDefaultSource.png) 
-**Figure 3: SQL query and results showing default account source**
+![SQL query](./media/DefaultDimension5-3SQLDefaultSource.png "SQL query")
+![Results showing default account source](./media/DefaultDimension5-3SQLResultDefaultSource.png "Results showing default account source")
 
-The code required to merge the default dimension on the purchase order line with the default account from the item group is shown in Figure 4 below. 
 
-[![DefaultDimension5-4CodeToMerge.png](./media/DefaultDimension5-4CodeToMerge.png)](./media/DefaultDimension5-4CodeToMerge.png) 
-**Figure 4: Code used to merge the default dimension with a default account**
+The code required to merge the default dimension on the purchase order line with the default account from the item group is shown the following figure. 
 
-Similar to merging default dimensions, once merged, a newledger account combination is created as shown in the query in Figure 5 below:
+![Code used to merge the default dimension with a default account](./media/DefaultDimension5-4CodeToMerge.png "Code used to merge the default dimension with a default account")
 
-[![DefaultDimension5-5SQLResultMerged.png](./media/DefaultDimension5-5SQLResultMerged.png)](./media/DefaultDimension5-5SQLResultMerged.png) 
-**Figure 5: SQL query and results showing merged default account and default dimension**
+Similar to merging default dimensions, once merged, a newledger account combination is created as shown in the query in the following figure:
+
+![SQL query and results showing merged default account and default dimension](./media/DefaultDimension5-5SQLResultMerged.png "SQL query and results showing merged default account and default dimension")
+
 
 ## Common pattern APIs
 
