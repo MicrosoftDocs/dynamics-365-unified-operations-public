@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.3
 ---
 
 # Catch weight product processing with warehouse management
-[!include [preview banner](../includes/preview-banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 **Feature exposure**
