@@ -38,6 +38,24 @@ This article describes the types of documents that you can use to manage invento
 
 You can use the following types of documents to manage your organization's inventory.
 
+When working with inventory in Dynamics 365 for Retail and using our POS application, it is important to note that the POS provides limited support for inventory dimensions and certain inventory item types.  The POS solution does not support the following:
+
+Item Configurations:
+- BOM items (except our Kit products which utilize some components of the BOM framework)
+- Catch Weight Items
+- Batch Controlled Items
+
+The POS application currently does not support the following tracking dimensions in the POS:
+- Batch Tracking Dimension
+- Owner Dimension
+
+The POS solution provides LIMITED support for the following dimensions.  Limited support indicates that the POS may default some of these dimensions into inventory transactions automatically based on warehouse/store setup configuration and will not fully support the dimensions in the way they are supported if a sales transaction is manually entered into the ERP. 
+
+- Location
+- License Plate (only applicable when "use warehouse management process" has been enabled on the item and the store warehouse)
+- Serial Number
+- Inventory Status
+
 ## Purchase orders
 
 Purchase orders are created at the head office. If a retail warehouse is included in the purchase order header, the order can be received at the store by using Modern POS (MPOS) or Cloud POS in Microsoft Dynamics 365 for Retail. After the quantities that are received at the store are entered, they can be saved locally for additional modification. Alternatively, the quantities can be committed and sent to the head office. At the head office, the quantities that were received at the store are displayed in Dynamics 365 for Retail, in the **Receive now** field on the purchase order.
