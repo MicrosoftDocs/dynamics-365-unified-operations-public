@@ -141,6 +141,8 @@ Before using the fiscal integration functionality, the following settings should
       - For a new registration process after all the settings are completed, including assigning to POS functionality profiles and hardware profiles.
       - After making some changes to an existing registration process that may lead to selection of a different fiscal connector in run-time (for example, changing a connector group in the fiscal registration process, or enabling a connector functional profile in a connector group, or adding a new connector functional profile to a connector group).
       - After making changes in the connector technical profiles assignment to hardware profiles or POS functionality profiles.
+      
+   8. Open the **Distribution scheduler** page and run the job **1070** to transfer data to the Channel database.
 
 ## Setting up a fiscal text for discounts
  
