@@ -44,18 +44,33 @@ NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HA
 
 ## Overview
 
-This fiscal printer integration sample includes the following functionality:
-- Integration with fiscal printer Epson FP-90III via web-service mode - ePOS-Print solution.
-- Registration of the following events in POS:
-	- Print receipt for sale:
-	  - Print receipt for sale return.
-	  - Print X report.
-	  - Print Z report.
-
-Receipts for sale and sale return operations also support the following scenarios:  
-- Printing of discounts.
-- Excluding gift cards from the receipt.
-- Receipts to customer order.
+The following scenarios are covered by the fiscal printer integration sample for Poland:
+  - Sales scenarios:
+    - Printing a fiscal receipt for a simple sale
+	- Printing a fiscal receipt for a simple return
+	- Capturing a response from the fiscal printer and storing in Channel DB
+	- Taxes:
+	  - Mapping to fiscal printer's tax codes
+	  - Printing in a fiscal receipt
+    - Payments:
+		  - Mapping to fiscal printer's methods of payment
+	      - Printing in a fiscal receipt
+		  - Printing change information
+		- Printing line discounts
+    - Gift cards:
+	  - Excluding an issued/re-charged gift card line from a fiscal receipt
+	  - Printing a payment with a gift card as a regular method of payment
+	- Printing fiscal receipts for customer orders order operations:
+	  - excluding customer order deposit
+	  - Carry-out lines of a hybrid customer order
+	  - Customer order pickup
+	  - Return order
+	- Printing barcode in fiscal receipts
+  - End of day statements (fiscal X, fiscal Z reports)
+  - Error handling:
+	- Retry fiscal registration when it's possible: printer not connected/not ready/not responding, printer out of paper, paper jam, etc.
+	- Postpone fiscal registration.
+    - Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
 
 ## Design
 
@@ -180,3 +195,10 @@ The connector supports the following requests:
 The configuration file is found in **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the connector provider from the HQ. The file format aligned fiscal Integration configuration requirements. The following settings have been added:
 - Endpoint address - URL of the printer.
 - Date and time synchronization - This indicates if you need to the sync date and time of the printer with the connected hardware station. The date and time of the printer will be synchronized with the Hardware station time.
+
+## Limitations of the sample
+
+  - The fiscal printer supports the scenarios with salex tax included in price only. So, the parameter **Price include sales tax** must be set to **Yes** both for retail stores and customers.
+  - Daily reports (fiscal X, fiscal Z) are printed using the format embedded in the fiscal printer firmware.
+  - Mixed transactions are not supported by the fiscal printer. The parameter **Prohibit mixing sales and returns in one receipt** should be set to **Yes** in POS functionality profiles.
+  - The sample supports integration with the fiscal prtinter working in the data transfer fiscal printer mode only also called **RT mode (Registratore Telematico)**. 
