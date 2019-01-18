@@ -45,6 +45,11 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 [Check out the April '19 release notes](ADD LINK). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
+### Catch weight product processing with warehouse management
+This feature allows you to use catch weight products within warehouse management processes. This feature is only available to a limited audience for this release. 
+
+For more information, see [Catch weight product processing with warehouse management](../../supply-chain/warehousing/catch-weight-processing.md).
+
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10, sign in to Lifecycle Services (LCS) and view the [KB article](ADD LINK).
