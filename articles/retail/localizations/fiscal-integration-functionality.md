@@ -124,6 +124,10 @@ A fiscal transaction stores the following details:
      
 ## Printing fiscal X and fiscal Z reports
 
+There's a possibility in the fiscal integration framework to run daily / shift reports from POS. 
+  - New buttons **Print fiscal X** and **Print fiscal Z** should be added to a button grid. For more details, see [Set up running fiscal X/Z reports from POS]().
+  - In the fiscal integration sample these buttons should be matched with the direct commands to a fiscal device, which implements running a daily /shift report in the format supported by the fiscal device.
+  
 ## Released samples of the fiscal integration
 
   - [Fiscal printer integration sample for Italy]().
