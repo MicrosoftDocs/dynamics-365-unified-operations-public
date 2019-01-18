@@ -120,42 +120,26 @@ The Hardware station extension components are included in the Retail SDK. To com
 	- Local Hardware station: End the dllhost.exe process in Task Manager, and then restart Modern POS.
 
 ### Set up the registration process
-To enable the registration process, set up the Headquarters using the following steps:
-1. Open Retail\Channel Setup\Fiscal Integration\Fiscal Connectors. Import the configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml.
 
-![alt text](media/emea-ita-fpi-fiscalconnector.png "Fiscal connector")
+To enable the registration process, set up the Headquarters using the steps below. For more details, see [How to set up a fiscal registration process]().
 
-2. Open Retail\Channel Setup\Fiscal Integration\Fiscal Document providers. Import the configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml.
+1. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Connectors**. Import the configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml.
 
-![alt text](media/emea-ita-fpi-documentprovider.png "Document provider")
+2. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Document providers**. Import the configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml.
 
-3. Open Retail\Channel Setup\Fiscal Integration\Connector Technical profiles. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
+3. Open **Retail > Channel Setup > Fiscal Integration > Connector Technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
 
-![alt text](media/emea-ita-fpi-technicalprofile.png "Technical profile")
+4. Open **Retail > Channel Setup > Fiscal Integration > Connector Functional profiles**. Create a new profile and select the loaded connector and document provider from the steps above. Update data mapping settings if needed
 
-4. Open Retail\Channel Setup\Fiscal Integration\Connector Functional profiles. Create a new profile and select the loaded connector and document provider from the steps above. Update data mapping settings if needed
+5. Open **Retail > Channel Setup > Fiscal Integration > Connector Functional group**. Create a new group and select the connector functional profile from the step above.
 
-![alt text](media/emea-ita-fpi-fiscalfunctionalityprofile.png "Connector functional profile")
-
-5. Open Retail\Channel Setup\Fiscal Integration\Connector Functional group. Create a new group and select the connector functional profile from the step above.
-
-![alt text](media/emea-ita-fpi-connectorgroup.png "Connector group")
-
-6. Open Retail\Channel Setup\Fiscal Integration\Registration process. Create a new process. Select the connector functional group from the step above.
-
-![alt text](media/emea-ita-fpi-registrationprocess.png "Registration process")
+6. Open **Retail > Channel Setup > Fiscal Integration > Registration process**. Create a new process. Select the connector functional group from the step above.
 
 7. Open Functionality profile linked to the store where the registration process should be activated. Expand the **Fiscal registration process** FastTab. Select the created registration process from the step above.
 
-![alt text](media/emea-ita-fpi-functionalityprofile.png "POS functionality profile")
-
 8. Open the Hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
 
-![alt text](media/emea-ita-fpi-hardwareprofile.png "Hardware profile")
-
 9. Open Distribution scheduler and select job **1070** to transfer data to the Channel database.
-
-![alt text](media/emea-ita-fpi-distributionjobs.png "Distribution scheduler")
 
 ## Commerce runtime extension design
 
