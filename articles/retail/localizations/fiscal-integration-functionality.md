@@ -130,6 +130,6 @@ There's a possibility in the fiscal integration framework to run daily / shift r
   
 ## Released samples of the fiscal integration
 
-  - [Fiscal printer integration sample for Italy]().
-  - [Fiscal printer integration sample for Poland]().
+  - [Fiscal printer integration sample for Italy](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/emea-ita-fpi-sample.md#fiscal-printer-integration-sample-for-italy).
+  - [Fiscal printer integration sample for Poland](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/emea-pol-fpi-sample.md#fiscal-printer-integration-sample-for-poland).
   
