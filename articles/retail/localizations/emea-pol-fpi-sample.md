@@ -59,14 +59,15 @@ The following scenarios are covered by the fiscal printer integration sample for
 	      - Printing in a fiscal receipt
 		  - Printing change information
 		- Printing line discounts
-		- Gift cards:
-	      - Excluding an issued/re-charged gift card line from a fiscal receipt
-		  - Printing a payment with a gift card as a regular method of payment
-		- Printing fiscal receipts for customer orders order operations:
-	      - Carry-out lines of a hybrid customer order
-		  - Customer order pickup
-		  - Return order
-		- End of day statements (X/Z report or Shift report)
+    - Gift cards:
+	  - Excluding an issued/re-charged gift card line from a fiscal receipt
+	  - Printing a payment with a gift card as a regular method of payment
+	- Printing fiscal receipts for customer orders order operations:
+	  - excluding customer order deposit
+	  - Carry-out lines of a hybrid customer order
+	  - Customer order pickup
+	  - Return order
+  - End of day statements (fiscal X, fiscal Z reports)
   - Error handling:
 	- Retry fiscal registration when it's possible: printer not connected/not ready/not responding, printer out of paper, paper jam, etc.
 	- Postpone fiscal registration.
