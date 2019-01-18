@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -283,10 +283,10 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | ExportWhileDataEntityListIsBeingRefreshed     | When enabled, additional validations are made on mappings when a job is scheduled while entity refresh is in progress. By default, this is OFF.|
 | DMFDisableXSLTTransformationForCompositeEntity     | This can disable the application of transformations on composite entities. |
 | DMFDisableInputFileCheckInPackageImport     | Additional validations are made to ensure if any entity file is missing from a data package, error message is shown. This is the default behavior. If required, this can be turned OFF by this flight.  |
-| FillEmptyXMLFileWhenExportingCompositeEntity     | Up until PU15, when exporting composite entities that did not have any records to export, the XML file generated did not have any schmea elements. This behavior is since changed to output empty schema if so desired. This flight can be enabled to get back the old behavior if needed.  |
-| EnableNewNamingForPackageAPIExport     | A was fix was made to ensure unique names are used for the execution id using the package api for exports. This will now result in new naming convention for the execution id's. If there is a need to have the old naming convention, this naming convention can be reverted back to old by enabling this flight. However, the issue fixed in the bug 265164 will re-appear. This issue will only happen when the calls are made in quick succession such that the time stamps used in the naming convention would result the same.  |
-| DMFDisableDoubleByteCharacterExport     | A was fix was made to ensure data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock as applicable.  |
-| DisablePendingRecordFromJobStatus     | A was fix was made to ensure pending records are taken into consideration while evaluating the final status of an import job. If implementations have dependency on the status evaluation logic and if this change is considered as a breaking change for an implementation, this new logic can be disabled using this flight.  |
+| FillEmptyXMLFileWhenExportingCompositeEntity     | Prior to Platform update 15, when exporting composite entities that did not have any records to export, the XML file generated did not have any schema elements. This behavior has been changed to output empty schema. However, this flight can be enabled to revert to the previous behavior, if needed.  |
+| EnableNewNamingForPackageAPIExport     | A was fix was made to ensure unique names are used for the execution ID using the package API for exports. This will now result in a new naming convention for the execution ID's. If there is a need to revert to the previous naming convention, you can enable this flight. However, by doing this, the issue fixed in the bug 265164 will re-occur. This issue will only occur when calls are made in quick succession so that the time stamps used in the naming convention are the same. |
+| DMFDisableDoubleByteCharacterExport     | A was fix was made to ensure that data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock, if applicable. |
+| DisablePendingRecordFromJobStatus     | A was fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
 
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
