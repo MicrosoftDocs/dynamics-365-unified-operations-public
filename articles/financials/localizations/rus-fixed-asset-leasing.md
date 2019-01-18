@@ -5,7 +5,7 @@ title: Create a fixed asset lease and a return from lease transaction (Russia)
 description: This topic explains how to the lease of a fixed asset and the subsequent return of the leased asset in Microsoft Dynamics 365 for Finance and Operations in Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 01/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
