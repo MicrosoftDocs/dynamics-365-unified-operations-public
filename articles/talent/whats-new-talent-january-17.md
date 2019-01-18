@@ -47,3 +47,7 @@ An update has been made in the **Task Management** workspace to display the corr
 
 ### "Action requested by" field is now populated by Talent on Workers action form
 With this change, the default for the **Action requested by** field is now the user that is requesting the change.
+
+### Ideas portal updated
+In app links to submit an idea for Talent have been updated to the new Ideas portal.  All ideas entered in the old portal have been migrated, so all your great ideas are still there and available to be voted on by others.  
+
