@@ -61,7 +61,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 	  - Excluding an issued/re-charged gift card line from a fiscal receipt
 	  - Printing a payment with a gift card as a regular method of payment
 	- Printing fiscal receipts for customer orders order operations:
-	  - excluding customer order deposit
+	  - Excluding customer order deposit
 	  - Carry-out lines of a hybrid customer order
 	  - Customer order pickup
 	  - Return order
