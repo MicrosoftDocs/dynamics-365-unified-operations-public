@@ -129,7 +129,7 @@ To enable the registration process, set up the Headquarters using the following 
 8. Open the Hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
 9. Open the Distribution scheduler and select job **1070** to transfer data to the Channel database.
 
-For more details, see [How to set up a fiscal registration process]().
+For more details, see [How to set up a fiscal registration process](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#how-to-set-up-a-fiscal-registration-process).
 
 ## Commerce runtime extension design
 
