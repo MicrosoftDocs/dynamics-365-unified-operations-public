@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
