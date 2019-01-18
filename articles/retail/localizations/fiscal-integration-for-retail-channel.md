@@ -191,3 +191,13 @@ Fiscal register proccesses have some additional settings to define possible opti
 
     >[!NOTE]
      > One fiscal document and several non-fiscal documents could be generated within one step of the fiscal registration process. A fiscal document provider extension identifies every type of event or transaction as related to fiscal or non-fiscal documents. The error handling feature applies to the fiscal documents only.
+     
+## Set up running fiscal X/Z reports from POS
+
+In order to enable running running fiscal X/Z reports from POS, new buttons should be added to a POS layout.
+  - Open the **Button grids** page in Retail headquarters.
+  - Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+    - Select the layout that you are going to update. 
+    - Add a new button and set the button property **Print fiscal X**.
+    - Add another button and set the button property **Print fiscal Z**.
+    - Run the job **1090** on the **Distribution schedule** page to transfer changes to the Channel database.
