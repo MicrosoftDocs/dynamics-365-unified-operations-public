@@ -2,10 +2,10 @@
 # required metadata
 
 title: Store inventory management
-description: This article describes the types of documents that you can use to manage inventory.
+description: This topic describes the types of documents that you can use to manage inventory.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,33 +34,32 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This article describes the types of documents that you can use to manage inventory.
+This topic describes the types of documents that you can use to manage inventory.
 
 You can use the following types of documents to manage your organization's inventory.
 
-When working with inventory in Dynamics 365 for Retail and using our POS application, it is important to note that the POS provides limited support for inventory dimensions and certain inventory item types.  
+When working with inventory in Dynamics 365 for Retail and using the POS application, it is important to note that POS provides limited support for inventory dimensions and certain inventory item types.  
 
-The POS solution does not support the following:
-
-Item Configurations:
-- BOM items (except our Kit products which utilize some components of the BOM framework)
-- Catch Weight Items
-- Batch Controlled Items
+The POS solution does not support the following item configurations:
+- BOM items (except kit products, which utilize some components of the BOM framework)
+- Catch weight items
+- Batch-controlled items
 
 The POS application currently does not support the following tracking dimensions in the POS:
-- Batch Tracking Dimension
-- Owner Dimension
+- Batch tracking dimension
+- Owner dimension
 
-The POS solution provides LIMITED support for the following dimensions.  Limited support indicates that the POS may default some of these dimensions into inventory transactions automatically based on warehouse/store setup configuration and will not fully support the dimensions in the way they are supported if a sales transaction is manually entered into the ERP. 
+The POS solution provides limited support for the following dimensions. Limited support indicates that the POS may default some of these dimensions into inventory transactions automatically based on warehouse/store setup configuration. POS will not fully support the dimensions in the way they are supported if a sales transaction is manually entered into the ERP. 
 
 - Location
-- License Plate (only applicable when "use warehouse management process" has been enabled on the item and the store warehouse)
-- Serial Number
-- Inventory Status
+- License plate (only applicable when **Uuse warehouse management process** has been enabled on the item and the store warehouse)
+- Serial number
+- Inventory status
 
-An organization should always test their item configurations through POS in development or test environments before deploying them to production.  Test your items by doing not only regular cash and carry sales transacting, but also test creating customer orders (if applicable) through the POS with your items.  Testing must include running a full statement posting processes in your test environment and verifying there are no issues.
+> [!NOTE]
+> All organizations must test item configurations through POS in development or test environments before deploying them to production. Test your items by performing regular cash and carry sales transacting and creating customer orders (if applicable) through the POS with your items. Testing must include running a full statement posting processes in your test environment and verifying that there are no issues.
 
-Configuring items in a way that is not supported by the POS application without proper testing can result in your statement posting proccess failing in production with no easy remedy to correct the issues.  Partner or customer customizations to the application may optionally be considered to allow these posting processes successfully complete.  If customizations are not desired, the organization must ensure the product configuration of your products has been done in a way that is supported by the standard POS application/order creation/statement posting process.
+> Configuring items in a way that is not supported by the POS application, without proper testing, can result in your statement posting process failing in production without an easy way to correct the issues. Partner or customer customizations to the application may optionally be considered to allow these posting processes to successfully complete. If customizations are not needed, the organization must ensure that the product configuration of your products has been done in a way that is supported by the standard POS application/order creation/statement posting process.
 
 ## Purchase orders
 
