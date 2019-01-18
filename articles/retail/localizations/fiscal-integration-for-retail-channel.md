@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a setup guide explaining the required settings of the Fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. For more information about the fiscal integration, see [Fiscal integration functionality](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#fiscal-integration-functionality). 
+This topic is a setup guide explaining the required settings of the Fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. For more information about the fiscal integration, see [Fiscal integration functionality](fiscal-integration-functionality.md#fiscal-integration-functionality).
 
 Users can perform the following tasks. 
 - Configure fiscal connectors, which are fiscal devices or services used for fiscal registration purposes like saving, digital signatures, and secured submission of fiscal data.
