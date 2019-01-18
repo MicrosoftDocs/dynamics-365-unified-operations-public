@@ -38,10 +38,12 @@ Delivery timelines might change, and projected functionality might change or mig
 
 For a list of the localizions that are supported for Dynamics 365 for Finance and Operations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck)
 
-## Planned updates:
-
 |Planned release date|Release version|Country|Feature|
 |--------------------|---------------|-------|-------|
+|                    |   10.0.0      | Austria      |   CHANGES IN KAMMERUMLAGE 2019 (Purchase duty)    |
+|                    |   10.0.0      |   Brazil    |     SPED EFD CONTRIBUTIONS - LAYOUT  004 and 005  |
+|                    |   10.0.0      |    Malaysia     |MALAYSIA REPLACES GST WITH SST SALES & SERVICE TAX        |
+|                    |   10.0.0      |   China    |   INTEGRATION INTERFACE for GTS version 3.0     |
 |                    |               |       |       |
 |                    |               |       |       |
 |                    |               |       |       |
