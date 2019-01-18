@@ -225,8 +225,6 @@ actions:
 
 -   Cancel-Verify (Exclusão-Validar)
 
-![Machine generated alternative text: Dynamics 365 Operations Tax \> Setup Delete Open \@ Options \> Electronic messages \> Message processing actions p References Y Created by V OPTIONS p Save p Filter We New Image URL Attachments for Action: Verify Attached nything Description General Type to show here. ](media/fd9c9934887cca2dbbeb1f945437f66d.png)
-
 Go to **Tax \> Setup \> Electronic messages \> Message processing actions**, select the **Populate** (**Incluir**) action, and then, in the **Populate records action** field, select **Registrar transacões**.
 
 ![Message-Processing-actions](media/bra-message-processing-actions.png)
