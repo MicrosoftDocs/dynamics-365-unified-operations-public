@@ -121,7 +121,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 ### Set up the registration process
 
-To enable the registration process, set up the Headquarters using the steps below. For more details, see [How to set up a fiscal registration process]().
+To enable the registration process, set up the Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#how-to-set-up-a-fiscal-registration-process).
 
 1. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Connectors**. Import the configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml.
 
