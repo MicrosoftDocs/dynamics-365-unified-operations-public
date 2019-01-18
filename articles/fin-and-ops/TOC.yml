@@ -4088,6 +4088,8 @@
         href: ../supply-chain/warehousing/scan-bar-codes-using-a-camera.md
       - name: Mobile barcode support
         href: ../supply-chain/warehousing/mobile-barcode-support.md
+      - name: Set up warehouse for transfer orders
+        href: ../supply-chain/warehousing/transfer-orders-warehouse.md
     - name: Warehouse work policies
       href: ../supply-chain/warehousing/warehouse-work-policies.md
       items:
