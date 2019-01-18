@@ -111,7 +111,17 @@ The fiscal integration framework provides the following options to sort out the 
      > Options **Skip** and **Mark as registered** should be activated on the fiscal registration process beforehand. These options allow using info codes to capture some specific information on POS like a reason of failure, or a justification for skipping the fiscal registration or marking the fiscal transaction as registered. Also these two options require a special permission to be enabled for the user. If current doesn't have the **Allow skip or mark as registered** permission then the manager's confirmation is requested automatically for this operation. For more details about setting up error handling parameters, see [Error handling settings]().
 
 ## Fiscal transactions and storing fiscal response
+In case if a sale or sale return transaction is an object of the fiscal registration, successful completion of the fiscal registration as well as selection of the options **Skip** and **Mark as registered** for failed fiscal registration results in saving fiscal response to the Channel database. If a fiscal registration process consists of several steps, then a fiscal response received on each step is saved.
 
+After running *P-job* on the **Distribution schedule** page, this information is transferred to the headquarter. Open the **Retail store transactions** page to view the fiscal transactions created based on the fiscal responces related to a specific transaction on the FastTab **Fiscal transactions**. 
+A fiscal transaction stores the following details:
+  - Identifiers the fiscal connector and the registration process (Process,Connector group, Connector, etc.). It also stores a serial number of the fiscal device in the field **Register number**, if it's included in a fiscal response.
+  - Status of the fiscal registration: *Completed* for succesful registration, *Skipped* if the **Skip** option was selected for failed regigistration, *Marked as registered* if user selected the **Mark as registered** option.
+  - Info code transactions related to a selected fiscal transaction. 
+    - Select a fiscal transaction with the status equal to *Skipped* or *Marked as registered*, and click button **Info code transactions** on the FastTab **Fiscal transactios** to view the info code transactions.
+        >[!NOTE]
+     > Info codes **Skip** and **Mark as registered** should be set up on fiscal connector groups beforehand. For more details , see [Error handling settings]().
+     
 ## Printing fiscal X and fiscal Z reports
 
 ## Released samples of the fiscal integration
