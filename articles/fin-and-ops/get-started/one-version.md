@@ -61,7 +61,9 @@ There will be 2 major updates in April and October where new experiences will be
 
 ### What does it mean when an update is backward compatible?
 
-Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs. Functional compatibility is about user experience. All new experiences will be opt-in.
+Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This also means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Functional compatibility is about user experience, all new experiences will be opt-in.
+
+Backward compatibility does not include non X++/metadata APIs. Microsoft reserves the right to update versions of any dependencies the product uses, as well as removing dependencies without early warning. Microsoft does not commit to maintain backwards compatibility of dependent software libraries unless expressively stated.
 
 ### Do these updates apply to on-premises?
 
