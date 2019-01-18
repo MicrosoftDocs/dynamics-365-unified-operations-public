@@ -41,7 +41,7 @@ The fiscal integration is a framework which provides a common solution for furth
 
 If you want to extend functionality of the fiscal integration with support of other fiscal device model, or other fiscal service, or support of the legal requirements for other country, or to cover other business needs with implementing some specific  scenarios, then you should either make a cusomization of the fiscal integration sample or develop the integration with a fiscal device or service based on the extensions included in the fiscal integration sample.
 
-## Components of the fiscal integration sample
+## Components of fiscal integration samples
 
 The example below demonstrates a common execution flow of integration with a fiscal printer. A fiscal printer integration sample includes two components:
 
@@ -73,15 +73,23 @@ Some countries have specific requirements on the additional text that must be pr
 
 The fiscal integration handles all discounts applied to a transaction line as one cumulative product discount. It also supports setting up a special text to be printed in fiscal receipt after discount line. A fiscal text may be specified for Info codes and Discounts, so it's possible to print a special text for any channel-specific discount as well as for any type of manual discount applied on POS. If fiscal text was set up for several discounts, a text line in a fiscal receipt would concatenate fiscal text from all applied discounts. For more details about setting up a fiscal text for discounts, see [Setting up a fiscal text for discounts]().
 
-## Saving payment adjustments
+## Handling gift cards and customer order deposits
 
 ## Error handling
 
-### Health check
+The fiscal integration framework provides the following options to sort out the problems happening while the fiscal registration:
+  - **Retry** - using this option is possible when the problem is not significant and it could be solved quickly, like a printer is not connected/not ready/not responding, printer is out of paper, paper jam, etc.
 
-### Optional fiscal registration
+  - **Cancel** - this option alllows to postpone the fiscal registration of the current transaction. After that user may continue working on POS and perform any operations where the fiscal registration is not required. When any event requiring the fiscal registration is registered on POS, e.g. user opened a new transaction, the error handling dialog appears automatically to notify the user about the previous transaction with posponed fiscal registration and to suggest possible error handling options.
 
-## Fiscal transactions
+  - **Skip** - use this option when there is a legal excuse to continue operating without fiscal registration of sales and returns. For example, if the local legislation allows to register transactions out ofthe system under some specific conditions.
+
+  - **Mark as registered** - this option means that the transaction was actually registered on a fiscal device or service, but the fiscal response was not saved properly. Another example of such a scenario is when the transaction is registered on a fiscal printer using its keyboard. 
+
+    >[!NOTE]
+     > Options **Skip** and **Mark as registered** should be activated on the fiscal registration process beforehand. These options allow using info codes to capture some specific information on POS like a reason of failure, or a justification for skipping the fiscal registration or marking the fiscal transaction as registered. Also these two options require a special permission to be enabled for the user. If current doesn't have the **Allow skip or mark as registered** permission then the manager's confirmation is requested automatically for this operation. For more details about setting up error handling parameters, see [Error handling settings]().
+
+## Fiscal transactions and storing fiscal response
 
 ## Printing fiscal X and fiscal Z reports
 
