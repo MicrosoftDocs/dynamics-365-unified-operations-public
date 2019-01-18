@@ -1394,6 +1394,8 @@
             href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+        - name: SPED-Reinf tax statement
+          href: ../financials/localizations/latam-bra-sped-reinf.md
         - name: Parameters for legal entities
           href: ../financials/localizations/latam-bra-legal-entity-parameters.md
         - name: Set up legal entity parameters
@@ -2210,6 +2212,8 @@
             href: ../financials/localizations/rus-register-acquisition.md
           - name: Create and post budget journals for fixed asset acquisitions
             href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+          - name: Create a fixed asset lease and a return from lease transaction
+            href: ../financials/localizations/rus-fixed-asset-leasing.md
           - name: Fixed asset counting
             href: ../financials/localizations/rus-fixed-assets-counting.md
           - name: Fixed assets currency revaluation
@@ -4088,6 +4092,8 @@
         href: ../supply-chain/warehousing/scan-bar-codes-using-a-camera.md
       - name: Mobile barcode support
         href: ../supply-chain/warehousing/mobile-barcode-support.md
+      - name: Set up warehouse for transfer orders
+        href: ../supply-chain/warehousing/transfer-orders-warehouse.md
     - name: Warehouse work policies
       href: ../supply-chain/warehousing/warehouse-work-policies.md
       items:
