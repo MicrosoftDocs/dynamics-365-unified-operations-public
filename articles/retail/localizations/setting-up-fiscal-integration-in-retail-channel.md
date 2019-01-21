@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Setting up fiscal integration in Retail
+title: Setting up fiscal integration in Retail channel
 description: This topic provides instructions for setting up the fiscal integration for Retail POS. 
 author: josaw
 manager: annbe
