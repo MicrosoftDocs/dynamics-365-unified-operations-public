@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Setting up fiscal integration in Retail channel
-description: This topic provides instructions for setting up the fiscal integration for Retail POS. 
+title: Setting up fiscal integration for Retail channel
+description: This topic provides guidelines on setting up the fiscal integration functionality for Retail channel. 
 author: josaw
 manager: annbe
 ms.date: 11/01/2018
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 
 ---
-# Setting up fiscal integration in Retail
+# Setting up fiscal integration for Retail channel
 
 [!include [banner](../includes/banner.md)]
 
