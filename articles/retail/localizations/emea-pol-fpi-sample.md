@@ -46,8 +46,8 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Printing a fiscal receipt for cash and carry sales and returns
 	- Capturing a response from the fiscal printer and storing in Channel DB
 	- Taxes:
-	  - Mapping to fiscal printer's tax codes
-	  - Printing in a fiscal receipt
+	  - Mapping to fiscal printer's tax codes (departments)
+	  - Transfering mapped tax data to a fiscal printer
     - Payments:
 		- Mapping to fiscal printer's methods of payment
 	    - Printing in a fiscal receipt
