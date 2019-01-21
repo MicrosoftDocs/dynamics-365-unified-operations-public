@@ -159,7 +159,7 @@ The configuration file is found in the Configuration folder of the extension pro
 - VAT codes mapping
 - VAT rates mapping
 - Tender type mapping
-- Barocde type for receipt number
+- Barcode type for receipt number
 - Deposit payment type
 
 ## Hardware station extension design
