@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 
 ---
-# Fiscal integration setup guide
+# Setting up fiscal integration in Retail
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,14 +38,14 @@ Users can perform the following tasks.
 - Configure the document provider, which defines an output method and an algorithm of fiscal document generation.
 - Configure the fiscal registration process, which is defines a sequence of steps and a group of connectors used on each step.
 - Assign fiscal registration processes to POS functionality profiles.
-- Assign connector technical profiles, either to hardware profiles (for the local fiscal connectors) or to POS functionality profiles (for other fiscal connector types).
+- Assign connector technical profiles to hardware profiles.
 
 ## How to set up a fiscal registration process
 Before using the fiscal integration functionality, the following settings should be done:
 
 1. Update retail parameters.
 
-  - Set the parameter **Enable fiscal integration** to **Yes** on tab General of the **Retail parameters** page.
+  - Set the parameter **Enable fiscal integration** to **Yes** on tab General of the **Retail shared parameters** page.
 
   - Define the number sequence on the **Retail parameters** page for the fiscal functional profile number.
   
@@ -85,22 +85,17 @@ Before using the fiscal integration functionality, the following settings should
     |--------|--------|--------|
     | VAT rates settings | value : VATrate | 1 : 2000, 2 : 1800 |
     | VAT codes mapping | VATcode : value | vat20 : 1, vat18 : 2 |
-    | Tender types mapping | TenderTyp : value | Cash : 1, Card : 2 |
+    | Tender types mapping | TenderType : value | Cash : 1, Card : 2 |
   
     >[!NOTE]
-       > Connector functional profiles are company-specifis. So, if you plan to use the same combination of a fiscal connector and a fiscal document provider in several companies, every company should have its own connector functional profile.
+       > Connector functional profiles are company-specific. So, if you plan to use the same combination of a fiscal connector and a fiscal document provider in several companies, every company should have its own connector functional profile.
 
   - Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector.
     - Select a connector name.
     - Select a connector type: 
         - **Local** - select this type for devices connected to a hardware station.
-        - **Internal** - select this type for fiscal services and applications connected via CRT.
-        - **External** - select this type for external fiscal services like a web-portal provided by a tax authority.
-
-       >[!NOTE]
-      > Currently connector types Internal and External are hidden in UI, since already released fiscal integration samples work with fiscal devices connected to a hardware station.
-
-	  Parameters on tabs **Device** and **Settings** could be changed in a connector technical profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration. While loading a new version of an XML configuration, user gets an infolog-message notifying if the current fiscal connector or fiscal document provider is already in use. This procedure do now override manual changes made in connector functional profiles and connector technical profiles earlier. In order to apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page and **Connector technical profiles** page.
+      
+	Parameters on tabs **Device** and **Settings** could be changed in a connector technical profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration. While loading a new version of an XML configuration, user gets an infolog-message notifying if the current fiscal connector or fiscal document provider is already in use. This procedure do not override manual changes made in connector functional profiles and connector technical profiles earlier. In order to apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page or the **Connector technical profiles** page.
 
 4.  Create **Fiscal connector groups**.
 
@@ -121,26 +116,21 @@ Before using the fiscal integration functionality, the following settings should
 
   6. Assign entities of the fiscal registration process to POS profiles. 
   
-     The connector type defines where the system will search a connector technical profile in run-time: on a hardware profile for connector type **Local**, or on POS functionality profile for other fiscal connector types.
-
   -  Assign fiscal registration process to POS functionality profiles on the **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** page.
      - Click **Edit** and select a **Process number** on the **Fiscal registration process** tab.
-
-  - Assign connector technical profiles with the connector type **Internal** or **External** on the **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** page.   
-    - Click **Edit** and add a line on the **Fiscal peripherals** tab, select a connector technical profile in the field **Profile number**.
 
   - Assign connector technical profiles with the connector type **Local** to hardware profiles on the **Retail > Channel setup > POS setup > POS profiles > Hardware profiles** page.
     - Click **Edit** and add a line on the **Fiscal peripherals** tab, select a connector technical profile in the field **Profile number**.
 
      >[!NOTE]
-     > You can add several technical profiles to the same hardware profile or POS functionality profile. However, this is not supported if a hardware profile or POS functionality profile has more than one intersection with any connector group. 
+     > You can add several technical profiles to the same hardware profile. However, this is not supported if a hardware profile or POS functionality profile has more than one intersection with any connector group. 
 
   7. Validate the fiscal registration process.
   
      Open page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) and click button **Validate** to check the fiscal registration process. It’s recommended to run such a validation in the following cases:
       - For a new registration process after all the settings are completed, including assigning to POS functionality profiles and hardware profiles.
       - After making some changes to an existing registration process that may lead to selection of a different fiscal connector in run-time (for example, changing a connector group in the fiscal registration process, or enabling a connector functional profile in a connector group, or adding a new connector functional profile to a connector group).
-      - After making changes in the connector technical profiles assignment to hardware profiles or POS functionality profiles.
+      - After making changes in the connector technical profiles assignment to hardware profiles.
       
    8. Open the **Distribution scheduler** page and run the job **1070** to transfer data to the Channel database.
 
@@ -175,7 +165,6 @@ Fiscal register proccesses have some additional settings to define possible opti
 
   - **Allow skip** - this parameter enables the **Skip** option in error handling dialog.
   - **Allow mark as registered** - this parameter enables the **Mark as registered** option in error handling dialog.
-  - **Optional** - this parameter means that the fiscal registration is optional. Error handling feauture is not used in this case.
 
 2. Options **Skip** and **Mark as registered** in the error handling dialog require the permission **Allow skip or mark as registered**. If parameters **Allow skip** or **Allow mark as registered** are activated, then this permission must be enabled to some of users at least. 
 
@@ -187,10 +176,15 @@ Fiscal register proccesses have some additional settings to define possible opti
      > It's not reccomended to set up info codes **Skip** and **Mark as registered** as info codes with the trigger function having value *Product*.
 
   - Open the **Fiscal connector groups** page.
-  - on the tab **Info codes** select info codes or info code groups in fields **Skip** and **Mark as registered**.
+  - On the tab **Info codes** select info codes or info code groups in fields **Skip** and **Mark as registered**.
 
     >[!NOTE]
-     > One fiscal document and several non-fiscal documents could be generated within one step of the fiscal registration process. A fiscal document provider extension identifies every type of event or transaction as related to fiscal or non-fiscal documents. The error handling feature applies to the fiscal documents only.
+     > One fiscal document and one non-fiscal document could be generated within any step of the fiscal registration process. A fiscal document provider extension identifies every type of event or transaction as related to fiscal or non-fiscal documents. The error handling feature applies to the fiscal documents only. 
+
+     *Fiscal document* - a mandatory document confirming results of the fiscal registration (e.g., a fiscal receipt).
+
+     *Non-fiscal document* - a supplementary document covering an event or a transaction or its part, which is not an object of the fiscal registration (e.g., a gift card slip or a customer deposit slip).
+
      
 ## Set up running fiscal X/Z reports from POS
 
