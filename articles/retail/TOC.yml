@@ -317,8 +317,10 @@
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
-  - name: Fiscal integration for Retail channel
+  - name: Overview of fiscal integration for Retail channel
     href: localizations/fiscal-integration-for-retail-channel.md
+  - name: Setting up fiscal integration for Retail channel
+    href: localizations/setting-up-fiscal-integration-for-retail-channel.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
