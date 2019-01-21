@@ -91,7 +91,7 @@ The CRT extension components are included in the Retail SDK. To complete the fol
 4. Find the extensions configuration file for CRT:
 	- Retail Server: The file is named commerceruntime.ext.config, and it's in the bin\ext folder under the IIS Retail Server site location.
 	- Local CRT on Modern POS: The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-5. Register the CRT change in the extensions configuration file. Add source="assembly" **value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample"**
+5. Register the CRT change in the extension's configuration file. Add source="assembly" **value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample"**
 6. Restart the Retail service:
 	- Retail Server: Restart the Retail service site from IIS Manager.
 	- Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
@@ -168,7 +168,7 @@ The configuration file is found in **Configuration** folder of the extension pro
 
 ## Limitations of the sample
 
-  - The fiscal printer supports the scenarios with salex tax included in price only. So, the parameter **Price include sales tax** must be set to **Yes** both for retail stores and customers.
+  - The fiscal printer supports the scenarios with sales tax included in price only. So, the parameter **Price include sales tax** must be set to **Yes** both for retail stores and customers.
   - Daily reports (fiscal X, fiscal Z) are printed using the embedded format *Shift report*.
-  - Printing of barcode in fiscal receips is considered as a potenatial customization, since this feaure is not supported in the embedded formats and can be implemented through using the customizable report *Super-format* only.
+  - Printing of barcode in fiscal receipts is considered as a potential customization, since this feature is not supported in the embedded formats and can be implemented through using the customizable report *Super-format* only.
   - Mixed transactions are not supported by the fiscal printer. The parameter **Prohibit mixing sales and returns in one receipt** should be set to **Yes** in POS functionality profiles.
