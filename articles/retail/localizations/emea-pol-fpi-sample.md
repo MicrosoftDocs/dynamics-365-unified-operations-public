@@ -43,8 +43,7 @@ Microsoft does not ship any hardware, software or documentation from Posnet. Ple
 
 The following scenarios are covered by the fiscal printer integration sample for Poland:
   - Sales scenarios:
-    - Printing a fiscal receipt for a simple sale
-	- Printing a fiscal receipt for a simple return
+    - Printing a fiscal receipt for cash and carry sales and returns
 	- Capturing a response from the fiscal printer and storing in Channel DB
 	- Taxes:
 	  - Mapping to fiscal printer's tax codes
@@ -57,7 +56,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Gift cards:
 	  - Excluding an issued/re-charged gift card line from a fiscal receipt
 	  - Printing a payment with a gift card as a regular method of payment
-	- Printing fiscal receipts for customer orders order operations:
+	- Printing fiscal receipts for customer order operations:
 	  - Excluding customer order deposit
 	  - Carry-out lines of a hybrid customer order
 	  - Customer order pickup
