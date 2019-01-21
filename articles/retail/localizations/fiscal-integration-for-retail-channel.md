@@ -59,6 +59,13 @@ Before using the fiscal integration functionality, the following settings should
      > Number sequences are optional. All fiscal integration entities might have numbers filled in either from a number sequence or manually.
 
 2. Upload configurations of two components included in the fiscal integration sample: a fiscal connector and a fiscal document provider.
+
+   Fiscal document providers are responsible for generating documents representing events and transactions registerted on POS, that are the object of the fiscal registration, in a format supported by a specific fiscal device or fical service. For example, a fiscal document provider generates a fiscal receipt in XML format.
+
+   Fiscal connectors are responsible for communication with fiscal devices and services. For example, a fiscal connector sends a fiscal receipt in XML-format created by a fiscal document provider to a fiscal printer.
+
+   For more details about fiscal integration components, see [Components of fiscal integration samples](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#components-of-fiscal-integration-samples).
+
   - Load an XML configuration on the **Fiscal connectors** page (**Retail > Channel setup > Fiscal integration > Fiscal connectors**) for each device or service that you plan to use for fiscal integration purposes. 
   
      By clicking button **View**, you may view all functional and technical profiles related to the current fiscal connetor.
@@ -66,7 +73,6 @@ Before using the fiscal integration functionality, the following settings should
   -  Load an XML configuration on the **Fiscal document providers** page (**Retail > Channel setup > Fiscal integration > Fiscal document providers**) for each device or service that you plan to use.
  
      By clicking button **View**, you may view all functional profiles related to the current fiscal document provider.
-
 
      >[!NOTE]
       > Data mapping is considered as a part of the fiscal document provider. To set up different data mappings for the same connector (like state-specific regulations), you should create different fiscal document providers.
@@ -173,7 +179,7 @@ Fiscal register proccesses have some additional settings to define possible opti
 3. Options **Skip** and **Mark as registered** in the error handling dialog allow users to enter an additional information on POS when the fiscal registration has failed. The info codes **Skip** and **Mark as registered** should be specified on a fiscal connector group to make is possible entering additional details on POS and saving this information as an Info code transaction linked with a fiscal transaction. You can find more details regarding info codes in the topic [Info codes and info code groups](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/info-codes-retail).
 
     >[!NOTE]
-     > It's not reccomended to set up info codes **Skip** and **Mark as registered** as info codes with the trigger function having value *Product*.
+     > The trigger function with the value *Product* is not supported for the info codes, that are used as **Skip** and **Mark as registered** in fiscal connector groups.
 
   - Open the **Fiscal connector groups** page.
   - On the tab **Info codes** select info codes or info code groups in fields **Skip** and **Mark as registered**.
