@@ -39,14 +39,14 @@ Microsoft does not ship any hardware, software or documentation from Epson. Plea
  
 ## Overview
 
-The following scenarios are covered by the fiscal printer integration sample for Poland:
+The following scenarios are covered by the fiscal printer integration sample for Italy:
   - Sales scenarios:
-    - Printing a fiscal receipt for a simple sale
-	- Printing a fiscal receipt for a simple return
+    - Printing a fiscal receipt for cash and carry sales and returns
 	- Capturing a response from the fiscal printer and storing in Channel DB
 	- Taxes:
-	  - Mapping to fiscal printer's tax codes
-	  - Printing in a fiscal receipt
+	  - Mapping to fiscal printer's tax codes (departments)
+	  - Transfering mapped tax data to a fiscal printer
+	  Printing in a fiscal receipt
     - Payments:
 		- Mapping to fiscal printer's methods of payment
 	    - Printing in a fiscal receipt
@@ -149,13 +149,14 @@ The handler is inherited from the INamedRequestHandler interface. The Method Han
 The connector supports the following requests:
 - GetFiscalDocumentDocumentProviderRequest- Contains information about what document should be generated. Returns a printer-specific document that should be registered in the fiscal printer.
 - GetSupportedRegistrableEventsDocumentProviderRequest - Returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
-- SaveFiscalRegistrationResultDocumentProviderRequest- Saves the response from the printer.
-
 
 ### Configuration
 The configuration file is found in the Configuration folder of the extension project. The purpose of the file is to allow to configure settings for the document provider from the HQ. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+- VAT codes mapping
 - VAT rates mapping
 - Tender type mapping
+- Barocde type for receipt number
+- Deposit payment type
 
 ## Hardware station extension design
 
