@@ -349,7 +349,7 @@
       href: localizations/apac-ind-n-1-for-india.md
   - name: Italy
     items:
-    - name: Fiscal printer integration
+    - name: Fiscal printer integration sample for Italy
       href: localizations/emea-ita-fpi-sample.md
   - name: Norway
     items:
