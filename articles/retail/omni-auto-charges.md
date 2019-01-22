@@ -2,10 +2,10 @@
 # required metadata
 
 title: Omni-Channel Advanced Auto Charges
-description: This topic describes capabilities for managing additional order charges for Retail channel orders using Advanced Auto Charges features.
-author: 
-manager: 
-ms.date: 1/17/2019
+description: This topic describes capabilities for managing additional order charges for Retail channel orders using advanced auto charges features.
+author: hhaines
+manager: annbe
+ms.date: 1/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: , 
+ms.search.form:  
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: 10.0
 
 ---
 
-# Omni-Channel Advanced Auto Charges
+# Omni-channel advanced auto charges
 
 [!include [banner](includes/banner.md)]
 
-This topic will provide information on configuration and deployment of the Advanced Auto-charges feature which will be available beginning in version 10.0.
+This topic provides information on configuration and deployment of the advanced auto-charges feature which will be available beginning in version 10.0.
 
-By enabling the Advanced Auto-charges features in Dynamics 365 for Commerce, orders created in any supported Retail channel (POS, Call Center and Online), will be able to take advantage of the [auto-charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line level related charges.  
+By enabling the advanced auto-charges features in Dynamics 365 for Retail, orders created in any supported Retail channel (point of sale (POS), call center, and online), will be able to take advantage of the [auto-charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.  
 
 In releases prior to 10.0, the [auto-charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations were only accessible by orders created in Ecommerce and Call Center channels.  With this feature change, POS created orders will now be able to leverage these same auto-charges configurations, which will allow for additional misc charges to systematically be added to these sales transactions.
 
