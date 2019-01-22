@@ -201,7 +201,7 @@ Next, consider the item that the user will enter on the purchase order line. Fig
 
 Next, the user enters the item on the purchase order line.  Figures 5 below shows the item selected on the purchase order line and the resulting default dimensions. In this case, the default dimension values were merged by the purchase order logic.
 
-[![DefaultDimension4-5PurchLineResult.png](DefaultDimension4-5PurchLineResult./media/.png)](./media/DefaultDimension4-5PurchLineResult.png)
+![DefaultDimension4-5PurchLineResult.png](./media/DefaultDimension4-5PurchLineResult.png)
 **Figure 5: Resulting default dimensions on a purchase order line**
 
 [![DefaultDimension4-6SQLOnItem.png](./media/DefaultDimension4-6SQLOnItem.png)](./media/DefaultDimension4-6SQLOnItem.png)
@@ -240,8 +240,6 @@ As shown in Figure 1 above, choosing the Financials-\>Distribute amounts option 
 [![DefaultDimension5-1SourceofMainAccountOnPO.png](./media/DefaultDimension5-1SourceofMainAccountOnPO.png)](./media/DefaultDimension5-1SourceofMainAccountOnPO.png) 
 [![DefaultDimension5-1SourceOfMAonPO2.png](./media/DefaultDimension5-1SourceOfMAonPO2.png)](./media/DefaultDimension5-1SourceOfMAonPO2.png) 
 **Figure 2: Source of a default (main) account for the item on the purchase order line**
-
-![](media/104bc96cf18b1685e0f581625a22ebcf.png)
 
 ![SQL query](./media/DefaultDimension5-3SQLDefaultSource.png "SQL query")
 ![Results showing default account source](./media/DefaultDimension5-3SQLResultDefaultSource.png "Results showing default account source")
