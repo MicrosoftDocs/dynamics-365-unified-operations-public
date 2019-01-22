@@ -66,7 +66,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
     ![Old dashboard](media/prePU20-dashboard-cropped.png  "Old dashboard")
   
-    The following image shows how the workspace cards appear in Platform update 20 and later:
+    The following image shows how workspace cards appear in Platform update 20 and later:
 
     ![New dashboard](media/postPU20-dashboard-cropped.png  "New dashboard")
 
