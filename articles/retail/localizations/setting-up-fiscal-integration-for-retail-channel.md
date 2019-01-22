@@ -36,7 +36,7 @@ This topic is a setup guide explaining the required settings of the Fiscal integ
 Users can perform the following tasks. 
 - Configure fiscal connectors, which are fiscal devices or services used for fiscal registration purposes like saving, digital signatures, and secured submission of fiscal data.
 - Configure the document provider, which defines an output method and an algorithm of fiscal document generation.
-- Configure the fiscal registration process, which is defines a sequence of steps and a group of connectors used on each step.
+- Configure the fiscal registration process, which defines a sequence of steps, and a group of connectors used on each step.
 - Assign fiscal registration processes to POS functionality profiles.
 - Assign connector technical profiles to hardware profiles.
 
