@@ -67,6 +67,27 @@ The following scenarios are covered by the fiscal printer integration sample for
 	- Postpone fiscal registration.
     - Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
 
+### Default data mapping
+  - VAT rates mapping:
+   
+     *0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00*
+
+  - Tender type mapping:
+
+     *0 : 0 ;  1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
+
+### Handling gift cards
+  - Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from a fiscal receipt.
+  - Do not print a fiscal receipt if it has sales lines marked as gift cards only.
+  - Deduct total amount of gift cards issued or re-charged in a transaction from payment lines. 
+  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction.
+  - Payment by gift card is considered as a regular payment.
+
+### Handling customer order deposits
+  - Do not print a fiscal receipt if a customer order deposit or a customer order deposit refund only.
+  - Display an amount of previously paid deposit in a fiscal receipt for customer order pickup.
+  - Deduct customer order deposit amount from payment lines when a hybrid customer order is created.
+  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction for hybrid customer order.
 ## Set up Retail for Poland
 
 ### Enabling extensions
