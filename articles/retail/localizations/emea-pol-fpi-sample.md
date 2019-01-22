@@ -47,7 +47,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 	- Capturing a response from the fiscal printer and storing in Channel DB
 	- Taxes:
 	  - Mapping to fiscal printer's tax codes (departments)
-	  - Transfering mapped tax data to a fiscal printer
+	  - Transferring mapped tax data to a fiscal printer
     - Payments:
 		- Mapping to fiscal printer's methods of payment
 	    - Printing in a fiscal receipt
@@ -145,7 +145,7 @@ The purpose of the extension (Document provider) is to generate printer-specific
 
 Commerce runtime extension: **Commerce.Runtime.DocumentProvider.PosnetSample.DocumentProviderPosnetProtocol**. This extension generates the set of printer-specific commands defined by POSNET specification 19-3678 in JSON format.
 
-For more details about the the fiscal integration solution design, see [Solution design for local fiscal devices](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#solution-design-for-local-fiscal-devices).
+For more details about the fiscal integration solution design, see [Solution design for local fiscal devices](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#solution-design-for-local-fiscal-devices).
 
 ### Request handler
 	
