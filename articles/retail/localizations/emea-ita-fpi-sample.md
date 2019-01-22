@@ -45,7 +45,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 	- Capturing a response from the fiscal printer and storing in Channel DB
 	- Taxes:
 	  - Mapping to fiscal printer's tax codes (departments)
-	  - Transfering mapped tax data to a fiscal printer
+	  - Transferring mapped tax data to a fiscal printer
 	  Printing in a fiscal receipt
     - Payments:
 		- Mapping to fiscal printer's methods of payment
@@ -66,6 +66,28 @@ The following scenarios are covered by the fiscal printer integration sample for
 	- Retry fiscal registration when it's possible: printer not connected/not ready/not responding, printer out of paper, paper jam, etc.
 	- Postpone fiscal registration.
     - Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
+
+### Default data mapping
+  - VAT rates mapping:
+   
+     *1 : 21.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
+
+  - Tender type mapping:
+
+     *1 : 0 ;  2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
+
+### Handling gift cards
+  - Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from a fiscal receipt.
+  - Do not print a fiscal receipt if it has sales lines marked as gift cards only.
+  - Deduct total amount of gift cards issued or re-charged in a transaction from payment lines. 
+  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction.
+  - Payment by gift card is considered as a regular payment.
+
+### Handling customer order deposits
+  - Do not print a fiscal receipt if a customer order deposit or a customer order deposit refund only.
+  - Display an amount of previously paid deposit in a fiscal receipt for customer order pickup.
+  - Deduct customer order deposit amount from payment lines when a hybrid customer order is created.
+  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction for hybrid customer order.
 
 ## Set up Retail for Italy
 
@@ -134,7 +156,7 @@ The purpose of the extension (Document provider) is to generate printer-specific
 
 Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**. 
 
-For more details about the the fiscal integration solution design, see [Solution design for local fiscal devices](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#solution-design-for-local-fiscal-devices).
+For more details about the fiscal integration solution design, see [Solution design for local fiscal devices](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#solution-design-for-local-fiscal-devices).
 
 ### Request handler
 	
@@ -178,7 +200,7 @@ The configuration file is found in **Configuration** folder of the extension pro
 
 ## Limitations of the sample
 
-  - The fiscal printer supports the scenarios with salex tax included in price only. So, the parameter **Price include sales tax** must be set to **Yes** both for retail stores and customers.
+  - The fiscal printer supports the scenarios with sales tax included in price only. So, the parameter **Price include sales tax** must be set to **Yes** both for retail stores and customers.
   - Daily reports (fiscal X, fiscal Z) are printed using the format embedded in the fiscal printer firmware.
   - Mixed transactions are not supported by the fiscal printer. The parameter **Prohibit mixing sales and returns in one receipt** should be set to **Yes** in POS functionality profiles.
-  - The sample supports integration with the fiscal prtinter working in the data transfer fiscal printer mode only also called **RT mode (Registratore Telematico)**. 
+  - The sample supports integration with the fiscal printer working in the data transfer fiscal printer mode only also called **RT mode (Registratore Telematico)**. 
