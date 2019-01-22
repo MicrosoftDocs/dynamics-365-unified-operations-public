@@ -60,7 +60,7 @@ Before using the fiscal integration functionality, the following settings should
 
 2. Upload configurations of two components included in the fiscal integration sample: a fiscal connector and a fiscal document provider.
 
-   Fiscal document providers are responsible for generating documents representing events and transactions registerted on POS, that are the object of the fiscal registration, in a format supported by a specific fiscal device or fical service. For example, a fiscal document provider generates a fiscal receipt in XML format.
+   Fiscal document providers are responsible for generating documents representing events and transactions registered on POS, that are the object of the fiscal registration, in a format supported by a specific fiscal device or fiscal service. For example, a fiscal document provider generates a fiscal receipt in XML format.
 
    Fiscal connectors are responsible for communication with fiscal devices and services. For example, a fiscal connector sends a fiscal receipt in XML-format created by a fiscal document provider to a fiscal printer.
 
@@ -68,7 +68,7 @@ Before using the fiscal integration functionality, the following settings should
 
   - Load an XML configuration on the **Fiscal connectors** page (**Retail > Channel setup > Fiscal integration > Fiscal connectors**) for each device or service that you plan to use for fiscal integration purposes. 
   
-     By clicking button **View**, you may view all functional and technical profiles related to the current fiscal connetor.
+     By clicking button **View**, you may view all functional and technical profiles related to the current fiscal connector.
 
   -  Load an XML configuration on the **Fiscal document providers** page (**Retail > Channel setup > Fiscal integration > Fiscal document providers**) for each device or service that you plan to use.
  
@@ -101,7 +101,7 @@ Before using the fiscal integration functionality, the following settings should
     - Select a connector type: 
         - **Local** - select this type for devices connected to a hardware station.
       
-	Parameters on tabs **Device** and **Settings** could be changed in a connector technical profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration. While loading a new version of an XML configuration, user gets an infolog-message notifying if the current fiscal connector or fiscal document provider is already in use. This procedure do not override manual changes made in connector functional profiles and connector technical profiles earlier. In order to apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page or the **Connector technical profiles** page.
+	Parameters on tabs **Device** and **Settings** could be changed in a connector technical profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration. While loading a new version of an XML configuration, user gets an Infolog-message notifying if the current fiscal connector or fiscal document provider is already in use. This procedure does not override manual changes made in connector functional profiles and connector technical profiles earlier. To apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page or the **Connector technical profiles** page.
 
 4.  Create **Fiscal connector groups**.
 
@@ -125,7 +125,7 @@ Before using the fiscal integration functionality, the following settings should
   -  Assign fiscal registration process to POS functionality profiles on the **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** page.
      - Click **Edit** and select a **Process number** on the **Fiscal registration process** tab.
 
-  - Assign connector technical profiles with the connector type **Local** to hardware profiles on the **Retail > Channel setup > POS setup > POS profiles > Hardware profiles** page.
+  - Assign connector technical profiles to hardware profiles on the Retail > Channel setup > POS setup > POS profiles > Hardware profiles page.
     - Click **Edit** and add a line on the **Fiscal peripherals** tab, select a connector technical profile in the field **Profile number**.
 
      >[!NOTE]
@@ -142,7 +142,7 @@ Before using the fiscal integration functionality, the following settings should
 
 ## Setting up a fiscal text for discounts
  
- In some cases it's required to print a special text in a fiscal receipt if a discount was applied. You can set up a fiscal text for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**).  
+ In some cases, it's required to print a special text in a fiscal receipt if a discount was applied. You can set up a fiscal text for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**).  
 
   - For manual discounts applied on POS a fiscal text should be defined for the Info code or Info code group specified as the **Product discount** info code in the POS functionality profile. You can find more details regarding info codes in the topic [Info codes and info code groups](../info-codes-retail).
     - Click button **Text for fiscal receipt** on the **Fiscal connector groups** page.
@@ -150,7 +150,7 @@ Before using the fiscal integration functionality, the following settings should
     - Select the **Info code number**.
     - Select the **Subcode number** if it's required for the selected info code.
     - Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
-    - Set the parameter **Print user input on fiscal receipt** to **Yes** if order to override the text in a fiscal receipt with inforamtion entered by user on POS manually. this options applies to the info codes with Input type **Text** only.
+    - Set the parameter **Print user input on fiscal receipt** to **Yes** if order to override the text in a fiscal receipt with information entered by user on POS manually. This option applies to the info codes with Input type **Text** only.
     
     >[!NOTE]
      > You can specify a fiscal text for several info codes to support such scenarios as using of info code groups, linked info codes and triggered info codes. In result a fiscal receipt will contain a fiscal text from all info codes linked with a transaction line where the discount was applied. 
@@ -165,7 +165,7 @@ Before using the fiscal integration functionality, the following settings should
 
 ## Error handling settings
 
-Fiscal register proccesses have some additional settings to define possible options when the fiscal registration has failed. For more information about the error handling feature in scope of the fiscal integration functionality, see [Error handling](fiscal-integration-for-retail-channel#error-handling).
+Fiscal registration processes have some additional settings to define possible options when the fiscal registration has failed. For more information about the error handling feature in scope of the fiscal integration functionality, see [Error handling](fiscal-integration-for-retail-channel#error-handling).
 
 1. On the page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) you can activate the following parameters for each registration process step:
 
@@ -194,7 +194,7 @@ Fiscal register proccesses have some additional settings to define possible opti
      
 ## Set up running fiscal X/Z reports from POS
 
-In order to enable running running fiscal X/Z reports from POS, new buttons should be added to a POS layout.
+To enable running fiscal X/Z reports from POS, new buttons should be added to a POS layout.
   - Open the **Button grids** page in Retail headquarters.
   - Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
     - Select the layout that you are going to update. 
