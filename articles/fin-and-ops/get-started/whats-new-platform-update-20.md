@@ -64,41 +64,41 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
     The following image shows how workspce cards appeared on the dashboard before Platform Update 20:
 
-    [![Old dashboard](media/prePU20-dashboard-cropped.png  "Old dashboard")](media/prePU20-dashboard.png#lightbox)
+    [![Old dashboard](media/prePU20-dashboard-cropped.png  "Old dashboard")]
   
     The following image shows how the workspace cards appear in Platform Update 20 and later:
 
-    [![New dashboard](media/postPU20-dashboard-cropped.png  "New dashboard")](media/postPU20-dashboard.png#lightbox)
+    [![New dashboard](media/postPU20-dashboard-cropped.png  "New dashboard")]
 
 -  **Action pane** - Action panes no longer display with a theme-inspired background color; instead, the Action pane has a gray background color. This was done not only to align with Fluent, but also to address some usability issues where users were not associating the Action pane with the rest of the page because of the stark difference in background color.
 
     The following image shows how the Action pane appeared before Platform Update 20:
 
-    [![Old details page](media/prePU20-customers-actionpane.png  "Old details page")](media/prePU20-customerDetails.png#lightbox) 
+    [![Old details page](media/prePU20-customers-actionpane.png  "Old details page")]
 
     The following image shows how the Action pane appears in Platform Update 20 and later:
 
-    [![Newd details page](media/postPU20-customers-actionpane.png  "New details page")](media/postPU20-customerDetails.png#lightbox)
+    [![Newd details page](media/postPU20-customers-actionpane.png  "New details page")]
 
 -  **Filter pane** - The Filter pane has been completely restyled with a lighter background color, a pill-like appearance to filter fields, and repositioning of the "Add a filter field" button to the top of the pane.
 
     The following image shows how the Filter pane appeared before Platform Update 20:
 
-    [![Old list page](media/prePU20-customers-cropped.png  "Old list page")](media/prePU20-customers.png#lightbox)  
+    [![Old list page](media/prePU20-customers-cropped.png  "Old list page")] 
 
     The following image shows how the Filter pane appears in Platform Update 20 and later:
 
-    [![New list page](media/postPU20-customers-cropped.png  "New list page")](media/postPU20-customers.png#lightbox)
+    [![New list page](media/postPU20-customers-cropped.png  "New list page")]
 
 -  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooed icon on the right.  
 
     The following image shows how the FactBox pane appeared before Platform Update 20:
 
-    [![Old Factbox pane](media/prePU20-expandedFactBox-cropped.png  "Old FactBox pane")](media/prePU20-expandedFactBox.png#lightbox)
+    [![Old Factbox pane](media/prePU20-expandedFactBox-cropped.png  "Old FactBox pane")]
   
     The following image shows how the FactBox pane appears in Platform Update 20 and later:  
 
-    [![New FactBox pane](media/postPU20-expandedFactBox-croppd.png  "New FactBox pane")](media/postPU20-expandedFactBox.png#lightbox)
+    [![New FactBox pane](media/postPU20-expandedFactBox-croppd.png  "New FactBox pane")]
 
 
 ## Adding and removing columns in a grid is easier
