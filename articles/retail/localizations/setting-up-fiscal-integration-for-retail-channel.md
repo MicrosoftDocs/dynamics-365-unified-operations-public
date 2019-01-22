@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a setup guide explaining the required settings of the Fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. For more information about the fiscal integration, see [Fiscal integration functionality](fiscal-integration-functionality.md#fiscal-integration-functionality).
+This topic is a setup guide explaining the required settings of the Fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channel](fiscal-integration-for-retail-channel).
 
 Users can perform the following tasks. 
 - Configure fiscal connectors, which are fiscal devices or services used for fiscal registration purposes like saving, digital signatures, and secured submission of fiscal data.
@@ -64,7 +64,7 @@ Before using the fiscal integration functionality, the following settings should
 
    Fiscal connectors are responsible for communication with fiscal devices and services. For example, a fiscal connector sends a fiscal receipt in XML-format created by a fiscal document provider to a fiscal printer.
 
-   For more details about fiscal integration components, see [Components of fiscal integration samples](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#components-of-fiscal-integration-samples).
+   For more details about fiscal integration components, see [Components of fiscal integration sample](fiscal-integration-for-retail-channel#components-of-fiscal-integration-sample).
 
   - Load an XML configuration on the **Fiscal connectors** page (**Retail > Channel setup > Fiscal integration > Fiscal connectors**) for each device or service that you plan to use for fiscal integration purposes. 
   
@@ -144,7 +144,7 @@ Before using the fiscal integration functionality, the following settings should
  
  In some cases it's required to print a special text in a fiscal receipt if a discount was applied. You can set up a fiscal text for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**).  
 
-  - For manual discounts applied on POS a fiscal text should be defined for the Info code or Info code group specified as the **Product discount** info code in the POS functionality profile. You can find more details regarding info codes in the topic [Info codes and info code groups](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/info-codes-retail).
+  - For manual discounts applied on POS a fiscal text should be defined for the Info code or Info code group specified as the **Product discount** info code in the POS functionality profile. You can find more details regarding info codes in the topic [Info codes and info code groups](../info-codes-retail).
     - Click button **Text for fiscal receipt** on the **Fiscal connector groups** page.
     - On tab **Info codes** click button **Add** and select an Info code or Info code group.
     - Select the **Info code number**.
@@ -155,7 +155,7 @@ Before using the fiscal integration functionality, the following settings should
     >[!NOTE]
      > You can specify a fiscal text for several info codes to support such scenarios as using of info code groups, linked info codes and triggered info codes. In result a fiscal receipt will contain a fiscal text from all info codes linked with a transaction line where the discount was applied. 
 
-    - For channel-specific discounts a fiscal text should be defined for the Discount ID. You can find more details regarding discounts in these topics: [Retail discounts](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-discounts-overview), [Define channel-specific discounts](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/define-channel-specific-discounts).
+    - For channel-specific discounts a fiscal text should be defined for the Discount ID. You can find more details regarding discounts in these topics: [Retail discounts](../retail-discounts-overview), [Define channel-specific discounts](../define-channel-specific-discounts).
       - Click button **Text for fiscal receipt** on the **Fiscal connector groups** page.
       - On tab **Discounts** click button **Add** and select a Discount ID.
       - Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
@@ -165,7 +165,7 @@ Before using the fiscal integration functionality, the following settings should
 
 ## Error handling settings
 
-Fiscal register proccesses have some additional settings to define possible options when the fiscal registration has failed. For more information about the error handling feature in scope of the fiscal integration functionality, see [Error handling](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#error-handling).
+Fiscal register proccesses have some additional settings to define possible options when the fiscal registration has failed. For more information about the error handling feature in scope of the fiscal integration functionality, see [Error handling](fiscal-integration-for-retail-channel#error-handling).
 
 1. On the page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) you can activate the following parameters for each registration process step:
 
@@ -176,7 +176,7 @@ Fiscal register proccesses have some additional settings to define possible opti
 
   - Open the **Permission groups** page (**Retail > Employees > Permission groups**) page, and enable the permission **Allow skip or mark as registered**.
 
-3. Options **Skip** and **Mark as registered** in the error handling dialog allow users to enter an additional information on POS when the fiscal registration has failed. The info codes **Skip** and **Mark as registered** should be specified on a fiscal connector group to make is possible entering additional details on POS and saving this information as an Info code transaction linked with a fiscal transaction. You can find more details regarding info codes in the topic [Info codes and info code groups](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/info-codes-retail).
+3. Options **Skip** and **Mark as registered** in the error handling dialog allow users to enter an additional information on POS when the fiscal registration has failed. The info codes **Skip** and **Mark as registered** should be specified on a fiscal connector group to make is possible entering additional details on POS and saving this information as an Info code transaction linked with a fiscal transaction. You can find more details regarding info codes in the topic [Info codes and info code groups](../info-codes-retail).
 
     >[!NOTE]
      > The trigger function with the value *Product* is not supported for the info codes, that are used as **Skip** and **Mark as registered** in fiscal connector groups.
@@ -196,7 +196,7 @@ Fiscal register proccesses have some additional settings to define possible opti
 
 In order to enable running running fiscal X/Z reports from POS, new buttons should be added to a POS layout.
   - Open the **Button grids** page in Retail headquarters.
-  - Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+  - Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
     - Select the layout that you are going to update. 
     - Add a new button and set the button property **Print fiscal X**.
     - Add another button and set the button property **Print fiscal Z**.
