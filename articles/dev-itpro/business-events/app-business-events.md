@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 2019-02-28
 # Application business events
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
+[!include[preview-banner](../includes/preview-banner.md)]
 
 Procure to pay
 --------------
