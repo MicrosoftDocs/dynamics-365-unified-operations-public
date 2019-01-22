@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Omni-Channel Advanced Auto Charges
+title: Omni-channel advanced auto charges
 description: This topic describes capabilities for managing additional order charges for Retail channel orders using advanced auto charges features.
 author: hhaines
 manager: annbe
