@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 8.1.3
 # Process collection letters
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../../includes/preview-banner.md)]
 
 This procedure shows how to create, print, and post collection letters. This task uses the USMF demo company.
 
