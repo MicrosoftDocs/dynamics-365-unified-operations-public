@@ -145,7 +145,7 @@ The following table shows the set of Dynamics 365 payment features that the Dyna
 
 ## Sign up with Adyen
 
-To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account that you can use for the Dynamics 365 Payment Connector for Adyen, visit the [Adyen website](https://www.adyen.com/partners/dynamics).
+To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account that you can use for the Dynamics 365 Payment Connector for Adyen, visit the [Adyen website](https://www.adyen.com/partners).
 
 If you prefer that Adyen contact you directly, send an email to <partnerships@adyen.com>. In the subject line of the email, include the term "Microsoft Dynamics connector." In the body of the email, be sure to include enough information so that the inquiry can be routed correctly:
 

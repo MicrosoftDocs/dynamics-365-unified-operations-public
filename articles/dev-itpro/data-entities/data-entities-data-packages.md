@@ -291,7 +291,9 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
-INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+- INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+- After running the SQL statement, ensure that the following is set in the web.config file.
+        <add key="DataAccess.FlightingServiceCatalogID" value="12719367" />
 
 The parameter descriptions are below.
  - <Flight name> is the name of the flight that must be enabled or disabled.
