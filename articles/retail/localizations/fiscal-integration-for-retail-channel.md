@@ -64,12 +64,19 @@ The example below demonstrates a common execution flow of the fiscal registratio
 Fiscal registration flow starts for an event in POS (e.g. a finalization of a sales transaction) and implements the following sequence of steps:
 
 1. POS requests a fiscal document from CRT.
-2. CRT identifies if the current event requires fiscal registration. The subscription of events and transactions to fiscal registration is defined in the code of CRT extension.
-3. CRT finds a fiscal connector to be used by matching connector functional profiles that are included in the connector group specified on the current step of the fiscal registration process with the connector technical profile assigned to the hardware profile of the hardware station which POS is paired to.
-4. CRT runs the fiscal document provider that generates a fiscal document (e.g. an XML document) that represents the retail transaction or event. At this step, some transaction/event data such as taxes and payments are transformed using the **Data mapping** settings from the fiscal document provider configuration. 
+
+2. CRT identifies if the current event requires fiscal registration.
+
+3. CRT finds a fiscal connector to be used for the fiscal registration.
+
+4. RT runs the fiscal document provider that generates a fiscal document (e.g. an XML document) that represents the retail transaction or event.
+
 5. POS sends the fiscal document prepared by CRT to HWS.
-6. HWS runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device. Depending on how the communication is handled, the fiscal document can be sent to the device as-is or can be parsed and transformed into a sequence of commands of the device API. The fiscal connector also receives a response from the fiscal devices and sends it to POS.
-7. POS analyzes the  response from the fiscal device in order to decide if the fiscal registration has passed successfully or not. POS also sends the response to CRT.
+
+6. HWS runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
+
+7. POS analyzes the response from the fiscal device or service to decide if the fiscal registration has passed successfully or not.
+
 8. CRT saves the response in the Channel DB.
 
 ![alt text](media/emea-fiscal-integration-solution.png "Solution schema")
