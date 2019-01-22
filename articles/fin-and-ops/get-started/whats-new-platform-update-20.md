@@ -98,7 +98,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
   
     The following image shows how the FactBox pane appears in Platform Update 20 and later:  
 
-    ![New FactBox pane](media/postPU20-expandedFactBox-croppd.png  "New FactBox pane")
+    ![New FactBox pane](media/postPU20-expandedFactBox-cropped.png  "New FactBox pane")
 
 
 ## Adding and removing columns in a grid is easier
