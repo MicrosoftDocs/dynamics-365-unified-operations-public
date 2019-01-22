@@ -43,11 +43,15 @@ To support other scenarios not supported by a fiscal integration sample, integra
 
 ## Components of fiscal integration sample
 
-The fiscal registration is performed in accordance with parameters of the fiscal registration process assigned to the current POS functionality profile. Some parameters could be specified on the fiscal registration process, some of them are related to the fiscal registration entities that are a part of the fiscal registration process (Fiscal document provider, Fiscal connector and its profiles, Fiscal connector group), and some of them are defined in configurations of the Fiscal document provider and of the Fiscal connector. Part of the logic related to the fiscal registration is hard-coded in extensions of Retail components. All these parts together is a fiscal integration sample dedicated to support fiscal integration country for a specific country, and it works with a specific fiscal device model or a fiscal service. For more details about setting up a fiscal registration process, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
+The fiscal registration is performed in accordance with parameters of the fiscal registration process assigned to the current POS functionality profile. Some parameters could be specified on the fiscal registration process, some of them are related to the fiscal registration entities that are a part of the fiscal registration process (Fiscal document provider, Fiscal connector and its profiles, Fiscal connector group). Default parameres of the Fiscal connector and the Fiscal document provider are defined in their configurations. Part of the logic related to the fiscal registration is predefined in extensions of Retail components. 
 
-The example below demonstrates a common execution flow of integration with a fiscal device or service connected to the Hardware station. A fiscal integration sample for such a fiscal device or service consists of the following components:
+All these parts together is a fiscal integration sample dedicated to support fiscal integration requirements for a specific country, and it works with a specific fiscal device model or a fiscal service. For more details about setting up a fiscal registration process, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
-  - **POS** orchestrates the registration process. A fiscal integration sample may contain *POS extension* if the standard functionality was extended to support some specific requirements on POS.
+The example below demonstrates a common execution flow of the fiscal registration performed on a fiscal device or service connected to the Hardware station. 
+
+  - **POS** orchestrates the registration process. 
+  
+  A fiscal integration sample for a local fiscal device or service consists of the following components:
 
   - **Commerce runtime extension** (CRT extension) generates fiscal documents for retail transactions and events in the format supported by the fiscal device or service.
 
