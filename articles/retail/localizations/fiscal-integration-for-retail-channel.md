@@ -43,29 +43,19 @@ To support other scenarios not supported by a fiscal integration sample, integra
 
 ## Components of fiscal integration sample
 
-The example below demonstrates a common execution flow of integration with a fiscal device.
+The fiscal registration is performed in accordance with parameters of the fiscal registration process assigned to the current POS functionality profile. Some parameters could be specified on the fiscal registration process, some of them are related to the fiscal registration entities that are a part of the fiscal registration process (Fiscal document provider, Fiscal connector and its profiles, Fiscal connector group), and some of them are defined in configurations of the Fiscal document provider and of the Fiscal connector. Part of the logic related to the fiscal registration is hard-coded in extensions of Retail components. All these parts together is a fiscal integration sample dedicated to support fiscal integration country for a specific country, and it works with a specific fiscal device model or a fiscal service. For more details about setting up a fiscal registration process, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
-A fiscal integration sample includes two components:
+The example below demonstrates a common execution flow of integration with a fiscal device or service connected to the Hardware station. A fiscal integration sample for such a fiscal device or service consists of the following components:
 
-  - **Commerce runtime extension** (CRT extension) generates fiscal documents for retail transactions and events in the format supported by the fiscal device, parses responses from the fiscal device and stores them in the Channel DB. This component is commonly referred to as  **Fiscal document provider**
+  - **POS** orchestrates the registration process. A fiscal integration sample may contain *POS extension* if the standard functionality was extended to support some specific requirements on POS.
 
-  - **Hardware station extension** (HWS extension) initializes the fiscal device, sends requests and direct commands to it, and receives responses from the fiscal device. This component is commonly referred to as **Fiscal connector**. 
+  - **Commerce runtime extension** (CRT extension) generates fiscal documents for retail transactions and events in the format supported by the fiscal device or service.
 
-A fiscal integration sample contains the CRT and HWS extensions, as well as the configurations of the fiscal document provider and the fiscal connector.
+  - **Hardware station extension** (HWS extension) is responsible for communication with the fiscal device or service. 
 
-  - **Document Provider configuration** defines an output method and a format of fiscal documents. This configuration also contains data mapping for taxes and payment methods in order to make data from Retail POS compatible with the values predefined in the fiscal device firmware. 
+  - **Document Provider configuration** defines an output method and a format of fiscal documents.
 
-  - **Fiscal Connector configuration** is defines the physical communication with the specific fiscal device.
-
-For more details about uploading Fiscal document provider and Fiscal connector configurations and changing their parameters, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
-
-### Fiscal registration flow
-
-Fiscal registration flow involves the following components of the Retail solution:
-
-- *POS* orchestrates the registration process;
-- *Commerce runtime* generates a fiscal document;
-- *Hardware station* communicates with the fiscal device.
+  - **Fiscal Connector configuration** defines a method of communication with the fiscal device or service, and its parameters.
 
 Fiscal registration flow starts for an event in POS (e.g. a finalization of a sales transaction) and implements the following sequence of steps:
 
