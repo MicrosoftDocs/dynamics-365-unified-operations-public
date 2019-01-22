@@ -43,7 +43,7 @@ To support other scenarios not supported by a fiscal integration sample, integra
 
 ## Components of fiscal integration sample
 
-The fiscal registration is performed in accordance with parameters of the fiscal registration process assigned to the current POS functionality profile. Some parameters could be specified on the fiscal registration process, some of them are related to the fiscal registration entities that are a part of the fiscal registration process (Fiscal document provider, Fiscal connector and its profiles, Fiscal connector group). Default parameteres of the Fiscal connector and the Fiscal document provider are defined in their configurations. Part of the logic related to the fiscal registration is predefined in extensions of Retail components. 
+The fiscal registration is performed in accordance with parameters of the fiscal registration process assigned to the current POS functionality profile. Some parameters could be specified on the fiscal registration process, some of them are related to the fiscal registration entities that are a part of the fiscal registration process (Fiscal document provider, Fiscal connector and its profiles, Fiscal connector group). Default parameters of the Fiscal connector and the Fiscal document provider are defined in their configurations. Part of the logic related to the fiscal registration is predefined in extensions of Retail components. 
 
 All these parts together represent a fiscal integration sample dedicated to support fiscal integration requirements for a specific country, and it works with a specific fiscal device model or a fiscal service. For more details about setting up a fiscal registration process, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
@@ -82,7 +82,7 @@ The fiscal integration framework provides the following options to handle failur
 
   - **Cancel**: this option allows postponing the fiscal registration of the current transaction or event after it fails. After the registration is postponed, the operator may continue working on POS and complete any operation which the fiscal registration is not required for. When any event that requires the fiscal registration occurs in POS (for example, a new transaction is opened), the error handling dialog is displayed automatically to notify the operator that the previous transaction was not registered properly and to provide the error handling options.
 
-  - **Skip**: this option can be used when it is possible to omit the fiscal registration under some specific conditions and continue regular operations on POS. For example, a sales transaction which the fiscal regitration failed for may be registered in a special paper jounal.
+  - **Skip**: this option can be used when it is possible to omit the fiscal registration under some specific conditions and continue regular operations on POS. For example, a sales transaction which the fiscal registration failed for may be registered in a special paper journal.
 
   - **Mark as registered**: this option can be used when the transaction was actually registered in the fiscal device (e.g. a fiscal receipt was printed), but a failure occured when saving the fiscal response to the Channel DB. 
 
