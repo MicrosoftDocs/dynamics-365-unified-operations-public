@@ -70,7 +70,7 @@ Platform releases expire at the end of the month of their software lifecycle.
 
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
-| [Continuous update releases](on-prem-version-update-policy.md#continuous-update-releases)| - | - | - | - |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| - | - | - | - |
 |  Platform update 20 | 7.0.5030  | November 2018  | February 2019 | December 2027     |
 |  Platform update 15 | 7.0.4841  | June 2018  | September 2018 | December 2027     |
 |  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
