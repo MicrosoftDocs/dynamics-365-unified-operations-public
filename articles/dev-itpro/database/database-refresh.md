@@ -124,6 +124,8 @@ The database refresh process (self-service or via service request) cannot be com
 * Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
 * Apply this package to both the source and target environments to ensure they are both using the latest version.
 
+For instructions about how to determine the version you're using, watch the [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w) video.
+
 ### Incompatible application versions between source and target environments
 The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.  
 

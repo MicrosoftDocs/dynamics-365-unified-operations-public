@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 23 (January 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 01/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Platform 23
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 23. This version has a build number of 7.0.5126.
 
@@ -90,5 +88,8 @@ public void testIndexHintRegularTable()
 > [!NOTE]
 > Index hints should be used sparingly, and only when you can ensure that it causes more benefit than harm. With the new API, knowledgeable power developers are empowered to pass the right hints when needed. Power developers should use this new feature with caution. When in doubt, avoid using index hints.
 
-## Entity Store as a Data Lake
-In Platform update 23, you can select to use Entity Store as a Data Lake. When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store. For more information about how to access and use this functionality, see [Entity Store is a Data Lake](../../dev-itpro/data-entities/entity-store-data-lake.md)
+## Automated refresh of Entity store (opt-in)
+You can let the system manage Entity store refresh instead of scheduling the refresh yourself. When enabled, you can choose a refresh pattern (hourly, twice a day, daily, or weekly). When specified, the system keeps the entity store updated for the selected pattern. The system will also switch to the new update form, where you will be notified with a status and possible refresh issues.  
+
+## Entity store as a Data Lake (preview)
+In Platform update 23, you can select to use Entity store as a Data Lake. When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store. To preview and use this functionality, join the [Insider program](https://experience.dynamics.com/insider).

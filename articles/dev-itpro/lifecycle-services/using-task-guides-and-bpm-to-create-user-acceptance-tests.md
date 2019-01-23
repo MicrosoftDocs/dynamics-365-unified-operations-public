@@ -172,7 +172,7 @@ We recommend that you take advantage of Azure DevOps as it provides a rich set o
 
 The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. 
 
-Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
+Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md).
 
 Functional power users can automate the execution of their test cases using the **Regression Suite Automation Tool**. Download the tool and user manual from [here](https://www.microsoft.com/en-us/download/details.aspx?id=57357).
 

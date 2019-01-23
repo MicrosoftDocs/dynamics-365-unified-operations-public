@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from Azure SQL Database to SQL Serv
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 01/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -103,7 +103,7 @@ To help ensure the best performance, copy the \*.bacpac file to the local comput
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=2400
 ```
 
 Here is an explanation of the parameters:
@@ -202,6 +202,11 @@ To switch the environment and use the new database, first stop the following ser
 - Management Reporter 2012 Process Service
 
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
+
+To rename the database, use the following ALTER DATABASE command:
+```
+ALTER DATABASE [your database name] MODIFY NAME = [new database name];
+```
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 

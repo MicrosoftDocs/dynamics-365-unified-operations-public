@@ -2,7 +2,7 @@
 # required metadata
 
 title: Element designers
-description: This article reviews the element designers and explains how to use them.
+description: This topic reviews the element designers and explains how to use them.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article reviews the element designers and explains how to use them. The tools contain designers for each kind of element in the program. You use these designers when you create or modify elements.
+This topic reviews the element designers and explains how to use them. The tools contain designers for each kind of element in the program. You use these designers when you create or modify elements.
 
 ### Open an element designer
 
@@ -69,7 +69,7 @@ When you create or modify elements, you will often find that you must add or rem
 
 [![20\_DevoToolsConcept](./media/20_devotoolsconcept.png)](./media/20_devotoolsconcept.png) 
 
-To remove a node, right-click the new, and then click **Delete**. You can also perform other actions for a node. You rename a node, duplicate a node, or move the node up or down in the node list.
+To remove a node, right-click the node, and then click **Delete**. You can also perform other actions for a node. You rename a node, duplicate a node, or move the node up or down in the node list.
 
 ### Searching element nodes
 
