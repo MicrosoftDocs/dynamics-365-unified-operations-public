@@ -307,19 +307,19 @@
     href: ../supply-chain/inventory/quarantine-orders.md
   - name: Running average cost price
     href: ../supply-chain/cost-management/running-average-cost-price.md
-  - name: Tracking running average cost per inventory dimension
+  - name: Track running average cost per inventory dimension
     href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Human resources
   items:
   - name: Organize your workforce using departments, jobs, and positions
     href: ../talent/departments-jobs-positions.md
-  - name: Setting up the components of a job
+  - name: Set up the components of a job
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
-  - name: Overview of fiscal integration for Retail channel
+  - name: Fiscal integration overview for Retail channel
     href: localizations/fiscal-integration-for-retail-channel.md
-  - name: Setting up fiscal integration for Retail channel
+  - name: Set up fiscal integration for Retail channel
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
   - name: Eastern Europe
     items: 
