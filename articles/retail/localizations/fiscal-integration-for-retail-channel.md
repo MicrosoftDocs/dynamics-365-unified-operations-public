@@ -43,7 +43,7 @@ The fiscal integration functionality in Retail is a framework that provides a co
 
 To support other scenarios not supported by a fiscal integration sample, to integrate Retail POS with other fiscal device or service, or to cover requirements of other country or region, you need to extend an existing fiscal integration sample or create a new sample using an existing sample as an example.
 
-## Fiscal registration process and fiscal integration sample for a fiscal device
+## Fiscal registration process and fiscal integration sample for fiscal device
 
 A fiscal registration process in Retail POS may consist of one or more steps; each step involves fiscal registration of specific retail transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device connected to a Hardware station:
 
