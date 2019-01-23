@@ -53,9 +53,9 @@ A fiscal registration process in Retail POS may consist of one or more steps; ea
 A fiscal integration sample for a fiscal device contains the CRT and HWS extensions for a fiscal document provider and a fiscal connector respectively, as well as the component configurations:
 
   - **Fiscal document provider configuration** defines an output method and a format of fiscal documents. This configuration also contains data mapping for taxes and payment methods in order to make data from Retail POS compatible with the values predefined in the fiscal device firmware. 
-  - **Fiscal ponnector configuration** defines the physical communication with the specific fiscal device.
+  - **Fiscal connector configuration** defines the physical communication with the specific fiscal device.
 
-A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details on how to configure a fiscal registration process, uploade fiscal document provider and fiscal connector configurations, and changing their parameters, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
+A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details on how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and changing their parameters, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
 The example below demonstrates a common fiscal registration execution flow for a fiscal device. The flow starts with an event in POS (e.g. a finalization of a sales transaction) and implements the following sequence of steps:
 
