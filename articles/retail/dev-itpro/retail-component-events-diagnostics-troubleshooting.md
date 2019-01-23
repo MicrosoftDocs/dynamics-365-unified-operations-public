@@ -153,7 +153,7 @@ To access LCS Log Search, follow these steps.
 5.  On the **Environment details** page, click **Environment Monitoring**.
 6.  On the **Environment monitoring** page, click **View raw logs**.
 7.  On the **Log Search** page, select one of the following queries:
-    -   **Retail error events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Hardware Station
+    -   **Retail client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Hardware Station
     -   **All logs** query, which includes data from Retail Server, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service
 
 You can filter by the following criteria to refine your query:
