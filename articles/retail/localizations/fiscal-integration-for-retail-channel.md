@@ -107,13 +107,13 @@ A fiscal transaction stores the following details:
 
 ## Fiscal texts for discounts
 
-Some countries or regions have special requirements on additional texts that must be printed in fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality supports setting up a special text to be printed in a fiscal receipt after a discount line. A fiscal text may be configured for a discount; to support manual discounts, a fiscal text may be configured for the info code specified as the **Product discount** in the POS functionality profile. For more details about setting up fiscal texts for discounts, see [Setting up a fiscal text for discounts](setting-up-fiscal-integration-for-retail-channel#setting-up-fiscal-texts-for-discounts).
+Some countries or regions have special requirements on additional texts that must be printed in fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality supports setting up a special text to be printed in a fiscal receipt after a discount line. A fiscal text may be configured for a discount; to support manual discounts, a fiscal text may be configured for the info code specified as the **Product discount** in the POS functionality profile. For more details about setting up fiscal texts for discounts, see [Setting up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel#setting-up-fiscal-texts-for-discounts).
 
 ## Printing fiscal X and fiscal Z reports
 
 Fiscal integration functionality supports generating end-of-day statements specific for the integrated fiscal device or service:
 
-  - New buttons executing corresponding operations should be added to the POS screen layout. For more details, see [Setting up fiscal X/Z reports from POS](fiscal-integration-for-retail-channel#setting-up-fiscal-xz-reports-from-pos).
+  - New buttons executing corresponding operations should be added to the POS screen layout. For more details, see [Setting up fiscal X/Z reports from POS](setting-up-fiscal-integration-for-retail-channel#setting-up-fiscal-xz-reports-from-pos).
   - In the fiscal integration sample, these operations should be matched to the corresponding operations of the fiscal device.
   
 ## Fiscal integration samples in Retail SDK
