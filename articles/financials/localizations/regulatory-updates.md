@@ -40,10 +40,10 @@ For a list of the localizions that are supported for Dynamics 365 for Finance an
 
 |Planned release date|Release version|Country|Feature|
 |--------------------|---------------|-------|-------|
-|                    |   10.0.0      | Austria      |   CHANGES IN KAMMERUMLAGE 2019 (Purchase duty)    |
-|                    |   10.0.0      |   Brazil    |     SPED EFD CONTRIBUTIONS - LAYOUT  004 and 005  |
-|                    |   10.0.0      |    Malaysia     |MALAYSIA REPLACES GST WITH SST SALES & SERVICE TAX        |
-|                    |   10.0.0      |   China    |   INTEGRATION INTERFACE for GTS version 3.0     |
+|      March 2019          |   10.0.0      | Austria      |   CHANGES IN KAMMERUMLAGE 2019 (Purchase duty)    |
+|      March 2019          |   10.0.0      |   Brazil    |     SPED EFD CONTRIBUTIONS - LAYOUT  004 and 005  |
+|      March 2019          |   10.0.0      |    Malaysia     |MALAYSIA REPLACES GST WITH SST SALES & SERVICE TAX        |
+|                          |         |         |       |
 |                    |               |       |       |
 |                    |               |       |       |
 |                    |               |       |       |
