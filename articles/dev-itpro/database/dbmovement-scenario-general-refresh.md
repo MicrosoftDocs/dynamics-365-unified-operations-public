@@ -60,7 +60,7 @@ To perform this manually in LCS:
 The below sample code can be used in a Console App as shown, or modified to work with other services like Azure Functions which can be called on demand.  Before the sample below will work, please read [How to authenticate custom services](../data-entities/services-home-page.md) to setup your application registration.
 
 ```csharp
-[Serializable]
+    [Serializable]
     public class SysAddBroadcastMessageDataContract
     {
         public SysAddBroadcastMessageRequest request { get; set; }
