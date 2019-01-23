@@ -58,12 +58,12 @@ The following scenarios are covered by the fiscal printer integration sample for
 	- Printing fiscal receipts for customer order operations:
 	  - Fiscal receipt is not printed for a customer order deposit;
 	  - Printing a fiscal receipt for carry-out lines of a hybrid customer order;
-	  - Printing a fiscal receipt for the Puckup operation for a customer order;
+	  - Printing a fiscal receipt for the pickup operation for a customer order;
 	  - Printing a fiscal receipt for a return order.
 	- Printing barcode for the receipt number in a fiscal receipt.
 - End of day statements (fiscal X, fiscal Z reports).
 - Error handling, including the following options:
-	- Retry fiscal registration if it's possible; for example, if the fiscal printer is not connected/not ready/not responding, the printer is out of paper, there is a paper jam, etc;
+	- Retry fiscal registration if it's possible; for example, if the fiscal printer is not connected/not ready/not responding, the printer is out of paper, there is a paper jam, etc.;
 	- Postpone fiscal registration;
 	- Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
 
@@ -93,7 +93,7 @@ The fiscal printer integration sample implements the following rules in regard t
 
 The fiscal printer integration sample implements the following rules in regard to customer deposits and customer order deposits:
 
-- Do not print a fiscal receipt if a transaction is a a customer deposit;
+- Do not print a fiscal receipt if a transaction is a customer deposit;
 - Do not print a fiscal receipt if a transaction contains a customer order deposit or a customer order deposit refund only;
 - Print the amount of the previously paid deposit in a fiscal receipt for a customer order pickup operation;
 - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created;
@@ -166,7 +166,7 @@ The purpose of the extension (Document provider) is to generate printer-specific
 
 Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**. 
 
-For more details about the fiscal integration solution design, see [Solution design for local fiscal devices](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-sample-for-a-fiscal-device).
+For more details about the fiscal integration solution design, see [Fiscal registration process and fiscal integration sample for fiscal device](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-sample-for-fiscal-device).
 
 ### Request handler
 	
