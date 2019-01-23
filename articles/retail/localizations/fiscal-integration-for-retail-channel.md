@@ -100,24 +100,25 @@ Upon a successful fiscal registration of a transaction or event, a fiscal transa
 Fiscal transactions are transferred to Retail Headquarters by the *P-job* together with retail transactions. Open the **Retail store transactions** page to view the fiscal transactions linked to retail transactions on the FastTab **Fiscal transactions**. 
 A fiscal transaction stores the following details:
 
-- Fiscal registration process details (Process, Connector group, Connector, etc.) It also stores a serial number of the fiscal device in the field **Register number**, if it's included in the fiscal response;
+- Fiscal registration process details (Process, Connector group, Connector, etc.) It also stores the serial number of the fiscal device in the field **Register number**, if it's included in the fiscal response;
 - Status of the fiscal registration: *Completed* for successful registration, *Skipped* if the **Skip** option was selected for failed registration, *Marked as registered* if the operator selected the **Mark as registered** option;
 - Info code transactions related to a selected fiscal transaction. 
   - Select a fiscal transaction with the status *Skipped* or *Marked as registered*, and click the button **Info code transactions** on the FastTab **Fiscal transactions** to view the info code transactions.
 
-## Fiscal text for discounts
+## Fiscal texts for discounts
 
-Some countries have specific requirements on the additional text that must be printed in fiscal receipts when the discount is applied. At the same time most of fiscal devices have a limitation on a number of discounts that might be applied to the same transaction line.
-
-The fiscal integration handles all discounts applied to a transaction line as one cumulative product discount. It also supports setting up a special text to be printed in fiscal receipt after discount line. A fiscal text may be specified for Info codes and Discounts, so it's possible to print a special text for any channel-specific discount as well as for any type of manual discount applied on POS. If fiscal texts were set up for several discounts, a text line in a fiscal receipt would concatenate fiscal text from all applied discounts. For more details about setting up a fiscal text for discounts, see [Setting up a fiscal text for discounts](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#setting-up-a-fiscal-text-for-discounts).
+Some countries or regions have special requirements on additional texts that must be printed in fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality supports setting up a special text to be printed in a fiscal receipt after a discount line. A fiscal text may be configured for a discount; to support manual discounts, a fiscal text may be configured for the info code specified as the **Product discount** in the POS functionality profile. For more details about setting up fiscal texts for discounts, see [Setting up a fiscal text for discounts](setting-up-fiscal-integration-for-retail-channel#setting-up-fiscal-texts-for-discounts).
 
 ## Printing fiscal X and fiscal Z reports
 
-There's a possibility in the fiscal integration framework to run daily / shift reports from POS. 
-  - New buttons **Print fiscal X** and **Print fiscal Z** should be added to a button grid. For more details, see [Set up running fiscal X/Z reports from POS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#set-up-running-fiscal-xz-reports-from-pos).
-  - In the fiscal integration sample these buttons should be matched with the direct commands to a fiscal device, which implements running a daily /shift report in the format supported by the fiscal device.
+Fiscal integration functionality supports generating end-of-day statements specific for the integrated fiscal device or service:
+
+  - New buttons executing corresponding operations should be added to the POS screen layout. For more details, see [Set up running fiscal X/Z reports from POS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#set-up-running-fiscal-xz-reports-from-pos).
+  - In the fiscal integration sample, these operations should be matched to the corresponding operations of the fiscal device.
   
 ## Fiscal integration samples in Retail SDK
+
+The following fiscal integration samples are currently available in the Retail SDK shipped with Retail:
 
   - [Fiscal printer integration sample for Italy](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/emea-ita-fpi-sample.md#fiscal-printer-integration-sample-for-italy).
   - [Fiscal printer integration sample for Poland](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/emea-pol-fpi-sample.md#fiscal-printer-integration-sample-for-poland).
