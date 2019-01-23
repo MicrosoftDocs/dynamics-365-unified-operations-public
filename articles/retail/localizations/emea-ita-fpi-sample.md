@@ -5,7 +5,7 @@ title: Fiscal printer integration sample for Italy
 description: This topic provides an overview of the fiscal integration sample for Italy.
 author: josaw
 manager: annbe
-ms.date: 11/01/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -35,33 +35,33 @@ ms.dyn365.ops.version: 8.1.1
 
 The Microsoft Dynamics 365 for Retail functionality for Italy includes a sample of integration of POS with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) to work with [Epson FP-90III Series](http://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) from Epson and enables the communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in form of source code and is part of the Retail SDK.
 
-Microsoft does not ship any hardware, software or documentation from Epson. Please contact [Epson Italia S.p.A](http://www.epson.it) for information on how to acquire the fiscal printer and operate it.
+Microsoft does not ship any hardware, software, or documentation from Epson. Please contact [Epson Italia S.p.A](http://www.epson.it) for information on how to acquire the fiscal printer and operate it.
  
-## Overview
+## Scenarios
 
 The following scenarios are covered by the fiscal printer integration sample for Italy:
   - Sales scenarios:
-    - Printing a fiscal receipt for cash and carry sales and returns
-	- Capturing a response from the fiscal printer and storing in Channel DB
-	- Taxes:
-	  - Mapping to fiscal printer's tax codes (departments)
-	  - Transferring mapped tax data to a fiscal printer
-	  Printing in a fiscal receipt
+    - Printing a fiscal receipt for cash and carry sales and returns.
+    - Capturing a response from the fiscal printer and storing in Channel DB.
+    - Taxes:
+	  - Mapping to fiscal printer's tax codes (departments).
+	  - Transferring mapped tax data to a fiscal printer.
+	  - Printing in a fiscal receipt.
     - Payments:
-		- Mapping to fiscal printer's methods of payment
-	    - Printing in a fiscal receipt
-		- Printing change information
-	- Printing line discounts
+	  - Mapping to fiscal printer's methods of payment.
+	  - Printing in a fiscal receipt.
+	  - Printing change information.
+	  - Printing line discounts.
     - Gift cards:
-	  - Excluding an issued/re-charged gift card line from a fiscal receipt
-	  - Printing a payment with a gift card as a regular method of payment
-	- Printing fiscal receipts for customer orders order operations:
-	  - Excluding customer order deposit
-	  - Carry-out lines of a hybrid customer order
-	  - Customer order pickup
-	  - Return order
-	- Printing barcode in fiscal receipts
-  - End of day statements (fiscal X, fiscal Z reports)
+	  - Excluding an issued/re-charged gift card line from a fiscal receipt.
+	  - Printing a payment with a gift card as a regular method of payment.
+    - Printing fiscal receipts for customer orders order operations:
+	  - Excluding customer order deposit.
+	  - Carry-out lines of a hybrid customer order.
+	  - Customer order pickup.
+	  - Return order.
+	  - Printing barcode in fiscal receipts.
+  - End of day statements (fiscal X, fiscal Z reports).
   - Error handling:
 	- Retry fiscal registration when it's possible: printer not connected/not ready/not responding, printer out of paper, paper jam, etc.
 	- Postpone fiscal registration.
