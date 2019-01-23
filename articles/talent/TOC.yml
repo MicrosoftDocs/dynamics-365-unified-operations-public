@@ -311,5 +311,6 @@
       href: talent-reporting-options.md
     - name: Integration FAQ
       href: talent-FO-integration.md
-  
+    - name: Azure Active Directory users not found in People Picker
+      href: people-picker-user-not-found.md   
   
