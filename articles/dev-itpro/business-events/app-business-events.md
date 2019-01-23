@@ -2,10 +2,10 @@
 # required metadata
 
 title: Application business events
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic lists application business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,8 +18,8 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
+# ms.custom: 
+ms.search.region: Global
 # ms.search.industry: 
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
@@ -31,13 +31,15 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[preview-banner](../includes/preview-banner.md)]
 
+This topic lists application business events.
+
 Procure to pay
 --------------
 
 | Business event                  | Description                                                                                                                                | Module           |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | Vendor invoice matched          | This is triggered when invoice matching validation is completed for a vendor invoice as part of the Procure to pay process. | Accounts payable |
-| Vendor invoice posted           | This is triggered when invoice matching validation is completed for a vendor invoice as part of the Procure to pay process. | Accounts payable |
+| Vendor invoice posted           | This business event is triggered when a user posts a vendor invoice as part of the Procure to Pay process. | Accounts payable |
 | Vendor payment posted           | This is triggered when a user posts a vendor payment as part of the Procure to pay process.                                 | Accounts payable |
 | Invoice register journal posted | This is triggered when a user posts an invoice register journal as part of the Procure to pay process.                      | Accounts payable |
 | Invoice journal posted          | This is triggered when a user posts an invoice journal as part of the Procure to pay process.                               | Accounts payable |
