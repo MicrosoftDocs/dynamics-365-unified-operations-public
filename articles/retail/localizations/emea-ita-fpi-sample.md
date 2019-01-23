@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ## Introduction
 
-The Microsoft Dynamics 365 for Retail functionality for Italy includes a sample of integration of POS with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) to work with [Epson FP-90III Series](http://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) from Epson and enables the communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in form of source code and is part of the Retail SDK.
+The Microsoft Dynamics 365 for Retail functionality for Italy includes a sample of integration of POS with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel) to work with [Epson FP-90III Series](http://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) from Epson and enables the communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in form of source code and is part of the Retail SDK.
 
 Microsoft does not ship any hardware, software, or documentation from Epson. Please contact [Epson Italia S.p.A](http://www.epson.it) for information on how to acquire the fiscal printer and operate it.
  
@@ -140,7 +140,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 ### Set up the registration process
 
-To enable the registration process, set up the Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#how-to-set-up-a-fiscal-registration-process).
+To enable the registration process, set up Retail Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
 1. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Connectors**. Import the configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml.
 
@@ -166,7 +166,7 @@ The purpose of the extension (Document provider) is to generate printer-specific
 
 Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**. 
 
-For more details about the fiscal integration solution design, see [Solution design for local fiscal devices](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#solution-design-for-local-fiscal-devices).
+For more details about the fiscal integration solution design, see [Solution design for local fiscal devices](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-sample-for-a-fiscal-device).
 
 ### Request handler
 	
@@ -204,7 +204,7 @@ The connector supports the following requests:
 
 
 ### Configuration
-The configuration file is found in **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the connector provider from the HQ. The file format aligned fiscal Integration configuration requirements. The following settings have been added:
+The configuration file is found in **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the connector provider from the HQ. The file format aligned fiscal integration configuration requirements. The following settings have been added:
 - Endpoint address - URL of the printer.
 - Date and time synchronization - This indicates if you need to the sync date and time of the printer with the connected hardware station. The date and time of the printer will be synchronized with the Hardware station time.
 
@@ -213,4 +213,4 @@ The configuration file is found in **Configuration** folder of the extension pro
   - The fiscal printer supports the scenarios with sales tax included in price only. So, the parameter **Price include sales tax** must be set to **Yes** both for retail stores and customers.
   - Daily reports (fiscal X, fiscal Z) are printed using the format embedded in the fiscal printer firmware.
   - Mixed transactions are not supported by the fiscal printer. The parameter **Prohibit mixing sales and returns in one receipt** should be set to **Yes** in POS functionality profiles.
-  - The sample supports integration with the fiscal printer working in the data transfer fiscal printer mode only also called **RT mode (Registratore Telematico)**. 
+  - The sample supports integration with a fiscal printer working in the **RT (Registratore Telematico)** mode only. 
