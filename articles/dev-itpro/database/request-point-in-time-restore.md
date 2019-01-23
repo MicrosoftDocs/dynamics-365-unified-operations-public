@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Restore databases in non-production environments
 
 [!include [banner](../includes/banner.md)]
+[!IMPORTANT]
+>This topic is being retired.  Please visit [Database Movement Operations - Home Page](dbmovement-operations.md) for the latest information.
+
 
 Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request. This topic describes how to request a point-in-time restore.
 

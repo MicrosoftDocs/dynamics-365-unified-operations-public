@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copy Finance and Operations databases from Azure SQL Database to SQL Server environments
-description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
-author: laneswenka
+title: Database Movement Operations - Debugging and Diagnostics Scenario
+description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
+author: LaneSwenka
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 1/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,80 +15,41 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: margoc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 203764
-ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laswenka
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+ms.author: laneswenka
+ms.search.validFrom: 2019-01-22
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Copy Finance and Operations databases from Azure SQL Database to SQL Server environments
+# Tutorial: Debugging and diagnostics
 
 [!include [banner](../includes/banner.md)]
-[!IMPORTANT]
->This topic is being retired.  Please visit [Database Movement Operations - Home Page](dbmovement-operations.md) for the latest information.
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
+Database Movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management ( also referred to as 'DataALM' ).  This tutorial shows how to combine Refresh with Export to retrieve a recent copy of Production data for debugging purposes.
 
-## Overview
+In this tutorial, you will learn how to:
+>[!div class="checklist"]
+> * Refresh the UAT environment
+> * Execute the Export to the Asset Library
+> * Download the database backup
+> * Import and prepare the database for use in a developer environment
 
-To move a database, use the self-service action to export the database from Azure SQL Database and then import it into Microsoft SQL Server. Because the file name extension for the exported data is .bacpac, this process is often referred to as the *bacpac process*.
-
-The high-level process for a database move includes the following phases:
-
-1. Export your source environment to the LCS Asset Library.
-2. Import the database into SQL Server.
-3. Run a SQL script to update the database.
+An example of this scenario is a customer who has already gone live with Microsoft Dynamics365 for Finance and Operations, and would like to get a recent copy of Production transactions loaded in to their development environment.  This will support debugging a particular transaction, or facilitating the development of new features and reports using realistic datasets.
 
 ## Prerequisites
+To perform a refresh operation you must have your Production environment deployed, or you must have at minimum 2 standard user acceptance test (UAT) environments.  To complete this tutorial you must have a developer environment deployed.
 
-The following prerequisites must be met before you can move a database:
+## Refresh the UAT environment
+This will overwrite the UAT environment with the latest copy of the Production database.  Follow the related [Tutorial: Refresh for training purposes](dbmovement-scenario-general-refresh.md) to complete this step.
 
-- The source environment (that is, the environment that is connected to the source database) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
-- Only a sandbox environment database can be exported. If you must copy the production environment, you must first refresh that environment to the sandbox environment. 
-
-    > [!NOTE]
-    > In this topic, the term *sandbox* is used to refer to a Standard or Premier Acceptance Testing (Tier 2+) or higher environment connected to a SQL Azure database.
-
-- The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
-
-## Before you begin
-
-Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
-
-### Document the values of encrypted fields
-
-Because of a technical limitation that is related to the certificate that is used for data encryption, values that are stored in encrypted fields in a database will be unreadable after that database is imported into a new environment. Therefore, after an import, you must manually delete and re-enter values that are stored in encrypted fields. New values that are entered in encrypted fields after an import will be readable. The following fields are affected. The field names are given in Table.Field format.
-
-| Field name                                               | Where to set the value |
-|----------------------------------------------------------|------------------------|
-| CreditCardAccountSetup.SecureMerchantProperties          | Select **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**. |
-| ExchangeRateProviderConfigurationDetails.Value           | Select **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**. |
-| FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Select **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**. |
-| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework (DIXF). |
-| HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
-| HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since Microsoft Dynamics AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
-| SysEmailSMTPPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
-| SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
-| SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
-
-### If you're running Retail components, document encrypted and environment-specific values
-
-The values on the following pages are either environment-specific or encrypted in the database. Therefore, all the imported values will be incorrect.
-
-- Payments services (**Accounts receivable** &gt; **Payments setup** &gt; **Payments services**)
-- Hardware profiles (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**)
-
-## Self-service database export
-
+## Backup to the asset library
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
 ## Import the database
@@ -229,6 +190,11 @@ In the Finance and Operations client, enter the values that you documented for t
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
+## Community tools
+Looking for more tools to help with importing backup files to your developer environments?  Here are some other sources of information:
+* [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools created by the community
+* [Community provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars)
+
 ## Known issues
 
 ### I can't download Management Studio installation files
@@ -270,8 +236,10 @@ WHERE PARM = 'SYSTABVERSION'
 
 The following guidelines can help you achieve optimal performance:
 
-- Always export a database from a virtual machine (VM) that is in the same Azure datacenter as the Azure SQL database. If you're exporting a copy of your sandbox database, export it from the sandbox AOS computer.
 - Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
 - In a Finance and Operations one-box environment that is hosted in Azure, put the .bacpac file on drive D when you import it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure VMs, see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) blog post.
 - Grant the account that runs the SQL Server Windows service [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
-- From Azure SQL Database, don't select **Export data tier application in Management Studio**, because there can be a memory limitation for larger databases.
+
+
+
+

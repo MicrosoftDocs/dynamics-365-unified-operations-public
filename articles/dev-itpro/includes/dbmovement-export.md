@@ -1,5 +1,3 @@
-## Self-service database export
-
 From your sandbox environment details page, click the **Maintain** menu and then select **Move database**.  
 <img src="../database/media/DBMovement_Menu.png" width="400px" alt="Move database menu" />
 
