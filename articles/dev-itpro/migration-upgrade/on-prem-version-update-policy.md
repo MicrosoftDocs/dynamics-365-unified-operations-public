@@ -5,7 +5,7 @@ title: Software lifecycle policy and on-premises releases
 description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 author: meeramahabala
 manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,8 +49,8 @@ Critical fixes and non-critical updates are handled in the following way:
 
 ## Dynamics 365 for Finance and Operations on-premises release dates
 
-### Continuous update releases
-As of November 2018, on-premises releases are released continuously.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md).
+### Continuous service updates
+As of November 2018, on-premises service updates are released continuously.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
 ### Application releases
 Application releases expire at the end of the month of their software lifecycle.
