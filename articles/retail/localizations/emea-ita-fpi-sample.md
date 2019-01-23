@@ -68,6 +68,9 @@ The following scenarios are covered by the fiscal printer integration sample for
 	- Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
 
 ### Default data mapping
+
+The following default data mapping is included in the fiscal document provider configuration provided as part of the fiscal integration sample:
+
   - VAT rates mapping:
    
      *1 : 21.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
@@ -77,17 +80,24 @@ The following scenarios are covered by the fiscal printer integration sample for
      *1 : 0 ;  2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
 
 ### Handling gift cards
-  - Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from a fiscal receipt.
-  - Do not print a fiscal receipt if it has sales lines marked as gift cards only.
-  - Deduct total amount of gift cards issued or re-charged in a transaction from payment lines. 
-  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction.
-  - Payment by gift card is considered as a regular payment.
+
+The fiscal printer integration sample implements the following rules in regard to gift cards:
+
+- Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from the fiscal receipt;
+- Do not print a fiscal receipt if it consists of gift card lines only;
+- Deduct total amount of gift cards issued or re-charged in a transaction from payment lines of the fiscal receipt; 
+- Save calculated adjustments of payment lines in the Channel DB with a reference to a corresponding fiscal transaction;
+- Payment by gift card is considered as a regular payment.
 
 ### Handling customer order deposits
-  - Do not print a fiscal receipt if a customer order deposit or a customer order deposit refund only.
-  - Display an amount of previously paid deposit in a fiscal receipt for customer order pickup.
-  - Deduct customer order deposit amount from payment lines when a hybrid customer order is created.
-  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction for hybrid customer order.
+
+The fiscal printer integration sample implements the following rules in regard to customer deposits and customer order deposits:
+
+- Do not print a fiscal receipt if a transaction is a a customer deposit;
+- Do not print a fiscal receipt if a transaction contains a customer order deposit or a customer order deposit refund only;
+- Print the amount of the previously paid deposit in a fiscal receipt for a customer order pickup operation;
+- Deduct the customer order deposit amount from payment lines when a hybrid customer order is created;
+- Save calculated adjustments of payment lines in the Channel DB with a reference to a fiscal transaction for a hybrid customer order.
 
 ## Set up Retail for Italy
 
