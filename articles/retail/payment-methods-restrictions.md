@@ -59,7 +59,7 @@ When the toggle is set to **Yes**, the selected payment method will not be allow
 ![Retail Store payment method](media/NoReceiptReturns3.png "Retail Store Payment Method") 
 
 > [!NOTE]
-> When a cashier selects a payment method that is restricted for refund without a receipt, a promt is displayed to verify the aceptable payment methods.
+> When a cashier selects a payment method that is restricted for refund without a receipt, a prompt is displayed to verify the aceptable payment methods.
 
 ![Acceptable payment methods](media/NoReceiptReturns4.png "Acceptable payment methods") 
 
