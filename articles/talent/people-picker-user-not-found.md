@@ -30,38 +30,38 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Azure Active Directory Users not found in People Picker
+# Azure Active Directory users not found in People Picker
 
 [!include [banner](includes/banner.md)]
 
-**Issue**
+## Issue
 
-Certain valid users in Azure Active Directory for the tenant do not appear when searching for name in the people picker.
+Certain valid users in Azure Active Directory for the tenant do not appear when searching for the name in the People Picker in in the Dynamics 365 for Talent Attract or Onboard applications.
 
-**Cause**
+## Cause
 
-Certain user types are not supported in Attract and Onboard applications currently. Please verify that the user is not an AAD B2B Guest user. User Type information can be found in the Azure Active Directory blade on the Azure portal.
+Certain user types are not currently supported in the Attract and Onboard applications. Verify that the user is not an AAD B2B Guest user. "User Type" information can be found in the Azure Active Directory blade on the Azure portal.
 
-For more information about Azure B2B - https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b
+For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b)
 
-For non-B2B users, there are certain users who may have incomplete User Type property on the User object. This can be verified and fixed using the AzureAD Powershell module - https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0
+For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the AzureAD Powershell module. See [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
 
-**Resolution**
+## Resolution
 
-To perform the following resolution steps, you will need to have Global Administrator permissions on the Azure Active Directory tenant or permissions for User.ReadWrite.All
+To complete the following steps to resolve the issue, you will need to have "Global Administrator" permissions on the Azure Active Directory tenant or permissions for **User.ReadWrite.All**.
 
-Please verify the User Type for the affected user:
+To verify the "User Type" for the affected user.
 
 ```
 PS C:\>Get-AzureADUser -ObjectId "testUpn@tenant.com"
 ```
-The command returns the following information:
+The command returns the following information.
 ```
 ObjectId                             DisplayName UserPrincipalName      UserType
 --------                             ----------- -----------------      --------
 5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    testUpn@tenant.com     
 ```
-Note the UserType property on the user. If the UserType is blank, i.e. not "Member" or "Guest", please update the UserType using the following command:
+Take note of the **UserType** property on the user. If the **UserType** is blank (i.e. not "Member" or "Guest"), please update the **UserType** using the following command.
 
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
