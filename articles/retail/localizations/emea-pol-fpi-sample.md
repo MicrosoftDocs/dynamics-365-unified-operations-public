@@ -42,32 +42,36 @@ Microsoft does not ship any hardware, software or documentation from Posnet. Ple
 ## Overview
 
 The following scenarios are covered by the fiscal printer integration sample for Poland:
-  - Sales scenarios:
-    - Printing a fiscal receipt for cash and carry sales and returns
-	- Capturing a response from the fiscal printer and storing in Channel DB
+- Sales scenarios:
+	- Printing a fiscal receipt for cash and carry sales and returns.
+	- Capturing a response from the fiscal printer and storing it in the Channel DB.
 	- Taxes:
-	  - Mapping to fiscal printer's tax codes (departments)
-	  - Transferring mapped tax data to a fiscal printer
-    - Payments:
-		- Mapping to fiscal printer's methods of payment
-	    - Printing in a fiscal receipt
-		- Printing change information
-	- Printing line discounts
-    - Gift cards:
-	  - Excluding an issued/re-charged gift card line from a fiscal receipt
-	  - Printing a payment with a gift card as a regular method of payment
+	  - Mapping to fiscal printer's tax codes (departments);
+	  - Transferring mapped tax data to the fiscal printer.
+	- Payments:
+	  - Mapping to fiscal printer's methods of payment;
+	  - Printing payments in a fiscal receipt;
+	  - Printing change information.
+	- Printing line discounts.
+	- Gift cards:
+	  - Excluding an issued/re-charged gift card line from a fiscal receipt for a sale;
+	  - Printing a payment with a gift card as a regular method of payment.
 	- Printing fiscal receipts for customer order operations:
-	  - Excluding customer order deposit
-	  - Carry-out lines of a hybrid customer order
-	  - Customer order pickup
-	  - Return order
-  - End of day statements (fiscal X, fiscal Z reports)
-  - Error handling:
-	- Retry fiscal registration when it's possible: printer not connected/not ready/not responding, printer out of paper, paper jam, etc.
-	- Postpone fiscal registration.
-    - Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
+	  - Fiscal receipt is not printed for a customer order deposit;
+	  - Printing a fiscal receipt for carry-out lines of a hybrid customer order;
+	  - Printing a fiscal receipt for the pickup operation for a customer order;
+	  - Printing a fiscal receipt for a return order.
+	- Printing barcode for the receipt number in a fiscal receipt.
+- End of day statements (fiscal X, fiscal Z reports).
+- Error handling, including the following options:
+	- Retry fiscal registration if it's possible; for example, if the fiscal printer is not connected/not ready/not responding, the printer is out of paper, there is a paper jam, etc.;
+	- Postpone fiscal registration;
+	- Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
 
 ### Default data mapping
+
+The following default data mapping is included in the fiscal document provider configuration provided as part of the fiscal integration sample:
+
   - VAT rates mapping:
    
      *0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00*
@@ -77,17 +81,25 @@ The following scenarios are covered by the fiscal printer integration sample for
      *0 : 0 ;  1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
 
 ### Handling gift cards
-  - Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from a fiscal receipt.
-  - Do not print a fiscal receipt if it has sales lines marked as gift cards only.
-  - Deduct total amount of gift cards issued or re-charged in a transaction from payment lines. 
-  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction.
-  - Payment by gift card is considered as a regular payment.
 
-### Handling customer order deposits
-  - Do not print a fiscal receipt if a customer order deposit or a customer order deposit refund only.
-  - Display an amount of previously paid deposit in a fiscal receipt for customer order pickup.
-  - Deduct customer order deposit amount from payment lines when a hybrid customer order is created.
-  - Save calculated adjustments of payment lines in DB with a reference to fiscal transaction for hybrid customer order.
+The fiscal printer integration sample implements the following rules in regard to gift cards:
+
+- Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from the fiscal receipt;
+- Do not print a fiscal receipt if it consists of gift card lines only;
+- Deduct total amount of gift cards issued or re-charged in a transaction from payment lines of the fiscal receipt; 
+- Save calculated adjustments of payment lines in the Channel DB with a reference to a corresponding fiscal transaction;
+- Payment by gift card is considered as a regular payment.
+
+### Handling customer deposits and customer order deposits
+
+The fiscal printer integration sample implements the following rules in regard to customer deposits and customer order deposits:
+
+- Do not print a fiscal receipt if a transaction is a customer deposit;
+- Do not print a fiscal receipt if a transaction contains a customer order deposit or a customer order deposit refund only;
+- Print the amount of the previously paid deposit in a fiscal receipt for a customer order pickup operation;
+- Deduct the customer order deposit amount from payment lines when a hybrid customer order is created;
+- Save calculated adjustments of payment lines in the Channel DB with a reference to a fiscal transaction for a hybrid customer order.
+
 ## Set up Retail for Poland
 
 ### Enabling extensions
@@ -126,7 +138,8 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 ### Set up the registration process
 
-To enable the registration process, set up the Headquarters using the following steps:
+To enable the registration process, set up Retail Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
+
 1. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Connectors**. Import the configuration from **RetailSdk\SampleExtensions\HardwareStation\Extension.Posnet.ThermalDeviceSample\Configuration\ConnectorConnectorPosnetThermalFVEJ.xml**.
 2. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Document providers**. Import the configuration from **RetailSdk\SampleExtensions\CommerceRuntime\Extension.DocumentProvider.PosnetSample\Configuration\DocumentProviderPosnetSample.xml**.
 3. Open **Retail > Channel Setup > Fiscal Integration > Connector Technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
@@ -137,15 +150,13 @@ To enable the registration process, set up the Headquarters using the following 
 8. Open the Hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
 9. Open the Distribution scheduler and select job **1070** to transfer data to the Channel database.
 
-For more details, see [How to set up a fiscal registration process](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#how-to-set-up-a-fiscal-registration-process).
-
 ## Commerce runtime extension design
 
 The purpose of the extension (Document provider) is to generate printer-specific documents and handle responses from the fiscal printer.
 
 Commerce runtime extension: **Commerce.Runtime.DocumentProvider.PosnetSample.DocumentProviderPosnetProtocol**. This extension generates the set of printer-specific commands defined by POSNET specification 19-3678 in JSON format.
 
-For more details about the fiscal integration solution design, see [Solution design for local fiscal devices](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-functionality.md#solution-design-for-local-fiscal-devices).
+For more details about the fiscal integration solution design, see [Fiscal registration process and fiscal integration sample for fiscal device](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-sample-for-fiscal-device).
 
 ### Request handler
 	
