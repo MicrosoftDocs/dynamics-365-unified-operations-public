@@ -152,7 +152,7 @@ Before using the fiscal integration functionality, the following settings should
       
    8. Open the **Distribution scheduler** page and run the job **1070** to transfer data to the Channel database.
 
-## Setting up a fiscal text for discounts
+## Setting up fiscal texts for discounts
  
  In some cases, it's required to print a special text in a fiscal receipt if a discount was applied. You can set up a fiscal text for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**).  
 
@@ -204,7 +204,7 @@ Fiscal registration processes have some additional settings to define possible o
      *Non-fiscal document* - a supplementary document covering an event or a transaction or its part, which is not an object of the fiscal registration (e.g., a gift card slip or a customer deposit slip).
 
      
-## Set up running fiscal X/Z reports from POS
+## Setting up fiscal X/Z reports from POS
 
 To enable running fiscal X/Z reports from POS, new buttons should be added to a POS layout.
   - Open the **Button grids** page in Retail headquarters.
