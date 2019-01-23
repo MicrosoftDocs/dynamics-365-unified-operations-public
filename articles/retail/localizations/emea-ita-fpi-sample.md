@@ -89,7 +89,7 @@ The fiscal printer integration sample implements the following rules in regard t
 - Save calculated adjustments of payment lines in the Channel DB with a reference to a corresponding fiscal transaction;
 - Payment by gift card is considered as a regular payment.
 
-### Handling customer order deposits
+### Handling customer deposits and customer order deposits
 
 The fiscal printer integration sample implements the following rules in regard to customer deposits and customer order deposits:
 
