@@ -113,7 +113,7 @@ Some countries or regions have special requirements on additional texts that mus
 
 Fiscal integration functionality supports generating end-of-day statements specific for the integrated fiscal device or service:
 
-  - New buttons executing corresponding operations should be added to the POS screen layout. For more details, see [Set up running fiscal X/Z reports from POS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#set-up-running-fiscal-xz-reports-from-pos).
+  - New buttons executing corresponding operations should be added to the POS screen layout. For more details, see [Setting up fiscal X/Z reports from POS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#setting-up-fiscal-xz-reports-from-pos).
   - In the fiscal integration sample, these operations should be matched to the corresponding operations of the fiscal device.
   
 ## Fiscal integration samples in Retail SDK
