@@ -30,26 +30,25 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-This topic describes default dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension. Examples showing the user interface as well as SQL table queries with output are included along with some explanation of APIs and usage examples.
+This topic explains default dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension. Examples showing the user interface as well as SQL table queries with output are included along with some explanation of APIs and usage examples.
+
+This topic uses examples from the demo data company USMF.
 
 ## Financial dimensions discovery
 
 **Default dimension entry**
 
-There are approximately over 250 forms in Microsoft Dynamics 365 for Finance and Operations that allow the entry of default financial dimensions. They appear in their own tab page or fast tab and display a list of dimensions with values and descriptions as shown in Figure 1 below.
+There are over 250 pages in Microsoft Dynamics 365 for Finance and Operations that allow you to enter default financial dimensions. The dimensions are displayed on a FastTab that lists dimensions with values and descriptions. In standard demo data there are over 30 dimensions available but only five are displayed in this example of a Financial dimensions FastTab. 
 
-[![DefaultDimensionEntry](./media/DefaultDimensionEntry.png)](./media/DefaultDimensionEntry.png) 
-**Figure 1: Default dimension entry**
+![DefaultDimensionEntry](./media/DefaultDimensionEntry.png "Financial dimensions FastTab fields")
 
-In standard demo data, as seen in Figure 2 below, there are over 30 dimensions listed but only 5 are shown in the example in Figure 1 above. How is the list filtered down?
+The dimensions are filtered first based on the list of all active account structures that are associated with the ledger of the current company or the company specified on a page. Finally, a union of all of the dimensions in these account structures, plus all active advanced rules associated with those structures is obtained.
 
 [![FinancialDimensionList](./media/FinancialDimensionList.png)](./media/FinancialDimensionList.png) 
 **Figure 2: Financial dimension list**
 
-The list is determined by starting with the the current company or a specific company specified on a form. The company context is used to obtain a list of all active account structures associated with its ledger. Finally, a union of all of the dimensions in these account structures, plus all active advanced rules associated with those structures is obtained.
 
-In this example, the demo data company being used is "USMF". Opening the *Ledger* form (General Ledger \> Setup \> Ledger), it shows that three different
-account structures are used by this company as shown in Figure 3 below.
+In this example, the demo data company being used is "USMF". Opening the *Ledger* form (General Ledger \> Setup \> Ledger), it shows that three different account structures are used by this company as shown in Figure 3 below.
 
 [![LedgerStructureConfiguration](./media/LedgerStructureConfiguration.png)](./media/LedgerStructureConfiguration.png) 
 **Figure 3: Ledger configuration for company "USMF"**
