@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict Payment methods for Returns without a receipt
+title: Restrict payment methods for returns without a receipt
 description: Each payment type that a retailer accepts must be configured when the system is set up. This article describes how certain payment types can be restricted for refund if the returns are made without a receipt.
 author: rapraj
 manager: AnnBe
