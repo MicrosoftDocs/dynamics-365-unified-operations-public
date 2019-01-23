@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
+# Introduction
+
 This topic is an overview of the fiscal integration capabilities that are available in Microsoft Dynamics 365 for Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales per local fiscal laws that are aimed to prevent tax fraud in the Retail industry. Typical scenarios that can be covered by using fiscal integration include:
 
 - Registering a retail sale in a fiscal device connected to Retail POS, such as a fiscal printer, and printing a fiscal receipt for the customer;
@@ -43,9 +45,9 @@ To support other scenarios not supported by a fiscal integration sample, to inte
 
 ## Fiscal registration process and fiscal integration sample for a fiscal device
 
-A fiscal registration process in Retail POS may consist of one or more steps; each step involves fiscal registration of specific retail transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration on a fiscal registration step:
+A fiscal registration process in Retail POS may consist of one or more steps; each step involves fiscal registration of specific retail transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device connected to Hardware station:
 
-  - **Commerce runtime extension** (CRT extension) serializes retail transaction/event data in the format further used for the interaction with the fiscal device, parses responses from the fiscal device and stores them in the Channel DB. This component is commonly referred to as  **Fiscal document provider**
+  - **Commerce runtime extension** (CRT extension) serializes retail transaction/event data in the format further used for the interaction with the fiscal device, parses responses from the fiscal device and stores them in the Channel DB. The extension also defines which specific transactions and events are to be registered. This component is commonly referred to as  **Fiscal document provider**
   - **Hardware station extension** (HWS extension) initializes the fiscal device, sends requests and direct commands to it according to the retail transaction/event data etracted from the fiscal document, and receives responses from the fiscal device. This component is commonly referred to as **Fiscal connector**. 
 
 A fiscal integration sample for a fiscal device contains the CRT and HWS extensions for a fiscal document provider and a fiscal connector respectively, as well as the component configurations:
@@ -53,31 +55,17 @@ A fiscal integration sample for a fiscal device contains the CRT and HWS extensi
   - **Fiscal document provider configuration** defines an output method and a format of fiscal documents. This configuration also contains data mapping for taxes and payment methods in order to make data from Retail POS compatible with the values predefined in the fiscal device firmware. 
   - **Fiscal ponnector configuration** defines the physical communication with the specific fiscal device.
 
-A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details on how to configure a fiscal regitration process, uploade fiscal document provider and fiscal connector configurations and changing their parameters, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
+A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details on how to configure a fiscal regitration process, uploade fiscal document provider and fiscal connector configurations, and changing their parameters, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
-The example below demonstrates a common execution flow of the fiscal registration performed on a fiscal device or service connected to the Hardware station. 
-
-  - **POS** orchestrates the registration process. 
-  
-  A fiscal integration sample for a local fiscal device or service consists of the following components:
-
-  - **Commerce runtime extension** (CRT extension) generates fiscal documents for retail transactions and events in the format supported by the fiscal device or service.
-
-  - **Hardware station extension** (HWS extension) is responsible for communication with the fiscal device or service. 
-
-  - **Document Provider configuration** defines an output method and a format of fiscal documents.
-
-  - **Fiscal Connector configuration** defines a method of communication with the fiscal device or service, and its parameters.
-
-Fiscal registration flow starts for an event in POS (e.g. a finalization of a sales transaction) and implements the following sequence of steps:
+The example below demonstrates a common fiscal registration execution flow for a fiscal device. The flow starts for an event in POS (e.g. a finalization of a sales transaction) and implements the following sequence of steps:
 
 1. POS requests a fiscal document from CRT.
 
-2. CRT identifies if the current event requires fiscal registration.
+2. CRT decides if the current event requires fiscal registration.
 
-3. CRT finds a fiscal connector to be used for the fiscal registration.
+3. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to be used for the fiscal registration.
 
-4. RT runs the fiscal document provider that generates a fiscal document (e.g. an XML document) that represents the retail transaction or event.
+4. CRT runs the fiscal document provider that generates a fiscal document (e.g. an XML document) that represents the retail transaction or event.
 
 5. POS sends the fiscal document prepared by CRT to HWS.
 
@@ -85,7 +73,7 @@ Fiscal registration flow starts for an event in POS (e.g. a finalization of a sa
 
 7. POS analyzes the response from the fiscal device or service to decide if the fiscal registration has passed successfully or not.
 
-8. CRT saves the response in the Channel DB.
+8. CRT saves the response to the Channel DB.
 
 ![alt text](media/emea-fiscal-integration-solution.png "Solution schema")
 
