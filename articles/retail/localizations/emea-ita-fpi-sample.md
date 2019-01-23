@@ -41,31 +41,31 @@ Microsoft does not ship any hardware, software, or documentation from Epson. Ple
 
 The following scenarios are covered by the fiscal printer integration sample for Italy:
 - Sales scenarios:
-    - Printing a fiscal receipt for cash and carry sales and returns.
-    - Capturing a response from the fiscal printer and storing it in the Channel DB.
-    - Taxes:
+	- Printing a fiscal receipt for cash and carry sales and returns.
+	- Capturing a response from the fiscal printer and storing it in the Channel DB.
+	- Taxes:
 	  - Mapping to fiscal printer's tax codes (departments);
 	  - Transferring mapped tax data to the fiscal printer;
 	  - Printing taxes in a fiscal receipt.
-    - Payments:
-	  - Mapping to fiscal printer's methods of payment.
-	  - Printing payments in a fiscal receipt.
+	- Payments:
+	  - Mapping to fiscal printer's methods of payment;
+	  - Printing payments in a fiscal receipt;
 	  - Printing change information.
-    - Printing line discounts.
-    - Gift cards:
+	- Printing line discounts.
+	- Gift cards:
 	  - Excluding an issued/re-charged gift card line from a fiscal receipt for a sale;
 	  - Printing a payment with a gift card as a regular method of payment.
-    - Printing fiscal receipts for customer order operations:
+	- Printing fiscal receipts for customer order operations:
 	  - Fiscal receipt is not printed for a customer order deposit;
 	  - Printing a fiscal receipt for carry-out lines of a hybrid customer order;
 	  - Printing a fiscal receipt for the Puckup operation for a customer order;
-	  - Printing a fiscal receipt for a return order;
-    - Printing barcode for the receipt number in a fiscal receipt.
+	  - Printing a fiscal receipt for a return order.
+	- Printing barcode for the receipt number in a fiscal receipt.
 - End of day statements (fiscal X, fiscal Z reports).
 - Error handling, including the following options:
 	- Retry fiscal registration if it's possible; for example, if the fiscal printer is not connected/not ready/not responding, the printer is out of paper, there is a paper jam, etc;
 	- Postpone fiscal registration;
-    - Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
+	- Skip fiscal registration or mark the transaction as registered, including info codes to capture the reason of failure and additional information.
 
 ### Default data mapping
   - VAT rates mapping:
