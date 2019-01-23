@@ -113,12 +113,12 @@ Some countries or regions have special requirements on additional texts that mus
 
 Fiscal integration functionality supports generating end-of-day statements specific for the integrated fiscal device or service:
 
-  - New buttons executing corresponding operations should be added to the POS screen layout. For more details, see [Setting up fiscal X/Z reports from POS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/fiscal-integration-for-retail-channel.md#setting-up-fiscal-xz-reports-from-pos).
+  - New buttons executing corresponding operations should be added to the POS screen layout. For more details, see [Setting up fiscal X/Z reports from POS](fiscal-integration-for-retail-channel#setting-up-fiscal-xz-reports-from-pos).
   - In the fiscal integration sample, these operations should be matched to the corresponding operations of the fiscal device.
   
 ## Fiscal integration samples in Retail SDK
 
 The following fiscal integration samples are currently available in the Retail SDK shipped with Retail:
 
-  - [Fiscal printer integration sample for Italy](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/emea-ita-fpi-sample.md#fiscal-printer-integration-sample-for-italy).
-  - [Fiscal printer integration sample for Poland](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/fpi-sample-pol/articles/retail/localizations/emea-pol-fpi-sample.md#fiscal-printer-integration-sample-for-poland).
+  - [Fiscal printer integration sample for Italy](emea-ita-fpi-sample)
+  - [Fiscal printer integration sample for Poland](emea-pol-fpi-sample)
