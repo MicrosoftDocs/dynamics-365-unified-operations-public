@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 24 (MONTH 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -80,8 +80,19 @@ Stay on top of your business data with integrated change tracking tools.  With P
 
 Supported scenarios include using intuitive controls to create Alerts Rules that monitor filtered views of System Batch jobs.  Move beyond the burden of constantly checking reports for changes to business data and let the Dynamics 365 for Finance & Operations intelligent change detection service do the monitoring for you.
 
-## Feature heading
+> [!Note]
+> Join the Dynamics 365 Insider Program to get early access to preview features.
 
-Feature description.
+## Clear identification of preview builds
+Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or through using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) topic for more information about the Finance and Operations release process.  
 
-**NOTE** - Join the Dynamics 365 Insider Program to get early access to **PREVIEW** features.
+To make the **preview** status clear to users, each preproduction build will be tagged in two different ways: 
+
+1.  On each session start in a preview build, users will see a pop-up window indicating that they are using a preview version of the service.  
+
+    ![Notification that this is a preview version of the service](media/previewCallout.png  "Notification that this is a preview version of the service")  
+
+2.  The title of the **About** box will include the word *Preview*. 
+
+    ![Preview is also indicated in the About box](media/previewAboutBox.png  "Preview is also indicated in the About box")
+
