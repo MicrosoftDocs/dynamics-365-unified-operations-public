@@ -365,6 +365,8 @@
       href: perf-test/testing-support.md
     - name: Deploy topologies supporting continuous build and test automation
       href: perf-test/continuous-build-test-automation.md
+    - name: SysTest filtering using class and method attributes
+      href: perf-test/systest-filtering.md
   - name: Date effectivity
     href: dev-tools/date-effectivity.md
   - name: ISV licensing
