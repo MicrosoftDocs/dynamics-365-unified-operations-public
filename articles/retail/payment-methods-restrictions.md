@@ -45,9 +45,10 @@ To set up payment methods, the following tasks must be completed.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
 
-## Restrict payment methods for returns without a receipt
-
 ![Retail Store Setup](media/NoReceiptReturns1.png "Retail Store Setup") 
+
+
+## Restrict payment methods for returns without a receipt
 
 For each store payment method, on the **Retail store management** page, under **Non receipt returns**, set the **Restrict for refunds without receipt** toggle to **Yes**. 
 
