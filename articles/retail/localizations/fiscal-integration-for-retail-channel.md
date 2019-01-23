@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-# Introduction
+## Introduction
 
 This topic is an overview of the fiscal integration capabilities that are available in Microsoft Dynamics 365 for Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales per local fiscal laws that are aimed to prevent tax fraud in the Retail industry. Typical scenarios that can be covered by using fiscal integration include:
 
@@ -45,19 +45,19 @@ To support other scenarios not supported by a fiscal integration sample, to inte
 
 ## Fiscal registration process and fiscal integration sample for a fiscal device
 
-A fiscal registration process in Retail POS may consist of one or more steps; each step involves fiscal registration of specific retail transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device connected to Hardware station:
+A fiscal registration process in Retail POS may consist of one or more steps; each step involves fiscal registration of specific retail transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device connected to a Hardware station:
 
   - **Commerce runtime extension** (CRT extension) serializes retail transaction/event data in the format further used for the interaction with the fiscal device, parses responses from the fiscal device and stores them in the Channel DB. The extension also defines which specific transactions and events are to be registered. This component is commonly referred to as  **Fiscal document provider**
-  - **Hardware station extension** (HWS extension) initializes the fiscal device, sends requests and direct commands to it according to the retail transaction/event data etracted from the fiscal document, and receives responses from the fiscal device. This component is commonly referred to as **Fiscal connector**. 
+  - **Hardware station extension** (HWS extension) initializes the communication with the fiscal device, sends requests and direct commands to it according to the retail transaction/event data extracted from the fiscal document, and receives responses from the fiscal device. This component is commonly referred to as **Fiscal connector**. 
 
 A fiscal integration sample for a fiscal device contains the CRT and HWS extensions for a fiscal document provider and a fiscal connector respectively, as well as the component configurations:
 
   - **Fiscal document provider configuration** defines an output method and a format of fiscal documents. This configuration also contains data mapping for taxes and payment methods in order to make data from Retail POS compatible with the values predefined in the fiscal device firmware. 
   - **Fiscal ponnector configuration** defines the physical communication with the specific fiscal device.
 
-A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details on how to configure a fiscal regitration process, uploade fiscal document provider and fiscal connector configurations, and changing their parameters, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
+A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details on how to configure a fiscal registration process, uploade fiscal document provider and fiscal connector configurations, and changing their parameters, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
-The example below demonstrates a common fiscal registration execution flow for a fiscal device. The flow starts for an event in POS (e.g. a finalization of a sales transaction) and implements the following sequence of steps:
+The example below demonstrates a common fiscal registration execution flow for a fiscal device. The flow starts with an event in POS (e.g. a finalization of a sales transaction) and implements the following sequence of steps:
 
 1. POS requests a fiscal document from CRT.
 
