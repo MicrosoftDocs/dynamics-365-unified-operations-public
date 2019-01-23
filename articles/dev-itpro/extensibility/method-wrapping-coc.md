@@ -267,6 +267,8 @@ final class FormDataSource1_Extension
     {
         next init();
         //...
+        //use element.FormToExtendVariable to access form's variables and datasources
+        //element.FormToExtendMethod() to call form methods
     }
  
     public boolean validateWrite()
