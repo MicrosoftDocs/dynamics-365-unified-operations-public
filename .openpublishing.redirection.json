@@ -6,7 +6,7 @@
       "redirect_document_id": "false"
     },    {
       "source_path": "articles/dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md",
-      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations,
+      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations",
       "redirect_document_id": "false"
     },    {
       "source_path": "articles/dev-itpro/database/request-point-in-time-restore.md",
