@@ -225,7 +225,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
     # [Retail 10.0 and later](#tab/retail-10-0)
     ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.Extensions.GenericTaxEngine" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
 
     ---
