@@ -468,6 +468,8 @@
         href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
+    - name: Automated Entity store refresh
+      href: ../dev-itpro/analytics/automated-entity-store-refresh.md
     - name: Data task automation
       href: ../dev-itpro/data-entities/data-task-automation.md
     - name: Data validation checklist workspace
