@@ -50,24 +50,6 @@ To set the values for the below items, sign in to Attract as an administrator,
 select **Admin center** on the **Settings** menu (the gear symbol), and then
 select the **Career site management** tab.
 
--   **Search Engine Optimization:** If enabled, all jobs posted to Attract
-    career site going forward will be searchable via popular search engines like
-    Bing and Google.
-
-    >   [!NOTE] You may see some delay between turning this setting on and
-    >   search results lighting up, depending on the search engine you are
-    >   using.
-
--   **Terms and conditions:** When candidates apply to a job through the Attract
-    career site, organizations can setup terms and conditions to which the
-    candidate must agree before submitting a job application. To set this up,
-    first switch the terms and conditions option to on, then specify a short
-    optional message and finally specify a link pointing candidates to your
-    terms and conditions page. A preview of how this will be displayed to
-    candidate is shown below the settings. Once setup, candidates have to
-    mandatorily agree to the terms and conditions before submitting an
-    application.
-
 Career site URLs
 ----------------
 
