@@ -58,6 +58,6 @@ When changing the Job on a position, job fields will default to the position. An
 With this change, Probation period and Calendar fields have been added to the Manage changes forms allowing for data entry for future and past employees.
 
 ### Platform update 23
-Minor bug fixes have been included as part of Platform update 23. For more information on Platform update 23 view the article [located here]https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+Minor bug fixes have been included as part of Platform update 23. For more information on Platform update 23 view the article [located here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
 
 
