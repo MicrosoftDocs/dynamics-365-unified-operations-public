@@ -38,7 +38,7 @@ ms.dyn365.ops.version:
 
 You can define a calendar to use in your organization in the page in **Organization administration > Setup > Calendars > Calendars**. 
 
-Each date entry in a calendar can be **open** or **closed** or **Base calendar**. It is specified in the **Control** column in the **Working times** page. For each date: 
+Each date entry in a calendar can be **open** or **closed** or **base calendar**. This is specified in the **Control** column in the **Working times** page. For each date: 
 - **Open** - Indicates that work is performed on the selected day. The calendar will be updated according to the working time template.
 - **Closed** - Indicates work that is not performed during the day. 
 - **Base calendar** - Indicates that the specific date will inherit the working times and open/closed from the base calendar. Therefore, when the base calendar is updated, the selected calendar will inherit operation times from it. 
