@@ -2,10 +2,10 @@
 # required metadata
 
 title: Automated Entity store refresh
-description: This topic describes how to enable automated entity store refresh feature in PU23.
+description: This topic describes how to enable automated Entity store refresh.
 author: MilindaV2
 manager: AnnBe
-ms.date: 11/01/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: AutomatedEntityStoreRefresh
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27661
@@ -34,19 +34,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/private-preview-banner.md)]
+
 ## Overview
 
-When you transition to this feature, Entity store refresh is automated and managed by the system. Administrators do not need to schedule and monitor Entity store refresh via system batch schedules. System manages the refresh operation based on desired latency. This feature is enabled in Platform update 23. As an administrator you do need to opt-in to this feature.
+Entity store refresh is automated and managed by the system. Administrators do not need to schedule or monitor the Entity store refresh with the system batch schedules. The system manages the refresh operation based on desired latency. This feature functionality is enabled in Platform update 23. As an administrator you do need to opt-in to this feature.
 
-## Enabling automated refresh
-1. Go to **System administration** \> **Set up** \> **Entity store**.
+## Enable automated refresh
+Complete the following steps to enable automated Entity store refresh.
 
-    On the **Entity store** page, a message indicates that you can switch to the **Automated Entity store refresh** option. This option is managed by the system. An admin doesn't have to schedule or monitor the Entity store refresh.
+1. Go to **System administration** > **Set up** > **Entity store**.
+
+On the **Entity store** page, a message indicates that you can switch to the **Automated Entity store refresh** option. This option is managed by the system. An admin doesn't have to schedule or monitor the Entity store refresh.
 
 2. Select **Switch now**.
 
-    > [!IMPORTANT]
-    > This action isn't reversible. After you switch to the **Automated Entity store refresh** option, you can't revert to the old user interface (UI) experience.
+> [!IMPORTANT]
+> This action isn't reversible. After you switch to the **Automated Entity store refresh** option, you can't revert to the old user interface (UI) experience.
 
 3. Select **Yes** to continue.
 
@@ -61,9 +65,9 @@ After the new experience is turned on, you can define the refresh for each aggre
 - Once a day
 - Once a week
 
-In addition, an admin can refresh any aggregate measurement on demand by selecting the **Refresh** button. Additional options will be added in future platform updates. These options will include options for real-time refresh.
+An admin can also refresh any aggregate measurement on demand by clicking the **Refresh** button. Additional options will be added in future platform updates. These options will include options for real-time refresh.
 
 > [!IMPORTANT]
-> When the automated refresh is enabled, in some cases the system may disable refresh of Aggregate measurements. You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied by the system.
->
+> When automated refresh is enabled, the system may disable the refresh of aggregate measurements. You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied by the system.
+
 
