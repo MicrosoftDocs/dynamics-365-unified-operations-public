@@ -36,15 +36,15 @@ ms.dyn365.ops.version: Talent
 
 ## Issue
 
-Certain valid users in Azure Active Directory for the tenant do not appear when searching for the name in the People Picker in in the Dynamics 365 for Talent Attract or Onboard applications.
+Certain valid users in Microsoft Azure Active Directory (Azure AD) for the tenant do not appear when searching for the name in the People Picker in the Dynamics 365 for Talent Attract or Onboard applications.
 
 ## Cause
 
-Certain user types are not currently supported in the Attract and Onboard applications. Verify that the user is not an AAD B2B Guest user. "User Type" information can be found in the Azure Active Directory blade on the Azure portal.
+Certain user types are not currently supported in the Attract and Onboard applications. Verify that the user is not an Azure AD Business to Business (B2B) guest user. "User Type" information can be found in the Azure Active Directory blade on the Azure portal.
 
-For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b)
+For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).
 
-For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the AzureAD Powershell module. See [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the Azure AD Powershell module. For more information, see [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
 
 ## Resolution
 
@@ -61,9 +61,8 @@ ObjectId                             DisplayName UserPrincipalName      UserType
 --------                             ----------- -----------------      --------
 5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    testUpn@tenant.com     
 ```
-Take note of the **UserType** property on the user. If the **UserType** is blank (i.e. not "Member" or "Guest"), please update the **UserType** using the following command.
+Note the **UserType** property on the user. If the **UserType** is blank, for example not "Member" or "Guest", update the **UserType** using the following command.
 
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
 ```
-
