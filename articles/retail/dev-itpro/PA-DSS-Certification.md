@@ -58,5 +58,10 @@ For more information, see: https://mbs.microsoft.com/customersource/northamerica
 
 | Release  | Version | Build |
 | ---------------------------|----------------------- | ----------- |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 7.3  | 7.3  |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 7.3 | 7.3 |
+| Microsoft Dynamics 365 for Retail | 7.3 | 7.3 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 8.0 | 8.0 |
+| Microsoft Dynamics 365 for Retail | 8.0  | 8.0 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 8.1 | 8.1 |
+| Microsoft Dynamics 365 for Retail | 8.1  | 8.1 |
 
