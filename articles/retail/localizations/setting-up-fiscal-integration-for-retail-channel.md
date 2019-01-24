@@ -31,13 +31,14 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a setup guide explaining the required settings of the Fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channel](fiscal-integration-for-retail-channel).
+This topic provides guidelines on setting up the fiscal integration functionality for Retail channel. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channel](fiscal-integration-for-retail-channel).
 
-Users can perform the following tasks. 
-- Configure fiscal connectors, which are fiscal devices or services used for fiscal registration purposes like saving, digital signatures, and secured submission of fiscal data.
-- Configure the document provider, which defines an output method and an algorithm of fiscal document generation.
-- Configure the fiscal registration process, which defines a sequence of steps, and a group of connectors used on each step.
-- Assign fiscal registration processes to POS functionality profiles.
+Setting up fiscal integration includes the following tasks:
+
+- Configure fiscal connectors that represent fiscal devices or services used for fiscal registration purposes, such as fiscal printers;
+- Configure document providers that generate fiscal documents to be registered in fiscal devices or services;
+- Configure the fiscal registration process that defines a sequence of fiscal registration steps and fiscal connectors used on each step;
+- Assign the fiscal registration process to POS functionality profiles;
 - Assign connector technical profiles to hardware profiles.
 
 ## How to set up a fiscal registration process
