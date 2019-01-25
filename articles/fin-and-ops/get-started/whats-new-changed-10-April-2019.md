@@ -51,12 +51,14 @@ This feature allows you to use catch weight products within warehouse management
 For more information, see [Catch weight product processing with warehouse management](../../supply-chain/warehousing/catch-weight-processing.md).
 
 ### Restrict payment methods for returns without a receipt
-This feature allows for certain payment types to be restricted for refund if the returns are made without a receipt.
+This feature allows for certain payment types to be restricted for refund if the returns are made without a receipt using Dynamics 365 for Retail.
 
 For more information, see [Restrict payment methods for returns without a receipt](../../retail/payment-methods-restrictions.md).
 
+### Omni-channel advanced auto charges
+When the new advanced auto-charges features are enabled in Dynamics 365 for Retail, orders created in any supported Retail channel (point of sale (POS), call center, and online), can take advantage of the auto charges configurations defined in Dynamics for both header and line-level related charges.  
 
-
+For more information, see [Omni-channel advanced auto charges](../../retail/omni-auto-charges.md).
 
 ### Bug fixes
 
