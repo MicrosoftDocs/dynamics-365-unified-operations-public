@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
@@ -25,7 +25,6 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Quickstart: Database point-in-time restore (PITR)
