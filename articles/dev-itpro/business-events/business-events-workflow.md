@@ -5,7 +5,7 @@ title: Business events in workflow
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
