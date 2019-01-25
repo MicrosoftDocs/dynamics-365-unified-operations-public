@@ -3,7 +3,7 @@
 
 title: Supply chain calendars and how they affect master planning
 description: This topic provides an overview of supply chain calendars and how they affect master planning.
-author: 
+author: t-benebo
 manager: AnnBe
 ms.date: 01/15/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 # ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: 
+ms.author: t-benebo
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version:
 # Supply chain calendars and how they affect master planning
 
 [!include [banner](../includes/banner.md)]
+
+This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and reciving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
 
 ## Definition of a calendar
 
@@ -69,7 +71,7 @@ The calendar for a vendor indicates the days on which they accept the placement 
 To specify the purchase lead time (and if only working days should be considered) for an item, you need to go to the default order settings page for the product, found under **Product information management > Products > Released products** and select **Default order settings**. 
 
 > [!Note]
-> The **Working days** under purchase lead time indicates the working days of the vendor. For example, a calendar for delivery only on Tuesdays with a lead time of 10 days and indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered.
+> The **Working days** under purchase lead time indicates the working days of the vendor. For example, a calendar for delivery only on Tuesdays with a lead time of 10 days and working days check box selected indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered.
 Thus, in most cases it is not recommended to select working days for purchase order lead times.
 
 #### Define lead times from the trade agreements page
