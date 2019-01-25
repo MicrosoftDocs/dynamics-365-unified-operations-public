@@ -3451,6 +3451,8 @@
         href: ../supply-chain/pim/tasks/create-product-master.md
       - name: Create predefined product variants
         href: ../supply-chain/pim/tasks/create-predefined-product-variants.md
+      - name: Unit of measure conversion per product variant
+        href: ../supply-chain/pim/uom-conversion-per-product-variant.md
       - name: Create a released product for a single company
         href: ../supply-chain/pim/tasks/create-released-product-single-company.md
       - name: Product lifecycle state
