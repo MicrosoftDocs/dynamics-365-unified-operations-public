@@ -82,3 +82,9 @@ For more information, see [Return items across multiple customer orders and invo
 Functionality has been added to enhance the loyalty features in Dynamics 365 for Retail.
 
 For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md).
+
+### Fiscal printer integration sample for Poland
+Microsoft Dynamics 365 for Retail now contains a sample of the integration of POS with fiscal printers for Poland. The sample is a part of the Retail SDK. Implementation partners may extend the integration functionality to cover all required retail scenarios or build integration with other fiscal printer models based on the samples.
+
+For more information, see [Fiscal printer integration sample for Poland](../../retail/emea-pol-fpi-sample.md).
+
