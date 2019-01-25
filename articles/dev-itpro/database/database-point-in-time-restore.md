@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-#Quickstart: Database point-in-time restore (PITR)
+# Quickstart: Database point-in-time restore (PITR)
 
 [!include [banner](../includes/banner.md)]
 
