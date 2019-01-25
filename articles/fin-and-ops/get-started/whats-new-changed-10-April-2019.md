@@ -50,6 +50,14 @@ This feature allows you to use catch weight products within warehouse management
 
 For more information, see [Catch weight product processing with warehouse management](../../supply-chain/warehousing/catch-weight-processing.md).
 
+### Restrict payment methods for returns without a receipt
+This feature allows for certain payment types to be restricted for refund if the returns are made without a receipt.
+
+For more information, see [Restrict payment methods for returns without a receipt](../../retail/payment-methods-restrictions.md).
+
+
+
+
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10, sign in to Lifecycle Services (LCS) and view the [KB article](ADD LINK).
