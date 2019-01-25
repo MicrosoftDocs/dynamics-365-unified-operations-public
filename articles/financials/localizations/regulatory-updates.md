@@ -43,9 +43,9 @@ When a month is used in the Date column, the feature is planned to be delivered 
 
 |Planned release date|Release version|Country|Feature|
 |--------------------|---------------|-------|-------|
-|      March 2019          |   10.0.0      | Austria      |   CHANGES IN KAMMERUMLAGE 2019 (Purchase duty)    |
-|      March 2019          |   10.0.0      |   Brazil    |     SPED EFD CONTRIBUTIONS - LAYOUT  004 and 005  |
-|      March 2019          |   10.0.0      |    Malaysia     |MALAYSIA REPLACES GST WITH SST SALES & SERVICE TAX        |
+|      March 2019          |   10.0.0      | Austria      |   Changes in Kammerumlage 2019 (Purchase duty)    |
+|      March 2019          |   10.0.0      |   Brazil    |     SPED EFD Contributions - Layout  004 and 005  |
+|      March 2019          |   10.0.0      |    Malaysia     |Malaysia replaces GST with SST sales & service tax        |
 
 ## Additional resources
 - Planned & released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (Log in required)
