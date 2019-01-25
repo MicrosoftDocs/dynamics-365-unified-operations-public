@@ -18,7 +18,7 @@
         - name: Cloud deployment
           href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
         - name: System requirements for cloud deployments
-Finance and Operations version 8.1.3 (January 2019)          href: get-started/system-requirements.md
+          href: get-started/system-requirements.md
         - name: On-premises deployment
           href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/fin-and-ops/toc.json
         - name: System requirements for on-premises deployments
@@ -38,7 +38,7 @@ Finance and Operations version 8.1.3 (January 2019)          href: get-started/s
         href: get-started/one-version.md
       - name: Software lifecycle policy and cloud releases
         href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: SofFinance and Operations version 8.1.3 (January 2019)tware lifecycle policy and on-premises releases
+      - name: Software lifecycle policy and on-premises releases
         href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
         href: get-started/mainstream-support-ax-2009-2012.md
