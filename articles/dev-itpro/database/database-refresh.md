@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Database Movement Operations - Refresh Database Quickstart
+title: Quickstart: Refresh database 
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 1/22/2019
+ms.date: 1/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Refresh database quickstart
+# Quickstart: Refresh database 
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,21 +40,22 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of 
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.  
 
 ## Self-service database refresh
-With the goal of providing Data Application Lifecycle Management ( also referred to as 'DataALM' ) capabilities to our customers without relying on human or manual processes, the Lifecycle Services team has introduced an automated Refresh Database action. This process is outlined below:
+With the goal of providing Data Application Lifecycle Management (also referred to as *DataALM*) capabilities to our customers without relying on human or manual processes, the Lifecycle Services team has introduced an automated **Refresh database** action. This process is outlined below:
 
-1. Visit your target sandbox **Environment Details** page , and click the **Maintain** > **Move database** menu option.
+1. Visit your target sandbox on the **Environment Details** page, and click the **Maintain** > **Move database** menu option.
 2. Select the **Refresh database** option and choose your source environment.
 3. Note the warnings and review the list of data elements that are not copied from the source environment.
 4. The refresh operation will begin immediately.
-5. After the refresh operation is completed, you must **Sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
+5. After the refresh operation is completed, you must **sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
 
 ### Refresh operation failed
-In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL Point-in-time restore capability to restore the database. This is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly refreshed data.  
+In case of failure, the option to perform a rollback is available.  By clicking the **Rollback** option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly-refreshed data.  
 
 To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
 
 ### Data elements that aren't copied during refresh
 When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.  These elements include:
+
 * Email addresses in the LogisticsElectronicAddress table.
 * Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 * SMTP password in the SysEmailSMTPPassword table.
