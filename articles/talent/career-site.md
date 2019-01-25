@@ -8,7 +8,7 @@ Career site functionality in Attract
 
 [!include [banner](includes/banner.md)]
 
-This article provides an overview of the candidate-facing career site
+This topic provides an overview of the candidate-facing career site
 functionality in Microsoft Dynamics 365 for Talent: Attract. It also explains
 how to set up this functionality.
 
@@ -29,15 +29,15 @@ actions require that candidates sign in.
 Career site managements
 -----------------------
 
-To set the values for the below items, sign in to Attract as an administrator,
+To set the values for the following items, sign in to Attract as an administrator,
 select **Admin center** on the **Settings** menu (the gear symbol), and then
 select the **Company information** tab.
 
--   **Organization name:** The organization name appears on the navigation bar
+-   **Organization name** - The organization name appears on the navigation bar
     at the top of the career site. By selecting the organization name,
     candidates go to a page that lists all open jobs.
 
--   **Organization logo:** An image of the organization's logo appears in the
+-   **Organization logo** - An image of the organization's logo appears in the
     upper left of the career site. By selecting the logo image, candidates go to
     a page that lists all open jobs.
 
@@ -46,26 +46,22 @@ select the **Company information** tab.
     >   scaled to fit. Therefore, depending on the image, the width might
     >   change.
 
-To set the values for the below items, sign in to Attract as an administrator,
-select **Admin center** on the **Settings** menu (the gear symbol), and then
-select the **Career site management** tab.
-
 Career site URLs
 ----------------
 
-The following are the commonly needed career sire URLs are how to access them.
+The following list contains the commonly used career site URLs and how to access them.
 
--   **Career site home page URL:** To view the career site home page URL, sign
-    in to Attract as an administrator, select Admin center on the Settings menu
-    (the gear symbol), and then select the Career site management tab.
+-   **Career site home page URL** - To view the career site home page URL, sign
+    in to Attract as an administrator, select **Admin center** on the **Settings** menu
+    (the gear symbol), and then select the **Career site management** tab.
 
--   **Individual job post apply URL:** When you [post an external
+-   **Individual job post apply URL** - When you [post an external
     job](./Creating-jobs-Attract.md#postings) for the first time, you can copy
     the **Apply** link from the Attract application. The URL for this link will
-    be in the following format:
+    be in the following format: 
     [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
--   **Individual job post URL:** The URL of the job post is a substring of the
+-   **Individual job post URL** - The URL of the job post is a substring of the
     Apply URL. It consists of everything up through the job number. Therefore,
     for the preceding Apply URL, the job post URL is
     [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
@@ -93,7 +89,7 @@ Azure AD sign-in is intended only for internal candidates. Therefore, it works
 only for internal candidates who use their company Azure AD credentials. For
 example, a candidate who is currently an employee of Contoso Ltd wants to apply
 for a job in an unrelated company, Alpine Ski House. In this case, the sign-in
-will be unsuccessful if the employee tries to use his or her Azure AD
+will be unsuccessful if the employee tries to use Azure AD
 credentials from Contoso Ltd.
 
 Create and maintain a profile
@@ -107,11 +103,11 @@ profile is created, it can be used to apply for jobs that the candidate is
 interested in. Profiles also help Attract recommend the right jobs to
 candidates.
 
->   [!NOTE] If a candidate uses an email id to login using one of the
->   authentication providers above, that email id is defaulted as the contact
->   email id associated with the profile. However, the latter can be changed at
+>   [!NOTE] If a candidate uses an email ID to login using one of the
+>   authentication providers listed above, that email ID will default to the contact
+>   email ID associated with the profile. However, the latter can be changed at
 >   any time is completely independent of the former. Attract will always use
->   the contact email id associate with your profile for all email
+>   the contact email ID  to associate with your profile for all email
 >   communications.
 
 Find the right job
@@ -127,14 +123,14 @@ that are recommended to a candidate are based on the candidate's past
 applications, profile, and resumes.
 
 >   [!NOTE] Job recommendations are shown only if at least 10 jobs are posted on
->   the career site, and if the candidate has completed his or her profile.
+>   the career site, and if the candidate has completed their profile.
 
 Apply for jobs
 --------------
 
 After candidates find the right job, they can apply by using the **Apply**
 button on the job details page. At this point, candidates can either create a
-brand-new profile or review the information in their existing profile.
+new profile or review the information in their existing profile.
 Candidates can also upload a resume, as required, and then submit the job
 application.
 
@@ -146,7 +142,7 @@ the navigation bar at the top of the page to view their open and closed
 applications. When candidates open one of their applications, they see the
 current stage and any pending action items that they must complete. For example,
 if a candidate must provide potential dates for an in-person interview, the page
-shows his or her options.
+shows the available options.
 
 Internal jobs
 -------------
