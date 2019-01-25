@@ -35,6 +35,7 @@ ms.dyn365.ops.version: 8.1
 This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Russian regulations. 
 
 ## Advance holders
+
 - [Advance holders](rus-advance-holders.md)
 - [Create an advance holder](emea-advance-holders.md#create-an-advance-holder)
 - [Daily operations for advance holders](rus-advance-holders-daily-operations.md)
@@ -46,7 +47,13 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up and process payment orders](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-payment-order-settings-processing)
 
-## Russia fixed assets
+## VAT
+
+- [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
+- [VAT declaration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration)
+- [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
+
+## Fixed assets (Russia)
 
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
 - [Register fixed assets acquisitions](rus-register-acquisition.md)
@@ -63,6 +70,10 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Depreciation bonuses](rus-bonus-depreciation.md)
 - [Calculate depreciation](rus-depreciation-calculation.md)
 
+## Reporting
+
+- [Financial reporting](rus-financial-reports.md)
+
 ## Additional resources
 
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
@@ -72,8 +83,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up officials](rus-officials.md)
-- [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Invoices for payment](rus-invoice-payment.md)
-- [Financial reporting](rus-financial-reports.md)
-- [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
+
+
