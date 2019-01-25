@@ -79,11 +79,11 @@ Before using the fiscal integration functionality, the following settings should
 
 3. Create connector functional profiles and connector technical profiles.
 
-	- Create a **Connector functional profile** in **Retail > Channel setup > Fiscal integration > Connector functional profiles** for each combination of a fiscal connector and a fiscal document provider related to this fiscal connector.
-		- Select a connector name.
+	- Create a **Connector functional profile** in **Retail > Channel setup > Fiscal integration > Connector functional profiles** for each combination of a fiscal connector and a fiscal document provider related to this fiscal connector:
+		- Select a connector name;
 		- Select a document provider.
 
-		Data mapping parameters could be changed in a connector functional profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration.
+		Data mapping parameters can be changed in a connector functional profile. Click the button **Update** if you want to restore the default parameters defined in the fiscal document provider configuration.
 
 		#### Examples 
 
@@ -94,14 +94,17 @@ Before using the fiscal integration functionality, the following settings should
         | Tender types mapping | TenderType : value | Cash : 1, Card : 2 |
   
 		>[!NOTE]
-		> Connector functional profiles are company-specific. So, if you plan to use the same combination of a fiscal connector and a fiscal document provider in several companies, every company should have its own connector functional profile.
+		> Connector functional profiles are company-specific. If you plan to use the same combination of a fiscal connector and a fiscal document provider in several companies, every company should have its own connector functional profile.
 
-	- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector.
-		- Select a connector name.
+	- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector:
+		- Select a connector name;
 		- Select a connector type: 
 			- **Local** - select this type for devices connected to a hardware station.
-      
-		Parameters on tabs **Device** and **Settings** could be changed in a connector technical profile. Click button **Update** if you want to restore the default parameters defined in a fiscal document provider configuration. While loading a new version of an XML configuration, user gets an Infolog-message notifying if the current fiscal connector or fiscal document provider is already in use. This procedure does not override manual changes made in connector functional profiles and connector technical profiles earlier. To apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page or the **Connector technical profiles** page.
+
+		>[!NOTE]
+		> Only local connectors are supported currently.
+
+		Parameters on tabs **Device** and **Settings** can be changed in a connector technical profile. Click the button **Update** if you want to restore the default parameters defined in the fiscal document provider configuration. While loading a new version of an XML configuration, a massage will be displayed notifying the user that the current fiscal connector or fiscal document provider is already in use. This procedure does not override manual changes made in connector functional profiles and connector technical profiles earlier. To apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page or the **Connector technical profiles** page.
 
 4.  Create **Fiscal connector groups**.
 
