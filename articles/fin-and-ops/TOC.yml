@@ -1269,6 +1269,8 @@
       href: ../financials/general-ledger/electronic-messaging.md
   - name: Localization and regulatory features
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
+      - name: Regulatory updates
+      - href: ../financials/localizations/regulatory-updates.md
     items:
       - name: Australia
         href: ../financials/localizations/australia.md
