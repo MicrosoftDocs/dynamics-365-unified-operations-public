@@ -48,6 +48,6 @@ When a month is used in the Date column, the feature is planned to be delivered 
 |      March 2019          |   10.0.0      |    Malaysia     |Malaysia replaces GST with SST sales & service tax        |
 
 ## Additional resources
-- Planned & released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (Log in required)
-- For a list of the localizions that are supported for Dynamics 365 for Finance and Operations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
+- Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (log in required).
+- For a list of the localizations that are supported for Dynamics 365 for Finance and Operations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
