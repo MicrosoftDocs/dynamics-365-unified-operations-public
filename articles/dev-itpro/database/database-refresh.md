@@ -115,8 +115,8 @@ The Microsoft Service Engineering team will take your environment offline, compl
 
 ## Known issues
 
-### Refresh is denied for environments running Platform Update 3 or earlier
-The database refresh process cannot be completed if the environment is running PU3 or earlier.  Please see the list of currently supported Platform Updates.
+### Refresh is denied for environments running Platform update 3 or earlier
+The database refresh process cannot be completed if the environment is running Platform update 3 or earlier.  Please see the list of currently supported Platform updates.
 
 ### Incompatible version of Financial Reporting between source and target environments
 The database refresh process (self-service or via service request) cannot be completed successfully if the version of Financial Reporting is different between the source and target environment. To resolve this issue, update both environments to have the latest version of Financial Reporting.
