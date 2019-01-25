@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 24 (MONTH 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/23/2019
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,6 +69,8 @@ Some capabilities that will be included are:
     advanced integration scenarios
 
 -   Expose business events as 'triggers' in Microsoft Flow
+
+For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
 
 
 ## New APIs
