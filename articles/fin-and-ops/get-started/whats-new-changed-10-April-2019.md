@@ -70,6 +70,11 @@ This functionality enables returns across multiple customer orders and invoices 
 
 For more information, see [Return items across multiple customer orders and invoices](../../retail/multireturn.md)
 
+### Loyalty changes
+Functionality was added to enhance the loyalty features in Dynamics 365 for Retail.
+
+For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md)
+
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10, sign in to Lifecycle Services (LCS) and view the [KB article](ADD LINK).
