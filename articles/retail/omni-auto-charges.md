@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form:  
-# ROBOTS: 
+# ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: 10.0
 
 # Omni-channel advanced auto charges
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic provides information on configuration and deployment of the advanced auto-charges feature which are available in Dynamics 365 for Retail version 10.0.
