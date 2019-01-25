@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laneswenka
-ms.search.validFrom: 2019-01-22
+ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
