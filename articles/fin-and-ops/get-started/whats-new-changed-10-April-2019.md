@@ -60,6 +60,11 @@ When the new advanced auto-charges features are enabled in Dynamics 365 for Reta
 
 For more information, see [Omni-channel advanced auto charges](../../retail/omni-auto-charges.md).
 
+### Retail price reports
+With this new functionaity, store managers can create reports detailing recent or upcoming price changes.
+
+For more information, see [Retail pice reports](../../retail/retail-price-report.md).
+
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10, sign in to Lifecycle Services (LCS) and view the [KB article](ADD LINK).
