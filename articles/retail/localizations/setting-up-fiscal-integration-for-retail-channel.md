@@ -145,35 +145,36 @@ Before using the fiscal integration functionality, the following settings should
 
 7. Validate the fiscal registration process.
   
-	Open page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) and click button **Validate** to check the fiscal registration process. It’s recommended to run such a validation in the following cases:
-	- For a new registration process after all the settings are completed, including assigning to POS functionality profiles and hardware profiles.
-	- After making some changes to an existing registration process that may lead to selection of a different fiscal connector in run-time (for example, changing a connector group in the fiscal registration process, or enabling a connector functional profile in a connector group, or adding a new connector functional profile to a connector group).
-	- After making changes in the connector technical profiles assignment to hardware profiles.
+	Open the page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) and click **Validate** to validate the fiscal registration process. It’s recommended to run such a validation in the following cases:
+	
+	- For a new registration process after all the settings are completed, including assigning to POS functionality profiles and hardware profiles;
+	- After making some changes to an existing fiscal registration process that may result in selecting a different fiscal connector in run-time (for example, changing the connector group for a fiscal registration process step, enabling a connector functional profile in a connector group, or adding a new connector functional profile to a connector group);
+	- After making changes in the assignment of connector technical profiles to hardware profiles.
       
 8. Open the **Distribution scheduler** page and run the job **1070** to transfer data to the Channel database.
 
 ## Setting up fiscal texts for discounts
  
-In some cases, it's required to print a special text in a fiscal receipt if a discount was applied. You can set up a fiscal text for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**).  
+In some cases, it is required to print a special text in a fiscal receipt if a discount is applied. You can set up fiscal texts for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**):
 
-- For manual discounts applied on POS a fiscal text should be defined for the Info code or Info code group specified as the **Product discount** info code in the POS functionality profile. You can find more details regarding info codes in the topic [Info codes and info code groups](../info-codes-retail).
-- Click button **Text for fiscal receipt** on the **Fiscal connector groups** page.
-- On tab **Info codes** click button **Add** and select an Info code or Info code group.
-- Select the **Info code number**.
-- Select the **Subcode number** if it's required for the selected info code.
-- Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
-- Set the parameter **Print user input on fiscal receipt** to **Yes** if order to override the text in a fiscal receipt with information entered by user on POS manually. This option applies to the info codes with Input type **Text** only.
+- For manual discounts applied on POS a fiscal text should be set for the info code or info code group specified as the **Product discount** info code in the POS functionality profile. See [Info codes and info code groups](../info-codes-retail) for more details about info codes.
+	- Click **Text for fiscal receipt** on the **Fiscal connector groups** page.
+	- On the tab **Info codes** click **Add** and select an info code or info code group.
+	- Select the **Info code number**.
+	- Select the **Subcode number** if it is required for the selected info code.
+	- Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
+	- Set the parameter **Print user input on fiscal receipt** to **Yes** in order to override the text in a fiscal receipt with the information entered by user on POS manually. This option applies to info codes with Input type **Text** only.
     
 	>[!NOTE]
 	> You can specify a fiscal text for several info codes to support such scenarios as using of info code groups, linked info codes and triggered info codes. In result a fiscal receipt will contain a fiscal text from all info codes linked with a transaction line where the discount was applied. 
 
-	- For channel-specific discounts a fiscal text should be defined for the Discount ID. You can find more details regarding discounts in these topics: [Retail discounts](../retail-discounts-overview), [Define channel-specific discounts](../define-channel-specific-discounts).
-		- Click button **Text for fiscal receipt** on the **Fiscal connector groups** page.
-		- On tab **Discounts** click button **Add** and select a Discount ID.
-		- Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
+- For channel-specific discounts a fiscal text should be defined for the Discount ID. See [Retail discounts](../retail-discounts-overview) and [Define channel-specific discounts](../define-channel-specific-discounts) to learn more about discounts.
+	- Click **Text for fiscal receipt** on the **Fiscal connector groups** page.
+	- On the tab **Discounts** click **Add** and select a Discount ID.
+	- Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
 
 	>[!NOTE]
-	> If several discounts were applied to the same transaction line, a fiscal receipt would contain a fiscal text from all discounts linked with that transaction line. 
+	> If several discounts are applied to the same transaction line, a fiscal receipt would contain a fiscal text from all discounts linked with that transaction line. 
 
 ## Error handling settings
 
