@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database movement operations home page
-description: This topic provides links to Quick Start guides and tutorials available for Database Movement features in Lifecycle Services. 
+description: This topic provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
 manager: AnnBe
 ms.date: 01/25/2019
@@ -36,7 +36,7 @@ Database movement operations are a suite of self-service actions that can be use
 
 In this topic, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
 
-## Database movement Quick Start guides
+## Database movement quick start guides
 Learn how to perform the individual operations on your Standard or Premier Acceptance Test environments:
  * [Refresh database](database-refresh.md)
  * [Export database](export-database.md)
