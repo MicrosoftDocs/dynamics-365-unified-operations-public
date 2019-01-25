@@ -46,18 +46,16 @@ Before using the fiscal integration functionality, the following settings should
 
 1. Update retail parameters.
 
- 	- Set the parameter **Enable fiscal integration** to **Yes** on tab General of the **Retail shared parameters** page.
+ 	- On the **Retail shared parameters** page: 
+		- Set the parameter **Enable fiscal integration** to **Yes** on **General** tab.
+ 		- Define the number sequences for the following references:
+			- Fiscal technical profile number
+			- Fiscal connector group number
+			- Registration process number
+	- On the **Retail parameters** page, define the number sequence for the fiscal functional profile number.
 
- 	- Define the number sequence on the **Retail parameters** page for the fiscal functional profile number.
-  
- 	- Define the number sequences on the **Retail shared parameters** page for the following references:
-  
-		- Fiscal technical profile number
-		- Fiscal connector group number
-		- Registration process number
-
-    >[!NOTE]
-     > Number sequences are optional. All fiscal integration entities might have numbers filled in either from a number sequence or manually.
+	>[!NOTE]
+	> Number sequences are optional. All fiscal integration entities might have numbers filled in either from a number sequence or manually.
 
 2. Upload configurations of two components included in the fiscal integration sample: a fiscal connector and a fiscal document provider.
 
