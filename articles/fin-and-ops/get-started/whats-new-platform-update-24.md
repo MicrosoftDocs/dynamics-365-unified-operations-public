@@ -70,6 +70,8 @@ Some capabilities that will be included are:
 
 -   Expose business events as 'triggers' in Microsoft Flow
 
+For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
+
 ## New APIs
 
 New APIs have been added to help data integration retrieve errors that occurred during the import execution runs in a data project. For more information, see [Data management package REST API](../../dev-itpro/data-entities/data-management-api.md).
