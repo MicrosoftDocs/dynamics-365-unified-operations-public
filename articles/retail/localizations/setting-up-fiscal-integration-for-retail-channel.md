@@ -108,7 +108,7 @@ Before using the fiscal integration functionality, the following settings should
 
 4.  Create **Fiscal connector groups**.
 
-	Open the **Retail > Channel setup > Fiscal integration > Fiscal connector group** page. A connector group is a subset of functional profiles linked with fiscal connectors that perform identical functions and are used at the same stage within a fiscal registration process.
+	Open the **Retail > Channel setup > Fiscal integration > Fiscal connector group** page. A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process. For example, if several fiscal printer models can be used in a retail store, fiscal connectors for these fiscal printers may be combined in a fiscal connector group. 
 
 	- Add functional profiles to the connector group. Click **Add** on the **Functional profiles** page and select a profile number. Within a connector group, each fiscal connector can only have one functional profile.
 
@@ -116,35 +116,32 @@ Before using the fiscal integration functionality, the following settings should
 
 5. Create a **Fiscal registration process**.
 
-	Open the **Retail > Channel setup > Fiscal integration > Fiscal registration processes** page and create a new record for each unique process of the fiscal integration. A registration process is defined by the sequence of the registration steps and the connector group used on each step. 
+	Open the **Retail > Channel setup > Fiscal integration > Fiscal registration processes** page and create a new record for each unique process of fiscal registration. A fiscal registration process is defined by the sequence of registration steps and the connector group used on each step. 
   
 	- Add registration steps to the process:
-		- Click **Add**.
-		- Select a connector type. 
-	- Select an appropriate connector group in the field **Group number**
+		- Click **Add**;
+		- Select a connector type; 
+		- Select an appropriate connector group in the field **Group number**
 
 6. Assign entities of the fiscal registration process to POS profiles. 
  
-	6.1.  Assign fiscal registration process to POS functionality profiles on the **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** page. 
+	6.1.  Assign the fiscal registration process to POS functionality profiles on the **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** page. 
   
 	Click **Edit** and select a **Process number** on the **Fiscal registration process** tab.      
 
-	6.2. Assign connector technical profiles to hardware profiles on the Retail > Channel setup > POS setup > POS profiles > Hardware profiles page.
+	6.2. Assign connector technical profiles to hardware profiles on the **Retail > Channel setup > POS setup > POS profiles > Hardware profiles** page.
     
-	Click **Edit** and add a line on the **Fiscal peripherals** tab, select a connector technical profile in the field **Profile number**.
+	Click **Edit**, add a line on the **Fiscal peripherals** tab, and select a connector technical profile in the field **Profile number**.
 
 	>[!NOTE]
-	> You can add several technical profiles to the same hardware profile. However, this is not supported if a hardware profile or POS functionality profile has more than one intersection with any connector group. 
+	> You can add several technical profiles to the same hardware profile. However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group. 
 
-	While performing the fiscal registration a fiscal registration process from the current POS functionality profile is used. At the same time, flow of the fiscal registration is also defined by other parts of the fiscal registration process as well as by some predefined parameters of components included in the fiscal integration sample, like a Commerce runtime extension (CRT) and a Hardware station extension (HWS):
+	The fiscal registration flow is defined by the fiscal registration process as well as by some parameters of fiscal integration components: the Commerce runtime extension for the fiscal document provider and the Hardware station extension for the fiscal connector:
 
-		-  The subscription of events and transactions to the fiscal registration is predefined in the CRT extension.
-
-		- CRT extension is also responsible for searching a fiscal connecter that is going to be used for the fiscal registration. It matches connector functional profiles that are included in the connector group specified on the current step of the fiscal registration process with the connector technical profile assigned to the hardware profile of the hardware station which POS is paired to.
-
-		- CRT extension uses the **Data mapping** settings from the fiscal document provider configuration for transformation of some transaction/event data such as taxes and payments while generating a fiscal document.
-
-		- HWS extension can either send a fiscal document prepared by the document provider as-is or parse it and transform into a sequence of commands of the device API, depending on how the communication is handled.  
+	- The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.
+	- The fiscal document provider is also responsible for the identification of the fiscal connector to be used for fiscal registration. It matches the connector functional profiles that are included in the connector group specified on the current step of the fiscal registration process with the connector technical profile assigned to the hardware profile of the hardware station which POS is paired to.
+	- The fiscal document provider uses the **Data mapping** settings from the fiscal document provider configuration for the transformation of transaction/event data such as taxes and payments while generating a fiscal document.
+	- The fiscal connector can either send a fiscal document generated by the fiscal document provider to the fiscal device as-is or parse it and transform into a sequence of commands of the device API, depending on how the communication is handled.  
 
 7. Validate the fiscal registration process.
   
