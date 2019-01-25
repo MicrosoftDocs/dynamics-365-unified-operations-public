@@ -49,6 +49,5 @@ When a month is used in the Date column, the feature is planned to be delivered 
 
 ## Additional resources
 - Planned & released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (Log in required)
-- For additional information about Microsoft supported localization and translation coverage, see the [Product localization and translation availability guide](http://download.microsoft.com/documents/en-us/dynamics/Dynamics_365_for_Finance_and_Operations_Product_Availability_Guide_July_2017.pdf)
 - For a list of the localizions that are supported for Dynamics 365 for Finance and Operations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
