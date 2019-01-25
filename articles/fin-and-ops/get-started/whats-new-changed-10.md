@@ -45,6 +45,14 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 [Check out the April '19 release notes](ADD LINK). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
+### Bug fixes
+
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](ADD LINK).
+
+### Platform update 24
+
+Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (January 2019)](whats-new-platform-update-24.md).
+
 ### Catch weight product processing with warehouse management
 This feature allows you to use catch weight products within warehouse management processes. This feature is only available to a limited audience for this release. 
 
@@ -56,29 +64,21 @@ This feature allows for certain payment types to be restricted for refund if the
 For more information, see [Restrict payment methods for returns without a receipt](../../retail/payment-methods-restrictions.md).
 
 ### Omni-channel advanced auto charges
-When the new advanced auto-charges features are enabled in Dynamics 365 for Retail, orders created in any supported Retail channel (point of sale (POS), call center, and online), can take advantage of the auto charges configurations defined in Dynamics for both header and line-level related charges.  
+With the advanced auto-charges features in Dynamics 365 for Retail, orders created in any supported Retail channel (point of sale (POS), call center, and online), can take advantage of the auto charges configurations defined in Dynamics 365 for both header and line-level related charges.  
 
 For more information, see [Omni-channel advanced auto charges](../../retail/omni-auto-charges.md).
 
 ### Retail price reports
-With this new functionaity, store managers can create reports detailing recent or upcoming price changes.
+With this new functionality, store managers can create reports detailing recent or upcoming price changes.
 
-For more information, see [Retail pice reports](../../retail/retail-price-report.md).
+For more information, see [Retail price reports](../../retail/retail-price-report.md).
 
 ### Return items across multiple customer orders and invoices
-This functionality enables returns across multiple customer orders and invoices in Microsoft Dynamics 365 for Retail.
+This functionality enables returns across multiple customer orders and invoices in Dynamics 365 for Retail.
 
-For more information, see [Return items across multiple customer orders and invoices](../../retail/multireturn.md)
+For more information, see [Return items across multiple customer orders and invoices](../../retail/multireturn.md).
 
 ### Loyalty changes
-Functionality was added to enhance the loyalty features in Dynamics 365 for Retail.
+Functionality has been added to enhance the loyalty features in Dynamics 365 for Retail.
 
-For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md)
-
-### Bug fixes
-
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10, sign in to Lifecycle Services (LCS) and view the [KB article](ADD LINK).
-
-### Platform update 24
-
-Microsoft Dynamics 365 for Finance and Operations version 10 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (January 2019)](whats-new-platform-update-24.md).
+For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md).
