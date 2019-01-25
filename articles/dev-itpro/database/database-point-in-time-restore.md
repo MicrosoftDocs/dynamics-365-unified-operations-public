@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quickstart: Database point-in-time restore (PITR)
+title: Database point-in-time restore (PITR)
 description: This topic explains how to perform a point-in-time restore of a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Quickstart: Database point-in-time restore (PITR)
+# Database point-in-time restore (PITR)
 
 [!include [banner](../includes/banner.md)]
 
