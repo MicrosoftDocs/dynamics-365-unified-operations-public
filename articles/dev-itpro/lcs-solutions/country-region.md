@@ -48,10 +48,11 @@ The following resources provides guidance and information that can help develope
 -   [Classify localization features](classify-localization-features.md)
 -   [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## Localization updates and communication
+## Regulatory updates and communication
 The following resources provide information about planned and new localization features. 
 
-### Localization updates
+### Regulatory updates
+-   [Regulatory updates](../../financials/localizations/regulatory-updates.md)
 -   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
 -   [LCS issue search](../lifecycle-services/issue-search-lcs.md) (Updated daily)
 
