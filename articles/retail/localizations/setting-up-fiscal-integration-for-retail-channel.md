@@ -42,6 +42,7 @@ Setting up fiscal integration includes the following tasks:
 - Assign connector technical profiles to hardware profiles.
 
 ## How to set up a fiscal registration process
+
 Before using the fiscal integration functionality, the following settings should be done:
 
 1. Update retail parameters.
@@ -55,26 +56,26 @@ Before using the fiscal integration functionality, the following settings should
 	- On the **Retail parameters** page, define the number sequence for the fiscal functional profile number.
 
 	>[!NOTE]
-	> Number sequences are optional. All fiscal integration entities might have numbers filled in either from a number sequence or manually.
+	> Number sequences are optional. All fiscal integration entities may have numbers populated either from number sequences or manually.
 
-2. Upload configurations of two components included in the fiscal integration sample: a fiscal connector and a fiscal document provider.
+2. Upload configurations of fiscal connectors and fiscal document providers.
 
-	Fiscal document providers are responsible for generating documents representing events and transactions registered on POS, that are the object of the fiscal registration, in a format supported by a specific fiscal device or fiscal service. For example, a fiscal document provider generates a fiscal receipt in XML format.
+	A fiscal document provider is responsible for the generation of fiscal documents representing retail transactions and events registered on POS in a format further used for the interaction with a fiscal device or service. For example, a fiscal document provider may generate a fiscal receipt in XML format.
 
-	Fiscal connectors are responsible for communication with fiscal devices and services. For example, a fiscal connector sends a fiscal receipt in XML-format created by a fiscal document provider to a fiscal printer.
+	A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector may send a fiscal receipt in XML-format created by a fiscal document provider to a fiscal printer.
 
-	For more details about fiscal integration components, see [Components of fiscal integration sample](fiscal-integration-for-retail-channel#components-of-fiscal-integration-sample).
+	For more details about fiscal integration components, see [Fiscal registration process and fiscal integration sample for fiscal device](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-sample-for-fiscal-device).
 
-	- Load an XML configuration on the **Fiscal connectors** page (**Retail > Channel setup > Fiscal integration > Fiscal connectors**) for each device or service that you plan to use for fiscal integration purposes. 
+	- On the **Fiscal connectors** page (**Retail > Channel setup > Fiscal integration > Fiscal connectors**) load an XML configuration for each device or service that you plan to use for fiscal integration purposes. 
   
 		By clicking button **View**, you may view all functional and technical profiles related to the current fiscal connector.
 
-	-  Load an XML configuration on the **Fiscal document providers** page (**Retail > Channel setup > Fiscal integration > Fiscal document providers**) for each device or service that you plan to use.
+	-  On the **Fiscal document providers** page (**Retail > Channel setup > Fiscal integration > Fiscal document providers**) load an XML configuration for each device or service that you plan to use.
  
 		By clicking button **View**, you may view all functional profiles related to the current fiscal document provider.
 
-     >[!NOTE]
-      > Data mapping is considered as a part of the fiscal document provider. To set up different data mappings for the same connector (like state-specific regulations), you should create different fiscal document providers.
+	>[!NOTE]
+	> Data mapping is considered as a part of a fiscal document provider. To set up different data mappings for the same connector (like state-specific regulations), you should create different fiscal document providers.
 
 3. Create connector functional profiles and connector technical profiles.
 
