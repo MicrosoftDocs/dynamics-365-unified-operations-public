@@ -63,6 +63,6 @@ The restore database process always creates a new database based on a previous p
 Going forward, the Lifecycle Services team will work to improve point-in-time restore by leveraging the restore history of deleted databases.  This will allow continual restore back to the same point-in-time for scenarios such as destructive testing.  This will be fixed in an upcoming release of LCS.
 
 ### Restore is denied for environments running Platform update 3 or earlier
-The restore database process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the list of currently supported Platform Updates.
+The restore database process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the list of currently supported Platform updates.
 
 
