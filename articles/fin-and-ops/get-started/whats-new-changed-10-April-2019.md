@@ -65,6 +65,11 @@ With this new functionaity, store managers can create reports detailing recent o
 
 For more information, see [Retail pice reports](../../retail/retail-price-report.md).
 
+### Return items across multiple customer orders and invoices
+This functionality enables returns across multiple customer orders and invoices in Microsoft Dynamics 365 for Retail.
+
+For more information, see [Return items across multiple customer orders and invoices](../../retail/multireturn.md)
+
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10, sign in to Lifecycle Services (LCS) and view the [KB article](ADD LINK).
