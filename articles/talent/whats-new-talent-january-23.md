@@ -42,8 +42,8 @@ This topic describes features that are either new or changed in Core HR.
 ### Import of employee fixed compensation not working when creating new fixed compensation records
 A change has been made to the employee fixed compensation entity to retrieve the compensation level upon import. Prior to this release, a message was displayed indicating that the level was required.
 
-### Remove the minimum balance field from the time off request dialog
-The minimum balance field has been removed from the time off request dialog. This change affects all areas where time off can be requested.
+### Remove the minimum balance field from the time off request dialog box
+The **Minimum balance** field has been removed from the **Time off request** dialog box. This change affects all areas where time off can be requested.
 
 ### Data upgrade for compensation levels not updating in all scenarios
 A change has been made to update the compensation level on fixed compensation plans. This change will populate the compensation level on fixed plans for the job assigned to the employee.
