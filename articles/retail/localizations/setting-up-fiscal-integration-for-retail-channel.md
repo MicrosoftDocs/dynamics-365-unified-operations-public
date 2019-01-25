@@ -157,7 +157,7 @@ Before using the fiscal integration functionality, the following settings should
  
 In some cases, it is required to print a special text in a fiscal receipt if a discount is applied. You can set up fiscal texts for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**):
 
-- For manual discounts applied on POS a fiscal text should be set for the info code or info code group specified as the **Product discount** info code in the POS functionality profile. See [Info codes and info code groups](../info-codes-retail) for more details about info codes.
+- For manual discounts applied on POS a fiscal text should be set for the info code or info code group specified as the **Product discount** info code in the POS functionality profile:
 	- Click **Text for fiscal receipt** on the **Fiscal connector groups** page.
 	- On the tab **Info codes** click **Add** and select an info code or info code group.
 	- Select the **Info code number**.
@@ -168,7 +168,7 @@ In some cases, it is required to print a special text in a fiscal receipt if a d
 	>[!NOTE]
 	> You can specify a fiscal text for several info codes to support such scenarios as using of info code groups, linked info codes and triggered info codes. In result a fiscal receipt will contain a fiscal text from all info codes linked with a transaction line where the discount was applied. 
 
-- For channel-specific discounts a fiscal text should be defined for the Discount ID. See [Retail discounts](../retail-discounts-overview) and [Define channel-specific discounts](../define-channel-specific-discounts) to learn more about discounts.
+- For channel-specific discounts a fiscal text should be defined for the Discount ID:
 	- Click **Text for fiscal receipt** on the **Fiscal connector groups** page.
 	- On the tab **Discounts** click **Add** and select a Discount ID.
 	- Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
@@ -178,29 +178,29 @@ In some cases, it is required to print a special text in a fiscal receipt if a d
 
 ## Error handling settings
 
-Fiscal registration processes have some additional settings to define possible options when the fiscal registration has failed. For more information about the error handling feature in scope of the fiscal integration functionality, see [Error handling](fiscal-integration-for-retail-channel#error-handling).
+Error handling options available in fiscal integration are specified in the fiscal registration process. For more information about error handling in fiscal integration, see [Error handling](fiscal-integration-for-retail-channel#error-handling).
 
-1. On the page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) you can activate the following parameters for each registration process step:
+1. On the page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) you can activate the following parameters for each fiscal registration process step:
 
-	- **Allow skip** - this parameter enables the **Skip** option in error handling dialog.
-	- **Allow mark as registered** - this parameter enables the **Mark as registered** option in error handling dialog.
+	- **Allow skip**: this parameter enables the **Skip** option in the error handling dialog;
+	- **Allow mark as registered**: this parameter enables the **Mark as registered** option in the error handling dialog.
 
-2. Options **Skip** and **Mark as registered** in the error handling dialog require the permission **Allow skip or mark as registered**. If parameters **Allow skip** or **Allow mark as registered** are activated, then this permission must be enabled to some of users at least. 
+2. Options **Skip** and **Mark as registered** in the error handling dialog require the permission **Allow skip or mark as registered**. 
 
-	- Open the **Permission groups** page (**Retail > Employees > Permission groups**) page, and enable the permission **Allow skip or mark as registered**.
+	- Open the **Permission groups** page (**Retail > Employees > Permission groups**) page and enable the permission **Allow skip or mark as registered**.
 
-3. Options **Skip** and **Mark as registered** in the error handling dialog allow users to enter an additional information on POS when the fiscal registration has failed. The info codes **Skip** and **Mark as registered** should be specified on a fiscal connector group to make is possible entering additional details on POS and saving this information as an Info code transaction linked with a fiscal transaction. You can find more details regarding info codes in the topic [Info codes and info code groups](../info-codes-retail).
+3. Options **Skip** and **Mark as registered** allow operators to enter additional information when fiscal registration fails. The info codes **Skip** and **Mark as registered** should be specified on a fiscal connector group to enable this. The entered information is saved as an Info code transaction linked to the fiscal transaction. See [Info codes and info code groups](../info-codes-retail) for more details about info codes.
 
 	>[!NOTE]
-	> The trigger function with the value *Product* is not supported for the info codes, that are used as **Skip** and **Mark as registered** in fiscal connector groups.
+	> The trigger function with the value *Product* is not supported for the info codes that are used as **Skip** and **Mark as registered** in fiscal connector groups.
 
 	- Open the **Fiscal connector groups** page.
-	- On the tab **Info codes** select info codes or info code groups in fields **Skip** and **Mark as registered**.
+	- On the tab **Info codes** select info codes or info code groups in the fields **Skip** and **Mark as registered**.
 
 	>[!NOTE]
-	> One fiscal document and one non-fiscal document could be generated within any step of the fiscal registration process. A fiscal document provider extension identifies every type of event or transaction as related to fiscal or non-fiscal documents. The error handling feature applies to the fiscal documents only. 
-	> *Fiscal document* - a mandatory document confirming results of the fiscal registration (e.g., a fiscal receipt).
-	> *Non-fiscal document* - a supplementary document covering an event or a transaction or its part, which is not an object of the fiscal registration (e.g., a gift card slip or a customer deposit slip).
+	> One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process. A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents. The error handling feature applies to fiscal documents only. 
+	> *Fiscal document* - a mandatory document that should be registered successfully (e.g., a fiscal receipt);
+	> *Non-fiscal document* - a supplementary document for the transaction or event (e.g., a gift card slip).
 
      
 ## Setting up fiscal X/Z reports from POS
