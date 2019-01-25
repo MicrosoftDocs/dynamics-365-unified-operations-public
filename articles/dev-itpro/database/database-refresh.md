@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quickstart: Refresh database 
+title: Refresh database 
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Quickstart: Refresh database 
+# Refresh database 
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database for Microsoft Dynamics 365 for Finance and Operations to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database for  Dynamics 365 for Finance and Operations to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
 > [!Important]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.  
@@ -49,7 +49,7 @@ With the goal of providing Data Application Lifecycle Management (also referred 
 5. After the refresh operation is completed, you must **sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
 
 ### Refresh operation failed
-In case of failure, the option to perform a rollback is available.  By clicking the **Rollback** option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly-refreshed data.  
+In case of failure, the option to perform a rollback is available.  By clicking the **Rollback** option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization, that is present in the target sandbox, cannot complete a database synchronization with the newly refreshed data.  
 
 To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
 
@@ -63,13 +63,13 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table.
-* All users except for the administrator are disabled.
+* All users except for the administrator will be unavailable.
 * All batch jobs are set to Withhold status.
 
 ### Environment administrator
-The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config on the target.  This should be the same value as that of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.  
+The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config file on the target.  This should be the same value as that of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.  
 
-If you have used the Admin User Provisioning Tool on your environment to change the web.config to a different value, it may not match what is in Lifecycle Services.  If you require a different account to be used, you will need to deallocate and delete the target sandbox, and redeploy selecting another account. After this, you can perform another refresh database action to restore the data.
+If you have used the Admin User Provisioning Tool on your environment to change the web.config file to a different value, it may not match what is in Lifecycle Services.  If you require a different account to be used, you will need to deallocate and delete the target sandbox, and redeploy selecting another account. After this, you can perform another refresh database action to restore the data.
 
 ### Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
@@ -80,9 +80,9 @@ Here is the list of requirements and conditions of operation for a database refr
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
 - Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
-- All users except the Admin user and other internal service user accounts will be disabled. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system.
+- All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
-- All data management framework recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
+- All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
 
 ## Database refresh via service request
@@ -94,7 +94,7 @@ Here is the list of requirements and conditions of operation for a database refr
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
-1. In LCS, on the Project home page, select **Service requests**.
+1. In LCS, on the **Project** home page, select **Service requests**.
 2. On the **Service requests** page, select **Add** on the toolbar, and then select **Database refresh**.
 3. In the **Request for database refresh** dialog box, follow these steps:
 
@@ -103,7 +103,7 @@ The Microsoft Service Engineering team will take your environment offline, compl
     3. Carefully read and acknowledge the statements that have check boxes next to them.
 
 4. After you submit your request, you are returned to the list of work items. Here, you can view the status of the request, or reschedule or cancel the request.
-5. Ensure no prior servicing request on your environment is awaiting signoff or rollback. Visit your Environment details page and sign off any completed refresh or package deployment.
+5. Ensure no prior servicing request on your environment is awaiting signoff or rollback. Visit the **Environment details** page and sign off any completed refresh or package deployment.
 6. When the Service Engineering team has acknowledged that they can complete your request, the status of the request is changed to **Request accepted**. At this point, you can follow any of these steps:
 
     - Wait for the Service Engineering team to complete the refresh. When the restore is completed, the status is changed to **Succeeded**.
@@ -116,7 +116,7 @@ The Microsoft Service Engineering team will take your environment offline, compl
 ## Known issues
 
 ### Refresh is denied for environments running Platform update 3 or earlier
-The database refresh process cannot be completed if the environment is running Platform update 3 or earlier.  Please see the list of currently supported Platform updates.
+The database refresh process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the list of currently supported Platform updates.
 
 ### Incompatible version of Financial Reporting between source and target environments
 The database refresh process (self-service or via service request) cannot be completed successfully if the version of Financial Reporting is different between the source and target environment. To resolve this issue, update both environments to have the latest version of Financial Reporting.
