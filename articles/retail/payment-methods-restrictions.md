@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: RetailTenderTypeTable
-# ROBOTS: 
+# ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
 
 # Restrict payment methods for returns without a receipt
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Each payment type that a retailer accepts must be configured when the system is set up. This topic describes how certain payment types can be restricted for refund if the returns are made without a receipt.
