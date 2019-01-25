@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+# ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
