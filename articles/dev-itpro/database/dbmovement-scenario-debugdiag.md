@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Database Movement Operations - Debugging and Diagnostics Scenario
+title: Debugging and diagnostics
 description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 1/22/2019
+ms.date: 1/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laneswenka
-ms.search.validFrom: 2019-01-22
+ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Tutorial: Debugging and diagnostics
+# Debugging and diagnostics
 
 [!include [banner](../includes/banner.md)]
 
-Database Movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management ( also referred to as 'DataALM' ).  This tutorial shows how to combine Refresh with Export to retrieve a recent copy of Production data for debugging purposes.
+Database Movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  This tutorial shows how to combine Refresh with Export to retrieve a recent copy of production data for debugging purposes.
 
 In this tutorial, you will learn how to:
 >[!div class="checklist"]
