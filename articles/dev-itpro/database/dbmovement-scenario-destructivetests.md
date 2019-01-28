@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Database Movement Operations - Destructive Testing Scenario
+title: Destructive testing 
 description: This topic explains a destructive testing scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 1/22/2019
+ms.date: 1/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laneswenka
-ms.search.validFrom: 2019-01-22
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-01-31
+ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Tutorial: Destructive testing 
+# Destructive testing 
 
 [!include [banner](../includes/banner.md)]
 
-Database Movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management ( also referred to as 'DataALM' ).  In some situations it is required to perform destructive testing on an environment, which in this context means rendering an environment no longer useful for continued testing.  This is common in an implementation lifecycle during Conference Room Pilots.  This tutorial shows how to use database movement operations to facilitate destructive testing.
+Database Movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  In some situations it is required to perform destructive testing on an environment, which in this context means rendering an environment no longer useful for continued testing.  This is common in an implementation lifecycle during Conference Room Pilots.  This tutorial shows how to use database movement operations to facilitate destructive testing.
 
 In this tutorial, you will learn 2 approaches:
 >[!div class="checklist"]
@@ -52,7 +52,7 @@ If you have prepared a database backup (.bacpac) file that is already at the sta
 ### Backup pros and cons
 The advantage of using backup file assets is that you can continually import the same file to get back to your starting point.  
 
-The disadvantage is that if there are many configurations that must be set after the import completes ( such as batch jobs for exmaple ) but before users can begin it will take more effort prior to each destructive testing session.
+The disadvantage is that if there are many configurations that must be set after the import completes (such as batch jobs for exmaple) but before users can begin it will take more effort prior to each destructive testing session.
 
 ## Using point-in-time restore
 If you did not start with a database backup (.bacpac) file but have instead have the UAT environment in a known good state, you can simply record the date and time in your timezone.  You can then begin the destructive testing and when finished can restore the environment back to the previous time using the below steps:
