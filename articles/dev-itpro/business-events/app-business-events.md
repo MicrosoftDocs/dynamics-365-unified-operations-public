@@ -15,7 +15,6 @@ ms.technology:
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
-# ROBOTS: 
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
