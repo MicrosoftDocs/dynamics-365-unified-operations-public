@@ -98,4 +98,4 @@ To make the **preview** status clear to users, each preproduction build will be 
 
 ## Extensibility enhancements
 
-The Release notes contain information about [the first wave of platform extensibility enhancements for the April 2019 release](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platformextensibility), which are coming with Platform update 24. There are nine enhancements detailed, with one of the highlights being a new onClicking event for form button controls.
+The Release notes contain information about [the first wave of platform extensibility enhancements for the April 2019 release](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility), which are coming with Platform update 24. There are nine enhancements detailed, with one of the highlights being a new onClicking event for form button controls.
