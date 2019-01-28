@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: 8.1.3
 
 ---
 
@@ -41,19 +41,18 @@ In this tutorial, you will learn how to:
 > * Download the database backup
 > * Import and prepare the database for use in a developer environment
 
-An example of this scenario is a customer who has already gone live with Microsoft Dynamics365 for Finance and Operations, and would like to get a recent copy of Production transactions loaded in to their development environment.  This will support debugging a particular transaction, or facilitating the development of new features and reports using realistic datasets.
+An example of this scenario is a customer who has already gone live with Microsoft Dynamics365 for Finance and Operations, and would like to get a recent copy of production transactions loaded in to their development environment.  This will support debugging a particular transaction, or facilitating the development of new features and reports using realistic datasets.
 
 ## Prerequisites
-To perform a refresh operation you must have your Production environment deployed, or you must have at minimum 2 standard user acceptance test (UAT) environments.  To complete this tutorial you must have a developer environment deployed.
+To perform a refresh operation you must have your production environment deployed, or you must have at minimum 2 standard user acceptance test (UAT) environments.  To complete this tutorial you must have a developer environment deployed.
 
 ## Refresh the UAT environment
-This will overwrite the UAT environment with the latest copy of the Production database.  Follow the related [Tutorial: Refresh for training purposes](dbmovement-scenario-general-refresh.md) to complete this step.
+This will overwrite the UAT environment with the latest copy of the production database.  Follow the related [Refresh for training purposes](dbmovement-scenario-general-refresh.md) to complete this step.
 
 ## Backup to the asset library
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
 ## Import the database
-
 After you have downloaded a .bacpac file, you can begin the manual import operation on your Tier 1 environment. When you import the database, we recommend that you follow these guidelines:
 
 - Retain a copy of the existing AxDB database so that you can revert to it later, if needed.
@@ -77,7 +76,6 @@ Here is an explanation of the parameters:
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
 ## Update the database
-
 Run the following SQL script against the imported database. This script adds back the users that you deleted from the source database and correctly links them to the SQL logins for this SQL instance. The script also turns change tracking back on. Remember to edit the final **ALTER DATABASE** statement so that it uses the name of your database.
 
 ```
@@ -155,7 +153,6 @@ ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION =
 To ensure that the current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity, as this is needed to trigger the refresh of store procedure.
 
 ## Start to use the new database
-
 To switch the environment and use the new database, first stop the following services:
 
 - World Wide Web Publishing Service
@@ -167,7 +164,6 @@ After the services have been stopped, rename the AxDB database **AxDB\_orig**, r
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 
 ### Re-provision the target environment
-
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
@@ -175,7 +171,6 @@ To switch back to the original database, reverse this process. In other words, s
 If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
 ## Re-enter data from encrypted and environment-specific fields in the target database
-
 In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. The field names are given in Table.Field format.
 
 | Field name                                               | Where to set the value |
@@ -192,13 +187,13 @@ In the Finance and Operations client, enter the values that you documented for t
 
 ## Community tools
 Looking for more tools to help with importing backup files to your developer environments?  Here are some other sources of information:
+
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools created by the community
 * [Community provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars)
 
 ## Known issues
 
 ### I can't download Management Studio installation files
-
 When you try to download the Management Studio installer, you might receive the following error message:
 
 > Your current security settings do not allow this file to be downloaded.
@@ -210,7 +205,6 @@ To work around this issue, follow these steps to enable file downloads.
 3. Scroll to **Downloads**, and then, under **File download**, select the **Enable** option.
 
 ### Database synchronization fails
-
 When you synchronize the database against the newly imported database from Microsoft Visual Studio, the synchronization might fail, and you might receive the following error message:
 
 > Failed to open SQL connection syncengine.exe exited with code -1.
@@ -233,7 +227,6 @@ WHERE PARM = 'SYSTABVERSION'
 > The value **138** in the preceding query is taken from the event log message, where version 138 was expected in this particular environment.
 
 ### Performance
-
 The following guidelines can help you achieve optimal performance:
 
 - Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
