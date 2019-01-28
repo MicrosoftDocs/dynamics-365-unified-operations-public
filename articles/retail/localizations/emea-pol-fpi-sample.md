@@ -70,7 +70,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 
 ### Default data mapping
 
-The following default data mapping is included in the fiscal document provider configuration provided as part of the fiscal integration sample:
+The following default data mapping is included in the fiscal document provider configuration provided as part of the fiscal integration sample.
 
   - VAT rates mapping:
    
@@ -80,19 +80,19 @@ The following default data mapping is included in the fiscal document provider c
 
      *0 : 0 ;  1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
 
-### Handling gift cards
+### Gift card handling
 
-The fiscal printer integration sample implements the following rules in regard to gift cards:
+The fiscal printer integration sample implements the following rules in regard to gift cards.
 
-- Exclude sales lines related to the operations *Issue gift card* or *Add to gift card* from the fiscal receipt;
+- Exclude sales lines related to the operations **Issue gift card** or **Add to gift card** from the fiscal receipt;
 - Do not print a fiscal receipt if it consists of gift card lines only;
 - Deduct total amount of gift cards issued or re-charged in a transaction from payment lines of the fiscal receipt; 
 - Save calculated adjustments of payment lines in the Channel DB with a reference to a corresponding fiscal transaction;
 - Payment by gift card is considered as a regular payment.
 
-### Handling customer deposits and customer order deposits
+### Customer deposits and customer order deposits
 
-The fiscal printer integration sample implements the following rules in regard to customer deposits and customer order deposits:
+The fiscal printer integration sample implements the following rules in regard to customer deposits and customer order deposits.
 
 - Do not print a fiscal receipt if a transaction is a customer deposit;
 - Do not print a fiscal receipt if a transaction contains a customer order deposit or a customer order deposit refund only;
@@ -102,22 +102,22 @@ The fiscal printer integration sample implements the following rules in regard t
 
 ## Set up Retail for Poland
 
-### Enabling extensions
+### Enable extensions
 
-##### CRT extension components
+##### Commerce runtime (CRT) extension components
 
 The CRT extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, CommerceRuntimeSamples.sln, under **RetailSdk\SampleExtensions\CommerceRuntime**.
 
 1. Find the **Runtime.Extensions.DocumentProvider.PosnetSample** project and build it.
 2. In the **Extensions.DocumentProvider.PosnetSample\bin\Debug** folder, find the **Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
+3. Copy the assembly file to the **CRT extension** folder:
 	- Retail Server: Copy the assembly to the **\bin\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
 	- Local CRT on Modern POS: Copy the assembly to the **\ext** folder under the local CRT client broker location.
 4. Find the extensions configuration file for CRT:
-	- Retail Server: The file is named commerceruntime.ext.config, and it's in the bin\ext folder under the IIS Retail Server site location.
+	- Retail Server: The file is named "commerceruntime.ext.config", and it's in the **bin\ext** folder under the IIS Retail Server site location.
 	- Local CRT on Modern POS: The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 5. Register the CRT change in the extension's configuration file. Add source="assembly" **value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample"**
-6. Restart the Retail service:
+6. Restart the Retail service.
 	- Retail Server: Restart the Retail service site from IIS Manager.
 	- Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
 
@@ -126,9 +126,9 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 1. Find the **Extension.PosnetThermalFVFiscalPrinterSample** project and build it.
 2. In the **Extension.PosnetThermalFVFiscalPrinterSample\bin\Debug** folder, find the **Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll** assembly file.
-3. Copy the files to a deployed Hardware station machine:
+3. Copy the files to a deployed Hardware station machine.
 	- Remote Hardware station: Copy the files to the bin folder under the Microsoft Internet Information Services (IIS) Hardware station site location. Copy printer driver libraries (libposcmbth.dll, libcmbth_serial.dll, cmbth_pl.lng).
-4. Find the configuration file for the Hardware station's extensions. The file is named HardwareStation.Extension.config:
+4. Find the configuration file for the Hardware station's extensions. The file is named "HardwareStation.Extension.config".
 	- Remote Hardware station: The file is located under the IIS Hardware station site location.
 
 5. Add the following section to the composition section of the config file.	
@@ -160,21 +160,21 @@ For more details about the fiscal integration solution design, see [Fiscal regis
 
 ### Request handler
 	
-The request handler DocumentProviderPosnetProtocol is the entry point for the request to generate documents from the fiscal printer.
+The request handler "DocumentProviderPosnetProtocol" is the entry point for the request to generate documents from the fiscal printer.
 
-The handler is inherited from the INamedRequestHandler interface. The Method HandlerName is responsible for returning the name of the handler. It should match the connector document provider name specified in HQ.
+The handler is inherited from the **INamedRequestHandler** interface. The Method **HandlerName** is responsible for returning the name of the handler. It should match the connector document provider name specified in HQ.
 
-The connector supports the following requests:
-- **GetFiscalDocumentDocumentProviderRequest** - Contains information about what document should be generated. Returns a printer-specific document that should be registered in the fiscal printer.
-- **GetSupportedRegistrableEventsDocumentProviderRequest** - Returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
-- **SaveFiscalRegistrationResultDocumentProviderRequest** - Saves the response from the printer.
+The connector supports the following requests.
+- **GetFiscalDocumentDocumentProviderRequest**: Contains information about what document should be generated. Returns a printer-specific document that should be registered in the fiscal printer.
+- **GetSupportedRegistrableEventsDocumentProviderRequest**:- Returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
+- **SaveFiscalRegistrationResultDocumentProviderRequest**:- Saves the response from the printer.
 
 
 ### Configuration
-The configuration file is found in the Configuration folder of the extension project. The purpose of the file is to allow to configure settings for the document provider from the HQ. The file format aligns fiscal integration configuration requirements. The following settings have been added:
-- VAT rates mapping
-- Tender type mapping
-- Deposit payment type
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the document provider from the HQ. The file format aligns fiscal integration configuration requirements. The following settings have been added.
+- VAT rates mapping;
+- Tender type mapping;
+- Deposit payment type.
 
 ## Hardware station extension design
 
@@ -183,19 +183,19 @@ The purpose of the extension (Connector) is to communicate with the fiscal print
 Hardware station extension: **Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.FiscalPrinterHandler**. This extension submits commands generated by the Commerce runtime extension to the fiscal printer by calling the functions of the POSNET driver provided by the manufacturer, and handles device errors.
 
 ### Request handler
-The request handler FiscalPrinterHandler is the entry point for handling the request to the fiscal peripheral device. The handler is inherited from INamedRequestHandler interface. Method HandlerName is responsible for returning the name of the handler, it should match the fiscal connector name specified in HQ.
+The request handler **FiscalPrinterHandler** is the entry point for handling the request to the fiscal peripheral device. The handler is inherited from **INamedRequestHandler** interface. **Method HandlerName** is responsible for returning the name of the handler, it should match the fiscal connector name specified in HQ.
 
-The connector supports the following requests:
-- **SubmitDocumentFiscalDeviceRequest** - Sends documents to printers and returns response from the fiscal printer.
-- **IsReadyFiscalDeviceRequest** - Used for a health check of the device.
-- **InitializeFiscalDeviceRequest** - Used for printer initialization.
+The connector supports the following requests.
+- **SubmitDocumentFiscalDeviceRequest**: Sends documents to printers and returns response from the fiscal printer.
+- **IsReadyFiscalDeviceRequest**: Used for a health check of the device.
+- **InitializeFiscalDeviceRequest**: Used for printer initialization.
 
 
 ### Configuration
-The configuration file is found in **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the connector provider from the HQ. The file format aligns fiscal integration configuration requirements. The following settings have been added:
-- **Connection string** - The string describes the details of the connection to the device in the format supported by the driver. See POSNET driver documentation for details.
-- **Date and time synchronization** - This indicates if you need to sync the date and time of the printer with the connected hardware station. The date and time of the printer will be synchronized with the Hardware station time.
-- **Device timeout** - The time in milliseconds the driver will wait for response from device. See POSNET driver documentation for details.
+The configuration file is found inthe **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the connector provider from the HQ. The file format aligns fiscal integration configuration requirements. The following settings have been added.
+- **Connection string**: The string describes the details of the connection to the device in the format supported by the driver. See POSNET driver documentation for details.
+- **Date and time synchronization**: This indicates if you need to sync the date and time of the printer with the connected hardware station. The date and time of the printer will be synchronized with the Hardware station time.
+- **Device timeout**: The time in milliseconds the driver will wait for response from device. See POSNET driver documentation for details.
 
 ## Limitations of the sample
 
