@@ -2206,6 +2206,14 @@
             href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
           - name: Set up and process payment orders
             href: ../financials/localizations/rus-payment-order-settings-processing.md 
+        - name: VAT
+          items:
+          - name: Value-added tax (VAT) for tax agents
+            href: ../financials/localizations/rus-tax-agent.md
+          - name: VAT declaration
+            href: ../financials/localizations/rus-VAT-declaration.md
+          - name: Sales books, purchase books, and invoice-factures journals
+            href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Fixed assets
           items: 
           - name: Acquiring fixed assets and putting them into operation
@@ -2246,8 +2254,6 @@
           href: ../financials/localizations/rus-ledger-transactions-preview.md
         - name: Set up officials
           href: ../financials/localizations/rus-officials.md
-        - name: Value-added tax (VAT) for tax agents
-          href: ../financials/localizations/rus-tax-agent.md
         - name: Set up dimension control for settlements
           href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Invoices for payment

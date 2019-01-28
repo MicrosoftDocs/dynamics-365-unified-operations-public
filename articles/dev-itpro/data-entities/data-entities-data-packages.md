@@ -39,7 +39,7 @@ This topic describes how you can use the data management framework to manage dat
 
 The data management framework consists of the following concepts:
 
-- **Data entities**: A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understand by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
+- **Data entities**: A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understood by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
 - **Data project**: A project that contains configured data entities, which include mapping and default processing options.
 - **Data job**: A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.
 - **Job history**: Histories of source to staging and staging to target jobs.
@@ -292,8 +292,9 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
 - INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
-- After running the SQL statement, ensure that the following is set in the web.config file.
+- After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's.
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
+- After making the above change, perform an IISRESET on all AOS's
 
 The parameter descriptions are below.
  - <Flight name> is the name of the flight that must be enabled or disabled.
