@@ -37,31 +37,31 @@ ms.dyn365.ops.version: 10.0.1
 
 The Microsoft Dynamics 365 for Retail functionality for Poland includes a sample of integration of POS with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and supports the POSNET THERMAL HD 2.02 protocol for fiscal printers from [Posnet Polska S.A.](http://www.posnet.com.pl). The sample enables the communication with a fiscal printer connected via a COM port using a native software driver. It was implemented and tested with a software emulator provided by Posnet for the Posnet Thermal HD FV EJ fiscal printer. The sample is provided in form of source code and is part of the Retail SDK.
 
-Microsoft does not ship any hardware, software or documentation from Posnet. Please contact [Posnet Polska S.A.](http://www.posnet.com.pl) for information on how to acquire the fiscal printer and operate it.
+Microsoft does not ship any hardware, software, or documentation from Posnet. Please contact [Posnet Polska S.A.](http://www.posnet.com.pl) for information on how to acquire the fiscal printer and operate it.
 
-## Overview
+## Scenarios
 
-The following scenarios are covered by the fiscal printer integration sample for Poland:
+The following scenarios are covered by the fiscal printer integration sample for Poland.
 - Sales scenarios:
-	- Printing a fiscal receipt for cash and carry sales and returns.
-	- Capturing a response from the fiscal printer and storing it in the Channel DB.
+	- Print a fiscal receipt for cash and carry sales and returns.
+	- Capture a response from the fiscal printer and store it in the Channel DB.
 	- Taxes:
-	  - Mapping to fiscal printer's tax codes (departments);
-	  - Transferring mapped tax data to the fiscal printer.
+	  - Map to fiscal printer's tax codes (departments);
+	  - Transfer mapped tax data to the fiscal printer.
 	- Payments:
-	  - Mapping to fiscal printer's methods of payment;
-	  - Printing payments in a fiscal receipt;
-	  - Printing change information.
-	- Printing line discounts.
+	  - Map to fiscal printer's methods of payment;
+	  - Print payments in a fiscal receipt;
+	  - Print change information.
+	- Print line discounts.
 	- Gift cards:
-	  - Excluding an issued/re-charged gift card line from a fiscal receipt for a sale;
-	  - Printing a payment with a gift card as a regular method of payment.
-	- Printing fiscal receipts for customer order operations:
+	  - Exclude an issued/re-charged gift card line from a fiscal receipt for a sale;
+	  - Print a payment with a gift card as a regular method of payment.
+	- Print fiscal receipts for customer order operations:
 	  - Fiscal receipt is not printed for a customer order deposit;
-	  - Printing a fiscal receipt for carry-out lines of a hybrid customer order;
-	  - Printing a fiscal receipt for the pickup operation for a customer order;
-	  - Printing a fiscal receipt for a return order.
-	- Printing barcode for the receipt number in a fiscal receipt.
+	  - Print a fiscal receipt for carry-out lines of a hybrid customer order;
+	  - Print a fiscal receipt for the pickup operation for a customer order;
+	  - Print a fiscal receipt for a return order.
+	- Print barcode for the receipt number in a fiscal receipt.
 - End of day statements (fiscal X, fiscal Z reports).
 - Error handling, including the following options:
 	- Retry fiscal registration if it's possible; for example, if the fiscal printer is not connected/not ready/not responding, the printer is out of paper, there is a paper jam, etc.;
