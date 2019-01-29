@@ -5,7 +5,7 @@ title: Loyalty overview
 description: This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -121,12 +121,30 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
     ![Points covered by loyalty balance](./media/Points%20covered%20by%20loyalty%20balance.png "Show balance covered by loyalty points")
 
     ![Expiring points](./media/Expiring%20points.png "View expiring points")
-	
-## Upcoming enhancements
+    
 
-The following features will be available in the future monthly updates of Dynamics 365 for Retail.
-	
-- Customers want the ability to view their loyalty balance details on the consumer-facing channels. Similarly, it is important for the cashiers to view the customer's history of the loyalty points in MPOS/CPOS to quickly answer any queries from the customer. In an upcoming monthly release, customers and cashiers will be able to see loyalty history details.
-- Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. In the future, we'll be adding the ability to award loyalty points for any customer activity. To do so, the retailer can define an "Other activity type" and define the earning rules for these activities. We will also expose a Retail Server API that can be called when an activity is identified that will use the earning rule to award the required loyalty points.
-- To enable a true omni-channel retail experience, we will allow the customers to earn and redeem loyalty points across all channels.
-- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, we will introduce a new type of promotion in which the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
+- With the 8.1.3 release, we have enabled the "pay by loyalty" option in the call center channel. To enable this option, create a loyalty tender type and associate it with the call center. 
+
+>[!NOTE]
+> Because the loyalty payments are set up as card payments, you will have to select a card from the **Card setup** page. 
+
+![Loyalty card setup](./media/LoyaltyCardSetup.png "Loyalty card setup")
+
+After this is set up, customers can redeem their loyalty points in the call center. Additionally, we are enhancing the user experience further to show the "Amount covered by loyalty points", so that the call center users do not have to navigate to a different screen to view the loyalty balance.
+
+- Many retailers award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for completing an online survey, visiting a store, liking the retailers on Facebook, or tweeting about the retailer. To do this, the retailer can define any number of "Other activity type" and define the corresponding earning rules for these activities. There is also an exposed Retail Server API "PostNonTransactionalActivityLoyaltyPoints" that can be called when an activity is identified that should reward the customer with loyalty points. This API expects the Loyalty card ID, Channel ID, and the Other Activity Type ID, so that the customer who should be rewarded can be located and the earning rule for the activity can be identified. 
+
+    Awarding points for non-transaction activities generally has two major steps:
+	- Realizing an activity has occurred that should be rewarded.
+	- Rewarding the appropriate points.
+
+    The first step is external to Microsoft Dynamics 365 for Retail, such as tweeting about the brand or liking the brand on Facebook. After this activity has been recognized, the retailers can call the above-mentioned Retail server API and award loyalty points in real time. In such scenarios, there is no need for a review step because an activity has occurred and corresponding points should be awarded. However, there are scenarios where the retailer would want to review the records prior to awarding the points. For example, the retailer has set up a workshop in the store for which the customers sign up on the ecommerce website or any other event registering application. However, only the attending customers should earn loyalty points. For such scenarios, in the 10.0 release, we introduced a data entity named **Retail loyalty other activity type lines**. This data entity enables the retailers to use either Data Import/Export Framework (DIXF) or OData API to record the activities that should award customers with loyalty points. The data entity stores the activities in a journal named **Loyalty lines for other activities**, which can be used for review and modification purposes. After the data has been reviewed, the IT user can either manually post the activity lines or run a job named **Process other activity type for loyalty lines**, which will post all the unposted activity lines and award the points to the customers based on the earning rules. In the above scenario, the event registration application would call OData API to send the customer information to Dynamics 365 for Retail. However, the IT user can post the activity lines for only those customers who attended the workshop and delete the activity lines for the other customers. 
+
+> [!NOTE]
+> Currently, the system forces users to set up a number sequence for "other activity types", but this will not be a required step in future releases. To set up a number sequence, go to **Retail shared parameters > Number sequences** and select a number sequence for **Loyalty other activity type ID**.
+
+- To provide good customer service and effectively resolve customer queries, it is important for the cashiers to have access to complete customer's profile. With the 10.0 release, cashiers will be able to see loyalty history details along with the associated loyalty program and tier information on POS.
+- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, with the 10.0 release, we have introduced a new type of promotion named “Shipping threshold discount”, where the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping. For example, spend $35 for free 'Two day ship' or Free 'Two day ship' for all loyalty customers. These discounts are only applied to the shipping charges applied to the orders. Because a retailer can set up multiple types of charges, such as handling or installation, the retailer needs to specify which charge is considered shipping charges. This configuration is named "Shipping charge code” and is available on the **Customer orders** tab on the **Retail parameters** page. This discount honors all the existing standard discount capabilities, such as allowing the retailer to restrict these discounts with the coupons so that only the customers with coupons can get these discounts. Also, these discounts leverage the Price groups capability to determine the eligibility of such discounts. For example, the retailer can choose to run these promotions only in the online channels and/or across channels for certain customer groups such as loyalty customers. After the order lines with the specified delivery mode meets the defined threshold, then the shipping discount gets applied and reduces the shipping charge based on the discount set up. 
+
+> [!NOTE]
+> Unlike other periodic discounts such as quantity, simple, mix and match, and threshold discounts, the shipping discount does not create discount lines, edits to the shipping charge need to be made directly.

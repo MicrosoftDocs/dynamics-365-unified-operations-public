@@ -7,6 +7,12 @@
     - name: What's new or changed
       href: whats-new.md
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (January 23, 2019)      
+        href: whats-new-talent-january-23.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (January 17, 2019)
+        href: whats-new-talent-january-17.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (January 11, 2019)
+        href: whats-new-talent-january-11.md  
       - name: What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
         href: whats-new-talent-december-14.md 
       - name: What's new or changed in Dynamics 365 for Talent Core HR (December 6, 2018)
@@ -47,12 +53,8 @@
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR and Common Data Service for Apps
       href: CoreHREntities.md
-    - name: Integrations
-      href: talent-financeandoperations-integration.md
     - name: Access preview features
       href: access-preview-feature.md
-    - name: Configure the payroll integration between Talent and Dayforce
-      href: configure-payroll-integration.md
     - name: Get support for Talent
       href: talent-support.md
   - name: Organize your workforce by using departments, jobs, and positions
@@ -174,6 +176,16 @@
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Publish a mobile workspace
       href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Integration
+    items:
+    - name: Integrate to Dynamics 365 for Finance and Operations
+      href: talent-financeandoperations-integration.md
+    - name: Configure the payroll integration between Talent and Dayforce
+      href: configure-payroll-integration.md
+    - name: Data integration guidance for Dynamics 365 for Talent
+      href: data-integration.md
+    - name: Integration FAQ
+      href: talent-fo-integration.md
   - name: Office integration
     items:
     - name: Office integration tutorial
@@ -299,5 +311,7 @@
       href: user-access-core-hr.md
     - name: Reporting options in Talent
       href: talent-reporting-options.md
-  
-  
+    - name: Integration FAQ
+      href: talent-FO-integration.md
+    - name: Azure Active Directory users not found in People Picker
+      href: people-picker-user-not-found.md   

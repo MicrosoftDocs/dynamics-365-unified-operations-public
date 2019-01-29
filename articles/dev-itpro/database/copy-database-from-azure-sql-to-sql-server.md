@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from Azure SQL Database to SQL Serv
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 1/07/2019
+ms.date: 01/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -101,7 +101,7 @@ To help ensure the best performance, copy the \*.bacpac file to the local comput
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=2400
 ```
 
 Here is an explanation of the parameters:
