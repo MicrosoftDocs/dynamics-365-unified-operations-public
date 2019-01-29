@@ -4,7 +4,7 @@
 title: Gift card Cash out operation
 description: This topic provides information about the new gift card cash out functionality that is now available in Microsoft Dynamics 365 for Retail.
 author: rapraj
-manager: AnnBe
+manager: josaw1
 ms.date: 02/08/2019
 ms.topic: article
 ms.prod:
@@ -105,6 +105,7 @@ If you're using a Retail Store Scale Unit (RSSU) that is located in the store, o
 12. Enter or scan the gift number.
 13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
 14. select the **Cash** payment method and the drawer will open once the transaction is completed. 
+       ![Completed button layout](./media/GiftCardCashout03.png)
 
 ## Troubleshooting 
 
