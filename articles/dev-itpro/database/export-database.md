@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Database Movement Operations - Export Database Quickstart
+title: Export database 
 description: This topic explains how to perform an export of a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 1/22/2019
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laneswenka
-ms.search.validFrom: 2019-01-22
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-01-31
+ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Export database quickstart
+# Export database 
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,6 +44,7 @@ To determine the root cause of the failure, download the runbook logs using the 
 
 ### Data elements that are not exported
 When exporting a database backup from an environment, there are certain elements of the database that are not exported in the backup file.  These elements include:
+
 * Email addresses in the LogisticsElectronicAddress table.
 * Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 * SMTP password in the SysEmailSMTPPassword table.
