@@ -71,7 +71,7 @@ For more information, see [Omni-channel advanced auto charges](../../retail/omni
 ### Retail price reports
 With this new functionality, store managers can create reports detailing recent or upcoming price changes.
 
-For more information, see [Retail price reports](../../retail/retail-price-report.md).
+For more information, see [Retail price reports](../../retail/price-report.md).
 
 ### Return items across multiple customer orders and invoices
 This functionality enables returns across multiple customer orders and invoices in Dynamics 365 for Retail.
