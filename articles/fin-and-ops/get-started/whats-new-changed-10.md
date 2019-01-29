@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in March 2019 and has a build number of XXXX.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in March 2019 and has a build number of 10.0.8.
 
 To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new).
 
