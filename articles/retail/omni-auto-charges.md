@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form:  
-# ROBOTS: NOINDEX, NOFOLLOW
+# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
@@ -207,9 +207,7 @@ The following receipt elements have been added to the receipt line and footer to
 
 - **Order Other Charges** - This footer-level element displays the dollar value of the other charges that are not shipping-related.
 
-It is recommended that the organization also add free text fields to the receipt footer, in order to define the areas where charges will be recapped. For details, refer to following receipt sample. In the sample, free text elements using the text "Total shipping charges" and "Total other charges" were added above their respective footer elements.
-
-![receipt example](media/receiptexample.png)
+It is recommended that the organization also add free text fields to the receipt footer, in order to define the areas where charges will be recapped. 
 
 ### Preventing charges from being calculated until the POS order is completed
 
