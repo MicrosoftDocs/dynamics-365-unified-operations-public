@@ -245,6 +245,8 @@
     href: store-performance-information.md
   - name: Set up Recency, Frequency, and Monetary (RFM) analysis
     href: set-up-rfm-analysis.md
+- name: Retail price reports
+  href: retail-price-report.md
 - name: Pricing and discounts
   items:
   - name: Retail discounts
