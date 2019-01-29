@@ -84,7 +84,6 @@ Before using the fiscal integration functionality, the following settings should
 	Data mapping parameters can be changed in a connector functional profile. Click **Update** if you want to restore the default parameters defined in the fiscal document provider configuration.
 
 	#### Examples 
-
         |  | Format | Example | 
         |--------|--------|--------|
         | VAT rates settings | value : VATrate | 1 : 2000, 2 : 1800 |
