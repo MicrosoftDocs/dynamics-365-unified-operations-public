@@ -231,8 +231,12 @@
     href: Notifications-POS.md
 - name: Returns
   items:
+  - name: Sell and return products not included in a store's assortment
+    href: sell-return-outside-assortments.md
   - name: Configure and process an exchange on a return order
     href: orderexchanges.md
+  - name: Restrict payment methods for returns without a receipt
+    href: payment-methods-restrictions.md
   - name: Return items across multiple customer orders and invoices
     href: multireturn.md
 - name: Monitoring and analysis
