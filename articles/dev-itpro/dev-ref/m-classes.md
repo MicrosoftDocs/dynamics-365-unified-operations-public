@@ -2107,7 +2107,7 @@ When you send or receive a message, the message is passed to and from the MAPI s
 | public str dateReceived(\[Date theDate\])                     | Returns the date when the message was received.                                                         |
 | public int flags(\[int flags\])                               | Set or get a bitmask of the message status flags.                                                       |
 | public MapiFileDesc getFileNo(int fileNo)                     | Gets a file attachment from a message.                                                                  |
-| public MapiRecipDesc getRecipNo(int recipentNo)               | Retrieves information about a message recipient in a MapiRecipDesc object.                              |
+| public MapiRecipDesc getRecipNo(int recipientNo)               | Retrieves information about a message recipient in a MapiRecipDesc object.                              |
 | public str messageType(\[str messageType\])                   | Gets or sets the string that indicates that the message is not of the IPM (interpersonal message) type. |
 | public int numFiles(\[int numFiles\])                         |                                                                                                         |
 | public int numRecips(\[int numRecips\])                       |                                                                                                         |
@@ -2216,11 +2216,11 @@ The attached file is returned in a MapiFileDesc object.
 
 Retrieves information about a message recipient in a MapiRecipDesc object.
 
-    public MapiRecipDesc getRecipNo(int recipentNo)
+    public MapiRecipDesc getRecipNo(int recipientNo)
 
 #### Parameters
 
-recipentNo  
+recipientNo  
 The number of the recipient to retrieve. The numbering starts at 1, and the total number of recipients can be read by using the numRecips method.
 
 #### Return Value

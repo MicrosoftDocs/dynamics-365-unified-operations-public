@@ -107,6 +107,8 @@
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Omni-channel advanced auto charges
+  href: omni-auto-charges.md
 - name: Call center
   items:
   - name: Call center sales functionality
@@ -235,6 +237,8 @@
     href: orderexchanges.md
   - name: Restrict payment methods for returns without a receipt
     href: payment-methods-restrictions.md
+  - name: Return items across multiple customer orders and invoices
+    href: multireturn.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
@@ -249,6 +253,8 @@
     href: store-performance-information.md
   - name: Set up Recency, Frequency, and Monetary (RFM) analysis
     href: set-up-rfm-analysis.md
+- name: Retail price reports
+  href: price-report.md
 - name: Pricing and discounts
   items:
   - name: Retail discounts

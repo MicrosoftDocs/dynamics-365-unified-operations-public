@@ -7,6 +7,10 @@
     - name: What's new or changed
       href: whats-new.md
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (January 23, 2019)      
+        href: whats-new-talent-january-23.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (January 17, 2019)
+        href: whats-new-talent-january-17.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (January 11, 2019)
         href: whats-new-talent-january-11.md  
       - name: What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
@@ -309,5 +313,5 @@
       href: talent-reporting-options.md
     - name: Integration FAQ
       href: talent-FO-integration.md
-  
-  
+    - name: Azure Active Directory users not found in People Picker
+      href: people-picker-user-not-found.md   
