@@ -62,7 +62,7 @@ This table lists the major releases of the application. For monthly cloud update
 <td>10.0</td>
 <td>10.0.8</td>
 <td>March 2019</td>
-<td><a href="whats-new-changed-10.md">What's new or changed in Dynamics 365 for Finance and Operations version 10 (March 2019)</a></td>
+<td><a href="whats-new-changed-10.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0 (March 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
