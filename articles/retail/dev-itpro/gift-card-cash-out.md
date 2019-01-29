@@ -102,8 +102,9 @@ If you're using a Retail Store Scale Unit (RSSU) that is located in the store, o
 9. On the main screen, select **Current transaction**.
 10. Select **Gift cards**.
 11. Select **Cash out gift card**.
-12. Enter or scan the gift number and then provide an amount.
-13. After items are added to the cart, you can pay by using cash or a card.
+12. Enter or scan the gift number.
+13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
+14. select the **Cash** payment method and the drawer will open once the transaction is completed. 
 
 ## Troubleshooting 
 
