@@ -94,7 +94,7 @@ Sometimes, you don't have an image for a particular record in a grid, but you do
         {
             // there is no image… the container is null
             // show a generic person outline image
-            imgRef = ImageReference::constructForSymbol(&quot;Person&quot;);
+            imgRef = ImageReference::constructForSymbol("Person");
             imgContainer = imgRef.pack();
         }
         return imgContainer;
