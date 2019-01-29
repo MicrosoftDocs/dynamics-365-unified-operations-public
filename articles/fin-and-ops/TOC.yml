@@ -3545,6 +3545,8 @@
           href: ../supply-chain/production-control/batch-attributes.md
         - name: Batch balancing
           href: ../supply-chain/production-control/batch-balancing.md
+        - name: Catch weight product processing
+          href: ../supply-chain/warehousing/catch-weight-processing.md
         - name: Copy a formula
           href: ../supply-chain/production-control/tasks/copy-formula.md
         - name: Create a formula by copying from an existing formula
@@ -3612,6 +3614,8 @@
         href: ../supply-chain/pim/tasks/create-product-master.md
       - name: Create predefined product variants
         href: ../supply-chain/pim/tasks/create-predefined-product-variants.md
+      - name: Unit of measure conversion per product variant
+        href: ../supply-chain/pim/uom-conversion-per-product-variant.md
       - name: Create a released product for a single company
         href: ../supply-chain/pim/tasks/create-released-product-single-company.md
       - name: Product lifecycle state
