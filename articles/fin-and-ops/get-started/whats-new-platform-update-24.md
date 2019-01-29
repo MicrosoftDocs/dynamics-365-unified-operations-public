@@ -35,17 +35,17 @@ ms.dyn365.ops.version: Platform 24
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 24. This version has a build number of 7.0.XXXX.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 24. This version has a build number of 7.0.5179.
 
 ### Dynamics 365 April '19 release notes
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](ADD LINK). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Platform update 24 bug fixes
 
-For information about the bug fixes included in each of the updates that are part of Platform update 24, sign in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink).
+For information about the bug fixes included in each of the updates that are part of Platform update 24, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=287129&qc=6daf0a1b735f67d827cf6f643a2ef482dc0d66a220ce23ba6f3cba32ece56015).
 
 ## Business events
 This new capability will provide a framework that will allow business processes in Finance and Operations to capture business events as business processes are executed, and send the events to an external system or application.
