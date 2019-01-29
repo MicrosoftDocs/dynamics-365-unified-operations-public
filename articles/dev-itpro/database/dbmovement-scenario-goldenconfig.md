@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 'Golden Configuration' promotion
+title: Golden Configuration promotion
 description: This topic explains a golden configuration promotion for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
