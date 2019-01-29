@@ -48,9 +48,13 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Finance and Operations version 10.0 (March 2019)
+        href: get-started/whats-new-changed-10.md
       - name: Finance and Operations version 8.1.3 (January 2019)
         href: get-started/whats-new-changed-8-1-3.md
-      - name: Platform update 23 January 2019)
+      - name: Platform update 24 (March 2019)
+        href: get-started/whats-new-platform-update-24.md
+      - name: Platform update 23 (January 2019)
         href: get-started/whats-new-platform-update-23.md
       - name: Platform update 22 (December 2018)
         href: get-started/whats-new-platform-update-22.md
@@ -197,6 +201,15 @@
       href: get-started/move-lcs-implementation-project-tenant.md 
     - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: get-started/implement-multiple-projects-aad-tenant.md
+  - name: Business events
+    href: ../dev-itpro/business-events/home-page.md
+    items:
+    - name: Application business events
+      href: ../dev-itpro/business-events/app-business-events.md
+    - name: Business events in Microsoft Flow
+      href: ../dev-itpro/business-events/business-events-flow.md
+    - name: Business events developer documentation
+      href: ../dev-itpro/business-events/business-events-dev-doc.md
   - name: Compliance
     items:
     - name: Audit policy rules
@@ -1272,6 +1285,8 @@
   - name: Localization and regulatory features
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
     items:
+      - name: Regulatory updates
+        href: ../financials/localizations/regulatory-updates.md
       - name: Australia
         href: ../financials/localizations/australia.md
         items:
@@ -2965,6 +2980,8 @@
         href: ../supply-chain/master-planning/tasks/create-schedule-site.md
       - name: Create a plan for a site
         href: ../supply-chain/master-planning/tasks/create-plan-site.md
+      - name: Supply chain calendars and how they affect master planning
+        href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
       - name: Master plans and multisite functionality
         href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
         items:
@@ -3530,6 +3547,8 @@
           href: ../supply-chain/production-control/batch-attributes.md
         - name: Batch balancing
           href: ../supply-chain/production-control/batch-balancing.md
+        - name: Catch weight product processing
+          href: ../supply-chain/warehousing/catch-weight-processing.md
         - name: Copy a formula
           href: ../supply-chain/production-control/tasks/copy-formula.md
         - name: Create a formula by copying from an existing formula
@@ -3597,6 +3616,8 @@
         href: ../supply-chain/pim/tasks/create-product-master.md
       - name: Create predefined product variants
         href: ../supply-chain/pim/tasks/create-predefined-product-variants.md
+      - name: Unit of measure conversion per product variant
+        href: ../supply-chain/pim/uom-conversion-per-product-variant.md
       - name: Create a released product for a single company
         href: ../supply-chain/pim/tasks/create-released-product-single-company.md
       - name: Product lifecycle state
