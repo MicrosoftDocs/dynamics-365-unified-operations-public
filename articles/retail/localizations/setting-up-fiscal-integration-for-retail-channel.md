@@ -83,17 +83,16 @@ Before using the fiscal integration functionality, the following settings should
 
 	Data mapping parameters can be changed in a connector functional profile. Click **Update** if you want to restore the default parameters defined in the fiscal document provider configuration.
 
-	#### Examples 
-        |  | Format | Example | 
-        |--------|--------|--------|
-        | VAT rates settings | value : VATrate | 1 : 2000, 2 : 1800 |
-        | VAT codes mapping | VATcode : value | vat20 : 1, vat18 : 2 |
-        | Tender types mapping | TenderType : value | Cash : 1, Card : 2 |
-  
-	>[!NOTE]
+#### Examples 
+|  | Format | Example | 
+|--------|--------|--------|
+| VAT rates settings | value : VATrate | 1 : 2000, 2 : 1800 |
+| VAT codes mapping | VATcode : value | vat20 : 1, vat18 : 2 |
+| Tender types mapping | TenderType : value | Cash : 1, Card : 2 |
+ 	>[!NOTE]
 	> Connector functional profiles are company-specific. If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, a connector functional profile should be created for each company.
 
-	- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector.
+- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector.
 		- Select a connector name.
 		- Select a connector type: 
 			- **Local**: select this type for devices connected to a hardware station.
