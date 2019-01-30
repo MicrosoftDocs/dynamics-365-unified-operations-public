@@ -1,7 +1,7 @@
-To restore the database of a standard user acceptance test (UAT) environment to a previous point-in-time, follow the below procedure:
+To restore the database of a standard user acceptance test (UAT) environment to a previous point-in-time, follow the steps outlined below:
 
-1. Visit your target sandbox **Environment Details** page , and click the **Maintain** > **Move database** menu option.
-2. Select the **Point-in-time restore** option and choose your desired point-in-time.
-3. Note the warnings and review the list of data elements that are not copied over from the previous point-in-time.
+1. Go to your target sandbox **Environment Details** page, and select the **Maintain** > **Move database** menu option.
+2. Select the **Point-in-time restore** option and choose a point-in-time.
+3. Note the warnings. Review the list of data elements that are not copied over from the previous point-in-time.
 4. The restore operation will begin immediately.
 5. After the restore operation is completed, you must **Sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
