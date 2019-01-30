@@ -68,26 +68,19 @@ An overview of each path is given below:
 
 1.  Shut-down on-premises AOS, BI, and MR servers or stop the Service Fabric Host Service in each of the nodes and set to disabled.
 
-2.  Backup your database from your on-premises environment (typically AXDB):
-    > [[https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017]{.underline}](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fsql%2Frelational-databases%2Fbackup-restore%2Fcreate-a-full-database-backup-sql-server%3Fview%3Dsql-server-2017&data=02%7C01%7Ct-osllan%40microsoft.com%7C7c77dfcaf78745e74b9208d64bc7871c%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636779717689703494&sdata=iklLtKtx6H7z0%2Bt2vi1aCqfFOg4NoyIxpV5sSiD9ljE%3D&reserved=0)
+2.  Backup your database from your on-premises environment (typically AXDB). For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017).
 
-3.  In the VHD go to
-    > C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage
-    > and copy the MinorVersionDataUpgrade zip file.
+3.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MinorVersionDataUpgrade zip file.
 
-4.  Paste the file wherever you want and unzip it. Eg
-    > c:\\D365FFOUpgrade\\
+4.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
 
-5.  Open Command Prompt as Administrator and change directory to the
-    > unzipped folder from step 4.
+5.  Open a Command Prompt as Administrator and change directory to the unzipped folder from step 4.
 
-6.  Restore the backup you created into the onebox VM :
-    > [https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fsql%2Frelational-databases%2Fbackup-restore%2Frestore-a-database-backup-using-ssms%3Fview%3Dsql-server-2017&data=02%7C01%7Ct-osllan%40microsoft.com%7C7c77dfcaf78745e74b9208d64bc7871c%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636779717689703494&sdata=061M%2BvRG2ksq%2FQb5Xh7yZWQunwHjwX3Eglan8WyVLmA%3D&reserved=0)
+6.  Restore the backup you created into the onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-7.  (optional) If the name of your restored database is not AXDB, using
-    > a PowerShell with administrator privileges execute:
+7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
 
-> .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
+.\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
 >
 > **\#This will change in the near future as of now, we are not sure how
 > the user will obtain the script.**
