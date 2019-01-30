@@ -148,7 +148,7 @@ An overview of each path is given below:
 
 2.  Backup your database from your on-premises environment (typically AXDB). For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017).
 
-3.  Restore the backup you just created into the database server and give it a different name (AXDBtoupgrade). For more information, seeRestore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
+3.  Restore the backup you just created into the database server and give it a different name (AXDBtoupgrade). For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 4.  Once connected go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MinorVersionDataUpgrade zip file.
 
@@ -165,36 +165,18 @@ An overview of each path is given below:
     > [!Note]
     > Substitute \<\*\> with the values you require.
 
-**Notes/Troubleshooting**
+### Notes/Troubleshooting
 
->  
+1.  Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
 
-A.  Only SQL Server Authentication is officially supported for this
-    upgrade.
-    [[https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017]{.underline}](https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017)
+2.  You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the onebox trusted certificate
+    authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
 
->  
+3.  Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
 
-B.  You will need to add the Certificate Authority certificate that
-    signed your SQL server certificate to the onebox trusted certificate
-    authorities.
-    <https://docs.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate>
+4.  When you install the Certificate Authority in the onebox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
 
->  
-
-C.  Make sure the database user you use has the sysadmin server role
-    assigned or at least All Privileges on the database you want to
-    upgrade and has permissions to access tempDB. Step 6 of the upgrade
-    process will fail if this is not true!
-
-D.  When you install the Certificate Authority in the onebox, make sure
-    you use the FQDN or IP for connecting to the database that appears
-    there. If you can\'t access it by using the domain name because it
-    doesn\'t point to that server, edit your hosts file and add the DN
-    and the IP it should resolve to.
-
-
-8.  Using the Command Prompt from step 6, execute the following
+5.  Using the Command Prompt from step 6, execute the following
     commands:
 
     a.  AxUpdateInstaller.exe generate -runbookid=upgrade
@@ -205,78 +187,48 @@ D.  When you install the Certificate Authority in the onebox, make sure
 
     c.  AxUpdateInstaller.exe execute -runbookid=upgrade
 
-> Note: During the execution of Cleanup for data upgrade you may
-> encounter an error: Stack trace: Call to TTSCOMMIT without first
-> calling TTSBEGIN.\' on category \'Error\'.
->
-> Solution: rerun the step with this command: AxUpdateInstaller.exe
-> execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
 
-9.  If you have Customizations from ISV or VAR check if you have to run
-    some post data upgrade scripts.
+    To resolve this, rerun the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
 
-10. Start On-Premises AOSs, BI and MR servers, or start the services
-    from the Service Fabric portal.
+6.  If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
-11. In LCS, open the project, and then, in the **Environments** section,
-    delete the deployment. The applications should start to disappear
-    from Service Fabric Explorer in the environment. This process may
-    take longer depending on the amount of nodes you have.
+7. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-12. If you had customizations:
+8. In LCS, open the project, and then, in the **Environments** section, delete the deployment. The applications should start to disappear from Service Fabric Explorer in the environment. This process may take longer depending on the amount of nodes you have.
 
-    d.  In LCS go to the Shared Assets Library (right side of the
-        screen).
+9. If you had customizations:
 
-    e.  Under Select **asset type** choose Model and download: Dynamics
-        365 for Operations on-premises, Application Version 8.1 Demo
-        Data.
+    a.  In LCS go to the Shared Assets Library (right side of the screen).
 
-    f.  Use this file to create a new database (e.g. AXDB) using the
-        restore backup option from SQL server:
-        [https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)
+    b.  Under **Select asset type** choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
 
-    g.  The database will need to be configured. Follow the steps under
-        Configure the Finance and Operations database in:
-        <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database>
+    c.  Use this file to create a new database (e.g. AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-    h.  Setup a new environment and deploy it with version 8.1 :
-        <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12>
-        . When you deploy, the database that you should specify should
-        be the one created on step 12c (e.g. AXDB).
+    d.  The database will need to be configured. Follow the steps under [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
-    i.  Apply your own customizations as well as ISV/VAR modules, to
-        your newly created 8.1 environment. Otherwise when the
-        environment initially synchs up with the database it will delete
-        any customization or extensions related data.
+    e.  Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created on step 12c (e.g. AXDB).
 
-    j.  Shut-down On-Premises AOSs, BI and MR servers, or stop the
-        services from the Service Fabric portal.
+    f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially syncs up with the database it will delete any customization or extensions related data.
 
-    k.  Rename or delete the demo Database (e.g. AXDB) used in the
-        deploy and then rename your new Database (e.g. AXDBupgraded) to
-        the name the demo Database had (e.g. AXDB).
+    g.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
-    l.  Start On-Premises AOSs, BI and MR servers, or start the services
-        from the Service Fabric portal.
+    h.  Rename or delete the demo database (e.g. AXDB) used in the deploy and then rename your new database (e.g. AXDBupgraded) to the name the demo database had (e.g. AXDB).
 
-13. If you didn't have customizations:
+    i.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-    a.  (optional) Rename your old Database (e.g. AXDBold) and then
-        rename your new Database (e.g. AXDB). Just make sure that in the
-        next step you input the name of the upgraded DB.
+10. If you didn't have customizations:
 
-    b.  Setup a new environment and deploy it with version 8.1 :
-        <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12>
+    a.  (Optional) Rename your old database (e.g. AXDBold) and then rename your new database (e.g. AXDB). Just make sure that in the next step you input the name of the upgraded database.
 
-14. (Optional) If deployment fails because the financial reporting
-    module failed, on the database that you are using for the new
-    environment (e.g. AXDB) run the following command:
+    b.  Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments ](../deployment/setup-deploy-on-premises-pu12.md).
 
-```
-ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
-CLUSTERED (RECID)
-```
+11. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (e.g. AXDB) run the following command:
+
+    ```
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
+    CLUSTERED (RECID)
+    ```
 
 ## On-Premises 7.x PU21 or later to 8.1
 
