@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 2019-02-28
 ## How is a Workflow constructed?
 
 Workflows components are defined in metadata and workflow elements can have event handlers that are defined in code. A developer defines these components using the Visual Studio tools.
-Workflows are created in the web client by an administrator and then designed in the workflow designer.
+Workflows are created in the web client by an administrator and then designed in the workflow designer. Multiple workflows can be created for the same workflow type, with one marked as default and activation rules used to activate the others. 
 
 ### Workflow components
 Workflow components are defined in metadata as:
@@ -47,5 +47,5 @@ Workflow components are defined in metadata as:
      - Automated Tasks: AOT > Business Process and Workflow > Workflow Automated Tasks
 
 ## Workflows at runtime
-
+When a workflow is submitted by a user, then it is added to a queue and run via the "Workflow message processing" batch job.  
 
