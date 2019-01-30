@@ -349,7 +349,7 @@ This path involves copying your database into the VHD and executing the upgrade 
 -   **Upgrading with VHD pointing to your database** 
 This path involves pointing the VHD upgrade process to your database. The upgrade process is still executed from within the VHD.
 
-##$ Prerequisite
+### Prerequisites
 
 1.  In LCS go to the Shared Assets Library (right side of the screen).
 
