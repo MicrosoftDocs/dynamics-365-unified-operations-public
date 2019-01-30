@@ -40,7 +40,7 @@ An administrator can [create workflows](../../fin-and-ops/organization-administr
 
 ### Workflow components
 Workflow components are defined in metadata as:
-- **Workflow types** (aka templates) define the elements allowed in a 
+- **Workflow types** (aka templates) define the elements allowed in a workflow and then the administrator decides which elements are actually used when they create the workflow design. 
      - In the Application Explorer: AOT > Business Process and Workflow > Workflow Types 
 - **[Workflow elements](../../fin-and-ops/organization-administration/workflow-elements.md)** are the executable pieces that make up a workflow
      - Tasks (aka Manual Tasks): AOT > Business Process and Workflow > Workflow Tasks
