@@ -35,11 +35,13 @@ ms.dyn365.ops.version: Platform update 24
 ### Overview
 Stay on top of your business data with integrated change tracking tools.  Using the latest Platform Release, users are able to create Alert Rules that automatically dispatch email notifications when triggered by a pre-defined event.  With Dynamics 365 for Finance & Operations, users are able to define custom Alert Rules to monitor filtered views of their data.  The option of receiving email notifications is available for all supported Alert types and can be enabled for existing Alert Rules.  
 
-Supported scenarios include using intuitive controls to create Alerts Rules that monitor filtered views of System Batch jobs.  Move beyond the burden of constantly checking reports for changes to business data and let the Dynamics 365 for Finance & Operations intelligent change detection service do the monitoring for you.
+Supported scenarios include using intuitive controls to create Alerts Rules that monitor filtered views of System Batch jobs.  Move beyond the burden of constantly checking reports for changes to business data and let the Dynamics 365 for Finance & Operations intelligent change detection service do the monitoring for you.
 
 ## What's important to know?
-	• Client Alerts depend on the Email subsystem delivered through Office Integration
-	• Recommend that the SMTP provider is used to enable distribution of email without relying on a local mail client
-	• Customers MUST configure integrated Email services to send notifications by email
-	• Email notifications are sent out to recipients on behalf of Alert owners
+- Client Alerts depend on the Email subsystem delivered through Office Integration
+- Recommend that the SMTP provider is used to enable distribution of email without relying on a local mail client
+- Customers MUST configure integrated Email services to send notifications by email
+- Email notifications are sent out to recipients on behalf of Alert owners
+
+
 
