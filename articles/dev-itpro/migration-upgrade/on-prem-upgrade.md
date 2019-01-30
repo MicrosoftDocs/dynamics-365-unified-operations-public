@@ -80,20 +80,14 @@ An overview of each path is given below:
 
 7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
 
-.\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
->
-> **\#This will change in the near future as of now, we are not sure how
-> the user will obtain the script.**
->
-> Note: Substitute \<DB-Name\> with the appropriate value in your case
-> (eg. AXDB). If you would like to edit more values, please see Appendix
-> A.
->
-> Note: The script will run a database connection test to check that the
-> information you provide is valid.
+    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
 
-8.  Using the Command Prompt from step 5, execute the following
-    > commands:
+    > [!Note] 
+    > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, please see Appendix A.
+
+    The script will run a database connection test to check that the information you provide is valid.
+
+8.  Using the Command Prompt from step 5, execute the following commands:
 
     a.  AxUpdateInstaller.exe generate -runbookid=upgrade
         -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml
@@ -103,120 +97,73 @@ An overview of each path is given below:
 
     c.  AxUpdateInstaller.exe execute -runbookid=upgrade
 
-> Note: During the execution of Cleanup for data upgrade you may
-> encounter an error: Stack trace: Call to TTSCOMMIT without first
-> calling TTSBEGIN.\' on category \'Error\'.
->
-> Solution: rerun the step with this command: AxUpdateInstaller.exe
-> execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'. 
+    
+    To resolve this, rerun the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
 
-9.  Once the upgrade process has finished successfully, backup the newly
-    > upgraded database. If you have Customizations from ISV or VAR
-    > check if you have to run some post data upgrade scripts.
+9.  Once the upgrade process has finished successfully, backup the newly upgraded database. If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
-10. Restore the database into your environment with a different name
-    > from the production one (e.g. AXDBupgraded)
+10. Restore the database into your environment with a different name from the production one (for example, AXDBupgraded).
 
-11. Start On-Premises AOSs, BI and MR servers, or start the services
-    > from the Service Fabric portal.
+11. Start on-premises AOS, BI and MR servers, or start the services from the Service Fabric portal.
 
-12. In LCS, open the project, and then, in the **Environments** section,
-    > delete the deployment. The applications should start to disappear
-    > from Service Fabric Explorer in the environment. This process may
-    > take longer depending on the amount of nodes you have. Please
-    > check the service fabric explorer to check that all applications
-    > have been deleted before deploying a new environment. NOTE: LCS
-    > may indicate that the environment is deleted before the actual
-    > process is finished.
+12. In LCS, open the project, and then, in the **Environments** section, delete the deployment. The applications should start to disappear from Service Fabric Explorer in the environment. This process may take longer depending on the amount of nodes you have. Please check the service fabric explorer to check that all applications have been deleted before deploying a new environment. Note that LCS may indicate that the environment is deleted before the actual process is finished.
 
 13. If you had customizations:
 
-    a.  In LCS go to the Shared Assets Library (right side of the
-        screen).
+    a.  In LCS go to the Shared Assets Library (right side of the screen).
 
-    b.  Under Select **asset type** choose Model and download: Dynamics
-        365 for Operations on-premises, Application Version 8.1 Demo
-        Data.
+    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
 
-    c.  Use this file to create a new database (e.g. AXDB) using the
-        restore backup option from SQL server:
-        [https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fsql%2Frelational-databases%2Fbackup-restore%2Frestore-a-database-backup-using-ssms%3Fview%3Dsql-server-2017&data=02%7C01%7Ct-osllan%40microsoft.com%7C7c77dfcaf78745e74b9208d64bc7871c%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636779717689703494&sdata=061M%2BvRG2ksq%2FQb5Xh7yZWQunwHjwX3Eglan8WyVLmA%3D&reserved=0)
+    c.  Use this file to create a new database (e.g. AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)
+     
+    d.  The database will need to be configured. Follow the steps under [Configure the Finance and Operations database](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database).
 
-    d.  The database will need to be configured. Follow the steps under
-        Configure the Finance and Operations database in:
-        <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database>
+    e.  Set up a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created on step 13c (e.g. AXDB).
 
-    e.  Setup a new environment and deploy it with version 8.1 :
-        <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12>
-        . When you deploy, the database that you should specify should
-        be the one created on step 13c (e.g. AXDB).
+    f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise, when the environment initially syncs up with the database it will delete any customization or extensions related data.
 
-    f.  Apply your own customizations as well as ISV/VAR modules, to
-        your newly created 8.1 environment. Otherwise when the
-        environment initially synchs up with the database it will delete
-        any customization or extensions related data.
+    g.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
-    g.  Shut-down On-Premises AOSs, BI and MR servers, or stop the
-        services from the Service Fabric portal.
+    h.  Rename or delete the demo database (e.g. AXDB) used in the deploy and then rename your new database (e.g. AXDBupgraded) to the name the demo database had (e.g. AXDB).
 
-    h.  Rename or delete the demo Database (e.g. AXDB) used in the
-        deploy and then rename your new Database (e.g. AXDBupgraded) to
-        the name the demo Database had (e.g. AXDB).
-
-    i.  Start On-Premises AOSs, BI and MR servers, or start the services
-        from the Service Fabric portal.
+    i.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
 14. If you didn't have customizations:
 
-    d.  (optional) Rename your old Database (e.g. AXDBold) and then
-        rename your new Database (e.g. AXDB). Just make sure that in the
-        next step you input the name of the upgraded DB.
+    a.  (Optional) Rename your old database (e.g. AXDBold) and then rename your new database (e.g. AXDB). Just make sure that in the next step you input the name of the upgraded DB.
 
-    e.  Setup a new environment and deploy it with version 8.1 :
-        <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12>.
+    b.  Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md).
 
-15. (Optional) If deployment fails because the financial reporting
-    > module failed, on the database that you are using for the new
-    > environment (e.g. AXDB) run the following command:
+15. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (e.g. AXDB) run the following command:
 
-```
-ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
-CLUSTERED (RECID)
-```
+    ```
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
+    CLUSTERED (RECID)
+    ```
 
 ### Upgrading with VHD pointing to your database
 
-1.  Shut-down On-Premises AOSs, BI and MR servers, or stop the services
-    > from the Service Fabric portal.
+1.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
-2.  Backup your database from your On-Premises environment (typically
-    > AXDB):
-    > [[https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017]{.underline}](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017)
+2.  Backup your database from your on-premises environment (typically AXDB). For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017).
 
-3.  Restore the backup you just created into the database server and
-    > give it a different name (AXDBtoupgrade):
-    > [https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)
+3.  Restore the backup you just created into the database server and give it a different name (AXDBtoupgrade). For more information, seeRestore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-4.  Once connected go to
-    > C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage
-    > and copy the MinorVersionDataUpgrade zip file.
+4.  Once connected go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MinorVersionDataUpgrade zip file.
 
-5.  Paste the file wherever you want and unzip it. E.g.
-    > C:\\D365FFOUpgrade\\
+5.  Paste the file wherever you want and unzip it. For example: C:\\D365FFOUpgrade\\
 
-6.  Open Command Prompt as Administrator and change directory to the
-    > unzipped folder from step 5.
+6.  Open a Command Prompt as Administrator and change directory to the unzipped folder from step 5.
 
 7.  Open a new PowerShell as Administrator and execute:
 
-> .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
-> -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\'
-> -DatabasePassword \'\<Password\>\'
->
-> **\#This will change in the near future as of now, we are not sure how
-> the user will obtain the script.**
->
-> Note: Substitute \<\*\> with the values you require.
+    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
+    -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\'
+    -DatabasePassword \'\<Password\>\'
+
+    > [!Note]
+    > Substitute \<\*\> with the values you require.
 
 **Notes/Troubleshooting**
 
