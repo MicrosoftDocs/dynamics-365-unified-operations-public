@@ -230,11 +230,10 @@ An overview of each path is given below:
     CLUSTERED (RECID)
     ```
 
-## On-Premises 7.x PU21 or later to 8.1
+## On-premises upgrade from version 7.x (with Platform update 21 or later) to 8.1
 
-[!Note]
-> Please be aware that this upgrade process takes time to do and D365FO
-> will be inaccessible for the entire duration of it.
+> [!Note]
+> Please be aware that this upgrade process takes time complete and Finance and Operations will be inaccessible for the entire duration of it.
 >
 > The VHD does not need external network access in order to carry out
 > the [data upgrade process]{.underline}.
