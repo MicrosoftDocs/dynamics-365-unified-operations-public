@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 Outlined below is a detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations from version 7.x to 8.1.  
 
-## On-Premises 7.x PU15 / PU20 to 8.1
+## On-premises upgrade from version 7.x (with Platform update 15-20) to 8.1
 
 > [!Note]
 > Please be aware that this upgrade process takes time to complete and Finance and Operations will be inaccessible for the entire duration of the data upgrade parts.
@@ -66,11 +66,9 @@ An overview of each path is given below:
 
 ### Upgrading from within VHD
 
-1.  Shut-down On-Premises AOSs, BI and MR servers or stop the Service
-    > Fabric Host Service in each of the nodes and set to disabled.
+1.  Shut-down on-premises AOS, BI, and MR servers or stop the Service Fabric Host Service in each of the nodes and set to disabled.
 
-2.  Backup your database from your On-Premises environment (typically
-    > AXDB):
+2.  Backup your database from your on-premises environment (typically AXDB):
     > [[https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017]{.underline}](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fsql%2Frelational-databases%2Fbackup-restore%2Fcreate-a-full-database-backup-sql-server%3Fview%3Dsql-server-2017&data=02%7C01%7Ct-osllan%40microsoft.com%7C7c77dfcaf78745e74b9208d64bc7871c%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636779717689703494&sdata=iklLtKtx6H7z0%2Bt2vi1aCqfFOg4NoyIxpV5sSiD9ljE%3D&reserved=0)
 
 3.  In the VHD go to
