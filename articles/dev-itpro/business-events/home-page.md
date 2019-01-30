@@ -52,7 +52,7 @@ By default, the business event functionality is turned off. To turn it on, follo
 - In non-production environments, turn on the BusinessEventsMaster flight by running the following SQL statement and then doing a reset of Microsoft Internet Information Services (IIS).
 
     ```
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) VALUES ('BusinessEventsMaster', 1, 0)
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) VALUES ('BusinessEventsMaster', 1, 12719367)
     ```
 
 - In production environments, you must create a support case with Microsoft.
