@@ -32,20 +32,32 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
+The workflow business events are generated at various points in the processing of a workflow.   
+
 ## How is a Workflow constructed?
 
-Workflows components are defined in metadata and workflow elements can have event handlers that are defined in code. A developer defines these components using the Visual Studio tools.
-Workflows are created in the web client by an administrator and then designed in the workflow designer. Multiple workflows can be created for the same workflow type, with one marked as default and activation rules used to activate the others. 
+A developer can define workflows components in metadata and code in the Visual Studio tools.
+An administrator can [create workflows](../../fin-and-ops/organization-administration/create-workflow) in the web client and then design them in the workflow designer.
 
 ### Workflow components
 Workflow components are defined in metadata as:
-- Workflow types (aka templates)
+- Workflow types (aka templates) define the elements allowed in a 
      - In the Application Explorer: AOT > Business Process and Workflow > Workflow Types 
-- Workflow elements
-     - Tasks: AOT > Business Process and Workflow > Workflow Tasks
+- [Workflow elements](../../fin-and-ops/organization-administration/workflow-elements) are the executable pieces that make up a workflow
+     - Tasks (aka Manual Tasks): AOT > Business Process and Workflow > Workflow Tasks
      - Approvals: AOT > Business Process and Workflow > Workflow Approvals
      - Automated Tasks: AOT > Business Process and Workflow > Workflow Automated Tasks
 
 ## Workflows at runtime
-When a workflow is submitted by a user, then it is added to a queue and run via the "Workflow message processing" batch job.  
+When a workflow is submitted by a user, then it is added to a queue and run via the "Workflow message processing" batch job. As the workflow runs it will progress through all the [connected workflow elements](../../fin-and-ops/organization-administration/create-workflow#connect-the-elements) until it reaches the end. When the workflow runtime encounters a [manual task element](../../fin-and-ops/organization-administration/workflow-elements#manual-task) it will create a work item for the [user assigned to the task](../../fin-and-ops/organization-administration/configure-manual-task-workflow#assign-the-task). When the workflow runtime encounters an [approval element](../../fin-and-ops/organization-administration/workflow-elements#approval-processes) then it will create a work item for each [user assigned to each approval step](../../fin-and-ops/organization-administration/configure-approval-step-workflow#assign-the-approval-step).
+
+## Workflow business event categories
+
+There are five different categories of workflow business events are: 
+- Workflow type - These events will fire on workflow events like started and completed. All workflow instances will be represented in this category.
+- Workflow element started - These events will fire when a workflow element is started. All enabled workflow elements within a workflow instance will be represented in this category. 
+- Workflow element - These events will fire on workflow element events other than started, such as completed. All enabled workflow elements within a workflow instance will be represented in this category. 
+- Workflow external task - These events will fire when a workflow automated task element is started. All enabled workflow automated task elements within a workflow instance will be represented in this category. 
+- Workflow workitem - These events will fire when a workflow workitem is created for a user. All enable workflow tasks and workflow approvals within a workflow instance will be represented in this category. 
+
 
