@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 8.1
 
 Outlined below is a detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations from version 7.x to 8.1.  
 
+## On-Premises 7.x PU15 / PU20 to 8.1
+
 > [!Note]
 > Please be aware that this upgrade process takes time to complete and Finance and Operations will be inaccessible for the entire duration of the data upgrade parts.
 
@@ -48,7 +50,7 @@ An overview of each path is given below:
 > [!Note]
 > The VHD does not need external network access in order to carry out the upgrade process.
 
-## Prerequisites
+### Prerequisites
 
 1.  In LCS go to the Shared Assets Library (right side of the screen).
 
@@ -62,7 +64,7 @@ An overview of each path is given below:
 
 6.  If you have any extensions or customizations install them now into the VHD, otherwise the upgrade process will remove any data related to customizations. Check with your ISV or VAR if you need to prepare your environment in any way before the upgrade.
 
-## Upgrading from within VHD
+### Upgrading from within VHD
 
 1.  Shut-down On-Premises AOSs, BI and MR servers or stop the Service
     > Fabric Host Service in each of the nodes and set to disabled.
@@ -191,7 +193,7 @@ ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
 CLUSTERED (RECID)
 ```
 
-## Upgrading with VHD pointing to your database
+### Upgrading with VHD pointing to your database
 
 1.  Shut-down On-Premises AOSs, BI and MR servers, or stop the services
     > from the Service Fabric portal.
