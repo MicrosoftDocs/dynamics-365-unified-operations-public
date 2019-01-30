@@ -46,16 +46,14 @@ Supported scenarios include the ability to use built-in controls to create Alert
 For more information on configuring email in Dynamics 365 for Finance & Operations, review the article [Configure and send email](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email).
 
 Here's a screen shot of the latest **Create alert rule** form which now includes the **Send Email** option<br>
-Image here
-
-
+[![Alert rule form with the Send email option enabled](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)<br>
 **Note:** Alert notifications will continue to be delivered via the Action Center when **Send email** option is set to **Yes**
 
 ### Alert notification - Email templates
 The service dispatches Email notifications using pre-defined email templates that deliver the basic alert notification details.  This includes a direct link into the Finance & Operations form where the Alert rule was defined.
 
-The following illustrations represent the format of the Alert notifications when received via Email<br>
-Image here
+The following illustrations showcases the structure of the Alert notifications when received via Email<br>
+[![Email templates used for Client Alert notifications](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
 
 
 
