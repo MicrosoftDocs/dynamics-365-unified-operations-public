@@ -5,7 +5,7 @@ title: Business events in Microsoft Flow
 description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,12 +45,12 @@ It's important that you understand business events. For more information, see th
 
 After the **when a business event happens** trigger is added to a flow, the following information must be provided:
 
-- **Instance** – Specify the URL of the Finance and Operations instance where business events occur.
+- **Instance** – Specify the host name of the Finance and Operations instance where business events occur. Environment instances should be available in the provided drop-down menu, but if an environment is not listed it can be entered as a custom value.
 - **Category** – Select the category of business events. The **Business event** field then shows the business events in that category.
-- **Business event** – The catalog of business events in the selected category.
-- **Legal entity** – Specify the legal entity where the business event is being subscribed to. By default, this field is blank. When the field is blank, the business event is subscribed to in **all** legal entities. In this case, the flow will be triggered when the business event occurs in any legal entity in Finance and Operations.
+- **Business event** – The available business events in the selected category.
+- **Legal entity** – Specify the legal entity where the business event is being subscribed to. The flow will be triggered when the business event occurs in that legal entity in Finance and Operations. By default, this field is blank and the business event is subscribed to in **all** legal entities.
 
-When the flow is saved, it's automatically subscribed to the selected business event. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
+When the flow is saved, a subscription to the selected business event is added into the environment instance. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
 
 If either the trigger or the flow is deleted, the business event is automatically unsubscribed from.
 

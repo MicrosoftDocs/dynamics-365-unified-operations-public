@@ -155,7 +155,7 @@ This table lists the major releases of the application. For monthly cloud update
 <td>Platform update 24</td>
 <td>7.0.5179</td>
 <td>March 2019</td>
-<td><a href="whats-new-platform-update-23.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (March 2019)</a></td>
+<td><a href="whats-new-platform-update-24.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (March 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
