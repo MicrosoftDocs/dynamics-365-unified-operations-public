@@ -2,7 +2,7 @@
 # required metadata
 
 title: Alerts Email Notifications
-description: Stay on top of your business data with integrated change tracking tools that allow users to create Alert Rules that automatically send email notifications when triggered by an event.
+description: Integrated change tracking tools allow users to create Alert Rules that send email notifications when triggered by an event
 author: tjvass
 manager: AnnBe
 ms.date: 01/29/2019
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
 ---
 
-# Alerts
+# Client Alert notifications by Email
 
 [!include [banner](../includes/banner.md)]
 
