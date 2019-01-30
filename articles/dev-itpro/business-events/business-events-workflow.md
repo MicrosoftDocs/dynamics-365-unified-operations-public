@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Workflow Business Events
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+title: Workflow business events
+description: The workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/25/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,21 +14,19 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
-ROBOTS: noindex, nofollow
+audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
+ms.search.region: Global 
 # ms.search.industry: 
 ms.author: cgarty
-ms.search.validFrom: Platform update 24
-ms.dyn365.ops.version: 2019-02-28
+ms.search.validFrom: 2019-3-31
+ms.dyn365.ops.version: Platform update 24
 ---
 
-# Workflow Business Events
-
+# Workflow business events
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
@@ -37,6 +35,7 @@ The workflow business events are generated at various points in the processing o
 ## Workflow construction
 
 A developer can define workflows components in metadata and code in the Visual Studio tools.
+
 An administrator can [create workflows](../../fin-and-ops/organization-administration/create-workflow) in the web client and then design them in the workflow designer.
 
 ### Workflow components
