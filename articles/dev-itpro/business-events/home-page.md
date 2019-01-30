@@ -52,11 +52,8 @@ By default, the business event functionality is turned off. To turn it on, follo
 - In non-production environments, turn on the BusinessEventsMaster flight by running the following SQL statement and then doing a reset of Microsoft Internet Information Services (IIS).
 
     ```
-    INSERT INTO SYSFLIGHTING VALUES ('BusinessEventsMaster', 1, 12719367, <Partition>, <RecID>, 1)
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) VALUES ('BusinessEventsMaster', 1, 12719367)
     ```
-
-    - **\<Partition\>** is the partition ID from the environment. To obtain this value, query (select) for any record. Every record will have a partition ID that you can copy.
-    - **\<RecID\>** can be the same as the partition ID. However, if multiple flights are enabled, this value might be the partition ID + *n*, to help guarantee a unique value.
 
 - In production environments, you must create a support case with Microsoft.
 
@@ -132,7 +129,7 @@ To create an endpoint to a Service Bus topic, select **New**, and then, in the *
 
 ### Create an Azure Event Grid endpoint
 
-To create an endpoint to Event Grid, select **New**, and then, in the **Endpoint type** field, select **Azure Event Grid**. In the **Endpoint URL** field, enter the URL from the Event Grid topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint.
+To create an endpoint to Event Grid, select **New**, and then, in the **Endpoint type** field, select **Azure Event Grid**. In the **Endpoint URL** field, enter the URL from the Event Grid topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.
 
 After you've created the endpoints that you require, the next step is to activate the business events.
 
