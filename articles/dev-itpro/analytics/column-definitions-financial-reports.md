@@ -66,7 +66,7 @@ A column definition can contain two to 255 columns.
 3.  On the **Edit** menu, click **Delete Column**.
 
 ## Contents of a column definition
-A column definition includes the following information:
+A column definition includes the following information: 
 
 -   A column of the descriptions for the row definition
 -   Amount columns that show data from the financial data, a Microsoft Excel worksheet, or calculations that are based on other data in the column definition
