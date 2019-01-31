@@ -146,9 +146,9 @@ To enable the registration process, set up Retail Headquarters using the steps b
 4. Open **Retail > Channel Setup > Fiscal Integration > Connector Functional profiles**. Create a new profile and select the loaded connector and document provider from the steps above. Update data mapping settings, if needed.
 5. Open **Retail > Channel Setup > Fiscal Integration > Connector Functional group**. Create a new group and select the connector functional profile from the step above.
 6. Open **Retail > Channel Setup > Fiscal Integration > Registration process**. Create a new process. Select the connector functional group from the step above.
-7. Open the Functionality profile linked to the store where the registration process should be activated. Expand the **Fiscal registration process** FastTab. Select the registration process created in the step above.
-8. Open the Hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
-9. Open the Distribution scheduler and select job **1070** to transfer data to the Channel database.
+7. Open the Functionality profile (**Retail > Channel setup > POS setup > POS profiles > Functionality profiles**) linked to the store where the registration process should be activated. Expand the **Fiscal registration process** FastTab. Select the registration process created in the step above.
+8. Open the Hardware profile (**Retail > Channel setup > POS setup > POS profiles > Hardware profiles**) that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
+9. Open the Distribution schedule (**Retail > Retail IT > Distribution schedule**) and select job **1070** to transfer data to the Channel database.
 
 ## Commerce runtime extension design
 
