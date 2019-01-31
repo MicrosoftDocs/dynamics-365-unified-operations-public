@@ -337,7 +337,7 @@ An overview of each path is given below:
 
 16. The database will need to be configured. Follow the steps under [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
-17. Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12). When you deploy, the database that you should specify should be the one created on step 15 (e.g. AXDB).
+17. Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created on step 15 (e.g. AXDB).
 
 18. Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially syncs up with the database it will delete any customization or extensions related data.
 
