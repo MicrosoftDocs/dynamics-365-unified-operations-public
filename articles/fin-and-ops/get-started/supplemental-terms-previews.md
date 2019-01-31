@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+# ms.search.form:
+ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
