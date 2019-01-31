@@ -356,37 +356,24 @@ An overview of each path is given below:
 
 ### Upgrading with VHD pointing to your database
 
-1.  Shut-down On-Premises AOSs, BI and MR servers, or stop the services
-    > from the Service Fabric portal.
+1.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
-2.  Backup your database from your On-Premises environment (typically
-    > AXDB):
-    > [[https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017]{.underline}](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017)
+2.  Backup your database from your on-premises environment (typically AXDB). For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017).
 
-3.  Restore the backup you just created into the database server and
-    > give it a different name (AXDBtoupgrade):
-    > [https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)
+3.  Restore the backup you just created into the database server and give it a different name (AXDBtoupgrade). For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-4.  In the VHD go to
-    > C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage
-    > and copy the MinorVersionDataUpgrade zip file.
+4.  In the VHD go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MinorVersionDataUpgrade zip file.
 
-5.  Paste the file wherever you want and unzip it. E.g.
-    > C:\\D365FFOUpgrade\\
+5.  Paste the file wherever you want and unzip it. E.g. C:\\D365FFOUpgrade\\
 
-6.  Open Command Prompt as Administrator and change directory to the
-    > unzipped folder from step 5.
+6.  Open Command Prompt as Administrator and change directory to the unzipped folder from step 5.
 
 7.  Open a new PowerShell as Administrator and execute:
 
-> .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
-> -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\'
-> -DatabasePassword \'\<Password\>\'
->
-> **\#This will change in the near future as of now, we are not sure how
-> the user will obtain the script.**
->
-> Note: Substitute \<\*\> with the values you require.
+    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\' -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\' -DatabasePassword \'\<Password\>\'
+
+    > [!Note]
+    > Substitute \<\*\> with the values you require.
 
 **Notes/Troubleshooting**
 
