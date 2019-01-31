@@ -190,7 +190,7 @@ The Generic Tax Engine component is a part of sealed extensions.
 2. Register the CRT change in the extensions configuration file.
 
     ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.Extensions.GenericTaxEngine" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
 
 ---
