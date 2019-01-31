@@ -119,8 +119,8 @@ The Hardware station extension components are included in the Hardware station s
 
 4. Find the extension configuration file Hardware station's extensions **HardwareStation.Extension.config**:
 
-    - **Shared hardware station:** The file is located under the IIS Hardware station site location..
-    - **Dedicated hardware station on Modern POS:** The file is is located under the Modern POS client broker location.
+    - **Shared hardware station:** The file is located under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** The file is located under the Modern POS client broker location.
 
 5. Add the following section to the **composition** section of the config file.
 
