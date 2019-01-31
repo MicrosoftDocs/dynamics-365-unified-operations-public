@@ -73,6 +73,11 @@ For a detailed list of when each version of the product was released, see [Softw
 <td>Not implemented</td>
 </tr>
 <tr>
+<td>Client support for MinNoOfDecimals</td>
+<td>Real controls on forms have a property called Mininum Number of Decimals that controls how trailing zeroes are truncated for decimal numbers. Support for this property will be reviewed for inclusion in a future update.</td>
+<td>Not implemented</td>
+</tr>  
+<tr>
 <td>Client right-to-left (RTL) layout</td>
 <td>RTL layout is now supported.</td>
 <td>Implemented in Platform update 2</td>
