@@ -122,3 +122,9 @@ The following fiscal integration samples are currently available in the Retail S
 
   - [Fiscal printer integration sample for Italy](emea-ita-fpi-sample)
   - [Fiscal printer integration sample for Poland](emea-pol-fpi-sample)
+
+The following fiscal integration functionalities that are also available in the Retail SDK are not leveraging the fiscal integration framework currently. Their migration to the fiscal integration framework is planned for later updates.
+
+  - [Digital signature for France](emea-fra-cash-registers)
+  - [Digital signature for Norway](emea-nor-cash-registers)
+  - [Control unit integration sample for Sweden](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample)
