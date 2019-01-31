@@ -48,7 +48,7 @@ job.
 - To send the availability request, click **Send request**, choose the
 available dates and the right email template and send the mail to the candidate.
 
-\<insert image for send request\>
+[![Attract recruiter view to send candidate availability request](./media/scheduler-candidate-request.png)](./media/scheduler-candidate-request.png)
 
 - The candidate receives an email to respond to the request. They can then log
 on to their candidate portal, choose the dates which match their availability
@@ -65,7 +65,7 @@ create and send the interview loop to the interviewers and the candidate.
 2.  On the **Add interviewers** box, list all the interviewers that are going to
     be part of the interview loop.
 
-\<insert start over screenshot\>
+[![Attract recruiter view to start scheduling an interview loop](./media/schedule-start-over.png)](./media/schedule-start-over.png)
 
 3.  If the candidate had responded to the interview request availability, the
     interview date field will be pre-populated with their selection. You can
@@ -125,7 +125,7 @@ the **Update & Send** option to send the request back to the interviewers.
     can also view their response in the scheduler grid view by clicking the
     bubble icon.
 
-\<insert interviewer response screenshot\>
+[![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
 
 16.  Once the interview schedule is ready to be shared with the candidate, click
     “Send to candidate”. You can choose to hide/show the interviewer names and
