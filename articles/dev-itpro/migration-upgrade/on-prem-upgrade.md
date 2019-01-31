@@ -166,7 +166,6 @@ An overview of each path is given below:
     > Substitute \<\*\> with the values you require.
 
     > [!Note]
-
     > A.  Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
     >
     > B.  You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the onebox trusted certificate
