@@ -434,36 +434,24 @@ An overview of each path is given below:
 
 ### Configure-On-Premises-Upgrade.ps1 Usage
 
-**Important! This script is only meant to be run from a Onebox VHD
-environment!**
+> [!Important]
+> This script is only meant to be run from a Onebox VHD environment!
+>
+> The script requires you pass at least the DatabaseName parameter. If you don't pass it, the script will automatically request it.
 
-The script requires you pass at least the DatabaseName parameter. If you
-don't pass it, the script will automatically request it.
-
->  
-
-If you want to pass an additional parameter like DatabaseServer, or
-DatabaseUser you can do so but this will cause the script to ask you for
-all additional parameters. This happens because the script will assume
-that you want to point the database connection to a machine outside the
-VM and as such those parameters will be required to correctly establish
-the connection.
+If you want to pass an additional parameter like DatabaseServer, or DatabaseUser you can do so but this will cause the script to ask you for all additional parameters. This happens because the script will assume that you want to point the database connection to a machine outside the VM and as such those parameters will be required to correctly establish the connection.
 
 The parameters that can be passed to the script are:
 
--   -DatabaseName: Database name that you want to upgrade.
+-   **-DatabaseName**: Database name that you want to upgrade.
 
--   -DatabaseServer: Database server containing Microsoft Dynamics 365
-    for Operations, On-premises database.
+-   **-DatabaseServer**: Database server containing Microsoft Dynamics 365 for Finance and Operations, on-premises database.
 
--   -DatabaseUser: Username for SQL Authentication.
+-   **-DatabaseUser**: Username for SQL Authentication.
 
--   -DatabasePassword: Password for SQL Authentication.
+-   **-DatabasePassword**: Password for SQL Authentication.
 
-Once configuration has been passed, the script will execute a database
-connection test with the new parameters. If the script is unable to
-connect we recommend you use Microsoft SQL Server Management Studio or
-some other tool to debug the connection from there.
+Once configuration has been passed, the script will execute a database connection test with the new parameters. If the script is unable to connect we recommend you use Microsoft SQL Server Management Studio or some other tool to debug the connection from there.
 
 **Configure-On-Premises-Upgrade.ps1**
 ```
