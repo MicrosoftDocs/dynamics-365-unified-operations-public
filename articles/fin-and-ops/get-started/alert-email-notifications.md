@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Alerts Email Notifications
-description: Integrated change tracking tools allow users to create Alert Rules that send email notifications when triggered by an event
+title: Client alert notifications by email
+description: This topic provides information about how to set up rules that send email notifications when triggered by an event.
 author: tjvass
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,14 +28,14 @@ ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
 ---
 
-# Client Alert notifications by Email
+# Client alert notifications by email
 
 [!include [banner](../includes/banner.md)]
 
 ## Overview
-Stay on top of your business data with integrated change tracking tools.  With the latest Platform Update Release, users are able to create Alert Rules that automatically dispatch email notifications when triggered by a pre-defined event.  With Dynamics 365 for Finance & Operations, users are able to define custom Alert Rules to monitor filtered views of their data.  The option of receiving email notifications is available for all supported Alert types and can be enabled for existing Alert Rules.  
+You can create alert rules that automatically send email notifications when triggered by a pre-defined event. With Dynamics 365 for Finance & Operations, you can define custom alert rules to monitor filtered views of their data. The option to receive email notifications is available for all supported alert types and can be enabled for existing alert rules.  
 
-Supported scenarios include the ability to use built-in controls to create Alerts Rules that monitor filtered views of System Batch jobs.  Administrators are able to configure Alert rules that send email in cases where a Batch job fails by monitoring the value of the Status field.  Move beyond the burden of constantly checking reports for changes to business data and let the Dynamics 365 for Finance & Operations intelligent change detection service do the monitoring for you.
+You can use built-in controls to create alert rules that monitor the filtered views of System Batch jobs. By monitoring the value of the **Status** field, you can also configure alert rules that send email when a Batch job fails.  When these alert rules are created, you no longer have to check reports for changes to business data. Instead, you can let the Dynamics 365 for Finance & Operations intelligent change detection service monitor for you.
 
 ### What's important to know?
 - Client Alerts depend on the Email subsystem delivered through Office Integration
@@ -49,7 +49,7 @@ Here's a screen shot of the latest **Create alert rule** form which now includes
 [![Alert rule form with the Send email option enabled](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)<br>
 **Note:** Alert notifications will continue to be delivered via the Action Center when **Send email** option is set to **Yes**
 
-### Alert notification - Email templates
+### Alert notification email templates
 The service dispatches Email notifications using pre-defined email templates that deliver the basic alert notification details.  This includes a direct link into the Finance & Operations form where the Alert rule was defined.
 
 The following illustrations showcases the structure of the Alert notifications when received via Email<br>
