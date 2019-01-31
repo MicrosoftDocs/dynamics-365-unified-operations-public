@@ -142,9 +142,9 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 To enable the registration process, set up Retail Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#how-to-set-up-a-fiscal-registration-process).
 
-1. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Connectors**. Import the configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml.
+1. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Connectors**. Import the configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml.
 
-2. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Document providers**. Import the configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml.
+2. Open **Retail > Channel Setup > Fiscal Integration > Fiscal Document providers**. Import the configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml.
 
 3. Open **Retail > Channel Setup > Fiscal Integration > Connector Technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
 
@@ -154,11 +154,11 @@ To enable the registration process, set up Retail Headquarters using the steps b
 
 6. Open **Retail > Channel Setup > Fiscal Integration > Registration process**. Create a new process. Select the connector functional group from the step above.
 
-7. Open Functionality profile linked to the store where the registration process should be activated. Expand the **Fiscal registration process** FastTab. Select the created registration process from the step above.
+7. Open Functionality profile (**Retail > Channel setup > POS setup > POS profiles > Functionality profiles**) linked to the store where the registration process should be activated. Expand the **Fiscal registration process** FastTab. Select the created registration process from the step above.
 
-8. Open the Hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
+8. Open the Hardware profile (**Retail > Channel setup > POS setup > POS profiles > Hardware profiles**) that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
 
-9. Open Distribution scheduler and select job **1070** to transfer data to the Channel database.
+9. Open Distribution schedule (**Retail > Retail IT > Distribution schedule**) and select job **1070** to transfer data to the Channel database.
 
 ## Commerce runtime extension design
 
