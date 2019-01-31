@@ -403,52 +403,32 @@ An overview of each path is given below:
 
 10. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-11. In LCS, open the project, and then, in the **Environments** section,
-    delete the deployment. The applications should start to disappear
-    from Service Fabric Explorer in the environment. This process may
-    take longer depending on the amount of nodes you have.
+11. In LCS, open the project, and then, in the **Environments** section, delete the deployment. The applications should start to disappear from Service Fabric Explorer in the environment. This process may take longer depending on the amount of nodes you have.
 
 12. In LCS go to the Shared Assets Library (right side of the screen).
 
-13. Under **Select asset type** choose Model and download: Dynamics 365
-    for Operations on-premises, Application Version 8.1 Demo Data.
+13. Under **Select asset type** choose Model and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
 
-14. Use this file to create a new database (e.g. AXDB) using the restore
-    backup option from SQL server:
-    [https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)
+14. Use this file to create a new database (e.g. AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-15. The database will need to be configured. Follow the steps under
-    Configure the Finance and Operations database in:
-    <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database>
+15. The database will need to be configured. Follow the steps under [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
-16. Setup a new environment and deploy it with version 8.1 :
-    <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12>
-    . When you deploy, the database that you should specify should be
-    the one created on step 14 (e.g. AXDB)
+16. Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created on step 14 (e.g. AXDB).
 
-17. Apply your own customizations as well as ISV/VAR modules, to your
-    newly created 8.1 environment. Otherwise when the environment
-    initially synchs up with the database it will delete any
-    customization or extensions related data.
+17. Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially synchs up with the database it will delete any customization or extensions related data.
 
-18. Shut-down On-Premises AOSs, BI and MR servers, or stop the services
-    from the Service Fabric portal.
+18. Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
-19. Rename or delete the demo Database (e.g. AXDB) used in the deploy
-    and then rename your new Database (e.g. AXDBupgraded) to the name
-    the demo Database had (e.g. AXDB).
+19. Rename or delete the demo database (e.g. AXDB) used in the deploy and then rename your new database (e.g. AXDBupgraded) to the name the demo database had (e.g. AXDB).
 
-20. Start On-Premises AOSs, BI and MR servers, or start the services
-    from the Service Fabric portal.
+20. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-21. (Optional) If deployment fails because the financial reporting
-    module failed, on the database that you are using for the new
-    environment (e.g. AXDB) run the following command:
+21. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (e.g. AXDB) run the following command:
 
-```
-ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
-CLUSTERED (RECID)
-```
+    ```
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
+    CLUSTERED (RECID)
+    ```
 
 ## Appendix A
 
