@@ -47,31 +47,10 @@ The Prospect activity controls whether prospects can be added to a job. By defau
 
 The Application activity is required in the hiring process template. To send email to candidates when they submit their application or are added to the Application stage, set the **Send mail to candidate** option to **On**.
 
-## Scheduler activity
+## Interview schedule and feedback activity
 
-The Scheduler activity is optional. This activity has two components: Candidate availability and Schedule. The Candidate availability component lets you use email to request a candidate's availability. The Schedule component provides the ability to schedule interviews with the candidate and the hiring team. In the Scheduler activity, the following options can be configured: **Request candidate availability**, **Online meeting**, and **Send mail to candidate**.
+This activity has three components: Candidate availability request, Schedule, and Feedback. It is recommended to use the interview activity in the job template if you want all of candidate’s availability request, schedule and feedback as part of the process vs using them individually as part of the hiring process. For more information, please refer to [Interview schedule and feedback](./interview-schedule-and-feedback.md).
 
-- To send email to candidates to request their availability, set the **Request candidate availability** option to **On**. If you set the option to **Off**, this step won't be shown in the hiring process on the job.
-- To live-stream or have a conference call by using Skype for Business, set the **Online meeting** field to **Skype for Business**. The correct **Join Skype Meeting** link will then be added in the interview meeting request that is sent to interviewers.
-- To send email to candidates to finalize the schedule, set the **Send mail to candidate** option to **On**. If you set the option to **Off**, candidates will receive the interview schedule only when they sign in to the Candidate portal.
-
-## Feedback activity
-
-The Feedback activity is optional. This activity lets interview participants enter recommendations for an applicant. They can also enter any feedback comments that they have. If you turn on the **Inherit feedback participants from Hiring Team** option, the recruiter, hiring manager, and interviewers are automatically entered in the Feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it.
-
-## Interview activity
-
-The Interview activity is optional. This activity has three components: Candidate availability, Schedule, and Feedback. The Candidate availability component lets you use email to request a candidate's availability. The Schedule component provides the ability to schedule interviews with the candidate and the hiring team. In the Scheduler activity, the following options can be configured: **Request candidate availability**, **Online meeting**, and **Send mail to candidate**.
-
-- To send email to candidates to request their availability, set the **Request candidate availability** option to **On**. If you set the option to **Off**, this step won't be shown in the hiring process on the job.
-- To live-stream or have a conference call by using Skype for Business, set the **Online meeting** field to **Skype for Business**. The correct **Join Skype Meeting** link will then be added in the interview meeting request.
-- To send email to candidates to finalize the schedule, set the **Send mail to candidate** option to **On**. If you set the option to **Off**, candidates will receive the interview schedule only when they sign in to the Candidate portal.
-
->[!NOTE]
-> - For all 1:1 interviews, reminders are sent to the interviewers every 24 hours if the interviewer has not responded (accepted or declined) to the interview request.
-> - For all panel interviews, there are no automated reminders to respond to interview request. To trigger a reminder manually, edit the interview and use the **Update & Send** option to send the request back to the interviewers.
-
-The Feedback component lets people enter recommendations for an applicant. They can also enter any feedback comments that they have. If you turn on the **Inherit feedback participants from Hiring Team** option, the recruiter, hiring manager, and interviewers are automatically entered in the Feedback component. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it.
 
 ## PowerApps activity
 
