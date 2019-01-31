@@ -1,0 +1,61 @@
+Attract comprehensive hiring add-on capabilities
+================================================
+
+[!include [banner](file:///C:\Users\pganap\Downloads\Temp\includes\banner.md)]
+
+This article provides an overview of capabilities in Microsoft Dynamics 365 for
+Talent: Attract with comprehensive hiring add-on.
+
+Overview
+--------
+
+We are aware that different organizations value different set of functionalities
+within Attract. Hence, we have 2 levels for the Attract product. We have a
+Attract product that targets smaller teams or organizations where the hiring
+manager is the primary user persona for the hiring process. We also have a
+comprehensive hiring add-on that can be added to the Attract product, at an
+additional cost, that targets medium to large teams or organizations where the
+Recruiter or Talent specialist is the primary user persona for the hiring
+process.
+
+For more information on pricing and licensing, please refer to our [latest
+licensing
+guide.](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf)
+
+Free trials for Attract, automatically includes the comprehensive hiring
+Add-on for the period of the trial. If comprehensive hiring add-on is needed
+for your organizational needs, please find a local Dynamics 365 for Talent
+partner to help you with your needs. You can find local partners using the
+following 
+[link](https://dynamics.microsoft.com/en-us/partners/find-a-partner/).
+
+Capability details
+------------------
+
+Below is the overview of capabilities of Attract across the Attract and Attract
+with comprehensive hiring add-on.
+
+| **Capability​**                                           | **Attract​**         | **Attract with Comprehensive Hiring​** |
+|----------------------------------------------------------|---------------------|---------------------------------------|
+| **Audience / Primary**  **Persona​**                      | **People Managers​** | **Recruiters/Talent Specialists​**    |
+| Job requisition management                                | :heavy_check_mark:   | :heavy_check_mark:                    |
+| Job level hiring process configuration                    | :heavy_check_mark:   | :heavy_check_mark:                    |
+| Candidate creation & profile management​                  | :heavy_check_mark:   | :heavy_check_mark:                    |
+| Intelligent interview scheduling ​                        | :heavy_check_mark:​  | :heavy_check_mark:                    |
+| Single Personal talent pool​ setup                        | :heavy_check_mark:   | :heavy_check_mark:                    |
+| Security and role management                              | :heavy_check_mark:   | :heavy_check_mark:                    |
+| Basic dashboard​                                          | :heavy_check_mark:   | :heavy_check_mark:                    |
+| Candidate access to individual application details        | :heavy_check_mark:   | :heavy_check_mark:                    |
+| Job requisition approval flow                             | ​                    | :heavy_check_mark:                    |
+| Organization level hiring process template management​    | ​                    | :heavy_check_mark:                    |
+| Job posting to Attract career site​                       | ​                    | :heavy_check_mark:                    |
+| Candidate application flows through Attract career site   |                      | :heavy_check_mark:                    |
+| Candidate access to full profile and application history​ | ​                    | :heavy_check_mark:                    |
+| LinkedIn Recruiter connection​<sup>1</sup>                | ​                    | :heavy_check_mark:                    |
+| Offer management​                                         | ​                    | :heavy_check_mark:                    |
+| Shared and global talent pools​ setup                     | ​                    | :heavy_check_mark:                    |
+| Email template management​                                | ​                    | :heavy_check_mark:                    |
+| Candidate and job recommendations​                        | ​                    | :heavy_check_mark:                    |
+
+1 – LinkedIn recruiter licenses are a pre-requisite for this feature to work.
+These must be purchased separately through LinkedIn
