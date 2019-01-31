@@ -5,7 +5,7 @@ title: In-place upgrade process for on-premises environments
 description: This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations versions 7.x to 8.1.  
 author: laneswenka
 manager: AnnBe
-ms.date: 01/30/2019
+ms.date: 01/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -234,63 +234,42 @@ An overview of each path is given below:
 
 > [!Note]
 > Please be aware that this upgrade process takes time complete and Finance and Operations will be inaccessible for the entire duration of it.
->
-> The VHD does not need external network access in order to carry out
-> the [data upgrade process]{.underline}.
->
-> **Should this be included? Knowing how some customers may worry about
-> their data it might be worth it to assure them that we won't be
-> processing any data outside of the VHD. **
->
-> To upgrade from On-Premises 7.x to On-Premises 8.1 there are two
-> possible paths that are currently supported.
->
-> An overview of each path is given below:
+
+To upgrade from on-premises 7.x to on-premises 8.1 there are two possible paths that are currently supported.
+
+An overview of each path is given below:
 
 -   **Upgrading from within VHD** 
-This path involves copying your database into the VHD and executing the upgrade inside it. Overall this is the simpler method.
+    This path involves copying your database into the VHD and executing the upgrade inside it. Overall this is the simpler method.
 
 -   **Upgrading with VHD pointing to your database** 
-This path involves pointing the VHD upgrade process to your database. The upgrade process is still executed from within the VHD.
+    This path involves pointing the VHD upgrade process to your database. The upgrade process is still executed from within the VHD.
+    
+> [!Note]
+> The VHD does not need external network access in order to carry out the data upgrade process.
+
 
 ### Prerequisites
 
 1.  In LCS go to the Shared Assets Library (right side of the screen).
 
-2.  Under **Select asset type** choose Downloadable VHD and download all
-    > 13 parts of the FinOps8.1 package. You will need a total of 36 GB
-    > of free space to download all the parts.
+2.  Under **Select asset type** choose Downloadable VHD and download all 13 parts of the FinOps8.1 package. You will need a total of 36 GB of free space to download all the parts.
 
-3.  The files you downloaded are a self extracting zip. Extract the VHD
-    > to a location with at least 86GB of free space.
+3.  The files you downloaded are a self extracting zip. Extract the VHD to a location with at least 86GB of free space.
 
-4.  Using Hyper-V launch a VM and attach the VHD. (Note that the machine
-    > must be Generation 1).
+4.  Using Hyper-V launch a VM and attach the VHD. (Note that the machine must be Generation 1).
 
-5.  Connect to the VM. You can find the credentials here:
-    > <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally>
+5.  Connect to the VM. You can find the credentials here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally
 
-6.  Before proceeding it will be necessary to upgrade the platform
-    > version of the VHD so that it is in the same state as the one in
-    > your environment. You basically want the version number of the
-    > platform in the VHD to match exactly to the version number in your
-    > environment. In order to do this you can check your environments
-    > history in LCS to see which packages have been applied from your
-    > asset library. Keep in mind that the VHD is already in platform
-    > update 20 (7.0.5030.35333) so it will probably already contain
-    > some packages that you installed manually into your environment,
-    > but may not include the latest binary updates that you applied to
-    > your environment.
+6.  Before proceeding it will be necessary to upgrade the platform version of the VHD so that it is in the same state as the one in your environment. You basically want the version number of the platform in the VHD to match exactly to the version number in your environment. In order to do this you can check your environments history in LCS to see which packages have been applied from your asset library. Keep in mind that the VHD is already in platform update 20 (7.0.5030.35333) so it will probably already contain some packages that you installed manually into your environment, but may not include the latest binary updates that you applied to your environment.
 
-7.  Once you have located the package or packages that have to be
-    > applied, download them into the VHD from LCS.
+7.  Once you have located the package or packages that have to be applied, download them into the VHD from LCS.
 
 8.  For each package do the following:
 
     a.  Extract the package. Eg c:\\D365FFOUpgrade\\
 
-    b.  Open a Command Prompt as Administrator and change directory to
-        the unzipped folder
+    b.  Open a Command Prompt as Administrator and change directory to the unzipped folder
 
     c.  Execute
 
@@ -303,12 +282,9 @@ This path involves pointing the VHD upgrade process to your database. The upgrad
 
         C.  AxUpdateInstaller.exe execute -runbookid=upgrade
 
-9.  If you have any application extensions or customizations install
-    them now into the VHD, otherwise the upgrade process will remove any
-    data related to customizations. Check with your ISV or VAR if you
-    need to prepare your environment in any way before the upgrade.
+9.  If you have any application extensions or customizations install them now into the VHD, otherwise the upgrade process will remove any data related to customizations. Check with your ISV or VAR if you need to prepare your environment in any way before the upgrade.
 
-##$ Upgrading from within VHD
+### Upgrading from within VHD
 
 1.  Shut-down On-Premises AOSs, BI and MR servers, or stop the services
     > from the Service Fabric portal.
