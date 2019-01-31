@@ -165,18 +165,18 @@ An overview of each path is given below:
     > [!Note]
     > Substitute \<\*\> with the values you require.
 
-### Notes/Troubleshooting
+    **Notes/Troubleshooting**
 
-1.  Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
+    A.  Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
 
-2.  You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the onebox trusted certificate
+    B.  You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the onebox trusted certificate
     authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
 
-3.  Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
+    C.  Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
 
-4.  When you install the Certificate Authority in the onebox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
+    D.  When you install the Certificate Authority in the onebox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
 
-5.  Using the Command Prompt from step 6, execute the following
+8.  Using the Command Prompt from step 6, execute the following
     commands:
 
     a.  AxUpdateInstaller.exe generate -runbookid=upgrade
@@ -191,13 +191,13 @@ An overview of each path is given below:
 
     To resolve this, rerun the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
 
-6.  If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
+9.  If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
-7. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
+10. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-8. In LCS, open the project, and then, in the **Environments** section, delete the deployment. The applications should start to disappear from Service Fabric Explorer in the environment. This process may take longer depending on the amount of nodes you have.
+11. In LCS, open the project, and then, in the **Environments** section, delete the deployment. The applications should start to disappear from Service Fabric Explorer in the environment. This process may take longer depending on the amount of nodes you have.
 
-9. If you had customizations:
+12. If you had customizations:
 
     a.  In LCS go to the Shared Assets Library (right side of the screen).
 
@@ -217,13 +217,13 @@ An overview of each path is given below:
 
     i.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-10. If you didn't have customizations:
+13. If you didn't have customizations:
 
     a.  (Optional) Rename your old database (e.g. AXDBold) and then rename your new database (e.g. AXDB). Just make sure that in the next step you input the name of the upgraded database.
 
     b.  Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments ](../deployment/setup-deploy-on-premises-pu12.md).
 
-11. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (e.g. AXDB) run the following command:
+14. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (e.g. AXDB) run the following command:
 
     ```
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
@@ -375,36 +375,17 @@ An overview of each path is given below:
     > [!Note]
     > Substitute \<\*\> with the values you require.
 
-**Notes/Troubleshooting**
+    **Notes/Troubleshooting**
 
->  
+    A.  Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
 
-A.  Only SQL Server Authentication is officially supported for this
-    upgrade.
-    [[https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017]{.underline}](https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017)
+    B.  You will need to add the Certificate Authority certificate that signed your SQL server certificate to the onebox trusted certificate authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate). 
 
->  
+    C.  Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
 
-B.  You will need to add the Certificate Authority certificate that
-    signed your SQL server certificate to the onebox trusted certificate
-    authorities.
-    <https://docs.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate>
+    D.  When you install the Certificate Authority in the onebox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
 
->  
-
-C.  Make sure the database user you use has the sysadmin server role
-    assigned or at least All Privileges on the database you want to
-    upgrade and has permissions to access tempDB. Step 6 of the upgrade
-    process will fail if this is not true!
-
-D.  When you install the Certificate Authority in the onebox, make sure
-    you use the FQDN or IP for connecting to the database that appears
-    there. If you can\'t access it by using the domain name because it
-    doesn\'t point to that server, edit your hosts file and add the DN
-    and the IP it should resolve to.
-
-8.  Using the Command Prompt from step 6, execute the following
-    commands:
+8.  Using the Command Prompt from step 6, execute the following commands:
 
     a.  AxUpdateInstaller.exe generate -runbookid=upgrade
         -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml
@@ -414,18 +395,13 @@ D.  When you install the Certificate Authority in the onebox, make sure
 
     c.  AxUpdateInstaller.exe execute -runbookid=upgrade
 
-> Note: During the execution of Cleanup for data upgrade you may
-> encounter an error: Stack trace: Call to TTSCOMMIT without first
-> calling TTSBEGIN.\' on category \'Error\'.
->
-> Solution: rerun the step with this command: AxUpdateInstaller.exe
-> execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
 
-9.  If you have Customizations from ISV or VAR check if you have to run
-    some post data upgrade scripts.
+    To resolve this issue, rerun the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
 
-10. Start On-Premises AOSs, BI and MR servers, or start the services
-    from the Service Fabric portal.
+9.  If you have customizations from ISVs or VARs check if you have to run some post data upgrade scripts.
+
+10. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
 11. In LCS, open the project, and then, in the **Environments** section,
     delete the deployment. The applications should start to disappear
