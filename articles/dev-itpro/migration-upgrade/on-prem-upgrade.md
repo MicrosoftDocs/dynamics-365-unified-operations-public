@@ -165,16 +165,16 @@ An overview of each path is given below:
     > [!Note]
     > Substitute \<\*\> with the values you require.
 
-    **Notes/Troubleshooting**
+    > [!Note]
 
-    A.  Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
-
-    B.  You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the onebox trusted certificate
+    > A.  Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
+    >
+    > B.  You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the onebox trusted certificate
     authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
-
-    C.  Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
-
-    D.  When you install the Certificate Authority in the onebox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
+    >
+    > C.  Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
+    >
+    > D.  When you install the Certificate Authority in the onebox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
 
 8.  Using the Command Prompt from step 6, execute the following
     commands:
