@@ -49,7 +49,7 @@ The Application activity is required in the hiring process template. To send ema
 
 ## Interview schedule and feedback activity
 
-This activity has three components: Candidate availability request, Schedule, and Feedback. It is recommended to use the interview activity in the job template if you want all of candidate’s availability request, schedule and feedback as part of the process vs using them individually as part of the hiring process. For more information, please refer to [Interview scheduling and feedback](./interview-scheduling-and-feedback.md).
+This activity has three components: Candidate availability request, Schedule, and Feedback. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually as part of the hiring process. For more information, see [Interview scheduling and feedback](interview-scheduling-feedback.md).
 
 ## PowerApps activity
 
