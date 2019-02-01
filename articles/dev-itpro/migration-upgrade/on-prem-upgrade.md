@@ -418,7 +418,7 @@ An overview of each path is given below:
 ### Configure-On-Premises-Upgrade.ps1 usage
 
 > [!Important]
-> This script is only meant to be run from a Onebox VHD environment!
+> This script is only meant to be run from a Onebox VHD environment.
 >
 > The script requires that you pass at least the DatabaseName parameter. If you don't pass it, the script will automatically request it.
 
