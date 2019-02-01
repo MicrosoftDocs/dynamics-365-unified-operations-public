@@ -103,11 +103,13 @@ create and send the interview loop to the interviewers and the candidate.
 12. If you want to include more interviewers, click **+ Add interview** grid
     column to select one or more interviewers. You can use the “…” option to
     remove an interview from the loop as well.
+    
+13. If the interviews are to be scheduled in a different time-zone, pick the required city/time-zone from the drop down on the top right and the interviewer availability grid will now reflect the new time zone selected. This time-zone selection will now also reflect in the interview summary view which will be shared with the interviewers and candidate. 
 
-13. Click **Send to interviewers** to send the meeting invites to the interviewers
+14. Click **Send to interviewers** to send the meeting invites to the interviewers
     involved.
 
-14. Once the interview requests have been sent to the interviewers, they can
+15. Once the interview requests have been sent to the interviewers, they can
     respond to it directly from the e-mail invite they receive.
 
 >[!NOTE]
@@ -120,18 +122,18 @@ interview request.
 interview request. To trigger a reminder manually, edit the interview and use
 the **Update & Send** option to send the request back to the interviewers.
 
-15.  The interviewer responses are captured and shown back in Attract. If an
+16.  The interviewer responses are captured and shown back in Attract. If an
     interviewer declined the invite, you will be notified to make a change. You
     can also view their response in the scheduler grid view by clicking the
     bubble icon.
 
 [![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
 
-16.  Once the interview schedule is ready to be shared with the candidate, click
+17.  Once the interview schedule is ready to be shared with the candidate, click
     “Send to candidate”. You can choose to hide/show the interviewer names and
     slots with the candidate.
 
-17.  Select an e-mail template and share the interview summary with the
+18.  Select an e-mail template and share the interview summary with the
     candidate. The candidate can view this information in their email as well as
     on their candidate portal.
     
