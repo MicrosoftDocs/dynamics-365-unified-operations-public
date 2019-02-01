@@ -5,7 +5,7 @@ title: Business events
 description: This topic provides information about business events. Business events provide a mechanism for external systems to receive notifications from Microsoft Dynamics 365 for Finance and Operations. Therefore, those systems can perform business actions in response to the business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
