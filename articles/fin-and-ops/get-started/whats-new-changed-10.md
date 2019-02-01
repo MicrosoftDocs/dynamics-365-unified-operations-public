@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations version 10.0 (March 2019)
+title: What's new or changed in Dynamics 365 for Finance and Operations version 10.0 (April 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0. This version will be released in March 2019.
 author: tonyafehr
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: Release 10
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations version 10.0 (March 2019)
+# What's new or changed in Dynamics 365 for Finance and Operations version 10.0 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
