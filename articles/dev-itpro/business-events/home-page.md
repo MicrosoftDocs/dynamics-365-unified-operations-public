@@ -129,7 +129,7 @@ To create an endpoint to a Service Bus topic, select **New**, and then, in the *
 
 ### Create an Azure Event Grid endpoint
 
-To create an endpoint to Event Grid, select **New**, and then, in the **Endpoint type** field, select **Azure Event Grid**. In the **Endpoint URL** field, enter the URL from the Event Grid topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.
+Create and configure an **Azure Event Grid Topic** in the Azure Portal. Then create an endpoint to the Event Grid Topic from in the  **Business Events Workspace**, by going to the **Endpoints** tab, selecting **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.
 
 After you've created the endpoints that you require, the next step is to activate the business events.
 
