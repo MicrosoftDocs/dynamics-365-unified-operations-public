@@ -1,43 +1,52 @@
-Attract comprehensive hiring add-on capabilities
-================================================
+---
+# required metadata
 
-[!include [banner](file:///C:\Users\pganap\Downloads\Temp\includes\banner.md)]
+title: Attract comprehensive hiring add-on capabilities
+description: This topic provides information about the capabilities in Microsoft Dynamics 365 for Talent add-on, Attract with comprehensive hiring.
+author: 
+manager: AnnBe
+ms.date: 02/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
 
-This article provides an overview of capabilities in Microsoft Dynamics 365 for
-Talent: Attract with comprehensive hiring add-on.
+# optional metadata
 
-Overview
---------
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Talent, Core
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rschloma
+ms.search.validFrom: 2018-10-15
+ms.dyn365.ops.version: Talent October 2018 update
 
-We are aware that different organizations value different set of functionalities
-within Attract. Hence, we have 2 levels for the Attract product. We have a
-Attract product that targets smaller teams or organizations where the hiring
-manager is the primary user persona for the hiring process. We also have a
-comprehensive hiring add-on that can be added to the Attract product, at an
-additional cost, that targets medium to large teams or organizations where the
-Recruiter or Talent specialist is the primary user persona for the hiring
-process.
+---
 
-For more information on pricing and licensing, please refer to our [latest
-licensing
-guide.](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf)
+# Attract comprehensive hiring add-on capabilities
 
-Free trials for Attract, automatically includes the comprehensive hiring
-Add-on for the period of the trial. If comprehensive hiring add-on is needed
-for your organizational needs, please find a local Dynamics 365 for Talent
-partner to help you with your needs. You can find local partners using the
-following 
-[link](https://dynamics.microsoft.com/en-us/partners/find-a-partner/).
+[!include[banner](../includes/banner.md)]
 
-Capability details
-------------------
+Different organizations value different sets of functionalities within Attract. Because of this, we have two "levels" of the Attract product. We have an Attract product that targets smaller teams or organizations where the hiring manager is the primary user persona for the hiring process. We also have a comprehensive hiring add-on that can be added to the Attract product, at an additional cost, that targets medium to large teams or organizations where the Recruiter or Talent specialist is the primary user persona for the hiring process.
 
-Below is the overview of capabilities of Attract across the Attract and Attract
-with comprehensive hiring add-on.
+For more information on pricing and licensing, see the most recent [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf).
 
-| **Capability​**                                           | **Attract​**         | **Attract with Comprehensive Hiring​** |
+Free trials for Attract automatically include the comprehensive hiring add-on for the period of the trial. If the comprehensive hiring add-on is needed for your organizational needs, find a [local Dynamics 365 for Talent partner](https://dynamics.microsoft.com/en-us/partners/find-a-partner/) to help you with your needs.
+
+## Capability details
+
+The following overview shows the capabilities of Attract across the Attract and Attract with comprehensive hiring add-on.
+
+| **Capability​**                                           | **Attract​**         | **Attract with comprehensive hiring​** |
 |----------------------------------------------------------|---------------------|---------------------------------------|
-| **Audience / Primary**  **Persona​**                      | **People Managers​** | **Recruiters/Talent Specialists​**    |
+| **Audience / Primary**  **Persona​**                      | **People managers​** | **Recruiters/Talent specialists​**    |
 | Job requisition management                                | :heavy_check_mark:   | :heavy_check_mark:                    |
 | Job level hiring process configuration                    | :heavy_check_mark:   | :heavy_check_mark:                    |
 | Candidate creation & profile management​                  | :heavy_check_mark:   | :heavy_check_mark:                    |
@@ -57,5 +66,5 @@ with comprehensive hiring add-on.
 | Email template management​                                | ​                    | :heavy_check_mark:                    |
 | Candidate and job recommendations​                        | ​                    | :heavy_check_mark:                    |
 
-1 – LinkedIn recruiter licenses are a pre-requisite for this feature to work.
-These must be purchased separately through LinkedIn
+> [!IMPORTANT]
+> LinkedIn recruiter licenses, which must be purchased separately through LinkedIn, are a pre-requisite for this feature.
