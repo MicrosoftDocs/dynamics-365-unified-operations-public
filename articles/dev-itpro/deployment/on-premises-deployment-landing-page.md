@@ -5,7 +5,7 @@ title: On-premises deployments home page
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,7 +67,8 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 - [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
 - [Configure and install Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-
+## Upgrade
+- [In-place upgrade process for on-premises environments](../migration-upgrade/on-prem-upgrade.md)
 
 ## Other resources
 - [Troubleshoot on-premises deployments](troubleshoot-on-prem.md)
