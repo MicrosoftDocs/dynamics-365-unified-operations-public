@@ -87,9 +87,7 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 5, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade
-        -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml
-        -servicemodelfile=defaultservicemodeldata.xml
+    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
 
     b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
 
@@ -176,9 +174,7 @@ An overview of each path is given below:
 8.  Using the Command Prompt from step 6, execute the following
     commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade
-        -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml
-        -servicemodelfile=defaultservicemodeldata.xml
+    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
 
     b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
 
@@ -268,10 +264,7 @@ An overview of each path is given below:
 
     c.  Execute
 
-        A.  AxUpdateInstaller.exe generate -runbookid=upgrade
-            -runbookfile=upgrade.xml
-            -topologyfile=defaulttopologydata.xml
-            -servicemodelfile=defaultservicemodeldata.xml
+        A.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
 
         B.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
 
@@ -304,9 +297,7 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 5, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade
-        -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml
-        -servicemodelfile=defaultservicemodeldata.xml
+    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
 
     b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
 
@@ -381,9 +372,7 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 6, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade
-        -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml
-        -servicemodelfile=defaultservicemodeldata.xml
+    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
 
     b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
 
