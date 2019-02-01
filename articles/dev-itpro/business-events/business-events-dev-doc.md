@@ -31,12 +31,17 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
+Implementing a business event and sending it is a fairly straightforward process:
+1. build the contract
+2. build the event
+3. add code to send the event 
+
 ## Implementing a business event
 
 Two classes must be implemented:
 
 - **Business event** – This class extends the **BusinessEventsBase** class. It provides support for constructing the business event, building the payload, and sending the business event.
-- **Business event contract** – This class extends the **BusinessEventsContract** class. It defines the payload of the business event and allows for population of the contract at runtime.
+- **Business event contract** – This class extends the **BusinessEventsContract** class. It defines the payload of the business event and allows for population of the contract at runtime. 
 
 ### BusinessEventsBase extension
 
@@ -96,7 +101,7 @@ The process of implementing a **BusinessEventsBase** extension is straightforwar
     }
     ```
 
-5. Implement the **buildContract** method.
+5. Implement the **buildContract** method. Note that you'll need an EventContract stub for this step.
 
     ```
     [Wrappable(true), Replaceable(true)]
