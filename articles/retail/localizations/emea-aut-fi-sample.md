@@ -49,7 +49,7 @@ To learn about common POS scenarios and features that are available to customers
 
 ### Integration Retail POS with the EFR
 
-Retail includes a sample for integration of POS with Austria-specific certified fiscal registration service. It is assumed that a service is hosted on the mashine inside clien's infrastructure and a Hardware station paired with POS is able to connect the service via LAN or locally. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK).
+Retail includes a sample for integration of POS with Austria-specific certified fiscal registration service. It is assumed that a service is hosted on the mashine inside client's infrastructure and paired with POS Hardware station is able to connect the service via LAN or locally. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK).
 
 
 ### Austria-specific POS scenarios and features
