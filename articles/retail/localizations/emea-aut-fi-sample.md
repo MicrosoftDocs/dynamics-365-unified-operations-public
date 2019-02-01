@@ -33,44 +33,6 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include[banner](../includes/banner.md)]
 
-## Introduction
-
-
----
-
-# required metadata
-
-title: Fiscal registration service integration sample for Austria
-description: This topic provides an overview of the fiscal integration sample for Austria.
-author: josaw
-manager: annbe
-ms.date: 03/01/2019
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-retail
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Austria
-ms.search.industry: Retail
-ms.author: v-dmpere
-ms.search.validFrom: 2019-3-1
-ms.dyn365.ops.version: 10.0.1
-
----
-
-# Fiscal registration service integration sample for Austria
-
-[!include[banner](../includes/banner.md)]
-
 This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations. 
 
 The Microsoft Dynamics 365 for Retail functionality for Austria includes a sample of integration of POS with an external fiscal registration service to cover local fiscal requirements to cash registers in Austria. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It is based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables the communication with the EFR service via the HTTPS protocol. The sample is provided in form of a source code and is a part of the Retail SDK.
