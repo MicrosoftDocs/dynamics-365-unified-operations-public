@@ -1,5 +1,6 @@
 {
-    "redirections": [    {
+    "redirections": [
+    {
       "source_path": "articles/index.md",
       "redirect_url": "/dynamics365/unified-operations/fin-and-ops/index",
       "redirect_document_id": "false"
@@ -1079,6 +1080,12 @@
             "source_path": "dev-itpro/data-entities/data-entities-product-information-management.md",
             "redirect_url": "/dynamics365/unified-operations/ dev-itpro/data-entities/data-entities-report",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md",
+            "redirect_url": "/dynamics365/unified-operations/supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process.md",
+            "redirect_document_id": true
         }
+        
     ]
 }
