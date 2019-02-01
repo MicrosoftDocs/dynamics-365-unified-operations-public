@@ -131,6 +131,7 @@ For more information about how to set up and use sales tax in Microsoft Dynamics
         - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
 
 ### EFR–specific settings
+
 1. Cofigure VAT rates mapping.
 The **VAT rates mapping** is included in the **Fiscal connector functional profile** provided as part of the fiscal integration sample:
 
@@ -142,7 +143,6 @@ The **VAT rates mapping** is included in the **Fiscal connector functional profi
 For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
 
 3. Configure custom fields so that they can be used in receipt formats for sales receipts
-
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
 On the Language text page, add the following records for the labels of the custom fields for receipt layouts. Note that the Language ID, Text ID, and Text values that are shown in the table are just examples. You can change them to meet to your requirements. However, the Text ID values that you use must be unique, and they must be equal to or higher than 900001.
@@ -174,30 +174,26 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SALESTAXBASIS        | Receipt | 103181          |
 
 4. Configure receipt formats
-
 In the **Receipt format designer**, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
    **Header**: Add the following field:
       Continuous Number – This field identifies the number of cash transaction in the fiscal registrator;
    **Lines**:
       Tax Retail Print Code - This field dysplay the code corresponding to tax group 
    **Footer**: Add the following field groups:
-      **Sales total** - total transaction amounts: 
-         Total (sales);
-		   Total Include Tax (sales);
-         Total Tax (sales).
+      **Sales total**: 
+      	Total (sales) - total transaction amount without tax sum;
+	Total Include Tax (sales) - total transaction amount with tax sum;
+        Total Tax (sales) - transaction tax sum.
 
       **Tax break down** (should be separate line):
-         Tax Code;
-			Tax Percentage;
-			Tax Basis (sales);
-			Tax Amount (sales);
-			Total Include Tax (sales);
-			Tax Retail Print Code.
+	Tax Basis (sales) - total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards;
+	Tax Amount (sales) - total tax amount for cash transactions excluding deposits, prepayments and gift cards;
+	Total Include Tax (sales) - total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards;
+	Tax Retail Print Code - the code corresponding to tax group.
 				
-      QR Code 
-         QR Code
+      **QR Code**: 
+         QR Code - reference to registered cash transaction in the form of QR-code.
       
-
 5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the Allow skip fiscal registration check box.
 
 ### Handling gift cards
