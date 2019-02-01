@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/preview-banner.md)]
 
 Implementing a business event and sending it is a fairly straightforward process:
-1. build the contract
-2. build the event
-3. add code to send the event 
+1. Build the contract.
+2. Build the event.
+3. Add code to send the event. 
 
 ## Implementing a business event
 
