@@ -131,7 +131,7 @@ For more information about how to set up and use sales tax in Microsoft Dynamics
         - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
 
 ### EFR–specific settings
-1. VAT rates mapping
+1. Cofigure VAT rates mapping.
 The **VAT rates mapping** is included in the **Fiscal connector functional profile** provided as part of the fiscal integration sample:
 
     A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00
@@ -141,10 +141,64 @@ The **VAT rates mapping** is included in the **Fiscal connector functional profi
 2. Set up tax group code for printing in receipt. 
 For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
 
-3. Austria-specific fields in Receipt
-Set up custom fields for receipt layouts, so that th
+3. Configure custom fields so that they can be used in receipt formats for sales receipts
 
-4. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the Allow skip fiscal registration check box.
+You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
+
+On the Language text page, add the following records for the labels of the custom fields for receipt layouts. Note that the Language ID, Text ID, and Text values that are shown in the table are just examples. You can change them to meet to your requirements. However, the Text ID values that you use must be unique, and they must be equal to or higher than 900001.
+
+Add the following POS labels to **Language text** from:
+
+| Language ID | Text Id | Text                      |
+|-------------|---------|---------------------------|
+| en-US       | 103174  | QR Code                   |
+| en-US       | 103175  | Continuous Number         |
+| en-US       | 103176  | Tax Retail Print Code     |
+| en-US       | 103177  | Total (sales)             |
+| en-US       | 103178  | Total Tax (sales)         |
+| en-US       | 103179  | Total Include Tax (sales) |
+| en-US       | 103180  | Tax Amount (sales)        |
+| en-US       | 103181  | Tax Basis (sales)         |
+
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
+
+| Name                 | Type    | Caption text Id |
+|----------------------|---------|-----------------|
+| QRCODE               | Receipt | 103174          |
+| CONTINUOUSNUMBER     | Receipt | 103175          |
+| RETAILPRINTCODE      | Receipt | 103176          |
+| SALESTOTAL           | Receipt | 103177          |
+| SALESTOTALTAX        | Receipt | 103178          |
+| SALESTOTALINCLUDETAX | Receipt | 103179          |
+| SALESTAXAMOUNT       | Receipt | 103180          |
+| SALESTAXBASIS        | Receipt | 103181          |
+
+4. Configure receipt formats
+
+In the **Receipt format designer**, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+   **Header**: Add the following field:
+      Continuous Number – This field identifies the number of cash transaction in the fiscal registrator;
+   **Lines**:
+      Tax Retail Print Code - This field dysplay the code corresponding to tax group 
+   **Footer**: Add the following field groups:
+      **Sales total** - total transaction amounts: 
+         Total (sales);
+		   Total Include Tax (sales);
+         Total Tax (sales).
+
+      **Tax break down** (should be separate line):
+         Tax Code;
+			Tax Percentage;
+			Tax Basis (sales);
+			Tax Amount (sales);
+			Total Include Tax (sales);
+			Tax Retail Print Code.
+				
+      QR Code 
+         QR Code
+      
+
+5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the Allow skip fiscal registration check box.
 
 ### Handling gift cards
 The fiscal registration service integration sample implements the following rules in regard to gift cards:
