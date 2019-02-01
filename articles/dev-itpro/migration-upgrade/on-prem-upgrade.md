@@ -240,7 +240,7 @@ An overview of each path is given below:
 
 -   **Upgrading with VHD pointing to your database** - This path involves pointing the VHD upgrade process to your database. The upgrade process is still executed from within the VHD.
     
-> [!OTE]
+> [!NOTE]
 > The VHD does not need external network access in order to carry out the data upgrade process.
 
 
