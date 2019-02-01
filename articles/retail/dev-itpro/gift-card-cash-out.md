@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Gift card Cash out operation
-description: This topic provides information about the new gift card cash out functionality that is now available in Microsoft Dynamics 365 for Retail.
+title: Cash out Gift Card operation
+description: This topic provides information about the new cash out gift card functionality that is now available in Microsoft Dynamics 365 for Retail.
 author: rapraj
 manager: josaw1
 ms.date: 02/08/2019
@@ -14,30 +14,42 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
- # ROBOTS: 
-audience: Developer
+# ROBOTS: 
+audience: IT Pro
 ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: ivanv
+ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
 ---
 
 # Cash out gift card balance for a retail customer
 
-[!include [banner](../../includes/banner.md)]
+This topic provides an overview of the **Cash Out Gift Card** feature for the Dynamics 365 for Retail Modern POS. 
 
-This new feature gives retailers the option to set a new operation to cash out a gift card and to set the gift card balance limits under which the cash out operation can be enabled.
+## Overview 
 
-The purpose of this feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often must be able to exchange a low balance gift card for cash at the customer's request. In Washington state, for example, that threshold is $5.
+The purpose of this feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often must be able to exchange a low balance gift card for cash at the customer's request. 
 
-The external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
+This topic covers the following aspects of the cash out gift card feature:
+
+- **[Prerequisites](#Prerequisites)** - Set of prerequisites to leverage this feature in Dynamics 365 for Retail Modern POS.
+- **[Scenario details](#Scenario-details)** - Detailed description of the scenarios covered by the cash out gift card feature.
+- **[Troubleshooting steps](#Troubleshooting-steps)** - Steps to take when encountering issues with the cash out gift card feature.
+- **[Related articles](#Related-articles)** - List of related articles you might find useful when using the cash out gift card feature.
+
+## Prerequisites
+- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- If the Gift Cards are external gift cards, the external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
+
+## Scenario details
+The Cash Out Gift Card feature is applicable to a scenario where In Washington state, for example, that threshold is $5. Gives retailers the option to set a new operation to cash out a gift card and to set the gift card balance limits under which the cash out operation can be enabled.
 
 ## Retail headquarters configuration
 
