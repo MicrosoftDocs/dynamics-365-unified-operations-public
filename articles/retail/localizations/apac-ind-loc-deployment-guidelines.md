@@ -192,11 +192,9 @@ The Generic Tax Engine component is a part of sealed extensions.
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
-
----
-
-    > [!WARNING]
-    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    
+> [!WARNING]
+> Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 ### Set up required parameters in Retail headquarters
 
