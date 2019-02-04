@@ -5,7 +5,7 @@ title: Activities in the processes
 description: This topic provides information about the various types of activities that can be used in the hiring process.
 author: 
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -49,7 +49,7 @@ The Application activity is required in the hiring process template. To send ema
 
 ## Interview schedule and feedback activity
 
-This activity has three components: Candidate availability request, Schedule, and Feedback. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually as part of the hiring process. For more information, see [Interview scheduling and feedback](interview-scheduling-feedback.md).
+This activity has three components: Candidate availability request, Schedule, and Feedback. Use the interview activity in the job template if you want to include the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually as part of the hiring process. For more information, see [Interview scheduling and feedback](interview-scheduling-feedback.md).
 
 ## PowerApps activity
 
