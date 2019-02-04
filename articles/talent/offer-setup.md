@@ -5,7 +5,7 @@ title: Set up offer management
 description: This topic describes how to set up offers in Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -224,6 +224,6 @@ offers.
     - ESign - This is the default option, provided out of the box, where the user can sign an offer by typing their name and initials.
 
 >[!NOTE]
-> For Adobe Sign licenses and free Trial, please visit this [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
+> For Adobe Sign licenses and a free Trial, please visit this [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 To learn more about the offer creation process, see [Creating, approving, and signing offers](./creating-offers.md).
