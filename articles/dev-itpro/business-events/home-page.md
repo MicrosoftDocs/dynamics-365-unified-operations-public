@@ -128,6 +128,9 @@ In the **Key vault secret name** field, enter the secret name for the endpoint r
 
 ![Business events configure Azure Key Vault](../media/businesseventskeyvault2.png)
 
+> [!IMPORTANT]
+> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
+
 ### Create an Azure Service Bus Topic endpoint
 
 To create an endpoint to a Service Bus topic, select **New**, and then, in the **Endpoint type** field, select **Azure Service Bus Topic**. The **Topic name** field must be set to the name of the Service Bus topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint.
