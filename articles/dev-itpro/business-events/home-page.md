@@ -129,7 +129,7 @@ In the **Key vault secret name** field, enter the secret name for the endpoint r
 ![Business events configure Azure Key Vault](../media/businesseventskeyvault2.png)
 
 > [!IMPORTANT]
-> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this set up to complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
+> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
 
 ### Create an Azure Service Bus Topic endpoint
 
