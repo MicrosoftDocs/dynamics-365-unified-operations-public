@@ -37,7 +37,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 **Build 8.1.2128**
 
-##Core HR Changes
+## Core HR Changes
 
 ### Time off taken on leave people card doesn't consider leave plan dates
 For those that have leave plans that don’t run on a calendar year, the **Taken** card now displays time off that’s been taken in the plan-defined leave year. For example, if an organization’s leave year is June 1 through May 30 and an employee has taken 3 days off in December, the **Taken** card on January 15, will display 3 days. 
