@@ -34,11 +34,10 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-Different organizations value different sets of functionalities within Attract. Because of this, we have two "levels" of the Attract product. We have an Attract product that targets smaller teams or organizations where the hiring manager is the primary user persona for the hiring process. We also have a comprehensive hiring add-on that can be added to the Attract product, at an additional cost, that targets medium to large teams or organizations where the Recruiter or Talent specialist is the primary user persona for the hiring process.
+Different organizations value different sets of functionalities within Attract. Because of this, we have two "levels" of the Attract product. There is an Attract product that targets smaller teams or organizations, where the hiring manager is the primary user for the hiring process. There is also a comprehensive hiring add-on that can be added to the Attract product, at an additional cost, which targets medium to large teams or organizations where the Recruiter or Talent specialist is the primary user for the hiring process.
+For more information about pricing and licensing, see the most recent [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf).
 
-For more information on pricing and licensing, see the most recent [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf).
-
-Free trials for Attract automatically include the comprehensive hiring add-on for the period of the trial. If the comprehensive hiring add-on is needed for your organizational needs, find a [local Dynamics 365 for Talent partner](https://dynamics.microsoft.com/en-us/partners/find-a-partner/) to help you with your needs.
+Free trials of Attract automatically include the comprehensive hiring add-on for the period of the trial. If the comprehensive hiring add-on is needed for your organizational needs, find a [local Dynamics 365 for Talent partner](https://dynamics.microsoft.com/en-us/partners/find-a-partner/) to help you with your needs.
 
 ## Capability details
 
@@ -67,4 +66,4 @@ The following overview shows the capabilities of Attract across the Attract and 
 | Candidate and job recommendations​                        | ​                    | :heavy_check_mark:                    |
 
 > [!IMPORTANT]
-> LinkedIn recruiter licenses, which must be purchased separately through LinkedIn, are a pre-requisite for this feature.
+> LinkedIn recruiter licenses, which must be purchased separately through LinkedIn, are a prerequisite for this feature.
