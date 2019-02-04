@@ -112,7 +112,7 @@ The following privileges apply to the job-specific data for applicants and the a
 | Advance stage           | Can reject if the user is on the hiring team | Can advance if the user is on the hiring team | Not allowed |
 | Launch offer management | Can start offer management | There is a configuration option on the offer activity. | Not allowed |
 
-\*\* A configuration option in the [feedback activity setup](./activities-attract.md#feedback-activity) controls whether interviewers can see each other's feedback.
+\*\* A configuration option in the [feedback activity setup](activities-attract.md#feedback-activity) controls whether interviewers can see each other's feedback.
 
 ## Process templates
 

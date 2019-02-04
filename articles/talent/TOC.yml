@@ -7,6 +7,8 @@
     - name: What's new or changed
       href: whats-new.md
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (January 31, 2019)      
+        href: whats-new-talent-january-29.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (January 23, 2019)      
         href: whats-new-talent-january-23.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (January 17, 2019)
@@ -97,6 +99,8 @@
       href: attract-linked-in-recruiter.md
     - name: Hiring Process activities in Attract 
       href: activities-attract.md
+    - name: Interview scheduling and feedback
+      href: interview-scheduling-feedback.md
     - name: Extensibility
       href: extensibility-attract.md
     - name: Career site and candidate experiences
@@ -115,6 +119,8 @@
       href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
+    - name: Attract comprehensive hiring add-on capabilities
+      href: attract-comprehensive-hiring.md
   - name: Motivate employees
     items:
     - name: Compensation plans
