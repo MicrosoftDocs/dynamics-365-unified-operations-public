@@ -49,7 +49,7 @@ To learn about common POS scenarios and features that are available to customers
 
 ### Integration Retail POS with the EFR
 
-Retail includes a sample for integration of POS with Austria-specific certified fiscal registration service. It is assumed that a service is hosted on the mashine inside client's infrastructure and paired with POS Hardware station is able to connect the service via LAN or locally. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK).
+Retail includes a sample for integration of POS with Austria-specific certified fiscal registration service. It is assumed that the service is hosted on the mashine inside client's infrastructure and is paired with POS Hardware station. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK).
 
 
 ### Austria-specific POS scenarios and features
@@ -57,33 +57,30 @@ Retail includes a sample for integration of POS with Austria-specific certified 
 The following scenarios are covered by the fiscal registration service integration sample for Austria:
    - Registration of cash transactions at the fiscal cash register (EFR):
       - Sending detailed transaction data (sales line information, discounts, payments, taxes) to fiscal register service;
-     - Capturing a response from the fiscal register service including a digital sign and link to registered transaction;
-      - Printing in the receipt tax group data and reference to registered transaction in fiscal register software as a QR-code
+      - Capturing a response from the fiscal register service including a digital sign and link to registered transaction;
+      - Printing in the receipt tax group data and reference to registered transaction in fiscal register software as a QR-code.
   - Registration of deposits at the fiscal cash register (EFR) as a non-cash transactions:
       - Issue a Gift card;
       - Recording of Customer account’s deposit;
-      - Registration of Sales order’s deposit
-  - Registration of some POS-related events or transactions at the fiscal cash register (EFR) as a non-cash transactions
-      - POS log on/log off;
+      - Registration of Sales order’s deposit.
+  - Registration of some POS-related events or transactions at the fiscal cash register (EFR) as a non-cash transactions:
       - Shift open/close;
       - Start amount / Float entry / Tender removal;
-      - Void transaction;
-      - Void transaction line;
       - Price override;
       - Tax override;
       - Print copy of receipt;
       - Open drawer;
       - Print X report;
-      - Print Z report
-  - End of day statements (fiscal X, fiscal Z reports) enhancement by Austria-specific fields  
+      - Print Z report.
+  - End of day statements (fiscal X, fiscal Z reports) enhancement by Austria-specific fields:  
       - Number of total sold items, products or services delivered to customers;
       - Sales broken down by tax rates;
       - Breakdown of proceeds by cashier/cash register operator;
       - Post-voids postings performed, price discounts, returns, negative sales, by which daily sales are reduced;
       - Zero sales (giveaways).
   - Error handling including following options:
-      - Retry fiscal registration if it's possible; for example, if the fiscal registration service is unavailable.
-      - Skip fiscal registration, including info codes to capture the reason of failure and additional information.
+      - Retry fiscal registration if it's possible; for example, if the fiscal registration service is unavailable;
+      - Skip fiscal registration, including info codes to capture the reason of failure and additional information;
       - Fiscal registration service health-check before posting transaction data into Dynamics 365 HQ.
 
 ## Setting up Retail for Austria
@@ -91,7 +88,7 @@ The following scenarios are covered by the fiscal registration service integrati
 This section describes the Retail settings that are specific to and recommended for Austria. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
 
 To use the Austria-specific functionality for Retail, you must complete these tasks:
-- Set the **Country/region** field to AUT (Austria) in the primary address of the legal entity.
+- Set the **Country/region** field to AUT (Austria) in the primary address of the legal entity;
 - Set the **ISO code** field to AT (Austria) in the POS functionality profile of every store that is located in Austria.
 
 Austria-specific settings can be divided into two groups:
@@ -102,10 +99,10 @@ Austria-specific settings can be divided into two groups:
 
 You must specify the following general settings for Austria:
 1. Set up the following parameters for value-added tax (VAT) per Austria requirements:
-    - Sales tax codes
-    - Sales tax groups
-    - Item sales tax groups
-    - Sales tax settings in items (item sales tax groups for sales)
+    - Sales tax codes;
+    - Sales tax groups;
+    - Item sales tax groups;
+    - Sales tax settings in items (item sales tax groups for sales).
 
 For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations and in Retail see [Sales tax overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
 
@@ -132,22 +129,22 @@ For more information about how to set up and use sales tax in Microsoft Dynamics
 
 ### EFR–specific settings
 
-1. Cofigure VAT rates mapping.
+1. Cofigure VAT rates mapping:
 The **VAT rates mapping** is included in the **Fiscal connector functional profile** provided as part of the fiscal integration sample:
 
     A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00
 
-    Check default mapping rates values and correct it if is is nessesary.
+Check default mapping rates values and correct it if is is nessesary.
 
-2. Set up tax group code for printing in receipt. 
+2. Set up tax group code for printing in receipt:
 For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
 
-3. Configure custom fields so that they can be used in receipt formats for sales receipts
+3. Configure custom fields so that they can be used in receipt formats for sales receipts:
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the Language text page, add the following records for the labels of the custom fields for receipt layouts. Note that the Language ID, Text ID, and Text values that are shown in the table are just examples. You can change them to meet to your requirements. However, the Text ID values that you use must be unique, and they must be equal to or higher than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the Language ID, Text ID, and Text values that are shown in the table are just examples. You can change them to meet to your requirements. However, the Text ID values that you use must be unique, and they must be equal to or higher than 900001.
 
-Add the following POS labels to **Language text** from:
+Add the following POS labels to the **POS** section of **Language text** from:
 
 | Language ID | Text Id | Text                      |
 |-------------|---------|---------------------------|
@@ -184,17 +181,15 @@ In the **Receipt format designer**, add the following custom fields to the appro
       	Total (sales) - total transaction amount without tax sum;
 	Total Include Tax (sales) - total transaction amount with tax sum;
         Total Tax (sales) - transaction tax sum.
-
       **Tax break down** (should be separate line):
 	Tax Basis (sales) - total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards;
 	Tax Amount (sales) - total tax amount for cash transactions excluding deposits, prepayments and gift cards;
 	Total Include Tax (sales) - total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards;
-	Tax Retail Print Code - the code corresponding to tax group.
-				
+	Tax Retail Print Code - the code corresponding to tax group.				
       **QR Code**: 
          QR Code - reference to registered cash transaction in the form of QR-code.
       
-5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the Allow skip fiscal registration check box.
+5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box.
 
 ### Handling gift cards
 The fiscal registration service integration sample implements the following rules in regard to gift cards:
