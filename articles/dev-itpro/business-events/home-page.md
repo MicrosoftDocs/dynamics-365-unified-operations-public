@@ -49,11 +49,16 @@ In Finance and Operations, a business action that a user performs can be either 
 
 By default, the business event functionality is turned off. To turn it on, follow one of these steps.
 
-- In non-production environments, turn on the BusinessEventsMaster flight by running the following SQL statement and then doing a reset of Microsoft Internet Information Services (IIS).
+- In non-production environments, turn on the BusinessEventsMaster flight by running the following SQL statement
 
     ```
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) VALUES ('BusinessEventsMaster', 1, 12719367)
     ```
+
+- After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's. 
+key="DataAccess.FlightingServiceCatalogID" value="12719367"
+
+- Perform an IISRESET
 
 - In production environments, you must create a support case with Microsoft.
 
