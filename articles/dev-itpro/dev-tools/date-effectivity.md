@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Date effectivity
+# Date effectivity for now
 
 [!include [banner](../includes/banner.md)]
 
