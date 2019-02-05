@@ -90,16 +90,6 @@ The Cash Out Gift Card feature is applicable to a scenario where In Washington s
 16. Check the status of the job by searching for **Download sessions**.
 17. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
-## Reset IIS if you're using Retail Store Scale Unit
-
-If you're using a Retail Store Scale Unit (RSSU) that is located in the store, open a Command Prompt window as an administrator, and enter **iisreset**. Otherwise, wait for the Retail Server to be updated.
-
-## Update merchant properties
-
-1. In File Explorer, go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Hardware Station\\ConfigurationUtility**.
-2. Run the **HardwareStationConfigurationUtility** executable program.
-3. Configure the utility by entering the correct Retail Server URL, and then select **Install**.
-4. To verify that the download was successful, go to **C:\\ProgramData\\Microsoft Dynamics AX\\Retail Hardware Station**, and look at the timestamp of the **MerchantInformation.xml** file. It should be very recent.
 
 ## Configure and test Retail Modern POS
 
@@ -121,23 +111,9 @@ If you're using a Retail Store Scale Unit (RSSU) that is located in the store, o
 
 ## Troubleshooting 
 
-### Issue: An error occurs when you start the HardwareStationConfigurationUtility program
+### General issues
+For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs first. The logs can be found under these nodes in the Windows event log:
+  - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
+  - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
 
-1. From an elevated command prompt, open the **HardwareStationConfigurationUtility.exe.config** file in Notepad.
-2. In the file, follow these steps:
 
-    1. Replace the **DataServiceUrl** value with the correct Retail Server URL.
-    2. Verify that the **AADLogonUrl** value is correct.
-
-3. Save and close the file.
-4. Restart the utility.
-
-### Issue: A token error occurs when you try to pair virtual peripherals
-
-1. Exit MPOS.
-2. Go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Hardware Station\\Package**.
-3. From an elevated command prompt, open the **Web.config** file in Notepad.
-4. Replace the **RetailServer** value with the correct Retail Server value.
-5. Save and close the file.
-6. Restart MPOS.
-7. If the issue persists, exit MPOS, use Task Manager to end any instances of dllhost.exe that are running, and then do another reset of Internet Information Services (IIS).
