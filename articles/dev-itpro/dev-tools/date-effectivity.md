@@ -34,12 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
+This topic provides information about date-effective data entities and data sources, shows how to create a date-effective entity, and explains how date effectivity applies to read and write activities.
 
-There are different design patterns for date-effective features that involve data entities. The patterns are classified into two main categories:
+Date-effective features that involve data entities have different design patterns, which are classified into two main categories:
 
--   **Date-effective entities** – The entity has at least one date-effective data source, and the entity itself is also date effective.
--   **Non-date-effective entities** – The entity itself is not date effective, but it does contain date-effective data sources.
+-   **Date-effective entities** – The entity has at least one date-effective data source, and the entity is also date effective.
+-   **Non-date-effective entities** – The entity is not date effective, but it does contain date-effective data sources.
 
 The next sections describe the small list of properties and methods that control the date-effective behavior of entities and their date-effective data sources.
 
