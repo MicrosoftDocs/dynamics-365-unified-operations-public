@@ -100,13 +100,13 @@ To make the **preview** status clear to users, each preproduction build will be 
 ## Updated navigation bar that aligns with the Office header
 Dynamics 365 products are working to align their respective headers with the Office header to provide a more cohesive shell experience for users across Microsoft products. For Finance and Operations users, this header update will be seen as a completely restyled navigation bar that more prominently features navigation search. Notably, the new design does not include a breadcrumb. 
 
-The following image shows the updated navigation bar.
+The following image shows the updated navigation bar in Platform update 24.
 
-![Updated navigation bar](media/updatedNavBar.png  "Updated navigation bar")
+![Updated navigation bar in Platform update 24](media/updatedNavBar.png  "Updated navigation bar in Platform update 24")
 
-The following image shows how the navigation bar used to appear.
+The following image shows how the navigation bar appeared in Platform update 23.
 
-![Current navigation bar](media/existingNavBar.png  "Current navigation bar")
+![Navigation bar in Platform update 23](media/existingNavBar.png  "Navigation bar in Platform update 23")
 
 ## Extensibility enhancements
 
