@@ -84,15 +84,15 @@ Supported scenarios include using intuitive controls to create Alerts rules that
 > Join the Dynamics 365 Insider Program to get early access to preview features.
 
 ## Clear identification of preview builds
-Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](public-preview-releases.md) topic for more information about the Finance and Operations release process.  
+Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. For more information about the Finance and Operations release process, see [Standard and First release service updates](public-preview-releases.md).
 
 To make the **preview** status clear to users, each preproduction build will be tagged in two different ways: 
 
-1.  Users will see the word "Preview" as a suffix to the product name in the navigation bar.  
+- Users will see the word "Preview" as a suffix to the product name in the navigation bar.  
 
     ![Preview indicator in the navigation bar](media/previewCallout.png  "Preview indicator in the navigation bar")  
 
-2.  The title of the **About** box will include the word *Preview*. 
+- The title of the **About** box will include the word "Preview". 
 
     ![Preview is also indicated in the About box](media/previewAboutBox.png  "Preview is also indicated in the About box")
     
@@ -100,7 +100,7 @@ To make the **preview** status clear to users, each preproduction build will be 
 ## Updated navigation bar that aligns with the Office header
 Dynamics 365 products are working to align their respective headers with the Office header to provide a more cohesive shell experience for users across Microsoft products. For Finance and Operations users, this header update will be seen as a completely restyled navigation bar that more prominently features navigation search. Notably, the new design does not include a breadcrumb. 
 
-The following image shows the udpated navigation bar.
+The following image shows the updated navigation bar.
 
 ![Updated navigation bar](media/updatedNavBar.png  "Updated navigation bar")
 
