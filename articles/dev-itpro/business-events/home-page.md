@@ -114,7 +114,7 @@ Select **Next**, and specify the name of the endpoint and the Service Bus queue.
 
 In the **Queue Name** field, enter the **Azure Service Bus Queue** name you created in the Azure Service Bus Queue configuration in Azure.  
 
-![Business events Queue Name](../media/BusinessEventsSBQueueName.png)
+![Business events Queue Name](../media/BusinessEventsSBQueueName.PNG)
 
 In the **Azure Active Directory application ID** field, enter the application ID that is created in Azure AD in the Azure portal.
 
@@ -134,7 +134,7 @@ In the **Key vault secret name** field, enter the secret name for the endpoint r
 
 The **Key Vault Secret** value, in Azure, will be the **Azure Service Bus** Primary Connection String value.  This value is found in the Azure Service Bus you've configured in the Shared Access Policies > RootManagedSharedAccessKey.
 
-![Business events Azure Key Vault key value](../media/BusinessEventsKVSValue.png)
+![Business events Azure Key Vault key value](../media/BusinessEventsKVSValue.PNG)
 
 > [!IMPORTANT]
 > The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
@@ -147,11 +147,11 @@ To create an endpoint to a Service Bus topic, select **New**, and then, in the *
 
 Create and configure an **Azure Event Grid Topic** in the Azure Portal. Then create an endpoint to the Event Grid Topic from in the  **Business Events Workspace**, by going to the **Endpoints** tab, selecting **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. This is the **Topic Endpoint** value from the Overview section of your Event Grid Topic.
 
-![Business events Event Grid Endpoint value](../media/BusinessEventsEGTopicsEndpoint.png)
+![Business events Event Grid Endpoint value](../media/BusinessEventsEGTopicsEndpoint.PNG)
 
 Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Crendtial can be found under the Event Grid you created in the **Access Keys** section under Settings. 
 
-![Business events Event Grid credentials value](../media/BusinessEventsEGKeyValue.png)
+![Business events Event Grid credentials value](../media/BusinessEventsEGKeyValue.PNG)
 
 After you've created the endpoints that you require, the next step is to activate the business events.
 
@@ -170,13 +170,13 @@ When business events occur as business processes are run, the system will do out
 
 After business events are activated, they appear on the **Active events** tab.
 
-![Active business events](../media/businesseventsactivetab.png)
+![Active business events](../media/businesseventsactivetab.PNG)
 
 From the **Active events** tab, you can inactivate business events. The system won't do outbound processing for inactivated events.
 
 After businessevents are inactivated, they appear on the **Inactive events** tab.
 
-![Inactive business events](../media/businesseventsinactivetab.png)
+![Inactive business events](../media/businesseventsinactivetab.PNG)
 
 Business events can be inactivated when processing of business events must be paused for a period because of specific system maintenance activities in the integration landscape.
 
