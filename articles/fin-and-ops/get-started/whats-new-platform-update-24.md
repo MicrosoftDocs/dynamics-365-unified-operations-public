@@ -88,13 +88,24 @@ Some partners, ISVs, and customers have access to preproduction builds of Financ
 
 To make the **preview** status clear to users, each preproduction build will be tagged in two different ways: 
 
-1.  On each session start in a preview build, users will see a pop-up window indicating that they are using a preview version of the service.  
+1.  Users will see the word "Preview" as a suffix to the product name in the navigation bar.  
 
-    ![Notification that this is a preview version of the service](media/previewCallout.png  "Notification that this is a preview version of the service")  
+    ![Preview indicator in the navigation bar](media/previewCallout.png  "Preview indicator in the navigation bar")  
 
 2.  The title of the **About** box will include the word *Preview*. 
 
     ![Preview is also indicated in the About box](media/previewAboutBox.png  "Preview is also indicated in the About box")
+    
+
+## Updated navigation bar that aligns with the Office header
+
+[!include[dynamics365-finance-operations banner](../includes/dynamics365-finance-operations.md)]
+
+Dynamics 365 products are working to align their respective headers with the Office header to provide a more cohesive shell experience for users across Microsoft products. For Finance and Operations users, this header update will be seen as a completely restyled navigation bar that more prominently features navigation search. Notably, the new design does not include a breadcrumb. 
+
+![Updated navigation bar](media/updatedNavBar.png  "Updated navigation bar")
+
+![Current navigation bar](media/existingNavBar.png  "Current navigation bar")
 
 ## Extensibility enhancements
 
