@@ -98,9 +98,6 @@ To make the **preview** status clear to users, each preproduction build will be 
     
 
 ## Updated navigation bar that aligns with the Office header
-
-[!include[dynamics365-finance-operations banner](../includes/dynamics365-finance-operations.md)]
-
 Dynamics 365 products are working to align their respective headers with the Office header to provide a more cohesive shell experience for users across Microsoft products. For Finance and Operations users, this header update will be seen as a completely restyled navigation bar that more prominently features navigation search. Notably, the new design does not include a breadcrumb. 
 
 ![Updated navigation bar](media/updatedNavBar.png  "Updated navigation bar")
