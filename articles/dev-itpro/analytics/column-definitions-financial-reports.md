@@ -38,7 +38,7 @@ This article provides information about column definitions. A column definition 
 
 ## Create and modify a column definition
 
-A column definition can contain two to 255 columns.
+A column definition can contain two to 275 columns.
 
 ### Create a column definition
 
