@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 24 (March 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/30/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -84,7 +84,7 @@ Supported scenarios include using intuitive controls to create Alerts rules that
 > Join the Dynamics 365 Insider Program to get early access to preview features.
 
 ## Clear identification of preview builds
-Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) topic for more information about the Finance and Operations release process.  
+Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](public-preview-releases.md) topic for more information about the Finance and Operations release process.  
 
 To make the **preview** status clear to users, each preproduction build will be tagged in two different ways: 
 
@@ -100,7 +100,11 @@ To make the **preview** status clear to users, each preproduction build will be 
 ## Updated navigation bar that aligns with the Office header
 Dynamics 365 products are working to align their respective headers with the Office header to provide a more cohesive shell experience for users across Microsoft products. For Finance and Operations users, this header update will be seen as a completely restyled navigation bar that more prominently features navigation search. Notably, the new design does not include a breadcrumb. 
 
+The following image shows the udpated navigation bar.
+
 ![Updated navigation bar](media/updatedNavBar.png  "Updated navigation bar")
+
+The following image shows how the navigation bar used to appear.
 
 ![Current navigation bar](media/existingNavBar.png  "Current navigation bar")
 
