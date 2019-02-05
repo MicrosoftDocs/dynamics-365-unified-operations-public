@@ -39,7 +39,7 @@ In Finance and Operations, a business action that a user performs can be either 
 
 ## Prerequisites
 
-- Business events can be consumed via Microsoft Flow, Microsoft Azure Service Bus, or Azure Event Grid. Therefore, customers must bring their subscriptions to the asset that will help consume business events.
+- Business events can be consumed via Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such asset(s)to use business events.
 - Business events are available in Platform update 24 and later. Therefore, at least Platform update 24 is required.
 
 > [!IMPORTANT]
