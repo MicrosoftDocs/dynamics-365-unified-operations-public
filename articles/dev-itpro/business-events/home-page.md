@@ -170,13 +170,13 @@ When business events occur as business processes are run, the system will do out
 
 After business events are activated, they appear on the **Active events** tab.
 
-![Active business events](../media/businesseventsactivetab.PNG)
+![Active business events](../media/businesseventsactivetab.png)
 
 From the **Active events** tab, you can inactivate business events. The system won't do outbound processing for inactivated events.
 
 After businessevents are inactivated, they appear on the **Inactive events** tab.
 
-![Inactive business events](../media/businesseventsinactivetab.PNG)
+![Inactive business events](../media/businesseventsinactivetab.png)
 
 Business events can be inactivated when processing of business events must be paused for a period because of specific system maintenance activities in the integration landscape.
 
