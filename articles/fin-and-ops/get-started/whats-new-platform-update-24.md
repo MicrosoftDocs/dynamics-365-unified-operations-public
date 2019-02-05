@@ -84,7 +84,7 @@ Supported scenarios include using intuitive controls to create Alerts rules that
 > Join the Dynamics 365 Insider Program to get early access to preview features.
 
 ## Clear identification of preview builds
-Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or through using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) topic for more information about the Finance and Operations release process.  
+Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) topic for more information about the Finance and Operations release process.  
 
 To make the **preview** status clear to users, each preproduction build will be tagged in two different ways: 
 
