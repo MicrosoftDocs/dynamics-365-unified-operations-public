@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0. This version will be released in March 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/11/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -86,4 +86,5 @@ For more information, see [Loyalty overview](../../retail/set-up-customer-loyalt
 ## Fiscal printer integration sample for Poland
 Microsoft Dynamics 365 for Retail now contains a sample of the integration of POS with fiscal printers for Poland. The sample is a part of the Retail SDK. Implementation partners may extend the integration functionality to cover all required retail scenarios or build integration with other fiscal printer models based on the samples.
 
-
+## Regulatory updates
+For information about the regulatory updates for Finance and Operations, refer to [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, types of features, and releases.
