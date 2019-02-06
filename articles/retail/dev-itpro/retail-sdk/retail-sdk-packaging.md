@@ -217,6 +217,14 @@ The following illustration shows an example of a Retail Server web.config file.
 > - workflowFoundation.config
 > - Hardware station - Web.config
 
+## Install NuGet.exe 
+We moved some of the dependency packages and references to NuGet packages to minimize the file merge and the SDK size and these are available for download from the NuGet.org. when you build the Retail SDK these dependencies are automatically pulled from the NuGet.org based on the packages.config file. For this to work, please install the [NuGet command line interface](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#installing-nugetexe) and add the nuget to the windows path after downloading nuget.exe from NuGet.org. Follow the below steps to add the nuget to the windows path:
+
+  1. Open the windows menu and type “Path”, you’ll see an option “Edit the system environment variables”.
+  2. In that menu, click “Environment variables” in the bottom right.
+  3. In the resulting window, under “System variables”, select “Path” and choose Edit.
+  4. Add an entry for the folder where you would like to keep nuget.exe or keep nuget.exe in a folder already listed there.
+
 ## Generate a retail deployable package
 To generate the retail deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
 
