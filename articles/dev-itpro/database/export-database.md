@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Export database 
-description: This topic explains how to perform an export of a database for Microsoft Dynamics 365 for Finance and Operations.
+title: Export a database
+description: This topic explains how to export a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 1/29/2019
@@ -28,37 +28,42 @@ ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Export database 
+# Export a database
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the export of a database for Microsoft Dynamics 365 for Finance and Operations sandbox user acceptance testing (UAT) environment to the Asset Library. 
+You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database for Microsoft Dynamics 365 for Finance and Operations from a sandbox user acceptance testing (UAT) environment to the Asset library.
 
 ## Self-service export database
+
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
-### Export operation failed
-In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your source sandbox environment will be restored to the state it was before the export began.  
+### Export operation failure
 
-To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
+If the export operation isn't successful, you can do a *rollback*. If you select the **Rollback** option after the initial failure of the operation, your source sandbox environment is restored to the state that it was in before the export began.
 
-### Data elements that are not exported
-When exporting a database backup from an environment, there are certain elements of the database that are not exported in the backup file.  These elements include:
+To determine the root cause of the failure, download the runbook logs by using the available buttons before you start the rollback operation.
 
-* Email addresses in the LogisticsElectronicAddress table.
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-* SMTP password in the SysEmailSMTPPassword table.
-* SMTP Relay server in the SysEmailParameters table.
-* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
-* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table.
-* All users except for the administrator are disabled.
-* All batch jobs are set to Withhold status.
+### Data elements that aren't exported
+
+When you export a database backup from an environment, some elements of the database aren't exported in the backup file. Here are some examples:
+
+* Email addresses in the LogisticsElectronicAddress table
+* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables
+* SMTP password in the SysEmailSMTPPassword table
+* SMTP Relay server in the SysEmailParameters table
+* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables
+* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables
+* Document attachments in the DocuValue table
+
+Additionally, all users except the admin are disabled, and all batch jobs are set to a status of **Withhold**.
 
 ## Known issues
 
-### Export ran for some time and then reached 'Preparation failed' state
-The export process can potentially timeout on Azure SQL when large databases are involved.  In some cases this can be recovered by using the **Resume** action from LCS.  The Lifecycle Services team is working to identify Known Error Codes to add to the logs for Export database operation that can help guide towards a resolution.  This will be added in a future release of LCS.
+### Export ran for some time and then reached a "Preparation failed" state
 
-### Export doesn't show any progress in Lifecycle Services
-The export process is different than the other database movement operations as well as general package deployment in that it doesn't use a Runbook.  Because of this the progress indicator in LCS shows no output like you would normally see in other scenarios.  The Lifecycle Services team is looking to improve this in a future release of LCS.
+The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so that it can add them to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS.
+
+### Export doesn't show any progress in LCS
+
+The export process differs from other database movement operations and also general package deployment in that it doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, as it would typically show in other scenarios. The Lifecycle Services team is working to improve this behavior in a future release of LCS.
