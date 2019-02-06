@@ -66,4 +66,4 @@ The following overview shows the capabilities of Attract across the Attract and 
 | Candidate and job recommendations​                        | ​                    | :heavy_check_mark:                    |
 
 
-<sup>1</sup> LinkedIn recruiter licenses, which must be purchased separately through LinkedIn, are a prerequisite for this feature.
+<sup>1</sup>LinkedIn recruiter licenses, which must be purchased separately through LinkedIn, are a prerequisite for this feature.
