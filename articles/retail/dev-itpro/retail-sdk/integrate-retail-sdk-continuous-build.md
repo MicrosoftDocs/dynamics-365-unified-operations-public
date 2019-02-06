@@ -42,6 +42,14 @@ To get started, you must follow all the steps to get a full continuous build sys
 ### Getting the Retail SDK
 If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
 
+## Install NuGet.exe 
+We moved some of the dependency packages and references to NuGet packages to minimize the file merge and the SDK size and these are available for download from the NuGet.org. when you build the Retail SDK these dependencies are automatically pulled from the NuGet.org based on the packages.config file. For this to work, please install the [NuGet command line interface](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#installing-nugetexe) and add the nuget to the windows path after downloading nuget.exe from NuGet.org. Follow the below steps to add the nuget to the windows path:
+
+  1. Open the windows menu and type “Path”, you’ll see an option “Edit the system environment variables”.
+  2. In that menu, click “Environment variables” in the bottom right.
+  3. In the resulting window, under “System variables”, select “Path” and choose Edit.
+  4. Add an entry for the folder where you would like to keep nuget.exe or keep nuget.exe in a folder already listed there.
+
 ## Add a repository mapping for the Retail SDK
 Edit the build definition so that it includes the location of the Retail SDK. (In other words, add a map.) [![Adding a repository mapping for the Retail SDK](./media/build-map-addition.png)](./media/build-map-addition.png)
 
