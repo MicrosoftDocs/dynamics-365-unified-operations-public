@@ -59,10 +59,10 @@ This topic explains the past, current, and pending listings of PA-DSS certificat
 
 | Release  | Version | Build |
 | ---------------------------|----------------------- | ----------- |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 7.3 | 7.3 |
-| Microsoft Dynamics 365 for Retail | 7.3 | 7.3 |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 8.0 | 8.0 |
-| Microsoft Dynamics 365 for Retail | 8.0  | 8.0 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
+| Microsoft Dynamics 365 for Retail | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8) | 8.0 |
+| Microsoft Dynamics 365 for Retail | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8)  | 8.0 |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 8.1 | 8.1 |
 | Microsoft Dynamics 365 for Retail | 8.1  | 8.1 |
 
