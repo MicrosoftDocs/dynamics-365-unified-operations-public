@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -218,12 +218,12 @@ The following illustration shows an example of a Retail Server web.config file.
 > - Hardware station - Web.config
 
 ## Install NuGet.exe 
-We moved some of the dependency packages and references to NuGet packages to minimize the file merge and the SDK size and these are available for download from the NuGet.org. when you build the Retail SDK these dependencies are automatically pulled from the NuGet.org based on the packages.config file. For this to work, please install the [NuGet command line interface](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#installing-nugetexe) and add the nuget to the windows path after downloading nuget.exe from NuGet.org. Follow the below steps to add the nuget to the windows path:
+Some of the dependency packages and references have moved to NuGet packages to minimize the file merge and the size of the SDK. These are available for download from the NuGet.org. When you build the Retail SDK these dependencies are automatically pulled from the NuGet.org based on the packages.config file. For this to work, you need to install the [NuGet command line interface](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#installing-nugetexe) and add the nuget to the Windows path after downloading nuget.exe from NuGet.org. The following steps show how to add the nuget to the Windows path:
 
-  1. Open the windows menu and type “Path”, you’ll see an option “Edit the system environment variables”.
-  2. In that menu, click “Environment variables” in the bottom right.
-  3. In the resulting window, under “System variables”, select “Path” and choose Edit.
-  4. Add an entry for the folder where you would like to keep nuget.exe or keep nuget.exe in a folder already listed there.
+  1. Open the Windows menu and type “Path”. The **Edit the system environment variables** will be available. 
+  2. In that menu, click **Environment variables** on the lower right.
+  3. In the next window, under **System variables**, select **Path** and click **Edit**.
+  4. Add an entry for the folder where you would like to store the nuget.exe file or store the nuget.exe file in a folder that is already listed.
 
 ## Generate a retail deployable package
 To generate the retail deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
