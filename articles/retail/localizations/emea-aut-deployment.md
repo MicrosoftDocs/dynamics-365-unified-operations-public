@@ -181,21 +181,23 @@ The Hardware station extension components are included in the Hardware station s
 
 To enable the registration process, set up Retail Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md).
 
-1. Open **Retail > Channel setup > Fiscal integration > Fiscal connectors** menu. Load connector configuration from RetailSdk. The file is located under SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml
+1. Open **Retail shared parameters** and enable **Fiscal integration** on the **General** tab.
 
-2. Open **Retail > Channel setup > Fiscal integration > Fiscal document providers** menu. Load documment provider configurations from RetailSdk.
+2. Open **Retail > Channel setup > Fiscal integration > Fiscal connectors** menu. Load connector configuration from RetailSdk. The file is located under SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml.
+
+3. Open **Retail > Channel setup > Fiscal integration > Fiscal document providers** menu. Load documment provider configurations from RetailSdk.
 
 Configuration files are located under SampleExtensions\CommerceRuntime\Extensions.DocumentProvider.EFRSample\Configuration
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
 
-3. Open **Retail > Channel setup > Fiscal integration > Connector functional profiles**. Create two new profiles per document provider from step above and select the loaded connector. Update data mapping settings if needed.
+4. Open **Retail > Channel setup > Fiscal integration > Connector functional profiles**. Create two new profiles per document provider from step above and select the loaded connector. Update data mapping settings if needed.
 
-4. Open **Retail > Channel setup > Fiscal integration > Connector technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
+5. Open **Retail > Channel setup > Fiscal integration > Connector technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
 
-5. Open **Retail > Channel setup > Fiscal integration > Connector functional group**. Create two new group per connector's functional profile from the step above.
+6. Open **Retail > Channel setup > Fiscal integration > Fiscal connector group**. Create two new group per connector's functional profile from the step above.
 
-6. Open **Retail > Channel setup > Fiscal integration > Registration process**. Create a new process. Select both connector's functional groups from the step above.
+7. Open **Retail > Channel setup > Fiscal integration > Registration process**. Create a new process. Select both connector's functional groups from the step above.
 
 7. Open **Retail > Channel setup > POS setup > POS profiles > Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above.
 
