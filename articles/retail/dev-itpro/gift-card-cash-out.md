@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash out Gift Card operation
+title: Cash out gift card operation
 description: This topic provides information about the new cash out gift card functionality that is now available in Microsoft Dynamics 365 for Retail.
 author: rapraj
 manager: josaw1
@@ -31,27 +31,18 @@ ms.dyn365.ops.version: Dynamics 365 10.0
 
 # Cash out gift card balance for a retail customer
 
-This topic provides an overview of the **Cash Out Gift Card** feature for the Dynamics 365 for Retail Modern POS. 
+This topic provides an overview of the **Cash Out Gift Card** feature for the Dynamics 365 for Retail Modern POS (MPOS). 
 
-## Overview 
-
-The purpose of this feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often must be able to exchange a low balance gift card for cash at the customer's request. 
-
-This topic covers the following aspects of the cash out gift card feature:
-
-- **[Prerequisites](#Prerequisites)** - Set of prerequisites to leverage this feature in Dynamics 365 for Retail Modern POS.
-- **[Scenario details](#Scenario-details)** - Detailed description of the scenarios covered by the cash out gift card feature.
-- **[Troubleshooting steps](#Troubleshooting-steps)** - Steps to take when encountering issues with the cash out gift card feature.
-- **[Related articles](#Related-articles)** - List of related articles you might find useful when using the cash out gift card feature.
+The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often must be able to exchange a low balance gift card for cash at the customer's request. 
 
 ## Prerequisites
-- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
-- If the Gift Cards are external gift cards, the external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
+- The payment connector and corresponding payment gateway or processor must support the feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- If the gift cards are external gift cards, the external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
 
-## Scenario details
-The Cash Out Gift Card feature is applicable to a scenario where In Washington state, for example, that threshold is $5. Gives retailers the option to set a new operation to cash out a gift card and to set the gift card balance limits under which the cash out operation can be enabled.
+## Scenarios
+The cash out gift card feature is applicable to a scenario where, for example, in Washington state, the cash out threshold is $5. Retailers in this case will have the option to set a new operation to cash out a gift card and to set the gift card balance limits under which the cash out operation can be enabled.
 
-## Retail headquarters configuration
+## Configure Retail headquarters
 
 1. Open the **All retail stores** page.
 2. In the list, select the **Houston** store.
@@ -111,7 +102,6 @@ The Cash Out Gift Card feature is applicable to a scenario where In Washington s
 
 ## Troubleshooting 
 
-### General issues
 For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs first. The logs can be found under these nodes in the Windows event log:
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
