@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 8
 > [!IMPORTANT]
 > If a version of Microsoft Dynamics 365 is implemented and the PA-DSS certification has not yet been completed by Microsoft, there may be potential impact to the retailer's Payment Card Industry (PCI) audit and certification. Specifically, until the PA-DSS certification is complete for the associated version, PCI certification can become more difficult and involved as the Payment Application may come into scope of testing during the certification.
 
-This topic explains the past, current, and pending listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, please visit [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
+This topic explains the past, current, and pending listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, see [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
 
 PA-DSS implementation guides that are available are linked to in the **Version** column in the tables below.
 
@@ -54,7 +54,7 @@ PA-DSS implementation guides that are available are linked to in the **Version**
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [July 2017*](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide)  | 7.2 |
 | Microsoft Dynamics 365 for Retail | [July 2017](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
 
-\*  The PDF document that is linked to applies to both Dynamics 365 for Retail (as it states) *and* Dynamics 365 for Finance and Operations, Enterprise edition.
+\*  The PDF document in this link applies to both Dynamics 365 for Retail (as it states) *and* Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## Certification in progress
 
