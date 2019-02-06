@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash out gift card balance for a retail customer
-description: This topic provides information about the new cash out gift card functionality that is now available in Microsoft Dynamics 365 for Retail.
+description: This topic provides information about the cash out gift card functionality that is available in Microsoft Dynamics 365 for Retail.
 author: rapraj
 manager: josaw1
 ms.date: 02/08/2019
@@ -33,32 +33,32 @@ ms.dyn365.ops.version: Dynamics 365 10.0
 
 This topic provides an overview of the cash out gift card feature for the Dynamics 365 for Retail Modern POS (MPOS). 
 
-The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often must be able to exchange a low balance gift card for cash at the customer's request. 
+The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often need to exchange a low balance gift card for cash at the customer's request. 
 
 ## Prerequisites
 - The payment connector and corresponding payment gateway or processor must support the feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
 - If the gift cards are external gift cards, the external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
 
 ## Scenarios
-The cash out gift card feature is applicable to a scenario where, for example, in Washington state, the cash out threshold is $5. Retailers in this case will have the option to set a new operation to cash out a gift card and to set the gift card balance limits under which the cash out operation can be enabled.
+The cash out gift card feature is applicable to a scenario where, for example, in Washington state, the cash out threshold is $5. Retailers in this case will have the option to set up an operation to cash out a gift card and set the gift card balance limits under which the cash out operation can be enabled.
 
 ## Configure Retail headquarters
 
 1. Open the **All retail stores** page.
 2. In the list, select the **Houston** store.
-3. On the Action Pane, select **Set up** &gt; **Payment methods**.
+3. On the **Action Pane**, select **Set up** &gt; **Payment methods**.
 4. Search for **payment methods** to open the **Payment methods** page.
-5. Select **Gift Card** Payment method, and then follow these steps:
+5. Select the **Gift Card** payment method, and then follow these steps:
 
-    1. In the **Amount** FastTab section, see the **Cash Out Gift Card** feild.
-    2. In the **Cash Out Gift Card** field, enter **Gift card Cash out threshold** amount.
+    1. In the **Amount** FastTab section, select the **Cash Out Gift Card** field.
+    2. In the **Cash Out Gift Card** field, enter the **Gift card Cash out threshold** amount.
     3. Select **Save**.
 
     ![Setting the Gift card threshold](./media/GiftCardCashout01.png)
 
 6. Open the **Button grid** page.
 7. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
-8. On the Action Pane, select **Designer** to download the button designer application.
+8. On the **Action Pane**, select **Designer** to download the button designer application.
 9. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
 
     ![New button](./media/07.png)
@@ -74,10 +74,10 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 
     ![Completed button layout](./media/GiftCardCashout02.png)
 
-12. Click **Ok** and Close the designer.
+12. Click **Ok** and close the designer.
 13. Search for **Distribution Schedule**.
 14. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
-15. On the Action Pane, select **Run now**.
+15. On the **Action Pane**, select **Run now**.
 16. Check the status of the job by searching for **Download sessions**.
 17. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
@@ -97,13 +97,11 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 11. Select **Cash out gift card**.
 12. Enter or scan the gift number.
 13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
-14. select the **Cash** payment method and the drawer will open once the transaction is completed. 
+14. Select the **Cash** payment method and the drawer will open when the transaction is completed. 
        ![Completed button layout](./media/GiftCardCashout03.png)
 
 ## Troubleshooting 
 
-For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs first. The logs can be found under these nodes in the Windows event log:
+For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs. The logs can be found under these nodes in the Windows event log:
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
-
-
