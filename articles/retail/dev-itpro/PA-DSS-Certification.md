@@ -5,7 +5,7 @@ title: Payment Application Data Security Standards (PA-DSS) certification
 description: This topic explains the past, current, and pending listings of PA-DSS certification.
 author: jashanno
 manager: AnnBe
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -37,7 +37,6 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic explains the past, current, and pending listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, please visit [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
 
-For more information, see: https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations
 
 ## Past certification
 
@@ -50,9 +49,11 @@ For more information, see: https://mbs.microsoft.com/customersource/northamerica
 
 | Release  | Version | Build  |
 | ----------------------------|---------------------- | ----------- |
-| Microsoft Dynamics 365 for Operations | 1611 | 7.1  |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | July 2017  | 7.2 |
-| Microsoft Dynamics 365 for Retail | July 2017 | 7.2  |
+| Microsoft Dynamics 365 for Operations | [1611](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations) | 7.1  |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [July 2017*](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide)  | 7.2 |
+| Microsoft Dynamics 365 for Retail | [July 2017](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
+
+\*  The PDF document that is linked to applies to both Dynamics 365 for Retail (as it states) *and* Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## Certification in progress
 
