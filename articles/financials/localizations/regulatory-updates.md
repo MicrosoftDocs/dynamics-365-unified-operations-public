@@ -39,9 +39,9 @@ Regulatory updates are different than regulatory features. To learn about planne
 - [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [What's new for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-When a month is used in the Date column, the feature is planned to be delivered sometime within that month. The delivery date can be any day within that month, not just on the first day of the month.
+When a month is used in the Date column, the regulatory update is planned to be delivered sometime within that month. The delivery date can be any day within that month, not just on the first day of the month.
 
-|Planned release date|Release version|Country|Feature|
+|Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
 |      March 2019          |   10.0.0      | Austria      |   Changes in Kammerumlage 2019 (Purchase duty)    |
 |      March 2019          |   10.0.0      |   Brazil    |     SPED EFD Contributions - Layout  004 and 005  |
