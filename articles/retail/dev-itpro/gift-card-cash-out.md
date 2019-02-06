@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash out gift card operation
+title: Cash out gift card balance for a retail customer
 description: This topic provides information about the new cash out gift card functionality that is now available in Microsoft Dynamics 365 for Retail.
 author: rapraj
 manager: josaw1
