@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refresh for training purposes
-description: This topic explains a general purpose, database refresh scenario for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains a general-purpose database refresh scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 1/28/2019
@@ -32,112 +32,113 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-Database Movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  This tutorial shows how to use the Refresh database operation in a training scenario.
+Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to use the refresh database operation in a training scenario.
 
 In this tutorial, you will learn how to:
->[!div class="checklist"]
-> * Prepare the target environment
-> * Execute the refresh
-> * Reconfigure the target environment
-> * Enable select users
 
-An example of this scenario is a customer who has already gone live with Microsoft Dynamics365 for Finance and Operations, and would like to get a recent copy of production transactions loaded in to their UAT environment.  This will support training of new employees, and evaluating configuration changes without impacting the live environment.
+> [!div class="checklist"]
+> * Prepare the target environment.
+> * Run the refresh.
+> * Reconfigure the target environment.
+> * Enable selected users.
+
+As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to load a recent copy of production transactions into the user acceptance testing (UAT) environment. In this way, the customer can support training of new employees and evaluate configuration changes without affecting the live environment.
 
 ## Prerequisites
-To perform a refresh operation you must have your production environment deployed, or you must have at minimum 2 standard user acceptance test (UAT) environments.
 
-## Notify the users of the pending downtime
-Before starting the bulk of the work, give users of the target environment notification that the environment will be offline for a period of time.  This can be done both manually via Lifecycle Services, as well as programmatically using RESTful API calls.
+To do a refresh database operation, your production environment must be deployed, or you must have a minimum of two standard UAT environments.
 
-To perform this manually in LCS:
-* Visit the target **Environment details** page in LCS.
-* Select on the **Maintain** > **Message online users** menu item.
-* Click the **Broadcast a new message for downtime** button.
-* Choose the valid from/valid to times in your local timezone.
-* Click the **Post** button.
+## Notify users about the pending downtime
 
-### Send a broadcast message programmatically
-The below sample code can be used in a Console App as shown, or modified to work with other services like Azure Functions which can be called on demand.  Before the sample below will work, please read [How to authenticate custom services](../data-entities/services-home-page.md) to setup your application registration.
+Before you start the bulk of the work, notify users of the target environment that the environment will be offline for a period. You can notify users either manually via Microsoft Dynamics Lifecycle Services (LCS) or programmatically by using RESTful application programming interface (API) calls.
+
+### Manually send a broadcast message
+
+To notify users manually via LCS, follow these steps.
+
+1. In LCS, open the **Environment details** page for the target environment.
+2. Select **Maintain** \> **Message online users**.
+3. Select **Broadcast a new message for downtime**.
+4. Select the valid from/valid to times in your local time zone.
+5. Select **Post**.
+
+### Programmatically send a broadcast message
+
+The following sample code can be used as shown in a console application, or it can be modified to make it work with other services that can be called on demand, such as Microsoft Azure Functions. Before this sample code will work, you must set up your application registration as described in [How to authenticate custom services](../data-entities/services-home-page.md).
 
 ```csharp
-    [Serializable]
-    public class SysAddBroadcastMessageDataContract
+[Serializable]
+public class SysAddBroadcastMessageDataContract
+{
+    public SysAddBroadcastMessageRequest request { get; set; }
+}
+[Serializable]
+public class SysAddBroadcastMessageRequest
+{
+    public DateTime FromDateTime { get; set; }
+    public DateTime ToDateTime { get; set; }
+}
+public class Program
+{
+    public static AuthenticationResult getResult(AuthenticationContext ctx, string url)
     {
-        public SysAddBroadcastMessageRequest request { get; set; }
-
+        return ctx.AcquireTokenAsync(url, "YOUR_APP_REGISTRATION_ID", new Uri("YOUR_REPLY_URL"), new PlatformParameters(PromptBehavior.Always)).Result;
     }
-    [Serializable]
-    public class SysAddBroadcastMessageRequest
+    static void Main(string[] args)
     {
-        public DateTime FromDateTime { get; set; }
-        public DateTime ToDateTime { get; set; }
+        SysAddBroadcastMessageRequest request = new SysAddBroadcastMessageRequest();
+        request.FromDateTime = DateTime.UtcNow;
+        request.ToDateTime = DateTime.UtcNow.AddHours(12);
+
+        SysAddBroadcastMessageDataContract dc = new SysAddBroadcastMessageDataContract();
+        dc.request = request;
+
+        AuthenticationContext ctx = new AuthenticationContext("https://login.microsoftonline.com/YOUR_TENANT.COM");
+        AuthenticationResult res = getResult(ctx, "https://YOUR_SANDBOX_UAT.sandbox.operations.dynamics.com");
+
+        HttpClient restfulCli = new HttpClient();
+        restfulCli.DefaultRequestHeaders.Clear();
+        restfulCli.BaseAddress = new Uri("https://YOUR_SANDBOX_UAT.sandbox.operations.dynamics.com/");
+        restfulCli.DefaultRequestHeaders.Add("Authorization", res.CreateAuthorizationHeader());
+        restfulCli.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+        HttpRequestMessage requestMsg = new HttpRequestMessage(HttpMethod.Post, string.Format("api/services/SysBroadcastMessageServices/SysBroadcastMessageService/AddMessage"));
+        requestMsg.Content = new StringContent(JsonConvert.SerializeObject(dc));
+
+        HttpResponseMessage responseMsg = restfulCli.SendAsync(requestMsg).Result;
+        if(responseMsg.IsSuccessStatusCode)
+        {
+            Console.WriteLine("Wow I just notified the users programmatically!");
+        }
     }
-
-    public class Program
-    {
-    
-        public static AuthenticationResult getResult(AuthenticationContext ctx, string url)
-        {
-            return ctx.AcquireTokenAsync(url, "YOUR_APP_REGISTRATION_ID", new Uri("YOUR_REPLY_URL"), new PlatformParameters(PromptBehavior.Always)).Result;
-        }
-
-        static void Main(string[] args)
-        {
-            SysAddBroadcastMessageRequest request = new SysAddBroadcastMessageRequest();
-            request.FromDateTime = DateTime.UtcNow;
-            request.ToDateTime = DateTime.UtcNow.AddHours(12);
-
-            SysAddBroadcastMessageDataContract dc = new SysAddBroadcastMessageDataContract();
-            dc.request = request;
-
-
-            AuthenticationContext ctx = new AuthenticationContext("https://login.microsoftonline.com/YOUR_TENANT.COM");
-            AuthenticationResult res = getResult(ctx, "https://YOUR_SANDBOX_UAT.sandbox.operations.dynamics.com");
-
-            HttpClient restfulCli = new HttpClient();
-            restfulCli.DefaultRequestHeaders.Clear();
-            restfulCli.BaseAddress = new Uri("https://YOUR_SANDBOX_UAT.sandbox.operations.dynamics.com/");
-            restfulCli.DefaultRequestHeaders.Add("Authorization", res.CreateAuthorizationHeader());
-            restfulCli.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            HttpRequestMessage requestMsg = new HttpRequestMessage(HttpMethod.Post, string.Format("api/services/SysBroadcastMessageServices/SysBroadcastMessageService/AddMessage"));
-            requestMsg.Content = new StringContent(JsonConvert.SerializeObject(dc));
-
-            HttpResponseMessage responseMsg = restfulCli.SendAsync(requestMsg).Result;
-            if(responseMsg.IsSuccessStatusCode)
-            {
-                Console.WriteLine("Wow I just notified the users programmatically!");
-            }
-
-        }
 ```
-Both approaches, either via LCS manually or via RESTful API, will show the users a pending downtime is soon to occur:
-<img src="media/BroadcastMessage.png" width="400px" alt="Broadcast Message of Downtime" />
+
+Both approaches, manual via LCS and programmatic via RESTful API calls, will show users that a period of downtime is pending.
+
+<img src="media/BroadcastMessage.png" width="400px" alt="Broadcast message of downtime" />
 
 ## Begin the refresh
-Depending on the size of your source environment, it may make sense to begin the refresh process immediately. The larger the source database, the longer time it will take to copy to your target Azure SQL instance. While the copy is in progress, the target environment is still online. Once the copy is complete the downtime will start.
 
-This process can be done manually via LCS, see [Refresh database quickstart](database-refresh.md) for the latest steps. In a future release of LCS this will also be available for triggering via RESTful API.
+Depending on the size of your source environment, it might make sense to begin the refresh process immediately. The larger the source database, the longer it will take to copy to your target Azure SQL Database instance. While the copy is in progress, the target environment will still be online. The downtime will start after the copy is completed.
+
+This process can be done manually via LCS. For the latest steps, see [Refresh database quickstart](database-refresh.md). In a future release of LCS, you will also be able to trigger this process via a RESTful API.
 
 ## Reconfigure environment specific settings
-After the refresh is complete, use the **Sign off** button in LCS to close out of the operation. We then can begin the process to configure the environment specific settings.
 
-Start by logging in to the environment using the adminsitrator's account which can be found on the **Environment details** page in LCS. Some common areas of reconfiguration are below, you may require additional based on your setup and ISV solutions that are installed:
+After the refresh is completed, use the **Sign off** button in LCS to close out of the operation. You can then start to configure the environment-specific settings.
 
-* System administration - Setup > **Batch groups**. Add the various AOS to the batch server groups you require.
-* System administration > Setup > **Entity Store**. Refresh the various entities that you require for PowerBI reporting.
-* System administration > Setup > **System parameters**. Reconnect the environment to the LCS help configuration for task guides.
-* System administration > Setup > Email > **Email parameters**. Enter the SMTP settings if you use email in your UAT environment.  
-* System administration > Inquiries > **Batch jobs**. Highlight the jobs you wish to run in your UAT environment and update the status to *Waiting*.
+First, sign in to the environment by using the admin account that can be found on the **Environment details** page in LCS. Here are typical areas of reconfiguration. You might require additional reconfiguration, based on your setup and the independent software vendor (ISV) solutions that are installed.
 
-To perform these actions in a more expedient manner, it is recommended to build a custom webservice endpoint which can be called on-demand after refresh. An example of such a webservice will be added in a future update of this article.
+* **System administration** \> **Setup** \> **Batch groups:** Add the various Application Object Server (AOS) instances to the batch server groups that you require.
+* **System administration** \> **Setup** \> **Entity Store:** Refresh the various entities that you require for Microsoft Power BI reporting.
+* **System administration** \> **Setup** \> **System parameters:** Reconnect the environment to the LCS Help configuration for task guides.
+* **System administration** \> **Setup** \> **Email** \> **Email parameters:** Enter the Simple Mail Transfer Protocol (SMTP) settings if you use email in your UAT environment.
+* **System administration** \> **Inquiries** \> **Batch jobs:** Select the jobs that you want to run in your UAT environment, and update the status to **Waiting**.
+
+To complete this reconfiguration more quickly, we recommend that you build a custom web service endpoint that can be called on demand after the refresh is completed. An example of this type of web service will be added in a future update of this topic.
 
 ## Open the environment to users
-When the system is configured as you see fit, you can enable select users to access the environment. By default all users except for the Admin and Microsoft Service Accounts are disabled.
 
-To enable users visit:
-* System administration > Users > **Users**. Enable the users you wish to have access to the UAT environment.  If there are many to enable this can be done quicker via the [Excel Add-In](../office-integration/use-excel-add-in.md).
+When the system is configured as you require, you can enable selected users to let them access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
-
-
-
+Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the UAT environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md).
