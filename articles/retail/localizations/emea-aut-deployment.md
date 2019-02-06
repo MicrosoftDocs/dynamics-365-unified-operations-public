@@ -199,7 +199,7 @@ Configuration files are located under SampleExtensions\CommerceRuntime\Extension
 
 7. Open **Retail > Channel setup > Fiscal integration > Registration process**. Create a new process. Select both connector's functional groups from the step above.
 
-7. Open **Retail > Channel setup > POS setup > POS profiles > Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above.
+7. Open **Retail > Channel setup > POS setup > POS profiles > Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** prorerty at **Functions** fasttab.
 
 8. Open the **Retail > Channel setup > POS setup > POS profiles > Hardware profiles**. Select one that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** Tab. Select the connector technical profile.
 
