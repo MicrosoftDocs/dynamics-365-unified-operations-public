@@ -224,6 +224,6 @@ offers.
     - ESign - This is the default option, provided out of the box, where the user can sign an offer by typing their name and initials.
 
 >[!NOTE]
-> For Adobe Sign licenses and a free Trial, please visit this [link](https://acrobat.adobe.com/us/business/integrations/microsoft-dynamics-365-for-talent.html).
+> For Adobe Sign licenses and a free Trial, please visit this [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 To learn more about the offer creation process, see [Creating, approving, and signing offers](./creating-offers.md).

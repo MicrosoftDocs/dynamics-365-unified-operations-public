@@ -39,7 +39,7 @@ In Finance and Operations, a business action that a user performs can be either 
 
 ## Prerequisites
 
-- Business events can be consumed via Microsoft Flow, Microsoft Azure Service Bus, or Azure Event Grid. Therefore, customers must bring their subscriptions to the asset that will help consume business events.
+- Business events can be consumed via Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such asset(s) to use business events.
 - Business events are available in Platform update 24 and later. Therefore, at least Platform update 24 is required.
 
 > [!IMPORTANT]
@@ -64,7 +64,7 @@ key="DataAccess.FlightingServiceCatalogID" value="12719367"
 
 ## Business events that are implemented in Finance and Operations
 
-In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md).
+In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md) and [Workflow business events](business-events-workflow.md).
 
 A developer must use extensions to implement new business events. For more information, see [Business events developer documentation](business-events-dev-doc.md).
 
