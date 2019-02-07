@@ -52,4 +52,17 @@ AppChecker depends on a running instance of BaseX for storage and querying of ab
 > [!TIP]
 > The BaseX server data folder can be changed later, if the installation drive does not have enough space. See the [BaseX configuration page](http://docs.basex.org/wiki/Configuration#Database_Directory) for more information.
 
+## Step 4 [Optional]: Configuring BaseX to handle your model
+
+Depending on the size of your model, the BaseX server can take up a lot of memory to store the abstract syntax trees.
+
+BaseX is configured by default to use ~1.17GB of RAM at the most. If you have a large model, you should consider to increase this limit by following the steps below:
+
+* Edit the batch script at: `<BaseX Install Path>\bin\basexhttp.bat`.
+* Change the line containing `set BASEX_JVM=-Xmx1200m %BASEX_JVM%` and increase the value after `-Xmx`. [See more about increasing the limits of the Java VM here](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABHDABI).
+
+  Leave everything else untouched.
+
+> [!NOTE]
+> If you make changes here after starting the BaseX server, you will need to restart the BaseX server after saving the `basexhttp.bat` file.
 
