@@ -91,7 +91,7 @@ The following default data mapping is included in the fiscal document provider c
 
     *1 : 0 ; 2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
 
-### Handling gift cards
+### Gift card handling
 
 The fiscal printer integration sample implements the following rules that are related to gift cards:
 
@@ -101,7 +101,7 @@ The fiscal printer integration sample implements the following rules that are re
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
 - Payment by gift card is considered a regular payment.
 
-### Handling customer deposits and customer order deposits
+### Customer deposits and customer order deposits
 
 The fiscal printer integration sample implements the following rules that are related to customer deposits and customer order deposits:
 
@@ -113,7 +113,7 @@ The fiscal printer integration sample implements the following rules that are re
 
 ## Set up Retail for Italy
 
-### Enabling extensions
+### Enable extensions
 
 ##### Commerce runtime extension components
 
