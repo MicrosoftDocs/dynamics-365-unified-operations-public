@@ -331,18 +331,20 @@
     href: ../supply-chain/inventory/quarantine-orders.md
   - name: Running average cost price
     href: ../supply-chain/cost-management/running-average-cost-price.md
-  - name: Tracking running average cost per inventory dimension
+  - name: Track running average cost per inventory dimension
     href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Human resources
   items:
   - name: Organize your workforce using departments, jobs, and positions
     href: ../talent/departments-jobs-positions.md
-  - name: Setting up the components of a job
+  - name: Set up the components of a job
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
-  - name: Fiscal integration for Retail channel
+  - name: Fiscal integration overview for Retail channel
     href: localizations/fiscal-integration-for-retail-channel.md
+  - name: Set up fiscal integration for Retail channel
+    href: localizations/setting-up-fiscal-integration-for-retail-channel.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
@@ -353,6 +355,8 @@
       href: localizations/emea-eeu-retail-invoices.md
     - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
       href: localizations/emea-eeu-deployment.md
+    - name: Fiscal printer integration sample for Poland
+      href: localizations/emea-pol-fpi-sample.md
   - name: France
     items:
     - name: Cash register functionality
@@ -369,7 +373,7 @@
       href: localizations/apac-ind-n-1-for-india.md
   - name: Italy
     items:
-    - name: Fiscal printer integration
+    - name: Fiscal printer integration sample for Italy
       href: localizations/emea-ita-fpi-sample.md
   - name: Norway
     items:
