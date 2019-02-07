@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new (February 7, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 2/7/2019
