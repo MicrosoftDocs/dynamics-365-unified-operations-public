@@ -96,9 +96,9 @@ Next, you must define the attributes. Follow these steps for each attribute that
 2. Select **Products (1040)**, and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**. This step is required only if you added any new attributes, attribute types, or attribute groups.
 3. Select **Channel configuration job (1070)**, and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 
-# Show order attributes in the POS transaction screen using the Attribute control (this feature is available in version 8.1.3 and later)
+## Show order attributes in the POS transaction screen using the Attribute control (this feature is available in version 8.1.3 and later)
 
-## Retail headquarters
+### Retail headquarters
 
 1. Select **Retail > Channel setup > POS Setup > POS > Screen layouts**.
 2. On the screen layout page, click **New** to create a new screen layout, or select an existing screen layout.
@@ -114,7 +114,7 @@ Next, you must define the attributes. Follow these steps for each attribute that
 	12. Go to **Retail > Retail IT > Distribution schedule**.
 	13. Select the Registers job (1090), and then, on the Action Pane, select **Run now**. When you're prompted, select Yes.
 
-## POS
+### POS
 
 1. Start POS, and add any item to a transaction. You should see the Attribute panel in the transaction screen with the configured attributes both for header and lines.
 2. Click the **Edit** icon in the attribute panel to update the attribute value.
