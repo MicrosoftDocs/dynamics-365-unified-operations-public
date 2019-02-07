@@ -80,6 +80,30 @@ For more information about activities that can be added to the hiring process, s
 
 After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Microsoft Dynamics 365 for Talent career site) or LinkedIn. 
 
+The Attract team is continually working to partner with job board aggregators. This list will expand over time.
+
+For more information about job postings, see [Career site functionality in Attract](./career-site.md).
+
+> [!NOTE]
+> The job posting functionality is available only with the Comprehensive Hiring Add-on for Attract.
+
+### Posting jobs to LinkedIn 
+
+Before posting a job from Attract to LinkedIn, the administrator must add
+LinkedIn Company ID and LinkedIn Company name in the Admin Settings. The
+LinkedIn Company ID is required to ensure your jobs posted from Attract are
+mapped to the correct Company page.
+
+Your LinkedIn Company ID is a string of numbers that uniquely identifies your
+company within LinkedIn. This string is around 6 - 9 characters long. For more
+information on how to find your LinkedIn company ID, please visit this site
+[LinkedIn site](https://aka.ms/findID)
+
+To update LinkedIn company, select **Admin center** on the **Settings** menu
+(the gear symbol), and then select the **LinkedIn Integration** tab. In this
+tab, under **Connect to LinkedIn** section, enter your LinkedIn Company Name,
+Company ID, and save the settings.
+
 > [!NOTE]
 > There are three important things to note about job posting process to LinkedIn.
 > 1. Jobs posted to LinkedIn are posted as "Limited Listings" jobs. Limited listing jobs cannot be promoted across the LinkedIn site. If you want to promote limited listing jobs posted to LinkedIn from Attract, you should work with LinkedIn to enable "Job Wrapping". Please refer to links below and contact LinkedIn support for more details.
@@ -94,14 +118,8 @@ After a job is activated, it can be posted. Only recruiters and admins can post 
 >
 >    If you have problems after this step, please contact LinkedIn support. 
 > 
-> 1. It may take up to 24 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
+> 1. It may take up to 12 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
 
-The Attract team is continually working to partner with job board aggregators. This list will expand over time.
-
-For more information about job postings, see [Career site functionality in Attract](./career-site.md).
-
-> [!NOTE]
-> The job posting functionality is available only with the Comprehensive Hiring Add-on for Attract.
 
 ## Activate
 
