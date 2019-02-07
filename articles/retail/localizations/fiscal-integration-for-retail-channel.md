@@ -39,7 +39,7 @@ This topic is an overview of the fiscal integration capabilities that are availa
 - Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
 - Help guarantee inalterability of sales transaction data through digital signatures.
 
-The fiscal integration functionality in Retail is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic retail scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Retail components and is included in the Retail software development kit (SDK). For more information about the fiscal integration samples that are available in the Retail SDK, see [Fiscal integration samples in the Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). For information about how to install and use the Retail SDK, see [Retail SDK overview](../dev-itpro/retail-sdk/retail-sdk-overview).
+The fiscal integration functionality in Retail is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic retail scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Retail components and is included in the Retail software development kit (SDK). For more information about the fiscal integration samples that are available in the Retail SDK, see [Fiscal integration samples in the Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). For information about how to install and use the Retail SDK, see [Retail SDK overview](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 To support other scenarios that aren't supported by a fiscal integration sample, to integrate Retail POS with other fiscal devices or services, or to cover requirements of other countries or regions, you must either extend an existing fiscal integration sample or create a new sample by using an existing sample as an example.
 
@@ -55,7 +55,7 @@ A fiscal integration sample for a fiscal device contains the CRT and Hardware st
 - **Fiscal document provider configuration** – This configuration defines an output method and a format for fiscal documents. It also contains a data mapping for taxes and payment methods, to make data from Retail POS compatible with the values that are predefined in the fiscal device firmware.
 - **Fiscal connector configuration** – This configuration defines the physical communication with the specific fiscal device.
 
-A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change their parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process).
+A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change their parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process.md).
 
 The following example shows a typical fiscal registration execution flow for a fiscal device. The flow starts with an event in the POS (for example, finalization of a sales transaction) and implements the following sequence of steps:
 
@@ -82,7 +82,7 @@ The fiscal integration framework provides the following options to handle failur
 > [!NOTE]
 > The **Skip** and **Mark as registered** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
 
-The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel#set-error-handling-settings).
+The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## Storing fiscal response in fiscal transaction
 
@@ -98,24 +98,24 @@ A fiscal transaction stores the following details:
 
 ## Fiscal texts for discounts
 
-Some countries or regions have special requirements about additional texts that must be printed on fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality lets you set up a special text for a discount that is printed after a discount line on a fiscal receipt. For manual discounts, you can configure a fiscal text for the info code that is specified as the **Product discount** info code in the POS functionality profile. For more details about how to set up fiscal texts for discounts, see [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel#set-up-fiscal-texts-for-discounts).
+Some countries or regions have special requirements about additional texts that must be printed on fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality lets you set up a special text for a discount that is printed after a discount line on a fiscal receipt. For manual discounts, you can configure a fiscal text for the info code that is specified as the **Product discount** info code in the POS functionality profile. For more details about how to set up fiscal texts for discounts, see [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 
 ## Printing fiscal X and fiscal Z reports
 
 Fiscal integration functionality supports generation of end-of-day statements that are specific to the integrated fiscal device or service:
 
-- New buttons that run corresponding operations should be added to the POS screen layout. For more details, see [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel#set-up-fiscal-xz-reports-from-the-pos).
+- New buttons that run corresponding operations should be added to the POS screen layout. For more details, see [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - In the fiscal integration sample, these operations should be matched to the corresponding operations of the fiscal device.
 
 ## Fiscal integration samples in the Retail SDK
 
 The following fiscal integration samples are currently available in the Retail SDK that is released with Retail:
 
-- [Fiscal printer integration sample for Italy](emea-ita-fpi-sample)
-- [Fiscal printer integration sample for Poland](emea-pol-fpi-sample)
+- [Fiscal printer integration sample for Italy](emea-ita-fpi-sample.md)
+- [Fiscal printer integration sample for Poland](emea-pol-fpi-sample.md)
 
 The following fiscal integration functionality is also available in the Retail SDK but doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
 
-- [Digital signature for France](emea-fra-cash-registers)
-- [Digital signature for Norway](emea-nor-cash-registers)
-- [Control unit integration sample for Sweden](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample)
+- [Digital signature for France](emea-fra-cash-registers.md)
+- [Digital signature for Norway](emea-nor-cash-registers.md)
+- [Control unit integration sample for Sweden](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
