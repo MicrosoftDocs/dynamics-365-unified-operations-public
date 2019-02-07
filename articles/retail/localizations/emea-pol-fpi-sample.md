@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fiscal printer integration sample for Italy
-description: This topic provides an overview of the fiscal integration sample for Italy.
+title: Fiscal printer integration sample for Poland
+description: This topic provides an overview of the fiscal integration sample for Poland.
 author: josaw
 manager: annbe
-ms.date: 01/23/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,26 +20,27 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Italy
+ms.search.region: Poland
 ms.search.industry: Retail
-ms.author: sepism
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
+ms.author: v-dmpere
+ms.search.validFrom: 2019-2-1
+ms.dyn365.ops.version: 10.0.1
 
 ---
-# Fiscal printer integration sample for Italy
+
+# Fiscal printer integration sample for Poland
 
 [!include[banner](../includes/banner.md)]
 
 ## Introduction
 
-The Microsoft Dynamics 365 for Retail functionality for Italy includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) so that it works with [Epson FP-90III Series](http://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) printers from Epson, and it enables communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+The Microsoft Dynamics 365 for Retail functionality for Poland includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and supports the POSNET THERMAL HD 2.02 protocol for fiscal printers from [Posnet Polska S.A.](http://www.posnet.com.pl) The sample enables communication with a fiscal printer that is connected via a COM port by using a native software driver. It was implemented and tested by using a software emulator that Posnet provided for the Posnet Thermal HD FV EJ fiscal printer. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
-Microsoft doesn't release any hardware, software, or documentation from Epson. For information about how to get the fiscal printer and operate it, contact [Epson Italia S.p.A](http://www.epson.it).
- 
+Microsoft doesn't release any hardware, software, or documentation from Posnet. For information about how to get the fiscal printer and operate it, contact [Posnet Polska S.A.](http://www.posnet.com.pl)
+
 ## Scenarios
 
-The following scenarios are covered by the fiscal printer integration sample for Italy:
+The following scenarios are covered by the fiscal printer integration sample for Poland:
 
 - Sales scenarios:
 
@@ -49,7 +50,6 @@ The following scenarios are covered by the fiscal printer integration sample for
 
         - Map to the fiscal printer's tax codes (departments).
         - Transfer mapped tax data to the fiscal printer.
-        - Print taxes on a fiscal receipt.
 
     - Payments:
 
@@ -70,12 +70,10 @@ The following scenarios are covered by the fiscal printer integration sample for
         - Print a fiscal receipt for the pickup operation for a customer order.
         - Print a fiscal receipt for a return order.
 
-    - Print a barcode for the receipt number on a fiscal receipt.
-
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 
-    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or isn't responding, the printer is out of paper, or there is a paper jam.
+    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready, or isn't responding, the printer is out of paper, or there is a paper jam.
     - Postpone fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
 
@@ -85,13 +83,13 @@ The following default data mapping is included in the fiscal document provider c
 
 - Value-added tax (VAT) rates mapping:
 
-    *1 : 21.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
+    *0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00*
 
 - Tender type mapping:
 
-    *1 : 0 ; 2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
+    *0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
 
-### Gift card handling
+### Handling gift cards
 
 The fiscal printer integration sample implements the following rules that are related to gift cards:
 
@@ -101,7 +99,7 @@ The fiscal printer integration sample implements the following rules that are re
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
 - Payment by gift card is considered a regular payment.
 
-### Customer deposits and customer order deposits
+### Handling customer deposits and customer order deposits
 
 The fiscal printer integration sample implements the following rules that are related to customer deposits and customer order deposits:
 
@@ -111,28 +109,28 @@ The fiscal printer integration sample implements the following rules that are re
 - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
 - Save calculated adjustments of payment lines in the channel database with a reference to a fiscal transaction for a hybrid customer order.
 
-## Set up Retail for Italy
+## Set up Retail for Poland
 
 ### Enable extensions
 
 ##### Commerce runtime extension components
 
-The Commerce runtime extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+The Commerce runtime (CRT) extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
-1. Find the **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample** project, and build it.
-1. In the **Extensions.DocumentProvider.EpsonFP90IIISample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll** assembly file.
-1. Copy the assembly file to the CRT extensions folder:
+1. Find the **Runtime.Extensions.DocumentProvider.PosnetSample** project, and build it.
+2. In the **Extensions.DocumentProvider.PosnetSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll** assembly file.
+3. Copy the assembly file to the CRT extension folder:
 
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-1. Find the extensions configuration file for CRT:
+4. Find the extensions configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-1. Register the CRT change in the extensions configuration file. Add **source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample"**.
-1. Restart the Retail service:
+5. Register the CRT change in the extension's configuration file. Add **source="assembly" value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample"**.
+6. Restart the Retail service.
 
     - **Retail Server:** Restart the Retail service site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
@@ -141,54 +139,51 @@ The Commerce runtime extension components are included in the Retail SDK. To com
 
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-1. Find the **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample** project, and build it.
-1. In the **Extensions.EpsonFP90IIIFiscalDeviceSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll** assembly file.
-1. Copy the files to a deployed Hardware station machine:
+1. Find the **Extension.PosnetThermalFVFiscalPrinterSample** project, and build it.
+2. In the **Extension.PosnetThermalFVFiscalPrinterSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll** assembly file.
+3. Copy the files to a deployed Hardware station machine:
 
-    - **Remote Hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
-    - **Local Hardware station:** Copy the files to the Modern POS client broker location.
+    - **Remote Hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location. Copy the printer driver libraries (**libposcmbth.dll**, **libcmbth\_serial.dll**, and **cmbth\_pl.lng**).
 
-1. Find the configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**:
+4. Find the configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**:
 
     - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
-    - **Local Hardware station:** The file is located under the Modern POS client broker location.
-	
-1. Add the following section to the **composition** section of the config file.
+
+5. Add the following section to the **composition** section of the config file.
 
     ```
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
     ```
 
-1. Restart the Hardware station service:
+6. Restart the Hardware station service:
 
-    - **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
-    - **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
+	- **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
 
 ### Set up the registration process
 
 To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Entension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml**.
-2. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Entension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
-3. Go to **Retail \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and select the loaded connector from the earlier step. Update the connection settings if an update is required.
-4. Go to **Retail \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
+1. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorConnectorPosnetThermalFVEJ.xml**.
+2. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
+3. Go to **Retail \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and select the loaded connector from the earlier step. Update connection settings if an update is required.
+4. Go to **Retail \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings, if an update is required.
 5. Go to **Retail \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and select the connector functional profile from the earlier step.
 6. Go to **Retail \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and select the connector functional group from the earlier step.
-7. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the created registration process from the earlier step.
+7. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
-9. Open the distribution schedule (**Retail \> Retail IT > Distribution schedule**), and select job **1070** to transfer data to the channel database.
+9. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select job **1070** to transfer data to the channel database.
 
 ## Commerce runtime extension design
 
 The purpose of the extension (document provider) is to generate printer-specific documents and handle responses from the fiscal printer.
 
-Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
+The Commerce runtime extension is **Commerce.Runtime.DocumentProvider.PosnetSample.DocumentProviderPosnetProtocol**. This extension generates the set of printer-specific commands that are defined by POSNET specification 19-3678, in JavaScript Object Notation (JSON) format.
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 ### Request handler
 	
-The **DocumentProviderEpsonFP90III** request handler is the entry point for the request to generate documents from the fiscal printer.
+The **DocumentProviderPosnetProtocol** request handler is the entry point for the request to generate documents from the fiscal printer.
 
 The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
 
@@ -196,28 +191,25 @@ The connector supports the following requests:
 
 - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a printer-specific document that should be registered in the fiscal printer.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
+- **SaveFiscalRegistrationResultDocumentProviderRequest** – This request saves the response from the printer.
+
 
 ### Configuration
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
-
-- VAT codes mapping
 - VAT rates mapping
 - Tender type mapping
-- Barcode type for the receipt number
 - Deposit payment type
 
 ## Hardware station extension design
 
 The purpose of the extension (connector) is to communicate with the fiscal printer.
 
-Hardware station extension: **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample**
-
-The Hardware station extension submits documents that the Commerce runtime extension generates to the fiscal printer (via HTTP protocol). It also handles the responses that are received from the fiscal printer.
+The Hardware station extension is **Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.FiscalPrinterHandler**. This extension submits commands that the Commerce runtime extension generates to the fiscal printer, by calling the functions of the POSNET driver that is provided by the manufacturer. It also handles device errors.
 
 ### Request handler
 
-The **EpsonFP90IIISample** request handler is the entry point for handling request to the fiscal peripheral device.
+The **FiscalPrinterHandler** request handler is the entry point for handling the request to the fiscal peripheral device.
 
 The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Retail Headquarters.
 
@@ -231,12 +223,13 @@ The connector supports the following requests:
 
 The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
-- **Endpoint address** – The URL of the printer.
+- **Connection string** – This string describes the details of the connection to the device in a format that is supported by the driver. For details, see the POSNET driver documentation.
 - **Date and time synchronization** – This setting indicates whether you must sync the date and time of the printer with the connected Hardware station. The date and time of the printer will be synced with the Hardware station time.
+- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
 
 ## Limitations of the sample
 
 - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
-- Daily reports (fiscal X and fiscal Z) are printed by using the format that is embedded in the fiscal printer firmware.
+- Daily reports (fiscal X and fiscal Z) are printed by using the embedded *Shift report* format.
+- Printing a barcode on fiscal receipts is considered a potential customization, because this feature isn't supported in the embedded formats and can be implemented only through using the customizable **Super-format** report.
 - Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
-- The sample supports integration only with a fiscal printer that is working in the RT (Registratore Telematico) mode. 
