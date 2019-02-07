@@ -38,37 +38,35 @@ This topic describes features that are either new or changed in Talent.
 ## Changes in Attract
 
 ### Interview scheduling enhancements
-We have made improvements to our end to end interview scheduling experience. You
-can now also see the calendar availability of an internal candidate and use the
-internal candidate’s calendar for schedule recommendations. Please see more
-information [here](
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/interview-scheduling-feedback).
+We made improvements to our end-to-end interview scheduling experience. You
+can now see the calendar availability of an internal candidate and use the
+internal candidate’s calendar for schedule recommendations. Please see [Interview scheduling and feedback](interview-scheduling-feedback.md) for more information.
 
-### Job posting to LinkedIn – Company mismatch issue fixed
-Following an issue where jobs posted to LinkedIn from Attract were appearing
-under the wrong company name, we have now rolled out the fix. More information
-can be found [here](
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/creating-jobs-attract).
+### Job posting to LinkedIn – company mismatch issue fixed
+We fixed the issue where jobs posted to LinkedIn from Attract were appearing
+under the wrong company name. For more information, see [Create, approve, and post jobs in Attract](creating-jobs-attract.md).
 
 ### Career site URL displayed in Admin settings
-Career site home page URL is now displayed in the Admin Settings under Career
-Site management.
+The career site home page URL is now displayed in the **Admin Settings** under **Career
+Site management**.
 
-## Changes in Core HR - Build 8.1.2134
+## Changes in Core HR
+
+**Build 8.1.2134**
 
 ### Multiple compensation levels supported on jobs
 This change allows for more than one compensation level to be defined on a job, enabling employee fixed compensation ranges which may differ between plans when using the same job. 
 
-For Example: 	
-*Job* - Account manager
+For example: 	
+*Job* - Account Manager
 *Associated compensation levels:* B1 and B2 - Each level has a defined range of values. B1 = Min 50,000, Mid 60,000, Max 75,000 and B2 = Min 65,000, Mid 74,000, Max 85,000. 
-When creating fixed compensation for employees, based on the eligibility rules defined, each fixed plan can now point to the same Job and to different levels on the job. This allows for Plans to be defined in different regions/companies and point to the same job but different ranges without duplicating jobs to account for these differences.
+When creating fixed compensation for employees, based on the eligibility rules defined, each fixed plan can now point to the same job and to different levels on the job. This allows for plans to be defined in different regions/companies and point to the same job but different ranges without duplicating jobs to account for these differences.
 
 ### Compensation level field has been added to the Employee fixed compensation entity 
-With this update the employee fixed compensation entity has been updated to include the "compensation level" field. This addition allows for easy updating of employee fixed compensation plans. 
+With this update, the employee fixed compensation entity has been updated to include the **compensation level** field. This addition allows for easy updating of employee fixed compensation plans. 
 
 ### Update Job family when updating and creating new positions
-When changing the job on a position - Job family will now default based on the job selected.
+When changing the job on a position, **Job family** will now default based on the job selected.
 
 ### Performance improvements when rendering workspaces
-Analytics tabs on workspaces will now "load" only when accessing those pages. An indicator will display during the initial rendering of the page in the upper left hand portion of the page.
+Analytics tabs on workspaces will now load only when accessing those pages. An indicator will display during the initial rendering of the page in the upper left hand portion of the page.
