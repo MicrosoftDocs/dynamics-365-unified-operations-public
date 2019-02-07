@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channel](fiscal-integration-for-retail-channel).
+This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel).
 
 The process of setting up the fiscal integration includes the following tasks:
 
@@ -62,7 +62,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 
     A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service. For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.
     
-    A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration sample for fiscal device](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+    A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. On the **Fiscal connectors** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.
 
@@ -74,7 +74,7 @@ Before you use the fiscal integration functionality, you should configure the fo
         > [!TIP]
         > By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
 
-    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in Retail SDK](fiscal-integration-for-retail-channel#fiscal-integration-samples-in-retail-sdk).
+    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel#fiscal-integration-samples-in-the-retail-sdk).
 
     > [!NOTE]
     > Data mapping is considered part of a fiscal document provider. To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.
