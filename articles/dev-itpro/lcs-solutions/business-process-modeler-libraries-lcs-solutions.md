@@ -34,8 +34,7 @@ ms.author: omarc
 
 This topic explains how to create and work with Business process modeler (BPM) libraries.
 
-Create a business process library
----------------------------------
+## Create a business process library
 
 There are two ways to create a BPM library. You can create a new library that has no lines or task recordings, or you can copy an existing library.
 
