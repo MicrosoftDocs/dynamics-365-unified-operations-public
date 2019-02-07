@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events
-description: This topic provides information about business events. Business events provide a mechanism for external systems to receive notifications from Microsoft Dynamics 365 for Finance and Operations. Therefore, those systems can perform business actions in response to the business events.
+description: This topic provides information about business events, which s provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 02/01/2019
@@ -112,6 +112,10 @@ Select **Next**, and specify the name of the endpoint and the Service Bus queue.
 
 ![Business events new endpoint](../media/businesseventsnewendpoint2.png)
 
+In the **Queue Name** field, enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.  
+
+![Business events Queue Name](../media/BusinessEventsSBQueueName.PNG)
+
 In the **Azure Active Directory application ID** field, enter the application ID that is created in Azure AD in the Azure portal.
 
 ![Business events configure Azure AD](../media/businesseventsaad1.png)
@@ -128,6 +132,10 @@ In the **Key vault secret name** field, enter the secret name for the endpoint r
 
 ![Business events configure Azure Key Vault](../media/businesseventskeyvault2.png)
 
+The **Key Vault Secret** value, in Azure, will be the Azure Service Bus **Primary Connection String** value. This value is found in the Azure Service Bus that you configured in **Shared Access Policies > RootManagedSharedAccessKey**.
+
+![Business events Azure Key Vault key value](../media/BusinessEventsKVSValue.PNG)
+
 > [!IMPORTANT]
 > The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
 
@@ -137,9 +145,16 @@ To create an endpoint to a Service Bus topic, select **New**, and then, in the *
 
 ### Create an Azure Event Grid endpoint
 
-Create and configure an **Azure Event Grid Topic** in the Azure Portal. Then create an endpoint to the Event Grid Topic from in the  **Business Events Workspace**, by going to the **Endpoints** tab, selecting **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.
+To create an endpoint, you need to create and configure an **Azure Event Grid Topic** in Azure Portal, and then create an endpoint to the Event Grid Topic in the **Business Events Workspace**. Go to the **Endpoints** tab, select **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. This is the **Topic Endpoint** value in the **Overview** section of your Event Grid Topic.
+
+![Business events Event Grid Endpoint value](../media/BusinessEventsEGTopicsEndpoint.PNG)
+
+Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Crendtial can be found under the Event Grid you created in the **Access Keys** section under Settings. 
+
+![Business events Event Grid credentials value](../media/BusinessEventsEGKeyValue.PNG)
 
 After you've created the endpoints that you require, the next step is to activate the business events.
+
 
 ## Activating business events
 
