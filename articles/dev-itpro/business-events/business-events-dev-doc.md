@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,12 +31,96 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
+This topic walks you through the development process and best practices for implementing business events.
+
+What is a business event and what is not a business event?
+==========================================================
+
+This question comes up every time we start to think about use cases where
+business events can help. Is creation of a vendor a business event? Or is
+confirming a purchase order a business event? Is it a business event if you
+capture the event at the table level? Or should business events only be captured
+at the business logic level in a business process? These are not only valid
+questions, but also a key topic of discussion when planning and architecting a
+solution for integration. The following guidelines can be used to help with this
+thought process and decision making.
+
+Intent
+------
+
+The intent behind capturing the business event must be clearly understood. In
+other words, what is the reason for capturing the business event and how it is
+going to be used by the recipient.
+
+If the intent for capturing a business event is to take a business action
+outside of Finance and Operations in response to the business event happening in
+Finance and Operations, then this is a valid intent to capture the business
+event. The business action that is taken in response to the business event can
+be to notify user) about the business event and/or to call into another
+business application to take a business action like, creating a sales order. It is important to look at the business action generically and not
+base the need for a business event on the type of business action that will be
+taken.
+
+If the intent of capturing the business event is to transfer data to the
+recipient and in effect, realizing a data export scenario, then this will not be
+a good use case for using business events. In fact, the use of business events
+for data transfer use cases will be a misuse of the business events framework.
+Such scenarios must continue to use data export mechanisms already available in
+data management.
+
+Fidelity
+--------
+
+When the intent is clear and a legitimate need for a business event is
+established, the next step is to evaluate the approach that must be taken to
+capture the business event. The following section summarizes the approach that
+must be evaluated.
+
+Regardless of which approach is taken, the fidelity of business events is
+significant to ensure the following aspects are taken care of and as a result, must
+influence the design choice for implementing the business event. However, the
+design choice that you take to implement a business event must not influence the
+concept of business events--the chosen design must not be used
+as a decision-making tool to determine if it is a business event. The
+intent discussed previously must be used for such decisions.
+
+-   **Durable business events** - There should be no false business events sent
+    to the recipient. If a purchase order confirmation business event was sent
+    out, then the recipient must trust that the purchase order was indeed
+    confirmed. The design choice must ensure this transactional nature and hence
+    must not take a design choice that would violate this expectation.
+
+-   **Targeted** - Business events must be designed to optimize the consumption
+    story for the recipient. In other words, make it as easy as possible
+    for the recipient to consume business events. Hence, business events must be
+    as specific as possible and targeted to a specific use case. Business
+    events must not be generic thereby, leaving the consumer to determine what
+    the business event was for by trying to understand the payload. The design
+    choice made must allow for this to be preserved.
+
+-   **Noiseless** - There should be very little effort in the design to filter out
+    the noise. To make business events very specific, avoid writing
+    filtering logic to filter out conditions that do not match the expected
+    business event. The chosen approach must be such that the point at which the
+    business event is implemented in code is specific enough to avoid the need
+    for any filtering of noise. Any attempt to filter the noise by adding logic
+    can not only be taxing on performance but, it may also get complicated based
+    on specific use cases.
+
+| **Capturing at business logic level**                                                                                    | **Capturing at table level**                                                                                         |
+|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| Ensures durability by being in the transaction                                                                           | Ensures durability by being in the transaction.                                                                      |
+| Allows for targeted business events.                                                                                     | Difficult to enable targeted business events due to the lower level capturing of events.                             |
+| Makes it easy to remain noiseless.                                                                                       | Difficult to remain noiseless unless additional effort is taken to put sound logic in place to filter out the noise. |
+| Provides additional context of the business process, which can significantly improve the durability and the quality of payload. | Business process context is most likely lost due to the lower level capturing of events.                             |
+
+
+## Implementing a business event
+
 Implementing a business event and sending it is a fairly straightforward process:
 1. Build the contract.
 2. Build the event.
 3. Add code to send the event. 
-
-## Implementing a business event
 
 Two classes must be implemented:
 
