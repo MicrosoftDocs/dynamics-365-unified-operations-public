@@ -47,6 +47,7 @@ AppChecker depends on a running instance of BaseX for storage and querying of ab
 ## Step 3: Install BaseX
 
 * Run the executable on the developer machine you'll be compiling your module on.
+* Accept the default settings for each step.
 
 > [!TIP]
 > The BaseX server data folder can be changed later, if the installation drive does not have enough space.
