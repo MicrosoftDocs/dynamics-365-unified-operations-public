@@ -4,9 +4,11 @@
   - name: Get started
     href: talent-get-started.md
     items:
-    - name: What's new or changed
+    - name: What's new or changed in Dynamics 365 for Talent
       href: whats-new.md
       items:
+      - name: What's new (February 7, 2019)      
+        href: whats-new-talent-february7.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (January 31, 2019)      
         href: whats-new-talent-january-29.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (January 23, 2019)      
