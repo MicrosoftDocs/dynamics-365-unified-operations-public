@@ -40,10 +40,10 @@ The duplicate payment protection feature ensures that Dynamics 365 for Retail Mo
 
 This topic covers the following aspects of the duplicate payment protection feature:
 
-- **[Prerequisites](#Prerequisites)** - Set of prerequisites to leverage this feature in Dynamics 365 for Retail Modern POS.
-- **[Scenario details](#Scenario-details)** - Detailed description of the scenarios covered by the duplicate payment protection feature.
-- **[Troubleshooting steps](#Troubleshooting-steps)** - Steps to take when encountering issues with the duplicate payment protection feature.
-- **[Related articles](#Related-articles)** - List of related articles you might find useful when using the duplicate payment protection feature.
+- [Prerequisites](#Prerequisites) - Set of prerequisites to leverage this feature in Dynamics 365 for Retail Modern POS.
+- [Scenario details](#Scenario-details) - Detailed description of the scenarios covered by the duplicate payment protection feature.
+- [Troubleshooting](#Troubleshooting) - Steps to take when encountering issues with the duplicate payment protection feature.
+- [Additional resources](#Additional-resources) - List of related articles you might find useful when using the duplicate payment protection feature.
 
 ## Prerequisites
 - The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
