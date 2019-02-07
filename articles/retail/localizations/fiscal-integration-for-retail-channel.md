@@ -82,7 +82,7 @@ The fiscal integration framework provides the following options to handle failur
 > [!NOTE]
 > The **Skip** and **Mark as registered** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
 
-The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel#error-handling-settings).
+The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel#set-error-handling-settings).
 
 ## Storing fiscal response in fiscal transaction
 
@@ -98,13 +98,13 @@ A fiscal transaction stores the following details:
 
 ## Fiscal texts for discounts
 
-Some countries or regions have special requirements about additional texts that must be printed on fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality lets you set up a special text for a discount that is printed after a discount line on a fiscal receipt. For manual discounts, you can configure a fiscal text for the info code that is specified as the **Product discount** info code in the POS functionality profile. For more details about how to set up fiscal texts for discounts, see [Setting up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel#setting-up-fiscal-texts-for-discounts).
+Some countries or regions have special requirements about additional texts that must be printed on fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality lets you set up a special text for a discount that is printed after a discount line on a fiscal receipt. For manual discounts, you can configure a fiscal text for the info code that is specified as the **Product discount** info code in the POS functionality profile. For more details about how to set up fiscal texts for discounts, see [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel#set-up-fiscal-texts-for-discounts).
 
 ## Printing fiscal X and fiscal Z reports
 
 Fiscal integration functionality supports generation of end-of-day statements that are specific to the integrated fiscal device or service:
 
-- New buttons that run corresponding operations should be added to the POS screen layout. For more details, see [Setting up fiscal X/Z reports from POS](setting-up-fiscal-integration-for-retail-channel#setting-up-fiscal-xz-reports-from-pos).
+- New buttons that run corresponding operations should be added to the POS screen layout. For more details, see [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel#set-up-fiscal-xz-reports-from-pos).
 - In the fiscal integration sample, these operations should be matched to the corresponding operations of the fiscal device.
 
 ## Fiscal integration samples in the Retail SDK
