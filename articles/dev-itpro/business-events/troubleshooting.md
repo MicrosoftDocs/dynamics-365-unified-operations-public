@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshooting business events
+title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Business event errors
+# Troubleshoot business events
 
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
