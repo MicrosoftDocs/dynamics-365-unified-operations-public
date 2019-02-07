@@ -80,3 +80,23 @@ BaseX is configured by default to use ~1.17GB of RAM at the most. If you have a 
 
 * This will start a BaseX server listening on ports `1984/tcp` (API), `8984/tcp` (HTTP API), and `8985/tcp` (Jetty HTTP stop port).
 
+## Step 6 [Optional]: Start the BaseX server on login
+
+You can choose to start BaseX when it's needed as part of your development process, or you can set it up such that it starts with Windows. This final step explains how to set up BaseX as a service.
+
+* Open the Task Scheduler tool; you can use the following shortcut from a Run prompt: `control schedtasks`
+* Right click in the Tasks list window and create a new task with the Basic task wizard.
+
+  ![Image of the Task context menu, highlighting the "Create Basic Task..." button](./media/tasksched-create-basic-task.png)
+* Name the task something like "`BaseX Start on Login`".
+* Set the trigger to `When I log on`.
+* Set the action to `Start a program`.
+* In the `Start a program` sub-section,
+  * set `Program/script` to: `<BaseX Install Path>\BaseX\bin\basexhttp.bat`, and
+  * set `Add arguments` to: `-S`.
+
+    ![Image of the Basic Task Wizard with arguments set to start "basexhttp.bat -S"](./media/tasksched-start-basex-http-server.png)
+* Finalize the task creation wizard and you're set.
+
+> [!NOTE]
+> The BaseX Wiki explains how to use YAJSW to run BaseX as a service, but we recommend scheduling a task on login for the sake of simplicity.
