@@ -161,7 +161,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process.md).
 
 1. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorConnectorPosnetThermalFVEJ.xml**.
 2. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
@@ -179,7 +179,7 @@ The purpose of the extension (document provider) is to generate printer-specific
 
 The Commerce runtime extension is **Commerce.Runtime.DocumentProvider.PosnetSample.DocumentProviderPosnetProtocol**. This extension generates the set of printer-specific commands that are defined by POSNET specification 19-3678, in JavaScript Object Notation (JSON) format.
 
-For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 ### Request handler
 	
