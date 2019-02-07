@@ -161,7 +161,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process.md).
+To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorConnectorPosnetThermalFVEJ.xml**.
 2. Go to **Retail \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
