@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
+## Introduction
+
 This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel).
 
 The process of setting up the fiscal integration includes the following tasks:
@@ -47,7 +49,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 
 1. Update retail parameters.
 
-    1. On the **Retail shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**. Define the number sequences for the following references:
+    1. On the **Retail shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**. On the **Number sequences** tab, define the number sequences for the following references:
 
         - Fiscal technical profile number
         - Fiscal connector group number
@@ -113,8 +115,8 @@ Before you use the fiscal integration functionality, you should configure the fo
 
     A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process. For example, if several fiscal printer models can be used in a retail store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.
 	
-    1. On the **Fiscal connector groups** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**), create a new fiscal connector group.
-    2. Add functional profiles to the connector group. On the **Functional profiles** page, select **Add**, and select a profile number. Each fiscal connector in a connector group can only have one functional profile.
+    1. On the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**), create a new fiscal connector group.
+    2. Add functional profiles to the connector group. On the **Functional profiles** tab, select **Add**, and select a profile number. Each fiscal connector in a connector group can only have one functional profile.
     3. To suspend use of the functional profile, set the **Disable** option to **Yes**. This change affects only the current connector group. You can continue to use the same functional profile in other connector groups.
 
 5. Create a fiscal registration process.
@@ -151,7 +153,7 @@ Before you use the fiscal integration functionality, you should configure the fo
     - After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).
     - After you make changes in the assignment of connector technical profiles to hardware profiles.
 
-8. On the **Distribution scheduler** page, run the **1070** job to transfer data to the channel database.
+8. On the **Distribution scheduler** page, run the **1070** and **1090** jobs to transfer data to the channel database.
 
 ## Set up fiscal texts for discounts
 
@@ -188,10 +190,10 @@ The error handling options that are available in the fiscal integration are set 
     - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
 
 2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip or mark as registered** permission.
-3. The **Skip** and **Mark as registered** options lets operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail).
+3. The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail).
 
     > [!NOTE]
-    > The trigger function that has the value **Product** isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.
+    > The **Product** trigger function isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.
 
     - On the **Fiscal connector group** page, on the **Info codes** tab, select info codes or info code groups in the **Skip** and **Mark as registered** fields.
 
