@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ## Introduction
 
-This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel).
+This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel.md).
 
 The process of setting up the fiscal integration includes the following tasks:
 
@@ -64,7 +64,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 
     A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service. For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.
     
-    A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+    A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. On the **Fiscal connectors** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.
 
@@ -76,7 +76,7 @@ Before you use the fiscal integration functionality, you should configure the fo
         > [!TIP]
         > By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
 
-    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel#fiscal-integration-samples-in-the-retail-sdk).
+    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel#fiscal-integration-samples-in-the-retail-sdk.md).
 
     > [!NOTE]
     > Data mapping is considered part of a fiscal document provider. To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.
@@ -182,7 +182,7 @@ In some cases, a special text must be printed on a fiscal receipt if a discount 
 
 ## Set error handling settings
 
-The error handling options that are available in the fiscal integration are set in the fiscal registration process. For more information about error handling in the fiscal integration, see [Error handling](fiscal-integration-for-retail-channel#error-handling).
+The error handling options that are available in the fiscal integration are set in the fiscal registration process. For more information about error handling in the fiscal integration, see [Error handling](fiscal-integration-for-retail-channel.md#error-handling).
 
 1. On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), you can set the following parameters for each step of the fiscal registration process:
 
@@ -190,7 +190,7 @@ The error handling options that are available in the fiscal integration are set 
     - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
 
 2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip or mark as registered** permission.
-3. The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail).
+3. The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).
 
     > [!NOTE]
     > The **Product** trigger function isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.
@@ -207,7 +207,7 @@ The error handling options that are available in the fiscal integration are set 
 
 To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.
 
-- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters.md) to install the designer and update a POS layout.
 
     1. Select the layout to update. 
     2. Add a new button, and set the **Print fiscal X** button property.
