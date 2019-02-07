@@ -50,6 +50,6 @@ AppChecker depends on a running instance of BaseX for storage and querying of ab
 * Accept the default settings for each step.
 
 > [!TIP]
-> The BaseX server data folder can be changed later, if the installation drive does not have enough space.
+> The BaseX server data folder can be changed later, if the installation drive does not have enough space. See the [BaseX configuration page](http://docs.basex.org/wiki/Configuration#Database_Directory) for more information.
 
 
