@@ -76,7 +76,7 @@ Before you use the fiscal integration functionality, you should configure the fo
         > [!TIP]
         > By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
 
-    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel#fiscal-integration-samples-in-the-retail-sdk.md).
+    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).
 
     > [!NOTE]
     > Data mapping is considered part of a fiscal document provider. To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.
@@ -207,7 +207,7 @@ The error handling options that are available in the fiscal integration are set 
 
 To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.
 
-- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters.md) to install the designer and update a POS layout.
+- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
 
     1. Select the layout to update. 
     2. Add a new button, and set the **Print fiscal X** button property.
