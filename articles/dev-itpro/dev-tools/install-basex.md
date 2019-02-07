@@ -66,3 +66,17 @@ BaseX is configured by default to use ~1.17GB of RAM at the most. If you have a 
 > [!NOTE]
 > If you make changes here after starting the BaseX server, you will need to restart the BaseX server after saving the `basexhttp.bat` file.
 
+## Step 5: Start the BaseX server
+
+* From the Start Menu, run the newly added `BaseX -> BaseX Server (Start)` program.
+
+  ![Image of BaseX Server (Start) shortcut](./media/basex-start.png)
+
+  * If you chose not to create start menu shortcuts, start the server with the following command in the Run prompt:
+
+    ```text
+    <BaseX Install Path>\BaseX\bin\basexhttp.bat -S
+    ```
+
+* This will start a BaseX server listening on ports `1984/tcp` (API), `8984/tcp` (HTTP API), and `8985/tcp` (Jetty HTTP stop port).
+
