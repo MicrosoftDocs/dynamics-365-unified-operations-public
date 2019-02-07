@@ -70,8 +70,6 @@ The following scenarios are covered by the fiscal printer integration sample for
         - Print a fiscal receipt for the pickup operation for a customer order.
         - Print a fiscal receipt for a return order.
 
-    - Print a barcode for the receipt number on a fiscal receipt.
-
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 
