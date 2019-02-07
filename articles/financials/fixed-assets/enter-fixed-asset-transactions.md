@@ -17,8 +17,7 @@ ms.search.form: AssetTable, PurchCreateOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
+ms.reviewer: shylawDms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23061
 ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
@@ -69,6 +68,8 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 | ** **                               | General ledger           | General journal                           |
 | ** **                               | Accounts receivable      | Free text invoice                         |
 
+
+The Depreciation periods remaining value of the fixed asset is not updated when a depreciation transaction type journal line is manually created or imported through a data entity. The Depreciation periods remaining value of the fixed asset is updated when the depreciation proposal process is used to create the journal line.
 
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
