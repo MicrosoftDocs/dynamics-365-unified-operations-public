@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 This topic walks you through the development process and best practices for implementing business events.
 
-What is a business event and what is not a business event?
+## What is a business event and what is not a business event?
 ==========================================================
 
 This question comes up every time we start to think about use cases where
