@@ -1095,3 +1095,31 @@ Turn off the **Skype presence enabled** option on the **Client performance optio
 To do this, you must sign in to Finance and Operations. Redirection should be blocked in the browser so that you can sign in and perform that action. After disabling the Skype presence, redirection can be unblocked again.
 
 The Chrome browser blocks redirection by default.
+
+## Error: There was an error during CodePackage activation. Service host failed to activate. Error:0x8007052e
+
+You might receive the following error during a new installation:
+
+> Error event: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'. There was an error during CodePackage activation.Service host failed to activate. Error:0x8007052e 
+
+This will result in the the AXSF service also failing with the same error.
+
+If this error occurs, follow these steps:
+
+1. Download nuget package: https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.0
+2. Rename the file extension from .nupkg to .zip and extract.
+3. Locate the "netstandard.dll" file from the extract, should be in this location: <extracted folder>\netstandard.library.2.0.0\build\netstandard2.0\ref\netstandard.dll
+4. Create a folder called "Files" on C: drive on all the AOS servers, and copy the "netstandard.dll" file to this folder on all the AOS Servers.
+5. On each AOS server, open an Admin Command Prompt, and run the following command:
+
+```
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i C:\Files\netstandard.dll /f
+```
+
+6. Delete AXBootstrapperApp from Service Fabric
+    1. First delete fabric:/Bootstrapper/AXBootstrapper service
+    2. Delete fabric:/Bootstrapper application 
+    3. Unprovision AXBootstrapperAppType type
+7.	Redeploy / Retry from LCS
+
+
