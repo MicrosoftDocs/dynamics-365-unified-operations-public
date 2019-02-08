@@ -107,6 +107,8 @@
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Omni-channel advanced auto charges
+  href: omni-auto-charges.md
 - name: Call center
   items:
   - name: Call center sales functionality
@@ -191,6 +193,8 @@
     href: pos-offline-functionality.md
   - name: Shift and cash drawer management
     href: shift-drawer-management.md
+  - name: Cash out gift card balance
+    href: dev-itpro/gift-card-cash-out.md
   - name: Customer orders
     items:
     - name: Customer orders in MPOS
@@ -227,8 +231,16 @@
     href: Order-fulfillment-POS-setup.md
   - name: Show order notifications in the POS
     href: Notifications-POS.md
-- name: Configure and process an exchange on a return order
-  href: orderexchanges.md
+- name: Returns
+  items:
+  - name: Sell and return products not included in a store's assortment
+    href: sell-return-outside-assortments.md
+  - name: Configure and process an exchange on a return order
+    href: orderexchanges.md
+  - name: Restrict payment methods for returns without a receipt
+    href: payment-methods-restrictions.md
+  - name: Return items across multiple customer orders and invoices
+    href: multireturn.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
@@ -243,6 +255,8 @@
     href: store-performance-information.md
   - name: Set up Recency, Frequency, and Monetary (RFM) analysis
     href: set-up-rfm-analysis.md
+- name: Retail price reports
+  href: price-report.md
 - name: Pricing and discounts
   items:
   - name: Retail discounts
@@ -317,18 +331,20 @@
     href: ../supply-chain/inventory/quarantine-orders.md
   - name: Running average cost price
     href: ../supply-chain/cost-management/running-average-cost-price.md
-  - name: Tracking running average cost per inventory dimension
+  - name: Track running average cost per inventory dimension
     href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Human resources
   items:
   - name: Organize your workforce using departments, jobs, and positions
     href: ../talent/departments-jobs-positions.md
-  - name: Setting up the components of a job
+  - name: Set up the components of a job
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
-  - name: Fiscal integration for Retail channel
+  - name: Fiscal integration overview for Retail channel
     href: localizations/fiscal-integration-for-retail-channel.md
+  - name: Set up fiscal integration for Retail channel
+    href: localizations/setting-up-fiscal-integration-for-retail-channel.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
@@ -339,6 +355,8 @@
       href: localizations/emea-eeu-retail-invoices.md
     - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
       href: localizations/emea-eeu-deployment.md
+    - name: Fiscal printer integration sample for Poland
+      href: localizations/emea-pol-fpi-sample.md
   - name: France
     items:
     - name: Cash register functionality
@@ -355,7 +373,7 @@
       href: localizations/apac-ind-n-1-for-india.md
   - name: Italy
     items:
-    - name: Fiscal printer integration
+    - name: Fiscal printer integration sample for Italy
       href: localizations/emea-ita-fpi-sample.md
   - name: Norway
     items:
@@ -590,6 +608,8 @@
       href: dev-itpro/create-windows-installer-payment-connector.md
     - name: Payment data use
       href: payment-connector-data-fields.md
+    - name: Enable duplicate payment protection for payment connector
+      href: dev-itpro/duplicate-payment-protection.md
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:

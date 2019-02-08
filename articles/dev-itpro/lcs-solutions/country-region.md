@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/ax-availabilityguide). This functionality is enabled based on the primary address of the active legal entity. 
+Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you do the following: 
 - learn more about developing country/region-specific solutions
@@ -48,10 +48,11 @@ The following resources provides guidance and information that can help develope
 -   [Classify localization features](classify-localization-features.md)
 -   [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## Localization updates and communication
+## Regulatory updates and communication
 The following resources provide information about planned and new localization features. 
 
-### Localization updates
+### Regulatory updates
+-   [Regulatory updates](../../financials/localizations/regulatory-updates.md)
 -   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
 -   [LCS issue search](../lifecycle-services/issue-search-lcs.md) (Updated daily)
 
