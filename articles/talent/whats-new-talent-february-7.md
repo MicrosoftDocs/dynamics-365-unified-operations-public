@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (February 7, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 2/7/2019
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -38,16 +38,16 @@ This topic describes features that are either new or changed in Talent.
 ## Changes in Attract
 
 ### Interview scheduling enhancements
-We made improvements to our end-to-end interview scheduling experience. You
+Improvements have been made to the end-to-end interview scheduling experience. You
 can now see the calendar availability of an internal candidate and use the
-internal candidate’s calendar for schedule recommendations. Please see [Interview scheduling and feedback](interview-scheduling-feedback.md) for more information.
+internal candidate’s calendar for schedule recommendations. For more information, see [Interview scheduling and feedback](interview-scheduling-feedback.md).
 
 ### Job posting to LinkedIn – company mismatch issue fixed
-We fixed the issue where jobs posted to LinkedIn from Attract were appearing
+An issue has been fixed where jobs posted to LinkedIn from Attract were appearing
 under the wrong company name. For more information, see [Create, approve, and post jobs in Attract](creating-jobs-attract.md).
 
 ### Career site URL displayed in Admin settings
-The career site home page URL is now displayed in the **Admin Settings** under **Career
+The career site home page URL is now displayed in **Admin Settings** under **Career
 Site management**.
 
 ## Changes in Core HR
@@ -63,10 +63,10 @@ For example:
 When creating fixed compensation for employees, based on the eligibility rules defined, each fixed plan can now point to the same job and to different levels on the job. This allows for plans to be defined in different regions/companies and point to the same job but different ranges without duplicating jobs to account for these differences.
 
 ### Compensation level field has been added to the Employee fixed compensation entity 
-With this update, the employee fixed compensation entity has been updated to include the **compensation level** field. This addition allows for easy updating of employee fixed compensation plans. 
+With this update, the employee fixed compensation entity has been updated to include the **Compensation level** field. This addition makes it easier to update employee fixed compensation plans. 
 
 ### Update Job family when updating and creating new positions
 When changing the job on a position, **Job family** will now default based on the job selected.
 
 ### Performance improvements when rendering workspaces
-Analytics tabs on workspaces will now load only when accessing those pages. An indicator will display during the initial rendering of the page in the upper left hand portion of the page.
+Analytics tabs on workspaces will now load only when accessing those pages. An indicator will display during the initial rendering of the page in the upper-left corner of the page.
