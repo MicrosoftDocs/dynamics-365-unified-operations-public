@@ -50,10 +50,6 @@ The following steps explain how a user in the System Administrator or Electronic
 8. In the **Data model definition** field, enter or select a value.
 9. Click **Create configuration**. A new configuration has been created. The draft version can be used to store the design format for managing electronic documents.  
 
- > [!NOTE]
- > If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.
-
-
 ## Design the format of an electronic document
 1. Click **Designer**.
 2. Click **Add root** to open the drop dialog.
