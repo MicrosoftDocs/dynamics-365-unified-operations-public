@@ -98,202 +98,91 @@ The new entity is an expansion of vendor transactions and customer transactions.
 </tr>
 </table>
 
-| Business scenario                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Payment cause                                                                                            | Payment stage     |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------|
-| The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast – payment schedule journal (payment plan). The new entity is an expansion of cash flow forecast transactions and purchase order/sales order payment schedule lines.                                                                                                                                                        | Purchase order Sales order Free text invoice                                                             | Planned payment   |
-| **Note:** This new entity and the associated functionality are available only if the **Payment request** license configuration key is enabled. The company receives the payment request from a seller (prepayment request, invoice, and so on). The manager creates a payment request, which should be approved by the manager lead and a treasurer. The treasurer includes information about the expected and approved payments (inflow or outflow) in the cash flow forecast. The new entity is an expansion of vendor transactions and customer transactions. | Vendor invoice Prepayment invoice Planned payment for a confirmed purchase order Customer return invoice | Payment request   |
-| A treasurer generates and confirms the payment schedule journal (payment register). In this way, the company defines the list of payments that should be performed by the bank/cash account.                                                                                                                                                                                                                                                                                                                                                                     | Payment schedule journal (of the **Payment register** type)                                              | Payment order     |
-| The company receives the statement from a bank. This statement includes the authorized transactions (completed payments).                                                                                                                                                                                                                                                                                                                                                                                                                                        | Bank statement                                                                                           | Completed payment |
 
-After you complete the example that is provided in this document, you will be
-able to complete the following tasks:
+After you complete the example that is provided in this document, you will be able to complete the following tasks:
 
 Configure cash flow management parameters to support the new functionality.
 
-Perform a planned payment processing. Forecast transactions of incoming and
-outgoing payments are automatically created and updated based on purchase
-orders, sales orders and free text invoices.
+Perform a planned payment processing. Forecast transactions of incoming and outgoing payments are automatically created and updated based on purchase orders, sales orders and free text invoices.
 
-(Only if the **Payment request** license configuration key is enabled) Perform
-payment request processing (including creation, update, and approval), based on
-indebtedness to vendors, customers, and workers, and prepayment requirements
-from vendors.
+(Only if the **Payment request** license configuration key is enabled) Perform payment request processing (including creation, update, and approval), based on indebtedness to vendors, customers, and workers, and prepayment requirements from vendors.
 
-Perform payment schedule journal processing for mid-term liquidity planning
-(payment plan) and daily payment management (payment register). Analyze cash
-deficit and surplus through payment schedule sheet balancing (the simulation
-function).
+Perform payment schedule journal processing for mid-term liquidity planning (payment plan) and daily payment management (payment register). Analyze cash deficit and surplus through payment schedule sheet balancing (the simulation function).
 
-Generate payments, based on an approved payment register (a type of payment
-schedule journal).
+Generate payments, based on an approved payment register (a type of payment schedule journal).
 
-Configure parameters to support cash flow management
-====================================================
+## Setup
 
-Task overview
--------------
+### License configuration
 
-Configure the license configuration.
+1. Go to  **System administration > Setup > License configuration**.
+2. Under **Country/Regional specific features \>Russia**, select the **Cash flow management** check box.
+3. If the organization is planning to use payment requests, select the **Payment requests** check box.
 
-Configure the organization hierarchy for centralized payments (optional).
 
-Create the payment priority and specify the payment priority for a party.
+### Organization hierarchy for centralized payments (optional)
 
-Create an approval workflow for payment requests and an approval workflow for
-payment schedule journals.
+1. Go to **Organization administration > Organizations > Organization hierarchies**.
+2. Make sure that the selection in the Hierarchy table is changed to **Centralized Payments**.
 
-Create the payment request type.
+![Organization hierarchy for centralized payments](media/rus-org-hierarchy.jpg)
 
-Configure the cash flow management parameters.
+3. Click **View**.
+4. On the **Hierarchy designer** page, create a new hierarchy, where **RUMF** is the legal entity of the payment and **RURT** is the operating legal entity.
 
-Specify the payment request type for the terms of payment.
+![Organization hierarchy designer](media/rus-org-hierarchy-designer.jpg)
 
-Define the ledger account as a remittance en route account.
+5. Publish the new hierarchy.
 
-Specify the minimum cash balance for a payment account (bank account or cash
-account).
+### Payment priority
 
-Specify payment order requisites on a purchase agreement and sales agreement.
+1. Go to **Cash and bank management > Setup > Cash flow management > Payment priority**.
+2. Click **New** to create a new record.
+3. On the **Manage priority** FastTab, use the **Up** and **Down** buttons to arrange the priority list.
+4. Click **Accounts payable > Vendors > All vendors**.
+5. On the **Vendors** page, select the vendor.
+6. Click **Edit**. Then, in the **Payment priority** field, specify a priority code for the associated party. This operation can also be completed in the **Party** and **Customer** forms.
 
-License configuration
----------------------
+###  Cash flow management workflow
 
-Click **System administration** \> **Setup** \> **License configuration**.
+1. Go to **Cash and bank management > Setup > Cash and bank management workflows**.
+2. Click **New** to create a new record.
+3. Select the required workflow type: **Workflow type for payment requests approval** or **Payment schedule journal approval workflow**.
+4. Set the new workflow by using the new workflow elements: **Approve the payment request** or **Approve payment schedule journal**.
 
-Under **Country/Regional specific features \>Russia**, select the **Cash flow
-management** check box.
+![Workflow elements](media/rus-cash-flow-workflow.jpg)
 
-If the organization is planning to use payment requests, select the **Payment
-requests** check box.
+5. Activate the new workflow.
 
-![A screenshot of a social media post Description automatically generated](media/d32e6c4fa740cfd58eeca53a8f6a38d5.jpg)
+### Payment request type
 
-Close the page.
+1.  Go to **Cash and bank management > Setup > Cash flow management > Payment request type**.
+    > [!NOTE]
+    > The **Payment request type** page is available only if the **Payment request** license configuration key is enabled.
+2.  Click **New** to create a new record.
+3.  Specify the **Payment priority**. If a payment priority is not specified for a payment request type, the lowest payment priority will be used for payment requests of that type. The payment priority for a payment request will be a maximum between the payment priority of the party and the payment priority of the payment request type.
 
-Organization hierarchy for centralized payments (optional)
-----------------------------------------------------------
+4.  Specify the cash flow direction: **Cash inflow** or **Cash outflow**.
+5.  Specify the workflow that is associated with payment request approval, if the approval procedure should be applied to payment requests of this type.
 
-Click **Organization administration** \> **Organizations** \> **Organization
-hierarchies**.
-
-Make sure that the selection in the Hierarchy table is changed to **Centralized
-Payments**.
-
-![A screenshot of a cell phone Description automatically generated](media/9af19b1d8b67b09b67b424904c613f13.jpg)
-
-Click **View**.
-
-In the **Hierarchy designer** form, create a new hierarchy, where **RUMF** is
-the legal entity of the payment and **RURT** is the operating legal entity.
-
-![A screenshot of a cell phone Description automatically generated](media/4523db94196e8ca17370468a355fe8df.jpg)
-
-Publish the new hierarchy.
-
-Payment priority
-----------------
-
-Click **Cash and bank management** \> **Setup** \> **Cash flow management** \>
-**Payment priority**.
-
-![A screenshot of a cell phone Description automatically generated](media/7fe5d6a76dbae175398fd8549fd68d9f.jpg)
-
-Click **New** to create a new record.
-
-On the **Manage priority** FastTab, use the **Up** and **Down** buttons to
-arrange the priority list.
-
-Click **Accounts payable** \> **Vendors** \> **All vendors**.
-
-In the **Vendors** page, select the vendor.
-
-Click **Edit**. Then, in the **Payment priority** field, specify a priority code
-for the associated party. This operation can also be completed in the **Party**
-and **Customer** forms.
-
-![A screenshot of a cell phone Description automatically generated](media/2cae42b78db6e38b62a4e2bc40987d8c.jpg)
-
-Cash flow management workflow
------------------------------
-
-Click **Cash and bank management** \> **Setup** \> **Cash and bank management
-workflows**.
-
-Click **New** to create a new record.
-
-Select the required workflow type: **Workflow type for payment requests
-approval** or **Payment schedule journal approval workflow**.
-
-![A screenshot of a social media post Description automatically generated](media/d1d01da6a9cc990459218566b0558cf3.jpg)
-
-Set the new workflow by using the new workflow elements: **Approve the payment
-request** or **Approve payment schedule journal**.
-
-![A screenshot of a cell phone Description automatically generated](media/75cf1ae83b31d8796c1b4a3f09edf8dd.jpg)
-
-Activate the new workflow.
-
-Payment request type
---------------------
-
-**Note:** The **Payment request type** form is available only if the **Payment
-request** license configuration key is enabled.
-
-1.  Click **Cash and bank management** \> **Setup** \> **Cash flow management**
-    \> **Payment request type**.
-
-![A screenshot of a cell phone Description automatically generated](media/2861a5e9d472fb1c073042ff29e294c5.jpg)
-
-1.  Click **New** to create a new record.
-
-2.  Specify the **Payment priority**. If a payment priority is not specified for
-    a payment request type, the lowest payment priority will be used for payment
-    requests of that type. The payment priority for a payment request will be a
-    maximum between the payment priority of the party and the payment priority
-    of the payment request type.
-
-3.  Specify the cash flow direction: **Cash inflow** or **Cash outflow**.
-
-4.  Specify the workflow that is associated with payment request approval, if
-    the approval procedure should be applied to payment requests of this type.
-
-Cash flow management parameters
--------------------------------
+### Specify cash flow management parameters
 
 **Note:** This setup should be completed for a Treasury company.
 
-Click **Cash and bank management** \> **Setup** \> **Cash and bank management
-parameters**. Click on the **Cash flow management** tab,
+1. Click **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**. 
 
-On the **Financial dimensions** fast tab, specify the dimension set. This step
-enables an organization to determine which dimensions in the account structures
-that are associated with the chart of accounts (of legal entities in a
-centralized payment hierarchy) are available for cash flow management
-processing. This means that, for example, combinations of departments that have
-cost centers can be used for liquidity/cash flow forecast analysis.
+2. In the **Cash flow management** area, on the **Financial dimensions** FastTab, specify the dimension set. This step enables an organization to determine which dimensions in the account structures that are associated with the chart of accounts (of legal entities in a centralized payment hierarchy) are available for cash flow management processing. This means that, for example, combinations of departments that have cost centers can be used for liquidity/cash flow forecast analysis.
 
-On the **Default exchange rate type for forecast** fast tab, specify the default
-exchange rate type for forecasts. This value is used in payment plans when the
-currency of a payment source differs from the payment currency.
+3. On the **Default exchange rate type for forecast** fast tab, specify the default exchange rate type for forecasts. This value is used in payment plans when the currency of a payment source differs from the payment currency.
 
->   **Note:** The following parameters are available only if the **Payment
->   request** license configuration key is enabled.
+> [!NOTE] 
+> The following parameters are available only if the **Payment request** license configuration key is enabled.
 
-On the **Payment requests fast tab**, specify payment request types for
-**Indebtedness to vendor**, **Vendor prepayment**, **Indebtedness to customer**,
-**Indebtedness to worker**. These payment request types will be used during
-automatic payment request creation.
+4. On the **Payment requests fast tab**, specify payment request types for **Indebtedness to vendor**, **Vendor prepayment**, **Indebtedness to customer**, **Indebtedness to worker**. These payment request types will be used during automatic payment request creation.
 
-On the **Payments** fast tab, specify the vendor payment journal and customer
-payment journal that are used to post payments that are generated by the payment
-register.
+5. On the **Payments** fast tab, specify the vendor payment journal and customer payment journal that are used to post payments that are generated by the payment register.
 
-On the **Payment request re-approval** fast tab, in the **Amount to pay change**
-field, specify the system behavior if the amount to pay for a payment request is
-changed. You can specify that the system should always initialize a payment
-request re-approval through workflow, that the system should initialize a
-payment request re-approval only if the amount to pay has increased, or that
-re-approval is never required.
+6. On the **Payment request re-approval** fast tab, in the **Amount to pay change** field, specify the system behavior if the amount to pay for a payment request is changed. You can specify that the system should always initialize a payment request re-approval through workflow, that the system should initialize a payment request re-approval only if the amount to pay has increased, or that re-approval is never required.
 
 ![A screenshot of a cell phone Description automatically generated](media/59f7a1c755b04b0bc8f1c3788ea8413d.jpg)
 
