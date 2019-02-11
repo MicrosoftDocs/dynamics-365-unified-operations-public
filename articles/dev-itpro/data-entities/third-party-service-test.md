@@ -5,7 +5,7 @@ title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
