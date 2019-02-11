@@ -68,8 +68,14 @@ Resume will only happen once. This means that if the main thread unexpectedly st
 ## Intrastat format changes for Belgium
 This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from the LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
-## Indian-specific features
-This release includes functionality that hide old tax engine fields and button in every taxable transactions like Purchase Order, Sales Order etc. when [GTE](../../financials/general-ledger/tax-engine.md) is activated for the legal entity. These fields are Sales tax group, Item sales tax group, and Sales tax button. Since current standard GST configuration does not include VAT, if your business needs to handle VAT, you need to extend the configuration by referencing [Extending tax engine configurations](../../financials/general-ledger/extend-tax-engine-configurations.md).
+## India-specific features
+In this release, if [GTE](../../financials/general-ledger/tax-engine.md) is enabled for a legal entity, some global fields and buttons will be hidden from the user interface. This simplifies the user interface for users by hiding fields and buttons on taxable documents like Purchase orders and Sales order that don't apply when GTE is used. The following fields or buttons will be hidden if GTE is enabled.
+
+ - Sales tax group
+ - Item sales tax group
+ - Sales tax button
+ 
+The current standard GST configuration does not include VAT, so if your business needs to handle VAT, you must extend the configuration to use VAT. For more information, see [Extending tax engine configurations](../../financials/general-ledger/extend-tax-engine-configurations.md).
 
 ## Russian-specific features
 This release includes the following features specific for Russia:
