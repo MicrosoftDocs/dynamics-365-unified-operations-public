@@ -5,7 +5,7 @@ title: Create, approve, and post jobs in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -82,27 +82,25 @@ After a job is activated, it can be posted. Only recruiters and admins can post 
 
 The Attract team is continually working to partner with job board aggregators. This list will expand over time.
 
-For more information about job postings, see [Career site functionality in Attract](./career-site.md).
+For more information about job postings, see [Career site functionality in Attract](career-site.md).
 
 > [!NOTE]
 > The job posting functionality is available only with the Comprehensive Hiring Add-on for Attract.
 
 ### Posting jobs to LinkedIn 
 
-Before posting a job from Attract to LinkedIn, the administrator must add
-LinkedIn Company ID and LinkedIn Company name in the Admin Settings. The
+Before posting a job from Attract to LinkedIn, the administrator must add the
+LinkedIn Company ID and LinkedIn Company name in the **Admin Settings**. The
 LinkedIn Company ID is required to ensure your jobs posted from Attract are
-mapped to the correct Company page.
+mapped to the correct company page.
 
 Your LinkedIn Company ID is a string of numbers that uniquely identifies your
 company within LinkedIn. This string is around 6 - 9 characters long. For more
-information on how to find your LinkedIn company ID, please visit this site
-[LinkedIn site](https://aka.ms/findID)
+information on how to find your LinkedIn company ID, please visit the
+[LinkedIn site](https://aka.ms/findID).
 
-To update LinkedIn company, select **Admin center** on the **Settings** menu
-(the gear symbol), and then select the **LinkedIn Integration** tab. In this
-tab, under **Connect to LinkedIn** section, enter your LinkedIn Company Name,
-Company ID, and save the settings.
+To update your LinkedIn company, select **Admin center** on the **Settings** menu
+(the gear symbol), and then select the **LinkedIn Integration** tab. Under the **Connect to LinkedIn** section, enter your LinkedIn Company Name and Company ID, and then save the settings.
 
 > [!NOTE]
 > There are three important things to note about job posting process to LinkedIn.
