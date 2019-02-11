@@ -50,7 +50,7 @@ To set the values for the below items, sign in to Attract as an administrator,
 select **Admin center** on the **Settings** menu (the gear symbol), and then
 select the **Career site management** tab.
 
--   **Search Engine Optimization:** While enabled, all public jobs posted to
+-   **Search Engine Optimization** - While enabled, all public jobs posted to
     Attract career site will be searchable via popular search engines like Bing
     and Google.
 
