@@ -83,8 +83,8 @@ Functionality has been added to enhance the loyalty features in Dynamics 365 for
 
 For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md).
 
-## Non GST transaction for India 
-This feature allows you to create non GST transaction with GTE. In order to create non GST transaction, you need to mark the check box *Non-GST* in the *Tax information* of each taxable transaction line, and you need to make sure there is *Number sequence code* for *Bill of supply* in the *Reference number sequence group*. Such transaction will be marked as non GST transaction in GSTR. 
+## Non-GST transaction for India 
+This feature allows you to create non-GST transaction with the Tax engine. In order to create a non-GST transaction, you need to mark the check box **Non-GST** in the **Tax information** of each taxable transaction line, and you need to make sure there is **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
 
 ## Fiscal printer integration sample for Poland
 Microsoft Dynamics 365 for Retail now contains a sample of the integration of POS with fiscal printers for Poland. The sample is a part of the Retail SDK. Implementation partners may extend the integration functionality to cover all required retail scenarios or build integration with other fiscal printer models based on the samples.
