@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/05/2019
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,6 +82,9 @@ For more information, see [Return items across multiple customer orders and invo
 Functionality has been added to enhance the loyalty features in Dynamics 365 for Retail.
 
 For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md).
+
+## Non-GST transaction for India 
+This feature allows you to create non-GST transaction with the Tax engine. To create a non-GST transaction, you need to select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
 
 ## Fiscal printer integration sample for Poland
 Microsoft Dynamics 365 for Retail now contains a sample of the integration of POS with fiscal printers for Poland. The sample is a part of the Retail SDK. Implementation partners may extend the integration functionality to cover all required retail scenarios or build integration with other fiscal printer models based on the samples.
