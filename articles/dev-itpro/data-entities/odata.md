@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 12/10/2017
+ms.date: 02/11/2019
 
 ms.topic: article
 ms.prod: 
