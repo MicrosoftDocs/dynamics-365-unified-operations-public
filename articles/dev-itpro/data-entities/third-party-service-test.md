@@ -5,7 +5,7 @@ title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -66,7 +66,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
     | client\_id     | The Azure AD application ID that you registered during the setup of prerequisites                   |
     | client\_secret | The secret key that you generated during application registration during the setup of prerequisites |
     | grant\_type    | client\_credentials                                                                                 |
-    | resource       | The base URL of the Finance and Operations instance                                                 |
+    | resource       | The base URL of the Finance and Operations instance without the trailing '/'                                                 |
 
 5. To verify that the key-value pairs can be parsed correctly, select **Key-Value Edit**, and review the results.
 6. Close the environment page.
@@ -151,7 +151,7 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
     | grant\_type    | client\_credentials                                             |
     | client\_id     | The application ID from the Azure AD application registration   |
     | client\_secret | The secret key value from the Azure AD application registration |
-    | resource       | The URL of the Finance and Operations instance                  |
+    | resource       | The URL of the Finance and Operations instance without the trailing '/'                 |
 
 9. To make sure that the parameters are in the POST body, select **Post QueryString**, and then select **Play**. An access token should be returned in the response pane. The values will be most readable if you use the **JSON response** tab. Copy the access token so that you can use it in the authorization header of subsequent requests.
 10. Go back to the first request node under the **GetUserSessionInfo** SOAP sample request. In the request pane on the left, select the plus sign (**+**) button to add a header that is named **Authorization**. Paste the access token into the **Value** field, and add the prefix **Bearer**.
