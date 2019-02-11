@@ -52,7 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 ### Deprecated APIs
 <Brief description of the APIs we're deprecating.>
 
-To see a complete list of the APIs that are being deprecated, see [Deprecated APIs](deprecation-deletion-apis.md).
+To access the list of APIs that are being deprecated, see [Deprecated APIs](deprecation-deletion-apis.md).
 
 |   |  |
 |------------|--------------------|
