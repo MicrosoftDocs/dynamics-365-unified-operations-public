@@ -355,7 +355,7 @@ This step should be completed for a Treasury company.
 
 17. If all data are filled in and workflow approval can start, on the **Action Pane**, on the **Payment request** tab, in the **Generate** group, click **Confirmation**
 
-18. Click **Workflow \> Submit** button
+18. Click **Workflow > Submit** button
 
 ![Workflow submit button](media/rus-workflow-submit.jpg)
 
@@ -374,7 +374,7 @@ The status of a payment request is updated automatically. The following table de
 
 You can cancel a payment request only if the status of a payment request is **Opened**, **Confirmed**, or **Scheduled**.
 
-1. Go to **Cash and bank management** \> **Cash flow management** \> **All payment requests**.
+1. Go to **Cash and bank management > Cash flow management > All payment requests**.
 2. Select a payment request.
 3. On the **Action Pane**, on the **Payment request** tab, in the **Maintain** group, click **Cancel**.
 4. Click **OK**.
@@ -385,7 +385,7 @@ You can put a payment request on hold only if the status of a payment request is
 
 A payment request that is on hold will be not be included in payment schedule journals.
 
-1. Go to **Cash and bank management** \> **Cash flow management** \> **All payment requests**.
+1. Go to **Cash and bank management > Cash flow management > All payment requests**.
 2. Select a payment request.
 3. On the **Action Pane**, on the **Payment request** tab, in the **Maintain** group, click **On hold**.
 4. Set the **On hold** option to be **Yes**, and specify a reason code.
@@ -396,14 +396,7 @@ To remove the hold from a payment request, on the **Action Pane**, on the **Paym
 
 
 ### Split a payment request
-
-1. Go to **Cash and bank management** \> **Cash flow management** \> **All payment requests**.
-2. Select a payment request.
-3. On the **Action Pane**, on the **Payment request** tab, in the **Generate** group, click **Split request**.
-4. Specify the amount to pay and the payment date for the new payment request.
-5. Click **OK**.
-
-This operation is available only if the following conditions are met:
+You can split a payment request only if the following conditions are met:
 
 - The status of the payment request is **Confirmed** or **Scheduled**.
 - The payment request is not included in an unposted payment schedule journal.
@@ -411,9 +404,16 @@ This operation is available only if the following conditions are met:
 
 The system will create a new payment request by copying all the main requisites from the original payment request. The amount and amount to pay of the original payment request will be reduced. The status of the new payment request will be **Confirmed** if the status of the original payment is **Scheduled** but the new payment request is out of range for the associated payment schedule journal.
 
+1. Go to **Cash and bank management > Cash flow management > All payment requests**.
+2. Select a payment request.
+3. On the **Action Pane**, on the **Payment request** tab, in the **Generate** group, click **Split request**.
+4. Specify the amount to pay and the payment date for the new payment request.
+5. Click **OK**.
+
+
 ### Copy a payment request
 
-1. Go to **Cash and bank management** \> **Cash flow management** \> **All payment requests**.
+1. Go to **Cash and bank management > Cash flow management > All payment requests**.
 2. Select a payment request.
 3. On the **Action Pane**, on the **Payment request** tab, in the **New** group, click **Copy**.
 4. Specify the due date for the new payment request.
@@ -425,153 +425,77 @@ The system will create a new payment request by copying all the main requisites 
 
 ### Create a payment request for a vendor invoice
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. Go to **Accounts payable > Purchase orders > All purchase orders**.
 2. Create a new purchase order, and specify the terms of payments, payment schedules, method of payment, cash discount, and financial dimensions on the purchase order header.
 3. Create purchase order lines, and specify the sales tax group, item sales tax group, and financial dimensions. Distribute the amount of a line.
 4. Generate and post an invoice.
 5. On the **Action Pane**, on the **Purchase** tab, in the **Generate** group, click **Payment requests**.
 6. On the **Action Pane**, on the **Purchase** tab, in the **Journals** group, click **Payment requests**.
-
-Review the payment requests that have been created.
-
-![A screenshot of a social media post Description automatically generated](media/1821f350b0f60c9d603066dd3ec0541e.jpg)
-
-In the **Vendors** page, on the **Vendor** tab, in the **Transactions** group,
-click **Transactions**.
-
-Select the vendor transaction.
-
-Click **Inquiry** \> **Payment requests**.
-
-Review the associated payment requests.
-
-On the **General** tab, in the **Related information** group, click **Request
+7. Review the payment requests that have been created.
+8. On the **Vendors** page, click **Transactions**.
+9. Select the vendor transaction.
+10. Click **Inquiry > Payment requests**.
+11. Review the associated payment requests.
+12. On the **General** tab, in the **Related information** group, click **Request
 origin**.
+13. Verify the vendor transaction that is a source for the payment request.
 
-Verify the vendor transaction that is a source for the payment request.
+![Vendor transactions](media/rus-vendor-transactions.jpg)
 
-![A screenshot of a social media post Description automatically generated](media/e828196d99b2a94d8d4297d449365214.jpg)
+Payment requisites (method of payment, due date, vendor bank account, and so on) on an open vendor transaction cannot be changed if a payment request exists for it. Instead, you should modify payment requisites in the payment request. The payment requisites will then be synchronized in the open vendor transaction automatically.
 
-Payment requisites (method of payment, due date, vendor bank account, and so on)
-on an open vendor transaction cannot be changed if a payment request exists for
-it. Instead, you should modify payment requisites in the payment request. The
-payment requisites will then be synchronized in the open vendor transaction
-automatically.
+### Create a payment request for a prepayment to a vendor
 
-Create a payment request for a prepayment to a vendor
------------------------------------------------------
+1. Click **Accounts payable > Purchase orders > All purchase orders**.
+2. Create a new purchase order, and specify the terms of payments, payment schedules, method of payment, cash discount, and financial dimensions on the purchase order header.
 
-Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+    > [!NOTE]
+    >   One or more payment schedules lines should be marked as prepayments.
 
-Create a new purchase order, and specify the terms of payments, payment
-schedules, method of payment, cash discount, and financial dimensions on the
-purchase order header.
+3. Create purchase order lines, and specify the sales tax group, item sales tax group, and financial dimensions. Distribute the amount of a line.
+4. Confirm the purchase order.
+5. Calculate planned payments by using the periodic operation; or, on the purchase order, on the **Action Pane**, on the **Invoice** tab, in the **Bill** group, click **Planned payments**. Close the page.
+6. On the **Action Pane**, on the **Purchase** tab, in the **Generate** group, click **Payment requests**.
+7. On the **Action Pane**, on the **Purchase** tab, in the **Journals** group, click **Payment requests**.
+8. Review the payment requests that have been created.
+9. On the **Payment request** page, on the **Action Pane**, on the **General** tab, in the **Related information** group, click **Request origin**.
+10. Verify that the purchase order is a source for the payment request.
 
->   One or more payment schedules lines should be marked as prepayments.
+### Create a payment request for a customer invoice return
 
-Create purchase order lines, and specify the sales tax group, item sales tax
-group, and financial dimensions. Distribute the amount of a line.
+1. Click **Accounts receivable > Orders > All sales orders**.
+2. Create a new return sales order, and specify the terms of payments, method of payment, and financial dimensions on the sales order header.
+3. Create sales order lines, and specify the sales tax group, item sales tax group, and financial dimensions.
+4. Generate and post an invoice.
+5. On the **Action Pane**, on the **Sell** tab, in the **Generate** group, click **Payment requests**.
+6. Click **Close**.
+7. On the **Action Pane**, on the **Sell** tab, in the **Journals** group, click **Payment requests**.
+8. Review the payment requests that have been created.
+9. In the **Customers** form, click the **General** FastTab.
+10. On the **Action Pane**, on the **Customer** tab, in the **Transactions** group, click **Transactions**.
+11. Select the last customer transaction.
+12. Click **Inquiry** \> **Payment requests**.
+13. Review the associated payment requests.
+14. On the **Payment request** page, on the **Action Pane**, on the **General** tab, in the **Related information** group, click **Request origin**.
+15. Verify that the customer transaction is a source for the payment request.
+    > [!NOTE]
+    >   Payment requisites (method of payment, due date, customer bank account, and so on) on an open customer transaction cannot be changed if a payment request exists for it. Instead, you should modify payment requisites in the payment request. The payment requisites will then be synchronized in the open customer transaction automatically.
 
-Confirm the purchase order.
-
-Calculate planned payments by using the periodic operation; or, on the purchase
-order, on the **Action Pane**, on the **Invoice** tab, in the **Bill** group,
-click **Planned payments**. Close the page.
-
-On the **Action Pane**, on the **Purchase** tab, in the **Generate** group,
-click **Payment requests**.
-
-On the **Action Pane**, on the **Purchase** tab, in the **Journals** group,
-click **Payment requests**.
-
-Review the payment requests that have been created.
-
-In the **Payment request** form, on the **Action Pane**, on the **General** tab,
-in the **Related information** group, click **Request origin**.
-
-Verify that the purchase order is a source for the payment request.
-
-Create a payment request for a customer invoice return
-------------------------------------------------------
-
-Click **Accounts receivable** \> **Orders** \> **All sales orders**.
-
-Create a new return sales order, and specify the terms of payments, method of
-payment, and financial dimensions on the sales order header.
-
-Create sales order lines, and specify the sales tax group, item sales tax group,
-and financial dimensions.
-
-Generate and post an invoice.
-
-On the **Action Pane**, on the **Sell** tab, in the **Generate** group, click
-**Payment requests**.
-
-Click **Close**.
-
-On the **Action Pane**, on the **Sell** tab, in the **Journals** group, click
-**Payment requests**.
-
-Review the payment requests that have been created.
-
-In the **Customers** form, click the **General** FastTab.
-
-On the **Action Pane**, on the **Customer** tab, in the **Transactions** group,
-click **Transactions**.
-
-Select the last customer transaction.
-
-Click **Inquiry** \> **Payment requests**.
-
-Review the associated payment requests.
-
-In the **Payment request** form, on the **Action Pane**, on the **General** tab,
-in the **Related information** group, click **Request origin**.
-
-Verify that the customer transaction is a source for the payment request.
-
->   Payment requisites (method of payment, due date, customer bank account, and
->   so on) on an open customer transaction cannot be changed if a payment
->   request exists for it. Instead, you should modify payment requisites in the
->   payment request. The payment requisites will then be synchronized in the
->   open customer transaction automatically.
-
-Click **Accounts receivable** \> **Common** \> **Free text invoices** \> **All
-free text invoices**.
-
-Create a new return free text invoice, and specify the terms of payments, method
-of payment, and financial dimensions on free text invoice header.
-
-Create free text invoice lines, and specify the sales tax group, item sales tax
-group, and financial dimensions.
-
-Generate and post an invoice.
-
-On the **Action Pane**, on the **Invoice** tab, in the **Details** group, click
-**Payment requests**.
-
-Click **Close**.
-
-On the **Action Pane**, on the **Invoice** tab, in the **Related information**
-group, click **Payment requests**.
-
-Review the payment requests that have been created.
-
-In the **Customers** form, click the **General** FastTab.
-
-On the **Action Pane**, on the **Customer** tab, in the **Transactions** group,
-click **Transactions**.
-
-Select the last customer transaction.
-
-Click **Inquiry** \> **Payment requests**.
-
-Review the associated payment requests.
-
-In the **Payment request** form, on the **Action Pane**, on the **General** tab,
-in the **Related information** group, click **Request origin**.
-
-Verify that the customer transaction is a source for the payment request.
+16. Go to **Accounts receivable > Common > Free text invoices* > All free text invoices**.
+17. Create a new return free text invoice, and specify the terms of payments, method of payment, and financial dimensions on free text invoice header.
+18. Create free text invoice lines, and specify the sales tax group, item sales tax group, and financial dimensions.
+19. Generate and post an invoice.
+20. On the **Action Pane**, on the **Invoice** tab, in the **Details** group, click **Payment requests**.
+21. Click **Close**.
+22. On the **Action Pane**, on the **Invoice** tab, in the **Related information** group, click **Payment requests**.
+23. Review the payment requests that have been created.
+24. On the **Customers** page, click the **General** FastTab.
+25. On the **Action Pane**, on the **Customer** tab, in the **Transactions** group, click **Transactions**.
+26. Select the last customer transaction.
+27. Click **Inquiry > Payment requests**.
+28. Review the associated payment requests.
+29. In the **Payment request** form, on the **Action Pane**, on the **General** tab, in the **Related information** group, click **Request origin**.
+30. Verify that the customer transaction is a source for the payment request.
 
 Periodic creation of payment requests
 -------------------------------------
