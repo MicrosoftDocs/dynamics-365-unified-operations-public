@@ -71,9 +71,6 @@ A financial report can be displayed in any currency at any time. To display a re
 ## Display a summarized view of the financial report
 A financial report can contain detail lines and summary lines. Detail lines are lines that contain main accounts or dimensions. Summary lines are description, total, and calculation lines. To display just the summary lines of a report, click **Show**, and then click **Summary lines only**. The report is collapsed and displays only the summary lines. To view the detail lines together with the summary lines, click **Show**, and then click **Summary lines only** again.
 
-## Open a financial report from a previous month
-You can view reports for the current month or previous months without regenerating the report. To open the report for a previous month, click **Show**, and then click **Previous reports**. A list of the previous months that the report has been generated for appears. Expand the month to view the report for, select the date, and then click **OK**. The report for the previous month is displayed. To return to the current month’s report, click **Cancel**.
-
 ## Print a financial report
 To print a financial report, on the Action Pane, click **Print**, and then follow one or more of these steps to set the print options:
 
@@ -90,7 +87,7 @@ To export a financial report, on the Action Pane, click **Export**. The report i
 Additional resources
 --------
 
-[Financial reporting for Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Financial reporting](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 
