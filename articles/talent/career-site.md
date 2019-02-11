@@ -26,7 +26,7 @@ By default, the career site is public. Therefore, candidates can view all jobs
 that are marked as external without having to sign in. However, all other
 actions require that candidates sign in.
 
-Career site managements
+Career site management
 -----------------------
 
 To set the values for the following items, sign in to Attract as an administrator,
@@ -45,7 +45,18 @@ select the **Company information** tab.
     >   height of 20 pixels (px). The image that you add in the Admin center is
     >   scaled to fit. Therefore, depending on the image, the width might
     >   change.
+ 
+To set the values for the below items, sign in to Attract as an administrator,
+select **Admin center** on the **Settings** menu (the gear symbol), and then
+select the **Career site management** tab.
 
+-   **Search Engine Optimization:** While enabled, all public jobs posted to
+    Attract career site will be searchable via popular search engines like Bing
+    and Google.
+
+    >   [!NOTE] You may see some delay between turning this setting on and search
+    >   results lighting up, depending on the search engine you are using.
+         
 Career site URLs
 ----------------
 
