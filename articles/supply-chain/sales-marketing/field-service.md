@@ -51,7 +51,7 @@ The first phase of the integration between Field Service and Finance and Operati
 
 To see an example of how you can synchronize a work order between Field Service and Finance and Operations, watch the short YouTube video [How to synchronize a work order with Microsoft Dynamics 365 Integration](https://www.youtube.com/watch?v=46ylO7raZAo).
 
-# Integration with Microsoft Dynamics 365 for Field Service, including inventory and project information
+## Integration with Microsoft Dynamics 365 for Field Service, including inventory and project information
 
 The additional functionality in this second phase focused on giving field technicians insight about the inventory information from Finance and Operations, allowing them to update inventory levels and do material transfers. In addition, companies installing or servicing sold goods will benefit from better control and visibility to the full sales and service process with integration from projects.
 
@@ -74,14 +74,14 @@ The additional functionality in this second phase focused on giving field techni
 - Work Orders with Project (Field Service to Fin and Ops) - Work orders in Field Service to Sales orders  in Finance and Operations, with support for Project [Advanced Query] 
 - Field Service Products with Inventory unit (Fin and Ops to Sales) - Finance and Operations 'Sellable released products' to Sales 'Products' for Field Service, including Inventory unit 
 
-# System requirements
+## System requirements
 
-## System requirements for Finance and Operations
+### System requirements for Finance and Operations
 Field Service integration supports the following versions:
 
 - Dynamics 365 for Finance and Operations version 8.1.2 (December 2019) was released in December 2019 and has an application build number 8.1.195 with Platform Update 22 (7.0.5095). 
 
-## System requirements for Field Service
+### System requirements for Field Service
 To use the Field Service integration solution, you must install the following components:
 
 - Field Service for Dynamics 365 (version 8.2.0.286) or a later version on Dynamics 365 9.1.x - Released November 2018

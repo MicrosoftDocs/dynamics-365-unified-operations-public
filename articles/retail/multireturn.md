@@ -5,7 +5,7 @@ title: Return items across multiple customer orders and invoices
 description: This topic describes the functionality enabling returns across multiple customer orders and invoices in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 1/08/2019
+ms.date: 01/08/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
