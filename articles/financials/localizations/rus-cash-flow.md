@@ -301,14 +301,15 @@ This step should be completed for a Treasury company.
 
 1. Go to **Cash and bank management > Periodic tasks > Cash flow management > Calculate planned payments**.
 2. Specify the following parameters:
-3. In the **From date** field, specify the start of the date range for the planned payment sources.
-4. In the **To date** field, specify the end of the date range for the planned payment sources.
-5. Select a planned payment source.
-6. Select legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy.
-7. Select the **Recalculate all** check box if all planned payments should be recalculated. If you do not select this check box, only new planned payment will be created.
 
-![A screenshot of a cell phone Description automatically generated](media/46ffba99d902fad6003c133da3badb3e.jpg)
-
+  |Field | Description|
+  |--------|--------------|
+  |**From date** |Specify the start of the date range for the planned payment sources. |
+  |**To date** | Specify the end of the date range for the planned payment sources.|
+  | **Planned payment source** | Select a planned payment source.|
+  |**Legal entities** |Select legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy.|
+  |**Recalculate all** | Select this option if all planned payments should be recalculated. If you do not select this option, only new planned payment will be created.|
+  
 ## Payment request processing
 
 ### Create a manual payment request
@@ -601,56 +602,34 @@ The following table lists the possible sources.
 
 13. On the **Cash balance control** FastTab, click **Add line** and then specify the **Currency** and **Minimum cash balance**. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
-Payment plan processing
------------------------
+### Payment plan processing
 
-Click **Cash and bank management** \> **Cash flow management** \> **Payment
-schedule journal**.
+1. Click **Cash and bank management** \> **Cash flow management** \> **Payment schedule journal**.
+2. In the **Name** field, select a payment schedule journal of the **Payment plan** type.
 
-In the **Name** field, select a payment schedule journal of the **Payment plan**
-type.
+    ![Playment plan](media/rus-payment-plan.jpg)
 
-![](media/d8ba3e0c8e492088c871c8978a42b24c.jpg)
-**[Anastasia] Please add screenshot here**
+3. Use the **From date** and **To date** fields to specify an effective date range.
 
-Use the **From date** and **To date** fields to specify an effective date range.
+4. Change the payment schedule journal attributes on the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, if you need to.
 
-Change the payment schedule journal attributes on the **General**,
-**Dimensions**, **Legal entities**, **Journal data sources**, **Payment
-accounts**, and **Cash balance control** tabs, if you need to.
+5. Click **Calculate**.
+6. Click **Lines** to validate the payment schedule journal lines.
 
-Click **Calculate**.
+7. Click **Edit beginning balance** to change the beginning balance of this journal.
+8. For lines that have **Payment request** as the data source, click **Payment request lines** button to review the payment request lines that are included on the current journal line.
+9. **Close** the page.
+10. In the **Payment schedule journal**, click **Payment schedule** to review the payment schedule sheet. If a cash shortage or surplus is detected and should be prevented, you can make changes.
 
-Click **Lines** to validate the payment schedule journal lines.
+  ![Payment schedule sheet](media/rus-payment-schedule-sheet.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/5faff99f085d408170e8ebf6737af301.jpg)
+11. Select the **Show totals per payment accounts** check box if the payment schedule sheet should be calculated based on payment accounts.
 
-Click **Edit beginning balance** to change the beginning balance of this
-journal.
+12. Select the **Show totals per method of payments** check box if the payment schedule sheet should be calculated based on methods of payments.
 
-For lines that have **Payment request** as the data source, click **Payment
-request lines** button to review the payment request lines that are included on
-the current journal line.
+13. Click the **\<** button to select an aggregation parameter for the payment schedule sheet.
 
-**Close** the page
-
-In the **Payment schedule journal**, click **Payment schedule** to review the
-payment schedule sheet. If a cash shortage or surplus is detected and should be
-prevented, you can make changes.
-
-![A screenshot of a social media post Description automatically generated](media/a9d72ede452af4897feacf3d9e1d7101.jpg)
-**[Anastasia] Please add screenshot here**
-
-Select the **Show totals per payment accounts** check box if the payment
-schedule sheet should be calculated based on payment accounts.
-
-Select the **Show totals per method of payments** check box if the payment
-schedule sheet should be calculated based on methods of payments.
-
-Click the **\<** button to select an aggregation parameter for the payment
-schedule sheet.
-
-Click **Show results**.
+14. Click **Show results**.
 
 ![A screenshot of a social media post Description automatically generated](media/7d37da18e4fae7ed0464e72852a0b614.jpg)
 **[Anastasia] Please add screenshot here**
