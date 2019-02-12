@@ -146,7 +146,7 @@ You can configure the language text and custom fields that are used in the POS r
 
 On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the Language ID, Text ID, and Text values that are shown in the table are just examples. You can change them to meet to your requirements. However, the Text ID values that you use must be unique, and they must be equal to or higher than 900001.
 
-Add the following POS labels to the **POS** section of **Language text** from:
+Add the following POS labels to the **POS** section of **Language text** from the table:
 
 | Language ID | Text Id | Text                      |
 |-------------|---------|---------------------------|
@@ -158,6 +158,8 @@ Add the following POS labels to the **POS** section of **Language text** from:
 | en-US       | 103179  | Total Include Tax (sales) |
 | en-US       | 103180  | Tax Amount (sales)        |
 | en-US       | 103181  | Tax Basis (sales)         |
+
+Note: data records of **Language text** should be added to current company and DAT company.
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
