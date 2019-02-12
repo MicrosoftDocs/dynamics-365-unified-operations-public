@@ -39,14 +39,8 @@ Microsoft Dynamics 365 for Finance and Operations lets you perform the following
 - Automatically generate transactions for the unrealized exchange rate difference that is caused when the exchange rates on the currency transaction dates differ.
 - Print a currency transfer order.
 
-<!-- give here links to places in this document -->
 
-- Set up the sale and purchase of currency
-- Currency sales
-- Currency purchases
-- Currency transfers
-
-## Set up the sale and purchase of currency
+## Set up the sale, purchase and transfer of currency
 
 Here is an overview of the tasks that you must complete to set up the system to calculate the exchange adjustment and the profit/loss on the **Remittance en route** account:
 
@@ -107,7 +101,7 @@ Use the **Bank accounts** page to set up specific information for the sale or pu
 2. Create a bank account, or select an existing bank account.
 3. On the **Payment management** FastTab, in the **Order template (currency sale)** and **Order template (currency purchase)** fields, select the Microsoft Word template.
 
-For more information, see [Title of topic](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-local-settings-req-bank-mod/articles/financials/localizations/rus-local-settings-requisites-bank-module.md).
+For more information, see [Set up Bank accounts (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-local-settings-requisites-bank-module).
 
 ### Set up a number sequence
 
@@ -124,7 +118,7 @@ Use the **Cash and bank management parameters** page to assign a number sequence
 2. Create a payment journal.
 3. Select **Lines**, and create a journal line.
 4. On the **List** tab, in the **Account** field, select the vendor account that is associated with the bank account that is used for currency conversion transactions.
-5. In the **Debit** field, enter the transaction amount in the currency that is ordered to be sold.
+5. In the **Debit** field, enter the transaction amount in the currency that must be sold.
 6. In the **Currency** field, enter the code for the currency that is ordered to be sold.
 7. In the **Offset account type** field, select **Bank**.
 8. In the **Offset account** field, select the bank account.
@@ -145,15 +139,16 @@ Use the **Cash and bank management parameters** page to assign a number sequence
     | Bank exchange rate | Identify the currency exchange rate for the currency conversion. This information will be printed on the currency sale order. |
     | Supplier account   | Select information about the contract in currency that is the basis for the currency sale transaction. |
     | Purchase agreement | Select information about the contract in currency that is the basis for the currency sale transaction. |
-    | Print Document     | Enable the parameter to print a currency sale order when payments are generated. |
+    | Print Document     | Set the option to "Yes" to print a currency sale order when payments are generated. |
 
     <!-- add here screenshot Bank currency transfer -->
+ 
 
 17. Select **OK**.
 
     On the payment journal line, the value of the **Payment status** field is updated to **Sent**.
 
-    On the **Payment** tab, the **Transit account**, **Foreign counteragent**, **Contracts group**, and **Contract of the deal** fields are updated.
+    On the **Payment** tab, the fields **Transit account**, **Foreign counteragent**, **Contracts group**, and **Contract of the deal** are updated.
 
 18. Select **Print \> Currency sale order** to print the currency sales order. The report contains the following information:
 19. Validate and post the journal.
@@ -260,7 +255,7 @@ You post the settlement of currency sale transactions to generate profit/loss tr
     | Bank exchange rate | Identify the currency exchange rate for the currency conversion. This information will be printed on the currency purchase order. |
     | Supplier account   | Select information about the contract in currency that is the basis for the currency purchase transaction. |
     | Purchase agreement | Select information about the contract in currency that is the basis for the currency purchase transaction. |
-    | Print Document     | Enable the parameter to print a currency purchase order when payments are generated. |
+    | Print Document     | Set the option to "Yes" to print a currency purchase order when payments are generated. |
 
 9. Select **OK**.
 
