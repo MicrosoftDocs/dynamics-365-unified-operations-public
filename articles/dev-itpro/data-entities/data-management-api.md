@@ -139,7 +139,7 @@ The **GetAzureWritableUrl** API is used to get a writable blob URL. The method i
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
 BODY
 {
-    "uniqueFileName":"<string>",
+    "uniqueFileName":"<string>"
 }
 ```
 
