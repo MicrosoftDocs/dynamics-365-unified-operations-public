@@ -87,16 +87,16 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Sandbox point-in-time restore request** – Select this request type to restore a *non-production* database to a specific point in time. For more information, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).
 
         > [!NOTE]
-        > If you must restore a *production* database to a previous point-in-time during the cutover phase, select the **Production point-in-time restore request** type. If you must restore a production database when you're already live in operations, submit a support ticket through LCS.
+        > If you need to restore a *production* database to a previous point-in-time during the cutover phase, select the **Production point-in-time restore request** type. If you need to restore a production database when you're already live in operations, submit a support ticket through LCS.
 
    - **Database refresh request** – Select this request type to refresh a database from a production environment to a sandbox environment, or from one sandbox environment to another. For more information, see [Request a sandbox database refresh](../database/database-refresh.md).  *This request type is being retired on January 31, 2019*.
 
         > [!NOTE]
-        > If you must refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Sandbox to Production** type.
+        > If you need to refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Sandbox to Production** type.
 
     - **Sandbox to Production** - Perform a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Submit a service request to copy database" section of [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
 
-   - **Other request** – You must use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
+   - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance Mode](../sysadmin/maintenance-mode.md).
       - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
