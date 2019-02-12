@@ -1203,27 +1203,26 @@
   items:
   - name: Overview
     href: database/dbmovement-operations.md
+  - name: Quick start guides
     items:
-    - name: Quick start guides
-      items:
-      - name: Refresh database
-        href: database/database-refresh.md
-      - name: Export database
-        href: database/export-database.md
-      - name: Import database
-        href: database/import-database.md
-      - name: Database point-in-time restore
-        href: database/database-point-in-time-restore.md
-    - name: Tutorials
-      items:
-      - name: General refresh for training purposes
-        href: database/dbmovement-scenario-general-refresh.md
-      - name: Debugging and diagnostics
-        href: database/dbmovement-scenario-debugdiag.md
-      - name: 'Golden configuration' promotion
-        href: database/dbmovement-scenario-goldenconfig.md
-      - name: Destructive testing
-        href: database/dbmovement-scenario-destructivetests.md
+    - name: Refresh database
+      href: database/database-refresh.md
+    - name: Export database
+      href: database/export-database.md
+    - name: Import database
+      href: database/import-database.md
+    - name: Database point-in-time restore
+      href: database/database-point-in-time-restore.md
+  - name: Tutorials
+    items:
+    - name: General refresh for training purposes
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: Debugging and diagnostics
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: 'Golden configuration' promotion
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: Destructive testing
+      href: database/dbmovement-scenario-destructivetests.md
 - name: Support
   items:
   - name: Get support for Finance and Operations and Lifecycle Services
