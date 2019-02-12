@@ -129,8 +129,7 @@ For more information about how to set up and use sales tax in Microsoft Dynamics
 
 ### EFR–specific settings
 
-Before starting to define EFR-specific settings please be aware that all steps from the document **
-Deployment guidelines for cash registers for Austria** were done.
+Before starting to define EFR-specific settings please be aware that all steps from the document **Deployment guidelines for cash registers for Austria** were done.
 
 1. Cofigure VAT rates mapping:
 The **VAT rates mapping** is included in the **Fiscal connector functional profile** provided as part of the fiscal integration sample:
