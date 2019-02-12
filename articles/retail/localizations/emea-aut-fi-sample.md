@@ -178,14 +178,14 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 In the **Receipt format designer**, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
-   **Header**: Add the following field:
-      Continuous Number – This field identifies the number of cash transaction in the fiscal registrator;
+   **Header**: 
+      Continuous Number. This field identifies the number of cash transaction in the fiscal registrator;
       
    **Lines**:
-      Tax Retail Print Code - This field dysplay the code corresponding to tax group;
+      Tax Retail Print Code. This field dysplays the code corresponding to the tax group;
       
-   **Footer**: Add the following field groups:
-      **Sales total**: 
+   **Footer**: 
+      Fileds group **Sales total**: 
       	Total (sales) - total transaction amount without tax sum;
 	Total Include Tax (sales) - total transaction amount with tax sum;
         Total Tax (sales) - transaction tax sum.	
