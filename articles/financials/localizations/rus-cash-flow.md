@@ -386,7 +386,7 @@ You can cancel a payment request only if the status of a payment request is **Op
 
 You can put a payment request on hold only if the status of a payment request is **Opened**, **Confirmed**, or **Scheduled**.
 
-A payment request that is on hold will be not be included in payment schedule journals.
+A payment request that is on hold will not be included in payment schedule journals.
 
 1. Go to **Cash and bank management > Cash flow management > All payment requests**.
 2. Select a payment request.
@@ -419,7 +419,7 @@ The system will create a new payment request by copying all the main requisites 
 1. Go to **Cash and bank management > Cash flow management > All payment requests**.
 2. Select a payment request.
 3. On the **Action Pane**, on the **Payment request** tab, in the **New** group, click **Copy**.
-4. Specify the due date for the new payment request.
+4. Specify the **Due date** for the new payment request.
 5. Click **OK**.
 6. Select a previously created payment request.
 7. On the **Action Pane**, on the **Payment request** tab, in the **New** group, click **Edit**.
@@ -445,7 +445,7 @@ origin**.
 
 ![Vendor transactions](media/rus-vendor-transactions.jpg)
 
-Payment requisites (method of payment, due date, vendor bank account, and so on) on an open vendor transaction cannot be changed if a payment request exists for it. Instead, you should modify payment requisites in the payment request. The payment requisites will then be synchronized in the open vendor transaction automatically.
+Payment requisites (**Method of payment**, **Due date**, **Vendor bank account**, and so on) on an open vendor transaction cannot be changed if a payment request exists for it. Instead, you should modify payment requisites in the payment request. The payment requisites will then be synchronized in the open vendor transaction automatically.
 
 ### Create a payment request for a prepayment to a vendor
 
@@ -672,14 +672,14 @@ specified.
 
 Click **Add line** to create a new record.
 
-Specify the payment account type and account number. The payment schedule
+Specify the **Payment account type** and **Account number**. The payment schedule
 journal will include only sources that are associated with the specified payment
 accounts.
 
 On the **Cash balance control** FastTab, click **Add line** to create a new
 record.
 
-Specify the currency and minimum cash balance. If the estimated balance amount
+Specify the **Currency** and **Minimum cash balance**. If the estimated balance amount
 of the cash account is less than the minimum cash balance that you specify, the
 payment schedule sheet will overwrite the estimated balance for that date.
 
@@ -695,6 +695,7 @@ In the **Name** field, select a payment schedule journal of the **Payment plan**
 type.
 
 ![](media/d8ba3e0c8e492088c871c8978a42b24c.jpg)
+**[Anastasia] Please add screenshot here**
 
 Use the **From date** and **To date** fields to specify an effective date range.
 
@@ -722,6 +723,7 @@ payment schedule sheet. If a cash shortage or surplus is detected and should be
 prevented, you can make changes.
 
 ![A screenshot of a social media post Description automatically generated](media/a9d72ede452af4897feacf3d9e1d7101.jpg)
+**[Anastasia] Please add screenshot here**
 
 Select the **Show totals per payment accounts** check box if the payment
 schedule sheet should be calculated based on payment accounts.
@@ -735,6 +737,7 @@ schedule sheet.
 Click **Show results**.
 
 ![A screenshot of a social media post Description automatically generated](media/7d37da18e4fae7ed0464e72852a0b614.jpg)
+**[Anastasia] Please add screenshot here**
 
 >   If the minimum cash balance for a currency or a payment account is exceeded,
 >   the payment schedule sheet highlights the **Estimated balance** amounts in
@@ -750,11 +753,13 @@ Click on the amount for a journal data source of **Payment request** and press
 **Change payment sources**
 
 ![A screenshot of a cell phone Description automatically generated](media/ba9d386723621376bba4902747beeb56.jpg)
+**[Anastasia] Please add screenshot here**
 
 Select payment sources that should be moved to another date, or that should be
 paid by using another method of payment, or payment account.
 
 ![A screenshot of a cell phone Description automatically generated](media/c9f27e4e56a0804cb163a4d098c19d83.jpg)
+**[Anastasia] Please add screenshot here**
 
 Click **Multiple change**, specify the new payment details in the **Modify
 payment attributes** form, and then click **OK**.
@@ -779,6 +784,7 @@ Click **Functions** \> **Delete journal lines** if changes in the journal setup
 are required, and calculate the journal.
 
 ![A screenshot of a social media post Description automatically generated](media/6f3e695e5a325f7dc60a7629c284591a.jpg)
+**[Anastasia] Please add screenshot here**
 
 Click **Validate** to verify the journal. The system will inform you if
 canceled, on-hold, or incomplete workflow payment requests are included in this
@@ -789,9 +795,10 @@ the **Action Pane**, click **Workflow \> Submit**.
 
 ![A screenshot of a cell phone Description automatically generated](media/71941090e6ec2e796adfd82a4c77d972.jpg)
 
-Approvers may see the following actions during approval flow:
+Approvers may see the following actions during approval flow: **Approve**, **Reject**, **Requestchange**, **Delegate**, **Recall**, **View history**
 
 ![A screenshot of a cell phone Description automatically generated](media/bcee671cf3cfe355875a7ebb13e3490e.jpg)
+**[Anastasia] Please add screenshot here**
 
 If the payment plan is approved, click **Confirm**. The status of the payment
 requests that are included changes to **Scheduled**.
@@ -855,6 +862,7 @@ payments**.
 Specify parameters for payment journal generation.
 
 ![A screenshot of a cell phone Description automatically generated](media/8480aaafc869761a88a35a7cde0d6375.jpg)
+**[Anastasia] Please add screenshot here**
 
 Click **OK**.
 
