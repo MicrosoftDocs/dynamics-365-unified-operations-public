@@ -141,8 +141,7 @@ Use the **Cash and bank management parameters** page to assign a number sequence
     | Purchase agreement | Select information about the contract in currency that is the basis for the currency sale transaction. |
     | Print Document     | Set the option to "Yes" to print a currency sale order when payments are generated. |
 
-    <!-- add here screenshot Bank currency transfer -->
- 
+
 
 17. Select **OK**.
 
