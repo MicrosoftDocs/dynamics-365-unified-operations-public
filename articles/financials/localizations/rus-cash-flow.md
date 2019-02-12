@@ -553,8 +553,7 @@ This step should be completed for a Treasury company.
 
 ## Payment schedule journal processing
 
-Set up a payment schedule journal
----------------------------------
+### Set up a payment schedule journal
 
 1. Click **Cash and bank management** \> **Setup** \> **Cash flow management** \> **Payment schedule journal names**.
 2. Click **New** to create a new record. Specify a name and description for the journal.
@@ -572,56 +571,35 @@ Set up a payment schedule journal
 
 4. Click the **Dimensions** FastTab. This section defines how the lines of the payment schedule journal will be aggregated. The analytic report of the payment schedule journal will also use these dimensions. Use the arrow buttons to move a dimension out of or into the **Selected dimensions** list.
 
-![](media/e320294d044dd4ac05ad26d1ca45d297.jpg)
+![Dimensions for payment schedule journals](media/rus-journal-names-dimensions.jpg)
 
->   Use the button to select an aggregation parameter.
+5. Click the **Legal entities** FastTab. This section defines the legal entities that are used for payment schedule journal generation. Use the button to select a legal entity.
+6. On the **Journal data sources** FastTab, click **Add line** to create a new record.
 
-5. Click the **Legal entities** FastTab. This section defines the legal entities
-that are used for payment schedule journal generation.
-
->   Use the button to select a legal entity.
-
-On the **Journal data sources** FastTab, click **Add line** to create a new
-record.
-
-Specify the data source and source direction for the payment schedule journal.
+7. Specify the data source and source direction for the payment schedule journal.
 The following table lists the possible sources.
 
-| Source type (direction)                | Description                                                                                     |
-|----------------------------------------|-------------------------------------------------------------------------------------------------|
-| Bank account balance                   | The current balance of bank accounts.                                                           |
-| Cash account balance                   | The current balance of cash accounts.                                                           |
+| Source type (direction)                | Description                                               |
+|----------------------------------------|-----------------------------------------------------------|
+| Bank account balance                   | The current balance of bank accounts.                     |
+| Cash account balance                   | The current balance of cash accounts.                     |
 | Remittance en route balance            | The current balance of general ledger (GL) accounts that are marked as **Remittance en route**. |
-| Open payment journals (inflow/outflow) | Payments that are included in open payment journals.                                            |
-| Open slip journals (inflow/outflow)    | Payments that are included in open cash slip journals.                                          |
-| Planned payment (inflow/outflow)       | Planned payments.                                                                               |
-| Payment request (inflow/outflow)       | Payment requests.                                                                               |
-| Accounts payable (inflow/outflow)      | Open vendor transactions without a link to a payment request.                                   |
-| Accounts receivable (inflow/outflow)   | Open customer transactions without a link to a payment request.                                 |
+| Open payment journals (inflow/outflow) | Payments that are included in open payment journals.      |
+| Open slip journals (inflow/outflow)    | Payments that are included in open cash slip journals.    |
+| Planned payment (inflow/outflow)       | Planned payments.                                         |
+| Payment request (inflow/outflow)       | Payment requests.                                         |
+| Accounts payable (inflow/outflow)      | Open vendor transactions without a link to a payment request.         |
+| Accounts receivable (inflow/outflow)   | Open customer transactions without a link to a payment request.       |
 
-Create lines that have the required journal data sources.
+9. Create lines that have the required journal data sources.
 
-On the **Payment accounts** FastTab, select the **Include transactions with no
-specified bank account** check box if the payment schedule journal should
-include planned payments and payment requests that do not have a payment account
-specified.
+10. On the **Payment accounts** FastTab, set the **Include transactions with no specified bank account** option to be **Yes** if the payment schedule journal should include planned payments and payment requests that do not have a payment account specified.
 
-![A screenshot of a cell phone Description automatically generated](media/402450ab359aec1fb5616f0f8c8bc15b.jpg)
+11. Click **Add line** to create a new record.
 
-Click **Add line** to create a new record.
+12. Specify the **Payment account type** and **Account number**. The payment schedule journal will include only sources that are associated with the specified payment accounts.
 
-Specify the **Payment account type** and **Account number**. The payment schedule
-journal will include only sources that are associated with the specified payment
-accounts.
-
-On the **Cash balance control** FastTab, click **Add line** to create a new
-record.
-
-Specify the **Currency** and **Minimum cash balance**. If the estimated balance amount
-of the cash account is less than the minimum cash balance that you specify, the
-payment schedule sheet will overwrite the estimated balance for that date.
-
-![A screenshot of a cell phone Description automatically generated](media/0f28b3c26c4fdb45576b101a3dbd82fe.jpg)
+13. On the **Cash balance control** FastTab, click **Add line** and then specify the **Currency** and **Minimum cash balance**. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
 Payment plan processing
 -----------------------
