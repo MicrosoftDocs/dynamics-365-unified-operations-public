@@ -134,14 +134,6 @@ Generate payments, based on an approved payment register (a type of payment sche
 
 5. Publish the new hierarchy.
 
-### Payment priority
-
-1. Go to **Cash and bank management > Setup > Cash flow management > Payment priority**.
-2. Click **New** to create a new record.
-3. On the **Manage priority** FastTab, use the **Up** and **Down** buttons to arrange the priority list.
-4. Click **Accounts payable > Vendors > All vendors**.
-5. On the **Vendors** page, select the vendor.
-6. Click **Edit**. Then, in the **Payment priority** field, specify a priority code for the associated party. This operation can also be completed in the **Party** and **Customer** forms.
 
 ###  Cash flow management workflow
 
@@ -154,13 +146,23 @@ Generate payments, based on an approved payment register (a type of payment sche
 
 5. Activate the new workflow.
 
+
+### Payment priority
+
+1. Go to **Cash and bank management > Setup > Cash flow management > Payment priority**.
+2. Click **New** to create a new record.
+3. On the **Manage priority** FastTab, use the **Up** and **Down** buttons to arrange the priority list.
+4. Click **Accounts payable > Vendors > All vendors**.
+5. On the **Vendors** page, select the vendor.
+6. Click **Edit**. Then, in the **Payment priority** field, specify a priority code for the associated party. This operation can also be completed in the **Party** and **Customer** forms.
+
 ### Payment request type
 
 1.  Go to **Cash and bank management > Setup > Cash flow management > Payment request type**.
     > [!NOTE]
     > The **Payment request type** page is available only if the **Payment request** license configuration key is enabled.
 2.  Click **New** to create a new record.
-3.  Specify the **Payment priority**. If a payment priority is not specified for a payment request type, the lowest payment priority will be used for payment requests of that type. The payment priority for a payment request will be a maximum between the payment priority of the party and the payment priority of the payment request type.
+3.  Specify the **Payment priority**: . If a payment priority is not specified for a payment request type, the lowest payment priority will be used for payment requests of that type. The payment priority for a payment request will be a maximum between the payment priority of the party and the payment priority of the payment request type.
 
 4.  Specify the cash flow direction: **Cash inflow** or **Cash outflow**.
 5.  Specify the workflow that is associated with payment request approval, if the approval procedure should be applied to payment requests of this type.
@@ -201,38 +203,39 @@ This setup is available only if the **Payment request** license configuration ke
 2. Create a new payment schedule and set the allocation method to **Specified**.
 3. On the **Payment lines** FastTab, create new payment lines. Select the **Prepayment** check box if a payment request on prepayment should be created for a line.
 
-### Select the remittance en route account
+### Set up the remittance en route account
 
 This setup should be completed for a Treasury company.
 
 1. Go to **Cash and bank management > Cash flow forecasting \> Cash flow forecast setup.**
-2. In the **General** area, on the **Liquidity accounts** FastTab, click **Add**..
-3. Select the **Remittance en route** check box.
+2. In the **General** area, on the **Liquidity accounts** FastTab, click **Add**.
+3. Select the Ledger account in the field **Main account**
+4. Select the **Remittance en route** check box.
 
-### Bank accounts
+### Set up minimum cash balance for bank accounts
 
 This setup should be completed for a Treasury company.
 
 1. Go to **Cash and bank management > Bank accounts > Bank accounts**.
 2. Select a bank account and click **Edit**.
-3. Specify the minimum cash balance. If the estimated balance amount of the bank account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
+3. Specify the **Minimum cash balance**. If the estimated balance amount of the bank account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
-### Cash accounts
+### Set up minimum cash balance for cash accounts
 
 This setup should be completed for a Treasury company.
 
 1. Go to **Cash and bank management > Bank accounts > Cash accounts**.
 2. Select the record and click **Edit**.
-3. Specify the minimum cash balance. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
+3. Specify the **Minimum cash balance**. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
 
-### Payment order requirements
+### Set up default Payment order requisites for purchase agreement.
 The same setup is valid for payment order requisites on sales agreements.
 
 1. Click **Accounts payable > Purchase orders > Purchase agreements**.
 2. Select a purchase agreement that has a method of payment that is associated with a payment order in Russian rubles (RUB).
 3. On the **Action Pane**, on the **Purchase agreement** tab, in the **Setup** group, click **Payment order**.
-4. Click **Edit** and specify payment order requisites. Payment order requisites of a payment request or a payment journal line that is associated with this purchase agreement will be initialized from the purchase agreement.
+4. Click **Edit** and specify default payment order requisites. Payment order requisites of a payment request or a payment journal line that is associated with this purchase agreement will be initialized from the purchase agreement.
 
 ## Planned payment processing
 
