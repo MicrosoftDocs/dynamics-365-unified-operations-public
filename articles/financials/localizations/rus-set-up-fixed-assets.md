@@ -72,25 +72,25 @@ You can set up posting profiles for fixed assets. Posting profiles define the le
 2. Select **New** to create a fixed asset posting profile.
 3. In the **Posting profile** field, enter the name of the posting profile.
 4. In the **Description** field, enter a description of the posting profile.
-5. On the **Ledger accounts** FastTab, in the drop-down list, select one of the following options:
+5. On the **Ledger accounts** FastTab, in the drop-down list, select the type of transactions that the posting profile is used for:
 
     - **Depreciation** – Depreciation is calculated for a fixed asset.
     - **Depreciation revaluation** – The depreciation that is calculated for a fixed asset is revaluated.
     - **Major repairs** – Major repairs are done for a fixed asset.
     - **Putting into operation** – A fixed asset is put into operation.
     - **Cost revaluation** – The cost of a fixed asset is revaluated.
-    - **Leaving (sale)** – A fixed asset is disposed of through sale.
-    - **Leaving (dismantlement)** – A fixed asset is disassembled.
+    - **Disposal (sale)** – A fixed asset is disposed of through sale.
+    - **Disposal (dismantlement)** – A fixed asset is disassembled.
     - **Partial take-down** – A fixed asset is partially disposed of.
     - **Currency cost revaluate** – A fixed asset is revaluated based on the currency cost.
-    - **Currency depreciation revaluate** – The depreciation that was calculated for a fixed asset is revaluated in currency.
+    - **Currency depreciation revaluate** – The depreciation that was calculated for a fixed asset is revaluated in accounting currency.
     - **Others** – Select this option for other fixed asset transactions.
 
 6. In the **Groupings** field, select the grouping to use for the posting profile:
 
     - **Table** – Select this option to retrieve fixed asset data (values) from the table.
     - **Group** – Select this option to retrieve a defined depreciation group from the fixed asset group.
-    - **All** – Select this option for all fixed asset transactions.
+    - **All** – Select this option to retrieve all fixed asset transactions.
     - **Accounting** – Select this option to retrieve a defined value model.
 
 7. In the **Account/Group number** field, select the value model, group, or fixed asset object that the posting profile should be used for.
@@ -98,8 +98,8 @@ You can set up posting profiles for fixed assets. Posting profiles define the le
 9. In the **Offset account** field, select the account number of the offset account (credit) for the transactions.
 10. Select **Options**, and then select a transaction type:
 
-    - Leaving (sale)
-    - Leaving (dismantlement)
+    - Disposal (sale)
+    - Disposal (dismantlement)
     - Partial dismantlement
     - Lease
     - Return from lease
@@ -110,7 +110,7 @@ You can set up posting profiles for fixed assets. Posting profiles define the le
 
     A page appears, where you can define the posting for different types of amounts for the selected transaction type.
 
-11. Select **New** to create a line. For example, for the **Leaving (sale)** fixed asset transaction type, you can create lines to define the following posting.
+11. Select **New** to create a line. For example, for the **Disposal (sale)** fixed asset transaction type, you can create lines to define the following posting.
 
     | Valid for | FA relation | Amount to post      | Gain/loss | Main account | Offset account |	
     |-----------|-------------|---------------------|-----------|--------------|----------------|
@@ -124,7 +124,7 @@ You can set up posting profiles for fixed assets. Posting profiles define the le
 
     - **Table** – Select this option to retrieve fixed asset data (values) from the table.
     - **Group** – Select this option to retrieve a defined depreciation group from the fixed asset group.
-    - **All** – Select this option for all fixed asset transactions.
+    - **All** – Select this option to retrieve all fixed asset transactions.
     - **Accounting** – Select this option to retrieve a defined value model.
 
 13. In the **FA relation** field, select the value model, group, or fixed asset object that should be used for the posting profile.
