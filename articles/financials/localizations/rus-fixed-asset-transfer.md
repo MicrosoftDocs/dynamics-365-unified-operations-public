@@ -68,13 +68,14 @@ Before you create fixed asset transfers between companies, you must adjust the s
 1. Select **Fixed assets (Russia) \> Common \> Fixed assets**, and select the asset to transfer.
 2. On the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Transference**.
 4. In the **Date** field, enter the date of the transfer.
-5. In the **Company accounts ID** field, enter the code for the company that is receiving the asset, if this step is required.
-6. In the **Fixed asset** field, change the code for the asset, if a change is required.
+5. In the **Company accounts ID** field, enter the code for the company that is receiving the asset. This step is optional.
+6. In the **Fixed asset** field, change the code for the asset. This step is optional.
+7. If you have selected a company to transfer the asset to, you may select the fixed asset inventory number that corresponds to the asset after transfer. The status of this asset should be **Scheduled** or **Written off**.  
 
     > [!NOTE]
-    > After you specify the company that is receiving the asset, you can select the inventory number that the asset will have in the receiving company after the transfer is completed'. The possible statuses of the assets are **Scheduled** and **Written off**. Assets that have a status of **Written off** can be returned after a transfer.
+    >  Assets that have the status of **Written off** can be returned after a transfer.
 
-    After a transfer transaction in the fixed assets journal is posted, the **Posted** field on the **Transference to another company** page is updated. The ledger accounts of the receiving company are also updated to acknowledge the transaction.
+    After a transfer transaction  is posted in the fixed assets journal, the **Posted** field on the **Transference to another company** page is updated. The ledger accounts  are updated for receipt transactions in the receiving company.
 
 
 
