@@ -300,7 +300,7 @@ This step should be completed in a subsidiary company.
 This step should be completed for a Treasury company.
 
 1. Go to **Cash and bank management > Periodic tasks > Cash flow management > Calculate planned payments**.
-2. On the **General** tab, specify the following parameters:
+2. Specify the following parameters:
 3. In the **From date** field, specify the start of the date range for the planned payment sources.
 4. In the **To date** field, specify the end of the date range for the planned payment sources.
 5. Select a planned payment source.
@@ -315,24 +315,24 @@ This step should be completed for a Treasury company.
 
 1. Go to **Cash and bank management > Cash flow management* > All payment requests**.
 
-2. Create new payment request. In the **Create payment request** form, specify the payment request type, currency of the payment request, account type (vendor, customer, or worker), account and invoice account, agreement registration number, payment currency, due date, and method of payment.
+2. Create new payment request. In the **Create payment request** form, specify the **Payment request type**, **Currency of the payment request**, **Account type** (vendor, customer, or worker), **Account** and **Invoice account**, **Agreement registration number**, **Payment currency**, **Due date**, and **Method of payment**.
 
->   The payment request type defines the cash flow direction and an application
+>   The **Payment request type** defines the cash flow direction and an application
 >   of a particular workflow.
 
->   The method of payment defines the payment account type and payment account.
+>   The **Method of payment** defines the payment account type and payment account.
 
->   The payment request priority is defined by properties of the payment account
+>   The **Payment request priority** is defined by properties of the payment account
 >   type and party.
 
->   The centralized payment hierarchy defines the Treasury company. A payment
+>   The Centralized payment hierarchy defines the **Treasury company**. A payment
 >   request company is a company where a payment request is created.
 
-3. Click **OK**.
+3. Click **OK** to create payment request.
 
-4. In the **Header** view, on the **General** FastTab, specify the required payment request parameters. You can change the payment date, payment currency, payment priority, and other parameters if you need to.
+4. In the **Header** view, on the **General** FastTab, specify the required payment request parameters. You can change the **Payment date**, **Payment currency**, **Payment priority**, and other parameters if you need to.
 
-5. the **Payment** FastTab, specify the required payment request parameters. You can change the posting profile, payment account type, payment account, and other parameters if you need to.
+5. the **Payment** FastTab, specify the required payment request parameters. You can change the **Posting profile**, **Payment account type**, **Payment account**, and other parameters if you need to.
 
 6. On the **Payment order** FastTab, specify the required payment order requisites. By default, these requisites are initialized from a purchase agreement or sales agreement. This FastTab is available if the method of payment is associated with a *Payment order in RUB*.
 
@@ -344,7 +344,7 @@ This step should be completed for a Treasury company.
 
 10. Click **Add line** to create a new record.
 
-11. Specify the dimension values, sales tax group, item sales tax group, and original amount. By default, the **Amount to pay** field is set to **Original amount**.
+11. Specify the dimension values, **Sales tax group**, **Item sales tax group**, and **Original amount**. By default, the **Amount to pay** field is set to **Original amount**.
 
 12. Create more new lines if you need to.
 
@@ -352,7 +352,7 @@ This step should be completed for a Treasury company.
 
 14. On the **Action Pane**, on the **General** tab, in the **Bill** group, click **Cash discount**.
 
-15. Create a new record and specify the cash discount date and cash discount amount.
+15. Create a new record and specify the **Cash discount date** and **Cash discount amount**.
 
 16. Create more lines if you need to and close the window
 
