@@ -53,6 +53,10 @@ For information about the bug fixes included in each of the updates that are par
 
 Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (January 2019)](whats-new-platform-update-24.md).
 
+## Extensibility enhancements
+
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0](../../dev-itpro/extensibility/extensibility-changes-10.md).
+
 ## Catch weight product processing with warehouse management
 This feature allows you to use catch weight products within warehouse management processes. This feature is only available to a limited audience for this release. 
 
