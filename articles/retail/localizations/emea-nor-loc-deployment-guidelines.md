@@ -1128,7 +1128,7 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.NO.Extension"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -1145,7 +1145,7 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.NO.Extension"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
