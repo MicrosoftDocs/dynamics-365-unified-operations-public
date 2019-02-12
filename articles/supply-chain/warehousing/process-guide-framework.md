@@ -68,8 +68,7 @@ To make these extensible, one of the options would be to split the **displayForm
 
 As a result, the redesign is the sustainable option, with a goal to have clearly defined classes having independent responsibilities. A class should have one responsibility, one reason to change, and one reason to be extended.
 
-Design overview
-===============
+## Design overview
 
 In the redesigned framework, the core strategy revolves around two principles: divide the execution flow into individual components with well-defined responsibilities and have well-defined extension points in each of the components.
 
@@ -109,8 +108,7 @@ The following are the key components in the redesigned process:
 
 -   **ProcessGuideDataProcessor** - This class is responsible for processing the user entered data in a field.
 
-Execution flow
-==============
+## Execution flow
 
 The starting point of the execution flow remains unchanged. So, the request still arrives through the same endpoints, followed by deserializing the XML into the container. This container is then passed to **getNextFormState()**.
 
@@ -147,13 +145,11 @@ After the step is completed, if the status of the step is set to **Completed**, 
 
 ![sequence diagram](media/sequence-diagram.png)
 
-Building a new process using the ProcessGuide framework
-=======================================================
+## Building a new process using the ProcessGuide framework
 
 The best way to explain the control flow is by using an example that exists in the application – the Production Start process.
 
-Overview of the production start process
-----------------------------------------
+## Overview of the production start process
 
 Let’s start by understanding the process flow. In the first step, the user is prompted for production order ID.
 
@@ -164,8 +160,7 @@ When the user enters the production order ID, the order number is validated. Som
 The user can either cancel to go back to the start of the process or click **OK** to confirm. In the latter case, the production order is set to **Started** status, the corresponding journals are posted, the control moves back to the first step, and the “Work Completed” message is shown to the user.
 
 
-Creating the controller
------------------------
+## Creating the controller
 
 The first step in building the business process is creating the controller class, extending from the **ProcessGuideController** abstract class which implements the default behaviors of a controller. The new class name is **ProdProcessGuideProductionStartController** and decorated with the **WHSWorkExecuteMode** value of **StartProdOrder**. The same **SysExtension** based instantiation that was used in the **WHSWorkExecuteDisplay** classes is used, which helps instantiate the controller when the user executes a menu item
 for this mode.
@@ -178,8 +173,7 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 > The naming pattern of the class is **\<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller**. This is the pattern that is used for the controller classes and to extend to other classes.
 
 
-Building the first step
------------------------
+## Building the first step
 
 Next, to define the first step you create the **ProdProcessGuidePromptProductionIdStep** class, extending from **ProcessGuideStep**.
 
@@ -271,8 +265,7 @@ When the validation is successful, it is time to mark the step as completed. Thi
         return (prodId != '');
  }``   
 
-Step two: View order details and confirm
-----------------------------------------
+### Step two: View order details and confirm
 
 In the second step in the process, the user is shown a screen with details about the order. The user can either click the **OK** button to confirm the start of the production order, or click **Cancel** to go back to the start of the process. For this example, name the step **ProdProcessGuideConfirmProductionOrderStep** and the page builder class **ProdProcessGuideConfirmProductionOrderPageBuilder**.
 
@@ -295,8 +288,7 @@ The **addActionControls()** is then overridden to add 2 buttons – the **OK** b
 
 ![Process guide page builder code](media/process-guide-page-builder-code.png)
 
-Step three: Start the production order
---------------------------------------
+### Step 3: Start the production order
 
 The third step is where the business logic of starting the production order is executed. This step is somewhat different from the previous steps, in that, this step does not have a user interface. This step gets executed silently when the user clicks **OK** in the previous step.
 
@@ -312,8 +304,7 @@ In case of an exception, the framework exception handling logic ensures that the
 > The invoke to **addProcessCompletionMessage()** adds the “Work completed” message to the navigation parameters. The next step (assuming it has a user interface) will display this message. The base classes handle this logic, and no specific code needs to be added to the process classes to achieve this behavior.
 
 
-Building the navigation through the steps
------------------------------------------
+### Building the navigation through the steps
 
 The **ProcessGuideController** base class instantiates the **ProcessGuideNavigationAgentDefault** class, which relies on a pre-defined navigation route, which is a simple map of source and destination steps. For the production start scenario, because there is no conditional branching, this implementation would suffice. Therefore, you only need to override the **initializeNavigationRoute()** method to define the navigation route.
 
@@ -329,8 +320,7 @@ There are processes where there will be conditional branching (based on user act
 
 -   Override **navigationAgentFactory()** in the controller to instantiate the navigation agent factory created above.
 
-Action classes
---------------
+### Action classes
 
 Action classes represent user actions, so this example uses the **OK** action to show how the actions are created.
 
@@ -359,8 +349,7 @@ The actions are instantiated using **SysExtension** framework based on the **Pro
 
 In doing so, it asks the step to create an action class for the passed name and ties that action to the button.
 
-To summarize
-============
+### Summary
 
 To summarize everything that's been explained in this topic, here's a comprehensive summary of the code needed for the process:
 
@@ -413,13 +402,11 @@ To summarize everything that's been explained in this topic, here's a comprehens
 > Note that a lot of the common patterns (regeneration of UI on error, setting process completion message, **OK** and **Cancel** behavior) have been moved to the framework – thus saving the application developer from writing boilerplate code that is both error prone, and has a risk of inconsistent behavior across processes. Where the scenario needs to deviate from the common path, though, the application developer is provided the option of overriding suitable methods – but then that is an intentional deviation that is both explicit and trackable.
 
 
-Extending a business process
-============================
+### Extending a business process
 
 So far, this topic has highlighted how to build a new process using the **ProcessGuide** framework. In this final section, you will find some examples of how this business process can be extended.
 
-Add a step in a flow (using ProcessGuideNavigationAgentDefault)
----------------------------------------------------------------
+### Add a step in a flow (using ProcessGuideNavigationAgentDefault)
 
 Where to extend:
 
@@ -429,8 +416,7 @@ How to extend:
 
 -   Extend the **initializeNavigationRoute()** method in the controller class, and invoke **addFollowingStep()** in the **ProcessGuideNavigationRoute** class.
 
-Add a step in a flow (using custom navigation agent)
-----------------------------------------------------
+### Add a step in a flow (using custom navigation agent)
 
 Where to extend:
 
@@ -444,8 +430,7 @@ How to extend:
 
 -   Extend the **navigationAgentFactory()** method in the controller class to return the factory created above.
 
-Add a new control in the UI of an existing step 
-------------------------------------------------
+### Add a new control in the UI of an existing step 
 
 Where to extend:
 
@@ -455,8 +440,7 @@ How to extend:
 
 -   Extend the **addDataControls()** method and add the additional control.
 
-Complete overhaul of the user interface in an existing step
------------------------------------------------------------
+### Complete overhaul of the user interface in an existing step
 
 Where to extend:
 
@@ -468,8 +452,7 @@ How to extend:
 
 -   Extend the **pageBuildeName()** method in the step class to return the **ProcessGuidePageBuilderNameAttribute** for the class created above.
 
-Alter logic when a step is considered complete
-----------------------------------------------
+### Alter logic when a step is considered complete
 
 Where to extend:
 

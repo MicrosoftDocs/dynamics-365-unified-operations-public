@@ -5,7 +5,7 @@ title: Data import and export jobs
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -134,6 +134,9 @@ A job can be secured by roles, users, and legal entity at the same time.
 
 ## Run the import or export job
 You can run a job one time by selecting the **Import** or **Export** button after you define the job. To set up a recurring job, select **Create recurring data job**.
+
+[!NOTE]
+An import or an export job can be run asynchronously by clicking the **Import** or **Export** button. Running in async uses the async framework in Finance and Operations, which is different from a batch because is a throttled resource. As a result, the job may not execute immediately if the async resources are being throttled in the system. The jobs can also be run synchronously by clicking **Import now** or **Export now**. This method of execution starts the job immediately and is useful if async or a batch does not start due to throttling. The jobs can also be executed in a batch by choosing the run in batch option. Batch resources are subject to throttling, so the batch job may not start immediately.
 
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
