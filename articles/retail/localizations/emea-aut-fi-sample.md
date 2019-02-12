@@ -197,7 +197,7 @@ In the **Receipt format designer**, add the following custom fields to the appro
       **QR Code**: 
          QR Code - reference to registered cash transaction in the form of QR-code.
       
-5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box.
+5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box (not recommended). 
 
 ### Handling gift cards
 The fiscal registration service integration sample implements the following rules in regard to gift cards:
