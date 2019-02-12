@@ -61,7 +61,7 @@ Before you create fixed asset transfers between companies, you must adjust the s
 
 1. Select **Fixed assets (Russia) \> Setup \> Value models**, and create a value model.
 2. On the **Map** FastTab, in the **Company accounts ID** field, select the code for the company to transfer the asset to.
-3. In the **Value model** field, select the value model number that corresponds to the current account for the company.
+3. In the **Value model** field, select the value model number that corresponds to the value model number for the company account, selected in the previous step.
 
 ### Transfer an asset to another company
 
@@ -72,7 +72,7 @@ Before you create fixed asset transfers between companies, you must adjust the s
 6. In the **Fixed asset** field, change the code for the asset, if a change is required.
 
     > [!NOTE]
-    > After you specify the company that is receiving the asset, you can select the inventory number that corresponds to the asset after the transfer. The possible statuses of the assets are **Scheduled** and **Written off**. Assets that have a status of **Written off** can be returned after a transfer only if you selected a company in the **Company** field.
+    > After you specify the company that is receiving the asset, you can select the inventory number that the asset will have in the receiving company after the transfer is completed'. The possible statuses of the assets are **Scheduled** and **Written off**. Assets that have a status of **Written off** can be returned after a transfer only if you selected a company in the **Company** field.
 
     After a transfer transaction in the fixed assets journal is posted, the **Posted** field on the **Transference to another company** page is updated. The ledger accounts of the receiving company are also updated to acknowledge the transaction.
 
@@ -124,7 +124,7 @@ Before you create fixed asset transfers between companies, you must adjust the s
     > The date of the transaction on the **Fixed asset** page can't be earlier than the date when the transfer to another company was registered in the asset history. You must use a group transaction to create lines. Lines are automatically created for all fixed assets that have information about transfers to another company in the history.
 
 12. Select **Validate \> Validate** to validate the journal.
-13. Select **Post \> Post** to create the transactions in the ledger and in fixed assets.
+13. Select **Post \> Post** to create the Vourcher and FA transactions (**Fixed assets (Russia) \> Inquiries \> Transactions** or **Fixed assets (Russia) \> Inquiries \> Voucher transactions**).
 
 ### Receive a group of fixed assets from another company
 
@@ -162,7 +162,7 @@ You can register the receipt of several fixed assets or inventory assets at the 
     > The date of the transaction on the **Fixed asset** page can't be earlier than the date when the receipt was registered in the asset history. You must use a group transaction to create lines. Lines are automatically created for all fixed assets that have information about receipts from another company in the history.
 
 16. Select **Validate \> Validate** to validate the journal.
-17. Select **Post \> Post** to create the transactions in the ledger and in fixed assets.
+17. Select **Post \> Post** to create the Vourcher and FA transactions (**Fixed assets (Russia) \> Inquiries \> Transactions** or **Fixed assets (Russia) \> Inquiries \> Voucher transactions**).
 
     > [!NOTE]
     > You can view the information about the transfer of assets between companies on the **Receipt from another company** page.
