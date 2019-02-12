@@ -132,7 +132,7 @@ You can register the receipt of several fixed assets or inventory assets at the 
 
 1. Select **Fixed assets (Russia) \> Journals \> Transfer journals \> Receipt from another company**, and create a journal.
 2. In the **Date** field, enter the date of the transfer of the assets from the other company.
-3. In the **Company accounts ID** field, enter the account ID for the company that is receiving the assets, if the company is in the same database.
+3. In the **Company accounts ID** field, enter the account ID for the company that is receiving the assets from, if the company is in the same database.
 
     > [!NOTE]
     > The **Journal number** field is filled in automatically, based on the number sequence that is configured. However, you can manually enter a journal number.
