@@ -1219,7 +1219,7 @@
       href: database/dbmovement-scenario-general-refresh.md
     - name: Debugging and diagnostics
       href: database/dbmovement-scenario-debugdiag.md
-    - name: 'Golden configuration' promotion
+    - name: Golden configuration promotion
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Destructive testing
       href: database/dbmovement-scenario-destructivetests.md
