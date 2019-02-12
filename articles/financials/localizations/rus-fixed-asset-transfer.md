@@ -137,12 +137,16 @@ You can register the receipt of several fixed assets or inventory assets at the 
     > [!NOTE]
     > The **Journal number** field is filled in automatically, based on the number sequence that is configured. However, you can manually enter a journal number.
 
-4. Select **Lines**.
-5. On the **Lines of FA transfer journal** page, create the lines.
+4. Click **Lines**.
+5. On the **Lines of FA transfer journal** page, create a line.
+
 6. In the **Source** field, select the inventory number of the asset that is being received from the other company.
 
     > [!NOTE]
     > If you select an asset number in the **Source** field, and a full correspondence of value models has been set up between the transferring company and the receiving company, information is shown in the fields on the **Value models** tab. Otherwise, you must manually enter or modify the information.
+7. In the **Destination** field, select the asset number that corresponds to the asset that is being transferred, in the receiving company.    
+
+8. Repeat steps 5 through 7 to create all additional lines that are required.
 
 7. Select **Create fixed asset**.
 
@@ -151,12 +155,14 @@ You can register the receipt of several fixed assets or inventory assets at the 
 
 8. In the **Create fixed asset** dialog box, select the FA group that the asset belongs to. An inventory number is automatically assigned to the fixed asset or inventory asset.
 9. Select **OK**. An asset record is created, and a destination is shown.
-10. On the **Lines of FA transfer journal** page, select **Create from FA transference journal** to automatically create lines on the **Receipt from another company** page.
-11. On the **Adding fixed assets from issue journals for another company** page, in the upper pane, select the journal. Then select **Copy journal** to copy all the information from the specified transfer journal to the receipt journal.
-12. In the lower pane, select **Copy journal line** to copy individual lines of the transfer journal to the receipt journal.
-13. On the **Receipt from another company** page, select **Close**. The information from the receipt is updated in the asset records.
-14. Select **Fixed assets (Russia) \> Journals \> FA journal**.
-15. Select **Lines**, and enter the receipt transaction on the journal lines. This process resembles the process for creating an acquisition transaction.
+
+To automatically create lines on the **Receipt from another company** page click **Create from FA transference journal** and then:
+
+10. On the **Adding fixed assets from issue journals for another company** page, in the upper pane, select the journal. Then click **Copy journal** to copy all the information from the specified transfer journal to the receipt journal.
+11. In the lower pane, click **Copy journal line** to copy individual lines of the transfer journal to the receipt journal.
+12. On the **Receipt from another company** page, select **Close**. The information from the receipt is updated in the asset records.
+13. Select **Fixed assets (Russia) \> Journals \> FA journal**.
+14. Select **Lines**, and enter the receipt transaction on the journal lines. This process resembles the process for creating an acquisition transaction.
 
     > [!NOTE]
     > The date of the transaction on the **Fixed asset** page can't be earlier than the date when the receipt was registered in the asset history. You must use a group transaction to create lines. Lines are automatically created for all fixed assets that have information about receipts from another company in the history.
