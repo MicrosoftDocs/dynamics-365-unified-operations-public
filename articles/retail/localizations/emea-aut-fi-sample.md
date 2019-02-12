@@ -173,6 +173,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SALESTAXBASIS        | Receipt | 103181          |
 
 4. Configure receipt formats
+
 In the **Receipt format designer**, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
    **Header**: Add the following field:
       Continuous Number – This field identifies the number of cash transaction in the fiscal registrator;
