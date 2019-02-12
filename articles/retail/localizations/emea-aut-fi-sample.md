@@ -185,18 +185,15 @@ In the **Receipt format designer**, add the following custom fields to the appro
       Tax Retail Print Code - This field dysplay the code corresponding to tax group;
       
    **Footer**: Add the following field groups:
-   
       **Sales total**: 
       	Total (sales) - total transaction amount without tax sum;
 	Total Include Tax (sales) - total transaction amount with tax sum;
-        Total Tax (sales) - transaction tax sum.
-	
+        Total Tax (sales) - transaction tax sum.	
       **Tax break down** (should be separate line):
 	Tax Basis (sales) - total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards;
 	Tax Amount (sales) - total tax amount for cash transactions excluding deposits, prepayments and gift cards;
 	Total Include Tax (sales) - total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards;
-	Tax Retail Print Code - the code corresponding to tax group.	
-	
+	Tax Retail Print Code - the code corresponding to tax group.		
       **QR Code**: 
          QR Code - reference to registered cash transaction in the form of QR-code.
       
