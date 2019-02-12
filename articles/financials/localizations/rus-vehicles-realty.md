@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 8.1
 Use the **Fixed asset parameters** page to set up parameters for fixed assets of the **Realty** and **Vehicle** types. You can also select the method that is used to determine the start date for the calculation of depreciation.
 
 1. Select **Fixed assets (Russia)** \> **Setup** \> **Parameters**.
-2. On the **Tax reporting** tab, in the **Date of including in the tax base** field, specify when the fixed asset should be entered in the assessed register tax base:
+2. On the **Tax reporting** tab, in the **Date of including in the tax base** field, specify when the fixed asset should be entered in tax base of the assessed register:
 
     - **Putting into operation date** – The date when the fixed asset is put to use.
     - **Date of the registration** – The registration date of the fixed asset.
@@ -51,10 +51,7 @@ Before you put a realty fixed asset into operation and calculate depreciation, y
 2. Select **New** to create a fixed asset, and enter the required details. For more information, see [(RUS) Create fixed assets](rus-create-fixed-assets.md).
 3. On the **General** FastTab, in the **Type** field, select **Realty**.
 4. On the **Technical information** FastTab, in the **Date of the registration** field, select the registration date of the fixed asset.
-
-    > [!NOTE]
-    > If you selected **Date of the registration** in the **Depreciation start date** field on the **Depreciation groups** page, you must specify the registration date of the fixed asset. Otherwise, depreciation transactions aren't created. If you change the registration date, the start date for depreciation is updated.
-
+   
 5. In the **Removal from the register date** field, select the date when the asset should be removed from the tax register.
 
     > [!NOTE]
