@@ -72,15 +72,15 @@ Before you create fixed asset transfers between companies, you must adjust the s
 6. In the **Fixed asset** field, change the code for the asset, if a change is required.
 
     > [!NOTE]
-    > After you specify the company that is receiving the asset, you can select the inventory number that the asset will have in the receiving company after the transfer is completed'. The possible statuses of the assets are **Scheduled** and **Written off**. Assets that have a status of **Written off** can be returned after a transfer only if you selected a company in the **Company** field.
+    > After you specify the company that is receiving the asset, you can select the inventory number that the asset will have in the receiving company after the transfer is completed'. The possible statuses of the assets are **Scheduled** and **Written off**. Assets that have a status of **Written off** can be returned after a transfer.
 
     After a transfer transaction in the fixed assets journal is posted, the **Posted** field on the **Transference to another company** page is updated. The ledger accounts of the receiving company are also updated to acknowledge the transaction.
 
-7. Select **Transfer journal** to show the transfer journal that is used to transfer the asset, if the journal was created and closed. If the journal wasn't created, you can manually enter the document number and date.
+7. Select **Transfer journal** to show the transfer journal that was used to transfer the asset, if the journal was created and closed. If the journal wasn't created, you can manually enter the document number and date.
 
-    When a transfer transaction in the fixed assets journal is posted, information is shown on the **Value models** tab of the **Transference to another company** page. This information can't be changed. The number of lines on the **Value models** tab must equal the number of models that the transaction was posted for.
+    When a transfer transaction  is posted in the fixed assets journal (**Fixed assets (Russia) \> Journals \> FA journal**), information is shown on the **Value models** tab of the **Transference to another company** page. This information can't be changed. The number of lines on the **Value models** tab must equal the number of models that the transaction was posted for. 
 
-    The value model, balance cost, and book depreciation for the asset that was transferred are shown, together with the period that the asset was used in before the transfer.
+    The value model, balance cost, and book depreciation for the asset that was transferred are shown, together with the lifetime that the asset was used in before the transfer.
 
 8. Select **Fixed assets (Russia) \> Journals \> Transfer journals \> Transference to another company**.
 9. Select **Lines**.
@@ -92,18 +92,18 @@ Before you create fixed asset transfers between companies, you must adjust the s
 11. Select **Close** to post the journal. If the transaction included all value models, the status of the asset is **Written off**.
 
     > [!NOTE]
-    > On the **Receipt from another company** page, the fields in the grid and on the **Value models** tab are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset that is being transferred and accepted aren't automatically verified. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
+    > On the **Receipt from another company** page (see Fixed asset in the receiving ), the fields on the **Value models** tab are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset that is being transferred and accepted aren't automatically verified. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
 
 ### Transfer groups of fixed assets
 
 1. Select **Fixed assets (Russia) \> Journals \> Transfer journals \> Transference to another company**.
-2. On the **Overview** tab, press **Ctrl+N** to create a line, and then, in the **Date** field, enter the date of the asset transfer.
+2. Click **New** to create a line, and then, in the **Date** field, enter the date of the asset transfer.
 3. In the **Company accounts ID** field, enter the account ID for the company that is receiving the assets, if the company is in the same database.
 
     > [!NOTE]
     > The **Journal number** field is filled in automatically, based on the number sequence that is configured. However, you can manually enter a journal number.
 
-4. Select **Lines**.
+4. Click **Lines**.
 5. On the **Lines of FA transfer journal** page, create a line.
 6. In the **Source** field, select the inventory number of the fixed asset that is being transferred.
 
