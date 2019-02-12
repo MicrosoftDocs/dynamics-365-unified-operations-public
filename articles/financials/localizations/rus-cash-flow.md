@@ -500,145 +500,83 @@ Payment requisites (**Method of payment**, **Due date**, **Vendor bank account**
 29. In the **Payment request** form, on the **Action Pane**, on the **General** tab, in the **Related information** group, click **Request origin**.
 30. Verify that the customer transaction is a source for the payment request.
 
-Periodic creation of payment requests
--------------------------------------
+### Periodic creation of payment requests
 
-**Note:** This step should be completed for a Treasury company.
+This procedure should be completed for a Treasury company.
 
-Click **Cash and bank management** \> **Periodic** \> **Cash flow management**
-\> **Create payment requests**.
+1. Click **Cash and bank management > Periodic > Cash flow management > Create payment requests**.
+2. On the **General** tab, specify the following parameters:
+  |Field | Description|
+  |--------|--------------|
+  |**From date** |Specify the start of the date range for the payment request sources. |
+  |**To date** | Specify the end of the date range for the payment request sources.|
+  | **Request sources** | Select the sources of the payment request.|
+  |**Legal entities** |Select legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy.|
+  |**Number of batch threads** | Enter the number of parallel tasks for payment request creation.|
 
-On the **General** tab, specify the following parameters:
+### Update a payment request
 
-In the **From date** field, specify the start of the date range for the payment
-request sources.
+When you update a payment request, the **Amount to pay** value is changed on payment request lines and in the cash discount details.
 
-In the **To date** field, specify the end of the date range for the payment
-request sources.
+Re-approval of payment requests can be required and is controlled by the **Amount to pay change** parameter on the **Cash and bank management parameters** page.
 
-Select the sources of the payment request: **Vendor invoice**, **Customer
-invoice**, or **Planned payment**.
+You can update a payment request only if the following conditions are met:
 
-Select legal entities. A Treasury company can include all legal entities that
-belong to the current centralized payment hierarchy.
+- The status of the payment request is **Confirmed** or **Scheduled**.
+- The payment request is not included in an unposted payment schedule journal.
+- The workflow status is not **Submitted**.
 
-In the **Number of batch threads** field, enter the number of parallel tasks for
-payment request creation.
+1. Click **Cash and bank management > Cash flow management* > All payment requests**.
+2. Select a payment request for which the **Outdated** check box is selected.
 
-![](media/e2815a1339e6ded7f73209276700e259.png)
+![Outdated check box on payment requests](media/rus-outdated-check-box.jpg)
 
-Update a payment request
-------------------------
+>   The system selects this check box automatically if the original source of a payment request has been changed through settlement or unsettlement. A selected check box indicates that the amount to pay of the payment request is not equal to the amount of the vendor/customer open transaction.
 
-Click **Cash and bank management** \> **Cash flow management** \> **All payment
-requests**.
+3. On the Action Pane, Click **Request update**.
 
-Select a payment request for which the **Outdated** check box is selected.
+### Periodic update of payment requests
 
-![A screenshot of a cell phone Description automatically generated](media/6d28fe2279d9af067bf1276fd7a2336d.jpg)
+This step should be completed for a Treasury company.
 
->   The system selects this check box automatically if the original source of a
->   payment request has been changed through settlement or unsettlement. A
->   selected check box indicates that the amount to pay of the payment request
->   is not equal to the amount of the vendor/customer open transaction.
+1. Click **Cash and bank management** \> **Periodic** tasks\> **Cash flow management** \> **Update payment requests**.
+2. On the **General** tab, specify the following parameters:
 
-On the **Action Pane**, on the **Payment request** tab, in the **Generate**
-group, click **Request update**.
+  |Field | Description|
+  |--------|--------------|
+  |**From date** |Specify the start of the date range for the payment requests. |
+  |**To date** | Specify the end of the date range for the payment requests.|
+  | **Request sources** | SSpecify the sources of the payment request.|
+  |**Legal entities** |Specify legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy.|
+  |**Number of batch threads** | Enter the number of parallel tasks for payment request creation.|
 
-This operation is available only if the following conditions are met:
 
-The status of the payment request is **Confirmed** or **Scheduled**.
-
-The payment request is not included in an unposted payment schedule journal.
-
-The workflow status is not **Submitted**.
-
-The **Request update** operation will change the **Amount to pay** value on
-payment request lines and in the cash discount details.
-
-Re-approval of payment requests can be required and is controlled by the
-**Amount to pay change** parameter in the **Cash and bank management
-parameters** form.
-
-Periodic update of payment requests
------------------------------------
-
-**Note:** This step should be completed for a Treasury company.
-
-Click **Cash and bank management** \> **Periodic** tasks\> **Cash flow
-management** \> **Update payment requests**.
-
-On the **General** tab, specify the following parameters:
-
-In the **From date** field, specify the start of the date range for the payment
-requests.
-
-In the **To date** field, specify the end of the date range for the payment
-requests.
-
-Specify the sources of the payment request.
-
-Specify legal entities. A Treasury company can include all legal entities that
-belong to the current centralized payment hierarchy.
-
-![A screenshot of a cell phone Description automatically generated](media/519dd80e71ea01741aa1ed17ede06abe.jpg)
-
-Payment schedule journal processing
-===================================
-
-Task overview
--------------
-
-Set up a payment schedule journal.
-
-Create a new payment schedule journal.
-
-Payment schedule journal processing: Generate and process the payment schedule
-sheet.
-
-Generate payments.
+## Payment schedule journal processing
 
 Set up a payment schedule journal
 ---------------------------------
 
-Click **Cash and bank management** \> **Setup** \> **Cash flow management** \>
-**Payment schedule journal names**.
+1. Click **Cash and bank management** \> **Setup** \> **Cash flow management** \> **Payment schedule journal names**.
+2. Click **New** to create a new record. Specify a name and description for the journal.
+3. Select the journal type:
 
-![A screenshot of a cell phone Description automatically generated](media/a121802689f1fe4a467c550498a9d771.jpg)
+   - **Payment plan** – This journal type is intended for payment forecasts in a medium-term/short-term horizon.
+   - **Payment register** – This journal type is intended for payment statement generation.
 
-Click **New** to create a new record. Specify a name and description for the
-journal.
+3. On the **General** FastTab, specify the following parameters:
 
-Select the journal type:
+  - Select the **Payment on cash discount date** option if a date of payment in the payment schedule should be used as a cash discount date.
+  - Select the **Overdue payments** option (only for a payment plan) if the payment schedule should include outstanding payments.
+  - Select the **Active** option if this journal should use the workflow procedure.
+  - Specify the **Workflow ID** that should be applied.
 
-**Payment plan** – This journal type is intended for payment forecasts in a
-medium-term/short-term horizon.
-
-**Payment register** – This journal type is intended for payment statement
-generation.
-
-On the **General** FastTab, specify the following parameters:
-
-Select the **Payment on cash discount date** check box if a date of payment in
-the payment schedule should be used as a cash discount date.
-
-Select the **Overdue payments** check box (only for a payment plan) if the
-payment schedule should include outstanding payments.
-
-Select the **Active** check box if this journal should use the workflow
-procedure.
-
-Specify the **Workflow ID** that should be applied.
-
-Click the **Dimensions** FastTab. This section defines how the lines of the
-payment schedule journal will be aggregated. The analytic report of the payment
-schedule journal will also use these dimensions.
+4. Click the **Dimensions** FastTab. This section defines how the lines of the payment schedule journal will be aggregated. The analytic report of the payment schedule journal will also use these dimensions. Use the arrow buttons to move a dimension out of or into the **Selected dimensions** list.
 
 ![](media/e320294d044dd4ac05ad26d1ca45d297.jpg)
 
 >   Use the button to select an aggregation parameter.
 
-Click the **Legal entities** FastTab. This section defines the legal entities
+5. Click the **Legal entities** FastTab. This section defines the legal entities
 that are used for payment schedule journal generation.
 
 >   Use the button to select a legal entity.
