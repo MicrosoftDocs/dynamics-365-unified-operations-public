@@ -57,11 +57,11 @@ To set the values for the following items, sign in to Attract as an administrato
 select **Admin center** on the **Settings** menu (the gear symbol), and then
 select the **Company information** tab.
 
--   **Organization name**: The organization name appears on the navigation bar
+-   **Organization name** - The organization name appears on the navigation bar
     at the top of the career site. By selecting the organization name,
     candidates go to a page that lists all open jobs.
 
--   **Organization logo**: An image of the organization's logo appears in the
+-   **Organization logo** - An image of the organization's logo appears in the
     upper left of the career site. By selecting the logo image, candidates go to
     a page that lists all open jobs.
 
@@ -71,32 +71,32 @@ select the **Company information** tab.
     >   scaled to fit. Therefore, depending on the image, the width might
     >   change.
  
-To set the values for the below items, sign in to Attract as an administrator,
+To set the values for the following items, sign in to Attract as an administrator,
 select **Admin center** on the **Settings** menu, and then
 select the **Career site management** tab.
 
--   **Search Engine Optimization**: While enabled, all public jobs posted to
-    Attract career site will be searchable via popular search engines like Bing
+-   **Search Engine Optimization** - When enabled, all public jobs posted to
+    Attract career site will be searchable using search engines like Bing
     and Google.
 
     >   [!NOTE] 
-    >   You may see some delay between turning this setting on and search
-    >   results lighting up, depending on the search engine you are using.
+    >   There might be a delay between turning this setting on and search
+    >   results appearing, depending on the search engine that you are using.
          
 ## Career site URLs
 
 The following list contains the commonly used career site URLs and how to access them.
 
--   **Career site home page URL**: To view the career site home page URL, sign
+-   **Career site home page URL** - To view the career site home page URL, sign
     in to Attract as an administrator, select **Admin center** on the **Settings** menu, and then select the **Career site management** tab.
 
--   **Individual job post apply URL**: When you [post an external
+-   **Individual job post apply URL** - When you [post an external
     job](Creating-jobs-Attract.md#postings) for the first time, you can copy
     the **Apply** link from the Attract application. The URL for this link will
     be in the following format: 
     [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
--   **Individual job post URL**: The URL of the job post is a substring of the
+-   **Individual job post URL** - The URL of the job post is a substring of the
     Apply URL. It consists of everything up through the job number. Therefore,
     for the preceding Apply URL, the job post URL is
     [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
@@ -137,11 +137,11 @@ interested in. Profiles also help Attract recommend the right jobs to
 candidates.
 
 >   [!NOTE]
->   If a candidate uses an email ID to login using one of the
+>   If a candidate uses an email ID to sign in using one of the
 >   authentication providers listed above, that email ID will default to the contact
 >   email ID associated with the profile. However, the latter can be changed at
->   any time is completely independent of the former. Attract will always use
->   the contact email ID  to associate with your profile for all email
+>   any time and is completely independent of the former. Attract will always use
+>   the contact email ID to associate with your profile for all email
 >   communications.
 
 ## Find the right job
@@ -157,12 +157,12 @@ applications, profile, and resumes.
 
 >   [!NOTE] 
 >   Job recommendations are shown only if at least 10 jobs are posted on
->   the career site, and if the candidate has completed their profile.
+>   the career site, and if the candidate has completed a profile.
 
 ## Apply for jobs
 
 After candidates find the right job, they can apply by using the **Apply**
-button on the job details page. At this point, candidates can either create a
+button on the **Job details** page. At this point, candidates can either create a
 new profile or review the information in their existing profile.
 Candidates can also upload a resume, as required, and then submit the job
 application.
@@ -179,5 +179,5 @@ shows the available options.
 ## Internal jobs
 
 Currently, jobs that are marked as internal and posted to the Attract career
-site don't appear on the career site. They are accessible only via the direct
+site don't appear on the career site. They are only accessible using the direct
 **Apply** URL that can be copied from the Attract application.
