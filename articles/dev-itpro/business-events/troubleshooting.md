@@ -60,3 +60,13 @@ This issue is likely a result of the queue/topic/hub name being incorrect. Check
 **Error: Unable to send test event to endpoint. Exception message: An error occurred while sending the request.**
 
 This is likely due to an incorrect endpoint value specified in the **Endpoint URL** field. Go to the **Event Grid** object in the Azure portal and open the **Event Grid**. In the **Overview** section, this value will be the **Topic Endpoint**.
+
+**Business events dont show up in the catalog**
+Business event catalog is built during full db sync. As a result, there are some use cases as listed below, where a manual refresh of the catalog will be needed to see the new business events. Manual refresh can be invoked from the catalog by going to **Manage > Rebuild business events catalog**
+
+When you are implementing business events in Visual Studio, it may happen that, you dont see the newly coded business event in the catalog.
+
+When new workflows are configured, the workflow elements, steps etc. may not show up in the business events catalog.
+
+Any other situations, when you dont see certain business events, doing a manual refresh would be the mitigation.
+
