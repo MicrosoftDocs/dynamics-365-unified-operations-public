@@ -5,7 +5,7 @@ title: Installing BaseX for AppChecker
 description: This topic describes how to install and set up BaseX in a developer environment.
 author: AndreasHassing
 manager: AnnBe
-ms.date: 02/07/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ The sections in this topic should be regarded as ordered steps and completed as 
 
 ## Prerequisites
 
-BaseX is a Java-based XML document database which requires a Java Runtime Environment of version 8 or higher. Before you install BaseX, verify that a Java JRE is installed, [aka.ms/getjava](https://aka.ms/getjava).
+BaseX is a Java-based XML document database which requires a Java Runtime Environment of version 8 or higher. Before you install BaseX, verify that a [Java JRE is installed](https://aka.ms/getjava).
 
 ## Download BaseX
 
@@ -57,8 +57,8 @@ Depending on the size of your model, the BaseX server can take up a lot of memor
 
 BaseX is configured by default to use ~1.17GB of RAM at the most. If you have a large model, you should consider increasing this limitth by completing the following steps:
 
-1. Edit the batch script at: `<BaseX Install Path>\bin\basexhttp.bat`.
-2. Change the line containing `set BASEX_JVM=-Xmx1200m %BASEX_JVM%` and increase the value after `-Xmx`. 
+1. Edit the batch script at: *<BaseX Install Path>\bin\basexhttp.bat*.
+2. Change the line containing **set BASEX_JVM=-Xmx1200m %BASEX_JVM%** and increase the value after **-Xmx**. 
 
   For more information, refer to this article about [Increasing the limits of the Java VM](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABHDABI).
 
@@ -69,7 +69,7 @@ BaseX is configured by default to use ~1.17GB of RAM at the most. If you have a 
 
 ## Start the BaseX server
 
-1. From the Start Menu, run the `BaseX -> BaseX Server (Start)` program.
+1. From the Start Menu, click **BaseX** > **BaseX Server (Start)**.
 
   ![Image of BaseX Server (Start) shortcut](./media/basex-start.png)
 
@@ -79,7 +79,7 @@ BaseX is configured by default to use ~1.17GB of RAM at the most. If you have a 
     <BaseX Install Path>\BaseX\bin\basexhttp.bat -S
     ```
     
-    This will start a BaseX server listening on ports `1984/tcp` (API), `8984/tcp` (HTTP API), and `8985/tcp` (Jetty HTTP stop port).
+    This will start a BaseX server listening on ports 1984/tcp (API), 8984/tcp (HTTP API), and 8985/tcp (Jetty HTTP stop port).
 
 ## Start the BaseX server on login (optional)
 
