@@ -450,7 +450,7 @@ Payment requisites (**Method of payment**, **Due date**, **Vendor bank account**
 
 ### Create a payment request for a prepayment to a vendor
 
-1. Click **Accounts payable > Purchase orders > All purchase orders**.
+1. Go to **Accounts payable > Purchase orders > All purchase orders**.
 2. Create a new purchase order, and specify the terms of payments, payment schedules, method of payment, cash discount, and financial dimensions on the purchase order header.
 
     > [!NOTE]
@@ -467,7 +467,7 @@ Payment requisites (**Method of payment**, **Due date**, **Vendor bank account**
 
 ### Create a payment request for a customer invoice return
 
-1. Click **Accounts receivable > Orders > All sales orders**.
+1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Create a new return sales order, and specify the terms of payments, method of payment, and financial dimensions on the sales order header.
 3. Create sales order lines, and specify the sales tax group, item sales tax group, and financial dimensions.
 4. Generate and post an invoice.
@@ -505,7 +505,7 @@ Payment requisites (**Method of payment**, **Due date**, **Vendor bank account**
 
 This procedure should be completed for a Treasury company.
 
-1. Click **Cash and bank management > Periodic > Cash flow management > Create payment requests**.
+1. Go to **Cash and bank management > Periodic > Cash flow management > Create payment requests**.
 2. On the **General** tab, specify the following parameters:
   |Field | Description|
   |--------|--------------|
@@ -527,7 +527,7 @@ You can update a payment request only if the following conditions are met:
 - The payment request is not included in an unposted payment schedule journal.
 - The workflow status is not **Submitted**.
 
-1. Click **Cash and bank management > Cash flow management* > All payment requests**.
+1. Go to **Cash and bank management > Cash flow management* > All payment requests**.
 2. Select a payment request for which the **Outdated** check box is selected.
 
 ![Outdated check box on payment requests](media/rus-outdated-check-box.jpg)
@@ -540,7 +540,7 @@ You can update a payment request only if the following conditions are met:
 
 This step should be completed for a Treasury company.
 
-1. Click **Cash and bank management** \> **Periodic** tasks\> **Cash flow management** \> **Update payment requests**.
+1. Click **Cash and bank management > Periodic tasks > Cash flow management > Update payment requests**.
 2. On the **General** tab, specify the following parameters:
 
   |Field | Description|
@@ -556,7 +556,7 @@ This step should be completed for a Treasury company.
 
 ### Set up a payment schedule journal
 
-1. Click **Cash and bank management** \> **Setup** \> **Cash flow management** \> **Payment schedule journal names**.
+1. Go to **Cash and bank management > Setup > Cash flow management > Payment schedule journal names**.
 2. Click **New** to create a new record. Specify a name and description for the journal.
 3. Select the journal type:
 
@@ -599,18 +599,16 @@ The following table lists the possible sources.
 
 ### Payment plan processing
 
-1. Click **Cash and bank management** \> **Cash flow management** \> **Payment schedule journal**.
+1. Go to **Cash and bank management > Cash flow management > Payment schedule journal**.
 2. In the **Name** field, select a payment schedule journal of the **Payment plan** type.
 
     ![Playment plan](media/rus-payment-plan.jpg)
 
 3. Use the **From date** and **To date** fields to specify an effective date range.
-
 4. Change the payment schedule journal attributes on the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, if you need to.
 
 5. Click **Calculate**.
 6. Click **Lines** to validate the payment schedule journal lines.
-
 7. Click **Edit beginning balance** to change the beginning balance of this journal.
 8. For lines that have **Payment request** as the data source, click **Payment request lines** button to review the payment request lines that are included on the current journal line.
 9. **Close** the page.
@@ -623,146 +621,81 @@ The following table lists the possible sources.
 13. Click the **\<** button to select an aggregation parameter for the payment schedule sheet.
 14. Click **Show results**.
 
-![A screenshot of a social media post Description automatically generated](media/7d37da18e4fae7ed0464e72852a0b614.jpg)
+![Payment schedule sheet overview](media/rus-payment-schedule-sheet-overview.jpg)
+
+  >   If the minimum cash balance for a currency or a payment account is exceeded,  the payment schedule sheet highlights the **Estimated balance** amounts in yellow.
+
+15. Click on the amount for a journal data source of **Payment request** (if the **Payment request** license configuration key is enabled) or **Accounts payable**/**Accounts receivable** (if the **Payment request** license configuration key is *not* enabled) and press **Show origin** to open the sources of that amount.
+
+16. Click on the amount for a journal data source of **Payment request** and press **Change payment sources**
+
+![Change payment sources on a payment schedule sheet](media/rus-change-payment-sources.jpg)
+
+17. Select payment sources that should be moved to another date, or that should be paid by using another method of payment, or payment account.
+
+![A screenshot of a cell phone Description automatically generated](media/rus-payment-schedule-balancing.jpg)
 **[Anastasia] Please add screenshot here**
 
->   If the minimum cash balance for a currency or a payment account is exceeded,
->   the payment schedule sheet highlights the **Estimated balance** amounts in
->   yellow.
+18. Click **Multiple change**, specify the new payment details in the **Modify payment attributes** form, and then click **OK**.
 
-Click on the amount for a journal data source of **Payment request** (if the
-**Payment request** license configuration key is enabled) or **Accounts
-payable**/**Accounts receivable** (if the **Payment request** license
-configuration key is *not* enabled) and press **Show origin** to open the
-sources of that amount.
+  >   Alternatively, you can specify a new payment date, new method of payment, or payment account requisites for a specific line.
 
-Click on the amount for a journal data source of **Payment request** and press
-**Change payment sources**
+19. Click **Update payment schedule**. The system updates the payment schedule sheet and creates uncommitted payment schedule journal lines of payment sources correction.
 
-![A screenshot of a cell phone Description automatically generated](media/ba9d386723621376bba4902747beeb56.jpg)
-**[Anastasia] Please add screenshot here**
+20. Make additional changes in the payment schedule sheet if you need to.
 
-Select payment sources that should be moved to another date, or that should be
-paid by using another method of payment, or payment account.
+21. In the **Payment schedule journal** form, click **Functions** \> **Apply changes** to apply your changes or **Revert changes** to reject them.
 
-![A screenshot of a cell phone Description automatically generated](media/c9f27e4e56a0804cb163a4d098c19d83.jpg)
-**[Anastasia] Please add screenshot here**
-
-Click **Multiple change**, specify the new payment details in the **Modify
-payment attributes** form, and then click **OK**.
-
-![A screenshot of a cell phone Description automatically generated](media/1b73ca97151196d34b939136e3e180d8.jpg)
-
->   Alternatively, you can specify a new payment date, new method of payment, or
->   payment account requisites for a specific line.
-
-Click **Update payment schedule**. The system updates the payment schedule sheet
-and creates uncommitted payment schedule journal lines of payment sources
-correction.
-
-![A screenshot of a cell phone Description automatically generated](media/dff390e19d65c93388def67bb09011cf.jpg)
-
-Make additional changes in the payment schedule sheet if you need to.
-
-In the **Payment schedule journal** form, click **Functions** \> **Apply
-changes** to apply your changes or **Revert changes** to reject them.
-
-Click **Functions** \> **Delete journal lines** if changes in the journal setup
-are required, and calculate the journal.
+22. Click **Functions** \> **Delete journal lines** if changes in the journal setup are required, and calculate the journal.
 
 ![A screenshot of a social media post Description automatically generated](media/6f3e695e5a325f7dc60a7629c284591a.jpg)
 **[Anastasia] Please add screenshot here**
 
-Click **Validate** to verify the journal. The system will inform you if
-canceled, on-hold, or incomplete workflow payment requests are included in this
-journal.
+23. Click **Validate** to verify the journal. The system will inform you if canceled, on-hold, or incomplete workflow payment requests are included in this journal.
 
-If all data is correct and workflow approval of the payment plan can start, on
-the **Action Pane**, click **Workflow \> Submit**.
+24. If all data is correct and workflow approval of the payment plan can start, on the **Action Pane**, click **Workflow \> Submit**.
 
-![A screenshot of a cell phone Description automatically generated](media/71941090e6ec2e796adfd82a4c77d972.jpg)
+25. Approvers may see the following actions during approval flow: **Approve**, **Reject**, **Requestchange**, **Delegate**, **Recall**, **View history**
 
-Approvers may see the following actions during approval flow: **Approve**, **Reject**, **Requestchange**, **Delegate**, **Recall**, **View history**
+![A screenshot of a cell phone Description automatically generated](media/rus-workflow-actions.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/bcee671cf3cfe355875a7ebb13e3490e.jpg)
-**[Anastasia] Please add screenshot here**
+26. If the payment plan is approved, click **Confirm**. The status of the payment requests that are included changes to **Scheduled**.
 
-If the payment plan is approved, click **Confirm**. The status of the payment
-requests that are included changes to **Scheduled**.
+27. In the **Payment request** form, on the **Action Pane**, on the **General** tab, in the **Related information** group, click **Payment schedule journal**.
 
-In the **Payment request** form, on the **Action Pane**, on the **General** tab,
-in the **Related information** group, click **Payment schedule journal**.
+28. Review the payment schedule journal that is associated with the payment request.
 
-Review the payment schedule journal that is associated with the payment request.
+### Payment register processing
 
-Payment register processing
----------------------------
+1. Go to **Cash and bank management > Cash flow management > Payment schedule journal**.
+2. In the **Name** field, select a payment schedule journal of the **Payment register** type.
+3. Use the **From date** and **To date** fields to specify an effective date range.
+4. Change the payment schedule journal attributes on the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, if you need to.
+5. Click **Calculate**.
+6. Click **Lines** to validate the payment schedule journal lines.
+7. Click **Edit beginning balance** to change the beginning balance of this journal.
+8. For lines that have **Payment request** as the journal data source, click **Payment request lines** to review the payment request lines that are included on the current journal line.
+9. Close the form.
+10. Click **Payment schedule** to review the payment register. If a cash shortage or surplus is detected, you can make changes.
+11. Click **Validate** to verify the journal. The system informs you if canceled or on-hold payment requests are included in this journal.
+12. If all data is correct and workflow approval of the payment plan can start, on the **Action Pane**, Workflow \> **Submit**.
+13. If the payment plan is approved, click **Confirm**. The status of the payment requests that are included changes to **Accepted**.
+14. In the **Payment request** form, on the **Action Pane**, on the **General** tab, in the **Related information** group, click **Payment schedule journal**.
 
-Click **Cash and bank management** \> **Cash flow management** \> **Payment
-schedule journal**.
+15. Review the payment schedule journal that is associated with the payment request.
 
-In the **Name** field, select a payment schedule journal of the **Payment
-register** type.
+> [!NOTE] 
+> The following steps can be completed only if the **Payment request** license configuration key is enabled.
 
-Use the **From date** and **To date** fields to specify an effective date range.
+16. In the Payment schedule journal page, click **Functions** \> **Generate payments**.
+17. Specify parameters for payment journal generation.
 
-Change the payment schedule journal attributes on the **General**,
-**Dimensions**, **Legal entities**, **Journal data sources**, **Payment
-accounts**, and **Cash balance control** tabs, if you need to.
+![Parameters for payment journal generation](media/rus-payments-payment-schedule-journal.jpg)
 
-Click **Calculate**.
+18. Click **OK**.
+19. Click **Accounts payable > Journals > Payments > Payment journal** to validate and process the vendor payment journal that is created.
+20. Click **Accounts receivable > Journals > Payments > Payment journal** to validate and process the customer payment journal that is created.
 
-Click **Lines** to validate the payment schedule journal lines.
+Standard payment proposal functionality will process open transactions that have a link to a payment request that has **Accepted** status.
 
-Click **Edit beginning balance** to change the beginning balance of this
-journal.
-
-For lines that have **Payment request** as the journal data source, click
-**Payment request lines** to review the payment request lines that are included
-on the current journal line.
-
-Close the form.
-
-Click **Payment schedule** to review the payment register. If a cash shortage or
-surplus is detected, you can make changes.
-
-Click **Validate** to verify the journal. The system informs you if canceled or
-on-hold payment requests are included in this journal.
-
-If all data is correct and workflow approval of the payment plan can start, on
-the **Action Pane**, Workflow \> **Submit**.
-
-If the payment plan is approved, click **Confirm**. The status of the payment
-requests that are included changes to **Accepted**.
-
-In the **Payment request** form, on the **Action Pane**, on the **General** tab,
-in the **Related information** group, click **Payment schedule journal**.
-
-Review the payment schedule journal that is associated with the payment request.
-
->   **Note:** The following steps can be completed only if the **Payment
->   request** license configuration key is enabled.
-
-In the Payment schedule journal page, click **Functions** \> **Generate
-payments**.
-
-Specify parameters for payment journal generation.
-
-![A screenshot of a cell phone Description automatically generated](media/8480aaafc869761a88a35a7cde0d6375.jpg)
-**[Anastasia] Please add screenshot here**
-
-Click **OK**.
-
-Click **Accounts payable** \> **Journals** \> **Payments** \> **Payment
-journal** to validate and process the vendor payment journal that is created.
-
-Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment
-journal** to validate and process the customer payment journal that is created.
-
-Standard payment proposal functionality will process open transactions that have
-a link to a payment request that has **Accepted** status.
-
-The payment proposal algorithm includes additional changes that are applied when
-payment requests are used. The system will take into account the posting
-profile, the **Prepayment** parameter, and the payment order requisites that are
-filled on payment requests.
+The payment proposal algorithm includes additional changes that are applied when payment requests are used. The system will take into account the posting profile, the **Prepayment** parameter, and the payment order requisites that are filled on payment requests.
