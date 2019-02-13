@@ -1209,15 +1209,15 @@
     items:
     - name: Refresh database
       href: database/database-refresh.md
-    - name: Export database
+    - name: Export a database
       href: database/export-database.md
-    - name: Import database
+    - name: Import a database
       href: database/import-database.md
     - name: Database point-in-time restore
       href: database/database-point-in-time-restore.md
   - name: Tutorials
     items:
-    - name: General refresh for training purposes
+    - name: Refresh for training purposes
       href: database/dbmovement-scenario-general-refresh.md
     - name: Debugging and diagnostics
       href: database/dbmovement-scenario-debugdiag.md
