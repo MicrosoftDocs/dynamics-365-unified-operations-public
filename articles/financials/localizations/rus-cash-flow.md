@@ -60,7 +60,7 @@ The following table shows the stages of payment that a treasurer deals with duri
 <tr>
 <td>Business scenario</td>
 <td>Payment cause</td>
-<td>:Payment stage</td>
+<td>Payment stage</td>
 </tr>
 <tr>
 <td>The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast – payment schedule journal (payment plan).
