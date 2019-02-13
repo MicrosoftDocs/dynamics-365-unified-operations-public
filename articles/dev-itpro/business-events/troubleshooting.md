@@ -5,7 +5,7 @@ title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/06/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,12 +61,12 @@ This issue is likely a result of the queue/topic/hub name being incorrect. Check
 
 This is likely due to an incorrect endpoint value specified in the **Endpoint URL** field. Go to the **Event Grid** object in the Azure portal and open the **Event Grid**. In the **Overview** section, this value will be the **Topic Endpoint**.
 
-**Business events dont show up in the catalog**
-Business event catalog is built during full db sync. As a result, there are some use cases as listed below, where a manual refresh of the catalog will be needed to see the new business events. Manual refresh can be invoked from the catalog by going to **Manage > Rebuild business events catalog**
+**Business events do not show up in the catalog**
 
-When you are implementing business events in Visual Studio, it may happen that, you dont see the newly coded business event in the catalog.
+The Business event catalog is built during full database sync. As a result, there are some use cases, as noted below, where a manual refresh of the catalog is needed in order to see the new business events. Manual refresh can be invoked from the catalog by going to **Manage > Rebuild business events catalog**.
 
-When new workflows are configured, the workflow elements, steps etc. may not show up in the business events catalog.
+When you are implementing business events in Visual Studio you may not see the newly coded business event in the catalog.
 
-Any other situations, when you dont see certain business events, doing a manual refresh would be the mitigation.
+When new workflows are configured, such as the workflow elements or steps, might not show up in the business events catalog.
 
+In other situations, when you don’t see certain business events, doing a manual refresh should resolve the issue.
