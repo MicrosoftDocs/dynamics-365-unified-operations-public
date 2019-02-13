@@ -39,15 +39,15 @@ In this topic, you will learn how to use database movement operations to perform
 ## Database movement quick start guides
 Learn how to perform the individual operations on your Standard or Premier Acceptance Test environments:
  * [Refresh database](database-refresh.md)
- * [Export database](export-database.md)
- * [Import database](import-database.md)
- * [Database point-in-time restore](database-point-in-time-restore.md)
+ * [Export a database](export-database.md)
+ * [Import a database](import-database.md)
+ * [Database point-in-time restore (PITR)](database-point-in-time-restore.md)
 
  ## Step-by-step tutorials
  Learn how to achieve common implementation scenarios using DataALM to your advantage:
- * [General refresh for training purposes](dbmovement-scenario-general-refresh.md)
+ * [Refresh for training purposes](dbmovement-scenario-general-refresh.md)
  * [Debugging and diagnostics](dbmovement-scenario-debugdiag.md)
- * ['Golden Configuration' promotion](dbmovement-scenario-goldenconfig.md)
+ * [Golden configuration promotion](dbmovement-scenario-goldenconfig.md)
  * [Destructive testing](dbmovement-scenario-destructivetests.md)
  
  > [!Important]
