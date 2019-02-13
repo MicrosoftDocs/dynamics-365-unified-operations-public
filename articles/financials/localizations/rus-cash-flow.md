@@ -607,7 +607,6 @@ The following table lists the possible sources.
 
 3. Use the **From date** and **To date** fields to specify an effective date range.
 4. Change the payment schedule journal attributes on the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, if you need to.
-
 5. Click **Calculate**.
 6. Click **Lines** to validate the payment schedule journal lines.
 7. Click **Edit beginning balance** to change the beginning balance of this journal.
@@ -634,8 +633,7 @@ The following table lists the possible sources.
 
 17. Select payment sources that should be moved to another date, or that should be paid by using another method of payment, or payment account.
 
-![A screenshot of a cell phone Description automatically generated](media/rus-payment-schedule-balancing.jpg)
-**[Anastasia] Please add screenshot here**
+![Payment schedule balancing](media/rus-payment-schedule-balancing.jpg)
 
 18. Click **Multiple change**, specify the new payment details in the **Modify payment attributes** form, and then click **OK**.
 
@@ -649,8 +647,7 @@ The following table lists the possible sources.
 
 22. Click **Functions** \> **Delete journal lines** if changes in the journal setup are required, and calculate the journal.
 
-![A screenshot of a social media post Description automatically generated](media/6f3e695e5a325f7dc60a7629c284591a.jpg)
-**[Anastasia] Please add screenshot here**
+![Apply changes](media/rus-apply-changes.jpg)
 
 23. Click **Validate** to verify the journal. The system will inform you if canceled, on-hold, or incomplete workflow payment requests are included in this journal.
 
