@@ -576,7 +576,6 @@ This step should be completed for a Treasury company.
 
 5. Click the **Legal entities** FastTab. This section defines the legal entities that are used for payment schedule journal generation. Use the button to select a legal entity.
 6. On the **Journal data sources** FastTab, click **Add line** to create a new record.
-
 7. Specify the data source and source direction for the payment schedule journal.
 The following table lists the possible sources.
 
@@ -593,13 +592,9 @@ The following table lists the possible sources.
 | Accounts receivable (inflow/outflow)   | Open customer transactions without a link to a payment request.       |
 
 9. Create lines that have the required journal data sources.
-
 10. On the **Payment accounts** FastTab, set the **Include transactions with no specified bank account** option to be **Yes** if the payment schedule journal should include planned payments and payment requests that do not have a payment account specified.
-
 11. Click **Add line** to create a new record.
-
 12. Specify the **Payment account type** and **Account number**. The payment schedule journal will include only sources that are associated with the specified payment accounts.
-
 13. On the **Cash balance control** FastTab, click **Add line** and then specify the **Currency** and **Minimum cash balance**. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
 ### Payment plan processing
@@ -624,11 +619,8 @@ The following table lists the possible sources.
   ![Payment schedule sheet](media/rus-payment-schedule-sheet.jpg)
 
 11. Select the **Show totals per payment accounts** check box if the payment schedule sheet should be calculated based on payment accounts.
-
 12. Select the **Show totals per method of payments** check box if the payment schedule sheet should be calculated based on methods of payments.
-
 13. Click the **\<** button to select an aggregation parameter for the payment schedule sheet.
-
 14. Click **Show results**.
 
 ![A screenshot of a social media post Description automatically generated](media/7d37da18e4fae7ed0464e72852a0b614.jpg)
