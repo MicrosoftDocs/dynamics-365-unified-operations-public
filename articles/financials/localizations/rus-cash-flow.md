@@ -32,8 +32,6 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 
-**Note:** The data set that is used in this document is for demo purposes only. The codes that you use for ledger accounts, value-added tax (VAT), rates, and so on, should comply with the rules that are accepted in your company.
-
 In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own invoices payable information. Payments for all the operating legal entities are generated from a single legal entity, which might be called the Treasury legal entity (company).
 
 The Treasury company is responsible for monitoring the flow of cash/liquidity movement across companies and cash positions, and for preventing corporate cash shortage in good time.
@@ -49,7 +47,10 @@ medium-term/short-term horizon.
 
 - Maintain the company’s cash flows through centralized control.
 
-This document provides a step-by-step example that illustrates the settings and user activities for cash flow management in Microsoft Dynamics 365 for Finance and Operations.
+This document provides a step-by-step example that illustrates the settings and user activities for cash flow management in Microsoft Dynamics 365 for Finance and Operations. 
+
+> [!NOTE]
+> The data set that is used in this document is for demo purposes only. The codes that you use for ledger accounts, value-added tax (VAT), rates, and so on, should comply with the rules that are accepted in your company.
 
 In this example, Contoso Retail RUS (RURT) is a subsidiary of an industrial holding company and does business as an operating legal entity. Contoso Entertainment Systems Russia (RUMF) is an internal bank of an industrial holding company and handles all payments.
 
@@ -101,15 +102,15 @@ The new entity is an expansion of vendor transactions and customer transactions.
 
 After you complete the example that is provided in this document, you will be able to complete the following tasks:
 
-Configure cash flow management parameters to support the new functionality.
+- Configure cash flow management parameters to support the new functionality.
 
-Perform a planned payment processing. Forecast transactions of incoming and outgoing payments are automatically created and updated based on purchase orders, sales orders and free text invoices.
+- Perform a planned payment processing. Forecast transactions of incoming and outgoing payments are automatically created and updated based on purchase orders, sales orders and free text invoices.
 
-(Only if the **Payment request** license configuration key is enabled) Perform payment request processing (including creation, update, and approval), based on indebtedness to vendors, customers, and workers, and prepayment requirements from vendors.
+- (Only if the **Payment request** license configuration key is enabled) Perform payment request processing (including creation, update, and approval), based on indebtedness to vendors, customers, and workers, and prepayment requirements from vendors.
 
-Perform payment schedule journal processing for mid-term liquidity planning (payment plan) and daily payment management (payment register). Analyze cash deficit and surplus through payment schedule sheet balancing (the simulation function).
+- Perform payment schedule journal processing for mid-term liquidity planning (payment plan) and daily payment management (payment register). Analyze cash deficit and surplus through payment schedule sheet balancing (the simulation function).
 
-Generate payments, based on an approved payment register (a type of payment schedule journal).
+- Generate payments, based on an approved payment register (a type of payment schedule journal).
 
 ## Setup
 
