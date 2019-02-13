@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Installing BaseX for AppChecker
+title: Install BaseX for AppChecker
 description: This topic describes how to install and set up BaseX in a developer environment.
 author: AndreasHassing
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 25
 
 ---
 
-# Installing BaseX for AppChecker
+# Install BaseX for AppChecker
 
 [!include [banner](../includes/banner.md)]
 
