@@ -94,6 +94,9 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    
 # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
 1. Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.
@@ -136,6 +139,9 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    
 # [Retail 8.1.3 and later](#tab/retail-8-1-3)
 
 1. Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.
@@ -178,6 +184,9 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    
 # [Retail 10.0 and later](#tab/retail-10-0)
 
 The Generic Tax Engine component is a part of sealed extensions.
@@ -192,9 +201,9 @@ The Generic Tax Engine component is a part of sealed extensions.
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
-    
-> [!WARNING]
-> Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 ### Set up required parameters in Retail headquarters
 
