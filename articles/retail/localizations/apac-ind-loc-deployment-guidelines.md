@@ -205,6 +205,8 @@ The Generic Tax Engine component is a part of sealed extensions.
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
+---
+
 ### Set up required parameters in Retail headquarters
 
 For more information, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).
