@@ -72,11 +72,11 @@ Before you create fixed asset transfers between companies, you must adjust the s
 6. In the **Fixed asset** field, change the code for the asset. This step is optional.
 7. If you have selected a company to transfer the asset to, you may select the fixed asset inventory number that corresponds to the asset after transfer. The status of this asset should be **Scheduled** or **Written off**.  
 
-    After a Transference transaction  is posted in the fixed assets journal (**Fixed assets (Russia) \> Journals \> FA journal**), the information is updated on the **Transference to another company**:
-    - **Overview** tab - **Posted** field, if the transference operation was posted for all value models; 
+    After a Transference transaction  is posted in the fixed assets journal (**Fixed assets (Russia) \> Journals \> FA journal**), the information is updated on the **Transference to another company** page automatically:
+    - **Overview** tab - **Posted** field. This field is marked, if the transference operation was posted for all value models; 
     - **Value models** tab - balance cost, book depreciation and lifetime for value models the transference operation was posted for.   
     
-You may also create a record on **Transference to another company** page automatically. The record is created after closing the **Transference to another company** journal (**Fixed assets (Russia) \> Journals \> Transfer journals**). How to create a record in the **Transference to another company** journal see  **[Transfer a group of fixed assets](rus-movements/articles/financials/localizations/rus-fixed-asset-transfer.md#Transfer-a-group-of-fixed assets)**  
+You may also create a record on **Transference to another company** page automatically. The record is created after closing the **Transference to another company** journal (**Fixed assets (Russia) \> Journals \> Transfer journals**). How to create a record in the **Transference to another company** journal see  **[Transfer a group of fixed assets](rus-fixed-asset-transfer.md#Transfer-a-group-of-fixed assets)**  
 
     > [!NOTE]
     > On the **Receipt from another company** page, the fields on the **Value models** tab are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset that is being transferred and accepted aren't automatically verified. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
