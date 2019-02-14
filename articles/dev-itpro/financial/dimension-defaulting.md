@@ -38,13 +38,23 @@ This topic uses examples from the demo data company USMF.
 
 ### Default dimension entry
 
-There are over 250 pages in Microsoft Dynamics 365 for Finance and Operations that allow you to enter default financial dimensions. The dimensions are displayed on a FastTab that lists dimensions with values and descriptions. In standard demo data there are over 30 dimensions available but only five are displayed in this example of a Financial dimensions FastTab. 
+:::row:::
+    :::column:::
+        There are over 250 pages in Microsoft Dynamics 365 for Finance and Operations that allow you to enter default financial dimensions. The dimensions are displayed on a FastTab that lists dimensions with values and descriptions. In standard demo data there are over 30 dimensions available but only five are displayed in this example of a Financial dimensions FastTab. 
+    :::column-end:::
+    :::column:::
+       ![Financial dimensions FastTab fields](./media/DefaultDimensionEntry.png "Financial dimensions FastTab fields")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        The dimensions are filtered first based on the list of all active account structures that are associated with the ledger of the current company or the company specified on a page. Finally, a union of all of the dimensions in these account structures, plus all active advanced rules associated with those structures is obtained. 
+    :::column-end:::
+    :::column:::
+       ![Financial dimension list](./media/FinancialDimensionList.png "Financial dimension list")
+    :::column-end:::
+:::row-end:::
 
-![Financial dimensions FastTab fields](./media/DefaultDimensionEntry.png "Financial dimensions FastTab fields")
-
-The dimensions are filtered first based on the list of all active account structures that are associated with the ledger of the current company or the company specified on a page. Finally, a union of all of the dimensions in these account structures, plus all active advanced rules associated with those structures is obtained.
-
-![Financial dimension list](./media/FinancialDimensionList.png "Financial dimension list")
 
 
 This example uses the demo data company USMF. The **Ledger** page (**General Ledger > Setup > Ledger**) shows that three different account structures are used by this company as shown in the following screenshot.
