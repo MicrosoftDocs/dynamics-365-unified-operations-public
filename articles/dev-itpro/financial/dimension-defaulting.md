@@ -51,7 +51,7 @@ This example uses the demo data company USMF. The **Ledger** page (**General Led
 
 ![Ledger configuration for company USMF](./media/LedgerStructureConfiguration.png "Ledger configuration for company USMF")
 
-When you select the first account structure and click the Configure account structure button, you can see that three dimensions are used by that account structure. Selecting the second account structure shows 5 dimensions are used in that account structure as shown in Figure 5 below.
+When you select the first account structure and click the Configure account structure button, you can tell how many dimensions are used by that account structure by counting the columns. The following two screenshots show an account structure that uses three dimensions and another account structure that uses five. 
 
 ![Balance sheet account structure setup for company "USMF"](./media/BalanceSheetAccountStructureSetup.png "Balance sheet account structure setup for company USMF")
 
@@ -59,29 +59,26 @@ When you select the first account structure and click the Configure account stru
 
 Comparing the dimensions from both account structures, there are a total of 4 unique dimensions. Four of these dimensions account for dimensions displaying in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
 
-It is also important to note that the MainAccount dimension is not shown in most default dimension lists. The exception to this is budgeting which does explicitly include the MainAccount as part of the list of default dimensions.
+It is also important to note that the MainAccount dimension is not shown in most default dimension lists. Budgeting is the exception because it does explicitly include the MainAccount as part of the list of default dimensions.
 
-Figures 6 and 7 below show the advanced rule and structure resulting in the project dimension being display in the default dimensions.
+The following images show the advanced rule and structure that results in the project dimension being included in the default dimensions.
 
-[![AdvancedRuleLinked](./media/AdvancedRuleLinked.png)](./media/AdvancedRuleLinked.png)
+![Advanced rule linked to the Profit and loss structure](./media/AdvancedRuleLinked.png "Advanced rule linked to the Profit and loss structure")
 
-**Figure 6: Advanced rule linked to the Profit and loss structure**
+![The rule structure for Project](./media/RuleStructure.png "The rule structure for Project")
 
-[![RuleStructure](./media/RuleStructure.png)](./media/RuleStructure.png)
-**Figure 7: The rule structure for Project**
-
-**API for default dimensions list**
+### API for default dimensions list
 
 The default dimension controller determines which dimensions are applicable for a company using the *DimensionCache::getDimensionAttributeSetForLedger()* API.
 
 ## Control uptake and storage
 
-**Form uptake and dimensions data model**
+### Form uptake and dimensions data model
 
 All forms displaying default dimensions use the *DimensionDefaultingController*. The controller automatically handles displaying dimensions, loading and saving values and user interaction. These uptake patterns are documented in the [Accounts and Dimensions
-whitepaper](http://technet.microsoft.com/EN-US/library/hh272858.aspx).
+whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
 
-**Default dimension value storage**
+### Default dimension value storage
 
 The values associated with the dimensions are stored in a separate table apart from the primary table referencing them. For example, the *LedgerJournalTable* has a *DimensionDefault* column that holds a foreign key reference to a record in the *DimensionAttributeValueSet* table. This is the parent record representing the set of values displayed. Each individual value is stored as a separate row in the *DimensionAttributeValueSetItem* table sharing the same parent record foreign key. This data can be queried directly through these tables or using the *DimensionAttributeValueSetItemView* as shown in Figure 1 below.
 
