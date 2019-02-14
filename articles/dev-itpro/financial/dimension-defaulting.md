@@ -5,7 +5,7 @@ title: Dimension defaulting
 description: This topic describes default dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension.
 author: jasonsto
 manager: annbe
-ms.date: 1/16/2019
+ms.date: 2/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,30 +36,26 @@ This topic uses examples from the demo data company USMF.
 
 ## Financial dimensions discovery
 
-**Default dimension entry**
+### Default dimension entry
 
 There are over 250 pages in Microsoft Dynamics 365 for Finance and Operations that allow you to enter default financial dimensions. The dimensions are displayed on a FastTab that lists dimensions with values and descriptions. In standard demo data there are over 30 dimensions available but only five are displayed in this example of a Financial dimensions FastTab. 
 
-![DefaultDimensionEntry](./media/DefaultDimensionEntry.png "Financial dimensions FastTab fields")
+![Financial dimensions FastTab fields](./media/DefaultDimensionEntry.png "Financial dimensions FastTab fields")
 
 The dimensions are filtered first based on the list of all active account structures that are associated with the ledger of the current company or the company specified on a page. Finally, a union of all of the dimensions in these account structures, plus all active advanced rules associated with those structures is obtained.
 
-[![FinancialDimensionList](./media/FinancialDimensionList.png)](./media/FinancialDimensionList.png) 
-**Figure 2: Financial dimension list**
+![Financial dimension list](./media/FinancialDimensionList.png "Financial dimension list")
 
 
-In this example, the demo data company being used is "USMF". Opening the *Ledger* form (General Ledger \> Setup \> Ledger), it shows that three different account structures are used by this company as shown in Figure 3 below.
+This example uses the demo data company USMF. The **Ledger** page (**General Ledger > Setup > Ledger**) shows that three different account structures are used by this company as shown in the following screenshot.
 
-[![LedgerStructureConfiguration](./media/LedgerStructureConfiguration.png)](./media/LedgerStructureConfiguration.png) 
-**Figure 3: Ledger configuration for company "USMF"**
+![Ledger configuration for company USMF](./media/LedgerStructureConfiguration.png "Ledger configuration for company USMF")
 
-Selecting the first account structure and clicking the Configure account structure button shows 3 dimensions are used by that account structure as shown in Figure 4 below. Selecting the second account structure shows 5 dimensions are used in that account structure as shown in Figure 5 below.
+When you select the first account structure and click the Configure account structure button, you can see that three dimensions are used by that account structure. Selecting the second account structure shows 5 dimensions are used in that account structure as shown in Figure 5 below.
 
-[![BalanceSheetAccountStructureSetup](./media/BalanceSheetAccountStructureSetup.png)](./media/BalanceSheetAccountStructureSetup.png) 
-**Figure 4: Balance sheet account structure setup for company "USMF"**
+![Balance sheet account structure setup for company "USMF"](./media/BalanceSheetAccountStructureSetup.png "Balance sheet account structure setup for company USMF")
 
-[![PandLAccountStructureSetup](./media/PandLAccountStructureSetup.png)](./media/PandLAccountStructureSetup.png) 
-**Figure 5: Profit and loss account structure setup for company "USMF"**
+![Profit and loss account structure setup for company USMF](./media/PandLAccountStructureSetup.png "Profit and loss account structure setup for company USMF")
 
 Comparing the dimensions from both account structures, there are a total of 4 unique dimensions. Four of these dimensions account for dimensions displaying in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
 
