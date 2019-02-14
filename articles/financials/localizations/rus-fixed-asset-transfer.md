@@ -76,12 +76,12 @@ Before you create fixed asset transfers between companies, you must adjust the s
     - **Overview** tab - **Posted** field, if the transference operation was posted for all value models; 
     - **Value models** tab - balance cost, book depreciation and lifetime for value models the transference operation was posted for.   
     
-You may also create a record on **Transference to another company** page automatically. The record is created after closing the **Transference to another company** journal (**Fixed assets (Russia) \> Journals \> Transfer journals**). How to create a record in the **Transference to another company** journal see    
+You may also create a record on **Transference to another company** page automatically. The record is created after closing the **Transference to another company** journal (**Fixed assets (Russia) \> Journals \> Transfer journals**). How to create a record in the **Transference to another company** journal see  **[Transfer a group of fixed assets](rus-movements/articles/financials/localizations/rus-fixed-asset-transfer.md#Transfer-a-group-of-fixed assets)**  
 
     > [!NOTE]
     > On the **Receipt from another company** page, the fields on the **Value models** tab are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset that is being transferred and accepted aren't automatically verified. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
 
-### Transfer groups of fixed assets
+### Transfer a group of fixed assets
 
 1. Select **Fixed assets (Russia) \> Journals \> Transfer journals \> Transference to another company**.
 2. Click **New** to create a line, and then, in the **Date** field, enter the date of the asset transfer.
