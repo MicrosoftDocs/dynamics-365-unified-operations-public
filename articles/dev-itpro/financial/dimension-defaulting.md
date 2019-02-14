@@ -72,7 +72,9 @@ This topic uses examples from the demo data company USMF.
     Comparing the dimensions from both account structures, there are a total of 4 unique dimensions. Four of these dimensions account for dimensions displaying in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
     :::column-end:::
     :::column:::
+    **Account structure with three dimensions**
        ![Balance sheet account structure setup for company "USMF"](./media/BalanceSheetAccountStructureSetup.png "Balance sheet account structure setup for company USMF")
+    **Account structure with five dimensions**
        ![Profit and loss account structure setup for company USMF](./media/PandLAccountStructureSetup.png "Profit and loss account structure setup for company USMF")
     :::column-end:::
 :::row-end:::
