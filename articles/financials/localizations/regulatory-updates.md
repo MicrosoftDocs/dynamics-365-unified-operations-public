@@ -1,4 +1,4 @@
----
+Retail - Fiscal integration---
 # required metadata
 
 title: Regulatory updates
@@ -46,6 +46,15 @@ When a month is used in the Date column, the regulatory update is planned to be 
 |      March 2019          |   10.0.0      | Austria      |   Changes in Kammerumlage 2019 (Purchase duty)    |
 |      March 2019          |   10.0.0      |   Brazil    |     SPED EFD Contributions - Layout  004 and 005  |
 |      March 2019          |   10.0.0      |    Malaysia     |Malaysia replaces GST with SST sales & service tax        |
+|      April 2019          |   10.0.1      |    Austria     |Retail - Fiscal integration         |
+|      April 2019          |   10.0.1      |    Europe     |E-invoicing - Customers invoices export in PEPPOL BIS 3 format         |
+|      April 2019          |   10.0.1      |    Europe     |E-invoicing - Vendors invoices import from PEPPOL BIS 3 format         |
+|      April 2019          |   10.0.1      |   Germany     |E-invoicing - Customers invoices export in xRechnung 1.1 format         |
+|      April 2019          |   10.0.1      |    United Kingdom     |VAT Statement submission changes (Making Tax Digital)    |    
+|      April 2019          |   10.0.1      |    Brazil     |SPED ECF - Layout 5 for 2019        |
+|      April 2019          |   10.0.1      |    Brazil     |NF-e new NT 2018.005         |
+|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019         |
+|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books formats)  |
 
 ## Additional resources
 - Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (log in required).
