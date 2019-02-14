@@ -29,6 +29,8 @@ ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
+# Defaulting dimensions
+[!include [banner](../includes/banner.md)]
 
 This topic explains default dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension. Examples showing the user interface as well as SQL table queries with output are included along with some explanation of APIs and usage examples.
 
