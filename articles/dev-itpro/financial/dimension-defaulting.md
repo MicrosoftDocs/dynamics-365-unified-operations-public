@@ -59,7 +59,7 @@ This topic uses examples from the demo data company USMF.
 :::row:::
     :::column:::
     ### Ledger page
-    The **Ledger** page (**General Ledger > Setup > Ledger**) is where you can maintain the account structures for a company. This example uses the demo data company USMF. 
+    The **Ledger** page (**General Ledger > Setup > Ledger**) is where you can maintain the account structures for a company. 
     :::column-end:::
     :::column:::
        ![Ledger configuration for company USMF](./media/LedgerStructureConfiguration.png "Ledger configuration for company USMF")
@@ -78,7 +78,7 @@ This topic uses examples from the demo data company USMF.
     :::column-end:::
 :::row-end:::
 
-Comparing the dimensions from both account structures, there are a total of 4 unique dimensions. Four of these dimensions account for dimensions displaying in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
+Between the two account structures shown earlier, there are four unique dimensions. These four dimensions account for the dimensions that will display in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
 It is also important to note that the MainAccount dimension is not shown in most default dimension lists. Budgeting is the exception because it does explicitly include the MainAccount as part of the list of default dimensions.
 
 The following images show the advanced rule and structure that results in the project dimension being included in the default dimensions.
