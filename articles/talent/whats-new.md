@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR 
+# What's new or changed in Dynamics 365 for Talent 
 
 [!include [banner](includes/banner.md)]
 
