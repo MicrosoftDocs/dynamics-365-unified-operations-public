@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 for Talent
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: tfehr
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 02/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
