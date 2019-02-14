@@ -73,13 +73,14 @@ Before you create fixed asset transfers between companies, you must adjust the s
 7. If you have selected a company to transfer the asset to, you may select the fixed asset inventory number that corresponds to the asset after transfer. The status of this asset should be **Scheduled** or **Written off**.  
 
     After a Transference transaction  is posted in the fixed assets journal (**Fixed assets (Russia) \> Journals \> FA journal**), the information is updated on the **Transference to another company** page automatically:
-    - **Overview** tab - **Posted** field. This field is marked, if the transference operation was posted for all value models; 
-    - **Value models** tab - balance cost, book depreciation and lifetime for value models the transference operation was posted for.   
+    - **Overview** tab - **Posted** field is selected, if the transference operation was posted for all value models; 
+    - **Value models** tab - balance cost, book depreciation and lifetime for value models, the transference operation was posted for.   
     
 You may also create a record on **Transference to another company** page automatically. The record is created after closing the **Transference to another company** journal (**Fixed assets (Russia) \> Journals \> Transfer journals**). How to create a record in the **Transference to another company** journal see  **[Transfer a group of fixed assets](rus-fixed-asset-transfer.md#Transfer-a-group-of-fixed assets)**  
 
    > [!NOTE]
-   > On the **Receipt from another company** page, the fields on the **Value models** tab are updated for the asset record. When you transfer an asset to another company, the material asset types in the records for the asset that is being transferred and accepted aren't automatically verified. You must verify that information in the **Type** field on the **General** tab of the **Fixed assets** page.
+   > After posting a transfer journal the fixed asset status is set to **Written off** and in the receiping company,  
+   on the **Receipt from another company** page, the fields on the **Value models** tab are updated for the fixed asset which was specified in the **Transference to another company** page.
 
 ### Transfer a group of fixed assets
 
@@ -95,15 +96,15 @@ You may also create a record on **Transference to another company** page automat
 6. In the **Source** field, select the inventory number of the fixed asset that is being transferred.
 
     > [!NOTE]
-    > Available assets have a status of **In operation**. The **Account name** field shows the name of the asset that is being transferred. If the receiving company is specified for the journal, the **Destination company** field shows the company name.
+    > Available assets have  the **In operation** status. The **Account name** field shows the name of the asset that is being transferred. If the receiving company is specified for the journal, the **Destination company** field shows the company name.
 
 7. In the **Destination** field, select the asset number that corresponds to the asset that is being transferred, in the receiving company.
 
     > [!NOTE]
-    > Available assets have a status of **Scheduled** or **Written off**. The **Account name** field shows the account that the asset is transferred to, based on the value that you select in the **Destination** field.
+    > Available assets have **Scheduled** or **Written off** status. The **Account name** field shows the account that the asset is transferred to, based on the value that you select in the **Destination** field.
 
-8. Repeat steps 5 through 7 to create additional lines that are required, and then close the page.
-9. On the **Transference to another company** page, select **Close**. The **Posted** check box is selected, and information about the transfer is shown in the history of the fixed assets or inventory assets that are specified on the journal lines.
+7. Repeat steps 5 through 7 to create additional lines that are required, and then close the page.
+9. On the **Transference to another company** page, select **Close**. The **Posted** check box is selected, and information about the transfer is shown in the history of the fixed assets or inventory assets that are specified on the journal lines (**Transference to another company** page).
 10. Select **Fixed assets (Russia) \> Journals \> FA journal**.
 11. Select **Lines**, and enter the Transference transactions on the journal lines. This process resembles the process for creating an acquisition transaction.
 
@@ -111,7 +112,7 @@ You may also create a record on **Transference to another company** page automat
     > The date of the transaction on the **Fixed asset** page can't be earlier than the date when the transfer to another company was registered in the asset history. You must use a group transaction to create lines. Lines are automatically created for all fixed assets that have information about transfers to another company in the history.
 
 12. Select **Validate \> Validate** to validate the journal.
-13. Select **Post \> Post** to create the Vourcher and FA transactions (**Fixed assets (Russia) \> Inquiries \> Transactions** or **Fixed assets (Russia) \> Inquiries \> Voucher transactions**).
+13. Select **Post \> Post** to create the Vourcher and FA transactions. You may overview all Voucher and FA transactions in the inquiries (**Fixed assets (Russia) \> Inquiries \> Transactions** or **Fixed assets (Russia) \> Inquiries \> Voucher transactions**).
 
 ### Receive a group of fixed assets from another company
 
