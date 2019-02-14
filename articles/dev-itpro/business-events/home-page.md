@@ -93,6 +93,9 @@ Endpoints let you manage the destinations that Finance and Operations must send 
 - Azure Service Bus Queue
 - Azure Service Bus Topic
 - Azure Event Grid
+- Azure Event Hub
+- HTTPS
+- Microsoft Flow
 
 Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
 
