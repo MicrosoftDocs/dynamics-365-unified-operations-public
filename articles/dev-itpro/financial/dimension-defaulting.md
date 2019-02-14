@@ -40,8 +40,8 @@ This topic uses examples from the demo data company USMF.
 
 :::row:::
     :::column:::
-    **Default dimension entry**
-        There are over 250 pages in Microsoft Dynamics 365 for Finance and Operations that allow you to enter default financial dimensions. The dimensions are displayed on a FastTab that lists dimensions with values and descriptions. In standard demo data there are over 30 dimensions available but only five are displayed in this example of a Financial dimensions FastTab. 
+    ### Default dimension entry
+    There are over 250 pages in Microsoft Dynamics 365 for Finance and Operations that allow you to enter default financial dimensions. The dimensions are displayed on a FastTab that lists dimensions with values and descriptions. In standard demo data there are over 30 dimensions available but only five are displayed in this example of a Financial dimensions FastTab. 
     :::column-end:::
     :::column:::
        ![Financial dimensions FastTab fields](./media/DefaultDimensionEntry.png "Financial dimensions FastTab fields")
@@ -49,7 +49,7 @@ This topic uses examples from the demo data company USMF.
 :::row-end:::
 :::row:::
     :::column:::
-    **Dimensions list**
+    ### Dimensions list
     The dimensions are filtered first based on the list of all active account structures that are associated with the ledger of the current company or the company specified on a page. Finally, a union of all of the dimensions in these account structures, plus all active advanced rules associated with those structures is obtained. 
     :::column-end:::
     :::column:::
@@ -58,7 +58,7 @@ This topic uses examples from the demo data company USMF.
 :::row-end:::
 :::row:::
     :::column:::
-    **Ledger page**
+    ### Ledger page
     The **Ledger** page (**General Ledger > Setup > Ledger**) is where you can maintain the account structures for a company. This example uses the demo data company USMF. 
     :::column-end:::
     :::column:::
@@ -67,19 +67,18 @@ This topic uses examples from the demo data company USMF.
 :::row-end:::
 :::row:::
     :::column:::
-    **Account structures with varying numbers of dimensions**
+    ### Account structures with varying numbers of dimensions
     When you select the first account structure and click the Configure account structure button, you can tell how many dimensions are used by that account structure by counting the columns. The following two screenshots show an account structure that uses three dimensions and another account structure that uses five.  
-    Comparing the dimensions from both account structures, there are a total of 4 unique dimensions. Four of these dimensions account for dimensions displaying in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
     :::column-end:::
     :::column:::
-    **Account structure with three dimensions**
+    *Account structure with three dimensions*
        ![Balance sheet account structure setup for company "USMF"](./media/BalanceSheetAccountStructureSetup.png "Balance sheet account structure setup for company USMF")
-    **Account structure with five dimensions**
+    *Account structure with five dimensions*
        ![Profit and loss account structure setup for company USMF](./media/PandLAccountStructureSetup.png "Profit and loss account structure setup for company USMF")
     :::column-end:::
 :::row-end:::
 
-
+Comparing the dimensions from both account structures, there are a total of 4 unique dimensions. Four of these dimensions account for dimensions displaying in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
 It is also important to note that the MainAccount dimension is not shown in most default dimension lists. Budgeting is the exception because it does explicitly include the MainAccount as part of the list of default dimensions.
 
 The following images show the advanced rule and structure that results in the project dimension being included in the default dimensions.
