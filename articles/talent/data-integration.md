@@ -5,7 +5,7 @@ title: Data integration guidance for Dynamics 365 for Talent
 description: This topic provides guidance on various options for integrating with data managed by Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
