@@ -5,7 +5,7 @@ title: Accounts payable home page
 description: This topic provides an overview of Accounts payable.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -142,7 +142,7 @@ The [Microsoft Dynamics Operations Partner Community Blog](https://community.dyn
 
 #### Community blogs
 
-- [How to manage payables in Dynamics 365 for Finance and Operations](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[How to manage payables in Dynamics 365 for Finance and Operations](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### Task guides
 Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
