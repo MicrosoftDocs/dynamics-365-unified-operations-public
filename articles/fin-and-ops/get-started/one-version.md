@@ -33,15 +33,15 @@ ms.dyn365.ops.version: 8.1
 
 In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
-## Schedule for April release and beyond
+## Schedule for April 10.0 release and beyond
 
-### Can the 10.0 update itself be delayed?  Or does the policy for delaying updates only apply once someone is on version 10.0?
-The ability to pause/delay an update for up to 3 months will be available for version 10.0. In March 2019, the ability to set up this configuration or the ability to pause updates will be available through LCS.
+### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
+The ability to pause/delay an update for up to 3 months will be available in version 10.0. In early March, the ability to set up this configuration or pause updates will be available through LCS.
 
-### Given a release date like April 1st, which ring is being released that day?  Is it the GA ring?  Or would GA be released several weeks later?
-[Standard release/Ring 4](public-preview-releases.md) production updates for a monthly release will  be scheduled for the 1st, 2nd and 3rd weeks of the month. Depending on the configuration that the customer opts in LCS, the customer will receive updates that specific week.
-
-For the April 10.0 release, Microsoft will update during the weekends of April 6, 13, or 20th based on the configuration setup in LCS. Sandbox updates will always be scheduled a week prior. The configuration setup will be available in early March.
+### With a release date in early April, which ring is being released at that time? Is it the GA ring? Or will GA be released several weeks later?
+[Standard release/Ring 4](public-preview-releases.md) production updates for a monthly release will  be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
+ 
+For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup will be available in early March.
 
 ## Service updates
 
