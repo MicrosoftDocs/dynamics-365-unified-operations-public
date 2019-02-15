@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dimension defaulting
-description: This topic describes default dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension.
+title: Default financial dimensions
+description: This topic describes default financial dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension.
 author: jasonsto
 manager: annbe
 ms.date: 2/14/2019
@@ -29,14 +29,12 @@ ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Defaulting dimensions
+# Default financial dimensions
 [!include [banner](../includes/banner.md)]
 
-This topic explains default dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension. Examples showing the user interface as well as SQL table queries with output are included along with some explanation of APIs and usage examples.
+This topic explains default financial dimensions for developers and it will cover where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension. Examples showing the user interface as well as SQL table queries with output are included along with some explanation of APIs and usage examples. This topic uses examples from the demo data company USMF.
 
-This topic uses examples from the demo data company USMF.
-
-## Financial dimensions discovery
+For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
 
 :::row:::
     :::column:::
