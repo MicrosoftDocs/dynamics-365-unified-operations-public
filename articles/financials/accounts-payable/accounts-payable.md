@@ -140,6 +140,10 @@ There are many posts about Accounts payable on the [Microsoft Dynamics AX produc
 
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
+#### Community blogs
+
+- [How to manage payables in Dynamics 365 for Finance and Operations](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+
 #### Task guides
 Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
 
