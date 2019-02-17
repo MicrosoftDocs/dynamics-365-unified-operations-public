@@ -49,7 +49,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
-### Deprecated APIs
+### Deprecated APIs and future breaking changes
 <Brief description of the APIs we're deprecating.>
 
 To access the list of APIs that are being deprecated, see [Deprecated APIs](deprecation-deletion-apis.md).
@@ -62,6 +62,15 @@ To access the list of APIs that are being deprecated, see [Deprecated APIs](depr
 | **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
 | **Status**                         | Deprecated - Target timeframe for removal of the APIs is <month/year> or <quarter/year> or <release/version>. |
 
+#### Field groups containing invalid field references
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | It is currently possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a compiler warning rather than an error, meaning that the deployable package creation and deployment can proceed without fixing the problem. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services. Fixing this issue is simple: 1) Remove the invalid field reference from the table field group definition. 2) Recompile 3) Ensure any warnings or errors are addressed. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in the future, currently target to platform update 30. |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All. |
+| **Status**                         | The warning will become a compile time error as of platform update 30. |
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
