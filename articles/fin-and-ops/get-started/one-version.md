@@ -83,6 +83,10 @@ Customers can configure the day and maintenance time windows in Lifecycle Servic
 
 Users can update to the latest version using the tiles on the Environment details page in LCS. After the update is released by Microsoft, the tile will show the latest update. Customers can choose to apply the update on their own by going through the update experience on their sandbox and production environments. Documentation will also be made available on docs.microsoft.com.
 
+### How do I update production to the same version after sandbox is updated by Microsoft?
+
+When the sandbox environment is updated by Microsoft the package used for the update is saved in the Project's asset library. It will be prefixed with the word Service Update followed by the name of the package. Since the package was already applied to the sandbox, you can proceed to mark this package as a Release Candidate and then go to the production environment and schedule to apply it like any other update. 
+
 ### What is the expected downtime?
 
 The expected downtime for a successful update is 30 minutes to 1 hour. However, we ask for three hours of downtime in case issues occur while the update is applied. We are actively working to reduce the downtime that is required, and you should expect improvements in the next few months.
