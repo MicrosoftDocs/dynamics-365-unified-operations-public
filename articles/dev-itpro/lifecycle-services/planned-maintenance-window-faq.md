@@ -34,8 +34,25 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 ### What is a planned maintenance window?
-
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply critical updates to your cloud service.
+
+### How does a planned maintenance window work?
+For all planned updates, Microsoft will send a notification to all stakeholders **five days** before the patching window begins. The patching window, which is when the environment is patched, is defined by geographic region.
+
+### When is this planned maintenance window taken?
+To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. All environments fall in one of these three regions. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
+- NAM: 2 AM to 10 AM
+- EMEA: 10 PM to 6 AM
+- APAC: 12 PM to 9 PM
+
+
+## Operating system-level updates 
+Most Operating system–level updates are completed in approximately one hour. However, we ask for a three hour window to handle failures and bring the system back to a health state. 
+
+The exact downtime for all updates will be included in the maintenance window notification email that is sent to you before the start of the update.
+
+### Where can I learn more about what is applied?
+For more information about the updates that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/en-us/security/bulletins.aspx).  
 
 ### How does a planned maintenance window work?
 For all planned updates, Microsoft will send a notification to all stakeholders five days before the patching window begins. The patching window, which is when the environment is patched or the update is applied, is defined by geographic region.
@@ -44,23 +61,24 @@ During a platform update, Microsoft Dynamics Lifecycle Services (LCS) will refle
 
 At this time, during operation system-level updates, LCS does not indicate that any patching is in progress. We are planning to add this functionality sometime in the future.
 
-### When is this planned maintenance window taken?
-To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
-- NAM: 2 AM to 10 AM
-- SAM: 12 AM to 8 AM
-- EMEA: 10 PM to 6 AM
-- CAN: 2 AM to 10 AM
-- APAC: 12 PM to 9 PM
+## Microsoft service updates 
+To learn more see the [One Version service updates FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version).  
 
-### What updates are applied in the planned maintenance window?
-During the planned maintenance window, operating system–level updates, and critical security and reliability platform updates are applied. For more information about the updates that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/en-us/security/bulletins.aspx).  
+
+### How does a planned maintenance window work?
+For all planned updates, Microsoft will send a notification to all stakeholders five days before the patching window begins. The patching window, which is when the environment is patched or the update is applied, is defined by geographic region.
+
+During a platform update, Microsoft Dynamics Lifecycle Services (LCS) will reflect the state of your environment at all times and provide email updates about the process. The History section on the Environment pane shows the updates that have been completed,
+
+At this time, during operation system-level updates, LCS does not indicate that any patching is in progress. We are planning to add this functionality sometime in the future.
+
 
 ### How long is the maintenance window?
 Operating system–level updates are completed in approximately one hour.
 
 Platform updates are typically completed in one to three hours. In rare instances, a platform update can take up to eight hours to be completed.
 
-The exact downtime for all updates will be included in the maintenance window notification email that is sent to you before the start of the update.
+
 
 ### What environments are updated as a part of the planned maintenance?
 Platform updates are applied on the Tier-2 sandbox environment that is included in the Microsoft base offer. After validating that the environments are patched successfully, Microsoft will apply this update in the production environment within five days.
@@ -137,22 +155,7 @@ Every platform update package from Microsoft is available on the Deployable pack
 
 You can apply an operating system–level update by turning on Windows Updates on Tier-1 environments. All other environments are updated by Microsoft.
 
-### Because patching of the production environment doesn’t occur until five days after patching of the sandbox environment for a platform update, how do I make sure that all the environments are in the same state and have the same version?
-Microsoft applies the update on the Tier-2 sandbox (pre-production) environment. If that update is successful, Microsoft then applies it on the production environment. Notifications for production environment updates are sent five days before the update.
 
-If you don’t want a five-day difference in versions between the Tier-2 sandbox and production environments, you can update your production environment by submitting a service request to the Dynamics Services Engineering (DSE) team to apply the package through the regular production update flow. (The package is available in the Global asset library.)
 
-Even if there is a difference in versions between the sandbox and production environments, you can still use the product. However, you can’t move packages to the production environment or complete true validations until the sandbox and production environments have the same version.
 
-### Is there a way to roll back a package that Microsoft applied?
-Currently, there is no way for you to roll back a package that Microsoft applied.
-
-### How are batch jobs handled as part of this maintenance?
-Batch jobs are suspended during the maintenance windows and resume when the maintenance is completed.
-
-### Where can I check that the update was completed successfully?
-You can verify that the update was completed successfully on the History page in LCS. There, you will see an entry for Microsoft planned maintenance window – Completion.
-
-### Where can I see which updates are included in the package that is being applied?
-The Description column in the Global asset library shows what is included in the package.
 
