@@ -46,7 +46,7 @@ The telemetry data that is the basis of the Monitoring and diagnostics portal in
 In business operations software, you should always know whether your environment is up and running, so that it can perform business operations. You should also be able to easily view the health of the environment through LCS. Microsoft supports two types of monitoring capabilities:
 
 -   **Availability monitoring** – This type of monitoring performs a check against the environment to make sure that it's available at all times. If the check fails, the Microsoft Service Engineering team is immediately notified.
--   **Health monitoring** – In addition to availability checks, some basic health checks must be performed. These basic health checks include CPU level, memory consumption of the machines, and the total number of deadlocks in a five-minute period. Microsoft Telemetry Infrastructure collects lots of health metrics from the environments. If a metric crosses a threshold value, the Microsoft Service Engineering term is alerted so that it can investigate the issue.
+-   **Health monitoring** – In addition to availability checks, some basic health checks must be performed. These health checks span various components such as AOS, Batch, DIXF, SQL and MR. These checks are done based on multiple data sources such as the telemetry collected from the environments, checks done by a watchdog service that sits on the environment and continously monitors it, CPU and other system level counters emitted by the environment. Some health checks are self-healing and are mitigate immediately while others are reported to the Microsoft Service Engineering team for investigation.
 
 ### Diagnostics
 
@@ -117,11 +117,11 @@ Several tools and resources are available in the Monitoring and diagnostics port
 
 ### Monitoring dashboard
 
-In the Monitoring and diagnostics portal, click the **Environment** tab to view the Monitoring dashboard. On the dashboard, a green check marks indicate that the environment is available to perform business operations. Health metrics are collected for every machine and component. These health metrics include CPU usage, errors logged per second, and batch heartbeat. For some metrics, Microsoft has set up threshold values. If a metric crosses the threshold, an alert is triggered. For example, an alert is triggered if CPU usage exceeds 70 percent. You can view the health monitors for a specific area to see what is occurring.
+On the Environment monitoring page, click the **Health metrics** tab to view the Monitoring dashboard. Health metrics are collected for every machine and component. These health metrics include CPU usage, available memory, errors logged per second, and batch heartbeat. Any abnormalities in the metrics are alerted on. Some alerts are self-healing while others result in our service engineering team investigating the cause and then taking action to mitigate it. You can view the health monitors for a specific area to see what is occurring.
 
 ### Activity monitoring
 
-In the Monitoring and diagnostics portal, click the **Activity** tab to use the Activity monitoring tool. This tool provides a storyboard view that shows what you or another user was doing during a specific period. [![activitymonitoringview](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
+On the Environment monitoring page, click the **Activity** tab to use the Activity monitoring tool. This tool provides a storyboard view that shows what you or another user was doing during a specific period. [![activitymonitoringview](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
 
 -   The **User interaction** chart shows a user's activities on various machines in the environment and the SQL utilization trend.
 -   The **User load** section shows all the system users. Each chart shows the time that the user spent on a specific machine.
@@ -133,6 +133,9 @@ You can use the filters on this page to narrow the information logs. Here are so
 -   **Time duration** – Go back 60 minutes from the selected date and time.
 -   **User** – View a specific user's activities.
 -   **Search terms** – Create a search that is based on the issue that is being investigated.
+
+> [!NOTE]
+> The page does not load data by default. You will need to select the time duration and then click Submit time to load the data necessary for rendering the page.
 
 > [!IMPORTANT]
 > The Activity monitoring tool retains data for only 30 days.
