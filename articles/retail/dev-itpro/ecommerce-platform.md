@@ -5,7 +5,7 @@ title: e-Commerce platform
 description: This topic provides an overview of e-Commerce capabilities.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
