@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/18/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
