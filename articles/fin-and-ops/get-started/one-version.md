@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 02/15/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,10 +36,10 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 ## Schedule for April 10.0 release
 
 ### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
-Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. In early March the ability to set up this configuration or pause updates will be available through LCS.
+Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. In early March, the ability to set up this configuration or pause updates will be available through LCS.
 
 ### With a release date in early April, which ring is being released at that time? Is it the GA ring? Or will GA be released several weeks later?
-[Standard release/Ring 4](public-preview-releases.md) production updates for a monthly release will  be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
+[Standard release/Ring 4](public-preview-releases.md) production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
  
 For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup will be available in early March.
 
