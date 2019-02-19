@@ -104,29 +104,34 @@ whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
 :::row-end:::
 :::row:::
     :::column:::
-    [![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png)](./media/SQLofAllDefaultDimensionValues.png) 
-    [![SQLResultofAllDefaultDimensionValues](./media/SQLResultofAllDefaultDimensionValues.png)](./media/SQLResultofAllDefaultDimensionValues.png) 
+    ![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png "SQL of all default dimension values") 
+    ![SQLResultofAllDefaultDimensionValues](./media/SQLResultofAllDefaultDimensionValues.png "SQL results of all default dimension values")
     :::column-end:::
     :::column:::
-    [![Part2DefaultDimensionEntry](./media/Part2DefaultDimensionEntry.png)](./media/Part2DefaultDimensionEntry.png)
+    ![Part2DefaultDimensionEntry](./media/Part2DefaultDimensionEntry.png "Default dimensions")
     :::column-end:::
 :::row-end:::    
         
 
 
-**Empty values**
+### Empty values
 
 As shown in Figure 1 above, the dimension framework only stores rows for dimensions that have a value entered. No data is stored for empty rows. Therefore, once persisted, the framework does not have the ability to determine the difference between a dimension that did not have a value and one that had a value but was cleared out by a user. In order to save an empty value, a real value must be created with a name indicating it is empty such as “empty”, “n/a”, “\<cleared\>”, “*blank*”. The user can then select this value at entry time to impact defaulting behavior as desired.
 
-**Immutable data**
-
-As with most all dimension data, the records that are inserted into the tables above are immutable. They are only written initially and never subsequently updated or deleted. In Figure 3, when the user adds a Project ID and then saves, the query above in Figure 1 will still return the same three rows. The dimension framework has created a new value set record and 4 additional value set item records linking to the new value set as shown in Figure 4 below.
-[![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png)](./media/Part2-1DefaultDimensionEntry.png) 
-**Figure 3: Default dimension entry of one added value**
-
-[![Part2SQLValueSet](./media/Part2SQLValueSet.png)](./media/Part2SQLValueSet.png) 
-[![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png)](./media/Part2SQLResultsValueSet.png) 
-**Figure 4: SQL query and (column trimmed) output for all default dimension values the new set**
+:::row:::
+    :::column:::
+    ### Immutable data
+    As with most all dimension data, the records that are inserted into the tables above are immutable. They are only written initially and never subsequently updated or deleted. In Figure 3, when the user adds a Project ID and then saves, the query above in Figure 1 will still return the same three rows. The dimension framework has created a new value set record and 4 additional value set item records linking to the new value set as shown in Figure 4 below. 
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    ![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry of one added value") 
+    :::column-end:::
+    :::column:::
+    ![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values the new set")
+    :::column-end:::
+:::row-end:::    
 
 
 ## Copy patterns
