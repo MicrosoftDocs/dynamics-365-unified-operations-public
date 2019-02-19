@@ -81,9 +81,15 @@ It is also important to note that the MainAccount dimension is not shown in most
 
 The following images show the advanced rule and structure that results in the project dimension being included in the default dimensions.
 
-![Advanced rule linked to the Profit and loss structure](./media/AdvancedRuleLinked.png "Advanced rule linked to the Profit and loss structure")
+:::row:::
+    :::column:::
+    ![Advanced rule linked to the Profit and loss structure](./media/AdvancedRuleLinked.png "Advanced rule linked to the Profit and loss structure")
+    :::column-end:::
+    :::column:::
+    ![The rule structure for Project](./media/RuleStructure.png "The rule structure for Project")
+    :::column-end:::
+:::row-end:::
 
-![The rule structure for Project](./media/RuleStructure.png "The rule structure for Project")
 
 ### API for default dimensions list
 
@@ -116,7 +122,7 @@ whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
 
 ### Empty values
 
-As shown in Figure 1 above, the dimension framework only stores rows for dimensions that have a value entered. No data is stored for empty rows. Therefore, once persisted, the framework does not have the ability to determine the difference between a dimension that did not have a value and one that had a value but was cleared out by a user. In order to save an empty value, a real value must be created with a name indicating it is empty such as “empty”, “n/a”, “\<cleared\>”, “*blank*”. The user can then select this value at entry time to impact defaulting behavior as desired.
+The dimension framework only stores rows for dimensions that have a value entered. No data is stored for empty rows. Therefore, once persisted, the framework does not have the ability to determine the difference between a dimension that did not have a value and one that had a value but was cleared out by a user. In order to save an empty value, a real value must be created with a name indicating it is empty such as “empty”, “n/a”, “\<cleared\>”, “\*blank\*”. The user can then select this value at entry time to impact defaulting behavior as desired.
 
 :::row:::
     :::column:::
@@ -126,10 +132,10 @@ As shown in Figure 1 above, the dimension framework only stores rows for dimensi
 :::row-end:::
 :::row:::
     :::column:::
-    ![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry of one added value") 
+    ![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values the new set")
     :::column-end:::
     :::column:::
-    ![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values the new set")
+    ![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry of one added value")
     :::column-end:::
 :::row-end:::    
 
@@ -137,49 +143,54 @@ As shown in Figure 1 above, the dimension framework only stores rows for dimensi
 ## Copy patterns
 This section covers how default dimensions are copied between entities.
 
-**Copy versus merge**
+### Copy versus merge
 
-As initially described in the [Dimension defaulting in accounting distributions series of blog posts](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/12/16/dimension-defaulting-in-accounting-distributions-blog-1-introduction.aspx), default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. The dimension framework does not set the precedence for defaulting.  Each form or process determines this based on their business logic needs.
+Default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. The dimension framework does not set the precedence for defaulting.  Each form or process determines this based on their business logic needs.
 
-A hypothetical order document will serve as the basis for the examples below. This could be a service order interacting with customers and containing line item services, or a purchase order interacting with vendors and line item inventory items. In terms of where default dimensions are entered, they could be entered or overridden at different points in processing as shown in Figure 1 below.
+A hypothetical order document will serve as the basis for the examples below. This could be a service order interacting with customers and containing line item services, or a purchase order interacting with vendors and line item inventory items. In terms of where default dimensions are entered, they could be entered or overridden at different points in processing as shown in the following image.
 
-[![DefaultDimensionSourcesGraph.png](./media/DefaultDimensionSourcesGraph.png)](./media/DefaultDimensionSourcesGraph.png)
-**Figure 1: Default dimension sources on a typical document**
+![Default dimension sources on a typical document](./media/DefaultDimensionSourcesGraph.png "Default dimension sources on a typical document")
 
 In the example of an order document, there are multiple default dimensions that are available for the business logic to consider. The document header may have a set of default dimensions like the purchase order in this example.  The customer or vendor of the order, such as the vendor in this case, has a set of default dimensions as well.  Depending on the business logic of the order, these different sets of default dimensions may have different precedence when combined together.  Some may have higher precedence and replace other default dimensions while others may be merged together.
 
 **Default dimension copy**
 
-Figure 2 below shows a default dimension entered on a specific vendor account.
-Figure 3 below shows the SQL query for the default dimension reference on the vendor record and the resulting default dimension created.
-
-[![DefaultDimensionVendor.png](./media/DefaultDimensionVendor.png)](./media/DefaultDimensionVendor.png)
-**Figure 2: Default dimensions entered on a vendor account** 
-
-DefaultDimensions3-SQLVendor.png
-[![DefaultDimensions3-SQLVendor.png](./media/DefaultDimensions3-SQLVendor.png)](./media/DefaultDimensions3-SQLVendor.png)
-[![DefaultDimensions3-SQLResultVendor.png](./media/DefaultDimensions3-SQLResultVendor.png)](./media/DefaultDimensions3-SQLResultVendor.png)
-**Figure 3: SQL query and output showing default dimensions on vendor record**
-
-Figures 4 and 5 below shows a new purchase order created for this vendor and the SQL query and default dimension reference on the header record. In this case the dimensions from the vendor replaced any dimensions already on the purchase order header as soon as a vendor is selected, so a direct copy of the default dimension foreign key was all that needed to be done as shown in Figure 6.
-
-
-[![DefaultDimensions3-CopiedToDocHeader.png](./media/DefaultDimensions3-CopiedToDocHeader.png)](./media/DefaultDimensions3-CopiedToDocHeader.png)
-**Figure 4: Default dimension copied to a document header (Purchase order)** 
-
-[![DefaultDimensions3-SQLCopiedToDocHeader.png](./media/DefaultDimensions3-SQLCopiedToDocHeader.png)](./media/DefaultDimensions3-SQLCopiedToDocHeader.png)
-[![DefaultDimensions3-SQLResultCopiedToDocHeader.png](./media/DefaultDimensions3-SQLResultCopiedToDocHeader.png)](./media/DefaultDimensions3-SQLResultCopiedToDocHeader.png)
-**Figure 5: SQL query and output showing default dimensions on purchase order record**
-
-
-[![DefaultDimensions3-6CodetoCopy.png](./media/DefaultDimensions3-6CodetoCopy.png)](./media/DefaultDimensions3-6CodetoCopy.png)
-**Figure 6: Code used to copy default dimensions from the vendor to the purchase order**
-
-Next, suppose the user enters a value for the Project dimension.  Figure 7 below, shows the header dimensions after that change. Figure 8 shows the SQL query for the default dimension reference on the header record and the resulting default dimension created.
-
-
-[![DefaultDimensions3-7DocumentHeader.png](./media/DefaultDimensions3-7DocumentHeader.png)](./media/DefaultDimensions3-7DocumentHeader.png)
-**Figure 7: Default dimension modified by a user on a document header (Purchase order)**
+:::row:::
+    :::column:::
+    A default dimension entered on a specific vendor account.
+    :::column-end:::
+    :::column:::
+    ![DefaultDimensionVendor.png](./media/DefaultDimensionVendor.png "Default dimension entered on a specific vendor account")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    The SQL query for the default dimension reference on the vendor record and the resulting default dimension created.
+    :::column-end:::
+    :::column:::
+    ![DefaultDimensions3-SQLVendor.png](./media/DefaultDimensions3-SQLVendor.png)
+    ![DefaultDimensions3-SQLResultVendor.png](./media/DefaultDimensions3-SQLResultVendor.png)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    Figures 4 and 5 below shows A new purchase order created for this vendor and the SQL query and default dimension reference on the header record. In this case the dimensions from the vendor replaced any dimensions already on the purchase order header as soon as a vendor is selected, so a direct copy of the default dimension foreign key was all that needed to be done as shown in Figure 6.
+    :::column-end:::
+    :::column:::
+    ![DefaultDimensions3-CopiedToDocHeader.png](./media/DefaultDimensions3-CopiedToDocHeader.png "Default dimension copied to a document header (Purchase order)")
+    ![DefaultDimensions3-SQLCopiedToDocHeader.png](./media/DefaultDimensions3-SQLCopiedToDocHeader.png "SQL query and output showing default dimensions on purchase order record")
+    ![DefaultDimensions3-SQLResultCopiedToDocHeader.png](./media/DefaultDimensions3-SQLResultCopiedToDocHeader.png "SQL query and output showing default dimensions on purchase order record")
+    ![DefaultDimensions3-6CodetoCopy.png](./media/DefaultDimensions3-6CodetoCopy.png "Code used to copy default dimensions from the vendor to the purchase order")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    Next, suppose the user enters a value for the Project dimension.  Figure 7 below, shows the header dimensions after that change. Figure 8 shows the SQL query for the default dimension reference on the header record and the resulting default dimension created.
+    :::column-end:::
+    :::column:::
+    ![DefaultDimensions3-7DocumentHeader.png](./media/DefaultDimensions3-7DocumentHeader.png "Default dimension modified by a user on a document header (Purchase order)")
+    :::column-end:::
+:::row-end:::
 
 [![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png)](./media/DefaultDimensions3-8SQLModifiedDocHearder.png)
 [![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png)](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png)
