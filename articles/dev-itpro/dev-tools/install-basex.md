@@ -51,18 +51,18 @@ To download BaseX, go to the [BaseX website](http://basex.org/download/), and do
 Run the executable file on the developer machine where you will compile your module. For each step, accept the default settings.
 
 > [!TIP]
-> If the installation drive doesn't have enough space for your model, you can change the folder for BaseX data later. For more information, see the [BaseX configuration page](http://docs.basex.org/wiki/Configuration#Database_Directory).
+> If the installation drive doesn't have enough space for your model, you can change the folder for BaseX data later. For more information, see [BaseX configuration](http://docs.basex.org/wiki/Configuration#Database_Directory).
 
 ## Configure BaseX to handle your model
 
-Depending on the size of your model, BaseX can spend a lot of memory.
+Depending on the size of your model, BaseX can utilize a lot of memory.
 
 By default, BaseX is configured to use a maximum of about 1.17 gigabytes (GB) of random-access memory (RAM). If you have a large model, you should consider increasing this limit by following these steps.
 
 1. Open the batch script at **\<BaseX Install Path\>\\bin\\basex.bat** for editing.
-2. Find the line that contains **set BASEX\_JVM=-Xmx1200m %BASEX\_JVM%**, and increase the value after **-Xmx** to, for example, **4g** to let it use 4GB RAM.
+2. Find the line that contains **set BASEX\_JVM=-Xmx1200m %BASEX\_JVM%**, and increase the value after **-Xmx** to, for example, **4g** to let it use 4 GB RAM.
 
-    For more information, see [Non-Standard Options](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABHDABI). This section of the Java documentation explains how increase the limits of the Java virtual machine (VM).
+    For more information, see [Non-Standard Options](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABHDABI). This section of the Java documentation explains how to increase the limits of the Java virtual machine (VM).
 
     Leave the rest of the script unchanged.
 
