@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply critical updates to your cloud service.
 
 ### How does a planned maintenance window work?
-For all planned updates, Microsoft will send a notification to all stakeholders **five days** before the patching window begins. The patching window, which is when the environment is patched, is defined by geographic region.
+For all planned maintenance, Microsoft will send a notification to all stakeholders **five days** before the patching window begins. The patching window, which is when the environment is patched, is defined by geographic region. Details on the maintenance activity will be included in the notification sent to stakeholders.
 
 ### When is this planned maintenance window taken?
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. All environments fall in one of these three regions. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
@@ -45,8 +45,8 @@ To limit the impact on users, the maintenance window is planned according to the
 - EMEA: 10 PM to 6 AM
 - APAC: 12 PM to 9 PM
 
-### Will the update from Microsoft require any uptake?
-Most of the updates require no uptake from you. If there is a critical security update that requires uptake, you will be notified.
+### Will the maintenance from Microsoft require any uptake?
+Most of the maintenance operations require no action from your end. If there is a critical security update that requires uptake, you will be notified.
 
 ### Who will be notified about the upcoming planned maintenance?
 The following stakeholders will be notified about the upcoming maintenance:
@@ -67,7 +67,7 @@ We have a seperate FAQ that has details around service updates done by Microsoft
 ## Operating system-level updates 
 
 ### How long is the maintenance window?
-Most Operating system–level updates are completed in approximately one hour. However, we ask for a three hour window to handle failures and bring the system back to a health state. 
+Most Operating system–level updates are completed in approximately one hour. However, we ask for a three hour window to handle failures and to bring the system back to a health state. 
 
 The exact downtime for all updates will be included in the maintenance window notification email that is sent to you before the start of the update.
 
@@ -94,8 +94,6 @@ If the patching fails during an operating system–level update, the specific pa
 
 ### Will I be compensated if the update takes longer than the scheduled maintenance window?
 If the update takes longer than the scheduled maintenance window, the extra time is considered unplanned downtime and is subject to the general service level agreement (SLA).
-
-
 
 ### Can I reschedule the planned maintenance?
 We do not offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
