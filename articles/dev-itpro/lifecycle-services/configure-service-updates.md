@@ -57,10 +57,10 @@ On this page you have the following options:
 > The environment selected here will be updated 7 calendar days prior to the update cadence selected for the production environment.
 
 2. **Production environment update cadence** : Select a recurring cadence for your Production environment updates. The Sandbox environment configured above will be updated 7 calendar days prior to the selected cadence. You can select the following:
-    a. Select the cadence: You can choose whether to get updates in the first, second, third week of the month.
-    b. Select one of the three time-zones: Select whether you want the Production updated in Eastern Time(UTC – 5) or Hong Kong Time(UTC + 8) or the Greenwich Mean Time(UTC + 0).
-    c. Select a day of the week: Select a day in the week when you want to get the update.
-    d. Select a time slot: Select a time slot when you want to get the update.
+    - Select the cadence: You can choose whether to get updates in the first, second, third week of the month.
+    - Select one of the three time-zones: Select whether you want the Production updated in Eastern Time(UTC – 5) or Hong Kong Time(UTC + 8) or the Greenwich Mean Time(UTC + 0).
+    - Select a day of the week: Select a day in the week when you want to get the update.
+    - Select a time slot: Select a time slot when you want to get the update.
 
 > [!NOTE]
 > At this time, we only have a few options available under the day of the week and time slot drop downs. We will soon we adding additional options include weekdays for customers.
