@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,7 +66,7 @@ To access the list of APIs that are being deprecated, see [Deprecated APIs](depr
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | It is currently possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a compiler warning rather than an error, meaning that the deployable package creation and deployment can proceed without fixing the problem. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services. Fixing this issue is simple: 1) Remove the invalid field reference from the table field group definition. 2) Recompile 3) Ensure any warnings or errors are addressed. |
+| **Reason for deprecation/removal** | It is currently possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the problem. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). Fixing this issue is simple:<br><br>1) Remove the invalid field reference from the table field group definition.<br><br>2) Recompile<br><br>3) Ensure any warnings or errors are addressed. |
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in the future, currently target to platform update 30. |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All. |
