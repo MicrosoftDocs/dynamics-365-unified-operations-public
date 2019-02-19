@@ -189,21 +189,19 @@ In the example of an order document, there are multiple default dimensions that 
     :::column-end:::
     :::column:::
     ![DefaultDimensions3-7DocumentHeader.png](./media/DefaultDimensions3-7DocumentHeader.png "Default dimension modified by a user on a document header (Purchase order)")
+    ![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQL query and output showing updated default dimensions on purchase order record")
+![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "SQL query and output showing updated default dimensions on purchase order record")
     :::column-end:::
 :::row-end:::
-
-[![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png)](./media/DefaultDimensions3-8SQLModifiedDocHearder.png)
-[![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png)](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png)
-**Figure 8: SQL query and output showing updated default dimensions on purchase order record**
-
-Next, as the user changes to the Line view to enter the lines, Figures 9 and 10 below show default dimensions copied from the purchase order header and the code copying the foreign key reference to the line. In this case, the line has not yet been saved so the default dimension foreign key only appears in the table buffer in memory. 
-
-
-[![DefaultDimensions3-9CopiedToLine.png](./media/DefaultDimensions3-9CopiedToLine.png)](./media/DefaultDimensions3-9CopiedToLine.png)
-**Figure 9: Default dimension copied to a document line (Purchase order line)**
-
-[![DefaultDimensions3-10CodeToCopyToLine.png](./media/DefaultDimensions3-10CodeToCopyToLine.png)](./media/DefaultDimensions3-10CodeToCopyToLine.png)
-**Figure 10: Code used to copy default dimensions from the header to the line**
+:::row:::
+    :::column:::
+    Next, as the user changes to the Line view to enter the lines, Figures 9 and 10 below show default dimensions copied from the purchase order header and the code copying the foreign key reference to the line. In this case, the line has not yet been saved so the default dimension foreign key only appears in the table buffer in memory.
+    :::column-end:::
+    :::column:::
+    ![DefaultDimensions3-9CopiedToLine.png](./media/DefaultDimensions3-9CopiedToLine.png "Default dimension copied to a document line (Purchase order line)")
+    ![DefaultDimensions3-10CodeToCopyToLine.png](./media/DefaultDimensions3-10CodeToCopyToLine.png "Code used to copy default dimensions from the header to the line")
+    :::column-end:::
+:::row-end:::
 
 ## Merging patterns
 
