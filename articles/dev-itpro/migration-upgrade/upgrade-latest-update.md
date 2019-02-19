@@ -229,7 +229,7 @@ On the **Upgrade** menu, select **Data upgrade**. Your original sandbox environm
 
 Next, the data upgrade package for your target version will be automatically applied. The time that is required to apply the data upgrade package varies, depending on the size of your database.
 
-**If the data upgrade fails** you must use the **Package rollback** button to undo the data upgrade package step, and then use the **Upgrade** menu to select **Rollback** to restore your database to the point it was before the data upgrade began. Before you do this, it is highly recommended to download the logs and determine the root cause of the failure so that you can ensure your next Data Upgrade execution will go more smoothly.
+**If the data upgrade fails** you must use the **Upgrade** menu to select **Rollback** to restore your database to the point it was before the data upgrade began. Before you do this, it is highly recommended to download the logs and determine the root cause of the failure so that you can ensure your next Data Upgrade execution will go more smoothly.
 
 #### Commit or rollback
 
