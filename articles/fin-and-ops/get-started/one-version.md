@@ -33,10 +33,10 @@ ms.dyn365.ops.version: 8.1
 
 In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
-## Schedule for April 10.0 release and beyond
+## Schedule for April 10.0 release
 
 ### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
-The ability to pause/delay an update for up to 3 months will be available in version 10.0. In early March, the ability to set up this configuration or pause updates will be available through LCS.
+Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. In early March the ability to set up this configuration or pause updates will be available through LCS.
 
 ### With a release date in early April, which ring is being released at that time? Is it the GA ring? Or will GA be released several weeks later?
 [Standard release/Ring 4](public-preview-releases.md) production updates for a monthly release will  be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
