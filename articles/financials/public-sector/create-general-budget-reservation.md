@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintain a general budget reservation
-description: This topic provides information about creating, encumbering, and modifying a general budget reservations for public sector in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides steps for working with general budget reservations for public sector in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2019
@@ -34,9 +34,10 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-After you set up your system to use general budget reservations, you can create reservation documents. General budget reservations are available to the documents that are required for the purchasing method you choose. These methods include purchase order, purchase requisition, and vendor invoice.
+This topic walks you through completign common tasks for general budget reservations.
 
 ## Create and encumber a general budget reservation
+After you set up your system to use general budget reservations, you can create reservation documents. General budget reservations are available to the documents that are required for the purchasing method you choose. These methods include purchase order, purchase requisition, and vendor invoice. 
 
 To create a general budget reservation, use the following steps.
 
@@ -149,3 +150,41 @@ If the reservation is in workflow, recall the workflow status to Draft status,
     -   To finalize multiple lines, select them and on the **General budget reservation lines** section, click Finalize line.
 
 4.  Accounting and budget-control entries are posted. The remaining balance is removed from the document and returned to budget unless it’s a carry forward document and the associated fund or reservation type is set to **Reduce carry-forward budget**.
+
+## Relieve a general budget reservation
+
+There are three ways to consume or relieve a general budget reservation:
+
+-   **Purchase requisition** – Reference the general budget reservation directly on a purchase requisition line. To do this, specify the budget reservation line in Line details \> Details when you create the requisition. Submit to workflow. The reservation is relieved, or consumed, when the requisition is approved.
+
+    -   Purchase requisition relieved General budget reservations may also be assigned to Purchase agreements. They are associated with the various Purchase agreement lines. When a Purchase requisition is created with a line that’s associated with an item or category defined on a Purchase agreement, the available General budget reservation that can be relieved are limited to those that have been previously assigned to the Purchase agreement.
+
+-   **Purchase order** - Reference the general budget reservation directly on a purchase order line. No purchase agreement is involved. To do this, specify the budget reservation line in Line details \> General when you create the Purchase order. The reservation is relieved, or consumed, when the purchase order is confirmed.
+
+-   **Vendor invoice** - Reference the general budget reservation directly on a vendor invoice. To do this, specify the budget reservation line in Line details \> Line details. The reservation is relieved when the vendor invoice is posted.
+
+After you post or confirm a document that references a general budget reservation, the budget reservation balance reflects the relieving amount. If you edit, cancel, or finalize the referencing document, the relieved amount shown is not reduced or removed; there is no way to return a relieved amount to the balance on the referencing document.
+
+### Create a Purchase requisition, Purchase order or Vendor invoice to relieve the General budget reservation
+
+Use the following steps to reference a general budget reservation on a purchase requisition, purchase order or vendor invoice.
+
+1.  Do one of the following:
+
+    -   Go to **Procurement and sourcing \> Purchase requisitions \> All purchase requisitions**.
+
+    -   Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
+
+    -   Go to **Accounts payable \> Vendor invoices \> Pending vendor invoices**.
+
+2.  Create your desired document by clicking **New** or modify an existing draft document.
+
+3.  Establish the reference and post the document.
+
+    -   Use Advanced selection options under the reference field to more easily identify the desired General budget reservation.
+
+4.  Click **Financials**, then click **Distribute amounts**.
+
+    -   The ledger dimension field on the new accounting distributions (parent and child) is set to the ledger dimension from the budget reservation line accounting distribution.
+
+    -   The reference distribution on the new accounting distributions (parent and child) references the budget reservation line accounting distribution.
