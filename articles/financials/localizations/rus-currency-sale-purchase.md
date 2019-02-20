@@ -5,7 +5,7 @@ title: Foreign currency sales, purchases, and transfers
 description: This topic describes the functionality for registering transactions for the sale, purchase, and transfer of currency.
 author: anasyash
 manager: AnnBe
-ms.date: 09/25/2018
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,7 @@ Microsoft Dynamics 365 for Finance and Operations lets you perform the following
 Here is an overview of the tasks that you must complete to set up the system to calculate the exchange adjustment and the profit/loss on the **Remittance en route** account:
 
 - [Set up an exchange rate](#set-up-an-exchange-rate)
-- [Set up a bank to use for foreign currency conversion transactions](#set-up-a-bank-to-use-for-foreign currency-conversion-transactions)
+- [Set up a bank to use for foreign currency conversion transactions](#set-up-a-bank-to-use-for-foreign-currency-conversion-transactions)
 - [Set up a bank transaction type](#set-up-a-bank-transaction-type)
 - [Set up a method of payment](#set-up-a-method-of-payment)
 - [Set up a number sequence](#set-up-a-number-sequence)
