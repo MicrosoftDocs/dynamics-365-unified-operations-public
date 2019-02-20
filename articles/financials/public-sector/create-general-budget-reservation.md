@@ -188,3 +188,30 @@ Use the following steps to reference a general budget reservation on a purchase 
     -   The ledger dimension field on the new accounting distributions (parent and child) is set to the ledger dimension from the budget reservation line accounting distribution.
 
     -   The reference distribution on the new accounting distributions (parent and child) references the budget reservation line accounting distribution.
+
+## Carrying forward general budget reservations
+
+For any general budget reservation that has not expired and hold a remaining balance at the fiscal year-end, you can carry forward (roll over) the document to the new year. The carry-forward process creates all the accounting and budgeting entries to close the document in the current year and open the document in the new year.
+
+### Carry forward a general budget reservation to a new fiscal year
+
+1.  Go to **General ledger \> Period close \> General budget reservation year-end process**.
+
+2.  On the **General budget reservation year-end process** page, in the **Year-end option** list, select whether to carry forward budget the associated budget for the reservation.
+
+3.  Select the fiscal year for the **Closing parameters** and **Opening parameters**.
+
+4.  Click **Retrieve documents**.
+
+5.  In the query page that appears, enter the criteria to find the reservations you want to process and carry forward to the new year.
+
+6.  Click **OK** to display the reservations in the General budget reservation year-end process page.
+
+7.  Select the documents you’d like to include from the list and then click **Process**.
+
+8.  If you selected **Process and carry forward budget** in the **Year-end option list**, a message displays the list of all the budget entries that were created and all the general budget reservations that were processed. Any document not processed because of an error is also listed.
+
+### Reduce carry-forward budget in a new fiscal year
+
+If you have enabled budget control, you can reduce carry-forward budget for any carry-forward general budget reservations that are finalized with a remaining balance. This ensures that prior-year funds are not spent on new-year purchases.
+If the Reduce carry-forward budget check box is enabled on the related fund or on your reservation type, then finalizing the document in the new fiscal year reduces the remaining document balance to zero and reduces any remaining carry-forward budget to zero.
