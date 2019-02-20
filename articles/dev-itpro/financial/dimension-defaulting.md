@@ -123,7 +123,6 @@ whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
     ![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png "SQL of all default dimension values")
     :::column-end:::
 :::row-end:::
-:::row:::
         
 
 
