@@ -648,7 +648,7 @@ This step should be completed for a Treasury company.
 15. Review the payment schedule journal that is associated with the payment request.
 
     > [!NOTE]
-    > The following steps can be completed only if the **Payment request** license configuration key is turned on.
+    > Complete the steps 16-20 if the **Payment request** license configuration key is turned on.
 
 16. On the **Payment schedule journal** page, select **Functions \> Generate payments**.
 17. Set the parameters for payment journal generation.
@@ -656,8 +656,8 @@ This step should be completed for a Treasury company.
     ![Parameters for payment journal generation](media/rus-payments-payment-schedule-journal.jpg)
 
 18. Select **OK**.
-19. Select **Accounts payable \> Journals \> Payments \> Payment journal** to validate and process the vendor payment journal that is created.
-20. Select **Accounts receivable \> Journals \> Payments \> Payment journal** to validate and process the customer payment journal that is created.
+19. Select **Accounts payable \> Payments \> Vendor payment journal** to validate and process the vendor payment journal that is created.
+20. Select **Accounts receivable \> Payments \> Customer payment journal** to validate and process the customer payment journal that is created.
 
 Standard payment proposal functionality will process open transactions that are linked to a payment request that has **Accepted** status.
 
