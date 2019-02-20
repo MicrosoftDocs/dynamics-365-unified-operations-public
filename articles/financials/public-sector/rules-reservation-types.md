@@ -25,8 +25,8 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 
 ---
 
