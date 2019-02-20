@@ -2,7 +2,7 @@
 # required metadata
 
 title: General budget reservations
-description: This topic provides information about general budget reservations for public sector in Microsoft Dynamics 365 for Finance and Operations. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
+description: This topic provides information about general budget reservations for public sector in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2019
