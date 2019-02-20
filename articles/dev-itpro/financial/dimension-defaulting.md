@@ -143,13 +143,16 @@ The dimension framework only stores rows for dimensions that have a value entere
 ## Copy patterns
 This section covers how default dimensions are copied between entities.
 
-### Copy versus merge
-
-Default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. The dimension framework does not set the precedence for defaulting.  Each form or process determines this based on their business logic needs.
-
+:::row:::
+    :::column:::
+    ### Copy versus merge
+    Default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. The dimension framework does not set the precedence for defaulting.  Each form or process determines this based on their business logic needs.
 A hypothetical order document will serve as the basis for the examples below. This could be a service order interacting with customers and containing line item services, or a purchase order interacting with vendors and line item inventory items. In terms of where default dimensions are entered, they could be entered or overridden at different points in processing as shown in the following image.
-
-![Default dimension sources on a typical document](./media/DefaultDimensionSourcesGraph.png "Default dimension sources on a typical document")
+    :::column-end:::
+    :::column:::
+    ![Default dimension sources on a typical document](./media/DefaultDimensionSourcesGraph.png "Default dimension sources on a typical document")
+    :::column-end:::
+:::row-end:::
 
 In the example of an order document, there are multiple default dimensions that are available for the business logic to consider. The document header may have a set of default dimensions like the purchase order in this example.  The customer or vendor of the order, such as the vendor in this case, has a set of default dimensions as well.  Depending on the business logic of the order, these different sets of default dimensions may have different precedence when combined together.  Some may have higher precedence and replace other default dimensions while others may be merged together.
 
