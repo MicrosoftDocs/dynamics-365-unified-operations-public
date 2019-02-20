@@ -48,7 +48,7 @@ Use the **Fixed asset parameters** page to set up parameters for fixed assets of
 Before you put a realty fixed asset into operation and calculate depreciation, you must register the fixed asset in the assessed tax registers. Use the **Fixed assets** page to register a fixed asset of the **Realty** type.
 
 1. Select **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
-2. Select **New** to create a fixed asset, and enter the required details. For more information, see [(RUS) Create fixed assets](rus-create-fixed-assets.md).
+2. Select **New** to create a fixed asset, and enter the required details.
 3. On the **General** FastTab, in the **Type** field, select **Realty**.
 4. On the **Technical information** FastTab, in the **Date of the registration** field, select the registration date of the fixed asset.
    
