@@ -129,7 +129,7 @@ Two classes must be implemented:
 
 #### Naming convention
 
-The names of business events should follow this pattern: <noun/noun phrase><action phrase>BusinessEvent
+The names of business events should follow this pattern: <noun/noun phrase><past tense action>BusinessEvent
 
 **Examples**
 
@@ -146,11 +146,11 @@ The process of implementing a **BusinessEventsBase** extension is straightforwar
 
     ```
     [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "@AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","@AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
-    public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     ```
 
-    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments.
+    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments, but should be referenced without the '@' symbol to avoid localizing by the compiler.
 
 2. Implement a static **newFrom<my_buffer>** method. The <my_buffer> part of the method name is typically the table buffer that is used to initialize the business event contract.
 
@@ -203,10 +203,10 @@ Here is the complete implementation of the "Sales order invoice posted" business
 /// Sales order invoice posted business event.
 /// </summary>
 [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-'@AccountsReceivable:SalesOrderInvoicePostedBusinessEventName',
-'@AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',
+'AccountsReceivable:SalesOrderInvoicePostedBusinessEventName',
+'AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',
 ModuleAxapta::SalesOrder)]
-public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 {
     private CustInvoiceJour custInvoiceJour;
     private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour _custInvoiceJour =
@@ -303,7 +303,7 @@ The process of implementing a business event contract involves extending the **B
 5. Implement **parm** methods to access the contract state.
 
     ```
-    [DataMember('InvoiceAccount')]
+    [DataMember('InvoiceAccount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAccount")]
     public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount = invoiceAccount)
     {
         invoiceAccount = _invoiceAccount;
@@ -311,7 +311,7 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The **parm** methods should be attributed with the **DataMember('<name>')** attribute. The name that you provide on the attribute (for example **'InvoiceAccount'**) will be visible to data contract consumers.
+    The **parm** methods should be attributed with the **DataMember('<name>')** and **BusinessEventsDataMember('<description>')** attributes. The name that you provide on the attribute (for example **'InvoiceAccount'**) will be visible to data contract consumers. The description provided in the BusinessEventsDataMember will be visible in the Business Events catalog UI when describing this contract's data members.
 
 > [!NOTE]
 > - **RecId** values should not be part of a business event payload. Use the alternate key (AK) instead.
@@ -367,51 +367,51 @@ BusinessEventsContract
     private void new()
     {
     }
-    [DataMember('InvoiceAccount')]
+    [DataMember('InvoiceAccount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAccount")]
     public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
     = invoiceAccount)
     {
         invoiceAccount = _invoiceAccount;
         return invoiceAccount;
     }
-    [DataMember('InvoiceId')]
+    [DataMember('InvoiceId'), BusinessEventsDataMember("@AccountsReceivable:BusinessEventInvoiceId")]
     public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId = invoiceId)
     {
     invoiceId = _invoiceId;
     return invoiceId;
     }
-    [DataMember('SalesOrderId')]
+    [DataMember('SalesOrderId'), BusinessEventsDataMember("@AccountsReceivable:SalesOrderId")]
     public SalesIdBase parmSaleOrderId(SalesIdBase _salesId = salesId)
     {
         salesId = _salesId;
         return salesId;
     }
-    [DataMember('InvoiceDate')]
+    [DataMember('InvoiceDate'), BusinessEventsDataMember("@AccountsReceivable:BusinessEventInvoiceDate")]
     public TransDate parmInvoiceDate(TransDate _invoiceDate = invoiceDate)
     {
         invoiceDate = _invoiceDate;
         return invoiceDate;
     }
-    [DataMember('InvoiceDueDate')]
+    [DataMember('InvoiceDueDate'), BusinessEventsDataMember("@AccountsReceivable:InvoiceDueDate")]
     public DueDate parmInvoiceDueDate(DueDate _invoiceDueDate = invoiceDueDate)
     {
         invoiceDueDate = _invoiceDueDate;
         return invoiceDueDate;
     }
-    [DataMember('InvoiceAmountInAccountingCurrency')]
+    [DataMember('InvoiceAmountInAccountingCurrency'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAmountInAccountingCurrency")]
     public AmountMST parmInvoiceAmount(AmountMST _invoiceAmount = invoiceAmount)
     {
         invoiceAmount = _invoiceAmount;
         return invoiceAmount;
     }
-    [DataMember('InvoiceTaxAmount')]
+    [DataMember('InvoiceTaxAmount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceTaxAmount")]
     public TaxAmount parmInvoiceTaxAmount(TaxAmount _invoiceTaxAmount =
     invoiceTaxAmount)
     {
         invoiceTaxAmount = _invoiceTaxAmount;
         return invoiceTaxAmount;
     }
-    [DataMember('LegalEntity')]
+    [DataMember('LegalEntity'), BusinessEventsDataMember("@AccountsReceivable:LegalEntity")]
     public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId _legalEntity
     = legalEntity)
     {
@@ -467,7 +467,7 @@ Create a contract that consists of the standard business event contract plus any
 
     ```
     [DataContract]
-    public final class CustFreeTextInvoicePostedBusinessEventExtendedContract
+    public class CustFreeTextInvoicePostedBusinessEventExtendedContract
     extends BusinessEventsContract
     {
         // standard contract
@@ -542,7 +542,7 @@ Here is the complete implementation of the extended business contract.
 
 ```
 [DataContract]
-public final class CustFreeTextInvoicePostedBusinessEventExtendedContract
+public class CustFreeTextInvoicePostedBusinessEventExtendedContract
 extends BusinessEventsContract
 {
     // standard contract
