@@ -574,10 +574,7 @@ This step should be completed for a Treasury company.
 ### Payment plan processing
 
 1. Go to **Cash and bank management \> Cash flow management \> Payment schedule journal**.
-2. In the **Name** field, select a payment schedule journal of the **Payment plan** type.
-
-    ![Payment plan](media/rus-payment-plan.jpg)
-
+2. Create a payment schedule journal. In the **Name** field, select a payment schedule journal of the **Payment plan** type.
 3. Use the **From date** and **To date** fields to specify an effective date range.
 4. On the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, change the attributes of the payment schedule journal as you require.
 5. Select **Calculate**.
@@ -591,7 +588,7 @@ This step should be completed for a Treasury company.
 
 11. Set the **Show totals per payment accounts** option to **Yes** if the payment schedule sheet should be calculated based on payment accounts.
 12. Set the **Show totals per method of payments** option to **Yes** if the payment schedule sheet should be calculated based on methods of payments.
-13. Use the left arrow button (**\<**) to select an aggregation parameter for the payment schedule sheet.
+13. Use the right arrow button (**\>**) to select an aggregation parameter for the payment schedule sheet.
 14. Select **Show results**.
 
     If the minimum cash balance for a currency or a payment account is exceeded, the payment schedule sheet highlights the **Estimated balance** amounts in yellow.
@@ -609,19 +606,16 @@ This step should be completed for a Treasury company.
 
 18. Select **Multiple change**, specify the new payment details in the **Modify payment attributes** dialog box, and then select **OK**.
 
-    Alternatively, you can specify a new payment date, a new method of payment, or payment account requisites for a specific line.
+    Alternatively, you can specify new payment attributes for a specific line.
 
-19. Select **Update payment schedule**. The system updates the payment schedule sheet and creates uncommitted payment schedule journal lines of payment sources correction.
+19. Select **Update payment schedule**. The system updates the payment schedule sheet and creates uncommitted payment schedule journal lines for payment sources correction.
 20. Make any other required changes to the payment schedule sheet.
 21. On the **Payment schedule journal** page, select **Functions \> Apply changes** to apply your changes or **Functions \> Revert changes** to reject them.
 22. If changes to the journal setup are required, select **Functions \> Delete journal lines**, and calculate the journal.
-
-    ![Apply changes](media/rus-apply-changes.jpg)
-
 23. Select **Validate** to validate the journal. The system notifies you if canceled, on-hold, or incomplete workflow payment requests are included in this journal.
 24. If all the data is correct, and workflow approval of the payment plan can start, select **Workflow \> Submit**.
 
-    Approvers might see the following actions during the approval flow: **Approve**, **Reject**, **Request change**, **Delegate**, **Recall**, and **View history**.
+    Approvers might see the following actions during the approval workflow: **Approve**, **Reject**, **Request change**, **Delegate**, **Recall**, and **View history**.
 
     ![Workflow actions](media/rus-workflow-actions.jpg)
 
@@ -632,7 +626,7 @@ This step should be completed for a Treasury company.
 ### Payment register processing
 
 1. Go to **Cash and bank management \> Cash flow management \> Payment schedule journal**.
-2. In the **Name** field, select a payment schedule journal of the **Payment register** type.
+2. Create a payment schedule journal. In the **Name** field, select a payment schedule journal of the **Payment register** type.
 3. Use the **From date** and **To date** fields to specify an effective date range.
 4. On the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, change the attributes of the payment schedule journal as you require.
 5. Select **Calculate**.
