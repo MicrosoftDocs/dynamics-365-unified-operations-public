@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Tutorial - Recurring Data Export using Azure Logic App
-description: This tutorial demonstrates how to create an Azure Logic App that exports data from Dynamics 365 for Talent on a recurring schedule.
+title: Tutorial - Do recurring data export by using Azure Logic Apps
+description: This tutorial shows how to create an Azure logic app that exports data from Dynamics 365 for Talent on a recurring schedule.
 author: gregboyko 
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -27,168 +27,180 @@ ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
 ---
 
-# Tutorial - Recurring data export using Azure Logic App
+# Tutorial - Do recurring data export by using Azure Logic Apps
 
 [!include[banner](../includes/banner.md)]
 
-This tutorial demonstrates how to create an Azure Logic App that exports data from Dynamics 365 for Talent Core HR on a recurring schedule. The tutorial makes use of Talent Core HR's DMF Package REST API to export the data. Once the data has been exported, the Logic App saves the exported data package to a OneDrive for Business folder.
+This tutorial shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 for Talent Core HR on a recurring schedule. The tutorial takes advantage of Core HR's DMF package REST application programming interface (API) to export the data. After the data has been exported, the logic app saves the exported data package to a Microsoft OneDrive for Business folder.
 
 ## Business scenario
 
-Exporting data to a downstream system on a recurring schedule is a common business scenario for Dynamics 365 integrations. In this tutorial, we will be exporting all Worker records from Talent and saving that list of Workers in a OneDrive for Business folder.
+In one typical business scenario for Microsoft Dynamics 365 integrations, data must be exported to a downstream system on a recurring schedule. This tutorial shows how to export all worker records from Microsoft Dynamics 365 for Talent and save the list of workers in a OneDrive for Business folder.
 
 > [!TIP]
-> The specific data being exported and the destination of the exported data are only examples, and can be easily changed to suit your business needs.
+> The specific data that is exported in this tutorial and the destination of the exported data are only examples. You can easily change them to meet your business needs.
 
 ## Technologies used
 
-This tutorial makes use of the following technologies:
+This tutorial uses the following technologies:
 
-- [Dynamics 365 for Talent](https://dynamics.microsoft.com/en-us/talent/overview/) Core HR - The master data source for Workers that will be exported
-- [Azure Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/) - orchestration and scheduling of the recurring export
-  - [HTTP with Azure AD](https://docs.microsoft.com/en-us/connectors/webcontents/) Connector
-  - [OneDrive for Business](https://docs.microsoft.com/en-us/azure/connectors/connectors-create-api-onedriveforbusiness) Connector
-- [DMF package REST API](../dev-itpro/data-entities/data-management-api.md) - to trigger the export and monitor the export progress
-- [OneDrive for Business](https://onedrive.live.com/about/en-us/business/) - The destination for the exported data package
+- **Dynamics 365 for Talent Core HR** – The master data source for workers that will be exported.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
+
+    - [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) connector
+    - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector
+
+- **[DMF package REST API](../dev-itpro/data-entities/data-management-api.md)** – The technology that is used to trigger the export and monitor its progress.
+- **OneDrive for Business** – The destination for the exported workers.
 
 ## Prerequisites
 
-Before beginning this exercise, you will need:
+Before you begin the exercise in this tutorial, you must have the following items:
 
-- A Dynamics 365 for Talent Core HR environment with Administrator-level permissions in the environment
-- An [Azure subscription](https://azure.microsoft.com/en-us/free/) for hosting the Azure Logic App
+- A Core HR environment that has admin-level permissions in the environment
+- An [Azure subscription](https://azure.microsoft.com/free/) to host the logic app
 
 ## The exercise
 
-At the conclusion of this exercise, you will have completed an Azure Logic App that is connected to your Dynamics 365 for Talent Core HR environment and your OneDrive for Business account. The Logic App will export a data package from Talent Core HR, wait for the export to complete, download the exported data package, and save the data package in your chosen OneDrive for Business folder.
+At the end of this exercise, you will have a logic app that is connected to your Core HR environment and your OneDrive for Business account. The logic app will export a data package from Core HR, wait for the export to be completed, download the exported data package, and save the data package in the OneDrive for Business folder that you specified.
 
-The completed Logic App will look similar to the following:
+The completed logic app will resemble the following illustration.
 
-![Logic App Overview](media/integration-logic-app-overview.png)
+![Logic app overview](media/integration-logic-app-overview.png)
 
 ### Step 1: Create a data export project in Core HR
 
-In Core HR, create a data export project that exports Workers. Name the project **Export Workers**, ensure that **Generate data package** is set to **Yes**. Add a single entity (Worker) to the project, exporting in the format of your choice (we use Excel in this tutorial).
+In Core HR, create a data export project that exports workers. Name the project **Export Workers**, and make sure that the **Generate data package** option is set to **Yes**. Add a single entity (**Worker**) to the project, and select the format to export in. (Microsoft Excel format is used in this tutorial.)
 
 ![Export Workers data project](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
-> Remember the name of the data export project. It will be used later when creating the Logic App.
+> Remember the name of the data export project. You will need it when you create the logic app in the next step.
 
-### Step 2: Create the Azure Logic App
+### Step 2: Create the logic app
 
-The bulk of this exercise is creating the Logic App, which you will complete over the next several steps.
+The bulk of the exercise involves creating the logic app.
 
-1. Create a Logic App in Azure Portal
+1. In the Azure portal, create a logic app.
 
-![Logic App creation screen](media/integration-logic-app-creation-1.png)
+    ![Logic app creation page](media/integration-logic-app-creation-1.png)
 
-2. In the Logic Apps Designer, start with a blank Logic App.
-3. Add a [Recurrence Schedule trigger](https://docs.microsoft.com/en-us/azure/connectors/connectors-native-recurrence) to execute the Logic App every 24 hours (or on your chosen schedule).
+2. In the Logic Apps Designer, start with a blank logic app.
+3. Add a [Recurrence Schedule trigger](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) to run the logic app every 24 hours (or according to a schedule of your choice).
 
-![Logic App recurrence screen](media/integration-logic-app-recurrence-step.png)
+    ![Recurrence dialog box](media/integration-logic-app-recurrence-step.png)
 
 4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api#exporttopackage) DMF REST API to schedule the export of your data package.
 
-    - Use the **Invoke an HTTP request** action from the HTTP with Azure AD Connector
-    - Base Resource URL: The URL of your Talent environment (do not include path/namespace info)
-    - Azure AD Resource URI: http://hr.talent.dynamics.com
+    - Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
 
-> [!NOTE]
-> The Talent Core HR service does not yet provide a Connector that exposes these APIs. We instead call the APIs using raw HTTPS requests through the HTTP with Azure AD Connector, which uses Azure Active Directory for authentication/authorization to Talent.
+        - **Base Resource URL:** The URL of your Talent environment (Don't include path/namespace information.)
+        - **Azure AD Resource URI:** `http://hr.talent.dynamics.com`
 
-![Logic App HTTP AAD connector screen](media/integration-logic-app-http-aad-connector-step.png)
+        > [!NOTE]
+        > The Core HR service doesn't yet provide a connector that exposes these APIs. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Talent.
 
-  - Signin to your Talent environment through the HTTP AAD connector
-  - Set up an HTTP POST request to call the **ExportToPackage** DMF REST API
-    - **Method**: POST
-    - **Url of the request**: https://\<hostname\>/namespaces/\<namespace_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
-    - **Body of the request**:
+        ![HTTP with Azure AD dialog box](media/integration-logic-app-http-aad-connector-step.png)
 
-```JSON
-{
-    "definitionGroupId":"Export Workers",
-    "packageName":"talent_package.zip",
-    "executionId":"",
-    "reExecute":false,
-    "legalEntityId":"USMF"
-}
-```
+    - Sign in to your Talent environment through the HTTP with Azure AD connector.
+    - Set up an HTTP **POST** request to call the **ExportToPackage** DMF REST API.
 
-![Logic App export to package screen](media/integration-logic-app-export-to-package-step.png)
+        - **Method:** POST
+        - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
+        - **Body of the request:**
 
-> ![TIP]
-> You may wish to rename each step in your Logic App to something more meaningful than the default name of **Invoke an HTTP request** (e.g. **ExportToPackage** for this step)
+            ```JSON
+            {
+                "definitionGroupId":"Export Workers",
+                "packageName":"talent_package.zip",
+                "executionId":"",
+                "reExecute":false,
+                "legalEntityId":"USMF"
+            }
+            ```
 
-5. [Initialize a variable](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) to store the Execution Status of the ExportToPackage request.
+        ![Invoke an HTTP request dialog box](media/integration-logic-app-export-to-package-step.png)
 
-![Logic App initialize variable screen](media/integration-logic-app-initialize-variable-step.png)
+    > ![TIP]
+    > You might want to rename each step so that it's more meaningful than the default name, **Invoke an HTTP request**. For example, you can rename this step **ExportToPackage**.
 
-6. Wait until the Execution Status of the data export has succeeded
+5. [Initialize a variable](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) to store the execution status of the **ExportToPackage** request.
 
-    - Add [Until loop](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-loops#until-loop) that repeats until the value of the **ExecutionStatus** variable is **Succeeded**.
-    - Add a **Delay** action that waits 5 seconds before polling for the current execution status of the export
+    ![Initialize variable dialog box](media/integration-logic-app-initialize-variable-step.png)
 
-![Logic App until loop screen](media/integration-logic-app-until-loop-step.png)
+6. Wait until the execution status of the data export is **Succeeded**.
 
-> ![NOTE]
-> Set the limit count to 15 to allow a maximum of 75 seconds (15 iterations * 5 seconds) of wait time for the export to complete. Adjust as necessary if your export takes longer.
+    - Add an [Until loop](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) that repeats until the value of the **ExecutionStatus** variable is **Succeeded**.
+    - Add a **Delay** action that waits five seconds before it polls for the current execution status of the export.
 
-> ![IMPORTANT]
-> This sample does not perform error checking. The GetExectuionSummaryStatus API can return non-successful terminal states other than **Succeeded**. See the API documentation for more details.
+        ![Until dialog box](media/integration-logic-app-until-loop-step.png)
 
-  - Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus) DMF REST API and set the **ExecutionStatus** variable to the result from the **GetExecutionSummaryStatus** response.
-    - **Method**: POST
-    - **Url of the request**: https://\<hostname\>/namespaces/\<namespace_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
-    - **Body of the request**: body('Invoke_an_HTTP_request').value
+        > ![NOTE]
+        > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.
 
-> [!NOTE] You may need to enter the Body value in code view or the function editor
-  
-![Logic App get execution status screen](media/integration-logic-app-get-execution-status-step.png)
+        > ![IMPORTANT]
+        > This sample doesn't do error checking. The **GetExectuionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the API documentation.
 
-![Logic App set variable screen](media/integration-logic-app-set-variable-step.png)
+    - Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
 
-> ![IMPORTANT]
-> The value for the **Set Variable** action (*body('Invoke_an_HTTP_request_2').value*) will be different than the value for the **Invoke HTTP request 2** body value, even though the designer will render the values the same way.
+        - **Method:** POST
+        - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
+        - **Body of the request:** body('Invoke\_an\_HTTP\_request').value
 
-7. Get the download URL of the exported package
-   
-  - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api#getexportedpackageurl) DMF REST API.
-    - **Method**: POST
-    - **Url of the request**: https://\<hostname\>/namespaces/\<namespace_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
-    - **Body of the request**: {"executionId": body('GetExportedPackageURL').value}
+            > [!NOTE]
+            > You might have to enter the **Body of the request** value either in code view or in the function editor in the designer.
 
-![Logic App get package URL screen](media/integration-logic-app-get-exported-package-step.png)
+        ![Invoke an HTTP request 2 dialog box](media/integration-logic-app-get-execution-status-step.png)
 
-8. Download the exported package
+        ![Set variable dialog box](media/integration-logic-app-set-variable-step.png)
 
-  - Add an HTTP GET request (a built-in [HTTP connector action](https://docs.microsoft.com/en-us/azure/connectors/connectors-native-http)) to download the package from the URL returned in the previous step.
-    - **Method**: GET
-    - **URI**: body('Invoke_an_HTTP_request_3').value (may need to enter through code view or function editor in designer)
+        > ![IMPORTANT]
+        > The value for the **Set variable** action (**body('Invoke\_an\_HTTP\_request\_2').value**) will differ from the value for the **Invoke an HTTP request 2** body value, even though the designer will show the values in the same way.
 
-![Logic App download file screen](media/integration-logic-app-download-file-step.png)
+7. Get the download URL of the exported package.
 
-> ![NOTE]
-> This request does not require any additional authentication since the GetExportedPackageUrl API returns a URL that includes a SAS token granting access to download the file.
+    - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api#getexportedpackageurl) DMF REST API.
 
-9. Save the downloaded package using the [OneDrive for Business](https://docs.microsoft.com/en-us/azure/connectors/connectors-create-api-onedriveforbusiness) connector.
+        - **Method:** POST
+        - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
+        - **Body of the request:** {"executionId": body('GetExportedPackageURL').value}
 
-  - Add a OneDrive for Business [Create File](https://docs.microsoft.com/en-us/connectors/onedriveforbusinessconnector/#create-file) action
-    - Connect to your OneDrive account if necessary
-    - **Folder Path**: \<pick a folder\>
-    - **File Name**: worker_package.zip
-    - **File Content**: Body of the previous step (dynamic content)
+        ![GetExportedPackageURL dialog box](media/integration-logic-app-get-exported-package-step.png)
 
-![Logic App create file screen](media/integration-logic-app-create-file-step.png)
+8. Download the exported package.
 
-### Step 3: Test your Logic App
+    - Add an HTTP **GET** request (a built-in [HTTP connector action](https://docs.microsoft.com/azure/connectors/connectors-native-http)) to download the package from the URL that was returned in the previous step.
 
-To test your Logic App, press the **Run** button in the designer. You will see the steps of your logic app start executing. After 30-40 seconds, your Logic App should complete, with the result being a new package file containing the exported workers in your OneDrive for Business folder.
+        - **Method:** GET
+        - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
 
-If any of the steps report a failure, click on the failed step in the designer and examine the INPUTS and OUTPUTS for the step, debugging and adjusting the step as necessary to correct errors.
+            > [!NOTE]
+            > You might have to enter the **URI** value either in code view or in the function editor in the designer.
 
-![Logic App successful run screen](media/integration-logic-app-successful-run.png)
+        ![HTTP dialog box](media/integration-logic-app-download-file-step.png)
+
+        > ![NOTE]
+        > This request doesn't require any additional authentication, because the URL that the **GetExportedPackageUrl** API returns includes a shared access signatures token that grants access to download the file.
+
+9. Save the downloaded package by using the [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector.
+
+    - Add a OneDrive for Business [Create File](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file) action.
+    - Connect to your OneDrive for Business account, as required.
+
+        - **Folder Path:** A folder of your choice
+        - **File Name:** worker\_package.zip
+        - **File Content:** The body from the previous step (dynamic content)
+
+        ![Create file dialog box](media/integration-logic-app-create-file-step.png)
+
+### Step 3: Test the logic app
+
+To test your logic app, select the **Run** button in the designer. You will see that the steps of the logic app start to run. After 30 to 40 seconds, the logic app should finish running, and your OneDrive for Business folder should include a new package file that contains the exported workers.
+
+If a failure is reported for any step, select the failed step in the designer, and examine the INPUTS and OUTPUTS for it. Debug and adjust the step as required to correct the errors.
+
+![Successful logic app run](media/integration-logic-app-successful-run.png)
 
 ## Summary
 
-In this tutorial, you learned how to use a Logic App to export data from Talent Core HR and save the exported data into a OneDrive for Business folder. Use this and modify the steps as necessary to suit your business needs.
+In this tutorial, you learned how to use a logic app to export data from Core HR and save the exported data to a OneDrive for Business folder. You can modify the steps of this tutorial as required to suit your business needs.
