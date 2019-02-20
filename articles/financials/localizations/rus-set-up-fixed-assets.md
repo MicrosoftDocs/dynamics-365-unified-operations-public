@@ -62,7 +62,7 @@ Follow these steps to set up value models for fixed assets.
     2. In the **Value model** field, select a derived model for the value model.
     3. In the **Transaction type** field, select the type of transaction that the derived model is associated with.
 
-11. Select **Depreciation groups** to define depreciation groups for the value model. For more information, see [Set up depreciation groups](rus-depreciation-setup.md#Set-up-depreciation-groups).
+11. Select **Depreciation groups** to define depreciation groups for the value model. For more information, see [Set up depreciation groups](rus-depreciation-setup.md#set-up-depreciation-groups).
 
 ## Set up fixed asset posting profiles
 
