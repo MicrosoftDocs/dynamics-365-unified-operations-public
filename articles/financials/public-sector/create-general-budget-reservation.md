@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and encumber a general budget reservation
-description: This topic provides information about creating and encumbering a general budget reservations for public sector in Microsoft Dynamics 365 for Finance and Operations.
+title: Maintain a general budget reservation
+description: This topic provides information about creating, encumbering, and modifying a general budget reservations for public sector in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2019
@@ -30,11 +30,13 @@ ms.dyn365.ops.version:
 
 ---
 
-# Create and encumber a general budget reservation
+# Maintain a general budget reservation
 
 [!include [banner](../includes/banner.md)]
 
 After you set up your system to use general budget reservations, you can create reservation documents. General budget reservations are available to the documents that are required for the purchasing method you choose. These methods include purchase order, purchase requisition, and vendor invoice.
+
+## Create and encumber a general budget reservation
 
 To create a general budget reservation, use the following steps.
 
@@ -63,3 +65,87 @@ To create a general budget reservation, use the following steps.
     -   If you use project accounting, on the General budget reservation lines section, click Committed costs. The Committed costs page opens, displaying the committed costs related to the selected line.
 
 8.  When you are finished filling out the header and line values, either **Submit to workflow** or click **Post** (dependent on your setup).
+
+## View a general budget reservation
+
+You can view the details of a general budget reservation, including information about the vendor, items or services ordered, and budget specifics. You can also access the source documents that the reservation references.
+
+1.  Go to **Budgeting \> General budget reservations**.
+
+2.  On the list page, click the Document number of any reservation that you want to view. The details window opens.
+
+3.  On the Action bar, click **Accounting \> Subledger journal**, View distributions or Voucher to see those entries.
+
+4.  To view any related purchase requisition, click the **Line details** section, then click the purchase requisition reference number.
+
+5.  To see a summary of the financial accounting, on the Action bar click **Manage \> Financial summary**. In the Reservation line list, you can select the line for which you want to see details.
+
+6.  To see details of the budget reservation relief, on the Action bar click **Manage \> Relief details**. To see the original document that relieves this general budget reservation (such as an invoice or purchase order), click **View relieving document**.
+
+    -   You can also access the General budget reservation relief details page from the **General budget reservation financial summary** page, by clicking Relief details from there.
+
+## Modify a general budget reservation
+
+If the reservation is in workflow, recall the workflow status to Draft status, follow the steps below, and then resubmit the amended reservation to workflow.
+
+1.  Go to **Budgeting \> General budget reservations**.
+
+2.  On the list page, open the reservation that you want.
+
+3.  On the Action bar click **Edit**.
+
+4.  Make any changes you want, including adding or deleting lines.
+
+    -   When a reservation line has already been referenced by a purchase order or vendor invoice, your ability to change or delete lines will be limited.
+
+5.  On the Action bar, click **Post**.
+
+## Delete a general budget reservation
+
+1.  Go to **Budgeting \> General budget reservations**.
+
+2.  On the list page, click the reservation that you want to delete.
+
+    -   It must have a Reservation status and Workflow status of Draft to be
+        deleted. Delete can only be done on a reservation that has never before
+        been posted.
+
+3.  On the Action bar, click **Delete**.
+
+4.  Click **Yes**.
+
+## Cancel a general budget reservation
+
+1.  Go to **Budgeting \> General budget reservations**.
+
+2.  On the list page, click the reservation that you want to cancel.
+
+    -   It must have a Reservation status and Workflow status of Posted to be canceled. Cancel can only be done on a reservation that has no downstream relieving activity.
+
+3.  On the Action bar, click **Cancel**.
+
+4.  Click **Yes**.
+
+    -   The general ledger and budget control updates occur and the transaction is recorded in the Transaction log.
+
+    -   This does not delete the reservation but cancels it, generating the accounting and budget entries to reverse the impact of the originally posted document.
+
+    -   You can cancel an entire general budget reservation, not individual lines.
+
+## Finalize a general budget reservation
+
+1.  Go to **Budgeting \> General budget reservations**.
+
+2.  Open the reservation that you want to finalize.
+
+    -   It must have a Reservation status and Workflow status of Posted to be finalized. Finalize can only be done on a reservation or reservation line that has downstream relieving activity.
+
+3.  With the reservation open, do one of the following:
+
+    -   To finalize the whole budget reservation, on the Action bar, click **General budget reservation \> Finalize**.
+
+    -   To finalize one line only, select it and on the **General budget reservation lines** section, click **Finalize line**.
+
+    -   To finalize multiple lines, select them and on the **General budget reservation lines** section, click Finalize line.
+
+4.  Accounting and budget-control entries are posted. The remaining balance is removed from the document and returned to budget unless it’s a carry forward document and the associated fund or reservation type is set to **Reduce carry-forward budget**.
