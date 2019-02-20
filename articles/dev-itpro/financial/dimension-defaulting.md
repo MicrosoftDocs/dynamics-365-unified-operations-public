@@ -113,9 +113,10 @@ whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
 :::row-end:::
 :::row:::
     :::column:::
-    Each individual value is stored as a separate row in the *DimensionAttributeValueSetItem* table sharing the same parent record foreign key. This data can be queried directly through these tables or using the *DimensionAttributeValueSetItemView* as shown here.
-    ![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png "SQL of all default dimension values") 
+    Each individual value is stored as a separate row in the *DimensionAttributeValueSetItem* table sharing the same parent record foreign key.  
     ![SQLResultofAllDefaultDimensionValues](./media/SQLResultofAllDefaultDimensionValues.png "SQL results of all default dimension values")
+    This data can be queried directly through these tables or using the *DimensionAttributeValueSetItemView* as shown here.
+    ![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png "SQL of all default dimension values")
     :::column-end:::
 :::row-end:::    
         
