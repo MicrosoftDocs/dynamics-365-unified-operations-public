@@ -5,7 +5,7 @@ title: Install BaseX for AppChecker
 description: This topic explains how to install and set up BaseX in a developer environment.
 author: AndreasHassing
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,7 +55,7 @@ Run the executable file on the developer machine where you will compile your mod
 
 ## Configure BaseX to handle your model
 
-Depending on the size of your model, BaseX can utilize a lot of memory.
+Depending on the size of your model, BaseX can use a lot of memory.
 
 By default, BaseX is configured to use a maximum of about 1.17 gigabytes (GB) of random-access memory (RAM). If you have a large model, you should consider increasing this limit by following these steps.
 
