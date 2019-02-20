@@ -5,7 +5,7 @@ title: Set up fixed assets (Russia)
 description: This topic explains how to set up fixed assets for Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
