@@ -115,10 +115,15 @@ whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
     :::column:::
     Each individual value is stored as a separate row in the *DimensionAttributeValueSetItem* table sharing the same parent record foreign key.  
     ![SQLResultofAllDefaultDimensionValues](./media/SQLResultofAllDefaultDimensionValues.png "SQL results of all default dimension values")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
     This data can be queried directly through these tables or using the *DimensionAttributeValueSetItemView* as shown here.
     ![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png "SQL of all default dimension values")
     :::column-end:::
-:::row-end:::    
+:::row-end:::
+:::row:::
         
 
 
@@ -131,11 +136,11 @@ The dimension framework only stores rows for dimensions that have a value entere
     ### Immutable data
     As with most all dimension data, the records that are inserted into the tables above are immutable. They are only written initially and never subsequently updated or deleted. In Figure 3, when the user adds a Project ID and then saves, the query above in Figure 1 will still return the same three rows. The dimension framework has created a new value set record and 4 additional value set item records linking to the new value set as shown in Figure 4 below. 
     :::column-end:::
-:::row-end:::
-:::row:::
     :::column:::
     ![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values the new set")
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
     ![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry of one added value")
     :::column-end:::
@@ -172,9 +177,11 @@ In the example of an order document, there are multiple default dimensions that 
     :::column:::
     The SQL query for the default dimension reference on the vendor record and the resulting default dimension created.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
-    ![DefaultDimensions3-SQLVendor.png](./media/DefaultDimensions3-SQLVendor.png)
-    ![DefaultDimensions3-SQLResultVendor.png](./media/DefaultDimensions3-SQLResultVendor.png)
+    ![DefaultDimensions3-SQLVendor.png](./media/DefaultDimensions3-SQLVendor.png "The SQL query for the default dimension reference on the vendor record")
+    ![DefaultDimensions3-SQLResultVendor.png](./media/DefaultDimensions3-SQLResultVendor.png "The resulting default dimension that is created.")
     :::column-end:::
 :::row-end:::
 :::row:::
