@@ -144,7 +144,8 @@ You can register the receipt of several fixed assets or inventory assets at the 
 8. In the **Create fixed asset** dialog box, select the FA group that the asset belongs to and fill in the inventory number if   this field is not filled in automatically.
 9. Select **OK**. An asset record is created, and a destination is shown.
 
-To automatically create lines on the **Receipt from another company** page click **Create from FA transference journal** and then:
+#### Automatically create lines
+To automatically create lines on the **Receipt from another company** page click **Create from FA transference journal** and then complete the following steps.
 
 1. On the **Adding fixed assets from issue journals for another company** page, in the upper pane, select the journal. Then click **Copy journal** to copy all the information from the specified transfer journal to the receipt journal.
 2. In the lower pane, click **Copy journal line** to copy individual lines of the transfer journal to the receipt journal.
