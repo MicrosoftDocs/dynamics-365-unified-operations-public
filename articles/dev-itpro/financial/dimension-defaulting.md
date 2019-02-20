@@ -105,11 +105,12 @@ whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
 :::row:::
     :::column:::
     ### Default dimension value storage
-    The values associated with the dimensions are stored in a separate table apart from the primary table referencing them. For example, the *LedgerJournalTable* has a *DimensionDefault* column that holds a foreign key reference to a record in the *DimensionAttributeValueSet* table. This is the parent record representing the set of values displayed. Each individual value is stored as a separate row in the *DimensionAttributeValueSetItem* table sharing the same parent record foreign key. This data can be queried directly through these tables or using the *DimensionAttributeValueSetItemView* as shown in Figure 1 below. 
+    The values associated with the dimensions are stored in a separate table apart from the primary table referencing them. For example, the *LedgerJournalTable* has a *DimensionDefault* column that holds a foreign key reference to a record in the *DimensionAttributeValueSet* table. This is the parent record representing the set of values displayed.  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
+    Each individual value is stored as a separate row in the *DimensionAttributeValueSetItem* table sharing the same parent record foreign key. This data can be queried directly through these tables or using the *DimensionAttributeValueSetItemView* as shown here.
     ![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png "SQL of all default dimension values") 
     ![SQLResultofAllDefaultDimensionValues](./media/SQLResultofAllDefaultDimensionValues.png "SQL results of all default dimension values")
     :::column-end:::
