@@ -40,7 +40,7 @@ If your organization is in France, you will use commitments instead of general b
 
 The following illustration shows the steps that are required for setting up the system to use general budget reservations. The numbers correspond to the procedures later in this topic.
 
-![Flow chart for general budget reservation setup](media/b3be3f5fb3656de3f42f96b6dac4f74c.jpg)
+![Flow chart for general budget reservation setup](media/gbr-rules-reservations-process.jpg "Process diagram for working with rules and reservation types")
 
 ## Prerequisites
 
