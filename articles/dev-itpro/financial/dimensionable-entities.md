@@ -126,7 +126,7 @@ public void delete()
 {
     if (!DimensionValidation::canDeleteEntityValue(this))
     {
-        throw error(strFmt("\@SYS134392", this.AccountNum));
+        throw error(strFmt("@SYS134392", this.AccountNum));
     }
       
     ttsbegin;
