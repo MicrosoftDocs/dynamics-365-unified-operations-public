@@ -121,7 +121,9 @@ On the Environment monitoring page, click the **Health metrics** tab to view the
 
 ### Activity monitoring
 
-On the Environment monitoring page, click the **Activity** tab to use the Activity monitoring tool. This tool provides a storyboard view that shows what you or another user was doing during a specific period. [![activitymonitoringview](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
+On the Environment monitoring page, click the **Activity** tab to use the Activity monitoring tool. This tool provides a storyboard view that shows what you or another user was doing during a specific period. 
+
+[![activitymonitoringview](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
 
 -   The **User interaction** chart shows a user's activities on various machines in the environment and the SQL utilization trend.
 -   The **User load** section shows all the system users. Each chart shows the time that the user spent on a specific machine.
