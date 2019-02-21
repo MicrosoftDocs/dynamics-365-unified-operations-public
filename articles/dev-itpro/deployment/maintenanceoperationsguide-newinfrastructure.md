@@ -62,7 +62,7 @@ To enable/disable maintenance mode, use the following steps:
 
 ## Access database
 
-Environments deployed using the [self-service deployment](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Manali-Branch/articles/dev-itpro/deployment/infrastructure-stack.md) experience have Remote Desktop Access turned off. As part of implementing Finance and Operations, if you need to connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 Standard Acceptance Test environments for troubleshooting, access will be granted as needed and will not be persistent. Following process provides an overview of how you can connect to the database:
+Environments deployed using the [self-service deployment](infrastructure-stack.md) experience have Remote Desktop Access turned off. As part of implementing Finance and Operations, if you need to connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 Standard Acceptance Test environments for troubleshooting, access will be granted as needed and will not be persistent. Following process provides an overview of how you can connect to the database:
 
 - Enable access to Azure SQL through LCS by whitelisting the IP address of the machine that you will use to connect to the Azure SQL database using SQL Management Studio.
 - After this is done, you can request access to see the database credentials through LCS by entering a reason for requesting access.
