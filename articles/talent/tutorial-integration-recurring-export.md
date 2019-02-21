@@ -44,14 +44,16 @@ In one typical business scenario for Microsoft Dynamics 365 integrations, data m
 
 This tutorial uses the following technologies:
 
-- **Dynamics 365 for Talent Core HR** – The master data source for workers that will be exported.
+- **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/en-us/talent/overview/)** – The master data source for workers that will be exported.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
-    - [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) connector
-    - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector
+    - [Connectors](https://docs.microsoft.com/en-us/azure/connectors/apis-list) - The technology for connecting the logic app to the required endpoints.
+
+        - [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) connector
+        - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector
 
 - **[DMF package REST API](../dev-itpro/data-entities/data-management-api.md)** – The technology that is used to trigger the export and monitor its progress.
-- **OneDrive for Business** – The destination for the exported workers.
+- **[OneDrive for Business](https://onedrive.live.com/about/en-us/business/)** – The destination for the exported workers.
 
 ## Prerequisites
 
@@ -92,18 +94,18 @@ The bulk of the exercise involves creating the logic app.
 
 4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api#exporttopackage) DMF REST API to schedule the export of your data package.
 
-    - Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
+    1. Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
 
         - **Base Resource URL:** The URL of your Talent environment (Don't include path/namespace information.)
         - **Azure AD Resource URI:** `http://hr.talent.dynamics.com`
 
         > [!NOTE]
-        > The Core HR service doesn't yet provide a connector that exposes these APIs. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Talent.
+        > The Core HR service doesn't yet provide a connector that exposes the DMF package REST APIs. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Talent.
 
-        ![HTTP with Azure AD dialog box](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP with Azure AD connector](media/integration-logic-app-http-aad-connector-step.png)
 
-    - Sign in to your Talent environment through the HTTP with Azure AD connector.
-    - Set up an HTTP **POST** request to call the **ExportToPackage** DMF REST API.
+    2. Sign in to your Talent environment through the HTTP with Azure AD connector.
+    3. Set up an HTTP **POST** request to call the **ExportToPackage** DMF REST API.
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
@@ -119,29 +121,29 @@ The bulk of the exercise involves creating the logic app.
             }
             ```
 
-        ![Invoke an HTTP request dialog box](media/integration-logic-app-export-to-package-step.png)
+        ![Invoke an HTTP request action](media/integration-logic-app-export-to-package-step.png)
 
     > ![TIP]
     > You might want to rename each step so that it's more meaningful than the default name, **Invoke an HTTP request**. For example, you can rename this step **ExportToPackage**.
 
 5. [Initialize a variable](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) to store the execution status of the **ExportToPackage** request.
 
-    ![Initialize variable dialog box](media/integration-logic-app-initialize-variable-step.png)
+    ![Initialize variable action](media/integration-logic-app-initialize-variable-step.png)
 
 6. Wait until the execution status of the data export is **Succeeded**.
 
-    - Add an [Until loop](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) that repeats until the value of the **ExecutionStatus** variable is **Succeeded**.
-    - Add a **Delay** action that waits five seconds before it polls for the current execution status of the export.
+    1. Add an [Until loop](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) that repeats until the value of the **ExecutionStatus** variable is **Succeeded**.
+    2. Add a **Delay** action that waits five seconds before it polls for the current execution status of the export.
 
-        ![Until dialog box](media/integration-logic-app-until-loop-step.png)
+        ![Until loop container](media/integration-logic-app-until-loop-step.png)
 
         > ![NOTE]
         > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.
 
         > ![IMPORTANT]
-        > This sample doesn't do error checking. The **GetExectuionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the API documentation.
+        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the API [documentation](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus).
 
-    - Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
+    3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -150,9 +152,9 @@ The bulk of the exercise involves creating the logic app.
             > [!NOTE]
             > You might have to enter the **Body of the request** value either in code view or in the function editor in the designer.
 
-        ![Invoke an HTTP request 2 dialog box](media/integration-logic-app-get-execution-status-step.png)
+        ![Invoke an HTTP request 2 action](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Set variable dialog box](media/integration-logic-app-set-variable-step.png)
+        ![Set variable action](media/integration-logic-app-set-variable-step.png)
 
         > ![IMPORTANT]
         > The value for the **Set variable** action (**body('Invoke\_an\_HTTP\_request\_2').value**) will differ from the value for the **Invoke an HTTP request 2** body value, even though the designer will show the values in the same way.
@@ -165,7 +167,7 @@ The bulk of the exercise involves creating the logic app.
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Body of the request:** {"executionId": body('GetExportedPackageURL').value}
 
-        ![GetExportedPackageURL dialog box](media/integration-logic-app-get-exported-package-step.png)
+        ![GetExportedPackageURL action](media/integration-logic-app-get-exported-package-step.png)
 
 8. Download the exported package.
 
@@ -177,7 +179,7 @@ The bulk of the exercise involves creating the logic app.
             > [!NOTE]
             > You might have to enter the **URI** value either in code view or in the function editor in the designer.
 
-        ![HTTP dialog box](media/integration-logic-app-download-file-step.png)
+        ![HTTP GET action](media/integration-logic-app-download-file-step.png)
 
         > ![NOTE]
         > This request doesn't require any additional authentication, because the URL that the **GetExportedPackageUrl** API returns includes a shared access signatures token that grants access to download the file.
@@ -191,13 +193,15 @@ The bulk of the exercise involves creating the logic app.
         - **File Name:** worker\_package.zip
         - **File Content:** The body from the previous step (dynamic content)
 
-        ![Create file dialog box](media/integration-logic-app-create-file-step.png)
+        ![Create file action](media/integration-logic-app-create-file-step.png)
 
 ### Step 3: Test the logic app
 
 To test your logic app, select the **Run** button in the designer. You will see that the steps of the logic app start to run. After 30 to 40 seconds, the logic app should finish running, and your OneDrive for Business folder should include a new package file that contains the exported workers.
 
-If a failure is reported for any step, select the failed step in the designer, and examine the INPUTS and OUTPUTS for it. Debug and adjust the step as required to correct the errors.
+If a failure is reported for any step, select the failed step in the designer, and examine the **Inputs** and **Outputs** for it. Debug and adjust the step as required to correct the errors.
+
+The following illustration shows what the Logic Apps Designer looks like when all the steps of the logic app run successfully.
 
 ![Successful logic app run](media/integration-logic-app-successful-run.png)
 
