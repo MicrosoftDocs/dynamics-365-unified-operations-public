@@ -174,7 +174,7 @@ In the example of an order document, there are multiple default dimensions that 
 :::row-end:::
 :::row:::
     :::column:::
-    The SQL query for the default dimension reference on the vendor record and the resulting default dimension created.
+    The SQL query for the default dimension reference on the vendor record.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -184,7 +184,7 @@ In the example of an order document, there are multiple default dimensions that 
 :::row-end:::
 :::row:::
     :::column:::
-        The resulting default dimension created
+        The resulting default dimension that is created.
     :::column-end:::
     :::column:::
     ![DefaultDimensions3-SQLResultVendor.png](./media/DefaultDimensions3-SQLResultVendor.png "The resulting default dimension that is created.")
@@ -192,21 +192,42 @@ In the example of an order document, there are multiple default dimensions that 
 :::row-end:::
 :::row:::
     :::column:::
-    Figures 4 and 5 below shows A new purchase order created for this vendor and the SQL query and default dimension reference on the header record. In this case the dimensions from the vendor replaced any dimensions already on the purchase order header as soon as a vendor is selected, so a direct copy of the default dimension foreign key was all that needed to be done as shown in Figure 6.
+    A new purchase order created for this vendor.
     :::column-end:::
     :::column:::
     ![DefaultDimensions3-CopiedToDocHeader.png](./media/DefaultDimensions3-CopiedToDocHeader.png "Default dimension copied to a document header (Purchase order)")
-    ![DefaultDimensions3-SQLCopiedToDocHeader.png](./media/DefaultDimensions3-SQLCopiedToDocHeader.png "SQL query and output showing default dimensions on purchase order record")
-    ![DefaultDimensions3-SQLResultCopiedToDocHeader.png](./media/DefaultDimensions3-SQLResultCopiedToDocHeader.png "SQL query and output showing default dimensions on purchase order record")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+     The SQL query and default dimension reference on the header record. 
+    :::column-end:::
+     :::column:::
+     ![DefaultDimensions3-SQLCopiedToDocHeader.png](./media/DefaultDimensions3-SQLCopiedToDocHeader.png "SQL query and output showing default dimensions on purchase order record")
+    :::column-end:::   
+:::row-end:::
+:::row:::
+    :::column:::
+    The dimensions from the vendor replaced any dimensions already on the purchase order header as soon as a vendor was selected, so a direct copy of the default dimension foreign key was all that needed to be done.
+    :::column-end:::
+    :::column:::
+    ![DefaultDimensions3-SQLResultCopiedToDocHeader.png](./media/DefaultDimensions3-SQLResultCopiedToDocHeader.png)
     ![DefaultDimensions3-6CodetoCopy.png](./media/DefaultDimensions3-6CodetoCopy.png "Code used to copy default dimensions from the vendor to the purchase order")
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-    Next, suppose the user enters a value for the Project dimension.  Figure 7 below, shows the header dimensions after that change. Figure 8 shows the SQL query for the default dimension reference on the header record and the resulting default dimension created.
+    The header dimensions after the user  user enters a value for the Project dimension. 
     :::column-end:::
     :::column:::
     ![DefaultDimensions3-7DocumentHeader.png](./media/DefaultDimensions3-7DocumentHeader.png "Default dimension modified by a user on a document header (Purchase order)")
+    :::column-end:::
+    :::row-end:::
+:::row:::
+    :::column:::
+    The SQL query for the default dimension reference on the header record and the resulting default dimension created.
+    :::column-end:::
+    :::column:::
     ![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQL query and output showing updated default dimensions on purchase order record")
 ![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "SQL query and output showing updated default dimensions on purchase order record")
     :::column-end:::
