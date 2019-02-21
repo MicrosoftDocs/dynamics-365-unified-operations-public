@@ -133,15 +133,15 @@ The dimension framework only stores rows for dimensions that have a value entere
 :::row:::
     :::column:::
     ### Immutable data
-    As with most all dimension data, the records that are inserted into the tables above are immutable. They are only written initially and never subsequently updated or deleted. In Figure 3, when the user adds a Project ID and then saves, the query above in Figure 1 will still return the same three rows. The dimension framework has created a new value set record and 4 additional value set item records linking to the new value set as shown in Figure 4 below. 
+    As with most all dimension data, the records that are inserted into the tables mentioned earlier are immutable. They are only written initially and never subsequently updated or deleted. When the user adds a Project ID as a dimension and then saves their change, the query will still return the same three rows. The dimension framework has created a new value set record and four additional value set item records linking to the new value set. 
     :::column-end:::
     :::column:::
-    ![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values the new set")
+    ![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry of one added value")
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-    ![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry of one added value")
+    ![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values the new set")
     :::column-end:::
 :::row-end:::    
 
@@ -180,6 +180,13 @@ In the example of an order document, there are multiple default dimensions that 
 :::row:::
     :::column:::
     ![DefaultDimensions3-SQLVendor.png](./media/DefaultDimensions3-SQLVendor.png "The SQL query for the default dimension reference on the vendor record")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        The resulting default dimension created
+    :::column-end:::
+    :::column:::
     ![DefaultDimensions3-SQLResultVendor.png](./media/DefaultDimensions3-SQLResultVendor.png "The resulting default dimension that is created.")
     :::column-end:::
 :::row-end:::
