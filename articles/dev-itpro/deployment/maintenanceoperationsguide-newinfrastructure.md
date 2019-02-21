@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment deployed using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 12/14/2018
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
