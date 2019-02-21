@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Ledger account combinations
