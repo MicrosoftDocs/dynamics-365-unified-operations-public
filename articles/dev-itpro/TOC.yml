@@ -912,7 +912,7 @@
       href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md
-    - name: Apply updates and extensions to cloud hosted retail channel components
+    - name: Apply updates and extensions to cloud hosted Retail channel components
       href: deployment/Update-retail-channel.md  
     - name: Initialize cloud-hosted Retail channel components
       href: deployment/Initialize-Retail-Channels.md  
