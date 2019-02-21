@@ -70,3 +70,6 @@ When you are implementing business events in Visual Studio you may not see the n
 When new workflows are configured, such as the workflow elements or steps, might not show up in the business events catalog.
 
 In other situations, when you don’t see certain business events, doing a manual refresh should resolve the issue.
+
+**Flow app does not get triggerd even when the business event has happened OR the business event does not show up in the service bus topic**
+This ususally indicates that the business events batch processor is not running. As a result, the business events are not getting processed to be sent out to the endpoints. The batch processor can be started from the system parameters > business events - preview tab. The job must be scheduled to run in batch in a recurring manner to ensure continued processing of business events.
