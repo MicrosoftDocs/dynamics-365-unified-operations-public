@@ -51,16 +51,11 @@ When this job is executing, there could be some impact:
 4. Click the menu item **Batch Job > Recurrence**.  
 5. Change the schedule time, recurrence that suits.
 
-screen shot
-
-screen shot
-
 The results of index rebuilds can be found by going to **System administration > Inquiries > Database > SQL index fragmentation details**. 
 
 > [!Note]
 > In some cases you may find the before and after fragmentation number or same or even higher. Do not get alarmed. This is because of the less intrusive ‘online’ rebuild option that we use. In future we will introduce an optional offline rebuild option too.
 
-screen shot
 
 
 
