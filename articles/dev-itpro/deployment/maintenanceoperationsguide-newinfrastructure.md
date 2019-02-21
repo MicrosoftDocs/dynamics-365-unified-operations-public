@@ -49,7 +49,7 @@ During the restart you will be unable to trigger any other maintenance operation
 
 ## Maintenance mode
 
-Finance and Operations includes a system-wide setting that is named [Maintenance mode](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Manali-Branch/articles/dev-itpro/sysadmin/maintenance-mode.md). When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users assigned to the Maintenance mode user role can sign in to the system. By default, maintenance mode is turned off.
+Finance and Operations includes a system-wide setting that is named [Maintenance mode](../sysadmin/maintenance-mode.md). When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users assigned to the Maintenance mode user role can sign in to the system. By default, maintenance mode is turned off.
 
 To enable/disable maintenance mode, use the following steps:
 
