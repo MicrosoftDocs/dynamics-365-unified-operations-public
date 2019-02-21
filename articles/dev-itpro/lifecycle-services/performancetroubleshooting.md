@@ -49,10 +49,10 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
 - **Queries** - Shows a list of pre-defined queries that can be used to retrieve metrics on demand. Examples of queries include a current blocking tree, a list of active plan guides, and a list of most expensive queries.
 
- [![queries](./media/Queries.JPG)](./media/Queries.JPG)
+     [![queries](./media/Queries.JPG)](./media/Queries.JPG)
  
- > [!IMPORTANT]
-> In order to ensure that the query results are returned instantaneously most of the queries are executed synchronously. However, if there is an ongoing performance issue then executing the query synchronously might result in a time-out error. To address this, we have added a new toggle button called 'Use Fast Query' as an option. This button is toggled on by default for most queries. If you get a timeout error after executing the query you can try re-executing the query by toggling the Use Fast Query button OFF. This will result in the query executing asynchronously.  
+    > [!IMPORTANT]
+    > In order to ensure that the query results are returned instantaneously most of the queries are executed synchronously. However, if there is an ongoing performance issue then executing the query synchronously might result in a time-out error. To address this, we have added a new toggle button called 'Use Fast Query' as an option. This button is toggled on by default for most queries. If you get a timeout error after executing the query you can try re-executing the query by toggling the Use Fast Query button OFF. This will result in the query executing asynchronously.  
 
 - **Actions** - Shows a list of pre-defined actions that should be taken to mitigate issues in the sandbox and production environments. Examples of actions include adding/dropping an index, updating stats on a table, rebuilding indexes, and terminating a blocking statement.  Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed. 
 
