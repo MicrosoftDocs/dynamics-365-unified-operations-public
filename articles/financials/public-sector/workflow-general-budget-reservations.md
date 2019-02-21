@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and submit general budget reservations to workflow
-description: This topic provides information about setting up and submitting general budget reservations to workflow for public sector in Microsoft Dynamics 365 for Finance and Operations.
+title: Set up general budget reservations and submit them to a workflow
+description: This topic explains how to set up  general budget reservations and submit them to a workflow for Public sector in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2019
@@ -30,117 +30,102 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up and submit general budget reservations to workflow
+# Set up general budget reservations and submit them to a workflow
 
 [!include [banner](../includes/banner.md)]
 
-When a general budget reservation is setup to use workflow, the document must first be submitted and approved through workflow. After it completes workflow it remains editable. The option to Post becomes available but the other controls and fields in the page are locked unless you chose to edit. Note that if you edit an approved reservation, its workflow status is reset to Draft, and the option to Post is no longer available, but the other controls and fields are available. You must resubmit the changed reservation for approval.
+When a general budget reservation is set up to use a workflow, the document must first be submitted and approved through the workflow system. After the workflow is completed and the reservation is approved, you can still edit the document. Although the option to post the document is available, no other controls and fields on the page are available unless you select the option to edit the document. Note that if you edit an approved reservation, its workflow status is reset to **Draft**, and the option to post the document is no longer available. However, the other controls and fields on the page are available. After you change a reservation, you must resubmit it to the workflow system for approval.
 
-The following illustration shows how to set up a general budget reservation workflow. The numbers correspond to the procedures later in this topic.
+The following illustration shows how to set up a workflow for general budget reservations. Each numbered step corresponds to a section of this topic.
 
-![General budget reservation workflow setup](media/gbr-workflow-process.jpg "Process diagram for the general budget reservations workflow")
+![Setup of a general budget reservation workflow](media/gbr-workflow-process.jpg "Setup of a general budget reservation workflow")
 
-## 1. Optional: Set up reviewers for general budget reservations
+## Optional: Set up reviewers for general budget reservations
 
-You can set up reviewer workflow elements to route general budget reservations for review. The workflow process uses the specified owner of the project role or financial dimension to determine whom to route the expenditure to.
+You can set up reviewer workflow elements to route general budget reservations for review. The workflow process uses the specified owner of the project role or financial dimension to determine who the expenditure should be routed to.
 
-Alternatively, you can simply assign a specific user or user group as a reviewer when you define the workflow. However, if you have a complex organization, you can improve the efficiency of the approval process by specifying reviewer elements, and you won’t have to change the workflow reviewer assignments every time that a reviewer changes job roles.
+Alternatively, you can just assign a specific user or user group as a reviewer when you define the workflow. However, if you have a complex organization, you can improve the efficiency of the approval process by specifying reviewer elements. In that way, you won't have to change the workflow reviewer assignments every time that a reviewer changes job roles.
 
-## 2. Create a workflow for general budget reservations
+## Create a general budget reservation workflow
 
-General budget reservation workflows are based on reservation type. You can therefore create multiple workflows for general budget reservations.
+Workflows for general budget reservations are based on the reservation type. Therefore, you can create multiple general budget reservation workflows.
 
-If the general budget reservation requires a purchase requisition, note that purchase requisitions require their own workflow. The workflow for the purchase requisition must be completed before the general budget reservation can reference it.
+If a general budget reservation requires a purchase requisition, note that purchase requisitions require their own workflow. The workflow for the purchase requisition must be completed before the general budget reservation can reference it.
 
-To create a workflow for general budget reservations, use the following steps.
+To create a general budget reservation workflow, follow these steps.
 
-1.  Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting workflows**.
+1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting workflows**.
+2. Select **New**.
+3. In the **Create workflow** dialog box, select the **General budget reservation workflow** template, and then select **Create workflow**.
+4. In the workflow editor, in the **Workflow elements** pane, under **Approvals**, select **Approve general budget reservation**, and then drag it so that it's under the **Start** element on the canvas.
+5. Drag the border of the **Start** element to create a connecting line to the approval element.
+6. Select the approval element, and then, on the Action bar, select **Basic settings** to configure the element.
 
-2.  Click **New**.
+## Optional: Configure manual and automated tasks for a general budget reservation workflow
 
-3.  On the **Create workflow** page, click the **General budget reservation workflow** template, and then click **Create workflow**.
+Configure manual and automated tasks for the general budget reservation workflow, so that the workflow reflects the approval or review tasks that are part of your business practice:
 
-4.  On the workflow page, under **Approvals** in the **Workflow elements** list, click **Approve general budget reservation**, and then drag it under the Start icon.
+- A manual review of a general budget reservation
+- An automated process to evaluate field values for a general budget reservation
 
-5.  Drag the border of the Start icon to create a connecting line to the approval element.
+You can use a combination of these tasks in the same workflow. Manual review tasks and approval workflow elements differ in the following way:
 
-6.  Click the approval element, and then, on the Action bar, click **Basic settings** to configure the element.
+- If you assign the manual review task to multiple users, the workflow can continue after any one of those users completes the task.
+- If you assign an approval workflow element to multiple users, you can specify whether all those users must approve the document before the workflow can continue.
 
+When you define the steps for the review in the description section of the workflow, you assign the task to a user who is authorized to review the lines that are in the general budget reservation.
 
-## 3. Optional: Configure manual and automated tasks for general budget reservation workflows. 
+## Optional: Create conditional decisions
 
-Complete this step to reflect the approval or review tasks that are part of your business practice:
+Create conditional decisions if your business processes require different workflow processes, depending on the amount of the general budget reservation. You can also create conditional decisions that are based on the accounting date, reservation type, reservation title, start or end date, and other criteria.
 
--   A manual review of a general budget reservation
--   An automated process to evaluate field values for general budget reservation
+## Assign participants to workflow elements
 
-You can use a combination of these tasks in the same workflow. The difference between a review manual task and an approval workflow element is as follows:
+You can associate workflow elements with the following groups of participants.
 
--   If the manual review task is assigned to multiple users, the workflow can continue after any one of those users completes the task.
+| User group                 | Description |
+|----------------------------|-------------|
+| Security role participants | Assign the workflow element to a Microsoft Dynamics 365 security role. You might use this option if a group of workers can approve general budget reservations, and it doesn't matter which person approves a particular document. |
+| User group participants    | Assign the workflow element to a Dynamics 365 user group. You might use this option if a group of workers can approve general budget reservations, and anyone in that group can approve a particular document. |
 
--   If you assign an approval workflow element to multiple users, you can specify whether all those users must approve the document before the workflow can continue.
+Workflow elements can also be assigned based on a hierarchy or user.
 
-When defining the steps for the review in the description section of the workflow, you assign the task to a user who is authorized to review the lines that are in the general budget reservation.
+## Save the workflow
 
-## 4. Optional: Create conditional decisions. 
+When you've finished adding workflow elements, use the following procedure to check the workflow for errors and then save it.
 
-Complete this step if your business processes require different workflow processes depending on the amount of the general budget reservation. You can also create decisions that are based on accounting date, reservation type, reservation title, start or end date, and other criteria.
+The **Errors and warnings** pane at the bottom of the workflow editor shows messages that are generated for the workflow. To find the element where an error or warning occurs, double-click the error or warning message. All errors and warnings must be resolved before you can make the workflow active.
 
-## 5. Assign participants to workflow elements.
+1. When the workflow is completed and free of errors, select **Save and close**.
+2. In the **Save workflow** dialog box, select **OK**.
+3. To activate the workflow now, in the **Activate workflow** dialog box, select **OK**.
 
-You can associate a workflow element with the following groups of participants.
+    –or–
 
-| **User group**             | **Description**                                                                                                                                                                                                                   |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Security role participants | Assign the workflow element to a Microsoft Dynamics 365 security role. You might use this option if a group of workers can approve general budget reservations and it doesn’t matter which person approves a particular document. |
-| User group participants    | Assign the workflow element to a Microsoft Dynamics 365 user group. You might use this option if a group of workers can approve general budget reservations and anyone in that group can approve a particular document.           |
+    To activate the workflow later, follow these steps at any time:
 
-You can also have the workflow element assigned based on a hierarchy or user.
+    1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting workflows**.
+    2. Select the workflow that you created.
+    3. On the Action Pane, on the **Workflow** tab, in the **Manage** group, select **Versions**.
+    4. In the **Workflow versions** dialog box, select the version of the workflow that you want.
+    5. Select **Make active**, and then select **OK**.
 
-## 6. Save the workflow.
+## Submit a general budget reservation to the workflow system
 
-When you have finished adding elements, use the following steps to check it for errors and then save it.
+To submit a general budget reservation to the workflow system, you must be the preparer. Before a reservation can be submitted, all required fields must be filled in, and the reservation must contain at least one line item. The reservation must have a workflow status of **Draft**.
 
-The Errors and warnings pane, located at the bottom of the workflow editor, displays messages that are generated for the workflow. To locate the element where an error or warning occurs, double-click the error or warning message. All errors and warnings must be resolved before you can make the workflow active.
+To submit a general budget reservation to the workflow system, follow these steps.
 
-1.  When the workflow is completed and error-free, click **Save and close**. Click **OK** in the **Save workflow** dialog.
+1. Go to **Budgeting \> General budget reservations**.
+2. Select the general budget reservation to submit to the workflow system.
+3. On the Action Pane, select **Submit**.
+4. Optional: In the **Comment** field, add a note.
+5. Select **Submit**. The reservation status is moved to the next step of the workflow.
+6. The **Submit** button on the Action Pane becomes a **Workflow** button. When you select this button, a menu appears. You can use this menu at any time to perform the following tasks:
 
-2.  If you want to activate the workflow now, click **OK** in the **Activate workflow** dialog
+    - View the history and see where the document is in the workflow process.
+    - If the reservation is still in the workflow, recall the workflow status to **Draft** status. You can then make any required changes to the reservation and then resubmit it to the workflow system.
 
-    >   –or–
+    As the reservation moves through the workflow, the reservation status and workflow status change and are reflected in the header of the general budget reservation.
 
-    >   If you want to activate the workflow later, do the following at any time:
-
-3.  Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting workflows**.
-
-4.  Select the workflow you created.
-
-5.  On the Action bar, in the **Manage** group, click **Versions**.
-
-6.  Select the version of the workflow that you want.
-
-7.  Click **Make active**, and then click **OK**.
-
-## Submit to workflow
-
-To submit a general budget reservation to workflow, you must be the preparer. All required fields must be filled in, and the budget reservation must contain at least one line item before it can be submitted. The reservation must have a workflow status of Draft.
-
-To submit a general budget reservation to workflow, follow these steps.
-
-1.  Go to **Budgeting \> General budget reservations**.
-
-2.  Select the budget reservation that you want to submit to workflow.
-
-3.  Click **Submit** in the Action bar.
-
-4.  Add a note in the **Comment** field if you want, and then click **Submit**. The budget reservation status will move to the next step of the workflow.
-
-5.  The **Submit** button in the Action bar changes to a **Workflow** dropdown. You can click it at any time to do the following:
-
-    -   View the history and see where the document stands in the workflow process.
-
-    -   If the reservation is in workflow, recall the workflow status to **Draft** status, make any changes you want to the reservation, and then resubmit the amended reservation to workflow.
-
-6.  As the reservation moves through workflow, the reservation status and workflow status change and are reflected in the header of the general budget reservation.
-
-7.  When the workflow is completed and the reservation status is set to **Approved**, the document can then be posted.
+7. When the workflow is completed, and the reservation status is **Approved**, you can post the document.
