@@ -64,7 +64,9 @@ For a managed cloud service such as Dynamics 365 for Finance and Operations, Mic
 ## Access the Monitoring and diagnostics portal
 1.  Open LCS, and navigate to the appropriate project.
 2.  In the **Environments** section, select the **environment** to view, and then click **Full details**.
-3.  On the **Environment details** page, click **Environment monitoring** to open the Monitoring and diagnostics portal. [![howtogettoenvmonitoring](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
+3.  On the **Environment details** page, click **Environment monitoring** to open the Monitoring and diagnostics portal. 
+
+[![howtogettoenvmonitoring](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
 ## Tools
 Several tools and resources are available in the Monitoring and diagnostics portal. 
