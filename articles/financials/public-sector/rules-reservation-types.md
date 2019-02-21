@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: General budget reservation rules and reservation types
-description: This topic provides information about setting up and modifying general budget reservation rules and reservation types for public sector in Microsoft Dynamics 365 for Finance and Operations.
+title: Set up general budget reservation rules and reservation types
+description: This topic explains how to set up and modify general budget reservation rules and reservation types for Public sector in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2019
@@ -30,201 +30,141 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# General budget reservation rules and reservation types
+# Set up general budget reservation rules and reservation types
 
 [!include [banner](../includes/banner.md)]
 
-General budget reservations are often used by public sector entities to set aside or earmark budgeted funds so that they are not available for other purposes. To use general budget reservations, you must specify budgetary rules to enable your system to use them, and you must set up at least one general budget reservation type with the settings you want.
+Public sector entities often use general budget reservations to set aside or earmark budgeted funds so that they aren't available for other purposes. To use general budget reservations, you must specify budgetary rules, and you must set up at least one general budget reservation type.
 
-If your organization is in France, you will use commitments instead of general budget reservations.
+> [!NOTE]
+> If your organization is in France, you will use commitments instead of general budget reservations.
 
-The following illustration shows the steps that are required for setting up the system to use general budget reservations. The numbers correspond to the procedures later in this topic.
+The following illustration shows how to set up the system to use general budget reservations. Each numbered step corresponds to a section of this topic.
 
-![Flow chart for general budget reservation setup](media/gbr-rules-reservations-process.jpg "Process diagram for working with rules and reservation types")
+![Setup for general budget reservation](media/gbr-rules-reservations-process.jpg "Setup for general budget reservation")
 
 ## Prerequisites
 
 The following table shows the prerequisites that must be in place before you start.
 
-| **Category**                | **Prerequisite**                                                                               |
-|-----------------------------|------------------------------------------------------------------------------------------------|
-| Related configuration tasks | You are using posting definitions (not required if you do not activate commitment accounting). |
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Prerequisite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Related configuration tasks</td>
+<td>
+<ul>
+<li>You must use posting definitions, unless you don't activate commitment accounting.</li>
+<li>Budget control configuration must be activated, budget control must be turned on, and an original budget must be confirmed.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
--   Budget control configuration must be activated, budget control turned on, and an original budget confirmed.
+## Set up budgeting parameters for regulatory accounting
 
-## Set up budget parameters for regulatory accounting
+To set up budgeting parameters for regulatory accounting, follow these steps.
 
-To set up budget parameters for regulatory accounting, follow these steps.
-
-1.  Go to Budgeting \> Setup \> Basic budgeting \> Budgeting parameters**.**
-
-2.  Under Budget \> Regulatory select General budget reservations.
-
-3.  Optionally, under Encumbrance control select Prevent carry-forward
-    encumbrance increases and Use session date for GBR accounting
-
-4.  Optionally, under General budget reservation prior year corrections select
-    Allow prior year corrections
+1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting parameters**.
+2. On the **Budget** tab, on the **Regulatory** FastTab, set the **General budget reservations** option to **Yes**.
+3. Optional: On the **Encumbrance control** FastTab, set the **Prevent carry-forward encumbrance increases** and **Use session date for GBR accounting** options to **Yes**.
+4. Optional: On the **General budget reservation prior year corrections** FastTab, set the **Allow prior year corrections** option to **Yes**.
 
 ## Select source documents for budget control
 
-You can specify which method of purchasing to use with general budget
-reservations, in reserving funds for planned purchases.
+You can specify which method of purchasing is used with general budget reservations when funds are reserved for planned purchases.
 
-To select source documents, follow these steps:
+To select source documents, follow these steps.
 
-1.  Go to Budgeting \> Setup \> Budget control \> Budget control configuration.
+1. Go to **Budgeting \> Setup \> Budget control \> Budget control configuration**.
+2. Select **Create draft**.
+3. On the **Documents and journals** tab, select the **General budget reservation** and **Check at line entry** check boxes.
+4. On the **Activate budget control** tab, select **Activate**.
 
-2.  Click Create draft
-
-3.  Click the Documents and journals tab.
-
-4.  Select the General budget reservation check box, and also select the Check
-    at line entry check box.
-
-5.  Click the Activate budget control** **tab, then click Activate.
-
-When you create a general budget reservation, budget source-tracking entries and
-accompanying budget-checking results are also created, and budget checking
-occurs when you create a line or post a reservation.
+When you create a general budget reservation, budget source-tracking entries and accompanying budget-checking results are also created, and budget checking occurs when you create a line or post a reservation.
 
 ## Set up general ledger information for general budget reservations
 
-To make sure that general ledger accounts are fairly stated, you must configure
-how general budget reservations are used to record accounting commitments.
+To help guarantee that general ledger accounts are fairly stated, you must configure how general budget reservations are used to record accounting commitments.
 
-To set up general ledger information for general budget reservations, follow
-these steps:
+To set up general ledger information for general budget reservations, follow these steps.
 
-1.  Go to General ledger \> Ledger setup \> General ledger parameters.
+1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
+2. On the **Ledger** tab, on the **Accounting rules** FastTab, set the **Use posting definitions** option to **Yes**. Then, in the confirmation message box that appears, select **Yes**.
+3. Select the **General budget reservations** check box. Then close the Infolog message that appears.
 
-2.  On the Ledger tab, expand the Accounting rules section.
-
-3.  Click the Use posting definitions check box, and then click Yes in the
-    confirmation dialog box.
-
-4.  Click the General budget reservations check box, and in the Infolog message,
-    click Close.
-
-    -   The Enable encumbrance process and Enable pre-encumbrance process are
-        marked and disabled by default upon this selection. These are required
-        along with the General budget reservation.
+    When you select the **General budget reservations** check box, the **Enable encumbrance process** and **Enable pre-encumbrance process** check boxes are automatically selected and aren't available. These two processes are required when general budget reservations are used.
 
 ## Create posting definitions
 
-You can configure transaction posting definitions to update different general
-ledger accounts for different types of general budget reservation.
+You can configure transaction posting definitions to update different general ledger accounts for different types of general budget reservation.
 
-To create posting definitions for general budget reservations, follow these
-steps:
+To create posting definitions for general budget reservations, follow these steps.
 
-1.  Go to General ledger \> Posting setup \> Posting definitions.
+1. Go to **General ledger \> Posting setup \> Posting definitions**.
+2. Select **New**.
+3. In the **Posting definition** field, enter a brief code for the definition (for example, **GBREnc**).
+4. In the **Description** field, enter a description (for example, **GBR encumbrance**).
+5. In the **Module** field, select **Budget reservation**.
+6. Set the remaining fields on the page as you require.
+7. On the Action Pane, on the **Posting definition** tab, in the **View** group, select **Transaction posting definitions**.
+8. On the **Transaction posting definitions** page, on the **Budget reservation** tab, in the **Select** field group, **General budget reservation** is selected by default. Select **General budget reservation year-end close** if this option is appropriate.
+9. Select **New**.
+10. In the **Reservation type** field, select one of the following values:
 
-2.  In the Posting definitions page, click New.
+    - To enter a new transaction posting definition that applies to all reservation types, select **All**. Then, in the **Posting definition** field, select the definition that you created earlier.
+    - To enter a new transaction posting definition that applies to a single reservation type, select **Table**. Then, in the **Reservation type relation** field, select a reservation type. In the **Posting definition** field, select the definition that you created earlier.
 
-3.  In the Posting definition field, type a brief code for the definition (for
-    example, GBREnc).
-
-4.  Add a description (for example, GBR encumbrance).
-
-5.  In the Module list, select Budget reservation.
-
-6.  Fill out the rest of the page as needed.
-
-7.  Click Posting definition in the Action bar then click View Transaction
-    posting definitions.
-
-8.  In the Transaction posting definitions page, click the Budget
-    reservation tab.
-
-9.  In the Select group, General budget reservation is selected by default. If
-    appropriate, click General budget reservation year-end close.
-
-10. Click New.
-
-11. In the Reservation type field, do one of the following:
-
-    -   To enter a new transaction posting definition that applies to all
-        reservation types, select All. In the Posting definition field, select
-        the definition that you created earlier in this topic.
-
-    -   To enter a new transaction posting definition that applies to a single
-        reservation type, select Table. In the Reservation type relation field,
-        select the reservation type that you want. In the Posting
-        definition field, select the definition that you created earlier in this
-        topic.
-
-12. Create as many definitions as you need, and then click Close.
+11. Repeat steps 2 through 10 to create as many additional posting definitions as you require, and then select **Close**.
 
 ## Set up the reservation number sequence
 
-To set up the number sequence that general budget reservations will use, follow
-these steps:
+To set up the number sequence that general budget reservations use, follow these steps.
 
-1.  Go to Budgeting \> Setup \> Basic budgeting \> Budgeting parameters.
+1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting parameters**.
+2. On the **Number sequences** tab, in the **Reference** column, select the entry for general budget reservations.
+3. In the **Number sequence code** column, select a code.
 
-2.  Click Number sequences.
-
-3.  In the Reference column, click the entry for general budget reservations.
-
-4.  In the Number sequence code column, select the code you intend to use.
-
-    -   You can also assign unique number sequences by reservation type
+    You can also assign unique number sequences by reservation type.
 
 ## Create a general budget reservation type
 
-The reservation type determines the nature of a general budget reservation, such
-as the type of document that relieves the budget reservation, the workflow used
-to approve the reservation, and the number sequence used.
+The reservation type determines the nature of a general budget reservation, such as the type of document that relieves the budget reservation, the workflow that is used to approve the reservation, and the number sequence that is used.
 
-To create a general budget reservation type, follow these steps:
+To create a general budget reservation type, follow these steps.
 
-1.  Go to Budgeting \> Setup \> General budget reservations \> Reservation type.
+1. Go to **Budgeting \> Setup \> General budget reservations \> Reservation type**.
+2. Select **New**.
+3. In the **Reservation type** field, enter a name for the reservation type.
+4. In the **Description** field, enter a description.
+5. In the **Relieving document** field, **Purchase requisition** is selected by default. Select a different value as you require. This field specifies the type of document that will relieve the general budget reservation.
 
-2.  Click New.
+    > [!NOTE]
+    > After you create a general budget reservation by using the reservation type, you can't change the reservation to another type.
 
-3.  In the Reservation type field, enter a name for the reservation type.
+6. On the **Carry-forward budget** FastTab, set the **Reduce carry-forward budget** option to **Yes** if any remaining carry-forward budget that is associated with a general budget reservation should be reduced to 0 (zero) when the reservation is finalized.
+7. Optional: If an approval task or other task is required before the reservation can be posted, on the **Workflow** FastTab, in the **Workflow** field, select a general budget reservation workflow. If you leave this field blank, a workflow isn't required in order to post general budget reservations of this type.
+8. Optional: If different reservation types use unique number sequences, on the **Number sequence** FastTab, in the **Number sequence code** field, select the number sequence code that this reservation type should use.
 
-4.  In the Description field, enter a description.
+    If a document number isn't configured for a reservation type, the budget parameters document number is used.
 
-5.  In the Relieving document field, Purchase requisition is selected by
-    default. Change the setting if you need to. This setting specifies what type
-    of document will relieve the General budget reservation.
-
-    -   After you create a general budget reservation using the reservation
-        type, you can’t change the reservation to another type.
-
-6.  Select the Reduce carry-forward budget field to have any remaining
-    carry-forward budget associated with a general budget reservation reduced to
-    zero when the reservation is finalized.
-
-7.  Optional: If an approval or other task is required prior to posting the
-    reservation, in the Workflow field, select a General budget
-    reservation workflow. (If a workflow is not selected, general budget
-    reservations of this type can be posted without workflow.)
-
-8.  Optional: If various reservation types use unique number sequences,
-    the Number sequence field is used to select the number sequence code that
-    you want the selected type to use. If a reservation type does not have a
-    document number configured, use the budget parameters document number.
-
-9.  Create more types if needed, by clicking New.
+9. Repeat steps 2 through 8 to create any additional reservations types that you require.
 
 ## Next step
 
-After you have set up these rules, you can create general budget reservations.
-The general budget reservations will apply to the documents that are required
-for the purchasing method that you select (purchase requisition, purchase order,
-or vendor invoice).
+After you've set up rules, you can create general budget reservations. The reservations will apply to the documents that are required for the purchasing method that you select (purchase requisition, purchase order, or vendor invoice).
 
-Technical information for system administrators
------------------------------------------------
+## Technical information for system administrators
 
-If you don't have access to the pages that are used to complete this task,
-contact your system administrator and provide the information that is shown in
-the following table.
+If you don't have access to the pages that are used to complete this task, contact your system administrator, and provide the information that is shown in the following table.
 
-| **Category**                  | **Prerequisite**                                                                    |
-|-------------------------------|-------------------------------------------------------------------------------------|
-| **License configuration key** | **Public Sector \> General budget reservation**                                     |
-| **Security roles**            | To perform this task, you must be a member of the **Budget manager** security role. |
+| Category                  | Prerequisite                                                  |
+|---------------------------|---------------------------------------------------------------|
+| License configuration key | Public sector \> General budget reservation                   |
+| Security roles            | You must be a member of the **Budget manager** security role. |
