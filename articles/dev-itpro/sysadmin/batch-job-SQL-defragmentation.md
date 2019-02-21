@@ -38,7 +38,7 @@ This system job can’t be cancelled. Customers can change the schedule and its 
 
 They can change the parameter values on the **Adjust system job parameters** page to pick how long it can run and how many indexes it should target at max. The DTU threshold is to prevent this job from kicking off when the system is busy. The default DTU threshold is 50,  which means that if the system is using 50% or more DTU during the time the index rebuild job is scheduled to run, the job will do an early exit without rebuilding any indexes.
  
-![Screenshot of Adjust system job parameters page](media/SystemJobParameters.gif "Screenshot of Adjust system job parameters page")
+![Screenshot of Adjust system job parameters page](media/SystemJobParameters.GIF "Screenshot of Adjust system job parameters page")
  
 When this job is executing, there could be some impact:
 1.	It takes SQL resources to process
