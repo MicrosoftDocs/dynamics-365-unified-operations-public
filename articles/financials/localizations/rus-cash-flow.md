@@ -445,32 +445,30 @@ The system will create a payment request by copying all the main requisites from
 6. Select **Close**.
 7. On the Action Pane, on the **Sell** tab, in the **Journals** group, select **Payment requests**.
 8. Review the payment requests that have been created.
-9. On the **Customers** page, select the **General** FastTab.
-10. On the Action Pane, on the **Customer** tab, in the **Transactions** group, select **Transactions**.
-11. Select the last customer transaction.
-12. Select **Inquiry \> Payment requests**.
-13. Review the associated payment requests.
-14. On the **Payment request** page, on the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
-15. Verify that the customer transaction is a source for the payment request.
+9. On the **All customers** page, on the Action Pane, on the **Customer** tab, in the **Transactions** group, select **Transactions**.
+10. Select the last customer transaction.
+11. Select the ellipsis button (**...**), and then select **Payment requests**.
+12. Review the associated payment requests.
+13. On the **Payment request** page, on the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
+14. Verify that the customer transaction is a source for the payment request.
 
     > [!NOTE]
     > You can't change the payment requisites (method of payment, due date, customer bank account, and so on) on an open customer transaction if a payment request exists for that transaction. Instead, you should change the payment requisites in the payment request. They will then be automatically synced on the open customer transaction.
 
-16. Go to **Accounts receivable \> Common \> Free text invoices \> All free text invoices**.
-17. Create a return free text invoice. On free text invoice header, specify the terms of payments, method of payment, and financial dimensions.
-18. Create free text invoice lines, and specify the sales tax group, item sales tax group, and financial dimensions.
-19. Generate and post an invoice.
-20. On the Action Pane, on the **Invoice** tab, in the **Details** group, select **Payment requests**.
-21. Select **Close**.
-22. On the Action Pane, on the **Invoice** tab, in the **Related information** group, select **Payment requests**.
-23. Review the payment requests that have been created.
-24. On the **Customers** page, select the **General** FastTab.
-25. On the Action Pane, on the **Customer** tab, in the **Transactions** group, select **Transactions**.
-26. Select the last customer transaction.
-27. Select **Inquiry \> Payment requests**.
-28. Review the associated payment requests.
-29. On the **Payment request** page, on the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
-30. Verify that the customer transaction is a source for the payment request.
+15. Go to **Accounts receivable \> Invoices \> All free text invoices**.
+16. Create a return free text invoice. On free text invoice header, specify the terms of payments, method of payment, and financial dimensions.
+17. Create free text invoice lines, and specify the sales tax group, item sales tax group, and financial dimensions.
+18. Generate and post an invoice.
+19. On the Action Pane, on the **Invoice** tab, in the **Details** group, select **Payment requests**.
+20. Select **Close**.
+21. On the Action Pane, on the **Invoice** tab, in the **Related information** group, select **Payment requests**.
+22. Review the payment requests that have been created.
+23. On the **All customers** page, on the Action Pane, on the **Customer** tab, in the **Transactions** group, select **Transactions**.
+24. Select the last customer transaction.
+25. Select the ellipsis button (**...**), and then select **Payment requests**.
+26. Review the associated payment requests.
+27. On the **Payment request** page, on the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
+28. Verify that the customer transaction is a source for the payment request.
 
 ### Periodic creation of payment requests
 
