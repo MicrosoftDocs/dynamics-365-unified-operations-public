@@ -2826,6 +2826,8 @@
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Electronic reporting framework API changes for Application update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+        - name: Specify a custom storage for generated documents
+          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: Embedded analytical solutions
       items:
       - name: Embedded Power BI in workspaces
