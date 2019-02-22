@@ -162,7 +162,7 @@ A hypothetical order document will serve as the basis for the examples below. Th
 
 In the example of an order document, there are multiple default dimensions that are available for the business logic to consider. The document header may have a set of default dimensions like the purchase order in this example.  The customer or vendor of the order, such as the vendor in this case, has a set of default dimensions as well.  Depending on the business logic of the order, these different sets of default dimensions may have different precedence when combined together.  Some may have higher precedence and replace other default dimensions while others may be merged together.
 
-**Default dimension copy**
+### Default dimension copy
 
 :::row:::
     :::column:::
@@ -176,8 +176,6 @@ In the example of an order document, there are multiple default dimensions that 
     :::column:::
     The SQL query for the default dimension reference on the vendor record.
     :::column-end:::
-:::row-end:::
-:::row:::
     :::column:::
     ![DefaultDimensions3-SQLVendor.png](./media/DefaultDimensions3-SQLVendor.png "The SQL query for the default dimension reference on the vendor record")
     :::column-end:::
@@ -246,27 +244,62 @@ In the example of an order document, there are multiple default dimensions that 
 
 This section covers how default dimensions are merged between entities.
 
-**Default dimension merging**
+### Default dimension merging
 
-Figure 1 below shows the user manually cleared the BusinessUnit dimension on the line, which in turn creates a new default dimension foreign key and updates the purchase order header.  Since the header has not yet been saved this updated foreign key is only visible on the table buffer in memory, but the new default dimension can be queried and found as shown in Figure 2 below. 
+:::row:::
+    :::column:::
+    The user manually cleared the BusinessUnit dimension on the line, which in turn creates a new default dimension foreign key and updates the purchase order header. 
+    :::column-end:::
+    :::column:::
+    ![DefaultDimension4-1DimOnLine.png](./media/DefaultDimension4-1DimOnLine.png "Default dimension modified on a document line (Purchase order line)")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    Since the header has not yet been saved this updated foreign key is only visible on the table buffer in memory, but the new default dimension can be queried and found
+    :::column-end:::
+    :::column:::
+    ![DefaultDimension4-1SQLDimOnLine.png](./media/DefaultDimension4-1SQLDimOnLine.png "SQL query showing updated default dimensions")
+    ![DefaultDimension4-2SQLResultsOnLine.png](./media/DefaultDimension4-2SQLResultsOnLine.png "SQL query output showing updated default dimensions")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    Consider the item that the user will enter on the purchase order line. Figures 3 and 4 below show default financial dimensions on the released product.
+    :::column-end:::
+    :::column:::
+    ![DefaultDimension4-3Item.png](./media/DefaultDimension4-3Item.png "Default dimensions on an item")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    The SQL query and result for that default dimension in the database
+    :::column-end:::
+    :::column:::
+    ![DefaultDimension4-4SQLItem.png](./media/DefaultDimension4-4SQLItem.png "SQL query and output showing default dimensions on item record")
+    ![DefaultDimension4-4SQLResultsItem.png](./media/DefaultDimension4-4SQLResultsItem.png "SQL query and output showing default dimensions on item record")
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
 
-[![DefaultDimension4-1DimOnLine.png](./media/DefaultDimension4-1DimOnLine.png)](./media/DefaultDimension4-1DimOnLine.png)
-**Figure 1: Default dimension modified on a document line (Purchase order
-line)**
-
-[![DefaultDimension4-1SQLDimOnLine.png](./media/DefaultDimension4-1SQLDimOnLine.png)](./media/DefaultDimension4-1SQLDimOnLine.png)
-[![DefaultDimension4-2SQLResultsOnLine.png](./media/DefaultDimension4-2SQLResultsOnLine.png)](./media/DefaultDimension4-2SQLResultsOnLine.png)
-**Figure 2: SQL query and output showing updated default dimensions**
-
-Next, consider the item that the user will enter on the purchase order line. Figures 3 and 4 below show default financial dimensions on the released product and the SQL query and result for that default dimension in the database.
-
-[![DefaultDimension4-3Item.png](./media/DefaultDimension4-3Item.png)](./media/DefaultDimension4-3Item.png)
-**Figure 3: Default dimensions on an item**
-
-[![DefaultDimension4-4SQLItem.png](./media/DefaultDimension4-4SQLItem.png)](./media/DefaultDimension4-4SQLItem.png)
-[![DefaultDimension4-4SQLResultsItem.png](./media/DefaultDimension4-4SQLResultsItem.png)](./media/DefaultDimension4-4SQLResultsItem.png)
-**Figure 4: SQL query and output showing default dimensions on item record**
-
+ 
 Next, the user enters the item on the purchase order line.  Figures 5 below shows the item selected on the purchase order line and the resulting default dimensions. In this case, the default dimension values were merged by the purchase order logic.
 
 ![DefaultDimension4-5PurchLineResult.png](./media/DefaultDimension4-5PurchLineResult.png)
