@@ -198,7 +198,7 @@ This setup is available only if the **Payment request** license configuration ke
 1. Go to **Accounts payable \> Payment setup \> Payment schedules**.
 2. Create a payment schedule.
 3. In the **Allocation** field, set the allocation method to **Specified**.
-4. On the **Payment lines** FastTab, create payment lines. Select the **Prepayment** check box for a line if a payment request should be created on prepayment.
+4. On the **Payment lines** FastTab, create payment lines. Select the **Prepayment** check box for a line if a payment request should be created for prepayment amount.
 
 ### Set up the remittance en route account
 
@@ -222,12 +222,12 @@ This setup should be completed for a Treasury company.
 This setup should be completed for a Treasury company.
 
 1. Go to **Cash and bank management \> Bank accounts \> Cash accounts**.
-2. Select the record, and then select **Edit**.
+2. Select the cash account, and then select **Edit**.
 3. Specify the minimum cash balance. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
 
 ### Set up default payment order requisites for purchase agreements
 
-The same setup is valid for the payment order requisites for sales agreements.
+    Note. Setup procedure is similar for both purchase agreements and sales agreements
 
 1. Select **Accounts payable \> Purchase orders \> Purchase agreements**.
 2. Select a purchase agreement that has a method of payment that is associated with a payment order in Russian rubles (RUB).
@@ -240,7 +240,7 @@ The same setup is valid for the payment order requisites for sales agreements.
 
 A planned payment contains details about future payments: the amount, method of payment, payment account, payment priority, and cash discount amount.
 
-The due date is calculated based on the confirmed delivery date or delivery date if the first date isn't specified.
+The due date is calculated based on the **Confirmed delivery date** or **Delivery date** if the **Confirmed delivery date** isn't specified.
 
 If a user posts an invoice, planned payments are recalculated. If a purchase order is fully invoiced, the purchase order won't have any planned payments.
 
@@ -311,7 +311,7 @@ This step should be completed for a Treasury company.
 2. Create a payment request.
 3. Specify the payment request type, currency of the payment request, account type (**Vendor**, **Customer**, or **Worker**), account, invoice account, agreement registration number, payment currency, due date, and method of payment.
 
-    - The **Payment request type** field defines the cash flow direction and the application of a particular workflow.
+    - The **Payment request type** field defines the cash flow direction and the workflow.
     - The **Method of payment** field defines the payment account type and payment account.
     - The **Payment request priority** value is defined by properties of the payment account type and party.
     - The centralized payment hierarchy defines the Treasury company. A payment request company is a company where a payment request is created.
@@ -329,7 +329,7 @@ This step should be completed for a Treasury company.
 14. Save the record.
 15. On the Action Pane, on the **General** tab, in the **Bill** group, select **Cash discount**.
 16. Create a record, and specify the cash discount date and cash discount amount.
-17. Repeat step 16 to create more lines, as you require. Then close the window.
+17. Repeat step 16 to create more lines, as you require. Then close the page.
 18. If all the data is filled in, and workflow approval can start, on the Action Pane, on the **Payment request** tab, in the **Generate** group, select **Confirmation**.
 19. Select **Workflow \> Submit**.
 
@@ -392,7 +392,7 @@ The system will create a payment request by copying all the main requisites from
 3. On the Action Pane, on the **Payment request** tab, in the **New** group, select **Copy**.
 4. Specify the due date for the new payment request.
 5. Select **OK**.
-6. Select a previously created payment request.
+6. Select the payment request created on step 3. 
 7. On the Action Pane, on the **Payment request** tab, in the **New** group, select **Edit**.
 8. Change the values of the payment request parameters as you require.
 9. Select **OK**.
@@ -406,12 +406,12 @@ The system will create a payment request by copying all the main requisites from
 5. On the Action Pane, on the **Purchase** tab, in the **Generate** group, select **Payment requests**.
 6. On the Action Pane, on the **Purchase** tab, in the **Journals** group, select **Payment requests**.
 7. Review the payment requests that have been created.
-8. On the **Vendors** page, select **Transactions**.
+8. On the **All vendors** page, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**.
 9. Select the vendor transaction.
 10. Select **Inquiry \> Payment requests**.
 11. Review the associated payment requests.
 12. On the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
-13. Verify the vendor transaction that is a source for the payment request.
+13. Verify that the vendor transaction is a source for the payment request.
 
     ![Vendor transactions](media/rus-vendor-transactions.jpg)
 
