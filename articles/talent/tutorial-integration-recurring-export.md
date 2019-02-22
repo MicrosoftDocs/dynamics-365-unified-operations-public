@@ -47,7 +47,7 @@ This tutorial uses the following technologies:
 - **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/en-us/talent/overview/)** – The master data source for workers that will be exported.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
-    - [Connectors](https://docs.microsoft.com/en-us/azure/connectors/apis-list) - The technology for connecting the logic app to the required endpoints.
+    - **[Connectors](https://docs.microsoft.com/en-us/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.
 
         - [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) connector
         - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector
@@ -100,7 +100,7 @@ The bulk of the exercise involves creating the logic app.
         - **Azure AD Resource URI:** `http://hr.talent.dynamics.com`
 
         > [!NOTE]
-        > The Core HR service doesn't yet provide a connector that exposes the DMF package REST APIs. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Talent.
+        > The Core HR service doesn't yet provide a connector that exposes all the APIs that make up the DMF package REST API, such as **ExportToPackage**. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Talent.
 
         ![HTTP with Azure AD connector](media/integration-logic-app-http-aad-connector-step.png)
 
@@ -141,7 +141,7 @@ The bulk of the exercise involves creating the logic app.
         > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.
 
         > ![IMPORTANT]
-        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the API [documentation](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus).
+        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the [API documentation](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus).
 
     3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
 
@@ -199,7 +199,7 @@ The bulk of the exercise involves creating the logic app.
 
 To test your logic app, select the **Run** button in the designer. You will see that the steps of the logic app start to run. After 30 to 40 seconds, the logic app should finish running, and your OneDrive for Business folder should include a new package file that contains the exported workers.
 
-If a failure is reported for any step, select the failed step in the designer, and examine the **Inputs** and **Outputs** for it. Debug and adjust the step as required to correct the errors.
+If a failure is reported for any step, select the failed step in the designer, and examine the **Inputs** and **Outputs** fields for it. Debug and adjust the step as required to correct the errors.
 
 The following illustration shows what the Logic Apps Designer looks like when all the steps of the logic app run successfully.
 
