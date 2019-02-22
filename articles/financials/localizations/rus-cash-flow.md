@@ -477,7 +477,7 @@ The system will create a payment request by copying all the main requisites from
 This procedure should be completed for a Treasury company.
 
 1. Go to **Cash and bank management \> Periodic tasks \> Cash flow management \> Create payment requests**.
-2. On the **General** tab, set the following parameters.
+2. Set the following parameters
 
     | Field                   | Description |
     |-------------------------|-------------|
@@ -515,7 +515,7 @@ Follow these steps to update a payment request.
 This step should be completed for a Treasury company.
 
 1. Select **Cash and bank management \> Periodic tasks \> Cash flow management \> Update payment requests**.
-2. On the **General** tab, set the following parameters.
+2. Set the following parameters
 
     | Field                   | Description |
     |-------------------------|-------------|
@@ -523,7 +523,6 @@ This step should be completed for a Treasury company.
     | To date                 | Specify the end of the date range for the payment requests. |
     | Request sources         | Specify the sources of the payment request. |
     | Legal entities          | Specify legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy. |
-    | Number of batch threads | Enter the number of parallel tasks for payment request creation. |
 
 ## Payment schedule journal processing
 
@@ -538,7 +537,7 @@ This step should be completed for a Treasury company.
 
 4. On the **General** FastTab, set the following parameters:
 
-    - Set the **Payment on cash discount date** option to **Yes** if a payment date in the payment schedule should be used as a cash discount date.
+    - Set the **Payment on cash discount date** option to **Yes** if the payment date in the payment schedule should be used as the cash discount date.
     - If you selected **Payment plan** as the journal type, set the **Overdue payments** option to **Yes** if the payment schedule should include outstanding payments.
     - Set the **Active** option to **Yes** if this journal should use the workflow procedure.
     - In the **Workflow ID** field, select the workflow that should be applied.
@@ -555,9 +554,9 @@ This step should be completed for a Treasury company.
 
     | Journal data source (direction)        | Description |
     |----------------------------------------|-------------|
-    | Bank account balance                   | The current balance of bank accounts. |
-    | Cash account balance                   | The current balance of cash accounts. |
-    | Remittance en route balance            | The current balance of general ledger (GL) accounts that are marked **Remittance en route**. |
+    | Bank account balance (inflow)          | The current balance of bank accounts. |
+    | Cash account balance (inflow)          | The current balance of cash accounts. |
+    | Remittance en route balance (inflow)   | The current balance of general ledger (GL) accounts that are marked **Remittance en route**. |
     | Open payment journals (inflow/outflow) | Payments that are included in open payment journals. |
     | Open slip journals (inflow/outflow)    | Payments that are included in open cash slip journals. |
     | Planned payment (inflow/outflow)       | Planned payments. |
