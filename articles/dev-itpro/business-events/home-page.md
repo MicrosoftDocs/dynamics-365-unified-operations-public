@@ -96,12 +96,17 @@ Endpoints let you manage the destinations that Finance and Operations must send 
 - Azure Event Hub
 - HTTPS
 - Microsoft Flow
+- Azure blob storage (starting PU25)
 
 Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
 
 The Azure-based endpoints must be in the customer's Azure subscription. For example, if Event Grid is used as an endpoint, the endpoint must be in the customer's Azure subscription.
 
 Finance and Operations doesn't provision the endpoints. It just sends events to the endpoints that are provided. Customer might incur additional costs if they use these endpoints in their Azure subscription.
+
+> [!IMPORTANT]
+> When the payload size exceeds the maximum allowed payload by an endpoint, the processing of the business event will fail. The error message returned by the endpoint will be logged as the error.
+
 
 ![Business events endpoint](../media/businesseventsendpoint.png)
 
