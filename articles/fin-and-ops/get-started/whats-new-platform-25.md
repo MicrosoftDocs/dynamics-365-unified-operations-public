@@ -45,8 +45,8 @@ Wondering about upcoming and recently released capabilities in any of our busine
 ### Platform update 25 bug fixes
 For information about the bug fixes included in each of the updates that are part of Platform update 24, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com).
 
-## Feature name
-Brief description of the feature and how it helps customers.  Then provide a link to your topic that has details.
+## Azure blob storage as an endpoint for business events
+An Azure blob strorage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported thereby allowing for a wider choice for integration scenarios.
 
 ## Feature name
 Brief description of the feature and how it helps customers.  Then provide a link to your topic that has details.
