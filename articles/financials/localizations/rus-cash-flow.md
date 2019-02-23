@@ -32,9 +32,9 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages its own invoices payable information. Payments for all the operating legal entities are generated from a single legal entity, which is sometimes referred to as the Treasury legal entity or Treasury company.
+In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages information for its own invoices. Payments for all the operating legal entities are generated from a single legal entity, which is sometimes referred to as the Treasury legal entity or Treasury company.
 
-A Treasury company is responsible for monitoring the flow of cash and liquidity movement across companies and cash positions (shortage and surplus), and for preventing corporate cash shortage in good time.
+A Treasury company is responsible for monitoring the flow of cash and liquidity movement across companies and cash positions (shortage and surplus), and for preventing corporate cash shortage in a timely manner.
 
 Here are the main goals of a Treasury company:
 
@@ -62,7 +62,7 @@ The following table shows the stages of payment that a treasurer deals with duri
 </thead>
 <tbody>
 <tr>
-<td>The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule that is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast – payment schedule journal (payment plan).
+<td>The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule that is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast by creating payment schedule journal of type "payment plan".
 </td>
 <td>
 <ul>
