@@ -116,10 +116,15 @@ Use this procedure to register a not valuable fixed asset (NVFA) by using a purc
     >  If the system defines the item in the purchase line as NVFA, you should not specify a fixed asset inventory number for this line in the **Purchase order**. 
 
 ## Generate NVFA records, putting into operation and depreciation transactions for NVFAs
+Use this procedure for automatic creation of NVFA records on the **Not valuable FAs** page list (**Fixed assets (Russia)** \> **Common** \> **Not valuable FAs**) and FA journals for NVFA putting into operation and depreciation.
+1. Click **Fixed asset (Russia)** \> **Journals** \> **Working clothes/ Special riggings / NVFAs issue**.
+2. Click **New** to create a new journal and fill in the fields.
+3. Click **Lines** and then **New** to create a new record.
+4. Fill in the **Item** and **Quantity** fields. The values in the **Person in charge** and **Location** fields are filled in form the journal. The **Lifetime** and **FA group** fields are filled in automatically from the **CONDITION FOR FA GROUP IDENTIFICATION**      
 
 ## Register an NVFA using the Not valuable FAs page 
 
-Use this procedure to register a not valuable fixed asset (NVFA) by using the **Not valuable FAs** form. You can track and account for low-value, high-wear items that are used in the workplace as not valuable fixed assets (NVFAs). NVFAs are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation during the first month of use. Use this form to create and maintain NVFAs.
+Use this procedure to register a not valuable fixed asset (NVFA) by using the **Not valuable FAs** page. You can track and account for low-value, high-wear items that are used in the workplace as not valuable fixed assets (NVFAs). NVFAs are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation during the first month of use. Use this form to create and maintain NVFAs.
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Not valuable FAs**. Click **Fixed asset** to create a new NVFA, or double-click an existing NVFA.
 2.  In the **FA group** field, select a fixed asset (FA) group for the NVFA.
