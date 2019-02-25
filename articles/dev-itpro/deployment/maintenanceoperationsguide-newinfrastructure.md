@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance operations for deployments
-description: This topic explains how to perform maintenance operations for an environment deployed using the self-service deployment experience.
+description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: manado
 manager: AnnBe
 ms.date: 02/21/2019
@@ -34,46 +34,59 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This document explains how to perform maintenance operations for a Dynamics 365 for Finance and Operations environment deployed using the [self-service deployment](infrastructure-stack.md) experience.
+This topic explains how to perform maintenance operations for a Microsoft Dynamics 365 for Finance and Operations environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
 
 ## Restart services
 
-You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **AX (AOS service)**, **DIXF (Data import export framework service)** and **MR (Management Reporter service)**.
+You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **AX (AOS service)**, **DIXF (Data import export framework service)**, and **MR (Management Reporter service)**.
 
-To restart a service, use the following steps:
+To restart a service, follow these steps.
 
-1. Navigate to the environment details page and under **Maintain** select **Restart service.**
-2. Select the **service** you want to restart and click **Confirm**.
+1. In Microsoft Dynamics Lifecycle Services (LCS), on the environment details page, under **Maintain**, select **Restart service**.
+2. Select the service to restart, and then select **Confirm**.
 
-During the restart you will be unable to trigger any other maintenance operations and the environment status is updated to **Restarting service**. Once the service restart is complete the environment state is returned to **Deployed**.
+    During the restart, the environment's status is updated to **Restarting service**, and you can't start any other maintenance operations. After the service has been restarted, the environment's status is returned to **Deployed**.
 
 ## Maintenance mode
 
-Finance and Operations includes a system-wide setting that is named [Maintenance mode](../sysadmin/maintenance-mode.md). When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users assigned to the Maintenance mode user role can sign in to the system. By default, maintenance mode is turned off.
+Finance and Operations includes a system-wide setting that is named [maintenance mode](../sysadmin/maintenance-mode.md). Maintenance mode gives system admins a safe way to make system changes that might affect system functionality. For example, configuration keys can be turned on or off. While maintenance mode is on, only the system admin and users who are assigned to the **Maintenance mode** user role can sign in to the system. By default, maintenance mode is turned off.
 
-To enable/disable maintenance mode, use the following steps:
+To turn maintenance mode on or off, follow these steps.
 
-1. Navigate to the environment details page and under **Maintain** select **Enable Maintenance mode**.
-2. Environment status will change from Deployed to Servicing.
-3. On completion, the environment status is set to be **In Maintenance** and only the system administrator will be able to login.
-4. After the system administrator is done making configuration changes, one can come to LCS environment details page and under **Maintain** select **Disable Maintenance mode**.
-5. Environment status will change from In Maintenance to Servicing.
-6. On completion, the environment status is set back to Deployed. The environment history is updated to reflect that environment was put in maintenance mode.
+1. In LCS, on the environment details page, under **Maintain**, select **Enable Maintenance mode**.
+
+    The environment's status is changed from **Deployed** to **Servicing**. After maintenance mode has been turned on, the environment's status is updated to **In Maintenance**, and only the system admin can sign in.
+
+2. After the system admin has finished making configuration changes, on the environment details page, under **Maintain**, select **Disable Maintenance mode**.
+
+    The environment's status is changed from **In Maintenance** to **Servicing**. After maintenance mode has been turned off, the environment's status is returned to **Deployed**. The environment history is updated to reflect the fact that the environment was put into maintenance mode.
 
 ## Access database
 
-Environments deployed using the [self-service deployment](infrastructure-stack.md) experience have Remote Desktop Access turned off. As part of implementing Finance and Operations, if you need to connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 Standard Acceptance Test environments for troubleshooting, access will be granted as needed and will not be persistent. Following process provides an overview of how you can connect to the database:
+Remote access is turned off for environments that were deployed by using the [self-service deployment](infrastructure-stack.md) experience. During implementation of Finance and Operations, if you must connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 standard acceptance test environments for troubleshooting purposes, access will be granted as it's required. The access won't be persistent.
 
-- Enable access to Azure SQL through LCS by whitelisting the IP address of the machine that you will use to connect to the Azure SQL database using SQL Management Studio.
-- After this is done, you can request access to see the database credentials through LCS by entering a reason for requesting access.
-- As soon as you submit the request, it gets  **auto-approved**. You will be able to see the database access credentials within a few minutes, on the LCS environment details page.
-- Note that the credentials are valid for 8 hours and will expire after that duration. After 8 hours the access expires and you will need to request access again.
+To connect to a database, follow these steps.
 
-To connect to a database, use the following steps:
+1. Request access to view the database credentials in LCS. On the environment details page, in the **Reason for access** field, select your reason for requesting access. In the **Details** field, enter any additional details. 
+2. Select **Request access**.
 
-1. Navigate to the environment details page where you will see two new fields – **Reason for access** and **Details**.
-2. Select the reason for wanting access, enter additional details and click **Request access**.
-3. At this point a request to create user specific credentials is submitted. The request is auto-approved and has an **expiration of 8 hours**.
-4. **Refresh the page** to view the connection string and access details. Note that the access granted will be based on the reason selected. For example, if the reason is AX troubleshooting then you will be granted read only access to AX database. If the reason is performance tuning you will be granted write access to the AX database.
-5. Now to connect to the Azure SQL database you will need to whitelist the IP address of the machine that will be used to launch SQL management studio. This can be done by adding **a new Azure SQL firewall rule**. Under the **Maintain** menu select **Enable access**. **Add** a new rule and select Azure SQL from the drop down. Give the **rule a name** and **enter the IP address** of the machine and click **Confirm**. This rule also has an **expiration of 8 hours**.
-6. Once this is done you can go the whitelisted machine, launch SQL management studio and use the connection details to connect to the required database.
+    A request to create user-specific credentials is submitted. The request is automatically approved as soon as you submit it. It has an expiration time of eight hours. In a few minutes, you will be able to view the database credentials on the environment details page in LCS.
+
+    > [!NOTE]
+    > The database credentials are valid for eight hours. After eight hours, the credentials expire, and you must request access again.
+
+3. Refresh the environment details page to view the connection string and access details.
+
+    The access that is granted to you depends on the reason that you selected in the **Reason for access** field. For example, if you selected AX troubleshooting as the reason, read-only access to the AX database is granted. If you selected performance tuning as the reason, write access to the AX database is granted.
+
+4. Before you can access Microsoft Azure SQL Database through LCS, the IP address of the computer where you will use Microsoft SQL Server Management Studio to connect to the SQL database must be added to the approved list (sometimes referred to as the "whitelist").
+
+    To complete this step, you can add a new SQL Database firewall rule:
+
+    1. On the **Maintain** menu, select **Enable access**.
+    2. Add a new rule. In the drop-down list, select Azure SQL.
+    3. Enter a name for the rule, enter the IP address of the computer, and then select **Confirm**.
+
+    This rule also has an expiration time of eight hours.
+
+5. On the computer that has been added to the approved list, open Management Studio, and use the connection details to connect to the required database.
