@@ -61,7 +61,7 @@ Use this procedure to set up fixed asset parameters for not valuable fixed asset
 3. Click **Compliance**, create new records for items and fill in the fields.
 
 > [!NOTE]
-    > The system uses this setting for filling  the **FA group** and **lifetime** fields on the **Working clothes\ Special riggings\ NVFA issue journal lines** page (see [Generate NVFA records, putting into operation and depreciation transactions for NVFAs](Generate-NVFA-records,-putting-into-operation-and-depreciation-transactions-for-NVFAs))   
+    > The system uses this setting for filling  the **FA group** and **lifetime** fields on the **Working clothes/ Special riggings/ NVFA issue journal lines** page (see [Generate NVFA records, putting into operation and depreciation transactions for NVFAs](Generate-NVFA-records,-putting-into-operation-and-depreciation-transactions-for-NVFAs))   
 
 ## Set up inventory dimensions for NVFAs 
 
