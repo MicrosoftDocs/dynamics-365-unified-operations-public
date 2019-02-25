@@ -45,6 +45,10 @@
       href: dev-tools/development-tools-overview.md
     - name: Development tools tutorial
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: Install BaseX for AppChecker
+        href: dev-tools/install-basex.md
     - name: Application Explorer
       href: dev-tools/application-explorer.md
     - name: Build and debug projects
@@ -912,7 +916,7 @@
       href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md
-    - name: Apply updates and extensions to cloud hosted retail channel components
+    - name: Apply updates and extensions to cloud hosted Retail channel components
       href: deployment/Update-retail-channel.md  
     - name: Initialize cloud-hosted Retail channel components
       href: deployment/Initialize-Retail-Channels.md  
@@ -1123,6 +1127,8 @@
       href: sysadmin/activeperiod.md
     - name: Batch manager security role
       href: sysadmin/runby.md
+    - name: Batch job to handle SQL index defragmentation
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:
