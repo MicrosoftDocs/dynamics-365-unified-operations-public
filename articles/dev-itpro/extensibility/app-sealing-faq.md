@@ -5,7 +5,7 @@ title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -111,4 +111,4 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Workaround: Create a new Security Privilege if needed and use that.
 
 ### Why should I avoid calling and extending APIs that are marked with InternalUseOnlyAttribute?
-Throughout the application, there is great effort made to avoid breaking customer, partners, or ISVs through changes to APIs. When a class or method has the InternalUseOnlyAttribute applied to it then **it means that the API is one that is for internal use only and could change without warning**. If customers, partners, or ISVs use or extend an API with InternalUseOnlyAttribute, then that can be troublesome since the API could change underneath them which would **require changes in their extensions before an update can be applied** resulting in urgent changes and recompilations. Calls to classes and methods with the InternalUseOnlyAttribute will result in compiler warnings and targeting classes and methods with the InternalUseOnlyAttribute via Chain of Command will also result in compiler warnings. Developers should not depend on those classes and methods remaining unchanged.
+Throughout the application, an effort has been made to avoid breaking changes to APIs made by customers, partners, or ISVs. When a class or method has the **InternalUseOnlyAttribute** applied to it, this means that the API is for internal use only and could change without warning. If customers, partners, or ISVs use or extend an API with **InternalUseOnlyAttribute**, this could be troublesome because the API could change at any time, which would require changes in their extensions before an update can be applied. This could result in urgent changes and the need to recompile. Calls to classes and methods with the **InternalUseOnlyAttribute** will result in compiler warnings. In addition, targeting classes and methods with **InternalUseOnlyAttribute** using Chain of Command will also result in compiler warnings. Developers should not depend on these classes and methods remaining unchanged.
