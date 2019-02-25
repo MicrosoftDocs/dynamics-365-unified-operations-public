@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-You can track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset, which named not valuable fixed assets. Not valuable fixed assets (NVFAs) are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
+You can track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset, which named **Not valuable fixed assets** (NVFAs). NVFAs are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
 In the process of Fixed asset purchasing the system divides fixed assets and NVFAs by price according to the **Max cost of the NVFA** parametr value (see [Set up fixed asset parameters for NVFAs](rus-fa-nv-assets/articles/financials/localizations/rus-not-valuable-assets.md#Set-up-fixed-asset-parameters-for-NVFAs)). 
 After you purchase and register the NVFAs, you can perform the following tasks:
 
@@ -61,7 +61,7 @@ Use this procedure to set up fixed asset parameters for not valuable fixed asset
 3. Click **Compliance**, create new records for items and fill in the fields.
 
 > [!NOTE]
-    > The system uses this setting for filling  the **FA group** and **lifetime** fields in the **Working clothes\ Special riggings\ NVFA issue journal lines** page (see [Generate NVFA records, putting into operation and depreciation transactions for NVFAs](Generate-NVFA-records,-putting-into-operation-and-depreciation-transactions-for-NVFAs))   
+    > The system uses this setting for filling  the **FA group** and **lifetime** fields on the **Working clothes\ Special riggings\ NVFA issue journal lines** page (see [Generate NVFA records, putting into operation and depreciation transactions for NVFAs](Generate-NVFA-records,-putting-into-operation-and-depreciation-transactions-for-NVFAs))   
 
 ## Set up inventory dimensions for NVFAs 
 
@@ -120,24 +120,30 @@ Use this procedure for automatic creation of NVFA records on the **Not valuable 
 1. Click **Fixed asset (Russia)** \> **Journals** \> **Working clothes/ Special riggings / NVFAs issue**.
 2. Click **New** to create a new journal and fill in the fields.
 3. Click **Lines** and then **New** to create a new record.
-4. Fill in the **Item** and **Quantity** fields. The values in the **Person in charge** and **Location** fields are filled in form the journal. The **Lifetime** and **FA group** fields are filled in automatically from the **CONDITION FOR FA GROUP IDENTIFICATION**      
+4. Fill in the **Item** and **Quantity** fields. The values in the **Person in charge** and **Location** fields are filled in form the journal. The **Lifetime** and **FA group** fields are filled in automatically from the **CONDITION FOR FA GROUP IDENTIFICATION**
+5. Check and fill in the fields on the **Product dimensions** tab.
+6. Close **Working clothes/ Special rigging/ NVFA issue journal lines** page.
+7. Click **Close** on the **Working clothes/ Special rigging/ NVFA issue journal** page. The system selects the **Posted** check box and creates FA journals for Putting NVFAs into operation and for depreciation. 
+8. Click **FA journals** \> **FA journal (putting into operation)** and **FA journals** \> **FA journal (depreciation)** to validate and post FA journals.
+> [!NOTE]
+> The system creates records in the **Not valuable FAs** page list after posting FA journal (putting into operation).
+
 
 ## Register an NVFA using the Not valuable FAs page 
 
-Use this procedure to register a not valuable fixed asset (NVFA) by using the **Not valuable FAs** page. You can track and account for low-value, high-wear items that are used in the workplace as not valuable fixed assets (NVFAs). NVFAs are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation during the first month of use. Use this form to create and maintain NVFAs.
+Use this procedure to register a not valuable fixed asset (NVFA) by using the **Not valuable FAs** page. 
 
-1.  Click **Fixed assets (Russia)** \> **Common** \> **Not valuable FAs**. Click **Fixed asset** to create a new NVFA, or double-click an existing NVFA.
+1.  Click **Fixed assets (Russia)** \> **Common** \> **Not valuable FAs**. Click **Fixed asset** to create a new NVFA.
 2.  In the **FA group** field, select a fixed asset (FA) group for the NVFA.
 3.  In the **Acquisition cost** field, enter the acquisition amount for the FA.
 4.  In the **Note** field, enter any additional information for the asset.
-5.  In the **Type of rate** field, select the type of issue rate for the asset.
-6.  In the **Resource** field, select the resource or resource group that is assigned to the asset.
-7.  Click **Componentry** \> **Componentry**.
-8.  Click **Add** to create a new line. In the **Item number** field, select an FA item or component.
-9.  Click **Warehouse** \> **Dimensions display** to enable the **Batch number** and **Serial number** dimensions for the item.
-10. In the **Batch number** field, select a batch number for the item.
-11. In the **Serial number** field, select a serial number for the item.
-12. In the **Initial quantity** field, enter the initial quantity of the item that is used.
+5.  In the **Resource** field, select the resource or resource group that is assigned to the asset.
+6.  Click **FIXED ASSET** \>**Componentry** \> **Componentry**.
+7.  Click **Add** to create a new line. In the **Item number** field, select an item.
+8.  Click **Warehouse** \> **Dimensions display** to enable the **Batch number** and **Serial number** dimensions for the item.
+9. In the **Batch number** field, select a batch number for the item.
+10. In the **Serial number** field, select a serial number for the item.
+11. In the **Initial quantity** field, enter the initial quantity of the item that is used.
 
 ## Generate a write-off transaction and print the NVFA statement of disposal (No. MB-4) from the fixed asset journal 
 
