@@ -5,7 +5,7 @@ title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -109,3 +109,6 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Request: Make Security Privilege changeable via extension.
 - Problem: The ability to change the Security Privilege would result in breaking changes because this are the lowest level of security metadata.
 - Workaround: Create a new Security Privilege if needed and use that.
+
+### Why should I avoid calling and extending APIs that are marked with InternalUseOnlyAttribute?
+Throughout the application, an effort has been made to avoid breaking changes to APIs made by customers, partners, or ISVs. When a class or method has the **InternalUseOnlyAttribute** applied to it, this means that the API is for internal use only and could change without warning. If customers, partners, or ISVs use or extend an API with **InternalUseOnlyAttribute**, this could be troublesome because the API could change at any time, which would require changes in their extensions before an update can be applied. This could result in urgent changes and the need to recompile. Calls to classes and methods with the **InternalUseOnlyAttribute** will result in compiler warnings. In addition, targeting classes and methods with **InternalUseOnlyAttribute** using Chain of Command will also result in compiler warnings. Developers should not depend on these classes and methods remaining unchanged.
