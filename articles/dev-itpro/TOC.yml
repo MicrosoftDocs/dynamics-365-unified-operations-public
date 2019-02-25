@@ -1123,6 +1123,8 @@
       href: sysadmin/activeperiod.md
     - name: Batch manager security role
       href: sysadmin/runby.md
+    - name: Batch job to handle SQL index defragmentation
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:
