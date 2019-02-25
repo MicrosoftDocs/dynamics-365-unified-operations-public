@@ -51,6 +51,23 @@ Before you run the revaluation process, the following setup is required.
 -   On the **Currency revaluation accounts** page:
 -   Select different currency revaluation accounts for each currency and company. If no accounts are defined, the accounts from the **Ledger** page are used.
 
+## Enable foreign currency revaluation
+
+You must enable the foreign currency revaluation feature before you can process foreign currency revaluations. 
+-   Use the **Cash and bank management, Cash and bank management parameters** page and click on the **Features** tab. 
+-   Click on **Yes** under **Foreign currency revaluation** to enable the feature for the current legal entity. 
+-   Refresh your browser to view the **Foreign currency revaluation** menu under the **Periodic tasks** section of the area page.
+
+You must enable the feature for any legal entity that will use foreign currency revaluation. 
+-   You can change your legal entity and click on **Yes** or you can click on the **Enable this feature for other companies** menu next to the foreign currency revaluation field. 
+-   You will be prompted to select the legal entities for which you want to enable the feature. 
+-   You will only be able to enable the feature in the legal entities that you have security access to.
+-   Click **Ok** to enable the feature across the legal entities that you selected. 
+
+The **Foreign currency revaluation** menu will appear in all legal entities. If you select the menu item but you have not enabled the feature, you will receive a warning message that you can't process foreign currency revaluations when you open the page.
+
+If your legal entity is in Russian, Poland, or Hungary, you already have the ability to do foreign currency revaluation. You many choose to use the new foreign currency revaluation or the version that you already have. The menus for each method will appear on your area page.
+
 ## Process foreign currency revaluation
 After the setup is complete, use the **Foreign currency revaluation** page in **Cash and Bank Management** to revalue the balances of one or more bank accounts across all legal entities. You can run the process in real time or schedule it to run by using a batch. 
 
@@ -64,7 +81,7 @@ The revaluation process can be run for one or more legal entities. The lookup wi
 
 Set **Preview before posting** to **Yes** if you would like to review the result of the Bank revaluation. The foreign currency revaluation has a preview which can be posted, without having to run the revaluation process again. The results of the preview can be exported to Microsoft Excel to retain the history of how the amounts were calculated. You cannot use batch processing if you want to preview the results of the revaluation. 
 
-In addition, a record will be created to track the history of each run.  A separate record will be created for each legal entity and posting layer.
+Click **Ok** to process the foreign currency revaluation. A record will be created to track the history of each run.  A separate record will be created for each legal entity and posting layer.
 
 ## Calculate unrealized gain/loss
 In Cash and Bank Management, a transaction is created for the delta between the balance of the bank account, including any previous revaluation amounts, and the new value based on the exchange rate for the Date of Rate. The foreign currency revaluation is based on the bank currency and currency being revalued. This calculation is done for the accounting currency and the reporting currency, resulting in two transactions. These entries are marked as reconciled. No entry is made for the accounting currency if the bank currency matches the accounting currency.  No entry is made for the reporting currency if the bank currency matches the reporting currency.
@@ -72,4 +89,4 @@ In Cash and Bank Management, a transaction is created for the delta between the 
 ## Reverse foreign currency revaluation
 If you need to reverse the revaluation transaction, select the **Reverse transaction** button on the **Foreign currency revaluation** page. A new foreign currency revaluation historical record will be created to maintain the historical audit trail of when the revaluation occurred or was reversed. 
 
-You can reverse the results of the revaluation out of date order, but you may need to also reverse a more current revaluation to ensure the correct balances for each revalued main account. The reversals can occur out of date order because there is no way to control which main accounts are revalued and the frequency of when they are revalued. For example, an organization may choose to revalue their cash main accounts on a quarterly basis, but all other main accounts monthly.
+If you need to reverse several revaluations, you must reverse the most current revaluation first and continue to reverse older revaluations in date order. You can then process new revaluations for the periods that you have reversed. 
