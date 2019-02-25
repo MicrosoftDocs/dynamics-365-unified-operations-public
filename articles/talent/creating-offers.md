@@ -112,7 +112,13 @@ There are several actions you can take before sending the offer to the candidate
 
 -  There may be additional documents that you want to include in the offer acceptance process. You will have the option to list the document type required.
 
-- e-Signature option: If Adobe Sign was chosen as the preferred e-sign method, offer creators need to connect their Adobe Sign license. There are two ways to do this. Go to User **Settings** in **Offer**, under **Connections** connect to **Adobe Sign**. Alternatively, you will be asked to connect the Send offer to the candidate screen if the connection wasn't already established based on the user settings. 
+- e-Signature option: There are two ways to connect the e-signature provider of your choice. Go to User **Settings** in **Offer**, under **Connections** connect to **Adobe Sign** or **DocuSign**. Alternatively, you will be asked to connect the Send offer to the candidate screen if the connection wasn't already established based on the user settings. 
+
+### Adobe Sign
+If Adobe Sign was chosen as the preferred e-sign method, offer creators need to connect their Adobe Sign license. 
+
+### DocuSign
+If DocuSign was chosen as the preferred e-sign method, offer creators need to connect their DocuSign license. Once signed in, the default account and permissions associated with the user's DocuSign profile are connected to Talent Attract. 
 
 > [!NOTE]
 > Users only need to connect their Adobe Sign accounts once. The same user license is used for all future offer packages that will be sent out by the same user. 
