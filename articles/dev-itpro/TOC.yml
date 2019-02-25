@@ -45,6 +45,10 @@
       href: dev-tools/development-tools-overview.md
     - name: Development tools tutorial
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: Install BaseX for AppChecker
+        href: dev-tools/install-basex.md
     - name: Application Explorer
       href: dev-tools/application-explorer.md
     - name: Build and debug projects
