@@ -92,7 +92,7 @@ The bulk of the exercise involves creating the logic app.
 
     ![Recurrence dialog box](media/integration-logic-app-recurrence-step.png)
 
-4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api#exporttopackage) DMF REST API to schedule the export of your data package.
+4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api#ExportToPackage) DMF REST API to schedule the export of your data package.
 
     1. Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
 
