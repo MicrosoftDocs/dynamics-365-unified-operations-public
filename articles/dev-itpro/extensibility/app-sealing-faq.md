@@ -109,3 +109,6 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Request: Make Security Privilege changeable via extension.
 - Problem: The ability to change the Security Privilege would result in breaking changes because this are the lowest level of security metadata.
 - Workaround: Create a new Security Privilege if needed and use that.
+
+### Why should I avoid calling and extending APIs that are marked with the InternalUseOnly attribute?
+Throughout the application, there is great effort made to avoid breaking customer, partners, or ISVs through changes to APIs. When a class or method has the InternalUseOnly attribute applied to it then **it means that the API is one that is for internal use only and could change without warning**. If customers, partners, or ISVs use or extend an API with InternalUseOnly, then that can be troublesome since the API could change underneath them which would **require changes in their extensions before an update can be applied** resulting in urgent changes and recompilations.
