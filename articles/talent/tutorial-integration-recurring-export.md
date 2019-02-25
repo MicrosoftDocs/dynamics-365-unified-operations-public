@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tutorial - Do recurring data export by using Azure Logic Apps
+title: Recurring data export using Azure Logic Apps
 description: This tutorial shows how to create an Azure logic app that exports data from Dynamics 365 for Talent on a recurring schedule.
 author: gregboyko 
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
 ---
 
-# Tutorial - Do recurring data export by using Azure Logic Apps
+# Recurring data export using Azure Logic Apps
 
 [!include[banner](../includes/banner.md)]
 
