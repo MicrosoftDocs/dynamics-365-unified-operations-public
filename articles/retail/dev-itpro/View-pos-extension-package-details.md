@@ -14,6 +14,7 @@ We added a new section “Extension packages” in the POS settings view to show
 
 **Note:** This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with application update 10.0.1 or later.
 
+[![POS Extension package details](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
 **Extension package details:**
 
