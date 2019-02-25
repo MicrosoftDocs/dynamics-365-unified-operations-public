@@ -1,4 +1,34 @@
-**View POS extension package information:**
+---
+# required metadata
+
+title: View POS extension package information
+description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Azure DevOps.  
+author: mumani
+manager: AnnBe
+ms.date: 02/25/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mumani
+ms.search.validFrom: 2019-02-25
+ms.dyn365.ops.version: AX 10.0.1
+
+---
+
+# View POS extension package information:
 
 We added a new section “Extension packages” in the POS settings view to show the list of POS extension packages included part of the core POS. Under each package you can find the status of the package whether the extension is loaded, failed or skipped.
 
