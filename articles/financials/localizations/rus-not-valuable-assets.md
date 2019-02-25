@@ -55,6 +55,14 @@ Use this procedure to set up fixed asset parameters for not valuable fixed asset
 7.  Click **Document** and then click **Document types**.
 8.  In the **Number sequence code** field, select the number sequence code for the **NVFA Act on disposal (No. MB-4)** and **NVFA Act on writing-off No. MB-8)** document types.
 
+## Set up identification of FA groups for NVFAs 
+1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/ Special riggings\ NVFA** \> **Identification of FA groups**
+2.  Create a new record on the **CONDITION FOR FA GROUP IDENTIFICATION** page list and fill in the fields.
+3. Click **Compliance**, create new records for items and fill in the fields.
+
+> [!NOTE]
+    > The system uses this setting for filling  the **FA group** and **lifetime** fields in the **Working clothes\ Special riggings\ NVFA issue journal lines** page (see [Generate NVFA records, putting into operation and depreciation transactions for NVFAs](Generate-NVFA-records,-putting-into-operation-and-depreciation-transactions-for-NVFAs))   
+
 ## Set up inventory dimensions for NVFAs 
 
 Use this procedure to set up inventory dimensions for not valuable fixed assets (NVFAs), working clothes, and special rigging items.
@@ -67,15 +75,16 @@ Use this procedure to set up inventory dimensions for not valuable fixed assets 
 6.  Select the **Blank receipt allowed** and **Blank issue allowed** check boxes for the **Serial number** dimension. When these check boxes are selected, you can perform inventory operations without specifying a serial number.
 7.  Select **Active** and **Primary stocking** check boxes for the **Inventory profile** dimension to enable enventory profile accounting for NVFAs.  
 
-## Set up item details for NVFAs 
 
-Use this procedure to set up items as not valuable fixed assets (NVFAs).
+
+## Set up items as not valuable fixed assets (NVFAs).
 
 1.  Click **Product information management** \> **Products** \> **Released products**.
 2.  Create a new item, or double-click an existing item record.
 3.  Click **Set up** \> **Dimension groups** to set up storage and tracking dimension groups for the item.
 4.  In the **Item model group** field, select the item model group.
 5.  In the **FA group** field, select a fixed asset (FA) group for the item.
+
 
 ## Set up officials for the NVFA statement of writing-off (No. MB-8) 
 
@@ -105,6 +114,8 @@ Use this procedure to register a not valuable fixed asset (NVFA) by using a purc
     
     > [!NOTE]
     >  If the system defines the item in the purchase line as NVFA, you should not specify a fixed asset inventory number for this line in the **Purchase order**. 
+
+## Generate NVFA records, putting into operation and depreciation transactions for NVFAs
 
 ## Register an NVFA using the Not valuable FAs page 
 
