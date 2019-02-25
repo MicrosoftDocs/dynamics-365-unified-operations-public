@@ -5,7 +5,7 @@ title: Batch job to handle SQL index defragmentation
 description: This topic describes a system batch job that is used to rebuild fragmented indexes.
 author: sericks
 manager: AnnBe
-ms.date: 02/21/2019
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ This system job cannot be canceled. You can change the schedule and its recurren
 
 You can change the parameter values on the **Adjust system job parameters** page to denote how long the job can run and how many indexes it should target, at a maximum. The DTU threshold is to prevent this job from starting when the system is busy. The default DTU threshold is 50,  which means that if the system is using 50 percent or more DTU during the time that the index rebuild job is scheduled to run, the job exit early without rebuilding any indexes.
  
-![Screenshot of Adjust system job parameters page](media/SystemJobParameters.GIF "Screenshot of Adjust system job parameters page")
+![Screenshot of Adjust system job parameters page](media/SystemJobParameters.PNG "Screenshot of Adjust system job parameters page")
  
 When this job is executing, there could be some impact on the following:
 -	The time that it takes SQL resources to process.
