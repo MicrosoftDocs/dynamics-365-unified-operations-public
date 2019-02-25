@@ -1,4 +1,4 @@
----
+  ---
 # required metadata
 
 title: Not valuable fixed assets (NVFAs) for Russia
@@ -32,11 +32,8 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-You can track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset. Not valuable fixed assets (NVFAs) are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
-
-If the purchase price of a fixed asset is less than the value that is specified in the **Max cost of the NVFA** field in the **Fixed asset parameters**, the item is considered to be an NVFA. You cannot specify a fixed asset inventory number for this item in the **Purchase order**. You cannot register the NVFA directly in the **Not valuable FAs** form until the purchase order process is completed.
-
-In the process of Fixed asset purchasing the system divide fixed assets and NVFAs by price according to the **Max cost of the NVFA** parametr value. 
+You can track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset, which named not valuable fixed assets. Not valuable fixed assets (NVFAs) are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
+In the process of Fixed asset purchasing the system divides fixed assets and NVFAs by price according to the **Max cost of the NVFA** parametr value (see [Set up fixed asset parameters for NVFAs](rus-fa-nv-assets/articles/financials/localizations/rus-not-valuable-assets.md#Set-up-fixed-asset-parameters-for-NVFAs)). 
 After you purchase and register the NVFAs, you can perform the following tasks:
 
   - To automate the placement of NVFAs into operation and into subsequent depreciation transactions.
@@ -62,18 +59,19 @@ Use this procedure to set up fixed asset parameters for not valuable fixed asset
 
 Use this procedure to set up inventory dimensions for not valuable fixed assets (NVFAs), working clothes, and special rigging items.
 
-1.  Click **Product information management** \> **Setup** \> **Dimension groups** \> **Tracking dimension groups**.
+1.  Click **Product information management** \> **Setup** \> **Dimensions and variant groups** \> **Tracking dimension groups**.
 2.  Create a new dimension group.
-3.  Select the **Active** check box for the **Batch number** dimension to enable batch accounting for NVFAs, working clothes, and special rigging items. Items that have different prices are accounted for in different batches.
+3.  Select the **Active** check box for the **Batch number** dimension to enable batch accounting for NVFAs. Items that have different prices are accounted for in different batches.
 4.  Select the **Primary stocking** and **Financial inventory** check boxes for the **Batch number** dimension.
 5.  Select the **Active** check box for the **Serial number** dimension. This dimension is used when the asset is put into operation.
 6.  Select the **Blank receipt allowed** and **Blank issue allowed** check boxes for the **Serial number** dimension. When these check boxes are selected, you can perform inventory operations without specifying a serial number.
+7.  Select **Active** and **Primary stocking** check boxes for the **Inventory profile** dimension to enable enventory profile accounting for NVFAs.  
 
 ## Set up item details for NVFAs 
 
 Use this procedure to set up items as not valuable fixed assets (NVFAs).
 
-1.  Click **Product information management** \> **Common** \> **Released products**.
+1.  Click **Product information management** \> **Products** \> **Released products**.
 2.  Create a new item, or double-click an existing item record.
 3.  Click **Set up** \> **Dimension groups** to set up storage and tracking dimension groups for the item.
 4.  In the **Item model group** field, select the item model group.
@@ -95,18 +93,18 @@ Use this procedure to set up the members and chairman of the commission that is 
 
 Use this procedure to register a not valuable fixed asset (NVFA) by using a purchase order.
 
-1.  Click **Procurement and sourcing** \> **Common** \> **Purchase orders** \> **All purchase orders**. On the **Action Pane**, click **New** \> **Purchase order**.
+1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**. On the **Action Pane**, click **New** \> **Purchase order**.
 
 2.  In the **Vendor account** field, select the vendor account that you require, and then click **OK**.
 3.  Create a new purchase order line.
-4.  In the **Item number** field, select an item number. The item must be a fixed asset item and must have an NVFA posting profile.
+4.  In the **Item number** field, select an item number.  
 5.  In the **Quantity** field, enter the quantity of the item that is ordered.
-6.  In the **Unit price** field, enter the purchase price for an item unit.
+6.  In the **Unit price** field, enter the purchase price for an item unit. If the purchase price of a fixed asset is less than the value that is specified in the **Max cost of the NVFA** field in the **Fixed asset parameters** (excluding sales tax value), the item is considered to be an NVFA and the **Inventory profile** field (**Line details** \> **Product** tab) is filled in automatically by the value, specified in th **Fixed asset parameters**. 
 7.  In the **Net amount** field, enter the amount. This amount includes any discounts that are applied.
 8.  Post the vendor invoice. 
     
     > [!NOTE]
-    > The cost price of the item cannot be more than the limit that is specified in the **Fixed asset parameters** page. The posting profile that is displayed for the item must differ from the posting profile that is selected in the **Fixed asset parameters** page.
+    >  If the system defines the item in the purchase line as NVFA, you should not specify a fixed asset inventory number for this line in the **Purchase order**. 
 
 ## Register an NVFA using the Not valuable FAs page 
 
