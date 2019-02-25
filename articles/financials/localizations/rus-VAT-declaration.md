@@ -21,49 +21,80 @@ ms.search.scope: Core, Operations
 ms.search.region: Russia
 # ms.search.industry: 
 ms.author: anasyash
-ms.search.validFrom: 2018-11-23
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2019-01-04
+ms.dyn365.ops.version: 10.0.1
 
 ---
 
 # VAT declaration (Russia)
 
+## Set up VAT declaration
+
 [!include [banner](../includes/banner.md)]
 
 To start to work with the value-added tax (VAT) declaration, follow these steps.
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the VAT declaration format.
-
-    For example, to generate the VAT declaration for the year 2018 reporting period, download the latest versions of the following configurations:
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the VAT declaration format:
 
     - VAT declaration model (RU)
     - VAT declaration model mapping (RU)
-    - VAT declaration format 5.05
+    - VAT declaration format 5.05 - to generate the VAT declaration for the year 2018 reporting period
+    - VAT declaration format 5.06 - to generate the VAT declaration for the year 2019 reporting period
 
     For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. Optional: Set up a financial report for the VAT declaration. Set up calculation rules for financial report cells.
+2. Upload Data management package settings. 
+Data package contains: 
+•	Financial reports and Financial reports cells for VAT declaration 2018 and VAT declaration 2019
+•	Electronic messages settings for generating VAT declarations in electronic formats 5.05 and 5.06.
 
-    You should complete this optional step if you will use financial reports to generate data for some cells in section 3 of the VAT declaration, based on the setup of financial report cells.
+Follow these steps:
+
+   1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **VAT declaration v.5.05 v.5.06 package**. The file that is downloaded is named **VAT declaration v.5.05 v.5.06 package.zip**.
+   2. In Microsoft Dynamics 365 for Finance and Operations, in the **Data management** workspace, select **Import**.
+   3. In the **Job details** section, set the following values:
+
+        - Enter any name for the job.
+        - In the **Data source format** field, select **Package**.
+
+   4. In the **Upload data file** field, select **Upload**, and then select the **VAT declaration v.5.05 v.5.06 package.zip** file that you downloaded earlier.
+   5. After the data entities are uploaded, select **Import**.
+   
+3. Go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial reports that you imported (all data which is imported, are presented only in Russian language).
+   
+|**Report**|**Report code**|**Description**|
+|----|----|----|
+|VAT declaration 2018| НДС 2018 | Декларация по налогу на добавленную стоимость (2018)|
+|VAT declaration 2019| НДС 2019 | Декларация по налогу на добавленную стоимость (2019)|
+   
+Click on line "НДС 2019". On the action pane, click **Setup**.
+On the page **Requisites setup** which is opened, sort financial report cells by **Description** column. Review the list of the financial report cells.
+
+4. Optional: Set up a financial report for the VAT declaration. Set up calculation rules for financial report cells.
+
+    You should complete this optional step if you use financial reports to generate data for some cells in section 3 of the VAT declaration, based on the setup of financial report cells.
 
     For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](rus-financial-reports.md).
 
-3. Optional: For the first use, you can upload Data management package settings to work with the Russian VAT declaration. Follow these steps:
+5.	Go to **Tax > Inquiries and reports > Electronic messages > Electronic messages**, and validate the electronic message processing that is imported (most of the data which is imported, are presented in Russian language)
 
-    1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **RU VAT Declaration demo setup**. The file that is downloaded is named RU VAT Declaration.zip.
-    2. In Microsoft Dynamics 365 for Finance and Operations, in the **Data management** workspace, select **Import**.
-    3. In the **Job details** section, set the following values:
+|**Processing**|**Processing code**|**Description**|
+|----|----|----|
+|VAT declaration 2018| НДС 5.05 (2018) | Декларация по налогу на добавленную стоимость (2018)|
+|VAT declaration 2019| НДС 5.06 (2019) | Декларация по налогу на добавленную стоимость (2019)|
 
-        - Enter a name for the job.
-        - In the **Data source format** field, select **Package**.
+6. Set up Electronic reporting format which is run when generating VAT declaration in electronic format. 
+1)	Go to **Tax > Setup > Electronic messages > Message processing actions**. Choose action **Generate NDS 5.05**. 
+2)	Click Edit. In the field **Show dialog** select **Yes**. 
+3)	In the field **Format mapping** select **VAT declaration format 5.05** downloaded in step 1.
+4)  Choose action **Generate NDS 5.06**. Click Edit. 
+5) In the field **Show dialog** select **Yes**. 
+6) In the field **Format mapping** select **VAT declaration format 5.06** downloaded in step 1.
 
-    4. In the **Upload data file** field, select **Upload**, and then select the **RU VAT Declaration.zip** file that you downloaded earlier.
-    5. After the data entities are uploaded, select **Import**.
-    6. Go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial report that you imported.
 
-## Russian VAT declaration version 5.05 in XML format
+## Russian VAT declaration versions 5.05 and 5.06 in XML format
 
-You configure the Russian VAT declaration version 5.05 in XML format in the **Electronic reporting** module. It contains the following information:
+You review the Russian VAT declaration version 5.05 and 5.06 in XML format in the **Electronic reporting** module. It contains the following information:
 
 - **Section 1** – The total VAT amount that must be paid to budget or reclaimed. This section contains cumulative amounts from sections 3 through 7.
 - **Section 2** – The VAT amount that must be paid to budget by the tax agent.
@@ -104,25 +135,30 @@ A separate section is created for each tax agent. Each section contains the foll
 
 ## Section 3 – Calculation of VAT amounts that must be paid to budget or reclaimed
 
-Section 3 of the VAT declaration contains the amounts of the registered factures, incoming VAT amounts, and restored VAT amounts from the sales and purchase books, as shown in the following tables. These amounts are automatically generated based on registered documents.
+Section 3 of the VAT declaration contains the amounts of the registered factures, incoming VAT amounts, and restored VAT amounts from the sales and purchase books, as shown in the following tables. These amounts are automatically generated based on registered documents for VAT declaration 2019:
+
 
 ### VAT payable
 
-| Line number | Column number | Name | XML attribute/element name | Description |
-|---|---|---|---|---|
-| 010 | 3 | Transfer of goods, services and property rights | РеалТов18/НалБаза | The tax base of outgoing customer invoices that have VAT at 18 percent. |
-| 010 | 4 | Transfer of goods, services and property rights | РеалТов18/СумНал | The VAT amount of outgoing customer invoices that have VAT at 18 percent. |
-| 020 | 3 | Transfer of goods, services and property rights | РеалТов10/НалБаза | The tax base of outgoing customer invoices that have VAT at 10 percent. |
-| 020 | 4 | Transfer of goods, services and property rights | РеалТов10/СумНал | The VAT amount of outgoing customer invoices that have VAT at 10 percent. |
-| 070 | 3 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/НалБаза | The tax base of factures on prepayments that were received from customers for future shipments. |
-| 070 | 4 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/СумНал | The VAT amount of factures on prepayments that were received from customers for future shipments. | 
-| 080 | 4 | Tax amounts that were accepted for deduction, which are subject to restoration, total | СумНалВосст/СумНалВс | The amount of restored VAT, based on the following outgoing VAT processing data:<ul><li>Incoming factures that are related to non-taxable shipments for the current reporting period</li><li>Outgoing factures on prepayments that were made to vendors</li><li>Fixed assets that were used in non-taxable operations</li></ul> |
-| 090 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration, for prepayments to vendors | СумНалВосст/СумНал170.3.3 | The amount of restored VAT, based on outgoing factures on prepayments that were made to vendors. The VAT restoration occurs in the current reporting period. | 
-| 100 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration for operations subject to 0% VAT rate | СумНалВосст/СумНалОперСт0 | The amount of restored VAT for all export factures during the current reporting period. |
+| **Line number** | **Column number** | **Name** | **XML attribute/element name** | **Description** | **Comment** |
+|---|---|---|---|---|---|
+| 010 | 3 | Transfer of goods, services and property rights | РеалТов20/НалБаза | The tax base of outgoing customer invoices that have VAT at 20 percent, except for invoices to foreign customers. | New tax rate for 2019 reporting |
+| 010 | 4 | Transfer of goods, services and property rights | РеалТов20/СумНал | The VAT amount of outgoing customer invoices that have VAT at 20 percent, except for invoices to foreign customers. | New tax rate for 2019 reporting |
+| 020 | 3 | Transfer of goods, services and property rights | РеалТов10/НалБаза | The tax base of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers. | |
+| 020 | 4 | Transfer of goods, services and property rights | РеалТов10/СумНал | The VAT amount of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers. | |
+| 041 | 3 | Transfer of goods, services and property rights | РеалТов18/НалБаза | The tax base of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers. | Tax rate for documents up to end of 2018 |
+| 041 | 4 | Transfer of goods, services and property rights | РеалТов18/СумНал | The VAT amount of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers. | Tax rate for documents up to end of 2018 |
+| 043 | 3 | Transfer of goods, services and property rights as per the point 7 of article 164| РеалТов7.164/НалБаза | The tax base of outgoing customer invoices to foreign customers that have VAT at non-zero percent | New line for 2019 reporting |
+| 043 | 4 | Transfer of goods, services and property rights | РеалТов7.164/СумНал | The VAT amount of outgoing customer invoices to foreign customers that have VAT at non-zero percent | New line for 2019 reporting |
+| 070 | 3 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/НалБаза | The tax base of factures on prepayments that were received from customers for future shipments. | |
+| 070 | 4 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/СумНал | The VAT amount of factures on prepayments that were received from customers for future shipments. | |
+| 080 | 4 | Tax amounts that were accepted for deduction, which are subject to restoration, total | СумНалВосст/СумНалВс | The amount of restored VAT, based on the following outgoing VAT processing data:<ul><li>Incoming factures that are related to non-taxable shipments for the current reporting period</li><li>Outgoing factures on prepayments that were made to vendors</li><li>Fixed assets that were used in non-taxable operations</li></ul> | |
+| 090 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration, for prepayments to vendors | СумНалВосст/СумНал170.3.3 | The amount of restored VAT, based on outgoing factures on prepayments that were made to vendors. The VAT restoration occurs in the current reporting period. | |
+| 100 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration for operations subject to 0% VAT rate | СумНалВосст/СумНалОперСт0 | The amount of restored VAT for all export factures during the current reporting period. | |
 
 ### VAT receivable/deductible
 
-| Line number | Column number | Name | XML attribute/element name | Description |
+| **Line number** | **Column number** | **Name** | **XML attribute/element name** | **Description** |
 |---|---|---|---|---|
 | 120 | 3 | Tax amount accepted during acquisition of goods, services, and property rights that are subject to tax deduction | НалПредНППриоб | The amount of incoming VAT that is subject to reimbursement of factures on purchase invoices. The purchases include goods, services, and property rights that are subject to tax deduction. |
 | 130 | 3 | Tax amounts accepted when prepayments are made to vendors for future acquisitions that are subject to tax deduction | НалПредНППок | The amount of incoming VAT that is subject to reimbursement of factures on prepayments that were made to vendors. |
@@ -135,43 +171,46 @@ In section 3, you can also get the amounts of the financial report that is set u
 
 You should set up the financial report and financial report cells to calculate required cells values. For more information, see [Financial reporting (Russia)](rus-financial-reports.md).
 
-You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.05.
+You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.06.
+
 
 **Tax payable**
 
-| Name of cell | Line-column in section 3 |
-|---|---|
-| РеалТов18НалБаза | 010-3\* |
-| РеалТов18СумНал | 010-4\* |
-| РеалТов10НалБаза | 020-3\* |
-| РеалТов10СумНал | 020-4\* |
-| РеалСрок151.1\_118НалБаза | 041-3 |
-| РеалСрок151.1\_118СумНал | 041-4 |
-| РеалСрок151.1\_110НалБаза | 042-3 |
-| РеалСрок151.1\_110СумНал | 042-4 |
-| РеалПредИКНалБаза | 050-3 |
-| РеалПредИКСумНал | 050-4 |
-| ВыпСМРСобНалБаза | 060-3 |
-| ВыпСМРСобСумНал | 060-4 |
-| ОплПредПостНалБаза | 070-3\* |
-| ОплПредПостСумНал | 070-4\* |
-| СумНалВосстСумНалВс | 080-4\* |
-| СумНалВосстСумНал170.3.3 | 090-4\* |
-| СумНалВосстСумНалОперСт0 | 100-4\* |
-| КорРеалТов18НалБаза | 105-3 |
-| КорРеалТов18СумНал | 105-4 |
-| КорРеалТов10НалБаза | 106-3 |
-| КорРеалТов10СумНал | 106-4 |
-| КорРеалТов118НалБаза | 107-3 |
-| КорРеалТов118СумНал | 107-4 |
-| КорРеалТов110НалБаза | 108-3 |
-| КорРеалТов110СумНал | 108-4 |
-| КорРеалПредИКНалБаза | 109-3 |
-| КорРеалПредИКСумНал | 109-4 |
-| УплДеклар151.1НалБаза | 110-3 |
-| УплДеклар151.1СумНал | 110-4 |
-| УплДеклар173.6НалБаза | 115-3 |
-| УплДеклар173.6СумНал | 115-4 |
+| Name of cell | Line-column in section 3 | Comment |
+|---|---|--|
+| РеалТов20НалБаза | 010-3\* | New tax rate for 2019 reporting |
+| РеалТов20СумНал | 010-4\* | New tax rate for 2019 reporting |
+| РеалТов10НалБаза | 020-3\* | |
+| РеалТов10СумНал | 020-4\* | |
+| РеалТов18НалБаза | 041-3\* |Tax rate for documents up to 2018 | 
+| РеалТов18СумНал | 041-4\* | Tax rate for documents up to 2018 |
+| РеалТов118НалБаза | 042-3 | |
+| РеалТов118СумНал | 042-4 | |
+| РеалТов7.164НалБаза | 043-3\* | New line for 2019 reporting |
+| РеалТов7.164СумНал | 043-4\* | New line for 2019 reporting |
+| РеалТовРознЧекНалБаза | 044-3 | New line for 2019 reporting |
+| РеалТовРознЧекСумНал | 044-4 | New line for 2019 reporting |
+| РеалСрок151.1_20НалБаза | 045-3 | New line for 2019 reporting |
+| РеалСрок151.1_20СумНал | 045-4 | New line for 2019 reporting |
+| РеалСрок151.1_10НалБаза | 046-3 | New line for 2019 reporting |
+| РеалСрок151.1_10СумНал | 046-4 | New line for 2019 reporting |
+| РеалПредИКНалБаза | 050-3 | |
+| РеалПредИКСумНал | 050-4 | |
+| ВыпСМРСобНалБаза | 060-3 | |
+| ВыпСМРСобСумНал | 060-4 | |
+| ОплПредПостНалБаза | 070-3\* | |
+| ОплПредПостСумНал | 070-4\* | |
+| СумНалВосстСумНалВс | 080-4\* | |
+| СумНалВосстСумНал170.3.3 | 090-4\* | |
+| СумНалВосстСумНалОперСт0 | 100-4\* | |
+| КорРеалТовНалБаза | 105-3 | Updated line for 2019 reporting |
+| КорРеалТовСумНал | 105-4 | Updated line for 2019 reporting |
+| КорРеалПредИКНалБаза | 109-3 | |
+| КорРеалПредИКСумНал | 109-4 | |
+| УплДеклар151.1НалБаза | 110-3 | |
+| УплДеклар151.1СумНал | 110-4 | |
+| УплДеклар173.6НалБаза | 115-3 | |
+| УплДеклар173.6СумНал | 115-4 | |
 
 **Tax receivable/deductible**
 
@@ -187,8 +226,11 @@ You should define the following names for financial report cells. In this way, t
 | НалУплПокНА | 180-3\* |
 | НалВыч171.14 | 185-3 |
 
+The financial report "НДС 2019" uploaded from the data package earlier in this guide, contains the required cells names.
+
 > [!NOTE]
-> Requisites that are marked with an asterisk (\*) in the preceding tables are automatically calculated based on registered documents, as described earlier in this topic. If you set up financial report cell calculation rules for them, the calculated amounts of the financial report will be added to the automatically calculated amounts. If you want to replace the automatic calculation with the financial report cell calculation, see the [Customize section 3 of the VAT declaration](#customize-section-3-of-the-vat-declaration) section of this topic. You can download a demo setup of the financial report for the VAT declaration from the **RU VAT declaration demo setup** data package in the LCS Shared asset library.
+> Requisites that are marked with an asterisk (\*) in the preceding tables are automatically calculated based on registered documents, as described earlier in this topic. If you set up financial report cell calculation rules for them, the calculated amounts of the financial report will be added to the automatically calculated amounts. If you want to replace the automatic calculation with the financial report cell calculation, see the [Customize section 3 of the VAT declaration](#customize-section-3-of-the-vat-declaration) section of this topic. 
+Setup of the financial report for the VAT declaration from the **VAT declaration v.5.05 v.5.06 package.zip** data package in the LCS Shared asset library contains the required cells names.
 
 ### Customize section 3 of the VAT declaration
 
@@ -363,6 +405,49 @@ For the earlier example, the following data will be present in section 6 of the 
 | VAT amount payable that is calculated from the tax base for the unconfirmed export | 030 | 19,440 |
 | The deductible VAT amount from the purchase of items that are used in an unconfirmed export | 040 | 9,000 |
 
+
+## Generate VAT declaration in electronic format.
+
+1.	To generate VAT declaration files, go to **Tax > Inquiries and reports > Electronic messages > Electronic messages**. Select the report format to be generated (for example, select **НДС 5.06 (2019)**) 
+2.	On Fast tab **Messages** click **New**. In the **Run processing** dialog box click **OK**.
+3.	Click on the message line which has been created. Enter **Description**. Fill **Start date** and **End date** for the report. **End date** is considered as Base date for Financial report.
+4.	Optionally, on fast tab **Message additional fields** enter the following data:
+
+|Field name	| Description |	Field value |
+|---|---|---|
+| CorrectionNumber |	Номер коррекции |	Enter the number of correction for corrective accounting reporting |
+| ReportingDate |	Отчетная дата для коррекции	| Optionally enter the Reporting date for corrective accounting reporting (the calculation of cells on financial report considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period)
+
+5.	On Fast tab Messages click **Update status**. In the **Run processing** dialog box click **OK**. Validate that the message status has been changed to **Ready to generate**.
+6.	On Fast tab **Messages** on ActionPane click **Generate report**.
+7.	On the **Electronic reporting parameters** dialog box, enter the following data:
+
+| Field | Description |
+|---|---|
+| Generate appendixes | Select **Yes** to generate files with VAT declaration appendixes |
+| At place of | Select the place at which the declaration is provided to Tax authorities: **Location of tax agent**, **Registration of the largest taxpayer**, **Registration of the taxpayer** |
+| Correction number	| Enter the number of correction if you didn’t specify it on step 4.|
+| Signatory type |	Choose either Taxpayer or Representative – the one who is signing the VAT declaration |
+| Signatory first, middle and last name	| Enter full name of Signatory. In case if the values are blank, the name of Official of type “Director” (which is set up in Organization administration > Setup > Contacts > Officials) will be taken as signatory.|
+| Representative company | In case of “Representative” signatory type, enter the representative company name |
+| Representative document	| In case of “Representative” signatory type, enter the document confirming the representative authority |
+| Reporting date	| Enter the reporting date if you didn’t specify it on step 4.|
+| Group by factures in Books | Set this option to **Yes** to group factures that have the same facture number onto one line that has a total amount.|
+| Exclude storno in Books | Set this option to **Yes** to exclude original and storno transactions during the specified period from the report.|
+| Criteria for intermediary deals factures inclusion into Factures journal | Select the criterion for including intermediary deals factures in the facture journal: **Date of the registration** – The issued factures journal contains all intermediary deals factures, even if they haven't been confirmed with the principal. (The intermediary deal information for those factures might be empty). **Confirmation date** – The issued factures journal contains only confirmed intermediary deals factures. (The intermediary deal information for those factures is filled with the factures that have been received from the principal.)|
+| Include factures into Facture journal by reporting date | Set this option to "Yes" to filter factures by reporting date instead of facture date. |
+
+8.	Click OK. When the report is generated, the status of the message is changed to *Generated*. If an error occurred during generation, the status of the message is changed to *Technical error*.
+9.	Review all user actions with the current message, on the FastTab **Action log**
+10.	Review the generated report in the “Attachments” (“Clip” sign in the right upper corner of the page). Click **Open** to view the zip file with VAT declaration files.
+
+You further need to manually upload the generated files to the special third-party software for data preview, data updates and transferring the VAT declaration files to Tax authorities through the communication channels. 
+
+
 ## Additional resources
 
-[How to start working with VAT declaration](https://support.microsoft.com/help/4477332/rusrussiavatdeclarationinelectronicformat)
+[Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
+
+[Electronic messaging](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/electronic-messaging)
+
+[Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
