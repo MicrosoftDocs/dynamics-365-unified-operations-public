@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: Tonya.Fehr
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.search.region: Global
@@ -42,7 +42,8 @@ We added a new section “Extension packages” in the POS settings view to show
 
 **Ex:** Load extension only in “*en-fr”* and must be skipped in all the other locale.
 
-**Note:** This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with application update 10.0.1 or later.
+> [!NOTE]
+> This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with application update 10.0.1 or later.
 
 [![POS Extension package details](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
