@@ -92,7 +92,7 @@ The bulk of the exercise involves creating the logic app.
 
     ![Recurrence dialog box](media/integration-logic-app-recurrence-step.png)
 
-4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api#ExportToPackage) DMF REST API to schedule the export of your data package.
+4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API to schedule the export of your data package.
 
     1. Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
 
@@ -141,9 +141,9 @@ The bulk of the exercise involves creating the logic app.
         > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.
 
         > ![IMPORTANT]
-        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the [API documentation](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus).
+        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the [API documentation](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
-    3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
+    3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -161,7 +161,7 @@ The bulk of the exercise involves creating the logic app.
 
 7. Get the download URL of the exported package.
 
-    - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api#getexportedpackageurl) DMF REST API.
+    - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
