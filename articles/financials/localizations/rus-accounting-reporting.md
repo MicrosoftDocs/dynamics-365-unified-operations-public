@@ -1,17 +1,17 @@
 ---
 # required metadata
-title: Advance holders for Russia
-description: This topic explains how to register and set up advance holders for Russia.
-author: ShylaThompson
+title: Accounting reporting in electronic format (Russia)
+description: This topic explains how to set up accounting reporting for Russia.
+author: Anasyash
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 03/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-ms.search.form:  HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU 
+# ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -20,9 +20,9 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
-ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
+ms.author: anasyash
+ms.search.validFrom: 2019-4-30
+ms.dyn365.ops.version: 10.0.1
 
 ---
 
@@ -33,14 +33,13 @@ ms.dyn365.ops.version: 8.1
 ## Set up accounting reporting
 
 
-1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download
-    the latest versions of the Electronic reporting (ER) configurations for the Accounting reporting.
+1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the Accounting reporting.
 
     >   For example, to generate the Accounting reporting in xml format for the year after 2016 reporting period, download the latest versions of the following configurations:
     > -   Financial reports model
     > -   Financial reports model mapping (RU)
     > -   Accounting reporting format 5.07 (RU)
-    >   For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    >   For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2.  Upload Data management package settings. 
 
@@ -70,7 +69,7 @@ ms.dyn365.ops.version: 8.1
 
 2.  Set up financial reports cells operations for financial reports that are imported. You should set up all required cells including totals.
 
-    >   For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-financial-reports).
+    >   For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](rus-financial-reports.md).
 
 3.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**, and validate the electronic message processing that is imported (most of the data which is imported, are presented in Russian language)
 
@@ -131,9 +130,8 @@ ms.dyn365.ops.version: 8.1
 
 8.  Click **OK**. When the report is generated, the status of the message is changed to “Generated”. If an error occurred during generation, the status of the message is changed to “Technical error”.
 
-9.  Review all user actions with the current message, on the FastTab **Action
-    log**
+9.  Review all user actions with the current message, on the FastTab **Action log**
 
-10. Review the generated report in the “Attachments” (“Clip” sign in the right upper corner of the page). Click **Open** to view the file.
+10. Review the generated report in the **Attachments**. Click **Open** to view the file.
 
 You further need to manually upload the generated file to the special third-party software for data preview, data updates and transferring the accounting reporting files to Tax authorities through the communication channels.
