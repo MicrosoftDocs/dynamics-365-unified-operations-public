@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.1
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with application update 10.0.1 or later.
+> This topic applies to Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail, with application update 10.0.1 or later.
 
 There is a section under “Extension packages” in the point of sale (POS) **Settings** view that shows the list of POS extension packages included as part of the core POS. Under each package, you can view the status of the package--whether the extension is loaded, failed, or skipped.
 
