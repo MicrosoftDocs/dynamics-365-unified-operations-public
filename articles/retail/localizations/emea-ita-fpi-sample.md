@@ -158,7 +158,7 @@ To enable the registration process, set up Retail Headquarters using the steps b
 
 8. Open the Hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab. Select the connector technical profile.
 
-9. Open Distribution scheduler and select job **1070** to transfer data to the Channel database.
+9. Open Distribution scheduler and run jobs **1070** and **1090** to transfer data to the Channel database.
 
 ## Commerce runtime extension design
 
