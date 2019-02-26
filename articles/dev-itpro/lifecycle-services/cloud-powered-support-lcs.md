@@ -49,13 +49,9 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 4. Select an issue category.
 
-   ![Category](media/CPS5.png)
-
 5. Select an issue area.
 
-   ![Area](media/CPS6.png)
-
-6. In the **Describe your issue** window, enter the following:
+6. In the **Describe your issue** area, enter the following:
 
    - Select **Yes** if the issue occured in an environment. Select the environment name.  
    - Enter a short description of your issue in the **Title** field.
@@ -63,30 +59,21 @@ To use the Support tool, you must have previously created a project in Lifecycle
    - If applicable, enter an error message. 
    - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
+ 
    > [!NOTE]
    > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
    > 
    > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
  
-   ![Detail](media/CPS7.png)
- 
 7. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
-   
-   ![Contact info](media/CPS8.png)
-
 
 8. Select the support contract and the severity level. 
     
    - Support contracts for on-premises environments have a limited incident count. 
    - Support contracts for cloud environments have an unlimited incident count. 
    - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
-   
-   ![Contract and severity](media/CPS9.png)
-
+  
 9. Click **Submit**. 
-
-   ![Completed](media/CPS10.png)
-
 
 After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
 
@@ -105,15 +92,14 @@ If you do not know your unique contract ID/access ID combination, reach out to y
 
 To link your contract ID/accces ID to your account, complete the following steps:
 
-From within a project, click **Support** from the main menu, and then click **Manage
-Support plans**. Click **Add contract**.
+1. From within a project, click **Support** from the main menu, and then click **Manage Support plans**. 
+2. Click **Add contract**.
 
-![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+   ![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
-Enter your access ID and your password or contract ID, and then click **Add
-contract**.
+3. Enter your access ID and your password or contract ID, and then click **Add contract**.
 
-![](media/4abba1127549ef484a58daf51609d924.png)
+   ![](media/4abba1127549ef484a58daf51609d924.png)
 
 ### PartnerSource Business Center account
 The following support plan incidents can be used as part of your PartnerSource Business Center (PSBC) account if they exist: 
