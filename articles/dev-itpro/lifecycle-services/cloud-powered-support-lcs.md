@@ -40,15 +40,19 @@ To use the Support tool, you must have previously created a project in Lifecycle
 1. In LCS, navigate to the project for which you want to file a support incident. 
 
 2. Click the **Support** tile.
+
    ![Support menu](media/CPS1.png)
 
 3. On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+
    ![Support button](media/CPS2.png)
 
 4. Select an issue category.
+
    ![Category](media/CPS5.png)
 
 5. Select an issue area.
+
    ![Area](media/CPS6.png)
 
 6. In the **Describe your issue** window, enter the following:
@@ -67,6 +71,7 @@ To use the Support tool, you must have previously created a project in Lifecycle
    ![Detail](media/CPS7.png)
  
 7. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
+   
    ![Contact info](media/CPS8.png)
 
 
@@ -75,6 +80,7 @@ To use the Support tool, you must have previously created a project in Lifecycle
    - Support contracts for on-premises environments have a limited incident count. 
    - Support contracts for cloud environments have an unlimited incident count. 
    - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
+   
    ![Contract and severity](media/CPS9.png)
 
 9. Click **Submit**. 
