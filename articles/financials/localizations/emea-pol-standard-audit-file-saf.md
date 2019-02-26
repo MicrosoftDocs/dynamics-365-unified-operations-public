@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ Users in legal entities in Poland can generate a Standard Audit File for Tax (SA
 Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This document provides information about the formats for Poland. This document refers to functionality that has not yet been released.
 
 ## Set up the Standard Audit File for Tax for Poland
-To specify an Electronic reporting (ER) format for each SAF-T scheme, click **General ledger** &gt; **Ledger setup** &gt; **General ledger parameters**, and then, on the **Standard Audit File for Taxes (SAF-T)** tab, set up a specific format for each of the following schemes:
+To specify an Electronic reporting (ER) format for each SAF-T scheme, click **General ledger > Ledger setup > General ledger parameters**, and then, on the **Standard Audit File for Taxes (SAF-T)** tab, set up a specific format for each of the following schemes:
 
 -   SAF Accounting books
 -   SAF Bank statements
@@ -50,7 +50,7 @@ To specify an Electronic reporting (ER) format for each SAF-T scheme, click **Ge
 Each ER format should be predefined and can be updated in ER.
 
 ## Generate a SAF Accounting books file
-To generate a SAF Accounting books file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF Accounting books**, and set the following parameters.
+To generate a SAF Accounting books file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, and set the following parameters.
 
 |Parameter                                        |  Description            |
 |-------------------------------------------------|-------------------------|
@@ -65,7 +65,7 @@ To generate a SAF Accounting books file, click **General ledger** &gt; **Inquiri
 You can specify additional selection parameters by using **Filter** functionality on the **Records to include** tab.
 
 ## Generate a SAF Bank statement file
-To generate a SAF Bank statement file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF Bank statement**, and set the following parameters.
+To generate a SAF Bank statement file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Bank statement**, and set the following parameters.
 
 | Parameter                    | Description                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ To generate a SAF Bank statement file, click **General ledger** &gt; **Inquiries
  
 
 ## Generate a SAF Inventory file
-To generate a SAF Inventory file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF Inventory**, and set the following parameters.
+To generate a SAF Inventory file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Inventory**, and set the following parameters.
 
 | Parameter                    | Description                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -100,7 +100,7 @@ For more information about the setup of VAT statements, see [(EU) VAT reporting]
 
 ### Set up sales tax authorities
 
-For general information about how to set up a sales tax authority, see [Set up sales tax authorities (Task guide)](../general-ledger/tasks/set-up-sales-tax-authorities.md). To generate a SAF VAT sales and purchase register in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page (**Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Sales tax authorities**), set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
+For general information about how to set up a sales tax authority, see [Set up sales tax authorities (Task guide)](../general-ledger/tasks/set-up-sales-tax-authorities.md). To generate a SAF VAT sales and purchase register in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**), set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
 
 ### Set up sales tax codes and sales tax reporting codes
 
@@ -552,7 +552,7 @@ Initially, the configuration is an example of VAT Register based on Reporting co
 
 ### Generate a SAF VAT sales and purchase register
 
-To generate a SAF VAT sales and purchase register, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF VAT sales and purchase register**, and set the following parameters.
+To generate a SAF VAT sales and purchase register, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT sales and purchase register**, and set the following parameters.
 
 |   Parameter                  |   Description                                                                      |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -585,7 +585,7 @@ Initially, the configuration is an example of VAT Register based on Reporting co
 
 ### Generate a SAF VAT invoices
 
-To generate a SAF VAT invoices file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF VAT invoices**, and set the following parameters.
+To generate a SAF VAT invoices file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT invoices**, and set the following parameters.
 
 |  Parameter                   | Description                                                                            |
 |------------------------------|----------------------------------------------------------------------------------------|
