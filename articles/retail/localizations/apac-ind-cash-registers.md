@@ -35,7 +35,7 @@ This topic provides a walkthrough of the features that are related to Goods and 
 > [!NOTE]
 > This topic applies to both Microsoft Dynamics 365 for Finance and Operations, and Microsoft Dynamics 365 for Retail.
 
-## Prerequisites 
+## Prerequisites
 
 - Set up GST for India in Finance and Operations. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
 - Configure Retail channel components. To enable India-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
@@ -180,7 +180,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the transactions.
     3. Select **Receipt**.
 
-    ![Receipt example](media/apac-ind-gst-s1-receipt1.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt1.png)
 
 11. Validate the sales order and tax document in Retail headquarters:
 
@@ -203,7 +203,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 13. Select **Exact** to process the payment.
 14. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-s1-receipt2.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt2.png)
 
 15. Validate the voucher transactions:
 
@@ -222,11 +222,11 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     5. Select **Tax document**.
     6. Verify that the receipt number is updated as the transaction ID.
 
-    ![Tax document](media/apac-ind-gst-tax-document2.png)
+        ![Tax document](media/apac-ind-gst-tax-document2.png)
 
 ### Scenario 2: Sell taxable goods to a consumer
 
-When you sell to unregistered customers, the sales are referred to as *business-to-consumer* (B2C) sales. Tax is calculated in the same manner for B2B and B2C sales. 
+When you sell to unregistered customers, the sales are referred to as *business-to-consumer* (B2C) sales. Tax is calculated in the same manner for B2B and B2C sales.
 
 1. Sign in to the POS.
 2. Enter an item, and then select **Enter**.
@@ -240,11 +240,11 @@ When you sell to unregistered customers, the sales are referred to as *business-
 4. Select **Exact** to process the payment.
 5. Validate the receipt:
 
-   1. Select **Show journal**.
-   2. Select the transactions.
-   3. Select **Receipt**.
+    1. Select **Show journal**.
+    2. Select the transactions.
+    3. Select **Receipt**.
 
-      ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
+    ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
 
 6. Validate the retail sales invoice in Retail headquarters:
 
@@ -296,19 +296,19 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
 3. Enter a transaction:
 
-   1. Sign in to the POS.
-   2. Enter an item, and then select **Enter**. For this example, use an item that has the following values:
+    1. Sign in to the POS.
+    2. Enter an item, and then select **Enter**. For this example, use an item that has the following values:
 
-       - **Taxable value:** 10,000.00
-       - **CGST:** 12 percent
-       - **SGST:** 11 percent
+        - **Taxable value:** 10,000.00
+        - **CGST:** 12 percent
+        - **SGST:** 11 percent
 
-      ![Transaction example](media/apac-ind-gst-trx-example.png)
+    ![Transaction example](media/apac-ind-gst-trx-example.png)
 
 4. Select **Exact** to process the payment.
 5. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-s3-receipt4.png)
+    ![Receipt example](media/apac-ind-gst-s3-receipt4.png)
 
 6. Validate the retail sales invoice in Retail headquarters:
 
@@ -324,24 +324,22 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
 8. Validate the voucher transactions:
 
-   1. Go to **Retail** \> **Customers** \> **All sales orders**.
-   2. Select the sales invoice.
-   3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
-   4. Select **Voucher**.
+    1. Go to **Retail** \> **Customers** \> **All sales orders**.
+    2. Select the sales invoice.
+    3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
+    4. Select **Voucher**.
 
+        | Ledger account name  | Debit amount (Rs.) | Credit amount (Rs.) |
+        |----------------------|--------------------|---------------------|
+        | Customer account     | 10,000.00          |                     |
+        | CGST payable account |                    | 975.61              |
+        | SGST payable account |                    | 894.31              |
+        | Sales account        |                    | 8,130.08            |
 
-      | Ledger account name  | Debit amount (Rs.) | Credit amount (Rs.) |
-      |----------------------|--------------------|---------------------|
-      |   Customer account   |     10,000.00      |                     |
-      | CGST payable account |                    |       975.61        |
-      | SGST payable account |                    |       894.31        |
-      |    Sales account     |                    |      8,130.08       |
+    5. Select **Tax document**.
+    6. Verify that the transaction ID is updated according to the GST number sequence that is defined in the GST reference number sequence group.
 
-
-   5. Select **Tax document**.
-   6. Verify that the transaction ID is updated according to the GST number sequence that is defined in the GST reference number sequence group.
-
-      ![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
+        ![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
 
 ### Scenario 4: Sell an exempted good
 
@@ -393,10 +391,9 @@ When you sell to unregistered customers, the sales are referred to as *business-
     ![POS return transaction](media/apac-ind-gst-return-trx.png)
 
 6. Select **Exact**.
-
 7. Validate the receipt.
 
-   ![Receipt example](media/apac-ind-gst-receipt-5.png)
+    ![Receipt example](media/apac-ind-gst-receipt-5.png)
 
 8. Validate the retail sales invoice in Retail headquarters:
 

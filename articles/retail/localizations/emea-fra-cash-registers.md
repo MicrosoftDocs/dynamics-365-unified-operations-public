@@ -329,9 +329,9 @@ Then, on the **Key Vault parameters** page, you must specify the parameters for 
 
 Finally, on the **Retail parameters** page, you must specify the parameters for digital signatures:
 
-- **Certificate** - Select the certificate that you configured in the previous step.
-- **Hash function** - Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
-- **Encoding** - Specify the encoding of the signed data, such as **UTF-8**.
+- **Certificate** – Select the certificate that you configured in the previous step.
+- **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
+- **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
 
 ### Configure the archive export format
 
@@ -352,7 +352,7 @@ To enable audit events, you must reinitialize the Retail Extensible enumerations
 
 On the **General** FastTab of the **Retail parameters** page, click **Initialize**. For more information, see [Initialize seed data](../enable-configure-retail-functionality.md)
 
-There is an option to separately configure the Retail scheduler. Click **Retail scheduler** > **Initialize retail scheduler**. On the **Initialize retail scheduler** page, click **OK**.
+There is an option to separately configure the Retail scheduler. Click **Retail scheduler** \> **Initialize retail scheduler**. On the **Initialize retail scheduler** page, click **OK**.
 
 ### Configure Retail channel components
 
