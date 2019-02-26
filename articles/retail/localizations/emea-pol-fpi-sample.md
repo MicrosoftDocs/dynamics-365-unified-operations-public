@@ -193,8 +193,8 @@ The connector supports the following requests:
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
 - **SaveFiscalRegistrationResultDocumentProviderRequest** – This request saves the response from the printer.
 
-
 ### Configuration
+
 The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
 - VAT rates mapping

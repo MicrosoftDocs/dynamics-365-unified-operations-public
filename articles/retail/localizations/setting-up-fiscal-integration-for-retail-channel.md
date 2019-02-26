@@ -178,7 +178,7 @@ In some cases, a special text must be printed on a fiscal receipt if a discount 
     3. In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.
 
     > [!NOTE]
-    > If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line. 
+    > If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line.
 
 ## Set error handling settings
 
