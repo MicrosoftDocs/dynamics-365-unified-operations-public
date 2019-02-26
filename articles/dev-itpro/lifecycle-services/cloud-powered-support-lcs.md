@@ -5,7 +5,7 @@ title: Manage Finance and Operations support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 02/20/2018
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
@@ -35,7 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 To use the Support tool, you must have previously created a project in Lifecycle Services (LCS) and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
-
 
 ## Open a new incident
 1. In LCS, navigate to the project for which you want to file a support incident. 
@@ -86,20 +85,69 @@ To use the Support tool, you must have previously created a project in Lifecycle
 After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
 
 
-## Manage support plans
-If you purchased a support plan, such as **Premier Support** or **Advance Support for Partners**, you will need to add it to LCS Support before you create a new ticket.    
+## Support plans in Lifecycle Services
+Support plan entitlements are derived based on several different identifiers. Not all will apply to your situation. If you are missing a support plan or entitlement in LCS, determine which identifier is needed to tie it to your project in LCS. If have more than one organization, note which one is current by clicking on your name in the upper-right corner of LCS. Select the organization that applies to your scenario and contains the benefits that you want to utilize.
 
-1. On the **Submitted to Microsoft** tab, click **Manage support plans**. 
-   ![Manage support plans](media/SupportManagePlans.png)
-   
-2. On the **Manage support plans** page, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
-   ![Add contracts](media/SupportAddPlans.png) 
-   
-### Remove a Premier support plan 
-If you need to remove a Premier support plan from one or more of your contracts, you can do so using the Premier Portal.
-1. Log in to the [Premier Portal](https://support.microsoft.com/en-us/premier/access).
-2. Select the contracts you want to remove from the **Accociated access IDs**, and then click **Remove**. 
-   
+### Unique contract ID/access ID
+The following online support plans now require a unique contract ID/access ID combination linked to your login in LCS:
+
+-   Unified
+-   Premier
+-   Advanced support for partners
+
+If you do not know your unique contract ID/access ID combination, reach out to your account manager (TAM or SAM). He or she can create one for you.
+
+To link your contract ID/accces ID to your account, complete the following steps:
+
+From within a project, click **Support** from the main menu, and then click **Manage
+Support plans**. Click **Add contract**.
+
+![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+
+Enter your access ID and your password or contract ID, and then click **Add
+contract**.
+
+![](media/4abba1127549ef484a58daf51609d924.png)
+
+### PartnerSource Business Center account
+The following support plan incidents can be used as part of your PartnerSource Business Center (PSBC) account if they exist: 
+
+> [!NOTE]
+> No online support plans can be utilized through the PSBC account.
+
+-   Advanced support for partners on-premises incidents
+-   Advantage or Advantage + on-premises incidents
+-   Other pay per incident types of plans with an existing incident count in PSBC
+
+If you do not see the PartnerSource Business Center account, ensure that your login is added as a professional in your organization in PSBC. Make sure that you are logging in with the same Microsoft or work account login. This account is only applicable in an on-premises project.
+
+![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+
+### Login-specfic
+The following incidents and support benefits will appear based on your login if applicable:
+
+-   MPN gold and silver incidents
+-   Signature cloud support
+-   Individual incidents and 5 packs purchased on [support.microsoft.com/supportforbusiness] 
+
+   > [!NOTE]
+   > Incidents must be purchased with a Microsoft account such as \@hotmail.com or \@outlook.com. Work or Azure Active Directory accounts can not have incidents tied to them.
+
+### Tenant subscription
+The following entitlements will appear based on your subscription and ProDirect
+purchases within your tenant organization:
+
+-   Subscription
+-   ProDirect
+
+### Software assurance
+The following entitlements can be added by linking a subscription number and contact email:
+
+-   Software assurance
+
+To add, click **Add a Software Assurance plan** while creating the support incident. Enter the subscription number and the contact email and then click **Continue**.
+
+![](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## Report production outage
 Report production outage provides a quick and effective channel to escalate  issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.  
