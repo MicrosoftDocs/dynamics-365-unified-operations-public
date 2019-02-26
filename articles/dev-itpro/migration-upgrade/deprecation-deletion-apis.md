@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deprecation of methods and meta data elements
+title: Deprecation of methods and metadata elements
 description: Microsoft will keep evolving the code base, and as a result certain methods and meta data elements are no longer needed. 
 author: robadawy
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3 
 ---
 
-# Deprecation of methods and meta data elements
+# Deprecation of methods and metadata elements
 [!include[banner](../includes/banner.md)]
 
 Microsoft will keep evolving the code base, and as a result, certain methods and meta data elements are no longer needed. When this happens Microsoft will mark the method or element for deprecation. 
