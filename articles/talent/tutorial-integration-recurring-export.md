@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tutorial - Do recurring data export by using Azure Logic Apps
+title: Recurring data export using Azure Logic apps
 description: This tutorial shows how to create an Azure logic app that exports data from Dynamics 365 for Talent on a recurring schedule.
 author: gregboyko 
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
 ---
 
-# Tutorial - Do recurring data export by using Azure Logic Apps
+# Recurring data export using Azure Logic apps
 
 [!include[banner](../includes/banner.md)]
 
@@ -92,7 +92,7 @@ The bulk of the exercise involves creating the logic app.
 
     ![Recurrence dialog box](media/integration-logic-app-recurrence-step.png)
 
-4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api#exporttopackage) DMF REST API to schedule the export of your data package.
+4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API to schedule the export of your data package.
 
     1. Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
 
@@ -123,7 +123,7 @@ The bulk of the exercise involves creating the logic app.
 
         ![Invoke an HTTP request action](media/integration-logic-app-export-to-package-step.png)
 
-    > ![TIP]
+    > [!TIP]
     > You might want to rename each step so that it's more meaningful than the default name, **Invoke an HTTP request**. For example, you can rename this step **ExportToPackage**.
 
 5. [Initialize a variable](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) to store the execution status of the **ExportToPackage** request.
@@ -137,13 +137,20 @@ The bulk of the exercise involves creating the logic app.
 
         ![Until loop container](media/integration-logic-app-until-loop-step.png)
 
+        > [!NOTE]
+        > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.
+
+        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the [API documentation](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
+
+    3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
+
         > ![NOTE]
         > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.
 
-        > ![IMPORTANT]
         > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the [API documentation](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus).
 
     3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
+
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -156,12 +163,12 @@ The bulk of the exercise involves creating the logic app.
 
         ![Set variable action](media/integration-logic-app-set-variable-step.png)
 
-        > ![IMPORTANT]
+        > [!IMPORTANT]
         > The value for the **Set variable** action (**body('Invoke\_an\_HTTP\_request\_2').value**) will differ from the value for the **Invoke an HTTP request 2** body value, even though the designer will show the values in the same way.
 
 7. Get the download URL of the exported package.
 
-    - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api#getexportedpackageurl) DMF REST API.
+    - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -181,7 +188,7 @@ The bulk of the exercise involves creating the logic app.
 
         ![HTTP GET action](media/integration-logic-app-download-file-step.png)
 
-        > ![NOTE]
+        > [!NOTE]
         > This request doesn't require any additional authentication, because the URL that the **GetExportedPackageUrl** API returns includes a shared access signatures token that grants access to download the file.
 
 9. Save the downloaded package by using the [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector.

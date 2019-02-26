@@ -892,6 +892,7 @@
   - name: Deploy demo environments
     href: deployment/deploy-demo-environment.md
   - name: Cloud deployment
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: Self-service deployment
       href: deployment/infrastructure-stack.md
