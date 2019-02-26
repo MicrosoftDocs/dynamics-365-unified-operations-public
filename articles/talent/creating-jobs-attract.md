@@ -95,9 +95,7 @@ LinkedIn Company ID is required to ensure your jobs posted from Attract are
 mapped to the correct company page.
 
 Your LinkedIn Company ID is a string of numbers that uniquely identifies your
-company within LinkedIn. This string is around 6 - 9 characters long. For more
-information on how to find your LinkedIn company ID, please visit the
-[LinkedIn site](https://aka.ms/findID).
+company within LinkedIn. For more information on how to find your LinkedIn company ID, please visit the [LinkedIn site](https://aka.ms/findID).
 
 To update your LinkedIn company, select **Admin center** on the **Settings** menu
 (the gear symbol), and then select the **LinkedIn Integration** tab. Under the **Connect to LinkedIn** section, enter your LinkedIn Company Name and Company ID, and then save the settings.
@@ -116,7 +114,7 @@ To update your LinkedIn company, select **Admin center** on the **Settings**�
 >
 >    If you have problems after this step, please contact LinkedIn support. 
 > 
-> 1. It may take up to 12 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
+> 1. It may take up to 24 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
 
 
 ## Activate
