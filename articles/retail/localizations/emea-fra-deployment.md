@@ -43,6 +43,7 @@ This localization consists of extensions for the Commerce runtime (CRT), Retail 
 The digital signature extension uses a certificate that is installed in the local certificate storage of the machine where Retail Server is deployed. The thumbprint of the certificate must be specified in the configuration file (see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this topic). Depending on the implementation topology, the certificate might have to be stored in [Microsoft Azure Key Vault storage](https://docs.microsoft.com/azure/key-vault/key-vault-get-started). The Retail localization for France contains a code sample that shows how to override the signing flow and sign sales transactions by using a certificate that is stored in Azure Key Vault storage.
 
 ### Prerequisites
+
 The following steps must be completed before you can use a certificate that is stored in Azure Key Vault storage:
 
 - The Azure Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Retail Server.
@@ -660,6 +661,7 @@ You must complete the following procedure to enable the extensions in offline mo
 7. Test the functionality.
 
 ### Set up required parameters in Retail headquarters
+
 For more information, see [Cash registers for France](./emea-fra-cash-registers.md).
 
 ## Production environment
