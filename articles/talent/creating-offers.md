@@ -125,7 +125,7 @@ If DocuSign was chosen as the preferred e-sign method, offer creators need to co
 When the offer is ready and you click **Send to candidate**, the candidate will receive an email that an offer is waiting for review.
 
 >[!NOTE]
-> When using either Adobe Sign or DocuSign and you run into an error while sending the offer to the candidate, please retry by disconnecting and reconnecting the e-signature user account from user settings. If the issue persists, please contact our support using the **report a problem** link.
+> If you are using Adobe Sign or DocuSign and you run into an error while sending the offer to the candidate, try disconnecting and reconnecting the e-signature user account from **User Settings**. If the issue persists, please contact our support using the **Report a problem** link.
 
 ## Candidate’s actions after receiving an offer
 
