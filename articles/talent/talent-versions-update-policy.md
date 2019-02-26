@@ -42,8 +42,8 @@ The Microsoft Dynamics 365 for Talent web application can run in any of the foll
 
 *   Microsoft Edge (latest publicly available version) on Windows 10
 *   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
-*   Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
-*   Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
+*   Google Chrome (latest publicly available version)
+*   Apple Safari (latest publicly available version)
 
 To find the latest release for each web browser, go to the software manufacturer’s website. 
 
