@@ -4,7 +4,7 @@ title: VAT declaration (Russia)
 description: This topic provides information about VAT declaration for Russia.
 author: anasyash
 manager: AnnBe
-ms.date: 01/07/2019
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,6 +27,7 @@ ms.dyn365.ops.version: 10.0.1
 ---
 
 # VAT declaration (Russia)
+This topic provides information about setting up and generating the VAT declaration for Russia.
 
 ## Set up VAT declaration
 
@@ -437,7 +438,7 @@ For the earlier example, the following data will be present in section 6 of the 
 | Criteria for intermediary deals factures inclusion into Factures journal | Select the criterion for including intermediary deals factures in the facture journal: **Date of the registration** – The issued factures journal contains all intermediary deals factures, even if they haven't been confirmed with the principal. (The intermediary deal information for those factures might be empty). **Confirmation date** – The issued factures journal contains only confirmed intermediary deals factures. (The intermediary deal information for those factures is filled with the factures that have been received from the principal.)|
 | Include factures into Facture journal by reporting date | Set this option to "Yes" to filter factures by reporting date instead of facture date. |
 
-8.	Click OK. When the report is generated, the status of the message is changed to *Generated*. If an error occurred during generation, the status of the message is changed to *Technical error*.
+8.	Click **OK**. When the report is generated, the status of the message is changed to *Generated*. If an error occurred during generation, the status of the message is changed to *Technical error*.
 9.	Review all user actions with the current message, on the FastTab **Action log**
 10.	Review the generated report in the “Attachments” (“Clip” sign in the right upper corner of the page). Click **Open** to view the zip file with VAT declaration files.
 
@@ -446,8 +447,6 @@ You further need to manually upload the generated files to the special third-par
 
 ## Additional resources
 
-[Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
-
-[Electronic messaging](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/electronic-messaging)
-
-[Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
+- [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Electronic messaging](../general-ledger/electronic-messaging.md)
+- [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
