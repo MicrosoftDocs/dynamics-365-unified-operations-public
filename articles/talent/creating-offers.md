@@ -5,7 +5,7 @@ title: Creating, approving, and signing offers
 description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 for Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -112,7 +112,7 @@ There are several actions you can take before sending the offer to the candidate
 
 -  There may be additional documents that you want to include in the offer acceptance process. You will have the option to list the document type required.
 
-- e-Signature option: There are two ways to connect the e-signature provider of your choice. Go to User **Settings** in **Offer**, under **Connections** connect to **Adobe Sign** or **DocuSign**. Alternatively, you will be asked to connect the Send offer to the candidate screen if the connection wasn't already established based on the user settings. Users only need to connect their e-signature accounts once. The same user license is used for all future offer packages that will be sent out by the same user. 
+- e-Signature option: There are two ways to connect the e-signature provider of your choice. Go to **User Settings** in **Offer**, under **Connections**, connect to **Adobe Sign** or **DocuSign**. Alternatively, you will be asked to connect the **Send offer to the candidate** page if the connection wasn't already established based on the user settings. The e-signature account only needs to be connected once. The same user license is used for all future offer packages that will be sent out by the same user. 
 
 ### Adobe Sign
 If Adobe Sign was chosen as the preferred e-sign method, offer creators need to connect their Adobe Sign license at this step. 
