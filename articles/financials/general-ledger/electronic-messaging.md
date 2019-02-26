@@ -88,7 +88,7 @@ Set up number sequences for both messages and message items. The number sequence
 
 ### Message item types and statuses
 
-Message item types identify the types of records that will be used in electronic messages. You can set up message item types on the **Message item types** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item types**).
+Message item types identify the types of records that will be used in electronic messages. You can set up message item types on the **Message item types** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item types**)
 
 Message item statuses identify the statuses that will apply to message items in the processing that you're setting up. You can set up message item types on the **Message item statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**).
 
