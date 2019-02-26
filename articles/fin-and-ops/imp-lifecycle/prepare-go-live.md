@@ -42,7 +42,7 @@ The following table lists all the steps in the process, with the expected durati
 |---|--------|---------------|-----|-------|
 | 1 | Update Go-live date in LCS | At the latest 2-3 months in advance | Partner/Customer | The milestone dates should be kept up to date on an ongoing basis |
 | 2 | Complete and send check list | After UAT complete | Partner/Customer | Follow the instructions provided in the "FastTrack Go-live assessment" section later in this topic. |
-| 3 | Project assessment (Fast Track Essentials) | 2-business days for initial report, plus additional time for mitigation, if required | FastTrack Architect | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
+| 3 | Project assessment (Fast Track Essentials) | 3 business days for initial report, plus additional time for mitigation, if required | FastTrack Architect | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
 |   | Project workshop (Fast Track) | To coordinate with architect assigned | FastTrack Architect | |
 | 4 | Release for production deployment | Upon successfully completed assessment | FastTrack Architect | If the production deployment request has already been submitted, deployment will start. However, we request that you only submit the Production request after the assessment has successfully completed. |
 | 5 | Production deployment request | Self-service | Customer | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
