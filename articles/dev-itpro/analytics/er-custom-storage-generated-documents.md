@@ -175,8 +175,9 @@ The **AttachingFile()** event is raised when the following ER destinations are p
 
 ## Run the ER format that you created or imported
 
-1. Go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**. Find the record that was created for this execution job, and that has the generated file attached to it.
-2. Explore the local **C:\\0** folder to find same generated file.
+1. Execute the ER format that you created or imported.
+2. Go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**. Find the record that was created for this execution job, and that has the generated file attached to it.
+3. Explore the local **C:\\0** folder to find same generated file.
 
 ## Additional resources
 
