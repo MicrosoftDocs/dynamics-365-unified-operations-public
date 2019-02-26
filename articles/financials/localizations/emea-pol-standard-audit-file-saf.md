@@ -375,7 +375,7 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>ImportOfServices</strong></td>
+<td rowspan="5"><strong>ImportOfServices</strong></td>
 <td>20207</td>
 <td>Taxable import</td>
 <td>K_45</td>
@@ -386,6 +386,12 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>Offset Taxable import</td>
 <td>K_27</td>
 <td>-</td>
+</tr>
+<tr>
+<td>11117</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_27</td>
+<td>+</td>
 </tr>
 <tr>
 <td>20209</td>
@@ -400,7 +406,7 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>ImportART28</strong></td>
+<td rowspan="5"><strong>ImportART28</strong></td>
 <td>20207</td>
 <td>Taxable import</td>
 <td>K_45</td>
@@ -411,6 +417,12 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>Offset Taxable import</td>
 <td>K_29</td>
 <td>-</td>
+</tr>
+<tr>
+<td>111119</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_29</td>
+<td>+</td>
 </tr>
 <tr>
 <td>20209</td>
