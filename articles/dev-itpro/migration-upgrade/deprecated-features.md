@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 ### Deprecated APIs and future breaking changes
 <Brief description of the APIs we're deprecating.>
 
-To access the list of APIs that are being deprecated, see [Deprecated APIs](deprecation-deletion-apis.md).
+To access the list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
 
 |   |  |
 |------------|--------------------|
@@ -62,7 +62,7 @@ To access the list of APIs that are being deprecated, see [Deprecated APIs](depr
 | **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
 | **Status**                         | Deprecated - Target timeframe for removal of the APIs is <month/year> or <quarter/year> or <release/version>. |
 
-#### Field groups containing invalid field references
+### Field groups containing invalid field references
 
 |   |  |
 |------------|--------------------|
