@@ -46,7 +46,7 @@ BaseX is a Java-based XML document database. It requires a Java Runtime Environm
 
 # [Admin: Install Java](#tab/admin)
 
-Download and install Java JRE from the [Java download page](https://aka.ms/getjava).
+Download and install Java JRE **64-bit** from the [Java download page](https://aka.ms/getjava).
 
 # [Non-admin: Set up Java](#tab/non-admin)
 
@@ -86,11 +86,13 @@ To download BaseX, go to the [BaseX website](http://basex.org/download/), and do
 
 Download the Microsoft Windows installer from the download page.
 
-# [Non-admin: Download BaseX](#tab/non-admin) 
+# [Non-admin: Download BaseX](#tab/non-admin)
 
-Download the zip package from the download page.  Currently, the latest version is 9.1.2.
+Download the zip package from the download page.
 
 ---
+
+Currently, the latest version is 9.1.2.
 
 ## Install BaseX
 
@@ -101,6 +103,8 @@ Run the executable file on the developer machine where you will compile your mod
 # [Non-admin: Set up BaseX](#tab/non-admin)
 
 Extract the previously downloaded BaseX zip package.
+
+---
 
 > [!TIP]
 > If the installation drive doesn't have enough space for your model, you can change the folder for BaseX data later. For more information, see [BaseX configuration](http://docs.basex.org/wiki/Configuration#Database_Directory).
@@ -114,7 +118,6 @@ After installing BaseX, modify and run the following PowerShell script to add th
     [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";<path_to_basex>\bin\",
     [EnvironmentVariableTarget]::User)
 ```
----
 
 > [!IMPORTANT]
 > You will need to restart Visual Studio if you had it open while setting the PATH environment variable.
