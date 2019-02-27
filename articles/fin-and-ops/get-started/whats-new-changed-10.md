@@ -2,7 +2,7 @@
 # required metadata
 
 title: April 2019 preview features in Finance and Operations version 10.0
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
+description: This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
 author: tonyafehr
 manager: AnnBe
 ms.date: 02/27/2019
@@ -62,8 +62,8 @@ This feature allows you to use catch weight products within warehouse management
 
 For more information, see [Catch weight product processing with warehouse management](../../supply-chain/warehousing/catch-weight-processing.md).
 
-## Non-GST transaction for India 
-This feature allows you to create non-GST transaction with the Tax engine. To create a non-GST transaction, you need to select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
+## Non-GST transactions for India 
+This feature allows you to create non-GST transactions with the Tax engine. To create a non-GST transaction, select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
