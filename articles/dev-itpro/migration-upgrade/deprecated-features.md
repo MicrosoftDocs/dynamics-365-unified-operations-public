@@ -50,7 +50,7 @@ This list is intended to help you consider these removals and deprecations for y
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
 ### Print to screen functionality
-Customers can use the **Import** action provided by the Report Viewer control to download documents produced by Dynamics 365 Finance & Operations applications. This HTML based presentation of the report offers users a non-paginated preview of the document.
+Customers may use the **Import** action provided by the Report Viewer control to download documents produced by Dynamics 365 Finance & Operations applications. This HTML based presentation of the report offers users a non-paginated preview of the document.
 
 |   |  |
 |------------|--------------------|
