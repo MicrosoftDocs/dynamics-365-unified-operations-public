@@ -38,13 +38,48 @@ AppChecker depends on a installation of BaseX to store and query abstract syntax
 
 The sections of this topic should be completed in the order that they appear.
 
+If you are working in a developer environment without administrator privileges, please consider the additional instructions in each step for this scenario.
+
 ## Prerequisites
+
+# [Administrator](#tab/admin)
 
 BaseX is a Java-based XML document database. It requires a Java Runtime Environment (JRE) of version 8 or later. Before you install BaseX, [verify that a JRE is installed](https://aka.ms/getjava).
 
+# [Low privilege](#tab/low-privilege)
+
+Download Java **Server JRE** from the [Java download page](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+
+Java Server JRE is downloaded as a `.tar.gz` compressed archive that you will need to extract. You can use [7zip](https://www.7-zip.org/download.html) which can be downloaded without installation [at SourceForge](https://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/7za920.zip/download).
+
+To extract Java Server JRE binaries from the archive, run PowerShell commands like (change depending on which version of the Server JRE archive you downloaded):
+
+```powershell
+.\7za.exe x .\server-jre-8u202-windows-x64.tar.gz # decompresses to current working directory
+.\7za.exe x .\server-jre-8u202-windows-x64.tar # extracts jdk1.8.0_202 to current working directory
+```
+
+Assuming `7za.exe` and the archive are located in the current working directory.
+
+Add a pointer in the path environment variable to the Java bin path from a PowerShell prompt, this is needed for BaseX to run:
+
+```powershell
+[Environment]::SetEnvironmentVariable(
+    "Path",
+    # replace <path_to_jdk> below with the absolute path from the extracted jdk above
+    [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";<path_to_jdk>\bin\",
+    [EnvironmentVariableTarget]::User)
+```
+
 ## Download BaseX
 
-To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version of the Microsoft Windows installer. Currently, the latest version is 9.1.2.
+# [Administrator](#tab/admin)
+
+To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version as a Microsoft Windows installer. Currently, the latest version is 9.1.2.
+
+# [Low privilege](#tab/low-privilege)
+
+To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version as a zip package. Currently, the latest version is 9.1.2.
 
 ## Install BaseX
 
