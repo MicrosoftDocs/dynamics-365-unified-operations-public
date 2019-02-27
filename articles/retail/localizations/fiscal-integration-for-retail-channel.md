@@ -118,4 +118,4 @@ The following fiscal integration functionality is also available in the Retail S
 
 - [Digital signature for France](emea-fra-cash-registers.md)
 - [Digital signature for Norway](emea-nor-cash-registers.md)
-- [Control unit integration sample for Sweden](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Control unit integration sample for Sweden](retail-sdk-control-unit-sample.md)
