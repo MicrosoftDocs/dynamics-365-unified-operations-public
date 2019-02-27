@@ -40,7 +40,7 @@ This topic describes the process for configuring tax integration for China
 In order to further optimize the tax service and meet the needs of the taxpayer's internal management information system and the VAT invoice tax control billing the State Administration of Taxation updated  the invoicing software data interface for the V3.0 version (invoicing software data interface specification V1.0 and V2.0 does not meet the needs of the full implementation of the national reform of the VAT invoice management system). 
 
 In China, official tax invoice can only be issued via two government authorized invoicing software (Aisino and BaiWang). 
-Dynamics 365 for Finance and Operations version 10.0 provides the function to export sales invoice into txt electronic file and xml file for import to authorized invoicing software of Aisino and BaiWang providers accordingly. 
+Dynamics 365 for Finance and Operations version 10.0 provides the function to export issued invoice into txt electronic file and xml file for import to authorized invoicing software of Aisino and BaiWang providers accordingly. 
 
 The existing solution has been extended to integrate with both providers - Aisino and BaiWang – to export and import messages. Apart from there is maintain in the product the tax classification and codes in alignment with tax integration interface 3.0.
 
