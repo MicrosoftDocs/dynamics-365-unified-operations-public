@@ -34,6 +34,7 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](../includes/banner.md)]
 
 This topic describes the process for configuring tax integration for China 
+
 ## What's new and changed in Dynamics 365 for Finance and Operations version 10.0.
 
 In order to further optimize the tax service and meet the needs of the taxpayer's internal management information system and the VAT invoice tax control billing the State Administration of Taxation updated  the invoicing software data interface for the V3.0 version (invoicing software data interface specification V1.0 and V2.0 does not meet the needs of the full implementation of the national reform of the VAT invoice management system). 
@@ -109,6 +110,9 @@ The tax integration process is illustrated in the following diagram.
 
 - [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
 
+   > [!NOTE] 
+   > <P> Import the Chiness Golden Tax data entity is neccessary only for Dynamics 365 for Finance and Operations versions, which were released before version 10.0 </P>
+   
 - [Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
 
 - [Set up basic tax integration for China](./tasks/set-up-basic-tax-integration-profile-china.md)
