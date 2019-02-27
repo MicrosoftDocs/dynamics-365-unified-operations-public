@@ -2,7 +2,7 @@
 # required metadata
 
 title: April 2019 preview features in Dynamics 365 for Retail
-description: This topic describes features that are currently in preview in Dynamics 365 for Retail. 
+description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
 ms.date: 02/27/2019
