@@ -46,8 +46,8 @@ The existing solution has been extended to integrate with both providers - Aisin
 
 The following updates were implemented in Dynamics 365 for Finance and Operations:
 
-1.	New interface with BaiWang provider software (export of sale invoices in xml file and import file with response from BaiWang software in txt format and also in xml format, which may be exported from BaiWang software).
-2.	Updating structure of sale invoice export and import of txt file for interface with Aisino provider software.
+1.	New interface with BaiWang provider software (export of issued invoices in xml file and import file with response from BaiWang software in txt format and also in xml format, which may be exported from BaiWang software).
+2.	Updating structure of issued invoice export and import of txt file for interface with Aisino provider software.
 
 One of the main new elements in the exported invoice file is commodity code (classification of goods and services), which is mandatory in exported file. For output of commodity codes in the node of invoice lines in the exported file the system uses category hierarchy standard functionality settings. In order to the system may output this code in the exported file, the following settings should be completed:
 
