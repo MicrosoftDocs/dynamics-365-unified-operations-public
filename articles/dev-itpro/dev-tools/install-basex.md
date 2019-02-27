@@ -90,6 +90,8 @@ Download the Microsoft Windows installer from the download page.
 
 Download the zip package from the download page.  Currently, the latest version is 9.1.2.
 
+---
+
 ## Install BaseX
 
 # [Admin: Install BaseX](#tab/admin)
@@ -115,6 +117,7 @@ After installing BaseX, modify and run the following PowerShell script to add th
 
 > [!IMPORTANT]
 > You will need to restart Visual Studio if you had it open while setting the PATH environment variable.
+---
 
 ## Configure BaseX to handle your model
 
