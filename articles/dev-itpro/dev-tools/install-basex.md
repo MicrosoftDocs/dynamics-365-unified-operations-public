@@ -38,15 +38,17 @@ AppChecker depends on a installation of BaseX to store and query abstract syntax
 
 The sections of this topic should be completed in the order that they appear.
 
-If you are working in a developer environment without administrator privileges, please consider the additional instructions in each step for this scenario.
+If you are working in a developer environment without administrator privileges, use the tabs to switch to low privilege instructions.
 
 ## Prerequisites
 
-# [Administrator](#tab/admin)
+BaseX is a Java-based XML document database. It requires a Java Runtime Environment (JRE) of version 8 or later. Before you install BaseX, verify that a JRE is installed.
 
-BaseX is a Java-based XML document database. It requires a Java Runtime Environment (JRE) of version 8 or later. Before you install BaseX, [verify that a JRE is installed](https://aka.ms/getjava).
+# [Admin: install Java](#tab/admin)
 
-# [Low privilege](#tab/low-privilege)
+Download and install Java JRE from the [Java download page](https://aka.ms/getjava).
+
+# [Low privilege: setup Java](#tab/low-privilege)
 
 Download Java **Server JRE** from the [Java download page](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -75,19 +77,31 @@ Add a pointer in the path environment variable to the Java bin path from a Power
 
 ## Download BaseX
 
-# [Download BaseX as Administrator](#tab/admin)
+To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version.
 
-To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version as a Microsoft Windows installer. Currently, the latest version is 9.1.2.
+# [Admin: download BaseX](#tab/admin)
 
-# [Download BaseX with low privilege](#tab/low-privilege)
+Download the Microsoft Windows installer from the download page.
 
-To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version as a zip package. Currently, the latest version is 9.1.2.
+# [Low privilege: download BaseX](#tab/low-privilege)
+
+Download the zip package from the download page.
 
 ---
 
+Currently, the latest version is 9.1.2.
+
 ## Install BaseX
 
+# [Admin: install BaseX](#tab/admin)
+
 Run the executable file on the developer machine where you will compile your module. For each step, accept the default settings.
+
+# [Low privilege: setup BaseX](#tab/low-privilege)
+
+Extract the previously downloaded BaseX zip package.
+
+---
 
 > [!TIP]
 > If the installation drive doesn't have enough space for your model, you can change the folder for BaseX data later. For more information, see [BaseX configuration](http://docs.basex.org/wiki/Configuration#Database_Directory).
