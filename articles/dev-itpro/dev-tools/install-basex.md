@@ -63,7 +63,7 @@ To extract Java Server JRE binaries from the archive, run PowerShell commands li
 
 Assuming `7za.exe` and the archive are located in the current working directory.
 
-Add a pointer in the path environment variable to the Java bin path from a PowerShell prompt, this is needed for BaseX to run:
+After extracting Java, modify and run the following PowerShell script to add the Java bin folder to your **PATH** environment variable:
 
 ```powershell
 [Environment]::SetEnvironmentVariable(
@@ -105,6 +105,18 @@ Extract the previously downloaded BaseX zip package.
 
 > [!TIP]
 > If the installation drive doesn't have enough space for your model, you can change the folder for BaseX data later. For more information, see [BaseX configuration](http://docs.basex.org/wiki/Configuration#Database_Directory).
+
+After installing BaseX, modify and run the following PowerShell script to add the BaseX bin folder to your **PATH** environment variable:
+
+```powershell
+[Environment]::SetEnvironmentVariable(
+    "Path",
+    # replace <path_to_basex> below with the absolute path from the extracted basex zip package above
+    [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";<path_to_basex>\bin\",
+    [EnvironmentVariableTarget]::User)
+```
+
+> [!NOTICE] You will need to restart Visual Studio if you had it open while setting the PATH environment variable.
 
 ## Configure BaseX to handle your model
 
