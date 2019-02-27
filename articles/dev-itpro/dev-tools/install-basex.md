@@ -38,7 +38,7 @@ AppChecker depends on a installation of BaseX to store and query abstract syntax
 
 The sections of this topic should be completed in the order that they appear.
 
-If you are working in a developer environment without administrator privileges, use the tabs to switch to low privilege instructions.
+If you are working in a developer environment without administrator privileges, follow the non-administrator instructions.
 
 ## Prerequisites
 
