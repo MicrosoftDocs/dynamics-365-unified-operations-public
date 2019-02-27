@@ -45,6 +45,10 @@
       href: dev-tools/development-tools-overview.md
     - name: Development tools tutorial
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: Install BaseX for AppChecker
+        href: dev-tools/install-basex.md
     - name: Application Explorer
       href: dev-tools/application-explorer.md
     - name: Build and debug projects
@@ -263,6 +267,8 @@
         href: extensibility/extensibility-changes-812.md
       - name: Extensibility changes version 8.1.3
         href: extensibility/extensibility-changes-813.md  
+      - name: Extensibility changes version 10.0
+        href: extensibility/extensibility-changes-10.md  
     - name: Fundamentals
       items:
       - name: Intrusive customizations
@@ -886,6 +892,7 @@
   - name: Deploy demo environments
     href: deployment/deploy-demo-environment.md
   - name: Cloud deployment
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: Self-service deployment
       href: deployment/infrastructure-stack.md
@@ -910,7 +917,7 @@
       href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md
-    - name: Apply updates and extensions to cloud hosted retail channel components
+    - name: Apply updates and extensions to cloud hosted Retail channel components
       href: deployment/Update-retail-channel.md  
     - name: Initialize cloud-hosted Retail channel components
       href: deployment/Initialize-Retail-Channels.md  
@@ -1121,6 +1128,8 @@
       href: sysadmin/activeperiod.md
     - name: Batch manager security role
       href: sysadmin/runby.md
+    - name: Batch job to handle SQL index defragmentation
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1199,18 +1208,30 @@
       href: lifecycle-services/use-translation-service-ua.md
     - name: Translation memory files
       href: lifecycle-services/use-translation-service-tm.md
-- name: Database management
+- name: Database movement operations
   items:
-  - name: Copy databases from Azure SQL Database to SQL Server environments
-    href: database/copy-database-from-azure-sql-to-sql-server.md
-  - name: Copy databases from SQL Server to production Azure SQL Database environments
-    href: database/copy-database-from-sql-server-to-azure-sql.md
-  - name: Restore databases in non-production environments
-    href: database/request-point-in-time-restore.md
-  - name: Export copies of databases to restore later
-    href: database/copy-operations-database.md
-  - name: Request sandbox database refreshes
-    href: database/database-refresh.md
+  - name: Overview
+    href: database/dbmovement-operations.md
+  - name: Quick start guides
+    items:
+    - name: Refresh database
+      href: database/database-refresh.md
+    - name: Export a database
+      href: database/export-database.md
+    - name: Import a database
+      href: database/import-database.md
+    - name: Database point-in-time restore
+      href: database/database-point-in-time-restore.md
+  - name: Tutorials
+    items:
+    - name: Refresh for training purposes
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: Debugging and diagnostics
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: Golden configuration promotion
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: Destructive testing
+      href: database/dbmovement-scenario-destructivetests.md
 - name: Support
   items:
   - name: Get support for Finance and Operations and Lifecycle Services

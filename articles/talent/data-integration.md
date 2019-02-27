@@ -5,7 +5,7 @@ title: Data integration guidance for Dynamics 365 for Talent
 description: This topic provides guidance on various options for integrating with data managed by Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -97,12 +97,12 @@ application that connects to OData feeds.
 > [!NOTE]
 > With the decision to make CDS for Apps the preferred data interface for
 Talent (Core HR) being relatively recent, you may find that the Core HR data
-entities you need for your integration are not yet available in CDS\*. If the
+entities you need for your integration are not yet available in CDS<sup>1</sup>. If the
 Core HR entities required for your integration are not yet available, you will
 need to wait for the data entities to be made available or you will need to use
 one of the other integration technologies described below.
 
-
+<sup>1</sup>For a list of Core HR entities available in CDS, see [Core HR and Common Data Service for Apps](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in CDS.
 
 ### DMF/DIXF entities
 Dynamics 365 for Talent (Core HR), built primarily on the same platform as
@@ -230,14 +230,20 @@ technology options.
 
 | Technology/Tool/API    | Recurring integrations                   | Synchronous/Asynchronous                    | Programmatic access through an API        | Appropriate data volumes                                   | Data coverage                       |
 |------------------------|------------------------------------------|---------------------------------------------|-------------------------------------------|------------------------------------------------------------|-------------------------------------|
-| CDS entities           | Yes, using Data Integrator or middleware | Sync Async, Batch (through Data Integrator) | Yes, through Dynamics 365 Web API (OData) | Varies with use case (supports paging for interactive use) | Improving\*\*                       |
+| CDS entities           | Yes, using Data Integrator or middleware | Sync Async, Batch (through Data Integrator) | Yes, through Dynamics 365 Web API (OData) | Varies with use case (supports paging for interactive use) | Improving<sup>2</sup>                       |
 | DMF entities           | Yes, scheduled through middleware        | Async, Batch                                | Yes, through DMF Package REST API         | High (hundreds of thousands of records)                    | High                                |
 | DMF Package REST API   | Yes, scheduled through middleware        | Async, Batch                                | Yes                                       | High (hundreds of thousands of records)                    | API supports all DMF entities       |
-| BYOD                   | Yes, scheduled by Admin in Talent        | Async, Batch                                | No\*\*\*                                    | High (hundreds of thousands of records)                    | Supports all DMF entities           |
+| BYOD                   | Yes, scheduled by Admin in Talent        | Async, Batch                                | No<sup>3</sup>                                    | High (hundreds of thousands of records)                    | Supports all DMF entities           |
 | OData-enabled entities | Yes, using middleware                    | Sync                                        | Yes, through Talent Data Service (OData)  | Varies with use case (supports paging for interactive use) | High                                |
 | Excel Add-in           | No                                       | Sync                                        | No                                        | Medium (tens of thousands of records)                      | Supports all OData-enabled entities |
 | Data Integrator        | Yes, scheduled in Data Integrator        | Async, Batch                                | No                                        | Varies with use case                                       | Supports all CDS entities           |
 
+<sup>2</sup>Microsoft is investing heavily in increasing data coverage for CDS
+entities, and recommends CDS as the preferred data interface when coverage is
+available. Currently, CDS data coverage is low relative to DMF
+and OData-enabled entities.
+
+<sup>3</sup>SQL database can be accessed programmatically.
 
 ## Summary
 Your business data is a valuable asset, but its value can be greatly diminished
@@ -249,14 +255,6 @@ the available integration technologies and some of their key characteristics.
 This information should help you make better decisions on which approaches to
 leverage for your integration projects.
 
-\* For a list of Core HR entities available in CDS, see [Core HR and Common Data Service for Apps](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities).
 
-> [!NOTE]
-> For Attract and Onboard, all entities are available in CDS.
 
-\*\* Microsoft is investing heavily in increasing data coverage for CDS
-entities, and recommends CDS as the preferred data interface when coverage is
-available. Currently, CDS data coverage is low relative to DMF
-and OData-enabled entities.
 
-\*\*\* SQL database can be accessed programmatically.

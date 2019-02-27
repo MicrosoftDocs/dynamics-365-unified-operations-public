@@ -33,6 +33,16 @@ ms.dyn365.ops.version: 8.1
 
 In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
+## Schedule for April 10.0 release
+
+### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
+Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. In early March, the ability to set up this configuration or pause updates will be available through LCS.
+
+### With a release date in early April, which ring is being released at that time? Is it the GA ring? Or will GA be released several weeks later?
+[Standard release/Ring 4](public-preview-releases.md) production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
+ 
+For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup will be available in early March.
+
 ## Service updates
 
 ### What product versions are impacted by service updates?
@@ -89,7 +99,12 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 
 ### What's the process for deprecation?
 
-Deprecation will be announced by a notice 12 months prior to the deprecation. The functionality will only be deprecated during a major update.
+In the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic, we state the difference between removed and deprecated features as follows:
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 ### Can I delay an update?
 

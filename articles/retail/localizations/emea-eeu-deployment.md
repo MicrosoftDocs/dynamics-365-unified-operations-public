@@ -46,7 +46,7 @@ Complete these procedures to set up a development environment, so that you can t
 1. Find the extensions configuration file for CRT.
 
     The file is named **commerceruntime.ext.config**, and is located in the **bin\\ext** folder under the IIS Retail Server site location.
-    
+
 2. Register the CRT change in the extensions configuration file.
 
     ``` xml
@@ -65,38 +65,35 @@ Complete these procedures to set up a development environment, so that you can t
 
 2. Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate location.
 
-     ``` json
-     {
-         "extensionPackages": [
-             {
-                 "baseUrl": "Microsoft/AdvanceInvoice"
-             }
-         ]
-     }
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AdvanceInvoice"
+            }
+        ]
+    }
     ```
 
 3. Rebuild the solution.
-
 4. Run Modern POS in the debugger and test the functionality.
 
 ### Cloud POS extension components
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
-
 2. Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate location.
 
-     ``` json
-     {
-         "extensionPackages": [
-             {
-                 "baseUrl": "Microsoft/AdvanceInvoice"
-             }
-         ]
-     }
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AdvanceInvoice"
+            }
+        ]
+    }
     ```
 
 3. Rebuild the solution.
-
 4. Run Cloud POS in the debugger and test the functionality.
 
 ### Set up required parameters in Retail headquarters
@@ -108,7 +105,6 @@ For more information, see [Advance invoices for Retail for Eastern Europe](./eme
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
 1. Complete the steps in the **Cloud POS extension components** or **Modern POS extension components** sections earlier in this topic.
-
 2. Make the following change in the package configuration files under the **RetailSdk\\Assets** folder.
 
     In the **commerceruntime.ext.config** configuration files, add the following lines to the **composition** section.
@@ -118,5 +114,4 @@ Follow these steps to create deployable packages that contain Retail components,
     ```
 
 3. Run **msbuild** for the Retail SDK to create deployable packages.
-
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).

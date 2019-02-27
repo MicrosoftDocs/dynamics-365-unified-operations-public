@@ -77,6 +77,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |
+| PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
 
 ## Discount triggers
 
@@ -98,6 +99,8 @@ The following table lists the available triggers and denotes whether they can be
 | Trigger              | Type           | Description                                                                                                                                           |
 |----------------------|----------------|-------------------------|
 | PreOperationTrigger  | Cancelable     | Generic trigger executed before all POS operations. You can use this trigger if there is no specific trigger available for a POS operation. |
+| PreOperationValidationTrigger | Cancelable | Generic trigger executed before the operation validation begins.   |
+| OperationFailureTrigger | Non-cancelable | Generic trigger executed after any POS operation failed.  |
 | PostOperationTrigger | Non-cancelable | Generic trigger executed after all POS operations. You can use this trigger if there is no specific trigger available for a POS operation.  |
 
 ## Payment triggers

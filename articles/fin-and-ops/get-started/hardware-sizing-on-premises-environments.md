@@ -92,7 +92,7 @@ To understand your sizing requirements, you need to know the peak volume of tran
     - Usage of additional functionality, such as database log and alerts. Extreme database logging will further reduce throughput per hour per core below 3K lines.
     - Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example).
     - Transaction characterization.
-    - 2 GB to 4 GB memory for each core.
+    - 2 GB to 16 GB memory for each core.
     - Auxiliary databases on DB server such as Management reporter and SSRS databases.
     - Temp DB = 15% of DB size, with as many files as physical processors.
     - SAN size and throughput based on total concurrent transaction volume/usage.

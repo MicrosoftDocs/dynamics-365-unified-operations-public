@@ -85,7 +85,7 @@ You can set up plans to effectively and equitably manage compensation, as well a
 
 ## Develop and train employees
 
-To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
+To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback. To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
 
 -   [Performance management](performance-management-overview.md)
 -   [Align workforce skills and business needs](skills.md)

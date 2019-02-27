@@ -1415,6 +1415,8 @@
             href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+        - name: SPED ECD
+          href: ../financials/localizations/latam-bra-sped-ecd.md
         - name: SPED-Reinf tax statement
           href: ../financials/localizations/latam-bra-sped-reinf.md
         - name: Parameters for legal entities
@@ -2278,9 +2280,7 @@
         - name: Invoices for payment
           href: ../financials/localizations/rus-invoice-payment.md
         - name: Financial reporting
-          href: ../financials/localizations/rus-financial-reports.md
-        - name: Create a purchase book
-          href: ../financials/localizations/rus-sales-books-purchase-books.md   
+          href: ../financials/localizations/rus-financial-reports.md 
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
