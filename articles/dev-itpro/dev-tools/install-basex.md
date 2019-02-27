@@ -44,11 +44,11 @@ If you are working in a developer environment without administrator privileges, 
 
 BaseX is a Java-based XML document database. It requires a Java Runtime Environment (JRE) of version 8 or later. Before you install BaseX, verify that a JRE is installed.
 
-### Admin prerequisites
+# [Admin: install Java](#tab/admin)
 
 Download and install Java JRE from the [Java download page](https://aka.ms/getjava).
 
-### Non-admin prerequisites
+# [Non-admin: set up Java](#tab/admin)
 
 Download Java **Server JRE** from the [Java download page](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
