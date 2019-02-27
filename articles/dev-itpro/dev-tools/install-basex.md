@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include [banner](../includes/preview-banner.md)]
 
-AppChecker depends on a installation of BaseX to store and query abstract syntax trees that the X++ compiler generates. This topic explains how to install and set up BaseX in a developer environment.
+AppChecker depends on an installation of BaseX to store and query abstract syntax trees that the X++ compiler generates. This topic explains how to install and set up BaseX in a developer environment.
 
-The sections of this topic should be completed in the order that they appear.
+The sections of this topic should be completed in the order that they appear in.
 
-If you are working in a developer environment without administrator privileges, use the tabs to switch to non-admin instructions.
+If you're working in a developer environment and don't have admin privileges, use the tabs to switch to the instructions for non-admin users.
 
 ## Prerequisites
 
@@ -52,21 +52,19 @@ Download and install Java JRE **64-bit** from the [Java download page](https://a
 
 Download Java **Server JRE** from the [Java download page](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-Java Server JRE is downloaded as a `.tar.gz` compressed archive that you will need to extract. You can use [7zip](https://www.7-zip.org/download.html) which can be downloaded without installation at [SourceForge](https://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/7za920.zip/download).
+Java Server JRE is downloaded as a .tar.gz compressed archive that you must extract by using a tool such as [7zip](https://www.7-zip.org/download.html). You can download 7zip, without having to install it, from [SourceForge](https://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/7za920.zip/download).
 
-To extract Java Server JRE binaries from the archive, run PowerShell commands similar to the following:
+To extract Java Server JRE binaries from the archive, run the following Windows PowerShell commands.
 
 > [!NOTE]
-> Change the command based on the version of the Server JRE archive you downloaded.
+> You must modify these commands so that they reflect the version of the Server JRE archive that you downloaded. In the commands that are shown here, both 7za.exe and the archive are in the current working directory.
 
 ```powershell
 .\7za.exe x .\server-jre-8u202-windows-x64.tar.gz # decompresses to current working directory
 .\7za.exe x .\server-jre-8u202-windows-x64.tar # extracts jdk1.8.0_202 to current working directory
 ```
 
-Assuming `7za.exe` and the archive are located in the current working directory.
-
-After extracting Java, modify and run the following PowerShell script to add the Java bin folder to your **PATH** environment variable:
+After you extract Java, modify and run the following Windows PowerShell script to add the Java bin folder to your **PATH** environment variable.
 
 ```powershell
 [Environment]::SetEnvironmentVariable(
@@ -102,14 +100,14 @@ Run the executable file on the developer machine where you will compile your mod
 
 # [Non-admin: Set up BaseX](#tab/non-admin)
 
-Extract the previously downloaded BaseX zip package.
+Extract the BaseX zip package that you previously downloaded.
 
 ---
 
 > [!TIP]
 > If the installation drive doesn't have enough space for your model, you can change the folder for BaseX data later. For more information, see [BaseX configuration](http://docs.basex.org/wiki/Configuration#Database_Directory).
 
-After installing BaseX, modify and run the following PowerShell script to add the BaseX bin folder to your **PATH** environment variable:
+After you install BaseX, modify and run the following Windows PowerShell script to add the BaseX bin folder to your **PATH** environment variable.
 
 ```powershell
 [Environment]::SetEnvironmentVariable(
@@ -120,7 +118,7 @@ After installing BaseX, modify and run the following PowerShell script to add th
 ```
 
 > [!IMPORTANT]
-> You will need to restart Visual Studio if you had it open while setting the PATH environment variable.
+> If Microsoft Visual Studio was open while you set the **PATH** environment variable, you must restart it.
 
 ## Configure BaseX to handle your model
 
@@ -129,11 +127,11 @@ Depending on the size of your model, BaseX can use a lot of memory.
 By default, BaseX is configured to use a maximum of about 1.17 gigabytes (GB) of random-access memory (RAM). If you have a large model, you should consider increasing this limit by following these steps.
 
 1. Open the batch script at **\<BaseX Install Path\>\\bin\\basex.bat** for editing.
-2. Find the line that contains **set BASEX\_JVM=-Xmx1200m %BASEX\_JVM%**, and increase the value after **-Xmx** to, for example, **4g** to let it use 4 GB RAM.
+2. Find the line that contains **set BASEX\_JVM=-Xmx1200m %BASEX\_JVM%**, and increase the value after **-Xmx**. For example, change the value to **4g** to let BaseX use 4 GB of RAM.
 
     For more information, see [Non-Standard Options](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABHDABI). This section of the Java documentation explains how to increase the limits of the Java virtual machine (VM).
 
     Leave the rest of the script unchanged.
 
 > [!NOTE]
-> You do not need to start the BaseX server as AppChecker will use the standalone executable for storage and querying.
+> You don't have to start the BaseX server, because AppChecker will use the standalone executable file for storage and queries.
