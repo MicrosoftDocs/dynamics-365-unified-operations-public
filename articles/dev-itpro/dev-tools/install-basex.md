@@ -71,15 +71,19 @@ Add a pointer in the path environment variable to the Java bin path from a Power
     [EnvironmentVariableTarget]::User)
 ```
 
+---
+
 ## Download BaseX
 
-# [Administrator](#tab/admin)
+# [Download BaseX as Administrator](#tab/admin)
 
 To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version as a Microsoft Windows installer. Currently, the latest version is 9.1.2.
 
-# [Low privilege](#tab/low-privilege)
+# [Download BaseX with low privilege](#tab/low-privilege)
 
 To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version as a zip package. Currently, the latest version is 9.1.2.
+
+---
 
 ## Install BaseX
 
