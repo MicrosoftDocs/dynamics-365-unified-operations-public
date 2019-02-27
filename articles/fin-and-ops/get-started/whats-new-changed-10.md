@@ -51,7 +51,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ### Platform update 24
 
-Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (January 2019)](whats-new-platform-update-24.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [March 2019 preview features in Dynamics 365 for Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
 
 ## Extensibility enhancements
 
