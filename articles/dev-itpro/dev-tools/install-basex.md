@@ -38,17 +38,17 @@ AppChecker depends on a installation of BaseX to store and query abstract syntax
 
 The sections of this topic should be completed in the order that they appear.
 
-If you are working in a developer environment without administrator privileges, follow the non-administrator instructions.
+If you are working in a developer environment without administrator privileges, use the tabs to switch to non-admin instructions.
 
 ## Prerequisites
 
 BaseX is a Java-based XML document database. It requires a Java Runtime Environment (JRE) of version 8 or later. Before you install BaseX, verify that a JRE is installed.
 
-# [Admin: install Java](#tab/admin)
+# [Admin: Install Java](#tab/admin)
 
 Download and install Java JRE from the [Java download page](https://aka.ms/getjava).
 
-# [Non-admin: set up Java](#tab/admin)
+# [Non-admin: Set up Java](#tab/non-admin)
 
 Download Java **Server JRE** from the [Java download page](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -82,21 +82,21 @@ After extracting Java, modify and run the following PowerShell script to add the
 
 To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version.
 
-### Admin: Download BaseX
+# [Admin: Download BaseX](#tab/admin)
 
 Download the Microsoft Windows installer from the download page.
 
-### Non-admin: Download BaseX 
+# [Non-admin: Download BaseX](#tab/non-admin) 
 
 Download the zip package from the download page.  Currently, the latest version is 9.1.2.
 
 ## Install BaseX
 
-### Admin: Install BaseX
+# [Admin: Install BaseX](#tab/admin)
 
 Run the executable file on the developer machine where you will compile your module. For each step, accept the default settings.
 
-### Non-admin: Set up BaseX
+# [Non-admin: Set up BaseX](#tab/non-admin)
 
 Extract the previously downloaded BaseX zip package.
 
