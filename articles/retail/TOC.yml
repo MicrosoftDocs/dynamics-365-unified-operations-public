@@ -386,7 +386,7 @@
     - name: Cash register functionality
       href: localizations/emea-swe-cash-registers.md
     - name: Sample for Retail POS integration with control units
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Retail tasks
   items:
   - name: Create a product
