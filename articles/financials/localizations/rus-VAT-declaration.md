@@ -91,11 +91,11 @@ To start to work with the VAT declaration, follow these steps.
 
     1. Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
     2. Select the **Generate NDS 5.05** action, and then select **Edit**.
-    2. In the **Show dialog** field, select **Yes**.
-    3. In the **Format mapping** field, select the **VAT declaration format 5.05** ER configuration that you downloaded earlier.
-    4. Select the **Generate NDS 5.06** action, and then select **Edit**. 
-    5. In the **Show dialog** field, select **Yes**.
-    6. In the **Format mapping** field, select the **VAT declaration format 5.06** ER configuration that you downloaded earlier.
+    3. Set the **Show dialog** option to **Yes**.
+    4. In the **Format mapping** field, select the **VAT declaration format 5.05** ER configuration that you downloaded earlier.
+    5. Select the **Generate NDS 5.06** action, and then select **Edit**. 
+    6. Set the **Show dialog** option to **Yes**.
+    7. In the **Format mapping** field, select the **VAT declaration format 5.06** ER configuration that you downloaded earlier.
 
 ## Russian VAT declaration versions 5.05 and 5.06 in XML format
 
@@ -173,7 +173,7 @@ Section 3 of the VAT declaration contains the amounts of the registered factures
 
 In section 3, you can also get the amounts of the financial report that is set up for the VAT declaration.
 
-You should set up the financial report and financial report cells to calculate the required cells values. For more information, see [Financial reporting (Russia)](rus-financial-reports.md).
+You should set up the financial report and financial report cells to calculate the values of the cells. For more information, see [Financial reporting (Russia)](rus-financial-reports.md).
 
 You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.06.
 
@@ -229,12 +229,11 @@ You should define the following names for financial report cells. In this way, t
 | НалУплПокНА | 180-3\* |
 | НалВыч171.14 | 185-3 |
 
-The **НДС 2019** financial report that you uploaded from the data package earlier in this topic contains the required cells names.
 
 > [!NOTE]
 > Requisites that are marked with an asterisk (\*) in the preceding tables are automatically calculated based on registered documents, as described earlier in this topic. If you set up financial report calculation rules for the report cells for those requisites, the calculated amounts of the financial report will be added to the amounts that are automatically calculated. For information about how to replace the automatic calculation with the financial report cell calculation, see the [Customize section 3 of the VAT declaration](#customize-section-3-of-the-vat-declaration) section of this topic.
 
-The setup of the financial report for the VAT declaration from the **VAT declaration v.5.05 v.5.06 package.zip** data package in the LCS Shared asset library contains the required cells names.
+The setup of the financial report for the VAT declaration from the **VAT declaration v.5.05 v.5.06 package.zip** data package in the LCS Shared asset library contains the required names of the cells.
 
 ### Customize section 3 of the VAT declaration
 
@@ -301,7 +300,7 @@ Sections for export are generated based on the registration of export factures a
 
     - Invoice V1/Facture1: 10 pieces for a total amount of 118,000 Russian rubles (RUB). This amount includes 18-percent VAT (18,000 RUB).
 
-- **January 2018:** Incoming VAT deduction for Facture1.
+- **January 2018:** Incoming VAT is deducted for Facture1.
 
     - 82,600 RUB, which includes 18-percent VAT (12,600 RUB)
 
@@ -388,7 +387,7 @@ The following data is exported:
 
 - The VAT operation code (line 010)
 - The tax base (line 020)
-- The VAT amount payable that is calculated from the tax base for an unconfirmed export (line 030)
+- The payable VAT amount that is calculated from the tax base for an unconfirmed export (line 030)
 - The deductible VAT amount from the purchase of items that are used in an unconfirmed export (line 040)
 
 If goods are returned, the following data is exported for corrections of amounts:
@@ -426,12 +425,12 @@ For the earlier example, the following data will be present in section 6 of the 
 
     | Field | Description |
     |---|---|
-    | Generate appendixes | Select **Yes** to generate files that have VAT declaration appendixes. |
+    | Generate appendixes | Set this option to **Yes** to generate files that have VAT declaration appendixes. |
     | At place of | Select where the declaration is provided to the tax authorities: **Location of tax agent**, **Registration of the largest taxpayer**, or **Registration of the taxpayer**. |
     | Correction number | Enter the number of the correction, if you didn't specify it in step 5.|
     | Signatory type | Select who signs the VAT declaration: **Taxpayer** or **Representative**. |
-    | Signatory first, middle and last name | Enter the full name of the signatory. If you leave this field blank, the name of the official of the **Director** type is used as the signatory. (This official is set up at **Organization administration \> Setup \> Contacts \> Officials**.) |
-    | Representative company | If you selected **Representative** as the signatory type, enter the name of the representative company. |
+    | Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory. If you leave these fields blank, the full name of the official of the **Director** type is used as the signatory. (This official is set up at **Organization administration \> Setup \> Contacts \> Officials**.) |
+    | Representative company | If you selected **Representative** as the signatory type, enter the name of the representative's company. |
     | Representative document | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority. |
     | Reporting date | Enter the reporting date, if you didn't specify it in step 5.|
     | Group by factures in Books | Set this option to **Yes** to group factures that have the same facture number onto one line that has a total amount.|
