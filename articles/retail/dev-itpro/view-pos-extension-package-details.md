@@ -2,7 +2,7 @@
 # required metadata
 
 title: View POS extension package information
-description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Azure DevOps.  
+description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS). This new section lists the extension packages that are included as part of the core POS, and it lets you view status information and other details.
 author: mumani
 manager: AnnBe
 ms.date: 02/25/2019
@@ -33,28 +33,26 @@ ms.dyn365.ops.version: AX 10.0.1
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This topic applies to Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail, with application update 10.0.1 or later.
+> This topic applies to Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail, with application update 10.0.1 or later.
 
-There is a section under “Extension packages” in the point of sale (POS) **Settings** view that shows the list of POS extension packages included as part of the core POS. Under each package, you can view the status of the package--whether the extension is loaded, failed, or skipped.
+In the **Settings** view in the point of sale (POS), the **Extension packages** section shows the list of POS extension packages that are included as part of the core POS. The tile for each package shows the status of that package. The package status indicates whether the extension was loaded, could not be loaded, or was skipped.
 
 ## Extension package status
 
-This section describes what each status means.
+This section describes what each package status means.
 
-   - **Loaded**: This status means that the extension package loaded successfully.
+- **Loaded** – The extension package was successfully loaded.
+- **Failed** – The extension package wasn't successfully loaded.
+- **Skipped** – The package was skipped and wasn't loaded. In the extension manifest, you can specify that a package should be loaded for a specific locale, such as **en-fr**, but skipped for all the other locales.
 
-   - **Failed**: The extension package was not loaded.
-
-   - **Skipped**: The package was skipped and not loaded. In the extension manifest, you can specify that the package should be loaded for a particular locale and skipped in all the other locales. For example, you can specify that the extension be loaded only in “en-fr” and skipped in all the other locales. 
-
-
-[![POS Extension package details](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
+[![Extension packages section in the POS Settings view](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
 ## Extension package details
 
-If there's an issue with loading an extension or if there's a conflicting extension, you can view the details of each extension package and use that information to troubleshoot which extension file may be causing the issue.
+If an issue occurs when an extension is loaded, or if there is a conflicting extension, you can use the details that are provided for each extension package to determine which extension file is causing the issue. In this way, you can troubleshoot the issue.
 
-To view the details of each extension package, click **View details** under the **Package details** tile. POS will navigate to a new view where you can see the details of all the individual extensions within the package. If any of the extensions failed to load or were skipped, the details will appear in the right pane. The status column shows the status of the individual extensions within that package, the name column shows the name of the extension type, and the path column shows the path of the implementation file within the package. The description of each extension is also shown in the right details pane when you click the specific line item.
+To view the details of an extension package, select **View details** on the tile for that package. The POS opens a new view, where you can see the details of all the individual extensions in the package. If any extensions weren't successfully loaded or were skipped, the details appear in the right pane.
 
-The information in this view is based on the manifest file included in the extension package. The POS extension loader loads all the extension packages and updates the status, including any errors logged.
+The **Status** column shows the status of each extension in the package, the **Name** column shows the name of the extension type, and the **Path** column shows the path of the implementation file in the package. When you select a specific line item, the right pane also shows a description of the extension.
 
+The information in this view is based on the manifest file that is included in the extension package. The POS extension loader loads all the extension packages and updates the status. The status information includes any errors that have been logged.
