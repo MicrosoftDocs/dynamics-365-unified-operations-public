@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors. You can use this procedure in demo data company USMF. Before you start, you must have an RFQ with two lines that has been sent to at least two vendors. Complete [Create a request for quotation](create-request-quotation.md) as a prerequisite to create this. You need to have set up scoring criteria before you can run this procedure.
 
-You can enter the bid as a vendor, or you can enter it as a procurement professional. 
+You can enter the bid as a vendor, or you can enter it as a procurement professional. For more information, refer to [Set up and maintain vendor collaboration](../set-up-maintain-vendor-collaboration.md).
 
 ## Enter a reply as a vendor
 
