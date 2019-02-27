@@ -116,7 +116,8 @@ After installing BaseX, modify and run the following PowerShell script to add th
     [EnvironmentVariableTarget]::User)
 ```
 
-> [!NOTICE] You will need to restart Visual Studio if you had it open while setting the PATH environment variable.
+> [!IMPORTANT]
+> You will need to restart Visual Studio if you had it open while setting the PATH environment variable.
 
 ## Configure BaseX to handle your model
 
