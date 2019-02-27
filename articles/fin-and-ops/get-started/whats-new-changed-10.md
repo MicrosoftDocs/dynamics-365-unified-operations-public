@@ -5,7 +5,7 @@ title: April 2019 preview features in Finance and Operations version 10.0
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019 and has a build number of 10.0.8.
 
-To learn about the preview features in Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/preview).
+To learn about the preview features in Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new).
 
 ### Dynamics 365 April '19 release notes
 
