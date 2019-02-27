@@ -79,7 +79,7 @@ For integration with BaiWang software it is necessary to import the following co
 -	GTS Import format (BaiWang)-txt) (CN)
 -	GTS Import format (BaiWang-xml) (CN)
    > [!NOTE] 
-   > <P> A user may import txt or xml files, received as response after import to BaiWang software or exported from BaiWang software.</P>
+   > <P> A user may import txt file, received as response after import to BaiWang software or or xml files, exported from BaiWang software.</P>
 
 GER configurations downloading instructions for are here:
 [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs) 
