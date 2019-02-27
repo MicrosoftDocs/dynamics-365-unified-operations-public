@@ -106,5 +106,7 @@ The following updates are included in this release:
 - There is a new interface with BaiWang provider software that lets you export issued invoices in .XML format and you can import files from BaiWang software in .TXT and .XML formats.
 - We updated the structure of the issued invoice that is exported and you can import .TXT file for interface with Aisino provider software.
 
+For more information, see [Configure tax integration for China](../../financials/localizations/apac-chn-tax-integration.md).
+
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
