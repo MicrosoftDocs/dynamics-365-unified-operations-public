@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 ---
 # Sample for Retail POS integration with control units for Sweden
 
-[!include [banner](../../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 **SAMPLE CODE NOTICE**
 
