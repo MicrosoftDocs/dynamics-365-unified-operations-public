@@ -265,273 +265,127 @@ administrator only will be able to interoperate via this web application.
 Initialize web application for interoperation with HMRC
 -------------------------------------------------------
 
-Each web application on HMRC side has three parameters which uniquely identify
-it:
+Each web application on HMRC side has three parameters which uniquely identify it:
 
 -   **Client ID** – unique identifier of web application
 
 -   **Client secret** – secret passphrase used to authorize web application
 
--   **Server token** – secret token used to authorize web application when
-    making requests to any application-restricted endpoint.
+-   **Server token** – secret token used to authorize web application when making requests to any application-restricted endpoint.
 
-These parameters are used during addressing requests to HMRC and must be filled
-in before you start authorization process for a web application.
+These parameters are used during addressing requests to HMRC and must be filled in before you start authorization process for a web application.
 
-For sandbox application these parameters can be obtained manually from **Manage
-credentials** part of your sandbox application on HMRC portal. Copy and past
-them into the system via **Tax** \> **Setup** \> **Electronic messages** \>
-**Web applications** for “**Sandbox HMRC**” web application in the appropriate
-field in the **Authorization parameters** group of fields.
+For sandbox application these parameters can be obtained manually from **Manage credentials** part of your sandbox application on HMRC portal. Copy and past them into the system via **Tax** \> **Setup** \> **Electronic messages** \> **Web applications** for **Sandbox HMRC** web application in the appropriate field in the **Authorization parameters** group of fields.
 
-For production application (“**Dynamics 365 for Finance and Operations**”) these
-parameters are stored in the system in respect to HMRC’s requirements and must
-be stored in the encrypted format. To initialize them, open **Tax** \> **Setup**
-\> **Electronic messages** \> **Executable class settings** page, select
-“**InitProdWebAppl**” executable class and click on **Parameters** button on the
-Action pane. Select “**Dynamics 365 for Finance and Operations**” in the dialog
-and click **OK** button. It is important to click OK button here or parameter
-will not be saved into the data base. When parameter is saved, the executable
-class must be run. To do so, open **Tax** \> **Inquires and reports** \>
-**Electronic messages** \> **Electronic messages,** click “**Run processing**”
-button on the Action pane, select “**UK MTD VAT returns**” in the Processing
-field, mark “**Choose action**” check box, select “**Initialize production web
-application**” **Action** and click **OK** button. Production application
-credentials will be populated for “**Dynamics 365 for Finance and Operations**”
-web application in encrypted format.
+For production application (“**Dynamics 365 for Finance and Operations**”) these parameters are stored in the system in respect to HMRC’s requirements and must be stored in the encrypted format. To initialize them, open **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings** page, select “**InitProdWebAppl**” executable class and click on **Parameters** button on the Action pane. Select “**Dynamics 365 for Finance and Operations**” in the dialog and click **OK** button. It is important to click OK button here or parameter will not be saved into the data base. When parameter is saved, the executable class must be run. To do so, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages,** click **Run processing** button on the Action pane, select **UK MTD VAT returns** in the Processing field, mark **Choose action** check box, select **Initialize production web
+application** **Action** and click **OK** button. Production application credentials will be populated for **Dynamics 365 for Finance and Operations** web application in encrypted format.
 
 Obtain Authorization code for Sandbox 
 --------------------------------------
 
-HMRC provides possibility to register as a developer on [“HMRC Developer
-Hub”](https://developer.service.hmrc.gov.uk/developer/registration) and access
-to sandbox environment for testing purposes. Being registered as a developer,
-you may use “**UK MTD VAT TEST**” processing to try to interoperate with HMRC
-sandbox environment. For this purpose, you need to get a Test user credentials
-first:
+HMRC provides possibility to register as a developer on [“HMRC Developer Hub”](https://developer.service.hmrc.gov.uk/developer/registration) and access to sandbox environment for testing purposes. Being registered as a developer, you may use **UK MTD VAT TEST** processing to try to interoperate with HMRC sandbox environment. For this purpose, you need to get a Test user credentials first:
 
 -   **Used ID** – a name to access HMRC during Authorization code requesting
 
--   **Password** – a password to access HMRC during Authorization code
-    requesting
+-   **Password** – a password to access HMRC during Authorization code requesting
 
--   **VRN** – testing VAT registration number (VRN) which is used during testing
-    interoperation with HMRC’s sandbox.
+-   **VRN** – testing VAT registration number (VRN) which is used during testing interoperation with HMRC’s sandbox.
 
 These three parameters must be used together.
 
-To get these testing credentials, open **Tax** \> **Inquires and reports** \>
-**Electronic messages** \> **Electronic messages**, select “**UK MTD VAT TEST**”
-processing and click on “**New**” button on the Action pane of the **Messages**
-fast tab. Select “**Create test user request**” action and click “**OK**”. A new
-Electronic message will be created. You don’t need to fill in any fields of this
-electronic message for the purpose of Test user requesting. Click “**Generate
-report**” button on the Action pane of the **Messages** fast tab and confirm
-sending of Test user request to HMRC by “**OK**” button (“**Generate test user
-request**” action is initialized together with “**Send test user request**”
-action).
+To get these testing credentials, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select **UK MTD VAT TEST** processing and click on **New** button on the Action pane of the **Messages** fast tab. Select **Create test user request** action and click “**OK**”. A new Electronic message will be created. You don’t need to fill in any fields of this electronic message for the purpose of Test user requesting. Click **Generate report** button on the Action pane of the **Messages** fast tab and confirm sending of Test user request to HMRC by **OK** button (**Generate test user request** action is initialized together with **Send test user request** action).
 
-Response from HMRC will be attached to the electronic message as an attachment
-in JSON format. To open it, select the electronic message and click on
-“**Clip**” button in the right top corner of your window. An Attachments window
-will be open for the selected electronic message. Select the last
-“**TestUserInfo.txt**” file and click “**Open**” button on the Action pane. In
-the opened file you will find “userID”, “password” and “VRN” fields and their
-respective values.
+Response from HMRC will be attached to the electronic message as an attachment in JSON format. To open it, select the electronic message and click on **Clip** button in the right top corner of your window. An Attachments window will be open for the selected electronic message. Select the last **TestUserInfo.txt** file and click **Open** button on the Action pane. In the opened file you will find **userID**, **password** and **VRN** fields and their respective values.
 
-Update **Tax exempt number** of the Legal entity you are operating in with
-obtained “**VRN**” value from HMRC. Don’t change this number during operation
-with sandbox web application unless you obtain again a new Test user
-credentials.
+Update **Tax exempt number** of the Legal entity you are operating in with obtained **VRN** value from HMRC. Don’t change this number during operation with sandbox web application unless you obtain again a new Test user credentials.
 
-When **Tax exempt number** of the Legal entity you are operating in is updated,
-proceed with authorization in HMRC. There are two steps to be done before your
-system is authorized to interoperate with HMRC:
+When **Tax exempt number** of the Legal entity you are operating in is updated, proceed with authorization in HMRC. There are two steps to be done before your system is authorized to interoperate with HMRC:
 
 -   Get **Authorization code**
-
 -   Get **Access token**.
 
-To get an **Authorization code,** open **Tax** \> **Setup** \> **Electronic
-messages** \> **Web applications,** select the web application for which you
-want to authorize (“**Sandbox HMRC**”) and click on “**Get authorization code**”
-button. Confirm that you want to initialize authorization process by “**OK**”
-button. In **the Electronic report parameters** form specify **Scope**. The
-following values are allowed by HMRC:
+To get an **Authorization code,** open **Tax** \> **Setup** \> **Electronic messages** \> **Web applications,** select the web application for which you want to authorize (**Sandbox HMRC**) and click on **Get authorization code** button. Confirm that you want to initialize authorization process by **OK** button. In **the Electronic report parameters** form specify **Scope**. The following values are allowed by HMRC:
 
 -   read:vat
-
 -   write:vat
-
 -   read:vat write:vat
 
-It is recommended to type “**read:vat write:vat**” in this field as the same
-application must be used for both GET and POST https requests to the web
-service. Click “**OK**” button to address the authorization request to HMRC. By
-“**OK**” button you will be redirected to HMRC portal for authorization. On
-“**Sign in**” page enter values related to “**userID**” and “**password**” from
-response which you received previously on getting of Test user credentials step.
-Next page will show **Authorization code** granted by HMRC. **Copy** it to the
-clipboard and proceed with getting an **Access token**. The **Authorization
-code** is valid only 10 minutes during which you can retrieve Access token. If
-you didn’t retrieve Access token for 10 minutes and the Authorization code is
-expired, you may get a new one with the same Test user credentials or get new
-Test user.
+It is recommended to type **read:vat write:vat** in this field as the same application must be used for both GET and POST https requests to the web service. Click **OK** button to address the authorization request to HMRC. By **OK** button you will be redirected to HMRC portal for authorization. On **Sign in** page enter values related to **userID** and **password** from response which you received previously on getting of Test user credentials step. Next page will show **Authorization code** granted by HMRC. **Copy** it to the clipboard and proceed with getting an **Access token**. The **Authorization code** is valid only 10 minutes during which you can retrieve Access token. If you didn’t retrieve Access token for 10 minutes and the Authorization code is expired, you may get a new one with the same Test user credentials or get new Test user.
 
 Obtain Authorization code for Production
 ----------------------------------------
 
-When a company is ready to interoperate in real-life with MTD for VAT it must
-create an “**HMRC online account**” and link it to “Microsoft Dynamics 365 for
-Finance and Operations” application inside this account. As a result, the
-company will be granted with credentials tied to the VAT registration number of
-this company:
+When a company is ready to interoperate in real-life with MTD for VAT it must create an **HMRC online account** and link it to the “Microsoft Dynamics 365 for Finance and Operations” application inside this account. As a result, the company will be granted with credentials tied to the VAT registration number of this company:
 
 -   **Used ID** – a name to access HMRC during Authorization code requesting
+-   **Password** – a password to access HMRC during Authorization code requesting.
 
--   **Password** – a password to access HMRC during Authorization code
-    requesting.
-
-Having user credentials, an authorization process can be initialized. There are
-two steps to be done before your system is ready to interoperate with HMRC:
+Having user credentials, an authorization process can be initialized. There are two steps to be done before your system is ready to interoperate with HMRC:
 
 -   Get **Authorization code**
-
 -   Get **Access token**.
 
-To get an **Authorization code** from HMRC, open **Tax** \> **Setup** \>
-**Electronic messages** \> **Web applications,** select the web application for
-which you want to authorize (“**Dynamics 365 for Finance and Operations**”) and
-click on “**Get authorization code**” button. Confirm that you want to
-initialize authorization process by “**OK**” button. In **the Electronic report
-parameters** form specify **Scope**. The following values are allowed by HMRC:
+To get an **Authorization code** from HMRC, open **Tax** \> **Setup** \> **Electronic messages** \> **Web applications,** select the web application for which you want to authorize (“**Dynamics 365 for Finance and Operations**”) and click on “**Get authorization code**” button. Confirm that you want to initialize authorization process by “**OK**” button. In **the Electronic report parameters** form specify **Scope**. The following values are allowed by HMRC:
 
 -   read:vat
-
 -   write:vat
-
 -   read:vat write:vat
 
-It is recommended to type “**read:vat write:vat**” in this field as the same
-application must be used for both GET and POST https requests to the web
-service. Click “**OK**” button to address the authorization request to HMRC. By
-“**OK**” button you will be redirected to HMRC portal for authorization. On
-“**Sign in**” page enter **Used ID** and **Password** granted by HMRC on
-creation of the “**HMRC online account**”. Next page will show **Authorization
-code**. **Copy** it to the clipboard and proceed with getting of **Access
-token**. The **Authorization code** is valid only 10 minutes during which you
-can retrieve Access token. If you didn’t retrieve Access token during 10 minutes
-and the Authorization code is expired, you may get a new one.
+It is recommended to type **read:vat write:vat** in this field as the same application must be used for both GET and POST https requests to the web service. Click **OK** button to address the authorization request to HMRC. By **OK** button you will be redirected to HMRC portal for authorization. On **Sign in** page enter **Used ID** and **Password** granted by HMRC on creation of the **HMRC online account**. Next page will show **Authorization code**. **Copy** it to the clipboard and proceed with getting of **Access token**. The **Authorization code** is valid only 10 minutes during which you can retrieve Access token. If you didn’t retrieve Access token during 10 minutes and the Authorization code is expired, you may get a new one.
 
 Getting an Access token
 -----------------------
 
-Initialize getting of **Access token** during 10 minutes from the moment an
-**Authorization code** was generated by HMRC.
+Initialize getting of **Access token** during 10 minutes from the moment an **Authorization code** was generated by HMRC.
 
-Open **Tax** \> **Setup** \> **Electronic messages** \> **Web applications,**
-select the web application for which you want to authorize (“**Sandbox HMRC**” –
-for testing purposes, “**Dynamics 365 for Finance and Operations**” – for
-production) and click on “**Obtain access token**” button on the Action pane of
-**Web applications** form to request an Access token from HMRC. Past from the
-clipboard the **Authorization code** copied from the HMRC portal during
-obtaining of Authorization code and click **OK**. Access token request will be
-sent to HMRC and an Access token will be automatically saved in Dynamics 365 for
-Finance and Operations from the HMRC’s response. It is not allowed to review the
-token from user interface. You can observe validity period of Access token in
-**Access token will expire in** field. Each Access token is valid during 4 hours
-from the moment when it was created by HMRC. To receive a new one, you don’t
-need to renew an Authorization code. For this purpose, you need to Refresh
-access token.
+Open **Tax** \> **Setup** \> **Electronic messages** \> **Web applications,** select the web application for which you want to authorize (“**Sandbox HMRC**” – for testing purposes, “**Dynamics 365 for Finance and Operations**” – for production) and click on “**Obtain access token**” button on the Action pane of **Web applications** form to request an Access token from HMRC. Past from the clipboard the **Authorization code** copied from the HMRC portal during obtaining of Authorization code and click **OK**. Access token request will be sent to HMRC and an Access token will be automatically saved in Dynamics 365 for Finance and Operations from the HMRC’s response. It is not allowed to review the token from user interface. You can observe validity period of Access token in **Access token will expire in** field. Each Access token is valid during 4 hours from the moment when it was created by HMRC. To receive a new one, you don’t need to renew an Authorization code. For this purpose, you need to Refresh access token.
 
-Each Access token is valid during 4 hours from the moment when it was created by
-HMRC. To Refresh it, open click on **Refresh access token** button on the Action
-pane of **Web applications** form to manually initiate refreshing of an access
-token. Refresh Access token request will be sent to HMRC and a new Access token
-will be automatically saved in the system from the HMRC’s response.
+Each Access token is valid during 4 hours from the moment when it was created by HMRC. To Refresh it, open click on **Refresh access token** button on the Action pane of **Web applications** form to manually initiate refreshing of an access token. Refresh Access token request will be sent to HMRC and a new Access token will be automatically saved in the system from the HMRC’s response.
 
-It is not needed to refresh token manually each 4 hours or before you start to
-interoperate with HMRC. During interoperation with HMRC this refreshing of
-Access token procedure will be initialized automatically and refreshing of
-Access token will be hidden from user.
+It is not needed to refresh token manually each 4 hours or before you start to interoperate with HMRC. During interoperation with HMRC this refreshing of Access token procedure will be initialized automatically and refreshing of Access token will be hidden from user.
 
 Retrieving VAT obligations from HMRC
 ====================================
 
-When **Web application** is initialized and authorized, system is ready to
-interoperate with HMRC.
+When **Web application** is initialized and authorized, system is ready to interoperate with HMRC.
 
-Open **Tax** \> **Inquires and reports** \> **Electronic messages** \>
-**Electronic messages**, select either “**UK MTD VAT TEST**” processing for
-testing purposes or “**UK MTD VAT returns**” for real-life interoperation with
-production HMRC web application. Click “**New**” button on **Messages** fast
-tab, select “**Create VAT obligation request**” Action and click “**OK**”
-button. A new Electronic message will be created in “**New obligation request**”
-status. Fill in fields:
+Open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select either **UK MTD VAT TEST** processing for testing purposes or **UK MTD VAT returns** for real-life interoperation with production HMRC web application. Click **New** button on **Messages** fast tab, select **Create VAT obligation request** Action and click **OK** button. A new Electronic message will be created in **New obligation request** status. Fill in fields:
 
-**From date** and **To date** fields. This form presents information about VAT
-obligations and returns and serves for interoperation with HMRC web service.
+**From date** and **To date** fields. This form presents information about VAT obligations and returns and serves for interoperation with HMRC web service.
 
-| **Field**       | **Description**                                                                                                                                                |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Field**       | **Description**     |
+|-----------------|---------------------|
 | **From date**   | Mandatory field for Electronic message retrieving VAT obligations. Start date of period for which you want to get information about VAT obligations from HMRC. |
 | **To date**     | Mandatory field for Electronic message retrieving VAT obligations. End date of period for which you want to get information about VAT obligations from HMRC    |
-| **Description** | Optional field for Electronic message retrieving VAT obligations. Type a description for Electronic message.                                                   |
+| **Description** | Optional field for Electronic message retrieving VAT obligations. Type a description for Electronic message. |
 
-**Action log** will save information about user, date and time of the Electronic
-message creation.
+**Action log** will save information about user, date and time of the Electronic message creation.
 
 No **Additional fields** are applicable for this type of Electronic message.
 
-Click “**Send report**” button to initialize retrieving of VAT obligations
-information from HMRC. Next “**Retrieve VAT obligations**” Action is
-automatically defined in the **Run processing** dialog and filled in by the
-system. Click **OK** button. A request in JSON format will be created and
-addressed to HMRC web application, response from HMRC will be received and
-attached to the Electronic message. According to the response, new Electronic
-messages for VAT return will be created or existing updated.
+Click **Send report** button to initialize retrieving of VAT obligations information from HMRC. Next **Retrieve VAT obligations** Action is automatically defined in the **Run processing** dialog and filled in by the system. Click **OK** button. A request in JSON format will be created and addressed to HMRC web application, response from HMRC will be received and attached to the Electronic message. According to the response, new Electronic messages for VAT return will be created or existing updated.
 
-HMRC identifies uniquely each VAT return period via a “**periodKey**” parameter.
-This parameter in stored respectively in Dynamics 365 for Finance and Operation
-but according HMRC mandatory requirements its value must hidden from user
-interface. User must not be allowed to see the “**periodKey**” value from the
-system interface.
+HMRC identifies uniquely each VAT return period via a **periodKey** parameter. This parameter in stored respectively in Dynamics 365 for Finance and Operation but according HMRC mandatory requirements its value must hidden from user interface. User must not be allowed to see the **periodKey** value from the system interface.
 
-For storing “**periodKey**” value in both “**UK MTD VAT TEST**” and “**UK MTD
-VAT returns**” processing, “**periodKey**” Additional filed is used. It is setup
-as hidden so that user will not be able to see its value. It is not recommended
-to change this setup for “**periodKey**” Additional field to accommodate
-requirements of HMRC.
+For storing **periodKey** value in both **UK MTD VAT TEST** and **UK MTD VAT returns** processing, **periodKey** Additional filed is used. It is setup as hidden so that user will not be able to see its value. It is not recommended to change this setup for **periodKey** Additional field to accommodate requirements of HMRC.
 
-Schematically lifecycle of Electronic message processing for VAT obligation
-retrieving is shown on the diagram:
+Schematically lifecycle of Electronic message processing for VAT obligation retrieving is shown on the diagram:
 
-The last step of the processing is “**Import VAT obligations**” action of
-“**Electronic reporting import**” type. On this step system defines:
+The last step of the processing is **Import VAT obligations** action of **Electronic reporting import** type. On this step system defines:
 
--   if a VAT obligation from the response doesn’t exist in the data base and the
-    status of this VAT obligation in HMRC is “**Open**”, a new Electronic
-    message in “**New VAT return**” status will be created.
+-   if a VAT obligation from the response doesn’t exist in the data base and the status of this VAT obligation in HMRC is **Open**, a new Electronic message in **New VAT return** status will be created.
 
--   if a VAT obligation from the response doesn’t exist in the data base and the
-    status of this VAT obligation in HMRC is “**Fulfilled**”, a new Electronic
-    message in “**Completed VAT return**” status will be created.
+-   if a VAT obligation from the response doesn’t exist in the data base and the status of this VAT obligation in HMRC is **Fulfilled**, a new Electronic message in **Completed VAT return** status will be created.
 
--   if a VAT obligation from the response exists in the data base, system
-    verifies and synchronize **Additional fields** values with the information
-    from the response: **HMRC status, Due date, Received date.**
+-   if a VAT obligation from the response exists in the data base, system verifies and synchronize **Additional fields** values with the information from the response: **HMRC status, Due date, Received date.**
 
-All the actions done with Electronic messages are logged and can be reviewed on
-the **Log** fast tab.
+All the actions done with Electronic messages are logged and can be reviewed on the **Log** fast tab.
 
 Testing “Gov-Test-Scenario” for “Retrieve VAT obligations” endpoint in HMRC’s sandbox
 -------------------------------------------------------------------------------------
 
-HMRC provides possibility to simulate different scenario of VAT obligations
-retrieving on sandbox web application. Related information can be found in
-“Endpoints” paragraph of “VAT” subscription API documentation. For example,
-“QUARTERLY_NONE_MET” simulates the scenario where the client has quarterly
-obligations, and none are fulfilled. To try different scenario in sandbox application, open Workspaces \> Electronic reporting \> Reporting configurations and select **MTD VAT web request headers format (UK)** format under **Electronic Messages framework model**. Derive new child format configuration under **MTD VAT web request headers format (UK)** format and open it in **Designer**. Find **File** \> **JSON Object** \> **Gov-Test-Scenario** property, expand it and select String under it. Define a scenario you want to test as the String value. 
+HMRC provides possibility to simulate different scenario of VAT obligations retrieving on sandbox web application. Related information can be found in “Endpoints” paragraph of “VAT” subscription API documentation. For example, “QUARTERLY_NONE_MET” simulates the scenario where the client has quarterly obligations, and none are fulfilled. To try different scenario in sandbox application, open Workspaces \> Electronic reporting \> Reporting configurations and select **MTD VAT web request headers format (UK)** format under **Electronic Messages framework model**. Derive new child format configuration under **MTD VAT web request headers format (UK)** format and open it in **Designer**. Find **File** \> **JSON Object** \> **Gov-Test-Scenario** property, expand it and select String under it. Define a scenario you want to test as the String value. 
+
 For example:
 ![String value example](media/emea-gbr-format-designer-string.png)
 
@@ -555,7 +409,6 @@ It is allowed in Dynamics 365 for Finance and Operations to run **Settle and pos
 **Important note!** MTD for VAT allows to do only one submission of VAT return foe each reporting period. As HMRC informs on the official web site, the current amend process will stay in place for VAT:
 
 -   To amend a VAT return where the net value of the errors is below £10,000, the company will do this in the next VAT return.
-
 -   To amend a VAT return where the net value of the errors is over £10,000, the company will need to complete the VAT 652 form available on the GOV.UK website.
 
 When **Settle and post sales tax** procedure is completed, start preparing a report for electronic submission. The first step of data preparation is collecting related to the period Sales tax payment transactions. Open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select either “**UK MTD VAT TEST**” processing for testing purposes or “**UK MTD VAT returns**” for real-life interoperation with production HMRC web application. Select the Electronic message on **Message** fast tab related to
@@ -577,141 +430,287 @@ For Electronic message in “**Ready to generate VAT return**” status a report
 Generate VAT return in MS Excel for preview
 ===========================================
 
-To generate a VAT return in “VAT 100” format in MS Excel, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select either “**UK MTD VAT TEST**” processing for testing purposes or “**UK MTD VAT returns**” for real-life interoperation with production HMRC web application, select Electronic message record related to the period for which you want to generate a file on **Messages** fast tab and click “**Generate report**” button on the Action pane of the **Messages** fast tab. “**Generate report**” button is available for Electronic messages in status:
+To generate a VAT return in “VAT 100” format in MS Excel, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select either **UK MTD VAT TEST** processing for testing purposes or **UK MTD VAT returns** for real-life interoperation with production HMRC web application, select Electronic message record related to the period for which you want to generate a file on **Messages** fast tab and click “**Generate report**” button on the Action pane of the **Messages** fast tab. **Generate report** button is available for Electronic messages in status:
 
--   **Ready to generate VAT return** – user change Electronic message status to
-    this value via **Update status** button.
+-   **Ready to generate VAT return** – user change Electronic message status to this value via **Update status** button.
 
--   **Error VAT return generation** – if during generation of report an error
-    occurs, the Electronic message status will be changed to “**Error VAT return
-    generation**”.
+-   **Error VAT return generation** – if during generation of report an error occurs, the Electronic message status will be changed to **Error VAT return generation**.
 
--   **Error VAT return submission** – if during submission of the report an
-    error occurs, the Electronic message status will be changed to “**Error VAT
-    return submission**”. Response with error description is attached to the
-    **Action log**.
+-   **Error VAT return submission** – if during submission of the report an error occurs, the Electronic message status will be changed to **Error VAT return submission**. Response with error description is attached to the **Action log**.
 
-Select “**Preview VAT return**” Action on Run processing dialog and click OK. As
-a result of **“Preview VAT return**” Action, the file will be generated in MS
-Excel format, attached to the Electronic message, no statuses are changed. To
-see the file, select the Electronic message and click on “**clip**” button in
-the top right corner of the page on the Action pane. An attachment page for the
-selected message will be opened. Select the last one (**VAT statement.xlsx**)
-and click on **Open** button on the Action pane. The file will be opened in MS
-Excel.
+Select **Preview VAT return** Action on Run processing dialog and click OK. As a result of **Preview VAT return** Action, the file will be generated in the Microsoft Excel format, attached to the Electronic message, no statuses are changed. To see the file, select the Electronic message and click on **clip** button in the top right corner of the page on the Action pane. An attachment page for the selected message will be opened. Select the last one (**VAT statement.xlsx**) and click on **Open** button on the Action pane. The file will be opened in Excel.
 
-You may regenerate VAT 100 report several times until you generate the report in
-JSON format and Electronic message status will be changed to “**Generated VAT
-return**”.
+You may regenerate VAT 100 report several times until you generate the report in JSON format and Electronic message status will be changed to **Generated VAT return**.
 
 Generate VAT return in JSON
 ===========================
 
-MTD for VAT accepts VAT returns in JSON format only. To generate a VAT return in
-JSON format, open **Tax** \> **Inquires and reports** \> **Electronic messages**
-\> **Electronic messages**, select either “**UK MTD VAT TEST**” processing for
-testing purposes or “**UK MTD VAT returns**” for real-life interoperation with
-production HMRC web application, select Electronic message record related to the
-period for which you want to generate a file on **Messages** fast tab and click
-“**Generate report**” button on the Action pane of the **Messages** fast tab.
-“**Generate report**” button is available for Electronic messages in status:
+MTD for VAT accepts VAT returns in JSON format only. To generate a VAT return in JSON format, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select either **UK MTD VAT TEST** processing for testing purposes or “**UK MTD VAT returns**” for real-life interoperation with production HMRC web application, select Electronic message record related to the period for which you want to generate a file on **Messages** fast tab and click **Generate report** button on the Action pane of the **Messages** fast tab. **Generate report** button is available for Electronic messages in status:
 
--   **Ready to generate VAT return** – user change Electronic message status to
-    this value via **Update status** button.
+-   **Ready to generate VAT return** – user change Electronic message status to this value via **Update status** button.
 
--   **Error VAT return generation** – if during generation of report an error
-    occurs, the Electronic message status will be changed to “**Error VAT return
-    generation**”.
+-   **Error VAT return generation** – if during generation of report an error occurs, the Electronic message status will be changed to **Error VAT return generation**.
 
--   **Error VAT return submission** – if during submission of the report an
-    error occurs, the Electronic message status will be changed to “**Error VAT
-    return submission**”. Response with error description is attached to the
-    **Action log**.
+-   **Error VAT return submission** – if during submission of the report an error occurs, the Electronic message status will be changed to “**Error VAT return submission**”. Response with error description is attached to the **Action log**.
 
-Select “**Generate file for submission**” Action on Run processing dialog and
-click OK. As a result of **“Generate file for submission**” Action, the file is
-generated in JSON format, attached to the Electronic message, Electronic message
-status is updated to “**Generated VAT return**”, Status of linked Electronic
-message items are updated to “**Reported**”. To see the file, select the
-Electronic message and click on “**clip**” button in the top right corner of the
-page on the Action pane. An attachment page for the selected message will be
-opened. Select the last one (**VAT_return.json**) and click on **Open** button
-on the Action pane.
+Select **Generate file for submission** Action on Run processing dialog and click **OK**. As a result of **Generate file for submission** Action, the file is generated in JSON format, attached to the Electronic message, Electronic message status is updated to **Generated VAT return**, Status of linked Electronic message items are updated to **Reported**. To see the file, select the
+Electronic message and click on **clip** button in the top right corner of the page on the Action pane. An attachment page for the selected message will be opened. Select the last one (**VAT_return.json**) and click on **Open** button on the Action pane.
 
-If for some reason you need to regenerate VAT return in JSON format before it is
-submitted to HMRC, update status of related Electronic message to initial using
-“**Update status**” button on the Action pane of Messages fast tab to “**New VAT
-return**” or “**Ready to generate VAT return**” depending on if you need to go
-back to the data collection step or file generation.
+If for some reason you need to regenerate VAT return in JSON format before it is submitted to HMRC, update status of related Electronic message to initial using **Update status** button on the Action pane of Messages fast tab to **New VAT return** or **Ready to generate VAT return** depending on if you need to go back to the data collection step or file generation.
 
 Submitting VAT returns to HMRC
 ==============================
 
-When VAT return in JSON format is generated and ready to be submitted to HMRC,
-you may initialize its submission to MTD for VAT web application. The last JSON
-file attached to Electronic message will be used for submission. To avoid any
-discrepancy, it is recommended to delete unnecessary JSON files from the
-attachments of Electronic message to be submit to HMRC. To check and clean up
-unnecessary attachments, select the Electronic message and click on “**clip**”
-button in the top right corner of the page on the Action pane. An attachments
-page for the selected message will be opened.
+When VAT return in JSON format is generated and ready to be submitted to HMRC, you may initialize its submission to MTD for VAT web application. The last JSON file attached to Electronic message will be used for submission. To avoid any discrepancy, it is recommended to delete unnecessary JSON files from the attachments of Electronic message to be submit to HMRC. To check and clean up unnecessary attachments, select the Electronic message and click on clip button in the top right corner of the page on the Action pane. An attachments page for the selected message will be opened.
 
-To start submission, open **Tax** \> **Inquires and reports** \> **Electronic
-messages** \> **Electronic messages**, select either “**UK MTD VAT TEST**”
-processing for testing purposes or “**UK MTD VAT returns**” for real-life
-interoperation with production HMRC web application, select Electronic message
-record related to the period for which you want to generate a file on
-**Messages** fast tab and click “**Send report**” button on the Action pane of
-the **Messages** fast tab. “**Send report**” button is available for Electronic
-messages in status:
+To start submission, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select either **UK MTD VAT TEST** processing for testing purposes or **UK MTD VAT returns** for real-life interoperation with production HMRC web application, select Electronic message record related to the period for which you want to generate a file on **Messages** fast tab and click **Send report** button on the Action pane of the **Messages** fast tab. **Send report** button is available for Electronic messages in status:
 
--   **Generated VAT return** – Electronic message status is updated to
-    “**Generated VAT return**” automatically when VAT return in JSON format is
-    successfully generated and attached to the Electronic message.
+-   **Generated VAT return** – Electronic message status is updated to **Generated VAT return** automatically when VAT return in JSON format is successfully generated and attached to the Electronic message.
 
--   **Error VAT return submission** – if during submission of the report an
-    error occurs, the Electronic message status will be changed to “**Error VAT
-    return submission**”. Response with error description is attached to the
-    **Action log**.
+-   **Error VAT return submission** – if during submission of the report an error occurs, the Electronic message status will be changed to **Error VAT return submission**. Response with error description is attached to the **Action log**.
 
-“**Submit VAT return**” Action is predefined on **Run processing** dialog, click
-**OK**. System will show a dialog with declaration text which is mandatory
-required by HMRC. It is not recommended to modify or delete this declaration
-text in setup of “**Submit VAT return**” Action, to keep compliancy with
-requirements of HMRC. By “**OK**” button on this dialog, user submits VAT
-information and confirms that the information is true and complete. A false
-declaration can result in prosecution. VAT return can be submitted to HMRC just
-once for each period. Make sure you want to submit VAT return before you accept
-the declaration. If you are not sure that VAT return is ready to be submitted,
-click NO. When you click YES, generated VAT return in JSON format related to the
-selected Electronic message will be submitted to HMRC. If VAT return is
-submitted successfully to HMRC status of Electronic message will be updated
-respectively to “**Sent VAT return**”, response from HMRC will be attached to
-the Electronic message.
+**Submit VAT return** Action is predefined on **Run processing** dialog, click **OK**. System will show a dialog with declaration text which is mandatory required by HMRC. It is not recommended to modify or delete this declaration text in setup of **Submit VAT return** Action, to keep compliancy with requirements of HMRC. By **OK** button on this dialog, user submits VAT information and confirms that the information is true and complete. A false declaration can result in prosecution. VAT return can be submitted to HMRC just once for each period. Make sure you want to submit VAT return before you accept the declaration. If you are not sure that VAT return is ready to be submitted, click NO. When you click YES, generated VAT return in JSON format related to the selected Electronic message will be submitted to HMRC. If VAT return is submitted successfully to HMRC status of Electronic message will be updated respectively to **Sent VAT return**, response from HMRC will be attached to the Electronic message.
 
-Next “**Import response for VAT return**” Action will be run automatically by
-the system. This Action reflects information from the response in “**Processing
-date**” Additional field of the Electronic message, update status of Electronic
-message to “**Completed VAT return**” and status of Electronic message items to
-“**Submitted**”. If for some reason “**Import response for VAT return**” Action
-was not run automatically, it can be manually initialized by “**Import
-response**” button on the Action pane of Messages fast tab. “**Import
-response**” button is available for Electronic messages in status:
+Next **Import response for VAT return** Action will be run automatically by the system. This Action reflects information from the response in **Processing date** Additional field of the Electronic message, update status of Electronic message to **Completed VAT return** and status of Electronic message items to **Submitted**. If for some reason **Import response for VAT return** Action was not run automatically, it can be manually initialized by **Import response** button on the Action pane of Messages fast tab. **Import response** button is available for Electronic messages in status:
 
--   **Sent VAT return** – Electronic message status is updated to “**Sent VAT
-    return**” automatically when VAT return in JSON format is successfully
-    submitted to the Electronic message.
+-   **Sent VAT return** – Electronic message status is updated to **Sent VAT return** automatically when VAT return in JSON format is successfully submitted to the Electronic message.
 
-All the actions with Electronic message are reflected on **Action log** fast
-tab.
+All the actions with Electronic message are reflected on **Action log** FastTab.
 
 Retrieving VAT liabilities and payments from HMRC
 =================================================
 
 HMRC provides possibility to retrieve information about VAT liabilities and VAT payments. For this purposes MTD for VAT web application support specific endpoints.
 
-“**UK MTD VAT returns**” processing includes actions which allow user to retrieve information VAT liabilities and VAT payments from HMRC.
+**UK MTD VAT returns** processing includes actions which allow user to retrieve information VAT liabilities and VAT payments from HMRC.
 
-To retrieve information about VAT payments, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select “**UK MTD VAT returns**” processing, click “**New**” button on the Action pane of the Messages fast tab. Select “**Create VAT payments request**” Action on **Run processing** dialog and click **OK** button. An Electronic message in “**New payments request**” status will be created. Specify **From date** and **To date** for the Electronic message to define the period for which you want to retrieve VAT payments information from HMRC. Click “**Send report**” button on the Action pane of Messages fast tab. “**Request VAT payments**” Action is predefined on Run processing dialog, click **OK** button. Request will be sent to HMRC and response with information about VAT payments will be attached as a file in JSON format to the Electronic message. To see the file, select the Electronic message and click on “**clip**” button in the top right corner of the page on the Action pane. An attachment page for the selected message will be opened. Select the last one and click on **Open** button on the Action pane.
+To retrieve information about VAT payments, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select **UK MTD VAT returns** processing, click **New** button on the Action pane of the Messages fast tab. Select **Create VAT payments request** Action on **Run processing** dialog and click **OK** button. An Electronic message in **New payments request** status will be created. Specify **From date** and **To date** for the Electronic message to define the period for which you want to retrieve VAT payments information from HMRC. Click **Send report** button on the Action pane of Messages fast tab. **Request VAT payments** Action is predefined on Run processing dialog, click **OK** button. Request will be sent to HMRC and response with information about VAT payments will be attached as a file in JSON format to the Electronic message. To see the file, select the Electronic message and click on **clip** button in the top right corner of the page on the Action pane. An attachment page for the selected message will be opened. Select the last one and click on **Open** button on the Action pane.
 
-To retrieve information about VAT liabilities, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select “**UK MTD VAT returns**” processing, click “**New**” button on the Action pane of the Messages fast tab. Select “**Create VAT liabilities request**” Action on **Run processing** dialog and click **OK** button. An Electronic message in “**New liabilities request**” status will be created. Specify **From date** and **To date** for the Electronic message to define the period for which you want to retrieve VAT payments information from HMRC. Click “**Send report**” button on the Action pane of Messages fast tab. “**Request VAT liabilities**” Action is predefined on Run processing dialog, click **OK** button. Request will be sent to HMRC and response with information about VAT liabilities will be attached as a file in JSON format to the Electronic message. To see the file, select the Electronic message and click on “**clip**” button in the top right corner of the page on the Action pane. An attachment page for the selected message will be opened. Select the last one and click on **Open** button on the Action pane.
+To retrieve information about VAT liabilities, open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select **UK MTD VAT returns** processing, click **New** button on the Action pane of the Messages fast tab. Select **Create VAT liabilities request** Action on **Run processing** dialog and click **OK** button. An Electronic message in **New liabilities request** status will be created. Specify **From date** and **To date** for the Electronic message to define the period for which you want to retrieve VAT payments information from HMRC. Click **Send report** button on the Action pane of Messages fast tab. **Request VAT liabilities** Action is predefined on Run processing dialog, click **OK** button. Request will be sent to HMRC and response with information about VAT liabilities will be attached as a file in JSON format to the Electronic message. To see the file, select the Electronic message and click on **clip** button in the top right corner of the page on the Action pane. An attachment page for the selected message will be opened. Select the last one and click on **Open** button on the Action pane.
+
+## Security privileges
+
+The following security privileges are available for Electronic messages:
+
+| **Security privilege**           | **Access level description**| **Associated with**       |
+|----------------------------------|----------------------------|----------------------------|
+| **Maintain electronic messages** | The **Maintain electronic messages** privilege gives full access to the electronic messaging functionality. It allows to set up electronic messaging and execute all the processing.| This privilege is included in the **Maintain sales tax transactions** security duty which in turn is included in the **Accountant** security role. |
+| **View electronic messages**     | The **View electronic messages** privilege gives read-only access to the electronic messaging functionality. It allows to view both the electronic messaging settings and messages/items but does not allow to set up or execute anything. | This privilege is included in the **Inquire into sales tax transaction status** security duty which in turn is included in the following security roles: Collections manager, Accounts receivable clerk, Accounts receivable manager, Tax accountant, Accountant, Accounting manager, Accounting supervisor, Sales manager, Accounts payable clerk |
+| **Operate electronic messages**  | The **Operate electronic messages privilege** gives access only to the "Electronic messages" and "Electronic message items" forms and allows to execute all the processing which are called from these forms.                              | This privilege is included in the **Operate electronic messages** security duty which in turn included in the only security role **Electronic messages operator**  |
+
+Appendix 1: Electronic messages setup for MTD for VAT
+=====================================================
+
+This appendix provides information about setup of Electronic messages functionality to support both **UK MTD VAT TEST** processing for testing purposes and “**UK MTD VAT returns**” for real-life interoperation with production HMRC web application. Use this part of the documentation to check whether the Electronic messages functionality setup is correct.
+
+This part includes the most important information about setup but not the full data. It is recommended to use package of data entities with predefined setup of the functionality which includes full data necessary for setup of the processing to interoperate with MTD for VAT.
+
+Electronic message processing
+-----------------------------
+
+The following processing are defined to support interoperation with MTD for VAT:
+
+| **Name**               | **Description**                                                                     |
+|------------------------|-------------------------------------------------------------------------------------|
+| **UK MTD VAT returns** | Process of preparation and submission of VAT returns to HMRC.                       |
+| **UK MTD VAT TEST**    | Testing process of preparation and submission of VAT returns to the HMRC’s sandbox. |
+
+Security roles should be additionally defined for both processing to restrict access to them (on record level).
+
+Web applications
+----------------
+
+The following Web applications are used by “**UK MTD VAT TEST**” and “**UK MTD VAT returns**” processing:
+
+| **Name**                                    | **Description**                                                            |
+|---------------------------------------------|----------------------------------------------------------------------------|
+| **Dynamics 365 for Finance and Operations** | HMRC Web application for Microsoft Dynamics 365 for Finance and Operations |
+| **Sandbox HMRC**                            | HMRC sandbox for Dynamics 365 for Finance and Operations                   |
+
+Parameters of the web applications:
+
+| **Parameter**                                              | **Value**                            |
+|------------------------------------------------------------|--------------------------------------|
+| **Base URL for “Dynamics 365 for Finance and Operations”** | https://api.service.hmrc.gov.uk      |
+| **Base URL for “Sandbox HMRC”**                            | https://test-api.service.hmrc.gov.uk |
+| **Authorization URL path**                                 | /oauth/authorize                     |
+| **Token URL path**                                         | /oauth/token                         |
+| **Redirect URL**                                           | urn:ietf:wg:oauth:2.0:oob            |
+| **Authorization format mapping**                           | MTD VAT authorization format (UK)    |
+| **Import token model mapping**                             | MTD VAT import token format (UK)     |
+
+Security roles should be additionally defined for both web application to restrict access to Access token.
+
+Web service settings
+--------------------
+
+The following Web services are used by **UK MTD VAT TEST** and **UK MTD VAT returns** processing:
+
+| **Name**            | **Description**                                        | **Web application**                     |
+|---------------------|--------------------------------------------------------|-----------------------------------------|
+| HMRC GET            | HMRC web-service for GET requests.                     | Dynamics 365 for Finance and Operations |
+| HMRC POST           | HMRC web-service for POST requests                     | Dynamics 365 for Finance and Operations |
+| HMRC sandbox GET    | Sandbox for testing HMRC web-service for GET requests  | Sandbox HMRC                            |
+| HMRC sandbox POST   | Sandbox for testing HMRC web-service for POST requests | Sandbox HMRC                            |
+| HMRC TEST USER POST | HMRC web-service to POST test user requests            | Sandbox HMRC                            |
+
+Common parameters for all these web services:
+
+| **Parameter**                     | **Value**                               |
+|-----------------------------------|-----------------------------------------|
+| **Request type - XML**            | NO                                      |
+| **Accept**                        | application/vnd.hmrc.1.0+json           |
+| **Content type**                  | application/json                        |
+| **Request header format mapping** | MTD VAT web request headers format (UK) |
+
+Additional fields
+-----------------
+
+The following Additional fields are used by **UK MTD VAT returns** and **UK MTD VAT TEST** processing:
+
+| **Status**          | **Description** |
+|---------------------|------------------|
+| **Due date**        | The due date for this obligation period. The field cannot be modified by user. |
+| **HMRC status**     | Obligation status in HMRC: O = Open, F = Fulfilled. The field cannot be modified by user. |
+| **periodKey**       | The ID code for the period that this obligation belongs to. The field cannot be modified by user. This field is hidden and cannot be seen by user. |
+| **Processing date** | The time that the message was processed in the HMRC. The field cannot be modified by user. |
+| **Received date**   | The date when the obligation is received by HMRC. The field cannot be modified by user. |
+
+Electronic message item types
+-----------------------------
+
+Electronic messages setup for both “**UK MTD VAT TEST**” processing for testing purposes and **UK MTD VAT returns** for real-life interoperation with production HMRC web application use one Electronic message item type: **VAT return**.
+
+Electronic message item statuses
+--------------------------------
+
+The following Electronic message item statuses are used by **UK MTD VAT TEST** and **UK MTD VAT returns** processing:
+
+| **Status**         | **Description**                                                                                       |
+|--------------------|-------------------------------------------------------------------------------------------------------|
+| **Populated**      | Populated record from Sales tax payments. Record in this status can be deleted.                       |
+| **Excluded**       | The record is excluded from report generation. Record in this status can be deleted.                  |
+| **To be reported** | This line will be included to the VAT return for submission. Record in this status cannot be deleted. |
+| **Reported**       | The record is included into a VAT declaration file. Record in this status cannot be deleted.          |
+| **Sent**           | The record is sent in VAT declaration to HMRC. Record in this status cannot be deleted.               |
+| **Submitted**      | The record is submitted to HMRC. Record in this status cannot be deleted.                             |
+
+Electronic message statuses
+---------------------------
+
+The following Electronic message statuses are used by **UK MTD VAT TEST** and **UK MTD VAT returns** processing:
+
+| **Status**                             | **Description**   |
+|----------------------------------------|--------------------|
+| **New obligation request**             | New electronic message to retrieve VAT obligations. Record in this status can be deleted. |
+| **Retrieved VAT obligation**           | VAT obligations request is sent. Record in this status can be deleted. |
+| **Error VAT obligations retrieving**   | A technical error occurred on VAT obligations retrieving. Record in this status can be deleted.        |
+| **Completed VAT obligations request**  | VAT obligations are successfully retrieved. Record in this status can be deleted. |
+| **New VAT return**                     | This Sales tax payment is included for further submission. Record in this status can be deleted.       |
+| **Ready to generate VAT return**       | The message is ready to generate VAT return. Record in this status can be deleted.  |
+| **Generated VAT return**               | VAT return JSON file is generated and attached to the mess. Record in this status *cannot* be deleted. |
+| **Error VAT return generation**        | A technical error occurred on generation of GER report. Record in this status can be deleted.|
+| **Sent VAT return**                    | VAT return is sent to HMRC in JSON format. Record in this status *cannot* be deleted.  |
+| **Error VAT return submission**        | Error occurred while VAT return submission. Record in this status can be deleted.  |
+| **Completed VAT return**               | Completed VAT return. Record in this status *cannot* be deleted.  |
+| **New liabilities request**            | New electronic message to request liabilities. Record in this status can be deleted. |
+| **Error VAT liabilities request**      | A technical error occurred on VAT liabilities request. Record in this status can be deleted.|
+| **Completed VAT liabilities request**  | VAT liabilities are successfully retrieved. Record in this status can be deleted. |
+| **New payments request**               | New electronic message to request VAT payments information. Record in this status can be deleted.      |
+| **Error VAT payments request**         | A technical error occurred on VAT payments request. Record in this status can be deleted. |
+| **Completed VAT payments request**     | Completed VAT payments request. Record in this status can be deleted.  |
+| **New test user request**              | New electronic message to request test user. Record in this status can be deleted. |
+| **Generated test user request**        | Test user JSON file is generated and attached to the message. Record in this status can be deleted.    |
+| **Error test user request generation** | A technical error occurred on generation of test user JSON. Record in this status can be deleted.      |
+| **Completed test user request**        | Test user request is sent to HMRC in JSON format. Record in this status can be deleted.  |
+| **Error test user request**            | Error occurred while test user request submission. Record in this status can be deleted.  |
+
+Action populate records
+-----------------------
+
+**Populate VAT return records** Action is used by **UK MTD VAT TEST** and **UK MTD VAT returns** processing. Data source setup for the Action:
+
+| **Property**               | **Value**                                                   |
+|----------------------------|-------------------------------------------------------------|
+| **Name**                   | VAT payment                                                 |
+| **Message item type**      | VAT return                                                  |
+| **Account type**           | All                                                         |
+| **Master table name**      | TaxReportVoucher                                            |
+| **Document number field**  | Voucher                                                     |
+| **Document date field**    | TransDate                                                   |
+| **Document account field** | TaxPeriod                                                   |
+| **User query**             | Yes. Define the Settlement period by **Edit** query button. |
+
+Electronic message actions
+--------------------------
+
+The following Electronic message actions are used by **UK MTD VAT TEST** and **UK MTD VAT returns** processing:
+
+| **Name**                                  | **Description**   | **Action type**                     |
+|-------------------------------------------|------------------|-------------------------------------|
+| **Initialize production web application** | Initialize production UK VAT MTD web application. This action works independently from Electron message. | Message execution level             |
+| **Create VAT obligation request**         | Create a new message to retrieve VAT obligations. From statuses: No To statuses: New obligation request | Create message                      |
+| **Retrieve VAT obligations**              | VAT obligations retrieval request preparation. From statuses: Error VAT obligations retrieving; New obligation request To statuses: Error VAT obligations retrieving; Retrieved VAT obligation  | Web service   |
+| **Test retrieve VAT obligations**         | Retrieving of VAT obligations from HMRC sandbox. From statuses: Error VAT obligations retrieving; New obligation request To statuses: Error VAT obligations retrieving; Retrieved VAT obligation  | Web service   |
+| **Import VAT obligations**                | Import response from HMRC with VAT obligations. From statuses: Retrieved VAT obligation To statuses: Completed VAT obligations request                                                                                               | Electronic reporting import         |
+| **Populate VAT return records**           | Populate sales tax payment records. From statuses: New VAT return To statuses: No   | Populate records   |
+| **Exclude from reporting**                | Mark Sales tax payment record as Excluded from reporting. This action doesn’t change Electronic messages status.   | User processing                     |
+| **Update to initial status**              | Update status of Sales tax payment to initial. This action doesn’t change Electronic messages status. | User processing                     |
+| **Ready to generate VAT return**          | Update message status to "Ready to generate". From statuses: New VAT return To statuses: Ready to generate VAT return  | Message level user processing       |
+| **Update to initial status VAT return**   | Update status of the message to the initial. From statuses: Generated VAT return; Ready to generate VAT return To statuses: New VAT return; Ready to generate VAT return | Message level user processing       |
+| **Preview VAT return**                    | Generate preview file in MS Excel format. From statuses: Error VAT return generation; Error VAT return submission; Ready to generate VAT return To statuses: Error VAT return generation; Ready to generate VAT return  | Electronic reporting export message |
+| **Generate file for submission**          | Generate VAT return file in JSON format for submission to HMRC. From statuses: Error VAT return generation; Error VAT return submission; Ready to generate VAT return To statuses: Error VAT return generation; Generated VAT return | Electronic reporting export message |
+| **Submit VAT return**                     | The action submits generated VAT return in JSON format to HMRC. From statuses: Error VAT return submission; Generated VAT return To statuses: Error VAT return submission; Sent VAT return  | Web service   |
+| **Test submit VAT return**                | Testing submission of VAT return to HMRC sandbox. From statuses: Error VAT return submission; Generated VAT return To statuses: Error VAT return submission; Sent VAT return  | Web service                         |
+| **Import response for VAT return**        | Importing of a response from HMRC about submitted VAT return. From statuses: Sent VAT return To statuses: Completed VAT return  | Electronic reporting import         |
+| **Create VAT liabilities request**        | Create a new message to request VAT liabilities. From statuses: No To statuses: New liabilities request  | Create message   |
+| **Request VAT liabilities**               | Request VAT liabilities. From statuses: Error VAT liabilities request; New liabilities request To statuses: Completed VAT liabilities request; Error VAT liabilities request | Web service                         |
+| **Create VAT payments request**           | Create a new message to request VAT payments. From statuses: No To statuses: New payments request   | Create message                      |
+| **Request VAT payments**                  | Request VAT payments. From statuses: Error VAT payments request; New payments request To statuses: Completed VAT payments request; Error VAT payments request | Web service                         |
+| **Create test user request**              | Create a message to request test user. From statuses: No To statuses: New test user request | Create message    |
+| **Generate test user request**            | Generate JSON file to request test user. From statuses: Error test user request; New test user request To statuses: Error test user request; Generated test user request   | Electronic reporting export message |
+| **Send test user request**                | Send JSON request for test user. From statuses: Error test user request; Generated test user request To statuses: Completed test user request; Error test user request | Web service                         |
+
+Electronic processing actions
+-----------------------------
+
+Actions, included to the **UK MTD VAT returns** processing:
+
+| **Name**                                | **Run separately** | **Inseparable sequence** |
+|-----------------------------------------|--------------------|--------------------------|
+| **Create VAT obligation request**       | Yes                |                          |
+| **Retrieve VAT obligations**            | Yes                | Obligation               |
+| **Import VAT obligations**              | No                 | Obligation               |
+| **Populate VAT return records**         | Yes                |                          |
+| **Exclude from reporting**              | Yes                |                          |
+| **Update to initial status**            | Yes                |                          |
+| **Ready to generate VAT return**        | Yes                |                          |
+| **Update to initial status VAT return** | Yes                |                          |
+| **Preview VAT return**                  | Yes                |                          |
+| **Generate file for submission**        | Yes                |                          |
+| **Submit VAT return**                   | Yes                | Submission               |
+| **Import response for VAT return**      | No                 | Submission               |
+| **Create VAT liabilities request**      | Yes                |                          |
+| **Request VAT liabilities**             | Yes                |                          |
+| **Create VAT payments request**         | Yes                |                          |
+| **Request VAT payments**                | Yes                |                          |
+
+Actions, included to the **UK MTD VAT TEST** processing:
+
+| **Name**                                | **Run separately** | **Inseparable sequence** |
+|-----------------------------------------|--------------------|--------------------------|
+| **Create test user request**            | Yes                |                          |
+| **Generate test user request**          | Yes                | TestUser                 |
+| **Send test user request**              | No                 | TestUser                 |
+| **Create VAT obligation request**       | Yes                |                          |
+| **Test retrieve VAT obligations**       | Yes                | Obligation               |
+| **Import VAT obligations**              | No                 | Obligation               |
+| **Populate VAT return records**         | Yes                |                          |
+| **Exclude from reporting**              | Yes                |                          |
+| **Update to initial status**            | Yes                |                          |
+| **Ready to generate VAT return**        | Yes                |                          |
+| **Update to initial status VAT return** | Yes                |                          |
+| **Preview VAT return**                  | Yes                |                          |
+| **Generate file for submission**        | Yes                |                          |
+| **Test submit VAT return**              | Yes                | Submission               |
+| **Import response for VAT return**      | No                 | Submission               |
