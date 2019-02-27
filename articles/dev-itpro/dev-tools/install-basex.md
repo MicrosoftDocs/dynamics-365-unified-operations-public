@@ -5,7 +5,7 @@ title: Install BaseX for AppChecker
 description: This topic explains how to install and set up BaseX in a developer environment.
 author: AndreasHassing
 manager: AnnBe
-ms.date: 02/20/2019
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,17 +44,20 @@ If you are working in a developer environment without administrator privileges, 
 
 BaseX is a Java-based XML document database. It requires a Java Runtime Environment (JRE) of version 8 or later. Before you install BaseX, verify that a JRE is installed.
 
-# [Admin: install Java](#tab/admin)
+### Admin prerequisites
 
 Download and install Java JRE from the [Java download page](https://aka.ms/getjava).
 
-# [Low privilege: setup Java](#tab/low-privilege)
+### Non-admin prerequisites
 
 Download Java **Server JRE** from the [Java download page](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-Java Server JRE is downloaded as a `.tar.gz` compressed archive that you will need to extract. You can use [7zip](https://www.7-zip.org/download.html) which can be downloaded without installation [at SourceForge](https://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/7za920.zip/download).
+Java Server JRE is downloaded as a `.tar.gz` compressed archive that you will need to extract. You can use [7zip](https://www.7-zip.org/download.html) which can be downloaded without installation at [SourceForge](https://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/7za920.zip/download).
 
-To extract Java Server JRE binaries from the archive, run PowerShell commands like (change depending on which version of the Server JRE archive you downloaded):
+To extract Java Server JRE binaries from the archive, run PowerShell commands similar to the following:
+
+> [!NOTE]
+> Change the command based on the version of the Server JRE archive you downloaded.
 
 ```powershell
 .\7za.exe x .\server-jre-8u202-windows-x64.tar.gz # decompresses to current working directory
@@ -79,29 +82,23 @@ After extracting Java, modify and run the following PowerShell script to add the
 
 To download BaseX, go to the [BaseX website](http://basex.org/download/), and download the latest version.
 
-# [Admin: download BaseX](#tab/admin)
+### Admin: Download BaseX
 
 Download the Microsoft Windows installer from the download page.
 
-# [Low privilege: download BaseX](#tab/low-privilege)
+### Non-admin: Download BaseX 
 
-Download the zip package from the download page.
-
----
-
-Currently, the latest version is 9.1.2.
+Download the zip package from the download page.  Currently, the latest version is 9.1.2.
 
 ## Install BaseX
 
-# [Admin: install BaseX](#tab/admin)
+### Admin: Install BaseX
 
 Run the executable file on the developer machine where you will compile your module. For each step, accept the default settings.
 
-# [Low privilege: setup BaseX](#tab/low-privilege)
+### Non-admin: Set up BaseX
 
 Extract the previously downloaded BaseX zip package.
-
----
 
 > [!TIP]
 > If the installation drive doesn't have enough space for your model, you can change the folder for BaseX data later. For more information, see [BaseX configuration](http://docs.basex.org/wiki/Configuration#Database_Directory).
