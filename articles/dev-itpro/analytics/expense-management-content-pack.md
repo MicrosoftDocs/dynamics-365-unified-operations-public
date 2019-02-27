@@ -4,13 +4,29 @@
 title: Expense management Power BI content
 description: This topic describes what is included in the Expense management Power BI content pack.
 author: RyanSand
-manager: 
-ms.date: 01/31/2019
+manager: AnnBe
+ms.date: 03/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User, IT Pro
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom: 270314
+ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: shylaw
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 
 ---
 
@@ -22,15 +38,15 @@ This topic describes what is included in the Expense Management Power BI content
 
 ## Overview
 Two Power BI content packs are available for use with Expense Management in version 8.1 and newer. 
-•	There is a personal dashboard designed for employees submitting expense reports. 
+- There is a personal dashboard designed for employees submitting expense reports. 
 
 The dashboard is tailored to providing key information to individuals on unsubmitted and submitted amounts as well as a history and insights into their expense transaction history. The personal dashboard is a single page containing the most important information for the user. 
 
-•	There is an admin dashboard designed for accounts payable clerks and managers. The dashboard is tailored towards tracking and reporting on overall employee expenses. It provides key expense metrics, such as unsubmitted expenses, mileage, and average expense report amount. It uses transactional data and provides aggregate views of expense management across all companies. It also provides a breakdown per employee and can have financial dimension data added.
+- There is an admin dashboard designed for accounts payable clerks and managers. The dashboard is tailored towards tracking and reporting on overall employee expenses. It provides key expense metrics, such as unsubmitted expenses, mileage, and average expense report amount. It uses transactional data and provides aggregate views of expense management across all companies. It also provides a breakdown per employee and can have financial dimension data added.
 The Admin expense analytics content is three pages containing:
-  •	An overview page with key metrics on expense amounts and insights into draft, in process, and completed expense reports. 
-  • An employee statistics page to review an individual employee in detail by time, cost type, and statistics group. 
-  •	An employee comparison page to compare multiple employees against others over time. 
+  - An overview page with key metrics on expense amounts and insights into draft, in process, and completed expense reports. 
+  - An employee statistics page to review an individual employee in detail by time, cost type, and statistics group. 
+  - An employee comparison page to compare multiple employees against others over time. 
 
 All the amounts are shown in the company currency. Data for all companies are shown, but you can add a company filter. 
 
