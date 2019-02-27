@@ -64,20 +64,22 @@ To import txt file (<file name>_invoicing result.TXT) a user should set Import B
 To import txt file from Aisino or xml file from BaiWang (exported files from BaiWang software) a user should set **Import BaiWang txt file** option to **No** and select Aisino  or BaiWang – xml file mapping in the **Model mapping** field.
 
 For integration with Aisino software it is necessary to import the following configuration from LCS:
-•	GoldenTax model
-•	GST Export model mapping (CN)
-•	GTS Export format (Aisino) (CN)
-•	GTS Import model mapping (CN)
-•	GTS Import format (Aisino) (CN)
+
+- GoldenTax model
+-	GST Export model mapping (CN)
+-	GTS Export format (Aisino) (CN)
+-	GTS Import model mapping (CN)
+-	GTS Import format (Aisino) (CN)
+
 For integration with BaiWang software it is necessary to import the following configuration from LCS:
-•	GoldenTax model
-•	GST Export model mapping (CN)
-•	GTS Import model mapping (CN)
-•	GTS Export format (BaiWang) (CN)
-•	GTS Import format (BaiWang)-txt) (CN)
-•	GTS Import format (BaiWang-xml) (CN)
-> [!NOTE] 
-> <P> A user may import txt or xml files, received as response after import to BaiWang software or exported from BaiWang software.</P>
+-	GoldenTax model
+-	GST Export model mapping (CN)
+-	GTS Import model mapping (CN)
+-	GTS Export format (BaiWang) (CN)
+-	GTS Import format (BaiWang)-txt) (CN)
+-	GTS Import format (BaiWang-xml) (CN)
+   > [!NOTE] 
+   > <P> A user may import txt or xml files, received as response after import to BaiWang software or exported from BaiWang software.</P>
 
 GER configurations downloading instructions for are here:
 [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs) 
