@@ -315,7 +315,7 @@ It is recommended to type **read:vat write:vat** in this field as the same appli
 Obtain Authorization code for Production
 ----------------------------------------
 
-When a company is ready to interoperate in real-life with MTD for VAT it must create an **HMRC online account** and link it to the “Microsoft Dynamics 365 for Finance and Operations” application inside this account. As a result, the company will be granted with credentials tied to the VAT registration number of this company:
+When a company is ready to interoperate in real-life with MTD for VAT it must create an **HMRC online account** and link it to the Finance and Operations application inside this account. As a result, the company will be granted with credentials tied to the VAT registration number of this company:
 
 -   **Used ID** – a name to access HMRC during Authorization code requesting
 -   **Password** – a password to access HMRC during Authorization code requesting.
