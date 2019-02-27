@@ -57,15 +57,14 @@ Software that is compatible with MTD must support the following requirements:
 - Receive, via the MTD for VAT application programming interface (API) platform, information from HMRC about a relevant entity’s compliance with obligations under the regulations. 
 As HMRC mentions in Making Tax Digital for Business VAT Guide for Vendors, users must sign up for the MTD service for VAT, even if they have already signed up to use the MTD service for income tax. For more information about how to get ready for MTD, see Making Tax Digital: how VAT businesses and other VAT entities can get ready.
 
-To support the MTD for VAT requirements in Dynamics 365 for Finance and Operations the solution is based on Electronic messages functionality which provides a flexible approach of setting up and supporting of reporting processes. The setup package for the UK MTD for VAT covers the mandatory scope of interoperation to let companies in the UK fulfill their VAT obligations:
-- **Retrieve VAT obligations**: Users can initiate a request to HMRC to obtain their company’s VAT obligations for a specific period. HMRC will post, as a response to each user’s request, information about the company’s VAT obligations that is defined in the company’s profile on the HMRC side. VAT obligations contain information about the VAT period, the due date for submission, and the status of the obligation. This information will be reflected in Dynamics 365 for Finance and Operations. 
-- **Submit VAT return for period**: The system will collect information about VAT returns. The information collected is based on the Sales tax payment transactions that have been posted in the system via the sales tax settlement process, with respect to the VAT obligations that are registered in the system. After this information is collected a VAT return report in JavaScript Object Notation (JSON) file generated, user will submit the report to HMRC. The HMRC response to the submission will be reflected in Dynamics 365 for Finance and Operations. 
-The setup package for the UK MTD for VAT also covers the following endpoints of optionally required scope of interoperation:
-- **Retrieve VAT liabilities**: Users can initiate a request to HMRC to obtain their company’s VAT liabilities for a specific period. HMRC will post, as a response to each user’s request, information about the company’s VAT liabilities that is defined in the company’s profile on the HMRC side. This information will be stored in Dynamics 365 for Finance and Operations as an attachment in JSON format to the related electronic message.
-- **Retrieve VAT payments**: Users can initiate a request to HMRC to obtain their company’s VAT payments for a specific period. HMRC will post, as a response to each user’s request, information about the company’s VAT payments that is defined in the company’s profile on the HMRC side. This information will be stored in Dynamics 365 for Finance and Operations as an attachment in JSON format to the related electronic message.
+To support the MTD for VAT requirements in Dynamics 365 for Finance and Operations the solution is based on Electronic messages functionality which provides a flexible approach of setting up and supporting of reporting processes. The setup package for the UK MTD for VAT covers the following scope of interoperation to let companies in the UK fulfill their VAT obligations:
+- **Retrieve VAT obligations** (mandatory required): Users can initiate a request to HMRC to obtain their company’s VAT obligations for a specific period. HMRC will post, as a response to each user’s request, information about the company’s VAT obligations that is defined in the company’s profile on the HMRC side. VAT obligations contain information about the VAT period, the due date for submission, and the status of the obligation. This information will be reflected in Dynamics 365 for Finance and Operations. 
+- **Submit VAT return for period** (mandatory required): The system will collect information about VAT returns. The information collected is based on the Sales tax payment transactions that have been posted in the system via the sales tax settlement process, with respect to the VAT obligations that are registered in the system. After this information is collected a VAT return report in JavaScript Object Notation (JSON) file generated, user will submit the report to HMRC. The HMRC response to the submission will be reflected in Dynamics 365 for Finance and Operations. 
+- **Retrieve VAT liabilities** (optionaly required): Users can initiate a request to HMRC to obtain their company’s VAT liabilities for a specific period. HMRC will post, as a response to each user’s request, information about the company’s VAT liabilities that is defined in the company’s profile on the HMRC side. This information will be stored in Dynamics 365 for Finance and Operations as an attachment in JSON format to the related electronic message.
+- **Retrieve VAT payments** (optionaly required): Users can initiate a request to HMRC to obtain their company’s VAT payments for a specific period. HMRC will post, as a response to each user’s request, information about the company’s VAT payments that is defined in the company’s profile on the HMRC side. This information will be stored in Dynamics 365 for Finance and Operations as an attachment in JSON format to the related electronic message.
 The setup package for the UK MTD for VAT will not cover the optionally required “View VAT Return” endpoint. Electronic messages functionality allows to set up and support this endpoint.
 
-When a company is signed up for the MTD service for VAT in HMRC, to get Finance and Operations ready to interoperate with HMRC web service for retrieving VAT obligations and submission of VAT returns the following steps should be done in theFinance and Operations:
+When a company is signed up for the MTD service for VAT in HMRC, to get Finance and Operations ready to interoperate with HMRC web service for retrieving VAT obligations and submission of VAT returns the following steps should be done in the Finance and Operations:
 
 > [!div class="checklist"]
 > * Import and setup GER configurations
@@ -93,7 +92,7 @@ To prepare Dynamics 365 for Finance and Operations to interoperate with MTD for 
 | 5      | MTD VAT interoperation (UK)                 | Format (exporting)                   | Format serves to create URL path to HMRC endpoints and to request test user. |
 | 6      | MTD VAT importing model mapping (UK)        | Model mapping (importing)            | VAT obligations importing model mapping                                      |
 | 7      | MTD VAT obligations importing JSON (UK)     | Format (importing)                   | Retrieved from HMRC VAT obligations importing format                         |
-| 8      | **Electronic Messages framework model**     | **Model**                            | EM framework model                                                           |
+| 8      | **Electronic Messages framework model**     | **Model**                            | Electronic messages (EM) framework model                                                           |
 | 9      | MTD VAT model mapping (UK)                  | Model mapping (exporting, importing) | Model mapping to support interoperation for the UK MTD for VAT               |
 | 10     | MTD VAT return response importing JSON (UK) | Format (importing)                   | VAT declaration submission response from HMRC import to Electronic messaging |
 | 11     | MTD VAT web request headers format (UK)     | Format (exporting)                   | Request header parameters creation for https request                         |
@@ -194,7 +193,7 @@ format must be defined in **General ledger parameters**. To do so, open **Tax**
 select “VAT Declaration Excel (UK)” in the **VAT statement format mapping**
 field in **Tax options** group of fields.
 
-When the **VAT statement format mapping** field is empty, the old SSRS “VAT 10”
+When the **VAT statement format mapping** field is empty, the old SSRS “VAT 100”
 report will be generated.
 
 Define Sales tax settlement period
@@ -204,9 +203,9 @@ Electronic messages processing defined for MTD for VAT provided in the “UK
 MTD-VAT setup.zip” is company agnostic and may be implemented to any legal
 entity in Dynamics 365 for Finance and Operations. Both “UK MTD VAT returns”
 (for production) and “UK MTD VAT TEST” (for sandbox) Electronic messages
-processing allow to collect sales tax payment transactions in the Legal entity
+processing allows to collect sales tax payment transactions in the Legal entity
 to generate VAT return in JSON (or MS Excel format) either for production or
-testing purposes. Collection of sales tax payment transitions is implemented via
+testing purposes. Collection of sales tax payment transactions is implemented via
 “**Populate VAT return records**” action of “Populate record” type. To collect
 sales tax payment transactions correctly, **Sales tax settlement period** must
 be defined for “**Populate VAT return records**” action. To do so, open **Tax**
