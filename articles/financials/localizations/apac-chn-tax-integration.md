@@ -45,22 +45,23 @@ The existing solution has been extended to integrate with both providers - Aisin
 
 The following updates were implemented in Dynamics 365 for Finance and Operations:
 
-1.	New interface with BaiWang provider software (export of sale invoices in xml file and import file with response from BaiWang software in txt format and also in xml format).
+1.	New interface with BaiWang provider software (export of sale invoices in xml file and import file with response from BaiWang software in txt format and also in xml format, which may be exported from BaiWang software).
 2.	Updating structure of sale invoice export and import of txt file for interface with Aisino provider software.
 
-One of the main new elements in the export invoice file, is commodity code (classification of goods and services), which is mandatory in export file. For output of commodity codes in the node of invoice lines in the export file the system uses category hierarchy standard functionality settings. In order to the system may output this code in the export file, the following settings should be completed:
+One of the main new elements in the exported invoice file is commodity code (classification of goods and services), which is mandatory in exported file. For output of commodity codes in the node of invoice lines in the exported file the system uses category hierarchy standard functionality settings. In order to the system may output this code in the exported file, the following settings should be completed:
 
-1.	First of all it is necessary to set up one category hierarchy for classification of goods and services and relate product items (good or service) with category note (see the article [Create a hierarchy of product classification](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Fsupply-chain%2Fpim%2Ftasks%2Fcreate-hierarchy-product-classification&data=02%7C01%7Cv-oloski%40microsoft.com%7C57775aeaf8344fe8c46b08d6809a22d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636837796906771919&sdata=IuDk5ms0xSQvCCESzlz3gAMOjClEsPyuGL29M5iNows%3D&reserved=0)). Using this functionality, it is possible to set up any hierarchy, which necessary in a company.
+1.	First of all it is necessary to set up one category hierarchy for classification of goods and services and relate product items (good or service) with category node (see the article [Create a hierarchy of product classification](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Fsupply-chain%2Fpim%2Ftasks%2Fcreate-hierarchy-product-classification&data=02%7C01%7Cv-oloski%40microsoft.com%7C57775aeaf8344fe8c46b08d6809a22d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636837796906771919&sdata=IuDk5ms0xSQvCCESzlz3gAMOjClEsPyuGL29M5iNows%3D&reserved=0)). 
+Using this functionality, it is possible to set up any hierarchy, which necessary in a company.
 
-2.	Then set this new category hierarchy in Tax integration profile (new field in this page – Commodity code hierarchy)
+2.	Then set this new category hierarchy in **Account receivable** \> **Tax integration**\> **Tax integration profile** page, the new field in this page – **Commodity code hierarchy**.
 
-3.	For invoice lines which are not related with product items (Free text invoice lines and project invoice lines, created on the base of hour, expense and fee journals) a user may set up Commodity code, which will be used by default (new field in the Tax integration profile).
+3.	For invoice lines which are not related with product items (Free text invoice lines and project invoice lines, created on the base of hour, expense and fee journals) a user may set up **Commodity code** in **Account receivable** \> **Tax integration**\> **Tax integration profile** page, which will be used by default.
 
-Dialog page for import of files from the software provider is updated (VAT invoice integration page list, Import button). A user should select model mapping for import file from one or another provider (Aisino or BaiWang) depending on which provider software the company integrates exported invoices with. This selection should be made only one time (the system saves selected value). 
+Dialog page for import of files from the provider's software  is updated (**Account receivable** \> **Periodic tasks** \> **VAT invoice integration** page list, **Import** button). A user should select model mapping for import file from one or another provider (Aisino or BaiWang) depending on which provider software the company integrates exported invoices with. This selection should be made only one time (the system saves selected value). 
 
-To import txt file (<file name>_invoicing result.TXT) a user should set Import BaiWang txt file option to Yes and select BaiWang – txt file mapping in the Model mapping field.
+To import txt file (<file name>_invoicing result.TXT) a user should set Import BaiWang txt file option to **Yes** and select **BaiWang – txt file mapping** in the **Model mapping** field.
 
-To import txt file from Aisino or xml file from BaiWang (exported files from BaiWang software) a user should set Import BaiWang txt file option to No and select Aisino  or BaiWang – xml file mapping in the Model mapping field.
+To import txt file from Aisino or xml file from BaiWang (exported files from BaiWang software) a user should set **Import BaiWang txt file** option to **No** and select Aisino  or BaiWang – xml file mapping in the **Model mapping** field.
 
 For integration with Aisino software it is necessary to import the following configuration from LCS:
 •	GoldenTax model
@@ -76,7 +77,7 @@ For integration with BaiWang software it is necessary to import the following co
 •	GTS Import format (BaiWang)-txt) (CN)
 •	GTS Import format (BaiWang-xml) (CN)
 > [!NOTE] 
-> <P> A user may import txt or xml files, received as response after import to BaiWang software or exported from BaiWang software.</P
+> <P> A user may import txt or xml files, received as response after import to BaiWang software or exported from BaiWang software.</P>
 
 GER configurations downloading instructions for are here:
 [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs) 
