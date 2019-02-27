@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
+   > [!NOTE] 
+   > <P> Import the Chiness Golden Tax data entity is neccessary only for Dynamics 365 for Finance and Operations versions, which were released before version 10.0 </P>
+   
 This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 for Finance and Operations.
 
 To import the Chinese Golden Tax data entity, complete the following steps.
