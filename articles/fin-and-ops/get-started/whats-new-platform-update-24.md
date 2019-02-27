@@ -2,7 +2,7 @@
 # required metadata
 
 title: March 2019 preview features in Finance and Operations platform update 24
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 24 (March 2019). 
+description: This topic describes features that are in preview in Dynamics 365 for Finance and Operation platform update 24 (March 2019). 
 author: tonyafehr
 manager: AnnBe
 ms.date: 02/12/2019
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform 24
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 24. This version has a build number of 7.0.5179.
+This topic describes features that in preview in Dynamics 365 for Finance and Operations platform update 24. This version has a build number of 7.0.5179.
 
 ### Dynamics 365 April '19 release notes
 
