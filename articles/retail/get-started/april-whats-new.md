@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are in preview in Microsoft Dynamics 365 for Retail. This version will be released in April 2019.
+This topic describes features that are in preview in Microsoft Dynamics 365 for Retail. 
 
 To learn about the preview features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Dynamics 365 for Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10).
 
