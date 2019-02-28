@@ -62,7 +62,7 @@ To access the list of APIs that are being deprecated, see [Deprecation of method
 | **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
 | **Status**                         | Deprecated - Target timeframe for removal of the APIs is <month/year> or <quarter/year> or <release/version>. |
 
-### Field groups containing invalid field references
+#### Field groups containing invalid field references
 
 |   |  |
 |------------|--------------------|
