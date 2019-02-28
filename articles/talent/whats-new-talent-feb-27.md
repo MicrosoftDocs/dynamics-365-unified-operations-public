@@ -86,30 +86,23 @@ See additional details about mapping errors [here](https://docs.microsoft.com/en
 
 Below are the steps to take to update your existing template. To use the new template, create a new project and select the new Talent integration template.
 
-*Job Positions to Positions*
-Remove this mapping.
-*Job Positions to Positions Parent Job Assignment*
-Remove this mapping.
-*Job Positions to Base Position*
-Add new mapping for CDS entity Job Positions to Finance and Operations entity Base Position.
+- *Job Positions to Positions*: Remove this mapping.
+- *Job Positions to Positions Parent Job Assignment*: Remove this mapping.
+- *Job Positions to Base Position*: Add new mapping for CDS entity Job Positions to Finance and Operations entity Base Position.
 Move this to position 7 in the sequence.
 
 [![CDS Mapping](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-*Job Positions to Position Details*
-Add a new mapping for CDS entity Job Positions to Finance and Operations entity Position Details.
+- *Job Positions to Position Details*: Add a new mapping for CDS entity Job Positions to Finance and Operations entity Position Details.
 Move this to position 8 in the sequence.
 
 [![CDS Mapping](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-*Job Positions to Position Durations*
-Add a new mapping for CDS entity Job Positions to Finance and Operations entity Position Durations.
+- *Job Positions to Position Durations*: Add a new mapping for CDS entity Job Positions to Finance and Operations entity Position Durations.
 
 [![CDS Mapping](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-*Job Positions to Position Hierarchies*
-Add a new mapping from CDS entity Job Positions to Finance and Operations entity Position Hierarchies.
-Click the advanced query button to enable your advanced query for your project.
+- *Job Positions to Position Hierarchies*: Add a new mapping from CDS entity Job Positions to Finance and Operations entity Position Hierarchies. Click **Advanced query** to enable your advanced query for your project.
 
 [![CDS Advanced Query](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
