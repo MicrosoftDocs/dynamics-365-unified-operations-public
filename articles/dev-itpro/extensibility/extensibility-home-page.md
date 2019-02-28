@@ -5,7 +5,7 @@ title: Extensibility home page
 description: This topic provides links to topics about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 02/28/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
