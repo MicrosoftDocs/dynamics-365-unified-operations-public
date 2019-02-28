@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: March 2019 preview features in Finance and Operations platform update 24
+title: Preview features in Finance and Operations platform update 24 (March 2019)
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operation platform update 24 (March 2019). 
 author: tonyafehr
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
 
 ---
-# March 2019 preview features in Finance and Operations platform update 24
+# Preview features in Finance and Operations platform update 24 (March 2019)
 
 [!include [banner](../includes/banner.md)]
 
