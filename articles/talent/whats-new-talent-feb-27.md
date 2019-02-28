@@ -102,7 +102,7 @@ Move this to position 8 in the sequence.
 
 [![CDS Mapping](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-- *Job Positions to Position Hierarchies*: Add a new mapping from CDS entity Job Positions to Finance and Operations entity Position Hierarchies. Click **Advanced query** to enable your advanced query for your project.
+- *Job Positions to Position Hierarchies*: Add a new mapping from CDS entity Job Positions to Finance and Operations entity Position Hierarchies. Click **Advanced Query** to enable your advanced query for your project.
 
 [![CDS Advanced Query](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -110,11 +110,11 @@ Add the following mappings.
 
 [![CDS Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
-Click the **Advanced query and filtering** link.
+Click the **Advanced Query and Filtering** link.
 
 [![Advanced query and filtering](./media/Advanced-query-and-filtering.png)](./media/Advanced-query-and-filtering.png)
 
-Find the cdm_parentjobpositionid.cdm_jobpositionnumber column and click the button on right.
+Find the cdm_parentjobpositionid.cdm_jobpositionnumber column and click the button on the right.
 
 [![Find CDM Parent](./media/Find-CDM-Parent.png)](./media/Find-CDM-Parent.png)
 
@@ -122,11 +122,11 @@ Click **Remove empty** in the dropdown dialog.
 
 [![Remove empty](./media/Remove-empty.png)](./media/Remove-empty.png)
 
-Click **Add column -> Add Conditional Column** to add a default Value Transform for HIERARCHYTYPENAME. 
+Click **Add column > Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME. 
 
 [![Add Column](./media/Add-column.png)](./media/Add-column.png)
 
-In the **Add Conditional Column** dialog, enter the name of the new column: HIERARCHYTYPENAME.
+In the **Add conditional column** dialog, enter the name of the new column: HIERARCHYTYPENAME.
 
 Fill in both **Then** and **Otherwise** with what should be the default value: Line; using any field and value for **If** and **equal to**. 
 
