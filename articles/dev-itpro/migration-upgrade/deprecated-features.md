@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 02/27/2019
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,26 +50,26 @@ This list is intended to help you consider these removals and deprecations for y
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
 ### Print to screen functionality
-Customers may use the **Import** action provided by the Report Viewer control to download documents produced by Dynamics 365 Finance & Operations applications. This HTML based presentation of the report offers users a non-paginated preview of the document.
+Customers may use the **Import** action provided by the Report Viewer control to download documents produced by Finance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The non-paginated nature of HTML-based preview experience does NOT deliver fidelity with the physical documents ultimately produced by the service. By fully embracing PDF as THE standard format for business operations, we are able to drastically simplify user options for interacting with application reports and streamline the document rendering process. |
-| **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by the service   |
-| **Product areas affected**         | This change does NOT impact customer scenarios where reports are distributed electronically or sent directly to printers    |
+| **Reason for deprecation/removal** | The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by the service. By fully embracing PDF as the standard format for business operations, we are able to drastically simplify user options for interacting with application reports and streamline the document rendering process. |
+| **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by the service.   |
+| **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
 | **Deployment option**              | All  |
-| **Status**                         | **Deprecated** - Target timeframe for the functionality to be removed is **Platform Update 26** <br><br>**Important:**  Existing customers who depend on the Print to screen option must notify the Customer Support in advance of upgrading to PU26. |
+| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is Platform update 26. <br><br>**Important:**  Existing customers who depend on the **Print to screen** option must notify the Customer Support in advance of upgrading to Platform update 26. |
 
 ### Client KPI controls
-Embedded KPIs could be modeled in Visual Studio by a developer and further customized by the end user.
+Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The native client controls used to define Key Performance Indicators have low customer uptake and rely on a developer to add trackable metrics. |
-| **Replaced by another feature?**   | PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.  As of Platform Update 25, users are able to embedded in solutions hosted on PowerBI.com in Application Workspaces.   |
-| **Product areas affected**         | This update will prevent developers from introducing new KPI controls in Visual Studio designer    |
+| **Reason for deprecation/removal** | The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics. |
+| **Replaced by another feature?**   | PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.  As of Platform update 25, users are able to embedded in solutions hosted on PowerBI.com in Application Workspaces.   |
+| **Product areas affected**         | This update will prevent developers from introducing new KPI controls in Visual Studio designer.    |
 | **Deployment option**              | All  |
-| **Status**                         | **Deprecated** - Target timeframe for the functionality to be removed is **Platform Update 26** |
+| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is Platform update 26. |
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
