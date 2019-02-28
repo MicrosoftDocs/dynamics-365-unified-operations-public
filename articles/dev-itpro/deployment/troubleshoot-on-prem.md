@@ -1110,7 +1110,7 @@ To resolve this issue, follow these steps:
 2. On each AOS server, open a Command Prompt as an administrator, and run the following command.
 
 ```
-"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i C:\Files\netstandard.dll /f
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i <path from step 1.>\netstandard.dll /f
 ```
 3. Delete AXBootstrapperApp from Service Fabric.
     1. Delete fabric:/Bootstrapper/AXBootstrapper service.
