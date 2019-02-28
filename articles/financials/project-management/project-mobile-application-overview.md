@@ -65,5 +65,5 @@ Operations mobile application.
 ## For more information
 For more details, see [Microsoft Dynamics 365 Project timesheet mobile
 application](project-timesheet.md), [Project time entry](
-project-time-entry-mobile-workspace.md) and [Project timesheets on a mobile
+project-time-entry-mobile-workspace.md), and [Project timesheets on a mobile
 device](Mobile-timesheets.md).
