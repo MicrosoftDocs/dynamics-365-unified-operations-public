@@ -80,7 +80,7 @@ It is typical that employees join an organization with a future start date. This
 ## Known Issues
 
 ### Changes to Core HR integration template (Talent CDS to Finance and Operations)
-The template for Core HR has been updated to an [Advanced Query] template. This means the [Advanced Query] will be enabled by default for projects created using this template. It also means that any default mapping functions (shown as FN in the mappings) will only be visible in the [Advanced Query] editor.
+The template for Core HR has been updated to an Advanced Query template. This means the Advanced Query will be enabled by default for projects created using this template. It also means that any default mapping functions (shown as FN in the mappings) will only be visible in the Advanced Query editor.
 
 See additional details about mapping errors [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
