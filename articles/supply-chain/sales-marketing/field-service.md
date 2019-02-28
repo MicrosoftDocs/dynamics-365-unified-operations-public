@@ -79,7 +79,7 @@ The additional functionality in this second phase focused on giving field techni
 ### System requirements for Finance and Operations
 Field Service integration supports the following versions:
 
-- Dynamics 365 for Finance and Operations version 8.1.2 (December 2019) was released in December 2019 and has an application build number 8.1.195 with Platform Update 22 (7.0.5095). 
+- Dynamics 365 for Finance and Operations version 8.1.2 (December 2018) was released in December 2018 and has an application build number 8.1.195 with Platform Update 22 (7.0.5095). 
 
 ### System requirements for Field Service
 To use the Field Service integration solution, you must install the following components:
