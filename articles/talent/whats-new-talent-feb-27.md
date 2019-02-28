@@ -84,8 +84,11 @@ The template for Core HR has been updated to an Advanced Query template. This me
 
 See additional details about mapping errors [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
-Below are the steps to take to update your existing template. To use the new template, create a new project and select the new Talent integration template.
+To use the new template, create a new project and select the new Talent integration template.
 
+To update your existing template, do the following. 
+
+1. Update the following mappings.
 - *Job Positions to Positions*: Remove this mapping.
 - *Job Positions to Positions Parent Job Assignment*: Remove this mapping.
 - *Job Positions to Base Position*: Add new mapping for CDS entity Job Positions to Finance and Operations entity Base Position.
@@ -106,34 +109,34 @@ Move this to position 8 in the sequence.
 
 [![CDS Advanced Query](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
-Add the following mappings.
+2. Add the following mappings.
 
 [![CDS Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
-Click the **Advanced Query and Filtering** link.
+3. Click the **Advanced Query and Filtering** link.
 
 [![Advanced query and filtering](./media/Advanced-query-and-filtering.png)](./media/Advanced-query-and-filtering.png)
 
-Find the cdm_parentjobpositionid.cdm_jobpositionnumber column and click the button on the right.
+4. Find the cdm_parentjobpositionid.cdm_jobpositionnumber column and click the button on the right.
 
 [![Find CDM Parent](./media/Find-CDM-Parent.png)](./media/Find-CDM-Parent.png)
 
-Click **Remove empty** in the dropdown dialog.
+5. Click **Remove empty** in the dropdown dialog.
 
 [![Remove empty](./media/Remove-empty.png)](./media/Remove-empty.png)
 
-Click **Add column > Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME. 
+6. Click **Add column > Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME. 
 
 [![Add Column](./media/Add-column.png)](./media/Add-column.png)
 
-In the **Add conditional column** dialog, enter the name of the new column: HIERARCHYTYPENAME.
+7. In the **Add conditional column** dialog, enter the name of the new column: HIERARCHYTYPENAME.
 
-Fill in both **Then** and **Otherwise** with what should be the default value: Line; using any field and value for **If** and **equal to**. 
+8. Fill in both **Then** and **Otherwise** with what should be the default value: Line; using any field and value for **If** and **equal to**. 
 
 [![Add Conditional Column](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 
-Click **OK** to close the **Advanced Query and Filtering** dialog.
+9. Click **OK** to close the **Advanced Query and Filtering** dialog.
 
-On the **Mapping task** page, pick the newly created column as the source to create another mapping for HIERARCHYTYPENAME.  
+10. On the **Mapping task** page, pick the newly created column as the source to create another mapping for HIERARCHYTYPENAME.  
 
 [![CDS Mapping](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
