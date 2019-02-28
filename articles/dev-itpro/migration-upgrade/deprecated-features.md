@@ -66,7 +66,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics. |
-| **Replaced by another feature?**   | PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.  As of Platform update 25, users are able to embedded in solutions hosted on PowerBI.com in Application Workspaces.   |
+| **Replaced by another feature?**   | PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.  In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.   |
 | **Product areas affected**         | This update will prevent developers from introducing new KPI controls in Visual Studio designer.    |
 | **Deployment option**              | All  |
 | **Status**                         | Deprecated - Target timeframe for the functionality to be removed is Platform update 26. |
