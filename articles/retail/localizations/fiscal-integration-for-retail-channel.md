@@ -94,6 +94,24 @@ The fiscal integration framework provides the following options to handle failur
      
 The options **Skip** and **Mark as registered** allow using info codes to capture some specific information about the failure, such as the reason of the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about setting up error handling parameters, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel#error-handling-settings).
 
+### Optional fiscal registration
+
+The fiscal registration may be mandatory for some operations, whereas it is optional for other operations. And its failure should block further operating on the same terminal if an error occured while registering an operation, which is an object of the optional part of the fiscal registration. For example, operations related to gift cards and customer deposits could be optional from the fiscal registration perspective, but at the same time common sales and returns must be always registered. To distinguish optional and mandatory parts of the fiscal registration it is recommended to process them within different document providers, and set up a separate steps of the fiscal registration process. A step dedicated to the optional fiscal registration should have the **Continue on error** parameter enabled. For more details about setting up error handling parameters, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel#error-handling-settings).
+
+### Manual run of the fiscal registration
+
+Fiscal integration functionality supports running the fiscal registration for the transactions awaiting the fiscal regisctration. A new button should be added to the POS screen layout. For more details, see [Setting up manual run of the fiscal registration from POS](setting-up-fiscal-integration-for-retail-channel#setting-up-manual-run-of-the-fiscal-registration-from-pos). If the fiscal transaction had failed and user selected the **Cancel** option in the error handling dialog, user should click this button to run the fiscal registration manually from POS.
+
+### Fiscal registration health check
+The fiscal integration provides the option of early problem detection - health check.
+On events:
+  - POS log on
+  - Adding first line to transaction
+  - Transaction pre-conclude
+
+Health check function is executed by the system. This function tests availability of fiscal registration service or device. If problem is found - error message is displayed for cashier. The cashier can have 2 options - continue transaction with the risk of fiscal registration failure (skip health check) or cancel current transaction until the problem will be fixed.
+The permission for health check skip must be configured at Permission groups form.
+
 ## Storing fiscal response in fiscal transaction
 Upon a successful fiscal registration of a transaction or event, a fiscal transaction is created in the Channel DB and linked to the original transaction or event. Similarly, if the option **Skip** or **Mark as registered** is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, then a fiscal transaction is created for each step of the process.
 
@@ -122,3 +140,4 @@ The following fiscal integration samples are currently available in the Retail S
 
   - [Fiscal printer integration sample for Italy](emea-ita-fpi-sample)
   - [Fiscal printer integration sample for Poland](emea-pol-fpi-sample)
+  - [Fiscal registration service integration sample for Austria](emea-aut-fi-sample)
