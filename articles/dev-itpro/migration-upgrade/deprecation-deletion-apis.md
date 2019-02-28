@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deprecation of methods and metadata elements
-description: Microsoft will keep evolving the code base, and as a result certain methods and meta data elements are no longer needed. 
+description: This topic provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves. 
 author: robadawy
 manager: AnnBe
 ms.date: 02/11/2019
@@ -28,26 +28,29 @@ ms.dyn365.ops.version: 8.1.3
 ---
 
 # Deprecation of methods and metadata elements
+
 [!include[banner](../includes/banner.md)]
 
-Microsoft will keep evolving the code base, and as a result, certain methods and meta data elements are no longer needed. When this happens Microsoft will mark the method or element for deprecation. 
+As the Microsoft code base continues to evolve, some methods and metadata elements will no longer be required. Microsoft will mark these obsolete methods and metadata elements for deprecation.
 
-* Methods are marked with the `SysObsolete` attribute typically explaining an alternative; and 
-* Meta data elements have the `IsObsolete` property set to yes.
+- Methods are marked with the **SysObsolete** attribute. Typically, this attribute recommends an alternative to the method.
+- For metadata elements, the **IsObsolete** property is set to **Yes**.
 
-The deprecation is both binary and design time compatible. The referencing code will continue to work as expected; and no immediate action is required. When compiling any references to deprecated artifacts are reported as compile **warnings**. 
+The deprecation is compatible with both binaries and design time. The referencing code will continue to work as expected, and no immediate action is required. During compilation, any references to deprecated artifacts are reported as compile **warnings**.
 
-## Cleaning up deprecated elements
-After a period of at least 12 months, Microsoft may delete obsoleted methods and meta data elements. 
+## Cleanup of deprecated elements
 
-To limit the risk of breaking any consumers, Microsoft will **not** delete any obsoleted methods or meta data elements, if telemetry shows they are still in use.
+After a period of at least 12 months, Microsoft might delete obsolete methods and metadata elements.
 
-## Minimize the risk of being impacted
-As a consumer of Microsoft's code base, here is a list of tips you can use to avoid being impacted:
+However, if telemetry shows that any obsolete methods or metadata elements are still used, Microsoft will **not** delete them, to reduce the risk that consumers will be broken.
 
-1. Compile your code base at least every 12 months on top of the latest code base. If you discover any warnings due to usages of deprecated artifacts, please address these as soon as possible.
-2. Avoid **new** dependencies on deprecated artifacts. If you do, Microsoft might just have deleted the artifact, as there is a time window between when releases and telemetry are available.
+## Minimize your risk of being affected
 
-## List of deprecated methods and meta data elements
-As a reference, please find an Excel file attached containing the artifacts that have been marked for deprecation in each of the major releases.
+Here are some tips that you, as a consumer of the Microsoft code base, can use to avoid being affected when methods and metadata elements are deprecated:
 
+- Compile your code base at least every 12 months on top of the latest code base. If you receive any warnings because deprecated artifacts are used, address those warnings as soon as possible.
+- Avoid **new** dependencies on deprecated artifacts. Microsoft might have just deleted the artifact, because there is a time window between when releases and telemetry are available.
+
+## List of deprecated methods and metadata elements
+
+For reference, you can use [this Microsoft Excel file](), which shows the artifacts that have been marked for deprecation in each major release.
