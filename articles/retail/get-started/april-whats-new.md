@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: April 2019 preview features in Dynamics 365 for Retail
+title: Preview features in Dynamics 365 for Retail (April 2019)
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
 
 ---
-# April 2019 preview features in Dynamics 365 for Retail
+# Preview features in Dynamics 365 for Retail (April 2019)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are in preview in Microsoft Dynamics 365 for Retail. 
 
-To learn about the preview features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Dynamics 365 for Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10).
+To learn about the preview features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10).
 
 ## Dynamics 365 April '19 release notes
 
