@@ -113,30 +113,30 @@ Move this to position 8 in the sequence.
 
 [![CDS Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
-3. Click the **Advanced Query and Filtering** link.
+- Click the **Advanced Query and Filtering** link.
 
 [![Advanced query and filtering](./media/Advanced-query-and-filtering.png)](./media/Advanced-query-and-filtering.png)
 
-4. Find the cdm_parentjobpositionid.cdm_jobpositionnumber column and click the button on the right.
+- Find the cdm_parentjobpositionid.cdm_jobpositionnumber column and click the button on the right.
 
 [![Find CDM Parent](./media/Find-CDM-Parent.png)](./media/Find-CDM-Parent.png)
 
-5. Click **Remove empty** in the dropdown dialog.
+- Click **Remove empty** in the dropdown dialog.
 
 [![Remove empty](./media/Remove-empty.png)](./media/Remove-empty.png)
 
-6. Click **Add column > Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME. 
+- Click **Add column > Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME. 
 
 [![Add Column](./media/Add-column.png)](./media/Add-column.png)
 
-7. In the **Add conditional column** dialog, enter the name of the new column: HIERARCHYTYPENAME.
+- In the **Add conditional column** dialog, enter the name of the new column: HIERARCHYTYPENAME.
 
-8. Fill in both **Then** and **Otherwise** with what should be the default value: Line; using any field and value for **If** and **equal to**. 
+- Fill in both **Then** and **Otherwise** with what should be the default value: Line; using any field and value for **If** and **equal to**. 
 
 [![Add Conditional Column](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 
-9. Click **OK** to close the **Advanced Query and Filtering** dialog.
+- Click **OK** to close the **Advanced Query and Filtering** dialog.
 
-10. On the **Mapping task** page, pick the newly created column as the source to create another mapping for HIERARCHYTYPENAME.  
+- On the **Mapping task** page, pick the newly created column as the source to create another mapping for HIERARCHYTYPENAME.  
 
 [![CDS Mapping](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
