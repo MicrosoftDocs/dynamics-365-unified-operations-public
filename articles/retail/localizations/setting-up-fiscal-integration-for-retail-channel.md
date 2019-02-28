@@ -183,6 +183,10 @@ Error handling options that are available in fiscal integration are set in the f
 
 	- **Allow skip**: this parameter enables the **Skip** option in the error handling dialog.
 	- **Allow mark as registered**: this parameter enables the **Mark as registered** option in the error handling dialog.
+	- **Continue on error**: this parameter defines whether it is possible or not to continue working on the same terminal when the         fiscal registration has failed.
+
+        >[!NOTE]
+	> If user enables the **Continue on error** parameter, the parameters **Allow skip** and **Allow mark as registered** are disabled automatically as they apply to the mandatory registration of fiscal documents only. 
 
 2. Options **Skip** and **Mark as registered** in the error handling dialog require the permission **Allow skip or mark as registered**. 
 
@@ -200,6 +204,10 @@ Error handling options that are available in fiscal integration are set in the f
 	> One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process. A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents. The error handling feature applies to fiscal documents only. 
 	> - *Fiscal document*: a mandatory document that should be registered successfully (e.g., a fiscal receipt).
 	> - *Non-fiscal document*: a supplementary document for the transaction or event (e.g., a gift card slip).
+	
+4. If it is required to allow users to continue processing the current operation (e.g., creatiing or concluding transactions) when the fiscal registration health check returns an error, the permission **Allow skip health check error** should be activated. See [Fiscal registration health check](fiscal-integration-for-retail-channel#fiscal-registration-health-check) for more details about the health check functionality.
+
+	- Open the **Permission groups** page (**Retail > Employees > Permission groups**) and enable the permission **Allow skip health check error**.
 
      
 ## Setting up fiscal X/Z reports from POS
@@ -210,4 +218,13 @@ To enable running fiscal X/Z reports from POS, new buttons should be added to a 
 	- Select the layout that you are going to update. 
 	- Add a new button and set the button property **Print fiscal X**.
 	- Add a new button and set the button property **Print fiscal Z**.
+	- Run the job **1090** on the **Distribution schedule** page to transfer changes to the Channel database.
+	
+## Setting up manual run of the fiscal registration from POS
+
+To enable running the fiscal registration from POS for a transaction awaiting the fiscal registration, a new button should be added to a POS layout.
+- Open the **Button grids** page.
+- Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+	- Select the layout that you are going to update. 
+	- Add a new button and set the button property **Complete fiscal registration process**.
 	- Run the job **1090** on the **Distribution schedule** page to transfer changes to the Channel database.
