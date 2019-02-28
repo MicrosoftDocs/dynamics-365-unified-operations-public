@@ -58,7 +58,7 @@ Customers can use the **Import** action provided by the Report Viewer control to
 | **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.   |
 | **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated: A removal date has not been set for this feature. With Platform Update 26, application reports will be automatically downloaded to the browser as PDF documents. <br><br>**Important:**  Existing customers who depend on the **Print to screen** option are advised to notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. With Platform update 26, application reports will be automatically downloaded to the browser as PDF documents. <br><br>**Important:**  Existing customers who depend on the Print to screen option are advised to notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
 
 ### Client KPI controls
 Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.
