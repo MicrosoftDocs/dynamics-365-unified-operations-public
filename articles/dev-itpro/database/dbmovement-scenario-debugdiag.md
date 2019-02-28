@@ -5,7 +5,7 @@ title: Debugging and diagnostics
 description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 1/28/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

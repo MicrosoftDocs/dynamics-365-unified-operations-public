@@ -4,6 +4,8 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
+  - name: Preview features in Dynamics 365 for Retail (April 2019)
+    href: get-started/april-whats-new.md
   - name: Before you buy Retail
     href: get-started/before-you-buy.md
   - name: Sign up for a preview subscription
@@ -386,7 +388,7 @@
     - name: Cash register functionality
       href: localizations/emea-swe-cash-registers.md
     - name: Sample for Retail POS integration with control units
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Retail tasks
   items:
   - name: Create a product
