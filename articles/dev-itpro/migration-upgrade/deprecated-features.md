@@ -50,17 +50,8 @@ This list is intended to help you consider these removals and deprecations for y
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
 ### Deprecated APIs and future breaking changes
-<Brief description of the APIs we're deprecating.>
 
 To access the list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the feature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature.   |
-| **Product areas affected**         | Product areas affected, such as a module name.    |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated - Target timeframe for removal of the APIs is <month/year> or <quarter/year> or <release/version>. |
 
 #### Field groups containing invalid field references
 
