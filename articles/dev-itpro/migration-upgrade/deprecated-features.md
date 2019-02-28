@@ -58,7 +58,7 @@ Customers may use the **Import** action provided by the Report Viewer control to
 | **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by the service.   |
 | **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is Platform update 26. <br><br>**Important:**  Existing customers who depend on the **Print to screen** option must notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Platform update 26. <br><br>**Important:**  Existing customers who depend on the **Print to screen** option must notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
 
 ### Client KPI controls
 Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.
@@ -69,7 +69,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 | **Replaced by another feature?**   | PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.  In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.   |
 | **Product areas affected**         | This update will prevent developers from introducing new KPI controls in Visual Studio designer.    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is Platform update 26. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
@@ -82,7 +82,7 @@ The Synchronous transfer mode is being deprecated in the General ledger paramete
 | **Replaced by another feature?**   | Asynchronous and scheduled batch are options to use in place of Synchronous.   |
 | **Product areas affected**         | General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is the 10.0 version.|
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.|
 
 ### Electronic reporting for Russia
 Feature for configuring .txt and .xml file formats of declarations. 
