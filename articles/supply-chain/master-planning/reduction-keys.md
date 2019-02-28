@@ -102,6 +102,7 @@ In most cases, systems are set up so that transactions reduce demand forecast wi
 
    In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span. These various spans are the dynamic periods.
 2. Create sales order lines as follows.
+
    | Date                             | Sales order quantity |
    |----------------------------------|----------------------|
    | December 15 in the previous year | 500                  |
