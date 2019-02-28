@@ -51,8 +51,6 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Deprecated APIs and future breaking changes
 
-To access the list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
-
 #### Field groups containing invalid field references
 
 |   |  |
@@ -62,6 +60,9 @@ To access the list of APIs that are being deprecated, see [Deprecation of method
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All. |
 | **Status**                         | Deprecated - The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+
+#### Complete list
+To access the full list of APIs that have being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
