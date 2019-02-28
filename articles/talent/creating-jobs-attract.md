@@ -101,7 +101,7 @@ To update your LinkedIn company, select **Admin center** on the **Settings**�
 (the gear symbol), and then select the **LinkedIn Integration** tab. Under the **Connect to LinkedIn** section, enter your LinkedIn Company Name and Company ID, and then save the settings.
 
 > [!NOTE]
-> There are three important things to note about job posting process to LinkedIn.
+> There are four important things to note about job posting process to LinkedIn.
 > 1. Jobs posted to LinkedIn are posted as "Limited Listings" jobs. Limited listing jobs cannot be promoted across the LinkedIn site. If you want to promote limited listing jobs posted to LinkedIn from Attract, you should work with LinkedIn to enable "Job Wrapping". Please refer to links below and contact LinkedIn support for more details.
 >
 >    [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -114,6 +114,8 @@ To update your LinkedIn company, select **Admin center** on the **Settings**�
 >
 >    If you have problems after this step, please contact LinkedIn support. 
 > 
+> 1. Jobs posted to LinkedIn appear on the live LinkedIn site. There is no test environment for posting jobs to LinkedIn. 
+>
 > 1. It may take up to 24 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
 
 
