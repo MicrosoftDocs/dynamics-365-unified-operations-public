@@ -3013,6 +3013,8 @@
         href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
       - name: My team
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      - name: Project mobile applications overview
+        href: ../financials/project-management/project-mobile-application-overview.md
       - name: Project time entry
         href: ../financials/project-management/project-time-entry-mobile-workspace.md
       - name: Project timesheet
@@ -3717,6 +3719,8 @@
       items:
       - name: Microsoft Project client integration
         href: ../financials/project-management/project-integration.md
+    - name: Project mobile applications overview
+      href: ../financials/project-management/project-mobile-application-overview.md
     - name: Project time entry mobile workspace
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
     - name: Project timesheet mobile app
