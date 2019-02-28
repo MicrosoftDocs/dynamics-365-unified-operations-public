@@ -5,7 +5,7 @@ title: Set up the fiscal integration for Retail channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. 
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
