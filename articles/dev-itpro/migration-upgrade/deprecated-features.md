@@ -54,8 +54,8 @@ Customers can use the **Import** action provided by the Report Viewer control to
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by the service. By fully embracing PDF as the standard format for business operations, we are able to drastically simplify user options for interacting with application reports and streamline the document rendering process. |
-| **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by the service.   |
+| **Reason for deprecation/removal** | The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations. By fully embracing PDF as the standard format for business operations, we are able to drastically simplify user options for interacting with application reports and streamline the document rendering process. |
+| **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.   |
 | **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
 | **Deployment option**              | All  |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Platform update 26. <br><br>**Important:**  Existing customers who depend on the **Print to screen** option must notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
