@@ -67,17 +67,17 @@ ms.dyn365.ops.version: 10.0.1
     | Cash flow        | ДвижениеДен     | Отчет о движении денежных средств (2016)                |
     | Funds usage      | ЦелИсп          | Отчет о целевом использовании полученных средств (2016) |
 
-2.  Set up financial reports cells operations for financial reports that are imported. You should set up all required cells including totals.
+4.  Set up financial reports cells operations for financial reports that are imported. You should set up all required cells including totals.
 
     >   For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](rus-financial-reports.md).
 
-3.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**, and validate the electronic message processing that is imported (most of the data which is imported, are presented in Russian language)
+5.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**, and validate the electronic message processing that is imported (most of the data which is imported, are presented in Russian language)
 
     | **Processing**       | **Processing code** | **Description**                 |
     |----------------------|---------------------|---------------------------------|
     | Accounting reporting | БухОтч 5.07 (2016)  | Бухгалтерская отчетность (2016) |
 
-4.  Set up the organization codes that are used in accounting reporting.
+6.  Set up the organization codes that are used in accounting reporting.
 
     1.  **Go to Tax \> Setup \> Electronic messages \> Additional fields**.
     2.  Select line with field name «EconomicActivityTypeCode (ОКВЭД)». On the FastTab **Value** click **Add.** Enter legal entity’s economic activity type code in the field **Field value**.
@@ -92,11 +92,16 @@ ms.dyn365.ops.version: 10.0.1
     | OwneshipFormCode         | Choose the value created on step 3) |
     | OrganizationalFormCode   | Choose the value created on step 4) |
 
-3.  Set up Electronic reporting format which is run when generating accounting reporting in electronic format.
+
+    
+7.  Set up Electronic reporting format which is run when generating accounting reporting in electronic format.
 
     1.  **Go to Tax \> Setup \> Electronic messages \> Message processing actions**. Choose action **Generate BUHOTCH 5.07**.
     2.  Click **Edit**. In the field **Show dialog** select **Yes**.
     3.  In the field **Format mapping** select **Accounting reporting format 5.07 (RU)** downloaded in step 1.
+    
+  >   For more information about how to set up Elecronic messaging functionality, see [Electronic messaging](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/electronic-messaging).
+        
 
 ## Generate accounting reporting in electronic format
 
@@ -123,12 +128,12 @@ ms.dyn365.ops.version: 10.0.1
 |-----------------------------------|-------------------------|
 | Signatory type                        | Choose either Taxpayer or Representative – the one who is signing the accounting reporting |
 | Signatory first, middle and last name | Enter full name of Signatory. In case if the values are blank, the name of Official of type “Director” (which is set up in **Organization administration \> Setup \> Contacts \> Officials**) will be taken as signatory. |
-| Representative document               | In case of “Representative” signatory type, enter the document confirming the representative authority    |
+| Representative document               | In case of “Representative” signatory type, enter the document confirming the representative's authority    |
 | Correction number                     | Enter the number of correction if you didn’t specify it on step 4.  |
 | Reporting date                        | Enter the reporting date if you didn’t specify it on step 4.        |
 | Approval date                         | Enter the approval date if you didn’t specify it on step 4.         |
 
-8.  Click **OK**. When the report is generated, the status of the message is changed to “Generated”. If an error occurred during generation, the status of the message is changed to “Technical error”.
+8.  Click **OK**. When the report is generated, the status of the message is changed to **Generated**. If an error occurred during generation, the status of the message is changed to **Technical error**.
 
 9.  Review all user actions with the current message, on the FastTab **Action log**
 
