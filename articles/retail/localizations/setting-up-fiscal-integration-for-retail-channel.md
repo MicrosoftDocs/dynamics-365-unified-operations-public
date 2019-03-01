@@ -205,7 +205,7 @@ Error handling options that are available in fiscal integration are set in the f
 	> - *Fiscal document*: a mandatory document that should be registered successfully (e.g., a fiscal receipt).
 	> - *Non-fiscal document*: a supplementary document for the transaction or event (e.g., a gift card slip).
 	
-4. If it is required to allow users to continue processing the current operation (e.g., creatiing or concluding transactions) when the fiscal registration health check returns an error, the permission **Allow skip health check error** should be activated. See [Fiscal registration health check](fiscal-integration-for-retail-channel#fiscal-registration-health-check) for more details about the health check functionality.
+4. If it is required to allow user to continue processing the current operation (e.g., create or conclude a trasaction) when a health check error occured, the permission **Allow skip health check error** should be activated. See [Fiscal registration health check](fiscal-integration-for-retail-channel#fiscal-registration-health-check) for more details about the health check functionality.
 
 	- Open the **Permission groups** page (**Retail > Employees > Permission groups**) and enable the permission **Allow skip health check error**.
 
