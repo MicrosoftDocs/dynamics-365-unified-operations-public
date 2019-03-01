@@ -1005,10 +1005,13 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 ```
 
 ## Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"
-> Update to existing credential with KeyId '\<key\>' is not allowed.
-> 
-> New-AzureRmADSpCredential : Update to existing credential with KeyId '\<key\>' is not allowed.  
-> At C:\\InfrastructureScripts\\Add-CertToServicePrincipal.ps1:62 char:1  
+The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online and on-premises project.
+
+### If have an only an on-premises project
+Update to existing credential with KeyId '\<key\>' is not allowed.
+
+>  New-AzureRmADSpCredential : Update to existing credential with KeyId '\<key\>' is not allowed.  
+>  At C:\\InfrastructureScripts\\Add-CertToServicePrincipal.ps1:62 char:1  
 >  New-AzureRmADSpCredential -ObjectId $servicePrincipal.Id -CertValue $ ...  
 >  CategoryInfo : InvalidOperation: (:) \[New-AzureRmADSpCredential\], Exception  
 >  FullyQualifiedErrorId : Microsoft.Azure.Commands.ActiveDirectory.NewAzureADSpCredentialCommand
@@ -1016,6 +1019,53 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 ```powershell
 Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
 ```
+
+### If you have have both an online and on-premises project
+1.	Verify that .Net Framework 4.7.2 is installed.
+2.	Run the following PowerShell script to install the Azure PowerShell module. 
+
+```powershell
+Install-Module -Name Az
+```
+3.	Run the following PowerShell script to upload the new certificate.
+ 
+```powershell
+Import-Module -Name Az.Accounts
+Import-Module -Name Az.Resources 
+
+Connect-AzAccount
+ 
+$servicePrincipalName = "00000015-0000-0000-c000-000000000000";
+$CertificateThumbprint = <Thumbprint of Agent Certificate>
+$cert = Get-ChildItem -path Cert:\CurrentUser\my | Where-Object { $_.Thumbprint -eq $CertificateThumbprint }
+if (!$cert)
+{
+    $cert = Get-ChildItem -path Cert:\LocalMachine\my | Where-Object { $_.Thumbprint -eq $CertificateThumbprint }
+    if (!$cert)
+    {
+        throw "Unable to find the certificate in the Local machine or Current User store"
+    }
+}
+ 
+$keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
+ 
+$servicePrincipal = Get-AzADServicePrincipal -ServicePrincipalName $servicePrincipalName
+if (!$servicePrincipal)
+{
+    throw "Unable to find the service principal"
+}
+ 
+New-AzADSpCredential -ObjectId $servicePrincipal.Id -CertValue $keyValue -EndDate $cert.NotAfter -StartDate $cert.NotBefore
+Get-AzADSpCredential -ObjectId $servicePrincipal.Id 
+```
+
+4. Run the following command to remove the duplicate certificate if more than one exists.
+
+```powershell
+Remove-AzADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
+```
+
+
 ## ODBC driver 17 required for platform updates
 The latest platform binary update uses ODBC driver 17. This upgrade takes care of stability issues linked to older ODBC drivers. The [Setup perquisites](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 needs to be installed on each AOS server. If you don't install ODBC driver 17, you will see DB sync errors during servicing of the environment.
 
