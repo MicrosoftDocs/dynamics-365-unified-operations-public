@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,14 +55,14 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | It is currently possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the problem. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). Fixing this issue is simple:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile<br><br>3. Ensure any warnings or errors are addressed. |
+| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All. |
 | **Status**                         | Deprecated - The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
 
 #### Complete list
-To access the full list of APIs that have being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
+To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
