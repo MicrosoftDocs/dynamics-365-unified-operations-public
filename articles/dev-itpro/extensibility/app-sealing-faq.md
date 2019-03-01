@@ -5,7 +5,7 @@ title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -104,3 +104,13 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Request: Make Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, and/or IgnoreEDTRelation changeable via extension.
 - Problem: The ability to change the "Allow Edit", "Allow Edit On Create", "Mandatory", and "IgnoreEDTRelation" properties on Table Fields would result in breaking changes. Changing a field to allow editing changes the intent of the field. Not allowing a field to be edited can break existing behavior. Changing a relation breaks the original intent of that relation, which is a breaking change. Making a field mandatory can result in breaking existing behavior.
 - Workaround: Add new Table Fields via extension and control those as needed.
+
+### Why can't Security Privileges be made extensible?
+- Request: Make Security Privilege changeable via extension.
+- Problem: The ability to change the Security Privilege would result in breaking changes because this are the lowest level of security metadata.
+- Workaround: Create a new Security Privilege if needed and use that.
+
+### Why should I avoid calling and extending APIs that are marked with InternalUseOnlyAttribute?
+Throughout the application, an effort has been made to avoid breaking changes to APIs made by customers, partners, or ISVs. When a class or method has the **InternalUseOnlyAttribute** applied to it, this means that the API is for internal use only and could change without warning. If customers, partners, or ISVs use or extend an API with **InternalUseOnlyAttribute**, this could create issues because the API could change at any time, which would require changes in their extensions before an update can be applied. This could result in urgent changes and the need to recompile. Developers should not depend on these classes and methods remaining unchanged.
+
+Calls to classes and methods with the **InternalUseOnlyAttribute** will result in compiler warnings. Starting in Platform update 20 to Platform update 24, targeting classes and methods with **InternalUseOnlyAttribute** using Chain of Command will result in compiler errors. In Platform update 25 and later, we plan to continue to issue compiler warnings. 

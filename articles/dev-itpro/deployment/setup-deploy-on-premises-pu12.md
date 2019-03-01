@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations with Platform update 12 and later.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -219,12 +219,12 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | |
 | Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords.  | <p> The certificate must be created by using the provider **Microsoft Enhanced Cryptographic Provider v1.0**. </p><p>The certificate key usage must include Data Encipherment (10) and should not include Server authentication or Client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p> |
 | AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p><p>You can use the same wild card certificate that you used as the Service Fabric Server certificate.</p> | <p>In this example, the domain name ax.d365ffo.onprem.contoso.com must be added to the Subject Alternative Name (SAN) as in the Service  Fabric Server certificate.</p> |
-| Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | This certificate is also the File Share certificate that will used at the time of deployment from LCS. |
+| Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | This certificate is also the File Share certificate that will be used at the time of deployment from LCS. |
 | Data Encryption certificate                  | This certificate is used by the AOS to encrypt sensitive information.  | This must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. |
 | Data Signing certificate                     | This certificate is used by AOS to encrypt sensitive information.  | This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. |  |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| **Do not reuse the Financial Reporting Client certificate.** |
-| On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premise local agent certificate is needed for a tenant.</p> | |
+| On-Premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premises local agent certificate is needed for a tenant.</p> | |
 
 The following is an example of a Service Fabric Server certificate combined with an AOS SSL certificate.
 
@@ -540,7 +540,7 @@ Only user accounts that have the Global Administrator directory role can add cer
    > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
    > If you run this in a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration temporarily. If you don't, the Azure login window content will be blocked.
 
-1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&viewFallbackFrom=azurermps-4.0.0).
+1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Installing the Azure PowerShell Service Management module](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps?view=azuresmps-4.0.0).
 2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 3. Run the following script from the **Infrastructure** folder.
     ```powershell
@@ -977,6 +977,16 @@ See the [Reconfigure your environment](../lifecycle-services/reconfigure-environ
 ### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
 
+## Additional resources
+- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
+- [Redeploy an on-premises deployment](redeploy-on-prem.md)
+- [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md)
+- [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
+- [Configure reverse proxies for on-premises environments](onprem-reverseproxy.md)
+- [Set up technical support for Finance and Operations](../lifecycle-services/support-experience.md)
+- [Client internet connectivity](../user-interface/client-disconnected.md)
+
 ## Known issues
 
 ### Error "Key does not exist" when running the New-D365FOGMSAAccounts cmdlet
@@ -999,7 +1009,3 @@ This error occurs because of an OpenID scope **allatclaims** that is required by
 
 ### Error "ADMIN0077: Access control policy does not exist: Permit everyone" when running the Publish-ADFSApplicationGroup cmdlet
 When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
-
-## Additional resources
-- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
-- [Redeploy an on-premises deployment](redeploy-on-prem.md)

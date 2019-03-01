@@ -35,6 +35,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 By using the email template library, admins can create a uniform theme and branding for all emails that are sent through Microsoft Dynamics 365 for Talent: Attract. Admins can also curate a collection of email content templates that other users can consume. The hiring team can use these templates in their workflow to send emails more efficiently. Some emails in Attract are configured to be sent automatically, and the admin can use the email template library to customize the content for those emails.
 
+> [!NOTE]
+> To use Email templates, your organization must have the Comprehensive Hiring add-on.
+
 ## Global template configurations
 
 To create consistent branding for all email communications, the admin must first set the global header and footer for all email templates. In the Admin center, on the **Email template settings** tab, in the **Header** section, the admin can upload an image to use as the header or banner for all emails. The image might be a company logo, a letterhead, or any other representative image. We recommend that the width be between 25 and 800 pixels, and that the height be between 25 and 150 pixels, because these dimensions are optimal for most email clients, such as Microsoft Outlook. The image must be a JPEG, JPG, PNG, or SVG file, and the file size must be less than 1 megabyte (MB). After an image is uploaded, a preview of the header is generated and shown. If the header image must be removed or replaced, the admin can use the **Remove** option above the preview.

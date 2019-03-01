@@ -5,7 +5,7 @@ title: Reduction keys
 description: This articles provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -102,6 +102,7 @@ In most cases, systems are set up so that transactions reduce demand forecast wi
 
    In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span. These various spans are the dynamic periods.
 2. Create sales order lines as follows.
+
    | Date                             | Sales order quantity |
    |----------------------------------|----------------------|
    | December 15 in the previous year | 500                  |

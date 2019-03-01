@@ -5,7 +5,7 @@ title: Support for Dimension Entry controls on dialogs
 description: Describes the code pattern for putting a Dimension Entry control on a dialog.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,10 +45,13 @@ The code pattern to add Dimension Entry controls to dialogs has changed from Dyn
     dimDefaultingController.loadValues(dimensionAttributeValueSetId);
 
 In the current release, this code would be converted to:
-
+    
+    //When you create a dialog
     DialogField dimensionEntryField;
     DimensionEntryControl dimensionEntryValues;
     dimensionEntryField = DimensionEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionEntryController));
+    
+    //These lines should be executed after the dialog form is created (for example on “dialogPostRun()” or “postRun()”)
     dimensionEntryValues = dimensionEntryField.control();
     dimensionEntryValues.parmNonActiveValueErrorTolerance(ErrorTolerance::Error);
     dimensionEntryValues.parmDisplayValues(true);

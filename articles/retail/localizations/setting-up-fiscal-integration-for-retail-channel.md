@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up fiscal integration for Retail channel
-description: This topic provides guidelines on setting up the fiscal integration functionality for Retail channel. 
+title: Set up the fiscal integration for Retail channels
+description: This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. 
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -27,204 +27,190 @@ ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 
 ---
-# Set up fiscal integration for Retail channel
+# Set up the fiscal integration for Retail channels
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidelines on setting up the fiscal integration functionality for Retail channel. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channel](fiscal-integration-for-retail-channel).
+## Introduction
 
-Setting up fiscal integration includes the following tasks.
+This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel.md).
 
-- Configure fiscal connectors that represent fiscal devices or services used for fiscal registration purposes, such as fiscal printers.
-- Configure document providers that generate fiscal documents to be registered in fiscal devices or services by fiscal connectors.
-- Configure the fiscal registration process that defines a sequence of fiscal registration steps and fiscal connectors and fiscal document providers used on each step.
-- Assign the fiscal registration process to POS functionality profiles.
-- Assign connector technical profiles to hardware profiles.
+The process of setting up the fiscal integration includes the following tasks:
 
-## How to set up a fiscal registration process
+1. Configure fiscal connectors that represent fiscal devices or services that are used for fiscal registration purposes, such as fiscal printers.
+2. Configure document providers that generate fiscal documents that will be registered in fiscal devices or services by fiscal connectors.
+3. Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.
+4. Assign the fiscal registration process to point of sale (POS) functionality profiles.
+5. Assign connector technical profiles to hardware profiles.
 
-Before using the fiscal integration functionality, the following settings should be configured.
+## Set up a fiscal registration process
+
+Before you use the fiscal integration functionality, you should configure the following settings.
 
 1. Update retail parameters.
 
- 	- On the **Retail shared parameters** page: 
-		- Set the parameter **Enable fiscal integration** to **Yes** on **General** tab.
- 		- Define the number sequences for the following references:
-			- Fiscal technical profile number;
-			- Fiscal connector group number;
-			- Registration process number.
-	- On the **Retail parameters** page, define the number sequence for the fiscal functional profile number.
+    1. On the **Retail shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**. On the **Number sequences** tab, define the number sequences for the following references:
 
-	>[!NOTE]
-	> Number sequences are optional. All fiscal integration entities may have numbers populated either from number sequences or manually.
+        - Fiscal technical profile number
+        - Fiscal connector group number
+        - Registration process number
+
+    2. On the **Retail parameters** page, define the number sequence for the fiscal functional profile number.
+
+    > [!NOTE]
+    > Number sequences are optional. Numbers for all fiscal integration entities can be generated either from number sequences or manually.
 
 2. Upload configurations of fiscal connectors and fiscal document providers.
 
-	A fiscal document provider is responsible for the generation of fiscal documents representing retail transactions and events registered on POS in a format further used for the interaction with a fiscal device or service. For example, a fiscal document provider may generate a fiscal receipt representation in an XML format. A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector may send a fiscal receipt in an XML format created by a fiscal document provider to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration sample for fiscal device](fiscal-integration-for-retail-channel#fiscal-registration-process-and-fiscal-integration-sample-for-fiscal-device).
+    A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service. For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.
+    
+    A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-	- On the **Fiscal connectors** page (**Retail > Channel setup > Fiscal integration > Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes. 
-  
-	By clicking **View**, you may view all functional and technical profiles related to the current fiscal connector.
+    1. On the **Fiscal connectors** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.
 
-	-  On the **Fiscal document providers** page (**Retail > Channel setup > Fiscal integration > Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.
- 
-	By clicking **View**, you may view all functional profiles related to the current fiscal document provider.
+        > [!TIP]
+        > By selecting **View**, you can view all functional and technical profiles that are related to the current fiscal connector.
 
-	See [Fiscal integration samples in Retail SDK](fiscal-integration-for-retail-channel#fiscal-integration-samples-in-retail-sdk) for examples of configurations of fiscal connectors and fiscal document providers.
+    2. On the **Fiscal document providers** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.
 
-	>[!NOTE]
-	> Data mapping is considered to be a part of a fiscal document provider. To set up different data mappings for the same connector (like state-specific regulations), you should create different fiscal document providers.
+        > [!TIP]
+        > By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
+
+    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).
+
+    > [!NOTE]
+    > Data mapping is considered part of a fiscal document provider. To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.
 
 3. Create connector functional profiles and connector technical profiles.
 
-	- Create a **Connector functional profile** in **Retail > Channel setup > Fiscal integration > Connector functional profiles** for each combination of a fiscal connector and a fiscal document provider related to this fiscal connector.
-		- Select a connector name.
-		- Select a document provider.
+    1. On the **Connector functional profiles** page (**Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.
 
-	Data mapping parameters can be changed in a connector functional profile. Click **Update** if you want to restore the default parameters defined in the fiscal document provider configuration.
+        1. Select a connector name.
+        2. Select a document provider.
 
-	Examples: 
+        You can change the data mapping parameters in a connector functional profile. To restore the default parameters that are defined in the fiscal document provider configuration, select **Update**.
+
+        **Examples**
 	
-	|  | Format | Example | 
-	|--------|--------|--------|
-	| VAT rates settings | value : VATrate | 1 : 2000, 2 : 1800 |
-	| VAT codes mapping | VATcode : value | vat20 : 1, vat18 : 2 |
-	| Tender types mapping | TenderType : value | Cash : 1, Card : 2 |
- 	
-  	>[!NOTE]
-   	> Connector functional profiles are company-specific. If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, a connector functional profile should be created for each company.
-   
-	- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector.
-		- Select a connector name.
-		- Select a connector type: 
-			- **Local**: select this type for devices connected to a hardware station.
+        |   | Format | Example |
+        |---|--------|---------|
+        | **VAT rates settings** | value : VATrate | 1 : 2000, 2 : 1800 |
+        | **VAT codes mapping** | VATcode : value | vat20 : 1, vat18 : 2 |
+        | **Tender types mapping** | TenderType : value | Cash : 1, Card : 2 |
 
-	>[!NOTE]
-	> Only local connectors are supported currently.
+        > [!NOTE]
+        > Connector functional profiles are company-specific. If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, you should create a connector functional profile for each company.
 
-	Parameters on the **Device** and **Settings** tabs can be changed in a connector technical profile. Click **Update** if you want to restore the default parameters defined in the fiscal connector configuration. While loading a new version of an XML configuration, a message will be displayed notifying the user that the current fiscal connector or fiscal document provider is already in use. This procedure does not override manual changes made in connector functional profiles and connector technical profiles earlier. To apply default set of parameters from a new configuration, click **Update** on the **Connector functional profiles** page or the **Connector technical profiles** page.
+    2. On the **Connector technical profiles** page (**Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**), create a connector technical profile for each fiscal connector.
 
-4.  Create **Fiscal connector groups**.
+        1. Select a connector name.
+        2. Select a connector type. For devices that are connected to a Hardware station, select **Local**.
 
-	A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process. For example, if several fiscal printer models can be used in a retail store, fiscal connectors for these fiscal printers may be combined in a fiscal connector group.
+            > [!NOTE]
+            > Only local connectors are currently supported.
+
+        Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
+
+4. Create fiscal connector groups.
+
+    A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process. For example, if several fiscal printer models can be used in a retail store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.
 	
-	- Open the **Retail > Channel setup > Fiscal integration > Fiscal connector group** page and create a new fiscal connector group.
-	- Add functional profiles to the connector group. Click **Add** on the **Functional profiles** page and select a profile number. Within a connector group, each fiscal connector can only have one functional profile.
-	- If you want to suspend usage of the functional profile, set **Disable** to **Yes**. This change affects the current connector group only. You can continue using the same functional profile in other connector groups.
+    1. On the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**), create a new fiscal connector group.
+    2. Add functional profiles to the connector group. On the **Functional profiles** tab, select **Add**, and select a profile number. Each fiscal connector in a connector group can only have one functional profile.
+    3. To suspend use of the functional profile, set the **Disable** option to **Yes**. This change affects only the current connector group. You can continue to use the same functional profile in other connector groups.
 
-5. Create a **Fiscal registration process**.
+5. Create a fiscal registration process.
 
-	A fiscal registration process is defined by the sequence of registration steps and the connector group used on each step. 
+    A fiscal registration process is defined by the sequence of registration steps and the connector group that is used for each step.
 	
-	- Open the **Retail > Channel setup > Fiscal integration > Fiscal registration processes** page and create a new record for each unique process of fiscal registration.
-	- Add registration steps to the process:
-		- Click **Add**.
-		- Select a connector type. 
-		- Select an appropriate connector group in the field **Group number**.
+    1. On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), create a new record for each unique process of fiscal registration.
+    2. Add registration steps to the process:
 
-6. Assign entities of the fiscal registration process to POS profiles. 
- 
-	6.1.  Assign the fiscal registration process to a POS functionality profile on the **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** page. 
-  
-	Click **Edit** and select a **Process number** on the **Fiscal registration process** tab.      
+        1. Select **Add**.
+        2. Select a fiscal connector type.
+        3. In the **Group number** field, select an appropriate fiscal connector group.
 
-	6.2. Assign connector technical profiles to a hardware profile on the **Retail > Channel setup > POS setup > POS profiles > Hardware profiles** page.
-    
-	Click **Edit**, add a line on the **Fiscal peripherals** tab, and select a connector technical profile in the field **Profile number**.
+6. Assign entities of the fiscal registration process to POS profiles.
 
-	>[!NOTE]
-	> You can add several technical profiles to the same hardware profile. However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group. 
+    1. On the **POS functionality profiles** page (**Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**), assign the fiscal registration process to a POS functionality profile. Select **Edit**, and then, on the **Fiscal registration process** tab, in the **Process number** field, select a process.
+    2. On the **POS hardware profile** page (**Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**), assign connector technical profiles to a hardware profile. Select **Edit**, add a line on the **Fiscal peripherals** tab, and then, in the **Profile number** field, select a connector technical profile.
 
-	The fiscal registration flow is defined by the fiscal registration process as well as by some parameters of fiscal integration components: the Commerce runtime extension for the fiscal document provider and the Hardware station extension for the fiscal connector.
+    > [!NOTE]
+    > You can add several technical profiles to the same hardware profile. However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group.
 
-	- The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.
-	- The fiscal document provider is also responsible for the identification of the fiscal connector to be used for fiscal registration. It matches the connector functional profiles that are included in the connector group specified on the current step of the fiscal registration process with the connector technical profile assigned to the hardware profile of the hardware station which POS is paired to.
-	- The fiscal document provider uses the **Data mapping** settings from the fiscal document provider configuration for the transformation of transaction/event data such as taxes and payments while generating a fiscal document.
-	- The fiscal connector can either send a fiscal document generated by the fiscal document provider to the fiscal device as-is or parse it and transform into a sequence of commands of the device API, depending on how the communication is handled.  
+    The fiscal registration flow is defined by the fiscal registration process and also by some parameters of fiscal integration components: the Commerce runtime extension for the fiscal document provider and the Hardware station extension for the fiscal connector.
 
-7. Validate the fiscal registration process.
-  
-	Open the page **Fiscal registration processes** (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**) and click **Validate** to validate the fiscal registration process. It’s recommended to run such a validation in the following cases.
+    - The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.
+    - The fiscal document provider is also responsible for identifying the fiscal connector that is used for fiscal registration. It matches the connector functional profiles that are included in the fiscal connector group that is specified for the current step of the fiscal registration process with the connector technical profile that is assigned to the hardware profile of the Hardware station that the POS is paired to.
+    - The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.
+    - When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.
+
+7. On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), select **Validate** to validate the fiscal registration process.
+
+    We recommend that you run this type of validation in the following cases:
 	
-	- For a new registration process after all the settings are completed, including assigning to POS functionality profiles and hardware profiles.
-	- After making some changes to an existing fiscal registration process that may result in selecting a different fiscal connector in run-time (for example, changing the connector group for a fiscal registration process step; enabling a connector functional profile in a connector group; or adding a new connector functional profile to a connector group).
-	- After making changes in the assignment of connector technical profiles to hardware profiles.
-      
-8. Open the **Distribution scheduler** page and run the job **1070** to transfer data to the Channel database.
+    - After you've completed all the settings for a new registration process, including when you assign registration processes to POS functionality profiles and hardware profiles.
+    - After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).
+    - After you make changes in the assignment of connector technical profiles to hardware profiles.
 
-## Setting up fiscal texts for discounts
- 
-In some cases, it is required to print a special text in a fiscal receipt if a discount is applied. You can set up fiscal texts for discounts on the **Fiscal connector groups** page (**Retail > Channel setup > Fiscal integration > Fiscal connector group**):
+8. On the **Distribution scheduler** page, run the **1070** and **1090** jobs to transfer data to the channel database.
 
-- For manual discounts applied on POS, a fiscal text should be set for the info code or info code group specified as the **Product discount** info code in the POS functionality profile.
-	- Click **Text for fiscal receipt** on the **Fiscal connector groups** page.
-	- On the **Info codes** tab, click **Add** and select an info code or info code group.
-	- Select the **Info code number**.
-	- Select the **Subcode number** if it is required for the selected info code.
-	- Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
-	- Set the parameter **Print user input on fiscal receipt** to **Yes** to override the text in a fiscal receipt with the information entered by user on POS manually. This option applies to info codes with Input type **Text** only.
-    
-	>[!NOTE]
-	> You can specify a fiscal text for several info codes to support such scenarios as using of info code groups, linked info codes, and triggered info codes. As a result, the fiscal receipt will contain the fiscal texts from all info codes linked to the transaction line where the discount was applied. 
+## Set up fiscal texts for discounts
 
-- For channel-specific discounts, a fiscal text should be defined for the **Discount ID**.
-	- Click **Text for fiscal receipt** on the **Fiscal connector groups** page.
-	- On the tab **Discounts** click **Add** and select a **Discount ID**.
-	- Specify a fiscal text that should be printed in a fiscal receipt in the field **Text for fiscal receipt**.
+In some cases, a special text must be printed on a fiscal receipt if a discount is applied. You can set up fiscal texts for discounts on the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**).
 
-	>[!NOTE]
-	> If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts linked to the transaction line. 
+- For manual discounts that are applied at the POS, you should set a fiscal text for the info code or info code group that is specified as the **Product discount** info code in the POS functionality profile.
 
-## Error handling settings
+    1. On the **Fiscal connector group** page, select **Text for fiscal receipt**.
+    2. On the **Info codes** tab, select **Add**, and select an info code or info code group.
+    3. In the **Info code number**, select a value.
+    4. In the **Subcode number** field, select a value if a subcode is required for the selected info code.
+    5. In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.
+    6. Set the **Print user input on fiscal receipt** option to **Yes** to override the text on a fiscal receipt with information that a user manually enters at the POS. This option applies only to info codes that have an input type of **Text**.
 
-Error handling options that are available in fiscal integration are set in the fiscal registration process. For more information about error handling in fiscal integration, see [Error handling](fiscal-integration-for-retail-channel#error-handling).
+    > [!NOTE]
+    > You can specify a fiscal text for several info codes to support scenarios where info code groups, linked info codes, and triggered info codes are used. In these scenarios, the fiscal receipt will contain the fiscal texts from all info codes that are linked to the transaction line where the discount was applied.
 
-1. On the **Fiscal registration processes** page (**Retail > Channel setup > Fiscal integration > Fiscal registration processes**), you can activate the following parameters for each fiscal registration process step.
+- For channel-specific discounts, you should define a fiscal text for the discount ID.
 
-	- **Allow skip**: this parameter enables the **Skip** option in the error handling dialog.
-	- **Allow mark as registered**: this parameter enables the **Mark as registered** option in the error handling dialog.
-	- **Continue on error**: this parameter defines whether it is possible or not to continue working on the same terminal when the         fiscal registration has failed.
+    1. On the **Fiscal connector group** page, select **Text for fiscal receipt**.
+    2. On the **Discounts** tab, select **Add**, and select a discount ID.
+    3. In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.
 
-        >[!NOTE]
-	> If user enables the **Continue on error** parameter, the parameters **Allow skip** and **Allow mark as registered** are disabled automatically as they apply to the mandatory registration of fiscal documents only. 
+    > [!NOTE]
+    > If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line.
 
-2. Options **Skip** and **Mark as registered** in the error handling dialog require the permission **Allow skip or mark as registered**. 
+## Set error handling settings
 
-	- Open the **Permission groups** page (**Retail > Employees > Permission groups**) and enable the permission **Allow skip or mark as registered**.
+The error handling options that are available in the fiscal integration are set in the fiscal registration process. For more information about error handling in the fiscal integration, see [Error handling](fiscal-integration-for-retail-channel.md#error-handling).
 
-3. Options **Skip** and **Mark as registered** allow operators to enter additional information when fiscal registration fails. The info codes **Skip** and **Mark as registered** should be specified on a fiscal connector group to enable this. The information entered is saved as an info code transaction linked to the fiscal transaction. See [Info codes and info code groups](../info-codes-retail) for more details about info codes.
+1. On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), you can set the following parameters for each step of the fiscal registration process:
 
-	>[!NOTE]
-	> The trigger function with the value *Product* is not supported for the info codes that are used as **Skip** and **Mark as registered** in fiscal connector groups.
+    - **Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.
+    - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
 
-	- Open the **Fiscal connector groups** page.
-	- On the **Info codes** tab, select info codes or info code groups in the fields **Skip** and **Mark as registered**.
+2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip or mark as registered** permission.
+3. The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).
 
-	>[!NOTE]
-	> One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process. A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents. The error handling feature applies to fiscal documents only. 
-	> - *Fiscal document*: a mandatory document that should be registered successfully (e.g., a fiscal receipt).
-	> - *Non-fiscal document*: a supplementary document for the transaction or event (e.g., a gift card slip).
-	
-4. If it is required to allow user to continue processing the current operation (e.g., create or conclude a trasaction) when a health check error occured, the permission **Allow skip health check error** should be activated. See [Fiscal registration health check](fiscal-integration-for-retail-channel#fiscal-registration-health-check) for more details about the health check functionality.
+    > [!NOTE]
+    > The **Product** trigger function isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.
 
-	- Open the **Permission groups** page (**Retail > Employees > Permission groups**) and enable the permission **Allow skip health check error**.
+    - On the **Fiscal connector group** page, on the **Info codes** tab, select info codes or info code groups in the **Skip** and **Mark as registered** fields.
 
-     
-## Setting up fiscal X/Z reports from POS
+    > [!NOTE]
+    > One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process. A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents. The error handling feature applies only to fiscal documents.
+    >
+    > - **Fiscal document** – A mandatory document that should be registered successfully (for example, a fiscal receipt).
+    > - **Non-fiscal document** – A supplementary document for the transaction or event (for example, a gift card slip).
 
-To enable running fiscal X/Z reports from POS, new buttons should be added to a POS layout.
-- Open the **Button grids** page.
-- Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
-	- Select the layout that you are going to update. 
-	- Add a new button and set the button property **Print fiscal X**.
-	- Add a new button and set the button property **Print fiscal Z**.
-	- Run the job **1090** on the **Distribution schedule** page to transfer changes to the Channel database.
-	
-## Setting up manual run of the fiscal registration from POS
+## Set up fiscal X/Z reports from the POS
 
-To enable running the fiscal registration from POS for a transaction awaiting the fiscal registration, a new button should be added to a POS layout.
-- Open the **Button grids** page.
-- Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
-	- Select the layout that you are going to update. 
-	- Add a new button and set the button property **Complete fiscal registration process**.
-	- Run the job **1090** on the **Distribution schedule** page to transfer changes to the Channel database.
+To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.
+
+- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+
+    1. Select the layout to update. 
+    2. Add a new button, and set the **Print fiscal X** button property.
+    3. Add a new button, and set the **Print fiscal Z** button property.
+    4. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
+

@@ -36,10 +36,9 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic lists the new or updated Task guides that were released to the Microsoft (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released.
 
-Task guides in the (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
----------------------------------------------------------------------------------------------------
+## Task guides in the (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
 
-The (August 2016 - all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX platform update 2 (August 2016), the Dynamics AX May 2016 application update, and the Microsoft Dynamics AX February 2016 release. For more information about these releases, see [What’s new or changed](whats-new-changed.md). Localized versions of the Task guides are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).
+The (August 2016 - all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX platform update 2 (August 2016), the Dynamics AX May 2016 application update, and the Microsoft Dynamics AX February 2016 release. For more information about these releases, see [What's new or changed](whats-new-changed.md). Localized versions of the Task guides are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).
 
 ### Data access
 
@@ -100,16 +99,10 @@ The (August 2016 - all languages) APQC Unified Library contains the Task guides 
 |-----------------------------------------------------------------------------|----------------|
 | Set up a mobile device menu item for completing work of type Purchase order | Global         |
 
-
-
-Additional resources
---------
+## Additional resources
 
 [New Task guides (February 2016)](new-task-guides-available-february-2016.md)
 
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
-
-
-

@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 11/10/2017
+ms.date: 02/11/2019
 
 ms.topic: article
 ms.prod: 
@@ -53,8 +53,7 @@ For more information about OData, see the following webpages.
 | Topic                                                               | Webpage                                                 |
 |---------------------------------------------------------------------|---------------------------------------------------------|
 | OData standards                                                     | <http://www.odata.org/documentation/>                   |
-| OData: Data access for the web, the cloud, mobile devices, and more | <http://msdn.microsoft.com/en-us/data/hh237663.aspx>    |
-| OData through examples                                              | <http://msdn.microsoft.com/en-us/library/ff478141.aspx> |
+| OData: Data access for the web, the cloud, mobile devices, and more | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
@@ -208,7 +207,13 @@ public int CalculateMaintenanceDuration()
 
 In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.
 
-[![Exposed method in the OData $metadata](./media/1_odata.png)](./media/1_odata.png)
+```
+<Action Name="CalcMaintenanceDuration" IsBound="true">
+    <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
+    <ReturnType Type="Edm.String" />
+</Action>
+
+```
 
 The following example of an OData action takes in a parameter and returns a list.
 
@@ -305,3 +310,6 @@ public static void CreateVendor(Resources context)
 
 ### Handling duplicate names between enums and entities in metadata
 There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the helper code in gitHub <https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs> can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the Odata logic on the client side.
+
+### Array fields
+OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.

@@ -78,7 +78,7 @@ And below is the illustration describes how authorization works for Service to s
 
 ![Service to service calls using clident credentials](./media/S2SAuth.jpg)
 
-### Register a native application with AAD
+### Register a web application with AAD
 
 Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD.
 

@@ -5,7 +5,7 @@ title: Merge the build systems for Retail and Finance and Operations
 description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Azure DevOps.  
 author: andreash1
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -41,6 +41,14 @@ To get started, you must follow all the steps to get a full continuous build sys
 ## Prepare the Retail SDK
 ### Getting the Retail SDK
 If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
+
+## Install NuGet.exe 
+Some of the dependency packages and references have moved to NuGet packages to minimize the file merge and the size of the SDK. These are available for download from the NuGet.org. When you build the Retail SDK these dependencies are automatically pulled from the NuGet.org based on the packages.config file. For this to work, you need to install the [NuGet command line interface](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#installing-nugetexe) and add the nuget to the Windows path after downloading nuget.exe from NuGet.org. The following steps show how to add the nuget to the Windows path:
+
+  1. Open the Windows menu and type “Path”. The **Edit the system environment variables** will be available. 
+  2. In that menu, click **Environment variables** on the lower right.
+  3. In the next window, under **System variables**, select **Path** and click **Edit**.
+  4. Add an entry for the folder where you would like to store the nuget.exe file or store the nuget.exe file in a folder that is already listed.
 
 ## Add a repository mapping for the Retail SDK
 Edit the build definition so that it includes the location of the Retail SDK. (In other words, add a map.) [![Adding a repository mapping for the Retail SDK](./media/build-map-addition.png)](./media/build-map-addition.png)

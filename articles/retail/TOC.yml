@@ -4,6 +4,8 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
+  - name: Preview features in Dynamics 365 for Retail (April 2019)
+    href: get-started/april-whats-new.md
   - name: Before you buy Retail
     href: get-started/before-you-buy.md
   - name: Sign up for a preview subscription
@@ -57,10 +59,14 @@
     href: ../financials/accounts-receivable/credit-card-authorizations.md
   - name: Configure cash denominations for the POS
     href: cash-denominations.md
+  - name: Dynamics 365 Payment Connector for Adyen
+    href: dev-itpro/adyen-connector.md
   - name: Set up pay invoice scenarios
     href: payinvoice.md
   - name: Payments FAQ
     href: dev-itpro/payments-retail.md
+  - name: Duplicate payments prevention
+    href: duplicate-payment-protection.md
 - name: Purchase orders
   items:
   - name: Purchase order overview
@@ -77,6 +83,8 @@
   items:
   - name: Retail statements
     href: retail-statements.md
+  - name: Retail transaction consistency checker
+    href: valid-checker.md
   - name: Create, calculate, and post statements for a retail store
     href: tasks/create-calculate-post-statement-retail-store.md
   - name: Improvements to statement posting functionality
@@ -101,6 +109,8 @@
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Omni-channel advanced auto charges
+  href: omni-auto-charges.md
 - name: Call center
   items:
   - name: Call center sales functionality
@@ -147,6 +157,8 @@
     href: POS-search-improvements.md
   - name: Inventory lookup in the POS
     href: product-variants-POS.md
+  - name: Suspend and resume transactions in the POS
+    href: pos-suspend-recall-transactions.md
   - name: Hardware peripherals
     items:
     - name: Retail peripherals
@@ -157,6 +169,8 @@
       href: define-maintain-channel-clients-registers-hw-stations.md
   - name: Screen layouts
     items:
+    - name: Demo data screen layouts in MPOS/CPOS
+      href: demo-data.md
     - name: Screen layouts for the POS
       href: pos-screen-layouts.md
     - name: Install the Retail POS layout designer
@@ -181,6 +195,8 @@
     href: pos-offline-functionality.md
   - name: Shift and cash drawer management
     href: shift-drawer-management.md
+  - name: Cash out gift card balance
+    href: dev-itpro/gift-card-cash-out.md
   - name: Customer orders
     items:
     - name: Customer orders in MPOS
@@ -217,8 +233,16 @@
     href: Order-fulfillment-POS-setup.md
   - name: Show order notifications in the POS
     href: Notifications-POS.md
-- name: Configure and process an exchange on a return order
-  href: orderexchanges.md
+- name: Returns
+  items:
+  - name: Sell and return products not included in a store's assortment
+    href: sell-return-outside-assortments.md
+  - name: Configure and process an exchange on a return order
+    href: orderexchanges.md
+  - name: Restrict payment methods for returns without a receipt
+    href: payment-methods-restrictions.md
+  - name: Return items across multiple customer orders and invoices
+    href: multireturn.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
@@ -233,7 +257,9 @@
     href: store-performance-information.md
   - name: Set up Recency, Frequency, and Monetary (RFM) analysis
     href: set-up-rfm-analysis.md
-- name: Discounts and price adjustments
+- name: Retail price reports
+  href: price-report.md
+- name: Pricing and discounts
   items:
   - name: Retail discounts
     href: retail-discounts-overview.md
@@ -362,7 +388,7 @@
     - name: Cash register functionality
       href: localizations/emea-swe-cash-registers.md
     - name: Sample for Retail POS integration with control units
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Retail tasks
   items:
   - name: Create a product
@@ -484,6 +510,8 @@
       href: dev-itpro/overview-upgrade-n-minus1.md
     - name: Phased Rollout (N-1) installation, configuration, and cutover
       href: dev-itpro/n-1-installation-configuration.md
+    - name: Upgrade the Retail channel extension to the latest Retail SDK
+      href: dev-itpro/retailSDK-update.md
   - name: Implementation guidance
     items:
     - name: Device management implementation guidance
@@ -524,6 +552,8 @@
       href: dev-itpro/create-retail-experience-app.md
     - name: Set up POS Hybrid app on Android and iOS
       href: dev-itpro/hybridApp.md
+    - name: Override POS request handler
+      href: dev-itpro/pos-handler.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
@@ -578,6 +608,10 @@
       href: dev-itpro/payment-custom-error-messages.md
     - name: Create Windows installers for payment connectors
       href: dev-itpro/create-windows-installer-payment-connector.md
+    - name: Payment data use
+      href: payment-connector-data-fields.md
+    - name: Enable duplicate payment protection for payment connector
+      href: dev-itpro/duplicate-payment-protection.md
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:

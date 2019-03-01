@@ -73,7 +73,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
 3.  In the **File name** field, type the pattern \*LINQ\*.dll and then press **Enter**. You'll see a list of assemblies with the name LINQ in them. From that list, select the following files, and then click **Add**:
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.dll
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
-    -   Microsoft.Dynamics.AX.Frameowrk.Linq.Data.Msil.dll
+    -   Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
 
     [![SelectReferences\_LinqC](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
 4.  You must also add the support assemblies that contain the Common type that you'll use in the code below. Click **Browse** again, and then type the following file name into the field:
