@@ -70,7 +70,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 > For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 
 > [!NOTE] 
-> If your environment is on an Application version 8.1 and above then the Platform Update package does not apply to your environment. Starting with 8.1 and above release, Application and Platform binary update package is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft.
+> If your environment is on an Application version 8.1 and above then the **Platform Update package does not apply** to your environment. Starting with 8.1 and above release, Application and Platform binary update package is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft. Also note that you will no longer be applying granular X++ hotfixes and will get all application and platform updates together. This means that on the environment details page clicking on **View detailed version information** will not have details on the granular hotfixes or KBs applied as there is no way to apply them. 
 
 ## Prerequisite steps
 
