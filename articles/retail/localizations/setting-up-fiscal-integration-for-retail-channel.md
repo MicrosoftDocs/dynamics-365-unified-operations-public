@@ -188,8 +188,13 @@ The error handling options that are available in the fiscal integration are set 
 
     - **Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.
     - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
+    - **Continue on error** - This parameter defines whether it is possible or not to continue working on the same terminal when the         fiscal registration has failed.
+
+     > [!NOTE]
+     > If user enables the **Continue on error** parameter, the parameters **Allow skip** and **Allow mark as registered** are disabled automatically as they apply to the mandatory registration of fiscal documents only. 
 
 2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip or mark as registered** permission.
+
 3. The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).
 
     > [!NOTE]
@@ -203,6 +208,10 @@ The error handling options that are available in the fiscal integration are set 
     > - **Fiscal document** – A mandatory document that should be registered successfully (for example, a fiscal receipt).
     > - **Non-fiscal document** – A supplementary document for the transaction or event (for example, a gift card slip).
 
+4. If it is required to allow user to continue processing the current operation (e.g., create or conclude a trasaction) when a health check error occured, the permission **Allow skip health check error** should be activated. See [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check) for more details about the health check functionality.
+
+    - Open the **Permission groups** page (**Retail > Employees > Permission groups**) and enable the permission **Allow skip health check error**.
+
 ## Set up fiscal X/Z reports from the POS
 
 To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.
@@ -214,3 +223,11 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
     3. Add a new button, and set the **Print fiscal Z** button property.
     4. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
 
+## Setting up manual run of the fiscal registration from POS
+
+To enable running the fiscal registration from POS for a transaction awaiting the fiscal registration, a new button should be added to a POS layout.
+- Open the **Button grids** page.
+- Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+    - Select the layout that you are going to update. 
+    - Add a new button and set the button property **Complete fiscal registration process**.
+    - Run the job **1090** on the **Distribution schedule** page to transfer changes to the Channel database.
