@@ -77,3 +77,4 @@ There are several benefits of using the workflow system in your organization:
 + [Configure a parallel activity in a workflow](configure-parallel-activity-workflow.md)
 + [Configure a parallel branch in a workflow](configure-parallel-branch-workflow.md)
 + [Configure a line-item workflow](configure-line-item-workflow.md)
++ [Workflow FAQ](workflow-FAQ.md)

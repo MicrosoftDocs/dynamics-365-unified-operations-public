@@ -90,6 +90,7 @@ When fiscal registration of a transaction or event is successful, a fiscal trans
 
 Fiscal transactions are transferred to Retail Headquarters by the *P-job*, together with retail transactions. On the **Fiscal transactions** FastTab of the **Retail store transactions** page, you can view the fiscal transactions that are linked to retail transactions.
 
+
 A fiscal transaction stores the following details:
 
 - Fiscal registration process details (process, connector group, connector, and so on). It also stores the serial number of the fiscal device in the **Register number** field, if this information is included in the fiscal response.
@@ -119,3 +120,4 @@ The following fiscal integration functionality is also available in the Retail S
 - [Digital signature for France](emea-fra-cash-registers.md)
 - [Digital signature for Norway](emea-nor-cash-registers.md)
 - [Control unit integration sample for Sweden](./retail-sdk-control-unit-sample.md)
+

@@ -37,21 +37,9 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version has a build number of 10.0.8.
 
-To learn about the preview features in Microsoft Dynamics 365 for Retail, see [•	Preview features in Dynamics 365 for Retail (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new).
+To learn about the preview features in Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new).
 
-## Dynamics 365 April '19 release notes
 
-Wondering about upcoming and recently released capabilities in any of our business apps or platform?
-
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
-
-## Bug fixes
-
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156).
-
-## Platform update 24
-
-Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [Preview features in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
 
 ## Extensibility enhancements
 
@@ -67,3 +55,20 @@ This feature allows you to create non-GST transactions with the Tax engine. To c
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+
+## Additional resources
+
+### Platform update 24
+
+Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [Preview features in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
+
+
+### Dynamics 365 April '19 release notes
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+### Bug fixes
+
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156).
