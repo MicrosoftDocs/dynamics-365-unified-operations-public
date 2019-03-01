@@ -347,6 +347,10 @@
     href: localizations/fiscal-integration-for-retail-channel.md
   - name: Set up fiscal integration for Retail channel
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Austria
+    items:
+    - name: Fiscal registration service integration sample for Austria
+      href: localizations/emea-aut-fi-sample.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
