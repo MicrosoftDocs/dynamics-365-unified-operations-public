@@ -5,7 +5,7 @@ title: Catch weight product processing with warehouse management
 description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: 8.1.3
 To use warehouse management to process catch weight products, you must use a license configuration key to turn on the functionality. (Go to **System administration \> Setup \> License configuration**. Then, on the **Configuration keys** tab, expand **Trade \> Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**).
 
 > [!NOTE]
-> Both the **Warehouse and Transportation management** license configuration key and the **Process distribution catch weight** license configuration keys must also be turned on.
+> Both the **Warehouse and Transportation management** license configuration key and the **Process distribution \> Catch weight** license configuration keys must also be turned on.
 
 After the license configuration key is turned on, when you create a released product, you can select **Catch weight**. You can also associate the released product with a storage dimension group that the **Use warehouse management processes** parameter is selected for.
 
