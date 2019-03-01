@@ -103,4 +103,4 @@ In this example, item 81334 will be assigned a Freight charge of $5.62.  These c
 
 ![Pro-rated charges on sales line](media/proratedlinecharge.png)
 
-With this method of calculation, in a partial return scenario, if the charge code is refundable, only the portion of the charge allocated to that line will be refunded when the item is returned. 
+With this method of calculation in a partial return scenario, if the charge code is refundable, only the portion of the charge allocated to that line will be refunded when the item is returned. 
