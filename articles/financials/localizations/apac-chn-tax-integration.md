@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process for configuring tax integration for China 
+This topic describes the process for configuring tax integration for China. 
 
 ## Prerequisites for version 10.0 and later
 In order to the system may output this code in the exported file, the following settings should be completed in order:
