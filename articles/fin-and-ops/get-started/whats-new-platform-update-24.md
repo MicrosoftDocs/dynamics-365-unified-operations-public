@@ -78,9 +78,7 @@ Supported scenarios include using intuitive controls to create Alerts rules that
 > [!Note]
 > Join the Dynamics 365 Insider Program to get early access to preview features.
 
-## Private preview features available in Platform update 24
-
-### Business events (Private preview)
+## Business events (Private preview)
 This new capability will provide a framework that will allow business processes in Finance and Operations to capture business events as business processes are executed, and send the events to an external system or application.
 
 > [!Note]
