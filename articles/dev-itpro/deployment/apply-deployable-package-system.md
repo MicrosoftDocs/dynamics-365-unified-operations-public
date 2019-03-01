@@ -59,11 +59,18 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 ## Supported package types
 
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created in a development or build environment.
-- **Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft.
+- **Application and Platform Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft. This is available from the All binary updates tile from LCS.
+- **Platform update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform depend on. This is a package released by Microsoft. This is available from the Platform binary updates tile from LCS.
 - **Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
 - **Merged package** – A package that is created by combining one package of each type. For example, you can merge one binary update package and one AOT package, or one AOT package and one Retail deployable package. The packages are merged in the Asset library for the project in LCS.
 > [!NOTE] 
 > A binary package and a Retail deployable package can't be included in the same merged package.
+
+> [!NOTE]
+> For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+
+> [!NOTE] 
+> If your environment is on an Application version 8.1 and above then the Platform Update package does not apply to your environment. Starting with 8.1 and above release, Application and Platform binary update package is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft.
 
 ## Prerequisite steps
 
