@@ -213,3 +213,4 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
     2. Add a new button, and set the **Print fiscal X** button property.
     3. Add a new button, and set the **Print fiscal Z** button property.
     4. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
+
