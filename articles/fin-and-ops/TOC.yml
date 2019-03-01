@@ -3284,6 +3284,8 @@
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: Workflow types report
         href: organization-administration/workflow-types-report.md
+      - name: Workflow FAQ
+        href: organization-administration/workflow-FAQ.md
     - name: Alerts
       href: get-started/alerts-overview.md
       items:

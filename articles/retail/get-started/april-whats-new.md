@@ -39,11 +39,6 @@ This topic describes features that are in preview in Microsoft Dynamics 365 for 
 
 To learn about the preview features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10).
 
-## Dynamics 365 April '19 release notes
-
-Wondering about upcoming and recently released capabilities in any of our business apps or platform?
-
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ## Restrict payment methods for returns without a receipt
 This feature allows for certain payment types to be restricted for refund if the returns are made without a receipt using Dynamics 365 for Retail.
@@ -72,3 +67,11 @@ For more information, see [Loyalty overview](../../retail/set-up-customer-loyalt
 
 ## Fiscal printer integration sample for Poland
 Microsoft Dynamics 365 for Retail now contains a sample of the integration of POS with fiscal printers for Poland. The sample is a part of the Retail SDK. Implementation partners may extend the integration functionality to cover all required retail scenarios or build integration with other fiscal printer models based on the samples.
+
+## Additional resources
+
+### Dynamics 365 April '19 release notes
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
