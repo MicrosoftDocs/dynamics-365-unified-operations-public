@@ -45,7 +45,7 @@ Set up a financial report with the list of financial report cells and rules for 
 
 2.  Go to **General ledger \> Financial reports setup \> Financial reports**. Click on the line with value «Баланс» in the column **Code**.
 
-3.  Click Setup. On the page **Requisites setup**, set up calculation rules for report cells as described in the topic [Financial reporting (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-financial-reports#set-up-calculation-rules-for-report-cells)
+3.  Click Setup. On the page **Requisites setup**, set up calculation rules for report cells as described in the topic [Financial reporting (Russia)](rus-financial-reports#set-up-calculation-rules-for-report-cells.md)
 
 ## Create Excel template for financial report
 
@@ -57,7 +57,7 @@ Review the example of *Balance sheet Excel template:*
 
 Create ER configuration format based on ER **Financial reports model**.
 
-Before going to next steps, learn how to set up ER configuration which generates the report in Excel format, in the topic [ER Design a configuration for generating reports in OPENXML format (November 2016)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11?toc=/fin-and-ops/toc.json)
+Before going to next steps, learn how to set up ER configuration which generates the report in Excel format, in the topic [ER Design a configuration for generating reports in OPENXML format (November 2016)](../../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
 
 1.  Download the latest version of the Electronic reporting (ER) configurations:
 
@@ -65,11 +65,11 @@ Before going to next steps, learn how to set up ER configuration which generates
   -   Financial reports model mapping (RU)
   -   Balance sheet format Excel example (RU)
 
-    Fix downloading instructions are in the topic [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+For Fix downloading instructions see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-1.  Go to **Workspaces \> Electronic reporting**. Click **Reporting configurations**.
+2.  Go to **Workspaces \> Electronic reporting**. Click **Reporting configurations**.
 
-2.  Create draft format for financial report in Excel
+3.  Create draft format for financial report in Excel.
 
     1.  Choose **Financial reports model** configuration
 
@@ -89,11 +89,11 @@ Before going to next steps, learn how to set up ER configuration which generates
 
     9.  Click **OK**. Review the cells created from the Excel template names:
 
-![](media/e74967d144a2b7c6f02614f6646b0b95.jpg)
+        ![Format mapping cells](media/rus-format-designer-mapping.jpg)
 
-1.  Close the page.
+4.  Close the page.
 
-2.  Review ER format **Balance sheet format Excel example (RU)**
+5.  Review ER format **Balance sheet format Excel example (RU)**.
 
     1.  Select **Balance sheet format Excel example (RU)** ER configuration and click **Designer**.
 
@@ -109,13 +109,13 @@ Before going to next steps, learn how to set up ER configuration which generates
 
 -   Create a derived model based on the **Financial reports model**, add new model elements. Create a derived model mapping based on **Financial reports model mapping** and bind new model elements to Dynamics 365 for Finance and operations data sources
 
->   Find more details about how to create ER data models in the topic: [ER Design domain specific data model](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11?toc=/fin-and-ops/toc.json)
+>   Find more details about how to create ER data models in the topic: [ER Design domain specific data model](../../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
 
 >   Find more details about how to map data model elements to data sources, in the topics:
 
->   [Define ER model mappings and select data sources for them](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11?toc=/fin-and-ops/toc.json)
+>   [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
 
->   [ER Map data model to selected data sources](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11?toc=/fin-and-ops/toc.json)
+>   [ER Map data model to selected data sources](../../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
 
 1.  Review that cells where the financial report values are exported, like
 
@@ -137,7 +137,7 @@ Before going to next steps, learn how to set up ER configuration which generates
 
 The calculated field Calculations.'\$Values' contains the financial report cell value where the cell name is equal to the “Input parameter”.
 
-Find more details about the Financial reports model in the topic [Configure ER to use the results of financial report calculations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-financial-reports#configure-er-to-use-the-results-of-financial-report-calculations)
+Find more details about the Financial reports model in the topic [Configure ER to use the results of financial report calculations](rus-financial-reports#configure-er-to-use-the-results-of-financial-report-calculations.md)
 
 1.  Learn how to quickly bind the calculated values of financial report cells to the Excel cells elements.
 
@@ -156,7 +156,7 @@ Find more details about the Financial reports model in the topic [Configure ER t
 
 >   Value in the field **Name** must be equal to the **Cell code** in the financial report. In this example, enter to the **Name** field the value which is equal to the value in the field **Excel range**
 
-![](media/0cdef62b8bace402c4284dfb8afc3ad4.jpg)
+![Format mapping field name](media/rus-format-designer-format.jpg)
 
 >   A screenshot of a cell phone Description automatically generated
 
@@ -164,7 +164,7 @@ Find more details about the Financial reports model in the topic [Configure ER t
 
 2.  In the list of Excel format cells, click on the cell ‘АктивВнеОбАНематАктПояснения’. Click **Bind**
 
-![](media/f0cc4b6d604cc44e57500469885f7d35.jpg)
+![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
 
 >   A screenshot of a social media post Description automatically generated
 
@@ -176,7 +176,7 @@ Find more details about the Financial reports model in the topic [Configure ER t
 
 ## Run financial report format
 
-You can configure Electronic messages feature to run any ER configuration. Find more details in the topic [Configure electronic messages to generate the financial report and store the results](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-financial-reports#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results)
+You can configure Electronic messages feature to run any ER configuration. Find more details in the topic [Configure electronic messages to generate the financial report and store the results](rus-financial-reports#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results.md)
 
 To run the ER format which is based on the Financial reports model, do the following:
 
