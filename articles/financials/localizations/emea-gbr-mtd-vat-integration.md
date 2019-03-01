@@ -279,6 +279,8 @@ For storing **periodKey** value in both **UK MTD VAT TEST** and **UK MTD VAT ret
 
 Schematically lifecycle of Electronic message processing for VAT obligation retrieving is shown on the diagram:
 
+![Schematic lifecycle of electronic message processing for VAT obligation retrieving](media/mkd-process.png)
+
 The last step of the processing is **Import VAT obligations** action of **Electronic reporting import** type. On this step system defines:
 
 -   if a VAT obligation from the response doesn’t exist in the data base and the status of this VAT obligation in HMRC is **Open**, a new Electronic message in **New VAT return** status will be created.
