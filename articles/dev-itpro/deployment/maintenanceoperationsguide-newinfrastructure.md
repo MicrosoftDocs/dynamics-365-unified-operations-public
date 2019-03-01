@@ -42,7 +42,7 @@ You can use the restart services functionality to restart individual services th
 
 To restart a service, follow these steps.
 
-1. In Microsoft Dynamics Lifecycle Services (LCS), on the environment details page, under **Maintain**, select **Restart service**.
+1. In Microsoft Dynamics Lifecycle Services (LCS), on the environment details page, 'select **Maintain \> Restart service**.
 2. Select the service to restart, and then select **Confirm**.
 
     During the restart, the environment's status is updated to **Restarting service**, and you can't start any other maintenance operations. After the service has been restarted, the environment's status is returned to **Deployed**.
@@ -53,11 +53,11 @@ Finance and Operations includes a system-wide setting that is named [maintenance
 
 To turn maintenance mode on or off, follow these steps.
 
-1. In LCS, on the environment details page, under **Maintain**, select **Enable Maintenance mode**.
+1. In LCS, on the environment details page, select **Maintain \> Enable Maintenance mode**.
 
     The environment's status is changed from **Deployed** to **Servicing**. After maintenance mode has been turned on, the environment's status is updated to **In Maintenance**, and only the system admin can sign in.
 
-2. After the system admin has finished making configuration changes, on the environment details page, under **Maintain**, select **Disable Maintenance mode**.
+2. After the system admin has finished making configuration changes, on the environment details page, select **Maintain \> Disable Maintenance mode**.
 
     The environment's status is changed from **In Maintenance** to **Servicing**. After maintenance mode has been turned off, the environment's status is returned to **Deployed**. The environment history is updated to reflect the fact that the environment was put into maintenance mode.
 
@@ -77,14 +77,14 @@ To connect to a database, follow these steps.
 
 3. Refresh the environment details page to view the connection string and access details.
 
-    The access that is granted to you depends on the reason that you selected in the **Reason for access** field. For example, if you selected AX troubleshooting as the reason, read-only access to the AX database is granted. If you selected performance tuning as the reason, write access to the AX database is granted.
+    The access that is granted to you depends on the reason that you selected in the **Reason for access** field. For example, if you selected **AX troubleshooting** as the reason, read-only access to the AX database is granted. If you selected **Performance tuning** as the reason, write access to the AX database is granted.
 
 4. Before you can access Microsoft Azure SQL Database through LCS, the IP address of the computer where you will use Microsoft SQL Server Management Studio to connect to the SQL database must be added to the approved list (sometimes referred to as the "whitelist").
 
     To complete this step, you can add a new SQL Database firewall rule:
 
-    1. On the **Maintain** menu, select **Enable access**.
-    2. Add a new rule. In the drop-down list, select Azure SQL.
+    1. In LCS, on the environment details page, select **Maintain \> Enable access**.
+    2. Add a new rule. In the **Service** field, select **Azure SQL**.
     3. Enter a name for the rule, enter the IP address of the computer, and then select **Confirm**.
 
     This rule also has an expiration time of eight hours.
