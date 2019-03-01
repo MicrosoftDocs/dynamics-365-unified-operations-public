@@ -84,12 +84,35 @@ The fiscal integration framework provides the following options to handle failur
 
 The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### Optional fiscal registration
+
+Fiscal registration may be mandatory for some operations and optional for others. For example, it may be mandatory to complete fiscal registration of regular sales and returns, but operations related to customer deposits may be optional from the fiscal registration perspective. In this case, a failure to complete fiscal registration of a sale should block further sales, but a failure to complete fiscal registration of a customer deposit should not. To distinguish between mandatory and optional operations, it is recommended to handle them through different document providers and to set up separate steps of the fiscal registration process for these providers. A step related to optional fiscal registration should have the **Continue on error** parameter enabled. For more details about setting up error handling parameters, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel.md#error-handling-settings).
+
+### Manual run of the fiscal registration
+
+Fiscal integration functionality supports running the fiscal registration for the transactions awaiting the fiscal regisctration. A new button should be added to the POS screen layout. For more details, see [Setting up manual run of the fiscal registration from POS](setting-up-fiscal-integration-for-retail-channel.md#setting-up-manual-run-of-the-fiscal-registration-from-pos). If the fiscal transaction had failed and user selected the **Cancel** option in the error handling dialog, user should click this button to run the fiscal registration manually from POS.
+
+### Fiscal registration health check
+
+The health check is a built-in procedure within the fiscal integration framework, which aims to check availability of the fiscal device or service before concluding a transaction, and to prevent executing irreversible operation on POS by notifying users in advance if the fiscal registration could not be performed at the moment. 
+
+POS runs verification of the fiscal device or service availability on the following events:
+  - Open a new transaction.
+  - Recall a suspended transaction.
+  - Before concluding a transaction.
+
+When the health check identifies a problem, POS displays a health check dialog with the options:
+  - **Cancel** - if user selects this option, POS cancels the last action (e.g., add item to cart or conclude a transaction).
+  - **Ok** -  this option allows to ignore a health check error and continue processing. To select this option, user should have the permission **Allow skip health check error** enabled. 
+
+> [!NOTE]
+> The health check is performed when the current transaction is an object of the fiscal registration and the current step of the registration process has the disabled **Continue on error** parameter. For more details, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel.md#error-handling-settings).
+
 ## Storing fiscal response in fiscal transaction
 
 When fiscal registration of a transaction or event is successful, a fiscal transaction is created in the channel database and linked to the original transaction or event. Similarly, if the **Skip** or **Mark as registered** option is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, a fiscal transaction is created for each step of the process that resulted in a successful or failed registration.
 
 Fiscal transactions are transferred to Retail Headquarters by the *P-job*, together with retail transactions. On the **Fiscal transactions** FastTab of the **Retail store transactions** page, you can view the fiscal transactions that are linked to retail transactions.
-
 
 A fiscal transaction stores the following details:
 
@@ -114,6 +137,7 @@ The following fiscal integration samples are currently available in the Retail S
 
 - [Fiscal printer integration sample for Italy](emea-ita-fpi-sample.md)
 - [Fiscal printer integration sample for Poland](emea-pol-fpi-sample.md)
+- [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md)
 
 The following fiscal integration functionality is also available in the Retail SDK but doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
 
