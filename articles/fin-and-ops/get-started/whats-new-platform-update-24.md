@@ -70,6 +70,16 @@ The following image shows how the navigation bar appeared in Platform update 23.
 
 The [first wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility), included in Platform update 24, are documented in the April 2019 Release notes. There are nine enhancements detailed, with one of the highlights being a new onClicking event for form button controls.
 
+## Client Alert support for email notifications (Preview)
+Stay on top of your business data with integrated change tracking tools.  With Platform update 24, users are able to create Alert Rules that automatically dispatch email notifications to contacts when triggered by an event.  This capability has the distinction of being the number 1 requested feature in the Dynamics Ideas customer forum.  With Dynamics 365 for Finance and Operations, users are able to define custom Alert rules to monitor filtered views of their data.  The option of receiving email notifications is available for all supported Alert types and can be enabled for existing Alert rules.  
+
+Supported scenarios include using intuitive controls to create Alerts rules that monitor filtered views of System batch jobs.  Move beyond the burden of constantly checking reports for changes to business data and let the Dynamics 365 for Finance and Operations intelligent change detection service do the monitoring for you.
+
+> [!Note]
+> Join the Dynamics 365 Insider Program to get early access to preview features.
+
+## Private preview features available in Platform update 24
+
 ### Business events (Private preview)
 This new capability will provide a framework that will allow business processes in Finance and Operations to capture business events as business processes are executed, and send the events to an external system or application.
 
@@ -96,14 +106,6 @@ Some capabilities that will be included are:
 -   Exposing business events as 'triggers' in Microsoft Flow.
 
 For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
-
-## Client Alert support for email notifications (Preview)
-Stay on top of your business data with integrated change tracking tools.  With Platform update 24, users are able to create Alert Rules that automatically dispatch email notifications to contacts when triggered by an event.  This capability has the distinction of being the number 1 requested feature in the Dynamics Ideas customer forum.  With Dynamics 365 for Finance and Operations, users are able to define custom Alert rules to monitor filtered views of their data.  The option of receiving email notifications is available for all supported Alert types and can be enabled for existing Alert rules.  
-
-Supported scenarios include using intuitive controls to create Alerts rules that monitor filtered views of System batch jobs.  Move beyond the burden of constantly checking reports for changes to business data and let the Dynamics 365 for Finance and Operations intelligent change detection service do the monitoring for you.
-
-> [!Note]
-> Join the Dynamics 365 Insider Program to get early access to preview features.
 
 ## Additional resources
 ### Platform update 24 bug fixes
