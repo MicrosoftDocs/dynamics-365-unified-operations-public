@@ -53,4 +53,4 @@ Here are some tips that you, as a consumer of the Microsoft code base, can use t
 
 ## List of deprecated methods and metadata elements
 
-For reference, you can use this Microsoft Excel file, which shows the artifacts that have been marked for deprecation in each major release.
+For reference, you can use this [Microsoft Excel file](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/DeprecationMME), which shows the artifacts that have been marked for deprecation in each major release.
