@@ -5,7 +5,7 @@ title: Deprecation of methods and metadata elements
 description: This topic provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves. 
 author: robadawy
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 03/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
