@@ -86,27 +86,27 @@ The **Skip** and **Mark as registered** options enable info codes to capture som
 
 ### Optional fiscal registration
 
-Fiscal registration may be mandatory for some operations and optional for others. For example, it may be mandatory to complete fiscal registration of regular sales and returns, but operations related to customer deposits may be optional from the fiscal registration perspective. In this case, a failure to complete fiscal registration of a sale should block further sales, but a failure to complete fiscal registration of a customer deposit should not. To distinguish between mandatory and optional operations, it is recommended to handle them through different document providers and to set up separate steps of the fiscal registration process for these providers. A step related to optional fiscal registration should have the **Continue on error** parameter enabled. For more details about setting up error handling parameters, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel.md#error-handling-settings).
+Fiscal registration may be mandatory for some operations and optional for others. For example, it may be mandatory to complete the fiscal registration of regular sales and returns, but operations related to customer deposits may be optional from the fiscal registration perspective. In this case, a failure to complete the fiscal registration of a sale should block further sales, but a failure to complete the fiscal registration of a customer deposit should not. To distinguish between mandatory and optional operations, it is recommended to handle them through different document providers and to set up separate steps of the fiscal registration process for these providers. A step related to optional fiscal registration should have the **Continue on error** parameter enabled. For more details about setting up error handling parameters, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel.md#error-handling-settings).
 
-### Manual run of the fiscal registration
+### Running fiscal registration manually
 
-Fiscal integration functionality supports running the fiscal registration for the transactions awaiting the fiscal regisctration. A new button should be added to the POS screen layout. For more details, see [Setting up manual run of the fiscal registration from POS](setting-up-fiscal-integration-for-retail-channel.md#setting-up-manual-run-of-the-fiscal-registration-from-pos). If the fiscal transaction had failed and user selected the **Cancel** option in the error handling dialog, user should click this button to run the fiscal registration manually from POS.
+If the fiscal registration of a transaction or event has been postponed after a failure (for example, the operator selected **Cancel** in the error handling dialog), it is possible to re-run the fiscal registration manually by invoking a corresponding operation. For more details, see [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ### Fiscal registration health check
 
-The health check is a built-in procedure within the fiscal integration framework, which aims to check availability of the fiscal device or service before concluding a transaction, and to prevent executing irreversible operation on POS by notifying users in advance if the fiscal registration could not be performed at the moment. 
+The fiscal registration health check procedure checks availability of the fiscal device or service upon certain events and notifies the operator in advance if the fiscal registration could not be completed at that moment. 
 
-POS runs verification of the fiscal device or service availability on the following events:
-  - Open a new transaction.
-  - Recall a suspended transaction.
-  - Before concluding a transaction.
+The POS checks the fiscal device or service availability upon the following events:
+  - A new transaction is opened;
+  - A suspended transaction is recalled;
+  - A sales or return transaction is finalized.
 
-When the health check identifies a problem, POS displays a health check dialog with the options:
-  - **Cancel** - if user selects this option, POS cancels the last action (e.g., add item to cart or conclude a transaction).
-  - **Ok** -  this option allows to ignore a health check error and continue processing. To select this option, user should have the permission **Allow skip health check error** enabled. 
+When the health check fails, the POS displays the health check dialog with the following options:
+  - **OK** -  This option lets the operator ignore a health check error and continue processing the operation. To select this option, the operator should have the **Allow skip health check error** permission enabled;
+  - **Cancel** - If this option is selected, the POS cancels the last action (for example, an item is not added to a new transaction).
 
 > [!NOTE]
-> The health check is performed when the current transaction is an object of the fiscal registration and the current step of the registration process has the disabled **Continue on error** parameter. For more details, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel.md#error-handling-settings).
+> The health check is only executed if the current operation requires the fiscal registration and the current step of the fiscal registration process has the **Continue on error** parameter disabled. For more details, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel.md#error-handling-settings).
 
 ## Storing fiscal response in fiscal transaction
 
