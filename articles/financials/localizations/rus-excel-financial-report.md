@@ -71,7 +71,7 @@ For Fix downloading instructions see [Download Electronic reporting configuratio
 
 2.  Go to **Workspaces \> Electronic reporting**. Click **Reporting configurations**.
 
-3.  Create draft format for financial report in Excel.
+3.  Learn how to create a new format for financial report in Excel.
 
     1.  Select **Financial reports model** configuration
 
