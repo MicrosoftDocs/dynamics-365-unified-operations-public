@@ -153,7 +153,7 @@ Before you use the fiscal integration functionality, you should configure the fo
     - After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).
     - After you make changes in the assignment of connector technical profiles to hardware profiles.
 
-8. On the **Distribution scheduler** page, run the **1070** and **1090** jobs to transfer data to the channel database.
+8. On the **Distribution schedule** page, run the **1070** and **1090** jobs to transfer data to the channel database.
 
 ## Set up fiscal texts for discounts
 
@@ -188,10 +188,10 @@ The error handling options that are available in the fiscal integration are set 
 
     - **Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.
     - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
-    - **Continue on error** - This parameter defines whether it is possible or not to continue working on the same terminal when the         fiscal registration has failed.
+    - **Continue on error** - This parameter defines if it is possible to continue working on the same terminal when the fiscal registration on this step fails.
 
      > [!NOTE]
-     > If user enables the **Continue on error** parameter, the parameters **Allow skip** and **Allow mark as registered** are disabled automatically as they apply to the mandatory registration of fiscal documents only. 
+     > If the **Continue on error** parameter is enabled, the **Allow skip** and **Allow mark as registered** parameters are automatically disabled. 
 
 2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip or mark as registered** permission.
 
@@ -208,9 +208,7 @@ The error handling options that are available in the fiscal integration are set 
     > - **Fiscal document** – A mandatory document that should be registered successfully (for example, a fiscal receipt).
     > - **Non-fiscal document** – A supplementary document for the transaction or event (for example, a gift card slip).
 
-4. If it is required to allow user to continue processing the current operation (e.g., create or conclude a trasaction) when a health check error occured, the permission **Allow skip health check error** should be activated. See [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check) for more details about the health check functionality.
-
-    - Open the **Permission groups** page (**Retail > Employees > Permission groups**) and enable the permission **Allow skip health check error**.
+4. If it is required to allow the operator to continue processing the current operation (for example, to create or finalize a trasaction) after a health check error occured, the **Allow skip health check error** permission should be enabled on the **Permission groups** page (**Retail \> Employees \> Permission groups**). See [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check) for more details about the health check procedure.
 
 ## Set up fiscal X/Z reports from the POS
 
@@ -223,11 +221,11 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
     3. Add a new button, and set the **Print fiscal Z** button property.
     4. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
 
-## Setting up manual run of the fiscal registration from POS
+## Enable manual execution of postponed fiscal registration
 
-To enable running the fiscal registration from POS for a transaction awaiting the fiscal registration, a new button should be added to a POS layout.
-- Open the **Button grids** page.
-- Follow the instructions from [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
-    - Select the layout that you are going to update. 
-    - Add a new button and set the button property **Complete fiscal registration process**.
-    - Run the job **1090** on the **Distribution schedule** page to transfer changes to the Channel database.
+To enable manual execution of the postponed fiscal registration, you should add a new button to a POS layout.
+- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+
+    1. Select the layout to update. 
+    2. Add a new button, and set the **Complete fiscal registration process** button property.
+    3. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
