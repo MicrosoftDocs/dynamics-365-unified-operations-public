@@ -35,27 +35,27 @@ The following steps explain how a user in the System Administrator or Electronic
 
 Before reviewing this topic, you should review the topic [Create Electronic reporting (ER) configurations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/fin-and-ops/toc.json) and all topics behind this one.
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating financial report in Excel format.
+
 
 ## Set up Financial report
 
 Set up a financial report with the list of financial report cells and rules for calculation of financial reports cells.
 
-1.  As example, upload data management package settings **RU Accounting reporting 5.07 (2016).zip** as described in the topic Accounting reporting in electronic format.
+1.  As example, upload data management package settings **RU Accounting reporting 5.07 (2016).zip** as described in the topic [Accounting reporting in electronic format](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-act-reporting/articles/financials/localizations/rus-accounting-reporting.md).
 
-2.  Go to **General ledger \> Financial reports setup \> Financial reports**. Click on the line with value «Баланс» in the column **Code**.
+2.  Go to **General ledger \> Financial reports setup \> Financial reports**. Click on the line with value *Баланс* in the column **Code**.
 
-3.  Click Setup. On the page **Requisites setup**, set up calculation rules for report cells as described in the topic [Financial reporting (Russia)](rus-financial-reports#set-up-calculation-rules-for-report-cells.md)
+3.  Click **Setup**. On the page **Requisites setup**, set up calculation rules for report cells as described in the topic [Financial reporting (Russia)](rus-financial-reports#set-up-calculation-rules-for-report-cells.md)
 
 ## Create Excel template for financial report
 
-Set up Excel template for your financial report. As minimum, you should assign names to all Excel cells which should have values in the generated report.
+Create Excel template for your financial report. As minimum, you should assign names to all Excel cells which should have values in the generated report.
 
-Review the example of *Balance sheet Excel template:*
+
 
 ## Create ER configuration for financial report in Excel
 
-Create ER configuration format based on ER **Financial reports model**.
+Create ER configuration format based on ER model **Financial reports model**.
 
 Before going to next steps, learn how to set up ER configuration which generates the report in Excel format, in the topic [ER Design a configuration for generating reports in OPENXML format (November 2016)](../../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
 
@@ -71,7 +71,7 @@ For Fix downloading instructions see [Download Electronic reporting configuratio
 
 3.  Create draft format for financial report in Excel.
 
-    1.  Choose **Financial reports model** configuration
+    1.  Select **Financial reports model** configuration
 
     2.  On the Action Pane click **Create configuration \> Format based on data model Financial reports model**. Give it a name.
 
