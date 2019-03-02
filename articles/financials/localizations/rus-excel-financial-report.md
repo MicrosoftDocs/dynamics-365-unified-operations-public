@@ -47,10 +47,12 @@ Set up a financial report with the list of financial report cells and rules for 
 
 3.  Click **Setup**. On the page **Requisites setup**, set up calculation rules for report cells as described in the topic [Financial reporting (Russia)](rus-financial-reports#set-up-calculation-rules-for-report-cells.md)
 
+
 ## Create Excel template for financial report
 
 Create Excel template for your financial report. As minimum, you should assign names to all Excel cells which should have values in the generated report.
 
+As example, download the Excel template example for Balance sheet here: [Balance sheet.xls](add link here)
 
 
 ## Create ER configuration for financial report in Excel
@@ -91,9 +93,10 @@ For Fix downloading instructions see [Download Electronic reporting configuratio
 
         ![Format mapping cells](media/rus-format-designer-mapping.jpg)
 
-4.  Close the page.
+    10. Close the page.
+    
 
-5.  Review ER format **Balance sheet format Excel example (RU)**.
+5.  Learn how ER format **Balance sheet format Excel example (RU)** is configured.
 
     1.  Select **Balance sheet format Excel example (RU)** ER configuration and click **Designer**.
 
@@ -101,84 +104,62 @@ For Fix downloading instructions see [Download Electronic reporting configuratio
 
     3.  Click tab **Mapping**. Review Financial reports model elements which are sources for financial report cells.
 
-    4.  Review that cells **DD, MM, YYYY, Company name**, … etc. up to **PrevPrevYear** are mapped to various Model elements from the group **Header** which contains various information about organization and report dates.
+    4.  Review that cells **DD, MM, YYYY, Company name**, … etc. up to **PrevPrevYear** are mapped to various Model elements from the group **Header** which contains various information about organization and report.
 
->   If your Financial report contains any information about organization which is not in scope **Financial reports model**, you could do the following:
+        Note. If your Financial report contains any information about organization which is not in scope **Financial reports model**, you could do the following:
 
--   Create format User input parameter in case missed data is external to the Dynamics 365 for Finance and operations
+        -   Create format User input parameter in case missed data is external to the Dynamics 365 for Finance and operations
 
--   Create a derived model based on the **Financial reports model**, add new model elements. Create a derived model mapping based on **Financial reports model mapping** and bind new model elements to Dynamics 365 for Finance and operations data sources
+        -   Create a derived model based on the **Financial reports model**, add new model elements. Create a derived model mapping based on **Financial reports model mapping** and bind new model elements to Dynamics 365 for Finance and operations data sources
 
->   Find more details about how to create ER data models in the topic: [ER Design domain specific data model](../../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
+        Find more details about how to create ER data models in the topic: [ER Design domain specific data model](../../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
 
->   Find more details about how to map data model elements to data sources, in the topics:
+        Find more details about how to map data model elements to data sources, in the topics:
 
->   [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
+        - [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
 
->   [ER Map data model to selected data sources](../../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
+        - [ER Map data model to selected data sources](../../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
+        
 
-1.  Review that cells where the financial report values are exported, like
+    5. Review that cells where the financial report values are exported, for example, *АктивВнеОбАНематАктПояснения*, *АктивВнеОбАНематАктСумОтч*, *АктивВнеОбАНематАктСумПрдщ*, *АктивВнеОбАНематАктСумПрдшв* are mapped to the calculated field: **Calculations.'\$Values'("\<Input parameter = Cell name\>").Value**, or **Calculations.'\$Values'("\<Input parameter = Cell code\>").Text**
+       The calculated field **Calculations.'\$Values'** contains the value of the financial report cell with code equals to the “Input parameter”.
 
->   \- АктивВнеОбАНематАктПояснения
+       Find more details about the Financial reports model in the topic [Configure ER to use the results of financial report calculations](rus-financial-reports#configure-er-to-use-the-results-of-financial-report-calculations.md)
+       
 
->   \- АктивВнеОбАНематАктСумОтч
+6. Learn how to quickly bind the calculated values of financial report cells to the ER format cells elements.
 
->   \- АктивВнеОбАНематАктСумПрдщ
+    1.  Click on the ER format cell *АктивВнеОбАНематАктПояснения*. Click **Unbind**
 
->   \- АктивВнеОбАНематАктСумПрдшв
+    2.  Repeate step 1. for the following ER format cells: *АктивВнеОбАНематАктСумОтч*, *АктивВнеОбАНематАктСумПрдщ*, *АктивВнеОбАНематАктСумПрдшв*
 
->   Etc…
+    3. Click **Format**. Enter the value in the field **Name** for all 4 cell. Value in the field **Name** must be equal to the value in the field **Cell code** in the financial report. In this example, enter to the **Name** field the value which is equal to the value in the field **Excel range**: *АктивВнеОбАНематАктСумОтч*, *АктивВнеОбАНематАктСумПрдщ*, *АктивВнеОбАНематАктСумПрдшв*
 
->   Are mapped to the calculated field:
-
->   \- Calculations.'\$Values'("\<Input parameter = Cell name\>").Value, or
-
->   \- Calculations.'\$Values'("\<Input parameter = Cell name\>").Text
-
-The calculated field Calculations.'\$Values' contains the financial report cell value where the cell name is equal to the “Input parameter”.
-
-Find more details about the Financial reports model in the topic [Configure ER to use the results of financial report calculations](rus-financial-reports#configure-er-to-use-the-results-of-financial-report-calculations.md)
-
-1.  Learn how to quickly bind the calculated values of financial report cells to the Excel cells elements.
-
-    1.  Click on the Excel format cell ‘АктивВнеОбАНематАктПояснения’. Click **Unbind**
-
-    2.  Do the same for the following Excel format cells:
-
->   \- АктивВнеОбАНематАктСумОтч
-
->   \- АктивВнеОбАНематАктСумПрдщ
-
->   \- АктивВнеОбАНематАктСумПрдшв
-
-1.  Click **Format**. Enter the value in the field **Name** for all 4 cells: 
-    ‘АктивВнеОбАНематАктПояснения’, ‘АктивВнеОбАНематАктСумОтч’, ‘АктивВнеОбАНематАктСумПрдщ’, ‘АктивВнеОбАНематАктСумПрдшв’
-
->   Value in the field **Name** must be equal to the **Cell code** in the financial report. In this example, enter to the **Name** field the value which is equal to the value in the field **Excel range**
 
 ![Format mapping field name](media/rus-format-designer-format.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
-1.  Click **Mapping**. Expand the container **Calculations**, expand the calculated field **\$Values**, click on the element **Text**.
 
-2.  In the list of Excel format cells, click on the cell ‘АктивВнеОбАНематАктПояснения’. Click **Bind**
+   4.  Click **Mapping**. Expand the container **Calculations**, expand the calculated field **\$Values**, click on the element **Text**.
+
+   5.  In the list of Excel format cells, click on the cell *АктивВнеОбАНематАктПояснения*. Click **Bind**
 
 ![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
 
->   A screenshot of a social media post Description automatically generated
 
-1.  On the **Mapping** tab, click on the element **Value**
 
-2.  In the list of Excel format cells, click on the cell ‘АктивВнеОбАНематАктСумОтч’. Click **Bind**
+   6.  On the **Mapping** tab, click on the element **Value**
 
-3.  Repeat steps 5.6-5.7 for other 2 Excel cells which were unbounded on step 5.2
+   7.  In the list of Excel format cells, click on the cell *АктивВнеОбАНематАктСумОтч*. Click **Bind**
+
+   8.  Repeat steps 5.6-5.7 for other 2 Excel cells which were unbounded on step 5.2
+
 
 ## Run financial report format
 
 You can configure Electronic messages feature to run any ER configuration. Find more details in the topic [Configure electronic messages to generate the financial report and store the results](rus-financial-reports#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results.md)
 
-To run the ER format which is based on the Financial reports model, do the following:
+To run the ER format which is based on the **Financial reports model**, do the following:
 
 1.  Go to **General ledger \> Inquiries and reports \> Financial reports (Russia)**.
 
@@ -191,7 +172,7 @@ To run the ER format which is based on the Financial reports model, do the follo
 | **Field**    | **Description**  |
 |---------------|-----------------|
 | Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the Signatory          |
-| To date                                                          | Enter the Base date for the financial report  |
+| To date                                                          | Enter the base date for the financial report  |
 | Approval date                                                    | Enter the approval date of the financial report  |
 | Reporting date                                                   | Enter the reporting date for corrective report |
 | Economic activity type code                                      | Enter the Economic activity type code (“ОКВЭД”) |
