@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off. When maintenance mode is off, you can't edit the **License configuration** page.
 
-## Turn maintenance mode on and off on environments deployed through Lifecycle Services 
+## Turn maintenance mode on and off on sandbox and production environments through Lifecycle Services 
 You can now turn maintenance mode on and off directly through Lifecycle Services (LCS) on your sandbox and production environments. Refer to the following steps to do this:
 
 1. Go to the environment details page and on the **Maintain** menu and click **Configure Maintenance Mode**. This menu item will display for customers added to the preview.
@@ -52,7 +52,7 @@ You can now turn maintenance mode on and off directly through Lifecycle Services
 
 Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You also have the option to **download the logs** to troubleshoot why the operation failed.
 
-## Turn maintenance mode on and off in downloaded VHDs 
+## Turn maintenance mode on and off on Dev/Test/Demo/Downloaded VHDs 
 You can turn on maintenance mode locally by running the following command. 
 
 > [!Note]
