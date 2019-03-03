@@ -66,3 +66,6 @@ On this page you have the following options:
 > At this time, we only have a few options available under the day of the week and time slot drop downs. We will soon we adding additional options include weekdays for customers.
 
 3. **View update calendar:** Once you have set the update cadence and configured the update environment, to know exactly when environment will be updated we generate an update calendar for the next six months that shows exactly when the configured sandbox and production environments will be updated. This provides you with a level of predictability on when to expect the update. Under the Production update cadence, you will see the View update calendar link.
+
+> [!NOTE]
+> For more details, on how to pause getting updates to configured sandbox and production environment see [Pause Service Updates](pause-service-updates.md) topic.
