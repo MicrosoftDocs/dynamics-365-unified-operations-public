@@ -86,7 +86,7 @@ Any time you choose to pause updates or edit an existing pause, the Update setti
 >[!IMPORTANT]
 >You have the option to pause updates up to 4 hours prior to start of the downtime window. Once we have crossed the 4 hour prior to downtime window limit, you will not be allowed to pause through the LCS UI.
 
-## What happens the pause duration expires?
+## What happens after the pause duration expires?
 
 Our goal with ONE Version is that customers are always running on the latest set of fixes released by Microsoft to ensure you have the best service experience and hence we don&#39;t allow pausing updates forever. Once the pause duration expires, service updates will be resumed to the configured environments.
 
