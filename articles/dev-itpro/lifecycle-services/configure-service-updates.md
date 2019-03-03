@@ -74,3 +74,7 @@ On this page you have the following options:
 
 > [!NOTE]
 > For more details, on how to pause getting updates to configured sandbox and production environment see [Pause Service Updates](pause-service-updates.md) topic.
+
+> [!NOTE]
+> For more details on ONE Version and Microsoft managed service updates, check the [ONE Version FAQ](fin-and-ops\get-started\one-version.md) topic.
+
