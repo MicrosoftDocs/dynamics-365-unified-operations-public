@@ -96,3 +96,6 @@ Updates are resumed after a pause for two reasons:
 2. Pause duration has expired and updates are automatically resumed on the configured environments.
 
 An email notifying the stakeholders is sent in both the scenarios.
+
+> [!NOTE]
+> For more details on ONE Version and Microsoft managed service updates, check the [ONE Version FAQ](.\.\get-started\one-version.md) topic.
