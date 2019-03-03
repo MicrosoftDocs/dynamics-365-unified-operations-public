@@ -35,4 +35,4 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> For more details on ONE Version and Microsoft managed service updates, check the [ONE Version FAQ](.\.\.\fin-and-ops\get-started\one-version.md) topic.
+> For more details on ONE Version and Microsoft managed service updates, check the [ONE Version FAQ](Dynamics-365-Operations/articles/fin-and-ops/get-started/one-version.md) topic.
