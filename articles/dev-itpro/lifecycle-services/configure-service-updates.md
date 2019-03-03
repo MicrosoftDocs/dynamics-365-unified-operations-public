@@ -34,7 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You will now be able to configure how and when you get service updates from Microsoft to your Dynamics 365 for Finance and Operations environments directly through Lifecycle Services. The ability to configure updates is only available for implementation projects and to users (customer/partner) that is assigned the **project owner** role in LCS. To modify your update settings, use the following steps:
+You will now be able to configure how and when you get service updates from Microsoft to your Dynamics 365 for Finance and Operations environments directly through Lifecycle Services. 
+
+> [!IMPORTANT]
+> This feature is available only for customers that are on **version 8.1 and above** and are not part of the First release program. We are working on enabling this for First Release customers and for customers that are on older versions of the product. 
+
+The ability to configure updates is only available for **implementation projects** and to users (customer/partner) that is assigned the **project owner** role in LCS. To modify your update settings, use the following steps:
 
 1. Navigate to the **Project Settings** page in your **implementation** project.
 2. A new tab called **Update settings** will be available that has the configuration options.
