@@ -36,9 +36,9 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-The grouping and proration of header auto charges to the Retail sales line feature described in this topic will be available for Point of Sale (POS)-created transactions in Dynamics 365 for Retail version 10.0.1 and available for call center-created sales in version 10.0.2.
+The grouping and proration of header auto charges to the Retail sales line feature described in this topic are available for Point of Sale (POS)-created transactions in Dynamics 365 for Retail version 10.0.1 and available for call center-created sales in version 10.0.2.
 
-This feature is only available if the [advanced auto charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges) feature is enabled in the **Retail parameters**. The enhanced auto charges calculation method can only be applied to Retail sales orders created through Retail channels (POS, call center, and ecommerce).
+This functionality is only available if the [advanced auto charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges) feature is enabled in the **Retail parameters**. The enhanced auto charges calculation method can only be applied to Retail sales orders created through Retail channels (POS, call center, and ecommerce).
 
 With this new functionality, an organization will have more flexibility in how header level auto charges are calculated and applied to retail sales transactions.
 
@@ -50,11 +50,12 @@ Some organizations want the benefits of the tiered charges calculation that is p
 
 You can now configure your header level auto charges so that all modes of delivery on the order will be considered in the charges calculation. This functionality requires a more complex calculation logic when calculating the header charges that will group together the items shipping the same mode of delivery and treat those as their calculation group when calculating the header auto charges. Items with like modes of delivery have their auto charges calculated based on their combined sales value to determine the appropriate auto charge tier to be used.   
 
-With this new feature, once the appropriate Header charges are obtained for the sales lines that are shipping the same mode of delivery, the calculated charges will be pro-rated down to the sales line level.  By placing these charges at the line level vs. keeping them at the header level, this allows for a more specific link between the item and the charges value calculated for it.  This can be useful in partial return scenarios when an organization may wish to only refund a portion of the charge instead of the entire charge when only some items are returned.
+once the appropriate header charges are obtained for the sales lines that are shipping the same mode of delivery, the calculated charges will be prorated down to the sales line level. By placing these charges at the line level as opposed to keeping them at the header level, a more specific link is made between the item and the charges value calculated for it. This can be useful in partial return scenarios when an organization may wish to only refund a portion of the charge instead of the entire charge when only some items are returned.
 
-Below are two sample scenarios to outline how these charges would be calculated with and without this new feature enabled:
+## Scenarios
+Below are two sample scenarios to outline how these charges would be calculated with and without the new functionality.
 
-Scenario 1:
+### Scenario 1:
 This scenario outlines the behavior when **Pro-rate to matching sales lines** configuration is **disabled** on the Auto Charge setup (note this is the equivalent to how the Header charges behaved prior to version 10.0.1).
 
 In this scenario, Header level charges have been defined by the organization for Mode of Delivery "99" and Mode of Delivery "11".  Note that no Auto Charges are configured for Mode of Delivery "21".
@@ -72,7 +73,7 @@ In this scenario, the entire order is evaluated against the Auto Charges table f
 
 In this scenario, if a customer returns some of the items on this order and if the [charge code has been configured to be refunded](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), the total Header charge will be systematically applied to the refund, even if only some of the items are being returned.
 
-Scenario 2:
+### Scenario 2:
 Now let's review this same scenario, but where **Pro-rate to matching sales lines** is enabled (available in 10.0.1 for POS and 10.0.2 for Call Center)
 
 In this scenario, Header level charges are also defined for Mode of Delivery "99" and Mode of Delivery "11", but the **Pro-rate to matching sales lines** flag has also been enabled for these Auto Charge tables.
