@@ -1,1 +1,48 @@
-<placehoder>
+---
+# required metadata
+
+title: General Ledger Parameters
+description: This topic describes setup in Microsoft Dynamics 365 for Finance and Operations that can help make General Ledger processing more performant, and that can also help ensure that correct data is captured and internal control isn't compromised.  
+author: ShylaThompson
+manager: AnnBe
+ms.date: 03/04/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: LedgerParameters
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: ryanCcarlson2
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# General Ledger Parameters
+
+[!include [banner](../includes/banner.md)]
+
+This topic describes capabilities in Microsoft Dynamics 365 for Finance and Operations that will help with the setup of your financial system. 
+
+#Ledger
+<need more info here>
+
+#Batch Transfer rules
+##Set up batch transfer rules for subledger journal account entries
+This tab allows you to specify setting for the transfer of subledger accounting for documents that utilize the source document accounting framework. 
+The default is a company wide setting for transfer of accounting from the subledger to the ledger to run in an 'Asynchronous' process to the original subledger document posting. 
+
+
+
