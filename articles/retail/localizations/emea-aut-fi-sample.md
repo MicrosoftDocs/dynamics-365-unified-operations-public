@@ -33,24 +33,18 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include[banner](../includes/banner.md)]
 
+## Introduction
+
 This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations. 
 
 The Microsoft Dynamics 365 for Retail functionality for Austria includes a sample of integration of POS with an external fiscal registration service to cover local fiscal requirements to cash registers in Austria. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It is based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables the communication with the EFR service via the HTTPS protocol. The sample is provided in form of a source code and is a part of the Retail SDK.
 Microsoft does not ship any hardware, software or documentation from EFSTA. Please contact [EFSTA](http://efsta.org/kontakt/) for information on how to acquire the EFR solution and operate it.
 
-SAMPLE CODE NOTICE
-
-THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY. THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-
-## Overview
-
-To learn about common POS scenarios and features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail Documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
-
-### Integration Retail POS with the EFR
-
 Retail includes a sample for integration of POS with Austria-specific certified fiscal registration service. It is assumed that the service is hosted on the mashine inside client's infrastructure and is paired with POS Hardware station. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK).
 
+## Scenarios
+
+To learn about common POS scenarios and features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail Documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
 
 ### Austria-specific POS scenarios and features
 
@@ -83,7 +77,24 @@ The following scenarios are covered by the fiscal registration service integrati
       - Skip fiscal registration, including info codes to capture the reason of failure and additional information;
       - Fiscal registration service health-check before posting transaction data into Dynamics 365 HQ.
 
-## Setting up Retail for Austria
+### Handling gift cards
+
+The fiscal registration service integration sample implements the following rules in regard to gift cards:
+  - Exclude sales lines related to the operations Issue gift card or Add to gift card from the cash transaction registration message, these operations are registered by separate message as a non-cash operation.
+  - Do not print a tax group breakdown and a QR-code in a receipt if it consists of gift card lines only.
+  - Total amount of gift cards issued or re-charged and a cash transaction amount are printed in the receipt separately.
+  - Payment by gift card is considered as a regular payment.
+
+### Handling customer deposits and customer order deposits
+
+The fiscal registration service integration sample implements the following rules in regard to customer account deposits and customer order deposits:
+  - Non-cash transaction is registered if a POS transaction is a customer deposit.
+  - Non-cash transaction is registered if a POS transaction contains a sales order deposit or a sales order deposit refund only.
+  - Print the amount of the previously paid deposit in a fiscal receipt for a customer order pickup operation.
+  - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
+  - Save calculated adjustments of payment lines in the Channel DB with a reference to a fiscal transaction for a hybrid sales order.
+
+## Set up Retail for Austria
 
 This section describes the Retail settings that are specific to and recommended for Austria. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
 
@@ -141,7 +152,9 @@ Check default mapping rates values and correct it if is is nessesary.
 2. Set up tax group code for printing in receipt:
 For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
 
-3. Configure custom fields so that they can be used in receipt formats for sales receipts:
+#### Set up Custom fields for receipt format
+
+Configure custom fields so that they can be used in receipt formats for sales receipts:
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
 On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the Language ID, Text ID, and Text values that are shown in the table are just examples. You can change them to meet to your requirements. However, the Text ID values that you use must be unique, and they must be equal to or higher than 900001.
@@ -174,7 +187,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SALESTAXAMOUNT       | Receipt | 103180          |
 | SALESTAXBASIS        | Receipt | 103181          |
 
-4. Configure receipt formats
+#### Receipt format configurations
 
 In the **Receipt format designer**, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
@@ -199,17 +212,10 @@ In the **Receipt format designer**, add the following custom fields to the appro
       
 5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box (not recommended). 
 
-### Handling gift cards
-The fiscal registration service integration sample implements the following rules in regard to gift cards:
-  - Exclude sales lines related to the operations Issue gift card or Add to gift card from the cash transaction registration message, these operations are registered by separate message as a non-cash operation.
-  - Do not print a tax group breakdown and a QR-code in a receipt if it consists of gift card lines only.
-  - Total amount of gift cards issued or re-charged and a cash transaction amount are printed in the receipt separately.
-  - Payment by gift card is considered as a regular payment.
-
-### Handling customer deposits and customer order deposits
-The fiscal registration service integration sample implements the following rules in regard to customer account deposits and customer order deposits:
-  - Non-cash transaction is registered if a POS transaction is a customer deposit.
-  - Non-cash transaction is registered if a POS transaction contains a sales order deposit or a sales order deposit refund only.
-  - Print the amount of the previously paid deposit in a fiscal receipt for a customer order pickup operation.
-  - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
-  - Save calculated adjustments of payment lines in the Channel DB with a reference to a fiscal transaction for a hybrid sales order.
+## Commerce runtime extension design
+### Request handler
+### Configuration
+## Hardware station extension design
+### Request handler
+### Configuration
+## Limitations of the sample
