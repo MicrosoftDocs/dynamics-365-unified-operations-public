@@ -78,6 +78,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or isn't responding, the printer is out of paper, or there is a paper jam.
     - Postpone fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
+    - Check availability of the fiscal printer before opening a new sales transaction or finalizing a sales transaction. 
 
 ### Default data mapping
 
