@@ -67,6 +67,7 @@ The following image shows the updated navigation bar in Platform update 24.
 The following image shows how the navigation bar appeared in Platform update 23.
 
 ![Navigation bar in Platform update 23](media/existingNavBar.png  "Navigation bar in Platform update 23")
+
 ## Extensibility enhancements
 
 The [first wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility), included in Platform update 24, are documented in the April 2019 Release notes. There are nine enhancements detailed, with one of the highlights being a new onClicking event for form button controls.
