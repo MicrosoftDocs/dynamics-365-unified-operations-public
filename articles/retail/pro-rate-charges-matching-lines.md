@@ -58,7 +58,7 @@ Below are two sample scenarios to outline how these charges would be calculated 
 ### Scenario 1
 This scenario outlines the behavior when **Prorate to matching sales lines** configuration is disabled in the auto charge setup (this is equivalent to how the header charges behaved in Retail versions earlier than version 10.0.1).
 
-In this scenario, header level charges have been defined by the organization for **Mode of Delivery Relation** "99" and **Mode of Delivery Relation** "11". There are no auto charges are configured for mode of delivery "21".
+In this scenario, header level charges have been defined by the organization for **Mode of delivery relation** "99" and **Mode of delivery relation** "11". There are no auto charges are configured for mode of delivery "21".
 
 ![Auto charges for mode of delivery 99 with matching line proration disabled](media/99_disabled.png)
 
@@ -75,7 +75,7 @@ In this scenario, if a customer returns some of the items on this order and if t
 
 ### Scenario 2
 
-In this scenario, header level charges are also defined for **Mode of Delivery Relation** "99" and **Mode of Delivery Relation** "11", but the **Prorate to matching sales lines** flag has also been enabled for these auto charge tables.
+In this scenario, header level charges are also defined for **Mode of delivery relation** "99" and **Mode of delivery relation** "11", but the **Prorate to matching sales lines** flag has also been enabled for these auto charge tables.
 
 ![Auto charges for mode of delivery 99 with matching line proration enabled](media/99_enabled.png)
 
@@ -99,7 +99,7 @@ In Step 3, the system will calculate the charges value to apply to each line bas
 
 ![Step 3 calculation](media/step3results.png)
 
-In this example, item "81334" will be assigned a Freight charge of $5.62. These charges can be viewed on the **Maintain Charges** page for the specific sales line. How this would look like for item "81334" is shown below.
+In this example, item "81334" will be assigned a Freight charge of $5.62. These charges can be viewed on the **Maintain charges** page for the specific sales line. How this would look like for item "81334" is shown below.
 
 ![Prorated charges on sales line](media/proratedlinecharge.png)
 
