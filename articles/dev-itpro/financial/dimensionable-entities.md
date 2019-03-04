@@ -177,24 +177,21 @@ If you also want to create an data entity for your new entity, and that entity h
 
 ```
 if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
-        {
-            this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
-        }
-
-
+{
+     this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
+}
                                                                                                 
 e.g.
 
+public void persistEntity(DataEntityRuntimeContext _entityCtx)
+{
+     if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+     {
+          this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+     }
 
-  public void persistEntity(DataEntityRuntimeContext _entityCtx)
-    {
-        if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
-        {
-            this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
-        }
-
-        super(_entityCtx);
-    }
+     super(_entityCtx);
+}
 ```
 > [!NOTE]
 > This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.
