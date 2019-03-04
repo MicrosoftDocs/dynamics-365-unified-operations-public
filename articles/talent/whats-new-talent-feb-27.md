@@ -33,110 +33,120 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 
 ## Changes in Attract
-There are minor bug fixes included with this release.
 
-## Changes in Onboarding
-There are minor bug fixes included with this release.
+This release includes minor bug fixes for Dynamics 365 Talent: Attract.
+
+## Changes in Onboard
+
+This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
+
 **Build 8.1.2163**
 
-### Add custom fields menu item to System Administration
+### Add a Custom fields menu item to System administration
+
 Navigation to the **Custom fields** menu has been added to the **System administration** workspace.
 
-### Hide import and create option for new mobile applications
-Creation of new mobile apps is not currently supported within Talent. The option to create new mobile experiences has been removed from the menu. 
+### Hide the import and create option for new mobile applications
 
-### Variable Compensation Award (DMF Entity) 
-In this release, a Variable Compensation Award (DMF Entity) is now available for export.
+Currently, new mobile apps can't be created in Talent. The option to create new mobile experiences has been removed from the menu.
 
-### UK addresses display in Analytics as Switzerland addresses
-With this release, addresses will be displayed by city and will correct issues where visualizations misrepresented where an employee is located.
+### Variable Compensation Award (DMF entity)
 
-### Workforce PowerBI report shows error when workers seniority date is on Leap Day
-A fix has been made to in PowerBi to account for seniority dates that fall on February 29. 
+In this release, a **Variable Compensation Award** Data Management Framework (DMF) entity is now available for export.
+
+### UK addresses appear in Analytics as Swiss addresses
+
+In this release, addresses are shown by city. This release corrects issues where visualizations misrepresented an employee's location.
+
+### The Workforce Power BI report shows an error when a worker's seniority date is on leap day
+
+A fix has been made in Microsoft Power BI to account for seniority dates that fall on February 29.
 
 ### Employee Fixed Comp, Employee Variable Awards, Employee Variable Plans (enrollments) allow for custom fields
-Employee Fixed Comp, Employee Variable Awards, and Employee Variable Plans (enrollments) now allow for custom fields to be added. With this change, you can now track additional information on Employee fixed and Variable compensation plans that aren't there by default. Custom fields can be entered and updated through the user interface or through the entities provided. 
+
+Custom fields can now be added for Employee Fixed Comp, Employee Variable Awards, and Employee Variable Plans (enrollments). You can now track more information about employee fixed and variable compensation plans, in addition to the information that is available by default. Custom fields can be entered and updated through either the user interface or through the entities that are provided.
 
 ### Other miscellaneous bug fixes
-Other minor bug fixes are included with this release.
+
+This release includes other minor bug fixes.
 
 ## Coming soon
 
-###  Advanced compensation security (Fixed and Variable)
-In many organizations, the compensation and benefits managers may only have access to certain compensation records. They may be for executives or regional based employees. With this change, HR can manage and maintain the compensation plans for different employee populations in the organization. Fixed and Variable plans can be assigned security roles which will determine the access to the plans and the employee data related to the plans (for example, salary, bonus records, etc.). Only the roles with the given access will be able to process compensation for those employees.
+### Advanced compensation security (Fixed and variable)
 
-###  Platform update 24
-See additional details for Platform update 24 [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+In many organizations, compensation and benefits managers might have access only to specific compensation records. These records might be for executives or regional-based employees. This change will let Human resources (HR) manage and maintain the compensation plans for different employee populations in the organization. Security roles that can be assigned to fixed and variable plans will determine the access to those plans and the employee data that is related to them (for example, salary information and bonus records). Only the roles that have the specified access will be able to process compensation for those employees.
 
-### Enable employee fixed compensation for future position assignments
-It is typical that employees join an organization with a future start date. This change enables defining fixed compensation for employees with future position assignments. 
+### Platform update 24
 
-## Known Issues
+For more information about Microsoft Dynamics 365 for Finance and Operations platform update 24 (March 2019), see [Preview features in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
-### Changes to Core HR integration template (Talent CDS to Finance and Operations)
-The template for Core HR has been updated to an Advanced Query template. This means the Advanced Query will be enabled by default for projects created using this template. It also means that any default mapping functions (shown as FN in the mappings) will only be visible in the Advanced Query editor.
+### Make employee fixed compensation available for future position assignments
 
-See additional details about mapping errors [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+It's typical that employees who join an organization have a future start date. This change will let fixed compensation be defined for employees who have future position assignments.
 
-To use the new template, create a new project and select the new Talent integration template.
+## Known issues
 
-To update your existing template, do the following. 
+### Changes to the Core HR integration template (Talent Common Data Service for Apps to Finance and Operations)
 
-1. Update the following mappings.
-- *Job Positions to Positions*: Remove this mapping.
-- *Job Positions to Positions Parent Job Assignment*: Remove this mapping.
-- *Job Positions to Base Position*: Add new mapping for CDS entity Job Positions to Finance and Operations entity Base Position.
-Move this to position 7 in the sequence.
+The template for Core HR has been updated to an Advanced Query template. Therefore, by default, the Advanced Query will be available for projects that are created by using this template. Additionally, any default mapping functions will be visible only in the Advanced Query editor. (Default mapping functions appear as "FN" in the mappings.)
 
-[![CDS Mapping](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
+For more information about mapping errors, see [What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
-- *Job Positions to Position Details*: Add a new mapping for CDS entity Job Positions to Finance and Operations entity Position Details.
-Move this to position 8 in the sequence.
+To use the new template, create a new project, and select the new Talent integration template.
 
-[![CDS Mapping](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
+To update your existing template, follow these steps.
 
-- *Job Positions to Position Durations*: Add a new mapping for CDS entity Job Positions to Finance and Operations entity Position Durations.
+1. Update the following mappings:
 
-[![CDS Mapping](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
+    - **Job Positions to Positions:** Remove this mapping.
+    - **Job Positions to Positions Parent Job Assignment:** Remove this mapping.
+    - **Job Positions to Base Position:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Base Position** Finance and Operations entity. Move it to position 7 in the sequence.
 
-- *Job Positions to Position Hierarchies*: Add a new mapping from CDS entity Job Positions to Finance and Operations entity Position Hierarchies. Click **Advanced Query** to enable your advanced query for your project.
+        [![Job Positions to Base Position mapping](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-[![CDS Advanced Query](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
+    - **Job Positions to Position Details:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Position Details** Finance and Operations entity. Move it to position 8 in the sequence.
+
+        [![Job Positions to Position Details mapping](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
+
+    - **Job Positions to Position Durations:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Position Durations** Finance and Operations entity.
+
+        [![Job Positions to Position Durations mapping](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
+
+    - **Job Positions to Position Hierarchies:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Position Hierarchies** Finance and Operations entity. Select **Advanced Query** to make your advanced query available for your project.
+
+       [![Advanced Query button](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
 2. Add the following mappings.
 
-[![CDS Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
+    [![Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
-- Click the **Advanced Query and Filtering** link.
+    1. Select the **Advanced Query and Filtering** link next to the **Search** field.
 
-[![Advanced query and filtering](./media/Advanced-query-and-filtering.png)](./media/Advanced-query-and-filtering.png)
+        [![Advanced Query and Filtering link](./media/Advanced-query-and-filtering.png)](./media/Advanced-query-and-filtering.png)
 
-- Find the cdm_parentjobpositionid.cdm_jobpositionnumber column and click the button on the right.
+    2. Find the **cdm_parentjobpositionid.cdm_jobpositionnumber** column, and select the down arrow button on the right side of it.
 
-[![Find CDM Parent](./media/Find-CDM-Parent.png)](./media/Find-CDM-Parent.png)
+        [![Down arrow button for the cdm_parentjobpositionid.cdm_jobpositionnumber column](./media/Find-CDM-Parent.png)](./media/Find-CDM-Parent.png)
 
-- Click **Remove empty** in the dropdown dialog.
+    3. In the dialog box that appears, select **Remove empty**.
 
-[![Remove empty](./media/Remove-empty.png)](./media/Remove-empty.png)
+        [![Remove empty button](./media/Remove-empty.png)](./media/Remove-empty.png)
 
-- Click **Add column > Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME. 
+    4. Select **Add column \> Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME.
 
-[![Add Column](./media/Add-column.png)](./media/Add-column.png)
+        [![Add conditional column command](./media/Add-column.png)](./media/Add-column.png)
 
-- In the **Add conditional column** dialog, enter the name of the new column: HIERARCHYTYPENAME.
+    5. In the **Add conditional column** dialog box, enter **HIERARCHYTYPENAME** as the name of the new column.
+    6. In the **If** part of the condition, select any field, use **equal to** as the relationship, and enter any value. In the ***Then** and **Otherwise** parts of the condition, specify what the default value should be. In this case, enter **Line** in both parts.
 
-- Fill in both **Then** and **Otherwise** with what should be the default value: Line; using any field and value for **If** and **equal to**. 
+        [![Add conditional column dialog box](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 
-[![Add Conditional Column](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
+    7. Select **OK** to close the **Advanced Query and Filtering** dialog box.
+    8. On the **Mapping task** page, select the new column as the source to create another mapping for HIERARCHYTYPENAME.
 
-- Click **OK** to close the **Advanced Query and Filtering** dialog.
-
-- On the **Mapping task** page, pick the newly created column as the source to create another mapping for HIERARCHYTYPENAME.  
-
-[![CDS Mapping](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
+        [![Mapping](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
