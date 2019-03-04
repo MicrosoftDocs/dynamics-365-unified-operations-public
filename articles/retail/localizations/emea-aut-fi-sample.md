@@ -415,7 +415,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-6. Complete all necessary settings from the [Set up Retail for Austria](set-up-retail-for-austria).
+6. Complete all necessary settings from the [Set up Retail for Austria](#set-up-retail-for-austria).
 
 ## Limitations of the sample
 
