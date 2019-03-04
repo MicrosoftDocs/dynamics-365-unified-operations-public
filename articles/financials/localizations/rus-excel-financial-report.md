@@ -52,8 +52,7 @@ Set up a financial report with the list of financial report cells and rules for 
 
 Create Excel template for your financial report. As minimum, you should assign names to all Excel cells which should have values in the generated report.
 
-As an example, download the Excel template example for a Russian balance sheet here: [balance_sheet_template_russia.xlsx]()
-<!--- will add link to the download after copy edit -->
+As an example, download the Excel template example for a Russian balance sheet from the following location: [balance_sheet_template_russia.xlsx](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/BalancesheetRussia)
 
 ## Create ER configuration for financial report in Excel
 
