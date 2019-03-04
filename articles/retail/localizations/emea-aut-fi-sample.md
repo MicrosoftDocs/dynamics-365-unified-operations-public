@@ -354,7 +354,7 @@ The Hardware station extension components are included in the Hardware station s
 3. Rebuild the solution.
 4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 
-## Set up the registration process
+### Set up the registration process
 
 To enable the registration process, set up Retail Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -382,7 +382,7 @@ Configuration files are located under SampleExtensions\CommerceRuntime\Extension
 
 For more information, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
 
-## Production environment
+### Production environment
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
