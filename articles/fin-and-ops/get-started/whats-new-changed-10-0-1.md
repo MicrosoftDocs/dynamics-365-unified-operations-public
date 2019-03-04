@@ -60,6 +60,6 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the KB article (coming soon).
 
-### Platform update [#]
+### Platform update 25
 
 Microsoft Dynamics 365 for Finance and Operations version 10.0.1 includes Platform update 25. To learn more about Platform update 25, see [Preview features in Finance and Operations platform update 25]().
