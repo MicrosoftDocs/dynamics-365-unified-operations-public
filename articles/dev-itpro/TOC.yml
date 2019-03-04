@@ -1079,10 +1079,12 @@
       href: dev-tools/update-development-tools.md
   - name: Deprecations
     items:
-    - name: Deprecated APIs
+    - name: Removed or deprecated features
+      href: migration-upgrade/deprecated-features.md  
+    - name: Deprecation of methods and metadata elements
+      href: migration-upgrade/deprecation-deletion-apis.md
+    - name: Deprecated APIs (June 2017)
       href: migration-upgrade/deprecated-apis.md
-    - name: Deprecated features
-      href: migration-upgrade/deprecated-features.md
 - name: System administration
   href: sysadmin/system-administration-home-page.md
   items:
