@@ -52,7 +52,9 @@ You can now turn maintenance mode on and off directly through Lifecycle Services
 
 Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You also have the option to **download the logs** to troubleshoot why the operation failed.
 
-## Turn maintenance mode on and off on Dev/Test/Demo/Downloaded VHDs 
+## Turn maintenance mode on and off 
+### Maintenance mode in VHD-based hosted environments
+
 You can turn on maintenance mode locally by running the following command. 
 
 > [!Note]
