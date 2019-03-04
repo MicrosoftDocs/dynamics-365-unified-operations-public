@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations platform update 24 (March 2019
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operation platform update 24 (March 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 3/01/2019
+ms.date: 3/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,7 @@ This topic describes features that are in preview in Dynamics 365 for Finance an
 New APIs have been added to help data integration retrieve errors that occurred during the import execution runs in a data project. For more information, see [Data management package REST API](../../dev-itpro/data-entities/data-management-api.md).
 
 ## Clear identification of preview builds
-Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. For more information about the Finance and Operations release process, see [Standard and First release service updates](public-preview-releases.md).
+Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) topic for more information about the Finance and Operations release process.
 
 To make the **preview** status clear to users, each preproduction build will be tagged in two different ways: 
 
@@ -56,7 +56,9 @@ To make the **preview** status clear to users, each preproduction build will be 
     
 
 ## Updated navigation bar that aligns with the Office header
-Dynamics 365 products are working to align their respective headers with the Office header to provide a more cohesive shell experience for users across Microsoft products. For Finance and Operations users, this header update will be seen as a completely restyled navigation bar that more prominently features navigation search. Notably, the new design does not include a breadcrumb. 
+Dynamics 365 products are working to align their respective headers with the Office header to provide a more cohesive shell experience for users across Microsoft products. For Finance and Operations users, this header update will be seen as a completely restyled navigation bar that more prominently features navigation search. Notably, the new design does not include a breadcrumb.
+
+The updated navigation bar is shown by default in Platform update 24. For customers wanting to continue using the older navigation bar, this can temporarily be done via the **Client performance options** page, specifically using the **Enable legacy navigation bar** toggle. Note that this toggle will only be available through Platform update 28, at which time all customers will see the updated navigation bar.  
 
 The following image shows the updated navigation bar in Platform update 24.
 
@@ -65,7 +67,6 @@ The following image shows the updated navigation bar in Platform update 24.
 The following image shows how the navigation bar appeared in Platform update 23.
 
 ![Navigation bar in Platform update 23](media/existingNavBar.png  "Navigation bar in Platform update 23")
-
 ## Extensibility enhancements
 
 The [first wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility), included in Platform update 24, are documented in the April 2019 Release notes. There are nine enhancements detailed, with one of the highlights being a new onClicking event for form button controls.
