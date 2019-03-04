@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 02/21/2019
+ms.date: 03/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,7 @@ You can use the restart services functionality to restart individual services th
 
 To restart a service, follow these steps.
 
-1. In Microsoft Dynamics Lifecycle Services (LCS), on the environment details page, 'select **Maintain \> Restart service**.
+1. In Microsoft Dynamics Lifecycle Services (LCS), on the environment details page, select **Maintain \> Restart service**.
 2. Select the service to restart, and then select **Confirm**.
 
     During the restart, the environment's status is updated to **Restarting service**, and you can't start any other maintenance operations. After the service has been restarted, the environment's status is returned to **Deployed**.
