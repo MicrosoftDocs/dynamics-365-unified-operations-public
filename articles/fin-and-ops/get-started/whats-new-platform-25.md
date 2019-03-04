@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform 25
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.XXXX. Please see [Additional resources] for more information about platform update 25.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.XXXX. Please see [Additional resources](whats-new-platform-25.md#additional-resources) for more information about platform update 25.
 
 ## Azure blob storage as an endpoint for business events
 An Azure blob strorage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported thereby allowing for a wider choice for integration scenarios.
