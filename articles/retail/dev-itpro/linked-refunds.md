@@ -3,12 +3,16 @@ Returns are an integral operation for a Retailer. The ability to accept returns 
  
  
 ## FEATURE DESCRIPTION
-Dynamics 365 for Retail has returns capabilities which allow Retailers to currently process returns & their refunds. However, the functionality is not fully capable to assist Retailers to set restrictions on requirements for receipts, ability to process funds to multiple tender types. With the current set of capability, Retailers can process refunds to Cards, but these must be manually specified by the cashier. Cashiers are not able to process the funds to the original mode of payment(s) unless provided by the customer. Call center orders do not have any traceability to the mode of payment made – we do not store any information on the type of payment made from call centers and there is no way to validate what the customer specified as a mode of payment is valid as the one used for purchase. 
-This feature outlines the improvements that needs to be made to the ‘Returns’ function in Dynamics 365 for Retail application to have a better functionality and flexibility for the Retailers to use the original payment as the return payment mode. 
+Dynamics 365 for Retail has returns capabilities which allow Retailers to currently process returns & their refunds. However, the functionality is not fully capable to assist Retailers to set restrictions on requirements for receipts, ability to process funds to multiple tender types. 
+
+With the current set of capability, Retailers can process refunds to Cards, but these must be manually specified by the cashier. Cashiers are not able to process the funds to the original mode of payment(s) unless provided by the customer. Call center orders do not have any traceability to the mode of payment made – Dynamics 365 does not store any information on the type of payment made from call centers and there is no way to validate what the customer specified as a mode of payment is valid as the one used for purchase. 
+
+This new feature outlines the improvements that needs to be made to the ‘Returns’ function in Dynamics 365 for Retail application to have a better functionality and flexibility for the Retailers to use the original payment as the return payment mode. 
  
 ### In scope :
-Linked refunds for cash and carry using credit/debit cards.
-Linked refunds for customer orders using credit/debit cards.
+Cashiers can now process refund to card used during original transaction without the card being present for return.
+- Linked refunds for cash and carry using credit/debit cards.
+- Linked refunds for customer orders using credit/debit cards.
  
 ### Out of scope :
 Linked refunds with gift cards.
