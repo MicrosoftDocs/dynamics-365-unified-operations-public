@@ -28,7 +28,6 @@ ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
 
 ---
-
 # Fiscal registration service integration sample for Austria
 
 [!include[banner](../includes/banner.md)]
@@ -40,23 +39,23 @@ This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and O
 The Microsoft Dynamics 365 for Retail functionality for Austria includes a sample of integration of POS with an external fiscal registration service to cover local fiscal requirements to cash registers in Austria. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It is based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables the communication with the EFR service via the HTTPS protocol. The sample is provided in form of a source code and is a part of the Retail SDK.
 Microsoft does not ship any hardware, software or documentation from EFSTA. Please contact [EFSTA](http://efsta.org/kontakt/) for information on how to acquire the EFR solution and operate it.
 
-Retail includes a sample for integration of POS with Austria-specific certified fiscal registration service. It is assumed that the service is hosted on the mashine inside client's infrastructure and is paired with POS Hardware station. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK).
+This sample provides an integration of POS with the Austria-specific certified fiscal registration service. It is assumed that the service is hosted on the mashine inside client's infrastructure and is paired with POS Hardware station. The sample is implemented as a source code of POS, Hardware station extensions, and Commerce runtime extensions. And  it's available in the Retail software development kit (SDK).
 
 ## Scenarios
 
-To learn about common POS scenarios and features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail Documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
+To learn about common POS scenarios and features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail Documentation](https://docs.microsoft.com/dynamics365/unified-operations/retail/index).
 
 ### Austria-specific POS scenarios and features
 
 The following scenarios are covered by the fiscal registration service integration sample for Austria:
    - Registration of cash transactions at the fiscal cash register (EFR):
-      - Sending detailed transaction data (sales line information, discounts, payments, taxes) to fiscal register service;
-      - Capturing a response from the fiscal register service including a digital sign and link to registered transaction;
-      - Printing in the receipt tax group data and reference to registered transaction in fiscal register software as a QR-code.
+      - Senddetailed transaction data (sales line information, discounts, payments, taxes) to fiscal register service;
+      - Capture a response from the fiscal register service including a digital sign and link to registered transaction;
+      - Print in the receipt tax group data and reference to registered transaction in fiscal register software as a QR-code.
   - Registration of deposits at the fiscal cash register (EFR) as a non-cash transactions:
       - Issue a Gift card;
-      - Recording of Customer account’s deposit;
-      - Registration of Sales order’s deposit.
+      - Registration of customer account deposit;
+      - Registration of customer order deposit.
   - Registration of some POS-related events or transactions at the fiscal cash register (EFR) as a non-cash transactions:
       - Shift open/close;
       - Start amount / Float entry / Tender removal;
@@ -70,14 +69,14 @@ The following scenarios are covered by the fiscal registration service integrati
       - Number of total sold items, products or services delivered to customers;
       - Sales broken down by tax rates;
       - Breakdown of proceeds by cashier/cash register operator;
-      - Post-voids postings performed, price discounts, returns, negative sales, by which daily sales are reduced;
+      - Price discounts, returns, by which daily sales are reduced;
       - Zero sales (giveaways).
   - Error handling including following options:
       - Retry fiscal registration if it's possible; for example, if the fiscal registration service is unavailable;
       - Skip fiscal registration, including info codes to capture the reason of failure and additional information;
       - Fiscal registration service health-check before posting transaction data into Dynamics 365 HQ.
 
-### Handling gift cards
+### Gift cards handling
 
 The fiscal registration service integration sample implements the following rules in regard to gift cards:
   - Exclude sales lines related to the operations Issue gift card or Add to gift card from the cash transaction registration message, these operations are registered by separate message as a non-cash operation.
@@ -85,7 +84,7 @@ The fiscal registration service integration sample implements the following rule
   - Total amount of gift cards issued or re-charged and a cash transaction amount are printed in the receipt separately.
   - Payment by gift card is considered as a regular payment.
 
-### Handling customer deposits and customer order deposits
+### Customer deposits and customer order deposits handling
 
 The fiscal registration service integration sample implements the following rules in regard to customer account deposits and customer order deposits:
   - Non-cash transaction is registered if a POS transaction is a customer deposit.
@@ -113,7 +112,7 @@ You must specify the following general settings for Austria:
     - Item sales tax groups;
     - Sales tax settings in items (item sales tax groups for sales).
 
-For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations and in Retail see [Sales tax overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations and in Retail see [Sales tax overview](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
 
 2. On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
     - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default retail customer.
@@ -150,7 +149,9 @@ Check default mapping rates values and correct it if is is nessesary.
 2. Set up tax group code for printing in receipt:
 For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
 
-#### Set up Custom fields for receipt format
+3. Set up custom fields and receipt formats as described below.
+
+#### Set up custom fields for receipt format
 
 Configure custom fields so that they can be used in receipt formats for sales receipts:
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
