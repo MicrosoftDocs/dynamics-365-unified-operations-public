@@ -56,7 +56,7 @@ Once the appropriate header charges are obtained for the sales lines that are sh
 Below are two sample scenarios to outline how these charges would be calculated with and without the new functionality.
 
 ### Scenario 1
-This scenario outlines the behavior when **Pro-rate to matching sales lines** configuration is disabled in the auto charge setup (this is equivalent to how the header charges behaved in Retail versions earlier than version 10.0.1).
+This scenario outlines the behavior when **Prorate to matching sales lines** configuration is disabled in the auto charge setup (this is equivalent to how the header charges behaved in Retail versions earlier than version 10.0.1).
 
 In this scenario, header level charges have been defined by the organization for **Mode of Delivery Relation** "99" and **Mode of Delivery Relation** "11". There are no auto charges are configured for mode of delivery "21".
 
@@ -74,7 +74,6 @@ In this scenario, the entire order is evaluated against the auto charges table f
 In this scenario, if a customer returns some of the items on this order and if the [charge code has been configured to be refunded](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), the total header charge will be systematically applied to the refund, even if only some of the items are being returned.
 
 ### Scenario 2
-This is the same scenario, but where **Pro-rate to matching sales lines** is enabled.
 
 In this scenario, header level charges are also defined for **Mode of Delivery Relation** "99" and **Mode of Delivery Relation** "11", but the **Prorate to matching sales lines** flag has also been enabled for these auto charge tables.
 
