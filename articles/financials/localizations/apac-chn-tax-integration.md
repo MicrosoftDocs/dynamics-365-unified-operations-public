@@ -33,48 +33,49 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process for configuring tax integration for China. 
+This topic describes the process for configuring tax integration for China.
 
-## Prerequisites for version 10.0 and later
-In order to the system may output this code in the exported file, the following settings should be completed in order:
+## Prerequisites for Finance and Operations version 10.0 and later
 
-|Prequisite |Description |Additional info|
-|------------|------------------------------|---------------------------------|
-|Set up a hierarchy of product classification | You must set up a category hierarchy for the classification of goods and services and relate product items (good or service) with category node. Using this functionality, it is possible to set up any hierarchy, which necessary in a company.| [Create a hierarchy of product classification](../supply-chain/pim/tasks/create-hierarchy-product-classification.md)|
-|Assign the new hierarchy to a tax integration profile | Go to **Account receivable > Tax integration > Tax integration profile** and then select the new category in the **Commodity code hierarchy** field.||
-|Select a commodity code for invoice lines|For invoice lines that are not related to product items, such as free text invoice lines and project invoice lines or invoice lines created on the base of hour, expense and fee journals, you can set up a **Commodity code** in **Tax integration profile** page that will be used by default.||
-|Identify the model mapping to use for import files | Go to **Account receivable > Periodic tasks > VAT invoice integration** and then click **Import**. Select the model mapping for import file from one or another provider (Aisino or BaiWang) depending on which provider software the company integrates exported invoices with. This selection should be made only one time (the system saves selected value).<br></br>To import txt file (<file name>_invoicing result.TXT) a user should set Import BaiWang txt file option to **Yes** and select **BaiWang – txt file mapping** in the **Model mapping** field.<br></br>To import txt file from Aisino or xml file from BaiWang (exported files from BaiWang software) a user should set **Import BaiWang txt file** option to **No** and select Aisino  or BaiWang – xml file mapping in the **Model mapping** field. ||
-|Import LCS configurations|For integration with Aisino software it is necessary to import the following configuration from LCS: <br></br>- GoldenTax model<br></br>-	GST Export model mapping (CN)<br></br>-	GTS Export format (Aisino) (CN)<br></br>-	GTS Import model mapping (CN)<br></br>-	GTS Import format (Aisino) (CN)<br></br><br></br>For integration with BaiWang software it is necessary to import the following configuration from LCS:<br></br>-	GoldenTax model<br></br>-	GST Export model mapping (CN)<br></br>-	GTS Import model mapping (CN)<br></br>-	GTS Export format (BaiWang) (CN)<br></br>-	GTS Import format (BaiWang)-txt) (CN)<br></br>-	GTS Import format (BaiWang-xml) (CN)|[Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) |
+To enable the system to generate this code as output in the exported file, you must complete the following tasks in the order in which they are listed.
 
-   > [!NOTE] 
-   > <P> A user may import txt file, received as response after import to BaiWang software or or xml files, exported from BaiWang software.</P>
+| Prerequisite | Description | More information |
+|------------|-------------|------------------------|
+| Set up a hierarchy for product classification. | You must set up a category hierarchy for the classification of goods and services, and you must relate product items (goods or services) with category nodes. By using this functionality, you can set up any hierarchy that is required in a company. | [Create a hierarchy of product classification](../supply-chain/pim/tasks/create-hierarchy-product-classification.md) |
+| Assign the new hierarchy to a tax integration profile. | Go to **Accounts receivable &gt; Tax integration &gt; Tax integration profiles**, and then, in the **Commodity code hierarchy** field, select the new category. | |
+| Select a commodity code for invoice lines. | For invoice lines that aren't related to product items (such as free text invoice lines and project invoice lines), or invoice lines that are created based on hour, expense, and fee journals, you can set up a default commodity code on the **Tax integration profiles** page. | |
+| Identify the model mapping to use for import files. | Go to **Accounts receivable &gt; Periodic tasks &gt; VAT invoice integration**, and then select **Import**. Select the model mapping for the import file from one of the providers (Aisino or BaiWang), depending on which provider's software the company integrates exported invoices with. This selection should be made only one time. (The system saves the selected value.)<ul><li>To import a text file (\<file name\>\_invoicing result.TXT), set the **Import BaiWang TXT file** option to **Yes**. Then, in the **Model mapping** field, select **BaiWang – txt file mapping**.</li><li>To import a text file from Aisino or an XML file from BaiWang (exported files from BaiWang software), set the **Import BaiWang txt file** option to **No**. Then, in the **Model mapping** field, select **Aisino or BaiWang – xml file mapping**.</li></ul> | |
+| Import configurations from Microsoft Dynamics Lifecycle Services (LCS). | For integration with Aisino software, you must import the following configurations from LCS:<ul><li>GoldenTax model</li><li>GST Export model mapping (CN)</li><li>GTS Export format (Aisino) (CN)</li><li>GTS Import model mapping (CN)</li><li>GTS Import format (Aisino) (CN)</li></ul>For integration with BaiWang software, you must import the following configurations from LCS:<ul><li>GoldenTax model</li><li>GST Export model mapping (CN)</li><li>GTS Import model mapping (CN)</li><li>GTS Export format (BaiWang) (CN)</li><li>GTS Import format (BaiWang)-txt) (CN)</li><li>GTS Import format (BaiWang-xml) (CN)</li></ul> | [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) |
 
-## Configure tax ingtegration for China 
+> [!NOTE]
+> You can import a text file that is received as a response after import to BaiWang software. Alternatively, you can import XML files that are exported from BaiWang software.
 
-Before you can configure tax integration, you must enable tax integration by selecting **Yes** for the **Integration with tax system** option on the **Accounts receivable parameters** page (**Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Ledger and sales tax** > **General** tab).
+## Configure tax integration for China
 
-To configure tax integration for China, complete the following tasks.
+Before you can configure tax integration, you must turn it on. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**, and then, on the **Ledger and sales tax** tab, on the **General** FastTab, set the **Integration with tax system** option to **Yes**.
 
-1.  Create a new VAT invoice description on the **VAT invoice description** page. For example, you may need to set  the following parameters:
-    -   **VAT invoice description ID** to InvoiceDescID01
-    -   **Description** to 设备
-    -   **Unit** to Box
+To configure tax integration for China, follow these steps.
 
-2.  Create a new tax integration profile on the **Tax integration profiles** page. You can set up tax integration profiles to use when invoices are imported or exported. In the tax integration profile, you can specify the following:
-    -   Sales tax code
-    -   Maximum invoice amount
-    -   Default description and unit for the golden tax invoice
-    -   Whether to include non-deductible VAT invoices
+1. On the **VAT invoice description** page, create a new value-added tax (VAT) invoice description. For example, you might have to set the following values:
 
-The tax integration process is illustrated in the following diagram.
-[![IC666469](./media/ic666469.gif)](./media/ic666469.gif)
+    - **VAT invoice description ID:** InvoiceDescID01
+    - **Description:** 设备
+    - **Unit:** Box
+
+2. On the **Tax integration profiles** page, create a new tax integration profile. You can set up tax integration profiles that are used when invoices are imported or exported. In the tax integration profile, you can specify the following information:
+
+    - Sales tax code
+    - Maximum invoice amount
+    - Default description and unit for the golden tax invoice
+
+    You can also specify whether non-deductible VAT invoices should be included.
+
+The following illustration shows the tax integration process.
+
+[![Tax integration process](./media/ic666469.gif)](./media/ic666469.gif)
 
 ## Additional resources
 
-- [Import the Chinese Golden Tax data entity (Not applicable for version 10.0 and later)](apac-chn-import-golden-tax-data-entity.md)
-   
+- [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md) (Not applicable for Microsoft Dynamics 365 for Finance and Operations version 10.0 \[April 2019\] and later)
 - [Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
-
-- [Set up basic tax integration for China](./tasks/set-up-basic-tax-integration-profile-china.md)
-
-
+- [Set up basic tax integration profile for China](./tasks/set-up-basic-tax-integration-profile-china.md)
