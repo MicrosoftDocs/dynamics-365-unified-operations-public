@@ -188,7 +188,7 @@ The error handling options that are available in the fiscal integration are set 
 
     - **Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.
     - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
-    - **Continue on error** - This parameter defines if it is possible to continue working on the same terminal when the fiscal registration on this step fails.
+    - **Continue on error** - If this parameter is enabled, it is possible to continue the fiscal registration on the POS register after the fiscal registration of a transaction or event fails. Otherwise, the operator will have to retry the failed fiscal registration, skip it, or mark the transaction or event as registered to be able to run the fiscal registration of the next transaction or event. For more information, see [Optional fiscal registration](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
      > [!NOTE]
      > If the **Continue on error** parameter is enabled, the **Allow skip** and **Allow mark as registered** parameters are automatically disabled. 
@@ -224,6 +224,7 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
 ## Enable manual execution of postponed fiscal registration
 
 To enable manual execution of the postponed fiscal registration, you should add a new button to a POS layout.
+
 - On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
 
     1. Select the layout to update. 
