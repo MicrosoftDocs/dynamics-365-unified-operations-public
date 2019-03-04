@@ -36,11 +36,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes capabilities in Microsoft Dynamics 365 for Finance and Operations that will help with the setup of your financial system. 
 
-#Ledger
-<need more info here>
+##Ledger
+<need more info here from AXL team.>
 
-#Batch Transfer rules
-##Set up batch transfer rules for subledger journal account entries
+##Batch Transfer rules
+
+###Set up batch transfer rules for subledger journal account entries
 This tab allows you to specify setting for the transfer of subledger accounting for documents that utilize the source document accounting framework. 
 The default is a company wide setting for transfer of accounting from the subledger to the ledger to run in an 'Asynchronous' process to the original subledger document posting. 
 
