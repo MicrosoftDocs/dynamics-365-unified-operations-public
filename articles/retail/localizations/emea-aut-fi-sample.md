@@ -96,9 +96,7 @@ The fiscal registration service integration sample implements the following rule
 
 ## Set up Retail for Austria
 
-This section describes the Retail settings that are specific to and recommended for Austria. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
-
-To use the Austria-specific functionality for Retail, you must complete these tasks:
+This section describes the Retail settings that are specific to and recommended for Austria. To use the Austria-specific functionality for Retail, you must complete these tasks:
 - Set the **Country/region** field to AUT (Austria) in the primary address of the legal entity;
 - Set the **ISO code** field to AT (Austria) in the POS functionality profile of every store that is located in Austria.
 
@@ -212,10 +210,10 @@ In the **Receipt format designer**, add the following custom fields to the appro
       
 5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box (not recommended). 
 
-## Deployment guidelines for cash registers for Austria
+## Deployment guideline for cash registers for Austria
 
 This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for Austria. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, includes samples of the integration with the EFSTA System and
-Electronical Fiscal Register Software. For more information about the Retail localization for Austria, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
+Electronical Fiscal Register Software. 
 
 Integration samples were developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Fiscal integration for Retail channel](fiscal-integration-for-retail-channel.md), these samples are part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -223,7 +221,7 @@ This localization consists of extensions for the Commerce runtime (CRT), Hardwar
 
 Follow these steps to set up a development environment so that you can test and extend the localization functionality.
 
-### Commerce runtime extension design
+### Enable Commerce runtime extensions
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -266,7 +264,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
     ```
-#### Enable Microsoft components
+#### Update extension configuration file
 
 1. Find the extension configuration file for CRT:
 
@@ -281,7 +279,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
     ```
 
-### Hardware station extension design
+### Enable Hardware station extensions
 
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the solution, **HardwareStationSamples.sln.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
@@ -380,16 +378,14 @@ Configuration files are located under SampleExtensions\CommerceRuntime\Extension
 
 8. Open the **Retail > Channel setup > POS setup > POS profiles > Hardware profiles**. Select one that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** Tab. Select the connector technical profile.
 
-For more information, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
-
-### Production environment
+### Setting up a production environment
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
 1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
-    1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
+    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
 
         ``` xml	
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
@@ -399,7 +395,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
         ```
 
-    2. In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
+    - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
@@ -416,8 +412,10 @@ Follow these steps to create deployable packages that contain Retail components,
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-6. Complete the [Set up required parameters in Retail Headquarters](#set-up-required-parameters-in-retail-headquarters)
+6. Complete all necessary settings from the [Set up Retail for Austria](set-up-retail-for-austria).
 
 ## Limitations of the sample
+
+  - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the Price include sales tax option must be set to Yes for both retail stores and customers.
