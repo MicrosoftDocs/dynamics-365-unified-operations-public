@@ -125,7 +125,7 @@ ms.dyn365.ops.version: 10.0.1
     | Field                                 | Description |
     |---------------------------------------|-------------|
     | Signatory type                        | Specify who signs the accounting reporting. Select either **Taxpayer** or **Representative**. |
-    | Signatory first, middle and last name | Enter the full name of the signatory. If you leave these fields blank, the name of the official of the **Director** type is used as the name of the signatory. (This official is set up at **Organization administration \> Setup \> Contacts \> Officials**.) |
+    | Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory. If you leave these fields blank, the name of the official of the **Director** type is used as the name of the signatory. (This official is set up at **Organization administration \> Setup \> Contacts \> Officials**.) |
     | Representative document               | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority. |
     | Correction number                     | Enter the number of the correction, if you didn't specify it in step 5. |
     | Reporting date                        | Enter the reporting date, if you didn't specify it in step 5. |
