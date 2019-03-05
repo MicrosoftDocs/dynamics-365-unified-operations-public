@@ -2237,6 +2237,8 @@
             href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Fixed assets
           items: 
+          - name: Set up fixed assets
+            href: ../financials/localizations/rus-set-up-fixed-assets
           - name: Acquiring fixed assets and putting them into operation
             href: ../financials/localizations/rus-fixed-asset-acquisition.md
           - name: Register fixed assets acquisitions
@@ -2267,6 +2269,16 @@
             href: ../financials/localizations/rus-bonus-depreciation.md
           - name: Calculate depreciation
             href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Accounts payable and receivable
+          - name: Invoices for payment
+            href: ../financials/localizations/rus-invoice-payment.md
+          - name: Set up dimension control for settlements
+            href: ../financials/localizations/rus-transactions-settlement-date.md
+          - name: Cash flow management
+            href: ../financials/localizations/rus-cash-flow.md
+        - name: Reporting
+          - name: Financial reporting
+            href: ../financials/localizations/rus-financial-reports.md
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
@@ -2275,14 +2287,6 @@
           href: ../financials/localizations/rus-ledger-transactions-preview.md
         - name: Set up officials
           href: ../financials/localizations/rus-officials.md
-        - name: Set up dimension control for settlements
-          href: ../financials/localizations/rus-transactions-settlement-date.md
-        - name: Invoices for payment
-          href: ../financials/localizations/rus-invoice-payment.md
-        - name: Financial reporting
-          href: ../financials/localizations/rus-financial-reports.md
-        - name: Cash flow management
-          href: ../financials/localizations/rus-cash-flow.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
