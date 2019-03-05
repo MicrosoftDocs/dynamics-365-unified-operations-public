@@ -34,28 +34,21 @@ ms.dyn365.ops.version: 10.0.1
 
 ## Introduction
 
-This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations. 
+The Microsoft Dynamics 365 for Retail functionality for Austria includes a sample of integration of POS with an external fiscal registration service to cover local fiscal requirements to cash registers in Austria. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It is based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables the communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on the Retail Hardware station or a separate machine that can be connected from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
-The Microsoft Dynamics 365 for Retail functionality for Austria includes a sample of integration of POS with an external fiscal registration service to cover local fiscal requirements to cash registers in Austria. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It is based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables the communication with the EFR service via the HTTPS protocol. The sample is provided in form of a source code and is a part of the Retail SDK.
-Microsoft does not ship any hardware, software or documentation from EFSTA. Please contact [EFSTA](http://efsta.org/kontakt/) for information on how to acquire the EFR solution and operate it.
-
-This sample provides an integration of POS with the Austria-specific certified fiscal registration service. It is assumed that the service is hosted on the mashine inside client's infrastructure and is paired with POS Hardware station. The sample is implemented as a source code of POS, Hardware station extensions, and Commerce runtime extensions. And  it's available in the Retail software development kit (SDK).
+Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](http://efsta.org/kontakt/).
 
 ## Scenarios
 
-To learn about common POS scenarios and features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail Documentation](https://docs.microsoft.com/dynamics365/unified-operations/retail/index).
-
-### Austria-specific POS scenarios and features
-
 The following scenarios are covered by the fiscal registration service integration sample for Austria:
-   - Registration of cash transactions at the fiscal cash register (EFR):
-      - Senddetailed transaction data (sales line information, discounts, payments, taxes) to fiscal register service;
-      - Capture a response from the fiscal register service including a digital sign and link to registered transaction;
-      - Print in the receipt tax group data and reference to registered transaction in fiscal register software as a QR-code.
-  - Registration of deposits at the fiscal cash register (EFR) as a non-cash transactions:
-      - Issue a Gift card;
-      - Registration of customer account deposit;
-      - Registration of customer order deposit.
+   - Registration of cash transactions in the fiscal register service:
+      - Send detailed transaction data, including sales line information, discounts, payments, and taxes, to the fiscal register service.
+      - Capture a response from the fiscal register service including a digital signature and a link to the registered transaction.
+      - Print the tax decomposition and the QR-code for the registered transaction in the receipt.
+  - Registration of gift card operations and customer deposits in the fiscal cash register as non-cash transactions:
+      - Issue/Add to a Gift card.
+      - Register a customer account deposit.
+      - Register a customer order deposit.
   - Registration of some POS-related events or transactions at the fiscal cash register (EFR) as a non-cash transactions:
       - Shift open/close;
       - Start amount / Float entry / Tender removal;
