@@ -5,7 +5,7 @@ title: Pause Service Updates through Lifecycle Services
 description: This topic provides information for you to pause service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
