@@ -67,8 +67,8 @@ The ability to configure updates is only available for **implementation projects
 
 3. Select the configuration options and click **Save**.
 
-        > [!IMPORTANT]
-        > Once the settings are saved you will have the ability to change them at any time. However, if there is an ongoing rollout then the saved settings will not be used to update the existing rollout timings but will be used from the next rollout onwards. Ongoing rollout is defined by the time between the email notification being sent for the sandbox update (Production update - 14 calendar days) and the Production environment being updated. 
+      > [!IMPORTANT]
+      > Once the settings are saved you will have the ability to change them at any time. However, if there is an ongoing rollout then the saved settings will not be used to update the existing rollout timings but will be used from the next rollout onwards. Ongoing rollout is defined by the time between the email notification being sent for the sandbox update (Production update - 14 calendar days) and the Production environment being updated. 
 
 For more details about how to pause getting updates to configured sandbox and production environments, see [Pause service updates](pause-service-updates.md) topic.
 
