@@ -53,7 +53,7 @@ The following image shows the **Create alert rule** dialog box, which now includ
 
 ## Alert notification email templates
 
-The service sends email notifications by using predefined email templates that deliver the basic details of the alert notification. These details include a direct link to the page where the alert rule was defined.
+The service sends email notifications by using predefined email templates that deliver the basic details of the alert notification.
 
 The following image show the structure of the alert notifications when they are received by email.
 
