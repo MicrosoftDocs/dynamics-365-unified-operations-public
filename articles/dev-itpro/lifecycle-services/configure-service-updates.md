@@ -71,9 +71,8 @@ On this page you have the following options:
 
 3. **View update calendar:** Once you have set the update cadence and configured the update environment, to know exactly when environment will be updated we generate an update calendar for the next six months that shows exactly when the configured sandbox and production environments will be updated. This provides you with a level of predictability on when to expect the update. Under the Production update cadence, you will see the View update calendar link.
 
-> [!NOTE]
-> For more details, on how to pause getting updates to configured sandbox and production environment see [Pause Service Updates](pause-service-updates.md) topic.
 
-> [!NOTE]
-> For more details on ONE Version and Microsoft managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md) topic.
+For more details about how to pause getting updates to configured sandbox and production environments, see [Pause service updates](pause-service-updates.md) topic.
+
+For more details about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
