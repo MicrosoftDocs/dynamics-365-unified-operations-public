@@ -69,4 +69,4 @@ Organizations may have a set of urgently required Skills. These Skills can be st
 
 This flow covers this scenario and can be extended to cover any scenarios that involves SharePoint integration.
 
-
+Note: If you want to use above Apps/Flow as it is, please test it to make sure to covers all scenarios specific to your implemenation.
