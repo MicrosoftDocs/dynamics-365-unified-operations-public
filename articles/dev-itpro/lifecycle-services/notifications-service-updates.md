@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get notified about service updates through Lifecycle Services (LCS)
-description: This topic provides information for how you can get notifications around service updates to your environments.
+description: This topic explains the various ways that you can be notified about service updates to your environments.
 author: manalidongre
 manager: AnnBe
 ms.date: 03/05/2019
@@ -33,27 +33,21 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can stay up-to-date about the service updates from Microsoft.
+This topic explains how you can stay up to date about service updates from Microsoft.
 
-With One Version, Microsoft will update your configured sandbox and production environment to the latest service update released by Microsoft. Microsoft notifies you of an upcoming update to your environment via email as well as through notifications in LCS.
+Microsoft uses One Version to update your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Microsoft Dynamics Lifecycle Services (LCS).
 
-Following are the different types of notifications you will get:
+Here are the different types of notifications that you will receive:
 
-1. **Notification sent 5 days prior to the update**:
-Microsoft notifies you 5 days prior to updating your environment. Once you have configured your update cadence you will get notifications about an upcoming update 5 days prior to the update.
+- **Notification that is sent five days before the update:** Microsoft notifies you five days before it updates your environment. After you've configured your update cadence, you will receive notifications about upcoming updates five days before they occur. These notifications take three forms:
 
-    - **Email notification**: Project owners, environment manager and users listed as additional stakeholders for an environment are notified via email about the upcoming update.
+    - **Email notification:** Project owners, environment managers, and users who are listed as additional stakeholders for an environment are notified by email about the upcoming update.
+    - **Notification bar on the environment details page:** A notification that appears on the environment details page in LCS informs the customer about the upcoming update.
+    - **Upcoming update reflects the update:** On the environment details page in LCS, select **Maintain &gt; Upcoming Update** to open a dialog box that contains details about the upcoming update.
 
-    - **Notification bar on the environment details page**: A toast notification shows up on the environment details page informing the customer of the upcoming update.
+- **Notification that is sent one hour before the update:** One hour before the start of the downtime window, users in Microsoft Dynamics 365 for Finance and Operations receive a notification. This notification asks users to save their work, because the environment will be taken down for an update.
+- **Notification that is sent when the update is completed:** After Microsoft has finished updating your configured environment, it notifies you by email about the outcome of the update. This email is always sent, regardless of whether the update was successfully applied. It's sent to project owners, environment managers, and users who are listed as the additional stakeholders for the environment. If Microsoft can't start the update for some reason, the email includes a reason to explain why the update wasn't started.
 
-    - **Upcoming update reflects the update**: On the LCS environment details page, select **Maintain \&gt; Upcoming Update**. This opens a slider which will contain details about the upcoming update.
+After you receive a notification, if you can't proceed with the update for some reason, you can pause it. For more information about how to pause updates to configured sandbox and production environments, see [Pause Service Updates](pause-service-updates.md).
 
-2. **Notification sent 1 hour prior to the actual update**:
-One hour prior to the start of the downtime window, users within Finance and Operations will get a notification asking them to save their work as the environment will be taken down for an update.
-
-3. **Notification sent on the completion of the update**:
-Once we are done updating your configured environment, Microsoft will notify you about the outcome of the update regardless of whether the update was successfully applied or not. This email is sent all users that are assigned the project owner, environment manager, and users designated as the additional stakeholders for the environment. If for some reason we are unable to start the update the email will contain a reason explaining why the update was not started.
-
-Once you receive the notification, if you are unable to move forward with the update for some reason you can learn more on how to pause getting updates to configured sandbox and production environment by checking the [Pause Service Updates](pause-service-updates.md) topic.
-
-For more details about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
