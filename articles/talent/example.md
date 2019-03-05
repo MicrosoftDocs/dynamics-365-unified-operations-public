@@ -32,7 +32,12 @@ ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
 
 ---
-This topic covers couple of example scenarios on Talent Extensibility using Powerapp and Flow. You can import solution package associated with each of the example into your Powerapp environment. These packages serve as guidance or as a starting point for implementing customer specific scenarios
+This topic covers couple of example scenarios on Talent Extensibility using Powerapp and Flow. You can import solution package associated with each of the example into your Powerapp environment. These packages can be used as guidance or as a starting point for implementing customer specific scenarios
+
+## Prerequisites
+
+User with "Environment Maker" permission can import Packages
+A user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order to export or import any app.
 
 ## Flow- Form Connect
 This template can be used to read data from Microsoft Forms and store it in a CDS entity.
@@ -70,3 +75,8 @@ Organizations may have a set of urgently required Skills. These Skills can be st
 This flow covers this scenario and can be extended to cover any scenarios that involves SharePoint integration.
 
 Note: If you want to use above Apps/Flow as it is, please test it to make sure to covers all scenarios specific to your implemenation.
+
+##Additional Resources
+
+Power Platform: https://docs.microsoft.com/en-us/power-platform/admin/admin-documentation
+
