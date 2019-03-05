@@ -1,3 +1,5 @@
+### PROCESS REFUND TO CREDIT CARDS WITHOUT PHYSICAL PRESENCE. 
+
 ## BUSINESS VALUE
 Returns are an integral operation for a Retailer. The ability to accept returns for sales and refund the payments to the customer allows the Retailer an option to service their customers’ needs and issues. Return policies and Refund guidelines are generally set at a company level and enforced at a store level with certain privileges for Cashiers and a few over-ride permissions for the managers/senior staff.  
  
