@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Overview of the What's new feature
-description: This topic describes the What's new feature and how you can use it.
+title: Overview of Feature management
+description: This topic describes the Feature management feature and how you can use it.
 author: mikefalkner
 manager: AnnBe
 ms.date: 03/01/2019
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
+audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
@@ -27,15 +27,15 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: 10.0.2
 ---
 
-# Overview of the What's new feature
+# Overview of Feature management
 
 [!include[banner](../../includes/banner.md)]
 
-Features are added and updated in every release of Dynamics 365 for Finance and Operations. The **What's new** experience provides you with a workspace where you can view a list of features that have been delivered in each release. New features are disabled by default (see exception discussed below) and you can use the workspace to enable those features and view the documenation for them.
+Features are added and updated in every release of Dynamics 365 for Finance and Operations. The **Feature management** experience provides you with a workspace where you can view a list of features that have been delivered in each release. New features are disabled by default (see exception discussed below) and you can use the workspace to enable those features and view the documenation for them.
 
-## Using the workspace
+## Using the Feature management workspace
 
-The **What's New** workspace is found in the Workspaces menu area or in the **Common** area page. Click on the workspace icon and you will see a page with a list of features for all releases that have been supported by the What's new experience. We will be enhancing the What's new experience over time to include additional functionality to help you manage feature.
+The **Feature management** workspace is found in the Workspaces menu area or in the **Common** area page. Click on the workspace icon and you will see a page with a list of features for all releases that have been supported by the Feature management experience. We will be enhancing the Feature management experience over time to include additional functionality to help you manage feature.
 
 The list of features includes the following information:
 1) The **Feature name** describes the feature that was added
@@ -56,4 +56,4 @@ By default, all features are disabled. However, your implementation team may dec
 
 ## Assigning roles
 
-The **Feature management** workspace can be opened by System administrators and by users that are assigned to the **Feature manager** role that was created to support the What's new experience. The **Feature manager** can enable and disable any feature and update the comments section for the feature. However, the **Feature manager** role does not override the existing security that the user has. The role only controls access to enabling and disabling the features. It does not provide access to the features. 
+The **Feature management** workspace can be opened by System administrators and by users that are assigned to the **Feature manager** role that was created to support the Feature management experience. The **Feature manager** can enable and disable any feature and update the comments section for the feature. However, the **Feature manager** role does not override the existing security that the user has. The role only controls access to enabling and disabling the features. It does not provide access to the features. 
