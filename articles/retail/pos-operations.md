@@ -76,6 +76,8 @@ The following columns specify where the operations can be invoked:
 | 640 | Clear sales representative on line | Remove the commission sales group (sale rep) from the currently selected line. | Yes | Yes | No | Yes | No |
 | 121 | Clear salesperson | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 1055 | Close shift | Close the current shift, print a Z report, and sign the user out of the system. | Yes | Yes | Yes | No | No |
+| 139 | Conclude transaction | Prompts user to select payment method | Yes | Yes | No | Yes | No |
+| 620 | Create customer order | Convert the POS transaction to a customer order. | Yes | Yes | No | Yes\* | No |
 | 925 | Copy the bank check | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
 | 620 | Create customer order | Convert the POS transaction to a customer order. | Yes | Yes | No | Yes\* | No |
 | 621 | Create quotation | Convert the POS transaction to a sales quotation. | Yes | Yes | No | Yes\* | No |
