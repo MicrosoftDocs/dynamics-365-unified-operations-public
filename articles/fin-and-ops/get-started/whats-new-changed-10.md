@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0 (April 2019)
 description: This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/27/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,8 @@ ms.dyn365.ops.version: Release 10
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version has a build number of 10.0.8.
+This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version has a build number of 10.0.8. For more information about version 10.0, see [Additional resources](whats-new-changed-10.md#additional-resources).
+
 
 To learn about the preview features in Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new).
 
@@ -72,3 +73,11 @@ Wondering about upcoming and recently released capabilities in any of our busine
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156).
+
+### Removed and deprecated features
+The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
