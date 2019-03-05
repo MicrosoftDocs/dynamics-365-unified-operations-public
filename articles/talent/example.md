@@ -34,17 +34,16 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ## Flow- Form Connect
 This template can be used to read data from Microsoft Forms and store it in a CDS entity.
-Examples include: Capturing candidate assessments, Capture course Questionnaire results, Interview questions library for HR administrators, Candidate Evaluating the interview process.
+It can extended to cover scenarios like Capturing candidate assessments, Capture course Questionnaire results, Interview questions library for HR administrators, Candidate Evaluating the interview process.
 In Attract, Forms can be exposed to the Candidate Portal and Candidate can fill details. Forms can also be embedded as activities in a job template.
 When a Candidate submits form, Flow captures the form submission, reads data and stores it in the CDS entity.
 ## Initiate and extract parameters passed to Powerapps
 This template can be used as a starting point for any PowerApps scenario specific to Attract. It comes with all default parameters passed by Attract like Job Application, Candidate ID, JobID
-This example template demonstrates how to retrieve a Candidate Assessment Form for a Hiring manager to see the Assessment filled by a candidate.
+This example template demonstrates how to retrieve a Candidate Assessment form for a Hiring manager to see the Assessment filled by a candidate.
 The PowerApps can be embedded into job template in Attract
 ## Integration with Office 365
 This PowerApps covers the scenarios of extracting team information of logged in users from office 365 and references the worker within Dynamics 365 for Talent to extract clock in and clock out details and exception recordings. Clock in and Clout out details are stored in CDS custom entities and assumed to be populated from third party systems via integration.
-This app can be extended to cover scenarios like:
-Display Team vacation, Calendar events, any Team specific events and can be used by HR, Employees and Managers
+This app can be extended to cover scenarios like Display Team vacation, Calendar events, any Team specific events and can be used by HR, Employees and Managers
 ## Flow – Email Notification
 This template can be used for email notification scenarios.
 This template covers the scenario that trigger email notification to Candidate when Hiring team rejects the candidate in any stage of recruiting process.
