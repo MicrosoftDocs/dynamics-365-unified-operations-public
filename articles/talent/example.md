@@ -77,7 +77,7 @@ This flow covers this scenario and can be extended to cover any scenarios that i
 
 Note: If you want to use above Apps/Flow as it is, please test it to make sure to covers all scenarios specific to your implemenation.
 
-##Additional Resources
+## Additional Resources
 
 Power Platform: https://docs.microsoft.com/en-us/power-platform/admin/admin-documentation
 
