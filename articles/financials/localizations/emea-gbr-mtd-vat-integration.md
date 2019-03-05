@@ -105,6 +105,8 @@ To prepare Dynamics 365 for Finance and Operations to interoperate with MTD for 
 > -   Tax declaration model mapping
 > -   MTD VAT model mapping (UK)
 
+![Default for model mapping](media/emea-gbr-default-for-model-mapping-parameter.png)
+
 For more information about how to download Electronic reporting configurations from Lifecycle Services, refer to [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). 
 
 ## Import a package of data entities that include predefined Electronic messages setup
