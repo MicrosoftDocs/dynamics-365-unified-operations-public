@@ -99,7 +99,7 @@ Positive pay files are created by using data entities. Before you can generate a
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />
