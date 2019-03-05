@@ -3,12 +3,12 @@
 
 title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
-author: robadawy
+author: manalidongre
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
-ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -41,6 +40,7 @@ For all planned maintenance, Microsoft will send a notification to all stakehold
 
 ### When is this planned maintenance window taken?
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. All environments fall in one of these three regions. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
+
 - NAM: 2 AM to 10 AM
 - EMEA: 10 PM to 6 AM
 - APAC: 12 PM to 9 PM
@@ -62,12 +62,12 @@ If partners, independent software vendors (ISVs), and other interested parties w
 We are continually working to reduce the necessity of downtime for the service, and many regular maintenance tasks don’t incur downtime. To help guarantee the most predictability, we can’t yet perform all patching in zero downtime.
 
 ## Microsoft service updates 
-We have a seperate FAQ that has details around service updates done by Microsoft. To learn more see the [One Version service updates FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version).  
+We have a seperate FAQ that has details around service updates done by Microsoft. To learn more see the [One Version service updates FAQ](../../fin-and-ops/get-started/one-version).  
 
 ## Operating system-level updates 
 
 ### How long is the maintenance window?
-Most Operating system–level updates are completed in approximately one hour. However, we ask for a three hour window to handle failures and to bring the system back to a health state. 
+Most operating system–level updates are completed in approximately one hour. However, we ask for a three hour window to handle failures and to bring the system back to a health state. 
 
 The exact downtime for all updates will be included in the maintenance window notification email that is sent to you before the start of the update.
 
@@ -81,7 +81,7 @@ At this time, during operation system-level updates, LCS does not indicate that 
 Operating system–level updates are applied on all Tier-2 sandbox environments that are included as part of the Microsoft base offer. They are also applied on add-ons that have been purchased. However, other environments such as Tier-1 sandbox and demo environments, are the responsibility of the customer or partner.
 
 ### What notifications will I receive about upcoming planned maintenance?
-You will receive an email notification five days before the update is scheduled to occur. This notification will include information about the environments that will be updated, the update type, the estimated amount of time that the update will take, and any action that you may have to take.
+You will receive an email notification 5 days before the update is scheduled to occur. This notification will include information about the environments that will be updated, the update type, the estimated amount of time that the update will take, and any action that you may have to take.
 
 ### Will I be notified when the update is completed?
 If your update is completed within the defined maintenance window, you won’t receive any notification when the update is completed. 
