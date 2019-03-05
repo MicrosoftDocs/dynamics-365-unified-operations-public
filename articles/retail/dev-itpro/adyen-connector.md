@@ -41,8 +41,8 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 | Term | Description |
 |---|---|
 | Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 for Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
-| Card present | The term *card present* refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
-| Card not present | The term *card not present* refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manyally either on an E-Commerce website, a Call Center flow, or on the point of sale or payment terminal. |
+| Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
+| Card not present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manyally either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
 ## Overview
 
@@ -175,7 +175,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Brazil | Q1 2019 |
 
 #### Supported card not present countries
-For card not present scenarios, such as E-Commerce or Call Center, special cross country, cross currency, and cross market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
+For card not present scenarios, such as E-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
 
 #### Supported Dynamics 365 payment features
 
