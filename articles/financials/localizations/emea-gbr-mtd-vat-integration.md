@@ -101,11 +101,11 @@ To prepare Dynamics 365 for Finance and Operations to interoperate with MTD for 
 | 13     | MTD VAT import token format (UK)            | Format (importing)                   | Access token from HMRC import to database                                    |
 
 > [!NOTE]
-> When all the GER configuration from the table above are imported, select and mark **Default for model mapping** following configurations:
+> When all the ER configurations from the table above are imported, select and mark **Default for model mapping** for the following configurations:
 > -   Tax declaration model mapping
 > -   MTD VAT model mapping (UK)
-
-![Default for model mapping](media/emea-gbr-default-for-model-mapping-parameter.png)
+>
+> ![Default for model mapping](media/emea-gbr-default-for-model-mapping-parameter.png)
 
 For more information about how to download Electronic reporting configurations from Lifecycle Services, refer to [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). 
 
@@ -124,7 +124,7 @@ To do so, click on **Import** button in **Data management** work space, define *
 For more information, refer to [Data management](../../dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 > [!NOTE]
-> Some records in the data entities of the package include link on GER configurations. It is important to have ER configurations imported to Dynamics 365 for Finance and Operations before you start importing of data entities package.
+> Some records in the data entities of the package include link on ER configurations. It is important to have ER configurations imported to Dynamics 365 for Finance and Operations before you start importing of data entities package.
 
 The **UK MTD-VAT setup** package provides setup for two processing which can be used independently:
 
@@ -156,7 +156,7 @@ To work with Electronic messages, related number sequences must be defined. Open
 
 Dynamics 365 for Finance and Operations allows to generate a paper format of the VAT statement in “VAT 100 report” format using **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** page or directly from **Tax** \> **Inquires and reports** \> **Sales tax inquires** \> **Sales tax payments** page for a selected sales tax payment transaction. “VAT 100 report” is generated in SSRS format by using this functionality.
 
-To get the “VAT 100 report” in MS Excel format instead of the SSRS format, a GER format must be defined in **General ledger parameters**. To do so, open **Tax** \> **Setup** \> **General ledger parameters,** select **Sales tax** tab and select “VAT Declaration Excel (UK)” in the **VAT statement format mapping** field in **Tax options** group of fields.
+To get the “VAT 100 report” in MS Excel format instead of the SSRS format, a ER format must be defined in **General ledger parameters**. To do so, open **Tax** \> **Setup** \> **General ledger parameters,** select **Sales tax** tab and select “VAT Declaration Excel (UK)” in the **VAT statement format mapping** field in **Tax options** group of fields.
 
 When the **VAT statement format mapping** field is empty, the old SSRS “VAT 100” report will be generated.
 
