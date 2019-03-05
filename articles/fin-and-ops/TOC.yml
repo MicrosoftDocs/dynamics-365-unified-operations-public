@@ -2366,7 +2366,7 @@
           href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
         - name: Set up sales tax groups for reverse charge VAT
           href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
-        - name: MTD for VAT
+        - name: Making Tax Digital for VAT
           href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
       - name: United States
         href: ../financials/localizations/united-states.md
