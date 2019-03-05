@@ -5,7 +5,7 @@ title: Maintenance mode
 description: This topic provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. Maintenance mode is a system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/04/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,8 +52,7 @@ You can now turn maintenance mode on and off directly through Lifecycle Services
 
 Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You also have the option to **download the logs** to troubleshoot why the operation failed.
 
-## Turn maintenance mode on and off 
-### Maintenance mode in VHD-based hosted environments
+## Turn maintenance mode on and off in DevTest/Demo environments and VHD-based hosted environments
 
 You can turn on maintenance mode locally by running the following command. 
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Retail (April 2019)
+title: What's new or changed in Dynamics 365 for Retail (April 2019)
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 02/27/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -29,15 +29,13 @@ ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
 
 ---
-# Preview features in Dynamics 365 for Retail (April 2019)
+# What's new or changed in Dynamics 365 for Retail (April 2019)
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail. 
 
-This topic describes features that are in preview in Microsoft Dynamics 365 for Retail. 
-
-To learn about the preview features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10).
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10).
 
 
 ## Restrict payment methods for returns without a receipt
