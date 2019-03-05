@@ -83,9 +83,9 @@ Customers can configure the day and maintenance time windows in Lifecycle Servic
 
 Users can update to the latest version using the tiles on the Environment details page in LCS. After the update is released by Microsoft, the tile will show the latest update. Customers can choose to apply the update on their own by going through the update experience on their sandbox and production environments. Documentation will also be made available on docs.microsoft.com.
 
-### How do I update production to the same version after sandbox is updated by Microsoft?
+### How do I update the production environment to the same version after Microsoft updates the sandbox environment?
 
-When a sandbox environment is updated by Microsoft, the package used for the update is saved in the project's asset library. It will be prefixed with the word *Service Update* followed by the name of the package. Since the package was already applied to the sandbox, you can proceed to mark this package as a Release Candidate and then go to the production environment and schedule to apply it like any other update. 
+When Microsoft updates a sandbox environment, the package that is used for the update is saved in the project's asset library. The name of the package is prefixed by the words "Service Update." Because the package was already applied to the sandbox environment, you can mark this package as a Release Candidate. You can then go to the production environment and schedule to apply the package, just as you might schedule to apply any other update.
 
 ### What is the expected downtime?
 
