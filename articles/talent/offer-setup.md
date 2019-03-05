@@ -219,11 +219,11 @@ offers.
 - **Candidate’s offer experience** - As administrator, you can choose to set whether all offers have an expiration date, and if so, what the default offset for the expiration date should be. You can also configure whether candidates can decline an offer.
 
 - **e-Signatures** - As an administrator, you can also choose the method that candidates can use to sign offers.
-    - Adobe Sign - All offer packages will be sent and signed via Adobe Sign. Each offer creator publishing the offer needs to have their Adobe Sign license connected to Attract. 
+    - Adobe Sign - All offer packages will be sent and signed via Adobe Sign. Each offer creator publishing the offer needs to have their Adobe Sign account connected to Attract. For Adobe Sign licenses and a free Trial, please visit this [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign - All offer packages will be sent and signed via DocuSign. Each offer creator publishing the offer needs to have their DocuSign account connected to Attract. 
+    
     - ESign - This is the default option, provided out of the box, where the user can sign an offer by typing their name and initials.
 
->[!NOTE]
-> For Adobe Sign licenses and a free Trial, please visit this [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 To learn more about the offer creation process, see [Creating, approving, and signing offers](./creating-offers.md).

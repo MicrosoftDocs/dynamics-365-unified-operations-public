@@ -31,14 +31,13 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps needed to set up and use Phased Rollout (N-1) retail components for India. The upgrade procedure and the workflow for N-1 are basically the same as for a general Microsoft Dynamics 365 for Retail environment. For general information about N-1 installation and usage, see [Upgrade and N-1 support for Retail](../dev-itpro/overview-upgrade-n-minus1.md). 
+This topic describes the steps needed to set up and use Phased Rollout (N-1) retail components for India. The upgrade procedure and the workflow for N-1 are basically the same as for a general Microsoft Dynamics 365 for Retail environment. For general information about N-1 installation and usage, see [Upgrade and N-1 support for Retail](../dev-itpro/overview-upgrade-n-minus1.md).
 
 In addition, the following steps are important for upgrade:
 
 - Both Microsoft Dynamics 365 for Retail Headquarters and AX 2012 Retail components must support Goods and Services Tax (GST) calculation. See the [Prerequisites](#prerequisites) section for details.
 - Downgrade of the GST configuration is required to use the configuration prepared for Microsoft Dynamics 365 for Retail at the AX 2012 channel side.
 - Distribution schedule includes additional upload and download jobs required to synchronize GST configuration and tax calculation results between Microsoft Dynamics 365 for Retail Headquarters and AX 2012 channels.
-
 
 ## Prerequisites
 
@@ -48,9 +47,9 @@ In addition, the following steps are important for upgrade:
 
 ## Periodic procedure to downgrade tax configuration
 
-GST configuration data differs between AX 2012 and Dynamics 365 for Retail versions. A special periodic procedure should be run to transform data. To run this procedure, do the following: 
+GST configuration data differs between AX 2012 and Dynamics 365 for Retail versions. A special periodic procedure should be run to transform data. To run this procedure, do the following:
 
-1. Sign in to Retail headquarters, and go to **Retail > Retail IT > Process tax configuration from N-1**.
+1. Sign in to Retail headquarters, and go to **Retail \> Retail IT \> Process tax configuration from N-1**.
 2. Click **OK**.
 
 Each time tax configuration changes are made and finalized the above operation should be run before sending the data to the AX 2012 channel.
