@@ -42,11 +42,11 @@ Following are the different types of notifications you will get:
 1. **Notification sent 5 days prior to the update**:
 Microsoft notifies you 5 days prior to updating your environment. Once you have configured your update cadence you will get notifications about an upcoming update 5 days prior to the update.
 
-  - **Email notification**:
-    Project owners, environment manager and users listed as additional stakeholders for an environment are notified via email about the     upcoming update.
+    - **Email notification**:
+      Project owners, environment manager and users listed as additional stakeholders for an environment are notified via email about the     upcoming update.
 
-  - **Notification bar on the environment details page**:
-    A toast notification shows up on the environment details page informing the customer of the upcoming update.
+    - **Notification bar on the environment details page**:
+      A toast notification shows up on the environment details page informing the customer of the upcoming update.
 
   - **Upcoming update reflects the update**:
     On the LCS environment details page, select **Maintain \&gt; Upcoming Update**. This opens a slider which will contain details about     the upcoming update.
