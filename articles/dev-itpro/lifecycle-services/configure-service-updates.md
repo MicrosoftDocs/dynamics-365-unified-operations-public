@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Service Updates through Lifecycle Services
+title: Configure service updates through Lifecycle Services (LCS)
 description: This topic provides information for you to configure how and when to get service updates to your environments.
 author: manalidongre
 manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -20,26 +20,25 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 266824
-ms.assetid: 
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-3-31 
+ms.dyn365.ops.version: Platform update 24 
 
 ---
 
-# Configure Service Updates through Lifecycle Services (LCS)
+# Configure service updates through Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-You will now be able to configure how and when you get service updates from Microsoft to your Dynamics 365 for Finance and Operations environments directly through Lifecycle Services. 
+You can configure how and when you get service updates from Microsoft to your Dynamics 365 for Finance and Operations environments directly through Lifecycle Services (LCS). 
 
 > [!IMPORTANT]
-> This feature is available only for customers that are on **version 8.1 and above** and are not part of the First release program. We are working on enabling this for First Release customers and for customers that are on older versions of the product. 
+> This feature is available only for customers that are on **version 8.1 and above** and are not part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. We are working on enabling this for First release customers and for customers that are on older versions of the product. 
 
-The ability to configure updates is only available for **implementation projects** and to users (customer/partner) that is assigned the **project owner** role in LCS. To modify your update settings, use the following steps:
+The ability to configure updates is only available for **implementation projects** and to users (customer/partner) that is assigned to the **project owner** role in LCS. To modify your update settings, use the following steps:
 
 1. Navigate to the **Project Settings** page in your **implementation** project.
 2. A new tab called **Update settings** will be available that has the configuration options.
@@ -56,12 +55,12 @@ The ability to configure updates is only available for **implementation projects
 
 On this page you have the following options:
 
-1. **Update environment** : Select an alternate sandbox environment to be updated prior to the production update. By default, the Tier 2 Standard Acceptance Test (Sandbox) environment included in the base offer is updated by Microsoft before applying the update on the Production environment. If you have purchased Tier 2 and above Sandbox add-on environments and would like a different Sandbox to be updated, then you can use this setting to change the default and select an alternate environment.
+1. **Update environment**: Select an alternate sandbox environment to be updated prior to the production update. By default, the Tier 2 Standard Acceptance Test (Sandbox) environment included in the base offer is updated by Microsoft before applying the update on the Production environment. If you have purchased Tier 2 and above Sandbox add-on environments and would like a different Sandbox to be updated, then you can use this setting to change the default and select an alternate environment.
 
 > [!IMPORTANT]
 > The environment selected here will be updated 7 calendar days prior to the update cadence selected for the production environment.
 
-2. **Production environment update cadence** : Select a recurring cadence for your Production environment updates. The Sandbox environment configured above will be updated 7 calendar days prior to the selected cadence. You can select the following:
+2. **Production environment update cadence**: Select a recurring cadence for your Production environment updates. The Sandbox environment configured above will be updated 7 calendar days prior to the selected cadence. You can select the following:
     - Select the cadence: You can choose whether to get updates in the first, second, third week of the month.
     - Select one of the three time-zones: Select whether you want the Production updated in Eastern Time(UTC – 5) or Hong Kong Time(UTC + 8) or the Greenwich Mean Time(UTC + 0).
     - Select a day of the week: Select a day in the week when you want to get the update.
