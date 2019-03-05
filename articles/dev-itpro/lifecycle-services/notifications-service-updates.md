@@ -5,7 +5,7 @@ title: Get notified about Service Updates through Lifecycle Services
 description: This topic provides information for how you can get notifications around service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 06/22/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,4 +61,4 @@ Once we are done updating your configured environment, Microsoft will notify you
 > Once you receive the notification, if you are unable to move forward with the update for some reason you can learn more on how to pause getting updates to configured sandbox and production environment by checking the [Pause Service Updates](pause-service-updates.md) topic.
 
 > [!NOTE]
-> For more details on ONE Version and Microsoft managed service updates, check the [ONE Version FAQ](Dynamics-365-Operations/articles/fin-and-ops/get-started/one-version.md) topic.
+> For more details on ONE Version and Microsoft managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md) topic.
