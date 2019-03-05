@@ -49,8 +49,8 @@ The ability to configure updates is only available for **implementation projects
 
     - **Update environment**: Select an alternate sandbox environment to be updated prior to the production update. By default, the Tier 2 Standard Acceptance Test (Sandbox) environment included in the base offer is updated by Microsoft before applying the update on the Production environment. If you have purchased Tier 2 and above Sandbox add-on environments and would like a different Sandbox to be updated, then you can use this setting to change the default and select an alternate environment.
 
-     > [!IMPORTANT]
-     > The environment selected here will be updated 7 calendar days prior to the update cadence selected for the production environment.
+        > [!IMPORTANT]
+         > The environment selected here will be updated 7 calendar days prior to the update cadence selected for the production environment.
 
     - **Production environment update cadence**: Select a recurring cadence for your Production environment updates. The Sandbox environment configured above will be updated 7 calendar days prior to the selected cadence. You can select the following:
       - Select the cadence: You can choose whether to get updates in the first, second, third week of the month.
