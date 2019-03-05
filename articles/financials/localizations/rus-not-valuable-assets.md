@@ -55,10 +55,17 @@ Use this procedure to set up fixed asset parameters for not valuable fixed asset
 7.  Click **Document** and then click **Document types**.
 8.  In the **Number sequence code** field, select the number sequence code for the **NVFA Act on disposal (No. MB-4)** and **NVFA Act on writing-off No. MB-8)** document types.
 
-## Set up identification of FA groups for NVFAs 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/ Special riggings\ NVFA** \> **Identification of FA groups**
+## set up FA groups for NVFA
+
+1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/ Special riggings/ NVFA** \> **Identification of FA groups**
 2.  Create a new record on the **CONDITION FOR FA GROUP IDENTIFICATION** page list and fill in the fields.
-3. Click **Compliance**, create new records for items and fill in the fields.
+
+
+
+## Set up identification of FA groups for NVFAs 
+1.  Click **Fixed assets (Russia)** \> **Setup** \> **FA groups**
+2.  Create a new record on the **FA GROUPS** page list and fill in the fields. Select **NVFA** in the **Type of group** field.
+
 
 > [!NOTE]
     > The system uses this setting for filling  the **FA group** and **lifetime** fields on the **Working clothes/ Special riggings/ NVFA issue journal lines** page (see [Generate NVFA records, putting into operation and depreciation transactions for NVFAs](Generate-NVFA-records,-putting-into-operation-and-depreciation-transactions-for-NVFAs))   
@@ -83,7 +90,7 @@ Use this procedure to set up inventory dimensions for not valuable fixed assets 
 2.  Create a new item, or double-click an existing item record.
 3.  Click **Set up** \> **Dimension groups** to set up storage and tracking dimension groups for the item.
 4.  In the **Item model group** field, select the item model group.
-5.  In the **FA group** field, select a fixed asset (FA) group for the item.
+5.  In the **FA group** field, select a fixed asset (FA) group with **NVFA** type of group for the item.
 
 
 ## Set up officials for the NVFA statement of writing-off (No. MB-8) 
@@ -109,8 +116,7 @@ Use this procedure to register a not valuable fixed asset (NVFA) by using a purc
 4.  In the **Item number** field, select an item number.  
 5.  In the **Quantity** field, enter the quantity of the item that is ordered.
 6.  In the **Unit price** field, enter the purchase price for an item unit. If the purchase price of a fixed asset is less than the value that is specified in the **Max cost of the NVFA** field in the **Fixed asset parameters** (excluding sales tax value), the item is considered to be an NVFA and the **Inventory profile** field (**Line details** \> **Product** tab) is filled in automatically by the value, specified in th **Fixed asset parameters**. 
-7.  In the **Net amount** field, enter the amount. This amount includes any discounts that are applied.
-8.  Post the vendor invoice. 
+7. Post the vendor invoice. 
     
     > [!NOTE]
     >  If the system defines the item in the purchase line as NVFA, you should not specify a fixed asset inventory number for this line in the **Purchase order**. 
@@ -120,7 +126,7 @@ Use this procedure for automatic creation of NVFA records on the **Not valuable 
 1. Click **Fixed asset (Russia)** \> **Journals** \> **Working clothes/ Special riggings / NVFAs issue**.
 2. Click **New** to create a new journal and fill in the fields.
 3. Click **Lines** and then **New** to create a new record.
-4. Fill in the **Item** and **Quantity** fields. The values in the **Person in charge** and **Location** fields are filled in form the journal. The **Lifetime** and **FA group** fields are filled in automatically from the **CONDITION FOR FA GROUP IDENTIFICATION**
+4. Fill in the **Item** and **Quantity** fields. The values in the **Person in charge** and **Location** fields are filled in from the journal. The **Lifetime** and **FA group** fields are filled in automatically from the **CONDITION FOR FA GROUP IDENTIFICATION**
 5. Check and fill in the fields on the **Product dimensions** tab.
 6. Close **Working clothes/ Special rigging/ NVFA issue journal lines** page.
 7. Click **Close** on the **Working clothes/ Special rigging/ NVFA issue journal** page. The system selects the **Posted** check box and creates FA journals for Putting NVFAs into operation and for depreciation. 
@@ -147,16 +153,16 @@ Use this procedure to register a not valuable fixed asset (NVFA) by using the **
 
 ## Generate a write-off transaction and print the NVFA statement of disposal (No. MB-4) from the fixed asset journal 
 
-You can generate and print the **NVFA Statement of disposal (No. MB-4)** report from the fixed asset journal after you enter transactions of the **Disposal (sale)** and **Writing-off** types. For transactions that have a status of **Written off** or **Written off (sale)**, the report can also be printed from the **Working clothes**, **Special rigging**, and **Not valuable FAs** forms. This report is generated by each department that uses working clothes, special rigging, and not valuable fixed assets (NVFAs).
+You can generate and print the **NVFA Statement of disposal (No. MB-4)** report from the fixed asset journal after you enter transactions of the **Disposal (sale)** and **Writing-off** types. For transactions that have a status of **Written off** or **Written off (sale)**, the report can also be printed from the **Working clothes**, **Special rigging**, and **Not valuable FAs** pages. This report is generated by each department that uses working clothes, special rigging, and not valuable fixed assets (NVFAs).
 
 > [!NOTE]
-> You can generate the report from the **Working clothes**, **Special rigging**, and **Not valuable FAs** forms only after you generate the report from the fixed asset journal.
+> You can generate the report from the **Working clothes**, **Special rigging**, and **Not valuable FAs** pages only after you generate the report from the fixed asset journal.
 
 1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 2.  Create a new journal.
 3.  In the **Name** field, select the journal name.
-4.  Click **Lines** to open the **Journal voucher** form.
-5.  Press CTRL+N to open the **Add to journal** form.
+4.  Click **Lines** to open the **Journal voucher** page list.
+5.  Press **New** to open the **Add to journal** page.
 6.  In the **Transaction date** field, select the transaction date.
 7.  In the **Transaction type** field, select **Writing off** or **Disposal (sale)** as the transaction type.
 8.  In the **FA inventory number** field, select the inventory number for the fixed asset.
