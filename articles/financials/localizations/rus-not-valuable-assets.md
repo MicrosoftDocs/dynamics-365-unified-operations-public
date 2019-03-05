@@ -208,19 +208,18 @@ Use this procedure to print the not valuable fixed asset (NVFA) Statement of wri
     
     –or–
     
-    Click **Group operations** \> **Disposal (sale)** to create disposal transactions.
+    Click **Group operations** \> **Disposal (sale)** or **Writting-off** to create disposal transactions.
 
 11. In the **Disposal date** field, select the date of the disposal transaction.
-12. Click **Select**, and then specify the selection criteria that are used to create transactions.
+12. Expand **Records to include** tab and click **Filter**. Then specify the selection criteria that are used to create transactions.
 13. Click **OK**, and then click **OK** again to create disposal or write-off transactions.
-14. In the **Journal voucher** form, click **Validate** \> **Validate** to validate the journal.
+14. In the **Journal voucher** page, click **Validate** \> **Validate** to validate the journal.
 15. Click **Post** \> **Post** to post the journal.
-16. Click **Print** \> **NVFA Statement of writing-off (No. MB-8)** to open the **NVFA Statement of writing-off (No. MB-8)** form.
-17. In the **Order number** field, enter the order number that the disposal transaction is posted under.
-18. In the **Resolution date** field, select the order date.
-19. On the **Rows** tab, you can verify the document number, the fixed asset number, and the value model code.
-20. On the **Officials** tab, you can view details about the officials who are assigned in the **Officials** form. You can also modify the employee details, if modification is required.
-21. Click **OK** to generate the NVFA Statement of writing off (No. MB-8).
+16. Click **Print** \> **NVFA Statement of writing-off (No. MB-8)** to open the **NVFA Statement of writing-off (No. MB-8)** page.
+17. On the **Overview** tab, in the **Order number** field, enter the order number that the disposal transaction is posted under, and in the **Resolution date** field, select the order date.
+18. On the **Rows** tab, you can verify the document number, the fixed asset number, and the value model code.
+19. On the **Officials** tab, you can view details about the officials who are assigned in the **Officials**. You can also modify the employee details, if modification is required.
+20. Click **Print** to generate the NVFA Statement of writing off (No. MB-8).
 
 ## Generate the NVFA accounting card (No. MB-2) for NVFAs, special rigging, and working clothes 
 
