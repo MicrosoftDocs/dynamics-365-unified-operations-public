@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure service updates through Lifecycle Services (LCS)
-description: This topic provides information for you to configure how and when to get service updates to your environments.
+description: This topic explains how to specify how and when you receive service updates for your environments.
 author: manalidongre
 manager: AnnBe
 ms.date: 03/05/2019
@@ -33,42 +33,48 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-You can configure how and when you get service updates from Microsoft to your Dynamics 365 for Finance and Operations environments directly through Lifecycle Services (LCS). 
+In Microsoft Dynamics Lifecycle Services (LCS), you can specify how and when you receive service updates from Microsoft for your Microsoft Dynamics 365 for Finance and Operations environments.
 
 > [!IMPORTANT]
-> This feature is available only for customers that are on **version 8.1 and above** and are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. We are working on enabling this for First release customers and for customers that are on older versions of the product. 
+> This feature is available only to customers who are using **version 8.1 and later**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers and customers who use older versions of the product. 
 
-The ability to configure updates is only available for **implementation projects** and to users (customer/partner) that is assigned to the **project owner** role in LCS. To modify your update settings, use the following steps.
+Only users (customers or partners) who are assigned to the **project owner** role in LCS can configure updates. Additionally, updates can be configured only for **implementation projects**.
+
+Follow these steps to change your update settings.
 
 > [!NOTE]
-> These settings only apply to service updates and have no impact on the operation system level security updates applied monthly to your environments.
+> These settings apply only to service updates. They have no effect on the operating system–level security updates that are applied to your environments every month.
 
-1. Navigate to the **Project Settings** page in your **implementation** project.
+1. In LCS, in your implementation project, open the **Project settings** page.
 
-2. A new tab called **Update settings** will be available that has the configuration options.
+    This page has a new tab that is named **Update settings**.
 
-    - **Update environment**: Select an alternate sandbox environment to be updated prior to the production update. By default, the Tier 2 Standard Acceptance Test (sandbox) environment included in the base offer is updated by Microsoft before applying the update on the production environment. If you have purchased Tier 2 and above sandbox add-on environments and would like a different sandbox to be updated, then you can use this setting to change the default and select an alternate environment.
+2. On the **Update settings** tab, set the following configuration options as you require:
+
+    - **Update environment** – Select an alternate sandbox environment that should be updated before the production update.
+
+        By default, Microsoft first updates the Tier 2 Standard Acceptance Test (sandbox) environment that is included in the base offer. It then applies the update to the production environment. If you've purchased Tier 2 and higher sandbox add-on environments and want a different sandbox to be updated, you can use this field to change the default environment to an alternate environment.
 
         > [!IMPORTANT]
-         > The environment selected here will be updated 7 calendar days prior to the update cadence selected for the production environment.
+        > The environment that you select here will be updated seven calendar days before the update cadence that is selected for the production environment.
 
-    - **Production environment update cadence**: Select a recurring cadence for your production environment updates. The sandbox environment configured above will be updated 7 calendar days prior to the selected cadence. You can select the following:
-      - Select the cadence: You can choose whether to get updates in the first, second, third week of the month.
-      - Select one of the three time-zones: Select whether you want the production updated in Eastern Time(UTC – 5) or Hong Kong Time(UTC + 8) or the Greenwich Mean Time(UTC + 0).
-      - Select a day of the week: Select a day in the week when you want to get the update.
-      - Select a time slot: Select a time slot when you want to get the update.
+    - **Production environment update cadence** – Select a recurring cadence for updates to your production environment. The sandbox environment that is selected in the **Update environment** field will be updated seven calendar days before the selected cadence. The following options are available:
 
-           > [!NOTE]
-           > At this time, we only have a few options available under the day of the week and time slot drop downs. We will soon we adding additional options include weekdays for customers.
+        - **Select the cadence** – Select whether to receive updates in the first, second, or third week of the month.
+        - **Select one of the three time-zones** – Select the time zone that the production environment should be updated in: Eastern Time (UTC – 5), Hong Kong Time (UTC + 8), or Greenwich Mean Time (UTC + 0).
+        - **Select a day of the week:** Select the day in the week when you want to receive updates.
+        - **Select a time slot:** Select the time slot when you want to receive updates.
 
-    - **View update calendar:** Once you have set the update cadence and configured the update environment, to know exactly when environment will be updated we generate an update calendar for the next six months that shows exactly when the configured sandbox and production environments will be updated. This provides you with a level of predictability on when to expect the update. Under the production update cadence, you will see the **View update calendar** link.
+        > [!NOTE]
+        > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
 
-3. Select the configuration options and click **Save**.
+    After you set the update environment and update cadence, Microsoft generates an update calendar for the next six months. This calendar shows exactly when the configured sandbox and production environments will be updated. Therefore, you will know when to expect each update. To view the calendar, select the **View update calendar** link under the **Production environment update cadence** options.
 
-      > [!IMPORTANT]
-      > Once the settings are saved you will have the ability to change them at any time. However, if there is an ongoing rollout then the saved settings will not be used to update the existing rollout timings but will be used from the next rollout onwards. Ongoing rollout is defined by the time between the email notification being sent for the sandbox update (production update - 14 calendar days) and the production environment being updated. 
+3. When you've finished setting the configuration options, select **Save**.
 
-For more details about how to pause getting updates to configured sandbox and production environments, see [Pause service updates](pause-service-updates.md) topic.
+    > [!IMPORTANT]
+    > After the settings are saved, you can change them at any time. However, if there is an ongoing rollout, the new settings won't be used to update the existing rollout timings. Instead, they will start to be used in the next rollout. An ongoing rollout is defined by the period between the date when the email notification is sent for the sandbox environment update (production environment update – 14 calendar days) and the date when the production environment is updated.
 
-For more details about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+For more information about how to pause updates to configured sandbox and production environments, see [Pause service updates through Lifecycle Services (LCS)](pause-service-updates.md).
 
+For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
