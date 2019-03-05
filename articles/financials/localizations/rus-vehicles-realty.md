@@ -36,7 +36,10 @@ ms.dyn365.ops.version: 8.1
 
 ## Set up the depreciation start date for vehicle and realty
 
-Use the **Depreciation groups** page to set up the start date for depreciation of fixed assets of the **Realty** and **Vehicle** types. Depreciation is calculated based on the registration date of the asset. If an asset is registered after it's put into operation, depreciation is calculated from the first day of the month of registration. If an asset is registered before it's put into operation, depreciation is calculated from the first day of the month after the asset is put into operation.
+Use the **Depreciation groups** page to set up the start date for depreciation of fixed assets of the **Realty** and **Vehicle** types. 
+
+You can specify that the depreciation is calculated based on the registration date of the asset. 
+If an asset is registered after it's put into operation, depreciation is calculated from the first day of the month of registration. If an asset is registered before it's put into operation, depreciation is calculated from the first day of the month after the asset is put into operation.
 
 1. Select **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
 2. Create a depreciation group, and enter the required details.
@@ -45,13 +48,11 @@ Use the **Depreciation groups** page to set up the start date for depreciation o
 
 ## Specify registration date for realty and vehicle asset.
 
-Before you put a realty or vehicle fixed asset into operation and calculate depreciation, you must specify registration date.
 
 1. Select **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 2. Select **New** to create a fixed asset, and enter the required details.
 3. On the **General** FastTab, in the **Type** field, select **Realty**.
 4. On the **Technical information** FastTab, in the **Date of the registration** field, select the registration date of the fixed asset.
-   
 5. In the **Removal from the register date** field, select the date when the asset should be removed from the tax register.
 
   
