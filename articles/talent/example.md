@@ -37,6 +37,7 @@ This topic covers couple of example scenarios on Talent Extensibility using Powe
 ## Prerequisites
 
 User with "Environment Maker" permission can import Packages
+
 A user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order to export or import any app.
 
 ## Flow- Form Connect
