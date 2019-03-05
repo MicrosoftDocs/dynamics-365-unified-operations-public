@@ -40,8 +40,8 @@ This topic describes features that are either new or changed in Dynamics 365 for
 ## Azure blob storage as an endpoint for business events
 An Azure blob strorage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported thereby allowing for a wider choice for integration scenarios.
 
-## Feature name
-Brief description of the feature and how it helps customers.  Then provide a link to your topic that has details.
+## Extensibility enhancements
+The [second wave of platform extensibility enhancements](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility2), included in Platform update 25, is documented in the April 2019 Release notes. There are fourteen enhancements detailed, with one of the highlights being that Chain of Command on an InternalUseOnlyAttribute method is now allowed with just a warning.
 
 ## Feature name
 Brief description of the feature and how it helps customers.  Then provide a link to your topic that has details.
