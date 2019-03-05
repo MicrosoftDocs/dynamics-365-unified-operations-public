@@ -109,9 +109,9 @@
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Omni-channel advanced auto charges
   items:
-  - name: Configuring and using Advanced Auto Charges
+  - name: Configure and use advanced auto charges
     href: omni-auto-charges.md
-  - name: Pro-ration and grouping of Header Auto Charges
+  - name: Proration and grouping of header auto charges
     href: pro-rate-charges-matching-lines.md
 - name: Call center
   items:
