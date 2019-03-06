@@ -47,18 +47,24 @@ The [second wave of platform extensibility enhancements](https://docs.microsoft.
 Brief description of the feature and how it helps customers.  Then provide a link to your topic that has details.
 
 ### PowerBI.com Report Pinning
+Take advantage of improved flexibility in customization options available in the web client for power users. Use built-in tooling to replace standard analytical reports embedded in the application with custom solutions hosted on PowerBI.com. With the latest Platform Update release, power users are able to replace the standard reports in application workspaces with reports hosted on PowerBI.com.  These updates are immediately made available to other users of the workspace replacing the standard solution. Additional options include the ability to revert back to the analytical reports that were originally released with the application.
 
 ### Data Lake Integration
 
 ### Trickle feed support for Data Lake
 
 ### Edit Analytical Workspace
+Empower users to author the reports they need right without relying on a developer. Using the latest Platform Update release, make non-disruptive enhancements to embedded application solutions. Power users are able to modify ready-made Analytical workspaces without leaving the client or using developer tools. Users who have specific security privileges can add or modify report visuals and add new pages to existing reports. The changes are applicable to all users viewing the report.
 
 ### System Printer Management
+Use built-in system administration tools to manage network printers across legal entities with ease. Modify device properties and delete network printers with ease using a single view. These tools will drastically simplify the task of configuring network printer devices available within Microsoft Dynamics 365 for Finance & Operations applications.
 
 ### Client Alert Email Support
+Stay on top of your business data with integrated change tracking tools. With the latest Platform Release, users are able to create Alert Rules that automatically dispatch email notifications to pre-defined groups of internal & external contacts when triggered by an event. With Dynamics 365 for Finance & Operations, users are able to define custom Alert Rules to monitor filtered views of their data. 
+For more information, view article on [Client alerts notifications by email](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/alert-email-notifications)
 
 ### Client Alert sub-table tracking
+The latest Platform Update release includes the ability to create Alert Rules that monitor updates made to fields sourced from related tables. Previously, options were limited to fields sourced from the root data source. Now users are able to define alert rules for all fields on subtables which are visible to the user.
 
 ### Archive non-PDF files using Batch operation
 
