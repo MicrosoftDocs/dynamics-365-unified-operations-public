@@ -209,7 +209,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll" />
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll" />
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath\Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
         ```
 
