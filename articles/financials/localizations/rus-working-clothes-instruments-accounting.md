@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# FA - Specific accounting for working clothes/Special riggings
+# Working clothes/Special riggings accounting
 [!include [banner](../includes/banner.md)]
 
 ## About working clothes, and special rigging accounting
