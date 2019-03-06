@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,7 @@ Customers can use the **Import** action provided by the Report Viewer control to
 | **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.   |
 | **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated: A removal date has not been set for this feature. The functionality to automatically download application reports to the browser as PDF documents is planned for the May ’19 Platform update. <br><br>**Important:**  Existing customers that rely on the Print to screen feature are advised to notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. The functionality to automatically download application reports to the browser as PDF documents is planned for the May 2019 Platform update. <br><br>**Important:**  Existing customers that rely on the Print to screen feature are advised to notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
 
 ### Client KPI controls
 Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.
