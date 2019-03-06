@@ -36,6 +36,29 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 Microsoft Dynamics 365 for Talent is built on top of the Common Data Service (CDS) for Apps platform, and can be extended in various ways by using the Microsoft Power Platform and the capabilities that Common Data Service for Apps offers. Therefore, you can configure and personalize the system by using Microsoft PowerApps and Microsoft Flow. You can also get additional analytics about people by using Microsoft Power BI. Furthermore, new custom activities, such as the PowerApps and Web content (iframe) activities, make the hiring process more adaptable than ever. By using these activities, you can tailor the hiring process to your business needs and processes, and can make sure that both the hiring team and candidates have a seamless, customized experience.
 
+## Extending Option sets in Attract
+
+An **Option Set** (picklist) is a type of field that can be included in an entity. It defines a set of options. When an option set is displayed in a form it uses a drop-down list control.  In Attract there are multiple fields that are option sets.  We are beginning to introduce the capability to extend the options sets, beginning with the Rejection reason field, Employment type field, and Seniority type field.   Also, you can add localized display labels for the options that you add.  Please refer to the following link to learn more:  [Customize option set labels](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> The job posting to LinkedIn functionality requires the use of the Employment type and Seniority type field in the job details form.  The default values in these fields are supported by LinkedIn and are displayed when the job is posted.  Therefore, if you are posting jobs to LinkedIn and you modify the existing option set values for these fields, the job will still post, but LinkedIn will not display the custom Employment type and Seniority type values.  
+
+Listed below are the steps to update the Rejection reason field with values that are specific to your business.  
+
+1. To extend the ‘Rejection reason’ option set navigate to the PowerApps Admin website.  (Https://admin.powerapps.microsoft.com)
+2. You might be prompted to sign into your account.  Provide your userID and password credentials that you use to sign into Dynamics365 and/or Office365 and then click next.
+3. In the **Environments** tab, select the environment that you want to manage, and double-click to get to the details tab.
+4. In the **Details** tab, select **Dynamics 365 Administration Center**.
+5. Select the instance that you want to modify and select **Open**
+6. Navigate to **Settings** and then **Customizations** and Choose **Customize the system**
+7.  Find the entity that you want to expand the option set for by selecting **Entities** and expanding the group.  In this example, it will be the **Job application entity**.
+8. Go to the field that you want to extend the option set for by selecting the **Fields** option.  In this example, it will be the **msdyn_rejectionreason**.  Double-click on the field.
+9. In the Option Set field choose edit.
+10. Select the **+** icon.
+11. Enter in a **Label**.  (This must be a unique value – no duplicates)
+12. Select **Save**.
+13. Select **Publish** at the top of the form.
+
 ## Take advantage of the Microsoft Power platform 
 
 Because all the data from Attract resides in Common Data Service for Apps, you can use tools from the Microsoft Power platform to incorporate your unique business needs into Attract.
