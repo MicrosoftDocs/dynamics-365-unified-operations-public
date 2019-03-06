@@ -28,6 +28,7 @@ ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
 
 ---
+---
 # Fiscal registration service integration sample for Austria
 
 [!include[banner](../includes/banner.md)]
@@ -44,7 +45,9 @@ The following scenarios are covered by the fiscal registration service integrati
    - Registration of cash transactions in the fiscal register service:
       - Send detailed transaction data, including sales line information, discounts, payments, and taxes, to the fiscal register service.
       - Capture a response from the fiscal register service including a digital signature and a link to the registered transaction.
-      - Print the tax decomposition and the QR-code for a registered transaction in the receipt.
+      - Taxes:
+        - Map to the fiscal service's tax codes.
+        - Print the tax decomposition and the QR-code for a registered transaction in the receipt.
   - Registration of gift card operations and customer deposits in the fiscal register service as non-cash transactions:
       - Issue / Add to a Gift card.
       - Register a customer account deposit.
@@ -70,6 +73,14 @@ The following scenarios are covered by the fiscal registration service integrati
       - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
       - Check availability of the fiscal register service before opening a new sales transaction or finalizing a sales transaction.
 
+### Default data mapping
+
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
+
+- Value-added tax (VAT) rates mapping:
+
+    *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
+
 ### Gift cards handling
 
 The fiscal registration service integration sample implements the following rules that are related to gift cards:
@@ -89,71 +100,48 @@ The fiscal registration service integration sample implements the following rule
 - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
 - Save calculated adjustments of payment lines in the channel database with a reference to a fiscal transaction for a hybrid customer order.
 
+### Limitations of the sample
+
+The fiscal service supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
+
 ## Set up Retail for Austria
 
-This section describes the Retail settings that are specific to and recommended for Austria. To use the Austria-specific functionality for Retail, you must complete these tasks:
-- Set the **Country/region** field to AUT (Austria) in the primary address of the legal entity;
-- Set the **ISO code** field to AT (Austria) in the POS functionality profile of every store that is located in Austria.
+This section describes the Retail settings that are specific to and recommended for Austria. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
 
-Austria-specific settings can be divided into two groups:
-- General settings
-- EFR–specific settings
+To use the Austria-specific functionality for Retail, you must complete these tasks:
 
-### General settings
+- Set the **Country/region** field to **AUT** (Austria) in the primary address of the legal entity.
+- Set the **ISO code** field to **AT** (Austria) in the POS functionality profile of every store that is located in Austria.
 
-You must specify the following general settings for Austria:
+You must also specify the following settings for Austria. Note that you must run appropriate distribution jobs after you complete the setup.
 
-1. Set up the following parameters for value-added tax (VAT) per local requirements in Austria:
-    - Sales tax codes;
-    - Sales tax groups;
-    - Item sales tax groups;
-    - Sales tax settings in items (item sales tax groups for sales).
+### Set up VAT per Austrian requirements
 
-For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations and in Retail see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+1. You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Austria.
 
-2. On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
+2. Set up tax group code for printing in receipts. For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
+
+For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
+### Set up Retail stores
+
+On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
     - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default retail customer.
-    - Select the **Prices include sales tax** check box.
+    - Enable the **Prices include sales tax** check box.
     - Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-format text.
     - Set the **Tax identification number (TIN)** field so that it includes the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-format text.
 
-3. Set up POS functionality profiles:
+### Set up functionality profiles
+
+Set up POS functionality profiles:
     - On the **Receipt numbering** FastTab, set up receipt numbering. 
     - Create or update records for the **Sale**, **Sales order** and **Return** receipt transaction types.
 
-4. Make the required changes to **Receipt formats**:
-    - Change the value of the **Print behavior** field to **Always print** for the receipt format.
-    - In the Receipt format designer, make these changes:
-        - Add at least the following fields to the **Header** section of the receipt layout:
-            - **Store name** and **Tax Identification Number** fields, so that the company name and identity number are printed receipts. Alternatively, you can add the company name and identity number to the layout as free-format text.
-            - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
-    - Add at least the following field to the **Lines** section of the receipt layout: **Item name**, **Qty**, **Total price with tax**.
-    - Add at least the following fields to the **Footer** section of the receipt layout:
-        - Tax fields, so that the receipt tax amounts for each tax rate are printed. For example, add the **Tax Id**, **Tax percentage**, and **Tax amounts** fields to one line of the layout.
-        - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
+### Configure custom fields so that they can be used in receipt formats for sales receipts
 
-### EFR–specific settings
-
-Before starting to define EFR-specific settings please be aware that all steps from the document **Deployment guidelines for cash registers for Austria** were done.
-
-1. Cofigure VAT rates mapping:
-The **VAT rates mapping** is included in the **Fiscal connector functional profile** provided as part of the fiscal integration sample:
-
-    A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00
-
-Check default mapping rates values and correct it if is is nessesary.
-
-2. Set up tax group code for printing in receipt:
-For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
-
-3. Set up custom fields and receipt formats as described below.
-
-#### Set up custom fields for receipt format
-
-Configure custom fields so that they can be used in receipt formats for sales receipts:
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the Language ID, Text ID, and Text values that are shown in the table are just examples. You can change them to meet to your requirements. However, the Text ID values that you use must be unique, and they must be equal to or higher than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
 
 Add the following POS labels to the **POS** section of **Language text** from the table:
 
@@ -168,7 +156,8 @@ Add the following POS labels to the **POS** section of **Language text** from th
 | en-US       | 103180  | Tax Amount (sales)        |
 | en-US       | 103181  | Tax Basis (sales)         |
 
-Note: data records of **Language text** should be added to current company and DAT company.
+> [!NOTE]
+    > Data records of **Language text** should be added to current company and DAT company.
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
@@ -183,41 +172,46 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SALESTAXAMOUNT       | Receipt | 103180          |
 | SALESTAXBASIS        | Receipt | 103181          |
 
-#### Receipt format configurations
+### Configure receipt formats
 
-In the **Receipt format designer**, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+For every required receipt format, change the value of the **Print behavior** field to **Always print**.
 
-   **Header**: 
-      Continuous Number. This field identifies the number of cash transaction in the fiscal registrator;
-      
-   **Lines**:
-      Tax Retail Print Code. This field dysplays the code corresponding to the tax group;
-      
-   **Footer**: 
-      Fileds group **Sales total**: 
-      	Total (sales) - total transaction amount without tax sum;
-	Total Include Tax (sales) - total transaction amount with tax sum;
-        Total Tax (sales) - transaction tax sum.	
-      **Tax break down** (should be separate line):
-	Tax Basis (sales) - total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards;
-	Tax Amount (sales) - total tax amount for cash transactions excluding deposits, prepayments and gift cards;
-	Total Include Tax (sales) - total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards;
-	Tax Retail Print Code - the code corresponding to tax group.		
-      **QR Code**: 
-         QR Code - reference to registered cash transaction in the form of QR-code.
-      
-5. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box (not recommended). 
+In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+  - **Header:** Add the following field:
+    - **Store name** and **Tax Identification Number** fields, so that the company name and identity number are printed receipts. Alternatively, you can add the company name and identity number to the layout as free-format text.
+    - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
+    - **Continuous Number**: This field identifies the number of cash transaction in the fiscal registrator;
+  - **Lines:** Add the following fields:
+    - **Item name**, 
+    - **Qty**, 
+    - **Total price with tax**,
+    - **Tax Retail Print Code**: This field dysplays the code corresponding to the tax group.
+  - **Footer:** Add the following fields:
+    - Tax fields, so that the receipt tax amounts for each tax rate are printed. For example, add the **Tax Id**, **Tax percentage**, and **Tax amounts** fields to one line of the layout.
+    - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
+    - Fields group **Sales total**: 
+      - **Total (sales)**: Total transaction amount without tax sum,
+	  - **Total Include Tax (sales)**: Total transaction amount with tax sum,
+      - **Total Tax (sales)**: Transaction tax sum.	
+    - **Tax break down** (should be separate line):
+	  - **Tax Basis (sales)**: Total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards,
+	  - **Tax Amount (sales)**: Total tax amount for cash transactions excluding deposits, prepayments and gift cards,
+	  - **Total Include Tax (sales)**: Total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards,
+	  - **Tax Retail Print Code**: The code corresponding to tax group,
+      - **QR Code**: Reference to registered cash transaction in the form of QR-code.
+
+For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
+
+### Set up POS permissions
+
+Update POS permissions groups and individual permission settings for store workers. If skipping of the fiscal registration is allowed for some workers, they should have the **Allow skip fiscal registration** permission enabled.
 
 ## Deployment guideline for cash registers for Austria
 
-This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for Austria. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, includes samples of the integration with the EFSTA System and
-Electronical Fiscal Register Software. 
+The Fiscal integration sample for Austria is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+This sample consists of extensions for the Commerce runtime (CRT), Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
-Integration samples were developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Fiscal integration for Retail channel](fiscal-integration-for-retail-channel.md), these samples are part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-
-This localization consists of extensions for the Commerce runtime (CRT), Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
-
-Follow these steps to set up a development environment so that you can test and extend the localization functionality.
+Follow these steps to set up a development environment so that you can test and extend the sample.
 
 ### Enable Commerce runtime extensions
 
@@ -308,7 +302,7 @@ The Hardware station extension components are included in the Hardware station s
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
 
     > [!NOTE]
-    > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
+      > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
 
 2. Enable the extensions to be loaded by adding the following lines in **extensions.json**:
 
@@ -323,9 +317,9 @@ The Hardware station extension components are included in the Hardware station s
     ```
 
     > [!NOTE]
-    > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+      > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
 
-3. Rebuild the solution.
+3. Re-build the solution.
 4. Run Modern POS in the debugger, and test the functionality.
 
 #### Cloud POS extension components
@@ -345,7 +339,7 @@ The Hardware station extension components are included in the Hardware station s
     ```
 
     > [!NOTE]
-    > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+      > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
 
 3. Rebuild the solution.
 4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
@@ -355,28 +349,19 @@ The Hardware station extension components are included in the Hardware station s
 To enable the registration process, set up Retail Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md).
 
 1. Open **Retail shared parameters** and enable **Fiscal integration** on the **General** tab.
-
-2. Open **Retail > Channel setup > Fiscal integration > Fiscal connectors** menu. Load connector configuration from RetailSdk. The file is located under SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml.
-
-3. Open **Retail > Channel setup > Fiscal integration > Fiscal document providers** menu. Load documment provider configurations from RetailSdk.
-
-Configuration files are located under SampleExtensions\CommerceRuntime\Extensions.DocumentProvider.EFRSample\Configuration
+2. Open **Retail \> Channel setup \> Fiscal integration > Fiscal connectors** menu. Load connector configuration from RetailSdk. The file is located under SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml.
+3. Open **Retail \> Channel setup \> Fiscal integration > Fiscal document providers** menu. Load documment provider configurations from RetailSdk. Configuration files are located under the folder **SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
+4. Open **Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new profiles per document provider from step above and select the loaded connector. Update data mapping settings if needed.
+5. Open **Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
+6. Open **Retail \> Channel setup \> Fiscal integration \> Fiscal connector group**. Create two new group per connector's functional profile from the step above.
+7. Open **Retail \> Channel setup \> Fiscal integration \> Registration process**. Create a new process. Select both connector's functional groups from the step above.
+7. Open **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** prorerty at **Functions** fasttab.
+8. Open the **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select one that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** tab. Select the connector technical profile.
+9. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
-4. Open **Retail > Channel setup > Fiscal integration > Connector functional profiles**. Create two new profiles per document provider from step above and select the loaded connector. Update data mapping settings if needed.
-
-5. Open **Retail > Channel setup > Fiscal integration > Connector technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
-
-6. Open **Retail > Channel setup > Fiscal integration > Fiscal connector group**. Create two new group per connector's functional profile from the step above.
-
-7. Open **Retail > Channel setup > Fiscal integration > Registration process**. Create a new process. Select both connector's functional groups from the step above.
-
-7. Open **Retail > Channel setup > POS setup > POS profiles > Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** prorerty at **Functions** fasttab.
-
-8. Open the **Retail > Channel setup > POS setup > POS profiles > Hardware profiles**. Select one that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** Tab. Select the connector technical profile.
-
-### Setting up a production environment
+### Production environment
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
@@ -399,7 +384,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
         ```
 
-3. Make the following changes in the **BuildTools\Customization.settings** package customization configuration file:
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
@@ -414,6 +399,16 @@ Follow these steps to create deployable packages that contain Retail components,
 
 6. Complete all necessary settings from the [Set up Retail for Austria](#set-up-retail-for-austria).
 
-## Limitations of the sample
+## Design of extensions
 
-  - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the Price include sales tax option must be set to Yes for both retail stores and customers.
+### Commerce runtime extension design
+
+#### Request handler
+	
+#### Configuration
+
+### Hardware station extension design
+
+#### Request handler
+
+#### Configuration
