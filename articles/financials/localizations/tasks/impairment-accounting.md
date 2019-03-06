@@ -5,7 +5,7 @@ title: Setup impairment accounting common parameters and posting profile
 description: Use this task to learn how to define impairment accounting common parameters and posting profiles. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -46,9 +46,10 @@ This procedure uses the JPMF demo company data.
 2. Expand the Impairment management section.
 3. In the Warning period (in months) field, enter a number.
     * Example: 6 months  
-4. Click the Number sequences tab.
-    * Confirm the following Number sequence codes are set up:  •Document ID for impairment  •Impairment test ID  •Cash generating unit number        
-    *   
+4. Click the Number sequences tab. Confirm the following Number sequence codes are set up:  
+ - Document ID for impairment
+ - Impairment test ID
+ - Cash generating unit number        
 
 ## Set up posting profile
 1. Go to Fixed assets > Setup > Fixed asset posting profiles.

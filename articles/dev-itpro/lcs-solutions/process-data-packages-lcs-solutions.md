@@ -5,7 +5,7 @@ title: Process and consume data packages in Finance and Operations solutions
 description: This topic explains how to process and consume data packages in a Microsoft Dynamics 365 for Finance and Operations solution.
 author: kfend
 manager: AnnBe
-ms.date: 04/13/2018
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -142,7 +142,6 @@ Follow these steps to consume the PDP.
 2.  Select the business process, and then, in the right pane, select **Apply Data Packages**.
 3.  On the **Consume process data package** page, select a package, and then select **Apply**.
 4.  Select the destination company in the target environment that is linked to the PDP, and then select **Apply**.
-=======
 -   For step 1, "Review business process," review the business process models (BPMs), and then click **Mark as reviewed**. The review status is updated for all dependent processes, and a green bar appears to the right of them. The **Reviewed by** and **Completed on** fields are also updated for each business process.[![Reviewed business processes with a green bar and updated Reviewed by and Completed on values](./media/pdplcssolutions_04.jpg)](./media/pdplcssolutions_04.jpg)
 
 ### Review and approve data packages that are associated with a BPM
