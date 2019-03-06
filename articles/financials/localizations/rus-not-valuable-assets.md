@@ -57,15 +57,15 @@ Use this procedure to set up fixed asset parameters for not valuable fixed asset
 
 ## Set up FA groups for NVFA
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/ Special riggings/ NVFA** \> **Identification of FA groups**
-2.  Create a new record on the **CONDITION FOR FA GROUP IDENTIFICATION** page list and fill in the fields.
-
-
-
-## Set up identification of FA groups for NVFAs 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **FA groups**
 2.  Create a new record on the **FA GROUPS** page list and fill in the fields. Select **NVFA** in the **Type of group** field.
 
+
+## Set up identification of FA groups for NVFAs 
+
+1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/ Special riggings/ NVFA** \> **Identification of FA groups**
+2.  Create a new record on the **CONDITION FOR FA GROUP IDENTIFICATION** page list and fill in the fields.
+3. Click **Compliance** and specify item relation with FA group.
 
 > [!NOTE]
     > The system uses this setting for filling  the **FA group** and **lifetime** fields on the **Working clothes/ Special riggings/ NVFA issue journal lines** page (see [Generate NVFA records, putting into operation and depreciation transactions for NVFAs](Generate-NVFA-records,-putting-into-operation-and-depreciation-transactions-for-NVFAs))   
