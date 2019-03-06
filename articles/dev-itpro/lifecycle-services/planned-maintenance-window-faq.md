@@ -63,7 +63,7 @@ Any partner, independent software vendor (ISV), and other interested party who w
 Microsoft is continually working to reduce the necessity of downtime for the service, and many regular maintenance tasks don't incur downtime. However, to help guarantee the most predictability, Microsoft can't yet do all patching in zero downtime.
 
 ## Microsoft service updates 
-A separate set of frequently asked questions (FAQ) provides details about service updates that are done by Microsoft. See [One Version service updates FAQ](../../fin-and-ops/get-started/one-version).
+A separate set of frequently asked questions (FAQ) provides details about service updates that are done by Microsoft. See [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
 ## Operating system–level updates 
 
