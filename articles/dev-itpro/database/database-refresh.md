@@ -63,8 +63,10 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table.
-* All users except for the administrator will be unavailable.
+* All users except for the administrator will be set to disabled status.
 * All batch jobs are set to Withhold status.
+
+These values are not copied as several are environment specific such as Batch Server Config and Network Printers. Others are not copied based on support ticket volume such as SMTP still being enabled in UAT sending duplicate emails, batch jobs still being enabled sending invalid integration messages, and users being enabled before Admins can perform post-refresh cleanup activities.
 
 ### Environment administrator
 The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config file on the target.  This should be the same value as that of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.  
@@ -75,7 +77,6 @@ If you have used the Admin User Provisioning Tool on your environment to change 
 Here is the list of requirements and conditions of operation for a database refresh:
 
 - Any previous servicing operation, such as a package deployment or prior database refresh, *must be signed off* from your environment details page.
-- Requests must be submitted 5 hours before the desired downtime window, to help ensure that resources will be available to complete the request.
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
@@ -85,38 +86,13 @@ Here is the list of requirements and conditions of operation for a database refr
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
 
-## Database refresh via service request
-
-> [!IMPORTANT]
-> As of October 2018, database refresh requests must be signed off before another refresh of the same environment can be started. This is to support future automation of database movement operations. To sign off, visit your **Environment Details** page and click the **Signoff** button. You can create many database refresh service requests out in to the future, however you must sign off in between each one.
->
-> Service requests for database refresh will **not be accepted** for servicing dates after January 31, 2019.  After this date, all refresh operations will be performed via the self-service actions outlined above.
-
-The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
-
-1. In LCS, on the **Project** home page, select **Service requests**.
-2. On the **Service requests** page, select **Add** on the toolbar, and then select **Database refresh**.
-3. In the **Request for database refresh** dialog box, follow these steps:
-
-    1. In the **Environment name** field, select the environment to refresh.
-    2. In the **Database** field, the database to refresh is always the Microsoft Dynamics AX database or the Finance and Operations database. Other databases, such as Entity store aren't currently supported for database refresh.
-    3. Carefully read and acknowledge the statements that have check boxes next to them.
-
-4. After you submit your request, you are returned to the list of work items. Here, you can view the status of the request, or reschedule or cancel the request.
-5. Ensure no prior servicing request on your environment is awaiting signoff or rollback. Visit the **Environment details** page and sign off any completed refresh or package deployment.
-6. When the Service Engineering team has acknowledged that they can complete your request, the status of the request is changed to **Request accepted**. At this point, you can follow any of these steps:
-
-    - Wait for the Service Engineering team to complete the refresh. When the restore is completed, the status is changed to **Succeeded**.
-    - Reschedule the request by selecting the ID, or by selecting the request and then selecting **Reschedule** on the toolbar. You can then change the dates and times for the downtime window.
-    - Cancel the request by selecting the request and then selecting **Cancel** on the toolbar.
-
 ## Steps to complete after a database refresh for environments that use Retail functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues
 
-### Refresh is denied for environments running Platform update 3 or earlier
-The database refresh process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
+### Refresh is denied for environments running Platform update 12 or earlier
+The database refresh process cannot be completed if the environment is running Platform update 12 or earlier. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
 The database refresh process (self-service or via service request) cannot be completed successfully if the version of Financial Reporting is different between the source and target environment. To resolve this issue, update both environments to have the latest version of Financial Reporting.
@@ -125,7 +101,7 @@ The database refresh process (self-service or via service request) cannot be com
 * Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
 * Apply this package to both the source and target environments to ensure they are both using the latest version.
 
-For instructions about how to determine the version you're using, watch the [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w) video.
+To check the version of Financial Reporter in your source and target environment, visit the **Show detailed version information** link on your Environment Details page in LCS.  This link is located next to the Application and Platform version information.  Once on the detailed version screen, search for the **MRApplicationService** service.  The target environment must be greater than or equal to the source environment.
 
 ### Incompatible application versions between source and target environments
 The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.  

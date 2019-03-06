@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Debugging and diagnostics
+title: Database movement for debugging and diagnostics tutorial
 description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/28/2019
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -28,221 +28,76 @@ ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Debugging and diagnostics
+# Database movement for debugging and diagnostics
 
 [!include [banner](../includes/banner.md)]
 
-Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to combine refresh with export operations to get a recent copy of production data for debugging purposes.
+Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to debug specific data and transactions from a recent copy of production data.
 
 In this tutorial, you will learn how to:
 
 > [!div class="checklist"]
 > * Refresh the user acceptance testing (UAT) environment.
-> * Run the export to the Asset Library in Microsoft Dynamics Lifecycle Services (LCS).
-> * Download the database backup.
-> * Import the database and prepare it so that it can be used in a developer environment.
+> * Whitelist your developer environment IP address.
+> * Update your developer environment to connect to the UAT database.
+> * Place a breakpoint and start debugging the data.
 
-As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to debug a recent copy of production transactions from his or her development environment. In this way, the customer will be able to debug specific transactions which are stuck or develop new features and reports by using realistic datasets.
 
 ## Prerequisites
 
 To do a refresh operation, you must have your production environment deployed, or you must have a minimum of two standard UAT environments. To complete this tutorial, you must have a developer environment deployed.
 
+[!Important]
+- It is highly recommended to use a DevTest environment for debugging that will run the same code and business logic as is available in your UAT environment.  If you use multiple branches in version control we recommend that this DevTest environment used for debugging recent UAT or Production transactions is connected to the same branch you build packages for UAT and later Production.  This will eliminate any need for you to run a Database Sync between your DevTest environment and UAT database as the schema will be compatible.  Historically this is known as a Hotfix/Support environment as it is outside of your normal code promotion path.
+
 ## Refresh the UAT environment
 
 This refresh operation will overwrite the UAT environment with the latest copy of the production database. To complete this step, follow the instructions in [Refresh for training purposes](dbmovement-scenario-general-refresh.md).
 
-## Back up to the Asset Library
+## Whitelist your IP address
+By default, all Sandbox Standard Acceptance Test environments use Azure SQL as their database platform.  These databases are protected by firewalls which restrict access to the Application Object Server (AOS) from which it was originally intended.  
 
-[!include [dbmovement-export](../includes/dbmovement-export.md)]
+An exception can be made for you to connect your developer environment (cloud-hosted or Microsoft managed) directly to the UAT database. To do this you will need to obtain your IP Address on the developer VM.
 
-## Import the database
+From the sandbox AOS VM, open SQL Server Management Studio (SSMS) and connect to the database using the information available from the Environment Details page in Lifecycle Services (LCS).  Locate the username record for **axdbadmin** and note the Azure SQL Server and Azure SQL Database in the format of {sqlServer\sqlDatabase}. 
 
-After you've downloaded a database backup (.bacpac) file, you can begin the manual import operation on your Tier 1 environment. When you import the database, we recommend that you follow these guidelines:
+Using SSMS, enter the SQL Server, username, and password.  On the **Connection Properties** tab, explicitly enter the database name from the axdbadmin record in LCS.  
 
-- Keep a copy of the existing AxDB database, so that you can revert to it later if required.
-- Import the new database under a new name, such as **AxDB\_fromProd**.
-
-To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window, and run the following commands.
-
+Once connected, open a query against the database and enter your IP address in to the below T-SQL command:
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
-
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+-- Create database-level firewall setting for IP a.b.c.d 
+EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
 ```
+Transition back to your developer environment.  Open SSMS and attempt to connect with the same axdbadmin credential against the UAT database.  Verify that you can connect, before proceding with the next steps.
 
-Here is an explanation of the parameters:
+## Update a OneBox DevTest environment to connect to the UAT database
+In your developer environment, we will now update the web.config to change the database connection.  This will allow you to run your local code and binaries configured against the database from UAT.  
 
-- **tsn (target server name)** – The name of the Microsoft SQL Server instance to import into.
-- **tdn (target database name)** – The name of the database to import into. The database should **not** already exist.
-- **sf (source file)** – The path and name of the file to import from.
+Navigate to your Services Drive (commonly this is the J or K drive) \ AoSService\WebRoot directory.  Find the file called web.config and *make a backup of this file*.  Open the web.config file in NotePad or an editor of your preference, and locate the following configurations:
+- DataAccess.Database
+- DataAccess.DBServer
+- DataAccess.SqlPwd
+- DataAccess.SqlUser
 
-> [!NOTE]
-> During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
-
-## Update the database
-
-Run the following SQL script against the imported database. This script adds back the users that you deleted from the source database and correctly links them to the SQL logins for this SQL instance. The script also turns change tracking back on. Remember to edit the final **ALTER DATABASE** statement so that it uses the name of your database.
-
+Update these to use the values from the UAT Environment Details page in LCS:
 ```
-CREATE USER axdeployuser FROM LOGIN axdeployuser
-EXEC sp_addrolemember 'db_owner', 'axdeployuser'
-
-CREATE USER axdbadmin FROM LOGIN axdbadmin
-EXEC sp_addrolemember 'db_owner', 'axdbadmin'
-
-CREATE USER axmrruntimeuser FROM LOGIN axmrruntimeuser
-EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
-
-CREATE USER axretaildatasyncuser FROM LOGIN axretaildatasyncuser
-EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
-
-CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
-EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
-
-CREATE USER axdeployextuser FROM LOGIN axdeployextuser
-EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
-
-CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
-EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
-
-UPDATE T1
-SET T1.storageproviderid = 0
-    , T1.accessinformation = ''
-    , T1.modifiedby = 'Admin'
-    , T1.modifieddatetime = getdate()
-FROM docuvalue T1
-WHERE T1.storageproviderid = 1 --Azure storage
-
-ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
-GO
-DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
-DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2
-GO
--- Begin Refresh Retail FullText Catalogs
-DECLARE @RFTXNAME NVARCHAR(MAX);
-DECLARE @RFTXSQL NVARCHAR(MAX);
-DECLARE retail_ftx CURSOR FOR
-SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
-    WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
-OPEN retail_ftx;
-FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
-
-BEGIN TRY
-    WHILE @@FETCH_STATUS = 0 
-    BEGIN 
-        PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
-        EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
-        SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
-        EXEC SP_EXECUTESQL @RFTXSQL;
-        FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
-    END
-END TRY
-BEGIN CATCH
-    PRINT error_message()
-END CATCH
-
-CLOSE retail_ftx; 
-DEALLOCATE retail_ftx; 
--- End Refresh Retail FullText Catalogs
+    <add key="DataAccess.Database" value="<example_axdb_fromAzure>" />
+    <add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
+    <add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />
+    <add key="DataAccess.SqlUser" value="axdbadmin" />
 ```
+Save the file, and execute an IISRESET if you are operating a cloud hosted environment.  If you are operating on a Microsoft Managed developer machine with limited permissions, ensure that Visual Studio is closed.  
 
-### Turn on change tracking
+Finally, open a browser and visit the URL of your DevTest environment and validate that you are pulling the data from the UAT database.
 
-If change tracking was turned on in the source database, be sure to turn it on in the newly provisioned database in the target environment by using the **ALTER DATABASE** command.
+## Debug transactions in the DevTest environment
+Now that your environment is properly reconfigured, you can open Visual Studio and place a breakpoint in the application code that best meets your needs.  Note that while you are debugging in the DevTest environment, the users in the UAT environment are not impacted.  
 
-```
-ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
-```
-
-To help guarantee that the current version of the store procedure that is related to change tracking is used in the new database, you must turn change tracking on or off for a data entity in data management. You can choose any entity. This step is required to trigger the refresh of the store procedure.
-
-## Start to use the new database
-
-To switch environments and use the new database, first stop the following services:
-
-- World Wide Web Publishing Service
-- Microsoft Dynamics 365 Unified Operations: Batch Management Service
-- Management Reporter 2012 Process Service
-
-After these services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
-
-To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
-
-### Reprovision the target environment
-
-[!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-### Reset the Financial Reporting database
-
-If you're using Financial Reporting, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md). (Financial Reporting was previously named Management Reporter.)
-
-## Reenter data from encrypted and environment-specific fields in the target database
-
-In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. The field names are given in *Table.Field* format.
-
-| Field name                                               | Where to set the value |
-|----------------------------------------------------------|------------------------|
-| CreditCardAccountSetup.SecureMerchantProperties          | Select **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**. |
-| ExchangeRateProviderConfigurationDetails.Value           | Select **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**. |
-| FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Select **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**. |
-| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework (DIXF). |
-| HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
-| HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since Microsoft Dynamics AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
-| SysEmailSMTPPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
-| SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by Application Object Server (AOS). It can be ignored. |
-| SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
-
-## Community tools
-
-Are you looking for more tools to help with importing backup files to your developer environments? Here are some other sources of information:
-
-* [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that have been created by the community.
-* [Community provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
+## Best practices 
+Below are common best practices that ensure your debugging experience is quick, reliable, and doesn't disrupt other users in your organization:
+1. Ensure that the version of the code and binaries in the DevTest environment exactly match UAT.  This can be accomplished by connecting the DevTest environment to the same branch you build packages from for deployment, or a 'HotfixSupport' branch that is kept up to date with the latest customizations that are released.
+2. Do not execute a Database Sync from Visual Studio.  This will impact the availability of schema in the UAT database, and could adversely impact users in the UAT environment.
 
 ## Known issues
 
-### I can't download Management Studio installation files
-
-When you try to download the Microsoft SQL Server Management Studio installer, you might receive the following error message:
-
-> Your current security settings do not allow this file to be downloaded.
-
-To work around this issue, follow these steps to enable file downloads.
-
-1. In your web browser, open **Internet options**.
-2. On the **Security** tab, select the **Internet** zone, and then select **Custom level**.
-3. Scroll to **Downloads**, and then, under **File download**, select the **Enable** option.
-
-### Database synchronization fails
-
-When you sync the database against the newly imported database from Microsoft Visual Studio, the synchronization might fail, and you might receive the following error message:
-
-> Failed to open SQL connection syncengine.exe exited with code -1.
-
-In this case, the following message is also logged under event ID 140 in the Windows application log:
-
-> Object Server Database Synchronizer: The internal system table version number stored in the database is higher than the version supported by the kernel (141/138). Use a newer Microsoft Dynamics kernel, or start Microsoft Dynamics using the -REPAIR command line parameter to enforce synchronization.
-
-This issue can occur when the platform build number of the current environment is lower than the platform build number of the source environment. Depending on your circumstances, either use the **Updates** tiles on the environment page in LCS to upgrade the platform in the current environment so that it matches the platform in the source environment, or run the following query to adjust the expected version in the database.
-
-```
-UPDATE SQLSYSTEMVARIABLES
-
-SET VALUE = 138
-
-WHERE PARM = 'SYSTABVERSION'
-```
-
-> [!NOTE]
-> The value **138** in the preceding query is taken from the event log message, where version 138 was expected in this particular environment.
-
-### Performance
-
-The following guidelines can help you achieve optimal performance:
-
-- Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
-- In a Finance and Operations one-box environment that is hosted in Microsoft Azure, put the .bacpac file on drive D when you import it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure virtual machines (VMs), see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) blog post.
-- Grant the account that runs the SQL Server Windows service [Instance File Initialization](https://msdn.microsoft.com/library/ms175935.aspx) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
