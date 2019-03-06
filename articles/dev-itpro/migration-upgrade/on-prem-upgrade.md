@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations from version 7.x to 8.1.  
 
-## On-premises upgrade from version 7.x (with Platform update 12-20) to 8.1
+## On-premises upgrade from version 7.x (with Platform update 15-20) to 8.1
 
 > [!NOTE]
 > Be aware that this upgrade process takes time to complete and Finance and Operations will be inaccessible for the entire duration of the data upgrade.
@@ -77,10 +77,9 @@ An overview of each path is given below:
 6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
-	
-	```
-    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
-	```
+
+    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
+
     > [!NOTE] 
     > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to  Appendix A.
 
@@ -116,7 +115,7 @@ An overview of each path is given below:
      
     d.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database).
 
-    e.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
+    e.  Set up a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
 
     f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise, when the environment initially syncs with the database it will delete any customization or extensions related data.
 
@@ -130,12 +129,12 @@ An overview of each path is given below:
 
     a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded DB.
 
-    b.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md).
+    b.  Set up a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md).
 
 15. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 
@@ -154,10 +153,10 @@ An overview of each path is given below:
 6.  Open a Command Prompt as Administrator and change the directory to the unzipped folder from step 5.
 
 7.  Open a new PowerShell as Administrator and execute:
-	
-	```
-    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
-	```
+
+    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
+    -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\'
+    -DatabasePassword \'\<Password\>\'
 
     > [!NOTE]
     > Substitute \<\*\> with the values you require.
@@ -201,7 +200,7 @@ An overview of each path is given below:
 
     d.  The database will need to be configured. Follow the steps under [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
-    e.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
+    e.  Set up a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
 
     f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
 
@@ -220,7 +219,7 @@ An overview of each path is given below:
 14. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 
@@ -288,10 +287,8 @@ An overview of each path is given below:
 6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  (Optional) If the name of your restored database is not AXDB, using PowerShell with Administrator privileges execute:
-	
-	```
-    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
-	```
+
+    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
 
     > [!NOTE] 
     > Substitute \<DB-Name\> with the appropriate value in your case (typically AXDB). If you would like to edit more values, refer to Appendix A.
@@ -326,7 +323,7 @@ An overview of each path is given below:
 
 16. The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
-17. In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 15 (typically AXDB).
+17. Set up a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 15 (typically AXDB).
 
 18. Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
 
@@ -339,7 +336,7 @@ An overview of each path is given below:
 22. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment typically AXDB), run the following command:
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 
@@ -359,9 +356,7 @@ An overview of each path is given below:
 
 7.  Open a new PowerShell as Administrator and execute:
 
-	```
-    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
-	```
+    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\' -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\' -DatabasePassword \'\<Password\>\'
 
     > [!NOTE]
     > Substitute \<\*\> with the values you require.
@@ -401,7 +396,7 @@ An overview of each path is given below:
 
 15. The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
-16. In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 14 (typically AXDB).
+16. Set up a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 14 (typically AXDB).
 
 17. Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially synchs  with the database it will delete any customization or extensions related data.
 
@@ -414,7 +409,7 @@ An overview of each path is given below:
 21. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 
