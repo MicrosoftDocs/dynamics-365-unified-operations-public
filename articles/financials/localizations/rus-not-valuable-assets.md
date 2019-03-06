@@ -164,14 +164,14 @@ You can generate and print the **NVFA Statement of disposal (No. MB-4)** report 
 4.  Click **Lines** to open the **Journal voucher** page list.
 5.  Press **New** to open the **Add to journal** page.
 6.  In the **Transaction date** field, select the transaction date.
-7.  In the **Transaction type** field, select **Writing off** or **Disposal (sale)** as the transaction type.
+7.  In the **Transaction type** field, select **Disposal (sale)** as the transaction type.
 8.  In the **FA inventory number** field, select the inventory number for the fixed asset.
 9.  In the **Value model** field, select the value model for the fixed asset.
 10. In the **Reason code** field, select a reason code for the transaction.
 11. In the **Reason comment** field, enter a comment or a description of the transaction.
 12. Click **OK**. The write-off lines for all value models that are registered in the fixed assets account are created in the journal.
   –or–
-   Click **Group operations** \> **Disposal (sale)** or **Writting-off** to create disposal transactions.
+   Click **Group operations** \> **Disposal (sale)** to create disposal transactions.
     
 14. In the **Disposal date** field, select the date of the disposal transaction.
 15. Expand **Records to include** tab and click **Filter**. Then specify the selection criteria that are used to create transactions.
@@ -179,7 +179,7 @@ You can generate and print the **NVFA Statement of disposal (No. MB-4)** report 
 17. Click **Validate** \> **Validate** to validate the write-off transactions.
 18. Click **Post** \> **Post** to post the transaction.
 19. Close the page.
-20. In the **FA journal** page, click **Print** \> **NVFA Statement of disposal (No. MB-4)** to open the **NVFA Statement of disposal (No. MB-4)** page.
+20. On the **FA journal** page, click **Print** \> **NVFA Statement of disposal (No. MB-4)** to open the **NVFA Statement of disposal (No. MB-4)** page.
     
     > [!NOTE]
     > <P>The <STRONG>Print</STRONG> button is available only for journals that have been posted. The written-off transaction that is created on the <STRONG>Journal voucher</STRONG> page is displayed on the <STRONG>Overview</STRONG> tab. This transaction has a document number that is generated based on the number sequence that is set up in the <STRONG>Fixed asset parameters</STRONG> form.</P>
@@ -198,16 +198,16 @@ Use this procedure to print the not valuable fixed asset (NVFA) Statement of wri
 4.  Click **Lines**.
 5.  Click **New** to open the **Add to journal** form.
 6.  In the **Transaction date** field, select the transaction date.
-7.  In the **Transaction type** field, select **Writing-off** or **Disposal (sale)**.
+7.  In the **Transaction type** field, select **Writing-off**.
 8.  In the **FA inventory number** field, select the inventory number of the fixed asset.
 9.  Click **OK**. The value model lines for the asset record are created in the journal.
 10. Click **Group operations** \> **Writing-off** to create write-off transactions.
     
     –or–
     
-    Click **Group operations** \> **Disposal (sale)** or **Writting-off** to create disposal transactions.
+    Click **Group operations** \> **Writting-off** to create writting-off transactions.
 
-11. In the **Disposal date** field, select the date of the disposal transaction.
+11. In the **Disposal date** field, select the date of the writting-off transaction.
 12. Expand **Records to include** tab and click **Filter**. Then specify the selection criteria that are used to create transactions.
 13. Click **OK**, and then click **OK** again to create disposal or write-off transactions.
 14. In the **Journal voucher** page, click **Validate** \> **Validate** to validate the journal.
