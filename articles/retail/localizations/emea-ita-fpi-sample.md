@@ -112,6 +112,13 @@ The fiscal printer integration sample implements the following rules that are re
 - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
 - Save calculated adjustments of payment lines in the channel database with a reference to a fiscal transaction for a hybrid customer order.
 
+### Limitations of the sample
+
+- The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
+- Daily reports (fiscal X and fiscal Z) are printed by using the format that is embedded in the fiscal printer firmware.
+- Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
+- The sample supports integration only with a fiscal printer that is working in the RT (Registratore Telematico) mode.
+
 ## Set up Retail for Italy
 
 ### Enable extensions
@@ -179,7 +186,40 @@ To enable the registration process, follow these steps to set up Retail Headquar
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
 9. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
-## Commerce runtime extension design
+### Production environment
+
+Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
+
+1. Complete the steps described in the [Enable extensions](#enable-extensions) section earlier in this topic.
+2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
+
+    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
+
+        ``` xml	
+        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
+        ```
+
+    - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
+        ```
+
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath\Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
+        ```
+
+4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+## Design of extensions
+
+### Commerce runtime extension design
 
 The purpose of the extension (document provider) is to generate printer-specific documents and handle responses from the fiscal printer.
 
@@ -187,7 +227,7 @@ Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EpsonFP90IIISa
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-### Request handler
+#### Request handler
 	
 The **DocumentProviderEpsonFP90III** request handler is the entry point for the request to generate documents from the fiscal printer.
 
@@ -198,7 +238,7 @@ The connector supports the following requests:
 - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a printer-specific document that should be registered in the fiscal printer.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
 
-### Configuration
+#### Configuration
 
 The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
@@ -208,7 +248,7 @@ The configuration file is located in the **Configuration** folder of the extensi
 - Barcode type for the receipt number
 - Deposit payment type
 
-## Hardware station extension design
+### Hardware station extension design
 
 The purpose of the extension (connector) is to communicate with the fiscal printer.
 
@@ -216,7 +256,7 @@ Hardware station extension: **HardwareStation.Extensions.EpsonFP90IIIFiscalDevic
 
 The Hardware station extension submits documents that the Commerce runtime extension generates to the fiscal printer (via HTTP protocol). It also handles the responses that are received from the fiscal printer.
 
-### Request handler
+#### Request handler
 
 The **EpsonFP90IIISample** request handler is the entry point for handling request to the fiscal peripheral device.
 
@@ -228,16 +268,9 @@ The connector supports the following requests:
 - **IsReadyFiscalDeviceRequest** – This request is used for a health check of the device.
 - **InitializeFiscalDeviceRequest** – This request is used for printer initialization.
 
-### Configuration
+#### Configuration
 
 The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
 - **Endpoint address** – The URL of the printer.
 - **Date and time synchronization** – This setting indicates whether you must sync the date and time of the printer with the connected Hardware station. The date and time of the printer will be synced with the Hardware station time.
-
-## Limitations of the sample
-
-- The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
-- Daily reports (fiscal X and fiscal Z) are printed by using the format that is embedded in the fiscal printer firmware.
-- Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
-- The sample supports integration only with a fiscal printer that is working in the RT (Registratore Telematico) mode.
