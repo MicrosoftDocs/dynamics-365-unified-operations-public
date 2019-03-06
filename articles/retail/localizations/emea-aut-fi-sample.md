@@ -28,7 +28,6 @@ ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
 
 ---
----
 # Fiscal registration service integration sample for Austria
 
 [!include[banner](../includes/banner.md)]
@@ -349,7 +348,7 @@ The Hardware station extension components are included in the Hardware station s
 To enable the registration process, set up Retail Headquarters using the steps below. For more details, see [How to set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md).
 
 1. Open **Retail shared parameters** and enable **Fiscal integration** on the **General** tab.
-2. Open **Retail \> Channel setup \> Fiscal integration > Fiscal connectors** menu. Load connector configuration from RetailSdk. The file is located under SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml.
+2. Open **Retail \> Channel setup \> Fiscal integration > Fiscal connectors** menu. Load connector configuration from RetailSdk. The file location is: **SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSampleAustria.xml**.
 3. Open **Retail \> Channel setup \> Fiscal integration > Fiscal document providers** menu. Load documment provider configurations from RetailSdk. Configuration files are located under the folder **SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
@@ -403,12 +402,53 @@ Follow these steps to create deployable packages that contain Retail components,
 
 ### Commerce runtime extension design
 
+The purpose of the extension (document provider) is to generate service-specific documents and handle responses from the fiscal registration service.
+
+Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EFRSample**.
+
+For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+
 #### Request handler
 	
+The **EFRSample** request handler is the entry point for the request to generate documents from the fiscal printer.
+
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
+
+The connector supports the following requests:
+
+  - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+  - **GetNonFiscalDocumentDocumentProviderRequest** - This request contains information about what non-fiscal document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+  - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, printing Z report, customer account deposits, customer order deposits, audit events, non-sales transactions.
+  - **GetFiscalRegisterResponseToSaveDocumentProviderRequest** - This request returns the response from fiscal service, which is serialized to string to be ready for saving.
+
 #### Configuration
+
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+
+  - VAT rates mapping
 
 ### Hardware station extension design
 
+The purpose of the extension (connector) is to communicate with the fiscal registration service.
+
+Hardware station extension: **HardwareStation.Extension.EFRSample**
+
+The Hardware station extension submits documents that the Commerce runtime extension generates to the fiscal registration service (via HTTP protocol). It also handles the responses that are received from the fiscal registration service.
+
 #### Request handler
 
+The **EFRSample** request handler is the entry point for handling request to the fiscal registration service.
+
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Retail Headquarters.
+
+The connector supports the following requests:
+
+  - **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
+  - **IsReadyFiscalDeviceRequest** – This request is used for a health check of the service.
+  - **InitializeFiscalDeviceRequest** – This request is used for the fiscal registration service initialization.
+
 #### Configuration
+
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+  - **Endpoint address** – The URL of the fiscal registration service.
+  - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the service.
