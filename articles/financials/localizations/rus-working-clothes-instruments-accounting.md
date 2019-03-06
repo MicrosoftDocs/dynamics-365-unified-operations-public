@@ -285,7 +285,7 @@ When a used working clothes or special rigging card is issued, if the serial num
 
 17. Close the page.
 
-18. In the **Working clothes/Special rigging/NVFA issue journal** form, click **Validate** to validate the journal.
+18. In the **Working clothes/Special rigging/NVFA issue journal** page, click **Validate** to validate the journal.
 
 19. Click **FA journals** \> **FA journal (putting into operation)** to put the asset into operation.
     
@@ -293,7 +293,7 @@ When a used working clothes or special rigging card is issued, if the serial num
     
     Click **FA journals** \> **FA journal (depreciation)** to depreciate the asset.
 
-20. Click **Close** to post the journal.
+20. Click **Close** to post the journal. After clossing a Working clothes/Special rigging/NVFA issue journal, you may print **Working clothes issue sheet (NO. MB-7)** (Click **Print**\> **Working clothes issue sheet (NO. MB-7)**)
 
 To reverse the issue of the working clothes or special rigging item, in the **Working clothes/Special rigging/NVFA issue journal** page, click **Cancel issue**.
 
