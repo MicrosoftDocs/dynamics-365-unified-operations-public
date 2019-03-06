@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 02/08/2019
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1106,17 +1106,14 @@ This will result in the AXSF service also failing with the same error.
 
 To resolve this issue, follow these steps:
 
-1. Download the nuget package: https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.0
-2. Rename the file extension from .nupkg to .zip and extract.
-3. Locate the "netstandard.dll" file that you extracted. This should be in the following location: <extracted folder>\netstandard.library.2.0.0\build\netstandard2.0\ref\netstandard.dll
-4. Create a folder called "Files" on the C: drive on all the AOS servers. Copy the "netstandard.dll" file to this folder on all the AOS servers.
-5. On each AOS server, open an Admin Command Prompt, and run the following command.
+1. Locate netstandard.dll from [Agent share path](setup-deploy-on-premises-pu12.md#setupfile). For example: \wp\<name>\StandaloneSetup-<ver>\Apps\AOS\AXServiceApp\AXSF\Code\bin\netstandard.dll
+2. On each AOS server, open a Command Prompt as an administrator, and run the following command.
 
 ```
-"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i C:\Files\netstandard.dll /f
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i <path from step 1.>\netstandard.dll /f
 ```
-6. Delete AXBootstrapperApp from Service Fabric.
+3. Delete AXBootstrapperApp from Service Fabric.
     1. Delete fabric:/Bootstrapper/AXBootstrapper service.
     2. Delete fabric:/Bootstrapper application. 
     3. Unprovision AXBootstrapperAppType type.
-7.	Redeploy and retry from LCS.
+4.	Redeploy and retry from LCS.
