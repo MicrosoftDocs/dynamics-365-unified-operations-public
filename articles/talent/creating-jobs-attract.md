@@ -5,7 +5,7 @@ title: Create, approve, and post jobs in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: josaw
 manager: AnnBe
-ms.date: 02/11/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -95,15 +95,13 @@ LinkedIn Company ID is required to ensure your jobs posted from Attract are
 mapped to the correct company page.
 
 Your LinkedIn Company ID is a string of numbers that uniquely identifies your
-company within LinkedIn. This string is around 6 - 9 characters long. For more
-information on how to find your LinkedIn company ID, please visit the
-[LinkedIn site](https://aka.ms/findID).
+company within LinkedIn. For more information on how to find your LinkedIn company ID, please visit the [LinkedIn site](https://aka.ms/findID).
 
 To update your LinkedIn company, select **Admin center** on the **Settings** menu
 (the gear symbol), and then select the **LinkedIn Integration** tab. Under the **Connect to LinkedIn** section, enter your LinkedIn Company Name and Company ID, and then save the settings.
 
 > [!NOTE]
-> There are three important things to note about job posting process to LinkedIn.
+> There are four important things to note about job posting process to LinkedIn.
 > 1. Jobs posted to LinkedIn are posted as "Limited Listings" jobs. Limited listing jobs cannot be promoted across the LinkedIn site. If you want to promote limited listing jobs posted to LinkedIn from Attract, you should work with LinkedIn to enable "Job Wrapping". Please refer to links below and contact LinkedIn support for more details.
 >
 >    [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -116,7 +114,9 @@ To update your LinkedIn company, select **Admin center** on the **Settings**�
 >
 >    If you have problems after this step, please contact LinkedIn support. 
 > 
-> 1. It may take up to 12 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
+> 1. Jobs posted to LinkedIn appear on the live LinkedIn site. There is no test environment for posting jobs to LinkedIn. 
+>
+> 1. It may take up to 24 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
 
 
 ## Activate

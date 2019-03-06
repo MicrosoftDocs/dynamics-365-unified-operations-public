@@ -85,5 +85,6 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Set up officials](rus-officials.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Invoices for payment](rus-invoice-payment.md)
+- [Cash flow management](rus-cash-flow.md)
 
 

@@ -5,7 +5,7 @@ title: Omni-channel advanced auto charges
 description: This topic describes capabilities for managing additional order charges for Retail channel orders using advanced auto charges features.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: 10.0
 
 # Omni-channel advanced auto charges
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic provides information on configuration and deployment of the advanced auto-charges feature which are available in Dynamics 365 for Retail version 10.0.

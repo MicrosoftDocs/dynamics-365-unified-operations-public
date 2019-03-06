@@ -5,7 +5,7 @@ title: Set up the fiscal integration for Retail channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Retail channels. 
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -178,7 +178,7 @@ In some cases, a special text must be printed on a fiscal receipt if a discount 
     3. In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.
 
     > [!NOTE]
-    > If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line. 
+    > If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line.
 
 ## Set error handling settings
 
@@ -213,3 +213,4 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
     2. Add a new button, and set the **Print fiscal X** button property.
     3. Add a new button, and set the **Print fiscal Z** button property.
     4. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
+
