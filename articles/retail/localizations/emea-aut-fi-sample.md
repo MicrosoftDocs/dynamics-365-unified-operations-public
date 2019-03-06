@@ -44,13 +44,13 @@ The following scenarios are covered by the fiscal registration service integrati
    - Registration of cash transactions in the fiscal register service:
       - Send detailed transaction data, including sales line information, discounts, payments, and taxes, to the fiscal register service.
       - Capture a response from the fiscal register service including a digital signature and a link to the registered transaction.
-      - Print the tax decomposition and the QR-code for the registered transaction in the receipt.
-  - Registration of gift card operations and customer deposits in the fiscal cash register as non-cash transactions:
-      - Issue/Add to a Gift card.
+      - Print the tax decomposition and the QR-code for a registered transaction in the receipt.
+  - Registration of gift card operations and customer deposits in the fiscal register service as non-cash transactions:
+      - Issue / Add to a Gift card.
       - Register a customer account deposit.
       - Register a customer order deposit.
-  - Registration of some POS-related events or transactions at the fiscal cash register (EFR) as a non-cash transactions:
-      - Shift open/close;
+  - Registration of non-sales transactions and events in the fiscal register service as non-cash transactions:
+      - Open / Close shift;
       - Start amount / Float entry / Tender removal;
       - Price override;
       - Tax override;
@@ -58,33 +58,36 @@ The following scenarios are covered by the fiscal registration service integrati
       - Open drawer;
       - Print X report;
       - Print Z report.
-  - End of day statements (fiscal X, fiscal Z reports) enhancement by Austria-specific fields:  
-      - Number of total sold items, products or services delivered to customers;
-      - Sales broken down by tax rates;
-      - Breakdown of proceeds by cashier/cash register operator;
-      - Price discounts, returns, by which daily sales are reduced;
+  - Printing of end of day statements (X/Z reports) with Austria-specific fields:  
+      - Total number of products or services delivered to customers;
+      - Breakdown of sales by tax rate;
+      - Breakdown of payments by cashier/cash register operator;
+      - Price discounts and returns that reduce daily sales;
       - Zero sales (giveaways).
-  - Error handling including following options:
-      - Retry fiscal registration if it's possible; for example, if the fiscal registration service is unavailable;
-      - Skip fiscal registration, including info codes to capture the reason of failure and additional information;
-      - Fiscal registration service health-check before posting transaction data into Dynamics 365 HQ.
+  - Error handling, such as the following options:
+      - Retry fiscal registration if a retry is possible, such as if the fiscal register service isn't available, isn't ready or isn't responding.
+      - Postpone fiscal registration.
+      - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
+      - Check availability of the fiscal register service before opening a new sales transaction or finalizing a sales transaction.    - 
 
 ### Gift cards handling
 
-The fiscal registration service integration sample implements the following rules in regard to gift cards:
-  - Exclude sales lines related to the operations Issue gift card or Add to gift card from the cash transaction registration message, these operations are registered by separate message as a non-cash operation.
-  - Do not print a tax group breakdown and a QR-code in a receipt if it consists of gift card lines only.
-  - Total amount of gift cards issued or re-charged and a cash transaction amount are printed in the receipt separately.
-  - Payment by gift card is considered as a regular payment.
+The fiscal registration service integration sample implements the following rules that are related to gift cards:
 
-### Customer deposits and customer order deposits handling
+- Exclude sales lines that are related to the *Issue gift card* and *Add to gift card* operations from a cash transaction to be registered in the fiscal register service and register them as a separate non-cash transaction.
+- Don't print a tax group breakdown and a QR-code in a receipt if it consists only of gift card lines.
+- Print the total amount of gift cards that are issued or re-charged in a transaction separately from the cash transaction amount in the receipt.
+- Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
+- Payment by gift card is considered a regular payment.
 
-The fiscal registration service integration sample implements the following rules in regard to customer account deposits and customer order deposits:
-  - Non-cash transaction is registered if a POS transaction is a customer deposit.
-  - Non-cash transaction is registered if a POS transaction contains a sales order deposit or a sales order deposit refund only.
-  - Print the amount of the previously paid deposit in a fiscal receipt for a customer order pickup operation.
-  - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
-  - Save calculated adjustments of payment lines in the Channel DB with a reference to a fiscal transaction for a hybrid sales order.
+### Customer deposits and customer order deposits
+
+The fiscal registration service integration sample implements the following rules that are related to customer deposits and customer order deposits:
+
+- Register a non-cash transaction if a transaction is a customer deposit.
+- Register a non-cash transaction if a transaction contains only a customer order deposit or a customer order deposit refund.
+- Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
+- Save calculated adjustments of payment lines in the channel database with a reference to a fiscal transaction for a hybrid customer order.
 
 ## Set up Retail for Austria
 
