@@ -61,7 +61,7 @@ Use built-in system administration tools to manage network printers across legal
 
 ### Client Alert Email Support
 Stay on top of your business data with integrated change tracking tools. With the latest Platform Release, users are able to create Alert Rules that automatically dispatch email notifications to pre-defined groups of internal & external contacts when triggered by an event. With Dynamics 365 for Finance & Operations, users are able to define custom Alert Rules to monitor filtered views of their data. 
-For more information, view article on [Client alerts notifications by email](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/alert-email-notifications)
+For more information, view article on [Client Alerts notifications by email](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/alert-email-notifications)
 
 ### Client Alert sub-table tracking
 The latest Platform Update release includes the ability to create Alert Rules that monitor updates made to fields sourced from related tables. Previously, options were limited to fields sourced from the root data source. Now users are able to define alert rules for all fields on subtables which are visible to the user.
