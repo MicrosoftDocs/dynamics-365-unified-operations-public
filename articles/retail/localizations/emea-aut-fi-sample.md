@@ -179,12 +179,12 @@ In the Receipt format designer, add the following custom fields to the appropria
   - **Header:** Add the following field:
     - **Store name** and **Tax Identification Number** fields, so that the company name and identity number are printed receipts. Alternatively, you can add the company name and identity number to the layout as free-format text.
     - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
-    - **Continuous Number**: This field identifies the number of cash transaction in the fiscal registrator;
+    - **Continuous Number**: This field identifies the number of cash transaction in the fiscal registration service;
   - **Lines:** Add the following fields:
     - **Item name**, 
     - **Qty**, 
     - **Total price with tax**,
-    - **Tax Retail Print Code**: This field dysplays the code corresponding to the tax group.
+    - **Tax Retail Print Code**: This field displays the code corresponding to the tax group.
   - **Footer:** Add the following fields:
     - Tax fields, so that the receipt tax amounts for each tax rate are printed. For example, add the **Tax Id**, **Tax percentage**, and **Tax amounts** fields to one line of the layout.
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
@@ -349,14 +349,14 @@ To enable the registration process, set up Retail Headquarters using the steps b
 
 1. Open **Retail shared parameters** and enable **Fiscal integration** on the **General** tab.
 2. Open **Retail \> Channel setup \> Fiscal integration > Fiscal connectors** menu. Load connector configuration from RetailSdk. The file location is: **SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSampleAustria.xml**.
-3. Open **Retail \> Channel setup \> Fiscal integration > Fiscal document providers** menu. Load documment provider configurations from RetailSdk. Configuration files are located under the folder **SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
+3. Open **Retail \> Channel setup \> Fiscal integration > Fiscal document providers** menu. Load document provider configurations from RetailSdk. Configuration files are located under the folder **SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
 4. Open **Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new profiles per document provider from step above and select the loaded connector. Update data mapping settings if needed.
 5. Open **Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
 6. Open **Retail \> Channel setup \> Fiscal integration \> Fiscal connector group**. Create two new group per connector's functional profile from the step above.
 7. Open **Retail \> Channel setup \> Fiscal integration \> Registration process**. Create a new process. Select both connector's functional groups from the step above.
-7. Open **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** prorerty at **Functions** fasttab.
+7. Open **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** property at **Functions** FastTab.
 8. Open the **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select one that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** tab. Select the connector technical profile.
 9. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
