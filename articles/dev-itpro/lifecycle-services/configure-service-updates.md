@@ -33,12 +33,14 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/coming-soon.md)]
+
 In Microsoft Dynamics Lifecycle Services (LCS), you can specify how and when you receive service updates from Microsoft for your Microsoft Dynamics 365 for Finance and Operations environments.
 
 > [!IMPORTANT]
-> This feature is available only to customers who are using **version 8.1 and later**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers and customers who use older versions of the product. 
+> This feature is available only to customers who are using **Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) and later**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers and customers who use older versions of the product. 
 
-Only users (customers or partners) who are assigned to the **project owner** role in LCS can configure updates. Additionally, updates can be configured only for **implementation projects**.
+Only users (customers or partners) who are assigned to the **Project owner** role in LCS can configure updates. Additionally, updates can be configured only for **implementation projects**.
 
 Follow these steps to change your update settings.
 
@@ -73,7 +75,7 @@ Follow these steps to change your update settings.
 3. When you've finished setting the configuration options, select **Save**.
 
     > [!IMPORTANT]
-    > After the settings are saved, you can change them at any time. However, if there is an ongoing rollout, the new settings won't be used to update the existing rollout timings. Instead, they will start to be used in the next rollout. An ongoing rollout is defined by the period between the date when the email notification is sent for the sandbox environment update (production environment update – 14 calendar days) and the date when the production environment is updated.
+    > After the settings are saved, you can change them at any time. However, if there is an ongoing rollout, the new settings won't be used to update the existing rollout timings. Instead, they will start to be used in the next rollout. An ongoing rollout is defined by the 14-day period between the date when the email notification about the update of the sandbox environment is sent and the date when the production environment is updated.
 
 For more information about how to pause updates to configured sandbox and production environments, see [Pause service updates through Lifecycle Services (LCS)](pause-service-updates.md).
 
