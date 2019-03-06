@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/coming-soon.md)]
+
 This topic explains how to pause updates to your sandbox and production environments by using Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!IMPORTANT]
