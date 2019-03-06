@@ -188,9 +188,9 @@ You can generate and print the **NVFA Statement of disposal (No. MB-4)** report 
 23. On the **Rows** tab, you can view the document number, fixed asset number, and the value model code.
 24. Click **Print** to generate the **NVFA Statement of disposal (No. MB-4)** report.
 
-## Generate a write-off transaction and print the statement of disposal (No. MB-4) and the NVFA statement of writing off (No. MB-8) from the fixed asset journal 
+## Generate a write-off transaction and print the  NVFA statement of writing off (No. MB-8) from the fixed asset journal 
 
-Use this procedure to print the not valuable fixed asset (NVFA) Statement of writing off (No. MB-8) or NVFA Statement of disposal (No. MB-4) from the fixed asset (FA) journal after you enter disposal or write-off transactions. The report can also be printed from the **Working clothes**, **Special rigging**, or **Not valuable FAs** page list for transactions that have a status of **Written off** or **Written off (dismantlement)**.
+Use this procedure to print the not valuable fixed asset (NVFA) Statement of writing off (No. MB-8) from the fixed asset (FA) journal after you enter write-off transactions. The report can also be printed from the **Working clothes**, **Special rigging**, or **Not valuable FAs** page list for transactions that have a status of **Written off** or **Written off (dismantlement)**.
 
 1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 2.  Create a new journal.
@@ -212,11 +212,11 @@ Use this procedure to print the not valuable fixed asset (NVFA) Statement of wri
 13. Click **OK**, and then click **OK** again to create disposal or write-off transactions.
 14. In the **Journal voucher** page, click **Validate** \> **Validate** to validate the journal.
 15. Click **Post** \> **Post** to post the journal.
-16. Click **Print** \> **NVFA Statement of writing-off (No. MB-8)**  or **Print** \> **NVFA Statement of disposal (No. MB-4)**.
-17. For **NVFA Statement of writing-off (No. MB-8)**, on the **Overview** tab, in the **Order number** field, enter the order number that the disposal transaction is posted under, and in the **Resolution date** field, select the order date.
+16. Click **Print** \> **NVFA Statement of writing-off (No. MB-8)**.
+17. On the **Overview** tab, in the **Order number** field, enter the order number that the write-off transaction is posted under, and in the **Resolution date** field, select the order date.
 18. On the **Rows** tab, you can verify the document number, the fixed asset number, and the value model code.
-19. For **NVFA Statement of writing-off (No. MB-8)**, on the **Officials** tab, you can view details about the officials, who are assigned in the **Officials**. You can also modify the employee details, if modification is required.
-20. Click **Print** to generate the NVFA Statement of writing off (No. MB-8) or NVFA Statement of disposal (No. MB-4).
+19. On the **Officials** tab, you can view details about the officials, who are assigned in the **Officials**. You can also modify the employee details, if modification is required.
+20. Click **Print** to generate the NVFA Statement of writing off (No. MB-8).
 
 ## Generate the NVFA accounting card (No. MB-2) for NVFAs, special rigging, and working clothes 
 
