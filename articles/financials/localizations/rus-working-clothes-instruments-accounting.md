@@ -97,7 +97,7 @@ Use the **Issue and usage rates** page to define the types of issue and usage ra
 
 ## Set up the item relation to working clothes and special rigging
 
-Use this procedure to relate an item or an item group to a fixed asset (FA) group. You can use the following pagess to set up an item relation with a fixed asset group:
+Use this procedure to relate an item or an item group to a fixed asset (FA) group. You can use the following pages to set up an item relation with a fixed asset group:
 
   - **Conditions for FA group definition** – Set up a period when the item relation is valid, and set up the maximum and minimum cost limits and the service life period for the item.
 
@@ -166,7 +166,7 @@ Use this procedure to indicate the type of work that is performed by an employee
 
 Use this procedure to manually register and manage special rigging items.
 
-1.  Click **Fixed assets (Russia)** \> **Common** \> **Special rigging**. Click **Special rigging** to create a new special rigging item, or double-click an existing special rigging item.
+1.  Click **Fixed assets (Russia)** \> **Common** \> **Special rigging**. Click **New** to create a new special rigging item, or double-click an existing special rigging item.
 
 2.  In the **FA group** field, select a fixed asset (FA) group for the special rigging item.
 
@@ -194,7 +194,7 @@ Use this procedure to manually register and manage special rigging items.
 
 Use this procedure to manually register and manage working clothes.
 
-1.  Click **Fixed assets (Russia)** \> **Common** \> **Working clothes**. Click **Working clothes** to create a new working clothes item, or double-click an existing working clothes item.
+1.  Click **Fixed assets (Russia)** \> **Common** \> **Working clothes**. Click **New** to create a new working clothes item, or double-click an existing working clothes item.
 
 2.  In the **FA group** field, select a fixed asset (FA) group for the working clothes item.
 
