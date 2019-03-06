@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Not valuable fixed assets (NVFAs) for Russia
+# Not valuable fixed assets (NVFAs) accounting for Russia
 
 [!include [banner](../includes/banner.md)]
 
