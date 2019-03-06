@@ -124,10 +124,10 @@ After you install BaseX, modify and run the following Windows PowerShell script 
 
 Depending on the size of your model, BaseX can use a lot of memory.
 
-By default, BaseX is configured to use a maximum of about 1.17 gigabytes (GB) of random-access memory (RAM). If you have a large model, you should consider increasing this limit by following these steps.
+By default, BaseX is configured to use a maximum of about 1200 megabytes (MB) of random-access memory (RAM). If you have a large model, you should consider increasing this limit by following these steps.
 
 1. Open the batch script at **\<BaseX Install Path\>\\bin\\basex.bat** for editing.
-2. Find the line that contains **set BASEX\_JVM=-Xmx1200m %BASEX\_JVM%**, and increase the value after **-Xmx**. For example, change the value to **4g** to let BaseX use 4 GB of RAM.
+2. Find the line that contains **set BASEX\_JVM=-Xmx1200m %BASEX\_JVM%**, and increase the value after **-Xmx**. For example, change the value to **10g** to let BaseX use up to 10 GB of RAM.
 
     For more information, see [Non-Standard Options](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABHDABI). This section of the Java documentation explains how to increase the limits of the Java virtual machine (VM).
 
