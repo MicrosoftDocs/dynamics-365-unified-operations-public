@@ -27,7 +27,6 @@ ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
 
 ---
-
 # Fiscal printer integration sample for Poland
 
 [!include[banner](../includes/banner.md)]
@@ -90,7 +89,7 @@ The following default data mapping is included in the fiscal document provider c
 
     *0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
 
-### Handling gift cards
+### Gift cards handling
 
 The fiscal printer integration sample implements the following rules that are related to gift cards:
 
@@ -100,7 +99,7 @@ The fiscal printer integration sample implements the following rules that are re
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
 - Payment by gift card is considered a regular payment.
 
-### Handling customer deposits and customer order deposits
+### Customer deposits and customer order deposits handling
 
 The fiscal printer integration sample implements the following rules that are related to customer deposits and customer order deposits:
 
@@ -109,6 +108,13 @@ The fiscal printer integration sample implements the following rules that are re
 - Print the amount of the previously paid deposit on a fiscal receipt for a customer order pickup operation.
 - Deduct the customer order deposit amount from payment lines when a hybrid customer order is created.
 - Save calculated adjustments of payment lines in the channel database with a reference to a fiscal transaction for a hybrid customer order.
+
+### Limitations of the sample
+
+- The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
+- Daily reports (fiscal X and fiscal Z) are printed by using the embedded *Shift report* format.
+- Printing a barcode on fiscal receipts is considered a potential customization, because this feature isn't supported in the embedded formats and can be implemented only through using the customizable **Super-format** report.
+- Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
 
 ## Set up Retail for Poland
 
@@ -174,7 +180,40 @@ To enable the registration process, follow these steps to set up Retail Headquar
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
 9. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
-## Commerce runtime extension design
+### Production environment
+
+Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
+
+1. Complete the steps described in the [Enable extensions](#enable-extensions) section earlier in this topic.
+2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
+
+    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
+
+        ``` xml	
+        <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample" />
+        ```
+
+    - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
+        ```
+
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll"/>
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
+        ```
+
+4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+## Design of extensions
+
+### Commerce runtime extension design
 
 The purpose of the extension (document provider) is to generate printer-specific documents and handle responses from the fiscal printer.
 
@@ -182,7 +221,7 @@ The Commerce runtime extension is **Commerce.Runtime.DocumentProvider.PosnetSamp
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-### Request handler
+#### Request handler
 	
 The **DocumentProviderPosnetProtocol** request handler is the entry point for the request to generate documents from the fiscal printer.
 
@@ -194,7 +233,7 @@ The connector supports the following requests:
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
 - **SaveFiscalRegistrationResultDocumentProviderRequest** – This request saves the response from the printer.
 
-### Configuration
+#### Configuration
 
 The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
@@ -202,13 +241,13 @@ The configuration file is found in the **Configuration** folder of the extension
 - Tender type mapping
 - Deposit payment type
 
-## Hardware station extension design
+### Hardware station extension design
 
 The purpose of the extension (connector) is to communicate with the fiscal printer.
 
 The Hardware station extension is **Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.FiscalPrinterHandler**. This extension submits commands that the Commerce runtime extension generates to the fiscal printer, by calling the functions of the POSNET driver that is provided by the manufacturer. It also handles device errors.
 
-### Request handler
+#### Request handler
 
 The **FiscalPrinterHandler** request handler is the entry point for handling the request to the fiscal peripheral device.
 
@@ -220,17 +259,10 @@ The connector supports the following requests:
 - **IsReadyFiscalDeviceRequest** – This request is used for a health check of the device.
 - **InitializeFiscalDeviceRequest** – This request is used for printer initialization.
 
-### Configuration
+#### Configuration
 
 The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
 - **Connection string** – This string describes the details of the connection to the device in a format that is supported by the driver. For details, see the POSNET driver documentation.
 - **Date and time synchronization** – This setting indicates whether you must sync the date and time of the printer with the connected Hardware station. The date and time of the printer will be synced with the Hardware station time.
 - **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
-
-## Limitations of the sample
-
-- The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
-- Daily reports (fiscal X and fiscal Z) are printed by using the embedded *Shift report* format.
-- Printing a barcode on fiscal receipts is considered a potential customization, because this feature isn't supported in the embedded formats and can be implemented only through using the customizable **Super-format** report.
-- Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
