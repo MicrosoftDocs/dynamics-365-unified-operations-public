@@ -46,8 +46,22 @@ The [second wave of platform extensibility enhancements](https://docs.microsoft.
 ## Feature name
 Brief description of the feature and how it helps customers.  Then provide a link to your topic that has details.
 
-## Feature name
-Brief description of the feature and how it helps customers.  Then provide a link to your topic that has details.
+### PowerBI.com Report Pinning
+
+### Data Lake Integration
+
+### Trickle feed support for Data Lake
+
+### Edit Analytical Workspace
+
+### System Printer Management
+
+### Client Alert Email Support
+
+### Client Alert sub-table tracking
+
+### Archive non-PDF files using Batch operation
+
 
 ## Additional resources
 
