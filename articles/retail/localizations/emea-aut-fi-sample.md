@@ -68,7 +68,7 @@ The following scenarios are covered by the fiscal registration service integrati
       - Retry fiscal registration if a retry is possible, such as if the fiscal register service isn't available, isn't ready or isn't responding.
       - Postpone fiscal registration.
       - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
-      - Check availability of the fiscal register service before opening a new sales transaction or finalizing a sales transaction.    - 
+      - Check availability of the fiscal register service before opening a new sales transaction or finalizing a sales transaction.
 
 ### Gift cards handling
 
@@ -102,13 +102,14 @@ Austria-specific settings can be divided into two groups:
 ### General settings
 
 You must specify the following general settings for Austria:
-1. Set up the following parameters for value-added tax (VAT) per Austria requirements:
+
+1. Set up the following parameters for value-added tax (VAT) per local requirements in Austria:
     - Sales tax codes;
     - Sales tax groups;
     - Item sales tax groups;
     - Sales tax settings in items (item sales tax groups for sales).
 
-For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations and in Retail see [Sales tax overview](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations and in Retail see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
 2. On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
     - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default retail customer.
