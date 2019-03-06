@@ -68,7 +68,7 @@ A separate set of frequently asked questions (FAQ) provides details about servic
 ## Operating system–level updates 
 
 ### How long is the maintenance window?
-Most operating system–level updates are completed in approximately one hour. However, Microsoft asks for a three-hour window, so that there is time to handle any failures and to bring the system back to a health state. 
+Most operating system–level updates are completed in approximately one hour. However, Microsoft asks for a three-hour window, so that there is time to handle any failures and to bring the system back to a healthy state. 
 
 The exact downtime for all updates will be included in the maintenance window notification email that is sent to you before the start of the update.
 
