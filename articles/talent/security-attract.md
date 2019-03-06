@@ -105,7 +105,7 @@ The following privileges apply to the job-specific data for applicants and the a
 | Data or action          | Recruiter | Hiring Manager | Interviewer |
 |-------------------------|-----------|----------------|-------------|
 | Application documents   | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
-| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Create |
+| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only|
 | Application Activity    | View, if the user is on the hiring team | View, if the user is on the hiring team | Read-only |
 | Application feedback    | Add and view all feedback if the user is on the hiring team | Add and view all feedback if the user is on the hiring team | Can add feedback\*\* |
 | Reject application      | Can reject if the user is on the hiring team | Not allowed | Not allowed |
