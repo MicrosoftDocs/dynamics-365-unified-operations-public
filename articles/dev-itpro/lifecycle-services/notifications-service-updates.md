@@ -5,7 +5,7 @@ title: Get notified about service updates through Lifecycle Services (LCS)
 description: This topic explains the various ways that you can be notified about service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 24
 # Get notified about service updates through Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/coming-soon.md)]
 
 This topic explains how you can stay up to date about service updates from Microsoft.
 
