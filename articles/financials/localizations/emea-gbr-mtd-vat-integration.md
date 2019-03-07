@@ -71,6 +71,7 @@ When a company is signed up for the MTD service for VAT in HMRC, to get Finance 
 
 > [!div class="checklist"]
 > * Import and set up Electronic Reporting (ER) configurations
+> * Setup application specific parameters
 > * Import package of data entities with predefined Electronic messages setup
 > * Set up General ledger parameters
 > * Define Sales tax settlement period
