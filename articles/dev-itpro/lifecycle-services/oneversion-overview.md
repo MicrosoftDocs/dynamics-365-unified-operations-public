@@ -54,7 +54,7 @@ The customer can choose the maintenance window based on business constraints usi
 
 To plan ahead and understand what&#39;s changing the [release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to look ahead and review the features up-to 3 months in advance.  The [what&#39;s new](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) will carry specific details about the specific month&#39;s update. An email notification will be sent 5 days in advance and a notification will popup in LCS just prior to an update as shown below.
 
-[![Queries](./media/Notification-bar.JPG)](./media/Notification-bar.JPG)
+[![Queries](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
 
 **Execute**
 
