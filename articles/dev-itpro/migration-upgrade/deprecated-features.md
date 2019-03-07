@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,45 @@ This list is intended to help you consider these removals and deprecations for y
 > [!Note]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
+
+### Print to screen functionality
+Customers can use the **Import** action provided by the Report Viewer control to download documents produced by Finance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations. By fully embracing PDF as the standard format for business operations, we are able to drastically simplify user options for interacting with application reports and streamline the document rendering process. |
+| **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.   |
+| **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. The functionality to automatically download application reports to the browser as PDF documents is planned for the May 2019 Platform update. <br><br>**Important:**  Existing customers who rely on the Print to screen feature are advised to notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
+
+### Client KPI controls
+Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics. |
+| **Replaced by another feature?**   | PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.  In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.   |
+| **Product areas affected**         | This update will prevent developers from introducing new KPI controls in Visual Studio designer.    |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
+
+### Deprecated APIs and future breaking changes
+
+#### Field groups containing invalid field references
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All. |
+| **Status**                         | Deprecated - The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+
+#### Complete list
+To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
+
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
 ### Batch transfer rules for subledger journal account entries
@@ -58,7 +97,7 @@ The Synchronous transfer mode is being deprecated in the General ledger paramete
 | **Replaced by another feature?**   | Asynchronous and scheduled batch are options to use in place of Synchronous.   |
 | **Product areas affected**         | General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is the 10.0 version.|
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.|
 
 ### Electronic reporting for Russia
 Feature for configuring .txt and .xml file formats of declarations. 
