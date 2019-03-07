@@ -56,6 +56,13 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="imp-lifecycle/onboard.md">Onboarding a project</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
 
+<h3><a href="get-started/one-version">One Version</a></h3>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software lifecycle policy - Cloud</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software lifecycle policy - On-premises</a></p>
+<p><a href="get-started/whats-new-changed.md">What's new or changed</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, updates, and hotfixe</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Apply updates to cloud environment</a></p>
+
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
