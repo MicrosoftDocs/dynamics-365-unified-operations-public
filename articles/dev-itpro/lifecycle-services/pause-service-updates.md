@@ -59,7 +59,7 @@ If you decide to pause updates, you have two options:
 - Pause updates only to your production environment.
 - Pause updates to both your sandbox environment and your production environment.
 
-You can pause a maximum of two continuous updates at a time. (According to other information that is communicated to you, you can pause updates for up to three months. These two statements are consistent, because three months correspond to two updates.) For example, if you're using version 8.1.3, you can pause update version 10.0.0 and update version 10.0.1. However, you can't pause update version 10.0.2.
+You can pause a maximum of two continuous updates at a time. (According to other information that is communicated to you, you can pause updates for up to three months. These two statements are consistent, because three months correspond to two updates.) For example, if you're using version 8.1.3, you can pause update version 10.0.0 and update version 10.0.1. However, you can't pause update version 10.0.2. In addition, in the month of April, you can pause up to next two updates. However, you will not be able to pause updates scheduled for July, August and later. 
 
 > [!NOTE]
 > If you pause updates to your sandbox environment, updates are automatically paused for your production environment too, because Microsoft always updates configured sandbox environments before production environments.
