@@ -121,25 +121,30 @@ To update your existing template, follow these steps.
        [![Advanced Query button](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
 2. Add the following mappings.
-
+    
     [![Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
-    1. Select the **Advanced Query and Filtering** link next to the **Search** field.  
+    1. cdm_jobpositionnumber cdm_jobspositionnumb... = POSITIONID
+       cdm_parentjobpositionid.cdm-jobpositionnumb... = PARENTPOSITIONID
+       cdm_validfrom cdm_validfrom = VALIDFROM
+       cdm_validto cdm_validto = VALIDTO
+       
+    2. Select the **Advanced Query and Filtering** link next to the **Search** field.  
 
-    2. Find the **cdm_parentjobpositionid.cdm_jobpositionnumber** column, and select the down arrow button on the right side of it.
+    3. Find the **cdm_parentjobpositionid.cdm_jobpositionnumber** column, and select the down arrow button on the right side of it.
 
-    3. In the dialog box that appears, select **Remove empty**.
+    4. In the dialog box that appears, select **Remove empty**.
 
-    4. Select **Add column \> Add conditional column** to add a default value transform for HIERARCHYTYPENAME.
+    5. Select **Add column \> Add conditional column** to add a default value transform for HIERARCHYTYPENAME.
 
         [![Add conditional column command](./media/Add-column.png)](./media/Add-column.png)
 
-    5. In the **Add conditional column** dialog box, enter **HIERARCHYTYPENAME** as the name of the new column.
-    6. In the **If** part of the condition, select any field, use **equal to** as the relationship, and enter any value. In the ***Then** and **Otherwise** parts of the condition, specify what the default value should be. In this case, enter **Line** in both parts.
+    6. In the **Add conditional column** dialog box, enter **HIERARCHYTYPENAME** as the name of the new column.
+    7. In the **If** part of the condition, select any field, use **equal to** as the relationship, and enter any value. In the ***Then** and **Otherwise** parts of the condition, specify what the default value should be. In this case, enter **Line** in both parts.
 
         [![Add conditional column dialog box](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 
-    7. Select **OK** to close the **Advanced Query and Filtering** dialog box.
-    8. On the **Mapping task** page, select the new column as the source to create another mapping for HIERARCHYTYPENAME.
+    8. Select **OK** to close the **Advanced Query and Filtering** dialog box.
+    9. On the **Mapping task** page, select the new column as the source to create another mapping for HIERARCHYTYPENAME.
 
         [![Mapping](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
