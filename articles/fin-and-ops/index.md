@@ -57,8 +57,8 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
 
 <h3><a href="get-started/one-version.md">One Version</a></h3>
-<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software lifecycle policy - Cloud</a></p>
-<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software lifecycle policy - On-premises</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software lifecycle policy: Cloud</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software lifecycle policy: On-premises</a></p>
 <p><a href="get-started/whats-new-changed.md">What's new or changed</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, updates, and hotfixes</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Apply updates to cloud environments</a></p>
