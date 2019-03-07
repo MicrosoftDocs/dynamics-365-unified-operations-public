@@ -235,13 +235,13 @@ On the **Upgrade** menu, select **Data upgrade**. Your original sandbox environm
 
 Next, the data upgrade package for your target version will be automatically applied. The time that is required to apply the data upgrade package varies, depending on the size of your database.
 
-**If the data upgrade fails** you must select **Rollback** on the **Upgrade** menu to restore your database to the point that it was at before the data upgrade began. Before you do a rollback, we highly recommend that you download the logs and determine the root cause of the failure, to help guarantee that your next Data Upgrade execution will go more smoothly.
+If the data upgrade fails you must select **Rollback** on the **Upgrade** menu to restore your database to the point that it was at before the data upgrade began. Before you do a rollback, we highly recommend that you download the logs and determine the root cause of the failure, to help guarantee that your next Data Upgrade execution will go more smoothly.
 
 #### Upgrade days remaining
 Because the self-service upgrade process provides a parallel environment at no additional cost to you, there is a time limit on how long this environment can be used.  Currently, this time limit is set to 10 calendar days and begins at the very moment that you use the **Maintain** menu -> **Upgrade** button to start the process.
 
-*What happens when the time runs out?*
-<img src="media/UpgradeAutomation/Upgrade_Timer.png" width="500px" alt="Upgrade must be performed in 10 calendar days" />
+*What happens when the time runs out?* <br/>
+<img src="media/UpgradeAutomation/Upgrade_Timer.png" width="300px" alt="Upgrade must be performed in 10 calendar days" />
 
 There are two possible outcomes when the timer reaches zero:
 1. If you have not yet started the Data Upgrade step, then the **new environment** will be queued for deletion. In this scenario, the upgrade in progress environment was provisioned, and optionally had customizations and packages applied but no data was upgraded and the original environment never incurred downtime.  
