@@ -1170,3 +1170,15 @@ To resolve this issue, follow these steps:
     2. Delete fabric:/Bootstrapper application. 
     3. Unprovision AXBootstrapperAppType type.
 7.	Redeploy and retry from LCS.
+
+
+## SQL Server 2016 service pack 2 recommended for Reporting Services instances
+
+When going through LCS servicing operations, you may receive the following error:
+
+*The process cannot access the file 'C:\Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\bin\Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll' because it is being used by another process.*
+
+This is due to Reporting Services having a lock on a Dynamics .dll file. At this time it is recommended to have SQL Server 2016 service pack 2 installed on Reporting Services instances. 
+
+> [!Note]
+> You must have service pack 2 intalled, without additonal cumulative updates or hotfixes.
