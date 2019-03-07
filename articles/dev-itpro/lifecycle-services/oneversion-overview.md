@@ -35,37 +35,49 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/coming-soon.md)]
 
-The set of topics below are aimed at providing the information related to service updates for Dynamics 365 for Finance and Operations **8.1 and above** for the cloud releases.
+The following set of topics provides information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later** for the cloud releases.
 
-- The release cadence and process is detailed  in the [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) topic.
-- [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) topic enumerates the details the service updates, availability and end of service.
-- The [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md) topic is available for questions in the process, tools, planning, and Retail service updates.
+- [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
+- [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This topic provides information about the service updates, availability, and end of service.
+- [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md) – This topic answers questions about the update process, tools, planning, and Retail service updates.
 
-The service update experience is composed of 4 distinct steps: 
+The experience for service updates consists of four distinct steps: 
 
-- Onboard
-- Notify
-- Execute
-- Validate
+1. Onboard
+2. Notify
+3. Execute
+4. Validate
 
-Each of these and related topics are enumerated below.
+The rest of this topic describes each step and provides links to related topics.
 
 ## Onboard
-The customer can choose the maintenance window based on business constraints using the settings shown in the screen shot below. An upcoming calendar is available to help with planning.  New features are opt-in only and enabled by the user. All updates are applied on the user acceptance environment followed by production, giving time to the customer to validate as required. The customer can select the environment to update. There is also the ability to pause the update for up-to 3 months.
 
- [![Queries](./media/UpdateSettings-ConfigureUpdates.JPG)](./media/UpdateSettings-ConfigureUpdates.JPG)
+Customers can select a maintenance window, based on their business constraints. In Microsoft Dynamics Lifecycle Services (LCS), use the fields in the **Production environment update cadence** section on the **Update settings** tab of the **Project settings** page, as shown in the following image. A calendar of upcoming updates is available to help you plan ahead.
+
+[![Update settings tab on the Project settings page](./media/UpdateSettings-ConfigureUpdates.JPG)](./media/UpdateSettings-ConfigureUpdates.JPG)
+
+Users must opt in to new features and turn them on. All updates are applied first to the user acceptance testing (UAT) environment and then to the production environment. Therefore, customers have time to do any validation that is required. Customers can select the environment that is updated. They can also pause an update for up to three months.
 
 ## Notify
-To plan ahead and understand what's changing the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to look ahead and review the features up-to 3 months in advance.  The [What's new](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) topics will carry specific details about the specific month's update. An email notification will be sent 5 days in advance and a notification will pop-up in LCS just prior to an update as shown below.
 
-[![Queries](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
+[Release notes](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to help you plan ahead and understand what is changing. You can learn about upcoming features up to three months in advance. The [What's new](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) topics provide details about the updates for specific months.
+
+Additionally, a notification email will be sent five days in advance, and a notification will appear in LCS just before an update, as shown in the following illustration.
+
+[![Upcoming updates notification in LCS](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
 
 ## Execute
-After the notification, Microsoft will apply the update (**auto update**) in the designated maintenance window. This operation will be followed by an email notification indicating the status of the update. The ability to **self-update** will also be available through LCS using the standard update experience. Fore more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). Opportunity to update the sandbox and other environments early is available through the **First release program** through [http://experience.dynamics.com](http://experience.dynamics.com).
 
-[![Queries](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
+After notifications have been sent, Microsoft will apply the update (**auto update**) during the designated maintenance window. After this operation is completed, a notification email will be sent to indicate the status of the update. Customers will also be able to **self-update** by using the standard update experience in LCS. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). 
+
+Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments early through [http://experience.dynamics.com](http://experience.dynamics.com).
+
+[![Apply updates command on the Maintain menu in LCS](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
 
 ## Validate
-Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no-code automation test tool for business process testing is available. For more information, see [Create user acceptance test libraries by using task recordings and BPM](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). Several customers have data integrations that are external and internal. It's recommended that the [Data task automation tool](../data-entities/data-task-automation.md) be used to test these scenarios.
 
-[![Queries](./media/TestAutomation.png)](./media/TestAutomation.png)
+After an update is completed in the UAT environment, a basic business process test validation can be completed. To support this effort, a no-code automation test tool for business process testing is available. For more information, see [Create user acceptance test libraries by using task recordings and BPM](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). 
+
+Some customers have both external data integrations and internal data integrations. We recommend that these customers use the [Data task automation tool](../data-entities/data-task-automation.md) for testing.
+
+[![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
