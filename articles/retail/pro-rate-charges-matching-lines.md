@@ -47,7 +47,7 @@ In versions of Microsoft Dynamics 365 for Retail that are earlier than version 1
 
 For example, header-level auto-charges are defined for mode of delivery **99** and mode of delivery **11**. A sales order is created, and mode of delivery **99** is defined on the order header. However, some of the sale lines are set up so that they're shipped by using mode of delivery **11**. In this case, only the header-level charges that are linked to mode of delivery **99** are considered and applied to the sales order.
 
-In all in-market versions of Retail, the header-level charges have an additional feature that lets you define a [tiered charge configuration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) that is based on the order value. For example, if the order value is between $50.00 and $200.00, an organization might want to charge a freight charge of $5.00. However, if the order value is between $200.01 and $500.00, the freight charge might be $4.00.
+In Dynamics 365 for Retail, the header-level charges have an additional feature that lets you define a [tiered charge configuration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) that is based on the order value. For example, if the order value is between $50.00 and $200.00, an organization might want to charge a freight charge of $5.00. However, if the order value is between $200.01 and $500.00, the freight charge might be $4.00.
 
 Some organizations want the benefits of the tiered charge calculation that is provided with header-level charges. However, in scenarios that involve mixed modes of delivery, they also want to make sure that the charges that are calculated are based on a match with the mode of delivery that is defined on each sales line.
 
@@ -139,7 +139,9 @@ Because the auto-charge configuration is set to prorate to matching sales lines,
     - Total retail product value = $15
     - **Charge value = $0** (No auto-charges have been configured for this combination of a customer and a mode of delivery.)
 
-    <!-- Insert new screen shot(s) here -->
+![Delivery mode 11 charges fall into the highlighted tier](media/step2mode11.png)
+
+![Delivery mode 99 charges fall into the highlighted tier](media/step2mode99.png)
 
 3. The system calculates the charge value that should be applied to each line, based on proration logic that considers the proportional value of the line in relation to the group's total product value.
 
