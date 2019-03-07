@@ -61,11 +61,11 @@ To plan ahead and understand what's changing the [Release notes](https://docs.mi
 [![Queries](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
 
 ## Execute
-After the notification, Microsoft will apply the update (**auto update**) in the designated maintenance window. This operation will be followed by an email notification indicating the status of the update. The ability to **self-update** will also be available through LCS using the standard update experience. \&lt;add link\&gt; Opportunity to update the sandbox and other environments early is available through the **First release program** through [http://experience.dynamics.com](http://experience.dynamics.com).
+After the notification, Microsoft will apply the update (**auto update**) in the designated maintenance window. This operation will be followed by an email notification indicating the status of the update. The ability to **self-update** will also be available through LCS using the standard update experience. Fore more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). Opportunity to update the sandbox and other environments early is available through the **First release program** through [http://experience.dynamics.com](http://experience.dynamics.com).
 
 [![Queries](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
 
 ## Validate
-Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no-code automation test tool for business process testing is available\&lt;link\&gt;. Several customers have data integrations that are external and internal. It's recommended that the [Data task automation tool[../data-entities/data-task-automation.md) be used to test these scenarios.
+Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no-code automation test tool for business process testing is available. For more information, see [Regression Suite Automation Tool](https://www.microsoft.com/en-us/download/details.aspx?id=57357). Several customers have data integrations that are external and internal. It's recommended that the [Data task automation tool[../data-entities/data-task-automation.md) be used to test these scenarios.
 
 [![Queries](./media/TestAutomation.png)](./media/TestAutomation.png)
