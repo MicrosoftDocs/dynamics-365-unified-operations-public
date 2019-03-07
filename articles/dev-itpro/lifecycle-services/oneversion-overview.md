@@ -66,6 +66,6 @@ After the notification, Microsoft will apply the update (**auto update**) in the
 [![Queries](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
 
 ## Validate
-Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no-code automation test tool for business process testing is available. For more information, see [Regression Suite Automation Tool](https://www.microsoft.com/en-us/download/details.aspx?id=57357). Several customers have data integrations that are external and internal. It's recommended that the [Data task automation tool](../data-entities/data-task-automation.md) be used to test these scenarios.
+Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no-code automation test tool for business process testing is available. For more information, see [Create user acceptance test libraries by using task recordings and BPM](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). Several customers have data integrations that are external and internal. It's recommended that the [Data task automation tool](../data-entities/data-task-automation.md) be used to test these scenarios.
 
 [![Queries](./media/TestAutomation.png)](./media/TestAutomation.png)
