@@ -60,10 +60,10 @@ To plan ahead and understand what&#39;s changing the [release notes](https://doc
 
 Post the notification Microsoft will apply the update( **auto update** ) in the designated maintenance window. This operation will be followed by an email notification indicating the status of the update. The ability to **self-update** will also be available through LCS using the standard update experience. \&lt;add link\&gt; Opportunity to update the sandbox and other environments early is available through the **First release program** through [http://experience.dynamics.com](http://experience.dynamics.com).
 
-[![Queries](./media/Self-Update-Execute.JPG)](./media/Self-Update-Execute.JPG)
+[![Queries](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
 
 **Validate**
 
 Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no code automation test tool for business process testing is available\&lt;link\&gt;. Several customers have data integrations that are external and internal. It&#39;s recommended that the Data Task Automation tool\&lt;link\&gt; be used to test these scenarios.
 
-[![Queries](./media/TestAutomation.JPG)](./media/TestAutomation.JPG)
+[![Queries](./media/TestAutomation.png)](./media/TestAutomation.png)
