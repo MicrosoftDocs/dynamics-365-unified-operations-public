@@ -2,7 +2,7 @@
 # required metadata
 
 title: One Version overview
-description:This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of ONE Version.
+description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: meeram
 manager: AnnBe
 ms.date: 03/07/2019
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/coming-soon.md)]
 
-The following set of topics provides information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later**. This is applicable for cloud releases only.
+The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later**. This is applicable for cloud releases only.
 
 - [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
 - [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This topic provides information about the service updates, availability, and end of service.
