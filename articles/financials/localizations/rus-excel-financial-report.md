@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure financial reports in Excel (Russia)
-description: This topic walks you through creating a new Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
+description: This topic walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
 author: Anasyash
 ms.date: 03/01/2019
 ms.topic: article
@@ -31,152 +31,125 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating financial report in Excel format.
+This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.
 
-Before reviewing this topic, you should review the topic [Create Electronic reporting (ER) configurations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/fin-and-ops/toc.json) and all topics behind this one.
+Before you read this topic, you should review [Create Electronic reporting (ER) configurations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/fin-and-ops/toc.json) and all the topics that are behind this topic.
 
+## Set up a financial report
 
+Set up a financial report so that it has the list of financial report cells and rules for calculating financial reports cells.
 
-## Set up Financial report
+1. Upload data management package settings. For this example, upload the **RU Accounting reporting 5.07 (2016).zip** data management package settings as described in [Accounting reporting in electronic format](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-act-reporting/articles/financials/localizations/rus-accounting-reporting.md).
+2. Go to **General ledger \> Financial reports setup \> Financial reports**.
+3. Select the line that has the value **Баланс** in the **Report code** column.
+4. Select **Setup**.
+5. On the **Requisites setup** page, set up calculation rules for report cells, as described in [Financial reporting (Russia)](rus-financial-reports#set-up-calculation-rules-for-report-cells.md).
 
-Set up a financial report with the list of financial report cells and rules for calculation of financial reports cells.
+## Create an Excel template for the financial report
 
-1.  As example, upload data management package settings **RU Accounting reporting 5.07 (2016).zip** as described in the topic [Accounting reporting in electronic format](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-act-reporting/articles/financials/localizations/rus-accounting-reporting.md).
+Create an Excel template for your financial report. At a minimum, you should assign names to all the Excel cells that should have values on the report that is generated.
 
-2.  Go to **General ledger \> Financial reports setup \> Financial reports**. Click on the line with value *Баланс* in the column **Code**.
+For an example, download the [Excel template example for a Russian balance sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/BalancesheetRussia).
 
-3.  Click **Setup**. On the page **Requisites setup**, set up calculation rules for report cells as described in the topic [Financial reporting (Russia)](rus-financial-reports#set-up-calculation-rules-for-report-cells.md)
+## Create an ER configuration for the financial report in Excel format
 
+Create an ER configuration format that is based on the **Financial reports model** ER model.
 
-## Create Excel template for financial report
+Before you complete this procedure, see [ER Design a configuration for generating reports in OPENXML format (November 2016)](../../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json) for information about how to set up an ER configuration that generates a report in Excel format.
 
-Create Excel template for your financial report. As minimum, you should assign names to all Excel cells which should have values in the generated report.
+1. Download the latest version of the following ER configurations:
 
-As an example, download the Excel template example for a Russian balance sheet from the following location: [balance_sheet_template_russia.xlsx](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/BalancesheetRussia)
+    - Financial reports model
+    - Financial reports model mapping (RU)
+    - Balance sheet format Excel example (RU)
 
-## Create ER configuration for financial report in Excel
+    For instructions, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-Create ER configuration format based on ER model **Financial reports model**.
+2. Go to **Workspaces \> Electronic reporting**.
+3. Select the **Reporting configurations** tile.
+4. Create a format for a financial report in Excel format:
 
-Before going to next steps, learn how to set up ER configuration which generates the report in Excel format, in the topic [ER Design a configuration for generating reports in OPENXML format (November 2016)](../../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
-
-1.  Download the latest version of the Electronic reporting (ER) configurations:
-
-  -   Financial reports model
-  -   Financial reports model mapping (RU)
-  -   Balance sheet format Excel example (RU)
-
-For Fix downloading instructions see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
-
-2.  Go to **Workspaces \> Electronic reporting**. Click **Reporting configurations**.
-
-3.  Learn how to create a new format for financial report in Excel.
-
-    1.  Select **Financial reports model** configuration
-
-    2.  On the Action Pane click **Create configuration \> Format based on data model Financial reports model**. Give it a name.
-
-    3.  In the **Format type** field, select **Excel**
-
-    4.  In the **Data model definition**, select **Financial report.**
-
-    5.  Click **Create configuration.**
-
-    6.  Select created configuration and click **Designer**.
-
-    7.  In the **Import from Excel** dialog box, click **Import \> Import from Excel**. Click **Add template.** Select the Excel file **Balance sheet.xls**
-
-    8.  Select “Yes” in the **Create Excel Sheet format element**
-
-    9.  Click **OK**. Review the cells created from the Excel template names:
+    1. On the **Configurations** page, select the **Financial reports model** ER configuration.
+    2. On the Action Pane, select **Create configuration \> Format based on data model Financial reports model**.
+    3. Enter a name.
+    4. In the **Format type** field, select **Excel**.
+    5. In the **Data model definition** field, select **Financial report**.
+    6. Select **Create configuration**.
+    7. Select the new configuration, and then, on the Action Pane, select **Designer**.
+    8. On the Action Pane, on the **Import** tab, select **Import from Excel**.
+    9. In the **Import from Excel** dialog box, select **Add template**, and then select the **Balance sheet.xls** Excel file.
+    10. Set the **Create Excel Sheet format element** option to **Yes**.
+    11. Select **OK**.
+    12. Review the cells that are created from the names in the Excel template.
 
         ![Format mapping cells](media/rus-format-designer-mapping.jpg)
 
-    10. Close the page.
-    
+    13. Close the page.
 
-5.  Learn how ER format **Balance sheet format Excel example (RU)** is configured.
+5. Configure the **Balance sheet format Excel example (RU)** ER format:
 
-    1.  Select **Balance sheet format Excel example (RU)** ER configuration and click **Designer**.
+    1. On the **Configurations** page, select the **Balance sheet format Excel example (RU)** ER configuration, and then, on the Action Pane, select **Designer**.
+    2. Expand the **Excel = "Balance sheet"** format element and then the **Sheet\<стр.1_2\>** format element. Review all cells that will contain data in the output for the financial report.
+    3. On the **Mapping** tab, review the elements of the **Financial reports model** that are sources for financial report cells.
+    4. Review the cells from **DD** through **PrevPrevYear** (**DD**, **MM**, **YYYY**, **Company name**, and so on). Make sure that they are mapped to model elements from the **Header** group that contains various information about the organization and report.
 
-    2.  Expand format elements **Excel = "Balance sheet"** and **Sheet\<стр.1_2\>.** Review all cells which will contain data in the financial report output
-
-    3.  Click tab **Mapping**. Review Financial reports model elements which are sources for financial report cells.
-
-    4.  Review that cells **DD, MM, YYYY, Company name**, … etc. up to **PrevPrevYear** are mapped to various Model elements from the group **Header** which contains various information about organization and report.
-
-        Note. If your Financial report contains any information about organization which is not in scope **Financial reports model**, you could do the following:
-
-        -   Create format User input parameter in case missed data is external to the Dynamics 365 for Finance and operations
-
-        -   Create a derived model based on the **Financial reports model**, add new model elements. Create a derived model mapping based on **Financial reports model mapping** and bind new model elements to Dynamics 365 for Finance and operations data sources
-
-        Find more details about how to create ER data models in the topic: [ER Design domain specific data model](../../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
-
-        Find more details about how to map data model elements to data sources, in the topics:
+        > [!NOTE]
+        > If any of the information about the organization on your financial report isn't in scope **Financial reports model**, you can follow these steps:
+        >
+        > 1. If the missed data is external to Microsoft Dynamics 365 for Finance and Operations, create format User input parameter.
+        > 2. Create a derived model that is based on the **Financial reports model**, and add new model elements. Then create a derived model mapping that is based on **Financial reports model mapping**, and bind new model elements to Finance and Operations data sources.
+        >
+        > For more information about how to create ER data models, see [ER Design domain specific data model](../../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json).
+ 
+        For more information about how to map data model elements to data sources, see the following topics:
 
         - [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
-
         - [ER Map data model to selected data sources](../../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
-        
 
-    5. Review that cells where the financial report values are exported, for example, *АктивВнеОбАНематАктПояснения*, *АктивВнеОбАНематАктСумОтч*, *АктивВнеОбАНематАктСумПрдщ*, *АктивВнеОбАНематАктСумПрдшв* are mapped to the calculated field: **Calculations.'\$Values'("\<Input parameter = Cell name\>").Value**, or **Calculations.'\$Values'("\<Input parameter = Cell code\>").Text**
-       The calculated field **Calculations.'\$Values'** contains the value of the financial report cell with code equals to the “Input parameter”.
+    5. Review the cells that the financial report values are exported to. For example, the **АктивВнеОбАНематАктПояснения**, **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв** cells are mapped to the following calculated field: **Calculations.'\$Values'("\<Input parameter = Cell name\>").Value** or **Calculations.'\$Values'("\<Input parameter = Cell code\>").Text**.
 
-       Find more details about the Financial reports model in the topic [Configure ER to use the results of financial report calculations](rus-financial-reports#configure-er-to-use-the-results-of-financial-report-calculations.md)
-       
+        The **Calculations.'\$Values'** calculated field contains the value of the financial report cell that has a code that equals the "Input parameter."
 
-6. Learn how to quickly bind the calculated values of financial report cells to the ER format cells elements.
+        For more information about the Financial reports model, see [Configure ER to use the results of financial report calculations](rus-financial-reports#configure-er-to-use-the-results-of-financial-report-calculations.md).
 
-    1.  Click on the ER format cell *АктивВнеОбАНематАктПояснения*. Click **Unbind**
+5. Bind the calculated values of financial report cells to elements of the ER format cells:
 
-    2.  Repeate step 1. for the following ER format cells: *АктивВнеОбАНематАктСумОтч*, *АктивВнеОбАНематАктСумПрдщ*, *АктивВнеОбАНематАктСумПрдшв*
+    1. Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
+    2. Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
+    3. For all four ER format cells, on the **Format** tab, enter a value in the **Name** field. The value of the **Name** field must equal the value of the **Cell code** field in the financial report. For this example, the value that you enter in the **Name** field should equal the value of the **Excel range** field: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, or **АктивВнеОбАНематАктСумПрдшв**.
 
-    3. Click **Format**. Enter the value in the field **Name** for all 4 cell. Value in the field **Name** must be equal to the value in the field **Cell code** in the financial report. In this example, enter to the **Name** field the value which is equal to the value in the field **Excel range**: *АктивВнеОбАНематАктСумОтч*, *АктивВнеОбАНематАктСумПрдщ*, *АктивВнеОбАНематАктСумПрдшв*
+        ![Format mapping field name](media/rus-format-designer-format.jpg)
 
+    4. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
+    5. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
 
-![Format mapping field name](media/rus-format-designer-format.jpg)
+        ![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
 
+    6. On the **Mapping** tab, select the **Value** element.
+    7. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
+    8. Repeat the previous two steps for the other two Excel cells that you unbound earlier.
 
+## Run the financial report format
 
-   4.  Click **Mapping**. Expand the container **Calculations**, expand the calculated field **\$Values**, click on the element **Text**.
+You can configure the Electronic messages feature to run any ER configuration. For more information, see [Configure electronic messages to generate the financial report and store the results](rus-financial-reports#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results.md).
 
-   5.  In the list of Excel format cells, click on the cell *АктивВнеОбАНематАктПояснения*. Click **Bind**
+To run the ER format that is based on the **Financial reports model**, follow these steps.
 
-![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
+1. Go to **General ledger \> Inquiries and reports \> Financial reports (Russia)**.
+2. In the **Financial reports (Russia)** dialog box, in the **Format mapping** field, select the ER format that should be run. For example, select **Balance sheet format Excel example (RU)**.
+3. Select **OK**.
+4. In the **Electronic report parameters** dialog box, define the report parameters.
 
+    | Field                                                            | Description |
+    |------------------------------------------------------------------|-------------|
+    | Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory. |
+    | To date                                                          | Enter the base date of the financial report. |
+    | Approval date                                                    | Enter the approval date of the financial report. |
+    | Reporting date                                                   | Enter the reporting date for the corrective report. |
+    | Economic activity type code                                      | Enter the economic activity type code ("ОКВЭД"). |
+    | Organizational form code                                         | Enter the organizational form code ("ОКОПФ"). |
+    | Ownership form code                                              | Enter the ownership form code ("ОКФС"). |
+    | Report                                                           | Select the financial report that should be calculated. For this example, select **Баланс**. |
 
-
-   6.  On the **Mapping** tab, click on the element **Value**
-
-   7.  In the list of Excel format cells, click on the cell *АктивВнеОбАНематАктСумОтч*. Click **Bind**
-
-   8.  Repeat steps 5.6-5.7 for other 2 Excel cells which were unbounded on step 5.2
-
-
-## Run financial report format
-
-You can configure Electronic messages feature to run any ER configuration. Find more details in the topic [Configure electronic messages to generate the financial report and store the results](rus-financial-reports#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results.md)
-
-To run the ER format which is based on the **Financial reports model**, do the following:
-
-1.  Go to **General ledger \> Inquiries and reports \> Financial reports (Russia)**.
-
-2.  In the **Financial reports (Russia)** dialog box, in the field **Format mapping**, select the ER format which should be run.
-
-3.  As example, select the ER format **Balance sheet format Excel example (RU)**. Click **OK**.
-
-4.  In the dialog box **Electronic report parameters** define the report parameters:
-
-| **Field**    | **Description**  |
-|---------------|-----------------|
-| Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the Signatory          |
-| To date                                                          | Enter the base date for the financial report  |
-| Approval date                                                    | Enter the approval date of the financial report  |
-| Reporting date                                                   | Enter the reporting date for corrective report |
-| Economic activity type code                                      | Enter the Economic activity type code (“ОКВЭД”) |
-| Organizational form code                                         | Enter the Organizational form code (“ОКОПФ”)  |
-| Ownership form code                                              | Enter the Ownership form code (“ОКФС”)         |
-| Report                                                           | Select the financial report which should be calculated. In this example, select “Баланс” |
-
-5.  Click **OK**. Review the generated Excel report for Balance sheet.
+5. Select **OK**.
+6. Review the Excel report that is generated.
