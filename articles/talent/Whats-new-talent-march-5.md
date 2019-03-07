@@ -44,9 +44,14 @@ In Attract there are multiple fields that are Option Sets within CDS. We are beg
 [!Important] The job posting to LinkedIn functionality requires the use of the Employment type and Seniority type field in the job details form. The default values in these fields are supported by LinkedIn and are displayed when the job is posted. Therefore, if you are posting jobs to LinkedIn and you modify the existing option set values for these fields, the job will still post, but LinkedIn will not display the custom Employment type and Seniority type values.
 
 ## Changes in Onboarding
-There are minor bug fixes included with this release.
 
-## Changes Core HR
+### Private Preview for Onboard Teams
+Share and collaborate on templates across your entire organization. [Details:](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams)
+
+### Private Preview for Assignee Placeholders
+Enrich your templates by assigning activities to roles instead of individuals. Roles are then assigned to individuals at the time of guide creation. [Details:](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles)
+
+## Changes in Core HR
 **Build 8.1.2178**
 
 ### Configure workflow to auto-approve or follow workflow when HR or line manager submits or updates time off requests
