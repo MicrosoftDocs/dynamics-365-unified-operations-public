@@ -139,9 +139,9 @@ Because the auto-charge configuration is set to prorate to matching sales lines,
     - Total retail product value = $15
     - **Charge value = $0** (No auto-charges have been configured for this combination of a customer and a mode of delivery.)
 
-![Delivery mode 11 charges fall into the highlighted tier](media/step2mode11.png)
+    ![Delivery mode 11 charges fall into the highlighted tier](media/step2mode11.png)
 
-![Delivery mode 99 charges fall into the highlighted tier](media/step2mode99.png)
+    ![Delivery mode 99 charges fall into the highlighted tier](media/step2mode99.png)
 
 3. The system calculates the charge value that should be applied to each line, based on proration logic that considers the proportional value of the line in relation to the group's total product value.
 
