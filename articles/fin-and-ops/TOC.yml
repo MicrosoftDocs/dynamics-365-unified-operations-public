@@ -34,12 +34,6 @@
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
-      - name: One Version service updates FAQ
-        href: get-started/one-version.md
-      - name: Software lifecycle policy and cloud releases
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: Software lifecycle policy and on-premises releases
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
         href: get-started/mainstream-support-ax-2009-2012.md
       - name: Removed or deprecated features
