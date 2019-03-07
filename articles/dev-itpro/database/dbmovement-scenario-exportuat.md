@@ -44,6 +44,9 @@ In this tutorial, you will learn how to:
 
 As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions or develop new features and reports by using realistic datasets.
 
+## Known limitations
+Due to recent restrictions by the Azure SQL platform, it is not recommended to export your database if it is larger than 200GB.  If you must do this, the recommended option is to use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until Azure SQL can support larger exports.  Note that this recommendation is for Export, and not for Refresh which can support databases up to 4TB in size.
+
 ## Prerequisites
 
 To do a refresh operation, you must have your production environment deployed, or you must have a minimum of two standard UAT environments. To complete this tutorial, you must have a developer environment deployed.

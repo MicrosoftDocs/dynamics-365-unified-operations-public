@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Database movement for debugging and diagnostics tutorial
+title: Debugging a copy of the production database
 description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Database movement for debugging and diagnostics
+# Debugging a copy of the production database
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ To do a refresh operation, you must have your production environment deployed, o
 [!Important]
 - It is highly recommended to use a DevTest environment for debugging that will run the same code and business logic as is available in your UAT environment.  If you use multiple branches in version control we recommend that this DevTest environment used for debugging recent UAT or Production transactions is connected to the same branch you build packages for UAT and later Production.  This will eliminate any need for you to run a Database Sync between your DevTest environment and UAT database as the schema will be compatible.  Historically this is known as a Hotfix/Support environment as it is outside of your normal code promotion path.
 
-## Refresh the UAT environment
+## Refresh the UAT environment 
 
 This refresh operation will overwrite the UAT environment with the latest copy of the production database. To complete this step, follow the instructions in [Refresh for training purposes](dbmovement-scenario-general-refresh.md).
 
@@ -70,6 +70,9 @@ Once connected, open a query against the database and enter your IP address in t
 EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
 ```
 Transition back to your developer environment.  Open SSMS and attempt to connect with the same axdbadmin credential against the UAT database.  Verify that you can connect, before proceding with the next steps.
+
+> [!Note]
+> Each time a refresh is performed, the firewall whitelist is reset.  You will need to add your DevTest environments back to this database when needed in the future.
 
 ## Update a OneBox DevTest environment to connect to the UAT database
 In your developer environment, we will now update the web.config to change the database connection.  This will allow you to run your local code and binaries configured against the database from UAT.  
