@@ -95,13 +95,17 @@ Here is the list of requirements and conditions of operation for a database refr
 The database refresh process cannot be completed if the environment is running Platform update 12 or earlier. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
-The database refresh process (self-service or via service request) cannot be completed successfully if the version of Financial Reporting is different between the source and target environment. To resolve this issue, update both environments to have the latest version of Financial Reporting.
+The database refresh process (self-service or via service request) cannot be completed successfully if the version of Financial Reporting is lower in the target environment as compared to the source environment. To resolve this issue, update both environments to have the latest version of Financial Reporting.
 
-* Visit the **Asset Library** in your implementation project, and then click **Software deployable package**.
-* Click the **Import** button and find the latest Microsoft Dynamics Financial Reporting binary update package and select this for import.
-* Apply this package to both the source and target environments to ensure they are both using the latest version.
+For customers on 8.1 or newer:
+* Visit the **Update tiles** for your UAT environment.  Save the updates to your **Project asset library**.
+* Apply this package to your UAT environment.  
+* Verify that the error has been resolved.
 
-To check the version of Financial Reporter in your source and target environment, visit the **Show detailed version information** link on your Environment Details page in LCS.  This link is located next to the Application and Platform version information.  Once on the detailed version screen, search for the **MRApplicationService** service.  The target environment must be greater than or equal to the source environment.
+For customers on 8.0 or lower:
+* Visit the **Project asset library** and go to the Software deployable packages section.  Use the *Import* button to add the latest Financial Reporting Binaries asset to your project.
+* Apply this binary package to your UAT environment.
+* Verify that the error has been resolved.
 
 ### Incompatible application versions between source and target environments
 The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.  
