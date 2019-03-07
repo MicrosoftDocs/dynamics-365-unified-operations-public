@@ -61,12 +61,10 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software lifecycle policy - On-premises</a></p>
 <p><a href="get-started/whats-new-changed.md">What's new or changed</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, updates, and hotfixes</a></p>
-<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Apply updates to cloud environment</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Apply updates to cloud environments</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Configure service updates</a></p>
-<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Apply updates to cloud environment</a></p>
 <p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Pause service updates</a></p>
-<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Apply updates to cloud environment</a></p>
-<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Apply updates to cloud environment</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Get notified about service updates</a></p>
 
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
