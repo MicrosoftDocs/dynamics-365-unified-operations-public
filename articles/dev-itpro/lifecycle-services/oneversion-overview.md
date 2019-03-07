@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 24
 
 The set of topics below are aimed at providing the information related to **service updates for Dynamics 365 for Finance and Operations 8.1 and above** for the cloud releases.
 
-- The release cadence and process is detailed  in the [Standard and First release service updates]../../fin-and-ops/get-started/public-preview-releases.md) topic.
+- The release cadence and process is detailed  in the [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) topic.
 - [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) topic enumerates the details the service updates, availability and end of service.
 - The [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md) topic is available for questions in the process, tools, planning, and Retail service updates.
 
