@@ -66,6 +66,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Pause service updates</a></p>
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Get notified about service updates</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Data task automation</a></p>
+<p><a href="..dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Create user acceptance test libraries</a></p>
 
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
