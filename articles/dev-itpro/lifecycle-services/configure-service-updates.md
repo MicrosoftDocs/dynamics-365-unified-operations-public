@@ -67,8 +67,8 @@ Follow these steps to change your update settings.
         - **Select a day of the week:** Select the day in the week when you want to receive updates.
         - **Select a time slot:** Select the time slot when you want to receive updates.
 
-       > [!NOTE]
-       > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
+        > [!NOTE]
+        > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
 
  3. When you've finished setting the configuration options, select **Save**.
  
