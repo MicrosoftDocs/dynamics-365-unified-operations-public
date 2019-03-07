@@ -45,21 +45,21 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
-**Build 8.1.2163**
+Changes described in this secition apply to build number 8.1.2163
 
 ### Add a Custom fields menu item to System administration
 
 Navigation to the **Custom fields** menu has been added to the **System administration** workspace.
 
-### Hide the import and create option for new mobile applications
+### Hide the import and create options for new mobile applications
 
-Currently, new mobile apps can't be created in Talent. The option to create new mobile experiences has been removed from the menu.
+Currently, new mobile apps can't be created in Talent. The option to create new mobile experiences has been removed from the "Mobile app" menu.
 
 ### Variable Compensation Award (DMF entity)
 
 In this release, a **Variable Compensation Award** Data Management Framework (DMF) entity is now available for export.
 
-### UK addresses appear in Analytics as Swiss addresses
+### UK addresses appear in the personnel management analytics page as Swiss addresses
 
 In this release, addresses are shown by city. This release corrects issues where visualizations misrepresented an employee's location.
 
@@ -67,9 +67,9 @@ In this release, addresses are shown by city. This release corrects issues where
 
 A fix has been made in Microsoft Power BI to account for seniority dates that fall on February 29.
 
-### Employee Fixed Comp, Employee Variable Awards, Employee Variable Plans (enrollments) allow for custom fields
+### Employee fixed compensation, Employee variable awards, Employee variable plans (enrollments) allow for custom fields
 
-Custom fields can now be added for Employee Fixed Comp, Employee Variable Awards, and Employee Variable Plans (enrollments). You can now track more information about employee fixed and variable compensation plans, in addition to the information that is available by default. Custom fields can be entered and updated through either the user interface or through the entities that are provided.
+Custom fields can now be added for employee fixed Compensation, employee variable awards, and employee variable plans (enrollments). You can now track more information about employee fixed and variable compensation plans, in addition to the information that is available by default. Custom fields can be entered and updated through either the user interface or through the entities that are provided.
 
 ### Other miscellaneous bug fixes
 
@@ -79,7 +79,7 @@ This release includes other minor bug fixes.
 
 ### Advanced compensation security (Fixed and variable)
 
-In many organizations, compensation and benefits managers might have access only to specific compensation records. These records might be for executives or regional-based employees. This change will let Human resources (HR) manage and maintain the compensation plans for different employee populations in the organization. Security roles that can be assigned to fixed and variable plans will determine the access to those plans and the employee data that is related to them (for example, salary information and bonus records). Only the roles that have the specified access will be able to process compensation for those employees.
+In many organizations, compensation and benefits managers might have access only to specific compensation records. These records might be for executives or regional employees. This change will let Human resources (HR) manage and maintain the compensation plans for different employee populations in the organization. Security roles that can be assigned to fixed and variable plans will determine the access to those plans and the employee data that is related to them (for example, salary information and bonus records). Only the roles that have the specified access will be able to process compensation for those employees.
 
 ### Platform update 24
 
@@ -92,8 +92,7 @@ It's typical that employees who join an organization have a future start date. T
 ## Known issues
 
 ### Changes to the Core HR integration template (Talent Common Data Service for Apps to Finance and Operations)
-
-The template for Core HR has been updated to an Advanced Query template. Therefore, by default, the Advanced Query will be available for projects that are created by using this template. Additionally, any default mapping functions will be visible only in the Advanced Query editor. (Default mapping functions appear as "FN" in the mappings.)
+The template for Core HR has been updated to an "advanced query template". Therefore, by default, the advanced query will be available for projects that are created by using this template. Additionally, any default mapping functions will be visible only in the advanced query editor. (Default mapping functions appear as "FN" in the mappings.)
 
 For more information about mapping errors, see [What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
@@ -125,19 +124,13 @@ To update your existing template, follow these steps.
 
     [![Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
-    1. Select the **Advanced Query and Filtering** link next to the **Search** field.
-
-        [![Advanced Query and Filtering link](./media/Advanced-query-and-filtering.png)](./media/Advanced-query-and-filtering.png)
+    1. Select the **Advanced Query and Filtering** link next to the **Search** field.  
 
     2. Find the **cdm_parentjobpositionid.cdm_jobpositionnumber** column, and select the down arrow button on the right side of it.
 
-        [![Down arrow button for the cdm_parentjobpositionid.cdm_jobpositionnumber column](./media/Find-CDM-Parent.png)](./media/Find-CDM-Parent.png)
-
     3. In the dialog box that appears, select **Remove empty**.
 
-        [![Remove empty button](./media/Remove-empty.png)](./media/Remove-empty.png)
-
-    4. Select **Add column \> Add conditional column** to add a default Value Transform for HIERARCHYTYPENAME.
+    4. Select **Add column \> Add conditional column** to add a default value transform for HIERARCHYTYPENAME.
 
         [![Add conditional column command](./media/Add-column.png)](./media/Add-column.png)
 
