@@ -125,16 +125,16 @@ For more information about how to set up and use sales tax in Microsoft Dynamics
 ### Set up Retail stores
 
 On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
-    - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default retail customer.
-    - Enable the **Prices include sales tax** check box.
-    - Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-format text.
-    - Set the **Tax identification number (TIN)** field so that it includes the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-format text.
+  - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default retail customer.
+  - Enable the **Prices include sales tax** check box.
+  - Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-format text.
+  - Set the **Tax identification number (TIN)** field so that it includes the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-format text.
 
 ### Set up functionality profiles
 
 Set up POS functionality profiles:
-    - On the **Receipt numbering** FastTab, set up receipt numbering. 
-    - Create or update records for the **Sale**, **Sales order** and **Return** receipt transaction types.
+  - On the **Receipt numbering** FastTab, set up receipt numbering. 
+  - Create or update records for the **Sale**, **Sales order** and **Return** receipt transaction types.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
