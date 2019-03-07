@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/coming-soon.md)]
 
-The set of topics below are aimed at providing the information related to **service updates for Dynamics 365 for Finance and Operations 8.1 and above** for the cloud releases.
+The set of topics below are aimed at providing the information related to service updates for Dynamics 365 for Finance and Operations **8.1 and above** for the cloud releases.
 
 - The release cadence and process is detailed  in the [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) topic.
 - [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) topic enumerates the details the service updates, availability and end of service.
@@ -66,6 +66,6 @@ After the notification, Microsoft will apply the update (**auto update**) in the
 [![Queries](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
 
 ## Validate
-Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no-code automation test tool for business process testing is available\&lt;link\&gt;. Several customers have data integrations that are external and internal. It's recommended that the Data Task Automation tool\&lt;link\&gt; be used to test these scenarios.
+Once an update is complete on the user acceptance test environment, a basic business process test validation may be completed. To support this effort, a no-code automation test tool for business process testing is available\&lt;link\&gt;. Several customers have data integrations that are external and internal. It's recommended that the [Data task automation tool[../data-entities/data-task-automation.md) be used to test these scenarios.
 
 [![Queries](./media/TestAutomation.png)](./media/TestAutomation.png)
