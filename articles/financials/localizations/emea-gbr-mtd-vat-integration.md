@@ -112,6 +112,44 @@ To prepare Dynamics 365 for Finance and Operations to interoperate with MTD for 
 
 For more information about how to download Electronic reporting configurations from Lifecycle Services, refer to [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). 
 
+## Setup application specific parameters
+
+VAT declaration of the United Kingdom includes 9 boxes which must contain values calculated basing on tax transactions depending on a set of criteria like transaction direction, tax code, country code of tax code and tax type (item or service). User can influence on collection of tax transactions supposed for reporting in each box via **Application specific parameters**. For VAT declaration there is a **ReportFieldLookup** parameter for which the following result values are available:
+
+-	VATDue
+-	VATDueEC
+-	ECSupplies
+-	VATReclaimed
+-	Other.
+
+For each of these values user can define set of Sales tax codes together with classifier associated with direction of tax transaction and credit note identifier.
+Table below provides definition of classifier:
+
+| **Classifier value**       | **Condition**     |
+|-----------------|---------------------|
+| **PurchaseCreditNote**   | <li> Credit note <li> Tax direction = Sales tax receivable  |
+| **Purchase**   | <li> Not credit note <li> Tax direction = Sales tax receivable  |
+| **SalesCreditNote**   | <li> Credit note <li> Tax direction = Sales tax payable  |
+| **Sales**   | <li> Not credit note <li> Tax direction = Sales tax payable  |
+| **PurchaseExemptCreditNote**   | <li> Credit note <li> Tax direction = Tax-free purchase  |
+| **PurchaseExempt**   | <li> Not credit note <li> Tax direction = Tax-free purchase  |
+| **SalesExemptCreditNote**   | <li> Credit note <li> Tax direction = Tax-free sales  |
+| **SaleExempt**   | <li> Not credit note <li> Tax direction = Tax-free sales  |
+| **UseTaxCreditNote**   | <li> Credit note <li> Tax direction = Use tax  |
+| **UseTax**   | <li> Not credit note <li> Tax direction = Use tax  |
+| **PurchaseReverseChargeCreditNote**   | <li> Credit note <li> Tax direction = Sales tax receivable <li> ReverseCharge_W = Yes  |
+| **PurchaseReverseCharge**   | <li> Not credit note <li> Tax direction = Sales tax receivable <li> ReverseCharge_W = Yes |
+| **SalesReverseChargeCreditNote**   | <li> Credit note <li> Tax direction = Sales tax payable <li> ReverseCharge_W = Yes  |
+| **SalesReverseCharge**   | <li> Not credit note <li> Tax direction = Sales tax payable <li> ReverseCharge_W = Yes  |
+
+Before starting to use VAT Declaration JSON (UK) and VAT Declaration Excel (UK) formats it is required to set up **ReportFieldLookup** application specific parameter. Example of this setup can be downloaded from **Shared asset library** of LCS portal. Find “**UK MTD VAT ReportFieldLookup v1.xml**” file on **Data package** folder of Shared asset library and download it.
+
+To setup **ReportFieldLookup**application specific parameters in the system, open **Electronic reporting**, select **VAT Declaration JSON (UK)** format in the configurations’ tree, click **Configurations** > **Application specific parameters** > **Setup** on the Action pane. Select the version of the format you are going to use. If you want to use the example of setup, click **Import** button on the action pane and select previously downloaded file. If you want to define conditions manually, select **ReportFieldLookup** on **Lookups** fast tab and define criteria on **Conditions** fast tab. Example file can also be used as a starting point on setting up of conditions. When setup of condition is completed, change **State** field value to **Completed**, save and close the page.
+
+Important note! It is recommended to setup **Other** value as the last condition in the list. It is not used in **VAT Declaration JSON (UK)** format but must be set up “*Not blank*” for both criteria.
+
+Application specific parameters setup can be easily exported and imported from one version of a report to another as well as from one report to another when both reports have same structure of lookup field(s). Export your setup when it is ready and import it to **VAT Declaration Excel (UK)** format.
+
 ## Import a package of data entities that include predefined Electronic messages setup
 
 Setup of Electronic messages functionality for the purposes of MTD for VAT contains many steps, names of some predefined entities are used in the ER configurations. This is why it is important to use a set of predefined values delivered in a package of data entitled for the related tables.
