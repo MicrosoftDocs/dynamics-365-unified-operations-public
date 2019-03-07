@@ -88,6 +88,8 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="hr/manage-recruiting-process.md">Recruiting</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">US payroll</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Supply chain management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Inventory management</a></p>
@@ -99,8 +101,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Transportation management</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Analytics</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Business documents</a></p>
