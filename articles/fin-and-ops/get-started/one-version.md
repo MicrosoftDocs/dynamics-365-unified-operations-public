@@ -97,6 +97,9 @@ Users can update to the latest version using the tiles on the Environment detail
 
 ### How do I update the production environment to the same version after Microsoft updates the sandbox environment?
 
+> [!Important]
+> This section describes functionality that is not currently available. Functionality and features are subject to change.
+
 When Microsoft updates a sandbox environment, the package that is used for the update is saved in the project's asset library. The name of the package is prefixed by the words "Service Update." Because the package was already applied to the sandbox environment, you can mark this package as a Release Candidate. You can then go to the production environment and schedule to apply the package, just as you might schedule to apply any other update.
 
 ### What is the expected downtime?
