@@ -53,7 +53,7 @@ Navigation to the **Custom fields** menu has been added to the **System administ
 
 ### Hide the import and create options for new mobile applications
 
-Currently, new mobile apps can't be created in Talent. The option to create new mobile experiences has been removed from the "Mobile app" menu.
+Currently, new mobile apps can't be created in Talent. The option to create new mobile experiences has been removed from the **Mobile app** menu.
 
 ### Variable Compensation Award (DMF entity)
 
