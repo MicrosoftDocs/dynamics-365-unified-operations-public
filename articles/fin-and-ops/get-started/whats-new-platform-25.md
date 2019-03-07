@@ -49,9 +49,13 @@ Brief description of the feature and how it helps customers.  Then provide a lin
 ### PowerBI.com Report Pinning
 Take advantage of improved flexibility in customization options available in the web client for power users. Use built-in tooling to replace standard analytical reports embedded in the application with custom solutions hosted on PowerBI.com. With the latest Platform Update release, power users are able to replace the standard reports in application workspaces with reports hosted on PowerBI.com.  These updates are immediately made available to other users of the workspace replacing the standard solution. Additional options include the ability to revert back to the analytical reports that were originally released with the application.
 
-### Data Lake Integration
+### Entity store in Azure Data Lake (public preview)
+Entity store is an Operational Data warehouse that contains simplified transactional data for reporting with PowerBI. Now you can stage Entity store in your owun Azure Data Lake Storage (ADLS Gen2). You can use PowerBI.com as well as other Azure and third party tools to work with data. When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store.
 
-### Trickle feed support for Data Lake
+To enable this feature see the documentation here: https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake
+
+### Trickle feed support for Entity store in Azure Data Lake (public preview)
+When Entity store is staged in Azure Data Lake, you have the option to enable trickle feed updates. When trickle feed option is enabled, transactional data gets updated in your own Axure Data Lake as soon as they are committed in Dynamics 365 for Finance and Operations. Use this option to enable real-time reporting with transactional data using PowerBI.com and other tools
 
 ### Edit Analytical Workspace
 Empower users to author the reports they need right without relying on a developer. Using the latest Platform Update release, make non-disruptive enhancements to embedded application solutions. Power users are able to modify ready-made Analytical workspaces without leaving the client or using developer tools. Users who have specific security privileges can add or modify report visuals and add new pages to existing reports. The changes are applicable to all users viewing the report.
