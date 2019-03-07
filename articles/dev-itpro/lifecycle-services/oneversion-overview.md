@@ -2,7 +2,7 @@
 # required metadata
 
 title: One Version overview
-description: This topic gives an overview of the different experiences that encompass One Version.
+description:This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of ONE Version.
 author: meeram
 manager: AnnBe
 ms.date: 03/07/2019
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/coming-soon.md)]
 
-The following set of topics provides information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later** for the cloud releases.
+The following set of topics provides information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later**. This is applicable for cloud releases only.
 
 - [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
 - [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This topic provides information about the service updates, availability, and end of service.
@@ -70,14 +70,18 @@ Additionally, a notification email will be sent five days in advance, and a noti
 
 After notifications have been sent, Microsoft will apply the update (**auto update**) during the designated maintenance window. After this operation is completed, a notification email will be sent to indicate the status of the update. Customers will also be able to **self-update** by using the standard update experience in LCS. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). 
 
-Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments early through [http://experience.dynamics.com](http://experience.dynamics.com).
+Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments early. To sign up for the First release program, go to [http://experience.dynamics.com](http://experience.dynamics.com).
+
+Customers will also be able to **self-update** by using the standard update experience in LCS, as shown in the following illustration.
 
 [![Apply updates command on the Maintain menu in LCS](./media/Self-Update-Execute.jpg)](./media/Self-Update-Execute.jpg)
 
 ## Validate
 
-After an update is completed in the UAT environment, a basic business process test validation can be completed. To support this effort, a no-code automation test tool for business process testing is available. For more information, see [Create user acceptance test libraries by using task recordings and BPM](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). 
+After an update is completed in the UAT environment, a basic business process test can be executed to validate the environment. To support this effort, a no-code automation test tool for business process testing is available, as shown in the following illustration. For more information, see [Create user acceptance test libraries by using task recordings and BPM](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). 
+
+[![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
 
 Some customers have both external data integrations and internal data integrations. We recommend that these customers use the [Data task automation tool](../data-entities/data-task-automation.md) for testing.
 
-[![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
+
