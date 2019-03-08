@@ -103,10 +103,12 @@ An organization might have a set of skills that it urgently requires. These skil
 
 This template can be extended so that it can be used for any scenario that involves SharePoint integration.
 
-> [!IMPORTANT]
-> If you want to use this template "as is," be sure to test it to make sure that it covers all the scenarios that are specific to your implementation.
-
 To download the **Flow – Share Point Integration** template, go to [link](URL).
+
+> [!IMPORTANT]
+> If you want to use above given templates "as is," be sure to test it to make sure that it covers all the scenarios that are specific to your implementation.
+
+
 
 ## Additional resources
 
