@@ -102,5 +102,4 @@ Below are common best practices that ensure your debugging experience is quick, 
 1. Ensure that the version of the code and binaries in the DevTest environment exactly match UAT.  This can be accomplished by connecting the DevTest environment to the same branch you build packages from for deployment, or a 'HotfixSupport' branch that is kept up to date with the latest customizations that are released.
 2. Do not execute a Database Sync from Visual Studio.  This will impact the availability of schema in the UAT database, and could adversely impact users in the UAT environment.
 
-## Known issues
 
