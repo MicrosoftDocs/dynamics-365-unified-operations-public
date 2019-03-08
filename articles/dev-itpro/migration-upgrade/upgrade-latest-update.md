@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 02/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
