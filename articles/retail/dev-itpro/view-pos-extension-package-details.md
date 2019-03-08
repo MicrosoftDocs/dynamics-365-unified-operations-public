@@ -30,7 +30,9 @@ ms.dyn365.ops.version: AX 10.0.1
 
 # View POS extension package information
 
+[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
+
 
 > [!NOTE]
 > This topic applies to Microsoft Dynamics 365 for Finance and Operations version 10.0.1 or later, and Microsoft Dynamics 365 for Retail version 10.0.1 or later.
