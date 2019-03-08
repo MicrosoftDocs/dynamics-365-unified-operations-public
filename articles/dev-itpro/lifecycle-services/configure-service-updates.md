@@ -5,7 +5,7 @@ title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/07/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -79,4 +79,4 @@ After you set the update environment and update cadence, Microsoft generates an 
 
 For more information about how to pause updates to configured sandbox and production environments, see [Pause service updates through Lifecycle Services (LCS)](pause-service-updates.md).
 
-For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+For more information about Microsoft-managed service updates, see [Service updates FAQ](../../fin-and-ops/get-started/one-version.md).
