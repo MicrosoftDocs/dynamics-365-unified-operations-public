@@ -43,6 +43,7 @@ This article provides a detailed overview of the various Dynamics 365 for Retail
 The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Retail headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
 - **[Supported capabilities and features when connectivity is lost](#Supported-capabilities-and-features-when-connectivity-is-lost)** – An overview of supported capabilities and features in each of the Retail in store topologies when connectivity to the HQ is lost.
+- **[Supported deployement and maintenance capabilities](#Supported-deployement-and-maintenance-capabilities)** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
 - **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in store topologies.
 - **[Hardware and sofware requirements](#Hardware-and-sofware-requirements)** - An overview of the minimum hardware and software requirements to operate each of the Retail in store topologies.
 - **[Maintenance tasks](#Maintenance-tasks)** - An overview of the maintenance tasks that are required to host and operate each of the Dynamics 365 for Retail in store topology.
@@ -57,22 +58,25 @@ The sections in this topic describe the following steps, which you must complete
 | Device Activations | | | 
 | Extended Logon | ✔ | ✔ |
 
+## Supported deployement and maintenance capabilities
+| 
+
 ## Deployed components
 The components described below are deployed through a single installer and therefore do not need to be installed individually.
 
 ### Modern POS
-| Installed Component | Component Type | Notes |
+| Deployed Component | Component Type | Notes |
 | --- | --- | --- |
-| Modern POS App | Universal Windows Platform (UWP) Application |
-| Modern POS Client Broker | Universal Windows Platform (UWP) Application |
-| Channel Database | SQL Database |
+| Modern POS App | Universal Windows Platform (UWP) Application | The Modern POS application running on the register. |
+| Modern POS Client Broker | COM Surrogate hosting native binaries for the Modern POS | Hosts the Commerce Runtime to support operations to execute in offline mode as well as Async Client Libraries needed to synchornize data between the Modern POS and the HQ. | 
+| Channel Database | SQL Database | Register specific Channel Database instance hosting data for the register.
 
 ### Retail Store Scale Unit
 | Installed Component | Component Type | Notes |
 | --- | --- | --- |
-| Retail Server | IIS Web Service | Local Retail Server instance |
-| Channel Database | SQL Database |
-| Asycn Client Service | Windows Service | 
+| Retail Server | IIS Web Service | Scale Unit specific Retail Server instance used by one or more stores. |
+| Channel Database | SQL Database | Scale Unit specific Store specific Channel Database instance hosting data for one or more stores. |
+| Asycn Client Service | Windows Service | Component to synchronize master record data from the HQ to the store and transactional data from the store to the HQ. |
 
 ## Hardware and sofware requirements
 |  | Modern POS | Retail Store Scale Unit | 
