@@ -42,28 +42,49 @@ This article provides a detailed overview of the various Dynamics 365 for Retail
 ## Overview
 The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Retail headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
-- **[Supported operations when connectivity is lost](#Supported-operations-when-connectivity-is-lost)** – This section provides a list of supported operations in each of the Retail in store topologies.
-- **[Maintenance tasks](#Maintenance-tasks)** - This section provides a list of maintenance tasks that are required in each of the Dynamics 365 for Retail in store topology.
-- **[Related articles](#Related-articles)** – This section provides a list of resources that provide additional details related to the concepts covered in this article.
+- **[Supported capabilities and features when connectivity is lost](#Supported-capabilities-and-features-when-connectivity-is-lost)** – An overview of supported capabilities and features in each of the Retail in store topologies when connectivity to the HQ is lost.
+- **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in store topologies.
+- **[Hardware and sofware requirements](#Hardware-and-sofware-requirements)** - An overview of the minimum hardware and software requirements to operate each of the Retail in store topologies.
+- **[Maintenance tasks](#Maintenance-tasks)** - An overview of the maintenance tasks that are required to host and operate each of the Dynamics 365 for Retail in store topology.
+- **[Related articles](#Related-articles)** – A List of resources with additional details related to the concepts covered in this article.
 
 ### High-level overview
-The following illustration shows a high-level description of the concepts described in this article.
-
 ![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)
 
-## Supported operations when connectivity is lost
-Thi list describes the various operations that are supported when the connectivity is lost in each of the Dynamics 365 for Retail in store topologies.
-
+## Supported capabilities and features when connectivity is lost
 | Operation | Modern POS Offline<br>(without connectivity to Retail Server) | Retail Store Scale Unit<br>(without connectivity to HQ) |
 | --- | :-: | :-: |
 | Device Activations | | | 
 | Extended Logon | ✔ | ✔ |
 
-## Maintenance tasks
-This list describes a set of maintenance tasks required in each of the Dynamics 365 for Retail in store topologies.
+## Deployed components
+The components described below are deployed through a single installer and therefore do not need to be installed individually.
 
+### Modern POS
+| Installed Component | Component Type | Notes |
+| --- | --- | --- |
+| Modern POS App | Universal Windows Platform (UWP) Application |
+| Modern POS Client Broker | Universal Windows Platform (UWP) Application |
+| Channel Database | SQL Database |
+
+### Retail Store Scale Unit
+| Installed Component | Component Type | Notes |
+| --- | --- | --- |
+| Retail Server | IIS Web Service | Local Retail Server instance |
+| Channel Database | SQL Database |
+| Asycn Client Service | Windows Service | 
+
+## Hardware and sofware requirements
+|  | Modern POS | Retail Store Scale Unit | 
+| --- | --- | --- |
+| Deployed Dynamics 365 Components | Modern POS Installer with offline capabilities | Retail Server (IIS Web Service)<br>Channel Database (SQL Database)<br>Async Client (Windows Service) |
+
+## Maintenance tasks
 | Maintenance Task | Modern POS Offline<br>(on each POS terminal) | Retail Store Scale Unit<br>(on each RSSU machine) |
 | --- | :-: | :-: | 
 | X | X | X |
 
 ## Related articles
+- [Offline point of sale (POS) functionality](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-offline-functionality)
+- [Retail Store Scale Unit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+- [Configure and install retail store scale unit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
