@@ -113,3 +113,4 @@ To download the **Flow – Share Point Integration** template, go to [link](URL)
 ## Additional resources
 
 [The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
+[Migrate App between tenants and Evnironments](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
