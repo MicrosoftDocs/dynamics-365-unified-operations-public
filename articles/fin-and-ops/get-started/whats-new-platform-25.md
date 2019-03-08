@@ -67,8 +67,6 @@ For more information, view article on [Client Alerts notifications by email](htt
 ## Client Alert sub-table field tracking
 The latest Platform Update release includes the ability to create Alert Rules that monitor updates made to fields sourced from child tables. Previously, options were limited to fields sourced from the root data source. Now users are able to define alert rules for all fields visible to the user including those from child tables.
 
-### Archive non-PDF files using Batch operation
-
 
 ## Additional resources
 
