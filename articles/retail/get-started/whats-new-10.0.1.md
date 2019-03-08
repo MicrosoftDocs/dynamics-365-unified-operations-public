@@ -39,33 +39,22 @@ This topic describes features that are new or changed in Microsoft Dynamics 365 
 To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.1)](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10-0-1).
 
 
-## Restrict payment methods for returns without a receipt
-This feature allows for certain payment types to be restricted for refund if the returns are made without a receipt using Dynamics 365 for Retail.
+## View POS extension package information
+This feature lists the extension packages that are included as part of the core POS, and it lets you view status information and other details.
 
-For more information, see [Restrict payment methods for returns without a receipt](../../retail/payment-methods-restrictions.md).
+For more information, see [View POS extension package information](../../retail/dev-itpro/view-pos-extension-package-details.md).
 
-## Omni-channel advanced auto charges
-With the advanced auto-charges features in Dynamics 365 for Retail, orders created in any supported Retail channel (point of sale (POS), call center, and online), can take advantage of the auto charges configurations defined in Dynamics 365 for both header and line-level related charges.  
+## Prorate header charges to matching sales lines
+This feature provides functionality for grouping header-level auto-charges and prorating them to retail sales lines.
 
-For more information, see [Omni-channel advanced auto charges](../../retail/omni-auto-charges.md).
+For more information, see [Prorate header charges to matching sales lines](../../retail/pro-rate-charges-matching-lines.md).
 
-## Retail price reports
-With this new functionality, store managers can create reports detailing recent or upcoming price changes.
-
-For more information, see [Retail price reports](../../retail/price-report.md).
-
-## Return items across multiple customer orders and invoices
-This functionality enables returns across multiple customer orders and invoices in Dynamics 365 for Retail.
-
-For more information, see [Return items across multiple customer orders and invoices](../../retail/multireturn.md).
 
 ## Loyalty changes
 Functionality has been added to enhance the loyalty features in Dynamics 365 for Retail.
 
 For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md).
 
-## Fiscal printer integration sample for Poland
-Microsoft Dynamics 365 for Retail now contains a sample of the integration of POS with fiscal printers for Poland. The sample is a part of the Retail SDK. Implementation partners may extend the integration functionality to cover all required retail scenarios or build integration with other fiscal printer models based on the samples.
 
 ## Additional resources
 
