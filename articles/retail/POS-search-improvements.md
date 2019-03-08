@@ -5,7 +5,7 @@ title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -74,7 +74,7 @@ The experience for local product searches is now more user-friendly. The followi
 
 ## Customer search
 
-Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. The search algorithm matches the search terms against the values present in the following customer properties: Name, Email, Phone, Loyalty card number, Address,  and Account number. Among these, the Name property provides the most flexibility when it comes to multiple keyword searches as the algorithm returns all customers that match any of the searched keywords and the customers that match the most keywords, appear at the top of the results. This behavior helps cashiers in situations where they are searching by typing the full name, but last name and first name were swapped during the initial data entry. However, for performance reasons, all the other properties preserve the order of the search keywords, so if the search keywords do not match the order in which the data is stored, then no results will be returned.
+Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. The search algorithm matches the search terms against the values present in the following customer properties: name, email, phone, loyalty card number, address, and account number. Among these, the name property provides the most flexibility when it comes to multiple keyword searches as the algorithm returns all customers that match any of the searched keywords and the customers that match the most keywords, appear at the top of the results. This behavior helps cashiers in situations where they are searching by typing the full name, but last name and first name were swapped during the initial data entry. However, for performance reasons, all the other properties preserve the order of the search keywords, so if the search keywords do not match the order in which the data is stored, then no results will be returned.
 
 By default, a customer search is done on the customer address books that are associated with the store. This type of search is known as a *local customer search*. However, employees can also search for customers globally. In other words, they can search across the stores of the company and across all other legal entities. This type of search is known as a *remote customer search*.
 
