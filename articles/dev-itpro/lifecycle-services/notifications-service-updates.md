@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 24
 
 This topic explains how you can stay up to date about service updates from Microsoft.
 
-Microsoft uses service updates to update your configured sandbox and production environments to the latest version that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Microsoft Dynamics Lifecycle Services (LCS).
+Microsoft uses service updates to update your configured sandbox and production environments to the latest released version. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Microsoft Dynamics Lifecycle Services (LCS).
 
 Here are the different types of notifications that you will receive:
 
