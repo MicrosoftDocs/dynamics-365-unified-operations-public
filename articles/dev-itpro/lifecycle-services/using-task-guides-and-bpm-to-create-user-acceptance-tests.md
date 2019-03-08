@@ -1,5 +1,5 @@
 ---
-title: Regression suite automation tool: User acceptance tests
+title: Regression suite automation tool for user acceptance tests
 description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
 author: kfend
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Regression suite automation tool: User acceptance tests
+# Regression suite automation tool for user acceptance tests
 
 [!include [banner](../includes/banner.md)]
 
