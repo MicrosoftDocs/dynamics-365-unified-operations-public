@@ -20,8 +20,11 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [
+    "shylaw@microsoft.com"
+  ],
   "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public/",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
@@ -51,10 +54,6 @@
     ]
   },
   "need_generate_pdf_url_template": true,
-  "need_generate_intellisense": false,
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  }
+  "targets": {},
+  "need_generate_intellisense": false
 }
