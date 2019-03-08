@@ -554,6 +554,8 @@
       href: dev-itpro/hybridApp.md
     - name: Override POS request handler
       href: dev-itpro/pos-handler.md
+    - name: View POS extension package information
+      href: view-pos-extension-package-details.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
