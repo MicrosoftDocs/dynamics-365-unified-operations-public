@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Extending Talent using Powerapp/Flow - Example Scenarios
-description: 
+title: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
+description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow.
 author: Neelima Gudavalli
 manager: Annbe
 ms.date: 03/04/2018
@@ -32,52 +32,82 @@ ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
 
 ---
-This topic covers couple of example scenarios on Talent Extensibility using Powerapp and Flow. You can import solution package associated with each of the example into your Powerapp environment. These packages can be used as guidance or as a starting point for implementing customer specific scenarios
+
+# Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
+
+This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow. You can import the solution package that is associated with each example into your PowerApps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
 ## Prerequisites
 
-User with  "Environment Maker" permission can import packages
+- To import packages, users must have the **Environment Maker** permission.
+- To export or import apps, users must have a PowerApps Plan 2 license or a PowerApps Plan 2 trial license.
 
-A user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order to export or import any app.
+## Flow – Form Connect
 
-## Flow- Form Connect
-This template can be used to read data from Microsoft Forms and store it in a CDS entity.
+The **Flow – Form Connect** template can be used to read data from Microsoft Forms and store it in a Common Data Service for Apps entity.
 
-It can be extended to cover scenarios like Capturing candidate assessments, Capture course Questionnaire results, Interview questions library for HR administrators, Candidate Evaluating the interview process.
+This template can be extended so that it can be used for other scenarios. Here are some examples:
 
-In Attract, Forms can be exposed to the Candidate Portal and Candidate can fill details. Forms can also be embedded as activities in a job template.
+- Capture candidate assessments.
+- Capture results from course questionnaires.
+- Compile a library of interview questions for Human resources (HR) administrators.
+- Capture a candidate's evaluation of the interview process
 
-When a Candidate submits form, Flow captures the form submission, reads data and stores it in the CDS entity.
+In Microsoft Dynamics 365: Attract, forms can be exposed to the Candidate portal, and candidates can fill in details. Forms can also be embedded as activities in a job template.
+
+When a candidate submits a form, Microsoft Flow captures the form submission, reads the data, and stores it in the Common Data Service for Apps entity.
+
+To download the **Flow – Form Connect** template, go to [link](URL).
+
 ## Initiate and Extract Parameters Passed to Powerapps
-This template can be used as a starting point for any PowerApps scenario specific to Attract. It comes with all default parameters passed by Attract like Job Application, Candidate ID, JobID
 
-This example template demonstrates how to retrieve a Candidate Assessment form for a Hiring manager to see the Assessment filled by a candidate.
+The **Initiate and Extract Parameters Passed to Powerapps** template can be used as a starting point for any PowerApps scenario that is specific to Attract. It includes all the default parameters that are passed by Attract, such as **Job Application**, **Candidate ID**, and **JobID**.
 
-The PowerApps can be embedded into job template in Attract
+This template can be used to retrieve a candidate assessment form, so that a hiring manager can view the assessment that a candidate filled in.
+
+Apps that are created by using PowerApps can be embedded into the job template in Attract.
+
+To download the **Initiate and Extract Parameters Passed to Powerapps** template, go to [link](URL).
+
 ## Integration with Office 365
-This PowerApps covers the scenarios of extracting team information of logged in users from office 365 and references the worker within Dynamics 365 for Talent to extract clock in and clock out details and exception recordings. Clock in and Clout out details are stored in CDS custom entities and assumed to be populated from third party systems via integration.
 
-This app can be extended to cover scenarios like Display Team vacation, Calendar events, any Team specific events and can be used by HR, Employees and Managers
+The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract clock-in and clock-out details and exception recordings. Clock-in and Clock-out details are stored in custom Common Data Service for Apps entities. The assumption is that these details are filled in from third-party systems via integration.
+
+This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events, and HR, employees, and managers can use it.
+
+To download the **Integration with Office 365** app, go to [link](URL).
+
 ## Flow – Email Notification
-This template can be used for email notification scenarios.
 
-This template covers the scenario that trigger email notification to Candidate when Hiring team rejects the candidate in any stage of recruiting process.This template can be extended further to track candidate stage change through recruiting process and send notifications to Hiring team/Candidate
+The **Flow – Email Notification** template can be used for email notification scenarios. It can be used to trigger notification emails to candidates that the hiring team rejects during any stage of the recruiting process.
 
-In general, Flows can be set up to send notifications for event happening in Core HR, Attract or Onboard for entities stored in CDS
+This template can be extended to track changes to the candidate stage throughout the recruiting process, and to send notifications to the hiring team and candidate.
+
+In general, for entities that are stored in Common Data Service for Apps, flows can be set up to send notifications for events that occur in Core HR, Attract, or Dynamics 365 Talent: Onboard.
+
+To download the **Flow – Email Notification** template, go to [link](URL).
+
 ## Flow – SQL Connect and execute
-This Flow template connects to SQL Server and allows execution of SQL Queries.
 
-The flow is designed to read and update SQL table but can be extended to include scenarios like: Populating a staging table in CDS with records from SQL and keeping it synchronized on periodic basis using incremental push from SQL
+The **Flow – SQL Connect and execute** template connects to Microsoft SQL Server and enables SQL queries to be run.
+
+Although this template is designed to read and update SQL tables, it can be extended so that it can be used for other scenarios. For example, it can be used to fill a staging table in Common Data Service for Apps with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
+
+To download the **Flow – SQL Connect and execute** template, go to [link](URL).
+
 ## Flow – Share Point Integration
-This template can be used to read data from share point lists, compare the list with any CDS entity field values and can send result of comparison as a email notification. 
 
-Organizations may have a set of urgently required Skills. These Skills can be stored in SharePoint as a SharePoint list.  When candidate applies to any job with the listed skill sets above, an email notification will be sent if there is a significant match with the skills stored in SharePoint. This way the urgently required positions are filled faster as the notifications help recruiters to reach out and cross hire Candidates across organization
+The **Flow – Share Point Integration** template can be used to read data from a Microsoft SharePoint list, compare the list with field values for any Common Data Service for apps entity, and send the results of the comparison as a notification email. 
 
-This flow covers this scenario and can be extended to cover any scenarios that involves SharePoint integration.
+An organization might have a set of skills that it urgently requires. These skills can be stored in SharePoint as a SharePoint list. When a candidate applies for any job that a set of required skills is listed for, if there is a significant match between the candidate's skill and the skills that are stored in SharePoint, a notification email is sent. In this way, positions that are urgently required are filled faster, because the notifications help recruiters reach out and cross-hire candidates throughout the organization.
 
-Note: If you want to use above Apps/Flow as it is, please test it to make sure to covers all scenarios specific to your implemenation.
+This template can be extended so that it can be used for any scenario that involves SharePoint integration.
 
-## Additional Resources
+> [!IMPORTANT]
+> If you want to use this template "as is," be sure to test it to make sure that it covers all the scenarios that are specific to your implementation.
 
-Power Platform: https://docs.microsoft.com/en-us/power-platform/admin/admin-documentation
+To download the **Flow – Share Point Integration** template, go to [link](URL).
 
+## Additional resources
+
+[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
