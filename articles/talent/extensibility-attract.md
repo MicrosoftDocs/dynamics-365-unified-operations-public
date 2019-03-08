@@ -41,23 +41,23 @@ Microsoft Dynamics 365 for Talent is built on top of the Common Data Service (CD
 An **Option Set** (picklist) is a type of field that can be included in an entity. It defines a set of options. When an option set is displayed in a form it uses a drop-down list control.  In Attract there are multiple fields that are option sets.  We are beginning to introduce the capability to extend the options sets, beginning with the Rejection reason field, Employment type field, and Seniority type field.   Also, you can add localized display labels for the options that you add.  Please refer to the following link to learn more:  [Customize option set labels](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
 
 > [!NOTE]
-> The job posting to LinkedIn functionality requires the use of the Employment type and Seniority type field in the job details form.  The default values in these fields are supported by LinkedIn and are displayed when the job is posted.  Therefore, if you are posting jobs to LinkedIn and you modify the existing option set values for these fields, the job will still post, but LinkedIn will not display the custom Employment type and Seniority type values.  
+> The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** field on the **Job details** page. The default values in these fields are supported by LinkedIn and are displayed when the job is posted. Therefore, if you are posting jobs to LinkedIn and you modify the existing option set values for these fields, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.  
 
-Listed below are the steps to update the Rejection reason field with values that are specific to your business.  
+Listed below are the steps to update the **Rejection reason** field with values that are specific to your business.  
 
-1. To extend the ‘Rejection reason’ option set navigate to the PowerApps Admin website.  (Https://admin.powerapps.microsoft.com)
-2. You might be prompted to sign into your account.  Provide your userID and password credentials that you use to sign into Dynamics365 and/or Office365 and then click next.
-3. In the **Environments** tab, select the environment that you want to manage, and double-click to get to the details tab.
-4. In the **Details** tab, select **Dynamics 365 Administration Center**.
-5. Select the instance that you want to modify and select **Open**
-6. Navigate to **Settings** and then **Customizations** and Choose **Customize the system**
-7.  Find the entity that you want to expand the option set for by selecting **Entities** and expanding the group.  In this example, it will be the **Job application entity**.
-8. Go to the field that you want to extend the option set for by selecting the **Fields** option.  In this example, it will be the **msdyn_rejectionreason**.  Double-click on the field.
-9. In the Option Set field choose edit.
+1. To extend the **Rejection reason** option set, navigate to the [PowerApps Admin website.](Https://admin.powerapps.microsoft.com)
+2. You might be prompted to sign into your account. Provide your userID and password credentials that you use to sign into Dynamics365 and/or Office365, and then click **Next**.
+3. On the **Environments** tab, select the environment that you want to manage, and double-click to get to the **Details** tab.
+4. On the **Details** tab, select **Dynamics 365 Administration Center**.
+5. Select the instance that you want to modify and select **Open**.
+6. Navigate to **Settings**, and then **Customizations**, and choose **Customize the system**.
+7. Find the entity that you want to expand the option set for by selecting **Entities** and expanding the group. In this example, it will be the **Job application entity**.
+8. Go to the field that you want to extend the option set for by selecting the **Fields** option. In this example, it will be the **msdyn_rejectionreason**. Double-click the field.
+9. In the **Option Set** field, choose **Edit**.
 10. Select the **+** icon.
-11. Enter in a **Label**.  (This must be a unique value – no duplicates)
+11. Enter a **Label**.  (This must be a unique value – no duplicates).
 12. Select **Save**.
-13. Select **Publish** at the top of the form.
+13. Select **Publish** at the top of the page.
 
 ## Take advantage of the Microsoft Power platform 
 
