@@ -5,7 +5,7 @@ title: Get notified about service updates through Lifecycle Services (LCS)
 description: This topic explains the various ways that you can be notified about service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/07/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 24
 
 This topic explains how you can stay up to date about service updates from Microsoft.
 
-Microsoft uses One Version to update your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Microsoft Dynamics Lifecycle Services (LCS).
+Microsoft uses service updates to update your configured sandbox and production environments to the latest version that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Microsoft Dynamics Lifecycle Services (LCS).
 
 Here are the different types of notifications that you will receive:
 
@@ -52,4 +52,4 @@ Here are the different types of notifications that you will receive:
 
 After you receive a notification, if you can't proceed with the update for some reason, you can pause it. For more information about how to pause updates to configured sandbox and production environments, see [Pause service updates through Lifecycle Services (LCS)](pause-service-updates.md).
 
-For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+For more information about Microsoft-managed service updates, see [Service updates FAQ](../../fin-and-ops/get-started/one-version.md).
