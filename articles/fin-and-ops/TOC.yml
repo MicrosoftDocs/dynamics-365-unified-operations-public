@@ -195,7 +195,7 @@
       href: get-started/move-lcs-implementation-project-tenant.md 
     - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: get-started/implement-multiple-projects-aad-tenant.md
-  - name: One Version 
+  - name: One Version service updates 
     href: ../dev-itpro/lifecycle-services/oneversion-overview.md
     items:
     - name: One Version service updates FAQ
