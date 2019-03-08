@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Finance and Operations platform update 25 (Month 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (Month 2019). 
+title: Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019). 
 author: tonyafehr
 manager: AnnBe
 ms.date: 03/08/2019
@@ -25,17 +25,17 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.search.validFrom: 2019-XX-XX
+ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
 
 ---
-# Preview features in Dynamics 365 for Finance and Operations platform update 25 (Month 2019)
+# Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.XXXX. For more information about Platform update 25, see [Additional resources](whats-new-platform-25.md#additional-resources).
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.5222. For more information about Platform update 25, see [Additional resources](whats-new-platform-25.md#additional-resources).
 
 ## Azure blob storage as an endpoint for business events
 An Azure blob strorage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported thereby allowing for a wider choice for integration scenarios.
