@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 for Finance and Operations documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
 author: margoc
 manager: AnnBe
-ms.date: 03/07/2019
+ms.date: 03/08/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,7 +56,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="imp-lifecycle/onboard.md">Onboarding a project</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
 
-<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">One Version</a></h3>
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">One Version service updates</a></h3>
 <p><a href="get-started/one-version.md">One Version service updates FAQ</a></p>
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software lifecycle policy: Cloud</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software lifecycle policy: On-premises</a></p>
