@@ -207,6 +207,7 @@ If package deployment fails, you can use the **Rollback** button to reverse it. 
 
 #### Critical hotfixes
 As many customers have used the self-service upgrade process, we have found several hotfixes to be critical to success for various target versions.  For example, if you're upgrading to 7.3 we will show a list of KBs that have consistently resolved issues with data upgrade, retail components, or performance:
+
 <img src="media/UpgradeAutomation/Upgrade_CriticalKBs.png" width="700px" alt="Critical hotfixes" />
 
 The goal is to have this list empty before you start the **Data Upgrade** step of the process.  These KBs are to be *installed on your Upgrade-in-progress environment*.
