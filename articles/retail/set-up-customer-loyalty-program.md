@@ -5,7 +5,7 @@ title: Loyalty overview
 description: This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -101,7 +101,7 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
 - Earned and redeemed loyalty points are now saved for each transaction and sales orders against the sales line, so that the same amount can be refunded or taken back in the case of full or partial returns. Moreover, having the visibility for points at the sales line level provides the capability for call center users to answer customer questions on how many points were earned or redeemed for each line. Prior to this change, reward points were always recalculated during returns, which resulted in a different amount than the original, if the earning or redemption rules were changed and also the call center users did not have the visibility on the points breakdown. The points can be viewed under the **Card transactions** form for each loyalty card. To enable this feature turn on the configuration **Post loyalty points per sales line** under **Retail shared parameters**	 > **General** tab.
 
 >[!NOTE]
-> We strongly recommend turning ON this feature to ensure, in case of returns, the correct amount of points can be refunded or taken from the customer.
+> We strongly recommend turning this feature on to ensure, in case of returns, the correct amount of points can be refunded or taken from the customer.
 
 - Retailers can now define the vesting period for each reward point. A vesting period configuration will define the duration from the earn date, after which the reward points would become available to the customers. Unvested points can be viewed in the **Unvested points** column on the **Loyalty cards** page. Additionally, retailers can define the maximum loyalty reward point limit per loyalty card. This field can be used to reduce the impact of loyalty fraud. When the maximum award points have been reached, the user cannot earn more points. The retailer can decide to block such cards until they have investigated for potential fraud. If the retailer determines fraud, the retailer cannot only block the loyalty card for the customer but also mark the customer as blocked. To do so, set the **Block customer for loyalty enrollment** property to **Yes** under **All customers** on the **Retail** FastTab. The blocked customers will not be able to be issued a loyalty card in any of the channels.
 
