@@ -4,38 +4,52 @@
   - name: Get started
     href: talent-get-started.md
     items:
-    - name: What's new or changed
+    - name: What's new or changed in Talent
       href: whats-new.md
       items:
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (January 11, 2019)
+      - name: March 5, 2019     
+        href: whats-new-talent-march-5.md
+      - name: February 27, 2019     
+        href: whats-new-talent-feb-27.md      
+      - name: February 14, 2019     
+        href: whats-new-talent-feb14.md
+      - name: February 7, 2019     
+        href: whats-new-talent-february-7.md
+      - name: January 31, 2019      
+        href: whats-new-talent-january-29.md
+      - name: January 23, 2019      
+        href: whats-new-talent-january-23.md
+      - name: January 17, 2019
+        href: whats-new-talent-january-17.md
+      - name: January 11, 2019
         href: whats-new-talent-january-11.md  
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
+      - name: December 14, 2018
         href: whats-new-talent-december-14.md 
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (December 6, 2018)
+      - name: December 6, 2018
         href: whats-new-talent-december-6.md 
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (November 27, 2018)
+      - name: November 27, 2018
         href: whats-new-talent-november-27.md            
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (November 15, 2018)
+      - name: November 15, 2018
         href: whats-new-talent-november-15.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)
+      - name: October 31, 2018
         href: whats-new-talent-october-31.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 19, 2018)
+      - name: October 19, 2018
         href: whats-new-talent-october-19.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 15, 2018)
+      - name: October 15, 2018
         href: whats-new-talent-october-11.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 8, 2018)
+      - name: October 8, 2018
         href: whats-new-talent-october-8.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 1, 2018)
+      - name: October 1, 2018
         href: whats-new-talent-october-01.md 
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)
+      - name: September 24, 2018
         href: whats-new-talent-september-24.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
+      - name: September 17, 2018
         href: whats-new-talent-september-17-2018.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
+      - name: September 10, 2018
         href: whats-new-talent-september-10.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
+      - name: August 2018
         href: whats-new-talent-august2018.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
+      - name: July 2018
         href: whats-new-talent-july2018.md
     - name: System requirements and update policy
       href: talent-versions-update-policy.md
@@ -93,6 +107,8 @@
       href: attract-linked-in-recruiter.md
     - name: Hiring Process activities in Attract 
       href: activities-attract.md
+    - name: Interview scheduling and feedback
+      href: interview-scheduling-feedback.md
     - name: Extensibility
       href: extensibility-attract.md
     - name: Career site and candidate experiences
@@ -111,6 +127,8 @@
       href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
+    - name: Attract comprehensive hiring add-on capabilities
+      href: attract-comprehensive-hiring.md
   - name: Motivate employees
     items:
     - name: Compensation plans
@@ -182,6 +200,8 @@
       href: data-integration.md
     - name: Integration FAQ
       href: talent-fo-integration.md
+    - name: Recurring data export using Azure Logic apps
+      href: tutorial-integration-recurring-export.md
   - name: Office integration
     items:
     - name: Office integration tutorial
@@ -309,5 +329,5 @@
       href: talent-reporting-options.md
     - name: Integration FAQ
       href: talent-FO-integration.md
-  
-  
+    - name: Azure Active Directory users not found in People Picker
+      href: people-picker-user-not-found.md   

@@ -5,7 +5,7 @@ title: Import letter of credit
 description: This procedure walks through the process of importing a letter of credit. 
 author: kweekley
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -114,8 +114,7 @@ This procedure uses the USMF demo company.
 1. Go to Cash and bank management > Letters of credit > Import letter of credit and import collection.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
-    * Verify the Import letter of credit status.    
-    *   
+    * Verify the Import letter of credit status.     
 4. Close the page.
 5. Close the page.
 

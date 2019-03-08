@@ -34,8 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/private-preview-banner.md)]
-
 > [!IMPORTANT]
 > Access to the new System administration utility is managed by the Carbon Flighting Service. Microsoft Dynamics 365 for Finance and Operations platform update 23 (December 2018) includes the **System network printers management** page for system admins.
 

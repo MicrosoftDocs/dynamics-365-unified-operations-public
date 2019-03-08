@@ -78,6 +78,7 @@ The following table shows the POS views that currently support extensions. It al
 | SearchReceiptsView              | No                            | No                           | Yes                               |
 | StockCountDetailsView           | No                            | No                          | Yes                               |
 | TransferOrderDetailsView        | No                            | No                          | Yes                               |
+| FulfillmentLineView        | No                            | Yes                          | No                               |
 
 
 > [!NOTE]

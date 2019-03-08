@@ -34,7 +34,6 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 

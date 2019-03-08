@@ -207,6 +207,8 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | CarryoutSelectedProductsOperationRequest |
 | AddCouponsOperationRequest |
 | CreateNonSalesTransactionServiceRequest |
+| ReturnTransactionOperationRequest |
+| AddLoyaltyCardToCartOperationRequest |
 
 ### Payments
 

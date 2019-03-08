@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1095,3 +1095,25 @@ Turn off the **Skype presence enabled** option on the **Client performance optio
 To do this, you must sign in to Finance and Operations. Redirection should be blocked in the browser so that you can sign in and perform that action. After disabling the Skype presence, redirection can be unblocked again.
 
 The Chrome browser blocks redirection by default.
+
+## Error: There was an error during CodePackage activation. Service host failed to activate. Error:0x8007052e
+
+You might receive the following error during a new installation.
+
+> Error event: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'. There was an error during CodePackage activation.Service host failed to activate. Error:0x8007052e 
+
+This will result in the AXSF service also failing with the same error.
+
+To resolve this issue, follow these steps:
+
+1. Locate netstandard.dll from [Agent share path](setup-deploy-on-premises-pu12.md#setupfile). For example: \wp\<name>\StandaloneSetup-<ver>\Apps\AOS\AXServiceApp\AXSF\Code\bin\netstandard.dll
+2. On each AOS server, open a Command Prompt as an administrator, and run the following command.
+
+```
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i <path from step 1.>\netstandard.dll /f
+```
+3. Delete AXBootstrapperApp from Service Fabric.
+    1. Delete fabric:/Bootstrapper/AXBootstrapper service.
+    2. Delete fabric:/Bootstrapper application. 
+    3. Unprovision AXBootstrapperAppType type.
+4.	Redeploy and retry from LCS.

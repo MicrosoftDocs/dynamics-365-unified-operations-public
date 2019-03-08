@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 03/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,6 +32,16 @@ ms.dyn365.ops.version: 8.1
 [!include[banner](../includes/banner.md)]
 
 In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
+
+## Schedule for April 10.0 release
+
+### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
+Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. In early March, the ability to set up this configuration or pause updates will be available through LCS.
+
+### With a release date in early April, which ring is being released at that time? Is it the GA ring? Or will GA be released several weeks later?
+[Standard release/Ring 4](public-preview-releases.md) production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
+ 
+For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup will be available in early March.
 
 ## Service updates
 
@@ -61,7 +71,11 @@ There will be 2 major updates in April and October where new experiences will be
 
 ### What does it mean when an update is backward compatible?
 
-Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs. Functional compatibility is about user experience. All new experiences will be opt-in.
+Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This also means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Functional compatibility is about user experience, all new experiences will be opt-in.
+
+Backward compatibility does not include non-X++/metadata APIs. Microsoft reserves the right to update versions of any dependencies the product uses, as well as remove dependencies without early warning. Microsoft does not commit to maintain backwards compatibility of dependent software libraries unless expressly stated. 
+
+For more information on deprecation guidelines and deprecated methods and metadata elements, see [Deprecation of methods and metadata elements](../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md).
 
 ### Do these updates apply to on-premises?
 
@@ -87,7 +101,12 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 
 ### What's the process for deprecation?
 
-Deprecation will be announced by a notice 12 months prior to the deprecation. The functionality will only be deprecated during a major update.
+In the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic, we state the difference between removed and deprecated features as follows:
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 ### Can I delay an update?
 
