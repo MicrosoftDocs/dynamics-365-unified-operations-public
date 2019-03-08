@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: One Version overview
+title: One Version service updates overview
 description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: meeram
 manager: AnnBe
-ms.date: 03/07/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 24
 
 ---
 
-# One Version overview
+# One Version service updates overview
 
 [!include [banner](../includes/banner.md)]
 
