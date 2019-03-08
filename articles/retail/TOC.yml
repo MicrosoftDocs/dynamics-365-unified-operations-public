@@ -110,7 +110,11 @@
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Omni-channel advanced auto charges
-  href: omni-auto-charges.md
+  items:
+  - name: Configure and use advanced auto charges
+    href: omni-auto-charges.md
+  - name: Proration and grouping of header auto charges
+    href: pro-rate-charges-matching-lines.md
 - name: Call center
   items:
   - name: Call center sales functionality
