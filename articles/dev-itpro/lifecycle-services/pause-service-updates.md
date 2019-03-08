@@ -5,7 +5,7 @@ title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explans how to pause service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/07/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ This topic explains how to pause updates to your sandbox and production environm
 > [!IMPORTANT]
 > This feature is available only to customers who are using **version 8.1 and later**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers and customers who use older versions of the product. 
 
-Microsoft uses One Version to update your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in LCS. At that point, if you can't proceed with the update for some reason, you can pause it through LCS.
+Microsoft updates your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in LCS. At that point, if you can't proceed with the update for some reason, you can pause it through LCS.
 
 For more information about how to change the configured sandbox environment and set the production update cadence, see [Configure service updates through Lifecycle Services (LCS)](configure-service-updates.md).
 
@@ -48,7 +48,7 @@ For more information about how to change the configured sandbox environment and 
 
 Only users (customers or partners) who are assigned to the **project owner** role in LCS can pause updates. Additionally, updates can be paused only for **implementation projects**.
 
-One Version helps guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
+Staying current with service updates helps guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
 
 You can't pause updates through LCS if you're more than two updates behind the latest update that Microsoft has released. For example, if the last update that Microsoft released is version 8.1.3, customers who are using version 8.1.2 and version 8.1.1 **can** pause updates. However, a customer who is using version 8.1.0 **cannot** pause updates, because they are more than two updates behind.
 
@@ -90,7 +90,7 @@ Any time that you pause updates or edit an existing pause, a notification appear
 
 ## What happens after the pause duration expires?
 
-One Version helps guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
+Cumulative service updates help guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
 
 There are two ways to cancel pauses, so that updates are resumed:
 
@@ -99,4 +99,4 @@ There are two ways to cancel pauses, so that updates are resumed:
 
 In both cases, an email is sent to inform the stakeholders.
 
-For more information about One Version and Microsoft-managed service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+For more information about service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
