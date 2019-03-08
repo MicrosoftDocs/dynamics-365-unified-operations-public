@@ -59,7 +59,9 @@ The sections in this topic describe the following steps, which you must complete
 | Extended Logon | ✔ | ✔ |
 
 ## Supported deployement and maintenance capabilities
-| 
+| Capability | Modern POS | Retail Store Scale Unit | 
+| --- | :-: | :-: |
+| Mass deployment | ✔ | |
 
 ## Deployed components
 The components described below are deployed through a single installer and therefore do not need to be installed individually.
