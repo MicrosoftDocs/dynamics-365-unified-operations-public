@@ -5,7 +5,7 @@ title: Extensibility in Attract
 description: This topic describes how you can extend the Microsoft Dynamics 365 for Talent - Attract application by using the Microsoft Power platform.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
