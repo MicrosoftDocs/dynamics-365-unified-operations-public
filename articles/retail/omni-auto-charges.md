@@ -5,7 +5,7 @@ title: Omni-channel advanced auto charges
 description: This topic describes capabilities for managing additional order charges for Retail channel orders using advanced auto charges features.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -73,7 +73,7 @@ The new operations are as follows.
 
 As with all POS operations, security configurations can be made to require manager approval in order to execute the operation.
 
-It is important to note that the above listed POS operations can also be added to the POS layout even if the **Use advanced auto-charges** parameter is disabled.  In this scenario, organizations will still get added benefits of being able to view manually added charges and edit them using the **Manage charges** operation.   Users may also use the **Add header charges** and **Add line charges** operations for POS transactions even when **Use advanced auto-charges** parameter is disabled.  The **Recalculate charges** operation has less functionality if used when **Use advanced auto-charges** is disabled.  In this sceanrio, nothing would be recalculated and any charges manually added to the transaction would just reset to $0.00.
+It is important to note that the above listed POS operations can also be added to the POS layout even if the **Use advanced auto-charges** parameter is disabled. In this scenario, organizations will still get added benefits of being able to view manually added charges and edit them using the **Manage charges** operation. Users may also use the **Add header charges** and **Add line charges** operations for POS transactions even when **Use advanced auto-charges** parameter is disabled. The **Recalculate charges** operation has less functionality if used when **Use advanced auto-charges** is disabled. In this sceanrio, nothing would be recalculated and any charges manually added to the transaction would just reset to $0.00.
 
 ## Use case examples
 In this section, sample use cases are presented to help you understand the configuration and usage of auto-charges and miscellaneous charges within the context of Retail channel orders. These examples illustrate the behavior of the application when the **Use advanced auto-charges** parameter has been enabled.
@@ -217,4 +217,4 @@ Some organizations may prefer to wait until the user has finished adding all of 
 
 ### Charges override reports
 
-If users manually override the calculated charges or add a manual charge to the transaction, this data will available for auditing in the **Charge Override History** report.  This report can be accessed from **Retail \> Inquiries and reports \> Charge Override History**.  It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs.  Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ. 
+If users manually override the calculated charges or add a manual charge to the transaction, this data will available for auditing in the **Charge Override History** report. The report can be accessed from **Retail \> Inquiries and reports \> Charge Override History**.  It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs. Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ. 
