@@ -208,6 +208,8 @@
       href: ../dev-itpro/migration-upgrade/versions-update-policy.md
     - name: Software lifecycle policy - On-premises
       href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+    - name: Standard and First release service updates
+      href: get-started/public-preview-releases.md
     - name: Apply updates to cloud environments
       href: ../dev-itpro/deployment/apply-deployable-package-system.md
     - name: Configure service updates
