@@ -69,7 +69,7 @@ The latest Platform update release includes the ability to create alert rules th
 ## Additional resources
 
 ### Platform update 25 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 25, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com).
+For information about the bug fixes included in each of the updates that are part of Platform update 25, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=299594&dbType=3&qc=cd4a0699eeae081b2b715d75b33ba6024dce2576563a84015bf60ed3509420a5).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
