@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail. 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.1)](https://docs.microsoft.com/dynamics365/unified-operations/get-started/whats-new-changed-10-0-1).
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.1)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1).
 
 
 ## View POS extension package information
