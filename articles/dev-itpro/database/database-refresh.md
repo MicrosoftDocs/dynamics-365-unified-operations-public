@@ -36,13 +36,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database for  Dynamics 365 for Finance and Operations to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
-> [!Important]
+> [!IMPORTANT]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.  
 
 ## Self-service database refresh
 With the goal of providing Data Application Lifecycle Management (also referred to as *DataALM*) capabilities to our customers without relying on human or manual processes, the Lifecycle Services team has introduced an automated **Refresh database** action. This process is outlined below:
 
-1. Visit your target sandbox on the **Environment Details** page, and click the **Maintain** > **Move database** menu option.
+1. Visit your target sandbox on the **Environment Details** page, and click the **Maintain** \> **Move database** menu option.
 2. Select the **Refresh database** option and choose your source environment.
 3. Note the warnings and review the list of data elements that are not copied from the source environment.
 4. The refresh operation will begin immediately.
@@ -54,7 +54,7 @@ In case of failure, the option to perform a rollback is available.  By clicking 
 To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
 
 ### Data elements that aren't copied during refresh
-When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.  These elements include:
+When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment. These elements include:
 
 * Email addresses in the LogisticsElectronicAddress table.
 * Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
@@ -63,10 +63,10 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table.
-* All users except for the administrator will be set to disabled status.
-* All batch jobs are set to Withhold status.
+* All users except the admin will be set to **Disabled** status.
+* All batch jobs are set to **Withhold** status.
 
-These values are not copied as several are environment-specific such as Batch Server Config and Network Printers. Others are not copied based on support ticket volume such as SMTP still being enabled in UAT sending duplicate emails, batch jobs still being enabled sending invalid integration messages, and users being enabled before administsrators can perform post-refresh cleanup activities.
+Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
 ### Environment administrator
 The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config file on the target.  This should be the same value as that of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.  
@@ -81,7 +81,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
 - Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
-- All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system.
+- All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
@@ -92,20 +92,20 @@ Here is the list of requirements and conditions of operation for a database refr
 ## Known issues
 
 ### Refresh is denied for environments running Platform update 12 or earlier
-The database refresh process cannot be completed if the environment is running Platform update 12 or earlier. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
+The database refresh process can't be completed if the environment is running Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017) or earlier. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
-The database refresh process (self-service or via service request) cannot be completed successfully if the version of Financial Reporting is lower in the target environment as compared to the source environment. To resolve this issue, update both environments to have the latest version of Financial Reporting.
+The database refresh process (self-service or via a service request) can't be completed successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
 
-For customers on 8.1 or newer:
-* Visit the **Update tiles** for your UAT environment.  Save the updates to your **Project asset library**.
-* Apply this package to your UAT environment.  
-* Verify that the error has been resolved.
+For customers that are using version 8.1 or later:
+1. Go to the **Update** tiles for your UAT environment. Save the updates to your Project asset library.
+2. Apply this package to your UAT environment.
+3. Verify that the error has been resolved.
 
-For customers on 8.0 or lower:
-* Visit the **Project asset library** and go to the Software deployable packages section.  Use the *Import* button to add the latest Financial Reporting Binaries asset to your project.
-* Apply this binary package to your UAT environment.
-* Verify that the error has been resolved.
+For customers that are using version 8.0 or earlier:
+1. In the Project asset library, on the **Software deployable packages** tab, use the **Import** button to add the latest Financial Reporting Binaries asset to your project.
+2. Apply this binary package to your UAT environment.
+3. Verify that the error has been resolved.
 
 ### Incompatible application versions between source and target environments
 The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.  
