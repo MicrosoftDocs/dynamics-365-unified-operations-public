@@ -150,24 +150,24 @@ The Commerce runtime extension components are included in the Retail SDK. To com
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
 1. Find the **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample** project, and build it.
-1. In the **Extensions.EpsonFP90IIIFiscalDeviceSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll** assembly file.
-1. Copy the files to a deployed Hardware station machine:
+2. In the **Extensions.EpsonFP90IIIFiscalDeviceSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll** assembly file.
+3. Copy the files to a deployed Hardware station machine:
 
     - **Remote Hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
     - **Local Hardware station:** Copy the files to the Modern POS client broker location.
 
-1. Find the configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**:
+4. Find the configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**:
 
     - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
     - **Local Hardware station:** The file is located under the Modern POS client broker location.
 	
-1. Add the following section to the **composition** section of the config file.
+5. Add the following section to the **composition** section of the config file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
     ```
 
-1. Restart the Hardware station service:
+6. Restart the Hardware station service:
 
     - **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
     - **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
