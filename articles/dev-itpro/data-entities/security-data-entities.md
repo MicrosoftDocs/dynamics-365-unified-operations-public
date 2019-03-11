@@ -34,6 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> Data entities do not support the Extensible Data Security (XDS) concepts.
+
 ## Entry points
 Data entities support entry point security. This support resembles the support that menu items and pages have. To give you flexibility when you define a security model, data entities allow for a separate security configuration for each integration mode. Currently, two entry points/integration modes are identified for a data entity.
 
