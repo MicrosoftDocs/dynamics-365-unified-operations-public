@@ -66,7 +66,7 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * All users except for the administrator will be set to disabled status.
 * All batch jobs are set to Withhold status.
 
-These values are not copied as several are environment specific such as Batch Server Config and Network Printers. Others are not copied based on support ticket volume such as SMTP still being enabled in UAT sending duplicate emails, batch jobs still being enabled sending invalid integration messages, and users being enabled before Admins can perform post-refresh cleanup activities.
+These values are not copied as several are environment-specific such as Batch Server Config and Network Printers. Others are not copied based on support ticket volume such as SMTP still being enabled in UAT sending duplicate emails, batch jobs still being enabled sending invalid integration messages, and users being enabled before administsrators can perform post-refresh cleanup activities.
 
 ### Environment administrator
 The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config file on the target.  This should be the same value as that of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.  
