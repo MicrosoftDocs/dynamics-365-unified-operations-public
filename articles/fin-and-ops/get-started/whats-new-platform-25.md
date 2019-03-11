@@ -52,7 +52,7 @@ Entity store is an Operational data warehouse that contains simplified transacti
 To enable this feature, see [Entity store in your own Business Data Lake](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake).
 
 ## Trickle feed support for entity store in Azure Data Lake (public preview)
-When entity store is staged in Azure Data Lake, you have the option to enable trickle feed updates. If the trickle feed option is enabled, transactional data gets updated in your own Axure Data Lake as soon as they are committed in Dynamics 365 for Finance and Operations. Use this option to enable real-time reporting with transactional data using PowerBI.com and other tools.
+When entity store is staged in Azure Data Lake, you have the option to enable trickle feed updates. If the trickle feed option is enabled, transactional data gets updated in your own Azure Data Lake as soon as they are committed in Dynamics 365 for Finance and Operations. Use this option to enable real-time reporting with transactional data using PowerBI.com and other tools.
 
 ## Edit analytical workspace
 You can now empower users to author the reports they need without relying on a developer. Using the latest Platform update, you can make non-disruptive enhancements to embedded application solutions. Power users are able to modify ready-made analytical workspaces without leaving the client or using developer tools. Users who have specific security privileges can add or modify report visuals and add new pages to existing reports. These changes are applicable to all users viewing the report.
