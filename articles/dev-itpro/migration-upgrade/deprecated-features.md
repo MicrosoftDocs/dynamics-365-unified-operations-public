@@ -47,6 +47,30 @@ This list is intended to help you consider these removals and deprecations for y
 > [!Note]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
+
+### Deprecated APIs and future breaking changes
+
+#### Deriving from internal classes is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Before platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. As of platform update 25, the compiler will give a you warning.|
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in platform update 26. This change is backward compatible at runtime, which means platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All. |
+| **Status**                         | Deprecated - The warning will become a compilation error in platform update 26. |
+
+#### Overriding internal methods is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Before platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of platform update 25, the compiler will give a you warning.|
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in platform update 26. This change is backward compatible at runtime, which means platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All. |
+| **Status**                         | Deprecated - The warning will become a compilation error in platform update 26. |
+
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
 ### Print to screen functionality
