@@ -30,3 +30,6 @@ Alerts can be setup per batch job per user.
 2.	Select a Batch Job and click on Batch Job menu Item
 3.	Click on Alerts
 4.	Configure your Alerts and click Ok
+
+>[!NOTE] 
+>You can click on Email (Swith to Yes) so you can recieve email notifications as well.
