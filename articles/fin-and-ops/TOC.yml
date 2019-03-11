@@ -3829,8 +3829,6 @@
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Fulfill sales agreements
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: Create a new trade agreement
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: Generate and process customer rebates
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: Process rebates for payment
@@ -3856,7 +3854,9 @@
       - name: Set up sales commission rules
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: Trade allowance
-      href: ../supply-chain/sales-marketing/trade-allowance.md 
+      href: ../supply-chain/sales-marketing/trade-allowance.md
+    - name: Create a new trade agreement
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: Service management
     href: ../supply-chain/service-management/service-management-home-page.md
     items:
