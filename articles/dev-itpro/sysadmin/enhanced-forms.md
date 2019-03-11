@@ -16,13 +16,13 @@ Complete the following switch to Enhanced form.
 
 
 
-![Switch to Enhanced form](./sysadmin/media/batch-popup.png) 
+![Switch to Enhanced form](./media/batch-popup.png) 
  
 4.	Notice the difference between enhanced and legacy forms
 
-![Enhanced form](./sysadmin/media/enhanced-form.png)
+![Enhanced form](./media/enhanced-form.png)
 
 # Batch Legacy form
-![Legacy Form](./sysadmin/media/batch-legacy.png) 
+![Legacy Form](./media/batch-legacy.png) 
 
 5.	You can switch back to the legacy forms
