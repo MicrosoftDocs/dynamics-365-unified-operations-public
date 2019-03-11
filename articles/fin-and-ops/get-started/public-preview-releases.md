@@ -43,7 +43,7 @@ Each new release is designed and developed by the Dynamics 365 for Finance and O
 
 - Ring 2 is a targeted release. This release is available to channel partners, customers, and ISVs who opt in through the [Insider program](https://experience.dynamics.com) and join the Preview Early Access Program (PEAP). During a targeted release, Microsoft collects feedback, and further validates quality by monitoring key metrics. During this phase, the release must be deployed on Dev/Test environments. In this preview phase, channel partners, customers, and ISVs use the release to validate their customizations and provide feedback. This release cannot be used in production.
 - Ring 3 is a production-ready, *first release* for customers who opt in. During this phase, customers have the option of taking the release all the way to production.  Participating in the First release program has the benefit of having the Microsoft engineering team closely monitoring the update for any issues   to ensure a successful update.
-- Ring 4 is the final ring and is available to all customers. Microsoft will manage and update the environments.
+- Ring 4 is the final ring and is available to all customers. Microsoft will manage and update the <need the ending from Shelly/Meera>.
 
 > [!Note]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to Ring 3 and Ring 4.
