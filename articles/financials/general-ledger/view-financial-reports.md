@@ -72,14 +72,14 @@ A financial report can be displayed in any currency at any time. To display a re
 A financial report can contain detail lines and summary lines. Detail lines are lines that contain main accounts or dimensions. Summary lines are description, total, and calculation lines. To display just the summary lines of a report, click **Show**, and then click **Summary lines only**. The report is collapsed and displays only the summary lines. To view the detail lines together with the summary lines, click **Show**, and then click **Summary lines only** again.
 
 ## Print a financial report
-To print a financial report, on the Action Pane, click **Print**, and then follow one or more of these steps to set the print options:
+Printing a financial report will create a PDF file which can then be manually printed. To create a printable financial report, on the Action Pane, click **Print**, and then follow one or more of these steps to set the print options:
 
 -   To include the various detail levels in the printed report, set the slider to **Yes** or **No**. If a report uses a reporting tree, you can choose to include all reporting units or just the current reporting unit.
 -   To set the page size, select a page size in the list.
 -   To set the page layout, select a layout in the list. If you want the report content to fit the width that you selected, set the slider to **Yes**.
 -   To set the page margins, type the size of the top, bottom, left, and right margins in inches.
 
-After you've finished setting the print options, click **Print** to print the report. If you decide that you don’t want to print the report, click **Cancel** instead. A preview of the printed report is displayed. You can select the printer to send the report to, and you can also adjust the print options.
+After you've finished setting the print options, click **Print** to continue and be prompted whether you wish to download the file, or save the file to OneDrive or SharePoint. If you decide that you don’t want to continue, click **Cancel** instead. Once you continue, The report will begin rendering on the server and you will be prompted to download the report in PDF format. You can now view the report in your PDF viewer and from here you can select the printer to send the report to, and make any further adjustments for the print options.
 
 ## Export a financial report
 To export a financial report, on the Action Pane, click **Export**. The report is exported to Microsoft Excel, and your browser prompts you to open or save the exported file. The export settings that are defined in the report design are applied to the exported report.    

@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0
 
 ## Introduction
 
-This topic is an overview of the fiscal integration capabilities that are available in Microsoft Dynamics 365 for Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration: 
+This topic is an overview of the fiscal integration capabilities that are available in Microsoft Dynamics 365 for Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
 
 - Register a retail sale on a fiscal device that is connected to Retail point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
 - Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
@@ -90,6 +90,7 @@ When fiscal registration of a transaction or event is successful, a fiscal trans
 
 Fiscal transactions are transferred to Retail Headquarters by the *P-job*, together with retail transactions. On the **Fiscal transactions** FastTab of the **Retail store transactions** page, you can view the fiscal transactions that are linked to retail transactions.
 
+
 A fiscal transaction stores the following details:
 
 - Fiscal registration process details (process, connector group, connector, and so on). It also stores the serial number of the fiscal device in the **Register number** field, if this information is included in the fiscal response.
@@ -118,4 +119,5 @@ The following fiscal integration functionality is also available in the Retail S
 
 - [Digital signature for France](emea-fra-cash-registers.md)
 - [Digital signature for Norway](emea-nor-cash-registers.md)
-- [Control unit integration sample for Sweden](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Control unit integration sample for Sweden](./retail-sdk-control-unit-sample.md)
+

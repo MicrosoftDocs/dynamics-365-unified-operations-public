@@ -5,7 +5,7 @@ title: Debugging and diagnostics
 description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 1/28/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -116,7 +116,6 @@ SET T1.storageproviderid = 0
 FROM docuvalue T1
 WHERE T1.storageproviderid = 1 --Azure storage
 
-ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 GO
 DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
 DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2

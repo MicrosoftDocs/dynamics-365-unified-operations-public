@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 8.1.1
 The Microsoft Dynamics 365 for Retail functionality for Italy includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) so that it works with [Epson FP-90III Series](http://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) printers from Epson, and it enables communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from Epson. For information about how to get the fiscal printer and operate it, contact [Epson Italia S.p.A](http://www.epson.it).
- 
+
 ## Scenarios
 
 The following scenarios are covered by the fiscal printer integration sample for Italy:
@@ -115,7 +115,7 @@ The fiscal printer integration sample implements the following rules that are re
 
 ### Enable extensions
 
-##### Commerce runtime extension components
+#### Commerce runtime extension components
 
 The Commerce runtime extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -137,7 +137,7 @@ The Commerce runtime extension components are included in the Retail SDK. To com
     - **Retail Server:** Restart the Retail service site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
-##### Hardware station extension components
+#### Hardware station extension components
 
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
@@ -176,7 +176,7 @@ To enable the registration process, follow these steps to set up Retail Headquar
 6. Go to **Retail \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and select the connector functional group from the earlier step.
 7. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the created registration process from the earlier step.
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
-9. Open the distribution schedule (**Retail \> Retail IT > Distribution schedule**), and select job **1070** to transfer data to the channel database.
+9. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select job **1070** to transfer data to the channel database.
 
 ## Commerce runtime extension design
 
@@ -239,4 +239,4 @@ The configuration file is found in the **Configuration** folder of the extension
 - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
 - Daily reports (fiscal X and fiscal Z) are printed by using the format that is embedded in the fiscal printer firmware.
 - Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
-- The sample supports integration only with a fiscal printer that is working in the RT (Registratore Telematico) mode. 
+- The sample supports integration only with a fiscal printer that is working in the RT (Registratore Telematico) mode.

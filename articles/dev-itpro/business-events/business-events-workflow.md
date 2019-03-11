@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/30/2019
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,9 @@ After a workflow is submitted by a user, it is added to a queue and run using th
 
 ## Workflow business event categories
 
-There are five different categories of workflow business events.
+There are five different categories of workflow business events. The category will show up in Microsoft Flow to help with event selection.
+
+![Business event categories in Microsoft Flow](media/Business-event-category.png  "Business event categories in Microsoft Flow")
 - **Category: Workflow type** 
      - These events will fire on workflow events like started and completed. All workflow instances will be represented in this category.
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID, for example "Workflow_BudgetPlanReview_000002"

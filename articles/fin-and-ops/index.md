@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 for Finance and Operations documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
 author: margoc
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/08/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,6 +56,20 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="imp-lifecycle/onboard.md">Onboarding a project</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
 
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">One Version service updates</a></h3>
+<p><a href="get-started/one-version.md">One Version service updates FAQ</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software lifecycle policy: Cloud</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software lifecycle policy: On-premises</a></p>
+<p><a href="get-started/public-preview-releases.md">Standard and First release service updates</a></p>
+<p><a href="get-started/whats-new-changed.md">What's new or changed</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, updates, and hotfixes</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Apply updates to cloud environments</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Configure service updates</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Pause service updates</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Get notified about service updates</a></p>
+<p><a href="../dev-itpro/data-entities/data-task-automation.md">Data task automation</a></p>
+<p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation tool</a></p>
+
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
@@ -76,6 +90,8 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="hr/manage-recruiting-process.md">Recruiting</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">US payroll</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Supply chain management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Inventory management</a></p>
@@ -87,8 +103,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Transportation management</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Analytics</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Business documents</a></p>

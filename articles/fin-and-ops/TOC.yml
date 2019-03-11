@@ -34,12 +34,6 @@
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
-      - name: One Version service updates FAQ
-        href: get-started/one-version.md
-      - name: Software lifecycle policy and cloud releases
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: Software lifecycle policy and on-premises releases
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
         href: get-started/mainstream-support-ax-2009-2012.md
       - name: Removed or deprecated features
@@ -48,10 +42,14 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Preview features in Finance and Operations version 10.0.1 (April 2019)
+        href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations version 10.0 (April 2019)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations version 8.1.3 (January 2019)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Preview features in Finance and Operations platform update 25 (April 2019)
+        href: get-started/whats-new-platform-25.md 
       - name: Platform update 24 (March 2019)
         href: get-started/whats-new-platform-update-24.md
       - name: Platform update 23 (January 2019)
@@ -201,6 +199,29 @@
       href: get-started/move-lcs-implementation-project-tenant.md 
     - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: get-started/implement-multiple-projects-aad-tenant.md
+  - name: One Version service updates 
+    href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+    items:
+    - name: One Version service updates FAQ
+      href: get-started/one-version.md
+    - name: Software lifecycle policy - Cloud
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+    - name: Software lifecycle policy - On-premises
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+    - name: Standard and First release service updates
+      href: get-started/public-preview-releases.md
+    - name: Apply updates to cloud environments
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md
+    - name: Configure service updates
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+    - name: Pause service updates
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+    - name: Get notified about service updates
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+    - name: Data task automation
+      href: ../dev-itpro/data-entities/data-task-automation.md
+    - name: Regression Suite Automation tool
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
   - name: Business events
     href: ../dev-itpro/business-events/home-page.md
     items:
@@ -2283,6 +2304,8 @@
           href: ../financials/localizations/rus-financial-reports.md
         - name: Accounting reporting in electronic format
           href: ../financials/localizations/rus-accounting-reporting.md
+        - name: Cash flow management
+          href: ../financials/localizations/rus-cash-flow.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2828,6 +2851,8 @@
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Electronic reporting framework API changes for Application update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+        - name: Specify a custom storage for generated documents
+          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: Embedded analytical solutions
       items:
       - name: Embedded Power BI in workspaces
@@ -3282,6 +3307,8 @@
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: Workflow types report
         href: organization-administration/workflow-types-report.md
+      - name: Workflow FAQ
+        href: organization-administration/workflow-FAQ.md
     - name: Alerts
       href: get-started/alerts-overview.md
       items:
