@@ -118,7 +118,7 @@ You must also specify the following settings for Austria. Note that you must run
 
 You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
-You can print an abbreviated code for a sales tax code in sales receipts (for example, “A”, “B”, etc.) To enable this set the **Print code** field on the **Sales tax codes** page.
+You can print an abbreviated code for a sales tax code in sales receipts (for example, “A”, “B”, etc.) To enable this, set the **Print code** field on the **Sales tax codes** page.
 
 ### Set up Retail stores
 
@@ -196,9 +196,13 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
-### Update POS permissions groups and individual permission settings for store workers
+### Configure fiscal integration
 
-Enable the **Allow skip fiscal registration** permission if the operator is allowed to skip the fiscal registration of a transaction or event in case it fails. This permission is only applicable to fiscal registration process steps that have the **Allow skip** setting enabled.
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md):
+
+- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the [fiscal registration process settings specific for Austria](#set-up-the-registration-process).
+- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ## Deployment guidelines for cash registers for Austria
 
