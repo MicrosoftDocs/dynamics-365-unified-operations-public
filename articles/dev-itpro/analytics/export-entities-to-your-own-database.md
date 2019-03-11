@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -120,7 +120,7 @@ The **Compare source names** option lets you compare the entity schema in the de
 
 #### Configure change tracking
 
-Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions in Finance and Operations. However, since Finance and Operations must track changes at the data entity level, there is additional logic on top of SQL change tracking to make this functionality to work. Later in this section, the steps to enable change tracking is explained.
+Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions in Finance and Operations. However, because Finance and Operations must track changes at the data entity level, there is additional logic on top of SQL change tracking to make this functionality work. The steps to enable change tracking are explained later in this section.
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
@@ -134,7 +134,7 @@ The following table describes the change tracking options that are available.
 | Enable entire entity | Select this option to track all changes to the entity. (These changes include changes to all the tables that make up the entity.) When changes are made to the entity, corresponding updates are made to the destination. |
 | Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the entities that will be exported were built by using a hierarchy of nested views. For more information, see [Enable change tracking for an entity by using a custom query](../data-entities/entity-change-track.md). |
 
-For the change tracking functionality to work, you must enable the **Change tracking** option as shown above in data management. This action is available on the data entities list page which can be navigated to from Data management > Data entities. You must select an entity and choose from one of the options above to enable change trackin on the data entity.
+To use change tracking, you must enable the **Change tracking** option as shown above in data management. This action is available on the **Data entities** list page, by going to **Data management > Data entities**. You need to select an entity and select from one of the options listed above to enable change tracking on the data entity.
 
 If you republish an entity that exists in the destination database, the system warns you that existing data will be deleted because of the new operation.
 
