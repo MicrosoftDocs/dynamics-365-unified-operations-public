@@ -2259,7 +2259,7 @@
         - name: Fixed assets
           items: 
           - name: Set up fixed assets
-            href: ../financials/localizations/rus-set-up-fixed-assets
+            href: ../financials/localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
             href: ../financials/localizations/rus-fixed-asset-acquisition.md
           - name: Register fixed assets acquisitions
