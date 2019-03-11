@@ -46,10 +46,10 @@ Learn how to perform the individual operations on your Standard or Premier Accep
  ## Step-by-step tutorials
  Learn how to achieve common implementation scenarios using DataALM to your advantage:
  * [Refresh for training purposes](dbmovement-scenario-general-refresh.md)
- * [Debugging a copy of the production database](dbmovement-scenario-debugdiag.md)
- * [Exporting a copy of the Standard User Acceptance Test (UAT) database](dbmovement-scenario-exportuat.md)
+ * [Debug a copy of the production database](dbmovement-scenario-debugdiag.md)
+ * [Export a copy of the Standard User Acceptance Test (UAT) database](dbmovement-scenario-exportuat.md)
  * [Golden configuration promotion](dbmovement-scenario-goldenconfig.md)
  * [Destructive testing](dbmovement-scenario-destructivetests.md)
  
- > [!Important]
+ > [!IMPORTANT]
  > New features around point-in-time restore, and RESTful APIs are in private preview. To sign up for the private preview program, please [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).
