@@ -385,19 +385,20 @@ Follow these steps to create deployable packages that contain Retail components,
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-  - Add the following lines to include the CRT extensions in the deployable packages:
 
-    ``` xml	
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-    ```
+    - Add the following lines to include the CRT extensions in the deployable packages:
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+        ```
     
-  - Add the following line to include the Hardware station extension in the deployable packages:
+    - Add the following line to include the Hardware station extension in the deployable packages:
 
-    ``` xml	
-    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
-    ```
+        ``` xml
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
+        ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 
