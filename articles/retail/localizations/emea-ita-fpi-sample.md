@@ -258,9 +258,7 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer.
 
-Hardware station extension: **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**
-
-The Hardware station extension submits the documents that the Commerce runtime extension generates to the fiscal printer via the HTTP protocol. It also handles the responses that are received from the fiscal printer.
+The Hardware station extension is **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**. The Hardware station extension submits the documents that the Commerce runtime extension generates to the fiscal printer via the HTTP protocol. It also handles the responses that are received from the fiscal printer.
 
 #### Request handler
 
