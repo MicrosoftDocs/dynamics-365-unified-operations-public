@@ -200,7 +200,7 @@ For more information about how to work with receipt formats, see [Receipt templa
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md):
 
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the [fiscal registration process settings specific for Austria](#set-up-the-registration-process).
+- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the fiscal registration process settings [specific for this fiscal registration service integration sample](#set-up-the-registration-process).
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 - [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
