@@ -163,7 +163,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 	
 1. Add the following section to the **composition** section of the config file.
 
-    ```
+    ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
     ```
 
@@ -207,17 +207,17 @@ Follow these steps to create deployable packages that contain Retail components,
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-  - Add the following line to include the CRT extension in the deployable packages:
+    - Add the following line to include the CRT extension in the deployable packages:
 
-    ``` xml	
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
-    ```
+        ``` xml	
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
+        ```
     
-  - Add the following line to include the Hardware station extension in the deployable packages:
+    - Add the following line to include the Hardware station extension in the deployable packages:
 
-    ``` xml	
-    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
-    ```
+        ``` xml	
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
+        ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 
