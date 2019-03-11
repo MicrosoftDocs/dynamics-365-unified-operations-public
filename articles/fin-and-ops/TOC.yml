@@ -2291,6 +2291,7 @@
           - name: Calculate depreciation
             href: ../financials/localizations/rus-depreciation-calculation.md
         - name: Accounts payable and receivable
+          items:
           - name: Invoices for payment
             href: ../financials/localizations/rus-invoice-payment.md
           - name: Set up dimension control for settlements
@@ -2298,6 +2299,7 @@
           - name: Cash flow management
             href: ../financials/localizations/rus-cash-flow.md
         - name: Reporting
+          items:
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
         - name: Company divisions
