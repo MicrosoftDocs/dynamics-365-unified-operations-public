@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,9 +37,6 @@ ms.dyn365.ops.version: Platform 25
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.5222. For more information about Platform update 25, see [Additional resources](whats-new-platform-25.md#additional-resources).
 
-## Azure blob storage as an endpoint for business events
-Azure blob storage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported, which allows for a wider choice of integration scenarios.
-
 ## Extensibility enhancements
 The [second wave of platform extensibility enhancements](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility2) included in Platform update 25 is documented in the April 2019 Release notes. There are fourteen enhancements detailed, with one of the highlights being that Chain of Command on an InternalUseOnlyAttribute method is now allowed with just a warning.
 
@@ -65,6 +62,14 @@ Stay on top of your business data with integrated change tracking tools. With th
 
 ## Client alert sub-table field tracking
 The latest Platform update release includes the ability to create alert rules that monitor updates made to fields sourced from child tables. Previously, options were limited to fields sourced from the root data source. Now you can able define alert rules for all fields visible to the user including those from child tables.
+
+## Azure blob storage as an endpoint for business events (private preview)
+Azure blob storage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported, which allows for a wider choice of integration scenarios.
+
+For more information about business events, see [Business events](../../dev-itpro/business-events/home-page.md). 
+
+> [!Note]
+> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). For information about how to enable the feature, see [Enabling business events](../../dev-itpro/business-events/home-page.md#enabling-business-events).
 
 ## Additional resources
 
