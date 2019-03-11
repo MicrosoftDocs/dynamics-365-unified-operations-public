@@ -5,7 +5,7 @@ title: Expense management Power BI content
 description: This topic describes what is included in the Expense management Power BI content pack.
 author: RyanSand
 manager: AnnBe
-ms.date: 03/01/2019
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,25 +30,24 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Expense managamentPower BI content
+# Expense management Power BI content
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what is included in the Expense Management Power BI content. 
+This topic describes what is included in the Expense management Power BI content. 
 
 ## Overview
-Two Power BI content packs are available for use with Expense Management in version 8.1 and newer. 
-- There is a personal dashboard designed for employees submitting expense reports. 
+Two Power BI content packs are available for use with Expense management in version 8.1 and later. 
+- There is a personal dashboard designed for employees who submit expense reports. 
 
-The dashboard is tailored to providing key information to individuals on unsubmitted and submitted amounts as well as a history and insights into their expense transaction history. The personal dashboard is a single page containing the most important information for the user. 
+  The dashboard is tailored to provide key information to individuals about unsubmitted and submitted amounts, as well as history and insights into expense transaction history. The personal dashboard is a single page containing the most important information for the user.
 
-- There is an admin dashboard designed for accounts payable clerks and managers. The dashboard is tailored towards tracking and reporting on overall employee expenses. It provides key expense metrics, such as unsubmitted expenses, mileage, and average expense report amount. It uses transactional data and provides aggregate views of expense management across all companies. It also provides a breakdown per employee and can have financial dimension data added.
-The Admin expense analytics content is three pages containing:
-  - An overview page with key metrics on expense amounts and insights into draft, in process, and completed expense reports. 
-  - An employee statistics page to review an individual employee in detail by time, cost type, and statistics group. 
-  - An employee comparison page to compare multiple employees against others over time. 
+- There is an admin dashboard designed for accounts payable clerks and managers. The dashboard is tailored toward tracking and reporting on overall employee expenses. It provides key expense metrics, such as unsubmitted expenses, mileage, and average expense report amounts. It uses transactional data and provides aggregate views of expense management across all companies. It also provides a breakdown per employee, with the option to add financial dimension data. The Admin expense analytics content contains: 
+  - An overview page with key metrics about expense amounts and insights into draft, in process, and completed expense reports. 
+  - An employee statistics page to review individual details about an employee by time, cost type, and statistics group. 
+  - An employee comparison page to compare multiple employees over time. 
 
-All the amounts are shown in the company currency. Data for all companies are shown, but you can add a company filter. 
+All the amounts are shown in the company currency. Data for all companies are shown, but if needed you can add a company filter. 
 
 ## Accessing the Power BI content
 You can find the Expense Admin Dashboard.pbix and Expense Personal Dashboard.pbix Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
@@ -60,7 +59,7 @@ The Expense management Power BI content requires the TrvBiExpenseMeasurement mea
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the Power BI content.
 
-Personal expenses analytics
+**Personal expenses analytics**
 
 | Report page | Visualization                             |
 |-------------|-------------------------------------------|
@@ -79,7 +78,7 @@ Personal expenses analytics
 |             | Expenses by project                       |
 |             | Total transaction amount over time        |
 
-Admin expenses analytics
+**Admin expenses analytics**
 
 | Report page         | Visualization                           |           
 |---------------------|-----------------------------------------|
