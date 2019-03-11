@@ -5,7 +5,7 @@ title: Security and role management in Attract
 description: This topic provides information about role security in Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -105,14 +105,16 @@ The following privileges apply to the job-specific data for applicants and the a
 | Data or action          | Recruiter | Hiring Manager | Interviewer |
 |-------------------------|-----------|----------------|-------------|
 | Application documents   | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
-| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Create |
+| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only|
 | Application Activity    | View, if the user is on the hiring team | View, if the user is on the hiring team | Read-only |
 | Application feedback    | Add and view all feedback if the user is on the hiring team | Add and view all feedback if the user is on the hiring team | Can add feedback\*\* |
 | Reject application      | Can reject if the user is on the hiring team | Not allowed | Not allowed |
 | Advance stage           | Can reject if the user is on the hiring team | Can advance if the user is on the hiring team | Not allowed |
 | Launch offer management | Can start offer management | There is a configuration option on the offer activity. | Not allowed |
 
-\*\* A configuration option in the [feedback activity setup](activities-attract.md#feedback-activity) controls whether interviewers can see each other's feedback.
+
+\*\* A configuration option in the [feedback activity setup](./activities-attract.md) controls whether interviewers can see each other's feedback.
+
 
 ## Process templates
 

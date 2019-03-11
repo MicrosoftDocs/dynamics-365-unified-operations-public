@@ -41,8 +41,8 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 | Term | Description |
 |---|---|
 | Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 for Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
-| Card present | When a payment terminal is implemented by using the **INamedRequestHandler** interface, it's typically referred to as a card-present payment connector. The term *card present* is used because this type of payment connector supports transactions where a physical card is presented. |
-| Card not present | Payment connectors that are intended to be used in the back office, a call center, or e-Commerce integrations are implemented by using the **IPaymentProcessor** interface. They are typically referred to as card-not-present payment connectors. |
+| Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
+| Card not present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manyally either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
 ## Overview
 
@@ -52,77 +52,86 @@ This topic includes the following main sections to help you evaluate and set up 
 - **[Sign up with Adyen](#Sign-up-with-Adyen)** – This section explains how to sign up for a merchant account with Adyen.
 - **[Setup and configuration](#Setup-and-configuration)** – This section explains, in detail, how to set up and configure the Dynamics 365 Payment Connector for Adyen across the point of sale (POS), call center, and e-Commerce channels.
 
-## Supported features, functionality, and payment terminals
+## Supported features, functionality, versions, and terminals
 
 The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard payments SDK. Therefore, it doesn't have special capabilities that aren't also available to other payment connectors.
 
-### Supported versions of Microsoft Dynamics
+### Supported Versions
 
+#### Microsoft Dynamics 365 Supported Versions
 The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 for Finance and Operations version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 for Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
 
+#### Supported Adyen Firmware Versions
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 for Retail POS.
+
+# [8.1.3](#tab/8-1-3)
+| Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_35p15 |
+
+# [10.0](#tab/10-0)
+| Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_35p15 |
+
+# [10.0.1](#tab/10-0-1)
+| Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_35p15 |
+
 ### Supported payment terminals
-
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
-
-### Supported input methods
-
-| Connector type | Dip | Swipe | Tap | Manual entry |
-|---|---|---|---|---|
-| Card present | Yes | Yes | Yes | Yes |
-| Card not present | No | No | No | Yes |
 
 ### Supported payment instruments
 
 #### Supported debit and credit cards
 
-| Brand | Variant | Supported | Card present | Card not present |
-|---|---|---|---|---|
-| MasterCard | Credit | ✔ | Yes | Yes |
-| MasterCard | Debit | ✔ | Yes | Yes |
-| MasterCard | Alpha Bank Bonus | ✔ | Yes | Yes |
-| MasterCard | Apple Pay | ✔ | Yes | No |
-| MasterCard | Samsung Pay | ✔ | Yes | No |
-| MasterCard | Maestro | ✔ | Yes | Yes |
-| MasterCard | Maestro Samsung Pay | ✔ | Yes | No |
-| MasterCard | Maestro UK | ✔ | Yes | Yes |
-| VISA | Credit | ✔ | Yes | Yes |
-| VISA | Debit | ✔ | Yes | Yes |
-| VISA | Alpha Bank Bonus | ✔ | Yes | Yes |
-| VISA | Android Pay | ✔ | Yes | No |
-| VISA | Apple Pay | ✔ | Yes | No |
-| VISA | Samsung Pay | ✔ | Yes | No |
-| VISA | VISA Checkout | ✔ | Yes | Yes |
-| VISA | VISA Dankort | ✔ | Yes | Yes |
-| VISA | VISA Hipotecario | ✔ | Yes | Yes |
-| VISA | VISA Aravia Card | ✔ | Yes | Yes |
-| AMEX | Credit | ✔ | Yes | Yes |
-| AMEX | Debit | ✔ | Yes | Yes |
-| AMEX | Android Pay | ✔ | Yes | No |
-| AMEX | Apple Pay | ✔ | Yes | No |
-| AMEX | Samsung Pay | ✔ | Yes | No |
-| AMEX | AMEX Commercial | ✔ | Yes | Yes |
-| AMEX | AMEX Consumer | ✔ | Yes | Yes |
-| AMEX | AMEX Corporate | ✔ | Yes | Yes |
-| AMEX | AMEX Small Business | ✔ | Yes | Yes |
-| Discover | Standard | ✔ | Yes | Yes |
-| Discover | Android Pay | ✔ | Yes | No |
-| Discover | Apple Pay | ✔ | Yes | No |
-| Discover | Samsung Pay | ✔ | Yes | No |
-| Diners | Standard | ✔ | Yes | Yes |
-| Dineromail | Standard | ✔ | Yes | Yes |
-| JCB | Standard | ✔ | Yes | Yes |
-| Union Pay* | Standard | Support will be added in a future release. | No | Not applicable |
-| Interac Debit | Standard | Support will be added in a future release. | No | No |
+| Brand | Variant | Card present | E-Commerce | Call Center |
+|---|---|:-:|:-:|:-:|
+| MasterCard | Credit | ✔ | ✔ | ✔ |
+| MasterCard | Debit | ✔ | ✔ | ✔ |
+| MasterCard | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| MasterCard | Apple Pay | ✔ |  |  |
+| MasterCard | Samsung Pay | ✔ |  |  |
+| MasterCard | Maestro | ✔ | ✔ | ✔ |
+| MasterCard | Maestro Samsung Pay | ✔ |  |  |
+| MasterCard | Maestro UK | ✔ | ✔ | ✔ |
+| VISA | Credit | ✔ | ✔ | ✔ |
+| VISA | Debit | ✔ | ✔ | ✔ |
+| VISA | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| VISA | Android Pay | ✔ |  |  |
+| VISA | Apple Pay | ✔ |  |  |
+| VISA | Samsung Pay | ✔ |  |  |
+| VISA | VISA Checkout | ✔ | ✔ | ✔ |
+| VISA | VISA Dankort | ✔ | ✔ | ✔ |
+| VISA | VISA Hipotecario | ✔ | ✔ | ✔ |
+| VISA | VISA Aravia Card | ✔ | ✔ | ✔ |
+| AMEX | Credit | ✔ | ✔ | ✔ |
+| AMEX | Debit | ✔ | ✔ | ✔ |
+| AMEX | Android Pay | ✔ |  |  |
+| AMEX | Apple Pay | ✔ |  |  |
+| AMEX | Samsung Pay | ✔ |  |  |
+| AMEX | AMEX Commercial | ✔ | ✔ | ✔ |
+| AMEX | AMEX Consumer | ✔ | ✔ | ✔ |
+| AMEX | AMEX Corporate | ✔ | ✔ | ✔ |
+| AMEX | AMEX Small Business | ✔ | ✔ | ✔ |
+| Discover | Standard | ✔ | ✔ | ✔ |
+| Discover | Android Pay | ✔ |  |  |
+| Discover | Apple Pay | ✔ |  |  |
+| Discover | Samsung Pay | ✔ |  |  |
+| Diners | Standard | ✔ | ✔ | ✔ |
+| Dineromail | Standard | ✔ | ✔ | ✔ |
+| JCB | Standard | ✔ | ✔ | ✔ |
+| Union Pay* | Standard | ✔ | Not applicable | Not applicable |
+| Interac Debit | Standard | Support will be added in a future release. | Support will be added in a future release. | Support will be added in a future release. |
 
 *Adyen does not support recurring tokens for Union Pay, so it cannot be used for card not present purchases.
 
-
 #### Supported gift cards
-
 | Scheme | Card present | Card not present |
-|---|---|---|
-| Givex | ✔ (version 8.1.3) | Support will be added in a future release. |
-| SVS | ✔ (version 8.1.3) | Support will be added in a future release. |
+|---|:-:|---|
+| Givex | ✔ | Support will be added in a future release. |
+| SVS | ✔ | Support will be added in a future release. |
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
@@ -133,21 +142,70 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Alipay | Support will be added in a future release. | No |
 | WeChat | Support will be added in a future release. | No |
 
-#### Supported Dynamics 365 payment features
+#### Supported card present input methods
+| Input method | Supported | Notes |
+|---|:-:|---|
+| Dip | ✔ | |
+| Swipe | ✔ | |
+| Tap | ✔ | |
+| Manual Entry through POS UI. | ✔ | Does not support pin entry. |
+| Manual Entry through Payment Terminal. |  | Supports pin entry. | 
 
+#### Supported card present countries
+| Country | Supported |
+| --- | :-: |
+| Australia | ✔ |
+| Austria | ✔ |
+| Belgium | ✔ |
+| Canada | ✔ |
+| Croatia | ✔ |
+| Cyprus | ✔ |
+| Czech Republic | ✔ |
+| Denmark | ✔ |
+| Estonia | ✔ |
+| Finland | ✔ |
+| France | ✔ |
+| Germany | ✔ |
+| Greece | ✔ |
+| Hungary | ✔ |
+| Hong Kong | ✔ |
+| Iceland | ✔ |
+| Ireland | ✔ |
+| Italy | ✔ |
+| Latvia | ✔ |
+| Lithuania | ✔ |
+| Netherlands | ✔ |
+| Norway | ✔ |
+| Poland | ✔ |
+| Portugal | ✔ |
+| Singapore | ✔ |
+| Slovakia | ✔ |
+| Slovenia | ✔ |
+| Switzerland | ✔ |
+| Spain | ✔ |
+| Sweden | ✔ |
+| Switzerland | ✔ |
+| United Kingdom | ✔ |
+| United States | ✔ |
+| Brazil | Q1 2019 |
+
+#### Supported card not present countries
+For card not present scenarios, such as E-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
+
+#### Supported Dynamics 365 payment features
 The following table shows the set of Dynamics 365 payment features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some Retail components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
 
 | Scheme | Card present | Card not present |
-|---|---|---|
-| Duplicate Payment Protection | Yes (version 8.1.3) | No |
-| Omni Channel Tokenization | Yes (version 8.1.3) | Yes (version 8.1.3) |
-| Linked Refunds | Support will be added in a future release. | Support will be added in a future release. |
+|---|:-:|:-:|
+| [Duplicate Payment Protection](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
+| Omni Channel Tokenization | ✔ | ✔ |
+| Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
 
 ## Sign up with Adyen
 
-To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account that you can use for the Dynamics 365 Payment Connector for Adyen, visit the [Adyen website](https://www.adyen.com/partners).
+To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/partners).
 
-If you prefer that Adyen contact you directly, send an email to <partnerships@adyen.com>. In the subject line of the email, include the term "Microsoft Dynamics connector." In the body of the email, be sure to include enough information so that the inquiry can be routed correctly:
+If you prefer that Adyen contact you directly, send an email to <MicrosoftDynamics@adyen.com>. In the subject line of the email, include the term "Microsoft Dynamics connector." In the body of the email, be sure to include enough information so that the inquiry can be routed correctly:
 
 - Business name
 - Nature of business (for example, "merchant" or "Microsoft partner")
@@ -184,12 +242,12 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
 3. On the **Payment service account** tab, enter the following information.
 
     | Field | Description | Required | Automatically set | Sample value |
-    |---|---|---|---|---|
-    | Assembly Name | Enter the name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
-    | Service account ID | Enter the unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
+    |---|---|:-:|:-:|---|
+    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
+    | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Currently, only version V001 is supported. | Yes | Yes | V001 |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | `https://terminal-api-live.adyen.com/sync` |
+    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#Sign-up-with-Adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
     | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
@@ -232,12 +290,12 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 3. In the **Connector properties** section, enter the following information.
 
     | Field | Description | Required | Automatically set | Sample value |
-    |---|---|---|---|---|
-    | Assembly Name | Enter the name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
-    | Service account ID | Enter the unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
+    |---|---|:-:|:-:|---|
+    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
+    | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Currently, only version V001 is supported. | Yes | Yes | V001 |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | `https://terminal-api-live.adyen.com/sync` |
+    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#Sign-up-with-Adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This must be set to **Local** for POS terminals. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Local |
     | Local Password phrase | Enter the Adyen key passphrase for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#Sign-up-with-Adyen) section. | Yes | No | keypassphrase123 |
@@ -302,12 +360,12 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
 5. Enter the following additional information.
 
     | Field | Description | Required | Automatically set | Sample value |
-    |---|---|---|---|---|
-    | Assembly Name | Enter the name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
-    | Service Account ID | Enter the unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
+    |---|---|:-:|:-:|---|
+    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
+    | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Currently, only version V001 is supported. | Yes | Yes | V001 |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. | Yes | Yes | Live |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | `https://terminal-api-live.adyen.com/sync` |
+    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#Sign-up-with-Adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |

@@ -87,7 +87,7 @@ Once the data entities that expose the data your integrating apps require are
 present in CDS, you can make full use of the [CDS platform and the APIs it
 supports](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer).
 Among the supported APIs is the [Dynamics 365 Web
-API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)),
+API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api),
 which provides an OData implementation for accessing CDS data.
 
 The CDS entities and the associated APIs are the best option for accessing

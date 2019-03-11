@@ -50,7 +50,7 @@ When a month is used in the Date column, the regulatory update is planned to be 
 |      April 2019          |   10.0.1      |    Europe     |E-invoicing - Customers invoices export in PEPPOL BIS 3 format         |
 |      April 2019          |   10.0.1      |    Europe     |E-invoicing - Vendors invoices import from PEPPOL BIS 3 format         |
 |      April 2019          |   10.0.1      |   Germany     |E-invoicing - Customers invoices export in xRechnung 1.1 format         |
-|      April 2019          |   10.0.1      |    United Kingdom     |VAT Statement submission changes (Making Tax Digital)    |    
+|      April 2019          |   10.0.1      |    United Kingdom     |[VAT Statement submission changes (Making Tax Digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      April 2019          |   10.0.1      |    Brazil     |NF-e new NT 2018.005         |
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019         |
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books formats)  |
