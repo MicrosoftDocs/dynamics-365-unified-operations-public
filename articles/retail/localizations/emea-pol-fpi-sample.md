@@ -89,7 +89,7 @@ The following default data mapping is included in the fiscal document provider c
 
     *0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
 
-### Gift cards handling
+### Gift cards
 
 The fiscal printer integration sample implements the following rules that are related to gift cards:
 
@@ -99,7 +99,7 @@ The fiscal printer integration sample implements the following rules that are re
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
 - Payment by gift card is considered a regular payment.
 
-### Customer deposits and customer order deposits handling
+### Customer deposits and customer order deposits
 
 The fiscal printer integration sample implements the following rules that are related to customer deposits and customer order deposits:
 
