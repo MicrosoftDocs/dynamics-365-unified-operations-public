@@ -201,11 +201,17 @@ Follow these steps to create deployable packages that contain Retail components,
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-        ``` xml
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll"/>
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
-        ```
+  - Add the following line to include the CRT extension in the deployable packages:
+
+    ``` xml	
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll"/>
+    ```
+    
+  - Add the following line to include the Hardware station extension in the deployable packages:
+
+    ``` xml	
+    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll"/>
+    ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 
@@ -217,7 +223,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
 The purpose of the extension (document provider) is to generate printer-specific documents and handle responses from the fiscal printer.
 
-The Commerce runtime extension is **Commerce.Runtime.DocumentProvider.PosnetSample.DocumentProviderPosnetProtocol**. This extension generates the set of printer-specific commands that are defined by POSNET specification 19-3678, in JavaScript Object Notation (JSON) format.
+The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.PosnetSample**. This extension generates the set of printer-specific commands that are defined by POSNET specification 19-3678, in JavaScript Object Notation (JSON) format.
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
@@ -231,7 +237,6 @@ The connector supports the following requests:
 
 - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a printer-specific document that should be registered in the fiscal printer.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
-- **SaveFiscalRegistrationResultDocumentProviderRequest** – This request saves the response from the printer.
 
 #### Configuration
 
@@ -245,7 +250,7 @@ The configuration file is found in the **Configuration** folder of the extension
 
 The purpose of the extension (connector) is to communicate with the fiscal printer.
 
-The Hardware station extension is **Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.FiscalPrinterHandler**. This extension submits commands that the Commerce runtime extension generates to the fiscal printer, by calling the functions of the POSNET driver that is provided by the manufacturer. It also handles device errors.
+The Hardware station extension is **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample**. This extension submits commands that the Commerce runtime extension generates to the fiscal printer, by calling the functions of the POSNET driver that is provided by the manufacturer. It also handles device errors.
 
 #### Request handler
 
