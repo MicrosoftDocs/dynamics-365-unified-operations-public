@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Exporting a copy of the Standard User Acceptance Test (UAT) database
+title: Exporting a copy of the standard User Acceptance Test (UAT) database
 description: This topic explains a database export scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/28/2019
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Exporting a copy of the Standard User Acceptance Test (UAT) database
+# Exporting a copy of the standard User Acceptance Test (UAT) database
 
 [!include [banner](../includes/banner.md)]
 
-Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to export all of the data and transactions from a sandbox Standard User Acceptance Test (UAT) environment.
+Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to export all of the data and transactions from a sandbox, standard User Acceptance Test (UAT) environment.
 
 In this tutorial, you will learn how to:
 
@@ -48,19 +48,15 @@ As an example of this scenario, a customer who has already gone live with Micros
 Due to recent restrictions by the Azure SQL platform, it is not recommended to export your database if it is larger than 200GB.  If you must do this, the recommended option is to use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until Azure SQL can support larger exports.  Note that this recommendation is for Export, and not for Refresh which can support databases up to 4TB in size.
 
 ## Prerequisites
-
 To do a refresh operation, you must have your production environment deployed, or you must have a minimum of two standard UAT environments. To complete this tutorial, you must have a developer environment deployed.
 
 ## Refresh the UAT environment
-
 This refresh operation will overwrite the UAT environment with the latest copy of the production database. To complete this step, follow the instructions in [Refresh for training purposes](dbmovement-scenario-general-refresh.md).
 
 ## Back up to the Asset Library
-
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
 ## Import the database
-
 After you've downloaded a database backup (.bacpac) file, you can begin the manual import operation on your Tier 1 environment. When you import the database, we recommend that you follow these guidelines:
 
 - Keep a copy of the existing AxDB database, so that you can revert to it later if required.
@@ -84,7 +80,6 @@ Here is an explanation of the parameters:
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
 ## Update the database
-
 Run the following SQL script against the imported database. This script adds back the users that you deleted from the source database and correctly links them to the SQL logins for this SQL instance. The script also turns change tracking back on. Remember to edit the final **ALTER DATABASE** statement so that it uses the name of your database.
 
 ```
@@ -151,7 +146,6 @@ DEALLOCATE retail_ftx;
 ```
 
 ### Turn on change tracking
-
 If change tracking was turned on in the source database, be sure to turn it on in the newly provisioned database in the target environment by using the **ALTER DATABASE** command.
 
 ```
@@ -161,7 +155,6 @@ ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION =
 To help guarantee that the current version of the store procedure that is related to change tracking is used in the new database, you must turn change tracking on or off for a data entity in data management. You can choose any entity. This step is required to trigger the refresh of the store procedure.
 
 ## Start to use the new database
-
 To switch environments and use the new database, first stop the following services:
 
 - World Wide Web Publishing Service
@@ -173,15 +166,12 @@ After these services have been stopped, rename the AxDB database **AxDB\_orig**,
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 
 ### Reprovision the target environment
-
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
-
 If you're using Financial Reporting, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md). (Financial Reporting was previously named Management Reporter.)
 
 ## Reenter data from encrypted and environment-specific fields in the target database
-
 In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. The field names are given in *Table.Field* format.
 
 | Field name                                               | Where to set the value |
@@ -197,7 +187,6 @@ In the Finance and Operations client, enter the values that you documented for t
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
 ## Community tools
-
 Are you looking for more tools to help with importing backup files to your developer environments? Here are some other sources of information:
 
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that have been created by the community.
@@ -249,7 +238,6 @@ WHERE PARM = 'SYSTABVERSION'
 > The value **138** in the preceding query is taken from the event log message, where version 138 was expected in this particular environment.
 
 ### Performance
-
 The following guidelines can help you achieve optimal performance:
 
 - Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
