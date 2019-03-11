@@ -201,17 +201,23 @@ Follow these steps to create deployable packages that contain Retail components,
 
     - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
 
-        ``` xml
+        ``` xml 
         <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
         ```
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-        ``` xml
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath\Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
-        ```
+  - Add the following line to include the CRT extension in the deployable packages:
+
+    ``` xml	
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
+    ```
+    
+  - Add the following line to include the Hardware station extension in the deployable packages:
+
+    ``` xml	
+    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
+    ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 
@@ -252,7 +258,7 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 The purpose of the extension (connector) is to communicate with the fiscal printer.
 
-Hardware station extension: **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample**
+Hardware station extension: **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**
 
 The Hardware station extension submits documents that the Commerce runtime extension generates to the fiscal printer (via HTTP protocol). It also handles the responses that are received from the fiscal printer.
 
