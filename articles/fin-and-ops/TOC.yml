@@ -2258,6 +2258,8 @@
             href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Fixed assets
           items: 
+          - name: Set up fixed assets
+            href: ../financials/localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
             href: ../financials/localizations/rus-fixed-asset-acquisition.md
           - name: Register fixed assets acquisitions
@@ -2288,6 +2290,18 @@
             href: ../financials/localizations/rus-bonus-depreciation.md
           - name: Calculate depreciation
             href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Accounts payable and receivable
+          items:
+          - name: Invoices for payment
+            href: ../financials/localizations/rus-invoice-payment.md
+          - name: Set up dimension control for settlements
+            href: ../financials/localizations/rus-transactions-settlement-date.md
+          - name: Cash flow management
+            href: ../financials/localizations/rus-cash-flow.md
+        - name: Reporting
+          items:
+          - name: Financial reporting
+            href: ../financials/localizations/rus-financial-reports.md
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
@@ -3829,8 +3843,6 @@
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Fulfill sales agreements
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: Create a new trade agreement
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: Generate and process customer rebates
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: Process rebates for payment
@@ -3856,7 +3868,9 @@
       - name: Set up sales commission rules
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: Trade allowance
-      href: ../supply-chain/sales-marketing/trade-allowance.md 
+      href: ../supply-chain/sales-marketing/trade-allowance.md
+    - name: Create a new trade agreement
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: Service management
     href: ../supply-chain/service-management/service-management-home-page.md
     items:
