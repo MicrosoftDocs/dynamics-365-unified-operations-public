@@ -111,7 +111,7 @@ To prepare Dynamics 365 for Finance and Operations to interoperate with MTD for 
 >
 > ![Default for model mapping](media/emea-gbr-default-for-model-mapping-parameter.png)
 
-For more information about how to download Electronic reporting configurations from Lifecycle Services, refer to [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). 
+For more information about how to download Electronic reporting configurations from Lifecycle Services, refer to [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). 
 
 ## Setup application specific parameters
 
@@ -163,7 +163,7 @@ To do so, click on **Import** button in **Data management** work space, define *
 
 ![Add file](media/emea-gbr-mtd-vat-add-file.png)
 
-For more information, refer to [Data management](../../dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+For more information, refer to [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json).
 
 > [!NOTE]
 > Some records in the data entities of the package include link on ER configurations. It is important to have ER configurations imported to Dynamics 365 for Finance and Operations before you start importing of data entities package.
