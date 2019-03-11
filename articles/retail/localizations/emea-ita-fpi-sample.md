@@ -92,7 +92,7 @@ The following default data mapping is included in the fiscal document provider c
 
     *1 : 0 ; 2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
 
-### Gift card handling
+### Gift cards
 
 The fiscal printer integration sample implements the following rules that are related to gift cards:
 
