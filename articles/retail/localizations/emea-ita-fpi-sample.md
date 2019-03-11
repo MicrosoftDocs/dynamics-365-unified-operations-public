@@ -227,9 +227,9 @@ Follow these steps to create deployable packages that contain Retail components,
 
 ### Commerce runtime extension design
 
-The purpose of the extension (document provider) is to generate printer-specific documents and handle responses from the fiscal printer.
+The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer.
 
-Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
+The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
@@ -246,21 +246,21 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
 
 - VAT codes mapping
 - VAT rates mapping
 - Tender type mapping
-- Barcode type for the receipt number
+- Barcode type for receipt number
 - Deposit payment type
 
 ### Hardware station extension design
 
-The purpose of the extension (connector) is to communicate with the fiscal printer.
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer.
 
 Hardware station extension: **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**
 
-The Hardware station extension submits documents that the Commerce runtime extension generates to the fiscal printer (via HTTP protocol). It also handles the responses that are received from the fiscal printer.
+The Hardware station extension submits the documents that the Commerce runtime extension generates to the fiscal printer via the HTTP protocol. It also handles the responses that are received from the fiscal printer.
 
 #### Request handler
 
@@ -276,7 +276,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
 
 - **Endpoint address** – The URL of the printer.
-- **Date and time synchronization** – This setting indicates whether you must sync the date and time of the printer with the connected Hardware station. The date and time of the printer will be synced with the Hardware station time.
+- **Date and time synchronization** – This setting indicates whether the date and time of the printer needs to be synchronized with the connected Hardware station.
