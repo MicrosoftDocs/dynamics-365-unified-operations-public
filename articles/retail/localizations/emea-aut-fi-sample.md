@@ -410,9 +410,11 @@ For more details about the design of the fiscal integration solution, see [Fisca
 
 #### Request handler
 	
-The **EFRSample** request handler is the entry point for the request to generate documents from the fiscal printer.
+There are two request handlers for Document provider: 
+  - **DocumentProviderEFRFiscalAUT** - to generate fiscal documents for the fiscal service.
+  - **DocumentProviderEFRNonFiscalAUT** - to generate non-fiscal documents for the fiscal service.
 
-The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
+These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
 
 The connector supports the following requests:
 
@@ -423,7 +425,12 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+The configuration files are located in the **Configuration** folder of the extension project. 
+
+  - **DocumentProviderFiscalEFRSampleAustria** - for fiscal documents.
+  - **DocumentProviderNonFiscalEFRSampleAustria** - for non-fiscal documents.
+
+The purpose of these files is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
 
   - VAT rates mapping
 
@@ -437,7 +444,7 @@ The Hardware station extension submits documents that the Commerce runtime exten
 
 #### Request handler
 
-The **EFRSample** request handler is the entry point for handling request to the fiscal registration service.
+The **EFRHandler** request handler is the entry point for handling request to the fiscal registration service.
 
 The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Retail Headquarters.
 
