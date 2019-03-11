@@ -48,6 +48,10 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 This feature provides support for the creation of project-based sales orders for time and material projects funded by a grant on the related project contract. The customer assigned as the contact for the grant will be the customer on the sales order.
 
+## Support for project-based sales orders for projects with multiple funding sources
+
+This feature allows creation of sales orders for time and material projects where the related project contract has multiple funding sources. Enable this feature by selecting the **Allow sales orders for projects with multilple funding sources** option on the **General** tab in the **Project management and accounting parameters** form. The parameter will be removed and the feature will always be enabled in a future release. See [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) for more information.
+
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
