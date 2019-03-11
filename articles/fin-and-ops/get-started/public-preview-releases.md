@@ -43,7 +43,7 @@ Each new release is designed and developed by the Dynamics 365 for Finance and O
 
 - Ring 2 is a targeted release. This release is available to channel partners, customers, and ISVs who opt in through the [Insider program](https://experience.dynamics.com) and join the Preview Early Access Program (PEAP). During a targeted release, Microsoft collects feedback, and further validates quality by monitoring key metrics. During this phase, the release must be deployed on Dev/Test environments. In this preview phase, channel partners, customers, and ISVs use the release to validate their customizations and provide feedback. This release cannot be used in production.
 - Ring 3 is a production-ready, *first release* for customers who opt in. During this phase, customers have the option of taking the release all the way to production.  Participating in the First release program has the benefit of having the Microsoft engineering team closely monitoring the update for any issues   to ensure a successful update.
-- Ring 4 is the final ring and is available to all customers. Microsoft will manage and update the
+- Ring 4 is the final ring and is available to all customers. Microsoft will manage and update the environments.
 
 > [!Note]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to Ring 3 and Ring 4.
@@ -52,9 +52,9 @@ The releases are shown in the following image.
 
 ![Release process](media/release-process.png)
 
-## Standard release (Ring 4)
+## Targeted release (Ring 2)
 
-The standard release, or Ring 4, is the default option. With this release, you can access the most recent release of Finance and Operations when it is released to all customers. In the standard release, you configure the update day and time to ensure predictability of the Microsoft managed update. You can also designate an environment for user-acceptance testing (UAT). This environment is updated by Microsoft seven calendar days prior to updating the production environment. Please see [One Version service updates FAQ](one-version.md) for more details.  The self-update option is available for all customers in order to stay current on the most recent service update.  Microsoft will auto-update the environments selected based on the configuration date/time shown in Lifecycle Services if the production environment is not on a supported service update. Microsoft will release a minimum 10 service updates per calendar year.    All service updates will be cumulative and made available via Lifecycle Services.
+Preview early access program (PEAP) is available for customers, channel partners, and ISVs to deploy into their sandbox environments.  This preview version is not available for production use.   The participant is required to self-update to the latest service update once the First Release or Standard update is made generally available. The participants can raise issues to Microsoft and has the additional value of testing updates early prior to updating the production environments and providing feedback directly to the R&D team.
 
 ## First release (Ring 3)
 
@@ -64,9 +64,9 @@ In this program, Microsoft manages the update to both UAT and production environ
 
 Microsoft will make the Production ready Service Update package available to customers after the First Release customers have provided feedback and validation to Microsoft.  Notification on when this service update will be available for all customers will be made via Lifecycle Services Action Center and Support Lifecycle Policy page.
 
-## Targeted release (Ring 2)
+## Standard release (Ring 4)
 
-Preview early access program (PEAP) is available for customers, channel partners, and ISVs to deploy into their sandbox environments.  This preview version is not available for production use.   The participant is required to self-update to the latest service update once the First Release or Standard update is made generally available. The participants can raise issues to Microsoft and has the additional value of testing updates early prior to updating the production environments and providing feedback directly to the R&D team.  
+The standard release, or Ring 4, is the default option. With this release, you can access the most recent release of Finance and Operations when it is released to all customers. In the standard release, you configure the update day and time to ensure predictability of the Microsoft managed update. You can also designate an environment for user-acceptance testing (UAT). This environment is updated by Microsoft seven calendar days prior to updating the production environment. Please see [One Version service updates FAQ](one-version.md) for more details.  The self-update option is available for all customers in order to stay current on the most recent service update.  Microsoft will auto-update the environments selected based on the configuration date/time shown in Lifecycle Services if the production environment is not on a supported service update. Microsoft will release a minimum 10 service updates per calendar year.    All service updates will be cumulative and made available via Lifecycle Services. 
 
 ## Access targeted releases or First release 
 
@@ -78,7 +78,6 @@ Microsoft will be releasing a minimum of 10 service updates per year.  Customers
 Standard Release, or Ring 4 customers, will be able to pause an update via Lifecycle Services Project Settings.  First Release customers will work directly with Program Manager for First Release for the need to pause any service updates for the interim. 
 
 Targeted Release schedule (dates subject to change)
-\*Sandbox Auto-Update takes place 7 days prior to Production
 
 | Version | Preview, Ring 2 | Available for Self Update | Ring 4 Auto-Update* |
 |---------|-----------------|---------------------------|---------------------|
@@ -88,5 +87,5 @@ Targeted Release schedule (dates subject to change)
 |10.0.3<br>PU27| Week of May 6, 2019 | Week of June 10, 2019 | Production: Starting July 1  |
 | 10.0.4<br>PU28| Week of June 3, 2019 | Week of July 8, 2019 | Production: Starting Aug 1  |
 
-
+\*Sandbox Auto-Update takes place 7 days prior to Production
 
