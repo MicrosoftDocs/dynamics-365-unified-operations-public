@@ -41,3 +41,7 @@ This topic provides links to documentation resources for United Kingdom.
 - [Set up item sales tax groups for reverse charge VAT](tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md)
 - [Set up reverse charge VAT item groups, rules, and parameters](tasks/gb-00002-reverse-charge-vat-item-groups.md)
 - [Set up sales tax groups for reverse charge VAT](tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md)
+
+## Regulatory updates for the United Kingdom
+
+For a complete list of regulatory updates for all countries/regions, see [Regulatory updates](regulatory-updates.md).
