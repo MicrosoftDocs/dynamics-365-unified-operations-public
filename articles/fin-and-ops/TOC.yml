@@ -2280,7 +2280,9 @@
         - name: Invoices for payment
           href: ../financials/localizations/rus-invoice-payment.md
         - name: Financial reporting
-          href: ../financials/localizations/rus-financial-reports.md 
+          href: ../financials/localizations/rus-financial-reports.md
+        - name: Accounting reporting in electronic format
+          href: ../financials/localizations/rus-accounting-reporting.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
