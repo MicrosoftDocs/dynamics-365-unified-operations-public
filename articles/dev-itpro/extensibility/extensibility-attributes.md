@@ -41,10 +41,10 @@ The following table provides an overview of the default support for extensibilit
 |   | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
 |---|----------|-----------|-------------|---------------|-----------|
 | **private** | No | N/A | N/A | Accessible from within class it is defined in. | Signature can be changed |
-| **protected internal** | No | No | No | Accessible from with the class it is defined, from derived classes, and from classes in the same model. | Signature must remain compatible |
+| **protected internal** | No | Yes, from PU25 onwards | No | Accessible from with the class it is defined, from derived classes, and from classes in the same model. | Signature must remain compatible |
 | **internal** | No | No | No | Accessible in the same model. | Signature can be changed |
-| **protected** | No | Yes | No | Accessible from with the class it is defined and from derived classes. | Signature must remain compatible |
-| **public** | Yes | Yes | No | Accessible from within the class it is defined, derived classes, and other classes that have access to the defining class. | Signature must remain compatible |
+| **protected** | No | Yes, unless marked final | No | Accessible from with the class it is defined and from derived classes. | Signature must remain compatible |
+| **public** | Yes | Yes, unless marked final | No | Accessible from within the class it is defined, derived classes, and other classes that have access to the defining class. | Signature must remain compatible |
 
 ## Hookable
 If a method is hookable, extenders can subscribe to pre-events and post-events.
@@ -54,9 +54,6 @@ For public methods, you can opt out by adding **\[Hookable(false)\]** to the met
 You can opt in for private and protected methods by adding **\[Hookable(true)\]** to the method.
 
 If a method is explicitly marked as **\[Hookable(false)\]**, then it is not wrappable.
-
-## Final keyword
-Methods adorned with the **final** keyword can't be overridden, are not hookable, and are not wrappable.
 
 ### Best practices when you write code
 When a method is hookable, the compiler generates extra intermediate language (IL) code to enable the method as an extension point. Although the extra code has performance overhead, this overhead is negligible in most cases. However, for performance-critical methods, consider marking the method as non-hookable.
