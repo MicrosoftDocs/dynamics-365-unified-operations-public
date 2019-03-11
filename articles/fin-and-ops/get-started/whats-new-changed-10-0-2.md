@@ -43,6 +43,10 @@ To learn about the new features and changes in the latest releases of Microsoft 
 ## <Enter New Feature Name here>
 
 <enter new feature description here>
+  
+## Create project-based sales orders for projects with a funding source of type "Grant"
+
+This feature provides support for the creation of project-based sales orders for time and material projects funded by a grant on the related project contract. The customer assigned as the contact for the grant will be the customer on the sales order.
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
