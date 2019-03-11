@@ -78,7 +78,15 @@ Microsoft will be releasing a minimum of 10 service updates per year.  Customers
 Standard Release, or Ring 4 customers, will be able to pause an update via Lifecycle Services Project Settings.  First Release customers will work directly with Program Manager for First Release for the need to pause any service updates for the interim. 
 
 Targeted Release schedule (dates subject to change)
-**Sandbox Auto-Update takes place 7 days prior to Production
+\*Sandbox Auto-Update takes place 7 days prior to Production
+
+| Version | Preview, Ring 2 | Available for Self Update | Ring 4 Auto-Update* |
+|---------|-----------------|---------------------------|---------------------|
+|10.0<br>PU24 |  Feb 1, 2019 | Week of March 18, 2019 | Production: Starting April 1 |
+|10.0.1<br>PU25| Week of March 4, 2019 | Week of April 8, 2019 | Production: Starting May 1 |
+|10.0.2<br>PU26| Week of April 8, 2019 | Week of May 13, 2019 | Production: Starting Jun 1  |
+|10.0.3<br>PU27| Week of May 6, 2019 | Week of June 10, 2019 | Production: Starting July 1  |
+| 10.0.4<br>PU28| Week of June 3, 2019 | Week of July 8, 2019 | Production: Starting Aug 1  |
 
 
 
