@@ -158,7 +158,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 5. Add the following section to the **composition** section of the config file.
 
-    ```
+    ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
     ```
 
@@ -201,17 +201,17 @@ Follow these steps to create deployable packages that contain Retail components,
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-  - Add the following line to include the CRT extension in the deployable packages:
+    - Add the following line to include the CRT extension in the deployable packages:
 
-    ``` xml	
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll"/>
-    ```
+        ``` xml	
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll"/>
+        ```
     
-  - Add the following line to include the Hardware station extension in the deployable packages:
+    - Add the following line to include the Hardware station extension in the deployable packages:
 
-    ``` xml	
-    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll"/>
-    ```
+        ``` xml	
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll"/>
+        ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 
@@ -221,9 +221,9 @@ Follow these steps to create deployable packages that contain Retail components,
 
 ### Commerce runtime extension design
 
-The purpose of the extension (document provider) is to generate printer-specific documents and handle responses from the fiscal printer.
+The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer.
 
-The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.PosnetSample**. This extension generates the set of printer-specific commands that are defined by POSNET specification 19-3678, in JavaScript Object Notation (JSON) format.
+The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.PosnetSample**. This extension generates a set of printer-specific commands in the JavaScript Object Notation (JSON) format that are defined by the POSNET specification 19-3678.
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
@@ -240,7 +240,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
 
 - VAT rates mapping
 - Tender type mapping
@@ -248,9 +248,9 @@ The configuration file is found in the **Configuration** folder of the extension
 
 ### Hardware station extension design
 
-The purpose of the extension (connector) is to communicate with the fiscal printer.
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer.
 
-The Hardware station extension is **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample**. This extension submits commands that the Commerce runtime extension generates to the fiscal printer, by calling the functions of the POSNET driver that is provided by the manufacturer. It also handles device errors.
+The Hardware station extension is **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample**. This extension submits the commands that the Commerce runtime extension generates to the fiscal printer by calling the functions of the POSNET driver. It also handles device errors.
 
 #### Request handler
 
@@ -266,8 +266,8 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
 
 - **Connection string** – This string describes the details of the connection to the device in a format that is supported by the driver. For details, see the POSNET driver documentation.
-- **Date and time synchronization** – This setting indicates whether you must sync the date and time of the printer with the connected Hardware station. The date and time of the printer will be synced with the Hardware station time.
-- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
+- **Date and time synchronization** – This setting indicates whether the date and time of the printer needs to be synchronized with the connected Hardware station.
+- **Device timeout** – The amount of time in milliseconds that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
