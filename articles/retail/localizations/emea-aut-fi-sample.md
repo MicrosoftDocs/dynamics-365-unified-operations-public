@@ -80,7 +80,7 @@ The following default data mapping is included in the fiscal document provider c
 
     *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
 
-### Gift cards handling
+### Gift cards
 
 The fiscal registration service integration sample implements the following rules that are related to gift cards:
 
@@ -116,11 +116,9 @@ You must also specify the following settings for Austria. Note that you must run
 
 ### Set up VAT per Austrian requirements
 
-1. You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Austria.
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
-2. Set up tax group code for printing in receipts. For printing tax group code in receipt (for example, “A”, “B”) field **Print code** must be filled for sales taxes in **Sales tax codes** form.
-
-For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+You can print an abbreviated code for a sales tax code in sales receipts (for example, “A”, “B”, etc.) To enable this set the **Print code** field on the **Sales tax codes** page.
 
 ### Set up Retail stores
 
@@ -155,9 +153,6 @@ Add the following POS labels to the **POS** section of **Language text** from th
 | en-US       | 103180  | Tax Amount (sales)        |
 | en-US       | 103181  | Tax Basis (sales)         |
 
-> [!NOTE]
-    > Data records of **Language text** should be added to current company and DAT company.
-
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
 | Name                 | Type    | Caption text Id |
@@ -181,10 +176,10 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
     - **Continuous Number**: This field identifies the number of cash transaction in the fiscal registration service;
   - **Lines:** Add the following fields:
-    - **Item name**, 
-    - **Qty**, 
-    - **Total price with tax**,
-    - **Tax Retail Print Code**: This field displays the code corresponding to the tax group.
+    - **Item name**;
+    - **Qty**;
+    - **Total price with tax**;
+    - **Tax Retail Print Code**: This field displays the code corresponding to the tax code.
   - **Footer:** Add the following fields:
     - Tax fields, so that the receipt tax amounts for each tax rate are printed. For example, add the **Tax Id**, **Tax percentage**, and **Tax amounts** fields to one line of the layout.
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
@@ -201,13 +196,13 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
-### Set up POS permissions
+### Update POS permissions groups and individual permission settings for store workers
 
-Update POS permissions groups and individual permission settings for store workers. If skipping of the fiscal registration is allowed for some workers, they should have the **Allow skip fiscal registration** permission enabled.
+Enable the **Allow skip fiscal registration** permission if the operator is allowed to skip the fiscal registration of a transaction or event in case it fails. This permission is only applicable to fiscal registration process steps that have the **Allow skip** setting enabled.
 
-## Deployment guideline for cash registers for Austria
+## Deployment guidelines for cash registers for Austria
 
-The Fiscal integration sample for Austria is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+The fiscal registration service integration sample for Austria is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 This sample consists of extensions for the Commerce runtime (CRT), Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
 Follow these steps to set up a development environment so that you can test and extend the sample.
@@ -296,7 +291,7 @@ The Hardware station extension components are included in the Hardware station s
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
 
-#### Modern POS extension components
+### Enable Modern POS extension components
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
 
@@ -321,7 +316,7 @@ The Hardware station extension components are included in the Hardware station s
 3. Re-build the solution.
 4. Run Modern POS in the debugger, and test the functionality.
 
-#### Cloud POS extension components
+### Enable Cloud POS extension components
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
 
@@ -364,7 +359,7 @@ To enable the registration process, set up Retail Headquarters using the steps b
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
-1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this topic.
+1. Complete the steps in the [Enable Modern POS extension components](#enable-modern-pos-extension-components) or [Enable Cloud POS extension components](#enable-cloud-pos-extension-components) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
@@ -404,15 +399,15 @@ Follow these steps to create deployable packages that contain Retail components,
 
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-6. Complete all necessary settings from the [Set up Retail for Austria](#set-up-retail-for-austria).
+6. Complete all necessary settings from the [Set up Retail for Austria](#set-up-retail-for-austria) section.
 
 ## Design of extensions
 
 ### Commerce runtime extension design
 
-The purpose of the extension (document provider) is to generate service-specific documents and handle responses from the fiscal registration service.
+The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the fiscal registration service.
 
-Commerce runtime extension: **Runtime.Extensions.DocumentProvider.EFRSample**.
+The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.EFRSample**.
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
@@ -438,17 +433,15 @@ The configuration files are located in the **Configuration** folder of the exten
   - **DocumentProviderFiscalEFRSampleAustria** - for fiscal documents.
   - **DocumentProviderNonFiscalEFRSampleAustria** - for non-fiscal documents.
 
-The purpose of these files is to enable configuration of settings for the document provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+The purpose of these files is to enable configuration of settings for the document provider from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
 
   - VAT rates mapping
 
 ### Hardware station extension design
 
-The purpose of the extension (connector) is to communicate with the fiscal registration service.
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
 
-Hardware station extension: **HardwareStation.Extension.EFRSample**
-
-The Hardware station extension submits documents that the Commerce runtime extension generates to the fiscal registration service (via HTTP protocol). It also handles the responses that are received from the fiscal registration service.
+The Hardware station extension is **HardwareStation.Extension.EFRSample**. The Hardware station extension submits the documents that the Commerce runtime extension generates to the fiscal registration service via the HTTP protocol. It also handles the responses that are received from the fiscal registration service.
 
 #### Request handler
 
@@ -464,6 +457,6 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector provider from Retail Headquarters. The file format aligns fiscal integration configuration requirements. The following settings have been added:
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the fiscal connector from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
   - **Endpoint address** – The URL of the fiscal registration service.
-  - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the service.
+  - **Timeout** – The amount of time in milliseconds that the driver will wait for a response from the service.
