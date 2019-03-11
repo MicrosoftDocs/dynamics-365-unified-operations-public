@@ -118,6 +118,15 @@ The fiscal printer integration sample implements the following rules that are re
 
 ## Set up Retail for Poland
 
+### Configure fiscal integration
+
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md):
+
+- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the fiscal registration process settings [specific for this fiscal printer integration sample](#set-up-the-registration-process).
+- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+- [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
 ### Enable extensions
 
 ##### Commerce runtime extension components
