@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Debugging a copy of the production database
+title: Debug a copy of the production database
 description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1.3
 
 ---
 
-# Debugging a copy of the production database
+# Debug a copy of the production database
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,68 +38,75 @@ In this tutorial, you will learn how to:
 
 > [!div class="checklist"]
 > * Refresh the user acceptance testing (UAT) environment.
-> * Whitelist your developer environment IP address.
-> * Update your developer environment to connect to the UAT database.
-> * Place a breakpoint and start debugging the data.
+> * Add the IP address of your developer environment to an approved list ("whitelist").
+> * Update your developer environment so that it connects to the UAT database.
+> * Set a breakpoint, and start to debug the data.
 
-As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to debug a recent copy of production transactions from his or her development environment. In this way, the customer will be able to debug specific transactions which are stuck or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to debug a recent copy of production transactions from his or her development environment. In this way, the customer will be able to debug specific transactions that are stuck, or develop new features and reports by using realistic datasets.
 
 ## Prerequisites
 
 To do a refresh operation, you must have your production environment deployed, or you must have a minimum of two standard UAT environments. To complete this tutorial, you must have a developer environment deployed.
 
-[!Important]
-- It is highly recommended to use a DevTest environment for debugging that will run the same code and business logic as is available in your UAT environment.  If you use multiple branches in version control we recommend that this DevTest environment used for debugging recent UAT or Production transactions is connected to the same branch you build packages for UAT and later Production.  This will eliminate any need for you to run a Database Sync between your DevTest environment and UAT database as the schema will be compatible.  Historically this is known as a Hotfix/Support environment as it is outside of your normal code promotion path.
+> [!IMPORTANT]
+> For debugging, we highly recommend that you use a DevTest environment that runs the same code and business logic that are available in your UAT environment. If you use multiple branches in version control, we recommend that the DevTest environment that is used to debug recent UAT or production transactions be connected to the same branch that you use to build packages for UAT and, later, for production. In this way, you don't have to run a database synchronization between your DevTest environment and UAT database, because the schema will be compatible. Historically, this environment is known as a Hotfix/Support environment, because it's outside your usual code promotion path.
 
 ## Refresh the UAT environment 
 
-This refresh operation will overwrite the UAT environment with the latest copy of the production database. To complete this step, follow the instructions in [Refresh for training purposes](dbmovement-scenario-general-refresh.md).
+This refresh operation overwrites the UAT environment with the latest copy of the production database. To complete this step, follow the instructions in [Refresh for training purposes](dbmovement-scenario-general-refresh.md).
 
-## Whitelist your IP address
-By default, all Sandbox Standard Acceptance Test environments use Azure SQL as their database platform.  These databases are protected by firewalls which restrict access to the Application Object Server (AOS) from which it was originally intended.  
+## Add your IP address to a whitelist
 
-An exception can be made for you to connect your developer environment (cloud-hosted or Microsoft managed) directly to the UAT database. To do this you will need to obtain your IP Address on the developer VM.
+By default, all Sandbox Standard Acceptance Test environments use Microsoft Azure SQL Database as their database platform. These databases are protected by firewalls that restrict access to the Application Object Server (AOS) that it was originally intended from.
 
-From the sandbox AOS VM, open SQL Server Management Studio (SSMS) and connect to the database using the information available from the Environment Details page in Lifecycle Services (LCS).  Locate the username record for **axdbadmin** and note the Azure SQL Server and Azure SQL Database in the format of {sqlServer\sqlDatabase}. 
+However, an exception can be made so that you can connect your developer environment (cloud-hosted or Microsoft-managed) directly to the UAT database. To connect your developer environment directly to the UAT database, you must obtain your IP address on the developer virtual machine (VM).
 
-Using SSMS, enter the SQL Server, username, and password.  On the **Connection Properties** tab, explicitly enter the database name from the axdbadmin record in LCS.  
+On the sandbox AOS VM, open Microsoft SQL Server Management Studio (SSMS), and connect to the database by using the information that is available from the environment details page in Microsoft Dynamics Lifecycle Services (LCS). Find the username record for **axdbadmin**, and note the Azure SQL Server and Azure SQL Database in the format **{sqlServer\\sqlDatabase}**.
 
-Once connected, open a query against the database and enter your IP address in to the below T-SQL command:
+In SSMS, enter the SQL Server, username, and password. On the **Connection Properties** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
+
+After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
+
 ```
 -- Create database-level firewall setting for IP a.b.c.d 
 EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
 ```
-Transition back to your developer environment.  Open SSMS and attempt to connect with the same axdbadmin credential against the UAT database.  Verify that you can connect, before proceding with the next steps.
 
-> [!Note]
-> Each time a refresh is performed, the firewall whitelist is reset.  You will need to add your DevTest environments back to this database when needed in the future.
+Back in your developer environment, open SSMS, and try to connect by using the same **axdbadmin** credentials against the UAT database. Verify that you can connect before you continue with the next steps.
+
+> [!NOTE]
+> Every time that a refresh is done, the firewall whitelist is reset. You must add your DevTest environments back to this database when they are required in the future.
 
 ## Update a OneBox DevTest environment to connect to the UAT database
-In your developer environment, we will now update the web.config to change the database connection.  This will allow you to run your local code and binaries configured against the database from UAT.  
 
-Navigate to your Services Drive (commonly this is the J or K drive) \ AoSService\WebRoot directory.  Find the file called web.config and *make a backup of this file*.  Open the web.config file in NotePad or an editor of your preference, and locate the following configurations:
+In your developer environment, you must now update the web.config file to change the database connection. This step will let you run your local code and binaries that are configured against the database from UAT.
+
+On your Services drive, go to the **AoSService\\WebRoot** directory. (Typically, the Services drive is drive J or K.) Find the file that is named web.config, and *make a backup of it*. Then open the **web.config** file in Notepad or another editor, and find the following configurations:
+
 - DataAccess.Database
 - DataAccess.DBServer
 - DataAccess.SqlPwd
 - DataAccess.SqlUser
 
-Update these to use the values from the UAT Environment Details page in LCS:
-```
-    <add key="DataAccess.Database" value="<example_axdb_fromAzure>" />
-    <add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
-    <add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />
-    <add key="DataAccess.SqlUser" value="axdbadmin" />
-```
-Save the file, and execute an IISRESET if you are operating a cloud hosted environment.  If you are operating on a Microsoft Managed developer machine with limited permissions, ensure that Visual Studio is closed.  
+Update these configurations so that they use the values from the environment details page for the UAT environment in LCS.
 
-Finally, open a browser and visit the URL of your DevTest environment and validate that you are pulling the data from the UAT database.
+```
+<add key="DataAccess.Database" value="<example_axdb_fromAzure>" />
+<add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
+<add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />
+<add key="DataAccess.SqlUser" value="axdbadmin" />
+```
+Save the file. If you're operating in a cloud-hosted environment, run IISRESET. If you're on a Microsoft-managed developer machine and have limited permissions, make sure that Microsoft Visual Studio is closed.
+
+Finally, open a web browser, go to the URL of your DevTest environment, and verify that you're pulling data from the UAT database.
 
 ## Debug transactions in the DevTest environment
-Now that your environment is properly reconfigured, you can open Visual Studio and place a breakpoint in the application code that best meets your needs.  Note that while you are debugging in the DevTest environment, the users in the UAT environment are not impacted.  
 
-## Best practices 
-Below are common best practices that ensure your debugging experience is quick, reliable, and doesn't disrupt other users in your organization:
-1. Ensure that the version of the code and binaries in the DevTest environment exactly match UAT.  This can be accomplished by connecting the DevTest environment to the same branch you build packages from for deployment, or a 'HotfixSupport' branch that is kept up to date with the latest customizations that are released.
-2. Do not execute a Database Sync from Visual Studio.  This will impact the availability of schema in the UAT database, and could adversely impact users in the UAT environment.
+Now that your environment is correctly reconfigured, you can open Visual Studio and set a breakpoint in the application code that best meets your needs. Note that users in the UAT environment aren't affected while you debug in the DevTest environment.
 
+## Best practices
 
+Here are some common best practices that will help guarantee that your debugging experience is quick, reliable, and doesn't disrupt other users in your organization:
+
+- Make sure that the version of the code and binaries in the DevTest environment exactly match the version in the UAT environment. Connect the DevTest environment to the same branch that you build packages for deployment from. Alternatively, connect it to a "HotfixSupport" branch that is kept up to date with the latest customizations that are released.
+- Don't run a database synchronization from Visual Studio. Otherwise, you will affect the availability of the schema in the UAT database and might affect users in the UAT environment.
