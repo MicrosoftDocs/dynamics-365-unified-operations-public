@@ -62,7 +62,7 @@ As a customer of Finance and Operations, you can use either Entity store or BYOD
 
 Before you can configure the entity export option and use the BYOD feature, you must create a SQL database by using Azure portal.
 
-For one-box development environments, you can create a database in the local Microsoft SQL Server database. However, this database should be used only for development and testing purposes. For production environments, you must create a SQL database.
+For one-box development environments, you can create a database in the local Microsoft SQL Server database. However, this database should be used only for development and testing purposes. For production environments, you must create a Azure SQL database.
 
 You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
