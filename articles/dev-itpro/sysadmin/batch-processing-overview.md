@@ -63,4 +63,4 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Copy a batch job](copy-batch-job.md)
 -  [Configure batch alerts](alerts.md)
 -  [Switch to enhanced forms](enhanced-forms.md)
--  [Batch history cleanup](batchhistorycleanup.md)
+-  [Batch history cleanup](batch-history-cleanup.md)
