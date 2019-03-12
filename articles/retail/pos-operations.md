@@ -98,7 +98,7 @@ The following columns specify where the operations can be invoked:
 | 614 | Edit customer order | Recall the selected order so that it can be modified in the POS. | No | No | No | No | No |
 | 615 | Edit quotation | Recall the selected quotation so that it can be modified in the POS. | No | No | No | No | No |
 | 518 | Expense accounts | Record money that is removed from the cash drawer for occasional expenses. | Yes | Yes | Yes | Yes | No |
-| 919 | Extended log on | Assign or remove permission to sign in by scanning a bar code or swiping a card. | Yes | Yes | Yes | No | No |
+| 919 | Extended log on | Assign or remove permission to sign in by scanning a bar code or swiping a card. | Yes | Yes | Yes | Yes | No |
 | 1201 | Float entry | This operation lets the user add additional money to the current drawer or shift. | Yes | Yes | Yes | Yes | No |
 | 1218 | Force unlock peripheral | The system uses this operation internally to unlock POS peripherals. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 520 | Gift card balance | Show the balance of a gift card. | Yes | Yes | No | No | No |
