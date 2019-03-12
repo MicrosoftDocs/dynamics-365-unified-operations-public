@@ -193,7 +193,7 @@ The error handling options that are available in the fiscal integration are set 
      > [!NOTE]
      > If the **Continue on error** parameter is enabled, the **Allow skip** and **Allow mark as registered** parameters are automatically disabled. 
 
-2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip registration or mark as registered** permission.
+2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip registration or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip registration or mark as registered** permission.
 
 3. The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).
 
