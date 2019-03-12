@@ -38,9 +38,11 @@ This topic discusses the templates and underlying task that are used to synchron
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-The used **Field Service Products (Finance and Operations to Field Service)** template is based on the **Products (Finance and Operations to Sales) – Direct** template from Prospect to Cash. For more information, see [Products (Finance and Operations to Sales) – Direct](products-template-mapping-direct.md).
+The used **Field Service Products with Inventory unit (Finance and Operations to Field Service)** template is based on the **Field Service Products (Finance and Operations to Field Service)** template. For more information, see [Field Service Products (Finance and Operations to Field Service)](field-service-product.md).
 
-This topic only describes the differences between the **Field Service Products (Finance and Operations to Field Service)** and **Field Service Products (Finance and Operations to Field Service)** templates.
+This topic only describes the differences between the two templates: 
+- **Field Service Products with Inventory unit (Finance and Operations to Sales)**
+- **Field Service Products (Finance and Operations to Field Service)** 
 
 ## Templates and tasks
 
