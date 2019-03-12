@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 You can track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset, which named **Not valuable fixed assets** (NVFAs). NVFAs are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
-In the process of Fixed asset purchasing the system divides fixed assets and NVFAs by price according to the **Max cost of the NVFA** parametr value (see [Set up fixed asset parameters for NVFAs](rus-fa-nv-assets/articles/financials/localizations/rus-not-valuable-assets.md#Set-up-fixed-asset-parameters-for-NVFAs)). 
+In the process of Fixed asset purchasing the system divides fixed assets and NVFAs by price according to the **Max cost of the NVFA** parameter value (see [Set up fixed asset parameters for NVFAs](rus-fa-nv-assets/articles/financials/localizations/rus-not-valuable-assets.md#Set-up-fixed-asset-parameters-for-NVFAs)). 
 After you purchase and register the NVFAs, you can perform the following tasks:
 
   - To automate the placement of NVFAs into operation and into subsequent depreciation transactions.
