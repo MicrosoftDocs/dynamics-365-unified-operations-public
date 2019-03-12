@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/06/2019
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,11 +41,38 @@ This topic describes features that have been removed or deprecated for Dynamics 
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-> [!Note]
+> [!NOTE]
 > Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
-> [!Note]
+> [!NOTE]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+
+## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 with platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Standard and First release service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### Deprecated APIs and potential breaking changes
+
+#### Deriving from internal classes is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated - The warning will become a compilation error in an upcoming platform update. |
+
+#### Overriding internal methods is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated - The warning will become a compilation error in an upcoming platform update. |
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
