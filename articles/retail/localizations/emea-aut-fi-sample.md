@@ -361,7 +361,7 @@ To enable the registration process, set up Retail Headquarters using the steps b
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
-1. Complete the steps in the [Enable Modern POS extension components](#enable-modern-pos-extension-components) or [Enable Cloud POS extension components](#enable-cloud-pos-extension-components) section earlier in this topic.
+1. Complete the steps described in the [Deployment guidelines for cash registers for Austria](#deployment-guidelines-for-cash-registers-for-austria) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
