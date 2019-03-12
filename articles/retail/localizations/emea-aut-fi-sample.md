@@ -173,26 +173,25 @@ In the Receipt format designer, add the following custom fields to the appropria
   - **Header:** Add the following field:
     - **Store name** and **Tax Identification Number** fields, so that the company name and identity number are printed receipts. Alternatively, you can add the company name and identity number to the layout as free-format text.
     - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
-    - **Continuous Number**: This field identifies the number of cash transaction in the fiscal registration service;
+    - **Continuous Number** - This field identifies the number of cash transaction in the fiscal registration service;
   - **Lines:** Add the following fields:
-    - **Item name**;
-    - **Qty**;
-    - **Total price with tax**;
-    - **Tax Retail Print Code**: This field displays the code corresponding to the tax code.
+    - **Item name**.
+    - **Qty**.
+    - **Total price with tax**.
+    - **Tax Retail Print Code** - This field prints the abbreviated code corresponding to the sales tax code applicable to the item.
   - **Footer:** Add the following fields:
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
     - Fields group **Sales total**: 
-      - **Total (sales)**: Total transaction amount without tax sum;
-      - **Total Include Tax (sales)**: Total transaction amount with tax sum;
-      - **Total Tax (sales)**: Transaction tax sum.
-    - **Tax break down** (should be separate line):
-      - **Tax Id**;
-      - **Tax Percentage**;
-      - **Tax Basis (sales)**: Total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards;
-      - **Tax Amount (sales)**: Total tax amount for cash transactions excluding deposits, prepayments and gift cards;
-      - **Total Include Tax (sales)**: Total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards;
-      - **Tax Retail Print Code**: The code corresponding to tax group.
-    - **QR Code**: Reference to the registered cash transaction in the form of QR-code.
+      - **Total (sales)** - This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
+      - **Total Include Tax (sales)** - This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
+      - **Total Tax (sales)** - This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded.
+    - **Tax break down** (the fields of this group must be placed on a separate line):
+      - **Tax Id** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
+      - **Tax Percentage** – This standard field prints the effective tax rate for the sales tax code.
+      - **Tax Basis (sales)** - This field prints the receipt's total cash sale amount for the sales tax code. Prepayments and gift card operations are excluded.
+      - **Tax Amount (sales)** - This field prints the receipt's tax amount for cash sales for the sales tax code.
+      - **Tax Retail Print Code** - This field prints the abbreviated code corresponding to the sales tax code.
+    - **QR Code** - This field prints the reference to the registered cash transaction in the form of QR-code.
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
