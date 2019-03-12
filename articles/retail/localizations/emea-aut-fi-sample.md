@@ -186,6 +186,8 @@ In the Receipt format designer, add the following custom fields to the appropria
       - **Total Include Tax (sales)**: Total transaction amount with tax sum;
       - **Total Tax (sales)**: Transaction tax sum.
     - **Tax break down** (should be separate line):
+      - **Tax Id**;
+      - **Tax Percentage**;
       - **Tax Basis (sales)**: Total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards;
       - **Tax Amount (sales)**: Total tax amount for cash transactions excluding deposits, prepayments and gift cards;
       - **Total Include Tax (sales)**: Total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards;
