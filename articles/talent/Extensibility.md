@@ -3,17 +3,13 @@
 
 title: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
 description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow.
-author: Neelima Gudavalli
+author: negudava
 manager: Annbe
 ms.date: 03/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent
-               PowerApps
-               Flow
-               CDS
-
+ms.technology: Dynamics 365 for Talent;PowerApps;Flow;CDS
 # optional metadata
 
 ms.search.form: 
@@ -21,13 +17,13 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Talent, Core, Experience Apps
+ms.search.scope: Talent;Core;Experience Apps
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: Neelima Gudavalli
+ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
 
@@ -57,7 +53,7 @@ In Microsoft Dynamics 365: Attract, forms can be exposed to the Candidate portal
 
 When a candidate submits a form, Microsoft Flow captures the form submission, reads the data, and stores it in the Common Data Service for Apps entity.
 
-To download the **Flow – Form Connect** template, go to [link](URL).
+To download the **Flow – Form Connect** template, go to [Flow – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988).
 
 ## Initiate and Extract Parameters Passed to Powerapps
 
@@ -67,7 +63,7 @@ This template can be used to retrieve a candidate assessment form, so that a hir
 
 Apps that are created by using PowerApps can be embedded into the job template in Attract.
 
-To download the **Initiate and Extract Parameters Passed to Powerapps** template, go to [link](URL).
+To download the **Initiate and Extract Parameters Passed to Powerapps** template, go to [Initiate and Extract Parameters Passed to Powerapps](https://go.microsoft.com/fwlink/?linkid=2081991).
 
 ## Integration with Office 365
 
@@ -75,7 +71,7 @@ The **Integration with Office 365** app can be used to extract team information 
 
 This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events, and HR, employees, and managers can use it.
 
-To download the **Integration with Office 365** app, go to [link](URL).
+To download the **Integration with Office 365** app, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787).
 
 ## Flow – Email Notification
 
@@ -85,7 +81,7 @@ This template can be extended to track changes to the candidate stage throughout
 
 In general, for entities that are stored in Common Data Service for Apps, flows can be set up to send notifications for events that occur in Core HR, Attract, or Dynamics 365 Talent: Onboard.
 
-To download the **Flow – Email Notification** template, go to [link](URL).
+To download the **Flow – Email Notification** template, go to [Flow – Email Notification](https://go.microsoft.com/fwlink/?linkid=2082103).
 
 ## Flow – SQL Connect and execute
 
@@ -93,7 +89,7 @@ The **Flow – SQL Connect and execute** template connects to Microsoft SQL Serv
 
 Although this template is designed to read and update SQL tables, it can be extended so that it can be used for other scenarios. For example, it can be used to fill a staging table in Common Data Service for Apps with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
 
-To download the **Flow – SQL Connect and execute** template, go to [link](URL).
+To download the **Flow – SQL Connect and execute** template, go to [Flow – SQL Connect and execute](https://go.microsoft.com/fwlink/?linkid=2081789).
 
 ## Flow – Share Point Integration
 
@@ -103,7 +99,7 @@ An organization might have a set of skills that it urgently requires. These skil
 
 This template can be extended so that it can be used for any scenario that involves SharePoint integration.
 
-To download the **Flow – Share Point Integration** template, go to [link](URL).
+To download the **Flow – Share Point Integration** template, go to [Flow – Share Point Integration](https://go.microsoft.com/fwlink/?linkid=2082109).
 
 > [!IMPORTANT]
 > If you want to use above given templates "as is," be sure to test it to make sure that it covers all the scenarios that are specific to your implementation.
