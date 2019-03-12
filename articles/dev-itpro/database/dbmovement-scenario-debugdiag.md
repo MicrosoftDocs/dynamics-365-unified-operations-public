@@ -57,11 +57,11 @@ This refresh operation overwrites the UAT environment with the latest copy of th
 
 ## Add your IP address to a whitelist
 
-By default, all Sandbox Standard Acceptance Test environments use Microsoft Azure SQL Database as their database platform. These databases are protected by firewalls that restrict access to the Application Object Server (AOS) that it was originally intended from.
+By default, all Sandbox Standard Acceptance Test environments use Microsoft Azure SQL Database as their database platform. The databases for these environments are protected by firewalls that restrict access to the Application Object Server (AOS) with which it was originally deployed.
 
 However, an exception can be made so that you can connect your developer environment (cloud-hosted or Microsoft-managed) directly to the UAT database. To connect your developer environment directly to the UAT database, you must obtain your IP address on the developer virtual machine (VM).
 
-On the sandbox AOS VM, open Microsoft SQL Server Management Studio (SSMS), and connect to the database by using the information that is available from the environment details page in Microsoft Dynamics Lifecycle Services (LCS). Find the username record for **axdbadmin**, and note the Azure SQL Server and Azure SQL Database in the format **{sqlServer\\sqlDatabase}**.
+On the sandbox AOS VM, open Microsoft SQL Server Management Studio (SSMS), and connect to the database by using the information that is available from the environment details page in Microsoft Dynamics Lifecycle Services (LCS). Find the username record for **axdbadmin**, and note the server and database in the format **{sqlServer\\sqlDatabase}**.
 
 In SSMS, enter the SQL Server, username, and password. On the **Connection Properties** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
