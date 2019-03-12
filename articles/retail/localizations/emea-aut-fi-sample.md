@@ -44,9 +44,8 @@ The following scenarios are covered by the fiscal registration service integrati
    - Registration of cash transactions in the fiscal register service:
       - Send detailed transaction data, including sales line information, discounts, payments, and taxes, to the fiscal register service.
       - Capture a response from the fiscal register service including a digital signature and a link to the registered transaction.
-      - Taxes:
-        - Map to the fiscal service's tax codes.
-        - Print the tax decomposition and the QR-code for a registered transaction in the receipt.
+      - Taxes with mapping to the fiscal service's tax codes.
+      - Print the QR-code for a registered transaction in the receipt.
   - Registration of gift card operations and customer deposits in the fiscal register service as non-cash transactions:
       - Issue / Add to a Gift card.
       - Register a customer account deposit.
@@ -181,7 +180,6 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Total price with tax**;
     - **Tax Retail Print Code**: This field displays the code corresponding to the tax code.
   - **Footer:** Add the following fields:
-    - Tax fields, so that the receipt tax amounts for each tax rate are printed. For example, add the **Tax Id**, **Tax percentage**, and **Tax amounts** fields to one line of the layout.
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
     - Fields group **Sales total**: 
       - **Total (sales)**: Total transaction amount without tax sum,
@@ -192,7 +190,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 	  - **Tax Amount (sales)**: Total tax amount for cash transactions excluding deposits, prepayments and gift cards,
 	  - **Total Include Tax (sales)**: Total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards,
 	  - **Tax Retail Print Code**: The code corresponding to tax group,
-      - **QR Code**: Reference to registered cash transaction in the form of QR-code.
+    - **QR Code**: Reference to registered cash transaction in the form of QR-code.
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
