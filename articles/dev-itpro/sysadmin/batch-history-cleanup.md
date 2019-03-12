@@ -1,8 +1,42 @@
-# Batch History cleanup
+---
+# required metadata
+
+title: Batch history cleanup
+description: This topic provides batch history cleanup in Microsoft Dynamics 365 for Finance and Operations.
+author: hasaid
+manager: AnnBe
+ms.date: 03/12/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 62333
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: hasaid
+ms.search.validFrom: 2019-03-08
+ms.dyn365.ops.version: Platform update 25
+
+---
+
+# Batch history cleanup
 
 [!include [banner](../includes/banner.md)]
 
-When you execute a batch job, execution history is saved to monitor proper execution of jobs, with a lot of batch jobs, especially those with a high recurrence 
+[!include [banner](../includes/preview-banner.md)]
+
+When you execute a batch job, the history is saved to monitor proper execution of jobs, with a lot of batch jobs, especially those with a high recurrence 
 will generate a lot of batch job history entries.
 
 Keeping too many entries in the history table can negatively affect the performance of future jobs
