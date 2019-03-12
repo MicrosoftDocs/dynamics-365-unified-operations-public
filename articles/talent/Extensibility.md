@@ -91,15 +91,15 @@ Although this template is designed to read and update SQL tables, it can be exte
 
 To download the **Flow – SQL Connect and execute** template, go to [Flow – SQL Connect and execute](https://go.microsoft.com/fwlink/?linkid=2081789) on the Microsoft Download Center.
 
-## Flow – Share Point Integration
+## Flow – SharePoint Integration
 
-The **Flow – Share Point Integration** template can be used to read data from a Microsoft SharePoint list, compare the list with field values for any Common Data Service for apps entity, and send the results of the comparison as a notification email. 
+The **Flow – SharePoint Integration** template can be used to read data from a Microsoft SharePoint list, compare the list with field values for any Common Data Service for apps entity, and send the results of the comparison as a notification email. 
 
 An organization might have a set of skills that it urgently requires. These skills can be stored in SharePoint as a SharePoint list. When a candidate applies for any job that a set of required skills is listed for, if there is a significant match between the candidate's skill and the skills that are stored in SharePoint, a notification email is sent. In this way, positions that are urgently required are filled faster, because the notifications help recruiters reach out and cross-hire candidates throughout the organization.
 
 This template can be extended so that it can be used for any scenario that involves SharePoint integration.
 
-To download the **Flow – Share Point Integration** template, go to [Flow – Share Point Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
+To download the **Flow – SharePoint Integration** template, go to [Flow – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
 
 > [!IMPORTANT]
 > If you want to use above given templates "as is," be sure to test it to make sure that it covers all the scenarios that are specific to your implementation.
