@@ -86,7 +86,7 @@ The following default data mapping is included in the fiscal document provider c
 
 - Value-added tax (VAT) rates mapping:
 
-    *1 : 21.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
+    *1 : 22.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
 
 - Tender type mapping:
 
