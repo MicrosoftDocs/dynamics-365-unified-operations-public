@@ -421,7 +421,7 @@
             href: ../supply-chain/sales-marketing/synchronize-project-list.md
           - name: Synchronize warehouses from Finance and Operations to Field Service
             href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-          - name: Synchronize work orders from Field Service to Finance and Operations
+          - name: Synchronize work orders with project from Field Service to Finance and Operations
             href: ../supply-chain/sales-marketing/synchronize-work-orders.md        
         - name: Configure Project Service Automation integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
