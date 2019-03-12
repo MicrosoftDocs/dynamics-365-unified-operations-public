@@ -170,10 +170,10 @@ On the **Custom fields** page, add the following records for the custom fields f
 For every required receipt format, change the value of the **Print behavior** field to **Always print**.
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
-  - **Header:** Add the following field:
-    - **Store name** and **Tax Identification Number** fields, so that the company name and identity number are printed receipts. Alternatively, you can add the company name and identity number to the layout as free-format text.
+  - **Header:** Add the following fields:
+    - **Store name** and **Tax Identification Number** fields, so that the company name and identity number are printed in receipts. Alternatively, you can add the company name and identity number to the layout as free-format text.
     - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
-    - **Continuous Number** - This field identifies the number of cash transaction in the fiscal registration service;
+    - **Continuous Number** - This field identifies the number of cash transaction in the fiscal registration service.
   - **Lines:** Add the following fields:
     - **Item name**.
     - **Qty**.
@@ -185,7 +185,7 @@ In the Receipt format designer, add the following custom fields to the appropria
       - **Total (sales)** - This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
       - **Total Include Tax (sales)** - This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
       - **Total Tax (sales)** - This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded.
-    - **Tax break down** (the fields of this group must be placed on a separate line):
+    - **Tax break down** (the fields of this group must be printed on a separate line):
       - **Tax Id** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
       - **Tax Percentage** – This standard field prints the effective tax rate for the sales tax code.
       - **Tax Basis (sales)** - This field prints the receipt's total cash sale amount for the sales tax code. Prepayments and gift card operations are excluded.
