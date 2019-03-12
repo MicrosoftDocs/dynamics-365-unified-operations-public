@@ -72,15 +72,14 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 
 # [10.0](#tab/10-0)
 
+This is a test
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0.1](#tab/10-0-1)
 
-| Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
-| --- | --- |
-| adyen_v1_35p15 | adyen_v1_35p15 |
+This is also a test.
 
 ---
 
