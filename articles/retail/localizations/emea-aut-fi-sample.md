@@ -182,15 +182,15 @@ In the Receipt format designer, add the following custom fields to the appropria
   - **Footer:** Add the following fields:
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
     - Fields group **Sales total**: 
-      - **Total (sales)**: Total transaction amount without tax sum,
-	  - **Total Include Tax (sales)**: Total transaction amount with tax sum,
-      - **Total Tax (sales)**: Transaction tax sum.	
+      - **Total (sales)**: Total transaction amount without tax sum;
+      - **Total Include Tax (sales)**: Total transaction amount with tax sum;
+      - **Total Tax (sales)**: Transaction tax sum.
     - **Tax break down** (should be separate line):
-	  - **Tax Basis (sales)**: Total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards,
-	  - **Tax Amount (sales)**: Total tax amount for cash transactions excluding deposits, prepayments and gift cards,
-	  - **Total Include Tax (sales)**: Total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards,
-	  - **Tax Retail Print Code**: The code corresponding to tax group,
-    - **QR Code**: Reference to registered cash transaction in the form of QR-code.
+      - **Tax Basis (sales)**: Total cash transaction amount (without taxes) excluding deposits, prepayments and gift cards;
+      - **Tax Amount (sales)**: Total tax amount for cash transactions excluding deposits, prepayments and gift cards;
+      - **Total Include Tax (sales)**: Total cash transaction amount (with taxes) excluding deposits, prepayments and gift cards;
+      - **Tax Retail Print Code**: The code corresponding to tax group.
+    - **QR Code**: Reference to the registered cash transaction in the form of QR-code.
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
@@ -359,10 +359,9 @@ To enable the registration process, set up Retail Headquarters using the steps b
 
 ### Production environment
 
-Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
+In addition to the above procedure that enables the extensions that are components of the fiscal registration service integration sample, follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
-1. Complete the steps described in the [Deployment guidelines for cash registers for Austria](#deployment-guidelines-for-cash-registers-for-austria) section earlier in this topic.
-2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
+1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
 
@@ -380,7 +379,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
         ```
 
-3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
+2. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
 
     - Add the following lines to include the CRT extensions in the deployable packages:
@@ -396,12 +395,11 @@ Follow these steps to create deployable packages that contain Retail components,
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
         ```
+34. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 
-4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
-6. Complete all necessary settings from the [Set up Retail for Austria](#set-up-retail-for-austria) section.
+5. Complete all necessary settings from the [Set up Retail for Austria](#set-up-retail-for-austria) section.
 
 ## Design of extensions
 
