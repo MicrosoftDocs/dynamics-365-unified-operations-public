@@ -106,7 +106,7 @@ When the health check fails, the POS displays the health check dialog with the f
   - **Cancel** - If this option is selected, the POS cancels the last action (for example, an item is not added to a new transaction).
 
 > [!NOTE]
-> The health check is only executed if the current operation requires the fiscal registration and the current step of the fiscal registration process has the **Continue on error** parameter disabled. For more details, see [Error handling settings](setting-up-fiscal-integration-for-retail-channel.md#error-handling-settings).
+> The health check is only executed if the current operation requires the fiscal registration and the current step of the fiscal registration process has the **Continue on error** parameter disabled. For more details, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## Storing fiscal response in fiscal transaction
 
