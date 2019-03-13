@@ -4,7 +4,9 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
-  - name: Preview features in Dynamics 365 for Retail (April 2019)
+  - name: Preview features in Dynamics 365 for Retail 10.0.1
+    href: get-started/whats-new-10-0-1.md
+  - name: What's new and changed in Dynamics 365 for Retail (April 2019)
     href: get-started/april-whats-new.md
   - name: Before you buy Retail
     href: get-started/before-you-buy.md
@@ -110,7 +112,11 @@
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Omni-channel advanced auto charges
-  href: omni-auto-charges.md
+  items:
+  - name: Configure and use advanced auto charges
+    href: omni-auto-charges.md
+  - name: Prorate header charges to matching sales lines
+    href: pro-rate-charges-matching-lines.md
 - name: Call center
   items:
   - name: Call center sales functionality
@@ -554,6 +560,8 @@
       href: dev-itpro/hybridApp.md
     - name: Override POS request handler
       href: dev-itpro/pos-handler.md
+    - name: View POS extension package information
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility

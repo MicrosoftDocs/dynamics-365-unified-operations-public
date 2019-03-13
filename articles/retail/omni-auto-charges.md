@@ -5,7 +5,8 @@ title: Omni-channel advanced auto charges
 description: This topic describes capabilities for managing additional order charges for Retail channel orders using advanced auto charges features.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,7 +34,6 @@ ms.dyn365.ops.version: 10.0
 
 # Omni-channel advanced auto charges
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic provides information on configuration and deployment of the advanced auto-charges feature which are available in Dynamics 365 for Retail version 10.0.
@@ -54,7 +54,7 @@ On the **Retail \> Headquarters setup \> Parameters \> Retail parameters** page,
 
 ![Advanced Auto-Charges Parameter](media/advancedchargesparameter.png)
 
-When advanced auto-charges are enabled, users are longer prompted to manually enter a shipping charge at the POS terminal when creating a ship-all or ship-selected customer order. POS order charges are systematically calculated and added to the POS transaction (if a corresponding auto-charges table that matches the criterion of the order being created are found). Users can also add or maintain header or line-level charges manually through newly added POS operations that can be added to the POS screen layouts.  
+When advanced auto-charges are enabled, users are no longer prompted to manually enter a shipping charge at the POS terminal when creating a ship-all or ship-selected customer order. POS order charges are systematically calculated and added to the POS transaction (if a corresponding auto-charges table that matches the criterion of the order being created are found). Users can also add or maintain header or line-level charges manually through newly added POS operations that can be added to the POS screen layouts.  
 
 When advanced auto-charges are enabled, the existing **Retail parameters** for **Shipping charges code** and **Refund shipping charges** are no longer utilized. These parameters are only applicable if the **Use advanced auto-charges** parameter is set to **No**.
 
@@ -72,6 +72,8 @@ The new operations are as follows.
 - **143 - Recalculate charges** - Use this operation to perform a full re-calculation of the charges for the sales transaction. Any previously user-overwritten auto-charges will be recalculated based on the current cart configuration.  
 
 As with all POS operations, security configurations can be made to require manager approval in order to execute the operation.
+
+It is important to note that the above listed POS operations can also be added to the POS layout even if the **Use advanced auto-charges** parameter is disabled. In this scenario, organizations will still get added benefits of being able to view manually added charges and edit them using the **Manage charges** operation. Users may also use the **Add header charges** and **Add line charges** operations for POS transactions even when **Use advanced auto-charges** parameter is disabled. The **Recalculate charges** operation has less functionality if used when **Use advanced auto-charges** is disabled. In this sceanrio, nothing would be recalculated and any charges manually added to the transaction would just reset to $0.00.
 
 ## Use case examples
 In this section, sample use cases are presented to help you understand the configuration and usage of auto-charges and miscellaneous charges within the context of Retail channel orders. These examples illustrate the behavior of the application when the **Use advanced auto-charges** parameter has been enabled.
@@ -212,3 +214,7 @@ It is recommended that the organization also add free text fields to the receipt
 ### Preventing charges from being calculated until the POS order is completed
 
 Some organizations may prefer to wait until the user has finished adding all of the sales lines to the POS transaction before calculating charges. To prevent calculation of charges as items are added to the POS transaction, turn on the **Manual charge calculation** parameter in the **Functionality profile** used by the store. Enabling this parameter will require the POS user to use the **Calculate totals** operation when they have completed adding the products to the POS transaction. The **Calculate totals** operation will then trigger the calculation of any auto charges for the order header or lines as applicable.
+
+### Charges override reports
+
+If users manually override the calculated charges or add a manual charge to the transaction, this data will available for auditing in the **Charge Override History** report. The report can be accessed from **Retail \> Inquiries and reports \> Charge Override History**.  It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs. Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ. 

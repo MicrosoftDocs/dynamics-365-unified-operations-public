@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deprecated APIs
+title: Deprecated APIs (June 2017)
 description: This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 author: aneesmsft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deprecated APIs
+# Deprecated APIs (June 2017)
 
 [!include [banner](../includes/banner.md)]
 
