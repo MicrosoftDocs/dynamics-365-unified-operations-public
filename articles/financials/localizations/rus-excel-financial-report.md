@@ -43,7 +43,7 @@ Set up a financial report so that it has the list of financial report cells and 
 2. Go to **General ledger \> Financial reports setup \> Financial reports**.
 3. Select the line that has the value **Баланс** in the **Report code** column.
 4. Select **Setup**.
-5. On the **Requisites setup** page, set up calculation rules for report cells, as described in [Financial reporting (Russia)](rus-financial-reports#set-up-calculation-rules-for-report-cells.md).
+5. On the **Requisites setup** page, set up calculation rules for report cells, as described in [Financial reporting (Russia)](rus-financial-reports.md#set-up-calculation-rules-for-report-cells).
 
 ## Create an Excel template for the financial report
 
@@ -110,7 +110,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
         The **Calculations.'\$Values'** calculated field contains the value of the financial report cell that has a code that equals the "Input parameter."
 
-        For more information about the Financial reports model, see [Configure ER to use the results of financial report calculations](rus-financial-reports#configure-er-to-use-the-results-of-financial-report-calculations.md).
+        For more information about the Financial reports model, see [Configure ER to use the results of financial report calculations](rus-financial-reports.md#configure-er-to-use-the-results-of-financial-report-calculations).
 
 5. Bind the calculated values of financial report cells to elements of the ER format cells:
 
@@ -131,7 +131,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
 ## Run the financial report format
 
-You can configure the Electronic messages feature to run any ER configuration. For more information, see [Configure electronic messages to generate the financial report and store the results](rus-financial-reports#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results.md).
+You can configure the Electronic messages feature to run any ER configuration. For more information, see [Configure electronic messages to generate the financial report and store the results](rus-financial-reports.md#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results).
 
 To run the ER format that is based on the **Financial reports model**, follow these steps.
 
