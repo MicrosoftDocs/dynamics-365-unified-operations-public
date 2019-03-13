@@ -71,16 +71,15 @@ For more information about business events, see [Business events](../../dev-itpr
 > [!Note]
 > The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). For information about how to enable the feature, see [Enabling business events](../../dev-itpro/business-events/home-page.md#enabling-business-events).
 
-## Batch Jobs single scheduler
-We have made some improvements in the batch framework to optimize the batch scheduling functionality. Only one Batch scheduler will be active at a time and we have seen that most customers who opted in this feature while in Preview noticed a higher throughput.
-This is enabled by default as part of Platform Update 25.
+## Batch jobs single scheduler
+Improvements made in the batch framework optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which maintains a higher throughput. This is enabled by default in Platform update 25.
 
 ## Batch Jobs enhanced forms
 The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Batch enhanced forms](../../dev-itpro/sysadmin/enhanced-forms.md).
-For more information about Saved views, see the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
+For information about saved views, see the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
 
 ## Batch jobs alerts and notifications
-You can see Batch jobs notifications in the action center. These notifications will keep you informed about batch events. You can enable alert rules for when a batch job ends, ends in error, or is canceled. You can choose whether the alerts are emailed to you or appear as a pop-up notification in action center. For more information, see the [Alerts](../../dev-itpro/sysadmin/alerts.md).
+You can view batch job notifications in the action center. These notifications will keep you informed about batch events. You can enable alert rules for when a batch job ends, ends in error, or is canceled. You can choose whether the alerts are emailed to you or appear as a pop-up notification in the action center. For more information, see [Alerts](../../dev-itpro/sysadmin/alerts.md).
 
 ## Additional resources
 
