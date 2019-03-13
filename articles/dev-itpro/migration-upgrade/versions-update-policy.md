@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ This topic outlines the lifecycle and support policies for the Microsoft Dynamic
 ## Modern Lifecycle Policy
 The Dynamics 365 for Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations online service in accordance with the following servicing and system requirements:
 
-- Customers purchasing subscriptions of Microsoft Dynamics 365 for Finance and Operations and operating on the following Application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone an update for up to 30 days.
+- Customers purchasing subscriptions of Microsoft Dynamics 365 for Finance and Operations and operating on the following Application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 2 consecutive service updates.
     - Dynamics 365 for Operations version 1611 (November 2016)
     - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
     - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
@@ -77,7 +77,7 @@ For information about the new features included in each release, click the links
 | Dynamics 365 for Finance and Operations | Major release                       | [10.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10) | 10.0.8          | April 2019     | Not applicable (continuously updated)\* |
 | Dynamics 365 for Finance and Operations | Major release                       | [8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-october-2018) | 8.1.136          | October 2018     | Not applicable (continuously updated)\* |
 
-\* Indicates a major release is required to be updated through service updates. Service updates are cumulative in nature and may include updates for some or all the following components:  Platform, Application, Financial Reporting, Retail, and operating system updates.  You will be required to have an update that's no older than 3 months. The 8.1.x version series will be replaced by version 10.0, which is targeted for release in April 2019. For more information, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+\* Indicates a major release is required to be updated through service updates. Service updates are cumulative in nature and may include updates for some or all of the following components:  Platform, Application, Financial Reporting, Retail, and operating system updates.  You will be required to have an update that's no older than 3 service updates. The 8.1.x version series will be replaced by version 10.0, which is targeted for release in April 2019. For more information, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
 ### Table 2: Application releases
 

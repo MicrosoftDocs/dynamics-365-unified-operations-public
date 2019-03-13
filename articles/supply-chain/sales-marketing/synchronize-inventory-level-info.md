@@ -5,7 +5,7 @@ title: Synchronize inventory level information from Finance and Operations to Fi
 description: This topic discusses the templates and underlying tasks that are used to synchronize inventory-level information from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,14 +42,14 @@ This topic discusses the templates and underlying tasks that are used to synchro
 The following template and underlying tasks are used to synchronize inventory on-hand levels from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 
 **Template in Data integration**
-- Product Inventory (Finance and Operations to Field Service)
+- Product Inventory (Fin and Ops to Field Service)
   
 **Task in the Data integration project**
 - Product inventory
 
 The following synchronization tasks are required before synchronization of inventory levels can occur:
-- Warehouses (Finance and Operations to Field Service) 
-- Field Service products with Inventory unit (Finance and Operations to Sales) 
+- Warehouses (Fin and Ops to Field Service) 
+- Field Service products with Inventory unit (Fin and Ops to Sales) 
 
 ## Entity set
 
@@ -84,6 +84,6 @@ You can apply filters with Advanced Query and Filtering so that only certain pro
 
 ## Template mapping in Data integration
 
-### Product inventory (Finance and Operations to Field Service): Product inventory
+### Product inventory (Fin and Ops to Field Service): Product inventory
 
 [![Template mapping in Data integration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

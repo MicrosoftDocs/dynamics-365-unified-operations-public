@@ -115,7 +115,7 @@
   items:
   - name: Configure and use advanced auto charges
     href: omni-auto-charges.md
-  - name: Proration and grouping of header auto charges
+  - name: Prorate header charges to matching sales lines
     href: pro-rate-charges-matching-lines.md
 - name: Call center
   items:

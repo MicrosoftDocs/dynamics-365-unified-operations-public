@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -62,7 +62,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in an upcoming platform update. |
+| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
 
 #### Overriding internal methods is deprecated
 
@@ -72,7 +72,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in an upcoming platform update. |
+| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 

@@ -1228,7 +1228,7 @@
     items:
     - name: Refresh for training purposes
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Debugging and diagnostics
+    - name: Debug a copy of the production database
       href: database/dbmovement-scenario-debugdiag.md
     - name: Golden configuration promotion
       href: database/dbmovement-scenario-goldenconfig.md

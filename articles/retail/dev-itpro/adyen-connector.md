@@ -64,17 +64,22 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 #### Supported Adyen Firmware Versions
 The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 for Retail POS.
 
+---
+
 # [8.1.3](#tab/8-1-3)
+### Dynamics 365 for Retail POS version 8.1.3
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0](#tab/10-0)
+### Dynamics 365 for Retail POS version 10.0
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0.1](#tab/10-0-1)
+### Dynamics 365 for Retail POS version 10.0.1
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
