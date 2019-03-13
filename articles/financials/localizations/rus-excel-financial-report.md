@@ -33,13 +33,13 @@ ms.dyn365.ops.version: 10.0.1
 
 This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.
 
-Before you read this topic, you should review [Create Electronic reporting (ER) configurations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/fin-and-ops/toc.json) and all the topics that are behind this topic.
+Before you read this topic, you should review [Create Electronic reporting (ER) configurations](../../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json) and related electronic reporting topics about creating configurations.
 
 ## Set up a financial report
 
 Set up a financial report so that it has the list of financial report cells and rules for calculating financial reports cells.
 
-1. Upload data management package settings. For this example, upload the **RU Accounting reporting 5.07 (2016).zip** data management package settings as described in [Accounting reporting in electronic format](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-act-reporting/articles/financials/localizations/rus-accounting-reporting.md).
+1. Upload data management package settings. For this example, upload the **RU Accounting reporting 5.07 (2016).zip** data management package settings as described in [Accounting reporting in electronic format](rus-accounting-reporting.md).
 2. Go to **General ledger \> Financial reports setup \> Financial reports**.
 3. Select the line that has the value **Баланс** in the **Report code** column.
 4. Select **Setup**.
@@ -49,7 +49,7 @@ Set up a financial report so that it has the list of financial report cells and 
 
 Create an Excel template for your financial report. At a minimum, you should assign names to all the Excel cells that should have values on the report that is generated.
 
-For an example, download the [Excel template example for a Russian balance sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/BalancesheetRussia).
+For an example, download the [Excel template example for a Russian balance sheet](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/how-to-articles/BalancesheetRussia).
 
 ## Create an ER configuration for the financial report in Excel format
 
