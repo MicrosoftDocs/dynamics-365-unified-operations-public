@@ -42,7 +42,7 @@ This topic discusses the templates and underlying tasks that are used to synchro
 The following template and underlying tasks are used to run synchronization of warehouses from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 
 **Template in Data integration**
-- Warehouses (Finance and Operations to Field Service)
+- Warehouses (Fin and Ops to Field Service)
 
 **Task in the Data integration project**
 - Warehouse
@@ -80,6 +80,6 @@ To ensure that the **Integration key** exists for **msdyn_warehouses**:
 
 The following illustration shows the template mapping in Data integration.
 
-### Warehouses (Finance and Operations to Field Service): Warehouse
+### Warehouses (Fin and Ops to Field Service): Warehouse
 
 [![Template mapping in Data integration](./media/Warehouse1.png)](./media/Warehouse1.png)
