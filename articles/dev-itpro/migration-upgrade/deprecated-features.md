@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,20 +59,20 @@ This list is intended to help you consider these removals and deprecations for y
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in an upcoming platform update. |
+| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
 
 #### Overriding internal methods is deprecated
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in an upcoming platform update. |
+| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
