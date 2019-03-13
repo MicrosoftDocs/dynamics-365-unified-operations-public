@@ -2283,6 +2283,8 @@
           href: ../financials/localizations/rus-financial-reports.md
         - name: Cash flow management
           href: ../financials/localizations/rus-cash-flow.md
+        - name: Configure financial reports in Excel (Russia)
+          href: ../financials/localizations/rus-excel-financial-report.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
