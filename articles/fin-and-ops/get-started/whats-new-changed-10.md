@@ -69,8 +69,7 @@ The following updates are included in this release:
 
 For more information, see [Configure tax integration for China](../../financials/localizations/apac-chn-tax-integration.md).
 
-## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+
 
 ## Additional resources
 
@@ -92,3 +91,6 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+
+## Regulatory updates
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
