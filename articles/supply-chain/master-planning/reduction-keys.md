@@ -36,22 +36,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains the different methods used to reduce forecast requirements. It includes information about each of the types and examples of the results of each. The article also includes the creation, setup and use of a forecast reduction key, which is used in some methods to reduce forecast requirements. 
 
-# Method used to reduce forecast requirements
+## Method used to reduce forecast requirements
 
 When you include a forecast in a master plan, you can choose how the forecast requirements are reduced when actual demand is included. 
 To include a forecast in a master plan and choose the method to reduce forecast requirements go to **Master planning > Setup > Plans > Master plans**. Choose the forecast desired under the field **Forecast model** and select the **Method used to reduce forecast requiments**. The available options to choose from are now shown.
 
-## None
+### None
 
 If you choose **None**", the forecast requirements are not reduced during master scheduling. 
 This means that master planning will create planned orders to supply the forecasted demand (forecast requirements). These planned orders will keep the quantity suggested regardless of other types of demand. For example, if sales orders are placed, master planning will create additional planned orders to supply the sales orders. The forecast requirements will not be reduced in quantity. 
 
-## Percent - reduction key
+### Percent - reduction key
 
 If you choose **Percent - reduction key**, the forecast requirements are reduced according to the percentages and time periods that are defined by the reduction key. Therefore, master planning will create planned orders that will have a quantity = forecasted quantity * reduction key in each time period. 
 If there are other types of demand, master planning will also create planned orders to supply those. 
 
-### Example : Percent - reduction key 
+#### Example : Percent - reduction key 
 
 This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.
 
@@ -86,11 +86,11 @@ If you run forecast scheduling on January 1, the demand forecast requirements ar
 | April                | 750                       | = 75% * 1000 |
 | May through December | 1000                      | = 100% * 1000|
 
-## Transactions - reduction key
+### Transactions - reduction key
 
 If you choose **Transactions - reduction key**, the forecast requirements are reduced by the transactions that occur during the time periods that are defined by the reduction key. 
 
-### Example: Transactions - reduction key 
+#### Example: Transactions - reduction key 
 
 This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
 
@@ -115,7 +115,7 @@ If you use the same demand forecast of 1,000 pieces per month, the following req
 | April                | 881                       |
 | May through December | 1000                      |
 
-## Transactions - dynamic period
+### Transactions - dynamic period
 
 If you choose **Transactions - dynamic period**, the forecast requirements are reduced by the actual order transactions that occur during the dynamic period. The dynamic period covers the current forecast dates and ends with the start of the next forecast. 
 
@@ -129,7 +129,7 @@ When this option is used, the following behavior occurs:
 - Positive days are included in the forecast reduction calculation
 - If actual order transactions are greater than the forecasted requirements, the remaining transactions are not forwarded to the next forecast period.
 
-### Example 1: Transactions - dynamic period
+#### Example 1: Transactions - dynamic period
 
 Here a simple example of how Transactions - dynamic period works is shown.
 
@@ -156,7 +156,7 @@ Here a simple example of how Transactions - dynamic period works is shown.
 | February 1           | 600              | Forecast requirements (=1000-400)           |
 | February 15          | 400              | Sales orders requirements                   |
 
-### Example 2: Transactions - dynamic period
+#### Example 2: Transactions - dynamic period
 
 In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on. These periods are defined in the reduction key. However, the time between two demand forecast lines can also *imply* a period.
 
@@ -195,7 +195,7 @@ Therefore, the following planned orders will be created:
 | January 12                        | 1000             | Forecast requirements period January 12 to end                 |
 
 
-# Create and set up a forecast reduction key
+## Create and set up a forecast reduction key
 
 The reduction key is used in **Transactions - reduction key** and **Percent- reduction key** methods of reducing the forecast requirements. Follow these steps to create and setup a reduction key.
 
@@ -207,7 +207,7 @@ The reduction key is used in **Transactions - reduction key** and **Percent- red
    - Define the time periods during which you want the forecast reduction to occur. 
    - For a particular time period, specify the **percentages** by which you want to reduce the forecast requirements. You can enter positive values to decrease requirements or negative values to increase requirements. 
 
-# Use a reduction key
+## Use a reduction key
 
 The forecast reduction key must be assigned to the coverage group of the item. Follow these steps to assign it to the coverage group:
 1. Click **Master planning > Setup > Coverage > Coverage groups**.
@@ -218,14 +218,13 @@ Click **Master planning > Setup > Plans > Forecast plans**.
 Click **Master planning > Setup > Plans > Master plans**.
 	4. In the Reduction principle field on the General tab, select the **Percent - reduction key** option or the **Transactions - reduction** key option.
 
-# Reduce a forecast by transactions
+## Reduce a forecast by transactions
 
 When you select **Transactions - reduction key** or **Transactions - dynamic period** as the method to reduce forecast requirements, you can select whether you want all transcations to reduce the forecast (**All transactions**) or only the sales orders (**Orders**). 
 You can choose the desired option under **Reduce forecast by** field in the Released products page, under the Other tab. 
 
 
-Additional resources
---------
+## Additional resources
 
 [Master plans](master-plans.md)
 
