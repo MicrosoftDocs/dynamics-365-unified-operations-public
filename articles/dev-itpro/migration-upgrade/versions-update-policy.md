@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ This topic outlines the lifecycle and support policies for the Microsoft Dynamic
 ## Modern Lifecycle Policy
 The Dynamics 365 for Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations online service in accordance with the following servicing and system requirements:
 
-- Customers purchasing subscriptions of Microsoft Dynamics 365 for Finance and Operations and operating on the following Application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone an update for up to 30 days.
+- Customers purchasing subscriptions of Microsoft Dynamics 365 for Finance and Operations and operating on the following Application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 2 consecutive service updates.
     - Dynamics 365 for Operations version 1611 (November 2016)
     - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
     - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
