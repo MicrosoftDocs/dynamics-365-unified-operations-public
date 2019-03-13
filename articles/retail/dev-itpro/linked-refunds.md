@@ -52,17 +52,17 @@ On the **Retail \> Headquarters setup \> Parameters \> Retail Shared parameters*
 
 Before you enable this feature, ensure that you have tested and trained your employees, as this will change the business process flow of how shipping or other charges are calculated and added to POS sales orders. This will enable the availability of Card Payment Tokens used on one channel (like Call Center, Modern Point of Sale, etc..) to all channels set up for the Retailer. It will also ensure that the **Linked Refunds** feature is activated for the point of sale applications. Call center, Modern Point of Sale and e-Commerce applications will continue to have the same behavior they have had historically related to manual entry of Card numbers for payment. 
 
-### In scope :
+### Supported flows :
 Cashiers can now process refund to card used during original transaction without the card being present for return.
 - Linked refunds for cash and carry using credit/debit cards.
 - Linked refunds for customer orders using credit/debit cards.
  
-### Out of scope :
-Linked refunds with gift cards.
-Linked refunds with loyalty cards.
-Exchange orders support.
-Multiple return orders in the same transaction.
-Returns without a reciept or customer account details. 
+### Not supported flows :
+- Linked refunds with gift cards.
+- Linked refunds with loyalty cards.
+- Exchange orders support.
+- Multiple return orders in the same transaction.
+- Returns without a reciept or customer account details. 
 
 ### Additonal Setup Required
 If the customer is not using Adeyn Connector out of box implementation, they will have to set up the connector that supports tokenization of credit cards.
