@@ -137,7 +137,7 @@ For details about the code migration steps, see [Code migration](../dev-tools/de
 ## Scenario 3: Upgrade to the latest application release
 
 > [!IMPORTANT]
-> If you're using application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from version 8.0 to 8.1.X](./appupdate-80-81.md).
+> If you're using application version 8.0 and want to move to the 8.1 or the 10.0 releases, follow the simplified steps in [Update environments from version 8.0 to 8.1.X/10.X](./appupdate-80-81.md).
 
 These steps apply to customers who are live on an earlier release, and who want to do a full upgrade to the most recent platform and application releases. The steps might also apply to customers who have already deployed and configured a production environment, even if they haven't yet gone live. If you aren't upgrading your application but just want to upgrade your platform, use scenario 4 instead.
 
