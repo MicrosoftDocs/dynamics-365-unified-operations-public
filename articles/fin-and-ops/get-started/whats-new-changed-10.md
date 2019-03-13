@@ -54,6 +54,21 @@ For more information, see [Catch weight product processing with warehouse manage
 ## Non-GST transactions for India 
 This feature allows you to create non-GST transactions with the Tax engine. To create a non-GST transaction, select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
 
+## Tax functionality updates for China
+
+In China, official tax invoices can only be issued via two government-authorized invoicing software (Aisino and BaiWang). This feature lets you export the issued invoices into the .TXT and .XML file formats so you can import the files into the authorized invoicing software of Aisino and BaiWang providers accordingly. 
+
+You can also maintain the tax classification and codes in Finance and Operations, which is in alignment with tax integration interface 3.0. The exported invoice file will include commodity codes (classification of goods and services) which is mandatory for China. 
+
+The standard category hierarchy setting functionality is used to include the commodity codes in the invoice lines of the exported file.
+
+The following updates are included in this release:
+
+- There is a new interface with BaiWang provider software that lets you export issued invoices in .XML format and you can import files from BaiWang software in .TXT and .XML formats.
+- We updated the structure of the issued invoice that is exported and you can import .TXT file for interface with Aisino provider software.
+
+For more information, see [Configure tax integration for China](../../financials/localizations/apac-chn-tax-integration.md).
+
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
@@ -77,23 +92,3 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
-
-
-## Tax functionality updates for China
-
-In China, official tax invoices can only be issued via two government-authorized invoicing software (Aisino and BaiWang). This feature lets you export the issued invoices into the .TXT and .XML file formats so you can import the files into the authorized invoicing software of Aisino and BaiWang providers accordingly. 
-
-You can also maintain the tax classification and codes in Finance and Operations, which is in alignment with tax integration interface 3.0. The exported invoice file will include commodity codes (classification of goods and services) which is mandatory for China. 
-
-The standard category hierarchy setting functionality is used to include the commodity codes in the invoice lines of the exported file.
-
-The following updates are included in this release:
-
-- There is a new interface with BaiWang provider software that lets you export issued invoices in .XML format and you can import files from BaiWang software in .TXT and .XML formats.
-- We updated the structure of the issued invoice that is exported and you can import .TXT file for interface with Aisino provider software.
-
-For more information, see [Configure tax integration for China](../../financials/localizations/apac-chn-tax-integration.md).
-
-## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
-
