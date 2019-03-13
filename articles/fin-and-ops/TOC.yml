@@ -2320,6 +2320,8 @@
           href: ../financials/localizations/rus-accounting-reporting.md
         - name: Cash flow management
           href: ../financials/localizations/rus-cash-flow.md
+        - name: Foreign currency sales, purchases, and transfers
+          href: ../financials/localizations/rus-currency-sale-purchase.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
