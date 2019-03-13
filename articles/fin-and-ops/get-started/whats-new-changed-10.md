@@ -49,6 +49,80 @@ For more information, see [Catch weight product processing with warehouse manage
 ## Non-GST transactions for India 
 This feature allows you to create non-GST transactions with the Tax engine. To create a non-GST transaction, select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
 
+## Tax engine
+
+> [!NOTE]
+> The tax engine (GTE) is currently only available for India.
+
+This release includes the following features for the Tax engine.
+
+### Improving tax configuration usability with reduced number of lookups
+
+While configuring tax using the Tax Engine (GTE), you can define multiple tables to look up tax rates, non-deductible percentages, tax components, tax periods, and more. This feature reduces the number of lookup tables by combining them; for example, such data model properties as **Country/Region of Origin**, **Consumption of Country/Region**, and **Product type** determine the nature of the tax transaction, which can be reused in many places. In this release, you can add a string-type measure at the line level, which can be a lookup. This measure can be further used in other lookups, like reporting, rate, and so on.
+
+This feature will dramatically reduce the number of lookups that you need to maintain and will improve the tax configuration usability. This line-level string-type measure will also be shown in the tax document user interface.
+
+### Simplifying tax setup maintenance with Excel integration
+
+Maintaining tax setup parameters (tax rates, non-deductible percentages, and so on) for tax configurations can be a very effort-intensive task for users in some countries/regions and for some types of businesses. Now you can maintain these parameters in Microsoft Excel files which are automatically generated based on tax lookup tables and are integrated with the tax setup.
+
+### Enabling tax configuration with tax currency and sales tax codes
+
+Sales tax code is a mandatory setup for GTE to integrate with Finance and Operations. Previously, GTE created the sales tax code with the same name as the tax component when synchronizing the tax configuration, and it used the accounting currency for the auto-create sales tax codes.
+
+Companies with multiple tax registration across the world need to maintain different tax currencies for tax components used in different countries. With the release of this feature, users can do the following.
+
+- Maintain the sales tax code in tax setup
+- Map the tax component to sales tax code in lookup tables
+- Maintain tax currency and settlement period of these sales tax codes
+
+With the tax setup, GTE will use the mapped sales tax code, tax currency, and settlement period for posting the tax transactions.
+
+## Expanded regional coverage for Regulatory Configuration Service (RCS) deployments
+As part of the ongoing enhancements to RCS, we are increasing the breadth of regional coverage where service environments can be deployed through end-user selection. As part of this release, users can host their RCS environments in the following countries or regions:
+
+- United States 
+- India 
+- Europe (Preview)
+- China (Preview)
+
+## Electronic reporting (ER)
+
+This release includes the following features for Electronic reporting (ER).
+
+### Performance optimization of customer-built configurations
+A functional consultant persona can enable tracing of execution of electronic reporting configuration. This consultant can also analyze generated trace and optimize electronic reporting configuration performance by setting caching on frequently used nodes.
+
+Before this release, caching supported only a flat list of records, which meant that any related records were not cached. This feature allows caching of nested records. It also allows users to enable “lazy” caching, when only referenced records are being cached, not the whole list.
+
+### Setting up parameters by legal entity
+
+This feature allows you to configure an ER format that includes an abstract data source and lets you specify how this data source can be filled in by a business user. The business user can then use the Finance and Operations user interface to set up an ER format with master data from a specific legal entity. This can be done for any legal entity that might control execution of the corresponding ER format.
+
+This feature also enables a business user to export an ER format with master data for a specific company from one Finance and Operations instance and import it to another one.
+
+### Post-processing of generated files
+
+This feature gives more power to business users and allows them to configure the required post-processing actions by reusing the existing logic of Finance and Operations as well as the functionality of surrounding applications (files encryption, conversion to another format, direct printing, and so on).
+
+### Post-processing of imported files
+
+Import functionality in electronic reporting (ER) uses SharePoint folders to get the next set of files for processing. Before there was no automatic process to manage processed files; for example, successfully processed files were automatically deleted from a SharePoint source folder and couldn't be moved to another location. This resulted in additional manual work and potential errors. With this feature, there is a process to automatically manage processed files which allows you to configure the post-processing actions. By changing the source settings of an ER format, you can configure the following actions:
+
+For successfully processed files:
+- Delete files from the source SharePoint folder
+- Move files to another SharePoint folder
+For files that are processed with warnings:
+- Keep files in the source SharePoint folder
+- Move files to another SharePoint folder
+For files that failed to process:
+- Keep files in the source SharePoint folder
+- Move files to another SharePoint folder
+
+### Generate documents in PDF format by filling in PDF templates
+
+This feature allows you to use a fillable PDF document as a template for generating reports in the PDF format. It also allows you to automatically discover fields of such fillable PDF document generating new components of an ER format at design time that are necessary to fill in these fields of a PDF template at run time. With this feature, you can configure an ER format generating multiple PDF documents and automatically merging them into a single, final PDF document.
+
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
