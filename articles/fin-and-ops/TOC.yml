@@ -2302,6 +2302,8 @@
           items:
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
+          - name: Configure financial reports in Excel (Russia)
+            href: ../financials/localizations/rus-excel-financial-report.md            
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
