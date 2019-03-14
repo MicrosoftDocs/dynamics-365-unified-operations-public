@@ -25,7 +25,7 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Standard and First release service updates
+      - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
         items:
@@ -208,7 +208,7 @@
       href: ../dev-itpro/migration-upgrade/versions-update-policy.md
     - name: Software lifecycle policy - On-premises
       href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
-    - name: Standard and First release service updates
+    - name: Service update availability
       href: get-started/public-preview-releases.md
     - name: Apply updates to cloud environments
       href: ../dev-itpro/deployment/apply-deployable-package-system.md
