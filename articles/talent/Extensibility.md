@@ -57,7 +57,7 @@ In Microsoft Dynamics 365: Attract, forms can appear in Candidate portal, and ca
 
 When a candidate submits a form, Microsoft Flow captures the form submission, reads the data, and stores it in the Common Data Service for Apps entity.
 
-To download the **Flow – Form Connect** template, go to [Flow – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
+To download the **Flow – Form Connect** template and Custom Entity Structure, go to [Flow – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
 
 ## Initiate and Extract Parameters Passed to Powerapps
 
@@ -67,7 +67,7 @@ This template can be used to retrieve a candidate assessment form, so that a hir
 
 Apps that are created by using PowerApps can be embedded into the job template in Attract.
 
-To download the **Initiate and Extract Parameters Passed to Powerapps** template, go to [Initiate and Extract Parameters Passed to Powerapps](https://go.microsoft.com/fwlink/?linkid=2081991) on the Microsoft Download Center.
+To download the **Initiate and Extract Parameters Passed to Powerapps** template and Custom Entity Structure, go to [Initiate and Extract Parameters Passed to Powerapps](https://go.microsoft.com/fwlink/?linkid=2081991) on the Microsoft Download Center.
 
 ## Integration with Office 365
 
@@ -75,7 +75,7 @@ The **Integration with Office 365** app can be used to extract team information 
 
 This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events.
 
-To download the **Integration with Office 365** app, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
+To download the **Integration with Office 365** app and Custome Entity Structure, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
 
 ## Flow – Email Notification
 
