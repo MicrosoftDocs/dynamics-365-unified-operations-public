@@ -64,4 +64,4 @@ Follow these steps to set up alerts for batch legacy forms.
 3. In the **Batch job alerts** dialog box, configure the alerts, and then select **OK**.
 
 > [!NOTE] 
-> To recieve email notifications, in the **Batch job alerts** dialog box, set the **Email** option to **Yes**.
+> To receive email notifications, in the **Batch job alerts** dialog box, set the **Email** option to **Yes**.
