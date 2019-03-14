@@ -164,7 +164,7 @@ The following tax registers are available:
 
 Basic localization in the following two areas is available:
 - Correspondence of accounts for all new general ledger postings.
-- Functional coexistence of PI features and Russian country context.
+- Functional coexistence of process industries features and Russian country context.
 
 
 ## Additional resources
