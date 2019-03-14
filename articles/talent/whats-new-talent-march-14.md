@@ -68,7 +68,7 @@ CDS entities now sync correctly when updated via CDS.
 ## Coming Soon
 
 ###  Advanced compensation security (fixed and variable)
-In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee populations in the organization. You can assign security roles to  fixed and variable plans that will determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
+In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee populations in the organization. You can assign security roles to fixed and variable plans that will determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
 
 ###  Email support for alerts
 With Platform update 24, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
