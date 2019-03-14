@@ -33,6 +33,10 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow. You can import the solution package that is associated with each example into your PowerApps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
+> [!IMPORTANT]
+> If you want to use the templates and app that are described in this topic "as is," be sure to test them to make sure that they cover all the scenarios that are specific to your implementation.
+
+
 ## Prerequisites
 
 - To import packages, users must have the **Environment Maker** permission.
@@ -100,9 +104,6 @@ An organization might have a set of skills that it urgently requires. These skil
 This template can be extended so that it can be used for any scenario that involves SharePoint integration.
 
 To download the **Flow – SharePoint Integration** template, go to [Flow – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
-
-> [!IMPORTANT]
-> If you want to use above given templates "as is," be sure to test it to make sure that it covers all the scenarios that are specific to your implementation.
 
 
 
