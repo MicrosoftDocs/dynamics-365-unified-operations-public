@@ -5,7 +5,7 @@ title: What's new or changed in Finance and Operations platform update 24 (March
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operation platform update 24 (March 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 3/05/2019
+ms.date: 3/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -120,5 +120,7 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 
 
