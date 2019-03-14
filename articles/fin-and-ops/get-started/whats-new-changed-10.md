@@ -101,7 +101,7 @@ This feature allows you to configure an ER format that includes an abstract data
 
 This feature also enables a business user to export an ER format with master data for a specific company from one Finance and Operations instance and import it to another one.
 
-### Post-processing of generated files
+### Specify a custom storage location for generated documents
 
 A new ER extensibility point is introduced allowing you to write a custom code in which you can subscribe to an event giving you access to any of documents that ER formats generate. This feature lets you extend the list of storage locations that are supported by ER framework to keep generated documents.
 
@@ -123,13 +123,42 @@ For files that failed to process:
 
 This feature allows you to use a fillable PDF document as a template for generating reports in the PDF format. It also allows you to automatically discover fields of such fillable PDF document generating new components of an ER format at design time that are necessary to fill in these fields of a PDF template at run time. With this feature, you can configure an ER format generating multiple PDF documents and automatically merging them into a single, final PDF document.
 
-## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+## Russian features
+
+### Cash flow management 
+
+This functionality allows you to do the following:
+- Obtain a cash flow forecast and perform an analysis
+- Manage payments on a daily basis using payment schedule journals
+- Control the company’s cash position
+- Maintain the company’s cash flows with centralized control
+
+For more information, see [Cash flow management (Russia)](../../financials/localizations/rus-cash-flow.md).
+
+### Other incomes and expenses profit tax registers
+
+The following tax registers are available:
+
+- Current period incomes
+- Tax expenses
+- Other expenses of current period
+- Unrealized expenses of current period
+- Other unrealized expenses
+
+### Localization of process industries
+
+Basic localization in the following two areas is available:
+- Correspondence of accounts for all new general ledger postings.
+- Functional coexistence of PI features and Russian country context.
+
 
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156).
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156). 
+
+## Regulatory updates
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ### Platform update 24
 Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new and changed in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
@@ -146,3 +175,5 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+
+
