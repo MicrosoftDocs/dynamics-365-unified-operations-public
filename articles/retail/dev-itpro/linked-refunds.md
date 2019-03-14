@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Linked refunds - refunds of previously approved and confirmed transactions
+title: Linked refunds - Refunds of previously approved and confirmed transactions
 description: This topic describes how to enable and use Linked refunds.
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail 10.0.1 update
 
 ---
 
-# Linked refunds - refunds of previously approved and confirmed transactions
+# Linked refunds - Refunds of previously approved and confirmed transactions
 
 [!include [banner](../../includes/banner.md)]
 
