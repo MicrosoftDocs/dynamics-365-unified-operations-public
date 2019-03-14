@@ -5,7 +5,7 @@ title: What's new or changed in Finance and Operations version 10.0 (April 2019)
 description: This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,13 +49,13 @@ For more information, see [Catch weight product processing with warehouse manage
 
 ## Master planning stability and recovery improvements
 
-Master planning will be made more resilient to failures and connectivity issues through multiple, incremental improvements. This will enhance the ability for Master planning to recover from exceptions without being stopped.
+Master planning will be made more resilient to failures and connectivity issues through multiple, incremental improvements. This will enhance the ability for master planning to recover from exceptions without being stopped.
 
 If master planning is stopped, it has been necessary to restart the master planning run. This process has been improved so that master planning will now restart automatically from where it was stopped. This will be a significant improvement for customers where master planning is a time-critical process.
 
 ##  Improved removal of obsolete planning data
 
-After a successful master planning run, a clean-up job is scheduled to remove planning data that is no longer necessary. In some cases, however, such as a failed master planning run, the data would not be cleaned up thereby incurring risk of aggregating unnecessary data. 
+After a successful master planning run, a clean-up job is scheduled to remove planning data that is no longer needed. In some cases, such as a failed master planning run, the data would not be cleaned up thereby incurring risk of aggregating unnecessary data.
 
 The clean-up job has now been enhanced to remove data from previously failed master planning runs, and the design has been optimized to never block other threads, leaving all helpers available for the master planning run. These improvements also apply to intercompany master planning.
 
@@ -71,13 +71,13 @@ This release includes the following features for the Tax engine.
 
 ### Improving tax configuration usability with reduced number of lookups
 
-While configuring tax using the Tax Engine (GTE), you can define multiple tables to look up tax rates, non-deductible percentages, tax components, tax periods, and more. This feature reduces the number of lookup tables by combining them; for example, such data model properties as **Country/Region of Origin**, **Consumption of Country/Region**, and **Product type** determine the nature of the tax transaction, which can be reused in many places. In this release, you can add a string-type measure at the line level, which can be a lookup. This measure can be further used in other lookups, like reporting, rate, and so on.
+While configuring tax using the Tax engine (GTE), you can define multiple tables to look up tax rates, non-deductible percentages, tax components, tax periods, and more. This feature reduces the number of lookup tables by combining them. For example, data model properties such as **Country/Region of Origin**, **Consumption of Country/Region**, and **Product type** determine the nature of the tax transaction, which can be reused in many places. In this release, you can add a string-type measure at the line level, which can be a lookup. This measure can be further used in other lookups, such as reporting and rate.
 
 This feature will dramatically reduce the number of lookups that you need to maintain and will improve the tax configuration usability. This line-level string-type measure will also be shown in the tax document user interface.
 
 ### Simplifying tax setup maintenance with Excel integration
 
-Maintaining tax setup parameters (tax rates, non-deductible percentages, and so on) for tax configurations can be a very effort-intensive task for users in some countries/regions and for some types of businesses. Now you can maintain these parameters in Microsoft Excel files which are automatically generated based on tax lookup tables and are integrated with the tax setup.
+Maintaining tax setup parameters (such as tax rates and non-deductible percentages) for tax configurations can be an effort-intensive task for users in some countries/regions and for some types of businesses. Now you can maintain these parameters in Microsoft Excel files that are automatically generated based on tax lookup tables and are integrated with the tax setup.
 
 ### Enabling tax configuration with tax currency and sales tax codes
 
@@ -85,9 +85,9 @@ Sales tax code is a mandatory setup for GTE to integrate with Finance and Operat
 
 Companies with multiple tax registration across the world need to maintain different tax currencies for tax components used in different countries. With the release of this feature, users can do the following.
 
-- Maintain the sales tax code in tax setup
-- Map the tax component to sales tax code in lookup tables
-- Maintain tax currency and settlement period of these sales tax codes
+- Maintain the sales tax code in tax setup.
+- Map the tax component to the sales tax code in lookup tables.
+- Maintain tax currency and settlement period of these sales tax codes.
 
 With the tax setup, GTE will use the mapped sales tax code, tax currency, and settlement period for posting the tax transactions.
 
@@ -104,7 +104,7 @@ As part of the ongoing enhancements to RCS, we are increasing the breadth of reg
 This release includes the following features for Electronic reporting (ER).
 
 ### Performance optimization of customer-built configurations
-A functional consultant persona can enable tracing of execution of electronic reporting configuration. This consultant can also analyze generated trace and optimize electronic reporting configuration performance by setting caching on frequently used nodes.
+A functional consultant persona can enable tracing of execution of electronic reporting configuration. This consultant can also analyze a generated trace and optimize electronic reporting configuration performance by setting caching on frequently used nodes.
 
 Before this release, caching supported only a flat list of records, which meant that any related records were not cached. This feature allows caching of nested records. It also allows users to enable “lazy” caching, when only referenced records are being cached, not the whole list.
 
@@ -116,37 +116,37 @@ This feature also enables a business user to export an ER format with master dat
 
 ### Specify a custom storage location for generated documents
 
-A new ER extensibility point is introduced allowing you to write a custom code in which you can subscribe to an event giving you access to any of documents that ER formats generate. This feature lets you extend the list of storage locations that are supported by ER framework to keep generated documents.
+A new ER extensibility point is introduced allowing you to write a custom code in which you can subscribe to an event giving you access to any of the documents that ER formats generate. This feature lets you extend the list of storage locations that are supported by ER framework to keep generated documents.
 
 For more information, see [Specify a custom storage location for generated documents](../../dev-itpro/analytics/er-custom-storage-generated-documents.md).
 
 ### Post-processing of imported files
 
-Import functionality in electronic reporting (ER) uses SharePoint folders to get the next set of files for processing. Before there was no automatic process to manage processed files; for example, successfully processed files were automatically deleted from a SharePoint source folder and couldn't be moved to another location. This resulted in additional manual work and potential errors. With this feature, there is a process to automatically manage processed files which allows you to configure the post-processing actions. By changing the source settings of an ER format, you can configure the following actions:
+Import functionality in Electronic reporting (ER) uses SharePoint folders to get the next set of files for processing. In previous releasess there was no automatic process to manage processed files. For example, successfully processed files were automatically deleted from a SharePoint source folder and couldn't be moved to another location. This resulted in additional manual work and potential errors. With this feature, there is a process to automatically manage processed files, which allows you to configure the post-processing actions. By changing the source settings of an ER format, you can configure the following actions:
 
 For successfully processed files:
-- Delete files from the source SharePoint folder
-- Move files to another SharePoint folder
+- Delete files from the source SharePoint folder.
+- Move files to another SharePoint folder.
 For files that are processed with warnings:
-- Keep files in the source SharePoint folder
-- Move files to another SharePoint folder
+- Keep files in the source SharePoint folder.
+- Move files to another SharePoint folder.
 For files that failed to process:
-- Keep files in the source SharePoint folder
-- Move files to another SharePoint folder
+- Keep files in the source SharePoint folder.
+- Move files to another SharePoint folder.
 
 ### Generate documents in PDF format by filling in PDF templates
 
-This feature allows you to use a fillable PDF document as a template for generating reports in the PDF format. It also allows you to automatically discover fields of such fillable PDF document generating new components of an ER format at design time that are necessary to fill in these fields of a PDF template at run time. With this feature, you can configure an ER format generating multiple PDF documents and automatically merging them into a single, final PDF document.
+This feature allows you to use a fillable PDF document as a template for generating reports in the PDF format. It also allows you to automatically discover fields of such fillable PDF document generating new components of an ER format at design time that are necessary to fill in these fields of a PDF template at run time. With this feature, you can configure an ER format generating multiple PDF documents and automatically merge them into a single, final PDF document.
 
 ## Russian features
 
 ### Cash flow management 
 
 This functionality allows you to do the following:
-- Obtain a cash flow forecast and perform an analysis
-- Manage payments on a daily basis using payment schedule journals
-- Control the company’s cash position
-- Maintain the company’s cash flows with centralized control
+- Obtain a cash flow forecast and perform an analysis.
+- Manage payments on a daily basis using payment schedule journals.
+- Control the company’s cash position.
+- Maintain the company’s cash flows with centralized control.
 
 For more information, see [Cash flow management (Russia)](../../financials/localizations/rus-cash-flow.md).
 
