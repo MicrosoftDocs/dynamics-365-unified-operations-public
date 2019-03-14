@@ -103,7 +103,7 @@ This feature also enables a business user to export an ER format with master dat
 
 ### Post-processing of generated files
 
-This feature gives more power to business users and allows them to configure the required post-processing actions by reusing the existing logic of Finance and Operations as well as the functionality of surrounding applications (files encryption, conversion to another format, direct printing, and so on).
+A new ER extensibility point is introduced allowing you to write a custom code in which you can subscribe to an event giving you access to any of documents that ER formats generate. This feature lets you extend the list of storage locations that are supported by ER framework to keep generated documents.
 
 ### Post-processing of imported files
 
