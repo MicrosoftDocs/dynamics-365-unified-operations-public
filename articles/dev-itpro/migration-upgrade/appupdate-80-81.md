@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 8.1.X or 10.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 8.1 and 10.0 application releases.
 author: laneswenka
 manager: AnnBe
-ms.date: 3/14/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,12 +60,12 @@ On average this takes 3-4 hours and can be done simultaneously. For the build en
 In Azure DevOps, visit your existing Build Definition and ensure that it is not using your new agent pool for 8.1/10.0. This will keep your new build agent from trying to compile older application code.
 
 ### Apply the latest binary update to your build and development servers
-In Lifecycle Services, go to the **build server** that you deployed in step 1. Using the **Update** tiles at the bottom of the **Environment details** page, grab the latest updates available and store it in your project's **Asset Library** using the **Save package** button.  For example, this could be saving the 10.0 PU24 package to the **Asset Library**.
+In Lifecycle Services, go to the **build server** that you deployed in step 1. Using the **Update** tiles at the bottom of the **Environment details** page, grab the latest updates available and store it in your project's **Asset Library** using the **Save package** button.  For example, this could be saving the 10.0 Platform update 24 package to the **Asset Library**.
 
 Apply this same package back to the build server where you saved the package, as well as any of the new 8.1/10.0 developer environments you have deployed.
 
 > [!NOTE]
-> We recommend taking the latest updates such as 10.0 PU24 which will be available from the **Update** tiles when you deploy your 10.0 PU24 build server. If your tiles show a count of "0" on the build server, then you may pull the related package from the shared asset library for your version. If your tiles show a count greater than 0, this is the better package to pull and use.
+> We recommend taking the latest updates such as 10.0 Platform update 24 which will be available from the **Update** tiles when you deploy your 10.0 Platform update 24 build server. If your tiles show a count of "0" on the build server, then you can pull the related package from the shared asset library for your version. If your tiles show a count greater than 0, this is the better package to pull and use.
 
 ## Begin branch work for version control and remove any application hotfixes
 While the new environments are deploying, begin the branching work for your update. Use the following branch structure in version control as an example.  Branching design varies for each customer, so be careful to adjust your steps accordingly based on how your branches are set up.
@@ -77,7 +77,7 @@ On any other development machine (other than the new ones being deployed), open 
 
 [![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
 
-Next, delete any Microsoft package folders in this branch. You may have packages, such as ApplicationSuite, checked in from applying hotfixes on 8.0 which need to be removed. When only your custom packages or ISVs remain, check these changes in to the branch.
+Next, delete any Microsoft package folders in this branch. You can have packages, such as ApplicationSuite, checked in from applying hotfixes on 8.0 which need to be removed. When only your custom packages or ISVs remain, check these changes in to the branch.
 
 >[!Important]
 > It is critical that this is done before you map version control workspaces on your new development environments. This is to avoid the deletion of the Microsoft hotfixes to cascade to your working environment and delete untouched 8.1/10.0 application code.
