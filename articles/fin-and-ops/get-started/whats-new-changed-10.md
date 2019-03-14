@@ -29,6 +29,7 @@ ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: Release 10
 
 ---
+
 # What's new or changed in Finance and Operations version 10.0 (April 2019)
 
 [!include [banner](../includes/banner.md)]
@@ -45,6 +46,18 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 This feature allows you to use catch weight products within warehouse management processes. This feature is only available to a limited audience for this release. 
 
 For more information, see [Catch weight product processing with warehouse management](../../supply-chain/warehousing/catch-weight-processing.md).
+
+## Master planning stability and recovery improvements
+
+Master planning will be made more resilient to failures and connectivity issues through multiple, incremental improvements. This will enhance the ability for Master planning to recover from exceptions without being stopped.
+
+If master planning is stopped, it has been necessary to restart the master planning run. This process has been improved so that master planning will now restart automatically from where it was stopped. This will be a significant improvement for customers where master planning is a time-critical process.
+
+##  Improved removal of obsolete planning data
+
+After a successful master planning run, a clean-up job is scheduled to remove planning data that is no longer necessary. In some cases, however, such as a failed master planning run, the data would not be cleaned up thereby incurring risk of aggregating unnecessary data. 
+
+The clean-up job has now been enhanced to remove data from previously failed master planning runs, and the design has been optimized to never block other threads, leaving all helpers available for the master planning run. These improvements also apply to intercompany master planning.
 
 ## Non-GST transactions for India 
 This feature allows you to create non-GST transactions with the Tax engine. To create a non-GST transaction, select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
