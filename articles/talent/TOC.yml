@@ -200,8 +200,8 @@
       href: tutorial-integration-recurring-export.md
   - name: Extensibility
     items:
-    - name: example
-      href: example.md
+    - name: 
+      href: Extensibility.md
   - name: Office integration
     items:
     - name: Office integration tutorial
