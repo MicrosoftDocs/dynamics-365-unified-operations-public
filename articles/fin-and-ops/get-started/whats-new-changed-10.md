@@ -105,6 +105,8 @@ This feature also enables a business user to export an ER format with master dat
 
 A new ER extensibility point is introduced allowing you to write a custom code in which you can subscribe to an event giving you access to any of documents that ER formats generate. This feature lets you extend the list of storage locations that are supported by ER framework to keep generated documents.
 
+For more information, see [Specify a custom storage location for generated documents](../../dev-itpro/analytics/er-custom-storage-generated-documents.md).
+
 ### Post-processing of imported files
 
 Import functionality in electronic reporting (ER) uses SharePoint folders to get the next set of files for processing. Before there was no automatic process to manage processed files; for example, successfully processed files were automatically deleted from a SharePoint source folder and couldn't be moved to another location. This resulted in additional manual work and potential errors. With this feature, there is a process to automatically manage processed files which allows you to configure the post-processing actions. By changing the source settings of an ER format, you can configure the following actions:
