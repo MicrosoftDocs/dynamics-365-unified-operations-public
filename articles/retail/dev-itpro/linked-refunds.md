@@ -1,9 +1,10 @@
 ---
+
 # required metadata
 
 title: Linked Refunds: Refund of a previously approved and confirmed transaction
-description: This topic describes how to enable and use 'Linked refunds' feature.
-author: 
+description: This topic describes how to enable and use Linked refunds.
+author: josaw1
 manager: AnnBe
 ms.date: 3/28/2019
 ms.topic: article
