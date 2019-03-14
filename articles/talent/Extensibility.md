@@ -49,7 +49,7 @@ This template can be extended so that it can be used for other scenarios. Here a
 - Compile a library of interview questions for Human resources (HR) administrators.
 - Capture a candidate's evaluation of the interview process
 
-In Microsoft Dynamics 365: Attract, forms can be exposed to the Candidate portal, and candidates can fill in details. Forms can also be embedded as activities in a job template.
+In Microsoft Dynamics 365: Attract, forms can appear in Candidate portal, and candidates can fill in details. Forms can also be embedded as activities in a job template.
 
 When a candidate submits a form, Microsoft Flow captures the form submission, reads the data, and stores it in the Common Data Service for Apps entity.
 
@@ -69,7 +69,7 @@ To download the **Initiate and Extract Parameters Passed to Powerapps** template
 
 The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract clock-in and clock-out details and exception recordings. Clock-in and Clock-out details are stored in custom Common Data Service for Apps entities. The assumption is that these details are filled in from third-party systems via integration.
 
-This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events, and HR, employees, and managers can use it.
+This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events.
 
 To download the **Integration with Office 365** app, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
 
