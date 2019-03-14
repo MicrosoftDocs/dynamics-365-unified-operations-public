@@ -56,7 +56,7 @@ Customers are required to take a minimum of 4 service updates per year and may c
 
 ### Targeted release schedule (dates subject to change)
 
-> [NOTE] 
+> [!NOTE] 
 > Sandbox auto-update takes place 7 days prior to the production update.
 
 | Version | Preview availability (PEAP) | Generally available (Self update) | Auto-update schedule (via LCS Update settings)|
@@ -67,7 +67,7 @@ Customers are required to take a minimum of 4 service updates per year and may c
 |10.0.3<br>Platform update 27| Week of May 6, 2019 | Week of June 10, 2019 | Production: Starting July 1  |
 | 10.0.4<br>Platform update 28| Week of June 3, 2019 | Week of July 8, 2019 | Production: Starting August 1  |
 
-> [NOTE]
+> [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the Service Update is made generally available.
 > 
 > For more details, see [One Version service updates FAQ](one-version.md).  
