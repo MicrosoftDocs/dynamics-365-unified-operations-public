@@ -51,7 +51,7 @@ Changes made in this release enable performance management scenarios when using 
 With this change you are now able to select multiple employees and then mass assign one or more checklists to those employees. 
 
 ### Platform Update 24
-See additional details for Platform 24 [HERE](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). With platform 24 a couple significant changes include: Alerts have been enabled in Talent, Updated navigation bar that aligns with the Office header 
+For additional details about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). With platform 24 a couple significant changes include: Alerts have been enabled in Talent, Updated navigation bar that aligns with the Office header 
 
 ### Office location update, jump you to the top of the worker list
 With the changes this week, changing the office location won't switch the context of the worker you are viewing when assigning an office location.
