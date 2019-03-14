@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 8.1.X or 10.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 8.1 and 10.0 application releases.
 author: laneswenka
 manager: AnnBe
-ms.date: 3/13/2019
+ms.date: 3/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
