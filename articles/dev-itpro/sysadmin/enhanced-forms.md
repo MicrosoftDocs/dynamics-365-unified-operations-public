@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch enhanced forms
-description: This topic provides batch enhanced forms in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about the batch enhanced forms in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
 ms.date: 03/12/2019
@@ -30,25 +30,26 @@ ms.dyn365.ops.version: Platform update 25
 
 ---
 
-
 # Batch enhanced forms
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-An enhanced detail transaction form has been added to Dynamics 365 for Finance and Operations. You can access this form by clicking on the Job ID for a batch job. On the form, header and lines that summarize the batch tasks and constrains related to the selected batch job are provided. 
+An enhanced detail transaction form (page) has been added to Microsoft Dynamics 365 for Finance and Operations. You can open this form by selecting the job ID for a batch job. The enhanced form provides a header and lines that summarize the batch tasks and constraints that are related to the selected batch job.
 
 ## Switch to the enhanced form
-Complete the following steps to switch to the enhanced form.
 
-1.	Go to **System administration** \> **Inquiries** \> **Batch jobs**.
-2.	You will be notified about the enhanced form.
-3.	Click **Switch to enhanced forms**.
+Follow these steps to switch to the enhanced form.
 
-![Switch to Enhanced form](./media/batch-popup.png) 
- 
-4.	When appropriate, click **Switch to legacy form**.
+1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 
-![Enhanced form](./media/enhanced-form.png)
+	You're notified about the enhanced form. The notification shows the location of the **Switch to enhanced form** button on the Action Pane.
 
+    ![Switch to enhanced form button](./media/batch-popup.png)
+
+2. Select **Switch to enhanced form**.
+
+To switch back to the unenhanced form, select **Switch to legacy form** on the Action Pane of the enhanced form.
+
+![Switch to legacy form button](./media/enhanced-form.png)
