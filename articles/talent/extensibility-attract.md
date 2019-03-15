@@ -45,7 +45,7 @@ An **Option Set** (picklist) is a type of field that can be included in an entit
 
 Listed below are the steps to update the **Rejection reason** field with values that are specific to your business.  
 
-1. To extend the **Rejection reason** option set, navigate to the [PowerApps Admin website.](Https://admin.powerapps.microsoft.com)
+1. To extend the **Rejection reason** option set, navigate to the [PowerApps Admin website.](Https://admin.powerapps.com)
 2. You might be prompted to sign into your account. Provide your userID and password credentials that you use to sign into Dynamics365 and/or Office365, and then click **Next**.
 3. On the **Environments** tab, select the environment that you want to manage, and double-click to get to the **Details** tab.
 4. On the **Details** tab, select **Dynamics 365 Administration Center**.
