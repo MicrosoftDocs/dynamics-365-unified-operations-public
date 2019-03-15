@@ -1119,8 +1119,8 @@ The following C\# sample is not a line-by-line translation from the previous X++
                 if (bReturnCode)
                 {
                     bReturnCode = this
-  .Rs008b_CSharp_ExceptionsAndRetry_Callee
-  (ref iIndex);
+     .Rs008b_CSharp_ExceptionsAndRetry_Callee
+    (ref iIndex);
                 }
                 else
                 {
