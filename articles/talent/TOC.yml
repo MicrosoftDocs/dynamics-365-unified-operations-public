@@ -202,6 +202,10 @@
       href: talent-fo-integration.md
     - name: Recurring data export using Azure Logic apps
       href: tutorial-integration-recurring-export.md
+  - name: Extensibility
+    items:
+    - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
+      href: Extensibility.md
   - name: Office integration
     items:
     - name: Office integration tutorial
