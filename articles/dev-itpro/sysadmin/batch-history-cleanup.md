@@ -58,7 +58,7 @@ Follow these steps to quickly clean up all history entries that are older than a
 
 ![Regular job](./media/batch-cleanup-regular.png)
 
-# Batch job history clean-up (custom)
+## Batch job history clean-up (custom)
 
 The custom batch job lets you to apply additional filtering, based on criteria such as status, job description, company, or user. You can also add other filter criteria by selecting the **Filter** button.
 
