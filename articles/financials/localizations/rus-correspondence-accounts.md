@@ -86,9 +86,9 @@ You can enter multidimensional transactions in the ledger journals and other mod
 </table>
 
 
-When the **Use corresponding mechanism** check box in the **General ledger parameters** form is cleared, no correspondence relationships are created between transactions.
+When the **Use corresponding mechanism** in the **General ledger parameters** form is set to **No**, no correspondence relationships are created between transactions.
 
-When the **Use corresponding mechanism** check box is selected, each new accounting transaction that is created consists of a set of two-way corresponding transactions. When the accounting transactions are posted, the corresponding relationship is defined automatically.
+When the **Use corresponding mechanism** is set to **Yes**, each new accounting transaction that is created consists of a set of two-way corresponding transactions. When the accounting transactions are posted, the corresponding relationship is defined automatically.
 
 If non-corresponding accounts already exist before the account correspondence mechanism is enabled, they are not linked automatically. You must define relationships for these transactions manually.
 
@@ -97,30 +97,26 @@ If non-corresponding accounts already exist before the account correspondence me
 
 The account correspondence mechanism allows you to create correspondence relations between transactions. When the account correspondence mechanism is turned on, each new accounting transaction created will consist of a set of two-way corresponding transactions. When posting the accounting transactions, the corresponding relation is defined automatically. If non-corresponded transactions existed before the account correspondence mechanism was turned on, they would not be linked automatically.
 
-1.  Click **General ledger** \> **Setup** \> **General ledger parameters**.
+1.  Click **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 
-2.  Click **Ledger**, and then select the **Use corresponding mechanism** check box to activate the account correspondence mechanism.
+2.  Click **Ledger**, and then set **Use corresponding mechanism** to **Yes** to activate the account correspondence mechanism.
 
-3.  Click **Number sequences** and then select the number sequence code for **Correspondence pack**.
 
 
 > [!NOTE]
 > After the correspondence mechanism is activated, all new transactions will have correspondence relations. If you cannot establish a correspondence link for a transaction, a message with a warning is displayed. Click this message to go to the manual correspondence function to correspond the transactions manually.
 
 
-## (RUS) Define corresponding relations for transactions manually 
+## Define correspondence relations for transactions manually 
 
 Use the manual transaction correspondence function to define a relationship between non-corresponding transactions. When the account correspondence mechanism is turned off in the ledger, all transactions are generated normally. No correspondence link is established between accounts. The function is not retroactive. When correspondence is turned back on, correspondence will not be established for transactions that were performed earlier.
 
 
 
-1.  Click **General ledger** \> **Periodic** \> **Manual correspondence**.
+1.  Click **General ledger** \> **Periodic tasks** \> **Manual correspondence**.
 
 2.  In the left pane view the list of posted vouchers.
-
-3.  On the **Overview** tab to view the voucher transaction.
-
-4.  In the **Show only vouchers** field, select the vouchers to view from the following options:
+3.  In the **Show only vouchers** field, select the vouchers to view from the following options:
     
       - **Not corresponded** − View vouchers with no corresponding ledger transactions.
     
@@ -128,31 +124,16 @@ Use the manual transaction correspondence function to define a relationship betw
     
       - **All** − View all vouchers.
 
-5.  Click the **Offset** tab.
+4.  Select the voucher line and on the **Overview** Fast tab view the voucher transactions.
 
-6.  In the upper pane, select a line under the **Debit transactions** and **Credit transactions** field groups and then click **\<-\>** to correspond, or link, a debit and a credit transaction and move them to the lower pane as a corresponded transaction.
-    
+5.  Click the **Offset** Fast tab. Select a line under the **Debit transactions** and a line under the **Credit transactions** field groups and then click **\<-\>** to correspond a debit and a credit transaction. Corresponded transactions are moved to the **Detail** pane.
+[add here screenshot Correspondence-Offset from WI]
 
-    > [!NOTE]
-    > You can also drag one transaction over the other to move them to the lower pane as a corresponded transaction.
+6.  Click **\<\<-\>\>** to correspond all credit and debit transactions for the selected voucher automatically.
 
+7.  In the Action pane of the **Offset** Fast tab, click **Save** to save the results, or click **Restore** to cancel the last modification.
 
+8.  Click the **Refresh data** button to refresh the data in the **Manual correspondence** form.
 
-7.  Click **\<\<-\>\>** to correspond the relationships of all credit and debit vouchers for the selected voucher automatically.
-
-8.  Click **Save** to save the results, or click **Restore** to cancel the last modifications.
-
-9.  Click the **Refresh data** button to refresh the data in the **Manual correspondence** form.
-    
-
-    > [!NOTE]
-    > After refreshing the data, the voucher for which correspondence has been established will appear in the list of corresponded vouchers.
-
-
-
-10. To remove the corresponding relationships for a voucher, select the voucher in the left pane, click **Remove ledger bond**, and then click **Refresh data**.
-    
-
-    > [!NOTE]
-    > After refreshing the data, the voucher for which correspondence has been removed will appear in the list of non-corresponded vouchers.
+9. To remove the corresponding relationships for a voucher, select the corresponded voucher in the left pane, click **Remove ledger bond**, and then click **Refresh data**.
 
