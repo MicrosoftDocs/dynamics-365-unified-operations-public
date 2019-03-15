@@ -56,22 +56,22 @@ For additional details about Platform update 24, see [What's new or changed in F
 - Alerts are enabled in Talent.
 - The updated navigation bar now aligns with the Office header.
 
-### Office location update brings you to the top of the worker list
-With the changes this week, changing the office location won't switch the context of the worker you're viewing when assigning an office location.
+### Office location update switches the context to the top of the worker list
+With the current release, changing the office location will no longer switch the context of the worker that you're viewing when assigning an office location.
 
 ### Position assignment end date doesn't display correctly on worker hire and transfer actions
 Position assignment end dates now display correctly based on the user preferred time zone when using actions.
 
-### CDS Job entity doesn't allow job type and job function fields to update from CDS
-CDS entities now sync correctly when updated via CDS.
+### Common Data Service job entity doesn't allow Job type and Job function fields to update
+Common Data Service entities now syncronize correctly when updated using the Common Data Service.
 
-## Coming Soon
+## Coming soon
 
 ###  Advanced compensation security (fixed and variable)
-In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee populations in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
+In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
 
 ###  Email support for alerts
 With Platform update 24, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
 
-### Duplicate employee check: interface changes
-With this change, duplicates are detected as you enter name fields, and a status displays how many were found. You can click the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
+### Duplicate employee check: Interface changes
+With this change, duplicates are detected as you enter name fields, and a status displays how many were found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
