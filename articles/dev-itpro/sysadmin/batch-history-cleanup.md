@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch history cleanup
-description: This topic provides information about batch history cleanup in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about how to clean up the batch job history in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
 ms.date: 03/12/2019
@@ -36,49 +36,35 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include [banner](../includes/preview-banner.md)]
 
-When you execute a batch job, a history is recorded. This history can be used to monitor the proper execution of jobs. However, when several batch jobs have been created, especially those with a high recurrence, a lot of batch job history entries are generated.
-Too many entries in the history table can negatively affect the performance of future jobs.
+When you run a batch job, a history is recorded. This history can be used to monitor the correct execution of jobs. However, when several batch jobs have been created, especially batch jobs that have a high recurrence, lots of batch job history entries are generated. Too many entries in the history table can negatively affect the performance of future jobs.
 
-Two forms have been added to the System Administration workspace to facilitate the cleanup of batch job history:
+Two pages that have been added to the **System administration** workspace make it easy to clean up the batch job history:
 
 - Batch job history clean-up
-- Custom batch job history clean-up 
+- Custom batch job history clean-up
 
-![Cleanup menu](./media/batch-cleanup-menu.png) 
+![Cleanup menu](./media/batch-cleanup-menu.png)
 
-> [!NOTE] 
-> We recommend that you regularly clean up the batch history and complete the clean up outside of business hours.
-
-## Batch job history clean-up
-
-Complete the following steps to quickly clean all history entries older than a specified timeframe. The timeframe has been specified in days.
-
-1.	On the **Batch job** menu, click **Batch job history clean-up**.
-2.	In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
-
-![Regular Job](./media/batch-cleanup-regular.png) 
-- Custom batch job history clean-up 
-
-![Cleanup menu](./media/batch-cleanup-menu.png) 
-
-> [!NOTE] 
-> We recommend that you regularly clean up the batch history and complete the clean up outside of business hours.
+> [!NOTE]
+> We recommend that you regularly clean up the batch job history, and that you do this cleanup outside of business hours.
 
 ## Batch job history clean-up
 
-Complete the following steps to quickly clean all history entries older than a specified timeframe. The timeframe has been specified in days.
+Follow these steps to quickly clean up all history entries that are older than a specified number of days.
 
-1.	On the **Batch job** menu, click **Batch job history clean-up**.
-2.	In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
+1. On the **Batch job** menu, select **Batch job history clean-up**.
+2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
+3. Select **OK**.
 
-![Regular Job](./media/batch-cleanup-regular.png) 
- 
-# Custom batch job history clean-up 
+![Regular job](./media/batch-cleanup-regular.png)
 
-The custom batch job allows you to add additional filtering based on criteria such as status, job description, company, or user. Other criteria can be added by clicking on the filter button.
+# Batch job history clean-up (custom)
 
-![Custom Job](./media/batch-cleanup-custom.png) 
+The custom batch job lets you to apply additional filtering, based on criteria such as status, job description, company, or user. You can also add other filter criteria by selecting the **Filter** button.
 
-1.	On the **Batch job** menu, click **Batch job history clean-up (custom)**.
-2.	Specify the number of days to keep in the history.
-3. Enter any filter criteri and then click **OK**.
+1. On the **Batch job** menu, select **Batch job history clean-up (custom)**.
+2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
+3. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
+4. Select **OK**.
+
+![Custom job](./media/batch-cleanup-custom.png)
