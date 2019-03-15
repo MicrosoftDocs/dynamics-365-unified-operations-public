@@ -207,7 +207,7 @@
   - name: Extensibility
     items:
     - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
-      href: Extensibility.md
+      href: extensibility-examples.md
   - name: Office integration
     items:
     - name: Office integration tutorial
