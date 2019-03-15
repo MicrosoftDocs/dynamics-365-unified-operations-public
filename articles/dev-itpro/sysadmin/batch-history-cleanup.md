@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Batch history cleanup
+title: Clean up the batch job history 
 description: This topic provides information about how to clean up the batch job history in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 25
 
 ---
 
-# Batch history cleanup
+# Clean up the job batch history
 
 [!include [banner](../includes/banner.md)]
 
