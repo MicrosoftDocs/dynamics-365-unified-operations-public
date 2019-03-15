@@ -1136,7 +1136,7 @@
       href: sysadmin/alerts.md
     - name: Batch enhanced forms
       href: sysadmin/enhanced-forms.md
-    - name: Batch history cleanup
+    - name: Clean up the batch history
       href: sysadmin/batch-history-cleanup.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
