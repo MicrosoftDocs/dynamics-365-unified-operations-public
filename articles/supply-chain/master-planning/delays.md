@@ -48,6 +48,12 @@ On the **Master planning parameters** page, you can set the start time for the c
 
 **Note:** In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.
 
+## Desired date
+
+On the planned order form, under the tab Delays you can find the **Desired date** for the planned order. 
+The desired date of a planned order is the base date for delays, a computed date that equals the **Requested date** calculated from the Net Requirement. 
+When the planned order is of type BOM line, Production line or Kanban line, the Desired date is based on the **Requirement date** instead and the Desired date will not be shown in the Planned Order form. 
+
 Additional resources
 --------
 
