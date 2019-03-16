@@ -5,7 +5,7 @@ title: One Version service updates overview
 description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: meeram
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Platform update 24
 # One Version service updates overview
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/coming-soon.md)]
 
 The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later**. This is applicable for cloud releases only.
 
