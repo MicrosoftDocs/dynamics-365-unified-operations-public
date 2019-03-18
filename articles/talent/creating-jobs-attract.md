@@ -3,7 +3,7 @@
 
 title: Create, approve, and post jobs in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 
