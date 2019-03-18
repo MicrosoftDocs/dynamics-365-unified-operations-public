@@ -1134,7 +1134,7 @@
       href: sysadmin/batch-job-SQL-defragmentation.md
     - name: Configure batch alerts
       href: sysadmin/alerts.md
-    - name: Batch enhanced forms
+    - name: Enhanced batch forms
       href: sysadmin/enhanced-forms.md
     - name: Clean up the batch history
       href: sysadmin/batch-history-cleanup.md
