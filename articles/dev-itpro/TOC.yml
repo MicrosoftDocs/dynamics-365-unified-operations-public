@@ -1132,6 +1132,12 @@
       href: sysadmin/runby.md
     - name: Batch job to handle SQL index defragmentation
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Configure batch alerts
+      href: sysadmin/alerts.md
+    - name: Enhanced batch forms
+      href: sysadmin/enhanced-forms.md
+    - name: Clean up the batch history
+      href: sysadmin/batch-history-cleanup.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:

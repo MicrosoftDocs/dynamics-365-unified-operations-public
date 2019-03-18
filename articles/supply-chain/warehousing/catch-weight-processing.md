@@ -5,7 +5,7 @@ title: Catch weight product processing with warehouse management
 description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -127,7 +127,6 @@ Not all workflows support catch weight product processing with warehouse managem
  
 ### Order processing
 
-- Intercompany order processing isn't supported.
 - The creation of advance ship notice (ASN/packing structures) doesn't support weight information.
 - The order quantity must be maintained based on the catch weight unit.
  
