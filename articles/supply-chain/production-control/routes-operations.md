@@ -233,7 +233,7 @@ If you don't specify an operations resource or resource group as part of the res
 -   **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
 -   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource-dependent.
 
-### Setup of route groups
+### Set up route groups
 
 You can define the route groups and the setup for its route or job types under **Production control > Setup > Routes > Route groups**. For each Route/job type in the route group, you can check or uncheck the following options:
 
