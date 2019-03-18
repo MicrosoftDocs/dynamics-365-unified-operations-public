@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Batch enhanced forms
-description: This topic provides information about the batch enhanced forms in Microsoft Dynamics 365 for Finance and Operations.
+title: Enhanced batch forms
+description: This topic provides information about the enhanced batch forms in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 25
 
 ---
 
-# Batch enhanced forms
+# Enhanced batch forms
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ An enhanced detail transaction form (page) has been added to Microsoft Dynamics 
 
 ## Switch to the enhanced form
 
-Follow these steps to switch to the enhanced form.
+Follow these steps to switch to the enhanced form. 
 
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 
