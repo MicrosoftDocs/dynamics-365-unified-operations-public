@@ -127,7 +127,6 @@ Not all workflows support catch weight product processing with warehouse managem
  
 ### Order processing
 
-- Intercompany order processing isn't supported.
 - The creation of advance ship notice (ASN/packing structures) doesn't support weight information.
 - The order quantity must be maintained based on the catch weight unit.
  
