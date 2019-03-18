@@ -102,15 +102,15 @@ Follow these steps to set up a development environment so that you can test and 
 
       # [Retail 8.1.3 and earlier](#tab/retail-8-1-3)
 
-       ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-        ```
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+      ```
         
       # [Retail 10.0 and later](#tab/retail-10-0)
 
-       ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
-        ```
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
+      ```
     ---
 
     7. Restart the Hardware station service:
@@ -230,7 +230,6 @@ Follow these steps to create and apply deployable packages that contain Retail c
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
         ```
-
         ---
 
 2. Run **msbuild** for the whole Retail SDK to create deployable packages.
