@@ -42,7 +42,7 @@ This article provides a detailed overview of the various Dynamics 365 for Retail
 ## Overview
 The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Retail headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
-- **[Supported capabilities and features when connectivity is lost](#Supported-capabilities-and-features-when-connectivity-is-lost)** – An overview of supported capabilities and features in each of the Retail in store topologies when connectivity to the HQ is lost.
+- **[Supported capabilities and operations when connectivity is lost](#Supported-capabilities-and-operations-when-connectivity-is-lost)** – An overview of supported capabilities and operations in each of the Retail in store topologies when connectivity is lost.
 - **[Supported deployement and maintenance capabilities](#Supported-deployement-and-maintenance-capabilities)** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
 - **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in store topologies.
 - **[Hardware and sofware requirements](#Hardware-and-sofware-requirements)** - An overview of the minimum hardware and software requirements to operate each of the Retail in store topologies.
@@ -53,15 +53,20 @@ The sections in this topic describe the following steps, which you must complete
 ![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)
 
 ## Supported capabilities and features when connectivity is lost
-| Operation | Modern POS Offline<br>(without connectivity to Retail Server) | Retail Store Scale Unit<br>(without connectivity to HQ) |
+
+### Supported capabilities
+| Operation | Without connectivity to Retail Server<br>(in MPOS Offline Mode) | Without connectivity to HQ<br>(Using RSSU) |
 | --- | :-: | :-: |
-| Device Activations | | | 
-| Extended Logon | ✔ | ✔ |
+| Cross terminal shifts (e.g. view, suspend, resume, close) | | ✔ | 
+| Cross terminal transactions (e.g. view, suspend, resume)  | | ✔ |
+
+### Supported operations
+For a list of supported operations when the POS loses connectivity to the HQ please check the [Online and offline point of sale (POS) operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-operations).
 
 ## Supported deployement and maintenance capabilities
 | Capability | Modern POS | Retail Store Scale Unit | 
 | --- | :-: | :-: |
-| Mass deployment | ✔ | |
+| Mass deployment | ✔<br>([link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)) | |
 
 ## Deployed components
 The components described below are deployed through a single installer and therefore do not need to be installed individually.
@@ -80,17 +85,12 @@ The components described below are deployed through a single installer and there
 | Channel Database | SQL Database | Scale Unit specific Store specific Channel Database instance hosting data for one or more stores. |
 | Asycn Client Service | Windows Service | Component to synchronize master record data from the HQ to the store and transactional data from the store to the HQ. |
 
-## Hardware and sofware requirements
-|  | Modern POS | Retail Store Scale Unit | 
-| --- | --- | --- |
-| Deployed Dynamics 365 Components | Modern POS Installer with offline capabilities | Retail Server (IIS Web Service)<br>Channel Database (SQL Database)<br>Async Client (Windows Service) |
-
-## Maintenance tasks
-| Maintenance Task | Modern POS Offline<br>(on each POS terminal) | Retail Store Scale Unit<br>(on each RSSU machine) |
-| --- | :-: | :-: | 
-| X | X | X |
-
 ## Related articles
+### MPOS Offline Mode
 - [Offline point of sale (POS) functionality](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-offline-functionality)
-- [Retail Store Scale Unit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+- [Online and offline point of sale (POS) operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-operations)
+- [Mass deployment of Retail self-service components](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
+
+### Retail Store Scale Unit (RSSU)
 - [Configure and install retail store scale unit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
+- [Retail Store Scale Unit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
