@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Platform update 25
 
 When you run a batch job, a history is recorded. This history can be used to monitor the correct execution of jobs. However, when several batch jobs have been created, especially batch jobs that have a high recurrence, lots of batch job history entries are generated. Too many entries in the history table can negatively affect the performance of future jobs.
 
-Two pages that have been added to the **System administration** workspace make it easy to clean up the batch job history:
+Two pages that have been added to the **System administration** module make it easy to clean up the batch job history:
 
 - Batch job history clean-up
 - Custom batch job history clean-up
@@ -52,7 +52,7 @@ Two pages that have been added to the **System administration** workspace make i
 
 Follow these steps to quickly clean up all history entries that are older than a specified number of days.
 
-1. On the **Periodic tasks in System administration** menu, select **Batch job history clean-up**.
+1. On the **Periodic tasks in System administration** module, select **Batch job history clean-up**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
 3. Select **OK**.
 
@@ -62,7 +62,7 @@ Follow these steps to quickly clean up all history entries that are older than a
 
 The custom batch job lets you to apply additional filtering, based on criteria such as status, job description, company, or user. You can also add other filter criteria by selecting the **Filter** button.
 
-1. On the **Periodic tasks in System administration** menu, select **Batch job history clean-up (custom)**.
+1. On the **Periodic tasks in System administration** module, select **Batch job history clean-up (custom)**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
 3. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
 4. Select **OK**.
