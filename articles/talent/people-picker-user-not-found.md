@@ -3,7 +3,7 @@
 
 title: User not found in People Picker in Attract or Onboard
 description: This topic explains what to do when users in the company tenant aren't showing up in the People Picker in the Dynamics 365 for Talent Attract or Onboard applications.
-author: ChrisChua
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chrichua
+ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
 
