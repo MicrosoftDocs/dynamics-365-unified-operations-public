@@ -43,7 +43,7 @@ Two pages that have been added to the **System administration** workspace make i
 - Batch job history clean-up
 - Custom batch job history clean-up
 
-![Cleanup menu](./media/batch-cleanup-menu.png)
+![Periodic tasks in System administration](./media/Menu-Cleanup.png)
 
 > [!NOTE]
 > We recommend that you regularly clean up the batch job history, and that you do this cleanup outside of business hours.
@@ -52,7 +52,7 @@ Two pages that have been added to the **System administration** workspace make i
 
 Follow these steps to quickly clean up all history entries that are older than a specified number of days.
 
-1. On the **Batch job** menu, select **Batch job history clean-up**.
+1. On the **Periodic tasks in System administration** menu, select **Batch job history clean-up**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
 3. Select **OK**.
 
@@ -62,7 +62,7 @@ Follow these steps to quickly clean up all history entries that are older than a
 
 The custom batch job lets you to apply additional filtering, based on criteria such as status, job description, company, or user. You can also add other filter criteria by selecting the **Filter** button.
 
-1. On the **Batch job** menu, select **Batch job history clean-up (custom)**.
+1. On the **Periodic tasks in System administration** menu, select **Batch job history clean-up (custom)**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
 3. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
 4. Select **OK**.
