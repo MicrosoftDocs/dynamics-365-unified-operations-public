@@ -98,9 +98,9 @@ The database refresh process can't be completed if the environment is running Mi
 The database refresh process (self-service or via a service request) can't be completed successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
 
 To determine the version you have installed in your source and target environments, visit the 'View detailed version information' link from the Environment Details page.  
-<img src="media/FinancialReporting_Binaries1.png" width="150px"><br/>
+<img src="media/FinancialReporting_Binaries1.png" width="250px"><br/>
 Search for 'MRApplicationService' and ensure that the target environment is greater than or equal to the source environment.
-<img src="media/FinancialReporting_Binaries2.png" width="200px">  
+<img src="media/FinancialReporting_Binaries2.png" width="400px">  
 
 For customers that are using version 8.1 or later:
 1. Go to the **Update** tiles for your UAT environment. Save the updates to your Project asset library.
