@@ -3,7 +3,7 @@
 
 title: Interview scheduling and feedback
 description: This topic provides information about interview scheduling and feedback activities in Attract.
-author: 
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/01/2019
 ms.topic: article
@@ -17,11 +17,11 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 # ms.search.industry: HR, Human Resources
-ms.author: hasrivas
+ms.author: anbichse
 
 ---
 
