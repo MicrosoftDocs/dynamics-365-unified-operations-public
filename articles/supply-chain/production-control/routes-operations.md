@@ -64,8 +64,8 @@ If you enable the more complex route networks in the Production control paramete
 [![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Each operation can have only one successor operation, and the whole route must end in a single operation.
-> -   There is no guarantee that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
+> -   Each operation can have only one successor operation, and the entire route must end in a single operation.
+> -   This does not ensure that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
 > -   You can't use 0 (zero) as the operation number. That number is reserved and is used to specify that the last operation in the route has no successor operation.
 
 ### Parallel operations
@@ -126,7 +126,7 @@ You can also specify that an operation relation is specific to a site. In this w
 Operation relations give you lots of flexibility when you define your routes. Additionally, the ability to define default properties helps reduce the amount of master data that you must maintain. However, this flexibility also means that you must be aware of the context that you modify an operation relation in.  
 
 > [!NOTE]
-> Because the operational properties are stored in operation relations per operation per route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, resource requirements, and so on. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two distinct operations, such as Assembly1 and Assembly2.
+> Because the operational properties are stored in operation relations per operation for each route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, and resource requirements. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two separate operations, such as Assembly1 and Assembly2.
 
 ### Modifying product-specific routes
 
@@ -231,24 +231,24 @@ If you don't specify an operations resource or resource group as part of the res
 -   **Standard** – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.
 -   **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. This value is multiplied by the order quantity and the **Factor** value from the operation relation.
 -   **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
--   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource-dependent.
+-   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource dependent.
 
 ### Set up route groups
 
-You can define the route groups and the setup for its route or job types under **Production control > Setup > Routes > Route groups**. For each Route/job type in the route group, you can check or uncheck the following options:
+You can define the route groups and the setup for its route or job types under **Production control > Setup > Routes > Route groups**. For each Route/job type in the route group, you can select or clear the following options:
 
-- **Activation**: Select this option to enable calculations and scheduling for the selected job type, and to receive job feedback when you run job scheduling. You need to check activation to enable the job type and then, select the rest of the options for that job type. If the activation is unselected that job type will not be enabled, regardless of the selection of the other options. 
-- **Job management**: Select this option to include the job type in job management when you run job scheduling. 
-- **Working time**: Select this option to schedule the job type according to the working time calendar that is defined for the operations resource. Otherwise the Gregorian calendar is used. Working time can be scheduled either according to the Gregorian calendar or the defined working calendar. If you select this option, scheduling is based on the defined working time calendar. Additionally, the job of the job type is scheduled from midnight on the date that is defined as the job's starting date.
-- **Capacity**: Select this option to reserve capacity for the job type when you run job scheduling. If you select this option, capacity is reserved when scheduling is run for the selected job type. This gives you an overview of which job types in each route group use the operations resources. For example, in a situation where drying resources are bottleneck resources, these resources must be specified as bottlenecks. Drying operations that are assigned to queue time job types will reserve drying resources. 
+- **Activation** - Select this option to enable calculations and scheduling for the selected job type, and to receive job feedback when you run job scheduling. You need to select this option to enable the job type and then, select the rest of the options for that job type. If the activation is not selected, that job type will not be enabled, regardless of the selection of the other options. 
+- **Job management** - Select this option to include the job type in job management when you run job scheduling. 
+- **Working time** Select this option to schedule the job type according to the working time calendar that is defined for the operations resource, otherwise the Gregorian calendar is used. Working time can be scheduled either according to the Gregorian calendar or the defined working calendar. If you select this option, scheduling is based on the defined working time calendar. Additionally, the job of the job type is scheduled from midnight on the date that is defined as the job's starting date.
+- **Capacity** - Select this option to reserve capacity for the job type when you run job scheduling. If you select this option, capacity is reserved when scheduling is run for the selected job type. This gives you an overview of which job types in each route group use the operations resources. For example, in a situation where drying resources are bottleneck resources, these resources must be specified as bottlenecks. Drying operations that are assigned to queue time job types will reserve drying resources. 
 
-For each of the job types you first need to activate or disactivate it. When disactivated, none of the other setup (Job management, working time and capacity) will be considered, as the job type will not be active. 
+For each of the job types, you first need to activate or de-activate it. When de-activated, none of the other setup (Job management, working time, and capacity) will be considered, as the job type will not be active. 
 
 Among the job types you can find Overlap. Overlap allows different jobs to be performed at the same time. When jobs are overlapping, the resources can be used but cannot be reserved for the specific jobs.
-Therefore, when Activation is checked for Overlap, the rest of the settings (Job management, Working time and Capacity) do not make any impact in the route group. 
+Therefore, when Activation is selected for Overlap, the rest of the settings (Job management, Working time, and Capacity) do not make any impact in the route group. 
 
 > [!NOTE]
-> When you upgrade version, you may encounter **"CRL Error occurred while invoking the scheduling engine"**. If you encounter this error, go to the **Route groups** form and for all the routes where you have activated **Overlap**, uncheck **Job management**, **Working time** and **Capacity**. 
+> When you upgrade versions, you might encounter the following error: **"CRL Error occurred while invoking the scheduling engine"**. If you receive this error, go to the **Route groups** page and for all the routes where you have activated **Overlap**, clear the **Job management**, **Working time**, and **Capacity** options. 
 
 ## Additional resources
 
