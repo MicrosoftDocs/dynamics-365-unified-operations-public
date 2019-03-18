@@ -232,6 +232,22 @@ If you don't specify an operations resource or resource group as part of the res
 -   **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
 -   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource-dependent.
 
+### Setup of route groups
+
+You can define the route groups and the setup for its route or job types under **Production control > Setup > Routes > Route groups**. For each Route/job type in the route group, you can check or uncheck the following options:
+
+- **Activation**: Select this option to enable calculations and scheduling for the selected job type, and to receive job feedback when you run job scheduling. You need to check activation to enable the job type and then, select the rest of the options for that job type. If the activation is unselected that job type will not be enabled, regardless of the selection of the other options. 
+- **Job management**: Select this option to include the job type in job management when you run job scheduling. 
+- **Working time**: Select this option to schedule the job type according to the working time calendar that is defined for the operations resource. Otherwise the Gregorian calendar is used. Working time can be scheduled either according to the Gregorian calendar or the defined working calendar. If you select this option, scheduling is based on the defined working time calendar. Additionally, the job of the job type is scheduled from midnight on the date that is defined as the job's starting date.
+- **Capacity**: Select this option to reserve capacity for the job type when you run job scheduling. If you select this option, capacity is reserved when scheduling is run for the selected job type. This gives you an overview of which job types in each route group use the operations resources. For example, in a situation where drying resources are bottleneck resources, these resources must be specified as bottlenecks. Drying operations that are assigned to queue time job types will reserve drying resources. 
+
+For each of the job types you first need to activate or disactivate it. When disactivated, none of the other setup (Job management, working time and capacity) will be considered, as the job type will not be active. 
+
+Among the job types you can find Overlap. Overlap allows different jobs to be performed at the same time. When jobs are overlapping, the resources can be used but cannot be reserved for the specific jobs.
+Therefore, when Activation is checked for Overlap, the rest of the settings (Job management, Working time and Capacity) do not make any impact in the route group. 
+
+![Note]
+When you upgrade version, you may encounter **"CRL Error occurred while invoking the scheduling engine"**. If you encounter this error, go to the **Route groups** form and for all the routes where you have activated **Overlap**, uncheck **Job management**, **Working time** and **Capacity**. 
 
 Additional resources
 --------
