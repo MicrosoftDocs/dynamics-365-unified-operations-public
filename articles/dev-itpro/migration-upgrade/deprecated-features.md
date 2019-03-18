@@ -116,7 +116,7 @@ To access the full list of APIs that are being deprecated, see [Deprecation of m
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
 ### Batch transfer rules for subledger journal account entries
-The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer. 
+The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer. For additional information, see [this blog](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
 
 |   |  |
 |------------|--------------------|
