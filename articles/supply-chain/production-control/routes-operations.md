@@ -5,7 +5,7 @@ title: Routes and operations
 description: This topic provides information about routes and operations. 
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,11 +63,10 @@ If you enable the more complex route networks in the Production control paramete
 
 [![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Notes:**
-
--   Each operation can have only one successor operation, and the whole route must end in a single operation.
--   There is no guarantee that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
--   You can't use 0 (zero) as the operation number. That number is reserved and is used to specify that the last operation in the route has no successor operation.
+> [!NOTE]
+> -   Each operation can have only one successor operation, and the whole route must end in a single operation.
+> -   There is no guarantee that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
+> -   You can't use 0 (zero) as the operation number. That number is reserved and is used to specify that the last operation in the route has no successor operation.
 
 ### Parallel operations
 
@@ -126,7 +125,8 @@ You can also specify that an operation relation is specific to a site. In this w
 
 Operation relations give you lots of flexibility when you define your routes. Additionally, the ability to define default properties helps reduce the amount of master data that you must maintain. However, this flexibility also means that you must be aware of the context that you modify an operation relation in.  
 
-**Note:** Because the operational properties are stored in operation relations per operation per route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, resource requirements, and so on. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two distinct operations, such as Assembly1 and Assembly2.
+> [!NOTE]
+> Because the operational properties are stored in operation relations per operation per route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, resource requirements, and so on. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two distinct operations, such as Assembly1 and Assembly2.
 
 ### Modifying product-specific routes
 
@@ -136,7 +136,8 @@ On the **Route** page, you can modify the operational properties of the operatio
 
 You can also manually create an operation that is specific to a route and released product by using the **Copy and edit relation** function.  
 
-**Note:** If you add a new operation to a route on the **Route** page, an operation relation is created only for the current released product. Therefore, if the route is also used to produce other released products, no applicable operation relation will exist for those released products, and the route can no longer be used for those released products.
+> [!NOTE]
+> If you add a new operation to a route on the **Route** page, an operation relation is created only for the current released product. Therefore, if the route is also used to produce other released products, no applicable operation relation will exist for those released products, and the route can no longer be used for those released products.
 
 ### Maintaining operation relations per route
 
@@ -246,19 +247,18 @@ For each of the job types you first need to activate or disactivate it. When dis
 Among the job types you can find Overlap. Overlap allows different jobs to be performed at the same time. When jobs are overlapping, the resources can be used but cannot be reserved for the specific jobs.
 Therefore, when Activation is checked for Overlap, the rest of the settings (Job management, Working time and Capacity) do not make any impact in the route group. 
 
-![Note]
-When you upgrade version, you may encounter **"CRL Error occurred while invoking the scheduling engine"**. If you encounter this error, go to the **Route groups** form and for all the routes where you have activated **Overlap**, uncheck **Job management**, **Working time** and **Capacity**. 
+> [!NOTE]
+> When you upgrade version, you may encounter **"CRL Error occurred while invoking the scheduling engine"**. If you encounter this error, go to the **Route groups** form and for all the routes where you have activated **Overlap**, uncheck **Job management**, **Working time** and **Capacity**. 
 
-Additional resources
---------
+## Additional resources
 
-[Bills of materials and formulas](bill-of-material-bom.md)
+- [Bills of materials and formulas](bill-of-material-bom.md)
 
-[Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)
+- [Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)
 
-[Resource capabilities](resource-capabilities.md)
+- [Resource capabilities](resource-capabilities.md)
 
-[Electronic signature overview](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Electronic signature overview](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 
