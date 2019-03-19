@@ -5,7 +5,7 @@ title: Naming guidelines for model extensions
 description: This topic describes the naming guidelines for model extensions. An element in a model must have a name that is unique across all models at installation time. 
 author: LarsBlaaberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,7 +62,7 @@ Therefore, an extension class that augments the ContactPerson table should start
 
 ## Naming fields, field groups, indexes, relations, and metadata elements added in extensions
 
-Fields, field groups, indexes, relations, and metadata elements added in extensions must have a name that is unique across both the element that is being extended and other extension elements. Therefore, **these artifacts should include a prefix** that minimizes the risk of conflicts across models. In addition these artifacts should have clear terms and abbreviations so they can be easily understood. 
+Fields, field groups, indexes, relations, and metadata elements added in extensions must have a name that is unique across both the element that is being extended and other extension elements. Therefore, **these artifacts should include a prefix** that minimizes the risk of conflicts across models. In addition, these artifacts should have clear terms and abbreviations so that they can be easily understood. 
 
 + Include a prefix, term, or abbreviation at the beginning of the name of the metadata node. For example, an approving worker foreign key field is added as part of a table extension, and **WHS** is one of prefixes that are dedicated to other elements in the hosting model. In this case, the field might be named **WHSApprovingWorker**.
 
