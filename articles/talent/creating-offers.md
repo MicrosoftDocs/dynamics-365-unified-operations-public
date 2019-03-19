@@ -3,7 +3,7 @@
 
 title: Creating, approving, and signing offers
 description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 for Talent.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
 
