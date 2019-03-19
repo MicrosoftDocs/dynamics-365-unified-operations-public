@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Forecast reduction keys
+# Method used to reduce forecast requirements
 
 [!include [banner](../includes/banner.md)]
 
@@ -99,7 +99,7 @@ If you select **Transactions - reduction key**, the forecast requirements are re
 
 This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
 
-For this example, you select **Transactions - reduction key** in the **Reduction principle** field on the **Master plans** page.
+For this example, you select **Transactions - reduction key** in the **Method used to reduce forecast requirements** field on the **Master plans** page.
 
 The following sales orders exist on January 1.
 
@@ -204,7 +204,7 @@ A forecast reduction key is used in the **Transactions - reduction key** and **P
 
 1. Go to **Master planning \> Setup \> Coverage \> Reduction keys**.
 2. Select **New** or press **Ctrl+N** to create a reduction key.
-3. In the **Reduction key** field, enter an identifier for the key. Then, in the **Name** field, enter a name. It's a unique ID for the forecast reduction key.
+3. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name. 
 4. Define the periods and the reduction key percentage in each period:
 
     - The **Effective date** field indicates the date when creation of the periods starts. When the **Use the effective date** option is set to **Yes**, the periods start on the effective date. When it's set to **No**, the periods start on the date when master planning is run.
@@ -222,7 +222,7 @@ A forecast reduction key must be assigned to the coverage group of the item. Fol
     - Master planning \> Setup \> Plans \> Forecast plans
     - Master planning \> Setup \> Plans \> Master plans
 
-4. On the **Forecast plans** or **Master plans** page, on the **General** FastTab, in the **Reduction principle** field, select either **Percent - reduction key** or **Transactions - reduction key**.
+4. On the **Forecast plans** or **Master plans** page, on the **General** FastTab, in the **Method used to reduce forecast requirements** field, select either **Percent - reduction key** or **Transactions - reduction key**.
 
 ## Reduce a forecast by transactions
 
