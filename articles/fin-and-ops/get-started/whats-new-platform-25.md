@@ -76,7 +76,7 @@ Improvements made in the batch framework optimize the batch scheduling functiona
 
 ## Batch Jobs enhanced forms
 The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Batch enhanced forms](../../dev-itpro/sysadmin/enhanced-forms.md).
-For information about saved views, see the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
+Additionally, support has been added for saved views and will be released in a future Platform update. For information about saved views, see the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
 
 ## Batch jobs alerts and notifications
 You can view batch job notifications in the action center. These notifications will keep you informed about batch events. You can enable alert rules for when a batch job ends, ends in error, or is canceled. You can choose whether the alerts are emailed to you or appear as a pop-up notification in the action center. For more information, see [Alerts](../../dev-itpro/sysadmin/alerts.md).
