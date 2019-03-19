@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include[banner](../../includes/banner.md)]
 
-Features are added and updated in every release of Dynamics 365 for Finance and Operations. The **Feature management** experience provides you with a workspace where you can view a list of features that have been delivered in each release. New features are disabled by default (see exception discussed below) and you can use the workspace to enable those features and view the documenation for them.
+Features are added and updated in every release of Dynamics 365 for Finance and Operations. The **Feature management** experience provides you with a workspace where you can view a list of features that have been delivered in each release. New features are disabled by default and you can use the workspace to enable those features and view the documenation for them.
 
 ## Using the Feature management workspace
 
@@ -39,20 +39,34 @@ The **Feature management** workspace is found in the Workspaces menu area or in 
 
 The list of features includes the following information:
 1) The **Feature name** describes the feature that was added
-2) The **Feature added** date is the date that the feature was added to your environment. It is added automatically when you update your environment during the monthly release cycles. 
-3) The **Enable** check box allows you to enable a feature by clicking on the box. You can disable the feature by clicking on the box to remove the check mark. The feature is enabled for all legal entities. Note that the feature may be enabled but it is still controlled by security. It will only show up for users that have access to the feature based on their security role. It will also only show up for legal entities to which the user has access. 
-4) The **Enable date** field is the date on which the feature will be enabled. Once you enable a feature, the date will default to today's date. You can change the date to a future date to delay access to the feature but you can't select a date earlier than today.
-5) The **Always on** field indicates that a feature must be enabled. You will not be able to control the release of a feature set to Always on. The field will be used for critical features that must be implemented. It will also be used for feature deprecations where we have provided notice that a feature will be deprecated at a future date and that date has been reached. 
-6) The **Documenatation** icon will point to a URL where you can view the documentation. You will be routed to a temporary page if the documentation is not available
+2) The **Enabled** check box indicates that a feature has been enabled. The feature is enabled for all legal entities. Note that the feature may be enabled but it is still controlled by security. The feature will only be available to users that have access to the feature based on their security role. It will also only be available for legal entities to which the user has access. 
+3) The **Enable date** is the date on which the feature was enabled or will be enabled. If the feature must be enabled after an update, you will see "Auto-enabled" in this column.
+4) The **Feature added** date is the date that the feature was added to your environment. The date is added automatically when you update your environment during the monthly release cycles. 
+5) The **Module** column describes which module is affected by the new feature.
 
-Each feature also comes with nnotes in the **Notes** box provided by the author of the feature. These notes are shown in the pane at the right of the workspace. You can also add your own comments in the **Comments** box on that pane. 
+The features are shown in release order with the newest features at the top of the list. Features will remain on the list indefinitely so that you can still access features at a later date. We plan to add tabs to organize the features by age.
 
-The features are shown in release order with the newest features at the top of the list in a tab labelled **All**. Features will remain on the list indefinitely so that you can still access features at a later date. We will be adding additional tabs to organize the features by age.
+When you select a feature, additional information is presented in a pane to the right of the feature list. At the top of the pane, you will see the feature name, the date that the feature was added, the module that is affected by the feature, and a link to the documentation. The link is labelled **Learn more**. Click on the link to view the documenation for the feature. You will be routed to a temporary page if the documentation is not available. You can also add your own comments in the **Comments** box on that pane. 
 
-## Default action for enabling features
+## Enable a feature
+You can enable features using the **Enable** button on that pane.
+1) If the feature is not enabled, an **Enable** button appears on the form. Click on **Enable**.
+2) A dialog appears when you can specify the date on which you want to enable the feature. The date is defaulted to today's date.
+3) Click on **Enable** to enable the feature.
+4) Some features cannot be disabled once you have enabled them. You will receive a warning that the feature cannot be disabled and you will be able to cancel your request. However, once you enable that feature, you will not be able to disable it.
+5) A message will appear in the pane below the "Learn more" link that describes that the feature was enabled or when the feature will be enabled. It will appear every time you select the feature in the grid. 
 
-By default, all features are disabled. However, your implementation team may decide to enable all features automatically when they become available in a new version. You can enable this process change by modifying the value shown in the **Default action** drop down. Select **Enable new features** to automatically enable all features as of the date that the feature was added to the environment. You can still disable a feature at any time as long as it is not mandatory.
+## Disable a feature
+You can disable features using the **Disable** button that appears for features that have already been enabled. The button will not be available if the feature cannot be disabled. 
+1) If the feature is enabled, a **Disable** button appears on the form unless the feature has been identified as a feature that can't be disabled once it is enabled. Click on **Disable**.
+2) A dialog appears and the date on which you want to enable the feature is erased. 
+3) A message will appear in the pane below the "Learn more" link that describes that the feature is not yet enabled. It will appear every time you select the feature in the grid. 
+
+## Features that must be enabled
+In a rare circumstance, we may deliver a critical feature that must be enabled automatically when you do an update. A message will appear in the pane below the "Learn more" link that describes that the feature was enabled automatically. It will appear every time you select the feature in the grid.  
 
 ## Assigning roles
 
-The **Feature management** workspace can be opened by System administrators and by users that are assigned to the **Feature manager** role that was created to support the Feature management experience. The **Feature manager** can enable and disable any feature and update the comments section for the feature. However, the **Feature manager** role does not override the existing security that the user has. The role only controls access to enabling and disabling the features. It does not provide access to the features. 
+The **Feature management** workspace can be opened by System administrators and by users that are assigned to the **Feature manager** or **Feature viewer** roles that were created to support the Feature management experience. The **Feature manager** can enable and disable any feature and update the comments section for the feature. The **Feature viewer** can view the **Feature management** workspace. 
+
+The **Feature manager** and **Feature viewer** roles do not override the existing security that the user has. The role only controls access to enabling and disabling the features. It does not provide access to the features. 
