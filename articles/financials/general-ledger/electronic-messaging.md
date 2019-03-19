@@ -120,7 +120,7 @@ The following table describes the general fields on the **Additional fields** pa
 | Field name  | Enter the name of an additional attribute of message items that are related to the process. This name is shown in the user interface (UI) while you work with the process. It can also be used in ER configurations that are related to the process. |
 | Description | Enter a description of the additional field. |
 | User edit   | Set this option to **Yes** if users should be able to change the value of the additional field from the UI. |
-| Counter     | Set this option to **Yes** if the additional field should contain a sequence number in an electronic message. Value of the additional field will be filled in automatically when an action of the **Electronic reporting export** is run. |
+| Counter     | Set this option to **Yes** if the additional field should contain a number sequence in an electronic message. Value of the additional field will be filled in automatically when an action of the **Electronic reporting export** is run. |
 | Hidden      | Set this option to **Yes** if the additional field should be hidden in the UI. |
 
 Each additional field can have different values for the processing. You define these values on **Values** FastTab. The following table describes the fields.
@@ -151,7 +151,7 @@ You can manually set up an executable class on the **Executable class settings**
 | Execution level       | This field is set automatically, because the value should be predefined for the selected executable class. This field limits the level that related evaluation is run on. |
 | Class description     | This field is set automatically, because the value should be predefined for the selected executable class. |
 
-Some executable classes might have mandatory parameters that must be defined before the executable class is run for the first time. To define these parameters, select **Parameters** on the Action Pane, set the fields in the dialog box that appears, and then select **OK**. It's important that you select **OK**. Otherwise, the parameters won't be saved to the base, and the executable class won't be called correctly.
+Some executable classes might have mandatory parameters that must be defined before the executable class is run for the first time. To define these parameters, select **Parameters** on the Action Pane, set the fields in the dialog box that appears, and then select **OK**. It's important that you select **OK**. Otherwise, the parameters won't be saved to the database, and the executable class won't be called correctly.
 
 ### Populate records actions
 
@@ -260,8 +260,8 @@ The following options are available in the **Action type** field:
 - **Electronic reporting export** – Use this action type for actions that should generate a report that is based on an exporting ER configuration at the message item level.
 - **Electronic reporting export message** – Use this action type for actions that should generate a report that is based on an exporting ER configuration at the message level (for example, when a message doesn't have any message items).
 - **Electronic reporting import** – Use this action type for actions that should generate a report that is based on an importing ER configuration.
-- **Message level user processing** – Use this action type for actions that assume some manual action by the user. For example, the user might update the status of messages.
-- **User processing** – Use this action type for actions that assume some manual action by the user. For example, the user might update the status of messages items.
+- **Message level user processing** – Use this action type for actions that assume some manual action by the user at the message level. For example, the user might update the status of messages.
+- **User processing** – Use this action type for actions that assume some manual action by the user at the message item level. For example, the user might update the status of messages items.
 - **Web service** – Use this action type for actions that should transmit a generated report to a web service. This action type isn't used for Italian Purchase and Sales Invoices Communication reporting. For actions of **Web service** type, the **Message processing actions** page includes a **Miscellaneous details** FastTab, where you can specify a confirmation text. This confirmation text will be shown to users before requests to the selected web service are addressed.
 - **Request verification** – Use this action type to request verification from a server.
 
@@ -343,7 +343,7 @@ The **Message items** FastTab shows all the message items that are related to th
 
 - **Delete** – This button is available if the **Allow delete** check box is selected for the current status of the selected message item.
 - **Update status** – This button is associated with actions of the **User processing** type.
-- **Original document** – Open a page that shows the original document for the selected message.
+- **Original document** – Open a page that shows the original document for the selected message item.
 
 All reports that have already been generated and received for a message are attached to that message. To review the attachments that are related to a message, select the message, and then select the **Attachment** button (the paper clip symbol) in the upper-right corner of the page.
 
@@ -522,7 +522,7 @@ For this example, you will create the following actions:
 
     - On the **General** FastTab, in the **Action type** field, select **Message level user processing**.
     - On the **Initial statuses** FastTab, in the **Message status** field, select **Generated**.
-    - On the **Result statuses** FastTab, in the **Message status** field, select **Prepared** or (and) **New**. In the **Response type** field, enter **Successfully executed**.
+    - On the **Result statuses** FastTab, add a separate line for each of the two message statuses (**Prepared** and **New**). For both lines, set the **Response type** field to **Successfully executed**.
 
 #### Electronic message processing
 
