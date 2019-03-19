@@ -3,9 +3,9 @@
 
 title: Extensibility in Attract
 description: This topic describes how you can extend the Microsoft Dynamics 365 for Talent - Attract application by using the Microsoft Power platform.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichsew
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 

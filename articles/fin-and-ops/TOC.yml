@@ -3338,6 +3338,8 @@
         href: get-started/create-alerts.md
       - name: Batch processing of alerts
         href: get-started/alerts-managing.md
+      - name: Client alert notifications by email
+        href: get-started/alert-email-notifications.md
     - name: Electronic signatures
       href: organization-administration/electronic-signature-overview.md
       items:
