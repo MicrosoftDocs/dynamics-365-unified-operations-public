@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 When you run a batch job, a history is recorded. This history can be used to monitor the correct execution of jobs. However, when several batch jobs have been created, especially batch jobs that have a high recurrence, lots of batch job history entries are generated. Too many entries in the history table can negatively affect the performance of future jobs.
 
 Two pages that have been added to the **System administration** module make it easy to clean up the batch job history:
