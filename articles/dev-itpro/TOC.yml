@@ -277,7 +277,7 @@
         href: extensibility/class-extensions.md
       - name: Class extension via method wrapping and Chain of Command
         href: extensibility/method-wrapping-coc.md
-      - name: Naming guidelines for model extensions
+      - name: Naming guidelines for extensions
         href: extensibility/naming-guidelines-extensions.md
       - name: Relax model restrictions to refactor overlayering into extensions
         href: extensibility/refactoring-over-layering.md
@@ -1043,7 +1043,7 @@
     items:
     - name: Process for moving to the latest update
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Update environments from version 8.0 to 8.1
+    - name: Update environments from version 8.0 to 8.1.X/10.X
       href: migration-upgrade/appupdate-80-81.md
     - name: Software lifecycle policy and cloud releases
       href: migration-upgrade/versions-update-policy.md
@@ -1132,6 +1132,12 @@
       href: sysadmin/runby.md
     - name: Batch job to handle SQL index defragmentation
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Configure batch alerts
+      href: sysadmin/alerts.md
+    - name: Enhanced batch forms
+      href: sysadmin/enhanced-forms.md
+    - name: Clean up the batch history
+      href: sysadmin/batch-history-cleanup.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1228,7 +1234,7 @@
     items:
     - name: Refresh for training purposes
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Debugging and diagnostics
+    - name: Debug a copy of the production database
       href: database/dbmovement-scenario-debugdiag.md
     - name: Golden configuration promotion
       href: database/dbmovement-scenario-goldenconfig.md

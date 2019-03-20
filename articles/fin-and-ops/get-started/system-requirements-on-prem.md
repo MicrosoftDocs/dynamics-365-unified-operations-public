@@ -270,7 +270,7 @@ The following table lists the SQL Server versions that are supported for the Fin
 
 ## Software requirements for Application Object Server (AOS)
 
-- SQL Server Integation Services (SSIS)
+- SQL Server Integration Services (SSIS)
 
 ## Software requirements for Reporting Server (BI)
 

@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/01/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,13 +41,62 @@ This topic describes features that have been removed or deprecated for Dynamics 
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-> [!Note]
+> [!NOTE]
 > Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
-> [!Note]
+> [!NOTE]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 with platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Standard and First release service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### Deprecated APIs and potential breaking changes
+
+#### Deriving from internal classes is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+
+#### Overriding internal methods is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools. |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
+
+### Print to screen functionality
+Customers can use the **Import** action provided by the Report Viewer control to download documents produced by Finance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations. By fully embracing PDF as the standard format for business operations, we are able to drastically simplify user options for interacting with application reports and streamline the document rendering process. |
+| **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.   |
+| **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. The functionality to automatically download application reports to the browser as PDF documents is planned for the May 2019 Platform update. <br><br>**Important:**  Existing customers who rely on the Print to screen feature are advised to notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
+
+### Client KPI controls
+Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics. |
+| **Replaced by another feature?**   | PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.  In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.   |
+| **Product areas affected**         | This update will prevent developers from introducing new KPI controls in Visual Studio designer.    |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Deprecated APIs and future breaking changes
 
@@ -67,7 +116,7 @@ To access the full list of APIs that are being deprecated, see [Deprecation of m
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
 ### Batch transfer rules for subledger journal account entries
-The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer. 
+The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer. For additional information, see the [General Ledger Parameters – Batch transfer rules](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) blog.
 
 |   |  |
 |------------|--------------------|
@@ -75,7 +124,7 @@ The Synchronous transfer mode is being deprecated in the General ledger paramete
 | **Replaced by another feature?**   | Asynchronous and scheduled batch are options to use in place of Synchronous.   |
 | **Product areas affected**         | General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is the 10.0 version.|
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.|
 
 ### Electronic reporting for Russia
 Feature for configuring .txt and .xml file formats of declarations. 

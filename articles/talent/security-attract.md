@@ -3,9 +3,9 @@
 
 title: Security and role management in Attract
 description: This topic provides information about role security in Microsoft Dynamics 365 for Talent - Attract.
-author: josaw1
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 
@@ -105,14 +105,16 @@ The following privileges apply to the job-specific data for applicants and the a
 | Data or action          | Recruiter | Hiring Manager | Interviewer |
 |-------------------------|-----------|----------------|-------------|
 | Application documents   | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
-| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Create |
+| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only|
 | Application Activity    | View, if the user is on the hiring team | View, if the user is on the hiring team | Read-only |
 | Application feedback    | Add and view all feedback if the user is on the hiring team | Add and view all feedback if the user is on the hiring team | Can add feedback\*\* |
 | Reject application      | Can reject if the user is on the hiring team | Not allowed | Not allowed |
 | Advance stage           | Can reject if the user is on the hiring team | Can advance if the user is on the hiring team | Not allowed |
 | Launch offer management | Can start offer management | There is a configuration option on the offer activity. | Not allowed |
 
-\*\* A configuration option in the [feedback activity setup](activities-attract.md#feedback-activity) controls whether interviewers can see each other's feedback.
+
+\*\* A configuration option in the [feedback activity setup](./activities-attract.md) controls whether interviewers can see each other's feedback.
+
 
 ## Process templates
 

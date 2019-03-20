@@ -54,7 +54,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 
 ## Fixed assets (Russia)
-
+- [Set up fixed assets](rus-set-up-fixed-assets.md)
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
 - [Register fixed assets acquisitions](rus-register-acquisition.md)
 - [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
@@ -70,6 +70,11 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Depreciation bonuses](rus-bonus-depreciation.md)
 - [Calculate depreciation](rus-depreciation-calculation.md)
 
+## Accounts payable and receivable
+- [Invoices for payment](rus-invoice-payment.md)
+- [Cash flow management](rus-cash-flow.md)
+- [Set up dimension control for settlements](rus-transactions-settlement-date.md)
+
 ## Reporting
 
 - [Financial reporting](rus-financial-reports.md)
@@ -84,7 +89,4 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up officials](rus-officials.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
-- [Invoices for payment](rus-invoice-payment.md)
-- [Cash flow management](rus-cash-flow.md)
-
 

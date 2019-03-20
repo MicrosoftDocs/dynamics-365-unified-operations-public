@@ -3,7 +3,7 @@
 
 title: Data integration guidance for Dynamics 365 for Talent
 description: This topic provides guidance on various options for integrating with data managed by Dynamics 365 for Talent.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: Talent January 2019 update
 
@@ -87,7 +87,7 @@ Once the data entities that expose the data your integrating apps require are
 present in CDS, you can make full use of the [CDS platform and the APIs it
 supports](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer).
 Among the supported APIs is the [Dynamics 365 Web
-API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)),
+API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api),
 which provides an OData implementation for accessing CDS data.
 
 The CDS entities and the associated APIs are the best option for accessing

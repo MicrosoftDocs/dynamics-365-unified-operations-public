@@ -55,12 +55,34 @@ Follow these steps to set up a development environment so that you can test and 
 
    1. Open the Hardware station solution under **RetailSDK\SampleExtensions\HardwareStation**.
    2. Find the **HardwareStation.Extension.FiscalRegisterSample.csproj** extension project, and compile it.
-   3. Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
+   3. Find extension assemblies and configurations.
+      # [Retail 7.3 and earlier](#tab/retail-7-3)
+
+      Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
 
        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
        - The **Interop.CleanCash_1_1.dll** assembly
 
+      # [Retail 7.3.1 and later](#tab/retail-7-3-1)
+
+      Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
+
+       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
+       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
+       - The **Interop.CleanCash_1_1.dll** assembly
+
+      # [Retail 10.0 and later](#tab/retail-10-0)
+
+      Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
+
+       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
+       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration      
+      
+      Find the following file in **RetailSDK\References\Microsoft.Dynamics.Commerce.CleanCashInterop.1.0.1\lib\net451**:
+
+       - The **Interop.CleanCash_1_1.dll** assembly
+    ---
    4. Copy the files to a deployed Hardware station machine:
 
        - **Remote Hardware station:** Copy the files to the **bin** folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
@@ -81,14 +103,37 @@ Follow these steps to set up a development environment so that you can test and 
       **Remote Hardware station:** The file is located under the IIS Hardware station site location.
 
       **Local Hardware station:** The file is located under the Modern POS client broker location.
+      
+      # [Retail 10.0 and later](#tab/retail-10-0)
+
+      The file is named **HardwareStation.Extension.config**:
+
+      **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+
+      **Local Hardware station:** The file is located under the Modern POS client broker location.
 
     ---
 
     6. Add the following section to the **composition** section of the config file.
 
-        ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-        ```
+      # [Retail 7.3 and earlier](#tab/retail-7-3)
+
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+      ```
+
+      # [Retail 7.3.1 and later](#tab/retail-7-3-1)
+
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+      ```
+        
+      # [Retail 10.0 and later](#tab/retail-10-0)
+
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
+      ```
+    ---
 
     7. Restart the Hardware station service:
 
@@ -127,7 +172,7 @@ Follow these steps to set up a development environment so that you can test and 
     1. Open the solution at **RetailSdk\POS\ModernPOS.sln**, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the **Run** command. (Modern POS must not be customized. You must enable User Account Control [UAC], and you must uninstall previously installed instances of Modern POS as required.)
     2. Include **FiscalRegisterSample** in the **Pos.Extensions** project.
     3. Enable the extension to be compiled in **tsconfig.json** by removing the **FiscalRegisterSample** folder from the exclude list.
-    3. Enable the extension in **InternalExtensions\extensions.json** by adding the following lines in the appropriate place.
+    3. Enable the extension in **Extensions\extensions.json** by adding the following lines in the appropriate place.
 
         ``` json
         {
@@ -144,7 +189,7 @@ Follow these steps to set up a development environment so that you can test and 
     1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and make sure that it can be compiled without errors.
     2. Include **FiscalRegisterSample** in the **Pos.Extensions** project.
     3. Enable the extension to be compiled in **tsconfig.json** by removing the **FiscalRegisterSample** folder from the exclude list.
-    3. Enable the extension in **InternalExtensions\extensions.json** by adding the following lines in the appropriate place.
+    3. Enable the extension in **Extensions\extensions.json** by adding the following lines in the appropriate place.
 
         ``` json
         {
@@ -166,7 +211,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
 1. Extend the POS component
 
     1. Enable the extension to be compiled in **tsconfig.json** by removing the **FiscalRegisterSample** folder from the exclude list.
-    2. Enable the extension in **InternalExtensions\extensions.json** by adding the following lines in the appropriate place.
+    2. Enable the extension in **Extensions\extensions.json** by adding the following lines in the appropriate place.
 
         ``` json
         {
@@ -199,7 +244,14 @@ Follow these steps to create and apply deployable packages that contain Retail c
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
         ```
+        
+        # [Retail 10.0 and later](#tab/retail-10-0)
 
+        Modify the **HardwareStation.Extension.config** configuration file:
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
+        ```
         ---
 
 2. Run **msbuild** for the whole Retail SDK to create deployable packages.

@@ -3,7 +3,7 @@
  
 title: Hire existing employees through recruitment
 description: Sometimes open positions can be filled by candidates who are already employees in your organization. 
-author: rschloma
+author: andreabichsel
 manager: AnnBe 
 ms.date: 02/10/2017
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

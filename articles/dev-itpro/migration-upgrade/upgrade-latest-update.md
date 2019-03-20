@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 02/22/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -137,7 +137,7 @@ For details about the code migration steps, see [Code migration](../dev-tools/de
 ## Scenario 3: Upgrade to the latest application release
 
 > [!IMPORTANT]
-> If you're using application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from version 8.0 to 8.1.X](./appupdate-80-81.md).
+> If you're using application version 8.0 and want to move to the 8.1 or 10.0 releases, follow the simplified steps in [Update environments from version 8.0 to 8.1.X/10.X](./appupdate-80-81.md).
 
 These steps apply to customers who are live on an earlier release, and who want to do a full upgrade to the most recent platform and application releases. The steps might also apply to customers who have already deployed and configured a production environment, even if they haven't yet gone live. If you aren't upgrading your application but just want to upgrade your platform, use scenario 4 instead.
 
@@ -205,6 +205,13 @@ When you apply a new package to the environment, the process is the same as the 
 
 If package deployment fails, you can use the **Rollback** button to reverse it. Note that this button is **not** the same as the **Rollback** option on the **Upgrade** menu.
 
+#### Critical hotfixes
+With increased use of the self-service upgrade process, we have found several hotfixes to be critical to success for various target versions. For example, if you're upgrading to version 7.3 a list of KBs that have consistently resolved issues with data upgrade, retail components, or performance will display.
+
+<img src="media/UpgradeAutomation/Upgrade_CriticalKBs.png" width="700px" alt="Critical hotfixes" />
+
+The goal is to have this list empty before you start the **Data Upgrade** step of the process.  These KBs need to be installed on your Upgrade-in-progress environment.
+
 #### Upgrade Financial Reporting binaries
 Database Refresh and other operations are blocked if your sandbox and production environments aren't on the same version of Financial Reporter.  During upgrade, it is an opportune time to uptake the latest binaries for Financial Reporting.  
 
@@ -229,11 +236,23 @@ On the **Upgrade** menu, select **Data upgrade**. Your original sandbox environm
 
 Next, the data upgrade package for your target version will be automatically applied. The time that is required to apply the data upgrade package varies, depending on the size of your database.
 
-**If the data upgrade fails** you must select **Rollback** on the **Upgrade** menu to restore your database to the point that it was at before the data upgrade began. Before you do a rollback, we highly recommend that you download the logs and determine the root cause of the failure, to help guarantee that your next Data Upgrade execution will go more smoothly.
+If the data upgrade fails, you need to select **Rollback** on the **Upgrade** menu to restore your database to the point that it was at before the data upgrade began. Before you do a rollback, we highly recommend that you download the logs to determine the root cause of the failure. This helps to ensure that your next Data Upgrade execution will go more smoothly.
+
+#### Upgrade days remaining
+Because the self-service upgrade process provides a parallel environment at no additional cost to you, there is a time limit on how long this environment can be used.  Currently, this time limit is set to 10 calendar days and begins when you use the **Maintain** menu > **Upgrade** button to start the process.
+
+*What happens when the time runs out?* <br/>
+<img src="media/UpgradeAutomation/Upgrade_Timer.png" width="300px" alt="Upgrade must be performed in 10 calendar days" />
+
+There are two possible outcomes when the timer reaches zero:
+- If you have not yet started the Data Upgrade step, then the new environment will be queued for deletion. In this scenario, the upgrade in the progress environment was provisioned, and optionally had customizations and packages applied but no data was upgraded and the original environment never incurred downtime.  
+- If you have executed the Data Upgrade step but not yet committed the upgrade, then no actions will be performed and no environments will be deleted. You can remain here until you commit or rollback. If you decide to rollback and the timer is at zero, then the new environment will be deleted.
+
+Only after you commit the upgrade as a success, is the original environment queued for deletion.
 
 #### Commit or rollback
 
-After the data upgrade package is applied, you can review the environment, and your users can perform business validation activities. If this validation is successful, you can mark the whole upgrade as a success by selecting **Commit** on the **Upgrade** menu. You must commit the upgrade to move on to your production environment.
+After the data upgrade package is applied, you can review the environment, and your users can perform business validation activities. If this validation is successful, you can mark the entire upgrade as a success by selecting **Commit** on the **Upgrade** menu. You must commit the upgrade before you can move on to your production environment. After you commit, the original environment is queued for deletion.
 
 <img src="media/UpgradeAutomation/10_CommitRollback.png" width="700px" alt="Commit option on the Upgrade menu" />
 
@@ -277,7 +296,7 @@ This TTSCOMMIT error is intermittent and can be resolved by using the **Resume**
 
 **Upgrade was Committed but the environment remains in 'Upgrade cleanup in progress' state.**
 
-This is an issue we have noticed on some Sandbox and Production environments. We have created a bug to resolve this problem. In the mean time, we will be alerted proactively when this occurs and will cleanup the environment state manually. When the bug is resolved, we will remove this issue from the Known Issues list.
+This is an issue we have noticed on some Sandbox and Production environments. We have created a bug to resolve this problem. In the meantime, we will be alerted proactively when this occurs and will clean up the environment state manually. When the bug is resolved, we will remove this issue from the Known Issues list.
 
 ## Scenario 4: Upgrade to the most current platform only
 

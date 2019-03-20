@@ -3,7 +3,7 @@
 
 title: Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations
 description: This topic describes the integration between Talent and Finance and Operations. 
-author: jcart
+author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope:  
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: 
 ---
