@@ -3,9 +3,9 @@
 
 title: Create, approve, and post jobs in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
-author: andreabichsel
+author: andreabichsel, hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -78,9 +78,7 @@ For more information about activities that can be added to the hiring process, s
 
 ## Postings
 
-After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Microsoft Dynamics 365 for Talent career site) or LinkedIn. 
-
-The Attract team is continually working to partner with job board aggregators. This list will expand over time.
+After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Microsoft Dynamics 365 for Talent career site) or LinkedIn. The Attract team is continually working to partner with job board aggregators. This list will expand over time. When a job is posted as internal only, candidates need an AAD account to view and apply for the job. If the job is listed as public, candidates can view and apply for jobs using all authentication options. 
 
 For more information about job postings, see [Career site functionality in Attract](career-site.md).
 
