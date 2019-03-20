@@ -52,9 +52,9 @@ After the **when a business event happens** trigger is added to a flow, the foll
 
 When the flow is saved, a subscription to the selected business event is added into the environment instance. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
 
-If either the trigger or the flow is deleted, the business event is automatically unsubscribed from.
+If either the trigger or the flow is deleted or disabled, the business event is automatically unsubscribed from.
 
-Multiple flows can subscribe to the same business event in different legal entities.
+Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity.
 
 ## Other ways to consume business events in Microsoft Flow
 
