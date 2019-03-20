@@ -4,9 +4,9 @@
 
 title:  Career site functionality in Attract
 description: This topic provides an overview of the candidate-facing career site functionality in Attract.
-author: andreabichsel
+author: andreabichsel, hasrivas
 manager: AnnBe
-ms.date: 02/12/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -124,7 +124,9 @@ only for internal candidates who use their company Azure AD credentials. For
 example, a candidate who is currently an employee of Contoso Ltd wants to apply
 for a job in an unrelated company, Alpine Ski House. In this case, the sign-in
 will be unsuccessful if the employee tries to use Azure AD
-credentials from Contoso Ltd.
+credentials from Contoso Ltd. 
+
+Candidates are mandated to sign-in using Azure AD if the job they are trying to view/apply is listed as internal only. 
 
 ## Create and maintain a profile
 
@@ -158,6 +160,16 @@ applications, profile, and resumes.
 >   [!NOTE] 
 >   Job recommendations are shown only if at least 10 jobs are posted on
 >   the career site, and if the candidate has completed a profile.
+
+Internal candidates are also able to view who the hiring manager and/or the recruiter for the job is in case they want to contact them further. External candidates, on the other hand, have no visibility into who are the hiring team members for any job. 
+
+## Contact the hiring team
+The ability to contact the hiring team is only available for internal candidates for all jobs, internal only or publicly posted. Candidates can choose to **Contact hiring team**  to express interest or know more about the posted job. They can pick any of the listed hiring team memebers (hiring manager or recruriters) to send the message to, along with an optional resume if they choose to attach one. Alternatively, they can also pick an existing resume document already uploaded as part of their profile.  
+
+Once an internal candidate reaches out to the hiring team member(s), a mail is sent to the chosen recepients on candidate's behalf. At the same time, the candidate's profile is also added to the prospect stage if it's enabled for that job. Recruiters or Hiring managers will have all such candidates who reached out to them organized for them under the Prospect stage, they can they review the profiles and invite potential candidates to apply. 
+
+Candidates are able to Apply for the job they have already contacted the hiring team member for. Once applied, they do not have the ability to contact the hiring team via the career site any more. 
+
 
 ## Apply for jobs
 
