@@ -5,7 +5,7 @@ title: Business events in Microsoft Flow
 description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
