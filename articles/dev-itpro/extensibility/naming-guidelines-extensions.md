@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Naming guidelines for model extensions
-description: This topic describes the naming guidelines for model extensions. An element in a model must have a name that is unique across all models at installation time. 
+title: Naming guidelines for extensions
+description: This topic describes the naming guidelines for extensions. Artifacts added via extension must have a name that is unique across all models at installation time. 
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 03/19/2019
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Naming guidelines for model extensions
+# Naming guidelines for extensions
 
 [!include [banner](../includes/banner.md)]
 

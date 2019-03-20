@@ -51,7 +51,7 @@ On the **Master planning parameters** page, you can set the start time for the c
 
 ## Desired date
 
-On the **Planned order** page, under the **Delays tab is the **Desired date** for the planned order. The desired date of a planned order is the base date for delays, which is a computed date that equals the **Requested date** calculated from the **Net Requirement**. If the planned order is a BOM line, production line or kanban line, the desired date is based on the **Requirement date** and the desired date will not be shown on the **Planned order** page.
+On the **Planned order** page, under the **Delays** tab is the **Desired date** for the planned order. The desired date of a planned order is the base date for delays, which is a computed date that equals the **Requested date** calculated from the **Net Requirement**. If the planned order is a BOM line, production line or kanban line, the desired date is based on the **Requirement date** and the desired date will not be shown on the **Planned order** page.
 
 Additional resources
 --------
