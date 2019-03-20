@@ -35,17 +35,14 @@ ms.dyn365.ops.version: Platform 26
 
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 26. This version has a build number of 7.0.XXXX. For more information about Platform update 26, see [Additional resources](whats-new-platform-update-26.md#additional-resources).
 
-## Feature
-Feature description and link to topic with details.
+## Business Events Generally Available
+Business events are now generally available. This means, business events are out of preview and is available by default without having to enable the flight.
 
-## Feature
-Feature description and link to topic with details.
+## 1:N support for Microsoft Flow to subscribe to Business Events
+Multiple Flow apps can subscribe to the same business event in the same legal entity. The default limit on the number of such scubscriptions is set to 10. This can be modified as required.
 
-## Feature
-Feature description and link to topic with details.
-
-## Feature
-Feature description and link to topic with details.
+## Business events are idempotent
+Business events are idempotent. This means, the payload of a business event has a unique and ever increasing number called the ControlNumber. This control number can be used by consumers to apply duplicate detection logic and also out of order delivery detection logic to ensure robust processing of events.
 
 ## Feature
 Feature description and link to topic with details.
