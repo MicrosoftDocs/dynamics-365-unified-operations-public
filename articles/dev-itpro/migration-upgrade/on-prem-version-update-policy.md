@@ -58,6 +58,7 @@ Application releases expire at the end of the month of their software lifecycle.
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
 | [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| - | - | - | - | - |
+|  Dynamics 365 for Finance and Operations (on-premises) | 10.0 | 10.0.8 | March 2019 | June 2019 | December 2027  |
 |  Dynamics 365 for Finance and Operations (on-premises) | 8.1 | 8.1.136 | November 2018 | April 2019     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
