@@ -136,7 +136,7 @@ For files that failed to process:
 
 ### Generate documents in PDF format by filling in PDF templates
 
-This feature allows you to use a fillable PDF document as a template for generating reports in the PDF format. It also allows you to automatically discover fields of such fillable PDF document generating new components of an ER format at design time that are necessary to fill in these fields of a PDF template at run time. With this feature, you can configure an ER format generating multiple PDF documents and automatically merge them into a single, final PDF document.
+This feature allows you to use a fillable PDF document as a template for generating reports in the PDF format. You can import the PDF at design time to a configured ER format which automatically generates new elements of this ER format for discovered fields that need to be filled in. By adding bindings to generated elements of an ER format, you can fill in necessary fields of the PDF template by running this ER format. With this feature, you can also configure an ER format generating multiple PDF documents and automatically merge them into a single, final PDF document.
 
 ## Russian features
 
