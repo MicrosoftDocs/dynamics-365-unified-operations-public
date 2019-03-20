@@ -38,7 +38,7 @@ This topic provides an overview of the bank foreign currency revaluation process
 
 As part of a period-end, accounting conventions require bank account balances in foreign currencies to be revalued using different exchange rate types (current, historical, average, etc.). The bank foreign currency revaluation can be used to revalue one or more bank accounts. The feature is also a global feature, allowing you to revalue banks in a single page across all of the legal entities to which you have access.
 
-
+> [!NOTE]
 When you run the revaluation process, the balance in each bank account posted in a foreign currency will be revalued. The unrealized gain or loss transactions that are created during the revaluation process are system-generated. Two transactions might be created, one for the accounting currency and a second for the reporting currency, if relevant. Each accounting entry will post to the unrealized gain or loss and the main account being revalued.
 
 ## Prepare to run foreign currency revaluation
