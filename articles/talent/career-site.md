@@ -4,7 +4,7 @@
 
 title:  Career site functionality in Attract
 description: This topic provides an overview of the candidate-facing career site functionality in Attract.
-author: andreabichsel, hasrivas
+author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
 ms.topic: article
