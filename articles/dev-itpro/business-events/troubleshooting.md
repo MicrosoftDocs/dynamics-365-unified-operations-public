@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 2019-02-28
 # Troubleshoot business events
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This topic provides some tips for troubleshooting issues that involve business events.
 
