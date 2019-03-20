@@ -61,3 +61,6 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Batch manager role](runby.md)
 -  [Batch active period](activeperiod.md)
 -  [Copy a batch job](copy-batch-job.md)
+-  [Configure batch alerts](alerts.md)
+-  [Batch enhanced forms](enhanced-forms.md)
+-  [Batch history cleanup](batch-history-cleanup.md)

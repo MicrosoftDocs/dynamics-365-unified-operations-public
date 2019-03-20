@@ -3,7 +3,7 @@
 
 title: Attract comprehensive hiring add-on capabilities
 description: This topic provides information about the capabilities in Microsoft Dynamics 365 for Talent add-on, Attract with comprehensive hiring.
-author: 
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/01/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 

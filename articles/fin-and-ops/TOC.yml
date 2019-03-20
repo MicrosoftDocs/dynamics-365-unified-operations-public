@@ -25,7 +25,7 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Standard and First release service updates
+      - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
         items:
@@ -208,7 +208,7 @@
       href: ../dev-itpro/migration-upgrade/versions-update-policy.md
     - name: Software lifecycle policy - On-premises
       href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
-    - name: Standard and First release service updates
+    - name: Service update availability
       href: get-started/public-preview-releases.md
     - name: Apply updates to cloud environments
       href: ../dev-itpro/deployment/apply-deployable-package-system.md
@@ -2302,6 +2302,8 @@
           items:
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
+          - name: Configure financial reports in Excel (Russia)
+            href: ../financials/localizations/rus-excel-financial-report.md            
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
@@ -2320,6 +2322,8 @@
           href: ../financials/localizations/rus-accounting-reporting.md
         - name: Cash flow management
           href: ../financials/localizations/rus-cash-flow.md
+        - name: Foreign currency sales, purchases, and transfers
+          href: ../financials/localizations/rus-currency-sale-purchase.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2668,6 +2672,8 @@
         href: ../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Employee development
         href: ../dev-itpro/analytics/employee-development-PBI.md?toc=/fin-and-ops/toc.json
+      - name: Expense management Power BI content
+        href: ../dev-itpro/analytics/expense-management-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial performance
         href: ../dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial insights
@@ -3332,6 +3338,8 @@
         href: get-started/create-alerts.md
       - name: Batch processing of alerts
         href: get-started/alerts-managing.md
+      - name: Client alert notifications by email
+        href: get-started/alert-email-notifications.md
     - name: Electronic signatures
       href: organization-administration/electronic-signature-overview.md
       items:

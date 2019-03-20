@@ -3,7 +3,7 @@
 
 title: Configure the payroll integration between Talent and Dayforce
 description: This topic explains how to configure the integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce so that you can process a pay run.
-author: jcart1106
+author: andreabichsel
 manager: AnnBe
 ms.date: 07/10/2018
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

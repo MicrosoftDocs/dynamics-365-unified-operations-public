@@ -7,6 +7,8 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: March 14, 2019     
+        href: whats-new-talent-march-14.md     
       - name: March 5, 2019     
         href: whats-new-talent-march-5.md
       - name: February 27, 2019     
@@ -202,6 +204,12 @@
       href: talent-fo-integration.md
     - name: Recurring data export using Azure Logic apps
       href: tutorial-integration-recurring-export.md
+  - name: Extensibility
+    items:
+    - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
+      href: extensibility-examples.md
+    - name: Extensibility in Attract
+      href: extensibility-attract.md
   - name: Office integration
     items:
     - name: Office integration tutorial

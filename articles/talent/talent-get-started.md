@@ -3,7 +3,7 @@
 
 title: Get started with Talent
 description: This topic provides information about how to adapt the user interface to your preferences, as well as connect to the Help resources that are available within the product, and on the docs.microsoft.com site. 
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -18,14 +18,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 

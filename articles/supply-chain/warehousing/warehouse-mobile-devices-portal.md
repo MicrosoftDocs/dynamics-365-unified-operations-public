@@ -34,6 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> This feature has been deprecated. For more information, see [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md#warehouse-mobile-devices-portal).
+
+
 This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Finance and Operations. It also explains how to service and upgrade your environment.
 
 Warehouse Mobile Devices Portal (WMDP) is a web application hosted in IIS. It uses ASP.NET MVC runtime. For the current version of Microsoft Dynamics 365 for Finance and Operations, WMDP is provided as a standalone component, meant for self-deployment on-premises. In order to enable the WMDP on your environment, you need to download the installer, deploy the WMDP application, and configure it to connect with a Finance and Operations server. This article explains how to enable WMDP on your environment. It also explains the process of introducing a hotfix into your environment.

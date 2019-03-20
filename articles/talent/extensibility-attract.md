@@ -3,9 +3,9 @@
 
 title: Extensibility in Attract
 description: This topic describes how you can extend the Microsoft Dynamics 365 for Talent - Attract application by using the Microsoft Power platform.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichsew
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 
@@ -38,14 +38,14 @@ Microsoft Dynamics 365 for Talent is built on top of the Common Data Service (CD
 
 ## Extending Option sets in Attract
 
-An **Option Set** (picklist) is a type of field that can be included in an entity. It defines a set of options. When an option set is displayed in a form it uses a drop-down list control.  In Attract there are multiple fields that are option sets.  We are beginning to introduce the capability to extend the options sets, beginning with the Rejection reason field, Employment type field, and Seniority type field.   Also, you can add localized display labels for the options that you add.  Please refer to the following link to learn more:  [Customize option set labels](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+An **Option Set** (picklist) is a type of field that can be included in an entity. It defines a set of options. When an option set is displayed in a form it uses a drop-down list control.  In Attract there are multiple fields that are option sets.  We are beginning to introduce the capability to extend the options sets, beginning with the Rejection reason field, Employment type field, and Seniority type field.   Also, you can add localized display labels for the options that you add. For more information, see [Customize option set labels](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** field on the **Job details** page. The default values in these fields are supported by LinkedIn and are displayed when the job is posted. Therefore, if you are posting jobs to LinkedIn and you modify the existing option set values for these fields, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.  
 
 Listed below are the steps to update the **Rejection reason** field with values that are specific to your business.  
 
-1. To extend the **Rejection reason** option set, navigate to the [PowerApps Admin website.](Https://admin.powerapps.microsoft.com)
+1. To extend the **Rejection reason** option set, navigate to the [PowerApps Admin website](https://admin.powerapps.com).
 2. You might be prompted to sign into your account. Provide your userID and password credentials that you use to sign into Dynamics365 and/or Office365, and then click **Next**.
 3. On the **Environments** tab, select the environment that you want to manage, and double-click to get to the **Details** tab.
 4. On the **Details** tab, select **Dynamics 365 Administration Center**.

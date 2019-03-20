@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -137,7 +137,7 @@ For details about the code migration steps, see [Code migration](../dev-tools/de
 ## Scenario 3: Upgrade to the latest application release
 
 > [!IMPORTANT]
-> If you're using application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from version 8.0 to 8.1.X](./appupdate-80-81.md).
+> If you're using application version 8.0 and want to move to the 8.1 or 10.0 releases, follow the simplified steps in [Update environments from version 8.0 to 8.1.X/10.X](./appupdate-80-81.md).
 
 These steps apply to customers who are live on an earlier release, and who want to do a full upgrade to the most recent platform and application releases. The steps might also apply to customers who have already deployed and configured a production environment, even if they haven't yet gone live. If you aren't upgrading your application but just want to upgrade your platform, use scenario 4 instead.
 
@@ -296,7 +296,7 @@ This TTSCOMMIT error is intermittent and can be resolved by using the **Resume**
 
 **Upgrade was Committed but the environment remains in 'Upgrade cleanup in progress' state.**
 
-This is an issue we have noticed on some Sandbox and Production environments. We have created a bug to resolve this problem. In the mean time, we will be alerted proactively when this occurs and will cleanup the environment state manually. When the bug is resolved, we will remove this issue from the Known Issues list.
+This is an issue we have noticed on some Sandbox and Production environments. We have created a bug to resolve this problem. In the meantime, we will be alerted proactively when this occurs and will clean up the environment state manually. When the bug is resolved, we will remove this issue from the Known Issues list.
 
 ## Scenario 4: Upgrade to the most current platform only
 
