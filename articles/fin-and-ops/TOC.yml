@@ -1892,6 +1892,8 @@
             href: ../financials/localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
             href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+          - name: Purchase a taxable item from an unregistered vendor
+            href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
         - name: Deployment guidelines for cash registers
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
