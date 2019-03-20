@@ -70,7 +70,7 @@ The following scenarios are covered by the fiscal printer integration sample for
         - Print a fiscal receipt for the pickup operation for a customer order.
         - Print a fiscal receipt for a return order.
 
-    - Print a barcode for the receipt number on a fiscal receipt.
+    - Print a bar code for the receipt number on a fiscal receipt.
 
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
@@ -78,7 +78,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or isn't responding, the printer is out of paper, or there is a paper jam.
     - Postpone fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
-    - Check availability of the fiscal printer before opening a new sales transaction or finalizing a sales transaction. 
+    - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
 
 ### Default data mapping
 
@@ -115,8 +115,8 @@ The fiscal printer integration sample implements the following rules that are re
 ### Limitations of the sample
 
 - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
-- Daily reports (fiscal X and fiscal Z) are printed by using the format that is embedded in the fiscal printer firmware.
-- Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
+- Daily reports (fiscal X and fiscal Z) are printed by using the format that is embedded in the fiscal printer's firmware.
+- The fiscal printer doesn't support mixed transactions. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
 - The sample supports integration only with a fiscal printer that is working in the RT (Registratore Telematico) mode.
 
 ## Set up Retail for Italy
@@ -125,8 +125,8 @@ The fiscal printer integration sample implements the following rules that are re
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md):
 
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the fiscal registration process settings [specific for this fiscal printer integration sample](#set-up-the-registration-process).
-- [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts)
+- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal printer integration sample](#set-up-the-registration-process).
+- [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 - [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
@@ -192,7 +192,7 @@ To enable the registration process, follow these steps to set up Retail Headquar
 4. Go to **Retail \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
 5. Go to **Retail \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and select the connector functional profile from the earlier step.
 6. Go to **Retail \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and select the connector functional group from the earlier step.
-7. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the created registration process from the earlier step.
+7. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
 9. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
@@ -200,16 +200,16 @@ To enable the registration process, follow these steps to set up Retail Headquar
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
-1. Complete the steps described in the [Enable extensions](#enable-extensions) section earlier in this topic.
+1. Complete the steps that are described in the [Enable extensions](#enable-extensions) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
-    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
+    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
 
         ``` xml	
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
+    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
 
         ``` xml 
         <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
@@ -217,20 +217,19 @@ Follow these steps to create deployable packages that contain Retail components,
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-    - Add the following line to include the CRT extension in the deployable packages:
+    - Add the following line to include the CRT extension in the deployable packages.
 
         ``` xml	
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
-    
-    - Add the following line to include the Hardware station extension in the deployable packages:
+
+    - Add the following line to include the Hardware station extension in the deployable packages.
 
         ``` xml	
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## Design of extensions
@@ -256,7 +255,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the document provider to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - VAT codes mapping
 - VAT rates mapping
@@ -268,7 +267,7 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer.
 
-The Hardware station extension is **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**. The Hardware station extension submits the documents that the Commerce runtime extension generates to the fiscal printer via the HTTP protocol. It also handles the responses that are received from the fiscal printer.
+The Hardware station extension is **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**. This extension uses the HTTP protocol to submit documents that the Commerce runtime extension generates to the fiscal printer. It also handles the responses that are received from the fiscal printer.
 
 #### Request handler
 
@@ -284,7 +283,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the connector to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the printer.
-- **Date and time synchronization** – This setting indicates whether the date and time of the printer needs to be synchronized with the connected Hardware station.
+- **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
