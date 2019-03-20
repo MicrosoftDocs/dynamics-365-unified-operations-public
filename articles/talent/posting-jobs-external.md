@@ -2,7 +2,7 @@
 # required metadata
 
 title: Post jobs to external career sites from Attract
-description: This topic describes how to post jobs to external career sites from Attract
+description: Use Dynamics 365 for Talent: Attract to post jobs to external recruiting sites
 author: pganapmsft
 manager: AnnBe
 ms.date: 03/20/2019
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
@@ -24,9 +23,9 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: pganap
-ms.search.validFrom: 2018-10-18
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: anbichse
+ms.search.validFrom: 2019-03-19
+ms.dyn365.ops.version: Platform update 24
 ---
 
 
