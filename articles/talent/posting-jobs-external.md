@@ -1,7 +1,34 @@
 ---
+# required metadata
+
 title: Posting jobs to external career sites from Attract
-author: josaw
+description: This topic describes how to post jobs to external career sites from Attract
+author: pganapmsft
+manager: AnnBe
+ms.date: 03/20/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: anbichse
+ms.search.scope: Core, Talent
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: anbichse
+ms.search.validFrom: 2018-10-18
+ms.dyn365.ops.version: AX 7.0.0
 ---
+
 
 Posting jobs to external sites from Attract
 ===========================================
@@ -22,16 +49,15 @@ functionality to post jobs to external career sites. We are always looking to
 expand the set of partners we support in this area. You will find below the
 details about how to setup and post jobs to the partner we currently support
 
--   [!NOTE]
-
-    -   Posting to external job boards feature is available only with the
-        Comprehensive hiring add-on.
-
-    -   Some of the integrations below might be in public preview as noted
-        below. To enable an integration in public preview, an admin must turn on
-        the preview options for them. In the Admin center, on the **Feature
-        management** tab, make sure that the **Preview features** option is set
-        to **On**.
+>  [!NOTE]
+>
+>  -   Posting to external job boards feature is available only with the
+>      Comprehensive hiring add-on.
+>  -   Some of the integrations below might be in public preview as noted
+>      below. To enable an integration in public preview, an admin must turn on
+>      the preview options for them. In the Admin center, on the **Feature
+>      management** tab, make sure that the **Preview features** option is set
+>      to **On**.
 
 Post Jobs Broadbean
 -------------------
@@ -53,10 +79,10 @@ select the **Job board settings** tab.
 >   confidential. Please store and share them responsibly. Any person having
 >   Administrator role in Attract can view these credentials.
 
--   [!NOTE] Microsoft and Attract just use these values provided here and do not
-    have any direct involvement in creating and maintaining these values. It is
-    the customer’s responsibility to keep these credentials up to date in
-    co-ordination with Broadbean.
+>   [!NOTE] Microsoft and Attract just use these values provided here and do not
+>   have any direct involvement in creating and maintaining these values. It is
+>   the customer’s responsibility to keep these credentials up to date in
+>   co-ordination with Broadbean.
 
 ### Post a job to Broadbean
 
@@ -84,16 +110,16 @@ Broadbean from Attract.
 Once the posting has successfully completed to on the Broadbean side, the
 Broadbean item in postings section shows the status as “Posted”.
 
--   [!NOTE]
-
-    -   Industry is a required field presented in a list format in the Broadbean
-        job post flow. Currently, this is defaulted to “IT” and can be changed
-        to the right industry in the Broadbean job post flow.
-
-    -   The time taken for this status update depends on when Broadbean finished
-        posting to all the job boards the job was posted to. Hence there might
-        be a slight delay between the user finishing posting on Broadbean page
-        and seeing the status updates in Attract.
+>   [!NOTE]
+>
+>   -   Industry is a required field presented in a list format in the Broadbean
+>       job post flow. Currently, this is defaulted to “IT” and can be changed
+>       to the right industry in the Broadbean job post flow.
+>
+>    -  The time taken for this status update depends on when Broadbean finished
+>       posting to all the job boards the job was posted to. Hence there might
+>       be a slight delay between the user finishing posting on Broadbean page
+>       and seeing the status updates in Attract.
 
 ### View a Broadbean job post
 
@@ -138,4 +164,4 @@ steps below.
     support](https://www.broadbean.com/resources/support/)
 
 3.  If the above steps do not help resolve the issue, please contact [Microsoft
-    support.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support#talent-support--attract-and-onboard)
+    support.](./talent-support#talent-support--attract-and-onboard)
