@@ -75,7 +75,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready, or isn't responding, the printer is out of paper, or there is a paper jam.
     - Postpone fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
-    - Check availability of the fiscal printer before opening a new sales transaction or finalizing a sales transaction.
+    - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
 
 ### Default data mapping
 
@@ -113,8 +113,8 @@ The fiscal printer integration sample implements the following rules that are re
 
 - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
 - Daily reports (fiscal X and fiscal Z) are printed by using the embedded *Shift report* format.
-- Printing a barcode on fiscal receipts is considered a potential customization, because this feature isn't supported in the embedded formats and can be implemented only through using the customizable **Super-format** report.
-- Mixed transactions aren't supported by the fiscal printer. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
+- Printing a bar code on fiscal receipts is considered a potential customization, because this feature isn't supported in the embedded formats and can be implemented only by using the customizable **Super-format** report.
+- The fiscal printer doesn't support mixed transactions. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
 
 ## Set up Retail for Poland
 
@@ -122,14 +122,14 @@ The fiscal printer integration sample implements the following rules that are re
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md):
 
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the fiscal registration process settings [specific for this fiscal printer integration sample](#set-up-the-registration-process).
+- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal printer integration sample](#set-up-the-registration-process).
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 - [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ### Enable extensions
 
-##### Commerce runtime extension components
+#### Commerce runtime extension components
 
 The Commerce runtime (CRT) extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -151,7 +151,7 @@ The Commerce runtime (CRT) extension components are included in the Retail SDK. 
     - **Retail Server:** Restart the Retail service site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
-##### Hardware station extension components
+#### Hardware station extension components
 
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
@@ -193,16 +193,16 @@ To enable the registration process, follow these steps to set up Retail Headquar
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
-1. Complete the steps described in the [Enable extensions](#enable-extensions) section earlier in this topic.
+1. Complete the steps that are described in the [Enable extensions](#enable-extensions) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
-    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
+    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
 
         ``` xml	
         <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample" />
         ```
 
-    - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
+    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
@@ -210,20 +210,19 @@ Follow these steps to create deployable packages that contain Retail components,
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-    - Add the following line to include the CRT extension in the deployable packages:
+    - Add the following line to include the CRT extension in the deployable packages.
 
         ``` xml	
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll"/>
         ```
-    
-    - Add the following line to include the Hardware station extension in the deployable packages:
+
+    - Add the following line to include the Hardware station extension in the deployable packages.
 
         ``` xml	
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll"/>
         ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## Design of extensions
@@ -232,7 +231,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
 The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer.
 
-The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.PosnetSample**. This extension generates a set of printer-specific commands in the JavaScript Object Notation (JSON) format that are defined by the POSNET specification 19-3678.
+The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.PosnetSample**. This extension generates a set of printer-specific commands in JavaScript Object Notation (JSON) format that are defined by POSNET specification 19-3678.
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
@@ -249,7 +248,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the document provider from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
+The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the document provider to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - VAT rates mapping
 - Tender type mapping
@@ -259,7 +258,7 @@ The configuration file is found in the **Configuration** folder of the extension
 
 The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer.
 
-The Hardware station extension is **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample**. This extension submits the commands that the Commerce runtime extension generates to the fiscal printer by calling the functions of the POSNET driver. It also handles device errors.
+The Hardware station extension is **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample**. This extension calls the functions of the POSNET driver to submit commands that the Commerce runtime extension generates to the fiscal printer. It also handles device errors.
 
 #### Request handler
 
@@ -275,8 +274,8 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable configuration of settings for the connector from Retail Headquarters. The file format is aligned with the fiscal integration configuration requirements. The following settings are added:
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the connector to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Connection string** – This string describes the details of the connection to the device in a format that is supported by the driver. For details, see the POSNET driver documentation.
-- **Date and time synchronization** – This setting indicates whether the date and time of the printer needs to be synchronized with the connected Hardware station.
-- **Device timeout** – The amount of time in milliseconds that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
+- **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
+- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
