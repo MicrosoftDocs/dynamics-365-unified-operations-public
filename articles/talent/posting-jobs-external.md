@@ -2,7 +2,7 @@
 # required metadata
 
 title: Post jobs to external career sites from Attract
-description: Use Dynamics 365 for Talent: Attract to post jobs to external recruiting sites
+description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to external recruiting sites
 author: pganapmsft
 manager: AnnBe
 ms.date: 03/20/2019
@@ -29,105 +29,92 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Post jobs to external sites from Attract
+# Post jobs to external career sites from Attract
 
 [!include [banner](../includes/banner.md)]
 
-You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites like Broadbean help you accomplish this goal. Microsoft Dynamics 365 for Talent: Attract now lets you post jobs to Broadbean, and we're constantly providing new offerings in this area. 
+You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites such as Broadbean help you accomplish this goal. Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.
 
 ## Post jobs to Broadbean
 
-Before you can post jobs to Broadbean, you need to configure Broadbean integration.
+Before you can post jobs to Broadbean, you must configure the Broadbean integration.
 
 > [!NOTE]
->
-> - You need the [Comprehensive hiring add-on](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) to post jobs to external sites.
-> - This feature is currently in preview. If you want to try it out, please [enable it in Attract's **Admin settings**](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+> - To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 ### Configure Broadbean integration
 
-1. Sign in to Attract as an administrator.
+1. Sign in to Attract as an admin.
+2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
+3. On the **Job board settings** tab, in the **Enable Broadbean integration** section, turn on the integration.
+4. Contact Broadbean, and enter your information in **Username, Client ID, Encryption Token**.
 
-2. Select **Settings** > **Admin center** > **Job board settings**.
+> [!WARNING]
+> Your Broadbean credentials are sensitive and confidential. Therefore, store and share them responsibly. Anyone who has an Administrator role in Attract can view these credentials.
 
-3. Turn on integration in **Enable Broadbean integration:**.
-
-4. Contact Broadbean and enter your information in **Username, Client ID, Encryption Token:**.
-
-> [!WARNING] Your Broadbean credentials are sensitive and confidential. Please store and share them responsibly. Anyone who has an Administrator role in Attract can view these credentials.
-
-> [!NOTE] Microsoft and Attract aren't involved in creating and maintaining these values. It's your responsibility to keep them up to date in Attract and to work with Broadbean for any issues with your credentials.
+> [!NOTE]
+> Microsoft and Attract aren't involved in creating and maintaining these values. It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.
 
 ### Post a job to Broadbean
 
-Recruiters and admins can post a job to Broadbean after activating it. You will need an apply URL for the job.
+After Broadbean is activated, recruiters and admins can post a job to it. You must have an apply URL for the job.
 
-1. In Attract, open the job you want to post to Broadbean.
-
-2. In **Postings**, select the **Post Now** button that corresponds to Broadbean. Follow the instructions in the pop-up window.
+1. In Attract, open the job that you want to post to Broadbean.
+2. In the **Postings** section, select the **Post Now** button that corresponds to Broadbean.
+3. Follow the instructions in the pop-up window.
 
 Attract passes the following information to Broadbean:
 
-- Req ID
-
-- Job Title
-
-- Job Description
-
-- Job Location
-
+- Request ID
+- Job title
+- Job description
+- Job location
 - Apply URL
-
 - Recruiter information
 
-When Broadbean successfully completes the posting, the **Postings** section in the Attract job displays the Broadbean status as **Posted**.
+After Broadbean successfully completes the posting, the **Postings** section of the job in Attract shows the Broadbean status as **Posted**.
 
 > [!NOTE]
->
-> - Broadbean requires the **Industry** field. It currently defaults to **IT**, but you can change it to the correct industry in the Broadbean job post pop-up window.
->
-> - It takes some time for Broadbean to finish posting your job to all of the job boards you selected, so there might be a slight delay before Attract provides a status update for the job. 
+> - Broadbean requires the **Industry** field. Currently, this field is set to **IT** by default. However, you can change the value to the correct industry in the Broadbean job posting pop-up window.
+> - It takes some time for Broadbean to finish posting your job to all the job boards that you selected. Therefore, there might be a slight delay before Attract provides a status update for the job.
 
-### View a Broadbean job post
+### View a Broadbean job posting
 
-After you post a job to Broadbean, you can view it from within Attract.
+After you post a job to Broadbean, you can view it from Attract.
 
-1. In Attract, open the job you want to view on Broadbean.
-
-2. In **Postings**, select the **...** option that corresponds to Broadbean, and then select **View**. 
+1. In Attract, open the job that you want to view on Broadbean.
+2. In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.
 
 The Broadbean job posting appears in a new window.
 
-### Update a Broadbean job post
+### Update a Broadbean job posting
 
-You can update a Broadbean job two ways:
+You can update a Broadbean job posting in two ways.
 
-1. Open the job you want to update.
+1. In Attract, open the job that you want to update.
+2. In the **Postings** section, select the **Update Post** button that corresponds to the Broadbean item.
+3. Edit the posting in the pop-up window.
 
-2. In **Postings**, select the **Update Post** button that corresponds to the Broadbean item. Edit your posting in the pop-up window.
+–or–
 
-- or -
+1. In Attract, open the job that you want to view on Broadbean.
+2. In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.
+3. On the Broadbean page, edit the job details, and then repost the job. The job details in Attract aren't changed.
 
-1. Open the job you want to view on Broadbean.
+### Remove a Broadbean job posting
 
-2. In **Postings**, select the **...** option that corresponds to Broadbean, and then select **View**. On the Broadbean page, edit the job details and repost the job. This won't change the job details in Attract.
+You can remove a job posting from Broadbean as you require.
 
-### Remove a Broadbean job post
+1. In Attract, open the job that you want to remove.
+2. In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **Remove Post**.
 
-You can remove a job post from Broadbean when needed.
+After Broadbean removes the job, the Broadbean item in Attract has a **Post Now** button. The presence of this button indicates that the job has been removed and can be posted again.
 
-1. In Attract, open the job you want to remove.
+### Troubleshoot the Broadbean integration
 
-2. In **Postings**, select the **...** option that corresponds to Broadbean, and then select **Remove Post**.
+If you're having trouble posting a job to Broadbean, try these steps.
 
-After Broadbean removes the job, the Broadbean item in Attract displays the **Post Now** button, indicating the job has been removed and can be posted again.
-
-### Troubleshooting Broadbean integration
-
-If you're having trouble posting a job to Broadbean, please try the following:
-
-1.  Verify the Broadbean credentials entered in Attract are valid and correct.
-
-2.  If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).
-
-3.  If you still have a problem, contact [Microsoft support](./talent-support#talent-support--attract-and-onboard).
+1. Verify that the Broadbean credentials that you entered in Attract are valid and correct.
+2. If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).
+3. If the issue persists, contact [Microsoft support](./talent-support#talent-support--attract-and-onboard).
