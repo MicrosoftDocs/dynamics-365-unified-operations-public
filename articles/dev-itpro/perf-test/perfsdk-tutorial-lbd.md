@@ -36,6 +36,14 @@ ms.dyn365.ops.version: Platform update 19
 
 This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
 
+  > [!IMPORTANT]
+   > Visual Studio 2019 will be the last version of Visual Studio with web performance and load test features. We will be publishing recommendations for an alternative solution.  
+   > - For our customers using the Visual Studio and Test Controller/Test Agent for on-premises load testing : Visual Studio 2019 will be the last Version, you can continue using it until the end of support cycle. 
+   > - For our customers using the cloud-based load testing service : the cloud-based load testing service will continue to run through March 31st, 2020. You can continue to use all the experiences powered by this service without interruption until then, alternatively you can switch to on-premise load testing. 
+   
+   > For more information, see the [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
+
+
 ## Prerequisites
 
 - An on-premises environment that has volume data
