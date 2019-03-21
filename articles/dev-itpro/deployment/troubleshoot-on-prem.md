@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/07/2019
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -349,7 +349,7 @@ Follow these steps to troubleshoot general issues with local agent validation.
 
 Check whether ACL was removed from client certificate on orchestrator machines. Run the .\Test-D365FOConfiguration.ps1 script on orchestrator machines, and verify the ACL.
 
-To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset. 
+To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs. 
 
 ### Error
 
@@ -421,7 +421,8 @@ If you re-create a user in AD DS, remember that the SID will change. In this cas
 
 ### Error
 
-**Error:** Unable to migrate database
+**Error:** 
+> Unable to migrate database
 
 **Steps:**
 
@@ -519,7 +520,7 @@ For more information, see [Troubleshoot application upgrades](https://docs.micro
 
 To learn when a new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).
 
-If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart by expanding nodes, application, and code restart.
+If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart by expanding **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**. Select the ellipsis button (**...**), and then select **Restart**.
  
 ## Error: "Unable to load DLL 'FabricClient.dll'"
 
@@ -533,7 +534,7 @@ The cluster ID can be any globally unique identifier (GUID). This GUID is used f
 
 Some examples of encryption errors include "AXBootstrapperAppType," "Bootstrapper," "AXDiagnostics," "RTGatewayAppType," "Gateway potential failure related," and "Microsoft.D365.Gateways.ClusterGateway.exe."
 
-You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS AccountPassword wasn't installed on the machine. This certificate might be in the certificates (local computer), or the provider type might be incorrect.
+You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS account password wasn't installed on the machine. This certificate might be in the certificates (local computer), or the provider type might be incorrect.
 
 To resolve the error, validate the credentials.json file. Verify that the text is correctly decrypted by entering the following command (on AOS1).
 
@@ -640,7 +641,7 @@ To see the new folders, you must close and reopen Event Viewer. To see additiona
 
 If you receive an error while you run AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. An example of a full path is **ax.d365ffo.onprem.contoso.com**.
 
-The error might also occur because of an issue with the asterisk (\*) certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.
+The error might also occur because of an issue with the star certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.
 
 ### Run the initialize database script, and validate that databases have correct users
 
@@ -807,7 +808,7 @@ In the right pane of Fiddler, notice that a horizontal divider separates the req
 1. In Fiddler, in the upper-right corner, select **Inspectors** \> **Raw**.
 2. In the lower-right corner, select **Cookies**.
 3. Do a search for **MSISAuth**.
-4. Select the row that has a result of **200** for ADFS host.
+4. Select the row that has a result of **200** for the AD FS host.
 5. Look above the row that you just selected to find a row that has a result of **302**. Select the row.
 
     You should see the AD FS URL, host, user name, and password. 
@@ -842,7 +843,7 @@ If you or other users experience sign-in issues, in Service Fabric Explorer, ver
 
 On each AOS machine, in Task Manager, select **AXService.exe**, and then select **End task**.
 
-To verify that a user has been reset, run the following **select** query in the SQL AXDB.
+To verify that a user has been reset, run the following **select** query in the AXDB SQL database.
 
 ```sql
 select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'admin'
@@ -927,7 +928,7 @@ If you must re-create the certificate by using the correct provider, follow thes
 
 ## An "Unable to find certificate" error occurs when you run Test-D365FOConfiguration.ps1
 
-If you receive an "Unable to find certificate" error when you run Test-D365FOConfiguration.ps1, check whether certificates or thumbprints are being combined for multiple purposes. For example, you will receive this error if the client and SessionAuthentication are combined. We recommend that you not combine certificates. For more information, see the certificate requirements, and check the acl.csv file for **domain.com\\user** versus **domain\\user** (for example, NETBIOS structure).
+If you receive an "Unable to find certificate" error when you run Test-D365FOConfiguration.ps1, check whether certificates or thumbprints are being combined for multiple purposes. For example, you will receive this error if the client certificate and the SessionAuthentication certificate are combined. We recommend that you not combine certificates. For more information, see the certificate requirements, and check the acl.csv file for **domain.com\\user** versus **domain\\user** (for example, NETBIOS structure).
 
 ## The client and server can't communicate because they don't have a common algorithm
 
@@ -1132,6 +1133,8 @@ If have only an on-premises project, you can't update the existing credential wi
 > CategoryInfo : InvalidOperation: (:) \[New-AzureRmADSpCredential\], Exception  
 > FullyQualifiedErrorId : Microsoft.Azure.Commands.ActiveDirectory.NewAzureADSpCredentialCommand
 
+Run the following PowerShell command to resolve the issue.
+
 ```powershell
 Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
 ```
@@ -1299,7 +1302,7 @@ To resolve this issue, follow these steps.
     2. Delete the **fabric:/Bootstrapper** application.
     3. Unprovision the **AXBootstrapperAppType** type.
 
-4.	Redeploy and retry from LCS.
+4.	Redeploy the environment from LCS.
 
 ## SQL Server 2016 service pack 2 is recommended for Reporting Services instances
 
