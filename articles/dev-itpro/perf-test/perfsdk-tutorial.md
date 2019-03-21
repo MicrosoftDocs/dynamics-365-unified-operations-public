@@ -37,7 +37,11 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic describes the Performance software development kit (SDK) and shows how to do multiuser testing via Microsoft Visual Studio Online. It also describes how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 
    > [!IMPORTANT]
-    > - Visual Studio 2019 will be the last version of Visual Studio to include load test features. We will be publishing recommendations for an alternative solution. For more information, see the [Test Tools section of the Preview Release Notes for Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview#test-tools). Azure DevOps load testing is being deprecated as well.
+   > Visual Studio 2019 will be the last version of Visual Studio with web performance and load test features. We will be publishing recommendations for an alternative solution.  
+   > - For our customers using the Visual Studio and Test Controller/Test Agent for on-premises load testing : Visual Studio 2019 will be the last Version, you can continue using it until the end of support cycle. 
+   > - For our customers using the cloud-based load testing service : the cloud-based load testing service will continue to run through March 31st, 2020. You can continue to use all the experiences powered by this service without interruption until then, alternatively you can switch to on-premise load testing. 
+   
+   > For more information, see the [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
 
 > [!NOTE]
 > You must have access the environment as an administrator. For more information, see [Access instances](../dev-tools/access-instances.md).
