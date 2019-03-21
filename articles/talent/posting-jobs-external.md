@@ -66,7 +66,7 @@ Recruiters and admins can post a job to Broadbean after activating it. You will 
 
 2. In **Postings**, select the **Post Now** button that corresponds to Broadbean. Follow the instructions in the pop-up window.
 
-Attract passes the following information to Attract:
+Attract passes the following information to Broadbean:
 
 - Req ID
 
