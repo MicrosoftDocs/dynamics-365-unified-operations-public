@@ -5,7 +5,7 @@ title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -86,7 +86,7 @@ The following table shows the POS views that currently support extensions. It al
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
 
 > [!NOTE]
-> In Show journal(lines grid) and Return transaction view we support custom columns using the row sub fields. These sub fields will be displayed as rows instead of columns like the info code messages or serial number or discounts values.
+> In Show journal (lines grid) and Return transaction view custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
 
 Filter extensions are also supported in **Show journal view** and **Search order views** to add custom filters. 
 
