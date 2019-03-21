@@ -53,7 +53,11 @@ The following table lists the available triggers and denotes whether they can be
 | PostLogOffTrigger         | Non-cancelable | Executed after the POS log off.                                                                                                      | 
 | PreLockTerminalTrigger    | Cancelable     | Executed before the POS register lock.  |
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
-| PostDeviceActivation      | Non-Cancelable | Executed after the POS activation.   | 
+| PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
+| PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
+| PreElevateUserTrigger      | Cancelable | Executed before the manager override.   | 
+| PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
+| PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 
 
 ## Cash management triggers
