@@ -57,6 +57,7 @@ The following overview shows the capabilities of Attract across the Attract and 
 | Job requisition approval flow                             | ​                    | :heavy_check_mark:                    |
 | Organization level hiring process template management​    | ​                    | :heavy_check_mark:                    |
 | Job posting to Attract career site​                       | ​                    | :heavy_check_mark:                    |
+| Job posting to external career sites​                     | ​                    | :heavy_check_mark:                    |
 | Candidate application flows through Attract career site   |                      | :heavy_check_mark:                    |
 | Candidate access to full profile and application history​ | ​                    | :heavy_check_mark:                    |
 | LinkedIn Recruiter connection​<sup>1</sup>                | ​                    | :heavy_check_mark:                    |
