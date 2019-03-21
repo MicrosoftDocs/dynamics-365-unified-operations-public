@@ -155,6 +155,8 @@ You can use the **Export** page to export data from Finance and Operations into 
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
+The same job can be used to export data from all companies as well. This feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Features flighted in data management and enabling flighted features](data-entities-data-packages.md)
+
 > [!NOTE]
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
 
@@ -179,10 +181,6 @@ The BYOD feature has the following limitations.
 
 #### There should be no active locks on your database during synchronization
 Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced from Finance and Operations. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
-
-#### Export data projects are specific to a single legal entity
-
-You can't create a single job to export data across multiple legal entities. When you create a data project to export data, the job exports data from the current legal entity. If you must export data from multiple legal entities, you must create multiple data projects by switching legal entities.
 
 #### You can't export composite entities into your own database
 
