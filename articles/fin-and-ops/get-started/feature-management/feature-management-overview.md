@@ -35,7 +35,7 @@ Features are added and updated in every release of Dynamics 365 for Finance and 
 
 ## Using the Feature management workspace
 
-The **Feature management** workspace is found in the Workspaces menu area or in the **Common** area page. Click on the workspace icon and you will see a page with a list of features for all releases that have been supported by the Feature management experience. We will be enhancing the Feature management experience over time to include additional functionality to help you manage features.
+The **Feature management** workspace is found in the Workspaces menu area or in the **Common** area page. Click on the workspace icon and you will see a page with a list of features for all releases that are supported by the Feature management experience. We will be enhancing the Feature management experience over time to include additional functionality to help you manage features.
 
 The feature management workspace contains a list of features and details pane. The feature list includes the following information:
 1) The **Feature name** describes the feature that was added
