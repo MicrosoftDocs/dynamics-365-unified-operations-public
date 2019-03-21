@@ -1,4 +1,4 @@
-  ---
+---
 # required metadata
 
 title: Not valuable fixed assets (NVFAs) for Russia
