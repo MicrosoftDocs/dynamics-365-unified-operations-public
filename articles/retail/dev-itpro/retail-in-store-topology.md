@@ -36,15 +36,15 @@ This topic provides a detailed overview of the various Dynamics 365 for Retail i
 
 The sections in this topic describe the following steps, which you must complete as shown to set up an environment with N-1 components. These steps assume that Retail headquarters is already deployed, and that a Microsoft Dynamics AX 2012 R3 environment is currently running.
 
-1. **[Supported capabilities and operations when connectivity is lost](#Supported-capabilities-and-operations-when-connectivity-is-lost)** – An overview of supported capabilities and operations in each of the Retail in store topologies when connectivity is lost.
-2. **[Supported deployement and maintenance capabilities](#Supported-deployement-and-maintenance-capabilities)** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
-3. **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in store topologies.
-4. **[Hardware and sofware requirements](#Hardware-and-sofware-requirements)** - An overview of the minimum hardware and software requirements to operate each of the Retail in store topologies.
-5. **[Maintenance tasks](#Maintenance-tasks)** - An overview of the maintenance tasks that are required to host and operate each of the Dynamics 365 for Retail in store topology.
+- **[Supported capabilities and operations when connectivity is lost](#Supported-capabilities-and-operations-when-connectivity-is-lost)** – An overview of supported capabilities and operations in each of the Retail in store topologies when connectivity is lost.
+- **[Supported deployement and maintenance capabilities](#Supported-deployement-and-maintenance-capabilities)** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
+- **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in store topologies.
+- **[Hardware and sofware requirements](#Hardware-and-sofware-requirements)** - An overview of the minimum hardware and software requirements to operate each of the Retail in store topologies.
+- **[Maintenance tasks](#Maintenance-tasks)** - An overview of the maintenance tasks that are required to host and operate each of the Dynamics 365 for Retail in store topology.
 
 
 ## High-level overview
-The following graphic provides a high-leverl overview of the Retail in-store topology.
+The following graphic provides a high-level overview of the Retail in-store topology.
 
 ![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)
 
