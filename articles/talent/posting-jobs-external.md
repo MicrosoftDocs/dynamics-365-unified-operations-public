@@ -58,11 +58,11 @@ Before you can post jobs to Broadbean, you must configure the Broadbean integrat
 
 ### Post a job to Broadbean
 
-After Broadbean is activated, recruiters and admins can post a job to it. You must have an apply URL for the job.
+After Broadbean has been turned on, recruiters and admins can post a job to it. You must have an apply URL for the job.
 
 1. In Attract, open the job that you want to post to Broadbean.
 2. In the **Postings** section, select the **Post Now** button that corresponds to Broadbean.
-3. Follow the instructions in the pop-up window.
+3. Follow the instructions in the Broadbean window.
 
 Attract passes the following information to Broadbean:
 
@@ -76,7 +76,7 @@ Attract passes the following information to Broadbean:
 After Broadbean successfully completes the posting, the **Postings** section of the job in Attract shows the Broadbean status as **Posted**.
 
 > [!NOTE]
-> - Broadbean requires the **Industry** field. Currently, this field is set to **IT** by default. However, you can change the value to the correct industry in the Broadbean job posting pop-up window.
+> - Broadbean requires the **Industry** field. Currently, this field is set to **IT** by default. However, you can change the value to the correct industry in the window for Broadbean job posting.
 > - It takes some time for Broadbean to finish posting your job to all the job boards that you selected. Therefore, there might be a slight delay before Attract provides a status update for the job.
 
 ### View a Broadbean job posting
@@ -93,8 +93,8 @@ The Broadbean job posting appears in a new window.
 You can update a Broadbean job posting in two ways.
 
 1. In Attract, open the job that you want to update.
-2. In the **Postings** section, select the **Update Post** button that corresponds to the Broadbean item.
-3. Edit the posting in the pop-up window.
+2. In the **Postings** section, select the **Update Post** button that corresponds to Broadbean.
+3. Edit the posting in the Broadbean window.
 
 –or–
 
