@@ -117,4 +117,4 @@ If you're having trouble posting a job to Broadbean, try these steps.
 
 1. Verify that the Broadbean credentials that you entered in Attract are valid and correct.
 2. If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).
-3. If the issue persists, contact [Microsoft support](./talent-support.md#talent--support-attract-and-onboard).
+3. If the issue persists, contact [Microsoft support](./talent-support.md#talent-support--attract-and-onboard).
