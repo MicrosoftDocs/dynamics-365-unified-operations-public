@@ -2,10 +2,10 @@
 # required metadata
 
 title: Bank foreign currency revaluation 
-description: This topic provides an overview of the bank foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
+description: This topic provides an overview of the bank foreign currency revaluation process. This includes setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
 author: mikefalkner
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,13 +20,13 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 62153
-ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
+# ms.custom: 
+# ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mikefalkner
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-03-08
+ms.dyn365.ops.version: 10.0
 
 ---
 
@@ -39,7 +39,7 @@ This topic provides an overview of the bank foreign currency revaluation process
 As part of a period-end, accounting conventions require bank account balances in foreign currencies to be revalued using different exchange rate types (current, historical, average, etc.). The bank foreign currency revaluation can be used to revalue one or more bank accounts. The feature is also a global feature, allowing you to revalue banks in a single page across all of the legal entities to which you have access.
 
 > [!NOTE]
-When you run the revaluation process, the balance in each bank account posted in a foreign currency will be revalued. The unrealized gain or loss transactions that are created during the revaluation process are system-generated. Two transactions might be created, one for the accounting currency and a second for the reporting currency, if relevant. Each accounting entry will post to the unrealized gain or loss and the main account being revalued.
+> When you run the revaluation process, the balance in each bank account posted in a foreign currency will be revalued. The unrealized gain or loss transactions that are created during the revaluation process are system-generated. Two transactions might be created, one for the accounting currency and a second for the reporting currency, if relevant. Each accounting entry will post to the unrealized gain or loss and the main account being revalued.
 
 ## Prepare to run foreign currency revaluation
 Before you run the revaluation process, the following setup is required.
@@ -62,7 +62,7 @@ You must enable the foreign currency revaluation feature before you can process 
 You must enable the feature for any legal entity that will use foreign currency revaluation. 
 
 > [!NOTE]
-If your legal entity uses a Russian, Polish, or Hungarian country code, you already have the ability to do bank foreign currency revaluation. You will not be able to use the foreign currency revaluation used by other countries. 
+> If your legal entity uses a Russian, Polish, or Hungarian country code, you already have the ability to do bank foreign currency revaluation. You will not be able to use the foreign currency revaluation used by other countries. 
 
 ## Process foreign currency revaluation
 After the setup is complete, use the **Foreign currency revaluation** page in **Cash and Bank Management** to revalue the balances of one or more bank accounts across all legal entities. You can run the process in real time or schedule it to run by using a batch. 
