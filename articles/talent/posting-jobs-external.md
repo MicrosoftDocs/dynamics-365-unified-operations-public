@@ -100,7 +100,7 @@ You can update a Broadbean job posting in two ways.
 
 1. In Attract, open the job that you want to view on Broadbean.
 2. In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.
-3. On the Broadbean page, edit the job details, and then repost the job. The job details in Attract aren't changed.
+3. In the Broadbean window, edit the job details, and then repost the job. The job details in Attract aren't changed.
 
 ### Remove a Broadbean job posting
 
