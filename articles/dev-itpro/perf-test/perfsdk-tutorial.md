@@ -3,9 +3,9 @@
 
 title: Performance SDK and multiuser testing via Visual Studio Online
 description: This topic introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. 
-author: jujoh
+author: hasaid
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9954
@@ -38,10 +38,10 @@ This topic describes the Performance software development kit (SDK) and shows ho
 
    > [!IMPORTANT]
    > Visual Studio 2019 will be the last version of Visual Studio with web performance and load test features. We will be publishing recommendations for an alternative solution.  
-   > - For our customers using the Visual Studio and Test Controller/Test Agent for on-premises load testing : Visual Studio 2019 will be the last Version, you can continue using it until the end of support cycle. 
-   > - For our customers using the cloud-based load testing service : the cloud-based load testing service will continue to run through March 31st, 2020. You can continue to use all the experiences powered by this service without interruption until then, alternatively you can switch to on-premise load testing. 
+   > - If you are using the Visual Studio and Test Controller/Test Agent for on-premises load testing, Visual Studio 2019 will be the last version. You can continue using it until the end of support cycle. 
+   > - If you are using the cloud-based load testing service, the cloud-based load testing service will continue to run through March 31st, 2020. Until then, you can continue to use all the experiences powered by this service without interruption. Alternatively, you can switch to on-premise load testing. 
    
-   > For more information, see the [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
+   > For more information, see [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
 
 > [!NOTE]
 > You must have access the environment as an administrator. For more information, see [Access instances](../dev-tools/access-instances.md).
