@@ -36,10 +36,10 @@ This topic provides an overview of the various Dynamics 365 for Retail in-store 
 
 The sections in this topic describe the requirements needed to set up an environment with N-1 components. These sections assume that Retail headquarters is already deployed, and that a Microsoft Dynamics AX 2012 R3 environment is currently running.
 
-- **[Supported capabilities and operations when connectivity is lost](#Supported-capabilities-and-operations-when-connectivity-is-lost)** – An overview of supported capabilities and operations in each of the Retail in-store topologies when connectivity is lost.
-- **[Supported deployment and maintenance capabilities](#Supported-deployement-and-maintenance-capabilities)** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
-- **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in-store topologies.
-- **[Hardware and software requirements](#Hardware-and-sofware-requirements)** - An overview of the minimum hardware and software requirements to operate each of the Retail in-store topologies.
+- **Supported capabilities and operations when connectivity is lost** – An overview of supported capabilities and operations in each of the Retail in-store topologies when connectivity is lost.
+- **Supported deployment and maintenance capabilities** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
+- **Deployed components** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in-store topologies.
+- **Hardware and software requirements** - An overview of the minimum hardware and software requirements to operate each of the Retail in-store topologies.
 - **[Maintenance tasks](#Maintenance-tasks)** - An overview of the maintenance tasks that are required to host and operate each of the Dynamics 365 for Retail in-store topologies.
 
 
@@ -57,9 +57,7 @@ The following graphic provides an overview of the Retail in-store topology.
 For a list of operations that are supported when the POS loses connectivity to the HQ, see [Online and offline point of sale (POS) operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-operations).
 
 ## Supported deployment and maintenance capabilities
-| Capability | Modern POS | Retail Store Scale Unit | 
-| --- | :-: | :-: |
-| Mass deployment | X<br>([Mass deployment of Retail self-service components](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)) | |
+Mass deployment is supported in Modern POS, but not in Retail Store Scale Unit. For more information, see [Mass deployment of Retail self-service components](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment))
 
 ## Deployed components
 The following components are deployed through a single installer. This means that they do not need to be installed individually.
