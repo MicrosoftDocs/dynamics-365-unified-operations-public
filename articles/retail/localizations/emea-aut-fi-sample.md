@@ -51,7 +51,7 @@ The following scenarios are covered by the fiscal registration service integrati
 
 - Registration of gift card operations and customer deposits as non-cash transactions in the fiscal register service:
 
-    - Issue or add value to a gift card.
+    - Issue or add money to a gift card.
     - Register a customer account deposit.
     - Register a customer order deposit.
 
