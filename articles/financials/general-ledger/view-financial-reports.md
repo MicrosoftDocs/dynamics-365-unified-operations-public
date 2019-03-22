@@ -50,12 +50,11 @@ Financial reports can include multiple levels of detail. The financial level is 
 If the data is budget data, you can choose to open budget account entries. To close any of the levels of the report and return where you started, you can either press the Esc key or click the **Close** button (**X**) in the upper right.
 
 ## Change report options
-You can change the report date, apply attribute and dimension filters, or change the budget scenario on an **Actual versus budget** report. On the Action Pane, click **Report options**, and then follow one or more of these steps:
+You can apply attribute and dimension filters, or change the budget scenario on an **Actual versus budget** report. On the Action Pane, click **Report options**, and then follow one or more of these steps:
 
--   To change the base period and base year of a report, select a base period and a base year, and then click **OK**.
 -   To apply attribute filters to a report, select **Add an attribute filter**. Select the attribute, type the attribute value, and then click **OK**. For example, if you select the **Account Category** attribute, enter **SALES** as the attribute value. To remove an attribute filter, click **Clear**.
 -   To apply dimension filters to a report, select **Add a dimension filter**. Select the dimension, and then either type the dimension ID or select the dimension in the list. To remove a dimension filter, click **Clear**.
--   To change the scenario on an **Actual versus budget** report, select a new scenario, and then click **OK**. If the selected scenario is for a different year, be sure to update the base year. For example, if the current scenario is for FY2015, and you select a new scenario that is for FY2016, you should change the base year to **2016**.
+-   To change the scenario on an **Actual versus budget** report, select a new scenario, and then click **OK**. If the selected scenario is for a different fiscal year, there will not be any results returned. For example, report was generated for FY2015 and the current scenario is for FY2015 and the new scenario selected is for FY2016, no results will be returned. If a new scenario for a different fiscal year is needed, generate a new version of the report for the fiscal year related to the scenario.
 
 When you click **OK**, all the options that you selected are applied to the report. If you decide that you don't want to apply the selected options, click **Cancel**.
 
