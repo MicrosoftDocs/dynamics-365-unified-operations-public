@@ -26,7 +26,7 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Application business events
+# Use cases for business events
 
 [!include[banner](../includes/banner.md)]
 [!include[preview-banner](../includes/preview-banner.md)]
