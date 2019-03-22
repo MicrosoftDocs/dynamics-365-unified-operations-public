@@ -227,5 +227,5 @@ To enable manual execution of a postponed fiscal registration, you should add a 
 - On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
 
     1. Select the layout to update.
-    2. Add a new button, and set the **Complete fiscal registration process** property.
+    2. Add a new button, and set the **Complete fiscal registration process** button property.
     3. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
