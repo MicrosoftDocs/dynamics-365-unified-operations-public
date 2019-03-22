@@ -62,8 +62,7 @@ The following template is used to synchronize records from Talent to Finance and
 (Finance and Operations) is on the right.
 
 The following underlying tasks are used to synchronize records from Talent to Finance and Operations.
-- Job Functions to Compensation Job Function.
-- Departments to Operating Unit
+- Job Functions to Compensation Job Function
 - Departments to Operating Unit
 - Job Types to Compensation Job Type
 - Jobs to Jobs
@@ -76,6 +75,42 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 - Employments to Employment Detail
 - Position Worker Assignment to Position Worker Assignments
 - Worker Addresses to Worker Postal Address V2
+
+## Template mappings
+
+### Job Functions to Compensation Job Function
+
+| CDS entity (source)                 | Finance and Operations entity (destination) |
+|-------------------------------------|---------------------------------------------|
+| cdm_name [cdm_Job   Function Name]  | JOBFUNCTIONID   [JOBFUNCTIONID]             |
+| cdm_description   [cdm_description] | DESCRIPTION   [DESCRIPTION]                 |
+
+### Departments to Operating Unit
+
+| CDS entity (source)                           | Finance and Operations entity (destination) |
+|-----------------------------------------------|---------------------------------------------|
+| cdm_name [cdm_name]                           | NAME [NAME]                                 |
+| cdm_departmentnumber   [cdm_departmentnumber] | OPERATINGUNITNUMBER   [OPERATINGUNITNUMBER] |
+|                                               | OPERATINGUNITTYPE   [OPERATINGUNITTYPE]     |
+| cdm_description   [cdm_description]           | NAMEALIAS   [NAMEALIAS]                     |
+
+### Job Types to Compensation Job Type
+
+| CDS entity (source)                   | Finance and Operations entity (destination) |
+|---------------------------------------|---------------------------------------------|
+| cdm_name [cdm_name]                   | JOBTYPEID   [JOBTYPEID]                     |
+| cdm_description   [cdm_description]   | DESCRIPTION   [DESCRIPTION]                 |
+| cdm_exemptstatus   [cdm_exemptstatus] | EXEMPTSTATUS   [EXEMPTSTATUS]               |
+
+### Jobs to Jobs
+
+| CDS entity (source)                                           | Finance and Operations entity (destination)           |
+|---------------------------------------------------------------|-------------------------------------------------------|
+| cdm_name [cdm_name]                                           | JOBID [JOBID]                                         |
+| cdm_maximumnumberofpositions   [cdm_maximumnumberofpositions] | MAXIMUMNUMBEROFPOSITIONS   [MAXIMUMNUMBEROFPOSITIONS] |
+| cdm_allowedunlimitedpositions   [cdm_allowunlimitedpositions} | ALLOWUNLIMITEDPOSITIONS   [ALLOWUNLIMITEDPOSITIONS]   |
+| cdm_description   [cdm_description]                           | DESCRIPTION   [DESCRIPTION]                           |
+| cdm_jobdescription   [cdm_jobdescription]                     | JOBDESCRIPTION   [JOBDESCRIPTIONS]                    |
 
 ## Integration considerations
 When integrating data from Talent to Finance and Operations, the integration will attempt to match records based on the ID. If the match
