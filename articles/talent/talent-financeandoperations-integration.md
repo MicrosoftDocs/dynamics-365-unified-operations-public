@@ -68,7 +68,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 - Jobs to Jobs
 - Jobs to Job Detail
 - Position Types to Position Type
-- Job Positions to  Base Position
+- Job Positions to Base Position
 - Job Positions to Position Details
 - Job Positions to Position Durations
 - Job Positions to Position Hiearchies
