@@ -167,43 +167,19 @@ either create a new profile or review the information in their existing profile.
 Candidates can also upload a resume, as required, and then submit the job
 application.
 
-### Apply with LinkedIn profile
+### Enable applying for jobs with LinkedIn profiles
 
->   [!NOTE] You LinkedIn Recruiter seats to be able to use “Apply with Linked”
->   feature within Attract.
+You can make it easy for candidates to apply for your positions by configuring Attract to allow them to apply through LinkedIn.
 
-Candidates can apply using their existing LinkedIn profile data, once the
-following setup is completed by the Talent administrator. If a candidate is not
-logged into LinkedIn already, he/she would see the “Sign in with LinkedIn”
-button. Once the candidate is logged into LinkedIn, he/she would see the “Apply
-with LinkedIn” button. Once this button is clicked, their LinkedIn profile
-replaces the existing profile data, if shown in the application page. The
-candidate can now make any final changes as desired to their profile to tailor
-to the job he/she is applying to and them submit the application.
+> [!NOTE] 
+> You need to have one or more recruiter licenses from LinkedIn before you can allow candidates to apply with LinkedIn.
 
->   [!NOTE] Once the application is submitted, the candidate’s existing profile
->   is replaced with the profile obtained from LinkedIn. The candidate does have
->   an option to hit back button or close the window to reverse this action
->   before the application is submitted.
+1. Sign in to Attract as an admin.
+2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
+3. Select the **LinkedIn Integration** tab and connect with a LinkedIn recruiter account.
+4. In the **LinkedIn Recruiter System Connect Integration** section, select **Enabled** for the **Apply with LinkedIn** setting.
 
-Candidates can apply using their existing LinkedIn profile data, using the
-“Apply with LinkedIn” button once the following setup is completed by the Talent
-administrator. If a candidate applies using the “Apply with LinkedIn” button,
-he/she is asked to authenticate with LinkedIn if not already logged in. Once
-authenticated, their LinkedIn profile replaces any existing profile data shown
-in the application page. The candidate can now make edits ,if needed, to tailor
-their profile to the job they are applying for and then submit the application.
-If a candidate navigates out of this page without applying to the job, the
-profile data is not updated.
-
-Setup Experience: To turn the “Apply with LinkedIn” option for candidates, sign
-in to Attract as an administrator, select **Admin center** on the **Settings**
-menu (the gear symbol), and then select the **LinkedIn Integration** tab.
-Connect with a LinkedIn recruiter account, if you have not already done so. In
-the LinkedIn settings widget that is displayed under the **LinkedIn Recruiter
-System Connect Integration** section, mark the setting marked as **Apply with
-LinkedIn** as **Enabled**
-
+After you've enabled the setting, candidates can apply using their existing LinkedIn profile data. When candidates apply by choosing the **Apply with LinkedIn** button, they are asked to authenticate with LinkedIn if they're not already signed in. Once they've authenticated, their LinkedIn profile replaces any existing profile data shown in the application page. Candidates can edit the information as needed and then submit the application. If a candidate navigates away from the page without applying for the job, their profile data is not updated in Attract.
 
 ## Check application status
 
