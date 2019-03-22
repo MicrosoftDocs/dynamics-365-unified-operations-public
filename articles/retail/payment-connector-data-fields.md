@@ -31,21 +31,25 @@ ms.dyn365.ops.version: AX 8.1.2
 ---
 
 # Dynamics 365 payment data use
+
 This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
 
 ## Key terms
+
 | Term | Description |
-| --- | --- |
+|---|---|
 | Card present | The term *card present* describes the use of a payment connector to process transactions where a physical card is present, such as at a point of sale (POS) register. |
 | Card not present | The term *card not present* describes the use of a payment connector to process transactions where a physical card isn't present, such as in call center or e-Commerce scenarios. |
 
 ## Overview
+
 This topic provides specific details about the following areas with respect to data that is managed by the payment connectors:
 
 - **[Data used in card-present scenarios](#Data-used-in-card-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-present scenarios.
 - **[Data used in card-not-present scenarios](#Data-used-in-card-not-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-not-present scenarios.
 
 ## Data used in card-present scenarios
+
 This section describes all data points that are sent to the payment connector for card-present scenarios. The payment connect might not use the data.
 
 ### Payment connector request-specific data
@@ -53,84 +57,75 @@ This section describes all data points that are sent to the payment connector fo
 #### BeginTransactionPaymentTerminalDeviceRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the Microsoft Dynamics 365 for Finance and Operations client. |
 | invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
-
 
 #### UpdateLineItemsPaymentTerminalDeviceRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | totalAmount | The total amount on the current sales transaction. |
 | taxAmount | The tax amount on the current sales transaction. | 
 | discountAmount | The discount amount on the current sales transaction. |
 | subTotalAmount | The subtotal amount on the current sales transaction. |
 | items | The list of product-specific details, such as product names, quantities, or units of measure. |
 
-
 #### AuthorizePaymentTerminalDeviceRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | amount | The amount to authorize. |
 | currency | The currency for the amount to authorize. |
 | voiceAuthorization | The voice approval code that is sent from the POS if voice authorization is required. |
 
-
 #### CapturePaymentTerminalDeviceRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | amount | The amount to capture. |
 | currency | The currency for the amount to capture. |
 | paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#Payment-SDK-data) section later in this topic. |
 
-
 #### VoidPaymentTerminalDeviceRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | amount | The amount of the payment to void. |
 | currency | The currency for the payment to void. |
 | paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#Payment-SDK-data) section later in this topic. |
 
-
 #### RefundPaymentTerminalDeviceRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | amount | The amount to refund. |
 | currency | The currency for the amount to refund. |
-
 
 #### ActivateGiftCardPaymentTerminalRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | amount | The initial amount to add to the gift card during activation. |
 | currency | The currency for the initial amount to add to the gift card during activation. |
-
 
 #### AddBalanceToGiftCardPaymentTerminalRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | amount | The amount to add to the gift card balance. |
 | currency | The currency for the amount to add to the gift card balance. |
-
 
 #### GetGiftCardBalancePaymentTerminalRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | currency | The currency to retrieve the gift card balance in. |
-
 
 #### GetPrivateTenderPaymentTerminalDeviceRequest
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | amount | The amount that is set on the POS. (Typically, this variable is used to show the amount on the payment terminal when the card number is retrieved.) |
 
 ### Shared data
@@ -138,7 +133,7 @@ This section describes all data points that are sent to the payment connector fo
 #### Payment SDK data
 
 | Field | Description |
-| --- | --- |
+|---|---|
 | ApprovedAmount | The amount that was approved for the transaction. |
 | AvailableBalance | The available balance on the card. |
 | ApprovalCode | The approval code for the transaction. |
@@ -148,6 +143,7 @@ This section describes all data points that are sent to the payment connector fo
 | TerminalId | The unique identifier of the terminal that handled the payment. |
  
 ## Data used in card-not-present scenarios
+
 This section describes data that is sent to the payment connector for card-not-present scenarios. The specific data that each connector processes varies, and a given connector might not use all the data that is provided.
 
 ### Payment connector method–specific data
@@ -155,7 +151,7 @@ This section describes data that is sent to the payment connector for card-not-p
 #### Authorization
 
 | Namespace | Field | Description |
-| --- | --- | --- |
+|---|---|---|
 | MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. | 
 | PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
@@ -173,22 +169,20 @@ This section describes data that is sent to the payment connector for card-not-p
 | PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#L2-data) section later in this topic. |
 | PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#L3-data) section later in this topic. |
 
-
 #### Capture
 
 | Namespace | Field | Description |
-| --- | --- | --- |
+|---|---|---|
 | MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#L2-data) section later in this topic. |
 | PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#L3-data) section later in this topic. |
 
-
 #### Void
 
 | Namespace | Field | Description |
-| --- | --- | --- |
+|---|---|---|
 | MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
@@ -196,7 +190,7 @@ This section describes data that is sent to the payment connector for card-not-p
 #### Refund
 
 | Namespace | Field | Description |
-| --- | --- | --- |
+|---|---|---|
 | MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. | 
 | PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
@@ -217,7 +211,7 @@ This section describes data that is sent to the payment connector for card-not-p
 #### GetPaymentAcceptPoint 
 
 | Namespace | Field | Description |
-| --- | --- | --- |
+|---|---|---|
 | MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
 | PaymentCard | Name | The name of the cardholder. |
 | PaymentCard | StreetAddress | The street of the billing address that is associated with the card that is used for the payment. |
@@ -231,15 +225,15 @@ This section describes data that is sent to the payment connector for card-not-p
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | TransactionData | TerminalId | The unique identifier of the terminal where the transaction occurred. |
 
-
 ### Shared data
 
 #### L2 data
+
 > [!NOTE]
 > L2 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Finance and Operations client.
 
 | Namespace | Field | Description |
-| --- | --- | --- |
+|---|---|---|
 | L2Data | OrderDateTime | The date and time when the order occurred. |
 | L2Data | OrderNumber | The order number that is associated with the order. |
 | L2Data | InvoiceDateTime | The date and time when the order was invoiced. |
@@ -253,12 +247,12 @@ This section describes data that is sent to the payment connector for card-not-p
 | L2Data | PurchaserTaxId | The unique tax identifier of the purchaser. |
 | L2Data | ShipToCity | The city of the shipping address. |
 | L2Data | ShipToCounty	| The county of the shipping address. |
-| L2Data | ShipToState_ProvinceCode | The state or province code of the shipping address. |
+| L2Data | ShipToState\_ProvinceCode | The state or province code of the shipping address. |
 | L2Data | ShipToPostalCode | The postal code of the shipping address. |
 | L2Data | ShipToCountryCode | The country or region code of the shipping address. |
 | L2Data | ShipFromCity | The city of the address that the order is shipped from. |
 | L2Data | ShipFromCounty | The county of the address that the order is shipped from. |
-| L2Data | ShipFromState_ProvinceCode | The state or province code of the address that the order is shipped from. |
+| L2Data | ShipFromState\_ProvinceCode | The state or province code of the address that the order is shipped from. |
 | L2Data | ShipFromPostalCode | The postal code of the address that the order is shipped from. |
 | L2Data | ShipFromCountryCode | The country or region code of the address that the order is shipped from. |
 | L2Data | DiscountAmount | The discount amount that is applied to the specific line item part of the order. |
@@ -286,19 +280,20 @@ This section describes data that is sent to the payment connector for card-not-p
 | L2Data | AmexLegacyDescription2 | Legacy American Express description field 2. |
 | L2Data | AmexLegacyDescription3 | Legacy American Express description field 3. |
 | L2Data | AmexLegacyDescription4 | Legacy American Express description field 4. |
-| L2Data | TaxDetails[].TaxRate | The list of individual tax rates that are applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxDescription | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxAmount | The list of individual tax amounts that are applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxTypeIdentifier | The list of type identifiers of the taxes that are applied to the specific line item part of the order. |
-| L2Data | MiscellaneousCharges[].ChargeType | The list of charge types that are applied to the specific line item part of the order. |
-| L2Data | MiscellaneousCharges[].ChargeAmount | The list of charge amounts that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails\[\].TaxRate | The list of individual tax rates that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails\[\].TaxDescription | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails\[\].TaxAmount | The list of individual tax amounts that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails\[\].TaxTypeIdentifier | The list of type identifiers of the taxes that are applied to the specific line item part of the order. |
+| L2Data | MiscellaneousCharges\[\].ChargeType | The list of charge types that are applied to the specific line item part of the order. |
+| L2Data | MiscellaneousCharges\[\].ChargeAmount | The list of charge amounts that are applied to the specific line item part of the order. |
 
 #### L3 data
+
 > [!NOTE]
 > L3 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Finance and Operations client.
 
 | Namespace | Field | Description |
-| --- | --- | --- |
+|---|---|---|
 | L3Data | SequenceNumber | The sequence number of the item for the order. |
 | L3Data | CommodityCode | The commodity code that is associated with the product. |
 | L3Data | ProductCode | The unique code of the product. | 
@@ -332,13 +327,13 @@ This section describes data that is sent to the payment connector for card-not-p
 | L3Data | PickupRecordNumber | The record number of the pickup. |
 | L3Data | CarrierShipmentNumber | The shipment number of the carrier. |
 | L3Data | UNSPSCCode | The United Nations Standard Products and Services Code (UNSPSC). |
-| L2Data | TaxDetails[].TaxRate | The list of individual tax rates that are applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxDescription | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
-| L2Data | TaxDetails[].TaxAmount | The list of individual tax amounts that are applied to the specific line item part of the order. |
-| L3Data | TaxDetails[].TaxTypeIdentifier | The list of type identifiers of the taxes that are applied to the specific line item part of the order. |
-| L3Data | MiscellaneousCharges[].ChargeType | The list of charge types that are applied to the specific line item part of the order. |
-| L3Data | MiscellaneousCharges[].ChargeAmount | The list of charge amounts that are applied to the specific line item part of the order. |
-
+| L2Data | TaxDetails\[\].TaxRate | The list of individual tax rates that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails\[\].TaxDescription | The list of individual descriptions of the taxes that are applied to the specific line item part of the order. |
+| L2Data | TaxDetails\[\].TaxAmount | The list of individual tax amounts that are applied to the specific line item part of the order. |
+| L3Data | TaxDetails\[\].TaxTypeIdentifier | The list of type identifiers of the taxes that are applied to the specific line item part of the order. |
+| L3Data | MiscellaneousCharges\[\].ChargeType | The list of charge types that are applied to the specific line item part of the order. |
+| L3Data | MiscellaneousCharges\[\].ChargeAmount | The list of charge amounts that are applied to the specific line item part of the order. |
 
 ## Related topics
-**[Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This topic describes how to create a custom payment connector.
+
+- **[Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This topic describes how to create a custom payment connector.

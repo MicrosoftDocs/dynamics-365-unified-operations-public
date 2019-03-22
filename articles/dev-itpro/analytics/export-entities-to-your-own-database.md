@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,7 +62,7 @@ As a customer of Finance and Operations, you can use either Entity store or BYOD
 
 Before you can configure the entity export option and use the BYOD feature, you must create a SQL database by using Azure portal.
 
-For one-box development environments, you can create a database in the local Microsoft SQL Server database. However, this database should be used only for development and testing purposes. For production environments, you must create a SQL database.
+For one-box development environments, you can create a database in the local Microsoft SQL Server database. However, this database should be used only for development and testing purposes. For production environments, you must create an Azure SQL database.
 
 You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
@@ -120,7 +120,7 @@ The **Compare source names** option lets you compare the entity schema in the de
 
 #### Configure change tracking
 
-Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions in Finance and Operations.
+Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions in Finance and Operations. However, because Finance and Operations must track changes at the data entity level, there is additional logic on top of SQL change tracking to make this functionality work. The steps to enable change tracking are explained later in this section.
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
@@ -134,7 +134,7 @@ The following table describes the change tracking options that are available.
 | Enable entire entity | Select this option to track all changes to the entity. (These changes include changes to all the tables that make up the entity.) When changes are made to the entity, corresponding updates are made to the destination. |
 | Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the entities that will be exported were built by using a hierarchy of nested views. For more information, see [Enable change tracking for an entity by using a custom query](../data-entities/entity-change-track.md). |
 
-For the change tracking functionality to work, you must enable the **Change tracking** option in the Finance and Operations database. This option is enabled by default.
+To use change tracking, you must enable the **Change tracking** option as shown above in data management. This action is available on the **Data entities** list page, by going to **Data management > Data entities**. You need to select an entity and select from one of the options listed above to enable change tracking on the data entity.
 
 If you republish an entity that exists in the destination database, the system warns you that existing data will be deleted because of the new operation.
 
@@ -154,6 +154,8 @@ You can use the **Export** page to export data from Finance and Operations into 
 ![Export page](media/091eb0da74bf94c620c3785bca92b41e.png)
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
+
+The same job can also be used to export data from all companies. This feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md).
 
 > [!NOTE]
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
@@ -179,10 +181,6 @@ The BYOD feature has the following limitations.
 
 #### There should be no active locks on your database during synchronization
 Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced from Finance and Operations. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
-
-#### Export data projects are specific to a single legal entity
-
-You can't create a single job to export data across multiple legal entities. When you create a data project to export data, the job exports data from the current legal entity. If you must export data from multiple legal entities, you must create multiple data projects by switching legal entities.
 
 #### You can't export composite entities into your own database
 

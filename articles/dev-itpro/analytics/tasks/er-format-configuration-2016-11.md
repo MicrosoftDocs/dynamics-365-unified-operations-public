@@ -38,8 +38,10 @@ The following steps explain how a user in the System Administrator or Electronic
 2. Click **Reporting configurations**.
 3. In the tree, select **Payments (simplified model)**.
 4. Click **Create configuration** to open the drop dialog.
+
  > [!NOTE]
  > If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page. 
+ 
 5. In the **New** field, enter **Format based on data model PaymentModel**.
 6. In the **Name** field, type **BACS (UK fictitious)**.
 7. In the **Description** field, type **BACS vendor payment format (UK fictitious)**.
@@ -47,9 +49,6 @@ The following steps explain how a user in the System Administrator or Electronic
     * A particular format of electronic document can be defined. Leave this field blank if you want to select a format at run-time.  
 8. In the **Data model definition** field, enter or select a value.
 9. Click **Create configuration**. A new configuration has been created. The draft version can be used to store the design format for managing electronic documents.  
- > [!NOTE]
- > If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.
-
 
 ## Design the format of an electronic document
 1. Click **Designer**.

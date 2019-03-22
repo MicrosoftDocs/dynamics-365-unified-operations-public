@@ -3,7 +3,7 @@
 
 title: Source candidates by using talent pools
 description: This topic explains how to create and set up talent pools in Attract.
-author: 
+author: andreabichsel
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
 

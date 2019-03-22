@@ -5,7 +5,7 @@ title: Development and build VMs that don't allow admin access FAQ
 description: This topic provides answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
-ms.date: 05/03/2018
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,10 +41,10 @@ Whenever possible, use Microsoft Dynamics Lifecyle Services (LCS) to install a d
 For more information about how to install a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).
 
 ## Is the Finance and Operations website accessible when Visual Studio isn't running?
-Yes, you can access the Microsoft Dynamics 365 for Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps guarantee that you can remotely access the Application Object Server (AOS) instance and the Finance and Operations website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
+Yes, you can access the Microsoft Dynamics 365 for Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps to ensure that you can remotely access the Application Object Server (AOS) instance and the Finance and Operations website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
 
 ## What about the other services?
-You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, Financial reporting (formerly Management Reporter), and IIS. (For IIS, you must restart the World Wide Web Publishing Service service because you can't use iisreset.exe.)
+You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, Financial reporting (formerly Management Reporter), and IIS. (For IIS, you must restart the World Wide Web Publishing Service because you can't use iisreset.exe.)
 
 ## Can I clean up the service volume drive?
 Yes, you have full access to the service volume drive. Therefore, you can clean up the monitoring data, and so on.
@@ -75,6 +75,15 @@ No, you can't run Windows PowerShell commands and commands at a prompt command a
 ## Is the Trace Parser supported?
 Trace Parser currently requires the user to be an administrator.
 
+## Is the Admin user provisioning tool supported?
+The **Admin user provisioning** tool currently requires the user to be an administrator. The **Admin user provisioning** tool is typically used to change the tenant of the environment, but that should not be necessary. You can update the sign in information in the database for the Admin user or any other user. You only need the SID and network alias (email address) from a user that can access the environment or another environment on the same tenant. In many cases, the SID and network alias can be found in the database that came with the environment originally. Run the following commands to get the good SID and network alias from the source environment and update them in the target environment, respectively.
+
+    -- get value from source env.
+    select ID, SID, NETWORKALIAS from USERINFO where ID = 'Admin'
+
+    -- update value in target env.
+    update USERINFO set SID = 'new_SID', NETWORKALIAS = 'new_NetworkAlias' where ID = 'Admin'
+
 ## Can the system be put into maintenance mode?
 You can put the system into maintenance mode to change the license configuration. However, the procedure that is described in [Maintenance mode](maintenance-mode.md) isn't supported. Self-service support for maintenance mode in all environments will be added to LCS in the future. Until this support is available in LCS, you can follow these steps to put a system into maintenance mode.
 
@@ -85,7 +94,7 @@ You can put the system into maintenance mode to change the license configuration
     update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
     ```
 
-3. Restart the **World Wide Web Publishing Service** service to reset IIS.
+3. Restart the **World Wide Web Publishing Service** to reset IIS.
 
     After the service is restarted, the system will be in maintenance mode.
 

@@ -4,36 +4,54 @@
   - name: Get started
     href: talent-get-started.md
     items:
-    - name: What's new or changed
+    - name: What's new or changed in Talent
       href: whats-new.md
       items:
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
+      - name: March 14, 2019     
+        href: whats-new-talent-march-14.md     
+      - name: March 5, 2019     
+        href: whats-new-talent-march-5.md
+      - name: February 27, 2019     
+        href: whats-new-talent-feb-27.md      
+      - name: February 14, 2019     
+        href: whats-new-talent-feb14.md
+      - name: February 7, 2019     
+        href: whats-new-talent-february-7.md
+      - name: January 31, 2019      
+        href: whats-new-talent-january-29.md
+      - name: January 23, 2019      
+        href: whats-new-talent-january-23.md
+      - name: January 17, 2019
+        href: whats-new-talent-january-17.md
+      - name: January 11, 2019
+        href: whats-new-talent-january-11.md  
+      - name: December 14, 2018
         href: whats-new-talent-december-14.md 
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (December 6, 2018)
+      - name: December 6, 2018
         href: whats-new-talent-december-6.md 
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (November 27, 2018)
+      - name: November 27, 2018
         href: whats-new-talent-november-27.md            
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (November 15, 2018)
+      - name: November 15, 2018
         href: whats-new-talent-november-15.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)
+      - name: October 31, 2018
         href: whats-new-talent-october-31.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 19, 2018)
+      - name: October 19, 2018
         href: whats-new-talent-october-19.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 15, 2018)
+      - name: October 15, 2018
         href: whats-new-talent-october-11.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 8, 2018)
+      - name: October 8, 2018
         href: whats-new-talent-october-8.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 1, 2018)
+      - name: October 1, 2018
         href: whats-new-talent-october-01.md 
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)
+      - name: September 24, 2018
         href: whats-new-talent-september-24.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
+      - name: September 17, 2018
         href: whats-new-talent-september-17-2018.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
+      - name: September 10, 2018
         href: whats-new-talent-september-10.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
+      - name: August 2018
         href: whats-new-talent-august2018.md
-      - name: What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
+      - name: July 2018
         href: whats-new-talent-july2018.md
     - name: System requirements and update policy
       href: talent-versions-update-policy.md
@@ -47,12 +65,8 @@
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR and Common Data Service for Apps
       href: CoreHREntities.md
-    - name: Integrations
-      href: talent-financeandoperations-integration.md
     - name: Access preview features
       href: access-preview-feature.md
-    - name: Configure the payroll integration between Talent and Dayforce
-      href: configure-payroll-integration.md
     - name: Get support for Talent
       href: talent-support.md
   - name: Organize your workforce by using departments, jobs, and positions
@@ -75,6 +89,8 @@
   - name: Manage leave and absence
     href: leave-absence-overview.md
     items:
+    - name: Leave and absence concepts
+      href: leave-absence-concepts.md
     - name: Accrue time off based on hours worked
       href: leave-accrue-hours-worked.md
     - name: Working time calendars
@@ -87,12 +103,16 @@
       href: Process-templates-Attract.md
     - name: Creating, approving, and posting jobs in Attract
       href: Creating-jobs-Attract.md
+    - name: Posting jobs to external sites from Attract
+      href: posting-jobs-external.md
     - name: Sourcing with Talent Pools
       href: attract-talent-pools.md
     - name: Sourcing with LinkedIn Recruiter
       href: attract-linked-in-recruiter.md
     - name: Hiring Process activities in Attract 
       href: activities-attract.md
+    - name: Interview scheduling and feedback
+      href: interview-scheduling-feedback.md
     - name: Extensibility
       href: extensibility-attract.md
     - name: Career site and candidate experiences
@@ -111,6 +131,8 @@
       href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
+    - name: Attract comprehensive hiring add-on capabilities
+      href: attract-comprehensive-hiring.md
   - name: Motivate employees
     items:
     - name: Compensation plans
@@ -172,6 +194,24 @@
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Publish a mobile workspace
       href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+  - name: Integration
+    items:
+    - name: Integrate to Dynamics 365 for Finance and Operations
+      href: talent-financeandoperations-integration.md
+    - name: Configure the payroll integration between Talent and Dayforce
+      href: configure-payroll-integration.md
+    - name: Data integration guidance for Dynamics 365 for Talent
+      href: data-integration.md
+    - name: Integration FAQ
+      href: talent-fo-integration.md
+    - name: Recurring data export using Azure Logic apps
+      href: tutorial-integration-recurring-export.md
+  - name: Extensibility
+    items:
+    - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
+      href: extensibility-examples.md
+    - name: Extensibility in Attract
+      href: extensibility-attract.md
   - name: Office integration
     items:
     - name: Office integration tutorial
@@ -297,5 +337,7 @@
       href: user-access-core-hr.md
     - name: Reporting options in Talent
       href: talent-reporting-options.md
-  
-  
+    - name: Integration FAQ
+      href: talent-FO-integration.md
+    - name: Azure Active Directory users not found in People Picker
+      href: people-picker-user-not-found.md   

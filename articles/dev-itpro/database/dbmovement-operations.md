@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Database Movement operations
-description: This topic describes the operations available as part of the Database Movement features in Lifecycle Services. 
+title: Database movement operations home page
+description: This topic provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -29,42 +28,28 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Database Movement operations
+# Database movement operations home page
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/private-preview-banner.md)]
+Database movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  These actions provide structured processes for common implementation scenarios such as golden configuration promotion, debugging/diagnostics, destructive testing, and general refresh for training purposes.
 
-This topic describes the operations that are available as part of the Database Movement features in Lifecycle Services (LCS).  
+In this topic, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
 
-## Sandbox refresh
-When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.  These elements include:
-* Email addresses in the LogisticsElectronicAddress table.
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-* SMTP password in the SysEmailSMTPPassword table.
-* SMTP Relay server in the SysEmailParameters table.
-* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
-* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table.
-* All users except for the administrator are disabled.
-* All batch jobs are set to Withhold status.
+## Database movement quick start guides
+Learn how to perform the individual operations on your Standard or Premier Acceptance Test environments:
+ * [Refresh database](database-refresh.md)
+ * [Export a database](export-database.md)
+ * [Import a database](import-database.md)
+ * [Database point-in-time restore (PITR)](database-point-in-time-restore.md)
 
-## Import
-When importing a database backup in to a sandbox environment, there are certain activities which must be performed.  These include:
-* Ensure email capabilities are properly reconfigured or disabled, per your requirements.
-* AOS servers are added back to required batch groups.
-* System Help and Task guides are reconnected.
-* Batch jobs are set to Waiting status.
-* Users are re-enabled.
-
-## Export
-When exporting a database backup from an environment, there are certain elements of the database that are not exported in the backup file.  These elements include:
-* Email addresses in the LogisticsElectronicAddress table.
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-* SMTP password in the SysEmailSMTPPassword table.
-* SMTP Relay server in the SysEmailParameters table.
-* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
-* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table.
-* All users except for the administrator are disabled.
-* All batch jobs are set to Withhold status.
+ ## Step-by-step tutorials
+ Learn how to achieve common implementation scenarios using DataALM to your advantage:
+ * [Refresh for training purposes](dbmovement-scenario-general-refresh.md)
+ * [Debug a copy of the production database](dbmovement-scenario-debugdiag.md)
+ * [Export a copy of the Standard User Acceptance Test (UAT) database](dbmovement-scenario-exportuat.md)
+ * [Golden configuration promotion](dbmovement-scenario-goldenconfig.md)
+ * [Destructive testing](dbmovement-scenario-destructivetests.md)
+ 
+ > [!IMPORTANT]
+ > New features around point-in-time restore, and RESTful APIs are in private preview. To sign up for the private preview program, please [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).

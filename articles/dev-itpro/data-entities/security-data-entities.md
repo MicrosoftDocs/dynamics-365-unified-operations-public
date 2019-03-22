@@ -5,7 +5,7 @@ title: Security and data entities
 description: This topic provides information about security for data entities. Because data entities support entry point security, they are governed by the role-based security framework. The model for mapping data entity entry points to privileges and duties depends on the target scenarios. Therefore, data entities enable separate security configuration for each integration mode.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Security and data entities
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> Data entities do not support the Extensible Data Security (XDS) concepts.
 
 ## Entry points
 Data entities support entry point security. This support resembles the support that menu items and pages have. To give you flexibility when you define a security model, data entities allow for a separate security configuration for each integration mode. Currently, two entry points/integration modes are identified for a data entity.

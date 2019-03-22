@@ -1,6 +1,6 @@
 ---
 # required metadata
-
+redirect_url: /dynamics365/unified-operations/dev-itpro/database/dbmovement-operations
 title: Restore databases in non-production environments
 description: Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request. This topic describes how to request a point-in-time restore.
 author: MargoC

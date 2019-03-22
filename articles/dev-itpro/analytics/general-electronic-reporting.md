@@ -179,11 +179,11 @@ Note that this repository type is accessible in the following Dynamics 365 for F
 - cloud hosted environments deployed for development purposes (containing test models of enclosed suites)
 - deployed locally environments (on-premise or local business data deployment (LBD))
 
-Visit the [Import Electronic reporting (ER) configurations](/electronic-reporting-import-ger-configurations.md) page for more details about this.
+Visit the [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md) page for more details about this.
 
 An **RCS instance** repository provides access to the list of configurations of a specific RCS instance that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current Finance and Operations instance and used for electronic reporting.
 
-Visit the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](/rcs-download-configurations.md) page for more details about this.
+Visit the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](./rcs-download-configurations.md) page for more details about this.
 
 Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current Finance and Operations instance. Each repository can be dedicated to a specific configuration provider.
 

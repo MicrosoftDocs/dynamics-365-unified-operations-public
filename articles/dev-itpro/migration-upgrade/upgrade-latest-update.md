@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -58,7 +58,7 @@ Use this scenario when one or more small hotfixes are required in order to addre
 
 This scenario is required before you can use scenario 3. A developer must complete the upgrade of custom code before other activities can begin.
 
-In version 8.0 and later, customization can't be done by overlayering Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
+In version 8.0 and later, customization can't be done by overlayering Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see [Extensibility home page](../extensibility/extensibility-home-page.md) and [Relax model restrictions to refactor overlayering into extensions](../extensibility/refactoring-over-layering.md).
 
 ### Scenario 3: Upgrade to the latest application release
 
@@ -84,7 +84,7 @@ Use this scenario to update to the latest release of the platform when no applic
 
 Use this scenario when one or more small hotfixes are required in order to address a specific issue, but business factors such as time or cost limitations currently prevent you from doing a complete major application update.
 
-To incorporate new features of the application, you don't have to do a complete upgrade of your application. All features in the current update of the application are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
+To incorporate new features of the application, you don't have to do a complete upgrade of your application. All features in the current update of the application are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Get updates from Lifecycle Services (LCS)](download-hotfix-lcs.md).
 
 ## Scenario 2: Upgrade your custom code
 
@@ -106,7 +106,7 @@ This scenario describes the process for upgrading code from an earlier release t
 
 Regardless of whether you're a live customer or are still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 
-1. Use the Code upgrade service in LCS to upgrade your code. For more information, see [Configure the code upgrade service in Lifecycle services](../lifecycle-services/configure-execute-code-upgrade.md).
+1. Use the Code upgrade service in LCS to upgrade your code. For more information, see [Configure the code upgrade service in Lifecycle Services (LCS)](../lifecycle-services/configure-execute-code-upgrade.md).
 
     > [!NOTE]
     > The Code upgrade service also removes any old Microsoft X++ hotfixes that you've installed. Because the removal of old Microsoft X++ hotfixes is a required step, we recommend that you use the Code upgrade service even if you don't have custom code.
@@ -119,7 +119,7 @@ Regardless of whether you're a live customer or are still in the implementation 
         - Download a development virtual hard disk (VHD).
         - If you're running in your own Microsoft Azure subscription, deploy a new developer topology.
 
-    - If you want to keep the development data from your old development environment, create a database backup, and keep the BAK file. Then, when you've completed the code upgrade, you can restore the database backup to your new development environment and do a data upgrade by following the steps in [Upgrade data in development, demo or sandbox environments](upgrade-data-to-latest-update.md).
+    - If you want to keep the development data from your old development environment, create a database backup, and keep the BAK file. Then, when you've completed the code upgrade, you can restore the database backup to your new development environment and do a data upgrade by following the steps in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md).
 
 3. Follow the code migration steps:
 
@@ -137,7 +137,7 @@ For details about the code migration steps, see [Code migration](../dev-tools/de
 ## Scenario 3: Upgrade to the latest application release
 
 > [!IMPORTANT]
-> If you're using application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from 8.0 to 8.1](./appupdate-80-81.md).
+> If you're using application version 8.0 and want to move to the 8.1 or 10.0 releases, follow the simplified steps in [Update environments from version 8.0 to 8.1.X/10.X](./appupdate-80-81.md).
 
 These steps apply to customers who are live on an earlier release, and who want to do a full upgrade to the most recent platform and application releases. The steps might also apply to customers who have already deployed and configured a production environment, even if they haven't yet gone live. If you aren't upgrading your application but just want to upgrade your platform, use scenario 4 instead.
 
@@ -149,9 +149,9 @@ First, upgrade your code as described in scenario 2. This step is a developer ta
 
 Run the data upgrade process on a copy of your source database. If your environment is already live in production, the source database is a copy of the production database. Otherwise, the source database is your most current database. Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be completed successfully by using the specific set of customizations in this environment.
 
-To make a copy of your production database, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md).
+To make a copy of your production database, follow the steps in [Database movement operations home page](../database/copy-database-from-azure-sql-to-sql-server.md).
 
-To run the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+To run the data upgrade process, follow the steps in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md).
 
 > [!IMPORTANT]
 > - Data upgrade in a development environment is a required step. It helps reduce the risk of extended downtime and upgrade errors later, when you upgrade sandbox user acceptance testing (UAT) and production environments.
@@ -197,11 +197,20 @@ After staging deployment is completed, go back to the environment details page, 
 
 The **Upgrade** menu will include an **Apply updates** option. You can select this option to apply your software deployable packages to the new environment. These packages include any binary package, whether it's from an independent software vendor (ISV) solution, your own customization packages, or platform binary update packages. 
 
+**We highly recommend** applying the latest platform update as your first step. If you are upgrading to version 8.1, we recommend getting the latest binary update package such as 8.1.3 for example, which will also include the latest platform update. This ensures you have the latest hotfixes available and will reduce errors further along in the process.
+
 <img src="media/UpgradeAutomation/06_ApplyUpdates.png" width="700px" alt="Apply updates option on the Upgrade menu" />
 
 When you apply a new package to the environment, the process is the same as the process for regular environment servicing. When package application is completed, you must use the **Sign Off** button for that package before you can move on or apply another package.
 
 If package deployment fails, you can use the **Rollback** button to reverse it. Note that this button is **not** the same as the **Rollback** option on the **Upgrade** menu.
+
+#### Critical hotfixes
+With increased use of the self-service upgrade process, we have found several hotfixes to be critical to success for various target versions. For example, if you're upgrading to version 7.3 a list of KBs that have consistently resolved issues with data upgrade, retail components, or performance will display.
+
+<img src="media/UpgradeAutomation/Upgrade_CriticalKBs.png" width="700px" alt="Critical hotfixes" />
+
+The goal is to have this list empty before you start the **Data Upgrade** step of the process.  These KBs need to be installed on your Upgrade-in-progress environment.
 
 #### Upgrade Financial Reporting binaries
 Database Refresh and other operations are blocked if your sandbox and production environments aren't on the same version of Financial Reporter.  During upgrade, it is an opportune time to uptake the latest binaries for Financial Reporting.  
@@ -227,13 +236,35 @@ On the **Upgrade** menu, select **Data upgrade**. Your original sandbox environm
 
 Next, the data upgrade package for your target version will be automatically applied. The time that is required to apply the data upgrade package varies, depending on the size of your database.
 
+If the data upgrade fails, you need to select **Rollback** on the **Upgrade** menu to restore your database to the point that it was at before the data upgrade began. Before you do a rollback, we highly recommend that you download the logs to determine the root cause of the failure. This helps to ensure that your next Data Upgrade execution will go more smoothly.
+
+#### Upgrade days remaining
+Because the self-service upgrade process provides a parallel environment at no additional cost to you, there is a time limit on how long this environment can be used.  Currently, this time limit is set to 10 calendar days and begins when you use the **Maintain** menu > **Upgrade** button to start the process.
+
+*What happens when the time runs out?* <br/>
+<img src="media/UpgradeAutomation/Upgrade_Timer.png" width="300px" alt="Upgrade must be performed in 10 calendar days" />
+
+There are two possible outcomes when the timer reaches zero:
+- If you have not yet started the Data Upgrade step, then the new environment will be queued for deletion. In this scenario, the upgrade in the progress environment was provisioned, and optionally had customizations and packages applied but no data was upgraded and the original environment never incurred downtime.  
+- If you have executed the Data Upgrade step but not yet committed the upgrade, then no actions will be performed and no environments will be deleted. You can remain here until you commit or rollback. If you decide to rollback and the timer is at zero, then the new environment will be deleted.
+
+Only after you commit the upgrade as a success, is the original environment queued for deletion.
+
 #### Commit or rollback
 
-After the data upgrade package is applied, you can review the environment, and your users can perform business validation activities. If this validation is successful, you can mark the whole upgrade as a success by selecting **Commit** on the **Upgrade** menu. You must commit the upgrade to move on to your production environment.
+After the data upgrade package is applied, you can review the environment, and your users can perform business validation activities. If this validation is successful, you can mark the entire upgrade as a success by selecting **Commit** on the **Upgrade** menu. You must commit the upgrade before you can move on to your production environment. After you commit, the original environment is queued for deletion.
 
 <img src="media/UpgradeAutomation/10_CommitRollback.png" width="700px" alt="Commit option on the Upgrade menu" />
 
-If the validation fails, you can select **Rollback** on the **Upgrade** menu. This option will perform a point-in-time restore of the database, swap the database connection back to your original sandbox, and bring your original sandbox back online. The sandbox will then be back in its previous state.
+If the business validation fails, you can select **Rollback** on the **Upgrade** menu. This option will perform a point-in-time restore of the database, swap the database connection back to your original sandbox, and bring your original sandbox back online. The sandbox will then be back in its previous state.
+
+#### Post upgrade actions
+
+After you have signed off on your upgrade, there are a few actions which must be performed on the environment. These are listed below:
+
+* Aggregate Measurements - these must be refreshed after a major upgrade.  To do this, go to **System Administration** > **Setup** > **Entity Store** and then click **Refresh**.  
+> [!NOTE]
+> These can be scheduled to run using Batch.
 
 #### Upgrade production
 
@@ -261,8 +292,12 @@ This DVT error is intermittent and can be resolved by using the **Resume** butto
 
 **Application configuration sync failed. Call to TTSCOMMIT without first calling TTSBEGIN.**
 
-This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process will resume at this step. Microsoft is trying to reliably reproduce this issue and intends to produce a fix in the future.
+This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process will resume at this step. (This is fixed in Platform update 21.)
+
+**Upgrade was Committed but the environment remains in 'Upgrade cleanup in progress' state.**
+
+This is an issue we have noticed on some Sandbox and Production environments. We have created a bug to resolve this problem. In the meantime, we will be alerted proactively when this occurs and will clean up the environment state manually. When the bug is resolved, we will remove this issue from the Known Issues list.
 
 ## Scenario 4: Upgrade to the most current platform only
 
-If you're running an environment that doesn't have any customization of the platform Application Object Tree (AOT) models (Application Platform, Application Foundation, and Directory and Test Essentials), you can do an in-place update of your platform without upgrading to a new environment. For more information about this process, see [Upgrade Finance and Operations to the latest platform update](upgrade-latest-platform-update.md). If you upgrade only your platform, you don't have to do a code upgrade (scenario 2 in this topic) or run data upgrade scripts.
+If you're running an environment that doesn't have any customization of the platform Application Object Tree (AOT) models (Application Platform, Application Foundation, and Directory and Test Essentials), you can do an in-place update of your platform without upgrading to a new environment. For more information about this process, see [Apply the latest platform update to environments](upgrade-latest-platform-update.md). If you upgrade only your platform, you don't have to do a code upgrade (scenario 2 in this topic) or run data upgrade scripts.

@@ -44,7 +44,7 @@ The sample screen layouts that are included with Retail demo data provide conten
 
 ## Anatomy of a screen layout ID
 
-To find screen layouts in Retail, go to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
+To find screen layouts in Retail, go to **Retail** \> **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
 ![Screen layouts page in Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -110,10 +110,8 @@ The following table shows the layout sizes that are provided for typical screen 
 
 \* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.
 
-
->[!TIP]
-> POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Retail Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content in Retail by going to **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
-
+> [!TIP]
+> POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Retail Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content in Retail by going to **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
 ![Screen layouts and layout resolutions/sizes in Retail and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -129,10 +127,8 @@ Each fictitious company is targeted to a different retail segment and includes p
 | Fabrikam        | Houston  | Fashion        | Green  | Light |
 | Contoso         | Boston   | Electronics    | Red    | Dark  |
 
-
->[!NOTE]
+> [!NOTE]
 > Adventure Works and Fabrikam are the two flagship brands. Contoso is available, but not all layouts have been provided.
-
 
 The following illustrations show examples of the welcome page and transaction page for the three fictitious companies.
 
@@ -156,28 +152,26 @@ The following illustrations show examples of the welcome page and transaction pa
 
 Users have been provided for the various screen layouts. By using the following table, you should be able to access any of the screens. Just sign in by using an appropriate operator ID.
 
-| Company         | Screen layout ID | Persona       	| Operator IDs           |
-|-----------------|------------------|---------------	|------------------------|
-| Adventure Works | A3MGR            | Store Manager 	| 000154, 000137, 000073 |
-| Adventure Works | A3CSH            | Cashier       	| 000150, 000175, 000165 |
-| Adventure Works | A3STK            | Stock Clerk   	| 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Store Manager 	| 000160, 000168, 000163 |
-| Fabrikam        | F3CSH            | Cashier       	| 000161, 000113, 000114 |
-| Fabrikam        | F3STK            | Stock Clerk   	| 000164, 000112, 000123 |
-| Contoso         | C3MGR            | Store Manager 	| 000100, 000111         |
-| Contoso         | C3CSH            | Cashier       	| 000110, 000120         |
-| Contoso         | Not applicable   | Stock Clerk   	| Not applicable         |
+| Company         | Screen layout ID | Persona       | Operator IDs           |
+|-----------------|------------------|---------------|------------------------|
+| Adventure Works | A3MGR            | Store Manager | 000154, 000137, 000073 |
+| Adventure Works | A3CSH            | Cashier       | 000150, 000175, 000165 |
+| Adventure Works | A3STK            | Stock Clerk   | 000155, 000181, 000152 |
+| Fabrikam        | F3MGR            | Store Manager | 000160, 000168, 000163 |
+| Fabrikam        | F3CSH            | Cashier       | 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Stock Clerk   | 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Store Manager | 000100, 000111         |
+| Contoso         | C3CSH            | Cashier       | 000110, 000120         |
+| Contoso         | Not applicable   | Stock Clerk   | Not applicable         |
 
-
->[!TIP]
+> [!TIP]
 > For best results, activate a register in the corresponding store location, and set the company to the company of the persona that you plan to use when you sign in. In this way, you help guarantee that the visual profile and branding images are aligned across the experience. For example, if you're interested in seeing a Fabrikam layout for a cashier, you should activate a register in the Houston store.
-
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
 
 <!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 

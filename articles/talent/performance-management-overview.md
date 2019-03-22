@@ -3,7 +3,7 @@
 
 title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
-author: mikefalkner
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -61,9 +61,9 @@ When it’s accessed from the **ESS** workspace, the **performance journal** pag
 
 You can also link the performance journal to an external website by storing the URL of that site. If the journal is related to goals or performance reviews, you can also link it to one or more of them. When the performance journal is accessed from the **MSS** page, you can enter the same information that you can enter for the employee journal. In addition, you can specify the employee that the journal is being created for. You can choose whether to share the manager journal with your employee.
 
-### Praise
+### Send feedback
 
-The performance journal contains an additional feature that is named Praise. When you click on **Send praise**, you can select an employee and provide feedback to that employee via email. The message is sent to the employee who is being praised, that employee’s manager, the employee who is sending the praise, and that employee’s manager. A performance journal entry is created for each person who receive the praise message.
+The performance journal contains an additional feature that is named Feedback. When you click on **Send feedback**, you can select an employee and provide feedback to that employee via email. The message is sent to the employee who is receiving the feedback, that employee’s manager, the employee who is sending the feedback, and that employee’s manager. A performance journal entry is created for each person who receives the feedback message.
 
 ## Goals
 The **performance goals** page helps you track the goals that you and your manager have created for you. You can create any number of goals, and those goals can span different periods and performance reviews. You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal. Goals aren’t required for performance reviews. 

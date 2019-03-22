@@ -3,7 +3,7 @@
 
 title: Set up the components of a job
 description: This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,8 +17,8 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.author: rschloma
-ms.reviewer: rschloma
+ms.author: anbichse
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 269054
@@ -34,7 +34,6 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 
