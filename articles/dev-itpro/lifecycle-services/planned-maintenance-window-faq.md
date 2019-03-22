@@ -33,10 +33,10 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 ### What is a planned maintenance window?
-A planned maintenance window is the timeframe that Microsoft has scheduled to apply critical updates to your cloud service.
+A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version) to your cloud service.
 
 ### How does a planned maintenance window work?
-For all planned maintenance, Microsoft will send a notification to all stakeholders **five days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders.
+For all planned maintenance, Microsoft will send a notification to all stakeholders **five business days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders.
 
 ### When is this planned maintenance window taken?
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. All environments fall into one of these three regions. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
@@ -65,7 +65,7 @@ Microsoft is continually working to reduce the necessity of downtime for the ser
 ## Microsoft service updates 
 A separate set of frequently asked questions (FAQ) provides details about service updates that are done by Microsoft. See [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
-## Operating system–level updates 
+## Infrastructure updates 
 
 ### How long is the maintenance window?
 Most operating system–level updates are completed in approximately one hour. However, Microsoft asks for a three-hour window, so that there is time to handle any failures and to bring the system back to a healthy state. 
