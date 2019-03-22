@@ -5,7 +5,7 @@ title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,6 +67,9 @@ Follow these steps to change your update settings.
 
         > [!NOTE]
         > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
+        
+        > [!IMPORTANT]
+        > If the above time slots do not meet your needs, you always have the option to do a self-update at a time that is convinient to you by taking the update and applying it to your environments using the regular servicing flows.
 
  3. When you've finished setting the configuration options, select **Save**.
  
