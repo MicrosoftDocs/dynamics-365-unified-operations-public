@@ -34,8 +34,6 @@ ms.search.validFrom: 2019-03-01
 
 This topic provides an overview of the various Dynamics 365 for Retail in-store topologies. 
 
-The sections in this topic describe the requirements needed to set up an environment with N-1 components. These sections assume that Retail headquarters is already deployed, and that a Microsoft Dynamics AX 2012 R3 environment is currently running.
-
 - **Supported capabilities and operations when connectivity is lost** – An overview of supported capabilities and operations in each of the Retail in-store topologies when connectivity is lost.
 - **Supported deployment and maintenance capabilities** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
 - **Deployed components** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in-store topologies.
