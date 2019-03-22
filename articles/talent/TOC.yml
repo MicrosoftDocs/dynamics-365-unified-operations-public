@@ -6,7 +6,9 @@
     items:
     - name: What's new or changed in Talent
       href: whats-new.md
-      items:
+      items:   
+      - name: March 20, 2019     
+        href: whats-new-talent-march-20.md      
       - name: March 14, 2019     
         href: whats-new-talent-march-14.md     
       - name: March 5, 2019     

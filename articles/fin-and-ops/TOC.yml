@@ -235,6 +235,8 @@
       href: ../dev-itpro/business-events/business-events-dev-doc.md
     - name: Troubleshoot business events
       href: ../dev-itpro/business-events/troubleshooting.md
+    - name: Use cases for business events
+      href: ../dev-itpro/business-events/potential-use-cases.md
   - name: Compliance
     items:
     - name: Audit policy rules
@@ -3382,6 +3384,8 @@
           href: ../supply-chain/production-control/bill-of-material-bom.md
         - name: BOM designer functionality
           href: ../supply-chain/production-control/bom-designer-functionality.md
+        - name: Phantom items
+          href: ../supply-chain/production-control/phantom-items.md
         - name: BOM calculations
           href: ../supply-chain/cost-management/bom-calculations.md
         - name: Manage unit of measure
