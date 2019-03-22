@@ -6,7 +6,7 @@ title:  Career site functionality in Attract
 description: This topic provides an overview of the candidate-facing career site functionality in Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/12/2019
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -179,7 +179,7 @@ You can make it easy for candidates to apply for your positions by configuring A
 3. Select the **LinkedIn Integration** tab and connect with a LinkedIn recruiter account.
 4. In the **LinkedIn Recruiter System Connect Integration** section, select **Enabled** for the **Apply with LinkedIn** setting.
 
-After you've enabled the setting, candidates can apply using their existing LinkedIn profile data. When candidates apply by choosing the **Apply with LinkedIn** button, they are asked to authenticate with LinkedIn if they're not already signed in. Once they've authenticated, their LinkedIn profile replaces any existing profile data shown in the application page. Candidates can edit the information as needed and then submit the application. If a candidate navigates away from the page without applying for the job, their profile data is not updated in Attract.
+After you've enabled the setting, candidates can apply using their existing LinkedIn profile data. When candidates apply by choosing the **Apply with LinkedIn** button, they are asked to authenticate with LinkedIn if they're not already signed in. After they've authenticated, their LinkedIn profile replaces any existing profile data shown in the application page. Candidates can edit the information as needed and then submit the application. If a candidate navigates away from the page without applying for the job, their profile data is not updated in Attract.
 
 ## Check application status
 
