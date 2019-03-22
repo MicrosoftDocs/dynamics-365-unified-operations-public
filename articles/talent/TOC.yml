@@ -6,7 +6,11 @@
     items:
     - name: What's new or changed in Talent
       href: whats-new.md
-      items:
+      items:   
+      - name: March 20, 2019     
+        href: whats-new-talent-march-20.md      
+      - name: March 14, 2019     
+        href: whats-new-talent-march-14.md     
       - name: March 5, 2019     
         href: whats-new-talent-march-5.md
       - name: February 27, 2019     
@@ -101,6 +105,8 @@
       href: Process-templates-Attract.md
     - name: Creating, approving, and posting jobs in Attract
       href: Creating-jobs-Attract.md
+    - name: Posting jobs to external sites from Attract
+      href: posting-jobs-external.md
     - name: Sourcing with Talent Pools
       href: attract-talent-pools.md
     - name: Sourcing with LinkedIn Recruiter
@@ -205,7 +211,9 @@
   - name: Extensibility
     items:
     - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
-      href: Extensibility.md
+      href: extensibility-examples.md
+    - name: Extensibility in Attract
+      href: extensibility-attract.md
   - name: Office integration
     items:
     - name: Office integration tutorial

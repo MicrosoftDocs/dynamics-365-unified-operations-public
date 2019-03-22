@@ -25,7 +25,7 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Standard and First release service updates
+      - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
         items:
@@ -208,7 +208,7 @@
       href: ../dev-itpro/migration-upgrade/versions-update-policy.md
     - name: Software lifecycle policy - On-premises
       href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
-    - name: Standard and First release service updates
+    - name: Service update availability
       href: get-started/public-preview-releases.md
     - name: Apply updates to cloud environments
       href: ../dev-itpro/deployment/apply-deployable-package-system.md
@@ -235,6 +235,8 @@
       href: ../dev-itpro/business-events/business-events-dev-doc.md
     - name: Troubleshoot business events
       href: ../dev-itpro/business-events/troubleshooting.md
+    - name: Use cases for business events
+      href: ../dev-itpro/business-events/potential-use-cases.md
   - name: Compliance
     items:
     - name: Audit policy rules
@@ -1892,6 +1894,8 @@
             href: ../financials/localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
             href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+          - name: Purchase a taxable item from an unregistered vendor
+            href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
         - name: Deployment guidelines for cash registers
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
@@ -2672,6 +2676,8 @@
         href: ../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Employee development
         href: ../dev-itpro/analytics/employee-development-PBI.md?toc=/fin-and-ops/toc.json
+      - name: Expense management Power BI content
+        href: ../dev-itpro/analytics/expense-management-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial performance
         href: ../dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial insights
@@ -3336,6 +3342,8 @@
         href: get-started/create-alerts.md
       - name: Batch processing of alerts
         href: get-started/alerts-managing.md
+      - name: Client alert notifications by email
+        href: get-started/alert-email-notifications.md
     - name: Electronic signatures
       href: organization-administration/electronic-signature-overview.md
       items:
@@ -3376,6 +3384,8 @@
           href: ../supply-chain/production-control/bill-of-material-bom.md
         - name: BOM designer functionality
           href: ../supply-chain/production-control/bom-designer-functionality.md
+        - name: Phantom items
+          href: ../supply-chain/production-control/phantom-items.md
         - name: BOM calculations
           href: ../supply-chain/cost-management/bom-calculations.md
         - name: Manage unit of measure

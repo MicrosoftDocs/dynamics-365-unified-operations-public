@@ -4,7 +4,7 @@
 
 title:  Career site functionality in Attract
 description: This topic provides an overview of the candidate-facing career site functionality in Attract.
-author: josaw1
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/12/2019
 ms.topic: article
@@ -18,14 +18,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 

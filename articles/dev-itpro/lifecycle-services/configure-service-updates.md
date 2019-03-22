@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/coming-soon.md)]
-
 In Microsoft Dynamics Lifecycle Services (LCS), you can specify how and when you receive service updates from Microsoft for your Microsoft Dynamics 365 for Finance and Operations environments.
 
 > [!IMPORTANT]

@@ -34,6 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> This feature has been deprecated. For more information, see [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md#warehouse-mobile-devices-portal).
+
 This article describes how to set up the appearance of a mobile device display and map keyboard shortcuts to controls such as buttons. 
 
 This article applies to "advanced warehousing" features in Warehouse management. Mobile devices can be used for many of the tasks that warehouse workers perform.
