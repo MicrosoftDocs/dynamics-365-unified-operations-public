@@ -76,16 +76,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
-### Print to screen functionality
-Customers can use the **Import** action provided by the Report Viewer control to download documents produced by Finance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
+### SQL Server Reporting Services ReportViewer Control
+Customers can use the **Export** action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations. By fully embracing PDF as the standard format for business operations, we are able to drastically simplify user options for interacting with application reports and streamline the document rendering process. |
+| **Reason for deprecation/removal** | The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations. By fully embracing PDF as the standard format for business documents, users are able to take advantage of a modern viewing experience with improved performance when producing application reports. |
 | **Replaced by another feature?**   | Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.   |
 | **Product areas affected**         | This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.    |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated: A removal date has not been set for this feature. The functionality to automatically download application reports to the browser as PDF documents is planned for the May 2019 Platform update. <br><br>**Important:**  Existing customers who rely on the Print to screen feature are advised to notify [Support](../lifecycle-services/lcs-support.md) in advance of upgrading to Platform update 26. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. The functionality to automatically preview application reports using an embedded PDF viewer is planned for the May 2019 Platform update. |
 
 ### Client KPI controls
 Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.
