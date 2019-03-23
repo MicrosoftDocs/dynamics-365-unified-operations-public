@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to package customizations for extensions of the following Retail components and deploy the package to your environment by using Microsoft Dynamics Lifecycle Services (LCS):
+This topic explains how to create a Retail deployable package (package which contain all the extensions) for the below Retail components and deploy the package to your environment by using Microsoft Dynamics Lifecycle Services (LCS):
 
 - Commerce runtime (CRT)
 - Retail proxy
