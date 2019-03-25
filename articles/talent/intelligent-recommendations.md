@@ -59,6 +59,6 @@ The recommendations appear as cards in the **Prospects** tab of any job that has
 
 If you recently started using Attract, you’ll need to wait until you have 10 or more applicants who have full profiles or resumes before you can use this capability.
 
-To avoid bias in the recommendations, Attract only scans candidate profiles and looks for skills, qualifications and
-other keywords that match the job description. In addition, Attract removes  personally identifying information from candidate profiles prior to evaluating them.
+To avoid bias in the recommendations, Attract only scans candidate profiles and looks for skills, qualifications, and
+other keywords that match the job description. In addition, Attract removes personally identifying information from candidate profiles prior to evaluating them.
 
