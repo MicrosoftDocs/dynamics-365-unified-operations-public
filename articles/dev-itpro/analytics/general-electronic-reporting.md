@@ -170,10 +170,9 @@ To learn how to register a new ER provider, play the task guide, **ER Create a c
 
 An ER repository stores ER configurations. Five types of ER repositories are currently supported: **Operations resources, LCS shared library, LCS project, File system, and Regulatory Configuration Services (RCS)**.
 
-An **LCS shared library** repository provides access to the list of configurations of the Shared asset library of the Microsoft Lifecycle Services (LCS). This type of ER repository can be registered for the only Microsoft provider. It lets you import latest versions of ER configurations from the LCS Shared asset library into the current Finance and Operations instance.
+An **LCS shared library** repository provides access to the list of configurations within the Shared asset library of Microsoft Lifecycle Services (LCS). This type of ER repository can be registered for only the Microsoft provider. It lets you import the latest versions of ER configurations from the LCS Shared asset library into the current Finance and Operations instance.
 
 An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected at the repository registration stage. ER lets you upload shared configurations from the current Finance and Operations instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current Finance and Operations instance.
-
 
 A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can  import configurations from a **File system** repository into the current Finance and Operations instance. 
 Note that this repository type is accessible in the following Dynamics 365 for Finance and Operations environments:
@@ -182,7 +181,7 @@ Note that this repository type is accessible in the following Dynamics 365 for F
 
 Visit the [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md) page for more details about this.
 
-An **RCS instance** repository provides access to the list of configurations of a specific RCS instance that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current Finance and Operations instance and used for electronic reporting.
+An **RCS instance** repository provides access to the list of configurations of a specific RCS instance that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current Finance and Operations instance so you can use them for electronic reporting.
 
 Visit the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](./rcs-download-configurations.md) page for more details about this.
 
