@@ -34,9 +34,6 @@ ms.search.validFrom: 2019-03-01
 
 This topic provides an overview of the various Dynamics 365 for Retail in-store topologies. 
 
-# Overview
-The following graphic provides an overview of the Retail in-store topology.
-
 ![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)
 
 ## Supported capabilities when connectivity is lost
