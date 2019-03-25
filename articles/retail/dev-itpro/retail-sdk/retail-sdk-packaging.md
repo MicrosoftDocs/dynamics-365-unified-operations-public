@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/06/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a Retail deployable package (package which contain all the extensions) for the below Retail components and deploy the package to your environment by using Microsoft Dynamics Lifecycle Services (LCS):
+This topic explains how to create a Retail deployable package (which is a package that contain all the extensions) for the following Retail components and deploy the package to your environment by using Microsoft Dynamics Lifecycle Services (LCS):
 
 - Commerce runtime (CRT)
 - Retail proxy
