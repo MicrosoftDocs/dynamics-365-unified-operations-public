@@ -53,9 +53,6 @@ When a prospective employee uses the career site to apply to a job, Attract reco
 
 ## Prospect recommendations 
 
-Intelligent prospect recommendations 
-=====================================
-
 When a new position becomes available, looking through all your past applicants and your entire talent network can take a while. Why not let Attract help you? Using intelligent machine learning algorithms, Attract looks at all the candidates and suggests those who are a good matach as soon as you create the job. To see these recommendations, you need to enable the **Prospect** stage for the job. It may take up to a minute for Attract to scour through your entire candidate database to make recommendations.
 
 The recommendations appear as cards in the **Prospects** tab of any job that has the **Prospect** stage enabled. These cards list the skills found in the prospect's profile, as well as any education qualification information. If you see a recommendation you like, you can add the candidate as a prospect for that job.
