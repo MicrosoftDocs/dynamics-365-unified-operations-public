@@ -65,11 +65,8 @@ select the **Company information** tab.
     upper left of the career site. By selecting the logo image, candidates go to
     a page that lists all open jobs.
 
-    >   [!NOTE] 
-    >   The logo image that appears on the career site has a fixed
-    >   height of 20 pixels (px). The image that you add in the Admin center is
-    >   scaled to fit. Therefore, depending on the image, the width might
-    >   change.
+    > [!NOTE] 
+    > The logo image that appears on the career site has a fixed height of 20 pixels (px). The image that you add in the Admin center is  scaled to fit. Therefore, depending on the image, the width might change.
  
 To set the values for the following items, sign in to Attract as an administrator,
 select **Admin center** on the **Settings** menu, and then
@@ -79,9 +76,8 @@ select the **Career site management** tab.
     Attract career site will be searchable using search engines like Bing
     and Google.
 
-    >   [!NOTE] 
-    >   There might be a delay between turning this setting on and search
-    >   results appearing, depending on the search engine that you are using.
+    > [!NOTE] 
+    > There might be a delay between turning this setting on and search results appearing, depending on the search engine that you are using.
          
 ## Career site URLs
 
@@ -136,13 +132,8 @@ profile is created, it can be used to apply for jobs that the candidate is
 interested in. Profiles also help Attract recommend the right jobs to
 candidates.
 
->   [!NOTE]
->   If a candidate uses an email ID to sign in using one of the
->   authentication providers listed above, that email ID will default to the contact
->   email ID associated with the profile. However, the latter can be changed at
->   any time and is completely independent of the former. Attract will always use
->   the contact email ID to associate with your profile for all email
->   communications.
+> [!NOTE]
+> If a candidate uses an email ID to sign in using one of the authentication providers listed above, that email ID will default to the contact email ID associated with the profile. However, the latter can be changed at any time and is completely independent of the former. Attract will always use the contact email ID to associate with your profile for all email communications.
 
 ## Find the right job
 
@@ -155,9 +146,8 @@ Candidates can also view a set of recommended jobs on the career site. The jobs
 that are recommended to a candidate are based on the candidate's past
 applications, profile, and resumes.
 
->   [!NOTE] 
->   Job recommendations are shown only if at least 10 jobs are posted on
->   the career site, and if the candidate has completed a profile.
+> [!NOTE] 
+> Job recommendations are shown only if at least 10 jobs are posted on the career site, and if the candidate has completed a profile.
 
 ## Apply for jobs
 
