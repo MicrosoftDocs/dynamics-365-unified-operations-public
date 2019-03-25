@@ -42,20 +42,20 @@ Microsoft doesn't release any hardware, software, or documentation from EFSTA. F
 
 The following scenarios are covered by the fiscal registration service integration sample for Austria:
 
-- Registration of cash transactions in the fiscal register service:
+- Registration of cash transactions in the fiscal registration service:
 
-    - Send detailed transaction data to the fiscal register service. This data includes sales line information, and information about discounts, payments, and taxes.
-    - Capture a response from the fiscal register service. This response includes a digital signature and a link to the registered transaction.
-    - Taxes with a mapping to the fiscal service's tax codes.
+    - Send detailed transaction data to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
+    - Capture a response from the fiscal registration service. This response includes a digital signature and a link to the registered transaction.
+    - Register taxes, and map them to the fiscal registration service's tax codes.
     - Print the QR code for a registered transaction on the receipt.
 
-- Registration of gift card operations and customer deposits as non-cash transactions in the fiscal register service:
+- Registration of gift card operations and customer deposits as non-cash transactions in the fiscal registration service:
 
     - Issue or add money to a gift card.
     - Register a customer account deposit.
     - Register a customer order deposit.
 
-- Registration of non-sales transactions and events as non-cash transactions in the fiscal register service:
+- Registration of non-sales transactions and events as non-cash transactions in the fiscal registration service:
 
     - Open shift and Close shift
     - Start amount, Float entry, and Tender removal
@@ -76,10 +76,10 @@ The following scenarios are covered by the fiscal registration service integrati
 
 - Error handling, such as the following options:
 
-    - Retry fiscal registration if a retry is possible, such as if the fiscal register service isn't available, isn't ready, or isn't responding.
+    - Retry fiscal registration if a retry is possible, such as if the fiscal registration service isn't available, isn't ready, or isn't responding.
     - Postpone fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
-    - Check the availability of the fiscal register service before a new sales transaction is opened or a sales transaction is finalized.
+    - Check the availability of the fiscal registration service before a new sales transaction is opened or a sales transaction is finalized.
 
 ### Default data mapping
 
@@ -93,7 +93,7 @@ The following default data mapping is included in the fiscal document provider c
 
 The fiscal registration service integration sample implements the following rules that are related to gift cards:
 
-- Exclude sales lines that are related to the *Issue gift card* and *Add to gift card* operations from a cash transaction to be registered in the fiscal register service and register them as a separate non-cash transaction.
+- Exclude sales lines that are related to the *Issue gift card* and *Add to gift card* operations from a cash transaction. Instead of registering those lines as a part of a cash transaction, register them as a separate non-cash transaction in the fiscal registration service.
 - Don't print a tax group breakdown and a QR code on a receipt if the receipt consists only of gift card lines.
 - Print the total amount of gift cards that are issued or re-charged in a transaction separately from the cash transaction amount on the receipt.
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
@@ -110,7 +110,7 @@ The fiscal registration service integration sample implements the following rule
 
 ### Limitations of the sample
 
-The fiscal service supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
+The fiscal registration service supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
 
 ## Set up Retail for Austria
 
@@ -135,15 +135,14 @@ On the **All retail stores** page, update the retail store details. Specifically
 
 - In the **Sales tax group** field, specify the sales tax group that should be used for sales to the default retail customer.
 - Set the **Prices include sales tax** option to **Yes**.
-- Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-form text.
-- Set the **Tax identification number (TIN)** field so that it includes the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-form text.
+- Set the **Name** field to the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-form text.
+- Set the **Tax identification number (TIN)** field to the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-form text.
 
 ### Set up functionality profiles
 
 Set up POS functionality profiles:
 
-- On the **Receipt numbering** FastTab, set up receipt numbering. 
-- Create or update records for the **Sale**, **Sales order**, and **Return** receipt transaction types.
+- On the **Receipt numbering** FastTab, set up receipt numbering by creating or updating records for the **Sale**, **Sales order**, and **Return** receipt transaction types.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
@@ -377,9 +376,9 @@ To enable the registration process, follow these steps to set up Retail Headquar
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
 
-4. Go to **Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
+4. Go to **Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
 5. Go to **Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
-6. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create two new fiscal connector groups per connector functional profile that you created earlier.
+6. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create two new fiscal connector groups, one for each connector functional profile that you created earlier.
 7. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, and select both fiscal connector groups that you created earlier.
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. To enable registration of non-fiscal events on the POS, on the **Functions** FastTab, under **POS**, set the **Audit** option to **Yes**.
 9. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
@@ -441,8 +440,8 @@ For more details about the design of the fiscal integration solution, see [Fisca
 	
 There are two request handlers for document providers:
 
-- **DocumentProviderEFRFiscalAUT** – This handler is used to generate fiscal documents for the fiscal service.
-- **DocumentProviderEFRNonFiscalAUT** – This handler is used to generate non-fiscal documents for the fiscal service.
+- **DocumentProviderEFRFiscalAUT** – This handler is used to generate fiscal documents for the fiscal registration service.
+- **DocumentProviderEFRNonFiscalAUT** – This handler is used to generate non-fiscal documents for the fiscal registration service.
 
 These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
 
@@ -451,7 +450,7 @@ The connector supports the following requests:
 - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
 - **GetNonFiscalDocumentDocumentProviderRequest** – This request contains information about what non-fiscal document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, printing Z report, customer account deposits, customer order deposits, audit events, and non-sales transactions.
-- **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – This request returns the response from the fiscal service. This response is serialized to string so that it's ready to be saved.
+- **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – This request returns the response from the fiscal registration service. This response is serialized to form a string so that it's ready to be saved.
 
 #### Configuration
 
@@ -479,7 +478,7 @@ The handler is inherited from the **INamedRequestHandler** interface. The **Hand
 The connector supports the following requests:
 
 - **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
-- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the service.
+- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
 - **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
 
 #### Configuration
@@ -487,4 +486,4 @@ The connector supports the following requests:
 The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the service.
+- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
