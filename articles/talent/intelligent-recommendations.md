@@ -5,7 +5,7 @@ title: Intelligent recommendations
 description: This topic explains how machine learning can be used to provide recommendations for jobs and job candidates.
 author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -38,7 +38,7 @@ Machine learning can help recruiters and hiring managers quickly identify top ca
 
 > [!NOTE] 
 > - The intelligent recommendation features are available only with the [Comprehensive hiring add-on](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - This feature is currently in preview. If you want to try it out, please ask an administrator to [enable it in Attract's **Admin settings**](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**.
+> - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin settings** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more informations, see [ccess preview features in Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
 
 ## Candidate recommendations
@@ -53,12 +53,10 @@ When a prospective employee uses the career site to apply to a job, Attract reco
 
 ## Prospect recommendations 
 
-When a new position becomes available, looking through all your past applicants and your entire talent network can take a while. Why not let Attract help you? Using intelligent machine learning algorithms, Attract looks at all the candidates and suggests those who are a good matach as soon as you create the job. To see these recommendations, you need to enable the **Prospect** stage for the job. It may take up to a minute for Attract to scour through your entire candidate database to make recommendations.
+When a new position becomes available, looking through all your past applicants and your entire talent network can take a while. To have Attract help you do this, you can use intelligent machine learning algorithms. This means that Attract reviews all the candidates and suggests those who are a good match as soon as you create the job. To view these recommendations, enable the **Prospect** stage for the job. It may take up to a minute for Attract to scan your entire candidate database to make recommendations.
 
-The recommendations appear as cards in the **Prospects** tab of any job that has the **Prospect** stage enabled. These cards list the skills found in the prospect's profile, as well as any education qualification information. If you see a recommendation you like, you can add the candidate as a prospect for that job.
+The recommendations appear as cards in the **Prospects** tab of any job that has the **Prospect** stage enabled. These cards list the skills found in the prospect's profile, as well as any education qualification information. If you find a recommendation that you like, you can add the candidate as a prospect for that job.
 
 If you recently started using Attract, you’ll need to wait until you have 10 or more applicants who have full profiles or resumes before you can use this capability.
 
-To avoid bias in the recommendations, Attract only scans candidate profiles and looks for skills, qualifications, and
-other keywords that match the job description. In addition, Attract removes personally identifying information from candidate profiles prior to evaluating them.
-
+To avoid potential bias in the recommendations, Attract only scans candidate profiles for skills, qualifications, and other keywords that match the job description. In addition, Attract removes personally identifying information from candidate profiles prior to evaluation.
