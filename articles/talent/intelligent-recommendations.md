@@ -37,8 +37,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 Machine learning can help recruiters and hiring managers quickly identify top candidates for a position. It can also help prospects find the position that best suits their profile and interests. As these features are used, and feedback is provided, recommendations will improve.
 
 > [!NOTE] 
-> - The intelligent recommendation features are available only with the Comprehensive hiring add-on.
-> - To enable the candidate and job recommendation features, an admin must turn on the preview options for them. In the Admin center, on the **Feature management** tab, make sure that the **Preview features** option is set to **On**. Then make sure that the individual **Candidate recommendation**, **Job recommendation** and **Prospect recommendation** options are set to **On**.
+> - The intelligent recommendation features are available only with the [Comprehensive hiring add-on](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - This feature is currently in preview. If you want to try it out, please ask an administrator to [enable it in Attract's **Admin settings**](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**.
+
 
 ## Candidate recommendations
 
@@ -48,35 +49,19 @@ For any recommended candidate, you can select **View candidate** on the candidat
 
 ## Job recommendations 
 
-When a prospective employee uses the career site to apply to a job, other open positions at the organization are recommended. These recommendations are based on the prospect's past applications, and on his or her resume or candidate profile. Therefore, job recommendations help prospects quickly identify the jobs that are the best fit for them. Job recommendations are provided to prospects if more than ten jobs are posted on the career site. Prospects can open the details of a job posting from the recommendation card. They can also provide feedback about a recommendation to help improve future recommendations.
+When a prospective employee uses the career site to apply to a job, Attract recommends other open positions at the organization. These recommendations are based on past applications and the resume or candidate profile of the prospect. Therefore, job recommendations help prospects quickly identify the jobs that are the best fit for them. Job recommendations are provided to prospects if more than ten jobs are posted on the career site. Prospects can open the details of a job posting from the recommendation card. They can also provide feedback about a recommendation to help improve future recommendations.
 
 ## Prospect recommendations 
 
 Intelligent prospect recommendations 
 =====================================
 
-When a new position becomes available, looking through all your past applicants
-and your entire talent network can take a while. Why not let Attract help you?
-Using intelligent machine learning algorithms, we can look at all of the
-candidates in Attract and for the ones who may be a good match, suggest them as
-prospects as soon as you create the job. As soon as you have created a job
-description and listed the required skills, we have enough information to get
-you started with prospect recommendations. To see these recommendations, you
-need to enable the prospects stage for the job. It may take up to a minute for
-Attract to scour through your entire candidate database to make recommendations.
+When a new position becomes available, looking through all your past applicants and your entire talent network can take a while. Why not let Attract help you? Using intelligent machine learning algorithms, Attract looks at all the candidates and suggests those who are a good matach as soon as you create the job. To see these recommendations, you need to enable the **Prospect** stage for the job. It may take up to a minute for Attract to scour through your entire candidate database to make recommendations.
 
-The recommendations will appear as cards in the Prospects tab of any job that has
-the prospect stage enabled. These cards will list the skills we found in this
-profile as well as any education qualification information we find. If you like
-a recommendation, you can easily add the candidate as a prospect for that job.
+The recommendations appear as cards in the **Prospects** tab of any job that has the **Prospect** stage enabled. These cards list the skills found in the prospect's profile, as well as any education qualification information. If you see a recommendation you like, you can add the candidate as a prospect for that job.
 
-If you’ve only recently started using Attract, you’ll need to wait until you
-have 10 or more applicants who have full profiles or resumes to start making use
-of this capability.
+If you recently started using Attract, you’ll need to wait until you have 10 or more applicants who have full profiles or resumes before you can use this capability.
 
-We’ve made sure we do our best to minimize bias in our recommendations. We
-simply scan through candidate profiles and look for skills, qualifications and
-other keywords that match the job description. Additionally, we remove
-personally identifying information from candidate profiles prior to evaluating
-them.
+To avoid bias in the recommendations, Attract only scans candidate profiles and looks for skills, qualifications and
+other keywords that match the job description. In addition, Attract removes  personally identifying information from candidate profiles prior to evaluating them.
 
