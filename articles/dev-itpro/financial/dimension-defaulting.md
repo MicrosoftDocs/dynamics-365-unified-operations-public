@@ -5,7 +5,7 @@ title: Default financial dimensions
 description: This topic describes default financial dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension.
 author: jasonsto
 manager: annbe
-ms.date: 2/14/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -282,52 +282,52 @@ This section covers how default dimensions are merged between entities.
 :::row-end:::
 :::row:::
     :::column:::
+    Next, the user enters the item on the purchase order line.  Figures 5 below shows the item selected on the purchase order line and the resulting default dimensions. In this case, the default dimension values were merged by the purchase order logic.
     :::column-end:::
     :::column:::
+    ![DefaultDimension4-5PurchLineResult.png](./media/DefaultDimension4-5PurchLineResult.png)
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
+    SQL query and output showing default dimensions from item record on the purchase order line
     :::column-end:::
     :::column:::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-:::row-end:::
-
- 
-Next, the user enters the item on the purchase order line.  Figures 5 below shows the item selected on the purchase order line and the resulting default dimensions. In this case, the default dimension values were merged by the purchase order logic.
-
-![DefaultDimension4-5PurchLineResult.png](./media/DefaultDimension4-5PurchLineResult.png)
-**Figure 5: Resulting default dimensions on a purchase order line**
-
-[![DefaultDimension4-6SQLOnItem.png](./media/DefaultDimension4-6SQLOnItem.png)](./media/DefaultDimension4-6SQLOnItem.png)
+    [![DefaultDimension4-6SQLOnItem.png](./media/DefaultDimension4-6SQLOnItem.png)](./media/DefaultDimension4-6SQLOnItem.png)
 [![DefaultDimension4-6SQLResultOnItem.png](./media/DefaultDimension4-6SQLResultOnItem.png)](./media/DefaultDimension4-6SQLResultOnItem.png)
-**Figure 6: SQL query and output showing default dimensions from item record on the purchase order line**
+    :::column-end:::
+:::row-end:::
 
-The purchase order logic merges the default dimensions from 3 different sources when the item is specified for a purchase order line as shown in Figure 7 below.
 
-Order header default dimensions merged with the order line default dimensions = merged result 1 default dimensions
+The purchase order logic merges the default dimensions from 3 different sources when the item is specified for a purchase order line. Consider the following information.
+:::row:::
+    :::column:::
+    Order header default dimensions merged with the order line default dimensions = merged result 1 default dimensions
+    :::column-end:::
+    :::column:::
+    [![DefaultDimension4Graph.png](./media/DefaultDimension4Graph.png)](./media/DefaultDimension4Graph.png)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    Item default dimensions merged with merged result 1 = final order line default dimensions (merged result 2). This table shows the logical steps of the merging that is occurring. However, these steps are combined during execution using the APIs provided by the dimensions framework.
+    :::column-end:::
+    :::column:::
+    [![DefaultDimension4-7Graph2.png](./media/DefaultDimension4-7Graph2.png)](./media/DefaultDimension4-7Graph2.png)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    The code that is needed to merge the dimensions from the 3 sources shown earlier.
+    :::column-end:::
+    :::column:::
+    [![DefaultDimension4-8CodeToMerge.png](./media/DefaultDimension4-8CodeToMerge.png)](./media/DefaultDimension4-8CodeToMerge.png)
+    :::column-end:::
+:::row-end:::
 
-[![DefaultDimension4Graph.png](./media/DefaultDimension4Graph.png)](./media/DefaultDimension4Graph.png)
-Item default dimensions merged with merged result 1 = final order line default dimensions (merged result 2)
-
-[![DefaultDimension4-7Graph2.png](./media/DefaultDimension4-7Graph2.png)](./media/DefaultDimension4-7Graph2.png)
-**Figure 7: Merging steps taken**
-
-The tables in Figure 7 show the logical steps of  the merging that is occurring. However, these steps are combined during execution using the APIs provided by the dimensions framework. Figure 8 below shows the code needed to do all of the merging of the dimensions from the 3 sources shown above.
-
-[![DefaultDimension4-8CodeToMerge.png](./media/DefaultDimension4-8CodeToMerge.png)](./media/DefaultDimension4-8CodeToMerge.png)
-**Figure 8: Code used to merge the three sets of default dimensions**
 
 ## Ledger dimension creation
 This section covers how default dimensions can be merged to create new ledger dimensions.
-
-**Ledger dimension creation**
 
 Default dimensions exist as a way to provide values that later will be used to create ledger account combinations used in journals and accounting distributions. Default dimensions provide the dimensions other than MainAccount needed for a ledger account combination, and can be combined with a default account, or another ledger dimension in order to produce one.  As defined in the [Ledger account combinations series of blog posts](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx), a ledger account combination is just a set of MainAccount and dimension values with structure and order applied.
 
@@ -340,6 +340,7 @@ As shown in Figure 1 above, choosing the Financials-\>Distribute amounts option 
 
 [![DefaultDimension5-1SourceofMainAccountOnPO.png](./media/DefaultDimension5-1SourceofMainAccountOnPO.png)](./media/DefaultDimension5-1SourceofMainAccountOnPO.png) 
 [![DefaultDimension5-1SourceOfMAonPO2.png](./media/DefaultDimension5-1SourceOfMAonPO2.png)](./media/DefaultDimension5-1SourceOfMAonPO2.png) 
+
 **Figure 2: Source of a default (main) account for the item on the purchase order line**
 
 ![SQL query](./media/DefaultDimension5-3SQLDefaultSource.png "SQL query")
