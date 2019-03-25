@@ -59,6 +59,10 @@ After a successful master planning run, a clean-up job is scheduled to remove pl
 
 The clean-up job has now been enhanced to remove data from previously failed master planning runs, and the design has been optimized to never block other threads, leaving all helpers available for the master planning run. These improvements also apply to intercompany master planning.
 
+## Realize the conditional tax when postdated checks are drawn
+
+[Conditional tax](../../financials/general-ledger/indirect-taxes-overview.md#conditional-sales-tax) is cash basis VAT which is required in some countries, the tax can be deducted until you have paid the invoice. When the payment method is posted checks, now you have the option (*Cash and bank management parameters > Postdated checks > Realize the conditional tax when postdated checks are drawn*) to realize the tax during payment or when the posted checks are drawn. 
+
 ## Non-GST transactions for India 
 This feature allows you to create non-GST transactions with the Tax engine. To create a non-GST transaction, select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
 
