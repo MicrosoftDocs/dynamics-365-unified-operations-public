@@ -39,7 +39,7 @@ This topic describes features that are new or changed in Dynamics 365 for Financ
 Business events are now generally available. This means, business events are out of preview and is available by default without having to enable the flight.
 
 ## 1:N support for Microsoft Flow to subscribe to Business Events
-Multiple Flow apps can subscribe to the same business event in the same legal entity. The default limit on the number of such scubscriptions is set to 10. This can be modified as required.
+Multiple Flow apps can subscribe to the same business event in the same legal entity.
 
 ## Business events are idempotent
 Business events are idempotent. This means, the payload of a business event has a unique and ever increasing number called the ControlNumber. This control number can be used by consumers to apply duplicate detection logic and also out of order delivery detection logic to ensure robust processing of events.
