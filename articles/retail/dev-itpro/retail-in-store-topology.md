@@ -35,12 +35,6 @@ ms.search.validFrom: 2019-03-01
 This topic provides an overview of the various Dynamics 365 for Retail in-store topologies. 
 
 # Overview
-- **[Supported capabilities and operations when connectivity is lost](#Supported-capabilities-when-connectivity-is-lost)** – An overview of supported capabilities in each of the Retail in-store topologies when connectivity is lost.
-- **[Supported operations when connectivity is lost](#Supported-operations-when-connectivity-is-lost)** – An overview of supported operations in each of the Retail in-store topologies when connectivity is lost.
-- **[Supported deployment and maintenance capabilities](#Supported-operations-when-connectivity-is-lost)** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
-- **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in-store topologies.
-
-## High Level Overview of how to chose your Retail In-Store Topology
 The following graphic provides an overview of the Retail in-store topology.
 
 ![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)
