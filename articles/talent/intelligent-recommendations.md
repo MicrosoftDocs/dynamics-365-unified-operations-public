@@ -38,7 +38,7 @@ Machine learning can help recruiters and hiring managers quickly identify top ca
 
 > [!NOTE] 
 > - The intelligent recommendation features are available only with the [Comprehensive hiring add-on](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin settings** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more informations, see [ccess preview features in Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin settings** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more information, see [Access preview features in Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
 
 ## Candidate recommendations
@@ -57,6 +57,7 @@ When a new position becomes available, looking through all your past applicants 
 
 The recommendations appear as cards in the **Prospects** tab of any job that has the **Prospect** stage enabled. These cards list the skills found in the prospect's profile, as well as any education qualification information. If you find a recommendation that you like, you can add the candidate as a prospect for that job.
 
-If you recently started using Attract, you’ll need to wait until you have 10 or more applicants who have full profiles or resumes before you can use this capability.
+> [!NOTE]
+> If you recently started using Attract, you’ll need to wait until you have 10 or more applicants who have full profiles or resumes before you can use this capability.
 
 To avoid potential bias in the recommendations, Attract only scans candidate profiles for skills, qualifications, and other keywords that match the job description. In addition, Attract removes personally identifying information from candidate profiles prior to evaluation.
