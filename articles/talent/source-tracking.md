@@ -31,12 +31,11 @@ ms.dyn365.ops.version: Talent October 2018 update
 ---
 
 # Track sources for candidate profiles and applications 
-================
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> This feature is currently in preview. If you want to try it out, please ask an administrator to [enable it in Attract's **Admin settings**](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). A future release will provide source tracking reports.
+> Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin settings** in Attract. A future release will provide source tracking reports. For more information, see [Access preview features in Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
 
 When candidates apply for a job, Attract automatically tracks the source of their applications, providing you with valuable information to help you target your recruiting efforts. Recruiters and hiring managers can also select an application source while manually adding a candidate to a job or talent pool.
 
@@ -101,10 +100,10 @@ The default source list contains common application sources. Some source types, 
 
 You can extend the source list to include additional application sources. To customize this list, follow the instructions in [Extending Option Sets in Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Edit the **TalentSource** entity to include additional sources. 
 
-To avoid negatively impacting the UI, don't edit or delete the **TalentCategory** enum values (not name) for the following:
+To avoid negatively impacting the user interface (UI), don't edit or delete the **TalentCategory** enum values (not names) for the following:
 
 - **Referral**
 - **LinkedIn**
 - **Other**
 
-Instead, extend the **TalentSource** enum to add other types of sources.
+Instead, you can extend the **TalentSource** enum to add other types of sources.
