@@ -5,7 +5,7 @@ title: Electronic reporting (ER)
 description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: ERWorkspace
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58941
@@ -386,6 +386,5 @@ ER lets you automatically adopt changes of the latest version of the base compon
 
 ## Additional resources
 
-[Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
-
-[Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
+- [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
