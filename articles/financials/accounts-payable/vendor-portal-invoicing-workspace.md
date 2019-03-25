@@ -3,7 +3,7 @@
 
 title: Vendor collaboration invoicing workspace
 description: This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article

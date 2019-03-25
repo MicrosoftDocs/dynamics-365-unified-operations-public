@@ -3,7 +3,7 @@
 
 title: Vendor payments for a partial amount
 description: Sometimes, you might make a payment to a vendor that is less than the amount of an invoice. This article describes the various options for handling this situation. 
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
