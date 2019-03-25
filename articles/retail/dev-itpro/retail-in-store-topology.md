@@ -55,7 +55,7 @@ The following graphic provides an overview of the Retail in-store topology.
 For a list of operations that are supported when the POS loses connectivity to the HQ, see [Online and offline point of sale (POS) operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-operations).
 
 ## Supported deployment and maintenance capabilities
-Mass deployment is supported in Modern POS, but not in Retail Store Scale Unit. For more information, see [Mass deployment of Retail self-service components](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment))
+Mass deployment is supported in Modern POS, but not in Retail Store Scale Unit. For more information, see [Mass deployment of Retail self-service components](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment).
 
 ## Deployed components
 The following components are deployed through a single installer. This means that they do not need to be installed individually.
