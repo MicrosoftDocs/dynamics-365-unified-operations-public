@@ -34,13 +34,13 @@ ms.search.validFrom: 2019-03-01
 
 This topic provides an overview of the various Dynamics 365 for Retail in-store topologies. 
 
-- **Supported capabilities and operations when connectivity is lost** – An overview of supported capabilities and operations in each of the Retail in-store topologies when connectivity is lost.
-- **Supported deployment and maintenance capabilities** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
-- **Deployed components** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in-store topologies.
-- **Hardware and software requirements** - An overview of the minimum hardware and software requirements to operate each of the Retail in-store topologies.
-- **[Maintenance tasks](#Maintenance-tasks)** - An overview of the maintenance tasks that are required to host and operate each of the Dynamics 365 for Retail in-store topologies.
+# Overview
+- **[Supported capabilities and operations when connectivity is lost](#Supported-capabilities-when-connectivity-is-lost)** – An overview of supported capabilities in each of the Retail in-store topologies when connectivity is lost.
+- **[Supported operations when connectivity is lost](#Supported-operations-when-connectivity-is-lost)** – An overview of supported operations in each of the Retail in-store topologies when connectivity is lost.
+- **[Supported deployment and maintenance capabilities](#Supported-operations-when-connectivity-is-lost)** – An overview of supported deployment and maintenance capabilities provided through the Microsoft Dynamics 365 solution.
+- **[Deployed components](#Deployed-components)** - An overview of the deployed Dynamics 365 Components required to operate each of the Retail in-store topologies.
 
-
+## High Level Overview of how to chose your Retail In-Store Topology
 The following graphic provides an overview of the Retail in-store topology.
 
 ![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)
@@ -48,8 +48,8 @@ The following graphic provides an overview of the Retail in-store topology.
 ## Supported capabilities when connectivity is lost
 | Operation | Without connectivity to Retail Server<br>(in MPOS Offline Mode) | Without connectivity to HQ<br>(using RSSU) |
 | --- | :-: | :-: |
-| Cross terminal shifts (such as view, suspend, resume, close) | | X | 
-| Cross terminal transactions (such as view, suspend, resume)  | | X |
+| Cross terminal shifts (such as view, suspend, resume, close) | | ✔ | 
+| Cross terminal transactions (such as view, suspend, resume)  | | ✔ |
 
 ## Supported operations when connectivity is lost
 For a list of operations that are supported when the POS loses connectivity to the HQ, see [Online and offline point of sale (POS) operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-operations).
