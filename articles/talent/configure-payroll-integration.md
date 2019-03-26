@@ -364,6 +364,8 @@ If you're generating pay for employees in the United States and Canada, the foll
 - Departments are required on positions.
 - Cost centers must be set as financial dimensions and must be the first element in the default financial dimension string.
 
+> [!NOTE] You can configure Talent to require that Positions specify a Department. This setting is under **Human Resources Shared Positions | Positions | Require departments on positions**. We recommend that this setting be enforced for the integration.
+
 ### Job types
 
 Job types are used to group similar jobs into categories. Job types are required in order to process payroll in the United States and Canada. Examples of job types include full-time and part-time, or salary and hourly pay. Job types are mapped to Dayforce as pay types that indicate whether an employee is hourly or salaried.
