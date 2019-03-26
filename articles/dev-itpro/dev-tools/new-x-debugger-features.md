@@ -506,7 +506,7 @@ If the type of the element that is added to the container is any type that the c
 but an error will be thrown at runtime.
 
 ## Cross company clause can contain arbitrary expressions
-The cross company clause can be used on select statements to indicate the companies that the search statement should take into account. The syntax hasn't been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.
+The cross company clause can be used on select statements to indicate the companies that the search statement should take into account. The syntax has been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.
 
       private void SampleMethod()
       {
