@@ -58,12 +58,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
@@ -81,12 +81,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
@@ -104,12 +104,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
@@ -129,12 +129,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -158,12 +158,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-6. Find the extensions configuration file for CRT:
+6. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-7. Register the CRT change in the extensions configuration file.
+7. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -183,12 +183,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -212,12 +212,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-6. Find the extensions configuration file for CRT:
+6. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-7. Register the CRT change in the extensions configuration file.
+7. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -235,12 +235,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
@@ -260,12 +260,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -289,12 +289,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-6. Find the extensions configuration file for CRT:
+6. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-7. Register the CRT change in the extensions configuration file.
+7. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -323,12 +323,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -352,12 +352,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-6. Find the extensions configuration file for CRT:
+6. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-7. Register the CRT change in the extensions configuration file.
+7. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
@@ -375,12 +375,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
@@ -407,12 +407,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -425,12 +425,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 #### RegisterAuditEventNorway component
 
-1. Find the extensions configuration file for CRT:
+1. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-2. Register the CRT change in the extensions configuration file.
+2. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
@@ -454,12 +454,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-6. Find the extensions configuration file for CRT:
+6. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-7. Register the CRT change in the extensions configuration file.
+7. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
@@ -477,12 +477,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
@@ -509,12 +509,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -527,12 +527,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 #### RegisterAuditEventNorway component
 
-1. Find the extensions configuration file for CRT:
+1. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-2. Register the CRT change in the extensions configuration file.
+2. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
@@ -556,12 +556,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-6. Find the extensions configuration file for CRT:
+6. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-7. Register the CRT change in the extensions configuration file.
+7. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
@@ -579,12 +579,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
@@ -611,12 +611,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -678,7 +678,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
 
     2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
-    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+    3. Register the CRT change in the extension configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -688,7 +688,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
     2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
-    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+    3. Register the CRT change in the extension configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
@@ -870,7 +870,7 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 1. In the **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.SalesTransactionSignatureSample** folder, find the **RetailServer.Extensions.SalesTransactionSignatureSample** project, and build it.
 2. In the **RetailProxy\\RetailProxy.Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the **Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample** assembly file.
 3. Copy the assembly files to the **\\ext** folder under the local CRT client broker location.
-4. Register the Retail proxy change in the extensions configuration file. The file is named **RetailProxy.MPOSOffline.ext.config**, and it's under the local CRT client broker location.
+4. Register the Retail proxy change in the extension configuration file. The file is named **RetailProxy.MPOSOffline.ext.config**, and it's under the local CRT client broker location.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
