@@ -70,7 +70,7 @@ Before you create fixed asset transfers between companies, you must adjust the s
 3. In the **Date** field, enter the date of the transfer.
 4. Optional: In the **Company accounts ID** field, enter the code for the company that is receiving the asset.
 5. Optional: In the **Fixed asset** field, change the code for the asset.
-6. If you selected a company to transfer the asset to, you can select the fixed asset inventory number that corresponds to the asset after transfer. The status of this asset should be **Scheduled** or **Written off**.
+6. If you selected a company to transfer the asset to, you can select the fixed asset inventory number that the asset will have in the receiving company after the transfer is completed. The status of this asset should be **Scheduled** or **Written off**.
 
     After a transference transaction is posted in the fixed assets journal (**Fixed assets (Russia) \> Journals \> FA journal**), the following information is automatically updated on the **Transference to another company** page:
 
