@@ -5,7 +5,7 @@ title: Retail components
 description: This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
 author: sericks007
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
