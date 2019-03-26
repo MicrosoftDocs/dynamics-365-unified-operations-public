@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: FA - Specific accounting for working clothes/Special riggings
+title: Working clothes/Special riggings accounting (Russia)
 description: 
 author: ShylaThompson
 manager: AnnBe
@@ -340,3 +340,7 @@ Use this procedure to return a working clothes item or special rigging item to a
 17. Click **Validate** \> **Validate** to validate the journal.
 
 18. Click **Post** \> **Post** to post the journal.
+
+## Additional resources
+
+- [Not valuable fixed assets (NVFAs)(Russia)](rus-not-valuable-assets.md)
