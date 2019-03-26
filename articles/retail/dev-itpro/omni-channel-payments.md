@@ -49,6 +49,8 @@ the Microsoft Dynamics 365 Payment Connector for Adyen.
 | Card token | A token that is provided by the payment processor for storage in the point of sale system. This card token can only be used by the merchant receiving the token and is generally harmless outside of the system. May also be referred to as 'Card reference'. Recurring card token |
 | Auth(orization) token | When a point of sale system makes an authorization request to a payment processor, the payment processor will provide a unique ID back to the point of sale system as part of the response to that request. This authorization token, or authorization reference, can later be used when calling the processor to perform actions such as reversing or voiding the authorization. Most commonly the authorization token is used to capture funds when an order is fulfilled or a transaciton is being finalized. |
 | Capture token | When a payment is finalized, or captured, the processor provides a reference to that capture back to the point of sale. That capture can be referenced in subsequent operations such as refund requests. | 
+| Card not present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
+| Card present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manyally either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
 ## Overview
 
@@ -60,10 +62,35 @@ All scenarios described in this article can be implemented using the standard pa
 
 Each of the scenarios described in this document requires a payment connector that supports omni-channel payments. The out of box Adyen connector may also be used as it supports each of the scenarios enabled through the SDK. For more information about implementing payment connectors and the retail SDK in general visit the [Retail for IT pros and developers home page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
+#### Card present and card not present connectors
+
+The retail payment SDK relies on two sets of payment APIs. The first, is called iPayment processor. This set of APIs is used to implement card not present payment connectors for use in call center and e-commerce. More information about the iPaymentProcessor interface can be found in this [whitepaper](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) covering payments. 
+
+The second set of APIs is called iNamedRequestHandler. This set of APIs is the supported method of implementing card present payment integrations that utilize a payment terminal. This set of APIs is documented in the [Create a payment intgration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension) document. 
+
+### Basic priciple supporting omni-channel payments
+
+Payment connectors and payment processors utilize references, or tokens, to reference interactions related to card payments. For example, when a payment authorization is requested, a reference to that authorization is provided so that authorization can be used later. This authorization is unique to the merchant, payment connector, and processor. 
+
+When and authorization is created in a channel, the details related to that authorization are created in the context of that channel. When that authorization is refernced later, that same context must be presented for the payment processor to map the requested action to the previous authorization. 
+
+In practice, this means that if an order that was created online is being picked up in the store, the same payment details for that order must also be recalled and used. When those original details are provided as part of the request to capture a payment against the original authorization, the payment processor will understand the request and be able to to capture the payment. 
+
+On order to properly reference the online order, a card not present payment connector which supports the same processor must also be available. Using the same example, the point of sale might have one processor for card present payments, but also have access to other payment connectors in order to fulfill orders created in different channnels using different payment processors. 
+
+#### Deployed payment connectors example
+
+| Channel | Action | Payment connector in use |
+| --- | --- | --- |
+| Online | Order is created and authorization is saved | Payment connector 'A' implemented using iPaymentProcessor |
+| Point of sale | Online order is recalled along with details instructing Payment connector 'A' to be used | Payment connector 'A' implemented using iPaymentProcessor | 
+| Point of sale | Card present payments for point of sale transactions | Payment connector 'B' implemented using iNamedRequestHandler |
+
+
 
 - **[Section name](#Section name)** – This section is a section.
 
-## Supported scenario
+## Supported scenarios
 
 The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard payments SDK. Therefore, it doesn't have special capabilities that aren't also available to other payment connectors. 
 
@@ -73,7 +100,7 @@ The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard paymen
 
 ---
 
-# [8.1.3](#tab/8-1-3)
+# [Buy online, pickup in store](#tab/8-1-3)
 ### Dynamics 365 for Retail POS version 8.1.3
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
