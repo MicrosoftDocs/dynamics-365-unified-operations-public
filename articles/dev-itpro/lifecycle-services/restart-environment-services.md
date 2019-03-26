@@ -1,4 +1,4 @@
-> [!NOTE]---
+---
 # required metadata
 
 title: Restart environment services
