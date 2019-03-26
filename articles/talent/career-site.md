@@ -122,7 +122,7 @@ for a job in an unrelated company, Alpine Ski House. In this case, the sign-in
 will be unsuccessful if the employee tries to use Azure AD
 credentials from Contoso Ltd. 
 
-Candidates need to sign in using Azure Active Directory if the job they are viewing or applying for is listed as internal only. 
+Candidates must sign in by using Azure AD if the job that they are viewing or applying for is listed as internal only.
 
 ## Create and maintain a profile
 
@@ -151,14 +151,16 @@ applications, profile, and resumes.
 > [!NOTE] 
 > Job recommendations are shown only if at least 10 jobs are posted on the career site, and if the candidate has completed a profile.
 
-Internal candidates are also able to view who the hiring manager and/or the recruiter for the job is in case they want to contact them further. External candidates, on the other hand, have no visibility into who are the hiring team members for any job. 
+Internal candidates can also see who the hiring manager and/or recruiter for a job is, in case they want to contact those members of the hiring team. However, external candidates have no visibility into the members of the hiring team for any job.
 
 ## Contact the hiring team
-The ability to contact the hiring team is only available for internal candidates for all jobs, whether internal only or publicly posted. Candidates can choose to **Contact hiring team**  to express interest or know more about the posted job. They can pick any of the listed hiring team memebers (hiring manager or recruiters) to send the message to, along with an optional resume if they choose to attach one. They can also pick an existing resume already uploaded as part of their profile.  
+Only internal candidates can contact the hiring team. This limitation applies to all jobs, regardless of whether they are internal only or were publicly posted.
 
-Once an internal candidate reaches out to the hiring team member, Attract sends a mail to the chosen recepients on the candidate's behalf. At the same time, the candidate's profile is also added to the prospect stage if it's enabled for that job. Recruiters or hiring managers can view candidates who reached out to them under the **Prospect** stage, and they can review the profiles and invite potential candidates to apply. 
+Candidates might want to contact the hiring team to express interest in a job that was posted or learn know more about it. They can select to contact any of the hiring team members who are listed (hiring manager or recruiters). They can also optionally attach a resume to the message that is sent, or they can select an existing resume that they previously uploaded as part of their profile.
 
-Candidates can apply for the job they have already contacted the hiring team member for. Once applied, they can no longer contact the hiring team through the career site. 
+After an internal candidate selects the hiring team members to contact, Attract sends an email to those people on the candidate's behalf. At the same time, the candidate's profile is added to the **Prospect** stage, if that stage is available for the job. Under the **Prospect** stage, recruiters or hiring managers can view the candidates who have contacted them. They can also review candidate profiles and invite potential candidates to apply.
+
+Candidates can apply for a job that they have already contacted hiring team members about. After they apply, candidates can no longer contact the hiring team through the career site.
 
 ## Apply for jobs
 
