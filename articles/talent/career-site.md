@@ -156,7 +156,7 @@ Internal candidates can also see who the hiring manager and/or recruiter for a j
 ## Contact the hiring team
 Only internal candidates can contact the hiring team. This limitation applies to all jobs, regardless of whether they are internal only or were publicly posted.
 
-Candidates might want to contact the hiring team to express interest in a job that was posted or learn know more about it. They can select to contact any of the hiring team members who are listed (hiring manager or recruiters). They can also optionally attach a resume to the message that is sent, or they can select an existing resume that they previously uploaded as part of their profile.
+Candidates might want to contact the hiring team to express interest in a job that was posted or learn more about it. They can contact any of the hiring team members who are listed (hiring manager or recruiters). They can also optionally attach a resume to the message, or they can select an existing resume they previously uploaded as part of their profile.
 
 After an internal candidate selects the hiring team members to contact, Attract sends an email to those people on the candidate's behalf. At the same time, the candidate's profile is added to the **Prospect** stage, if that stage is available for the job. Under the **Prospect** stage, recruiters or hiring managers can view the candidates who have contacted them. They can also review candidate profiles and invite potential candidates to apply.
 
