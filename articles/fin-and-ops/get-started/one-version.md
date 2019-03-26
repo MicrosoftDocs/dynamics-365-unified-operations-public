@@ -93,7 +93,7 @@ Yes, in the upcoming months customers who are on version 7.x or 8.0 will be able
 
 ### Do these updates apply to on-premises?
 
-Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. The process of the updates outlined in this topic only apply to the cloud service.
+Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. They will have a 3 month expiry in general. However, the process of the updates outlined in this topic only apply to the cloud service.
 
 ## Process
 
@@ -219,7 +219,7 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 
 ### What does end of service mean?
 
-Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
+Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than 3 months. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
 
 All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is.
 

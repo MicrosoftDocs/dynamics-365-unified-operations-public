@@ -65,11 +65,8 @@ select the **Company information** tab.
     upper left of the career site. By selecting the logo image, candidates go to
     a page that lists all open jobs.
 
-    >   [!NOTE] 
-    >   The logo image that appears on the career site has a fixed
-    >   height of 20 pixels (px). The image that you add in the Admin center is
-    >   scaled to fit. Therefore, depending on the image, the width might
-    >   change.
+    > [!NOTE] 
+    > The logo image that appears on the career site has a fixed height of 20 pixels (px). The image that you add in the Admin center is  scaled to fit. Therefore, depending on the image, the width might change.
  
 To set the values for the following items, sign in to Attract as an administrator,
 select **Admin center** on the **Settings** menu, and then
@@ -79,9 +76,8 @@ select the **Career site management** tab.
     Attract career site will be searchable using search engines like Bing
     and Google.
 
-    >   [!NOTE] 
-    >   There might be a delay between turning this setting on and search
-    >   results appearing, depending on the search engine that you are using.
+    > [!NOTE] 
+    > There might be a delay between turning this setting on and search results appearing, depending on the search engine that you are using.
          
 ## Career site URLs
 
@@ -138,13 +134,8 @@ profile is created, it can be used to apply for jobs that the candidate is
 interested in. Profiles also help Attract recommend the right jobs to
 candidates.
 
->   [!NOTE]
->   If a candidate uses an email ID to sign in using one of the
->   authentication providers listed above, that email ID will default to the contact
->   email ID associated with the profile. However, the latter can be changed at
->   any time and is completely independent of the former. Attract will always use
->   the contact email ID to associate with your profile for all email
->   communications.
+> [!NOTE]
+> If a candidate uses an email ID to sign in using one of the authentication providers listed above, that email ID will default to the contact email ID associated with the profile. However, the latter can be changed at any time and is completely independent of the former. Attract will always use the contact email ID to associate with your profile for all email communications.
 
 ## Find the right job
 
@@ -157,9 +148,8 @@ Candidates can also view a set of recommended jobs on the career site. The jobs
 that are recommended to a candidate are based on the candidate's past
 applications, profile, and resumes.
 
->   [!NOTE] 
->   Job recommendations are shown only if at least 10 jobs are posted on
->   the career site, and if the candidate has completed a profile.
+> [!NOTE] 
+> Job recommendations are shown only if at least 10 jobs are posted on the career site, and if the candidate has completed a profile.
 
 Internal candidates are also able to view who the hiring manager and/or the recruiter for the job is in case they want to contact them further. External candidates, on the other hand, have no visibility into who are the hiring team members for any job. 
 
@@ -172,11 +162,25 @@ Candidates can apply for the job they have already contacted the hiring team mem
 
 ## Apply for jobs
 
-After candidates find the right job, they can apply by using the **Apply**
-button on the **Job details** page. At this point, candidates can either create a
-new profile or review the information in their existing profile.
+After candidates find the right job, they can apply by using
+the **Apply** button on the **Job details** page. At this point, candidates can
+either create a new profile or review the information in their existing profile.
 Candidates can also upload a resume, as required, and then submit the job
 application.
+
+### Enable applying for jobs with LinkedIn profiles
+
+You can make it easy for candidates to apply for your positions by configuring Attract to allow them to apply through LinkedIn.
+
+> [!NOTE] 
+> You need to have one or more recruiter licenses from LinkedIn before you can allow candidates to apply with LinkedIn.
+
+1. Sign in to Attract as an admin.
+2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
+3. Select the **LinkedIn Integration** tab and connect with a LinkedIn recruiter account.
+4. In the **LinkedIn Recruiter System Connect Integration** section, select **Enabled** for the **Apply with LinkedIn** setting.
+
+After you've enabled the setting, candidates can apply using their existing LinkedIn profile data. When candidates apply by choosing the **Apply with LinkedIn** button, they are asked to authenticate with LinkedIn if they're not already signed in. After they've authenticated, their LinkedIn profile replaces any existing profile data shown in the application page. Candidates can edit the information as needed and then submit the application. If a candidate navigates away from the page without applying for the job, their profile data is not updated in Attract.
 
 ## Check application status
 

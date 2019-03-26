@@ -478,6 +478,8 @@
       href: retail-components.md
     - name: Retail Server architecture
       href: dev-itpro/retail-server-architecture.md
+    - name: Select an in-store topology
+      href: dev-itpro/retail-in-store-topology.md
     - name: Commerce Data Exchange and retail channel communications
       href: dev-itpro/define-retail-channel-communications-cdx.md
     - name: Retail Modern POS architecture

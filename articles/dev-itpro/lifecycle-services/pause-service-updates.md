@@ -5,7 +5,7 @@ title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explans how to pause service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,7 +59,9 @@ If you decide to pause updates, you have two options:
 
 You can pause a maximum of two continuous updates at a time. (According to other information that is communicated to you, you can pause updates for up to three months. These two statements are consistent, because three months correspond to two updates.) For example, if you're using version 8.1.3, you can pause update version 10.0.0 and update version 10.0.1. However, you can't pause update version 10.0.2. In addition, in the month of April, you can pause up to next two updates. However, you will not be able to pause updates scheduled for July, August and later. 
 
-> [!NOTE]
+> [!IMPORTANT]
+>  There is no way to pause more than two updates, regardless of your industry or business schedule. If you are more than 2 updates behind and you find a critical issue during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. This is only required if you are more than two updates behind and you are unable to use the pause updates functionality available in LCS to pause the update to production.
+
 > If you pause updates to your sandbox environment, updates are automatically paused for your production environment too, because Microsoft always updates configured sandbox environments before production environments.
 
 ## How do I pause updates?

@@ -5,7 +5,7 @@ title: Manage Finance and Operations support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -142,48 +142,4 @@ To add, select **Add a Software Assurance plan** when you create the support inc
 ![](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## Report production outage
-Report production outage provides a quick and effective channel to escalate  issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.  
-
-This feature is available to all customers that have purchased Dynamics 365 Finance and Operations and have **implementation** projects with a **production** environment deployed in LCS.  
-
-A production outage is defined as **one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations**. 
-
-**Reporting flow**
-1. In a live production environment, a customer experiences an outage or other situation that prevents business from continuing.
-2. The customer reports a production outage issue by using the LCS Support portal.
-3. The customer selects a production outage issue and provides additional information.
-4. A Microsoft support engineer acknowledges the production outage ticket within 30 minutes of submission and begins to immediately collaborate with stakeholders to investigate and resolve the issue.
-5. A support engineer contacts the customer to provide a status update
-
-**Access and availability**
-
-All users that have been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers. 
-
-This feature is available to:
-- Dynamics 365 for Finance and Operation 
-- Environments managed by Microsoft 
-- A production environment in the LCS Project 
-- All support plans
-
-### Report a production outage
-1. Sign in to your LCS project.
-2. From the hamburger menu, click **Support**.
-![Support](media/outage1.jpg)
-
-3. On the **Submitted To Microsoft** tab, click **Report production outage**.
-![Support](media/outage2.jpg)
-
-4. Confirm the production outage, select the outage scenario from the drop-down list, and then click **Continue**.
-![scenario](media/outage3.jpg)
-
-5. Add a title and details about the outage, and then click **Next**.
-![detail](media/outage4.jpg)
-
-6. Provide contact information, and then click **Next**. 
-![contact](media/outage5.jpg)
-
-7. Click **Done**.
-![done](media/outage6.jpg)
-
-> [!NOTE] 
-> If you don't see your situation listed in the outage scenarios, enter a support incident through LCS. If, during the initial investigation by a Microsoft support engineer, it is found that the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and service-level agreement (SLA) based on your current support plan.
+For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).

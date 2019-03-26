@@ -59,6 +59,10 @@ After a successful master planning run, a clean-up job is scheduled to remove pl
 
 The clean-up job has now been enhanced to remove data from previously failed master planning runs, and the design has been optimized to never block other threads, leaving all helpers available for the master planning run. These improvements also apply to intercompany master planning.
 
+## Realize the conditional tax when postdated checks are drawn
+
+Conditional tax is cash basis value-added tax (VAT) that is required in some countries/regions. This tax can be deducted until you have paid the invoice. If the payment method is posted checks, you now have the option to realize the tax during payment or when the posted checks are drawn. To enable this option, go to **Cash and bank management parameters > Postdated checks > Realize the conditional tax when postdated checks are drawn**. For more information, see [Conditional tax](../../financials/general-ledger/indirect-taxes-overview.md#conditional-sales-tax). 
+
 ## Non-GST transactions for India 
 This feature allows you to create non-GST transactions with the Tax engine. To create a non-GST transaction, select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
 
@@ -98,6 +102,21 @@ As part of the ongoing enhancements to RCS, we are increasing the breadth of reg
 - India 
 - Europe (Preview)
 - China (Preview)
+
+## Tax functionality updates for China
+
+In China, official tax invoices can only be issued via two government-authorized invoicing software (Aisino and BaiWang). This feature lets you export the issued invoices into the .TXT and .XML file formats so you can import the files into the authorized invoicing software of Aisino and BaiWang providers accordingly. 
+
+You can also maintain the tax classification and codes in Finance and Operations, which is in alignment with tax integration interface 3.0. The exported invoice file will include commodity codes (classification of goods and services) which is mandatory for China. 
+
+The standard category hierarchy setting functionality is used to include the commodity codes in the invoice lines of the exported file.
+
+The following updates are included in this release:
+
+- There is a new interface with BaiWang provider software that lets you export issued invoices in .XML format and you can import files from BaiWang software in .TXT and .XML formats.
+- We updated the structure of the issued invoice that is exported and you can import .TXT file for interface with Aisino provider software.
+
+For more information, see [Configure tax integration for China](../../financials/localizations/apac-chn-tax-integration.md).
 
 ## Electronic reporting (ER)
 
@@ -166,7 +185,6 @@ Basic localization in the following two areas is available:
 - Correspondence of accounts for all new general ledger postings.
 - Functional coexistence of process industries features and Russian country context.
 
-
 ## Additional resources
 
 ### Bug fixes
@@ -192,4 +210,3 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
-
