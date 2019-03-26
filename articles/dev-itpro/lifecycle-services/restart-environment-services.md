@@ -59,7 +59,7 @@ To restart a specific service in a deployed environment, follow these steps.
     
  ## Stop and start all services
  
- To stop and start **all** services use the **Stop** followed by the **Start** menu option on the environment details page.
+ To stop and start **all** services, use the **Stop** followed by the **Start** menu option on the environment details page.
  
   > [!NOTE]
   > This functionality is only available in Tier-2+ Sandbox environments and not in the production environment.
