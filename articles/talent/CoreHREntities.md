@@ -37,6 +37,9 @@ Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and 
 For more information about CDS for Apps, see [What is Common Data Service for
 Apps](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro).
 
+> [!IMPORTANT]
+> The previous release of the Common Data Service (CDS 1.0) is being discontinued. On April 15th, 2019 the integration between Core HR and the Common Data Service (CDS 1.0) will be turned off. For more information about upgrading the Common Data Service to the Common Data Service for Apps, please see [Upgrade to Common Data Service for Apps] https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds
+
 The following Core HR entities are available in CDS for Apps.
 
 ## Benefit entities
@@ -789,19 +792,19 @@ The following Core HR entities are available in CDS for Apps.
 ## Entity relationship models
 
 ### Worker
-![Worker](./media/HCMCommon - Worker Entity Diagram.png)
+![Worker](./media/HCMCommon-worker-entity-diagram.png)
 
 ### Job and Job Position
-![Job and Job Position](./media/HCMCommon - Job and Job Position Entity Diagram.png)
+![Job and Job Position](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
 ### Benefits
-![Benefits](./media/HCMCommon - Benefits Entity Diagram.png)
+![Benefits](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### Compensation
-![Compensation](./media/HCMCommon - Compensation Entity Diagram.png)
+![Compensation](./media/HCMCommon-compensation-entity-diagram.png)
 
 ### Leave
-![Leave](./media/HCMCommon - Leave Entity Diagram.png)
+![Leave](./media/HCMCommon-leave-entity-diagram.png)
 
 ### Work Calendar
-![Work Calendar](./media/HCMCommon - Work Calendar Entity Diagram.png)
+![Work Calendar](./media/HCMCommon-work-calendar-entity-diagram.png)
