@@ -37,6 +37,9 @@ Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and 
 For more information about CDS for Apps, see [What is Common Data Service for
 Apps](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro).
 
+> [!IMPORTANT]
+> The previous release of the Common Data Service (CDS 1.0) is being discontinued. On April 15th, 2019 the integration between Core HR and the Common Data Service (CDS 1.0) will be turned off. For more information about upgrading the Common Data Service to the Common Data Service for Apps, please see [Upgrade to Common Data Service for Apps] https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds
+
 The following Core HR entities are available in CDS for Apps.
 
 ## Benefit entities
