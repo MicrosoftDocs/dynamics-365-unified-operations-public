@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Not valuable fixed assets (NVFAs) for Russia
-description: This topic provides information about maintaining Not valuable fixed assets (NVFAs) for Russia.
+title: Not valuable fixed assets (NVFAs)(Russia)
+description: This topic provides information about maintaining not valuable fixed assets (NVFAs) for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/06/2018
@@ -28,16 +28,16 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Not valuable fixed assets (NVFAs) accounting for Russia
+# Not valuable fixed assets (NVFAs)(Russia)
 
 [!include [banner](../includes/banner.md)]
 
 You can track and account for low-value, high-wear items that are used in the workplace as a special type of fixed asset, which named **Not valuable fixed assets** (NVFAs). NVFAs are items with a cost that is less than the specified cost limit. The full cost of NVFAs should be written off for depreciation in the first month of use.
-In the process of Fixed asset purchasing the system divides fixed assets and NVFAs by price according to the **Max cost of the NVFA** parameter value (see [Set up fixed asset parameters for NVFAs](rus-fa-nv-assets/articles/financials/localizations/rus-not-valuable-assets.md#Set-up-fixed-asset-parameters-for-NVFAs)). 
+When you purchase fixed assets, fixed assets and NVFAs are divided by price according to the **Max cost of the NVFA** parameter value  that you set up when you [set up fixed asset parameters for NVFAs](#set-up-fixed-asset-parameters-for-nvfas). 
+
 After you purchase and register the NVFAs, you can perform the following tasks:
 
   - To automate the placement of NVFAs into operation and into subsequent depreciation transactions.
-
   - To print the MB-2, MB-4, and MB-8 reports.
 
 
@@ -46,7 +46,7 @@ After you purchase and register the NVFAs, you can perform the following tasks:
 
 Use this procedure to set up fixed asset parameters for not valuable fixed assets (NVFAs).
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Parameters**.
+1.  Click **Fixed assets (Russia) \> Setup \> Parameters**.
 2.  In the **Base value model** field, select the default base value model.
 3.  In the **Max cost of the NVFA** field, enter the maximum limit for the cost of the NVFA.
 4.  In the **NVFA inventory profile** field, select the inventory profile for the NVFA.
@@ -57,13 +57,13 @@ Use this procedure to set up fixed asset parameters for not valuable fixed asset
 
 ## Set up FA groups for NVFA
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **FA groups**
+1.  Click **Fixed assets (Russia) \> Setup \> FA groups**
 2.  Create a new record on the **FA GROUPS** page list and fill in the fields. Select **NVFA** in the **Type of group** field.
 
 
 ## Set up identification of FA groups for NVFAs 
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Working clothes/ Special riggings/ NVFA** \> **Identification of FA groups**
+1.  Click **Fixed assets (Russia) \> Setup \> Working clothes/ Special riggings/ NVFA \> Identification of FA groups**
 2.  Create a new record on the **CONDITION FOR FA GROUP IDENTIFICATION** page list and fill in the fields.
 3. Click **Compliance** and specify item relation with FA group.
 
@@ -218,4 +218,6 @@ Use this procedure to print the not valuable fixed asset (NVFA) Statement of wri
 19. On the **Officials** tab, you can view details about the officials, who are assigned in the **Officials**. You can also modify the employee details, if modification is required.
 20. Click **Print** to generate the NVFA Statement of writing off (No. MB-8).
 
+## Additional resources
 
+- [Working clothes/Special riggings accounting (Russia)](rus-working-clothes-instruments-accounting.md)
