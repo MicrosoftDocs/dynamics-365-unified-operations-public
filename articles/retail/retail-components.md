@@ -75,6 +75,9 @@ Dynamics 365 for Retail provides mid-market and large retailers with a complete 
 <td>Retail Store Scale Unit is a set of features that supports selling products in a store that does not have constant Internet connectivity to a back office or headquarters (HQ). The Store Scale Unit is designed specifically for in-store operation, and enables cross terminal transactions and shift operations even when you are not connected to the back office.</td>
 </tr>
 <tr>
+<td>Retail Cloud Scale Unit</td>
+<td>Retail Cloud Scale Unit is a set of components that enables Retail channel operations (such as point of sale operations) in a store or e-Commerce operation. Retail Cloud Scale Unit includes Retail Server, Retail channel database, and Cloud POS. Retail Cloud Scale Unit is hosted and managed by Microsoft. Retail Cloud Scale Unit supersedes the previous iteration of cloud-hosted Retail Server, Retail channel database, and Cloud POS.</td>
+<tr>
 <td>Commerce runtime</td>
 <td>Commerce runtime (CRT) serves as the core engine that supports the business logic across the various channels. Commerce runtime contains a data access layer, services layer, workflow layer, and an application programming interface (API) layer.</td>
 </tr>
