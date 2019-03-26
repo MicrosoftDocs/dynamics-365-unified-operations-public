@@ -52,13 +52,20 @@ the Microsoft Dynamics 365 Payment Connector for Adyen.
 
 ## Overview
 
-This topic provides an overview of omni-channel payment support within Dynamics 365 for Retail. 
+This topic provides an overview of omni-channel payment support within Dynamics 365 for Retail. In general, "omni-channel payments" describes the ability to create an order in one channel and fulfill it in another channel. The  key to omni-channel payment support is to preserve payment details with the rest of the order details and to utilize those payments when the order is recalled or processed in another channel.   A classic example of this is "Buy online, pickup in store". In that case, the payment details are added when the order is created online and can be recalled at the point of sale to charge the customer's payment card at the time of pickup. 
+
+All scenarios described in this article can be implemented using the standard payments SDK provided with Microsoft Dynamcis 365 for Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out of box implementation of each of the scenarios described in this document. 
+
+### Prerequisites
+
+Each of the scenarios described in this document requires a payment connector that supports omni-channel payments. The out of box Adyen connector may also be used as it supports each of the scenarios enabled through the SDK. For more information about implementing payment connectors and the retail SDK in general visit the [Retail for IT pros and developers home page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+
 
 - **[Section name](#Section name)** – This section is a section.
 
 ## Supported scenario
 
-The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard payments SDK. Therefore, it doesn't have special capabilities that aren't also available to other payment connectors.
+The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard payments SDK. Therefore, it doesn't have special capabilities that aren't also available to other payment connectors. 
 
 ### Supported Versions
 
