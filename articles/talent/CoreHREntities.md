@@ -792,19 +792,19 @@ The following Core HR entities are available in CDS for Apps.
 ## Entity relationship models
 
 ### Worker
-[![Worker](./media/HCMCommon - Worker Entity Diagram.png)
+[![Worker](./media/HCMCommon - Worker Entity Diagram.png)](./media/HCMCommon - Worker Entity Diagram.png)
 
 ### Job and Job Position
-[![Job and Job Position](./media/HCMCommon - Job and Job Position Entity Diagram.png)
+[![Job and Job Position](./media/HCMCommon - Job and Job Position Entity Diagram.png)](./media/HCMCommon - Job and Job Position Entity Diagram.png)
 
 ### Benefits
-[![Benefits](./media/HCMCommon - Benefits Entity Diagram.png)
+[![Benefits](./media/HCMCommon - Benefits Entity Diagram.png)](./media/HCMCommon - Benefits Entity Diagram.png)
 
 ### Compensation
-[![Compensation](./media/HCMCommon - Compensation Entity Diagram.png)
+[![Compensation](./media/HCMCommon - Compensation Entity Diagram.png)](./media/HCMCommon - Compensation Entity Diagram.png)
 
 ### Leave
-[![Leave](./media/HCMCommon - Leave Entity Diagram.png)
+[![Leave](./media/HCMCommon - Leave Entity Diagram.png)](./media/HCMCommon - Leave Entity Diagram.png)
 
 ### Work Calendar
-[![Work Calendar](./media/HCMCommon - Work Calendar Entity Diagram.png)
+[![Work Calendar](./media/HCMCommon - Work Calendar Entity Diagram.png)](./media/HCMCommon - Work Calendar Entity Diagram.png)
