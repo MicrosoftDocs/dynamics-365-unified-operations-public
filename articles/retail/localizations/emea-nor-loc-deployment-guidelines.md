@@ -357,6 +357,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
+7. Register the CRT change in the extensions configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
 #### SalesTransactionSignatureNorway component
 
 1. Find the **Runtime.Extensions.SalesTransactionSignatureNorway** project.
@@ -414,6 +423,22 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 # [Retail 7.3.5 and later](#tab/retail-7-3-5)
 
+#### RegisterAuditEventNorway component
+
+1. Find the extensions configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+2. Register the CRT change in the extensions configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
 #### SequentialSignatureRegister component
 
 1. Find the **Runtime.Extensions.SequentialSignatureRegister** project.
@@ -433,6 +458,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+7. Register the CRT change in the extensions configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 #### SalesTransactionSignatureNorway component
 
@@ -491,6 +525,22 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
+#### RegisterAuditEventNorway component
+
+1. Find the extensions configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+2. Register the CRT change in the extensions configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
 #### SequentialSignatureRegister component
 
 1. Find the **Runtime.Extensions.SequentialSignatureRegister** project.
@@ -510,6 +560,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+7. Register the CRT change in the extensions configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 #### SalesTransactionSignatureNorway component
 
@@ -1228,6 +1287,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ``` xml
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
         <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -1240,6 +1300,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ``` xml
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
