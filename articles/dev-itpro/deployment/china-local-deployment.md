@@ -60,8 +60,6 @@ Due to certain technology dependencies, the features listed below will not be av
 
     -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
 
-    -   **Issue text search** for KB articles will not be available; however, the KB list will be available in April 2019.
-
     -   **Service and Support requests** will be available through a portal connected to 21Vianet but may not be available through LCS. For more information, see Dynamics 365 Finance and Operations Operated by 21Vianet Support.
 
     -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
