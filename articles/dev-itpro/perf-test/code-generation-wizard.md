@@ -2,7 +2,7 @@
 # required metadata
 
 title: Acceptance test library code generation wizard
-description: This topic provides information about the Code genration wizard for the Acceptance test library.
+description: This topic provides information about the Code generation wizard for the Acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
@@ -34,23 +34,26 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-The ATL Code Generator is the swiss-army knife that generates/update quickly new ATL entities, queries and specification based on tables and data entities.
+[!include [banner](../includes/preview-banner.md)]
 
-## Create `AtlEntity` class using the wizard
+The Acceptance test library (ATL) code generator quickly generates and updates new ATL entities, queries, and specification based on tables and data entities.
+
+## Create `AtlEntity` class 
+Complete the following steps to create the `AtlEntity` class by using the Code generation wizard.
 
 1. Open the table in the designer window in Visual Studio.
-2. Right click the name of the table and select 'Generate ATL Entity' from the Add-ins menu.
-3. Select the fields that should be included in the `AtlEntity` and press the 'Add' button
-4. Rename the name of entity if a different name if required.
-5. Rename the name of the fields if required
-6. Press the 'Generate' button to create the class.
+2. Right-click the name of the table and on the **Add0ins** menu, select **Generate ATL Entity**.
+3. Select the fields that should be included in the `AtlEntity` and click **Add**.
+4. If necessary, rename the entity and the fields.
+5. Click **Generate** to create the class.
 	
 	
-### Additional steps to consider
+### Additional optional steps 
+When you create the `AltEntity` class, you can also:
 
-1. Add actions required for the scenario.
-2. Add a `default` method to `AtlData` classes.
-3. Override the `setMainRecordField` method in order to call the "modifiedField(_fieldId)" method on the table.
+- Add required actions for the scenario.
+- Add a `default` method to `AtlData` classes.
+- Override the `setMainRecordField` method in order to call the "modifiedField(_fieldId)" method on the table.
 
     ```
     protected void setMainRecordField(FieldId _fieldId, anytype _value)
@@ -60,30 +63,29 @@ The ATL Code Generator is the swiss-army knife that generates/update quickly new
     }
     ```
 
-## Create `AtlQuery` class using the wizard
+## Create `AtlQuery` 
+Complete the following steps to create the `AtlQuery` class by using the Code generation wizard. 
 
 1. Open the table in the designer window in Visual Studio.
-2. Right click the name of the table and select 'Generate ATL Query' from the Add-ins menu
-3. Select the fields and relations that should be included in the `AtlQuery` and press the 'Add' button
-4. Rename the name of query if a different name if required.
-5. Rename the name of the fields and relations if required
-6. Press the 'Generate' button to create the class.
+2. Right-click the name of the table and on the **Add-ins** menu, click **Generate ATL Query**.
+3. Select the fields and relations that should be included in the `AtlQuery`, and then click **Add**.
+4. If needed, rename the query, the fields, and the relations.
+6. Click **Generate** to create the class.
 	
 	
-### Additional steps to consider
-
-1. Add a `query` method to the `AtlData` class returning an instance of the `AtlQuery` class created above.
+### Additional optional steps
+When you create the `AltQuery` class, you can also add a `query` method to the `AtlData` class that returns an instance of the `AtlQuery` class created in the procedure earlier in this topic.
 
 ## Create `AtlSpec` class using the wizard
+Complete the following steps to create the `AtlSpec` class by using the Code generation wizard.
 
 1. Open the table in the designer window in Visual Studio.
-2. Right click the name of the table and select 'Generate ATL Specification' from the Add-ins menu.
-3. Select the fields that should be included in the `AtlSpec` and press the 'Add' button.
-4. Rename the name of specification if a different name is required.
-5. Rename the name of the fields if required.
-6. Press the 'Generate' button to create the class.
+2. Right-click the name of the table and on the **Add-ins** menu, select **Generate ATL Specification**.
+3. Select the fields that should be included in the `AtlSpec`, and click **Add**.
+4. If needed, rename the specification and the fields.
+5. Click **Generate** to create the class.
 	
 	
-### Additional steps to consider
+### Additional optional steps 
 
-1. Add a `spec` method to the data class returning an instance of the `AtlSpec` class created above.
+Add a `spec` method to the data class which will return an instance of the `AtlSpec` class created in the procedure earlier in this topic.
