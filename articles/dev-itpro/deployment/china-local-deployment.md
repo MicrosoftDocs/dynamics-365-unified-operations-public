@@ -70,7 +70,7 @@ Due to certain technology dependencies, the features listed below will not be av
 
 -   The following features will not be available due to certain **current Azure Active Directory limitations** in China:
 
-    -   The **System administration \> Setup \> B2B Invitation configuration** form will not be available due to B2B being unavailable in Azure Active Directory in China. See [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b) for details.
+    -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to B2B being unavailable in Azure Active Directory in China. See [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b) for details.
 
 -   [Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 2 SKU, which is unavailable in China. 
 
@@ -80,7 +80,7 @@ Due to certain technology dependencies, the features listed below will not be av
 - [Dynamics 365 Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement(世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
-- [Dynamics 365  Legal information	(Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
+- [Dynamics 365  Legal information (Dynamics 365 法律信息](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
 - [Service terms for Dynamics 365 Lifecycle services](https://www.21vbluecloud.com/Dynamics365/d365-lcs/)
 - [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
