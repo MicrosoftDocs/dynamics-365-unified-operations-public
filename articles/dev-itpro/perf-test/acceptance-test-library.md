@@ -71,25 +71,25 @@ salesLine.inventoryTransactions().assertExpectedLines(
 
 ## Concepts
 The structure and naming of the classes and methods in the ATL is quite rigid. This increases discoverability and makes it easier to write tests even in domains you are not familiar with. The classes are grouped in these concepts.
-- [Navigation](Concepts_Navigation.md)
+- [Navigation](concepts-navigation.md)
     
     Discover entities and test data methods in a familiar hierarchy.
-- [Test data methods](Concepts_TestDataMethods.md)
+- [Test data methods](test-data-methods.md)
     
     Methods to setup test data.
-- [Entities](Concepts_Entities.md)
+- [Entities](concepts-entities.md)
     
     Entities represent data and associated behavior that is perceived as a single unit.
-- [Creators](Concepts_Creators.md)
+- [Creators](concepts-creators.md)
 
     Creators allow creating specific test data.
-- [Commands](Concepts_Commands.md)
+- [Commands](concepts-commands.md)
 
     Commands execute business operations.
-- [Queries](Concepts_Queries.md)
+- [Queries](concepts-queries.md)
 
     Queries finds entities.    
-- [Specifications](Concepts_Specifications.md)
+- [Specifications](concepts-specifications.md)
 
     Specifications describe expected entities at the end of the test.
 
