@@ -60,7 +60,7 @@ Due to certain technology dependencies, the features listed below will not be av
 
     -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
 
-    -   **Service and Support requests** will be available through a portal connected to 21Vianet but may not be available through LCS. For more information, see Dynamics 365 Finance and Operations Operated by 21Vianet Support.
+    -   **Service and Support requests** will be available through a portal connected to 21Vianet but may not be available through LCS. For more information, see [Dynamics 365 Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
 
     -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
 
