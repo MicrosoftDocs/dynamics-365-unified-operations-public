@@ -31,42 +31,52 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include[banner](../../includes/banner.md)]
 
-Features are added and updated in every release of Dynamics 365 for Finance and Operations. The **Feature management** experience provides you with a workspace where you can view a list of features that have been delivered in each release. New features are disabled by default and you can use the workspace to enable those features and view the documenation for them.
+Features are added and updated in every release of Microsoft Dynamics 365 for Finance and Operations. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
-## Using the Feature management workspace
+## The Feature management workspace
 
-The **Feature management** workspace is found in the **Workspaces** menu area or in the **Common** area page. Click on the workspace icon and you will see a page with a list of features for all releases that are supported by the Feature management experience. We will be enhancing the Feature management experience over time to include additional functionality to help you manage features.
+You can open the **Feature management** workspace from either the **Workspaces** menu area or the **Common** area page. When you select the workspace icon, you will see a page that includes a list of features for all releases that are supported by the Feature management experience. Over time, Microsoft will enhance the Feature management experience so that it includes additional functionality to help you manage features.
 
-The feature management workspace contains a list of features and details pane. The feature list includes the following information:
-- The **Feature name** describes the feature that was added
-- The **Enabled** icon indicates that a feature has been enabled (check mark), scheduled (clock), or not enabled (blank). The feature setting is used for all legal entities. Note that the feature may be enabled, but it is still controlled by security. The feature will only be available to users that have access to the feature based on their security role. It will also only be available for legal entities to which the user has access. 
-- The **Enable date** is the date on which the feature was enabled or will be enabled. 
-- The **Feature added** date is the date that the feature was added to your environment. The date is added automatically when you update your environment during the monthly release cycles. 
-- The **Module** column describes which module is affected by the new feature.
+The **Feature management** workspace contains a list of features and a details pane. The feature list includes the following information:
 
-The newest features are shown at the top of the list. Features will remain on the list indefinitely so that you can still access features at a later date. We plan to add tabs to better organize the features by age.
+- **Feature name** – A description of the feature that was added.
+- **Enabled** – A symbol indicates whether a feature has been turned on (check mark), has been scheduled (clock), or is turned off (blank). The setting that is shown here is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only for legal entities that the user has access to.
+- **Enable date** – The date when the feature was turned on or will be turned on.
+- **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
+- **Module** – The module that is affected by the new feature.
 
-When you select a feature, additional information is presented in a details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date that the feature was added, the module that is affected by the feature, and a link to the documentation entitled **Learn more**. Click on the link to view the documentation for the feature. You will be routed to a temporary page if the documentation is not available. You can also add your own comments in the **Comments** box on that pane. 
+The newest features appear at the top of the list. Features will remain on the list indefinitely. Therefore, you will still be able to access features later. Microsoft plans to add tabs to better organize the features by age.
 
-## Enable a feature
-You can enable features using the **Enable** button on the details pane.
-1) If the feature is not enabled, an **Enable** button appears on the form. Click **Enable**.
-2) A dialog appears when you can specify the date on which you want to enable the feature. The date is defaulted to today's date.
-3) Click **Enable** to enable the feature.
-4) Some features cannot be disabled once you have enabled them. You will receive a warning that the feature cannot be disabled and you will be able to cancel your request. However, once you enable that feature, you will not be able to disable it.
-5) A message will appear in the pane below the **Learn more** link that describes that the feature was enabled or when the feature will be enabled. It will appear every time you select the feature in the grid. 
+When you select a feature, additional information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you will be taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
-## Disable a feature
-You can disable features using the **Disable** button that appears for features that have already been enabled. The button will not be available if the feature cannot be disabled. 
-1) If the feature is enabled, a **Disable** button appears on the form unless the feature has been identified as a feature that can't be disabled once it is enabled. Click **Disable**.
-2) A dialog appears and the date on which you want to enable the feature is erased. 
-3) A message will appear in the pane below the **Learn more** link that describes that the feature is not yet enabled. It will appear every time you select the feature in the grid. 
+## Turn a feature on
+
+If a feature hasn't been turned on, an **Enable** button appears in the details pane. You can use this button to turn the feature on.
+
+1. Select the feature that you want to turn on, and then, in the details pane, select **Enable**.
+2. A dialog box appears, where you can specify the date when the feature should be turned on. By default, this date is set to the current date.
+3. Select **Enable** to turn the feature on.
+
+    Some features can't be turned off after you turn them on. If the feature that you're turning on can't be turned off, you receive a warning. At this point, you can cancel the operation and leave the feature turned off. However, if you decide to turn the feature on, you won't be able to turn it off later.
+
+After the feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates when the feature will be turned on. This message will appear every time that you select the feature in the feature list.
+
+## Turn a feature off
+
+If a feature has already been turned on, a **Disable** button appears in the details pane. You can use this button to turn the feature off. The **Disable** button isn't available if the feature can't be turned off after it's turned on.
+
+- Select the feature that you want to turn off, and then, in the details pane, select **Disable**.
+
+    A dialog box appears, and the date when the feature was set to be turned on is deleted.
+
+After the feature is turned off, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't yet been turned on. It will appear every time that you select the feature in the feature list.
 
 ## Features that must be enabled
-In a rare circumstance, we may deliver a critical feature that must be enabled automatically when you do an update. A message will appear in the pane below the **Learn more** link that describes that the feature was enabled automatically. It will appear every time you select the feature in the grid.  
+
+In a rare circumstance, we might deliver a critical feature that must be turned on automatically when you do an update. In this case, a message will appear below the **Learn more** link in the details pane. This message will state that the feature was turned on automatically. It will appear every time that you select the feature in the feature list.
 
 ## Assigning roles
 
-The **Feature management** workspace can be opened by system administrators and by users that are assigned to the **Feature manager** or **Feature viewer** roles that were created to support the Feature management experience. The **Feature manager** can enable and disable any feature and update the comments section for the feature. The **Feature viewer** can view the **Feature management** workspace. 
+The **Feature management** workspace can be opened by system admins, and by users who are assigned to the **Feature manager** or **Feature viewer** roles that were created to support the Feature management experience. Users in the **Feature manager** role can turn any feature on and off. They can also update the comments section for the feature. Users in the **Feature viewer** role can only view the **Feature management** workspace. They can't turn features on and off.
 
-The **Feature manager** and **Feature viewer** roles do not override the existing security that the user has. The role only controls access to enabling and disabling the features. It does not provide access to the features. 
+The **Feature manager** and **Feature viewer** roles don't override the existing security that a user has. The role just controls access to turning features on and off. It doesn't provide access to the features themselves.
