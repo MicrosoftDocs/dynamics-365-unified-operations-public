@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Support for Dynamics 365 for Finance and Operations Operated by 21Vianet in China
+title: Support for Dynamics 365 for Finance and Operations operated by 21Vianet in China
 description: Dynamics 365 for Finance and Operations provides many self-service support options and support through 21Vianet. 
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Support for Dynamics 365 for Finance and Operations Operated by 21Vianet in China
+# Support for Dynamics 365 for Finance and Operations operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
