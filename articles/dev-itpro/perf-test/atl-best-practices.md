@@ -2,7 +2,7 @@
 # required metadata
 
 title: Acceptance test library best practices
-description: This topic provides information about the acceptance test library.
+description: This topic provides best practices for the acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
