@@ -32,6 +32,11 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 # Acceptance test library best practices
 
+[!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
+
+
 ## Use `var` and declare variables inline
 
 + Use the `var` keyword (type inference). 
