@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Finance and Operations Operated by 21Vianet Support
+title: Support for Dynamics 365 for Finance and Operations Operated by 21Vianet in China
 description: Dynamics 365 for Finance and Operations provides many self-service support options and support through 21Vianet. 
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Dynamics 365 for Finance and Operations Operated by 21Vianet Support
+# Support for Dynamics 365 for Finance and Operations Operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,8 +85,13 @@ If you run mission-critical solutions on Dynamics 365 Finance and Operations, Pr
 For details about purchasing Premier support, contact your Microsoft Account team. 
 
 ## Additional resources
+- [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
+- [Dynamics 365 for Finance and Operations operated by 21Vianet in China](../deployment/china-local-deployment.md)
+- [Dynamics 365 for Customer Engagement operated by 21Vianet in China]()
+- [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
+- [Dynamics 365 Service Level agreement(世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
+- [Dynamics 365  Legal information	(Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
+- [Service terms for Dynamics 365 Lifecycle services](https://www.21vbluecloud.com/Dynamics365/d365-lcs/)
+- [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-welcome)
-- [Dynamics 365 Privacy statement](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
-- [Dynamics 365 Service Level agreement](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
-- [Dynamics 365 Legal information](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
