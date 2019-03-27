@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: FAQ: Acceptance test library 
+title: FAQ - Acceptance test library 
 description: This topic provides answers to frequently asked questions about the acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
