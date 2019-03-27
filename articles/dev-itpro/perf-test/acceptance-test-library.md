@@ -2,7 +2,7 @@
 # required metadata
 
 title: Acceptance test library
-description: This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
+description: This topic provides information about the acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
