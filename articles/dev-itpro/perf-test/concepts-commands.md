@@ -1,3 +1,4 @@
+---
 
 title: Acceptance test library commands
 description: This topic provides information about the acceptance test library.
@@ -34,7 +35,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/preview-banner.md)]
 
-Command classes are responsible for executing business operations and allow setting parameters of these operations using fluent APIs.
+Command classes are responsible for executing business operations and they allow setting parameters of these operations using fluent APIs.
 
 ## Naming convention
 The naming convention is:
@@ -52,7 +53,7 @@ AtlCommandSalesReturnOrderLineRegister
 ```
 
 ## Implementation
-Command objects that are returned should implement the `AtlICommand` interface. It's preferable to inherit from the `AtlCommand` class.
+Command objects that are returned should implement the `AtlICommand` interface, and should inherit from the `AtlCommand` class.
 
 Command objects should provide [fluent setter methods](#fluent-setters) for setting parameters of the command.
 
