@@ -1,7 +1,7 @@
 ---
 
-title: Acceptance test library commands
-description: This topic provides information about the acceptance test library.
+title: Acceptance test library entities
+description: This topics discusses the test entity class that represents data and associated behavior.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
@@ -29,35 +29,32 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Acceptance test library commands
+# Acceptance test library entities
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-# Entities
-A test entity class represents data and associated behavior that is perceived as a single concept. Usually test entity classes are based on forms like: Sales order, Transfer order, Released product, etc.
-
-The test entity classes exposes the properties that are most frequently used in test scenarios as well as the behavior that is most important from the test data setup and scenario test perspective.
+A test entity class represents data and behavior that is perceived as a single concept. Test entity classes are based on forms like Sales order, Transfer order, and Released product. The test entity classes expose the properties that are most frequently used in test scenarios as well as the behavior that is most important from the test data setup and scenario test perspective.
 
 An entity in ATL must have:
-- Property methods for getting and setting entity properties
-- Fluent setters which allow setting entity properties in a fluent manner
-- The save method which saves the entity to the database
+
++ Property methods for getting and setting entity properties.
++ Fluent setter methods that allow setting entity properties in a fluent manner.
++ A method that saves the entity to the database.
 
 An entity in ATL can have:
-- Action methods to expose business operations relevant to the entity.
-- Query methods to enable navigation to components/related entities.
+
++ Action methods to expose business operations relevant to the entity.
++ Query methods to enable navigation to components and related entities.
 
 ## Naming convention
 `AtlEntity]<ModuleName><EntityName>`
 
-Where:
-- ModuleName is based on the names of the modules in main menu. However a short version or an abbreviation should be used to support brevity of test code.
-
-- EntityName is based on the UI names rather than based on table names. E.g. Use SalesOrder rather than SalesTable.
++ `ModuleName` is based on the names of the modules in main menu. You should use a short version or an abbreviation to support brevity of test code.
++ `EntityName` is based on the user interface names rather than the table names. For example, use `SalesOrder`, not `SalesTable`.
  
-If an entity has two UI names then it’s fine to choose the shorter one. E.g. it’s fine to use Item instead of ReleasedProduct since both terms are used interchangeably.
+If an entity has two user interface names then it’s fine to choose the shorter one. For example, it’s fine to use `Item` instead of `ReleasedProduct` since the terms are used interchangeably.
 
 ### Examples
 ```
@@ -66,7 +63,7 @@ AtlEntityTransferOrderLine
 ```
 
 ## Property methods
-As mentioned above one of the main purposes of a test entity is to expose data. Properties of the entity can be set or retrieved using `parm` methods. 
+One of the main purposes of a test entity is to expose data. Properties of the entity can be set or retrieved using `parm`(property) methods. 
 
 ### Primitive type properties
 Create a `parm` method to expose a primitive type property. 
@@ -86,7 +83,7 @@ public SalesQty parmQuantity(SalesQty _qty = 0)
 ```
  
 ### Entity references
-Suppose there is a customer entity `AtlEntityCustomer`. Then the reference to the customer should be exposed as a property method on the `AtlEntitySalesOrder` entity:
+Suppose there is a customer entity named `AtlEntityCustomer`. A reference to `customer` should be exposed as a property method on the `AtlEntitySalesOrder` entity:
 
 ```
 public AtlEntityCustomer parmCustomer(AtlEntityCustomer _custTable = null)
@@ -99,10 +96,10 @@ customer = salesOrder.parmCustomer(); // getter
 ```
  
 #### Entity reference methods naming conventions
-The parm prefix should be used to identify property methods. When you are exposing an entity reference property use the UI name of the field rather than the AOT name. If the UI name includes Id, Code or Number postfixes then skip them. I.e. use `parmItem` rather than `parmItemNumber`. 
+The `parm` prefix should be used to identify property methods. When you are exposing an entity reference property, use the user interface name of the field rather than the AOT name. If the user interface name includes the `Id`, `Code`, or `Number` suffix, leave the suffix off of the name. For example, use `parmItem` rather than `parmItemNumber`. 
 
 ### Record references
-If the customer entity has not been created yet (and will not be created in the near future) then the reference property should expose the corresponding record buffer (`CustTable`):
+If the customer entity has not been created and will not be created in the near future, then the reference property should expose the corresponding record buffer (`CustTable`):
 ```
 public CustTable parmCustomer(CustTable _custTable = null)
 ```
@@ -110,23 +107,22 @@ public CustTable parmCustomer(CustTable _custTable = null)
 Use the same naming conventions as for entity references. 
 
 ### Id references
-In addition to having an entity/record reference it’s fine to also introduce the ID reference property. 
+In addition to having an entity or record reference it’s fine to also introduce the Id reference property. 
  
 ```
 public CustAccount customerId(CustAccount _custTable = null)
 ```
  
-Do not introduce ID references without introducing corresponding entity/buffer references. ID references are just “shortcuts” to the entity/buffer reference methods. The implementation of ID references should just delegate the call to the entity/buffer references.
+Do not introduce Id references without introducing corresponding entity or buffer references. Id references are shortcuts to the entity or buffer reference methods. The implementation of Id references should delegate the call to the entity the buffer reference.
 
 #### Id reference naming conventions
-Use the UI term if it includes terms like ID, Number, Account, Code, Name. Otherwise add an appropriate suffix to the entity/record reference name.
+Use the user interface term if it includes terms like Id, Number, Account, Code, or Name. Otherwise add an appropriate suffix to the entity or record reference name.
 
 #### Id reference methods contract
-The id reference method always finds the referenced entity based on the provided ID and delegates the call to the entity/record reference method.
-If no entity/record was found based on the specified ID then an error message will be thrown.
+The Id reference method always finds the referenced entity based on the provided Id and delegates the call to the entity or record reference method. If no entity or record is found based on the specified ID then an error message is thrown.
 
-## Fluent setters
-In order to support fluent initialization and modification of entities fluent setter methods are created.
+## Fluent setter methods
+Create fluent setter methods to support fluent initialization and modification of entities.
 
 ### Declaration example
 
@@ -141,13 +137,14 @@ salesLine.setItem(batchItem).setInventDims([warehouse]).setQty(10).save();
 ### Naming convention
 `set<PropertyName>`
 
-Property name should be the same as in the corresponding property method.
+`PropertyName` should be the same as in the corresponding property method.
 
 ## Action methods
-Entities not only represent data but also actions that are relevant for them. Actions can be implemented either as a simple action method or as a command object initializer.
+Entities not only represent data but also relevant actions. Actions can be implemented either as a simple action method or as a command object initializer.
 
 ### Simple action methods
 Simple action method represents a complete action. Simple action methods should not be fluently chained except for the save method that should be fluent. 
+
 #### Naming convention
 `<ExecuteBusinessOperation>`
 
