@@ -1307,7 +1307,7 @@
         href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Electronic messaging
       href: ../financials/general-ledger/electronic-messaging.md
-  - name: Localization and regulatory features
+  - name: Globalization
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
     items:
       - name: Regulatory updates
@@ -1518,6 +1518,8 @@
       - name: China
         href: ../financials/localizations/china.md
         items:
+        - name: Finance and Operations operated by 21Vianet in China
+          href: ../dev-itpro/deployment/china-local-deployment.md
         - name: Bill of materials comparison
           href: ../financials/localizations/apac-chn-bom-comparison.md
         - name: Chinese hierarchy of chart of accounts
