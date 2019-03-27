@@ -245,4 +245,4 @@ public AtlQueryWHSLoadLines lines()
 ```
 
 ## Additional resources
-[Queries in the acceptance test library](queries.md)
+[Queries in the acceptance test library](concepts-queries.md)
