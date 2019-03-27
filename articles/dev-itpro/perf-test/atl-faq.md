@@ -50,7 +50,7 @@ Depending on the class where you want to add a fluent method to, different rules
 For most of the entities, the effort of creating an entity class is the same as creating a creator class so the entity class should be created. However in some cases, creating an entity may not be straightforward. A good example is the Item entity. There are more than ten different tables that comprise the Item entity which makes it hard to create the entity class. Because we almost never need to update existing items in our test cases, it's fine to just have a creator class which is much easier to implement.
 
 ## Does order of the chained fluent setters matter?
-In most of the cases the order doesn't matter. However, it is important to know that currently defaulting is happening at the time of the call to the setter method. This means that changing the order of the methods can produce different results. The following is an example with the sales line. 
+In most of the cases the order doesn't matter. However, it is important to know that defaulting happens at the time of the call to the setter method. This means that changing the order of the methods can produce different results. The following is an example with the sales line. 
 
 ### Option 1
 ```
