@@ -49,7 +49,7 @@ An entity in ATL can have:
 + Query methods to enable navigation to components and related entities.
 
 ## Naming convention
-`AtlEntity]<ModuleName><EntityName>`
+`[AtlEntity]<ModuleName><EntityName>`
 
 + `ModuleName` is based on the names of the modules in main menu. You should use a short version or an abbreviation to support brevity of test code.
 + `EntityName` is based on the user interface names rather than the table names. For example, use `SalesOrder`, not `SalesTable`.
@@ -243,5 +243,6 @@ public AtlQueryWHSLoadLines lines()
     return new AtlQueryWHSLoadLines().forLoadId(this.parmLoadId());
 }
 ```
-	
-See the Queries section for more details.
+
+## Additional resources
+[Queries in the acceptance test library](queries.md)
