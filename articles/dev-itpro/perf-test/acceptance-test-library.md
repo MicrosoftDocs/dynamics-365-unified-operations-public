@@ -79,10 +79,10 @@ The structure and naming of the classes and methods in the ATL is quite rigid. T
     Methods to setup test data.
 - [Entities](Concepts_Entities.md)
     
-    Entities represents data and associated behavior that is perceived as a single unit.
+    Entities represent data and associated behavior that is perceived as a single unit.
 - [Creators](Concepts_Creators.md)
 
-    Creator allow creating specific test data.
+    Creators allow creating specific test data.
 - [Commands](Concepts_Commands.md)
 
     Commands execute business operations.
