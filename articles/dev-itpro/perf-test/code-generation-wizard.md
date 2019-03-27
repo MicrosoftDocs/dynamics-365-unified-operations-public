@@ -42,7 +42,7 @@ The Acceptance test library (ATL) code generator quickly generates and updates n
 Complete the following steps to create the `AtlEntity` class by using the Code generation wizard.
 
 1. Open the table in the designer window in Visual Studio.
-2. Right-click the name of the table and on the **Add0ins** menu, select **Generate ATL Entity**.
+2. Right-click the name of the table and on the **Add-ins** menu, select **Generate ATL Entity**.
 3. Select the fields that should be included in the `AtlEntity` and click **Add**.
 4. If necessary, rename the entity and the fields.
 5. Click **Generate** to create the class.
