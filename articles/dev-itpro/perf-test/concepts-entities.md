@@ -1,6 +1,6 @@
 ---
 
-title: Acceptance test library entities
+title: Entities in the acceptance test library
 description: This topics discusses the test entity class that represents data and associated behavior.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Acceptance test library entities
+# Entities in the acceptance test library
 
 [!include [banner](../includes/banner.md)]
 
