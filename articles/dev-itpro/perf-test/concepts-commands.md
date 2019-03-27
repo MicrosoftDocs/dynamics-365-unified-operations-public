@@ -1,5 +1,3 @@
----
-# required metadata
 
 title: Acceptance test library commands
 description: This topic provides information about the acceptance test library.
@@ -29,11 +27,13 @@ ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
+
+# Acceptance test library commands
+
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-# Acceptance test library commands
 Command classes are responsible for executing business operations and allow setting parameters of these operations using fluent APIs.
 
 ## Naming convention
