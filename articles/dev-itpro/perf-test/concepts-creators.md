@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Acceptance test library creators
+title: Creators in the acceptance test library
 description: This topic provides information about acceptance test library creators.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Acceptance test library creators
+# Creators in the acceptance test library
 
 [!include [banner](../includes/banner.md)]
 
