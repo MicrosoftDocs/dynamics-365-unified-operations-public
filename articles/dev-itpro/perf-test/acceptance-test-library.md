@@ -34,6 +34,8 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 The Acceptance test library (ATL) is an X++ test library that:
 
 - Allows you to create consistent test data.
