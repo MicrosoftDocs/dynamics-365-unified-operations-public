@@ -3,7 +3,7 @@
 
 title: Acceptance test library code generation wizard
 description: This topic provides information about the Code genration wizard for the Acceptance test library.
-author:MichaelFruergaardPontoppidan
+author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
