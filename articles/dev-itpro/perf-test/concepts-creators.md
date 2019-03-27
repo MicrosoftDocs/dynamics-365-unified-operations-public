@@ -77,4 +77,5 @@ item = new AtlCreatorProductItem()
 ```
 
 #### When creators should be used instead of entites?
-See [Should I implement an Entity or a Creator class](link)
+To choose between entities and creators, read [Should I implement an Entity or a Creator class?]
+See [Should I implement an Entity or a Creator class](atl-faq#should-i-implement-an-entity-or-a-creator-class).
