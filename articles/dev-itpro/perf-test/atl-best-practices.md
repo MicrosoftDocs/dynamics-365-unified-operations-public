@@ -65,13 +65,13 @@ salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).setQua
 
 The advantage of using `var` is that you write less code, you don't have to remember exact type names, and the test logic isn't cluttered with unimportant information. Overall, the test code easier to read.
 
-In the previous example it doesn't matter if `item` is of type `ItemId`, `InventlTable` or `AtlEntityInventItem`. The important information is that you are creating a sales line with the well-known default item. The exact types of the `salesOrder` and `salesLine` variables are not important. It's clear from the naming and usage what the contracts of their types are.
+In the previous example it doesn't matter if `item` is of type `ItemId`, `InventlTable`, or `AtlEntityInventItem`. The important detail is that you are creating a sales line with the well-known default item. The exact types of the `salesOrder` and `salesLine` variables are not important. It's clear from the naming and usage what the contracts of these types are.
 	
 ### Considerations 
 
-Don't use type inference when you want compilation to fail if the return type of a method changes. 
+- Don't use type inference when you want compilation to fail if the return type of a method changes. 
 
-Don't use type inference if you can't come up with meaningful variable or method names.
+- Don't use type inference if you can't come up with meaningful variable or method names.
 
 ## Use entity instead of ID as method parameter
 
@@ -93,12 +93,12 @@ var salesLine = salesOrder.addLine().setItemId(item.ItemId).save();
 The code is easier to read because it's not cluttered with unimportant technicalities.
 
 ### Considerations
-If you only know the ID then use the method that takes ID as argument. 
+If you only know the ID, then use the method that takes ID as argument. 
 
 ## Use navigation node shortcuts
 When automating a new domain area, introduce a base class that holds shortcuts to the most commonly used navigation objects in the area. 
 
-For the warehouse management area there is a base class that is named `AtlWHSTestCase`. It contains shortcuts to `data.whs()`, `data.invent()`, `data.invent().items()`, `data.invent().units()`, and others. The shortcuts simplify your test code.
+For the warehouse management area, there is a base class that is named `AtlWHSTestCase`. It contains shortcuts to `data.whs()`, `data.invent()`, `data.invent().items()`, `data.invent().units()`, and others. The shortcuts simplify your test code.
 
 ```
 class AtlWHSTestCase extends SysTestCase
@@ -139,5 +139,5 @@ class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
 ```
 
 ### Consideration
-You don't have to create a shortcut for every navigation node you need, but do consider making them for the ones that are commonly used.
+You don't have to create a shortcut for every navigation node that you need, but do consider making them for the ones that are commonly used.
 
