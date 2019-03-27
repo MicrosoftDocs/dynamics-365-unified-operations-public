@@ -1,7 +1,7 @@
 ---
 
 title: Acceptance test library commands
-description: This topic provides information about the acceptance test library.
+description: This topic provides information about using commands with the acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
