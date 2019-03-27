@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Acceptance test library
+title: Acceptance test library best practices
 description: This topic provides information about the acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Best practices
+# Acceptance test library best practices
 
 ## Use `var` and declare variables inline
 
