@@ -194,43 +194,47 @@ receipt.post();
 #### Example
 ```
 AtlEntityInventTransferOrderReceipt
-```	
+```
+
 ## Adding components
-Composition is a kind of relationship where the composite entity has the sole responsibility for the disposition of the component parts. The relationship between the composite and the component is a strong “has a” relationship, as the composite object takes ownership of the component. This means the composite is responsible for the creation and destruction of the component parts. An object instance may only be part of one composite. If the composite object is destroyed, all the component parts must be destroyed. The part has no life of itself and cannot be transferred to another object. Composition enforces encapsulation as the component parts usually are members of the composite object.
-For example; creating a source document which is composed of source document lines.
+Composition is a relationship where the composite entity has the sole responsibility for the disposition of the component parts. The relationship between the composite and the component is a strong “has a” relationship, as the composite object takes ownership of the component. This means the composite is responsible for the creation and destruction of the component parts. An object instance may only be part of one composite. If the composite object is destroyed, all the component parts must be destroyed. The part has no life itself and cannot be transferred to another object. Composition enforces encapsulation as the component parts are usually members of the composite object. An example is a source document that is composed of source document lines.
+
 ### Adding components
-The document entity serves as the composition root and it is responsible for creating a new instance of the document line. Source document entities should have an addLine() method which initializes and returns a new line for the document.
+In the source document example, the document entity serves as the composition root and it is responsible for creating any new instances of document lines. The source document entity would have an `addLine()` method that initializes and returns a new line for the document.
 
 #### Example
 ```
 public AtlEntitySalesLine addLine()
 ```
  
-The addLine() method adds the line object (salesLine in this example) to a collection of lines and returns the parent entity (SalesOrder) in order to preserve fluency of APIs. For creating a new line please create a newLine() method. 
+The `addLine()` method adds the line object, `salesLine` in this example, to a collection of lines and returns the parent entity, `SalesOrder`, to preserve fluency of APIs. For creating a new line please create a newLine() method. 
+
 #### Naming convention for adding components
-Methods for adding components should follow UI names of the buttons. 
+Methods for adding components should use the user interface names of the buttons. 
+
 #### Example
 ```
 salesLine = salesOrder.addLine();
 ```
+
 ### Components collections
 You can search for components using query methods.
 
 #### Naming convention for components collection
-Methods for accessing components collection should follow the UI name of the grid in the hosting form.  
+Methods for accessing components collection should use the user interface names of the grid in the hosting form.  
 
 ## Query methods
-Query methods on an entity allow searching for components/related entities.
+Query methods on an entity allow searching for components and related entities.
 
 ### Example
 ```
 transferOrderLine = transferOrder.lines().withItem(item).single();
 ```
-	
-In this example lines() is a query method that returns the AtlQueryTransferOrderLines query which is already filtered to only return transfer order lines for the transfer order on which the lines() method was called.
+
+In this example `lines()` is a query method that returns the `AtlQueryTransferOrderLines` query which is already filtered to return only transfer order lines for the transfer order on which the `lines()` method was called.
 
 ### Naming convention
-Use the UI names when possible. Abbreviations are acceptable if the UI term is way too long for using in test automation.
+Use the user interface names when possible. Abbreviations are acceptable if the user interface term is too long for using in test automation.
 
 ### Example 
 ```
