@@ -148,33 +148,37 @@ Simple action method represents a complete action. Simple action methods should 
 #### Naming convention
 `<ExecuteBusinessOperation>`
 
-ExecuteBusinessOperation is a verb that represents the business operation. Preferably it should be the same term that is used on the menu item in the UI.
+`ExecuteBusinessOperation` is a verb that represents the business operation. It should be the same term that is used on the menu item in the user interface.
+
 #### Examples
 ```
 salesOrder.save();
 salesOrder.postInvoice();
 ```
+
 ### Command object initializers
-Command object initializers return a command object that allows to specify parameters of the command and execute it:
+Command object initializers return a command object that allows you to specify parameters of the command and execute it:
 ```
 transferLine.pick().setQty(10).setWMSLocation(bulkLocation).execute();
 ```
 #### Naming convention
 `<ExecuteBusinessOperation>`
 
-ExecuteBusinessOperation is a verb that represents the business operation. Preferably it should be the same term that is used on the menu item in the UI.
+`ExecuteBusinessOperation` is a verb that represents the business operation. It should be the same term that is used on the menu item in the user interface.
+
 #### Examples
 ```
 salesOrder.pick().execute();
 purchaseOrder.register().execute();
 ```
+
 ### Action entities
-Some actions that are available for an entity can be considered as entities themselves. Imagine vendor invoices. Before actually posting an invoice you need to set up parameters of the invoice, edit lines and you can even save it for later. For such commands  introduce a separate entity class.
+Some actions that are available for an entity can be considered as entities themselves. An example is vendor invoices. Before posting an invoice you might want to set up parameters of the invoice, edit lines, and save it for later. For these commands, you can introduce a separate entity class.
  
 #### Naming convention
 `new<ActionName>`
 
-ActionName is a noun that represents the business operation. Ideally the name should be the UI name of the business operation.
+`ActionName` is a noun that represents the business operation. The name should be the user interface name of the business operation.
 
 #### Example
 ```
