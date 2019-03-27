@@ -62,7 +62,7 @@ Command objects should provide [fluent setter methods](#fluent-setters) for sett
 salesLine.pick().setInventDims([locationOut]).setQty(pickedQty).execute();
 ```
 
-## Fluent setters
+## Fluent setter methods
 Commands allow two types of fluent setter methods:
 
 + `for` methods are used for command parameters that represent the entities that the command applies to. For example, the invoice command can apply to sales orders thus a `for` method would be used to set the sales order that the invoice command applies to.
