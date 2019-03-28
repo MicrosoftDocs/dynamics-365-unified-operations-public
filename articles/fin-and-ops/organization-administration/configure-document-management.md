@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -139,3 +139,11 @@ Yes. SharePoint storage is supported natively and can be selected as the storage
 ### How does the default storage location for Document Management change in on-premises environments?
 
 For on-premises environments, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
+
+### If I accidentally delete an attachment stored in Azure Blob Storage, can it be restored?
+
+If an attachment stored in Azure Blob Storage is accidentally deleted, it cannot be restored or recovered because it has been permanently deleted and the reference to it has also been deleted.
+
+### Is the database information about attachments stored separately from the attachments themselves?
+
+Record attachment information is stored in the DocuRef and DocuView tables. The DocuRef table is the record that represents the attachment. The DocuRef record points to the record being attached to and to a DocuView record. The DocuView record points to the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.
