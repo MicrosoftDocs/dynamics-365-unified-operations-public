@@ -34,12 +34,18 @@ ms.dyn365.ops.version: 10.0
 
 This topic lists the regulatory updates that are planned for release in Microsoft Dynamics 365 for Finance and Operations supported localizations. Delivery timelines might change, and projected functionality might change or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
 
-Regulatory updates are different than regulatory features. To learn about planned or released regulatory features, refer to the following resources.
+Regulatory updates are  features, implemented to support new or changed country specific legislations. To learn about other planned and released country specific features, refer to the following resources:
 
 - [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [What's new for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-When a month is used in the Date column, the regulatory update is planned to be delivered sometime within that month. The delivery date can be any day within that month, not just on the first day of the month.
+Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change. 
+
+We plan to deliver regulatory updates in One Version service updates that released in time for customers to update and be ready for the law enforcement date (for transactional regulatory updates) or for the first mandatory reporting deadline (for regulatory updates related to reporting). Customers and partners can preview the new regulatory updates in the Preview Early Adoption Program (PEAP).
+
+In case of late law announcement dates, late availability of requirement details or validation tools or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for some available monthly updates.
+
+Please see the latest regulatory update plan in the table below:
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
@@ -53,7 +59,10 @@ When a month is used in the Date column, the regulatory update is planned to be 
 |      April 2019          |   10.0.1      |    United Kingdom     |[VAT Statement submission changes (Making Tax Digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      April 2019          |   10.0.1      |    Brazil     |NF-e new NT 2018.005         |
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019         |
-|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books formats)  |
+|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) 
+|      May 2019            |   10.0.2      | Brazil      |   SPED ECF Layout 5   |
+|      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
+|      May 2019            |   10.0.2      | Russia      |   New form of declaration on indirect taxes    |
 
 ## Additional resources
 - Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (log in required).
