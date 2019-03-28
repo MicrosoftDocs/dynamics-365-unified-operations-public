@@ -71,7 +71,7 @@ The **Foreign currency revaluation** page shows the history of each revaluation 
 
 The **Revaluation date** field defines the cutoff date for calculating the foreign currency balance that will be revalued. The sum of all bank transactions that occurred up through this date is revalued.
 
-The **Exchange rate date** field can be used to define the date for which the exchange rate should default. For example, you can revalue the balances as of January 31 but use the exchange rate that is defined for February 1.
+The **Exchange rate date** field defines the date of the exchange rate that will be used to revalue the currency balances. For example, you can revalue the balances as of January 31 but use the exchange rate that is defined for February 1.
 
 The revaluation process can be run for one or more legal entities. The lookup shows only the legal entities that you have access to. Select the legal entities for which you want to select the bank accounts that are eligible for foreign currency revaluation. All the bank accounts for those legal entities will be shown in the grid.
 
@@ -81,7 +81,11 @@ Select **OK** to process the foreign currency revaluation. A record is created t
 
 ## Calculate unrealized gain/loss
 
-In Cash and bank management, a transaction is created for the delta between the balance of the bank account and the new value that is based on the exchange rate for the date that is specified in the **Date of rate** field. (The balance of the bank account includes any previous revaluation amounts.) The foreign currency revaluation is based on the bank currency and the currency that is being revalued. This calculation is done for the accounting currency and the reporting currency. Therefore, two transactions are produced. The entries for these transactions are marked as reconciled. No entry is made for the accounting currency if the bank currency matches the accounting currency. Likewise, no entry is made for the reporting currency if the bank currency matches the reporting currency.
+In Cash and bank management, the bank currency is considered to be the base currency and it is not revalued. The balance of the bank account includes any previous revaluation amounts. The balance of the bank account in the accounting currency is revalued using the exchange rates between the bank currency and the accounting currency on the **Exchange rate date**. The balance of the bank account in the reporting currency is also revalued using the exchange rates between the bank currency and the reporting currency on the **Exchange rate date**.
+
+A transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the accounting currency. Another transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the reporting currency. The entries for these transactions are marked as reconciled. 
+
+No entry is made for the accounting currency if the bank currency matches the accounting currency. Likewise, no entry is made for the reporting currency if the bank currency matches the reporting currency.
 
 The foreign currency revaluation transaction is also split across the dimensions that are found on the bank transactions. The split is based on the balance for each dimension. For example, the total bank balance is 10,000, but the balance for business unit 001 is 4,000, whereas the balance for business unit is 6,000. In this case, 40 percent of the revaluation amount is posted to the revaluation account that has business unit 001, and 60 percent is posted to the revaluation account that has business unit 002. If the account structure doesn't include a business unit, the full amount is posted to the revaluation account.
 
