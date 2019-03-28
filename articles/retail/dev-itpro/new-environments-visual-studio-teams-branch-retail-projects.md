@@ -37,16 +37,17 @@ Most environments for Retail projects are hosted in the cloud. They are either M
 
 ## Development Tier 1 environments
 
-If your implementation of Microsoft Dynamics 365 for Retail includes code extensions, we recommend that you use a development environment where you have administrator privileges. If you don't have administrator privileges on your development environment, then you won't be able to install programming tools or configure the operating system.
-
 Development environments are called Tier 1 environments. There are three options for hosting a development environment:
 + Dynamics 365 for Retail Application comes with one Sandbox Tier 1. (Read the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide]() for details.) This environment is Microsoft-hosted. https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI, the file is Dynamics_365_Enterprise_edition_Licensing_Guide.pdf on the Download Center.
-+ A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of machine is also known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services [LCS].
++ A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of environment is known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services [LCS].
 + A downloaded virtual-machine that you host in a location of your choice.
 
-If you want to extend channel components, see the "Prepare the development environment" section later in this topic for information about how to configure a development environment so that it's ready for development.
+If your implementation of Microsoft Dynamics 365 for Retail includes code extensions, we recommend that you use a development environment where you have administrator privileges. If you don't have administrator privileges on your development environment, then you won't be able to install programming tools or configure the operating system.
 
-Because the hosting model that you use has a financial impact, you can reduce some of the hosting cost by using a Tier 1 environment as a simple test environment or golden configuration environment. One Tier 1 environment is free with your Microsoft Dynamics subscription. Although this approach isn't ideal, it should work for most projects.
+The hosting model that you choose has a financial impact. , you can reduce some of the hosting cost by using a Tier 1 environment as a simple test environment or golden configuration environment. One Tier 1 environment is free with your Microsoft Dynamics subscription. Although this approach isn't ideal, it should work for most projects.
+
+If you want to extend channel components, read [Prepare the development environment](#prepare-the-development-environment) to learn how to configure a development environment so that it's ready for development.
+
 
 > [!NOTE]
 > You can shut down cloud-hosted environments at any time. This capability helps reduce the hosting cost.
@@ -68,14 +69,15 @@ The following table shows the advantages and disadvantages of each hosting model
 <td>Microsoft-hosted environment (in an LCS project, default or based on an add-on)</td>
 <td>
 <ul>
-<li>One environment is included in the subscription. We recommend that you use this environment as a build environment.</li>
+<li>You subscription includes one Tier 1 environment. We recommend that you use this environment as a build environment.</li>
 <li>Telemetry data is collected and is available on the LCS diagnostics page.</li>
 </ul>
 </td>
 <td>
 <ul>
 <li>Users can't perform administrative actions.</li>
-<li>Therefore, users can't install any tools or certificates.</li>
+<li>Users can't install any tools or certificates.</li>
+    <li><b>What certificates might they need?</b></li>
 </ul>
 </td>
 </tr>
@@ -83,16 +85,16 @@ The following table shows the advantages and disadvantages of each hosting model
 <td>Cloud-hosted environment (in an LCS project, private subscription)</td>
 <td>
 <ul>
-<li>Users have full administrative rights and can install any tools.</li>
-<li>Users can install certificates.</li>
+<li>You have full administrative rights.
+<li>You can install tools and certificates.</li>
 </ul>
 </td>
-<td>There is additional cost. (However, you can mitigate this cost by shutting down the environment.)</td>
+<td>There is additional cost. You can mitigate this cost by shutting down the environment.</td>
 </tr>
 <tr>
 <td>Self-hosted downloaded VM</td>
 <td>The experience depends on the host. The experience can be much faster if the VM runs on a solid-state drive (SSD).</td>
-<td>Users can't deploy any packages from LCS.</td>
+<td>You can't deploy packages from LCS.</td>
 </tr>
 </tbody>
 </table>
