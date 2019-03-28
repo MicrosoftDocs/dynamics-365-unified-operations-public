@@ -44,7 +44,7 @@ Dynamics 365 for Finance and Operations provides many self-service support optio
 - [Dynamics community](https://community.dynamics.com/)
 - [Microsoft Learn](https://docs.microsoft.com/learn/)
 
-## Assisted Support
+## Assisted support
 
 - [Open a support request](https://lcs.dynamics.cn/)
 
@@ -53,23 +53,23 @@ Pre-sales support for Finance and Operations provides assistance on subscription
 
 ### Billing and subscription management support through 21Vianet
 
-Assistance for billing and subscription management issues is available online or by telephone Monday through Friday local business hours 9:00 to 18:00 China Standard Time (CST). Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The billing and subscription support telephone number is +86 400-089-0365.
+Assistance for billing and subscription management issues is available online or by telephone Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST). Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The billing and subscription support telephone number is +86 400-089-0365.
 
 Here are some examples of billing and subscription management issues:
 
-- Signing up for a trial or purchasing a subscription
-- Converting from a trial subscription to a paid subscription
-- Understanding the bill
-- Renewing a subscription
-- Adding or removing licenses
-- Canceling a paid subscription
+- Signing up for a trial or purchasing a subscription.
+- Converting from a trial subscription to a paid subscription.
+- Understanding the bill.
+- Renewing a subscription.
+- Adding or removing licenses.
+- Canceling a paid subscription.
 
 
 ### Assisted Technical support through 21Vianet
 
-When you experience a technical issue with your Dynamics 365 Finance and Operations deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support hotline at +86 400-089-0365.  Technical support Hours of operations are Monday through Friday local business hours 9:00 to 18:00 China Standard Time (CST).
+When you experience a technical issue with your Dynamics 365 Finance and Operations deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
 
-A service request (SR) is handled within hours depending on the severity of its impact to your business:
+A service request (SR) is handled within hours, depending on the severity of its impact to your business:
 
 - **Critical business impact** - You will receive an initial response within 1 hour or less, and a support representative will work continuously, all day, until the problem is resolved. You will be expected to allocate appropriate resources to work on the request until the problem is resolved and provide accurate contact information to the support personnel handling your case.
 - **Non-critical business impact** - You will receive an initial response within 8 hours or less. You will be expected to provide accurate contact information to the support personnel handling your case.
@@ -89,8 +89,8 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 - [Dynamics 365 for Finance and Operations operated by 21Vianet in China](../deployment/china-local-deployment.md)
 - [Dynamics 365 for Customer Engagement operated by 21Vianet in China]()
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
-- [Dynamics 365 Service Level agreement(世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
-- [Dynamics 365  Legal information	(Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
+- [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
+- [Dynamics 365  Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
 - [Service terms for Dynamics 365 Lifecycle services](https://www.21vbluecloud.com/Dynamics365/d365-lcs/)
 - [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
