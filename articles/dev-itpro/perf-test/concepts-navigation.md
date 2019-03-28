@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Navigation objects
-description: This topic provides information about using navigation objects to simplify the discoverability of test data generation methods.
+title: Navigation concepts
+description: This topic provides information about using navigation to simplify the discoverability of test data generation methods.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Navigation objects
+# Navigation concepts
 
 [!include [banner](../includes/banner.md)]
 
