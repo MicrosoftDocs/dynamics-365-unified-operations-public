@@ -34,7 +34,9 @@ ms.dyn365.ops.version: 10.0.2
 
 ## Introduction
 
-To meet local fiscal requirements for cash registers in the Czech Republic, the Microsoft Dynamics 365 for Retail functionality for the Czech Republic includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+To meet local fiscal requirements for cash registers in the Czech Republic, the Microsoft Dynamics 365 for Retail functionality for the Czech Republic includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service ensures Electronic Registration of Sales (EET - Elektronická evidence tržeb), that is, the online transmission of the sales data to a fiscal web-service of tax authorities.
+
+The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](http://efsta.org/kontakt/).
 
@@ -55,7 +57,7 @@ The following scenarios are covered by the fiscal registration service integrati
     - Register a customer account deposit.
     - Register a customer order deposit.
     - Override a customer order deposit.
-
+    
 - Error handling, such as the following options:
 
     - Retry fiscal registration if a retry is possible, such as if the fiscal registration service isn't available, isn't ready, or isn't responding.
@@ -84,25 +86,20 @@ The following default data mapping is included in the fiscal document provider c
 The fiscal registration service integration sample implements the following rules that are related to gift cards:
 
 - Sales lines that are related to the *Issue gift card* or *Add to gift card* operations from a cash transaction are marked with a special attribute when the transaction is registered in the fiscal registration service.
-- Payment by gift card is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
+- A payment by gift card is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 
-### Customer deposits
+### Customer account deposits and customer order deposits
 
-The fiscal registration service integration sample implements the following rules that are related to customer deposits:
+The fiscal registration service integration sample implements the following rules that are related to customer account deposits and customer order deposits:
 
-- Sales lines that are related to the *Customer account deposit* are marked with the "CZ_field=23" attribure.
-- Payment by customer account deposit is considered a regular payment and marked with the "CZ_field=24" attribure.
-- The deposit sales line tax group shoud be set to the deposit tax group.
-
-### Customer order deposits
-
-The fiscal registration service integration sample implements the following rules that are related to customer order deposits:
-
-- Exclude sales lines that are are set to either Pick or ship delivery from a transaction. Instead of registering those lines as a part of a cash transaction, register a single line with deposit sum and mark it with the "CZ_field=23" attribure.
-- The total amount for lines where the delivery mode was set to Carry out when the customer order was created or edited, or during a customer order exchange is considered a regular payment and marked with the "CZ_field=24" attribure.
+- A retail transaction that is related to a customer account deposit or a customer order deposit is registered in the fiscal registration service as a single line transaction and is marked with a special attribute.
+- A payment from a customer account is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
+- The customer order deposit amount that is applied to a customer order *Pick up* operation is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 - The deposit sales line tax group shoud be set to the deposit tax group.
 
 ### Offline registration
+
+If the fiscal registration service fails to transmit data to the fiscal web-service of tax authorities (e.g. due to the response timeout) and receive 
 
 In case, that the signature request to the fiscal system of the Tax Authority fails (network error, response timeout > 5 sec), a transaction is registered without signature. The EFR resends transactions in original order in background as soon as the network connection is restored. Offline transactions contains the Taxpayer's Signature code ("Sign" / "PKP") instead of the fiscal identification code ("Fiscal" / "FIK") and are marked with ErrorCode="#OFFLINE".
 
