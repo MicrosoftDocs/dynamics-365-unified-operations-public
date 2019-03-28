@@ -167,7 +167,7 @@ You must now import data from the UK MTD-VAT setup.zip file into the selected co
 
 ![Upload and add button](media/emea-gbr-mtd-vat-add-file.png)
 
-For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json).
 
 > [!NOTE]
 > Some records in the data entities in the package include a link on ER configurations. It's important that ER configurations be imported into Finance and Operations before you start to import the data entities package.
@@ -368,7 +368,7 @@ The process of preparing and submitting a VAT return for a period is based on sa
 
 Before you start to prepare and submit a VAT return to HMRC, complete the regular **Settle and post sales tax** job for the period that you will report to HMRC. When this job is run, new sales tax payment transactions are created. Go to **Tax** \> **Inquires and reports** \> **Sales tax inquires** \> **Sales tax payments** to view the sales tax payments. You can review the resulting values for each sales tax payment transaction on the **VAT 100** report in SSRS or Excel format. For information about how to define the format that is used, see the [Set up General ledger parameters](#vat-statement-format-mapping) section of this topic. To generate a **VAT 100** report for selected sales tax payment transactions, select **Print report** on the Action Pane.
 
-In Finance and Operations, you can run the **Settle and post sales tax** job several times for the same period before you submit a VAT return to HMRC. All the sales tax payment transactions can be included on the same VAT return report for a period. The transactions that the system fills in for reporting depend on the sales tax settlement period that is defined in the **Populate VAT return records** action for the processing. For more information, see the [Define a sales tax settlement period](#define-sales-tax-settlement-period) section of this topic.
+In Finance and Operations, you can run the **Settle and post sales tax** job several times for the same period before you submit a VAT return to HMRC. All the sales tax payment transactions can be included on the same VAT return report for a period. The transactions that the system fills in for reporting depend on the sales tax settlement period that is defined in the **Populate VAT return records** action for the processing. For more information, see the [Define a sales tax settlement period](#define-a-sales-tax-settlement-period) section of this topic.
 
 > [!IMPORTANT]
 > MTD for VAT lets you do submit a VAT return only one time for each reporting period. As HMRC states on the official website, the current amendment process will stay in place for VAT:
