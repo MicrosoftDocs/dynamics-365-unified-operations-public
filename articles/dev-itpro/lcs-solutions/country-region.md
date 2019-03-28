@@ -5,7 +5,7 @@ title: Globalization
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2018
+ms.date: 04/01/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Globalization
 
 ## Local and regional deployments
-If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider when you deploy Finance and Operations. Consider the resources below that might be relevant to you:
+If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider when you deploy Finance and Operations. Consider the following resources that might be relevant to you:
 
 [Microsoft Dynamics 365 for Finance and Operations - operated by 21Vianet in China](/dev-itpro/deployment/china-local-deployment.md)
 
@@ -42,10 +42,10 @@ If your government regulations require data to be stored differently or serviced
 Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you do the following: 
-- learn more about developing country/region-specific solutions
-- getting country/region specific updates
-- submit and review regulatory alerts
-- learn how to use country/region specific functionality 
+- Learn more about developing country/region-specific solutions.
+- Get country/region specific updates.
+- Submit and review regulatory alerts.
+- Learn how to use country/region specific functionality.
 
 ### Developing localized solutions
 The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are creating a solution for a country that Microsoft does not support.
