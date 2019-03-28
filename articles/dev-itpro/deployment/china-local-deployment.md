@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations - operated by 21Vianet in China
+title: Dynamics 365 for Finance and Operations - operated by 21Vianet in China
 description: This topic provides information about Dynamics 365 for Finance and Operations - operated by 21Vianet in China.
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations - operated by 21Vianet in China
+# Dynamics 365 for Finance and Operations - operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
