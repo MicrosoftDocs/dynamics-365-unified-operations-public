@@ -6,7 +6,7 @@ title: Fiscal registration service integration sample for Czech Republic
 description: This topic provides an overview of the fiscal integration sample for Czech Republic.
 author: josaw
 manager: annbe
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -24,8 +24,8 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: Czech Republic
 ms.search.industry: Retail
 ms.author: v-dmpere
-ms.search.validFrom: 2019-3-1
-ms.dyn365.ops.version: 10.0.1
+ms.search.validFrom: 2019-4-1
+ms.dyn365.ops.version: 10.0.2
 
 ---
 # Fiscal registration service integration sample for Czech Republic
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.1
 
 ## Introduction
 
-To meet local fiscal requirements for cash registers in Czech Republic, the Microsoft Dynamics 365 for Retail functionality for Czech Republic includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+To meet local fiscal requirements for cash registers in the Czech Republic, the Microsoft Dynamics 365 for Retail functionality for the Czech Republic includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](http://efsta.org/kontakt/).
 
