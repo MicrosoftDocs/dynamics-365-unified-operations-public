@@ -46,7 +46,8 @@ The following columns specify where the operations can be invoked:
 - **Transaction screen** – The operation can be invoked from POS button grids that are configured on the POS transaction screen.
 - **Welcome screen** – The operation can be invoked from POS button grids that are configured on the POS welcome screen.
 
-Note: The operations listed below apply to the latest version of Dynamics 365 for Retail. Some operations may have changed or may not be available in previous versions.
+> [!NOTE]
+> The operations listed below apply to the latest version of Dynamics 365 for Retail. Some operations may have changed or may not be available in previous versions.
 
 | ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -75,6 +76,8 @@ Note: The operations listed below apply to the latest version of Dynamics 365 fo
 | 640 | Clear sales representative on line | Remove the commission sales group (sale rep) from the currently selected line. | Yes | Yes | No | Yes | No |
 | 121 | Clear salesperson | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 1055 | Close shift | Close the current shift, print a Z report, and sign the user out of the system. | Yes | Yes | Yes | No | No |
+| 139 | Conclude transaction | Prompts user to select payment method | Yes | Yes | No | Yes | No |
+| 620 | Create customer order | Convert the POS transaction to a customer order. | Yes | Yes | No | Yes\* | No |
 | 925 | Copy the bank check | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
 | 620 | Create customer order | Convert the POS transaction to a customer order. | Yes | Yes | No | Yes\* | No |
 | 621 | Create quotation | Convert the POS transaction to a sales quotation. | Yes | Yes | No | Yes\* | No |
@@ -97,7 +100,7 @@ Note: The operations listed below apply to the latest version of Dynamics 365 fo
 | 614 | Edit customer order | Recall the selected order so that it can be modified in the POS. | No | No | No | No | No |
 | 615 | Edit quotation | Recall the selected quotation so that it can be modified in the POS. | No | No | No | No | No |
 | 518 | Expense accounts | Record money that is removed from the cash drawer for occasional expenses. | Yes | Yes | Yes | Yes | No |
-| 919 | Extended log on | Assign or remove permission to sign in by scanning a bar code or swiping a card. | Yes | Yes | Yes | No | No |
+| 919 | Extended log on | Assign or remove permission to sign in by scanning a bar code or swiping a card. | Yes | Yes | Yes | Yes | No |
 | 1201 | Float entry | This operation lets the user add additional money to the current drawer or shift. | Yes | Yes | Yes | Yes | No |
 | 1218 | Force unlock peripheral | The system uses this operation internally to unlock POS peripherals. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 520 | Gift card balance | Show the balance of a gift card. | Yes | Yes | No | No | No |

@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,6 +53,53 @@ For information about the bug fixes included in each of the updates that are par
 - [Platform update 18 KB article](https://go.microsoft.com/fwlink/?linkid=2025682&clcid=0x409)
 - [Platform update 17 KB article](https://go.microsoft.com/fwlink/?linkid=875608&clcid=0x409)
 - Platform update 16 was not released for General Availability, no KB article
+
+## Restyled web client 
+
+The Finance and Operations web client has started its journey of aligning to Microsoft Fluent Design. As a result, users on Platform update 20 will see several restyled elements in the product including the following restyled elements: 
+
+-  **General form styling** - Small but effective styling changes have been made to several page elements. FastTabs and grids now have box shadows that give the appearance of these controls being lifted off the page. This same treatment was also applied when hovering over input fields. Record context fields and FastTab headers have smaller but bolder fonts to maintain their importance but remove extra whitespace. 
+
+-  **Dashboard** - Workspace cards on the dashboard now have a more tile-like appearance, with a white background color and box shadow to make them stand out more from the page background. The font size and weight have also been adjusted to allow more room for workspace titles. 
+
+    The following image shows how workspce cards appeared on the dashboard before Platform update 20:
+
+    ![Old dashboard](media/prePU20-dashboard-cropped.png  "Old dashboard")
+  
+    The following image shows how workspace cards appear in Platform update 20 and later:
+
+    ![New dashboard](media/postPU20-dashboard-cropped.png  "New dashboard")
+
+-  **Action pane** - Action panes no longer display with a theme-inspired background color; instead, the Action pane has a gray background color. This was done not only to align with Fluent, but also to address some usability issues where users were not associating the Action pane with the rest of the page because of the stark difference in background color.
+
+    The following image shows how the Action pane appeared before Platform update 20:
+
+    ![Old details page](media/prePU20-customers-actionpane.png  "Old details page")
+
+    The following image shows how the Action pane appears in Platform update 20 and later:
+
+    ![Newd details page](media/postPU20-customers-actionpane.png  "New details page")
+
+-  **Filter pane** - The Filter pane has been completely restyled with a lighter background color, a pill-like appearance to filter fields, and repositioning of the "Add a filter field" button to the top of the pane.
+
+    The following image shows how the Filter pane appeared before Platform update 20:
+
+    ![Old list page](media/prePU20-customers-cropped.png  "Old list page")
+
+    The following image shows how the Filter pane appears in Platform update 20 and later:
+
+    ![New list page](media/postPU20-customers-cropped.png  "New list page")
+
+-  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooed icon on the right.  
+
+    The following image shows how the FactBox pane appeared before Platform update 20:
+
+    ![Old Factbox pane](media/prePU20-expandedFactBox-cropped.png  "Old FactBox pane")
+  
+    The following image shows how the FactBox pane appears in Platform update 20 and later:  
+
+    ![New FactBox pane](media/postPU20-expandedFactBox-cropped.png  "New FactBox pane")
+
 
 ## Adding and removing columns in a grid is easier
 

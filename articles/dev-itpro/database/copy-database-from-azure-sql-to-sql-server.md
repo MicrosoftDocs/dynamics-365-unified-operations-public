@@ -1,11 +1,11 @@
 ---
 # required metadata
-
+redirect_url: /dynamics365/unified-operations/dev-itpro/database/dbmovement-operations
 title: Copy Finance and Operations databases from Azure SQL Database to SQL Server environments
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 01/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -87,19 +87,7 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Self-service database export
 
-From your sandbox environment details page, click the **Maintain** menu and then select **Move database**.  
-<img src="media/DBMovement_Menu.png" width="400px" alt="Move database menu" />
-
-A slider pane will open on the page where you can use the **Export database** action.
-<br/>
-<img src="media/Export_Menu.png" width="400px" alt="Export database menu"/>
-
-The environment will be unavailable for other servicing operations such as Sandbox Refresh or Package Deployment during this time.  The source environment will be usable from a Dynamics user perspective.  
-
-After the export operation completes successfully, sign off on the servicing operation on your environment details page. You can then see the asset in your Asset Library in the **Database backups** section.
-<img src="media/AssetLibrary_Backups.png" width="800px" alt="Asset library backup files"/>
-
-The .bacpac files are stored here and can be manually downloaded to your Tier 1 developer environments for import. In the future, Microsoft will provide APIs to trigger the export action, as well as list the available backup files in your asset library. This includes the secured URL for automatically downloading a backup asset file or copying it directly to your own secure blob storage using Microsoft Azure Storage SDKs.
+[!include [dbmovement-export](../includes/dbmovement-export.md)]
 
 ## Import the database
 
@@ -113,7 +101,7 @@ To help ensure the best performance, copy the \*.bacpac file to the local comput
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=2400
 ```
 
 Here is an explanation of the parameters:
@@ -212,6 +200,11 @@ To switch the environment and use the new database, first stop the following ser
 - Management Reporter 2012 Process Service
 
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
+
+To rename the database, use the following ALTER DATABASE command:
+```
+ALTER DATABASE [your database name] MODIFY NAME = [new database name];
+```
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 

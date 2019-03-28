@@ -76,6 +76,7 @@ If you don't import a data entity package, you can manually set up the Electroni
 - [Additional fields](#additional-fields)
 - [Executable class settings](#executable-class-settings)
 - [Populate records actions](#populate-records-actions)
+- [Web applications](#web-applications)
 - [Web service settings](#web-service-settings)
 - [Message processing actions](#message-processing-actions)
 - [Electronic message processing](#electronic-message-processing)
@@ -92,27 +93,49 @@ Message item types identify the types of records that will be used in electronic
 
 Message item statuses identify the statuses that will apply to message items in the processing that you're setting up. You can set up message item types on the **Message item statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**).
 
+**Allow delete** parameter of a message item status defines whether user will be allowed to delete a message item in this status via **Electronic messages** form or **Electronic message items** form. 
+
 ### Message statuses
 
 Set up the message statuses that should be available in message processing. You can set up message statuses on the **Message statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**).
+
+Fields description:
+
+| Field name           | Description |
+|----------------------|-------------|
+|Message status        | Unique name of an electronic message status which characterizes state of a message in each moment of time. This name is shown in Electronic messages form and in a Log related to electronic message. |
+|Description           | Description related to the status of electronic message      |
+|Response type         | Some actions in a processing may result more than one response type. As for example, action of **Web service** type may result either **Successfully executed** or **Technical error** response type depending on result of its execution. In this case message status for both response types must be defined. Refer [Message processing action types](#message-processing-action-types) for more information about action types and related to them types of response. |
+|Message item status   |There are cases when electronic message status must influence respectively on statuses of related message items. Associate such message item status in this field by selecting it from lookup. |
+|Allow delete          | **Allow delete** parameter of an electronic message status defines whether user will be allowed to delete an electronic message in this status via **Electronic messages** form.            |
 
 ### Additional fields
 
 The Electronic messages functionality lets you populate records from a transactional table. In this way, you can prepare the records for reporting and then report them. Sometimes, there isn't enough information in the transactional table to report a record according to the report requirements. You can fill in all the information that must be reported for a record by setting up additional fields. Additional fields can be associated with both messages and message items. You can set up additional fields on the **Additional fields** page (**Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**).
 
-The following table describes the fields on the **Additional fields** page.
+The following table describes the general fields on the **Additional fields** page:
 
 | Field                | Description |
 |----------------------|-------------|
 | Field name           | Enter the name of an additional attribute of message items that are related to the process. This name is shown in the user interface while you work with the process. It can also be used in ER configurations that are related to the process. |
 | Description          | Enter a description of the additional attribute of message items that are related to the process. |
-| Field value          | Enter the field value to use in relation to a message item during reporting. |
-| Field description    | Enter a description of the field value to use in relation to a message item during reporting. |
+| User edit            | In a case when a user must be able to change value of the additional filed from user inteface, set up this check box **Yes**, otherwise **No**. |
+| Counter              | When the additional field must contain a sequence number within an electronic message, mark this check box. Values of the additional field will be filled in automatically during running an action of “Electronic reporting export” type.  |
+| Hidden               | When the additional field must be hidden from the user interface, mark this check box.  |
+
+Each additional field may have different values for the processing. You may define these values on Values fast tab:
+
+| Field                | Description |
+|----------------------|-------------|
+| Field value          | Enter the field value to use in relation to a message or message item during reporting. |
+| Field description    | Enter a description of the field value to use in relation to a message or message item during reporting. |
 | Account type         | Some additional fields values might be limited to specific account types. Select one of the following values: **All**, **Customer**, or **Vendor**. |
 | Account code         | If you selected **Customer** or **Vendor** in the **Account type** field, you can further limit the use of field values to a specific group or table. |
 | Account/Group number | If you selected **Customer** or **Vendor** in the **Account type** field, and if you entered a group or table in the **Account code** field, you can enter a specific group or counteragent in this field. |
 | Effective            | Specify the date when the value should start to be considered. |
 | Expiration           | Specify the date when the value should stop being considered. |
+
+Combinations of criteria defined in **Account/Group number**, **Account code**, **Effective**, **Expiration** doesn’t influence by default on selection of value for additional field but can be used in executable class to implement some specific logic of calculation of an additional field value.
 
 ### Executable class settings
 
@@ -127,6 +150,8 @@ You can manually set up an executable class on the **Executable class settings**
 | Executable class name | Select an X++ executable class. |
 | Execution level       | This field is set automatically, because the value should be predefined for the selected executable class. This field limits the level that related evaluation is run on. |
 | Class description     | This field is set automatically, because the value should be predefined for the selected executable class. |
+
+Some executable classes may have mandatory parameters which must be defined before the executable class is run for the first time. To define such parameters, click **Parameters** button on Action pane, setup corresponding values and the fields in dialog window and click **OK** button. It is important to click **OK** button here as otherwise parameters will not be saved to the base and executable class will not be called properly.
 
 ### Populate records actions
 
@@ -150,6 +175,37 @@ On the **Datasources setup** FastTab, add a line for every data source that is u
 | Document account field | Select the field that the document account should be taken from in the selected table. |
 | User query             | If this check box is selected, you can set up a query by selecting **Edit query** above the grid. Otherwise, all the records will be populated from the data source. |
 
+### Web applications
+
+You use web applications page to set up parameters of a web application to support open standard OAuth 2.0 which lets users grant  "secure delegated access" to the application on their behalf, without sharing their access credentials. From this page you can also go through the authorization process by getting an authorization code and access token. You can set up web application settings on the **Web applications** page (**Tax** \> **Setup** \> **Electronic messages** \> **Web applications**).
+
+The following table describes the fields on the **Web applications** page.
+
+| Field                         | Description |
+|-------------------------------|-------------|
+| Application name              | Enter a name for the web application. |
+| Description                   | Enter a description of the web application. |
+| Base URL                      | Enter the base internet address of the web application. |
+| Authorization URL path        | Specify the path to compose URL for authorization.  |
+| Token URL path                | Specify the path to compose URL for token.  |
+| Redirect URL                  | Enter the redirect URL.  |
+| Client ID                     | Enter the Client ID of the web application.  |
+| Client secret                 | Enter the Client secret of the web application.  |
+| Server token                  | Enter the server token of the web application.  |
+| Authorization format mapping  | Select an Electronic Reporting (ER) format to be used to generate the request for authorization.   |
+| Import token model mapping    | Select an ER importing model mapping to be used to store access token.  |
+| Granted scope      Access token will expire in  | This field will be updated automatically. Its value shows granted scope of requests to the web application.  |
+| Accept                        | Sepecify the web request accept property. For example, "application/vnd.hmrc.1.0+json".  |
+| Content type           | Specify content type. For example, "application/json".  |
+
+Following functions are available from **Web applications** page to support authorization process:
+-	**Get authorization code** - to initialize authorization of the web application.
+-	**Obtain access token** - to initialize getting of an access token.
+-	**Refresh access token** - to refresh an access token.
+
+When an access token to a web application stored in the data base of the system in encrypted format it can be used for requests to a web service. For the security purposes access to the access token must be restricted for only those security roles which must be allowed to address those requests. When a user outside of the security group is trying to address a request, an exception will inform user that he(she) is not allowed to interoperate via selected web application.
+Use **Security roles** fast table of the Tax > Setup > Electronic messages > Web applications page to set up roles which must have access to access token. When Security roles are not defined for a web application, a system administrator only will be able to interoperate via this web application.
+
 ### Web service settings
 
 You use web service settings to set up direct data transmission to a web service. You can set up web service settings on the **Web service settings** page (**Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**).
@@ -160,13 +216,17 @@ The following table describes the fields on the **Web service settings** page.
 |-------------------------|-------------|
 | Web service             | Enter a name for the web service. |
 | Description             | Enter a description of the web service. |
-| Internet address        | Enter the internet address of the web service. |
+| Internet address        | Enter the internet address of the web service. If a web application is specified for a web servise and the internet address should be the same as the one defined for the selected web application, click **Copy base URL** button to copy the **Base URL** from web application to **Internet address** field of web service.  |
 | Certificate             | Select a Key Vault certificate that has previously been set up. |
+| Web application         | Select a Key Vault certificate that has previously been set up. |
 | The response type – XML | Set this option to **Yes** if the response type is XML. |
 | Request method          | Specify the method of the request. HTTP defines a set of request methods that indicate the action that should be performed for a given resource. The method can be **GET**, **POST**, or another HTTP method. |
 | Request headers         | Specify request headers. A request header is an HTTP header that can be used in an HTTP request, and that isn't related to the content of the message. |
+| Accept                  | Specify web request accept property. |
 | Accept encoding         | Specify the Accept-Encoding. The Accept-Encoding request HTTP header advertises the content encoding that the client can understand. This content encoding is usually a compression algorithm. |
 | Content type            | Specify the content type. The Content-Type entity header indicates the media type of the resource. |
+| Successful response code   | Specify HTTP status codeindicating that the request was successful. |
+| Request headers format mapping  | Select the ER format for generation of web request headers. |
 
 ### Message processing actions
 
@@ -179,17 +239,21 @@ The following tables describe the fields on the **Message processing actions** p
 | Field                   | Description |
 |-------------------------|-------------|
 | Action type             | Select the type of action. For information about the available options, see the [Message processing action types](#message-processing-action-types) section. |
-| Format mapping          | Select the ER format that should be called for the action. This field is available only for actions of the **Electronic reporting export**, **Electronic reporting import**, and **Electronic reporting export message** types. |
-| Message item type       | Select the type of records that the action should be evaluated for. This field is available for actions of the **Message item execution level**, **Electronic reporting export**, and **Electronic reporting import** types, and also some other types. If you leave this field blank, all the message item types that are defined for the message processing are evaluated. |
+| Format mapping          | Select the ER format that should be called for the action. This field is available only for actions of the **Electronic reporting export**, **Electronic reporting import**, **Electronic reporting export message** types. |
+| Format mapping for URL path | Select the ER format that should be called for the action. This field is available only for actions of the **Web service** types and is used to compose path of the URL address which will be added to the base internet address specified for the selected web server. |
+| Message item type       | Select the type of records that the action should be evaluated for. This field is available for actions of the **Message item execution level**, **Electronic reporting export**, and **Electronic reporting import** types, **Web service** and also some other types. If you leave this field blank, all the message item types that are defined for the message processing are evaluated. |
 | Executable class        | Select executable class settings that were previously created. This field is available only for actions of the **Message item execution level** and **Message item execution level** types. |
 | Populate records action | Select a populate records action that was previously set up. This field is available only for actions of the **Populate records** type. |
+| Web service  | Select a web service that was previously set up. This field is available only for actions of the  **Web service** type.  |
+| File name  | Specify the name of the file which will result the action as a response from web server or generation of a report. This field is available only for actions of the  **Web service** and **Electronic reporting export message** type.   |
+| Show dialog  | Mark this check box if a dialog must be shown to a user before report generation. This field is available only for actions of the  **Electronic reporting export message** type.   |
 
 ##### Message processing action types
 
 The following options are available in the **Action type** field:
 
-- **Populate records** – A **Populate records** action must previously be set up. Associate it with an action of the **Populate records** type to enable it to be included in processing. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
 - **Create message** – Use this type to let users manually create messages on the **Electronic message** page. An initial status can't be set up for an action of this type.
+- **Populate records** – A **Populate records** action must previously be set up. Associate it with an action of the **Populate records** type to enable it to be included in processing. It's assumed that this action type is used either for the first action in message processing (when no electronic message is created in advance) or as an action adding message items to a previously created message (by an action of **Create message** type). Therefore, result status of only message items can be set up for an action of this type. An initial status can be set up for message only.
 - **Message execution level** – Use this type to set up an executable class that should be evaluated at the message level.
 - **Message item execution level** – Use this type to set up an executable class that should be evaluated at the message item level.
 - **Electronic reporting export** – Use this type for actions that should generate a report that is based on an exporting ER configuration at the message item level.
@@ -197,13 +261,13 @@ The following options are available in the **Action type** field:
 - **Electronic reporting import** – Use this type for actions that should generate a report that is based on an importing ER configuration.
 - **Message level user processing** – Use this type for actions that assume some manual actions by the user. For example, the user might update the status of messages.
 - **User processing** – Use this type for actions that assume some manual action by the user. For example, the user might update the status of messages items.
-- **Web service** – Use this type for actions that should transmit a generated report to a web service. This action type isn't used for Italian Purchase and Sales Invoices Communication reporting.
+- **Web service** – Use this type for actions that should transmit a generated report to a web service. This action type isn't used for Italian Purchase and Sales Invoices Communication reporting. For actions of **Web service** type you can specify a **Confirmation text** on **Miscellaneous details** fast tab of **Message processing actions**. This confirmation text will be show to the user before the request to the selected web service will be addressed.
 - **Request verification** – Use this type to request verification from a server.
 
 #### Initial statuses FastTab
 
 > [!NOTE]
-> The **Initial statuses** FastTab isn't available for actions that have an initial type of **Populate records** or **Create message**.
+> The **Initial statuses** FastTab isn't available for actions that have an initial type of **Create message**.
 
 | Field               | Description                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
@@ -219,11 +283,29 @@ The following options are available in the **Action type** field:
 | Response type       | The response type of the selected message status. |
 | Message item status | Select the resulting statuses that should be available after the selected message processing action is evaluated. This field is available only for message processing actions that are evaluated at the message item level. For example, it's available for actions of the **User processing** and **Message item execution level** types. For message processing actions that are evaluated at the message level, this field shows the message item status that was set up for the selected message status. |
 
+The following table illustrates what result statuses must be setup in respect to types of actions:
+
+| Electronic message action type \ Response type  | Successfully executed  | Business error  | Technical error  | User defined  | Cancel  |
+|-------------------------------------------------|--------------|---------|-------|-----|-----------------|
+| Create message                                  | X            |         |       |     |                 |
+| Electronic reporting export                     | X            |         |       |     |                 |
+| Electronic reporting import                     |              |         |       |     |                 |
+| Web service                                     | X            |         | X     |     |                 |
+| User processing                                 |              |         |       |     |                 |
+| Message execution level                         |              |         |       |     |                 |
+| Populate records                                |              |         |       |     |                 |
+| Message item execution level                    |              |         |       |     |                 |
+| Request verification                            | X            |  X      | X     |     |                 |
+| Electronic reporting export message             | X            |         |       |     |                 |
+| Message level user processing                   |              |         |       |     |                 |
+
 ### Electronic message processing
 
-Electronic message processing is a basic concept of the Electronic messages functionality. It aggregates actions that should be evaluated for the electronic message. The actions can be linked via an initial status and a result status. Alternatively, actions of the **User processing** type can be started independently. On the **Electronic message processing** page (**Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**), you can also select additional fields that should be supported for the processing.
+Electronic message processing is a basic concept of the Electronic messages functionality. It aggregates actions that should be evaluated for the electronic message. The actions can be linked via an initial status and a result status. Alternatively, actions of the **User processing** type can be started independently. On the **Electronic message processing** page (**Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**), you can also select additional fields that should be supported for the processing either on message level or message items level.
 
-The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately, or whether it can be initiated by the processing. (User actions must be run separately.)
+The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately, or whether it can be initiated by the processing. To define whether the action can be initialized by a user only, mark **Run separately** check box for the action in the processing. Unmark the  **Run separately** parameter if you want that the action to be started by processing when for messages or message items in the status defined as initial status for this action. Action of **User action** type must only be run separately. 
+
+Sometimes it can be needed to aggregate several actions into a sequence even when the first of them is defined to be run separably. For example, when it is required that report generation must be initialized by a user but once generated report must be immediately sent to a web service and the response from the web service must be reflected in the system. You can use for such purpose **Inseparable sequence**. To do so, click on **Inseparable sequence** button on the Action pane of **Action** fast tab of **Electronic message processing** page, create a sequence and select it in the **Inseparable sequence** column for those actions which must be run always together. The first action in this case can be setup as **Run separately** but all the others no.
 
 The **Message item additional fields** FastTab lets you add predefined additional fields that are related to message items. You must add additional fields for each type of message item that the fields are related to.
 
@@ -245,16 +327,22 @@ The **Messages** FastTab shows electronic messages for the selected processing. 
 
 - **New** – This button is associated with actions of the **Create message** type.
 - **Delete** – This button is available if the **Allow delete** check box is selected for the current status of the selected message.
+- **Collect data** - This button is associated with action of the **Populate records** type.
 - **Generate report** – This button is associated with actions of the **Electronic reporting export message** type.
 - **Send report** – This button is associated with actions of the **Web service** type.
+- **Import response** - This button is assocoated with actions of the **Electronic reporting import** type.
 - **Update status** – This button is associated with actions of the **Message level user processing** type.
 - **Message items** – Open the **Electronic message items** page.
 
-The **Action log** FastTab shows information about all the actions that have been run for the selected message.
+The **Action log** FastTab shows information about all the actions that have been run for the selected message. If an action resulted an error, information about the error will be attached to the related Action log line. Select the line and click on **clip** button on the top right corner on the page to review the information about the error.
 
 The **Message additional fields** FastTab shows all the additional fields that are defined for messages in the processing setup. It also shows the values of those additional fields.
 
-The **Message items** FastTab shows all the message items that are related to the selected message.
+The **Message items** FastTab shows all the message items that are related to the selected message. For each of the messge item folliwing fynction can be used depending on status of this message item:
+
+- **Delete** – This button is available if the **Allow delete** check box is selected for the current status of the selected message item.
+- **Update status** – This button is associated with actions of the **User processing** type.
+- **Original document** - This button allows user to open a page with the original document of the selected message.
 
 You can review all the attachments for the selected message. These attachments are reports that have already been generated and received. Select the message to review attachments for, and then select the **Attachment** button on the Action Pane.
 

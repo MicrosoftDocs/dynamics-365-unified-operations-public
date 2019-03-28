@@ -5,7 +5,7 @@ title: Business intelligence (BI) and reporting home page
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ This topic points you to resources that you can use to learn more about the busi
 ## Get started
 - [Information access and reporting](information-access-reporting.md)
 - [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blog)
+- [Finance and Operations: Power BI Analytics & Reporting Services blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## Analytical workspaces
 Finance and Operations delivers interactive reports that are seamlessly integrated into application workspaces. Workspaces can use rich infographics and visuals that are supported by Microsoft Power BI. These infographics and visuals include many controls that are provided by third parties. Therefore, workspaces can provide a highly visual, interactive experience for users.

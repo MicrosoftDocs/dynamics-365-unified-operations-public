@@ -4,6 +4,10 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
+  - name: Preview features in Dynamics 365 for Retail 10.0.1
+    href: get-started/whats-new-10-0-1.md
+  - name: What's new and changed in Dynamics 365 for Retail (April 2019)
+    href: get-started/april-whats-new.md
   - name: Before you buy Retail
     href: get-started/before-you-buy.md
   - name: Sign up for a preview subscription
@@ -57,10 +61,14 @@
     href: ../financials/accounts-receivable/credit-card-authorizations.md
   - name: Configure cash denominations for the POS
     href: cash-denominations.md
+  - name: Dynamics 365 Payment Connector for Adyen
+    href: dev-itpro/adyen-connector.md
   - name: Set up pay invoice scenarios
     href: payinvoice.md
   - name: Payments FAQ
     href: dev-itpro/payments-retail.md
+  - name: Duplicate payments prevention
+    href: duplicate-payment-protection.md
 - name: Purchase orders
   items:
   - name: Purchase order overview
@@ -77,6 +85,8 @@
   items:
   - name: Retail statements
     href: retail-statements.md
+  - name: Retail transaction consistency checker
+    href: valid-checker.md
   - name: Create, calculate, and post statements for a retail store
     href: tasks/create-calculate-post-statement-retail-store.md
   - name: Improvements to statement posting functionality
@@ -101,6 +111,12 @@
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Omni-channel advanced auto charges
+  items:
+  - name: Configure and use advanced auto charges
+    href: omni-auto-charges.md
+  - name: Prorate header charges to matching sales lines
+    href: pro-rate-charges-matching-lines.md
 - name: Call center
   items:
   - name: Call center sales functionality
@@ -159,6 +175,8 @@
       href: define-maintain-channel-clients-registers-hw-stations.md
   - name: Screen layouts
     items:
+    - name: Demo data screen layouts in MPOS/CPOS
+      href: demo-data.md
     - name: Screen layouts for the POS
       href: pos-screen-layouts.md
     - name: Install the Retail POS layout designer
@@ -183,6 +201,8 @@
     href: pos-offline-functionality.md
   - name: Shift and cash drawer management
     href: shift-drawer-management.md
+  - name: Cash out gift card balance
+    href: dev-itpro/gift-card-cash-out.md
   - name: Customer orders
     items:
     - name: Customer orders in MPOS
@@ -219,8 +239,16 @@
     href: Order-fulfillment-POS-setup.md
   - name: Show order notifications in the POS
     href: Notifications-POS.md
-- name: Configure and process an exchange on a return order
-  href: orderexchanges.md
+- name: Returns
+  items:
+  - name: Sell and return products not included in a store's assortment
+    href: sell-return-outside-assortments.md
+  - name: Configure and process an exchange on a return order
+    href: orderexchanges.md
+  - name: Restrict payment methods for returns without a receipt
+    href: payment-methods-restrictions.md
+  - name: Return items across multiple customer orders and invoices
+    href: multireturn.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
@@ -235,7 +263,9 @@
     href: store-performance-information.md
   - name: Set up Recency, Frequency, and Monetary (RFM) analysis
     href: set-up-rfm-analysis.md
-- name: Discounts and price adjustments
+- name: Retail price reports
+  href: price-report.md
+- name: Pricing and discounts
   items:
   - name: Retail discounts
     href: retail-discounts-overview.md
@@ -243,7 +273,7 @@
     href: price-management.md
   - name: Price adjustments and discounts
     href: price-adjustments-discounts.md
-  - name: Apply multiple Retail discounts to a product
+  - name: Apply multiple discounts to a product
     href: Apply-multiple-retail-discounts.md
   - name: Determine the optimal combination of overlapping discounts
     href: optimal-combination-overlapping-discounts.md
@@ -251,6 +281,8 @@
     href: define-channel-specific-discounts.md
   - name: Options for preventing discounts for retail products
     href: prevent-discounts.md
+  - name: Shipping discount overview
+    href: retail-shipping-discount.md
   - name: Set up coupons for retail sales
     href: retail-coupons.md
 - name: Products and merchandising
@@ -309,18 +341,24 @@
     href: ../supply-chain/inventory/quarantine-orders.md
   - name: Running average cost price
     href: ../supply-chain/cost-management/running-average-cost-price.md
-  - name: Tracking running average cost per inventory dimension
+  - name: Track running average cost per inventory dimension
     href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Human resources
   items:
   - name: Organize your workforce using departments, jobs, and positions
     href: ../talent/departments-jobs-positions.md
-  - name: Setting up the components of a job
+  - name: Set up the components of a job
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
-  - name: Fiscal integration for Retail channel
+  - name: Fiscal integration overview for Retail channel
     href: localizations/fiscal-integration-for-retail-channel.md
+  - name: Set up fiscal integration for Retail channel
+    href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Austria
+    items:
+    - name: Fiscal registration service integration sample for Austria
+      href: localizations/emea-aut-fi-sample.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
@@ -331,6 +369,8 @@
       href: localizations/emea-eeu-retail-invoices.md
     - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
       href: localizations/emea-eeu-deployment.md
+    - name: Fiscal printer integration sample for Poland
+      href: localizations/emea-pol-fpi-sample.md
   - name: France
     items:
     - name: Cash register functionality
@@ -347,7 +387,7 @@
       href: localizations/apac-ind-n-1-for-india.md
   - name: Italy
     items:
-    - name: Fiscal printer integration
+    - name: Fiscal printer integration sample for Italy
       href: localizations/emea-ita-fpi-sample.md
   - name: Norway
     items:
@@ -360,7 +400,7 @@
     - name: Cash register functionality
       href: localizations/emea-swe-cash-registers.md
     - name: Sample for Retail POS integration with control units
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Retail tasks
   items:
   - name: Create a product
@@ -442,6 +482,8 @@
       href: retail-components.md
     - name: Retail Server architecture
       href: dev-itpro/retail-server-architecture.md
+    - name: Select an in-store topology
+      href: dev-itpro/retail-in-store-topology.md
     - name: Commerce Data Exchange and retail channel communications
       href: dev-itpro/define-retail-channel-communications-cdx.md
     - name: Retail Modern POS architecture
@@ -526,6 +568,8 @@
       href: dev-itpro/hybridApp.md
     - name: Override POS request handler
       href: dev-itpro/pos-handler.md
+    - name: View POS extension package information
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
@@ -582,6 +626,8 @@
       href: dev-itpro/create-windows-installer-payment-connector.md
     - name: Payment data use
       href: payment-connector-data-fields.md
+    - name: Enable duplicate payment protection for payment connector
+      href: dev-itpro/duplicate-payment-protection.md
   - name: Retail SDK
     href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:

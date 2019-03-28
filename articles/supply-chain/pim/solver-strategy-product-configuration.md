@@ -5,7 +5,7 @@ title: Solver strategy for product configuration
 description: This topic describes how you can use the solver strategy to improve the performance of product configuration. 
 author: cvocph 
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,8 +66,8 @@ The following table provides recommendations about the solver strategy to use in
 | Solver strategy      | Use the strategy in this scenario |
 |----------------------|-----------------------------------|
 | Default              | The **Default** strategy has been optimized to solve models that rely on table constraints. Customer implementation studies have shown that this strategy is the most efficient strategy in scenarios where table constraints are used extensively. |
-| Minimal domain first | The **Minimal domain first** and **Top-down** strategies are closely related. Customer implementation studies have shown that the **Top-down** strategy, which was introduced in CU8, outperforms the **Minimal domain first** strategy. However, the **Minimal domain first** strategy is kept in the product for backward compatibility. Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used. However, in some cases, the **Default** strategy outperforms these two strategies. Therefore, remember to try each strategy. |
-| Top-down             | The **Minimal domain first** and **Top-down** strategies are closely related. Customer implementation studies have shown that the **Top-down** strategy, which was introduced in CU8, outperforms the **Minimal domain first** strategy. However, the **Minimal domain first** strategy is kept in the product for backward compatibility. Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used. However, in some cases, the **Default** strategy outperforms these two strategies. Therefore, remember to try each strategy. |
+| Minimal domains first | The **Minimal domains first** and **Top-down** strategies are closely related. Customer implementation studies have shown that the **Top-down** strategy, outperforms the **Minimal domains first** strategy. However, the **Minimal domains first** strategy is kept in the product for backward compatibility. Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used. However, in some cases, the **Default** strategy outperforms these two strategies. Therefore, remember to try each strategy. |
+| Top-down             | The **Minimal domains first** and **Top-down** strategies are closely related. Customer implementation studies have shown that the **Top-down** strategy, outperforms the **Minimal domains first** strategy. However, the **Minimal domains first** strategy is kept in the product for backward compatibility. Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used. However, in some cases, the **Default** strategy outperforms these two strategies. Therefore, remember to try each strategy. |
 | Z3                   | We recommend that you use the **Z3** strategy as the default solver strategy. If you're concerned about performance and scalability, you can evaluate the other strategies. |
 
 ## Additional resources

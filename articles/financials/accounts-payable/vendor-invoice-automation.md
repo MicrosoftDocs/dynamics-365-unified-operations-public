@@ -3,7 +3,7 @@
 
 title: Vendor invoice automation
 description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article

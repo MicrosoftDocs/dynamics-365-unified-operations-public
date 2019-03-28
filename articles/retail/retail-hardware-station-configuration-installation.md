@@ -128,7 +128,7 @@ The Retail hardware station installer first extracts the associated files and th
     > - If a system restart is required, the installer informs you of this requirement but can continue the installation.
     > - Before you can use hardware that is based on the Object Linking and Embedding for Retail Point of Sale (OPOS) standard, the OPOS Common Control Objects must be installed. If they aren't installed, the installer informs you of this requirement but can continue the installation.
 
-2. Enter the Retail Server URL (for example, **https://MyCompanyNameret.axcloud.dynamics.com/Commerce**), and then select **Next**.
+2. Enter the Retail Server URL (for example, `https://MyCompanyNameret.axcloud.dynamics.com/Commerce`), and then select **Next**.
 
     > [!NOTE]
     > You can find the Retail Server URL at the top of the **Hardware stations** FastTab on the **Retail store details** page.
@@ -159,6 +159,7 @@ The Retail hardware station installer first extracts the associated files and th
 13. When you receive a message that states that the merchant account information was installed correctly, exit the installer by selecting the **Close** button.
 
 ## Help secure Retail hardware station
+
 Current security standards state that the following options should be set in a production environment:
 
 > [!NOTE]
@@ -169,10 +170,12 @@ Current security standards state that the following options should be set in a p
 
     > [!NOTE]
     > By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or enable these values, follow these steps:
+    >
     > 1. Press the Windows logo key+R to open a **Run** window.
     > 2. In the **Open** field, type **Regedit**, and then select **OK**.
     > 3. If a **User Account Control** window appears, select **Yes**.
     > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.2 only:
+    >
     >    - TLS 1.2\\Server:Enabled=1
     >    - TLS 1.2\\Server:DisabledByDefault=0
     >    - TLS 1.2\\Client:Enabled=1
@@ -195,13 +198,14 @@ Current security standards state that the following options should be set in a p
 > - It's critical that you review security guidelines for IIS and Payment Card Industry (PCI) requirements.
 
 ## Troubleshooting
+
 ### Retail Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing
 
 **Solution:** Verify the following list of potential failure points:
 
 - The computer that is running Retail Modern POS trusts the certificate that is used on the computer that runs Retail hardware station.
 
-    - To verify this setup, in a web browser, go to the following URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping
+    - To verify this setup, in a web browser, go to the following URL: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
     - This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock symbol appears in the address bar. When you select this symbol, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
 
 - On the computer that runs Retail hardware station, the port that will be used by the hardware station is opened in the firewall.
@@ -213,9 +217,10 @@ Current security standards state that the following options should be set in a p
 
 - Retail hardware station hasn't been set up correctly in Retail headquarters. Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.
 - The jobs haven't been run to update the channel configuration. In this case, run the 1070 job for channel configuration.
-- The hardware station isn't accessible from that computer. Verify that the hardware station URL ping test is accessible from a web browser. This URL can be found at the end of the hardware station installer and is in the following form: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping
+- The hardware station isn't accessible from that computer. Verify that the hardware station URL ping test is accessible from a web browser. This URL can be found at the end of the hardware station installer and is in the following form: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
 
 ## Uninstall Retail hardware station
+
 You can use Control Panel in Microsoft Windows to uninstall Retail hardware station.
 
 1. Press the Windows logo key, and then, in the search box, type **Control Panel**. In the list of search results, select **Control Panel**.

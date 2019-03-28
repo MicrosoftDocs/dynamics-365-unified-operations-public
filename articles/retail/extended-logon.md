@@ -72,6 +72,3 @@ The logon service can be extended to support additional extended logon devices, 
 ## Using extended logon
 
 When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed. If a password is also required before logon can proceed, the worker is prompted to enter his or her password.
-
-
-

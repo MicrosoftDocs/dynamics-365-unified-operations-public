@@ -3,9 +3,9 @@
 
 title: Set up offer management
 description: This topic describes how to set up offers in Talent.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -219,8 +219,11 @@ offers.
 - **Candidate’s offer experience** - As administrator, you can choose to set whether all offers have an expiration date, and if so, what the default offset for the expiration date should be. You can also configure whether candidates can decline an offer.
 
 - **e-Signatures** - As an administrator, you can also choose the method that candidates can use to sign offers.
-    - Adobe Sign - All offer packages will be sent and signed via Adobe Sign. Each offer creator publishing the offer needs to have their Adobe Sign license connected to Attract. 
+    - Adobe Sign - All offer packages will be sent and signed via Adobe Sign. Each offer creator publishing the offer needs to have their Adobe Sign account connected to Attract. For Adobe Sign licenses and a free Trial, please visit this [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign - All offer packages will be sent and signed via DocuSign. Each offer creator publishing the offer needs to have their DocuSign account connected to Attract. 
+    
     - ESign - This is the default option, provided out of the box, where the user can sign an offer by typing their name and initials.
+
 
 To learn more about the offer creation process, see [Creating, approving, and signing offers](./creating-offers.md).

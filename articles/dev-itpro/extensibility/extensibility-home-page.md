@@ -5,7 +5,7 @@ title: Extensibility home page
 description: This topic provides links to topics about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 02/28/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -119,6 +119,7 @@ Information about customization is also shared through blogs where various topic
 + [Subscribing to onValidatingWrite](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
 + [Extending inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
++ [Extensible X++ - Method Signatures](https://blogs.msdn.microsoft.com/mfp/2017/08/31/extensible-x-method-signatures/)
 
 ## How do I create an extensible solution?
 

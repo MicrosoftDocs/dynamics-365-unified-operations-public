@@ -3,7 +3,7 @@
 
 title: Core HR entities in Common Data Service for Apps
 description: Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and integration scenarios.
-author: jcart
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry:
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 2018-08-11
 ms.dyn365.ops.version: 
 
@@ -36,6 +36,9 @@ Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and 
 
 For more information about CDS for Apps, see [What is Common Data Service for
 Apps](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro).
+
+> [!IMPORTANT]
+> The previous release of the Common Data Service (CDS 1.0) is being discontinued. On April 15th, 2019 the integration between Core HR and the Common Data Service (CDS 1.0) will be turned off. For more information about upgrading the Common Data Service to the Common Data Service for Apps, please see [Upgrade to Common Data Service for Apps] https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds
 
 The following Core HR entities are available in CDS for Apps.
 
@@ -785,3 +788,23 @@ The following Core HR entities are available in CDS for Apps.
 | Event Type            | Option Set      | X            | X              |
 | Is Active             | Two Options     | X            |                |
 | Name                  | Text            | X            | X              |
+
+## Entity relationship models
+
+### Worker
+![Worker](./media/HCMCommon-worker-entity-diagram.png)
+
+### Job and Job Position
+![Job and Job Position](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+
+### Benefits
+![Benefits](./media/HCMCommon-benefits-entity-diagram.png)
+
+### Compensation
+![Compensation](./media/HCMCommon-compensation-entity-diagram.png)
+
+### Leave
+![Leave](./media/HCMCommon-leave-entity-diagram.png)
+
+### Work Calendar
+![Work Calendar](./media/HCMCommon-work-calendar-entity-diagram.png)

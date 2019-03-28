@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.3. This version will be released in January 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/05/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 8.1.3
 # What's new or changed in Dynamics 365 for Finance and Operations version 8.1.3 (January 2019)
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.3. This version will be released in January 2019 and has a build number of 8.1.227.
 
@@ -72,5 +70,29 @@ You can settle the amount remaining from settlement activity by applying that am
 You can now configure an Electronic reporting (ER) format to parse incoming files in JSON format. You can then set up ER mappings that specify how information from JSON files is used to update application data.
 
 ### Electronic reporting: Support country context-specific ER model mappings
+You can specify a country context for ER model mapping. You can also manage multiple country-specific mappings for a single ER data model. This allows you to isolate country-specific logic of data access in a single ER model mapping. Depending on the legal entity's primary address, the appropriate country/region-specific model mapping will be used when an ER format is used to generate an electronic document. 
 
-You can specify a country context for ER model mapping. You can also manage multiple country-specific mappings for a single ER data model. This allows you to isolate country-specific logic of data access in a single ER model mapping. Depending on the legal entity's primary address, the appropriate country/region-specific model mapping will be used when an ER format is used to generate an electronic document.
+## Russian-specific features
+This release contains the following features for Russia.
+
+### Accounts receivable
+- Tax registers allow you to track and manage taxable profits and losses in accordance with Russian tax accounting principles. The following tax registers are now available.
+  -  **Accounts receivable inventory act** register 
+  -  **Accounts receivable – bad debts reserve** register
+  -  **Accounts receivable - bad debt reserve movement** register 
+  -  **Accounts receivable movement** register 
+- Accounts receivable bad debts can now be written off.
+ 
+### Accounts payable
+ - Tax registers allow you to track and manage taxable profits and losses in accordance with Russian tax accounting principles. The following tax registers are now available.
+   - **Accounts payable inventory act** register
+   - **Accounts payable debt movement** register 
+ - Accounts payable bad debts can now be written off.
+
+### Client-bank interface and reconciliation procedure
+This release adds the interface and electronic reporting configurations examples required to use the Client-Bank functionality.
+To use this feature, the following electronic reporting configurations should be imported from Lifecycle Services and selected in the following settings:
+- Payment model.version.22
+- Payment model mapping to destination (RU).version.22.4
+- Bank statement (RU).version.22.6
+- Payment order (RU).version.22.4

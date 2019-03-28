@@ -205,6 +205,10 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | GetTaxOverridesServiceRequest                   |
 | UpdateTenderLineSignatureServiceRequest         |
 | CarryoutSelectedProductsOperationRequest |
+| AddCouponsOperationRequest |
+| CreateNonSalesTransactionServiceRequest |
+| ReturnTransactionOperationRequest |
+| AddLoyaltyCardToCartOperationRequest |
 
 ### Payments
 

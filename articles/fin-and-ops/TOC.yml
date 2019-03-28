@@ -25,7 +25,7 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Standard and First release service updates
+      - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
         items:
@@ -34,12 +34,6 @@
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
-      - name: One Version service updates FAQ
-        href: get-started/one-version.md
-      - name: Software lifecycle policy and cloud releases
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: Software lifecycle policy and on-premises releases
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
         href: get-started/mainstream-support-ax-2009-2012.md
       - name: Removed or deprecated features
@@ -48,19 +42,27 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Preview features in Finance and Operations version 10.0.1 (April 2019)
+        href: get-started/whats-new-changed-10-0-1.md
+      - name: Finance and Operations version 10.0 (April 2019)
+        href: get-started/whats-new-changed-10.md
       - name: Finance and Operations version 8.1.3 (January 2019)
         href: get-started/whats-new-changed-8-1-3.md
-      - name: Platform update 23 January 2019)
+      - name: Preview features in Finance and Operations platform update 25 (April 2019)
+        href: get-started/whats-new-platform-25.md 
+      - name: Platform update 24 (March 2019)
+        href: get-started/whats-new-platform-update-24.md
+      - name: Platform update 23 (January 2019)
         href: get-started/whats-new-platform-update-23.md
       - name: Platform update 22 (December 2018)
         href: get-started/whats-new-platform-update-22.md
       - name: Finance and Operations version 8.1.2 (December 2018)
         href: get-started/whats-new-changed-8-1-2.md
-      - name: Finance and Operations version 8.1.1 (October 2018)
+      - name: Finance and Operations version 8.1.1 (November 2018)
         href: get-started/whats-new-changed-8-1-1.md 
       - name: Finance and Operations version 8.1 (October 2018)
         href: get-started/whats-new-changed-8-1-October-2018.md 
-      - name: Platform update 21 (October 2018)
+      - name: Platform update 21 (November 2018)
         href: get-started/whats-new-platform-update-21.md
       - name: Platform update 20 (September 2018)
         href: get-started/whats-new-platform-update-20.md
@@ -197,6 +199,46 @@
       href: get-started/move-lcs-implementation-project-tenant.md 
     - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: get-started/implement-multiple-projects-aad-tenant.md
+  - name: One Version service updates 
+    href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+    items:
+    - name: One Version service updates FAQ
+      href: get-started/one-version.md
+    - name: Software lifecycle policy - Cloud
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+    - name: Software lifecycle policy - On-premises
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+    - name: Service update availability
+      href: get-started/public-preview-releases.md
+    - name: Apply updates to cloud environments
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md
+    - name: Configure service updates
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+    - name: Pause service updates
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+    - name: Get notified about service updates
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+    - name: Data task automation
+      href: ../dev-itpro/data-entities/data-task-automation.md
+    - name: Regression Suite Automation tool
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+  - name: Business events
+    href: ../dev-itpro/business-events/home-page.md
+    items:
+    - name: Application business events
+      href: ../dev-itpro/business-events/app-business-events.md
+    - name: Workflow business events
+      href: ../dev-itpro/business-events/business-events-workflow.md
+    - name: Alerts as business events
+      href: ../dev-itpro/business-events/alerts-business-events.md
+    - name: Business events in Microsoft Flow
+      href: ../dev-itpro/business-events/business-events-flow.md
+    - name: Business events developer documentation
+      href: ../dev-itpro/business-events/business-events-dev-doc.md
+    - name: Troubleshoot business events
+      href: ../dev-itpro/business-events/troubleshooting.md
+    - name: Use cases for business events
+      href: ../dev-itpro/business-events/potential-use-cases.md
   - name: Compliance
     items:
     - name: Audit policy rules
@@ -373,6 +415,18 @@
             href: ../supply-chain/sales-marketing/field-service-work-order.md
           - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
             href: ../supply-chain/sales-marketing/field-service-invoice.md
+          - name: Synchronize inventory transfers and adjustments from Field Service to Finance and Operations
+            href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+          - name: Synchronize inventory level information from Finance and Operations to Field Service 
+            href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+          - name: Synchronize products with inventory unit from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+          - name: Synchronize project list from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-project-list.md
+          - name: Synchronize warehouses from Finance and Operations to Field Service
+            href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+          - name: Synchronize work orders with project from Field Service to Finance and Operations
+            href: ../supply-chain/sales-marketing/synchronize-work-orders.md        
         - name: Configure Project Service Automation integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
           items:
@@ -405,6 +459,8 @@
           href: ../dev-itpro/data-entities/configuration-data-packages.md
         - name: Configuration data packages (July 2017 release only)
           href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+        - name: Make Entity Store available as a Data Lake
+          href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
       - name: Configuration data templates
         href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
       - name: Track changes to an entity
@@ -454,6 +510,8 @@
         href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
+    - name: Automated Entity store refresh
+      href: ../dev-itpro/analytics/automated-entity-store-refresh.md
     - name: Data task automation
       href: ../dev-itpro/data-entities/data-task-automation.md
     - name: Data validation checklist workspace
@@ -1256,6 +1314,8 @@
   - name: Localization and regulatory features
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
     items:
+      - name: Regulatory updates
+        href: ../financials/localizations/regulatory-updates.md
       - name: Australia
         href: ../financials/localizations/australia.md
         items:
@@ -1380,6 +1440,10 @@
             href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+        - name: SPED ECD
+          href: ../financials/localizations/latam-bra-sped-ecd.md
+        - name: SPED-Reinf tax statement
+          href: ../financials/localizations/latam-bra-sped-reinf.md
         - name: Parameters for legal entities
           href: ../financials/localizations/latam-bra-legal-entity-parameters.md
         - name: Set up legal entity parameters
@@ -1832,6 +1896,8 @@
             href: ../financials/localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
             href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+          - name: Purchase a taxable item from an unregistered vendor
+            href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
         - name: Deployment guidelines for cash registers
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
@@ -2188,18 +2254,32 @@
             href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
           - name: Set up and process payment orders
             href: ../financials/localizations/rus-payment-order-settings-processing.md 
+        - name: VAT
+          items:
+          - name: Value-added tax (VAT) for tax agents
+            href: ../financials/localizations/rus-tax-agent.md
+          - name: VAT declaration
+            href: ../financials/localizations/rus-VAT-declaration.md
+          - name: Sales books, purchase books, and invoice-factures journals
+            href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Fixed assets
           items: 
+          - name: Set up fixed assets
+            href: ../financials/localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
             href: ../financials/localizations/rus-fixed-asset-acquisition.md
           - name: Register fixed assets acquisitions
             href: ../financials/localizations/rus-register-acquisition.md
           - name: Create and post budget journals for fixed asset acquisitions
             href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+          - name: Create a fixed asset lease and a return from lease transaction
+            href: ../financials/localizations/rus-fixed-asset-leasing.md
           - name: Fixed asset counting
             href: ../financials/localizations/rus-fixed-assets-counting.md
           - name: Fixed assets currency revaluation
             href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+          - name: Maintain fixed assets
+            href: ../financials/localizations/rus-maintain-fixed-assets.md
           - name: Revaluate fixed asset cost and depreciation
             href: ../financials/localizations/rus-fixed-assets-revaluation.md            
           - name: Partial fixed asset disassembly (liquidation)
@@ -2218,6 +2298,20 @@
             href: ../financials/localizations/rus-depreciation-calculation.md
           - name: Transfer fixed assets
             href: ../financials/localizations/rus-fixed-asset-transfer.md
+        - name: Accounts payable and receivable
+          items:
+          - name: Invoices for payment
+            href: ../financials/localizations/rus-invoice-payment.md
+          - name: Set up dimension control for settlements
+            href: ../financials/localizations/rus-transactions-settlement-date.md
+          - name: Cash flow management
+            href: ../financials/localizations/rus-cash-flow.md
+        - name: Reporting
+          items:
+          - name: Financial reporting
+            href: ../financials/localizations/rus-financial-reports.md
+          - name: Configure financial reports in Excel (Russia)
+            href: ../financials/localizations/rus-excel-financial-report.md            
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
@@ -2226,16 +2320,18 @@
           href: ../financials/localizations/rus-ledger-transactions-preview.md
         - name: Set up officials
           href: ../financials/localizations/rus-officials.md
-        - name: Value-added tax (VAT) for tax agents
-          href: ../financials/localizations/rus-tax-agent.md
         - name: Set up dimension control for settlements
           href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Invoices for payment
           href: ../financials/localizations/rus-invoice-payment.md
         - name: Financial reporting
           href: ../financials/localizations/rus-financial-reports.md
-        - name: Create a purchase book
-          href: ../financials/localizations/rus-sales-books-purchase-books.md   
+        - name: Accounting reporting in electronic format
+          href: ../financials/localizations/rus-accounting-reporting.md
+        - name: Cash flow management
+          href: ../financials/localizations/rus-cash-flow.md
+        - name: Foreign currency sales, purchases, and transfers
+          href: ../financials/localizations/rus-currency-sale-purchase.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2320,7 +2416,9 @@
         - name: Set up reverse charge VAT item groups, rules, and parameters
           href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
         - name: Set up sales tax groups for reverse charge VAT
-          href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md            
+          href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
+        - name: Making Tax Digital for VAT
+          href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
       - name: United States
         href: ../financials/localizations/united-states.md
         items:
@@ -2582,6 +2680,8 @@
         href: ../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Employee development
         href: ../dev-itpro/analytics/employee-development-PBI.md?toc=/fin-and-ops/toc.json
+      - name: Expense management Power BI content
+        href: ../dev-itpro/analytics/expense-management-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial performance
         href: ../dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial insights
@@ -2781,6 +2881,8 @@
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Electronic reporting framework API changes for Application update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+        - name: Specify a custom storage for generated documents
+          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: Embedded analytical solutions
       items:
       - name: Embedded Power BI in workspaces
@@ -2939,6 +3041,8 @@
         href: ../supply-chain/master-planning/tasks/create-schedule-site.md
       - name: Create a plan for a site
         href: ../supply-chain/master-planning/tasks/create-plan-site.md
+      - name: Supply chain calendars and how they affect master planning
+        href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
       - name: Master plans and multisite functionality
         href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
         items:
@@ -3233,6 +3337,8 @@
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: Workflow types report
         href: organization-administration/workflow-types-report.md
+      - name: Workflow FAQ
+        href: organization-administration/workflow-FAQ.md
     - name: Alerts
       href: get-started/alerts-overview.md
       items:
@@ -3240,6 +3346,8 @@
         href: get-started/create-alerts.md
       - name: Batch processing of alerts
         href: get-started/alerts-managing.md
+      - name: Client alert notifications by email
+        href: get-started/alert-email-notifications.md
     - name: Electronic signatures
       href: organization-administration/electronic-signature-overview.md
       items:
@@ -3280,6 +3388,8 @@
           href: ../supply-chain/production-control/bill-of-material-bom.md
         - name: BOM designer functionality
           href: ../supply-chain/production-control/bom-designer-functionality.md
+        - name: Phantom items
+          href: ../supply-chain/production-control/phantom-items.md
         - name: BOM calculations
           href: ../supply-chain/cost-management/bom-calculations.md
         - name: Manage unit of measure
@@ -3504,6 +3614,8 @@
           href: ../supply-chain/production-control/batch-attributes.md
         - name: Batch balancing
           href: ../supply-chain/production-control/batch-balancing.md
+        - name: Catch weight product processing
+          href: ../supply-chain/warehousing/catch-weight-processing.md
         - name: Copy a formula
           href: ../supply-chain/production-control/tasks/copy-formula.md
         - name: Create a formula by copying from an existing formula
@@ -3571,6 +3683,8 @@
         href: ../supply-chain/pim/tasks/create-product-master.md
       - name: Create predefined product variants
         href: ../supply-chain/pim/tasks/create-predefined-product-variants.md
+      - name: Unit of measure conversion per product variant
+        href: ../supply-chain/pim/uom-conversion-per-product-variant.md
       - name: Create a released product for a single company
         href: ../supply-chain/pim/tasks/create-released-product-single-company.md
       - name: Product lifecycle state
@@ -3747,8 +3861,6 @@
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Fulfill sales agreements
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: Create a new trade agreement
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: Generate and process customer rebates
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: Process rebates for payment
@@ -3774,7 +3886,9 @@
       - name: Set up sales commission rules
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: Trade allowance
-      href: ../supply-chain/sales-marketing/trade-allowance.md 
+      href: ../supply-chain/sales-marketing/trade-allowance.md
+    - name: Create a new trade agreement
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: Service management
     href: ../supply-chain/service-management/service-management-home-page.md
     items:
@@ -4074,6 +4188,8 @@
         href: ../supply-chain/warehousing/scan-bar-codes-using-a-camera.md
       - name: Mobile barcode support
         href: ../supply-chain/warehousing/mobile-barcode-support.md
+      - name: Set up warehouse for transfer orders
+        href: ../supply-chain/warehousing/transfer-orders-warehouse.md
     - name: Warehouse work policies
       href: ../supply-chain/warehousing/warehouse-work-policies.md
       items:
@@ -4124,7 +4240,7 @@
       - name: Partial location cycle counting
         href: ../supply-chain/warehousing/partial-location-cycle-counting.md
       - name: Define partial location cycle counting process
-        href: ../supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md
+        href: ../supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process.md
       - name: Inventory journal
         href: ../supply-chain/inventory/inventory-journals.md
       - name: Inventory location

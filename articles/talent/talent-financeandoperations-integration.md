@@ -3,7 +3,7 @@
 
 title: Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations
 description: This topic describes the integration between Talent and Finance and Operations. 
-author: jcart
+author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope:  
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: 
 ---
@@ -62,27 +62,193 @@ The following template is used to synchronize records from Talent to Finance and
 (Finance and Operations) is on the right.
 
 The following underlying tasks are used to synchronize records from Talent to Finance and Operations.
-- Job Functions to Compensation Job Function.
-- Departments to Operating Unit
+- Job Functions to Compensation Job Function
 - Departments to Operating Unit
 - Job Types to Compensation Job Type
 - Jobs to Jobs
 - Jobs to Job Detail
 - Position Types to Position Type
-- Job Positions to Positions
-- Job Positions to Positions Parent Job Assignment
+- Job Positions to Base Position
+- Job Positions to Position Details
+- Job Positions to Position Durations
+- Job Positions to Position Hiearchies
 - Workers to Worker
 - Employments to Employment
 - Employments to Employment Detail
 - Position Worker Assignment to Position Worker Assignments
 - Worker Addresses to Worker Postal Address V2
 
+## Template mappings
+
+### Job Functions to Compensation Job Function
+
+| CDS entity (source)                 | Finance and Operations entity (destination) |
+|-------------------------------------|---------------------------------------------|
+| cdm_name (cdm_Job   Function Name)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
+| cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
+
+### Departments to Operating Unit
+
+| CDS entity (source)                           | Finance and Operations entity (destination) |
+|-----------------------------------------------|---------------------------------------------|
+| cdm_name (cdm_name)                           | NAME (NAME)                                 |
+| cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
+|                                               | OPERATINGUNITTYPE   (OPERATINGUNITTYPE)     |
+| cdm_description   (cdm_description)           | NAMEALIAS   (NAMEALIAS)                     |
+
+### Job Types to Compensation Job Type
+
+| CDS entity (source)                   | Finance and Operations entity (destination) |
+|---------------------------------------|---------------------------------------------|
+| cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
+| cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
+| cdm_exemptstatus   (cdm_exemptstatus) | EXEMPTSTATUS   (EXEMPTSTATUS)               |
+
+### Jobs to Jobs
+
+| CDS entity (source)                                           | Finance and Operations entity (destination)           |
+|---------------------------------------------------------------|-------------------------------------------------------|
+| cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
+| cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
+| cdm_allowedunlimitedpositions   (cdm_allowunlimitedpositions) | ALLOWUNLIMITEDPOSITIONS   (ALLOWUNLIMITEDPOSITIONS)   |
+| cdm_description   (cdm_description)                           | DESCRIPTION   (DESCRIPTION)                           |
+| cdm_jobdescription   (cdm_jobdescription)                     | JOBDESCRIPTION   (JOBDESCRIPTIONS)                    |
+
+### Jobs to Job Detail
+
+| CDS entity (source)                                             | Finance and Operations entity (destination) |
+|-----------------------------------------------------------------|---------------------------------------------|
+| cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
+| cdm_jobtypeid.cdm_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
+| cdm_jobfunctionid.cdm_name   (Job Function (Job Function Name)) | FUNCTIONID   (FUCNTIONID)                   |
+| cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                     |
+| cdm_validto (Valid To)                                        | VALIDTO (VALIDTO)                           |
+| cdm_defaultfulltimeequivalent   (Default Fulltime Equivalent)   | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)   |
+
+### Position Types to Position Type
+
+| CDS entity (source)                       | Finance and Operations entity (destination) |
+|-------------------------------------------|---------------------------------------------|
+| cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
+| cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
+| cdm_classification   (cdm_classification) | CLASSIFICATION   (CLASSIFICATION)           |
+
+### Job Positions to Base Position
+
+| CDS entity (source)                           | Finance and Operations entity (destination) |
+|-----------------------------------------------|---------------------------------------------|
+| cdm_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
+
+### Job Positions to Position Details
+
+| CDS entity (source)                                                      | Finance and Operations entity (destination)       |
+|--------------------------------------------------------------------------|---------------------------------------------------|
+| cdm_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
+| cdm_jobid.cdm_name   (Job (Name))                                        | JOBID (JOBID)                                    |
+| cdm_description   (cdm_description)                                        | DESCRIPTION   (DESCRIPTION)                       |
+| cdm_departmentid.cdm_departmentnumber   (Department (Department Number)) | DEPARTMENTNUMBER   (DEPARTMENTNUMBER)             |
+| cdm_positiontypeid.cdm_name   (Position Type (Name))                     | POSITIONTYPEID   (POSITIONTYPEID)                 |
+| cdm_avaialableforassignment   (Available for Assignment)                 | AVAILABLEFORASSIGNMENT   (AVAILABLEFORASSIGNMENT) |
+| cdm_validfrom   (Valid From)                                            | VALIDFROM   (VALIDFROM)                           |
+| cdm_validto (Valid To)                                                 | VALIDTO (VALIDTO)                               |
+| cdm_fulltimeequivalent   (Fulltime Equivalent)                           | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)         |
+
+### Job Positions to Position Durations
+
+| CDS entity (source)                             | Finance and Operations entity (destination) |
+|-------------------------------------------------|---------------------------------------------|
+| cdm_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
+| Calculated   Activation (Calculated Activation) | VALIDFROM (VALIDFROM)                        |
+| Calculated   Retirement (Calculated Retirement) | VALIDTO (VALIDTO)                         |
+
+### Job Positions to Position Hiearchies
+
+| CDS entity (source)                                                                           | Finance and Operations entity (destination) |
+|-----------------------------------------------------------------------------------------------|---------------------------------------------|
+| cdm_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
+| cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
+| cdm_validfrom   (Valid From)                                                                  | VALIDFROM   (VALIDFROM)                     |
+| cdm_validto (Valid   To)                                                                      | VALIDTO (VALIDTO)                           |
+| HIERARCHYTYPENAME   (HIERARCHYTYPENAME)                                                       | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)     |
+
+
+### Workers to Worker
+| CDS entity (source)                           | Finance and Operations entity (destination)       |
+|-----------------------------------------------|---------------------------------------------------|
+| cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
+| cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
+| cdm_primaryaddress   (cdm_primaryaddress)     | PRIMARYCONTACTEMAIL   (PRIMARYCONTACTEMAIL )      |
+| cdm_primarytelephone   (cdm_primarytelephone) | PRIMARYCONTACTPHONE   (PRIMARYCONTACTPHONE)       |
+| cdm_facebookidentity   (cdm_facebookidentity) | PRIMARYCONTACTFACEBOOK   (PRIMARYCONTACTFACEBOOK) |
+| cdm_twitteridentity   (cdm_twitteridentity)   | PRIMARYCONTACTTWITTER   (PRIMARYCONTACTTWITTER)   |
+| cdm_linkedinIdentity   (cdm_linkedinIdentity) | PRIMARYCONTACTLINKEDIN   (PRIMARYCONTACTLINKEDIN) |
+| cdm_websiteurl   (cdm_websiteurl)             | PRIMARYCONTACTURL   (PRIMARYCONTACTURL)           |
+| cdm_firstname   (cdm_firstname)               | FIRSTNAME   (FIRSTNAME)                           |
+| cdm_middlename   (cdm_middlename)             | MIDDLENAME   (MIDDLENAME)                         |
+| cdm_lastname   (cdm_lastname)                 | LASTNAME (LASTNAME)                               |
+| cdm_workernumber   (cdm_workernumber)         | PERSONNELNUMBER   (PERSONNELNUMBER)               |
+| cdm_type (cdm_type)                           | WORKERTYPE   (WORKERTYPE)                         |
+| cdm_state   (cdm_state)                       | WORKSTATUS   (WORKERSTATUS)                       |
+
+### Employments to Employment
+
+| CDS entity (source)                                             | Finance and Operations entity (destination) |
+|-----------------------------------------------------------------|---------------------------------------------|
+| cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
+| cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
+| cdm_workertype   (cdm_workertype)                               | WORKERTYPE   (WORKERTYPE)                   |
+| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)         |
+| cdm_companyid.cdm_companycode   (cdm_companyid.cdm_companycode) | LEGALENTITYID   (LEGALENTITYID)             |
+
+### Employments to Employment Detail
+
+| CDS entity (source)                                             | Finance and Operations entity (destination)   |
+|-----------------------------------------------------------------|-----------------------------------------------|
+| cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
+| cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
+| cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                       |
+| cdm_validto (Valid   To)                                        | VALIDTO (VALIDTO)                             |
+| cdm_workerstartdate   (cdm_workerstartdate)                     | WORKERSTARTDATE   (WORKERSTARTDATE)           |
+| cdm_lastdateworked   (cdm_lastdateworked)                       | LASTDATEWORKED   (LASTDATEWORKED)             |
+| cdm_transitiondate   (cdm_transitiondate)                       | TRANSITIONDATE   (TRANSITIONDATE)             |
+| cdm_employerunitofnotice   (cdm_employerunitofnotice)           | EMPLOYERUNITOFNOTICE   (EMPLOYERUNITOFNOTICE) |
+| cdm_workerunitofnotice   (cdm_workerunitofnotice)               | WORKERUNITOFNOTICE   (WORKERUNITOFNOTICE)     |
+| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
+| cdm_companyid.cdm_companycode   (cdm_companyid.cdm_companycode) | LEGALENTITYID   (LEGALENTITYID)               |
+| cdm_employernoticeamount   (cdm_employernoticeamount)           | EMPLOYERNOTICEAMOUNT   (EMPLOYERNOTICEAMOUNT) |
+| cdm_workernoticeamount   (cdm_workernoticeamount )              | WORKERNOTICEAMOUNT   (WORKERNOTICEAMOUNT)     |
+
+### Position Worker Assignment to Position Worker Assignments
+
+| CDS entity (source)                                             | Finance and Operations entity (destination)   |
+|-----------------------------------------------------------------|-----------------------------------------------|
+| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
+| cdm_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
+| cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                       |
+| cdm_validto (Valid   To)                                        | VALIDTO (VALIDTO)                             |
+
+### Worker Addresses to Worker Postal Address V2
+
+| CDS entity (source)                                             | Finance and Operations entity (destination)   |
+|-----------------------------------------------------------------|-----------------------------------------------|
+| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
+| cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
+| cdm_line1   (cdm_line1)                                         | ADDRESSSTREET   (ADDRESSSTREET)               |
+| cdm_city (cdm_city)                                             | ADDRESSCITY   (ADDRESSCITY)                   |
+| cdm_stateorprovince   (cdm_stateorprovince)                     | ADDRESSSTATE   (ADDRESSSTATE)                 |
+| cdm_postalcode   (cdm_postalcode)                               | ADDRESSZIPCODE(ADDRESSZIPCODE)                |
+| cdm_countryregion   (cdm_countryregion)                         | ADDRESSCOUNTRYREGION(ADDRESSCOUNTRYREGION)    |
+| cdm_addressnumber   (cdm_addressnumber)                         | ADDRESSLOCATIONID(ADDRESSLOCATIONID)          |
+| cdm_ispreferred   (cdm_ispreferred)                             | ISPRIMARY   (ISPRIMARY)                       |
+| cdm_county   (cdm_county)                                       | ADDRESSCOUNTYID(ADDRESSCOUNTYID)              |
+| cdm_addresstype   (cdm_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
+
 ## Integration considerations
 When integrating data from Talent to Finance and Operations, the integration will attempt to match records based on the ID. If the match
 occurs, the data in Finance and Operations will be overwritten with the values in Talent. However, an issue may occur if logically
 these are different records and the same ID was generated in either Talent or Finance and Operations based on the respective number sequence.
 
-The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences, as a result, if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations information. 
+The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences. As a result, if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations information. 
 
 To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
 

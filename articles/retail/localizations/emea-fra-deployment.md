@@ -43,6 +43,7 @@ This localization consists of extensions for the Commerce runtime (CRT), Retail 
 The digital signature extension uses a certificate that is installed in the local certificate storage of the machine where Retail Server is deployed. The thumbprint of the certificate must be specified in the configuration file (see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this topic). Depending on the implementation topology, the certificate might have to be stored in [Microsoft Azure Key Vault storage](https://docs.microsoft.com/azure/key-vault/key-vault-get-started). The Retail localization for France contains a code sample that shows how to override the signing flow and sign sales transactions by using a certificate that is stored in Azure Key Vault storage.
 
 ### Prerequisites
+
 The following steps must be completed before you can use a certificate that is stored in Azure Key Vault storage:
 
 - The Azure Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Retail Server.
@@ -257,7 +258,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 #### SequentialSignatureRegister component
 
 1. Find the **Runtime.Extensions.SequentialSignatureRegister** project.
-2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. The value must be a string that is 40 characters long and that doesn't include any delimiters. For more information, see [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
+2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. The value must be a string that is 40 characters long in upper case and that doesn't include any delimiters. For more information, see [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -323,9 +324,9 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
     ```
 
-# [Retail 7.3.2 and later](#tab/retail-7-3-2)
-
 #### RestrictingShiftDuration component
+
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
 1. Find the **Runtime.Extensions.RestrictingShiftDuration** project, and build it.
 2. In the **Extensions.RestrictingShiftDuration\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.RestrictingShiftDuration.dll** assembly file.
@@ -347,13 +348,29 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 # [Retail 7.3.5 and later](#tab/retail-7-3-5)
 
-> [!NOTE]
-> No actions are required, because RestrictingShiftDuration is a part of sealed extensions.
+1. Find the extension configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+2. Register the CRT change in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+    ```
 
 # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-> [!NOTE]
-> No actions are required, because RestrictingShiftDuration is a part of sealed extensions.
+1. Find the extension configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+2. Register the CRT change in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+    ```
 
 ---
 
@@ -474,10 +491,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -497,10 +514,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -608,10 +625,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -631,10 +648,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     },
     {
-        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -660,6 +677,7 @@ You must complete the following procedure to enable the extensions in offline mo
 7. Test the functionality.
 
 ### Set up required parameters in Retail headquarters
+
 For more information, see [Cash registers for France](./emea-fra-cash-registers.md).
 
 ## Production environment

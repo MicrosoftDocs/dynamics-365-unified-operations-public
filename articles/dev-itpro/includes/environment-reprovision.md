@@ -28,14 +28,10 @@ Before you continue, you must make sure that the following prerequisites are met
 
 Follow these steps to run the Environment reprovisioning tool.
 
-1. In the Shared asset library, select **Software deployable package**.
-2. Download the Environment reprovisioning tool.
-3. In the asset library for your project, select **Software deployable package**.
-4. Select **New** to create a new package.
-5. Enter a name and description for the package. You can use **Environment reprovisioning tool** as the package name.
-6. Upload the package that you downloaded earlier.
-7. On the **Environment details** page for your target environment, select **Maintain** \> **Apply updates**.
-8. Select the Environment reprovisioning tool that you uploaded earlier, and then select **Apply** to apply the package.
-9. Monitor the progress of the package deployment. 
+1. In your project's **Asset Library**, in the **Software deployable packages** section, click **Import**.
+2. From the list of shared assets, select the **Environment Reprovisioning Tool**.
+3. On the **Environment details** page for your target environment, select **Maintain** > **Apply updates**.
+4. Select the **Environment Reprovisioning** tool that you uploaded earlier, and then select **Apply** to apply the package.
+5. Monitor the progress of the package deployment. 
 
 For more information about how to apply a deployable package, see [Apply a deployable package](../deployment/create-apply-deployable-package.md). For more information about how to manually apply a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).

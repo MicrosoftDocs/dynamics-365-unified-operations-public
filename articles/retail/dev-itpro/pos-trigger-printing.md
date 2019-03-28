@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 01/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -53,7 +53,11 @@ The following table lists the available triggers and denotes whether they can be
 | PostLogOffTrigger         | Non-cancelable | Executed after the POS log off.                                                                                                      | 
 | PreLockTerminalTrigger    | Cancelable     | Executed before the POS register lock.  |
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
-| PostDeviceActivation      | Non-Cancelable | Executed after the POS activation.   | 
+| PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
+| PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
+| PreElevateUserTrigger      | Cancelable | Executed before the manager override.   | 
+| PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
+| PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 
 
 ## Cash management triggers
@@ -77,6 +81,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |
+| PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
 
 ## Discount triggers
 
@@ -98,6 +103,8 @@ The following table lists the available triggers and denotes whether they can be
 | Trigger              | Type           | Description                                                                                                                                           |
 |----------------------|----------------|-------------------------|
 | PreOperationTrigger  | Cancelable     | Generic trigger executed before all POS operations. You can use this trigger if there is no specific trigger available for a POS operation. |
+| PreOperationValidationTrigger | Cancelable | Generic trigger executed before the operation validation begins.   |
+| OperationFailureTrigger | Non-cancelable | Generic trigger executed after any POS operation failed.  |
 | PostOperationTrigger | Non-cancelable | Generic trigger executed after all POS operations. You can use this trigger if there is no specific trigger available for a POS operation.  |
 
 ## Payment triggers
@@ -135,6 +142,15 @@ The following table lists the available triggers and denotes whether they can be
 | PreVoidProductsTrigger     | Cancelable     | Executed before the product is voided from the cart.                   |
 | PostVoidProductsTrigger    | Non-cancelable | Executed after the product is voided from the cart.                    |
 | PostPriceCheckTrigger      | Non-cancelable | Executed after the price check for the product is executed.          |
+
+## Sales order triggers
+
+| Trigger                 | Type           | Description                                                         |
+|-------------------------|----------------|---------------------------------------------------------------------|
+| PreRecallCustomerOrderTrigger 	| Cancelable     | Executed before the customer order is recalled. |
+| PostRecallCustomerOrderTrigger	| Non-cancelable | Executed after the customer order is recalled.  |
+| PrePickUpCustomerOrderLinesTrigger	| Cancelable     | Executed before the customer order lines are picked.  |
+| PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during customer order.|
 
 ## Shift triggers
 | Trigger              | Type           | Description                                             |

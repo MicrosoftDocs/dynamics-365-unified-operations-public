@@ -5,7 +5,7 @@ title: Process and consume data packages in Finance and Operations solutions
 description: This topic explains how to process and consume data packages in a Microsoft Dynamics 365 for Finance and Operations solution.
 author: kfend
 manager: AnnBe
-ms.date: 04/13/2018
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,18 +48,16 @@ Before you create your data package, plan out what it should include. In this wa
 
     To automatically create a data package when you export the data project, set the **Generate data package** option to **Yes**. If you don't set this option, you can create a data package at the time of export.
 
-7.  On the Action Pane, select **Export**.
-8.  Select **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set in the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project.
+9.  On the Action Pane, select **Export**.
+10.  Select **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set in the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project.
 
     [![Customers data project that contains Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
 
-9.  On the Action Pane, select **Entity sequence** to open the **Definition group entity sequence** page. Based on the current setup, the Customer groups entity and Customers entity are run at the same level. However, this sequence might not be ideal.
+11.  On the Action Pane, select **Entity sequence** to open the **Definition group entity sequence** page. Based on the current setup, the Customer groups entity and Customers entity are run at the same level. However, this sequence might not be ideal.
 
     [![Customer groups and Customers entities at the same execution level](./media/pdp_04.png)](./media/pdp_04.png)
 
-10. To create a better sequence, select the **Customers** entity, and then update the value of the **Execution unit** field from **1** to **2**. This change helps guarantee that customer groups are imported before the Customers entity is run. 
-
-    [![New sequence for the Customers and Customer groups entities](./media/pdp_05.png)](./media/pdp_05.png)
+12. To create a better sequence, select the **Customers** entity, and then update the value of the **Execution unit** field from **1** to **2**. This change helps guarantee that customer groups are imported before the Customers entity is run. 
 
 Microsoft Dynamics Lifecycle Services (LCS) contains multiple base data packages that you can use to reduce the implementation time. These packages contain the elements that are required in each module/area in order to meet the minimum requirements. For advanced business processes, you might have to add more entities to the list of packages. The data packages that Microsoft publishes on LCS use a numbering sequence that is based on the module, data type, and sequence. Here is an example:
 
@@ -142,7 +140,6 @@ Follow these steps to consume the PDP.
 2.  Select the business process, and then, in the right pane, select **Apply Data Packages**.
 3.  On the **Consume process data package** page, select a package, and then select **Apply**.
 4.  Select the destination company in the target environment that is linked to the PDP, and then select **Apply**.
-=======
 -   For step 1, "Review business process," review the business process models (BPMs), and then click **Mark as reviewed**. The review status is updated for all dependent processes, and a green bar appears to the right of them. The **Reviewed by** and **Completed on** fields are also updated for each business process.[![Reviewed business processes with a green bar and updated Reviewed by and Completed on values](./media/pdplcssolutions_04.jpg)](./media/pdplcssolutions_04.jpg)
 
 ### Review and approve data packages that are associated with a BPM
@@ -165,7 +162,6 @@ Follow these steps to consume the PDP.
 -   On the **Consume process data package** page, select a package, and then select **History**. You can review the status of the data package. The available information includes the target environment, company, package name, start and end times, status by data entity, and overall status of the data package. To see the details of any errors that occurred, you can sign in to the target environment.
 
 
-Additional resources
---------
+### Additional resources
 
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
