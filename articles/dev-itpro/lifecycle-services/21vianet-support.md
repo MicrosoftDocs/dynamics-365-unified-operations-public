@@ -49,11 +49,16 @@ Dynamics 365 for Finance and Operations provides many self-service support optio
 - [Open a support request](https://lcs.dynamics.cn/)
 
 ### Presales support
-Pre-sales support for Finance and Operations provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. The pre-sales support number is +86 400-886-6134.
+
+Pre-sales support phone number: +86 400-089-0365
+
+Pre-sales support for Finance and Operations provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. 
 
 ### Billing and subscription management support through 21Vianet
 
-Assistance for billing and subscription management issues is available online or by telephone Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST). Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The billing and subscription support telephone number is +86 400-089-0365.
+Billing and subscription support telephone number: +86 400-089-0365.
+
+Assistance for billing and subscription management issues is available online or by telephone Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST). Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support.
 
 Here are some examples of billing and subscription management issues:
 
@@ -67,7 +72,7 @@ Here are some examples of billing and subscription management issues:
 
 ### Assisted Technical support through 21Vianet
 
-When you experience a technical issue with your Dynamics 365 Finance and Operations deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
+When you experience a technical issue with your Finance and Operations deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
 
 A service request (SR) is handled within hours, depending on the severity of its impact to your business:
 
@@ -82,7 +87,7 @@ If you run mission-critical solutions on Dynamics 365 Finance and Operations, Pr
 - A designated service delivery manager committed to improving your Dynamics 365 experience.
 - Top priority reactive support to help ensure service continuity.
 
-For details about purchasing Premier support, contact your Microsoft Account team. 
+For details about purchasing Premier support, contact your Microsoft Account team. If you have a Premier support plan you can contact support via [My Premier Online](https://support.microsoft.com/premier). 
 
 ## Additional resources
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
