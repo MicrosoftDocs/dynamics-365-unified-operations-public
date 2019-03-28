@@ -1,4 +1,3 @@
----
 # required metadata
 
 title: Set up new environments, Azure DevOps, and branches for Retail projects
@@ -32,11 +31,14 @@ ms.dyn365.ops.version: Retail 7.3
 
 [!include [banner](../../includes/banner.md)]
 
-Starting in Microsoft Dynamics AX 7.0, most environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). By default, environments are Microsoft-hosted. Typically, cloud-hosted environments are used to provide more control over a development or build environment. For more details, see [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
+Most environments for Retail projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, read [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
+
+## Development Tier 1 environments
 
 Tier 1 machines are developer or build environments.
 
-## Development Tier 1 environments
+> [!TIP]
+> Say something about this Tier 1 thing and why it's relevant.
 
 For implementations of Microsoft Dynamics 365 for Retail that include code extensions, we recommend that you use a development environment that has administrative privileges. If you use a development environment that doesn't have administrative privileges, other programming tools and features of the operating system (OS) can't be installed or configured. An alternative setup is a machine that is hosted on a separate Microsoft Azure subscription. (This type of machine is also known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services [LCS].)
 
