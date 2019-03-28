@@ -35,7 +35,7 @@ Features are added and updated in every release of Microsoft Dynamics 365 for Fi
 
 ## The Feature management workspace
 
-You can open the **Feature management** workspace from the **Workspaces** menu. When you select the workspace icon, you will see a page that shows a list of features for all releases that are supported by the Feature management experience. Over time, Microsoft will enhance the Feature management experience so that it includes additional functionality to help you manage features.
+You can open the **Feature management** workspace by selecting the appropriate tile on the dashboard. You will see a page that shows a list of features for all releases that are supported by the Feature management experience. Over time, Microsoft will enhance the Feature management experience so that it includes additional functionality to help you manage features.
 
 The feature list includes the following information:
 
@@ -94,4 +94,4 @@ For features that must be enabled, a message will appear below the **Learn more*
 
 The **Feature management** workspace can be opened by system admins, and by users who are assigned to the **Feature manager** or **Feature viewer** roles that were created to support the Feature management experience. Users in the **Feature manager** role can turn any feature on and off. They can also update the comments section for the feature. Users in the **Feature viewer** role can only view the **Feature management** workspace. They can't turn features on and off.
 
-The **Feature manager** and **Feature viewer** roles don't override the existing security that a user has. The role just controls access to turning features on and off. It doesn't provide access to the features themselves.
+The **Feature manager** role and **Feature viewer** role don't override the existing security that a user has. The roles just control access to enabling features. It doesn't provide access to the features themselves.
