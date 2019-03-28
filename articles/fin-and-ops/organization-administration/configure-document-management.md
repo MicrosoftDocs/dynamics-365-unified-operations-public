@@ -139,3 +139,11 @@ Yes. SharePoint storage is supported natively and can be selected as the storage
 ### How does the default storage location for Document Management change in on-premises environments?
 
 For on-premises environments, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
+
+### If I accidentally delete an attachment stored in Azure Blob Storage, can I get it restored/recovered?
+
+If an attachment stored in Azure Blob Storage is accidentally deleted, it cannot be restored or recovered since it has been permanently deleted and the reference to it has also been deleted.
+
+### Is the database information about attachments stored separately from the attachments themselves?
+
+Record attachment information is stored in the DocuRef and DocuView tables. The DocuRef table is the record that represents the attachment. The DocuRef record points at the record being attached to and to a DocuView record. The DocuView record points at the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.
