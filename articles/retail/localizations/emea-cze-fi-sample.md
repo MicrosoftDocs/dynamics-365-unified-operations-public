@@ -40,7 +40,7 @@ Microsoft doesn't release any hardware, software, or documentation from EFSTA. F
 
 ## Scenarios
 
-The following scenarios are covered by the fiscal registration service integration sample for Czech Republic:
+The following scenarios are covered by the fiscal registration service integration sample for the Czech Republic:
 
 - Registration of cash transactions in the fiscal registration service:
 
@@ -69,35 +69,22 @@ The following default data mapping is included in the fiscal document provider c
 
 - Value-added tax (VAT) rates mapping:
 
-    *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
+  *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
 
-### Default VAT group
+- Default VAT group mapping. Any VAT amounts that cannot be mapped to one of the predetermined VAT groups will be attributed to the default (basic) VAT group:
 
-The following default tax letter (group) is included in the the fiscal document provider configuration:
+  *A*
 
-- Default VAT group. Default value:
+- Deposit VAT group. Customer deposit amounts and customer order deposit amounts will be attributed to the deposit VAT group:
 
-    *A*
-
-Turnovers not fitting into one of the predetermined tax groups will show in default (basic) VAT rate.
-For the default VAT group the specified letter (group) should exist in Letter-VAT rate mapping.
-
-### Deposit VAT group
-
-The following deposit tax letter (group) is included in the the fiscal document provider configuration:
-
-- Deposit VAT group. Default value:
-
-    *Z*
-
-Customer deposits and customer order deposits will show in deposit VAT rate. For the deposit VAT group the specified letter (group) should exist in Letter-VAT rate mapping.
+  *Z*
 
 ### Gift cards
 
 The fiscal registration service integration sample implements the following rules that are related to gift cards:
 
-- Sales lines that are related to the *Issue gift card* and *Add to gift card* operations from a cash transaction are marked with the "CZ_field=23" attribure.
-- Payment by gift card is considered a regular payment and marked with the "CZ_field=24" attribure.
+- Sales lines that are related to the *Issue gift card* or *Add to gift card* operations from a cash transaction are marked with a special attribute when the transaction is registered in the fiscal registration service.
+- Payment by gift card is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 
 ### Customer deposits
 
