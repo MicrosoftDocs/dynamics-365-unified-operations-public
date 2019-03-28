@@ -77,7 +77,7 @@ The following default data mapping is included in the fiscal document provider c
 
   *A*
 
-- Deposit VAT group. Customer deposit amounts and customer order deposit amounts will be attributed to the deposit VAT group:
+- Deposit VAT group mapping. Customer deposit amounts and customer order deposit amounts will be attributed to the deposit VAT group:
 
   *Z*
 
@@ -85,7 +85,7 @@ The following default data mapping is included in the fiscal document provider c
 
 The fiscal registration service integration sample implements the following rules that are related to gift cards:
 
-- Sales lines that are related to the *Issue gift card* or *Add to gift card* operations from a cash transaction are marked with a special attribute when the transaction is registered in the fiscal registration service.
+- Sales lines that are related to the *Issue gift card* or *Add to gift card* operations in a sales transaction are marked with a special attribute when the transaction is registered in the fiscal registration service.
 - A payment by gift card is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 
 ### Customer account deposits and customer order deposits
