@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 03/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0
 
 This topic lists the regulatory updates that are planned for release in Microsoft Dynamics 365 for Finance and Operations supported localizations. Delivery timelines might change, and projected functionality might change or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
 
-Regulatory updates are  features, implemented to support new or changed country specific legislations. To learn about other planned and released country specific features, refer to the following resources:
+Regulatory updates are features that are implemented to support new or changed country specific legislations. To learn about other planned and released country specific features, refer to the following resources:
 
 - [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [What's new for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
