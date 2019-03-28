@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -44,7 +44,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 ## Changes in Onboard
 
 ### Embeded images in activities
-You can now embed images directly into activities! In addition to being able to copy/paste images from the web, we also now support uploading images from your local filesystem. The size of the activity must be limited to 1 MB. If the image is too big, please resize and try to re-upload.
+You can now embed images directly into activities! In addition to being able to copy and paste images from the web, we also now support uploading images from your local file system. The size of the activity is limited to 1 MB. If the image is too big, please resize and try to re-upload.
 
     [![Mapping](./media/embedimages.png)](./media/embedimages.png)
 
@@ -54,45 +54,47 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 **Build 8.1.2210**
 
 ### Custom field support available for select entities in CDS for Apps
-The following CDS for Apps entities now support customer fields created in Dynamics 365 for Talent. 
-•	Worker
-•	Department
-•	Ethnic Origin
-•	Veteran Status
-•	Language code
-•	Job
-•	Job type
-•	Job function
-•	Position
-•	Position type
+
+The following CDS for Apps entities now support customer fields created in Dynamics 365 for Talent:
+
+- Worker
+- Department
+- Ethnic Origin
+- Veteran Status
+- Language code
+- Job
+- Job type
+- Job function
+- Position
+- Position type
  
 ### Employment history not displayed chronologically
-With this change the employment history page will display employment records chronologically independent of company. Sorting options exist to sort by company if that is the desired behavior.
+With this change, the employment history page now displays employment records chronologically, independent of company. You can also use sorting options to sort by company.
 
-### Fixed Comp plans don't appear when restricting user by company in security.
-In this release, fixed plans will now appear when restricting users by company in security. All security settings will be honored and fixed plans will appear for those companies the user has access. 
+### Fixed compensation plans don't appear when restricting user by company in security.
+In this release, fixed compensation plans now appear when restricting users by company in security. All security settings will be honored, and fixed plans will appear for those companies the user has permissions to access. 
 
-### Cannot delete Job records using Open in Excel option in Talent
-With this release job records can now be removed using the Open in Excel option in Dynamics 365 for Talent.
+### Can't delete Job records using Open in Excel option in Talent
+With this release, you can now remove job records by using the **Open in Excel** option in Dynamics 365 for Talent.
 
 ### Upgrade to CDS for Apps
-Deadlines to upgrade to CDS for Apps are quickly approaching.   Log into the PowerApps Admin center to determine if your database needs to be upgraded. Click [HERE](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) for more information on deadlines and necessary steps to upgrade.
+Deadlines to upgrade to CDS for Apps are quickly approaching. Log into the PowerApps Admin center to determine if your database needs to be upgraded. See [Upgrade to Common Data Service for Apps](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) for more information about deadlines and necessary steps to upgrade.
 
 ## In preview
 
 ### Allow reason codes to be specified on leave types
-Organizations may need additional information related to time off requests. To get this information, employees need to include a reason code on their time off requests. With this release you can now specify the reason codes associated with a given leave type and enable employees to select a reason code on their time off requests.
+Organizations may need additional information related to time off requests. To get this information, employees need to include a reason code on their time off requests. With this release, you can now specify the reason codes associated with a given leave type and enable employees to select a reason code on their time off requests.
 
 ### Configure reason codes to be required when submitting time off for certain leave types
-Organizations may require reason codes to be set on specific leave types when employees submit time off. This may be required based on a regulatory requirement in their country or a company policy. This release provides the ability for HR to specify which leave types require a reason code and this will be enforced when employees submit time off requests where the leave requires a reason code.
+Organizations may require reason codes to be set on specific leave types when employees submit time off. This may be required based on a regulatory requirement in their country or a company policy. This release provides the ability for HR to specify which leave types require a reason code, and this will be enforced when employees submit time off requests where the leave requires a reason code.
 
 ## Coming soon
 
 ###  Advanced compensation security (fixed and variable)
-In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
+In many organizations, compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles granted with access can process compensation for these employees.
 
 ###  Email support for alerts
 With Platform update 25, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event. 
 
 ### Duplicate employee check: Interface changes
-With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
+With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoide interrupting data entry, the duplicates form doesn't open automatically.
