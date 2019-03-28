@@ -1,3 +1,5 @@
+---
+
 # required metadata
 
 title: Set up new environments, Azure DevOps, and branches for Retail projects
@@ -35,14 +37,12 @@ Most environments for Retail projects are hosted in the cloud. They are either M
 
 ## Development Tier 1 environments
 
-Tier 1 machines are developer or build environments.
+If your implementation of Microsoft Dynamics 365 for Retail includes code extensions, we recommend that you use a development environment where you have administrator privileges. If you don't have administrator privileges on your development environment, then you won't be able to install programming tools or configure the operating system.
 
-> [!TIP]
-> Say something about this Tier 1 thing and why it's relevant.
-
-For implementations of Microsoft Dynamics 365 for Retail that include code extensions, we recommend that you use a development environment that has administrative privileges. If you use a development environment that doesn't have administrative privileges, other programming tools and features of the operating system (OS) can't be installed or configured. An alternative setup is a machine that is hosted on a separate Microsoft Azure subscription. (This type of machine is also known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services [LCS].)
-
-There are three hosting models for a Tier 1 development or build environment: a Microsoft-hosted environment, a cloud-hosted environment, and a self-hosted downloaded virtual machine (VM).
+Development environments are called Tier 1 environments. There are three options for hosting a development environment:
++ Dynamics 365 for Retail Application comes with one Sandbox Tier 1. (Read the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide]() for details.) This environment is Microsoft-hosted. https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI, the file is Dynamics_365_Enterprise_edition_Licensing_Guide.pdf on the Download Center.
++ A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of machine is also known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services [LCS].
++ A downloaded virtual-machine that you host in a location of your choice.
 
 If you want to extend channel components, see the "Prepare the development environment" section later in this topic for information about how to configure a development environment so that it's ready for development.
 
