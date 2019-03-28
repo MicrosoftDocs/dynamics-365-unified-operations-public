@@ -34,17 +34,17 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirement in China. The services are a physically separated instance of cloud services operated and transacted currently by a local operator Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”), a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
+Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
-Microsoft strives to maintain functional parity between our commercially available service and that which is servicing the Dynamics 365 Finance and Operations operated by 21Vianet in China. However, there are notable exceptions to this affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
+Microsoft strives to maintain functional parity between our commercially available service and Dynamics 365 Finance and Operations operated by 21Vianet in China. However, there are notable exceptions to this, which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
 
 ## Features not available
 
-Due to certain technology dependencies, the features listed below will not be available for the private preview or general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/?linkid=2010158).
+Due to certain technical dependencies, the following features listed will not be available for the private preview or general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/?linkid=2010158).
 
--   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**; however, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
+-   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
 
--   **Retail cloud scale unit** functionality will be unavailable; however, the [Retail store scale unit](../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
+-   **Retail cloud scale unit** functionality will be unavailable. However, the [Retail store scale unit](../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
 
 -   [Vendor management and collaboration](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
 
@@ -54,9 +54,9 @@ Due to certain technology dependencies, the features listed below will not be av
 
 -   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
 
-    -   **APQC Business process model (BPM) Library** will be unavailable; however, base BPM functionality will be available for custom models in April 2019.
+    -   **APQC Business process model (BPM) Library** will be unavailable. However, base Business process modeler (BPM) functionality will be available for custom models in April 2019.
 
-    -   **[Electronic reporting (ER)](../analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json) assets** will not be available automatically, but will have to be manually uploaded from the LCS global asset library.
+    -   **[Electronic reporting (ER)](../analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json) assets** will not be available automatically, but can be manually uploaded from the LCS global asset library.
 
     -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
 
@@ -70,17 +70,17 @@ Due to certain technology dependencies, the features listed below will not be av
 
 -   The following features will not be available due to certain **current Azure Active Directory limitations** in China:
 
-    -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to B2B being unavailable in Azure Active Directory in China. See [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b) for details.
+    -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to business-to-business (B2B) being unavailable in Azure Active Directory in China. For more information, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
--   [Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 2 SKU, which is unavailable in China. 
+-   [Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 2 SKU. This is unavailable in China. 
 
 ## Additional resources
 
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Dynamics 365 Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
-- [Dynamics 365 Service Level agreement(世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
-- [Dynamics 365  Legal information (Dynamics 365 法律信息](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
+- [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
+- [Dynamics 365  Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
 - [Service terms for Dynamics 365 Lifecycle services](https://www.21vbluecloud.com/Dynamics365/d365-lcs/)
 - [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
