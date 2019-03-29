@@ -33,6 +33,8 @@ ms.author: anbichse
 
 The scheduler activity is optional and has two components: Candidate availability request and Schedule. The Candidate availability component lets you use email to request a candidate's availability. The Schedule component provides the ability to schedule interviews with the candidate and the hiring team.
 
+The scheduler activity can be setup to include or limit the candidates to be scheduled by selecting a value in the **Who are you scheduling?** field.  The options available are **All Candidates, External Candidates and Internal Candidates**.   For example, if internal candidates are skipped in the first round of scheduling, the schedule activity can be assigned only to external candidates by setting the ‘Who are you scheduling field’ to ‘External Candidates’.
+
 ### Candidate availability request
 
 To send an email to candidates requesting their availability, select the **Request candidate availability** field. If the field is not selected, this step won't be shown in the hiring process for the job.
@@ -88,8 +90,14 @@ There are multiple configurations available for the interview scheduler to use a
 
 ## Feedback activity
 
-The feedback activity is optional in a job template. This activity lets interview participants enter recommendations or feedback comments for an applicant. If the **Inherit feedback participants from Hiring Team** field is selected, the recruiter, hiring manager, and interviewers are automatically entered in the feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it. Interviewers are reminded to submit feedback for the interviews they have recently conducted based on the preset configuration as part of the job template. The hiring manager or a recruiter on the job can also choose to manually remind an interviewer to submit feedback.
+The feedback activity is optional in a job template. This activity lets interview participants enter recommendations or feedback comments for an applicant. 
+
+The feedback activity can be setup to include or limit the candidates to provide feedback on by selecting a value in the **Who should interviewers provide feedback on?** field.   The options available are **All Candidates, External Candidates and Internal Candidates**. For example, if internal candidates were skipped in the first round of scheduling, the feedback activity can also skip internal candidates by setting the ‘Who should interviewers provide feedback on?’ to ‘External Candidates’.
+
+If the **Inherit feedback participants from Hiring Team** field is selected, the recruiter, hiring manager, and interviewers are automatically entered in the feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it. Interviewers are reminded to submit feedback for the interviews they have recently conducted based on the preset configuration as part of the job template. The hiring manager or a recruiter on the job can also choose to manually remind an interviewer to submit feedback.
 
 ## Interview activity
 
 The interview activity is an optional activity with three components: Candidate availability request, Schedule, and Feedback. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule. and feedback as part of the process instead using them individually as part of the hiring process.
+
+The interview activity can be setup to include or limit the candidates to be interviewed by selecting a value in the **Who are you interviewing?** field.   The options available are **All Candidates, External Candidates and Internal Candidates**.  For example, if internal candidates are skipped in the first round of interviewing, the schedule activity can be assigned only to external candidates by setting the ‘Who are you interviewing field’ to ‘External Candidates’.
