@@ -53,32 +53,33 @@ This activity has three components: Candidate availability request, Schedule, an
 
 ## PowerApps activity
 
-The PowerApps activity lets you embed a Microsoft PowerApps app in your hiring process. The app can be required for all applicants, internal applicants only, external applicants only, or no applicants. If the app is marked as required, it must be completed before the stage can be advanced. If the app isn't marked as required, the activity is an optional step, and the stage can be advanced even if the app isn't completed.
+The PowerApps activity lets you embed a Microsoft PowerApps app in your hiring process. The app can be required for all applicants, internal applicants only, external applicants only, or no applicants. If the app is marked as required, it must be completed before the stage can be advanced. To be considered complete, the JobApplicationStatus field must be set Complete.  This field is located in the JobApplicationActivity entity.  Therefore, the PowerApp will need to update this field, before the stage can be advanced.  If the app isn't marked as required, the activity is an optional step, and the stage can be advanced even if the app isn't completed.
 
 To save the PowerApps activity to the hiring process, you must enter a PowerApps ID. To find the PowerApps ID, go to [PowerApps](https://web.powerapps.com), select **Apps**, and then select **Details**.
 
-If you select the **Allow adding participants for this activity** option, additional contributors can be added for an application that uses the PowerApps activity. For example, an organization has created a PowerApps app that is a library of interview questions for technical roles. The organization is now hiring a new software developer and has added the PowerApps activity to the hiring process for the Software Developer role. If the **Allow adding participants for this activity** option is selected, a recruiter or hiring manager who is viewing an applicant for the Software Developer role can add people to the PowerApps activity. Those people can then view the app that has the interview questions.
+By default, the PowerApps activity is available to the Hiring Manager, Recruiter, and their delegates.  If you select the **Allow adding participants for this activity** option, additional participants from the hiring team can be added for an application that uses the PowerApps activity. For example, an organization has created a PowerApps app that is a library of interview questions for technical roles. The organization is now hiring a new software developer and has added the PowerApps activity to the hiring process for the Software Developer role. If the **Allow adding participants for this activity** option is selected, a recruiter or hiring manager who is viewing an applicant for the Software Developer role can add interviewers to the PowerApps activity. Those people can then view the app that has the interview questions.
 
 > [!NOTE]
 > The PowerApps activity is available only with the Comprehensive hiring add-on.
 
 ## YouTube activity
 
-The YouTube activity lets you share a YouTube video as part of your hiring process. To save the YouTube activity to the hiring process, you must specify the URL of the YouTube video. As for the PowerApps activity, you can allow participants to be added to the activity. If you select the **Show only to candidate** option, the video is shown only as part of the candidate experience. It isn't shown in the hiring process in Attract.
+The YouTube activity lets you share a YouTube video as part of your hiring process. To save the YouTube activity to the hiring process, you must specify the URL of the YouTube video. You can choose to display the content to the **Hiring Team, Internal Candidates only, External Candidates only, or All Candidates**. Like the PowerApps activity, you can allow Hiring team participants to be added to the activity.   If you select to show the content to candidates, the video is shown only as part of the candidate experience. It isn't shown in the hiring process in Attract.
 
 > [!NOTE]
 > The YouTube activity is available only with the Comprehensive hiring add-on.
 
 ## Web content activity
 
-The Web content activity lets you embed online content in your hiring process. To save the Web content activity to the hiring process, you must specify the URL of the content. As for the PowerApps and YouTube activities, you can allow participants to be added to the activity. If you select the **Show only to candidate** option, the content is shown only as part of the candidate experience. It isn't shown in the hiring process in Attract. You can select the size of the content that is shown.
+The Web content activity lets you embed online content in your hiring process. To save the Web content activity to the hiring process, you must specify the URL of the content.  You can choose to display the content to the **Hiring Team, Internal Candidates only, External Candidates only, or All Candidates**.  Like the PowerApps and YouTube activities, you can allow Hiring team participants to be added to the activity. If you select to show the content to candidates, the web content is shown only as part of the candidate experience.  It isn't shown in the hiring process in Attract. You can select the size of the content that is shown.
+
 
 > [!NOTE]
 > The Web content activity is available only with the Comprehensive hiring add-on.
 
 ## Microsoft Forms activity
 
-The Microsoft Forms activity lets you embed a Microsoft Forms form in your hiring process. Microsoft Forms lets you create quizzes, surveys, and polls. To save the Microsoft Forms activity to the hiring process, you must specify of the URL of the form. As for the PowerApps, YouTube, and Web content activities, you can allow participants to be added to the activity. If you select the **Show only to candidate** option, the form is shown only as part of the candidate experience. It isn't shown in the hiring process in Attract.
+The Microsoft Forms activity lets you embed a Microsoft Forms form in your hiring process. Microsoft Forms lets you create quizzes, surveys, and polls. To save the Microsoft Forms activity to the hiring process, you must specify of the URL of the form.You can choose to display the content to the **Hiring Team, Internal Candidates only, External Candidates only, or All Candidates**.  Like the PowerApps, YouTube, and Web Content activities, you can allow Hiring team participants to be added to the activity. If you select to show the content to candidates, the Microsoft Form is shown only as part of the candidate experience.  It isn't shown in the hiring process in Attract.
 
 In Microsoft Forms, authors can change their settings to let users outside their organization respond to their survey or quiz. In this case, users submit responses anonymously. If you want to see who has filled out your survey or quiz, you can require that respondents enter their names as part of the survey or quiz.
 
