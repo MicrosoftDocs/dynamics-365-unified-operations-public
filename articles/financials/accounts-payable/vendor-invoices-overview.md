@@ -5,7 +5,7 @@ title: Vendor invoices overview
 description: This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services. 
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -88,7 +88,7 @@ You can work with multiple invoices at the same time and post them all at the sa
 
 You can recover vendor invoices that have been in use for more than four hours using the **Recover vendor invoices** page. To access the **Recover vendor invoices** page, the security duty and privilege **Recover vendor invoices in use** must be assigned. Additionally, the Allow vendor invoice recovery parameter on the **Accounts payable parameters** page must be enabled to use the functionality. While a vendor invoice is in use, it cannot be edited by another user. There are times where an invoice may be in a state that is in use, even when it is not being actively edited. A vendor invoice may be in use for the following common reasons, including the application may have stopped responding while the invoice was being edited or a user may have inadvertently left the invoice open in the application. The **Recover vendor invoices** page can be used to recover or release the vendor invoice, allowing it to be edited. This form can be accessed from the Periodic task navigation or from a tile on the Vendor invoice entry workspace. After recovery, the invoice will be available for editing in the **Vendor invoice** page.
 
-For more information see:
+## Additional resources
 
  - [Set up vendor invoice policies](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
