@@ -55,8 +55,9 @@ The following scenarios are covered by the fiscal registration service integrati
 
     - Issue or add money to a gift card.
     - Register a customer account deposit.
-    - Register a customer order deposit.
-    - Override a customer order deposit.
+    - Create a customer order and register a deposit for the order.
+    - Edit a customer order and override the deposit for the order.
+    - Cancel a customer order and refund the deposit for the order.
     
 - Error handling, such as the following options:
 
@@ -71,7 +72,7 @@ The following default data mapping is included in the fiscal document provider c
 
 - Value-added tax (VAT) rates mapping:
 
-  *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
+  *A: 21.00; B: 15.00; C: 10.00; Z: 0.00*
 
 - Default VAT group mapping. Any VAT amounts that cannot be mapped to one of the predetermined VAT groups will be attributed to the default (basic) VAT group:
 
@@ -92,10 +93,10 @@ The fiscal registration service integration sample implements the following rule
 
 The fiscal registration service integration sample implements the following rules that are related to customer account deposits and customer order deposits:
 
-- A retail transaction that is related to a customer account deposit or a customer order deposit is registered in the fiscal registration service as a single line transaction and is marked with a special attribute.
+- A retail transaction that is related to a customer account deposit or a customer order deposit is registered in the fiscal registration service as a single line transaction and is marked with a special attribute. The deposit VAT group is specified in this line.
+- When a hybrid customer order is created, that is, a customer order that contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later, the transaction registered in the fiscal registration service contains lines for the products that are carried out, as well as a line for the order deposit.
 - A payment from a customer account is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 - The customer order deposit amount that is applied to a customer order *Pick up* operation is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
-- The deposit sales line tax group shoud be set to the deposit tax group.
 
 ### Offline registration
 
