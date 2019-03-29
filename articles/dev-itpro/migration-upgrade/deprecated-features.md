@@ -60,7 +60,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled via the **Client performance options** page. |
 | **Product areas affected**         | Grids in the web client |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
+| **Status**                         | Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
 
 #### Legacy "is one of" filtering experience
 
@@ -70,7 +70,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available via the **Client performance options** page. See [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering) for more details. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
+| **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
 
 
 ## Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25
@@ -88,7 +88,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
 #### Overriding internal methods is deprecated
 
@@ -98,7 +98,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
@@ -134,7 +134,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All. |
-| **Status**                         | Deprecated - The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+| **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
