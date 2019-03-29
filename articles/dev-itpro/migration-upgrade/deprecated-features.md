@@ -56,8 +56,8 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. See [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action) for more details. |
-| **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled via the **Client performance options** page. |
+| **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled on the **Client performance options** page. |
 | **Product areas affected**         | Grids in the web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
@@ -66,8 +66,8 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The "is one of" filtering experience went through a redesign in Platform update 22, with the intent of this being the only "is one of" filtering experience eventually. |
-| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available via the **Client performance options** page. See [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering) for more details. |
+| **Reason for deprecation/removal** | The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience. |
+| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page. For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
