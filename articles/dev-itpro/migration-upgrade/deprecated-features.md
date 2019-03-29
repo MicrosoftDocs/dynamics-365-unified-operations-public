@@ -50,14 +50,14 @@ This list is intended to help you consider these removals and deprecations for y
 ## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 with platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Standard and First release service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../get-started/public-preview-releases.md).
 
 #### Legacy default action behavior
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. See [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action) for more details. |
-| **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled via the Client performance options page. |
+| **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled via the **Client performance options** page. |
 | **Product areas affected**         | Grids in the web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated - Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
@@ -67,16 +67,16 @@ This list is intended to help you consider these removals and deprecations for y
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The "is one of" filtering experience went through a redesign in Platform update 22, with the intent of this being the only "is one of" filtering experience eventually. |
-| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available via the Client performance options page. See [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering) for more details. |
+| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available via the **Client performance options** page. See [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering) for more details. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated - Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
 
 
-## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
+## Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Standard and First release service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../get-started/public-preview-releases.md).
 
 ### Deprecated APIs and potential breaking changes
 
@@ -204,7 +204,7 @@ No features have been removed or deprecated with this release. Platform update 1
 ## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -309,7 +309,7 @@ Users can download this from the government portal.
 ## Dynamics 365 for Retail 7.2
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -341,7 +341,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Duplicate functionality.       |
-| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Product areas affected**         | Warehouse management, Transportation management     |
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.               |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q4 2019.   |
@@ -1100,7 +1100,7 @@ Product builder was used to dynamically configure items from a sales order, purc
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX. It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.  |
-| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Product areas affected**         | Product information management, Sales and marketing  |
 | **Status**                         | Removed as of Dynamics AX 7.0.      |
 
