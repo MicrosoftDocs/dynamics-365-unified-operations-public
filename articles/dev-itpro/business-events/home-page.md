@@ -183,42 +183,40 @@ If an error can't be successfully processed, you can use the **Download payload*
 
 The integration requirements and integration solution design for implementations vary. The integration requirements play a role in identifying the consumption model for business events. In summary, you must consider the following points when you design integrations that use business events:
 
-- Business events can be consumed via Microsoft Flow, Service Bus, or Event Grid or other endpoint types.
-- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, or Event Grid or any other endpoint types.
+- Business events can be consumed using Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
+- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
 - A business event can be activated in all legal entities or in specific legal entities.
 - A business event can be sent to a unique endpoint or the same endpoints.
 - Microsoft Flow can directly subscribe to business events.
 
 ## Idempotency
-Business event enables idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number must not be mis-construed for sequence number since, the control number is not guaranteed to be sequential. There can be gaps in the numbering space.
+Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number, which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
 
 ## Filtering in Azure Event Grid and Azure Service Bus
 Azure Service Bus and Azure Event Grid supports subscribing to topics by
-specifying criteria on the incoming message. This is explained
-[here](https://docs.microsoft.com/en-us/azure/service-bus-messaging/topic-filters)
-and [here](https://docs.microsoft.com/en-us/azure/event-grid/event-filtering).
+specifying criteria on the incoming message. For more information, see [Topic filters and actions](https://docs.microsoft.com/en-us/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](https://docs.microsoft.com/en-us/azure/event-grid/event-filtering).
 
-A business event that is sent out to an Azure Service Bus or an Azure Event Grid
+A business event that is sent to an Azure Service Bus or Azure Event Grid
 has the following fields made available for this purpose. Subscribers can use
 this information to subscribe to more specific topics as required.
 
--   **Category** – this is the business event category as displayed in the
+-   **Category** – This is the business event category as displayed in the
     business event catalog. This is useful as a filter criterion when a common
     topic is used for receiving business events from multiple categories and
-    subscribers want to only receive business events for the category, they are
+    subscribers want to only receive business events for the category that they are
     interested in.
 
--   **Business event id** – this is the class name of the business event
+-   **Business event ID** – This is the class name of the business event
     implementation as displayed in the business event catalog. This uniquely
     identifies the business event (not the instance of the business event) and
-    thus helps in validation of received business event on the consumer side to
+    thus helps in validation of received business events on the consumer side to
     ensure the expected business event is what is being received and processed.
 
--   **Legal entity** – this is the legal entity in which the business event
-    happened. This is a useful information to base the consuming logic on if,
+-   **Legal entity** – This is the legal entity in which the business event
+    happened. This is a useful information to base the consuming logic on if
     the processing and distribution of business events on the consumption side
-    must be driven by legal entity.
+    must be driven by a legal entity.
 
 > [!NOTE]
-> The filterable fields that are sent out in a business event can be modified to
+> The filterable fields that are sent in a business event can be modified to
 include custom fields. This is a developer experience.
