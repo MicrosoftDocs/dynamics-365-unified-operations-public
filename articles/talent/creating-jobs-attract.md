@@ -144,9 +144,14 @@ After a job is saved, it can be submitted for approval. The following table list
 
 In the job list, you can filter on the job statuses.
 
-Approvals can be sent to any Microsoft Azure Active Directory (Azure AD) user in the company. The approvals are sent in parallel to all the people who are listed as approvers. After a job is approved, it can be activated.
+Approvals can be sent to any Microsoft Azure Active Directory (Azure AD) user in the company. The approvals are sent in parallel to all the people who are listed as approvers. All approvers must approved for the job to move forward.  If a single approver rejects the job, the job will have a rejected status.  After a job is approved, it can be activated.
 
-The people who are listed as approvers will receive a notification in Attract to inform them that they have an item to approve. An approval item will also appear in the **Assigned to you** section on the dashboard. After someone accepts or approves a job, the hiring team will receive a notification. Finally, the hiring team will receive a notification when the job is approved.
+If a user edits the job after it is approved, but not activated, the job status will be reset to 'Draft' and the job must be re-submitted for approval.  Once an approved job has been activated, it cannot be edited.
+
+The people who are listed as approvers will receive a notification in Attract and an email to inform them that they have an item to approve.  In the email, the approvers can click the link to open the job, review the details and either approve or reject. After the job's status is set to approved or rejected, the submitter will be notified in Attract and they will receive an email. Also, the approvers will receive a reminder email if they have not responded to the approval request within 24 hours.
+
+> [!NOTE]
+Custom email templates can be created for Approval emails.  Refer to the 'Creating and managing email templates' section for more information.
 
 ## Create a job
 
