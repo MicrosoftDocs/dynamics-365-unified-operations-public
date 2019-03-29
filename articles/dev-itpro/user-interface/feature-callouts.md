@@ -35,24 +35,18 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 ## Introduction
-New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. To this end, two new APIs have been added that allows a developer to trigger a feature callout to point out a new capability to the user and optionally provide a hyperlink for the user to learn more about the feature.   
-
-## SystemNotificationWhatsNewManager::AddWhatsNew() 
-Add a feature callout to a control without a "Learn more" link. 
-
-### Parameters
-
-| Parameter     | Description                                                               |
-|---------------|---------------------------------------------------------------------------|
-| ruleID        | Generate a unique GUID                                                    | 
-| title         | Provide a (localized) title                                               | 
-| bodyText      | Provide a (localized) description                                         | 
-| targetControl | Provide the name of the control you want to attach the feature callout to | 
+New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. To this end, new APIs have been added that allow a developer to trigger a feature callout to point out a new capability to the user and optionally provide a hyperlink for the user to learn more about the feature.   
 
 
-## SystemNotificationWhatsNewManager::AddWhatsNewWithActionLink() 
 
-### Parameters
+<image>
+  
+## Implementation details
+The SystemNotificationsWhatsNewManager class contains two variant APIs for triggering a feature callout. 
+
+### SystemNotificationWhatsNewManager::AddWhatsNewWithActionLink() 
+
+#### Parameters
 
 | Parameter     | Description                                                               |
 |---------------|---------------------------------------------------------------------------|
@@ -62,6 +56,18 @@ Add a feature callout to a control without a "Learn more" link.
 | targetControl | Provide the name of the control you want to attach the feature callout to | 
 | urlLink       | Provide the URL to open in a new tab when the "Learn more" link is clicked. If a URL is not specified, then no "Learn more" link will be displayed. |
 
+
+### SystemNotificationWhatsNewManager::AddWhatsNew() 
+Add a feature callout to a control without a "Learn more" link. 
+
+#### Parameters
+
+| Parameter     | Description                                                               |
+|---------------|---------------------------------------------------------------------------|
+| ruleID        | Generate a unique GUID                                                    | 
+| title         | Provide a (localized) title                                               | 
+| bodyText      | Provide a (localized) description                                         | 
+| targetControl | Provide the name of the control you want to attach the feature callout to | 
 
 
 Notes
