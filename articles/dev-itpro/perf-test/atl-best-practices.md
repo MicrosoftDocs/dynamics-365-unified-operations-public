@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Best practices for the acceptance test library
-description: This topic provides best practices for the acceptance test library.
+title: Best practices for the Acceptance test library
+description: This topic provides best practices for the Acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
@@ -30,75 +30,78 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Best practices for the acceptance test library
+# Best practices for the Acceptance test library
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
 
-## Use `var` and declare variables inline
+## Use var and declare variables inline
 
-+ Use the `var` keyword (type inference). 
-+ Declare variables inline, rather than in a separate statement.
++ Use the `var` keyword (type inference).
++ Declare variables inline instead of in a separate statement.
 
-### Do 
-```	
-var item = items.default(); 
+### Do this
+
+```
+var item = items.default(); 
 var salesOrder = data.sales().salesOrders().createDefault();
 var salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).setQuantity(10).save();
 ```
-### Don't
+
+### Don't do this
+
 ```
-InventTable item; 
+InventTable item; 
 AtlEntitySalesOrder salesOrder;
 AtlEntitySaleOrderLine salesLine;
-	
 …
-	
-item = items.default(); 
+item = items.default(); 
 salesOrder = data.sales().salesOrders().createDefault();
 salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).setQuantity(10).save();
 ```
-		   
+
 ### Justification
 
-The advantage of using `var` is that you write less code, you don't have to remember exact type names, and the test logic isn't cluttered with unimportant information. Overall, the test code easier to read.
+The advantages of using `var` are that you write less code, you don't have to remember exact type names, and the test logic isn't cluttered with unimportant information. Overall, the test code easier to read.
 
-In the previous example it doesn't matter if `item` is of type `ItemId`, `InventlTable`, or `AtlEntityInventItem`. The important detail is that you are creating a sales line with the well-known default item. The exact types of the `salesOrder` and `salesLine` variables are not important. It's clear from the naming and usage what the contracts of these types are.
-	
-### Considerations 
+In the previous example, it doesn't matter whether `item` is of the `ItemId`, `InventlTable`, or `AtlEntityInventItem` type. The important detail is that you're creating a sales line that has a well-known default item. The exact types of the `salesOrder` and `salesLine` variables aren't important. The contracts of these types are clear from the naming and usage.
 
-- Don't use type inference when you want compilation to fail if the return type of a method changes. 
+### Considerations
 
-- Don't use type inference if you can't come up with meaningful variable or method names.
+- Don't use type inference if you want compilation to fail if the return type of a method changes.
+- Don't use type inference if you can't invent meaningful variable or method names.
 
-## Use entity instead of ID as method parameter
+## Use entities instead of IDs as method parameters
 
-Well-known data methods, creator methods, and `init` methods usually return records or entities rather than IDs. We recommend that you use records or entities as method parameters.
+Well-known data methods, creator methods, and `init` methods usually return records or entities instead of IDs. We recommend that you use records or entities as method parameters.
 
-### Do
+### Do this
 
 ```
 var salesLine = salesOrder.addLine().setItem(item).save();
 ```
 
-### Don't
+### Don't do this
 
 ```
 var salesLine = salesOrder.addLine().setItemId(item.ItemId).save();
 ```
 
 ### Justification
-The code is easier to read because it's not cluttered with unimportant technicalities.
+
+The code is easier to read, because it isn't cluttered with unimportant technicalities.
 
 ### Considerations
-If you only know the ID, then use the method that takes ID as argument. 
+
+If you know only the ID, use the method that takes the ID as an argument.
 
 ## Use navigation node shortcuts
-When automating a new domain area, introduce a base class that holds shortcuts to the most commonly used navigation objects in the area. 
 
-For the warehouse management area, there is a base class that is named `AtlWHSTestCase`. It contains shortcuts to `data.whs()`, `data.invent()`, `data.invent().items()`, `data.invent().units()`, and others. The shortcuts simplify your test code.
+When you automate a new domain area, introduce a base class that holds shortcuts to the most frequently used navigation objects in that area.
+
+For example, for the warehouse management area, there is a base class that is named `AtlWHSTestCase`. It contains shortcuts to `data.whs()`, `data.invent()`, `data.invent().items()`, `data.invent().units()`, and others. The shortcuts simplify your test code.
 
 ```
 class AtlWHSTestCase extends SysTestCase
@@ -118,9 +121,9 @@ class AtlWHSTestCase extends SysTestCase
         whs = data.whs();
 ```
 
-It also makes sense to introduce shortcuts that are common for many test methods within the same class.
+It also makes sense to introduce shortcuts that are shared among many test methods in the same class.
 
-### Do
+### Do this
 
 ```
 class WHSMinMaxReplenishmentScenarioTest extends AtlWHSTestCase
@@ -129,7 +132,7 @@ class WHSMinMaxReplenishmentScenarioTest extends AtlWHSTestCase
     var warehouse = invent.warehouses().default(); 
 ```
 
-### Don't
+### Don't do this
 
 ```
 class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
@@ -138,6 +141,6 @@ class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
     var warehouse = data.invent().warehouses().default(); 
 ```
 
-### Consideration
-You don't have to create a shortcut for every navigation node that you need, but do consider making them for the ones that are commonly used.
+### Considerations
 
+You don't have to create a shortcut for every navigation node that you need. However, consider creating them for the navigation nodes that are frequently used.
