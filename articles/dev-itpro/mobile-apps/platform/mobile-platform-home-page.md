@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/3/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -169,26 +169,26 @@ There are many resources that you can leverage to figure out how to build or cha
 - Leverage the [Dynamics Community forums for Finance and Operations (AX)](https://community.dynamics.com/ax/f/33) by searching for answers and asking questions when needed.
 
 ### Tips for workspace creation and modification
-Some tips for workspace creation and modification:
+Here are some tips for workspace creation and modification:
 - Create new simplified forms for recording rather than recording large complex forms.
-- After recording a form, you have to close the form instead of clicking done because otherwise the form is left open.
+- After recording a form, you have to close the form instead of clicking **Done**, otherwise the form remains open.
 - If you re-record a page with a grid then you need to re-record the link to the Details page because otherwise it won't be there.
-- When recording an action, change the value of the fields to add them. Once recording complete, then close the form instead of clicking save.
-- Lookups in mobile are list pages that have been recorded. "Select field data" and "Select field to display" are used to select the "field to use as the value to save" (data) and the "field to show the user" (display).
-- If you re-record a lookup, then all the references need to be re-recorded as well since the GUID for the lookup will change.
-- When you want to add a field to a page, you need to add all the fields again, since the list is cleared out at the beginning of each edit. This is a limitation of task recorder. Note that reordering is also not possible.
-- In the workspace xml, GUIDs are used as references to forms and controls instead of names. GUIDs are used to ensure uniqueness, but it comes at the cost of maintainability. Those GUIDs are regenerated on each modification, so partial edits are very difficult. The use of GUIDs would be very costly to change, so it is unlikely that changes would be made in the future to use simpler string name references.
-- Relations between form datasources need to be via RecordId instead of string i.e. primary keys of the datasources should not be strings.
+- When recording an action, change the value of the fields to add them. When recording is complete, close the form instead of clicking **Save**.
+- Lookups in mobile are list pages that have been recorded. **Select field data** and **Select field to display** are used to select the **field to use as the value to save** (data) and the **field to show the user** (display).
+- If you re-record a lookup, all the references also need to be re-recorded because the GUID for the lookup will change.
+- If you want to add a field to a page, you need to add all the fields again, because the list is cleared at the beginning of each edit. This is a limitation of task recorder. Note that reordering is also not possible.
+- In the workspace XML, GUIDs are used as references to forms and controls instead of names. GUIDs are used to ensure uniqueness, but this comes at the cost of maintainability. Those GUIDs are regenerated on each modification, so partial edits are very difficult. The use of GUIDs would be very costly to change, so it is unlikely that changes would be made in the future to use simpler string name references.
+- Relationships between form datasources need to be via RecordId instead of string. For example, primary keys of the datasources should not be strings.
 - Customers and partners can fork a workspace by creating a copy of it and then make changes as needed.
-- There is no checkbox in mobile. You have to manually bind the field to a Yes/No enum in JS.
+- There is no check box in mobile. You have to manually bind the field to a Yes/No enum in JavaScript.
 
 ### Common problems with form recordings
 Avoid using forms with these patterns and controls when creating workspace recordings:
-- Datasources with DelayedJoin (common on transaction forms)
-- Fast Tabs (super common on existing forms)
-    - Recorded forms need to not have Fast Tabs (since expansion state is remembered)
-- Any UI that has state like an expandable or hide/show region
-- There is no checkbox in mobile. You have to manually bind the field to a Yes/No enum in JS.
+- Datasources with DelayedJoin (common on transaction forms).
+- FastTabs (common on existing forms).
+    - Recorded forms do not need to have FastTabs (be thed expansion state is remembered).
+- Any user interface (UI) that has state, like an expandable or hide/show region.
+- There is no check box in mobile. You have to manually bind the field to a Yes/No enum in JavaScript.
 
 ### Using multi-factor authentication with the Unified Operations app
-The Unified Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (AAD) by presenting the AAD sign-in web page within an embedded browser and then after a successful sign-in it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the Web Client. Multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to be closed, so the sign-in will fail. The workaround for this is to use the "touch and hold" gesture on the authentication notification and then click the accept option. Since the notification acceptance will not require an app switch, the sign-in will proceed as normal.
+The Unified Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (AAD) by presenting the AAD sign-in web page within an embedded browser. After a successful sign in it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workaround for this is to use the "touch and hold" gesture on the authentication notification and then click the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
