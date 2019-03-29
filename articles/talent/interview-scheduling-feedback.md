@@ -100,4 +100,4 @@ If you select the **Inherit feedback participants from Hiring Team** field, the 
 
 The interview activity is an optional activity with three components: **Candidate availability request**, **Schedule**, and **Feedback**. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually.
 
-To include or limit the candidates to be interviewed, select a value in the **Who are you interviewing?** field. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of interviewing, set the **Who are you interviewing field** to **External Candidates**.
+To include or limit the candidates to be interviewed, select a value in the **Who are you interviewing?** field. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of interviewing, set the **Who are you interviewing?** field to **External Candidates**.
