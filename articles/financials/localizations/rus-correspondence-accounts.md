@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: About Correspondence 
-description: This topic provides information about correspondence in Russia. 
+title: Correspondence of accounts
+description: This topic provides information about correspondence of accounts in Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 
-# ms.search.form:  
+# ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -28,112 +28,114 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# About Correspondence 
+# Correspondence of accounts
 
-Correspondence of accounts is an approach to continuous and interrelated registration of business transactions in corresponding general ledger accounts, based on the double-entry bookkeeping system. Ledger vouchers are represented by using the Russian accounting standards with corresponding accounts.
+[!include [banner](../includes/banner.md)]
 
-You can enter multidimensional transactions in the ledger journals and other modules. In most cases, transactions that are created automatically from other modules are multidimensional. These transactions should be changed to two-dimensional, which could involve splitting ledger transactions. In this case, the following correspondence cases are specified.
+Correspondence of accounts is an approach to continuous and interrelated registration of business transactions in corresponding general ledger accounts. It's based on the double-entry bookkeeping system. Ledger vouchers are represented by using the Russian accounting standards with corresponding accounts.
+
+You can enter multidimensional transactions in the ledger journals and other modules. In most cases, transactions that are automatically created from other modules are multidimensional. These transactions should be changed to two-dimensional. This change might involve splitting ledger transactions. In this case, the following correspondence cases are specified.
 
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Type of correspondence</p></th>
-<th><p>Before correspondence</p></th>
-<th><p>After correspondence</p></th>
+<tr>
+<th>Type of correspondence</th>
+<th>Before correspondence</th>
+<th>After correspondence</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>One–to–one</p></td>
-<td><p>Account A 200 (debit transaction)</p>
-<p>Account B 200 (credit transaction)</p></td>
-<td><p>Account A – Account B 200</p>
-<p>(two transactions)</p></td>
+<tr>
+<td>One-to-one</td>
+<td>
+<p>Account A 200 (debit transaction)</p>
+<p>Account B 200 (credit transaction)</p>
+</td>
+<td>
+<p>Account A – Account B 200</p>
+<p>(Two transactions)</p>
+</td>
 </tr>
-<tr class="even">
-<td><p>One–to–many</p></td>
-<td><p>Account A 200 (debit transaction)</p>
+<tr>
+<td>One-to-many</td>
+<td>
+<p>Account A 200 (debit transaction)</p>
 <p>Account B 160 (credit transaction)</p>
-<p>Account C 40 (credit transaction)</p></td>
-<td><p>Account A – Account B 160</p>
+<p>Account C 40 (credit transaction)</p>
+</td>
+<td>
+<p>Account A – Account B 160</p>
 <p>Account A – Account C 40</p>
-<p>(four transactions)</p></td>
+<p>(Four transactions)</p>
+</td>
 </tr>
-<tr class="odd">
-<td><p>Many–to–one</p></td>
-<td><p>Account A 200 (debit transaction)</p>
+<tr>
+<td>Many-to-one</td>
+<td>
+<p>Account A 200 (debit transaction)</p>
 <p>Account B 160 (debit transaction)</p>
-<p>Account C 360 (credit transaction)</p></td>
-<td><p>Account A – Account C 200</p>
+<p>Account C 360 (credit transaction)</p>
+</td>
+<td>
+<p>Account A – Account C 200</p>
 <p>Account B – Account C 160</p>
-<p>(four transactions)</p></td>
+<p>(Four transactions)</p>
+</td>
 </tr>
-<tr class="even">
-<td><p>Many–to–many</p></td>
-<td><p>Account A 200 (debit transaction)</p>
+<tr>
+<td>Many-to-many</td>
+<td>
+<p>Account A 200 (debit transaction)</p>
 <p>Account B 160 (debit transaction)</p>
 <p>Account C 260 (credit transaction)</p>
-<p>Account D 100 (credit transaction)</p></td>
-<td><p>Individual processing</p>
-<p>(multiple transactions)</p></td>
+<p>Account D 100 (credit transaction)</p>
+</td>
+<td>
+<p>Individual processing</p>
+<p>(Multiple transactions)</p>
+</td>
 </tr>
 </tbody>
 </table>
 
+When the account correspondence mechanism is turned on, each new accounting transaction that is created consists of a set of two-way corresponding transactions. When the accounting transactions are posted, the corresponding relationship is automatically defined. If the mechanism isn't turned on, no correspondence relationships are created between transactions.
 
-When the **Use corresponding mechanism** in the **General ledger parameters** form is set to **No**, no correspondence relationships are created between transactions.
+If any non-corresponding accounts exist before the account correspondence mechanism is turned on, they aren't automatically linked. You must manually define relationships for the transactions.
 
-When the **Use corresponding mechanism** is set to **Yes**, each new accounting transaction that is created consists of a set of two-way corresponding transactions. When the accounting transactions are posted, the corresponding relationship is defined automatically.
+## Turn on the account correspondence mechanism for accounting transactions 
 
-If non-corresponding accounts already exist before the account correspondence mechanism is enabled, they are not linked automatically. You must define relationships for these transactions manually.
+The account correspondence mechanism lets you create correspondence relations between transactions. Follow these steps to turn it on.
 
-
-## Activate corresponding mechanism for accounting transactions 
-
-The account correspondence mechanism allows you to create correspondence relations between transactions. When the account correspondence mechanism is turned on, each new accounting transaction created will consist of a set of two-way corresponding transactions. When posting the accounting transactions, the corresponding relation is defined automatically. If non-corresponded transactions existed before the account correspondence mechanism was turned on, they would not be linked automatically.
-
-1.  Click **General ledger** \> **Ledger setup** \> **General ledger parameters**.
-
-2.  Click **Ledger**, and then set **Use corresponding mechanism** to **Yes** to activate the account correspondence mechanism.
-
-
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. On the **Ledger** tab, set the **Use corresponding mechanism** option to **Yes** to turn on the account correspondence mechanism.
 
 > [!NOTE]
-> After the correspondence mechanism is activated, all new transactions will have correspondence relations. If you cannot establish a correspondence link for a transaction, a message with a warning is displayed. Click this message to go to the manual correspondence function to correspond the transactions manually.
+> After the correspondence mechanism is turned on, all new transactions will have correspondence relations. If you can't establish a correspondence link for a transaction, you receive a warning message. Select this message to use the manual transaction correspondence function to manually correspond the transactions.
 
+## Manually define correspondence relations for transactions
 
-## Define correspondence relations for transactions manually 
+Use the manual transaction correspondence function to define a relationship between non-corresponding transactions. When the account correspondence mechanism is turned off in the ledger, all transactions are generated in the usual way. No correspondence link is established between accounts. The manual transaction correspondence function isn't retroactive. When the account correspondence mechanism is turned on, correspondence isn't established for transactions that were performed earlier.
 
-Use the manual transaction correspondence function to define a relationship between non-corresponding transactions. When the account correspondence mechanism is turned off in the ledger, all transactions are generated normally. No correspondence link is established between accounts. The function is not retroactive. When correspondence is turned back on, correspondence will not be established for transactions that were performed earlier.
+1. Go to **General ledger** \> **Periodic tasks** \> **Manual correspondence**.
+2. In the left pane, view the list of vouchers that have been posted.
+3. In the **Show only vouchers** field, select which vouchers should be listed:
 
+    - **Not corresponded** − Show only vouchers that have no corresponding ledger transactions.
+    - **Corresponded** − Show only vouchers that have corresponding ledger transactions.
+    - **All** − Show all vouchers.
 
+4. Select a voucher, and then, on the **Overview** FastTab, view the voucher transactions.
+5. On the **Offset** FastTab, follow one of these steps:
 
-1.  Click **General ledger** \> **Periodic tasks** \> **Manual correspondence**.
+    - To correspond selected debit and credit transactions for the selected voucher, select a row in the **Debit transactions** grid, select a row in the **Credit transactions** grid, and then select the **\<-\>** button to correspond the transactions.
 
-2.  In the left pane view the list of posted vouchers.
-3.  In the **Show only vouchers** field, select the vouchers to view from the following options:
-    
-      - **Not corresponded** − View vouchers with no corresponding ledger transactions.
-    
-      - **Corresponded** − View vouchers with corresponding ledger transactions.
-    
-      - **All** − View all vouchers.
+        <!--add here screenshot Correspondence-Offset from WI-->
 
-4.  Select the voucher line and on the **Overview** Fast tab view the voucher transactions.
+    - To automatically correspond all credit and debit transactions for the selected voucher, select the **\<\<-\>\>** button.
 
-5.  Click the **Offset** Fast tab. Select a line under the **Debit transactions** and a line under the **Credit transactions** field groups and then click **\<-\>** to correspond a debit and a credit transaction. Corresponded transactions are moved to the **Detail** pane.
-[add here screenshot Correspondence-Offset from WI]
+    Transactions that have been corresponded are moved to the **Details** grid.
 
-6.  Click **\<\<-\>\>** to correspond all credit and debit transactions for the selected voucher automatically.
+7. On the **Offset** FastTab, select **Save** to save the results or **Restore** to cancel the last change.
+8. On the Action Pane, select **Refresh data** to update the data on the **Manual correspondence** page.
 
-7.  In the Action pane of the **Offset** Fast tab, click **Save** to save the results, or click **Restore** to cancel the last modification.
-
-8.  Click the **Refresh data** button to refresh the data in the **Manual correspondence** form.
-
-9. To remove the corresponding relationships for a voucher, select the corresponded voucher in the left pane, click **Remove ledger bond**, and then click **Refresh data**.
-
+To remove the correspondence relations for a voucher, select the voucher in the left pane, and then, on the Action Pane, select **Remove ledger bond**. Then select **Refresh data** to update the data on the page.
