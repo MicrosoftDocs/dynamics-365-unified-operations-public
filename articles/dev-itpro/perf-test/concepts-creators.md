@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Creators in the acceptance test library
-description: This topic provides information about acceptance test library creators.
+title: Creators in the Acceptance test library
+description: This topic provides information about Acceptance test library creators.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 03/27/2019
@@ -30,51 +30,56 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Creators in the acceptance test library
+# Creators in the Acceptance test library
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-# Creators
-Creator classes provide fluent APIs for creating test data. 
+Creator classes provide fluent application programming interfaces (APIs) that are used to create test data.
 
 ## Naming convention
-The naming convention is:
 
-```AtlCreator<ModuleName><EntityName>```
+`AtlCreator<ModuleName><EntityName>`
 
-+ `ModuleName` (optional) is based on the names of the modules in main menu. You should use a short version or an abbreviation to support brevity of test code.
-+ `EntityName` (optional) is used when the command applies to different types of entities.
+In this naming convention:
+
++ `<ModuleName>` is optional and is based on the names of the modules on the main menu. You should use a short version or an abbreviation to support brevity of test code.
++ `<EntityName>` is optional and is used when the command applies to different types of entities.
 
 ## Examples
+
 ```
 AtlCreatorCostGroup
+
 AtlCreatorCustomer
 ```
 
 ## Fluent setter methods
-Creator classes should provide fluent setter methods for setting the properties of the entity that is being constructed.
+
+Creator classes should provide fluent setter methods that are used to set the properties of the entity that is being constructed.
 
 Creators should provide fluent `set` methods for the properties of the entity that is being constructed.
 
 ### Naming convention
-```set<EntityPropertyName>```
 
-`EntityPropertyName` is the name of the property of the entity that is being set using the fluent method.
+`set<EntityPropertyName>`
+
+In this naming convention, `<EntityPropertyName>` is the name of the property that is being set for the entity by using the fluent method.
 
 ### Example
+
 ```
 item = new AtlCreatorProductItem()
-        .setItemId('DemoItem')
-        .setItemGroup(invent.itemGroups().carAudio())
-        .setItemModelGroup(invent.modelGroups().fifo())                           
-        .setStorageDimGroup(invent.storageDimGroups().siteWarehousePhysical())
-        .setTrackingDimGroup(invent.trackingDimGroups().serialControlled())
-        .setDefaultWarehouse(invent.warehouses().default())
-        .create();
-
+    .setItemId('DemoItem')
+    .setItemGroup(invent.itemGroups().carAudio())
+    .setItemModelGroup(invent.modelGroups().fifo())
+    .setStorageDimGroup(invent.storageDimGroups().siteWarehousePhysical())
+    .setTrackingDimGroup(invent.trackingDimGroups().serialControlled())
+    .setDefaultWarehouse(invent.warehouses().default())
+    .create();
 ```
 
-#### When creators should be used instead of entites?
-To choose between entities and creators, read [Should I implement an Entity or a Creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).
+## When should creators be used instead of entities?
+
+For information that will help you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).
