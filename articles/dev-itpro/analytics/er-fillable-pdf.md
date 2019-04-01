@@ -384,7 +384,7 @@ With this setting, the imported **Intrastat (import from Excel)** is assigned as
 
 7.  Review the generated PDF document.
 
-![Generated report screenshot example 1](media/rcs-ger-filloutpdf-excelworkbook.png)
+![Generated report screenshot example 1](media/rcs-ger-filloutpdf-generatedreport.png)
 
 ![Generated report screenshot example 2](media/rcs-ger-filloutpdf-generatedreport2.png)
 
