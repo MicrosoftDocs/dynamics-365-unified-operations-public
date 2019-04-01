@@ -105,6 +105,21 @@ All key and mandatory fields must be present to publish data back to the entity.
 
 For all environments, including on-premises, the Excel and Word Add-ins, and the libraries they use, are loaded from multiple Internet locations and therefore will only run when the Internet is available. For on-premises environments, when the Internet is not available, the Open in Excel options are hidden because the Excel Add-in will not run without access to the Content Delivery Network (CDN) that houses the Excel Add-in. 
 
+### Can the Excel Add-in and the Word Add-in be made available to users via Centralized Deployment?
+
+Yes. [Centralized Deployment](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment) is supported. 
+
+The important standard values on the **App parameters** tab of the **Office App Parameters** page are:
+1. App ID: "WA104379629"
+2. Store: "en-US"
+3. Store Type: "Office Store"
+
+Notes: 
+1. **Name**, **Version**, and **Notes** are values that provide information but they are not needed to run the Excel Add-in.
+2. These same values are also used for the Word Add-in when it is run from the Document Templates form.
+
+To use [Centralized Deployment](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment), change the Store Type to "Centralized Deployment" and Store to "EXCatalog".
+
 ## Troubleshooting issues
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
