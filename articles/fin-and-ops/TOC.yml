@@ -373,6 +373,8 @@
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
       - name: Test services using third-party utilities
         href: ../dev-itpro/data-entities/third-party-service-test.md
+    - name: Finance and Operations Connector
+      href: ../dev-itpro/data-entities/fin-ops-connector.md
     - name: Development for integration
       items:
       - name: Data integration using data entities

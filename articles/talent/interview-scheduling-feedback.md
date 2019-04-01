@@ -3,7 +3,7 @@
 
 title: Interview scheduling and feedback
 description: This topic provides information about interview scheduling and feedback activities in Attract.
-author: andreabichsel
+author: shielasogge
 manager: AnnBe
 ms.date: 02/01/2019
 ms.topic: article
@@ -21,7 +21,7 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 # ms.search.industry: HR, Human Resources
-ms.author: anbichse
+ms.author: shielas
 
 ---
 
@@ -32,6 +32,8 @@ ms.author: anbichse
 ## Scheduler activity
 
 The scheduler activity is optional and has two components: Candidate availability request and Schedule. The Candidate availability component lets you use email to request a candidate's availability. The Schedule component provides the ability to schedule interviews with the candidate and the hiring team.
+
+To set up the scheduler activity to include or limit the candidates to be scheduled, select a value in the **Who are you scheduling** field. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of scheduling, you can assign the schedule activity only to external candidates by setting **Who are you scheduling** to **External Candidates**.
 
 ### Candidate availability request
 
@@ -88,8 +90,14 @@ There are multiple configurations available for the interview scheduler to use a
 
 ## Feedback activity
 
-The feedback activity is optional in a job template. This activity lets interview participants enter recommendations or feedback comments for an applicant. If the **Inherit feedback participants from Hiring Team** field is selected, the recruiter, hiring manager, and interviewers are automatically entered in the feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it. Interviewers are reminded to submit feedback for the interviews they have recently conducted based on the preset configuration as part of the job template. The hiring manager or a recruiter on the job can also choose to manually remind an interviewer to submit feedback.
+The feedback activity is optional in a job template. This activity lets interview participants enter recommendations or feedback comments for an applicant. 
+
+To include or limit the candidates to provide feedback on, select a value in the **Who should interviewers provide feedback on** field.  The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of scheduling, set **Who should interviewers provide feedback on** to **External Candidates**.
+
+If you select the **Inherit feedback participants from Hiring Team** field, the recruiter, hiring manager, and interviewers are automatically entered in the feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it. Interviewers are reminded to submit feedback for the interviews they have recently conducted based on the preset configuration as part of the job template. The hiring manager or a recruiter on the job can also choose to manually remind an interviewer to submit feedback.
 
 ## Interview activity
 
-The interview activity is an optional activity with three components: Candidate availability request, Schedule, and Feedback. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule. and feedback as part of the process instead using them individually as part of the hiring process.
+The interview activity is an optional activity with three components: **Candidate availability request**, **Schedule**, and **Feedback**. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually.
+
+To include or limit the candidates to be interviewed, select a value in the **Who are you interviewing** field. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of interviewing, set **Who are you interviewing** to **External Candidates**.
