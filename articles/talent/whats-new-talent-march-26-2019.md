@@ -60,6 +60,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 The following Common Data Service entities now support customer fields created in Dynamics 365 for Talent:
 
 - Worker
+- Department
 - Ethnic Origin
 - Veteran Status
 - Language code
