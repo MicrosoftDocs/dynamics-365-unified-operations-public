@@ -154,27 +154,27 @@ Add the following POS labels to the **POS** section of **Language text** from th
 
 | Language ID | Text ID | Text                      |
 |-------------|---------|---------------------------|
-| en-US       | 103174  | QR Code                   |
-| en-US       | 103175  | Continuous Number         |
-| en-US       | 103176  | Tax Retail Print Code     |
-| en-US       | 103177  | Total (sales)             |
-| en-US       | 103178  | Total Tax (sales)         |
-| en-US       | 103179  | Total Include Tax (sales) |
-| en-US       | 103180  | Tax Amount (sales)        |
-| en-US       | 103181  | Tax Basis (sales)         |
+| en-US       | 900001  | QR Code                   |
+| en-US       | 900002  | Continuous Number         |
+| en-US       | 900003  | Tax Retail Print Code     |
+| en-US       | 900004  | Total (sales)             |
+| en-US       | 900005  | Total Tax (sales)         |
+| en-US       | 900006  | Total Include Tax (sales) |
+| en-US       | 900007  | Tax Amount (sales)        |
+| en-US       | 900008  | Tax Basis (sales)         |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
 | Name                 | Type    | Caption text ID |
 |----------------------|---------|-----------------|
-| QRCODE               | Receipt | 103174          |
-| CONTINUOUSNUMBER     | Receipt | 103175          |
-| RETAILPRINTCODE      | Receipt | 103176          |
-| SALESTOTAL           | Receipt | 103177          |
-| SALESTOTALTAX        | Receipt | 103178          |
-| SALESTOTALINCLUDETAX | Receipt | 103179          |
-| SALESTAXAMOUNT       | Receipt | 103180          |
-| SALESTAXBASIS        | Receipt | 103181          |
+| QRCODE               | Receipt | 900001          |
+| CONTINUOUSNUMBER     | Receipt | 900002          |
+| RETAILPRINTCODE      | Receipt | 900003          |
+| SALESTOTAL           | Receipt | 900004          |
+| SALESTOTALTAX        | Receipt | 900005          |
+| SALESTOTALINCLUDETAX | Receipt | 900006          |
+| SALESTAXAMOUNT       | Receipt | 900007          |
+| SALESTAXBASIS        | Receipt | 900008          |
 
 ### Configure receipt formats
 
