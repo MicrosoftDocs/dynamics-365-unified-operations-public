@@ -46,9 +46,8 @@ The following scenarios are covered by the fiscal registration service integrati
 
 - Registration of cash transactions in the fiscal registration service:
 
-    - Send detailed transaction data to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
-    - Capture a response from the fiscal registration service. This response includes fiscal data and a link to the registered transaction.
-    - Register taxes, and map them to the fiscal registration service's tax codes.
+    - Send detailed transaction data to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes. The fiscal registration service further sends the data to the web-service of tax authorities and receives a confirmation from it that includes various fiscal data, such as the taxpayer's security code, the fiscal identification code, etc.
+    - Capture a response from the fiscal registration service. This response includes fiscal data.
     - Print the fiscal data for a registered transaction on the receipt.
 
 - Registration of gift card operations and customer deposits in the fiscal registration service:
@@ -100,7 +99,7 @@ The fiscal registration service integration sample implements the following rule
 
 ### Offline registration
 
-If the fiscal registration service fails to transmit data to the fiscal web-service of tax authorities (e.g. due to the response timeout) and receive 
+If the fiscal registration service fails to transmit data to the fiscal web-service of tax authorities (e.g. due to the response timeout) and receive a confirmation from it, 
 
 In case, that the signature request to the fiscal system of the Tax Authority fails (network error, response timeout > 5 sec), a transaction is registered without signature. The EFR resends transactions in original order in background as soon as the network connection is restored. Offline transactions contains the Taxpayer's Signature code ("Sign" / "PKP") instead of the fiscal identification code ("Fiscal" / "FIK") and are marked with ErrorCode="#OFFLINE".
 
@@ -152,7 +151,7 @@ On the **Address** FastTab choose More options expand drop-down and select Advan
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
 
 Add the following POS labels to the **POS** section of **Language text** from the table:
 
