@@ -218,6 +218,8 @@
       href: extensibility-examples.md
     - name: Extensibility in Attract
       href: extensibility-attract.md
+    - name: Custom fields in Core HR
+      href: corehr-customfields.md  
   - name: Office integration
     items:
     - name: Office integration tutorial
