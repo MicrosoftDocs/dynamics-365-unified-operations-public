@@ -199,4 +199,4 @@ Currently, the functionality for catch weight tags is supported only as part of 
 - When formula products are reported as finished by using the warehouse app.
 - When transport loads are processed by using the warehouse app.
 
-A catch weight tag can either be created using a warehousing app process, manually created in the form, or creating using a data entity process. If a catch weight tag gets associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing. the tag will be updated as shipped.
+A catch weight tag can either be created using a warehousing app process, manually created in the form, or creating using a data entity process. If a catch weight tag gets associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing. The tag will be updated as shipped.
