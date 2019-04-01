@@ -108,7 +108,7 @@ The search results show highlights for the various attributes that matched your 
 | \*       | Searches for substrings; can be used to return all records | Input: Mi\* <br></br> Result: All records containing fields that begin with "Mi", such as Microsoft, Micro systems, Midtown Enterprises, or Middleton <br></br>Input: \* <br></br> Result: All records in database |
 | “”       | Searches for an exact match                                | Input: “Microsoft” <br></br> Result: All records containing “Microsoft”                    |
 
->[!WARNING}
+>[!WARNING]
 > Don't disable relevance search for your Common Data Service instance. This will disable the search experience in Attract.
 
 All users have a common view of candidate profiles. The **Profile** tab shows any information about skills, work experience, and education the candidate provided as part of their applications via the career portal.
