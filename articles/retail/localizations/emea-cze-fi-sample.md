@@ -46,8 +46,8 @@ The following scenarios are covered by the fiscal registration service integrati
 
 - Registration of cash transactions in the fiscal registration service:
 
-    - Send detailed transaction data to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes. The fiscal registration service further sends the data to the web-service of tax authorities and receives a confirmation from it that includes various fiscal data, such as the taxpayer's security code, the fiscal identification code, etc.
-    - Capture a response from the fiscal registration service. This response includes fiscal data.
+    - Send detailed transaction data to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes. The fiscal registration service further sends the data to the web-service of tax authorities and receives a confirmation from it that includes the fiscal identification code of the transaction.
+    - Capture a response from the fiscal registration service. This response includes fiscal data such as the fiscal identification code or the security code of the transaction, etc.
     - Print the fiscal data for a registered transaction on the receipt.
 
 - Registration of gift card operations and customer deposits in the fiscal registration service:
@@ -99,9 +99,7 @@ The fiscal registration service integration sample implements the following rule
 
 ### Offline registration
 
-If the fiscal registration service fails to transmit data to the fiscal web-service of tax authorities (e.g. due to the response timeout) and receive a confirmation from it, 
-
-In case, that the signature request to the fiscal system of the Tax Authority fails (network error, response timeout > 5 sec), a transaction is registered without signature. The EFR resends transactions in original order in background as soon as the network connection is restored. Offline transactions contains the Taxpayer's Signature code ("Sign" / "PKP") instead of the fiscal identification code ("Fiscal" / "FIK") and are marked with ErrorCode="#OFFLINE".
+If the fiscal registration service fails to transmit transaction data to the fiscal web-service of tax authorities (e.g. due to the response timeout) and to receive a confirmation from the web-service (that is, the fiscal identification code of the transcation), it generates a local signature for the transaction and includes it and a special error code in the response. The fiscal registration service resends transactions in original order in background as soon as the network connection is restored.
 
 ### Limitations of the sample
 
