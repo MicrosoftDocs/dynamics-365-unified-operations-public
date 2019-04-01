@@ -154,23 +154,23 @@ Add the following POS labels to the **POS** section of **Language text** from th
 
 | Language ID | Text ID | Text                      |
 |-------------|---------|---------------------------|
-| en-US       | 501001  | ID provozovny/pokladny    |
-| en-US       | 501002  | BKP                       |
-| en-US       | 501003  | FIK                       |
-| en-US       | 501004  | PKP                       |
-| en-US       | 501005  | Info                      |
-| en-US       | 501006  | Sequence number           |
+| en-US       | 900001  | ID provozovny/pokladny    |
+| en-US       | 900002  | BKP                       |
+| en-US       | 900003  | FIK                       |
+| en-US       | 900004  | PKP                       |
+| en-US       | 900005  | Info                      |
+| en-US       | 900006  | Sequence number           |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
 | Name                 | Type    | Caption text ID |
 |----------------------|---------|-----------------|
-| TLT                  | Receipt | 501001          |
-| SEC                  | Receipt | 501002          |
-| SIGN                 | Receipt | 501003          |
-| FISCAL               | Receipt | 501004          |
-| INFO                 | Receipt | 501005          |
-| CONTINUOUSNUMBER     | Receipt | 501006          |
+| TLT                  | Receipt | 900001          |
+| SEC                  | Receipt | 900002          |
+| SIGN                 | Receipt | 900003          |
+| FISCAL               | Receipt | 900004          |
+| INFO                 | Receipt | 900005          |
+| CONTINUOUSNUMBER     | Receipt | 900006          |
 
 ### Configure receipt formats
 
@@ -309,11 +309,11 @@ To enable the registration process, follow these steps to set up Retail Headquar
 
 1. Go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
-3. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configurations. The configuration file is  **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml**.
+3. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The configuration file is  **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml**.
 4. Go to **Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile. Select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
 5. Go to **Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
 6. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group, for the connector functional profile that you created earlier.
-7. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, and select the fiscal connector group that you created earlier.
+7. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, a fiscal registration process step, and select the fiscal connector group that you created earlier.
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
 9. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 10. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
@@ -370,14 +370,13 @@ For more details about the design of the fiscal integration solution, see [Fisca
 
 #### Request handler
 	
-There is a single **DocumentProviderEFRFiscalCZE** request handlers for document provider, which is used to generate fiscal documents for the fiscal registration service.
+There is a single **DocumentProviderEFRFiscalCZE** request handler for document provider, which is used to generate fiscal documents for the fiscal registration service.
 
-These handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
+This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
 
 The connector supports the following requests:
 
 - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
-- **GetNonFiscalDocumentDocumentProviderRequest** – This request contains information about what non-fiscal document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, customer account deposits and customer order deposits.
 - **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – This request returns the response from the fiscal registration service. This response is serialized to form a string so that it's ready to be saved.
 
