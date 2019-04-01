@@ -15,7 +15,7 @@ ms.technology:
 
 ms.search.form: RetailShippingThresholdDiscounts, RetailPriceDiscGroup
 # ROBOTS: 
-audience: IT pro/system admin
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
