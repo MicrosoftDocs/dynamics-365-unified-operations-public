@@ -47,7 +47,7 @@ The following scenarios are covered by the fiscal registration service integrati
 - Registration of cash transactions in the fiscal registration service:
 
     - Send detailed transaction data to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes. The fiscal registration service further sends the data to the web-service of tax authorities and receives a confirmation from it that includes the fiscal identification code of the transaction.
-    - Capture a response from the fiscal registration service. This response includes fiscal data such as the fiscal identification code or the security code of the transaction, etc.
+    - Capture a response from the fiscal registration service. This response includes fiscal data such as the fiscal identification code and the security code of the transaction, etc.
     - Print the fiscal data for a registered transaction on the receipt.
 
 - Registration of gift card operations and customer deposits in the fiscal registration service:
@@ -99,7 +99,7 @@ The fiscal registration service integration sample implements the following rule
 
 ### Offline registration
 
-If the fiscal registration service fails to transmit transaction data to the fiscal web-service of tax authorities (e.g. due to the response timeout) and to receive a confirmation from the web-service (that is, the fiscal identification code of the transcation), it generates a local signature for the transaction and includes it and a special error code in the response. The fiscal registration service resends transactions in original order in background as soon as the network connection is restored.
+If the fiscal registration service fails to transmit transaction data to the fiscal web-service of tax authorities (e.g. due to the response timeout) and to receive a confirmation from the web-service (that is, the fiscal identification code of the transaction), it generates a local signature for the transaction and includes it and a special error code in the response. The fiscal registration service resends transactions in original order in background as soon as the network connection is restored.
 
 ### Limitations of the sample
 
@@ -155,12 +155,12 @@ Add the following POS labels to the **POS** section of **Language text** from th
 
 | Language ID | Text ID | Text                      |
 |-------------|---------|---------------------------|
-| en-US       | 501001  | TLT                       |
-| en-US       | 501002  | Sec                       |
-| en-US       | 501003  | Fiscal                    |
-| en-US       | 501004  | Sign                      |
+| en-US       | 501001  | ID provozovny/pokladny    |
+| en-US       | 501002  | BKP                       |
+| en-US       | 501003  | FIK                       |
+| en-US       | 501004  | PKP                       |
 | en-US       | 501005  | Info                      |
-| en-US       | 501006  | Continuous Number         |
+| en-US       | 501006  | Sequence number           |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
@@ -181,9 +181,9 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 - **Header:** Add the following fields:
 
-    - **Store name** and **Tax Identification Number** fields, which are used to print the company name and identity number on receipts. Alternatively, you can add the company name and identity number to the layout as free-form text.
-    - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
-    - **Continuous Number** fields, to identify the number of the cash transaction in the fiscal registration service.
+    - **Store name** and **Tax Identification Number**: these fields are used to print the company name and identity number on receipts. Alternatively, you can add the company name and identity number to the layout as free-form text.
+    - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number**.
+    - **Sequence number**: this field identifies the number of the cash transaction in the fiscal registration service.
 
 - **Lines:** Add the following fields:
 
@@ -195,11 +195,11 @@ In the Receipt format designer, add the following custom fields to the appropria
 
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
 
-    - **TLT** field, which is used to print the business premises Id on receipt.
-    - **Sec** field, which is used to print the the taxpayer’s security code.
-    - **Fiscal** field, which is used to print the fiscal identification code, issued by the fiscal registration service.
-    - **Sign** field, which is used to print the taxpayer's signature code.
-    - **Info** field, which is used to print the additional information related to the registered cash transaction on receipt.
+    - **ID provozovny/pokladny**: this field prints the identifiers of the business premises and the cash register.
+    - **BKP**: this field prints the the taxpayer’s security code that is assigned by the fiscal registration service.
+    - **FIK**: this field prints the fiscal identification code of the transaction that is assigned by the web-service of tax authorities in case of the successful online registration.
+    - **PKP**: this field prints the taxpayer's signature code that is generated by the fiscal registration service in case of offline registration.
+    - **Info**: this field prints the additional information from the fiscal registration service.
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
@@ -357,7 +357,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in the [Set up Retail for Austria](#set-up-retail-for-austria) section.
+5. Complete all the required setup tasks that are described in the [Set up Retail for Czech Republic](#set-up-retail-for-czech-republic) section.
 
 ## Design of extensions
 
