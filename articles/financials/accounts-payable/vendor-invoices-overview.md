@@ -84,9 +84,13 @@ For more information, see [Record vendor invoice and match against received quan
 
 You can work with multiple invoices at the same time and post them all at the same time. If you must create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal page. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
 
-## Recover vendor invoices in use
+## Recovering vendor invoices that are in use
 
-You can recover vendor invoices that have been in use for more than four hours using the **Recover vendor invoices** page. To access the **Recover vendor invoices** page, the security duty and privilege **Recover vendor invoices in use** must be assigned. Additionally, the Allow vendor invoice recovery parameter on the **Accounts payable parameters** page must be enabled to use the functionality. While a vendor invoice is in use, it cannot be edited by another user. There are times where an invoice may be in a state that is in use, even when it is not being actively edited. A vendor invoice may be in use for the following common reasons, including the application may have stopped responding while the invoice was being edited or a user may have inadvertently left the invoice open in the application. The **Recover vendor invoices** page can be used to recover or release the vendor invoice, allowing it to be edited. This form can be accessed from the Periodic task navigation or from a tile on the Vendor invoice entry workspace. After recovery, the invoice will be available for editing in the **Vendor invoice** page.
+While a vendor invoice is being used, it can't be edited by another user. However, the state of an invoice might sometimes indicate that the invoice is in use, even though it isn't being actively edited. For example, the application might have stopped responding while the invoice was being edited, or a user might have inadvertently left the invoice open in the application.
+
+You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited. You can open this page from the **Periodic task** navigation or a tile on the **Vendor invoice entry** workspace. After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.
+
+You can access the **Recover vendor invoices** page only if the **Recover vendor invoices in use** security duty and privilege are assigned to you. Additionally, the **Allow vendor invoice recovery** parameter on the **Accounts payable parameters** page must be turned on.
 
 ## Additional resources
 
