@@ -78,7 +78,7 @@ The Web content activity lets you embed online content in your hiring process. T
 
 ## Microsoft Forms activity
 
-The Microsoft Forms activity lets you embed a Microsoft Forms form in your hiring process. Microsoft Forms lets you create quizzes, surveys, and polls. To save the Microsoft Forms activity to the hiring process, you must specify the URL of the form. You can choose to display the content to the **Hiring Team**, **Internal Candidates only**, **External Candidates only**, or **All Candidates**. Like the PowerApps, YouTube, and Web content activities, you can allow hiring team participants to be added to the activity. If you choose to show the content to candidates, the Microsoft Forms form is shown only as part of the candidate experience and not in the hiring process.
+The Microsoft Forms activity lets you embed a Microsoft Forms activity in your hiring process. Microsoft Forms lets you create quizzes, surveys, and polls. To save the Microsoft Forms activity to the hiring process, you must specify the URL of the form. You can choose to display the content to the **Hiring Team**, **Internal Candidates only**, **External Candidates only**, or **All Candidates**. Like the PowerApps, YouTube, and Web content activities, you can allow hiring team participants to be added to the activity. If you choose to show the content to candidates, the form is shown only as part of the candidate experience and not in the hiring process.
 
 In Microsoft Forms, authors can change their settings to let users outside their organization respond to their survey or quiz. In this case, users submit responses anonymously. If you want to see who has filled out your survey or quiz, you can require that respondents enter their names as part of the survey or quiz.
 
