@@ -76,8 +76,8 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will give a you warning. |
-| **Replaced by another feature?**   | The compiler warning will be replaced by an error in Platform update 26. This change is backward compatible at runtime, which means Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time.|
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time.|
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
@@ -86,8 +86,8 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will give a you warning. |
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 26. This change is backward compatible at runtime, which means Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
