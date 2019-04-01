@@ -1,0 +1,62 @@
+---
+# required metatadata
+
+title: Using Core HR custom fields and Common Data Service for Apps 
+description: Custom fields can be used in Core HR and synced with Common Data Service (CDS) for Apps. 
+author: andreabichsel
+manager: AnnBe
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: anbichse
+ms.search.scope: Talent
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry:
+ms.author: jcart
+ms.search.validFrom: 2019-04-01
+ms.dyn365.ops.version: 
+
+---
+
+# Creating and working with custom fields
+
+[!include [banner](includes/banner.md)]
+
+Custom fields in Core HR can be added to pages within the application. For more ifnormation on how to create custom fields in Core HR, visit this this topic: 
+[Create and work with custom fields] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)
+
+The following CCDS for Apps entities now support custom fields created in Core HR:
+
+- Worker
+- Department
+- Ethnic Origin
+- Veteran Status
+- Language code
+- Job
+- Job type
+- Job function
+- Position
+- Position type
+
+# Enabling custom fields to be used in CDS for Apps
+
+Custom fields created in Core HR need to be enabled for them to be available for use in CDS for Apps. 
+
+Follow these steps to expose a custom field on CDS for Apps data entity:
+
+1. Select the custom field on the **Custom fields** form.
+2. Expand the **Entities** section to view the set of relevant entities.
+3. Click the **Edit** button.
+4. Modify the **Enabled** field to be selected for each entity that should expose this field. CDS entities will have the prefix of cdm_. 
+5. Click **Apply changes** to save your selections.
+
