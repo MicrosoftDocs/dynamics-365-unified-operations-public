@@ -111,7 +111,7 @@ For customers that are using version 8.1 or later:
 3. Verify that the error has been resolved.
 
 For customers that are using version 8.0 or earlier:
-1. Review the Environment history of your source environment. Specifically, look for any "Platform and application binary package" that might have been deployed to a different target environment.
+1. Review the Environment history of your source environment. Specifically, look for any "Platform and application binary package" that might have been deployed to the source environment and not the target environment.
 2. Apply this binary package to your target environment.
 3. Verify that the error has been resolved.
 
