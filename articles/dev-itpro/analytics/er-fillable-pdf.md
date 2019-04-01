@@ -149,9 +149,9 @@ In the added ER configuration, you will design the ER format to generate the Int
 
 Open downloaded PDF templates by using any of PDF viewers available for review. Note that each template contains multiple fields that must be filled out. Details of foreign trade transactions are presented in each template as 42 rows each of which contains 9 fields. They are named in PDF template as having the row number at the end of field’s name (‘Date 1’ … ‘Date 42’, …, ‘Commodity 1’ …‘Commodity 42’, etc.).
 
-![A screenshot of a cell phone Description automatically generated](media/6cf4c2e59d7e01b30f912ca265e076e7.png)
+![Template 1](media/rcs-ger-filloutpdf-template1.png)
 
-![A screenshot of a cell phone Description automatically generated](media/aa0b29c45a43658ecd4d7587d76ff80b.png)
+![Template 2](media/rcs-ger-filloutpdf-template2.png)
 
 1.  Click **Designer**.
 
@@ -195,7 +195,7 @@ Note that the **PDF file** element can be selected as the root element as well. 
 
 10. Click **OK**.
 
-![A screenshot of a computer Description automatically generated](media/b4ce4c9855b660e145b0d5dcd2fc948e.png)
+![Import from PDF dialog](media/rcs-ger-filloutpdf-importtemplate.png)
 
 1.  In the tree, expand 'Output'.
 
@@ -227,7 +227,7 @@ Note that the **PDF file** element can be selected as the root element as well. 
 
     1.  Note that the imported PDF document is attached to the edited format.
 
-![A screenshot of a computer screen Description automatically generated](media/175448d73f1db92c0986a2b16c384257.png)
+![PDF attachment preview](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 You can continue designing this format by importing the second PDF template, adding necessary bindings to data sources, etc. To learn how new format elements **PDF Merger**, **PDF File**, **Field group** and **Field** can be used to generate documents in PDF format, the sample ER format can be imported and analyzed.
 
@@ -283,7 +283,7 @@ Note that this format contains 2 **PDF File** elements using different PDF templ
 
 3.  In the tree, expand ‘Paging\\Pages’.
 
-![A screenshot of a social media post Description automatically generated](media/06c88c98fd608b9e902a4c43309549e7.png)
+![Screenshot of Formula designer with model tree expanded](media/rcs-ger-filloutpdf-reviewformat.png)
 
 Note that the ‘'Output\\Page 1’ format element of the **PDF File** type is not bound to any of data sources and the **Enabled** expression of this format element is empty. It meant that at run time the PDF template ‘IntrastatReportTemplate1’ will be filled out only once generating an individual PDF document.
 
@@ -310,7 +310,7 @@ Note that the ‘'Output\\Page N\\Details 2’ format element of the **PDF Group
 
     2.  Note that the **Name** expression of the format element is defined as follows: Paging.FldName("Correction",\@.Number).
 
-![A screenshot of a computer Description automatically generated](media/760bed26abf4fda8dae353f8d1ccaa85.png)
+![Screenshot of Format designer with mapping selected](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Note that the **Field** format element is used to fill out an individual field of a fillable PDF document that is defined as a template of the parent **PDF File** format element. Binding of the **PDF File** format element (or its nested element when available) specifies the value that is populated to corresponding PDF field. Different properties of the **Field** format element can be used to specify which PDF field is filled out by an individual format element:
 
@@ -334,7 +334,6 @@ PDF checkbox can be filled out as checked in the following ways:
 
 -   when the corresponding **Field** format element contains the nested **String** format element which is bound to the data source field containing either **1** or **True** or **Yes** text value.
 
-1.  Close the page.
 
 Run the format configuration
 ----------------------------
@@ -365,7 +364,7 @@ If you earlier already selected **Yes** for the **Default for model mapping** op
 
 With this setting, the imported **Intrastat (import from Excel)** is assigned as the default data source for the **Intrastat report (PDF)** configuration. When the **Intrastat report (PDF)** is executed, the content of the parsed by the **Intrastat (import from Excel)** Excel workbook will simulate foreign trade transactions that must be reported (see the sample of such workbook on the screen-shot below).
 
-![A screenshot of a computer Description automatically generated](media/2ba48628447608a18179c865af53ea8d.png)
+![Excel workbook with sample data](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### Execute the format configuration
 
@@ -385,9 +384,9 @@ With this setting, the imported **Intrastat (import from Excel)** is assigned as
 
 7.  Review the generated PDF document.
 
-![A screenshot of a cell phone Description automatically generated](media/5d7207bb1120cc55cad81b8cd94ae30e.png)
+![Generated report screenshot example 1](media/rcs-ger-filloutpdf-excelworkbook.png)
 
-![A screenshot of a video game Description automatically generated](media/79421d13a41a1564cd0afae92ca09c75.png)
+![Generated report screenshot example 2](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## Additional resources
 
