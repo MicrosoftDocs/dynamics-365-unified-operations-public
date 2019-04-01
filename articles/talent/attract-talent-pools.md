@@ -114,10 +114,8 @@ Please note that when new candidates or applicants are added across the applicat
 
 | Operator | Usage                                                      | Example                                                                                                                                               |
 |----------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \*       | Searches for substrings; can be used to return all records | Input: Mi\* \
-Result: All records containing Microsoft, Micro systems, Midtown Enterprises, Middleton, etc. Search: \* Result: All records in database |
-| “”       | Searches for an exact match                                | Input: “Microsoft” \
-Result: All records containing “Microsoft”                                                                                        |
+| \*       | Searches for substrings; can be used to return all records | Input: Mi\* Result: All records containing Microsoft, Micro systems, Midtown Enterprises, Middleton, etc. Search: \* Result: All records in database |
+| “”       | Searches for an exact match                                | Input: “Microsoft” Result: All records containing “Microsoft”                                                                                        |
 
 **Warning: Please do not disable Relevance search for your CDS for Apps instance
 as this would cause our new search experience to be disabled.**
