@@ -28,19 +28,18 @@ ms.dyn365.ops.version:
 
 ---
 
-# Creating and working with custom fields
+# Create custom fields in Core HR
 
 [!include [banner](includes/banner.md)]
 
-Custom fields in Core HR can be added to pages within the application. For more ifnormation on how to create custom fields in Core HR, visit this this topic: 
-[Create and work with custom fields] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)
+You can add custom fields to pages in Dynamics 365 for Talent: Core HR. For more information about how to create custom fields on a page, see [Create and work with custom fields](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-The following CCDS for Apps entities now support custom fields created in Core HR:
+The following entities in Common Data Service support custom fields created in Core HR:
 
 - Worker
 - Department
-- Ethnic Origin
-- Veteran Status
+- Ethnic origin
+- Veteran status
 - Language code
 - Job
 - Job type
@@ -48,15 +47,5 @@ The following CCDS for Apps entities now support custom fields created in Core H
 - Position
 - Position type
 
-# Enabling custom fields to be used in CDS for Apps
-
-Custom fields created in Core HR need to be enabled for them to be available for use in CDS for Apps. 
-
-Follow these steps to expose a custom field on CDS for Apps data entity:
-
-1. Select the custom field on the **Custom fields** form.
-2. Expand the **Entities** section to view the set of relevant entities.
-3. Click the **Edit** button.
-4. Modify the **Enabled** field to be selected for each entity that should expose this field. CDS entities will have the prefix of cdm_. 
-5. Click **Apply changes** to save your selections.
+Be sure to enable any custom fields you create so you can use them in Common Data Service. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
