@@ -83,26 +83,44 @@ The owner and contributors to the talent pool can add candidates to the talent p
 
 ## Search and view candidate profiles
 
-Users of a talent pool can view a candidate's profile, his or her LinkedIn information, related documents, or the candidate's whole application history. You can also search your whole candidate database for any candidate who has ever applied for any job in your organization, or who has ever been added to any talent pool.
+Using the candidate search capabilities in talent pools, a user can search over the entire candidate database comproising of all closed as well as active applicants in addition to all of the candidates added to any talent pool. Talent pools allow an Attract user to view a candidate's profile, their LinkedIn information, related documents as well as the candidate's application history.
 
-1. Use the search field at the top of the **My talent pools** tab to search your whole candidate database.
-1. Search among various profile attributes. Select the search attribute category, build a search query, and then select the right arrow button (**-\>**) to run the search.
+We have improved the search experience for talent pools, now allowing for searching over all candidate documents as well as having filters for silver medalists and various sources in addition to the existing filters for skills, education, etc. 
+You no longer need to specify the entity you want to search over, Attract is able to search over all candidate related fields such as skills, education, experience, resume, etc. and rank the results intelligently. 
+Please note that when new candidates or applicants are added across the application, they can take up to a maximum of 15 minutes to be indexed for search. 
 
-    You can look up candidates by their name, the organization that they work for, the skills that they have been tagged for, their education history, their current job title, or the degree that they have earned, if this information is included in their profile.
+> [!NOTE] 
+> This feature is currently under preview. To enable it, please ask an administrator to enable it via Feature Management in Attract’s Admin Center. If you are the Admin, please log out and log back in after turning the feature on to allow the new settings to propagate. 
 
-    You can also create a search query that uses two or more of these attributes as criteria. Combine the criteria by using an **and** operator.
+1. To start a new search over the candidate database, enter query text in the search box in the **Talent pools** tab.  
+1. Build a search query by simply typing in the skills, experience or location you are looking for or simply look up a candidate by name. The search will execute automatically once you finish typing your query.
+
+    You can look up candidates by their name, the organizations that they have worked for, the skills that they have been tagged for, their education history, their current job title, or the degree that they have earned, if this information is included in their profile.
+
+    You can also create a search query that uses two or more of these attributes by simply separating the carious attributes with spaces. 
 
     If any candidates match your search query, they are listed in the search results.
 
-1. To narrow down your results, you can update the search query by using the search field at the top.
+1. To narrow down your results, you can update the search query by using the search box at the top.
 
-    Alternatively, use the list of smart filters on the right. These smart filters are dynamically pulled in, based on the search results.
+    Alternatively, use the list of smart filters on the left side. These smart filters are dynamically populated, based on the search results.
 
     The search results show the top 20 skills, schools, organization, and so on, that are most often found in the list of candidates. You can add more filters for any of these attributes to narrow down the search results even more.
 
-1. After you've identified a candidate, select the row for that candidate to view his or her profile.
+1. The search results will show highlights for the various attributes that matched your search query. After you've identified a candidate, you can click on the item for that candidate to view thier profile.
 
-All users have a common view of candidate profiles. Select the row for a candidate in a set of search results or a talent pool to view his or her profile. The **Profile**  tab shows any information about skills, work experience, and educatoon that the candidate has updated from the career portal.
+Syntax highlights 
+------------------
+
+| Operator | Usage                                                      | Example                                                                                                                                               |
+|----------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \*       | Searches for substrings; can be used to return all records | Search: Mi\* Result: All records containing Microsoft, Micro systems, Midtown Enterprises, Middleton, etc. Search: \* Result: All records in database |
+| “”       | Searches for an exact match                                | Search: “Microsoft” Result: All records containing “Microsoft”                                                                                        |
+
+**Warning: Please do not disable Relevance search for your CDS for Apps instance
+as this would cause our new search experience to be disabled.**
+
+All users have a common view of candidate profiles. The **Profile**  tab shows any information about skills, work experience, and education that the candidate has provided as part of their applications via the career portal.
 
 - You can view the contact details for the candidate. You can also edit or update the information as you require by using the **Edit details** button.
 
