@@ -1236,6 +1236,8 @@
       href: database/dbmovement-scenario-general-refresh.md
     - name: Debug a copy of the production database
       href: database/dbmovement-scenario-debugdiag.md
+    - name: Export a copy of the standard user acceptance test (UAT) database
+      href: database/dbmovement-scenario-exportuat.md  
     - name: Golden configuration promotion
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Destructive testing
