@@ -5,7 +5,7 @@ title: Add extension properties to customer entities
 description: This tutorial shows how to use extension properties to extend an entity. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/17/2017
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
