@@ -1,7 +1,7 @@
 ---
 # required metatadata
 
-title: Create custom fields in Core HR
+title: Custom fields in Core HR
 description: Custom fields can be used in Core HR and synced with Common Data Service. 
 author: andreabichsel
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Create custom fields in Core HR
+# Custom fields in Core HR
 
 [!include [banner](includes/banner.md)]
 
