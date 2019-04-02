@@ -48,10 +48,10 @@ The user can't customize the embedded Microsoft Power BI reports.
 
 **Solution**
 
-- The Core HR data that flows to Common Data Service for Apps can be reported on via the PowerApps CDS connector to Power BI Desktop. Note that Common Data Service for Apps contains a subset of Core HR data. For more information about Power BI and dashboards, see [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
+- The Core HR data that flows to Common Data Service can be reported on via the PowerApps Common Data Service connector to Power BI Desktop. Note that Common Data Service contains a subset of Core HR data. For more information about Power BI and dashboards, see [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
 - Electronic reporting (ER) is available for some reports in Talent. Customer-driven customizations can be done via the ER configuration options.
 - Data can be exported to Microsoft Excel or Microsoft Word by using the various data entities that Talent provides through the Microsoft Office integration.
 
 **Long-term solution**
 
-Additional Power BI options will be available, and more data and entities will be part of Common Data Service for Apps.
+Additional Power BI options will be available, and more data and entities will be part of Common Data Service.

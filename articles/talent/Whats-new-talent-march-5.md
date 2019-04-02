@@ -39,7 +39,7 @@ This topic describes features that are either new or changed in Talent
 
 ### Extending option sets in Attract
 
-In Attract, there are multiple fields that are option sets within the Common Data Service (CDS). New capabilities have been introduced to extend the option sets, beginning with the **Rejection** reason field, **Employment type** field, and **Seniority type** field.
+In Attract, there are multiple fields that are option sets within the Common Data Service. New capabilities have been introduced to extend the option sets, beginning with the **Rejection** reason field, **Employment type** field, and **Seniority type** field.
 
 > [!IMPORTANT]
 > The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** fields on the **Job details** page. The default values in these fields are supported by LinkedIn and are displayed when the job is posted. If you are posting jobs to LinkedIn and you modify the existing option set values for these fields, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.
@@ -74,8 +74,8 @@ With this change, when requesting changes to existing positions, the payroll fie
 ### Other miscellaneous bug fixes
 Other minor bug fixes are included with this release.
 
-### Upgrade to CDS for Apps
-Deadlines to upgrade to CDS for Apps are quickly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service for Apps](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### Upgrade to Common Data Service
+Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## Coming soon
 
