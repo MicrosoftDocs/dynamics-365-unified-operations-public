@@ -5,7 +5,7 @@ title: Source candidates by using talent pools
 description: This topic explains how to create and set up talent pools in Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -39,7 +39,7 @@ Recruiters and hiring managers can organize their candidates using the Talent po
 
 ## Create and share a talent pool
 
-Any user who has the ecruiter, hiring manager, or Attract administrator role can create talent pools. The owner of a talent pool can also share that pool with other users so that groups of users, especially recruiters, can look at a shared pool of candidates.
+Any user who has the recruiter, hiring manager, or Attract administrator role can create talent pools. The owner of a talent pool can also share that pool with other users so that groups of users, especially recruiters, can look at a shared pool of candidates.
 
 Contributors to a talent pool can view the list of candidates in that pool. They can also add candidates to the pool or remove candidates from it.
 
@@ -49,7 +49,7 @@ Follow the steps below to create and share a talent pool.
 
     The **My talent pools** tab shows all the talent pools that you have access to, with details about each. The details include the owner of the pool and the number of candidates in it.
 
-1. In the upper right, select **+ New** to open the **Create talent pool** dialog box.
+1. In the upper-right of the page, select **New** to open the **Create talent pool** dialog box.
 1. Enter a unique name for the talent pool.
 1. To add people as contributors to the pool, find their names by using the people picker, and then add them to the list. You can share a talent pool only with users who have the recruiter, hiring manager, or Attract administrator role.
 1. Select **Add** to create the talent pool.
@@ -91,15 +91,15 @@ Talent pools allow you to view a candidate's profile, LinkedIn information, rela
 >[!NOTE]
 > When you add new candidates or applicants, the new additions can take up to 15 minutes to be indexed for search.
 
-With the improved search experience, you can search through all candidate documents and filter by silver medalists, sources, skills, education, and more. In previous versions, you had to specify the entity you wanted to search through, but Attract can now search all candidate-related fields and rank the results intelligently.
+With the improved search experience, you can search through all candidate documents and filter by silver medalists, sources, skills, education, and more. In previous versions, you had to specify the entity you wanted to search through. Attract can now search all candidate-related fields and rank the results.
 
-1. To start a new search over the candidate database, enter the text you want to search for in the search box in the **Talent pools** tab. 
+1. To start a new search through the candidate database, enter the text that you want to search for in the search box on the **Talent pools** tab. 
 
-You can type the candidate's name or any attributes you're looking for. Separate attributes with a space.
+You can type the candidate's name or any attributes that you're looking for. To separate attributes, use a space.
 
-You can narrow down your results either by changing your search query or by using the smart filters on the left side of the page.
+You can narrow your results either by changing your search query or by using the smart filters on the left side of the page.
 
-The search results show highlights for the various attributes that matched your search query. Click on any candidate you're interested in to view their profile.
+The search results show highlights for the various attributes that matched your search query. Select any candidate that you're interested in to view their profile.
 
 ### Syntax highlights 
 
@@ -109,9 +109,9 @@ The search results show highlights for the various attributes that matched your 
 | “”       | Searches for an exact match                                | Input: “Microsoft” <br></br> Result: All records containing “Microsoft”                    |
 
 >[!WARNING]
-> Don't disable relevance search for your Common Data Service instance. This will disable the search experience in Attract.
+> Don't turn off relevance search for your Common Data Service instance. This will disable the search experience in Attract.
 
-All users have a common view of candidate profiles. The **Profile** tab shows any information about skills, work experience, and education the candidate provided as part of their applications via the career portal.
+All users have a common view of candidate profiles. The **Profile** tab shows any information about skills, work experience, and education that the candidate provided as part of their applications using the career portal.
 
 - You can view the contact details for the candidate. You can also edit or update the information as you require by using the **Edit details** button.
 
@@ -131,7 +131,7 @@ From the search results or a talent pool, you can push a candidate to any active
 
 1. Find the candidate by using the search option, and then open his or her profile. Alternatively, open the talent pool from the **My talent pools** tab, search for the candidate in your talent pool, and then open his or her profile.
 
-1. On the candidate's profile page, select **+ Add to job** in the upper right. 
+1. On the candidate's profile page, select **Add to job** in the upper right. 
      
      A list of jobs that you belong to the hiring team for, as either a recruiter or a hiring manager, is shown.
 
