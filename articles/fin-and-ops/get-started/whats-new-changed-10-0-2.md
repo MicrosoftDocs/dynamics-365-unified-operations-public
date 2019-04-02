@@ -44,6 +44,10 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 <enter new feature description here>
   
+## Bank foreign currency revaluation
+
+As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on). The bank foreign currency revaluation feature can be used to revalue one or more bank accounts. The feature is also a global feature. Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.
+  
 ## Create project-based sales orders for projects with a funding source of type "Grant"
 
 This feature provides support for the creation of project-based sales orders for time and material projects funded by a grant on the related project contract. The customer assigned as the contact for the grant will be the customer on the sales order.
