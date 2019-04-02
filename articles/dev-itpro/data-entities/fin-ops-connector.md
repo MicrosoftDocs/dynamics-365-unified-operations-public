@@ -42,7 +42,7 @@ We recommend that you read the following topics as a prerequisite to familiarize
 - [Recurring integrations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## Triggers
-Business events in Finance and Operations are exposed via the trigger *When a business event occurs*. This is explained in detail in the documentation about [Business events in Microsoft Flow](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow). Business events are explained in detail in the documentation about [Business events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+Business events in Finance and Operations are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/home-page).
 
 ## Actions
 
