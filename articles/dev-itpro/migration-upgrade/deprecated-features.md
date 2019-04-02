@@ -694,6 +694,17 @@ In Application Integration Framework (AIF), data can be exchanged with external 
 | **Product areas affected**         | AxDs, AxBCs, and AIF   |
 | **Status**                         | Removed as of Dynamics AX 7.0.   |
 
+### Billing code rate scripts
+
+Billing scripts were used to calculate billing rates for billing codes. This scripts required custom development in the C Sharp or Visual Basic programming language. In the current version of Dynamics AX, the **billing code rate scripts** are not supported.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The support for the custom C Sharp or Visual Basic scripts was not added in Dynamics AX 7.0. |
+| **Replaced by another feature?**   | No                                                                                      |
+| **Product areas affected**         | Public sector, Accounts receivable                                    |
+| **Status**                         | Removed as of Dynamics AX 7.0.                                                          |
+
 ### BOMs without BOM versions
 
 When the **BOM versions** configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs. In the current version of Dynamics AX, the **BOM versions** configuration key can't be disabled.
