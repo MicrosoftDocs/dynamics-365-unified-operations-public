@@ -5,7 +5,7 @@ title: Add extension properties to customer entities
 description: This tutorial shows how to use extension properties to extend an entity. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/17/2017
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 # Add extension properties to customer entities
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
 
 This tutorial shows how to use extension properties to extend an entity. 
 
