@@ -41,7 +41,10 @@ We recommend that you read the following topics as a prerequisite to familiarize
 - [Open Data Protocol (OData)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
 - [Recurring integrations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
-## Actions in Dynamics 365 for Finance and Operations
+## Triggers
+Business events in Finance and Operations are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+
+## Actions
 
 This section describes the actions that are available in the Dynamics 365 for Finance and Operations connector.
 
