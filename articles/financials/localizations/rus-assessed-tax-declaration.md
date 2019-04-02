@@ -33,104 +33,67 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Assessed tax declaration
-========================
+According to the tax code of the Russian Federation, realty assetsare subject to assessed tax.
 
-According to the tax code of the Russian Federation, realty assetsare subject to
-assessed tax.
+The tax period for assessed tax is one year. The reporting periods are the first quarter (three months, the second quarter (six months or half year), and the third quarter (nine months).
 
-The tax period for assessed tax is one year. The reporting periods are the first
-quarter (three months, the second quarter (six months or half year), and the
-third quarter (nine months).
+At the end of the tax period, a company must report an assessed tax declaration. At the end of each reporting period, the company must report an assessed tax advance payments calculation declaration.
 
-At the end of the tax period, a company must report an assessed tax declaration.
-At the end of each reporting period, the company must report an assessed tax
-advance payments calculation declaration.
+For most realty types, the assessed tax declaration and the assessed tax advance payments calculation should be submitted to the tax authority where the realty is located. In this case, the code **281** should be entered for the **at place of** attribute. The greatest taxpayers can submit declarations to the tax authority where the organization is registered as a greatest taxpayer. In this case, the code **215** should be entered for the **at place of** attribute.
 
-For most realty types, the assessed tax declaration and the assessed tax advance
-payments calculation should be submitted to the tax authority where the realty
-is located. In this case, the code **281** should be entered for the **at place
-of** attribute. The greatest taxpayers can submit declarations to the tax
-authority where the organization is registered as a greatest taxpayer. In this
-case, the code **215** should be entered for the **at place of** attribute.
+The tax base for the calculation of assessed tax is either the annual average cost of the realty asset or the cadastral cost of the realty asset.
 
-The tax base for the calculation of assessed tax is either the annual average
-cost of the realty asset or the cadastral cost of the realty asset.
+The annual average cost is calculated as the sum of residual values (net book values) for the realty fixed asset on the first day of each month of the tax (or reporting) period, and on the first day of the month after the tax (or reporting) period. This sum is then divided by the number of months in the tax period plus one. Realty assets that are taxed at the annual average cost are reported in section 2 of the assessed tax declaration.
 
-The annual average cost is calculated as the sum of residual values (net book
-values) for the realty fixed asset on the first day of each month of the tax (or
-reporting) period, and on the first day of the month after the tax (or
-reporting) period. This sum is then divided by the number of months in the tax
-period plus one. Realty assets that are taxed at the annual average cost are
-reported in section 2 of the assessed tax declaration.
-
-The cadastral cost is defined by cadastral authorities and should be specified
-by the user on the fixed asset card. Realty assets that are taxed at the
-cadastral cost are reported in section 3 of the assessed tax declaration.
+The cadastral cost is defined by cadastral authorities and should be specified by the user on the fixed asset card. Realty assets that are taxed at the cadastral cost are reported in section 3 of the assessed tax declaration.
 
 This topic explains how to perform the following tasks:
 
 1.  [Set up assessed tax](#set-up-assessed-tax)
 
-2.  [Create a realty asset and set up parameters for assessed tax
-    calculation](#create-a-realty-asset-and-set-up-parameters-for-assessed-tax-calculation)
+2.  [Create a realty asset and set up parameters for assessed tax calculation](#create-a-realty-asset-and-set-up-parameters-for-assessed-tax-calculation)
 
 3.  [Calculate assessed tax registers](#calculate-assessed-tax-registers)
 
-4.  [Generate an assessed tax declaration and an assessed tax advance payments
-    calculation](#generate-an-assessed-tax-declaration-and-an-assessed-tax-advance-payments-calculation)
+4.  [Generate an assessed tax declaration and an assessed tax advance payments calculation](#generate-an-assessed-tax-declaration-and-an-assessed-tax-advance-payments-calculation)
 
-5.  [Create and post assessed tax ledger
-    transactions](#generate-an-assessed-tax-declaration-and-an-assessed-tax-advance-payments-calculation)
+5.  [Create and post assessed tax ledger transactions](#generate-an-assessed-tax-declaration-and-an-assessed-tax-advance-payments-calculation)
 
-Set up assessed tax
--------------------
+## Set up assessed tax
 
 Here is an overview of the steps for setting up assessed tax:
 
 1.  [Set up assessed tax codes and rates](#set-up-assessed-tax-codes-and-rates)
 
-2.  [Set up budget revenue codes for assessed
-    tax](#set-up-budget-revenue-codes-for-assessed-tax)
+2.  [Set up budget revenue codes for assessed tax](#set-up-budget-revenue-codes-for-assessed-tax)
 
-3.  [Assign a budget revenue code to a sales tax
-    code](#assign-a-budget-revenue-code-a-to-sales-tax-code)
+3.  [Assign a budget revenue code to a sales tax code](#assign-a-budget-revenue-code-a-to-sales-tax-code)
 
-4.  [Set up methods for assessed tax base
-    calculation](#set-up-methods-of-assessed-tax-base-calculation)
+4.  [Set up methods for assessed tax base calculation](#set-up-methods-of-assessed-tax-base-calculation)
 
 5.  [Set up tax allowances](#set-up-tax-allowances)
 
-6.  [Assign tax allowances to a sales tax code as a reduction of the tax rate
-    and a reduction of the tax
+6.  [Assign tax allowances to a sales tax code as a reduction of the tax rate and a reduction of the tax
     amount](#assign-tax-allowances-to-a-sales-tax-code-as-a-reduction-of-the-tax-rate-and-a-reduction-of-the-tax-amount)
 
-7.  [Set up the territory code (OKTMO code) of the legal
-    entity](#set-up-the-territory-code-oktmo-code-of-the-legal-entity)
+7.  [Set up the territory code (OKTMO code) of the legal entity](#set-up-the-territory-code-oktmo-code-of-the-legal-entity)
 
-8.  [Set up tax authorities and related OKTMO
-    codes](#set-up-tax-authorities-and-related-oktmo-codes)
+8.  [Set up tax authorities and related OKTMO codes](#set-up-tax-authorities-and-related-oktmo-codes)
 
-9.  [Optional: Set up company divisions, their registration reason codes (KPP),
-    and their OKTMO
+9.  [Optional: Set up company divisions, their registration reason codes (KPP), and their OKTMO
     codes](#optional-set-up-company-divisions-their-registration-reason-codes-kpp-and-their-oktmo-codes)
 
-10. [Set up the organization's locations and assign them to company
-    divisions](#set-up-the-organizations-locations-and-assign-them-to-company-divisions)
+10. [Set up the organization's locations and assign them to company divisions](#set-up-the-organizations-locations-and-assign-them-to-company-divisions)
 
-11. [Set up territories for distributed realty
-    assets](#set-up-territories-for-distributed-realty-assets)
+11. [Set up territories for distributed realty assets](#set-up-territories-for-distributed-realty-assets)
 
 12. [Set up railway assets factors](#set-up-railway-assets-factors)
 
-13. [Set up Fixed assets parameters for posting assessed
-    tax](#set-up-fixed-assets-parameters-for-posting-assessed-tax)
+13. [Set up Fixed assets parameters for posting assessed tax](#set-up-fixed-assets-parameters-for-posting-assessed-tax)
 
-14. [Set up the journal for posting assessed
-    tax](#set-up-the-journal-for-posting-assessed-tax)
+14. [Set up the journal for posting assessed tax](#set-up-the-journal-for-posting-assessed-tax)
 
-15. [Set up a posting group for assessed tax
-    postings](#set-up-a-posting-group-for-assessed-tax-postings)
+15. [Set up a posting group for assessed tax postings](#set-up-a-posting-group-for-assessed-tax-postings)
 
 ### Set up assessed tax codes and rates
 
@@ -142,15 +105,13 @@ Here is an overview of the steps for setting up assessed tax:
 
 4.  Specify the settlement period and the ledger posting group.
 
-5.  On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code**
-    group, select **Values** to open the **Sales tax code values** page.
+5.  On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **Values** to open the **Sales tax code values** page.
 
 6.  In the **Value** field, specify the tax rate for the assessed tax.
 
 ### Set up budget revenue codes for assessed tax
 
-1.  Go to **Cash and bank management \> Setup \> Payment order setup \> Budget
-    revenue classification**.
+1.  Go to **Cash and bank management \> Setup \> Payment order setup \> Budget revenue classification**.
 
 2.  Create a budget revenue code for assessed tax.
 
@@ -764,21 +725,12 @@ Generate an assessed tax declaration and an assessed tax advance payments calcul
     the latest versions of the Electronic reporting (ER) configurations for the
     assessed tax declaration.
 
->   For example, to generate the assessed tax declaration for the year 2019
->   reporting period, download the latest versions of the following
->   configurations:
-
--   Assets declarations model
-
--   Property tax declaration model mapping
-
--   Property tax advance calculation format 5.05
-
--   Property tax declaration format 5.05
-
->   For more information, see [Download Electronic reporting configurations from
->   Lifecycle
->   Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+>   For example, to generate the assessed tax declaration for the year 2019 reporting period, download the latest versions of the following configurations:
+> -   Assets declarations model
+> -  Property tax declaration model mapping
+> -   Property tax advance calculation format 5.05
+> -  Property tax declaration format 5.05
+>   For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 1.  You can upload Data management package settings to work with the assessed
     tax declaration. Follow these steps:
