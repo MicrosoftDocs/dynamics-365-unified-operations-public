@@ -67,7 +67,7 @@
       href: modular-app-tech-faq.md
     - name: Embed PowerApps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Core HR and Common Data Service for Apps
+    - name: Core HR and Common Data Service
       href: CoreHREntities.md
     - name: Access preview features
       href: access-preview-feature.md
@@ -339,7 +339,7 @@
       href: save-play-task-guides-LCS.md
     - name: Access to private addresses by security role
       href: security-roles-addresses.md
-    - name: Talent doesn't appear among the Microsoft Dynamics 365 apps (CDS1.0)
+    - name: Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)
       href: talent-not-in-home-CDS.md
     - name: User can access Core HR but not the Onboard or Attract app
       href: user-access-core-hr.md

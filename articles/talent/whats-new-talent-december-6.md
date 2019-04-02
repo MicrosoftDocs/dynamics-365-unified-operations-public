@@ -139,7 +139,7 @@ The Workers to Work task needs the following mappings updated.
 
 The Gender field transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
-| CDS Value   | Finance and Operations value |
+| Common Data Service Value   | Finance and Operations value |
 | ------------|------------------ -----------|
 | 75440000    | Male                         |
 | 75440001    | Female                       |
