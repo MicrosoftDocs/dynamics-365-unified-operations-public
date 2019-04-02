@@ -140,6 +140,7 @@ The following fiscal integration samples are currently available in the Retail S
 - [Fiscal printer integration sample for Italy](emea-ita-fpi-sample.md)
 - [Fiscal printer integration sample for Poland](emea-pol-fpi-sample.md)
 - [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md)
+- [Fiscal registration service integration sample for Czech Republic](emea-cze-fi-sample.md)
 
 The following fiscal integration functionality is also available in the Retail SDK but doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
 

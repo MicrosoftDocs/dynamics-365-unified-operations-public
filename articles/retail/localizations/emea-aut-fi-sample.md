@@ -154,27 +154,27 @@ Add the following POS labels to the **POS** section of **Language text** from th
 
 | Language ID | Text ID | Text                      |
 |-------------|---------|---------------------------|
-| en-US       | 103174  | QR Code                   |
-| en-US       | 103175  | Continuous Number         |
-| en-US       | 103176  | Tax Retail Print Code     |
-| en-US       | 103177  | Total (sales)             |
-| en-US       | 103178  | Total Tax (sales)         |
-| en-US       | 103179  | Total Include Tax (sales) |
-| en-US       | 103180  | Tax Amount (sales)        |
-| en-US       | 103181  | Tax Basis (sales)         |
+| en-US       | 900001  | QR Code                   |
+| en-US       | 900002  | Continuous Number         |
+| en-US       | 900003  | Tax Retail Print Code     |
+| en-US       | 900004  | Total (sales)             |
+| en-US       | 900005  | Total Tax (sales)         |
+| en-US       | 900006  | Total Include Tax (sales) |
+| en-US       | 900007  | Tax Amount (sales)        |
+| en-US       | 900008  | Tax Basis (sales)         |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
 | Name                 | Type    | Caption text ID |
 |----------------------|---------|-----------------|
-| QRCODE               | Receipt | 103174          |
-| CONTINUOUSNUMBER     | Receipt | 103175          |
-| RETAILPRINTCODE      | Receipt | 103176          |
-| SALESTOTAL           | Receipt | 103177          |
-| SALESTOTALTAX        | Receipt | 103178          |
-| SALESTOTALINCLUDETAX | Receipt | 103179          |
-| SALESTAXAMOUNT       | Receipt | 103180          |
-| SALESTAXBASIS        | Receipt | 103181          |
+| QRCODE               | Receipt | 900001          |
+| CONTINUOUSNUMBER     | Receipt | 900002          |
+| RETAILPRINTCODE      | Receipt | 900003          |
+| SALESTOTAL           | Receipt | 900004          |
+| SALESTOTALTAX        | Receipt | 900005          |
+| SALESTOTALINCLUDETAX | Receipt | 900006          |
+| SALESTAXAMOUNT       | Receipt | 900007          |
+| SALESTAXBASIS        | Receipt | 900008          |
 
 ### Configure receipt formats
 
@@ -370,7 +370,7 @@ The Hardware station extension components are included in the Hardware station s
 To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSampleAustria.xml**.
+2. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
 3. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configurations. The configuration files are located under **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
 
     - DocumentProviderEFRSampleAustria.xml
@@ -379,7 +379,7 @@ To enable the registration process, follow these steps to set up Retail Headquar
 4. Go to **Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
 5. Go to **Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
 6. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create two new fiscal connector groups, one for each connector functional profile that you created earlier.
-7. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, and select both fiscal connector groups that you created earlier.
+7. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, two fiscal registration process steps, and select the fiscal connector groups that you created earlier.
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. To enable registration of non-fiscal events on the POS, on the **Functions** FastTab, under **POS**, set the **Audit** option to **Yes**.
 9. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 10. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.

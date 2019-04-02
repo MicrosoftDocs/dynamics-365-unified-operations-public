@@ -44,7 +44,7 @@ The Talent to Finance and Operations solution provides the following types of da
 
 ## System requirements for Talent
 The integration solution requires the following versions of the Talent and Finance and Operations apps. 
-- Dynamics 365 for Talent on CDS for Apps.
+- Dynamics 365 for Talent on Common Data Service.
 - Dynamics 365 for Finance and Operations version 7.2 and later.
 
 ## Template and tasks
@@ -55,7 +55,7 @@ To access the template, do the following.
 
 The following template is used to synchronize records from Talent to Finance and Operations.
 
-- **Name of the template in Data integration:** Core HR (Talent CDS to Fin and Ops)
+- **Name of the template in Data integration:** Core HR (Talent Common Data Service to Finance and Operations)
 
   > [!NOTE]
   > The name of the task contains the entities used in each application. The source (Talent) is on the left and the destination
@@ -82,14 +82,14 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Job Functions to Compensation Job Function
 
-| CDS entity (source)                 | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                 | Finance and Operations entity (destination) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Function Name)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### Departments to Operating Unit
 
-| CDS entity (source)                           | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                           | Finance and Operations entity (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -98,7 +98,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Job Types to Compensation Job Type
 
-| CDS entity (source)                   | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                   | Finance and Operations entity (destination) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
@@ -106,7 +106,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Jobs to Jobs
 
-| CDS entity (source)                                           | Finance and Operations entity (destination)           |
+| Common Data Service entity (source)                                           | Finance and Operations entity (destination)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -116,7 +116,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Jobs to Job Detail
 
-| CDS entity (source)                                             | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                                             | Finance and Operations entity (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -127,7 +127,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Position Types to Position Type
 
-| CDS entity (source)                       | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                       | Finance and Operations entity (destination) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -135,13 +135,13 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Job Positions to Base Position
 
-| CDS entity (source)                           | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                           | Finance and Operations entity (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
 
 ### Job Positions to Position Details
 
-| CDS entity (source)                                                      | Finance and Operations entity (destination)       |
+| Common Data Service entity (source)                                                      | Finance and Operations entity (destination)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Job (Name))                                        | JOBID (JOBID)                                    |
@@ -155,7 +155,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Job Positions to Position Durations
 
-| CDS entity (source)                             | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                             | Finance and Operations entity (destination) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
 | Calculated   Activation (Calculated Activation) | VALIDFROM (VALIDFROM)                        |
@@ -163,7 +163,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Job Positions to Position Hiearchies
 
-| CDS entity (source)                                                                           | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                                                                           | Finance and Operations entity (destination) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -173,7 +173,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 
 ### Workers to Worker
-| CDS entity (source)                           | Finance and Operations entity (destination)       |
+| Common Data Service entity (source)                           | Finance and Operations entity (destination)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -192,7 +192,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Employments to Employment
 
-| CDS entity (source)                                             | Finance and Operations entity (destination) |
+| Common Data Service entity (source)                                             | Finance and Operations entity (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -202,7 +202,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Employments to Employment Detail
 
-| CDS entity (source)                                             | Finance and Operations entity (destination)   |
+| Common Data Service entity (source)                                             | Finance and Operations entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -220,7 +220,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Position Worker Assignment to Position Worker Assignments
 
-| CDS entity (source)                                             | Finance and Operations entity (destination)   |
+| Common Data Service entity (source)                                             | Finance and Operations entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
@@ -229,7 +229,7 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 
 ### Worker Addresses to Worker Postal Address V2
 
-| CDS entity (source)                                             | Finance and Operations entity (destination)   |
+| Common Data Service entity (source)                                             | Finance and Operations entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |

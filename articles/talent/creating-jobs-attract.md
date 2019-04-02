@@ -48,7 +48,7 @@ The **Job details** tab contains details about the job's responsibilities and at
 
 By default, the **Number of openings** field is set to **1**. However, you can change the value. When an offer has been prepared for a job, the value of the **Number of openings available** field is decremented.
 
-If position management has been turned on in the Admin Center, the **Update positions** lookup is available. This lookup reads the JobPosition entity in Common Data Service for Apps and returns a list of positions that can be selected for the job. If the number of positions that you select exceeds the number of open positions, you receive a warning. You also receive a warning if a position is used on multiple jobs.
+If position management has been turned on in the Admin Center, the **Update positions** lookup is available. This lookup reads the JobPosition entity in Common Data Service and returns a list of positions that can be selected for the job. If the number of positions that you select exceeds the number of open positions, you receive a warning. You also receive a warning if a position is used on multiple jobs.
 
 > [!NOTE]
 > Position management is available with the Comprehensive Hiring Add-on.

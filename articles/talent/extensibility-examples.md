@@ -9,7 +9,7 @@ ms.date: 03/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;CDS
+ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 # optional metadata
 
 ms.search.form: 
@@ -44,7 +44,7 @@ This topic describes some examples of extensibility scenarios for Microsoft Dyna
 
 ## Flow – Form Connect
 
-The **Flow – Form Connect** template can be used to read data from Microsoft Forms and store it in a Common Data Service for Apps entity.
+The **Flow – Form Connect** template can be used to read data from Microsoft Forms and store it in a Common Data Service entity.
 
 This template can be extended so that it can be used for other scenarios. Here are some examples:
 
@@ -55,7 +55,7 @@ This template can be extended so that it can be used for other scenarios. Here a
 
 In Microsoft Dynamics 365: Attract, forms can appear in Candidate portal, and candidates can fill in details. Forms can also be embedded as activities in a job template.
 
-When a candidate submits a form, Microsoft Flow captures the form submission, reads the data, and stores it in the Common Data Service for Apps entity.
+When a candidate submits a form, Microsoft Flow captures the form submission, reads the data, and stores it in the Common Data Service entity.
 
 To download the **Flow – Form Connect** template and Custom Entity Structure, go to [Flow – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
 
@@ -71,7 +71,7 @@ To download the **Initiate and Extract Parameters Passed to Powerapps** template
 
 ## Integration with Office 365
 
-The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract clock-in and clock-out details and exception recordings. Clock-in and Clock-out details are stored in custom Common Data Service for Apps entities. The assumption is that these details are filled in from third-party systems via integration.
+The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract clock-in and clock-out details and exception recordings. Clock-in and Clock-out details are stored in custom Common Data Service entities. The assumption is that these details are filled in from third-party systems via integration.
 
 This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events.
 
@@ -83,7 +83,7 @@ The **Flow – Email Notification** template can be used for email notification 
 
 This template can be extended to track changes to the candidate stage throughout the recruiting process, and to send notifications to the hiring team and candidate.
 
-In general, for entities that are stored in Common Data Service for Apps, flows can be set up to send notifications for events that occur in Core HR, Attract, or Dynamics 365 Talent: Onboard.
+In general, for entities that are stored in Common Data Service, flows can be set up to send notifications for events that occur in Core HR, Attract, or Dynamics 365 Talent: Onboard.
 
 To download the **Flow – Email Notification** template, go to [Flow – Email Notification](https://go.microsoft.com/fwlink/?linkid=2082103) on the Microsoft Download Center.
 
@@ -91,13 +91,13 @@ To download the **Flow – Email Notification** template, go to [Flow – Email 
 
 The **Flow – SQL Connect and execute** template connects to Microsoft SQL Server and enables SQL queries to be run.
 
-Although this template is designed to read and update SQL tables, it can be extended so that it can be used for other scenarios. For example, it can be used to fill a staging table in Common Data Service for Apps with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
+Although this template is designed to read and update SQL tables, it can be extended so that it can be used for other scenarios. For example, it can be used to fill a staging table in Common Data Service with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
 
 To download the **Flow – SQL Connect and execute** template, go to [Flow – SQL Connect and execute](https://go.microsoft.com/fwlink/?linkid=2081789) on the Microsoft Download Center.
 
 ## Flow – SharePoint Integration
 
-The **Flow – SharePoint Integration** template can be used to read data from a Microsoft SharePoint list, compare the list with field values for any Common Data Service for apps entity, and send the results of the comparison as a notification email. 
+The **Flow – SharePoint Integration** template can be used to read data from a Microsoft SharePoint list, compare the list with field values for any Common Data Service entity, and send the results of the comparison as a notification email. 
 
 An organization might have a set of skills that it urgently requires. These skills can be stored in SharePoint as a SharePoint list. When a candidate applies for any job that a set of required skills is listed for, if there is a significant match between the candidate's skill and the skills that are stored in SharePoint, a notification email is sent. In this way, positions that are urgently required are filled faster, because the notifications help recruiters reach out and cross-hire candidates throughout the organization.
 
