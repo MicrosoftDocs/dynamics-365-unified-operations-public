@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
+
 This tutorial shows how to use extension properties to extend an entity. 
 
 In this tutorial, an entity is extended in Microsoft 365 for Retail, and persisted in both Retail and the channel databases. The point of sale (POS) user interface (UI) then provides access to the value. The new value is also written synchronously to Dynamics AX via the Commerce Data Exchange (CDX) transaction service. No customizations are required for the commerce runtime or Retail Server, because extension properties flow automatically. Changes are required in forms, tables, the Real-time Service (RTS) client, CDX, the channel database, and the POS (both Retail Modern POS and Cloud POS). This tutorial doesn't support offline mode.
