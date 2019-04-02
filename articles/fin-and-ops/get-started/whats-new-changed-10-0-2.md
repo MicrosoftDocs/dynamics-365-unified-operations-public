@@ -44,6 +44,12 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 <enter new feature description here>
   
+## Recovering vendor invoices that are in use
+
+You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited. You can open this page from the **Periodic task** navigation or a tile on the **Vendor invoice entry** workspace. After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.
+
+For more information, see [Vendor invoices overview](../../financials/accounts-payable/vendor-invoices-overview.md).
+  
 ## Bank foreign currency revaluation
 
 As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on). The bank foreign currency revaluation feature can be used to revalue one or more bank accounts. The feature is also a global feature. Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.
