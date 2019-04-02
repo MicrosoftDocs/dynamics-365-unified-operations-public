@@ -37,7 +37,6 @@ You can add custom fields to pages in Dynamics 365 for Talent: Core HR. For more
 The following entities in Common Data Service support custom fields created in Core HR:
 
 - Worker
-- Department
 - Ethnic origin
 - Veteran status
 - Language code
