@@ -5,7 +5,7 @@ title: Prepare Finance and Operations for integration with MTD for VAT (United K
 description: This topic walks you through the process of setting up Microsoft Dynamics 365 Finance and Operations for Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/22/2019
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -151,7 +151,7 @@ Before you start to use the **VAT Declaration JSON (UK)** and **VAT Declaration 
 To set up the **ReportFieldLookup** application-specific parameter in the system, open the **Electronic reporting** workspace, and select the **VAT Declaration JSON (UK)** format in the configuration tree. Then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and select the version of the format that you want to use. If you want to use the example of this setup, select **Import** on the Action Pane, and select the file that you previously downloaded. If you want to manually define conditions, select **ReportFieldLookup** on **Lookups** FastTab, and define criteria on the **Conditions** FastTab. The example file can also be used as a starting point for setting up conditions. When the setup of conditions is completed, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 > [!IMPORTANT]
-> We recommend that you set up the **Other** value as the last condition in the list. 'This value isn't used in **VAT Declaration JSON (UK)** format but must be set up **"Not blank"** for both columns of criteria.
+> We recommend that you set up the **Other** value as the last condition in the list. This value isn't used in **VAT Declaration JSON (UK)** format but must be set up **"Not blank"** for both columns of criteria.
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from one report and import it into another, provided that both reports have the same structure of lookup fields. When your setup is ready, export it, and then import it into the **VAT Declaration Excel (UK)** format.
 
