@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-Correspondence of accounts is an approach to continuous and interrelated registration of business transactions in corresponding general ledger accounts. It's based on the double-entry bookkeeping system. Ledger vouchers are represented by using the Russian accounting standards with corresponding accounts.
+Correspondence of accounts is an approach to continuous and interrelated registration of business transactions in corresponding general ledger accounts. It's based on the double-entry bookkeeping system. Ledger vouchers are represented together with corresponding accounts by using the Russian accounting standards.
 
 You can enter multidimensional transactions in the ledger journals and other modules. In most cases, transactions that are automatically created from other modules are multidimensional. These transactions should be changed to two-dimensional. This change might involve splitting ledger transactions. In this case, the following correspondence cases are specified.
 
@@ -98,7 +98,7 @@ You can enter multidimensional transactions in the ledger journals and other mod
 </tbody>
 </table>
 
-When the account correspondence mechanism is turned on, each new accounting transaction that is created consists of a set of two-way corresponding transactions. When the accounting transactions are posted, the corresponding relationship is automatically defined. If the mechanism isn't turned on, no correspondence relationships are created between transactions.
+When the transactions correspondence mechanism is turned on, each new accounting transaction that is created consists of a set of two-way corresponding transactions. When the accounting transactions are posted, the corresponding relationship is automatically defined. If the mechanism isn't turned on, no correspondence relationships are created between transactions.
 
 If any non-corresponding accounts exist before the account correspondence mechanism is turned on, they aren't automatically linked. You must manually define relationships for the transactions.
 
@@ -129,11 +129,10 @@ Use the manual transaction correspondence function to define a relationship betw
 
     - To correspond selected debit and credit transactions for the selected voucher, select a row in the **Debit transactions** grid, select a row in the **Credit transactions** grid, and then select the **\<-\>** button to correspond the transactions.
 
-        <!--add here screenshot Correspondence-Offset from WI-->
-
     - To automatically correspond all credit and debit transactions for the selected voucher, select the **\<\<-\>\>** button.
-
     Transactions that have been corresponded are moved to the **Details** grid.
+    
+ <!--add here screenshot Correspondence-Offset from WI-->
 
 7. On the **Offset** FastTab, select **Save** to save the results or **Restore** to cancel the last change.
 8. On the Action Pane, select **Refresh data** to update the data on the **Manual correspondence** page.
