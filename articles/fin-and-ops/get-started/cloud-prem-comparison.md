@@ -61,8 +61,11 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Help | | Yes | No |
 | Human resources | | Yes | Yes |
 | Intelligence | | Yes | Yes |
-| | Electronic reporting (ER) - Integration with LCS | Yes | No |
-| | Electronic reporting (ER) - Integration with SharePoint | Yes | No |
+| | Electronic reporting (ER) | Yes | Yes |
+| | * Integration with LCS | Yes | No |
+| | * Integration with SharePoint | Yes | No |
+| | * Integration with Regulatory Configuration Services (RCS) | Yes | No |
+| | * Uses local file system as storage of ER configurations accessible via ER repositories | No | Yes |
 | | Integration with PowerBI.com | Yes | No |
 | | Analytical workspaces | Yes | No |
 | | Intelligent business process: Recommendations | Yes | No |
