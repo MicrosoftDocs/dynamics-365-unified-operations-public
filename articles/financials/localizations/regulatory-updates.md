@@ -62,7 +62,7 @@ For the the latest regulatory update plans, refer to the the following table.
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) 
 |      May 2019            |   10.0.2      | Brazil      |   SPED ECF Layout 5   |
 |      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
-|      May 2019            |   10.0.2      | Russia      |   New form of declaration on indirect taxes    |
+
 
 ## Additional resources
 - Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (log in required).
