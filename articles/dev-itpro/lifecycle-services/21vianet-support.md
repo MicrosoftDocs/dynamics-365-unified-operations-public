@@ -50,7 +50,7 @@ Dynamics 365 for Finance and Operations provides many self-service support optio
 
 ### Presales support
 
-Pre-sales support phone number: +86 400-089-0365
+Pre-sales support phone number: +86 400-886-6134
 
 Pre-sales support for Finance and Operations provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. 
 
