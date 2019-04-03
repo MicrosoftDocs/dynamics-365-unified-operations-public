@@ -35,14 +35,23 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 ## Introduction
-New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. To this end, new APIs have been added that allow a developer to trigger a feature callout to point out a new capability to the user and optionally provide a hyperlink for the user to learn more about the feature.   
+New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. 
 
-
+To this end, **Feature callouts** are now available to point out a new capability to a user and optionally provide a hyperlink for hte user to learn more about the feature. In this article, the APIs that are used to construct feature callouts are discussed in detail.   
 
 <image>
   
+## The "Got it" button
+When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves off the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again.
+
+## Resetting feature callouts
+Even though the feature callout state is stored in personalization, clearing personalizations will not delete the state of all previously dismissed feature callouts. Instead, a separate actions have been added to reset all feature callouts so that they fire again.  
+
+## Disabling feature callouts 
+  
 ## Implementation details
 The SystemNotificationsWhatsNewManager class contains two variant APIs for triggering a feature callout. 
+
 
 ### SystemNotificationWhatsNewManager::AddWhatsNewWithActionLink() 
 
@@ -68,6 +77,9 @@ Add a feature callout to a control without a "Learn more" link.
 | title         | Provide a (localized) title                                               | 
 | bodyText      | Provide a (localized) description                                         | 
 | targetControl | Provide the name of the control you want to attach the feature callout to | 
+
+### Example
+
 
 
 Notes
