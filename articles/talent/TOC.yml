@@ -103,6 +103,8 @@
       href: working-time-calendars.md
   - name: Staff your organization
     items:
+    - name: Two versions of Attract
+      href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
     - name: Creating a process template in Attract
@@ -138,9 +140,7 @@
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
     - name: Track sources for candidate profiles and applications
-      href: source-tracking.md
-    - name: Attract comprehensive hiring add-on capabilities
-      href: attract-comprehensive-hiring.md
+      href: source-tracking.md    
   - name: Motivate employees
     items:
     - name: Compensation plans
