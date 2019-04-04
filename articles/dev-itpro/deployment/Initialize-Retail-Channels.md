@@ -52,11 +52,21 @@ The request will be completed within five business days.
 
 ## Configure retail channels to use RCSU
 
-1. After Retail Cloud Scale Unit has been deployed, navigate to the HQ client> **Channel Database** form to review that your retail channels are configured to use the database for this Retail Cloud Scale Unit.
+1. After Retail Cloud Scale Unit has been deployed, in the head office client naviate to **Retail> Retail Headquarters > Retail Scheduler setup > Channel database** to review that your retail channels are configured to use the database for this Retail Cloud Scale Unit.
+2. Navigate to each retail channel and select the Channel Profile for the corresponding Retail Cloud Scale Unit. 
 
 ## Deploy additional Retail Cloud Scale Units (Optional)
 
 1. After you have initialized the first Retail Cloud Scale Unit (RCSU), you may optionally deploy 1 additional RCSU. If you need more than 2 RCSUs, please file a support request to increase the limit, stating the number of RCSUs needed, environment name and desired regions.
+
+For each additional RCSU that you deploy, it is also recommended that you create a separate Channel database group for each RCSU. To do this, 
+
+1. In Retail head office, navigate to **Retail> Retail Headquarters > Retail Scheduler setup > Channel database group**
+2. Create a new Channel database group. 
+3. Navigate to the **Retail> Retail Headquarters > Retail Scheduler setup > Channel database** form and select the Channel database that corresponds to the just created RCSU. 
+4. Select Edit and select the just created Channel database group. 
+5. Select Save.
+6. Select **Run Full data sync** for the selected channel database.
 
 ## Additional considerations if you initialize cloud-hosted Retail channel components in an existing environment
 
@@ -81,3 +91,4 @@ Here is what occurs after initialization is completed:
 - The device activation state of all activated POS devices will be preserved. Therefore, the devices won't have to be reactivated.
 - Stand-alone hardware station instances will continue to work.
 - POS channel–side reports will be reset and won't show data from before the initialization.
+- Show journal operation will also be reset and won't show data from before the initialization.
