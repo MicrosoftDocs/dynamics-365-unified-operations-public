@@ -41,7 +41,7 @@ The full version of Attract targets medium to large teams or organizations where
 >[!NOTE]
 >The Attract trial provides the full version of Attract, which contains comprehensive recruiting and hiring capabilities. These include the ability to post jobs to an Attract career site or external recruiting site such as LinkedIn. If you choose Attract Basic, your subscription will include a subset of the capabilities provided in the trial version. 
 
-For more information about pricing and licensing, see the most recent [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf).
+For more information about pricing and licensing, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 >[!WARNING]
 >At this time, you can't migrate data from Attract Basic to the full version of Attract.
