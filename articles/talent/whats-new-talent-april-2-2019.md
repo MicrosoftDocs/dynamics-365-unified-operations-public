@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (April 2, 2019)"
+# What's new or changed in Dynamics 365 for Talent (April 2, 2019)
 
 [!include [banner](includes/banner.md)]
 
