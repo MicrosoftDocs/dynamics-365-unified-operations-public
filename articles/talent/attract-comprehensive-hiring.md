@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 The version of Attract that's right for you depends on your organization's size and needs. Attract Basic provides a subset of Attract's functionality geared towards smaller teams or organizations, where the hiring manager is the primary user.
 
-The full version, Attract, targets medium to large teams or organizations where the recruiter or talent specialist is the primary user. If the full version of Attract better suits your organization's requirements, find a [local Dynamics 365 for Talent partner](https://dynamics.microsoft.com/partners/find-a-partner/) to help you with your needs.
+The full version of Attract targets medium to large teams or organizations where the recruiter or talent specialist is the primary user. If the full version of Attract better suits your organization's requirements, find a [local Dynamics 365 for Talent partner](https://dynamics.microsoft.com/partners/find-a-partner/) to help you with your needs.
 
 >[!NOTE]
 >The Attract trial provides the full version of Attract, which contains comprehensive recruiting and hiring capabilities. These include the ability to post jobs to an Attract career site or external recruiting site such as LinkedIn. If you choose Attract Basic, your subscription will include a subset of the capabilities provided in the trial version. 
