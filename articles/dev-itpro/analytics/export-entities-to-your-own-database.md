@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/21/2019
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -192,7 +192,9 @@ You might face this limitation especially when you try to incrementally export r
 
 ## Troubleshooting
 
-### Incremental push not working properly
+### Incremental push not working correctly
 
-Problem: When a full push occurs for some entity then a large set of records can be seen in BYOD via select statement, but an incremental push results in only a few records in BYOD. It seems like the incremental push deleted all the records and added only the changed records in BYOD.
-Solution: In cases like this it is recommended to disable and re-enable change tracking for the entity in question.  The state of the SQL change tracking tables may not be in the expected state. Also verify that there are no other incremental exports that cover the same tables (DMF, MR, Retail).
+**Issue** - When a full push occurs for some entity then a large set of records can be seen in BYOD using a select statement. However, an incremental push results in only a few records in BYOD. It seems as if the incremental push deleted all the records and added only the changed records in BYOD. 
+
+**Solution** - In cases like this it is recommended to disable and re-enable change tracking for the entity in question. The state of the SQL change tracking tables might not be in the expected state. Also verify that there are no other incremental exports that cover the same tables (DMF, MR, Retail).
+
