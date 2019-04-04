@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (April 2, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 4/2/2019
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -38,16 +38,16 @@ This topic describes features that are either new or changed in Dynamics 365 for
 ## Changes in Attract
 
 ### Approval emails in Attract
-New approval emails improve visibility into the approval process. Emails are sent to approvers when:
+New approval emails improve visibility into the approval process. Emails are sent to approvers when one of the following scenarios occur:
 
-- A requestor submits a job for approval
-- A job is either rejected or approved
-- An approver hasn't acted on an approval request within 24 hours
+- A requestor submits a job for approval.
+- A job is either rejected or approved.
+- An approver hasn't acted on an approval request within 24 hours.
 
 You can customize the content of approval emails with new templates.
 
 ### Application and profile attachments
-Improvements to the **Documents** tab on applications and talent pool profiles show both the document name and the type.
+Improvements to the **Documents** tab on applications and talent pool profiles now display both the document name and the type.
 
 ## Changes in Onboard
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
@@ -61,13 +61,13 @@ In Attract and Onboard, problems logged by end users through the report a proble
 Changes described in this section apply to build number 8.1.2216.
 
 ### Platform update 25
-For more information about platform update 25, see [Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+For more information about Platform update 25, see [Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  Advanced compensation security (fixed and variable)
 In many organizations, compensation and benefits managers might only have access to certain compensation records. These might include records for executives or regional employees. This change allows HR to manage and maintain compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans. These security roles determine access to plans and related employee data, such as salary or bonus records, so that only those roles can process compensation for the employee groups.
 
 ### Upgrade to Common Data Service
-Deadlines to upgrade to Common Data Service are rapidly approaching. Log into the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Common Data Service are rapidly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## In preview
 
@@ -83,4 +83,4 @@ Organizations might require reason codes for specific leave types when employees
 With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
 
 ###  Email support for alerts
-With platform update 25, users can create alert rules that automatically send email notifications to contacts when triggered by an event. 
+With Platform update 25, users can create alert rules that automatically send email notifications to contacts when triggered by an event. 
