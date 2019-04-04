@@ -51,3 +51,10 @@ In the following example, a new field, **MyInventLocationId**, is added to the I
 The following illustration shows the new relation.
 
 ![New relation](media/AddRelationToExistingTable.jpg)
+
+## Troubleshooting
+
+### Navigation property methods not working
+
+Problem: Navigation property methods does not work when a foreign key relation is created via a table extension.The compiler will not allow a call to a navigation method on the extended table.
+Solution: Navigation methods are not supported at this time.
