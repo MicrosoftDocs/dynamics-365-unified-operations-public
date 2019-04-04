@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: andreabichsel
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -42,7 +42,7 @@ New approval emails improve visibility into the approval process. Emails are sen
 
 - A requestor submits a job for approval
 - A job is either rejected or approved
-- If an approver hasn't acted on an approval request within 24 hours
+- An approver hasn't acted on an approval request within 24 hours
 
 You can customize the content of approval emails with new templates.
 
