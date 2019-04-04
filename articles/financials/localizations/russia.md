@@ -79,6 +79,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Reporting
 
 - [Financial reporting](rus-financial-reports.md)
+- [Assessed tax declaration](rus-assessed-tax-declaration.md)
 
 ## Additional resources
 
