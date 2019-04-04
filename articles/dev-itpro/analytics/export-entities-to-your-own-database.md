@@ -189,3 +189,10 @@ Currently, composite entities aren't supported. You must export individual entit
 #### Entities that don't have unique keys can't be exported by using incremental push
 
 You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data into Finance and Operations, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key. Therefore, there is a limitation on incremental push. One workaround is to extend the required entity and define a unique key.
+
+## Troubleshooting
+
+### Incremental push not working properly
+
+Problem: When a full push occurs for some entity then a large set of records can be seen in BYOD via select statement, but an incremental push results in only a few records in BYOD. It seems like the incremental push deleted all the records and added only the changed records in BYOD.
+Solution: In cases like this it is recommended to disable and re-enable change tracking for the entity in question.  The state of the SQL change tracking tables may not be in the expected state. Also verify that there are no other incremental exports that cover the same tables (DMF, MR, Retail).
