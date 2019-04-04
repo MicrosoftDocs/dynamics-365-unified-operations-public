@@ -78,7 +78,7 @@ The full version of Attract contains all of the capabilities of Attract Basic, p
 
 ### Why don't I see all the features that were included in the Attract trial?
 
-The Attract trial includes the full version of Attract. You most likely have Attract Basic, which includes a subset of Attract's features targeted to hiring managers for small teams and organizations.
+The Attract trial showcases the full version of Attract. You most likely have Attract Basic, which includes a subset of Attract's features targeted to hiring managers for small teams and organizations.
 
 ### Why don't I see all the Attract features that my coworker sees?
 
