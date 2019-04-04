@@ -1,0 +1,15 @@
+
+This article details data residency considerations when deploying Retail Cloud Scale Unit.
+
+Overview
+
+When initializing a Retail Cloud Scale Unit, you must select a desired data center location to host this in. You may choose a datacenter location that is in close proximity to the retail channels that you plan to serve using this Retail Cloud Scale Unit. You may reference approximate locations of each datacenter here https://azure.microsoft.com/en-us/global-infrastructure/regions/. You may also reference a web based utility, such as https://azurespeedtest.azurewebsites.net/ and measure latency to Azure datacenters from each store location to make the right choice of datacenter when initializing Retail Cloud Scale Unit.
+
+If you choose to initialize Retail Cloud Scale Unit in a data center which is different than the where your head office is deployed, your data will travel across and reside in these data centers on a periodic basis (also known as data synchronization). The system is pre-configured to transfer the following types of data. You may choose to modify this configuration, so that the system may synchronize a additional or lesser data than what is pre-configured.
+
+The following broad categories of data are pre-configured for synchronization:
+
+1. Products, prices and discounts for channels that are configured to be served by that specific RCSU
+2. Channel configuration data for channels that are configured to be served by that specific RCSU 
+3. Employee details for employee who are configured to work in channels that are configured to be served by that specific RCSU
+4. Customer details for all customers
