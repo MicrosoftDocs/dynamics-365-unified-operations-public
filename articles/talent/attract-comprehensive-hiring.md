@@ -82,4 +82,4 @@ The Attract trial includes the full version of Attract. You most likely have Att
 
 ### Why don't I see all the Attract features that my coworker sees?
 
-It's possible that your coworker is working with a full Attract trial or license, while you're working with Attract Basic.
+It's possible that your coworker is working with a full Attract license or trial, while you're working with Attract Basic.
