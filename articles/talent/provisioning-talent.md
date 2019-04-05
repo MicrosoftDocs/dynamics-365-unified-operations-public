@@ -84,7 +84,7 @@ Use the following guidance when determining which PowerApps environment to deplo
  
    **Default Power Apps environments** Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
    
-   <strong>Test Drive environments</strong> Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
+   **Trial environments** These environments are created with an expiration date and will expire after that time, causing your environment and any Talent instances contained within to be removed automatically.
    
    **Unsupported regions** Currently Talent is only supported in the following regions: United States, Europe, United Kingdom, or Australia.
   
