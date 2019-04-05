@@ -57,7 +57,7 @@ The request will be completed within five business days.
 
 ## Deploy additional Retail Cloud Scale Units (optional)
 
-1. After you have initialized the first Retail Cloud Scale Unit (RCSU), you may optionally deploy 1 additional RCSU. If you need more than 2 RCSUs, please file a support request to increase the limit, stating the number of RCSUs needed, environment name, and desired regions.
+After you have initialized the first Retail Cloud Scale Unit (RCSU), you may optionally deploy 1 additional RCSU. If you need more than 2 RCSUs, please file a support request to increase the limit, stating the number of RCSUs needed, environment name, and desired regions.
 
 For each additional RCSU that you deploy, it is also recommended that you create a separate channel database group for each RCSU. To do this, follow these steps: 
 
