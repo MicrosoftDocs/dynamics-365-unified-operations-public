@@ -72,7 +72,7 @@ This option produces a sales line where the amount == 1,000, because after you s
 
 ## Can I use ATL for tests that run on the empty data set?
 
-The Acceptance test library (ATL) can be used on the empty data set without issues. The automatic setup of prerequisites is done on demand. For example, prerequisites for invoice posting will be set up only during the first call to `salesOrder.postInvoice()`. For more information, see [Ensure](test-data-methods.md#EnsureMethods).
+The Acceptance test library (ATL) can be used on the empty data set without issues. The automatic setup of prerequisites is done on demand. For example, prerequisites for invoice posting will be set up only during the first call to `salesOrder.postInvoice()`. For more information, see [Ensure](test-data-methods.md#ensure-methods).
 
 `Ensure` methods can also be called in the `setUpTestCase` method to improve performance if more than one test in your test class must post invoices.
 
