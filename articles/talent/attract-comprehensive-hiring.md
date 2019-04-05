@@ -61,7 +61,7 @@ Attract Basic is perfect for the hiring manager for a small team or organization
 
 ## Attract
 
-The full version of Attract is the choice for medium or large organizations. Attrace requires the purchase of five or more licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/). Attract contains all of the capabilities of Attract Basic, plus these additional features:
+The full version of Attract is the choice for medium or large organizations. Attract requires the purchase of five or more licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/). Attract contains all of the capabilities of Attract Basic, plus these additional features:
 
 - Job requisition approval flow
 - Organization-level hiring process management
