@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in Dynamics 365 for Retail version 10.0.2
+title: Preview features in Dynamics 365 for Retail version 10.0.2
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
