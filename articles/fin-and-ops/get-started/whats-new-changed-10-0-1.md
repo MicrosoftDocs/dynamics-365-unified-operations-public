@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.1 (April 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April.
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,7 +51,7 @@ For information about the regulatory updates for Finance and Operations, see [Lo
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78).
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.1, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78).
 
 ### Platform update 25
 Microsoft Dynamics 365 for Finance and Operations version 10.0.1 includes Platform update 25. To learn more about Platform update 25, see [Preview features in Finance and Operations platform update 25 (April 2019)](whats-new-platform-25.md).
@@ -68,4 +68,6 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 

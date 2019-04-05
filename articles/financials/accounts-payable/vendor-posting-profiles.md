@@ -3,7 +3,7 @@
 
 title: Vendor posting profiles
 description: Vendor posting profiles control the posting of vendor transactions to the general ledger.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

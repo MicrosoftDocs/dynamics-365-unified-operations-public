@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -271,7 +271,7 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 
 | Flight name                           | Description |
 |---------------------------------------|---------------|
-| DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job. By default, this is OFF. |
+| DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job (supported for BYOD only and not files). By default, this is OFF. |
 | DMFExportToPackageForceSync           | Enables synchronous execution of data package API export. By default, it's asynchronous. |
 | EntityNamesInPascalCaseInXMLFiles     | Enables behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
 | DMFByodMissingDelete                  | Enables the old behavior where under certain conditions, certain delete operations were not synced to BYOD using change tracking. |

@@ -115,7 +115,7 @@
   items:
   - name: Configure and use advanced auto charges
     href: omni-auto-charges.md
-  - name: Proration and grouping of header auto charges
+  - name: Prorate header charges to matching sales lines
     href: pro-rate-charges-matching-lines.md
 - name: Call center
   items:
@@ -273,7 +273,7 @@
     href: price-management.md
   - name: Price adjustments and discounts
     href: price-adjustments-discounts.md
-  - name: Apply multiple Retail discounts to a product
+  - name: Apply multiple discounts to a product
     href: Apply-multiple-retail-discounts.md
   - name: Determine the optimal combination of overlapping discounts
     href: optimal-combination-overlapping-discounts.md
@@ -281,6 +281,8 @@
     href: define-channel-specific-discounts.md
   - name: Options for preventing discounts for retail products
     href: prevent-discounts.md
+  - name: Shipping discount overview
+    href: retail-shipping-discount.md
   - name: Set up coupons for retail sales
     href: retail-coupons.md
 - name: Products and merchandising
@@ -353,6 +355,10 @@
     href: localizations/fiscal-integration-for-retail-channel.md
   - name: Set up fiscal integration for Retail channel
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Austria
+    items:
+    - name: Fiscal registration service integration sample for Austria
+      href: localizations/emea-aut-fi-sample.md
   - name: Eastern Europe
     items: 
     - name: Advance invoices for Retail for Eastern Europe
@@ -365,6 +371,8 @@
       href: localizations/emea-eeu-deployment.md
     - name: Fiscal printer integration sample for Poland
       href: localizations/emea-pol-fpi-sample.md
+    - name: Fiscal registration service integration sample for Czech Republic
+      href: localizations/emea-cze-fi-sample.md
   - name: France
     items:
     - name: Cash register functionality
@@ -476,6 +484,8 @@
       href: retail-components.md
     - name: Retail Server architecture
       href: dev-itpro/retail-server-architecture.md
+    - name: Select an in-store topology
+      href: dev-itpro/retail-in-store-topology.md
     - name: Commerce Data Exchange and retail channel communications
       href: dev-itpro/define-retail-channel-communications-cdx.md
     - name: Retail Modern POS architecture
@@ -561,7 +571,7 @@
     - name: Override POS request handler
       href: dev-itpro/pos-handler.md
     - name: View POS extension package information
-      href: view-pos-extension-package-details.md
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility

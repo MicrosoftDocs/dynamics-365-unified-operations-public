@@ -5,7 +5,7 @@ title: Data task automation
 description: This topic explains how you can use data task automation in Microsoft Dynamics 365 for Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -139,7 +139,7 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 | \<SharedSetup\>   | \<JobDefinition\>                | 1..n                | ID        | The job definition ID is used in the tasks to reference the definition to be used for the data project. |
 | \<JobDefinition\> | \<Operation\>                    | 1..1                | \-        | The operation to be performed is specified by the following values: <br> - Import <br> - Export |
 |                   | \<Truncate\>                     | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Import*. |
-|                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are:<br>- Import async <br>- Export async <br>- Recurring batch: This uses the enqueue/dequeue API’s.|
+|                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are:<br>- Import async <br>- Export async <br>- Recurring batch: This uses the enqueue API. Dequeue API is not supported yet. Package API supports both export and import.|
 |                   | \<ConfigurationOnly\>            | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation. |
 |                   | \<BatchFrequencyInMinutes\>      | 1..1                | \-        | This specifies the frequency in which the batch must be scheduled. This is applicable only when mode is set to *recurring batch*. |
 |                   | \<NumberOfTimesToRunBatch\>      | 1..1                | \-        | This is used to set a limit to how many times the scheduled batch should run. This is applicable only when mode is set to *recurring batch*. |

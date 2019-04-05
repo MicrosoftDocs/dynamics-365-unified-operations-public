@@ -3,7 +3,7 @@
 
 title: Recurring data export using Azure Logic apps
 description: This tutorial shows how to create an Azure logic app that exports data from Dynamics 365 for Talent on a recurring schedule.
-author: gregboyko 
+author: andreabichsel 
 manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: gboyko
+ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
 ---

@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,9 +37,6 @@ ms.dyn365.ops.version: Platform 25
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.5222. For more information about Platform update 25, see [Additional resources](whats-new-platform-25.md#additional-resources).
 
-## Azure blob storage as an endpoint for business events
-Azure blob storage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported, which allows for a wider choice of integration scenarios.
-
 ## Extensibility enhancements
 The [second wave of platform extensibility enhancements](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility2) included in Platform update 25 is documented in the April 2019 Release notes. There are fourteen enhancements detailed, with one of the highlights being that Chain of Command on an InternalUseOnlyAttribute method is now allowed with just a warning.
 
@@ -66,6 +63,24 @@ Stay on top of your business data with integrated change tracking tools. With th
 ## Client alert sub-table field tracking
 The latest Platform update release includes the ability to create alert rules that monitor updates made to fields sourced from child tables. Previously, options were limited to fields sourced from the root data source. Now you can able define alert rules for all fields visible to the user including those from child tables.
 
+## Azure blob storage as an endpoint for business events (private preview)
+Azure blob storage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported, which allows for a wider choice of integration scenarios.
+
+For more information about business events, see [Business events](../../dev-itpro/business-events/home-page.md). 
+
+> [!Note]
+> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). For information about how to enable the feature, see [Enabling business events](../../dev-itpro/business-events/home-page.md#enabling-business-events).
+
+## Batch jobs single scheduler
+Improvements made in the batch framework optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which maintains a higher throughput. This is enabled by default in Platform update 25.
+
+## Batch Jobs enhanced forms
+The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Batch enhanced forms](../../dev-itpro/sysadmin/enhanced-forms.md).
+Additionally, support has been added for saved views and will be released in a future Platform update. For information about saved views, see the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
+
+## Batch jobs alerts and notifications
+You can view batch job notifications in the action center. These notifications will keep you informed about batch events. You can enable alert rules for when a batch job ends, ends in error, or is canceled. You can choose whether the alerts are emailed to you or appear as a pop-up notification in the action center. For more information, see [Alerts](../../dev-itpro/sysadmin/alerts.md).
+
 ## Additional resources
 
 ### Platform update 25 bug fixes
@@ -83,3 +98,5 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.

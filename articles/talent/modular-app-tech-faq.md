@@ -3,7 +3,7 @@
 
 title: Provisioning for the Dynamics 365 for Talent modular apps
 description: This topic provides information about how to provision the standalone modular applications that can be purchased to provide core human resources (HR) functionality that is included in Microsoft Dynamics 365 for Talent. This functionality provides additional experiences, such as Attract and Onboard.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/03/2018
 ms.topic: article
@@ -18,14 +18,14 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro 
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
 
@@ -46,7 +46,7 @@ Customers don't select the exact location where the modular applications should 
 + If no PowerApps environments exist, the location of the organization's existing tenant
 + The data centers that Talent currently supports
 
-Modular applications will be provisioned only in supported countries or regions. The following illustration shows the logic that is used. (The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency.)
+Modular applications will be provisioned only in supported countries or regions. The following illustration shows the logic that is used. The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency. For a list of supported countries and regions, see [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/get-started/availability).
 
 [![Provisioning process for modular applications, based on country/region](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 

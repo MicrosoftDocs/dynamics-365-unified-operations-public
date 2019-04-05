@@ -3,7 +3,7 @@
 
 title: Create an engaging onboarding experience
 description: When onboarding is done well, it helps new employees realize a sense of belonging in their new organization.
-author: tbisaacs
+author: andreabichsel
 manager:
 ms.date: 11/14/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tbisaacs
+ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ---
