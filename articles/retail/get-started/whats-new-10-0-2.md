@@ -40,8 +40,20 @@ To learn about the features in Microsoft Dynamics 365 for Finance and Operations
 
 ## Fiscal registration service integration sample for Czech Republic
 
-This topic provides an overview of the fiscal integration sample for Czech Republic added for Retail version 10.0.2.
+To meet local fiscal requirements for cash registers in the Czech Republic, Dynamics 365 for Retail version 10.0.2 includes a sample integration of the point of sale (POS) with an external fiscal registration service. 
 
 For more information, see [Fiscal registration service integration sample for Czech Republic](../../retail/localizations/emea-cze-fi-sample.md).
 
+## Shipping discounts
 
+You can now set up shipping promotions to enable free or discounted shipping across channels.
+
+For more information, see [Shipping discount overview](../../retail/retail-shipping-discount.md).
+
+## Additional resources
+
+### Dynamics 365 April '19 release notes
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
