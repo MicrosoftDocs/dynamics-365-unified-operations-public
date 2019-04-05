@@ -36,7 +36,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/preview-banner.md)]
 
-To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced. For more information about the generation methods, see [Test data generation methods](Concepts_TestDataMethods.md).
+To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced. For more information about the generation methods, see [Test data generation methods](test-data-methods.md).
 
 Navigation should start from the root object, the module must be specified, and then the entity must be specified together with the test data methods.
 
@@ -100,7 +100,7 @@ Module names should be based on the names of the modules on the main menu. Howev
 
 ## Entity navigation objects
 
-Entity navigation objects let you group [test data methods](Concepts_TestDataMethods.md) by relevant entities.
+Entity navigation objects let you group [test data methods](test-data-methods.md) by relevant entities.
 
 ### Navigation node naming
 
@@ -132,7 +132,7 @@ The same entity navigation object can be exposed from multiple modules when this
 
 ## Helper navigation objects
 
-Sometimes, a [test data method](Concepts_TestDataMethods.md) isn't specific to any entity. In this case, a helpers node can be exposed at the module level. 
+Sometimes, a [test data method](test-data-methods.md) isn't specific to any entity. In this case, a helpers node can be exposed at the module level. 
 
 ### Navigation node naming
 
