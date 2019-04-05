@@ -53,7 +53,7 @@ For more information about pricing and licensing, see the [Microsoft Dynamics 36
 | Basic dashboard | :heavy_check_mark: | :heavy_check_mark: | 
 | Manage security and roles | :heavy_check_mark: | :heavy_check_mark: | 
 | Manage job requisitions | :heavy_check_mark: | :heavy_check_mark: | 
-| Create job-level hiring process | :heavy_check_mark: | :heavy_check_mark: | 
+| Create a job-level hiring process | :heavy_check_mark: | :heavy_check_mark: | 
 | Create candidates and manage profiles | :heavy_check_mark: | :heavy_check_mark: | 
 | Create a single talent pool | :heavy_check_mark: | :heavy_check_mark: | 
 | Schedule interviews | :heavy_check_mark: | :heavy_check_mark: | 
