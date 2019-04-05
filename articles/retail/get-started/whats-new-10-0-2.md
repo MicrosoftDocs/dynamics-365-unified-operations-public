@@ -33,3 +33,15 @@ ms.dyn365.ops.version: Release 10
 
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
+
+This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail. 
+
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.2 (May 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2).
+
+## Fiscal registration service integration sample for Czech Republic
+
+This topic provides an overview of the fiscal integration sample for Czech Republic added for Retail version 10.0.2.
+
+For more information, see [Fiscal registration service integration sample for Czech Republic](../../retail/localizations/emea-cze-fi-sample.md).
+
+
