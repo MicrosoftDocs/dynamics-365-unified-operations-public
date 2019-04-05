@@ -43,9 +43,6 @@ Attract Comprehensive targets medium to large teams or organizations where the r
 
 For more information about pricing and licensing, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
->[!WARNING]
->At this time, you can't migrate data from Attract Basic to Attract Comprehensive.
-
 ## Feature comparison
 
 | Capability | Attract Basic | Attract Comprehensive |
