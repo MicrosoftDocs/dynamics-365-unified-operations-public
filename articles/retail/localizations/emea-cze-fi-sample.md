@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.2
 ---
 # Fiscal registration service integration sample for Czech Republic
 
+[!include[banner](../includes/preview.banner.md)]
 [!include[banner](../includes/banner.md)]
 
 ## Introduction
