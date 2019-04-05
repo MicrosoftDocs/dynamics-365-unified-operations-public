@@ -48,23 +48,23 @@ The request will be completed within five business days.
 1. In LCS, on the environment details page, select **Environment features \> Retail**.
 2. On the Retail setup deployment page, select **Initialize**.
 3. Select the version of the Retail Cloud Scale Unit to initialize.
-4. Select a desired region to initialize Retail Cloud Scale Unit in.
+4. Select a region to initialize Retail Cloud Scale Unit in.
 
 ## Configure retail channels to use RCSU
 
-1. After Retail Cloud Scale Unit has been deployed, in the head office client naviate to **Retail > Retail Headquarters > Retail Scheduler setup > Channel database** to review that your retail channels are configured to use the database for this Retail Cloud Scale Unit.
-2. Navigate to each retail channel and select the Channel Profile for the corresponding Retail Cloud Scale Unit. 
+1. After Retail Cloud Scale Unit has been deployed, in the head office client go to **Retail > Retail Headquarters > Retail Scheduler setup > Channel database** to ensure that your retail channels are configured to use the database for this Retail Cloud Scale Unit.
+2. Go to each retail channel and select the Channel Profile for the corresponding Retail Cloud Scale Unit. 
 
 ## Deploy additional Retail Cloud Scale Units (optional)
 
-After you have initialized the first Retail Cloud Scale Unit (RCSU), you may optionally deploy 1 additional RCSU. If you need more than 2 RCSUs, please file a support request to increase the limit, stating the number of RCSUs needed, environment name, and desired regions.
+After you have initialized the first Retail Cloud Scale Unit (RCSU), you can optionally deploy one additional RCSU. If you need more than 2 RCSUs, you need to file a support request to increase the limit, stating the number of RCSUs needed, environment name, and desired regions.
 
 For each additional RCSU that you deploy, it is also recommended that you create a separate channel database group for each RCSU. To do this, follow these steps: 
 
-1. In Retail head office, navigate to **Retail > Retail Headquarters > Retail Scheduler setup > Channel database group**.
+1. In Retail head office, go to **Retail > Retail Headquarters > Retail Scheduler setup > Channel database group**.
 2. Create a new channel database group. 
-3. Navigate to the **Retail > Retail Headquarters > Retail Scheduler setup > Channel database** form and select the channel database that corresponds to the just created RCSU. 
-4. Select **Edit** and select the just created channel database group. 
+3. Go to the **Retail > Retail Headquarters > Retail Scheduler setup > Channel database** form and select the channel database that corresponds to the newly created RCSU. 
+4. Select **Edit** and select the new channel database group. 
 5. Select **Save**.
 6. Select **Run Full data sync** for the selected channel database.
 
@@ -81,14 +81,14 @@ You should plan for a five-hour downtime window for the store and any online cha
 Here is what occurs during the initialization period:
 
 - Cloud-hosted Retail channels won't work (unless POS offline capability is turned on).
-- POS devices that offline capability is turned on for will have reduced functionality.
+- POS devices with offline capability turned on will have reduced functionality.
 - Any e-Commerce clients that depend on Retail Server will be disrupted.
 - Channels that are hosted on Retail Store Scale Units won't be affected.
 - Head office functionality won't be affected.
 
 Here is what occurs after initialization is completed:
 
-- The device activation state of all activated POS devices will be preserved. Therefore, the devices won't have to be reactivated.
+- The device activation state of all activated POS devices will be preserved, which means that the devices won't have to be reactivated.
 - Stand-alone hardware station instances will continue to work.
 - POS channel–side reports will be reset and won't show data from before the initialization.
 - Show journal operation will also be reset and won't show data from before the initialization.
