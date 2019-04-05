@@ -74,7 +74,7 @@ Here are some examples of billing and subscription management issues:
 
 When you experience a technical issue with your Finance and Operations deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
 
-A service request (SR) is handled within hours, depending on the severity of its impact to your business:
+A support request (SR) is handled within hours, depending on the severity of its impact to your business:
 
 - **Critical business impact** - You will receive an initial response within 1 hour or less, and a support representative will work continuously, all day, until the problem is resolved. You will be expected to allocate appropriate resources to work on the request until the problem is resolved and provide accurate contact information to the support personnel handling your case.
 - **Non-critical business impact** - You will receive an initial response within 8 hours or less. You will be expected to provide accurate contact information to the support personnel handling your case.
