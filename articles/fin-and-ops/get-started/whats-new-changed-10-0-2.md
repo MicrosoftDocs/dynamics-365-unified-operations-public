@@ -39,7 +39,6 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.2](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-2.)
 
-
   
 ## Recovering vendor invoices that are in use
 
