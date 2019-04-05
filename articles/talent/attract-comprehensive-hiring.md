@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 The version of Attract that's right for you depends on your organization's size and needs. Attract Basic provides a subset of Attract's functionality geared towards smaller teams or organizations, where the hiring manager is the primary user. You can start using Attract Basic with one or more licenses.
 
-Attract Comprehensive targets medium to large teams or organizations where the recruiter or talent specialist is the primary user. Attract Comprehensive requires five or more licenses. If Attract Comprehensive better suits your organization's requirements, find a [local Dynamics 365 for Talent partner](https://dynamics.microsoft.com/partners/find-a-partner/) to help you get started.
+Attract Comprehensive targets medium to large teams or organizations where the recruiter or talent specialist is the primary user. Attract Comprehensive requires the purchase of five or more licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/).
 
 >[!NOTE]
 >The Attract trial showcases Attract Comprehensive, which contains comprehensive recruiting and hiring capabilities. These include the ability to post jobs to an Attract career site or external recruiting site such as LinkedIn. If you choose Attract Basic, your subscription will include a subset of the capabilities provided in the trial version. 
@@ -48,37 +48,26 @@ For more information about pricing and licensing, see the [Microsoft Dynamics 36
 
 ## Feature comparison
 
-
-
-
-
-## Attract Basic
-
-Attract Basic is perfect for the hiring manager for a small team or organization. While the full version of Attract requires the purchase of five or more licenses, you can start using Attract Basic with just one license. Attract Basic offers the following capabilities:
-
-- Basic dashboard
-- Security and role management
-- Job requisition management
-- Job-level hiring process configuration
-- Candidate creation and profile management
-- Single talent pool
-- Intelligent interview scheduling
-- Candidate access to application details
-
-## Attract
-
-The full version of Attract is the choice for medium or large organizations. Attract requires the purchase of five or more licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/). Attract contains all of the capabilities of Attract Basic, plus these additional features:
-
-- Job requisition approval flow
-- Organization-level hiring process management
-- Job posting to Attract and external career sites
-- Candidate application flows through an Attract career site
-- Candidate access to full profile and application history
-- LinkedIn Recruiter connection (requires a LinkedIn Recruiter license, purchased separately through LinkedIn)
-- Offer management
-- Shared and global talent pools
-- Email template management
-- Candidate and job recommendations
+| Capability | Attract Basic | Attract Comprehensive |
+| ---------- | :-----------: | :-------------------: |
+| Basic dashboard | :heavy_check_mark: | :heavy_check_mark: | 
+| Manage security and roles | :heavy_check_mark: | :heavy_check_mark: | 
+| Manage job requisitions | :heavy_check_mark: | :heavy_check_mark: | 
+| Create job-level hiring process | :heavy_check_mark: | :heavy_check_mark: | 
+| Create candidates and manage profiles | :heavy_check_mark: | :heavy_check_mark: | 
+| Create a single talent pool | :heavy_check_mark: | :heavy_check_mark: | 
+| Schedule interviews | :heavy_check_mark: | :heavy_check_mark: | 
+| Provide candidate access to application details | :heavy_check_mark: | :heavy_check_mark: | 
+| Create job requisition approval flows | | :heavy_check_mark: | 
+| Manage organization-level hiring processes | | :heavy_check_mark: | 
+| Post jobs to Attract and external career sites | | :heavy_check_mark: | 
+| Create candidate application flows through Attract career site | | :heavy_check_mark: | 
+| Provide candidate access to full profile and application history | | :heavy_check_mark: | 
+| Connect with LinkedIn Recruiter (requires a LinkedIn Recruiter license, purchased separately through LinkedIn) | | :heavy_check_mark: | 
+| Manage offers | | :heavy_check_mark: | 
+| Create shared and global talent pools | | :heavy_check_mark: | 
+| Manage email templates | | :heavy_check_mark: | 
+| Provide candidate and job recommendations | | :heavy_check_mark: | 
 
 ## Frequently asked questions
 
