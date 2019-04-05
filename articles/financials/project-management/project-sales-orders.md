@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project sales orders
-description: This topic explains how to create project-based sales orders for time and material projects
+description: This topic explains how to create project-based sales orders for time and material projects.
 author: KimANelson
 manager: AnnBe
 ms.date: 04/05/2019
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 10.0.2
 # Project sales orders for time and material projects
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This article describes how to create a sales order for a project. Sales orders can only be created for projects of type **time and material**.
 
