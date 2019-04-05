@@ -42,25 +42,24 @@ To learn about the new features and changes in the latest releases of Microsoft 
   
 ## Recovering vendor invoices that are in use
 
-You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited. You can open this page from the **Periodic task** navigation or a tile on the **Vendor invoice entry** workspace. After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.
+You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited. You can open this page from the **Periodic task** navigation link or a tile on the **Vendor invoice entry** workspace. After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.
 
 For more information, see [Vendor invoices overview](../../financials/accounts-payable/vendor-invoices-overview.md).
   
 ## Bank foreign currency revaluation
 
-As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on). The bank foreign currency revaluation feature can be used to revalue one or more bank accounts. The feature is also a global feature. Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.
+As part of a period end, some accounting practices require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on). The bank foreign currency revaluation feature can be used to revalue one or more bank accounts. The is also a global feature, which means that from a single page, you can revalue banks across all the legal entities that you have access to.
   
-## Create project-based sales orders for projects with a funding source of type "Grant"
+## Create project-based sales orders for projects with a funding source of type Grant
 
 This feature provides support for the creation of project-based sales orders for time and material projects funded by a grant on the related project contract. The customer assigned as the contact for the grant will be the customer on the sales order.
 
 ## Support for project-based sales orders for projects with multiple funding sources
 
-This feature allows creation of sales orders for time and material projects where the related project contract has multiple funding sources. Enable this feature by selecting the **Allow sales orders for projects with multilple funding sources** option on the **General** tab in the **Project management and accounting parameters** form. The parameter will be removed and the feature will always be enabled in a future release. See [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) for more information.
+This feature lets you create sales orders for time and material projects where the related project contract has multiple funding sources. Enable this feature by selecting the **Allow sales orders for projects with multiple funding sources** option on the **General** tab on the **Project management and accounting parameters** page. This parameter will be removed and the feature will always be enabled in a future release. For more information, refer to [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md).
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
-
 
 ## Additional resources
 
@@ -68,7 +67,7 @@ For information about the regulatory updates for Finance and Operations, see [Lo
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.2, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78).
 
 ### Platform update 26
-Microsoft Dynamics 365 for Finance and Operations version 10.0.2 includes Platform update 26. To learn more about Platform update 25, see [Preview features in Finance and Operations platform update 26 (May 2019)](whats-new-platform-26.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0.2 includes Platform update 26. To learn more about Platform update 26, see [Preview features in Finance and Operations platform update 26 (May 2019)](whats-new-platform-26.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
@@ -83,4 +82,4 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to be made to the compiler.
