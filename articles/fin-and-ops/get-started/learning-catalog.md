@@ -20,7 +20,64 @@ ms.author: margoc
                     <a href="#products1" data-linktype="self-bookmark"></a>
                     <ul id="products1" class="cardsC cols cols3">
                         <li>
-                            <a href="readiness-learning-dev-archs-engineers.md" title="Materials for developers, architects, and engineers" data-linktype="relative-path">
+                            <a href="bdm.md" title="Business decision makers" data-linktype="relative-path">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Business decision makers</h3>
+						
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="business-users.md" title="Business users" data-linktype="relative-path">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Business users</h3>
+						
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="project-manager.md" title="Implementation Project Managers" data-linktype="relative-path">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Implementation project managers</h3>
+						
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+			<li>
+                            <a href="dev-admin.md" title="Developers and Administrators" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -30,8 +87,7 @@ ms.author: margoc
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Materials for developers, architects, and engineers</h3>
-						    <p>The “Ready to Go” online learning for developers, architects, and engineers.</p>
+                                                <h3>Developers and Administrators</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -114,25 +170,7 @@ ms.author: margoc
                                 </div>
                             </a>
                         </li> 
-                        <li>
-                            <a href="readiness-learning-bus-decision-makers.md" title="Materials for business decision makers" data-linktype="relative-path">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Materials for business decision makers</h3>
-												<p>The “Ready to Go” online learning for business decision makers.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li> 
+
                     </ul>
                 </li>
             </ul>
