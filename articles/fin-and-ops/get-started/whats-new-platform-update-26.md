@@ -2,10 +2,10 @@
 # required metadata
 
 title: Preview features in Dynamics 365 for Finance and Operations platform update 26 (May 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operation platform update 26 (May 2019). 
+description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 26 (May 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 3/18/2019
+ms.date: 04/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,20 +35,17 @@ ms.dyn365.ops.version: Platform 26
 
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 26. This version has a build number of 7.0.5257. For more information about Platform update 26, see [Additional resources](whats-new-platform-update-26.md#additional-resources).
 
-## Business Events Generally Available
-Business events are now generally available. This means, business events are out of preview and is available by default without having to enable the flight.
+## Business events generally available
+Business events are now generally available. This means that business events are out of preview and are available by default, without having to enable the flight.
 
-## 1:N support for Microsoft Flow to subscribe to Business Events
+## 1:N support for Microsoft Flow to subscribe to business events
 Multiple Flow apps can subscribe to the same business event in the same legal entity.
 
 ## Business events are idempotent
-Business events are idempotent. This means, the payload of a business event has a unique and ever increasing number called the ControlNumber. This control number can be used by consumers to apply duplicate detection logic and also out of order delivery detection logic to ensure robust processing of events.
+Business events are idempotent. This means that the payload of a business event has a unique and ever increasing number called the ControlNumber. This control number can be used by consumers to apply duplicate detection logic and out of order delivery detection logic to ensure robust processing of events.
 
 ## Azure Data Lake integration - CDM folder and model improvements 
-Entity store in Azure Data lake is available as public preview with PU25. In PU26, We have made improvements to the folder structure to enable multiple environments to use the same storage account. We have also included additional properties in the model including relationships between Entities. This will enable relationships in the model to appear in PowerBI dataset with the features introduced by PowerBI.com
-
-## Feature
-Feature description and link to topic with details.
+Entity store in Azure Data Lake is available as public preview with Platform update 25. In Platform update 26, we have made improvements to the folder structure to enable multiple environments to use the same storage account. We have also included additional properties in the model, including relationships between entities. This will enable relationships in the model to appear in the Power BI dataset with the features introduced by PowerBI.com.
 
 ## Additional resources
 
