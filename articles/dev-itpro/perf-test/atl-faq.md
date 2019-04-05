@@ -40,11 +40,11 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 Depending on the class that you want to add a fluent method to, different rules might apply:
 
-- [Entities](Concepts_Entities.md)
-- [Creators](Concepts_Creators.md)
-- [Commands](Concepts_Commands.md)
-- [Queries](Concepts_Queries.md)
-- [Specifications](Concepts_Specifications.md)
+- [Entities](concepts-entities.md)
+- [Creators](concepts-creators.md)
+- [Commands](concepts-commands.md)
+- [Queries](concepts-queries.md)
+- [Specifications](concepts-specifications.md)
 
 ## Should I implement an entity or a creator class?
 
@@ -72,7 +72,7 @@ This option produces a sales line where the amount == 1,000, because after you s
 
 ## Can I use ATL for tests that run on the empty data set?
 
-The Acceptance test library (ATL) can be used on the empty data set without issues. The automatic setup of prerequisites is done on demand. For example, prerequisites for invoice posting will be set up only during the first call to `salesOrder.postInvoice()`. For more information, see [Ensure](Concepts_TestDataMethods.md#EnsureMethods).
+The Acceptance test library (ATL) can be used on the empty data set without issues. The automatic setup of prerequisites is done on demand. For example, prerequisites for invoice posting will be set up only during the first call to `salesOrder.postInvoice()`. For more information, see [Ensure](test-data-methods.md#EnsureMethods).
 
 `Ensure` methods can also be called in the `setUpTestCase` method to improve performance if more than one test in your test class must post invoices.
 
