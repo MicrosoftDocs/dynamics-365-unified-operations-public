@@ -25,7 +25,7 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Standard and First release service updates
+      - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
         items:
@@ -210,7 +210,7 @@
       href: ../dev-itpro/migration-upgrade/versions-update-policy.md
     - name: Software lifecycle policy - On-premises
       href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
-    - name: Standard and First release service updates
+    - name: Service update availability
       href: get-started/public-preview-releases.md
     - name: Apply updates to cloud environments
       href: ../dev-itpro/deployment/apply-deployable-package-system.md
@@ -231,12 +231,16 @@
       href: ../dev-itpro/business-events/app-business-events.md
     - name: Workflow business events
       href: ../dev-itpro/business-events/business-events-workflow.md
+    - name: Alerts as business events
+      href: ../dev-itpro/business-events/alerts-business-events.md
     - name: Business events in Microsoft Flow
       href: ../dev-itpro/business-events/business-events-flow.md
     - name: Business events developer documentation
       href: ../dev-itpro/business-events/business-events-dev-doc.md
     - name: Troubleshoot business events
       href: ../dev-itpro/business-events/troubleshooting.md
+    - name: Use cases for business events
+      href: ../dev-itpro/business-events/potential-use-cases.md
   - name: Compliance
     items:
     - name: Audit policy rules
@@ -371,6 +375,8 @@
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
       - name: Test services using third-party utilities
         href: ../dev-itpro/data-entities/third-party-service-test.md
+    - name: Finance and Operations Connector
+      href: ../dev-itpro/data-entities/fin-ops-connector.md
     - name: Development for integration
       items:
       - name: Data integration using data entities
@@ -423,7 +429,7 @@
             href: ../supply-chain/sales-marketing/synchronize-project-list.md
           - name: Synchronize warehouses from Finance and Operations to Field Service
             href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-          - name: Synchronize work orders from Finance and Operations to Field Service
+          - name: Synchronize work orders with project from Field Service to Finance and Operations
             href: ../supply-chain/sales-marketing/synchronize-work-orders.md        
         - name: Configure Project Service Automation integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
@@ -1894,6 +1900,8 @@
             href: ../financials/localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
             href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+          - name: Purchase a taxable item from an unregistered vendor
+            href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
         - name: Deployment guidelines for cash registers
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
@@ -2292,6 +2300,8 @@
             href: ../financials/localizations/rus-bonus-depreciation.md
           - name: Calculate depreciation
             href: ../financials/localizations/rus-depreciation-calculation.md
+          - name: Transfer fixed assets
+            href: ../financials/localizations/rus-fixed-asset-transfer.md
         - name: Accounts payable and receivable
           items:
           - name: Invoices for payment
@@ -2304,6 +2314,8 @@
           items:
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
+          - name: Configure financial reports in Excel
+            href: ../financials/localizations/rus-excel-financial-report.md            
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
@@ -2322,6 +2334,10 @@
           href: ../financials/localizations/rus-accounting-reporting.md
         - name: Cash flow management
           href: ../financials/localizations/rus-cash-flow.md
+        - name: Foreign currency sales, purchases, and transfers
+          href: ../financials/localizations/rus-currency-sale-purchase.md
+        - name: Assessed tax declarations
+          href: ../financials/localizations/rus-assessed-tax-declaration.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2670,6 +2686,8 @@
         href: ../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Employee development
         href: ../dev-itpro/analytics/employee-development-PBI.md?toc=/fin-and-ops/toc.json
+      - name: Expense management Power BI content
+        href: ../dev-itpro/analytics/expense-management-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial performance
         href: ../dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Financial insights
@@ -3334,6 +3352,8 @@
         href: get-started/create-alerts.md
       - name: Batch processing of alerts
         href: get-started/alerts-managing.md
+      - name: Client alert notifications by email
+        href: get-started/alert-email-notifications.md
     - name: Electronic signatures
       href: organization-administration/electronic-signature-overview.md
       items:
@@ -3374,6 +3394,8 @@
           href: ../supply-chain/production-control/bill-of-material-bom.md
         - name: BOM designer functionality
           href: ../supply-chain/production-control/bom-designer-functionality.md
+        - name: Phantom items
+          href: ../supply-chain/production-control/phantom-items.md
         - name: BOM calculations
           href: ../supply-chain/cost-management/bom-calculations.md
         - name: Manage unit of measure
@@ -3845,8 +3867,6 @@
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Fulfill sales agreements
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: Create a new trade agreement
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: Generate and process customer rebates
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: Process rebates for payment
@@ -3872,7 +3892,9 @@
       - name: Set up sales commission rules
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: Trade allowance
-      href: ../supply-chain/sales-marketing/trade-allowance.md 
+      href: ../supply-chain/sales-marketing/trade-allowance.md
+    - name: Create a new trade agreement
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: Service management
     href: ../supply-chain/service-management/service-management-home-page.md
     items:

@@ -3,7 +3,7 @@
 
 title: Accrue time off based on hours worked
 description: This topic describes how leave plans can be configured to accrue time off based on hours worked.
-author: Jcart1106
+author: andreabichsel
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: 
 

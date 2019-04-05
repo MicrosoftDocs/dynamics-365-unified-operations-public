@@ -3,9 +3,9 @@
 
 title: Create, approve, and post jobs in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
-author: josaw
+author: hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 
@@ -48,7 +48,7 @@ The **Job details** tab contains details about the job's responsibilities and at
 
 By default, the **Number of openings** field is set to **1**. However, you can change the value. When an offer has been prepared for a job, the value of the **Number of openings available** field is decremented.
 
-If position management has been turned on in the Admin Center, the **Update positions** lookup is available. This lookup reads the JobPosition entity in Common Data Service for Apps and returns a list of positions that can be selected for the job. If the number of positions that you select exceeds the number of open positions, you receive a warning. You also receive a warning if a position is used on multiple jobs.
+If position management has been turned on in the Admin Center, the **Update positions** lookup is available. This lookup reads the JobPosition entity in Common Data Service and returns a list of positions that can be selected for the job. If the number of positions that you select exceeds the number of open positions, you receive a warning. You also receive a warning if a position is used on multiple jobs.
 
 > [!NOTE]
 > Position management is available with the Comprehensive Hiring Add-on.
@@ -78,9 +78,7 @@ For more information about activities that can be added to the hiring process, s
 
 ## Postings
 
-After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Microsoft Dynamics 365 for Talent career site) or LinkedIn. 
-
-The Attract team is continually working to partner with job board aggregators. This list will expand over time.
+After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Microsoft Dynamics 365 for Talent career site) or LinkedIn. The Attract team is continually working to partner with job board aggregators. This list will expand over time. When a job is posted as internal only, candidates need an AAD account to view and apply for the job. If the job is listed as public, candidates can view and apply for jobs using all authentication options. 
 
 For more information about job postings, see [Career site functionality in Attract](career-site.md).
 
@@ -146,9 +144,14 @@ After a job is saved, it can be submitted for approval. The following table list
 
 In the job list, you can filter on the job statuses.
 
-Approvals can be sent to any Microsoft Azure Active Directory (Azure AD) user in the company. The approvals are sent in parallel to all the people who are listed as approvers. After a job is approved, it can be activated.
+Approvals can be sent to any Microsoft Azure Active Directory (Azure AD) user in the company. The approvals are sent in parallel to all the people who are listed as approvers. All approvers must approve the job before it can move forward. If a single approver rejects the job, the job will display a **Rejected** status. After a job is approved, it can be activated.
 
-The people who are listed as approvers will receive a notification in Attract to inform them that they have an item to approve. An approval item will also appear in the **Assigned to you** section on the dashboard. After someone accepts or approves a job, the hiring team will receive a notification. Finally, the hiring team will receive a notification when the job is approved.
+If a user edits the job after it is approved, but not activated, the job status will be reset to **Draft**, and the job must be re-submitted for approval. After an approved job has been activated, you can't edit it.
+
+The people who are listed as approvers will receive a notification in Attract and an email to inform them they have an item to approve.  In the email, approvers can click the link to open the job, review the details, and either approve or reject. After the job's status is set to **Approved** or **Rejected**, the submitter will be notified in Attract and they will receive an email. Also, the approvers will receive a reminder email if they have not responded to the approval request within 24 hours.
+
+> [!NOTE]
+Custom email templates can be created for Approval emails. For more information, see [Creating and managing email templates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
 
 ## Create a job
 

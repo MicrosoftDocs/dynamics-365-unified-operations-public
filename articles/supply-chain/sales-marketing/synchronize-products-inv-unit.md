@@ -5,7 +5,7 @@ title: Synchronize products with inventory unit from Finance and Operations to F
 description: This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,21 +38,23 @@ This topic discusses the templates and underlying task that are used to synchron
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-The used **Field Service Products (Finance and Operations to Field Service)** template is based on the **Products (Finance and Operations to Sales) – Direct** template from Prospect to Cash. For more information, see [Products (Finance and Operations to Sales) – Direct](products-template-mapping-direct.md).
+The used **Field Service Products with Inventory unit (Fin and Ops to Field Service)** template is based on the **Field Service Products (Fin and Ops to Field Service)** template. For more information, see [Field Service Products (Finance and Operations to Field Service)](field-service-product.md).
 
-This topic only describes the differences between the **Field Service Products (Finance and Operations to Field Service)** and **Field Service Products (Finance and Operations to Field Service)** templates.
+This topic only describes the differences between the two templates: 
+- **Field Service Products with Inventory unit (Fin and Ops to Sales)**
+- **Field Service Products (Fin and Ops to Field Service)** 
 
 ## Templates and tasks
 
 **Name of the template in Data integration:**
 
-- Field Service Products with Inventory unit (Finance and Operations to Sales)
+- Field Service Products with Inventory unit (Fin and Ops to Sales)
 
 **Name of the task in the Data integration project:**
 
 - Products
 
-The **Field Service Products with Inventory unit (Finance and Operations to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Finance and Operations to Field Service)** template. This mapping ensures that the Inventory unit needed for inventory level synchronization is included.
+The **Field Service Products with Inventory unit (Fin and Ops to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Fin and Ops to Field Service)** template. This mapping ensures that the Inventory unit needed for inventory level synchronization is included.
 
 ```
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
@@ -62,6 +64,6 @@ INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryuni
 
 The following illustrations show the template mapping in Data integration.
 
-### Field Service Products with Inventory unit (Finance and Operations to Field Service): Products
+### Field Service Products with Inventory unit (Fin and Ops to Field Service): Products
 
 [![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)

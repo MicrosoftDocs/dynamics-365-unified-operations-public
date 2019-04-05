@@ -3,7 +3,7 @@
 
 title: Vendor invoices overview
 description: This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services. 
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article

@@ -3,7 +3,7 @@
 
 title: Distribute and schedule questionnaires
 description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailPar
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
