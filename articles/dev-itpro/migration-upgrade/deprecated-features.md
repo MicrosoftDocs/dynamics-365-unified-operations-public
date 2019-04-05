@@ -47,7 +47,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Dynamics 365 for Finance and Operations 10.0.2 with platform update 25
+## Dynamics 365 for Finance and Operations 10.0.2 with platform update 26
 
 ### Parameter to enable sales orders with multiple project contract funding sources
 Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **"Allow sales orders for project with multiple funding sources"**. By default, this parameter is not enabled. 
