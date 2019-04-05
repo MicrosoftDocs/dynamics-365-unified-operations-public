@@ -50,13 +50,13 @@ This list is intended to help you consider these removals and deprecations for y
 ## Dynamics 365 for Finance and Operations 10.0.2 with platform update 26
 
 ### Parameter to enable sales orders with multiple project contract funding sources
-Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **"Allow sales orders for project with multiple funding sources"**. By default, this parameter is not enabled. 
+Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**. By default, this parameter is not enabled. 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The functionality will be enabled always once the parameter is removed. |
-| **Replaced by another feature?**   | No. The functionality to support project-based sales orders with multipe funding sources will always be enabled.   |
-| **Product areas affected**         |- The **Allow sales orders for projects with multiple funding sources** parameter will be removed. The following methods will be modified when the parameter is removed: **ctrlSalesOrderTable** method in **ProjStatusType** class, **validate** method for ProjId field and **run** method in **SalescreateOrder** form. The following methods will be deprecated when the parameter is removed: **IsSalesOrderAllowedForMultipleFundingSources** in ProjTable table file, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** method in ProjTable table file, **AllowSalesOrdersForMultipleFundingSources** data field in ProjParameters form and ProjParameterEntity files, **IsAssociatedToMultipleFundingSourcesContract** private method in ProjTable table file |
+| **Reason for deprecation/removal** | The functionality will always be enabled after the parameter is removed. |
+| **Replaced by another feature?**   | No. The functionality to support project-based sales orders with multiple funding sources will always be enabled.   |
+| **Product areas affected**         |The **Allow sales orders for projects with multiple funding sources** parameter will be removed. The following methods will be modified when the parameter is removed: **ctrlSalesOrderTable** method in **ProjStatusType** class, **validate** method for **ProjId** field, and **run** method in **SalescreateOrder** form. The following methods will be deprecated when the parameter is removed: **IsSalesOrderAllowedForMultipleFundingSources** in **ProjTable** table file, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** method in **ProjTable** table file, **AllowSalesOrdersForMultipleFundingSources** data field in **ProjParameters** form and **ProjParameterEntity** files, **IsAssociatedToMultipleFundingSourcesContract** private method in **ProjTable** table file. |
 | **Deployment option**              | All  |
 | **Status**                         | Deprecation is planned for the April 2020 release wave. |
 
