@@ -59,7 +59,7 @@ AtlCommandSalesReturnOrderLineRegister
 
 Command objects that are returned should implement the `AtlICommand` interface and should inherit from the `AtlCommand` class.
 
-Command objects should provide [fluent setter methods](#fluent-setters) that are used to set the parameters of the command.
+Command objects should provide fluent setter methods that are used to set the parameters of the command.
 
 ### Example
 
