@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform 26
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 26. This version has a build number of 7.0.XXXX. For more information about Platform update 26, see [Additional resources](whats-new-platform-update-26.md#additional-resources).
+This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 26. This version has a build number of 7.0.5257. For more information about Platform update 26, see [Additional resources](whats-new-platform-update-26.md#additional-resources).
 
 ## Business Events Generally Available
 Business events are now generally available. This means, business events are out of preview and is available by default without having to enable the flight.
