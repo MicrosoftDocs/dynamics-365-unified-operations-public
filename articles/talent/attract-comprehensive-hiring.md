@@ -48,7 +48,7 @@ For more information about pricing and licensing, see the [Microsoft Dynamics 36
 
 ## Attract Basic
 
-Attract Basic is perfect for the hiring manager for a small team or organization. Attract Basic offers the following capabilities:
+Attract Basic is perfect for the hiring manager for a small team or organization. While the full version of Attract requires the purchase of five or more licenses, you can start using Attract Basic with just one license. Attract Basic offers the following capabilities:
 
 - Basic dashboard
 - Security and role management
@@ -61,7 +61,7 @@ Attract Basic is perfect for the hiring manager for a small team or organization
 
 ## Attract
 
-The full version of Attract contains all of the capabilities of Attract Basic, plus these additional features:
+The full version of Attract is the choice for medium or large organizations. Attrace requires the purchase of five or more licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/). Attract contains all of the capabilities of Attract Basic, plus these additional features:
 
 - Job requisition approval flow
 - Organization-level hiring process management
@@ -80,6 +80,6 @@ The full version of Attract contains all of the capabilities of Attract Basic, p
 
 The Attract trial showcases the full version of Attract. You most likely have Attract Basic, which includes a subset of Attract's features targeted to hiring managers for small teams and organizations.
 
-### Why don't I see all the Attract features that my coworker sees?
+### Why don't I see all the Attract features my coworker sees?
 
-It's possible that your coworker is working with a full Attract license or trial, while you're working with Attract Basic.
+It's possible your coworker is working with a full Attract license or trial, while you're working with Attract Basic.
