@@ -37,23 +37,24 @@ ms.dyn365.ops.version: AX 7.0.0
 ## Introduction
 New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. 
 
-To this end, **Feature callouts** are now available to point out a new capability to a user and optionally provide a hyperlink for hte user to learn more about the feature. In this article, the APIs that are used to construct feature callouts are discussed in detail.   
+To this end, **Feature callouts** are available starting in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for hte user to learn more about the feature. In this article, the APIs that are used to construct feature callouts are discussed in detail.   
 
-[![Example feature callout](./media/cli-featureCallout-noLink.png)](./media/cli-featureCallout-noLink.png)
+![Feature callout for Navigation Pane changes released in Platform update 22](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   
 ## The "Got it" button
-When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves off the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again.
+When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves off the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again. 
 
 ## Resetting feature callouts
-Even though the feature callout state is stored in personalization, clearing personalizations will not delete the state of all previously dismissed feature callouts. Instead, a separate actions have been added to reset all feature callouts so that they fire again.  
+Even though the feature callout state is stored in personalization, clearing personalizations will not delete the state of all previously dismissed feature callouts. Instead, separate actions have been added to reset all feature callouts so that they fire again. These actions are located in the **Personalization** tab of the **Usage data** page as well as the **Manage per user** tab of the **Personalization** page.   
 
 ## Disabling feature callouts 
+If desired, administrators can turn off feature callouts for an environment using the **Feature callouts enabled** switch on the **Client performance options** page. 
   
 ## Implementation details
 The SystemNotificationsWhatsNewManager class contains two variant APIs for triggering a feature callout. 
 
-
-### SystemNotificationWhatsNewManager::AddWhatsNewWithActionLink() 
+### AddWhatsNewWithActionLink() 
+Add a feature callout to a control with a "Learn more" link that is configured to open the documentation associated with the new product capability.  
 
 #### Parameters
 
@@ -66,7 +67,7 @@ The SystemNotificationsWhatsNewManager class contains two variant APIs for trigg
 | urlLink       | Provide the URL to open in a new tab when the "Learn more" link is clicked. If a URL is not specified, then no "Learn more" link will be displayed. |
 
 
-### SystemNotificationWhatsNewManager::AddWhatsNew() 
+### AddWhatsNew() 
 Add a feature callout to a control without a "Learn more" link. 
 
 #### Parameters
@@ -79,15 +80,22 @@ Add a feature callout to a control without a "Learn more" link.
 | targetControl | Provide the name of the control you want to attach the feature callout to | 
 
 ### Example
+As a quick example, the following code snippet will trigger a feature callout attached to the control named *TestStringControl*.  
 
+    public void init() 
+    {
+         super(); 
+     
+         SystemNotificationsWhatsNewManager::AddWhatsNewWithActionLink(
+              MyTestKey, 
+              "My title" , 
+              "My description", 
+              TestStringControl.name(), 
+              "http://www.microsoft.com"
+         );
+    }
 
-
-Notes
-•	Multiple feature callouts can be shown on a page at one time
-•	Only one feature callout is allowed per control. If multiple exist, the last one wins
-•	When a user dismisses a feature callout by clicking the “Got it” button, that state is remembered as a personalization. Before Platform update 26, deleting a user’s personalization reset all feature callouts, meaning they will be displayed when the user next encounters those features. Starting in Platform update 26, deleting personalizations and resetting feature callouts are two separate actions for users.  
-
-Roadmap
-•	Learn more link in the bottom right hand corner of the feature callout that serves as a link to documentation that would be visible if the developer specified a URL 
-•	Create a switch (separate from deleting personalization) to reset feature callouts for a user. 
+### Notes
+-  Multiple feature callouts can be shown on a page at one time.
+-  Only one feature callout is allowed per control. If multiple exist, the last one to get triggered will be displayed.
 
