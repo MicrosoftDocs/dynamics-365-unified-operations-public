@@ -39,7 +39,7 @@ New features are regularly being developed for Finance and Operations. While doc
 
 To this end, **Feature callouts** are now available to point out a new capability to a user and optionally provide a hyperlink for hte user to learn more about the feature. In this article, the APIs that are used to construct feature callouts are discussed in detail.   
 
-<image>
+[![Example feature callout](./media/cli-featureCallout-noLink.png)](./media/cli-featureCallout-noLink.png)
   
 ## The "Got it" button
 When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves off the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again.
