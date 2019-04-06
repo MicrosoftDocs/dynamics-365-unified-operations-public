@@ -53,6 +53,8 @@ The **User options** page contains several system-wide settings for the current 
 - **Account** – Adjust your user name and other account-related options.
 - **Workflow** – Select workflow-related options.
 
+In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to see and manage the personal changes you have made to pages in the system. **Feature callouts**, the popups that introduce you to new features in the product, can also be reset from this tab so that you are again alerted about previously encountered features.  
+
 ## Implicit personalizations
 
 Implicit personalizations are personalizations that you make just by interacting with controls that "remember" their current visible state.
@@ -165,7 +167,7 @@ Users who have administrator privileges can also manage personalizations for oth
 
 - **Apply** – You can import or select a personalization for one or more users. To apply a personalization to one or more users, first select a role and users who have that role. Then either select an existing personalization to apply to the selected users, or import a personalization file. The personalization is validated and will be applied to all the selected users the next time that they open the selected page.
 - **Clear** – You can clear all personalizations for a page or workspace for one or more users. First select a page or workspace to see a list of the users who have personalized it. Then select the users who should have personalizations for that page or workspace cleared, and select **Clear**. All personalizations that the selected users have applied to the selected page or workspace are deleted. This action can't be undone. However, if a personalization was saved for the page or workspace, that personalization can be reimported.
-- **Manager per User** – Select a user to see the list of pages that he or she has personalized. You can then enable or disable the selected user's ability to use personalizations for specific pages, or for the entire system. You can also import, export, or clear a personalization for the selected user.
+- **Manager per user** – Select a user to see the list of pages that he or she has personalized. You can then enable or disable the selected user's ability to use personalizations for specific pages, or for the entire system. You can also import, export, or clear a personalization for the selected user. In addition, you can reset feature callouts for the selected user, which will make all previously dismissed popups that introduced new features display again the next time this user encounters those features.   
 - **System** – You can temporarily disable all personalizations for all users in the system. In this case, the personalizations are deleted. All pages are just reset to their default state for all users. If you re-enable personalization later, all personalizations will be reapplied. You can also permanently delete all personalizations for all users in the system. There is no way to recover personalizations that have been deleted. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
 ## Personalization of inventory dimensions
