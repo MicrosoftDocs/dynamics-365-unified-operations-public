@@ -47,6 +47,9 @@ Business events are idempotent. This means that the payload of a business event 
 ## Azure Data Lake integration - CDM folder and model improvements 
 Entity store in Azure Data Lake is available as public preview with Platform update 25. In Platform update 26, we have made improvements to the folder structure to enable multiple environments to use the same storage account. We have also included additional properties in the model, including relationships between entities. This will enable relationships in the model to appear in the Power BI dataset with the features introduced by PowerBI.com.
 
+## Feature callouts
+New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. To this end, [Feature callouts](../../dev-itpro/user-interface/feature-callouts.md) are available in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature.  
+
 ## Additional resources
 
 ### Platform update 26 bug fixes
