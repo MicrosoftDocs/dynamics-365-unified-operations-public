@@ -37,7 +37,7 @@ ms.dyn365.ops.version:
 ## Introduction
 New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. 
 
-To this end, **Feature callouts** are available starting in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for hte user to learn more about the feature. In this article, the APIs that are used to construct feature callouts are discussed in detail.   
+To this end, **Feature callouts** are available in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. In this article, the APIs that are used to construct feature callouts are discussed in detail.   
 
 ![Feature callout for Navigation Pane changes released in Platform update 22](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   
