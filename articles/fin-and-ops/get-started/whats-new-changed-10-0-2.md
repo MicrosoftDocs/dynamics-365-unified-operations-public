@@ -58,6 +58,10 @@ This feature provides support for the creation of project-based sales orders for
 
 This feature lets you create sales orders for time and material projects where the related project contract has multiple funding sources. Enable this feature by selecting the **Allow sales orders for projects with multiple funding sources** option on the **General** tab on the **Project management and accounting parameters** page. This parameter will be removed and the feature will always be enabled in a future release. For more information, refer to [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md).
 
+## Acceptance test library
+
+This developer features enables you to effeciently write unit and component tests using a rich domain specific language containing hundreds of entities such as sales order, customers and items. See [Acceptance test libarary](TODO) for more information.  
+
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
