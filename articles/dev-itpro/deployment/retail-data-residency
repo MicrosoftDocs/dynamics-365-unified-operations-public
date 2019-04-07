@@ -1,11 +1,41 @@
+---
+# required metadata
+
+title: Retail data residency
+description: This topic provides information about data residency considerations when deploying the Retail Cloud Scale Unit.
+author: AamirAllaq
+manager: AnnBe
+ms.date: 04/06/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope: Retail, Operations 
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: retail
+ms.author: aamiral
+ms.search.validFrom: 2018-4-30 
+ms.dyn365.ops.version: 8.0 
+---
 
 
-Overview
-This article details data residency considerations when deploying Retail Cloud Scale Unit.
+# Retail data residency
 
-Choosing a region
+[!include[banner](../includes/banner.md)]
 
-When initializing a Retail Cloud Scale Unit, you must select a desired data center location to host that RCSU in. You may choose a datacenter location that is in close proximity to the retail channels that you plan to serve using this Retail Cloud Scale Unit to minimize network latency and improve performance. You may reference approximate locations of each datacenter here https://azure.microsoft.com/en-us/global-infrastructure/regions/. You may also reference a web based utility, such as https://azurespeedtest.azurewebsites.net/ and measure latency to Azure datacenters from each store location to make the right choice of datacenter when initializing Retail Cloud Scale Unit.
+
+## Choose a region
+
+When you initialize a Retail Cloud Scale Unit (RCSU), you must select a data center location to host the RCSU. To minimize network latency and improve performance, you might choose a datacenter location that is in close proximity to the retail channels that you plan to serve using the RCSU. To reference approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/). You may also reference a web based utility, such as the [Azure speed reference](https://azurespeedtest.azurewebsites.net/), and measure latency to Azure datacenters from each store location. This can help you to make the right choice of datacenter when you initialize the RCSU.
 
 
 What data travels between regions
