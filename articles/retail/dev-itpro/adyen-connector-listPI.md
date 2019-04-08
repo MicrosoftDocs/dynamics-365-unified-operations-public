@@ -102,7 +102,7 @@ When the customer finalizes their online order, the payment card token is sent t
 
 #### List PI flow
 
-The key difference between the standard flow and the List PI flow is that, rather than having to enter the full credit card number, the customer is only required to select a previously saved card and provide the card verification value, or CVV. If the customer provides the correct CVV and proceeds to the next step in the checkout process, the payment processor will provide a payment card token that will can be as part of the authorization request. 
+The key difference between the standard flow and the List PI flow is that, rather than having to enter the full credit card number, the customer is only required to select a previously saved card and provide the card verification value, or CVV. If the customer provides the correct CVV and proceeds to the next step in the checkout process, the payment processor will provide a payment card token that will included in the authorization request. 
 
 ## Related articles
 
