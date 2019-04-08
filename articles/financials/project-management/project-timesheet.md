@@ -97,7 +97,7 @@ In the **Legal entity** field, select the legal entity for which you performed
 project work. The **Legal entity** field is available only if intercompany timesheet
 support has been enabled for your legal entity.
 
-Select the customer who is associated with the project for the timesheet. If you selected the project first, the **Customer** field is filled in automatically.
+Select the customer who is associated with the project for the timesheet. For the initial release on the Android, entry by customer is not supported, as you must select the project first. If you selected the project first, the **Customer** field is filled in automatically.
 
 In the **Project** field, select the project that you are entering time for. The **Customer** field is filled in automatically.
 
