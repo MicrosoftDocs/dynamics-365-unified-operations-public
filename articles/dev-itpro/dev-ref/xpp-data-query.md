@@ -102,7 +102,7 @@ The **select** statement fetches or manipulates data from the database. All **se
 
 #### Keyword examples
 
-```xpp
+```X++
 // asc keyword example.
 select * from custTable
     order by Name asc;
