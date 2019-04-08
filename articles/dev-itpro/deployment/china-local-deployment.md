@@ -60,7 +60,11 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
 
-    -   **Service and Support requests** will be available through a portal connected to 21Vianet but may not be available through LCS. For more information, see [Dynamics 365 Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
+    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Dynamics 365 Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
+    
+    -   [Extensibility support requests](../extensibility/extensibility-requests.md) will be unavailable.
+    
+    -   [Hotfix requests](../migration-upgrade/upgrade-home-page.md#hotfixes) will be unavailable.
 
     -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
 
