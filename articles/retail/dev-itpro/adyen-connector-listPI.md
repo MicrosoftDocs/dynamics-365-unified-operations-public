@@ -107,3 +107,4 @@ The key difference between the standard flow and the List PI flow is that, rathe
 ## Related articles
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
