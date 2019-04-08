@@ -210,7 +210,7 @@ The SAF-T Cash Register configuration is available for download from Microsoft D
 - **DMM Retail channel data.version.1.6** - the data model mapping configuration,
 - **NO SAF T Cash Register.version.1.15** - the format configuration.
 
-After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the **NO SAF T Cash Register.version.1.15** format.
+After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the name of the format configuration that was imported.
 
 You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. To create the mapping, you must set the new **SAF-T Cash register code** field on the following pages:
 
