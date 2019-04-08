@@ -2,10 +2,10 @@
 # required metadata
 
 title: Feature callouts
-description: Trigger feature callouts to raise awareness of new capabilities to users
+description: Trigger feature callouts raise awareness of new capabilities to users.
 author: jasongre
 manager: AnnBe
-ms.date: 03/28/2019
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.search.validFrom: 2019-5-31
+ms.dyn365.ops.version: Platform update 26
 
 ---
 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version:
 ## Introduction
 New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. 
 
-To this end, **Feature callouts** are available in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. In this article, the APIs that are used to construct feature callouts are discussed in detail.   
+To this end, **Feature callouts** are available in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
 
 ![Feature callout for Navigation Pane changes released in Platform update 22](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   
@@ -60,10 +60,10 @@ Add a feature callout to a control with a "Learn more" link that is configured t
 
 | Parameter     | Description                                                               |
 |---------------|---------------------------------------------------------------------------|
-| ruleID        | Generate a unique GUID                                                    | 
-| title         | Provide a (localized) title                                               | 
-| bodyText      | Provide a (localized) description                                         | 
-| targetControl | Provide the name of the control you want to attach the feature callout to | 
+| ruleID        | Generate a unique GUID.                                                    | 
+| title         | Provide a (localized) title.                                               | 
+| bodyText      | Provide a (localized) description.                                         | 
+| targetControl | Provide the name of the control you want to attach the feature callout to. | 
 | urlLink       | Provide the URL to open in a new tab when the "Learn more" link is clicked. If a URL is not specified, then no "Learn more" link will be displayed. |
 
 
@@ -74,10 +74,10 @@ Add a feature callout to a control without a "Learn more" link.
 
 | Parameter     | Description                                                               |
 |---------------|---------------------------------------------------------------------------|
-| ruleID        | Generate a unique GUID                                                    | 
-| title         | Provide a (localized) title                                               | 
-| bodyText      | Provide a (localized) description                                         | 
-| targetControl | Provide the name of the control you want to attach the feature callout to | 
+| ruleID        | Generate a unique GUID.                                                    | 
+| title         | Provide a (localized) title.                                               | 
+| bodyText      | Provide a (localized) description.                                         | 
+| targetControl | Provide the name of the control you want to attach the feature callout to. | 
 
 ### Example
 As a quick example, the following code snippet will trigger a feature callout attached to the control named *TestStringControl*.  
