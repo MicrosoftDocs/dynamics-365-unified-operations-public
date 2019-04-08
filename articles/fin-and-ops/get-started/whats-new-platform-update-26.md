@@ -37,13 +37,13 @@ ms.dyn365.ops.version: Platform 26
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 26. This version has a build number of 7.0.5257. For more information about Platform update 26, see [Additional resources](whats-new-platform-update-26.md#additional-resources).
 
 ## Business events generally available
-[Business events](../../dev-itpro/business-events/home-page) are now generally available. This means that business events are out of preview and are available by default, without having to enable the flight. 
+[Business events](../../dev-itpro/business-events/home-page.md) are now generally available. This means that business events are out of preview and are available by default, without having to enable the flight. 
 
 ## 1:N support for Microsoft Flow to subscribe to business events
-Multiple Flow apps can subscribe to the same business event in the same legal entity. The [Business events in Microsoft Flow](../../dev-itpro/business-events/business-events-flow) can be leveraged for tasks such as sending notifications and triggering approval flows. 
+Multiple Flow apps can subscribe to the same business event in the same legal entity. The [Business events in Microsoft Flow](../../dev-itpro/business-events/business-events-flow.md) can be leveraged for tasks such as sending notifications and triggering approval flows. 
 
 ## Workflow business events
-The [Workflow business events](../../dev-itpro/business-events/business-events-workflow) are a particularly good target for triggering approval flows. The **Workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Flow. Flow templates for facilitating completion of a work item are in progress and more information about them will be available on the [Workflow business events](../../dev-itpro/business-events/business-events-workflow) page in the near future.
+The [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) are a particularly good target for triggering approval flows. The **Workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Flow. Flow templates for facilitating completion of a work item are in progress and more information about them will be available on the [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) page in the near future.
 
 ## Business events are idempotent
 Business events are idempotent. This means that the payload of a business event has a unique and ever increasing number called the ControlNumber. This control number can be used by consumers to apply duplicate detection logic and out of order delivery detection logic to ensure robust processing of events.
