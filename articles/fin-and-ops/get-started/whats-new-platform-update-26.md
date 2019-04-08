@@ -37,10 +37,13 @@ ms.dyn365.ops.version: Platform 26
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 26. This version has a build number of 7.0.5257. For more information about Platform update 26, see [Additional resources](whats-new-platform-update-26.md#additional-resources).
 
 ## Business events generally available
-Business events are now generally available. This means that business events are out of preview and are available by default, without having to enable the flight.
+[Business events](../../dev-itpro/business-events/home-page) are now generally available. This means that business events are out of preview and are available by default, without having to enable the flight. 
 
 ## 1:N support for Microsoft Flow to subscribe to business events
-Multiple Flow apps can subscribe to the same business event in the same legal entity.
+Multiple Flow apps can subscribe to the same business event in the same legal entity. The [Business events in Microsoft Flow](../../dev-itpro/business-events/business-events-flow) can be leveraged for tasks such as sending notifications and triggering approval flows. 
+
+## Workflow business events
+The [Workflow business events](../../dev-itpro/business-events/business-events-workflow) are a particularly good target for triggering approval flows and **Workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Flow. Flow templates for facilitating completion of a work item are in progress and more information about them will be available on the [Workflow business events](../../dev-itpro/business-events/business-events-workflow) page in the near future.
 
 ## Business events are idempotent
 Business events are idempotent. This means that the payload of a business event has a unique and ever increasing number called the ControlNumber. This control number can be used by consumers to apply duplicate detection logic and out of order delivery detection logic to ensure robust processing of events.
@@ -50,6 +53,9 @@ Entity store in Azure Data Lake is available as public preview with Platform upd
 
 ## Feature callouts
 New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. To this end, [Feature callouts](../../dev-itpro/user-interface/feature-callouts.md) are available in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature.  
+
+## Extensibility enhancements
+The [third wave of platform extensibility enhancements](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility3) included in Platform update 26 is documented in the April 2019 Release notes. There are seven enhancements detailed, with one of the highlights being that Chain of Command can now target and extend other method extensions.
 
 ## Additional resources
 
