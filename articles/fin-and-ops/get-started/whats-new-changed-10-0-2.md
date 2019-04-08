@@ -60,7 +60,7 @@ This feature lets you create sales orders for time and material projects where t
 
 ## Acceptance test library
 
-This developer features enables you to effeciently write unit and component tests using a rich domain specific language containing hundreds of entities such as sales order, customers and items. See [Acceptance test libarary](TODO) for more information.  
+This developer features enables you to effeciently write unit and component tests using a rich domain specific language containing hundreds of entities such as sales order, customers and items. See [Acceptance test libarary](../../dev-itpro/perf-test/acceptance-test-library.md) for more information.  
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
