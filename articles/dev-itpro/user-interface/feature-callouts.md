@@ -33,6 +33,7 @@ ms.dyn365.ops.version: Platform update 26
 # Feature callouts
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 ## Introduction
 New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. 
