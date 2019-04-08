@@ -36,20 +36,20 @@ ms.dyn365.ops.version: Platform update 26
 [!include [banner](../includes/preview-banner.md)]
 
 ## Introduction
-New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. 
+  While documentation is helpful for explaining new features, it’s also important to raise awareness of these new capabilities as users encounter the feature while using the product. As a result, feature callouts are available in Platform update 26. You can use feature callouts to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. 
 
-To this end, **Feature callouts** are available in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
+In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
 
 ![Feature callout for Navigation Pane changes released in Platform update 22](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   
 ## The "Got it" button
-When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves off the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again. 
+When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again. 
 
 ## Resetting feature callouts
-Even though the feature callout state is stored in personalization, clearing personalizations will not delete the state of all previously dismissed feature callouts. Instead, separate actions have been added to reset all feature callouts so that they fire again. These actions are located in the **Personalization** tab of the **Usage data** page as well as the **Manage per user** tab of the **Personalization** page.   
+Even though the feature callout state is stored in personalization, clearing personalizations will not delete the state of all previously dismissed feature callouts. Instead, separate actions have been added to reset all feature callouts so that they fire again. These actions are located on the **Personalization** tab on the **Usage data** page as well as on the **Manage per user** tab on the **Personalization** page.   
 
 ## Disabling feature callouts 
-If desired, administrators can turn off feature callouts for an environment using the **Feature callouts enabled** switch on the **Client performance options** page. 
+If needed, administrators can turn off feature callouts for an environment using the **Feature callouts enabled** option on the **Client performance options** page. 
   
 ## Implementation details
 The SystemNotificationsWhatsNewManager class contains two variant APIs for triggering a feature callout. 
@@ -65,7 +65,7 @@ Add a feature callout to a control with a "Learn more" link that is configured t
 | title         | Provide a (localized) title.                                               | 
 | bodyText      | Provide a (localized) description.                                         | 
 | targetControl | Provide the name of the control you want to attach the feature callout to. | 
-| urlLink       | Provide the URL to open in a new tab when the "Learn more" link is clicked. If a URL is not specified, then no "Learn more" link will be displayed. |
+| urlLink       | Provide the URL to open in a new tab when the "Learn more" link is clicked. If a URL is not specified, then a "Learn more" link will not be displayed. |
 
 
 ### AddWhatsNew() 
@@ -81,7 +81,7 @@ Add a feature callout to a control without a "Learn more" link.
 | targetControl | Provide the name of the control you want to attach the feature callout to. | 
 
 ### Example
-As a quick example, the following code snippet will trigger a feature callout attached to the control named *TestStringControl*.  
+The following code snippet will trigger a feature callout attached to the control named *TestStringControl*.  
 
     public void init() 
     {
@@ -96,7 +96,6 @@ As a quick example, the following code snippet will trigger a feature callout at
          );
     }
 
-### Notes
+## Notes
 -  Multiple feature callouts can be shown on a page at one time.
--  Only one feature callout is allowed per control. If multiple exist, the last one to get triggered will be displayed.
-
+-  Only one feature callout is allowed per control. If multiple callouts exist, the last one to get triggered will be displayed.
