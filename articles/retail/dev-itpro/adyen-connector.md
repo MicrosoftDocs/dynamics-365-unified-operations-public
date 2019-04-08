@@ -194,7 +194,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Switzerland | ✔ |
 | United Kingdom | ✔ |
 | United States | ✔ |
-| Brazil | Q1 2019 |
+| Brazil | Future release |
 
 #### Supported card not present countries
 For card not present scenarios, such as E-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
@@ -207,6 +207,7 @@ The following table shows the set of Dynamics 365 payment features that the Dyna
 | [Duplicate Payment Protection](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
+| [Save online payments](articles/retail/dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
 
 ## Sign up with Adyen
 
