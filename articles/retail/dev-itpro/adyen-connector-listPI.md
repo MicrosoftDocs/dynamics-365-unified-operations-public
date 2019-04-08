@@ -88,36 +88,22 @@ During subsequent visits, if the same customer is logged into the we storefront,
 
 ![Previously saved payment](articles/retail/media/Payments/Saved_PI.jpg)
 
-The retail payment SDK relies on two sets of payment APIs. The first, is called iPayment processor. This set of APIs is used to implement card not present payment connectors for use in call center and e-commerce. More information about the iPaymentProcessor interface can be found in this [whitepaper](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) covering payments. 
+#### Order fulfillment and processing
 
-The second set of APIs is called iNamedRequestHandler. This set of APIs is the supported method of implementing card present payment integrations that utilize a payment terminal. This set of APIs is documented in the [Create a payment intgration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension) document. 
+E-commerce orders with a tender line that was applied by a customer using the List PI capability will function in the same way as orders that were created without a saved card payment. From an order processing and fulfillment standpoint, the two types of payments will be indistinguishable. 
 
-### Basic priciple supporting omni-channel payments
+### E-commerce payment card tokenization details
 
-Payment connectors and payment processors utilize references, or tokens, to reference interactions related to card payments. For example, when a payment authorization is requested, a reference to that authorization is provided so that authorization can be used later. This authorization is unique to the merchant, payment connector, and processor. 
+#### Standard flow
 
-When and authorization is created in a channel, the details related to that authorization are created in the context of that channel. When that authorization is refernced later, that same context must be presented for the payment processor to map the requested action to the previous authorization. 
+In Microsoft Dynamics 365 for Retail e-commerce integrations, the payment card is typically entered as part of checkout and saved with the order prior to finalization. When the card is entered, the card details are entered directly into a payment acceptance page provided by a payment processor. When the customer proceeds to the next step after payment card entry, the processor creates a token that is used later in the order creation process. 
 
-In practice, this means that if an order that was created online is being picked up in the store, the same payment details for that order must also be recalled and used. When those original details are provided as part of the request to capture a payment against the original authorization, the payment processor will understand the request and be able to to capture the payment. 
+When the customer finalizes their online order, the payment card token is sent to the payment processor as part of an authorization request. If the payment authorization request is successful, the payment processor will reply with an authorization token. This auth token is saved with the customer's order and referenced when that order is fulfilled from the back office. 
 
-On order to properly reference the online order, a card not present payment connector which supports the same processor must also be available. Using the same example, the point of sale might have one processor for card present payments, but also have access to other payment connectors in order to fulfill orders created in different channnels using different payment processors. 
+#### List PI flow
 
-#### Deployed payment connectors example
+The key difference between the standard flow and the List PI flow is that, rather than having to enter the full credit card number, the customer is only required to select a previously saved card and provide the card verification value, or CVV. If the customer provides the correct CVV and proceeds to the next step in the checkout process, the payment processor will provide a payment card token that will can be as part of the authorization request. 
 
-| Channel | Action | Payment connector in use |
-| --- | --- | --- |
-| Online | Order is created and authorization is saved | Payment connector 'A' implemented using iPaymentProcessor |
-| Point of sale | Online order is recalled along with details instructing Payment connector 'A' to be used | Payment connector 'A' implemented using iPaymentProcessor | 
-| Point of sale | Card present payments for point of sale transactions | Payment connector 'B' implemented using iNamedRequestHandler |
+## Related articles
 
-
-
-- **[Section name](#Section name)** – This section is a section.
-
-## Supported scenarios
-
-The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard payments SDK. Therefore, it doesn't have special capabilities that aren't also available to other payment connectors. 
-
-### Supported Versions
-
-#### Microsoft Dynamics 365 Supported Versions
+- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
