@@ -50,264 +50,266 @@ The **select** statement fetches or manipulates data from the database. All **se
 
 ## Syntax of select statements
 
-|                          |   |    |
-|--------------------------|---|----|
-|<em>SelectStatement</em>  | = | <strong>select</strong> <em>Parameters</em>  |
-|<em>Parameters</em>       | = | <strong>\[ \[</strong> <em>FindOptions</em> <strong>\]</strong> <strong>\[</strong> <em>FieldList</em> <strong>from \] \]</strong> <em>TableBufferVariable</em> <strong>\[</strong> <em>IndexClause</em> <strong>\]</strong> <strong>\[</strong> <em>Options</em> <strong>\]</strong> <strong>\[</strong> <em>WhereClause</em> <strong>\]</strong> <strong>\[</strong> <em>JoinClause</em> <strong>\]</strong> |
-|<em>FindOptions</em>      | = | <strong>crossCompany</strong> \| <strong>reverse</strong> \| <strong>firstFast</strong> \| \[ <strong>firstOnly</strong> \| <strong>firstOnly10</strong> \| <strong>firstOnly100</strong> \| <strong>firstOnly1000</strong> \] \| <strong>forUpdate</strong> \| <strong>noFetch</strong> \| \[<strong>forcePlaceholders</strong> \| <strong>forceLiterals</strong>\] \| <strong>forceselectorder</strong> \| <strong>forceNestedLoop</strong> \| <strong>repeatableRead</strong> \| <strong>validTimeState</strong> |                                              |
-|<em>FieldList</em>        | = | <em>Field</em> <strong>{ ,</strong> <em>Field</em> <strong>}</strong> \| * |
-|<em>Field</em>            | = | <em>Aggregate</em> <strong>(</strong> <em>FieldIdentifier</em> **) |
-|<em>Aggregate</em>        | = | <strong>sum</strong> \| <strong>avg</strong> \| <strong>minof</strong> \| <strong>maxof</strong> \| <strong>count</strong> |
-|<em>Options</em>          | = | \[ <strong>order by</strong>, <strong>group by</strong>, <em>FieldIdentifier</em> \[ <strong>asc</strong> \| <strong>desc</strong> \] {, <em>FieldIdentifier</em> \[ <strong>asc</strong> \| <strong>desc</strong> \] }] \| \[  <em>IndexClause</em> \]
-|<em>IndexClause</em>      | = | <strong>index</strong> <em>IndexName</em>  |
-|<em>WhereClause</em>      | = | <strong>where</strong> <em>Expression</em> |
-|<em>JoinClause</em>       | = | \[<strong>exists</strong> |
+|                   |   |    |
+|-------------------|---|----|
+|*SelectStatement*  | = | **select** <i>Parameters</i>  |
+|*Parameters*       | = | **\[ \[** *FindOptions* **\]** **\[** *FieldList* **from \] \]** *TableBufferVariable* **\[** *IndexClause* **\]** **\[** *Options* **\]** **\[** *WhereClause* **\]** **\[** *JoinClause* **\]** |
+|*FindOptions*      | = | **crossCompany** \| **reverse** \| **firstFast** \| \[ **firstOnly** \| **firstOnly10** \| **firstOnly100** \| **firstOnly1000** \] \| **forUpdate** \| **noFetch** \| \[**forcePlaceholders** \| **forceLiterals**\] \| **forceselectorder** \| **forceNestedLoop** \| **repeatableRead** \| **validTimeState** |                                              |
+|*FieldList*        | = | *Field* **{ ,** *Field* **}** \| * |
+|*Field*            | = | *Aggregate* **(** *FieldIdentifier* **) |
+|*Aggregate*        | = | **sum** \| **avg** \| **minof** \| **maxof** \| **count** |
+|*Options*          | = | \[ **order by**, **group by**, *FieldIdentifier* \[ **asc** \| **desc** \] {, *FieldIdentifier* \[ **asc** \| **desc** \] }] \| \[  *IndexClause* \]
+|*IndexClause*      | = | **index** *IndexName* \| **index hint** *IndexName* |
+|*WhereClause*      | = | **where** *Expression* |
+|*JoinClause*       | = | \[**exists** \| **notexists** \| **outer** ] **join**  *Parameters*|
 
 ### Keywords that are used in select statements
 
-| Keyword           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| asc               | This keyword is an option on the **order by** or **group by** clause. It specifies an ascending sort. If neither **asc** nor **desc** is specified, the sort is ascending.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| avg               | This keyword returns the average of the fields.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| count             | This keyword returns the number of records.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| crossCompany      | This keyword returns data for all companies that the user is authorized to read from. You can add a container to reduce the number of companies that are involved.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| desc              | This keyword is an option on the **order by** or **group by** clause. It specifies a descending sort. If neither **asc** nor **desc** is specified, the sort is ascending.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| exists            | This keyword is a method that returns a Boolean value and a **join** clause.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| firstFast         | This keyword is a priority hint. Although the first row appears more quickly, but the total return time for this option might be slower. The **firstFast** hint is automatically issued from all pages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| firstOnly         | This keyword helps speed up the fetch by returning only the first row.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| firstOnly10       | This keyword is the same as **firstOnly**, but it returns 10 rows instead of one.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| firstOnly100      | This keyword is the same as **firstOnly**, but it returns 100 rows instead of one.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| firstOnly1000     | This keyword is the same as **firstOnly**, but it returns 1,000 rows instead of one.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| forceLiterals     | This keyword instructs the kernel to reveal the actual values that are used in **where** clauses to the Microsoft SQL Server database at the time of optimization. The **forceLiterals** and **forcePlaceholders** keywords are mutually exclusive. You should not to use the **forceLiterals** keyword in **select** statements, because it could expose code to an SQL injection security threat.                                                                                                                                                                                                                                                                                                                                                              |
-| forceNestedLoop   | This keyword forces the SQL Server database to use a nested-loop algorithm to process a particular SQL statement that contains a join algorithm. Therefore, a record from the first table is fetched before any records from the second table are fetched. Typically, other join algorithms, such as hash joins and merge joins, are considered. This keyword is often combined with the **forceSelectOrder** keyword.                                                                                                                                                                                                                                                                                                                                           |
-| forcePlaceholders | This keyword instructs the kernel *not* to reveal the actual values that are used in **where** clauses to the SQL Server database at the time of optimization. By default, this behavior is used in all statements that aren't **join** statements. The advantage of using this keyword is that the kernel can reuse the access plan for similar statements that have other search values. The disadvantage is that the access plan is computed, but the fact that data distribution might be uneven isn't considered. The access plan is an on-average access plan. The **forcePlaceholders** and **forceLiterals** keywords are mutually exclusive.                                                                                                            |
-| forceSelectOrder  | This keyword forces the SQL Server database to access the tables in a join in the specified order. If two tables are joined, the first table in the statement is always accessed first. This keyword is often combined with the **forceNestedLoop** keyword.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| forUpdate         | This keyword selects records for update only. Depending on the underlying database, the records might be locked for other users.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| group by          | This keyword instructs the database to group selected records by fields.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| index             | This keyword instructs the database to sort the selected records in the manner that is defined by the index.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| index hint        | This keyword gives the database a hint to use this index to sort the selected records in the manner that is defined by the index. The database can ignore the hint. An incorrect index hint can greatly affect performance. Index hints should be applied only to SQL statements that don't have dynamic **where** clauses or **order by** clauses, and where the effect of the hint can be verified.                                                                                                                                                                                                                                                                                                                                                            |
-| join              | This keyword is used to join tables on a column that is shared by both tables. The join criteria are specified in a **where** clause, because there is no **on**. This keyword reduces the number of SQL statements that are required if you want to loop through a table and update transactions in a related table. For example, you process 500 records in a table and want to update related records in another table. If you use a nested **while select**, there will be 501 trips to the database. However, if you use a **join**, there will be just one trip to the database.                                                                                                                                                                           |
-| maxof             | This keyword returns the maximum of the fields.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| minof             | This keyword returns the minimum of the fields.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| noFetch           | This keyword indicates that no records should be fetched now. Typically, this keyword is used when the result of the **select** statement is passed on to another application object, such as a query that performs the actual fetch.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| notExists         | This keyword is selected only if there are no posts.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| optimisticLock    | This keyword forces a statement to run by using optimistic concurrency control, even if a different value is set on the table.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| order by          | This keyword instructs the database to sort the selected records by the fields in the **order by** list.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| outer             | This keyword returns all rows from the table that is named first, even if rows have no match in the table that is named second. This join is a left outer join, even though there is no **left**. There is no right outer join.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| pessimisticLock   | This keyword forces a statement to run by using pessimistic concurrency control, even if a different value is set on the table.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Keyword           | Description |
+|-------------------|-------------|
+| asc               | This keyword is an option on the **order by** or **group by** clause. It specifies an ascending sort. If neither **asc** nor **desc** is specified, the sort is ascending.  |
+| avg               | This keyword returns the average of the fields.|
+| count             | This keyword returns the number of records. |
+| crossCompany      | This keyword returns data for all companies that the user is authorized to read from. You can add a container to reduce the number of companies that are involved.  |
+| desc              | This keyword is an option on the **order by** or **group by** clause. It specifies a descending sort. If neither **asc** nor **desc** is specified, the sort is ascending. |
+| exists            | This keyword is a method that returns a Boolean value and a **join** clause. |
+| firstFast         | This keyword is a priority hint. Although the first row appears more quickly, but the total return time for this option might be slower. The **firstFast** hint is automatically issued from all pages. |
+| firstOnly         | This keyword helps speed up the fetch by returning only the first row. |
+| firstOnly10       | This keyword is the same as **firstOnly**, but it returns 10 rows instead of one. |
+| firstOnly100      | This keyword is the same as **firstOnly**, but it returns 100 rows instead of one. |
+| firstOnly1000     | This keyword is the same as **firstOnly**, but it returns 1,000 rows instead of one. |
+| forceLiterals     | This keyword instructs the kernel to reveal the actual values that are used in **where** clauses to the Microsoft SQL Server database at the time of optimization. The **forceLiterals** and **forcePlaceholders** keywords are mutually exclusive. You should not to use the **forceLiterals** keyword in **select** statements, because it could expose code to an SQL injection security threat.|
+| forceNestedLoop   | This keyword forces the SQL Server database to use a nested-loop algorithm to process a particular SQL statement that contains a join algorithm. Therefore, a record from the first table is fetched before any records from the second table are fetched. Typically, other join algorithms, such as hash joins and merge joins, are considered. This keyword is often combined with the **forceSelectOrder** keyword. |
+| forcePlaceholders | This keyword instructs the kernel *not* to reveal the actual values that are used in **where** clauses to the SQL Server database at the time of optimization. By default, this behavior is used in all statements that aren't **join** statements. The advantage of using this keyword is that the kernel can reuse the access plan for similar statements that have other search values. The disadvantage is that the access plan is computed, but the fact that data distribution might be uneven isn't considered. The access plan is an on-average access plan. The **forcePlaceholders** and **forceLiterals** keywords are mutually exclusive. |
+| forceSelectOrder  | This keyword forces the SQL Server database to access the tables in a join in the specified order. If two tables are joined, the first table in the statement is always accessed first. This keyword is often combined with the **forceNestedLoop** keyword. |
+| forUpdate         | This keyword selects records for update only. Depending on the underlying database, the records might be locked for other users. |
+| group by          | This keyword instructs the database to group selected records by fields. |
+| index             | This keyword instructs the database to sort the selected records in the manner that is defined by the index. |
+| index hint        | This keyword gives the database a hint to use this index to sort the selected records in the manner that is defined by the index. The database can ignore the hint. An incorrect index hint can greatly affect performance. Index hints should be applied only to SQL statements that don't have dynamic **where** clauses or **order by** clauses, and where the effect of the hint can be verified. |
+| join              | This keyword is used to join tables on a column that is shared by both tables. The join criteria are specified in a **where** clause, because there is no **on**. This keyword reduces the number of SQL statements that are required if you want to loop through a table and update transactions in a related table. For example, you process 500 records in a table and want to update related records in another table. If you use a nested **while select**, there will be 501 trips to the database. However, if you use a **join**, there will be just one trip to the database. |
+| maxof             | This keyword returns the maximum of the fields.  |
+| minof             | This keyword returns the minimum of the fields. |
+| noFetch           | This keyword indicates that no records should be fetched now. Typically, this keyword is used when the result of the **select** statement is passed on to another application object, such as a query that performs the actual fetch. |
+| notExists         | This keyword is selected only if there are no posts. |
+| optimisticLock    | This keyword forces a statement to run by using optimistic concurrency control, even if a different value is set on the table. |
+| order by          | This keyword instructs the database to sort the selected records by the fields in the **order by** list. |
+| outer             | This keyword returns all rows from the table that is named first, even if rows have no match in the table that is named second. This join is a left outer join, even though there is no **left**. There is no right outer join.  |
+| pessimisticLock   | This keyword forces a statement to run by using pessimistic concurrency control, even if a different value is set on the table.  |
 | repeatableRead    | This keyword specifies that the current transaction must be completed before other transactions can modify data that has been read by logic inside the current transaction. An explicit transaction is completed at either **ttsAbort** or the outermost **ttsCommit**. For a stand-alone **select** statement, the transaction duration is the duration of the **select** command. However, the database sometimes enforces the equivalent of **repeatableRead** in individual **select** statements, even if this keyword doesn't appear in your code. (The behavior depends on the method that the database uses to determine whether it should scan the tables.) For more information, see the documentation for the underlying relational database product. |
-| reverse           | Records are returned in reverse order.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| sum               | This keyword returns the sum of the fields. It can be used to sum all accounts, order lines, and so on.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| validTimeState    | This keyword filters rows from a table where the **ValidTimeStateFieldType** property is set to a value other than **None**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| reverse           | Records are returned in reverse order.  |
+| sum               | This keyword returns the sum of the fields. It can be used to sum all accounts, order lines, and so on. |
+| validTimeState    | This keyword filters rows from a table where the **ValidTimeStateFieldType** property is set to a value other than **None**. |
 
 #### Keyword examples
 
-    // asc keyword example.
-    select * from custTable
-        order by Name asc;
+```
+// asc keyword example.
+select * from custTable
+    order by Name asc;
 
-    // avg keyword example. 
-    CustTable custTable;;
-    select avg(value) from custTable;
-    print custTable.value;
+// avg keyword example. 
+CustTable custTable;;
+select avg(value) from custTable;
+print custTable.value;
 
-    // count keyword example. 
-    CustTable xCT;int64 iCountRows; ;
-    Select COUNT(RecID) from xCT;
-    iCountRows = xCT.RecID;
+// count keyword example. 
+CustTable xCT;int64 iCountRows; ;
+Select COUNT(RecID) from xCT;
+iCountRows = xCT.RecID;
 
-    // crossCompany keyword example.
-    CustTable custTable;
-    container conCompanies = ['dat','dmo'];
-    select crossCompany :conCompanies
-        * from custTable;
+// crossCompany keyword example.
+CustTable custTable;
+container conCompanies = ['dat','dmo'];
+select crossCompany :conCompanies
+    * from custTable;
 
-    // desc keyword example.
-    select * from custTable
-        order by Name desc;
+// desc keyword example.
+select * from custTable
+    order by Name desc;
 
-    // exists keyword example. 
-    while select AccountNum, Name from custTable
-        order by AccountNum
-        exists join * from ctr
-        where (ctr.AccountNum ==
-            custTable.AccountNum)
+// exists keyword example. 
+while select AccountNum, Name from custTable
+    order by AccountNum
+    exists join * from ctr
+    where (ctr.AccountNum ==
+        custTable.AccountNum)
 
-    // firstFast keyword example.
-    select firstFast custTable
-        order by AccountNum;
+// firstFast keyword example.
+select firstFast custTable
+    order by AccountNum;
 
-    // firstOnly keyword example.
-    static InventTable find(ItemIditemId, boolean update = false)
+// firstOnly keyword example.
+static InventTable find(ItemIditemId, boolean update = false)
+{
+    InventTable inventTable;
+    inventTable.selectForUpdate(update);
+    if (itemId)
     {
-        InventTable inventTable;
-        inventTable.selectForUpdate(update);
-        if (itemId)
-        {
-            select firstonly inventTable
-                index hint ItemIdx
-                where inventTable.itemId == itemId;
-        }
-        return inventTable;
+        select firstonly inventTable
+            index hint ItemIdx
+            where inventTable.itemId == itemId;
     }
+    return inventTable;
+}
 
-    // forceNestedLoop keyword example.
-    while select forceSelectOrder
-        forceNestedLoop inventTransThis
-    index hint TransIdIdx
-    where inventTransThis.InventTransId
-        == inventTrans.InventTransId
-        && inventTransThis.StatusIssue
-        <= StatusIssue::ReservOrdered
+// forceNestedLoop keyword example.
+while select forceSelectOrder
+    forceNestedLoop inventTransThis
+index hint TransIdIdx
+where inventTransThis.InventTransId
+    == inventTrans.InventTransId
+    && inventTransThis.StatusIssue
+    <= StatusIssue::ReservOrdered
 
-    // forcePlaceholders keyword example.
-    static void forcePlaceHoldersExample(Args _args){
-        SalesTable salesTable;
-        SalesLine salesLine;
-        while select forcePlaceholders salesLine
-            join salesTable
-                where salesTable.SalesId ==
-                    salesLine.SalesId
-                    && salesTable.SalesId == '10'
-        {
-            //more code
-        }
-    }
-
-    // forceSelectOrder keyword example.
-    display ForecastHasPurch hasForecastPurch(){
-        ForecastPurch forecastPurch;
-        InventDim nventDim;
-    select firstOnly forcePlaceholders
-        forceSelectOrder recId
-        from forecastPurch
-        index hint ItemIdx
-        where forecastPurch.itemId == this.itemId
-    exists join inventDim
-        index hint DimIdIdx
-        where inventDim.inventDimId == forecastPurch.inventDimId
-            && inventDim.configId == this.configId;
-        return forecastPurch.recId;
-    }
-
-    // forUpdate keyword example.
-    ttsBegin; while select forUpdate ledgerJournalTrans
-        index hint NumVoucherIdx
-        where ledgerJournalTrans.journalNum ==
-        _journalNum &&
-        ledgerJournalTrans.voucher == _voucher
+// forcePlaceholders keyword example.
+static void forcePlaceHoldersExample(Args _args){
+    SalesTable salesTable;
+    SalesLine salesLine;
+    while select forcePlaceholders salesLine
+        join salesTable
+            where salesTable.SalesId ==
+                salesLine.SalesId
+                && salesTable.SalesId == '10'
     {
-        ledgerJournalTrans.doDelete();
-        counter++;
+        //more code
     }
-    if (counter
-        && ledgerJournalTable.journalType
-        != LedgerJournalType::Periodic)
-    {
-        NumberSeq::release(
-            ledgerJournalTable.voucherSeries,
-            _voucher);
-    }
-    ttsCommit;
+}
 
-    // group by keyword example.
-    CustTable custTable;;
-    while select sum(CreditMax) from custTable
-        group by CustGroup
-    {
-        print custTable.CustGroup, " ",custTable.CreditMax;
-    }
+// forceSelectOrder keyword example.
+display ForecastHasPurch hasForecastPurch(){
+    ForecastPurch forecastPurch;
+    InventDim nventDim;
+select firstOnly forcePlaceholders
+    forceSelectOrder recId
+    from forecastPurch
+    index hint ItemIdx
+    where forecastPurch.itemId == this.itemId
+exists join inventDim
+    index hint DimIdIdx
+    where inventDim.inventDimId == forecastPurch.inventDimId
+        && inventDim.configId == this.configId;
+    return forecastPurch.recId;
+}
 
-    // index keyword example.
-    CustTable custTable;;
-    while select AccountNum, Name from custTable
-        index AccountIdx
-    {
-        print custTable.AccountNum, " ", custTable.Name;
-    }
+// forUpdate keyword example.
+ttsBegin; while select forUpdate ledgerJournalTrans
+    index hint NumVoucherIdx
+    where ledgerJournalTrans.journalNum ==
+    _journalNum &&
+    ledgerJournalTrans.voucher == _voucher
+{
+    ledgerJournalTrans.doDelete();
+    counter++;
+}
+if (counter
+    && ledgerJournalTable.journalType
+    != LedgerJournalType::Periodic)
+{
+    NumberSeq::release(
+        ledgerJournalTable.voucherSeries,
+        _voucher);
+}
+ttsCommit;
 
-    // index hint keyword example.
-    while select forUpdate ledgerJournalTrans
-        index hint NumVoucherIdx
-        where ledgerJournalTrans.journalNum
-            == _journalNum
+// group by keyword example.
+CustTable custTable;;
+while select sum(CreditMax) from custTable
+    group by CustGroup
+{
+    print custTable.CustGroup, " ",custTable.CreditMax;
+}
 
-    // join keyword example.
-    while select ledgerTable
-        join ledgerTrans
-        where ledgerTrans.accountNum == ledgerTable.accountNum
-    {
-        amountMST += ledgerTrans.amountMST;
-    }
+// index keyword example.
+CustTable custTable;;
+while select AccountNum, Name from custTable
+    index AccountIdx
+{
+    print custTable.AccountNum, " ", custTable.Name;
+}
 
-    // maxof keyword example.
-    CustTable custTable;;
-    select maxof(CreditMax) from custTable;
+// index hint keyword example.
+while select forUpdate ledgerJournalTrans
+    index hint NumVoucherIdx
+    where ledgerJournalTrans.journalNum
+        == _journalNum
 
-    // minof keyword example.
-    CustTable custTable;;
-    select minof(CreditMax) from custTable;
+// join keyword example.
+while select ledgerTable
+    join ledgerTrans
+    where ledgerTrans.accountNum == ledgerTable.accountNum
+{
+    amountMST += ledgerTrans.amountMST;
+}
 
-    // noFetch keyword example.
-    select noFetch custTable
-        order by AccountNum
+// maxof keyword example.
+CustTable custTable;;
+select maxof(CreditMax) from custTable;
 
-    // notExists keyword example.
-    while select AccountNum, Name from custTable
-        order by AccountNum
-        notExists join * from ctr
-        where (ctr.AccountNum ==
-            custTable.AccountNum)
+// minof keyword example.
+CustTable custTable;;
+select minof(CreditMax) from custTable;
 
-    // optimisticLock keyword example.
-    select optimisticLock custTable
-        where custTable.AccountNum > '1000'
+// noFetch keyword example.
+select noFetch custTable
+    order by AccountNum
 
-    // order by keyword example.
-    select * from custTable
-        order by accountNum desc
-        where custTable.AccountNum > "100";
+// notExists keyword example.
+while select AccountNum, Name from custTable
+    order by AccountNum
+    notExists join * from ctr
+    where (ctr.AccountNum ==
+        custTable.AccountNum)
 
-    // outer keyword example.
-    while select AccountNum
-        from custTable
-        order by AccountNum
-        outer join * from custBankAccount
-        where custBankAccount.AccountNum ==
-            custTable.AccountNum
-    {
-        print custTable.AccountNum,
-        " , ", custBankAccount.DlvMode;
-    } 
+// optimisticLock keyword example.
+select optimisticLock custTable
+    where custTable.AccountNum > '1000'
 
-    // pessimisticLock keyword example.
-    select pessimisticLock custTable
-        where custTable.AccountNum > '1000';
+// order by keyword example.
+select * from custTable
+    order by accountNum desc
+    where custTable.AccountNum > "100";
 
-    // reverse keyword example.
-    select reverse custTable
-        order by AccountNum;
+// outer keyword example.
+while select AccountNum
+    from custTable
+    order by AccountNum
+    outer join * from custBankAccount
+    where custBankAccount.AccountNum ==
+        custTable.AccountNum
+{
+    print custTable.AccountNum,
+    " , ", custBankAccount.DlvMode;
+} 
 
-    // sum keyword example.
-    CustTable custTable;;
-    select sum(CreditMax) from custTable;
+// pessimisticLock keyword example.
+select pessimisticLock custTable
+    where custTable.AccountNum > '1000';
 
-    // validTimeState keyword example.
-    static void VtsJob1(Args _args)
-    {
-        // A validTimeState table.
-        CustPackingSlipTransHistory xrec1;
-        utcDateTime myDateFrom , myDateTo;
-        anytype myAnytype = -1;
-        myDateFrom = DateTimeUtil::utcNow();
-        myDateTo = myDateFrom;
-        SELECT
-            validTimeState(myDateFrom, myDateTo)
-                *
-                FROM xrec1;
-        myAnytype = xrec1.getFieldValue("RecId");
-        info(myAnytype);
-    }
+// reverse keyword example.
+select reverse custTable
+    order by AccountNum;
+
+// sum keyword example.
+CustTable custTable;;
+select sum(CreditMax) from custTable;
+
+// validTimeState keyword example.
+static void VtsJob1(Args _args)
+{
+    // A validTimeState table.
+    CustPackingSlipTransHistory xrec1;
+    utcDateTime myDateFrom , myDateTo;
+    anytype myAnytype = -1;
+    myDateFrom = DateTimeUtil::utcNow();
+    myDateTo = myDateFrom;
+    SELECT
+        validTimeState(myDateFrom, myDateTo)
+            *
+            FROM xrec1;
+    myAnytype = xrec1.getFieldValue("RecId");
+    info(myAnytype);
+}
+```
 
 ## select statement examples
 The following examples show how you can use **select** statements.
@@ -620,7 +622,7 @@ You can achieve the same effect by using the **delete\_from** keyword.
 
 ### select statements on fields
 
-You can use a <strong>select</strong> statement in a lookup on a field. After a <strong>select</strong> statement that fetches a record in a table, you can enter <strong>.fieldName</strong> to reference a field in the table. These <strong>select</strong> statements must be used in expressions. A <em>normal **select</em>* statement* differs from a <em>field **select</em>* statement*:
+You can use a **select** statement in a lookup on a field. After a **select** statement that fetches a record in a table, you can enter **.fieldName** to reference a field in the table. These **select** statements must be used in expressions. A *normal **select** statement* differs from a *field **select** statement*:
 
 -   The field **select** statement operates directly on a table.
 -   The normal **select** statement operates on a table buffer variable.
@@ -691,7 +693,7 @@ In the following code, the clustered index is used instead of the non-clustered 
 
 ### Writing a select statement as an expression
 
-You can use a <strong>select</strong> statement as an expression. This type of <strong>select</strong> statement is known as an <em>expression **select</em>* statement<em>. A table buffer variable can't be used in an expression **select</em>* statement. The name of the table must be used in the <strong>from</strong> clause. One limitation of expression <strong>select</strong> statements is that the <strong>join</strong> keyword isn't supported in an expression join.
+You can use a **select** statement as an expression. This type of **select** statement is known as an *expression **select** statement*. A table buffer variable can't be used in an expression **select** statement. The name of the table must be used in the **from** clause. One limitation of expression **select** statements is that the **join** keyword isn't supported in an expression join.
 
 ### expression select examples
 
@@ -1061,7 +1063,7 @@ The following example shows a join of three tables on an **insert\_recordset** s
     }
 
 ## update\_recordset
-The <strong>update\_recordset</strong> statement lets you update multiple rows in one trip to the server. Therefore, the power of SQL Server can help improve the performance of some tasks. The *<strong><em>update\_recordset</em></strong>* statement resembles <strong>delete\_from</strong> in X++ and <strong>update set</strong> in SQL. It doesn't retrieve each record separately by fetching, changing, and updating, Instead, it works on an SQL-style record set on the database server side. If the <strong>update</strong> method is overridden, the implementation falls back to a classic looping construction, where one record at a time is updated. (This behavior resembles the behavior of <strong>delete\_from</strong> for deletions.) Therefore, the construction works on temporary tables and whole table–cached tables by using the looping construction.
+The **update\_recordset** statement lets you update multiple rows in one trip to the server. Therefore, the power of SQL Server can help improve the performance of some tasks. The ****update\_recordset**** statement resembles **delete\_from** in X++ and **update set** in SQL. It doesn't retrieve each record separately by fetching, changing, and updating, Instead, it works on an SQL-style record set on the database server side. If the **update** method is overridden, the implementation falls back to a classic looping construction, where one record at a time is updated. (This behavior resembles the behavior of **delete\_from** for deletions.) Therefore, the construction works on temporary tables and whole table–cached tables by using the looping construction.
 
 ### Example: Update that is based on a calculated value
 
@@ -1341,7 +1343,7 @@ There are situations where record set–based operations can be converted to slo
 |Use this setting for overrides|Not applicable|
 
 
-You can use the settings that are shown for <strong>Use this setting for overrides</strong> to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the <strong>skip\</strong>* settings are also ignored. For example, in the following code, the <strong>insert</strong> method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
+You can use the settings that are shown for **Use this setting for overrides** to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
 
     public void tutorialRecordInsertList()
     {
