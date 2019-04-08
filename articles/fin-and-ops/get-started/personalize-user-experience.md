@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Personalize the user experience
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 
@@ -53,7 +54,7 @@ The **User options** page contains several system-wide settings for the current 
 - **Account** – Adjust your user name and other account-related options.
 - **Workflow** – Select workflow-related options.
 
-In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to see and manage the personal changes you have made to pages in the system. **Feature callouts**, the popups that introduce you to new features in the product, can also be reset from this tab so that you are again alerted about previously encountered features.  
+In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to see and manage the personal changes you have made to pages in the system. **Feature callouts**, the popups that introduce you to new features in the product (available in Platform update 26), can also be reset from this tab so that you are again alerted about previously encountered features.  
 
 ## Implicit personalizations
 
