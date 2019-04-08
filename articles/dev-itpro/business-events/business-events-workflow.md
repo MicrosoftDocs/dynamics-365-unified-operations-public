@@ -75,3 +75,14 @@ There are five different categories of workflow business events. The category wi
      - These events will fire when a workflow work item is created for a user. All enabled workflow tasks and workflow approvals within a workflow instance will be represented in this category. 
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_WorkItem", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_WorkItem"
      - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
+
+## Completion of a work item in Flow
+The workflow business events are a particularly good target for triggering approval flows and the **workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Flow.
+An approval or task work item can be completed in Flow via the following steps:
+- Trigger the Flow using the **when a business event occurs** trigger targeting the appropriate **workflow workitem** event
+- Validate that the **workflow workitem**  contains a valid set of information so it is ready for completion by calling the **Validate** method on the **WorkflowWorkItems** entity. 
+- If the workitem is not ready for completion, then send a notification to the assigned person to let them know there is a workitem that needs their attention.
+- If the workitem is ready for completion, then request a response from the assigned person by sending the available response options to them.
+- Once a response is provided, complete the workitem with that response by calling the **Complete** method on the **WorkflowWorkItems** entity. 
+
+Template examples of these scenarios will be available soon as *Send a Finance and Operations workflow approval/task workitem to the assigned user for completion*. When those templates is released it will be linked here for easy reference.
