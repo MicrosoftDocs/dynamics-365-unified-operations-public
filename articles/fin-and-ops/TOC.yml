@@ -138,8 +138,6 @@
         href: get-started/tasks/change-banner-or-logo.md
       - name: Navigation search
         href: get-started/navigation-search.md
-      - name: Feature callouts
-        href: ../dev-itpro/user-interface/feature-callouts.md
       - name: Personalize the user experience
         href: get-started/personalize-user-experience.md
       - name: Create and work with custom fields
