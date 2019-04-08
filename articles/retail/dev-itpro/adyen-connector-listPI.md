@@ -44,6 +44,7 @@ This topics describes the setup and capabilities related to saving payment instr
 | Card token | A token that is provided by the payment processor for storage in the point of sale system. This card token can only be used by the merchant receiving the token and is generally harmless outside of the system. May also be referred to as 'Card reference'. Recurring card token |
 | Auth(orization) token | When a point of sale system makes an authorization request to a payment processor, the payment processor will provide a unique ID back to the point of sale system as part of the response to that request. This authorization token, or authorization reference, can later be used when calling the processor to perform actions such as reversing or voiding the authorization. Most commonly the authorization token is used to capture funds when an order is fulfilled or a transaciton is being finalized. |
 | List PI | The capability described in this document is often generically referred to as "List PI". List PI refers to the ability to save payment instruments and list previously used payment instruments during subesquent checkouts in through the same e-commerce website.
+| Named user | An e-commerce customer who is logged into the online storefront at the time of checkout. Named users have a unique customer ID and their online purchases are always mapped to the same customer ID when they are signed into the online storefront. 
 
 ## Overview
 
@@ -63,6 +64,21 @@ This capability requires the following components and setup steps:
 
 **E-commerce integration:** An online storefront integration to Microsoft Dynamics 365 for Retail. For more information related to the Retail e-commerce SDK, visit the [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) topic.
 
+**Online payments configuration:** Out of box, List PI is supported by the Dynamics 365 Payment Connector for Adyen. To configure payments for online stores, visit the [Adyen payment connector topic](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). 
+
+In addition to the e-commerce setup steps, provided in the link above, set the "Allow saving payment information in e-commerce" parameter to 'Yes'. 
+
+**Omni-channel payments configuration:** In the back office, navigate to Retail --> Headquarters setup --> Parameters --> Retail shared parameters. Select the "Omni-channel payments tab and set "Use omni-channel payments" to 'Yes'. 
+
+### Functional experience
+
+#### Checkout as guest
+
+When an e-commerce visitor opts for guest checkout, a customer record will not be created during checkout and they will not be able to to save payments for their next visit. 
+
+#### Named customer checkout
+
+When a named customer navigates to the payments section of the checkout, they will experience List PI. If it is the first checkout for a signed in customer, they will see as part of the credit card entry form an option to "Save for my next visit
 
 The retail payment SDK relies on two sets of payment APIs. The first, is called iPayment processor. This set of APIs is used to implement card not present payment connectors for use in call center and e-commerce. More information about the iPaymentProcessor interface can be found in this [whitepaper](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) covering payments. 
 
