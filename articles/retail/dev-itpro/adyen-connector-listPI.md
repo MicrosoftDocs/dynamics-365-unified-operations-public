@@ -59,6 +59,9 @@ For more information about implementing payment connectors and the retail SDK in
 
 ### Setup
 
+This capability requires the following components and setup steps:
+
+**E-commerce integration:** An online storefront integration to Microsoft Dynamics 365 for Retail. For more information related to the Retail e-commerce SDK, visit the [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) topic.
 
 
 The retail payment SDK relies on two sets of payment APIs. The first, is called iPayment processor. This set of APIs is used to implement card not present payment connectors for use in call center and e-commerce. More information about the iPaymentProcessor interface can be found in this [whitepaper](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) covering payments. 
