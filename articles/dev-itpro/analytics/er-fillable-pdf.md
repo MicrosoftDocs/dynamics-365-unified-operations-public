@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Design ER configurations to fill out PDF templates
-description: This topic provides information about how to Design an ER format to fill out a PDF template.
+title: Design ER configurations to fill in PDF templates
+description: This topic provides information about how to design an Electronic reporting (ER) format to fill in a PDF template.
 author: NickSelin
 manager: AnnBe
 ms.date: 04/01/2019
@@ -30,365 +30,285 @@ ms.dyn365.ops.version: 10.0.1
 
 ---
 
-# Design ER configurations to fill out PDF templates
+# Design ER configurations to fill in PDF templates
 
 [!include[banner](../includes/banner.md)]
 
-
-The following steps explain how a user in either the System administrator or
-Electronic reporting developer role can configure an Electronic reporting (ER)
-format to generate reports as PDF files by using fillable PDF documents as
-report templates. These steps can be performed in any company of Microsoft
-Dynamics 365 for Finance and Operations (Finance and Operations) or Regulatory
-Configuration Services (RCS).
+The procedures in this topic are examples that show how a user in either the **System administrator** role or the **Electronic reporting developer** role can configure an Electronic reporting (ER) format that generates reports as PDF files by using fillable PDF documents as report templates. These steps can be performed in any company of Microsoft Dynamics 365 for Finance and Operations or Regulatory Configuration Services (RCS).
 
 ## Prerequisites
 
-To complete the examples in this topic, you must have one of the following access depending on what service is used to compete these steps:
+Before you begin, you must have one of the following types of access, depending on the service that you use to complete the procedures in this topic:
 
-Access to Finance and Operations for one of the following roles:
+- Access to Finance and Operations for one of the following roles:
 
--   Electronic reporting developer
+    - Electronic reporting developer
+    - Electronic reporting functional consultant
+    - System administrator
 
--   Electronic reporting functional consultant
+- Access to RCS for one of the following roles:
 
--   System administrator
+    - Electronic reporting developer
+    - Electronic reporting functional consultant
+    - System administrator
 
-Access to RCS for one of the following roles:
-
--   Electronic reporting developer
-
--   Electronic reporting functional consultant
-
--   System administrator
-
-You also must first complete the steps in the [Create a configuration provider and mark it as active](/tasks/er-configuration-provider-mark-it-active-2016-11.md)
+You must also complete the [Create a configuration provider and mark it as active](/tasks/er-configuration-provider-mark-it-active-2016-11.md)
 procedure.
 
-In advance, you must also download the following files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=000000):
+Finally, you must download the following files from [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=000000).
 
-| **Content description**                 | **File name**                                 |
-|-----------------------------------------|-----------------------------------------------|
-| Template for the 1st page of the report | IntrastatReportTemplate1.pdf                  |
-| Template for other pages of the report  | IntrastatReportTemplate2.pdf                  |
-| Sample ER format                        | Intrastat report (PDF).version.1.1.xml        |
-| Sample ER format                        | Intrastat (import from Excel).version.1.1.xml |
-| Sample dataset                          | Intrastat sample data.xlsx                    |
+| Content description                       | File name                                     |
+|-------------------------------------------|-----------------------------------------------|
+| Template for the first page of the report | IntrastatReportTemplate1.pdf                  |
+| Template for other pages of the report    | IntrastatReportTemplate2.pdf                  |
+| Sample ER format                          | Intrastat report (PDF).version.1.1.xml        |
+| Sample ER format                          | Intrastat (import from Excel).version.1.1.xml |
+| Sample dataset                            | Intrastat sample data.xlsx                    |
 
 ## Design the format configuration
 
 ### Get access to the list of configurations provided by Microsoft
 
-1.  Go to **Organization administration \> Workspaces \> Electronic reporting**.
+1. Go to **Organization administration \> Workspaces \> Electronic reporting**.
+2. Make sure that the **Litware, Inc.** provider is available and marked as active.
+3. On the tile for the **Microsoft** provider, select **Repositories**.
 
-2.  Make sure that the 'Litware, Inc.' provider is available and marked as active.
+    > [!NOTE]
+    > If a repository of the **LCS** type already exists, skip the remaining steps of this procedure.
 
-3.  Click **Repositories** on the 'Microsoft' provider tile.
-
-    1.  If a repository of the ‘LCS’ type already exists, skip the remaining steps of the current sub-task.
-
-4.  Click **Add** to open the drop dialog.
-
-5.  In the **Configuration repository type** field, select 'LCS'.
-
-6.  Click **Create repository**.
-
-7.  Click **OK**.
+4. Select **Add**.
+5. In the drop-down dialog box, in the **Configuration repository type** field group, select the **LCS** option.
+6. Select **Create repository**.
+7. Select **OK**.
 
 ### Get the model configurations provided by Microsoft
 
-1.  Click **Show filters**.
+1. On the left side of the **Configuration repositories** page, select the **Show filters** button (the funnel symbol).
+2. Add a filter for a value of **LCS** in the **Type** field, and use the **begins with** operator.
+3. Select **Apply**.
+4. Select **Open**.
+5. In the tree, select **Intrastat model**.
+6. On the **Versions** FastTab, select version **1**.
 
-2.  Apply the following filter: Enter a filter value of "LCS" on the "Type" field using the "begins with" filter operator.
+    > [!NOTE]
+    > If the **Import** button on the **Versions** FastTab is unavailable, skip the remaining steps of this procedure.
 
-3.  Click **Apply**.
-
-4.  Click **Open**.
-
-5.  In the tree, select 'Intrastat model'.
-
-6.  In the **Versions** fast tab, select the version 1.
-
-    1.  If the **Import** button in the **Versions** fast tab is disabled, skip the remaining steps of the current sub-task.
-
-7.  Click **Import**.
-
-8.  Click **Yes** to confirm the import of the selected version of 'Intrastat
-    model'.
-
+7. Select **Import**.
+8. Select **Yes** to confirm the import of the selected version of the **Intrastat model** model configuration.
 
 ### Create a new format configuration
 
-1.  Click **Reporting configurations**.
+1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
+2. In the tree, select **Intrastat model**.
+3. Select **Create configuration**.
 
-2.  In the tree, select 'Intrastat model'.
+    > [!NOTE]
+    > If the **Create configuration** button isn't available, you must turn on design mode on the **Electronic reporting parameters** page that can be opened from the **Electronic reporting** workspace.
 
-3.  Click **Create configuration** to open the drop dialog.
+4. In the drop-down dialog box, in the **New** field group, select the **Format based on data model Intrastat** option.
+5. In the **Name** field, enter **Intrastat report (PDF)**.
+6. In the **Description** field, enter **Intrastat report in PDF format**.
 
-> [!NOTE]
-> If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page that is accessible from the **Electronic reporting** workspace.
+    > [!NOTE]
+    > The active configuration provider is automatically entered. This provider will be able to maintain this configuration. Although other providers can use this configuration, they won't be able to maintain it.
 
-4.  In the **New** field, enter **Format based on data model Intrastat**.
-
-5.  In the **Name** field, type **Intrastat report (PDF)**.
-
-6.  In the **Description** field, type **Intrastat report in PDF format**.
-
-> [!NOTE]
-> The active configuration provider is automatically entered here. This provider will be able to maintain this configuration. Other providers can use this configuration but will not be able to maintain it.
-7. (Optional) A particular format of electronic document can be defined in the **Format type** field. Leave this field blank if you want to specify a format later at design time starting using in the ER Operations particular format elements. When you select the **PDF** option, the ER Operations designer will offer to you at design time the only format elements applicable to generate document in only PDF
+7. Optional: In the **Format type** field, you can select a specific format of electronic document. Leave this field blank if you want to specify a format later at design time starting using in the ER Operations particular format elements. If you select **PDF**, at design time, the ER Operations designer will offer just the format elements that are applicable only to documents that are generated in PDF format.
 format.
+8. Select **Create configuration**.
 
-8.  Click **Create configuration**.
+A new ER format configuration is created. You can use the draft version of this configuration to store the ER format component that is designed to generate electronic documents in PDF format.
 
-A new ER format configuration has been created. The draft version of it can be used to store the ER format component that is designed to generate electronic documents in PDF format.
+### Design the format of an electronic document
 
-### Design a format of an electronic document
+Next, in the ER format configuration that you created, you will design the ER format that generates the **Intrastat control** report in PDF format. The first page of this report must show a summary of the report and details of the foreign trade transactions that are reported on. The other pages must show only details of the foreign trade transactions that are reported on. Because the report pages that are generated must have different layouts, two different templates in PDF format will be used in the ER format.
 
-In the added ER configuration, you will design the ER format to generate the Intrastat control report in PDF format. The first page of the report must present the summary of this report and details of reported foreign trade transactions. Other pages of this report must only present details of reported foreign trade transactions. As you expect to have in generated report pages with different layouts, two different templates in PDF format will be used in this ER format.
+In any PDF viewer, open the PDF templates that you downloaded. Notice that each template contains multiple fields that must be filled in. In each template, details of foreign trade transactions are presented as 42 rows, each of which has nine fields. The row number appears at the end of each field's name (for example, **Date 1**…**Date 42** and **Commodity 1**…**Commodity 42**).
 
-Open downloaded PDF templates by using any of PDF viewers available for review. Note that each template contains multiple fields that must be filled out. Details of foreign trade transactions are presented in each template as 42 rows each of which contains 9 fields. They are named in PDF template as having the row number at the end of field’s name (‘Date 1’ … ‘Date 42’, …, ‘Commodity 1’ …‘Commodity 42’, etc.).
+The following illustration shows the PDF template for the first page of the report.
 
 ![Template 1](media/rcs-ger-filloutpdf-template1.png)
 
+The following illustration shows the PDF template for other pages of the report.
+
 ![Template 2](media/rcs-ger-filloutpdf-template2.png)
 
-1.  Click **Designer**.
+1. On the **Configurations** page, select **Designer**.
+2. Select **Add root**.
+3. In the drop-down dialog box, in the tree, select **PDF \> PDF Merger**.
 
-2.  Click **Add root** to open the drop dialog.
+    When you select the **PDF Merger** element as the root element of the format, all PDF documents that are generated at run time will be merged into a single final PDF document. If you need only one PDF template to generate all the required documents by using the ER format that you design, you can select **PDF file** as the root element.
 
-3.  In the tree, select 'PDF\\PDF Merger'.
+4. In the **Name** field, enter **Output**.
+5. In the **Language preferences** field, select **User preference**. The report will be generated in the preferred language of the user who runs it.
+6. In the **Culture preferences** field, select **User preference**. Values and dates that are presented on the pages of the report will be formatted based on the preferred locale of the user who runs the report.
+7. Select **OK**.
+8. On the Action Pane, on the **Import** tab, select **Import from PDF**.
 
-You selected the **PDF Merger** element as the root element of the format to merge all generated at run time PDF documents into a single final PDF document.
+    When a fillable PDF document is imported as a template for this ER format, all the required ER format elements (**PDF file**, **Field group**, and **Field** elements) are automatically created in the format that is designed, based on the structure of the PDF document that is imported.
 
-Note that the **PDF file** element can be selected as the root element as well. This can be done when the only one PDF template is needed for generation of required documents by using designed ER format.
+9. Select **Browse**. Navigate to and select the **IntrastatReportTemplate1.pdf** file that you downloaded earlier as a prerequisite.
+10. Select **OK**.
 
-1.  In the **Name** field, type 'Output'.
+    The selected file is loaded, and the **Template** field in the **Import from PDF** dialog box is filled in.
 
-2.  In the **Language preferences** field, select the ‘User preference’ option.
+11. Set the **Group fields** option to **Yes**. If the selected PDF document contains any field groups, they will be used to group the ER format elements that are created. A **Field group** format element will be created for this purpose.
 
-    1.  Select this option to generate this report in the language preferred by a user running this report.
+    If this option is set to **No**, the required ER format elements will be created as a flat list of elements that are nested under the **PDF File** format element that is created.
 
-3.  In the **Culture preferences** field, select the ‘User preference’ option.
+12. Select **OK**.
 
-    1.  Select this option to present on the pages of generated report values and dates that are formatted based on the locale preferred by a user running this report.
+    ![Import from PDF dialog box](media/rcs-ger-filloutpdf-importtemplate.png)
 
-4.  Click **OK**.
+13. In the tree, expand **Output**.
 
-5.  On the Action Pane, click **Import**.
+    Notice that the **PDF File** component has been automatically created to manage the creation of the first page of the report that is generated at run time.
 
-6.  Click **Import from PDF**.
+14. In the tree, expand **Output \> PDF File**.
 
-    1.  When a fillable PDF document is imported as a template of this ER format, necessary ER format elements (**PDF file** ones, **Field group** ones, **Field** ones) are automatically created in the designing format based on the structure of the referring PDF document.
+    Notice that the structured list of format elements has been automatically created in this ER format, based on the structure of the fillable PDF document that you imported earlier.
 
-7.  Click **Browse**.
+15. In the tree, select **Output \> PDF File**.
+16. In the **Name** field, enter **Page 1**.
 
-    1.  Navigate to and select **IntrastatReportTemplate1.pdf** that you previously downloaded.
+    This format element will be used to generate the first page of the **Intrastat control** report. That page will show a summary of the report and details of foreign trade transactions.
 
-8.  Click **OK**.
+    If you leave the **Language preferences** field blank, the **Language preferences** setting of the parent **PDF Merger** element will determine the language of the report that is generated by using this format element. You can select another value to override the setting of the parent element.
 
-    1.  When the load of the selected file will have been completed, the **Template** field will have been filled out on the current page.
+    If you leave the **Culture preferences** field blank, the **Culture preferences** setting of the parent **PDF Merger** element will determine the locale of the report that is generated by using this format element. The locale determines the format of values and dates on the pages of the report. You can select another value to override the setting of the parent element.
 
-9.  Select **Yes** in the **Group fields** field.
+17. On the Action Pane, select the **Import** tab. Notice that the **Update from PDF** button has become available for selected format element, **PDF File**.
 
-    1.  When you turn this option on, field groups (if any) of selected PDF document will be used for grouping of creating ER format elements. Necessary **Field group** format element will be created for that. When this option is off, necessary ER format elements are created as a flat list of elements nested under the created **PDF File** format element.
+    You can use this button to import the updated PDF template to the edited format. When the updated PDF template is imported, the list of format elements will be changed accordingly:
 
-10. Click **OK**.
+    - For any new fields in the updated PDF template, new format elements are created in the edited ER format.
+    - If the updated PDF template no longer includes fields that correspond to any existing format elements in the edited ER format, those format elements are deleted from the ER format.
 
-![Import from PDF dialog](media/rcs-ger-filloutpdf-importtemplate.png)
+18. On the **Format** tab, select **Attachments**.
 
-1.  In the tree, expand 'Output'.
+    Notice that the imported PDF document is attached to the edited ER format.
 
-    1.  Note that the **PDF File** component has been automatically created to manage the creation of the first page of the report generating at run time.
+    ![PDF attachment preview](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
-2.  In the tree, expand 'Output\\PDF File'.
+19. Continue to design this format by importing the second PDF template, adding necessary bindings to data sources, and so on.
 
-    1.  Note that the structured list of format elements has been automatically created in this ER format based on the structure of the imported fillable PDF document.
+    To learn how new **PDF Merger**, **PDF File**, **Field group** and **Field** format elements can be used to generate documents in PDF format, you can import and analyze the sample ER format.
 
-3.  In the tree, select 'Output\\PDF File'.
-
-4.  In the **Name** field, type the ‘Page 1’ value.
-
-    1.  This format element will be used to generate the first page of the control report showing report’s summary and details of foreign trade transactions.
-
-    2.  As the **Language preferences** field is blank, the **Language preferences** setting of the parent **PDF Merger** element will be used to specify the language code for report generation by using this format element. You can select another option to override the setting of the parent element.
-
-    3.  As the **Culture preferences** field is blank, the **Culture preferences** setting of the parent **PDF Merger** element will be used to specify the locale for values and dates formatting in the pages of the report generated by using this format element. generation by using this format element. You can select another option to override the setting of the parent element.
-
-5.  On the Action Pane, click **Import**.
-
-    1.  Note that the **Update from PDF** action became available for selected format element **PDF File**. It can be used to import the updated PDF template to the edited format. When the updated PDF template is imported, the list of format elements will be changed accordingly:
-
-        1.  New format element will be created in the editing ER format for new fields of the updated PDF template.
-
-        2.  Existing format elements will be deleted from the editing ER format if the updated PDF template does not contain corresponding to such format elements fields any longer.
-
-6.  Click **Attachments**.
-
-    1.  Note that the imported PDF document is attached to the edited format.
-
-![PDF attachment preview](media/rcs-ger-filloutpdf-attachedtemplate.png)
-
-You can continue designing this format by importing the second PDF template, adding necessary bindings to data sources, etc. To learn how new format elements **PDF Merger**, **PDF File**, **Field group** and **Field** can be used to generate documents in PDF format, the sample ER format can be imported and analyzed.
-
-1.  Close the page.
-
-2.  Click **Save**.
-
-3.  Close the page.
-
-4.  Click **Delete**.
-
-5.  Click **Yes**.
+20. When you've finished, close the page.
+21. Select **Save**.
+22. Close the page.
+23. Select **Delete**.
+24. Select **Yes**.
 
 ### Import the format configuration
 
-You will import the already designed sample ER format to generate the Intrastat control report in PDF format. The first page of the report must present the summary of this report and details of reported foreign trade transactions. Other pages must only present details of reported foreign trade transactions.
+Next, you will import the sample ER format that you previously downloaded to generate the **Intrastat control** report in PDF format. The first page of the report must show a summary of the report and details of the foreign trade transactions that are reported on. The other pages must show only details of the foreign trade transactions that are reported on.
 
-1.  Click **Exchange**.
-
-2.  Click **Load from XML file**.
-
-3.  Click **Browse**.
-
-    1.  Navigate to and select **Intrastat report (PDF).version.1.1.xml** that you previously downloaded.
-
-4.  Click **OK**.
-
-5.  In the tree, expand 'Intrastat model'.
-
-6.  In the tree, select 'Intrastat model\\Intrastat report (PDF)'.
+1. On the **Configurations** page, select **Exchange \> Load from XML file**.
+2. Select **Browse**. Navigate to and select the **Intrastat report (PDF).version.1.1.xml** file that you downloaded earlier as a prerequisite.
+3. Select **OK**.
 
 ## Analyze the format configuration
 
 ### Format layout
 
-1.  Click **Designer**.
+1. On the **Configurations** page, in the tree, select **Intrastat model \> Intrastat report (PDF)**.
+2. Select **Designer**.
+3. Select **Show details**.
+4. In the tree, expand **Output: PDF Merger**.
 
-2.  Click **Show details**.
+    Notice that this ER format contains two **PDF File** elements, each of which uses a different PDF template. One template is used to generate the first page of the report in PDF format, and the other template is used to generate the other pages.
 
-3.  In the tree, expand 'Output: PDF Merger'.
+5. In the tree, expand **Output: PDF Merger \> Page 1: PDF File (IntrastatReportTemplate1)**.
+6. In the tree, expand **Output: PDF Merger \> Page N: PDF File (IntrastatReportTemplate2)**.
 
-4.  In the tree, expand 'Output: PDF Merger\\Page 1: PDF File (IntrastatReportTemplate1)'.
-
-5.  In the tree, expand 'Output: PDF Merger\\Page N: PDF File (IntrastatReportTemplate2)'.
-
-Note that this format contains 2 **PDF File** elements using different PDF templates to generate the first and other pages of outgoing document in PDF format. Due to different content of using templates, the structure of nested format elements of **PDF File** elements is different.
+    Notice that, because the content of the two PDF templates differs, the structure of the nested format elements for the two **PDF File** elements also differs.
 
 ### Format mapping
 
-1.  Click the **Mapping** tab.
+1. On the **Format designer** page, select the **Mapping** tab.
+2. In the tree, expand **Paging \> Pages**.
 
-2.  In the tree, expand ‘Paging’.
+    ![Formula designer page where the model tree is expanded](media/rcs-ger-filloutpdf-reviewformat.png)
 
-3.  In the tree, expand ‘Paging\\Pages’.
+    Note the following details:
 
-![Screenshot of Formula designer with model tree expanded](media/rcs-ger-filloutpdf-reviewformat.png)
+    - The **Output \> Page 1** format element of the **PDF File** type isn't bound to any data source, and the **Enabled** expression of this format element is empty. Therefore, at run time, the **IntrastatReportTemplate1** PDF template will be filled in only one time when an individual PDF document is generated.
+    - The **Output \> Page N** format element of the **PDF File** type is bound to the **Paging.PageN** data source of the **Record list** type, and the **Enabled** expression of this format element is empty. Therefore, at run time, the **IntrastatReportTemplate2** PDF template will be filled in for each record from the bound record list when an individual PDF document is generated.
+    - Because the **Page 1: PDF File** and **Page N: PDF File** format elements are children of the **Output: PDF Merger** format element, all PDF documents that are filled in will be merged into a single final PDF document.
+    - The **Paging.Page1** and **Paging.PageN** data sources are configured as filters of records from the **Paging.Pages** data source. This data source is configured to split the whole set of foreign trade transactions into batches. Each batch contains up to 42 records. The following ER expression is used to split the transactions into batches:
 
-Note that the ‘'Output\\Page 1’ format element of the **PDF File** type is not bound to any of data sources and the **Enabled** expression of this format element is empty. It meant that at run time the PDF template ‘IntrastatReportTemplate1’ will be filled out only once generating an individual PDF document.
+        SPLITLIST(Totals.CommodityRecord,42)
 
-Note that the ‘'Output\\Page N’ format element of the **PDF File** type is bound to the data source ‘Paging.PageN’ of the **Record list** type and the **Enabled** expression of this format element is empty. It meant that at run time the PDF template ‘IntrastatReportTemplate2’ will be filled out for each record from the bound record list generating an individual PDF document.
+    - The **Paging.Pages** data source contains the **Paging.Pages.Enumerated** element that returns the details of each record that is included in a batch. These details include the record's sequence in the current batch (the **Paging.Pages.Enumerated.Number** field). The **Paging.Pages.Enumerated.Number** field is used in the **Name** expression of **PDF Field** format elements to dynamically generate a field name that is based on the transaction number in a batch. The field name that is generated is then used to fill in the correct PDF field in the PDF template that is used.
+    - The **Output \> Page N \> Details 2** format element of the **PDF Group** type is bound to the **Paging.PageN.Enumerated** data source (or **\@.Enumerated** if the **Relative path** view mode is used) of the **Record list** type. Therefore, at run time, the nested elements of this PDF group will be filled in for each record from the bound record list. In this way, individual PDF lines are virtually generated. Therefore, in this respect, the behavior of this format element resembles the behavior of the **XML \> Sequence** and **Text \> Sequence** format elements.
 
-As the ‘Page 1’ and ‘Page N’ **PDF File** format elements are children of the ‘Output’ **PDF Merger** format element, all filled PDF documents will be merged in a single final PDF document.
+3. In the tree, expand **Output \> Page N \> Details2**.
+4. In the tree, select **Output \> Page N \> Details2 \> PageFooter**.
 
-Note that ‘Paging.Page1’ and ‘Paging.PageN’ data sources are configured as filters of records from the ‘Paging.Pages’ data source. This data source is configured to split the entire set of foreign trade transactions into batches containing up to 42 records each. The following ER expression is used for this:
-SPLITLIST(Totals.CommodityRecord,42). The ‘Paging.Pages’ data source also contains the ‘Paging.Pages.Enumerated’ element returning details of each record in a batch including the record sequence in the current batch (‘Paging.Pages.Enumerated.Number ’ field). This field is used in the Name expression of **PDF Field** format elements to dynamically generate a field name depending on the transaction number in a batch to fill out proper PDF field in using PDF template.
+    Notice that the **Name** attribute of this format element is defined as **PageFooter**. Also notice that the **Name** expression of the format element is empty.
 
-Note that the ‘'Output\\Page N\\Details 2’ format element of the **PDF Group** type is bound to the data source ‘Paging.PageN.Enumerated’ (or ‘\@.Enumerated’ by using the **Relative path** view mode) of the **Record list** type. It meant that at run time the nested elements of this PDF group will be filled out for each record from the bound record list virtually generating an individual PDF line. From this perspective, the behavior of this format element is similar to the behavior of **XML\\Sequence** and **Text\\Sequence** format elements.
+5. In the tree, select **Output \> Page N \> Details2 \> Correction 1**.
 
-1.  In the tree, expand 'Output\\Page N\\Details2’.
+    Notice that the **Name** attribute of this format element is defined as **Correction 1**. Also notice that the **Name** expression of the format element is defined as **Paging.FldName("Correction",\@.Number)**.
 
-2.  In the tree, select 'Output\\Page N\\Details2\\PageFooter’.
+![Format designer where a mapping is selected](media/rcs-ger-filloutpdf-reviewformat2.png)
 
-    1.  Note that the **Name** attribute of this format element is defined as follows: ‘PageFooter’.
+Note that the **Field** format element is used to fill in an individual field of a fillable PDF document that is defined as a template of the parent **PDF File** format element. The binding of the **PDF File** format element or its nested elements, if it has any nested elements, specifies the value that is entered in corresponding PDF fields. Different properties of the **Field** format element can be used to specify which PDF field is filled in by an individual format element:
 
-    2.  Note that the **Name** expression of the format element is empty.
+- On the **Format** tab, the **Name** attribute of the format element
+- On the **Mapping** tab, the **Name** expression of the format element
 
-3.  In the tree, select 'Output\\Page N\\Details2\\Correction 1’.
+Because both properties are optional for a **Field** format element, the following rules are applied to specify the target PDF field:
 
-    1.  Note that the **Name** attribute of this format element is defined as follows: ‘Correction 1’.
+- If the **Name** attribute is blank, and the **Name** expression returns an empty string at run time, throw an exception at run time to notify the user that a PDF field can't be found in the PDF template that is being used to fill in the PDF document.
+- If the **Name** attribute is defined, and the **Name** expression is blank, the PDF field that has the same name as the **Name** attribute of the format element is filled in.
+- If the **Name** attribute is defined, and the **Name** expression is configured, the PDF field that the same name as the value that is returned by the **Name** expression of the format element is filled in.
 
-    2.  Note that the **Name** expression of the format element is defined as follows: Paging.FldName("Correction",\@.Number).
+> [!NOTE]
+> A PDF check box can be filled in as selected in the following ways:
+>
+> - When the corresponding **Field** format element is bound to a data source field of the **Boolean** data type that has the **True** value
+> - When the corresponding **Field** format element contains a nested **String** format element that is bound to a data source field that has a text value of **1**, **True**, or **Yes**
 
-![Screenshot of Format designer with mapping selected](media/rcs-ger-filloutpdf-reviewformat2.png)
-
-Note that the **Field** format element is used to fill out an individual field of a fillable PDF document that is defined as a template of the parent **PDF File** format element. Binding of the **PDF File** format element (or its nested element when available) specifies the value that is populated to corresponding PDF field. Different properties of the **Field** format element can be used to specify which PDF field is filled out by an individual format element:
-
--   The **Name** attribute of the format element (**Format** tab)
-
--   The **Name** expression of the format element (**Mapping** tab)
-
-As both properties are optional for a **Field** format element, the following rules are applied to specify the target PDF field:
-
--   When the **Name** attribute is blank and the **Name** expression returns empty string at run time, an exception is thrown at run time informing that a PDF field cannot be found in using PDF template for filling out.
-
--   When the **Name** attribute has been defined and the **Name** expression is blank, the PDF field with the same name as the **Name** attribute of the format element is filled out.
-
--   When the **Name** attribute has been defined as well as the **Name** expression has been configured, the PDF field with the same name as the value that is returned by the **Name** expression of the format element is filled out.
-
-Note
-
-PDF checkbox can be filled out as checked in the following ways:
-
--   when the corresponding **Field** format element is bound to the data source field of **Boolean** data type containing the **True** value.
-
--   when the corresponding **Field** format element contains the nested **String** format element which is bound to the data source field containing either **1** or **True** or **Yes** text value.
-
-
-Run the format configuration
-----------------------------
+## Run the format configuration
 
 ### Import the format configuration
 
-You will load the already designed sample ER format **Intrastat (import from Excel)**. This format is designed to parse selected by user Excel workbook simulating foreign trade transactions.
+Next, you will load the **Intrastat (import from Excel)** sample ER format. This format is designed to parse a user-selected Microsoft Excel workbook that simulates foreign trade transactions.
 
-1.  Click **Exchange**.
+1. On the **Configurations** page, select **Exchange \> Load from XML file**.
+2. Select **Browse**. Navigate to and select the **Intrastat (import from Excel).version.1.1.xml** file that you downloaded earlier as a prerequisite.
+3. Select **OK**.
+4. In the tree, select **Intrastat model \> Intrastat (import from Excel)**.
+5. Select **Edit**.
+6. Set the **Default for model mapping** option to **Yes**.
 
-2.  Click **Load from XML file**.
+    > [!NOTE]
+    > If you previously set the **Default for model mapping** option to **Yes** for the **Intrastat model** configuration or another configuration that is nested under the **Intrastat model** configuration, set this option to **No**.
 
-3.  Click **Browse**.
+    When the **Default for model mapping** option is set to **Yes**, the imported **Intrastat (import from Excel)** ER format is assigned as the default data source for the **Intrastat report (PDF)** format configuration. Then, when the **Intrastat report (PDF)** format configuration is run, the content of the Excel workbook that is parsed by the **Intrastat (import from Excel)** ER format will simulate foreign trade transactions that must be reported. The following illustration shows an example of an Excel workbook.
 
-    1.  Navigate to and select **Intrastat (import from Excel).version.1.1.xml** that you previously downloaded.
+    ![Excel workbook that has sample data](media/rcs-ger-filloutpdf-excelworkbook.png)
 
-4.  Click **OK**.
+### Run the format configuration
 
-5.  In the tree, select 'Intrastat model\\Intrastat (import from Excel)'.
+1. On the **Configurations** page, in the tree, select **Intrastat model \> Intrastat report (PDF)**.
+2. Select **Run**.
+3. Select **Browse**. Navigate to and select the **Intrastat sample data.xlsx** file that you downloaded earlier as a prerequisite.
+4. Select **OK**.
+5. In the **Report direction** field, select **Both** to fill in all transactions from the imported Excel workbook in the PDF report that is generated.
+6. Select **OK**.
+7. Review the PDF document that is generated.
 
-6.  Click **Edit**.
+The follow illustration shows an example of the first page of the report that is generated.
 
-7.  Select **Yes** in the **Default for model mapping** field.
+![First page of the generated report](media/rcs-ger-filloutpdf-generatedreport.png)
 
-Note.
+The follow illustration shows an example of another page of the report that is generated.
 
-If you earlier already selected **Yes** for the **Default for model mapping** option for the **Intrastat model** configuration or another configuration nested under the **Intrastat model** one, set its **Default for model mapping** option as **No**.
-
-With this setting, the imported **Intrastat (import from Excel)** is assigned as the default data source for the **Intrastat report (PDF)** configuration. When the **Intrastat report (PDF)** is executed, the content of the parsed by the **Intrastat (import from Excel)** Excel workbook will simulate foreign trade transactions that must be reported (see the sample of such workbook on the screen-shot below).
-
-![Excel workbook with sample data](media/rcs-ger-filloutpdf-excelworkbook.png)
-
-### Execute the format configuration
-
-1.  In the tree, select 'Intrastat model\\Intrastat report (PDF)'.
-
-2.  Click **Run**.
-
-3.  Click **Browse**.
-
-    1.  Navigate to and select **Intrastat sample data.xlsx** that you previously downloaded.
-
-4.  Click **OK**.
-
-5.  In the **Report direction** field, select the option **Both** to populate to generated PDF report all transactions from the imported Excel workbook.
-
-6.  Click **OK**.
-
-7.  Review the generated PDF document.
-
-![Generated report screenshot example 1](media/rcs-ger-filloutpdf-generatedreport.png)
-
-![Generated report screenshot example 2](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Other page of the generated report](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## Additional resources
 
-- [ER Design a configuration for generating reports in OPENXML format](/tasks/er-design-reports-openxml-2016-11)  
+- [ER Design a configuration for generating reports in OPENXML format](/tasks/er-design-reports-openxml-2016-11)
 - [Design ER configurations to generate reports in Microsoft WORD format](/tasks/er-design-configuration-word-2016-11)
