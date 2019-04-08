@@ -966,7 +966,13 @@ The **insert\_recordset** statement copies data directly from one or more source
 
 ### insert\_recordset syntax
 
-*ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table. **insert\_recordset** *DestinationTable* **(** *ListOfFields* **)** **select** *ListOfFields1* **from** *SourceTable* **\[ where** *WhereClause* **\]** **\[ join** *ListOfFields2* **from** *JoinedSourceTable* **\[ where** *JoinedWhereClause* **\]\]**
+*ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table.
+
+**insert\_recordset** *DestinationTable* **(** *ListOfFields* **)**
+
+**select** *ListOfFields1* **from** *SourceTable* **\[ where** *WhereClause* **\]** 
+
+**\[ join** *ListOfFields2* **from** *JoinedSourceTable* **\[ where** *JoinedWhereClause* **\]\]**
 
 ### Example: Inserting data from another table
 
