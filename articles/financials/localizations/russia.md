@@ -84,6 +84,14 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Reporting
 
 - [Financial reporting](rus-financial-reports.md)
+- [Assessed tax declaration](rus-assessed-tax-declaration.md)
+
+
+## Organization administration
+
+- [Tax registration info related to address](emea-registration-ids.md)
+- [Set up officials](rus-officials.md)
+- [Company divisions](rus-company-divisions.md)
 
 ## Additional resources
 
@@ -92,5 +100,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Microsoft Dynamics Localization Portal: Russia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/RussianFederation.html)
 - [Company divisions](rus-company-divisions.md)
 - [Set up officials](rus-officials.md)
-
+- [Set up exchange rates for currency transactions](rus-exchange-difference.md)
+- [Preview ledger transactions](rus-ledger-transactions-preview.md)
+- [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 
