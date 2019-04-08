@@ -34,6 +34,11 @@ ms.dyn365.ops.version: 8.1
 
 This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Russian regulations. 
 
+## General ledger
+
+- [Correspondence of accounts](rus-correspondence-accounts.md)
+- [Preview ledger transactions](rus-ledger-transactions-preview.md)
+
 ## Advance holders
 
 - [Advance holders](rus-advance-holders.md)
@@ -79,6 +84,14 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Reporting
 
 - [Financial reporting](rus-financial-reports.md)
+- [Assessed tax declaration](rus-assessed-tax-declaration.md)
+
+
+## Organization administration
+
+- [Tax registration info related to address](emea-registration-ids.md)
+- [Set up officials](rus-officials.md)
+- [Company divisions](rus-company-divisions.md)
 
 ## Additional resources
 
@@ -86,8 +99,8 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Russia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/RussianFederation.html)
 - [Company divisions](rus-company-divisions.md)
+- [Set up officials](rus-officials.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
-- [Set up officials](rus-officials.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 
