@@ -80,6 +80,8 @@ When an e-commerce visitor opts for guest checkout, a customer record will not b
 
 When a named customer navigates to the payments section of the checkout, they will experience List PI. If it is the first checkout for a signed in customer, they will see as part of the credit card entry form an option to "Save for my next visit
 
+![Save payment option](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/Save-PI.png)
+
 The retail payment SDK relies on two sets of payment APIs. The first, is called iPayment processor. This set of APIs is used to implement card not present payment connectors for use in call center and e-commerce. More information about the iPaymentProcessor interface can be found in this [whitepaper](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) covering payments. 
 
 The second set of APIs is called iNamedRequestHandler. This set of APIs is the supported method of implementing card present payment integrations that utilize a payment terminal. This set of APIs is documented in the [Create a payment intgration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension) document. 
