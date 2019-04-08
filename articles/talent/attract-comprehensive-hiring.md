@@ -34,18 +34,18 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-The version of Attract that's right for you depends on your organization's size and needs. Attract Basic provides a subset of Attract's functionality geared towards smaller teams or organizations, where the hiring manager is the primary user. You can start using Attract Basic with one or more licenses.
+The version of Attract that's right for you depends on your organization's size and needs. The basic version of Attract provides a subset of functionality geared towards smaller teams or organizations, where the hiring manager is the primary user. You can start using the basic version of Attract with one or more licenses.
 
-Attract Comprehensive targets medium to large teams or organizations where the recruiter or talent specialist is the primary user. Attract Comprehensive requires the purchase of five or more licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/).
+Attract with the Comprehensive Hiring Add-On targets medium to large teams or organizations where the recruiter or talent specialist is the primary user. The Comprehensive Hiring Add-On requires the purchase licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/).
 
 >[!NOTE]
->The Attract trial showcases Attract Comprehensive, which contains comprehensive recruiting and hiring capabilities. These include the ability to post jobs to an Attract career site or external recruiting site such as LinkedIn. If you choose Attract Basic, your subscription will include a subset of the capabilities provided in the trial version. 
+>The Attract trial showcases Attract with the Comprehensive Hiring Add-On, which contains comprehensive recruiting and hiring capabilities. These include the ability to post jobs to an Attract career site or external recruiting site such as LinkedIn. If you choose the basic version of Attract, your subscription will include a subset of the capabilities provided in the trial version. 
 
 For more information about pricing and licensing, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Feature comparison
 
-| Capability | Attract Basic | Attract Comprehensive |
+| Capability | Attract | Comprehensive Hiring Add-On |
 | ---------- | :-----------: | :-------------------: |
 | Basic dashboard | :heavy_check_mark: | :heavy_check_mark: | 
 | Manage security and roles | :heavy_check_mark: | :heavy_check_mark: | 
@@ -70,8 +70,8 @@ For more information about pricing and licensing, see the [Microsoft Dynamics 36
 
 ### Why don't I see all the features that were included in the Attract trial?
 
-The Attract trial showcases Attract Comprehensive. You most likely have Attract Basic, which includes a subset of features targeted to hiring managers for small teams and organizations.
+The Attract trial showcases Attract with the Comprehensive Hiring Add-On. You most likely have the basic version of Attract, which includes a subset of features targeted to hiring managers for small teams and organizations.
 
 ### Why don't I see all the Attract features my coworker sees?
 
-It's possible your coworker is working with an Attract Comprehensive license or trial, while you're working with Attract Basic.
+It's possible your coworker is working with a trial or a license for Attract with the Comprehensive Hiring Add-On, while you're working with the basic version of Attract.
