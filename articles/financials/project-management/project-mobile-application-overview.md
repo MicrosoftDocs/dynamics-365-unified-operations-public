@@ -5,7 +5,7 @@ title: Project mobile applications overview
 description: This topic provides general information about the project time-related applications for Microsoft Dynamics 365 that are available on a mobile device.
 author: KimANelson
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
