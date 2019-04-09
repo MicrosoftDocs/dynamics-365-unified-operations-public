@@ -5,7 +5,7 @@ title: Delegate work items in a workflow
 description: If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users. 
 author: jasongre
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 04/09/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ## Manually delegate a work item
 
-To delegate an individual work item, click the **Delegate** option in the **Workflow** menu and then enter the user to be delegated to along with a comment. This will reassign the work item to that user so they can complete it.
+To delegate an individual work item, select the **Delegate** option in the **Workflow** menu and then enter the user to be delegated to along with a comment. This will reassign the work item to that user so they can complete it.
 
 ## Automatically delegate work items
 
-If you plan to be out of the office or otherwise unavailable to act on work items for a period of time, you can automatically delegate new work items to other users in the **User options** form.
+If you plan to be out of the office or otherwise unavailable to act on work items for a period of time, you can automatically delegate new work items to other users using the **User options** page.
 
 ### Set up automatic delegation
 1. Go to Common > Setup > User options.
