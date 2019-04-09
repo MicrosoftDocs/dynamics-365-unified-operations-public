@@ -59,8 +59,8 @@ DTS currently supports the following product versions.
 | Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | |
 | Microsoft Dynamics 365 for Finance and Operations | All versions | .label.txt | .docx, .html | .txt is the F&O specific label format and .html is the specific custom help solution format. |
 | Microsoft Dynamics 365 for Retail | All versions | .label.txt | .docx | |
-| Microsoft Dynamics CRM | 2011–2016 | .resx | .docx | |
-| Microsoft Dynamics NAV | 2015–2018, Microsoft Dynamics 365 Business Central (SaaS) | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | .txt and .xml are the NAV specific format, and .xlf is the Business Central extension resource format. |
+| Microsoft Dynamics CRM | All versions | .resx | .docx | |
+| Microsoft Dynamics NAV | All versions | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | .txt and .xml are the NAV specific format, and .xlf is the Business Central extension resource format. |
 
 ## Accessing DTS
 You can access DTS in two places in LCS:
