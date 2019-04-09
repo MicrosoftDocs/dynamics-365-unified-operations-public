@@ -198,12 +198,14 @@ If not successful and the issue is not one of the categories described in [Break
 
 ### Currently released product – base build update
 
-As your customers are updated to a new release, the base build should be updated periodically to match the existing oldest version that is active at a customer running your ISV solution.
+As we update your customers to new releases, you should update the base build periodically to match the oldest version used by a customer that is running your ISV solution.
 
 ### Solution in development
 
-You validate your new solution development on the latest released version or on the released version you plan for servicing as your new release ships. Consider validation on the most current version in either case though, as this help with early discovery of uptake work for you or issues. 
+You validate your new solution development on the latest released version or on the released version you plan for servicing as your new release ships. Consider validation on the most current version in either case though, as this helps with early discovery of uptake work for you or issues. 
 
-If unexpected breaks occur, the ISV must notify Microsoft immediately through the PEAP communication process (Yammer, issue notification process). 
+If an unexpected break occurs, then you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process.
+
+
 
 
