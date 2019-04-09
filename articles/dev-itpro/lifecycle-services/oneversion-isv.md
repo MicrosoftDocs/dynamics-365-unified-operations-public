@@ -3,9 +3,9 @@
 
 title: Delivering ISV Solutions for Dynamics 365 Finance and Operations using One Version
 description: 
-author: frandahl
+author: FrankDahl
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinarh
-ms.search.validFrom: 2019-3-31 
+ms.author: rhaertle
+ms.search.validFrom: 2019-4-12 
 ms.dyn365.ops.version: Platform update 24 
 
 ---
