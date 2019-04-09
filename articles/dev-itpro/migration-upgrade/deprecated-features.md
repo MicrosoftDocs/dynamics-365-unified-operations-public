@@ -47,7 +47,51 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Dynamics 365 for Finance and Operations 10.0.2 with platform update 26
+
+## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../get-started/public-preview-releases.md).
+
+### Legacy default action behavior
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled on the **Client performance options** page. |
+| **Product areas affected**         | Grids in the web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
+
+### Legacy "is one of" filtering experience
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience. |
+| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page. For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
+
+### Deriving from internal classes is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time.|
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
+
+### Overriding internal methods is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
 ### Parameter to enable sales orders with multiple project contract funding sources
 Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**. By default, this parameter is not enabled. 
@@ -64,29 +108,30 @@ Support for creating project-based sales orders where the project contract has m
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Standard and First release service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../../get-started/public-preview-releases.md).
 
 ### Deprecated APIs and potential breaking changes
+
 
 #### Deriving from internal classes is deprecated
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
-| **Product areas affected**         | Visual Studio development tools. |
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time.|
+| **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
 #### Overriding internal methods is deprecated
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
-| **Product areas affected**         | Visual Studio development tools. |
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
@@ -123,7 +168,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All. |
-| **Status**                         | Deprecated - The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+| **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
@@ -193,7 +238,7 @@ No features have been removed or deprecated with this release. Platform update 1
 ## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -298,7 +343,7 @@ Users can download this from the government portal.
 ## Dynamics 365 for Retail 7.2
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -330,7 +375,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Duplicate functionality.       |
-| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Product areas affected**         | Warehouse management, Transportation management     |
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.               |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q4 2019.   |
@@ -1100,7 +1145,7 @@ Product builder was used to dynamically configure items from a sales order, purc
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX. It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.  |
-| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Product areas affected**         | Product information management, Sales and marketing  |
 | **Status**                         | Removed as of Dynamics AX 7.0.      |
 
