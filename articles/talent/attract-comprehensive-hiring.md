@@ -66,12 +66,24 @@ For more information about pricing and licensing, see the [Microsoft Dynamics 36
 | Manage email templates | | :heavy_check_mark: | 
 | Provide candidate and job recommendations | | :heavy_check_mark: | 
 
+## Find out which version of Attract you have
+
+
 ## Frequently asked questions
 
 ### Why don't I see all the features that were included in the Attract trial?
 
-The Attract trial showcases Attract with the Comprehensive Hiring Add-On. You most likely have the basic version of Attract, which includes a subset of features targeted to hiring managers for small teams and organizations.
+This could be due to the following reasons:
+
+- The Attract trial showcases Attract with the Comprehensive Hiring Add-On, and you now have the basic version of Attract, which includes a subset of features targeted to hiring managers for small teams and organizations.
+
+- You have Attract with the Comprehensive Hiring Add-On, but you haven't been assigned the correct role(s) to use all the features. For more information, see [Security and role management in Attract](security-attract.md).
 
 ### Why don't I see all the Attract features my coworker sees?
 
-It's possible your coworker is working with a trial or a license for Attract with the Comprehensive Hiring Add-On, while you're working with the basic version of Attract.
+This could be due to the following reasons:
+
+- Your coworker is working with a trial or a license for Attract with the Comprehensive Hiring Add-On, while you're working with the basic version of Attract.
+
+- You have Attract with the Comprehensive Hiring Add-On, but you haven't been assigned the correct role(s) to use all the features. For more information, see [Security and role management in Attract](security-attract.md).
+
