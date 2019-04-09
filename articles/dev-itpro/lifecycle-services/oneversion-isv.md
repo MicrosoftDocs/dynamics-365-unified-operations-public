@@ -51,7 +51,7 @@ Preventing technical or functional issues is a difficult proposition and require
 
 How we do this together is covered in these paragraphs.
 +	[Servicing customers](#servicing-customers)
-+	[Compatibility]()
++	[Compatibility](#compatibility)
     - [Runtime compatibility]()
     - [Design time compatibility]()
 +	[Developing new releases]()
@@ -78,3 +78,32 @@ Similar policies apply to your ISV solution, and you might also need provide a c
 
 This recommendation applies to servicing and maintaining your released solution. You will use a different approach for development of new releases of your solution. More information is available in the following sections of this document.
 
+## Compatibility
+
+We are diligent in ensuring compatibility with existing customizations. We achieve this by using strict practices in our engineering processes, along with tool and automation support that helps identify API contracts that are unintentionally broken. Telemetry allows our engineers to determine customizations that reference or extend a Microsoft API.
+
+We are making a promise that Microsoft Finance and Operations updates that are applied to customer environments are functionally and binary compatible with existing customizations. The backward compatibility promise does not cover only APIs, it also includes functionality and user experience. All new experiences will be opt-in.
+
+Any deprecation or breaking change in binary or functional compatibility will be announced 12 months in advance to provide ample time for you to align your customizations with an alternative design. You must pay attention to our monthly documentation updates and review the APIs that are marked as obsolete or internal. This allows you to manage changes in a timely fashion.
+
+The following sections defines and describes the aspects of backward compatibility: runtime and design.
+
+### Runtime compatibility
+
+We promise that new updates are runtime backward compatible. This promise covers binary and functional compatibility. Runtime compatibility means customizations that exist on a production and sandbox environments will continue work after a new Finance and Operations updates is deployed on this environment. This includes both standard platform and application updates.
+
+This also means that changes to the platform including change to the compiler will be backward compatible with customizations that were compiled on an earlier platform.
+
+The compatibility is only backwards. It is not possible to compile a customization on a newer platform and deploy this onto a customer environment that is not yet updated to that or a later version.
+
+### Design time compatibility
+
+Design time backward compatibility means that a developer can apply a Finance and Operation update to their development environment and can successfully compile their code without making any changes.
+
+Be very considerate of how API’s of your solution are used in your customers’ implementations, and how you keep honoring these API’s without causing breaking changes. This will comprise of being diligent in what is changed and rely on engineering best practices.
+
+Examples on what you should avoid is seen here: [Breaking changes](breaking-changes.md).
+
+Strive to adapt a similar bar as we set from Microsoft, such that we together avoid causing regressions.
+
+We promise binary compatibility and we also aim for design time compatibility. However, there is a category of necessary changes that are NOT design time compatible but remain binary compatible. After applying an update, compiling your code may result in new errors or warnings. Some examples are: We make an enumeration extensible, mark an API as obsolete or internal, or introduce a new compiler error to avoid unsafe coding practices. These changes may require work on your solution. Design time breaking changes that are binary compatible do not require a 12-month deprecation notice.
