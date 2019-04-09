@@ -69,7 +69,7 @@ Azure blob storage account can be configured as an endpoint for business events.
 For more information about business events, see [Business events](../../dev-itpro/business-events/home-page.md). 
 
 > [!Note]
-> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). For information about how to enable the feature, see [Enabling business events](../../dev-itpro/business-events/home-page.md#enabling-business-events).
+> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 ## Batch jobs single scheduler
 Improvements made in the batch framework optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which maintains a higher throughput. This is enabled by default in Platform update 25.

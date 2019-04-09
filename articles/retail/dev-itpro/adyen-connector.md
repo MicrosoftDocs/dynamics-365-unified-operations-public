@@ -48,9 +48,9 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 
 This topic includes the following main sections to help you evaluate and set up the Dynamics 365 Payment Connector for Adyen.
 
-- **[Supported features, functionality, and payment terminals](#Supported-features-functionality-and-payment-terminals)** – This section describes the set of features and functionalities that the Dynamics 365 Payment Connector for Adyen supports.
-- **[Sign up with Adyen](#Sign-up-with-Adyen)** – This section explains how to sign up for a merchant account with Adyen.
-- **[Setup and configuration](#Setup-and-configuration)** – This section explains, in detail, how to set up and configure the Dynamics 365 Payment Connector for Adyen across the point of sale (POS), call center, and e-Commerce channels.
+- Supported features, functionality, versions, and terminals – This section describes the set of features and functionalities that the Dynamics 365 Payment Connector for Adyen supports.
+- Sign up with Adyen – This section explains how to sign up for a merchant account with Adyen.
+- Setup and configuration – This section explains, in detail, how to set up and configure the Dynamics 365 Payment Connector for Adyen across the point of sale (POS), call center, and e-Commerce channels.
 
 ## Supported features, functionality, versions, and terminals
 

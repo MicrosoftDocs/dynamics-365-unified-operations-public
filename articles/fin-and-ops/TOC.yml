@@ -42,13 +42,17 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
-      - name: Preview features in Finance and Operations version 10.0.1 (April 2019)
+      - name: Preview features in Finance and Operations version 10.0.2 (May 2019)
+        href: get-started/whats-new-changed-10-0-2.md
+      - name: Finance and Operations version 10.0.1 (April 2019)
         href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations version 10.0 (April 2019)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations version 8.1.3 (January 2019)
         href: get-started/whats-new-changed-8-1-3.md
-      - name: Preview features in Finance and Operations platform update 25 (April 2019)
+      - name: Preview features in Finance and Operations platform update 26 (May 2019)
+        href: get-started/whats-new-platform-update-26.md 
+      - name: Finance and Operations platform update 25 (April 2019)
         href: get-started/whats-new-platform-25.md 
       - name: Platform update 24 (March 2019)
         href: get-started/whats-new-platform-update-24.md
@@ -373,6 +377,8 @@
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
       - name: Test services using third-party utilities
         href: ../dev-itpro/data-entities/third-party-service-test.md
+    - name: Finance and Operations Connector
+      href: ../dev-itpro/data-entities/fin-ops-connector.md
     - name: Development for integration
       items:
       - name: Data integration using data entities
@@ -750,6 +756,8 @@
         href: ../financials/cash-bank-management/cash-flow-forecasting.md
       - name: Bank management workspace
         href: ../financials/cash-bank-management/Bank-management-workspace.md
+      - name: Bank foreign currency revaluation
+        href: ../financials/cash-bank-management/bank-revaluation.md
       - name: Cash discounts
         href: ../financials/cash-bank-management/cash-discounts.md
       - name: Cash discounts for overpayments
@@ -2296,6 +2304,8 @@
             href: ../financials/localizations/rus-bonus-depreciation.md
           - name: Calculate depreciation
             href: ../financials/localizations/rus-depreciation-calculation.md
+          - name: Transfer fixed assets
+            href: ../financials/localizations/rus-fixed-asset-transfer.md
         - name: Accounts payable and receivable
           items:
           - name: Invoices for payment
@@ -2308,7 +2318,7 @@
           items:
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
-          - name: Configure financial reports in Excel (Russia)
+          - name: Configure financial reports in Excel
             href: ../financials/localizations/rus-excel-financial-report.md            
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
@@ -2330,6 +2340,8 @@
           href: ../financials/localizations/rus-cash-flow.md
         - name: Foreign currency sales, purchases, and transfers
           href: ../financials/localizations/rus-currency-sale-purchase.md
+        - name: Assessed tax declarations
+          href: ../financials/localizations/rus-assessed-tax-declaration.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -3103,8 +3115,12 @@
         href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
       - name: My team
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      - name: Project mobile applications overview
+        href: ../financials/project-management/project-mobile-application-overview.md
       - name: Project time entry
         href: ../financials/project-management/project-time-entry-mobile-workspace.md
+      - name: Project timesheet
+        href: ../financials/project-management/project-timesheet.md
       - name: Purchase order approval
         href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
       - name: Sales orders
@@ -3802,6 +3818,8 @@
       href: ../financials/project-management/project-contracts.md
     - name: Project forecasts and budgets
       href: ../financials/project-management/project-forecasts-budgets.md
+    - name: Project sales orders
+      href: ../financials/project-management/project-sales-orders.md
     - name: Purchase orders for a project
       href: ../financials/project-management/project-purchase-orders.md
     - name: Project quotations
@@ -3815,8 +3833,12 @@
       items:
       - name: Microsoft Project client integration
         href: ../financials/project-management/project-integration.md
+    - name: Project mobile applications overview
+      href: ../financials/project-management/project-mobile-application-overview.md
     - name: Project time entry mobile workspace
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
+    - name: Project timesheet mobile app
+      href: ../financials/project-management/project-timesheet.md
   - name: Sales and marketing
     href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     items:
