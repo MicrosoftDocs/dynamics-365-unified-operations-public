@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 04/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,20 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.2 with platform update 26
+
+### Parameter to enable sales orders with multiple project contract funding sources
+Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**. By default, this parameter is not enabled. 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The functionality will always be enabled after the parameter is removed. |
+| **Replaced by another feature?**   | No. The functionality to support project-based sales orders with multiple funding sources will always be enabled.   |
+| **Product areas affected**         |The **Allow sales orders for projects with multiple funding sources** parameter will be removed. The following methods will be modified when the parameter is removed: **ctrlSalesOrderTable** method in **ProjStatusType** class, **validate** method for **ProjId** field, and **run** method in **SalescreateOrder** form. The following methods will be deprecated when the parameter is removed: **IsSalesOrderAllowedForMultipleFundingSources** in **ProjTable** table file, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** method in **ProjTable** table file, **AllowSalesOrdersForMultipleFundingSources** data field in **ProjParameters** form and **ProjParameterEntity** files, **IsAssociatedToMultipleFundingSourcesContract** private method in **ProjTable** table file. |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecation is planned for the April 2020 release wave. |
+
+
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 
 > [!IMPORTANT]
@@ -73,6 +87,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
