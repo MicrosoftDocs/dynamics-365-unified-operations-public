@@ -112,11 +112,40 @@ One Version together with running the solution as a service provides a great veh
 
 We recommend that you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
 
-The frequency of your new releases can be independent from Microsoft’s. Consider a source code branching strategy as described later in this document.
+The frequency of your new releases can be independent from Microsoft’s, as shown in the following diagram. Consider a source code branching strategy as described later in this document.
 
 ![Branching stategy](./media/oneversion-isv-branch.png)
 
 What is essential is releasing with quality with every update. Testing helps assure quality is there, but quality needs to be built in during the design and implementation phases too. There are some new dimensions to consider under One Version.
 
+### Design for Extensibility
+
+Designing your solution for extensibility means considering both how you customize by extending the standard application and how you enable customization of your ISV solutions by your customers and partners.
+
+Ensure customizations are additive as opposed to intrusive, and follow the extensive guidance we have provided under the [extensibility home page]().
+
+Do not become too creative in building your customization if you end up extending using an API that is questionable, as this leads to risk that later updates will break your solution. Instead, log an [extensibility request]() for us to create a more explicit API that is more resilient to breakage.
+
+Design solutions that are extensible. Take inspiration from documentation we have provided: [Write extensible code]().
+
+Design for backward compatibility to avoid breaking any customer implementation. A good strategy is to be quite explicit about what you offer for hooking and wrapping extension code. You have great control over what methods you enable extensions for by how you decorate your methods: [Attributes that make method extensible]().
+
+### Data Upgrade
+
+There is no longer support for data upgrade jobs like what existed with earlier versions of Finance and Operations. This is because we want to provide minimum downtime while updating production environment.
+
+The database synchronization is still executing during upgrade and supports basics like adding new tables, field and indexes.
+
+We are introducing new ways of driving data upgrade that execute asynchronously to prevent downtime. This is quite a different paradigm. Data upgrade will at times be triggered when a feature is enabled by a feature flag. This new approach for data upgrade will materialize with upcoming updates, and you should expect documentation resources to become available.
+
+### Feature exposure
+
+With One Version, updates are managed by Microsoft and pushed onto customer environments. Pushed updates should not require customers to adjust to functional changes and train their users on a monthly basis because of new or changed features. This should not cause the customer to delay updates to their environment.
+
+Feature management is a new concept that empowers customers to decide when new or changed features are put into effect. This allow customers to review, validate, and document new or changed features before they are adopted. This also allows for training of users before enabling new or changed processes to reduce impact on daily operations. This puts the customer in control.
+
+Feature management is planned to be released in the upcoming monthly updates.
+
+Consider also using feature management with your ISV solution to provide customers control on when new features are put into effect.
 
 
