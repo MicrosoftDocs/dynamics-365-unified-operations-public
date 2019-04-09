@@ -106,4 +106,11 @@ You should strive to meet a bar to Microsoft's bar, so that together we avoid cr
 
 We promise binary compatibility and we also aim for design-time compatibility. However, there is a category of necessary changes that are **not** design time compatible but remain binary compatible. After applying an update, compiling your code may result in new errors or warnings. Some examples are that we make an enumeration extensible, we mark an API as obsolete or internal, or we introduce a new compiler error to avoid unsafe coding practices. These changes might require work on your solution. Design-time breaking changes that are binary compatible do not require a 12-month deprecation notice.
 
+## Developing new releases
+
+One Version and running the solution as a service provide a great vehicle for collecting feedback. Feedback is useful for setting direction on what new features should be added with upcoming updates. Historically, we are used to new major releases with many new features, but the new model invites us to rethink this. We have moved instead to a series of continuous updates, where we gradually build on available capabilities of the system. In many cases one update will contain an initial small feature that we enrich with upcoming updates. There are instances where we need to stage for new features and initially hide or control adaption of new features by use of feature exposure.
+
+We recommend you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
+
+The frequency of your new releases can be independent from Microsoft’s. Consider a source code branching strategy as described later in this document.
 
