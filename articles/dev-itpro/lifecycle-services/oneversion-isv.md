@@ -49,4 +49,19 @@ Under One Version, customer UAT and production environments are updated every mo
 
 Preventing technical or functional issues is a difficult proposition and requires a close coordination between Microsoft and you as an ISV partner. Our strategy is that you get to adapt similar practices as we do at Microsoft. Over the next several months we will roll out new practices and tools to help empower you in this. We will update this guidance the tools and practices evolve.
 
+How we do this together is covered in these paragraphs.
++	[Servicing customers]()
++	[Compatibility]()
+    - [Runtime compatibility]()
+    - [Design time compatibility]()
++	[Developing new releases]()
+    - [Design for Extensibility]()
+    - [Data Upgrade]()
+    - [Feature exposure]()
++	[Branches and builds]()
++	[Testing]()
++	[Deploying updates]()
++	[ISV solutions as part of One Version automated deployment?]()
++	[Do I ship binaries or source code?]()
+
 
