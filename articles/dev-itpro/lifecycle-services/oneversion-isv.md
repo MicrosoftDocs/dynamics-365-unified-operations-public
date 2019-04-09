@@ -162,6 +162,48 @@ The base Microsoft version used to build the solution should align with the olde
 
 The development branch is used for developing new capabilities in the ISV solution. The frequency of releases from the branch is determined by the ISV. You do not have to synchronize with the monthly Microsoft releases. Decoupling from the Microsoft release schedule and delivering less frequently might be the best approach. A quarterly or bi-annual cadence is a good starting point.
 
-The base Microsoft version in the development branch should be the latest released version available or the released version that you plan to be used for servicing when your release is planned to go out. The goal is that you innovate along with Microsoft by staying as current as feasible and that your development model enables uptake of recent feature work.
+The base Microsoft version in the development branch should be the latest released version available or the released version that you plan to be used for servicing when your release is planned to go out. The goal is that you innovate along with Microsoft by staying as current as is feasible and that your development model enables uptake of recent feature work.
+
+## Testing
+
+Microsoft has several checks and balances in its development process to ensure functional and binary compatibility. ISV solutions must be validated with each Microsoft release to ensure this compatibility. Doing this validation during the Partner Early Access Program (PEAP) phase of each release is an expectation.
+
+Quick turnaround on feedback from you is very important, so that it is feasible to fix any issues before the monthly updates are deployed in customer environments. 
+
+Test automation is important for quick validation of new updates. We plan to release the test framework and libraries to support you in building your test automation.
+
+We have an extensive suite of tests that support our validation. We imagine that you as ISV’s will create your suites of automated tests too.
+
+In addition to the SysTest automation framework that is aimed at developers, the [Regression Suite Automation Tool (RSAT)](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) enables automation of business processes without the need to write code. The RSAT empowers functional users to record their critical tests and automate part of their UAT. You can also use the RSAT as you start building out your test automation.
+
+Recently we released the [ATL automation framework]() with accompanying libraries. This framework is aimed at developers for building tests that are more comprehensive than unit tests. The libraries that come with the framework help make it seamless to compose tests. The ATL framework is valuable for you as ISV’s for building your suite of tests.
+
+### Currently released product – test binary and functional compatibility
+
+The currently released product that is maintained in the servicing branch should first be tested for binary and functional compatibility. The suite of your automated developer tests, automated functional tests, and manual tests for your ISV solution should be executed on an environment with the new version from Microsoft and your existing ISV solution. Since this is a test of binary and functional compatibility, the ISV solution should **not** be recompiled.  
+
+If successful as expected, this step will validate that a customer installation of the current version of your ISV solution will not need to be updated when Microsoft broadcasts the new release to the customer.
+
+If not successful, then you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process. The issue will either require a fix from Microsoft or a fix in your ISV solution which then may require updating customers from the servicing branch. In either case, Microsoft needs to know to become more proactive in its processes for future releases.
+
+### Currently released product – test design time compatibility
+
+The currently released product that you maintain in the servicing branch should then be tested for design time compatibility. To do this, you should compile the solutoin against a deployment of the new Microsoft release. While Microsoft’s goal is to minimize design time compatibility issues, there are situations where there might be an issue. One example is when an enumeration has been made extensible and the solution uses it in a manner that assumes an underlying integer representation (for example, using the enumeration value in a logical comparison or mathematical functions). While this code will continue to work in a customer deployment because the underlying values are maintained, a compiler error is generated and addressed for future releases. Another example of a design-time compatibility issue is when we introduce a new compiler error to protect against unsafe coding patterns. For more categories of design time compatibility issues, read [Breaking changes](breaking-changes.md).
+
+You should executer your combination of automated developer tests, automated functional tests, and manual tests on an environment with the new version from Microsoft and your compiled ISV solution.
+
+If successful, this step will validate that your ISV solution will not need to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
+
+If not successful and the issue is not one of the categories described in [Breaking changes](breaking-changes.md), the you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process. The issue will either require a fix from Microsoft or a fix in your ISV solution which then may require updating customers from the servicing branch. In either case, Microsoft needs to know to become more proactive in its processes for future releases.
+
+### Currently released product – base build update
+
+As your customers are updated to a new release, the base build should be updated periodically to match the existing oldest version that is active at a customer running your ISV solution.
+
+### Solution in development
+
+You validate your new solution development on the latest released version or on the released version you plan for servicing as your new release ships. Consider validation on the most current version in either case though, as this help with early discovery of uptake work for you or issues. 
+
+If unexpected breaks occur, the ISV must notify Microsoft immediately through the PEAP communication process (Yammer, issue notification process). 
 
 
