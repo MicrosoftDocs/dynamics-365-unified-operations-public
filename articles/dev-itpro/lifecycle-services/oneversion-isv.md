@@ -114,7 +114,7 @@ We recommend that you follow a similar approach for your ISV solutions. You will
 
 The frequency of your new releases can be independent from Microsoft’s, as shown in the following diagram. Consider a source code branching strategy as described later in this document.
 
-![Branching stategy](./media/oneversion-isv-branch.png)
+![Branching stategy](media/oneversion-isv-branch.png)
 
 What is essential is releasing with quality with every update. Testing helps assure quality is there, but quality needs to be built in during the design and implementation phases too. There are some new dimensions to consider under One Version.
 
