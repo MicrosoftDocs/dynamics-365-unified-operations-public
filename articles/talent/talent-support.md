@@ -3,7 +3,7 @@
 
 title: Get support for Talent
 description: This topic explains how to get help with Dynamics 365 for Talent.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
 

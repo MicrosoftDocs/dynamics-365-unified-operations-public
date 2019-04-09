@@ -3,7 +3,7 @@
 
 title: Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ
 description: This topic explains what data is synchronized in a Talent and Finance and Operations integration.
-author: negudava
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: negudava
+ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
 
@@ -41,17 +41,17 @@ This topic answers common questions associated about what data is synchronized w
 With Core Human Resources (HR), a subset of the data is synchronized. For a list of all
 the entities, see [Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
 
-For Attract and Onboard, all data is native to Common Data Services (CDS) for Apps.
+For Attract and Onboard, all data is native to Common Data Service.
 
 ## Can I create a new mapping without using the templates?
 
 Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
-more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 ## Can I map financial dimensions to transfer between Talent and Finance and Operations?
 
-Financial dimensions aren’t currently in CDS for Apps and as a result aren’t
+Financial dimensions aren’t currently in Common Data Service and as a result aren’t
 part of the default template. This entity is planned, but currently no release timeline is available.
 
 For data that resides in Finance and Operations but does not exist in Talent,
@@ -81,7 +81,7 @@ passing it into the destination.
 ## Can I specify which fields to send to Finance and Operations for a specific entity?
 
 Fields can be added or removed from the integration task. Not all data fields
-that exist on the CDS for Apps (CDS 2.0) entity will be populated from Core HR.
+that exist on the Common Data Service entity will be populated from Core HR.
 Additional data can be populated via PowerApps.
 
 ![](media/SpecifyFieldsIncludedInIntegration.png)
@@ -105,7 +105,7 @@ data creation and updates (UPSERT) are currently included.
 
 The first run of Data Integrator is always a full run. Subsequent runs are
 based on change tracking. When an error run is executed, it extracts the records
-in scope of the run and sends out the most recent changes from CDS.
+in scope of the run and sends out the most recent changes from Common Data Service.
 
 ## When I save the project, I get the error: “Project has mapping errors." What do I do?
 
@@ -122,16 +122,16 @@ integration project in the data integration.
 
 ## I need to transfer data that is not part of the default template provided by Microsoft. Can I do this?
 
-Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other CDS for Apps entities. The entity must be in CDS for Apps for it to be included in the template. 
+Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Common Data Service entities. The entity must be in Common Data Service for it to be included in the template. 
 
 ## I just created new Finance and Operations and Talent environments, and I'm getting the error "The data value violates integrity constraints." Why?
 
 Reasons for this error can include:
 
-- The data transfer resulted in duplicate records extraction at the source (CDS).
+- The data transfer resulted in duplicate records extraction at the source (Common Data Service).
 
 - The data transfer has null values for fields that are required in Finance and
-Operations. Verify the data that is in CDS and meets the requirements of Finance and
+Operations. Verify the data that is in Common Data Service and meets the requirements of Finance and
 Operations.
 
 ## If there are execution errors and the Employee ID didn't sync, how do I find the history job which has the failed employee record?
@@ -160,16 +160,16 @@ the execution time in Step 2.
 ## After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
 
 The integration to Finance and Operations is a two-step process. First, verify
-that the Talent data is updated and available in CDS. This is a near real-time
+that the Talent data is updated and available in Common Data Service. This is a near real-time
 sync and can be verified in PowerApps by looking at the data within the data
 entities.
 
-![Data in CDS](media/DataInCDS.png)
+![Data in Common Data Service](media/DataInCDS.png)
 
-If the data is not appearing as expected in CDS, verify that the entity is
-supported in the integration. To include additional data in CDS, a change will be required on the Microsoft side.
+If the data is not appearing as expected in Common Data Service, verify that the entity is
+supported in the integration. To include additional data in Common Data Service, a change will be required on the Microsoft side.
 
-If the entity is supported and the data is available in CDS, verify the mapping
+If the entity is supported and the data is available in Common Data Service, verify the mapping
 is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during
 the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
@@ -178,7 +178,7 @@ the execution of the batch jobs. For more information about Data Management, see
 
 The number sequence for **Location ID** uses the same pattern in both Talent and
 Finance and Operations. The number sequence needs to be unique on both sides so
-there are no address collisions when integrating data from CDS to Finance and
+there are no address collisions when integrating data from Common Data Service to Finance and
 Operations.
 
 During implementation of Talent, verify that the number sequences are not the same in
@@ -193,7 +193,7 @@ Make sure when creating your connections, you choose Dynamics 365 for Finance an
 
 Ensure that you are mapping to the correct legal entities. Legal entity syncing
 is not part of the default template, so it is expected that each legal
-entity that is present in Talent and CDS is also present in Finance and Operations.
+entity that is present in Talent and Common Data Service is also present in Finance and Operations.
 Also, make sure that you are selecting the correct legal entities for the
 associated Connection Set.
 
@@ -209,11 +209,11 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
 - Data Integrator (DI): 
 
-  - [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
 
   - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 

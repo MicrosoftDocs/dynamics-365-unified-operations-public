@@ -63,7 +63,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 2. Upload configurations of fiscal connectors and fiscal document providers.
 
     A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service. For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.
-    
+
     A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. On the **Fiscal connectors** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.
@@ -153,7 +153,7 @@ Before you use the fiscal integration functionality, you should configure the fo
     - After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).
     - After you make changes in the assignment of connector technical profiles to hardware profiles.
 
-8. On the **Distribution scheduler** page, run the **1070** and **1090** jobs to transfer data to the channel database.
+8. On the **Distribution schedule** page, run the **1070** and **1090** jobs to transfer data to the channel database.
 
 ## Set up fiscal texts for discounts
 
@@ -188,8 +188,12 @@ The error handling options that are available in the fiscal integration are set 
 
     - **Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.
     - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
+    - **Continue on error** – If this parameter is enabled, the fiscal registration process can continue on the POS register if the fiscal registration of a transaction or event fails. Otherwise, to run the fiscal registration of the next transaction or event, the operator must retry the failed fiscal registration, skip it, or mark the transaction or event as registered. For more information, see [Optional fiscal registration](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip or mark as registered** permission.
+    > [!NOTE]
+    > If the **Continue on error** parameter is enabled, the **Allow skip** and **Allow mark as registered** parameters are automatically disabled.
+
+2. The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip registration or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip registration or mark as registered** permission.
 3. The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).
 
     > [!NOTE]
@@ -203,6 +207,8 @@ The error handling options that are available in the fiscal integration are set 
     > - **Fiscal document** – A mandatory document that should be registered successfully (for example, a fiscal receipt).
     > - **Non-fiscal document** – A supplementary document for the transaction or event (for example, a gift card slip).
 
+4. If the operator must be able to continue to process the current operation (for example, creation or finalization of a transaction) after a health check error occurs, you should enable the **Allow skip health check error** permission on the **Permission groups** page (**Retail \> Employees \> Permission groups**). For more information about the health check procedure, see [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## Set up fiscal X/Z reports from the POS
 
 To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.
@@ -214,3 +220,12 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
     3. Add a new button, and set the **Print fiscal Z** button property.
     4. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
 
+## Enable manual execution of postponed fiscal registration
+
+To enable manual execution of a postponed fiscal registration, you should add a new button to a POS layout.
+
+- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+
+    1. Select the layout to update.
+    2. Add a new button, and set the **Complete fiscal registration process** button property.
+    3. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.

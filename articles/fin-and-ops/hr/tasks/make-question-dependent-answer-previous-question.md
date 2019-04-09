@@ -3,7 +3,7 @@
  
 title: Make a question dependent on the answer of the previous question
 description: Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. 
-author: twheeloc
+author: andreabichsel
 manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

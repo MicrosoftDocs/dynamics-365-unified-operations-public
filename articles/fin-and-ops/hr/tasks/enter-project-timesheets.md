@@ -3,7 +3,7 @@
  
 title: Enter project timesheets
 description: This procedure lets you create a timesheet by using an empty timesheet form. 
-author: kherr75
+author: andreabichsel
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

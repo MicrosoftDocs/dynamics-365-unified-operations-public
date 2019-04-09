@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -85,10 +85,10 @@ For information about the new features included in each release, click the links
 
 | **Release**                                                 | **Major or minor release** | **Version**                                                                                                                                           | **Build number** | **Availability** | **End of Service** |
 |-------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|--------------------|
-| Dynamics 365 for Finance and Operations                     | Major release              | [8.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-0-april-2018)                       | 8.0.30           | April 2018       | April 2019         |
-| Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [7.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-7.3-update)                       | 7.3.11971.56116  | December 2017    | April 2019\*       |
-| Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [July 2017](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-july-2017-update)           | 7.2.11792.56024  | June 2017        | April 2019         |
-| Dynamics 365 for Operations                                 | Major release              | [1611](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-dynamics-365-operations-1611)                | 7.1.1541.3036    | November 2016    | April 2019         |
+| Dynamics 365 for Finance and Operations                     | Major release              | [8.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-0-april-2018)                       | 8.0.30           | April 2018       | April 30 2019         |
+| Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [7.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-7.3-update)                       | 7.3.11971.56116  | December 2017    | April 30 2019\*       |
+| Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [July 2017](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-july-2017-update)           | 7.2.11792.56024  | June 2017        | April 30 2019         |
+| Dynamics 365 for Operations                                 | Major release              | [1611](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-dynamics-365-operations-1611)                | 7.1.1541.3036    | November 2016    | April 30 2019         |
 | Dynamics AX                                                 | Minor release              | [7.0.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016) | 7.0.1265.23014   | May 2016         | June 2017          |
 | Dynamics AX                                                 | Major release              | [7.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-7-0-february-2016)                    | 7.0.1265.3015    | February 2016    | June 2017          |
 

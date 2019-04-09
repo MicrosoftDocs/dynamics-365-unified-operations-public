@@ -3,7 +3,7 @@
 
 title: Set up offer management
 description: This topic describes how to set up offers in Talent.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 

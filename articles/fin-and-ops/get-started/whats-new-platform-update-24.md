@@ -5,7 +5,7 @@ title: What's new or changed in Finance and Operations platform update 24 (March
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operation platform update 24 (March 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 3/14/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -79,7 +79,7 @@ Supported scenarios include using intuitive controls to create Alerts rules that
 This new capability will provide a framework that will allow business processes in Finance and Operations to capture business events as business processes are executed, and send the events to an external system or application.
 
 > [!Note]
-> This feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). For information about how to enable the feature, see [Enabling business events](../../dev-itpro/business-events/home-page.md#enabling-business-events).
+> This feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 This will allow, for example, a purchase order approval to quickly trigger a fulfillment in the vendor organization sooner than later; a receipt of a damaged part to trigger the vendor claim process in real time; and so on. Because these events happen in the context of business processes they are called *business events*, which enable *business process integration*.
 

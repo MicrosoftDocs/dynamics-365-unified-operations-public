@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -155,6 +155,8 @@ You can use the **Export** page to export data from Finance and Operations into 
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
+The same job can also be used to export data from all companies. This feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md).
+
 > [!NOTE]
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
 
@@ -180,10 +182,6 @@ The BYOD feature has the following limitations.
 #### There should be no active locks on your database during synchronization
 Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced from Finance and Operations. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
 
-#### Export data projects are specific to a single legal entity
-
-You can't create a single job to export data across multiple legal entities. When you create a data project to export data, the job exports data from the current legal entity. If you must export data from multiple legal entities, you must create multiple data projects by switching legal entities.
-
 #### You can't export composite entities into your own database
 
 Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both the entities in the same data project.
@@ -191,3 +189,12 @@ Currently, composite entities aren't supported. You must export individual entit
 #### Entities that don't have unique keys can't be exported by using incremental push
 
 You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data into Finance and Operations, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key. Therefore, there is a limitation on incremental push. One workaround is to extend the required entity and define a unique key.
+
+## Troubleshooting
+
+### Incremental push not working correctly
+
+**Issue** - When a full push occurs for some entity then a large set of records can be seen in BYOD using a select statement. However, an incremental push results in only a few records in BYOD. It seems as if the incremental push deleted all the records and added only the changed records in BYOD. 
+
+**Solution** - In cases like this it is recommended to disable and re-enable change tracking for the entity in question. The state of the SQL change tracking tables might not be in the expected state. Also verify that there are no other incremental exports that cover the same tables (DMF, MR, Retail).
+

@@ -3,7 +3,7 @@
 
 title: Formalize business processes
 description: This topic explains how you can use the Business process feature to create a business process template for processes that must be completed in your organization.
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGeneric
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShielaS
+ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 

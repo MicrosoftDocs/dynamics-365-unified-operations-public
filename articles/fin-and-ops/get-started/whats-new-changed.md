@@ -6,7 +6,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 02/07/2019
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -59,11 +59,19 @@ This table lists the major releases of the application. For monthly cloud update
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.2</td>
+<td>10.0.80</td>
+<td>May 2019</td>
+<td><a href="whats-new-changed-10-0-2.md">Preview features in Dynamics 365 for Finance and Operations version 10.0.2 (May 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.1</td>
 <td>10.0.51</td>
 <td>April 2019</td>
-<td><a href="whats-new-changed-10-0-1.md">Preview features in Dynamics 365 for Finance and Operations version 10.0.1 (April 2019)</a></td>
-</tr><tr>
+<td><a href="whats-new-changed-10-0-1.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0.1 (April 2019)</a></td>
+</tr>
+<tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0</td>
 <td>10.0.8</td>
@@ -159,10 +167,17 @@ This table lists the major releases of the application. For monthly cloud update
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 26</td>
+<td>7.0.5257</td>
+<td>May 2019</td>
+<td><a href="whats-new-platform-26.md">Preview features in Dynamics 365 for Finance and Operations platform update 26 (May 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Platform update 25</td>
 <td>7.0.5222</td>
 <td>April 2019</td>
-<td><a href="whats-new-platform-25.md">Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)</a></td>
+<td><a href="whats-new-platform-25.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Platform update 24</td>
