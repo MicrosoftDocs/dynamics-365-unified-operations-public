@@ -55,9 +55,9 @@ How we do this together is covered in these paragraphs.
     - [Runtime compatibility](#runtime-compatibility)
     - [Design time compatibility](#design-time-compatibility)
 +	[Developing new releases](developing-new-releases)
-    - [Design for Extensibility]()
-    - [Data Upgrade]()
-    - [Feature exposure]()
+    - [Design for Extensibility](design-for-extensibility)
+    - [Data Upgrade](data-upgrade)
+    - [Feature exposure](feature-exposure)
 +	[Branches and builds]()
 +	[Testing]()
 +	[Deploying updates]()
@@ -122,30 +122,31 @@ What is essential is releasing with quality with every update. Testing helps ass
 
 Designing your solution for extensibility means considering both how you customize by extending the standard application and how you enable customization of your ISV solutions by your customers and partners.
 
-Ensure customizations are additive as opposed to intrusive, and follow the extensive guidance we have provided under the [extensibility home page]().
+Ensure customizations are additive as opposed to intrusive, and follow the guidance found on the [extensibility home page]().
 
-Do not become too creative in building your customization if you end up extending using an API that is questionable, as this leads to risk that later updates will break your solution. Instead, log an [extensibility request]() for us to create a more explicit API that is more resilient to breakage.
+Do not become too creative in building your customization if you end up extending an API that is questionable. This leads to risk that later updates will break your solution. Instead, log an [extensibility request](./extensibility/extensibility-requests.md) for us to create a more explicit API that is more resilient to breakage.
 
-Design solutions that are extensible. Take inspiration from documentation we have provided: [Write extensible code]().
+Design solutions that are extensible. Take inspiration from [Write extensible code](./extensibility/writing-extensible-code.md).
 
-Design for backward compatibility to avoid breaking any customer implementation. A good strategy is to be quite explicit about what you offer for hooking and wrapping extension code. You have great control over what methods you enable extensions for by how you decorate your methods: [Attributes that make method extensible]().
+Design for backward compatibility to avoid breaking any customer implementation. A good strategy is to be explicit about what you offer for hooking and wrapping extension code. You have great control over what methods you enable extensions for by how you decorate your methods. For more information, read [Attributes that make method extensible](./extensibility/extensibility-attributes.md).
 
 ### Data Upgrade
 
-There is no longer support for data upgrade jobs like what existed with earlier versions of Finance and Operations. This is because we want to provide minimum downtime while updating production environment.
+There is no longer support for data upgrade jobs like those that existed with earlier versions of Finance and Operations. This is because we want to provide minimum downtime while updating a production environment.
 
-The database synchronization is still executing during upgrade and supports basics like adding new tables, field and indexes.
+The database synchronization is still executes during upgrade and supports basics like adding new tables, field, and indexes.
 
-We are introducing new ways of driving data upgrade that execute asynchronously to prevent downtime. This is quite a different paradigm. Data upgrade will at times be triggered when a feature is enabled by a feature flag. This new approach for data upgrade will materialize with upcoming updates, and you should expect documentation resources to become available.
+We are introducing new ways of driving data upgrade that execute asynchronously to prevent downtime. This is quite a different paradigm. Data upgrade will at times be triggered when a feature is enabled by a feature flag. This new approach for data upgrade will materialize with upcoming updates, and documentation resources will be available.
 
 ### Feature exposure
 
 With One Version, updates are managed by Microsoft and pushed onto customer environments. Pushed updates should not require customers to adjust to functional changes and train their users on a monthly basis because of new or changed features. This should not cause the customer to delay updates to their environment.
 
-Feature management is a new concept that empowers customers to decide when new or changed features are put into effect. This allow customers to review, validate, and document new or changed features before they are adopted. This also allows for training of users before enabling new or changed processes to reduce impact on daily operations. This puts the customer in control.
+Feature management is a new concept that empowers customers to decide when new or changed features are put into effect. This allows customers to review, validate, and document new or changed features before they are adopted. This also allows for training of users before enabling new or changed processes to reduce impact on daily operations. This puts the customer in control.
 
-Feature management is planned to be released in the upcoming monthly updates.
+Feature management will be released in the upcoming monthly updates.
 
-Consider also using feature management with your ISV solution to provide customers control on when new features are put into effect.
+You should consider using feature management with your ISV solution to provide customers control on when new features are put into effect.
+
 
 
