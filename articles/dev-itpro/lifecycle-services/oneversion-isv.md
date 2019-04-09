@@ -230,5 +230,11 @@ Here are some areas where alignment will be needed:
 +	Data migration without downtime.
 +	Support on-call duty for service of critical production issues.
 
+## Do I ship binaries or source code?
 
+Binary compatibility is supported as long as you do not recompile. We recommend your solution is not compiled on customer environments, but that you deploy pre-compiled binaries that you have prepared and validated. This provides you with the option that your solution binaries are created from your servicing branch based on an earlier version where this is practical.
+
+If an implementation partner or customer compiles your solution on an updated environment, then new warnings and errors as mentioned under design compatibility may show. Therefore, we recommend that implementation partners do not compile your solution.
+
+This does not imply that you cannot share your source code to help support debugging, for example. You should consider steps to avoid compilation of your code, so that you can avoid exposing to design time issues to implementation partners.
 
