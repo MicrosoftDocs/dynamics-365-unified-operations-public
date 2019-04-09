@@ -52,8 +52,8 @@ Preventing technical or functional issues is a difficult proposition and require
 How we do this together is covered in these paragraphs.
 +	[Servicing customers](#servicing-customers)
 +	[Compatibility](#compatibility)
-    - [Runtime compatibility]()
-    - [Design time compatibility]()
+    - [Runtime compatibility](#runtime-compatibility)
+    - [Design time compatibility](#design-time-compatibility)
 +	[Developing new releases]()
     - [Design for Extensibility]()
     - [Data Upgrade]()
@@ -90,20 +90,20 @@ The following sections defines and describes the aspects of backward compatibili
 
 ### Runtime compatibility
 
-We promise that new updates are runtime backward compatible. This promise covers binary and functional compatibility. Runtime compatibility means customizations that exist on a production and sandbox environments will continue work after a new Finance and Operations updates is deployed on this environment. This includes both standard platform and application updates.
+We promise that new updates are runtime backward compatible. This promise covers binary and functional compatibility. Runtime compatibility means customizations that exist on production and sandbox environments will continue to work after a new Finance and Operations update is deployed on the environment. This includes both standard platform and application updates.
 
-This also means that changes to the platform including change to the compiler will be backward compatible with customizations that were compiled on an earlier platform.
+This also means that changes to the platform including changes to the compiler will be backward compatible with customizations that were compiled on an earlier platform.
 
-The compatibility is only backwards. It is not possible to compile a customization on a newer platform and deploy this onto a customer environment that is not yet updated to that or a later version.
+The compatibility is only backwards. It is not possible to compile a customization on a newer platform and deploy this onto a customer environment that has not yet updated to that or a later version.
 
-### Design time compatibility
+### Design-time compatibility
 
 Design time backward compatibility means that a developer can apply a Finance and Operation update to their development environment and can successfully compile their code without making any changes.
 
-Be very considerate of how API’s of your solution are used in your customers’ implementations, and how you keep honoring these API’s without causing breaking changes. This will comprise of being diligent in what is changed and rely on engineering best practices.
+You must be aware of how APIs in your solution are used in your customers’ implementations, and how you use these API’s without causing breaking changes. This work includes being diligent about what is changed and relying on engineering best practices. Examples of what you should avoid are discussed in [Breaking changes](breaking-changes.md).
 
-Examples on what you should avoid is seen here: [Breaking changes](breaking-changes.md).
+You should strive to meet a bar to Microsoft's bar, so that together we avoid creating regressions.
 
-Strive to adapt a similar bar as we set from Microsoft, such that we together avoid causing regressions.
+We promise binary compatibility and we also aim for design-time compatibility. However, there is a category of necessary changes that are **not** design time compatible but remain binary compatible. After applying an update, compiling your code may result in new errors or warnings. Some examples are that we make an enumeration extensible, we mark an API as obsolete or internal, or we introduce a new compiler error to avoid unsafe coding practices. These changes might require work on your solution. Design-time breaking changes that are binary compatible do not require a 12-month deprecation notice.
 
-We promise binary compatibility and we also aim for design time compatibility. However, there is a category of necessary changes that are NOT design time compatible but remain binary compatible. After applying an update, compiling your code may result in new errors or warnings. Some examples are: We make an enumeration extensible, mark an API as obsolete or internal, or introduce a new compiler error to avoid unsafe coding practices. These changes may require work on your solution. Design time breaking changes that are binary compatible do not require a 12-month deprecation notice.
+
