@@ -450,6 +450,8 @@
       href: user-interface/control-checklist.md
   - name: Messages
     items:
+    - name: Feature callouts
+      href: user-interface/feature-callouts.md
     - name: Slider and MessageBox dialogs
       href: user-interface/slider-messagebox.md
     - name: Message center, message bar, and message details API
