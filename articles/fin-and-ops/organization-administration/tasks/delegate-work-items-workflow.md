@@ -30,14 +30,15 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users. This procedure helps you configure the system to automatically delegate your work items to another user.
+## Manually delegate a work item
 
+To delegate an individual work item, click the **Delegate** option in the **Workflow** menu and then enter the user to be delegated to along with a comment. This will reassign the work item to that user so they can complete it.
 
+## Automatically delegate work items
 
-The demo data company used to create this procedure is USMF.
+If you plan to be out of the office or otherwise unavailable to act on work items for a period of time, you can automatically delegate new work items to other users in the **User options** form.
 
-
-## Set up automatic delegation
+### Set up automatic delegation
 1. Go to Common > Setup > User options.
 2. Click the Workflow tab.
     * Make sure the Delegation section is expanded.    To configure the system to automatically delegate your work items to other users, you must create delegation rules, which specify when certain types of work items are delegated. Follow these steps to create a delegation rule.  
