@@ -754,6 +754,8 @@
         href: ../financials/cash-bank-management/cash-flow-forecasting.md
       - name: Bank management workspace
         href: ../financials/cash-bank-management/Bank-management-workspace.md
+      - name: Bank foreign currency revaluation
+        href: ../financials/cash-bank-management/bank-revaluation.md
       - name: Cash discounts
         href: ../financials/cash-bank-management/cash-discounts.md
       - name: Cash discounts for overpayments
