@@ -54,15 +54,15 @@ How we do this together is covered in these paragraphs.
 +	[Compatibility](#compatibility)
     - [Runtime compatibility](#runtime-compatibility)
     - [Design time compatibility](#design-time-compatibility)
-+	[Developing new releases](developing-new-releases)
-    - [Design for Extensibility](design-for-extensibility)
-    - [Data Upgrade](data-upgrade)
-    - [Feature exposure](feature-exposure)
-+	[Branches and builds]()
-+	[Testing]()
-+	[Deploying updates]()
-+	[ISV solutions as part of One Version automated deployment?]()
-+	[Do I ship binaries or source code?]()
++	[Developing new releases](#developing-new-releases)
+    - [Design for Extensibility](#design-for-extensibility)
+    - [Data Upgrade](#data-upgrade)
+    - [Feature exposure](#feature-exposure)
++	[Branches and builds](#branches-and-builds)
++	[Testing](#testing)
++	[Deploying updates](#deploying-updates#)
++	[ISV solutions as part of One Version automated deployment?](#isv-solutions-as-part-of-one-version-automated-deployment)
++	[Do I ship binaries or source code?](#do-i-ship-binaries-or-source-code)
 
 ## Servicing customers
 
@@ -206,6 +206,29 @@ You validate your new solution development on the latest released version or on 
 
 If an unexpected break occurs, then you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process.
 
+## Deploying updates
+
+One Version servicing includes automated update process to customer environments for Microsoft standard platform and application updates. This automation is not currently available for ISV solutions. For more information, read [ISV’s as part of One Version service updates](#isv-solutions-as-part-of-one-version-automated-deployment). 
+
+For now, ISV solutions are updated manually. The binary backward compatibility enables safe update of the standard platform and application. Updating your ISV solutions will then happen offset of this controlled by you. 
+
+The update process includes database synchronization, for example, adding new fields and indexes.
+
+## ISV solutions as part of One Version automated deployment?
+
+We have no plans to ship ISV solutions as part of the One Version automated deployment process. This is not to say that this cannot become an option at some point, but we must align engineering processes to make this feasible.
+
+Here are some areas where alignment will be needed:
++	Feature management: Allowing users control of when new feature turn on.
++	Backward compatibility and compliance: Ensuring compliance with API customization usage.
++	Feature depreciation: Heads up time for depreciating features or APIs.
++	Test automation suite: Ongoing regression suite validation running hosted.
++	Testing during preview phase.
++	ISV solutions sign-off and upload: Based on current updates timely with release milestone.
++	Automated deployment scripts.
++	Zero downtime: For instant deployment of updates.
++	Data migration without downtime.
++	Support on-call duty for service of critical production issues.
 
 
 
