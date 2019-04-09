@@ -5,7 +5,7 @@ title: Business events
 description: This topic provides information about business events, which s provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
-
 
 Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 for Finance and Operations. In this way, the systems can perform business actions in response to the business events.
 
@@ -41,27 +39,9 @@ In Finance and Operations, a business action that a user performs can be either 
 ## Prerequisites
 
 - Business events can be consumed via Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such asset(s) to use business events.
-- Business events are available in Platform update 24 and later. Therefore, at least Platform update 24 is required.
 
 > [!IMPORTANT]
 > Business events must not be considered a mechanism for exporting data out of Finance and Operations. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
-
-## Enabling business events
-
-By default, the business event functionality is turned off. To turn it on, follow one of these steps.
-
-- In non-production environments, turn on the BusinessEventsMaster flight by running the following SQL statement
-
-    ```
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) VALUES ('BusinessEventsMaster', 1, 12719367)
-    ```
-
-- After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's. 
-key="DataAccess.FlightingServiceCatalogID" value="12719367"
-
-- Perform an IISRESET
-
-- In production environments, you must create a support case with Microsoft.
 
 ## Business events that are implemented in Finance and Operations
 
@@ -201,16 +181,42 @@ If an error can't be successfully processed, you can use the **Download payload*
 
 ## Business event consumption models
 
-The integration requirements and integration solution design for implementations vary. The integration requirements play a role in identifying the consumption model for business events. The following illustration shows the consumption models that Finance and Operations makes available.
+The integration requirements and integration solution design for implementations vary. The integration requirements play a role in identifying the consumption model for business events. In summary, you must consider the following points when you design integrations that use business events:
 
-![Business events consumption model](../media/businesseventsconsumptionmodel.png)
-
-In summary, you must consider the following points when you design integrations that use business events:
-
-- Business events can be consumed via Microsoft Flow, Service Bus, or Event Grid.
-- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, or Event Grid.
+- Business events can be consumed using Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
+- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
 - A business event can be activated in all legal entities or in specific legal entities.
-- A business event in a legal entity can be sent to only one endpoint. Messaging brokers make one-to-many (1:N) consumption available.
-- A business event across unique legal entities can be sent to unique endpoints or the same endpoints.
+- A business event can be sent to a unique endpoint or the same endpoints.
 - Microsoft Flow can directly subscribe to business events.
-- Endpoints such as Service Bus or Event Grid endpoints enable *n* consumers to subscribe to and receive the events.
+
+## Idempotency
+Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number, which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
+
+## Filtering in Azure Event Grid and Azure Service Bus
+Azure Service Bus and Azure Event Grid supports subscribing to topics by
+specifying criteria on the incoming message. For more information, see [Topic filters and actions](https://docs.microsoft.com/en-us/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](https://docs.microsoft.com/en-us/azure/event-grid/event-filtering).
+
+A business event that is sent to an Azure Service Bus or Azure Event Grid
+has the following fields made available for this purpose. Subscribers can use
+this information to subscribe to more specific topics as required.
+
+-   **Category** – This is the business event category as displayed in the
+    business event catalog. This is useful as a filter criterion when a common
+    topic is used for receiving business events from multiple categories and
+    subscribers want to only receive business events for the category that they are
+    interested in.
+
+-   **Business event ID** – This is the class name of the business event
+    implementation as displayed in the business event catalog. This uniquely
+    identifies the business event (not the instance of the business event) and
+    thus helps in validation of received business events on the consumer side to
+    ensure the expected business event is what is being received and processed.
+
+-   **Legal entity** – This is the legal entity in which the business event
+    happened. This is a useful information to base the consuming logic on if
+    the processing and distribution of business events on the consumption side
+    must be driven by a legal entity.
+
+> [!NOTE]
+> The filterable fields that are sent in a business event can be modified to
+include custom fields. This is a developer experience.

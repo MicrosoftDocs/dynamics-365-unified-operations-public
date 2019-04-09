@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 2019-02-28
 # Alerts as business events
 
 [!include[banner](../includes/banner.md)]
-[!include[preview-banner](../includes/preview-banner.md)]
 
 In Dynamics 365 for Finance and Operations, there are two kinds of alerts that can be configured by users. These are change-based alerts and due date alerts. For more information about the alerts functionality, see [Alerts](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/alerts-overview).
 
