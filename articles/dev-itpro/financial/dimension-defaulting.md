@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default financial dimensions
-description: This topic describes default financial dimensions, starting from where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension.
+description: This topic describes default financial dimensions. It explains where the dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
 author: jasonsto
 manager: annbe
 ms.date: 03/25/2019
@@ -32,445 +32,384 @@ ms.dyn365.ops.version: AX 7.0.0
 # Default financial dimensions
 [!include [banner](../includes/banner.md)]
 
-This topic explains default financial dimensions for developers and it will cover where the dimensions originate, the APIs used to merge them, and how they are used to create a ledger dimension. Examples showing the user interface as well as SQL table queries with output are included along with some explanation of APIs and usage examples. This topic uses examples from the demo data company USMF.
+This topic explains default financial dimensions for developers. It explains where the dimensions originate, the application programming interfaces (APIs) that are used to merge them, and how they are used to create ledger dimensions. The topic includes examples that show the user interface (UI), and SQL table queries, and the output of those queries. It also includes some explanation of APIs and examples of how they are used.
+
+This topic uses examples from the **USMF** demo data company.
 
 For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
 
-:::row:::
-    :::column:::
-    ### Default dimension entry
-    There are over 250 pages in Microsoft Dynamics 365 for Finance and Operations that allow you to enter default financial dimensions. The dimensions are displayed on a FastTab that lists dimensions with values and descriptions. In standard demo data there are over 30 dimensions available but only five are displayed in this example of a Financial dimensions FastTab. 
-    :::column-end:::
-    :::column:::
-       ![Financial dimensions FastTab fields](./media/DefaultDimensionEntry.png "Financial dimensions FastTab fields")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    ### Dimensions list
-    The dimensions are filtered first based on the list of all active account structures that are associated with the ledger of the current company or the company specified on a page. Finally, a union of all of the dimensions in these account structures, plus all active advanced rules associated with those structures is obtained. 
-    :::column-end:::
-    :::column:::
-       ![Financial dimension list](./media/FinancialDimensionList.png "Financial dimension list")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    ### Ledger page
-    The **Ledger** page (**General Ledger > Setup > Ledger**) is where you can maintain the account structures for a company. 
-    :::column-end:::
-    :::column:::
-       ![Ledger configuration for company USMF](./media/LedgerStructureConfiguration.png "Ledger configuration for company USMF")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    ### Account structures with varying numbers of dimensions
-    When you select the first account structure and click the Configure account structure button, you can tell how many dimensions are used by that account structure by counting the columns. The following two screenshots show an account structure that uses three dimensions and another account structure that uses five.  
-    :::column-end:::
-    :::column:::
-    *Account structure with three dimensions*
-       ![Balance sheet account structure setup for company "USMF"](./media/BalanceSheetAccountStructureSetup.png "Balance sheet account structure setup for company USMF")
-    *Account structure with five dimensions*
-       ![Profit and loss account structure setup for company USMF](./media/PandLAccountStructureSetup.png "Profit and loss account structure setup for company USMF")
-    :::column-end:::
-:::row-end:::
+### Entering default dimensions
 
-Between the two account structures shown earlier, there are four unique dimensions. These four dimensions account for the dimensions that will display in the default dimensions. In addition to these dimensions, dimensions from advanced rule structures linked to those account structures through advanced rules are also examined. In this example, it results in a fifth dimension added to the default entry, Project.
-It is also important to note that the MainAccount dimension is not shown in most default dimension lists. Budgeting is the exception because it does explicitly include the MainAccount as part of the list of default dimensions.
+More than 250 pages in Microsoft Dynamics 365 for Finance and Operations let you enter default financial dimensions. The dimensions are shown on a FastTab that lists them together with values and descriptions. In standard demo data, more than 30 dimensions are available. However, the following example of a **Financial dimensions** FastTab shows just five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project. 
 
-The following images show the advanced rule and structure that results in the project dimension being included in the default dimensions.
+![Financial dimensions FastTab](./media/DefaultDimensionEntry.png "Financial dimensions FastTab")
 
-:::row:::
-    :::column:::
-    ![Advanced rule linked to the Profit and loss structure](./media/AdvancedRuleLinked.png "Advanced rule linked to the Profit and loss structure")
-    :::column-end:::
-    :::column:::
-    ![The rule structure for Project](./media/RuleStructure.png "The rule structure for Project")
-    :::column-end:::
-:::row-end:::
+### Dimensions list
 
+The dimensions are first filtered based on the list of all active account structures that are associated with the ledger of the current company or the company that is specified on the page. Next, a union of all the dimensions in those account structures, plus all active advanced rules that are associated with those structures, is obtained. 
 
-### API for default dimensions list
+![Financial dimensions list](./media/FinancialDimensionList.png "Financial dimensions list")
 
-The default dimension controller determines which dimensions are applicable for a company using the *DimensionCache::getDimensionAttributeSetForLedger()* API.
+### Ledger page
+
+On the **Ledger** page (**General Ledger \> Setup \> Ledger**), you can maintain the account structures for a company. 
+
+![Ledger page for the USMF company](./media/LedgerStructureConfiguration.png "Ledger page for the USMF company")
+
+### Account structures where the number of dimensions varies
+
+To determine how many dimensions an account structure uses, select it on the **Ledger** page, select **Configure account structure** above the grid, and then count the columns. The following illustrations show one account structure that uses three dimensions and another account structure that uses five dimensions.
+
+**Account structure that uses three dimensions**
+
+![Setup of the Balance sheet account structure for the USMF company](./media/BalanceSheetAccountStructureSetup.png "Setup of the Balance sheet account structure for the USMF company")
+
+**Account structure that uses five dimensions**
+
+![Setup of the Profit and loss account structure for the USMF company](./media/PandLAccountStructureSetup.png "Setup of the Profit and loss account structure for the USMF company")
+
+Between the two account structures that are shown in the preceding illustrations, there are four unique dimensions: BusinessUnit, Department, CostCenter, and ItemGroup. These four dimensions will appear in the list of default dimensions. In addition, dimensions from advanced rule structures that are linked to the account structures through advanced rules are examined. In this example, the examination of dimensions from advanced rule structures causes a fifth dimension, Project, to be added to the list of default dimensions.
+
+The following illustration shows the advanced rule that causes the Project dimension to be included in the list of default dimensions.
+
+![Advanced rule that is linked to the Profit and loss account structure](./media/AdvancedRuleLinked.png "Advanced rule that is linked to the Profit and loss account structure")
+
+The following illustration shows the rule structure.
+
+![Rule structure for Project](./media/RuleStructure.png "Rule structure for Project")
+
+Note that the MainAccount dimension isn't shown in most lists of default dimensions. However, Budgeting is the exception. It does explicitly include the MainAccount dimension in the list of default dimensions.
+
+### API for the list of default dimensions
+
+The default dimension controller uses the **DimensionCache::getDimensionAttributeSetForLedger()** API to determine which dimensions are applicable to a company.
 
 ## Control uptake and storage
 
-### Form uptake and dimensions data model
+### Form uptake and the dimensions data model
 
-All forms displaying default dimensions use the *DimensionDefaultingController*. The controller automatically handles displaying dimensions, loading and saving values and user interaction. These uptake patterns are documented in the [Accounts and Dimensions
-whitepaper](http://go.microsoft.com/fwlink/?linkid=213133).
+All pages that show default dimensions use the **DimensionDefaultingController** controller. This controller automatically shows dimensions, and loads and saves values and user interactions. For information about these uptake patterns, see the [Implementing the Account and Financial Dimensions Framework for Microsoft Dynamics AX 2012 Applications](http://go.microsoft.com/fwlink/?linkid=213133) white paper.
 
-:::row:::
-    :::column:::
-    ### Default dimension value storage
-    The values associated with the dimensions are stored in a separate table apart from the primary table referencing them. For example, the *LedgerJournalTable* has a *DimensionDefault* column that holds a foreign key reference to a record in the *DimensionAttributeValueSet* table. This is the parent record representing the set of values displayed.  
-    :::column-end:::
-    :::column:::
-    ![Part2DefaultDimensionEntry](./media/Part2DefaultDimensionEntry.png "Default dimensions")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Each individual value is stored as a separate row in the *DimensionAttributeValueSetItem* table sharing the same parent record foreign key.  
-    ![SQLResultofAllDefaultDimensionValues](./media/SQLResultofAllDefaultDimensionValues.png "SQL results of all default dimension values")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    This data can be queried directly through these tables or using the *DimensionAttributeValueSetItemView* as shown here.
-    ![SQLofAllDefaultDimensionValues](./media/SQLofAllDefaultDimensionValues.png "SQL of all default dimension values")
-    :::column-end:::
-:::row-end:::
-        
+### Storage of default dimension values
 
+The values that are associated with the dimensions are stored in a table that is separate from the primary table that references them. For example, the LedgerJournalTable table has a **DimensionDefault** column that holds a foreign key reference to a record in the DimensionAttributeValueSet table. This record is the parent record that represents the set of values that is shown.
+
+![Default dimension values](./media/Part2DefaultDimensionEntry.png "Default dimension values")
+
+Each value is stored as a separate row in the DimensionAttributeValueSetItem table sharing the same parent record foreign key.
+
+![SQL results of all default dimension values](./media/SQLResultofAllDefaultDimensionValues.png "SQL results of all default dimension values")
+
+The data can be queried directly through these tables. Alternatively, it can be queried by using **DimensionAttributeValueSetItemView**, as shown in the following illustration.
+
+![Querying data by using DimensionAttributeValueSetItemView](./media/SQLofAllDefaultDimensionValues.png "Querying data by using DimensionAttributeValueSetItemView")
 
 ### Empty values
 
-The dimension framework only stores rows for dimensions that have a value entered. No data is stored for empty rows. Therefore, once persisted, the framework does not have the ability to determine the difference between a dimension that did not have a value and one that had a value but was cleared out by a user. In order to save an empty value, a real value must be created with a name indicating it is empty such as “empty”, “n/a”, “\<cleared\>”, “\*blank\*”. The user can then select this value at entry time to impact defaulting behavior as desired.
+The dimension framework stores rows only for dimensions that a value has been entered for. No data is stored for empty rows. Therefore, after data is persisted, the framework can't distinguish a dimension that didn't have a value from a dimension that did have a value, but it was cleared by a user. To save an empty value, you must create a real value and give it a name that indicates that it's empty. For example, name it **empty**, **n/a**, **\<cleared\>**, or **\*blank\***. Users can then select this value at entry time to affect the defaulting behavior as they desire.
 
-:::row:::
-    :::column:::
-    ### Immutable data
-    As with most all dimension data, the records that are inserted into the tables mentioned earlier are immutable. They are only written initially and never subsequently updated or deleted. When the user adds a Project ID as a dimension and then saves their change, the query will still return the same three rows. The dimension framework has created a new value set record and four additional value set item records linking to the new value set. 
-    :::column-end:::
-    :::column:::
-    ![Part2-1DefaultDimensionEntry](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry of one added value")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    ![Part2SQLResultsValueSet](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values the new set")
-    :::column-end:::
-:::row-end:::    
+### Immutable data
 
+Like most dimension data, the records that are inserted into the tables that were mentioned earlier are immutable. They are initially written, but then never subsequently updated or deleted. For example, a user adds a project ID as a dimension and then saves the change.
+
+![Default dimension entry and one added value](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry and one added value")
+
+In this case, the query will still return the same three rows. The dimension framework has created a new value set record and four additional value set item records that are linked to the new value set
+
+![SQL query and output (column-trimmed) for all default dimension values in the new set](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values in the new set")
 
 ## Copy patterns
-This section covers how default dimensions are copied between entities.
 
-:::row:::
-    :::column:::
-    ### Copy versus merge
-    Default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. The dimension framework does not set the precedence for defaulting.  Each form or process determines this based on their business logic needs.
-A hypothetical order document will serve as the basis for the examples below. This could be a service order interacting with customers and containing line item services, or a purchase order interacting with vendors and line item inventory items. In terms of where default dimensions are entered, they could be entered or overridden at different points in processing as shown in the following image.
-    :::column-end:::
-    :::column:::
-    ![Default dimension sources on a typical document](./media/DefaultDimensionSourcesGraph.png "Default dimension sources on a typical document")
-    :::column-end:::
-:::row-end:::
+This section explains how default dimensions are copied between entities.
 
-In the example of an order document, there are multiple default dimensions that are available for the business logic to consider. The document header may have a set of default dimensions like the purchase order in this example.  The customer or vendor of the order, such as the vendor in this case, has a set of default dimensions as well.  Depending on the business logic of the order, these different sets of default dimensions may have different precedence when combined together.  Some may have higher precedence and replace other default dimensions while others may be merged together.
+### Copy vs. merge
 
-### Default dimension copy
+Default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. The dimension framework doesn't set the precedence for defaulting behavior. Each page or process determines the precedence, based on the requirements of its business logic.
 
-:::row:::
-    :::column:::
-    A default dimension entered on a specific vendor account.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensionVendor.png](./media/DefaultDimensionVendor.png "Default dimension entered on a specific vendor account")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    The SQL query for the default dimension reference on the vendor record.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensions3-SQLVendor.png](./media/DefaultDimensions3-SQLVendor.png "The SQL query for the default dimension reference on the vendor record")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        The resulting default dimension that is created.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensions3-SQLResultVendor.png](./media/DefaultDimensions3-SQLResultVendor.png "The resulting default dimension that is created.")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    A new purchase order created for this vendor.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensions3-CopiedToDocHeader.png](./media/DefaultDimensions3-CopiedToDocHeader.png "Default dimension copied to a document header (Purchase order)")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-     The SQL query and default dimension reference on the header record. 
-    :::column-end:::
-     :::column:::
-     ![DefaultDimensions3-SQLCopiedToDocHeader.png](./media/DefaultDimensions3-SQLCopiedToDocHeader.png "SQL query and output showing default dimensions on purchase order record")
-    :::column-end:::   
-:::row-end:::
-:::row:::
-    :::column:::
-    The dimensions from the vendor replaced any dimensions already on the purchase order header as soon as a vendor was selected, so a direct copy of the default dimension foreign key was all that needed to be done.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensions3-SQLResultCopiedToDocHeader.png](./media/DefaultDimensions3-SQLResultCopiedToDocHeader.png)
-    ![DefaultDimensions3-6CodetoCopy.png](./media/DefaultDimensions3-6CodetoCopy.png "Code used to copy default dimensions from the vendor to the purchase order")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    The header dimensions after the user  user enters a value for the Project dimension. 
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensions3-7DocumentHeader.png](./media/DefaultDimensions3-7DocumentHeader.png "Default dimension modified by a user on a document header (Purchase order)")
-    :::column-end:::
-    :::row-end:::
-:::row:::
-    :::column:::
-    The SQL query for the default dimension reference on the header record and the resulting default dimension created.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQL query and output showing updated default dimensions on purchase order record")
-![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "SQL query and output showing updated default dimensions on purchase order record")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Next, as the user changes to the Line view to enter the lines, Figures 9 and 10 below show default dimensions copied from the purchase order header and the code copying the foreign key reference to the line. In this case, the line has not yet been saved so the default dimension foreign key only appears in the table buffer in memory.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimensions3-9CopiedToLine.png](./media/DefaultDimensions3-9CopiedToLine.png "Default dimension copied to a document line (Purchase order line)")
-    ![DefaultDimensions3-10CodeToCopyToLine.png](./media/DefaultDimensions3-10CodeToCopyToLine.png "Code used to copy default dimensions from the header to the line")
-    :::column-end:::
-:::row-end:::
+A hypothetical order document will serve as the basis for the examples that follow. This document might be a service order that interacts with customers, and that contains services as line items. Alternatively, it might be a purchase order that interacts with vendors, and that contains inventory items as line items. Default dimensions can be entered or overridden at various points in the processing, as the following illustration shows.
+
+![Default dimension sources on a typical document](./media/DefaultDimensionSourcesGraph.png "Default dimension sources on a typical document")
+
+For an order document, multiple default dimensions are available for the business logic to consider. The document header might have a set of default dimensions, as in the case of the purchase order that is used in this example. The customer or, in this example, the vendor for the order also has a set of default dimensions. Depending on the business logic of the order, these various sets of default dimensions might have different precedence when they are combined. Some default dimensions might have higher precedence and replace other default dimensions. However, some default dimensions might be merged together.
+
+### Copying default dimensions
+
+The following illustration shows a default dimension that is entered on a specific vendor account.
+
+![Default dimension entered on a specific vendor account](./media/DefaultDimensionVendor.png "Default dimension entered on a specific vendor account")
+
+The following illustration shows the SQL query for the default dimension reference on the vendor record.
+
+![SQL query for the default dimension reference on the vendor record](./media/DefaultDimensions3-SQLVendor.png "SQL query for the default dimension reference on the vendor record")
+
+The following illustration shows the default dimension that is created.
+
+![Resulting default dimension](./media/DefaultDimensions3-SQLResultVendor.png "Resulting default dimension")
+
+The following illustration shows a new purchase order that is created for this vendor. The default dimension is copied to the document header.
+
+![Default dimension copied to a document header (purchase order)](./media/DefaultDimensions3-CopiedToDocHeader.png "Default dimension copied to a document header (purchase order)")
+
+The following illustration shows the SQL query and default dimension reference on the header record. 
+
+![SQL query and output that shows default dimensions on a purchase order record](./media/DefaultDimensions3-SQLCopiedToDocHeader.png "SQL query and output showing default dimensions on a purchase order record")
+
+As the following illustration shows, as soon as a vendor is selected, the dimensions from the vendor replaces any dimensions that were already on the purchase order header.
+
+![Default dimensions copied from the vendor](./media/DefaultDimensions3-SQLResultCopiedToDocHeader.png)
+
+Therefore, the default dimension foreign key just had to be copied. The following illustration shows the code that is used to copy default dimensions from the vendor to the purchase order.
+
+![Code used to copy default dimensions from the vendor to the purchase order](./media/DefaultDimensions3-6CodetoCopy.png "Code used to copy default dimensions from the vendor to the purchase order")
+
+The following illustration shows the header dimensions after a user enters a value for the Project dimension. 
+
+![Default dimension modified by a user on a document header (purchase order)](./media/DefaultDimensions3-7DocumentHeader.png "Default dimension modified by a user on a document header (purchase order)")
+
+The following illustration shows the SQL query for the default dimension reference on the header record.
+
+![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQL query")
+
+The following illustration shows the default dimension that is created.
+
+![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "Output showing updated default dimensions on purchase order record")
+
+When the user switches to the **Line** view to enter lines, default dimensions are copied from the purchase order header, as the following illustration shows.
+
+![Default dimensions copied to a document line (purchase order line)](./media/DefaultDimensions3-9CopiedToLine.png "Default dimensions copied to a document line (purchase order line)")
+
+The following illustration shows the code that is used to copy the foreign key reference to the line. In this case, the line hasn't yet been saved. Therefore, the default dimension foreign key appears only in the table buffer in memory.
+
+![Code used to copy default dimensions from the header to the line](./media/DefaultDimensions3-10CodeToCopyToLine.png "Code used to copy default dimensions from the header to the line")
 
 ## Merging patterns
 
-This section covers how default dimensions are merged between entities.
+This section explains how default dimensions are merged between entities.
 
-### Default dimension merging
+### Merging default dimensions
 
-:::row:::
-    :::column:::
-    The user manually cleared the BusinessUnit dimension on the line, which in turn creates a new default dimension foreign key and updates the purchase order header. 
-    :::column-end:::
-    :::column:::
-    ![DefaultDimension4-1DimOnLine.png](./media/DefaultDimension4-1DimOnLine.png "Default dimension modified on a document line (Purchase order line)")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Since the header has not yet been saved this updated foreign key is only visible on the table buffer in memory, but the new default dimension can be queried and found
-    :::column-end:::
-    :::column:::
-    ![DefaultDimension4-1SQLDimOnLine.png](./media/DefaultDimension4-1SQLDimOnLine.png "SQL query showing updated default dimensions")
-    ![DefaultDimension4-2SQLResultsOnLine.png](./media/DefaultDimension4-2SQLResultsOnLine.png "SQL query output showing updated default dimensions")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Consider the item that the user will enter on the purchase order line. Figures 3 and 4 below show default financial dimensions on the released product.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimension4-3Item.png](./media/DefaultDimension4-3Item.png "Default dimensions on an item")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    The SQL query and result for that default dimension in the database
-    :::column-end:::
-    :::column:::
-    ![DefaultDimension4-4SQLItem.png](./media/DefaultDimension4-4SQLItem.png "SQL query and output showing default dimensions on item record")
-    ![DefaultDimension4-4SQLResultsItem.png](./media/DefaultDimension4-4SQLResultsItem.png "SQL query and output showing default dimensions on item record")
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Next, the user enters the item on the purchase order line.  Figures 5 below shows the item selected on the purchase order line and the resulting default dimensions. In this case, the default dimension values were merged by the purchase order logic.
-    :::column-end:::
-    :::column:::
-    ![DefaultDimension4-5PurchLineResult.png](./media/DefaultDimension4-5PurchLineResult.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    SQL query and output showing default dimensions from item record on the purchase order line
-    :::column-end:::
-    :::column:::
-    [![DefaultDimension4-6SQLOnItem.png](./media/DefaultDimension4-6SQLOnItem.png)](./media/DefaultDimension4-6SQLOnItem.png)
-[![DefaultDimension4-6SQLResultOnItem.png](./media/DefaultDimension4-6SQLResultOnItem.png)](./media/DefaultDimension4-6SQLResultOnItem.png)
-    :::column-end:::
-:::row-end:::
+In the following illustration, the user has manually cleared the BusinessUnit dimension on the line. Therefore, a new default dimension foreign key is created, and the purchase order header is updated. 
 
+![Default dimension modified on a document line (purchase order line)](./media/DefaultDimension4-1DimOnLine.png "Default dimension modified on a document line (purchase order line)")
 
-The purchase order logic merges the default dimensions from 3 different sources when the item is specified for a purchase order line. Consider the following information.
-:::row:::
-    :::column:::
-    Order header default dimensions merged with the order line default dimensions = merged result 1 default dimensions
-    :::column-end:::
-    :::column:::
-    [![DefaultDimension4Graph.png](./media/DefaultDimension4Graph.png)](./media/DefaultDimension4Graph.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    Item default dimensions merged with merged result 1 = final order line default dimensions (merged result 2). This table shows the logical steps of the merging that is occurring. However, these steps are combined during execution using the APIs provided by the dimensions framework.
-    :::column-end:::
-    :::column:::
-    [![DefaultDimension4-7Graph2.png](./media/DefaultDimension4-7Graph2.png)](./media/DefaultDimension4-7Graph2.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    The code that is needed to merge the dimensions from the 3 sources shown earlier.
-    :::column-end:::
-    :::column:::
-    [![DefaultDimension4-8CodeToMerge.png](./media/DefaultDimension4-8CodeToMerge.png)](./media/DefaultDimension4-8CodeToMerge.png)
-    :::column-end:::
-:::row-end:::
+Because the header hasn't yet been saved, the updated foreign key appears only in the table buffer in memory. However, as the following illustrations show, the new default dimension can be queried and found.
 
+![SQL query to find the new default dimension](./media/DefaultDimension4-1SQLDimOnLine.png "SQL query to find the new default dimension")
 
-## Ledger dimension creation
-This section covers how default dimensions can be merged to create new ledger dimensions.
+![Updated default dimensions](./media/DefaultDimension4-2SQLResultsOnLine.png "Updated default dimensions")
 
-Default dimensions exist as a way to provide values that later will be used to create ledger account combinations used in journals and accounting distributions. Default dimensions provide the dimensions other than MainAccount needed for a ledger account combination, and can be combined with a default account, or another ledger dimension in order to produce one.  As defined in the [Ledger account combinations series of blog posts](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx), a ledger account combination is just a set of MainAccount and dimension values with structure and order applied.
+Now consider the item that the user will enter on the purchase order line. The following illustration shows the default financial dimensions on the released product.
 
-[![DefaultDimension5-1AccountingDistributions.png](./media/DefaultDimension5-1AccountingDistributions.png)](./media/DefaultDimension5-1AccountingDistributions.png) 
+![Default dimensions on an item](./media/DefaultDimension4-3Item.png "Default dimensions on an item")
 
-[![DefaultDimension5-1AcctDistForm.png](./media/DefaultDimension5-1AcctDistForm.png)](./media/DefaultDimension5-1AcctDistForm.png) 
-**Figure 1: Accounting distributions from the purchase order line**
+The following illustration shows the SQL query for those default dimensions in the database.
 
-As shown in Figure 1 above, choosing the Financials-\>Distribute amounts option from the purchase order line the accounting distributions form opens. It already has a ledger account combination defaulted “618900--027-008-AudioRM”. From the previous blog post the values for the Project, CostCenter, ItemGroup and Department dimensions have been populated and a MainAccount defaulted from the posting item group on the item, as the Purchase expenditure for expense account for a purchase order as shown in Figure 2 below. The reason project is not shown is because it is not a part of the applicable account structure.
+![SQL query](./media/DefaultDimension4-4SQLItem.png "SQL query")
 
-[![DefaultDimension5-1SourceofMainAccountOnPO.png](./media/DefaultDimension5-1SourceofMainAccountOnPO.png)](./media/DefaultDimension5-1SourceofMainAccountOnPO.png) 
-[![DefaultDimension5-1SourceOfMAonPO2.png](./media/DefaultDimension5-1SourceOfMAonPO2.png)](./media/DefaultDimension5-1SourceOfMAonPO2.png) 
+The following illustration shows the results of the query.
 
-**Figure 2: Source of a default (main) account for the item on the purchase order line**
+![Output showing default dimensions on an item record](./media/DefaultDimension4-4SQLResultsItem.png "Output showing default dimensions on an item record")
+
+Next, the user enters the item on the purchase order line. The following illustration shows the item selected on the purchase order line and the resulting default dimensions. In this case, the default dimension values were merged by the purchase order logic.
+
+![Merged default dimension values on a document line (purchase order line)](./media/DefaultDimension4-5PurchLineResult.png)
+
+The following illustrations show the SQL query and the resulting default dimensions from the item record on the purchase order line.
+
+[![SQL query](./media/DefaultDimension4-6SQLOnItem.png)](./media/DefaultDimension4-6SQLOnItem.png)
+
+[![Output showing default dimensions from an item record on an document line (purchase order line)](./media/DefaultDimension4-6SQLResultOnItem.png)](./media/DefaultDimension4-6SQLResultOnItem.png)
+
+When the item is specified for a purchase order line, the purchase order logic merges the default dimensions from three different sources. Consider the following information:
+
+- Default dimensions on the order header are merged with default dimensions on the order line to yield "merged result 1" default dimensions.
+
+    |                  | Order line | Order header | Merged result 1 | Description |
+    |------------------|------------|--------------|-----------------|-------------|
+    | **BusinessUnit** |            |              |                 | The value is blank in both sources. |
+    | **CostCenter**   |            |              |                 | The value is blank in both sources. |
+    | **Department**   |            | 027          | 027             | The value is blank on the order line. Therefore, the value is copied from the order header. |
+    | **ItemGroup**    |            |              |                 | The value is blank in both sources. |
+    | **Project**      | 000003     | 000003       | 000003          | The value is the same in both sources. |
+    | **Foreign key**  | \*\*6190   | \*9574       | \*9574          | The merged result uses the same record as the order header. |
+
+- Default dimensions on the item are merged with the "merged result 1" default dimensions to yield default dimensions on the final order line ("merged result 2" default dimensions). The following table shows the logical steps of the merge that occurs. However, these steps are combined during execution by using the APIs that the dimension framework provides.
+
+    |                  | Merged result 1 | Item     | Merged result 2 | Description |
+    |------------------|-----------------|----------|-----------------|-------------|
+    | **BusinessUnit** |                 |          |                 | The value is blank in both sources. |
+    | **CostCenter**   |                 | 008      | 008             | The value is blank in the header line merged result. Therefore, the value is copied from the item. |
+    | **Department**   | 027             | 023      | 027             | The value is set in the header line merged result. Therefore, the item is skipped. |
+    | **ItemGroup**    |                 | AudioRM  | AudioRM         | The value is blank in the header line merged result. Therefore, the value is copied from the item. |
+    | **Project**      | 000003          |          | 000003          | The value is set in the header line merged result. |
+    | **Foreign key**  | \*6190          | \*\*0324 | \*\*0325        | A new record ID is used for the merged result. |
+
+The following illustration shows the code that is required in order to merge the dimensions from the three sources.
+
+[![Code to merge dimensions from the order header, order line, and item](./media/DefaultDimension4-8CodeToMerge.png)](./media/DefaultDimension4-8CodeToMerge.png)
+
+## Creating ledger dimensions
+
+This section explains how default dimensions can be merged to create new ledger dimensions.
+
+Default dimensions provide values that will be used later to create ledger account combinations that are used in journals and accounting distributions. According to the definition in the [Ledger account combinations series of blog posts](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx), a ledger account combination is just a set of MainAccount and dimension values that structure and order are applied to.
+
+Default dimensions provide all the dimensions, except MainAccount, that are required for a ledger account combination. They can be combined with a default account, or they can be combined another ledger dimension to produce one. 
+
+The following illustrations show an example where accounting distributions are being done from the purchase order line. The user selects **Financials \> Distribute amounts** from the purchase order line to open the **Accounting distributions** page. On that page, a default ledger account combination, **618900--027-008-AudioRM**, is already entered.
+
+[![Distribute amounts command](./media/DefaultDimension5-1AccountingDistributions.png)](./media/DefaultDimension5-1AccountingDistributions.png) 
+
+[![Accounting distributions page](./media/DefaultDimension5-1AcctDistForm.png)](./media/DefaultDimension5-1AcctDistForm.png)
+
+As the previously mentioned blog post explains, the values for the Project, CostCenter, ItemGroup, and Department dimensions have been filled in. Additionally, the default MainAccount value from the posting item group has been entered on the item as the purchase expenditure for expense account for a purchase order, as the following illustration shows. The project isn't shown because it isn't part of the applicable account structure.
+
+[![Released product details page](./media/DefaultDimension5-1SourceofMainAccountOnPO.png)](./media/DefaultDimension5-1SourceofMainAccountOnPO.png) 
+
+[![Details of the Consume item group](./media/DefaultDimension5-1SourceOfMAonPO2.png)](./media/DefaultDimension5-1SourceOfMAonPO2.png) 
+
+The following illustrations show the query and the resulting default account source.
 
 ![SQL query](./media/DefaultDimension5-3SQLDefaultSource.png "SQL query")
-![Results showing default account source](./media/DefaultDimension5-3SQLResultDefaultSource.png "Results showing default account source")
 
+![Results showing the default account source](./media/DefaultDimension5-3SQLResultDefaultSource.png "Results showing the default account source")
 
-The code required to merge the default dimension on the purchase order line with the default account from the item group is shown the following figure. 
+The following illustration shows the code that is required in order to merge the default dimension on the purchase order line with the default account from the item group. 
 
 ![Code used to merge the default dimension with a default account](./media/DefaultDimension5-4CodeToMerge.png "Code used to merge the default dimension with a default account")
 
-Similar to merging default dimensions, once merged, a newledger account combination is created as shown in the query in the following figure:
+After the merge is completed, a new ledger account combination is created, as the query in the following illustration shows. This behavior resembles the behavior when default dimensions are merged with each other.
 
-![SQL query and results showing merged default account and default dimension](./media/DefaultDimension5-5SQLResultMerged.png "SQL query and results showing merged default account and default dimension")
-
+![SQL query and results showing a merged default account and default dimension](./media/DefaultDimension5-5SQLResultMerged.png "SQL query and results showing a merged default account and default dimension")
 
 ## Common pattern APIs
 
-This section describes APIs used for most common defaulting patterns.
+This section describes the APIs that are used for the most common defaulting patterns.
 
-**Default dimension APIs**
+### Default dimension APIs
 
-The DimensionDefaultFacade and LedgerDimensionDefaultFacade classes provide the APIs are needed for defaulting scenarios. The LedgerDimensionFacade class contains methods for working with ledger dimensions. The methods are highly optimized for performance.
+The **DimensionDefaultFacade** and **LedgerDimensionDefaultFacade** classes provide the APIs that are required for defaulting scenarios. The **LedgerDimensionFacade** class contains methods for working with ledger dimensions. The methods are highly optimized for performance.
 
-**Default dimensions**
+### Default dimensions
 
-The *serviceMergeDefaultDimensions()* API is the most commonly used API for default dimensions. It should be called whenever a new default dimension needs to be created from 2 to 4 other default dimensions. If more default dimensions need to be merged than 4, it can be called multiple times with the result of the prior call used as the first parameter to the subsequent call. This method will blindly merge all values whether they are valid or not.
+#### serviceMergeDefaultDimensions()
 
-**DimensionDefaultFacade::serviceMergeDefaultDimensions()**
+The **serviceMergeDefaultDimensions()** API is the most frequently used API for default dimensions. It should be called whenever a new default dimension must be created from two to four other default dimensions. If more than four default dimensions must be merged, this API can be called multiple times. In this case, the result of the previous call should be used as the first parameter for each subsequent call. This method will blindly merge all values, regardless of whether they are valid.
+
+**Example: DimensionDefaultFacade::serviceMergeDefaultDimensions()**
 
 ```
 public static DimensionDefault serviceMergeDefaultDimensions(
-        DimensionDefault _value1,
-        DimensionDefault _value2,
-        DimensionDefault _value3 = 0,
-        DimensionDefault _value4 = 0)
+    DimensionDefault _value1,
+    DimensionDefault _value2,
+    DimensionDefault _value3 = 0,
+    DimensionDefault _value4 = 0)
 ```
 
-The *serviceReplaceAttributeValue()* API is useful in the case that a single dimension value needs to be copied from one default to another default set. The value specified will replace whatever value already exists in the source set.
+#### serviceReplaceAttributeValue()
 
-**DimensionDefaultFacade::serviceReplaceAttributeValue()** 
+The **serviceReplaceAttributeValue()** API is useful if a single dimension value must be copied from one default set to another default set. The specified value will replace whatever value already exists in the source set.
 
+**Example: DimensionDefaultFacade::serviceReplaceAttributeValue()** 
 
 ```
 public static DimensionDefault serviceReplaceAttributeValue(
-        DimensionDefault _target,
-        DimensionDefault _source,
-        RecId _dimensionAttributeId)
+    DimensionDefault _target,
+    DimensionDefault _source,
+    RecId _dimensionAttributeId)
 ```
 
-The *serviceMergeValidDefaultDimensions* API is useful in the case where you want the merge to only merge values that are valid for the current ledger. It works exactly the same as *serviceMergeDefaultDimensions* but with the added check for valid values.
+#### serviceMergeValidDefaultDimensions()
 
-**DimensionDefaultFacade::serviceReplaceAttributeValue()** 
+The **serviceMergeValidDefaultDimensions()** API is useful if you want the merge to merge only values that are valid for the current ledger. It works just like **serviceMergeDefaultDimensions** but includes a check for valid values.
 
+**Example: DimensionDefaultFacade::serviceReplaceAttributeValue()** 
 
 ```
-    public static DimensionDefault serviceMergeValidDefaultDimensions(
-        DimensionDefault _defaultDimension1,
-        DimensionDefault _defaultDimension2,
-        DimensionDefault _defaultDimension3 = 0,
-        DimensionDefault _defaultDimension4 = 0)
+public static DimensionDefault serviceMergeValidDefaultDimensions(
+    DimensionDefault _defaultDimension1,
+    DimensionDefault _defaultDimension2,
+    DimensionDefault _defaultDimension3 = 0,
+    DimensionDefault _defaultDimension4 = 0)
 ```
 
-**Ledger dimensions**
+### Ledger dimensions
 
-The *serviceCreateLedgerDimension()* API is the most commonly used API for ledger dimensions. It should be called whenever a new ledger account combination needs to be created from a default account or existing ledger account combination and 0 to 3 default dimensions. If more default dimensions need to be merged than 3, it can be called multiple times with different sources taking the result of the prior call as the first parameter to the subsequent call. The MainAccount dimension is only retrieved from the supplied ledger dimension.
+#### serviceCreateLedgerDimension()
 
-**LedgerDimensionFacade.serviceCreateLedgerDimension()**
+The **serviceCreateLedgerDimension()** API is the most frequently used API for ledger dimensions. It should be called whenever a new ledger account combination must be created from a default account or an existing ledger account combination and zero to three default dimensions. If more than three default dimensions must be merged, this API can be called multiple times. In this case, different sources take the result of the previous call as the first parameter for each subsequent call. The MainAccount dimension is retrieved only from the ledger dimension that is supplied.
 
+**Example: LedgerDimensionFacade.serviceCreateLedgerDimension()**
 
 ```
 public static LedgerDimensionAccount serviceCreateLedgerDimension(
-        RecId            _ledgerDimensionId,
-        DimensionDefault _dimensionDefault1 = 0,
-        DimensionDefault _dimensionDefault2 = 0,
-        DimensionDefault _dimensionDefault3 = 0)
+    RecId            _ledgerDimensionId,
+    DimensionDefault _dimensionDefault1 = 0,
+    DimensionDefault _dimensionDefault2 = 0,
+    DimensionDefault _dimensionDefault3 = 0)
     {
 ```
 
-The *serviceCreateLedgerDimensionForType()* API is similar to the previous API but rather than creating a ledger account combination, it can create other ledger dimension types such as budget accounts or budget planning accounts specified by the LedgerDimensionType parameter.
+#### serviceCreateLedgerDimensionForType()
 
-**LedgerDimensionFacade.serviceCreateLedgerDimensionForType()**
+The **serviceCreateLedgerDimensionForType()** API resembles the **serviceCreateLedgerDimension()** API. However, instead of creating a ledger account combination, it can create other ledger dimension types, such as budget accounts or budget planning accounts. The **LedgerDimensionType** parameter is used to specify the type of ledger account that is created.
 
+**Example: LedgerDimensionFacade.serviceCreateLedgerDimensionForType()**
 
 ```
- public static LedgerDimensionBase serviceCreateLedgerDimensionForType(
-        LedgerDimensionType _ledgerDimensionType,
-        LedgerDimensionBase _ledgerDimensionId,
-        DimensionDefault    _dimensionDefault1 = 0,
-        DimensionDefault    _dimensionDefault2 = 0,
-        DimensionDefault    _dimensionDefault3 = 0)
+public static LedgerDimensionBase serviceCreateLedgerDimensionForType(
+    LedgerDimensionType _ledgerDimensionType,
+    LedgerDimensionBase _ledgerDimensionId,
+    DimensionDefault    _dimensionDefault1 = 0,
+    DimensionDefault    _dimensionDefault2 = 0,
+    DimensionDefault    _dimensionDefault3 = 0)
 ```
 
-The *serviceCreateLedgerDimForDefaultDim()* API is similar to the previous APIs, but the values from the default dimension are copied directly to the new ledger dimension, while the dimension values from the ledger dimension are merged afterwards. In the previous APIs, the ledger dimension values were copied, and the default dimension values were merged.
+#### serviceCreateLedgerDimForDefaultDim()
 
-**LedgerDimensionFacade::serviceCreateLedgerDimForDefaultDim()**
+The **serviceCreateLedgerDimForDefaultDim()** API resembles the **serviceCreateLedgerDimension()** and **serviceCreateLedgerDimensionForType()** APIs, but the values from the default dimension are copied directly to the new ledger dimension, whereas the dimension values from the ledger dimension are merged afterwards. (By contrast, for the previous two APIs, the ledger dimension values were copied, and the default dimension values were merged.)
+
+**Example: LedgerDimensionFacade::serviceCreateLedgerDimForDefaultDim()**
 
 ```
 public static LedgerDimensionBase serviceCreateLedgerDimForDefaultDim(
-        DimensionDefault    _defaultDimension,
-        LedgerDimensionBase _ledgerDimensionId)![\\\\blackwoodstone\\share\\Research\\GFMBlog2\\media\\MSDNBlogsFS\\prod.evol.blogs.msdn.com\\CommunityServer.Blogs.Components.WeblogFiles\\00\\00\\01\\50\\86\\5710.c65.png](media/146d284328279f4737c6e2bd23a30530.png)
+    DimensionDefault    _defaultDimension,
+    LedgerDimensionBase _ledgerDimensionId)![\\\\blackwoodstone\\share\\Research\\GFMBlog2\\media\\MSDNBlogsFS\\prod.evol.blogs.msdn.com\\CommunityServer.Blogs.Components.WeblogFiles\\00\\00\\01\\50\\86\\5710.c65.png](media/146d284328279f4737c6e2bd23a30530.png)
 ```
 
-The *serviceLedgerDimensionFromLedgerDims()* API is similar to the previous APIs but uses only ledger dimensions as sources to construct a new ledger dimension. The main account will only be retrieved from the first ledger dimension.
+#### serviceLedgerDimensionFromLedgerDims()
 
-**LedgerDimensionFacade::serviceLedgerDimensionFromLedgerDims()**
+The **serviceLedgerDimensionFromLedgerDims()** API resembles the previous APIs, but it uses only ledger dimensions as sources to construct a new ledger dimension. The main account is retrieved only from the first ledger dimension.
 
+**Example LedgerDimensionFacade::serviceLedgerDimensionFromLedgerDims()**
 
 ```
 public static LedgerDimensionAccount serviceLedgerDimensionFromLedgerDims(
-        LedgerDimensionBase _ledgerDimensionId1,
-        LedgerDimensionBase _ledgerDimensionId2 = 0,
-        LedgerDimensionBase _ledgerDimensionId3 = 0,
-        LedgerDimensionBase _ledgerDimensionId4 = 0,
-        LedgerDimensionBase _ledgerDimensionId5 = 0)
+    LedgerDimensionBase _ledgerDimensionId1,
+    LedgerDimensionBase _ledgerDimensionId2 = 0,
+    LedgerDimensionBase _ledgerDimensionId3 = 0,
+    LedgerDimensionBase _ledgerDimensionId4 = 0,
+    LedgerDimensionBase _ledgerDimensionId5 = 0)
 ```
 
-The *serviceMergeLedgerDimensions()* API is similar to the previous API but is optimized to combine just 2 ledger dimensions. 
+#### serviceMergeLedgerDimensions()
 
-**LedgerDimensionFacade::serviceMergeLedgerDimensions()**
+The **serviceMergeLedgerDimensions()** API resembles the **serviceLedgerDimensionFromLedgerDims()** API, but it's optimized to combine just two ledger dimensions. 
+
+**Example: LedgerDimensionFacade::serviceMergeLedgerDimensions()**
 
 ```
 public static LedgerDimensionBase serviceMergeLedgerDimensions(
-        LedgerDimensionBase _ledgerDimension1,
-        LedgerDimensionBase _ledgerDimension2,
-        LedgerDimensionType _ledgerDimensionType = LedgerDimensionType::Account)
+    LedgerDimensionBase _ledgerDimension1,
+    LedgerDimensionBase _ledgerDimension2,
+    LedgerDimensionType _ledgerDimensionType = LedgerDimensionType::Account)
 ```
 
-The *serviceCreateLedgerDimFromLedgerDim()* API is useful when copying ledger dimensions from a historic posted document onto a new unposted document to ensure that it uses the current account structure configuration.  This will avoid validation errors when validating the new ledger dimensions during posting.
+#### serviceCreateLedgerDimFromLedgerDim()
 
-**LedgerDimensionFacade::serviceCreateLedgerDimFromLedgerDim()**
+The **serviceCreateLedgerDimFromLedgerDim()** API is useful if you want to copy ledger dimensions from a historic posted document to a new unposted document, and you want to make sure that the current account structure configuration is used. In this way, you help prevent validation errors when the new ledger dimensions are validated during posting.
+
+**Example: LedgerDimensionFacade::serviceCreateLedgerDimFromLedgerDim()**
 
 ```
 public static LedgerDimensionAccount serviceCreateLedgerDimFromLedgerDim(LedgerDimensionAccount _ledgerDimension)
