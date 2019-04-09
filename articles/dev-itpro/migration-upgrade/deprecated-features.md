@@ -53,7 +53,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!IMPORTANT]
 > Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../get-started/public-preview-releases.md).
 
-#### Legacy default action behavior
+### Legacy default action behavior
 
 |   |  |
 |------------|--------------------|
@@ -63,7 +63,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
 
-#### Legacy "is one of" filtering experience
+### Legacy "is one of" filtering experience
 
 |   |  |
 |------------|--------------------|
@@ -73,7 +73,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
 
-#### Deriving from internal classes is deprecated
+### Deriving from internal classes is deprecated
 
 |   |  |
 |------------|--------------------|
@@ -83,7 +83,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
-#### Overriding internal methods is deprecated
+### Overriding internal methods is deprecated
 
 |   |  |
 |------------|--------------------|
@@ -110,25 +110,8 @@ Support for creating project-based sales orders where the project contract has m
 > [!IMPORTANT]
 > Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../../get-started/public-preview-releases.md).
 
-#### Legacy default action behavior
+### Deprecated APIs and potential breaking changes
 
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
-| **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled on the **Client performance options** page. |
-| **Product areas affected**         | Grids in the web client |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
-
-#### Legacy "is one of" filtering experience
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience. |
-| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page. For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
-| **Product areas affected**         | Web client |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
 
 #### Deriving from internal classes is deprecated
 
@@ -147,29 +130,6 @@ Support for creating project-based sales orders where the project contract has m
 | **Reason for deprecation/removal** | Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
 | **Product areas affected**         | Visual Studio development tools |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
-
-
-### Deprecated APIs and potential breaking changes
-
-#### Deriving from internal classes is deprecated
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
-| **Product areas affected**         | Visual Studio development tools. |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
-
-#### Overriding internal methods is deprecated
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
-| **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
