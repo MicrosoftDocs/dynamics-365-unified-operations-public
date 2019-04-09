@@ -148,5 +148,20 @@ Feature management will be released in the upcoming monthly updates.
 
 You should consider using feature management with your ISV solution to provide customers control on when new features are put into effect.
 
+## Branches and Builds
+
+As an ISV, you should plan on a minimum of two source code branches, a servicing branch and a new development branch.
+
+### Servicing branch
+
+The servicing branch is used to produce bug fixes on the solution. The frequency of releases from the branch and distribution of the releases is determined by the ISV. The expectation is that these releases from the servicing branch will be binary cumulative releases.
+
+The base Microsoft version used to build the solution should align with the oldest version thatused by a customer with the solution. In the One Version model that starts with 8.1, this is a maximum of three months old.
+
+### Development branch
+
+The development branch is used for developing new capabilities in the ISV solution. The frequency of releases from the branch is determined by the ISV. You do not have to synchronize with the monthly Microsoft releases. Decoupling from the Microsoft release schedule and delivering less frequently might be the best approach. A quarterly or bi-annual cadence is a good starting point.
+
+The base Microsoft version in the development branch should be the latest released version available or the released version that you plan to be used for servicing when your release is planned to go out. The goal is that you innovate along with Microsoft by staying as current as feasible and that your development model enables uptake of recent feature work.
 
 
