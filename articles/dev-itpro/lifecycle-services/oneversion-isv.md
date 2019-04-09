@@ -100,7 +100,7 @@ The compatibility is only backwards. It is not possible to compile a customizati
 
 Design time backward compatibility means that a developer can apply an update to their development environment and can successfully compile their code without making any changes.
 
-You must be aware of how APIs in your solution are used in your customers’ implementations, and how you use these APIs without causing breaking changes. This work includes being diligent about what is changed and relying on engineering best practices. Examples of what you should avoid are discussed in [Breaking changes](../extensibility/breaking-changes).
+You must be aware of how APIs in your solution are used in your customers’ implementations, and how you use these APIs without causing breaking changes. This work includes being diligent about what is changed and relying on engineering best practices. Examples of what you should avoid are discussed in [Breaking changes](../extensibility/breaking-changes.md).
 
 You should strive to meet a bar to Microsoft's bar, so that together we avoid creating regressions.
 
