@@ -54,7 +54,7 @@ How we do this together is covered in these paragraphs.
 +	[Compatibility](#compatibility)
     - [Runtime compatibility](#runtime-compatibility)
     - [Design time compatibility](#design-time-compatibility)
-+	[Developing new releases]()
++	[Developing new releases](developing-new-releases)
     - [Design for Extensibility]()
     - [Data Upgrade]()
     - [Feature exposure]()
@@ -108,9 +108,14 @@ We promise binary compatibility and we also aim for design-time compatibility. H
 
 ## Developing new releases
 
-One Version and running the solution as a service provide a great vehicle for collecting feedback. Feedback is useful for setting direction on what new features should be added with upcoming updates. Historically, we are used to new major releases with many new features, but the new model invites us to rethink this. We have moved instead to a series of continuous updates, where we gradually build on available capabilities of the system. In many cases one update will contain an initial small feature that we enrich with upcoming updates. There are instances where we need to stage for new features and initially hide or control adaption of new features by use of feature exposure.
+One Version together with running the solution as a service provides a great vehicle for collecting feedback. Feedback is useful for choosing which new features should be added to upcoming updates. Historically, we are used to new major releases with many new features, but the new model invites us to rethink this. We have moved to a series of continuous updates, where we gradually build on available capabilities of the system. In many cases one update will contain an initial small feature that we enrich with upcoming updates. There are instances where we need to stage for new features and initially hide or control adaption of new features by use of feature exposure.
 
-We recommend you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
+We recommend that you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
 
 The frequency of your new releases can be independent from Microsoft’s. Consider a source code branching strategy as described later in this document.
+
+
+What is essential is releasing with quality with every update. Testing helps assure quality is there, but quality needs to be built in during the design and implementation phases too. There are some new dimensions to consider under One Version.
+
+
 
