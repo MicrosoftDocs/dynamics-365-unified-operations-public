@@ -102,7 +102,7 @@ Design time backward compatibility means that a developer can apply an update to
 
 You must be aware of how APIs in your solution are used in your customers’ implementations, and how you use these APIs without causing breaking changes. This work includes being diligent about what is changed and relying on engineering best practices. Examples of what you should avoid are discussed in [Breaking changes](../extensibility/breaking-changes.md).
 
-You should strive to meet a bar to Microsoft's bar, so that together we avoid creating regressions.
+You should strive to meet a bar similar to Microsoft's bar, so that together we avoid creating regressions.
 
 We promise binary compatibility and we also aim for design-time compatibility. However, there is a category of necessary changes that are **not** design time compatible but remain binary compatible. After applying an update, compiling your code may result in new errors or warnings. Some examples are that we make an enumeration extensible, we mark an API as obsolete or internal, or we introduce a new compiler error to avoid unsafe coding practices. These changes might require work on your solution. Design-time breaking changes that are binary compatible do not require a 12-month deprecation notice.
 
@@ -122,19 +122,19 @@ What is essential is releasing with quality with every update. Testing helps ass
 
 Designing your solution for extensibility means considering both how you customize by extending the standard application and how you enable customization of your ISV solutions by your customers and partners.
 
-Ensure customizations are additive as opposed to intrusive, and follow the guidance found on the [extensibility home page]().
+Ensure customizations are additive as opposed to intrusive, and follow the guidance found on the [extensibility home page](../extensibility/extensibility-home-page.md).
 
-Do not become too creative in building your customization if you end up extending an API that is questionable. This leads to risk that later updates will break your solution. Instead, log an [extensibility request](./extensibility/extensibility-requests.md) for us to create a more explicit API that is more resilient to breakage.
+Do not become too creative in building your customization or you might end up extending an API that is questionable. This leads to risk that later updates will break your solution. Instead, log an [extensibility request](../extensibility/extensibility-requests.md) for us to create a more explicit API that is more resilient to breakage.
 
-Design solutions that are extensible. Take inspiration from [Write extensible code](./extensibility/writing-extensible-code.md).
+Design solutions that are extensible. Take inspiration from [Write extensible code](../extensibility/writing-extensible-code.md).
 
-Design for backward compatibility to avoid breaking any customer implementation. A good strategy is to be explicit about what you offer for hooking and wrapping extension code. You have great control over what methods you enable extensions for by how you decorate your methods. For more information, read [Attributes that make method extensible](./extensibility/extensibility-attributes.md).
+Design for backward compatibility to avoid breaking any customer implementation. A good strategy is to be explicit about what you offer for hooking and wrapping extension code. You have great control over what methods you enable extensions for by how you decorate your methods. For more information, read [Attributes that make method extensible](../extensibility/extensibility-attributes.md).
 
 ### Data upgrade
 
 There is no longer support for data upgrade jobs like those that existed with earlier versions of Finance and Operations. This is because we want to provide minimum downtime while updating a production environment.
 
-The database synchronization is still executes during upgrade and supports basics like adding new tables, field, and indexes.
+Database synchronization is still executes during upgrade and supports basics like adding new tables, field, and indexes.
 
 We are introducing new ways of driving data upgrade that execute asynchronously to prevent downtime. This is quite a different paradigm. Data upgrade will at times be triggered when a feature is enabled by a feature flag. This new approach for data upgrade will materialize with upcoming updates, and documentation resources will be available.
 
@@ -142,11 +142,11 @@ We are introducing new ways of driving data upgrade that execute asynchronously 
 
 With One Version, updates are managed by Microsoft and pushed onto customer environments. Pushed updates should not require customers to adjust to functional changes and train their users on a monthly basis because of new or changed features. This should not cause the customer to delay updates to their environment.
 
-Feature management is a new concept that empowers customers to decide when new or changed features are put into effect. This allows customers to review, validate, and document new or changed features before they are adopted. This also allows for training of users before enabling new or changed processes to reduce impact on daily operations. This puts the customer in control.
+Feature management is a new concept that empowers customers to decide when new or changed features are put to use. This allows customers to review, validate, and document new or changed features before they are adopted. This also allows for training of users before enabling new or changed processes to reduce impact on daily operations. This puts the customer in control.
 
 Feature management will be released in the upcoming monthly updates.
 
-You should consider using feature management with your ISV solution to provide customers control on when new features are put into effect.
+You should consider using feature management with your ISV solution to allow customers to control when new features are put into use.
 
 ## Branches and builds
 
@@ -154,9 +154,9 @@ As an ISV, you should plan on a minimum of two source code branches, a servicing
 
 ### Servicing branch
 
-The servicing branch is used to produce bug fixes on the solution. The frequency of releases from the branch and distribution of the releases is determined by the ISV. The expectation is that these releases from the servicing branch will be binary cumulative releases.
+The servicing branch is used to produce bug fixes on the solution. The frequency of releases from the branch and distribution of the releases is determined by you, the ISV. The expectation is that these releases from the servicing branch will be binary cumulative releases.
 
-The base Microsoft version used to build the solution should align with the oldest version thatused by a customer with the solution. In the One Version model that starts with 8.1, this is a maximum of three months old.
+The base Microsoft version used to build the solution should align with the oldest version that is used by a customer with the solution. In the One Version model that starts with 8.1, this is a maximum of three months old.
 
 ### Development branch
 
@@ -188,13 +188,13 @@ If not successful, then you (the ISV) must notify Microsoft immediately through 
 
 ### Currently released product – test design time compatibility
 
-The currently released product that you maintain in the servicing branch should then be tested for design time compatibility. To do this, you should compile the solutoin against a deployment of the new Microsoft release. While Microsoft’s goal is to minimize design time compatibility issues, there are situations where there might be an issue. One example is when an enumeration has been made extensible and the solution uses it in a manner that assumes an underlying integer representation (for example, using the enumeration value in a logical comparison or mathematical functions). While this code will continue to work in a customer deployment because the underlying values are maintained, a compiler error is generated and addressed for future releases. Another example of a design-time compatibility issue is when we introduce a new compiler error to protect against unsafe coding patterns. For more categories of design time compatibility issues, read [Breaking changes](breaking-changes.md).
+The currently released product that you maintain in the servicing branch should then be tested for design time compatibility. To do this, you should compile the solution against a deployment of the new Microsoft release. While Microsoft’s goal is to minimize design time compatibility issues, there are situations where there might be an issue. One example is when an enumeration has been made extensible and the solution uses it in a manner that assumes an underlying integer representation (for example, using the enumeration value in a logical comparison or mathematical function). While this code will continue to work in a customer deployment because the underlying values are maintained, a compiler error is generated and addressed for future releases. Another example of a design-time compatibility issue is when we introduce a new compiler error to protect against unsafe coding patterns. For more categories of design time compatibility issues, read [Breaking changes](../extensibility/breaking-changes.md).
 
-You should executer your combination of automated developer tests, automated functional tests, and manual tests on an environment with the new version from Microsoft and your compiled ISV solution.
+You should execute your combination of automated developer tests, automated functional tests, and manual tests on an environment with the new version from Microsoft and your compiled ISV solution.
 
 If successful, this step will validate that your ISV solution will not need to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
 
-If not successful and the issue is not one of the categories described in [Breaking changes](breaking-changes.md), the you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process. The issue will either require a fix from Microsoft or a fix in your ISV solution which then may require updating customers from the servicing branch. In either case, Microsoft needs to know to become more proactive in its processes for future releases.
+If not successful and the issue is not one of the categories described in [Breaking changes](../extensibility/breaking-changes.md), then you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process. The issue will either require a fix from Microsoft or a fix in your ISV solution which then may require updating customers from the servicing branch. In either case, Microsoft needs to know to become more proactive in its processes for future releases.
 
 ### Currently released product – base build update
 
@@ -219,9 +219,9 @@ The update process includes database synchronization, for example, adding new fi
 We have no plans to ship ISV solutions as part of the One Version automated deployment process. This is not to say that this cannot become an option at some point, but we must align engineering processes to make this feasible.
 
 Here are some areas where alignment will be needed:
-+	Feature management: Allowing users control of when new feature turn on.
++	Feature management: Allowing a user to control when to turn on a new feature.
 +	Backward compatibility and compliance: Ensuring compliance with API customization usage.
-+	Feature depreciation: Heads up time for depreciating features or APIs.
++	Feature depreciation: Heads up time for deprecating features or APIs.
 +	Test automation suite: Ongoing regression suite validation running hosted.
 +	Testing during preview phase.
 +	ISV solutions sign-off and upload: Based on current updates timely with release milestone.
@@ -236,5 +236,5 @@ Binary compatibility is supported as long as you do not recompile. We recommend 
 
 If an implementation partner or customer compiles your solution on an updated environment, then new warnings and errors as mentioned under design compatibility may show. Therefore, we recommend that implementation partners do not compile your solution.
 
-This does not imply that you cannot share your source code to help support debugging, for example. You should consider steps to avoid compilation of your code, so that you can avoid exposing to design time issues to implementation partners.
+This does not imply that you cannot share your source code to help support debugging, for example. You should consider steps to avoid compilation of your code, so that you can avoid exposing to design time issues implementation partners.
 
