@@ -51,7 +51,7 @@ This list is intended to help you consider these removals and deprecations for y
 ## Dynamics 365 for Finance and Operations 10.0.2 with platform update 26
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../../get-started/public-preview-releases.md).
 
 ### Parameter to enable sales orders with multiple project contract funding sources
 Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**. By default, this parameter is not enabled. 
@@ -68,7 +68,7 @@ Support for creating project-based sales orders where the project contract has m
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../../get-started/public-preview-releases.md).
 
 #### Legacy default action behavior
 
@@ -110,10 +110,6 @@ Support for creating project-based sales orders where the project contract has m
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
-## Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../get-started/public-preview-releases.md).
 
 ### Deprecated APIs and potential breaking changes
 
