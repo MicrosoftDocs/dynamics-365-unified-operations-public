@@ -54,7 +54,7 @@ Due to certain technical dependencies, the following features listed will not be
 
 -   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
 
-    -   **APQC Business process model (BPM) Library** will be unavailable. However, base Business process modeler (BPM) functionality will be available for custom models in April 2019.
+    -   **APQC Business process modeler (BPM) Library** will be unavailable. However, base Business process modeler (BPM) functionality will be available for custom models in April 2019. Search functionality in the BPM will be unavailable in China.
 
     -   **[Electronic reporting (ER)](../analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json) assets** will not be available automatically, but can be manually uploaded from the LCS global asset library.
 
@@ -64,7 +64,7 @@ Due to certain technical dependencies, the following features listed will not be
     
     -   [Extensibility support requests](../extensibility/extensibility-requests.md) will be unavailable.
     
-    -   [Hotfix requests](../migration-upgrade/upgrade-home-page.md#hotfixes) will be unavailable.
+    -   Hotfix requests will be unavailable.
 
     -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
 
