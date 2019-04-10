@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-The version of Dynamics 365 for Talent: Attract that's right for you depends on your organization's size and needs. The basic version of Attract provides a subset of functionality geared towards smaller teams or organizations, where the hiring manager is the primary user. You can start using the basic version of Attract with one or more licenses.
+The version of Dynamics 365 for Talent: Attract that's right for you depends on your organization's size and needs. The basic version of Attract provides a subset of functionality geared towards smaller teams or organizations where the hiring manager is the primary user. You can start using the basic version of Attract with one or more licenses.
 
 Attract with the Comprehensive Hiring Add-On targets medium to large teams or organizations where the recruiter or talent specialist is the primary user. The Comprehensive Hiring Add-On requires the purchase licenses through a [Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/).
 
