@@ -190,14 +190,12 @@ The following illustration shows the PDF template for other pages of the report.
     ![PDF attachment preview](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Continue to design this format by importing the second PDF template, adding necessary bindings to data sources, and so on.
+20. Select **Save**.
+21. Close the page.
+22. Select **Delete**.
+23. Select **Yes**.
 
-    To learn how new **PDF Merger**, **PDF File**, **Field group** and **Field** format elements can be used to generate documents in PDF format, you can import and analyze the sample ER format.
-
-20. When you've finished, close the page.
-21. Select **Save**.
-22. Close the page.
-23. Select **Delete**.
-24. Select **Yes**.
+To learn how new **PDF Merger**, **PDF File**, **Field group** and **Field** format elements can be used to generate documents in PDF format, you can import and analyze the sample ER format.
 
 ### Import the format configuration
 
@@ -260,7 +258,7 @@ Note that the **Field** format element is used to fill in an individual field of
 
 Because both properties are optional for a **Field** format element, the following rules are applied to specify the target PDF field:
 
-- If the **Name** attribute is blank, and the **Name** expression returns an empty string at run time, throw an exception at run time to notify the user that a PDF field can't be found in the PDF template that is being used to fill in the PDF document.
+- If the **Name** attribute is blank, and the **Name** expression returns an empty string at run time, an exception is thrown at run time to notify the user that a PDF field can't be found in the PDF template that is being used to fill in the PDF document.
 - If the **Name** attribute is defined, and the **Name** expression is blank, the PDF field that has the same name as the **Name** attribute of the format element is filled in.
 - If the **Name** attribute is defined, and the **Name** expression is configured, the PDF field that the same name as the value that is returned by the **Name** expression of the format element is filled in.
 
