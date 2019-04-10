@@ -46,10 +46,10 @@ The following illustration shows, at a high level, how the service works.
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [XLIFF Translation Memory (TM)](./use-translation-service-tm.md).
 
 ## Custom-trained MT system
-DTS uses Microsoft Translator service and its custom translator to customize Microsoft translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can be used only for GA languages for Microsoft Dynamics, unless partners and ISVs upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
+DTS uses Microsoft Translator service and its custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can be used only for GA languages for Microsoft Dynamics, unless partners and ISVs upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
 
-[!Note]
-Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS has adapted V3 Translator API since V2 will be discontinued on April 30, 2019 with the [retirement of Microsoft Translator Hub](https://www.microsoft.com/en-us/translator/business/hub/). For the V3 supported languages information, see [Language and region support for the Translator Text API](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support#customization). 
+> [!Note]
+> Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS has adapted V3 Translator API since V2 will be discontinued on April 30, 2019 with the [retirement of Microsoft Translator Hub](https://www.microsoft.com/en-us/translator/business/hub/). For the V3 supported languages information, see [Language and region support for the Translator Text API](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support#customization). 
 
 ## Supported products
 DTS currently supports the following product versions.
