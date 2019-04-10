@@ -210,7 +210,7 @@ If an unexpected break occurs, then you (the ISV) must notify Microsoft immediat
 
 One Version servicing includes automated update process to customer environments for Microsoft standard platform and application updates. This automation is not currently available for ISV solutions. For more information, read [ISV’s as part of One Version service updates](#isv-solutions-as-part-of-one-version-automated-deployment). 
 
-For now, ISV solutions are updated manually. The binary backward compatibility enables safe update of the standard platform and application. Updating your ISV solutions will then happen offset of this controlled by you. 
+ISV solutions are updated manually, and you control your release cadence. The binary backward compatibility enables safe update of the standard platform and application.
 
 The update process includes database synchronization, for example, adding new fields and indexes.
 
