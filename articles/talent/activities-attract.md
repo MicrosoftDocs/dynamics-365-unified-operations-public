@@ -3,9 +3,9 @@
 
 title: Activities in the processes
 description: This topic provides information about the various types of activities that can be used in the hiring process.
-author: shielasogge
+author: shielasogge, hasrivas
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -84,3 +84,7 @@ In Microsoft Forms, authors can change their settings to let users outside their
 
 > [!NOTE]
 > The Microsoft Forms activity is available only with the Comprehensive hiring add-on. For more information, see [Attract comprehensive hiring add-on capabilities](./attract-comprehensive-hiring.md).
+
+## Offer activity
+
+
