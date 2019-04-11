@@ -189,7 +189,7 @@ Microsoft has an extensive suite of tests that support our validation. The expec
 
 In addition to the SysTest automation framework that is aimed at developers, the [Regression Suite Automation Tool (RSAT)](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) enables automation of business processes without requiring that code be written. Functional users can use the RSAT to record their critical tests and automate part of their UAT. You can also use the RSAT as you start to build your test automation.
 
-Recently, Microsoft released the [Acceptance test library (ATL) automation framework]() and accompanying libraries. This framework is aimed at developers and lets them build tests that are more comprehensive than unit tests. The libraries that accompany the framework help make it a seamless way to build suites of tests.
+Recently, Microsoft released the [Acceptance test library (ATL) automation framework](../perf-test/acceptance-test-library.md) and accompanying libraries. This framework is aimed at developers and lets them build tests that are more comprehensive than unit tests. The libraries that accompany the framework help make it a seamless way to build suites of tests.
 
 ### Currently released products – Testing binary and functional compatibility
 
@@ -201,7 +201,7 @@ If the testing isn't successful, you, as the ISV, must immediately notify Micros
 
 ### Currently released products – Testing design-time compatibility
 
-Next, the currently released product that is maintained in the servicing branch should be tested for design-time compatibility. To do this testing, you should compile the solution against a deployment of the new Microsoft release. Although the goal of Microsoft is to minimize design-time compatibility issues, they might occur in some situations. One example is when Microsoft makes an enumeration extensible, and the solution uses it in a manner that assumes an underlying integer representation (for example, it uses the enumeration value in a logical comparison or mathematical function). Although the code will continue to work in a customer deployment because the underlying values are maintained, a compiler error is generated and addressed for future releases. Another example of a design-time compatibility issue is when Microsoft introduces a new compiler error to protect against unsafe coding patterns. To learn about more categories of design-time compatibility issues, see [Breaking changes](../extensibility/breaking-changes.md).
+Next, the currently released product that is maintained in the servicing branch should be tested for design-time compatibility. To do this testing, you should compile the solution against a deployment of the new Microsoft release. Although the goal of Microsoft is to minimize design-time compatibility issues, they might occur in some situations. One example is when Microsoft makes an enumeration extensible, and the solution uses it in a manner that assumes an underlying integer representation (for example, it uses the enumeration value in a logical comparison or mathematical function). Although the code will continue to work in a customer deployment because the underlying values are maintained, a compiler error is generated and addressed in future releases. Another example of a design-time compatibility issue is when Microsoft introduces a new compiler error to protect against unsafe coding patterns. To learn about more categories of design-time compatibility issues, see [Breaking changes](../extensibility/breaking-changes.md).
 
 You should run your suite of automated developer tests, automated functional tests, and manual tests on an environment that has the new version from Microsoft and your compiled ISV solution.
 
@@ -236,9 +236,9 @@ Here are some areas where alignment will be required:
 + **Feature management** – The user must be able to control when a new feature is turned on.
 + **Backward compatibility and compliance** – Compliance with API customization usage is required.
 + **Feature deprecation** – Advanced notice about deprecation of features or APIs must be provided.
-+ **Test automation suite** – Ongoing regression suite validation running hosted.
++ **Test automation suite** 
 + **Testing during the preview phase**
-+ **ISV solution sign-off and upload** – Based on current updates timely with release milestone.
++ **ISV solution sign-off and upload** 
 + **Automated deployment scripts**
 + **Zero downtime** – Deployment of updates must be instantaneous.
 + **Data migration without downtime**
