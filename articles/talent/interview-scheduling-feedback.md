@@ -83,15 +83,15 @@ There are multiple configurations available for the interview scheduler to use a
 
 7. After the interview schedule is ready to be shared with the candidate, click **Send to candidate**. You can choose to hide or show the interviewer names and slots with the candidate.
 
-8. Select an e-mail template and send the interview summary to the candidate. The candidate can view this information in their email as well as on their candidate portal.
+8. Select an email template and send the interview summary to the candidate. The candidate can view this information in their email as well as on their candidate portal.
     
 >[!NOTE] 
 > The calendar availability of a candidate is shown only if the candidate is internal. Similarly, only an internal candidates can be used to enhance interview schedule recommendations. Currently, candidates (external or internal) don't receive an email meeting invite, instead the candidate receives only a summary of the interviews.
 
-Candidates will receive the e-mail summarizing their interview loop. The e-mails contain an ics file which can be saved to their personal calendars for easier access and notfications about the interview.
+Candidates will receive the email summarizing their interview loop. The emails contain an .ics file which can be saved to their personal calendars for easier access and notfications about the interview.
 
 >[!TIP] 
-> In case you re-send the interview schedule to the candidate, they will receive another ics file attachment. We recommend updating the e-mail templates for candidate's interview summary to ensure candidates delete the previously added interview events and do not see duplicates on their calendar. 
+> In case you re-send the interview schedule to the candidate, they will receive another .ics file attachment. We recommend updating the email templates for the candidate's interview summary to ensure candidates delete the previously added interview events and do not see duplicates on their calendar. 
 
 ## Feedback activity
 
