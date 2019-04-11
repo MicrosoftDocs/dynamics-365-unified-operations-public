@@ -48,7 +48,7 @@ Depending on the class that you want to add a fluent method to, different rules 
 
 ## Should I implement an entity or a creator class?
 
-For most entities, the effort of creating an entity class is the same as the effort of creating a creator class. Therefore, the entity class should be created. However, in some cases, the process of creating an entity might not be straightforward. A good example is the Item entity. Because more than ten different tables make up the Item entity, it's hard to create the entity class. Because we almost never have to update existing items in our test cases, it's OK if you just have a creator class, which is much easier to implement.
+For most entities, the effort of creating an entity class is the same as the effort of creating a creator class. Therefore, the entity class should be created. However, in some cases, the process of creating an entity might not be straightforward. A good example is the Item entity. Because more than ten different tables make up the Item entity, it's hard to create the entity class. Because you will almost never have to update existing items in your test cases, it's OK if you just have a creator class, which is much easier to implement.
 
 ## Does the order of the chained fluent setters matter?
 
