@@ -70,6 +70,11 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Data task automation</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation tool</a></p>
 
+<h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrations</a></h3>
+<p><a href="../dev-itpro/business-events/home-page.md">Business events</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Data entities</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration using Microsoft Flow</a></p>
+
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
@@ -114,10 +119,6 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Development</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Extensibility</a></p>
-
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Data integration</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management</a></p>
-
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobile platform</a></p>
@@ -128,7 +129,6 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">On-premises deployment</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicing</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organization administration</a></p>
 </td>
