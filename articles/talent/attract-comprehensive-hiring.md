@@ -60,7 +60,7 @@ For more information about pricing and licensing, see the [Microsoft Dynamics 36
 | Post jobs to Attract and external career sites | | :heavy_check_mark: |
 | Create candidate application flows through an Attract career site | | :heavy_check_mark: |
 | Provide candidate access to a full profile and application history | | :heavy_check_mark: |
-| Connect with LinkedIn Recruiter<blockquote>[!NOTE] This capability requires a LinkedIn Recruiter license, which must be purchased separately through LinkedIn.</blockquote> | | :heavy_check_mark: |
+| Connect with LinkedIn Recruiter<br></br>>[!NOTE]<br></br>>This capability requires a LinkedIn Recruiter license, which must be purchased separately through LinkedIn.</blockquote> | | :heavy_check_mark: |
 | Manage offers | | :heavy_check_mark: |
 | Create shared and global talent pools | | :heavy_check_mark: |
 | Manage email templates | | :heavy_check_mark: |
