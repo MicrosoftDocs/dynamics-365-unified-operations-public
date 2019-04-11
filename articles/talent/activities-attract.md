@@ -87,8 +87,6 @@ In Microsoft Forms, authors can change their settings to let users outside their
 
 ## Offer activity
 
-The Offer activity is required in the hiring process template. If you want to use the integrated offr management app, set the configuration for **Launch Offer Management App on Prepare offer** to **On**. When turned to off, the candidate will not show up in Offer app and you can track the updates to a candidate's offer activity manually. When Offer app is being used, you can also define whether or not you want hiring managers to be able to prepare the offer for the candidate. If you do want hiring managers to prepare offers, set the configuration for **Hiring Managers can prepare offer** to **On**. In case there are mutiple positions associated to the job, you can also decide if you want to prepare mutliple offers against the same position number. Set **Allow Positions to be reused within job** to **Off** if you want to allow only one offer per position per job. 
-
 The hiring process template requires the Offer activity. To use the integrated offer management app, set **Launch Offer Management App on Prepare Offer** to **On**. If this setting is off, the candidate won't appear in the Offer app, so you'll have to track updates to a candidate's offer activity manually. To define whether hiring managers can prepare the offer for the candidate in the Offer app, set **Hiring Managers can prepare offer** to **On**. If the job has multiple positions associated with it, you can decide whether you want to prepare multiple offers against the same position number. If you want to allow only one offer per position per job, set **Allow Positions to be reused within job** to **Off**.
 
 > [!NOTE]
