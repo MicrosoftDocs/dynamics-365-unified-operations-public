@@ -67,7 +67,7 @@ This topic includes the following sections:
 + [Testing](#testing)
 + [Deploying updates](#deploying-updates)
 + [ISV solutions as part of One Version automated deployment](#isv-solutions-as-part-of-one-version-automated-deployment)
-+ [Should I release binaries or source code?](#do-i-ship-binaries-or-source-code)
++ [Should I release binaries or source code?](#should-i-release-binaries-or-source-code)
 
 ## Servicing customers
 
