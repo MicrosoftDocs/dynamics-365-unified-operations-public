@@ -42,7 +42,7 @@ All the data that is related to an item is linked. This information includes the
 
 When the end of the item's useful life approaches, the item is written off, so that it's no longer assigned to the employee.
 
-The cost of working clothes and special rigging assets must be amortized during their life cycle. If the life cycle is longer than 12 months (the legally defined rate), the linear method of depreciation is used. If the life cycle is shorter than 12 months, the cost is written off when the item is issued to the employee.
+The cost of working clothes and special rigging assets must be amortized during their life cycle. If the life cycle is longer than 12 months (the legally defined period length), the linear method of depreciation is used. If the life cycle is shorter than 12 months, the cost is written off when the item is issued to the employee.
 
 The **Working clothes** and **Special rigging** pages resemble the **Fixed assets** page that is used to account for all working clothes and special rigging that are issued.
 
@@ -62,7 +62,7 @@ Use the **Types of issue and usage rates** page to define the types of issue and
 
 ## Set up issue and usage rates for items
 
-Use the **Issue and usage rates** page to define the types of issue and usage rates that determine which working clothes and special rigging items that are issued to employees.
+Use the **Issue and usage rates** page to define the usage rates for types of rates that determine which working clothes and special rigging items that are issued to employees.
 
 1. Go to **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Issue and usage rates**.
 2. In the **Type of rate** field, select the identification code for the issue rate.
@@ -190,7 +190,7 @@ When used working clothes or special rigging items are issued, if the serial num
 - The issue journal that was created earlier is searched and copied by using the Serial number inventory dimension.
 - The cost price is selected from the item cost price for the base value model.
 - The useful life is updated for the working clothes or special rigging item.
-- The residual wear or usage period is calculated by subtracting the past lifetime from the lifetime by rate.
+- The residual wear or usage period is calculated by subtracting the past lifetime from the lifetime that is defined by the usage   rate.
 
 > [!NOTE]
 > For an issue or reissue transaction, when the journal is posted, fixed asset journals are automatically created and posted. These fixed asset journals contain transactions for putting the asset into operation, depreciation transactions, and writing-off transactions.
