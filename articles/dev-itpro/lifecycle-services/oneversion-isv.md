@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Delivering ISV Solutions for Dynamics 365 Finance and Operations using One Version
-description: 
+title: Delivering ISV solutions by using One Version
+description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions to Microsoft Dynamics 365 for Finance and Operations.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/12/2019
@@ -29,212 +29,223 @@ ms.dyn365.ops.version: Platform update 24
 
 ---
 
-# Delivering ISV Solutions for Dynamics 365 Finance and Operations using One Version
+# Delivering ISV solutions by using One Version
 
 [!include [banner](../includes/banner.md)]
 
-We have entered the era of Dynamics 365 Finance and Operations One Version. We now truly run a service with all the benefits that come with this. New updates are automatically broadcast with close to zero downtime, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades. Feature management allows customers to control when new features are applied.
+Thanks to Microsoft Dynamics 365 Finance and Operations One Version, new updates are now automatically broadcast, downtime is close to zero, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades.
 
-This means that you, as a partner, can innovate together with Microsoft to take advantage of new features without the waiting times that come with long release cycles. When your customers all run on current versions, you have fewer versions to maintain. You can instead focus on building quality into the solutions you bring to your customers.
+Feature management lets customers control when new features are applied. Therefore, as an independent software vendor (ISV) partner, you can innovate together with Microsoft to take advantage of new features without having to handle the waiting times that come with long release cycles. When all your customers run on current versions, you have fewer versions to maintain. You can focus instead on building quality into the solutions that you provide for your customers.
 
-Servicing current versions is more seamless and safer compared to earlier versions where patching required us to pull together individual fixes and merge them into a customer environment.
+The process of servicing current versions is also more seamless and safer than it was in earlier versions. Previously, patching required that individual fixes be combined and merged into a customer environment.
 
-Quality is a cornerstone of One Version. Extensibility enables deployment of side-by-side solutions that provide customers more more choices in configuring their solutions.
+Extensibility allows for deployment of side-by-side solutions that give customers more choices about how they configure their solutions.
 
-Under One Version, customer user acceptance testing (UAT) and production environments are updated every month. It is critical we take every step to ensure that updates are done without causing issues. We acknowledge both technical and functional issues may come from updating environments.
+In the One Version model, customer user acceptance testing (UAT) environments and production environments are updated every month. It's critical that updates not cause issues. However, Microsoft acknowledges that both technical issues and functional issues may arise when environments are updated.
 
-+ Technical issues include breaking changes in APIs that are used by customizations in your solutions.
-+ Functional issues seen from customers can be due to the untimely introduction of new features. Microsoft will put under feature management any new functionality that might impact existing processes. This lets customers control when new functionality is put into use, leaving time for them to validate, document, and train their users on the new features.
++ Technical issues include breaking changes in application programming interfaces (APIs) that customizations in your solutions use.
++ Functional issues that customers experience can be caused by the untimely introduction of new features. Microsoft will put any new functionality that might affect existing processes under feature management. In this way, customers can control when new functionality is adopted. Therefore, they have time to validate, document, and train their users about the new features.
 + Functional issues might also be unintended changes that cause functional regressions.
 
-Preventing technical or functional issues is a difficult proposition and requires a close coordination between Microsoft and you as an ISV partner. Our strategy is that you will adopt practices similar to our Microsoft practices. Over the next several months we will roll out new practices and tools to help empower you in this. We will update this guidance as the tools and practices evolve.
+Prevention of technical and functional issues is difficult and requires close coordination between Microsoft and you as an ISV partner. The Microsoft goal is that you will adopt practices that resemble Microsoft practices. This topic explains how you and Microsoft can achieve this goal together. Over the next several months, Microsoft will release new practices and tools to help you. This topic will be updated as the tools and practices evolve.
 
-How we do this together is covered in these sections:
-+	[Servicing customers](#servicing-customers)
-+	[Compatibility](#compatibility)
+This topic includes the following sections:
+
++ [Servicing customers](#servicing-customers)
++ [Compatibility](#compatibility)
+
     - [Runtime compatibility](#runtime-compatibility)
-    - [Design time compatibility](#design-time-compatibility)
-+	[Developing new releases](#developing-new-releases)
-    - [Design for Extensibility](#design-for-extensibility)
-    - [Data Upgrade](#data-upgrade)
+    - [Design-time compatibility](#design-time-compatibility)
+
++ [Developing new releases](#developing-new-releases)
+
+    - [Designing for extensibility](#designing-for-extensibility)
+    - [Data upgrade](#data-upgrade)
     - [Feature exposure](#feature-exposure)
-+	[Branches and builds](#branches-and-builds)
-+	[Testing](#testing)
-+	[Deploying updates](#deploying-updates)
-+	[ISV solutions as part of One Version automated deployment?](#isv-solutions-as-part-of-one-version-automated-deployment)
-+	[Do I ship binaries or source code?](#do-i-ship-binaries-or-source-code)
+
++ [Branches and builds](#branches-and-builds)
++ [Testing](#testing)
++ [Deploying updates](#deploying-updates)
++ [ISV solutions as part of One Version automated deployment](#isv-solutions-as-part-of-one-version-automated-deployment)
++ [Should I release binaries or source code?](#do-i-ship-binaries-or-source-code)
 
 ## Servicing customers
 
-With Dynamics 365 for Finance and Operations on Azure we are running a solution as a service. We service companies 24/7 either proactively from alerts that report abnormal behavior or by request tickets raised by our customers in companies or by their partners. We have a range of tools available that help to support the running services, including usage data that is collected from the services. Much diligence goes around who can access customer systems to safeguard customer data.
+Finance and Operations runs on Microsoft Azure. Therefore, it's a solution that runs as a service. Microsoft services companies 24/7, either proactively from alerts that report unusual behavior, or from request tickets that are submitted by customers in companies, or their partners. Microsoft has a range of tools to help support the services that are running. These tools include usage data that is collected from the services. To help safeguard customer data, Microsoft is also careful about who can access customer systems.
 
-When we analyze an issue, we may determine that it is related to your ISV solution. We report these issues to you so that you can follow up offline.
+When Microsoft analyzes an issue, it might determine that the issue is related to your ISV solution. Microsoft reports this type of issue to you, so that you can follow up offline.
 
-Companies can opt out of updates for two consecutive service updates before the next service update is applied to their environments. This means we can expect to see companies running on one of the last 3 monthly updates at any time.
+Companies can opt out of updates for two consecutive service updates before the next service update is applied to their environments. Therefore, at any time, Microsoft can expect that companies will be running one of the last three monthly updates.
 
-When we resolve an issue that requires a code fix, we generally put it in the next monthly update. Highly critical reported issues like production outage may however mean a fix is provided for the version the customer is running.
+When Microsoft resolves an issue that requires a code fix, it generally includes that code fix in the next monthly update. However, very critical issues that are reported, such as production outage, might require that a fix be provided for the version that customers are currently running.
 
-Similar policies apply to your ISV solution, and you might also need to provide a code update. For your solution to be binary compatible with all your customers, it needs to be built on the oldest platform release you want to support. New updates from Microsoft promise backward binary compatibility. This compatibility gives you the option of maintaining only one servicing version of your solution that is based on the oldest of the 3 recent updates. This lets you maintain only one released solution, and you can use that solution to update all of your customers customers regardless of which of the most recent 3 updates they are running. As your customers adopt new Microsoft updates, you can choose to rebase your maintained solution to a newer release to keep current with the most recent 3 updates. 
+Similar policies apply to your ISV solution, and you might also have to provide a code update. For your solution to be binary-compatible with all your customers, it must be built on the oldest platform release that you want to support. All new updates that Microsoft releases are intended to be binary backward-compatible. This compatibility gives you the option of maintaining only one servicing version of your solution that is based on the oldest of the three most recent updates. Therefore, you must maintain just one released solution,. You can then use that solution to update all your customers, regardless of which of the three most recent updates they are running. As your customers adopt new Microsoft updates, you can rebase your maintained solution to a newer release to remain current with the three most recent updates.
 
-This recommendation applies to servicing and maintaining your released solution. You will use a different approach for development of new releases of your solution. More information is available in the following sections of this document.
+This recommendation applies to servicing and maintaining your released solution. You will use a different approach to develop new releases of your solution. For more information, see the [Developing new releases](#developing-new-releases) section of this topic.
 
 ## Compatibility
 
-We are diligent in ensuring compatibility with existing customizations. We achieve this by using strict practices in our engineering processes, along with tool and automation support that helps identify API contracts that are unintentionally broken. Telemetry allows our engineers to determine customizations that reference or extend a Microsoft API.
+Microsoft diligently tries to guarantee compatibility with existing customizations. To achieve this goal, Microsoft uses strict practices in its engineering processes, together with tool and automation support that helps identify API contracts that are unintentionally broken. Telemetry lets Microsoft engineers determine customizations that reference or extend a Microsoft API.
 
-We are making a promise that Microsoft Finance and Operations updates that are applied to customer environments are functionally and binary compatible with existing customizations. The backward compatibility promise does not cover only APIs, it also includes functionality and user experience. All new experiences will be opt-in.
+Finance and Operations updates that are applied to customer environments are intended to be functionally compatible and binary-compatible with existing customizations. This compatibility covers not only APIs, but also functionality and the user experience. Customers must explicitly opt in to all new experiences.
 
-Any deprecation or breaking change in binary or functional compatibility will be announced 12 months in advance to provide ample time for you to align your customizations with an alternative design. You must pay attention to our monthly documentation updates and review the APIs that are marked as obsolete or internal. This allows you to manage changes in a timely fashion.
+Any deprecation or breaking change in binary or functional compatibility will be announced 12 months in advance. Therefore, you will have enough time to align your customizations with an alternative design. You must pay attention to the monthly updates to Microsoft documentation, and you must review the APIs that are marked as obsolete (deprecated) or internal. In this way, you will be able to manage changes in a timely manner.
 
-The following sections defines and describes the aspects of backward compatibility: runtime and design.
+The following sections define and describe the aspects of backward compatibility: runtime compatibility and design-time compatibility.
 
 ### Runtime compatibility
 
-We promise that new updates are runtime backward compatible. This promise covers binary and functional compatibility. Runtime compatibility means customizations that exist on production and sandbox environments will continue to work after a new update is deployed on the environment. This includes both standard platform and application updates.
+All new updates are intended to be runtime backward-compatible. This compatibility covers both binary compatibility and functional compatibility. Runtime compatibility means that customizations that exist in production and sandbox environments will continue to work after new updates are deployed in those environments. These updates include both standard platform updates and application updates.
 
-This also means that changes to the platform including changes to the compiler will be backward compatible with customizations that were compiled on an earlier platform.
+Runtime compatibility also means that changes to the platform will be backward-compatible with customizations that were compiled on an earlier platform. These changes include changes to the compiler.
 
-The compatibility is only backwards. It is not possible to compile a customization on a newer platform and deploy this onto a customer environment that has not yet updated to that or a later version.
+The compatibility is only backwards. A customization can be compiled on a newer platform and then deployed in a customer environment that hasn't yet been updated to that version or a later version.
 
 ### Design-time compatibility
 
-Design time backward compatibility means that a developer can apply an update to their development environment and can successfully compile their code without making any changes.
+Design-time backward compatibility means that developers can apply updates to their development environments and successfully compile their code without having to make any changes.
 
-You must be aware of how APIs in your solution are used in your customers’ implementations, and how you use these APIs without causing breaking changes. This work includes being diligent about what is changed and relying on engineering best practices. Examples of what you should avoid are discussed in [Breaking changes](../extensibility/breaking-changes.md).
+You must be aware of how APIs in your solution are used in your customers' implementations, and how you can use these APIs without causing breaking changes. As part of this effort, you must pay careful attention to what is changed and rely on engineering best practices. For examples of changes that you should avoid, see [Breaking changes](../extensibility/breaking-changes.md).
 
-You should strive to meet a bar similar to Microsoft's bar, so that together we avoid creating regressions.
+You should try to meet a bar that resembles the bar that Microsoft sets. In that way, both you and Microsoft can help avoid creating regressions.
 
-We promise binary compatibility and we also aim for design-time compatibility. However, there is a category of necessary changes that are **not** design time compatible but remain binary compatible. After applying an update, compiling your code may result in new errors or warnings. Some examples are that we make an enumeration extensible, we mark an API as obsolete or internal, or we introduce a new compiler error to avoid unsafe coding practices. These changes might require work on your solution. Design-time breaking changes that are binary compatible do not require a 12-month deprecation notice.
+All changes are intended to be binary compatibility, and Microsoft also aims for design-time compatibility. However, there is one category of required changes that is **not** design time–compatible but remains binary-compatible. After an update is applied, new errors or warnings might occur when your code is compiled. Here are some examples of these changes:
+
+- Microsoft makes an enumeration extensible.
+- Microsoft marks an API as obsolete or internal.
+- Microsoft introduces a new compiler error to help avoid unsafe coding practices.
+
+All these changes might require work on your solution.
+
+Design-time breaking changes that are binary-compatible don't require a 12-month deprecation notice.
 
 ## Developing new releases
 
-One Version together with running the solution as a service provides a great vehicle for collecting feedback. Feedback is useful for choosing which new features should be added to upcoming updates. Historically, we are used to new major releases with many new features, but the new model invites us to rethink this. We have moved to a series of continuous updates, where we gradually build on available capabilities of the system. In many cases one update will contain an initial small feature that we enrich with upcoming updates. There are instances where we need to stage for new features and initially hide or control adaption of new features by use of feature exposure.
+Together, One Version and the fact that the Finance and Operations solution runs as a service provide a great vehicle for collecting feedback. Feedback is useful, because it helps Microsoft decide which new features it should add to upcoming updates. Historically, the Microsoft approach has been to release major releases that include many new features. However, the new model encourages a different approach. Therefore, Microsoft has moved to a series of continuous updates that gradually build on the available capabilities of the system. In many cases, one update contains an initial small feature that Microsoft then enriches in later updates. In some cases, Microsoft must provide staging for new features, and must use feature exposure to hide the new features or control modifications to them.
 
 We recommend that you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
 
-The frequency of your new releases can be independent from Microsoft’s, as shown in the following diagram. Consider a source code branching strategy as described later in this document.
+As the following illustration shows, the frequency of your new releases can be independent of Microsoft releases. You should consider adopting a strategy for source code branching, as described in the [Branches and builds](#branches-and-builds) section of this topic.
 
-![Branching stategy](media/oneversion-isv-branch.png)
+![Branching strategy](media/oneversion-isv-branch.png)
 
-What is essential is releasing with quality with every update. Testing helps assure quality is there, but quality needs to be built in during the design and implementation phases too. There are some new dimensions to consider under One Version.
+What is essential is the quality of every update that is released. Although testing helps guarantee quality, quality must also be built in during the design and implementation phases. In the One Version model, there are some new dimensions to consider, as described in the following sections.
 
-### Design for extensibility
+### Designing for extensibility
 
-Designing your solution for extensibility means considering both how you customize by extending the standard application and how you enable customization of your ISV solutions by your customers and partners.
+To design your solution for extensibility, you must consider now only how you will customize by extending the standard application, but also how you will enable customization of your ISV solutions by your customers and partners.
 
-Ensure customizations are additive as opposed to intrusive, and follow the guidance found on the [extensibility home page](../extensibility/extensibility-home-page.md).
+Make sure that customizations are additive instead of intrusive, and follow the guidance on the [extensibility home page](../extensibility/extensibility-home-page.md).
 
-Do not become too creative in building your customization or you might end up extending an API that is questionable. This leads to risk that later updates will break your solution. Instead, log an [extensibility request](../extensibility/extensibility-requests.md) for us to create a more explicit API that is more resilient to breakage.
+Don't be too creative about the way that you build your customization. Otherwise, you might extend an API that is questionable and increase the risk that later updates will break your solution. Instead, log an [extensibility request](../extensibility/extensibility-requests.md), and ask that Microsoft create a more explicit API that is more resilient to breakage.
 
-Design solutions that are extensible. Take inspiration from [Write extensible code](../extensibility/writing-extensible-code.md).
+Design solutions that are extensible. For inspiration, see [Write extensible code](../extensibility/writing-extensible-code.md).
 
-Design for backward compatibility to avoid breaking any customer implementation. A good strategy is to be explicit about what you offer for hooking and wrapping extension code. You have great control over what methods you enable extensions for by how you decorate your methods. For more information, read [Attributes that make method extensible](../extensibility/extensibility-attributes.md).
+Design for backward compatibility to avoid breaking customer implementations. A good strategy is to be explicit about what you offer for hooking and wrapping extension code. The way that you decorate your methods gives you lots of control over which methods you enable extensions for. For more information, see [Attributes that make method extensible](../extensibility/extensibility-attributes.md).
 
 ### Data upgrade
 
-There is no longer support for data upgrade jobs like those that existed with earlier versions of Finance and Operations. This is because we want to provide minimum downtime while updating a production environment.
+The types of data upgrade jobs that existed in earlier versions of Finance and Operations are no longer supported. This change was made because Microsoft wants to provide minimum downtime while a production environment is updated.
 
-Database synchronization is still executes during upgrade and supports basics like adding new tables, field, and indexes.
+Database synchronization is still run during upgrade, and it supports basic operations such as adding new tables, field, and indexes.
 
-We are introducing new ways of driving data upgrade that execute asynchronously to prevent downtime. This is quite a different paradigm. Data upgrade will at times be triggered when a feature is enabled by a feature flag. This new approach for data upgrade will materialize with upcoming updates, and documentation resources will be available.
+To prevent downtime, Microsoft is introducing new ways of driving data upgrade that are run asynchronously. For example, data upgrade will sometimes be triggered when a feature is turned on through a feature flag. This new approach for data upgrade differs significantly from earlier approaches and will become available in upcoming updates. Documentation resources will also be available.
 
 ### Feature exposure
 
-With One Version, updates are managed by Microsoft and pushed onto customer environments. Pushed updates should not require customers to adjust to functional changes and train their users on a monthly basis because of new or changed features. This should not cause the customer to delay updates to their environment.
+In the One Version model, updates are managed by Microsoft and pushed to customer environments. Pushed updates should not require that customers adjust to functional changes, or that they train their users about new or changed features every month. Pushed updates also should not cause customers to delay updates to their environment.
 
-Feature management is a new concept that empowers customers to decide when new or changed features are put to use. This allows customers to review, validate, and document new or changed features before they are adopted. This also allows for training of users before enabling new or changed processes to reduce impact on daily operations. This puts the customer in control.
+Feature management is a new concept that puts customers in control of deciding when new or changed features are used. Customers can review, validate, and document new or changed features before they are adopted. They can also train users before new or changed processes are adopted, to reduce the impact on daily operations.
 
-Feature management will be released in the upcoming monthly updates.
+Feature management will be released in upcoming monthly updates.
 
-You should consider using feature management with your ISV solution to allow customers to control when new features are put into use.
+You should consider using feature management with your ISV solution to let customers control when new features are adopted.
 
 ## Branches and builds
 
-As an ISV, you should plan on a minimum of two source code branches, a servicing branch and a new development branch.
+As an ISV, you should plan on a minimum of two source code branches: a servicing branch and a development branch.
 
 ### Servicing branch
 
-The servicing branch is used to produce bug fixes on the solution. The frequency of releases from the branch and distribution of the releases is determined by you, the ISV. The expectation is that these releases from the servicing branch will be binary cumulative releases.
+The servicing branch is used to produce bug fixes for your ISV solution. As the ISV, you specify the frequency of releases from the branch and distribution of the releases. The expectation is that these releases from the servicing branch will be binary cumulative releases.
 
-The base Microsoft version used to build the solution should align with the oldest version that is used by a customer with the solution. In the One Version model that starts with 8.1, this is a maximum of three months old.
+The base Microsoft version that you use to build your ISV solution should match the oldest version that customers use with the solution. In the One Version model, that version starts with version 8.1 and is a maximum of three months old.
 
 ### Development branch
 
-The development branch is used for developing new capabilities in the ISV solution. The frequency of releases from the branch is determined by the ISV. You do not have to synchronize with the monthly Microsoft releases. Decoupling from the Microsoft release schedule and delivering less frequently might be the best approach. A quarterly or bi-annual cadence is a good starting point.
+The development branch is used to develop new capabilities for the ISV solution. As the ISV, you determine the frequency of releases from the development branch. You don't have to synchronize your releases with the monthly Microsoft releases. The best approach might be to decouple your release schedule from the Microsoft release schedule and deliver releases less often. A quarterly or biannual cadence is a good starting point.
 
-The base Microsoft version in the development branch should be the latest released version available or the released version that you plan to be used for servicing when your release is planned to go out. The goal is that you innovate along with Microsoft by staying as current as is feasible and that your development model enables uptake of recent feature work.
+The base Microsoft version in the development branch should be either the latest released version that is available or the released version that you plan to use for servicing when your new release goes out. The goals are that you innovate together with Microsoft by staying as current as is feasible, and that your development model allows for uptake of recent feature work.
 
 ## Testing
 
-Microsoft has several checks and balances in its development process to ensure functional and binary compatibility. ISV solutions must be validated with each Microsoft release to ensure this compatibility. Doing this validation during the Partner Early Access Program (PEAP) phase of each release is an expectation.
+Microsoft has several checks and balances in its development process to help guarantee functional and binary compatibility. ISV solutions must be validated with each Microsoft release to help guarantee this compatibility. The expectation is that you will do this validation during the Partner Early Access Program (PEAP) phase of each release.
 
-Quick turnaround on feedback from you is very important, so that it is feasible to fix any issues before the monthly updates are deployed in customer environments. 
+It's very important that you provide quick turnaround for feedback, so that you will have time to fix any issues before the monthly updates are deployed in customer environments.
 
-Test automation is important for quick validation of new updates. We plan to release the test framework and libraries to support you in building your test automation.
+Test automation is important for quick validation of new updates. Microsoft plans to release the test framework and libraries to support you as you build your test automation.
 
-We have an extensive suite of tests that support our validation. We imagine that you as ISV’s will create your suites of automated tests too.
+Microsoft has an extensive suite of tests that support our validation. The expectation is that you, as an ISV, will create your own suites of automated tests.
 
-In addition to the SysTest automation framework that is aimed at developers, the [Regression Suite Automation Tool (RSAT)](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) enables automation of business processes without the need to write code. The RSAT empowers functional users to record their critical tests and automate part of their UAT. You can also use the RSAT as you start building out your test automation.
+In addition to the SysTest automation framework that is aimed at developers, the [Regression Suite Automation Tool (RSAT)](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) enables automation of business processes without requiring that code be written. Functional users can use the RSAT to record their critical tests and automate part of their UAT. You can also use the RSAT as you start to build your test automation.
 
-Recently we released the [ATL automation framework]() with accompanying libraries. This framework is aimed at developers for building tests that are more comprehensive than unit tests. The libraries that come with the framework help make it seamless to compose tests. The ATL framework is valuable for you as ISV’s for building your suite of tests.
+Recently, Microsoft released the [Acceptance test library (ATL) automation framework]() and accompanying libraries. This framework is aimed at developers and lets them build tests that are more comprehensive than unit tests. The libraries that accompany the framework help make it a seamless way to build suites of tests.
 
-### Currently released product – test binary and functional compatibility
+### Currently released products – Testing binary and functional compatibility
 
-The currently released product that is maintained in the servicing branch should first be tested for binary and functional compatibility. The suite of your automated developer tests, automated functional tests, and manual tests for your ISV solution should be executed on an environment with the new version from Microsoft and your existing ISV solution. Since this is a test of binary and functional compatibility, the ISV solution should **not** be recompiled.  
+The currently released product that is maintained in the servicing branch should first be tested for binary and functional compatibility. Your suite of automated developer tests, automated functional tests, and manual tests for your ISV solution should be run on an environment that has the new version from Microsoft and your existing ISV solution. Because this test run is testing for binary and functional compatibility, the ISV solution should **not** be recompiled.
 
-If successful as expected, this step will validate that a customer installation of the current version of your ISV solution will not need to be updated when Microsoft broadcasts the new release to the customer.
+If the testing is successful, this step will validate that a customer installation of the current version of your ISV solution won't have to be updated when Microsoft broadcasts the new release to the customer.
 
-If not successful, then you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process. The issue will either require a fix from Microsoft or a fix in your ISV solution which then may require updating customers from the servicing branch. In either case, Microsoft needs to know to become more proactive in its processes for future releases.
+If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
-### Currently released product – test design time compatibility
+### Currently released products – Testing design-time compatibility
 
-The currently released product that you maintain in the servicing branch should then be tested for design time compatibility. To do this, you should compile the solution against a deployment of the new Microsoft release. While Microsoft’s goal is to minimize design time compatibility issues, there are situations where there might be an issue. One example is when an enumeration has been made extensible and the solution uses it in a manner that assumes an underlying integer representation (for example, using the enumeration value in a logical comparison or mathematical function). While this code will continue to work in a customer deployment because the underlying values are maintained, a compiler error is generated and addressed for future releases. Another example of a design-time compatibility issue is when we introduce a new compiler error to protect against unsafe coding patterns. For more categories of design time compatibility issues, read [Breaking changes](../extensibility/breaking-changes.md).
+Next, the currently released product that is maintained in the servicing branch should be tested for design-time compatibility. To do this testing, you should compile the solution against a deployment of the new Microsoft release. Although the goal of Microsoft is to minimize design-time compatibility issues, they might occur in some situations. One example is when Microsoft makes an enumeration extensible, and the solution uses it in a manner that assumes an underlying integer representation (for example, it uses the enumeration value in a logical comparison or mathematical function). Although the code will continue to work in a customer deployment because the underlying values are maintained, a compiler error is generated and addressed for future releases. Another example of a design-time compatibility issue is when Microsoft introduces a new compiler error to protect against unsafe coding patterns. To learn about more categories of design-time compatibility issues, see [Breaking changes](../extensibility/breaking-changes.md).
 
-You should execute your combination of automated developer tests, automated functional tests, and manual tests on an environment with the new version from Microsoft and your compiled ISV solution.
+You should run your suite of automated developer tests, automated functional tests, and manual tests on an environment that has the new version from Microsoft and your compiled ISV solution.
 
-If successful, this step will validate that your ISV solution will not need to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
+If the testing is successful, this step will validate that your ISV solution won't have to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
 
-If not successful and the issue is not one of the categories described in [Breaking changes](../extensibility/breaking-changes.md), then you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process. The issue will either require a fix from Microsoft or a fix in your ISV solution which then may require updating customers from the servicing branch. In either case, Microsoft needs to know to become more proactive in its processes for future releases.
+If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, it turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
-### Currently released product – base build update
+### Currently released products – Updating the base build
 
-As we update your customers to new releases, you should update the base build periodically to match the oldest version used by a customer that is running your ISV solution.
+As Microsoft updates your customers to new releases, you should periodically update the base build, so that it matches the oldest version that is used by customers who run your ISV solution.
 
-### Solution in development
+### Solutions that are in development
 
-You validate your new solution development on the latest released version or on the released version you plan for servicing as your new release ships. Consider validation on the most current version in either case though, as this helps with early discovery of uptake work for you or issues. 
+You validate your new solution development on either the latest released version or the released version that you plan for to use for servicing when your new release goes out. However, in both cases, consider doing validation on the most current version. This validation will help with early discovery of issues or uptake work that you must do.
 
-If an unexpected break occurs, then you (the ISV) must notify Microsoft immediately through the [PEAP communication process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates) which uses Yammer and a issue notification process.
+If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
 
 ## Deploying updates
 
-One Version servicing includes automated update process to customer environments for Microsoft standard platform and application updates. This automation is not currently available for ISV solutions. For more information, read [ISV’s as part of One Version service updates](#isv-solutions-as-part-of-one-version-automated-deployment). 
+For Microsoft standard platform and application updates, One Version servicing includes a process for automated updates of customer environments. However, this automation isn't currently available for ISV solutions. For more information, see [ISV's as part of One Version service updates](#isv-solutions-as-part-of-one-version-automated-deployment).
 
-ISV solutions are updated manually, and you control your release cadence. The binary backward compatibility enables safe update of the standard platform and application.
+ISV solutions are manually updated, and you control your release cadence. The binary backward compatibility allows for safe updates of the standard platform and application.
 
-The update process includes database synchronization, for example, adding new fields and indexes.
+The update process includes database synchronization (for example, the addition of new fields and indexes).
 
-## ISV solutions as part of One Version automated deployment?
+## ISV solutions as part of One Version automated deployment
 
-We have no plans to ship ISV solutions as part of the One Version automated deployment process. This is not to say that this cannot become an option at some point, but we must align engineering processes to make this feasible.
+Although Microsoft doesn't currently plan to release ISV solutions as part of the One Version automated deployment process, this option might become available at some point. However, Microsoft must first align engineering processes to make this option feasible.
 
-Here are some areas where alignment will be needed:
-+	Feature management: Allowing a user to control when to turn on a new feature.
-+	Backward compatibility and compliance: Ensuring compliance with API customization usage.
-+	Feature depreciation: Heads up time for deprecating features or APIs.
-+	Test automation suite: Ongoing regression suite validation running hosted.
-+	Testing during preview phase.
-+	ISV solutions sign-off and upload: Based on current updates timely with release milestone.
-+	Automated deployment scripts.
-+	Zero downtime: For instant deployment of updates.
-+	Data migration without downtime.
-+	Support on-call duty for service of critical production issues.
+Here are some areas where alignment will be required:
 
-## Do I ship binaries or source code?
++ **Feature management** – The user must be able to control when a new feature is turned on.
++ **Backward compatibility and compliance** – Compliance with API customization usage is required.
++ **Feature deprecation** – Advanced notice about deprecation of features or APIs must be provided.
++ **Test automation suite** – Ongoing regression suite validation running hosted.
++ **Testing during the preview phase**
++ **ISV solution sign-off and upload** – Based on current updates timely with release milestone.
++ **Automated deployment scripts**
++ **Zero downtime** – Deployment of updates must be instantaneous.
++ **Data migration without downtime**
++ **Support for on-call duty, for servicing of critical production issues**
 
-Binary compatibility is supported as long as you do not recompile. We recommend your solution is not compiled on customer environments, but that you deploy pre-compiled binaries that you have prepared and validated. This provides you with the option that your solution binaries are created from your servicing branch based on an earlier version where this is practical.
+## Should I release binaries or source code?
 
-If an implementation partner or customer compiles your solution on an updated environment, then new warnings and errors as mentioned under design compatibility may show. Therefore, we recommend that implementation partners do not compile your solution.
+Binary compatibility is supported, provided that you don't recompile. We recommend that your ISV solution not be compiled in customer environments. Instead, you should deploy precompiled binaries that you've prepared and validated. Your solution binaries can then be created from your servicing branch, based on an earlier version, when this approach is practical.
 
-This does not imply that you cannot share your source code to help support debugging, for example. You should consider steps to avoid compilation of your code, so that you can avoid exposing to design time issues implementation partners.
-
+If an implementation partner or customer compiles your solution in an updated environment, new warnings and errors might occur, as was mentioned in the [Design-time compatibility](#design-time-compatibility) section of this topic. Therefore, we recommend that implementation partners not compile your solution. However, this recommendation doesn't mean that you shouldn't share your source code to help support debugging, for example. You should just consider taking steps to avoid compilation of your code, so that implementation partners aren't exposed to design-time issues.
