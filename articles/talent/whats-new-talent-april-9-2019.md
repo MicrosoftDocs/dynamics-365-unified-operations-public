@@ -54,44 +54,44 @@ Candidates can now download and save their interview events to their personal ca
 
 ## Changes in Onboard
 
-### Lifecycle Services (LCS) integration with 'report a problem'
+### Lifecycle Services (LCS) integration with report a problem
 In Attract and Onboard, issues logged by end users using the report a problem feature now automatically create support issues in the customer's LCS project. Admins can then triage the issues and submit them to Microsoft when needed. This is consistent with how Core HR handles end user support issues.
 
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2225.
 
-### Percent of basis variable plans load incorrect amount (308254)
+### Percent of basis variable plans load incorrect amount
 This week’s release corrects an issue when loading variable compensation awards using percent of basis plans.
  
-### Date picker on Last day worked doesn’t work correctly (301831)
+### Date picker on Last day worked doesn’t work correctly
 This change corrects the issue: When users edit the **Employment end date** and select the date using the calendar control, a day is added to the selection.
 
-###  Limit personnel action types by the action taken (290094)
+###  Limit personnel action types by the action taken
 This change limits the action types that appear when taking specific actions. For example, when a new position is requested, only the new position actions appear in the list of actions to select. Previously, both new and edit actions appeared. 
 
-### Transferring an employee with compensation in a second legal entity (288603)
+### Transferring an employee with compensation in a second legal entity
 This release allows compensation to be ended in a second legal entity if the transfer is for a cross-company transfer.
 
-### Unable to select compensation for a future employment during a transfer (288606) 
+### Unable to select compensation for a future employment during a transfer
 When transferring an employee to a new legal entity, you can now set compensation for the new legal entity during the transfer process.
 
-### User isn't able to assign compensation during position assignment (293600)
+### User isn't able to assign compensation during position assignment
 Adding a new position assignment now allows setting up fixed compensation records. 
 
 ## In preview
 
-### Allow reason codes to be specified on leave types (244754)
+### Allow reason codes to be specified on leave types
 Organizations might need additional information about time-off requests. You can now specify reason codes for leave types and enable employees to select a reason code on their time-off requests.
 
-### Require reason codes for certain leave types on time-off requests (244756)
+### Require reason codes for certain leave types on time-off requests
 Organizations might require reason codes for specific leave types when employees submit time off. This might be due to company policy or regulatory requirements. You can now specify which leave types require a reason code, and you can require employees to provide a reason code for the leave type on their time-off requests.
 
-### Provide leave and absence transaction list for HR (170943)
+### Provide leave and absence transaction list for HR
 Tracking employee time off and understanding how time off is calculated not only helps HR answer employee questions, but also ensures accurate time off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests) to see the reasons behind balances. 
 
 ## Coming soon
 
-### Improvements to the user interface for duplicate employee check (257821)
+### Improvements to the user interface for duplicate employee check
 With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
 
 ###  Email support for alerts
