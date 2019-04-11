@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 26 (May 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,7 +60,7 @@ The [third wave of platform extensibility enhancements](https://docs.microsoft.c
 ## Additional resources
 
 ### Platform update 26 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 26, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com).
+For information about the bug fixes included in each of the updates that are part of Platform update 26, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=313846&dbType=3&qc=a4ba239cdec6f528657f529750b68845b75580e5fdb0ad6060c4bc33f8da67f8).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
