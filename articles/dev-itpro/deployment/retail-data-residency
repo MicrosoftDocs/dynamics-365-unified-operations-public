@@ -50,7 +50,7 @@ You may choose to configure CDX to only synchronize specific segments of records
 
 Pre-requisities:
 
-You must first configure Channel database groups for each RCSU where you want to synchronize segmented data. All RCSUs within the same Channel database group recieve a union of all the  data needed to serve all the channels in that RCSU. You will need to create a separate database group for each RCSU channel database where you want to syncrhonize segmented data. To do this, perform the following steps:
+You must first configure Channel database groups for each RCSU where you want to synchronize segmented data. All RCSUs within the same Channel database group recieve the union of all the  data needed to serve all the channels in that RCSU. You will need to create a separate database group for each RCSU channel database where you want to syncrhonize segmented data. To do this, perform the following steps:
 
 1. In head office, navigate to Retail > Retail Headquarters Setup > Retail Scheduler > Channel database group
 2. Create a new database group for each RCSU where you want to synchronize segmented data
