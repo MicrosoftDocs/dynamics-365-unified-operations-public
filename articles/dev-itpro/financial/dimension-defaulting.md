@@ -82,7 +82,7 @@ Note that the MainAccount dimension isn't shown in most lists of default dimensi
 
 ### API for the list of default dimensions
 
-The default dimension controller uses the **DimensionCache::getDimensionAttributeSetForLedger()** API to determine which dimensions are applicable to a company.
+The default dimension controller, **DimensionDefaultingController**, uses the **DimensionCache::getDimensionAttributeSetForLedger()** API to determine which dimensions are applicable to a company.
 
 ## Control uptake and storage
 
@@ -92,11 +92,11 @@ All pages that show default dimensions use the **DimensionDefaultingController**
 
 ### Storage of default dimension values
 
-The values that are associated with the dimensions are stored in a table that is separate from the primary table that references them. For example, the LedgerJournalTable table has a **DimensionDefault** column that holds a foreign key reference to a record in the DimensionAttributeValueSet table. This record is the parent record that represents the set of values that is shown.
+The values that are associated with the dimensions are stored in a table that is separate from the primary table that references those dimension values. For example, the LedgerJournalTable table has a **DimensionDefault** column that holds a foreign key reference to a record in the DimensionAttributeValueSet table. This record is the parent record that represents the set of values that is shown.
 
 ![Default dimension values](./media/Part2DefaultDimensionEntry.png "Default dimension values")
 
-Each value is stored as a separate row in the DimensionAttributeValueSetItem table sharing the same parent record foreign key.
+Each value is stored as a separate row in the DimensionAttributeValueSetItem table and has the same parent record foreign key.
 
 ![SQL results of all default dimension values](./media/SQLResultofAllDefaultDimensionValues.png "SQL results of all default dimension values")
 
@@ -114,7 +114,7 @@ Like most dimension data, the records that are inserted into the tables that wer
 
 ![Default dimension entry and one added value](./media/Part2-1DefaultDimensionEntry.png "Default dimension entry and one added value")
 
-In this case, the query will still return the same three rows. The dimension framework has created a new value set record and four additional value set item records that are linked to the new value set
+In this case, the SQL query will still return the same three rows as shown previously even though a new row was added. When a new value was added the dimension framework created a new value set record and four additional value set item records that are linked to the new value set rather than change the previous dimension set.
 
 ![SQL query and output (column-trimmed) for all default dimension values in the new set](./media/Part2SQLResultsValueSet.png "SQL query and (column trimmed) output for all default dimension values in the new set")
 
@@ -126,7 +126,7 @@ This section explains how default dimensions are copied between entities.
 
 Default dimensions are typically copied or merged with other dimension combinations to create ledger account dimensions. The dimension framework doesn't set the precedence for defaulting behavior. Each page or process determines the precedence, based on the requirements of its business logic.
 
-A hypothetical order document will serve as the basis for the examples that follow. This document might be a service order that interacts with customers, and that contains services as line items. Alternatively, it might be a purchase order that interacts with vendors, and that contains inventory items as line items. Default dimensions can be entered or overridden at various points in the processing, as the following illustration shows.
+A hypothetical order document will serve as the basis for the examples that follow. This document might be a customer sales order that contains services as line items. Alternatively, it might be a vendor purchase order that contains inventory items as line items. Default dimensions can be entered or overridden at various points in the processing, as the following illustration shows.
 
 ![Default dimension sources on a typical document](./media/DefaultDimensionSourcesGraph.png "Default dimension sources on a typical document")
 
@@ -254,7 +254,7 @@ This section explains how default dimensions can be merged to create new ledger 
 
 Default dimensions provide values that will be used later to create ledger account combinations that are used in journals and accounting distributions. According to the definition in the [Ledger account combinations series of blog posts](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx), a ledger account combination is just a set of MainAccount and dimension values that structure and order are applied to.
 
-Default dimensions provide all the dimensions, except MainAccount, that are required for a ledger account combination. They can be combined with a default account, or they can be combined another ledger dimension to produce one. 
+Default dimensions provide all the dimensions, except MainAccount, that are required for a ledger account combination. Default dimensions can be combined with a default account, or they can be combined another ledger dimension to produce a ledger dimension.
 
 The following illustrations show an example where accounting distributions are being done from the purchase order line. The user selects **Financials \> Distribute amounts** from the purchase order line to open the **Accounting distributions** page. On that page, a default ledger account combination, **618900--027-008-AudioRM**, is already entered.
 
@@ -262,7 +262,7 @@ The following illustrations show an example where accounting distributions are b
 
 [![Accounting distributions page](./media/DefaultDimension5-1AcctDistForm.png)](./media/DefaultDimension5-1AcctDistForm.png)
 
-As the previously mentioned blog post explains, the values for the Project, CostCenter, ItemGroup, and Department dimensions have been filled in. Additionally, the default MainAccount value from the posting item group has been entered on the item as the purchase expenditure for expense account for a purchase order, as the following illustration shows. The project isn't shown because it isn't part of the applicable account structure.
+The values for the Project, CostCenter, ItemGroup, and Department dimensions have been filled in to the accounting distrobution. Additionally, the default MainAccount value from the posting item group has been entered on the item as the purchase expenditure for expense account for a purchase order, as the following illustration shows. The project isn't shown because it isn't part of the applicable account structure.
 
 [![Released product details page](./media/DefaultDimension5-1SourceofMainAccountOnPO.png)](./media/DefaultDimension5-1SourceofMainAccountOnPO.png) 
 
