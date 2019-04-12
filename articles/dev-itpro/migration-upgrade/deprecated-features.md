@@ -108,7 +108,7 @@ Support for creating project-based sales orders where the project contract has m
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The legacy workflow reports for tracking and instance status are being deprecated because they are not referenced from the navigation, were meant to be fully removed previously, and issues were recently identified in them. The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport. |
+| **Reason for deprecation/removal** | The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation. The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport. |
 | **Replaced by another feature?**   | The workflow history form can be used instead. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
