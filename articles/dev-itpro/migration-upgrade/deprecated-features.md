@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 04/05/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -104,6 +104,15 @@ Support for creating project-based sales orders where the project contract has m
 | **Deployment option**              | All  |
 | **Status**                         | Deprecation is planned for the April 2020 release wave. |
 
+### Legacy workflow reports for tracking and instance status
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation. The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport. |
+| **Replaced by another feature?**   | The workflow history form can be used instead. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is April 2020. |
 
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 

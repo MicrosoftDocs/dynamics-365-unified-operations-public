@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/28/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -60,7 +60,6 @@ For the the latest regulatory update plans, refer to the the following table.
 |      April 2019          |   10.0.1      |    Brazil     |NF-e new NT 2018.005         |
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019         |
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) 
-|      May 2019            |   10.0.2      | Brazil      |   SPED ECF Layout 5   |
 |      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
 
 
