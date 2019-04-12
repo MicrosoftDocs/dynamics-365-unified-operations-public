@@ -85,7 +85,7 @@ The classes are grouped into the following concepts:
 
 ## Code generation
 
-'Queries and specifications help simplify the process of creating entities. For more information, see [Acceptance test library Code generation wizard](code-generation-wizard.md). The **Code generation** wizard can be used to create scenarios and update them.
+Queries and specifications help simplify the process of creating entities. For more information, see [Acceptance test library Code generation wizard](code-generation-wizard.md). The **Code generation** wizard can be used to create scenarios and update them.
 
 ## Further reading
 
