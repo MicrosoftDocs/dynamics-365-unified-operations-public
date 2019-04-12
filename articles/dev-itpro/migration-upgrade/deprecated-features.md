@@ -112,7 +112,7 @@ Support for creating project-based sales orders where the project contract has m
 | **Replaced by another feature?**   | The workflow history form can be used instead. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | Deprecation is planned for the October 2020 release wave. |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is April 2020. |
 
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 
