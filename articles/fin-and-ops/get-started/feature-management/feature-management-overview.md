@@ -62,7 +62,7 @@ If a feature hasn't been enabled, an **Enable** button appears in the details pa
 2. A slider appears, where you can specify the date on which the feature should be enabled. By default, this date is set to the current date.
 3. Select **Enable** to enable the feature.
 
-Some features can't be enabled after you enable them. If the feature that you are attempting to enable can't be disabled, you receive a warning. At this point, you can cancel the operation and leave the feature disabled. However, if you decide to enabled the feature, you won't be able to enable it later.
+Some features can't be disabled after you enable them. If the feature that you are attempting to enable can't be disabled, you receive a warning. At this point, you can cancel the operation and leave the feature disabled. However, if you decide to enabled the feature, you won't be able to enable it later.
 
 After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will show up in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. 
 
@@ -80,7 +80,7 @@ If a feature has already been enabled, a **Disable** button appears in the detai
 
 - Select the feature that you want to turn off, and then, in the details pane, select **Disable**.
 
-    A dialog box appears, and the date when the feature was set to be enabled is deleted.
+- The feature is disabled and the date is cleared.
 
 After the feature is disabled, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't yet been enabled and it will appear in the **Not enabled** list. The message will appear every time that you select the feature in the feature list.
 
@@ -95,3 +95,7 @@ For features that must be enabled, a message will appear below the **Learn more*
 The **Feature management** workspace can be opened by system admins, and by users who are assigned to the **Feature manager** or **Feature viewer** roles that were created to support the Feature management experience. Users in the **Feature manager** role can turn any feature on and off. They can also update the comments section for the feature. Users in the **Feature viewer** role can only view the **Feature management** workspace. They can't turn features on and off.
 
 The **Feature manager** role and **Feature viewer** role don't override the existing security that a user has. The roles just control access to enabling features. It doesn't provide access to the features themselves.
+
+## Using feature management to enable ISV features or custom features
+
+The **Feature management** process is currently unavailable for ISV features or custom features. We are adding additional functionality to enhance **Feature management** and, once those enhancements are complete, we will open up **Feature management** to all features and provide specific instructions on how to update your feature to use it.
