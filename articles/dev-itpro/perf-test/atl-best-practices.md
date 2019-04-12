@@ -101,7 +101,7 @@ If you know only the ID, use the method that takes the ID as an argument.
 
 When you automate a new domain area, introduce a base class that holds shortcuts to the most frequently used navigation objects in that area.
 
-For example, for the warehouse management area, there is a base class that is named `AtlWHSTestCase`. It contains shortcuts to `data.whs()`, `data.invent()`, `data.invent().items()`, `data.invent().units()`, and others. The shortcuts simplify your test code.
+For example, for the warehouse management area, there is a base class that is named `AtlWHSTestCase`. It contains shortcuts to `data.whs()`, `data.invent()`, `data.invent().items()`, `data.invent().units()`, and other navigation objects. The shortcuts simplify your test code.
 
 ```
 class AtlWHSTestCase extends SysTestCase

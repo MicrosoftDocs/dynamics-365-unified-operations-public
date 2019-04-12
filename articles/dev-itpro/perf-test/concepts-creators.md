@@ -59,8 +59,6 @@ AtlCreatorCustomer
 
 Creator classes should provide fluent setter methods that are used to set the properties of the entity that is being constructed.
 
-Creators should provide fluent `set` methods for the properties of the entity that is being constructed.
-
 ### Naming convention
 
 `set<EntityPropertyName>`
