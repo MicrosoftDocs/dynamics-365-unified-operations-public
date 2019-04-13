@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Delivering ISV solutions by using One Version
+title: Delivering ISV solutions: One version guidelines
 description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions to Microsoft Dynamics 365 for Finance and Operations.
 author: FrankDahl
 manager: AnnBe
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Platform update 24
 
 ---
 
-# Delivering ISV solutions by using One Version
+# Delivering ISV solutions: One version guidelines
 
 [!include [banner](../includes/banner.md)]
 
-Thanks to Microsoft Dynamics 365 Finance and Operations One Version, new updates are now automatically broadcast, downtime is close to zero, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades.
+Thanks to Microsoft Dynamics 365 Finance and Operations One Version, new updates are now automatically broadcast, downtime is minimal, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades.
 
 Feature management lets customers control when new features are applied. Therefore, as an independent software vendor (ISV) partner, you can innovate together with Microsoft to take advantage of new features without having to handle the waiting times that come with long release cycles. When all your customers run on current versions, you have fewer versions to maintain. You can focus instead on building quality into the solutions that you provide for your customers.
 
@@ -71,7 +71,7 @@ This topic includes the following sections:
 
 ## Servicing customers
 
-Finance and Operations runs on Microsoft Azure. Therefore, it's a solution that runs as a service. Microsoft services companies 24/7, either proactively from alerts that report unusual behavior, or from request tickets that are submitted by customers in companies, or their partners. Microsoft has a range of tools to help support the services that are running. These tools include usage data that is collected from the services. To help safeguard customer data, Microsoft is also careful about who can access customer systems.
+Finance and Operations runs on Microsoft Azure. Therefore, it's a solution that runs as a service. Microsoft services companies 24/7, either proactively from alerts that report unusual behavior, or from support tickets that are submitted by customers or their partners. Microsoft has a range of tools to help support the services that are running. These tools include usage data that is collected from the services. To help safeguard customer data, Microsoft is also careful about who can access customer systems.
 
 When Microsoft analyzes an issue, it might determine that the issue is related to your ISV solution. Microsoft reports this type of issue to you, so that you can follow up offline.
 
