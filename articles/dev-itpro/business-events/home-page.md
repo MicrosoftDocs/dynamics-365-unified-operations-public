@@ -45,7 +45,7 @@ In Finance and Operations, a business action that a user performs can be either 
 
 ## Business events that are implemented in Finance and Operations
 
-In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md) and [Workflow business events](business-events-workflow.md).
+In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md), [Workflow business events](business-events-workflow.md) and [Alerts as business events](alerts-business-events.md).
 
 A developer must use extensions to implement new business events. For more information, see [Business events developer documentation](business-events-dev-doc.md).
 
