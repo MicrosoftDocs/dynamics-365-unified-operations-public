@@ -3,9 +3,9 @@
 
 title: Activities in the processes
 description: This topic provides information about the various types of activities that can be used in the hiring process.
-author: shielasogge
+author: hasrivas
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -84,3 +84,12 @@ In Microsoft Forms, authors can change their settings to let users outside their
 
 > [!NOTE]
 > The Microsoft Forms activity is available only with the Comprehensive hiring add-on. For more information, see [Attract comprehensive hiring add-on capabilities](./attract-comprehensive-hiring.md).
+
+## Offer activity
+
+The hiring process template requires the Offer activity. To use the integrated offer management app, set **Launch Offer Management App on Prepare Offer** to **On**. If this setting is off, the candidate won't appear in the Offer app, so you'll have to track updates to a candidate's offer activity manually. To define whether hiring managers can prepare the offer for the candidate in the Offer app, set **Hiring Managers can prepare offer** to **On**. If the job has multiple positions associated with it, you can decide whether you want to prepare multiple offers against the same position number. If you want to allow only one offer per position per job, set **Allow Positions to be reused within job** to **Off**.
+
+> [!NOTE]
+> The integrated Offer Management App is available only with the Comprehensive hiring add-on. For more information, see [Attract comprehensive hiring add-on capabilities](./attract-comprehensive-hiring.md).
+
+

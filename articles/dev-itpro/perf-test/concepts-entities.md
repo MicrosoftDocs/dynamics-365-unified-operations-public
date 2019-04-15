@@ -123,13 +123,13 @@ Use the same naming conventions that are used for entity references.
 
 ### Id references
 
-In addition to having an entity or record reference, you can introduce the Id reference property.
+In addition to having an entity or record reference, you can introduce the `Id` reference property.
 
 ```
 public CustAccount customerId(CustAccount _custTable = null)
 ```
 
-Don't introduce Id references unless you also introduce corresponding entity or buffer references. Id references are shortcuts to the entity or buffer reference methods. The implementation of Id references should delegate the call to the entity the buffer reference.
+Don't introduce `Id` references unless you also introduce corresponding entity or buffer references. `Id` references are shortcuts to the entity or buffer reference methods. The implementation of `Id` references should delegate the call to the entity or buffer reference.
 
 #### Id reference naming conventions
 
@@ -137,7 +137,7 @@ Use the UI name if it includes terms such as `Id`, `Number`, `Account`, `Code`, 
 
 #### Id reference methods contract
 
-The Id reference method always uses the provided Id to find the referenced entity, and it delegates the call to the entity or record reference method. If no entity or record is found based on the specified ID, an error message is thrown.
+The `Id` reference method always uses the provided `Id` to find the referenced entity, and it delegates the call to the entity or record reference method. If no entity or record is found based on the specified `Id` value, an error message is thrown.
 
 ## Fluent setter methods
 
@@ -167,7 +167,7 @@ Entities represent not only data but also relevant actions. Actions can be imple
 
 ### Simple action methods
 
-Simple action methods represent a complete action. They should not be fluently chained. The exception is the save method, which should be fluent.
+Simple action methods represent a complete action. They should not be fluently chained. The exception is the `save` method, which should be fluent.
 
 #### Naming convention
 
@@ -242,11 +242,10 @@ An object instance can be part of only one composite. If the composite object is
 
 An example of a composite object is a source document that is made up of source document lines.
 
-### Adding components
+### Example
 
 In the source document example, the document entity serves as the composition root and is responsible for creating any new instances of document lines. In this case, the source document entity will have an `addLine()` method that initializes and returns a new line for the document.
 
-#### Example
 
 ```
 public AtlEntitySalesLine addLine()
@@ -254,7 +253,7 @@ public AtlEntitySalesLine addLine()
 
 The `addLine()` method adds the line object (`salesLine` in this example) to a collection of lines and returns the parent entity (`SalesOrder` in this example) to preserve the fluency of application programming interfaces (APIs). To create a new line, create a `newLine()` method.
 
-#### Naming convention for adding components
+### Naming convention for adding components
 
 Methods for adding components should use the UI names of the buttons.
 
