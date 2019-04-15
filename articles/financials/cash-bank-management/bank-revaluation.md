@@ -5,7 +5,7 @@ title: Bank foreign currency revaluation
 description: This topic provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
