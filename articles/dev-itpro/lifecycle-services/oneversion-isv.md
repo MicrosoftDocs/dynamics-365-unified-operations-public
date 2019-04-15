@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Delivering ISV solutions: One version guidelines
+title: Delivering ISV solutions: One Version guidelines
 description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions to Microsoft Dynamics 365 for Finance and Operations.
 author: FrankDahl
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 24
 
 ---
 
-# Delivering ISV solutions: One version guidelines
+# Delivering ISV solutions: One Version guidelines
 
 [!include [banner](../includes/banner.md)]
 
