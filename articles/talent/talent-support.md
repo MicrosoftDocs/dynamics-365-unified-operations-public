@@ -40,7 +40,7 @@ To obtain support for Talent, use the resources in the following table. These re
 
 | **Task**  | **More information**                  |
 | --------- | ------------------------------------- |
-| Ask the community | Go to [Ask The Community](https://community.dynamics.com/365/talent) to find help with your questions. To find answers, enter a question in the search box next to **Have a question?**. To ask a question, click the **Ask a question** button. |
+| Ask the community | Go to the [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) to find help with your questions. To find answers, enter a question in the search box next to **Have a question?**. To ask a question, click the **Ask a question** button. |
 | Use the cloud-powered support tool | In [Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Support** tile is a tool that helps you manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project or use the **Support tickets** section in LCS and click **Cloud powered support**. From there, you can submit issues in two ways:<br></br><br></br> 1. When submitting an issue through LCS, on the **Active issue** tab, select your issue, and then click **Submit to Microsoft**.<br></br><br></br> 2. On the **Submitted to Microsoft** tab, click **Submit a new Incident** to submit new issues. |
 | In application support | Select the **?** icon in the menu, and then select **Support** if you're using Core HR or **Report a problem** if you're using Attract or Onboard). Issues will be reported on the **Active Issues** tab in LCS. Note that if you purchased the stand-alone version of Onboard, Report a problem issues will be sent to Microsoft. |
 | Get help with questions about Talent licensing | Contact your partner or Microsoft sales representative. |
@@ -52,7 +52,7 @@ To obtain support for Attract and Onboard, use the resources in the following ta
 
 | **Task**  | **More information**                  |
 | --------- | ------------------------------------- |
-| Ask the community | Go to [Ask The Community](https://community.dynamics.com/365/talent) to find help with your questions. To find answers, enter a question in the search box next to **Have a question?**. To ask a question, click the **Ask a question** button. |
+| Ask the community | Go to the [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) to find help with your questions. To find answers, enter a question in the search box next to **Have a question?**. To ask a question, click the **Ask a question** button. |
 | Report a problem | Select the **icon** in the upper right corner of the page, and then click **Report a problem**. Enter the issue into the description and include an email address if you would like to follow up on the issue. |
 | Get help with questions about Talent licensing | Contact your partner or Microsoft sales representative. |
 | Request new features and functionality within Attract and Onboard | Select the **?** icon and then select **Ideas**, or use the following links to view, search, vote, or add new ideas: [Attract](https://experience.dynamics.com/ideas/categories/?forum=44d6c48a-95b0-e811-a96a-000d3a1bece3&forumName=Dynamics%20365%20for%20Talent%3A%20Attract) or [Onboard](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard). | 
