@@ -52,7 +52,7 @@ To obtain support for Attract and Onboard, use the resources in the following ta
 
 | **Task**  | **More information**                  |
 | --------- | ------------------------------------- |
-| Ask the community | Go to the [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) to find help with your questions. To find answers, enter a question in the search box next to **Have a question?**. To ask a question, click the **Ask a question** button. |
+| Ask the community | Go to the [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) to find help. To find answers, enter a question in the search box next to **Have a question**. To ask a question, click the **Ask a question** button. |
 | Report a problem | Select the **icon** in the upper right corner of the page, and then click **Report a problem**. Enter the issue into the description and include an email address if you would like to follow up on the issue. |
 | Get help with questions about Talent licensing | Contact your partner or Microsoft sales representative. |
 | Request new features and functionality within Attract and Onboard | Select the **?** icon and then select **Ideas**, or use the following links to view, search, vote, or add new ideas: [Attract](https://experience.dynamics.com/ideas/categories/?forum=44d6c48a-95b0-e811-a96a-000d3a1bece3&forumName=Dynamics%20365%20for%20Talent%3A%20Attract) or [Onboard](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard). | 
