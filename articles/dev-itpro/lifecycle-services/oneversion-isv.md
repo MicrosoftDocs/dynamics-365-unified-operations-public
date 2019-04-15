@@ -26,7 +26,6 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12 
 ms.dyn365.ops.version: Platform update 24 
-
 ---
 
 # Delivering ISV solutions: One Version guidelines
