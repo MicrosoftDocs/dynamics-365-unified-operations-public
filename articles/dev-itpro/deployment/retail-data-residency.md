@@ -5,7 +5,7 @@ title: Retail data residency
 description: This topic provides information about data residency considerations when deploying the Retail Cloud Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/06/2019
+ms.date: 04/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,36 +35,36 @@ ms.dyn365.ops.version: 8.0
 
 ## Choose a region
 
-When you initialize a Retail Cloud Scale Unit (RCSU), you must select a data center location to host the RCSU. To minimize network latency and improve performance, you might choose a datacenter location that is in close proximity to the retail channels that you plan to serve using the RCSU. To reference approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/). You may also reference a web based utility, such as the [Azure speed reference](https://azurespeedtest.azurewebsites.net/), and measure latency to Azure datacenters from each store location. This can help you to make the right choice of datacenter when you initialize the RCSU.
+When you initialize a Retail Cloud Scale Unit (RCSU), you must select a data center location to host the RCSU. To minimize network latency and improve performance, you might choose a datacenter location that is in close proximity to the retail channels that you plan to serve using the RCSU. To reference approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/). You may also reference a web based utility, such as the [Azure speed reference](https://azurespeedtest.azurewebsites.net/), and measure latency to Azure datacenters from each store location. This can help you to make the right choice of datacenter when you initialize the RCSU.
 
 
-What data travels between regions
+## What data travels between regions
 
 If you choose to initialize Retail Cloud Scale Unit in a data center which is different than  where your head office is deployed, your data will travel across and reside in these data centers on a periodic basis (also known as data synchronization). The system is pre-configured to transfer the following types of data. You may choose to modify this configuration, so that the system may synchronize additional or lesser data than what is pre-configured.
 
-To view the data synchronization configuration, in your head-office navigate to Retail> Headquarters setup > Retail scheduler > Scheduler jobs to view the data synchrnoization jobs and subjobs. You may click through on a sub-job to view the specific fields being synchronized. 
+To view the data synchronization configuration, in your head-office navigate to **Retail > Headquarters setup > Retail scheduler > Scheduler jobs** to view the data synchrnoization jobs and sub-jobs. You may click through on a sub-job to view the specific fields being synchronized. 
 
-Configuring specific segments of records to be synchronized to RCSUs
+## Configuring specific segments of records to be synchronized to RCSUs
 
 You may choose to configure CDX to only synchronize specific segments of records to be synchronized to specific RCSUs. 
 
-Pre-requisities:
+## Prerequisities
 
 You must first configure Channel database groups for each RCSU where you want to synchronize segmented data. All RCSUs within the same Channel database group recieve the union of all the  data needed to serve all the channels in that RCSU. You will need to create a separate database group for each RCSU channel database where you want to syncrhonize segmented data. To do this, perform the following steps:
 
-1. In head office, navigate to Retail > Retail Headquarters Setup > Retail Scheduler > Channel database group
-2. Create a new database group for each RCSU where you want to synchronize segmented data
-3. Navigate to Retail > Retail Headquarters Setup > Retail Scheduler > Channel database
+1. In head office, navigate to **Retail > Retail Headquarters Setup > Retail Scheduler > Channel database group**.
+2. Create a new database group for each RCSU where you want to synchronize segmented data.
+3. Navigate to **Retail > Retail Headquarters Setup > Retail Scheduler > Channel database**.
 4. Select the Channel database for the corresponding Retail Cloud Scale Unit.
-5. Select Edit and choose the newly created channel database group.
-6. Select Save. 
-7. Select Full Data Sync for All Jobs for the selected channel database.
+5. Select **Edit** and choose the newly created channel database group.
+6. Select **Save**. 
+7. Select **Full Data Sync for All Jobs** for the selected channel database.
 
 
-Available controls for synchronizing segments of data to different RCSUs
+## Available controls for synchronizing segments of data to different RCSUs
 
 1. Channel configuration data will only be synchronized for channels served by those specific RCSUs. As an example, only the channel configuration data for retail channels configured to be served by West Europe channel will be synchronized to that RCSU. 
 
-2. Product and pricing related data can be segmented by specific channels, using assortments. As an example, if in your business your stores in North America only sells Women's shoes and your stores in West Europe only sells Sporting goods, you can use Assortments to segment this data. When data is synchronized to RCSU, Women's shoes data will only be synchronized to the North America RCSU and likewise, only Sporting goods data will be synchronized to the West Europe RCSU.
+2. Product and pricing related data can be segmented by specific channels, using assortments. As an example, if in your business your stores in North America only sells women's shoes and your stores in West Europe only sells sporting goods, you can use Assortments to segment this data. When data is synchronized to RCSU, women's shoes data will only be synchronized to the North America RCSU and likewise, only sporting goods data will be synchronized to the West Europe RCSU.
 
-3. Customer and employee records are configured using Global Address Book, which can be configured for specific retail channels. An an example, you can configure separate address books for customers & employees for channels served by the West Europe RCSU and those for North America RCSU. And if, for example, your head-office is in Australia, customer & employee data for West Europe channels will not travel to North America and vice versa. 
+3. Customer and employee records are configured using Global Address Book, which can be configured for specific retail channels. An an example, you can configure separate address books for customers and employees for channels served by the West Europe RCSU and those for North America RCSU. And if, for example, your head-office is in Australia, customer and employee data for West Europe channels will not travel to North America and vice versa. 
