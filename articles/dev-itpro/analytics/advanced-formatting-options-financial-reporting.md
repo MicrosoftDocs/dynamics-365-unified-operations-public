@@ -46,6 +46,7 @@ The following table explains the advanced formatting functions that are availabl
 | Column restriction         | The column restriction in the row definition is useful for hiding values that are relevant only on some rows of the report. When percentage calculations are performed on a row, the column restriction prevents total columns or other columns from being printed when those numbers don't apply. |
 | Column break               | You can add column breaks in a row definition to show report information side by side. You can add multiple column breaks in a single row definition, and column headers are repeated at the top of each column after the column break. Comments for a report are shown between the column breaks. |
 | IF/THEN/ELSE statement     | You can modify calculations in a row definition or a column definition. |
+| Use single quotes ' ' for dimension values including an ampersand (&) | You can use dimension values including the ampersand special character for report design |
 
 ## Advanced cell placement
 Advanced cell placement, or *forcing*, involves the placement of specific values into specific cells. For example, forcing is often used to move the correct balance in a cash flow statement. You can use forcing for the following purposes:
@@ -302,3 +303,8 @@ An **IF/THEN/ELSE** statement enables any calculation to depend on the results f
 
 > [!NOTE]
 > You can't put the results of a calculation into any other column. The results must be in the column that contains the formula.
+
+#### Use single quotes ' ' for dimension values including an ampersand (&) in a row, column, or tree
+
+With a recent update, you can now design reports using dimension values that contain the ampersand (&). 
+Within any **Link to Financial Dimension** field, you can enter a value such as **'P&L'** including the single quotes on both sides of the dimension value to indicate you are using the literal value, including the ampersand character. 
