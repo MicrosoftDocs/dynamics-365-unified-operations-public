@@ -82,6 +82,16 @@
       }
     },
     "fileMetadata": {
+      "featureFlags": {
+        "fin-and-ops/**/*.md": [
+          "show_learn_banner"
+        ]
+      },
+      "learn_banner_products": {
+        "fin-and-ops/**/*.md": [
+          "dynamics-finance-operations"
+        ]
+      },
         "feedback_product_url": {
           "retail/**/*.md": "https://ideas.dynamics.com"
         },
