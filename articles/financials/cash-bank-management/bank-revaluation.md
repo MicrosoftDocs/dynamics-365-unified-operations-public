@@ -59,7 +59,7 @@ You must turn on the bank foreign currency revaluation feature before you can pr
 3. On the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 4. Refresh the browser to see **Foreign currency revaluation** in the **Periodic tasks** section of the area page.
 
-You must turn on the feature for every legal entity that will use foreign currency revaluation. If you are assigned to the System Admistrator role or Feature Manager role, you can eliminate this step by enabling the feature named **Enable bank revaluation without a parameter** on the **Feature management** workspace.
+You must turn on the feature for every legal entity that will use foreign currency revaluation. If you are assigned to the System Administrator role or Feature Manager role, you can eliminate this step by enabling the feature named **Enable bank revaluation without a parameter** on the **Feature management** workspace.
 
 > [!NOTE]
 > If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation. You won't be able to use the foreign currency revaluation that is used by other countries or regions.
