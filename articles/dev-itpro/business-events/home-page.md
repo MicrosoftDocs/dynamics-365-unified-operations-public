@@ -51,7 +51,7 @@ A developer must use extensions to implement new business events. For more infor
 
 ## Business event catalog
 
-The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
+The business events catalog can be accessed from *System administration > Set up > Business events*. The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
 
 The category of a business event identifies its source in Finance and Operations. Business events that originate from the workflow system are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name. 
 
@@ -66,6 +66,9 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
 The next step is to manage the endpoints.
+
+## Business events batch processor
+To process the business events, the business events batch processing job must be scheduled in a recurring schedule like any batch job in Finance & Operations. The batch job can be accessed from *System administration > Periodic tasks > Business events*.
 
 ## Managing endpoints
 
