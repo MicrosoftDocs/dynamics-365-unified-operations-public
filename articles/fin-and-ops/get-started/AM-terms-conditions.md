@@ -32,8 +32,10 @@ ms.dyn365.ops.version: 10.0.3
 # Topic Name
 
 [!includebanner]
-##MICROSOFT PREVIEW SOFTWARE LICENSE TERMS##
-MICROSOFT DYNAMICS 365 FOR FINANCE AND OPERATIONS, ASSET MAINTENANCE (PREVIEW)
+
+## MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
+
+## MICROSOFT DYNAMICS 365 FOR FINANCE AND OPERATIONS, ASSET MAINTENANCE (PREVIEW)
 
 These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
 
