@@ -64,7 +64,7 @@ If a feature hasn't been enabled, an **Enable** button appears in the details pa
 
 Some features can't be disabled after you enable them. If the feature that you are attempting to enable can't be disabled, you receive a warning. At this point, you can cancel the operation and leave the feature disabled. However, if you decide to enabled the feature, you won't be able to enable it later.
 
-After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will show up in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. 
+After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will show up in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. Features that are scheduled in the future will be enabled at midnight of the timezone represented by the system date.
 
 ## Reschedule a feature
 
@@ -72,7 +72,7 @@ If a feature has been enabled in the future, a **Reschedule** button appears in 
 
 1. Select a scheduled feature that you want to reshedule, and then, in the details pane, select **Reschedule**.
 2. A slider appears, where you can specify the date on which the feature should be enabled. 
-3. Select **Reschedule** to reschedule the feature.
+3. Select **Enable** to reschedule the feature or **Disable** to cancel the schedule.
 
 ## Disable a feature
 
@@ -86,9 +86,7 @@ After the feature is disabled, a message appears below the **Learn more** link i
 
 ## Features that must be enabled
 
-A critical feature may be delivered that must be enabled automatically when you do an update. It will be enabled automatically on the **Enable date**. If the **Enable date** is in the future, you can override the date by changing the **Enable date** to an earlier date so that it takes effect on an earlier date. You cannot move the date farther into the future than the original enable date that was shown when the feature was added.
-
-For features that must be enabled, a message will appear below the **Learn more** link in the details pane. This message will state that the feature was enabled or will be enabled automatically on the **Enable date**. It will appear every time that you select the feature in the feature list.
+A critical feature may be delivered that must be enabled automatically when you do an update. It will be enabled automatically on the **Enable date**. A message will appear below the **Learn more** link in the details pane. This message will state that the feature was enabled or will be enabled automatically on the **Enable date**. It will appear every time that you select the feature in the feature list.
 
 ## Assigning roles
 
