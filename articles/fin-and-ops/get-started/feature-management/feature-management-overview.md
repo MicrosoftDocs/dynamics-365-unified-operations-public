@@ -64,7 +64,7 @@ If a feature hasn't been enabled, an **Enable** button appears in the details pa
 
 Some features can't be disabled after you enable them. If the feature that you are attempting to enable can't be disabled, you receive a warning. At this point, you can cancel the operation and leave the feature disabled. However, if you decide to enabled the feature, you won't be able to enable it later.
 
-After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will show up in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. Features that are scheduled in the future will be enabled at midnight of the timezone represented by the system date.
+After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will show up in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. Features that are scheduled in the future will be enabled at midnight by a batch process based on the timezone represented by the system date. 
 
 ## Reschedule a feature
 
