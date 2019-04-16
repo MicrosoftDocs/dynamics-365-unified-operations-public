@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Topic name]
-description: [Topic description] 
+title: Topic name
+description: Topic description
 author: ShellyBakke
 manager: AnnBe
 ms.date: 04/16/2019
