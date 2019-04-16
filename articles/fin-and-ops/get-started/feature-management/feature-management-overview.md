@@ -99,3 +99,7 @@ The **Feature manager** role and **Feature viewer** role don't override the exis
 ## Using feature management to enable ISV features or custom features
 
 The **Feature management** process is currently unavailable for ISV features or custom features. We are adding additional functionality to enhance **Feature management** and, once those enhancements are complete, we will open up **Feature management** to all features and provide specific instructions on how to update your feature to use it.
+
+## Feature management and flighting
+
+**Feature management** allows you to control features that are shipped in each release. **Flighting** allows Microsoft teams to release features to a limited number of customers so that the features can be tested and validated without affecting all customers. **Feature management** does not control the flighting of any features.
