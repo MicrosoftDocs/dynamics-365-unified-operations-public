@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.3
 ---
 
 # MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
-[!includebanner]
+[!include [banner](../includes/banner.md)] 
 
 
 ## MICROSOFT DYNAMICS 365 FOR FINANCE AND OPERATIONS, ASSET MAINTENANCE (PREVIEW)
