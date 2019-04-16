@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: mikefalkner
@@ -10,9 +9,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-
 # optional metadata
-
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro, Application user
 # ms.devlang: 
