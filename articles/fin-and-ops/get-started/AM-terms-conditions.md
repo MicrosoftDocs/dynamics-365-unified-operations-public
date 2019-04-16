@@ -24,8 +24,8 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: smiller
-ms.search.validFrom: 2019-04-30
-ms.dyn365.ops.version: 10.0.3
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
 
 ---
 
