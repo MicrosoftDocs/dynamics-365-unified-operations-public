@@ -97,7 +97,7 @@ For example, to create Fixed asset inventory card (\#FA-6) open **Fixed asset
 (Russia) \> Common \> Fixed assets** and click **FIXED ASSETS** tab/
 **Documents**/ **Documents/ Inventory card (\#FA6)** on Action Pane:
 
-![](media/e844be8ed3004d0e94c2e6ec4711ab05.png)
+![](media/rus-FA6-inventory-card.png)
 
 Click **New** in the Inventory card (\#FA-6) page list to create the inventory
 card for the value model:
