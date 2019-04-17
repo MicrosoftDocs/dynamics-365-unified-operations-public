@@ -45,7 +45,7 @@ To view the data synchronization configuration, go to **Retail** \> **Headquarte
 
 ## Synchronize specific segments of records
 
-You may choose to configure Commerce Data Exchange (CDX) so that only specific segments of records are synchronized to specific RCSUs. 
+You can configure Commerce Data Exchange (CDX) so that only specific segments of records are synchronized to specific RCSUs. 
 
 ### Prerequisites
 
