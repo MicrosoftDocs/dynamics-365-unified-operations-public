@@ -31,9 +31,12 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 
 The process auditing feature allows you to track when candidates, job openings, or job applications change for reporting or compliance reasons.
 
-You can view the tracked data in PowerBI by using the [OData connector] (https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata)
+You can view the tracked data in PowerBI by using the
+[OData connector](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata)
 
-- From the [PowerApps] (https://web.powerapps.com ) site with the appropriate environment selected, select Settings and choose Advanced Customizations. Then select Developer resources. 
+- From the 
+[PowerApps](https://web.powerapps.com) 
+site with the appropriate environment selected, select Settings and choose Advanced Customizations. Then select Developer resources. 
 - In the Developer Resources page, look for the Instance Web API value and copy it. It should look something like https://yourorgname.api.crm.dynamics.com/api/data/v9.1/
 
 You can then query the data from one of the following entities:
@@ -89,9 +92,12 @@ JSON object listing changed fields, may not store values for all fields.
 -	For "Foo added" change types, it will list the fields on the child record
 
 #### Example:
-{ 
-"msdyn_applyurl": { "newValue": "" }, 
-"msdyn_description": { "valueOmitted": true } 
+{
+
+  "msdyn_applyurl": { "newValue": "" },
+  
+  "msdyn_description": { "valueOmitted": true } 
+  
 }
 
 ### Other fields
