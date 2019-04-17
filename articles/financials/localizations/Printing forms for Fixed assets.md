@@ -129,7 +129,7 @@ Common \> Fixed assets**) and click **FIXED ASSETS** tab/ **Documents**/
 A user may print existing unified printing forms from different places:
 
 -   From the place where unified printing form has been created earlier (see
-    [Unified printing form creation](unified-printing-form-creation).
+    [Unified printing form creation](#unified-printing-form-creation).
 
 -   From a fixed asset record.
 
