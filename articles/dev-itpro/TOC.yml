@@ -871,6 +871,8 @@
   items:
   - name: Financial dimension framework
     items:
+    - name: Default financial dimensions
+      href: financial/dimension-defaulting.md
     - name: Support for different dimension patterns
       href: financial/dimensions.md
     - name: Add dimensions to Excel templates
