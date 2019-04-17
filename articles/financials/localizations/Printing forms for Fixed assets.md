@@ -97,12 +97,14 @@ For example, to create Fixed asset inventory card (\#FA-6) open **Fixed asset
 (Russia) \> Common \> Fixed assets** and click **FIXED ASSETS** tab/
 **Documents**/ **Documents/ Inventory card (\#FA6)** on Action Pane:
 
-![](media/rus-FA6-inventory-card.png)
+
+  ![Selection of FA inventory card](media/RUS-%20Selection%20of%20FA6-%20inventory%20card.png) 
 
 Click **New** in the Inventory card (\#FA-6) page list to create the inventory
 card for the value model:
 
-![](media/e1a2159e85067a450753fab6b7d84af2.png)
+ ![FA inventory card](media/RUS-FA6%20-%20inventory%20card.png)
+
 
 You may print unified form from this page list after creating the record.
 
@@ -127,7 +129,7 @@ Common \> Fixed assets**) and click **FIXED ASSETS** tab/ **Documents**/
 A user may print existing unified printing forms from different places:
 
 -   From the place where unified printing form has been created earlier (see
-    Unified printing form creation).
+    [Unified printing form creation](unified-printing-form-creation).
 
 -   From a fixed asset record.
 
@@ -150,4 +152,4 @@ asset, then this document will be output by default.
 To print created documents from inquiries, open **Fixed assets (Russia) \>
 Inquiries \> Documents** and highlight needed document than click **Print**.
 
-![](media/95f532ee449b256a8f293c3c43f4c2ee.png)
+![Print unified forms from Inquiries](media/RUS-Print%20unified%20forms.png)
