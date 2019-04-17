@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 
-To manage your company's fixed assets, you can use the **Fixed assets** page to store all information (both financial and non-financial) on assets. The following examples show the types of financial  financial information that is related to fixed assets:
+To manage your company's fixed assets, you can use the **Fixed assets** page to store all information (both financial and non-financial) on assets. The following examples show the types of financial information that is related to fixed assets:
 
 -   Asset acquisition cost
 -   Cost adjustment
@@ -41,14 +41,13 @@ To manage your company's fixed assets, you can use the **Fixed assets** page to 
 -   Asset budget
 -   Tax information
 
-The following examples show the types of non-financial information that are related to fixed assets:
+The following examples show the types of non-financial information that is related to fixed assets:
 
 -   Technical information
 -   Location
 -   Bar codes and inventory numbers
 -   Insurance
 -   Relationships between different assets
--   Etc.
 
 ## Register fixed assets
 
@@ -56,12 +55,12 @@ Before you create transactions for any fixed or intangible asset, you must first
 
 1. To register a fixed asset, select **Fixed Assets (Russia)** \> **Common** \> **Fixed Assets**. Select **New** to create a new fixed asset.
 
-> [!NOTE]
-> You can create a new fixed asset using the copy function (**FIXED ASSET** \> **Copy FA** button). The system copies the selected fixed asset with all its parameters, but with a different inventory number.
+    > [!NOTE]
+    > You can create a new fixed asset using the copy function (**FIXED ASSET** \> **Copy FA** button). The system copies the selected fixed asset with all its parameters, but with a different inventory number.
 
 ![FA page General tab](media/RUS_FA_1%20General%20tab.JPG)
 
-2. Fill in the following fields on **General** FastTab:
+2. Fill in the following fields on the **General** FastTab:
 
 - **FA group** - Select the fixed asset group the fixed asset should be related to.
 
@@ -75,26 +74,25 @@ Before you create transactions for any fixed or intangible asset, you must first
 
 - **Notes** - Enter any additional information about this fixed asset.
 
-- **Type** - Select a fixed asset type. Depending on the value in this field, the different fields are activated on the **Technical Information** and **Tax Reporting** FastTabs. Here are some examples fixed assest types. 
+- **Type** - Select a fixed asset type. Depending on the value in this field, the different fields are activated on the **Technical Information** and **Tax Reporting** FastTabs. The following are examples of fixed asset types. 
 
-    - If you select **Vehicle** type, the **Government registration** field group appears on **Technical Information** FastTab.
+    - **Vehicle** - Select this for the **Government registration** field group to appear on the **Technical Information** FastTab.
 
-    - If you select **Realty** type, the **Tax base** field appears on **Tax Reporting** FastTab.
+    - **Realty** - Select this for the **Tax base** field to appear on the **Tax Reporting** FastTab.
 
-    - If you select **Ground area** type, then the **Start date of building** field appears on **Technical Information** FastTab.
+    - **Ground area** - Select this for the **Start date of building** field to appear on the **Technical Information** FastTab.
 
     > [!NOTE]
-    > The following types cannot be selected on the **Fixed asset** page: NVFA, Working clothes, Special rigging. There are special pages for these types. (see [Not valuable fixed assets (NVFAs) accounting for Russia](rus-not-valuable-assets.md),
->   [Working clothes/Special riggings accounting for Russia](rus-working-clothes-instruments-accounting.md)).
+    > The following types cannot be selected on the **Fixed asset** page: NVFA, Working clothes, Special rigging. There are special pages for these types. For more information, see [Not valuable fixed assets (NVFAs) accounting for Russia](rus-not-valuable-assets.md) and [Working clothes/Special riggings accounting for Russia](rus-working-clothes-instruments-accounting.md)).
 
-- **Insurance** field group – Fill in the fields on insurance, if needed.
+- **Insurance** field group – Fill in the fields for insurance, if needed.
 
 - **Flag of ownership** - Select the appropriate value, by default the value is equal to **Ownership**.
 
 - **Bar code** - You can enter the bar code manually, or the bar code can be generated automatically (the same as the asset inventory number). To generate a bar code automatically, select **Bar code equals inventory number** in the **Fixed assets** parameters (**Fixed Assets \> Fixed Assets** \> **Parameters**).
 
-> [!NOTE]
-> The **Location** and **Worker ID** fields are filled in automatically when you create a record in the **Transfer FA** page list. (**Fixed asset (Russia)** \> **Common** \> **Fixed assets**, click **FIXED ASSET** \> **HISTORY** \> **Transfer**).
+    > [!NOTE]
+    > The **Location** and **Worker ID** fields are filled in automatically when you create a record in the **Transfer FA** page list. (**Fixed asset (Russia)** \> **Common** \> **Fixed assets**, click **FIXED ASSET** \> **HISTORY** \> **Transfer**).
 
 - **Output/mileage** - Enter the size of assumed production/travel of the fixed asset if **Product output/mileage** depreciation profile is selected for FA in a **Value model**. In this case, you  should input records on the **Product Output/MileageE** page list.
 
@@ -112,10 +110,10 @@ Follow these steps to update or create value models for the fixed asset.
 
 1. Select the **Value Models** button.
 
-> [!NOTE]
-> If value models are set up for the fixed asset group, which the fixed asset is assigned to (**Fixed asset (Russia) \> Setup \> FA groups**), then the system creates the value models automatically and you can update field values.
+    > [!NOTE]
+    > If value models are set up for the fixed asset group, which the fixed asset is assigned to (**Fixed asset (Russia) \> Setup \> FA groups**), then the system creates the value models automatically and you can update field values.
 
-2. You need to create a value model for each asset, and the settings are used to register a transaction. Select **New** to create a new line. Fill in the following fields on **General** FastTab.
+2. You need to create a value model for each asset, and the settings are used to register a transaction. Select **New** to create a new line. Fill in the following fields on the **General** FastTab.
 
 ![FA value model](media/RUS_FA_3%20value%20models.JPG)
 
@@ -166,7 +164,7 @@ Follow these steps to view the fixed asset transactions.
 
 ### View the balance of an asset
 
-The value of an asset on a specific date reflects the results of all transactions-for the asset. Follow these steps to view the balance of an asset.
+The value of an asset on a specific date reflects the results of all transactions for the asset. Follow these steps to view the balance of an asset.
 
 1. Select **Fixed Assets (Russia)\> Common \> Fixed Assets \> Value models**.
 
