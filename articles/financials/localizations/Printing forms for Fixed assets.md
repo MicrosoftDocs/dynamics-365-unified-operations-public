@@ -25,9 +25,7 @@ ms.search.region: Russia
 ms.author: v-oloski
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10.0
-
 ---
-
 # Unified printing forms for Fixed assets (Russia)
 
 [!include [banner](../includes/banner.md)]
