@@ -837,10 +837,8 @@
 - name: Financials development
   href: financial/financial-dev-home-page.md
   items:
-  - name: Dimension framework
+  - name: Financial dimension framework
     items:
-    - name: Default financial dimensions
-      href: financial/dimension-defaulting.md
     - name: Support for different dimension patterns
       href: financial/dimensions.md
     - name: Add dimensions to Excel templates
@@ -863,7 +861,7 @@
       href: financial/dimensionable-entities.md
     - name: Add lookup values for financial dimensions to Excel templates
       href: financial/add-dimensions-excel-templates.md
-  - name: Segmented entry controls
+  - name: Segmented entry control
     items: 
     - name: Migrate Segmented Entry controls
       href: financial/segmented-entry-control-conversion.md
@@ -875,7 +873,7 @@
       href: financial/segmented-entry-control-migration-guidance.md
     - name: Parm methods for Segmented Entry controls
       href: financial/segmented-entry-control-parm-method-specification.md
-  - name: Exchange rate providers
+  - name: Currency Exchange rate providers
     items: 
     - name: Create exchange rate providers
       href: financial/create-exchange-rate-providers.md
