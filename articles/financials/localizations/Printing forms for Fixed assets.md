@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Unified printing forms for Fixed assets (Russia)
