@@ -87,8 +87,8 @@ The sources and path for unified printing forms are listed below (**Fixed asset
 | \#FA-6        | Fixed asset inventory card                                  | Highlight Fixed asset record, **Documents**/ **Documents**   |
 | \#FA-14       | Equipment acceptance statement                              | **Value models**/ **Transactions/ Documents**/ **Documents** |
 
-Note. It is possible to print Fixed asset inventory card (#FA-6) only when a fixed asset are put into operation (there is the transaction with
-the **Putting into operation** transaction type).
+> [!NOTE]  
+> It is possible to print Fixed asset inventory card (#FA-6) only when a fixed asset are put into operation (there is the transaction with the **Putting into operation** transaction type).
 
 The system saves information of all created printing forms on special list page,
 which you may open from a fixed asset transaction, transfer history or from a
@@ -119,7 +119,8 @@ corresponded to the document type, has not been posted yet. In this case the
 document number can be set manually but it is not controlled and saved in the
 system and data in pro forms are filled in partially.
 
-Note. It is not possible to print pro form of Fixed asset inventory card (#FA-6)
+> [!NOTE]
+> It is not possible to print pro form of Fixed asset inventory card (#FA-6)
 
 To print pro forma highlight a fixed asset record (**Fixed asset (Russia) \>
 Common \> Fixed assets**) and click **FIXED ASSETS** tab/ **Documents**/
