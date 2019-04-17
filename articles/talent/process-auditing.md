@@ -36,8 +36,8 @@ You can view the tracked data in PowerBI by using the
 
 - From the 
 [PowerApps](https://web.powerapps.com) 
-site with the appropriate environment selected, select Settings and choose Advanced Customizations. Then select Developer resources. 
-- In the Developer Resources page, look for the Instance Web API value and copy it. It should look something like https://yourorgname.api.crm.dynamics.com/api/data/v9.1/
+site with the appropriate environment selected, select **Settings** and choose **Advanced Customizations**. Then select **Developer resources**. 
+- In the **Developer Resources** page, look for the **Instance Web API value** and copy it. It should look something like https://yourorgname.api.crm.dynamics.com/api/data/v9.1/
 
 You can then query the data from one of the following entities:
 - Job opening history (msdyn_jobopeninghistories)
