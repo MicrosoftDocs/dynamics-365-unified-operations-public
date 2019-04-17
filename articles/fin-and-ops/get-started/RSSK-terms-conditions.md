@@ -32,4 +32,7 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-Content goes here.
+MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
+
+MICROSOFT DYNAMICS  PROJECT “RUSHMORE” STORE STARTER KIT (PRIVATE PREVIEW)
+
