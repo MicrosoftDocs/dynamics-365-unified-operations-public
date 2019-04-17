@@ -5,7 +5,7 @@ title: Retail data residency
 description: This topic provides information about data residency considerations when deploying the Retail Cloud Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/15/2019
+ms.date: 04/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
