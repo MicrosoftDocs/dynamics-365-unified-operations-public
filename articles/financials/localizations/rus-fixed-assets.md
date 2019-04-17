@@ -63,7 +63,7 @@ Select **Fixed Assets (Russia)** \> **Common** \> **Fixed Assets** and create a 
 
 Fill in the following fields on **General** FastTab:
 
-![](media/351e55d01d929c092137555b7769536a.jpg)
+![FA page General tab](media/RUS_FA_1%20General%20tab.JPG)
 
 -   **FA group** - select fixed asset group the fixed asset should be related to.
 
@@ -100,7 +100,7 @@ Fill in the following fields on **General** FastTab:
 
 -   **Output/mileage** - enter the size of assumed production/travel of the fixed asset if **Product output/mileage** depreciation profile is selected for FA in a **Value model**. In this case a user should input records on the **PRODUCT OUTPUT/ MILEAGE** page list:
 
-![](media/830a46de2c35c35c2ff796526cef1046.jpg)
+![Output mileage page](media/RUS_FA_2%20Output_Mileage%20page.JPG)
 
 If a fixed asset is included in the composition of another fixed asset click the **Structure** FastTab. and select the fixed asset code in the **Main fixed asset** field,
 
@@ -117,7 +117,7 @@ Click **Value Models** button to update or create value models for the fixed ass
 
 >   You must create a value model for each asset, and the settings are used to register a transaction. Click **New** to create a new line. Fill in the following fields on **General** FastTab.
 
-![](media/80fe9edd43837f4d1df3077341b6fe2f.jpg)
+![FA value model](media/RUS_FA_3%20value%20models.JPG)
 
 -   **Value model** - select the model code for the asset.
 
@@ -180,4 +180,4 @@ In the **Transaction date** field, enter the date for the balance sheet. The def
 
 The amounts on the fixed asset **Balance by FA** page are displayed in the currency of the fixed asset value model. If the value model currency is different from the company's default currency, the default currency is also displayed in the form.
 
-![](media/7914556f28e4f1d043d7aeb6bb7401ce.jpg)
+![FA value model balanc](media/RUS_FA_4%20model%20balance.JPG)
