@@ -35,3 +35,12 @@ If you changed the interest amounts and want to reset them to the calculated int
   ○ In the Posting definition field, select the posting definition to use for the Advanced ledger entry.
   ○ Click OK. A message displays the number for the Advanced ledger entry that is automatically created.
 
+Calculated amounts
+The interest distribution allocation process includes some calculated amounts.
+| Amount | Calculation  |
+|---|---|
+|  Average daily balance | Daily balances for each day in the date range are totaled and divided by the number of days in the range for each cash account and grant combination. The combinations are defined in the Interest distribution rules form.  |
+|  Total daily average |  Sum of all average daily balances, except negative amounts for cash accounts that do not allow negative interest and cash accounts that do not participate in interest distribution. |
+|  Percent of total |  Average daily balance divided by Total daily average for each cash account and grant combination. |
+|  Allocated interest | Total interest (from the Interest distribution parameters form) multiplied by the Percent of total for the cash account. Interest is not distributed to cash accounts with negative amounts that do not allow negative interest and cash accounts that do not participate in interest distribution. |
+
