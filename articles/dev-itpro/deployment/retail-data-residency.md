@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 8.0
 
 ## Choose a region
 
-When you initialize a Retail Cloud Scale Unit (RCSU), you need to select a data center location to host. To minimize network latency and improve performance, you should choose a datacenter location that is in proximity to the retail channels that you plan to serve using the RCSU. To reference approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/). You can also reference a web based utility, such as the [Azure speed reference](https://azurespeedtest.azurewebsites.net/), and measure latency to Azure datacenters from each store location. This can help you to make the right choice of datacenter when you initialize the RCSU.
+When you initialize a Retail Cloud Scale Unit (RCSU), you need to select a data center location to host. To minimize network latency and improve performance, you should choose a datacenter location that is in proximity to the retail channels that you plan to serve using the RCSU. To reference approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/). You can also reference a web-based utility, such as [Azure speed reference](https://azurespeedtest.azurewebsites.net/), and measure latency to Azure datacenters from each store location. This can help you to make the right choice of datacenter when you initialize the RCSU.
 
 ## Data between regions
 
