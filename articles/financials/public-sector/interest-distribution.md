@@ -34,7 +34,7 @@ Before distributing the interest, you must set up your participating cash accoun
   - In the **Posting definition** field, select the posting definition to use for the Advanced ledger entry.
   - Click **OK**. A message displays the number for the Advanced ledger entry that is automatically created.
 
-# Calculated amounts
+## Calculated amounts
 The interest distribution allocation process includes some calculated amounts.
 
 |Amount                 | Calculation |
