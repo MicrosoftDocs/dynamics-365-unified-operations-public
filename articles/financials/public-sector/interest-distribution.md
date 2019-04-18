@@ -1,48 +1,47 @@
-Setting up interest distribution for cash accounts
+# Setting up interest distribution for cash accounts
 
-Your agency can allocate interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts or generate the interest amounts for review without posting.
+Your agency can allocate interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an Advanced ledger entry for the interest amounts or generate the interest amounts for review without posting.
 
 Before distributing the interest, you must set up your participating cash accounts in the Interest distribution rules form. Each cash account and grant combination can be used to calculate interest for a different interest account.
 
-Add a cash account for interest distribution
+### Add a cash account for interest distribution
 
-1. Go to General ledger > Setup > Posting > Interest distribution rules.
-2. Click New to add a row.
-3. In the Cash account field, enter the cash account that comprises part of the total pooled cash.
-4. Optional: Enter the grant for grant-related transaction amounts to include in cash balance calculations for the associated cash account in the Grant field. You can leave this field cleared if all grants for the cash account post interest to the same account. However, if you enter an interest account for a specific grant, you must enter an interest account for each grant for the cash account.
-5. Select the Participate check box to include the cash accounts in interest distribution. If this check box is cleared, you cannot edit any other fields in the row. Cash accounts that do not participate are included in the inquiry form so you can review the average daily balance, but you cannot distribute interest to them.
+1. Go to **General ledger > Setup > Posting > Interest distribution rules**.
+2. Click **New** to add a row.
+3. In the **Cash account** field, enter the cash account that comprises part of the total pooled cash.
+4. Optional: Enter the grant for grant-related transaction amounts to include in cash balance calculations for the associated cash account in the **Grant** field. You can leave this field cleared if all grants for the cash account post interest to the same account. However, if you enter an interest account for a specific grant, you must enter an interest account for each grant for the cash account.
+5. Select the **Participate** check box to include the cash accounts in interest distribution. If this check box is cleared, you cannot edit any other fields in the row. Cash accounts that do not participate are included in the inquiry form so you can review the average daily balance, but you cannot distribute interest to them.
 6. Enter either a specific interest account or a project to determine the GL account to which interest will post for the associated cash account. 
-  - Enter a specific account in the Interest account field.
-  - Enter a project to use as the basis for interest posting in the Project ID field. This account is used in conjunction with other account factors to determine the complete account to post to.
-7. Select the Negative interest check box to calculate a negative interest amount when the cash account has a negative balance. If this check box is cleared, the cash account reports zero interest instead of a negative amount.
-8. Select the Rounding field for the cash account whose interest account should receive any penny difference amounts when interest distribution is calculated. Only one row may be marked for rounding.
+  - Enter a specific account in the **Interest account** field.
+  - Enter a project to use as the basis for interest posting in the **Project ID** field. This account is used in conjunction with other account factors to determine the complete account to post to.
+7. Select the **Negative interest** check box to calculate a negative interest amount when the cash account has a negative balance. If this check box is cleared, the cash account reports zero interest instead of a negative amount.
+8. Select the **Rounding** field for the cash account whose interest account should receive any penny difference amounts when interest distribution is calculated. Only one row may be marked for rounding.
 
-Distributing interest
-1. Go to General ledger > Periodic > Allocation > Interest distribution.
-2. Click Parameters. 
-  - In the Total interest field, enter the total amount of interest to disburse.
-  - In the From date and To date fields, select the dates of daily balances to calculate an average for based on transactions during the date range specified.
-  - Click Distribute.
-3. Review the calculated interest amounts distributed to the accounts. You can update the amounts in the Allocated interest field. If you make changes to the interest amounts, the Total allocated field must match the Total interest field to continue.  The calculated interest amount might result in a total allocated amount that differs, usually by one cent, from the total interest. The difference is applied to the interest account for the cash account marked as the rounding account. 
+### Distributing interest
+1. Go to **General ledger > Periodic > Allocation > Interest distribution**.
+2. Click **Parameters**. 
+  - In the **Total interest** field, enter the total amount of interest to disburse.
+  - In the **From date** and **To date** fields, select the dates of daily balances to calculate an average for based on transactions during the date range specified.
+  - Click **Distribute**.
+3. Review the calculated interest amounts distributed to the accounts. You can update the amounts in the **Allocated interest** field. If you make changes to the interest amounts, the **Total allocated** field must match the **Total interest** field to continue.  The calculated interest amount might result in a total allocated amount that differs, usually by one cent, from the total interest. The difference is applied to the interest account for the cash account marked as the rounding account. 
 
-
-Note
-If you changed the interest amounts and want to reset them to the calculated interest amounts, click Parameters, and then click Distribute to generate the interest using the original data.
+>[!NOTE]
+>If you changed the interest amounts and want to reset them to the calculated interest amounts, click **Parameters**, and then click **Distribute** to generate the interest using the original data.
 
 4. To post the distributed interest, click Post interest. 
-  - In the Accounting date field, enter the accounting date for the Advanced ledger entry.
-  - In the Project category field, select the project category to use for the Advanced ledger entry items and to determine the main account the ALE posts to.
-  - In the Posting definition field, select the posting definition to use for the Advanced ledger entry.
-  - Click OK. A message displays the number for the Advanced ledger entry that is automatically created.
+  - In the **Accounting date** field, enter the accounting date for the Advanced ledger entry.
+  - In the **Project category** field, select the project category to use for the Advanced ledger entry items and to determine the main account the Advanced ledger entry posts to.
+  - In the **Posting definition** field, select the posting definition to use for the Advanced ledger entry.
+  - Click **OK**. A message displays the number for the Advanced ledger entry that is automatically created.
 
-Calculated amounts
+# Calculated amounts
 The interest distribution allocation process includes some calculated amounts.
 
-|Amount| Calculation |
-|--|--|
+|Amount                 | Calculation |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Average daily balance | Daily balances for each day in the date range are totaled and divided by the number of days in the range for each cash account and grant combination. The combinations are defined in the Interest distribution rules form.|
 | Total daily average   | Sum of all average daily balances, except negative amounts for cash accounts that do not allow negative interest and cash accounts that do not participate in interest distribution.|
 | Percent of total      | Average daily balance divided by Total daily average for each cash account and grant combination. |
-| Allocated interest    | Total interest (from the Interest distribution parameters form) multiplied by the Percent of total for the cash account. Interest is not distributed to cash accounts with negative amounts that do not allow negative interest and cashaccounts that do not participate in interest distribution. |
+| Allocated interest    | Total interest (from the Interest distribution parameters form) multiplied by the Percent of total for the cash account. Interest is not distributed to cash accounts with negative amounts that do not allow negative interest and cash accounts that do not participate in interest distribution. |
 
 
