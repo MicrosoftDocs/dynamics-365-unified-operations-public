@@ -83,7 +83,7 @@ Before you create transactions for any fixed or intangible asset, you must first
     - **Ground area** - Select this for the **Start date of building** field to appear on the **Technical Information** FastTab.
 
     > [!NOTE]
-    > The following types cannot be selected on the **Fixed asset** page: NVFA, Working clothes, Special rigging. There are special pages for these types. For more information, see [Not valuable fixed assets (NVFAs) accounting for Russia](rus-not-valuable-assets.md) and [Working clothes/Special riggings accounting for Russia](rus-working-clothes-instruments-accounting.md)).
+    > The following types cannot be selected on the **Fixed asset** page: NVFA, Working clothes, Special rigging. There are special pages for these types. For more information, see [Not valuable fixed assets (NVFAs) accounting for Russia](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-not-valuable-assets) and [Working clothes/Special riggings accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-working-clothes-instruments-accounting).
 
 - **Insurance** field group – Fill in the fields for insurance, if needed.
 
@@ -94,7 +94,7 @@ Before you create transactions for any fixed or intangible asset, you must first
     > [!NOTE]
     > The **Location** and **Worker ID** fields are filled in automatically when you create a record in the **Transfer FA** page list. (**Fixed asset (Russia)** \> **Common** \> **Fixed assets**, click **FIXED ASSET** \> **HISTORY** \> **Transfer**).
 
-- **Output/mileage** - Enter the size of assumed production/travel of the fixed asset if **Product output/mileage** depreciation profile is selected for FA in a **Value model**. In this case, you  should input records on the **Product Output/MileageE** page list.
+- **Output/mileage** - Enter the size of assumed production/travel of the fixed asset if **Product output/mileage** depreciation profile is selected for FA in a **Value model**. In this case, you  should input records on the **Product Output/Mileage** page list.
 
 ![Output mileage page](media/RUS_FA_2%20Output_Mileage%20page.JPG)
 
@@ -147,7 +147,7 @@ Follow these steps to update or create value models for the fixed asset.
 
 ## Inquiries on the Fixed asset page
 
-### View of asset transactions
+### View asset transactions
 
 Follow these steps to view the fixed asset transactions.
 
@@ -176,4 +176,4 @@ The value of an asset on a specific date reflects the results of all transaction
 
 5. The amounts on the fixed asset **Balance by FA** page are displayed in the currency of the fixed asset value model. If the value model currency is different from the company's default currency, the default currency is also displayed.
 
-![FA value model balanc](media/RUS_FA_4%20model%20balance.JPG)
+![FA value model balance](media/RUS_FA_4%20model%20balance.JPG)
