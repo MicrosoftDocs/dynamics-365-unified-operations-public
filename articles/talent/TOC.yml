@@ -224,6 +224,8 @@
     items:
     - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
       href: extensibility-examples.md
+    - name: Track changes in recruiter data
+      href: process-auditing.md
     - name: Extensibility in Attract
       href: extensibility-attract.md
     - name: Custom fields in Core HR
