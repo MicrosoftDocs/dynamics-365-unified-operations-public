@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
-# ROBOTS: NOINDEX, NOFOLLOW 
+ROBOTS: NOINDEX, NOFOLLOW 
 ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
