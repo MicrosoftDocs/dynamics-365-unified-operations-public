@@ -178,12 +178,13 @@ Workflow email configuration is a collection of related settings that work in co
 
 2. Verify that the email batch process is running:
 
-    1. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch**.
+    1. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email distributor batch**.
     2. Enable the **Batch processing** option.
     3. Optionally, adjust the recurrence of the email process:
 
         1. Select **No end date** to adjust all recurrences of the email batch process.
         2. Adjust the count.
+        3. Adjust to run every minute if needed.
 
 3. Verify workflow notification system email templates:
 
