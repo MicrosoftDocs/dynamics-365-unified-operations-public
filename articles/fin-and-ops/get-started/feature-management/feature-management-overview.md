@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  FeatureManagementWorkspace
+ms.search.form:  FeatureManagementWorkspace
 audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
