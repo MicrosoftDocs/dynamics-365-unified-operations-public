@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (April 16, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 4/16/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (April 16, 2019)"
+# What's new or changed in Dynamics 365 for Talent (April 16, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -38,19 +38,19 @@ This topic describes features that are either new or changed in Dynamics 365 for
 ## Changes in Attract
 
 ### Process auditing
-You can now track the changes made to candidates, job openings and job applications. For more information, please see [Using process auditing](process-auditing.md).
+You can now track the changes made to candidates, job openings, and job applications. For more information, see [Track changes in recruiting data](process-auditing.md).
 
 ## Changes in Onboard
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2239.
+Changes described in this section apply to build number 8.1.2239. Numbers in parentheses refer to support numbers in Lifecycle Services (LCS).
 
 ### Compensation region, Compensation level, Benefit Option and Skill Type CDS entities updated to include customer field support
 With this release, these CDS entities have been updated to include the ability to include custom field added through Talent (Core HR).
 
 ### New CDS entity support for: Compensation vesting rules, Compensation variable plan, Variable compensation
-With this release, Compensation vesting rules, Compensation variable plan and Variable compensation entities have been added to CDS. These entities also support custom fields added through Talent (Core HR).
+With this release, Compensation vesting rules, Compensation variable plan, and Variable compensation entities have been added to CDS. These entities also support custom fields added through Talent (Core HR).
 
 ### PowerBI refresh issues (314342)
 This change corrects an issue with PowerBI reports refreshing correctly. 
@@ -59,10 +59,10 @@ This change corrects an issue with PowerBI reports refreshing correctly.
 This change enables users with the employee role to select and update transition tasks from the Talent to-do list. 
 
 ### Performance Feedback email message updated (309615)
-With this change a confirmation message will be displayed when feedback is successfully submitted.
+With this change, a confirmation message displays when feedback is successfully submitted.
 
 ### Missing tables to in word-template (308048)
-With this change, when creating a word template with employee and skill information, only the skills for the selected employee will appear in the word document.  
+With this change, when creating a word template with employee and skill information, only the skills for the selected employee appear in the word document.  
 
 ### When applying an offboarding checklist an error is displayed. (299877)
 This change corrects an issue when applying an offboarding checklist directly from the worker form. 
