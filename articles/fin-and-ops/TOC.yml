@@ -2308,6 +2308,10 @@
             href: ../financials/localizations/rus-depreciation-calculation.md
           - name: Transfer fixed assets
             href: ../financials/localizations/rus-fixed-asset-transfer.md
+          - name: Working clothes/special rigging accounting (Russia)
+            href: ../financials/localizations/rus-working-clothes-instruments-accounting.md
+          - name: Not valuable fixed assets (NVFAs) (Russia)
+            href: ../financials/localizations/rus-not-valuable-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Invoices for payment
