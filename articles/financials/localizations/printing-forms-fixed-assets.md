@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0
 [!include [banner](../includes/banner.md)]
 
 
-The following unified printing forms for fixed assets are supported in Dynamics 365 for Finance and Operations:
+The following unified printing forms for fixed assets are supported in Dynamics 365 for Finance and Operations.
 
 | **Form code** | **Form name**                                               |
 |---------------|-------------------------------------------------------------|
@@ -50,7 +50,7 @@ The following unified printing forms for fixed assets are supported in Dynamics 
 
 ## Set up number sequences for numerating fixed asset forms
 
-To have automatic numbering on printing forms, you muar set up number sequences in the **Fixed asset parameters** page (**Fixed asset (Russia)** \> **Setup** \> **Parameters**, **Document** tab, **Document types** FastTab). You should set up the number sequences for all printing forms that you are going to print.
+To have automatic numbering on printing forms, you need to set up number sequences on the **Fixed asset parameters** page (**Fixed asset (Russia)** \> **Setup** \> **Parameters**, **Document** tab, **Document types** FastTab). You should set up the number sequences for all printing forms that you are going to print.
 
 ## Create unified printing forms
 
@@ -60,7 +60,7 @@ Unified printing forms can be created from:
 - Fixed asset record – only Fixed asset inventory card (#FA-6)
 - Transfer history
 
-The following table provides the sources and path for unified printing forms which are located under **Fixed asset (Russia) \> Common \> Fixed assets**.
+The following table provides the sources and path for unified printing forms that are located under **Fixed asset (Russia) \> Common \> Fixed assets**.
 
 | **Form code** | **Form name**                                               | **Source**                                                   |
 |---------------|-------------------------------------------------------------|--------------------------------------------------------------|
@@ -78,14 +78,14 @@ The following table provides the sources and path for unified printing forms whi
 | \#FA-14       | Equipment acceptance statement                              | **Value models**/ **Transactions/ Documents**/ **Documents** |
 
 > [!NOTE]  
-> It is possible to print Fixed asset inventory card (#FA-6) only when a fixed asset are put into operation with the transaction type, **Putting into operation**.
+> It is possible to print Fixed asset inventory card (#FA-6) only when fixed assets are put into operation with the transaction type, **Putting into operation**.
 
-The system saves the information of all created printing forms on a special list page. This page can be opened from a fixed asset transaction, transfer history, or from a fixed asset record (\#FA-6 only).
+The system saves the information of all printing forms on a special list page. This page can be opened from a fixed asset transaction, transfer history, or from a fixed asset record (\#FA-6 only).
 
 For example, to create a Fixed asset inventory card (\#FA-6):
 
-1. Navigate to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
-2. Select the **FIXED ASSETS** tab, and then on the Action Pane, select **Documents** \> **Documents** \> **Inventory card (\#FA6)**.
+1. Go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
+2. Select the **Fixed assets** tab, and then on the Action Pane, select **Documents** \> **Documents** \> **Inventory card (\#FA6)**.
 
   ![Selection of FA inventory card](media/RUS-%20Selection%20of%20FA6-%20inventory%20card.png) 
 
@@ -94,7 +94,7 @@ For example, to create a Fixed asset inventory card (\#FA-6):
  ![FA inventory card](media/RUS-FA6%20-%20inventory%20card.png)
 
 
-After the record is created, you may print the unified form from this page list.
+After the record is created, you can print the unified form from this page list.
 
 > [!NOTE]
 > You can use this procedure to create and print other unified forms.
@@ -106,8 +106,8 @@ All pro forms can be printed from a fixed asset record, when the transaction tha
 > [!NOTE]
 > It is not possible to print pro form of Fixed asset inventory card (#FA-6).
 
-1. To print pro forms, navigate to **Fixed asset (Russia)** \> **Common** \> **Fixed assets** and select a fixed asset record.
-2. On the **FIXED ASSETS** tab, select **Documents** \> **Documents** and then select the document to print.
+1. To print pro forms, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets** and select a fixed asset record.
+2. On the **Fixed assets** tab, select **Documents** \> **Documents** and then select the document to print.
 
 ## Print unified forms 
 
@@ -118,14 +118,16 @@ You can print existing unified printing forms from different places, including:
 - From the Inquiries page.
 
 ### Print unified forms from a fixed asset record
+To print existing unified printing forms from a fixed asset record, follow these steps:
 
-1. To print existing unified printing forms from a fixed asset record, select the fixed asset record and then on the Action Pane, select **Documents** \> **Documents**. 
-2. Select the unified printing form. If you are printing more than one document, the page list for corresponded document type is displayed. 3. Highlight the record to print, and then select **Print**.
+1. Select the fixed asset record and then on the Action Pane, select **Documents** \> **Documents**. 
+2. Select the unified printing form. If you are printing more than one document, the page list for corresponded document type is displayed. 
+3. Highlight the record to print, and then select **Print**.
 
 If there is only one unified printing form document for the selected fixed asset, then this document will be output by default.
 
 ### Print unified forms from Inquiries
 
-To print documents that are created from inquiries, navigate to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**. Highlight the document to print and then select **Print**.
+To print documents that are created from inquiries, go to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**. Highlight the document to print and then select **Print**.
 
 ![Print unified forms from Inquiries](media/RUS-Print%20unified%20forms.png)
