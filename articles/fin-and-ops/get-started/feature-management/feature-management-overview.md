@@ -9,8 +9,10 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+
+# ms.search.form:  FeatureManagementWorkspace
 audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
