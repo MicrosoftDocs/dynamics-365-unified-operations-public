@@ -38,7 +38,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 ## Changes in Attract
 
 ### Process auditing
-You can now track the changes made to candidates, job openings and job applications. For more information, please see [Using process auditing](process-audting.md).
+You can now track the changes made to candidates, job openings and job applications. For more information, please see [Using process auditing](process-auditing.md).
 
 ## Changes in Onboard
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
