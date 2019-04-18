@@ -35,7 +35,7 @@ You can view the tracked data in PowerBI by using the OData connector. For more 
 
 1. In [PowerApps](https://web.powerapps.com), select the appropriate environment.
 
-2. Select **Settings**, choose **Advanced Customizations**, and then select **Developer resources**. 
+2. Select **Settings** (the gear icon), choose **Advanced customizations**, and then select **Resources** under **Developer resources**. 
 
 3. On the **Developer Resources** page, copy the value in the **Instance Web API value** field. For example, the value could look like: https://yourorgname.api.crm.dynamics.com/api/data/v9.1/.
 
@@ -57,7 +57,7 @@ The following data is available with process auditing.
 | Job application history | Artifact added <br></br>Artifact removed |
 | Job opening history | TODO: post added <br></br>TODO: post removed <br></br>TODO: post updated <br></br>TODO: participant added <br></br>TODO: participant removed |
 | Candidate history | Artifact added <br></br>Artifact removed <br></br>Work experience added <br></br>Work experience removed <br></br>Education added <br></br>Education removed <br></br>Skill added <br></br>Skill removed <br></br>Tag added <br></br>Tag removed <br></br>Social network added <br></br>Social network removed <br></br>Personal details added <br></br>Personal details updated<br></br> |
-| Changed fields (msdyn_changedfields) | JSON object listing changed fields, might not store values for all fields.<br></br>-	For "Created" and "Updated" changes, it will list the fields on the created or modified record.<br></br>-	For "Foo added" change types, it will list the fields on the child record.<br></br>**Example:**<br></br>{<br></br>  "msdyn_applyurl": { "newValue": "" },<br></br>  "msdyn_description": { "valueOmitted": true } <br></br>} |
+| Changed fields (msdyn_changedfields) | JSON object listing changed fields, might not store values for all fields.<br></br><br></br>For "Created" and "Updated" changes, it will list the fields on the created or modified record.<br></br><br></br>For "Foo added" change types, it will list the fields on the child record.<br></br><br></br>**Example:**<br></br><br></br>{<br></br>  "msdyn_applyurl": { "newValue": "" },<br></br>  "msdyn_description": { "valueOmitted": true } <br></br>} |
 |Job application history | Job application (msdyn_JobapplicatonId)<br></br>Status (msdyn_status) <br></br>Status reason (msdyn_statusreason) <br></br>Rejection reason (msdyn_rejectionreason) |
 | Job opening history | Job opening (msdyn_JobopeningId) <br></br>Status (msdyn_jobopeningstatus) <br></br>Status reason (msdyn_jobopeningstatusreason) |
 | Candidate history | Candidate (msdyn_CandidateId) |
