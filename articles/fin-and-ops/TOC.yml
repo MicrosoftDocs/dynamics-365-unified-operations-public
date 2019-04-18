@@ -2264,6 +2264,8 @@
             href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Fixed assets
           items: 
+          - name: Managing fixed assets
+            href: ../financials/localizations/rus-fixed-assets.md
           - name: Set up fixed assets
             href: ../financials/localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
@@ -2295,7 +2297,11 @@
           - name: Depreciation bonuses
             href: ../financials/localizations/rus-bonus-depreciation.md
           - name: Calculate depreciation
-            href: ../financials/localizations/rus-depreciation-calculation.md
+            href: ../financials/localizations/rus-depreciation-calculation.md          
+          - name: Accounting for working clothes/special rigging
+            href: ../financials/localizations/rus-working-clothes-instruments-accounting.md
+          - name: Not valuable fixed assets
+            href: ../financials/localizations/rus-not-valuable-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Invoices for payment
