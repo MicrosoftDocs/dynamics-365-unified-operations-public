@@ -45,10 +45,10 @@ The feature list includes the following information:
 When you select a feature, additional information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you will be taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
 The **Feature management** workspace also contains several tabs with a list of features in it. 
-- **New** - show all features that have been added since the last monthly update. If you have skipped any monthly updates, it will contain all of the new features since the last time you updated. The newest features appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
-- **Not enabled** - show all features that have not been enabled. The newest features appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
-- **Scheduled** - show all features that have been scheduled to be enabled on a future date. The features that have the earliest scheduled date will appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
-- **All** - show all features. The newest features appear at the top of the list.
+- **New** - Shows all features that have been added since the last monthly update. If you have skipped any monthly updates, it will contain all of the new features since the last time you updated. The newest features appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
+- **Not enabled** - Shows all features that have not been enabled. The newest features appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
+- **Scheduled** - Shows all features that have been scheduled to be enabled on a future date. The features that have the earliest scheduled date will appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
+- **All** - Shows all features. The newest features appear at the top of the list.
 
 
 ## Enable a feature
@@ -61,13 +61,13 @@ If a feature hasn't been enabled, an **Enable** button appears in the details pa
 
 Some features can't be disabled after you enable them. If the feature that you are attempting to enable can't be disabled, you receive a warning. At this point, you can select **Cancel** to cancel the operation and leave the feature disabled. However, if you select **Enable** and enable the feature, you won't be able to disable it later.
 
-After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will show up in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. Features that are scheduled in the future will be enabled at midnight by a batch process based on the timezone represented by the system date. 
+After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will display in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. Features that are scheduled in the future will be enabled at midnight by a batch process based on the time zone represented by the system date. 
 
 ## Reschedule a feature
 
 If a feature has been enabled in the future, a **Reschedule** button appears in the details pane. You can use this button to change the **Enable date** to a different date.
 
-1. Select a scheduled feature that you want to reshedule, and then, in the details pane, select **Reschedule**.
+1. Select a scheduled feature that you want to reschedule, and then, in the details pane, select **Reschedule**.
 2. A slider appears, where you can specify the date on which the feature should be enabled. 
 3. Select **Enable** to reschedule the feature or **Disable** to cancel the schedule.
 
@@ -87,14 +87,14 @@ A critical feature may be delivered that must be enabled automatically when you 
 
 ## Assigning roles
 
-The **Feature management** workspace can be opened by system admins, and by users who are assigned to the **Feature manager** or **Feature viewer** roles that were created to support the Feature management experience. Users in the **Feature manager** role can turn any feature on and off. They can also update the comments section for the feature. Users in the **Feature viewer** role can only view the **Feature management** workspace. They can't turn features on and off.
+The **Feature management** workspace can be opened by system admins, and by users who are assigned to the Feature manager or Feature viewer roles that were created to support the Feature management experience. Users in the Feature manager role can turn any feature on or off. They can also update the comments section for the feature. Users in the Feature viewer role can only view the **Feature management** workspace. They can't turn features on or off.
 
-The **Feature manager** role and **Feature viewer** role don't override the existing security that a user has. The roles just control access to enabling features. It doesn't provide access to the features themselves.
+The Feature manager role and Feature viewer role don't override the existing security that a user has. The roles only control access to enabling features. It doesn't provide access to the features themselves.
 
 ## Using feature management to enable ISV features or custom features
 
-The **Feature management** process is currently unavailable for ISV features or custom features. We are adding additional functionality to enhance **Feature management** and, once those enhancements are complete, we will open up **Feature management** to all features and provide specific instructions on how to update your feature to use it.
+The Feature management process is currently unavailable for ISV features or custom features. We are adding additional functionality to enhance Feature management and, when those enhancements are complete, we will open up Feature management to all features and provide specific instructions on how to update your feature to use it.
 
 ## Feature management and flighting
 
-**Feature management** allows you to control features that are shipped in each release. **Flighting** allows Microsoft teams to release features to a limited number of customers so that the features can be tested and validated without affecting all customers. **Feature management** does not control the flighting of any features.
+Feature management allows you to control features that are shipped in each release. Flighting allows Microsoft teams to release features to a limited number of customers so that the features can be tested and validated without affecting all customers. Feature management does not control the flighting of any features.
