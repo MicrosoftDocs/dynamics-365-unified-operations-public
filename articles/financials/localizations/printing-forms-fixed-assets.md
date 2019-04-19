@@ -64,18 +64,18 @@ The following table provides the sources and path for unified printing forms tha
 
 | **Form code** | **Form name**                                               | **Source**                                                   |
 |---------------|-------------------------------------------------------------|--------------------------------------------------------------|
-| \#FA-1        | Acceptance report (excluding building, structures)          | **Value models** \> **Transactions** \> **Documents** **Documents** |
-| \#FA-1        | Statement about fixed assets object acceptance-transference | **History**/ **Transfer/ Documents**                         |
-| \#FA-1        | Transference statement                                      | **Value models**/ **Transactions/ Documents**/ **Documents** |
-| \#FA-1a       | Acceptance report (building, structures)                    | **Value models**/ **Transactions/ Documents**/ **Documents** |
-| \#FA-1a       | Statement about fixed assets object acceptance-transference | **History**/ **Transfer/ Documents**                         |
-| \#FA-1a       | Transference statement                                      | **Value models**/ **Transactions/ Documents**/ **Documents** |
-| \#FA-2        | Internal transfer slip                                      | **History**/ **Transfer/ Documents**                         |
-| \#FA-3        | Acceptance-handover statement                               | **Value models**/ **Transactions/ Documents**/ **Documents** |
-| \#FA-4        | Statement about FA writing off (excluding vehicles)         | **Value models**/ **Transactions/ Documents**/ **Documents** |
-| \#FA-4a       | Statement about FA writing off (vehicles)                   | **Value models**/ **Transactions/ Documents**/ **Documents** |
-| \#FA-6        | Fixed asset inventory card                                  | Highlight Fixed asset record, **Documents**/ **Documents**   |
-| \#FA-14       | Equipment acceptance statement                              | **Value models**/ **Transactions/ Documents**/ **Documents** |
+| \#FA-1        | Acceptance report (excluding building, structures)          | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
+| \#FA-1        | Statement about fixed assets object acceptance-transference | **History** \> **Transfer** \> **Documents**                         |
+| \#FA-1        | Transference statement                                      | **Value models** \> **Transactions** \> Documents** \> **Documents** |
+| \#FA-1a       | Acceptance report (building, structures)                    | **Value models** \> **Transactions** \> Documents** \> **Documents** |
+| \#FA-1a       | Statement about fixed assets object acceptance-transference | **History** \> **Transfer** \> **Documents**                         |
+| \#FA-1a       | Transference statement                                      | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
+| \#FA-2        | Internal transfer slip                                      | **History** \> **Transfer** \> **Documents**                         |
+| \#FA-3        | Acceptance-handover statement                               | **Value models**/ **Transactions** \> **Documents** \> **Documents** |
+| \#FA-4        | Statement about FA writing off (excluding vehicles)         | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
+| \#FA-4a       | Statement about FA writing off (vehicles)                   | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
+| \#FA-6        | Fixed asset inventory card                                  | Highlight the fixed asset record and then select **Documents** \> **Documents**   |
+| \#FA-14       | Equipment acceptance statement                              | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
 
 > [!NOTE]  
 > It is possible to print Fixed asset inventory card (#FA-6) only when fixed assets are put into operation with the transaction type, **Putting into operation**.
