@@ -94,3 +94,9 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
          ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
+  
+  ##Retail peripheral support in Android
+  
+Starting in 8.1.3, retail peripheral support has been added to the hybrid Android app. In the same way that the Retail Modern POS has built-in support for peripheral devices, the Android app can also now use the 'IPC' hardware station to connect to peripherals. 
+
+Due to the nature of Android and how merchants most typically have asked to use it as a point of sale client, network device conne
