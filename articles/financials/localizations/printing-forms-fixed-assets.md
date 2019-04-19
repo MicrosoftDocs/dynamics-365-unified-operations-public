@@ -5,7 +5,7 @@ title: Unified printing forms for fixed assets (Russia)
 description: This topic includes information about fixed asset unified printing forms for Microsoft Dynamics 365 for Finance and Operations in Russia.
 author: Olga Oskina
 manager: AnnBe
-ms.date: 04/17/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,7 +64,7 @@ The following table provides the sources and path for unified printing forms tha
 
 | **Form code** | **Form name**                                               | **Source**                                                   |
 |---------------|-------------------------------------------------------------|--------------------------------------------------------------|
-| \#FA-1        | Acceptance report (excluding building, structures)          | **Value models**/ **Transactions/ Documents**/ **Documents** |
+| \#FA-1        | Acceptance report (excluding building, structures)          | **Value models** \> **Transactions** \> **Documents** **Documents** |
 | \#FA-1        | Statement about fixed assets object acceptance-transference | **History**/ **Transfer/ Documents**                         |
 | \#FA-1        | Transference statement                                      | **Value models**/ **Transactions/ Documents**/ **Documents** |
 | \#FA-1a       | Acceptance report (building, structures)                    | **Value models**/ **Transactions/ Documents**/ **Documents** |
