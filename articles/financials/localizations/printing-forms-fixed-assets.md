@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -66,8 +66,8 @@ The following table provides the sources and path for unified printing forms tha
 |---------------|-------------------------------------------------------------|--------------------------------------------------------------|
 | \#FA-1        | Acceptance report (excluding building, structures)          | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
 | \#FA-1        | Statement about fixed assets object acceptance-transference | **History** \> **Transfer** \> **Documents**                         |
-| \#FA-1        | Transference statement                                      | **Value models** \> **Transactions** \> Documents** \> **Documents** |
-| \#FA-1a       | Acceptance report (building, structures)                    | **Value models** \> **Transactions** \> Documents** \> **Documents** |
+| \#FA-1        | Transference statement                                      | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
+| \#FA-1a       | Acceptance report (building, structures)                    | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
 | \#FA-1a       | Statement about fixed assets object acceptance-transference | **History** \> **Transfer** \> **Documents**                         |
 | \#FA-1a       | Transference statement                                      | **Value models** \> **Transactions** \> **Documents** \> **Documents** |
 | \#FA-2        | Internal transfer slip                                      | **History** \> **Transfer** \> **Documents**                         |
