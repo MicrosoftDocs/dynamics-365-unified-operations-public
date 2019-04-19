@@ -48,9 +48,9 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 
 This topic includes the following main sections to help you evaluate and set up the Dynamics 365 Payment Connector for Adyen.
 
-- **[Supported features, functionality, and payment terminals](#Supported-features-functionality-and-payment-terminals)** – This section describes the set of features and functionalities that the Dynamics 365 Payment Connector for Adyen supports.
-- **[Sign up with Adyen](#Sign-up-with-Adyen)** – This section explains how to sign up for a merchant account with Adyen.
-- **[Setup and configuration](#Setup-and-configuration)** – This section explains, in detail, how to set up and configure the Dynamics 365 Payment Connector for Adyen across the point of sale (POS), call center, and e-Commerce channels.
+- Supported features, functionality, versions, and terminals – This section describes the set of features and functionalities that the Dynamics 365 Payment Connector for Adyen supports.
+- Sign up with Adyen – This section explains how to sign up for a merchant account with Adyen.
+- Setup and configuration – This section explains, in detail, how to set up and configure the Dynamics 365 Payment Connector for Adyen across the point of sale (POS), call center, and e-Commerce channels.
 
 ## Supported features, functionality, versions, and terminals
 
@@ -204,6 +204,7 @@ The following table shows the set of Dynamics 365 payment features that the Dyna
 
 | Scheme | Card present | Card not present |
 |---|:-:|:-:|
+| [Cash Out Gift Card Balance](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
 | [Duplicate Payment Protection](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |

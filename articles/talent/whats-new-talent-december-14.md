@@ -68,7 +68,7 @@ With this change, leap days are now supported in Power BI.
 
 ### Integration between Core HR and Attract
 
-A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following CDS for Apps (CDS 2.0) entities are used:
+A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following Common Data Service entities are used:
 
 Job Application
 - Status Reason needs to be set to Offer Accepted
@@ -142,7 +142,7 @@ The Workers to Work task needs the following mappings updated.
 
 The Gender field transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
-| CDS value                   | Finance and Operations value                     |
+| Common Data Service value                   | Finance and Operations value                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Male                                             |
 | 75440001                    | Female                                           |

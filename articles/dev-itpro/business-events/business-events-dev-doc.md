@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events developer documentation
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This topic walks you through the development process and best practices for implementing business events.
 
@@ -432,8 +431,7 @@ The sending of a business event is linked to the commit of the underlying transa
 The business events framework determines whether a business event is published to a consumer. As a general rule, applications should always send a business event, regardless of whether the business event is enabled. If significant additional logic is required, or if the logic for sending a business event has a performance impact, an application can check whether a specific business event is enabled before it runs business logic that is associated with sending business events. This check is done through the **BusinessEventsConfigurationReader::isBusinessEventEnabled** method.
 
 ```
-if (BusinessEventsConfigurationReader::isBusinessEventEnabled(new
-CollectionStatusUpdatedBusinessEvent()))
+if (BusinessEventsConfigurationReader::isBusinessEventEnabled(classStr(CollectionStatusUpdatedBusinessEvent)))
 {
     while select dispute
     where dispute.Status == CustVendDisputeStatus::PromiseToPay

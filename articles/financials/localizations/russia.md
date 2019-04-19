@@ -5,7 +5,7 @@ title: Russia
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2018
+ms.date: 03/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,6 +33,11 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Russian regulations. 
+
+## General ledger
+
+- [Correspondence of accounts](rus-correspondence-accounts.md)
+- [Preview ledger transactions](rus-ledger-transactions-preview.md)
 
 ## Advance holders
 
@@ -69,6 +74,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Depreciation methods](rus-depreciation-methods.md)
 - [Depreciation bonuses](rus-bonus-depreciation.md)
 - [Calculate depreciation](rus-depreciation-calculation.md)
+- [Transfer fixed assets](rus-fixed-asset-transfer.md)
 
 ## Accounts payable and receivable
 - [Invoices for payment](rus-invoice-payment.md)
@@ -78,6 +84,14 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Reporting
 
 - [Financial reporting](rus-financial-reports.md)
+- [Assessed tax declaration](rus-assessed-tax-declaration.md)
+
+
+## Organization administration
+
+- [Tax registration info related to address](emea-registration-ids.md)
+- [Set up officials](rus-officials.md)
+- [Company divisions](rus-company-divisions.md)
 
 ## Additional resources
 
@@ -85,8 +99,8 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Russia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/RussianFederation.html)
 - [Company divisions](rus-company-divisions.md)
+- [Set up officials](rus-officials.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
-- [Set up officials](rus-officials.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 

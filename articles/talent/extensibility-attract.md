@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent is built on top of the Common Data Service (CDS) for Apps platform, and can be extended in various ways by using the Microsoft Power Platform and the capabilities that Common Data Service for Apps offers. Therefore, you can configure and personalize the system by using Microsoft PowerApps and Microsoft Flow. You can also get additional analytics about people by using Microsoft Power BI. Furthermore, new custom activities, such as the PowerApps and Web content (iframe) activities, make the hiring process more adaptable than ever. By using these activities, you can tailor the hiring process to your business needs and processes, and can make sure that both the hiring team and candidates have a seamless, customized experience.
+Microsoft Dynamics 365 for Talent is built on top of the Common Data Service platform, and can be extended in various ways by using the Microsoft Power Platform and the capabilities that Common Data Service offers. Therefore, you can configure and personalize the system by using Microsoft PowerApps and Microsoft Flow. You can also get additional analytics about people by using Microsoft Power BI. Furthermore, new custom activities, such as the PowerApps and Web content (iframe) activities, make the hiring process more adaptable than ever. By using these activities, you can tailor the hiring process to your business needs and processes, and can make sure that both the hiring team and candidates have a seamless, customized experience.
 
 ## Extending Option sets in Attract
 
@@ -61,17 +61,17 @@ Listed below are the steps to update the **Rejection reason** field with values 
 
 ## Take advantage of the Microsoft Power platform 
 
-Because all the data from Attract resides in Common Data Service for Apps, you can use tools from the Microsoft Power platform to incorporate your unique business needs into Attract.
+Because all the data from Attract resides in Common Data Service, you can use tools from the Microsoft Power platform to incorporate your unique business needs into Attract.
 
 ### PowerApps
 
 You can use PowerApps to easily build apps that connect to your Attract data, and that use expressions like the expressions in Microsoft Excel to add logic. Apps that you build by using PowerApps can run on the web, and on Apple iOS and Google Android devices.
 
-For example, you can make university career fairs easier for recruiters by building a lightweight app that lets them scan resumes and feed candidates to a position in Attract. Alternatively, you can build an app that helps meet your organization's compliance needs. For more information about PowerApps and how to use it to build apps, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps).
+For example, you can make university career fairs easier for recruiters by building a lightweight app that lets them scan resumes and feed candidates to a position in Attract. Alternatively, you can build an app that helps meet your organization's compliance needs. For more information about PowerApps and how to use it to build apps, see [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps).
 
 ### Microsoft Flow 
 
-You can use Microsoft Flow to create automated workflows that run on top of Attract data. You can easily connect to hundreds of popular apps and services without having to write code. By building flows that interact with the Attract Job, Candidate, and Application entities in Common Data Service for Apps, you can automate various actions. For example, when a candidate accepts an offer, a notification can be sent to an onboarding team, or the news can be announced on Twitter. For more information about flows, see the [Microsoft Flow documentation](https://docs.microsoft.com/en-us/flow/).
+You can use Microsoft Flow to create automated workflows that run on top of Attract data. You can easily connect to hundreds of popular apps and services without having to write code. By building flows that interact with the Attract Job, Candidate, and Application entities in Common Data Service, you can automate various actions. For example, when a candidate accepts an offer, a notification can be sent to an onboarding team, or the news can be announced on Twitter. For more information about flows, see the [Microsoft Flow documentation](https://docs.microsoft.com/en-us/flow/).
 
 ### Power BI
 
@@ -83,14 +83,14 @@ You can add custom activities, such as the PowerApps apps and Web content (ifram
 
 #### PowerApps activity 
 
-The PowerApps activity lets the creator of a job or job process template embed a PowerApps app in the hiring flow. After you create and publish the app, you can enter its app ID in the activity configurations. By using a PowerApps app, you can read and write data into Common Data Service for Apps. You can even link the app to a flow. For example, you have an app that recruiters use to fill in a form while they conduct phone interviews. In this case, you can link the app to a flow that evaluates whether an applicant can be advanced further in the job application process. This type of activity can be viewed only by members of the hiring team. For more information about how to configure the PowerApps activity, see [Activities in Attract](./activities-attract.md).
+The PowerApps activity lets the creator of a job or job process template embed a PowerApps app in the hiring flow. After you create and publish the app, you can enter its app ID in the activity configurations. By using a PowerApps app, you can read and write data into Common Data Service. You can even link the app to a flow. For example, you have an app that recruiters use to fill in a form while they conduct phone interviews. In this case, you can link the app to a flow that evaluates whether an applicant can be advanced further in the job application process. This type of activity can be viewed only by members of the hiring team. For more information about how to configure the PowerApps activity, see [Activities in Attract](./activities-attract.md).
 
 > [!NOTE]
 > The PowerApps activity is available only with the Comprehensive hiring add-on.
 
 #### Web content (iframe) activity
 
-The Web content (iframe) activity lets you embed a custom web solution that you've built in the hiring process or the Candidate portal. You can read and write data directly from Common Data Service for Apps. You can also customize the solution so that it triggers flows or takes advantage of Microsoft Azure functions. For more information about how to configure the Web content activity, see [Activities in Attract](./activities-attract.md).
+The Web content (iframe) activity lets you embed a custom web solution that you've built in the hiring process or the Candidate portal. You can read and write data directly from Common Data Service. You can also customize the solution so that it triggers flows or takes advantage of Microsoft Azure functions. For more information about how to configure the Web content activity, see [Activities in Attract](./activities-attract.md).
 
 > [!NOTE]
 > The Web content activity is available only with the Comprehensive hiring add-on.

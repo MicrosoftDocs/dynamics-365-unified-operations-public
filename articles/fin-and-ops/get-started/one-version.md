@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 04/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,8 +56,8 @@ Customers can always choose to apply the update at an earlier time, or if there 
 | Version       | Description |
 |---------------|-------------|
 | 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 3 months or 2 service updates. To pause an update, refer to [Pause service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates). |
-| 8.0           | Customers on 8.0 will receive automatic monthly platform and financial reporting updates. You will be required to have an update that's no older than 3 months or 2 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30 to stay supported. If customer stays on version 8.0 they will still receive automated platform updates every month. In order to be on a supported application, customers should follow the process to update to the latest version, see [Update environments from version 8.0 to 8.1 topic](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81). | 
-| 7.x           | Customers on 7.x will receive automatic monthly platform and financial reporting updates. YYou will be required to have an update that's no older than 3 months and 2 service updates. Customers on 7.x must update by April 30 to stay supported. If customer stays on version 7.x past April 30, 2019 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). 
+| 8.0           | Customers on 8.0 can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 3 months or 2 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30 to stay supported. In order to be on a supported application, customers should follow the process to update to the latest version. For more information, see [Update environments from version 8.0 to 8.1 topic](../../dev-itpro/migration-upgrade/appupdate-80-81.md). | 
+| 7.x           | Customers on 7.x can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 3 months and 2 service updates. Customers on 7.x must update by April 30, 2019 to stay supported. If customer stays on version 7.3 past April 30 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available). The only overlayered version in market will be version 7.3. 
 
 ### What does the service update contain?
 

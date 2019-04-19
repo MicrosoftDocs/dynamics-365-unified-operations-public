@@ -6,7 +6,13 @@
     items:
     - name: What's new or changed in Talent
       href: whats-new.md
-      items:   
+      items: 
+      - name: April 9, 2019
+        href: whats-new-talent-april-9-2019.md
+      - name: April 2, 2019
+        href: whats-new-talent-april-2-2019.md
+      - name: March 26, 2019
+        href: whats-new-talent-march-26-2019.md
       - name: March 20, 2019     
         href: whats-new-talent-march-20.md      
       - name: March 14, 2019     
@@ -21,40 +27,44 @@
         href: whats-new-talent-february-7.md
       - name: January 31, 2019      
         href: whats-new-talent-january-29.md
-      - name: January 23, 2019      
-        href: whats-new-talent-january-23.md
-      - name: January 17, 2019
-        href: whats-new-talent-january-17.md
-      - name: January 11, 2019
-        href: whats-new-talent-january-11.md  
-      - name: December 14, 2018
-        href: whats-new-talent-december-14.md 
-      - name: December 6, 2018
-        href: whats-new-talent-december-6.md 
-      - name: November 27, 2018
-        href: whats-new-talent-november-27.md            
-      - name: November 15, 2018
-        href: whats-new-talent-november-15.md
-      - name: October 31, 2018
-        href: whats-new-talent-october-31.md
-      - name: October 19, 2018
-        href: whats-new-talent-october-19.md
-      - name: October 15, 2018
-        href: whats-new-talent-october-11.md
-      - name: October 8, 2018
-        href: whats-new-talent-october-8.md
-      - name: October 1, 2018
-        href: whats-new-talent-october-01.md 
-      - name: September 24, 2018
-        href: whats-new-talent-september-24.md
-      - name: September 17, 2018
-        href: whats-new-talent-september-17-2018.md
-      - name: September 10, 2018
-        href: whats-new-talent-september-10.md
-      - name: August 2018
-        href: whats-new-talent-august2018.md
-      - name: July 2018
-        href: whats-new-talent-july2018.md
+      - name: What's new archives 2019
+        items: 
+        - name: January 23, 2019      
+          href: whats-new-talent-january-23.md
+        - name: January 17, 2019
+          href: whats-new-talent-january-17.md
+        - name: January 11, 2019
+          href: whats-new-talent-january-11.md  
+      - name: What's new archives 2018
+        items: 
+        - name: December 14, 2018
+          href: whats-new-talent-december-14.md 
+        - name: December 6, 2018
+          href: whats-new-talent-december-6.md 
+        - name: November 27, 2018
+          href: whats-new-talent-november-27.md            
+        - name: November 15, 2018
+          href: whats-new-talent-november-15.md
+        - name: October 31, 2018
+          href: whats-new-talent-october-31.md
+        - name: October 19, 2018
+          href: whats-new-talent-october-19.md
+        - name: October 15, 2018
+          href: whats-new-talent-october-11.md
+        - name: October 8, 2018
+          href: whats-new-talent-october-8.md
+        - name: October 1, 2018
+          href: whats-new-talent-october-01.md 
+        - name: September 24, 2018
+          href: whats-new-talent-september-24.md
+        - name: September 17, 2018
+          href: whats-new-talent-september-17-2018.md
+        - name: September 10, 2018
+          href: whats-new-talent-september-10.md
+        - name: August 2018
+          href: whats-new-talent-august2018.md
+        - name: July 2018
+          href: whats-new-talent-july2018.md
     - name: System requirements and update policy
       href: talent-versions-update-policy.md
     - name: Provision Talent
@@ -65,7 +75,7 @@
       href: modular-app-tech-faq.md
     - name: Embed PowerApps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Core HR and Common Data Service for Apps
+    - name: Core HR and Common Data Service
       href: CoreHREntities.md
     - name: Access preview features
       href: access-preview-feature.md
@@ -99,6 +109,8 @@
       href: working-time-calendars.md
   - name: Staff your organization
     items:
+    - name: Which version of Attract?
+      href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
     - name: Creating a process template in Attract
@@ -134,9 +146,7 @@
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
     - name: Track sources for candidate profiles and applications
-      href: source-tracking.md
-    - name: Attract comprehensive hiring add-on capabilities
-      href: attract-comprehensive-hiring.md
+      href: source-tracking.md    
   - name: Motivate employees
     items:
     - name: Compensation plans
@@ -214,8 +224,12 @@
     items:
     - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
       href: extensibility-examples.md
+    - name: Track changes in recruiter data
+      href: process-auditing.md
     - name: Extensibility in Attract
       href: extensibility-attract.md
+    - name: Custom fields in Core HR
+      href: corehr-custom-fields.md  
   - name: Office integration
     items:
     - name: Office integration tutorial
@@ -335,7 +349,7 @@
       href: save-play-task-guides-LCS.md
     - name: Access to private addresses by security role
       href: security-roles-addresses.md
-    - name: Talent doesn't appear among the Microsoft Dynamics 365 apps (CDS1.0)
+    - name: Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)
       href: talent-not-in-home-CDS.md
     - name: User can access Core HR but not the Onboard or Attract app
       href: user-access-core-hr.md
