@@ -5,7 +5,7 @@ title: Design ER configurations to fill in PDF templates
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in a PDF template.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,15 +55,15 @@ Before you begin, you must have one of the following types of access, depending 
 You must also complete the [Create a configuration provider and mark it as active](/tasks/er-configuration-provider-mark-it-active-2016-11.md)
 procedure.
 
-Finally, you must download the following files from [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=000000).
+Finally, you must download the following files from [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
 
 | Content description                       | File name                                     |
 |-------------------------------------------|-----------------------------------------------|
-| Template for the first page of the report | IntrastatReportTemplate1.pdf                  |
-| Template for other pages of the report    | IntrastatReportTemplate2.pdf                  |
-| Sample ER format                          | Intrastat report (PDF).version.1.1.xml        |
-| Sample ER format                          | Intrastat (import from Excel).version.1.1.xml |
-| Sample dataset                            | Intrastat sample data.xlsx                    |
+| Template for the first page of the report | [IntrastatReportTemplate1.pdf](https://mbs.microsoft.com/Files/public/CS)                  |
+| Template for other pages of the report    | [IntrastatReportTemplate2.pdf](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatReportTemplate2.pdf)                  |
+| Sample ER format - PDF                          | [Intrastat report (PDF).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatreportPDFversion11.xml)        |
+| Sample ER format - Excel                          | [Intrastat (import from Excel).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatimportfromExcelversion11.xml) |
+| Sample dataset                            | [Intrastat sample data.xlsx](https://mbs.microsoft.com/Files/public/CS/AX/Intrastatsampledata.xlsx)                    |
 
 ## Design the format configuration
 
