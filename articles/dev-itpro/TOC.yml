@@ -1280,6 +1280,8 @@
   items:
   - name: Get support for Finance and Operations and Lifecycle Services
     href: lifecycle-services/lcs-support.md
+  - name: Get support for Finance and Operations operated by 21Vianet in China
+    href: lifecycle-services/21vianet-support.md
   - name: Log a premier support ticket
     href: lifecycle-services/premier-support.md
   - name: Submit requests to the Dynamics Service Engineering team

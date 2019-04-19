@@ -25,6 +25,9 @@
           href: get-started/system-requirements-on-prem.md
         - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
+        - name: Finance and Operations operated by 21Vianet in China
+          href: ../dev-itpro/deployment/china-local-deployment.md
+      - name: Standard and First release service updates
       - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
@@ -1321,7 +1324,7 @@
         href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Electronic messaging
       href: ../financials/general-ledger/electronic-messaging.md
-  - name: Localization and regulatory features
+  - name: Globalization
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
     items:
       - name: Regulatory updates
@@ -1532,6 +1535,8 @@
       - name: China
         href: ../financials/localizations/china.md
         items:
+        - name: Finance and Operations operated by 21Vianet in China
+          href: ../dev-itpro/deployment/china-local-deployment.md
         - name: Bill of materials comparison
           href: ../financials/localizations/apac-chn-bom-comparison.md
         - name: Chinese hierarchy of chart of accounts
@@ -2274,6 +2279,8 @@
             href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Fixed assets
           items: 
+          - name: Managing fixed assets
+            href: ../financials/localizations/rus-fixed-assets.md
           - name: Set up fixed assets
             href: ../financials/localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
@@ -2308,6 +2315,8 @@
             href: ../financials/localizations/rus-depreciation-calculation.md
           - name: Transfer fixed assets
             href: ../financials/localizations/rus-fixed-asset-transfer.md
+          - name: Unified printing forms for fixed assets 
+            href: ../financials/localizations/printing-forms-fixed-assets.md
           - name: Working clothes/special rigging accounting (Russia)
             href: ../financials/localizations/rus-working-clothes-instruments-accounting.md
           - name: Not valuable fixed assets (NVFAs) (Russia)
