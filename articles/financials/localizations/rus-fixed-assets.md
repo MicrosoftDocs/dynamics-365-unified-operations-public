@@ -5,7 +5,7 @@ title: Fixed assets (Russia)
 description: This topic provides information about fixed asset management for Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
