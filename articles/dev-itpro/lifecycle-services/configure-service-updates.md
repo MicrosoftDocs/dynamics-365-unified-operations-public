@@ -5,7 +5,7 @@ title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Platform update 24
 # Configure service updates through Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/coming-soon.md)]
 
 In Microsoft Dynamics Lifecycle Services (LCS), you can specify how and when you receive service updates from Microsoft for your Microsoft Dynamics 365 for Finance and Operations environments.
 
@@ -69,6 +67,9 @@ Follow these steps to change your update settings.
 
         > [!NOTE]
         > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
+        
+        > [!IMPORTANT]
+        > If the above time slots do not meet your needs, you always have the option to do a self-update at a time that is convinient to you by taking the update and applying it to your environments using the regular servicing flows.
 
  3. When you've finished setting the configuration options, select **Save**.
  

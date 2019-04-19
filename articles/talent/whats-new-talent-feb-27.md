@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -91,7 +91,7 @@ It's typical that employees who join an organization have a future start date. T
 
 ## Known issues
 
-### Changes to the Core HR integration template (Talent Common Data Service for Apps to Finance and Operations)
+### Changes to the Core HR integration template (Talent Common Data Service to Finance and Operations)
 The template for Core HR has been updated to an "advanced query template". Therefore, by default, the advanced query will be available for projects that are created by using this template. Additionally, any default mapping functions will be visible only in the advanced query editor. (Default mapping functions appear as "FN" in the mappings.)
 
 For more information about mapping errors, see [What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
@@ -104,19 +104,19 @@ To update your existing template, follow these steps.
 
     - **Job Positions to Positions:** Remove this mapping.
     - **Job Positions to Positions Parent Job Assignment:** Remove this mapping.
-    - **Job Positions to Base Position:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Base Position** Finance and Operations entity. Move it to position 7 in the sequence.
+    - **Job Positions to Base Position:** Add a new mapping from the **Job Positions** Common Data Service entity to the **Base Position** Finance and Operations entity. Move it to position 7 in the sequence.
 
         [![Job Positions to Base Position mapping](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Job Positions to Position Details:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Position Details** Finance and Operations entity. Move it to position 8 in the sequence.
+    - **Job Positions to Position Details:** Add a new mapping from the **Job Positions** Common Data Service entity to the **Position Details** Finance and Operations entity. Move it to position 8 in the sequence.
 
         [![Job Positions to Position Details mapping](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Job Positions to Position Durations:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Position Durations** Finance and Operations entity.
+    - **Job Positions to Position Durations:** Add a new mapping from the **Job Positions** Common Data Service entity to the **Position Durations** Finance and Operations entity.
 
         [![Job Positions to Position Durations mapping](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Job Positions to Position Hierarchies:** Add a new mapping from the **Job Positions** Common Data Service for Apps entity to the **Position Hierarchies** Finance and Operations entity. Select **Advanced Query** to make your advanced query available for your project.
+    - **Job Positions to Position Hierarchies:** Add a new mapping from the **Job Positions** Common Data Service entity to the **Position Hierarchies** Finance and Operations entity. Select **Advanced Query** to make your advanced query available for your project.
 
        [![Advanced Query button](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 

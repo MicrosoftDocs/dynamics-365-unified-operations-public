@@ -3,9 +3,9 @@
 
 title: Interview scheduling and feedback
 description: This topic provides information about interview scheduling and feedback activities in Attract.
-author: 
+author: hasrivas
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,11 +17,11 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 # ms.search.industry: HR, Human Resources
-ms.author: hasrivas
+ms.author: shielas
 
 ---
 
@@ -32,6 +32,8 @@ ms.author: hasrivas
 ## Scheduler activity
 
 The scheduler activity is optional and has two components: Candidate availability request and Schedule. The Candidate availability component lets you use email to request a candidate's availability. The Schedule component provides the ability to schedule interviews with the candidate and the hiring team.
+
+To set up the scheduler activity to include or limit the candidates to be scheduled, select a value in the **Who are you scheduling** field. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of scheduling, you can assign the schedule activity only to external candidates by setting **Who are you scheduling** to **External Candidates**.
 
 ### Candidate availability request
 
@@ -58,7 +60,7 @@ There are multiple configurations available for the interview scheduler to use a
 
 2. Select the interview duration for each interview event, and then click **OK** to start creating the schedule.
 
-    If **Recommendations** are selected, suggestions will be shown and the interview grid will be pre-populated. You will be able to see the current calendar availability of all the s elected interviewers. You will also be able to view the candidate’s calendar if they're an internal candidate.
+    If **Recommendations** are selected, suggestions will be shown and the interview grid will be pre-populated. You will be able to see the current calendar availability of all the selected interviewers. You will also be able to view the candidate’s calendar if they're an internal candidate. For the interviewers and internal candidates, you can view their busy time slots, their working hours, their out of office hours and also identify if they have marked their calendars as working elsewhere for specific time slots. 
 
 3. If there are no suggestions available, in the **Interviewers** column, click in a time slot, provide the interview title, details, and populate the location details, as necessary. You can choose to include the **Skype for Business** link for the interview.
 
@@ -77,19 +79,30 @@ There are multiple configurations available for the interview scheduler to use a
 
     Interviewer responses are captured and shown in Attract. If an interviewer declines the invite, you will be notified to make a change. To view their response in the **Scheduler** grid view, click the bubble icon.
 
-[![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
+[![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. After the interview schedule is ready to be shared with the candidate, click **Send to candidate**. You can choose to hide or show the interviewer names and slots with the candidate.
 
-8. Select an -mail template and send the interview summary to the candidate. The candidate can view this information in their email as well as on their candidate portal.
+8. Select an email template and send the interview summary to the candidate. The candidate can view this information in their email as well as on their candidate portal.
     
 >[!NOTE] 
 > The calendar availability of a candidate is shown only if the candidate is internal. Similarly, only an internal candidates can be used to enhance interview schedule recommendations. Currently, candidates (external or internal) don't receive an email meeting invite, instead the candidate receives only a summary of the interviews.
 
+Candidates will receive the email summarizing their interview loop. The emails contain an .ics file which can be saved to their personal calendars for easier access and notfications about the interview.
+
+>[!TIP] 
+> In case you re-send the interview schedule to the candidate, they will receive another .ics file attachment. We recommend updating the email templates for the candidate's interview summary to ensure candidates delete the previously added interview events and do not see duplicates on their calendar. 
+
 ## Feedback activity
 
-The feedback activity is optional in a job template. This activity lets interview participants enter recommendations or feedback comments for an applicant. If the **Inherit feedback participants from Hiring Team** field is selected, the recruiter, hiring manager, and interviewers are automatically entered in the feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it. Interviewers are reminded to submit feedback for the interviews they have recently conducted based on the preset configuration as part of the job template. The hiring manager or a recruiter on the job can also choose to manually remind an interviewer to submit feedback.
+The feedback activity is optional in a job template. This activity lets interview participants enter recommendations or feedback comments for an applicant. 
+
+To include or limit the candidates to provide feedback on, select a value in the **Who should interviewers provide feedback on** field.  The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of scheduling, set **Who should interviewers provide feedback on** to **External Candidates**.
+
+If you select the **Inherit feedback participants from Hiring Team** field, the recruiter, hiring manager, and interviewers are automatically entered in the feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it. Interviewers are reminded to submit feedback for the interviews they have recently conducted based on the preset configuration as part of the job template. The hiring manager or a recruiter on the job can also choose to manually remind an interviewer to submit feedback.
 
 ## Interview activity
 
-The interview activity is an optional activity with three components: Candidate availability request, Schedule, and Feedback. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule. and feedback as part of the process instead using them individually as part of the hiring process.
+The interview activity is an optional activity with three components: **Candidate availability request**, **Schedule**, and **Feedback**. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually.
+
+To include or limit the candidates to be interviewed, select a value in the **Who are you interviewing** field. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of interviewing, set **Who are you interviewing** to **External Candidates**.

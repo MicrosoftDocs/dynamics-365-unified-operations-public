@@ -3,9 +3,9 @@
 
 title: Configure the payroll integration between Talent and Dayforce
 description: This topic explains how to configure the integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce so that you can process a pay run.
-author: jcart1106
+author: andreabichsel
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -363,6 +363,9 @@ If you're generating pay for employees in the United States and Canada, the foll
 
 - Departments are required on positions.
 - Cost centers must be set as financial dimensions and must be the first element in the default financial dimension string.
+
+> [!NOTE] 
+> You can configure Talent to require that Positions specify a Department. To do this, go to **Human Resources Shared Positions > Positions > Require departments on positions**. We recommend that this setting be enforced for the integration.
 
 ### Job types
 

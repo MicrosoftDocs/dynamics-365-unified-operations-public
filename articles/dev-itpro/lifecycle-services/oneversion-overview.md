@@ -5,7 +5,7 @@ title: One Version service updates overview
 description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: meeram
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/coming-soon.md)]
-
 The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later**. This is applicable for cloud releases only.
 
 - [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
@@ -43,14 +41,14 @@ The following set of topics provide information that is related to service updat
 
 The experience for service updates consists of four distinct steps: 
 
-1. Onboard
-2. Notify
-3. Execute
+1. Configure
+2. Notice
+3. Update
 4. Validate
 
 The rest of this topic describes each step and provides links to related topics.
 
-## Onboard
+## Configure
 
 Customers can select a maintenance window, based on their business constraints. In Microsoft Dynamics Lifecycle Services (LCS), use the fields in the **Production environment update cadence** section on the **Update settings** tab of the **Project settings** page, as shown in the following image. A calendar of upcoming updates is available to help you plan ahead.
 
@@ -58,7 +56,7 @@ Customers can select a maintenance window, based on their business constraints. 
 
 Users must opt in to new features and turn them on. All updates are applied first to the user acceptance testing (UAT) environment and then to the production environment. Therefore, customers have time to do any validation that is required. Customers can select the environment that is updated. They can also pause an update for up to three months.
 
-## Notify
+## Notice
 
 [Release notes](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to help you plan ahead and understand what is changing. You can learn about upcoming features up to three months in advance. The [What's new](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) topics provide details about the updates for specific months.
 
@@ -66,7 +64,7 @@ Additionally, a notification email will be sent five days in advance, and a noti
 
 [![Upcoming updates notification in LCS](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
 
-## Execute
+## Update
 
 After notifications have been sent, Microsoft will apply the update (**auto update**) during the designated maintenance window. After this operation is completed, a notification email will be sent to indicate the status of the update. Customers will also be able to **self-update** by using the standard update experience in LCS. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). 
 

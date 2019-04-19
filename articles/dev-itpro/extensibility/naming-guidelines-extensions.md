@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Naming guidelines for model extensions
-description: This topic describes the naming guidelines for model extensions. An element in a model must have a name that is unique across all models at installation time. 
+title: Naming guidelines for extensions
+description: This topic describes the naming guidelines for extensions. Artifacts added via extension must have a name that is unique across all models at installation time. 
 author: LarsBlaaberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,9 +29,11 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Naming guidelines for model extensions
+# Naming guidelines for extensions
 
 [!include [banner](../includes/banner.md)]
+
+**High level guidance: use prefixes to reduce conflicts and improve identification**
 
 ## Naming model elements
 Every element in a model must have a name that is unique across all models at installation time. However, at installation time, you don't know the names of all the models that your model might be installed together with. To accommodate this situation, every element name should include a prefix that is specific to your solution. By including this prefix when you name elements in your model, you significantly reduce the risk of naming conflicts.
@@ -58,13 +60,13 @@ Therefore, an extension class that augments the ContactPerson table should start
 + Include either the name of the model where the extension element resides or the prefix that the extension is associated with. For example, a Warehousing module uses an extension class to augment the ContactPerson table and uses the **WHS** prefix in the name of all other elements. In this case, the extension class might be named **ContactPersonWHS\_Extension**. Notice that the prefix that is used to name other elements in the module is inserted as an infix in the name. As another example, an extension class that augments the ContactPerson table in the ApplicationSuite model might be named **ContactPersonApplicationSuite\_Extension** if the extension class is intended to contain all extensions to the ContactPerson table in the ApplicationSuite model.
 + Don't name the extension just **&lt;Element that is being extended&gt;\_Extension**. For example, an extension class that augments the InventLocation table must not be named **InventLocation\_Extension**, because the risk of conflicts is too high.
 
-## Naming fields, field groups, indexes, relations, and other metadata nodes in extension elements
+## Naming fields, field groups, indexes, relations, and metadata elements added in extensions
 
-Fields, indexes, relations, and other metadata elements on extension elements must have a name that is unique across both the element that is being extended and other extension elements. Therefore, these metadata nodes must include a term, abbreviation, or prefix that minimizes the risk of conflicts across models.
+Fields, field groups, indexes, relations, and metadata elements added in extensions must have a name that is unique across both the element that is being extended and other extension elements. Therefore, **these artifacts should include a prefix** that minimizes the risk of conflicts across models. In addition, these artifacts should have clear terms and abbreviations so that they can be easily understood. 
 
 + Include a prefix, term, or abbreviation at the beginning of the name of the metadata node. For example, an approving worker foreign key field is added as part of a table extension, and **WHS** is one of prefixes that are dedicated to other elements in the hosting model. In this case, the field might be named **WHSApprovingWorker**.
 
-## Naming members in extension classes
-Class-level variables, and methods on extension classes, must have a name that is unique across both the type that is being augmented and all other extension classes that augment the same type.
+## Naming variables and methods added in extension classes
+Variables and methods added in extension classes must have a name that is unique across both the type that is being extended and all other extension classes that extend the same type. Therefore, **these variables and methods should include a prefix** that minimizes the risk of conflicts across models. 
 
 + Include a prefix, term, or abbreviation at the beginning of the member name. For example, an approving worker class-level variable might be named **WHSApprovingWorker** if **WHS** is one of the prefixes that are used by other elements in the model. An **approveWork** method might be named **WHSApproveWork** if **WHS** is one of the prefixes that are used by other elements in the hosting model.
