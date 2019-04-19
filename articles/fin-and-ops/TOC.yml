@@ -2310,6 +2310,10 @@
             href: ../financials/localizations/rus-fixed-asset-transfer.md
           - name: Unified printing forms for fixed assets 
             href: ../financials/localizations/printing-forms-fixed-assets.md
+          - name: Working clothes/special rigging accounting (Russia)
+            href: ../financials/localizations/rus-working-clothes-instruments-accounting.md
+          - name: Not valuable fixed assets (NVFAs) (Russia)
+            href: ../financials/localizations/rus-not-valuable-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Invoices for payment
@@ -4295,10 +4299,6 @@
         href: ../supply-chain/warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
       - name: Create a mobile device menu item for license plate consolidation
         href: ../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-      - name: Warehouse Mobile Devices Portal (WMDP)
-        href: ../supply-chain/warehousing/warehouse-mobile-devices-portal.md
-      - name: Warehouse mobile device display settings
-        href: ../supply-chain/warehousing/change-warehouse-mobile-device-displays.md
       - name: Mixed license plate receiving on a mobile device
         href: ../supply-chain/warehousing/mixed-license-plate-receiving.md
       - name: Configure Display older batches within warehouse on a mobile device

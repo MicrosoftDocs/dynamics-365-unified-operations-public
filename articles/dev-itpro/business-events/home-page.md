@@ -38,7 +38,7 @@ In Finance and Operations, a business action that a user performs can be either 
 
 ## Prerequisites
 
-- Business events can be consumed via Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such asset(s) to use business events.
+- Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
 
 > [!IMPORTANT]
 > Business events must not be considered a mechanism for exporting data out of Finance and Operations. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
@@ -51,7 +51,7 @@ A developer must use extensions to implement new business events. For more infor
 
 ## Business event catalog
 
-The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
+The business events catalog can be accessed from **System administration > Set up > Business events**. The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
 
 The category of a business event identifies its source in Finance and Operations. Business events that originate from the workflow system are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name. 
 
@@ -66,6 +66,9 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
 The next step is to manage the endpoints.
+
+## Business events batch processor
+To process the business events, the business events batch processing job must be scheduled in a recurring schedule like any batch job in Finance and Operations. The batch job can be accessed from **System administration > Periodic tasks > Business events**.
 
 ## Managing endpoints
 
@@ -133,7 +136,7 @@ To create an endpoint, you need to create and configure an **Azure Event Grid To
 
 ![Business events Event Grid Endpoint value](../media/BusinessEventsEGTopicsEndpoint.PNG)
 
-Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Crendtial can be found under the Event Grid you created in the **Access Keys** section under Settings. 
+Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Credential can be found under the Event Grid you created in the **Access Keys** section under Settings. 
 
 ![Business events Event Grid credentials value](../media/BusinessEventsEGKeyValue.PNG)
 
@@ -158,7 +161,7 @@ After business events are activated, they appear on the **Active events** tab.
 
 From the **Active events** tab, you can inactivate business events. The system won't do outbound processing for inactivated events.
 
-After businessevents are inactivated, they appear on the **Inactive events** tab.
+After business events are inactivated, they appear on the **Inactive events** tab.
 
 ![Inactive business events](../media/businesseventsinactivetab.png)
 
