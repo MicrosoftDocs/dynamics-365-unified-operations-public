@@ -76,7 +76,7 @@ Organizations might need additional information about time-off requests. You can
 Organizations might require reason codes for specific leave types when employees submit time off. This might be due to company policy or regulatory requirements. You can now specify which leave types require a reason code, and you can require employees to provide a reason code for the leave type on their time-off requests.
 
 ### Provide leave and absence transaction list for HR
-Tracking employee time off and understanding how time off is calculated not only helps HR answer employee questions, but also ensures accurate time off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests) to see the reasons behind balances. 
+Tracking employee time off and understanding how time off is calculated not only helps HR answer employee questions, but also ensures accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests) to see the reasons behind balances. 
 
 ## Coming soon
 
