@@ -2279,6 +2279,8 @@
             href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Fixed assets
           items: 
+          - name: Managing fixed assets
+            href: ../financials/localizations/rus-fixed-assets.md
           - name: Set up fixed assets
             href: ../financials/localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
