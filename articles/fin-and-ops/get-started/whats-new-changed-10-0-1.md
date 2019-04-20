@@ -43,6 +43,37 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 Due to integration scenarios with external systems, such as the Prospect to cash integration, certain fields on Global address book and customer records were marked as externally maintained with the expectation that these values would be maintained in an external system. The **Enable edit for externally maintained fields** option has been added to the Global address book parameters (**Organization administration > Global address book > Global address book parameters**) with the default value of **No**.  If the user scenario requires these fields to be available for edit even though maintained externally, the value can be set to **Yes**.
 
+## Russian features
+
+### Journal of alcohol sales
+This functionality includes printing the journal of Alcohol retail sales in statutory format.
+
+### Electronic format of accounting reporting
+Electronic reporting configuration is available, which allows you to generate the accounting reporting in electronic format, and contains data calculated based on the configured Financial report. Find more details in the article [Accounting reporting in electronic format (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-accounting-reporting)
+
+You can find more details on how to do the following tasks in the article [Financial reporting (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-financial-reports):
+- Set up financial reports.
+- Configure Electronic reporting to use the results of financial report calculations.
+- Configure electronic messages to generate the financial report and store the results.
+
+You can find more details on how to configure printing financial reports in Excel in the article [Configure financial reports in Excel (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-excel-financial-report)
+
+### Assessed tax registers and electronic format of declaration version 5.05 (from 2019)
+This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. You can find more details in the article [Assessed tax declaration (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-assessed-tax-declaration)
+
+### Transport tax registers and electronic format of declaration
+This functionality allows you to keep technical and tax information for vehicles, calculate transport tax registers, and generate transport tax declaration in electronic format.
+
+### Land tax registers and electronic format of declaration version 5.06 (from 2018)
+This functionality allows you to keep technical and tax information for ground areas, calculate land tax registers, and generate land tax declaration in electronic format, applicable from the annual reporting for year 2018.
+
+### VAT declaration in electronic format version 5.06 (from 2019)
+This functionality allows you to generate a VAT statement in XML format that is applicable from the reporting for year 2019.
+For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration).
+
+### Sales, purchase books, and factures journals in electronic format (from 2019)
+This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. You can find more details on how to work with sales and purchase books in the article [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
+
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
