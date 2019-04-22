@@ -46,25 +46,25 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2239. Numbers in parentheses refer to support numbers in Lifecycle Services (LCS).
 
-### Compensation region, Compensation level, Benefit Option and Skill Type CDS entities updated to include customer field support
-With this release, these CDS entities have been updated to include the ability to include custom field added through Talent (Core HR).
+### Compensation region, Compensation level, Benefit option and Skill type entities in Common Data Service updated to include customer field support
+With this release, these Common Data Service entities have been updated to include the ability to include custom field added through Talent (Core HR).
 
-### New CDS entity support for: Compensation vesting rules, Compensation variable plan, Variable compensation
-With this release, Compensation vesting rules, Compensation variable plan, and Variable compensation entities have been added to CDS. These entities also support custom fields added through Talent (Core HR).
+### New Common Data Service entity support for Compensation vesting rules, Compensation variable plan, Variable compensation
+With this release, Compensation vesting rules, Compensation variable plan, and Variable compensation entities have been added to Common Data Service. These entities also support custom fields added through Talent (Core HR).
 
 ### PowerBI refresh issues (314342)
 This change corrects an issue with PowerBI reports refreshing correctly. 
 
-### Unable to click directly through on Transition Tasks in Employee Self-Service (303309)
+## Unable to click directly through on transition tasks in employee self-service (303309)
 This change enables users with the employee role to select and update transition tasks from the Talent to-do list. 
 
-### Performance Feedback email message updated (309615)
+### Performance feedback email message updated (309615)
 With this change, a confirmation message displays when feedback is successfully submitted.
 
-### Missing tables to in word-template (308048)
-With this change, when creating a word template with employee and skill information, only the skills for the selected employee appear in the word document.  
+### Missing tables in Word template (308048)
+With this change, when creating a Word template with employee and skill information, only the skills for the selected employee appear in the Word document.  
 
-### When applying an offboarding checklist an error is displayed. (299877)
+### When applying an offboarding checklist, an error is displayed. (299877)
 This change corrects an issue when applying an offboarding checklist directly from the worker form. 
 
 ## In preview
