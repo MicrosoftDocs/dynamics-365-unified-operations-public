@@ -55,7 +55,7 @@ With this release, Compensation vesting rules, Compensation variable plan, and V
 ### PowerBI refresh issues (314342)
 This change corrects an issue with PowerBI reports refreshing correctly. 
 
-## Unable to click directly through on transition tasks in employee self-service (303309)
+### Unable to click directly through on transition tasks in employee self-service (303309)
 This change enables users with the employee role to select and update transition tasks from the Talent to-do list. 
 
 ### Performance feedback email message updated (309615)
