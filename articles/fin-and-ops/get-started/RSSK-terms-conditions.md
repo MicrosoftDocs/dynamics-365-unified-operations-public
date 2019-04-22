@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Topic name
-description: Topic description
+title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
+description: These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates).
 author: ShellyBakke
 manager: AnnBe
-ms.date: 04/16/2019
+ms.date: 04/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,11 +28,9 @@ ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.3
 
 ---
-# Topic name
+# MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 
 [!include [banner](../includes/banner.md)]
-
-# MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 
 # MICROSOFT DYNAMICS  PROJECT “RUSHMORE” STORE STARTER KIT (PRIVATE PREVIEW)
 
