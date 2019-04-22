@@ -28,13 +28,11 @@ ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.3
 
 ---
-# Topic name
+# MICROSOFT PREVIEW SOFTWARE LICENSE TERMS 
 
 [!include [banner](../includes/banner.md)]
 
-# MICROSOFT PREVIEW SOFTWARE LICENSE TERMS 
-
-# MICROSOFT DYNAMICS PROJECT “RUSHMORE” SOFTWARE DEVELOPMENT KIT (PRIVATE PREVIEW) 
+## MICROSOFT DYNAMICS PROJECT “RUSHMORE” SOFTWARE DEVELOPMENT KIT (PRIVATE PREVIEW) 
 
 These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THIS AGREEMENT, YOU HAVE THE RIGHTS BELOW.  BY USING THE SOFTWARE, YOU ACCEPT THIS AGREEMENT.
 
