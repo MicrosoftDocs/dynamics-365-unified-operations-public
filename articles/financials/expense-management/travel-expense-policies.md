@@ -46,9 +46,13 @@ You can define three types of policies:
 
 - Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition. 		
  
-  - Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.        
- 
-  You can also set up a date range for which expense policies are in effect. For example, airline fares for flights between Denmark      
-  and New York City can be expensive during the peak holiday travel season. You can define a flight expense rule that restricts the      
-  cost of flights to New York City to a limit of DKK 5000, and you can specify that this rule be in effect between March 15 and      
-  September 15.
+ - Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.        
+
+# Policy tips
+There are a few suggestions that may help in creating new policies for expense management. 
+* Policies are date effective and won't take effect if the policy is created with a date after the date the expense occured. For example if you are creating a new policy as of today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy. 
+* When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type. Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line. 
+
+# When to evaluate policies
+
+In expense management parameters, there is an option to either evaluate expense management policies on line save or on expense report submit. You may want to choose to evaluate on line save to ensure users have earlier visibility into what they need to do to complete their expense report all at once, versus delaying policy evaluation and saving some time on line save to have valiation occur at the end during submission to workflow. 
