@@ -46,10 +46,6 @@
     "live": [
       "Publish",
       "Pdf"
-    ],
-    "pdf-test": [
-      "Publish",
-      "Pdf"
     ]
   },
   "need_generate_pdf_url_template": true,
