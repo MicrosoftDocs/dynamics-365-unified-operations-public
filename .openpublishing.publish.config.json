@@ -1,5 +1,4 @@
 {
-  "need_generate_pdf": true,
   "docsets_to_publish": [
     {
       "docset_name": "d365F-O",
@@ -48,7 +47,7 @@
       "Publish",
       "Pdf"
     ],
-    "eag": [
+    "pdf-test": [
       "Publish",
       "Pdf"
     ]
