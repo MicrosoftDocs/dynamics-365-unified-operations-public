@@ -49,17 +49,17 @@ Due to integration scenarios with external systems, such as the Prospect to cash
 This functionality includes printing the journal of Alcohol retail sales in statutory format.
 
 ### Electronic format of accounting reporting
-Electronic reporting configuration is available, which allows you to generate the accounting reporting in electronic format, and contains data calculated based on the configured Financial report. Find more details in the article [Accounting reporting in electronic format (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-accounting-reporting)
+Electronic reporting configuration is now available. It allows you to generate accounting reporting in electronic format, and contains data calculated based on the configured Financial report. For more information, see [Accounting reporting in electronic format (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-accounting-reporting)
 
-You can find more details on how to do the following tasks in the article [Financial reporting (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-financial-reports):
+You can find more details on how to do the following tasks in [Financial reporting (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-financial-reports):
 - Set up financial reports.
 - Configure Electronic reporting to use the results of financial report calculations.
 - Configure electronic messages to generate the financial report and store the results.
 
-You can find more details on how to configure printing financial reports in Excel in the article [Configure financial reports in Excel (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-excel-financial-report)
+For more information about configuring printing for financial reports in Excel, see [Configure financial reports in Excel (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-excel-financial-report)
 
 ### Assessed tax registers and electronic format of declaration version 5.05 (from 2019)
-This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. You can find more details in the article [Assessed tax declaration (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-assessed-tax-declaration)
+This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. For more information, see [Assessed tax declaration (Russia)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-assessed-tax-declaration)
 
 ### Transport tax registers and electronic format of declaration
 This functionality allows you to keep technical and tax information for vehicles, calculate transport tax registers, and generate transport tax declaration in electronic format.
