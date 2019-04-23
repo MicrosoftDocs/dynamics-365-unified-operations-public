@@ -34,19 +34,19 @@ ms.dyn365.ops.version: Talent March 2018 update
 
 [!include [banner](includes/banner.md)]
 
-The full version of Microsoft Dynamics 365 for Talent includes core human resources (HR) capabilities plus Attract and Onboard, which provide recruiting and onboarding experiences for your organization. You can also purchase a standalone version of the Onboard app. Depending on whether you purchase the full version of Talent or the standalone Onboard app, the provisioning experience differs somewhat.
+The full version of Microsoft Dynamics 365 for Talent includes core human resources (HR) capabilities plus Attract and Onboard, which provide recruiting and onboarding experiences for your organization. You can also purchase a standalone version of the Onboard app. Depending on whether you purchase the full version of Talent or the standalone Onboard app, the provisioning experience is slightly different.
 
 The Onboard app is automatically provisioned when you start a trial or purchase it online. The full version of Talent requires Microsoft Dynamics Lifecycle Services (LCS) for provisioning, but the standalone Onboard app doesn't require LCS.
 
 With the standalone Onboard app, you don't select the exact location where it should be provisioned. Instead, the following factors determine where Onboard is provisioned:
 
-- The location of your organization's existing Microsoft PowerApps environments, if any
-- If no PowerApps environments exist, the location of the organization's existing tenant
-- The data centers that Talent currently supports
+- The location of your organization's existing Microsoft PowerApps environments, if any.
+- If no PowerApps environments exist, the location of the organization's existing tenant.
+- The data centers that Talent currently supports.
 
 The Onboard app is provisioned only in supported countries or regions. The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency. For a list of supported countries and regions, see [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/get-started/availability).
 
-The following illustration shows the logic used for provisioning the standalone Onboard app: 
+The following illustration shows the logic used for provisioning the standalone Onboard app.
 
 [![Provisioning process for the standalone Onboard app, based on country/region](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
