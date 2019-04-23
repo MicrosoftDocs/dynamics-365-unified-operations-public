@@ -78,7 +78,7 @@ To set up budgeting parameters for regulatory accounting, follow these steps.
 
 ## Select source documents for budget control
 
-You can specify which method of purchasing is used with general budget reservations when funds are reserved for planned purchases.
+To earmark budget funds for this purchasing method, configure the general budget reservation as a source document. 
 
 To select source documents, follow these steps.
 
@@ -91,13 +91,13 @@ When you create a general budget reservation, budget source-tracking entries and
 
 ## Set up general ledger information for general budget reservations
 
-To help guarantee that general ledger accounts are fairly stated, you must configure how general budget reservations are used to record accounting commitments.
+To help guarantee that general ledger accounts are correct, you must configure how general budget reservations are used to record accounting commitments.
 
 To set up general ledger information for general budget reservations, follow these steps.
 
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 2. On the **Ledger** tab, on the **Accounting rules** FastTab, set the **Use posting definitions** option to **Yes**. Then, in the confirmation message box that appears, select **Yes**.
-3. Select the **General budget reservations** check box. Then close the Infolog message that appears.
+3. Select the **General budget reservations** check box. Then close the notification.
 
     When you select the **General budget reservations** check box, the **Enable encumbrance process** and **Enable pre-encumbrance process** check boxes are automatically selected and aren't available. These two processes are required when general budget reservations are used.
 
@@ -152,7 +152,7 @@ To create a general budget reservation type, follow these steps.
 7. Optional: If an approval task or other task is required before the reservation can be posted, on the **Workflow** FastTab, in the **Workflow** field, select a general budget reservation workflow. If you leave this field blank, a workflow isn't required in order to post general budget reservations of this type.
 8. Optional: If different reservation types use unique number sequences, on the **Number sequence** FastTab, in the **Number sequence code** field, select the number sequence code that this reservation type should use.
 
-    If a document number isn't configured for a reservation type, the budget parameters document number is used.
+    If a number sequence isn't configured for a reservation type, the budget parameters number sequence is used.
 
 9. Repeat steps 2 through 8 to create any additional reservations types that you require.
 
