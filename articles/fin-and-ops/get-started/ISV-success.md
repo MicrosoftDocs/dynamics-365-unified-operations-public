@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.3
 
 These Supplemental Preview Terms (“Preview Terms”) are in addition to and supplement the Microsoft Dynamics 365 Insider Program Agreement (“Program Agreement” and, as supplemented by these Preview Terms, the “Agreement”) that Participant accepted.  All terms with the initial letters capitalized will have the same meaning given to them in the Program Agreement, unless otherwise specified in these Preview Terms.
 
-### SECTION 1.  DEFINITIONS. 
+### SECTION 1  DEFINITIONS. 
 
 **“DRI”** means designated responsible individual.
 
