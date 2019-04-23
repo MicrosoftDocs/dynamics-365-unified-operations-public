@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
-ms.search.region: China
+ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2019-04-01
