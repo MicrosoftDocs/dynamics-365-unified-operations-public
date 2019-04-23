@@ -189,12 +189,14 @@ HTTP/1.1 200 OK
 ```
 
 **Input parameters**
+
 | Parameter         | Description |
 |-------------------|-------------|
 | string executionId | The execution ID of the import. |
 | string entityName | The name of the entity to get the error file for. |
 
 **Output parameters**
+
 | Parameter         | Description |
 |-------------------|-------------|
 | string errorkeysfileurl | The URL of the error keys file, if the file is available. If the error file is still being generated, or if no errors exist, the method returns an empty string. |
