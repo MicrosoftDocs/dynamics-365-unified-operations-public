@@ -95,8 +95,21 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
   
-  ##Retail peripheral support in Android
+## Dedicated hardware station support for the hybrid Android app
   
-Starting in 8.1.3, retail peripheral support has been added to the hybrid Android app. In the same way that the Retail Modern POS has built-in support for peripheral devices, the Android app can also now use the 'IPC' hardware station to connect to peripherals. 
+Starting in 8.1.3, dedicated hardware station support has been added to the hybrid Android app. In the same way that the Retail Modern POS has built-in support for peripheral devices, the Android app can also now use the 'Dedicated' hardware station to connect to peripherals. 
 
-Due to the nature of Android and how merchants most typically have asked to use it as a point of sale client, network device conne
+Out of box, the hybrid Android app supports using payment terminals and receipt printers over network connections. Communicating with devices over a network typically requires adherence to a proprietary communication protocol specified by the manufacturer. For the hybrid Android app, out of box integrations are provided for the Dynamics 365 payment connector for Adyen and Epson receipt printers. 
+
+### Set up peripherals to work with the hybrid Android app
+
+To enable direct hardware support for the hybrid Android app, set up a dedicated hardware station in the same way it would be set up for MPOS. Instructions for setting up the dedicated, or IPC, hardware station can be found in the [Retail peripherals overview document](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-peripherals-overview#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1)
+
+      Note: The dedicated hardware station provided with demo data should not be used with the hybrid Android app. To test the hybrid Android app in an environment with demo data, delete the existing hardware stations and create a new dedicated hardware station. To do this, navigate to **Retail > Channels > Retail stores > All retail stores**. Select the store that will be used, typically "HOUSTON" open for editing. In the store details form, scroll down to the 'Hardware stations' fassttab. Remove the existing 'Dedicated' hardware station, then click 'Add' to add a new hardware station of type 'Dedicated'. A description is optional. No other details are neccessary for the hardware station. 
+
+To set up the out of box payment connector, follow the standard setup steps noted in the [documentation for the payment connector](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) skipping the part labeled "Update the Modern POS or IIS Hardware Station configuration". 
+
+To set up support for the Epson printer, the printer first must support the Epson SOAP HTTP interface and have the service "ePOS-Print" enabled. This parameter is enabled through a web interface that allows users to access Epson network enabled printers through a browser. This web interface is typically reached by opening a web browser and typing http://<device ip address>>. For more information about configuring ePOS-Print, consult documentation provided by Epson. 
+      
+Once the Epson printer has ePOS-Print enabled, turn the printer off and turn it back on. When the device comes back online, a small receipt should print indicating the device's IP address. Note the device's IP address and navigate to the POS register form in Dynamics 365, then select the register being set up and open for editing. Under the 'REGISTER' tab in the ribbon area, note the subheading labeled 'Hardware' with an available action called 'Configure IP addresses' use this action to specify the IP address for the printer that is being used by this specific register. If the 'IP address' field is not available for the printer, check the hardware profile assigned to the register to ensure that the printer type is set to 'Network'. Port is not required for the out of box support for Epson printers.  
+
