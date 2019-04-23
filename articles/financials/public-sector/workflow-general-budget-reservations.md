@@ -56,10 +56,10 @@ To create a general budget reservation workflow, follow these steps.
 
 1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting workflows**.
 2. Select **New**.
-3. In the **Create workflow** dialog box, select the **General budget reservation workflow** template, and then select **Create workflow**.
+3. In the **Create workflow** slider, select the **General budget reservation workflow** template.
 4. In the workflow editor, in the **Workflow elements** pane, under **Approvals**, select **Approve general budget reservation**, and then drag it so that it's under the **Start** element on the canvas.
 5. Drag the border of the **Start** element to create a connecting line to the approval element.
-6. Select the approval element, and then, on the Action bar, select **Basic settings** to configure the element.
+6. Select the approval element, and then select **Basic settings** to configure the element.
 
 ## Optional: Configure manual and automated tasks for a general budget reservation workflow
 
@@ -73,7 +73,7 @@ You can use a combination of these tasks in the same workflow. Manual review tas
 - If you assign the manual review task to multiple users, the workflow can continue after any one of those users completes the task.
 - If you assign an approval workflow element to multiple users, you can specify whether all those users must approve the document before the workflow can continue.
 
-When you define the steps for the review in the description section of the workflow, you assign the task to a user who is authorized to review the lines that are in the general budget reservation.
+You define the **Work item subject** and **Work item instructions** of the task and assign it to a user who is authorized to review the lines that are in the general budget reservation.
 
 ## Optional: Create conditional decisions
 
@@ -107,8 +107,8 @@ The **Errors and warnings** pane at the bottom of the workflow editor shows mess
     1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting workflows**.
     2. Select the workflow that you created.
     3. On the Action Pane, on the **Workflow** tab, in the **Manage** group, select **Versions**.
-    4. In the **Workflow versions** dialog box, select the version of the workflow that you want.
-    5. Select **Make active**, and then select **OK**.
+    4. In the **Workflow versions** slider, select the version of the workflow that you want.
+    5. Select **Make active**, and then select **Close**.
 
 ## Submit a general budget reservation to the workflow system
 
