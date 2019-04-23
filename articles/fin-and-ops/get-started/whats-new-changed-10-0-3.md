@@ -49,8 +49,8 @@ To learn about the new features and changes in the latest releases of Microsoft 
 ### Bug fixes
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.3, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/).
 
-### Platform update 26
-Microsoft Dynamics 365 for Finance and Operations version 10.0.2 includes Platform update 26. To learn more about Platform update 26, see [Preview features in Finance and Operations platform update 26 (May 2019)](whats-new-platform-update-27.md).
+### Platform update 27
+Microsoft Dynamics 365 for Finance and Operations version 10.0.3 includes Platform update 27. To learn more about Platform update 27, see [Preview features in Finance and Operations platform update 27 (June 2019)](whats-new-platform-update-27.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
