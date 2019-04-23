@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Retail version 10.0.2
+title: Preview features in Dynamics 365 for Retail version 10.0.3
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 04/05/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
-ms.search.validFrom: 2019-04-05
+ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
 
 ---
@@ -36,19 +36,10 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail. 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.2 (May 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2).
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.3 (June 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
 
-## Fiscal registration service integration sample for Czech Republic
 
-To meet local fiscal requirements for cash registers in the Czech Republic, Dynamics 365 for Retail version 10.0.2 includes a sample integration of the point of sale (POS) with an external fiscal registration service. 
 
-For more information, see [Fiscal registration service integration sample for Czech Republic](../../retail/localizations/emea-cze-fi-sample.md).
-
-## Shipping discounts
-
-You can now set up shipping promotions to enable free or discounted shipping across channels.
-
-For more information, see [Shipping discount overview](../../retail/retail-shipping-discount.md).
 
 ## Additional resources
 
