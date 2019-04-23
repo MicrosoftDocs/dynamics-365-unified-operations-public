@@ -35,6 +35,9 @@ Data task automation in Microsoft Dynamics 365 for Finance and Operations lets y
 > [!IMPORTANT]
 > Data task automation isn't currently supported for on-premises environments.
 
+> [!IMPORTANT]
+> The user who executes data task automation must be in the same tenant as the Finance and Operations Environment and LCS Project.
+
 We recommend the following approach for data task automation.
 
 1. Identify the data-related tasks that will benefit from automation.
