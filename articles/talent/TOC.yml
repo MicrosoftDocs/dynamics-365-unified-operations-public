@@ -115,29 +115,29 @@
       href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
-    - name: Creating a process template in Attract
+    - name: Create a process template in Attract
       href: Process-templates-Attract.md
-    - name: Creating, approving, and posting jobs in Attract
+    - name: Create, approve, and post jobs in Attract
       href: Creating-jobs-Attract.md
-    - name: Posting jobs to external sites from Attract
+    - name: Post jobs to external sites from Attract
       href: posting-jobs-external.md
-    - name: Sourcing with Talent Pools
+    - name: Source candidates with talent pools
       href: attract-talent-pools.md
     - name: Sourcing with LinkedIn Recruiter
       href: attract-linked-in-recruiter.md
-    - name: Hiring Process activities in Attract 
+    - name: Activities in the hiring processes 
       href: activities-attract.md
     - name: Interview scheduling and feedback
       href: interview-scheduling-feedback.md
     - name: Extensibility
       href: extensibility-attract.md
-    - name: Career site and candidate experiences
+    - name: Career site functionality in Attract
       href: career-site.md
-    - name: Setting up offer management
+    - name: Set up offer management
       href: offer-setup.md
-    - name: Creating, approving, and signing offers
+    - name: Create, approve, and sign offers
       href: creating-offers.md
-    - name: Creating and managing email templates
+    - name: Email templates
       href: email-templates.md
     - name: Security and role management in Attract
       href: security-attract.md
@@ -171,7 +171,7 @@
       href: courses.md
   - name: Define and manage a benefits program
     items:
-    - name: Manage a benefits program
+    - name: Define and manage a benefits program
       href: manage-benefit-program.md
     - name: Benefit eligibility policies
       href: benefit-eligibility-policies.md
@@ -179,7 +179,7 @@
       href: generate-aca-reports.md
     - name: Manage items lent to workers
       href: loan-items.md
-  - name: Gather information using questionnaires
+  - name: Questionnaires
     href: questionnaires.md
     items:
     - name: Design questionnaires
@@ -190,7 +190,7 @@
       href: evaluate-questionnaire-results.md
   - name: Workplace safety and compliance (United States)
     items:
-    - name: Respond to a request for personal data using Talent
+    - name: Respond to a request for personal data in Talent
       href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Form I-9 employment verification
       href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -204,11 +204,11 @@
     items:
     - name: Mobile workspaces
       items:
-      - name: Company directory
+      - name: Company directory mobile workspace
         href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: My team
+      - name: My team mobile workspace
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Publish a mobile workspace
+    - name: Publish mobile workspaces
       href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
   - name: Integration
     items:
@@ -226,7 +226,7 @@
     items:
     - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
       href: extensibility-examples.md
-    - name: Track changes in recruiter data
+    - name: Track changes in recruiting data
       href: process-auditing.md
     - name: Extensibility in Attract
       href: extensibility-attract.md
@@ -236,7 +236,7 @@
     items:
     - name: Office integration tutorial
       href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Use the Excel add-in
+    - name: Update entity data in Excel
       href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Create Open in Excel experiences
       href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -256,7 +256,7 @@
       items:
       - name: Plan your organizational hierarchy
         href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: Create an organization hierarchy
+      - name: Create an organizational hierarchy
         href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
       - name: Create a legal entity
         href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -265,7 +265,7 @@
     - name: Global address book
       href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-      - name: Plan how to configure the global address book
+      - name: Plan for the global address book and others
         href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
       - name: Configure the global address book
         href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -276,30 +276,30 @@
       items:
       - name: Workflow elements
         href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: Workflow actions
+      - name: Actions in workflow approval processes
         href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: Create a workflow
+      - name: Create workflows
         href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
         items:
         - name: Configure workflow properties
           href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure a manual task
+        - name: Configure manual tasks
           href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure an automated task
+        - name: Configure automated tasks
           href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure an approval process
+        - name: Configure approval processes
           href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure an approval step
+        - name: Configure approval steps
           href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure a manual decision
+        - name: Configure manual decisions
           href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure a conditional decision
+        - name: Configure conditional decisions
           href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure a parallel activity
+        - name: Configure parallel activities
           href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure a parallel branch
+        - name: Configure parallel branches
           href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Configure a line-item workflow
+        - name: Configure line-item workflows
           href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
       - name: Configure the message processing batch job
         href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -312,14 +312,14 @@
     - name: Alerts
       href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-      - name: Create alerts
+      - name: Create alert rules
         href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: Batch processing for alerts
+      - name: Batch processing of alerts
         href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json 
     - name: Case management
       href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
       items:
-      - name: Configure case security, processes, and categories
+      - name: Plan case security, processes, and categories
         href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Configure document management
       href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -337,7 +337,7 @@
       href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json     
   - name: Troubleshoot Talent
     items:
-    - name: Analytic reports are not updated
+    - name: Analytic reports aren't updated
       href: analytic-reports-not-updated.md
     - name: Can't create an environment in the PowerApps Admin center
       href: create-envi-powerapps-admin-ctr.md
