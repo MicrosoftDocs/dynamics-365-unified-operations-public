@@ -82,6 +82,34 @@
       }
     },
     "fileMetadata": {
+      "featureFlags": {
+        "dev-itpro/**/*.md": [
+          "show_learn_banner"
+        ],
+        "fin-and-ops/**/*.md": [
+          "show_learn_banner"
+        ],
+        "financials/**/*.md": [
+          "show_learn_banner"
+        ],
+        "supply-chain/**/*.md": [
+          "show_learn_banner"
+        ]
+      },
+      "learn_banner_products": {
+        "dev-itpro/**/*.md": [
+          "dynamics-finance-operations"
+        ],
+        "fin-and-ops/**/*.md": [
+          "dynamics-finance-operations"
+        ],
+        "financials/**/*.md": [
+          "dynamics-finance-operations"
+        ],
+        "supply-chain/**/*.md": [
+          "dynamics-finance-operations"
+        ]
+      },
         "feedback_product_url": {
           "retail/**/*.md": "https://ideas.dynamics.com"
         },
