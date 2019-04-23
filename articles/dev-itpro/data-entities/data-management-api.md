@@ -5,7 +5,7 @@ title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
 
 author: Sunil-Garg
-ms.date: 12/26/2018
+ms.date: 04/23/2019
 manager: AnnBe
 ms.topic: article
 ms.prod: 
@@ -64,6 +64,79 @@ The Data management framework's package API uses OAuth 2.0 to authorize access. 
 ## Import APIs
 
 The following APIs are used to import files (data packages).
+
+### GetImportStagingErrorFileUrl
+
+The GetImportStagingErrorFileUrl API is used to get the URL of the error file containing the input records that failed at the source to the staging step of import for a single entity. An empty string is returned if no error file is generated.
+
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportStagingErrorFileUrl
+
+	Body
+	{
+	    "executionId":"<string>",
+	    "entityName":"<string>"
+	}
+
+
+	Successful Response:
+
+	HTTP/1.1 200 OK
+	{
+	  "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+	  "value":"<errorfileurl>"
+	}
+
+**Input parameters**
+
+| Parameter     | Description |
+|---------------------|--------------------------------------|
+| string executionId          | Execution ID of import. |
+| string entityName        | Name of the entity for which to get the error file. |
+
+
+**Output parameters**
+
+| Parameter         | Description |
+|-------------------|-------------|
+| string errorkeysfileurl | The URL of the error file. The return value is empty if an error file was not generated. |
+
+
+### GenerateImportTargetErrorKeysFile
+
+The GenerateImportTargetErrorKeysFile API is used to generate an error file containing the keys of the import records that failed at the staging to target step of import for a single entity.  
+
+If this API returns true, then use the GetImportTargetErrorKeysFileUrl API to get the URL of the generated error keys file.
+
+
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GenerateImportTargetErrorKeysFile
+
+	Body
+
+	{
+	  "executionId":"<string>",
+	  "entityName":"<string>"
+	}
+
+	Successful Response:
+
+	HTTP/1.1 200 OK
+	{
+	  "@odata.context":"https://<baseurl>/data/$metadata#Edm.Boolean",
+	  "value": <errorsExist>
+	}
+
+**Input parameters**
+
+| Parameter     | Description |
+|---------------------|--------------------------------------|
+| string executionId          | Execution ID of import |
+| string entityName        | Name of the entity for which to get the error file |
+
+**Output parameters**
+
+| Parameter     | Description |
+|---------------------|--------------------------------------|
+| Boolean errorsExist     | true if there are import errors; false if there are no errors |
 
 ### GetImportTargetErrorKeysFileUrl
 
@@ -127,6 +200,7 @@ HTTP/1.1 200 OK
 | Parameter         | Description |
 |-------------------|-------------|
 | string errorkeysfileurl | The URL of the error keys file, if the file is available. If the error file is still being generated, or if no errors exist, the method returns an empty string. |
+
 
 ### GetAzureWritableUrl
 
