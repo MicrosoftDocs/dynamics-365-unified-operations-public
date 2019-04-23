@@ -95,7 +95,7 @@ c) remove, minimize, block, or modify any notices of Microsoft or its suppliers 
 d) use the software in any way that is against the law or to create or propagate malware; or 
 share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use (except as set forth in Section 1(b)), or transfer the software or this agreement to any third party. 
 
-**11 EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit http://aka.ms/exporting. 
+**11. EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit http://aka.ms/exporting. 
 
 **12. SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind. 
 
