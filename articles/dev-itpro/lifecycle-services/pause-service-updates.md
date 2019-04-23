@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 24
 This topic explains how to pause updates to your sandbox and production environments by using Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!IMPORTANT]
-> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers. For customers that are on all other versions (7.1, 7.2 and 8.0) you can take the update manually using the servicing flows.
+> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers. For customers that are on version 7.1, 7.2 or 8.0, you can take the update manually using the regular servicing flows.
 
 Microsoft updates your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in LCS. At that point, if you can't proceed with the update for some reason, you can pause it through LCS.
 
@@ -48,7 +48,7 @@ Only users (customers or partners) who are assigned to the **project owner** rol
 
 Staying current with service updates helps guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
 
-You can't pause updates through LCS if you're more than two updates behind the latest update that Microsoft has released. For example, if the last update that Microsoft released is version 8.1.3, customers who are using version 8.1.2 and version 8.1.1 **can** pause updates. However, a customer who is using version 8.1.0 **cannot** pause updates, because they are more than two updates behind.
+You can't pause updates through LCS if you're more than two updates behind the latest update that Microsoft has released. For example, if you are a customer that is on version 8.1 and higher, if the last update that Microsoft released is version 8.1.3, customers who are using version 8.1.2 and version 8.1.1 **can** pause updates. However, a customer who is using version 8.1.0 **cannot** pause updates, because they are more than two updates behind. For customers that are on version 7.3, you get platform updates only. So for example, if the last platform update that Microsoft released is Platform update 24, then customers that are on Platform Update 23 and Platform Update 22 **can** pause. However, if you are on Platform Update 21 then you **cannot** pause. 
 
 ## What can I pause?
 
@@ -57,7 +57,7 @@ If you decide to pause updates, you have two options:
 - Pause updates only to your production environment.
 - Pause updates to both your sandbox environment and your production environment.
 
-You can pause a maximum of two continuous updates at a time. (According to other information that is communicated to you, you can pause updates for up to three months. These two statements are consistent, because three months correspond to two updates.) For example, if you're using version 8.1.3, you can pause update version 10.0.0 and update version 10.0.1. However, you can't pause update version 10.0.2. In addition, in the month of April, you can pause up to next two updates. However, you will not be able to pause updates scheduled for July, August and later. 
+You can pause a maximum of two continuous updates at a time. (According to other information that is communicated to you, you can pause updates for up to three months. These two statements are consistent, because three months correspond to two updates.) For example, if you're using version 8.1.3, you can pause update version 10.0.0 and update version 10.0.1. However, you can't pause update version 10.0.2. In addition, in the month of April, you can pause up to next two updates. However, you will not be able to pause updates scheduled for July, August and later. Similarly, for customers on version 7.3 then for platform only updates if you are using platform update 23 then you can pause update 24 and update 25. But you cannot pause update 26. 
 
 > [!IMPORTANT]
 >  There is no way to pause more than two updates, regardless of your industry or business schedule. If you are more than 2 updates behind and you find a critical issue during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. This is only required if you are more than two updates behind and you are unable to use the pause updates functionality available in LCS to pause the update to production.
