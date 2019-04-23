@@ -73,7 +73,7 @@
       href: provisioning-talent.md
     - name: Remove Talent environments
       href: remove-talent-environment.md
-    - name: Provisioning for the Talent modular apps
+    - name: Provisioning for the Onboard app
       href: modular-app-tech-faq.md
     - name: Embed PowerApps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
