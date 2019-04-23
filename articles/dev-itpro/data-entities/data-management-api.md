@@ -67,7 +67,7 @@ The following APIs are used to import files (data packages).
 
 ### GetImportStagingErrorFileUrl
 
-The GetImportStagingErrorFileUrl API is used to get the url of the error file containing the input records that failed at the source to staging step of import for a single entity.  An empty string is returned, if no error file is generated.
+The GetImportStagingErrorFileUrl API is used to get the URL of the error file containing the input records that failed at the source to the staging step of import for a single entity. An empty string is returned if no error file is generated.
 
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportStagingErrorFileUrl
 
@@ -86,23 +86,23 @@ POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImp
 	  "value":"<errorfileurl>"
 	}
 
-Input Parameters
+Input parameters
 
 Parameter	Description
-string executionId	Execution Id of import
+string executionId	Execution ID of import
 string entityName	Name of the entity for which to get the error file
 
-Output Parameters
+Output parameters
 
 Parameter	Description
-String errorfileurl	The url of the error file.  The return value is empty if an error file was not generated. 
+String errorfileurl	The URL of the error file. The return value is empty if an error file was not generated. 
 
 
 ### GenerateImportTargetErrorKeysFile
 
 The GenerateImportTargetErrorKeysFile API is used to generate an error file containing the keys of the import records that failed at the staging to target step of import for a single entity.  
 
-If this API returns true, then use the GetImportTargetErrorKeysFileUrl API to get the url of the generated error keys file.
+If this API returns true, then use the GetImportTargetErrorKeysFileUrl API to get the URL of the generated error keys file.
 
 
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GenerateImportTargetErrorKeysFile
@@ -122,13 +122,13 @@ POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.Genera
 	  "value": <errorsExist>
 	}
 
-Input Parameters
+Input parameters
 
 Parameter	Description
-string executionId	Execution Id of import
+string executionId	Execution ID of import
 string entityName	Name of the entity for which to get the error file
 
-Output Parameters
+Output parameters
 
 Parameter	Description
 Boolean errorsExist	true if there are import errors; false if there are no errors
