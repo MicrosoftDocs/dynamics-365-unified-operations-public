@@ -47,17 +47,17 @@ To create a general budget reservation, follow these steps.
 3. In the **Budget reservation** dialog box, set the fields as required.
 
     - The reservation type determines the type of document that will relieve this general budget reservation: a purchase requisition, a purchase order, or a vendor invoice.
-    - If you select a purchase requisition in this dialog box, an upstream purchase requisition will be relieved. In this case, the reservation type must be set to **Purchase order** or **Vendor invoice** relieved.
+    - If you select a purchase requisition reference in this dialog box, an upstream purchase requisition will be relieved. In this case, the reservation type you select must be configured for **Purchase order** or **Vendor invoice** as the relieving document.
 
 4. Select **OK**.
 5. On the details page, on the header, set the fields as required.
-6. In the **General budget reservation lines** section, select **Add line**. Enter the information for the first line of your reservation. Repeat this step until you've entered all the lines.
+6. On the **General budget reservation lines** FastTab, select **Add line**. Enter the information for the first line of your reservation. Repeat this step until you've entered all the lines.
 
-    - If a purchase requisition applies to the budget reservation but wasn't referenced earlier in the **Budget reservation** dialog box, in the **Line details** section, you can select the purchase requisition line that the selected line in the budget reservation references. Items and services on the selected requisition line, together with the procurement category, are passed to the general budget reservation line. This behavior applies to both procurement catalog items and non-catalog items.
+    - If a purchase requisition applies to the budget reservation but wasn't referenced earlier in the **Budget reservation** dialog box, on the **Line details** FastTab, you can select the purchase requisition line that the selected line in the budget reservation references. Items and services on the selected requisition line, together with the procurement category, are passed to the general budget reservation line. This behavior applies to both procurement catalog items and non-catalog items.
     - The general budget reservation line won't reflect any child amounts on a referenced purchase requisition. These child amounts include discounts, charges, or taxes.
 
-7. If you use project accounting, in the **Line details** section, on the **Project** tab, set the fields as required.
-8. If you use project accounting, in the **General budget reservation lines** section, select **Committed costs**. The **Committed costs** page appears and shows the committed costs that are related to the selected line.
+7. If you use project accounting, on the **Line details** FastTab, on the **Project** tab, set the fields as required.
+8. If you use project accounting, on the **General budget reservation lines** FastTab, select **Committed costs**. The **Committed costs** page appears and shows the committed costs that are related to the selected line.
 9. When you've finished filling in the header and line values, either submit the reservation to the workflow system or post it, depending on your setup.
 
 ## View a general budget reservation
@@ -67,11 +67,11 @@ You can view the details of a general budget reservation, such as information ab
 1. Go to **Budgeting \> General budget reservations**.
 2. Select the document number of the reservation that you want to view. The details page appears.
 3. On the Action Pane, select **Accounting**, and then select **Subledger journal**, **View distributions**, or **Voucher** to see those entries.
-4. To view any related purchase requisition, select the **Line details** section, and then select the reference number of the purchase requisition.
+4. To view any related purchase requisition, on the **Line details** FastTab, select the reference number of the purchase requisition.
 5. To see a summary of the financial accounting, on the Action Pane, select **Manage \> Financial summary**. In the **Reservation line** list, you can select the line that you want to see details for.
 6. To see details of the budget reservation relief, on the Action Pane, select **Manage \> Relief details**. To see the original document that relieves this general budget reservation (such as an invoice or purchase order), select **View relieving document**.
 
-    You can also access the General budget reservation relief details page from the **General budget reservation financial summary** page by selecting **Relief details**.
+    You can also access the **General budget reservation relief details** page from the **General budget reservation financial summary** page by selecting **Relief details**.
 
 ## Modify a general budget reservation
 
@@ -103,7 +103,7 @@ If the reservation is in a workflow, recall the workflow status to **Draft**, fo
 
     Reservations can be canceled only if they have a reservation status and a workflow status of **Posted**. You can cancel only reservations that have no downstream relieving activity.
 
-3. On the Action Pane, select **Cancel**.
+3. On the Action Pane, select **General budget reservation \> Cancel**.
 4. Select **Yes**.
 
     - The general ledger and budget control updates occur, and the transaction is recorded in the transaction log.
@@ -129,12 +129,12 @@ If the reservation is in a workflow, recall the workflow status to **Draft**, fo
 
 There are three ways to consume or relieve a general budget reservation:
 
-- **Purchase requisition** – Reference the general budget reservation directly on a purchase requisition line. To use this approach, specify the budget reservation line in **Line details \> Details** when you create the requisition. Then submit the requisition to the workflow system. The reservation is relieved, or consumed, when the requisition is approved.
+- **Purchase requisition** – Reference the general budget reservation directly on a purchase requisition line. To use this approach, specify the budget reservation line on the **Line details** FastTab, on the **Details** tab when you create the requisition. Then submit the requisition to the workflow system. The reservation is relieved, or consumed, when the requisition is approved.
 
     General budget reservations that are relieved by using a purchase requisition can also be assigned to purchase agreements. They are associated with the various purchase agreement lines. When a purchase requisition is created, if a line on it is associated with an item or category that is defined on a purchase agreement, only the general budget reservations that were previously assigned to the purchase agreement can be relieved.
 
-- **Purchase order** – Reference the general budget reservation directly on a purchase order line. No purchase agreement is involved. To use this approach, specify the budget reservation line in **Line details \> General** when you create the purchase order. The reservation is relieved, or consumed, when the purchase order is confirmed.
-- **Vendor invoice** – Reference the general budget reservation directly on a vendor invoice. To use this approach, specify the budget reservation line in **Line details \> Line details**. The reservation is relieved when the vendor invoice is posted.
+- **Purchase order** – Reference the general budget reservation directly on a purchase order line. No purchase agreement is involved. To use this approach, specify the budget reservation line on the **Line details** FastTab, on the **General** tab when you create the purchase order. The reservation is relieved, or consumed, when the purchase order is confirmed.
+- **Vendor invoice** – Reference the general budget reservation directly on a vendor invoice. To use this approach, specify the budget reservation line on the **Line details** FastTab, on the **Line details** tab. The reservation is relieved when the vendor invoice is posted.
 
 After you post or confirm a document that references a general budget reservation, the budget reservation balance reflects the relieving amount. If you edit, cancel, or finalize the referencing document, the relieved amount shown isn't reduced or removed. There is no way to return a relieved amount to the balance on the referencing document.
 
@@ -146,17 +146,17 @@ Follow these steps to reference a general budget reservation on a purchase requi
 
     - Go to **Procurement and sourcing \> Purchase requisitions \> All purchase requisitions**.
     - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
-    - Go to **Accounts payable \> Vendor invoices \> Pending vendor invoices**.
+    - Go to **Accounts payable \> Invoices \> Pending vendor invoices**.
 
 2. Select **New** to create a new document, or modify an existing draft document.
 3. Establish the reference, and post the document.
 
-    To more easily identify the general budget reservation that you want, use Advanced selection options under the reference field.
+    To more easily identify the general budget reservation that you want, select **Advanced selection options** under the reference field.
 
-4. Select **Financials**, and then select **Distribute amounts**.
+4. On the Action pane, on the **Financials** tab, select **View distributions**.
 
-    - The ledger dimension field on the new accounting distributions (parent and child) is set to the ledger dimension from the accounting distribution for the budget reservation line.
-    - The reference distribution on the new accounting distributions (parent and child) references the accounting distribution for the budget reservation line.
+    - The ledger account on the new accounting distributions (parent and child) is set to the ledger account from the accounting distribution of the general budget reservation line.
+    - The reference distribution on the new accounting distributions (parent and child) references the accounting distribution for the general budget reservation line.
 
 ## Carrying forward general budget reservations
 
