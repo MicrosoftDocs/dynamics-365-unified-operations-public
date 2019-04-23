@@ -86,16 +86,19 @@ POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImp
 	  "value":"<errorfileurl>"
 	}
 
-Input parameters
+**Input parameters**
 
-Parameter	Description
-string executionId	Execution ID of import
-string entityName	Name of the entity for which to get the error file
+| Parameter     | Description |
+|---------------------|--------------------------------------|
+| string executionId          | Execution ID of import. |
+| string entityName        | Name of the entity for which to get the error file. |
 
-Output parameters
 
-Parameter	Description
-String errorfileurl	The URL of the error file. The return value is empty if an error file was not generated. 
+**Output parameters**
+
+| Parameter         | Description |
+|-------------------|-------------|
+| string errorkeysfileurl | The URL of the error file. The return value is empty if an error file was not generated. |
 
 
 ### GenerateImportTargetErrorKeysFile
@@ -122,17 +125,18 @@ POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.Genera
 	  "value": <errorsExist>
 	}
 
-Input parameters
+**Input parameters**
 
-Parameter	Description
-string executionId	Execution ID of import
-string entityName	Name of the entity for which to get the error file
+| Parameter     | Description |
+|---------------------|--------------------------------------|
+| string executionId          | Execution ID of import |
+| string entityName        | Name of the entity for which to get the error file |
 
-Output parameters
+**Output parameters**
 
-Parameter	Description
-Boolean errorsExist	true if there are import errors; false if there are no errors
-
+| Parameter     | Description |
+|---------------------|--------------------------------------|
+| Boolean errorsExist     | true if there are import errors; false if there are no errors |
 
 ### GetImportTargetErrorKeysFileUrl
 
@@ -185,17 +189,16 @@ HTTP/1.1 200 OK
 ```
 
 **Input parameters**
-
 | Parameter         | Description |
 |-------------------|-------------|
 | string executionId | The execution ID of the import. |
 | string entityName | The name of the entity to get the error file for. |
 
 **Output parameters**
-
 | Parameter         | Description |
 |-------------------|-------------|
 | string errorkeysfileurl | The URL of the error keys file, if the file is available. If the error file is still being generated, or if no errors exist, the method returns an empty string. |
+
 
 ### GetAzureWritableUrl
 
