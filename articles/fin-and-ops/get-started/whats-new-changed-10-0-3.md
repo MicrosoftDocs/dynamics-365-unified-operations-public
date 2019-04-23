@@ -1,0 +1,68 @@
+---
+# required metadata
+
+title: Preview features in Finance and Operations version 10.0.3 (June 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June.
+author: tonyafehr
+manager: AnnBe
+ms.date: 04/23/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: tfehr
+ms.search.scope:  Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: tfehr
+ms.search.validFrom:  
+ms.dyn365.ops.version: Release 10.0.3
+
+---
+# Preview features in Finance and Operations version 10.0.3 (June 2019)
+
+[!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
+
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June and has a build number of XXXX. For more information about version 10.0.3, see [Additional resources](whats-new-changed-10-0-3.md#additional-resources).
+
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3).
+
+
+
+
+
+
+## Additional resources
+
+### Bug fixes
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.3, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=313841&dbType=3&qc=a4ba239cdec6f528657f529750b68845b75580e5fdb0ad6060c4bc33f8da67f8).
+
+### Platform update 26
+Microsoft Dynamics 365 for Finance and Operations version 10.0.2 includes Platform update 26. To learn more about Platform update 26, see [Preview features in Finance and Operations platform update 26 (May 2019)](whats-new-platform-update-26.md).
+
+### Dynamics 365 April '19 release notes
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+### Removed and deprecated features
+The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to be made to the compiler.
