@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Topic name
-description: Full description that appears in the search results. Often the first paragraph of your topic.
+title: Microsoft Dynamics Insider Program
+description: These Supplemental Preview Terms (“Preview Terms”) are in addition to and supplement the Microsoft Dynamics 365 Insider Program Agreement (“Program Agreement” and, as supplemented by these Preview Terms, the “Agreement”) that Participant accepted.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,10 +29,8 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Topic name
-[!include [banner](../includes/banner.md)] 
-
 # Microsoft Dynamics Insider Program
+[!include [banner](../includes/banner.md)] 
 
 ## Supplemental Preview Terms
 
