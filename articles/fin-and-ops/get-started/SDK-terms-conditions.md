@@ -5,7 +5,7 @@ title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 description: These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). 
 author: ShellyBakke
 manager: AnnBe
-ms.date: 04/22/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,6 +53,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 **3.  PACKAGE MANAGERS.** The software includes package managers that give you the option to download other Microsoft and third party software packages to use with your customization packages.  Those packages obtained through a package manager are under their own licenses, and not this agreement. Microsoft does not distribute, license, or provide any warranties for any of the third party packages.
 
 **4.  TIME-SENSITIVE SOFTWARE.** 
+
 **a) Period.** This agreement is effective on your acceptance and terminates on first availability of a commercial release of the software or (ii) upon termination by Microsoft. Microsoft may extend this agreement in its discretion.
 
 **b) Notice.** You may receive periodic reminder notices of this date through the software.
