@@ -41,13 +41,13 @@ General budget reservations are available only if the following conditions are m
 - You have Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) or a later version.
 - The **Public sector**, **Encumbrance process**, and **Pre-encumbrance process** configuration keys are turned on.
 - You're using posting definitions. (However, you don't have to use posting definitions if you don't activate commitment accounting.)
-- Budget control configuration is activated and configured, and budget control is turned on.
+- The Budget control configuration is activated and configured, and budget control is turned on.
 
-General budget reservations contain lines that provide details about the purpose of the reservation and the planned reserved funds. These details include the start and end dates for the reservation. You can add, change, and delete lines. You can also specify various details, such as the item that is requested, the currency, the unit price and quantity, and the total amount. General budget reservations are intended to be used with public sector entities.
+General budget reservations contain lines that provide details about the purpose of the reservation and the planned reserved funds. These details include the start and end dates for the reservation. You can add, change, and delete lines. You can also specify various details, such as the item that is requested, the currency, the unit price and quantity, and the total amount. General budget reservations are intended to be used by public sector entities.
 
-Private sector entities use the term *budget reservation* with encumbrances or pre-encumbrances. However, unlike general budget reservations, those budgets reservations aren't documents.
+Private sector entities use the term *budget reservation* to talk about encumbrances or pre-encumbrances. However, unlike general budget reservations, those budgets reservations aren't documents.
 
-You can create different types of general budget reservation to specify various characteristics and requirements, based on your purchasing needs. The characteristics include the workflow that is used for the reservation, and default values. For example, you create three reservation types. You use one type with purchase requisitions, another type with purchase orders, and another type with vendor invoices.
+You can create different types of general budget reservation to specify various characteristics and requirements, based on your purchasing needs. The characteristics include the workflow that is used for the reservation, and default values. For example, you create three reservation types. You use one type for purchase requisitions, another type for purchase orders, and another type for vendor invoices.
 
 In the general budget reservation, you can also view accounting distributions and subledger journal lines for the transaction.
 
