@@ -5,7 +5,7 @@ title: Data task automation
 description: This topic explains how you can use data task automation in Microsoft Dynamics 365 for Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,8 +35,7 @@ Data task automation in Microsoft Dynamics 365 for Finance and Operations lets y
 > [!IMPORTANT]
 > Data task automation isn't currently supported for on-premises environments.
 
-> [!IMPORTANT]
-> The user who executes data task automation must be in the same tenant as the Finance and Operations Environment and LCS Project.
+> The user who executes data task automation must be in the same tenant as the Finance and Operations environment and LCS project.
 
 We recommend the following approach for data task automation.
 
