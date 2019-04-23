@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 24
 This topic explains how to pause updates to your sandbox and production environments by using Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!IMPORTANT]
-> This feature is available only to customers who are using **version 8.1 and later**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers and customers who use older versions of the product. 
+> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../fin-and-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers. For customers that are on all other versions (7.1, 7.2 and 8.0) you can take the update manually using the servicing flows.
 
 Microsoft updates your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in LCS. At that point, if you can't proceed with the update for some reason, you can pause it through LCS.
 
