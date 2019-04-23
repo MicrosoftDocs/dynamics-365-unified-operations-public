@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 27 (June 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/16/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform 27
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 27. This version has a build number of 7.0.XXXX. For more information about Platform update 27, see [Additional resources](whats-new-platform-update-27.md#additional-resources).
 
 ## Feature Management
-The **Feature management** experience provides a workspace where you can view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. Ffor more information about Feature management, see [Feature management overview](feature-management/feature-management-overview.md).
+The **Feature management** experience provides a workspace where you can view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](feature-management/feature-management-overview.md).
 
 ## Feature 
 A brief description of the feature and a link to the associated topic that has more details.
