@@ -54,8 +54,8 @@ Project committed costs are created when purchasing documents are approved, conf
 
 1. Go to **Budgeting \> General budget reservations**.
 2. Create a general budget reservation.
-3. Under **General budget reservation lines**, add a project ID and project category for each applicable reservation line. Information from the project will automatically be copied to the reservation.
-4. Optional: To view the project details, in the **Line details** section, select the **Project** tab.
+3. On the **General budget reservation lines** FastTab, add a project ID and project category for each applicable reservation line. Information from the project will automatically be copied to the reservation.
+4. Optional: To view the project details, on the **Line details** FastTab, select the **Project** tab.
 
 ## View project committed costs for a general budget reservation
 
@@ -63,6 +63,6 @@ When you post a general budget reservation for a project, a committed cost is cr
 
 1. Go to **Budgeting \> General budget reservations**.
 2. Open the posted general budget reservation that you want, and select a reservation line.
-3. In the **Line details** section, select **Committed costs**. The **Committed costs** page appears and shows the committed costs that are related to the selected line.
+3. Select **Committed costs**. The **Committed costs** page appears and shows the committed costs that are related to the selected line.
 
     Committed costs for general budget reservations are based on amount, regardless of whether the committed cost includes a discrete quantity and unit cost. The committed cost quantity will always be 1.
