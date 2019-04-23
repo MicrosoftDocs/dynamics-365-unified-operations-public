@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
 
 ---
-# Preview features in Dynamics 365 for Retail version 10.0.2
+# Preview features in Dynamics 365 for Retail version 10.0.3
 
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
