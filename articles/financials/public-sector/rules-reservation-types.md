@@ -5,7 +5,7 @@ title: Set up general budget reservation rules and reservation types
 description: This topic explains how to set up and modify general budget reservation rules and reservation types for Public sector in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
