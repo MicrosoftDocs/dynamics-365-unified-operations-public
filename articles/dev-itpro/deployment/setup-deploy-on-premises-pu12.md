@@ -250,7 +250,8 @@ DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
 ```
 
-**Note:** The wild card certificate allows you to secure only the first level subdomain of the domain to which it is issued.
+> [!Note]
+> The wild card certificate allows you to secure only the first level subdomain of the domain to which it is issued.
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
