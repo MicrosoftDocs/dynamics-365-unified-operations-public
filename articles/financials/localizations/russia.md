@@ -80,6 +80,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Invoices for payment](rus-invoice-payment.md)
 - [Cash flow management](rus-cash-flow.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
+- [Register goods shipped to customers](../../rus-goods-transit-postponed.md)
 
 ## Reporting
 
