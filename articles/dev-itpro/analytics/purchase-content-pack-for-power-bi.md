@@ -5,7 +5,7 @@ title: Purchase spend analysis Power BI content
 description: This topic describes what is included in the Purchase spend analysis Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that are used to build the content.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ This topic describes what is included in the **Purchase spend analysis** Microso
 
 ## Overview
 
-The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep an eye on purchase spending. Managers can analyze purchase spending in the following ways:
+The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep track of purchase spending. Managers can analyze purchase spending in the following ways:
 
 - Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)
 - Year-over-year purchase change (by vendor group and procurement category)
@@ -57,7 +57,7 @@ The **Purchase spend analysis** Power BI content includes a report that consists
 <th>Report page</th>
 <th>Charts</th>
 <th>Tiles</th>
-<th>Screenshot</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
