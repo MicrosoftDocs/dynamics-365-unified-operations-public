@@ -2329,6 +2329,8 @@
             href: ../financials/localizations/rus-transactions-settlement-date.md
           - name: Cash flow management
             href: ../financials/localizations/rus-cash-flow.md
+          - name: Register goods shipped to customers
+            href: ../supply-chain/localizations/rus-goods-transit-postponed.md
         - name: Reporting
           items:
           - name: Financial reporting
