@@ -5,7 +5,7 @@ title: Set up general budget reservations and submit them to a workflow
 description: This topic explains how to set up  general budget reservations and submit them to a workflow for Public sector in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/20/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
