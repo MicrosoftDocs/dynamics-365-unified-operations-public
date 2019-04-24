@@ -101,6 +101,11 @@ Starting in 8.1.3, dedicated hardware station support has been added to the hybr
 
 Out of box, the hybrid Android app supports using payment terminals and receipt printers over network connections. Communicating with devices over a network typically requires adherence to a proprietary communication protocol specified by the manufacturer. For the hybrid Android app, out of box integrations are provided for the Dynamics 365 payment connector for Adyen and Epson receipt printers. 
 
+### Out of box supported devices
+| Payment terminals | Any supported by the [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) through the Dynamics 365 Payment Connector for Adyen |
+| Receipt printer | Network enabled Epson printers which support the Epson SOAP http interface |
+
+
 ### Set up peripherals to work with the hybrid Android app
 
 To enable direct hardware support for the hybrid Android app, set up a dedicated hardware station in the same way it would be set up for MPOS. Instructions for setting up the dedicated, or IPC, hardware station can be found in the [Retail peripherals overview document](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-peripherals-overview#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1)
