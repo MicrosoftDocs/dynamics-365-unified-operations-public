@@ -157,9 +157,9 @@ The following prerequisite software is installed on the VMs by the infrastructur
 |-----------|-----------|---------|
 | AOS       | SNAC – ODBC driver 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
 | AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
-| AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows Features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
-| AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows Features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
-| AOS       | Internet Information Services (IIS) | **Windows Features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
+| AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
+| AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
+| AOS       | Internet Information Services (IIS) | **Windows features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
 | AOS       | SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | AOS       | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
@@ -215,19 +215,19 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 Recommended settings for certificates are:
 - Signature algorithm: sha256RSA
 - Signature hash algorithm: sha256
-- Public Key: RSA (2048 bits)
+- Public key: RSA (2048 bits)
 - Thumbprint algorithm: sha1
 
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
-| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully-qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.contoso.com.</p> <p>CN: DAX7SQLAOSQLA.contoso.com <br> DNS Name: DAX7SQLAOSQLA.contoso.com</p> |
-| Service Fabric Server certificate            | <p>This certificate is used to help secure the node-to-node communication between the Service Fabric nodes.</p> <p> This certificate is also used as the Server certificate that is presented to the client that connects to the cluster.</p> | <p>For this certificate you can also use SSL wild card certificate of your domain. For example, \*.contoso.com. This is explained in more details below the table. Otherwise, use following values:</p> <p>CN: sf.d365ffo.onprem.contoso.com <br> DNS Name: sf.d365ffo.onprem.contoso.com</p> |
+| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.contoso.com.</p> <p>CN: DAX7SQLAOSQLA.contoso.com <br> DNS Name: DAX7SQLAOSQLA.contoso.com</p> |
+| Service Fabric Server certificate            | <p>This certificate is used to help secure the node-to-node communication between the Service Fabric nodes.</p> <p> This certificate is also used as the Server certificate that is presented to the client that connects to the cluster.</p> | <p>For this certificate you can also use SSL wild card certificate of your domain. For example, \*.contoso.com. This is explained in more details below the table. Otherwise, use the following values:</p> <p>CN: sf.d365ffo.onprem.contoso.com <br> DNS Name: sf.d365ffo.onprem.contoso.com</p> |
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | CN: client.d365ffo.onprem.contoso.com <br> DNS Name: client.d365ffo.onprem.contoso.com |
 | Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p> The certificate must be created by using the provider **Microsoft Enhanced Cryptographic Provider v1.0**. </p><p>The certificate key usage must include Data Encipherment (10) and should not include Server authentication or Client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p> <p> CN: axdataenciphermentcert <br> DNS Name: axdataenciphermentcert </p> |
-| AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p> | <p>You can use the same wild card certificate that you used as the Service Fabric Server certificate. Otherwise, use following values:</p> <p> CN: ax.d365ffo.onprem.contoso.com <br> DNS Name: ax.d365ffo.onprem.contoso.com </p> |
+| AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p> | <p>You can use the same wild card certificate that you used as the Service Fabric Server certificate. Otherwise, use the following values:</p> <p> CN: ax.d365ffo.onprem.contoso.com <br> DNS Name: ax.d365ffo.onprem.contoso.com </p> |
 | Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | <p> This certificate is also the File Share certificate that will be used at the time of deployment from LCS.</p> <p> CN: SessionAuthentication <br> DNS Name: SessionAuthentication </p> |
 | Data Encryption certificate                  | This certificate is used by the AOS to encrypt sensitive information.  | <p>This must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. </p> <p> CN: DataEncryption <br> DNS Name: DataEncryption </p> |
-| Data Signing certificate                     | This certificate is used by AOS to encrypt sensitive information.  | <p> This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. </p> <p> CN: DataSigning <br> DNS Name: DataSigning </p> |
+| Data Signing certificate                     | This certificate is used by the AOS to encrypt sensitive information.  | <p> This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. </p> <p> CN: DataSigning <br> DNS Name: DataSigning </p> |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. | <p>CN: FinancialReporting <br> DNS Name: FinancialReporting </p>  |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| <p> **Do not reuse the Financial Reporting Client certificate.** </p> <p> CN: ReportingService <br> DNS Name: ReportingService </p> |
 | On-Premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premises local agent certificate is needed for a tenant.</p> | <p> CN: OnPremLocalAgent <br> DNS Name: OnPremLocalAgent </p> |
@@ -250,8 +250,8 @@ DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
 ```
 
-> [!Note]
-> The wild card certificate allows you to secure only the first level subdomain of the domain to which it is issued.
+> [!NOTE]
+> The wild card certificate allows you to secure only the first-level subdomain of the domain to which it is issued.
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
@@ -262,7 +262,7 @@ You must create several user or service accounts for Finance and Operations (on-
 | Financial Reporting Application Service Account         | gMSA           |         | Contoso\\svc-FRAS$ |
 | Financial Reporting Process Service Account             | gMSA           |         | Contoso\\svc-FRPS$ |
 | Financial Reporting Click Once Designer Service Account | gMSA           |         | Contoso\\svc-FRCO$ |
-| AOS Service Account                                     | gMSA           | This user should be created for future-proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help to ensure a seamless transition to the gMSA. | Contoso\\svc-AXSF$ |
+| AOS Service Account                                     | gMSA           | This user should be created for future proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help to ensure a seamless transition to the gMSA. | Contoso\\svc-AXSF$ |
 | AOS Service Account                                     | Domain account | AOS uses this user in the general availability (GA) release. | Contoso\\AXServiceUser |
 | AOS SQL DB Admin user                                   | SQL user       | Finance and Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
@@ -1004,7 +1004,7 @@ In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where y
 If this is your first time creating and generating group Managed Service Account passwords in your domain, you need to first create the **Key Distribution Services KDS Root Key**. For more information, see [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
 
 ### Error "The WinRM client cannot process the request" when running the remoting script Configure-Prereqs-AllVms cmdlet
-You need to follow the instructions in the error message to enable the computer policy **Allow delegation fresh credentials** in all machines of Service Fabirc cluster.
+You need to follow the instructions in the error message to enable the computer policy **Allow delegation fresh credentials** in all machines of Service Fabric cluster.
 
 ### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Config-Prereqs-AllVms cmdlet
 To work around this error, remove "-Test:$Test" in line 56 of Config-Prereqs-AllVms.ps1, which is found under the **Infrastructure** folder.
