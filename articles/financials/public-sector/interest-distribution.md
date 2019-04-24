@@ -1,8 +1,39 @@
+---
+# required metadata
+
+title:  Setting up interest distribution for cash accounts
+description: Before distributing the interest, you must set up your participating cash accounts in the Interest distribution rules form by following the directions in this topic.
+author: velofog
+manager: AnnBe
+ms.date: 04/24/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope: Operations, Core 
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+ms.search.industry: public sector
+ms.author: v-alpavk
+ms.search.validFrom: 2019-6-30
+ms.dyn365.ops.version: 10.0.3
+
+---
+
 # Setting up interest distribution for cash accounts
+[!include[banner](../includes/banner.md)]
 
-Your agency can allocate interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an Advanced ledger entry for the interest amounts or generate the interest amounts for review without posting.
+Your agency can allocate interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts or generate the interest amounts for review without posting.
 
-Before distributing the interest, you must set up your participating cash accounts in the Interest distribution rules form. Each cash account and grant combination can be used to calculate interest for a different interest account.
+Before distributing the interest, you must set up your participating cash accounts on the **Interest distribution rules** page. Each cash account and grant combination can be used to calculate interest for a different interest account.
 
 ### Add a cash account for interest distribution
 
@@ -25,8 +56,8 @@ Before distributing the interest, you must set up your participating cash accoun
   - Click **Distribute**.
 3. Review the calculated interest amounts distributed to the accounts. You can update the amounts in the **Allocated interest** field. If you make changes to the interest amounts, the **Total allocated** field must match the **Total interest** field to continue.  The calculated interest amount might result in a total allocated amount that differs, usually by one cent, from the total interest. The difference is applied to the interest account for the cash account marked as the rounding account. 
 
->[!NOTE]
->If you changed the interest amounts and want to reset them to the calculated interest amounts, click **Parameters**, and then click **Distribute** to generate the interest using the original data.
+  >[!NOTE]
+  >If you changed the interest amounts and want to reset them to the calculated interest amounts, click **Parameters**, and then click **Distribute** to generate the interest using the original data.
 
 4. To post the distributed interest, click Post interest. 
   - In the **Accounting date** field, enter the accounting date for the Advanced ledger entry.
