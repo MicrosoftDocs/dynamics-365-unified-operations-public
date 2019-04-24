@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/21/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -141,17 +141,7 @@ The <noun/noun phrase> part of the name should comply with existing definitions 
 
 The process of implementing a **BusinessEventsBase** extension is straightforward. It involves extending the **BusinessEventsBase** class, and implementing a static constructor method, a private **new** method, methods to maintain internal state, and the **buildContract** method.
 
-1. Extend the **BusinessEventsBase** class.
-
-    ```
-    [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
-    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
-    ```
-
-    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments, but should be referenced without the '@' symbol to avoid storing localized data.
-
-2. Implement a static **newFrom<my_buffer>** method. The <my_buffer> part of the method name is typically the table buffer that is used to initialize the business event contract.
+1. Implement a static **newFrom<my_buffer>** method. The <my_buffer> part of the method name is typically the table buffer that is used to initialize the business event contract.
 
     ```
     static public SalesInvoicePostedBusinessEvent
@@ -163,6 +153,16 @@ The process of implementing a **BusinessEventsBase** extension is straightforwar
         return businessEvent;
     }
     ```
+
+2. Extend the **BusinessEventsBase** class.
+
+    ```
+    [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
+    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+    ```
+
+    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments, but should be referenced without the '@' symbol to avoid storing localized data.
 
 3. Implement a private **new** method. This method is called only from the static constructor method.
 
