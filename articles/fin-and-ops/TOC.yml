@@ -2796,6 +2796,8 @@
           href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
         - name: Upgrade formats by adopting new base versions
           href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+        - name: Design ER configurations to fill in PDF templates
+          href: ../dev-itpro/analytics/er-fillable-pdf.md
       - name: Formula designer in Electronic reporting
         href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
       - name: Configure Electronic reporting to pull data into Power BI
