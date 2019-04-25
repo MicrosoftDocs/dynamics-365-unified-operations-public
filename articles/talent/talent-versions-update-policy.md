@@ -68,7 +68,7 @@ To find the latest release for each web browser, go to the software manufacturer
 You can download a PDF file of the countries, regions, and languages Talent supports at [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
 
 > [!NOTE]
-> While the user interface is localized into other languages, all data stored in Common Data Service is in English. You can create emails and templates in other languages, but data such as scheduling information is only available in English.
+> While the user interface is localized into other languages, all data stored in Common Data Service is in English. You can create emails and templates in other languages, but data such as scheduling information is only available in English at this time.
 
 If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
