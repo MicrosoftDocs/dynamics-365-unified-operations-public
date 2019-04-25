@@ -47,7 +47,7 @@ Changes described in this section apply to build number 8.1.2253. Numbers in par
 ### Common Data Service entity support for custom fields
 With this week's release, the following entities support custom fields: Compensation level, Benefit option, Skill type and Compensation region.
 
-### Additional OData entities  (302992)
+### Additional OData entities (302992)
 The following entities are now supported within OData: Worker professional experience and Worker education.
    
 ### Performance Journal attachments for Managers and Employees (308248)
