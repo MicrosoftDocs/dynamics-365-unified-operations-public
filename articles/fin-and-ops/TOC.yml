@@ -2250,7 +2250,7 @@
       - name: Russia
         href: ../financials/localizations/russia.md
         items:
-        - name: General leder
+        - name: General ledger
           items: 
           - name: Correspondence of accounts
             href: ../financials/localizations/rus-correspondence-accounts.md
