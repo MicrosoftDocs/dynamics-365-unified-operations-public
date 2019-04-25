@@ -45,6 +45,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Create an advance holder](emea-advance-holders.md#create-an-advance-holder)
 - [Daily operations for advance holders](rus-advance-holders-daily-operations.md)
 - [Advance reports with budget control](rus-advance-holders-reports-dailyops.md)
+- [Revaluate foreign currency for advance holders](rus-advance-adjustment-parameters.md)
 - [Advance holder reports](rus-local-management-reports-primary-forms.md)
 
 ## Bank
