@@ -2275,6 +2275,8 @@
             href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
           - name: Set up and process payment orders
             href: ../financials/localizations/rus-payment-order-settings-processing.md 
+          - name: Foreign currency sales, purchases, and transfers
+            href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: VAT
           items:
           - name: Value-added tax (VAT) for tax agents
