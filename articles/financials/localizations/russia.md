@@ -82,7 +82,6 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Accounts payable and receivable
 - [Invoices for payment](rus-invoice-payment.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
-- [Invoices for payment](rus-invoice-payment.md)
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
 
