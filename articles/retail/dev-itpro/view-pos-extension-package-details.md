@@ -49,6 +49,9 @@ This section describes what each package status means.
 
 [![Extension packages section in the POS Settings view](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
+> [!NOTE]
+> Cloud POS will not display the extension version from the Customization.settings file under the About section in the POS settings page, it will show only the Microsoft app package version. Extension package versions can be viewed only from the extension details section. 
+
 ## Extension package details
 
 If an issue occurs when an extension is loaded, or if there is a conflicting extension, you can use the details that are provided for each extension package to determine which extension file is causing the issue. In this way, you can troubleshoot the issue.
