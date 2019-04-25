@@ -5,7 +5,7 @@ title: View POS extension package information
 description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS). This new section lists the extension packages that are included as part of the core POS, and it lets you view status information and other details.
 author: mumani
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 04/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -50,7 +50,7 @@ This section describes what each package status means.
 [![Extension packages section in the POS Settings view](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
 > [!NOTE]
-> Cloud POS will not display the extension version from the Customization.settings file under the About section in the POS settings page, it will show only the Microsoft app package version. Extension package versions can be viewed only from the extension details section. 
+> Cloud POS will not display the extension version in the Customization.settings file under the **About** section on the **POS settings** page, it will only show the Microsoft app package version. Extension package versions can only be viewed from the **Extension details** section.
 
 ## Extension package details
 
