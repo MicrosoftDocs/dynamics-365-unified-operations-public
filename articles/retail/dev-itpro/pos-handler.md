@@ -135,6 +135,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 |--------------------------------------------------------|-----------------------------------------------------------|
 | GetGiftReceiptsClientRequestHandler		         | Executed when you print a gift receipt in POS.          |
 | SelectCustomerOrderTypeClientRequestHandler		 | Executed when you get a dialog box with options to choose between Customer order or quote.          |
+| GetCancellationChargeClientRequestHandler		 | Executed when you get a dialog box to enter the cancellation shipping charge during the customer order workflow          |
 
 
 
