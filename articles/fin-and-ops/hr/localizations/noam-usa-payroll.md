@@ -3,7 +3,7 @@
 
 title: US Payroll
 description: Payroll provides full gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248434
 ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

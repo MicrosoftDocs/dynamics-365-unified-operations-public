@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -80,7 +80,7 @@ Some of the most typical and important changes that can be made to a page are av
 
 Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this method of personalization, the element's property window appears.
 
-[![Personalizing an element's properties](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![Personalizing an element's properties](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 You can use the property window to personalize an element in the following ways:
 
@@ -96,7 +96,7 @@ The property window might include other personalization capabilities, depending 
 
 If you want to make multiple changes to a page or make changes that aren't available through other mechanisms (such as reordering elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, select **Personalize this form** in an element's property window. You can also select **Personalize this form** in the **Personalize** group on the **Options** tab of each page's Action Pane.
 
-[![Personalization toolbar](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Personalization toolbar](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### Navigating the page
 

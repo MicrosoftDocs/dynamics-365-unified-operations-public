@@ -73,26 +73,6 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
 
-### Deriving from internal classes is deprecated
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
-| **Replaced by another feature?**   | The compiler warning will be replaced by an error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time.|
-| **Product areas affected**         | Visual Studio development tools |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
-
-### Overriding internal methods is deprecated
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
-| **Product areas affected**         | Visual Studio development tools |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
-
 ### Parameter to enable sales orders with multiple project contract funding sources
 Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**. By default, this parameter is not enabled. 
 
