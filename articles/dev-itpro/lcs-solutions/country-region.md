@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ## Local and regional deployments
 If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider when you deploy Finance and Operations. Consider the following resources that might be relevant to you:
 
-[Microsoft Dynamics 365 for Finance and Operations - operated by 21Vianet in China](/dev-itpro/deployment/china-local-deployment.md)
+[Microsoft Dynamics 365 for Finance and Operations - operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## Localization and regulatory features
 
