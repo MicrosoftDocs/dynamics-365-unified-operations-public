@@ -45,19 +45,19 @@ This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
 Changes described in this section apply to build number 8.1.2253. Numbers in parentheses refer to support numbers in Lifecycle Services (LCS).
 
 ### Common Data Service entity support for custom fields
-With this week's release, the following entities support custom fields: Compensation level, Benefit option, Skill type and Compensation region.
+With this week's release, the following entities support custom fields: Compensation level, Benefit option, Skill type, and Compensation region.
 
 ### Additional OData entities (302992)
 The following entities are now supported within OData: Worker professional experience and Worker education.
    
-### Performance Journal attachments for nanagers and employees (308248)
+### Performance journal attachments for nanagers and employees (308248)
 With this release, attachments are now available for both managers and employees when creating and updating performance journal entries.
 
 ### Employee rehire flag always available (310047)
 The employee rehire option is now available for updating outside of the termination process. 
 
 ### Cannot change the name of **My payment method** (308815)
-Personalization has been enabled to allow for the **My payment method** label to be changed in Employee Self-Service.
+Personalization has been enabled to allow for the **My payment method** label to be changed in Employee self-service.
 
 ### Financial dimensions against a Position can't be deleted (293908)
 Financial dimensions can now be removed when requesting a change for an existing position and the financial dimensions cross company boundaries. 
