@@ -22,6 +22,7 @@ New features:
 | Optional fields | A second screen for optional fields is added to keep employees from having to feel like they have to fill them out, but still easily accessible | 
 | Add unattached receipts   | The ability to add unattached receipts to expense report is more visible from the workspace and within the expense report |
 | Improved messaging | Better visibility of expense lines containing warnings or errors |
+| Reduction in infolog messages | The number of infolog messages were decreased and work was done to eliminate duplicate messages from appearing in many cases | 
 | Added focus for common actions | New actions button for most of the common line-level actions with an ellipsis button (...) for header and other less frequent actions | 
 | New workspace to increase visibility | New workspace to unify features and links that users had to click into different areas |
 | Add existing expenses and receipts during expense creation | Add all or add selected for expenses and receipts during expense report creation |
