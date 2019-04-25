@@ -1183,6 +1183,16 @@
           href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
         - name: Create a commitment to reserve budget funds for the public sector
           href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
+        - name: General budget reservations
+          href: ../financials/public-sector/general-budget-reservations.md
+        - name: Set up general budget reservation rules and reservation types
+          href: ../financials/public-sector/rules-reservation-types.md
+        - name: Maintain general budget reservations
+          href: ../financials/public-sector/general-budget-reservation-tasks.md
+        - name: Set up general budget reservations and submit them to a workflow
+          href: ../financials/public-sector/workflow-general-budget-reservations.md
+        - name: Project accounting with general budget reservations
+          href: ../financials/public-sector/general-budget-reservations-project-accounting.md
       - name: Fixed assets in the public sector
         href: ../financials/public-sector/fixed-asset-public-sector.md
       - name: General ledger in the public sector
