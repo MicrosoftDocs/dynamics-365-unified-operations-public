@@ -81,14 +81,16 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Accounts payable and receivable
 - [Invoices for payment](rus-invoice-payment.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
+- [Invoices for payment](rus-invoice-payment.md)
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
 
 ## Reporting
 
 - [Financial reporting](rus-financial-reports.md)
+- [Configure financial reports in Excel](rus-excel-financial-report.md)
+- [Accounting reporting in electronic format](rus-accounting-reporting.md)
 - [Assessed tax declaration](rus-assessed-tax-declaration.md)
-
 
 ## Organization administration
 
@@ -104,6 +106,5 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Company divisions](rus-company-divisions.md)
 - [Set up officials](rus-officials.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
-- [Preview ledger transactions](rus-ledger-transactions-preview.md)
-- [Set up dimension control for settlements](rus-transactions-settlement-date.md)
+
 
