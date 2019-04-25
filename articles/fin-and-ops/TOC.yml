@@ -2335,6 +2335,8 @@
             href: ../financials/localizations/rus-invoice-payment.md
           - name: Set up dimension control for settlements
             href: ../financials/localizations/rus-transactions-settlement-date.md
+          - name: Invoices for payment
+            href: ../financials/localizations/rus-invoice-payment.md
           - name: Register goods shipped to customers
             href: ../supply-chain/localizations/rus-goods-transit-postponed.md
           - name: Cash flow management
@@ -2344,7 +2346,12 @@
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
           - name: Configure financial reports in Excel
-            href: ../financials/localizations/rus-excel-financial-report.md            
+            href: ../financials/localizations/rus-excel-financial-report.md   
+          - name: Accounting reporting in electronic format
+            href: ../financials/localizations/rus-accounting-reporting.md
+          - name: Assessed tax declaration
+            href: ../financials/localizations/rus-assessed-tax-declaration.md
+          
         - name: Company divisions
           href: ../financials/localizations/rus-company-divisions.md
         - name: Set up exchange rates for currency transactions
@@ -2355,18 +2362,10 @@
           href: ../financials/localizations/rus-officials.md
         - name: Set up dimension control for settlements
           href: ../financials/localizations/rus-transactions-settlement-date.md
-        - name: Invoices for payment
-          href: ../financials/localizations/rus-invoice-payment.md
-        - name: Financial reporting
-          href: ../financials/localizations/rus-financial-reports.md
-        - name: Accounting reporting in electronic format
-          href: ../financials/localizations/rus-accounting-reporting.md
-        - name: Cash flow management
-          href: ../financials/localizations/rus-cash-flow.md
-        - name: Foreign currency sales, purchases, and transfers
-          href: ../financials/localizations/rus-currency-sale-purchase.md
-        - name: Assessed tax declarations
-          href: ../financials/localizations/rus-assessed-tax-declaration.md
+
+
+
+
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
