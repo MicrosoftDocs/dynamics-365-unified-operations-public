@@ -2256,6 +2256,8 @@
             href: ../financials/localizations/rus-correspondence-accounts.md
           - name: Preview ledger transactions
             href: ../financials/localizations/rus-ledger-transactions-preview.md 
+          - name: Set up exchange rates for currency transactions
+            href: ../financials/localizations/rus-exchange-difference.md
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
           items:
@@ -2351,21 +2353,14 @@
             href: ../financials/localizations/rus-accounting-reporting.md
           - name: Assessed tax declaration
             href: ../financials/localizations/rus-assessed-tax-declaration.md
-          
-        - name: Company divisions
-          href: ../financials/localizations/rus-company-divisions.md
-        - name: Set up exchange rates for currency transactions
-          href: ../financials/localizations/rus-exchange-difference.md
-        - name: Preview ledger transactions
-          href: ../financials/localizations/rus-ledger-transactions-preview.md
-        - name: Set up officials
-          href: ../financials/localizations/rus-officials.md
-        - name: Set up dimension control for settlements
-          href: ../financials/localizations/rus-transactions-settlement-date.md
-
-
-
-
+        - name: Organization administration
+          items:    
+          - name: Tax registration info related to address
+            href: ../financials/localizations/emea-registration-ids
+          - name: Set up officials
+            href: ../financials/localizations/rus-officials.md 
+          - name: Company divisions
+            href: ../financials/localizations/rus-company-divisions.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
