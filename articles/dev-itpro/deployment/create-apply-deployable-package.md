@@ -5,7 +5,7 @@ title: Create deployable packages of models
 description: This topic describes the workflow for creating and applying a deployable package.
 author: robadawy
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
