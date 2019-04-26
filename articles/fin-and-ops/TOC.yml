@@ -2260,6 +2260,14 @@
       - name: Russia
         href: ../financials/localizations/russia.md
         items:
+        - name: General ledger
+          items: 
+          - name: Correspondence of accounts
+            href: ../financials/localizations/rus-correspondence-accounts.md
+          - name: Preview ledger transactions
+            href: ../financials/localizations/rus-ledger-transactions-preview.md 
+          - name: Set up exchange rates for currency transactions
+            href: ../financials/localizations/rus-exchange-difference.md
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
           items:
@@ -2279,6 +2287,8 @@
             href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
           - name: Set up and process payment orders
             href: ../financials/localizations/rus-payment-order-settings-processing.md 
+          - name: Foreign currency sales, purchases, and transfers
+            href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: VAT
           items:
           - name: Value-added tax (VAT) for tax agents
@@ -2337,38 +2347,28 @@
             href: ../financials/localizations/rus-invoice-payment.md
           - name: Set up dimension control for settlements
             href: ../financials/localizations/rus-transactions-settlement-date.md
-          - name: Cash flow management
-            href: ../financials/localizations/rus-cash-flow.md
           - name: Register goods shipped to customers
             href: ../supply-chain/localizations/rus-goods-transit-postponed.md
+          - name: Cash flow management
+            href: ../financials/localizations/rus-cash-flow.md
         - name: Reporting
           items:
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
           - name: Configure financial reports in Excel
-            href: ../financials/localizations/rus-excel-financial-report.md            
-        - name: Company divisions
-          href: ../financials/localizations/rus-company-divisions.md
-        - name: Set up exchange rates for currency transactions
-          href: ../financials/localizations/rus-exchange-difference.md
-        - name: Preview ledger transactions
-          href: ../financials/localizations/rus-ledger-transactions-preview.md
-        - name: Set up officials
-          href: ../financials/localizations/rus-officials.md
-        - name: Set up dimension control for settlements
-          href: ../financials/localizations/rus-transactions-settlement-date.md
-        - name: Invoices for payment
-          href: ../financials/localizations/rus-invoice-payment.md
-        - name: Financial reporting
-          href: ../financials/localizations/rus-financial-reports.md
-        - name: Accounting reporting in electronic format
-          href: ../financials/localizations/rus-accounting-reporting.md
-        - name: Cash flow management
-          href: ../financials/localizations/rus-cash-flow.md
-        - name: Foreign currency sales, purchases, and transfers
-          href: ../financials/localizations/rus-currency-sale-purchase.md
-        - name: Assessed tax declarations
-          href: ../financials/localizations/rus-assessed-tax-declaration.md
+            href: ../financials/localizations/rus-excel-financial-report.md   
+          - name: Accounting reporting in electronic format
+            href: ../financials/localizations/rus-accounting-reporting.md
+          - name: Assessed tax declaration
+            href: ../financials/localizations/rus-assessed-tax-declaration.md
+        - name: Organization administration
+          items:    
+          - name: Tax registration info related to address
+            href: ../financials/localizations/emea-registration-ids
+          - name: Set up officials
+            href: ../financials/localizations/rus-officials.md 
+          - name: Company divisions
+            href: ../financials/localizations/rus-company-divisions.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
