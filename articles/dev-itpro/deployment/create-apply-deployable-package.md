@@ -44,13 +44,12 @@ In order to deploy your code and customizations to a runtime environment (Demo, 
 > [!NOTE]
 > Application Deployable Packages do not contain source code.
 
-> [!NOTE]
 > It is always recommended to use a build environment to create deployable packages that are intended to go to production.
 
 ## Create a deployable package
-It is always recommended to use a build environment to create deployable packages. It is also possible to create a deployable package on a development environment. 
+We recommend using a build environment to create deployable packages. You can also create a deployable package on a development environment. 
 
-On a development environment, after you have completed development and testing, follow these steps to create a deployable package from Visual Studio.
+On a development environment, after you have completed development and testing, follow these steps to create a deployable package in Visual Studio.
 
 1.  In Microsoft Visual Studio, select **Dynamics 365** &gt; **Deploy** &gt; **Create Deployment Package**.
 ![Create deployment package](./media/createdeploymentpackage-986x1024.png)
