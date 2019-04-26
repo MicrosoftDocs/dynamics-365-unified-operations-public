@@ -122,3 +122,12 @@ Out of box, the the Android app communicates with Epson printers that support "e
       
 Once the Epson printer has ePOS-Print enabled, turn the printer off and turn it back on. When the device comes back online, a small receipt should print indicating the device's IP address. Note the device's IP address and navigate to the POS register form in Dynamics 365, then select the register being set up and open for editing. Under the 'REGISTER' tab in the ribbon area, note the subheading labeled 'Hardware' with an available action called 'Configure IP addresses' use this action to specify the IP address for the printer that is being used by this specific register. If the 'IP address' field is not available for the printer, check the hardware profile assigned to the register to ensure that the printer type is set to 'Network'. Port is not required for the out of box support for Epson printers.  
 
+### Sharing peripherals using built-in peripheral support
+
+Payment terminals and receipt printers can be shared among Android POS clients and other MPOS devices. While peripherals can still be shared through an IIS hardware station; the addition of built-in peripheral support for Anroid POS enables sharing of these devices wihtout neet to deploy the hardware station as a web service.
+
+To share devices among Androind POS clients, instead of assigning the IP and hardware profile to the register, the hardware profile should be set on the 'Dedicated' hardware station itself. To do this, navigate to **Retail > Channels > Retail stores > All retail stores**, select the store and open for editing. Next scroll down to the list of hardware stations for the store and assign the hardware profile with network payment terminal, EFT settings, and network printer directly to the hardware station itself. For this scenario, the EFT terminal ID will also need to be assigned to the hardware station at the store level. 
+
+## Additional resources
+- [Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
