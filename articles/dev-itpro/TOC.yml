@@ -375,7 +375,7 @@
       href: perf-test/systest-filtering.md
     - name: Acceptance test library
       href: perf-test/acceptance-test-library.md
-      items
+      items:
       - name: Navigation concepts
         href: perf-test/concepts-navigation.md
       - name: Test data methods
