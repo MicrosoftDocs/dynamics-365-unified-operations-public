@@ -68,6 +68,8 @@ Prepayment invoices are a common business practice. A vendor issues prepayment 
 4.  After the vendor delivers the goods or services, and the related vendor invoices have been received, the Accounts payable coordinator applies the prepayment amount that was already paid against the invoice.
 5.  The Accounts payable coordinator pays and settles the remaining amount of the invoice.
 
+### Additional resources
 
+#### Community blogs
 
-
+[Advance payment to vendor in Dynamics 365 for Finance and Operations](https://financefunction.tech/2019/04/27/advance-payment-to-vendor-in-dynamics-365-for-finance-and-operations)
