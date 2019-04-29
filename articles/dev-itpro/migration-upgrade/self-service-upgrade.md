@@ -51,6 +51,15 @@ With this continuous adding of a new version and removal of the oldest version, 
 
 If you chose 8.1.3 PU23 to upgrade your Sandbox, and then we released 10.0.2 PU26 thereby removing 8.1.3 PU23 as an option, you will be blocked from upgrading Production.  You would then need to start over in Sandbox to upgrade to a newer supported release.
 
+**Targeted release schedule (dates subject to change)**
+| Selectable Versions | Latest Version GA for New Customers | Latest Version GA for Upgrade |
+|---------|-----------------|---------------------------|---------------------|
+|7.3 PU23-PU25<br/>8.1.3 PU23 - 10.0.1 PU25 |  Week of April 8, 2019 | Week of April 29, 2019 | 
+|7.3 PU24-PU26<br/>10.0.0 PU24 - 10.0.2 PU26 |  Week of May 13, 2019 | Week of May 27, 2019 | 
+|7.3 PU25-PU27<br/>10.0.1 PU25 - 10.0.3 PU27 |  Week of June 10, 2019 | Week of June 24, 2019 | 
+|7.3 PU26-PU28<br/>10.0.2 PU26 - 10.0.4 PU28 |  Week of July 8, 2019 | Week of July 29, 2019 | 
+
+
 ## Refactor your customizations to Extension
 
 In preparation for Upgrade, it is required that you refactor your customizations that were overlays in to Extensions. We recommend deploying a new developer environment on the latest version, creating a new branch in Version Control and following the guidance in [Migrate from overlayering to extensions](../extensibility/migrate-overlayer-extension.md).

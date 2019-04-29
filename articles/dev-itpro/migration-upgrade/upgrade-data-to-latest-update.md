@@ -96,17 +96,17 @@ In Tier 2 or higher environments, including Production, you will run through the
 
 ## Select the correct data upgrade deployable package
 
-To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download it from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download it from the Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 1. Sign-in to http://lcs.dynamics.com/
 2. Select the **Shared asset** library tile
 3. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
     - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-10-0**
-    - If you're upgrading from a previous release of Finance and Operations to the latest 10.0.X release, the package name starts with **DataUpgrade-10-0**. Select the package that corresponds to the release you are upgrading to. 
+    - If you're upgrading from a previous release of Finance and Operations to the latest 10.0.X release, the package name is exactly **DataUpgrade-10-0**. 
+    - If you're upgrading from a previous release to a preview release, the package name contains PREVIEW.  For example: **DataUpgrade-10-0-2-PREVIEW**.
+    Select the package that corresponds to the release you are upgrading to. 
 
-> [!NOTE]
-> Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.
 
 ### Fix the duplicate key issue (February 2016 release only)
 
