@@ -114,7 +114,7 @@ update sysglobalconfiguration
 set value = 1
 where name = 'TEMPTABLEINAXDB'
 
-drop procedure XU_DisableEnableNonClusteredIndexes
+drop procedure if exists XU_DisableEnableNonClusteredIndexes
 drop procedure if exists SP_ConfigureTablesForChangeTracking
 drop procedure if exists SP_ConfigureTablesForChangeTracking_V2
 drop schema [NT AUTHORITY\NETWORK SERVICE]
