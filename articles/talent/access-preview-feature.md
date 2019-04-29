@@ -5,7 +5,7 @@ title: Access preview features in Talent
 description: This topic describes how an administrator can enable the preview features, and it lists the features that are currently enabled for preview.
 author: tracykeya
 manager: AnnBe
-ms.date: 04/16/2019
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
