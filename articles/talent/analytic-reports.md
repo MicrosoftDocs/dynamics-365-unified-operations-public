@@ -39,7 +39,7 @@ Analytic reports in Attract provide an out-of-the-box (OOTB) solution for hiring
 - **Cross-filtering:** Click visuals within a report to view other metrics filtered by selected data.
 
 >[!NOTE] 
->- This feature is currently in preview. If you want to try it you must have the [**Comprehensive Hiring Add-On**](attract-comprehensive-hiring.md) and [**turn it on in the Attract admin settings**](access-preview-feature.md).
+>- This feature is currently in [preview](access-preview-feature.md). To try it you must have the [**Comprehensive Hiring Add-On**](attract-comprehensive-hiring.md)
 >- All public preview reports are displayed in English
 >- Reports refresh every 3 hours. Last refresh time (in the local timezone) is located at the top of the report. Refresh times are an approximation and vary based on data volume and resource load in your region.
 
