@@ -112,7 +112,7 @@ Support for other payment processors and peripheral devices can be implemented b
 
 ### Set up peripherals to work with the hybrid Android app
 
-To enable direct hardware support for the hybrid Android app, set up a dedicated hardware station in the same way it would be set up for MPOS. Instructions for setting up the dedicated, or IPC, hardware station can be found in the [Retail peripherals overview document](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-peripherals-overview#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1)
+To enable direct hardware support for the hybrid Android app, set up a dedicated hardware station in the same way it would be set up for MPOS. Instructions for setting up the dedicated, or IPC, hardware station can be found in [Retail peripherals](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1)
 
 Note: The dedicated hardware station provided with demo data should not be used with the hybrid Android app. To test the hybrid Android app in an environment with demo data, delete the existing hardware stations and create a new dedicated hardware station. To do this, navigate to **Retail > Channels > Retail stores > All retail stores**. Select the store that will be used, typically "HOUSTON" open for editing. In the store details form, scroll down to the 'Hardware stations' fassttab. Remove the existing 'Dedicated' hardware station, then click 'Add' to add a new hardware station of type 'Dedicated'. A description is optional. No other details are neccessary for the hardware station. 
 
