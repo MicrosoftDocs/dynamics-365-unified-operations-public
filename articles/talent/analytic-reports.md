@@ -38,11 +38,10 @@ Analytic reports in Attract provide an out-of-the-box (OOTB) solution for hiring
 - **User-specific security:** Access to reports is controlled by Attract [Role] and job participant role.
 - **Cross-filtering:** Click visuals within a report to view other metrics filtered by selected data.
 
-**Note**
-
-- This feature is currently in preview. If you want to try it you must have the [**Comprehensive Hiring Add-On**](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) and [**turn it on in the Attract admin settings**](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
-- All public preview reports are displayed in English
-- Reports refresh every 3 hours. Last refresh time (in the local timezone) is located at the top of the report. Refresh times are an approximation and vary based on data volume and resource load in your region.
+>[!NOTE] 
+>- This feature is currently in preview. If you want to try it you must have the [**Comprehensive Hiring Add-On**](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) and [**turn it on in the Attract admin settings**](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
+>- All public preview reports are displayed in English
+>- Reports refresh every 3 hours. Last refresh time (in the local timezone) is located at the top of the report. Refresh times are an approximation and vary based on data volume and resource load in your region.
 
 ## Job Analytics
 
@@ -74,9 +73,8 @@ The Funnel Analysis report aggregates data for jobs that have been closed as fil
 
 Note: For the most accurate time to hire reporting, it is recommended that you use [Offer management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/offer-setup), a feature available as part of the Comprehensive Hiring Add-On.
 
-**Tip**
-
-Try hovering over visuals for additional information. For example, hovering over &quot;Active applicants&quot; visuals will display the average days in stage. Analyzing this info can provide insights critical to reducing time to hire and enable recruiters to focus on ways to reduce the time spent in each stage.
+>[!TIP] 
+>Try hovering over visuals for additional information. For example, hovering over &quot;Active applicants&quot; visuals will display the average days in stage. Analyzing this info can provide insights critical to reducing time to hire and enable recruiters to focus on ways to reduce the time spent in each stage.
 
 ## User-specific security
 
