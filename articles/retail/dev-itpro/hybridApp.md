@@ -5,7 +5,7 @@ title: Set up POS hybrid app on Android and iOS
 description: This topic shows how to set up the POS hybrid app on Android and iOS.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 11/14/2018
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
