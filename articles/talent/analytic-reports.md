@@ -35,11 +35,11 @@ Analytic reports in Attract provide an out-of-the-box (OOTB) solution for hiring
 
 - **Job analytics:** Click the **Analytics** tab within a job for metrics on the job&#39;s applicants.
 - **Analytics hub:** Click **Analytics** on the left navigation for aggregated metrics across jobs.
-- **User-specific security:** Access to reports is controlled by Attract [Role] and job participant role.
+- **User-specific security:** Access to reports is controlled by Attract [Role](security-attract.md) and job participant role.
 - **Cross-filtering:** Click visuals within a report to view other metrics filtered by selected data.
 
 >[!NOTE] 
->- This feature is currently in preview. If you want to try it you must have the [**Comprehensive Hiring Add-On**](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) and [**turn it on in the Attract admin settings**](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
+>- This feature is currently in preview. If you want to try it you must have the [**Comprehensive Hiring Add-On**](attract-comprehensive-hiring.md) and [**turn it on in the Attract admin settings**](access-preview-feature.md).
 >- All public preview reports are displayed in English
 >- Reports refresh every 3 hours. Last refresh time (in the local timezone) is located at the top of the report. Refresh times are an approximation and vary based on data volume and resource load in your region.
 
@@ -53,7 +53,7 @@ Job Analytics reports are a snapshot of the hiring process for a job.  Key metri
 
 ## Analytics Hub
 
-Analytics Hub reports aggregate data across jobs to surface trends in the hiring process. Attract includes two OOTB reports: Pipeline Summary and Funnel Analysis_._
+Analytics Hub reports aggregate data across jobs to surface trends in the hiring process. Attract includes two OOTB reports: Pipeline Summary and Funnel Analysis.
 
 ### Pipeline Summary
 
@@ -71,14 +71,14 @@ The Funnel Analysis report aggregates data for jobs that have been closed as fil
 - Conversion metrics (on hover)
 - Offer acceptance rate
 
-Note: For the most accurate time to hire reporting, it is recommended that you use [Offer management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/offer-setup), a feature available as part of the Comprehensive Hiring Add-On.
+Note: For the most accurate time to hire reporting, it is recommended that you use [Offer management](offer-setup.md), a feature available as part of the Comprehensive Hiring Add-On.
 
 >[!TIP] 
 >Try hovering over visuals for additional information. For example, hovering over &quot;Active applicants&quot; visuals will display the average days in stage. Analyzing this info can provide insights critical to reducing time to hire and enable recruiters to focus on ways to reduce the time spent in each stage.
 
 ## User-specific security
 
-Attract reports are accessible for Admin, Read All, Recruiter, and Hiring Manager [Roles]. Unassigned users do not have access to either of the analytic report pages (Job Analytics or Analytics Hub).
+Attract reports are accessible for Admin, Read All, Recruiter, and Hiring Manager [Roles](security-attract.md). Unassigned users do not have access to either of the analytic report pages (Job Analytics or Analytics Hub).
 
 Job Analytics reports display data for the selected job. Analytics Hub reports aggregate data across all jobs a user can view. Users that can view both My jobs and All jobs on the Jobs page have the same views available in the Analytics Hub.
 
