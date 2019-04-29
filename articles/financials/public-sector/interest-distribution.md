@@ -42,14 +42,14 @@ Before you distribute the interest, you must set up your participating cash acco
 2. Select **New** to add a row.
 3. In the **Cash account** field, enter the cash account that comprises part of the total pooled cash.
 4. Optional: In the **Grant** field, enter the grant for grant-related transaction amounts that should be included in cash balance calculations for the associated cash account. If all grants for the cash account post interest to the same account, you can leave this field blank. However, if you enter an interest account for a specific grant, you must enter an interest account for each grant for the cash account.
-5. Select the **Participate** check box to include the cash accounts in interest distribution. If this check box is cleared, you can't edit any other fields in the row. Cash accounts that don't participate are included in the inquiry form so that you can review the average daily balance. However, you can't distribute interest to those cash accounts.
+5. Select the **Participate** check box to include the cash accounts in interest distribution. If this check box is cleared, you can't edit any other fields in the row. Cash accounts that don't participate are included in the inquiry page so that you can review the average daily balance. However, you can't distribute interest to those cash accounts.
 6. Enter either a specific interest account or a project. The value that you enter determines the General ledger account that interest is posted to for the associated cash account.
 
     - In the **Interest account** field, enter a specific account.
     - In the **Project ID** field, enter a project to use as the basis for posting interest. This account is used in conjunction with other account factors to determine the complete account that is posted to.
 
 7. Select the **Negative interest** check box to calculate a negative interest amount when the cash account has a negative balance. If this check box is cleared, the cash account reports the interest as 0 (zero) instead of a negative amount.
-8. The interest account for one cash account can receive any penny difference amounts when interest distribution is calculated. Select the **Rounding** field for that cash account. You can mark only one cash account as the rounding account.
+8. The interest account for one cash account can receive any penny difference amounts when interest distribution is calculated. Select the **Rounding** check box for that cash account. You can mark only one cash account as the rounding account.
 
 ## Distributing interest
 
@@ -57,7 +57,7 @@ Before you distribute the interest, you must set up your participating cash acco
 2. Select **Parameters**, and then set the following fields:
 
     - In **Total interest** field, enter the total amount of interest to disburse.
-    - In the **From date** and **To date** fields, select the dates of daily balances to calculate an average for, based on transactions during the specified date range.
+    - In the **From date** and **To date** fields, select the range of dates to calculate average daily balances for, based on transactions during that date range.
 
 3. Select **Distribute**.
 4. Review the calculated interest amounts that have been distributed to the accounts. You can update the amounts in the **Allocated interest** field.
