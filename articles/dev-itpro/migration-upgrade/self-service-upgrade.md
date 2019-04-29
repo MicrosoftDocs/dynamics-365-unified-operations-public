@@ -73,11 +73,11 @@ Run the data upgrade process on a copy of your source database. If your environm
 
 To make a copy of your production database, follow the steps in [Export a copy of the standard user acceptance test (UAT) database](../database/dbmovement-scenario-exportuat.md).
 
-To run the data upgrade process, follow the steps in [Upgrade data in development, demo, or sandbox environments](../upgrade-data-to-latest-update.md).
+To run the data upgrade process, follow the steps in [Upgrade data in development, or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md).
 
 > [!IMPORTANT]
 > - Data upgrade in a development environment is a required step. It helps reduce the risk of extended downtime and upgrade errors later, when you upgrade sandbox user acceptance testing (UAT) and production environments.
-> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to Azure DevOps. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
+> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to Azure DevOps. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, or demo environments](upgrade-data-to-latest-update.md#before-you-begin).
  
 ## Upgrade your Tier2+ Standard Acceptance Test sandbox environment
 

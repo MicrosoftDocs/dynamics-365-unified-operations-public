@@ -38,10 +38,10 @@ This topic explains the process of updating or upgrading to the latest release o
 
 For information about the contents of each release of Finance and Operations, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
-For information about OneVersion service updates, see the [OneVersion service updates overview](../lifecycle-services/oversion-overview.md).
+For information about OneVersion service updates, see the [OneVersion service updates overview](../lifecycle-services/oneversion-overview.md).
 
 [!Note]
->For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX2012 to Finance and Operations](../upgrade-overview-ax2012.md).
+>For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX2012 to Finance and Operations](../migration-upgrade/upgrade-overview-ax2012.md).
 
 ## Definitions
 
