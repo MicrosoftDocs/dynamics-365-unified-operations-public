@@ -150,7 +150,9 @@
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
     - name: Track sources for candidate profiles and applications
-      href: source-tracking.md    
+      href: source-tracking.md
+    - name: Use analytic reports for hiring process insights
+      href: analytic-reports.md  
   - name: Motivate employees
     items:
     - name: Compensation plans
