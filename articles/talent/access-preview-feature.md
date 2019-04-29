@@ -77,6 +77,7 @@ You can use the **Preview Features** setting in the Microsoft Dynamics 365 for T
 
 - **Candidate apply** – Both internal and external candidates can now apply directly from the job page on the career site.
 - **Offer management** – Users can now create offer letters from templates that include placeholders. As candidates advance to the Offer stage, recruiters and hiring managers can use the Offer tool to prepare a candidate's formal offer via templates, send the offer for internal approval, and finally send the offer to the candidate for signature. Many new capabilities will be added to the Offer tool over time, and the preview feature will be updated with these capabilities as we are ready to release them to preview.
+- **[Analytic reports](analytic-reports.md)** – Hiring teams can view key metrics for a single job with Job Analytics or aggregated metrics accross all jobs in the Analytics Hub.
 
 ### Core HR
 
