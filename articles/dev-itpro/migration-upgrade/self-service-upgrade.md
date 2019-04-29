@@ -52,8 +52,9 @@ With this continuous adding of a new version and removal of the oldest version, 
 If you chose 8.1.3 PU23 to upgrade your Sandbox, and then we released 10.0.2 PU26 thereby removing 8.1.3 PU23 as an option, you will be blocked from upgrading Production.  You would then need to start over in Sandbox to upgrade to a newer supported release.
 
 **Targeted release schedule (dates subject to change)**
+
 | Selectable Versions | Latest Version GA for New Customers | Latest Version GA for Upgrade |
-|---------|-----------------|---------------------------|---------------------|
+|-------------------------------------------|------------------------|------------------------|
 |7.3 PU23-PU25<br/>8.1.3 PU23 - 10.0.1 PU25 |  Week of April 8, 2019 | Week of April 29, 2019 | 
 |7.3 PU24-PU26<br/>10.0.0 PU24 - 10.0.2 PU26 |  Week of May 13, 2019 | Week of May 27, 2019 | 
 |7.3 PU25-PU27<br/>10.0.1 PU25 - 10.0.3 PU27 |  Week of June 10, 2019 | Week of June 24, 2019 | 
