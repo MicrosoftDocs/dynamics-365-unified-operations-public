@@ -49,7 +49,7 @@ For information about OneVersion service updates, see the [OneVersion service up
 - **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade.
 
 ## Paths to OneVersion
-<img src="../media/OneVersion_Paths.png" width="300px" />
+<img src="../migration-upgrade/media/OneVersion_Paths.png" width="300px" />
 There are three primary paths to get to the latest version of Finance and Operations.  Each path is referenced below with a link to detailed steps.
 
 ### Self-service upgrade
@@ -57,14 +57,14 @@ There are three primary paths to get to the latest version of Finance and Operat
 *Scope: Complex*<br/>
 This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment. 
 
-[Perform self-service upgrade](../perform-self-service-upgrade.md).
+[Perform self-service upgrade](../migration-upgrade/self-service-upgrade.md).
 
 ### Rebuild and update
 *Applicable starting version: Microsoft Dynamics365 for Finance and Operations 8.0*<br/>
 *Scope: Moderate*<br/>
 This path involves removing Microsoft X++ hotfixes, and creating a merged update package.
 
-[Rebuild and update](../appupdate-80-81.md).
+[Rebuild and update](../migration-upgrade/appupdate-80-81.md).
 
 ### Automatic update
 *Applicable starting version: Microsoft Dynamics365 for Finance and Operations 8.1.0+*<br/>
