@@ -116,7 +116,7 @@ To enable direct hardware support for the hybrid Android app, set up a dedicated
 
 Note: The dedicated hardware station provided with demo data should not be used with the hybrid Android app. To test the hybrid Android app in an environment with demo data, delete the existing hardware stations and create a new dedicated hardware station. To do this, navigate to **Retail > Channels > Retail stores > All retail stores**. Select the store that will be used, typically "HOUSTON" open for editing. In the store details form, scroll down to the 'Hardware stations' fassttab. Remove the existing 'Dedicated' hardware station, then click 'Add' to add a new hardware station of type 'Dedicated'. A description is optional. No other details are neccessary for the hardware station. 
 
-To set up the out of box payment connector, follow the standard setup steps noted in the [documentation for the payment connector](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) skipping the part labeled "Update the Modern POS or IIS Hardware Station configuration". 
+To set up the out of box payment connector, follow the standard setup steps noted in the [documentation for the payment connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) skipping the part labeled "Update the Modern POS or IIS Hardware Station configuration". 
 
 Out of box, the the Android app communicates with Epson printers that support "ePOS-Print". To enable this interface, connect the Epson printer to the network This parameter is enabled through a web interface that allows users to access Epson network enabled printers through a browser. This web interface is typically reached by opening a web browser and typing http://<device ip address>>. For more information about configuring ePOS-Print, consult documentation provided by Epson. 
       
@@ -129,5 +129,5 @@ Payment terminals and receipt printers can be shared among Android POS clients a
 To share devices among Androind POS clients, instead of assigning the IP and hardware profile to the register, the hardware profile should be set on the 'Dedicated' hardware station itself. To do this, navigate to **Retail > Channels > Retail stores > All retail stores**, select the store and open for editing. Next scroll down to the list of hardware stations for the store and assign the hardware profile with network payment terminal, EFT settings, and network printer directly to the hardware station itself. For this scenario, the EFT terminal ID will also need to be assigned to the hardware station at the store level. 
 
 ## Additional resources
-- [Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Payments FAQ](payments-retail.md)
 
