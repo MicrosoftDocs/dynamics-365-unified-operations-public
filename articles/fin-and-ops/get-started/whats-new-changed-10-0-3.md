@@ -39,10 +39,16 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3).
 
+## Feature management
 
+The **Feature management** experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
+For more information, see [Feature management](https://go.microsoft.com/fwlink/?linkid=2080380)
 
+## Enable Bank foreign currency revaluation without a parameter
+Bank foreign currency revaluation was released in 10.0.2 and it included a parameter in Cash and Bank parameters to enable it. You can now enable bank foreign currency revaluation for all legal entities where it is available using feature management. 
 
+For more information, see [Bank foreign currency revaluation](https://go.microsoft.com/fwlink/?linkid=2079802)
 
 ## Additional resources
 
