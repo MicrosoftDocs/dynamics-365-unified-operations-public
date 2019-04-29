@@ -2364,7 +2364,7 @@
         - name: Organization administration
           items:    
           - name: Tax registration info related to address
-            href: ../financials/localizations/emea-registration-ids
+            href: ../financials/localizations/emea-registration-ids.md
           - name: Set up officials
             href: ../financials/localizations/rus-officials.md 
           - name: Company divisions
