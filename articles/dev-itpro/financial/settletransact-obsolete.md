@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.4
 ## Obsolete method
 The settleTransact method on the CustTrans table has been marked as obsolete.
 
-``` X++
+```X++
 public static boolean settleTransact(
 CustTable _custTable,
         LedgerVoucher _ledgerVoucher = null,
@@ -73,7 +73,7 @@ Each customer settlement will get a unique settlement context.  Because each set
 ## Replacement method
 The settleTransaction method on CustTrans table is the replacement method.
 
-```
+```X++
 public static boolean settleTransaction(
     SpecTransExecutionContext _specTransExecutionContext,
     CustTransSettleTransactionParameters _parameters)
@@ -84,7 +84,7 @@ The SpecTransExecutionContext class defines a unique settlement execution contex
 
 + The newFromSource method will take a customer or vendor and a source.  In this release, the customer or vendor will always be the customer and the source will always be the customer. 
 
-```
+```X++
     public static SpecTransExecutionContext newFromSource(
 CustVendTable _custVendTable, 
 Common _source = _custVendTable)
@@ -92,7 +92,7 @@ Common _source = _custVendTable)
 
 + The parmSpecContext method exposes the generated settlement context.
 
-```
+```X++
 public Common parmSpecContext()
 ```
 
@@ -103,7 +103,7 @@ Settlement is done in two parts.  First, the invoices and payments are marked fo
 
 ### OLD
 
-```
+```X++
 //Mark for settlement
 SpecTransManager specTransManager = SpecTransManager::construct(custTable);
 
@@ -116,7 +116,7 @@ CustTrans::settleTransact(recipientCustVendTable);
 
 ### NEW
 
-```
+```X++
 //Mark for settlement
 SpecTransExecutionContext specTransExecutionContext = SpecTransExecutionContext::newFromSource(custTable);
 specTransManager = SpecTransManager::construct(specTransExecutionContext.parmSpecContext());
