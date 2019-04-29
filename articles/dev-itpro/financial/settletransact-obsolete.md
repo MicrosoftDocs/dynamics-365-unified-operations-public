@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.4
 # CustTrans::settleTransact is obsolete
 
 ## Obsolete method
-The settleTransact method on the CustTrans table has been marked as obsolete.
+The **settleTransact** method on the **CustTrans** table has been marked as obsolete.
 
 ```X++
 public static boolean settleTransact(
@@ -46,24 +46,21 @@ CustTable _custTable,
         ,CustTrans _parentCustTrans = null)
 ```
 
-## Why was it marked as obsolete?
-When many settlements are being performed at the same time for the same customer, we get database blocking.  This impacts performance.
+## Why is it marked as obsolete?
+When many settlements are being performed at the same time for the same customer, there is database blocking. Database blocking impacts performance.
 
 ## What does the method do?
-The method CustTrans::settleTransact settles a set of invoices and payments for a given customer.  
-Settlement identifies this set by the SpecTrans table and the SpecCompany, SpecTableId, SpecRecId columns.  Together, they define a settlement context.  
+The **settleTransact** settles a set of invoices and payments for a given customer. Settlement identifies this set using the the **SpecCompany**, **SpecTableId**, and **SpecRecId** columns of the **SpecTrans** table. Together, the columns define a settlement context.  
 
-The CustTrans::settleTransact method parameter _custTable defines the settlement context as the CustTable DataAreaId, TableId, and RecId.  
+The **\_custTable** parameter of the **settleTransact** method defines the settlement context as the CustTable DataAreaId, TableId, and RecId. The following example shows two contexts.
 
-Example
-SpecCompany			SpecTableId		SpecRecId		Transaction
-USMF				7589			22565451428		1
-USMF				7589			22565451428		2
+| SpecCompany | SpecTableId | SpecRecId | Transaction |
+|---|---|---|---|
+| USMF | 7589 | 22565451428 | 1 |
+| USMF | 7589 | 22565451428 | 2 |
 
 ## How blocking will be avoided
-Each customer settlement will get a unique settlement context.  Because each settlement will be done with a unique context, each transaction will not block.  Example:
-
-## Example
+Each customer settlement will get a unique settlement context.  Because each settlement will be done with a unique context, each transaction will not block.  The following example shows two contexts:
 
 | SpecCompany | SpecTableId | SpecRecId | Transaction |
 |---|---|---|---|
@@ -71,7 +68,7 @@ Each customer settlement will get a unique settlement context.  Because each set
 |USMF | 7599 | 68719604826 | 2 |
 			
 ## Replacement method
-The settleTransaction method on CustTrans table is the replacement method.
+The **settleTransaction** method on the **CustTrans** table is the replacement method.
 
 ```X++
 public static boolean settleTransaction(
@@ -80,28 +77,28 @@ public static boolean settleTransaction(
 ```
 
 ## Replacement method parameters
-The SpecTransExecutionContext class defines a unique settlement execution context.  It contains two parts.  First, it defines the customer or vendor for the settlement.  Second, it defines the source for the settlement. 
+The **SpecTransExecutionContext** class defines a unique settlement execution context. It contains two parts. First, it defines the customer or vendor for the settlement. Second, it defines the source for the settlement. 
 
-+ The newFromSource method will take a customer or vendor and a source.  In this release, the customer or vendor will always be the customer and the source will always be the customer. 
++ The **newFromSource** method takes a customer or vendor and a source. The customer or vendor is always the customer and the source is always the customer. 
 
 ```X++
-    public static SpecTransExecutionContext newFromSource(
-CustVendTable _custVendTable, 
-Common _source = _custVendTable)
+public static SpecTransExecutionContext newFromSource(
+    CustVendTable _custVendTable, 
+    Common _source = _custVendTable)
 ```
 
-+ The parmSpecContext method exposes the generated settlement context.
++ The **parmSpecContext** method exposes the generated settlement context.
 
 ```X++
 public Common parmSpecContext()
 ```
 
-CustTransSettleTransactionParamters contains the other method parameters.  It has been created with a constructor method that will initialize the class with default values.  Example: LedgerVoucher.
+**CustTransSettleTransactionParamters** contains the other method parameters. It has a constructor method that initializes the class with default values. An example is **LedgerVoucher**.
 
-## How to uptake the new method
-Settlement is done in two parts.  First, the invoices and payments are marked for settlement.  Second, the settlement is performed.    
+## How to use the **settleTransaction** method
+Settlement is done in two parts. First, mark the invoices and payments for settlement.  Then, perform the settlement.    
 
-### OLD
+### Obsolete method
 
 ```X++
 //Mark for settlement
@@ -114,7 +111,7 @@ specTransManager.insert(…) //Payment(s)
 CustTrans::settleTransact(recipientCustVendTable);
 ```
 
-### NEW
+### New method
 
 ```X++
 //Mark for settlement
@@ -126,15 +123,11 @@ specTransManager.insert(…) //Payment(s)
 
 //Settle
 CustTrans::settleTransaction(
-specTransExecutionContext, 
-CustTransSettleTransactionParameters::construct());
+    specTransExecutionContext, 
+    CustTransSettleTransactionParameters::construct());
 ```
 
 ## Testing
-This functionality uses flights.  The flight must be enabled in a non-production environment so it can be tested.   
+This functionality uses flights. You must enable the flight in a non-production environment to test it. To understand how to enable a flight in a non-production environment, read [Features flighted in data management and enabling flighted features](../dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
 
-To understand how to enable a flight in a non-production environment, read [Features flighted in data management and enabling flighted features](../dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
-
-Flight Name = EnableCustTransSettleTransaction
-
-
+The flight name is **EnableCustTransSettleTransaction**.
