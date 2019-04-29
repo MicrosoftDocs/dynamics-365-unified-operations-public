@@ -31,17 +31,17 @@ ms.dyn365.ops.version: Talent April 2019 update
 ---
 # Use analytic reports for hiring process insights
 
-Analytic reports in Attract provide an out-of-the-box (OOTB) solution for hiring process insights. Features available include:
+Analytic reports in Attract provide an out-of-the-box (OOTB) solution for hiring process insights. Availabe features include:
 
-- **Job analytics:** Click the **Analytics** tab within a job for metrics on the job&#39;s applicants.
+- **Job analytics:** Click the **Analytics** tab within a job for metrics on the job's applicants.
 - **Analytics hub:** Click **Analytics** on the left navigation for aggregated metrics across jobs.
-- **User-specific security:** Access to reports is controlled by Attract [Role](security-attract.md) and job participant role.
+- **User-specific security:** Access to reports is controlled by Attract [role](security-attract.md) and job participant role.
 - **Cross-filtering:** Click visuals within a report to view other metrics filtered by selected data.
 
 >[!NOTE] 
->- This feature is currently in [preview](access-preview-feature.md). To try it you must have the [**Comprehensive Hiring Add-On**](attract-comprehensive-hiring.md)
->- All public preview reports are displayed in English
->- Reports refresh every 3 hours. Last refresh time (in the local timezone) is located at the top of the report. Refresh times are an approximation and vary based on data volume and resource load in your region.
+>- This feature is currently in [preview](access-preview-feature.md). To try it, you must have the [**Comprehensive Hiring Add-On**](attract-comprehensive-hiring.md).
+>- All public preview reports are displayed in English.
+>- Reports refresh every 3 hours. The last refresh time (in the local timezone) is located at the top of the report. Refresh times are an approximation and vary based on data volume and resource load in your region.
 
 ## Job Analytics
 
@@ -57,11 +57,11 @@ Analytics Hub reports aggregate data across jobs to surface trends in the hiring
 
 ### Pipeline Summary
 
-The Pipeline Summary report aggregates data for open jobs. Key metrics include.
+The Pipeline Summary report aggregates data for open jobs. Key metrics include:
 
 - Applicants across all jobs by stage
 - Applicant source
-- Open Jobs by seniority level
+- Open jobs by seniority level
 
 ### Funnel Analysis
 
@@ -74,11 +74,11 @@ The Funnel Analysis report aggregates data for jobs that have been closed as fil
 Note: For the most accurate time to hire reporting, it is recommended that you use [Offer management](offer-setup.md), a feature available as part of the Comprehensive Hiring Add-On.
 
 >[!TIP] 
->Try hovering over visuals for additional information. For example, hovering over &quot;Active applicants&quot; visuals will display the average days in stage. Analyzing this info can provide insights critical to reducing time to hire and enable recruiters to focus on ways to reduce the time spent in each stage.
+>Try hovering over visuals for additional information. For example, hovering over **Active applicants** visuals will display the average days in stage. Analyzing this information can provide insights critical to reducing time to hire and enable recruiters to focus on ways to reduce the time spent in each stage.
 
 ## User-specific security
 
-Attract reports are accessible for Admin, Read All, Recruiter, and Hiring Manager [Roles](security-attract.md). Unassigned users do not have access to either of the analytic report pages (Job Analytics or Analytics Hub).
+Attract reports are accessible for Admin, Read All, Recruiter, and Hiring Manager [roles](security-attract.md). Unassigned users do not have access to either of the analytic report pages (Job Analytics or Analytics Hub).
 
 Job Analytics reports display data for the selected job. Analytics Hub reports aggregate data across all jobs a user can view. Users that can view both My jobs and All jobs on the Jobs page have the same views available in the Analytics Hub.
 
@@ -86,6 +86,6 @@ Job Analytics reports display data for the selected job. Analytics Hub reports a
 
 One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. Find out more and see an example in [How visuals cross-filter each other in a Power BI report](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions).
 
-## Export to excel
+## Export to Excel
 
-To view report data in Excel, users can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data)
+To view report data in Excel, you can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data).
