@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade data in development, demo, or sandbox environments
+title: Upgrade data in development, or demo environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 09/17/2018
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
 The topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment. 
 
-In Tier 2 or higher environments, including Production, you will run through the self-service upgrade steps as outlined in [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md).
+In Tier 2 or higher environments, including Production, you will run through the self-service upgrade steps as outlined in [Self-service upgrade to the latest version](self-service-upgrade.md).
 
 > [!IMPORTANT]
 > - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations 8.0.
@@ -96,17 +96,14 @@ In Tier 2 or higher environments, including Production, you will run through the
 
 ## Select the correct data upgrade deployable package
 
-To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download it from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 1. Sign-in to http://lcs.dynamics.com/
 2. Select the **Shared asset** library tile
 3. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
-    - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-July2017**
-    - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. Select the package that corresponds to the release you are upgrading to. 
-    - If you're upgrading from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**.
-    - If you're upgrading from a previous release of Finance and Operations to release 8.0 (April 2018), the package names starts with **DataUpgrade-8-0**.
-    - If you're upgrading from a previous release of Finance and Operations to release 8.1 (October 2018), the package names starts with **DataUpgrade-8-1**.
+    - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-10-0**
+    - If you're upgrading from a previous release of Finance and Operations to the latest 10.0.X release, the package name starts with **DataUpgrade-10-0**. Select the package that corresponds to the release you are upgrading to. 
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.
@@ -133,7 +130,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 2. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
     > [!NOTE]
-    > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](../database/copy-database-from-azure-sql-to-sql-server.md).   
+    > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Export a copy of the Standard User Acceptance Test (UAT) database](../database/dbmovement-scenario-exportuat.md).   
     > 
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
