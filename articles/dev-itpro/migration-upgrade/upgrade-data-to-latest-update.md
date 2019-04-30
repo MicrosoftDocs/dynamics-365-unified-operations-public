@@ -96,15 +96,15 @@ In Tier 2 or higher environments, including Production, you will run through the
 ## Select the correct data upgrade deployable package
 
 To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download it from the Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
-1. Sign-in to http://lcs.dynamics.com/
-2. Select the **Shared asset** library tile
+1. Sign-in to http://lcs.dynamics.com/.
+2. Select the **Shared asset** library tile.
 3. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
-    - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-10-0**
-    - If you're upgrading from a previous release of Finance and Operations to the latest 10.0.X release, the package name is exactly **DataUpgrade-10-0**. 
-    - If you're upgrading from a previous release to a preview release, the package name contains PREVIEW.  For example: **DataUpgrade-10-0-2-PREVIEW**.
-    Select the package that corresponds to the release you are upgrading to. 
+    - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example, **AX2012DataUpgrade-10-0**.
+    - If you're upgrading from a previous release of Finance and Operations to the latest 10.0.X release, the package name is  **DataUpgrade-10-0**. 
+    - If you're upgrading from a previous release to a preview release, the package name contains PREVIEW. For example, **DataUpgrade-10-0-2-PREVIEW**.
+5. Select the package that corresponds to the release that you are upgrading to. 
 
 
 ### Fix the duplicate key issue (February 2016 release only)
@@ -140,7 +140,7 @@ This step is required if you're upgrading a database from the February 2016 rele
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
 
-4. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
+4. Create a backup of the source database, in case you have to revert to it. This step is important because the following steps will modify the source database.
 
 5. Execute the data upgrade package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package. For detailed instructions, see [Install a deployable package](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
 **Install a deployable package**. 
