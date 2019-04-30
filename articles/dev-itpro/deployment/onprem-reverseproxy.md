@@ -5,7 +5,7 @@ title: Configure proxies for on-premises environments
 description: This topic describes how you can secure the Dynamics 365 for Finance and Operations on-premises environment behind a proxy.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 02/06/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
