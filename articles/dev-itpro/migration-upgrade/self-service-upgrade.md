@@ -5,7 +5,7 @@ title: Self-service upgrade to the latest version
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 03/14/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,21 +17,20 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 102343
-ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: Platform update 1
+ms.author: laswenka
+ms.search.validFrom: 2019-04-30
+ms.dyn365.ops.version: 10.0.1
 
 ---
 
 # Self-service upgrade to the latest version
-*Applicable starting version: Microsoft Dynamics365 for Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*
+*Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*
 
 In this tutorial, you will learn how to:
 
@@ -43,13 +42,13 @@ In this tutorial, you will learn how to:
 > * Perform self-service upgrade in Production
 
 ## Understand which version to select for upgrade
-To align the Self-service upgrade process to support continuous updates, each new release will cause the oldest release version to be discontinued.  
+To align the self-service upgrade process to support continuous updates, each new release will cause the oldest release version to be discontinued.  
 
-As an example, imagine your current application version is 7.3 with Platform Update 23.  As of this writing the supported upgrade versions are 8.1.3 PU23, 10.0.0 PU24, and 10.0.1 PU25.  When the next release, 10.0.2 PU26, is made generally available we will add it to available upgrade options and will remove 8.1.3 PU23.
+As an example, imagine your current application version is 7.3 with Platform update 23.  As of this writing, the supported upgrade versions are 8.1.3 with Platform update 23, 10.0.0 with Platform update 24, and 10.0.1 with Platform update 25.  When the next release, 10.0.2 with platform udpate 26, is made generally available we will add it to available upgrade options and will remove 8.1.3 with Platform update 23.
 
 With this continuous adding of a new version and removal of the oldest version, it is our recommendation that customers upgrade to the latest available version so that you have 2 months in which you can upgrade your Sandbox and then later upgrade your Production environment to the same version.
 
-If you chose 8.1.3 PU23 to upgrade your Sandbox, and then we released 10.0.2 PU26 thereby removing 8.1.3 PU23 as an option, you will be blocked from upgrading Production.  You would then need to start over in Sandbox to upgrade to a newer supported release.
+If you chose 8.1.3 with Platform update 23 to upgrade your Sandbox, and then we released 10.0.2 with Platform update 26 thereby removing 8.1.3 with Platform update 23 as an option, you will be blocked from upgrading Production.  You would then need to start over in Sandbox to upgrade to a newer supported release.
 
 **Targeted release schedule (dates subject to change)**
 
@@ -63,7 +62,7 @@ If you chose 8.1.3 PU23 to upgrade your Sandbox, and then we released 10.0.2 PU2
 
 ## Refactor your customizations to Extension
 
-In preparation for Upgrade, it is required that you refactor your customizations that were overlays in to Extensions. We recommend deploying a new developer environment on the latest version, creating a new branch in Version Control and following the guidance in [Migrate from overlayering to extensions](../extensibility/migrate-overlayer-extension.md).
+In preparation for ugrade, it is required that you refactor your customizations that were overlays in to extensions. We recommend deploying a new developer environment on the latest version, creating a new branch in Version Control and following the guidance in [Migrate from overlayering to extensions](../extensibility/migrate-overlayer-extension.md).
 
 If you have no overlays and are already operating 100% extension, we still recommend branching in version control for the upgrade effort.  If you have any Microsoft X++ hotfixes installed you will be required to delete those from Version Control as they are not applicable on the latest version.
 
@@ -177,8 +176,9 @@ If the business validation fails, you can select **Rollback** on the **Upgrade**
 After you have signed off on your upgrade, there are a few actions which must be performed on the environment. These are listed below:
 
 * Aggregate Measurements - these must be refreshed after a major upgrade.  To do this, go to **System Administration** > **Setup** > **Entity Store** and then click **Refresh**.  
+
 > [!NOTE]
-> These can be scheduled to run using Batch.
+> These can be scheduled to run using batch processing.
 
 ### Upgrade production
 
