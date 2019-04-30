@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/22/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,11 +39,11 @@ This topic describes how you can use the data management framework to manage dat
 
 The data management framework consists of the following concepts:
 
-- **Data entities**: A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understood by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
-- **Data project**: A project that contains configured data entities, which include mapping and default processing options.
-- **Data job**: A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.
-- **Job history**: Histories of source to staging and staging to target jobs.
-- **Data package**: A single compressed file that contains a data project manifest and data files. This is generated from a data job and used for import or export of multiple files with the manifest.
+- **Data entities** - A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understood by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
+- **Data project** - A project that contains configured data entities, which include mapping and default processing options.
+- **Data job** - A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.
+- **Job history** - Histories of source to staging and staging to target jobs.
+- **Data package** - A single compressed file that contains a data project manifest and data files. This is generated from a data job and used for import or export of multiple files with the manifest.
 
 The data management framework supports using data entities in the following core data management scenarios:
 
@@ -110,7 +110,7 @@ There are two types of sequencing that should be considered when working with da
 - Sequencing data entities within a data package
 - Sequencing the order of data package imports
 
-#### Sequence data entities within a data packages
+#### Sequence data entities within a data package
 
 1. When a user adds data entities to a data project, by default, a sequence is set for the order in which the entities will load. The first entity added to the project will be set as the first entity to load, the next entity added will be second, the next entity will be third, and so on.
 
@@ -192,7 +192,7 @@ It is possible to enable manual assignment of number sequences for a specific en
 
 [![Enable manual number sequences](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)
 
-After you have enable manual assignment, you can provide manually assigned numbers instead.
+After you have enabled manual assignment, you can provide manually assigned numbers instead.
 
 [![Provide number sequence](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)
 
@@ -215,7 +215,7 @@ After the job is completed you can choose how to download the files: each data e
 ## Import
 Import is the process of pulling data into a system using data entities. The import process is done through the **Import** tile in the **Data Management** workspace. Data can be imported either for individual entities or for a group of logically related entities that are sequenced in the correct order. The file formats vary depending on the type of import. For an entity, it can be an Excel file that is comma-separated, tab-separated, or text. For a data package, it is a .zip file. In both cases, the files are exported using the above mentioned export process.
 
-### Import a data package: 
+### Import a data package
 1. Log into the environment using a login with sufficient privileges (typically this is the Administrator role).
 2. On the dashboard, click the **Data Management** workspace.
 3. Click the **Import** tile.
@@ -229,7 +229,7 @@ Import is the process of pulling data into a system using data entities. The imp
 
     4. Click **Save**, and then click **Import**.
 
-### Import multiple data packages:
+### Import multiple data packages
 Use one of the following methods to import multiple data packages.
 
 - Create a new job for each package, and then repeat steps 4(a) through 4(d) above, for each package. 
@@ -263,7 +263,7 @@ During data entity import:
 - If data entities fail, you can check the import file to see if there's an extra line in the file with text which displays, "This is a string that is inserted into Excel as a dummy cell to make the column to support more than 255 characters. By default, an Excel destination component will not support more than 255 characters. The default type of Excel will be set based on the first few rows". This line is added during data export. If this line exists, delete this line, re-package the data entity, and try to import.
 
 ### Troubleshooting the System users entity
-- When you import the system users entity, you may receive a integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
+- When you import the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
 - If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
 
 ## Features flighted in data management and enabling flighted features
@@ -284,9 +284,10 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DMFDisableXSLTTransformationForCompositeEntity     | This can disable the application of transformations on composite entities. |
 | DMFDisableInputFileCheckInPackageImport     | Additional validations are made to ensure if any entity file is missing from a data package, error message is shown. This is the default behavior. If required, this can be turned OFF by this flight.  |
 | FillEmptyXMLFileWhenExportingCompositeEntity     | Prior to Platform update 15, when exporting composite entities that did not have any records to export, the XML file generated did not have any schema elements. This behavior can be changed to output empty schema by enabling this flight. By default, the behavior will still be to output empty schema.  |
-| EnableNewNamingForPackageAPIExport     | A was fix was made to ensure unique names are used for the execution ID using the package API for exports. This will now result in a new naming convention for the execution ID's. If there is a need to revert to the previous naming convention, you can enable this flight. However, by doing this, the issue fixed in the bug 265164 will re-occur. This issue will only occur when calls are made in quick succession so that the time stamps used in the naming convention are the same. |
-| DMFDisableDoubleByteCharacterExport     | A was fix was made to ensure that data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock, if applicable. |
-| DisablePendingRecordFromJobStatus     | A was fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
+| EnableNewNamingForPackageAPIExport     | A fix was made to ensure unique names are used for the execution ID using the package API for exports. This will now result in a new naming convention for the execution ID's. If there is a need to revert to the previous naming convention, you can enable this flight. However, by doing this, the issue fixed in the bug 265164 will re-occur. This issue will only occur when calls are made in quick succession so that the time stamps used in the naming convention are the same. |
+| DMFDisableDoubleByteCharacterExport     | A fix was made to ensure that data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock, if applicable. |
+| DisablePendingRecordFromJobStatus     | A fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
+| DMFDisableEnumFieldDefaultValueMapping     | A fix was made to ensure that default values set in advanced mapping for enum fields are successfully saved in the data package manifest file when generating the data package. This makes it possible for the data package to be used as a template for integrations when such advanced mappings are used. This fix is protected by this flight and can be disabled if the previous behavior is still needed (which is to always set the value to 0 in the data package manifest).  |
 
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
