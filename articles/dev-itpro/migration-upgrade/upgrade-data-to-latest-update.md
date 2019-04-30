@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade data in development, or demo environments
+title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database to the latest update.
 author: laneswenka
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Upgrade data in development, demo, or sandbox environments
+# Upgrade data in development or demo environments
 
 [!include [banner](../includes/banner.md)]
 
@@ -60,9 +60,9 @@ In Tier 2 or higher environments, including Production, you will run through the
 
 4. In the **source** environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
 
-   - **If you're upgrading from the February 2016 release (also known as RTW or 7.0) (build 7.0.1265.3015):** KB 4023685, "'Could not find source system version information' error when you upgrade to the latest Application Release."
-   - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1) (build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
-   - **If you're upgrading from the July 2017 release (also known as 7.2) (build 7.2.11792.56024):** No hotfix is required for this version.
+   - **If you're upgrading from the February 2016 release (also known as RTW or 7.0, build 7.0.1265.3015):** KB 4023685, "'Could not find source system version information' error when you upgrade to the latest Application Release."
+   - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1, build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
+   - **If you're upgrading from the July 2017 release (also known as 7.2, build 7.2.11792.56024):** No hotfix is required for this version.
    - After you install application hotfixes required in this step, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
      ```
@@ -148,7 +148,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 > [!NOTE]
 > If you are upgrading a database on a development environment, you can instead execute the data upgrade package directly from the LCS environment page, using the **Maintain > Apply Updates** servicing functionality. This does not require the user to be a local Administrator on the development VM. This is available as of the [February](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/) release of LCS. 
 
-This will upgrade your Finance and Operations database, Retail channel database and reset the Financial reporting database.
+> This will upgrade your Finance and Operations database, Retail channel database, and reset the Financial reporting database.
 
 ## Re-enable SQL change tracking
 
@@ -160,7 +160,7 @@ ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENT
 
 ## Refresh the data entities list
 
-If you have upgraded to Platform update 14 or later, then you will need refresh the data entity list in the Data management workspace (**Data management** > **Framework parameters** > **Entity settings** > **Refresh entity list**) to ensure that the entity list is rebuilt on the latest platform and that the required metatdata is available for data management operations. 
+If you have upgraded to Platform update 14 or later, then you will need refresh the data entity list in the Data management workspace (**Data management** > **Framework parameters** > **Entity settings** > **Refresh entity list**) to ensure that the entity list is rebuilt on the latest platform and that the required metadata is available for data management operations. 
 
 ## Troubleshoot upgrade script errors
 
@@ -436,4 +436,4 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 
 ## Additional resources
 
-[Process for moving to the latest update of Finance & Operations](upgrade-latest-update.md)
+[Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
