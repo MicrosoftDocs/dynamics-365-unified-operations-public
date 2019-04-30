@@ -1077,7 +1077,7 @@
     items:
     - name: Process for moving to the latest update
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Paths to OneVersion
+    - name: Paths to One Version
       items:
         - name: Self-service upgrade to the latest version
           href: migration-upgrade/self-service-upgrade.md
