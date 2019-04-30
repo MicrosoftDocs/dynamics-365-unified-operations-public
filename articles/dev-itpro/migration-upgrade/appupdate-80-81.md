@@ -79,7 +79,7 @@ On any other development machine (other than the new ones being deployed), open 
 
 Next, delete any Microsoft package folders in this branch. You can have packages, such as ApplicationSuite, checked in from applying hotfixes on 8.0 which need to be removed. When only your custom packages or ISVs remain, check these changes in to the branch.
 
->[!Important]
+>[!IMPORTANT]
 > It is critical that this is done before you map version control workspaces on your new development environments. This is to avoid the deletion of the Microsoft hotfixes to cascade to your working environment and delete untouched 10.0.X application code.
 
 ## Recompile custom extensions and/or ISV solutions
