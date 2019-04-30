@@ -98,7 +98,7 @@ public Common parmSpecContext()
 ### How to use the **settleTransaction** method
 Settlement is done in two parts. First, mark the invoices and payments for settlement.  Then, perform the settlement.    
 
-#### Obsolete method
+#### Obsolete code example
 
 ```X++
 //Mark for settlement
@@ -111,7 +111,7 @@ specTransManager.insert(…) //Payment(s)
 CustTrans::settleTransact(recipientCustVendTable);
 ```
 
-#### New method
+#### New code example
 
 ```X++
 //Mark for settlement
