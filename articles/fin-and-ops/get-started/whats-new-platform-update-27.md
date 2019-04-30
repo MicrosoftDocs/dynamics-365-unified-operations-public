@@ -39,8 +39,8 @@ This topic describes features that are new or changed in Dynamics 365 for Financ
 ## Feature Management
 The **Feature management** experience provides a workspace where you can view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](feature-management/feature-management-overview.md).
 
-## Feature 
-A brief description of the feature and a link to the associated topic that has more details.
+## Dedicated capacity to process business events 
+It will be no longer required to schedule the business event processing batch job to process business events. Dedicated threads are allocated to process business events by the system which ensures faster processing of business events. The existing batch job is still available (but is not needed to run unless there are issues with dedicated capacity). If the batch job was already scheduled prior to this platform update, the batch will become ineffective and dedicated threads will take over after the update.
 
 ## Feature 
 A brief description of the feature and a link to the associated topic that has more details.
