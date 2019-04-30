@@ -5,7 +5,7 @@ title: Show order notifications in the point of sale (POS)
 description: This topic describes how to enable order notifications in the point of sale and the notification framework. Eventually, developers will be able to extend these notifications to operations besides order fulfillment operations. 
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -59,7 +59,7 @@ After you complete the preceding steps, the workers will be able to view the not
 - **Store pickup** – This group shows the count of orders that have a delivery mode of **Pickup**, and that are scheduled for pickup from the current store. You can press the number on the group to open the **Order fulfillment** page. In this case, the page will be filtered so that it shows only the active orders that are set up for pickup from the current store.
 - **Ship from store** – This group shows the count of orders that have the delivery mode of **Shipping**, and that are scheduled for shipment from the current store. You can press the number on the group to open the **Order fulfillment** page. In this case, the page will be filtered so that it shows only the active orders that are set up for shipment from the current store.
 
-When new orders are assigned to the store for fulfillment, the notification icon changes to indicate that there are new notifications, and the count for the appropriate groups is updated. Even tough the groups are refreshed at regular intervals however, POS users can manually refresh the groups at any time by selecting the **Refresh** button next to the group. Lastly, if a group has a new item, that the current worker hasn't viewed, then the group shows a burst symbol to indicate new content.
+When new orders are assigned to the store for fulfillment, the notification icon changes to indicate that there are new notifications, and the count for the appropriate groups is updated. Even though the groups are refreshed at regular intervals however, POS users can manually refresh the groups at any time by selecting the **Refresh** button next to the group. Lastly, if a group has a new item, that the current worker hasn't viewed, then the group shows a burst symbol to indicate new content.
 
 ## Enable live content on POS buttons
 
@@ -72,7 +72,7 @@ The following illustration shows the live content settings in the button grid de
 
 ![Live content settings in the button grid designer](./media/ButtonGridDesigner.png "Live content settings in the button grid designer")
 
-In order to show the notification count on the buttons, you need to ensure that the right screen layout is being updated. To find out the screen layout being used by the POS, you can click on the 'Settings' icon in POS top right corner and note the Screen layout ID and Layout resolution (refer the below image). Now using Edge browser, navigate to the Screen layout form in the Dynamics 365 for Finance and Operations application, find the screen layout ID and layout resolution identified above and select the "Enable live content" checkbox. Lastly, go to Retail > Retail IT > Distribution schedule and run the the 1090 (Registers) job to synchronize layout changes. 
+To show the notification count on a button, you need to ensure that the correct screen layout is being updated. To determine the screen layout that is being used by the POS, select the **Settings** icon in upper-right corner and note the **Screen layout ID** and **Layout resolution**. Now using Edge browser, go to the **Screen layout** page in Dynamics 365 for Finance and Operations, find the **Screen layout ID** and **Layout resolution** identified above and select the **Enable live content** check box. Go to **Retail > Retail IT > Distribution schedule** and run the 1090 (Registers) job to synchronize layout changes. 
 
 ![Find the screen layout used by POS](./media/Choose_screen_layout.png "Find the screen layout ")
 
