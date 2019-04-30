@@ -5,7 +5,7 @@ title: Application stack and server architecture
 description: The application stack is divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -75,7 +75,4 @@ Many features of the Azure platform are used, such as Microsoft Azure Storage, n
 ## Development environment
 The architecture of the development environment resembles the architecture of the cloud instance. It also includes the software development kit (SDK), which consists of the Visual Studio development tools and other components. Source control through Team Foundation Server or Visual Studio Online enables multiple-developer scenarios, where each developer uses a separate development environment. Deployment packages can be compiled and generated on a development environment and deployed to cloud instances by using LCS. The following diagram shows how the key components interact in a development environment.
 
-[![CloudEnvironmentTechConcepts](./media/cloudenvironmenttechconcepts.png)](./media/cloudenvironmenttechconcepts.png)
-
-
-
+![Development architecture, Visual Studio, local runtime, and cloud deployment](./media/dev-environ.png)
