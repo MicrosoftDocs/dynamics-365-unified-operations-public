@@ -72,6 +72,10 @@ The following illustration shows the live content settings in the button grid de
 
 ![Live content settings in the button grid designer](./media/ButtonGridDesigner.png "Live content settings in the button grid designer")
 
+In order to show the notification count on the buttons, you need to ensure that the right screen layout is being updated. To find out the screen layout being used by the POS, you can click on the 'Settings' icon in POS top right corner and note the Screen layout ID and Layout resolution (refer the below image). Now using Edge browser, navigate to the Screen layout form in the Dynamics 365 for Finance and Operations application, find the screen layout ID and layout resolution identified above and select the "Enable live content" checkbox. Lastly, go to Retail > Retail IT > Distribution schedule and run the the 1090 (Registers) job to synchronize layout changes. 
+
+![Find the screen layout used by POS](./media/Choose_screen_layout.png "Find the screen layout ")
+
 The following illustration shows the effect of selecting **Top right** versus **Center** in the **Content alignment** field for buttons of various sizes.
 
 ![Live content on POS buttons](./media/ButtonsWithLiveContent.png "Live content on POS buttons")
