@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to extend decimal point precision for selected data types. You can create extensions of specific extended data types of the type Real, to change the decimal point precision for certain scenarios.
+This topic describes how to extend decimal point precision for selected data types. You can create extensions of specific extended data types of the type Real, to change the decimal point precision for certain scenarios. To change the decimal point precision, change the **NoOfDecimals** property as needed.
 
 ## Weight
 Weight data can be maintained with a maximum of two decimals by default. 
