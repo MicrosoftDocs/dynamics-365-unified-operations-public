@@ -40,8 +40,8 @@ For information about the contents of each release of Finance and Operations, se
 
 For information about OneVersion service updates, see the [OneVersion service updates overview](../lifecycle-services/oneversion-overview.md).
 
-[!Note]
->For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX2012 to Finance and Operations](../migration-upgrade/upgrade-overview-ax2012.md).
+> [!Note]
+> For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX2012 to Finance and Operations](upgrade-overview-ax2012.md).
 
 ## Definitions
 
