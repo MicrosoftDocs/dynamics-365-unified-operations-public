@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 10.0.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
 manager: AnnBe
-ms.date: 034/29/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 10.0.X
+ms.dyn365.ops.version: 10.0.0
 
 ---
 
@@ -85,7 +85,7 @@ Next, delete any Microsoft package folders in this branch. You can have packages
 ## Recompile custom extensions and/or ISV solutions
 Now you are ready to map this branch to a new development environment and compile your extensions and ISV solutions if they have provided you with source code.  If your ISVs have only provided binary packages, you can check them in to source control, and the build environment will merge the binaries with your extension package to produce a single software deployable package. Additional information on this process can be found at [Deployable packages from third parties](../dev-tools/manage-runtime-packages.md#deployable-packages-from-third-parties).  This will help later when you merge your package with the 10.0.X binary update.
 
->[!NOTE]
+> [!NOTE]
 > This **step is necessary** as the 10.0.X application code is not backward compatible with 8.0 from a binary level. In future application releases this step will be optional.
 
 ## Produce a single software deployable package
