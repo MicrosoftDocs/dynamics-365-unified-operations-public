@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 for Finance and Operations. In this way, the systems can perform business actions in response to the business events.
 
@@ -68,7 +69,7 @@ In summary, the business event catalog helps identify the business events that a
 The next step is to manage the endpoints.
 
 ## Business events processing
-F&O allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (under *System administration > server configuration*). Since threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events in controlled via a parameter in the business events parameter table. This setting is not exposed from the UI and hence, a support case must be created to get this count changed in production environments as this will need db access.
+Finance and Operations allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (under **System administration > Server configuration**). Since threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events in controlled via a parameter in the business events parameter table. This setting is not exposed from the UI and hence, a support case must be created to get this count changed in production environments as this will need database access.
 
 The existing business events batch processing job is avaialble as a workaround to mitigate issues with the dedicated processing, if at all. The corrresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, one can manually create the batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. Care must be taken to not run the manual batch job unless it is absolutely required as a workaround. If the batch job was scheduled in one of the older platform, the batch will become ineffective after the update to the latest platform and dedicated processing will take over automatically. This behavior is controlled via a parameter in the business events parameter table which is off by default indicating that manual batch job will not be effective by default.
 
