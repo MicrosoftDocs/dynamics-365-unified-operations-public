@@ -436,4 +436,4 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 
 ## Additional resources
 
-[Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
+[Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
