@@ -3,9 +3,9 @@
 
 title: Upgrade data in development, or demo environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database to the latest update.
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-ms.date: 04/29/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 106163
-ms.assetid: 0c78b7a9-a360-4ef8-92ef-e4e9ff70cee7
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
