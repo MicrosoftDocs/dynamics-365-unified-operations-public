@@ -145,7 +145,7 @@ To add, select **Add a Software Assurance plan** when you create the support inc
 For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).
 
 ## Phone support
-The preferred method of contacting Support is to follow the steps in [Open a new incident](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident). If you are unable to open a new indicent in LCS, phone support is available.
+We prefer that you contact Support following the steps in [Open a new incident](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using one of the following options:
 
 - [Premier phone support](https://support.microsoft.com/en-us/premier/contacts)
 - [Broad commercial phone support](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/global_support_contacts_eng)
