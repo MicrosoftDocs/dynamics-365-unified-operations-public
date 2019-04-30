@@ -38,7 +38,8 @@ This topic describes features that are new or changed in Microsoft Dynamics 365 
 
 To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.3 (June 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
 
-
+## Feature 
+A brief description of the feature and a link to the associated topic that has more details.
 
 
 ## Additional resources
