@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-The following are potential uses cases for business events. This is by no means an exhaustive list of the potential use cases. It should also be noted that some of these use cases may not have been implemented yet either by Microsoft or other organizations. These are meant to provide ideas and help with understanding certain business events.
+The following are potential uses cases for business events. This is by no means an exhaustive list of the potential use cases. It should also be noted that some of these use cases may not have been implemented yet either by Microsoft or other organizations. These are meant to provide ideas and help with understanding business events.
 
 | **Use case**                         | **Value**  |
 |----------------------------------------|----------|
