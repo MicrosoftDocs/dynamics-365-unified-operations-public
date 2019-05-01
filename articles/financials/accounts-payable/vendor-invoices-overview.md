@@ -92,6 +92,15 @@ You can use the **Recover vendor invoices** page to recover or release vendor in
 
 You can access the **Recover vendor invoices** page only if the **Recover vendor invoices in use** security duty and privilege are assigned to you. Additionally, the **Allow vendor invoice recovery** parameter on the **Accounts payable parameters** page must be turned on.
 
+## Resetting the workflow status from Unrecoverable to Draft for vendor invoices
+
+A workflow instance that has stopped because of an unrecoverable error will have a workflow status of Unrecoverable. When a vendor invoice workflow status is Unrecoverable, you can reset the status back to Draft. Setting the status to Draft will allow you to edit the vendor invoice. This feature is available if the **Reset draft status for the vendor invoice workflow** parameter on the **Feature management** page is enabled.
+
+You can use the **Reset vendor invoices workflow status** page to reset the workflow status to Draft, so that the vendor invoice can be edited. You can open this page from the **Periodic task** navigation. The page shows vendor invoices that have a workflow status of Unrecoverable in this legal entity. It shows the user that submitted the invoice to workflow and the invoice identification and provides a link to the workflow history. To reset the workflow status to Draft, mark one or more invoices and select the **Update to Draft** action. After the workflow status is reset to Draft, it will be available for editing on the **Vendor invoice** page.
+
+You can access the **Reset vendor invoices workflow status** page only if the **Maintain the status for vendor invoice workflow** security duty and **Reset the status for vendor invoice workflow** privilege are assigned to you.
+
+
 ## Additional resources
 
  - [Set up vendor invoice policies](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
