@@ -107,9 +107,9 @@ To download the **Flow – SharePoint Integration** template, go to [Flow – Sh
 
 ## Admin console to manage talent pools
 
-When you enable integration with LinkedIn, Attract automatically createas a LinkedIn talent pool. When a recruiter exchanges InMail with a recruit through LinkedIn, Attract creates a profile for the recruit, and the recruit becomes a member of the LinkedIn talent pool. This PowerApp is useful for reorganizing candidates in talent pools based on skill.
+When you enable integration with LinkedIn, Attract automatically createas a LinkedIn talent pool. When a recruiter exchanges InMail with a recruit through LinkedIn, Attract creates a profile for the recruit, and the recruit becomes a member of the LinkedIn talent pool. This PowerApps app is useful for reorganizing candidates in talent pools based on skill.
 
-Run this PowerApp as an admin console to perform the following tasks:
+Run this PowerApps app as an admin console to perform the following tasks:
 
 - List candidates in a talent pool
 - Add and remove candidates from a talent pool
@@ -117,7 +117,9 @@ Run this PowerApp as an admin console to perform the following tasks:
 - Determine whether candidates are already part of a talent pool before moving them
 - Check the skills of candidates before moving them to other talent pools
 
-This PowerApp uses many-to-many relationships, so you can use it as a template for other scenarios where you need to extract records that have many-to-many relationships.
+This PowerApps app uses many-to-many relationships, so you can use it as a template for other scenarios where you need to extract records that have many-to-many relationships.
+
+To download the **Admin console to manage talent pools** template,  go to [Admin console to manage talent pools](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) on the Microsoft Download Center.
 
 ## Additional resources
 
