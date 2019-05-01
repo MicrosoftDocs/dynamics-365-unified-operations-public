@@ -44,7 +44,7 @@ Development environments are called Tier 1 environments. There are three options
 
 If your implementation of Microsoft Dynamics 365 for Retail includes code extensions, we recommend that you use a development environment where you have administrator privileges. If you don't have administrator privileges on your development environment, then you won't be able to install programming tools or configure the operating system.
 
-The hosting model that you choose has a financial impact. , you can reduce some of the hosting cost by using a Tier 1 environment as a simple test environment or golden configuration environment. One Tier 1 environment is free with your Microsoft Dynamics subscription. Although this approach isn't ideal, it should work for most projects.
+The hosting model that you choose has a financial impact. You can reduce some of the hosting cost by using a Tier 1 environment as a simple test environment or golden configuration environment. One Tier 1 environment is free with your Microsoft Dynamics subscription. Although this approach isn't ideal, it should work for most projects.
 
 If you want to extend channel components, read [Prepare the development environment](#prepare-the-development-environment) to learn how to configure a development environment so that it's ready for development.
 
