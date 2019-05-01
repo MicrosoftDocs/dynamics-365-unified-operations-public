@@ -5,7 +5,7 @@ title: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
 description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 # ms.tgt_pltfrm: 
 ms.custom:
@@ -105,20 +105,19 @@ This template can be extended so that it can be used for any scenario that invol
 
 To download the **Flow – SharePoint Integration** template, go to [Flow – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
 
-## Admin Console to Manage Talent Pool
+## Admin console to manage talent pools
 
-When integration with LinkedIn is enabled, a LinkedIn TalentPool is automatically created in Attract. As soon as recruiter exchanges inMail with someone at LinkedIn, a profile is created for this person in Attract and the person becomes a member of the LinkedIn Talent Pool. if you want to reshuffle candidates across TalentPools based on skill this PowerApp is useful.
+When you enable integration with LinkedIn, Attract automatically createas a LinkedIn talent pool. When a recruiter exchanges InMail with a recruit through LinkedIn, Attract creates a profile for the recruit, and the recruit becomes a member of the LinkedIn talent pool. This PowerApp is useful for reorganizing candidates in talent pools based on skill.
 
-Please note, This PowerApp can be run as  Admin Console to perform below tasks…
+Run this PowerApp as an admin console to perform the following tasks:
 
--	List candidates belongs to specific TalentPool
--	Add and remove candidates from TalentPool
--	Can shuffle candidates from one TalentPool to another TalentPool
--	Validates if candidate is already part of the TalentPool before you move Candidate to that Pool
--	Administrator can check skills of the candidate before shuffling candidates across Talent Pools
+- List candidates in a talent pool
+- Add and remove candidates from a talent pool
+- Move candidates from one talent pool to another
+- Determine whether candidates are already part of a talent pool before moving them
+- Check the skills of candidates before moving them to other talent pools
 
-
-This PowerApp is built using Many to Many concept. You can use it as template for scenarios involving extraction of records using Many-Many relationships
+This PowerApp uses many-to-many relationships, so you can use it as a template for other scenarios where you need to extract records that have many-to-many relationships.
 
 ## Additional resources
 
