@@ -872,6 +872,8 @@
   items:
   - name: Financial dimension framework
     items:
+    - name: Ledger account combinations
+      href: financial/LedgerAccountCombinations.md
     - name: Default financial dimensions
       href: financial/dimension-defaulting.md
     - name: Support for different dimension patterns
