@@ -5,7 +5,7 @@ title: Manage Finance and Operations support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 03/21/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -143,3 +143,9 @@ To add, select **Add a Software Assurance plan** when you create the support inc
    
 ## Report production outage
 For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).
+
+## Phone support
+We prefer that you contact Support following the steps in [Open a new incident](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using one of the following options:
+
+- [Premier phone support](https://support.microsoft.com/en-us/premier/contacts)
+- [Broad commercial phone support](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/global_support_contacts_eng)

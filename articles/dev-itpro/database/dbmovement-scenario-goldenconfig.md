@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -114,7 +114,7 @@ update sysglobalconfiguration
 set value = 1
 where name = 'TEMPTABLEINAXDB'
 
-drop procedure XU_DisableEnableNonClusteredIndexes
+drop procedure if exists XU_DisableEnableNonClusteredIndexes
 drop procedure if exists SP_ConfigureTablesForChangeTracking
 drop procedure if exists SP_ConfigureTablesForChangeTracking_V2
 drop schema [NT AUTHORITY\NETWORK SERVICE]
