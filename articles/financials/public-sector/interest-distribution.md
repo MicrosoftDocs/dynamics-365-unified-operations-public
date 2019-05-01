@@ -5,7 +5,7 @@ title:  Set up interest distribution for cash accounts
 description: This topic explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
 author: velofog
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ Before you distribute the interest, you must set up your participating cash acco
 
 1. Go to **General ledger \> Setup \> Posting \> Interest distribution rules**.
 2. Select **New** to add a row.
-3. In the **Cash account** field, enter the cash account that comprises part of the total pooled cash.
+3. In the **Cash account** field, enter the cash account that contains part of the total pooled cash.
 4. Optional: In the **Grant** field, enter the grant for grant-related transaction amounts that should be included in cash balance calculations for the associated cash account. If all grants for the cash account post interest to the same account, you can leave this field blank. However, if you enter an interest account for a specific grant, you must enter an interest account for each grant for the cash account.
 5. Select the **Participate** check box to include the cash accounts in interest distribution. If this check box is cleared, you can't edit any other fields in the row. Cash accounts that don't participate are included in the inquiry page so that you can review the average daily balance. However, you can't distribute interest to those cash accounts.
 6. Enter either a specific interest account or a project. The value that you enter determines the General ledger account that interest is posted to for the associated cash account.
