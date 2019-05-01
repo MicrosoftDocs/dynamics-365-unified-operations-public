@@ -58,7 +58,7 @@ For example, you have application version 7.3 with platform update (PU) 23. Curr
 
 Because of this continuous process of adding a new version and removing the oldest version, we recommend that customers upgrade to the latest version that is available. In that way, you have two months in which you can upgrade your sandbox environment and then later upgrade your production environment to the same version.
 
-If you select version 8.1.3 with PU 23 to upgrade your sandbox environment, and Microsoft then releases version 10.0.2 with PU 26, so that version 8.1.3 with PU 23 is removed as an upgrade option, you will be blocked from upgrading your production environment. In this case, you must start over in the sandbox environment and upgrade to a newer supported version.
+If you choose to upgrade your sandbox environment to version 8.1.3 with PU 23 and Microsoft then releases version 10.0.2 with PU 26, so that version 8.1.3 with PU 23 is removed as an upgrade option, **you will be blocked** from upgrading your production environment. In this case, you must start over in the sandbox environment and upgrade to a newer supported version.
 
 ### Targeted release schedule
 
@@ -178,8 +178,8 @@ There are three possible outcomes when the timer reaches 0 (zero):
 <img src="media/UpgradeAutomation/Upgrade_Timer.png" width="300px" alt="Upgrade timer has reached 0 (zero) days" />
 
 - If you haven't yet started the **Data Upgrade** step, the new environment is queued for deletion. In this scenario, the upgrade-in-progress environment was provisioned, and customizations and packages were optionally applied. However, no data was upgraded, and the original environment never incurred downtime.
-- If you ran the **Data Upgrade** step but then did a rollback later, the new environment is queued for deletion. In this scenario, the old environment is the primary environment, because the data upgrade was rolled back.
-- If you've run the **Data Upgrade** step but haven't yet committed the upgrade, no actions are performed, and no environments are deleted. You can remain here until you commit or do a rollback. If you decide to do a rollback, and the timer is at 0 (zero), the new environment will be deleted.
+- If you ran the **Data Upgrade** step but then later performed a rollback, the new environment is queued for deletion. In this scenario, the old environment is the primary environment, because the data upgrade was rolled back.
+- If you've run the **Data Upgrade** step but haven't yet committed the upgrade, no actions are performed, and no environments are deleted. You can remain in this state until you commit or do a rollback. If you decide to do a rollback, and the timer is at 0 (zero), the new environment will be deleted.
 
 The original environment is queued for deletion only after you commit the upgrade as a success.
 
