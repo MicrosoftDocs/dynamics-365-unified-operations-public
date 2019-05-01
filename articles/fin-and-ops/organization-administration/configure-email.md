@@ -254,8 +254,12 @@ There are a few standard steps that can help you troubleshoot the configuration 
         1. Select **No end date** to adjust all recurrences of the email batch process.
         2. Adjust the count as you require.
 
-3. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**, and review the status of the pending emails.
-4. In the Office 365 admin center, verify that user mail accounts have provided **Send As** and **Send On Behalf Of** permissions to the SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+3. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**, to review the contents and status of the pending emails.
+
+    1. Check that the emails are being sent by the correct account by clicking **Show message** and checking the **Email** field. If incorrect, then adjust user options, system templates,  organization templates, etc as needed.
+    2. Check that the SMTP account has permissions to **Send As** all the senders of the emails (see next point).
+
+4. In the Office 365 admin center, verify that all user mail accounts, that will be sending emails, have provided **Send As** and **Send On Behalf Of** permissions to the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
 5. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
 6. If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
