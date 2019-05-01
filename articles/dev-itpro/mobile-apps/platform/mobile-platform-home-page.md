@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 03/3/2019
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -191,4 +191,9 @@ Avoid using forms with these patterns and controls when creating workspace recor
 - There is no check box in mobile. You have to manually bind the field to a Yes/No enum in JavaScript.
 
 ### Using multi-factor authentication with the Unified Operations app
-The Unified Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (AAD) by presenting the AAD sign-in web page within an embedded browser. After a successful sign in it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workaround for this is to use the "touch and hold" gesture on the authentication notification and then click the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
+Using multi-factor authentication with the Unified Operations app
+The Unified Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this are:
+- Different device - Use a different device for the multi-factor authentication response so the Unified Operations app remains active on the original device.
+- Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
+- Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
+
