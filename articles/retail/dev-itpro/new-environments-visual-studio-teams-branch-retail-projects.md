@@ -38,8 +38,8 @@ Most environments for Retail projects are hosted in the cloud. They are either M
 ## Development Tier 1 environments
 
 Development environments are called Tier 1 environments. There are three options for hosting a development environment:
-+ Dynamics 365 for Retail Application comes with one Sandbox Tier 1. (Read the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide]() for details.) This environment is Microsoft-hosted. https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI, the file is Dynamics_365_Enterprise_edition_Licensing_Guide.pdf on the Download Center.
-+ A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of environment is known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services [LCS].
++ Dynamics 365 for Retail Application comes with one Sandbox Tier 1. (Read the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI) for details.)
++ A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of environment is known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services (LCS).
 + A downloaded virtual-machine that you host in a location of your choice.
 
 If your implementation of Microsoft Dynamics 365 for Retail includes code extensions, we recommend that you use a development environment where you have administrator privileges. If you don't have administrator privileges on your development environment, then you won't be able to install programming tools or configure the operating system.
@@ -68,10 +68,8 @@ The following table shows the advantages and disadvantages of each hosting model
 <tr>
 <td>Microsoft-hosted environment (in an LCS project, default or based on an add-on)</td>
 <td>
-<ul>
-<li>You subscription includes one Tier 1 environment. We recommend that you use this environment as a build environment.</li>
-<li>Telemetry data is collected and is available on the LCS diagnostics page.</li>
-</ul>
+Your subscription includes one Tier 1 environment. We recommend that you use this environment as a build environment.<br><br>
+Telemetry data is collected and is available on the LCS diagnostics page.
 </td>
 <td>
 <ul>
