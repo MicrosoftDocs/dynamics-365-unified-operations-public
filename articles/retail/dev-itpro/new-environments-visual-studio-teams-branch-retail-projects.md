@@ -171,22 +171,23 @@ The build definition appears in the **Agents for default pool**:
 
 ## Deploy a development environment
 
-Use the LCS portal of your implementation project to create a cloud-hosted development environment. Make sure that you're signed in to the correct user account. This user account is used to create the tenant of the development machine. For example, if you're signed in to LCS as `lily@pad.com`, the environment is set up for the @pad.com tenant and expects users from that tenant. Although other users can be added, the POS activation must be done by a user from that tenant. In some cases, user accounts from different domains can be used, such as when customers, partners, or other parties use email accounts from different domains. In these cases, coordination is required during POS activation, because only the tenant that was used during deployment can activate users.
+Use the LCS portal of your implementation project to create a cloud-hosted development environment. 
 
-Select the correct version, select **DEVTEST**, and then select **DEV**. Enter a meaningful and unique name, and make sure that the machine name is also unique in the advanced settings. The process of preparing the machine might take a couple of hours.
+1. Make sure that you're signed in to the correct user account. This user account is used to create the tenant of the development machine. For example, if you're signed in to LCS as `lily@pad.com`, the environment is set up for the @pad.com tenant and expects users from that tenant. Although other users can be added, the POS activation must be done by a user from that tenant. In some cases, user accounts from different domains can be used, such as when customers, partners, or other parties use email accounts from different domains. In these cases, coordination is required during POS activation, because only the tenant that was used during deployment can activate users.
+1. Select the correct version, select **DEVTEST**, and then select **DEV**. Enter a meaningful and unique name, and make sure that the machine name is also unique in the advanced settings. The process of preparing the machine might take a couple of hours.
 
 Because there is currently no Dev branch, you can skip the process of mapping Azure DevOps to the local directories. However, you will have to complete that process later.
 
 ## Create the Dev and release branches
 
-As was mentioned earlier, you must have a branch that holds changes that are often made but less often tested. You must also have a branch that holds the source code for production. The following illustration shows the expected hierarchy.
+As previously mentioned, you must have a branch that holds changes that are often made but less often tested. You must also have a branch that holds the source code for production. The following illustration shows the expected hierarchy.
 
 ![Main branch hierarchy](./media/6-main-branch-hierarchy.png)
 
 Follow these steps to create the branches.
 
 1. Sign in to a development environment.
-2. Start Microsoft Visual Studio as an administrator, and make sure that you signed in by using an account that has access to the Azure DevOps project.
+2. Start Microsoft Visual Studio as an administrator, using an account that has access to the Azure DevOps project.
 3. In Team Explorer, connect Visual Studio to the Azure DevOps project, if this connection doesn't already exist.
 4. Map the **Trunk**/**Main** folder to a local folder (if this mapping doesn't already exist). This mapping is temporary.
 5. In Source Control Explorer, right-click the **Main** folder, and then select **Branching and Merging** \> **Convert to Branch**.
@@ -195,7 +196,7 @@ Follow these steps to create the branches.
 8. Right-click the **Main** branch, select **Branching and Merging** \> **Branch**, and name the new branch **ProdRel1**.
 9. Use **Pending Changes**, and submit this change to Azure DevOps.
 
-At this point, Source Depot Explorer in Visual Studio should resemble the following illustration.
+At this point, Source Depot Explorer in Visual Studio resembles the following illustration.
 
 ![Source Depot Explorer](./media/7-source-depot-explorer.png)
 
@@ -203,7 +204,7 @@ At this point, Source Depot Explorer in Visual Studio should resemble the follow
 
 Next, you must add the Retail SDK to each of the three code branches, so that code changes can be propagated from Dev to Main and eventually to ProdRel1. This step also enables separate changes between these branches, as for the X++ code. Therefore, we will have the Retail SDK in every branch, together with the X++ code. 
 
-First, add the mirror branch. The Retail SDK mirror branch is required as a baseline for code merges when updates from Microsoft are imported. The process for taking updates will be explained later in this topic. First, you must create the mirror branch.
+First, add the mirror branch. The Retail SDK mirror branch is required as a baseline for code merges when updates from Microsoft are imported. The process for taking updates will be explained later in this topic.
 
 The mirror branch or folder is only required one time per project.
 
@@ -243,20 +244,20 @@ You should also change the version of the Retail customization. This version sho
 You can now prepare the development environment for Retail development tasks. The development environment will map the code locations for both X++ and the Retail SDK in the Dev branch to local folders. The Metadata folder (X++) must be always mapped to the PackagesLocalDirectory folder. The location of the RetailSdk folder must follow these guidelines:
 
 - The location should be somewhere inside the local user's folder.
-- The file path of any file should have no more than 256 characters. Therefore, use a short path for the root of the Retail SDK. For example, you can use **c:\\users\\\<user name\>\\Source\\RetailSdk**.
+- The file path of any file is limited to 256 characters. Therefore, use a short path for the root of the Retail SDK. For example, you can use **c:\\users\\\<user name\>\\Source\\RetailSdk**.
 
-To map the X++ and Retail SDK, you must edit the current workspace. Select **Pending Changes** \> **Actions** \> **Workspaces**, and update the current workspace so that it resembles the following illustration. As was mentioned earlier, you should map the Metadata folder of the branch to the PackagesLocalDirectory folder and the RetailSdk to a short folder of your choice.
+To map the X++ and Retail SDK, you must edit the current workspace. Select **Pending Changes** \> **Actions** \> **Workspaces**, and update the current workspace so that it resembles the following illustration. As previously mentioned, you should map the Metadata folder of the branch to the PackagesLocalDirectory folder and the RetailSdk to a short folder of your choice.
 
 ![Edit current workspace](./media/12-edit-current-workspace.png)
 
-The actual download of the files can take a few minutes.
+The download of the files can take a few minutes.
 
-Regardless of whether there are customizations in the code branches, the following steps help bring a development box into a state where Retail extension code can be written and run. Some steps might be optional, depending on the customizations that are planned.
+Regardless of whether there are customizations in the code branches, the following steps prepare your development box so that you can write and run code. Some steps are optional, depending on the customizations that are planned.
 
 1. Install your favorite development tools. For information about one automated script, see [Auto-Installing most needed dev tools in 5 mins with Chocolatey](https://dynamicsnotes.com/auto-installing-most-needed-dev-tools-in-5-mins/).
 2. To help reduce the compile time, exclude the code folders from Microsoft Windows Defender.
-3. If there is already code in the Dev/Metadata folder, build all Retail models. Select all the models, and then select **Database sync**.
-4. To speed up the development experience, switch to Microsoft Internet Information Services (IIS). For instructions, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM.](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This step can be done only on the Tier 1 VM where you have administrative privileges (cloud-hosted environment).
+3. If there is already code in the **Dev/Metadata** folder, build all Retail models. Select all the models, and then select **Database sync**.
+4. To speed up the development experience, switch to Microsoft Internet Information Services (IIS). For instructions, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This step can be done only on the Tier 1 VM where you have administrative privileges (cloud-hosted environment).
 5. Optional: Restore a recent copy of a production database that has good data.
 
     1. Rename the existing database **AxDB_Orig**.
@@ -274,7 +275,7 @@ Regardless of whether there are customizations in the code branches, the followi
 
     9. In Retail, run the **Initialize Retail Scheduler** job to delete old data.
 
-6. Make sure that you now can sign in to Retail by using your user account. If you weren't the original Admin user in the production database, you can run the Admin provisioning tool to take ownership. (This tool is in the PackagesLocalDirectory/bin folder.)
+6. Make sure that you now can sign in to Retail by using your user account. If you aren't the Admin user in the production database, run the Admin provisioning tool to take ownership. (This tool is in the **PackagesLocalDirectory/bin** folder.)
 7. Verify that Commerce Data Exchange (CDX) data synchronization works. In Retail, go to **Download sessions**. You should see many applied sessions. If you don't see them, select job **9999**, and run it.
 8. Install TypeScript version 2.2.2 from <https://www.microsoft.com/en-us/download/details.aspx?id=48593>.
 9. Do a full build of the Retail SDK from a command prompt.
@@ -295,7 +296,7 @@ Regardless of whether there are customizations in the code branches, the followi
 
 You should now be able to run MPOS in the debugger from your local sources.
 
-The process of preparing a development environment is now completed. At this point, any extension code (X++, Commerce runtime [CRT], Retail Server, channel SQL, point of sale [POS], and so on) can be written, debugged, tested, and submitted to Azure DevOps.
+The process of preparing a development environment is now completed. At this point, any extension code (X++, Commerce runtime (CRT), Retail Server, channel SQL, and point of sale (POS)) can be written, debugged, tested, and submitted to Azure DevOps.
 
 ## Optional: Deploy a second build environment for a different release branch
 
@@ -307,7 +308,7 @@ To separate the build environments, we recommend that you create a new Azure Dev
 
 Currently, the build environment must be on the same platform and binary hotfix version as the target environment during deployment. Otherwise, LCS might reject the deployable package because of version incompatibility.
 
-First, you must create a new Azure DevOps agent queue.
+First, create a new Azure DevOps agent queue.
 
 ![VSTS agent queue](./media/13-VSTS-agent-queue.png)
 
@@ -315,9 +316,7 @@ When you deploy from LCS, use **PRODREL1** as the name of the agent pool.
 
 ![Queue name in LCS](./media/14-queue-name-lcs.png)
 
-Next, on the **Customize virtual machine names** tab, enter a unique name, and then deploy.
-
-The process of deploying a new build and creating a new agent queue can take a couple of hours.
+Next, on the **Customize virtual machine names** tab, enter a unique name, and then deploy. Deploying a new build and creating a new agent queue can take a couple of hours.
 
 ![New agent queue](./media/15-new-agent-queue.png)
 
@@ -342,7 +341,7 @@ If you had multiple build branches and environments, just clone the build defini
     - Set **DeployReports** to **0**.
     - Set **SkipSourcePackageGeneration** to **1**.
 
-- Change the version of the Retail customization in each branch. The version should be different in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file under the RetailSdk\\BuildTools folder. You can use any kind of numbering for the file name. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
+- Change the version of the Retail customization in each branch. The version should be different in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file under the **RetailSdk\\BuildTools** folder. You can use any kind of numbering for the file name. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
 - For efficiency, shut down build or development environments when they aren't being used.
 - If you're using cloud-hosted Tier 1 development environments (where you have administrative privileges), you can switch from IIS Express to IIS. Using IIS for running all web application is more robust, more performant, and avoids the switching. For details, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).
 - For prototyping purposes, a developer might want to change the Retail SDK on a development VM without using Azure DevOps source control. Always keep the original Retail SDK untouched, and make a copy that you can work in temporarily. In that way, you can take the unchanged Retail SDK into your mirror branch later, if it's required.
