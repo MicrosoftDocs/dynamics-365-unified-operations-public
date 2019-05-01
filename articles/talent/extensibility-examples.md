@@ -105,7 +105,7 @@ This template can be extended so that it can be used for any scenario that invol
 
 To download the **Flow – SharePoint Integration** template, go to [Flow – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
 
-## Admin console to Manage Talent Pool
+## Admin Console to Manage Talent Pool
 
 When integration with LinkedIn is enabled, a LinkedIn TalentPool is automatically created in Attract. As soon as recruiter exchanges inMail with someone at LinkedIn, a profile is created for this person in Attract and the person becomes a member of the LinkedIn Talent Pool. if you want to reshuffle candidates across TalentPools based on skill this PowerApp is useful.
 
