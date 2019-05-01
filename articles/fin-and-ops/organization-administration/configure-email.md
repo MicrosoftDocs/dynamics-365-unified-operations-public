@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -254,13 +254,13 @@ There are a few standard steps that can help you troubleshoot the configuration 
         1. Select **No end date** to adjust all recurrences of the email batch process.
         2. Adjust the count as you require.
 
-3. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**, to review the contents and status of the pending emails.
+3. To review the contents and status of the pending emails, go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**.
 
-    1. Prior to PU28, personalize the form to add the email sender for easy review: right click on the grid header, **Add columns**, select **Email**, and click **Insert**. If the Email field isn't added into the grid, the sender can be seen by clicking **Show message** and checking the **Email** field.
-    2. Check that the emails are being sent by the correct account. If incorrect, then adjust user options, system templates,  organization templates, etc as needed.
-    3. Check that all the senders of the emails have given permissions for **Send As** to the configured SMTP account (see next point).
+    1. If you're using a release that is earlier than Platform update 28, personalize the form to add the email sender for easy review. To do this, right-click the grid header, select **Add columns**, select **Email**, and then click **Insert**. If the **Email** field isn't added into the grid, you can view the sender by selecting **Show message**, and then selecting the **Email** field.
+    2. Verify that emails are being sent from the correct account. If the account is incorrect, you need to adjust settings such as user options, system templates,  or organization templates, as needed.
+    3. Verify that all email user accounts have been granted permission to **Send As** for the configured SMTP account (see step 4 for details).
 
-4. In the Office 365 admin center, verify that all user mail accounts, that will be sending emails, have provided **Send As** and **Send On Behalf Of** permissions to the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+4. In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
 5. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
 6. If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
