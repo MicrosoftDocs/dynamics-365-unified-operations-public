@@ -72,20 +72,16 @@ Your subscription includes one Tier 1 environment. We recommend that you use thi
 Telemetry data is collected and is available on the LCS diagnostics page.
 </td>
 <td>
-<ul>
-<li>Users can't perform administrative actions.</li>
-<li>Users can't install any tools or certificates.</li>
-    <li><b>What certificates might they need?</b></li>
-</ul>
+Users can't perform administrative actions.<br><br>
+Users can't install any tools or certificates.
+<b>What certificates might they need?</b>
 </td>
 </tr>
 <tr>
 <td>Cloud-hosted environment (in an LCS project, private subscription)</td>
 <td>
-<ul>
-<li>You have full administrative rights.
-<li>You can install tools and certificates.</li>
-</ul>
+You have full administrative rights.<br><br>
+You can install tools and certificates.
 </td>
 <td>There is additional cost. You can mitigate this cost by shutting down the environment.</td>
 </tr>
@@ -109,7 +105,7 @@ Branching is an important practice in software development. The topic [Branching
 
 For more information about the delivery of implementation projects for Microsoft Dynamics 365 for Finance and Operations, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
 
-There is no single best strategy for creating branches. The approach that is used depends on the project and the size of the implementation. The approach that Joris De Gruyter mentions in the preceding video is a successful method.
+There is no single best strategy for creating branches. The strategy depends on the project and the size of the implementation. The approach that Joris De Gruyter mentions in the preceding video is a successful method.
 
 The following illustration shows three code branches: Dev, Main, and ProdRel1. The numbers indicate the order of setup.
 
@@ -149,7 +145,7 @@ Start by creating a new Azure DevOps project if you don't already have one. In y
 
 ![VSTS project](./media/2-VSTS-project.png)
 
-After the new Azure DevOps project is created, you must allow Azure DevOps to access it. First, create a new personal access token on the Azure DevOps account. Then configure the LCS project with the correct URL and personal access token.
+After you create the new Azure DevOps, you must allow Azure DevOps to access it. First, create a new personal access token on the Azure DevOps account. Then configure the LCS project with the correct URL and personal access token.
 
 ![LCS project](./media/3-LCS-project.png)
 
@@ -159,13 +155,17 @@ Add a new environment, select the version, select **DEVTEST** as the topology, a
 
 ![Build agent](./media/4-build-agent.png)
 
-Next, under **Customize virtual machine names**, enter a unique name, and then deploy.
+Next, under **Customize virtual machine names**, enter a unique name, and then deploy it.
 
-The build box is deployed, and the build definition and Main branch are created. This process might take a couple of hours.
+The build box is deployed, and the build definition and Main branch are created, as shown in the following image. This process might take a couple of hours.
 
 ![Build box main branch](./media/5-build-box-main-branch.png)
 
+The build appears in the list of build definitions:
+
 ![Build definitions](./media/19-build-definitions.png)
+
+The build definition appears in the **Agents for default pool**:
 
 ![Agents for the Default pool](./media/20-agents-for-pool-default.png)
 
