@@ -101,12 +101,10 @@ Tier 2 and higher machines are multi-box environments for multiple test and veri
 
 ## Branches, build definitions, and environments
 
-Branching is an important practice in software development. For more information about branching, see [Branching and Merging Primer](https://msdn.microsoft.com/en-us/library/aa730834(v=vs.80).aspx).
-
-Here is a summary of branching from the preceding page:
+Branching is an important practice in software development. The topic [Branching and Merging Primer](https://msdn.microsoft.com/en-us/library/aa730834(v=vs.80).aspx) describes the advantages of branching:
 
 > A branching and merging strategy involves a tradeoff between risk and productivity. You trade the safety of working in isolation for the increased productivity of working with other people. The productivity increases come with a cost—the additional effort required for merging software assets sometime in the future.
->
+
 > Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
 
 For more information about the delivery of implementation projects for Microsoft Dynamics 365 for Finance and Operations, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
