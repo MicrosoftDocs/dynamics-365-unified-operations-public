@@ -39,7 +39,7 @@ Most environments for Microsoft Dynamics 365 for Retail projects are hosted in t
 
 Development environments are called Tier 1 environments. There are three options for hosting a development environment:
 
-+ Microsoft Dynamics 365 for Retail Application comes with one Sandbox Tier 1 environment. (For details, see the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).)
++ The Retail application comes with one Sandbox Tier 1 environment. (For details, see the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).)
 + A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of environment is known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services (LCS).
 + A downloaded virtual machine (VM) that you host in a location of your choice.
 
