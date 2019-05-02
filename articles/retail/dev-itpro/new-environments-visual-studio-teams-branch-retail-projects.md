@@ -152,7 +152,7 @@ Add a new environment, select the version, select **DEVTEST** as the topology, a
 
 ![Build agent](./media/4-build-agent.png)
 
-Next, under **Customize virtual machine names**, enter a unique name, and then deploy it.
+Next, under **Customize virtual machine names**, enter a unique name, and then deploy the VM.
 
 The build box is deployed, and the build definition and Main branch are created, as shown in the following illustration. This process might take a couple of hours.
 
