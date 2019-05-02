@@ -57,6 +57,9 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 
 You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folder to generate the Typescript proxy for the POS.
 
+> [!NOTE]
+> In the latest version of the Retail SDK we have folder for CommerceProxyGenerator.x.x.x.x(x.x.x.x is the version number, it varies based on your SDK version) under RetailSDK\Code\References\ folder with CommerceProxyGenerator.exe and all the libraries mentioned in step 1 pre copied, so you don’t have to do the step 1 described below. Please use the CommerceProxyGenerator.exe from this folder to generate the proxy.
+
 1. Before you generate the proxy, copy the following libraries from **Retail SDK\\Reference\\...** to the **Retail SDK\\Reference** folder:
 
     - Microsoft.OData.Core.dll@ 6.11.0.0
@@ -71,12 +74,16 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folde
     ```
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
     ```
+> [!NOTE]
+> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll from RetailSDK\Code\References\Microsoft.Dynamics.Retail.RetailServerLibrary.x.x.x.x(x.x.x.x is the version number, it varies based on your SDK version).
 
-    Here is an example.
+Here is an example.
 
     ``` 
     CommerceProxyGenerator.exe C:\RetailSDK\Reference\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
     ```
+
+
 
     In the command that you run, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
 
