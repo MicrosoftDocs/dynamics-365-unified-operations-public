@@ -5,7 +5,7 @@ title: Talent system requirements and update policy
 description: This topic lists requirements for Dynamics 365 for Talent. The update policy is outlined, as well.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/25/2019
+ms.date: 05/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -68,7 +68,7 @@ To find the latest release for each web browser, go to the software manufacturer
 You can download a PDF file of the countries, regions, and languages Talent supports at [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
 
 > [!NOTE]
-> While the user interface is localized into other languages, all data stored in Common Data Service is in English. You can create emails and templates in other languages, but data such as scheduling information is only available in English at this time.
+> While the user interface is localized into other languages, all user data is stored in the language in which it was entered. You can create emails and templates in other languages, but data such as scheduling information is only available in English at this time.
 
 If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
