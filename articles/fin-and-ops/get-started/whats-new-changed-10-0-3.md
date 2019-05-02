@@ -50,6 +50,11 @@ Bank foreign currency revaluation was released in 10.0.2 and it included a param
 
 For more information, see [Bank foreign currency revaluation](https://go.microsoft.com/fwlink/?linkid=2079802)
 
+## Setup interest distribution for cash accounts
+Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
+
+For more information, see [See interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607)
+
 ## Additional resources
 
 ### Bug fixes
