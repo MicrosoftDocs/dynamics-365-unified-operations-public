@@ -65,8 +65,8 @@ salesLine.reserve().setQty(3).execute();
 
 // Verify inventory transactions that are associated with the sales line using the inventoryTransactions query and specifications
 salesLine.inventoryTransactions().assertExpectedLines(
-    invent.trans().spec().withStatusIssue(StatusIssue::OnOrder).withInventDims([warehouse]).withQty(-3),
-    invent.trans().spec().withStatusIssue(StatusIssue::ReservPhysical).withInventDims([warehouse]).withQty(-7)); 
+    invent.trans().spec().withStatusIssue(StatusIssue::OnOrder).withInventDims([warehouse]).withQty(-7),
+    invent.trans().spec().withStatusIssue(StatusIssue::ReservPhysical).withInventDims([warehouse]).withQty(-3)); 
 ```
 
 ## Concepts
