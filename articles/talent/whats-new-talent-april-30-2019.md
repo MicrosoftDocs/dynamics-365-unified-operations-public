@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (April 30, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 4/30/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,44 +29,51 @@ ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (April 30, 2019)"
+# What's new or changed in Dynamics 365 for Talent (April 30, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Talent.
 
 ## Changes in Attract
-This release includes minor bug fixes for Dynamics 365 Talent: Attract.
+This release includes minor bug fixes for Dynamics 365 for Talent: Attract.
 
 ## Changes in Onboard
-This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
+This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2270.
+Changes described in this section apply to build number 8.1.2270. Numbers in parentheses in the headings refer to support numbers in Lifecycle Services (LCS).
 
 ### Provide feedback
-The option to provide feedback is located under the ? within Talent. The question mark menu can be used to gain access to Feedback, Help, Get Started page, Support, Ideas and the about box. 
+The option to provide feedback is located under the help menu (**?**) in Talent. This menu provides access to the following resources:
+
+- Feedback
+- Help
+- Get started
+- Support
+- Ideas
+- About
 
 ### Improvements to the user interface for duplicate employee check
 With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
 
 ### Common Data Service entity support for custom fields
-With this week's release, the following entities support custom fields: Employment, Benefit type and Pay cycle.
+With this week's release, the following entities support custom fields: Employment, Benefit type, and Pay cycle.
 
-### When assigning an off-boarding checklist Talent throws an error (299877)
-This change corrects an error message that displays when assigning an offboarding checklist to an employee, outside of the termination process.
+### Error when assigning an off-boarding checklist (299877)
+This change corrects an error message that displays when assigning an offboarding checklist to an employee outside of the termination process.
 
 ### Exited workers link opens to wrong worker (309939)
-This changes corrects an issue when rehiring an employee from another legal entity and you select to navigate to the worker from the exited workers list.      
+This changes corrects an issue when you navigate to an employee from the exited workers list when rehiring an employee from another legal entity.      
 
-### Advanced Security (comp) when enabled ESS comp card does not display amounts (315231)
-This change corrects an issue when using advanced compensation security. When advanced security is enabled, employee self-service will display the summary compensation amounts for both employees and managers. Prior to this change summary values displayed as zero. 
+### Employee self-service compensation card doesn't display summary values when advanced security is enabled (315231)
+This change corrects an issue when using advanced compensation security. When advanced security is enabled, employee self service now displays the summary compensation amounts for both employees and managers. Prior to this change, summary values displayed as zero. 
 
-### Creating a position without a title in CDS will fail to create the position in Talent (314562)
-This week's changes corrects an issue when creating positions in CDS and a title is not provided.
+### Creating a position without a title in Common Data Service fails to create the position in Talent (314562)
+This week's changes correct an issue when creating positions in Common Data Service without providing a title.
 
-### Linked goals in performance journal error message in employee self-service (314134)
-This changes corrects an issue when attaching performance goals to performance journal entries in employee self-service
+### Error message in performance journal entries in employee self service (314134)
+This change corrects an issue when attaching performance goals to performance journal entries in employee self service.
 
 ## In preview
 
