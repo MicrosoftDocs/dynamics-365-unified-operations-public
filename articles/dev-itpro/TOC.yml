@@ -1080,15 +1080,19 @@
     items:
     - name: Process for moving to the latest update
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Update environments from version 8.0 to 8.1.X/10.X
-      href: migration-upgrade/appupdate-80-81.md
+    - name: Paths to One Version
+      items:
+        - name: Self-service upgrade to the latest version
+          href: migration-upgrade/self-service-upgrade.md
+        - name: Rebuild and update to the latest version
+          href: migration-upgrade/appupdate-80-81.md
     - name: Software lifecycle policy and cloud releases
       href: migration-upgrade/versions-update-policy.md
     - name: Apply the latest platform update to environments
       href: migration-upgrade/upgrade-latest-platform-update.md
     - name: Upgrade the Dynamics AX platform to the August 2016 release
       href: migration-upgrade/update-platform-each-release.md
-    - name: Upgrade data in development, demo, or sandbox environments
+    - name: Upgrade data in development, or demo environments
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools
       href: dev-tools/update-development-tools.md
