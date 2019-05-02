@@ -5,7 +5,7 @@ title: Typescript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Retail proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -57,8 +57,8 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 
 You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folder to generate the Typescript proxy for the POS.
 
-> [!NOTE]
-> In the latest version of the Retail SDK we have folder for CommerceProxyGenerator.x.x.x.x(x.x.x.x is the version number, it varies based on your SDK version) under RetailSDK\Code\References\ folder with CommerceProxyGenerator.exe and all the libraries mentioned in step 1 pre copied, so you don’t have to do the step 1 described below. Please use the CommerceProxyGenerator.exe from this folder to generate the proxy.
+[!NOTE] 
+> In the latest version of the Retail there is a folder named CommerceProxyGenerator.x.x.x.x (x.x.x.x is the version number, which varies based on your SDK version). This folder is under RetailSDK\Code\References\, with CommerceProxyGenerator.exe and all the libraries mentioned in step 1 pre-copied, so you don’t have to perform step 1 described below. You need to use CommerceProxyGenerator.exe from this folder to generate the proxy.
 
 1. Before you generate the proxy, copy the following libraries from **Retail SDK\\Reference\\...** to the **Retail SDK\\Reference** folder:
 
@@ -73,9 +73,9 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folde
 
     ```
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
-    ```
+    
 > [!NOTE]
-> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll from RetailSDK\Code\References\Microsoft.Dynamics.Retail.RetailServerLibrary.x.x.x.x(x.x.x.x is the version number, it varies based on your SDK version).
+> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from RetailSDK\Code\References\Microsoft.Dynamics.Retail.RetailServerLibrary.x.x.x.x (x.x.x.x is the version number, which varies based on your SDK version).
 
 Here is an example.
 
