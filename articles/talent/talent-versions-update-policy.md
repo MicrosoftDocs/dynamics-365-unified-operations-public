@@ -76,4 +76,4 @@ If you're a developer interested in creating country- or region-specific customi
 
 Microsoft Dynamics 365 for Talent is serviced as a cloud offering. Updates to Dynamics 365 for Talent are continuous and applied automatically by Microsoft.
 
-Updates are released on a regular cadence, updates will be made to all environments.  Dynamics 365 for Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.
+Updates are released on a regular cadence and will be made to all environments. Dynamics 365 for Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.
