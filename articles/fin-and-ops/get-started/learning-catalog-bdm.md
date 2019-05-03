@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business Decision Makers Learning Catalog
+title: Business and Technical Decision Makers Learning Catalog
 description: 
 author: margoc
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
 
-# Business Decision Makers Learning Catalog
+# Business and Technical Decision Makers Learning Catalog
 
 The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. For more information, see Training content formats. 
 
