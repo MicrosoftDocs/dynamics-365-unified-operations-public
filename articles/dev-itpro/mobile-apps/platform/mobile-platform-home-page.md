@@ -197,3 +197,18 @@ The Unified Operations (Mobile Client) app facilitates user authentication with 
 - Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
 - Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
 
+### Trouble signing out of the app and signing in with new credentials
+If you experience trouble signing out of the app and signing in with new credentials, then you may need to "forget old credentials" on the AAD sign in screen:
+- Sign out of app
+    - Open app
+    - Sign out of the app
+    - Force close the app
+- Forget old credentials
+    - Open app
+    - Connect to server
+    - On AAD sign in screen, if there are saved credentials, click the "…" button on that card and "Forget" the credential
+    - Force close the app
+- Sign into app
+    - Open app
+    - Connect to server
+    - Sign in using AAD sign in screen
