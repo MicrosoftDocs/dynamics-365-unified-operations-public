@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expense reports re-imagined
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: Expense report entry has been redesigned and re-imagined to simplify and decrease the time to complete your expense report in Dynamics 365 for Finance and Operations. 
 author: ryansandness
 manager: AnnBe
 ms.date: 04/26/2019
@@ -46,6 +46,10 @@ To turn on the new experience use the Feature Management workspace to enable Exp
 - The existing menu items for expense reports (the legacy form) and expense reports field will not be taken away
 - Workflow and any approvals will still take you to the legacy expense reports form
 
+## Getting started video for new users
+You can see a short video showing the key features of expense entry in the video below
+
+Note: Video is not available yet. This is a placeholder until video is published
  
 ## New features
 |New feature | Description
