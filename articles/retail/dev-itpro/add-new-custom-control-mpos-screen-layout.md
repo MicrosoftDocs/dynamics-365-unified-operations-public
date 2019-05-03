@@ -34,6 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> This topic is applicable only for 7.1 and older versions.
+
 This topic explains how to add a new custom control to a Modern POS (MPOS) screen layout.
 
 Scenario
