@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
 
 ## One Version
-In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use. 
+In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to stay current.
 
 - [One Version service updates overview](../lifecycle-services/oneversion-overview.md)
 - [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md)
