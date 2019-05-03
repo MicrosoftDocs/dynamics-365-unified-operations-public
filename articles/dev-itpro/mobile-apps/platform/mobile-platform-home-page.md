@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 05/01/2019
+ms.date: 05/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -198,17 +198,17 @@ The Unified Operations (Mobile Client) app facilitates user authentication with 
 - Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
 
 ### Trouble signing out of the app and signing in with new credentials
-If you experience trouble signing out of the app and signing in with new credentials, then you may need to "forget old credentials" on the AAD sign in screen:
-- Sign out of app
-    - Open app
-    - Sign out of the app
-    - Force close the app
-- Forget old credentials
-    - Open app
-    - Connect to server
-    - On AAD sign in screen, if there are saved credentials, click the "…" button on that card and "Forget" the credential
-    - Force close the app
-- Sign into app
-    - Open app
-    - Connect to server
-    - Sign in using AAD sign in screen
+If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
+- To sign out of the app, follow these steps:
+    - Open the app.
+    - Sign out of the app.
+    - Force close the app.
+- To forget old credentials, follow these steps:
+    - Open the app.
+    - Connect to the server.
+    - On the Azure AD sign-in screen, if there are saved credentials, select the ellipsis (...) button on that card, and then select **Forget the credential**.
+    - Force close the app.
+- To sign in to the app, follow these steps:
+    - Open the app.
+    - Connect to the server
+    - Sign in using the Azure AD sign-in screen.
