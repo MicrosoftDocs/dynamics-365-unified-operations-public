@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 25
 
 ---
 
-# Metadata and Markdown template
+# Certificate rotation
 
 [!include[banner](../includes/banner.md)]
 
