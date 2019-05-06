@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Expense reports re-imagined
-description: Expense report entry has been redesigned and re-imagined to simplify and decrease the time to complete your expense report in Dynamics 365 for Finance and Operations. 
+title: Expense reports reimagined
+description: This topic provides information about the redesigned and reimagined experience for expense report entry in Microsoft Dynamics 365 for Finance and Operations. The new experience simplifies the process of completing expense reports and decreases the time that is required.
 author: ryansandness
 manager: AnnBe
 ms.date: 05/06/2019
@@ -27,59 +27,63 @@ ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3 
 ---
 
-# Expense reports re-imagined
+# Expense reports reimagined
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. The major components of this new expense experience include:
-- A new expense management workspace including the ability to access your delegate's expenses
--	A new receipt matching experience to better show header-level receipts and simplify attaching receipts to expense lines
--	A new read-only grid to see many more expense lines and additional columns of data. Users can now see all itemized and split lines together with their parent expenses
--	A simplified pane for editing of expenses
--	Errors, warnings, and policy messages have all been redesigned to ensure that the user has the correct context on what the issue is and how to resolve them. We've removed many messages that would appear before the user had a chance to complete their task and address them, such as the incomplete itemization message. 
--	A new form for detailed configuration of which fields are required by your organization, which fields are optional, and which fields should not be captured will help reduce the number of fields a user is required to enter
--	The look and feel of expense reports no longer feels like its designed for accounting personas
- 
-To turn on the new experience use the Feature Management workspace to enable Expense reports re-imagined. Enabling the feature will do the following:
-- Replace the existing expense workspace with the new workspace
-- Add a new menu item for expense fields visibility
-- The existing menu items for expense reports (the legacy form) and expense reports field will not be taken away
-- Workflow and any approvals will still take you to the legacy expense reports form
+Expense report entry has been redesigned to simplify the process of completing expense reports and decrease the time that is required. Here are the major components of the new expense experience:
+
+- A new expense management workspace that lets you access your delegate's expenses.
+- A new receipt matching experience to better show header-level receipts and simplify the process of attaching receipts to expense lines.
+- A new read-only grid that lets you view many more expense lines and additional columns of data. You can now see all itemized and split lines, together with their parent expenses.
+- A simplified pane for editing expenses.
+- Redesigned error, warning, and policy messages to help guarantee that you have the correct context to understand what the issue is and how to resolve it. Microsoft has removed many messages that appeared before users had an opportunity to complete their tasks and address the issues, such as the incomplete itemization message.
+- A new page for specifying which fields are required by your organization, which fields are optional, and which fields should not be captured. This page will help reduce the number of fields that users must to set.
+- A new look and feel for expense reports, so that the reports no longer seem as though they were designed for accounting personas.
+
+To turn on the new experience, use the **Feature management** workspace to turn on the **Expense reports re-imagined** feature. When you turn on this feature, the following actions occur:
+
+- The existing expense workspace is replaced with the new workspace.
+- A new menu item for expense field visibility is added.
+- No existing menu items for expense reports (the existing page) or expense report fields are removed.
+- Workflows and any approvals still take you to the existing expense reports page.
 
 ## Getting started video for new users
-You can see a short video showing the key features of expense entry.
 
-> [!Note]
-> The video is not available yet. This topic will be updated when the video is available.
- 
+You can watch a short video that shows the main features of expense entry.
+
+> [!NOTE]
+> The video isn't available yet. This topic will be updated when the video is available.
+
 ## New features
-|New feature | Description
+
+| New feature | Description |
 |---|----|
-| Expense fields visibility | New setup form to determine for an organization which fields should be disabled, which fields should be required, and which fields are recommended |
-| Required fields | New simple configuration for making some fields required without having to use the policy framework | 
-| Optional fields | A second screen for optional fields is added to keep employees from having to feel like they have to fill them out, but still easily accessible | 
-| Add unattached receipts   | The ability to add unattached receipts to expense report is more visible from the workspace and within the expense report |
-| Improved messaging | Better visibility of expense lines containing warnings or errors |
-| Reduction in infolog messages | The number of infolog messages were decreased and work was done to eliminate duplicate messages from appearing in many cases | 
-| Added focus for common actions | New actions button for most of the common line-level actions with an ellipsis button (...) for header and other less frequent actions | 
-| New workspace to increase visibility | New workspace to unify features and links that users had to click into different areas |
-| Add existing expenses and receipts during expense creation | Add all or add selected for expenses and receipts during expense report creation |
-| Exchange rate calculator | Exchange rate calculator added to calculate exchange rate for out of pocket multicurrency transactions | 
-| Save and New expense lines | Save and New button introduced on new expense entry to rapidly enter expense lines |
-| Better visibility into split and itemized lines | Added itemized and split lines directly into the list of expenses to increase visibility and easily determine if there are policy or other errors | 
-| Receipt shown during itemization | Added support for receipts to show during itemization |
-  
-The initial release will only focus on expense entry scenarios. Any expense report review or approval scenario will continue to use the legacy expense entry form. 
- 
-The following features are present in the legacy form but are not yet present in the new form and will be re-introduced over the next several releases. 
- 
--	Approvals
--	Accounts Payable approvals and editing of accounting 
--	Multiple entry points
--	Travel requisition integration
--	Data entity for expense fields visibility
--	Entry for per-diem expenses
--	Line level workflow
--	Interim approver support
--	Advanced itemization
+| Expense field visibility | A new setup page lets you specify which fields should be disabled for an organization, which fields should be required, and which fields are recommended. |
+| Required fields | New simple configuration lets you make some fields required without having to use the policy framework. |
+| Optional fields | A second page for optional fields is added. In this way, employees won't feel as if they must set the fields, but the fields are still easily accessible. |
+| Add unattached receipts | The ability to add unattached receipts to expense report is more visible from the workspace and on the expense report. |
+| Improved messaging | There is better visibility into expense lines that have warnings or errors. |
+| Reduction in Infolog messages | The number of Infolog messages was decreased, and an effort was made to prevent duplicate messages from appearing in many cases. |
+| Added focus for common actions | New actions button for most of the common line-level actions with an ellipsis button (...) for header and other less frequent actions. |
+| New workspace to increase visibility | A new workspace unifies features and links that let users move to different areas. |
+| Add existing expenses and receipts during expense creation | When you create expense reports, you can add all or selected expenses and receipts. |
+| Exchange rate calculator | An exchange rate calculator is added that lets you calculate the exchange rate for out-of-pocket multicurrency transactions. |
+| Save and add new expense lines | **Save** and **New** buttons are available when new expenses are entered, to help you quickly enter expense lines. |
+| Better visibility into split and itemized lines | Itemized and split lines are added directly to the list of expenses, to increase visibility and help you easily determine whether there are policy errors or other errors. |
+| Show receipts during itemization | Receipts can be shown during itemization. |
+
+The initial release is focused on expense entry scenarios. Any expense report review or approval scenario will continue to use the existing expense entry page.
+
+The following features are present on the existing page but aren't yet present on the new page. These features will be reintroduced over the next several releases:
+
+- Approvals
+- Accounts payable approvals and the ability to edit the accounting
+- Multiple entry points
+- Travel requisition integration
+- Data entity for expense field visibility
+- Entry for per-diem expenses
+- Line-level workflow
+- Interim approver support
+- Advanced itemization
