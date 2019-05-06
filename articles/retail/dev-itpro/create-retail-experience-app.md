@@ -33,9 +33,7 @@ ms.dyn365.ops.version: Version 1611
 # Create and apply branding to the Retail Experience app
 
 [!include [banner](../includes/banner.md)]
-
-This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
-
+ 
 You can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. This topic explains how to build the app, connect, and apply your branding.
 
 ## Development tools
