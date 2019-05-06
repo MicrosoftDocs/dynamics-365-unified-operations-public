@@ -39,23 +39,15 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 
 ## Preparation steps 
 
-1.  Rename the original ..\\Infrastructure\\ folder you created during the
-    initial environment deployment (which contains the setup scripts downloaded
-    from LCS) to ..\\InfrastructureOld\\
+1.  Rename the original ..\\Infrastructure\\ folder you created during the initial environment deployment (which contains the setup scripts downloaded from LCS) to ..\\InfrastructureOld\\
 
-2.  Download the latest [on-premises setup scripts from
-    LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts)
+2.  Download the latest [on-premises setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts)
 
-3.  Copy ConfigTemplate.xml and ClusterConfig.json from \\InfrastructureOld\\ to
-    \\Infrastructure\\
+3.  Copy ConfigTemplate.xml and ClusterConfig.json from \\InfrastructureOld\\ to \\Infrastructure\\
 
-4.  Reconfigure certificates: follow the steps in [Configure
-    certificates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurecert)
+4.  Reconfigure certificates: follow the steps in [Configure certificates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurecert)
 
-5.  Setup VMs: This is similar to the original deployment step [Setup
-    VMs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupvms),
-    but some points do not need to be repeated this time around, the steps
-    needed are:
+5.  Setup VMs: This is similar to the original deployment step [Setup VMs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupvms), but some points do not need to be repeated this time around, the steps needed are:
 
     1.  Export the scripts that must be run on each VM.
 
