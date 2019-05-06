@@ -55,6 +55,11 @@ Your agency can allocate (distribute) the interest on a bank account to specific
 
 For more information, see [See interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607)
 
+## Expense reports re-imagined
+Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. You can enable this functionality in feature management to add a new setup form to configure expense fields visibility to determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is enabled with this feature, replacing the previous expense workspace and is the landing page for the improved entry experience. 
+
+For more information, see [Expense reports re-imagined](https://go.microsoft.com/fwlink/?linkid=2087165)
+
 ## Additional resources
 
 ### Bug fixes
