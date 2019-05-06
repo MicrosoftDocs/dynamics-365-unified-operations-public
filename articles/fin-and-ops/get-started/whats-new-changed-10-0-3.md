@@ -50,6 +50,9 @@ Bank foreign currency revaluation was released in 10.0.2 and it included a param
 
 For more information, see [Bank foreign currency revaluation](https://go.microsoft.com/fwlink/?linkid=2079802)
 
+## Expense reports re-imagined
+Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. You can enable this functionality in feature management to add a new setup form to configure expense field visibility to determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is also enabled with this feature, replacing the previous expense workspace. 
+
 ## Additional resources
 
 ### Bug fixes
