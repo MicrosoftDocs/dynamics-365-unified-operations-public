@@ -42,7 +42,7 @@ Cloud deployment of virtual machines (VMs) requires a Microsoft Azure DevOps sub
 
 ## Workflow
 
-After you configure an Azure DevOps subscription in Microsoft Dynamics Lifecycle Services (LCS), you can use LCS to deploy developer VMs or build/test VMs. LCS configures a developer VM with workspace mapping to an Azure DevOps project. LCS also configures a build VM with the build agent/controller to build modules from the Azure DevOps project and run automated tests with external endpoint for validation. The following illustration shows a typical workflow.
+After you configure an Azure DevOps subscription in Microsoft Dynamics Lifecycle Services (LCS), you can use LCS to deploy developer VMs or build/test VMs. LCS configures a developer VM that has a workspace mapping to an Azure DevOps project. LCS also configures a build VM that has a build agent/controller that builds modules from the Azure DevOps project and runs automated tests that have an external endpoint for validation. The following illustration shows a typical workflow.
 
 ![Relationship of LCS, Azure DevOps, and VMs](./media/deploy-build-test.png)
 
@@ -67,8 +67,8 @@ The first step is to [choose an Azure DevOps plan](https://www.visualstudio.com/
 
 To set up Azure DevOps, follow these steps.
 
-+ [Create a personal access token](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops). The token is used for all LCS background actions. These actions include upgrade and deployment. When users initiate actions from LCS, LCS expects that those users will be added to Azure DevOps. The users must authorize LCS access to Azure DevOps on their behalf.
-+ [Configure LCS](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops).
+1. [Create a personal access token](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops). The token is used for all LCS background actions. These actions include upgrade and deployment. When users initiate actions from LCS, LCS expects that those users will be added to Azure DevOps. The users must authorize LCS access to Azure DevOps on their behalf.
+1. [Configure LCS](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops).
 
 Until you authorize LCS access to Azure DevOps, you will see the following message in action center.
 
