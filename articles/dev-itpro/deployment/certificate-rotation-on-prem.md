@@ -20,11 +20,12 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global f
+ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25 
+
 ---
 
 # Metadata and Markdown template
@@ -32,4 +33,4 @@ ms.dyn365.ops.version: Platform update 25
 [!include[banner](../includes/banner.md)]
 
 
-This Finance and Operations tem
+Content goes here.
