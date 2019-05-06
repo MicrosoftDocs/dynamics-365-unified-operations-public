@@ -32,17 +32,12 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include[banner](../includes/banner.md)]
 
-You may need to rotate the certificates used by your Finance and Operations
-on-premises environment, as they approach their expiry date. In this article you
-can understand how to replace the existing certificates with new ones and update
-the references within the environment to use the new certificates.
+You may need to rotate the certificates used by your Finance and Operations on-premises environment, as they approach their expiry date. In this article you can understand how to replace the existing certificates with new ones and update the references within the environment to use the new certificates.
 
   
-**Old certificates must remain in place until the certificate rotation process
-is complete, removing them beforehand will cause the rotation process to fail.**
+**Old certificates must remain in place until the certificate rotation process is complete, removing them beforehand will cause the rotation process to fail.**
 
-Preparation steps 
-------------------
+## Preparation steps 
 
 1.  Rename the original ..\\Infrastructure\\ folder you created during the
     initial environment deployment (which contains the setup scripts downloaded
@@ -64,7 +59,7 @@ Preparation steps
 
     1.  Export the scripts that must be run on each VM.
 
-        # Exports the script files to be execute on each VM into a directory VMs\\\<VMName\>.
+        \# Exports the script files to be execute on each VM into a directory VMs\\\<VMName\>.
         .\\Export-Scripts.ps1 -ConfigurationFilePath .\\ConfigTemplate.xml
 
 1.  Run the following scripts, if they exist in each VM folder, to complete VM
