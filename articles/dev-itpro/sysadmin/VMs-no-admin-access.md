@@ -5,7 +5,7 @@ title: Development and build VMs that don't allow admin access FAQ
 description: This topic provides answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -73,7 +73,7 @@ No, you can't install additional development tools.
 No, you can't run Windows PowerShell commands and commands at a prompt command as an administrator.
 
 ## Is the Trace Parser supported?
-Trace Parser currently requires the user to be an administrator.
+Trace Parser currently requires the user to be an administrator. It is not supported on dev/test environments that are managed by Microsoft that do not allow administrator access.
 
 ## Is the Admin user provisioning tool supported?
 The **Admin user provisioning** tool currently requires the user to be an administrator. The **Admin user provisioning** tool is typically used to change the tenant of the environment, but that should not be necessary. You can update the sign in information in the database for the Admin user or any other user. You only need the SID and network alias (email address) from a user that can access the environment or another environment on the same tenant. In many cases, the SID and network alias can be found in the database that came with the environment originally. Run the following commands to get the good SID and network alias from the source environment and update them in the target environment, respectively.
