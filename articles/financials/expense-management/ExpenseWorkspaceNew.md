@@ -5,7 +5,7 @@ title: Expense reports re-imagined
 description: Expense report entry has been redesigned and re-imagined to simplify and decrease the time to complete your expense report in Dynamics 365 for Finance and Operations. 
 author: ryansandness
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.3
 # Expense reports re-imagined
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. The major components of this new expense experience include:
 - A new expense management workspace including the ability to access your delegate's expenses
@@ -47,9 +48,10 @@ To turn on the new experience use the Feature Management workspace to enable Exp
 - Workflow and any approvals will still take you to the legacy expense reports form
 
 ## Getting started video for new users
-You can see a short video showing the key features of expense entry in the video below
+You can see a short video showing the key features of expense entry.
 
-Note: Video is not available yet. This is a placeholder until video is published
+> [!Note]
+> The video is not available yet. This topic will be updated when the video is available.
  
 ## New features
 |New feature | Description
