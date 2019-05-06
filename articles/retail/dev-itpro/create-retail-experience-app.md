@@ -101,7 +101,8 @@ Add the following links to the about page:
 **Note:** If these links are missing, and the user clicks them, the app might stop responding. Therefore, be sure to add the links to these tags. The about page has an **&lt;EvaluationModeEnabled&gt;** tag that is used to enable Evaluation Mode view. Evaluation Mode lets retailers easily change the Retail Server endpoint without having to change any code. This feature helps retailers evaluate the app for various channels. **Evaluation Mode must be disabled in the production version of the app.** By default, Evaluation Mode is disabled in the Retail SDK.
 
 ## Apply branding
-After you've successfully built the Retail Experience app by using the Microsoft sample branding, you can change icons, labels, and colors to make the app meet your own branding requirements. The following list shows some of the icons, labels, and colors that retailers might want to change. This list isn't exhaustive. **Icons**
+After you've successfully built the Retail Experience app by using the Microsoft sample branding, you can change icons, labels, and colors to make the app meet your own branding requirements. The following list shows some of the icons, labels, and colors that retailers might want to change. This list isn't exhaustive. 
+**Icons**
 
 -   **App** – The icon that users see after the app is installed on their phones.
 -   **Retailer's brand** – The icon that appears on the menu flyout on Android.
