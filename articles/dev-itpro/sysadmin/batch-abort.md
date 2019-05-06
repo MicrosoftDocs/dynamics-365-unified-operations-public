@@ -10,6 +10,6 @@ Follow these steps to immediately abort the running task
 2. Select a batch job that is in cancelling state and click on it
 3. On the batch tasks tab click **abort** on the task , and then select **OK**.
 
-    ![Abort Batch Task](./media/batch-abort.png) 
+    ![Abort Batch Task](./media/batch-abort.PNG) 
 
 
