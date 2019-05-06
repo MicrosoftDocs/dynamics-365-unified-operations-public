@@ -180,7 +180,7 @@
         href: dev-ref/formdataobject-classes.md
       - name: F classes (FormFastTabSummarySeparator to FormGridControl)
         href: dev-ref/formfasttabsummaryseparator-classes.md
-      - name: F classes (FormGroupControl to FormIntControl
+      - name: F classes (FormGroupControl to FormIntControl)
         href: dev-ref/formgroupcontrol-classes.md
       - name: F classes (FormListBoxControl to FormNotifyEventArgs)
         href: dev-ref/formlistboxcontrol-classes.md
