@@ -60,7 +60,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
     1.  Export the scripts that must be run on each VM.
 
         \# Exports the script files to be execute on each VM into a directory VMs\\\<VMName\>.
-        .\\Export-Scripts.ps1 -ConfigurationFilePath .\\ConfigTemplate.xml
+        \.\\Export-Scripts.ps1 -ConfigurationFilePath .\\ConfigTemplate.xml
 
 1.  Run the following scripts, if they exist in each VM folder, to complete VM
     setup
