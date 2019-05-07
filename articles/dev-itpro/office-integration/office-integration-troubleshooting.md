@@ -228,6 +228,14 @@ The following URLs are accessed for authentication.
 - `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
+### Issue: The Excel Add-in needs an explicit sign out after encountering an AADSTS50058 "silent sign in failed" error
+
+**Issue:** When users try to sign into the Excel Add-in after some period of inactivity, the user encounters AADSTS50058 "silent sign in failed" error and is forced to sign out before signing back in
+
+**Explanation:** The Excel Add-in uses Azure AD for authentication. When authentication occurs a token is created for the user. That token has an expiration period. Once the token has expired, an AADSTS50058 error will occur indicating that "silent sign in failed".
+
+**Solution:** The user needs to sign out and sign back in. We will improve this behavior in the future by automatically signing the user out to enable faster sign-in.
+
 ## Additional resources
 
 [Office integration](office-integration.md)
