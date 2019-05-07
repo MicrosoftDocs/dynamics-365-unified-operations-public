@@ -88,6 +88,9 @@ Any time that you pause updates or edit an existing pause, a notification appear
 > [!IMPORTANT]
 > You can pause updates through LCS until four hours before the start of the downtime window.
 
+> [!IMPORTANT]
+> You can cancel a pause and choose to resume updates only 7 days prior to the start of the downtime date. If you are past that date then you will not be able to cancel a pause.
+
 ## What happens after the pause duration expires?
 
 Cumulative service updates help guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
