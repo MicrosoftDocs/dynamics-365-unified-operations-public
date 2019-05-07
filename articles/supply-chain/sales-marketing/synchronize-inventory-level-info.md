@@ -79,6 +79,14 @@ The **External product inventory** entity is only used for back end in to the in
 
 ## Prerequisites and mapping setup
 
+### Data integration
+For the project to work, you need to ensure that the Integration key is updated for msdynce_externalproductinventories.
+1.  Go to **Data integration > Connection sets**.
+2.  Select the used Connection set.
+3.  On the **Integration key** tab, ensure that the following keys are added to msdynce_externalproductinventories:
+      - msdynce_productnumber (Product Number)
+      - msdynce_warehouseid (Warehouse ID)
+      
 ### Data integration project
 You can apply filters with Advanced Query and Filtering so that only certain products and warehouses send inventory-level information from Finance and Operations to Field Service.
 
