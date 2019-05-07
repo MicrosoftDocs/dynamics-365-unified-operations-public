@@ -2,7 +2,7 @@
 # required metadata
 
 title: Abort an executing batch job
-description: This topic provides information about how to clean up the batch job history in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about how cancel an executing batch job in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
 ms.date: 05/08/2019
