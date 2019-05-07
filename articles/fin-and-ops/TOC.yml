@@ -1260,6 +1260,16 @@
           href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
         - name: Create a commitment to reserve budget funds for the public sector
           href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
+        - name: General budget reservations
+          href: ../financials/public-sector/general-budget-reservations.md
+        - name: Set up general budget reservation rules and reservation types
+          href: ../financials/public-sector/rules-reservation-types.md
+        - name: Maintain general budget reservations
+          href: ../financials/public-sector/general-budget-reservation-tasks.md
+        - name: Set up general budget reservations and submit them to a workflow
+          href: ../financials/public-sector/workflow-general-budget-reservations.md
+        - name: Project accounting with general budget reservations
+          href: ../financials/public-sector/general-budget-reservations-project-accounting.md
       - name: Fixed assets in the public sector
         href: ../financials/public-sector/fixed-asset-public-sector.md
       - name: General ledger in the public sector
@@ -2250,6 +2260,14 @@
       - name: Russia
         href: ../financials/localizations/russia.md
         items:
+        - name: General ledger
+          items: 
+          - name: Correspondence of accounts
+            href: ../financials/localizations/rus-correspondence-accounts.md
+          - name: Preview ledger transactions
+            href: ../financials/localizations/rus-ledger-transactions-preview.md 
+          - name: Set up exchange rates for currency transactions
+            href: ../financials/localizations/rus-exchange-difference.md
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
           items:
@@ -2269,6 +2287,8 @@
             href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
           - name: Set up and process payment orders
             href: ../financials/localizations/rus-payment-order-settings-processing.md 
+          - name: Foreign currency sales, purchases, and transfers
+            href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: VAT
           items:
           - name: Value-added tax (VAT) for tax agents
@@ -2327,6 +2347,8 @@
             href: ../financials/localizations/rus-invoice-payment.md
           - name: Set up dimension control for settlements
             href: ../financials/localizations/rus-transactions-settlement-date.md
+          - name: Register goods shipped to customers
+            href: ../supply-chain/localizations/rus-goods-transit-postponed.md
           - name: Cash flow management
             href: ../financials/localizations/rus-cash-flow.md
         - name: Reporting
@@ -2334,29 +2356,19 @@
           - name: Financial reporting
             href: ../financials/localizations/rus-financial-reports.md
           - name: Configure financial reports in Excel
-            href: ../financials/localizations/rus-excel-financial-report.md            
-        - name: Company divisions
-          href: ../financials/localizations/rus-company-divisions.md
-        - name: Set up exchange rates for currency transactions
-          href: ../financials/localizations/rus-exchange-difference.md
-        - name: Preview ledger transactions
-          href: ../financials/localizations/rus-ledger-transactions-preview.md
-        - name: Set up officials
-          href: ../financials/localizations/rus-officials.md
-        - name: Set up dimension control for settlements
-          href: ../financials/localizations/rus-transactions-settlement-date.md
-        - name: Invoices for payment
-          href: ../financials/localizations/rus-invoice-payment.md
-        - name: Financial reporting
-          href: ../financials/localizations/rus-financial-reports.md
-        - name: Accounting reporting in electronic format
-          href: ../financials/localizations/rus-accounting-reporting.md
-        - name: Cash flow management
-          href: ../financials/localizations/rus-cash-flow.md
-        - name: Foreign currency sales, purchases, and transfers
-          href: ../financials/localizations/rus-currency-sale-purchase.md
-        - name: Assessed tax declarations
-          href: ../financials/localizations/rus-assessed-tax-declaration.md
+            href: ../financials/localizations/rus-excel-financial-report.md   
+          - name: Accounting reporting in electronic format
+            href: ../financials/localizations/rus-accounting-reporting.md
+          - name: Assessed tax declaration
+            href: ../financials/localizations/rus-assessed-tax-declaration.md
+        - name: Organization administration
+          items:    
+          - name: Tax registration info related to address
+            href: ../financials/localizations/emea-registration-ids.md
+          - name: Set up officials
+            href: ../financials/localizations/rus-officials.md 
+          - name: Company divisions
+            href: ../financials/localizations/rus-company-divisions.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2794,6 +2806,8 @@
           href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
         - name: Upgrade formats by adopting new base versions
           href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+        - name: Design ER configurations to fill in PDF templates
+          href: ../dev-itpro/analytics/er-fillable-pdf.md
       - name: Formula designer in Electronic reporting
         href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
       - name: Configure Electronic reporting to pull data into Power BI

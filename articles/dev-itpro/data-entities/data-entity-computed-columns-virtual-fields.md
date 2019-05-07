@@ -36,6 +36,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
 
+The sample code is targeted towards creating or modifying an entity that is a part of solution that you own.  Extending an existing entity requires slight modifications.
+
 ## Overview
 
 A data entity can have additional *unmapped* fields beyond those that are directly mapped to fields of the data sources. There are mechanisms for generating values for unmapped fields:
@@ -105,7 +107,7 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
 
 1. In Microsoft Visual Studio, right-click your project, and add the existing **FMCustomerEntity**.
 2. In Solution Explorer, right-click the **FMCustomerEntity** node, and then click **Open**.
-3. In the designer for **FMCustomerEntity**, right-click the **FMCustomerEntity** node, and then click **New** &gt; **String Unmapped Field**.
+3. In the designer for **FMCustomerEntity**, right-click the **Fields** node, and then click **New** &gt; **String Unmapped Field**.
 
     [![Creating a new string unmapped field](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
 
@@ -131,14 +133,14 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
         fieldList.addEnd(SysComputedColumn::returnLiteral(" "));
         fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMCustomer), fieldstr(FMCustomer, LastName)));
         fieldList.addEnd(SysComputedColumn::returnLiteral("; "));
-        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, AddressLine1)));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, AddressLine1)));
         fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
-        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, City)));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, City)));
         fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
-        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, State)));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, State)));
         fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
         fieldList.addEnd(SysComputedColumn::cast(
-            SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, ZipCode)), "NVARCHAR"));
+            SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, ZipCode)), "NVARCHAR"));
         return SysComputedColumn::addList(fieldList);
     }
 
