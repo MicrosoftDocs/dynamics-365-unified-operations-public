@@ -41,3 +41,6 @@ This topic answers frequently asked questions about the workflow system in Micro
 When a work item is rejected, that work item is completed as rejected. Another work item is created and assigned to the originator. This means that there is a notification to the originator for the rejected work item, and a separate notification to the user assigned to the new "change requested" work item. 
 
 Each notification is for a different work item, but the similarity can cause confusion. We are looking at ways to improve this in a future release.
+
+### Why are my workflow exports failing?
+There is currently a limitation in the workflow export feature that workflow names can't exceed 48 characters. Using a name larger than 48 characters can result in a "Server failed to authenticate the request" error and/or the export of a file without its file type. This blog post provides more details: [Workflow Export Troubleshooting](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting)
