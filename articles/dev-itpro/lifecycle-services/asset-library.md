@@ -43,6 +43,8 @@ The Asset library is a storage location for the various assets that are associat
 - **Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in LCS. This library can be accessed by all users within a project. To access the project-level Asset library, sign in to LCS, and open a project. Then, on the hamburger menu, click **Asset library**.
 
     [![Opening the project-level Asset library](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    > [!NOTE]
+    > Uploading versions for the same asset in the project asset library is not supported. 
 
 ## Asset library support
 The Asset library supports multiple types of assets. Here are some asset types that are frequently used:
