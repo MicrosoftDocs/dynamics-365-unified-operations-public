@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/01/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -266,7 +266,7 @@ There are a few standard steps that can help you troubleshoot the configuration 
 
 ## Troubleshoot the Exchange mail provider
 
-The **Email parameters** form allows an administrator to select Exchange as an interactive email provider and as the Batch email provider. The Exchange mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
+The **Email parameters** page allows an administrator to select Exchange as an interactive email provider and as the Batch email provider. The Exchange mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
 If troubleshooting is needed, ensure that the current user's account can be signed into and that emails can be sent from that account to the intended recipients.
 
 ## Other notes
