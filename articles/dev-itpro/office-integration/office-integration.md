@@ -5,7 +5,7 @@ title: Office integration concepts and features
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/18/2018
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
