@@ -66,7 +66,7 @@ You can watch a short video that shows the main features of expense entry.
 | Add unattached receipts | The ability to add unattached receipts to expense report is more visible from the workspace and on the expense report. |
 | Improved messaging | There is better visibility into expense lines that have warnings or errors. |
 | Reduction in messages in the message bar| The number of Infolog messages was decreased, and an effort was made to prevent duplicate messages from appearing in many cases. |
-| Added focus for common actions | New actions button for most of the common line-level actions with an ellipsis button (...) for header and other less frequent actions. |
+| Grouped together common actions | The interface was cleaned up with the addition of a new actions button for most of the common line-level actions and the addition of an ellipsis button (...) for header and other less frequent actions. |
 | New workspace to increase visibility | A new workspace unifies features and links that let users move to different areas. |
 | Add existing expenses and receipts during expense creation | When you create expense reports, you can add all or selected expenses and receipts. |
 | Exchange rate calculator | An exchange rate calculator is added that lets you calculate the exchange rate for out-of-pocket multicurrency transactions. |
