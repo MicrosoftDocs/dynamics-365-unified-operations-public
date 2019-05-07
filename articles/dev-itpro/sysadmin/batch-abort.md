@@ -35,15 +35,12 @@ ms.dyn365.ops.version: Platform update 27
 
 [!include [banner](../includes/preview-banner.md)]
 
+It is important to note that this feature should be used with caution. When you cancel a running process, it is an inherently unsafe action that can lead to data corruption, resulting in either orphaned or incomplete data. This action should only be used to mitigate other issues caused by the running tasks.
 
-It is important to note that this feature should be used with caution. Aborting a running process is an inherently unsafe action, which may lead to data corruption, either orphaned or incomplete. This should only be used to mitigate other issues caused by the running tasks.
-
-Complete the following steps to immediately abort the running task.
+Complete the following steps to immediately cancel the running task.
 
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
-2. Select a batch job that is in a canceling state.
+2. Select a batch job that has a **Status** of **Canceling**.
 3. On the **Batch tasks** tab, select **Abort** on the task , and then click **OK**.
 
     ![Abort Batch Task](./media/batch-abort.PNG) 
-
-
