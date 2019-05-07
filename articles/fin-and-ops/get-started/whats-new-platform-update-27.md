@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform 27
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 27. This version has a build number of 7.0.XXXX. For more information about Platform update 27, see [Additional resources](whats-new-platform-update-27.md#additional-resources).
+This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 27. This version has a build number of 7.0.5286. For more information about Platform update 27, see [Additional resources](whats-new-platform-update-27.md#additional-resources).
 
 ## Feature Management
 The **Feature management** experience provides a workspace where you can view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](feature-management/feature-management-overview.md).
