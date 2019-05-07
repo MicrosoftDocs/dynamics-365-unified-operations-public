@@ -149,6 +149,14 @@
       href: create-onboarding-experience.md
     - name: Track sources for candidate profiles and applications
       href: source-tracking.md    
+  - name: Welcome new hires with Onboard
+    href: create-onboarding-experience.md
+    - name: Get the Onboard app
+      href: onboard-get-app.md
+    - name: Create an onboarding guide
+      href: onboard-create-guide.md
+    - name: View the status of onboarding employees
+      href: onboard-view-status.md
   - name: Motivate employees
     items:
     - name: Compensation plans
