@@ -41,10 +41,10 @@ To obtain support for Talent, use the resources in the following table. These re
 | **Task**  | **More information**                  |
 | --------- | ------------------------------------- |
 | Ask the community | Go to the [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) to find help with your questions. To find answers, enter a question in the search box next to **Have a question?**. To ask a question, click the **Ask a question** button. |
-| Use the cloud-powered support tool | In [Lifecycle Services (LCS)](https://lcs.dynamics.com/), go to your project and select the **Support** tile. From there, you can submit issues two ways:<br></br>- On the **Active issues** tab, select the issue you want to submit, and then select **Submit to Microsoft**.<br></br>**OR**<br></br>- On the **Submitted to Microsoft** tab, click **Submit a new Incident** to submit a new issue. |
-| In-app support | Select the **Help** icone (**?**) in the menu, and then select **Support** if you're using Core HR or **Report a problem** if you're using Attract or Onboard). Issues will be reported on the **Active Issues** tab in LCS. Note that if you purchased the stand-alone version of Onboard, Report a problem issues will be sent to Microsoft. |
+| Use the cloud-powered support tool | In [Lifecycle Services (LCS)](https://lcs.dynamics.com/), go to your project and select the **Support** tile. From there, you can submit issues two ways:<br></br>On the **Active issues** tab, select the issue you want to submit, and then select **Submit to Microsoft**.<br></br>**OR**<br></br>On the **Submitted to Microsoft** tab, click **Submit a new Incident** to submit a new issue. |
+| In-app support | Select the **Help** icon (**?**) in the menu, and then select **Support**. Issues are reported on the **Active Issues** tab in LCS, where an admin can determine whether to provide in-house support or submit the problem to Microsoft. |
 | Get help with questions about Talent licensing | Contact your partner or Microsoft sales representative. |
-| Request new features and functionality within Talent | On the main Talent page in the application, select the **?** icon, and then select **Ideas**, or use the [Ideas](https://experience.dynamics.com/ideas/) link to view, search, vote, or add new ideas. | 
+| Request new features and functionality within Talent | On the main Talent page in the application, select the **Help** icon (**?**), and then select **Ideas**, or use the [Ideas](https://experience.dynamics.com/ideas/) link to view, search, vote, or add new ideas. | 
 
 ## Support for the Onboard stand-alone app
 
@@ -53,6 +53,6 @@ To obtain support for the Onboard stand-alone app, use the resources in the foll
 | **Task**  | **More information**                  |
 | --------- | ------------------------------------- |
 | Ask the community | Go to the [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) to find help. To find answers, enter a question in the search box next to **Have a question**. To ask a question, click the **Ask a question** button. |
-| Report a problem | Select the **Help** icon in the upper right corner of the page, and then click **Report a problem**. Enter the issue into the description and include an email address if you would like to follow up on the issue. |
+| Report a problem | Select the **Help** icon (**?**) in the upper right corner of the page, and then select **Report a problem**. Enter the issue into the description and include an email address if you would like to follow up on the issue. |
 | Get help with questions about Talent licensing | Contact your partner or Microsoft sales representative. |
 | Request new features and functionality within Attract and Onboard | Select the **?** icon and then select **Ideas**, or use the following links to view, search, vote, or add new ideas: [Attract](https://experience.dynamics.com/ideas/categories/?forum=44d6c48a-95b0-e811-a96a-000d3a1bece3&forumName=Dynamics%20365%20for%20Talent%3A%20Attract) or [Onboard](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard). | 
