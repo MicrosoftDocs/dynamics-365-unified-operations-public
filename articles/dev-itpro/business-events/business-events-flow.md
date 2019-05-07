@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-Business events can be consumed in Microsoft Flow via the Microsoft Finance and Operations connector. The Finance and Operations connector has a trigger that is named **when a business event happens**. This trigger can be used to subscribe to any of the business events that are available in the target instance of Microsoft Dynamics 365 for Finance and Operations.
+Business events can be consumed in Microsoft Flow via the Microsoft Finance and Operations connector. The Finance and Operations connector has a trigger that is named **when a business event occurs**. This trigger can be used to subscribe to any of the business events that are available in the target instance of Microsoft Dynamics 365 for Finance and Operations.
 
 ## Prerequisite
 
