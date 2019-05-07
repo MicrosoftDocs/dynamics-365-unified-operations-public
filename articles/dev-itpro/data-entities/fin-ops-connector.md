@@ -5,7 +5,7 @@ title: Finance and Operations Connector
 description: This topic provides information about the Finance and Operations Connector for Microsoft Flow and Logic Apps.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/31/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
