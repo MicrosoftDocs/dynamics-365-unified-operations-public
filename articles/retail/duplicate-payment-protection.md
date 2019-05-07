@@ -40,10 +40,10 @@ The duplicate payment protection feature ensures that Dynamics 365 for Retail Mo
 
 This topic covers the following aspects of the duplicate payment protection feature:
 
-- [Prerequisites](#Prerequisites) - Set of prerequisites to leverage this feature in Dynamics 365 for Retail Modern POS.
-- [Scenario details](#Scenario-details) - Detailed description of the scenarios covered by the duplicate payment protection feature.
-- [Troubleshooting](#Troubleshooting) - Steps to take when encountering issues with the duplicate payment protection feature.
-- [Additional resources](#Additional-resources) - List of related articles you might find useful when using the duplicate payment protection feature.
+- [Prerequisites](#prerequisites) - Set of prerequisites to leverage this feature in Dynamics 365 for Retail Modern POS.
+- [Scenario details](#scenario-details) - Detailed description of the scenarios covered by the duplicate payment protection feature.
+- [Troubleshooting](#troubleshooting) - Steps to take when encountering issues with the duplicate payment protection feature.
+- [Additional resources](#additional-resources) - List of related articles you might find useful when using the duplicate payment protection feature.
 
 ## Prerequisites
 - The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 for Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
@@ -100,7 +100,7 @@ In some cases, the cashier might explicitly choose to skip the duplicate payment
 ![Skip Payment Recovery](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### What to do if the customer leaves the store
-In some cases, the customer might leave the store before the cashier can finalize the transaction. In those cases, follow the steps described in the [How to skip payment recovery](#How-to-skip-payment-recovery) section to void the transaction and manually void the payment on the portal of the payment gateway/processor.
+In some cases, the customer might leave the store before the cashier can finalize the transaction. In those cases, follow the steps described in the [How to skip payment recovery](#how-to-skip-payment-recovery) section to void the transaction and manually void the payment on the portal of the payment gateway/processor.
 
 ## Troubleshooting
 
@@ -113,7 +113,7 @@ For all general issues, you should always consult the Modern POS or IIS Hardware
 Even if the duplicate payment protection feature is enabled, it is generally recommended that the merchant verifies that no double charge has occurred. To do this, check all transactions on the corresponding payment gateway/processor portal.
 
 ### Payment recovery fails
-An error may occur while a previous payment is being recovered on Dynamics 365 for Retail Modern POS. This can happen if there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because  the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#How-to-skip-payment-recovery) section. | 
+An error may occur while a previous payment is being recovered on Dynamics 365 for Retail Modern POS. This can happen if there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because  the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#how-to-skip-payment-recovery) section. | 
 
 ## Additional resources
 - [Payments FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
