@@ -173,6 +173,12 @@ This table lists the major releases of the application. For monthly cloud update
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 27</td>
+<td>7.0.5286</td>
+<td>June 2019</td>
+<td><a href="whats-new-platform-update-27.md">Preview features in Dynamics 365 for Finance and Operations platform update 27 (June 2019)</a></td>
+</tr><tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Platform update 26</td>
 <td>7.0.5257</td>
 <td>May 2019</td>
