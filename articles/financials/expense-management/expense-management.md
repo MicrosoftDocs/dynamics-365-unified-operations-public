@@ -5,7 +5,7 @@ title: Expense management
 description: Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Expense management
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business. You can also define expense policies and automate the reimbursement of travel expenses. 
 
@@ -44,9 +45,10 @@ Use Expense management to create an integrated workflow where you can store paym
 
 Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned. 
 
-Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. You can enable this functionality in feature management to add a new setup form to configure expense fields visibility to determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is enabled with this feature, replacing the previous expense workspace and is the landing page for the improved entry experience.
+##### Expense report entry
+Expense report entry has been redesigned to simplify the experience and decrease the time to complete your expense report. You can enable this functionality in Feature management. You can add a new setup form to configure expense fields visibility and determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is enabled with this feature, replacing the previous expense workspace, and is the landing page for the improved entry experience.
 
-For more information, see [Expense reports re-imagined](https://go.microsoft.com/fwlink/?linkid=2087165)
+For more information, see [Expense reports reimagined](ExpenseWorkspaceNew.md).
 
 #### Blogs
 
