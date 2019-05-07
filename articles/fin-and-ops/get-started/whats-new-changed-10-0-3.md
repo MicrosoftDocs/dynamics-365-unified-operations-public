@@ -37,27 +37,28 @@ ms.dyn365.ops.version: Release 10.0.3
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June and has a build number of 10.0.107. For more information about version 10.0.3, see [Additional resources](whats-new-changed-10-0-3.md#additional-resources).
 
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3).
 
 ## Feature management
 
 The **Feature management** experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
-For more information, see [Feature management](https://go.microsoft.com/fwlink/?linkid=2080380)
+For more information, see [Feature management](https://go.microsoft.com/fwlink/?linkid=2080380).
 
 ## Enable Bank foreign currency revaluation without a parameter
-Bank foreign currency revaluation was released in 10.0.2 and it included a parameter in Cash and Bank parameters to enable it. You can now enable bank foreign currency revaluation for all legal entities where it is available using feature management. 
+Bank foreign currency revaluation was released in version 10.0.2 and it included a parameter in Cash and Bank parameters to enable it. You can now enable bank foreign currency revaluation for all legal entities where it is available using feature management. 
 
-For more information, see [Bank foreign currency revaluation](https://go.microsoft.com/fwlink/?linkid=2079802)
+For more information, see [Bank foreign currency revaluation](https://go.microsoft.com/fwlink/?linkid=2079802).
 
-## Setup interest distribution for cash accounts
+## Set up interest distribution for cash accounts
 Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
 
-For more information, see [See interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607)
+For more information, see [Interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607).
 
 ## Expense reports re-imagined
 Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. You can enable this functionality in feature management to add a new setup form to configure expense fields visibility to determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is enabled with this feature, replacing the previous expense workspace and is the landing page for the improved entry experience. 
 
-For more information, see [Expense reports re-imagined](https://go.microsoft.com/fwlink/?linkid=2087165)
+For more information, see [Expense reports re-imagined](https://go.microsoft.com/fwlink/?linkid=2087165).
 
 ## Additional resources
 
@@ -80,4 +81,4 @@ The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecate
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
