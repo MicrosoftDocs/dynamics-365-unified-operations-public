@@ -42,6 +42,8 @@ The **Feature management** experience provides a workspace where you can view, e
 ## Dedicated capacity to process business events 
 It will be no longer required to schedule the business event processing batch job to process business events. Dedicated threads are allocated to process business events by the system which ensures faster processing of business events. The existing batch job is still available (but is not needed to run unless there are issues with dedicated capacity). If the batch job was already scheduled prior to this platform update, the batch will become ineffective and dedicated threads will take over after the update.
 
+For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
+
 ## Abort executing batch job
 At times, it can take a long time to cancel a batch job if the job has tasks that are currently executing. The abort option provides a system administrator or batch job manager with the ability to abort already executing tasks for jobs when the jobs are canceled. This provides a much faster mechanism to cancel a long running job that impacts system usage in other places. 
 
