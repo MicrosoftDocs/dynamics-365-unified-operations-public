@@ -50,9 +50,6 @@ At times, it can take a long time to cancel a batch job if the job has tasks tha
 ## Extensibility enhancements
 The [fourth wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) included in Platform update 27 is documented in the April 2019 Release notes. There are two enhancements detailed, with the highlight being that View extensions can now change label and help text values.
 
-## Feature 
-A brief description of the feature and a link to the associated topic that has more details.
-
 ## Additional resources
 
 ### Platform update 27 bug fixes
