@@ -88,136 +88,38 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 ## Apply a package to a non-production environment by using LCS
 
-> [!IMPORTANT]
-> Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
-
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
 1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
-
     For an application (AOT) deployable package that results from an X++ hotfix, or from application customizations and extensions, create the deployable package in your development or build environment, and then upload it to the Asset library.
 2. Open the **Environment details** view for the environment where you want to apply the package.
 3. Click **Maintain** &gt; **Apply updates** to apply an update.
 4. Select the package to apply. Use the filter at the top to find your package.
-5. Click **Apply**. Notice that the status in the upper-right corner of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package.
-
-    [![Queued status](./media/parallelexecutionsandbox_queuedstate.jpg)](./media/parallelexecutionsandbox_queuedstate.jpg)
-    
-6. Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and that the environment status is **Servicing**.
-
-    [![Servicing status](./media/parallelexecutionsandbox_servicingstate.png)](./media/parallelexecutionsandbox_servicingstate.png)
-    
-7. Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**.
-
-    [![Deployed status](./media/parallelexecutionsandbox_signedoffstate.png)](./media/parallelexecutionsandbox_signedoffstate.png)
-    
-8. To sign off on package application, click **Sign off** if there are no issues. If issues occurred when you applied the package, click **Sign off with issues**.
-
-### Troubleshooting
-
-#### General troubleshooting/diagnostics
-
-If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use RDP to connect to an environment so that you can fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section.
-
-![Download log and Download runbook buttons](./media/applypackage_sandbox_10.png)
-
-
-![Troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)
-
-#### Using the logs
-
-1. Download the logs.
-2. Unzip the log files.
-3. Select the role that a step failed for, such as **AOS** or **BI**.
-4. Select the VM where the step failed. This information appears in the **Machine name** column in the **Environment updates** section.
-5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the **ExecuteRunbook** folder.
-
-    For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
-
-#### Package failure
-
-If package application isn't successful, you have two options:
-
-- Click **Resume** to retry the operation that failed.
-
-    ![Failed status](./media/parallelexecutionsandbox_failedstate.jpg)
-    
-- Click **Abort** to stop package application.
-
-    > [!Note]
-    > If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue.
-    
-    [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
+5. Click **Apply**. Notice that the status in the upper-right corner of the **Environment details** view changes from **Queued** to **In Progress**, and that an **Environment updates** section now shows the progress of the package. You can refresh the page to check the status. 
+6. Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**.     
 
 ## Apply a package to a production environment by using LCS
 
-In a production environment, unlike in a sandbox environment or other types of environments, package application through LCS isn't self-serve. Customers and partners must submit a request to Microsoft to apply a package when the customer is ready for the downtime. 
+In a production environment, customers can schedule a downtime for when they want the update to be applied.  
 
-1. Download an update from LCS. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+> [!IMPORTANT]
+> An important pre-requisite for applying a package to a production environment is that the package must be successfully applied to atleast one sandbox environmnet in the same project. 
 
-    - For a binary update, upload the update deployable package directly to the Asset library.
-    - For an application/X++ update, apply the package in a development environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create deployable packages of models](create-apply-deployable-package.md).
-
-2. On the **Asset library** page in LCS, on the tab that corresponds to the asset type (**Software deployable package**), select a package, and then click **Release candidate**.
-3. Apply the package in a sandbox environment by using the instructions earlier in this topic.
-4. After the package is successfully applied and signed off in the sandbox environment, open the Asset Library, and mark the package as **Release Candidate**.
-5. Open the **Environment details** view for the production environment where you want to apply the package.
-6. Click **Maintain** &gt; **Apply updates** to apply the package.
-7. Select the type of package to apply.
-8. Select the package to apply in your production environment, and then click **Schedule** to submit a request to apply it.
-
+1.After the update is successfully applied in a sandbox environment, navigate to the project's asset library. On the **Asset library** page, click the **Software deployable package** tab, select the package that you want to move to production, and click **Release candidate**. This indicates that this package is ready for production deployment. 
+2. Open the **Environment details** view for the production environment where you want to apply the package.
+3. Click **Maintain** &gt; **Apply updates** to apply the package.
+4. Select the type of package to apply. 
+5. Select the package to apply in your production environment, and then click **Schedule** to submit a request to apply it.
     > [!NOTE]
     > The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
-
-9. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
-10. Refresh the page. Two fields on the page indicate the status of the request.
-
-    - **Request status** – This field indicates the status of the request that you submitted to Microsoft.
-    - **Actionable by** – This field indicates who must take action.
-
-    ![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)
-    
-11. Microsoft either accepts or denies the request.
-
-    - If the request is accepted, Microsoft begins to update the environment.
-    
-    ![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)
-    
-    - If the request is denied, Microsoft informs the customer about the reason for denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request.
-    
-    ![Denied request: Request status = Request denied, Actionable by = Customer/Partner](./media/applypackage_prod_8-1024x322.png)
-
-    At any time, the customer can use the **Comments** field to post comments to the request.
-    
-    ![Example of comments that are posted to a request](./media/applypackage_prod_10-1024x336.png)
-    
-12. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of package application.
-
-    [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png)
-    
-    Additionally, a progress indicator shows the number of steps that have been run, out of the total number of steps that are available.
-    
-    ![Progress indicator](./media/applypackage_prod_12-1024x414.png)
-
-### Successful package application
-
-- After the deployment is successfully completed, the **Servicing status** field is set to **Completed**, but the **Request status** field is still set to **In progress** because the request hasn't yet been closed.
-
-    ![Successful deployment: Servicing status = Completed, Request status = In progress](./media/applypackage_prod_13-1024x392.png)
-    
+6. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
+7. At the scheduled downtime, package deployment will start.     
+8. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of package application. Additionally, a progress indicator shows the number of steps that have been run, out of the total number of steps that are available.
+9. After the deployment is successfully completed, the **Servicing status** field is set to **Completed**, but the **Request status** field is still set to **In progress** because the request hasn't yet been closed.    
 - After Microsoft has finished applying the request, you must close the request by clicking **Close servicing request**.
 - When you close a successful request, in the **Edit work item details** dialog box, set the **Service request status** field to **Succeeded**, and then click **Submit**.
-
-### Unsuccessful package application
-
-- If package application isn't successfully completed, Microsoft will investigate the issue. The **Servicing status** field will indicate that package application has failed.
-
-    ![Unsuccessful package deployment: Servicing status = Failed](./media/applypackage_prod_17.png)
-    
-- When deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request that includes the new package.
-
-    ![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)
-    
+10. If package application isn't successfully completed, Microsoft will investigate the issue. The **Servicing status** field will indicate that package application has failed.
+- When deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request that includes the new package.    
 - When you close a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
 ## Applying retail updates and extensions
