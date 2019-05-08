@@ -71,12 +71,20 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 You might receive the error message for several reasons:
 
 - The certificate thumbprint that you copied into the CloudEnvironment.Config and wif.config files includes invisible Unicode characters. To determine whether the thumbprint contains invisible Unicode characters, paste it into a Unicode code converter, and see whether extra characters appear in the HTML/XML field. For example, you can use the Unicode converter that is available at https://r12a.github.io/apps/conversion/
-- The certificate wasn't installed on the AOS machine. To verify that the certificate can be found on the AOS machine, run the following Windows PowerShell script.
-cd Cert:\LocalMachine\My
-Get-ChildItem | Where-Object { $_.Subject -like "CN=<name of your certificate>" }
-If the thumbprint doesn't appear in the Windows PowerShell console after you run the script, the certificate can't be found. To fix the issue, copy and install the .cer file that you created earlier in this topic to all AOS machines.
+
+  [![Unicode conversion](./media/troubleshoot-perf-sdk-01.jpg)](./media/troubleshoot-perf-sdk-01.jpg)
+  
+- The certificate wasn't installed on the AOS machine. To verify that the certificate can be found on the AOS machine, run the following Windows PowerShell script:
+
+      cd Cert:\LocalMachine\My
+      Get-ChildItem | Where-Object { $_.Subject -like "CN=<name of your certificate>" }
+
+  If the thumbprint doesn't appear in the Windows PowerShell console after you run the script, the certificate can't be found. To fix the issue, copy and install the .cer file that you created earlier in this topic to all AOS machines.
+  
 - If this issue occurs when you run load tests, the setup scripts might not have installed the corresponding .pfx file correctly. Verify that the password that is specified in the CloudCtuFakeACSInstall.cmd file matches the password that was set when the certificate was created.
- 
+  
+  [![Cmd file password match verification](./media/troubleshoot-perf-sdk-02.jpg)](./media/troubleshoot-perf-sdk-02.jpg)
+  
 ## No endpoint is listening
 This issue can occur when you run single-user or multiuser tests, or when you create users by using MS.Dynamics.Performance.CreateUsers.exe.
 
@@ -88,8 +96,8 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 This issue occurs when the host that is specified in the CloudEnvironment.Config file can't be accessed from the machine that is trying to run the tests or create users.
 In the CloudEnvironment.Config file, review the values that are specified by the following keys:
 
-- <ExecutionConfigurations Key="HostName" Value="<web address of host>" />
-- <ExecutionConfigurations Key="SoapHostName" Value="<web address of SOAP>" />
+- \<ExecutionConfigurations Key="HostName" Value="<web address of host>" />
+- \<ExecutionConfigurations Key="SoapHostName" Value="<web address of SOAP>" />
 
 The web addresses that are specified by these keys must be the environment that you're testing. In a web browser on your developer machine, make sure that you can open the web address that is specified by the HostName key.
 For online load tests, the environment that is specified by the HostName key in the CloudEnvironment.Config file must be publicly accessible from any machine. Therefore, if you must test a one-box environment, you won't be able to run the load test by using Visual Studio Online, because the endpoint won't be accessible outside the one-box environment.
@@ -104,6 +112,9 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 Two scenarios can cause this error:
 
 - The user who is specified as SelfMintingAdminUser in the CloudEnvironment.config file must have the System Administrator role. This issue occurs when the System Administrator role isn't assigned to the user who is specified as SelfMintingAdminUser. To verify that you've specified the correct user, you can sign into the endpoint and view the user's roles.
+
+ [![Admin form](./media/troubleshoot-perf-sdk-03.jpg)](./media/troubleshoot-perf-sdk-03.jpg)
+ 
 - The user who is specified as SelfMintingAdminUser in the CloudEnvironment.config file has a Provider other than "<https://sts.windows-ppe.net/>" or "<https://sts.windows.net/>". Sometimes, a company-specific domain is included in the Provider field for the admin user. 
 
 To work around this issue, in Finance and Operations, create a user who has any name and email address. Assign the System Administrator role to the new user. You don't have to link the user to a real Azure Active Directory user. Specify this new admin user as SelfMintingAdminUser in the CloudEnvironment.config file.
@@ -120,12 +131,16 @@ Two known scenarios can cause this error:
   MS.Dynamics.Performance.CreateUsers.exe
 
   If the CreateUsers script is run without any arguments, the email addresses of test users that are created won't be correctly formatted. If these users are used to run the tests, the tests will generate the forbidden request error. You can verify that this scenario is causing the error by viewing the users in Microsoft Dynamics 365 for Finance and Operations. The incorrect email addresses of the test users will resemble the email addresses in the following illustration.
+  
+  [![List of incorrect user email addresses](./media/troubleshoot-perf-sdk-04.jpg)](./media/troubleshoot-perf-sdk-04.jpg)
 
   To resolve the issue, delete the test users who have incorrectly formatted email addresses. Rerun the CreateUsers script and specify the user count and company as shown here.
 
   MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
 
 - The number of users that you specify in the UserCount field in the CloudEnvironment.Config file exceeds the number of test users that you created by running MS.Dynamics.Performance.CreateUsers.exe. Make sure that you created at least as many test users as you request in the CloudEnvironment.Config file.
+
+ [![CloudEnvironment.Config file](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
  
 ## At least one security token in the message could not be validated
 This issue can occur when you run multiuser tests, or when you create users by using MS.Dynamics.Performance.CreateUsers.exe. It tends to occur when the AOS machine differs from the developer machine.
@@ -162,6 +177,8 @@ System.TypeInitializationException: System.TypeInitializationException: The type
 This issue occurs when the CloudEnvironment.Config file isn't present when the tests are run. The issue typically occurs when you run load tests and the CloudEnvironment.Config file wasn't added as a deployment item. Verify whether the CloudEnvironment.Config file is in the Out folder for the test run:
 <solution path>\TestResults\<your test run>\Out
 If the file is missing, add it to the deployment items in the test settings.
+ 
+ [![Deployment items on the Test Settings page](./media/troubleshoot-perf-sdk-06.jpg)](./media/troubleshoot-perf-sdk-06.jpg)
  
 ## InteractiveClientId wasn't specified in the settings
 ### Error example
@@ -210,8 +227,11 @@ The file K:\ perfSDK\PerfSDKLocalDirectory \SampleProject\TestResults\Admin50120
 
 ### Solution
 Copy Common\External\Selenium folder under <Your_PerfSDK_Folder> to <Your_PerfSDK_Folder>\SampleProject\ PerfSDKSample\bin\Debug folder
-Failed finding the certificate for minting tokens by thumbprint: <your certificate thumbprint>
-Error example
+
+## Failed finding the certificate for minting tokens by thumbprint: <your certificate thumbprint>
+### Error example
+ 
+ [![Error message and error stack trace](./media/troubleshoot-perf-sdk-07.jpg)](./media/troubleshoot-perf-sdk-07.jpg)
  
 ### Resolution
 Make sure you install the generated certificate in each AOS of your sandbox environment
@@ -220,7 +240,8 @@ Make sure you install the generated certificate in each AOS of your sandbox envi
 This issue only affects multi-user tests.
 
 ### Error example
- 
+
+[![Error message details](./media/troubleshoot-perf-sdk-08.jpg)](./media/troubleshoot-perf-sdk-08.jpg)
 
 ### Resolution
 When connect to Azure DevOps, please use the old URI formatting (<Azure_DevOps_Account>.visualstudio.com) instead of dev.azure.com/<Azure_DevOps_Account>. Also, brows to Azure DevOps with old URI and click on “Open in Visual Studio” from there.
@@ -228,7 +249,11 @@ When connect to Azure DevOps, please use the old URI formatting (<Azure_DevOps_A
 ## Could not load file or assembly 'aoskernel.dll' or one of its dependencies
 This error only affects multi-user tests.
 
+[![Error message, error stack trace, and debug trace](./media/troubleshoot-perf-sdk-09.jpg)](./media/troubleshoot-perf-sdk-09.jpg)
+
 ### Error example
+ 
+ [![Unicode conversion](./media/troubleshoot-perf-sdk-09.jpg)](./media/troubleshoot-perf-sdk-09.jpg)
  
 ### Resolution
 Make use you’re using ODBC Driver 17 in an environment with PU20 or above
@@ -243,6 +268,9 @@ Replace all “MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Aad
 ## Multiple warning message before and after multi-user testing with Azure DevOps
 ### Error example
  
+ [![Sample load test status](./media/troubleshoot-perf-sdk-10.jpg)](./media/troubleshoot-perf-sdk-10.jpg)
+ 
+ [![Sample load test output](./media/troubleshoot-perf-sdk-11.jpg)](./media/troubleshoot-perf-sdk-11.jpg)
  
 ### Resolution
 No impact just ignore them.
