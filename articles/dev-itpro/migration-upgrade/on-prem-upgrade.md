@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations from version 7.x to 8.1.  
 
-## On-premises upgrade from version 7.x (with Platform update 12-20) to 8.1
+## On-premises upgrade from version 7.x (with Platform update 8-20) to 8.1
 
 > [!NOTE]
 > Be aware that this upgrade process takes time to complete and Finance and Operations will be inaccessible for the entire duration of the data upgrade.
