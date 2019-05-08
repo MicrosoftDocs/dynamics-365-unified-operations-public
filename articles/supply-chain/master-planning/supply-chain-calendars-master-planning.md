@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Supply chain calendars and how they affect master planning
+# Using calendars with Master Planning
 
 [!include [banner](../includes/banner.md)]
 
