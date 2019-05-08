@@ -1272,6 +1272,8 @@
           href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
         - name: Set up a derived financial hierarchy in the public sector
           href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
+        - name: Set up interest distribution for cash accounts
+          href: ../financials/public-sector/interest-distribution.md
       - name: Procurement and sourcing in the public sector
         href: ../financials/public-sector/procurement-sourcing-public-sector.md
       - name: Security roles in the public sector
