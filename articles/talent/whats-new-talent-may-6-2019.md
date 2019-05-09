@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (May 6, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 5/6/2019
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (May 6, 2019)"
+# What's new or changed in Dynamics 365 for Talent (May 6, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -39,13 +39,15 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 ### Select optional documents upon offer creation
 
-Upon offer package template selection, offer creator will be prompted to select the applicable optional documents from that package template. Offer creators will be able to add other optional documents while the offer preparation is in progress. 
+When you select an offer package template, Attract now prompts you to select the applicable, optional documents from that package template. You can add other optional documents while preparing the offer.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2282.
+
+Changes described in this section apply to build number 8.1.2282. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Platform update PU26
 
@@ -53,32 +55,32 @@ For additional details about Platform update 26, see [Preview features in Dynami
 
 ### Common Data Service entity support for custom fields
 
-In this week's release, the following entities now support custom fields: Benefit calc frequency, Benefit calc rate, Benefit type, Work calendar, Work calendar holiday, Pay cycle and Worker identification types.
+In this week's release, the following entities now support custom fields: Benefit calc frequency, Benefit calc rate, Benefit type, Work calendar, Work calendar holiday, Pay cycle, and Worker identification types.
 
 ### Leave mass enrollment, changing the tier basis to "Seniority date" doesn't refresh the initial accrual rate (318526)
 
-In this release, when you mass enrolling employees and you change the tier bases on the form, the initial accrual will now reflect the tier bases that was selected.  
+When you mass enroll employees and change the tier basis on the form, the initial accrual now reflects the tier basis you selected.  
 
 ### Workflow showing duplicate place holders (313636)
 
-Changes have been made in this release to eliminate any duplication of placeholders when workflow notifications are sent.
+Changes in this release eliminate duplication of placeholders when workflow notifications are sent.
 
-### Dimension fields are not updated when using "Open in Excel" (176261)
+### Dimension fields aren't updated when using "Open in Excel" (176261)
 
-With this releases, you can now update financial dimension using “Open in Excel” option from the Worker form. 
+With this releases, you can now update financial dimension using **Open in Excel** from the **Worker** form. 
 
-### Worker Address created in CDS is not synced to Talent (317555)
+### Worker address created in Common Data Service isn't synced to Talent (317555)
 
-With this change, addresses created in CDS will be updated in Talent Core HR.
+With this change, addresses created in Common Data Service are updated in Talent Core HR.
 
 
 ## In preview
 
-### New page to validate Position Hierarchy data
+### New page to validate position hierarchy data
 
-HR and administrators can now validate the managerial hierarchy for any circular references that may have inadvertently been imported. This new page can be accessed form Organizational administration>Links>Positions>Position hierarchy validation.
+HR and administrators can now validate the managerial hierarchy for any circular references that might have inadvertently been imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
 
-### Allow reason codes to be specified on leave types
+### Specify reason codes on leave types
 
 Organizations might require additional information about time-off requests. You can now specify reason codes for leave types and let employees select a reason code on their time-off requests.
 
@@ -94,4 +96,4 @@ The ability to track employee time off and understand how time off is calculated
 
 ### Indicate instance type when provisioning Talent
 
-When provisioning a new instance of Talent, you will be able to indicate if the instance type is Production or Sandbox, allowing for early testing of new features.   All existing Talent instances will be updated to the type of Production. If you would like one of your existing instances to be updated to Sandbox please contact CSS and they will initiate the change request.
+When provisioning a new instance of Talent, you will be able to indicate whether the instance type is **Production** or **Sandbox**, allowing for early testing of new features. All existing Talent instances will be updated to the Production instance type. If you want one of your existing instances to be updated to the Sandbox instance type, please contact CSS and they will initiate the change request.
