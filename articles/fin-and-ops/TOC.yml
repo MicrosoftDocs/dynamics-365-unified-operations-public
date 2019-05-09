@@ -134,7 +134,7 @@
       - name: Accessibility features
         href: get-started/accessibility-features.md
       - name: Feature management overview
-        href: /get-started/feature-management/feature-management-overview.md
+        href: get-started/feature-management/feature-management-overview.md
       - name: Client FAQ
         href: get-started/client-faq.md
       - name: Action search
