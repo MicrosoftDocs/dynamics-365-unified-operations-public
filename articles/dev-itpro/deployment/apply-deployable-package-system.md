@@ -39,10 +39,7 @@ This topic describes how you can use Microsoft Dynamics Lifecycle Services to au
 > Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
-
-The following topologies support package deployment that uses automated flows in LCS:
-- **LCS Implementation Project** – All environment types are supported. Automated package application is a self-service operation in all environments except production environments. For production environments, customers must use LCS to submit a request to apply packages.
-- **LCS Partner and Trial Projects** – All environment types are supported, except multi-box dev/test topologies.
+All environments deployed through LCS are supported. 
 
 > [!NOTE]
 > Regardless of the project type, if you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
