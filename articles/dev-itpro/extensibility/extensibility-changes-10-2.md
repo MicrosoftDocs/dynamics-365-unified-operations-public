@@ -31,12 +31,12 @@ ms.dyn365.ops.version: App 10.0
 
 ---
 
-# Extensibility changes in Dynamics 365 for Finance and Operations version 10.0
+# Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
 
-This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 10.0. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 10.0.2. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Enumerations made extensible
 
