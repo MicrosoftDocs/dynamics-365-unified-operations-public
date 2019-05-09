@@ -84,7 +84,7 @@ These metadata changes have been made in this update.
 
 These methods have been refactored to support extensibility.
 
-| Operations |
+| Refactored methods |
 |---|
 | AssetProposalDepreciation.run |
 | BankStatementValidate.validateDate |
