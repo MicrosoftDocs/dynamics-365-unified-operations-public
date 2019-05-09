@@ -47,7 +47,7 @@ It will be no longer required to schedule the business event processing batch jo
 For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
 
 ## Cancel a running batch job
-It can take a long time to cancel a batch job if the job has tasks that are currently executing. The abort option provides a system administrator or batch job manager with the ability to cancel already executing tasks for jobs if the jobs are canceled. This provides a much faster mechanism to cancel a long running job that might impact system usage in other places.
+It can take a long time to cancel a batch job if the job has tasks that are currently executing. The abort option provides a system administrator or batch job manager with the ability to cancel already executing tasks for jobs if the jobs are canceled. This provides a much faster mechanism to cancel a long running job that might impact system usage in other places. For more information, see [Abort an executing batch job](../../dev-itpro/sysadmin/batch-abort.md)
 
 ## Extensibility enhancements
 The [fourth wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) included in Platform update 27 is documented in the April 2019 release notes. There are two enhancements detailed, with the highlight being that View extensions can now change label and help text values.
