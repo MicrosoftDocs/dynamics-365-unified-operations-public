@@ -74,7 +74,7 @@ These metadata changes have been made in this update.
 
 These methods have been refactored to support extensibility.
 
-| Operations |
+| Refactored methods |
 |---|
 | /Forms/ProjJournalTable/datasource/ProjJournalTable.initValue |
 | /Forms/PurchReqTable.instantiatePurchReqTableForm |
