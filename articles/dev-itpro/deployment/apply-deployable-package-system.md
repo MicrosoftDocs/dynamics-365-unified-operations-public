@@ -33,18 +33,19 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Microsoft Dynamics Lifecycle Services to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations environment or a Microsoft Dynamics 365 for Retail environment. Updates are applied using deployable packages.
+This topic describes how you can use Microsoft Dynamics Lifecycle Services to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations environment or a Microsoft Dynamics 365 for Retail environment. 
+
 
 > [!IMPORTANT]
-> Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
+> Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
-All environments deployed through LCS are supported. 
+All environments deployed through Lifecycle Services are supported. 
 
 > [!NOTE]
-> Regardless of the project type, if you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
+> If you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
 
-For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install deployable packages from the command line](install-deployable-package.md).
+For other environments (listed below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install deployable packages from the command line](install-deployable-package.md).
 
 - Local development environments (Downloadable virtual hard disk [VHD])
 - Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
@@ -87,12 +88,11 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
-1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
-    For an application (AOT) deployable package that results from an X++ hotfix, or from application customizations and extensions, create the deployable package in your development or build environment, and then upload it to the Asset library.
-2. Open the **Environment details** view for the environment where you want to apply the package.
+1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md). For an application (AOT) deployable package that results from an X++ hotfix, or from application customizations and extensions, create the deployable package in your development or build environment, and then upload it to the Asset library.
+2. Open the **Environment details** view for the environment where you want to apply the update.
 3. Click **Maintain** &gt; **Apply updates** to apply an update.
 4. Select the package to apply. Use the filter at the top to find your package.
-5. Click **Apply**. Notice that the status in the upper-right corner of the **Environment details** view changes from **Queued** to **In Progress**, and that an **Environment updates** section now shows the progress of the package. You can refresh the page to check the status. 
+5. Click **Apply**. Notice that the status in the upper-right corner of the **Environment details** view changes from **Queued** to **In Progress**, and an **Environment updates** section now shows the progress of the package. You can refresh the page to check the status. 
 6. Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**.     
 
 ## Apply a package to a production environment by using LCS
