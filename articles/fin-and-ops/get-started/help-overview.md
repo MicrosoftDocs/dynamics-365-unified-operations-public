@@ -96,8 +96,6 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 1. Click **Feedback** to get to the comments at the bottom of the page, and then click either **Product feedback**, or **Sign in to give documentation feedback**.
 
-    ![Feedback](./media/comments.png)
-
 2. Start typing your comments, and then click **Submit feedback**.
 
     ![Post comment](./media/feedback.png)
