@@ -55,7 +55,7 @@ The [fourth wave of platform extensibility enhancements](https://docs.microsoft.
 ## Additional resources
 
 ### Platform update 27 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 27, sign in to Lifecycle Services (LCS) and view this [KB article](https://lcs.dynamics.com/).
+For information about the bug fixes included in each of the updates that are part of Platform update 27, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=320391&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
