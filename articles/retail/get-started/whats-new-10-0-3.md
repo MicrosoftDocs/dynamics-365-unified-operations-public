@@ -40,13 +40,13 @@ To learn about the features in Microsoft Dynamics 365 for Finance and Operations
 
 ## New calculation logic for autocharges in call center for mixed delivery mode sales lines
 
-This feature improves the existing autocharges functionality and support scenarios where retailers would like to apply different charges to sales lines based on mixed carts where different modes of delivery are being applied on different lines.
+This feature improves the existing autocharges functionality and support scenarios where retailers can apply different charges to sales lines based on mixed carts where different modes of delivery are being applied on different lines.
 
-This new feature adds additional capabilities to the new POS features for autocharges by allowing a more realistic calculation of charges based on the individual sales line characteristics.
+This feature adds additional capabilities to the new POS features for autocharges by allowing a more realistic calculation of charges based on the individual sales line characteristics.
 
-## HQ Extensions 
+## HQ extensions 
 
-This release adds many extension points in our product so that it can be better customized by the customer. The extension points below have been added in this release to support custom extension scenarios.
+This release adds numerous extension points so that it’s easier to customize Dynamics 365 for Retail. The following extension points have been added to support custom extension scenarios.
 
   - Retail headquarters: Refactored methods to support extensibility. These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
  
