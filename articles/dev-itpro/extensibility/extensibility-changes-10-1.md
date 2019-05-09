@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0
+title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.1
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations version 10.0.
 author: FrankDahl
 manager: AnnBe
