@@ -44,8 +44,8 @@ These enumerations have been made extensible in this update.
 
 | Enumeration |
 |---|
-| LedgerJournalWFApprovalModule. |
-| RetailReceiptTransaction. |
+| LedgerJournalWFApprovalModule |
+| RetailReceiptTransaction |
 
 
 ## SQL operations made extensible
