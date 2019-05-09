@@ -105,7 +105,7 @@ In a production environment, customers can schedule a downtime for when they wan
 > [!IMPORTANT]
 > An important pre-requisite for applying a package to a production environment is that the package must be successfully applied to atleast one sandbox environmnet in the same project. 
 
-1.After the update is successfully applied in a sandbox environment, navigate to the project's asset library. On the **Asset library** page, click the **Software deployable package** tab, select the package that you want to move to production, and click **Release candidate**. This indicates that this package is ready for production deployment. 
+1. After the update is successfully applied in a sandbox environment, navigate to the project's asset library. On the **Asset library** page, click the **Software deployable package** tab, select the package that you want to move to production, and click **Release candidate**. This indicates that this package is ready for production deployment. 
 2. Open the **Environment details** view for the production environment where you want to apply the package.
 3. Click **Maintain** &gt; **Apply updates** to apply the package.
 4. Select the type of package to apply. 
@@ -116,11 +116,11 @@ In a production environment, customers can schedule a downtime for when they wan
 7. At the scheduled downtime, package deployment will start.     
 8. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of package application. Additionally, a progress indicator shows the number of steps that have been run, out of the total number of steps that are available.
 9. After the deployment is successfully completed, the **Servicing status** field is set to **Completed**, but the **Request status** field is still set to **In progress** because the request hasn't yet been closed.    
-- After Microsoft has finished applying the request, you must close the request by clicking **Close servicing request**.
-- When you close a successful request, in the **Edit work item details** dialog box, set the **Service request status** field to **Succeeded**, and then click **Submit**.
+    - After Microsoft has finished applying the request, you must close the request by clicking **Close servicing request**.
+    - When you close a successful request, in the **Edit work item details** dialog box, set the **Service request status** field to           **Succeeded**, and then click **Submit**.
 10. If package application isn't successfully completed, Microsoft will investigate the issue. The **Servicing status** field will indicate that package application has failed.
-- When deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request that includes the new package.    
-- When you close a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
+    - When deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the         customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the             customer must submit a new request that includes the new package.    
+    - When you close a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to               **Aborted**.
 
 ## Applying retail updates and extensions
 
