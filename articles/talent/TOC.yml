@@ -7,6 +7,8 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: May 6, 2019
+        href: whats-new-talent-may-6-2019.md
       - name: April 30, 2019
         href: whats-new-talent-april-30-2019.md
       - name: April 25, 2019
@@ -25,14 +27,14 @@
         href: whats-new-talent-march-14.md     
       - name: March 5, 2019     
         href: whats-new-talent-march-5.md
-      - name: February 27, 2019     
-        href: whats-new-talent-feb-27.md      
-      - name: February 14, 2019     
-        href: whats-new-talent-feb14.md
-      - name: February 7, 2019     
-        href: whats-new-talent-february-7.md
       - name: What's new archives 2019
         items: 
+        - name: February 27, 2019     
+          href: whats-new-talent-feb-27.md      
+        - name: February 14, 2019     
+          href: whats-new-talent-feb14.md
+        - name: February 7, 2019     
+          href: whats-new-talent-february-7.md
         - name: January 31, 2019      
           href: whats-new-talent-january-29.md
         - name: January 23, 2019      
