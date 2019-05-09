@@ -42,7 +42,6 @@ This is a list of extensibility features that were implemented in Dynamics 365 f
 
 These enumerations have been made extensible in this update.
 
-## Enumerations made extensible
 | Enumeration |
 |---|
 | MarkupModuleType |
