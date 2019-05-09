@@ -31,7 +31,7 @@ ms.dyn365.ops.version: App 10.0
 
 ---
 
-# Extensibility changes in Dynamics 365 for Finance and Operations version 10.0
+# Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
