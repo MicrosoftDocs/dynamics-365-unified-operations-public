@@ -52,7 +52,7 @@ Before you begin, you must have one of the following types of access, depending 
     - Electronic reporting functional consultant
     - System administrator
 
-You must also complete the [Create a configuration provider and mark it as active](/tasks/er-configuration-provider-mark-it-active-2016-11.md)
+You must also complete the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 procedure.
 
 Finally, you must download the following files from [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
@@ -308,5 +308,5 @@ The follow illustration shows an example of another page of the report that is g
 
 ## Additional resources
 
-- [ER Design a configuration for generating reports in OPENXML format](/tasks/er-design-reports-openxml-2016-11.md)
-- [Design ER configurations to generate reports in Microsoft WORD format](/tasks/er-design-configuration-word-2016-11.md)
+- [ER Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md)
+- [Design ER configurations to generate reports in Microsoft WORD format](tasks/er-design-configuration-word-2016-11.md)
