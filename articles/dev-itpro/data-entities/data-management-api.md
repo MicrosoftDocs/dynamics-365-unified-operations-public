@@ -3,9 +3,8 @@
 
 title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
-
 author: Sunil-Garg
-ms.date: 04/23/2019
+ms.date: 05/09/2019
 manager: AnnBe
 ms.topic: article
 ms.prod: 
@@ -48,7 +47,7 @@ Two APIs in Finance and Operations support file-based integration scenarios: the
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
 | Service type        | Custom service | Open Data Protocol (OData) action |
-| Availability        | Microsoft Dynamics AX 7.0 (February 2016) (RTW) and later | Microsoft Dynamics 365 for Operations with platform update 5 (March 2017) and later |
+| Availability        | Microsoft Dynamics Finance and Operations (February 2016) and later. Note: This is not supported with the on-premises version of Dynamics 365 for Finance and Operations. | Microsoft Dynamics 365 for Finance and Operations with platform update 5 (March 2017) and later |
 
 If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the Data management framework's package API.
 
