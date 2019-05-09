@@ -49,7 +49,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 Changes described in this section apply to build number 8.1.2282. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-### Platform update PU26
+### Platform update 26
 
 For additional details about Platform update 26, see [Preview features in Dynamics 365 for Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
@@ -59,7 +59,7 @@ In this week's release, the following entities now support custom fields: Benefi
 
 ### Leave mass enrollment, changing the tier basis to "Seniority date" doesn't refresh the initial accrual rate (318526)
 
-When you mass enroll employees and change the tier basis on the form, the initial accrual now reflects the tier basis you selected.  
+When you mass enroll employees and change the tier basis, the initial accrual now reflects the tier basis that you selected.
 
 ### Workflow showing duplicate place holders (313636)
 
@@ -67,7 +67,7 @@ Changes in this release eliminate duplication of placeholders when workflow noti
 
 ### Dimension fields aren't updated when using "Open in Excel" (176261)
 
-With this releases, you can now update financial dimension using **Open in Excel** from the **Worker** form. 
+With this release, you can now update financial dimension using **Open in Excel** from the **Worker** page. 
 
 ### Worker address created in Common Data Service isn't synced to Talent (317555)
 
@@ -78,7 +78,7 @@ With this change, addresses created in Common Data Service are updated in Talent
 
 ### New page to validate position hierarchy data
 
-HR and administrators can now validate the managerial hierarchy for any circular references that might have inadvertently been imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
+Human resources (HR) and administrators can now validate the managerial hierarchy for any circular references that might have inadvertently been imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
 
 ### Specify reason codes on leave types
 
@@ -90,10 +90,10 @@ Organizations might require reason codes for specific leave types when employees
 
 ### Provide a leave and absence transaction list for HR
 
-The ability to track employee time off and understand how time off is calculated not only helps Human resources (HR) answer employee questions, but also helps guarantee accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind balances.
+The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind balances.
 
 ## Coming soon
 
 ### Indicate instance type when provisioning Talent
 
-When provisioning a new instance of Talent, you will be able to indicate whether the instance type is **Production** or **Sandbox**, allowing for early testing of new features. All existing Talent instances will be updated to the Production instance type. If you want one of your existing instances to be updated to the Sandbox instance type, please contact CSS and they will initiate the change request.
+When provisioning a new instance of Talent, you will be able to indicate whether the instance type is **Production** or **Sandbox**, allowing for early testing of new features. All existing Talent instances will be updated to the Production instance type. If you want one of your existing instances to be updated to the Sandbox instance type, please contact Support to initiate the change request.
