@@ -63,7 +63,7 @@ For more information, see [Expense reports re-imagined](https://go.microsoft.com
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.3, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/).
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.3, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34).
 
 ### Platform update 27
 Microsoft Dynamics 365 for Finance and Operations version 10.0.3 includes Platform update 27. To learn more about Platform update 27, see [Preview features in Finance and Operations platform update 27 (June 2019)](whats-new-platform-update-27.md).
