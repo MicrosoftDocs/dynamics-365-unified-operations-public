@@ -114,6 +114,10 @@ In a production environment, customers can schedule a downtime for when they wan
 8. After the deployment is successfully completed, the **Servicing status** field is set to **Completed**.
 9. If package application isn't successfully completed, Microsoft will investigate the issue. The **Servicing status** field will indicate that package application has failed. The environment will be rolled back to a good state. 
 
+## Troubleshoot package deployment failures
+
+If package deployment fails, see the [Troubleshoot package application issues](deployable-package-troubleshooting.md) topic.
+
 ## Applying retail updates and extensions
 
 If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have enabled reduced downtime updates for Retail channel components in the cloud, you will also need to update Retail channel components. For more information, see [Apply updates and extensions to cloud hosted retail channel components](Update-retail-channel.md).
