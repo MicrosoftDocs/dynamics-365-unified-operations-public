@@ -44,8 +44,8 @@ This topic explains how to create custom localized error messages for payment te
 ## Overview
 The remaining sections in this topic describe the following steps for creating custom localized error messages for payment terminal extensions:
 
-- **[Create custom error messages](#Create-custom-error-messages)** – This section explains how to create custom error messages in the payment connector that can be returned and shown in the POS.
-- **[Create localized error messages](#Create-localized-error-messages)** – This section explains how to localize the error messages in the payment connector that are returned and shown in the POS.
+- **[Create custom error messages](#create-custom-error-messages)** – This section explains how to create custom error messages in the payment connector that can be returned and shown in the POS.
+- **[Create localized error messages](#create-localized-error-messages)** – This section explains how to localize the error messages in the payment connector that are returned and shown in the POS.
 
 ## Create custom error messages
 To trigger a custom error message in the POS, you must set the appropriate error in the **Errors** property of the **paymentInfo** object that is passed to the **AuthorizePaymentTerminalDeviceResponse** object. Specifically, you must set the **isLocalized** parameter on the constructor of the **PaymentError** object to **true** to force the POS to use the custom error message instead of the built-in error message for a declined payment.
