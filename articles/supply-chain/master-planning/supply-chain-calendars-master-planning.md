@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Supply chain calendars and how they affect master planning
+title: Calendars and master planning
 description: This topic provides an overview of supply chain calendars and how they affect master planning.
 author: t-benebo
 manager: AnnBe
-ms.date: 01/15/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Supply chain calendars and how they affect master planning
+# Calendars and master planning
 
 [!include [banner](../includes/banner.md)]
 

@@ -180,7 +180,7 @@
         href: dev-ref/formdataobject-classes.md
       - name: F classes (FormFastTabSummarySeparator to FormGridControl)
         href: dev-ref/formfasttabsummaryseparator-classes.md
-      - name: F classes (FormGroupControl to FormIntControl
+      - name: F classes (FormGroupControl to FormIntControl)
         href: dev-ref/formgroupcontrol-classes.md
       - name: F classes (FormListBoxControl to FormNotifyEventArgs)
         href: dev-ref/formlistboxcontrol-classes.md
@@ -369,7 +369,7 @@
       href: perf-test/testing-validation.md
     - name: Test projects in Visual Studio
       href: perf-test/testing-support.md
-    - name: Deploy topologies supporting continuous build and test automation
+    - name: Deploy environments supporting continuous build and test automation
       href: perf-test/continuous-build-test-automation.md
     - name: SysTest filtering using class and method attributes
       href: perf-test/systest-filtering.md
