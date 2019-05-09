@@ -151,6 +151,16 @@ Before you synchronize sales orders, it's important that you update the followin
 
 - Go to **Sales and marketing** &gt; **Periodic tasks** &gt; **Calculate sales totals**, and set the job to run as a batch job. Set the **Calculate totals for sales orders** option to **Yes**. This step is important, because only sales orders where sales totals are calculated will be synchronized to Sales. The frequency of the batch job should be aligned with the frequency of sales order synchronization.
 
+If you also use Work order integration it requires that you set up the sales origin. The sales origin is used to distinguish sales orders in Finance and Operations that were created from work orders in Field Service. When a sales order has a sales origin of the **Work order integration** type, the **External work order status** field appears on the sales order header. Additionally, the sales origin helps guarantee that sales orders that were created from work orders in Field Service are filtered out during sales order synchronization from Finance and Operations to Field Service.
+
+1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Sales origin**.
+2. Select **New** to create a new sales origin.
+3. In the **Sales origin** field, enter a name for the sales origin, such as **SalesOrder**.
+4. In the **Description** field, enter a description, such as **Sales Order from Sales**.
+5. Select the **Origin type assignment** check box.
+6. Set the **Sales origin type** field to **Sales order integration**.
+7. Select **Save**.
+
 ### Setup in the Sales Orders (Sales to Fin and Ops) - Direct Data integration project
 
 - Make sure that the required mapping exists for **Shipto\_country** to **DeliveryAddressCountryRegionISOCode**. You can make blank a default value in the value map to avoid having to type country for national orders. Set the left side to 'Blank', and set the right side to the desired country or region.
