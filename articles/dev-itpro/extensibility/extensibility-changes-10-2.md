@@ -188,7 +188,7 @@ These methods have been refactored to support extensibility.
 | SalesInvoiceJournalPostBase.run |
 | SalesLine.CheckItemId |
 | Table\InventTable.purchPriceAgreement |
-| Tables\TaxWithholdTrans.copyTaxWithholdTrans, initFromTaxWithholdTable, insert, validateWrite,  |amountTotalWHT, existPeriod_TH
+| Tables\TaxWithholdTrans.copyTaxWithholdTrans, initFromTaxWithholdTable, insert, validateWrite, amountTotalWHT, existPeriod_TH |
 | TAMVendRebatePaymentPost.main |
 | TAMVendRebateTableProcess.runProcess |
 | TrvPostExpenseHeader.postCustVendTransactions |
