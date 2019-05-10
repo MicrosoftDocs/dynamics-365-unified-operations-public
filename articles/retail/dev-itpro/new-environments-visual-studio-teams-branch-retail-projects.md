@@ -71,8 +71,7 @@ The following table shows the advantages and disadvantages of each hosting model
 <p>Telemetry data is collected and is available on the LCS diagnostics page.</p>
 </td>
 <td>Users can't perform administrative actions.
-<p>Users can't install any tools or certificates.
-<b>What certificates might they need?</b></p>
+<p>Users can't install any tools or certificates.</p>
 </td>
 </tr>
 <tr>
