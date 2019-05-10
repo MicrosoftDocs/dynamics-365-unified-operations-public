@@ -67,7 +67,7 @@ For information about the regulatory updates for Finance and Operations, see [Lo
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.2](../../dev-itpro/extensibility/extensibility-changes-10-2.md).
+In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.2](../../dev-itpro/extensibility/extensibility-changes-10-2.md).
 
 ## Additional resources
 
