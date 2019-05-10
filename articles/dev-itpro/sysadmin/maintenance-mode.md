@@ -52,7 +52,7 @@ You can now turn maintenance mode on and off directly through Lifecycle Services
 
 Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You also have the option to **download the logs** to troubleshoot why the operation failed.
 
-## Turn maintenance mode on and off in DevTest/Demo environments hosted in Microsofts' subscription
+## Turn maintenance mode on and off in DevTest/Demo environments hosted in a Microsoft subscription
 1. Establish an RDP connection to the developer machine.
 2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from LCS. Then switch to the AXDB database, and run the following command.
       update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
