@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Microsoft Dynamics Lifecycle Services to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations environment or a Microsoft Dynamics 365 for Retail environment. 
+This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations environment or a Microsoft Dynamics 365 for Retail environment. 
 
 
 > [!IMPORTANT]
@@ -100,7 +100,7 @@ Before you begin, verify that the deployable package has been uploaded to the As
 In a production environment, customers can schedule a downtime for when they want the update to be applied.  
 
 > [!IMPORTANT]
-> An important pre-requisite for applying a package to a production environment is that the package must be successfully applied to atleast one sandbox environmnet in the same project. 
+> An important pre-requisite for applying a package to a production environment is that the package must be successfully applied to at least one sandbox environmnet in the same project. 
 
 1. After the update is successfully applied in a sandbox environment, navigate to the project's asset library. On the **Asset library** page, click the **Software deployable package** tab, select the package that you want to move to production, and click **Release candidate**. This indicates that this package is ready for production deployment. 
 2. Open the **Environment details** view for the production environment where you want to apply the package.
