@@ -5,7 +5,7 @@ title: Configuration keys and data entities
 description: This topic describes the relationship between configuration keys and data entities in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/01/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -92,7 +92,7 @@ Using the configuration key metadata built during entity refresh list, run time 
 - When the user loads a template into a data project
 - When an existing data project is loaded
 - When a template is loaded into a data project
-- Before the export/import job is executed (batch, non-batch, recurring, Odata)
+- Before the export/import job is executed (batch, non-batch, recurring, OData)
 - When the user generates mapping
 - When the user maps fields in the mapping UI
 - When the user adds only 'importable fields'
