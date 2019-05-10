@@ -94,7 +94,7 @@ These methods have been refactored to support extensibility.
 | Form\EcoResProductCreate.updateCallers |
 | Form\InventOnhandReserve\DataSource\InventSum.reserveNow |
 | Form\PdsRebateAgreement\DataSource\PdsRebateAgreement.executeQuery |
-| Form\ProcCategoryHierarchyManagement\FormDesign\CategoryTreeGroup\CategoryTreeCtrl.selection |Changing
+| Form\ProcCategoryHierarchyManagement\FormDesign\CategoryTreeGroup\CategoryTreeCtrl.selection |
 | Form\ReqSupplyDemandSchedule.updateDesign |
 | Form\SalesTable\DataSource\MCRSalesLineDropShipment\field\DropShipment.modified |
 | Form\SalesTable\DataSource\SalesTable.create |
@@ -133,9 +133,9 @@ These methods have been refactored to support extensibility.
 | SalesTable.updateMultiLineDisc |
 | SmaServiceFunctionLine_transfer.Run |
 | SmmOpportunityStatusUpdate.updateFromQuote |
-| Table\MCRCustpaymTable.salesTableByPassCreditLimit, displayOrderID, getCurrency and  |mcrCustPaym\getCustomerPostingProfile
+| Table\MCRCustpaymTable.salesTableByPassCreditLimit, displayOrderID, getCurrency and mcrCustPaym\getCustomerPostingProfile |
 | Table\ReqPO.findAnySalesLineForReqPO |
-| TaxUncommitted.createTaxUncommitted, local method  |createTaxUncommittedFromTmpTaxWorkTrans
+| TaxUncommitted.createTaxUncommitted, added local method createTaxUncommittedFromTmpTaxWorkTrans |
 | TmpTaxReport_IT.create |
 | TrvExpTrans.defaultTaxGroupFromWorker |
 | WHSBillOfLadingDP.insertWHSBillOfLadingTmp |
