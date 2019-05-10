@@ -65,6 +65,10 @@ This developer features enables you to efficiently write unit and component test
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
+## Extensibility enhancements
+
+In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.2](../../dev-itpro/extensibility/extensibility-changes-10-2.md).
+
 ## Additional resources
 
 ### Bug fixes
