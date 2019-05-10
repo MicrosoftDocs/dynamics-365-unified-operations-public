@@ -215,6 +215,5 @@ These methods have been refactored to support extensibility.
 | Retail channel: Expose Add Return line to cart from transaction API by line id. |
 | Retail channel: OrderFulfillmentView ability to view line item locations |
 | Retail channel: OrderFulfillmentView adding ICustomListColumn to allow for more information |
-| Retail statement posting method adds another aggregation by new table |
-| RetailTransactionAggregationFieldList for adding additional fields |
+| Retail statement posting method adds another aggregation by new table RetailTransactionAggregationFieldList for adding additional fields |
 
