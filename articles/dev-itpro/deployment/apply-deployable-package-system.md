@@ -64,15 +64,13 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 > [!NOTE] 
 > A binary package and a Retail deployable package can't be included in the same merged package.
 
-> [!NOTE]
 > For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 
-> [!NOTE] 
 > If your environment is on an Application version 8.1 and above then the **Platform Update package does not apply** to your environment. Starting with 8.1 and above release, Application and Platform binary update package is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft. Also note that you will no longer be applying granular X++ hotfixes and will get all application and platform updates together. This means that on the environment details page clicking on **View detailed version information** will not have details on the granular hotfixes or KBs applied as there is no way to apply them. 
 
 ## Prerequisite steps
 
-- **Make sure that the package that should be applied is valid.** When a package is uploaded to the Asset library, it isn't analyzed. If you select the package, the package status appears in the right pane as **Not Validated**. A package must pass validation before it can be applied in an environment by using the following procedures. The status of the package will be updated in the Asset library to indicate whether the package is valid. We require validation to help guarantee that production environments aren't affected by packages that don't meet the guidelines.
+- **Make sure that the package that should be applied is valid.** When a package is uploaded to the Asset library, it isn't analyzed. If you select the package, the package status appears in the right pane as **Not Validated**. A package must pass validation before it can be applied in an environment by using the following procedures. The status of the package will be updated in the Asset library to indicate whether the package is valid. We require validation to help ensure that production environments aren't affected by packages that don't meet the guidelines.
 
     There are three types of validations:
 
@@ -80,7 +78,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
     - Platform version checks
     - Types of packages
 
-- **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help guarantee that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
+- **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help ensure that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
 - **Make sure that the Application binary update package is applied to your dev/build environment before it is applied to your sandbox and production environment** - If the application binary package is applied directly to your Tier 2+ sandbox environment but is not applied on your dev/build environment, the next time you move an AOT package from dev/build box (which does not have the same application binaries as your sandbox environment) to sandbox, some of the application binaries will be overwritten with what is in your dev/build environment. This could result in a regression of the version of your sandbox environment. 
 
@@ -100,17 +98,17 @@ Before you begin, verify that the deployable package has been uploaded to the As
 In a production environment, customers can schedule a downtime for when they want the update to be applied.  
 
 > [!IMPORTANT]
-> An important pre-requisite for applying a package to a production environment is that the package must be successfully applied to at least one sandbox environmnet in the same project. 
+> An important prerequisite for applying a package to a production environment is that the package must be successfully applied to at least one sandbox environment in the same project. 
 
-1. After the update is successfully applied in a sandbox environment, navigate to the project's asset library. On the **Asset library** page, click the **Software deployable package** tab, select the package that you want to move to production, and click **Release candidate**. This indicates that this package is ready for production deployment. 
+1. After the update is successfully applied in a sandbox environment, go to the project's asset library. On the **Asset library** page, select the **Software deployable package** tab, select the package that you want to move to production, and click **Release candidate**. This indicates that this package is ready for production deployment. 
 2. Open the **Environment details** view for the production environment where you want to apply the package.
-3. Click **Maintain** &gt; **Apply updates** to apply the package.
+3. Select **Maintain** &gt; **Apply updates** to apply the package.
 4. Select the package to apply in your production environment, and then click **Schedule** to submit a request to apply it.
 
     > [!NOTE]
     > The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
     
-5. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
+5. Specify the date and time to schedule the package application. Click **Submit**, and then click **OK** to confirm. Note that your environments will be unavailable to perform business while the package is being applied.
 6. At the scheduled downtime, package deployment will start.     
 7. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of package application. Additionally, a progress indicator shows the number of steps that have been run, out of the total number of steps that are available.
 8. After the deployment is successfully completed, the **Servicing status** field is set to **Completed**.
