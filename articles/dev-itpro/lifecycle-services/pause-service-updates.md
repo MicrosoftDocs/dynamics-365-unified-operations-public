@@ -62,7 +62,7 @@ You can pause a maximum of two continuous updates at a time. (According to other
 > [!IMPORTANT]
 >  There is no way to pause more than two updates, regardless of your industry or business schedule. If you are more than 2 updates behind and you find a critical issue during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. This is only required if you are more than two updates behind and you are unable to use the pause updates functionality available in LCS to pause the update to production.
 
-> If you pause updates to your sandbox environment, updates are automatically paused for your production environment too, because Microsoft always updates configured sandbox environments before production environments.
+> If you pause updates to your sandbox environment, updates are automatically also paused for your production environment, because Microsoft always updates configured sandbox environments before production environments.
 
 ## How do I pause updates?
 
@@ -88,7 +88,6 @@ Any time that you pause updates or edit an existing pause, a notification appear
 > [!IMPORTANT]
 > You can pause updates through LCS until four hours before the start of the downtime window.
 
-> [!IMPORTANT]
 > You can cancel a pause and choose to resume updates only 7 days prior to the start of the downtime date. If you are past that date then you will not be able to cancel a pause.
 
 ## What happens after the pause duration expires?
