@@ -205,7 +205,7 @@ These methods have been refactored to support extensibility.
 | WhsWarehouseRelease.main |
 | WhsWorkManualComplete.executeWorkLines |
 | WhsWorkManualComplete.performValidation |
-| WorkTimeCheckClassWorkCalendarDateLineTableWorkTimeLineTable.whole class, validateWrite(), | | validateWrite() |
+| WorkTimeCheckClassWorkCalendarDateLineTableWorkTimeLineTable class, validateWrite() |
 | WorkTimeLine.createWorkTimeCheck |
 
 ## Other extensibility enhancements
