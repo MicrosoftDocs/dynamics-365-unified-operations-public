@@ -117,3 +117,7 @@ You must configure the Warehousing app on the device to connect to the Finance a
 4.  Select the **Back** button in the top-left corner of the application.
 
     The application will now connect to your Finance and Operations server and the log-in screen for the warehouse worker will display.
+    
+5. If the user to use for the Warehouse app has no telemetry ID, then the Warehousing app can encounter some failures.
+This is a known issue and the easy workaround is to login once to the normal AX client to get a Telemetry ID. Than all is fine.
+This issue will be fixed in a future release.
