@@ -162,7 +162,7 @@ These methods have been refactored to support extensibility.
 | RetailCreateSpecificLabel.makeLabel |
 | RetailEodStatementCustomerOrderInvoiceController.run |
 | RetailEodStatementPaymentJournal.ledgerBank2LedgerJournalACType |
-| RetailEodStatementPaymentJournal.postPaymentJournalForOthers, postPaymentJournalForSales, | | createTenderedPaymentLines, createPaymentJournalLine |
+| RetailEodStatementPaymentJournal.postPaymentJournalForOthers, postPaymentJournalForSales, createTenderedPaymentLines, createPaymentJournalLine |
 | RetailEodTransactionTransformer.ReadTransactionHeader |
 | RetailEodTransactionTransformer.setExtensionProperty |
 | RetailEventNotificationAction.packingSlipCompletion |
