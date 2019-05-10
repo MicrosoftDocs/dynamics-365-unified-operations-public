@@ -106,8 +106,10 @@ In a production environment, customers can schedule a downtime for when they wan
 2. Open the **Environment details** view for the production environment where you want to apply the package.
 3. Click **Maintain** &gt; **Apply updates** to apply the package.
 4. Select the package to apply in your production environment, and then click **Schedule** to submit a request to apply it.
+
     > [!NOTE]
     > The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
+    
 5. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
 6. At the scheduled downtime, package deployment will start.     
 7. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of package application. Additionally, a progress indicator shows the number of steps that have been run, out of the total number of steps that are available.
