@@ -61,7 +61,7 @@ For more information, see [Expense reports re-imagined](https://go.microsoft.com
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3](../../dev-itpro/extensibility/extensibility-changes-10-3.md).
+In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3](../../dev-itpro/extensibility/extensibility-changes-10-3.md).
 
 ## Additional resources
 
