@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 01/04/2019
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -207,7 +207,7 @@ The following table shows the set of Dynamics 365 payment features that the Dyna
 | [Duplicate Payment Protection](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
-| [Save online payments](articles/retail/dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
+| [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
 
 ## Sign up with Adyen
 
