@@ -236,3 +236,8 @@ If a card used to create an order is no longer valid, after products are selecte
 
 When an order is picked up with mutiple tenders and multiple lines, the user will first be prompted to 'Use available payment method'. If there are mutiple cards, upon selecting 'Use available payment method', existing card tender lines will be captured until the balance is met for the goods currently being picked up. The cashier will not be given the option to select a card to be used for the goods currently being picked up. 
 
+## Related articles
+
+- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Dynamics 365 Payment Connector for Adyen] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+
