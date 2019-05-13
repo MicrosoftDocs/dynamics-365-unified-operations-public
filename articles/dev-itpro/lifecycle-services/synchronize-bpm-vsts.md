@@ -117,14 +117,11 @@ When a business process is marked as reviewed, the **Reviewed** column is update
 
 ![Example of a Review column](./media/newbpm_BlogPost28.png)
 
-
 While you're reviewing a business process that is connected to Azure DevOps, you can add a requirement directly to your Azure DevOps project.
 
 1. Select a business process.
 2. In the right pane, on the **Requirements** tab, select **Add requirement**.
 3. Enter a name, description, and type, and then select **Create**.
-
-    ![Creating a requirement](./media/newbpm_BlogPost29.png)
 
     In Azure DevOps, a requirement work item is created that is associated with the current business process.
 
@@ -133,6 +130,7 @@ To go to the Azure DevOps work items that are associated with the current busine
 ## Common syncing errors
 
 If the BPM to Azure DevOps synchronization fails, you will see the failed process name, work item type, and an error message. 
+
 ![BPM sync error](./media/BPMsyncError.jpg)
 
 Here are some common causes and suggested actions to resolve the error.
