@@ -269,6 +269,12 @@
         href: extensibility/extensibility-changes-813.md  
       - name: Extensibility changes version 10.0
         href: extensibility/extensibility-changes-10.md  
+      - name: Extensibility changes version 10.0.1
+        href: extensibility/extensibility-changes-10-1.md  
+      - name: Extensibility changes version 10.0.2
+        href: extensibility/extensibility-changes-10-2.md  
+      - name: Extensibility changes version 10.0.3
+        href: extensibility/extensibility-changes-10-3.md  
     - name: Fundamentals
       items:
       - name: Intrusive customizations

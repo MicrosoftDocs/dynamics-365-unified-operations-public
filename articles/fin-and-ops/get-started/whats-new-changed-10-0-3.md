@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.3 (June 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June.
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,6 +37,7 @@ ms.dyn365.ops.version: Release 10.0.3
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June and has a build number of 10.0.107. For more information about version 10.0.3, see [Additional resources](whats-new-changed-10-0-3.md#additional-resources).
 
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3).
 
 ## Feature management
 
@@ -58,6 +59,10 @@ For more information, see [Interest distribution for cash accounts](https://go.m
 Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. You can enable this functionality in feature management to add a new setup form to configure expense fields visibility to determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is enabled with this feature, replacing the previous expense workspace and is the landing page for the improved entry experience. 
 
 For more information, see [Expense reports re-imagined](https://go.microsoft.com/fwlink/?linkid=2087165).
+
+## Extensibility enhancements
+
+In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3](../../dev-itpro/extensibility/extensibility-changes-10-3.md).
 
 ## Additional resources
 

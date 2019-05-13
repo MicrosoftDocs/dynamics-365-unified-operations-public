@@ -27,7 +27,6 @@
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
         - name: Finance and Operations operated by 21Vianet in China
           href: ../dev-itpro/deployment/china-local-deployment.md
-      - name: Standard and First release service updates
       - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations

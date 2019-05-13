@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.search.validFrom: 2019-XX-XX
+ms.search.validFrom: 2019-06-30
 ms.dyn365.ops.version: Platform 27
 
 ---

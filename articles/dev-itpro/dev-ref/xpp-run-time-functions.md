@@ -61,9 +61,9 @@ The following table lists and describes only the categories of X++ functions. Th
 | [Container](#container)   | Functions that operate on the container data type of X++. For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).                               |
 | [Conversion](#conversion) | Functions that translate data of one type into data of another type. For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).                  |
 | [Date](#date)             | Functions that operate on the date data type. For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functions.md).                                                     |
-| [Math](#Math)             | Functions that perform mathematical calculations. For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).                                                 |
+| [Math](#math)             | Functions that perform mathematical calculations. For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).                                                 |
 | [Reflection](#reflection) | Functions that access the metadata about objects and return other metadata about them. For more information, see [X++ Reflection Run-Time Functions](xpp-reflection-run-time-functions.md). |
-| [Session](#Session)       | Functions that change or report on the context of the current user connection. For more information, see [X++ Session Run-Time Functions](xpp-session-run-time-functions.md).             |
+| [Session](#session)       | Functions that change or report on the context of the current user connection. For more information, see [X++ Session Run-Time Functions](xpp-session-run-time-functions.md).             |
 | [String](#string)         | Functions that operate on the str data type. For more information, see [X++ String Run-Time Functions](xpp-string-run-time-functions.md).                                                 |
 | Other                     | [beep](#beep), [newGuid](#newguid), [sleep](#sleep)                                                                                                                                                                        |
 
