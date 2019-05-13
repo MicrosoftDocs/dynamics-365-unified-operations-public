@@ -34,9 +34,9 @@ To reclassify a fixed asset, you must transfer it to a new fixed asset group or 
 
 When a fixed asset is reclassified:
 
-• All value models for the existing fixed asset are created for the new fixed asset. Any information that was set up for the original fixed asset is copied to the new fixed asset. The status of the value models for the original fixed asset is Closed. 
+• All books for the existing fixed asset are created for the new fixed asset. Any information that was set up for the original fixed asset is copied to the new fixed asset. The status of the books for the original fixed asset is Closed. 
 
-• The new value models of the new fixed asset contain the date of the reclassification in the Acquisition date field. The date in the Depreciation run date field is copied from the original asset information. If the depreciation has already started, the Date when depreciation was last run field displays the date of the reclassification. 
+• The new books of the new fixed asset contain the date of the reclassification in the Acquisition date field. The date in the Depreciation run date field is copied from the original asset information. If the depreciation has already started, the Date when depreciation was last run field displays the date of the reclassification. 
 
 • The existing fixed asset transactions for the original fixed asset are canceled and regenerated for the new fixed asset.
 
