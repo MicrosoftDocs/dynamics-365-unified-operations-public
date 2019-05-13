@@ -117,7 +117,6 @@ When a business process is marked as reviewed, the **Reviewed** column is update
 
 ![Example of a Review column](./media/newbpm_BlogPost28.png)
 
-If a BPM library is synchronized with a Azure DevOps project, and you mark a process as reviewed in BPM, its status is changed to **Active** in Azure DevOps.
 
 While you're reviewing a business process that is connected to Azure DevOps, you can add a requirement directly to your Azure DevOps project.
 
