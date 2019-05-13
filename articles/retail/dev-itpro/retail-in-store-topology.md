@@ -5,7 +5,7 @@ title: Select an in-store topology
 description: This topic provides information about the various Dynamics 365 for Retail in-store topologies.
 author: rassadi
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics-365-retail
@@ -64,6 +64,7 @@ The following components are deployed through a single installer. This means tha
 | Retail Server | IIS Web Service | Scale unit specific Retail Server instance used by one or more stores. |
 | Channel Database | SQL Database | Scale unit specific Store specific Channel Database instance hosting data for one or more stores. |
 | Async Client Service | Windows Service | Component to synchronize master record data from the HQ to the store and transactional data from the store to the HQ. |
+| Cloud POS | IIS Web Service | Cloud POS application that hosts POS functionality through a web browser. |
 
 ## Additional resources
 ### MPOS offline mode

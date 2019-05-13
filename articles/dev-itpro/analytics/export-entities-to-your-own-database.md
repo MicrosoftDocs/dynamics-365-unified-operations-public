@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/04/2019
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -168,12 +168,12 @@ When you add an entity for data export, you can select to do an incremental expo
 
 If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records have been 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change will be reflected in the destination entity.
 
-Because the first push is always a full push, we do not recomend that you do an explicit full push before you enable change tracking.
+Because the first push is always a full push, we do not recommend that you do an explicit full push before you enable change tracking.
 
 We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
 
 ### Timeouts
-The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. Starting with the release of Platform update 18, you can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**.
+The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. Starting with the release of Platform update 18, you can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**. These timeouts are company specific and must be set separately for each company.
 
 ### Known limitations
 
