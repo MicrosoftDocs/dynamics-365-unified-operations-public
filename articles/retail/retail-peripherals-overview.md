@@ -702,7 +702,7 @@ The following peripherals were tested by using the IPC hardware station that is 
 | Equinox      | L5300        | Custom    | Requires customization of the payment connector                                |
 | VeriFone     | MX925        | Custom    | Requires customization of the payment connector; connected via network and USB |
 | VeriFone     | MX915        | Custom    | Requires customization of the payment connector; connected via network and USB |
-| Verifone     | See comments | Adyen     | Adyen connector supports all Adyen devices listed [here](https://www.adyen.com/pos-payments/terminals) |
+| Verifone     | See comments | Adyen     | The Adyen connector supports all devices listed [here](https://www.adyen.com/pos-payments/terminals) |
 
 #### Cash drawer
 
