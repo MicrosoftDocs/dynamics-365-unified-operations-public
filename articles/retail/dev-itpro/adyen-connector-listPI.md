@@ -81,13 +81,13 @@ When an ecommerce visitor opts for guest checkout, a customer record will not be
 
 When a named customer navigates to the payments section of the checkout, they will experience List PI. If it is the first checkout for a signed in customer, they will see as part of the credit card entry form an option to "Save for my next payment". 
 
-![Save payment option](articles/retail/media/Payments/Save_PI.png)
+![Save payment option](../retail/media/Payments/Save_PI.png)
 
 When this box is checked, and a new card is submitted for payment, the currently logged in customer's unique ID will be sent to the payment processor and that card will be saved securely and mapped to the customer's unique ID. 
 
 During subsequent visits, if the same customer is logged into the storefront, they will be able to select that same card for payment at checkout. 
 
-![Previously saved payment](articles/retail/media/Payments/Saved_PI.jpg)
+![Previously saved payment](../retail/media/Payments/Saved_PI.jpg)
 
 ### Order fulfillment and processing
 
