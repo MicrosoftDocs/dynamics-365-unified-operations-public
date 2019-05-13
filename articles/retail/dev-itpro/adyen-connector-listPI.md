@@ -2,10 +2,10 @@
 # required metadata
 
 title: Saving online payment instruments with the Adyen connector
-description: This topic describes how to save payment instruments using the Adyen connector for e-commerce.
+description: This topic describes how to save payment instruments using the Adyen connector for ecommerce.
 author: rubendel
 manager: AnnBe
-ms.date: 04/07/2019
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,19 +32,20 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Saving online payments with the Adyen connector
 
+[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topics describes the setup and capabilities related to saving payment instruments when using the Adyen card not present payment connector for e-commerce. 
+This topics describes the setup and functionality related to saving payment instruments when using the Adyen "card not present" payment connector for ecommerce. 
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Token | A string of data that is provided by payment processors to be used as a reference. Tokens can represent payment card numbers, payment authorizations and previous payment captures. Tokens are important because they help to keep sensitive data out of the point of sale system.   |
-| Card token | A token that is provided by the payment processor for storage in the point of sale system. This card token can only be used by the merchant receiving the token and is generally harmless outside of the system. May also be referred to as 'Card reference'. Recurring card token |
-| Auth(orization) token | When a point of sale system makes an authorization request to a payment processor, the payment processor will provide a unique ID back to the point of sale system as part of the response to that request. This authorization token, or authorization reference, can later be used when calling the processor to perform actions such as reversing or voiding the authorization. Most commonly the authorization token is used to capture funds when an order is fulfilled or a transaciton is being finalized. |
-| List PI | The capability described in this document is often generically referred to as "List PI". List PI refers to the ability to save payment instruments and list previously used payment instruments during subesquent checkouts in through the same e-commerce website.
-| Named user | An e-commerce customer who is logged into the online storefront at the time of checkout. Named users have a unique customer ID and their online purchases are always mapped to the same customer ID when they are signed into the online storefront. 
+| Token | A string of data that is provided by payment processors to be used as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help to keep sensitive data out of the point of sale system.   |
+| Card token | A token that is provided by the payment processor for storage in the point of sale system. This card token can only be used by the merchant receiving the token and is generally harmless outside of the system. May also be referred to as "Card reference". Recurring card token |
+| Authorization (Auth) token | When a point of sale system makes an authorization request to a payment processor, the payment processor will provide a unique ID back to the point of sale system as part of the response to that request. This authorization token, or authorization reference, can later be used when calling the processor to perform actions such as reversing or voiding the authorization. Most commonly the authorization token is used to capture funds when an order is fulfilled or a transaciton is being finalized. |
+| List PI | The capability described in this document is often generically referred to as "List PI". List PI refers to the ability to save payment instruments and list previously used payment instruments during subesquent checkouts in through the same ecommerce website. |
+| Named user | An ecommerce customer who is logged into the online storefront at the time of checkout. Named users have a unique customer ID and their online purchases are always mapped to the same customer ID when they are signed into the online storefront. |
 
 ## Overview
 
