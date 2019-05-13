@@ -3,7 +3,7 @@ title: Synchronize BPM libraries with Azure DevOps
 description: This topic provides information about how to synchronize a BPM library in LCS with Azure DevOps.
 author: kfend
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -132,20 +132,15 @@ To go to the Azure DevOps work items that are associated with the current busine
 
 ## Common syncing errors
 
-When the BPM to Azure DevOps synchronization failed, you will see the failed process name, work item type, and the error message. 
+If the BPM to Azure DevOps synchronization fails, you will see the failed process name, work item type, and an error message. 
 ![BPM sync error](./media/BPMsyncError.jpg)
 
-Here are some common causes and suggested actions to help resolving the error - 
+Here are some common causes and suggested actions to resolve the error.
 
 | **Possible cause** | **Error message** | **Suggested solution** | 
 |---------|--------|--------|
-| Required field added | Failed to create work item. A required field has been added to this work item type which is not supported. Remove this requirement or provide a default value in the process template to unblock the operation. | Remove the required field or provide a default value | 
+| Required field added | Failed to create work item. A required field has been added to this work item type, which is not supported. Remove this requirement or provide a default value in the process template to unblock the operation. | Remove the required field or provide a default value. | 
 | Work item type disabled | Failed to create work item. The work item type has been disabled in the process template. Enable the work item type to unblock the operation. | Enable the work item type in the process template |  
-| Couldn't find work item to update | Failed to update work item. The work item does not exist, or you do not have permissions to read it. Check the PAT configuration in the project settings or restore the work item if it has been deleted directly from the DevOps project. | Restore the work item from the recycle bin if it was deleted, or create a new PAT and make sure it has full permissions |  
-| PAT is expired | Failed to sync with Visual Studio Team Services. The request response is: Unauthorized. Please check that the PAT is setup correctly and still valid, try again and contact support if the error persists. | Create a new Personal Access Token (PAT) from the Azure DevOps and update the PAT value in your LCS Project settings | 
+| Couldn't find work item to update | Failed to update work item. The work item does not exist, or you do not have permissions to read it. Check the PAT configuration in the project settings or restore the work item if it has been deleted directly from the DevOps project. | Restore the work item from the recycle bin if it was deleted, or create a new Personal Access Token (PAT) and make sure that it has full permissions. |  
+| Personal Access Token is expired | Failed to sync with Visual Studio Team Services. The request response is: Unauthorized. Please check that the PAT is setup correctly and still valid, try again and contact support if the error persists. | Create a new Personal Access Token (PAT) from Azure DevOps and update the PAT value in your LCS Project settings. | 
 | Generic error | Failed to sync with Visual Studio Team Services. The request response is: {0}. Please check that the PAT is setup correctly and still valid, try again and contact support if the error persists. | Contact customer support with the request response that caused the syncing error. | 
-
-
-
-
-
