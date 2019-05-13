@@ -132,7 +132,10 @@ To go to the Azure DevOps work items that are associated with the current busine
 
 ## Common syncing errors
 
-When the BPM to Azure DevOps syncronization failed, you will see the failed process name, work item type, and the error message.  Here are some common causes and suggested actions to help resovling the error - 
+When the BPM to Azure DevOps syncronization failed, you will see the failed process name, work item type, and the error message. 
+![BPM sync error](./media/BPMsyncError.jpg)
+
+Here are some common causes and suggested actions to help resovling the error - 
 
 | **Possible cause** | **Error message** | **Suggested solution** | 
 |---------|--------|--------|
