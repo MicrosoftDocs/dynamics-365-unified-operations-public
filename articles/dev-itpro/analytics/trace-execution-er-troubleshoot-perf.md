@@ -83,7 +83,7 @@ ER performance traces that are generated in Finance and Operations will be impor
 
 ![Electronic reporting parameters page in RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
-To be available in the **Others** lookup field, a DM document type must be configured in the following manner:
+To be available in the **Others** lookup field, a DM document type must be configured in the following manner on the **Document types** page (**Organization administration \> Document management \> Document types**):
 
 - **Class:** Attach file
 - **Group:** File
@@ -110,7 +110,7 @@ Assume that you've finished designing the first version of the ER solution. You 
 ### <a id='import-configuration'></a>Import an ER configuration from RCS into Finance and Operations
 
 1. Sign in to your Finance and Operations instance.
-2. For this tutorial, you will import configurations from your RCS instance (where you design your ER component) into your Finance and Operations instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the "Download configurations from ER repository of the RCS type" procedure.
+2. For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your Finance and Operations instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) procedure.
 3. Follow these steps to import the configurations from RCS into Finance and Operations:
 
     1. In the **Electronic reporting** workspace, on the tile for the **Litware, Inc.** configuration provider, select **Repositories**.
@@ -293,7 +293,7 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
 
 ### Complete the modified version of the ER model mapping
 
-1. On the **Versions** FastTab, select version **1.2** of the **Performance trace mapping** configuration.
+1. In RCS, on the **Configurations** page, on the **Versions** FastTab, select version **1.2** of the **Performance trace mapping** configuration.
 2. Select **Change status**.
 3. Select **Complete**.
 
