@@ -5,7 +5,7 @@ title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -117,3 +117,5 @@ You must configure the Warehousing app on the device to connect to the Finance a
 4.  Select the **Back** button in the top-left corner of the application.
 
     The application will now connect to your Finance and Operations server and the log-in screen for the warehouse worker will display.
+    
+5. If you do not have a telemetry ID for the Warehouse app, you might encounter some errors. This is a known issue. The workaround is to sign in to an existing client to get a Telemetry ID. This issue will be fixed in a future release.
