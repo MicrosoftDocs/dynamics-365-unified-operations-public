@@ -38,7 +38,7 @@ The application stack is divided into platform models and application-specific m
 Overview
 --------
 
-The application stack and server architecture aligns with three key pillars:
+The application stack and server architecture align with three key pillars:
 
 -   New client
 -   Cloud readiness
@@ -60,7 +60,7 @@ The left side of the following diagram shows how the application stack has been 
 
 [![Architecture drawing](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
 
-Microsoft Dynamics 365 for Finance and Operations uses an entry point security model. A form allows read-only access if the menu item used for navigation to that form has only Read Permissions. However, navigation to that same form through another menu item that provides Create Permissions, Delete Permissions, or Update Permissions allows write operations on the form. This behavior simplifies the development experience, because developers can specify the desired behavior for a form through a given entry point.
+Microsoft Dynamics 365 for Finance and Operations uses an entry point security model. A form allows read-only access if the menu item used for navigation to that form has only Read Permissions. However, navigation to that same form through another menu item that provides Create Permissions, Delete Permissions, or Update Permissions allows write operations on the form. This behavior simplifies the development experience, because developers can specify thea behavior for a form through a given entry point.
 
 ## Cloud architecture
 The cloud architecture includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management. The cloud architecture consists of three main conceptual areas:
