@@ -227,8 +227,9 @@
       - name: X classes
         href: dev-ref/x-classes.md
   - name: Extensibility
-    href: extensibility/extensibility-home-page.md
     items:
+    - name: Extensibility home page
+      href: extensibility/extensibility-home-page.md
     - name: Introduction and getting started
       items:
       - name: Application extensibility plan
@@ -245,6 +246,8 @@
         href: extensibility/customization-overlayering-extensions.md
     - name: What's new
       items:
+      - name: What's new or changed for extensibility
+        href: extensibility/extensibility-whats-new
       - name: Extensibility changes July 2017
         href: extensibility/changes-july-2017.md
       - name: Extensibility changes in version 7.3
