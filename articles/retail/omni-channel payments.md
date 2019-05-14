@@ -38,6 +38,12 @@ This topic provides an overview of omni-channel payments support in Microsoft Dy
 
 All scenarios described in this document are supported out of the box with the Microsoft Dynamics 365 Payment Connector for Adyen or can be implemented for other payment connectors using the payments SDK.
 
+The following omni-channel payment scenarios are supported:
+
+- Buy online, pick up in store
+- Buy in call center, pick up in store
+- Buy in Store A, pick up in store B
+- Buy in Store A, ship to customer
 
 ## Key terms
 
@@ -212,11 +218,13 @@ Steps:
 12. After the deposit is paid, select the option to use the same card for fulfillment and wait for the order to complete.
 13. When the order is picked, packed and invoiced in the back office, the payment details provided at the point of sale will be used to capture the funds for the goods being shipped to the customer. 
 
-## Additional omni-channel payments details
+## Scenario details
 
 Aside from the above basic scenarios, several enhancements have been made to the payments SDK to support omni-channel payments. 
 
-### Single swipe/dip for customer orders
+### Point of sale
+
+#### Single swipe/dip for customer orders
 
 Prior to the omni-channel payments feature, customer orders created at the point of sale that included deposits required the customer to swipe or dip their card twice. Once to pay the deposit and once to tokenize the card for fulfillment later. With omni-channel tokenization enabled, the customer only needs to swipe their card once to both pay the deposit and to authorize the amount due for goods to be fulfilled at a later time. At the time of fulfillment, the authorized funds are captured. Prior to omni-channel tokenization, only a recurring card token was created for later fulfillment. This meant that the funds for the pending fulfillment were not authorized and there was a greater chance of not being able to capture those funds later because they were not being held for that specific purchase.
 
