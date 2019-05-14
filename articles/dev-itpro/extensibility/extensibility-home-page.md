@@ -46,11 +46,7 @@ These introductory topics contain general information about customization. This 
 + [Extensibility FAQ](app-sealing-faq.md) 
 
 ## What's new
-This section lists the extensibility-related updates that have been made since July 2017.
-
-+ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
-+ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
-+ [Extensibility changes in Dynamics 365 for Finance and Operations release 8.0](Changes-80.md)
+Look under the "What's new" node for lists of extensibility-related updates that have been made since July 2017.
 
 ## Getting started
 
