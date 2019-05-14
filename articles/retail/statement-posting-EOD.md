@@ -47,7 +47,7 @@ Finance and Operations includes the following validations that are related to th
 - The same configuration keys must be used for all the operations that are performed on a given statement during its lifecycle (Create, Calculate, Clear, Post, and so on). For example, you can't create and calculate a statement while the **Retail statement (legacy)** configuration key is turned on, and then try to post the same statement while the **Retail statement** configuration key is turned on.
 
 > [!NOTE]
-> We recommend that you use the **Retail statements** configuration key for the improved statement posting feature, unless you have compelling reasons to use the **Retail statements (legacy)** configuration key instead. Microsoft will continue to invest in the new and improved statement posting feature, and it's important that you switch to it at the earliest opportunity to benefit from it. The legacy statement posting feature will be deprecated in a future release.
+> We recommend that you use the **Retail statements** configuration key for the improved statement posting feature, unless you have compelling reasons to use the **Retail statements (legacy)** configuration key instead. Microsoft will continue to invest in the new and improved statement posting feature, and it's important that you switch to it at the earliest opportunity to benefit from it. The legacy statement posting feature is deprecated starting in 8.0 release.
 
 ## Setup
 
