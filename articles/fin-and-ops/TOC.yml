@@ -37,7 +37,7 @@
       - name: Business decision makers
         href: get-started/learning-catalog-bdm.md
       - name: Business users
-        href: get-started/learning-catalog-business-user.md.md
+        href: get-started/learning-catalog-business-user.md
       - name: Implementation project managers
         href: get-started/learning-catalog-project-manager.md
       - name: Administrators
