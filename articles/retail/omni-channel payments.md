@@ -38,9 +38,6 @@ This topic provides an overview of omni-channel payments support in Microsoft Dy
 
 All scenarios described in this document are supported out of the box with the Microsoft Dynamics 365 Payment Connector for Adyen or can be implemented for other payment connectors using the payments SDK.
 
-## Supported versions
-
-Omni-channel payments capabilities described in this document were shipped as part of 8.1.3. 
 
 ## Key terms
 
@@ -62,9 +59,14 @@ This topic provides an overview of omni-channel payment support within Dynamics 
 
 All scenarios described in this article can be implemented using the standard payments SDK provided with Microsoft Dynamics 365 for Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out of box implementation of each of the scenarios described in this document. 
 
+
 ### Prerequisites
 
 Each of the scenarios described in this document requires a payment connector that supports omni-channel payments. The out of box Adyen connector may also be used as it supports each of the scenarios enabled through the SDK. For more information about implementing payment connectors and the retail SDK in general visit the [Retail for IT pros and developers home page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+
+#### Supported versions
+
+Omni-channel payments capabilities described in this document were shipped as part of 8.1.3. 
 
 #### Card present and card not present connectors
 
@@ -72,7 +74,7 @@ The retail payment SDK relies on two sets of payment APIs. The first, is called 
 
 The second set of APIs is called iNamedRequestHandler. This set of APIs is the supported method of implementing card present payment integrations that utilize a payment terminal. This set of APIs is documented in the [Create a payment integration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension) document. 
 
-### Setup
+### Setup & Configuration
 
 The following components and setup steps are required:
 
