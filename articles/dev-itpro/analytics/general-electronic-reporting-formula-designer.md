@@ -5,7 +5,7 @@ title: Formula designer in Electronic reporting (ER)
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -447,8 +447,8 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </tr>
 <tr>
 <td>INDEX (list, index)</td>
-<td>This function returns from a given list, a record that is selected by a specific numeric index. An exception is thrown when the index is out of range of the records in the list.</td>
-<td>If you enter the data source <strong>DS</strong> of the <strong>Calculated field</strong> type and configure it as containing an expression <strong>SPLIT ("A|B|C", “|”), 2)</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”. The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> returns the “B” text value as well.</td>
+<td>This function returns a record that is selected by a specific numeric index in the list. An exception is thrown if the index is out of range of the records in the list.</td>
+<td>If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|”), 2)</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”. The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> also returns the “B” text value.</td>
 </tr>
 </tbody>
 </table>
