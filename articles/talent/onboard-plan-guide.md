@@ -101,7 +101,8 @@ Measure these details and make small improvements with each new hire.
 
 - [Create an onboarding guide template](./onboard-create-template.md)
 - [Create an onboarding guide](./onboard-create-guide.md)
-- [View the status of onboarding employees](./onboard-view-status.md)
+- [View the status of tasks onboarding employees](./onboard-view-status.md)
+- [Create hiring teams in Onboard](./onboard-create-team.md)
 
 ### See also
 

@@ -58,3 +58,10 @@ In Microsoft Dynamics 365 for Talent: Onboard, you can create hiring teams and a
 3. Select **Add templates**.
 
 4. Check each template you want to assign to the team and then select **Add**.
+
+## Next steps
+
+- [Try or buy the Onboard app](https://dynamics.microsoft.com/en-us/talent/onboard/)
+- [What's new](./whats-new.md)
+- [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/index)
+- [Get support](./talent-support.md)

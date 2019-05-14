@@ -84,7 +84,8 @@ Onboard lets you send an onboarding guide to multiple new hires at the same time
 
 ## Next steps
 
-- [View the status of onboarding employees](./onboard-view-status.md)
+- [View the status of tasks and onboarding employees](./onboard-view-status.md)
+- [Create hiring teams in Onboard](./onboard-create-team.md)
 
 ### See also
 

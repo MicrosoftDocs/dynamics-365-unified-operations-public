@@ -38,7 +38,7 @@ You can view a demo and try the Dynamics 365 for Talent: Onboard app for free fr
 (**Embed video https://dynamics.microsoft.com/en-us/talent/demo/onboard/**)
 
 >[!NOTE]
->The free trial requires a business email account. (Reviewers: That was kind of rough for me, and kind of odd that I couldn't try it with my personal email, but I could buy it. If I were a customer, I could see where using my company email might be a deal-breaker for trying it.)
+>The free trial requires a business email account.
 
 You can purchase a subscription to Onboard as either a stand-alone app, or as part of Dynamics 365 for Talent, a comprehensive human capital management (HCM) system that includes Attract, Onboard, and Core HR. For more information about purchasing onboard, see the [Onboard product page](https://dynamics.microsoft.com/en-us/talent/onboard/).
 
@@ -83,7 +83,8 @@ If you accepted the default domain name (ending in **onmicrosoft.com**) when sig
 - [Plan your onboarding guide](./onboard-plan-guide.md)
 - [Create an onboarding guide template](./onboard-create-template.md)
 - [Create an onboarding guide](./onboard-create-guide.md)
-- [View the status of onboarding employees](./onboard-view-status.md)
+- [View the status of tasks and onboarding employees](./onboard-view-status.md)
+- [Create hiring teams in Onboard](./onboard-create-team.md)
 
 ### See also
 

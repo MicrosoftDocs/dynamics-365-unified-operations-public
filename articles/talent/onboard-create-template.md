@@ -126,7 +126,8 @@ If you need to edit a contact, select the **Edit** (pencil) button to the right 
 ## Next steps
 
 - [Create an onboarding guide](./onboard-create-guide.md)
-- [View the status of onboarding employees](./onboard-view-status.md)
+- [View the status of tasks and onboarding employees](./onboard-view-status.md)
+- [Create hiring teams in Onboard](./onboard-create-team.md)
 
 ### See also
 
