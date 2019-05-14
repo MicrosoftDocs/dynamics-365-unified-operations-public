@@ -20,14 +20,14 @@ sections:
     className: cardsM
     columns: 3
     items:
-    - href: ../learning-catalog-bdm.md
+    - href: learning-catalog-bdm.md
       html: <p>Do you decide whether to invest in new technologies? Start here</p>
       html: <p></p>
       html: <p>Join us at an event</p>
       html: <p>Get started</p>
       html: <p>See case studies</p>
       title: Business and Technical Decision Makers
-    - href: ../learning-catalog-business-user.md
+    - href: learning-catalog-business-user.md
       html: <p>Did your boss just hand you a new application to use? Start here</p>
       html: <p></p>
       html: <p>Get an introduction</p>
@@ -39,7 +39,7 @@ sections:
       html: <p>Retail</p>
       html: <p>Sales</p>
       title: Business Users
-    - href: ../learning-catalog-project-manager.md
+    - href: learning-catalog-project-manager.md
       html: <p>Are you in charge of making sure your customer's implementation goes smoothly? Start here</p>
       html: <p></p>
       html: <p>Core platform knowledge</p>
@@ -50,7 +50,7 @@ sections:
       html: <p>Retail</p>
       html: <p>Supply chain management</p>
       title: Implementation Project Manager
-    - href: ../learning-catalog-administrator.md
+    - href: learning-catalog-administrator.md
       html: <p>Do you need to keep systesm up round-the-clock? Start here</p>
       title: Administrators
       html: <p></p>
@@ -60,7 +60,7 @@ sections:
       html: <p>Support</p>
       html: <p>Maintenance</p>
       html: <p>Manage data</p>
-    - href: ../learning-catalog-developer.md
+    - href: learning-catalog-developer.md
       html: <p>Do you need to create an application? Start here</p>
       html: <p></p>
       html: <p>Get started</p>
@@ -68,7 +68,7 @@ sections:
       html: <p>Connect</p>
       html: <p>Extend</p>
       title: Developers
-    - href: ../learning-catalog-partner-sales.md
+    - href: learning-catalog-partner-sales.md
       html: <p>Are you responsible for helping your customers identify the right solution? Start here</p>
       html: <p></p>
       html: <p>Ramp up on business value</p>
@@ -76,7 +76,7 @@ sections:
       html: <p>Keep up with what's new</p>
       html: <p>Industry case studies</p>
       title: Microsoft Partner Sales and Marketing
-    - href: ../learning-catalog-functional-consultant.md
+    - href: learning-catalog-functional-consultant.md
       html: <p>Are you the implementation guru at a partner? Start here</p>
       title: Functional Consultants
       html: <p></p>
@@ -87,7 +87,7 @@ sections:
       html: <p>Public sector</p>
       html: <p>Retail</p>
       html: <p>Supply chain management</p>
-    - href: ../learning-catalog-solution-architect.md
+    - href: learning-catalog-solution-architect.md
       html: <p>Do you design solutions to meet customers' needs and budgets? Start here</p>
       html: <p></p>
       html: <p>Integration architectures</p>
