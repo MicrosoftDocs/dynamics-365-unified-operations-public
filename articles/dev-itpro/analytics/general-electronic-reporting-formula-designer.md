@@ -445,6 +445,11 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>Return the specified list after the query has been modified to filter for the specified condition. This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level. The list and condition can be defined by using tables and relations.</td>
 <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, and if <strong>parmVendorBankGroup</strong> is configured as an ER data source that returns a value of the <strong>String</strong> data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
 </tr>
+<tr>
+<td>INDEX (list, index)</td>
+<td>This function returns from a given list a record which is selected by a given numeric index. An exception is thrown when a given index is out of range of records of a given list.</td>
+<td>If you enter the data source <strong>DS</strong> of the <strong>Calculated field</strong> type and configure it as containing an expression <strong>SPLIT ("A|B|C", “|”), 2)</strong>, the expression <strong>DS.Value</strong> returns the “B” text value. The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> returns the “B” text value as well.</td>
+</tr>
 </tbody>
 </table>
 
