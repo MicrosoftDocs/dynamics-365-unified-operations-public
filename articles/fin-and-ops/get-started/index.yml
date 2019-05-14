@@ -3,9 +3,9 @@ documentType: LandingData
 title: Microsoft Dynamics 365 for Finance and Operations Learning Catalog
 metadata:
   title: Microsoft Dynamics 365 for Finance and Operations Learning Catalog
-  description: Tutorials and conceptual articles about learning how to use Visual Studio.
-  author: ghogen
-  manager: jillfra
+  description: Find all the training options for Finance and Operations
+  author: margoc
+  manager: annbe
   ms.prod: dynamics-ax-application
   ms.topic: landing-page
   ms.date: 05/03/2019
