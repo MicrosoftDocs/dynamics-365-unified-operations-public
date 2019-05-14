@@ -37,7 +37,7 @@ This topic provides links to extensibility updates for Dynamics 365 for Finance 
 
 + [Extensibility changes July 2017](changes-july-2017.md)
 + [Extensibility changes in version 7.3](extensibility-changes-73.md)
-+ [Extensibility changes in version 8.0](changes-80.md)
++ [Extensibility changes in version 8.0](Changes-80.md)
 + [Extensibility changes version 8.0.1](extensibility-changes-801.md)
 + [Extensibility changes version 8.0.2](extensibility-changes-802.md)
 + [Extensibility changes version 8.0.3](extensibility-changes-803.md)
