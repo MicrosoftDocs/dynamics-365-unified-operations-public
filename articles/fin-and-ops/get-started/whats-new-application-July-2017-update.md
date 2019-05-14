@@ -77,7 +77,7 @@ For more information, see [Data validation workspace](../../dev-itpro/user-inter
 
 ### Delete a main account and dimension value
 
-As companies go live they often have main accounts or dimension values that they have determined they no longer need. This feature lets you remove the main account and dimension values if there are no posted transaction, keeping the pristine golden template intact.
+As companies go live they often have main accounts or dimension values that they have determined they no longer need. To understand when you can remove a financial dimension, see the article below.
 
 For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
 
