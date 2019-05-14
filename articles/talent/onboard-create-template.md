@@ -41,7 +41,7 @@ Dynamics 365 for Talent: Onboard provides you with a variety of templates to get
 
 2. Select a template under **Popular templates from the gallery** or under **My templates**. To view more templates, select **More in template gallery**.
 
-3. Select **Save as template**, enter a new name for the template, and select **Save**.
+3. If this is a template from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**. If this is a template from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.
 
 ## Create a new onboarding guide template
 
@@ -79,8 +79,7 @@ Dynamics 365 for Talent: Onboard provides you with a variety of templates to get
 
     - Add an iframe with web content. Drag and drop **Web Content (iframe)** to the editing area, enter a name and description for the activity, and then enter a web content URL and specify the size for the screen area. 
 
-2. If desired, in the right-hand area of each activity, assign activities to a person or role, add a due date and contact person, and assign a category color.
-
+2. If desired, in the right-hand area of each activity, assign activities to a person or role, add a due date and contact person, and assign a category color. When you assign an activity to a person or a role, this creates a task for each individual, which appears in the **Tasks** menu in Onboard.
 
 3. Select **Save** to save your work. 
 
@@ -94,9 +93,11 @@ Add people who can help your new hire succeed from day one. These can be recruit
 
 1. On the **Contacts** tab, select **New contact**.
 
-2. On the **Add team member** pane, enter the contact person's name or email address, enter a short description of how the contact person can help your new hire, and then select **Add**.
+2. On the **Add team member** pane, enter the contact person's name or email address, enter a short description of how the contact person can help your new hire, and then select **Add**. 
 
 3. Select **Save** to save your work. 
+
+Alternately, you can select one or more contacts under **Suggestions**.
 
 If you need to delete a contact, select the **Delete** (trash can) button to the right of the contact.
 

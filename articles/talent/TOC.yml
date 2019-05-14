@@ -153,16 +153,22 @@
       href: create-onboarding-experience.md
     - name: Track sources for candidate profiles and applications
       href: source-tracking.md    
+    - name: Use analytic reports for hiring process insights
+      href: analytic-reports.md  
   - name: Welcome new hires with Onboard
     href: create-onboarding-experience.md
     - name: Get the Onboard app
       href: onboard-get-app.md
-    - name: Create an onboarding guide
+    - name: Plan your onboarding guide
+      href: onboard-plan-guide.md  
+    - name: Create an onboarding guide template
+      href: onboard-create-template.md  
+    - name: Create and send an onboarding guide
       href: onboard-create-guide.md
-    - name: View the status of onboarding employees
+    - name: View the status of onboarding employees and tasks
       href: onboard-view-status.md
-    - name: Use analytic reports for hiring process insights
-      href: analytic-reports.md  
+    - name: Create a hiring team in Onboard
+      href: onboard-create-team.md
   - name: Motivate employees
     items:
     - name: Compensation plans
