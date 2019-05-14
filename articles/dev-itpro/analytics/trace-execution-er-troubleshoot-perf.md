@@ -52,14 +52,14 @@ To complete the examples in this tutorial, you must have the following access:
     - Electronic reporting functional consultant
     - System administrator
 
-You must also download the **Performance trace sample** zip file from [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684), extract the following XML files from it, and store the files locally.
+You must also download and locally store the following files.
 
 | File                                  | Content                               |
 |---------------------------------------|---------------------------------------|
-| Performance trace model.version.1     | Sample ER data model configuration    |
-| Performance trace metadata.version.1  | Sample ER metadata configuration      |
-| Performance trace mapping.version.1.1 | Sample ER model mapping configuration |
-| Performance trace format.version.1.1  | Sample ER format configuration        |
+| Performance trace model.version.1     | [Sample ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
+| Performance trace metadata.version.1  | [Sample ER metadata configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
+| Performance trace mapping.version.1.1 | [Sample ER model mapping configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Performance trace format.version.1.1  | [Sample ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
 
 ### Configure ER parameters
 
