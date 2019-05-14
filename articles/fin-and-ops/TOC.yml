@@ -35,21 +35,21 @@
       href: get-started/index.yml
       items: 
       - name: Business decision makers
-        href: ../learning-catalog-bdm.md
+        href: get-started/learning-catalog-bdm.md
       - name: Business users
-        href: ../learning-catalog-business-user.md.md
+        href: get-started/learning-catalog-business-user.md.md
       - name: Implementation project managers
-        href: ../learning-catalog-project-manager.md
+        href: get-started/learning-catalog-project-manager.md
       - name: Administrators
-        href: ../learning-catalog-administrator.md
+        href: get-started/learning-catalog-administrator.md
       - name: Developers
-        href: ../learning-catalog-developer.md
+        href: get-started/learning-catalog-developer.md
       - name: Partner sales and marketing
-        href: ../learning-catalog-partner-sales.md
+        href: get-started/learning-catalog-partner-sales.md
       - name: Functional consultants
-        href: ../learning-catalog-functional-consultant.md
+        href: get-started/learning-catalog-functional-consultant.md
       - name: Solution architects
-        href: ../learning-catalog-solution-architect.md
+        href: get-started/learning-catalog-solution-architect.md
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
