@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
 
 ---
-# 
+# What's new or changed for extensibility
 
 [!include [banner](../includes/banner.md)]
 
