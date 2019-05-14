@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/26/2017
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,9 +77,7 @@ For more information, see [Data validation workspace](../../dev-itpro/user-inter
 
 ### Delete a main account and dimension value
 
-As companies go live they often have main accounts or dimension values that they have determined they no longer need. To understand when you can remove a financial dimension, see the article below.
-
-For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
+As companies go live, oftentimes there are main accounts or dimension values that are no longer needed. To understand when you can remove a financial dimension, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
 
 ### Display payment information for an expense
 
