@@ -247,7 +247,7 @@
     - name: What's new
       items:
       - name: What's new or changed for extensibility
-        href: extensibility/extensibility-whats-new.md
+        href: extensibility/extensibility-new.md
       - name: Extensibility changes July 2017
         href: extensibility/changes-july-2017.md
       - name: Extensibility changes in version 7.3
