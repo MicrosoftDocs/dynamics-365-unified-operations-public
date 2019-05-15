@@ -248,36 +248,36 @@
       items:
       - name: What's new or changed for extensibility
         href: extensibility/extensibility-new.md
-      - name: Extensibility changes July 2017
-        href: extensibility/changes-july-2017.md
-      - name: Extensibility changes in version 7.3
-        href: extensibility/extensibility-changes-73.md
-      - name: Extensibility changes in version 8.0
-        href: extensibility/changes-80.md
-      - name: Extensibility changes version 8.0.1
-        href: extensibility/extensibility-changes-801.md
-      - name: Extensibility changes version 8.0.2
-        href: extensibility/extensibility-changes-802.md
-      - name: Extensibility changes version 8.0.3
-        href: extensibility/extensibility-changes-803.md
-      - name: Extensibility changes version 8.0.4
-        href: extensibility/extensibility-changes-804.md
-      - name: Extensibility changes version 8.1
-        href: extensibility/extensibility-changes-81.md       
-      - name: Extensibility changes version 8.1.1
-        href: extensibility/extensibility-changes-811.md   
-      - name: Extensibility changes version 8.1.2
-        href: extensibility/extensibility-changes-812.md
-      - name: Extensibility changes version 8.1.3
-        href: extensibility/extensibility-changes-813.md  
-      - name: Extensibility changes version 10.0
-        href: extensibility/extensibility-changes-10.md  
-      - name: Extensibility changes version 10.0.1
-        href: extensibility/extensibility-changes-10-1.md  
-      - name: Extensibility changes version 10.0.2
-        href: extensibility/extensibility-changes-10-2.md  
       - name: Extensibility changes version 10.0.3
         href: extensibility/extensibility-changes-10-3.md  
+      - name: Extensibility changes version 10.0.2
+        href: extensibility/extensibility-changes-10-2.md  
+      - name: Extensibility changes version 10.0.1
+        href: extensibility/extensibility-changes-10-1.md  
+      - name: Extensibility changes version 10.0
+        href: extensibility/extensibility-changes-10.md  
+      - name: Extensibility changes version 8.1.3
+        href: extensibility/extensibility-changes-813.md  
+      - name: Extensibility changes version 8.1.2
+        href: extensibility/extensibility-changes-812.md
+      - name: Extensibility changes version 8.1.1
+        href: extensibility/extensibility-changes-811.md   
+      - name: Extensibility changes version 8.1
+        href: extensibility/extensibility-changes-81.md       
+      - name: Extensibility changes version 8.0.4
+        href: extensibility/extensibility-changes-804.md
+      - name: Extensibility changes version 8.0.3
+        href: extensibility/extensibility-changes-803.md
+      - name: Extensibility changes version 8.0.2
+        href: extensibility/extensibility-changes-802.md
+      - name: Extensibility changes version 8.0.1
+        href: extensibility/extensibility-changes-801.md
+      - name: Extensibility changes in version 8.0
+        href: extensibility/changes-80.md
+      - name: Extensibility changes in version 7.3
+        href: extensibility/extensibility-changes-73.md
+      - name: Extensibility changes July 2017
+        href: extensibility/changes-july-2017.md
     - name: Fundamentals
       items:
       - name: Intrusive customizations
