@@ -56,11 +56,10 @@ The **Feature management** workspace also contains several tabs with a list of f
 
 ## Enable a feature
 
-If a feature hasn't been enabled, an **Enable** button appears in the details pane. You can use this button to enable the feature.
+If a feature hasn't been enabled, an **Enable Now** button appears in the details pane. You can use this button to enable the feature.
 
-1. Select the feature that you want to enable, and then, in the details pane, select **Enable**.
-2. A slider appears, where you can specify the date on which the feature should be enabled. By default, this date is set to the current date.
-3. Select **Enable** to enable the feature.
+1. Select the feature that you want to enable, and then, in the details pane, select **Enable Now**.
+2. The feature will be enabled.
 
 Some features can't be disabled after you enable them. If the feature that you are attempting to enable can't be disabled, you receive a warning. At this point, you can select **Cancel** to cancel the operation and leave the feature disabled. However, if you select **Enable** and enable the feature, you won't be able to disable it later.
 
@@ -68,9 +67,9 @@ After the feature is enabled, a message appears below the **Learn more** link in
 
 ## Reschedule a feature
 
-If a feature has been enabled in the future, a **Reschedule** button appears in the details pane. You can use this button to change the **Enable date** to a different date.
+If a feature has been enabled in the future, a **Schedule** button appears in the details pane. You can use this button to change the **Enable date** to a different date.
 
-1. Select a scheduled feature that you want to reschedule, and then, in the details pane, select **Reschedule**.
+1. Select a scheduled feature that you want to reschedule, and then, in the details pane, select **Schedule**.
 2. A slider appears, where you can specify the date on which the feature should be enabled. 
 3. Select **Enable** to reschedule the feature or **Disable** to cancel the schedule.
 
@@ -88,11 +87,28 @@ After the feature is disabled, a message appears below the **Learn more** link i
 
 A critical feature may be delivered that must be enabled automatically when you do an update. It will be enabled automatically on the **Enable date**. A message will appear below the **Learn more** link in the details pane. This message will state that the feature was enabled or will be enabled automatically on the **Enable date**. It will appear every time that you select the feature in the feature list.
 
+## Enable all features automatically
+
+All features are added to your environment with the features set to **Off** unless the feature is mandatory. However, if you want to automatically enable all new features, you can use the dropdown under the workspace title to change what will happen when new features are added. 
+
+- Select **All new features will be enabled by default** to enable all new features automatically when they are added to your environment. 
+- Select **All new features will be disabled by default** to disable all new features automatically when they are added to your environment. 
+
 ## Assigning roles
 
 The **Feature management** workspace can be opened by system admins, and by users who are assigned to the Feature manager or Feature viewer roles that were created to support the Feature management experience. Users in the Feature manager role can turn any feature on or off. They can also update the comments section for the feature. Users in the Feature viewer role can only view the **Feature management** workspace. They can't turn features on or off.
 
 The Feature manager role and Feature viewer role don't override the existing security that a user has. The roles only control access to enabling features. It doesn't provide access to the features themselves.
+
+## Features that use config keys
+
+If a feature uses a config key and the config key is not enabled, the **Feature management** workspace will not show the feature in the list of available features. When you enable the config key, you must refresh the list of features using the **Check for update** menu item. The feature will then appear in the list. 
+
+The feature will not be removed from the list if you disable the config key. 
+
+## Data entities
+
+A data entity called **Feature management** will allow you to export the feature management settings from one environment and then import them into another environment. The entity will only update existing features. The business logic in the entity will also ensure that the same rules used in the form will be applied upon import. For example, you can't override a mandatory feature setting by removing the date during an import.  
 
 ## Using feature management to enable ISV features or custom features
 
