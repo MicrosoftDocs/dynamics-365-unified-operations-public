@@ -52,13 +52,14 @@ For information about how to get started with Talent, see the **Talent** methodo
 After you've created an LCS project, you can provision Talent into an environment.
 
 1. In your LCS project, select the **Talent App Management** tile.
-2. Talent is always provisioned into a Microsoft PowerApps environment to enable PowerApps integration and extensibility. Read the “Selecting a PowerApps environment” section of this topic before you continue. If you don't already have a PowerApps environment, select Manage environments in LCS or navigate to the PowerApps Admin center. Then follow the steps to [Create a PowerApps environment](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
+2. Indicate whether this is a sandbox or production instance of Talent.  Early preview features may be available in Sandbox instances to allow for early feedback and testing. 
+3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Talent Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
+4. Talent is always provisioned into a Microsoft PowerApps environment to enable PowerApps integration and extensibility. Read the “Selecting a PowerApps environment” section of this topic before you continue. If you don't already have a PowerApps environment, select Manage environments in LCS or navigate to the PowerApps Admin center. Then follow the steps to [Create a PowerApps environment](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > To view existing environments or create new environments, the tenant admin who provisions Talent must be assigned to the PowerApps P2 license. If your organization doesn't have a PowerApps P2 license, you can get one from your CSP or from the [PowerApps pricing page](https://powerapps.microsoft.com/en-us/pricing/).
 
-4. Select **Add**, and then select the environment to provision Talent into.
-5. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Talent Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
+5. Select the environment to provision Talent into.
 6. Select **Yes** to agree to the terms and begin deployment.
 
     Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes a few minutes. If the provisioning process is unsuccessful, you must contact Support.
