@@ -70,7 +70,7 @@ This section includes fundamentals, principles, and practices for making extensi
 
 ## How do I create extensions?
 
-This sections includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific topic.
+This section includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific topic.
 
 ### Data types
 + [Add an enum value](add-enum-value.md)
