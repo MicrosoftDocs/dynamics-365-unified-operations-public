@@ -47,7 +47,7 @@ These introductory topics contain general information about customization. This 
 
 ## What's new
 
-Read [What's new for extensibility](extensibility-whats-new.md) for extensibility-related updates that have been made since July 2017.
+Read [What's new for extensibility](extensibility-new.md) for extensibility-related updates that have been made since July 2017.
 
 ## Getting started
 
