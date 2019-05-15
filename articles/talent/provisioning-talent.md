@@ -5,7 +5,7 @@ title: Provision Talent
 description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 for Talent. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 00/05/2019
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ For information about how to get started with Talent, see the **Talent** methodo
 After you've created an LCS project, you can provision Talent into an environment.
 
 1. In your LCS project, select the **Talent App Management** tile.
-2. Indicate whether this is a sandbox or production instance of Talent.  Early preview features may be available in Sandbox instances to allow for early feedback and testing. 
+2. Indicate whether this is a Sandbox or Production instance of Talent. Early preview features may be available in Sandbox instances to allow for early feedback and testing. 
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Talent Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
 4. Talent is always provisioned into a Microsoft PowerApps environment to enable PowerApps integration and extensibility. Read the “Selecting a PowerApps environment” section of this topic before you continue. If you don't already have a PowerApps environment, select Manage environments in LCS or navigate to the PowerApps Admin center. Then follow the steps to [Create a PowerApps environment](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
