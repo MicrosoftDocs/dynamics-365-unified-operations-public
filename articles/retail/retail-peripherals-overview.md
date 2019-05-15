@@ -299,7 +299,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>
@@ -310,7 +310,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>
@@ -378,7 +378,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Windows driver
-<blockquote>NOTE: For Windows printers on a network, the user of the hardware station must have permission to access the printer.</blockquote>
+<p><strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</p>
 </li>
 <li>Network</li>
 </ul>
@@ -408,7 +408,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>
@@ -473,7 +473,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Windows driver
-<blockquote>NOTE: For Windows printers on a network, the user of the hardware station must have permission to access the printer.</blockquote>
+<p><strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</p>
 </li>
 <li>Network</li>
 </ul>
@@ -495,7 +495,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>

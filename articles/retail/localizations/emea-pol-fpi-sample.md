@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.1
 ---
 # Fiscal printer integration sample for Poland
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Introduction
 

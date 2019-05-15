@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1.1
 ---
 # Fiscal printer integration sample for Italy
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Introduction
 

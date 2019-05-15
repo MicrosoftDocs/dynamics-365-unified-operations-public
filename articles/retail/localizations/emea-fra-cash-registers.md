@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 ---
 # Cash register functionality for France
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality.
 
