@@ -2836,6 +2836,8 @@
         href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
       - name: Define the dependency of configurations on other components
         href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+      - name: Trace the execution of ER formats to troubleshoot performance issues
+        href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
         items:
         - name: Design data models to use financial dimensions as data sources
           href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json

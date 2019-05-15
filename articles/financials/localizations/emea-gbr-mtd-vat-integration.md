@@ -95,8 +95,8 @@ To prepare Finance and Operations to interoperate with MTD for VAT, you must imp
 |--------|---------------------------------------------|--------------------------------------|-------------|
 | 1      | **Tax declaration model**                   | **Model**                            | A generic model for different tax declarations |
 | 2      | Tax declaration model mapping               | Model mapping                        | A generic model mapping for VAT declarations |
-| 3      | MTD VAT returns exporting JSON (UK)         | Format (exporting)                   | A VAT return in JSON format for submission to HMRC |
-| 4      | MTD VAT returns exporting EXCEL (UK)        | Format (exporting)                   | The **VAT 100** report (a declaration in Microsoft Excel format) |
+| 3      | VAT Declaration JSON (UK)                   | Format (exporting)                   | A VAT return in JSON format for submission to HMRC |
+| 4      | VAT Declaration Excel (UK)                  | Format (exporting)                   | The **VAT 100** report (a declaration in Microsoft Excel format) |
 | 5      | MTD VAT interoperation (UK)                 | Format (exporting)                   | A format that is used to create a URL path for HMRC endpoints and to request a test user. |
 | 6      | MTD VAT importing model mapping (UK)        | Model mapping (importing)            | The importing model mapping for VAT obligations |
 | 7      | MTD VAT obligations importing JSON (UK)     | Format (importing)                   | The format for importing VAT obligations that are retrieved from HMRC |
