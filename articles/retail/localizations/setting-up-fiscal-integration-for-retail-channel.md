@@ -91,7 +91,7 @@ Before you use the fiscal integration functionality, you should configure the fo
         You can change the data mapping parameters in a connector functional profile. To restore the default parameters that are defined in the fiscal document provider configuration, select **Update**.
 
         **Examples**
-	
+
         |   | Format | Example |
         |---|--------|---------|
         | **VAT rates settings** | value : VATrate | 1 : 2000, 2 : 1800 |
@@ -114,7 +114,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 4. Create fiscal connector groups.
 
     A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process. For example, if several fiscal printer models can be used in a retail store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.
-	
+
     1. On the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**), create a new fiscal connector group.
     2. Add functional profiles to the connector group. On the **Functional profiles** tab, select **Add**, and select a profile number. Each fiscal connector in a connector group can only have one functional profile.
     3. To suspend use of the functional profile, set the **Disable** option to **Yes**. This change affects only the current connector group. You can continue to use the same functional profile in other connector groups.
@@ -122,7 +122,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 5. Create a fiscal registration process.
 
     A fiscal registration process is defined by the sequence of registration steps and the connector group that is used for each step.
-	
+
     1. On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), create a new record for each unique process of fiscal registration.
     2. Add registration steps to the process:
 
@@ -148,7 +148,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 7. On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), select **Validate** to validate the fiscal registration process.
 
     We recommend that you run this type of validation in the following cases:
-	
+
     - After you've completed all the settings for a new registration process, including when you assign registration processes to POS functionality profiles and hardware profiles.
     - After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).
     - After you make changes in the assignment of connector technical profiles to hardware profiles.

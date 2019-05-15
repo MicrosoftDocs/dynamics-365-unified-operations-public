@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 8.1.2
 
 # Dynamics 365 payment data use
 
+[!include [banner](includes/banner.md)]
+
 This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
 
 ## Key terms
