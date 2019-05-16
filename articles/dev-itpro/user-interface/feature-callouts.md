@@ -5,7 +5,7 @@ title: Feature callouts
 description: Trigger feature callouts raise awareness of new capabilities to users.
 author: jasongre
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,10 +33,10 @@ ms.dyn365.ops.version: Platform update 26
 # Feature callouts
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 ## Introduction
-  While documentation is helpful for explaining new features, it’s also important to raise awareness of these new capabilities as users encounter the feature while using the product. As a result, feature callouts are available in Platform update 26. You can use feature callouts to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. 
+While documentation is helpful for explaining new features, it’s also important to raise awareness of these new capabilities as users encounter the feature while using the product. As a result, feature callouts are available in Platform update 26. You can use feature callouts to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. 
 
 In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
 
