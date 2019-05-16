@@ -33,49 +33,50 @@ ms.dyn365.ops.version: AX 7.0.0
 # Multi-user testing with Performance SDK and Azure DevOps
 [!include [banner](../includes/banner.md)]
 
-Prerequisites
+## Prerequisites
+Before you work through the steps in this topic, verify that you have the following prerequisites: 
 
-- A Dynamics 365 for Finance and Operations development environment with Platform Update 21 or above in own your Azure subscription
-- Visual Studio 2015 Enterprise edition in development environment
-- A tier 2 or above sandbox with the same release (App + PU) as your development environment
+- A Microsoft Dynamics 365 for Finance and Operations development environment with Platform Update 21 or later in own your Azure subscription.
+- Microsoft Visual Studio 2015 Enterprise edition in a development environment.
+- A tier-2 or above sandbox with the same release (App + PU) as your development environment.
 - You have completed all steps in Single user testing with Task recorder and Performance SDK  and all steps in Multi-user testing with Performance SDK and local test controller  except for step “Run multi-user testing with local test controller”
 
 ## Prepare PerfSDKSample solution for multi-user testing
 
-1. Connect Visual Studio in development environment to an Azure DevOps project
+1. Connect Visual Studio in development environment to an Azure DevOps project.
  
  [![Connect to Team Foundation Server window](./media/perfsdk-azuredevops-01.png)](./media/perfsdk-azuredevops-01.png)
  
   > [!NOTE]
-  > When add Azure DevOps server, please use https://<YourAzureDevOpsAccount>.visualstudio.com
+  > When you add the Azure DevOps server, use https://<YourAzureDevOpsAccount>.visualstudio.com.
 
-2. Go to your Azure DevOps project dashboard, click Open in Visual Studio and click on Allow in prompted window. After Visual Studio opened and if it’s not running under administrator you need to re-open it as administrator
+2. Go to your Azure DevOps project dashboard, click **Open in Visual Studio**, and then click **Allow in prompted window**. After Visual Studio opens, verify that you are running it as an administrator. If not, close and re-open it as an administrator.
 
   [![Azure Project dashboard](./media/perfsdk-azuredevops-02.png)](./media/perfsdk-azuredevops-02.png)
  
-3. Change vsonline.testsettings for Azure DevOps
-4. Select Run tests using Visual Studio Team Services in General tab
+3. Change **vsonline.testsettings** for Azure DevOps.
+4. On the **General** tab, select **Run tests using Visual Studio Team Services**.
 
   [![Select Run tests using Visual Studio Team Services](./media/perfsdk-azuredevops-03.png)](./media/perfsdk-azuredevops-03.png)
   
-5. Keep Deployment tab as it is in Multi-user testing with Performance SDK and local test controller 
+5. Keep the **Deployment** tab as it is in the topic, [Multi-user testing with Performance SDK and local test controller](multi-user-testing-local-test-controller.md). 
 
   [![Deployment tab](./media/perfsdk-azuredevops-04.png)](./media/perfsdk-azuredevops-04.png)
   
-6. Point Setup script in Setup and Cleanup Scripts tab to setup.cmd under Visual Studio Online folder
+6. On the **Setup and Cleanup Scripts** tab, point **Setup script** to **setup.cmd** under the Visual Studio Online folder.
 
   [![Setup and Cleanup Scripts tab](./media/perfsdk-azuredevops-05.png)](./media/perfsdk-azuredevops-05.png)
 
-7. Keep Additional Settings as it is in Multi-user testing with Performance SDK and local test controller 
+7. Keep the **Additional Settings** tab as instructed in the topic, [Multi-user testing with Performance SDK and local test controller](multi-user-testing-local-test-controller.md). 
 
   [![Additional settings tab](./media/perfsdk-azuredevops-06.png)](./media/perfsdk-azuredevops-06.png)
 
-8. Click on Apply and Close
+8. Click **Apply and Close**.
 
 ## Run multi-user testing with Azure DevOps
 
-1.	Open SampleLoadTest.loadtest
-2.	Click on Run Load Test
+1.	Open **SampleLoadTest.loadtest**.
+2.	Click **Run Load Test**.
  
  [![Run Load Test menu option](./media/perfsdk-azuredevops-07.png)](./media/perfsdk-azuredevops-07.png)
  
@@ -83,7 +84,7 @@ Prerequisites
  
  [![SampleLoadTestLoadTest progress chart continued](./media/perfsdk-azuredevops-09.png)](./media/perfsdk-azuredevops-09.png)
 
-3.	Review the test output
+3.	Review the test output.
 
    [![Test output screen 1](./media/perfsdk-azuredevops-10.png)](./media/perfsdk-azuredevops-10.png)
    
@@ -94,7 +95,7 @@ Prerequisites
  
 ## Tips
 
-If you want switch multi-user testing between local test controller and Azure DevOps, you could create a copy of testsettings for each of them, select the one you want as Active Test Settings
+If you want switch multi-user testing between local test controller and Azure DevOps, create a copy of **testsettings** for each of them and then select the copy you want as **Active Test Settings**.
  
 ## Troubleshooting
 For information about single or multi-user testing with PerformanceSDK, see [Troubleshooting guide](troubleshoot-perf-sdk-user-testing.md).
