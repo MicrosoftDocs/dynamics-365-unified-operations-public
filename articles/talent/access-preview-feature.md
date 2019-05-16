@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Access preview features in Talent
-description: This topic describes how an administrator can enable the preview features, and it lists the features that are currently enabled for preview.
+title: Access preview features in Microsoft Dynamics 365 for Talent
+description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 for Talent, and it lists the features that are currently enabled for preview.
 author: tracykeya
 manager: AnnBe
-ms.date: 04/29/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,54 +34,77 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 
 [!include[banner](../includes/banner.md)]
 
-As part of our continuous rollout of product capabilities, we want to let customers experience new features as soon as possible. Administrators can see and use preview features in their environments. These features are almost ready for general availability and have gone through extensive testing. We are just looking for a final round of customer feedback and validation before we generally release them.
+As part of our continuous rollout of human capital management (HCM) capabilities for Microsoft Dynamics 365 for Talent, we want to let customers experience new features as soon as possible. Administrators can see and use preview features in their environments. These features are almost ready for general availability and have gone through extensive testing. We're just looking for a final round of customer feedback and validation before we release them for general availability.
 
 This topic describes how an administrator can enable preview features, and it lists the features that are currently available for preview. This list will be updated as features are released to general availability and as new features are released to preview. No notification is given when new features are released to preview. Users will just start to see the features.
 
 ## Enable or disable preview features
 
-You can use the **Preview Features** setting in the Microsoft Dynamics 365 for Talent admin center to enable or disable preview features. By default, the setting is turned off. The action of enabling or disabling preview features is environment-specific.
+To access preview features, you must first enable them in your environment. The action of enabling or disabling preview features is environment-specific.
 
 > [!IMPORTANT]
 > By turning on the **Preview Features** setting, you enable preview features for all users in your organization who are in that environment. By turning off the setting, you disable preview features and make them inaccessible to your users. Preview features have limited support in Talent. They might use fewer privacy and security measures, and they aren't included in the Talent service level agreement. You should not use preview features to process personal data (that is, any information that could identify you), or to process other data that is subject to legal or regulatory compliance requirements.
 
-### Enable or disable preview features for your organization
-
-#### Attract
+### Attract
 
 1. Sign in to Microsoft Dynamics 365 for Talent: Attract.
-2. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin settings**.
-3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue.
-4. Optionally you can control individual features by enabling/disabling specific features on this page.
-5. Refresh your browser to start to see the new features. (Any users who are already signed in will see the features the next time that they sign in, or they can refresh their browser to see the features immediately.)
+2. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
+3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue and says **On**.
+4. Select or deselect individual preview features. If you do nothing, all available preview features are enabled.
+5. Refresh your browser to start to see the new features. (Any users who are already signed in will see the features the next time they sign in, or they can refresh their browser to see the features immediately.)
 
-#### Core HR
+> [!NOTE]
+> Some preview features might require additional configuration. Follow the links next to the preview feature to complete the setup for it.
 
-1. Sign in to Talent. The core Human resources workspace will open, from which you'll complete the remaining steps. 
-2. Select **System administration \> Links System parameters**.
-3. On the **System Parameters page**, on the **Preview features** tab, set the **Enable preview mode for all users** option to **Yes** to make preview features available.
+### Core HR
+
+1. Sign in to Talent.
+2. Select **System administration**, select the **Links** tab, and then select **System parameters**.
+3. On the **System parameters**, select the **Preview features** tab.
+4. Under **Enable preview mode for all users**, change the toggle to **Yes** to make preview features available.
 
 > [!NOTE]
 > To disable preview features, use the same basic steps. When you disable preview features, they become inaccessible to your users, and errors might occur in processes that are associated with the features.
+
+### Onboard
+
+There are no preview features available for Onboard at this time.
 
 ## Features that are currently in preview
 
 ### Attract
 
-- **Relevant Candidates in a Job** – Recruiters and hiring managers can easily see which candidates may be the most relevant for the job across all applicants. The top 5 applicants are shown based on their the relevance of their resume/profile to the job description.
-- **Relevant Jobs** – Candidates now see a list of other jobs that are relevant to them based on their resume/profile and the job descriptions.  Currently this is shown to candidates once they apply as a suggestion for other opportunities.
-- **EEO/OFCCP Support** – New activity types enable the use of a predefined form for the collection of Equal Employment Opportunity  (EEO) and Office of Federal Contract Compliance Program (OFCCP) data from the candidate.  This is a predefined form and is not editable.
+- **Candidate recommendation** – If more than ten candidates have resumes or complete profiles, the candidates who most closely meet a job's requirements appear in the **Applicants to consider** section on that job's page. For more information, see [Candidate recommendations](./intelligent-recommendations.md#candidate-recommendations).
 
-    > [!NOTE]
-    > Jobs that are posted are visible only to customers who subscribe to one or more LinkedIn job listing products. Otherwise, customers see a job only if they explicitly search for it. There is a delay when jobs are posted to LinkedIn. A job might take up to a few hours to appear after it's posted from Attract.
+- **Job recommendation** – If there are more than ten jobs posted on your career site, Attract provides job recommendations to prospects. For more information, see [Job recommendations](./intelligent-recommendations.md#job-recommendations).
 
-- **Candidate apply** – Both internal and external candidates can now apply directly from the job page on the career site.
-- **Offer management** – Users can now create offer letters from templates that include placeholders. As candidates advance to the Offer stage, recruiters and hiring managers can use the Offer tool to prepare a candidate's formal offer via templates, send the offer for internal approval, and finally send the offer to the candidate for signature. Many new capabilities will be added to the Offer tool over time, and the preview feature will be updated with these capabilities as we are ready to release them to preview.
-- **[Analytic reports](analytic-reports.md)** – Hiring teams can view key metrics for a single job with Job Analytics or aggregated metrics accross all jobs in the Analytics Hub.
+- **Broadbean integration** – 
+
+- **Analytics** – Hiring teams can view key metrics for a single job with Job Analytics or aggregated metrics accross all jobs in the Analytics Hub. For more information, see [Use analytic reports for hiring process insights](./analytic-reports.md).
+
+- **EEO** – New activity types enable the use of a predefined form for the collection of Equal Employment Opportunity  (EEO) and Office of Federal Contract Compliance Program (OFCCP) data from the candidate.  This is a predefined form and is not editable.
+
+- **Prospect recommendation** – Attract reviews past applicants and current candidates to provide you with a list of prospects who are a good match for your job. For more information, see [Prospect recommendations](./intelligent-recommendations.md#prospect-recommendations).
+
+- **Relevance search** –
+
+- **Activity audience** –
+
+- **Apply with LinkedIn** –
+
+- **Source tracking** –
+
+- **Silver medalist** –
+
+
 
 ### Core HR
 
 - **Open Enrollment** – Benefits open enrollment gives employees a simple, self-service experience for selecting their benefits. Human Resource (HR) administrators can configure the benefits open enrollment process for their organization, and the enrollment experience for employees, by using an easy-to-follow guided solution.
+
+### Onboard
+
+There are no preview features available for Onboard at this time.
 
 ## Feedback
 
