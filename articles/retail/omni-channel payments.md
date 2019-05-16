@@ -225,11 +225,11 @@ Some cards cannot be used for omni-channel payments because they do not support 
 
 ### Use a different card
 
-If a customer comes to the store for order pickup, they have the option to use a different card. When the store associate is prompted to 'Use available payment method' upon order pickup, they can ask the customer if they want to use the same card. If the customer has lost the card made to create the order, the cashier can select 'Use a different payment method' to pay for the order with a different card. If a different card is selected, the authorization on the original card is no longer valid and the original card may not be used for subsequent pickups. 
+If a customer comes to the store for order pickup, they have the option to use a different card. When the store associate is prompted to 'Use available payment method' upon order pickup, they can ask the customer if they want to use the same card. If the customer has lost the card made to create the order, the cashier can select 'Use a different payment method' to pay for the order with a different card. The next time the customer comes in to pick up more items for the same order, if the original card authorization is still valid, the cashier will again ask if the customer wants to use that card.
 
 ### Invalid authorization
 
-If a card used to create an order is no longer valid, after products are selected for pickup, the cashier will be informed that the authorization is invalid and they will be prompted to ask the customer for a different method of payment. 
+If a card used to create an order is no longer valid, after products are selected for pickup, the payment capture request will fail. The POS payment connector will then try to create a new authorization and capture using the same card details. If the new authorization or capture fails, then the cashier will be informed that the payment could not be processed and they will need to get a new payment from the customer. 
 
 ### Multiple payments available
 
