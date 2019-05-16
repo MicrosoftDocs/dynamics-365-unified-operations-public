@@ -80,13 +80,16 @@ The following components and setup steps are required.
 
 In addition to the eCommerce setup steps provided in the link above, the Adyen connector settings must have the parameter "Allow saving payment information in e-commerce" set to **True**. 
 
-**Omni-channel payments configuration:** In the back office, go to **Retail > Headquarters setup > Parameters > Retail shared parameters**. Select the **Omni-channel payments** tab and set **Use omni-channel payments** to **Yes** 
+**Omni-channel payments configuration:** In the back office, go to **Retail > Headquarters setup > Parameters > Retail shared parameters**. Select the **Omni-channel payments** tab and set **Use omni-channel payments** to **Yes**.
 
-**Payment services** The default payment connector on the **Payment services** page is used by the call center to process payments. To support scenarios such as "Buy in call center, pickup in store", this must be set up the Adyen payment connector or one that is compliant with omni-channel payment implementation requirements.
+**Payment services** 
+The default payment connector on the **Payment services** page is used by the call center to process payments. To support scenarios such as "Buy in call center, pickup in store", this must be set up the Adyen payment connector or one that is compliant with omni-channel payment implementation requirements.
 
-**EFT service** Payments through a payment terminal must be set up in the **EFT service** fasttab on the hardware profile. The Adyen connector supports omni-channel payments scenarios out of box. Other payment connectors supporting the iNamedRequestHandler interface may also be used if they support omni-channel payments.
+**EFT service** 
+Payments through a payment terminal must be set up in the **EFT service** fasttab on the hardware profile. The Adyen connector supports omni-channel payments scenarios out of box. Other payment connectors supporting the iNamedRequestHandler interface may also be used if they support omni-channel payments.
 
-**Payment connector availability** When an order is recalled, the payment tender lines that are recalled with the order include the name of the payment connector that was used to create the authorizations associated with that order. Upon fulfillment, the payments SDK will attempt to use the same connector that was used to generate the original authorization, so a payment connector with the same merchant properties must be available for capture. 
+**Payment connector availability** 
+When an order is recalled, the payment tender lines that are recalled with the order include the name of the payment connector that was used to create the authorizations associated with that order. Upon fulfillment, the payments SDK will attempt to use the same connector that was used to generate the original authorization, so a payment connector with the same merchant properties must be available for capture. 
 
 **Card types**
 For omni-channel scenarios to work properly, each channel needs to have same setup for tender types that can be used for omni-channel. This includes payment method IDs and card type IDs. For example, if tender type "Cards" has ID "2" in the online store, it should have the same ID in the retail store setup. The same is true for card type IDs-- if card number "12" is set to "VISA" in the online store, the same should be set up for retail store. 
