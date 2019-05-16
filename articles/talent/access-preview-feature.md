@@ -78,7 +78,7 @@ There are no preview features available for Onboard at this time.
 
 - **Job recommendation** – If there are more than ten jobs posted on your career site, Attract provides job recommendations to prospects. For more information, see [Job recommendations](./intelligent-recommendations.md#job-recommendations).
 
-- **Broadbean integration** – 
+- **Broadbean integration** – You can post jobs from Attract to Broadbean, an external job posting site. After enabling this preview feature, you'll need to complete the setup by entering your Broadbean username, client ID, and encryption token. For more information, see [Post jobs to Broadbean](./posting-jobs-external.md#post-jobs-to-broadbean).
 
 - **Analytics** – Hiring teams can view key metrics for a single job with Job Analytics or aggregated metrics accross all jobs in the Analytics Hub. For more information, see [Use analytic reports for hiring process insights](./analytic-reports.md).
 
@@ -86,7 +86,7 @@ There are no preview features available for Onboard at this time.
 
 - **Prospect recommendation** – Attract reviews past applicants and current candidates to provide you with a list of prospects who are a good match for your job. For more information, see [Prospect recommendations](./intelligent-recommendations.md#prospect-recommendations).
 
-- **Relevance search** –
+- **Relevance search** – Search your entire candidate database for particular skills, names, or educational background. Attract searches the entire profile and highlights all the matches found. Attract also searches all documents that are available for a candidate and intelligently ranks the search results. For more information, see [Search and view candidate profiles](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 - **Activity audience** –
 
