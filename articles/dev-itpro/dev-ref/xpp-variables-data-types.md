@@ -5,7 +5,7 @@ title: X++ variables and data types
 description: This topic describes variables and data types in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
