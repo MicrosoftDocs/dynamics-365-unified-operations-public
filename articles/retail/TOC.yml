@@ -115,6 +115,8 @@
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Omni-channel payments overview
+  href: omni-channel-payments.md
 - name: Omni-channel advanced auto charges
   items:
   - name: Configure and use advanced auto charges
