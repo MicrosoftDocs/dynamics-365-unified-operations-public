@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Retail version 10.0.2
+title: What's new or changed in Dynamics 365 for Retail version 10.0.2
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 04/05/2019
+ms.date: 0516/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -29,9 +29,8 @@ ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
 
 ---
-# Preview features in Dynamics 365 for Retail version 10.0.2
+# What's new or changed in Dynamics 365 for Retail version 10.0.2
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail. 
