@@ -5,7 +5,7 @@ title: Shipping discount overview
 description: This topic describes the shipping discount capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps required to start using these discounts.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 04/04/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 # Shipping discount overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the shipping promotion capability available within Microsoft Dynamics 365 for Retail. Free or discounted shipping is one of the highly influencing factors driving the customers' online purchase decisions. Many retailers also leverage the free shipping benefit to motivate the customers to increase their basket size, thus increasing the revenue per transaction. With the 10.0 release of Microsoft Dynamics 365 for Retail, retailers can use "Retail shipping threshold discount" to define the thresholds, which once met, will qualify the customers for discounted or free shipping. For example, spend $50 or more to get free 'Overnight shipping' or sign up for the loyalty program and get free 'Two-day shipping'. 
