@@ -56,8 +56,8 @@ The following omni-channel payment scenarios are supported:
 | Card token | A token that is provided by the payment processor for storage in the point of sale system. This card token can only be used by the merchant receiving the token and is generally harmless outside of the system. May also be referred to as 'Card reference'. Recurring card token |
 | Auth(orization) token | When a point of sale system makes an authorization request to a payment processor, the payment processor will provide a unique ID back to the point of sale system as part of the response to that request. This authorization token, or authorization reference, can later be used when calling the processor to perform actions such as reversing or voiding the authorization. Most commonly the authorization token is used to capture funds when an order is fulfilled or a transaction is being finalized. |
 | Capture token | When a payment is finalized, or captured, the processor provides a reference to that capture back to the point of sale. That capture can be referenced in subsequent operations such as refund requests. | 
-| Card not present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
-| Card present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manually either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
+| Card not present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manually either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
+| Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connected to the Dynamics 365 Point of Sale. |
 
 ## Overview
 
@@ -98,6 +98,9 @@ In addition to the e-commerce setup steps provided in the link above, the Adyen 
 
 **Payment connector availability** When an order is recalled, the payment tender lines that are recalled with the order include the name of the payment connector that was used to create the authorizations associated with that order. Upon fulfillment, the payments SDK will attempt to use the same connector that was used to generate the original authorization, so a payment connector with the same merchant properties must be available for capture. 
 
+**Card types**
+For omni-channel scenarios to work properly, each channel needs to have same setup for tender types that can be used for omni-channel. This includes payment method IDs and card type IDs. For example, if tender type 'Cards' has ID '2' in the online store, it should have the same ID in the retail store setup. The same is true for card type IDs- if card number '12' is set to 'VISA' in the online store, the same should be set up for retail store. 
+
 ### Basic principle supporting omni-channel payments
 
 Payment connectors and payment processors utilize references, or tokens, to reference interactions related to card payments. For example, when a payment authorization is requested, a reference to that authorization is provided so that authorization can referenced later when capturing funds upon fulfillment. This authorization is unique to the merchant, payment connector, and processor. 
@@ -116,6 +119,8 @@ The following omni-channel payment scenarios are supported:
 - Buy in Store A, ship to customer
 
 Variations of the above scenarios are also supported. For example, an online order may have lines that ship to the customer and those that will be picked up in store. All order fulfillment options are supported via omni-channel payments. 
+
+The steps for each of the scenarios below describe how to execute the scenario using demo data. 
 
 ### Buy online, pickup in store
 
@@ -137,12 +142,6 @@ Steps:
 10. Select any payment method to complete the transaction. 
 
 ### Buy in call center, pick up in store
-
-Prerequisites: 
-- Call center with Adyen connector configured
-- Dynamics user who is also set up as a Call center user
-- Omni-channel payments set to "True" in Retail shared parameters
-- Houston point of register with Adyen payment connector configured
 
 Steps:
 1. Navigate to the "Customer service" form in Dynamics for Retail.
@@ -170,11 +169,6 @@ Steps:
 
 ### Buy in Store A, pick up in store B
 
-Prerequisites: 
-- Omni-channel payments set to "True" in Retail shared parameters
-- Houston point of register with Adyen payment connector configured
-- Adyen payment terminal configured for Store A
-
 Steps:
 1. Launch the point of sale for Houston.
 2. Navigate to the transaction screen and in the number pad type "2001" to add Karen Berg to the transaction.
@@ -198,11 +192,6 @@ Steps:
 
 
 ### Buy in Store A, ship to customer
-
-Prerequisites: 
-- Omni-channel payments set to "True" in Retail shared parameters
-- Houston point of register with Adyen payment connector configured
-- Adyen payment terminal configured for Store A
 
 Steps:
 1. Launch the point of sale for Houston.
