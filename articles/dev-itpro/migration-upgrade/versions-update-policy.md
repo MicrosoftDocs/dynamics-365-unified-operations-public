@@ -102,7 +102,6 @@ For information about the new features included in each release, click the links
 | **Release**                                                                                                                                                  | **Build number** | **Availability** | **Expiration date**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|----------------------------|
 | [Platform update 26](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26)               | 7.0.5257        | May 2019   | N/A (Continuously updated) |
-
 | [Platform update 25](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25)               | 7.0.5222        | April 2019   | N/A (Continuously updated) |
 | [Platform update 24](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24)               | 7.0.5179          | March 2019   | N/A (Continuously updated) |
 | [Platform update 23](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23)               | 7.0.5126          | January 2019   | N/A (Continuously updated) |
