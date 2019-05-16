@@ -5,7 +5,7 @@ title: Post jobs to external career sites from Attract
 description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to external recruiting sites
 author: pganapmsft
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -41,6 +41,7 @@ Before you can post jobs to Broadbean, you must configure the Broadbean integrat
 
 > [!NOTE]
 > - To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - To post jobs to Broadbean through Attract, you must have a Broadbean subscription.
 > - This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 ### Configure Broadbean integration
