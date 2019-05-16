@@ -912,7 +912,7 @@
     - name: Expense management
       href: ../financials/expense-management/expense-management.md
       items:
-      - name: Expense reports re-imagined
+      - name: Expense reports reimagined
         href: ../financials/expense-management/ExpenseWorkspaceNew.md
       - name: Plan expense management
         href: ../financials/expense-management/plan-expense-management.md
