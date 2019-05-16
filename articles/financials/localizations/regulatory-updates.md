@@ -61,6 +61,7 @@ For the the latest regulatory update plans, refer to the the following table.
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019         |
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) 
 |      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
+|      April 2019            |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019 on Microsoft Dynamics 365 for Finance and Operations  |
 
 
 ## Additional resources
