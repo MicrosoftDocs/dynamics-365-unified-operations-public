@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Omni-channel credit card payments overview
+title: Omni-channel payments overview
 description: This topic provides an overview of omni-channel payments for Dynamics 365 for Retail.
 author: rubendel
 manager: AnnBe
