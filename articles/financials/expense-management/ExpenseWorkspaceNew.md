@@ -5,7 +5,7 @@ title: Expense reports reimagined
 description: This topic provides information about the redesigned and reimagined experience for expense report entry in Microsoft Dynamics 365 for Finance and Operations. The new experience simplifies the process of completing expense reports and decreases the time that is required.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,10 +51,7 @@ To turn on the new experience, use the **Feature management** workspace to turn 
 
 ## Getting started video for new users
 
-You can watch a short video that shows the main features of expense entry.
-
-> [!NOTE]
-> The video isn't available yet. This topic will be updated when the video is available.
+To learn more about the expense experience, watch the short [Expense experience in Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) video.
 
 ## New features
 
