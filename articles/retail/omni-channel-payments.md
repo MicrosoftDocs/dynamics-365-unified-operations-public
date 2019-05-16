@@ -36,14 +36,6 @@ ms.dyn365.ops.version: AX 8.1.3
 
 This topic provides an overview of omni-channel payments in Microsoft Dynamics 365 for Retail. It includes a comprehensive list of supported features and functionality, setup, troubleshooting information, and descriptions of some common issues.
 
-All scenarios described in this topic are supported out of the box with the Microsoft Dynamics 365 Payment Connector for Adyen or can be implemented for other payment connectors using the Payments SDK.
-
-The following omni-channel payment scenarios are supported:
-
-- Buy online, pick up in store.
-- Buy in call center, pick up in store.
-- Buy in Store A, pick up in store B.
-- Buy in Store A, ship to customer.
 
 ## Key terms
 
