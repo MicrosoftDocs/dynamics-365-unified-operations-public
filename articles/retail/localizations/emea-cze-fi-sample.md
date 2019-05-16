@@ -6,7 +6,7 @@ title: Fiscal registration service integration sample for Czech Republic
 description: This topic provides an overview of the fiscal integration sample for Czech Republic.
 author: josaw
 manager: annbe
-ms.date: 04/01/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.2
 ---
 # Fiscal registration service integration sample for Czech Republic
 
-[!include[banner](../includes/preview-banner.md)]
+
 [!include[banner](../includes/banner.md)]
 
 ## Introduction
