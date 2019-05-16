@@ -51,10 +51,7 @@ To turn on the new experience, use the **Feature management** workspace to turn 
 
 ## Getting started video for new users
 
-You can watch a short video that shows the main features of expense entry.
-
-> [!NOTE]
-> The video isn't available yet. This topic will be updated when the video is available.
+To learn more about the new expense experience, watch the short [Expense experience in Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) video.
 
 ## New features
 
