@@ -44,8 +44,8 @@ You can display product recommendations on your POS device when you use Microsof
 ## Open Layout designer
 
 1. Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
-2. Use the Quick Filter to find the screen that you want to add the control to. For example, filter on the **Screen layout ID** field using a value of 'F2CP16:9M'.
-3. In the list, find and select the desired record. For example, select 'Name: F2CP16:9M Screen Layout ID: F2CP16:9M'.
+2. Use the Quick Filter to find the screen that you want to add the control to. For example, filter on the **Screen layout ID** field using a value of **F2CP16:9M**.
+3. In the list, find and select the desired record. For example, select **Name: F2CP16:9M Screen Layout ID: F2CP16:9M**.
 4. Click **Layout designer**.
 5. Follow the prompts to launch the layout designer. When prompted for credentials, enter the same credentials that were in use when the Layout designer was launched from **Screen layouts** page.
 6. When you log in, a page similar to the one below appears. The layout will be different depending on the customizations that were made for your store.

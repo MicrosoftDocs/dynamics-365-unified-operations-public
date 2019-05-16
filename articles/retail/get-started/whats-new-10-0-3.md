@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail in 10.0.3. 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.3 (June 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.3 (June 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
 
 ## New calculation logic for autocharges in call center for mixed delivery mode sales lines
 
@@ -46,18 +46,20 @@ This feature adds additional capabilities to the new POS features for autocharge
 
 ## HQ extensions 
 
-This release adds numerous extension points so that it’s easier to customize Dynamics 365 for Retail. The following extension points have been added to support custom extension scenarios.
+This release adds numerous extension points so that it's easier to customize Dynamics 365 for Retail. The following extension points have been added to support custom extension scenarios.
 
-  - Retail headquarters: Refactored methods to support extensibility. These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
+- Retail headquarters: Refactored methods to support extensibility. These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
+- Methods:
+
+    - Order capture
  
-  - Methods:
-    - Order capture 
         1. RetailTransactionTransformer.readTransactionSalesTrans
         1. RetailTransactionServiceOrders.createCustomerOrder
         1. Salesline.Insert
         1. Salesline.update
 
     - Merchandising
+
         1. RetailBarCodeManagement.CreateBarCodeNoDim
         1. EcoResProductRelationtable.validateWrite
 
@@ -67,4 +69,4 @@ This release adds numerous extension points so that it’s easier to customize D
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
