@@ -119,7 +119,7 @@ The steps for each of the scenarios below describe how to execute the scenario u
 
 Prerequisites: 
 - Reference storefront with Adyen connector configured.
-- Omni-channel payments set to "True" in Retail shared parameters.
+- **Omni-channel payments** set to **True** in **Retail shared parameters**.
 - Houston point of register with Adyen payment connector configured.
 
 Steps:
