@@ -34,21 +34,21 @@ ms.dyn365.ops.version: AX 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of omni-channel payments support in Microsoft Dynamics 365 for Retail. It includes a comprehensive list of supported features and functionality, setup, troubleshooting information, and descriptions of some common issues.
+This topic provides an overview of omni-channel payments in Microsoft Dynamics 365 for Retail. It includes a comprehensive list of supported features and functionality, setup, troubleshooting information, and descriptions of some common issues.
 
-All scenarios described in this document are supported out of the box with the Microsoft Dynamics 365 Payment Connector for Adyen or can be implemented for other payment connectors using the payments SDK.
+All scenarios described in this topic are supported out of the box with the Microsoft Dynamics 365 Payment Connector for Adyen or can be implemented for other payment connectors using the Payments SDK.
 
 The following omni-channel payment scenarios are supported:
 
-- Buy online, pick up in store
-- Buy in call center, pick up in store
-- Buy in Store A, pick up in store B
-- Buy in Store A, ship to customer
+- Buy online, pick up in store.
+- Buy in call center, pick up in store.
+- Buy in Store A, pick up in store B.
+- Buy in Store A, ship to customer.
 
 ## Key terms
 
 > [!NOTE]
-> The terms 'token' and 'reference' can be used interchangeably.
+> The terms "token" and "reference" can be used interchangeably.
 
 | Term | Description |
 |---|---|
@@ -61,9 +61,9 @@ The following omni-channel payment scenarios are supported:
 
 ## Overview
 
-This topic provides an overview of omni-channel payment support within Dynamics 365 for Retail. In general, "omni-channel payments" describes the ability to create an order in one channel and fulfill it in another channel. The  key to omni-channel payment support is to preserve payment details with the rest of the order details and to utilize those payments when the order is recalled or processed in another channel.   A classic example of this is "Buy online, pickup in store". In that case, the payment details are added when the order is created online and can be recalled at the point of sale to charge the customer's payment card at the time of pickup. 
+In general, "omni-channel payments" describes the ability to create an order in one channel and fulfill it in another channel. The  key to omni-channel payment support is to preserve payment details with the rest of the order details and to utilize those payments when the order is recalled or processed in another channel. A classic example of this is "Buy online, pickup in store". In that scenario, the payment details are added when the order is created online and can be recalled at the point of sale to charge the customer's payment card at the time of pickup. 
 
-All scenarios described in this article can be implemented using the standard payments SDK provided with Microsoft Dynamics 365 for Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out of box implementation of each of the scenarios described in this document. 
+All scenarios described here can be implemented using the standard Payments SDK provided with Microsoft Dynamics 365 for Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out of box implementation of each of the scenarios described. 
 
 
 ### Prerequisites
