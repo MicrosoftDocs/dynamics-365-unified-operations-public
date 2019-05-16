@@ -115,7 +115,7 @@ A *variable* is an identifier that points to a memory location where information
             al = new Alist();
             str s;
             al.Add(1);
-            s.IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
+            IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
         }
     }
 
