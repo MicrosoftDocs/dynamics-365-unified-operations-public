@@ -39,7 +39,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 ### Job approvals on home page
 
-Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which displays the job ID, title, other approvers, and date assigned. User's who submitted a job for approval can review their jobs under **Requested by you**, which displays the approvers who still need to approve the submitted job.
+Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which displays the job ID, title, other approvers, and date assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which displays the approvers who still need to approve the submitted job.
 
 ## Changes in Onboard
 
@@ -51,7 +51,7 @@ Changes described in this section apply to build number 8.1.2297. The numbers in
 
 ### Indicate instance type when provisioning Talent
 
-When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, allowing for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please [contact Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
 ### Common Data Service entity support for custom fields
 
@@ -59,21 +59,21 @@ In this week's release, the following Common Data Service entities now support c
 
 ### Common Data Service integration page
 
-This release provides a new option in **System Administration > Links > Integrations > Common Data Service configuration**. The **Common Data Service configuration** option allows an administrator or data management administrator some flexibility and insights with the Common Data Service (CDS). With this option, you can enable or disable Common Data Service integration with a Talent instance and view the sync details between the Talent instance and the Common Data Service.
+This release provides a new option in **System Administration > Links > Integrations > Common Data Service configuration**. The **Common Data Service configuration** option allows an administrator or data management administrator some flexibility and insights with the Common Data Service. With this option, you can enable or disable Common Data Service integration with a Talent instance and view the sync details between the Talent instance and the Common Data Service.
 
-### Importing performance data with final employee rating (316710)
+### Import performance data with final employee rating (316710)
 
-In this release, you can import historical employee rating data. The FinalEmployeeRatingId field now allows writes.
+In this release, you can import historical employee rating data. The **FinalEmployeeRatingId** field now has write permission.
 
 ### Can't create Worker address in Common Data Service and sync it with Talent (317555)
 
-This change now allows address data created in Common Data Service to sync with Talent.
+This change allows address data created in Common Data Service to sync with Talent.
 
 ## In preview
 
 ### New page to validate position hierarchy data
 
-Human resources and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
+Human resources (HR) and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
 
 ### Specify reason codes on leave types
 
@@ -81,8 +81,8 @@ Organizations might require additional information about time-off requests. You 
 
 ### Require reason codes for specific leave types on time-off requests
 
-Organizations might require reason codes for specific leave types when employees submit time-off requests. This requirement might exist because of company policy or regulatory requirements. You can now specify which leave types require a reason code, and you can require that employees provide a reason code for the leave type on their time-off requests.
+Organizations might require reason codes for specific leave types when employees submit time-off requests. This requirement might exist because of company policy or regulatory requirements. You can specify which leave types require a reason code, and you can require that employees provide a reason code for the leave type on their time-off requests.
 
 ### Provide a leave and absence transaction list for HR
 
-The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind balances.
+The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.
