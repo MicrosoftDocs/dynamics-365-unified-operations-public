@@ -58,8 +58,11 @@ For the the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      |   Germany     |E-invoicing - Customers invoices export in xRechnung 1.1 format         |
 |      April 2019          |   10.0.1      |    United Kingdom     |[VAT Statement submission changes (Making Tax Digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      April 2019          |   10.0.1      |    Brazil     |NF-e new NT 2018.005         |
-|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019         |
-|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) 
+|      April 2019          |   10.0.1      |    Russia     |[VAT declaration format changes from 2019](rus-VAT-declaration) |
+|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) |
+|      April 2019          |   10.0.1      |    Russia     |Land tax declaration changes from 2018 |
+|      April 2019          |   10.0.1      |    Russia     |[Property tax declaration changes from 2019](rus-assessed-tax-declaration)|
+|      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
 |      April 2019            |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019 on Microsoft Dynamics 365 for Finance and Operations  |
 |      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
 |      June 2019            |   10.0.3      | Brazil      |   NF-e new NT 2018.005 - v.1.20   |
