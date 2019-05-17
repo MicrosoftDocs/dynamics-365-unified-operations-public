@@ -45,7 +45,7 @@ We plan to deliver regulatory updates in One Version service updates that are re
 
 In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for some available monthly updates.
 
-For the the latest regulatory update plans, refer to the following table. 
+For the latest regulatory update plans, refer to the following table. 
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
