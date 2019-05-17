@@ -5,7 +5,7 @@ title: Multi-user testing with Performance SDK and local test controller
 description: This topic provides information about how tocomplete multi-user testing by using Visual Studio and Performance SDK with performance test scripts that are generated from Task Recorder. 
 author: hasaid
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 05/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,8 +39,8 @@ Before you work through the steps in this topic, verify that you have the follow
 - A Dynamics 365 for Finance and Operations development environment with Platform Update 21 or above in own your Azure subscription
 - Visual Studio 2015 Enterprise edition in development environment
 - A tier 2 or above sandbox with the same release (App + PU) as your development environment
-- You had configured development environment based on Single user testing with Task recorder and Performance SDK 
-- C# performance testing classes for your E2E scenarios had been generated and you’re able to run single user test based on Single user testing with Task recorder and Performance SDK 
+- You had configured development environment based on [Single user testing with Task recorder and Performance SDK](single-user-test-perf-sdk.md).
+- C# performance testing classes for your E2E scenarios had been generated and you’re able to run single user test based on [Single user testing with Task recorder and Performance SDK](single-user-test-perf-sdk.md). 
 
 ## Configure a Finance and Operations development environment for multi-user testing
 
