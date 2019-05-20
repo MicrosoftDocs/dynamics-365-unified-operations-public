@@ -225,7 +225,7 @@ Use the **Cancel shipment** dialog box to cancel a shipment. You can cancel the 
 ### Register the passing of property rights for a posted sales invoice
 Use the **Register a passing of property** dialog box to register the passing of property rights for a posted sales invoice. Each invoice line in the dialog box contains the quantity that the passing of property rights must be registered for. You can specify a date and the quantity on the invoice line to confirm the passing of property rights. The sales tax charges and miscellaneous charges are recalculated based on the quantity, date of shipment, and the date of the passing of property rights.
 1.	Go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
-2.	Select a sales invoice of the **Postponed passing of property(( posting type.
+2.	Select a sales invoice of the **Postponed passing of property** posting type.
 3.	Select **Passing of property** \> **Passing of property** to open the **Register a passing of property** dialog box.
 4.	In the **Processing** section, in the **Date** field, select the date of the passing of property rights.
 5.	Use the **Mark** field to select one or more invoice lines for the passing of property rights.
