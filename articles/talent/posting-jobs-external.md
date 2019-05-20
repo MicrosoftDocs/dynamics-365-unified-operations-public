@@ -33,31 +33,20 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites such as Broadbean help you accomplish this goal. Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.
+
+## Post jobs to LinkedIn
+
+1. In Attract, open the job that you want to post to LinkedIn.
+2. In the **Postings** section, select the **Post Now** button that corresponds to LinkedIn.
+3. 
+
+
+After LinkedIn successfully completes the posting, the **Postings** section of the job in Attract shows the LinkedIn status as **Posted**.
+
+
+
 
 ## Post jobs to Broadbean
-
-Before you can post jobs to Broadbean, you must configure the Broadbean integration.
-
-> [!NOTE]
-> - To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - To post jobs to Broadbean through Attract, you must have a Broadbean subscription.
-> - This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
-
-### Configure Broadbean integration
-
-1. Sign in to Attract as an admin.
-2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
-3. On the **Job board settings** tab, in the **Enable Broadbean integration** section, turn on the integration.
-4. Contact Broadbean, and enter your information in **Username, Client ID, Encryption Token**.
-
-> [!WARNING]
-> Your Broadbean credentials are sensitive and confidential. Therefore, store and share them responsibly. Anyone who has an Administrator role in Attract can view these credentials.
-
-> [!NOTE]
-> Microsoft and Attract aren't involved in creating and maintaining these values. It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.
-
-### Post a job to Broadbean
 
 After Broadbean has been turned on, recruiters and admins can post a job to it. You must have an apply URL for the job.
 
@@ -112,7 +101,7 @@ You can remove a job posting from Broadbean as you require.
 
 After Broadbean removes the job, the Broadbean item in Attract has a **Post Now** button. The presence of this button indicates that the job has been removed and can be posted again.
 
-### Troubleshoot the Broadbean integration
+### Troubleshoot Broadbean integration
 
 If you're having trouble posting a job to Broadbean, try these steps.
 
