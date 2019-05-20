@@ -49,9 +49,11 @@ To access preview features, you must first enable them in your environment. The 
 
 1. Sign in to Microsoft Dynamics 365 for Talent: Attract.
 2. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
+![Attract Admin center](./media/attract-admin-center.png)
 3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue and says **On**.
+![Enable preview features in Attract](./media/attract-enable-preview-features.png)
 4. Select or deselect individual preview features. If you do nothing, all available preview features are enabled.
-5. Refresh your browser to start to see the new features. (Any users who are already signed in will see the features the next time they sign in, or they can refresh their browser to see the features immediately.)
+5. Refresh your browser to start to see the new features. Any users who are already signed in will see the features the next time they sign in, or they can refresh their browser to see the features immediately.
 
 > [!NOTE]
 > Some preview features might require additional configuration. Follow the links next to the preview feature to complete the setup for it.
@@ -59,9 +61,11 @@ To access preview features, you must first enable them in your environment. The 
 ### Core HR
 
 1. Sign in to Talent.
-2. Select **System administration**, select the **Links** tab, and then select **System parameters**.
-3. On the **System parameters**, select the **Preview features** tab.
-4. Under **Enable preview mode for all users**, change the toggle to **Yes** to make preview features available.
+2. Select **System administration** and then select the **Links** tab.
+3. On the **System administration** page, under **Setup**, select **System parameters**.
+4. On the **System parameters** page, select the **Preview features** tab.    
+5. Under **Enable preview mode for all users**, change the toggle to **Yes** to make preview features available.
+![Enable preview features in Core HR](./media/corehr-enable-preview-features.png)
 
 > [!NOTE]
 > To disable preview features, use the same steps, setting **Enable preview mode for all users** to **No**. When you disable preview features, they become inaccessible to your users, and errors might occur in processes that are associated with the features.
