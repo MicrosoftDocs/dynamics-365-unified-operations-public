@@ -2277,6 +2277,7 @@
             href: ../financials/localizations/rus-ledger-transactions-preview.md 
           - name: Set up exchange rates for currency transactions
             href: ../financials/localizations/rus-exchange-difference.md
+          - name: Import currency exchange rates from CBRF ../financials/general-ledger/import-currency-exchange-rates.md
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
           items:
