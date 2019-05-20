@@ -123,7 +123,7 @@ We want to hear from you about your experience with any of these preview feature
 
 - [Community](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – This site is a great resource where users can discuss use cases, ask questions, and get community help.
 
-- Use the following sites to suggest product ideas. Let us know about features that you want to see in the product, or let us know about any changes you think we should make to existing features.
+- Let us know about features that you want to see in the product, or let us know about any changes you think we should make to existing features. Suggest product ideas on the following sites:
 
     - [Attract ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Core HR ideas](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
