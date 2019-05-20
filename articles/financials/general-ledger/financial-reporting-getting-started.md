@@ -69,7 +69,7 @@ The financial reporting functions are available to users who have the appropriat
 
 | Privilege label                       | Description                                                             | AOT name                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Maintain financial reporting security | Maintain financial reporting security and perform administrative tasks. | FinancialReportsSecurityMaintain |
+| Maintain financial reporting security | Maintain financial reporting security and perform administrative tasks. | FinancialReportsSecuritySystemMaintain |
 | Maintain financial reports            | Design and maintain financial reports.                                  | FinancialReportsMaintainReports  |
 | Generate financial reports            | Generate and refresh financial reports.                                 | FinancialReportsGenerateReports  |
 | View financial reports                | View financial reports.                                                 | FinancialReportsView             |
