@@ -82,7 +82,7 @@ There are no preview features available for Onboard at this time.
 
 - [Analytics](./analytic-reports.md) – Hiring teams can view key metrics for a single job with Job Analytics or aggregated metrics accross all jobs in the Analytics Hub.
 
-- EEO – New activity types enable the use of a predefined form for the collection of Equal Employment Opportunity  (EEO) and Office of Federal Contract Compliance Program (OFCCP) data from the candidate.  This is a predefined form and is not editable.
+- [EEO](./activities-attract.md) – New activity types enable the use of a predefined form for the collection of Equal Employment Opportunity  (EEO) and Office of Federal Contract Compliance Program (OFCCP) data from the candidate.  This is a predefined form and is not editable.
 
 - [Prospect recommendation](./intelligent-recommendations.md#prospect-recommendations) – Attract reviews past applicants and current candidates to provide you with a list of prospects who are a good match for your job.
 
