@@ -115,15 +115,16 @@ There are no preview features available for Onboard at this time.
 
 ## Feedback
 
-Regardless of whether the feedback is positive or negative, we want to hear from you about your use of the preview features. We encourage you to regularly post your feedback on the following sites as you use these or any other features.
+We want to hear from you about your experience with any of these preview features. We encourage you to regularly post your feedback on the following sites as you use these or any other features.
 
 - [Community](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – This site is a great resource where users can discuss use cases, ask questions, and get community help.
-- Use the following sites to suggest product ideas. Let us know about features that you want to see in the product, and also any changes that you think should be made to existing features.
+
+- Use the following sites to suggest product ideas. Let us know about features that you want to see in the product, or let us know about any changes you think we should make to existing features.
 
     - [Attract Ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Core HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Don't include personal data (any information that could identify you) in your feedback or product review submissions. Information that is collected might be analyzed further, and it won't be used to answer requests under applicable privacy laws. Personal data that is collected separately under these programs is subject to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Please don't include personal data (any information that could identify you) in your feedback or product review submissions. Collected information might be analyzed further, and isn't used to answer requests under applicable privacy laws. Personal data that is collected separately under these programs is subject to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Bookmark this topic, and check back often to stay up to date about new preview features as we release them.
