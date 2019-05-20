@@ -64,7 +64,7 @@ To access preview features, you must first enable them in your environment. The 
 4. Under **Enable preview mode for all users**, change the toggle to **Yes** to make preview features available.
 
 > [!NOTE]
-> To disable preview features, use the same basic steps. When you disable preview features, they become inaccessible to your users, and errors might occur in processes that are associated with the features.
+> To disable preview features, use the same steps, setting **Enable preview mode for all users** to **No**. When you disable preview features, they become inaccessible to your users, and errors might occur in processes that are associated with the features.
 
 ### Onboard
 
@@ -74,33 +74,40 @@ There are no preview features available for Onboard at this time.
 
 ### Attract
 
-- **Candidate recommendation** – If more than ten candidates have resumes or complete profiles, the candidates who most closely meet a job's requirements appear in the **Applicants to consider** section on that job's page. For more information, see [Candidate recommendations](./intelligent-recommendations.md#candidate-recommendations).
+- [Candidate recommendation](./intelligent-recommendations.md#candidate-recommendations) – If more than ten candidates have resumes or complete profiles, the candidates who most closely meet a job's requirements appear in the **Applicants to consider** section on that job's page.
 
-- **Job recommendation** – If there are more than ten jobs posted on your career site, Attract provides job recommendations to prospects. For more information, see [Job recommendations](./intelligent-recommendations.md#job-recommendations).
+- [Job recommendation](./intelligent-recommendations.md#job-recommendations) – If there are more than ten jobs posted on your career site, Attract provides job recommendations to prospects.
 
-- **Broadbean integration** – You can post jobs from Attract to Broadbean, an external job posting site. After enabling this preview feature, you'll need to complete the setup by entering your Broadbean username, client ID, and encryption token. For more information, see [Post jobs to Broadbean](./posting-jobs-external.md#post-jobs-to-broadbean).
+- [Broadbean integration](./posting-jobs-external.md#post-jobs-to-broadbean) – You can post jobs from Attract to Broadbean, an external job posting site. After enabling this preview feature, you'll need to complete the setup by entering your Broadbean username, client ID, and encryption token.
 
-- **Analytics** – Hiring teams can view key metrics for a single job with Job Analytics or aggregated metrics accross all jobs in the Analytics Hub. For more information, see [Use analytic reports for hiring process insights](./analytic-reports.md).
+- [Analytics](./analytic-reports.md) – Hiring teams can view key metrics for a single job with Job Analytics or aggregated metrics accross all jobs in the Analytics Hub.
 
-- **EEO** – New activity types enable the use of a predefined form for the collection of Equal Employment Opportunity  (EEO) and Office of Federal Contract Compliance Program (OFCCP) data from the candidate.  This is a predefined form and is not editable.
+- EEO – New activity types enable the use of a predefined form for the collection of Equal Employment Opportunity  (EEO) and Office of Federal Contract Compliance Program (OFCCP) data from the candidate.  This is a predefined form and is not editable.
 
-- **Prospect recommendation** – Attract reviews past applicants and current candidates to provide you with a list of prospects who are a good match for your job. For more information, see [Prospect recommendations](./intelligent-recommendations.md#prospect-recommendations).
+- [Prospect recommendation](./intelligent-recommendations.md#prospect-recommendations) – Attract reviews past applicants and current candidates to provide you with a list of prospects who are a good match for your job.
 
-- **Relevance search** – Search your entire candidate database for particular skills, names, or educational background. Attract searches the entire profile and highlights all the matches found. Attract also searches all documents that are available for a candidate and intelligently ranks the search results. For more information, see [Search and view candidate profiles](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+- [Relevance search](./attract-talent-pools#search-and-view-candidate-profiles) – Search your entire candidate database for particular skills, names, or educational background. Attract searches the entire profile and highlights all the matches found. Attract also searches all documents that are available for a candidate and intelligently ranks the search results.
 
-- **Activity audience** –
+- [Activity audience](./whats-new-talent-march-20#setting-the-audience-on-activities) – Set the audience for activities (such as Interview, Schedule, or Feedback) to All candidates, Internal candidates, or External candidates. You can deliver customer activities, such as YouTube videos, web content, and Microsoft Forms, to All candidates, Internal candidates, External candidates, or the hiring team. 
 
-- **Apply with LinkedIn** –
+- [Apply with LinkedIn](./career-site#enable-applying-for-jobs-with-linkedin-profiles) – You can set up on option on your Attract career site to allow job candidates to apply with LinkedIn. This streamlines the application process for your candidates by letting them use their LinkedIn profile to auto-fill their applications on your career site.
 
-- **Source tracking** –
+- [Source tracking](./source-tracking) – Attract tracks the source of candidate applications, which provides you with valuable information that helps you target your recruiting efforts. You can also select an application source when you're adding a candidate to a job or talent pool.
 
-- **Silver medalist** –
+- [Silver medalist](./whats-new-talent-march-20#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – You can designate candidates who are a great fit for your organization but who you didn't extend an offer to for your current position as silver medalists. This helps reduce your time to hire the next time you have a similar position available.
 
 
 
 ### Core HR
 
-- **Open Enrollment** – Benefits open enrollment gives employees a simple, self-service experience for selecting their benefits. Human Resource (HR) administrators can configure the benefits open enrollment process for their organization, and the enrollment experience for employees, by using an easy-to-follow guided solution.
+- [Validate position hierarchy data](./whats-new-talent-may-13-2019#new-page-to-validate-position-hierarchy-data) – Validate the managerial hierarchy for circular references that might have been imported inadvertently.
+
+- [Specify reason codes on leave types](./whats-new-talent-may-13-2019#specify-reason-codes-on-leave-types) – You can specify reason codes for leave types.
+
+- [Require reason codes on time-off requests](./whats-new-talent-may-13-2019#require-reason-codes-for-specific-leave-types-on-time-off-requests) – In addition to specifying reason codes for leave types, you can require reason codes for time-off requests.
+
+- [Provide a leave and absence transaction list for HR](./whats-new-talent-may-13-2019#provide-a-leave-and-absence-transaction-list-for-hr) – You can view a list of leave and absence transactions to help provide insights into time-off balances.
+
 
 ### Onboard
 
