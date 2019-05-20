@@ -90,7 +90,7 @@ There are no preview features available for Onboard at this time.
 
 - [Activity audience](./whats-new-talent-march-20.md#setting-the-audience-on-activities) – Set the audience for activities (such as Interview, Schedule, or Feedback) to All candidates, Internal candidates, or External candidates. You can deliver customer activities, such as YouTube videos, web content, and Microsoft Forms, to All candidates, Internal candidates, External candidates, or the hiring team. 
 
-- [Apply with LinkedIn](./career-site#enable-applying-for-jobs-with-linkedin-profiles.md) – You can set up on option on your Attract career site to allow job candidates to apply with LinkedIn. This streamlines the application process for your candidates by letting them use their LinkedIn profile to auto-fill their applications on your career site.
+- [Apply with LinkedIn](./career-site.md#enable-applying-for-jobs-with-linkedin-profiles) – You can set up on option on your Attract career site to allow job candidates to apply with LinkedIn. This streamlines the application process for your candidates by letting them use their LinkedIn profile to auto-fill their applications on your career site.
 
 - [Source tracking](./source-tracking.md) – Attract tracks the source of candidate applications, which provides you with valuable information that helps you target your recruiting efforts. You can also select an application source when you're adding a candidate to a job or talent pool.
 
