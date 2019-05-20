@@ -86,27 +86,27 @@ There are no preview features available for Onboard at this time.
 
 - [Prospect recommendation](./intelligent-recommendations.md#prospect-recommendations) – Attract reviews past applicants and current candidates to provide you with a list of prospects who are a good match for your job.
 
-- [Relevance search](./attract-talent-pools#search-and-view-candidate-profiles) – Search your entire candidate database for particular skills, names, or educational background. Attract searches the entire profile and highlights all the matches found. Attract also searches all documents that are available for a candidate and intelligently ranks the search results.
+- [Relevance search](./attract-talent-pools.md#search-and-view-candidate-profiles) – Search your entire candidate database for particular skills, names, or educational background. Attract searches the entire profile and highlights all the matches found. Attract also searches all documents that are available for a candidate and intelligently ranks the search results.
 
-- [Activity audience](./whats-new-talent-march-20#setting-the-audience-on-activities) – Set the audience for activities (such as Interview, Schedule, or Feedback) to All candidates, Internal candidates, or External candidates. You can deliver customer activities, such as YouTube videos, web content, and Microsoft Forms, to All candidates, Internal candidates, External candidates, or the hiring team. 
+- [Activity audience](./whats-new-talent-march-20.md#setting-the-audience-on-activities) – Set the audience for activities (such as Interview, Schedule, or Feedback) to All candidates, Internal candidates, or External candidates. You can deliver customer activities, such as YouTube videos, web content, and Microsoft Forms, to All candidates, Internal candidates, External candidates, or the hiring team. 
 
-- [Apply with LinkedIn](./career-site#enable-applying-for-jobs-with-linkedin-profiles) – You can set up on option on your Attract career site to allow job candidates to apply with LinkedIn. This streamlines the application process for your candidates by letting them use their LinkedIn profile to auto-fill their applications on your career site.
+- [Apply with LinkedIn](./career-site#enable-applying-for-jobs-with-linkedin-profiles.md) – You can set up on option on your Attract career site to allow job candidates to apply with LinkedIn. This streamlines the application process for your candidates by letting them use their LinkedIn profile to auto-fill their applications on your career site.
 
-- [Source tracking](./source-tracking) – Attract tracks the source of candidate applications, which provides you with valuable information that helps you target your recruiting efforts. You can also select an application source when you're adding a candidate to a job or talent pool.
+- [Source tracking](./source-tracking.md) – Attract tracks the source of candidate applications, which provides you with valuable information that helps you target your recruiting efforts. You can also select an application source when you're adding a candidate to a job or talent pool.
 
-- [Silver medalist](./whats-new-talent-march-20#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – You can designate candidates who are a great fit for your organization but who you didn't extend an offer to for your current position as silver medalists. This helps reduce your time to hire the next time you have a similar position available.
+- [Silver medalist](./whats-new-talent-march-20.md#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – You can designate candidates who are a great fit for your organization but who you didn't extend an offer to for your current position as silver medalists. This helps reduce your time to hire the next time you have a similar position available.
 
 
 
 ### Core HR
 
-- [Validate position hierarchy data](./whats-new-talent-may-13-2019#new-page-to-validate-position-hierarchy-data) – Validate the managerial hierarchy for circular references that might have been imported inadvertently.
+- [Validate position hierarchy data](./whats-new-talent-may-13-2019.md#new-page-to-validate-position-hierarchy-data) – Validate the managerial hierarchy for circular references that might have been imported inadvertently.
 
-- [Specify reason codes on leave types](./whats-new-talent-may-13-2019#specify-reason-codes-on-leave-types) – You can specify reason codes for leave types.
+- [Specify reason codes on leave types](./whats-new-talent-may-13-2019.md#specify-reason-codes-on-leave-types) – You can specify reason codes for leave types.
 
-- [Require reason codes on time-off requests](./whats-new-talent-may-13-2019#require-reason-codes-for-specific-leave-types-on-time-off-requests) – In addition to specifying reason codes for leave types, you can require reason codes for time-off requests.
+- [Require reason codes on time-off requests](./whats-new-talent-may-13-2019.md#require-reason-codes-for-specific-leave-types-on-time-off-requests) – In addition to specifying reason codes for leave types, you can require reason codes for time-off requests.
 
-- [Provide a leave and absence transaction list for HR](./whats-new-talent-may-13-2019#provide-a-leave-and-absence-transaction-list-for-hr) – You can view a list of leave and absence transactions to help provide insights into time-off balances.
+- [Provide a leave and absence transaction list for HR](./whats-new-talent-may-13-2019.md#provide-a-leave-and-absence-transaction-list-for-hr) – You can view a list of leave and absence transactions to help provide insights into time-off balances.
 
 
 ### Onboard
