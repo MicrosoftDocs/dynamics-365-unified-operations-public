@@ -51,6 +51,9 @@ To turn on the new experience, use the **Feature management** workspace to turn 
 
 ## Getting started video for new users
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
+
+
 <iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO" frameborder="0" allowfullscreen=""></iframe>
 
 The [Expense experience in Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) video is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
