@@ -65,13 +65,13 @@ For the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
 |      April 2019            |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019 on Microsoft Dynamics 365 for Finance and Operations  |
 |      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
-|      June 2019            |   10.0.3      | Brazil      |   NF-e new NT 2018.005 - v.1.20   |
-|      June 2019            |   10.0.3      | Brazil      |   SPED ECD Layout 7   |
-|      June 2019            |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019   |
-|      June 2019            |   10.0.3      | Lithuania    |   i.SAF report let's user define system Sales tax codes in association with legal tax codes    |
-|      June 2019            |   10.0.3      | Poland     |   SAF invoices (JPK_FA) v.2 from 1Jul2019  |
-|      June 2019            |   10.0.3      | Brazil   |   ICMS fiscal document adjustments enable table 5.2   |
-|      June 2019            |   10.0.3      | Brazil    |   NF-e Decree 54.308/18 (RS)   |
+|      Pending            |   10.0.3      | Brazil      |   NF-e new NT 2018.005 - v.1.20   |
+|      Pending            |   10.0.3      | Brazil      |   SPED ECD Layout 7   |
+|      Pending            |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019   |
+|      Pending            |   10.0.3      | Lithuania    |   i.SAF report let's user define system Sales tax codes in association with legal tax codes    |
+|      Pending            |   10.0.3      | Poland     |   SAF invoices (JPK_FA) v.2 from 1Jul2019  |
+|      Pending            |   10.0.3      | Brazil   |   ICMS fiscal document adjustments enable table 5.2   |
+|      Pending            |   10.0.3      | Brazil    |   NF-e Decree 54.308/18 (RS)   |
 
 
 ## Additional resources
