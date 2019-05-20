@@ -129,3 +129,10 @@ Please don't include personal data (any information that could identify you) in 
 
 > [!TIP]
 > Bookmark this topic, and check back often to stay up to date about new preview features as we release them.
+
+## See also
+
+- [Try or buy Talent apps](https://dynamics.microsoft.com/en-us/talent/overview/)
+- [What's new](./whats-new.md)
+- [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/index)
+- [Get support for Talent](./talent-support.md)
