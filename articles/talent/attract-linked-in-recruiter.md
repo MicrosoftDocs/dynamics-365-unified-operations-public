@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sourcing with LinkedIn Recruiter
-description: This topic provides information about using machine learning to get job and job candidate recommendations.
+title: Source candidates with LinkedIn Recruiter
+description: Use the LinkedIn integration provided by Microsoft Dynamics 365 for Talent - Attract to source job candidates through LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -30,56 +30,18 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Sourcing with LinkedIn Recruiter
+# Source candidates with LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
-LinkedIn is the world’s largest talent database and often the primary system that recruiters use to find, communicate with, and source candidates for the jobs that recruiters are looking to fill. LinkedIn Recruiter integration with Dynamics 365 for
-Talent: Attract makes it easier for users to hire, and to keep the data in sync between the two systems.
+LinkedIn is the world’s largest talent database and often the primary system that recruiters use to find, communicate with, and source candidates for their positions. Integration between Dynamics 365 for Talent: Attract and LinkedIn Recruiter makes it easier for recruiters to find and hire top candidates, and to sync data between Attract and LinkedIn.
 
-> [!NOTE]
-> You need the Comprehensive hiring add-on and LinkedIn Recruiter seats to be able to use LinkedIn Recruiter integration with Attract.
-
-## Set up LinkedIn Recruiter with Attract 
-
-Before you can use the LinkedIn Recruiter capabilities, you must configure contract-level or company-level access with your Attract instance. To complete the configuration process, you must work with the user who is an Admin on your LinkedIn Recruiter contract. Complete the following steps to configure LinkedIn Recruiter with Attract.
-
-1.  Sign in to Attract as an Admin and go to **Admin Settings**.
-
-2.  On the left pane, click the **LinkedIn Integration** tab.
-
-[![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
-
-3.  Click **Connect** to start the setup and be guided through the LinkedIn sign-in process.
-
-4.  If you have seats on multiple LinkedIn contracts, select the contract that you would like to connect to the Attract system. If you have a seat on only one LinkedIn contract, this step will not be needed.
-
-5.  The LinkedIn widget will now load in your Admin settings with the list of integrations shown. Under **Recruiter System connect**, click **Request**.
-
-[![Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
-
-6.  After the integration is requested from Attract, it will show as **Partner ready** and is ready to be turned on from **Recruiter Admin settings**. If you see **Notify partner** on this page, wait a few seconds, click **Notify partner**, and then refresh the page. It should now show as **Partner ready**.
-
-[![Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
-
-To complete the next step, you need to have an Admin privilege on your LinkedIn Recruiter Contract.
-
-7.  Sign in to LinkedIn using the Admin account and go to LinkedIn Recruiter on the top right. 
-
-8. On the **More** menu at the top of the screen, click **Admin Settings**, and then click the **ATS** Tab.
-
-The Attract system will be listed with a couple of options that can be turned on.
-
-9. If you want to enable only 1-Click export for the **In-ATS indicator** and the **In-ATS Profile Widget**, select **Company-level access**. If you want to enable all of Company-level access features plus InMail history, Notes history, and the InMail stub profile access, select **Contract-level access**.
-
-10. Turn on the desired access level from your LinkedIn Recruiter **Admin-ATS** settings.
-
-[![Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)](./media/EnableRSC.png)
-
-12. Go back to Attract Admin Settings as an AttractAdmin and select the **LinkedIn integration** tab. You should now see the LinkedIn widget load showing **Enabled** with the selected access level turned on.
-
-[![LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
 ## Using LinkedIn Recruiter capabilities
+
+
+
+
+
 
 After LinkedIn Recruiter capabilities has been enabled by the Attract Admin it is available for hiring managers and recruiters to access. To use these capabilities, connect your LinkedIn account under **User Settings**. Several capabilities will be available after both the Admin and User settings have been connected.
 
@@ -151,3 +113,9 @@ notes about the candidate from LinkedIn Recruiter.
 The InMail stub profile is available with contract-level access with LinkedIn Recruiter. If candidates agree to share their LinkedIn profiles with any user in your organization, you can track the candidates in Attract and a new candidate record will be created for each candidate. You can view candidate's email address if the candidate already exists in the system with an email address or has chosen to share their address with the recruiter.
 
 To view the list of candidates, go to **Talent pools** to see a system-created LinkedIn talent pool. This talent pool contains the list candidates and their stub profiles as received from LinkedIn, showing the candidate's first name and last name. The candidate’s email ID will be displayed if the candidate had chosen to share their email address.
+
+## See also
+
+[Set up integration with LinkedIn](./attract-admin-linkedin.md)
+[Create jobs](./creating-jobs-attract.md)
+[Post jobs to external sites from Attract](./posting-jobs-external.md)

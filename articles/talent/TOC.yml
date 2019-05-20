@@ -117,22 +117,50 @@
       href: leave-accrue-hours-worked.md
     - name: Working time calendars
       href: working-time-calendars.md
-  - name: Staff your organization
+  - name: Staff your organization with Attract
     items:
     - name: Which version of Attract?
       href: attract-comprehensive-hiring.md
+    - name: Configure system settings in Attract
+      items:
+      - name: Configure company information and branding
+        href: Admin-Settings-Attract.md
+      - name: Set user permissions
+        href: security-attract.md
+      - name: Manage features
+        href: 
+      - name: Set up your career site
+        href: 
+      - name: Enter settings for external job boards
+        href:
+      - name: Establish your job offer process
+        href:
+      - name: Allow digital signing
+        href:
+      - name: Enable template management
+        href:
+      - name: Provide global settings for email templates
+        href:
+      - name: Set up integration with LinkedIn
+        href: attract-admin-linkedin.md
+      - name: Create EEO/OFCCP reports
+        href: 
     - name: Attract features and capabilities
       href: attract-overview.md
-    - name: Create a process template in Attract
+    - name: Create a hiring process template
       href: Process-templates-Attract.md
-    - name: Create, approve, and post jobs in Attract
-      href: Creating-jobs-Attract.md
-    - name: Post jobs to external sites from Attract
-      href: posting-jobs-external.md
-    - name: Source candidates with talent pools
-      href: attract-talent-pools.md
-    - name: Sourcing with LinkedIn Recruiter
-      href: attract-linked-in-recruiter.md
+    - name: Create and post jobs
+      items:
+      - name: Create jobs
+        href: Creating-jobs-Attract.md
+      - name: Post jobs to external sites from Attract
+        href: posting-jobs-external.md
+    - name: Source candidates
+      items:
+      - name: Source candidates with talent pools
+        href: attract-talent-pools.md
+      - name: Source candidates with LinkedIn Recruiter
+        href: attract-linked-in-recruiter.md
     - name: Activities in the hiring processes 
       href: activities-attract.md
     - name: Interview scheduling and feedback
@@ -147,10 +175,6 @@
       href: creating-offers.md
     - name: Email templates
       href: email-templates.md
-    - name: Security and role management in Attract
-      href: security-attract.md
-    - name: Admin settings in Attract
-      href: Admin-Settings-Attract.md
     - name: Intelligent recommendations
       href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
