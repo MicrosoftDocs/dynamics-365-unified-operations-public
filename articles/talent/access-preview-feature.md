@@ -49,7 +49,6 @@ To access preview features, you must first enable them in your environment. The 
 
 1. Sign in to Microsoft Dynamics 365 for Talent: Attract.
 2. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
-![Attract Admin center](./media/attract-admin-center.png)
 3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue and says **On**.
 ![Enable preview features in Attract](./media/attract-enable-preview-features.png)
 4. Select or deselect individual preview features. If you do nothing, all available preview features are enabled.
