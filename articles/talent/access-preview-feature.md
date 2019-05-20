@@ -121,8 +121,9 @@ We want to hear from you about your experience with any of these preview feature
 
 - Use the following sites to suggest product ideas. Let us know about features that you want to see in the product, or let us know about any changes you think we should make to existing features.
 
-    - [Attract Ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
-    - [Core HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
+    - [Attract ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
+    - [Core HR ideas](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
+    - [Onboard ideas](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)
 
 Please don't include personal data (any information that could identify you) in your feedback or product review submissions. Collected information might be analyzed further, and isn't used to answer requests under applicable privacy laws. Personal data that is collected separately under these programs is subject to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
