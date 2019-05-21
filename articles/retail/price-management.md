@@ -5,7 +5,7 @@ title: Retail sales price management
 description: This topic describes the concepts for creating and managing sales prices in Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 04/20/2018
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -237,4 +237,4 @@ In addition, **only** the retail pricing engine supports the following pricing f
 - The same price group can be used to control pricing and discounts.
 
 ## Pricing API enhancements
-For many customers price is the one of most important factor governing their buying decisions, and many customers compare prices on various sites before making the purchase. Thus, retailers keep a close eye on their competitors and frequently run promotions to ensure they are providing competitive prices. So it is very important that we show the most accurate price on the product search, browse, lists and PDP to lure the customers. Thus, with the September 2019 release of Dynamics 365 for Retail, the GetActivePrices API will return prices that include simple discounts i.e. single line discounts which are not dependent on other items in the cart, so that the prices shown are close to the actual amount the customer would pay for the item. This API will include all the types of simple discounts i.e. Affiliation, loyalty, catalog and channel based discounts. Additionally, the API will return the names and validity of the applied discounts, to enable the retailers provide more description on the price and create urgency if the discount validity is expiring soon. 
+For many customers, price is the one of most important factors governing their buying decisions, and many customers compare prices on various sites before making a purchase. Thus, retailers keep a close eye on their competitors and frequently run promotions to ensure they are providing competitive prices. Because of that, it's very important that we show the most accurate price on the product search, browse, lists, and PDP to lure the customers. In an upcoming release of Dynamics 365 for Retail, the GetActivePrices API will return prices that include simple discounts--for example, single line discounts which are not dependent on other items in the cart, so that the prices shown are close to the actual amount the customer would pay for the item. This API will include all the types of simple discounts (affiliation, loyalty, catalog, and channel based discounts). Additionally, the API will return the names and validity of the applied discounts to allow the retailers to provide more description on the price and create urgency if the discount validity is expiring soon. 
