@@ -6,7 +6,7 @@ description: This topic describes the cash management improvements in POS for Dy
 author: josaw1
 manager: AnnBe
 ms.date: 5/21/2019
-ms.topic: index-page
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
@@ -30,13 +30,13 @@ ms.dyn365.ops.version:
 
 ---
 
-**Cash management improvements**
+# Cash management improvements
 
-**Overview**
+[!include [banner](includes/banner.md)]
 
-Cash management is a key function for retailers in the physical store. Retailers are wanting to have systems in the store that can help them provide complete traceability and accountability of cash and its movement across the different registers, cashiers &amp; safe&#39;s in the store. They need capability to reconcile the differences (if any) and pinpoint accountability for the same.
+Cash management is a key function for retailers in a physical store. Retailers want to have systems in the store that can help them provide complete traceability and accountability of cash and its movement across the different registers and cashiers in the store. They need capability to reconcile any differences and pinpoint accountability.
 
-Dynamics 365 for Retail has cash management capabilities in its POS application. However, functionality around the same is not rounded enough to provide complete traceability of the cash movement in the stores. With the current set of capability, Retailers can reconcile the cash for a store. However, they are not able to pinpoint the accountability in the case of cash discrepancy due to not so strong traceability feature around Cash management. Due to this, Retailers do not have enough data to recover the losses in a situation of cash discrepancy by fixing accountability where required.
+Dynamics 365 for Retail has cash management capabilities in its point of sale (POS) application. However, functionality around the same is not rounded enough to provide complete traceability of the cash movement in the stores. With the current set of capability, Retailers can reconcile the cash for a store. However, they are not able to pinpoint the accountability in the case of cash discrepancy due to not so strong traceability feature around Cash management. Due to this, Retailers do not have enough data to recover the losses in a situation of cash discrepancy by fixing accountability where required.
 
 This feature will provide for a fully rounded and robust capability around cash management that will provide retailers the required traceability from a cash handling standpoint including the capability to define **Safe** entities, make two sided cash transactions and reconcile the cash management transactions.
 
