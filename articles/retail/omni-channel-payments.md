@@ -41,10 +41,10 @@ This topic provides an overview of omni-channel payments in Microsoft Dynamics 3
 | Term | Description |
 |---|---|
 | Token | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. They are sometimes also referred to as *references*. |
-| Card token | A token that a payment processor provides for storage in the POS system. A card token can be used only by the merchant who receives it. Card tokens are generally harmless outside the system. They are sometimes also referred to as *card references*. Recurring card token |
+| Card token | A token that a payment processor provides for storage in the POS system. A card token can be used only by the merchant who receives it. Card tokens are sometimes also referred to as *card references*. |
 | Authorization (auth) token | A unique ID that a payment process provides as part of the response that it sends to a POS system after the POS system makes an authorization request. An authorization token can be used later if the processor is called to perform actions such as reversing or voiding the authorization. However, it's most often used to capture funds when an order is fulfilled or a transaction is finalized. Authorization tokens are sometimes also referred to as *authorization references*. |
 | Capture token | A reference that a payment processor provides to a POS system when a payment is finalized or captured. The capture token can then be used to reference the payment capture in subsequent operations, such as refund requests. | 
-| Card not present | A term that refers to payment transactions where a physical card isn't presented. For example, these transactions can occur in eCommerce or call center scenarios. For these transactions, the payment-related information is manually entered on an eCommerce website, in a call center flow, or on the POS or payment terminal. |
+| Card not present | A term that refers to payment transactions where a physical card isn't presented. For example, these transactions can occur in e-commerce or call center scenarios. For these transactions, the payment-related information is manually entered on an e-commerce website, in a call center flow, or on the POS or payment terminal. |
 | Card present | A term that refers to payment transactions where a physical card is presented and used on a payment terminal that is connected to the Microsoft Dynamics 365 POS system. |
 
 ## Overview
@@ -55,7 +55,7 @@ All the scenarios that are described in this topic can be implemented by using t
 
 ### Prerequisites
 
-Every scenario that is described in this topic requires a payment connector that supports omni-channel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Every scenario that is described in this topic requires a payment connector that supports omni-channel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the Payments SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### Supported versions
 
@@ -63,7 +63,7 @@ The omni-channel payment capabilities that are described in this topic were rele
 
 #### "Card present" and "card not present" connectors
 
-The Retail Payment SDK relies on two sets of application programming interfaces (APIs) for payments. The first set of APIs is named **iPaymentProcessor**. It's used to implement "card not present" payment connectors that can be used in call centers and eCommerce. For more information about the **iPaymentProcessor** interface, see the [Implement a payment connector and a payment device](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) white paper, which covers payments. 
+The Payments SDK relies on two sets of application programming interfaces (APIs) for payments. The first set of APIs is named **iPaymentProcessor**. It's used to implement "card not present" payment connectors that can be used in call centers and with the Microsoft Dynamics e-Commerce platform. For more information about the **iPaymentProcessor** interface, see the [Implement a payment connector and a payment device](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) white paper, which covers payments. 
 
 The second set of APIs is named **iNamedRequestHandler**. It supports the implementation of "card present" payment integrations that use a payment terminal. For more information about the **iNamedRequestHandler** interface, see [Create a payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
 
@@ -71,8 +71,8 @@ The second set of APIs is named **iNamedRequestHandler**. It supports the implem
 
 The following components and setup steps are required:
 
-- **eCommerce integration:** An integration with Retail is required to support scenarios where an order originates in an online storefront. For more information about the Retail eCommerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the sample storefront supports omni-channel payment scenarios. 
-- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure Adyen payments for online stores, see [Adyen payment connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that topic, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
+- **eCommerce integration:** An integration with Retail is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omni-channel payment scenarios. 
+- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that topic, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
 - **Omni-channel payments configuration:** In the back office, go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
 - **Payment services:** The call center uses the default payment connector on the **Payment services** page to process payments. To support scenarios such as "Buy in call center, pick up in store," this default payment connector must be the Adyen payment connector or a payment connector that meets the implementation requirements for omni-channel payments.
 - **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omni-channel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omni-channel payments.
@@ -106,7 +106,7 @@ Before you start, make sure that the following prerequisites are in place:
 
 - You have a reference storefront where the Adyen connector is configured.
 - The **Omni-channel payments** option on the **Retail shared parameters** page is set to **True**.
-- The Adyen payment connector is configured for the Houston point of register.
+- The Adyen payment connector is configured for the Houston POS register.
 
 Follow these steps to run the scenario.
 
