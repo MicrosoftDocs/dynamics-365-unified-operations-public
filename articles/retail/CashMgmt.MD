@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Cash management improvements
+description: This topic describes the cash management improvements in POS for Dynamics 365 for Retail.
+author: josaw1
+manager: AnnBe
+ms.date: 5/21/2019
+ms.topic: index-page
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2019-05-21
+ms.dyn365.ops.version: 
+
+---
+
 **Cash management improvements**
 
 **Overview**
