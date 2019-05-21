@@ -42,7 +42,7 @@ To complete the steps in this topic, you must have a Microsoft Dynamics 365 for 
 
 ## Use Task recorder to define and record an end-to-end business scenario
 
-Before you run a single-user test with a scenario, you must work with your business team to define your end-to-end scenarios and then use Task recorder to create a recording of the steps in each scenario. For more information about how to create a task recording, see [Task recorder](../user-interface/task-recorder.md). The scenarios that you should test depend on your customer's business requirements. In this topic, you will use the "Create and confirm a sales order" sample scenario.
+Before you run a single-user test, you must work with your business team to define your end-to-end scenarios and then use Task recorder to create a recording of the steps in each scenario. For more information about how to create a task recording, see [Task recorder](../user-interface/task-recorder.md). The scenarios that you should test depend on your customer's business requirements. In this topic, you will use the "Create and confirm a sales order" sample scenario.
 
 1. Sign in to Finance and Operations as a Sales persona.
 2. Turn on Task recorder, and create and confirm a sales order that includes the following information:
