@@ -108,7 +108,16 @@ The feature will not be removed from the list if you disable the config key.
 
 ## Data entities
 
-A data entity called **Feature management** will allow you to export the feature management settings from one environment and then import them into another environment. The entity will only update existing features. The business logic in the entity will also ensure that the same rules used in the form will be applied upon import. For example, you can't override a mandatory feature setting by removing the date during an import.  
+A data entity called **Feature management** will allow you to export the feature management settings from one environment and then import them into another environment. The entity will only update existing features. The business logic in the entity will also ensure that the same rules used in the form will be applied upon import. For example, you can't override a mandatory feature setting by removing the date during an import. 
+
+The following examples describe what will happen when you import data with the entity
+1. If you change the Enabled field to "Yes", then the feature is enabled and the enable date is set to today.
+2. If you change the Enabled date to "No', the feature will be disabled and the enable date will be cleared.
+3. If you change the EnableDate field to a future date, then the feature will be scheduled for that date.
+4. If you change the Enabled field to "Yes" and change the EnableDate to a future date, then the feature will be scheduled for that date. Scheduling takes priority over enabling.
+5. If you use a blank EnableDate, the feature will be disabled if the feature can be disabled. You cannot disable a mandatory feature or a feature that can't be disabled once it has been enabled.
+6. If you change the Enabled field to "No" but you also change the EnableDate to a future date, the feature will be disabled and scheduled to be enabled at the future date.
+7. If a feature is enabled and you add a future EnableDate, the feature will remain enabled. You must change the Enable field to "No" if you want to reschedule the feature.
 
 ## Using feature management to enable ISV features or custom features
 
