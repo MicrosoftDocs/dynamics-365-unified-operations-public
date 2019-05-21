@@ -34,20 +34,22 @@ ms.dyn365.ops.version: 10.0.1
 [!include[banner](../includes/banner.md)]
 
 You can design Electronic reporting (ER) formats to parse incoming electronic documents that represent data in text format based on JavaScript (files in JSON format).
-Note:
-•	Parents element in JSON file could be only objects element.
-•	Nested element for object should be property element for creating valid JSON structure.
-•	JSON array could be only nested element of property element of object.
-•	Json array can only contain Json objects (can't contain directly string/numeric values and nested arrays).  Elements in array will be parsed in order as they specified in the format taking into account multiplicity settings on each json object
-To learn more about this feature, play the task guide, ER Create a format configuration to import data from an external JSON file , which walks through how the incoming JSON file can be parsed by using the ER format to update application data.
-Download the following files to complete the task guide mentioned above.
+
+To learn more about this feature, download the files in the following table, and then play the task guide, ER Create a format configuration to import data from an external JSON file. This task guide walks through how the incoming JSON file can be parsed by using the ER format to update application data.
 
 | Title                                  | File name                                    |
 |----------------------------------------|----------------------------------------------|
 | ER format configuration                | [Format for importing vendors' trans_JSON.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
 | Sample of incoming file in .csv format | [1099entries_JSON.txt](https://go.microsoft.com/fwlink/?linkid=874111)                         |
+## Requirements
+Before you complete the task guide, ER Create aformat configuration to import data from an external JSON file, the following is required:
 
-Download the following file that is required to complete the task guide mentioned above if you have not played the task guide, ER Create required configurations to import data from an external file for electronic reporting in the current Dynamics 365 for Finance and Operation application.
+- Parent elements in JSON file can only be object elements.
+- A nested element for object should be a property element to create a valid JSON structure.
+- JSON array can only be only nested element of property element of object.
+- Json array can only contain Json objects. It can't contain direct string/numeric values and nested arrays). Elements in the array will be parsed in order as they specified in the format with consideration regarding multiplicity settings on each json object.
+
+Additionally, if you have not already, you must complete the task guide, [ER Create required configurations to import data from an external file for electronic reporting](tasks/er-required-configurations-import-data.md). Download the following file to complete the task guide if necessary.
 
 | Title                  | File name     |
 |------------------------|---------------|
