@@ -33,45 +33,46 @@ ms.dyn365.ops.version:
 # Cash management improvements
 
 [!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Cash management is a key function for retailers in a physical store. Retailers want to have systems in the store that can help them provide complete traceability and accountability of cash and its movement across the different registers and cashiers in the store. They need capability to reconcile any differences and pinpoint accountability.
 
-Dynamics 365 for Retail has cash management capabilities in its point of sale (POS) application. However, functionality around the same is not rounded enough to provide complete traceability of the cash movement in the stores. With the current set of capability, Retailers can reconcile the cash for a store. However, they are not able to pinpoint the accountability in the case of cash discrepancy due to not so strong traceability feature around Cash management. Due to this, Retailers do not have enough data to recover the losses in a situation of cash discrepancy by fixing accountability where required.
+Dynamics 365 for Retail has cash management capabilities in its point of sale (POS) application. However, in versions of Retail earlier than version 10.0.3, cash management functionality is not robust enough to provide complete traceability of cash movement in the stores. Retailers can reconcile the cash for a store, but they aren't able to pinpoint the accountability in the case of a cash discrepancy. 
 
-This feature will provide for a fully rounded and robust capability around cash management that will provide retailers the required traceability from a cash handling standpoint including the capability to define **Safe** entities, make two sided cash transactions and reconcile the cash management transactions.
+Beginning with Retail version 10.0.3, retailers will gain cash handling traceability, including the capability to define safes, make two-sided cash transactions, and reconcile cash management transactions.
 
-**Setup**
+## Set up tracability and declare safes
 
-The improvements around the Cash management functions can be leveraged by configuring the functionality profile for stores as per the below steps:
+You can set up the new cash management functionality by configuring the functionality profile for stores using the following steps.
 
-1) Navigate to **Retail \&gt; Channel setup \&gt; POS setup \&gt; POS profiles \&gt; Functionality profiles** and choose a profile linked to the stores where you want to enable the cash management improvements
+1. Go to **Retail > Channel setup > POS setup > POS profiles > Functionality profiles** and choose a profile linked to the stores where you want to enable the cash management improvements.
 
-2) In the **Functions** tab of the Functionality profiles, under the fast tab **Functions,** group **Advanced cash management,** a new parameter called **&quot;Enable cash traceability&quot;** is introduced. Turning this parameter on will light-up the cash management improvements in the stores to which the functionality profile is associated to
+1. On the **Functions** tab of the functionality profile for the store, under the **Functions** group, under **Advanced cash management**, set the **Enable cash traceability** parameter to **Yes**. 
 
-3) Navigate to **Retail \&gt; Channels \&gt; Retail stores \&gt; All retail stores** and select a store for which you want to define the **Safes.** The **Safes** for a store can be maintained using the **Safes** button on the **Setup group** of the **Setup tab** n the Retail stores. Using this option, multiple **Safes** can be defined and maintained for a store.
+1. To set up safes, go to **Retail > Channels > Retail stores > All retail stores** and select a store. On the **Setup** fastab for the store, under **Set up**, click **Safes**. Using this option, multiple **Safes** can be defined and maintained for a store.
 
-4) The **1070 Channel configuration** distribution schedule job must be run for these configurations to be synchronized to the Channel database before the feature can be used
+4) The **1070 Channel configuration** distribution schedule job must be run for these configurations to be synchronized to the channel database before the functionality can be used.
 
-**Details**
+## Additional cash management changes
 
-The cash management improvements will provide the following functionality around the different cash transactions that happens in a retail store
+In Retail version 10.0.3 and higher, the following capabilities relating to cash transactions are also provided. 
 
-1) The &quot;Declare start amount&quot; operation will mandate a user to enter the source of cash and the user can look up the available **Safe** entity in the store and select the **Safe** from where the cash is being taken out to put into the register
+- When a user is prompted to "declare start amount", the user is required to enter the source of cash. The user can search for the available defined safe in the store and select the safe from which the cash is being taken out to put into the register.
 
-2) The **Tender removal** operation will prompt the user to choose from a list of open **Float entry** transactions against which the tender removal operation is being performed. If the corresponding **Float entry** does not exist in the system, the user will be allowed to create a non-linked **Tender removal** transaction
+- When a user executes a "tender removal" action, the user is prompted to choose from a list of open "float entry" transactions against which the tender removal operation is being performed. If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction
 
-3) The **Float entry** operation will prompt the user to choose from a list of open **Tender removal** transactions against which the **Float entry** operation is being performed. If the corresponding **Tender removal** does not exist in the system, the user will be allowed to create a non-linked **Float entry** transaction
+- A "float entry" operation prompts a user to choose from a list of open "tender removal" transactions against which the float entry operation is being performed. If the corresponding tender removal doesn't exist in the system, the user can create a non-linked float entry transaction.
 
-4) The **Safe drop** operation will mandate a user to choose the **Safe** to which the cash is being dropped to
+- When a user makes a "safe drop", the user is prompted to choose the safe where the cash is being dropped.
 
-5) A new operation called as **Manage Safe** is introduced in the application using which users can manage the **Safe&#39;s** in the store and perform cash management transactions for the **Safe** like **Declare start amount** , **Float entry** , **Tender removal** &amp; **Bank drop**
+- For safes that are defined in a store, users can manage operations such as declaring start amount, float entry, tender removal, and bank drop. 
 
-6) With proper user privileges, the **Manage shifts** operations will show the user cash balances of active, suspended and blind closed shifts
+- With the appropriate user privileges, "manage shifts" operations show the user cash balances of active, suspended, and blind closed shifts.
 
-7) Users can reconcile the cash transactions within a shift or across shifts using the **Reconcile** button in the **Manage shifts** operation after selecting the **Shifts** to reconcile. This will take the user to a view where the user can see the list of reconciled and un-reconciled transactions in separate tabs. From this view, users can choose to either select multiple un-reconciled transactions and reconcile them or choose an already reconciled transactions and un-reconcile them.
+- To reconcile the cash transactions within a shift or across shifts, select the shift to reconcile, then click **Reconcile**. This opens a view where the user can see the list of reconciled and unreconciled transactions in separate tabs. From this view, users can choose to either select unreconciled transactions and reconcile them, or choose already reconciled transactions and unreconcile them.
 
-8) During reconciliation, if the selected transactions to reconcile does not balance, the system will force the user to enter a reason description for the unbalanced reconciliation. Users can even select a single transaction and reconcile them with the relevant reason description.
+- During reconciliation, if the selected transaction doesn't balance, the user must enter a reason description for the unbalanced reconciliation. Users can select a single transaction and reconcile it with the relevant reason description if necessary.
 
-9) Users can continue to perform the reconciliation / un-reconciliation of transactions till the Shift is closed. After a Shift is closed, the transactions cannot be un-reconciled.
+- Users can continue to reconcile and unreconcile transactions until the shift is closed. After a shift is closed, the transactions cannot be unreconciled.
 
-10)The **Close shift** operation will validate that there are no un-reconciled cash management transactions in the shift. Users will not be able to **Close shift** if there are un-reconciled transactions in the shift
+- When a user chooses to close a shift, Retail will validate that there are no unreconciled cash management transactions in the shift. A user will not be able to close a shift if there are unreconciled transactions.
