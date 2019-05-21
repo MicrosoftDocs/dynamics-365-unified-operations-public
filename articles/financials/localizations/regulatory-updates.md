@@ -45,7 +45,7 @@ We plan to deliver regulatory updates in One Version service updates that are re
 
 In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for some available monthly updates.
 
-For the the latest regulatory update plans, refer to the following table. 
+For the latest regulatory update plans, refer to the following table. 
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
@@ -58,10 +58,20 @@ For the the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      |   Germany     |E-invoicing - Customers invoices export in xRechnung 1.1 format         |
 |      April 2019          |   10.0.1      |    United Kingdom     |[VAT Statement submission changes (Making Tax Digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      April 2019          |   10.0.1      |    Brazil     |NF-e new NT 2018.005         |
-|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019         |
-|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) 
+|      April 2019          |   10.0.1      |    Russia     |[VAT declaration format changes from 2019](rus-VAT-declaration.md) |
+|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) |
+|      April 2019          |   10.0.1      |    Russia     |Land tax declaration changes from 2018 |
+|      April 2019          |   10.0.1      |    Russia     |[Property tax declaration changes from 2019](rus-assessed-tax-declaration.md)|
+|      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
 |      April 2019            |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019 on Microsoft Dynamics 365 for Finance and Operations  |
 |      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
+|      Pending            |   10.0.3      | Brazil      |   NF-e new NT 2018.005 - v.1.20   |
+|      Pending            |   10.0.3      | Brazil      |   SPED ECD Layout 7   |
+|      Pending            |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019   |
+|      Pending            |   10.0.3      | Lithuania    |   i.SAF report let's user define system Sales tax codes in association with legal tax codes    |
+|      Pending            |   10.0.3      | Poland     |   SAF invoices (JPK_FA) v.2 from 1Jul2019  |
+|      Pending            |   10.0.3      | Brazil   |   ICMS fiscal document adjustments enable table 5.2   |
+|      Pending            |   10.0.3      | Brazil    |   NF-e Decree 54.308/18 (RS)   |
 
 
 ## Additional resources
