@@ -73,10 +73,9 @@ The data for **Financial Insights** is pulled from the Entity store (**System ad
 
 You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
 
+- Financial reporting transaction data version 2 (**Note: New with version 10.0.1 this replaces the previous entity**)
+- Financial reporting transaction data
 - CustCollectionsBIMeasurements
-- FinancialReportingOtherData
-- FinancialReportingReferenceData
-- FinancialReportingTransactionData
 - LedgerCovLiquidityMeasurement
 - Purchase cube
 - Sales cube
