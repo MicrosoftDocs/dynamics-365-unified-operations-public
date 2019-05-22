@@ -48,11 +48,11 @@ You can define three types of policies:
  
  - Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.        
 
-# Policy tips
+## Policy tips
 Here are a few suggestions that can assist you whe creating new policies for expense management. 
 * Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred. For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.
 * When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type. Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line. 
 
-# When to evaluate policies
+## When to evaluate policies
 
 In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted. If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once. Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.
