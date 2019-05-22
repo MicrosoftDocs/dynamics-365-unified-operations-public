@@ -112,17 +112,16 @@ A data entity called **Feature management** will allow you to export the feature
 
 The following examples describe what will happen when you import data with the entity
 1. If you change the Enabled field to "Yes", then the feature is enabled and the enable date is set to today.
-2. If you change the Enabled date to "No', the feature will be disabled and the enable date will be cleared.
+2. If you change the Enabled date to "No' or use a blank EnableDate, the feature will be disabled and the enable date will be cleared. You cannot disable a mandatory feature or a feature that can't be disabled once it has been enabled.
 3. If you change the EnableDate field to a future date, then the feature will be scheduled for that date.
 4. If you change the Enabled field to "Yes" and change the EnableDate to a future date, then the feature will be scheduled for that date. Scheduling takes priority over enabling.
-5. If you use a blank EnableDate, the feature will be disabled if the feature can be disabled. You cannot disable a mandatory feature or a feature that can't be disabled once it has been enabled.
-6. If you change the Enabled field to "No" but you also change the EnableDate to a future date, the feature will be disabled and scheduled to be enabled at the future date.
-7. If a feature is enabled and you add a future EnableDate, the feature will remain enabled. You must change the Enable field to "No" if you want to reschedule the feature.
-
-## Using feature management to enable ISV features or custom features
-
-The Feature management process is currently unavailable for ISV features or custom features. We are adding additional functionality to enhance Feature management and, when those enhancements are complete, we will open up Feature management to all features and provide specific instructions on how to update your feature to use it.
+5. If you change the Enabled field to "No" but you also change the EnableDate to a future date, the feature will be scheduled to be enabled at the future date.
+6. If a feature is enabled and you add a future EnableDate, the feature will remain enabled. You must change the Enable field to "No" if you want to reschedule the feature.
 
 ## Feature management and flighting
 
 Feature management allows you to control features that are shipped in each release. Flighting allows Microsoft teams to release features to a limited number of customers so that the features can be tested and validated without affecting all customers. Feature management does not control the flighting of any features.
+
+## Using feature management to enable ISV features or custom features
+
+The Feature management process is currently unavailable for ISV features or custom features. We are adding additional functionality to enhance Feature management and, when those enhancements are complete, we will open up Feature management to all features and provide specific instructions on how to update your feature to use it. 
