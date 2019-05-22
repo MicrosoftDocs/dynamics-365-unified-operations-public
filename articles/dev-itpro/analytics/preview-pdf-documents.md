@@ -57,7 +57,9 @@ The hosted PDF document viewer control is presented by default in most deploymen
 3) Click on the **Save** button<br>
 
 ### Note-worthy items…
-- Expandable/Collapsible sections presented with the default visibility state. These interactive function do not function in the PDF document.<br>
-- The printer drop-down allows users to choose from locally connected devices. This list does NOT include network printers connected to the F&O service.<br>
-- Documents can be downloaded to the local device using the built-in toolbar actions<br>
+- Expandable/Collapsible sections presented with the default visibility state. These interactive operations do not function once the PDF document has been created.<br>
+- The printer drop-down allows users to choose from locally connected devices. This list does not include network printers connected through the F&O service.<br>
+- Documents are downloaded to the local device using the built-in toolbar actions<br>
 - Application extensions are available to activate embedded drill-thru links in PDF documents<br>
+- Use the Print Destination options to produce documents in formats other than PDF<br>
+
