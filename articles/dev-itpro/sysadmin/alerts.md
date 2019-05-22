@@ -50,7 +50,7 @@ Follow these steps to set up alerts for batch enhanced forms.
 
     ![Alert notification](./media/Batch-alert-notification.png)
 
-# Set up alerts for batch legacy forms
+## Set up alerts for batch legacy forms
 
 Follow these steps to set up alerts for batch legacy forms.
 
