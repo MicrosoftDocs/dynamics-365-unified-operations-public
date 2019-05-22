@@ -17,7 +17,7 @@ For more information about how to apply a deployable package, see [Apply a deplo
 
 ### Database refresh and Cloud Scale Units
 
-As part of databsae refresh, scale unit channel databsae records (in the Channel Database form) cannot be moved across environments since they represent environment specific configuration.
+As part of database refresh, scale unit channel database records (in the Channel Database form) cannot be moved across environments since they represent environment specific configuration.
 
 For **Cloud Scale Units**, you can regenerate the channel database record by issuing a re-deployment of your scale units in LCS. Please see [Database refresh and Cloud Scale Units](../deployment/Initialize-Retail-Channels.md#Database refresh-and-Cloud-Scale-Units).
 
