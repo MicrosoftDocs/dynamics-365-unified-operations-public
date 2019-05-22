@@ -39,8 +39,7 @@ This topic describes the steps for initializing Retail Cloud Scale Unit.
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
-2. The headquarters needs to be available and not in [Maintenance mode](../sysadmin/maintenance-mode.md).
-3. In Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for Retail Cloud Scale Unit**.
+2. In Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for Retail Cloud Scale Unit**.
 
 The request will be completed within five business days.
 
@@ -48,10 +47,11 @@ The request will be completed within five business days.
 
 Please make sure the headquarters is available. This is required to register the scale unit with the headquarters during the initialization process. It is not recommended to initialize a scale unit when the headquarters is under servicing, as it may become unavailable during its servicing process.
 
-1. In LCS, on the environment details page, select **Environment features \> Retail**.
-2. On the Retail setup deployment page, select **Initialize**.
-3. Select the version of the Retail Cloud Scale Unit to initialize.
-4. Select a region to initialize Retail Cloud Scale Unit in.
+1. Make sure the headquarters environment is available and not in [Maintenance mode](../sysadmin/maintenance-mode.md).
+2. In LCS, on the environment details page, select **Environment features \> Retail**.
+3. On the Retail setup deployment page, select **Initialize**.
+4. Select the version of the Retail Cloud Scale Unit to initialize.
+5. Select a region to initialize Retail Cloud Scale Unit in.
 
 ## Configure retail channels to use Retail Cloud Scale Unit
 
