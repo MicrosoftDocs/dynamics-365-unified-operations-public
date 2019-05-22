@@ -101,3 +101,8 @@ For more information, see the following topics:
 You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the system tests the journal for specific error conditions. If you use the **Simulate posting** function, the system runs all of the same processes that are run during posting without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then click the **Post** menu to post the journal. 
 
 **Simulate posting** is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
+
+## Journal unlock
+A new button is available on the journal page to unlock a journal that has a status of "locked by system" set to yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named 'Journal Unlock button' in the feature management page. 
+
+
