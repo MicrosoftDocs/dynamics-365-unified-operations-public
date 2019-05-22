@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Platform update 28
 [!include[banner](../includes/banner.md)]
 
 ### Enhanced document report viewing experience
-Streamline application experiences that include the production of business documents by taking advantage of the embedded PDF 'Preview' option.  Dynamics 365 for Finance & Operations applications deliver a modern experience previewing business documents produced by the service.  Use the built-in toolbar to navigate and download the document or print to locally connected devices.
+Streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF 'Preview' option.  Dynamics 365 for Finance & Operations applications deliver a modern experience previewing business documents produced by the service.  Use the built-in toolbar to navigate and download the document or print to locally connected devices.
 
-The embedded viewer offers customers consistency between the screen presentation and the output printed on paper. In addition, report viewing times are drastically reduced when compared to the legacy experience. The new 'Preview' option is available on all supported devices and does not require any additional 3rd party software. Documents can be downloaded and quickly navigated using built-in viewer toolbar options.
+The embedded viewer offers customers consistency between the screen presentation and the output printed on paper. In addition, report viewing times are drastically reduced when compared to the legacy experience. The new 'Preview' option is available on all supported devices and does not require any additional 3rd party software. Documents can be easily downloaded and navigated using built-in viewer toolbar options.
 
 Here's a screen shot of the preview experience with a modern business document
 
