@@ -354,7 +354,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -1633,7 +1633,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -4054,7 +4054,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -5165,7 +5165,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -9946,7 +9946,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -11384,7 +11384,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method checkBox
 
@@ -13616,7 +13616,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -15902,7 +15902,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 

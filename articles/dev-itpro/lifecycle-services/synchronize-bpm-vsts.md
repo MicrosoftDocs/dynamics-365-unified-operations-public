@@ -39,7 +39,7 @@ Currently, BPM-Azure DevOps synchronization doesn't support custom work item typ
 - Does not delete any state of a work item type
 - Does not add any required fields to a work item type
 
-To learn more about Azure DevOps, go to [www.visualstudio.com/team-services](http://www.visualstudio.com/team-services).
+To learn more about Azure DevOps, go to [www.visualstudio.com/team-services](https://www.visualstudio.com/team-services).
 
 ## LCS project settings: Set up Azure DevOps
 
@@ -93,7 +93,7 @@ You can also start Azure DevOps synchronization from the toolbar in a BPM librar
 
 ![Starting Azure DevOps synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
 
->[!NOTE]
+> [!NOTE]
 > BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.
 
 ## Turn off synchronization of BPM with Azure DevOps

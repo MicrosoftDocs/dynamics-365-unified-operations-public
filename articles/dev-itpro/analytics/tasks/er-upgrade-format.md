@@ -39,7 +39,7 @@ To complete these steps, you must first complete the steps in the “Create a co
 
 ## Select format configuration for customization
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * In this example, sample company Litware, Inc. (http://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.    Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided. Proseware, Inc. uses formats in certain regions of that country.  
+    * In this example, sample company Litware, Inc. (https://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.    Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided. Proseware, Inc. uses formats in certain regions of that country.  
 2. Click Reporting configurations.
 3. Click Show filters.
 4. Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator

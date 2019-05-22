@@ -69,7 +69,7 @@ There are two ways to buy a subscription for an on-premises deployment
 
 ### Buy through volume licensing
 
-If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365).
+If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
 In Volume Licensing, Finance and Operations is available through:
 
@@ -93,7 +93,7 @@ Microsoft provides flexible, industry-leading support, services, and resources t
 More information:
 
 - [Dynamics 365 Support](https://www.microsoft.com/dynamics365/support)
-- [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## Step four: Learn about FastTrack and plan your deployment
 

@@ -62,7 +62,7 @@ Retail Cloud point of sale (POS) can run in any of the following web browsers th
 
 ## Network requirements
 
-- Finance and Operations is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts Finance and Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
+- Finance and Operations is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts Finance and Operations. We recommend that you test network latency at [AzureSpeed.com](http://www.azurespeed.com).
 - Bandwidth requirements for Finance and Operations depend on your scenario. Most typical scenarios require a bandwidth that is more than 50 kilobytes per second (KBps). However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve workspaces or extensive customization.
 
 In general, Finance and Operations is optimized for the internet. The number of round trips from a browser client to the Azure datacenter is very small, and the whole payload is compressed.

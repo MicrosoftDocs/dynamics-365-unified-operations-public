@@ -88,7 +88,7 @@ The default dimension controller, **DimensionDefaultingController**, uses the **
 
 ### Form uptake and the dimensions data model
 
-All pages that show default dimensions use the **DimensionDefaultingController** controller. This controller automatically shows dimensions, and loads and saves values and user interactions. For information about these uptake patterns, see the [Implementing the Account and Financial Dimensions Framework for Microsoft Dynamics AX 2012 Applications](http://go.microsoft.com/fwlink/?linkid=213133) white paper.
+All pages that show default dimensions use the **DimensionDefaultingController** controller. This controller automatically shows dimensions, and loads and saves values and user interactions. For information about these uptake patterns, see the [Implementing the Account and Financial Dimensions Framework for Microsoft Dynamics AX 2012 Applications](https://go.microsoft.com/fwlink/?linkid=213133) white paper.
 
 ### Storage of default dimension values
 
@@ -252,7 +252,7 @@ The following illustration shows the code that is required in order to merge the
 
 This section explains how default dimensions can be merged to create new ledger dimensions.
 
-Default dimensions provide values that will be used later to create ledger account combinations that are used in journals and accounting distributions. According to the definition in the [Ledger account combinations series of blog posts](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx), a ledger account combination is just a set of MainAccount and dimension values that structure and order are applied to.
+Default dimensions provide values that will be used later to create ledger account combinations that are used in journals and accounting distributions. According to the definition in the [Ledger account combinations series of blog posts](https://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx), a ledger account combination is just a set of MainAccount and dimension values that structure and order are applied to.
 
 Default dimensions provide all the dimensions, except MainAccount, that are required for a ledger account combination. Default dimensions can be combined with a default account, or they can be combined another ledger dimension to produce a ledger dimension.
 
