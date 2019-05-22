@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include[banner](../includes/banner.md)]
 
-### Enhanced document report viewing experience
+### Enhanced PDF document previewing experience
 Streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF 'Preview' option.  Dynamics 365 for Finance & Operations applications deliver a modern experience previewing business documents produced by the service.  Use the built-in toolbar to navigate and download the document or print to locally connected devices.
 
 The embedded viewer offers customers consistency between the screen presentation and the output printed on paper. In addition, report viewing times are drastically reduced when compared to the legacy experience. The new 'Preview' option is available on all supported devices and does not require any additional 3rd party software. Documents can be easily downloaded and navigated using built-in viewer toolbar options.
@@ -60,4 +60,4 @@ The hosted PDF document viewer control is presented by default in most deploymen
 - Expandable/Collapsible sections presented with the default visibility state. These interactive function do not function in the PDF document.<br>
 - The printer drop-down allows users to choose from locally connected devices. This list does NOT include network printers connected to the F&O service.<br>
 - Documents can be downloaded to the local device using the built-in toolbar actions<br>
-- Application extensions are available to enable drill-thru links in PDF documents<br>
+- Application extensions are available to activate embedded drill-thru links in PDF documents<br>
