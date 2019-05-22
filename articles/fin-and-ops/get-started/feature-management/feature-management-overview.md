@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.2
 
 # Feature management overview
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
 Features are added and updated in every release of Microsoft Dynamics 365 for Finance and Operations. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
@@ -40,89 +40,88 @@ You can open the **Feature management** workspace by selecting the appropriate t
 The feature list includes the following information:
 
 - **Feature name** – A description of the feature that was added.
-- **Enabled status** – A symbol indicates whether a feature has been enabled (check mark), is not enabled (blank), has been scheduled to be enabled (clock), or is mandatory enabled (lock). The setting that is shown here is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only for legal entities that the user has access to.
-- **Enable date** – The date when the feature was turned on or will be turned on if the date is a future date.
+- **Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), or is mandatorily turned on (lock). The setting that is shown here is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
+- **Enable date** – The date when the feature was turned on or is scheduled to be turned on.
 - **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
 - **Module** – The module that is affected by the new feature.
 
-When you select a feature, additional information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you will be taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
+When you select a feature, additional information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
-The **Feature management** workspace also contains several tabs with a list of features in it. 
-- **New** - Shows all features that have been added since the last monthly update. If you have skipped any monthly updates, it will contain all of the new features since the last time you updated. The newest features appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
-- **Not enabled** - Shows all features that have not been enabled. The newest features appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
-- **Scheduled** - Shows all features that have been scheduled to be enabled on a future date. The features that have the earliest scheduled date will appear at the top of the list. The total number of new features is also shown in a tile at the top of the page.
-- **All** - Shows all features. The newest features appear at the top of the list.
+The **Feature management** workspace also has several tabs, each of which shows a list of features.
 
+- **New** – This tab shows all features that have been added since the last monthly update. If you've skipped any monthly updates, the tab shows all the new features that have been added since the last time that you updated. The newest features appear at the top of the list. The total number of new features is also shown on a tile at the top of the page.
+- **Not enabled** – This tab shows all features that haven't been turned on. The newest features appear at the top of the list. The total number of new features that haven't been turned on is also shown on a tile at the top of the page.
+- **Scheduled** – This tab shows all features that have been scheduled to be turned on in the future. The features that have the earliest scheduled date appear at the top of the list. The total number of schedule new features is also shown on a tile at the top of the page.
+- **All** – This tab shows all features. The newest features appear at the top of the list.
 
-## Enable a feature
+## Turn on a feature
 
-If a feature hasn't been enabled, an **Enable Now** button appears in the details pane. You can use this button to enable the feature.
+If a feature hasn't been turned on, an **Enable Now** button appears in the details pane. You can use this button to turn on the feature.
 
-1. Select the feature that you want to enable, and then, in the details pane, select **Enable Now**.
-2. The feature will be enabled.
+- Select the feature to turn on, and then, in the details pane, select **Enable Now**. The feature is turned on.
 
-Some features can't be disabled after you enable them. If the feature that you are attempting to enable can't be disabled, you receive a warning. At this point, you can select **Cancel** to cancel the operation and leave the feature disabled. However, if you select **Enable** and enable the feature, you won't be able to disable it later.
+Some features can't be turned off after you turn them on. If the feature that you're trying to turn on can't be turned off, you receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature turned off. However, if you select **Enable** to turn on the feature, you won't be able to turn it off later.
 
-After the feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates when the feature will be enabled in the future. If you use a future date, the feature will display in the **Scheduled** list. This message will appear every time that you select the feature in the feature list. Features that are scheduled in the future will be enabled at midnight by a batch process based on the time zone represented by the system date. 
+After a feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature is scheduled to be turned on. It appears every time that you select the feature in the feature list.
+
+Features that are scheduled to be turned on in the future appear on the **Scheduled** tab. A batch process will turn them on at midnight on the specified date, based on the time zone that is represented by the system date.
 
 ## Reschedule a feature
 
-If a feature has been enabled in the future, a **Schedule** button appears in the details pane. You can use this button to change the **Enable date** to a different date.
+If a feature has been scheduled to be turned on in the future, a **Schedule** button appears in the details pane. You can use this button to change the **Enable date** value to a different date.
 
-1. Select a scheduled feature that you want to reschedule, and then, in the details pane, select **Schedule**.
-2. A slider appears, where you can specify the date on which the feature should be enabled. 
+1. Select the scheduled feature to reschedule, and then, in the details pane, select **Schedule**.
+2. In the dialog box that appears, in the **Enable date** field, specify the new date when the feature should be turned on.
 3. Select **Enable** to reschedule the feature or **Disable** to cancel the schedule.
 
-## Disable a feature
+## Turn off a feature
 
-If a feature has already been enabled, a **Disable** button appears in the details pane. You can use this button to disable the feature. The **Disable** button isn't available if the feature can't be disabled after it is enabled.
+If a feature has already been turned on, a **Disable** button appears in the details pane. You can use this button to turn off the feature. The **Disable** button isn't available if the feature can't be turned off after it's turned on.
 
-- Select the feature that you want to turn off, and then, in the details pane, select **Disable**.
+- Select the feature to turn off, and then, in the details pane, select **Disable**. The feature is turned off, and the **Enable date** field is cleared.
 
-- The feature is disabled and the date is cleared.
+After a feature is turned off, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't yet been turned on. It appears every time that you select the feature in the feature list. Features that haven't been turned on appear on the **Not enabled** tab.
 
-After the feature is disabled, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't yet been enabled and it will appear in the **Not enabled** list. The message will appear every time that you select the feature in the feature list.
+## Features that must be turned on
 
-## Features that must be enabled
+Sometimes, a critical feature is delivered that must be turned on automatically when you do an update. These features will be turned on automatically on the date that is specified in the **Enable date** field. For these features, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature will be turned on. It appears every time that you select the feature in the feature list.
 
-A critical feature may be delivered that must be enabled automatically when you do an update. It will be enabled automatically on the **Enable date**. A message will appear below the **Learn more** link in the details pane. This message will state that the feature was enabled or will be enabled automatically on the **Enable date**. It will appear every time that you select the feature in the feature list.
+## Turn on all features automatically
 
-## Enable all features automatically
+By default, all features that are added to your environment are turned off, unless they are mandatory features. However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
 
-All features are added to your environment with the features set to **Off** unless the feature is mandatory. However, if you want to automatically enable all new features, you can use the dropdown under the workspace title to change what will happen when new features are added. 
-
-- Select **All new features will be enabled by default** to enable all new features automatically when they are added to your environment. 
-- Select **All new features will be disabled by default** to disable all new features automatically when they are added to your environment. 
+- Select **All new features will be enabled by default** to automatically turn on all new features when they are added to your environment.
+- Select **All new features will be disabled by default** to automatically turn off all new features when they are added to your environment.
 
 ## Assigning roles
 
-The **Feature management** workspace can be opened by system admins, and by users who are assigned to the Feature manager or Feature viewer roles that were created to support the Feature management experience. Users in the Feature manager role can turn any feature on or off. They can also update the comments section for the feature. Users in the Feature viewer role can only view the **Feature management** workspace. They can't turn features on or off.
+The **Feature management** workspace can be opened by system admins, and also by users who are assigned to the Feature manager role or the Feature viewer role. These two roles were created to support the Feature management experience. Users in the Feature manager role can turn any feature on or off. They can also update the **Comments** field for the feature. Users in the Feature viewer role can only view the **Feature management** workspace. They can't turn features on or off.
 
-The Feature manager role and Feature viewer role don't override the existing security that a user has. The roles only control access to enabling features. It doesn't provide access to the features themselves.
+The Feature manager role and Feature viewer role don't override the existing security that a user has. They just control whether the user can turn features on and off. They don't provide access to the features themselves.
 
-## Features that use config keys
+## Features that use configuration keys
 
-If a feature uses a config key and the config key is not enabled, the **Feature management** workspace will not show the feature in the list of available features. When you enable the config key, you must refresh the list of features using the **Check for update** menu item. The feature will then appear in the list. 
+If a feature uses a configuration key, but the configuration key isn't turned on, the **Feature management** workspace doesn't show the feature in the list of available features. After you turn on the configuration key, you must update the feature list by using the **Check for update** menu item. The feature then appears in the feature list.
 
-The feature will not be removed from the list if you disable the config key. 
+If you turn off the configuration key, the feature isn't removed from the feature list.
 
 ## Data entities
 
-A data entity called **Feature management** will allow you to export the feature management settings from one environment and then import them into another environment. The entity will only update existing features. The business logic in the entity will also ensure that the same rules used in the form will be applied upon import. For example, you can't override a mandatory feature setting by removing the date during an import. 
+A data entity that is named **Feature management** lets you export the Feature management settings from one environment and then import them into another environment. This entity updates only existing features. The business logic in the entity also helps guarantee that the same rules that are used on the page will be applied when the import is done. For example, you can't override a mandatory feature setting by removing the date during import.
 
-The following examples describe what will happen when you import data with the entity.
+The following examples describe what occurs when you use the **Feature management** entity to import data.
 
-1. If you change the Enabled field to "Yes", then the feature is enabled and the enable date is set to today.
-2. If you change the Enabled date to "No' or use a blank EnableDate, the feature will be disabled and the enable date will be cleared. You cannot disable a mandatory feature or a feature that can't be disabled once it has been enabled.
-3. If you change the EnableDate field to a future date, then the feature will be scheduled for that date.
-4. If you change the Enabled field to "Yes" and change the EnableDate to a future date, then the feature will be scheduled for that date. Scheduling takes priority over enabling.
-5. If you change the Enabled field to "No" but you also change the EnableDate to a future date, the feature will be scheduled to be enabled at the future date.
-6. If a feature is enabled and you add a future EnableDate, the feature will remain enabled. You must change the Enable field to "No" if you want to reschedule the feature.
+- If you change the value of the **Enabled** field to **Yes**, the feature is turned on, and the **Enable date** field is set to the current date.
+- If you change the value of the **Enabled** field to **No** or leave the **EnableDate** field blank, the feature is turned off, and the **Enable date** field is cleared. You can't turn off a mandatory feature or a feature that can't be turned off after it's turned on.
+- If you change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.
+- If you change the value of the **Enabled** field to **Yes** and change the value of the **EnableDate** field to a future date, the feature is scheduled for that date. Scheduling takes priority over enabling.
+- If you change the value of the **Enabled** field to **No**, but you also change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.
+- If a feature is turned on, and you add an **EnableDate** field that is set to a future date, the feature remains turned on. To reschedule the feature, you must change the **Enabled** field to **No**.
 
 ## Feature management and flighting
 
-Feature management allows you to control features that are shipped in each release. Flighting allows Microsoft teams to release features to a limited number of customers so that the features can be tested and validated without affecting all customers. Feature management does not control the flighting of any features.
+Feature management lets you to control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. Feature management doesn't control the flighting of any features.
 
-## Using feature management to enable ISV features or custom features
+## Using Feature management to turn on ISV features or custom features
 
-The Feature management process is currently unavailable for ISV features or custom features. We are adding additional functionality to enhance Feature management and, when those enhancements are complete, we will open up Feature management to all features and provide specific instructions on how to update your feature to use it. 
+Feature management is currently unavailable for features from independent software vendors (ISVs) and custom features. However, Microsoft is adding more functionality to enhance Feature management. After those enhancements are completed, Microsoft will make Feature management available to all features and provide instructions for updating your features to use it.
