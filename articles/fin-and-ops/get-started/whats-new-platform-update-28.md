@@ -36,8 +36,8 @@ ms.dyn365.ops.version: Platform 28
 
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 28. This version has a build number of 7.0.XXXX. For more information about Platform update 28, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
-## Feature name
-Description of feature and link to topic that has the details about the feature.
+## Data management enhanced view as the default view
+The standard view in data management has been deprecated for about a couple of years. Users going to the data management workspace were informed about the deprecation during this period. The enhanced view is now being set as the default view as the next step towards this process. The standard view is still available and can be brought back via the existing setting in framework parameters, although it is not recommended to use standard view as it will be deleted sometime in future. If users explicitly chose to use standard view by clicking the 'standard view' button on any of the data management forms, such users will continue to see standard view as thier personalized settings will be honoured. However, such users are also advised to switch to using enhanced view.
 
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
