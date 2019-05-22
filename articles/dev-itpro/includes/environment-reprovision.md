@@ -13,13 +13,13 @@ For more information about how to apply a deployable package, see [Apply a deplo
 > [!IMPORTANT]
 > Some environment specific records cannot be moved along with the database from the source to the target environment. The following records are not moved to the target environment:
 > - Retail Self-Service installers
-> - Cloud Scale uUnit channel database configuration record
+> - Retail Cloud Scale Unit channel database configuration record
 
-### Database refresh and Cloud Scale Units
+### Database refresh and Retail Cloud Scale Units
 
 As part of database refresh, scale unit channel database records (in the Channel Database form) cannot be moved across environments since they represent environment specific configuration.
 
-For **Cloud Scale Units**, you can regenerate the channel database record by issuing a re-deployment of your scale units in LCS. For more information, see [Database refresh](../database/database-refresh.md) and [Initialize Retail Cloud Scale Unit](../deployment/Initialize-Retail-Channels.md).
+For **Retail Cloud Scale Units**, you can regenerate the channel database record by issuing a re-deployment of your scale units in LCS. For more information, see [Database refresh](../database/database-refresh.md) and [Initialize Retail Cloud Scale Unit](../deployment/Initialize-Retail-Channels.md).
 
 ### Database refresh and Retail Self-Service installers
 
