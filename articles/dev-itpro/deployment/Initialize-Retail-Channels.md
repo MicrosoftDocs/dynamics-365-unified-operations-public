@@ -60,11 +60,11 @@ Please make sure the headquarters is available. This is required to register the
 
 ### Database refresh and Cloud Scale Units
 
-Before you begin, please make sure you are familiar with [Steps to complete after a database refresh for environments that use Retail functionality](../database/database-refresh.md#Steps-to-complete-after-a-database-refresh-for-environments-that-use-Retail-functionality).
+Before you begin, make sure you are familiar with [Steps to complete after a database refresh for environments that use Retail functionality](../database/database-refresh.md#Steps-to-complete-after-a-database-refresh-for-environments-that-use-Retail-functionality).
 
-As part of databsae refresh, the scale unit channel databsae records (in the Channel Database form) cannot be moved across environments since they represent environment specific configuration.
+The scale unit channel database records (in the Channel Database form) cannot be moved across environments as part of database refresh. This is because the records represent environment specific configuration.
 
-After databsa refresh and after the Retail Reprovisioning tool has been executed, you can regenerate the scale unit's channel database record by issuing a re-deployment of your scale unit in LCS. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if it detects that the registration is missing.
+After database refresh and after the Retail Reprovisioning tool has been executed, you can regenerate the scale unit's channel database record by issuing a re-deployment of your scale unit in LCS. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if it detects that the registration is missing.
 
 You can issue a re-deployment of the scale unit, without changing any components, by selecting to deploy the same version your scale unit is at already. This can be done in LCS by the following steps:
 
