@@ -645,14 +645,13 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 
 ## Extending filters to have custom fields (if supported by the middleware)
 
-Some eventing systems allow for filtering of the events. For example: Azure Service Bus has a property bag which can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext which can be customized what data is used for filtering by the different eventing systems.
+Some eventing systems allow for filtering of the events. For example, Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext, which can be extended to include custom fields for filtering by the different eventing systems.
 
-### Payload Context
+### Payload context
 
-The Business Events framework supports a concept of “payload context” which provides a means for decorating messages sent by the framework with context about the payload. In some scenarios, more or different context may be required when sending
-messages to endpoints, so the framework has hookpoints where the context can be overwritten and the adapters can be customized.
+The Business Events framework supports a concept of *payload context*, which provides a means for decorating messages sent by the framework with context about the payload. In some scenarios, additional context may be required when sending messages to endpoints, so the framework has hookpoints where the context can be overwritten and the adapters can be customized.
 
-### Adding a custom Payload Context
+### Adding a custom payload context
 
 A custom payload context must extend from the class BusinessEventsCommitLogPayloadContext.
 
@@ -677,10 +676,9 @@ return eventTime;
 }  
 ...
 
-### Constructing the custom Payload Context
+### Constructing the custom payload context
 
-A CoC extension will need to be written for the BusinessEventsSender.buildPayloadContext method to construct the new payload
-context type.
+A Chain of Command (CoC) extension will need to be written for the BusinessEventsSender.buildPayloadContext method to construct the new payload context type.
 
 ...
 [ExtensionOf(classStr(BusinessEventsSender))]
@@ -711,12 +709,11 @@ return customPayloadContext;
 }  
 ...
 
-### Consuming the custom Payload Context from an Adapter
+### Consuming the custom payload context from an adapter
 
-Adapters that consume payload context are written in such a way that they expose CoC able methods to allow consuming new payload contexts. In the below example we will explore what this looks like for the Service Bus adapter, which has a
-generic property bag which can be filtered on by the consumers of the Service Bus.
+Adapters that consume payload context are written in such a way that they expose CoC methods to allow consuming new payload contexts. The following example explores what this looks like for the Service Bus adapter, which has a generic property bag that can be filtered on by the consumers of the Service Bus.
 
-The BusinessEventsServiceBusAdapter has the CoC-able method called addProperties
+The BusinessEventsServiceBusAdapter has the CoC method called addProperties.
 
 ...
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
@@ -743,7 +740,7 @@ propertyBag.Add('EventId', customPayloadContext.parmEventId());
 
 propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
 
-*// Convert the enum to string in order to be able to serialize the property.*
+*// Convert the enum to string to be able to serialize the property.*
 
 propertyBag.Add('BusinessEventCategory', enum2Symbol(enumNum(ModuleAxapta),
 customPayloadContext.parmBusinessEventCategory()));
@@ -762,15 +759,15 @@ propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
 ## Adding a custom endpoint type
 The Business Events framework supports adding new endpoint types in addition to the ones that ship out of the box. An example of how to do this is describe with the below.
 
-### Add new Endpoint Type
+### Add new endpoint type
 
-Each endpoint type is represented by the enum BusinessEventsEndpointType. Adding a new endpoint starts by extending this enum like below.
+Each endpoint type is represented by the enum BusinessEventsEndpointType. Adding a new endpoint starts by extending this enum, as shown in the following section.
 
-### Add new Endpoint Table to the hierarchy
+### Add new endpoint table to the hierarchy
 
-All Endpoint data is stored in a hierarchy table, the root of which is BusinessEventsEndpoint. Any new endpoint table must extend this root table by setting the Support Inheritance property = Yes, and the Extends property = “BusinessEventsEndpoint” (or any other endpoint in the BusinessEventsEndpoint hierarchy).
+All endpoint data is stored in a hierarchy table, the root of which is BusinessEventsEndpoint. A new endpoint table must extend this root table by setting the Support Inheritance property = Yes, and the Extends property = “BusinessEventsEndpoint” (or any other endpoint in the BusinessEventsEndpoint hierarchy).
 
-The new table will then hold the definition of the custom fields needed to initialize and communicate with this endpoint in code. To avoid the possibility of conflict, fields names should be qualified to the specific endpoint they belong. For Example, two endpoints may have the concept of a “URL” field, but to distinguish them, their names should be specific to the custom endpoint like “CustomURL”
+The new table will then hold the definition of the custom fields needed to initialize and communicate with this endpoint in code. To avoid the possibility of conflict, field names should be qualified to the specific endpoint where they belong. For example, two endpoints can have the concept of a “URL” field, but to distinguish them, their names should be specific to the custom endpoint like “CustomURL”.
 
 ### Add new EndpointAdapter class that implements IBusinessEventsEndpoint
 
@@ -785,7 +782,7 @@ public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 {  
 ...
 
-The initialize method should be implemented to check the type of the BusinessEventsEndpoint buffer that is passed in, and initialize when it is of the correct type for this new adapter, like below:
+The initialize method should be implemented to check the type of the BusinessEventsEndpoint buffer that is passed in, and initialize when it is of the correct type for this new adapter, as shown below.
 
 ...
 
@@ -819,7 +816,7 @@ classStr(CustomEndpointAdapter), varStr(customField)));
 Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold
 your custom field input.
 
-The custom field input should be bound to the new table and field created in the previous step. Create a class extension to extend the getConcreteType and showOtherFields methods of BusinessEventsEndpointConfiguration form like below:
+The custom field input should be bound to the new table and field created in the previous step. Create a class extension to extend the getConcreteType and showOtherFields methods of BusinessEventsEndpointConfiguration form, as shown below.
 
 ...
 
