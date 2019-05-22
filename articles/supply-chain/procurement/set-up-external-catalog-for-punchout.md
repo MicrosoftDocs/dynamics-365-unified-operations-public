@@ -70,8 +70,10 @@ This section gives more details about task 4 in the preceding section.
 4. Select the vendor for the catalog. In the **Legal entities** list, there is a row for each legal entity where the vendor is set up. To allow users to request products directly from the vendor’s catalog in some legal entities but not others, you can use the **Prevent access** or **Allow access** button for each legal entity where you want the catalog to be or not to be available.
 5. In the **Default expiration (Days)** field, enter the number of days that a quotation received from the external catalog is valid and can be used to purchase from the external vendor. When a quotation is created and retrieved from the vendor’s external catalog site, the quotation is valid as of the current system date and remains valid for the number of days that you enter in this field.
 6. Click the **Add** button to start mapping the procurement categories to the external catalog. Then, in the Category name list, select a category. The list of categories is a superset of procurement categories that the vendor has been mapped to in all the legal entities that are set up for the vendor.
-[!NOTE]
-Procurement policies are used to allow or restrict access to categories for the buying legal entity or receiving operating unit. Punchout to an external catalog requires that access be allowed to at least one of the procurement categories that is mapped to the catalog.
+
+    > [!NOTE]
+    > Procurement policies are used to allow or restrict access to categories for the buying legal entity or receiving operating unit. Punchout to an external catalog requires that access be allowed to at least one of the procurement categories that is mapped to the catalog.
+
 7. Set up the cXML setup request message that will be sent to the vendor. The automatically generated message format is the minimal template that is required in order to start a session. Fill in values for the tags.
 
 At any time, you can reload the system-generated message template by clicking **Restore message format**. 
@@ -97,7 +99,7 @@ Below you can find a description of the tags that are included in the template:
 An extrinsic element is additional information, such as a user name that is based on a user that punches out. The extrinsic element is set when the punchout occurs and it can be sent in the request setup message.
 Your vendor could have a requirement for receiving an extrinsic element in the setup request. In that case, you should add the extrinsic element to the list of extrinsic elements in the **Message format** section of the **External catalog** page. 
 Specify a name for the extrinsic element that the vendor can recognize and map it to a value. The options for values are: User name, User email, or Random value.
-For more information about the cXML protocol, see: http://cxml.org/
+For more information about the cXML protocol, see the [cXML.org website](http://cxml.org/).
 
 ## Post back message
 The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Finance and Operations. Post back messages can’t be configured. The messages are based on the cXML protocol definition. Here is the information that can be part of the post back message that is received on a requisition line:

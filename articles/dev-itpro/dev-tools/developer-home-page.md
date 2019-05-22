@@ -57,7 +57,7 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Deprecated features](../migration-upgrade/deprecated-features.md)
 -   [Deprecated API’s](../migration-upgrade/deprecated-apis.md)
 -   [Rename and reboot machines for Azure DevOps](../migration-upgrade/vso-machine-renaming.md)
--   [Introduction to Azure DevOps (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
+-   [Introduction to Azure DevOps (Video)](https://channel9.msdn.com/Events/Build/2014/2-575)
 <!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
 <!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
 <!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->

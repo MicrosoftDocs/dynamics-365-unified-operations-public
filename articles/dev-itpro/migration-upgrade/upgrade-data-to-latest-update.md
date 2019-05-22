@@ -96,7 +96,7 @@ In Tier 2 or higher environments, including Production, you will run through the
 ## Select the correct data upgrade deployable package
 
 To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download it from the Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
-1. Sign-in to http://lcs.dynamics.com/.
+1. Sign in to [LCS](https://lcs.dynamics.com/).
 2. Select the **Shared asset** library tile.
 3. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
@@ -131,7 +131,7 @@ This step is required if you're upgrading a database from the February 2016 rele
     > [!NOTE]
     > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Export a copy of the Standard User Acceptance Test (UAT) database](../database/dbmovement-scenario-exportuat.md).   
     > 
-    > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
+    > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/).
 
 3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 

@@ -77,7 +77,10 @@ The absolute value of *arg*.
     }
 
 ## acos
-Retrieves the arc cosine of a real number. **Note:** Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."
+Retrieves the arc cosine of a real number.
+
+> [!NOTE]
+> Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."
 
 ### Syntax
 
@@ -107,7 +110,10 @@ The arc cosine of *arg*.
     }
 
 ## asin
-Retrieves the arc sine of a real number. **Note:** Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."
+Retrieves the arc sine of a real number.
+
+> [!NOTE]
+> Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."
 
 ### Syntax
 
@@ -242,7 +248,10 @@ The following code example displays **0.76**.
     }
 
 ## cosh
-Retrieves the hyperbolic cosine of a real number. **Note:** Argument values that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."
+Retrieves the hyperbolic cosine of a real number.
+
+> [!NOTE]
+> Argument values that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."
 
 ### Syntax
 
@@ -532,7 +541,7 @@ The number that is a multiple of the value specified by the *\_decimals* paramet
 
 ### Remarks
 
-To round a real number to a specified number of decimal places, use the [decround function](http://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx).
+To round a real number to a specified number of decimal places, use the [decround function](https://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx).
 
 ### Remarks
 
