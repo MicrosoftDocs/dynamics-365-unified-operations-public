@@ -448,7 +448,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>INDEX (list, index)</td>
 <td>This function returns a record that is selected by a specific numeric index in the list. An exception is thrown if the index is out of range of the records in the list.</td>
-<td>If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|”), 2)</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”. The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> also returns the “B” text value.</td>
+<td>If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|”), 2</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”. The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> also returns the “B” text value.</td>
 </tr>
 </tbody>
 </table>
