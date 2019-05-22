@@ -96,14 +96,14 @@ For each additional RCSU that you deploy, it is also recommended that you create
 
 If you're already using cloud-hosted Retail channel components in an environment, initialization of Retail Cloud Scale Unit will help reduce the downtime when those components are updated. Additional planning is required before initialization of Retail Cloud Scale Unit.
 
-When you initialize your first Cloud Scale Unit in an environment that uses cloud-hosted Retail channel components, this process will migrate your channels associated to the cloud-hosted channel components to the first scale unit. Channels associated with Store Scale units are unnafected.
+When you initialize your first Cloud Scale Unit in an environment that uses cloud-hosted Retail channel components, the initialization process will migrate your channels associated to the cloud-hosted channel components to the first scale unit. Channels associated with Store Scale units are unaffected.
 
-The migration process is transparant to the channels. Once the scale unit innitialization is started, the following operations will be automaticallt performed:
+The migration process is transparant to the channels. Once the scale unit innitialization starts, the following operations are automatically performed:
 
-1. A new Cloud Scale Unit will be created and associated with the environment
-2. The Cloud Scale Unit will be registered as an available Channel Database in the headquarters
-3. All channels mapped to the **Default** channel database in the headquarters will be updated to map to the new Cloud Scale Unit
-4. A Commerce Data Exchange (CDX) full data sync will be performed to bring the channel data to the new scale unit
+1. A new Cloud Scale Unit will be created and associated with the environment.
+2. The Cloud Scale Unit will be registered as an available Channel Database in the headquarters.
+3. All channels mapped to the **Default** channel database in the headquarters will be updated to map to the new Cloud Scale Unit.
+4. A Commerce Data Exchange (CDX) full data sync will be performed to bring the channel data to the new scale unit.
 
 You should plan for a five-hour downtime window for store and any online channel operations that use Retail Server or Cloud Point of Sale.
 
@@ -111,21 +111,21 @@ This process should be first performed in a sandbox environment after a database
 
 Since the Cloud Scale Unit provides dedicated and isolated compute and storage resources from other components, it has its own channel database. This means the following precautions should be taken before migration:
 
-1. **Make sure that all shifts at the POS are closed** - after migration, you won't be able to close any shifts that were active during the migration process
-2. **Make sure that all P-jobs have been successfully completed** - while the previous channel database is maintained and any transactional data will still be synced back to the headquarters, it is recommended that you run P-JOBs before you start.
-3. **Sign out of all POS devices** - POS operations are not supported during migration
+1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process
+2. **Make sure that all P-jobs have been successfully completed.** While the previous channel database is maintained and any transactional data will still be synced back to the headquarters, it is recommended that you run P-JOBs before you start.
+3. **Sign out of all POS devices.** POS operations are not supported during migration
 
 Here is what occurs during the initialization period:
 
-- Cloud-hosted Retail channels won't work (unless POS offline capability is turned on).
+- Cloud-hosted Retail channels won't work, unless you turn on POS offline capability.
 - POS devices with offline capability turned on will have reduced functionality.
 - Any e-Commerce clients that depend on Retail Server will be disrupted.
 - Channels that are hosted on Retail Store Scale Units won't be affected.
-- Head office functionality won't be affected.
+- Head office functionality is not affected.
 
 Here is what occurs after initialization is completed:
 
-- The device activation state of all activated POS devices will be preserved, which means that the devices won't have to be reactivated.
+- The device activation state of all activated POS devices is preserved, which means that the devices won't have to be reactivated.
 - Stand-alone hardware station instances will continue to work.
 - POS channel–side reports will be reset and won't show data from before the initialization.
 - Show journal operation will also be reset and won't show data from before the initialization.
