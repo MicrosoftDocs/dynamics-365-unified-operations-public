@@ -110,7 +110,8 @@ The feature will not be removed from the list if you disable the config key.
 
 A data entity called **Feature management** will allow you to export the feature management settings from one environment and then import them into another environment. The entity will only update existing features. The business logic in the entity will also ensure that the same rules used in the form will be applied upon import. For example, you can't override a mandatory feature setting by removing the date during an import. 
 
-The following examples describe what will happen when you import data with the entity
+The following examples describe what will happen when you import data with the entity.
+
 1. If you change the Enabled field to "Yes", then the feature is enabled and the enable date is set to today.
 2. If you change the Enabled date to "No' or use a blank EnableDate, the feature will be disabled and the enable date will be cleared. You cannot disable a mandatory feature or a feature that can't be disabled once it has been enabled.
 3. If you change the EnableDate field to a future date, then the feature will be scheduled for that date.
