@@ -39,15 +39,17 @@ This topic describes features that are new or changed in Dynamics 365 for Financ
 ## Data management enhanced view as the default view
 The standard view in data management has been deprecated for about a couple of years. Users going to the data management workspace were informed about the deprecation during this period. The enhanced view is now being set as the default view as the next step towards this process. The standard view is still available and can be brought back via the existing setting in framework parameters, although it is not recommended to use standard view as it will be deleted sometime in future. If users explicitly chose to use standard view by clicking the 'standard view' button on any of the data management forms, such users will continue to see standard view as thier personalized settings will be honoured. However, such users are also advised to switch to using enhanced view.
 
-## Feature name
-Description of feature and link to topic that has the details about the feature.
+## Preview documents using embedded PDF viewer control
+Streamline the document viewing experience in Dynamics 365 for Finance & Operations  by taking advantage of the new 'Preview' option for application reports. The embedded PDF document viewer gives customers direct access to locally connected printers and offers fidelity between the screen presentation and the output printed on paper. The 'Preview' option is available on all supported devices and does not depend on any 3rd party software. The embedded PDF viewer includes a built-in toolbar with intuitive controls that make it easy to download and navigate documents.
+
+## Create custom menu commands for embedded PowerBI.com reports
+Turn insights into action using custom menu commands for chart visualizations displayed in PowerBI.com reports hosted in Dynamics 365 Finance & Operations Application Workspaces. Empower users with intuitive gestures to perform business operations on filtered views of their report data. With the latest Platform Update, developers can add custom extensions that give end-users an actionable experience interacting with analytical solutions within F&O applications.
 
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
 
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
-
 
 ## Additional resources
 
