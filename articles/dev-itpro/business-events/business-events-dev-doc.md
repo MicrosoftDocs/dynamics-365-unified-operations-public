@@ -645,7 +645,7 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 
 ## Extending filters to have custom fields (if supported by the middleware)
 
-Some eventing systems allow for filtering of the events. For example, Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext, which can be extended to include custom fields for filtering by the different eventing systems.
+Some middleware systems allow for filtering of the events. For example, Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext, which can be extended to include custom fields for filtering by the different eventing systems.
 
 ### Payload context
 
@@ -763,11 +763,17 @@ The Business Events framework supports adding new endpoint types in addition to 
 
 Each endpoint type is represented by the enum BusinessEventsEndpointType. Adding a new endpoint starts by extending this enum, as shown in the following section.
 
+![Business event endpoint](../media/customendpoint1.png)
+
 ### Add new endpoint table to the hierarchy
 
 All endpoint data is stored in a hierarchy table, the root of which is BusinessEventsEndpoint. A new endpoint table must extend this root table by setting the Support Inheritance property = Yes, and the Extends property = “BusinessEventsEndpoint” (or any other endpoint in the BusinessEventsEndpoint hierarchy).
 
+![Business event endpoint](../media/customendpoint2.png)
+
 The new table will then hold the definition of the custom fields needed to initialize and communicate with this endpoint in code. To avoid the possibility of conflict, field names should be qualified to the specific endpoint where they belong. For example, two endpoints can have the concept of a “URL” field, but to distinguish them, their names should be specific to the custom endpoint like “CustomURL”.
+
+![Business event endpoint](../media/customendpoint3.png)
 
 ### Add new EndpointAdapter class that implements IBusinessEventsEndpoint
 
@@ -816,7 +822,11 @@ classStr(CustomEndpointAdapter), varStr(customField)));
 Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold
 your custom field input.
 
+![Business event endpoint](../media/customendpoint4.png)
+
 The custom field input should be bound to the new table and field created in the previous step. Create a class extension to extend the getConcreteType and showOtherFields methods of BusinessEventsEndpointConfiguration form, as shown below.
+
+![Business event endpoint](../media/customendpoint5.png)
 
 ...
 
