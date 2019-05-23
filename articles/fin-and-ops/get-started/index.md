@@ -11,8 +11,9 @@ description: Find all the training options for Finance and Operations.
                         <ul id="cardtypes-L" class="cardsL">
                             <li>
                                 <div class="container intro">
-                                    <h3 class="likeAnH1">Find the right training for Finance and Operations</h3>
-                                    <p>Find training, workshops and events for Finance and Operations.</p>
+                                    <h3 class="likeAnH1">Get started panel</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum libero at
+                                        orci finibus egestas. Duis viverra erat tincidunt efficitur dapibus.</p>
                                 </div>
                             </li>
                             <li>
@@ -20,23 +21,9 @@ description: Find all the training options for Finance and Operations.
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Business and Technical Decision Makers</h3>
-                                                <p>Do you decide whether to invest in new technologies? Start here.</p>
-                                                <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Join us at an event</span>
-                                                    </a>
-                                                </div>
-                                                <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Get started</span>
-                                                    </a>
-                                                </div>
-                                                <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>See case studies</span>
-                                                    </a>
-                                                </div>
+                                                <h3>Featured landing pages</h3>
+                                                <a class="barLink" href="/azure/virtual-machines/linux/index">Donec ullamcorper non justo at tempor.</a>
+                                                <a class="barLink" href="/azure/virtual-machines/windows/index">Donec ornare augue ut fermentum porta.</a>
                                             </div>
                                         </div>
                                     </div>
@@ -47,45 +34,30 @@ description: Find all the training options for Finance and Operations.
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Business Users</h3>
+                                                <h3>Quickstarts</h3>
                                                 <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Get an introduction</span>
+                                                    <a href="http://microsoft.com">
+                                                        <span>Tech label</span>
                                                     </a>
                                                 </div>
                                                 <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Distribution</span>
+                                                    <a href="http://microsoft.com">
+                                                        <span>Tech label</span>
                                                     </a>
                                                 </div>
                                                 <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Financial management</span>
+                                                    <a href="http://microsoft.com">
+                                                        <span>Tech label</span>
                                                     </a>
                                                 </div>
                                                 <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Human resources</span>
+                                                    <a href="http://microsoft.com">
+                                                        <span>Tech label</span>
                                                     </a>
                                                 </div>
                                                 <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Manufacturing</span>
-                                                    </a>
-                                                </div>
-                                                <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Purchasing</span>
-                                                    </a>
-                                                </div>
-                                                <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Retail</span>
-                                                    </a>
-                                                </div>
-                                                <div class="ico48Link">
-                                                    <a href="learning-catalog-business-user.md">
-                                                        <span>Sales</span>
+                                                    <a href="http://microsoft.com">
+                                                        <span>Tech label</span>
                                                     </a>
                                                 </div>
                                             </div>
