@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (May 21, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 5/21/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (May 21, 2019)"
+# What's new or changed in Dynamics 365 for Talent (May 21, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -50,8 +50,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
-Changes described in this section apply to build number 8.1.2306.
-This release includes minor bug fixes for Dynamics 365 Talent: Core HR.
+Changes described in this section apply to build number 8.1.2306. This release includes minor bug fixes for Dynamics 365 Talent: Core HR.
 
 ## In preview in Core HR
 
