@@ -37,11 +37,11 @@ The following steps explain how a user assigned to the System Administrator or E
 1. Go to Organization administration > Workspaces > Electronic reporting.
 2. Click Configuration providers.
 3. Click New.
-    * A provider record has a unique name and URL. Review the content of this page and skip this procedure if a record for Litware, Inc. (http://www.litware.com) already exists.  
+    * A provider record has a unique name and URL. Review the content of this page and skip this procedure if a record for Litware, Inc. (https://www.litware.com) already exists.  
 4. In the Name field, type 'Litware, Inc.'.
     * Litware, Inc.  
-5. In the Internet address field, type 'http://www.litware.com'.
-    * http://www.litware.com  
+5. In the Internet address field, type 'https://www.litware.com'.
+    * https://www.litware.com  
 6. Click Save.
 7. Close the page.
 

@@ -54,11 +54,11 @@ The operators in the following table are listed in precedence order. The higher 
 Operators on the same line have equal precedence. If there is more than one of these operators in an expression, the expression is evaluated from left to right unless assignment operators are used (these are evaluated from right to left). For example, && (logical AND) and || (logical OR) have the same precedence and are evaluated from left to right. This means that:0&&0||1 == 1, and 1||0&&0 == 0
 
 ## Additional resources
-[Assignment Operators](http://msdn.microsoft.com/library/d4e86b9c-be82-4f19-ad86-7722344a05f3(AX.60).aspx)
+[Assignment Operators](https://msdn.microsoft.com/library/d4e86b9c-be82-4f19-ad86-7722344a05f3(AX.60).aspx)
 
-[Arithmetic Operators](http://msdn.microsoft.com/library/cffbc613-3875-4520-9dea-046dc99aab99(AX.60).aspx)
+[Arithmetic Operators](https://msdn.microsoft.com/library/cffbc613-3875-4520-9dea-046dc99aab99(AX.60).aspx)
 
-[Relational Operators](http://msdn.microsoft.com/library/702af366-4d46-445e-bd4b-722c9845199f(AX.60).aspx)
+[Relational Operators](https://msdn.microsoft.com/library/702af366-4d46-445e-bd4b-722c9845199f(AX.60).aspx)
 
 
 

@@ -197,7 +197,7 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hosts or links to all product documentation for Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoft's free eLearning site. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics 365 for Finance and Operations projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
-| [Support blog](http://aka.ms/AXSupportBlog)                                                    | Provides tips and tricks that are posted by the Dynamics 365 for Finance and Operations Support team. |
+| [Support blog](https://aka.ms/AXSupportBlog)                                                    | Provides tips and tricks that are posted by the Dynamics 365 for Finance and Operations Support team. |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | Hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/)                                          | Hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Provides evaluation and sales information. |

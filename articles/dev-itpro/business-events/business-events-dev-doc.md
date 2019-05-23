@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 05/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -645,7 +645,7 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 
 ## Extending filters to have custom fields (if supported by the middleware)
 
-Some eventing systems allow for filtering of the events. For example, Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext, which can be extended to include custom fields for filtering by the different eventing systems.
+Some middleware systems allow for filtering of the events. For example, Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext, which can be extended to include custom fields for filtering by the different eventing systems.
 
 ### Payload context
 
@@ -655,7 +655,7 @@ The Business Events framework supports a concept of *payload context*, which pro
 
 A custom payload context must extend from the class BusinessEventsCommitLogPayloadContext.
 
-...
+```
 class CustomCommitLogPayloadContext extends
 BusinessEventsCommitLogPayloadContext
 
@@ -674,13 +674,13 @@ return eventTime;
 }
 
 }  
-...
+```
 
 ### Constructing the custom payload context
 
 A Chain of Command (CoC) extension will need to be written for the BusinessEventsSender.buildPayloadContext method to construct the new payload context type.
 
-...
+```
 [ExtensionOf(classStr(BusinessEventsSender))]
 
 public final class CustomPayloadContextBusinessEventsSender_Extension
@@ -707,7 +707,7 @@ return customPayloadContext;
 }
 
 }  
-...
+```
 
 ### Consuming the custom payload context from an adapter
 
@@ -715,7 +715,7 @@ Adapters that consume payload context are written in such a way that they expose
 
 The BusinessEventsServiceBusAdapter has the CoC method called addProperties.
 
-...
+```
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 
 public final class CustomBusinessEventsServiceBusAdapter_Extension
@@ -754,7 +754,7 @@ propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
 }
 
 }  
-...
+```
 
 ## Adding a custom endpoint type
 The Business Events framework supports adding new endpoint types in addition to the ones that ship out of the box. An example of how to do this is describe with the below.
@@ -763,28 +763,34 @@ The Business Events framework supports adding new endpoint types in addition to 
 
 Each endpoint type is represented by the enum BusinessEventsEndpointType. Adding a new endpoint starts by extending this enum, as shown in the following section.
 
+![Business event endpoint](../media/customendpoint1.png)
+
 ### Add new endpoint table to the hierarchy
 
 All endpoint data is stored in a hierarchy table, the root of which is BusinessEventsEndpoint. A new endpoint table must extend this root table by setting the Support Inheritance property = Yes, and the Extends property = “BusinessEventsEndpoint” (or any other endpoint in the BusinessEventsEndpoint hierarchy).
 
+![Business event endpoint](../media/customendpoint2.png)
+
 The new table will then hold the definition of the custom fields needed to initialize and communicate with this endpoint in code. To avoid the possibility of conflict, field names should be qualified to the specific endpoint where they belong. For example, two endpoints can have the concept of a “URL” field, but to distinguish them, their names should be specific to the custom endpoint like “CustomURL”.
+
+![Business event endpoint](../media/customendpoint3.png)
 
 ### Add new EndpointAdapter class that implements IBusinessEventsEndpoint
 
 The new endpoint adapter class must implement the IBusinessEventsEndpoint interface as well as be decorated with the BusinessEventsEndpointAttribute attribute.
 
-...
+```
 
 [BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
 
 public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 
 {  
-...
+```
 
 The initialize method should be implemented to check the type of the BusinessEventsEndpoint buffer that is passed in, and initialize when it is of the correct type for this new adapter, as shown below.
 
-...
+```
 
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 
@@ -809,16 +815,20 @@ classStr(CustomEndpointAdapter), varStr(customField)));
 
 }
 
-...
+```
 
 ### Extend the EndpointConfiguration form
 
 Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold
 your custom field input.
 
+![Business event endpoint](../media/customendpoint4.png)
+
 The custom field input should be bound to the new table and field created in the previous step. Create a class extension to extend the getConcreteType and showOtherFields methods of BusinessEventsEndpointConfiguration form, as shown below.
 
-...
+![Business event endpoint](../media/customendpoint5.png)
+
+```
 
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
 
@@ -866,4 +876,4 @@ CustomFields))).visible(true);
 
 }
 
-...
+```

@@ -127,7 +127,7 @@ You might receive the following error:
 
 > "ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.
 
-If you receive this error, download the latest version of [Azure Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690). Note that the user name and path in the error message vary, depending on your environment.
+If you receive this error, download the latest version of [Azure Service Fabric](https://go.microsoft.com/fwlink/?LinkId=730690). Note that the user name and path in the error message vary, depending on your environment.
 
 #### Service Fabric logs
 
