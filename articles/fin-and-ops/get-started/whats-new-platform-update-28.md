@@ -43,7 +43,7 @@ The standard view in data management has been deprecated for about a couple of y
 Streamline the document viewing experience in Dynamics 365 for Finance & Operations  by taking advantage of the new 'Preview' option for application reports. The embedded PDF document viewer gives customers direct access to locally connected printers and offers fidelity between the screen presentation and the output printed on paper. The 'Preview' option is available on all supported devices and does not depend on any 3rd party software. The embedded PDF viewer includes a built-in toolbar with intuitive controls that make it easy to download and navigate documents.
 
 ## Create custom commands for embedded PowerBI.com reports
-Turn insights into action using custom menu commands for chart visualizations displayed in PowerBI.com reports hosted in Dynamics 365 Finance & Operations Application Workspaces. Empower users with intuitive gestures to perform business operations on filtered views of their report data. With the latest Platform Update, developers can add custom extensions that give end-users an actionable experience interacting with analytical solutions within F&O applications.
+Turn insights into action using custom menu commands for chart visualizations displayed in PowerBI.com reports hosted in Application Workspaces for Dynamics 365 Finance & Operations. Empower users with intuitive gestures to perform business operations on filtered views of their report data. With the latest Platform Update, developers can add custom extensions that give end-users an actionable experience interacting with analytical solutions within F&O applications.
 
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
