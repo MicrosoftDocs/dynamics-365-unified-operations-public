@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 05/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -655,7 +655,7 @@ The Business Events framework supports a concept of *payload context*, which pro
 
 A custom payload context must extend from the class BusinessEventsCommitLogPayloadContext.
 
-...
+```
 class CustomCommitLogPayloadContext extends
 BusinessEventsCommitLogPayloadContext
 
@@ -674,13 +674,13 @@ return eventTime;
 }
 
 }  
-...
+```
 
 ### Constructing the custom payload context
 
 A Chain of Command (CoC) extension will need to be written for the BusinessEventsSender.buildPayloadContext method to construct the new payload context type.
 
-...
+```
 [ExtensionOf(classStr(BusinessEventsSender))]
 
 public final class CustomPayloadContextBusinessEventsSender_Extension
@@ -707,7 +707,7 @@ return customPayloadContext;
 }
 
 }  
-...
+```
 
 ### Consuming the custom payload context from an adapter
 
@@ -715,7 +715,7 @@ Adapters that consume payload context are written in such a way that they expose
 
 The BusinessEventsServiceBusAdapter has the CoC method called addProperties.
 
-...
+```
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 
 public final class CustomBusinessEventsServiceBusAdapter_Extension
@@ -754,7 +754,7 @@ propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
 }
 
 }  
-...
+```
 
 ## Adding a custom endpoint type
 The Business Events framework supports adding new endpoint types in addition to the ones that ship out of the box. An example of how to do this is describe with the below.
@@ -779,18 +779,18 @@ The new table will then hold the definition of the custom fields needed to initi
 
 The new endpoint adapter class must implement the IBusinessEventsEndpoint interface as well as be decorated with the BusinessEventsEndpointAttribute attribute.
 
-...
+```
 
 [BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
 
 public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 
 {  
-...
+```
 
 The initialize method should be implemented to check the type of the BusinessEventsEndpoint buffer that is passed in, and initialize when it is of the correct type for this new adapter, as shown below.
 
-...
+```
 
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 
@@ -815,7 +815,7 @@ classStr(CustomEndpointAdapter), varStr(customField)));
 
 }
 
-...
+```
 
 ### Extend the EndpointConfiguration form
 
@@ -828,7 +828,7 @@ The custom field input should be bound to the new table and field created in the
 
 ![Business event endpoint](../media/customendpoint5.png)
 
-...
+```
 
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
 
@@ -876,4 +876,4 @@ CustomFields))).visible(true);
 
 }
 
-...
+```
