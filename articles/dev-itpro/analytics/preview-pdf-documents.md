@@ -32,34 +32,36 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include[banner](../includes/banner.md)]
 
-### Enhanced PDF document previewing experience
-Streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF 'Preview' option.  Dynamics 365 for Finance & Operations applications deliver a modern experience previewing business documents produced by the service.  Use the built-in toolbar to navigate and download the document or print to locally connected devices.
+[!include[banner](../includes/preview-banner.md)]
 
-The embedded viewer offers customers consistency between the screen presentation and the output printed on paper. In addition, report viewing times are drastically reduced when compared to the legacy experience. The new 'Preview' option is available on all supported devices and does not require any additional 3rd party software. Documents can be easily downloaded and navigated using built-in viewer toolbar options.
 
-Here's a screen shot of the preview experience with a modern business document
+## Enhanced PDF document previewing experience
+You can streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF 'Preview' option. Microsoft Dynamics 365 for Finance & Operations applications deliver a modern experience to preview business documents that are produced by the service. Use the built-in toolbar to navigate and download the document or to print to locally connected devices.
+
+The embedded viewer offers consistency between the screen presentation and the printed output. In addition, report viewing times are drastically reduced when compared to the legacy experience. The new 'Preview' option is available on all supported devices and does not require any additional third party software. Documents can be easily downloaded and navigated by using the built-in viewer toolbar options.
+
+The following screen shot provides a preview of the experience with a modern business document.
 ![PDF preview form](./media/pdf-document-preview.png)
 
-The legacy HTML based preview experience is being replaced by a true document preview experience. There are several key advantages in the modern PDF preview experience.<br> 
+The legacy HTML-based preview experience is being replaced by a true document preview experience. There are several key advantages in the modern PDF preview experience. These advantages include:
 
-For instance…
-- The hosted PDF viewer delivers fidelity between the screen presentation and the printed output<br>
-- Provides a consistent document report preview experience across devices and platforms including Local Business Data deployments<br>
-- Server side rendering improves the performance when producing the document<br>
-- Built-in tooling allows users to quickly navigate the contents of the business document<br>
+- A fidelity between the screen presentation and the printed output.
+- A consistent document report preview experience across devices and platforms, including Local Business Data deployments.
+- The server side rendering improves the performance when producing the document.
+- A built-in tooling that allows users to quickly navigate the contents of the business document.
 
-### Accessing the PDF preview experience
-The hosted PDF document viewer control is presented by default in most deployment types. However, the PDF preview experience must be enabled on 1Box deployments using the Report Options form.  
+## Accessing the PDF preview experience
+The hosted PDF document viewer control is automatically available in most deployment types. However, for one-box deployments, the PDF preview experience must be enabled on the **Report options** page. Complete the following steps to enable the PDF preview experience. 
 
-**Here are the steps…**<br>
-1) Navigate to the Report Options form by adding "&mi=SysReportAdministration" to the URL<br>
-2) Set the Preview documents using embedded viewer option to **Yes**<br>
-3) Click on the **Save** button<br>
+1) Navigate to the **Report options** page by adding "&mi=SysReportAdministration" to the URL.
+2) Set the field, **Preview documents using embedded viewer** to **Yes**.
+3) Click **Save**.
 
-### Note-worthy items…
-- Expandable/Collapsible sections presented with the default visibility state. These interactive operations do not function once the PDF document has been created.<br>
-- The printer drop-down allows users to choose from locally connected devices. This list does not include network printers connected through the F&O service.<br>
-- Documents are downloaded to the local device using the built-in toolbar actions<br>
-- Application extensions are available to activate embedded drill-thru links in PDF documents<br>
-- Use the Print Destination options to produce documents in formats other than PDF<br>
+## Additional feature information
+
+- Expandable/collapsible sections are available by default. These interactive operations do not function after the PDF document has been created.
+- The printer drop-down allows users to choose from locally connected devices. This list does not include network printers connected through the Finance and operations service.
+- Documents are downloaded to the local device using the built-in toolbar actions.
+- Application extensions are available to activate embedded drill-thru links in PDF documents.
+- Use the **Print destination** options to produce documents in formats other than PDF.
 
