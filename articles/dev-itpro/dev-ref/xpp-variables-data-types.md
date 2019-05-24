@@ -5,7 +5,7 @@ title: X++ variables and data types
 description: This topic describes variables and data types in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -302,7 +302,7 @@ The **boolean** data type contains a value that is evaluated as either **true** 
 
 ### date
 
-The **date** data type contains the day, month, and year. Dates can be written as literals by using the following syntax: **Date literal = day \\ month \\ year**. You must use four digits for the year. The **date** data type can hold dates between January 1, 1900, and December 31, 2154. The size of a **date** is 32 bits. The default value is **null**, and the internal representation is a date. A **date** has no implicit conversions. However, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can used: **str2date**, **date2str**, **date2num**, and **int2date**. You can add and subtract integers from dates, but you can't add or subtract two dates from each other. If you try, a compiler error occurs.
+The **date** data type contains the day, month, and year. Dates can be written as literals by using the following syntax: **Date literal = day \\ month \\ year**. You must use four digits for the year. The **date** data type can hold dates between January 1, 1900, and December 31, 2154. The size of a **date** is 32 bits. The default value is **null**, and the internal representation is a date. A **date** has no implicit conversions. However, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2date**, **date2str**, **date2num**, and **int2date**. You can add and subtract integers from dates, which moves the date some days into the future and past respectively. Subtracting dates from each other will calculate the difference in days. However, adding two dates together is not possible and will lead to a compiler error.
 
 #### date examples
 
@@ -337,7 +337,7 @@ The **date** data type contains the day, month, and year. Dates can be written a
             date bDate;
             int dateDifference;
             bDate = 2\10\1998; 
-            dateDifference = bDate - aDate;    // dateDifference will equal 9.
+            dateDifference = bDate - aDate; // dateDifference will equal 244.
         }
     }
 
