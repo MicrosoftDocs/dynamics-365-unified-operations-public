@@ -2,7 +2,7 @@
 # required metadata
 
 title: Saving online payment instruments with the Adyen connector
-description: This topic describes how to save payment instruments by using the Adyen connector for ecommerce.
+description: This topic describes how to save payment instruments by using the Adyen connector for e-commerce.
 author: rubendel
 manager: AnnBe
 ms.date: 05/13/2019
@@ -35,21 +35,21 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes the setup and functionality that are related to saving payment instruments when you use the Adyen "card not present" payment connector for ecommerce. 
+This topic describes the setup and functionality that are related to saving payment instruments when you use the Adyen "card not present" payment connector for the Dynmics e-Commerce platform. 
 
 ## Key terms
 
 | Term | Description |
 |---|---|
 | Token | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. |
-| Card token | A token that a payment processor provides for storage in the POS system. The card token, or card reference, can be used only by the merchant who receives it, and it's generally harmless outside the system. Recurring card token |
+| Card token | A token that a payment processor provides for storage in the POS system. The card token, or card reference, can be used only by the merchant who receives it |
 | Authorization (Auth) token | After a POS system makes an authorization request to a payment processor, the payment processor provides a unique ID to the POS system as part of the response to that request. This authorization token, or authorization reference, can be used later, when the processor is called to perform actions such as reversing or voiding the authorization. However, an authorization token is most often used to capture funds when an order is fulfilled or when a transaction is being finalized. |
-| List PI | A frequently used generic name for the capability that is described in this topic. List PI refers to the ability to save payment instruments and to list previously used payment instruments during future checkouts that are done through the same ecommerce website. |
-| Named user | An ecommerce customer who is signed in to the online storefront at the time of checkout. Named users have a unique customer ID, and their online purchases are always mapped to the same customer ID whenever they are signed in to the online storefront. |
+| List PI | A frequently used generic name for the capability that is described in this topic. List PI refers to the ability to save payment instruments and to list previously used payment instruments during future checkouts that are done through the same e-commerce website. |
+| Named user | An e-commerce customer who is signed in to the online storefront at the time of checkout. Named users have a unique customer ID, and their online purchases are always mapped to the same customer ID whenever they are signed in to the online storefront. |
 
 ## Overview
 
-When ecommerce orders are created, retailers often offer to save the customer's payment card information so that it can be used for future transactions. This topic explains how that capability ("List PI") is delivered through the Microsoft Dynamics 365 Payment Connector for Adyen. Although the Adyen payment connector supports this capability out of the box, third-party payment connectors require customization. Additionally, not all payment processors might support the same method of saving payment card information. 
+When e-commerce orders are created, retailers often offer to save the customer's payment card information so that it can be used for future transactions. This topic explains how that capability ("List PI") is delivered through the Microsoft Dynamics 365 Payment Connector for Adyen. Although the Adyen payment connector supports this capability out of the box, third-party payment connectors require customization. Additionally, not all payment processors might support the same method of saving payment card information. 
 
 The out-of-box implementation of the List PI capability relies on the payment processor to keep a mapping of an online customer's unique ID to the payment instruments that have previously been processed through that payment connector. Only customers who are signed in to the website as named users have the option to save their payment card information for their next online visit. Customers who use a "guest checkout" option when they create an online order won't be able to save payment card information for future transactions. 
 
@@ -57,7 +57,7 @@ The out-of-box implementation of the List PI capability relies on the payment pr
 
 The List PI capability requires the following elements:
 
-- An ecommerce integration with Microsoft Dynamics 365 for Retail
+- An e-commerce integration with Microsoft Dynamics 365 for Retail
 - A payment connector that is compatible with the List PI capability
 - A payment processor that maps unique customer IDs to the payment instruments that the customers want that payment processor to save
 
@@ -67,10 +67,10 @@ For more information about how to implement payment connectors and the Retail so
 
 The List PI capability requires the following components and setup steps:
 
-- **E-commerce integration** – An online storefront integration with Retail is required. For more information about the Retail ecommerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk).
+- **E-commerce integration** – An online storefront integration with Retail is required. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk).
 - **Online payments configuration** – The Dynamics 365 Payment Connector for Adyen supports List PI out of the box. For information about how to configure payments for online stores, see [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). 
 
-    In addition to completing the ecommerce setup steps that are described in that topic, you must set the **Allow saving payment information in e-commerce** option to **Yes**. 
+    In addition to completing the ecommerce setup steps that are described in that topic, you must set the **Allow saving payment information in e-commerce** option in the Payment accounts fasttab of the **Online store** form to **Yes**. 
 
 - **Omni-channel payments configuration** – In the back office, go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**. 
 
@@ -78,7 +78,7 @@ The List PI capability requires the following components and setup steps:
 
 ### Guest checkout
 
-When ecommerce visitors choose to check out as guests, customer records aren't created during checkout, and the customers can't save payment instruments for their next visit. 
+When e-commerce visitors choose to check out as guests, customer records aren't created during checkout, and the customers can't save payment instruments for their next visit. 
 
 ### Named user checkout
 
@@ -94,13 +94,13 @@ If the same customer signs in during future visits to the storefront, he or she 
 
 ### Order fulfillment and processing
 
-eCommerce orders where the customer applied a tender line by using the List PI capability work in the same way as orders that were created without using a saved card payment. From the standpoint of order processing and fulfillment, the two types of payment are indistinguishable. 
+E-Commerce orders where the customer applied a tender line by using the List PI capability work in the same way as orders that were created without using a saved card payment. From the standpoint of order processing and fulfillment, the two types of payment are indistinguishable. 
 
 ## Details of eCommerce payment card tokenization
 
 ### Standard flow
 
-In Retail eCommerce integrations, the payment card is typically entered as part of the checkout process and is saved together with the order before finalization. The card details are entered directly on a payment acceptance page that a payment processor provides. After card details are entered and the customer moves on to the next step of the checkout process, the processor creates a token that is used later in the order creation process. 
+In Retail e-Commerce integrations, the payment card is typically entered as part of the checkout process and is saved together with the order before finalization. The card details are entered directly on a payment acceptance page that a payment processor provides. After card details are entered and the customer moves on to the next step of the checkout process, the processor creates a token that is used later in the order creation process. 
 
 When the customer finalizes the online order, the payment card token is sent to the payment processor as part of an authorization request. If the payment authorization request is successful, the payment processor replies by sending an authorization token. This authorization token is saved together with the customer's order and is referenced when that order is fulfilled from the back office. 
 
