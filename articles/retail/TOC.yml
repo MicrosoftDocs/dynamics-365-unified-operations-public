@@ -71,6 +71,8 @@
     href: cash-denominations.md
   - name: Dynamics 365 Payment Connector for Adyen
     href: dev-itpro/adyen-connector.md
+  - name: Saving online payment instruments with the Adyen connector
+    href: dev-itpro/adyen-connector-listPI.md
   - name: Set up pay invoice scenarios
     href: payinvoice.md
   - name: Payments FAQ
