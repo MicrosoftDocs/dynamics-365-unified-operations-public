@@ -5,7 +5,7 @@ title: Override POS request handler
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time service enables retail clients to interact with retail functionality in real time.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -128,6 +128,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | CreateBankDropTransactionClientRequestHandler          | Executed when you do a bank drop operation in POS.          |
 | CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do a tender declaration operation in POS. |
 | GetCountedTenderDetailAmountClientRequestHandler	 | Executed when you do a tendercount detail in POS. |
+| CreateBankDropTransactionClientRequestHandler		 | Executed when you do a bank drop operation in POS. |
 
 
 **Sales orders request handlers**
