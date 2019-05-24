@@ -46,7 +46,7 @@ Streamline the document viewing experience in Dynamics 365 for Finance & Operati
 Turn insights into action using custom menu commands for chart visualizations displayed in PowerBI.com reports hosted in Application Workspaces for Dynamics 365 Finance & Operations. Empower users with intuitive gestures to perform business operations on filtered views of their report data. With the latest Platform Update, developers can add custom extensions that give end-users an actionable experience interacting with analytical solutions within F&O applications.
 
 ## Extended availability of the legacy navigation bar
-In Platform update 24, a restyled navigation bar was introduced for Financea and Operations as part of an effort across the Dynamics 365 product to align to the Office header visuals. At that time, the legacy navigation bar was put on an expedited deprecation schedule (to not be available after Platform update 28) because of the branding impact. 
+In Platform update 24, a restyled navigation bar was introduced for Finance and Operations as part of an effort across the Dynamics 365 product to align to the Office header visuals, which notably did not include a breadcrumb. At that time, the legacy navigation bar was put on an expedited deprecation schedule (to not be available after Platform update 28) because of the branding impact. Due to customer feedback on the breadcrumb, we have decided to extend access to the legacy navigation bar until April 2020. 
 
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
