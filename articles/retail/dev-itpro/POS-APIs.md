@@ -380,6 +380,8 @@ The following is a list of APIs exposed to perform sales orders-related function
 | RegisterPrintReceiptCopyEventRequest             |
 | MarkAsPickedServiceRequest                       |
 | PrintPackingSlipClientRequest                    |
+| PickUpCustomerOrderLinesClientRequest            |
+
 
 ### Shifts
 
