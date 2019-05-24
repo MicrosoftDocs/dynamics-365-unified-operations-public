@@ -128,6 +128,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | CreateBankDropTransactionClientRequestHandler          | Executed when you do a bank drop operation in POS.          |
 | CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do a tender declaration operation in POS. |
 | GetCountedTenderDetailAmountClientRequestHandler	 | Executed when you do a tendercount detail in POS. |
+| CreateBankDropTransactionClientRequestHandler		 | Executed when you do a bank drop operation in POS. |
 
 
 **Sales orders request handlers**
