@@ -5,4 +5,4 @@
 3. Enter a name, description, and entity code for the new business vertical
 4. Click **Close**
 
-![](Media\IND - GST - Business Vertical.png)
+![](media\IND - GST - Business Vertical.png)
