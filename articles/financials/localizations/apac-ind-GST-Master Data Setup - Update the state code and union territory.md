@@ -19,7 +19,7 @@ This artical describes how to update the state code and union territory
 4. Select the **Union territory** check box to identify the state as a union territory
 5. Click **Close**
    
-![Update State and Union Territoy](media\IND-GST-UpdateState.png)
+![Update State and Union Territoy](media/IND-GST-UpdateState.png)
 
 
 
