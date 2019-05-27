@@ -5,4 +5,5 @@
 3. Enter a name, description, and entity code for the new business vertical
 4. Click **Close**
 
-![](media\IND - GST - Business Vertical.png)
+![Business Vertical](media/IND - GST - Business Vertical.png)
+![Print Australian BAS page](media/apac-aus-print-bas.png)
