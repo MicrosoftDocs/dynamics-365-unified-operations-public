@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-12-31
 
 [!include [banner](../includes/banner.md)]
 
-You can set up and apply threshold limits to calculate direct taxes on customer and vendor transactions. Perform the following tasks to set up and use threshold limits:
+You can set up and apply threshold limits to calculate direct taxes on customer and vendor transactions. Perform the following tasks to set up and use threshold limits
 
 1.  Set up threshold limits by creating threshold definitions, and then design threshold segments to set up a threshold hierarchy.
 2.  Assign thresholds to a withholding tax code, and set up tax values to apply to the final level of each threshold segment in the threshold hierarchy.
