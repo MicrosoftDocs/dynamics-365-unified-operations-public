@@ -63,7 +63,7 @@ After your **Implementation project** workspace is provisioned in Microsoft Dyna
 
 ### Tiered services for Finance and Operations
 
-| Number of seats                                                                         | TechTalks | Workshops     | Assessments                  | Dedicated FastTrack solution architect | Community |
+| Number of seats                                                                         | TechTalks | Workshops     | Assessments                  | Designated FastTrack solution architect | Community |
 |-----------------------------------------------------------------------------------------|-----------|---------------|------------------------------|----------------------------------------|-----------|
 | 20–149 combined eligible App or Plan user subscription licenses, or the equivalent      | ✓         | Not available | Go-live assessment via email | Not available                          | ✓         |
 | 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | ✓         | ✓             | Go-live assessment workshop  | ✓                                      | ✓         |
