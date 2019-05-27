@@ -180,8 +180,8 @@ Follow these steps to assign attribute groups to categories in the Retail produc
 > [!NOTE]
 > This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy. In step 2, use the following navigation paths:
 >
-> - **Retail** &gt; **Category and product management** &gt; **Channel navigation categories**
-> - **Retail** &gt; **Category and product management** &gt; **Supplemental product categories**
+> - Retail &gt; Category and product management &gt; Channel navigation categories
+> - Retail &gt; Category and product management &gt; Supplemental product categories
 
 ### Assign attribute groups to retail stores
 

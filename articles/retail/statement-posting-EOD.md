@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Improvements to statement posting functionality
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -62,10 +62,10 @@ As part of the improvements to the statement posting feature, three new paramete
 
 Additionally, the following parameters have been introduced on the **Batch processing** FastTab on the **Posting** tab of the **Retail parameters** page: 
 
-- **Maximum number of parallel statement posting** - This field defines the number of batch tasks that will be used to post multiple statements. 
-- **Max thread for order processing per statement** - This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the **Maximum number of parallel statement posting** parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.
-- **Max transaction lines included in aggregation** - This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single retail transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in a aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
-- **Maximum number of threads to validate store transactions** - This field defines the number of threads that will be used to validate retail transactions. Validating retail transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page. This needs to defined even if gift cards are not used by the organization.
+- **Maximum number of parallel statement posting** – This field defines the number of batch tasks that will be used to post multiple statements. 
+- **Max thread for order processing per statement** – This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the **Maximum number of parallel statement posting** parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.
+- **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single retail transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in a aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
+- **Maximum number of threads to validate store transactions** – This field defines the number of threads that will be used to validate retail transactions. Validating retail transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page. This needs to defined even if gift cards are not used by the organization.
 
 > [!NOTE]
 > All settings and parameters that are related to statement postings, and that are defined on Retail stores and on the **Retail parameters** page, are applicable to the improved statement posting feature.

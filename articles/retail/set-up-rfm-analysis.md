@@ -52,7 +52,7 @@ For example, your organization has set the ratings on a scale of 1 through 5, wh
 
 If your organization uses an aggregate number for the score, the individual ratings are added together. For the same example, the customer has a rating of 13 (5 + 3 + 5).
 
-## To set up RFM analysis for the customers in your organization
+## Set up RFM analysis for the customers in your organization
 
 1. Go to **Call center** \> **Periodic** \> **RFM analysis**.
 2. On **RFM analysis** page, select **New**. In the **RFM definition** field, enter a name for the RFM definition. For example, you could call the definition RFM-A.
