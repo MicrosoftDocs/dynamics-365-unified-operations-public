@@ -56,6 +56,7 @@ The POS solution provides limited support for the following dimensions. Limited 
 
 > [!NOTE]
 > All organizations must test item configurations through POS in development or test environments before deploying them to production. Test your items by performing regular cash and carry sales transacting and creating customer orders (if applicable) through the POS with your items. Testing must include running a full statement posting processes in your test environment and verifying that there are no issues.
+>
 > Configuring items in a way that is not supported by the POS application, without proper testing, can result in your statement posting process failing in production without an easy way to correct the issues. Partner or customer customizations to the application may optionally be considered to allow these posting processes to successfully complete. If customizations are not needed, the organization must ensure that the product configuration of your products has been done in a way that is supported by the standard POS application/order creation/statement posting process.
 
 ## Purchase orders
