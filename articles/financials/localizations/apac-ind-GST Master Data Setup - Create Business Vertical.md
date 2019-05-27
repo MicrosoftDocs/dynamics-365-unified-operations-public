@@ -9,9 +9,9 @@ To enable India localization solution for GST in Dynamics 365 for finance and op
 - Create a tax settlement period
 - Attach the GSTIN to a tax registration group
 
-This artical describes how to define business vertical
+This topic describes how to define business vertical
 
-# Create a business vertical
+## Create a business vertical
 
 1. Click **Tax > Setup > Sales tax > Business verticals**
 2. Click **New** to create a record
