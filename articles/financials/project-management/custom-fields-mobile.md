@@ -236,6 +236,7 @@ tableName, fieldname, label, isEditable, isMandatory, stringLength, and
 numberOfDecimals. If preferred, these parameters can be set manually.
 
 ...
+
      [ExtensionOf(classStr(TsTimesheetSettings))]
 
      final class TSTimesheetSettings_Extension
@@ -271,6 +272,7 @@ numberOfDecimals. If preferred, these parameters can be set manually.
 
         }
     }
+
 ...
 
 ### Use chain of command on the TSTimesheetEntry class, buildCustomFieldListForEntry method to populate timesheet entry
@@ -281,45 +283,49 @@ that record can be used to populate the custom field value in the app.
 
 [ExtensionOf(classStr(TsTimesheetEntry))]
 
-final class TsTimesheetEntry_Extension
 
-{
+...
 
-protected List buildCustomFieldListForEntry(TSTimesheetTrans \_tsTimesheetTrans)
+    final class TsTimesheetEntry_Extension
+    {
 
-{
+        protected List buildCustomFieldListForEntry(TSTimesheetTrans \_tsTimesheetTrans)
 
-List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
+        {
 
-TSTimesheetLine tsTimesheetLine = \_tsTimesheetTrans.timesheetLine();
+            List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
 
-TSTimesheetCustomField tsTimesheetCustomField;
+            TSTimesheetLine tsTimesheetLine = \_tsTimesheetTrans.timesheetLine();
 
-tsTimesheetCustomField =
-TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
-fieldNum(TSTimesheetLine, TestLineString));
+            TSTimesheetCustomField tsTimesheetCustomField;
 
-tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+            tsTimesheetCustomField =
+            TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+            fieldNum(TSTimesheetLine, TestLineString));
 
-tsTimesheetCustomField.parmOrderSequence(1);
+            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
 
-tsTimesheetCustomField.parmStringValue(tsTimesheetLine.TestLineString);
+            tsTimesheetCustomField.parmOrderSequence(1);
 
-List stringOptions = new List(Types::String);
+            tsTimesheetCustomField.parmStringValue(tsTimesheetLine.TestLineString);
 
-stringOptions.addEnd('First option');
+            List stringOptions = new List(Types::String);
 
-stringOptions.addEnd('second option;);
+            stringOptions.addEnd('First option');
 
-tsTimesheetCustomField.parmStringOptions(stringOptions);
+            stringOptions.addEnd('second option;);
 
-customFieldList.addEnd(tsTimesheetCustomField);
+            tsTimesheetCustomField.parmStringOptions(stringOptions);
 
-return customFieldList;
+            customFieldList.addEnd(tsTimesheetCustomField);
 
-}
+            return customFieldList;
 
-}
+        }
+    }
+    
+...
+
 
 ### Use chain of command on the TSTimesheetEntryService class to save entry from application back to the database
 
@@ -346,115 +352,118 @@ the user to the database as a raw string value. If the database field is an enum
 type, those values could be manually mapped to an enum value and then saved to
 an enum field on the database table.
 
-[ExtensionOf(classStr(TSTimesheetEntryService))]
+...
 
-final class TSTimesheetEntryService_Extension
+    [ExtensionOf(classStr(TSTimesheetEntryService))]
 
-{
+    final class TSTimesheetEntryService_Extension
 
-protected boolean timesheetLineNeedsUpdating(TSTimesheetLine \_tsTimesheetLine,
-TsTimesheetEntry \_tsTimesheetEntry)
+    {
 
-{
+        protected boolean timesheetLineNeedsUpdating(TSTimesheetLine \_tsTimesheetLine,
+        TsTimesheetEntry \_tsTimesheetEntry)
 
-boolean ret = next timesheetLineNeedsUpdating(_tsTimesheetLine,
-\_tsTimesheetEntry);
+    {
 
-if (!ret)
+        boolean ret = next timesheetLineNeedsUpdating(_tsTimesheetLine,
+        \_tsTimesheetEntry);
 
-{
+         if (!ret)
 
-*// Loop through custom fields to see if value needs updating*
+         {
 
-ListEnumerator enumerator =
-\_tsTimesheetEntry.parmCustomFields().getEnumerator();
+            *// Loop through custom fields to see if value needs updating*
 
-while (enumerator.moveNext())
+            ListEnumerator enumerator =  \_tsTimesheetEntry.parmCustomFields().getEnumerator();
+    
+            while (enumerator.moveNext())
 
-{
+            {
 
-TSTimesheetCustomField customField = enumerator.current();
+                TSTimesheetCustomField customField = enumerator.current();
 
-if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
-fieldNum(TSTimesheetLine, TestLineString)))
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
 
-{
+                {
 
-*// If Custom field value for TestLineString field has changed, We need to
-update the timesheet line.*
+                    *// If Custom field value for TestLineString field has changed, We need to update the timesheet line.*
 
-if (_tsTimesheetLine.TestLineString != customField.parmStringValue())
+                    if (_tsTimesheetLine.TestLineString != customField.parmStringValue())
 
-{
+                    {
 
-ret = true;
+                        ret = true;
 
-}
+                    }
 
-}
+                }
 
-}
+            }
 
-}
+        }
 
-return ret;
+        return ret;
 
-}
+    }
 
-protected void populateTimesheetLineFromEntryDuringCreate(TSTimesheetLine
-\_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
+    protected void populateTimesheetLineFromEntryDuringCreate(TSTimesheetLine
+    \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
 
-{
+    {
 
-next populateTimesheetLineFromEntryDuringCreate(_tsTimesheetLine,
-\_tsTimesheetEntry);
+        next populateTimesheetLineFromEntryDuringCreate(_tsTimesheetLine,
+        \_tsTimesheetEntry);
 
-this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
-\_tsTimesheetEntry);
+        this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+        \_tsTimesheetEntry);
 
-}
+        }
 
-protected void populateTimesheetLineFromEntryDuringUpdate(TSTimesheetLine
-\_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
+        protected void populateTimesheetLineFromEntryDuringUpdate(TSTimesheetLine
+        \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
 
-{
+        {
 
-next populateTimesheetLineFromEntryDuringUpdate(_tsTimesheetLine,
-\_tsTimesheetEntry);
+            next populateTimesheetLineFromEntryDuringUpdate(_tsTimesheetLine,
+            \_tsTimesheetEntry);
 
-this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
-\_tsTimesheetEntry);
+            this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+            \_tsTimesheetEntry);
 
-}
+        }
 
-private void populateTimesheetLineFromCustomFields(TSTimesheetLine
-\_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
+        private void populateTimesheetLineFromCustomFields(TSTimesheetLine
+        \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
 
-{
+        {
 
-ListEnumerator enumerator =
-\_tsTimesheetEntry.parmCustomFields().getEnumerator();
+            ListEnumerator enumerator =
+            \_tsTimesheetEntry.parmCustomFields().getEnumerator();
 
-while (enumerator.moveNext())
+            while (enumerator.moveNext())
 
-{
+            {
 
-TSTimesheetCustomField customField = enumerator.current();
+                TSTimesheetCustomField customField = enumerator.current();
 
-if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
-fieldNum(TSTimesheetLine, TestLineString)))
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
 
-{
+                {
 
-\_tsTimesheetLine.TestLineString = customField.parmStringValue();
+                    \_tsTimesheetLine.TestLineString = customField.parmStringValue();
 
-}
+                }
 
-}
+            }
 
-}
+        }
 
-}
+    }
+    
+...
+    
 
 ## Display a custom field in the timesheet header section
 
@@ -481,42 +490,47 @@ type of field, label, whether mandatory, and section to display the field in).
 
 The following example shows a computed value in the header section in the app.
 
-[ExtensionOf(classStr(TsTimesheetSettings))]
+...
 
-final class TSTimesheetSettings_Extension
+    [ExtensionOf(classStr(TsTimesheetSettings))]
 
-{
+    final class TSTimesheetSettings_Extension
 
-protected List buildCustomFieldList()
+    {
 
-{
+        protected List buildCustomFieldList()
 
-List customFieldList = next buildCustomFieldList();
+        {
 
-TSTimesheetCustomField tsTimesheetCustomField;
+            List customFieldList = next buildCustomFieldList();
 
-*// Computed utilization rate*
+            TSTimesheetCustomField tsTimesheetCustomField;
+            
+            *// Computed utilization rate*
 
-tsTimesheetCustomField = new TSTimesheetCustomField();
+            tsTimesheetCustomField = new TSTimesheetCustomField();
 
-tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+            tsTimesheetCustomField.parmFieldBaseType(Types::Real);
 
-tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
-custom field)");
+            tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+            custom field)");
 
-tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
 
-tsTimesheetCustomField.parmOrderSequence(2);
+            tsTimesheetCustomField.parmOrderSequence(2);
 
-tsTimesheetCustomField.parmNumberOfDecimals(3);
+            tsTimesheetCustomField.parmNumberOfDecimals(3);
 
-customFieldList.addEnd(tsTimesheetCustomField);
+            customFieldList.addEnd(tsTimesheetCustomField);
 
-return customFieldList;
+            return customFieldList;
 
-}
+        }
 
-}
+    }
+   
+...
+
 
 ### Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to populate timesheet details
 
