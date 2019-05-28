@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Implement custom fields for the Microsoft Dynamics 365 Project timesheet mobile app on iOS and Android
-description: This document provides common patterns for implementing custom fields utilizing extensions.
+title: Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android
+description: This topic provides common patterns for using extensions to implement custom fields.
 author: KimANelson
 manager: AnnBe
 ms.date: 05/28/2019
@@ -30,624 +30,392 @@ ms.search.validFrom: 2019-05-28
 
 ---
 
-# Implement custom fields for the Microsoft Dynamics 365 Project timesheet mobile app on iOS and Android
+# Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android
 
 [!include [banner](../includes/banner.md)]
 
+This topic provides common patterns for using extensions to implement custom fields. The following topics are covered:
 
-This topic provides common patterns for implementing custom fields utilizing extensions. The following topics are covered.
-
--   The various datatypes supported by the custom field framework.
-
--   How to display read-only or editable fields on timesheet entries and save the user provided values back to the database.
-
--   How to display read-only fields on the timesheet header.
-
--   Integrating other custom business logic for defaulting of fields and additional validation.
+- The various data types that the custom field framework supports
+- How to show read-only or editable fields on timesheet entries, and save user-provided values back to the database
+- How to show read-only fields on the timesheet header
+- How to integrate other custom business logic to enter default values in fields and do additional validation
 
 ## Audience
-This topic is intended for developers integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application available for iOS and Android. It is assumed that the reader is familiar with X++ development and project timesheet functionality.
+
+This topic is intended for developers who are integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application that is available for Apple iOS and Google Android. The assumption is that readers are familiar with X++ development and project timesheet functionality.
 
 ## Data contract – TSTimesheetCustomField X++ class
 
-The TSTimesheetCustomField is the X++ data contract class that represents
-information about a custom field for timesheet functionality. Lists of these
-custom field objects are passed on both the TSTimesheetDetails and
-TSTimesheetEntry data contracts to display custom fields in the mobile apps.
+The **TSTimesheetCustomField** class is the X++ data contract class that represents information about a custom field for timesheet functionality. Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.
 
-**TSTimesheetDetails** -\> The timesheet header contract.
-
-**TSTimesheetEntry** -\> The timesheet transaction contract. Groups of these
-objects with the same project information and timesheetLineRecId constitute a
-line.
+- **TSTimesheetDetails** -\> The timesheet header contract.
+- **TSTimesheetEntry** -\> The timesheet transaction contract. Groups of these objects that have the same project information and **timesheetLineRecId** value constitute a line.
 
 ### fieldBaseType (Types)
 
-The type of the field to be displayed in the app is determined by the
-FieldBaseType property on the TsTimesheetCustom object. The following Types
-values are supported:
+The **FieldBaseType** property on the **TsTimesheetCustom** object determines the type of the field that appears in the app. The following **Types** values that are supported.
 
-| Type value | Type              | Notes                                                                                                                                                                                                           |
-|------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0          | String (and Enum) | Displays as a text field.                                                                                                                                                                                       |
-| 1          | Integer           | Displays as a number without decimals.                                                                                                                                                                          |
-| 2          | Real              | Displays as a number with decimals.                                                                                                                                                                             |
-|            |                   |                                                                                                                                                                                                                 |
-|            |                   | Utilize the fieldExtenededType property to show the real value as a currency in the app. The numberOfDecimals property can be used to set the number of decimals to display.                                    |
-| 3          | Date              | Date formats are determined by the user’s ‘Date, times, and number format’ specified under Language and country/region preference in User options.                                                              |
-| 4          | Boolean           |                                                                                                                                                                                                                 |
-| 15         | GUID              |                                                                                                                                                                                                                 |
-| 16         | Int64             |                                                                                                                                                                                                                 |
+| Types value | Type              | Notes |
+|-------------|-------------------|-------|
+| 0           | String (and Enum) | The field appears as a text field. |
+| 1           | Integer           | The value is shown as a number without decimal places. |
+| 2           | Real              | The value is shown as a number that has decimal places.<p>To show the real value as a currency in the app, use the **fieldExtenededType** property. You can use the **numberOfDecimals** property to set the number of decimal places that are shown.</p> |
+| 3           | Date              | Date formats are determined by the user's **Date, times, and number format** setting that is specified under **Language and country/region preference** in **User options**. |
+| 4           | Boolean           | |
+| 15          | GUID              | |
+| 16          | Int64             | |
 
-1.  If the stringOptions property is not provided on the TSTimesheetCustomField
-    object, a free text field is provided to the user.  
-      
-    The stringLength property can be used to set the maximum string length that
-    can be entered by the user.
+- If the **stringOptions** property isn't provided on the **TSTimesheetCustomField** object, a free-text field is provided to the user.
 
-2.  If the stringOptions property is provided on the TSTimesheetCustomField
-    object, then those list elements are the only values available for selection
-    by the user via radio buttons.  
-      
-    With this, the string field can act as an enum value for purposes of user
-    entry. To save the value as an enum to the database, manually map the string
-    value back to the enum value before saving to the database using chain of
-    command (see below).
+    The **stringLength** property can be used to set the maximum string length that users can enter.
+
+- If the **stringOptions** property is provided on the **TSTimesheetCustomField** object, those list elements are the only values that users can select by using option buttons (radio buttons).
+
+    In this case, the string field can act as an enum value for the purpose of user entry. To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the information later in this topic).
 
 ### fieldExtendedType (TSCustomFieldExtendedType)
 
-Format Real values as currency if desired. Applicable only when fieldBaseType is
-Real.
+You can use this property to format real values as currency. This approach is applicable only when the **fieldBaseType** value is **Real**.
 
--   TSCustomFieldExtendedType:None - No formatting applied
+- **TSCustomFieldExtendedType:None** – No formatting is applied.
+- **TSCustomFieldExtendedType::Currency** – Format the value as currency.
 
--   TSCustomFieldExtendedType::Currency - Format as currency  
-      
-    When currency format is active, the stringValue field can be used pass the
-    desired currency code to display in the app. It is a read-only value.  
-      
-    The realValue field contains the money amount to be saved to the database.
+    When currency formatting is active, the **stringValue** field can be used pass the currency code that should be shown in the app. The value is a read-only value.
+
+    The **realValue** field contains the money amount that should be saved to the database.
 
 ### fieldSection (TSCustomFieldSection)
 
-Determines where in the app the custom field should be displayed.
+You can use this property specify where the custom field should appear in the app.
 
--   TSCustomFieldSection::Header – The field will be shown under the “View more
-    details” section in the app. These fields are always read-only.
+- **TSCustomFieldSection::Header** – The field will appear in the **View more details** section in the app. These fields are always read-only.
+- **TSCustomFieldSection::Line** – The field will appear after all the out-of-box line fields on timesheet entries. These fields can be either editable or read-only.
 
--   TSCustomFieldSection::Line – The field will be shown on timesheet entries
-    after all of the out of box line fields. These fields can be either editable
-    or read-only.
+### fieldName (FieldNameShort)
 
-fieldName (FieldNameShort)  
-Identifies the field when saving values provided by the app back to the
-database.
+This property identifies the field when values that the app provides are saved back to the database.
 
 ### tableName (TableNameShort)
 
-Identifies the field when saving values provided by the app back to the
-database.
+This property identifies the field when values that the app provides are saved back to the database.
 
 ### isEditable (NoYes)
 
-Set to **Yes** to specify the field in the entry section should be editable by the
-user or **No** to make it read-only.
+Set this property to **Yes** to specify that the field in the timesheet entry section should be editable by users. Set the property to **No** to make the field read-only.
 
 ### isMandatory (NoYes)
 
-Set to **Yes** to specify the field in the entry section should be mandatory by
-the user.
+Set this property to **Yes** to specify that the field in the timesheet entry section should be mandatory.
 
 ### label (str)
 
-The label to display next the field in the app.
+This property specifies the label that is shown next the field in the app.
 
 ### stringOptions (List of Strings)
 
-Applicable only when fieldBaseType is String. If stringOptions is populated, the
-string values available for selection via radio buttons are specified by the
-strings in the list. If not provided, free text entry into the string field is
-allowed (see example below).
+This property is applicable only when **fieldBaseType** is set to **String**. If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list. If no strings are provided, free-text entry in the string field is allowed (see the example later in this topic).
 
 ### stringLength (int)
 
-The maximum length for a string field. Applicable only when fieldBaseType is
-String.
+This property specifies the maximum length for a string field. It's applicable only when **fieldBaseType** is set to **String**.
 
 ### numberOfDecimals (int)
 
-The number of decimals to display for a real field. Applicable only when
-fieldBaseType is Real.
+This property specifies the number of decimal places that are shown for a real field. It's applicable only when **fieldBaseType** is set to **Real**.
 
 ### orderSequence (int)
 
-Controls the order the custom fields are displayed in within the app when more
-than one custom field is specified. Fields with lower numbers are displayed
-first.
+This property controls the order in which the custom fields are shown in the app when more than one custom field is specified. Fields that have lower numbers are shown first.
 
 ### booleanValue (boolean)
 
-Passes the boolean value of the field between the server and the app for boolean
-type fields.
+For fields of the **Boolean** type, this property passes the Boolean value of the field between the server and the app.
 
 ### guidValue (guid)
 
-Passes the guid value of the field between the server and the app for guid type
-fields.
+For fields of the **GUID** type, this property passes the globally unique identifier (GUID) value of the field between the server and the app.
 
 ### int64Value (int64)
 
-Passes the int64 value of the field between the server and the app for int64
-type fields.
+For fields of the **Int64** type, this property passes the int64 value of the field between the server and the app.
 
 ### intValue (int)
 
-Passes the int value of the field between the server and the app for int type
-fields.
+For fields of the **Int** type, this property passes the int value of the field between the server and the app.
 
 ### realValue (real)
 
-Passes the real value of the field between the server and the app for real type
-fields.
+For fields of the **Real** type, this property passes the real value of the field between the server and the app .
 
 ### stringValue (str)
 
-Passes the string value of the field between the server and the app for string
-type fields. Also used for real type fields formatted as currency to pass
-currency code to the app.
+For fields of the **String** type, this property passes the string value of the field between the server and the app. It's also used for fields of the **Real** type that are formatted as currency. For those fields, the property is used to pass the currency code to the app.
 
 ### dateValue (date)
 
-Passes the date value of the field between the server and the app for date type
-fields.
+For fields of the **Date** type, this property passes the date value of the field between the server and the app.
 
-## Display and save a custom field in the timesheet entry section
+## Show and save a custom field in the timesheet entry section
 
-![test string 1](media/967f517136dd0ae7b80ed002895f6141.jpg)
+![Test string custom field in the app](media/967f517136dd0ae7b80ed002895f6141.jpg)
 
-![test string 2](media/a7c137fdd47b4a0b7ab2ce436bf09fe9.jpg)
+![Option buttons (radio buttons) for the Test string custom field](media/a7c137fdd47b4a0b7ab2ce436bf09fe9.jpg)
 
-### Extend the TSTimesheetLine table to have a custom field
+### Extend the TSTimesheetLine table so that it has a custom field
 
-In typical scenarios, the data for an entry custom field will likely be saved to
-the TSTimesheetLine table, but other tables can be used as well as long as the
-data can be retrieved based on a provided TSTimesheetTrans record or do not have
-specific record context (e.g. a read-only field from ProjPramaters).
+In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table. However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).
 
-Also note that custom fields could be dynamically generated based on X++ logic
-without any backing database records. This can be useful in read-only scenarios
-(see the timesheet header section for an example of this).
+Note that custom fields don't have to have any backing database records. They can be dynamically generated based on X++ logic. This approach can be useful in read-only scenarios. (See the timesheet header section for an example.)
 
-![line string](media/b6756b4a3fc5298093327a088a7710fd.png)
+![Line string](media/b6756b4a3fc5298093327a088a7710fd.png)
 
-### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to display field in entry section
+### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to show a field in the timesheet entry section
 
-This code controls the display settings for the field within the app (e.g. what
-type of field, label, whether mandatory, and section to display the field in).
+This code controls the display settings for the field in the app. For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.
 
-The following example shows displaying a string field with the options ‘First
-option’ and ‘Second option’ available via radio buttons on time entries. The
-field in the app is associated with the TestLineString field added to the
-TSTimesheetLine table.
+The following example shows a string field on time entries. This field has two options, **First option** and **Second option**, that are available via option buttons (radio buttons). The field in the app is associated with the **TestLineString** field that is added to the TSTimesheetLine table.
 
-Note the usage of the TSTimesheetCustomField::newFromMetatdata() method to
-simplify the initialization of the custom field properties: fieldBaseType,
-tableName, fieldname, label, isEditable, isMandatory, stringLength, and
-numberOfDecimals. If preferred, these parameters can be set manually.
+Note the use of the **TSTimesheetCustomField::newFromMetatdata()** method to simplify the initialization of the custom field properties: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength**, and **numberOfDecimals**. You can also set these parameters manually, as you prefer.
 
+```
 ...
-
-     [ExtensionOf(classStr(TsTimesheetSettings))]
-
-     final class TSTimesheetSettings_Extension
-     {
-
-        protected List buildCustomFieldList()
-
-        {
-
-            List customFieldList = next buildCustomFieldList();
-
-            TSTimesheetCustomField tsTimesheetCustomField;
-
-            tsTimesheetCustomField =
-            TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
-            fieldNum(TSTimesheetLine, TestLineString));
-
-            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
-
-            tsTimesheetCustomField.parmOrderSequence(1);
-
-            List stringOptions = new List(Types::String);
-
-            stringOptions.addEnd('First option');
-
-            stringOptions.addEnd('Second option');
-
-            tsTimesheetCustomField.parmStringOptions(stringOptions);
-
-            customFieldList.addEnd(tsTimesheetCustomField);
-
-            return customFieldList;
-
-        }
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
+    {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('Second option');
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
     }
-
+}
 ...
+```
 
-### Use chain of command on the TSTimesheetEntry class, buildCustomFieldListForEntry method to populate timesheet entry
+### Use chain of command on the TSTimesheetEntry class, buildCustomFieldListForEntry method to enter values in a timesheet entry
 
-This method is used to populate the saved timesheet lines within the mobile
-apps. The method takes a TSTimesheetTrans record as a parameter. Fields from
-that record can be used to populate the custom field value in the app.
+The **buildCustomFieldListForEntry** method is used to enter values on the saved timesheet lines in the mobile app. It takes a TSTimesheetTrans record as a parameter. Fields from that record can be used to fill in the custom field value in the app.
 
+```
 [ExtensionOf(classStr(TsTimesheetEntry))]
-
-
 ...
-
-    final class TsTimesheetEntry_Extension
+final class TsTimesheetEntry_Extension
+{
+    protected List buildCustomFieldListForEntry(TSTimesheetTrans \_tsTimesheetTrans)
     {
-
-        protected List buildCustomFieldListForEntry(TSTimesheetTrans \_tsTimesheetTrans)
-
-        {
-
-            List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
-
-            TSTimesheetLine tsTimesheetLine = \_tsTimesheetTrans.timesheetLine();
-
-            TSTimesheetCustomField tsTimesheetCustomField;
-
-            tsTimesheetCustomField =
-            TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
-            fieldNum(TSTimesheetLine, TestLineString));
-
-            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
-
-            tsTimesheetCustomField.parmOrderSequence(1);
-
-            tsTimesheetCustomField.parmStringValue(tsTimesheetLine.TestLineString);
-
-            List stringOptions = new List(Types::String);
-
-            stringOptions.addEnd('First option');
-
-            stringOptions.addEnd('second option;);
-
-            tsTimesheetCustomField.parmStringOptions(stringOptions);
-
-            customFieldList.addEnd(tsTimesheetCustomField);
-
-            return customFieldList;
-
-        }
+        List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
+        TSTimesheetLine tsTimesheetLine = \_tsTimesheetTrans.timesheetLine();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        tsTimesheetCustomField.parmStringValue(tsTimesheetLine.TestLineString);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('second option;);
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
     }
-    
+}
 ...
+```
 
+### Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database
 
-### Use chain of command on the TSTimesheetEntryService class to save entry from application back to the database
+To save a custom field back to the database in typical usage, you must extend multiple methods:
 
-Multiple methods will need to be extended to save custom field back to database
-in typical usage.
+- The **timesheetLineNeedsUpdating** method is used to determine whether the line record has been changed by the user in the app and must be saved to the database. If performance isn't a concern, this method can be simplified so that it always returns **true**.
+- The **populateTimesheetLineFromEntryDuringCreate** and **populateTimesheetLineFromEntryDuringUpdate** methods can be extended so that they enter values in the TSTimesheetLine database record from the TSTimesheetEntry data contract record that is provided. In the example that follows, notice how the mapping between the database field and the entry field is manually done via X++ code.
+- The **populateTimesheetWeekFromEntry** method can also be extended if the custom field that is mapped to the **TSTimesheetEntry** object must write back to the TSTimesheetLineweek database table.
 
-The **timesheetLineNeedsUpdating** method is used to determine if the line
-record has been changed by the user in the app and needs to be saved to the
-database. If performance is not a concern, this can be simplified to return
-“true” all the time.
+> [!NOTE]
+> The following example saves the **firstOption** or **secondOption** value that the user selects to the database as a raw string value. If the database field is a field of the **Enum** type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.
 
-The **populateTimesheetLineFromEntryDuringCreate** and
-**populateTimesheetLineFromEntryDuringUpdate** methods can be extended to
-populate the TSTimesheetLine database record from the provided TSTimesheetEntry
-data contract record. Note how the mapping between the database field and the
-entry field is done manually via X++ code in the sample code below.
-
-The **populateTimesheetWeekFromEntry** method can also be extended if the custom
-field mapped to the TSTimesheetEntry object needs to write back to the
-TSTimesheetLineweek database table.
-
-Note: our example below saves the ‘firstOption’ or ‘secondOption’ selected by
-the user to the database as a raw string value. If the database field is an enum
-type, those values could be manually mapped to an enum value and then saved to
-an enum field on the database table.
-
+```
 ...
-
-    [ExtensionOf(classStr(TSTimesheetEntryService))]
-
-    final class TSTimesheetEntryService_Extension
-
+[ExtensionOf(classStr(TSTimesheetEntryService))]
+final class TSTimesheetEntryService_Extension
+{
+    protected boolean timesheetLineNeedsUpdating(TSTimesheetLine \_tsTimesheetLine,
+    TsTimesheetEntry \_tsTimesheetEntry)
     {
-
-        protected boolean timesheetLineNeedsUpdating(TSTimesheetLine \_tsTimesheetLine,
-        TsTimesheetEntry \_tsTimesheetEntry)
-
-    {
-
         boolean ret = next timesheetLineNeedsUpdating(_tsTimesheetLine,
         \_tsTimesheetEntry);
-
-         if (!ret)
-
-         {
-
+        if (!ret)
+        {
             *// Loop through custom fields to see if value needs updating*
-
             ListEnumerator enumerator =  \_tsTimesheetEntry.parmCustomFields().getEnumerator();
-    
             while (enumerator.moveNext())
-
             {
-
                 TSTimesheetCustomField customField = enumerator.current();
-
                 if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
                 fieldNum(TSTimesheetLine, TestLineString)))
-
                 {
-
                     *// If Custom field value for TestLineString field has changed, We need to update the timesheet line.*
-
                     if (_tsTimesheetLine.TestLineString != customField.parmStringValue())
-
                     {
-
                         ret = true;
-
                     }
-
                 }
-
             }
-
         }
-
         return ret;
-
     }
-
     protected void populateTimesheetLineFromEntryDuringCreate(TSTimesheetLine
     \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
-
     {
-
         next populateTimesheetLineFromEntryDuringCreate(_tsTimesheetLine,
         \_tsTimesheetEntry);
-
         this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
         \_tsTimesheetEntry);
-
         }
-
         protected void populateTimesheetLineFromEntryDuringUpdate(TSTimesheetLine
         \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
-
         {
-
             next populateTimesheetLineFromEntryDuringUpdate(_tsTimesheetLine,
             \_tsTimesheetEntry);
-
             this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
             \_tsTimesheetEntry);
-
         }
-
         private void populateTimesheetLineFromCustomFields(TSTimesheetLine
         \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
-
         {
-
             ListEnumerator enumerator =
             \_tsTimesheetEntry.parmCustomFields().getEnumerator();
-
             while (enumerator.moveNext())
-
             {
-
                 TSTimesheetCustomField customField = enumerator.current();
-
                 if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
                 fieldNum(TSTimesheetLine, TestLineString)))
-
                 {
-
                     \_tsTimesheetLine.TestLineString = customField.parmStringValue();
-
                 }
-
             }
-
         }
-
     }
-    
 ...
-    
+```
 
-## Display a custom field in the timesheet header section
+## Show a custom field in the timesheet header section
 
-![details](media/ec64aa4ad40cb5e4cc88afe170b81085.png)
+![View more details command](media/ec64aa4ad40cb5e4cc88afe170b81085.png)
 
-![more](media/4699048932d914c27e264bdb95cf514a.jpg)
+![More field](media/4699048932d914c27e264bdb95cf514a.jpg)
 
-### Extend the TSTimesheetTable table to have a custom field
+### Extend the TSTimesheetTable table so that it has a custom field
 
-In typical scenarios, the data for a header custom field will likely be pulled
-from the TSTimesheetHeader table, but other tables can be used as well as long
-as the data can be retrieved based on a provided TSTimesheetTable record or do
-not have specific record context (e.g. a read-only field from ProjPramaters).
+In typical scenarios, it's likely that the data for a custom field in the header section will be pulled from the TSTimesheetHeader table. However, other tables can be used if the data can be retrieved based on a TSTimesheetTable record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).
 
-Also note that custom fields can be dynamically generated based on X++ logic
-without any backing database records. Our example below outlines this scenario.
+Note that custom fields don't have to have any backing database records. They can be dynamically generated based on X++ logic. The example that follows shows this approach.
 
 Fields in the header section are always read-only in the app.
 
-### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to display field in the header section
+### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to show a field in the header section
 
-This code controls the display settings for the field within the app (e.g. what
-type of field, label, whether mandatory, and section to display the field in).
+This code controls the display settings for the field in the app. For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.
 
 The following example shows a computed value in the header section in the app.
 
+```
 ...
-
-    [ExtensionOf(classStr(TsTimesheetSettings))]
-
-    final class TSTimesheetSettings_Extension
-
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
     {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
 
-        protected List buildCustomFieldList()
-
-        {
-
-            List customFieldList = next buildCustomFieldList();
-
-            TSTimesheetCustomField tsTimesheetCustomField;
-            
-            *// Computed utilization rate*
-
-            tsTimesheetCustomField = new TSTimesheetCustomField();
-
-            tsTimesheetCustomField.parmFieldBaseType(Types::Real);
-
-            tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
-            custom field)");
-
-            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
-
-            tsTimesheetCustomField.parmOrderSequence(2);
-
-            tsTimesheetCustomField.parmNumberOfDecimals(3);
-
-            customFieldList.addEnd(tsTimesheetCustomField);
-
-            return customFieldList;
-
-        }
-
+        *// Computed utilization rate*
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
     }
-   
+}
 ...
+```
 
+### Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details
 
-### Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to populate timesheet details
+The **buildCustomFieldListForHeader** method is used to fill in the timesheet header details in the mobile app. It takes a TSTimesheetTable record as a parameter. Fields from that record can be used to fill in the custom field value in the app. The following example doesn't read any values from the database. Instead, it generates a computed value to show by using X++ logic.
 
-This method is used to populate the timesheet header details within the mobile
-apps. This method takes a TSTimesheetTable record as a parameter. Fields from
-that record can be used to populate the custom field value in the app. Our
-example below does not read any values from the database. Instead, it generates
-a computed value to display with X++ logic.
-
+```
 ...
-
-    [ExtensionOf(classStr(TSTimesheetDetails))]
-
-    final class TSTimesheetDetails_Extension
-
+[ExtensionOf(classStr(TSTimesheetDetails))]
+final class TSTimesheetDetails_Extension
+{
+    protected List buildCustomFieldListForHeader(TSTimesheetTable
+    \_tsTimesheetTable)
     {
+        List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
+        TSTimesheetCustomField tsTimesheetCustomField;
 
-        protected List buildCustomFieldListForHeader(TSTimesheetTable
-        \_tsTimesheetTable)
-
+        *// Computed utilization rate*
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        real utilizationRate = 0;
+        if (_tsTimesheetTable.totalHours() != 0)
         {
-
-            List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
-
-            TSTimesheetCustomField tsTimesheetCustomField;
-
-            *// Computed utilization rate*
-
-            tsTimesheetCustomField = new TSTimesheetCustomField();
-
-            tsTimesheetCustomField.parmFieldBaseType(Types::Real);
-
-            tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
-            custom field)");
-
-            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
-
-            tsTimesheetCustomField.parmOrderSequence(2);
-
-            tsTimesheetCustomField.parmNumberOfDecimals(3);
-
-            real utilizationRate = 0;
-
-            if (_tsTimesheetTable.totalHours() != 0)
-
-            {
-
-                utilizationRate = \_tsTimesheetTable.totalHoursBillable() /
-                \_tsTimesheetTable.totalHours();
-
-            }
-
-            tsTimesheetCustomField.parmRealValue(utilizationRate);
-
-            customFieldList.addEnd(tsTimesheetCustomField);
-
-            return customFieldList;
-
+            utilizationRate = \_tsTimesheetTable.totalHoursBillable() /
+            \_tsTimesheetTable.totalHours();
         }
-
+        tsTimesheetCustomField.parmRealValue(utilizationRate);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
     }
-
+}
 ...
-
+```
 
 ## Other configurability/extensibility opportunities
 
+### Adding additional validation for the app
 
-### Adding additional validation for app
+Existing logic for timesheet functionality at the database level will still work as expected. Interrupt the completion of the save/submit operation with a more specific error message, 'throw error("message to user")', which can be added to the code. Here are three examples of useful extensible methods:
 
-Existing logic that at the database level for timesheet functionality will still
-work as expected. Interrupt the completion of the save/submit with a more
-specific error message, ‘throw error(“message to user”)’ which can be added to
-the code. Three examples of useful extensible methods:
-
-1.  If validateWrite on the TSTimesheetLine table returns false during a
-    timesheet line save, then an error message will be displayed in the mobile
-    app.
-
-2.  If validateSubmit on the TSTimesheetTable table returns false during
-    timesheet submission in the app, then an error message is shown to the user.
-
-3.  Logic that will populate fields (e.g. Line Property) during the insert
-    method on the TSTimesheetLine table will still execute.
+- If **validateWrite** on the TSTimesheetLine table returns **false** during a save operation for a timesheet line, an error message is shown in the mobile app.
+- If **validateSubmit** on the TSTimesheetTable table returns **false** during timesheet submission in the app, an error message is shown to the user.
+- Logic that fills in fields (for example, **Line Property**) during the **insert** method on the TSTimesheetLine table will still run.
 
 ### Hiding and marking out-of-box fields as read-only via configuration
 
-Out-of-box fields can be made read-only or hidden in the mobile app from the
-project parameters. 
-  
+From the project parameters, you can make out-of-box fields read-only or hidden in the mobile app. Set the options in the **Mobile timesheets** section on the **Timesheet** tab of the **Project management and accounting parameters** page.
 
+![Project parameters](media/5753b8ecccd1d8bb2b002dd538b3f762.png)
 
-![project parameters](media/5753b8ecccd1d8bb2b002dd538b3f762.png)
+### Changing the activities that are available for selection via extensions
 
-### Changing the activities available for selection via extensions
+The activities that are available for selection for a project are filled in via the **getActivitiesForProject()** and **getActivityQuery()** methods in the **TsTimesheetProjectService** class. You can use chain of command to change this behavior to match your business scenario for the activities that are available for selection for a specific project.
 
-Activities available for selection for a project are populated via the
-getActivitiesForProject() and getActivityQuery() methods on the
-TsTimesheetProjectService class. Utilize chain of command to modify this
-behavior to match your business scenario for activities available for selection
-for a given project.
+### Entering a default project category on timesheet entries
 
-### Defaulting of project category on timesheet entries
+Entry of a default project category on timesheet entries occurs at three levels. You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior. The following hierarchy is used:
 
-Defaulting of project category on timesheet entries occurs at three different
-levels. Use chain of command to extend the behavior in any or all of these
-places to accommodate your desired behavior. The following hierarchy is used:
-
-1.  First, the app will try to pull the default category from the project
-    resource. This is set in the getCurrentUserResource and
-    getDelegatedResourcesForCurrentUser methods in the
-    TSTimesheetSettingsService class.
-
-2.  If not provided at the resource level, the category will attempt to default
-    from the project activity. This is set in the getActivitiesForProject method
-    in the TSTimesheetProjectService class.
-
-3.  If not provided at the activity level, the category will default from the
-    project parameters. This is set in the getProjectDetailsbyRule method in the
-    TSTimesheetProjectService class.
+1. The app tries to put the default category from the project resource. This is set in the **getCurrentUserResource** and **getDelegatedResourcesForCurrentUser** methods in the **TSTimesheetSettingsService** class.
+2. If the default category isn't provided at the project resource level, the app tries to pull it from the project activity. This is set in the **getActivitiesForProject** method in the **TSTimesheetProjectService** class.
+3. If the default category isn't provided at the project activity level, the default category it taken from the project parameters. This is set in the **getProjectDetailsbyRule** method in the **TSTimesheetProjectService** class.
