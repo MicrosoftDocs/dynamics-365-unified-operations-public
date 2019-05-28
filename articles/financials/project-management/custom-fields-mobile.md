@@ -540,56 +540,61 @@ that record can be used to populate the custom field value in the app. Our
 example below does not read any values from the database. Instead, it generates
 a computed value to display with X++ logic.
 
-[ExtensionOf(classStr(TSTimesheetDetails))]
+...
 
-final class TSTimesheetDetails_Extension
+    [ExtensionOf(classStr(TSTimesheetDetails))]
 
-{
+    final class TSTimesheetDetails_Extension
 
-protected List buildCustomFieldListForHeader(TSTimesheetTable
-\_tsTimesheetTable)
+    {
 
-{
+        protected List buildCustomFieldListForHeader(TSTimesheetTable
+        \_tsTimesheetTable)
 
-List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
+        {
 
-TSTimesheetCustomField tsTimesheetCustomField;
+            List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
 
-*// Computed utilization rate*
+            TSTimesheetCustomField tsTimesheetCustomField;
 
-tsTimesheetCustomField = new TSTimesheetCustomField();
+            *// Computed utilization rate*
 
-tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+            tsTimesheetCustomField = new TSTimesheetCustomField();
 
-tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
-custom field)");
+            tsTimesheetCustomField.parmFieldBaseType(Types::Real);
 
-tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+            tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+            custom field)");
 
-tsTimesheetCustomField.parmOrderSequence(2);
+            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
 
-tsTimesheetCustomField.parmNumberOfDecimals(3);
+            tsTimesheetCustomField.parmOrderSequence(2);
 
-real utilizationRate = 0;
+            tsTimesheetCustomField.parmNumberOfDecimals(3);
 
-if (_tsTimesheetTable.totalHours() != 0)
+            real utilizationRate = 0;
 
-{
+            if (_tsTimesheetTable.totalHours() != 0)
 
-utilizationRate = \_tsTimesheetTable.totalHoursBillable() /
-\_tsTimesheetTable.totalHours();
+            {
 
-}
+                utilizationRate = \_tsTimesheetTable.totalHoursBillable() /
+                \_tsTimesheetTable.totalHours();
 
-tsTimesheetCustomField.parmRealValue(utilizationRate);
+            }
 
-customFieldList.addEnd(tsTimesheetCustomField);
+            tsTimesheetCustomField.parmRealValue(utilizationRate);
 
-return customFieldList;
+            customFieldList.addEnd(tsTimesheetCustomField);
 
-}
+            return customFieldList;
 
-}
+        }
+
+    }
+
+...
+
 
 ## Other configurability/extensibility opportunities
 
