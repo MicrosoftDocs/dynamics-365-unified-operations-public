@@ -236,43 +236,42 @@ tableName, fieldname, label, isEditable, isMandatory, stringLength, and
 numberOfDecimals. If preferred, these parameters can be set manually.
 
 ...
- [ExtensionOf(classStr(TsTimesheetSettings))]
+     [ExtensionOf(classStr(TsTimesheetSettings))]
 
- final class TSTimesheetSettings_Extension
+     final class TSTimesheetSettings_Extension
+     {
 
-  {
+        protected List buildCustomFieldList()
 
-    protected List buildCustomFieldList()
+        {
 
-    {
+            List customFieldList = next buildCustomFieldList();
 
-        List customFieldList = next buildCustomFieldList();
+            TSTimesheetCustomField tsTimesheetCustomField;
 
-        TSTimesheetCustomField tsTimesheetCustomField;
+            tsTimesheetCustomField =
+            TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+            fieldNum(TSTimesheetLine, TestLineString));
 
-        tsTimesheetCustomField =
-        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
-        fieldNum(TSTimesheetLine, TestLineString));
+            tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
 
-        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+            tsTimesheetCustomField.parmOrderSequence(1);
 
-        tsTimesheetCustomField.parmOrderSequence(1);
+            List stringOptions = new List(Types::String);
 
-        List stringOptions = new List(Types::String);
+            stringOptions.addEnd('First option');
 
-        stringOptions.addEnd('First option');
+            stringOptions.addEnd('Second option');
 
-        stringOptions.addEnd('Second option');
+            tsTimesheetCustomField.parmStringOptions(stringOptions);
 
-        tsTimesheetCustomField.parmStringOptions(stringOptions);
+            customFieldList.addEnd(tsTimesheetCustomField);
 
-        customFieldList.addEnd(tsTimesheetCustomField);
+            return customFieldList;
 
-        return customFieldList;
-
+        }
     }
- 
- }
+...
 
 ### Use chain of command on the TSTimesheetEntry class, buildCustomFieldListForEntry method to populate timesheet entry
 
