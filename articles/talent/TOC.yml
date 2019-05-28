@@ -91,32 +91,6 @@
       href: access-preview-feature.md
     - name: Get support for Talent
       href: talent-support.md
-  - name: Organize your workforce by using departments, jobs, and positions
-    href: departments-jobs-positions.md
-    items:
-    - name: Set up the components of a job
-      href: create-job.md
-    - name: Create departments and include them in the department hierarchy
-      href: create-department-add-department-hierarchy.md
-    - name: Set up HR parameters across legal entities
-      href: set-up-hr-parameters-across-legal-entities.md
-    - name: Set up company-specific HR parameters
-      href: set-up-company-specific-hr-parameters.md
-    - name: Personnel actions FAQ
-      href: personnel-actions-faq.md
-    - name: Formalize business processes
-      href: formalize-business-processes.md
-    - name: Use workflows to manage employee information
-      href: workflow-manage-employee-information.md
-  - name: Manage leave and absence
-    href: leave-absence-overview.md
-    items:
-    - name: Leave and absence concepts
-      href: leave-absence-concepts.md
-    - name: Accrue time off based on hours worked
-      href: leave-accrue-hours-worked.md
-    - name: Working time calendars
-      href: working-time-calendars.md
   - name: Staff your organization with Attract
     items:
     - name: Which version of Attract?
@@ -189,6 +163,32 @@
       href: extensibility-attract.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
+  - name: Organize your workforce by using departments, jobs, and positions
+    href: departments-jobs-positions.md
+    items:
+    - name: Set up the components of a job
+      href: create-job.md
+    - name: Create departments and include them in the department hierarchy
+      href: create-department-add-department-hierarchy.md
+    - name: Set up HR parameters across legal entities
+      href: set-up-hr-parameters-across-legal-entities.md
+    - name: Set up company-specific HR parameters
+      href: set-up-company-specific-hr-parameters.md
+    - name: Personnel actions FAQ
+      href: personnel-actions-faq.md
+    - name: Formalize business processes
+      href: formalize-business-processes.md
+    - name: Use workflows to manage employee information
+      href: workflow-manage-employee-information.md
+  - name: Manage leave and absence
+    href: leave-absence-overview.md
+    items:
+    - name: Leave and absence concepts
+      href: leave-absence-concepts.md
+    - name: Accrue time off based on hours worked
+      href: leave-accrue-hours-worked.md
+    - name: Working time calendars
+      href: working-time-calendars.md
   - name: Motivate employees
     items:
     - name: Compensation plans
