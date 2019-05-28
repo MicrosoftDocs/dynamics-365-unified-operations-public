@@ -71,7 +71,7 @@ Before you can post jobs from Attract to LinkedIn, you need a LinkedIn Company I
 LinkedIn offers the following types of job postings:
 
 - **Limited Listing** - free job postings that appear in search results when candidates search for jobs on LinkedIn and on a company's LinkedIn page. Limited Listings are targeted toward active job seekers.
-- **Premium Job Slot** - purchased postings that appear in various places across LinkedIn, including the LinkedIn feed, emails, and **Jobs You Might be Interested in**. Premium Job Slots are targeted toward passive candidates, but also appear in job searches.
+- **Premium Job Slot** - purchased postings that appear in various places across LinkedIn, including the LinkedIn feed, emails, and the Jobs You Might be Interested in area. Premium Job Slots are targeted toward passive candidates, but also appear in job searches.
 
 At this time, Attract only supports Limited Listings. Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day, so it can take up to 24 hours for your jobs to post to the site. For more information about the types of job postings available on LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping).
 

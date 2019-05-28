@@ -153,7 +153,9 @@
       items:
       - name: Create jobs
         href: Creating-jobs-Attract.md
-      - name: Post jobs to external sites from Attract
+      - name: Post jobs to LinkedIn
+        href: attract-post-jobs-to-linkedin.md
+      - name: Post jobs to Broadbean
         href: posting-jobs-external.md
     - name: Source candidates
       items:
@@ -161,6 +163,8 @@
         href: attract-talent-pools.md
       - name: Source candidates with LinkedIn Recruiter
         href: attract-linked-in-recruiter.md
+      - name: Track sources for candidate profiles and applications
+        href: source-tracking.md
     - name: Activities in the hiring processes 
       href: activities-attract.md
     - name: Interview scheduling and feedback
@@ -179,8 +183,6 @@
       href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
-    - name: Track sources for candidate profiles and applications
-      href: source-tracking.md
     - name: Use analytic reports for hiring process insights
       href: analytic-reports.md  
   - name: Motivate employees

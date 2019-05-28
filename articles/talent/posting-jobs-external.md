@@ -33,30 +33,9 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to external sites directly from Attract. After you [create a job](./creating-jobs-attract.md), all you have to do is push a button to put your job in front of thousands of potential candidates.
+Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to Broadbean directly from Attract. After you [create a job](./creating-jobs-attract.md), all you have to do is push a button to put your job in front of all the potential job candidates on Broadbean.
 
-
-## Post jobs to LinkedIn
-
-1. In Attract, open the job that you want to post to LinkedIn.
-2. On the **Postings** tab, select the **Post Now** button that corresponds to LinkedIn.
-[![Attract post job to LinkedIn](./media/attract-post-job-to-linkedin.png)](./media/attract-post-job-to-linkedin.png)
-3. In the **Create an "Apply now" web address** window, select an option under **Candidates can apply using a**. We recommend you select **Link in Attract**.
-4. Select **Done**.
-5. In the **Submit for posting** window, select **Confirm**.
-
-After LinkedIn successfully completes the posting, the **Postings** section of the job in Attract shows the LinkedIn status as **Posted**.
-
-It can take up to 24 hours for your job to appear in LinkedIn. All job postings done with attract are Limited Listings. For more information about Limited Listings in LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049).
-
-### Troubleshoot job posting to LinkedIn
-
-If you're having trouble posting a job to LinkedIn, try these steps:
-
-1. Verify that the LinkedIn credentials that you entered in Attract are valid and correct.
-2. If the credentials are valid and correct, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
-3. If the issue persists, contact [Microsoft support](./talent-support.md).
-
+If you're an admin who needs more information about configuring Broadbean integration with Attract, see [Enter settings for external job boards](./attract-admin-job-board-settings.md).
 
 ## Post jobs to Broadbean
 
@@ -123,5 +102,5 @@ If you're having trouble posting a job to Broadbean, try these steps:
 
 ## See also
 
-[Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
-[Create jobs](./creating-jobs-attract.md)
+[Create jobs](./creating-jobs-attract.md)<p></p>
+[Enter settings for external job boards](./attract-admin-job-board-settings.md)
