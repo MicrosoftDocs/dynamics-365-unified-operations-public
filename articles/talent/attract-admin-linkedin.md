@@ -86,7 +86,9 @@ The following table describes the products available for job delivery into Linke
 | Recommended by LinkedIn? | No | Yes | Yes | No |
 | Requirements | Contract Agreement | Purchase of Premium Job Slots | API agreement | API agreement | 
 
-For more information about LinkedIn's Job Wrapping, see [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037). For more information about LinkedIn's Job Wrapping Plus, see [Job Wrapping Plus - FAQs](https://www.linkedin.com/help/recruiter/answer/79050).
+For more information about LinkedIn's Job Wrapping, see [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037) and [Job Wrapping Plus - FAQs](https://www.linkedin.com/help/recruiter/answer/79050).
+
+For more information about developing solutions around Attract and Recruiter System Connect, see [Recruiter System Connect](https://docs.microsoft.com/en-us/linkedin/talent/recruiter-system-connect).
 
 ## Set up LinkedIn Recruiter with Attract 
 
