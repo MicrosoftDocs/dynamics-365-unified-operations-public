@@ -68,13 +68,12 @@ In this naming convention, `<EntityPropertyName>` is the name of the property th
 ### Example
 
 ```
-item = new AtlCreatorProductItem()
+item = new AtlCreatorProductsReleasedVariant()
     .setItemId('DemoItem')
-    .setItemGroup(invent.itemGroups().carAudio())
-    .setItemModelGroup(invent.modelGroups().fifo())
-    .setStorageDimGroup(invent.storageDimGroups().siteWarehousePhysical())
-    .setTrackingDimGroup(invent.trackingDimGroups().serialControlled())
-    .setDefaultWarehouse(invent.warehouses().default())
+    .setColor(ecoResColor)
+    .setStyle(ecoResStyle)
+    .setConfig(ecoResConfig)
+    .setSize(ecoResSize)
     .create();
 ```
 
