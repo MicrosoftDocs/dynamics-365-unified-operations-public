@@ -53,6 +53,8 @@ The **Validate store transactions** batch process checks the consistency of the 
 
 - **Customer account** – Validates that the customer account in the retail transaction tables exists in the HQ customer master.
 - **Line count** – Validates that the number of lines, as captured on the transaction header table, matches the number of lines in the sales transaction tables.
+- **Discount amount** - Validates that the discount amount on the discount tables and the discount amount on the retail transaction line tables are consistent
+- **Gift card item** - Dynamics 365 for Retail does not support the return of gift card items. However, there is capability to cash out the balance on a gift card. As such, any gift card item that is being processed as a return line and not a cash out line fails the statement posting process. The validation process around gift card item ensures that there are no return gift card line items on the retail transaction tables other than gift card cash out lines. 
 
 ## Set up the consistency checker
 
