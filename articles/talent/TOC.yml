@@ -121,6 +121,8 @@
     items:
     - name: Which version of Attract?
       href: attract-comprehensive-hiring.md
+    - name: Attract features and capabilities
+      href: attract-overview.md
     - name: Configure system settings in Attract
       items:
       - name: Configure company information and branding
@@ -145,10 +147,16 @@
         href: attract-admin-linkedin.md
       - name: Create EEO/OFCCP reports
         href: 
-    - name: Attract features and capabilities
-      href: attract-overview.md
-    - name: Create a hiring process template
-      href: Process-templates-Attract.md
+    - name: Create a hiring process
+      items:
+      - name: Create a hiring process template
+        href: Process-templates-Attract.md
+      - name: Activities in the hiring processes 
+        href: activities-attract.md
+      - name: Email templates
+        href: email-templates.md
+      - name: Use analytic reports for hiring process insights
+        href: analytic-reports.md  
     - name: Create and post jobs
       items:
       - name: Create jobs
@@ -157,6 +165,8 @@
         href: attract-post-jobs-to-linkedin.md
       - name: Post jobs to Broadbean
         href: posting-jobs-external.md
+      - name: Career site functionality in Attract
+        href: career-site.md
     - name: Source candidates
       items:
       - name: Source candidates with talent pools
@@ -165,26 +175,20 @@
         href: attract-linked-in-recruiter.md
       - name: Track sources for candidate profiles and applications
         href: source-tracking.md
-    - name: Activities in the hiring processes 
-      href: activities-attract.md
-    - name: Interview scheduling and feedback
-      href: interview-scheduling-feedback.md
+      - name: Intelligent recommendations
+        href: Intelligent-Recommendations.md
+    - name: Interview and make an offer
+      items:
+      - name: Interview scheduling and feedback
+        href: interview-scheduling-feedback.md
+      - name: Set up offer management
+        href: offer-setup.md
+      - name: Create, approve, and sign offers
+        href: creating-offers.md
     - name: Extensibility
       href: extensibility-attract.md
-    - name: Career site functionality in Attract
-      href: career-site.md
-    - name: Set up offer management
-      href: offer-setup.md
-    - name: Create, approve, and sign offers
-      href: creating-offers.md
-    - name: Email templates
-      href: email-templates.md
-    - name: Intelligent recommendations
-      href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
-    - name: Use analytic reports for hiring process insights
-      href: analytic-reports.md  
   - name: Motivate employees
     items:
     - name: Compensation plans
