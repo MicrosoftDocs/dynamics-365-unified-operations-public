@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile application on iOS and Android
+title: Implement custom fields for the Microsoft Dynamics 365 Project timesheet mobile app on iOS and Android
 description: This document provides common patterns for implementing custom fields utilizing extensions.
 author: KimANelson
 manager: AnnBe
@@ -30,40 +30,25 @@ ms.search.validFrom: 2019-05-28
 
 ---
 
-# Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile application on iOS and Android
+# Implement custom fields for the Microsoft Dynamics 365 Project timesheet mobile app on iOS and Android
 
 [!include [banner](../includes/banner.md)]
 
 
-Overview
-========
+This topic provides common patterns for implementing custom fields utilizing extensions. The following topics are covered.
 
-Document purpose
-----------------
+-   The various datatypes supported by the custom field framework.
 
-This document provides common patterns for implementing custom fields utilizing
-extensions. The following topics are covered.
+-   How to display read-only or editable fields on timesheet entries and save the user provided values back to the database.
 
--   The various datatypes supported by the custom field framework
+-   How to display read-only fields on the timesheet header.
 
--   How to display read-only or editable fields on timesheet entries and save
-    the user provided values back to the database
+-   Integrating other custom business logic for defaulting of fields and additional validation.
 
--   How to display read-only fields on the timesheet header
+## Audience
+This topic is intended for developers integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application available for iOS and Android. It is assumed that the reader is familiar with X++ development and project timesheet functionality.
 
--   Integrating other custom business logic for defaulting of fields and
-    additional validation
-
-Audience
---------
-
-This white paper is intended for developers integrating their custom fields into
-the Microsoft Dynamics 365 Project Timesheet mobile application available for
-iOS and Android. It is assumed that the reader of this document is familiar with
-X++ development and project timesheet functionality.
-
-Data contract – TSTimesheetCustomField X++ class
-================================================
+## Data contract – TSTimesheetCustomField X++ class
 
 The TSTimesheetCustomField is the X++ data contract class that represents
 information about a custom field for timesheet functionality. Lists of these
@@ -76,8 +61,7 @@ TSTimesheetEntry data contracts to display custom fields in the mobile apps.
 objects with the same project information and timesheetLineRecId constitute a
 line.
 
-fieldBaseType (Types)
----------------------
+### fieldBaseType (Types)
 
 The type of the field to be displayed in the app is determined by the
 FieldBaseType property on the TsTimesheetCustom object. The following Types
@@ -110,8 +94,7 @@ values are supported:
     value back to the enum value before saving to the database using chain of
     command (see below).
 
-fieldExtendedType (TSCustomFieldExtendedType)
----------------------------------------------
+### fieldExtendedType (TSCustomFieldExtendedType)
 
 Format Real values as currency if desired. Applicable only when fieldBaseType is
 Real.
@@ -125,8 +108,7 @@ Real.
       
     The realValue field contains the money amount to be saved to the database.
 
-fieldSection (TSCustomFieldSection)
------------------------------------
+### fieldSection (TSCustomFieldSection)
 
 Determines where in the app the custom field should be displayed.
 
@@ -141,108 +123,91 @@ fieldName (FieldNameShort)
 Identifies the field when saving values provided by the app back to the
 database.
 
-tableName (TableNameShort)
---------------------------
+### tableName (TableNameShort)
 
 Identifies the field when saving values provided by the app back to the
 database.
 
-isEditable (NoYes)
-------------------
+### isEditable (NoYes)
 
-Set to ‘Yes’ to specify the field in the entry section should be editable by the
-user or ‘No’ to make it read-only
+Set to **Yes** to specify the field in the entry section should be editable by the
+user or **No** to make it read-only.
 
-isMandatory (NoYes)
--------------------
+### isMandatory (NoYes)
 
-Set to ‘Yes’ to specify the field in the entry section should be mandatory by
+Set to **Yes** to specify the field in the entry section should be mandatory by
 the user.
 
-label (str)
------------
+### label (str)
 
 The label to display next the field in the app.
 
-stringOptions (List of Strings)
--------------------------------
+### stringOptions (List of Strings)
 
 Applicable only when fieldBaseType is String. If stringOptions is populated, the
 string values available for selection via radio buttons are specified by the
 strings in the list. If not provided, free text entry into the string field is
-allowed. (see example below)
+allowed (see example below).
 
-stringLength (int)
-------------------
+### stringLength (int)
 
 The maximum length for a string field. Applicable only when fieldBaseType is
 String.
 
-numberOfDecimals (int)
-----------------------
+## numberOfDecimals (int)
 
 The number of decimals to display for a real field. Applicable only when
 fieldBaseType is Real.
 
-orderSequence (int)
--------------------
+### orderSequence (int)
 
 Controls the order the custom fields are displayed in within the app when more
 than one custom field is specified. Fields with lower numbers are displayed
 first.
 
-booleanValue (boolean)
-----------------------
+### booleanValue (boolean)
 
 Passes the boolean value of the field between the server and the app for boolean
 type fields.
 
-guidValue (guid)
-----------------
+### guidValue (guid)
 
 Passes the guid value of the field between the server and the app for guid type
 fields.
 
-int64Value (int64)
-------------------
+### int64Value (int64)
 
 Passes the int64 value of the field between the server and the app for int64
 type fields.
 
-intValue (int)
---------------
+### intValue (int)
 
 Passes the int value of the field between the server and the app for int type
 fields.
 
-realValue (real)
-----------------
+### realValue (real)
 
 Passes the real value of the field between the server and the app for real type
 fields.
 
-stringValue (str)
------------------
+### stringValue (str)
 
 Passes the string value of the field between the server and the app for string
 type fields. Also used for real type fields formatted as currency to pass
 currency code to the app.
 
-dateValue (date)
-----------------
+### dateValue (date)
 
 Passes the date value of the field between the server and the app for date type
 fields.
 
-Display and save a custom field in the timesheet entry section
-==============================================================
+## Display and save a custom field in the timesheet entry section
 
-![](media/967f517136dd0ae7b80ed002895f6141.jpg)
+![test string 1](media/967f517136dd0ae7b80ed002895f6141.jpg)
 
-![](media/a7c137fdd47b4a0b7ab2ce436bf09fe9.jpg)
+![test string 2](media/a7c137fdd47b4a0b7ab2ce436bf09fe9.jpg)
 
-Extend the TSTimesheetLine table to have a custom field
--------------------------------------------------------
+### Extend the TSTimesheetLine table to have a custom field
 
 In typical scenarios, the data for an entry custom field will likely be saved to
 the TSTimesheetLine table, but other tables can be used as well as long as the
@@ -253,10 +218,9 @@ Also note that custom fields could be dynamically generated based on X++ logic
 without any backing database records. This can be useful in read-only scenarios
 (see the timesheet header section for an example of this).
 
-![](media/b6756b4a3fc5298093327a088a7710fd.png)
+![line string](media/b6756b4a3fc5298093327a088a7710fd.png)
 
-Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to display field in entry section
---------------------------------------------------------------------------------------------------------------------
+### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to display field in entry section
 
 This code controls the display settings for the field within the app (e.g. what
 type of field, label, whether mandatory, and section to display the field in).
@@ -309,8 +273,7 @@ return customFieldList;
 
 }
 
-Use chain of command on the TSTimesheetEntry class, buildCustomFieldListForEntry method to populate timesheet entry
--------------------------------------------------------------------------------------------------------------------
+### Use chain of command on the TSTimesheetEntry class, buildCustomFieldListForEntry method to populate timesheet entry
 
 This method is used to populate the saved timesheet lines within the mobile
 apps. The method takes a TSTimesheetTrans record as a parameter. Fields from
@@ -358,8 +321,7 @@ return customFieldList;
 
 }
 
-Use chain of command on the TSTimesheetEntryService class to save entry from application back to the database
--------------------------------------------------------------------------------------------------------------
+### Use chain of command on the TSTimesheetEntryService class to save entry from application back to the database
 
 Multiple methods will need to be extended to save custom field back to database
 in typical usage.
@@ -494,15 +456,13 @@ fieldNum(TSTimesheetLine, TestLineString)))
 
 }
 
-Display a custom field in the timesheet header section
-======================================================
+## Display a custom field in the timesheet header section
 
-![](media/ec64aa4ad40cb5e4cc88afe170b81085.png)
+![details](media/ec64aa4ad40cb5e4cc88afe170b81085.png)
 
-![](media/4699048932d914c27e264bdb95cf514a.jpg)
+![more](media/4699048932d914c27e264bdb95cf514a.jpg)
 
-Extend the TSTimesheetTable table to have a custom field
---------------------------------------------------------
+### Extend the TSTimesheetTable table to have a custom field
 
 In typical scenarios, the data for a header custom field will likely be pulled
 from the TSTimesheetHeader table, but other tables can be used as well as long
@@ -514,8 +474,7 @@ without any backing database records. Our example below outlines this scenario.
 
 Fields in the header section are always read-only in the app.
 
-Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to display field in the header section
--------------------------------------------------------------------------------------------------------------------------
+### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to display field in the header section
 
 This code controls the display settings for the field within the app (e.g. what
 type of field, label, whether mandatory, and section to display the field in).
@@ -559,8 +518,7 @@ return customFieldList;
 
 }
 
-Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to populate timesheet details
-------------------------------------------------------------------------------------------------------------------------
+### Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to populate timesheet details
 
 This method is used to populate the timesheet header details within the mobile
 apps. This method takes a TSTimesheetTable record as a parameter. Fields from
@@ -619,11 +577,10 @@ return customFieldList;
 
 }
 
-Other configurability/extensibility opportunities
-=================================================
+## Other configurability/extensibility opportunities
 
-Adding additional validation for app
-------------------------------------
+
+### Adding additional validation for app
 
 Existing logic that at the database level for timesheet functionality will still
 work as expected. Interrupt the completion of the save/submit with a more
@@ -640,18 +597,16 @@ the code. Three examples of useful extensible methods:
 3.  Logic that will populate fields (e.g. Line Property) during the insert
     method on the TSTimesheetLine table will still execute.
 
-Hiding and marking out-of-box fields as read-only via configuration
--------------------------------------------------------------------
+### Hiding and marking out-of-box fields as read-only via configuration
 
 Out-of-box fields can be made read-only or hidden in the mobile app from the
-project parameters:  
+project parameters. 
   
 
 
-![](media/5753b8ecccd1d8bb2b002dd538b3f762.png)
+![project parameters](media/5753b8ecccd1d8bb2b002dd538b3f762.png)
 
-Changing the activities available for selection via extensions
---------------------------------------------------------------
+### Changing the activities available for selection via extensions
 
 Activities available for selection for a project are populated via the
 getActivitiesForProject() and getActivityQuery() methods on the
@@ -659,8 +614,7 @@ TsTimesheetProjectService class. Utilize chain of command to modify this
 behavior to match your business scenario for activities available for selection
 for a given project.
 
-Defaulting of project category on timesheet entries
----------------------------------------------------
+### Defaulting of project category on timesheet entries
 
 Defaulting of project category on timesheet entries occurs at three different
 levels. Use chain of command to extend the behavior in any or all of these
