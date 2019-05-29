@@ -124,9 +124,9 @@ In case a change back to Office Store is needed, the standard values are:
 >- **Name**, **Version**, and **Notes** are values that provide information but they are not needed to run the Excel Add-in.
 >- These same values are also used for the Word Add-in when it is run from the Document Templates form.
 
-If you encounter trouble with Centralized Deployment for some users, it could be one of these problems:
--	One or two users are members in a group that is more restrictive than others
--	The user referenced is on a completely different O365 account (like a personal one)
+If you encounter issues with Centralized Deployment for some users, it could be one of these problems:
+-	One or more users are members in a group that is more restrictive than others
+-	The user referenced is on a different O365 account (such as a personal account)
 
 ## Troubleshooting issues
 
