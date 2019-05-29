@@ -144,10 +144,6 @@ Not all workflows support catch weight product processing with warehouse managem
 - Manual creation of quarantine orders isn't supported for catch weight products.
 - Manual movement of inventory that is related to work isn't supported for catch weight products.
 - Consolidation of license plates isn't supported for catch weight products.
-- Changes to warehouse inventory status as part of a periodic task aren't supported for catch weight products.
-- Changes to inventory status that are defined by a query aren't supported for catch weight products. (Changes to quality order inventory status aren't supported either.)
-- For catch weight products, the inventory status can't be changed from the **On-hand by location** page.
-- For catch weight products, the inventory status can't be changed as part of warehouse app movement work.
 - License plate loading to initialize warehouse stock isn't supported for catch weight products.
 - Batch balancing processes aren't supported for catch weight products.
 - Handling of negative physical inventory isn't supported for catch weight products.
@@ -157,7 +153,6 @@ Not all workflows support catch weight product processing with warehouse managem
 
 - The functionality for cluster picking isn't supported for catch weight products.
 - Pick and pack warehouse processing isn't supported for catch weight products.
-- For catch weight products, work can't be completed from the **Work** page.
 - For catch weight products, work that is defined in a work template can be run automatically.
 - The functionality for reversing work isn't supported for catch weight products.
 - For catch weight products, manual packing station processing where work is created after containers are closed isn't supported.
@@ -169,7 +164,7 @@ Not all workflows support catch weight product processing with warehouse managem
 - Kanban functionality isn't supported for catch weight products.
 - For catch weight products, serial numbers can't be registered before consumption.
 - The functionality for reversing license plates isn't supported for catch weight products.
-- For catch weight products, reporting as finished can be registered by serial number.
+- For catch weight products, reporting as finished cannot be registered by serial number.
 
 ### Transportation management processing
 
