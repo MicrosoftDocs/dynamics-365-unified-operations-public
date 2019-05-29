@@ -208,8 +208,8 @@ final class TSTimesheetSettings_Extension
 The **buildCustomFieldListForEntry** method is used to enter values on the saved timesheet lines in the mobile app. It takes a TSTimesheetTrans record as a parameter. Fields from that record can be used to fill in the custom field value in the app.
 
 ```
-[ExtensionOf(classStr(TsTimesheetEntry))]
 ...
+[ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
 {
     protected List buildCustomFieldListForEntry(TSTimesheetTrans _tsTimesheetTrans)
