@@ -328,7 +328,7 @@ Below is a screenshot from the mobile app of a user viewing a timesheet. The "Mo
 
 
 
-A screenshot from the mobile appl showing the “More” section of a timesheet. A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section. A read-only value of "0.667" is set on the custom field.
+Below is a screenshot from the mobile app showing the “More” section of a timesheet. A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section. A read-only value of "0.667" is set on the custom field.
 
 ![More field](media/4699048932d914c27e264bdb95cf514a.jpg)
 
