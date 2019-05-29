@@ -49,8 +49,8 @@ This topic is intended for developers who are integrating their custom fields in
 
 The **TSTimesheetCustomField** class is the X++ data contract class that represents information about a custom field for timesheet functionality. Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.
 
-- **TSTimesheetDetails** -\> The timesheet header contract.
-- **TSTimesheetEntry** -\> The timesheet transaction contract. Groups of these objects that have the same project information and **timesheetLineRecId** value constitute a line.
+- **TSTimesheetDetails** - The timesheet header contract.
+- **TSTimesheetEntry** - The timesheet transaction contract. Groups of these objects that have the same project information and **timesheetLineRecId** value constitute a line.
 
 ### fieldBaseType (Types)
 
