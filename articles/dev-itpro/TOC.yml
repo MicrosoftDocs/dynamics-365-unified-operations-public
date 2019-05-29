@@ -896,7 +896,7 @@
       href: financial/dimensionable-entities.md
     - name: Add lookup values for financial dimensions to Excel templates
       href: financial/add-dimensions-excel-templates.md
-    - name: CustTrans::settleTransact is obsolete
+    - name: Settle transactions using CustTrans::settleTransaction
       href: financial/settletransact-obsolete.md
   - name: Segmented entry control
     items: 
