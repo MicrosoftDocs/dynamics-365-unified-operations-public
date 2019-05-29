@@ -197,6 +197,8 @@ The Unified Operations (Mobile Client) app facilitates user authentication with 
 - Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
 - Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
 
+If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
+
 ### Trouble signing out of the app and signing in with new credentials
 If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
 - To sign out of the app, follow these steps:
