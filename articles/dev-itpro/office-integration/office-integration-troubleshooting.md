@@ -126,7 +126,7 @@ In case a change back to Office Store is needed, the standard values are:
 
 If you encounter issues with Centralized Deployment for some users, it could be one of these problems:
 -	One or more users are members in a group that is more restrictive than others
--	The user referenced is on a different O365 account (such as a personal account)
+-	The user referenced is on a different Office 365 account (such as a personal account)
 
 ## Troubleshooting issues
 
