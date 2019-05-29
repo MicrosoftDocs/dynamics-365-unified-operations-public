@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 05/03/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
