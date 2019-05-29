@@ -46,6 +46,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.3 
+
+### France: FEC Accounting data export in XML
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced by TXT format **French FEC audit file** available through General ledger / Periodic tasks / Data export
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | General ledger |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Target timeframe for the functionality to be removed is July 2020. |
+
 
 ## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
 
