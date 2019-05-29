@@ -257,7 +257,7 @@ final class TSTimesheetEntryService_Extension
         _tsTimesheetEntry);
         if (!ret)
         {
-            *// Loop through custom fields to see if value needs updating*
+            */ Loop through custom fields to see if value needs updating*/
             ListEnumerator enumerator =  _tsTimesheetEntry.parmCustomFields().getEnumerator();
             while (enumerator.moveNext())
             {
@@ -265,7 +265,7 @@ final class TSTimesheetEntryService_Extension
                 if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
                 fieldNum(TSTimesheetLine, TestLineString)))
                 {
-                    *// If Custom field value for TestLineString field has changed, We need to update the timesheet line.*
+                    */ If Custom field value for TestLineString field has changed, We need to update the timesheet line.*/
                     if (_tsTimesheetLine.TestLineString != customField.parmStringValue())
                     {
                         ret = true;
@@ -340,7 +340,7 @@ final class TSTimesheetSettings_Extension
         List customFieldList = next buildCustomFieldList();
         TSTimesheetCustomField tsTimesheetCustomField;
 
-        *// Computed utilization rate*
+        */ Computed utilization rate*/
         tsTimesheetCustomField = new TSTimesheetCustomField();
         tsTimesheetCustomField.parmFieldBaseType(Types::Real);
         tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
@@ -370,7 +370,7 @@ final class TSTimesheetDetails_Extension
         List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
         TSTimesheetCustomField tsTimesheetCustomField;
 
-        *// Computed utilization rate*
+        */ Computed utilization rate*/
         tsTimesheetCustomField = new TSTimesheetCustomField();
         tsTimesheetCustomField.parmFieldBaseType(Types::Real);
         tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
