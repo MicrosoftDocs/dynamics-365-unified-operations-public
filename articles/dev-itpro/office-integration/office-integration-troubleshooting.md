@@ -109,7 +109,12 @@ For all environments, including on-premises, the Excel and Word Add-ins, and the
 
 Yes, Centralized Deployment is supported. For more information, see [Centralized Deployment](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment). 
 
-The important standard values on the **App parameters** tab on the **Office App Parameters** page are:
+To use Centralized Deployment, on the **App parameters** tab on the **Office App Parameters** page change the App Id, Store, and Store Type:
+- App ID: "61bcc63f-b860-4280-8280-3e4fb5ea7726"
+- Store: "EXCatalog"
+- Store Type: "Centralized Deployment"
+
+In case a change back to Office Store is needed, the standard values are:
 - App ID: "WA104379629"
 - Store: "en-US"
 - Store Type: "Office Store"
@@ -118,7 +123,9 @@ The important standard values on the **App parameters** tab on the **Office App 
 >- **Name**, **Version**, and **Notes** are values that provide information but they are not needed to run the Excel Add-in.
 >- These same values are also used for the Word Add-in when it is run from the Document Templates form.
 
-To use Centralized Deployment, change the **Store Type** to "Centralized Deployment" and **Store** to "EXCatalog".
+If you encounter trouble with Centralized Deployment for some users, it could be one of these problems:
+-	One or two users are members in a group that is more restrictive than others
+-	The user referenced is on a completely different O365 account (like a personal one)
 
 ## Troubleshooting issues
 
