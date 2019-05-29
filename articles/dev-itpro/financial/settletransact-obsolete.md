@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: CustTrans::settleTransact is obsolete
-description: Describes why this method is obsolete and what method to use for development going forward.
+title: Settle transactions using CustTrans::settleTransaction
+description: This topics describes the new CustTrans::settleTransaction method and explains why CustTrans::settleTransact is now obsolete.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/01/2019
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 10.0.4
 
 ---
 
-# CustTrans::settleTransact is obsolete
+# Settle transactions using CustTrans::settleTransaction
 
-## Obsolete method
+## CustTrans::settleTransact is obsolete
 The **settleTransact** method on the **CustTrans** table has been marked as obsolete.
 
 ```X++
