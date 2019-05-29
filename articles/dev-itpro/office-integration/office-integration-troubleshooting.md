@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -109,16 +109,24 @@ For all environments, including on-premises, the Excel and Word Add-ins, and the
 
 Yes, Centralized Deployment is supported. For more information, see [Centralized Deployment](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment). 
 
-The important standard values on the **App parameters** tab on the **Office App Parameters** page are:
-- App ID: "WA104379629"
-- Store: "en-US"
-- Store Type: "Office Store"
+To use Centralized Deployment, on the **App parameters** tab on the **Office App Parameters** page change the **App ID**, **Store**, and **Store Type**:
+
+- **App ID**: 61bcc63f-b860-4280-8280-3e4fb5ea7726
+- **Store**: EXCatalog
+- **Store Type**: Centralized Deployment
+
+In case a change back to Office Store is needed, the standard values are:
+- **App ID**: WA104379629
+- **Store**: en-US
+- **Store Type**: Office Store
 
 > [!NOTE]
 >- **Name**, **Version**, and **Notes** are values that provide information but they are not needed to run the Excel Add-in.
 >- These same values are also used for the Word Add-in when it is run from the Document Templates form.
 
-To use Centralized Deployment, change the **Store Type** to "Centralized Deployment" and **Store** to "EXCatalog".
+If you encounter issues with Centralized Deployment for some users, it could be one of these problems:
+-	One or more users are members in a group that is more restrictive than others
+-	The user referenced is on a different Office 365 account (such as a personal account)
 
 ## Troubleshooting issues
 
