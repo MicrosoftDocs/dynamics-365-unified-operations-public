@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Settle transactions using CustTrans::settleTransaction
+title: Settle transactions by using CustTrans::settleTransaction
 description: This topics describes the new CustTrans::settleTransaction method and explains why CustTrans::settleTransact is now obsolete.
 author: RobinARH
 manager: AnnBe
@@ -30,29 +30,34 @@ ms.dyn365.ops.version: AX 10.0.4
 
 ---
 
-# Settle transactions using CustTrans::settleTransaction
+# Settle transactions by using CustTrans::settleTransaction
+
+[!include [banner](../includes/banner.md)]
 
 ## CustTrans::settleTransact is obsolete
-The **settleTransact** method on the **CustTrans** table has been marked as obsolete.
+
+The **settleTransact** method on the CustTrans table has been marked as obsolete.
 
 ```X++
 public static boolean settleTransact(
 CustTable _custTable,
-        LedgerVoucher _ledgerVoucher = null,
-        boolean _balancePostingProfile = true,
-        SettleDatePrinc _saveDatePrinciple = SettleDatePrinc::DateOfPayment,
-        TransDate _saveDate = dateNull()
-        ,DimSettlementType_RU _dimSettlementType = DimSettlementType_RU::None
-        ,CustTrans _parentCustTrans = null)
+    LedgerVoucher _ledgerVoucher = null,
+    boolean _balancePostingProfile = true,
+    SettleDatePrinc _saveDatePrinciple = SettleDatePrinc::DateOfPayment,
+    TransDate _saveDate = dateNull()
+    ,DimSettlementType_RU _dimSettlementType = DimSettlementType_RU::None
+    ,CustTrans _parentCustTrans = null)
 ```
 
 ### Why is it marked as obsolete?
-When many settlements are being performed at the same time for the same customer, there is database blocking. Database blocking impacts performance.
+
+When many settlements are done at the same time for the same customer, database blocking occurs. Database blocking affects performance.
 
 ### What does the method do?
-The **settleTransact** settles a set of invoices and payments for a given customer. Settlement identifies this set using the the **SpecCompany**, **SpecTableId**, and **SpecRecId** columns of the **SpecTrans** table. Together, the columns define a settlement context.  
 
-The **\_custTable** parameter of the **settleTransact** method defines the settlement context as the CustTable DataAreaId, TableId, and RecId. The following example shows two contexts.
+The **settleTransact** method settles a set of invoices and payments for a specific customer. Settlement identifies this set of invoices by using the **SpecCompany**, **SpecTableId**, and **SpecRecId** columns of the SpecTrans table. Together, the columns define a settlement context.
+
+The **\_custTable** parameter of the **settleTransact** method defines the settlement context as the CustTable **DataAreaId**, **TableId**, and **RecId** values. The following example shows two contexts.
 
 | SpecCompany | SpecTableId | SpecRecId | Transaction |
 |---|---|---|---|
@@ -60,7 +65,8 @@ The **\_custTable** parameter of the **settleTransact** method defines the settl
 | USMF | 7589 | 22565451428 | 2 |
 
 ## Replacement method
-The **settleTransaction** method on the **CustTrans** table is the replacement method.
+
+The **settleTransaction** method on the CustTrans table is the replacement method.
 
 ```X++
 public static boolean settleTransaction(
@@ -69,34 +75,37 @@ public static boolean settleTransaction(
 ```
 
 ### How blocking will be avoided
-Each customer settlement will get a unique settlement context.  Because each settlement will be done with a unique context, each transaction will not block.  The following example shows two contexts. Each context has a unique **SpecRecId**.
+
+Every customer settlement will get a unique settlement context. Because each settlement that is done will have a unique context, no transaction will cause blocking.  The following example shows two contexts. Each context has a unique **SpecRecId** value.
 
 | SpecCompany | SpecTableId | SpecRecId | Transaction |
 |---|---|---|---|
-|USMF | 7599 | 68719604825 | 1 |
-|USMF | 7599 | 68719604826 | 2 |
+| USMF | 7599 | 68719604825 | 1 |
+| USMF | 7599 | 68719604826 | 2 |
 	
 ### Replacement method parameters
-The **SpecTransExecutionContext** class defines a unique settlement execution context. It contains two parts. First, it defines the customer or vendor for the settlement. Second, it defines the source for the settlement. 
 
-+ The **newFromSource** method takes a customer or vendor and a source. The customer or vendor is always the customer and the source is always the customer. 
+The **SpecTransExecutionContext** class defines a unique settlement execution context. It has two parts. The first part defines the customer or vendor for the settlement. The second part defines the source for the settlement.
 
-```X++
-public static SpecTransExecutionContext newFromSource(
-    CustVendTable _custVendTable, 
-    Common _source = _custVendTable)
-```
++ The **newFromSource** method takes a customer or vendor and a source. The customer or vendor is always the customer, and the source is always the customer.
 
-+ The **parmSpecContext** method exposes the generated settlement context.
+    ```X++
+    public static SpecTransExecutionContext newFromSource(
+        CustVendTable _custVendTable, 
+        Common _source = _custVendTable)
+    ```
 
-```X++
-public Common parmSpecContext()
-```
++ The **parmSpecContext** method exposes the settlement context that is generated.
+
+    ```X++
+    public Common parmSpecContext()
+    ```
 
 **CustTransSettleTransactionParamters** contains the other method parameters. It has a constructor method that initializes the class with default values. An example is **LedgerVoucher**.
 
-### How to use the **settleTransaction** method
-Settlement is done in two parts. First, mark the invoices and payments for settlement.  Then, perform the settlement.    
+### How to use the settleTransaction method
+
+Settlement is done in two parts. First, you mark the invoices and payments for settlement. Then you do the settlement.
 
 #### Obsolete code example
 
@@ -123,11 +132,12 @@ specTransManager.insert(…) //Payment(s)
 
 //Settle
 CustTrans::settleTransaction(
-    specTransExecutionContext, 
+    specTransExecutionContext,
     CustTransSettleTransactionParameters::construct());
 ```
 
 ### Testing
-This functionality uses flights. You must enable the flight in a non-production environment to test it. To understand how to enable a flight in a non-production environment, read [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
 
-The flight name is **EnableCustTransSettleTransaction**.
+This functionality uses flights. To test it, you must turn on the flight in a non-production environment. For information about how to turn on a flight in a non-production environment, see [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
+
+The name of the flight is **EnableCustTransSettleTransaction**.
