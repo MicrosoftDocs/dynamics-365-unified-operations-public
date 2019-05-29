@@ -72,7 +72,7 @@ The **FieldBaseType** property on the **TsTimesheetCustom** object determines th
 
 - If the **stringOptions** property is provided on the **TSTimesheetCustomField** object, those list elements are the only values that users can select by using option buttons (radio buttons).
 
-    In this case, the string field can act as an enum value for the purpose of user entry. To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the information later in this topic).
+    In this case, the string field can act as an enum value for the purpose of user entry. To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).
 
 ### fieldExtendedType (TSCustomFieldExtendedType)
 
@@ -114,7 +114,7 @@ This property specifies the label that is shown next the field in the app.
 
 ### stringOptions (List of Strings)
 
-This property is applicable only when **fieldBaseType** is set to **String**. If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list. If no strings are provided, free-text entry in the string field is allowed (see the example later in this topic).
+This property is applicable only when **fieldBaseType** is set to **String**. If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list. If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).
 
 ### stringLength (int)
 
@@ -158,19 +158,29 @@ For fields of the **Date** type, this property passes the date value of the fiel
 
 ## Show and save a custom field in the timesheet entry section
 
+Below is a screenshot from the mobile app of a timesheet entry creation. It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.
+
 ![Test string custom field in the app](media/967f517136dd0ae7b80ed002895f6141.jpg)
 
+
+
+Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.  The two options are "First option" and "Second option" shown as radio buttons. The second option is currently selected.
+
 ![Option buttons (radio buttons) for the Test string custom field](media/a7c137fdd47b4a0b7ab2ce436bf09fe9.jpg)
+
+
 
 ### Extend the TSTimesheetLine table so that it has a custom field
 
 In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table. However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).
 
-Note that custom fields don't have to have any backing database records. They can be dynamically generated based on X++ logic. This approach can be useful in read-only scenarios. (See the timesheet header section for an example.)
+Note that custom fields don't have to have any backing database records. They can be dynamically generated based on X++ logic. This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)
+
+Below is a screenshot from Visual Studio of the Application Object Tree. It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.
 
 ![Line string](media/b6756b4a3fc5298093327a088a7710fd.png)
 
-### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to show a field in the timesheet entry section
+### Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the timesheet entry section
 
 This code controls the display settings for the field in the app. For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.
 
@@ -203,7 +213,7 @@ final class TSTimesheetSettings_Extension
 ...
 ```
 
-### Use chain of command on the TSTimesheetEntry class, buildCustomFieldListForEntry method to enter values in a timesheet entry
+### Use chain of command on the buildCustomFieldListForEntry method of the TSTimesheetEntry class to enter values in a timesheet entry
 
 The **buildCustomFieldListForEntry** method is used to enter values on the saved timesheet lines in the mobile app. It takes a TSTimesheetTrans record as a parameter. Fields from that record can be used to fill in the custom field value in the app.
 
@@ -312,9 +322,17 @@ final class TSTimesheetEntryService_Extension
 
 ## Show a custom field in the timesheet header section
 
+Below is a screenshot from the mobile app of a user viewing a timesheet. The "More information" button has been selected in the upper-right corner to show the "View more details" option.  
+
 ![View more details command](media/ec64aa4ad40cb5e4cc88afe170b81085.png)
 
+
+
+A screenshot from the mobile appl showing the “More” section of a timesheet. A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section. A read-only value of "0.667" is set on the custom field.
+
 ![More field](media/4699048932d914c27e264bdb95cf514a.jpg)
+
+
 
 ### Extend the TSTimesheetTable table so that it has a custom field
 
@@ -324,7 +342,7 @@ Note that custom fields don't have to have any backing database records. They ca
 
 Fields in the header section are always read-only in the app.
 
-### Use chain of command on the TSTimesheetSettings class, buildCustomFieldList method to show a field in the header section
+### Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the header section
 
 This code controls the display settings for the field in the app. For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.
 
@@ -355,9 +373,10 @@ final class TSTimesheetSettings_Extension
 ...
 ```
 
-### Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details
+### Use chain of command on the buildCustomFieldListForHeader method of the TSTimesheetDetails class to fill in timesheet details
 
-The **buildCustomFieldListForHeader** method is used to fill in the timesheet header details in the mobile app. It takes a TSTimesheetTable record as a parameter. Fields from that record can be used to fill in the custom field value in the app. The following example doesn't read any values from the database. Instead, it generates a computed value to show by using X++ logic.
+The **buildCustomFieldListForHeader** method is used to fill in the timesheet header details in the mobile app. It takes a TSTimesheetTable record as a parameter. Fields from that record can be used to fill in the custom field value in the app. The following example doesn't read any values from the database. Instead, it uses X++ logic to generate a computed value that is then shown in the app.
+
 
 ```
 ...
@@ -396,7 +415,7 @@ final class TSTimesheetDetails_Extension
 
 ### Adding additional validation for the app
 
-Existing logic for timesheet functionality at the database level will still work as expected. Interrupt the completion of the save/submit operation with a more specific error message, 'throw error("message to user")', which can be added to the code. Here are three examples of useful extensible methods:
+Existing logic for timesheet functionality at the database level will still work as expected. To interrupt the completion of save or submit operations and show a specific error message, you can add **throw error("message to user")** to the code via a chain of command extension. Here are three examples of useful extensible methods:
 
 - If **validateWrite** on the TSTimesheetLine table returns **false** during a save operation for a timesheet line, an error message is shown in the mobile app.
 - If **validateSubmit** on the TSTimesheetTable table returns **false** during timesheet submission in the app, an error message is shown to the user.
@@ -416,6 +435,6 @@ The activities that are available for selection for a project are filled in via 
 
 Entry of a default project category on timesheet entries occurs at three levels. You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior. The following hierarchy is used:
 
-1. The app tries to put the default category from the project resource. This is set in the **getCurrentUserResource** and **getDelegatedResourcesForCurrentUser** methods in the **TSTimesheetSettingsService** class.
-2. If the default category isn't provided at the project resource level, the app tries to pull it from the project activity. This is set in the **getActivitiesForProject** method in the **TSTimesheetProjectService** class.
-3. If the default category isn't provided at the project activity level, the default category it taken from the project parameters. This is set in the **getProjectDetailsbyRule** method in the **TSTimesheetProjectService** class.
+1. The app tries to put the default category from the project resource. This default category is set in the **getCurrentUserResource** and **getDelegatedResourcesForCurrentUser** methods in the **TSTimesheetSettingsService** class.
+2. If the default category isn't provided at the project resource level, the app tries to pull it from the project activity. This default category is set in the **getActivitiesForProject** method in the **TSTimesheetProjectService** class.
+3. If the default category isn't provided at the project activity level, the default category it taken from the project parameters. This default category is set in the **getProjectDetailsbyRule** method in the **TSTimesheetProjectService** class.
