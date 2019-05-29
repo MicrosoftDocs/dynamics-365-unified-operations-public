@@ -5,7 +5,7 @@ title: Implement custom fields for the Microsoft Dynamics 365 Project Timesheet 
 description: This topic provides common patterns for using extensions to implement custom fields.
 author: KimANelson
 manager: AnnBe
-ms.date: 05/28/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,7 +26,7 @@ ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
-ms.search.validFrom: 2019-05-28
+ms.search.validFrom: 2019-05-29
 
 ---
 
@@ -212,10 +212,10 @@ The **buildCustomFieldListForEntry** method is used to enter values on the saved
 ...
 final class TsTimesheetEntry_Extension
 {
-    protected List buildCustomFieldListForEntry(TSTimesheetTrans \_tsTimesheetTrans)
+    protected List buildCustomFieldListForEntry(TSTimesheetTrans _tsTimesheetTrans)
     {
         List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
-        TSTimesheetLine tsTimesheetLine = \_tsTimesheetTrans.timesheetLine();
+        TSTimesheetLine tsTimesheetLine = _tsTimesheetTrans.timesheetLine();
         TSTimesheetCustomField tsTimesheetCustomField;
         tsTimesheetCustomField =
         TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
@@ -250,15 +250,15 @@ To save a custom field back to the database in typical usage, you must extend mu
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
 {
-    protected boolean timesheetLineNeedsUpdating(TSTimesheetLine \_tsTimesheetLine,
-    TsTimesheetEntry \_tsTimesheetEntry)
+    protected boolean timesheetLineNeedsUpdating(TSTimesheetLine _tsTimesheetLine,
+    TsTimesheetEntry _tsTimesheetEntry)
     {
         boolean ret = next timesheetLineNeedsUpdating(_tsTimesheetLine,
-        \_tsTimesheetEntry);
+        _tsTimesheetEntry);
         if (!ret)
         {
             *// Loop through custom fields to see if value needs updating*
-            ListEnumerator enumerator =  \_tsTimesheetEntry.parmCustomFields().getEnumerator();
+            ListEnumerator enumerator =  _tsTimesheetEntry.parmCustomFields().getEnumerator();
             while (enumerator.moveNext())
             {
                 TSTimesheetCustomField customField = enumerator.current();
@@ -276,33 +276,33 @@ final class TSTimesheetEntryService_Extension
         return ret;
     }
     protected void populateTimesheetLineFromEntryDuringCreate(TSTimesheetLine
-    \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
+    _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
     {
         next populateTimesheetLineFromEntryDuringCreate(_tsTimesheetLine,
-        \_tsTimesheetEntry);
+        _tsTimesheetEntry);
         this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
-        \_tsTimesheetEntry);
+        _tsTimesheetEntry);
         }
         protected void populateTimesheetLineFromEntryDuringUpdate(TSTimesheetLine
-        \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
+        \_tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
         {
             next populateTimesheetLineFromEntryDuringUpdate(_tsTimesheetLine,
-            \_tsTimesheetEntry);
+            _tsTimesheetEntry);
             this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
-            \_tsTimesheetEntry);
+            _tsTimesheetEntry);
         }
         private void populateTimesheetLineFromCustomFields(TSTimesheetLine
-        \_tsTimesheetLine, TSTimesheetEntry \_tsTimesheetEntry)
+        _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
         {
             ListEnumerator enumerator =
-            \_tsTimesheetEntry.parmCustomFields().getEnumerator();
+            _tsTimesheetEntry.parmCustomFields().getEnumerator();
             while (enumerator.moveNext())
             {
                 TSTimesheetCustomField customField = enumerator.current();
                 if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
                 fieldNum(TSTimesheetLine, TestLineString)))
                 {
-                    \_tsTimesheetLine.TestLineString = customField.parmStringValue();
+                    _tsTimesheetLine.TestLineString = customField.parmStringValue();
                 }
             }
         }
@@ -365,7 +365,7 @@ The **buildCustomFieldListForHeader** method is used to fill in the timesheet he
 final class TSTimesheetDetails_Extension
 {
     protected List buildCustomFieldListForHeader(TSTimesheetTable
-    \_tsTimesheetTable)
+    _tsTimesheetTable)
     {
         List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
         TSTimesheetCustomField tsTimesheetCustomField;
@@ -381,8 +381,8 @@ final class TSTimesheetDetails_Extension
         real utilizationRate = 0;
         if (_tsTimesheetTable.totalHours() != 0)
         {
-            utilizationRate = \_tsTimesheetTable.totalHoursBillable() /
-            \_tsTimesheetTable.totalHours();
+            utilizationRate = _tsTimesheetTable.totalHoursBillable() /
+            _tsTimesheetTable.totalHours();
         }
         tsTimesheetCustomField.parmRealValue(utilizationRate);
         customFieldList.addEnd(tsTimesheetCustomField);
