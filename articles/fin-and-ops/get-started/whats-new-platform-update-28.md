@@ -45,8 +45,8 @@ Streamline the document viewing experience in Dynamics 365 for Finance & Operati
 ## Create custom commands for embedded PowerBI.com reports
 Turn insights into action using custom menu commands for chart visualizations displayed in PowerBI.com reports hosted in Application Workspaces for Dynamics 365 Finance & Operations. Empower users with intuitive gestures to perform business operations on filtered views of their report data. With the latest Platform Update, developers can add custom extensions that give end-users an actionable experience interacting with analytical solutions within F&O applications.
 
-## Feature name
-Description of feature and link to topic that has the details about the feature.
+## Export all companies BYOD job name changes
+The syntax of execution job name for BYOD export all companies job will now have a GUID appended to the naming convention. This will ensure that the names are always unique.
 
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
