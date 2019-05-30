@@ -64,6 +64,15 @@ For more information, see [Expense reports re-imagined](https://go.microsoft.com
 
 In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3](../../dev-itpro/extensibility/extensibility-changes-10-3.md).
 
+## Tax engine
+
+> [!NOTE]
+> The tax engine (GTE) is currently only available for India.
+
+### Calculate tax in accounting currency for Import/Export Order
+
+In this release of Finance and Operations, a new parameter is added into *Tax setup parameters* form, which allow user to choose based on which currency the tax should be calculated for Import/Export Order. By default, it's *Transaction currency* which is the same as the original system behavior. If user choose *Accounting currency*, system will calculate the tax based on the *Assessable value in accounting currency* to calculate the tax.
+
 ## Additional resources
 
 ### Bug fixes
