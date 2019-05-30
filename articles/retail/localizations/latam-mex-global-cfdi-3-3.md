@@ -52,11 +52,11 @@ User should complete the steps listed below to get a Global CFDI electronic invo
 
   2. Close shift on POS.
 
-  2. Run P-job in the disctribution schedule to transfer retail transactions from the channel database to the Retail Headquarters.
+  3. Run P-job in the disctribution schedule to transfer retail transactions from the channel database to the Retail Headquarters.
 
-  3. Calculate and post a retail statement following the instructions provided in the [Create, calculate, and post a statement for a retail store](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store) topic.
+  4. Calculate and post a retail statement following the instructions provided in the [Create, calculate, and post a statement for a retail store](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store) topic.
 
-  4. Run the **Post CFDI – Electronic invoices** periodic operation to create Global CFDI electronic invoices based on a posted retail statement. User can select a statement number for this periodic operation. If a statement number was not selected, the system will create Global CFDI electronic invoices for all posted retail statements, that haven't been processed yet. 
+  5. Run the **Post CFDI – Electronic invoices** periodic operation to create Global CFDI electronic invoices based on a posted retail statement. User can select a statement number for this periodic operation. If a statement number was not selected, the system will create Global CFDI electronic invoices for all posted retail statements, that haven't been processed yet. 
   
   As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices will be created - one of them collects all receipts related to sales operations, and the other - all receipts related to returns. An electronic invoice, which is related to returns, has the **Return** attribute marked as **Yes**. 
   
@@ -64,7 +64,7 @@ User should complete the steps listed below to get a Global CFDI electronic invo
 
   All further workflow including communication with a service provider, printing form output and manual functions are the same as for the CFDI Normal electronic invoices.
 
-  5. Run the **Export/import electronic invoice process** periodic operation to submit electonic invoices to PAC.
+  6. Run the **Export/import electronic invoice process** periodic operation to submit electonic invoices to PAC.
 
 ## Updates for the Global CFDI functionality
 
