@@ -48,6 +48,9 @@ Turn insights into action using custom menu commands for chart visualizations di
 ## Extended availability of the legacy navigation bar
 In Platform update 24, a restyled navigation bar was introduced for Finance and Operations as part of an effort across the Dynamics 365 product to align to the Office header visuals, which notably did not include a breadcrumb. At that time, the legacy navigation bar was put on an expedited deprecation schedule (to not be available after Platform update 28) because of the branding impact. Due to customer feedback on the breadcrumb, we have decided to extend access to the legacy navigation bar until April 2020. 
 
+## Prompt users before sessions end due to inactivity
+The idle timeout for Finance and Operations is currently defaulted at 60 minutes. After that inactivity limit has been surpassed by a user, the user is alerted that their session has been terminated. To provide users with additional awareness of an impending session suspension due to inactivity and to avoid losing any unsaved changes, users will now be notified 3 minutes before their sessions are set to be terminated due to inactivity and given an opportunity to reconnect before the session is ended.   
+
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
 
