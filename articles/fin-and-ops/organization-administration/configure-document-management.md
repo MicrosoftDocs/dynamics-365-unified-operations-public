@@ -147,3 +147,27 @@ If an attachment stored in Azure Blob Storage is accidentally deleted, it cannot
 ### Is the database information about attachments stored separately from the attachments themselves?
 
 Record attachment information is stored in the DocuRef and DocuView tables. The DocuRef table is the record that represents the attachment. The DocuRef record points to the record being attached to and to a DocuView record. The DocuView record points to the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.
+
+### Can attachments be stored in the database?
+
+No. Attachments are stored in Azure blob storage by default.
+
+### What are the key differences between Azure blob storage and Database storage?
+
+Database storage is Azure SQL. File storage is Azure blob storage. Azure blob storage is simpler and much cheaper.
+
+### How much storage we get for the Azure blob storage?
+
+That detail is in the [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf), but it is currently 40 GB.
+
+### What is the cost for the additional storage?
+
+It varies, but the cost for the additional storage is similar to the [standard Azure costs for storage](https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/), so about $0.05 per GB.
+
+### How can we found out how much storage we already used?
+
+There are proactive communications when database and file storage limits are approached, but LCS provides some information and support requests can be logged for additional information. 
+
+### Is there an option to export all document attachments from the system?
+
+Attachments could be exported, but that is not a standard capability since there isn't a standard attachment entity. Entities that provide attachments for a certain business document/record need to be built.
