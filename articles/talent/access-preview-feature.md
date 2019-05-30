@@ -43,7 +43,7 @@ This topic describes how an administrator can enable preview features, and it li
 To access preview features, you must first enable them in your environment. The action of enabling or disabling preview features is environment-specific.
 
 > [!IMPORTANT]
-> By turning on the **Preview Features** setting, you enable preview features for all users in your organization who are in that environment. By turning off the setting, you disable preview features and make them inaccessible to your users. Preview features have limited support in Talent. They might use fewer privacy and security measures, and they aren't included in the Talent service level agreement. You should not use preview features to process personal data (that is, any information that could identify you), or to process other data that is subject to legal or regulatory compliance requirements.
+> When you turn on the **Preview Features** setting, you enable preview features for all users in your organization who are in that environment. When you turn off the setting, you disable preview features and make them inaccessible to your users. Preview features have limited support in Talent. They might use fewer privacy and security measures, and they aren't included in the Talent service level agreement. You shouldn't use preview features to process personal data (that is, any information that could identify you), or to process other data that's subject to legal or regulatory compliance requirements.
 
 ### Attract
 
@@ -99,8 +99,6 @@ There are no preview features available for Onboard at this time.
 
 - [Silver medalist](./whats-new-talent-march-20.md#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – You can designate candidates who are a great fit for your organization but who you didn't extend an offer to for your current position as silver medalists. This helps reduce your time to hire the next time you have a similar position available.
 
-
-
 ### Core HR
 
 - [Validate position hierarchy data](./whats-new-talent-may-13-2019.md#new-page-to-validate-position-hierarchy-data) – Validate the managerial hierarchy for circular references that might have been imported inadvertently.
@@ -110,7 +108,6 @@ There are no preview features available for Onboard at this time.
 - [Require reason codes on time-off requests](./whats-new-talent-may-13-2019.md#require-reason-codes-for-specific-leave-types-on-time-off-requests) – In addition to specifying reason codes for leave types, you can require reason codes for time-off requests.
 
 - [Provide a leave and absence transaction list for HR](./whats-new-talent-may-13-2019.md#provide-a-leave-and-absence-transaction-list-for-hr) – You can view a list of leave and absence transactions to help provide insights into time-off balances.
-
 
 ### Onboard
 
@@ -123,7 +120,7 @@ We want to hear from you about your experience with any of these preview feature
 - [Community](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – This site is a great resource where users can discuss use cases, ask questions, and get community help.
 
 - Let us know about features that you want to see in the product, or let us know about any changes you think we should make to existing features. Suggest product ideas on the following sites:
-
+<p></p>
     - [Attract ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Core HR ideas](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
     - [Onboard ideas](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)
