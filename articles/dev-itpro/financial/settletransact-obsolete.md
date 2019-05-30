@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 10.0.4
 # Settle transactions by using CustTrans::settleTransaction
 
 [!include [banner](../includes/banner.md)]
+
 [!include [banner](../includes/preview-banner.md)]
 
 ## CustTrans::settleTransact is obsolete
