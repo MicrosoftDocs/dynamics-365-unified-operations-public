@@ -5,7 +5,7 @@ title: Access preview features in Microsoft Dynamics 365 for Talent
 description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 for Talent, and it lists the features that are currently enabled for preview.
 author: tracykeya
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 05/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 
 As part of our continuous rollout of human capital management (HCM) capabilities for Microsoft Dynamics 365 for Talent, we want to let customers experience new features as soon as possible. Administrators can see and use preview features in their environments. These features are almost ready for general availability and have gone through extensive testing. We're just looking for a final round of customer feedback and validation before we release them for general availability.
 
-This topic describes how an administrator can enable preview features, and it lists the features that are currently available for preview. This list will be updated as features are released to general availability and as new features are released to preview. No notification is given when new features are released to preview. Users will just start to see the features.
+This topic describes how you can enable preview features, and it lists the features that are currently available for preview. This list will be updated as features are released to general availability and as new features are released to preview. No notification is given when new features are released to preview. Users will just start to see the features. For more information about new features in Talent, see [What's new or changed in Dynamics 365 for Talent](./whats-new.md) and [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes).
 
 ## Enable or disable preview features
 
-To access preview features, you must first enable them in your environment. The action of enabling or disabling preview features is environment-specific.
+To access preview features, you must first enable them in your environment. Enabling or disabling preview features is environment-specific.
 
 > [!IMPORTANT]
 > When you turn on the **Preview Features** setting, you enable preview features for all users in your organization who are in that environment. When you turn off the setting, you disable preview features and make them inaccessible to your users. Preview features have limited support in Talent. They might use fewer privacy and security measures, and they aren't included in the Talent service level agreement. You shouldn't use preview features to process personal data (that is, any information that could identify you), or to process other data that's subject to legal or regulatory compliance requirements.
