@@ -50,11 +50,6 @@ Bank foreign currency revaluation was released in version 10.0.2 and it included
 
 For more information, see [Bank foreign currency revaluation](https://go.microsoft.com/fwlink/?linkid=2079802).
 
-## Set up interest distribution for cash accounts
-Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
-
-For more information, see [Interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607).
-
 ## Expense reports re-imagined
 Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. You can enable this functionality in feature management to add a new setup form to configure expense fields visibility to determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is enabled with this feature, replacing the previous expense workspace and is the landing page for the improved entry experience. 
 
