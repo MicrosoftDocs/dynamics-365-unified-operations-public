@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (May 28, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 5/28/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (May 28, 2019)"
+# What's new or changed in Dynamics 365 for Talent (May 28, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -55,17 +55,17 @@ Changes described in this section apply to build number 8.1.2319.
 In this week's release, the following Common Data Service entities now support custom fields: Benefit calc rate detail, Work calendar holiday line, and Employment.
 
 ### Copy position now includes payroll details
-When using the 'Copy position' functionality and selecting all of the options to copy, the payroll details information is now included during the copy. 
+When you use **Copy position** and select all of the options, the payroll details information is now included in the copy. 
 
 ## In preview in Core HR
 
 ### Restrict the leave types in time off requests
 
-Organizations can offer many different types of leave to employees. Some of these leave types may not be appropriate for employees to submit time off for and are managed by HR instead. With this release, you can configure which leave types employees are allow to submit time off requests for. 
+Organizations can offer many different types of leave to employees. Some of these leave types might not be appropriate for employees to submit time off for and are managed by Human Resources (HR) instead. With this release, you can configure which leave types employees can submit time-off requests for. 
 
 ### New page to validate position hierarchy data
 
-Human resources (HR) and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
+HR and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
 
 ### Specify reason codes on leave types
 
