@@ -94,91 +94,111 @@ Net change generates planned orders to cover the requirements that were created 
 Net change minimized generates planned orders that cover only requirements created or changed since the last master planning scheduling run. Action dates and future dates are also updated only for new or changed requirements. This option is only available for dynamic plans. 
 
 
-## Scheduling method: Jobs scheduling vs operations scheduling
-For each of the plans, in the Master plans page, under the General tab you must choose the scheduling method that will be used for production orders. You can schedule production at the operation level and the job level:
-	- **Operations scheduling**: you can use operations scheduling to provide a general estimate of the production process over time. It doesn't explode the operations for the production route into jobs. You can read more about operations scheduling [here] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) 
-	- **Job scheduling**: it is a more detailed scheduling method where each operation is divided into its individual tasks or jobs. It includes information about capacity and it is typically used to schedule individual jobs on the shop floor for an immediate or short-term frame. You can read more about job scheduling [here]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling)
+## Types of scheduling methods
+
+For each of the plans, on the **Master plans** page, under the **General** tab, you must choose the scheduling method that will be used for production orders. You can schedule production at the operation level and the job level.
+
+### Operations scheduling
+You can use operations scheduling to provide a general estimate of the production process over time. Operations scheduling doesn't explode the operations for the production route into jobs. You can read more about operations scheduling [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+
+### Job scheduling
+Job scheduling is a more detailed scheduling method where each operation is divided into its individual tasks or jobs. Job scheduling includes information about capacity, and it is typically used to schedule individual jobs on the shop floor for an immediate or short-term frame. You can read more about job scheduling [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 
 ## Time fences in days
-For each of the plans, you can select how far in the future -the time fence-  requirements and other considerations must be calculated by master planning. It is recommended to adjust the time fences to your business requirements to get the best performance in master planning. You can find the time fences for each plan under the tab Time fences in the Master planning parameters page for each plan, found under Master planning > Setup > Plans > Master plans. 
+
+For each of the plans, you can select how far in the future (the "the time fence") requirements and other considerations must be calculated by master planning. It is recommended to adjust the time fences to your business requirements to get the best performance in master planning. You can find the time fences for each plan under the **Time fences** tab on the **Master planning parameters** page for each plan, under **Master planning > Setup > Plans > Master plans**. 
 
 > [!Note]
-> The time fence indicates how far in the future the different requirements and other considerations will be calculated by master planning. If you do not need to use the option you must set the option to "Yes" and then set the time fence to "0" days. 
+> The time fence indicates how far in the future the different requirements and other considerations will be calculated by master planning. If you do not need to use the option you must set the option to **Yes** and then set the time fence to "0" days. 
 
 ### Coverage
-It represents the scheduling period - how far out the demand should be included. In other words, it indicates what is your planning horizon. 
-You can select this option to override the coverage time fence for the item during master scheduling. If you select this option, enter the number of days that the master scheduling calculation should cover requirements. The coverage time fence is calculated forward from the current date. Requirements that occur before the current date are always processed.  
+Coverage represents the scheduling period, or how far out the demand should be included. In other words, it indicates what your planning horizon is. You can select this option to override the coverage time fence for the item during master scheduling. Enter the number of days that the master scheduling calculation should cover requirements. The coverage time fence is calculated forward from the current date. Requirements that occur before the current date are always processed.
+
 > ![Note]
-> It is recommended to adjust the coverage time fence to your planning horizon obtain the best performance from MRP. 
+> We recommend that you adjust the coverage time fence to your planning horizon to obtain the best performance from MRP. 
 
 ### Freeze
-It represents the period in which  existing planned orders are not changed when running a new master schedule - they are frozen- and no new planned orders will be suggested. 
-You can select this option to override the freeze time fence for the item during master scheduling. If you select this option, enter the number of days that planning activity is frozen. No new planned orders are generated and, existing planned orders cannot be changed.  
+Freeze represents the period in which existing planned orders are not changed when running a new master schedule. The planned orders are frozen and no new planned orders will be suggested. 
+
+You can select this option to override the freeze time fence for the item during master scheduling. If you select this option, enter the number of days that planning activity is frozen. Remember that during this time no new planned orders are generated and existing planned orders cannot be changed.  
 
 
 ### Firming
-It indicates the time horizon in which planned orders will be automatically converted into production and purchase orders, what is also known as "automatic firming of planned orders". 
+Firming indicates the time horizon in which planned orders will be automatically converted into production and purchase orders--also known as "automatic firming of planned orders". 
+
 You can select this option to override the firming time fence for the item during master scheduling. If you select this option, enter the number of days that planned purchase orders and planned production orders are automatically firmed. The firming time fence is calculated forward from the master scheduling date. An item must be associated with a vendor for automatic firming of a planned purchase order to occur.  
  
 
 ### Forecast plan
-It indicates how far in the future master planning will create planned orders for items with forecasted demand. 
+Forecast plan indicates how far in the future master planning will create planned orders for items with forecasted demand. 
+
 You can select this option to override the forecast plan time for the item during master scheduling. If you select this option, enter the number of days that the sales forecast from the forecast plan is included in master planning.  
  
 ### Capacity
-It indicates how far in the future the system will take into account the maximum capacity of your resources to schedule orders. In other words, the plan will schedule the production orders using the production route for the items and taking into account its resources and the maximum capacity of each of them. 
+Capacity indicates how far in the future the system will take into account the maximum capacity of your resources to schedule orders. In other words, the plan will schedule the production orders using the production route for the items and taking into account its resources and the maximum capacity of each of them. 
+
 You can select this option to override the capacity time fence for the item during master scheduling. If you select this option, enter the number of days that capacity is planned for planned production orders. Master scheduling uses the active production route for the item and schedules backward from the requirement date. If the requirement date for a planned production order is outside the capacity time fence, the lead time is determined by the delivery time of the item. The time fence is calculated forward from the current date.
 
 
 ### Action message
 Action messages are suggestions to optimize the supply plan by suggesting modifications to existing supply order such as advance/postpone orders and increase/decrease the order quantities. 
-Select this option to override the action message time fence for the item during master scheduling. If you select this option, enter the number of days that master scheduling generates action messages for requirements. The time fence is calculated forward for the current date.  You can read more about action messages here [include https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/action-messages]
+
+Select this option to override the action message time fence for the item during master scheduling. If you select this option, enter the number of days that master scheduling generates action messages for requirements. The time fence is calculated forward for the current date. You can read more about action messages [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > ![Note]
-> Calculating action messages leads to longer master planning runtime. If action messages are not analyzed and applied on a regular basis (daily, weekly, etc), consider disabling the calculation during the master plan run, by making sure the Action message time fence is 0 on the master plan you are running (Master planning > Setup > Plans > Master plans). Also make sure all the coverage groups have Action message setting disabled. 
+> Calculating action messages leads to longer master planning runtime. If action messages are not analyzed and applied on a regular basis (daily, weekly, etc), consider disabling the calculation during the master plan run by making sure the action message time fence is "0" on the master plan you are running (found on **Master planning > Setup > Plans > Master plans**). Also make sure all the coverage groups have action message setting disabled. 
 
 
 ### Calculated delays
 You can select how far in the future possible delays in planned orders will be detected and reported, and therefore, scheduling possible (delayed) delivery dates. 
+
 In case a planned order cannot be fulfilled for the requested date, it will be planned for earliest fulfillment date for a transaction (based on lead times, material and capacity availability).
 
 ### Approved requisitions time fence
-You can setup Master Planning to create planned orders for requisition demand. Then, when an approved requisition has a purpose of replenishment, master planning will automatically create a corresponding planned order to fulfill it. The replenishment method will be determined by the supply policies that have been setup for the items in your organization. After the replenishment requisition has been created and approved, no additional user action is required. 
-You must enable the option "Include requisitions" in the General tab in the Master plans page. 
+You can set up master planning to create planned orders for requisition demand. Then when an approved requisition has a purpose of replenishment, master planning will automatically create a corresponding planned order to fulfill it. The replenishment method will be determined by the supply policies that have been set up for the items in your organization. After the replenishment requisition has been created and approved, no additional user action is required. 
 
-With "Approved requisitions time fence" in the Delays tab under "Time fences" you can choose to override the time fence settings that are defined for the item. In the field, enter the number of days in the past during which demand from approved requisitions that have the replenishment purpose is included in master scheduling. For example, you can indicate that only unfulfilled, past-due demand from approved requisitions that were created in the last 10 days should be considered and planned for.  
+Enable the **Include requisitions** option on the **General** tab on the **Master plans** page. 
+
+By setting **Approved requisitions time fence** on the **Delays** tab under **Time fences**, you can choose to override the time fence settings that are defined for the item. Enter the number of days in the past during which demand from approved requisitions that have the replenishment purpose is included in master scheduling. For example, you can indicate that only unfulfilled, past-due demand from approved requisitions that were created in the last 10 days should be considered and planned for.  
 
 
 ### Sequencing
-Sequencing allows planned orders to be ordered out from sequencing attributes associated with the finished product. For example, it is often used for preparing production orders for packaging such as back boxes with pain in a sequence based on color and size. 
-In this option, you can select how far in the future the operations or jobs will be sequenced. Take into account that the longer the time fence is, the longer it will take for master planning to run. 
+Sequencing allows planned orders to be ordered out from sequencing attributes associated with the finished product. For example, it is often used for preparing production orders for packaging, such as back boxes in a sequence based on color and size. 
+
+With this option, you can select how far in the future the operations or jobs will be sequenced. Take into account that the longer the time fence is, the longer it will take for master planning to run. 
 
 ### Calculated delays
-Delays options make sure that the orders have feasible planned dates. Under Master planning > Setup > Plans > Master plans under the Delays tab, you can find the following options:
-	- Ensure that the planned orders are not created prior to master planning run date: you can set to yes to make sure orders cannot be scheduled for dates in the past. 
-	- Planned purchase orders - Add the calculated delay to the requirements
-	- Planned production orders - Add the calculated delay to the requirements
-	- Planned transfer orders - Add the calculated delay to the requirements
-	- Planned Kanban - Add the calculated delay to the requirements
-For each one of the **"Add the calculated delay to the requirements"** you must check or uncheck the option of adding the delay to the requirements. When adding the delays, the system will take into account the capacities of the resources and create feasible planned orders. Recalculating the planned order dates increases the MRP running time. Therefore, if you do not need to use the delays, uncheck this option.  
+Delays options ensure that the orders have feasible planned dates. On **Master planning > Setup > Plans > Master plans**, under the **Delays** tab, you can find the following options.
+
+- **Ensure that the planned orders are not created prior to master planning run date**: Set this to **Yes** to make sure orders cannot be scheduled for dates in the past. 
+- **Planned purchase orders**: Add the calculated delay to the requirements.
+- **Planned production orders**: Add the calculated delay to the requirements.
+- **Planned transfer orders**: Add the calculated delay to the requirements.
+- **Planned Kanban** - Add the calculated delay to the requirements.
+
+For each one of the "Add the calculated delay to the requirements", you must select or unselect the option of adding the delay to the requirements. When adding the delays, the system will take into account the capacities of the resources and create feasible planned orders. Recalculating the planned order dates increases the MRP running time, so if you do not need to use the delays, unselect this option.  
 
 
 ## Positive and negative days
-Positive and negative days are parameters that affect how master planning suggests planned orders. Positive and negative days are set on the item coverage group of the item. You can set the different coverage groups and its parameters in the Coverage groups page found under Master Planning > Setup > Coverage > Coverage groups. 
+Positive and negative days are parameters that affect how master planning suggests planned orders. Positive and negative days are set on the item coverage group of the item. You can set the different coverage groups and their parameters on the **Coverage groups** page  under **Master Planning > Setup > Coverage > Coverage groups**. 
 
 ### Positive days
-Positive days indicate how far in the future master planning will consider the current inventory or receipts to fulfill a future demand. For example, setting  positive days to 100 will indicate that the current inventory can be used to fulfill demand in the next 100 days. If there is an order in 150 days from today's date, master planning will create a planned order to satisfy that demand, even though the on-hand for the item could satisfy the order. 
-For example, for fast moving items with a short lead time, you may not want to use the on-hand for an order far in the future. The current on-hand will be fast gone and more orders can be placed in the future for a future demand on time as it has a short lead time. 
-The positive days will also impact the action messages. For example, the system could suggest to increase a planned purchase order to include a demand that is in the future within the positive days time. For example, in the case where we 100 positive days and demand of an item in 30 days from now, the system will create a planned order to satisfy that demand. If there was demand for the same item in 90 days from now, the system will suggest to increase the quantity of the order in 30 days from now to also cover the new demand (of 90 days from now). But if the demand for the item was in 150 days from now, the system will not suggest to increase the quantity of the order already planned, as a new planned order would be created. 
-As a general rule, the positive days are set to a number between the lead time of the item and the coverage time fence. It is recommended that items regularly procured or produced are assigned to a coverage group where Positive days is equal to the item's lead time. 
+Positive days indicate how far in the future master planning will consider the current inventory or receipts to fulfill a future demand. For example, setting  positive days to "100" will indicate that the current inventory can be used to fulfill demand in the next 100 days. If there is an order 150 days from today's date, master planning will create a planned order to satisfy that demand, even though the on-hand for the item could satisfy the order. For fast moving items with a short lead time, you may not want to use the on-hand for an order far in the future. The current on-hand will be fast gone and more orders can be placed in the future for a future demand on time as it has a short lead time. 
+
+Positive days will also impact the action messages. For example, the system could suggest to increase a planned purchase order to include a demand that is in the future within the positive days time. In the case where we set 100 positive days, and demand of an item in 30 days from now, the system will create a planned order to satisfy that demand. If there was demand for the same item in 90 days from now, the system will suggest to increase the quantity of the order in 30 days from now to also cover the new demand (of 90 days from now). But if the demand for the item was in 150 days from now, the system will not suggest to increase the quantity of the order already planned, as a new planned order would be created. 
+
+As a general rule, the positive days are set to a number between the lead time of the item and the coverage time fence. We recommend that items regularly procured or produced are assigned to a coverage group where positive days is equal to the item's lead time. 
 
 ### Negative days
-Negative days indicate how late we will allow item receipts to be. It indicates the number of days you are willing to wait with negative inventory or not enough inventory, before ordering new replenishment. In other words, it answers the question: should we create a purchase order for the item or use an existing one knowing that the item will be late?
-For example, let's say that we have a sales order for an item in 15 days from now. We have a purchase order for the item that will be received in 20 days from now. Do we want the system to create a purchase order for that sales order? Or do we want to use the existing order even though we cannot fulfill the sales order on time? In our case, if the negative days are set to greater than 5 (the item is allowed to be at most 5 days delayed), a new planned purchase order will be created to satisfy the sales order. If the negative days are set to less than 5, then, the system will use the existing order for the item. 
-It is recommended to set the Negative days lower than the lead time of the item. The negative days impact the performance of Master Planning as a high number in the negative days will generate lots of action messages. 
+Negative days indicate how late item receipts will be allowed. It indicates the number of days you are willing to wait with negative inventory or not enough inventory before ordering new replenishment. Negative days answers the question: should we create a purchase order for the item or use an existing one knowing that the item will be late?
+
+For example, you have a sales order for an item 15 days from now. You have a purchase order for the item that will be received in 20 days from now. Do you want the system to create a purchase order for that sales order or do you want to use the existing order even though you cannot fulfill the sales order on time? If the negative days are set to greater than 5 (the item is allowed to be at most 5 days delayed), a new planned purchase order will be created to satisfy the sales order. If the negative days are set to less than 5, the system will use the existing order for the item. 
+
+We recommend you set the negative days lower than the lead time of the item. The negative days impact the performance of master planning as a high number in the negative days will generate lots of action messages. 
 
 ### Dynamic negative days
-The use of dynamic negative days is an option that considers the item's lead time and the negative days that you establish. The system will create a new planned purchase order depending on the negative days time fence that is calculated as "Lead time + Negative days + today's date - requirement date". With this option the system will only use the planned supply orders within this time fence and will create a new plan order outside of it. The advantage of dynamic negative days is that it will only use the planned receipts when the item will not arrive on time
-You can find more information in [link to the negative days page. Migrate this page to docs: https://msdynamicsworld.com/story/ax-2012/significance-planning-data-negative-days-and-positive-days-microsoft-dynamics-ax]. 
+Dynamic negative days considers the item's lead time and the negative days that you establish. The system will create a new planned purchase order depending on the negative days time fence that is calculated as "Lead time + Negative days + today's date - requirement date". The system will only use the planned supply orders within this time fence and will create a new plan order outside of it. The advantage of dynamic negative days is that it will only use the planned receipts when the item will not arrive on time.
+
+You can find more information [here](FIX LINK  https://msdynamicsworld.com/story/ax-2012/significance-planning-data-negative-days-and-positive-days-microsoft-dynamics-ax). 
  
