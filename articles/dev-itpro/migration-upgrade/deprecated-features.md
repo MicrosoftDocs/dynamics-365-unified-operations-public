@@ -46,7 +46,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Dynamics 365 for Finance and Operations 10.0.3 
+## Dynamics 365 for Finance and Operations 10.0.4 
 
 ### France: FEC Accounting data export in XML
 
