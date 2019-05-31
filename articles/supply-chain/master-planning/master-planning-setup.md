@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Master planning setup
+title: Set up master planning
 description: 
 author: BeatrizNebot
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 
 
-# Master planning setup
+# Set up master planning
 
-This article presents different key strategies and parameters in Master planning setup. It includes an overview of the types of plans used by Master Planning , the plan strategy to use depending on the business needs and main parameters affecting the plan and how these will influence the suggested planned orders. 
+This article presents different key strategies and parameters for setting up master planning. It includes an overview of the types of plans used by Master Planning , the plan strategy to use depending on the business needs and main parameters affecting the plan and how these will influence the suggested planned orders. 
  
 ## Master plan types
 
