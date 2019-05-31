@@ -71,6 +71,8 @@ User should complete the steps listed below to get a Global CFDI electronic invo
 In the 10.0.2 monthly update the Global CFDI functionality was extended to support new requirements introduced in the second revision of the *_Global CFDI filling guide_*:
 
   - Generate a separate CFDI Normal electronic invoice based on sales or return operation registered on POS, when customer demanded it. 
+  
+  In that case a sale o return operation should be registered as a customer order. You can find more information about the functionality of customer orders in the [Customer orders in Retail Modern POS (MPOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/customer-orders-overview) topic. 
   - Specify UUID of CFDI electonic invoices, which are related to the original sales operations, in a CFDI electronic invoice generated based on the returns. 
 
 Also starting from the 10.0.2 monthly update the Global CFDI functionality supports additional scenarios:
@@ -92,7 +94,7 @@ The status of electronic invoices is updated automatically later, when all relat
 
 New parameter **Exclude customer orders from CFDI Global** was added on the Retail tab of the **Electronic invoices parameters** form (*_Organization administration > Setup > EInvoice > Electronic invoice parameters_*). Enable this option to process customer orders as CFDI Normal electonic invoices in the same way as sales orders in the Accounts Receivable module, and exclude such operations from the Global CFDI electronic invoices. 
 
-If the **Exclude customer orders from CFDI Global** parameter is enabled, then a separate electronic invoice will be created based on each sale or return operation posted via customer order on POS. You can find more information about the functionality of customer orders in the [Customer orders in Retail Modern POS (MPOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/customer-orders-overview) topic. 
+If the **Exclude customer orders from CFDI Global** parameter is enabled, then a separate electronic invoice will be created based on each sale or return operation posted via customer order on POS. 
 
 The customer order operations, that could lead to posting a CFDI Normal electronic invoice:
   - Customer order pick up, 
