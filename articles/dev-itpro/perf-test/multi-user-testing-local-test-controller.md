@@ -79,15 +79,13 @@ Before you complete the steps in this topic, verify that the following prerequis
     - Authcert.cer
     - Authcert.pfx
 
-    [![Certificates in the Temp folder](./media/multi-user-test-local-03.png)](./media/multi-user-test-local-03.png)
+4. Install the **authcert.pfx** and **authcert.cer** certificates in the **Local Machine\\Personal** certificate store.
 
-4. Install the **authcert.pfx** and **authcert.cer** certificates in the **Local Machine\\My** certificate store.
+    [![Local Machine\Personal certificate store](./media/multi-user-test-local-04.png)](./media/multi-user-test-local-04.png)
 
-    [![Local Machine\My certificate store](./media/multi-user-test-local-04.png)](./media/multi-user-test-local-04.png)
+5. Copy the **authcert.pfx** certificate to the **PerfSDK\\PerfSDKLocalDirectory** folder.
 
-5. Copy the **authcert.pfx** certificate to the **PerfSDK** folder.
-
-    [![Certificate in PerfSDK folder](./media/multi-user-test-local-05.png)](./media/multi-user-test-local-05.png)
+    [![Certificate in PerfSDK\\PerfS folder](./media/multi-user-test-local-05.png)](./media/multi-user-test-local-05.png)
 
 6. Replace the **setup.md** file in the **Visual Studio Online** folder by running the following commands.
 
@@ -101,8 +99,6 @@ Before you complete the steps in this topic, verify that the following prerequis
     %DeploymentDirectory%\CloudCtuFakeACSInstall.cmd %DeploymentDirectory%\authcert.pfx
     ```
 
-    [![Command text](./media/multi-user-test-local-06.png)](./media/multi-user-test-local-06.png)
-
 7. In the **Visual Studio Online** folder, in the **CloudCtuFakeACSInstall.cmd** file, remove **%TestCertPassword%** from the **Import** command.
 
     [![CloudCtuFakeACSInstall.cmd Import command](./media/multi-user-test-local-07.png)](./media/multi-user-test-local-07.png)
@@ -110,9 +106,6 @@ Before you complete the steps in this topic, verify that the following prerequis
 ## Prepare the PerfSDKSample solution for multi-user testing
 
 1. In Microsoft Visual Studio, on the **Test** menu, point to **Test settings**, point to **Default processor architecture**, and then select **x64**.
-
-    [![Visual Studio Test menu](./media/multi-user-test-local-08.png)](./media/multi-user-test-local-08.png)
-
 2. Retrieve the thumbprint of the **authcert.pfx** certificate in your development environment by running the following cmdlets as an admin. Save the thumbprint somewhere, because you will need it when you configure the tier-2 or above sandbox environment.
 
     ```
@@ -157,9 +150,6 @@ Before you complete the steps in this topic, verify that the following prerequis
     > When you receive a warning that states, "Deployment item not in solution folder," select **OK** to continue.
 
 6. On the **Hosts** tab, in the **Run tests in 32 bits or 64 bits process** field, select **Run test in 64 bits process on 64 bits machine**.
-
-    [![Hosts tab of the Test Settings dialog box](./media/multi-user-test-local-13.png)](./media/multi-user-test-local-13.png)
-
 7. Select **Apply**, and then close the **Test Settings** dialog box.
 8. Modify your C\# performance class by adding the following statement to your C\# performance tests.
 
@@ -182,7 +172,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
     [![Lines added to the TestSetup method](./media/multi-user-test-local-15.png)](./media/multi-user-test-local-15.png)
 
-10. In the **TestSetup** method, remove comment codes with multi-user comments, and comment out the following line.
+10. In the **TestSetup** method, uncomment lines in the code titled "for multi-user uncomment following lines", and comment out the following line.
 
     ```
     Client = DispatchedClient.DefaultInstance;
@@ -218,7 +208,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 	
 ## Configure a tier-2 or above sandbox environment for multi-user testing
 
-1. On each Application Object Server (AOS) computer, install the **authcert.pfx** and **authcert.cer** certificates under **Local Machine\\My**.
+1. On each Application Object Server (AOS) computer, install the **authcert.pfx** and **authcert.cer** certificates under **Local Machine\\Personal**.
 
     [![Certificates installed](./media/multi-user-test-local-21.png)](./media/multi-user-test-local-21.png)
 
@@ -240,7 +230,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ## Run multi-user testing by using a local test controller
 
-1. Select **Run Load Test**.
+1. On the devbox, in Visual Studio, select **Run Load Test**.
 
     [![Run Load Test](./media/multi-user-test-local-24.png)](./media/multi-user-test-local-24.png)
 
