@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0
 
 This topic describes the retail transaction consistency checker functionality introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1.3. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
 
-When a statement is posted in Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
+When a statement is posted in Microsoft Dynamics 365 for Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
 
 - The transaction total on the header table does not match the transaction total on the lines.
 - The line count on the header table does not match with the number of lines in the transaction table.
@@ -53,16 +53,15 @@ The **Validate store transactions** batch process checks the consistency of the 
 
 - **Customer account** – Validates that the customer account in the retail transaction tables exists in the HQ customer master.
 - **Line count** – Validates that the number of lines, as captured on the transaction header table, matches the number of lines in the sales transaction tables.
-- **Price includes tax** - Validates that the parameter **Price includes tax** is consistent across transaction lines. 
-
-- **Gross amount** - Validates that the header gross amount is the sum of lines net amount plus the tax amount.
-- **Net amount** - Validates that the header net amount is the sum of lines net amount.
-- **Under / Over payment** - Validates that the difference between the header gross amount and payment amount should not be greater than the maximum under/over payment configuration.
-- **Discount amount** - Validates that the discount amount on the discount tables and the discount amount on the retail transaction line tables are consistent and the header discount amount is the sum of the lines discount amount.
-- **Line disocunt** - Validates that the line discount on the transaction line is the sum total of all the lines in the discount table corresponding to the transaction line.
-- **Gift card item** - Dynamics 365 for Retail does not support the return of gift card items. However, there is capability to cash out the balance on a gift card. Any gift card item that is being processed as a return line and not a cash out line fails the statement posting process. The validation process around gift card item ensures that there are no return gift card line items on the retail transaction tables other than gift card cash out lines.
-- **Negative price** - Validates that there are no negative price transaction lines.
-- **Item & Variant** - Validates that items and variants on the transaction lines exist in the item and variant master file.
+- **Price includes tax** – Validates that the **Price includes tax** parameter is consistent across transaction lines.
+- **Gross amount** – Validates that the gross amount on the header is the sum of the net amounts on the lines plus the tax amount.
+- **Net amount** – Validates that the net amount on the header is the sum of the net amounts on the lines.
+- **Under / Over payment** – Validates that the difference between the gross amount on the header and the payment amount doesn't exceed the maximum underpayment/overpayment configuration.
+- **Discount amount** – Validates that the discount amount on the discount tables and the discount amount on the retail transaction line tables are consistent, and that the discount amount on the header is the sum of the discount amounts on the lines.
+- **Line discount** – Validates that the line discount on the transaction line is the sum of all the lines in the discount table that corresponds to the transaction line.
+- **Gift card item** – Retail doesn't support the return of gift card items. However, the balance on a gift card can be cashed out. Any gift card item that is processed as a return line instead of a cash-out line fails the statement posting process. The validation process for gift card items helps guarantee that the only return gift card line items on the retail transaction tables are gift card cash-out lines.
+- **Negative price** – Validates that there are no negative price transaction lines.
+- **Item & Variant** – Validates that items and variants on the transaction lines exist in the item and variant master file.
 
 ## Set up the consistency checker
 
