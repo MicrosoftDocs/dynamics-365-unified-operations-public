@@ -66,8 +66,7 @@ With this strategy, you'll use two different plans; one static plan and a differ
 
 With the two plan strategy, delivery date control CTP can be used. When CTP is used, it automatically triggers the run in the dynamic plan.
 
-## How to configure the plans
-
+### Setting up the plans
 You can create different plans on the **Master plans** page, under **Master planning > Setup > Plans > Master plans**. You can select which plans will be used for the static and the dynamic plan on the **Master planning parameters** page, under **Master planning > Setup > Master planning parameters**, **Current static master plan** and **Current dynamic master plan** fields. If you want to use a one plan strategy, you need to select the same plan in the **Current static master plan** and **Current dynamic master plan** fields. 
 
 
