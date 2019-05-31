@@ -6,7 +6,7 @@ title: Set up master planning
 description: 
 author: BeatrizNebot
 manager: AnnBe
-ms.date: 31/05/2019
+ms.date: 05/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 
 ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
-audience: Application User
+audience: Application UserTypes of
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -33,24 +33,24 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # Set up master planning
 
-This article presents different key strategies and parameters for setting up master planning. It includes an overview of the types of plans used by Master Planning , the plan strategy to use depending on the business needs and main parameters affecting the plan and how these will influence the suggested planned orders. 
+This article presents different key strategies and parameters for setting up master planning. It includes an overview of the types of plans used by master Planning, the plan strategy to use based on business needs, and main parameters affecting the plan and how they influence the suggested planned orders. 
  
-## Master plan types
+## Types of master plans
 
-Master planning has two different types of plans made for two different uses. It is recommended to follow these uses for the best performance of master planning. 
+Master planning has two different types of plans, designed for two different uses. We recommend that you use the appropriate plan for your scenario to achieve the best performance. 
 
 ### Static plan
-- This plan remains unchanged until the next time master planning is run.
-- It remains unchanged regardless of the supply and demand changes.
-- This is an operating plan that various company personnel, such as a purchaser or a production planner, can use to base their decisions on and perform their daily tasks and activities.
-- It is used to approve and firm order suggestions. 
-- It supports regeneration: an optimized plan is calculated from scratch every time master planning is run and existing non-approved orders are deleted. 
+The static plan remains unchanged until the next time master planning is run. It remains unchanged regardless of the supply and demand changes.
+
+The static plan is used to approve and firm order suggestions. It is an operating plan that various company personnel (such as a purchaser or a production planner) can use to base their decisions on and perform their daily tasks and activities. It also supports regeneration: an optimized plan is calculated from scratch every time master planning is run and existing non-approved orders are deleted. 
 
 ### Dynamic plan 
-- This plan usually starts out as a copy of the static plan. However, the dynamic master plan can be updated every time that master data changes: a new sales order is created, for example. 
-- It is used for ad-hoc planning: it enables the company to monitor the changing order network and item availability without disturbing the static plan that other people are using for their work processes. It is especially used for Capable To Promise (CTP).
-- It uses Net change, which ensures a faster run time. 
-- This plan will be the default plan when opening net requirements from the order forms such as sales, purchase or production orders forms. 
+The dynamic plan usually starts out as a copy of the static plan, but it can be updated every time master data changes. For example, if the data changes, a new sales order is created. 
+
+The dynamic plan is used for ad-hoc planning. It enables the company to monitor the changing order network and item availability without disturbing the static plan that other people are using for their work processes. It is especially used for Capable To Promise (CTP). It is the default plan when opening net requirements from the order forms (such as sales, purchase or production order forms). 
+
+Dynamics plans use net change, which ensures a faster run time. 
+
 
 
 ## Master plan strategies
