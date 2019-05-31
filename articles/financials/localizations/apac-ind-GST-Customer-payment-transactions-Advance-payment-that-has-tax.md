@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Advance payment that has tax
+## Advance payment that has tax
 
 1. Click **Accounts receivable > Payments > Payment journal**.
 2. Create a record.

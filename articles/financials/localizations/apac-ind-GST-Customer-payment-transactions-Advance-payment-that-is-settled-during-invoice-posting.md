@@ -1,6 +1,34 @@
+---
+# required metadata
 
+title: Indis GST Whitepaper
+description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+author: EricWang
+manager: RichardLuan
+ms.date: 05/31/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-applications
+ms.technology: 
 
-# Advance payment that is settled during invoice posting
+# optional metadata
+
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: India
+# ms.search.industry: 
+ms.author: EricWang
+ms.search.validFrom: 2019-06-01
+ms.dyn365.ops.version: 10.0.4
+
+---
+
+## Advance payment that is settled during invoice posting
 
 This section provides information about tax posted on the customer advance payment and selected for the settlement, while posting the customer invoice.
 The following tables shows the tax entries that are generated for the invoice when an advance payment is settled in various scenarios.

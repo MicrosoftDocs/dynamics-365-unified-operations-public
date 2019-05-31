@@ -1,4 +1,34 @@
-# GSTR1 report data
+---
+# required metadata
+
+title: Indis GST Whitepaper
+description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+author: EricWang
+manager: RichardLuan
+ms.date: 05/31/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: India
+# ms.search.industry: 
+ms.author: EricWang
+ms.search.validFrom: 2019-06-01
+ms.dyn365.ops.version: 10.0.4
+
+---
+
+## GSTR1 report data
 
 1. Click **Tax > Inquiries and Reports > Sales tax reports > GER export to GSTR CSV**.
 2. In the **From date** field, enter a value.
@@ -9,7 +39,7 @@
 7. Click **OK**.
 8. Use the path that you defined to go to the GSTR1 report file that you created in CSV format. This file becomes the base document that the whole compliance structure in GST is based on
 
-# GSTR2 report data
+## GSTR2 report data
 
 1. Click **Tax > Inquiries and Reports > Sales tax reports > GER export to GSTR CSV**.
 2. In the **From date** field, enter a value.
