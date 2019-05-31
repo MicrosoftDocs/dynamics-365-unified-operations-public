@@ -47,6 +47,20 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### Legacy navigation bar
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Replaced by another feature?**   | Starting in Platform update 24, a restyled navigation bar that features search was introduced. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available. Until that point, customers can revert to the legacy navigation bar through the **Client performance options** page. |
 
 ## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
 
