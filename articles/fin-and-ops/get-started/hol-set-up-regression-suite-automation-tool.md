@@ -426,7 +426,7 @@ To enable authentication, you must generate and install a certificate on the sam
 6. Run **iisreset** on all the AOS computers.
 
     > [!NOTE]
-    > If you don't have admin rights to run **iisreset** on a Tier 1 computer, you must stop and start the computer from the environment details page in LCS.
+    > If you don't have admin rights to run **iisreset** on a Tier 1 computer, on the Environment details page in LCS, select Maintain > Restart services.
 
 #### Tier 2+ environment
 
