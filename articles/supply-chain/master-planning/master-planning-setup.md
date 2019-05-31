@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: Set up master planning
@@ -28,6 +29,7 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 
+---
 
 # Set up master planning
 
