@@ -51,8 +51,8 @@ In Platform update 24, a restyled navigation bar was introduced for Finance and 
 ## Alert users before sessions end due to inactivity
 The idle timeout for Finance and Operations is currently defaulted at 60 minutes. After that inactivity limit has been surpassed by a user, the user is alerted that their session has been terminated. To provide users with additional awareness of an impending session suspension due to inactivity and to avoid losing any unsaved changes, users will now be notified 3 minutes before their sessions are set to be terminated due to inactivity and given an opportunity to reconnect before the session is ended.   
 
-## Feature name
-Description of feature and link to topic that has the details about the feature.
+## Export all companies BYOD job name changes
+The syntax of execution job name for BYOD export all companies job will now have a GUID appended to the naming convention. This will ensure that the names are always unique.
 
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
