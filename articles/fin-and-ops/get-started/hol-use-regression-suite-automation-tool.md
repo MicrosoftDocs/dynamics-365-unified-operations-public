@@ -69,7 +69,7 @@ For information about this feature, see the [Modify an existing task recording t
     > If, for any reason, the derived test cases that are created aren't in the correct order, go to Azure DevOps, and reorder the test cases in the test suite, so that RSAT can run them in the correct order.
 
 4. Select the derived test cases, and then select **Edit** to open the corresponding Excel parameter files.
-5. Edit these Excel parameter files in the same way that you edited the parent files. In other words, make sure that the product ID is set so that it's automatically generated, as described in [Modify the Excel parameter file](./hol-set-up-regression-suite-automation-tool.md#modify-the-excel-parameter-file). Also make sure that the saved variable is copied to the relevant fields, as described in [Edit the Excel parameter file](./hol-set-up-regression-suite-automation-tool.md#edit-the-excel-parameter-file).
+5. Edit these Excel parameter files in the same way that you edited the parent files. In other words, make sure that the product ID is set so that it's automatically generated. Also make sure that the saved variable is copied to the relevant fields.
 6. On the **General** tab of both Excel parameter files, update the value of the **Company** field to **USSI**, so that the derived test cases will be run against a different legal entity than the parent test case. To run the test cases against a specific user (or the role that is associated with a specific user), you can update the value of the **Test User** field.
 7. Select **Run**, and validate that the product is created in both the USMF legal entity and the USSI legal entity.
 
