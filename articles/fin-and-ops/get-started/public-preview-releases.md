@@ -52,10 +52,9 @@ The service update will be made generally available using the action center in L
 ## Release cadence
 Microsoft is committed to delivering predictable service updates. These service updates will be made generally available for self-deployment approximately 2 weeks prior to Microsoft automatically applying the update. 
 
-> [!Note] Service updates will not be provided during the months of March, June*, September, and December. 
-> /* An update will be made available in June 2019.
+> [!Note] Service updates will not be provided during the months of March, June, September, and December. However, an update will be made available in June 2019.
 
-Customers will be able to take up to 8 service updates per year and are required to take a minimum of 2 service updates per year and may choose to pause up to 3 consecutive updates at a time.  Pausing a service update can apply to the designated Sandbox UAT, Production or both environments.  Once the pause window has ended and if the customer has not self updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in LCS. To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates).
+Customers will be able to take up to 8 service updates per year and are required to take a minimum of 2 service updates per year and may choose to pause up to 3 consecutive updates at a time.  Pausing a service update can apply to the designated Sandbox UAT, Production, or both environments.  Once the pause window has ended and if the customer has not self-updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in LCS. To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates).
 
 ### Targeted release schedule (dates subject to change)
 
@@ -75,6 +74,6 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.9 Platform Update 33 | Februrary 1, 2020           | March 13, 2020                    | Production starting:  April 1, 2020           | TBD               |
 
 > [!NOTE]
-> The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the Service Update is made generally available.
+> The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 > 
 > For more details, see [One Version service updates FAQ](one-version.md).  
