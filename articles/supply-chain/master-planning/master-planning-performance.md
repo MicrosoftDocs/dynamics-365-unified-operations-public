@@ -1,11 +1,11 @@
 ---
 
 # required metadata
-title: Master planning setup
+title: Improve master planning performance
 description: 
 author: t-benebo
 manager: AnnBe
-ms.date: 31/05/2019
+ms.date: 05/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 
 
-# Master planning performance
+# Improve master planning performance
 This article shows different parameters and actions to improve the performance and troubleshoot issues in Master Planning. It includes parameters and settings as well as recommended configurations and actions. The article is intended for system administrators or IT users with capability to troubleshoot as well as for the production or supply planner, as it includes parameters focused on the business planning requirements. It also includes a checklist summary of all the important parameters to consider when facing long running master planning jobs.  
 
 ## Master planning performance parameters 
