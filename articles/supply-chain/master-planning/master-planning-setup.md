@@ -4,7 +4,7 @@
 
 title: Set up master planning
 description: 
-author: BeatrizNebot
+author: t-benebo
 manager: AnnBe
 ms.date: 05/31/2019
 ms.topic: article
