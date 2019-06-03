@@ -101,6 +101,8 @@
     href: tasks/create-calculate-post-statement-retail-store.md
   - name: Improvements to statement posting functionality
     href: statement-posting-EOD.md
+  - name: Improved handling of batch tracked items
+    href: batch.md
   - name: Configure Retail parameters that affect retail statements
     href: tasks/parameter-configurations-retail-statements.md
   - name: Configure payment method settings that affect retail statements
