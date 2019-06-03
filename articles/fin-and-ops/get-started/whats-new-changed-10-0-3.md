@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.3 (June 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June.
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/09/2019
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -58,6 +58,15 @@ For more information, see [Expense reports re-imagined](https://go.microsoft.com
 ## Extensibility enhancements
 
 In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3](../../dev-itpro/extensibility/extensibility-changes-10-3.md).
+
+## Tax engine
+
+> [!NOTE]
+> The tax engine (GTE) is currently only available for India.
+
+### Calculate tax in accounting currency for Import/Export Order
+
+In this release of Finance and Operations, a new parameter is added to the **Tax setup parameters** page, which allows user to choose based on which currency the tax should be calculated for Import/Export Order. By default, the **Transaction currency** allows you to choose which currency the tax should be calculated for an import/export order. By default, the **Transaction currency** is the same as the original system behavior. If you choose **Accounting currency**, the system will calculate the tax based on the assessable value in accounting currency.
 
 ## Additional resources
 
