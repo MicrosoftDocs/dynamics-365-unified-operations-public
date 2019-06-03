@@ -61,7 +61,7 @@ Example:
 
 19. Click **Inquiries > Voucher**
 
-![](media/GST-Whitepaper/Annotation-2019-05-21-132745.png)
+![](media/Annotation-2019-05-21-132745.png)
 
 
 
