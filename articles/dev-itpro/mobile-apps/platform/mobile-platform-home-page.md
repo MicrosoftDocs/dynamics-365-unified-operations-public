@@ -172,8 +172,8 @@ There are many resources that you can leverage to figure out how to build or cha
 Here are some tips for workspace creation and modification:
 - Create new simplified forms for recording rather than recording large complex forms.
 - After recording a form, you have to close the form instead of clicking **Done**, otherwise the form remains open.
-- Verify that recordings are correct using the "Job steps"
-- Play back recordings via task recorder playback to verify them
+- Verify that recordings are correct using the "Job steps".
+- Play back recordings using task recorder playback to verify them.
 - If you re-record a page with a grid then you need to re-record the link to the Details page because otherwise it won't be there.
 - When recording an action, change the value of the fields to add them. When recording is complete, close the form instead of clicking **Save**.
 - Lookups in mobile are list pages that have been recorded. **Select field data** and **Select field to display** are used to select the **field to use as the value to save** (data) and the **field to show the user** (display).
@@ -188,7 +188,7 @@ Here are some tips for workspace creation and modification:
 Avoid using forms with these patterns and controls when creating workspace recordings:
 - Datasources with DelayedJoin (common on transaction forms).
 - FastTabs (common on existing forms).
-    - Recorded forms should not have FastTabs since the FastTabs expansion state can interfere with playback.
+    - Recorded forms should not have FastTabs because the FastTabs expansion state can interfere with playback.
 - Any user interface (UI) that has state, like an expandable or hide/show region.
 - There is no check box in mobile. You have to manually bind the field to a Yes/No enum in JavaScript.
 
