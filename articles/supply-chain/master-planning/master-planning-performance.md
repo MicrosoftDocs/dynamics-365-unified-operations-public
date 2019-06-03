@@ -29,36 +29,35 @@ ms.dyn365.ops.version: AX 10.0.0
 
 
 # Improve master planning performance
-This article shows different parameters and actions to improve the performance and troubleshoot issues in Master Planning. It includes parameters and settings as well as recommended configurations and actions. The article is intended for system administrators or IT users with capability to troubleshoot as well as for the production or supply planner, as it includes parameters focused on the business planning requirements. It also includes a checklist summary of all the important parameters to consider when facing long running master planning jobs.  
+This topic explains options to improve the performance of master planning and troubleshoot issues. It includes parameters and settings as well as recommended configurations and actions. It is intended for system administrators or IT users with capability to troubleshoot, as well as for the production or supply planner, as it includes parameters focused on the business planning requirements. This topic also includes a checklist summary of all the important parameters to consider when facing long running master planning jobs.  
 
-## Master planning performance parameters 
-There are different parameters to consider that will influence your MRP run time. Among them you can find the following parameters. 
+## Parameters relating to master planning performance 
+There are different parameters to consider that will influence your master planning run time. They are found under **Master planning > Setup > Master planning parameters**, on the **General** tab, under the **Performance** section. Among the parameters on that page, you can find the following. 
 
 ### Number of threads 
-This setting enables you to adjust the master scheduling process so that the process performs better on the specific data set. It is found under Master planning parameter options under Master Planning > Setup > Master Planning, under the General tab, under the section Performance.
+This setting enables you to adjust the master scheduling process so that the process performs better on the specific data set. 
 
-The number of threads indicates the total amount of threads that are going to be used for running Master planning. It leads to the parallelization of the master planning run, which leads to a faster running time.  The number of threads is found in the Master planning run dialog. The best value for this parameter is found following a trial and error process. However, you can use the following formulas to calculate an initial value to start value:
+The number of threads indicates the total amount of threads that are going to be used for running master planning. It leads to the parallelization of the master planning run, which leads to a faster running time. The number of threads is found in the **Master planning run** dialog. The best value for this parameter is found following a trial and error process. However, you can use the following formulas to calculate an initial value to start value.
+
 If your industry is Manufacturing: #ofThreads = #PlannedOrders / 1000 
 Otherwise: #ofThreads = #Items / 1000
 
-The number of Helpers used during master planning needs to be less than or equal to the maximum number of threads allowed on the batch server. Note that increasing the number higher than the threads on the batch server, the extra threads would not perform any work. 
+The number of helpers used during master planning needs to be less than or equal to the maximum number of threads allowed on the batch server. If you increase the number higher than the threads on the batch server, the extra threads will not perform any work. 
 
 > ![Note]
-> Setting the number of threads to zero increases the MRP running time. Therefore, it is recommended to always set a value higher than zero. 
+> Setting the number of threads to zero increases the master planning running time. Therefore, it is recommended to always set a value higher than zero. 
 
-### Number of tasks in helper task bundle (Bundle size)
-Changing the number of tasks in the task bundle may have a positive effect on the runtime. The number of tasks in a bundle controls how many items are planned together by a single helper. For this value, it is recommended to follow a trial and error process before an optimal value is determined, as the optimal value will depend on your data. 
+### Number of tasks in helper task bundle (bundle size)
+Changing the number of tasks in the task bundle may have a positive effect on the runtime. The number of tasks in a bundle controls how many items are planned together by a single helper. For this value, we recommend that you follow a trial and error process before an optimal value is determined, as the optimal value will depend on your data. 
  
-As a general rule, it is recommended to increase the number of tasks when the number of items is very large (hundreds of thousands) and decrease the number of tasks otherwise. This means that applying to industries: 
-	- In **Retail and Distribution** (lots of independent items): use many helpers because there is no dependency between items. We recommend:
-	- In **Manufacturing** (lots of BOMs and shared subcomponents): use less helpers because dependency between items may lead to waiting times.
+As a general rule, we recommend that you increase the number of tasks when the number of items is very large (hundreds of thousands) and decrease the number of tasks otherwise. When applying to specific industries, condifer the following. 
+	- In **Retail and Distribution** where there are lots of independent items, use many helpers because there is no dependency between items. 
+	- In **Manufacturing** where there are lots of BOMs and shared subcomponents, use fewer helpers because dependency between items may lead to waiting times.
 
-It is recommended to start with a bundle size of 1 and then follow a trial and error process to find the optimal value. 
-
-The parameter is found under Master planning parameter options under **Master Planning > Setup > Master Planning**, under the **General** tab, under the section **Performance**.
+Start with a bundle size of one and then follow a trial and error process to find the optimal value. 
 
 > ![Tip]
-> If you have performance issues, it is recommended to reduce the number of helpers in task bundle to only 1. Then, you can start the trial and error process to find the optimal value for your setup. In general, performance issues are found when a single item takes longer time to process than the rest of the items. If this is the case that is causing your MRP to take longer time, you will be able to see that two subsequent tasks with the status Coverage in the MRP run take significant different time, in extreme cases up to 30 minutes. You can infer the time that the tasks are taking by looking at the Duration of each of the tasks. 
+> If you have performance issues, we recommend you reduce the number of helpers in task bundle to one. Then you can start the trial and error process to find the optimal value for your setup. In general, performance issues are found when a single item takes longer time to process than the rest of the items. If this is the case, you will be able to see that two subsequent tasks with the status "Coverage" in the master planning run take significantly different amounts of time, in extreme cases up to 30 minutes. You can infer the time that the tasks are taking by looking at the duration of each of the tasks. 
 
 ### Use of cache
 This setting enables you to adjust the master scheduling process so that the process performs better on the specific data set. For example, you experience the following benefits:
