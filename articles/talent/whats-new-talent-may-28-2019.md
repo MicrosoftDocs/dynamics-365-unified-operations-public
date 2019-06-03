@@ -52,10 +52,10 @@ Changes described in this section apply to build number 8.1.2319.
 
 ### Common Data Service entity support for custom fields
 
-In this week's release, the following Common Data Service entities now support custom fields: Benefit calc rate detail, Work calendar holiday line, and Employment.
+In this release, the following Common Data Service entities now support custom fields: Benefit calc rate detail, Work calendar holiday line, and Employment.
 
 ### Copy position now includes payroll details
-When you use **Copy position** and select all of the options, the payroll details information is now included in the copy. 
+When you use **Copy position** and select all of the options, the payroll details information is now included in the copy information. 
 
 ## In preview in Core HR
 
