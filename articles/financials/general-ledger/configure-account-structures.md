@@ -5,7 +5,7 @@ title: Configure account structures
 description: This topic provides information about account structures and financial dimensions.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,15 +75,15 @@ The **Allowed value details** section guides you through creating criteria using
 
 [![Allow values](./media/account.png)](./media/account.png) 
 
-Allowed values will **Default** onto a journal or accounting distribution entry page when there are no other possible values to select according to the account structure setup.
+Allowed values will default onto a journal or accounting distribution entry page when there are no other possible values to select according to the account structure setup.
 
-For example with this structure: **Profit and loss account structure**
+Here's an example of the **Profit and loss account structure**.
 
 |Main account          | Business unit    |Department          | Cost center    |
 |----------------------|-----------|----------------------|-----------|
 |400000..999999 | 002 | 022 | 014 |
 
-When entering a journal and selecting an account in the profit and loss range, selecting Business unit '002' will cause values 022 an 014 to default onto the account control. This behavior will also occur with the accounting distribution page. 
+When entering a journal and selecting an account in the profit and loss range, selecting business unit '002' will cause values 022 and 014 to be the default on the account control. This behavior will also occur with the accounting distribution page. 
 
 ## More than 7 criteria needed
 
@@ -94,8 +94,6 @@ If you have more than 7 criteria that are needed, you can continue adding them o
  - Usability  
  
 To continue to add additional criteria, click **Duplicate in the Segment** and **Allowed values section**. This will copy the criteria to a new line. You can then type over or modify the **Allowed value details** section.
-
-(LINK TO VIDEO THAT WILL BE CREATED)
 
 ## Best practices
 When setting up your account structures there are some best practices you can follow. However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.
