@@ -75,6 +75,16 @@ The **Allowed value details** section guides you through creating criteria using
 
 [![Allow values](./media/account.png)](./media/account.png) 
 
+Allowed values will **Default** onto a journal or accounting distribution entry page when there are no other possible values to select according to the account structure setup.
+
+For example with this structure: **Profit and loss account structure**
+
+|Main account          | Business unit    |Department          | Cost center    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+When entering a journal and selecting an account in the profit and loss range, selecting Business unit '002' will cause values 022 an 014 to default onto the account control. This behavior will also occur with the accounting distribution page. 
+
 ## More than 7 criteria needed
 
 If you have more than 7 criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is nt longer active after the seventh criteria is entered. This is due to many factors such as: 
