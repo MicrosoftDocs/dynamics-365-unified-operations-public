@@ -52,20 +52,24 @@ The service update will be made generally available using the action center in L
 ## Release cadence
 Microsoft is committed to delivering predictable service updates each month (excluding March and September).  These service updates will be made generally available for self deployment approximately 2 weeks prior to Microsoft automatically applying the update.  
 
-Customers are required to take a minimum of 4 service updates per year and may choose to pause up to 2 consecutive updates at a time.  Pausing a service update can apply to the designated Sandbox UAT, Production or both environments.  Once the pause window has ended and if the customer has not self updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in LCS. To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates).
+Customers will be able to take up to 8 service updates per year and are required to take a minimum of 2 service updates per year and may choose to pause up to 3 consecutive updates at a time.  Pausing a service update can apply to the designated Sandbox UAT, Production or both environments.  Once the pause window has ended and if the customer has not self updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in LCS. To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates).
 
 ### Targeted release schedule (dates subject to change)
 
 > [!NOTE] 
 > Sandbox auto-update takes place 7 days prior to the production update.
 
-| Version | Preview availability (PEAP) | Generally available (Self update) | Auto-update schedule (via LCS Update settings)|
-|---------|-----------------|---------------------------|---------------------|
-|10.0<br>Platform update 24 |  February 1, 2019 | Week of March 18, 2019 | Production: Starting April 1 |
-|10.0.1<br>Platform update 25| Week of March 4, 2019 | Week of April 8, 2019 | Production: Starting May 1 |
-|10.0.2<br>Platform update 26| Week of April 8, 2019 | Week of May 13, 2019 | Production: Starting June 1  |
-|10.0.3<br>Platform update 27| Week of May 6, 2019 | Week of June 10, 2019 | Production: Starting July 1  |
-| 10.0.4<br>Platform update 28| Week of June 3, 2019 | Week of July 8, 2019 | Production: Starting August 1  |
+| Version                   | Preview Availability (PEAP) | Generally Available (Self update) | Auto-Update schedule (via LCS Update Settings | End of Service    |
+|---------------------------|-----------------------------|-----------------------------------|-----------------------------------------------|-------------------|
+| 10.0.1 Platform update 25 |                             |                                   | Production starting: May 1, 2019              | June 10, 2019     |
+| 10.0.2 Platform update 26 | April 12, 2019              | May 17,2019                       | Production starting:  June 1, 2019            | August 12, 2019   |
+| 10.0.3 Platform update 27 | May 10, 2019                | June 14, 2019                     | Production starting:  July 1, 2019            | September 9, 2019 |
+| 10.0.4 Platform update 28 | June 7, 2019                | July 12, 2019                     | Production starting:  August 1, 2019          | October 14, 2019  |
+| 10.0.5 Platform update 29 | August 2, 2019              | September 13, 2019                | Production starting:  October 1, 2019         | December 2, 2019  |
+| 10.0.6 Platform update 30 | September 6, 2019           | October 11, 2019                  | Production starting: November 1, 2019         | January 13, 2019  |
+| 10.0.7 Platform update 31 | October 25, 2019            | November 29, 2019                 | Production starting: January 1, 2020          | March 9, 2020     |
+| 10.0.8 Platform update 32 | November 29, 2019           | January 17, 2020                  | Production starting: February 1, 2020         | April 13, 2020    |
+| 10.0.9 Platform Update 33 | Februrary 1, 2020           | March 13, 2020                    | Production starting:  April 1, 2020           | TBD               |
 
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the Service Update is made generally available.
