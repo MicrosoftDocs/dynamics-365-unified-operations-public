@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/21/2019
+ms.date: 05/30/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -264,10 +264,7 @@ Alternatively, run the following Windows PowerShell command.
 
 ## Install, upgrade, or uninstall a local agent
 
-For information about local agent installation, see the appropriate setup and deployment topic for your environment:
-
-- [Platform update 12](setup-deploy-on-premises-pu12.md)
-- [Platform update 8 or Platform update 11](setup-deploy-on-premises-pu8-pu11.md)
+For information about how to update the local agent, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 
 You can also use the following upgrade and uninstallation commands:
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (May 20, 2019)
+title: What's new or changed in Dynamics 365 for Talent (May 28, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,11 +25,11 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2019-05-20
+ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (May 20, 2019)
+# What's new or changed in Dynamics 365 for Talent (May 28, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -45,18 +45,27 @@ This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which displays the job ID, title, other approvers, and date assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which displays the approvers who still need to approve the submitted job.
 
 ## Changes in Onboard
-
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
+Changes described in this section apply to build number 8.1.2319.
 
-Changes described in this section apply to build number 8.1.2306. This release includes minor bug fixes for Dynamics 365 Talent: Core HR.
+### Common Data Service entity support for custom fields
+
+In this release, the following Common Data Service entities now support custom fields: Benefit calc rate detail, Work calendar holiday line, and Employment.
+
+### Copy position now includes payroll details
+When you use **Copy position** and select all of the options, the payroll details information is now included in the copy information. 
 
 ## In preview in Core HR
 
+### Restrict the leave types in time off requests
+
+Organizations can offer many different types of leave to employees. Some of these leave types might not be appropriate for employees to submit time off for and are managed by Human Resources (HR) instead. With this release, you can configure which leave types employees can submit time-off requests for. 
+
 ### New page to validate position hierarchy data
 
-Human resources (HR) and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
+HR and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
 
 ### Specify reason codes on leave types
 
