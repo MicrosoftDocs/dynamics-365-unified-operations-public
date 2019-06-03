@@ -95,7 +95,7 @@ Net change minimized generates planned orders that cover only requirements creat
 
 ## Types of scheduling methods
 
-For each of the plans, on the **Master plans** page, under the **General** tab, you must choose the scheduling method that will be used for production orders. You can schedule production at the operation level and the job level.
+For each of the plans, on **Master planning > Setup > Plans > Master plans**, on the **Master plans** page, under the **General** tab, you must choose the scheduling method that will be used for production orders. You can schedule production at the operation level and the job level.
 
 ### Operations scheduling
 You can use operations scheduling to provide a general estimate of the production process over time. Operations scheduling doesn't explode the operations for the production route into jobs. You can read more about operations scheduling [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
@@ -106,10 +106,10 @@ Job scheduling is a more detailed scheduling method where each operation is divi
 
 ## Time fences in days
 
-For each of the plans, you can select how far in the future (the "the time fence") requirements and other considerations must be calculated by master planning. It is recommended to adjust the time fences to your business requirements to get the best performance in master planning. You can find the time fences for each plan under the **Time fences** tab on the **Master planning parameters** page for each plan, under **Master planning > Setup > Plans > Master plans**. 
+For each of the plans, you can select how far in the future (the "the time fence") requirements and other considerations must be calculated by master planning. It is recommended to adjust the time fences to your business requirements to get the best performance in master planning. You can find the time fences for each plan under the **Time fences in days** tab on the **Master planning parameters** page for each plan, under **Master planning > Setup > Plans > Master plans**. 
 
 > [!Note]
-> The time fence indicates how far in the future the different requirements and other considerations will be calculated by master planning. If you do not need to use the option you must set the option to **Yes** and then set the time fence to "0" days. 
+> The time fence indicates how far in the future the different requirements and other considerations will be calculated by master planning. If you do not need to use any of the options, set the option to **Yes**, and then set the time fence to "0" days. 
 
 ### Coverage
 Coverage represents the scheduling period, or how far out the demand should be included. In other words, it indicates what your planning horizon is. You can select this option to override the coverage time fence for the item during master scheduling. Enter the number of days that the master scheduling calculation should cover requirements. The coverage time fence is calculated forward from the current date. Requirements that occur before the current date are always processed.
@@ -159,7 +159,7 @@ You can set up master planning to create planned orders for requisition demand. 
 
 Enable the **Include requisitions** option on the **General** tab on the **Master plans** page. 
 
-By setting **Approved requisitions time fence** on the **Delays** tab under **Time fences**, you can choose to override the time fence settings that are defined for the item. Enter the number of days in the past during which demand from approved requisitions that have the replenishment purpose is included in master scheduling. For example, you can indicate that only unfulfilled, past-due demand from approved requisitions that were created in the last 10 days should be considered and planned for.  
+By setting **Approved requisitions time fence**, you can choose to override the time fence settings that are defined for the item. Enter the number of days in the past during which demand from approved requisitions that have the replenishment purpose is included in master scheduling. For example, you can indicate that only unfulfilled, past-due demand from approved requisitions that were created in the last 10 days should be considered and planned for.  
 
 
 ### Sequencing
@@ -168,7 +168,7 @@ Sequencing allows planned orders to be ordered out from sequencing attributes as
 With this option, you can select how far in the future the operations or jobs will be sequenced. Take into account that the longer the time fence is, the longer it will take for master planning to run. 
 
 ### Calculated delays
-Delays options ensure that the orders have feasible planned dates. On **Master planning > Setup > Plans > Master plans**, under the **Delays** tab, you can find the following options.
+Delays options ensure that the orders have feasible planned dates. The following options are available on **Master planning > Setup > Plans > Master plans**, on the **Calculated delays** tab
 
 - **Ensure that the planned orders are not created prior to master planning run date**: Set this to **Yes** to make sure orders cannot be scheduled for dates in the past. 
 - **Planned purchase orders**: Add the calculated delay to the requirements.
@@ -176,7 +176,7 @@ Delays options ensure that the orders have feasible planned dates. On **Master p
 - **Planned transfer orders**: Add the calculated delay to the requirements.
 - **Planned Kanban** - Add the calculated delay to the requirements.
 
-For each one of the "Add the calculated delay to the requirements", you must select or unselect the option of adding the delay to the requirements. When adding the delays, the system will take into account the capacities of the resources and create feasible planned orders. Recalculating the planned order dates increases the MRP running time, so if you do not need to use the delays, unselect this option.  
+For each of the **Add the calculated delay to the requirements** parameters, you must select or unselect the option of adding the delay to the requirements. When adding the delays, the system will take into account the capacities of the resources and create feasible planned orders. Recalculating the planned order dates increases the master planning running time, so if you do not need to use the delays, unselect this option.  
 
 
 ## Positive and negative days
