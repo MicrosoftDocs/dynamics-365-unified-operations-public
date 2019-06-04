@@ -33,7 +33,8 @@ ms.dyn365.ops.version: AX 10.0.0
 This topic explains options to improve the performance of master planning and troubleshoot issues. It includes parameters and settings as well as recommended configurations and actions. It is intended for system administrators or IT users with capability to troubleshoot, as well as for the production or supply planner, as it includes parameters focused on the business planning requirements. This topic also includes a checklist summary of all the important parameters to consider when facing long running master planning jobs.  
 
 ## Parameters relating to master planning performance 
-There are different parameters to consider that will influence your master planning run time. They are found under **Master planning > Setup > Master planning parameters**, on the **General** tab, under the **Performance** section. Among the parameters on that page, you can find the following. 
+There are different parameters to consider that will influence your master planning run time.  
+
 
 ### Number of threads 
 This setting enables you to adjust the master scheduling process so that the process performs better on the specific data set. 
@@ -49,7 +50,7 @@ The number of helpers used during master planning needs to be less than or equal
 > Setting the number of threads to zero increases the master planning running time. Therefore, it is recommended to always set a value higher than zero. 
 
 ### Number of tasks in helper task bundle (bundle size)
-Changing the number of tasks in the task bundle may have a positive effect on the runtime. The number of tasks in a bundle controls how many items are planned together by a single helper. For this value, we recommend that you follow a trial and error process before an optimal value is determined, as the optimal value will depend on your data. 
+Changing the number of tasks in the task bundle may have a positive effect on the runtime. The number of tasks in a bundle controls how many items are planned together by a single helper. This parameter can be found under **Master planning > Setup > Master planning parameters**, on the **General** tab, under the **Performance** section. For this value, we recommend that you follow a trial and error process before an optimal value is determined, as the optimal value will depend on your data. 
  
 As a general rule, we recommend that you increase the number of tasks when the number of items is very large (hundreds of thousands) and decrease the number of tasks otherwise. When applying to specific industries, condifer the following. 
 	- In retail and distribution, where there are lots of independent items, use many helpers because there is no dependency between items. 
@@ -65,7 +66,7 @@ With the cache parameter, you can adjust the master scheduling process so that t
 	- More caching means collecting more data in data memory with hope that the data will be used again later. If the data is in memory, you may save some database requests. However, more caching raises memory requirements.
 	- Less caching means that the same data may have to be fetched from the database more frequently. Additionally, Application Object Server (AOS) stores little data in memory throughout the process.
 	
-The effectiveness of caching depends heavily on the customer data. If cached data is never needed, for example, that memory would only be wasted when you stored data until the end of the scheduling process. In this case, if you configure less caching, performance may increase because AOS needs less memory, and that way server resources are freed up for other tasks. 
+This parameter is found under **Master planning > Setup > Master planning parameters**, on the **General** tab, under the **Performance** section. The effectiveness of caching depends heavily on the customer data. If cached data is never needed, for example, that memory would only be wasted when you stored data until the end of the scheduling process. In this case, if you configure less caching, performance may increase because AOS needs less memory, and that way server resources are freed up for other tasks. 
 
 It is difficult to predict which option is always better, because each case depends not only on data but also on hardware. For example, it is probably not a good idea to add the additional load that is produced by minimum caching on a database server that is already overloaded. 
 
@@ -73,7 +74,7 @@ It is difficult to predict which option is always better, because each case depe
 > We generally recommend that you set the **Use of cache** parameter to "Maximum" because it intended to be is a performance-enhancing feature. We recommend you set the parameter to "Minimum" if you run on-premises with a limited memory (2GB aprox).
 
 ### Number of orders in firming bundle 
-The **Number or orders in firming bundle** parameter indicates the total amount of orders that will be processed at a time by each thread/batch, which leads to parallelization of the autofirming. Autofirming parallelization is based on the orders to be processed together, which means if it is set to for instance "50", for example, each thread/batch task will pick up 50 orders at a time and process them together. It is recommended to follow a trial and error process to find the optimal value. To start with, try using the following formula: #ofOrdersPerBundle = #DemandItems / #ofThreads.
+The **Number or orders in firming bundle** parameter indicates the total amount of orders that will be processed at a time by each thread/batch, which leads to parallelization of the autofirming. This parameter is found under **Master planning > Setup > Master planning parameters**, on the **General** tab, under the **Performance** section. Autofirming parallelization is based on the orders to be processed together, which means if it is set to for instance "50", for example, each thread/batch task will pick up 50 orders at a time and process them together. It is recommended to follow a trial and error process to find the optimal value. To start with, try using the following formula: #ofOrdersPerBundle = #DemandItems / #ofThreads.
 
 > ![Note]
 > Setting the **Number of orders in firming bundle** to "0" will result in no parallelization of the autofirming. The whole process will run on a single batch task and will have a cumulative runtime, increasing the running time of your master planning. Therefore, we recommend setting this parameter to a value larger than zero. 
@@ -109,7 +110,7 @@ To review the master planning runs of your system, do the following.
 
 
 ## Filtering
-Using filters in the **Master planning run** dialog affects the duration of the master planning run. To exclude items from the run, we  recommend filtering by the lifecycle state of the item (and not by item numbers). When filtering by lifecycle state, the update process will take shorter than when filtering by item numbers.  
+Using filters in the **Master planning run** dialog affects the duration of the master planning run. Go to **Master planning > Master planning > Run > Master planning**, or click **Run** in the **Master planning** workspace. To exclude items from the run, we  recommend filtering by the lifecycle state of the item (and not by item numbers). When filtering by lifecycle state, the update process will take shorter than when filtering by item numbers.  
 
 
 ## Performance checklist summary
