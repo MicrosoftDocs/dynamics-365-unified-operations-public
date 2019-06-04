@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Personalize the user experience
-description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
+title: Saved views
+description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SysUserSetup, DefaultDashboard
+ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -30,11 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Personalize the user experience
+# Saved views
 
 [!include [banner](../includes/banner.md)]
-
-# Saved views 
 
 ## Introduction
 Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. (See [!Personalize the user experience]() for more details on how to personalize in Finance and Operations.) 
