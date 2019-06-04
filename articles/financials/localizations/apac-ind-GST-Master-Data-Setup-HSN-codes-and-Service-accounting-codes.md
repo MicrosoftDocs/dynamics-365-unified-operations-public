@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Define HSN codes
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -43,7 +43,7 @@ This artical describes how to define HSN codes and Service accounting codes
 
 
 
-## Define HSN codes
+# Define HSN codes
 
 1. Click **Tax > Setup > Sales tax > India > HSN code**
 2. Create a record
@@ -57,7 +57,7 @@ This artical describes how to define HSN codes and Service accounting codes
 10. In the **Description** field, enter a value
 11. Click **Close**
 
-![HSN codes](media/GST-Whitepaper/HSN-codes.png)
+![HSN codes](media/HSN-codes.png)
 
 
 
@@ -69,7 +69,7 @@ This artical describes how to define HSN codes and Service accounting codes
 4. In the **Description** field, enter a value
 5. **Save** and **Close**
 
-![SAC codes](media/GST-Whitepaper/SAC-codes.png)
+![SAC codes](media/SAC-codes.png)
 
 
 
@@ -86,7 +86,7 @@ Note: The following setup is required for the calculation of GST:
 - A Harmonized System of Nomenclature (HSN) code should be defined for the Item product type, or a Service accounting code (SAC) should be defined for the Service product type.
 - Item sales tax group should be removed.
 
-![Assign codes to product](media/GST-Whitepaper/Assign-codes-to-product.png)
+![Assign codes to product](media/Assign-codes-to-product.png)
 
 
 
@@ -103,7 +103,7 @@ Note: The following setup is required for the calculation of GST:
 
 Note: When this charges code is selected for a transaction, the defined tax information automatically entered, and GST is calculated accordingly
 
-![ap charge code](media/GST-Whitepaper/ap-charge-code.png)
+![ap charge code](media/ap-charge-code.png)
 
 ### Accounts receivable
 
@@ -119,4 +119,4 @@ Note: When this charges code is selected for a transaction, the defined tax info
 
 Note: When this charges code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly
 
-![ar charge code](media/GST-Whitepaper/ar-charge-code.png)
+![ar charge code](media/ar-charge-code.png)
