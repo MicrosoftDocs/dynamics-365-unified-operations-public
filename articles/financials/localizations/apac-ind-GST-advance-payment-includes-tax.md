@@ -28,7 +28,10 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Advance payment that has tax
+# Advance payment that includes tax
+Complete the following procedures to create a customer advance payment journal and then validate the tax information and financial entries. 
+
+## Create a customer advance payment journal
 
 1. Click **Accounts receivable > Payments > Payment journal**.
 2. Create a record.
@@ -42,21 +45,21 @@ ms.dyn365.ops.version: 10.0.4
 10. Click the **Customer tax information** tab
 11. Click OK.
 
-### Validate the tax details
+## Validate the tax details
 
-12. Click **Tax document**.
+1. Click **Tax document**.
 
 Example:
 
 - IGST: 20 percent
 
-13. Click **Close**.
-14. Click **Post > Post**.
-15. Close the message.
+2. Click **Close**.
+3. Click **Post > Post**.
+4. Close the message.
 
-### Validate the financial entries
+## Validate the financial entries
 
-16. Click **Inquiries > Voucher**.
+To validate the financial entries, in the journal, click **Inquiries > Voucher**.
 
 ![](media/Annotation-2019-05-21-131638.png)
 
