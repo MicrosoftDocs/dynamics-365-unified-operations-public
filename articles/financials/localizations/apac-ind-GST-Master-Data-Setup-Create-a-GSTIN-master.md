@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Create a GSTIN master
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -41,7 +41,7 @@ To enable India localization solution for GST in Dynamics 365 for finance and op
 
 This artical describes how to create a GSTIN master
 
-## Create a GSTIN master
+# Create a GSTIN master
 
 ### Define company registration numbers for the GST tax type
 
@@ -54,7 +54,7 @@ This artical describes how to create a GSTIN master
 7. In the **Description** field, enter a value
 8. In the **Business vertical** field, select a value
 
-![](media/GST-Whitepaper/IND-GST-GSTIN-1.png)
+![](media/IND-GST-GSTIN-1.png)
 
 9. On the **Casual registration** FastTab, click **Add**
 
@@ -67,7 +67,7 @@ This artical describes how to create a GSTIN master
    - The **GST invoice** number sequence will be used when customer sales that have GST transactions are posted
    - The **Bill of supply** number sequence will be used when customer sales that have non-GST transactions are posted
 
-![](media/GST-Whitepaper/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 
 
@@ -80,7 +80,7 @@ This artical describes how to create a GSTIN master
 5. In the **Description** field, enter a value
 6. In the **Business vertical** field, select a value
 
-![](media/GST-Whitepaper/IND-GST-GSTIN-3.png)
+![](media/IND-GST-GSTIN-3.png)
 
 
 
@@ -93,7 +93,7 @@ This artical describes how to create a GSTIN master
 5. In the **Description** field, enter a value
 6. In the **Business vertical** field, select a value
 
-![](media/GST-Whitepaper/IND-GST-GSTIN-4.png)
+![](media/IND-GST-GSTIN-4.png)
 
 
 
