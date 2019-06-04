@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchase of a fixed asset
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchase of a fixed asset
+# Purchase of a fixed asset
 
 1. Click **General ledger > Journals > General journal**.
 2. Create a journal, and define a journal name.
@@ -55,7 +55,7 @@ ms.dyn365.ops.version: 10.0.4
 
 18. Click **Inquiries > Voucher**
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-110044.png)
+![](media/Annotation-2019-05-16-110044.png)
 
 
 
