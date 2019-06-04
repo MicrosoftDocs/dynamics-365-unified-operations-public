@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchase of exempted goods
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchase of exempted goods
+# Purchase of exempted goods
 
 1. Click **Accounts payable > Purchase orders > All purchase orders**.
 2. Create a purchase order for an exempted item.
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.4
 5. On the **GST** tab, verify that the **Exempted** check box is selected by default.
 6. Click **OK**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-175528.png)
+![](media/Annotation-2019-05-15-175528.png)
 
 ### Validate the tax details
 
@@ -46,7 +46,7 @@ ms.dyn365.ops.version: 10.0.4
 9. Click **Close**.
 10. Click **Confirm**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-175726.png)
+![](media/Annotation-2019-05-15-175726.png)
 
 ### Post the purchase invoice
 
@@ -56,4 +56,4 @@ ms.dyn365.ops.version: 10.0.4
 14. On the **Action** Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post > Post**.
 15. On the **Action** Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the **Overview** tab, click **Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-175635.png)
+![](media/Annotation-2019-05-15-175635.png)
