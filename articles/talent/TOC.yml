@@ -104,14 +104,16 @@
       href: attract-overview.md
     - name: Create a process template in Attract
       href: Process-templates-Attract.md
-    - name: Create, approve, and post jobs in Attract
+    - name: Create and post jobs
       href: Creating-jobs-Attract.md
     - name: Post jobs to external career sites from Attract
       href: posting-jobs-external.md
     - name: Source candidates by using talent pools
       href: attract-talent-pools.md
-    - name: Sourcing with LinkedIn Recruiter
+    - name: Source candidates with LinkedIn Recruiter
       href: attract-linked-in-recruiter.md
+    - name: Post jobs to LinkedIn
+      href: attract-post-jobs-to-linkedin.md
     - name: Activities in the hiring processes 
       href: activities-attract.md
     - name: Interview scheduling and feedback
@@ -357,6 +359,8 @@
       href: corehr-custom-fields.md  
   - name: Troubleshoot Talent
     items:
+    - name: Troubleshoot posting jobs to LinkedIn
+      href: attract-troubleshoot-linkedin.md
     - name: Analytic reports aren't updated
       href: analytic-reports-not-updated.md
     - name: Can't create an environment in the PowerApps Admin center
