@@ -46,4 +46,4 @@ This article describes how to attach the GSTIN to a tax registration group
 
 1. Click **Tax > Setup > Sales tax > Tax registration group**, create a group, and define the required GSTIN
 
-![tax registration group](media/tax-registration-group.png)
+![tax registration group](media/tax-registration-group.PNG)
