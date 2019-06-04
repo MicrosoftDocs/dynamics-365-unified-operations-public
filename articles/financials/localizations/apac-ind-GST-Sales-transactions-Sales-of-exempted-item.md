@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Sales of exempted item
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Sales of exempted item
+# Sales of exempted item
 
 1. Click **Accounts receivable > Sales orders > All sales orders**.
 2. Create a sales order for an exempted item.
@@ -52,7 +52,7 @@ ms.dyn365.ops.version: 10.0.4
 14. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**.
 15. Click **Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-20-150217.png)
+![](media/Annotation-2019-05-20-150217.png)
 
 
 
