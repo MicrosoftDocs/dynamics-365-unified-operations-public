@@ -54,6 +54,13 @@ The idle timeout for Finance and Operations is currently defaulted at 60 minutes
 ## Export all companies BYOD job name changes
 The syntax of execution job name for BYOD export all companies job will now have a GUID appended to the naming convention. This will ensure that the names are always unique.
 
+## Extensibility enhancements
+Enhanced extensibility capabilities in Platform update 28:
+- Enable extension of WorkflowType so elements (Task, Approval, AutomatedTask) and event handlers can be added (Ref# 198838).
+- Enable extension to change TableRelation.RelatedTableCardinality and TableRelation.Role (Ref# 280969).
+- Enable extension of country region codes on data entities (Ref# 282123).
+- Enable extension of the Label, Help Text, and Group Prompt properties of entity fields (Ref# 265666).
+
 ## Feature name
 Description of feature and link to topic that has the details about the feature.
 
