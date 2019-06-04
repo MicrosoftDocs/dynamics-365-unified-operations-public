@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Sales to a registered customer
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Sales to a registered customer
+# Sales to a registered customer
 
 ### Sales quotation
 
@@ -40,15 +40,15 @@ ms.dyn365.ops.version: 10.0.4
 
 4. Click **Tax information**
 
-   ![](media/GST-Whitepaper/Capture06.PNG)
+   ![](media/Capture06.PNG)
 
 5. On the **GST** tab, validate the default values
 
-   ![](media/GST-Whitepaper/Capture07.PNG)
+   ![](media/Capture07.PNG)
 
 6. Click the **Customer tax information** tab
 
-   ![](media/GST-Whitepaper/Capture08.PNG)
+   ![](media/Capture08.PNG)
 
 Notes:
 
@@ -67,7 +67,7 @@ Example:
 
 - SGST: 10 percent
 
-  ![](media/GST-Whitepaper/Capture09.PNG)
+  ![](media/Capture09.PNG)
 
 10. Click **Close**.
 11. On the Action Pane, on the **Quotation** tab, in the **Generate** group, click **Send quotation**.
@@ -85,20 +85,20 @@ Example:
 20. On the Action Pane, on the **Sales order** tab, in the **Maintain** group, click **Edit**
 21. Click **Tax information**
 
-   ![](media/GST-Whitepaper/Capture06.PNG)
+   ![](media/Capture06.PNG)
 
 22. Click the **GST** tab
 
-   ![](media/GST-Whitepaper/Capture07.PNG)
+   ![](media/Capture07.PNG)
 
 23. Click the **Customer tax information** tab
 
-   ![](media/GST-Whitepaper/Capture08.PNG)
+   ![](media/Capture08.PNG)
 
 24. Click **OK**.
 25. On the Action Pane, on the **Sell** tab, in the **Tax** group, click **Tax document** to review the calculated taxes
 
-   ![](media/GST-Whitepaper/Capture09.PNG)
+   ![](media/Capture09.PNG)
 
 26. Click Close.
 
@@ -117,4 +117,4 @@ Example:
 
 Financial entries for both the intrastate and interstate transactions
 
-![](media/GST-Whitepaper/Annotation-2019-05-20-133425.png)
+![](media/Annotation-2019-05-20-133425.png)
