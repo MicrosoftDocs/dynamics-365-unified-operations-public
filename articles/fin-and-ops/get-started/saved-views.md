@@ -51,13 +51,15 @@ While users could only have a single set of personalizations per form with tradi
 Once views have been enabled for an environment, any page that supports views will include a collapsed view selector control at the top of the form that shows the name of the current view.  
 
 There are two size variations to the view selector: 
--   Large view selectors
+-   **Large view selectors**
 
-     [![Large view selector on the All customers form](./media/cli-largeViewSelector.png "Large view selector on the All customers form")](./media/cli-largeViewSelector.png)
+     [![Large view selector on the All customers page](./media/cli-largeViewSelector.png "Large view selector on the All customers form")](./media/cli-largeViewSelector.png)
 
      Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters. Because filters are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types.  
  
--   Small view selectors
+-   **Small view selectors**
+
+    [![Small view selector on the Customer details page](./media/cli-smallViewSelector.png "Small view selector on the Customer details page")](./media/cli-smallViewSelector.png)
 
     All other full-page forms have a smaller view selector that appears next to the page caption. Views on these pages only include personalizations (and not user-defined filters). On these pages, the form caption or record title is often the most important information at the top of the form. The smaller size also reflects a lower expected frequency of view switching on these pages. 
  
@@ -67,6 +69,9 @@ If you click on the view name, the view selector opens and shows the list of ava
 -    **Personal views**: The views without padlocks represent your personal views. These are views that either you have created or that an administrator has given to you.  
 -    **Locked views**: Some views (like the Classic view and any views published to your role) have a padlock next to them in the view selector, indicating you cannot edit those views; however, implicit personalizations (e.g. changing the width of a grid column or expanding or collapsing a fast tab) around page usage are automatically saved. You can, however, make a personal view based on a locked view via the **Save a copy** action, if you have personalization privileges.
 -    **New views**: Published views that have not yet been opened are delineated with a spark to the left of the view name.  
+
+[![Understanding the view selector](./media/cli-viewSelector.png "Understanding the view selector")](./media/cli-viewSelector.png)
+
 
 To switch to a different view, first open the view selector and then select the view you want to load. 
 
