@@ -27,6 +27,7 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 
+---
 
 # Improve master planning performance
 This topic explains options to improve the performance of master planning and troubleshoot issues. It includes parameters and settings as well as recommended configurations and actions. It is intended for system administrators or IT users with capability to troubleshoot, as well as for the production or supply planner, as it includes parameters focused on the business planning requirements. This topic also includes a checklist summary of all the important parameters to consider when facing long running master planning jobs.  
