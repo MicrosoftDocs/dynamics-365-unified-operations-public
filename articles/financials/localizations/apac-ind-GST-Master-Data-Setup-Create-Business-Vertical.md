@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Create a business vertical
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -41,11 +41,11 @@ To enable India localization solution for GST in Dynamics 365 for finance and op
 
 This article describes how to define business vertical
 
-## Create a business vertical
+# Create a business vertical
 
 1. Click **Tax > Setup > Sales tax > Business verticals**
 2. Click **New** to create a record
 3. Enter a name, description, and entity code for the new business vertical
 4. Click **Close**
 
-![](Media/GST-Whitepaper/IND-GST-BusinessVertical.png)
+![](Media/IND-GST-BusinessVertical.png)
