@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchase of taxable goods where there are shipping charges
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchase of taxable goods where there are shipping charges
+# Purchase of taxable goods where there are shipping charges
 
 1. Click **Accounts payable > Purchase orders > All purchase orders**.
 2. Create a purchase order for a taxable item.
@@ -64,7 +64,7 @@ Note: Freight charges are added to the assessable value.
 16. On the Action Pane, click **Post > Post**.
 17. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the **Overview** tab, click **Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-102702.png)
+![](media/Annotation-2019-05-16-102702.png)
 
 
 
