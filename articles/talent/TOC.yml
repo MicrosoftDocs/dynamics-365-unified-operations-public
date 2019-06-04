@@ -2,8 +2,9 @@
   href: index.md
   items:
   - name: Get started
-    href: talent-get-started.md
     items:
+    - name: Get started with Talent
+      href: talent-get-started.md
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
@@ -105,9 +106,9 @@
       href: Process-templates-Attract.md
     - name: Create, approve, and post jobs in Attract
       href: Creating-jobs-Attract.md
-    - name: Post jobs to external sites from Attract
+    - name: Post jobs to external career sites from Attract
       href: posting-jobs-external.md
-    - name: Source candidates with talent pools
+    - name: Source candidates by using talent pools
       href: attract-talent-pools.md
     - name: Sourcing with LinkedIn Recruiter
       href: attract-linked-in-recruiter.md
@@ -115,7 +116,7 @@
       href: activities-attract.md
     - name: Interview scheduling and feedback
       href: interview-scheduling-feedback.md
-    - name: Extensibility
+    - name: Extensibility in Attract
       href: extensibility-attract.md
     - name: Career site functionality in Attract
       href: career-site.md
@@ -258,7 +259,7 @@
         href: working-time-calendars.md
     - name: Set up compensation plans
       items:
-      - name: Compensation plans
+      - name: Compensation plans overview
         href: compensation-plans.md
       - name: Create fixed compensation plans
         href: create-fixed-compensation-plans.md
@@ -312,7 +313,7 @@
         href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
   - name: Integration
     items:
-    - name: Integrate to Dynamics 365 for Finance and Operations
+    - name: Integrate with Dynamics 365 for Finance and Operations
       href: talent-financeandoperations-integration.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
