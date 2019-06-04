@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Import of goods where there is GST
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Import of goods where there is GST
+# Import of goods where there is GST
 
 1. Click **Accounts payable > Purchase orders > All purchase orders**.
 
@@ -38,17 +38,17 @@ ms.dyn365.ops.version: 10.0.4
 
 4. Click **Tax information**
 
-   ![](media/GST-Whitepaper/Capture2019052101.PNG)
+   ![](media/Capture2019052101.PNG)
 
 5. Click the **GST** tab
 
 6. Click the **Customs** tab
 
-   ![](media/GST-Whitepaper/Capture2019052104.PNG)
+   ![](media/Capture2019052104.PNG)
 
 7. Click the **Vendor tax information** tab
 
-   ![](media/GST-Whitepaper/Capture2019052103.PNG)
+   ![](media/Capture2019052103.PNG)
 
 8. Click OK.
 
@@ -62,11 +62,11 @@ ms.dyn365.ops.version: 10.0.4
 
 13. Save the record.
 
-    ![](media/GST-Whitepaper/Capture2019052105.PNG)
+    ![](media/Capture2019052105.PNG)
 
 14. Click Close
 
-    ![](media/GST-Whitepaper/Capture2019052106.PNG)
+    ![](media/Capture2019052106.PNG)
 
 Note: The assessable value is calculated as Net amount + Misc. charges + 1% of Landing charges that are defined in Accounts payable parameters
 
@@ -114,4 +114,4 @@ Note: IGST can be calculated on Assessable value + BCD tax amount, by extending 
 
 Sample Journal Entry for Import Purchase Order with GST
 
-![](media/GST-Whitepaper/Annotation-2019-05-20-165539.png)
+![](media/Annotation-2019-05-20-165539.png)
