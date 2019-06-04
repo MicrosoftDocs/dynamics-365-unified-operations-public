@@ -377,6 +377,8 @@
       href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json     
   - name: Troubleshoot Talent
     items:
+    - name: Troubleshoot posting jobs to LinkedIn
+      href: attract-troubleshoot-linkedin.md
     - name: Analytic reports aren't updated
       href: analytic-reports-not-updated.md
     - name: Can't create an environment in the PowerApps Admin center

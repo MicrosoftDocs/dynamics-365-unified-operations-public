@@ -40,7 +40,9 @@ Microsoft Dynamics 365 for Talent: Attract provides two ways to integrate with L
 - Source candidates from LinkedIn to Attract
 
 > [!NOTE]
-> You need the Comprehensive hiring add-on and LinkedIn Recruiter seats to be able to use LinkedIn Recruiter integration with Attract. For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md).
+> You need the Comprehensive hiring add-on and LinkedIn Recruiter licenses to be able to use LinkedIn Recruiter integration with Attract. For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md).
+
+If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md).
 
 ## Configure job posting to LinkedIn
 
@@ -60,7 +62,7 @@ Before you can post jobs from Attract to LinkedIn, you need a LinkedIn Company I
 > Keep in mind the following about posting jobs to LinkedIn:
 > 1. Without further configuration, Attract posts jobs to LinkedIn as Limited Listing jobs. These are free job postings that candidates can see on LinkedIn while they're activily searching for jobs or while viewing your company page on LinkedIn. You can't promote Limited Listing jobs on LinkedIn. If you want to promote Limited Listings, you need to work with LinkedIn to enable Job Wrapping. For more information about Job Wrapping, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping) and [Job Wrapping Plus - FAQs](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions).
 >
-> 2. When posting jobs to LinkedIn, Attract provides the Microsoft 365 organization with the job. LinkedIn links the job to a company based on the organization name provided. If your job is listed with the wrong company on LinkedIn, check that your Microsoft 365 organization name matches the company name on LinkedIn. If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more). If you still have problems, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
+> 2. When posting jobs to LinkedIn, Attract provides the Microsoft 365 organization with the job. LinkedIn links the job to a company based on the organization name provided. If your job is listed with the wrong company on LinkedIn, check that your Microsoft 365 organization name matches the company name on LinkedIn. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972). If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more). If you still have problems, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
 >
 > 3. Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs. 
 >
@@ -76,6 +78,9 @@ LinkedIn offers the following types of job postings:
 At this time, Attract only supports Limited Listings. Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day, so it can take up to 24 hours for your jobs to post to the site. For more information about the types of job postings available on LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping).
 
 The following table describes the products available for job delivery into LinkedIn. At this time, Attract uses the Limited Listings product.
+
+>[!NOTE]
+>You don't need a LinkedIn Recruiter System Connect (RSC) license to post jobs to LinkedIn with Attract.
 
 | Product | Limited Listings (Attract) | Job Wrapping (XML or career site) | Job Posting API | Recruiter System Connect (RSC) API |
 |---|---|---|---|---|
@@ -138,10 +143,10 @@ You can allow candidates to apply to your jobs with their LinkedIn profiles.
 
 3.  Select **Connect** next to **Apply with LinkedIn** to start the setup, which will guide you through the rest of the process with LinkedIn.
 
-
 ## See also
 
 [Post jobs to external sites from Attract](./posting-jobs-external.md)<p></p>
 [Source candidates with LinkedIn Recruiter](./attract-linked-in-recruiter.md)<p></p>
-[Create jobs](./creating-jobs-attract.md)
+[Create jobs](./creating-jobs-attract.md)<p></p>
+[Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md)
 

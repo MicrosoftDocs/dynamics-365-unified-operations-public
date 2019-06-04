@@ -35,6 +35,19 @@ ms.dyn365.ops.version: Platform update 24
 
 Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to LinkedIn directly from Attract. After you [create a job](./creating-jobs-attract.md), all you have to do is push a button to put your job in front of thousands of potential candidates on LinkedIn.
 
+The following table shows the actions you can perform on LinkedIn, depending on your user role.
+
+| Your role | Actions you can take |
+| --- | --- |
+| Admin | post, re-post, unpost |
+| Hiring manager | read only |
+| Recruiter | post, re-post, unpost |
+| Interviewer | no access |
+| Read-only | read only |
+
+
+For more information about user roles in Attract, see [Security and role management in Attract](./security-attract.md).
+
 If you're an admin who needs more information about configuring LinkedIn integration with Attract, see [Set up integration with LinkedIn](./attract-admin-linkedin.md).
 
 ## Post jobs to LinkedIn
@@ -50,15 +63,10 @@ After LinkedIn successfully completes the posting, the **Postings** section of t
 
 It can take up to 24 hours for your job to appear in LinkedIn. All job postings done with attract are Limited Listings. For more information about Limited Listings in LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049).
 
-## Troubleshoot job posting to LinkedIn
-
-If you're having trouble posting a job to LinkedIn, try these steps:
-
-1. Verify that the LinkedIn credentials that you entered in Attract are valid and correct.
-2. If the credentials are valid and correct, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
-3. If the issue persists, contact [Microsoft support](./talent-support.md).
+If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md).
 
 ## See also
 
 [Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
-[Create jobs](./creating-jobs-attract.md)
+[Create jobs](./creating-jobs-attract.md)<p></p>
+[Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md)
