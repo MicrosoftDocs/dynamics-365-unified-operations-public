@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Free text invoices
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Free text invoices
+# Free text invoices
 
 1. Click **Accounts receivable > Free text invoices > All free text invoices**.
 2. Create a free text invoice for taxable services.
@@ -61,7 +61,7 @@ Example:
 
 Financial entries for both the intrastate and interstate transactions
 
-![](media/GST-Whitepaper/Annotation-2019-05-20-133425.png)
+![](media/Annotation-2019-05-20-133425.png)
 
 
 
