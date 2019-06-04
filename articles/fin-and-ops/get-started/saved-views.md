@@ -53,6 +53,8 @@ Once views have been enabled for an environment, any page that supports views wi
 There are two size variations to the view selector: 
 -   Large view selectors
 
+     [![Large view selector on the All customers form](./media/cli-largeViewSelector.png "Large view selector on the All customers form")](./media/cli-largeViewSelector.png)
+
      Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters. Because filters are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types.  
  
 -   Small view selectors
