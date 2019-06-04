@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Create a tax settlement period
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -42,19 +42,19 @@ To enable India localization solution for GST in Dynamics 365 for finance and op
 This article describes how to create a tax settlement period
 
 
-## Create a tax settlement period
+# Create a tax settlement period
 
 1 Click **Accounts payable > Vendors > All vendors**, and create a GST authority
 
-![GST authority](media/GST-Whitepaper/GST-authority.png)
+![GST authority](media/GST-authority.png)
 
 2 Click **Tax > Indirect tax > Sales tax > Sales tax authorities**, create a tax authority and assign step 1 vendor account to it
 
-![tax authority](media/GST-Whitepaper/tax-authority.png)
+![tax authority](media/tax-authority.png)
 
 3 Click **Tax > Indirect tax > Sales tax > Sales tax settlement periods**, and create a tax period for GST
 
-![tax settlement period](media/GST-Whitepaper/tax-settlement-period.png)
+![tax settlement period](media/tax-settlement-period.png)
 
 
 
