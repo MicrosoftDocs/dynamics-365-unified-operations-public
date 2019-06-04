@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchase of goods where there is a discount
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchase of goods where there is a discount
+# Purchase of goods where there is a discount
 
 1. Click **Accounts payable > Purchase orders > All purchase orders**.
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.4
 
 4. Save the record.
 
-   ![](media/GST-Whitepaper/Annotation-2019-05-15-175044.png)
+   ![](media/Annotation-2019-05-15-175044.png)
 
 ### Validate the tax details
 
@@ -47,7 +47,7 @@ ms.dyn365.ops.version: 10.0.4
 7. Click **Close**.
 8. Click **Confirm**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-175140.png)
+![](media/Annotation-2019-05-15-175140.png)
 
 ### Post the purchase invoice
 
@@ -57,7 +57,7 @@ ms.dyn365.ops.version: 10.0.4
 12. On the **Action** Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post > Post**.
 13. On the **Action** Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the **Overview** tab, click **Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-174500.png)
+![](media/Annotation-2019-05-15-174500.png)
 
 
 
