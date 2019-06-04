@@ -57,7 +57,7 @@ There are two size variations to the view selector:
 
      Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters. Because filters are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types.  
  
--    Small view selectors
+-   Small view selectors
 
     All other full-page forms have a smaller view selector that appears next to the page caption. Views on these pages only include personalizations (and not user-defined filters). On these pages, the form caption or record title is often the most important information at the top of the form. The smaller size also reflects a lower expected frequency of view switching on these pages. 
  
@@ -78,11 +78,11 @@ To ensure the current state of the view is known, once you start making changes 
 If you want to save those changes, 
 1.	Click on the view name to open the view selector.
 2.	To modify the existing view,
-a.	Select **Save**. Note this action will not be enabled for locked views. 
+     1. Select **Save**. Note this action will not be enabled for locked views. 
 3.	To create a new view,
-a.	Select **Save a copy**. 
-b.	Enter a view name and (optionally) a description.
-c.	Select **Save**.
+     1.    Select **Save a copy**. 
+     2.    Enter a view name and (optionally) a description.
+     3.    Select **Save**.
 
 ## Changing the default view
 The default view is the view that the system will try to open when you first navigate to the page. You should set this to the view you expect to use often.  
@@ -129,7 +129,7 @@ To publish a view, follow these steps:
 
 Note in some environments, it may take some time (up to an hour) before users see the published view.
 
-##Modifying a published view
+## Modifying a published view
 After publishing a view, you may discover that you want to make changes to a published view. While you cannot make live changes to a published view, since these views are locked for editing for all users (including publishers), you can re-publish a view to make updates.  
 
 If the changes you want to make to a published view only involve the publish parameters (the name and description of the view, or the security roles the view is published to), do the following: 
@@ -158,7 +158,7 @@ For the list of all published views for the page, the following set of actions a
 Any changes made in this dialog will take effect once the Save button is pressed.
 
 ## Frequently asked questions
-###How do I enable saved views in my environment? 
+### How do I enable saved views in my environment? 
 To enable saved views, a system administration should do the following: 
 1.	Navigate to the **Personalization** page using navigation search. 
 2.	Click on the **Settings** tab
