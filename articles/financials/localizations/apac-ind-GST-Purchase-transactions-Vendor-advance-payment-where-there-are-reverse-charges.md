@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Vendor advance payment where there are reverse charges
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/042019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Vendor advance payment where there are reverse charges
+# Vendor advance payment where there are reverse charges
 
 1. Click **Accounts payable > Payments > Vendor Payment journal**.
 2. Create a record.
@@ -66,4 +66,4 @@ Example:
 ### Validate the financial entries
 19. Click **Inquiries > Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-113421.png)
+![](media/Annotation-2019-05-16-113421.png)
