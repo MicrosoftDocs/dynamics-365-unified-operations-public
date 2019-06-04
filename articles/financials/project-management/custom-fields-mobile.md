@@ -160,13 +160,13 @@ For fields of the **Date** type, this property passes the date value of the fiel
 
 Below is a screenshot from the mobile app of a timesheet entry creation. It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.
 
-![Test string custom field in the app](media/967f517136dd0ae7b80ed002895f6141.jpg)
+![Test string custom field in the app](media/timesheet-entry.jpg)
 
 
 
 Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.  The two options are "First option" and "Second option" shown as radio buttons. The second option is currently selected.
 
-![Option buttons (radio buttons) for the Test string custom field](media/a7c137fdd47b4a0b7ab2ce436bf09fe9.jpg)
+![Option buttons (radio buttons) for the Test string custom field](media/enum-option.jpg)
 
 
 
@@ -324,13 +324,13 @@ final class TSTimesheetEntryService_Extension
 
 Below is a screenshot from the mobile app of a user viewing a timesheet. The "More information" button has been selected in the upper-right corner to show the "View more details" option.  
 
-![View more details command](media/ec64aa4ad40cb5e4cc88afe170b81085.png)
+![View more details command](media/show-more.png)
 
 
 
 Below is a screenshot from the mobile app showing the “More” section of a timesheet. A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section. A read-only value of "0.667" is set on the custom field.
 
-![More field](media/4699048932d914c27e264bdb95cf514a.jpg)
+![More section](media/more-section.jpg)
 
 
 
