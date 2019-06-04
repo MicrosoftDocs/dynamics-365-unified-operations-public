@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamic negative days
+title: Negative days and Dynamic negative days
 description: 
 author: 
 manager: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dynamic negative days
+# Negative days and Dynamic negative days
 
 This topic covers how you can better understand Dynamic negative days to help your business. *Negative days time fence* represents the number of days you are willing to wait with negative inventory before ordering new replenishment.
 
