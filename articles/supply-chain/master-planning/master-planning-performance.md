@@ -37,7 +37,7 @@ There are different parameters to consider that will influence your master plann
 ### Number of threads 
 This setting enables you to adjust the master scheduling process so that the process performs better on the specific data set. 
 
-The number of threads indicates the total amount of threads that are going to be used for running master planning. It leads to the parallelization of the master planning run, which leads to a faster running time. The number of threads is found in the **Master planning run** dialog. The best value for this parameter is found following a trial and error process. However, you can use the following formulas to calculate an initial value to start value.
+The number of threads indicates the total amount of threads that are going to be used for running master planning. It leads to the parallelization of the master planning run, which leads to a faster running time. The number of threads is found in the **Master planning run** dialog. To get to the dialog, go to **Master planning > Master planning > Run > Master planning**, or click **Run** in the **Master planning** workspace. The best value for this parameter is found following a trial and error process. However, you can use the following formulas to calculate an initial value to start value.
 
 If your industry is Manufacturing: #ofThreads = #PlannedOrders / 1000 
 Otherwise: #ofThreads = #Items / 1000
