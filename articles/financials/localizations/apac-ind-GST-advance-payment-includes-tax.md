@@ -40,10 +40,9 @@ Complete the following procedures to create a customer advance payment journal a
 5. Click **Lines**.
 6. Create a customer advance payment journal.
 7. Save the record.
-8. Click **Tax information**
-9. On the **GST** tab, in the **HSN code** field, select a value
-10. Click the **Customer tax information** tab
-11. Click OK.
+8. Click **Tax information**.
+9. On the **GST** tab, in the **HSN code** field, select a value.
+10. Click the **Customer tax information** tab, and then click **OK**.
 
 ## Validate the tax details
 
