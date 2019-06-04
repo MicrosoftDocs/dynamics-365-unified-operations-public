@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer payment refund
-description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+description:  This topic includes information about customer payment refunds.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/03/2019
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -31,32 +31,30 @@ ms.dyn365.ops.version: 10.0.4
 # Customer payment refund
 
 1. Click **Accounts receivable > Payments > Payment journal**.
-2. Create a record.
-3. In the **Name** field, select a value.
-4. On the **Setup** tab, select the **Amounts include sales tax** check box.
-5. Click **Lines**.
-6. Create a customer advance payment journal
-7. Save the record.
-8. Click **Tax information**
-9. On the **GST** tab, in the **HSN code** field, select a value
-10. Click the **Customer tax information** tab.
-11. Click OK.
+2. Create a new record, and in the **Name** field, select a value.
+3. On the **Setup** tab, select the **Amounts include sales tax** check box.
+4. Click **Lines**.
+5. Create a customer advance payment journal and sav the record.
+6. Click **Tax information**.
+7. On the **GST** tab, in the **HSN code** field, select a value.
+8. Click the **Customer tax information** tab.
+9. Click OK.
 
 ### Validate the tax details
 
-12. Click **Tax document**.
+1. Click **Tax document**.
 
 Example:
 
 - IGST: 20 percent
 
-13. Click Close.
-14. Click **Post > Post.**
-15. Close the message.
+2. Click Close.
+3. Click **Post > Post.**
+4. Close the message.
 
 ### Validate the financial entries
 
-16. Click **Inquiries > Voucher**
+To validate the financial entries, cick **Inquiries > Voucher**
 
 ![](media/Annotation-2019-05-21-132929.png)
 
