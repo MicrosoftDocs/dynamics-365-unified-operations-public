@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchase of non-GST goods
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchase of non-GST goods
+# Purchase of non-GST goods
 
 1. Click **Accounts payable > Purchase orders > All purchase orders**.
 2. Create a purchase order, and define value-added tax (VAT) tax groups.
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.4
 5. In the **Tax Information** field, select the Tax Identification Number (TIN).
 6. On the **VAT** tab, in the **Non recoverable pct.** field, enter **100.00**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-095850.png)
+![](media/Annotation-2019-05-16-095850.png)
 
 7. Click **OK**.
 8. On the **Line details** FastTab, on the **Setup** tab, select values in the **Item sales tax group** and **Sales tax groups** fields.
@@ -58,7 +58,7 @@ Note: The Tax document button isn’t available.
 16. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post > Post**.
 17. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the **Overview** tab, click **Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-095645.png)
+![](media/Annotation-2019-05-16-095645.png)
 
 
 
