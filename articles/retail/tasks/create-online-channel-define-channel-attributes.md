@@ -5,7 +5,7 @@ title: Create online channel and define channel attributes
 description: This procedure walks through creating a new online channel and adding it to the organization hierarchy. 
 author: jashanno
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 06/04/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -65,7 +65,7 @@ This procedure walks through creating a new online channel and adding it to the 
 
 ## Configure orders for near realtime notification
 1. Go to Retail  > Headquarters setup > Parameters > Retail parameters.
-2. Set 'Use realtime service for eCommerce order creation' to "Yes".
+2. Set Use realtime service for eCommerce order creation to "Yes".
 3. Run the 1070 distribution schedule to sync changes to the channel database. 
 
 
