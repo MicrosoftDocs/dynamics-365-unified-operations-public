@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## Feature exposure
