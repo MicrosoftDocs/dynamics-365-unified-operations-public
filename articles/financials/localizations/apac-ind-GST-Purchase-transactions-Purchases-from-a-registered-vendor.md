@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchases from a registered vendor
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchases from a registered vendor
+# Purchases from a registered vendor
 
 ### Purchase of goods and services
 
@@ -41,7 +41,7 @@ ms.dyn365.ops.version: 10.0.4
 5. Close the message.
 6. Close the **Request for quotation details** form.
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-171525.png)
+![](media/Annotation-2019-05-15-171525.png)
 
 #### Request for quotation replies
 
@@ -55,15 +55,15 @@ ms.dyn365.ops.version: 10.0.4
 
 11. On the **Purchase quotation lines** FastTab, click **Tax information**
 
-    ![](media/GST-Whitepaper/Annotation-2019-05-15-171959.png)
+    ![](media/Annotation-2019-05-15-171959.png)
 
 12. Click the **GST** tab
 
-    ![](media/GST-Whitepaper/Annotation-2019-05-15-172049.png)
+    ![](media/Annotation-2019-05-15-172049.png)
 
 13. Click the **Vendor tax information** tab.
 
-    ![](media/GST-Whitepaper/Annotation-2019-05-15-172136.png)
+    ![](media/Annotation-2019-05-15-172136.png)
 
 14. Click **OK**
 
@@ -97,12 +97,12 @@ Example:
 
 26. On the **Purchase order lines** FastTab, click **Tax information**.
 
-    ![](media/GST-Whitepaper/Annotation-2019-05-15-171959.png)
+    ![](media/Annotation-2019-05-15-171959.png)
 
 27. Click the **GST** tab.
-    ![](media/GST-Whitepaper/Annotation-2019-05-15-172049.png)
+    ![](media/Annotation-2019-05-15-172049.png)
 28. Click the **Vendor tax information** tab
-    ![](media/GST-Whitepaper/Annotation-2019-05-15-172136.png)
+    ![](media/Annotation-2019-05-15-172136.png)
 
 29. Click **OK**.
 
@@ -130,31 +130,31 @@ Example:
 
 - Financial entry for the purchase of goods
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-173233.png)
+![](media/Annotation-2019-05-15-173233.png)
 
 - Financial entry for the purchase of services
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-173325.png)
+![](media/Annotation-2019-05-15-173325.png)
 
 - Financial entry for the purchase of goods where the ITC category is set to Others
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-173406.png)
+![](media/Annotation-2019-05-15-173406.png)
 
 - Financial entry for the purchase of services where the service category is set to Others
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-173457.png)
+![](media/Annotation-2019-05-15-173457.png)
 
 - Financial entry for the purchase of goods where the load on inventory is set to 100 percent
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-173548.png)
+![](media/Annotation-2019-05-15-173548.png)
 
 - Financial entry for the purchase of goods where the reverse charge is set to 100 percent
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-173632.png)
+![](media/Annotation-2019-05-15-173632.png)
 
 - Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-173734.png)
+![](media/Annotation-2019-05-15-173734.png)
 
 
 
