@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Create main accounts for the GST posting type
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -43,7 +43,7 @@ This article describes how to create main accounts for the GST posting type
 
 
 
-## Create main accounts for the GST posting type
+# Create main accounts for the GST posting type
 
 1. Click **General ledger > Chart of Accounts > Accounts > Main accounts**
 2. Create a record
@@ -54,5 +54,5 @@ This article describes how to create main accounts for the GST posting type
 7. Repeat steps 2 through 6 to create all the other required state-wide ledger accounts
 8. **Save** and **Close**
 
-![Create main accounts for the GST posting type](media/GST-Whitepaper/Create-main-accounts-for-the-GST-posting-type.png)
+![Create main accounts for the GST posting type](media/Create-main-accounts-for-the-GST-posting-type.png)
 
