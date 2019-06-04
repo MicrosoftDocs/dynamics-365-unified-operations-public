@@ -102,42 +102,72 @@
       href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
-    - name: Create a process template in Attract
-      href: Process-templates-Attract.md
-    - name: Create, approve, and post jobs in Attract
-      href: Creating-jobs-Attract.md
-    - name: Post jobs to external career sites from Attract
-      href: posting-jobs-external.md
-    - name: Source candidates by using talent pools
-      href: attract-talent-pools.md
-    - name: Sourcing with LinkedIn Recruiter
-      href: attract-linked-in-recruiter.md
-    - name: Activities in the hiring processes 
-      href: activities-attract.md
-    - name: Interview scheduling and feedback
-      href: interview-scheduling-feedback.md
-    - name: Extensibility in Attract
+    - name: Configure system settings in Attract
+      items:
+      - name: Configure company information and branding
+        href: Admin-Settings-Attract.md
+      - name: Set user permissions
+        href: security-attract.md
+      - name: Manage features
+        href: 
+      - name: Set up your career site
+        href: 
+      - name: Enter settings for external job boards
+        href: attract-admin-job-board-settings.md
+      - name: Establish your job offer process
+        href:
+      - name: Allow digital signing
+        href:
+      - name: Enable template management
+        href:
+      - name: Provide global settings for email templates
+        href:
+      - name: Set up integration with LinkedIn
+        href: attract-admin-linkedin.md
+      - name: Create EEO/OFCCP reports
+        href: 
+    - name: Create a hiring process
+      items:
+      - name: Create a hiring process template
+        href: Process-templates-Attract.md
+      - name: Activities in the hiring processes 
+        href: activities-attract.md
+      - name: Email templates
+        href: email-templates.md
+      - name: Use analytic reports for hiring process insights
+        href: analytic-reports.md 
+    - name: Create and post jobs
+      items:
+      - name: Create jobs
+        href: Creating-jobs-Attract.md
+      - name: Post jobs to LinkedIn
+        href: attract-post-jobs-to-linkedin.md
+      - name: Post jobs to Broadbean
+        href: posting-jobs-external.md
+      - name: Career site functionality in Attract
+        href: career-site.md
+    - name: Source candidates
+      items:
+      - name: Source candidates with talent pools
+        href: attract-talent-pools.md
+      - name: Source candidates with LinkedIn Recruiter
+        href: attract-linked-in-recruiter.md
+      - name: Track sources for candidate profiles and applications
+        href: source-tracking.md
+      - name: Intelligent recommendations
+        href: Intelligent-Recommendations.md
+    - name: Interview and make an offer
+    items:
+      - name: Interview scheduling and feedback
+        href: interview-scheduling-feedback.md
+      - name: Set up offer management
+        href: offer-setup.md
+      - name: Create, approve, and sign offers
+        href: creating-offers.md
+    - name: Extensibility
       href: extensibility-attract.md
-    - name: Career site functionality in Attract
-      href: career-site.md
-    - name: Set up offer management
-      href: offer-setup.md
-    - name: Create, approve, and sign offers
-      href: creating-offers.md
-    - name: Email templates
-      href: email-templates.md
-    - name: Security and role management in Attract
-      href: security-attract.md
-    - name: Admin settings in Attract
-      href: Admin-Settings-Attract.md
-    - name: Intelligent recommendations
-      href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
-    - name: Track sources for candidate profiles and applications
-      href: source-tracking.md
-    - name: Use analytic reports for hiring process insights
-      href: analytic-reports.md  
   - name: Manage your workforce with Core HR
     items: 
     - name: Organize your workforce
@@ -357,6 +387,8 @@
       href: corehr-custom-fields.md  
   - name: Troubleshoot Talent
     items:
+    - name: Troubleshoot posting jobs to LinkedIn
+      href: attract-troubleshoot-linkedin.md
     - name: Analytic reports aren't updated
       href: analytic-reports-not-updated.md
     - name: Can't create an environment in the PowerApps Admin center
