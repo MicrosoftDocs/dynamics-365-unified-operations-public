@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Payment of an invoice that has tax
 
-Complete the following steps to post an invoice thatincludes sales tax.
+Complete the following steps to post an invoice that includes sales tax.
 
 1. Click **Accounts receivable > Payments > Payment journal**.
 2. Create a record, and in the **Name** field, select a value.
