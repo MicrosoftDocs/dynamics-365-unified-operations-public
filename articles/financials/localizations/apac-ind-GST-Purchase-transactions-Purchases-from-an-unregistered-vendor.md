@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchases from an unregistered vendor
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchases from an unregistered vendor
+# Purchases from an unregistered vendor
 
 ### Purchase requisition
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.4
 
 3. Save the record. The **Tax information** button becomes available
 
-   ![](media/GST-Whitepaper/Annotation-2019-05-15-153813.png)
+   ![](media/Annotation-2019-05-15-153813.png)
 
 4. Click **Tax information**
 
@@ -56,7 +56,7 @@ Notes:
 
 7. Click **OK**
 
-   ![](media/GST-Whitepaper/Annotation-2019-05-15-160543.png)
+   ![](media/Annotation-2019-05-15-160543.png)
 
 8. On the **Action** Pane, on the **Purchase Requisition** tab, in the **Summary**, click **Tax document** to review the calculated taxes.
 
@@ -67,7 +67,7 @@ Notes:
 
 - SGST: 10 percent
 
-  ![](media/GST-Whitepaper/Annotation-2019-05-15-161112.png)
+  ![](media/Annotation-2019-05-15-161112.png)
 
 9. Click **Close**.
 10. Click **Submit**.
@@ -108,7 +108,7 @@ Example:
 - CGST: 5 percent
 - SGST: 10 percent
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-163603.png)
+![](media/Annotation-2019-05-15-163603.png)
 
 If you change any tax attributes after the order line is created, click Recalculate to recalculate tax
 
@@ -124,39 +124,39 @@ If you change any tax attributes after the order line is created, click Recalcul
 34. On the **Action** Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the Overview tab, click Voucher.
 - Financial entry for the purchase of goods
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-165701.png)
+![](media/Annotation-2019-05-15-165701.png)
 
 Note: After the authority payment, the credit should be claimed
 
 - Financial entry for the purchase of services
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-165743.png)
+![](media/Annotation-2019-05-15-165743.png)
 
 Tax liability arises on invoice payment
 
 - Financial entry on invoice payment
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-165829.png)
+![](media/Annotation-2019-05-15-165829.png)
 
 Note: An appropriate Service accounting code must be selected
 
 - Financial entry for the purchase of goods where the ITC category is set to Others
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-165912.png)
+![](media/Annotation-2019-05-15-165912.png)
 
 - Financial entry for the purchase of services where the service category is set to Others
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-165958.png)
+![](media/Annotation-2019-05-15-165958.png)
 
 Tax liability arises on invoice payment
 
 - Financial entry on invoice payment
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-170044.png)
+![](media/Annotation-2019-05-15-170044.png)
 
 - Financial entry for purchases where the load on inventory is set to 100 percent
 
-![](media/GST-Whitepaper/Annotation-2019-05-15-170133.png)
+![](media/Annotation-2019-05-15-170133.png)
 
 
 
