@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Quality order that involves destruction of the sampling item
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Quality order that involves destruction of the sampling item
+# Quality order that involves destruction of the sampling item
 
 ### Purchase order form
 
@@ -77,7 +77,7 @@ Note: Tax is calculated for the quantity that was used for the quality check and
 23. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post > Post**.
 24. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the **Overview** tab, click **Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-113025.png)
+![](media/Annotation-2019-05-16-113025.png)
 
 
 
