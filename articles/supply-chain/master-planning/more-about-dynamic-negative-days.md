@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: More about (dynamic) negative days
+title: Dynamic negative days
 description: 
 author: 
 manager: 
-ms.date: 5/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -30,20 +30,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# More about (dynamic) negative days
+# Dynamic negative days
 
-*Negative days time fence* represents the number of days you are willing to wait with negative inventory before ordering new replenishment. But how do the negative days really work?
+This topic covers how you can better understand Dynamic negative days to help your business. *Negative days time fence* represents the number of days you are willing to wait with negative inventory before ordering new replenishment.
 
-In this post:  
-- I will be explaining how planned orders get created, taking into account the negative days time fence.
-- I will touch upon the correlation between the negative days time fence and the item’s lead time.
-- I will also explain the Dynamic negative days time fence calculation and how that factors in the item's lead time into the calculation of the time fence.
-- I will also try to better explain the [MRP runtime improvement suggestions](http://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) related to negative days.
-- I will explain the above in the context of three different situations. The difference between these situations is at what point within the item’s lead time you get demand.
+In this topic, you will learn:
+- How planned orders get created
+- How the negative days time fence and the item's lead time correlate
+- How the Dynamic negative days time fence is calculated, and how that factors in the item's lead time into the calculation of the time fence
+- How to interpret the [MRP runtime improvement suggestions](http://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) related to negative days
 
-Please excuse the poor quality of the screenshots. Click on them to get a better view.
+This topic is best understood in three hypothetical situations. The difference between these situations is at what point within the items' lead time you get demand-- early, late, or at some time in between.
 
-## Situation 1
+## Early demand
+
+You may get demand relatively early within your items' lead time. For example, the situation may look like this:
 
 - Item `_DemoProduct` has a 6 days purchase lead time  
 - On day 0 (1st Jan) the inventory level for item `_DemoProduct` is 0  
@@ -103,7 +104,7 @@ If you both set the negative days to be greater than the item’s lead time and 
 
 - Item `_DemoProduct` has a 6 days purchase lead time  
 - On day 0 (1st Jan) the inventory level for item `_DemoProduct` is 0  
-- On day 4 (5st Jan), inside the item’s lead time, you get a sales order for item _DemoProduct, quantity 10  
+- On day 4 (5st Jan), inside the item’s lead time, you get a sales order for item `_DemoProduct`, quantity 10  
 - On day 7 (8th Jan) there is a purchase order for item `_DemoProduct`, quantity 10  
 
 ![What follows is a graph of the situation described](./media/negative-days-8.png)
