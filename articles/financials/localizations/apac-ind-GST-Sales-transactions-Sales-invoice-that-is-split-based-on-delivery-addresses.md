@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Sales invoice that is split based on delivery addresses
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Sales invoice that is split based on delivery addresses
+# Sales invoice that is split based on delivery addresses
 
 1. Click **Accounts receivable > Sales orders > All sales orders**.
 2. Create a sales order for taxable items.
@@ -84,11 +84,11 @@ Note: The invoice is split based on the delivery addresses.
 24. Select record with Invoice amount 12100.00
 25. Click Voucher.
 
-![](media/GST-Whitepaper/Annotation-2019-05-20-163117.png)
+![](media/Annotation-2019-05-20-163117.png)
 
 26. Click Close.
 27. Select record with Invoice amount 6050.00
 28. Click Voucher
 
-![](media/GST-Whitepaper/Annotation-2019-05-20-163156.png)
+![](media/Annotation-2019-05-20-163156.png)
 
