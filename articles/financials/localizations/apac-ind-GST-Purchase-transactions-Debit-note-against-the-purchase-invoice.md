@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Debit note against the purchase invoice
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Debit note against the purchase invoice
+# Debit note against the purchase invoice
 
 1. Click **General ledger > Journals > General journal**.
 2. Create a journal, and define a journal name.
@@ -56,7 +56,7 @@ Note: You can post a revised debit note by selecting Revised in the Invoice type
 ### Validate the financial entries
 19. Click **Inquiries > Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-110919.png)
+![](media/Annotation-2019-05-16-110919.png)
 
 
 
