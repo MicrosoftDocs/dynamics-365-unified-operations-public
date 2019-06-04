@@ -65,7 +65,7 @@ Example:
 16. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post > Post**.
 17. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the **Overview** tab, click **Voucher**
 
-![](media/GST-Whitepaper/Annotation-2019-05-21-134817.png)
+![](media/Annotation-2019-05-21-134817.png)
 
 
 
