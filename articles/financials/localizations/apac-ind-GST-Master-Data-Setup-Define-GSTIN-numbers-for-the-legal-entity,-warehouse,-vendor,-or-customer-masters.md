@@ -53,7 +53,7 @@ This article describes how to define GSTIN numbers and reference number sequence
 8. Click **Close**
 9. Repeat steps 2 through 7, for all the other required legal entity addresses
 
-![Define GSTIN for legal entity](media/Define-GSTIN-for-legal-entity.png)
+![Define GSTIN for legal entity](media/Define-GSTIN-for-legal-entity.PNG)
 
 
 
@@ -68,7 +68,7 @@ This article describes how to define GSTIN numbers and reference number sequence
 7. **Save** the record
 8. Click **Close**
 
-![Define GSTIN for warehouse](media/Define-GSTIN-for-warehouse.png)
+![Define GSTIN for warehouse](media/Define-GSTIN-for-warehouse.PNG)
 
 
 
@@ -83,11 +83,11 @@ This article describes how to define GSTIN numbers and reference number sequence
 7. **Save** the record
 8. Click **Close**
 
-![Define GSTIN for vendor](media/Define-GSTIN-for-vendor.png)
+![Define GSTIN for vendor](media/Define-GSTIN-for-vendor.PNG)
 
 9. On the **Tax information** FastTab, select the **Composition scheme** check box if a composition scheme is used to purchase from the dealer
 
-![Composite Dealer](media/Composite-Dealer.png)
+![Composite Dealer](media/Composite-Dealer.PNG)
 
 
 
@@ -101,9 +101,9 @@ This article describes how to define GSTIN numbers and reference number sequence
 6. Click **Yes** to acknowledge the message.
 7. **Save** the record.
 8. Click **Close**.
-![Define GSTIN for customer](media/Define-GSTIN-for-customer.png)
+![Define GSTIN for customer](media/Define-GSTIN-for-customer.PNG)
 9. On the **Tax information** FastTab, select the **Consumer** check box to identify the customer as a consumer
 10. For customer sales through an e-commerce operator, enter a value in the **Merchant ID** field, and select a value in the **Default E-Commerce operator** field
 11. In the **Customer type** field, select **Govt company or other agencies** for sales with government companies or other agencies
-![E-commerce operator](media/E-commerce-operator.png)
+![E-commerce operator](media/E-commerce-operator.PNG)
 
