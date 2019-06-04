@@ -72,7 +72,7 @@ You can create different plans on the **Master plans** page, under **Master plan
 
 ## Types of planning methods
 
-Master planning can be run using two different planning  calculation methods, net change and regeneration. Each planning method results in a different plan when run. The planning method is chosen in the **Master planning run** dialog, under **Master planning > Run > Master planning**. You can also find the dialog by clicking **Run** in the **Master planning** workspace. The characteristics of the planning methods are described below.
+Master planning can be run using two different planning  calculation methods, net change and regeneration. Each planning method results in a different plan when run. The planning method is chosen in the **Master planning run** dialog, under **Master planning > Run > Master planning**, or you can click **Run** in the **Master planning** workspace. The characteristics of the planning methods are described below.
   
 ### Regeneration 
 Regeneration deletes existing planned orders, unless they are firmed. It generates new planned orders based on all of the requirements. Regeneration is the only planning method available for static plans.
@@ -199,5 +199,5 @@ We recommend you set the negative days lower than the lead time of the item. The
 ### Dynamic negative days
 Dynamic negative days considers the item's lead time and the negative days that you establish. The system will create a new planned purchase order depending on the negative days time fence that is calculated as "Lead time + Negative days + today's date - requirement date". The system will only use the planned supply orders within this time fence and will create a new plan order outside of it. The advantage of dynamic negative days is that it will only use the planned receipts when the item will not arrive on time.
 
-You can find more information [here](FIX LINK  https://msdynamicsworld.com/story/ax-2012/significance-planning-data-negative-days-and-positive-days-microsoft-dynamics-ax). 
+You can find more information [here](https://msdynamicsworld.com/story/ax-2012/significance-planning-data-negative-days-and-positive-days-microsoft-dynamics-ax). 
  
