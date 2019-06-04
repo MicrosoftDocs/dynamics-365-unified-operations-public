@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Revised purchase invoice that has taxable goods
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Revised purchase invoice that has taxable goods
+# Revised purchase invoice that has taxable goods
 
 1. Click **Accounts payable > Purchase orders > All purchase orders**.
 2. Create a purchase order for a taxable item
@@ -59,7 +59,7 @@ Example:
 13. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post > Post**.
 14. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. Then, on the Overview tab, click Voucher.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-103252.png)
+![](media/Annotation-2019-05-16-103252.png)
 
 
 
