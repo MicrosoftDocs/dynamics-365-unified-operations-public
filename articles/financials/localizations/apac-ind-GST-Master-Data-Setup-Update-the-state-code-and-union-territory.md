@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Update the state code and union territory
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -41,7 +41,7 @@ To enable India localization solution for GST in Dynamics 365 for finance and op
 
 This artical describes how to define business vertical
 
-## Update the state code and union territory
+# Update the state code and union territory
 
 1. Click **Organization administration > Global address book > Addresses > Address setup**
 2. On the **State/province** tab, select a state
@@ -50,7 +50,7 @@ This artical describes how to define business vertical
 5. Click **Close**
    
 
-![](media/GST-Whitepaper/IND-GST-UpdateState.png)
+![](media/IND-GST-UpdateState.png)
 
 
 
