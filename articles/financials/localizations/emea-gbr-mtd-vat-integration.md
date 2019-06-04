@@ -163,6 +163,13 @@ In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and selec
 
 After the UK MTD-VAT setup.zip file is downloaded, open Finance and Operations, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
 
+Before you start importing setup data from the package of data entities, make sure the data entities in your application are refreshed and synchronized. For this purpose, follow these steps:
+1.	In **Data management** workspace select **Framework parameters** > **Entity settings** and click on **Refresh entity list** button. Wait for the confirmation of completeness of the refresh process in the Message center. (See [“Entity list refresh”](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/fin-and-ops/toc.json#entity-list-refresh) for details.)
+2.	[Validate that the source data and target data are mapped correctly](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+3.	Before the first usage of the data entities for importing of the data from package it is recommended to synchronize the mapping of source data and target data. Select each data entity in the list of the package and **Map target mapping** (on the Action pane), click **Generate mapping** button on top of the grid, create from scratch the mapping and save it. Repeat this step for each of the data entities in the package before starting import.
+More information about [Data management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json). 
+
+
 You must now import data from the UK MTD-VAT setup.zip file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **UK MTD-VAT setup.zip** file on your computer, and upload it.
 
 ![Upload and add button](media/emea-gbr-mtd-vat-add-file.png)
@@ -281,6 +288,12 @@ When a company is ready to interoperate in real life with MTD for VAT, it must c
 
 - **User ID** – The name that is used to access HMRC while an authorization code is being requested.
 - **Password** – The password that is used to access HMRC while an authorization code is being requested
+
+To work with MTD for VAT, VAT registration number of your Legal entity must be defined in the [Registration IDs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-registration-ids) of the legal entity. 
+1.	Create a [Registration type](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-registration-ids#registration-type-creation) which you are going to use for VAT registration numbers. 
+2.	Associate created Registration type with “**VAT ID**” [Registration category](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-registration-ids#supported-registration-categories).
+3.	Open **Organization administration** > **Global Address Book** > **Legal entities** and click **Registration ID** on the Action pane.
+4.	Define VAT registration number as a Registration ID of type which is associated with “**VAT ID**” Registration category:
 
 After the company has user credentials, an authorization process can be initialized. Two steps must be done before your system is ready to interoperate with HMRC:
 
@@ -448,6 +461,151 @@ The following security privileges are available for electronic messages.
 | Maintain electronic messages | This privilege gives full access to the Electronic messages functionality. It lets the user set up electronic messaging and run all the processing. | This privilege is included in the **Maintain sales tax transactions** security duty. That duty, in turn, is included in the **Accountant** security role. |
 | View electronic messages     | This privilege gives read-only access to the Electronic messages functionality. It lets the user view both the electronic messaging settings and messages/items. However, it doesn't let the user set up or run anything. | This privilege is included in the **Inquire into sales tax transaction status** security duty. That duty, in turn, is included in the following security roles:<ul><li>Collections manager</li><li>Accounts receivable clerk</li><li>Accounts receivable manager</li><li>Tax accountant</li><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Sales manager</li><li>Accounts payable clerk</li></ul> |
 | Operate electronic messages  | This privilege gives access only to the **Electronic messages** and **Electronic message items** pages. It lets the user run all the processing that is called from those pages. | This privilege is included in the **Operate electronic messages** security duty. That duty, in turn, is included in the **Electronic messages operator** security role. |
+
+## Fraud prevention headers 
+
+To prevent fraud, APIs of the HMRC provide HTTP headers that must be used to pass audit data.
+
+Depending on the architecture of the environment used by a company which interoperates with the MTD for VAT different set of HTTP headers for fraud prevention must be transmitted. “Gov-Client-Connection-Method” header must represent the connection method used for the request by the company. It is supposed that most companies using Dynamics 365 for Finance and Operations in cloud architecture use “**WEB_APP_VIA_SERVER**” connection method interoperating with HMRC via Electronic messages functionality. It is also possible that a user may initiate a batch job for interoperation with HMRC, in this case connection method will be transmitted as “**BATCH_PROCESS_DIRECT**”. 
+
+“**WEB_APP_VIA_SERVER**” connection method assumes transmission of the following headers:
+
+| **HTTP header**                      | **Description**                                                                                                                         | **Coverage**                        |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| **Gov-Client-Public-IP**             | The public IP address (IPv4 or IPv6) from which the originating device makes the request.                                               | Not in scope of the current hotfix. |
+| **Gov-Client-Public-Port**           | The public TCP port that the originating device uses when initiating the request.                                                       | Not in scope of the current hotfix. |
+| **Gov-Client-Device-ID**             | An identifier unique to an originating device.                                                                                          | Not in scope of the current hotfix. |
+| **Gov-Client-User-IDs**              | A key-value data structure containing the user identifiers.                                                                             | Not in scope of the current hotfix. |
+| **Gov-Client-Timezone**              | The local time-zone of the originating device.                                                                                          | Not in scope of the current hotfix. |
+| **Gov-Client-Local-IPs**             | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not in scope of the current hotfix. |
+| **Gov-Client-Screens**               | Information related to the originating device’s screens. The fields include: width is the reported width of the screen, in pixels; height is the reported height of the screen, in pixels; scaling-factor is the reported scaling factor of the screen; color-depth is the color depth of the screen, in bits.                                                           | Not in scope of the current hotfix. |
+| **Gov-Client-Window-Size**           | The number of pixels of the window on the originating device in which the user initiated (directly or indirectly) the API call to HMRC. | Not in scope of the current hotfix. |
+| **Gov-Client-User-Agent**            | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | Not in scope of the current hotfix. |
+| **Gov-Client-Browser-Plugins**       | A list of browser plugins on the originating device.                                                                                    | Not in scope of the current hotfix. |
+| **Gov-Client-Browser-JS-User-Agent** | JavaScript-reported user agent string from the originating device.                                                                      | Not in scope of the current hotfix. |
+| **Gov-Client-Browser-Do-Not-Track**  | Whether the Do Not Track option is enabled on the browser.                                                                              | Not in scope of the current hotfix. |
+| **Gov-Client-Multi-Factor**          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.       | Not in scope of the current hotfix. |
+| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | Included into the current hotfix.   |
+| **Gov-Vendor-License-IDs**           | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not in scope of the current hotfix. |
+| **Gov-Vendor-Public-IP**             | The public IP address of the servers to which the originating device sent their requests.                                               | Not in scope of the current hotfix. |
+| **Gov-Client-MAC-Addresses**         | The list of MAC addresses available on the originating device.                                                                          | Not in scope of the current hotfix. |
+| **Gov-Vendor-Forwarded**             | A list that details hops over the internet between services that terminate TLS.                                                         | Not in scope of the current hotfix. |
+
+
+“**BATCH_PROCESS_DIRECT**” connection method assumes transmission of the
+following headers:
+
+| **HTTP header**              | **Description**                                                                                                                         | **Coverage**                        |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| **Gov-Client-Device-ID**     | An identifier unique to an originating device.                                                                                          | Not in scope of the current hotfix. |
+| **Gov-Client-User-IDs**      | A key-value data structure containing the user identifiers.                                                                             | Not in scope of the current hotfix. |
+| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | Included into the current hotfix.   |
+| **Gov-Client-Local-IPs**     | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not in scope of the current hotfix. |
+| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | Included into the current hotfix.   |
+| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | Included into the current hotfix.   |
+| **Gov-Vendor-License-IDs**   | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not in scope of the current hotfix. |
+| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | Included into the current hotfix.   |
+
+### Implementation details
+
+To support possibility of detecting parameters required by fraud prevention
+requirements of the HMRC like time-zone and MAC address in BATCH_PROCESS_DIRECT
+connection method and version of the software in both WEB_APP_VIA_SERVER and
+BATCH_PROCESS_DIRECT connection methods, an X++ methods were included into the
+application part. Here is the information about versions of Dynamics 365 for
+Finance and Operations including these methods:
+
+| **Dynamics 365 for Finance and Operations version** | **Build number** |
+|-----------------------------------------------------|------------------|
+| 10.0.1                                              | 10.0.51.30002    |
+| 10.0.2                                              | 10.0.80.10022    |
+| 10.0.3                                              | 10.0.107.0       |
+
+For versions 7.3 of Dynamics 365 for Finance and Operations the KB \# 4504462
+must be installed.
+
+In Dynamics 365 for Finance and Operations request headers are composed by the
+“**MTD VAT web request headers format (UK)”** format in Electronic Reporting
+(ER) module. To support fraud prevention headers this format configuration was
+extended with necessary nodes:
+
+Determination of the corresponding values of the headers is supported via
+calling of the X++ methods by the “**MTD VAT model mapping**” configuration.
+“**Electronic Messages framework model**” was also extended to support include
+nodes used for mapping of the values of fraud prevention headers.
+
+### Setup
+
+To activate transmission of fraud prevention headers during interoperating with
+API of the HMRC, import the following of higher versions of the following ER
+configurations from the LCS portal:
+
+| **\#** | **GER configuration name**              | **Type**                             | **Version** |
+|--------|-----------------------------------------|--------------------------------------|-------------|
+| 1      | **Electronic Messages framework model** | **Model**                            | 22          |
+| 2      | MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 22.24       |
+| 3      | MTD VAT web request headers format (UK) | Format (exporting)                   | 22.13       |
+
+**Important note!** When new versions of ER configurations are imported, check
+that following configurations are marked as **Default for model mapping**:
+
+-   Tax declaration model mapping
+
+-   MTD VAT model mapping (UK)
+
+When mentioned or higher versions of the ER configurations are imported, fraud
+prevention parameters will be transmitted as part of the HTTP request the HMRC.
+
+When user initiates a request to the HMRC without activating a batch job, the
+following dialog will inform about what information is going to be sent to the
+HMRC:
+
+If the user aborts the transmission on this stage by clicking the **Cancel**
+button of the dialog, transmission will be canceled and the status of the
+electronic message will be changed to “Error”, attached description of the error
+to the Action log will include information that the “Request to the HMRC is
+cancel by user”. User will be able to proceed with transmission of the same
+electronic message using “Send report” button.
+
+When user initiates a request to the HMRC in a batch job, the fraud prevention
+headers will be transmitted to the HMRC and information about what headers were
+sent will be attached to the batch job. Open **System administration** \>
+**Inquires** \> **Batch jobs**, select your batch job and review Message details
+of the **Log** (Action pane \> Batch job \> Log).
+
+If for some reason a company decides to address requests to the HMRC without
+transmitting fraud prevention headers, the version of the format including the
+fraud prevention headers can be deleted or not imported at all or alternatively
+these headers can be disabled in the “**MTD VAT web request headers format
+(UK)**” format in Electronic Reporting module. For this purpose, the following
+steps must be done:
+
+1.  Select “**MTD VAT web request headers format (UK)”** format in the
+    configurations tree of the ER and create a child format by **Deriving** it
+    (see more about “[Building a format selecting another format as a
+    base](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=/fin-and-ops/toc.json#building-a-format-selecting-another-format-as-a-base-customization)”).
+
+2.  Open the child format in the Designer (Designer button the Action pane of
+    ER).
+
+3.  Select “Gov-Client-Connection-Method” node and its set “**Enabled**”
+    parameter to “**false**”:
+
+
+4.  Repeat p.3 for other fraud prevention headers: Gov-Client-Timezone,
+    Gov-Client-User-Agent, Gov-Vendor-Version, Gov-Client-MAC-Addresses.
+
+5.  **Save** your configuration and **Complete** it.
+
+6.  Open **Tax** \> **Setup** \> **Electronic reporting** \> **Web service
+    settings** and select your child format in the “**Request headers format
+    mapping**” field of all the web services used for interoperation with the
+    HMRC instead of the parent format used by default:
+    
+    
+**Important note!** API requests without fraud prevention headers may be
+rejected by HMRC. It is strictly recommended to address API requests to HMRC
+with fraud prevention headers.
 
 ## Appendix 1: Electronic messages setup for MTD for VAT
 
