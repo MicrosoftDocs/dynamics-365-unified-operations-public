@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Advance payment that has tax
-description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+title: Advance payments that include tax
+description:  
 author: EricWang
 manager: RichardLuan
 ms.date: 06/03/2019
