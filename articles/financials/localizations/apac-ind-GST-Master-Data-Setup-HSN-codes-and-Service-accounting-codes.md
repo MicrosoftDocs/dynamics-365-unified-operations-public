@@ -57,7 +57,7 @@ This artical describes how to define HSN codes and Service accounting codes
 10. In the **Description** field, enter a value
 11. Click **Close**
 
-![HSN codes](media/HSN-codes.png)
+![HSN codes](media/HSN-codes.PNG)
 
 
 
@@ -69,7 +69,7 @@ This artical describes how to define HSN codes and Service accounting codes
 4. In the **Description** field, enter a value
 5. **Save** and **Close**
 
-![SAC codes](media/SAC-codes.png)
+![SAC codes](media/SAC-codes.PNG)
 
 
 
@@ -86,7 +86,7 @@ Note: The following setup is required for the calculation of GST:
 - A Harmonized System of Nomenclature (HSN) code should be defined for the Item product type, or a Service accounting code (SAC) should be defined for the Service product type.
 - Item sales tax group should be removed.
 
-![Assign codes to product](media/Assign-codes-to-product.png)
+![Assign codes to product](media/Assign-codes-to-product.PNG)
 
 
 
