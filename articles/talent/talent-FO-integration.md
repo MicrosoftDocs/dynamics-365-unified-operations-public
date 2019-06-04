@@ -58,7 +58,7 @@ For data that resides in Finance and Operations but does not exist in Talent,
 link the two systems together by using **Configure Links** in Talent. For more
 information about how to configure links between Talent and Finance and Operations, see [What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Map financial dimensions](media/MapFinancialDimensions.png)
 
 ## Sometimes when I import employees, they go into inactive workers in Finance and Operations. Why?
 
@@ -76,7 +76,7 @@ integration mapping.
 With the use of "Advanced query", you can filter and reshape source data before
 passing it into the destination.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Active workers advanced quaery](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## Can I specify which fields to send to Finance and Operations for a specific entity?
 
@@ -84,7 +84,7 @@ Fields can be added or removed from the integration task. Not all data fields
 that exist on the Common Data Service entity will be populated from Core HR.
 Additional data can be populated via PowerApps.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## I set up integration as a batch job, but Talent lost connection to the destination system. How can I send the same set of changes to the destination system?
 
