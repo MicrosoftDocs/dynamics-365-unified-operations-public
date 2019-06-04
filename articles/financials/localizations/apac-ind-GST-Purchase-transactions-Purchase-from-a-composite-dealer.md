@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Purchase from a composite dealer
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Purchase from a composite dealer
+# Purchase from a composite dealer
 
 1. Click **Accounts payable > Invoice > Invoice journals**.
 
@@ -42,15 +42,15 @@ ms.dyn365.ops.version: 10.0.4
 
 6. Click **Tax information**.
 
-   ![](media/GST-Whitepaper/Annotation-2019-05-16-101054.png)
+   ![](media/Annotation-2019-05-16-101054.png)
 
 7. On the **GST** tab, in the **HSN code** field, select a value.
 
-   ![](media/GST-Whitepaper/Annotation-2019-05-16-101138.png)
+   ![](media/Annotation-2019-05-16-101138.png)
 
 8. Click the **Vendor tax information** tab and verify the information
 
-   ![](media/GST-Whitepaper/Annotation-2019-05-16-101246.png)
+   ![](media/Annotation-2019-05-16-101246.png)
 
 9. Click **OK**.
 
@@ -65,7 +65,7 @@ ms.dyn365.ops.version: 10.0.4
 
 14. Click **Inquiries > Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-16-100656.png)
+![](media/Annotation-2019-05-16-100656.png)
 
 
 
