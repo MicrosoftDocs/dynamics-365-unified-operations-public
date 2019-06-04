@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Sale of taxable goods to a consumer
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,22 +28,22 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Sale of taxable goods to a consumer
+# Sale of taxable goods to a consumer
 
 1. Click **Accounts receivable > Sales orders > All sales orders**.
 2. Create a sales order for a taxable item.
 3. **Save** the record.
 4. Click **Tax information**.
 
-![](media/GST-Whitepaper/Capture.PNG)
+![](media/Capture.PNG)
 
 5. Click the **GST** tab.
 
-![](media/GST-Whitepaper/Capture02.PNG)
+![](media/Capture02.PNG)
 
 6. Click the **Customer tax information** tab
 
-![](media/GST-Whitepaper/Capture05.PNG)
+![](media/Capture05.PNG)
 
 Note: The Tax information field is blank. Therefore, the dealer is an unregistered dealer
 
@@ -57,7 +57,7 @@ Note: The Tax information field is blank. Therefore, the dealer is an unregister
 - CGST: 10 percent
 - SGST: 10 percent
 
-![](media/GST-Whitepaper/Capture04.PNG)
+![](media/Capture04.PNG)
 
 9. Click **Close**.
 
@@ -76,7 +76,7 @@ Note: The Tax information field is blank. Therefore, the dealer is an unregister
 
 Financial entries for both the intrastate and interstate transactions
 
-![](media/GST-Whitepaper/Annotation-2019-05-20-100324.png)
+![](media/Annotation-2019-05-20-100324.png)
 
 
 
