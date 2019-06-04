@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Import of services where there is GST
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Import of services where there is GST
+# Import of services where there is GST
 
 1. Click **Accounts payable > Invoices > Invoice journal**.
 2. Create a journal.
@@ -55,4 +55,4 @@ Example:
 13. Close the message.
 14. Click **Inquiries > Voucher**
 
-![](media/GST-Whitepaper/Annotation-2019-05-21-104142.png)
+![](media/Annotation-2019-05-21-104142.png)
