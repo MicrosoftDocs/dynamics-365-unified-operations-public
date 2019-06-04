@@ -324,13 +324,13 @@ final class TSTimesheetEntryService_Extension
 
 Below is a screenshot from the mobile app of a user viewing a timesheet. The "More information" button has been selected in the upper-right corner to show the "View more details" option.  
 
-![View more details command](media/ec64aa4ad40cb5e4cc88afe170b81085.png)
+![View more details command](media/show-more.png)
 
 
 
 Below is a screenshot from the mobile app showing the “More” section of a timesheet. A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section. A read-only value of "0.667" is set on the custom field.
 
-![More field](media/4699048932d914c27e264bdb95cf514a.jpg)
+![More section](media/more-section.jpg)
 
 
 
