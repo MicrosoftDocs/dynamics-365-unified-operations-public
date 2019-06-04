@@ -48,4 +48,4 @@ This article describes how to define business vertical
 3. Enter a name, description, and entity code for the new business vertical
 4. Click **Close**
 
-![](Media/IND-GST-BusinessVertical.png)
+![](media/IND-GST-BusinessVertical.png)
