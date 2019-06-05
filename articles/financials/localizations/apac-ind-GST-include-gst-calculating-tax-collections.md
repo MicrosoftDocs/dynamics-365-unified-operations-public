@@ -2,7 +2,7 @@
 # required metadata
 
 title: Include GST when calculating tax collections
-description:  This topic includes information about how to include GST when calculating tax collections.
+description: This topic explains how to include Goods and Services Tax (GST) when you calculate tax collections.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -32,36 +32,36 @@ ms.dyn365.ops.version: 10.0.4
 
 ## Set up GST requirements
 
-1. Click **Tax** \> **Indirect Tax** \> **Withholding tax** \> **Withholding tax groups**.
+1. Go to **Tax** \> **Indirect Tax** \> **Withholding tax** \> **Withholding tax groups**.
 2. Select a withholding tax group.
-3. On the **General** FastTab, in the **Include GST tax components for TDS or TCS calculation** field, select the required GST components.
-4. Click **Close**.
+3. On the **General** FastTab, in the **Include GST tax components for TDS or TCS calculation** field, select the required Goods and Services Tax (GST) components.
+4. Select **Close**.
 
 ## Create a sales order
 
-1. Click **Accounts receivable > Sales orders > All sales orders**.
+1. Go to **Accounts receivable \> Sales orders \> All sales orders**.
 2. Create a sales order.
-3. Click **OK**.
+3. Select **OK**.
 
 ### Validate the tax details
 
-1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, click **Tax document** to review the calculated taxes.
+1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
 
-For example, you should see something like this:
+    Here is an example of what you should see:
 
-- Taxable value: 10,000.00
-- IGST: 20 percent
+    - **Taxable value:** 10,000.00
+    - **IGST:** 20 percent
 
-2. Click **Close**.
-3. Click **Product and supply** \> **Withholding tax**
-4. Click **Close**.
+2. Select **Close**.
+3. Select **Product and supply** \> **Withholding tax**.
+4. Select **Close**.
 
 ### Post the purchase invoice
 
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
-2. Click **OK**.
-3. Click **OK**.
-4. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. 
-5. On the **Overview** tab, click **Voucher**.
+1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
+2. Select **OK**.
+3. Select **OK**.
+4. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+5. On the **Overview** tab, select **Voucher**.
 
-![](media/Annotation-2019-05-21-134958.png)
+![Example](media/Annotation-2019-05-21-134958.png)
