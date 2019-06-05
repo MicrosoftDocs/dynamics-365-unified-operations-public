@@ -925,6 +925,8 @@
       href: financial/create-exchange-rate-providers.md
     - name: Create exchange rate providers in Finance and Operations version 8.0
       href: financial/create-exchange-rate-8.md
+  - name: Settle transactions using CustTrans::settleTransaction
+    href: financial/settletransact-obsolete.md
 - name: Supply chain development
   items:
   - name: Gantt control development guide
