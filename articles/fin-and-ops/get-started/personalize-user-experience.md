@@ -79,7 +79,7 @@ Some of the most typical and important changes that can be made to a page are av
 
 Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this method of personalization, the element's property window appears.
 
-[![Personalizing an element's properties](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
+![Personalizing an element's properties](./media/personalization-element-properties.png)
 
 You can use the property window to personalize an element in the following ways:
 
