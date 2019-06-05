@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 Your brand is an important investment and plays a significant part in recruiting. Your brand establishes trust and helps you to build a relationship with candidates before they even apply for your positions. Positive brand perception attracts top talent and increases loyalty with existing employees. You can create consistent branding for all your email communications by setting the global header and footer for all email templates. With Microsoft Dynamics 365 for Talent: Attract, you can configure emails to reflect your company's brand to provide a consistent experience for job candidates as they progress through the application process.
 
-In addition, you can configure Attract's email settings to reflect your company's domain so candidates know your emails are coming from an organization they trust. For example,instead of candidates receiving emails from **contoso@microsoft.com**, you can configure your emails to be from **recruiting@contoso.com**.
+In addition, you can configure Attract's email settings to reflect your company's domain so candidates know your emails are coming from your company. For example,instead of candidates receiving emails from **contoso@microsoft.com**, you can configure your emails to be from **recruiting@contoso.com**.
 
 > [!NOTE]
 > You need the Comprehensive hiring add-on to configure Attract to use your company's account for sending emails.
