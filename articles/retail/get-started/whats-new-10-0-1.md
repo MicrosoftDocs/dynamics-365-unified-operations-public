@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Retail version 10.0.1
+title: What's new and changed in Dynamics 365 for Retail version 10.0.1
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
 
 ---
-# What's new or changed in Dynamics 365 for Retail version 10.0.1
+# What's new and changed in Dynamics 365 for Retail version 10.0.1
 
 [!include [banner](../../includes/banner.md)]
 
