@@ -37,32 +37,30 @@ ms.dyn365.ops.version: Platform 28
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 28. This version has a build number of 7.0.5314. For more information about Platform update 28, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 ## Data management enhanced view as the default view
-The standard view in data management has been deprecated for about a couple of years. Users going to the data management workspace were informed about the deprecation during this period. The enhanced view is now being set as the default view as the next step towards this process. The standard view is still available and can be brought back via the existing setting in framework parameters, although it is not recommended to use standard view as it will be deleted sometime in future. If users explicitly chose to use standard view by clicking the 'standard view' button on any of the data management forms, such users will continue to see standard view as thier personalized settings will be honoured. However, such users are also advised to switch to using enhanced view.
+For several years the standard view in data management has been deprecated. Users going to the data management workspace were informed about the deprecation during this period. The enhanced view is now being set as the default view. The standard view is still available and can be brought back using the existing setting in framework parameters, although it is not recommended to use standard view as it will be deleted sometime in future. If users explicitly choose to use standard view by clicking the **Standard view** button on any of the data management forms, these users will continue to see standard view as their personalized settings will be honored. However, such users are also advised to switch to using enhanced view.
 
 ## Preview documents using embedded PDF viewer control
-Streamline the document viewing experience in Dynamics 365 for Finance & Operations  by taking advantage of the new 'Preview' option for application reports. The embedded PDF document viewer gives customers direct access to locally connected printers and offers fidelity between the screen presentation and the output printed on paper. The 'Preview' option is available on all supported devices and does not depend on any 3rd party software. The embedded PDF viewer includes a built-in toolbar with intuitive controls that make it easy to download and navigate documents.
+You can streamline the document viewing experience in Dynamics 365 for Finance and Operations by taking advantage of the new 'Preview' option for application reports. The embedded PDF document viewer gives you direct access to locally connected printers and offers fidelity between the screen presentation and the output printed on paper. The 'Preview' option is available on all supported devices and does not depend on any third-party software. The embedded PDF viewer includes a built-in toolbar with intuitive controls that make it easy to download and navigate documents.
 
 ## Create custom commands for embedded PowerBI.com reports
-Turn insights into action using custom menu commands for chart visualizations displayed in PowerBI.com reports hosted in Application Workspaces for Dynamics 365 Finance & Operations. Empower users with intuitive gestures to perform business operations on filtered views of their report data. With the latest Platform Update, developers can add custom extensions that give end-users an actionable experience interacting with analytical solutions within F&O applications.
+Turn insights into action using custom menu commands for chart visualizations displayed in PowerBI.com reports hosted in Application workspaces for Dynamics 365 Finance and Operations. Empower users with intuitive gestures to perform business operations on filtered views of their report data. With the latest Platform update, developers can add custom extensions that give users an actionable experience interacting with analytical solutions within Finance and Operations applications.
 
 ## Extended availability of the legacy navigation bar
 In Platform update 24, a restyled navigation bar was introduced for Finance and Operations as part of an effort across the Dynamics 365 products to align to the Office header visuals, which notably do not include a breadcrumb. At that time, the legacy navigation bar was put on an expedited deprecation schedule (to not be available after Platform update 28) because of the branding impact. Due to customer concern around the missing breadcrumb in the new navigation bar, we have decided to extend access to the legacy navigation bar until April 2020. 
 
 ## Alert users before sessions end due to inactivity
-The idle timeout for Finance and Operations is currently defaulted at 60 minutes. After that inactivity limit has been surpassed by a user, the user is alerted that their session has been terminated. To provide users with additional awareness of an impending session suspension due to inactivity and to avoid losing any unsaved changes, users will now be notified 3 minutes before their sessions are set to be terminated due to inactivity and given an opportunity to reconnect before the session is ended.   
+The default idle timeout for Finance and Operations is currently 60 minutes. After that inactivity limit has been surpassed by a user, the user is alerted that their session has ended. To provide users with additional awareness of an impending session suspension due to inactivity and to avoid losing any unsaved changes, users will now be notified 3 minutes before their sessions are set to end due to inactivity. Users are also provided an opportunity to reconnect before the session ends.  
 
-## Export all companies BYOD job name changes
-The syntax of execution job name for BYOD export all companies job will now have a GUID appended to the naming convention. This will ensure that the names are always unique.
+## Export all BYOD job name changes
+The syntax of the execution job name for the BYOD export all companies job will now have a GUID appended to the naming convention. This will ensure that the names are always unique.
 
 ## Extensibility enhancements
-Enhanced extensibility capabilities in Platform update 28:
+The following enhanced extensibility capabilities have been added in Platform update 28:
+
 - Enable extension of WorkflowType so elements (Task, Approval, AutomatedTask) and event handlers can be added (Ref# 198838).
 - Enable extension to change TableRelation.RelatedTableCardinality and TableRelation.Role (Ref# 280969).
 - Enable extension of country region codes on data entities (Ref# 282123).
 - Enable extension of the Label, Help Text, and Group Prompt properties of entity fields (Ref# 265666).
-
-## Feature name
-Description of feature and link to topic that has the details about the feature.
 
 ## Additional resources
 
