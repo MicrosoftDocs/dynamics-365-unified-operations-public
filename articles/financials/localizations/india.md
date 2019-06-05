@@ -54,6 +54,7 @@ This topic provides links to documentation resources for India.
   - [Tax engine integration](../general-ledger/tax-engine-integration.md)
   - [Extending the Tax engine](../general-ledger/extend-tax-engine-configurations.md)
 - [Tax thresholds FAQ](apac-ind-tax-thresholds.md)
+- [Stock transfers](apac-ind-stock-transfer.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/India.html)
