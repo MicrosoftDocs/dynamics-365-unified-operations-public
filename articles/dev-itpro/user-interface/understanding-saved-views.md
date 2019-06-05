@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Understanding saved views
+title: Building forms that fully optimize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: SysUserSetup, DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
+# ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -34,20 +34,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Saved views are an important expansion of personalization capabilities in Dynamics 365 for Finance and Operations. While the [!Saved views]() topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
+Saved views are an important expansion of personalization capabilities in Dynamics 365 for Finance and Operations. While the [!Saved views](../../fin-and-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
-## “User-perceived” forms
-Traditionally, a set of personalizations has a 1:1 link to a modeled form. In many forms, this makes sense to the user, as the user’s perception of the form matches the way in which the form was modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations is not intuitive or obvious because users do not see or care about the boundaries between modeled forms. 
+## “User-perceived” pages
+Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this makes sense to the user, as the user’s perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations is not intuitive or obvious because users do not see or care about the boundaries between modeled forms. 
 
-Saved views tries to eliminate this confusion by allowing users to create views on “user-perceived” forms, which eliminates the need to understand how forms are modeled to understand how and when personalizations are applied. Consider the following two scenarios:  
+Saved views tries to eliminate this confusion by allowing users to create views on “user-perceived” pages, which eliminates the need to understand how forms are modeled to understand how and when personalizations are applied. Consider the following two scenarios:  
 
--    **More than one “user-perceived” form in a single modeled form**: The standard modeling of Master Details and Transaction Details forms (like the All customers and All purchase orders forms, respectively) consist of more than one “user-perceived” form: a grid “page” and a details “page”. 
+-    **More than one “user-perceived” page in a single modeled form**: The standard modeling of Master Details and Transaction Details forms (like the **CustTable** and **PurchTable** forms, respectively) consist of more than one “user-perceived” page: a grid page and a details page. 
 
      Because users are not aware when this transition from list to details crosses a form boundary (nor do they need to know this), view support in Details forms is handled differently to allow views to be defined separately for the grid and details portions. This means that the view selector for the “grid” and “details” can show different sets of available views. The special casing of view support on these forms also allows the “grid” views to allow filters in their view definitions, whereas the “details” view only need personalizations.
 
--    **More than one modeled form in a single “user-perceived” form**: The ability to embed subforms into modeled forms (via FactBoxes or form parts) leads to situations where more than one modeled form corresponds to a single “user-perceived” form. For example, consider the All customers form, which has a number of FactBoxes and two FastTabs whose contents come from form parts. With traditional personalization, contrary to a user’s expectations, exporting the personalizations for the CustTable form would not include personalizations on any FactBox or any personalizations done inside the Addresses or Contact Information FastTabs. Equally unexpected for users, any personalizations done to these subforms would be reflected in any other part of the application where these form parts were used. For example, changes to the Address FastTab in the All customers form would also result in the same changes appearing in the Addresses FastTab in the All vendors form.
+-    **More than one modeled form in a single “user-perceived” page**: The ability to embed subforms into modeled forms (via FactBoxes or form parts) leads to situations where more than one modeled form corresponds to a single “user-perceived” page. For example, consider the details portion of the **All customers** page, which has a number of FactBoxes and two FastTabs whose contents come from form parts. With traditional personalization, contrary to a user’s expectations, exporting the personalizations for the **CustTable** form would not include personalizations on any FactBox or any personalizations done inside the **Addresses** or **Contact information** FastTabs. Equally unexpected for users, any personalizations done on these subforms would also be reflected in other parts of the application where these form parts are used. For example, changes to the **Addresses** FastTab in the **All customers** page would also result in the same changes appearing in the **Addresses** FastTab in the **All vendors** page.
 
-     With views, the personalization scope of form parts has been modified to match user expectations. In particular, subform personalizations are now tied to the base form where they are made. This means that exporting a view on the All customers details page will include personalizations from the base CustTable form as well as any personalizations in FactBoxes or form parts modeled in that portion of the form. Similarly, any personalizations done on the Addresses FastTab (form part) on the All customers form will not be reflected in other forms where that form part is used.
+     With views, the personalization scope of form parts has been modified to match user expectations. In particular, subform personalizations are now tied to the base form where they are made. This means that exporting a view on the **All customers** details page will include personalizations from the base **CustTable** form as well as any personalizations in FactBoxes or form parts modeled in that portion of the form. Similarly, any personalizations done on the **Addresses** FastTab (form part) on the **All customers** page will not be reflected in other forms where that form part is used.
      
 These are highly technical modifications to the personalization subsystem that are only available when view is enabled. These modifications are very important for ensuring that users have a predictable and understandable experience with views.
 
