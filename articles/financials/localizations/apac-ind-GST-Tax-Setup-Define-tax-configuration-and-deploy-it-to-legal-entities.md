@@ -50,11 +50,11 @@ ms.dyn365.ops.version: 10.0.4
 10. Click **Save**
 11. Click **Synchronize**
 
-![synchronize](media/synchronize.PNG)
+![synchronize](media/synchronize.png)
 
 12. Click **Activate**
 
-![active](media/active.png)
+![active](media/active.PNG)
 
 Note: The activated configuration is updated as the current configuration
 13. Click the **Report configurations** tab
@@ -67,7 +67,7 @@ Note: The Available configurations grid lists the configurations that are relate
 
 16. **Save** and **Close**
 
-![GST reports](media/GST-reports.PNG)
+![GST reports](media/GST-reports.png)
 
 17. On the **Companies** FastTab, create a record
 
@@ -79,7 +79,7 @@ Note: one legal entity can only be assigned to one tax configuration
 
 20. Click **Activate** to activate the configuration for the company
 
-![gst company](media/gst-company.png)
+![gst company](media/gst-company.PNG)
 
 
 
