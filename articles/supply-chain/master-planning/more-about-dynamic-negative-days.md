@@ -5,7 +5,7 @@ title: Negative days and dynamic negative days
 description: 
 author: 
 manager: 
-ms.date: 06/04/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: 
