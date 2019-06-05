@@ -46,7 +46,7 @@ ms.dyn365.ops.version: 10.0.4
 5. **Save** and **Close**
 6. On the **Companies** tab, Click **Parameters**
 
-![tax parameter](media/tax-parameter.png)
+![tax parameter](media/tax-parameter.PNG)
 
 7. Enter values for these parameters
 8. Click **OK**
