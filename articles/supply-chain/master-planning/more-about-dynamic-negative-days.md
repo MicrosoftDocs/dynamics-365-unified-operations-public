@@ -40,7 +40,7 @@ In this topic, you will learn:
 - How the Dynamic negative days time fence is calculated, and how that factors in the item's lead time into the calculation of the time fence
 - How to interpret the [MRP (master planning) runtime improvement suggestions](http://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) related to negative days
 
-This topic is best understood in three hypothetical situations. The difference between these situations is at what point within the items' lead time you get demand-- before, during, or after the time period.
+This topic is best understood in three hypothetical situations. The difference between these situations is at what point within the items' lead time you get demand&mdash;before, during, or after the time period.
 
 ## Situation 1- getting demand before the item's lead time period
 
@@ -200,7 +200,7 @@ MRP will create the following result:
 
 ![What follows is a screenshot of the results](./media/negative-days-20.png)
 
-You may notice that the sales order requirement date listed above is January 9th instead of January 10th. That is again because the screenshot was taken in 2015, when January 10th is a Saturday, so the requirement date of the order should be the previous working date-- Friday, January 9th.
+You may notice that the sales order requirement date listed above is January 9th instead of January 10th. That is again because the screenshot was taken in 2015, when January 10th is a Saturday, so the requirement date of the order should be the previous working date&mdash;Friday, January 9th.
 
 MRP creates a planned purchase order to fulfill the demand requested by the first sales order, but then it also recommends you **cancel** this planned order, because you can advance the existing purchase order and increase the quantity on it.
 
