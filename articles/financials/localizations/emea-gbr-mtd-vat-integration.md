@@ -308,7 +308,7 @@ To work with MTD for VAT, VAT registration number of your Legal entity must be d
 3.	Open **Organization administration** > **Global Address Book** > **Legal entities** and click **Registration ID** on the Action pane.
 4.	Define VAT registration number as a Registration ID of type which is associated with “**VAT ID**” Registration category:
 
-## IMG: reg-ids-setup
+![Sales tax inquiry](media/reg-ids-setup.png)
 
 After the company has user credentials, an authorization process can be initialized. Two steps must be done before your system is ready to interoperate with HMRC:
 
@@ -544,7 +544,7 @@ In Dynamics 365 for Finance and Operations request headers are composed by the
 (ER) module. To support fraud prevention headers this format configuration was
 extended with necessary nodes:
 
-## IMG:format-new-nodes
+![JSON object](media/format-new-nodes.png)
 
 Determination of the corresponding values of the headers is supported via
 calling of the X++ methods by the “**MTD VAT model mapping**” configuration.
@@ -577,7 +577,7 @@ When user initiates a request to the HMRC without activating a batch job, the
 following dialog will inform about what information is going to be sent to the
 HMRC:
 
-## IMG:fraud-prevention-headers-message
+![JSON object](media/fraud-prevention-headers-message.png)
 
 If the user aborts the transmission on this stage by clicking the **Cancel**
 button of the dialog, transmission will be canceled and the status of the
@@ -610,7 +610,7 @@ steps must be done:
 3.  Select “Gov-Client-Connection-Method” node and its set “**Enabled**”
     parameter to “**false**”:
 
-## IMG:format-disable-nodes
+![JSON object](media/format-disable-nodes.png)
 
 4.  Repeat p.3 for other fraud prevention headers: Gov-Client-Timezone,
     Gov-Client-User-Agent, Gov-Vendor-Version, Gov-Client-MAC-Addresses.
@@ -622,8 +622,8 @@ steps must be done:
     mapping**” field of all the web services used for interoperation with the
     HMRC instead of the parent format used by default:
     
-## IMG:web-service-format-setup
-    
+![JSON object](media/web-service-format-setup.png)
+
 **Important note!** API requests without fraud prevention headers may be
 rejected by HMRC. It is strictly recommended to address API requests to HMRC
 with fraud prevention headers.
