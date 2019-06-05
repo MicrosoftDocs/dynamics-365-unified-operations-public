@@ -3,8 +3,8 @@
 
 title: Negative days and dynamic negative days
 description: This topic covers how you can better understand negative days and dynamic negative days to help your business.
-author: 
-manager: 
+author: josaw1
+manager: AnnBe
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
@@ -40,16 +40,16 @@ In this topic, you'll learn:
 - How the dynamic negative days time fence is calculated, and how that factors the item's lead time into the calculation of the time fence
 - How to interpret the [MRP (master planning) runtime improvement suggestions](http://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) related to negative days
 
-This topic is best understood in three hypothetical situations. The difference between these situations is at what point within the items' lead time you get demand-- before, during, or after the time period.
+This topic is best understood in three hypothetical situations. The difference between these situations is at what point within the item's lead time you get demand-- before, during, or after the time period.
 
 ## Situation 1- getting demand before the item's lead time period
 
-You might get demand relatively early within your items' lead time, or just before the time period begins. For example, the situation may look like this:
+You might get demand relatively early within your item's lead time, or just before the time period begins. For example, the situation may look like this:
 
 - Item `_DemoProduct` has a 6 days purchase lead time  
 - On day zero (January 1st) the inventory level for item `_DemoProduct` is zero  
 - On day zero (January 1st) you get a sales order for item `_DemoProduct`, quantity 10  
-- On day seven (January 1st) there is an existing purchase order for item `_DemoProduct`, quantity 10  
+- On day seven (January 7th) there is an existing purchase order for item `_DemoProduct`, quantity 10  
 
 ![What follows is a graph of the situation described](./media/negative-days-1.jpg)
 
