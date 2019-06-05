@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DefaultDashboard
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
