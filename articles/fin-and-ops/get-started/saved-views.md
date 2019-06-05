@@ -32,6 +32,7 @@ ms.dyn365.ops.version: Platform update 28
 # Saved views
 
 [!include [banner](../includes/banner.md)]
+[!include [private preview banner](../includes/private-preview-banner.md)]
 
 ## Introduction
 Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [Personalize the user experience](personalize-user-experience.md).
