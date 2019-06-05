@@ -52,3 +52,11 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
     * Indicate if you want alert messages sent when the batch job ends, has an error, or is canceled. Then specify if you want the alerts to be displayed as pop-up messages.   
 3. Click OK.
 
+## Adjust batch job status
+1. Go to System administration > Inquiries > Batch jobs.
+2. Select the appropriate batch job
+3. On the Action Pane, click Batch job > Functions > Change status
+4. Select the appropriate status:
+    - Withhold - Set the batch job as **withhold** so it is withheld from the batch job scheduler. Equivalent to 'stop'.
+    - Waiting - Set the batch job as **waiting** so it is waiting to be picked up by the batch job scheduler. Equivalent to 'go'.
+5. Click Ok.
