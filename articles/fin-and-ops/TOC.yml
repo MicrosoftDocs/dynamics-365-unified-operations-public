@@ -1952,7 +1952,7 @@
         - name: Tax thresholds FAQ
           href: ../financials/localizations/apac-ind-tax-thresholds.md          
         - name: Stock transfers
-          href: ../financials/localizations/tasks/apac-ind-stock-transfer.md
+          href: ../financials/localizations/apac-ind-stock-transfer.md
       - name: Italy
         href: ../financials/localizations/italy.md
         items:
