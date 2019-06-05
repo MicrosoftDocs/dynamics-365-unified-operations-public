@@ -56,7 +56,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | General ledger |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. Target timeframe for the functionality to be removed is July 2020. |
+| **Status**                         | Deprecated. Target timeframe for the functionality to be removed is August 2020. |
 
 
 ## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
