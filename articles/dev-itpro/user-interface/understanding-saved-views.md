@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 28
 # Build forms that fully optimize saved views
 
 [!include [banner](../includes/banner.md)]
+[!include [private preview banner](../includes/private-preview-banner.md)]
+
+
 
 Saved views are an important expansion of personalization capabilities in Dynamics 365 for Finance and Operations. While the [Saved views](../../fin-and-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
