@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Building forms that fully optimize saved views
+title: Build forms that fully optimize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Understanding saved views
+# Build forms that fully optimize saved views
 
 [!include [banner](../includes/banner.md)]
 
