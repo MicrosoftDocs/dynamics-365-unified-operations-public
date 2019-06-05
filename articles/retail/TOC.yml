@@ -56,7 +56,11 @@
   - name: Testing and performance issues
     href: dev-itpro/retail-implementation-testing-performance.md   
 - name: Distributed order management (DOM)
-  href: dom.md
+  items:
+  - name: DOM overview
+    href: dom.md
+  - name: Cost configuration
+    href: cost.md
 - name: Payments
   items:
   - name: Payment methods
@@ -67,6 +71,8 @@
     href: cash-denominations.md
   - name: Dynamics 365 Payment Connector for Adyen
     href: dev-itpro/adyen-connector.md
+  - name: Saving online payment instruments with the Adyen connector
+    href: dev-itpro/adyen-connector-listPI.md
   - name: Set up pay invoice scenarios
     href: payinvoice.md
   - name: Payments FAQ
@@ -95,6 +101,8 @@
     href: tasks/create-calculate-post-statement-retail-store.md
   - name: Improvements to statement posting functionality
     href: statement-posting-EOD.md
+  - name: Improved handling of batch tracked items
+    href: batch.md
   - name: Configure Retail parameters that affect retail statements
     href: tasks/parameter-configurations-retail-statements.md
   - name: Configure payment method settings that affect retail statements
@@ -115,6 +123,8 @@
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Omni-channel payments overview
+  href: omni-channel-payments.md
 - name: Omni-channel advanced auto charges
   items:
   - name: Configure and use advanced auto charges
@@ -159,12 +169,14 @@
     href: MPOS-or-CPOS.md
   - name: Online and offline POS operations
     href: pos-operations.md
-  - name: Device activation of a customized Retail Modern POS
+  - name: Device activation of a customized Retail MPOS
     href: dev-itpro/retail-POS-activation-changes.md
   - name: Demo data screen layouts in MPOS and Cloud POS
     href: demo-data.md
   - name: Product and customer search in the POS
     href: POS-search-improvements.md
+  - name: Cash management improvements
+    href: cash-mgmt.md 
   - name: Inventory lookup in the POS
     href: product-variants-POS.md
   - name: Suspend and resume transactions in the POS

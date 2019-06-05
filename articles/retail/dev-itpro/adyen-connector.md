@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 01/04/2019
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -83,6 +83,18 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
+
+# [10.0.2](#tab/10-0-2)
+### Dynamics 365 for Retail POS version 10.0.2
+| Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_38p5 |
+
+# [10.0.3](#tab/10-0-3)
+### Dynamics 365 for Retail POS version 10.0.3
+| Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_38p5 |
 
 ---
 
@@ -194,7 +206,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Switzerland | ✔ |
 | United Kingdom | ✔ |
 | United States | ✔ |
-| Brazil | Q1 2019 |
+| Brazil | Future release |
 
 #### Supported card not present countries
 For card not present scenarios, such as E-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
@@ -208,6 +220,7 @@ The following table shows the set of Dynamics 365 payment features that the Dyna
 | [Duplicate Payment Protection](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
+| [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
 
 ## Sign up with Adyen
 

@@ -26,7 +26,6 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
 
-
 ---
 
 # Back up the databases for Finance and Operations solutions

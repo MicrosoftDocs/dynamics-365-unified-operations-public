@@ -5,7 +5,7 @@ title: Screen layouts for the point of sale (POS)
 description: This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -55,6 +55,7 @@ Visual profiles are assigned to registers, and they specify the visual elements 
 - **Theme** – You can select between the Light and Dark application themes. The theme affects the font and background colors throughout the application.
 - **Accent color** – The accent color is used throughout the POS to differentiate or highlight specific visual elements, such as tiles, command buttons, and hyperlinks. Typically, these elements are actionable.
 - **Header color** – You can configure the color of the page header to meet the retailer's branding requirements. This feature is available only in Microsoft Dynamics 365 for Retail version 1611.
+- **Show date/time** – When enbled, the current date and time will be displayed in the POS header.
 - **Login backgrounds** – You can specify a background image for the sign-in screen. The file size of background images should be kept as small as possible, because storing and loading large files can affect application behavior and performance.
 - **Application background** – You can specify a background image that is used instead of the solid theme color throughout the application. As for login backgrounds, the file size should be kept as small as possible.
 

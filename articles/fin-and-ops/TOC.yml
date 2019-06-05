@@ -58,7 +58,7 @@
         href: get-started/whats-new-platform-update-28.md 
       - name: Platform update 27 (June 2019)
         href: get-started/whats-new-platform-update-27.md 
-      - name: Preview features in Finance and Operations platform update 26 (May 2019)
+      - name: Platform update 26 (May 2019)
         href: get-started/whats-new-platform-update-26.md 
       - name: Platform update 25 (April 2019)
         href: get-started/whats-new-platform-25.md 
@@ -914,7 +914,7 @@
     - name: Expense management
       href: ../financials/expense-management/expense-management.md
       items:
-      - name: Expense reports re-imagined
+      - name: Expense reports reimagined
         href: ../financials/expense-management/ExpenseWorkspaceNew.md
       - name: Plan expense management
         href: ../financials/expense-management/plan-expense-management.md
@@ -2279,6 +2279,7 @@
             href: ../financials/localizations/rus-ledger-transactions-preview.md 
           - name: Set up exchange rates for currency transactions
             href: ../financials/localizations/rus-exchange-difference.md
+          - name: Import currency exchange rates from CBRF ../financials/general-ledger/import-currency-exchange-rates.md
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
           items:
@@ -2640,7 +2641,6 @@
           href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
         - name: Set up benefits
           href: hr/localizations/noam-usa-benefit-set-up-tasks.md
-      - name: Frequencies and cycles
       - name: Set up pay cycles and pay periods
         href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
       - name: Set up payroll calculation frequencies
@@ -2924,6 +2924,8 @@
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
       - name: Parse incoming documents in CSV format
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
+      - name: Trace the execution of ER formats to troubleshoot performance issues
+        href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
       - name: Split generated XML files based on file size and content quantity
         href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
         items:
@@ -3879,6 +3881,10 @@
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
     - name: Project timesheet mobile app
       href: ../financials/project-management/project-timesheet.md
+    - name: Project timesheets on a mobile device
+      href: ../financials/project-management/mobile-timesheets.md
+    - name: Implement custom fields for the Project timesheet mobile app
+      href: ../financials/project-management/custom-fields-mobile.md
   - name: Sales and marketing
     href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     items:

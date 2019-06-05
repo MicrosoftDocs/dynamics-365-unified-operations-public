@@ -44,4 +44,4 @@ The following options, which can be found on the **Retail** tab of released prod
 > [!NOTE]
 > These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.
 
-[![prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+[![Prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)

@@ -39,6 +39,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Correspondence of accounts](rus-correspondence-accounts.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
+- [Import currency exchange rates from CBRF](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates)
 
 ## Advance holders
 
