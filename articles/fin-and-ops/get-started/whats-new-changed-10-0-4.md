@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.4 (July 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July.
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/29/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,15 +35,9 @@ ms.dyn365.ops.version: Release 10.0.4
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July and has a build number of 10.0.xxx. For more information about version 10.0.4, see [Additional resources](whats-new-changed-10-0-4.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July and has a build number of 10.0.136. For more information about version 10.0.4, see [Additional resources](whats-new-changed-10-0-4.md#additional-resources).
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.4](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-4).
 
-## Feature 
-
-Description 
-
-For more information, see [Title](link).
 
 ## Set up interest distribution for cash accounts
 Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
