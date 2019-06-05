@@ -15,18 +15,17 @@ ms.technology:
 
 ms.search.form: SysUserSetup, DefaultDashboard
 ROBOTS: NOINDEX, NOFOLLOW
-audience: Application User, IT Pro
+audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 62363
-ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-07-31
+ms.dyn365.ops.version: Platform update 28
 
 ---
 
