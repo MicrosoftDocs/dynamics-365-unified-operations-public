@@ -5,7 +5,7 @@ title: Understanding saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: SysUserSetup, DefaultDashboard
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
