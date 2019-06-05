@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 ## Introduction
-Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [Personalize the user experience]().
+Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [!Personalize the user experience](personalize-user-experience.md).
 
 With traditional personalization, users could only have a single set of personalizations per form. Saved views expands on personalization in several important ways:
 
@@ -184,4 +184,4 @@ There are a few reasons why a filter may not appear to save with a view:
      
   You should be alerted when these situations occur by an informational message when the view is loading. You can also confirm by switching to this view after the page loads, as that should allow the view query to execute regardless.  
 
-- The page in question may not properly support views, as it may ignore the view query completely. Please report any such instances through the Feedback mechanism. 
+- The page in question may not properly support views, as it may ignore the view query completely. Please report any such instances through the **Feedback** mechanism. To get to the feedback page, click **Help and Support** and then **Feedback**.  
