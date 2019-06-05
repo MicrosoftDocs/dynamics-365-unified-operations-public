@@ -500,7 +500,7 @@ Depending on the architecture of the environment used by a company which interop
 | **Gov-Client-Browser-JS-User-Agent** | JavaScript-reported user agent string from the originating device.                                                                      | Not included. |
 | **Gov-Client-Browser-Do-Not-Track**  | Whether the Do Not Track option is enabled on the browser.                                                                              | Not included. |
 | **Gov-Client-Multi-Factor**          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.       | Not included. |
-| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | Included.   |
+| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | **Included**.   |
 | **Gov-Vendor-License-IDs**           | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included. |
 | **Gov-Vendor-Public-IP**             | The public IP address of the servers to which the originating device sent their requests.                                               | Not included. |
 | **Gov-Client-MAC-Addresses**         | The list of MAC addresses available on the originating device.                                                                          | Not included. |
@@ -514,12 +514,12 @@ following headers:
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Gov-Client-Device-ID**     | An identifier unique to an originating device.                                                                                          | Not included. |
 | **Gov-Client-User-IDs**      | A key-value data structure containing the user identifiers.                                                                             | Not included. |
-| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | Included.   |
+| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | **Included**.   |
 | **Gov-Client-Local-IPs**     | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not included. |
-| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | Included.   |
-| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | Included.   |
+| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | **Included**.   |
+| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | **Included**.   |
 | **Gov-Vendor-License-IDs**   | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included. |
-| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | Included.   |
+| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | **Included**.   |
 
 ### Implementation details
 
@@ -658,13 +658,15 @@ The following table shows the parameters of the web applications.
 
 | Parameter                                            | Value                                  |
 |------------------------------------------------------|----------------------------------------|
-| Base URL for Dynamics 365 for Finance and Operations | `https://api.service.hmrc.gov.uk`      |
-| Base URL for Sandbox HMRC                            | `https://test-api.service.hmrc.gov.uk` |
+| Base URL for "**Dynamics 365 for Finance and Operations**" | `https://api.service.hmrc.gov.uk`      |
+| Base URL for "**Sandbox HMRC**"                            | `https://test-api.service.hmrc.gov.uk` |
 | Authorization URL path                               | /oauth/authorize                       |
 | Token URL path                                       | /oauth/token                           |
 | Redirect URL                                         | urn:ietf:wg:oauth:2.0:oob              |
 | Authorization format mapping                         | MTD VAT authorization format (UK)      |
-| Import token model mapping                           | MTD VAT import token format (UK)       |
+| Import token model mapping                           | MTD VAT import token format (UK) *shown as "**MTD VAT token response format to model mapping" in the list**"*       |
+| Accept | application/vnd.hmrc.1.0+json |
+| Content type | application/json |
 
 Additionally, security roles should be defined for both web applications to limit access to the access token.
 
@@ -688,6 +690,17 @@ The following table shows the shared parameters for all these web services.
 | Accept                        | application/vnd.hmrc.1.0+json           |
 | Content type                  | application/json                        |
 | Request header format mapping | MTD VAT web request headers format (UK) |
+
+The following table shows other request parameters which must be defined for these web services:
+
+| Web service         | Request method                      | Successful response code                |
+|---------------------|-------------------------------------|-----------------------------------------|
+| HMRC GET            | GET                                 | 200 |
+| HMRC POST           | POST                                | 201 |
+| HMRC sandbox GET    | GET                                 | 200 |
+| HMRC sandbox POST   | POST                                | 201 |
+| HMRC TEST USER POST | POST                                | 201 |
+
 
 ### Additional fields
 
