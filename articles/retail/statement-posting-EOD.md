@@ -5,7 +5,7 @@ title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Improvements to statement posting functionality
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -47,7 +47,7 @@ Finance and Operations includes the following validations that are related to th
 - The same configuration keys must be used for all the operations that are performed on a given statement during its lifecycle (Create, Calculate, Clear, Post, and so on). For example, you can't create and calculate a statement while the **Retail statement (legacy)** configuration key is turned on, and then try to post the same statement while the **Retail statement** configuration key is turned on.
 
 > [!NOTE]
-> We recommend that you use the **Retail statements** configuration key for the improved statement posting feature, unless you have compelling reasons to use the **Retail statements (legacy)** configuration key instead. Microsoft will continue to invest in the new and improved statement posting feature, and it's important that you switch to it at the earliest opportunity to benefit from it. The legacy statement posting feature will be deprecated in a future release.
+> We recommend that you use the **Retail statements** configuration key for the improved statement posting feature, unless you have compelling reasons to use the **Retail statements (legacy)** configuration key instead. Microsoft will continue to invest in the new and improved statement posting feature, and it's important that you switch to it at the earliest opportunity to benefit from it. The legacy statement posting feature is deprecated starting in 8.0 release.
 
 ## Setup
 
@@ -60,11 +60,15 @@ As part of the improvements to the statement posting feature, three new paramete
 
 - **Disable counting required** – When this option is set to **Yes**, the posting process for a statement continues, even if the difference between the counted amount and the transaction amount on the statement is outside the threshold that is defined on the **Statement** FastTab for Retail stores.
 
-Additionally, the **Maximum number of parallel statement posting** field has been introduced on the **Batch processing** FastTab. This field defines the number of batch tasks should be run at the same time. Currently, you must manually set the value of this field.
+Additionally, the following parameters have been introduced on the **Batch processing** FastTab on the **Posting** tab of the **Retail parameters** page: 
 
-Also, with the new posting process, it is required to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page. This is true even if no Gift cards are used by the organization.
+- **Maximum number of parallel statement posting** – This field defines the number of batch tasks that will be used to post multiple statements. 
+- **Max thread for order processing per statement** – This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the **Maximum number of parallel statement posting** parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.
+- **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single retail transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in a aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
+- **Maximum number of threads to validate store transactions** – This field defines the number of threads that will be used to validate retail transactions. Validating retail transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page. This needs to defined even if gift cards are not used by the organization.
 
-Note that all settings and parameters that are related to statement postings, and that are defined on Retail stores and on the **Retail parameters** page, are applicable to the improved statement posting feature.
+> [!NOTE]
+> All settings and parameters that are related to statement postings, and that are defined on Retail stores and on the **Retail parameters** page, are applicable to the improved statement posting feature.
 
 ## Processing
 
@@ -164,7 +168,7 @@ Other, back-end improvements that users can see have been made to the statement 
 - Statements are efficiently queued for processing by prioritizing the statements that have the maximum number of transactions.
 - Batch processes such as **Calculate statements in batch** and **Post statements in batch** are run only in batch mode. In the legacy statement posting feature, users could choose to run these batch processes in an interactive mode which is s single threaded operation unlike batch processes which are multi-threaded.
 - In the legacy statement posting feature, any failure of a batch task put the whole batch job in an error state. In the improved feature, batch task failures don't put the batch job in an error state if other batch tasks are successfully completed. You should assess the posting status for a batch execution run by using the **Retail statements** page, where you can see any statements that weren't posted because of errors.
-- In the legacy statement posting feature, the first occurrence of a statement failure causes the whole batch to fail. The remaining statements aren't processed. In the improved feature, the batch process continues to process all statements, even if some of the statements fail. One benefit is that users gain visibility into the exact number of statements that have errors. Therefore, users don't have to be stuck in a continous loop of fixing the errors and running the post statement process till all statements are posted.
+- In the legacy statement posting feature, the first occurrence of a statement failure causes the whole batch to fail. The remaining statements aren't processed. In the improved feature, the batch process continues to process all statements, even if some of the statements fail. One benefit is that users gain visibility into the exact number of statements that have errors. Therefore, users don't have to be stuck in a continuous loop of fixing the errors and running the post statement process till all statements are posted.
 
 ## General guidance about the statement posting process
 

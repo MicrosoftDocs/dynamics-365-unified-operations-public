@@ -40,7 +40,7 @@ Dynamics 365 for Finance and Operations provides many self-service support optio
 
 
 - [Dynamics 365 for Finance and Operations help documentation](../../fin-and-ops/index.md)
-- [Dynamics 365 for Finance and Operations operated by 21Vianet]()
+- [Dynamics 365 for Finance and Operations operated by 21Vianet](../deployment/china-local-deployment.md)
 - [Dynamics community](https://community.dynamics.com/)
 - [Microsoft Learn](https://docs.microsoft.com/learn/)
 

@@ -138,7 +138,7 @@ Task recordings can be played as task guides. Task guides are used to guide user
 6.  When you've finished, select **Stop Task guide**.
 
 
-Additional resources
+## Additional resources
 --------
 
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)

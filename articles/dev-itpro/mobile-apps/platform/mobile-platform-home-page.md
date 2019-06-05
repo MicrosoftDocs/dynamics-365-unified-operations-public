@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 03/3/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -172,6 +172,8 @@ There are many resources that you can leverage to figure out how to build or cha
 Here are some tips for workspace creation and modification:
 - Create new simplified forms for recording rather than recording large complex forms.
 - After recording a form, you have to close the form instead of clicking **Done**, otherwise the form remains open.
+- Verify that recordings are correct using the "Job steps".
+- Play back recordings using task recorder playback to verify them.
 - If you re-record a page with a grid then you need to re-record the link to the Details page because otherwise it won't be there.
 - When recording an action, change the value of the fields to add them. When recording is complete, close the form instead of clicking **Save**.
 - Lookups in mobile are list pages that have been recorded. **Select field data** and **Select field to display** are used to select the **field to use as the value to save** (data) and the **field to show the user** (display).
@@ -186,9 +188,31 @@ Here are some tips for workspace creation and modification:
 Avoid using forms with these patterns and controls when creating workspace recordings:
 - Datasources with DelayedJoin (common on transaction forms).
 - FastTabs (common on existing forms).
-    - Recorded forms do not need to have FastTabs (be thed expansion state is remembered).
+    - Recorded forms should not have FastTabs because the FastTabs expansion state can interfere with playback.
 - Any user interface (UI) that has state, like an expandable or hide/show region.
 - There is no check box in mobile. You have to manually bind the field to a Yes/No enum in JavaScript.
 
 ### Using multi-factor authentication with the Unified Operations app
-The Unified Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (AAD) by presenting the AAD sign-in web page within an embedded browser. After a successful sign in it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workaround for this is to use the "touch and hold" gesture on the authentication notification and then click the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
+Using multi-factor authentication with the Unified Operations app
+The Unified Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this are:
+- Different device - Use a different device for the multi-factor authentication response so the Unified Operations app remains active on the original device.
+- Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
+- Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
+
+If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
+
+### Trouble signing out of the app and signing in with new credentials
+If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
+- To sign out of the app, follow these steps:
+    - Open the app.
+    - Sign out of the app.
+    - Force close the app.
+- To forget old credentials, follow these steps:
+    - Open the app.
+    - Connect to the server.
+    - On the Azure AD sign-in screen, if there are saved credentials, select the ellipsis (...) button on that card, and then select **Forget the credential**.
+    - Force close the app.
+- To sign in to the app, follow these steps:
+    - Open the app.
+    - Connect to the server
+    - Sign in using the Azure AD sign-in screen.

@@ -5,7 +5,7 @@ title: Bank foreign currency revaluation
 description: This topic provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0
 # Bank foreign currency revaluation
 
 [!include [banner](../includes/banner.md)]
-[!include [preview-banner](../includes/preview-banner.md)]
+
 
 This topic provides an overview of the process of bank foreign currency revaluation. It explains how to set up and run the process, and provides information about the calculation for the process. It also explains how to reverse revaluation transactions, if reversal is required.
 
@@ -59,7 +59,7 @@ You must turn on the bank foreign currency revaluation feature before you can pr
 3. On the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 4. Refresh the browser to see **Foreign currency revaluation** in the **Periodic tasks** section of the area page.
 
-You must turn on the feature for every legal entity that will use foreign currency revaluation.
+You must turn on the feature for every legal entity that will use foreign currency revaluation. If you are assigned to the System Administrator role or Feature Manager role, you can eliminate this step by enabling the feature named **Enable bank revaluation without a parameter** in the **Feature management** workspace.
 
 > [!NOTE]
 > If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation. You won't be able to use the foreign currency revaluation that is used by other countries or regions.

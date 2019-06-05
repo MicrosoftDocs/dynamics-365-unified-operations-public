@@ -5,7 +5,7 @@ title: Finance and Operations Connector
 description: This topic provides information about the Finance and Operations Connector for Microsoft Flow and Logic Apps.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/31/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,9 +29,8 @@ ms.dyn365.ops.version: 2019-02-28
 # Finance and Operations Connector
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
-The Dynamics 365 for Finance and Operations connector allows Microsoft Flow, PowerApps, Data Integrator, and Logic Apps to integrate with an instance of Dynamics 365 for Finance and Operations. An integration can use the available actions to affect a create, update, or delete operation in the target instance. 
+The Dynamics 365 for Finance and Operations connector allows Microsoft Flow, PowerApps, Data Integrator, and Logic Apps to integrate with an instance of Dynamics 365 for Finance and Operations. An external application can use the available trigger and actions to integrate with Finance and Operations.
 
 ## Prerequisites
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further

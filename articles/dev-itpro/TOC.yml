@@ -180,7 +180,7 @@
         href: dev-ref/formdataobject-classes.md
       - name: F classes (FormFastTabSummarySeparator to FormGridControl)
         href: dev-ref/formfasttabsummaryseparator-classes.md
-      - name: F classes (FormGroupControl to FormIntControl
+      - name: F classes (FormGroupControl to FormIntControl)
         href: dev-ref/formgroupcontrol-classes.md
       - name: F classes (FormListBoxControl to FormNotifyEventArgs)
         href: dev-ref/formlistboxcontrol-classes.md
@@ -227,8 +227,9 @@
       - name: X classes
         href: dev-ref/x-classes.md
   - name: Extensibility
-    href: extensibility/extensibility-home-page.md
     items:
+    - name: Extensibility home page
+      href: extensibility/extensibility-home-page.md
     - name: Introduction and getting started
       items:
       - name: Application extensibility plan
@@ -245,30 +246,38 @@
         href: extensibility/customization-overlayering-extensions.md
     - name: What's new
       items:
-      - name: Extensibility changes July 2017
-        href: extensibility/changes-july-2017.md
-      - name: Extensibility changes in version 7.3
-        href: extensibility/extensibility-changes-73.md
-      - name: Extensibility changes in version 8.0
-        href: extensibility/changes-80.md
-      - name: Extensibility changes version 8.0.1
-        href: extensibility/extensibility-changes-801.md
-      - name: Extensibility changes version 8.0.2
-        href: extensibility/extensibility-changes-802.md
-      - name: Extensibility changes version 8.0.3
-        href: extensibility/extensibility-changes-803.md
-      - name: Extensibility changes version 8.0.4
-        href: extensibility/extensibility-changes-804.md
-      - name: Extensibility changes version 8.1
-        href: extensibility/extensibility-changes-81.md       
-      - name: Extensibility changes version 8.1.1
-        href: extensibility/extensibility-changes-811.md   
-      - name: Extensibility changes version 8.1.2
-        href: extensibility/extensibility-changes-812.md
-      - name: Extensibility changes version 8.1.3
-        href: extensibility/extensibility-changes-813.md  
+      - name: What's new or changed for extensibility
+        href: extensibility/extensibility-new.md
+      - name: Extensibility changes version 10.0.3
+        href: extensibility/extensibility-changes-10-3.md  
+      - name: Extensibility changes version 10.0.2
+        href: extensibility/extensibility-changes-10-2.md  
+      - name: Extensibility changes version 10.0.1
+        href: extensibility/extensibility-changes-10-1.md  
       - name: Extensibility changes version 10.0
         href: extensibility/extensibility-changes-10.md  
+      - name: Extensibility changes version 8.1.3
+        href: extensibility/extensibility-changes-813.md  
+      - name: Extensibility changes version 8.1.2
+        href: extensibility/extensibility-changes-812.md
+      - name: Extensibility changes version 8.1.1
+        href: extensibility/extensibility-changes-811.md   
+      - name: Extensibility changes version 8.1
+        href: extensibility/extensibility-changes-81.md       
+      - name: Extensibility changes version 8.0.4
+        href: extensibility/extensibility-changes-804.md
+      - name: Extensibility changes version 8.0.3
+        href: extensibility/extensibility-changes-803.md
+      - name: Extensibility changes version 8.0.2
+        href: extensibility/extensibility-changes-802.md
+      - name: Extensibility changes version 8.0.1
+        href: extensibility/extensibility-changes-801.md
+      - name: Extensibility changes in version 8.0
+        href: extensibility/changes-80.md
+      - name: Extensibility changes in version 7.3
+        href: extensibility/extensibility-changes-73.md
+      - name: Extensibility changes July 2017
+        href: extensibility/changes-july-2017.md
     - name: Fundamentals
       items:
       - name: Intrusive customizations
@@ -369,7 +378,7 @@
       href: perf-test/testing-validation.md
     - name: Test projects in Visual Studio
       href: perf-test/testing-support.md
-    - name: Deploy topologies supporting continuous build and test automation
+    - name: Deploy environments supporting continuous build and test automation
       href: perf-test/continuous-build-test-automation.md
     - name: SysTest filtering using class and method attributes
       href: perf-test/systest-filtering.md
@@ -872,6 +881,8 @@
   items:
   - name: Financial dimension framework
     items:
+    - name: Ledger account combinations
+      href: financial/LedgerAccountCombinations.md
     - name: Default financial dimensions
       href: financial/dimension-defaulting.md
     - name: Support for different dimension patterns
@@ -1078,15 +1089,19 @@
     items:
     - name: Process for moving to the latest update
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Update environments from version 8.0 to 8.1.X/10.X
-      href: migration-upgrade/appupdate-80-81.md
+    - name: Paths to One Version
+      items:
+        - name: Self-service upgrade to the latest version
+          href: migration-upgrade/self-service-upgrade.md
+        - name: Rebuild and update to the latest version
+          href: migration-upgrade/appupdate-80-81.md
     - name: Software lifecycle policy and cloud releases
       href: migration-upgrade/versions-update-policy.md
     - name: Apply the latest platform update to environments
       href: migration-upgrade/upgrade-latest-platform-update.md
     - name: Upgrade the Dynamics AX platform to the August 2016 release
       href: migration-upgrade/update-platform-each-release.md
-    - name: Upgrade data in development, demo, or sandbox environments
+    - name: Upgrade data in development, or demo environments
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools
       href: dev-tools/update-development-tools.md
@@ -1173,6 +1188,8 @@
       href: sysadmin/enhanced-forms.md
     - name: Clean up the batch history
       href: sysadmin/batch-history-cleanup.md
+    - name: Abort an executing batch job
+      href: sysadmin/batch-abort.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:

@@ -62,7 +62,7 @@ After you purchase and register NVFAs, you can perform the following tasks:
 3. Select **Compliance**, and specify how the item is related to a fixed asset group.
 
     > [!NOTE]
-    > The system uses this setting to fill in the **FA group** and **Lifetime** fields on the **Working clothes/Special riggings/NVFA issue journal lines** page. For more information, see [Generate NVFA records, putting into operation, and depreciation transactions for NVFAs](#Generate-nvfa-records,-putting-into-operation,-and-depreciation-transactions-for-nvfas).
+    > The system uses this setting to fill in the **FA group** and **Lifetime** fields on the **Working clothes/Special riggings/NVFA issue journal lines** page. For more information, see [Generate NVFA records, putting into operation transactions, and depreciation transactions for NVFAs](#generate-nvfa-records-putting-into-operation-transactions-and-depreciation-transactions-for-nvfas).
 
 ## Set up inventory dimensions for NVFAs
 
