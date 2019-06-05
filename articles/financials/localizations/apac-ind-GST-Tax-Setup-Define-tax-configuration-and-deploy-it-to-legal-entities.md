@@ -45,7 +45,7 @@ ms.dyn365.ops.version: 10.0.4
 8. In the **Configurations version** field, select a value
 9. The new tax configuration is listed in the **Available configurations** grid
 
-![](media/configuration-version.png)
+![](media/configuration-version.PNG)
 
 10. Click **Save**
 11. Click **Synchronize**
