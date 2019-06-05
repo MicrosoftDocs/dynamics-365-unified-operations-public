@@ -213,3 +213,7 @@ Lowering the negative days to a value that's closer to the item's lead time and 
 MRP will create a planned order attached to the first sales order. Then the second sales order gets pegged against the existing purchase order, as expected, based on the negative days setting. This planning result is also correct, and MRP will potentially run faster. In this case, it’s not essential that you understand and know how to work with the action messages.
 
 To have the right values entered for your business, you must think in terms of both funcionality and MRP runtime. This can take a little trial and error to figure out, but this topic covers some general "do"s and "don't"s to watch out for.
+
+## See also
+
+For more discussion, [see the original blog post](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
