@@ -1,6 +1,11 @@
 {
   "redirections": [
   {
+    "source_path": "articles/dev-itpro/perf-test/perfsdk-tutorial.md",
+    "redirect_url": "/dynamics365/unified-operations/dev-itpro/perf-test/single-user-test-perf-sdk",
+    "redirect_document_id": "false"
+  },
+  {
     "source_path": "articles/index.md",
     "redirect_url": "/dynamics365/unified-operations/fin-and-ops/index",
     "redirect_document_id": "false"
