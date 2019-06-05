@@ -89,7 +89,7 @@ When a company is signed up for the MTD service for VAT in HMRC, it should compl
 
 ## Import and set up ER configurations
 
-To prepare Finance and Operations to interoperate with MTD for VAT, you must import the following ER configurations.
+To prepare Finance and Operations to interoperate with MTD for VAT, you must import the following ER configurations:
 
 | Number | ER configuration name                       | Type                                 | Description |
 |--------|---------------------------------------------|--------------------------------------|-------------|
@@ -106,6 +106,8 @@ To prepare Finance and Operations to interoperate with MTD for VAT, you must imp
 | 11     | MTD VAT web request headers format (UK)     | Format (exporting)                   | A format that is used to create request header parameters for the HTTPS request |
 | 12     | MTD VAT authorization format (UK)           | Format (exporting)                   | The request header parameters for the authorization code and access token |
 | 13     | MTD VAT import token format (UK)            | Format (importing)                   | The ER format used for importing of access token that is received from HMRC into the database. |
+
+Import the latest versions of the configurations. Description of the version of configuration usually contains the number of the KB article explaining the change introduced by the configuration version.
 
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configurations:
@@ -127,9 +129,20 @@ Nine boxes on the VAT declaration for the UK must contain values that are calcul
 - VATReclaimed
 - Other
 
+Table below provides details about the result values:
+
+| **Result value**         | **Used in calculation of**| **Default setup of the “Classifier value”** |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| **VATDue**       | <ul><li>[Tax amount] of “**vatDueSales**” box.</li><li>[Tax base amount] “**totalValueSalesExVAT**” box.</li><li>[Tax base amount] of “**totalValueGoodsSuppliedExVAT**” box. In addition on calculation of this box it is considered that the “Reporting type” of the Item sales tax group is not “Service” and “Country/region type” of the Sales tax code is set up as “EU”.</li></ul>| <ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul>|
+| **VATDueEC**     |<ul><li>[Tax amount] of “**vatDueAcquisitions**” and [Tax base amount] of “**totalAcquisitionsExVAT**” boxes. In addition on calculation of these boxes it is considered that the “Reporting type” of the Item sales tax group is not “Service” and “Country/region type” of the Sales tax code is set up as “EU”.</li><li>[Tax amount] of “**vatReclaimedCurrPeriod**” box.</li><li>[Tax base amount] of “**totalValuePurchasesExVAT**” box.</li></ul> | <ul><li>UseTax</li><li>UseTaxCreditNote</li></ul>|
+| **ECSupplies**   | <ul><li>[Tax base amount]of “**totalValueSalesExVAT**” box.</li><li>[Tax base amount] of “**totalValueGoodsSuppliedExVAT**” box. In addition on calculation of “totalValueGoodsSuppliedExVAT” box amount it is considered that the “Reporting type” of the Item sales tax group is not “Service” and “Country/region type” of the Sales tax code is set up as “EU”.</li></ul>| <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul>|
+| **VATReclaimed** | <ul><li>[Deductible sales tax amount] of “**vatReclaimedCurrPeriod**” box.</li><li>[Tax base amount] of “**totalValuePurchasesExVAT**” box.</li><li>[Tax amount] of “**vatDueAcquisitions**” box. In addition on calculation of this box it is considered that the “Reporting type” of the Item sales tax group is not “Service” and “Country/region type” of the Sales tax code is set up as “EU”.</li></ul>| <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li></ul> |
+| **Other**        | Use \*Not blank\* value for this result and set it up at the end of your list of result values.| \*Not blank\*|
+
+
 For each value, users can define a set of sales tax codes together with a classifier that is associated with the direction of the tax transaction and the credit note identifier. The following table provides a definition of this classifier.
 
-| Classifier value                | Condition |
+| **Classifier value**            | **Condition** |
 |---------------------------------|-----------|
 | PurchaseCreditNote              | <ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
 | Purchase                        | <ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
@@ -294,6 +307,8 @@ To work with MTD for VAT, VAT registration number of your Legal entity must be d
 2.	Associate created Registration type with “**VAT ID**” [Registration category](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-registration-ids#supported-registration-categories).
 3.	Open **Organization administration** > **Global Address Book** > **Legal entities** and click **Registration ID** on the Action pane.
 4.	Define VAT registration number as a Registration ID of type which is associated with “**VAT ID**” Registration category:
+
+## IMG: reg-ids-setup
 
 After the company has user credentials, an authorization process can be initialized. Two steps must be done before your system is ready to interoperate with HMRC:
 
@@ -472,24 +487,24 @@ Depending on the architecture of the environment used by a company which interop
 
 | **HTTP header**                      | **Description**                                                                                                                         | **Coverage**                        |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Gov-Client-Public-IP**             | The public IP address (IPv4 or IPv6) from which the originating device makes the request.                                               | Not in scope of the current hotfix. |
-| **Gov-Client-Public-Port**           | The public TCP port that the originating device uses when initiating the request.                                                       | Not in scope of the current hotfix. |
-| **Gov-Client-Device-ID**             | An identifier unique to an originating device.                                                                                          | Not in scope of the current hotfix. |
-| **Gov-Client-User-IDs**              | A key-value data structure containing the user identifiers.                                                                             | Not in scope of the current hotfix. |
-| **Gov-Client-Timezone**              | The local time-zone of the originating device.                                                                                          | Not in scope of the current hotfix. |
-| **Gov-Client-Local-IPs**             | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not in scope of the current hotfix. |
-| **Gov-Client-Screens**               | Information related to the originating device’s screens. The fields include: width is the reported width of the screen, in pixels; height is the reported height of the screen, in pixels; scaling-factor is the reported scaling factor of the screen; color-depth is the color depth of the screen, in bits.                                                           | Not in scope of the current hotfix. |
-| **Gov-Client-Window-Size**           | The number of pixels of the window on the originating device in which the user initiated (directly or indirectly) the API call to HMRC. | Not in scope of the current hotfix. |
-| **Gov-Client-User-Agent**            | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | Not in scope of the current hotfix. |
-| **Gov-Client-Browser-Plugins**       | A list of browser plugins on the originating device.                                                                                    | Not in scope of the current hotfix. |
-| **Gov-Client-Browser-JS-User-Agent** | JavaScript-reported user agent string from the originating device.                                                                      | Not in scope of the current hotfix. |
-| **Gov-Client-Browser-Do-Not-Track**  | Whether the Do Not Track option is enabled on the browser.                                                                              | Not in scope of the current hotfix. |
-| **Gov-Client-Multi-Factor**          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.       | Not in scope of the current hotfix. |
-| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | Included into the current hotfix.   |
-| **Gov-Vendor-License-IDs**           | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not in scope of the current hotfix. |
-| **Gov-Vendor-Public-IP**             | The public IP address of the servers to which the originating device sent their requests.                                               | Not in scope of the current hotfix. |
-| **Gov-Client-MAC-Addresses**         | The list of MAC addresses available on the originating device.                                                                          | Not in scope of the current hotfix. |
-| **Gov-Vendor-Forwarded**             | A list that details hops over the internet between services that terminate TLS.                                                         | Not in scope of the current hotfix. |
+| **Gov-Client-Public-IP**             | The public IP address (IPv4 or IPv6) from which the originating device makes the request.                                               | Not included. |
+| **Gov-Client-Public-Port**           | The public TCP port that the originating device uses when initiating the request.                                                       | Not included. |
+| **Gov-Client-Device-ID**             | An identifier unique to an originating device.                                                                                          | Not included. |
+| **Gov-Client-User-IDs**              | A key-value data structure containing the user identifiers.                                                                             | Not included. |
+| **Gov-Client-Timezone**              | The local time-zone of the originating device.                                                                                          | Not included. |
+| **Gov-Client-Local-IPs**             | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not included. |
+| **Gov-Client-Screens**               | Information related to the originating device’s screens. The fields include: width is the reported width of the screen, in pixels; height is the reported height of the screen, in pixels; scaling-factor is the reported scaling factor of the screen; color-depth is the color depth of the screen, in bits.                                                           | Not included. |
+| **Gov-Client-Window-Size**           | The number of pixels of the window on the originating device in which the user initiated (directly or indirectly) the API call to HMRC. | Not included. |
+| **Gov-Client-User-Agent**            | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | Not included. |
+| **Gov-Client-Browser-Plugins**       | A list of browser plugins on the originating device.                                                                                    | Not included. |
+| **Gov-Client-Browser-JS-User-Agent** | JavaScript-reported user agent string from the originating device.                                                                      | Not included. |
+| **Gov-Client-Browser-Do-Not-Track**  | Whether the Do Not Track option is enabled on the browser.                                                                              | Not included. |
+| **Gov-Client-Multi-Factor**          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.       | Not included. |
+| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | Included.   |
+| **Gov-Vendor-License-IDs**           | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included. |
+| **Gov-Vendor-Public-IP**             | The public IP address of the servers to which the originating device sent their requests.                                               | Not included. |
+| **Gov-Client-MAC-Addresses**         | The list of MAC addresses available on the originating device.                                                                          | Not included. |
+| **Gov-Vendor-Forwarded**             | A list that details hops over the internet between services that terminate TLS.                                                         | Not included. |
 
 
 “**BATCH_PROCESS_DIRECT**” connection method assumes transmission of the
@@ -497,19 +512,19 @@ following headers:
 
 | **HTTP header**              | **Description**                                                                                                                         | **Coverage**                        |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Gov-Client-Device-ID**     | An identifier unique to an originating device.                                                                                          | Not in scope of the current hotfix. |
-| **Gov-Client-User-IDs**      | A key-value data structure containing the user identifiers.                                                                             | Not in scope of the current hotfix. |
-| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | Included into the current hotfix.   |
-| **Gov-Client-Local-IPs**     | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not in scope of the current hotfix. |
-| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | Included into the current hotfix.   |
-| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | Included into the current hotfix.   |
-| **Gov-Vendor-License-IDs**   | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not in scope of the current hotfix. |
-| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | Included into the current hotfix.   |
+| **Gov-Client-Device-ID**     | An identifier unique to an originating device.                                                                                          | Not included. |
+| **Gov-Client-User-IDs**      | A key-value data structure containing the user identifiers.                                                                             | Not included. |
+| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | Included.   |
+| **Gov-Client-Local-IPs**     | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not included. |
+| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.                   | Included.   |
+| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | Included.   |
+| **Gov-Vendor-License-IDs**   | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included. |
+| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | Included.   |
 
 ### Implementation details
 
-To support possibility of detecting parameters required by fraud prevention
-requirements of the HMRC like time-zone and MAC address in BATCH_PROCESS_DIRECT
+To support possibility of detecting parameters required by HMRC for fraud prevention
+like time-zone and MAC address in BATCH_PROCESS_DIRECT
 connection method and version of the software in both WEB_APP_VIA_SERVER and
 BATCH_PROCESS_DIRECT connection methods, an X++ methods were included into the
 application part. Here is the information about versions of Dynamics 365 for
@@ -528,6 +543,8 @@ In Dynamics 365 for Finance and Operations request headers are composed by the
 “**MTD VAT web request headers format (UK)”** format in Electronic Reporting
 (ER) module. To support fraud prevention headers this format configuration was
 extended with necessary nodes:
+
+## IMG:format-new-nodes
 
 Determination of the corresponding values of the headers is supported via
 calling of the X++ methods by the “**MTD VAT model mapping**” configuration.
@@ -560,6 +577,8 @@ When user initiates a request to the HMRC without activating a batch job, the
 following dialog will inform about what information is going to be sent to the
 HMRC:
 
+## IMG:fraud-prevention-headers-message
+
 If the user aborts the transmission on this stage by clicking the **Cancel**
 button of the dialog, transmission will be canceled and the status of the
 electronic message will be changed to “Error”, attached description of the error
@@ -591,6 +610,7 @@ steps must be done:
 3.  Select “Gov-Client-Connection-Method” node and its set “**Enabled**”
     parameter to “**false**”:
 
+## IMG:format-disable-nodes
 
 4.  Repeat p.3 for other fraud prevention headers: Gov-Client-Timezone,
     Gov-Client-User-Agent, Gov-Vendor-Version, Gov-Client-MAC-Addresses.
@@ -602,6 +622,7 @@ steps must be done:
     mapping**” field of all the web services used for interoperation with the
     HMRC instead of the parent format used by default:
     
+## IMG:web-service-format-setup
     
 **Important note!** API requests without fraud prevention headers may be
 rejected by HMRC. It is strictly recommended to address API requests to HMRC
