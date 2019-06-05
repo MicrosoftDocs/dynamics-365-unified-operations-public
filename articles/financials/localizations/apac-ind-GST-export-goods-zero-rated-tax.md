@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Export goods with zero-rated tax
-description:  This topic includes information how to export goods with zero-rated tax.
+title: Export goods that have zero-rated tax
+description: This topic explains how to export goods that have zero-rated tax.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,39 +28,43 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Export goods with zero-rated tax
+# Export goods that have zero-rated tax
 
-Complete the procedures in this topic to export goods with zero-rated tax. 
+[!include [banner](../includes/banner.md)]
 
-## Create a sales order 
+Complete the procedures in this topic to export goods that have zero-rated tax.
 
-1. Click **Accounts receivable** \> **Sales orders** \> **All sales orders**.
-2. Create an export order for a taxable item and save the record.
-3. Click **Tax information**, and on the **GST** tab, select the **Customer tax information** tab.
-4. Click **OK**.
-5. On the Action Pane, on the **Sell** tab, in the **Tax** group, click **Tax document**
-6. Click **Close**.
+## Create a sales order
+
+1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
+2. Create an export order for a taxable item, and save the record.
+3. Select **Tax information**.
+4. On the **GST** tab, select the **Customer tax information** tab.
+5. Select **OK**.
+6. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
+7. Select **Close**.
 
 ## Post the invoice
 
-1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
+1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 2. In the **Quantity** field, select **All**.
-3. Click OK.
-4. Click **Yes** to acknowledge the warning message.
+3. Select **OK**.
+4. You receive a warning message. Select **Yes** to acknowledge it.
 
 ## Validate the voucher
 
-1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**.
-2. Click **Voucher**.
+1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+2. Select **Voucher**.
 
 ## Post the export order
 
-1. Click **Accounts receivable** \> **Orders** \> **Customs export order**.
+1. Go to **Accounts receivable** \> **Orders** \> **Customs export order**.
 2. Create an export order for the posted sales order.
-3. Click **Shipping bill**.
-4. In the **Shipping bill Number** field, enter a value and then click **OK**.
+3. Select **Shipping bill**.
+4. In the **Shipping bill Number** field, enter a value.
+5. Select **OK**.
 
 ## Validate the voucher
 
-1. Click **Inquiries** \> **Shipping bill**.
-2. Click **Voucher**.
+1. Select **Inquiries** \> **Shipping bill**.
+2. Select **Voucher**.
