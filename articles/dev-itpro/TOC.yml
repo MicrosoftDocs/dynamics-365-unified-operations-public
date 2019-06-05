@@ -355,8 +355,8 @@
     items:
     - name: Take traces using Trace parser
       href: perf-test/trace-trace-tutorial.md
-     - name: Single-user testing with Task recorder and the Performance SDK 
-       href: perf-test/single-user-test-perf-sdk.md 
+    - name: Single-user testing with Task recorder and the Performance SDK 
+      href: perf-test/single-user-test-perf-sdk.md 
     - name: Multi-user testing with the Performance SDK and a local test controller 
       href: perf-test/multi-user-testing-local-test-controller.md 
     - name: Multi-user testing with the Performance SDK and Azure DevOps 
