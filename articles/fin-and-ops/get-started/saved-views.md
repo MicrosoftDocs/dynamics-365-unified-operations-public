@@ -72,7 +72,7 @@ To ensure that the current state of the view is known, when you start making cha
 If you want to save those changes, follow these steps.
 1.	Select the view name to open the view selector.
 2.	To modify the existing view:
-     - Select **Save**. Note that this action will not be enabled for locked views. 
+     1. Select **Save**. Note that this action will not be enabled for locked views. 
 3.	To create a new view:
      1.    Select **Save a copy**. 
      2.    Enter a view name and (optionally) a description.
