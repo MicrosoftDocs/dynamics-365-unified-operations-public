@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,6 +46,19 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.4 
+
+### France: FEC Accounting data export in XML
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced by TXT format, **French FEC audit file** is available through **General ledger** \> **Periodic tasks** \> **Data export**.
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | General ledger |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Target timeframe for the functionality to be removed is July 2020. |
+
+=======
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
 
 > [!IMPORTANT]
@@ -60,6 +73,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available. Until that point, customers can revert to the legacy navigation bar through the **Client performance options** page. |
+
 
 ## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
 
