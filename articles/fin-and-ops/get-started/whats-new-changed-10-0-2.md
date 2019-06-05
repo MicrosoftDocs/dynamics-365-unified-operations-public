@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new and changed in Finance and Operations version 10.0.2 (May 2019)
+title: What's new or changed in Finance and Operations version 10.0.2 (May 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.2. This version will be released in May.
 author: tonyafehr
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.1
 
 ---
 
-# What's new and changed in Finance and Operations version 10.0.2 (May 2019)
+# What's new or changed in Finance and Operations version 10.0.2 (May 2019)
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Release 10.0.1
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.2. This version will be released in May and has a build number of 10.0.80. For more information about version 10.0.2, see [Additional resources](whats-new-changed-10-0-2.md#additional-resources).
 
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new and changed in Dynamics 365 for Retail version 10.0.2](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-2).
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.2](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-2).
 
   
 ## Recovering vendor invoices that are in use
@@ -77,7 +77,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ### Platform update 26
 
-Microsoft Dynamics 365 for Finance and Operations version 10.0.2 includes Platform update 26. To learn more about Platform update 26, see [What's new and changed in Finance and Operations platform update 26 (May 2019)](whats-new-platform-update-26.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0.2 includes Platform update 26. To learn more about Platform update 26, see [What's new or changed in Finance and Operations platform update 26 (May 2019)](whats-new-platform-update-26.md).
 
 
 ### Dynamics 365 April '19 release notes
