@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Stock transfer order where there is tax on the transfer price
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Stock transfer order where there is tax on the transfer price
+# Stock transfer order where there is tax on the transfer price
 
 1. Click **Inventory management > Transfer order**.
 2. Create a transfer order where the **Transfer type** field is set to **Stock transfer**.
@@ -65,7 +65,7 @@ Example:
 18. Select the record where the Update type field is set to Shipment.
 19. Click **Ledger > Voucher**.
 
-![](media/GST-Whitepaper/Annotation-2019-05-21-105500.png)
+![](media/Annotation-2019-05-21-105500.png)
 
 Note: Tax accounts for the “from” warehouse GSTIN are posted.
 
@@ -84,6 +84,6 @@ Note: Tax accounts for the “from” warehouse GSTIN are posted.
 27. Select the record where the Update type field is set to Receive.
 28. Click **Ledger > Voucher**
 
-![](media/GST-Whitepaper/Annotation-2019-05-21-105611.png)
+![](media/Annotation-2019-05-21-105611.png)
 
 Note: Tax accounts for the “to” warehouse GSTIN are posted.
