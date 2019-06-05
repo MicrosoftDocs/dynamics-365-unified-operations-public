@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.4
 
 Complete the procedures in this topic to export goods with zero-rated tax. 
 
-## Sales order form
+## Create a sales order 
 
 1. Click **Accounts receivable** \> **Sales orders** \> **All sales orders**.
 2. Create an export order for a taxable item and save the record.
