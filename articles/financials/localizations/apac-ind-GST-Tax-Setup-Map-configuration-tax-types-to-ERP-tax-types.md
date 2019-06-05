@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Tax type - Customs
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Tax type - Customs
+# Tax type - Customs
 
 ### Define tax type mapping
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.4
 4. Select the **Customs** node
 5. On the **Tax type mapping** tab, in the **Tax type** field, select **Customs**
 
-![custom duty](media/GST-Whitepaper/custom-duty.png)
+![custom duty](media/custom-duty.png)
 
 
 
@@ -46,7 +46,7 @@ ms.dyn365.ops.version: 10.0.4
 
 1. For each node for the tax component , on the **Reporting** tab, in the **Period** field, select a value
 
-![reporting period](media/GST-Whitepaper/reporting-period.png)
+![reporting period](media/reporting-period.png)
 
 
 
@@ -60,7 +60,7 @@ ms.dyn365.ops.version: 10.0.4
 
 Note: The list of accounts is generated dynamically, based on the posting profile from the configuration. Selected Main account should be of posting type ‘Customs’.
 
-![main accounts](media/GST-Whitepaper/main-accounts.png)
+![main accounts](media/main-accounts.png)
 
 
 
@@ -69,7 +69,7 @@ Note: The list of accounts is generated dynamically, based on the posting profil
 
 Note: Main account selected for Customs duty accrual should be the same account selected for the Customs duty accrual account of the GST > IGST node
 
-![IGST CUS](media/GST-Whitepaper/IGST-CUS.png)
+![IGST CUS](media/IGST-CUS.png)
 
 
 
@@ -83,7 +83,7 @@ Note: Main account selected for Customs duty accrual should be the same account 
 4. Select the **GST** node
 5. On the **Tax type mapping** tab, in the **Tax type** field, select GST
 
-![gst tax type mapping](media/GST-Whitepaper/gst-tax-type-mapping.png)
+![gst tax type mapping](media/gst-tax-type-mapping.png)
 
 
 
@@ -91,7 +91,7 @@ Note: Main account selected for Customs duty accrual should be the same account 
 
 1. For each node for the tax component, on the **Reporting** tab, in the **Period** field, select a value
 
-![gst reporting period](media/GST-Whitepaper/gst-reporting-period.png)
+![gst reporting period](media/gst-reporting-period.png)
 
 
 
@@ -104,7 +104,7 @@ Note: Main account selected for Customs duty accrual should be the same account 
 
 Note: The list of accounts is generated dynamically, based on the posting profile from the configuration
 
-![gst main accounts](media/GST-Whitepaper/gst-main-accounts.png)
+![gst main accounts](media/gst-main-accounts.png)
 
 Note: Tax main accounts can be defined at level of the tax type or the tax component. The value at the tax component level will override the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level will be used for posting. We recommend that you set up the tax accounts at the tax component level per registration.
 
