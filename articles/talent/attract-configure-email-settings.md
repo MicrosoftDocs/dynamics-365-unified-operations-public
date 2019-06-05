@@ -50,7 +50,7 @@ You can connect your company account to create a branded email experience for yo
 
 2. On the **Email settings** tab, under **Email service accounts**, select **Connect a company account**.
 
-[Connect a company email service account in Attract](../media/attract-admin-email-service-accounts.png)
+![Connect a company email service account in Attract](./media/attract-admin-email-service-accounts.png)
 
 3. In the Microsoft sign-in window, sign in with your corporate credentials.
 
@@ -68,11 +68,11 @@ If you want to stop using your company's domain in email communications through 
 
 3. Select **Disconnect email account**.
 
-[Disconnect your company's email service account](../media/attract-admin-disconnect-email-account.png)
+![Disconnect your company's email service account](./media/attract-admin-disconnect-email-account.png)
 
 4. When prompted, select **Disconnect**.
 
-[Confirm disconnecting your company's email service account](../media/attract-admin-email-confirm-disconnect.png)
+![Confirm disconnecting your company's email service account](./media/attract-admin-email-confirm-disconnect.png)
 
 If you don't connect a different email service account, emails sent from Attract will use the default Microsoft-branded email service.
 
@@ -87,10 +87,10 @@ You can upload an image with your company's logo and other information as a bran
 
 2. On the **Email settings** tab, under **Email template settings**, drag and drop an image to use as your email header, or click the image box to browse for the file. If you want to change an existing image, select **Remove** next to the image first. The image must be a JPEG, JPG, PNG, or SVG file. The recommended size for your image is between 25 and 800 pixels wide and between 25 and 150 pixels high. The maximum file size for the header is 1 MB.
 
-[Add an image for your company's email header](../media/attract-admin-email-header.png)
+![Add an image for your company's email header](./media/attract-admin-email-header.png)
 
 3. Under **Your Privacy policy for communications**, provide a link to your company's privacy policy, and under **Your Terms and conditions for communication**, provide a link to your company's terms of use.
 
-[Add links to your company's privacy policy and terms of use for the email footer](../media/attract-admin-email-footer.png)
+![Add links to your company's privacy policy and terms of use for the email footer](./media/attract-admin-email-footer.png)
 
 4. Select **Save** to save your email template settings.
