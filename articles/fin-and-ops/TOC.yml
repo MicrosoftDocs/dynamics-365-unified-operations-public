@@ -44,7 +44,9 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
-      - name: Finance and Operations version 10.0.3 (June 2019)
+      - name: Preview features in Finance and Operations version 10.0.4 (July 2019)
+        href: get-started/whats-new-changed-10-0-4.md
+      - name: Preview features in Finance and Operations version 10.0.3 (June 2019)
         href: get-started/whats-new-changed-10-0-3.md
       - name: Finance and Operations version 10.0.2 (May 2019)
         href: get-started/whats-new-changed-10-0-2.md
