@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (June 4, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/4/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,14 +29,14 @@ ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (June 4, 2019)"
+# What's new or changed in Dynamics 365 for Talent (June 4, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Talent.
 
 ## Changes in Attract
-This release includes minor bug fixes for Dynamics 365 Talent: Attract.
+This release includes minor bug fixes for Dynamics 365 for Talent: Attract.
 
 ## Coming soon in Attract
 
@@ -45,7 +45,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which displays the job ID, title, other approvers, and date assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which displays the approvers who still need to approve the submitted job.
 
 ## Changes in Onboard
-This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
+This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
 
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2330.
@@ -80,13 +80,13 @@ This release corrects an issue where canceling changes to a review comment, remo
 
 ## In preview
 
-### In Preview features will only be enabled in "Sandbox" Environments.
- 
-Read more about how changes are published in the documentation [HERE](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+### Preview features are only enabled in sandbox instances
 
-When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
-### Restrict the leave types in time off requests
+For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+
+### Restrict leave types in time-off requests
 
 Organizations can offer many different types of leave to employees. Some of these leave types might not be appropriate for employees to submit time off for and are managed by Human Resources (HR) instead. With this release, you can configure which leave types employees can submit time-off requests for. 
 
@@ -94,8 +94,9 @@ Organizations can offer many different types of leave to employees. Some of thes
 
 ### Ability to view extended reports performance information in manager self service
 
-The ability to view and update performance goals, reviews and journals is key. Direct line managers today are able to assign and update goals. They can issue new reviews and co-manage the process along with employees. Performance journals can be maintained and updated by both parties to help guarantee the performance reviews and process goes smoothly. With this change, managers will now able to view and maintain performance related information for their extended reports the same as they could for their direct reports. A new option will be available to allow for viewing of direct or extended reports performance information.
-.
+A new option will allow managers to view the performance of both their direct and extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which is co-managed by their employees. In addition, direct managers and their employees can maintain and update performance journals to help guarantee the performance review process goes smoothly. With this change, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
+
 ### Print performance reviews
-With this change, employees, managers and HR will now be able to print an employee’s performance review.
+
+Employees, managers, and HR will be able to print an employee’s performance review.
 
