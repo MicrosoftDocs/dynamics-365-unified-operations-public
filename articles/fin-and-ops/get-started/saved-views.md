@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 28
 [!include [banner](../includes/banner.md)]
 
 ## Introduction
-Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [!Personalize the user experience](personalize-user-experience.md).
+Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [Personalize the user experience](personalize-user-experience.md).
 
 With traditional personalization, users could only have a single set of personalizations per form. Saved views expands on personalization in several important ways:
 
