@@ -2,7 +2,7 @@
 # required metadata
 
 title: Negative days and dynamic negative days
-description: 
+description: This topic covers how you can better understand negative days and dynamic negative days to help your business.
 author: 
 manager: 
 ms.date: 06/05/2019
