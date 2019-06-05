@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Indis GST Whitepaper
+title: Rule-based tax settlement
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 05/31/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-## Rule-based tax settlement
+# Rule-based tax settlement
 
 1. Click **Tax > Declarations > Sales tax > Settle and post sales tax**.
 
 2. Enter values
 
-![](media/GST-Whitepaper/Capture2019052109.PNG)
+![](media/Capture2019052109.PNG)
 
 3. Click **OK**.
 
@@ -45,7 +45,7 @@ ms.dyn365.ops.version: 10.0.4
 6. Verify that the settlement for the selected registration for the period is posted successfully.
 7. Click **Print report**.
 
-![](media/GST-Whitepaper/Capture2019052110.PNG)
+![](media/Capture2019052110.PNG)
 
 ### GST authority payment
 
