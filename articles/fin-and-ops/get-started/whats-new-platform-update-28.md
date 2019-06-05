@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 28 (July 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform 28
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 28. This version has a build number of 7.0.XXXX. For more information about Platform update 28, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 28. This version has a build number of 7.0.5314. For more information about Platform update 28, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 ## Data management enhanced view as the default view
 The standard view in data management has been deprecated for about a couple of years. Users going to the data management workspace were informed about the deprecation during this period. The enhanced view is now being set as the default view as the next step towards this process. The standard view is still available and can be brought back via the existing setting in framework parameters, although it is not recommended to use standard view as it will be deleted sometime in future. If users explicitly chose to use standard view by clicking the 'standard view' button on any of the data management forms, such users will continue to see standard view as thier personalized settings will be honoured. However, such users are also advised to switch to using enhanced view.
@@ -67,7 +67,7 @@ Description of feature and link to topic that has the details about the feature.
 ## Additional resources
 
 ### Platform update 28 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 28, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/).
+For information about the bug fixes included in each of the updates that are part of Platform update 28, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=328737&dbType=3&qc=c3c678b3cdf18a7df3f284866ca4c5705b9e1e8df684b6db0222788c15fe1d2b).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
