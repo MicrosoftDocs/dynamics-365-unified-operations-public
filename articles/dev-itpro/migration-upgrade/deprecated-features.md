@@ -52,7 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced by TXT format **French FEC audit file** available through General ledger / Periodic tasks / Data export
+| **Reason for deprecation/removal** | Replaced by TXT format, **French FEC audit file** is available through **General ledger** \> **Periodic tasks** \> **Data export**.
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | General ledger |
 | **Deployment option**              | All |
