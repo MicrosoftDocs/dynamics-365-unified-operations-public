@@ -5,7 +5,7 @@ title: Stock transfer order where there is tax on the transfer price
 description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
 author: EricWang
 manager: RichardLuan
-ms.date: 06/04/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
