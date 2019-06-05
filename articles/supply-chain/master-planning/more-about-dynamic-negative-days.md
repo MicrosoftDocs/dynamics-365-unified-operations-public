@@ -65,7 +65,7 @@ If you take into account MRP performance and plan nervousness, this case doesn't
 
 ### Case B- negative days are greater than the item's lead time
 
-To get better MRP performance, set the negative days to be greater than the item’s lead time. Since you won't be able to get the supply inside the lead time in this situation no matter what you do, you might as well search for receipts as long as it makes sense. Note-- Though MRP will run faster, beware of orders being further delayed.
+To get better MRP performance, set the negative days to be greater than the item’s lead time. Since you won't be able to get the supply inside the lead time in this situation no matter what you do, you might as well search for receipts as long as it makes sense. Note&mdash;Though MRP will run faster, beware of orders being further delayed.
 
 ### Case C- automatically correlate the item's lead time to the negative days time fence
 
