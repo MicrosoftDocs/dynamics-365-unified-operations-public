@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 10.0.4
 
 # Import goods that have GST
 
+Complete the procedures in this topic to import goods that have GST.
+
 1. Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 2. Create a purchase order for a foreign vendor account and save the record.
 3. Click **Tax information**.
