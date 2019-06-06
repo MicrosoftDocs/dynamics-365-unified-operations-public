@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Import of goods that have GST
-description:  This topic includes information about importing goods with GST.
+title: Import goods that have GST
+description:  This topic explains how to import goods that have Goods and Services Tax (GST).
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -30,81 +30,82 @@ ms.dyn365.ops.version: 10.0.4
 
 # Import goods that have GST
 
-Complete the procedures in this topic to import goods that have GST.
+[!include [banner](../includes/banner.md)]
 
-1. Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-2. Create a purchase order for a foreign vendor account and save the record.
-3. Click **Tax information**.
+Complete the procedures in this topic to import goods that have Goods and Services Tax (GST).
 
-   ![](media/Capture2019052101.PNG)
+1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+2. Create a purchase order for a foreign vendor account, and save the record.
+3. Select **Tax information**.
 
-4. Click the **GST** tab.
-5. Click the **Customs** tab.
+    ![Tax information](media/Capture2019052101.PNG)
 
-   ![](media/Capture2019052104.PNG)
+4. Select the **GST** FastTab.
+5. Select the **Customs** FastTab.
 
-6. Click the **Vendor tax information** tab.
+    ![Customs FastTab](media/Capture2019052104.PNG)
 
-   ![](media/Capture2019052103.PNG)
+6. Select the **Vendor tax information** FastTab.
 
-7. Click OK.
-8. Click **Functions** \> **Maintain charges**.
-9. Select a **Charges code**.
+    ![Vendor tax information FastTab](media/Capture2019052103.PNG)
+
+7. Select **OK**.
+8. Select **Functions** \> **Maintain charges**.
+9. In the **Charges code** field, select a charges code.
 10. Select the **Assessable value** check box.
-11. In the **Charges value** field, enter a value and then save the record.
+11. In the **Charges value** field, enter a value.
 
-    ![](media/Capture2019052105.PNG)
+    ![Maintain charges page](media/Capture2019052105.PNG)
 
-12. Click Close
+12. Save the record, and then select **Close**.
 
-    ![](media/Capture2019052106.PNG)
+    ![Assessable value page](media/Capture2019052106.PNG)
 
 > [!NOTE]
-> The assessable value is calculated as Net amount + Miscellaneous charges + 1% of Landing charges that are defined in Accounts payable parameters.
+> The assessable value is calculated as Net amount + Miscellaneous charges + 1 percent of the landing charges that are defined in Accounts payable parameters.
 
 ### Validate the tax details
 
-1. On the **Purchase orders** page, on the Action Pane, on the **Purchase** tab, in the **Tax** group, click **Tax document**.
+1. On the **Purchase orders** page, on the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
 2. On the **Tax details** FastTab, review the tax calculation.
 
-For example, it might look something like this:
+    Here is an example:
 
-- BCD: 10 percent
-- LOI: 100 percent
-- IGST: 20 percent
-- Import exchange rate: 1 USD = 52 INR
+    - **BCD:** 10 percent
+    - **LOI:** 100 percent
+    - **IGST:** 20 percent
+    - **Import exchange rate:** 1 USD = 52 INR
 
- > [!NOTE]
- > IGST can be calculated on Assessable value + BCD tax amount, by extending the configuration.
+    > [!NOTE]
+    > By extending the configuration, you can have Integrated Goods and Services Tax (IGST) calculated on Assessable value + Basic Custom Duty (BCD) tax amount.
 
-3. Click **Close**.
-4. Click **Confirm**.
+3. Select **Close**.
+4. Select **Confirm**.
 
 ### Update the invoice registration
 
-1. On the **Purchase orders** page, on the Action Pane, on the **Customs** tab, in the **Maintain** group, click **Invoice registration**.
+1. On the **Purchase orders** page, on the Action Pane, on the **Customs** tab, in the **Maintain** group, select **Invoice registration**.
 2. In the **Import invoice number** field, select a value.
-3. Click **Update**.
+3. Select **Update**.
 
 ### Post the bill of entry
 
-1. On the **Purchase orders** page,on the Action Pane, on the **Customs** tab, in the **Generate** group, click **Bill of entry**.
+1. On the **Purchase orders** page, on the Action Pane, on the **Customs** tab, in the **Generate** group, select **Bill of entry**.
 2. In the **Import invoice number** field, select a value.
 3. In the **Bill of entry number** field, select a value.
-4. Click the **Lines** tab.
-5. In the **Quantity** field, enter a value.
-6. Close the message.
-7. Click **Tax document**.
-8. Click **Close**.
-9. Click **OK**.
+4. On the **Lines** tab, in the **Quantity** field, enter a value.
+6. Close the message that you receive.
+7. Select **Tax document**.
+8. Select **Close**.
+9. Select **OK**.
 
 ### Post the product receipt
 
-1. On the **Purchase orders** page, on the Action Pane, on the **Receive** tab, in the **Generate** group, click **Product receipt**.
+1. On the **Purchase orders** page, on the Action Pane, on the **Receive** tab, in the **Generate** group, select **Product receipt**.
 2. In the **Quantity** field, select **Bill of entry quantity**.
-3. Enter the **Product receipt**.
-4. Click **OK**.
+3. In the **Product receipt** field, enter the product receipt.
+4. Select **OK**.
 
-The following graphic is a sample journal entry for an import purchase order that has GST.
+The following illustration shows an example of a journal entry for an import purchase order that has GST.
 
-![](media/Annotation-2019-05-20-165539.png)
+![Journal entry for an import purchase order that has GST](media/Annotation-2019-05-20-165539.png)
