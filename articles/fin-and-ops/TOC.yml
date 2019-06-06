@@ -240,6 +240,11 @@
       href: ../dev-itpro/lifecycle-services/oneversion-isv.md
     - name: Regression Suite Automation tool
       href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+      items:
+      - name: Set up and install Regression suite automation tool
+        href: get-started/hol-set-up-regression-suite-automation-tool.md
+      - name: Use Regression suite automation tool
+        href: get-started/hol-use-regression-suite-automation-tool.md
   - name: Business events
     href: ../dev-itpro/business-events/home-page.md
     items:
