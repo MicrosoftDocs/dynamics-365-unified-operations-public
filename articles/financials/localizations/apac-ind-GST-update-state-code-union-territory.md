@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update the state code and union territory
-description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+description:  This topic provides information about how to update the state code and union territory for the India localization solutionfor GST.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-To enable India localization solution for GST in Dynamics 365 for finance and operation, below master data setup configurations are required:
+To enable the India localization solution for GST in Microsoft Dynamics 365 for Finance and Operation, the following master data setup configurations are required:
 
-- Define business vetical
+- Define business vertical
 - Update the state code and union territory
 - Create a GSTIN master
 - Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
@@ -39,17 +39,13 @@ To enable India localization solution for GST in Dynamics 365 for finance and op
 - Create a tax settlement period
 - Attach the GSTIN to a tax registration group
 
-This artical describes how to define business vertical
 
-# Update the state code and union territory
-
-1. Click **Organization administration > Global address book > Addresses > Address setup**
-2. On the **State/province** tab, select a state
-3. In the **State code** field, enter a value
-4. Select the **Union territory** check box to identify the state as a union territory
-5. Click **Close**
+1. Click **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**
+2. On the **State/province** tab, select a state.
+3. In the **State code** field, enter a value.
+4. Select the **Union territory** check box to identify the state as a union territory.
+5. Click **Close**.
    
-
 ![](media/IND-GST-UpdateState.png)
 
 
