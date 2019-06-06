@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a business vertical
-description:  This topic provides information about how to create a business vertical to enable the India localization solution for GST.
+description: This topic explains how to create a business vertical. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -30,22 +30,24 @@ ms.dyn365.ops.version: 10.0.4
 
 # Create a business vertical
 
-To enable India localization solution for GST in Microsoft Dynamics 365 for Finance and Operation, the following master data setup configurations are required:
+[!include [banner](../includes/banner.md)]
 
-- Define business vertical
-- Update the state code and union territory
-- Create a GSTIN master
-- Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
-- HSN codes and Service accounting codes
-- Create main accounts for the GST posting type
-- Create a tax settlement period
-- Attach the GSTIN to a tax registration group
+To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 for Finance and Operation available, you must complete the following master data setup:
 
+- Define a business vertical.
+- Update the state code and union territory.
+- Create a Goods and Services Tax Identification Number (GSTIN) master.
+- Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters.
+- Define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs).
+- Create main accounts for the GST posting type.
+- Create a tax settlement period.
+- Attach the GSTIN to a tax registration group.
 
+Follow these steps to create a business vertical.
 
-1. Click **Tax** \> **Setup** \> **Sales tax** \> **Business verticals**.
-2. Click **New** to create a record.
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Business verticals**.
+2. Select **New** to create a record.
 3. Enter a name, description, and entity code for the new business vertical.
-4. Click **Close**.
+4. Select **Close**.
 
-![](media/IND-GST-BusinessVertical.png)
+![Business verticals](media/IND-GST-BusinessVertical.png)
