@@ -55,7 +55,7 @@ You might get demand relatively early within your item's lead time, or just befo
 
 ### Case A- negative days are less than the item's lead time
 
-In this case, MRP looks for receipts for item `_DemoProduct` within the negative days time fence, and since it won’t find any, it creates a new planned purchase order. This planned order is immediately delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order gets a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
+In this case, MRP looks for receipts for item `_DemoProduct` within the negative days time fence, and since it doesn’t find any, it creates a new planned purchase order. This planned order is immediately delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order gets a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
 
 ![What follows is an overview of the case described](./media/negative-days-2.png)
 
@@ -108,7 +108,7 @@ You might get demand sometime during your item's lead time. Here's an example of
 
 ### Case A- negative days are less than the item's lead time
 
-In this case, MRP looks for receipts for item `_DemoProduct` within the negative days time fence, and since it won’t find any, it creates a new planned purchase order using the current date as the order date. This planned order is immediately delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order gets a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
+In this case, MRP looks for receipts for item `_DemoProduct` within the negative days time fence, and since it doesn’t find any, it creates a new planned purchase order using the current date as the order date. This planned order is immediately delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order gets a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
 
 ![What follows is a screenshot of the case described](./media/negative-days-9.png)
 
