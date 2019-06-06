@@ -2,7 +2,7 @@
 # required metadata
 
 title: Attach the GSTIN to a tax registration group
-description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+description:  This topic provides information about how to attach the GSTIN to a tax registration group.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -28,7 +28,9 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-To enable India localization solution for GST in Dynamics 365 for finance and operation, below master data setup configurations are required:
+# Attach the GSTIN to a tax registration group
+
+To enable the India localization solution for GST in Microsoft Dynamics 365 for Finance and Operation, the following master data setup configurations are required:
 
 - Define business vertical
 - Update the state code and union territory
@@ -39,11 +41,7 @@ To enable India localization solution for GST in Dynamics 365 for finance and op
 - Create a tax settlement period
 - Attach the GSTIN to a tax registration group
 
-This article describes how to attach the GSTIN to a tax registration group
 
-
-# Attach the GSTIN to a tax registration group
-
-1. Click **Tax > Setup > Sales tax > Tax registration group**, create a group, and define the required GSTIN
+To attach the GSTIN to a tax regisration group, click **Tax** \> **Setup** \> **Sales tax** \> **Tax registration group**, create a group, and define the required GSTIN.
 
 ![tax registration group](media/tax-registration-group.PNG)
