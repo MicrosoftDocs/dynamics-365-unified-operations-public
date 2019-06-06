@@ -3,9 +3,9 @@
 
 title: Negative days and dynamic negative days
 description: This topic covers how you can better understand negative days and dynamic negative days to help your business.
-author: josaw1
+author: benebotg
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqDemPlanForecastViewer
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -40,7 +40,7 @@ In this topic, you'll learn:
 - How the dynamic negative days time fence is calculated, and how that factors the item's lead time into the calculation of the time fence
 - How to interpret the [MRP (master planning) runtime improvement suggestions](http://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) related to negative days
 
-This topic is best understood in three hypothetical situations. The difference between these situations is at what point within the item's lead time you get demand-- before, during, or after the time period.
+This topic is best understood in three hypothetical situations. The difference between these situations is at what point within the item's lead time you get demand<dl>&emdash;</dl>before, during, or after the time period.
 
 ## Situation 1- getting demand before the item's lead time period
 
