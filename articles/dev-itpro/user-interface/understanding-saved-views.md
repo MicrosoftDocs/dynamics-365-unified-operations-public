@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Build forms that fully optimize saved views
+title: Build forms that fully utilize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 28
 
 ---
 
-# Build forms that fully optimize saved views
+# Build forms that fully utilize saved views
 
 [!include [banner](../includes/banner.md)]
 [!include [private preview banner](../includes/private-preview-banner.md)]
