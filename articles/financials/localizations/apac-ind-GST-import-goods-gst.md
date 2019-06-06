@@ -103,6 +103,6 @@ For example, it might look something like this:
 3. Enter the **Product receipt**.
 4. Click **OK**.
 
-The following graphic is asmple Journal Entry for an import purchase order that has GST.
+The following graphic is a sample journal entry for an import purchase order that has GST.
 
 ![](media/Annotation-2019-05-20-165539.png)
