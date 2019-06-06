@@ -3,7 +3,7 @@
 
 title: Negative days and dynamic negative days
 description: This topic covers how you can better understand negative days and dynamic negative days to help your business.
-author: benebotg
+author: t-benebo
 manager: AnnBe
 ms.date: 06/06/2019
 ms.topic: article
@@ -55,27 +55,27 @@ You might get demand relatively early within your item's lead time, or just befo
 
 ### Case A- negative days are less than the item's lead time
 
-In this case, MRP will look for receipts for item `_DemoProduct` within the negative days time fence, and since it won’t find any, it'll create a new planned purchase order. This planned order will immediately be delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order will get a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
+In this case, MRP looks for receipts for item `_DemoProduct` within the negative days time fence, and since it won’t find any, it creates a new planned purchase order. This planned order is immediately delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order gets a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
 
 ![What follows is an overview of the case described](./media/negative-days-2.png)
 
 ![What follows is a graph of the case described](./media/negative-days-3.png)
 
-If you take into account MRP performance and plan nervousness, this case doesn't perform well. MRP has to create a new planned order and calculate delays and actions, which are all time consuming tasks. This case also adds two more transactions onto your plan. On the bright side, the sales order will not be delayed by seven days, but by six days.
+If you take into account MRP performance and plan nervousness, this case doesn't perform well. MRP has to create a new planned order and calculate delays and actions, which are all time consuming tasks. This case also adds two more transactions onto your plan. On the bright side, the sales order isn't delayed by seven days, but by six days.
 
 ### Case B- negative days are greater than the item's lead time
 
-To get better MRP performance, set the negative days to be greater than the item’s lead time. Since you won't be able to get the supply inside the lead time in this situation no matter what you do, you might as well search for receipts as long as it makes sense. Note—though MRP will run faster, beware of orders being further delayed.
+To get better MRP performance, set the negative days to be greater than the item’s lead time. Since you can't get the supply inside the lead time in this situation no matter what you do, you might as well search for receipts as long as it makes sense. Note—though MRP will run faster, beware of orders being further delayed.
 
 ### Case C- automatically correlate the item's lead time to the negative days time fence
 
-To automatically correlate the item's lead time to the negative days time fence, use *dynamic negative days* (**Master planning > Setup > Master planning parameters > General > Coverage > Use dynamic negative days**). In this case, MRP will look for receipts inside the dynamic negative days time fence, which is calculated based on the following formula:
+To automatically correlate the item's lead time to the negative days time fence, use *dynamic negative days* (**Master planning > Setup > Master planning parameters > General > Coverage > Use dynamic negative days**). In this case, MRP looks for receipts inside the dynamic negative days time fence, which is calculated based on the following formula:
 
 > *DynamicNegativeDaysTimeFence = PurchaseLeadTime + NegativeDaysTimeFence + (Today'sDate – RequirementDate)*
 
 (If the default order type of `_DemoProduct` would have been **Production** or **Transfer**, then the lead time would be the **Inventory** lead time.)
 
-With dynamic negative days, the time fence that MRP looks at for receipts is now `6 + 2 + 0 = 8`. MRP will find the existing purchase order and will peg the sales order against it. No new planned orders will be created, so MRP runtime will be shorter. The net requirements for `_DemoProduct` look as follows:
+With dynamic negative days, the time fence that MRP looks at for receipts is now `6 + 2 + 0 = 8`. MRP finds the existing purchase order and pegs the sales order against it. No new planned orders are created, so MRP runtime is shorter. The net requirements for `_DemoProduct` look as follows:
 
 ![What follows is a screenshot of the requirements](./media/negative-days-4.png)
 
@@ -85,7 +85,7 @@ Schematically, this is what happened:
 
 ### Case D- use only dynamic negative days
 
-If you set negative days to zero and use only the dynamic negative days time fence, which will now be `6 + 0 + 0 = 6`, you'll end up in the same situation as in case A. MRP has to create a new planned order and calculate delays and actions, which are time consuming tasks that can be frustrating. In addition, you'll have two more transactions to process. Since the demand can't be fulfilled on time for the item to arrive, this adds more complications to your plan than are necessary.
+If you set negative days to zero and use only the dynamic negative days time fence, which is now `6 + 0 + 0 = 6`, you end up in the same situation as in case A. MRP has to create a new planned order and calculate delays and actions, which are time consuming tasks that can be frustrating. In addition, you'll have two more transactions to process. Since the demand can't be fulfilled on time for the item to arrive, this adds more complications to your plan than are necessary.
 
 ![What follows is a screenshot of the case described](./media/negative-days-6.png)
 
@@ -108,7 +108,7 @@ You might get demand sometime during your item's lead time. Here's an example of
 
 ### Case A- negative days are less than the item's lead time
 
-In this case, MRP will look for receipts for item `_DemoProduct` within the negative days time fence, and since it won’t find any, it'll create a new planned purchase order using the current date as the order date. This planned order will immediately be delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order will get a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
+In this case, MRP looks for receipts for item `_DemoProduct` within the negative days time fence, and since it won’t find any, it creates a new planned purchase order using the current date as the order date. This planned order is immediately delayed with six days (the lead time), so it'll arrive on January 7th. The existing purchase order gets a **Cancel** action message, since it's now made redundant by the creation of the new planned purchase order.
 
 ![What follows is a screenshot of the case described](./media/negative-days-9.png)
 
@@ -116,11 +116,11 @@ In this case, MRP will look for receipts for item `_DemoProduct` within the nega
 
 ### Case B- negative days are greater than the item's lead time
 
-This is similar to situation 1. If you set the negative days to a value greater than the item’s lead time, then you will not get a new planned order. The sales order will be attached to the existing purchase order.
+This is similar to situation 1. If you set the negative days to a value greater than the item’s lead time, then you won't get a new planned order. The sales order is attached to the existing purchase order.
 
 ### Case C- automatically correlate the item's lead time to the negative days time fence
 
-This is also similar to situation 1, in the sense that dynamic negative days will work just as well. The dynamic negative days time fence will now be `6 + 2 – 4 = 4`. If you choose this route, MRP will find the existing purchase order and will attach the sales order to it. Since no new planned orders will be created, MRP runtime will be better.
+This is also similar to situation 1, in the sense that dynamic negative days work just as well. The dynamic negative days time fence is now `6 + 2 – 4 = 4`. If you choose this route, MRP finds the existing purchase order and attaches the sales order to it. Since no new planned orders are created, MRP runtime is better.
 
 ![What follows is a screenshot of the case described](./media/negative-days-11.png)
 
@@ -128,7 +128,7 @@ This is also similar to situation 1, in the sense that dynamic negative days wil
 
 ### Case D- use only dynamic negative days
 
-If you set negative days to zero and use only the dynamic negative days time fence, which will now be `6 + 0 – 4 = 2`, you will again end up in the same situation as in case A. For a graphical view, refer to situation 2, case A.
+If you set negative days to zero and use only the dynamic negative days time fence, which is now `6 + 0 – 4 = 2`, you again end up in the same situation as in case A. For a graphical view, refer to situation 2, case A.
 
 ### Case E- use both greater negative days and the dynamic negative days time fence
 
@@ -147,17 +147,17 @@ You might get demand after the item's lead time. If so, the situation might look
 
 ### Case A- negative days are less than the item's lead time
 
-In this case, MRP will look 2 days ahead of the sales order’s requirement date. Since it doesn’t find anything, it will create a planned purchase order on January 2nd which will be shipped just in time to fulfill the sales order demand. The existing purchase order will get a **Cancel** action message, since it’s not needed.
+In this case, MRP looks two days ahead of the sales order’s requirement date. Since it doesn’t find anything, it creates a planned purchase order on January 2nd which will be shipped just in time to fulfill the sales order demand. The existing purchase order gets a **Cancel** action message, since it’s not needed.
 
 ![What follows is a screenshot of the case described](./media/negative-days-14.png)
 
 ![What follows is a graph of the case described](./media/negative-days-15.png)
 
-In the above AX screenshot, the purchase order requirement date is January 12th. That is because the screenshot was taken in 2015, when January 11th was a Sunday, so MRP will move the Requirement date to January 12th, the next working day. Even so, the purchase order has a delivery date of January 11th.
+In the above AX screenshot, the purchase order requirement date is January 12th. That is because the screenshot was taken in 2015, when January 11th was a Sunday, so MRP moved the requirement date to January 12th, the next working day. Even so, the purchase order has a delivery date of January 11th.
 
 ### Case B- negative days are greater than the item's lead time
 
-If you set the negative days to be greater than the item’s lead time, then you won't get a new planned order. The sales order will be pegged against the existing purchase order, so in this case the sales order will be delayed. If you were to create a planned order, you could ship the sales order on time.
+If you set the negative days to be greater than the item’s lead time, then you won't get a new planned order. The sales order is pegged against the existing purchase order, so in this case the sales order is delayed. If you were to create a planned order, you could ship the sales order on time.
 
 ![What follows is a screenshot of the case described](./media/negative-days-16.png)
 
@@ -165,25 +165,25 @@ If you set the negative days to be greater than the item’s lead time, then you
 
 ### Case C- automatically correlate the item's lead time to the negative days time fence
 
-This is similar to situation 1, in the sense that dynamic negative days will work just as well as, if not better than, case B.
+This is similar to situation 1, in the sense that dynamic negative days work just as well as, if not better than, case B.
 
-The dynamic negative days will be `6 + 2 – 7 = 1`, but in this case the system will still consider the negative days lead time (two), because MRP takes into account the maximum value between negative days lead time and dynamic negative days lead time. Therefore, the result in case C is the same as in case A.
+The dynamic negative days are `6 + 2 – 7 = 1`, but in this case the system still considers the negative days lead time (two), because MRP takes into account the maximum value between negative days lead time and dynamic negative days lead time. Therefore, the result in case C is the same as in case A.
 
 ![What follows is a graph of the case described](./media/negative-days-18.png)
 
 ### Case D- use only dynamic negative days
 
-In this case, if you set negative days to zero and use only the dynamic negative days time fence, which will now be `6 + 0 – 7 = -1`, the system still considers the negative days lead time (two), so case A is the same as case D. All the pitfalls in case A are present in case D. For a graphical view, refer to situation 2, case A.
+In this case, if you set negative days to zero and use only the dynamic negative days time fence, which is now `6 + 0 – 7 = -1`, the system still considers the negative days lead time (two), so case A is the same as case D, with all the same pitfalls. For a graphical view, refer to situation 2, case A.
 
 ### Case E- use both greater negative days and the dynamic negative days time fence
 
-In this situation, case E is exactly the same as in situations 1 and 2. It has more or less the same benefits and pitfalls.
+In this situation, case E is exactly the same as in situations 1 and 2. It has more or less the same benefits and drawbacks.
 
 ## Conclusion
 
 These three situations support the claim that it's a good idea to set the negative days to be greater than the lead time of the items in the coverage group. It's also a good option to only use dynamic negative days and to set the negative days to the number of days you are willing to wait with negative inventory before ordering new replenishment (in other words, the number of days you are willing to further delay demand). Items in the same coverage group should have similar lead times as well.
 
-If you set the negative days to zero and don’t use dynamic negative days, then MRP will always create a new planned order to fulfill demand. With a system like this, it’s important to work with the action messages to make sure you don’t pile up inventory.
+If you set the negative days to zero and don’t use dynamic negative days, then MRP always creates a new planned order to fulfill demand. With a system like this, it’s important to work with the action messages to make sure you don’t pile up inventory.
 
 You might want to set the negative days to long time fences and then work with the action messages. This provides good planning results, but it's also a bit slower and potentially more difficult to analyze, due to the need to analyze and apply the action messages. You can see a situation like this in the following example:
 
@@ -196,7 +196,7 @@ You might want to set the negative days to long time fences and then work with t
 
 ![What follows is a graph of the example given](./media/negative-days-19.png)
 
-MRP will create the following result:
+MRP creates the following result:
 
 ![What follows is a screenshot of the results](./media/negative-days-20.png)
 
@@ -204,13 +204,13 @@ You might notice that the sales order requirement date listed above is January 9
 
 MRP creates a planned purchase order to fulfill the demand requested by the first sales order, but then it also recommends you **cancel** this planned order, because you can advance the existing purchase order and increase the quantity on it.
 
-The results are not wrong by any means, but MRP will potentially run longer, because it will need to create all the delays and suggestions. Also, the planner might need more time to understand the MRP results. Most importantly, in this case, it’s essential that the planner understands and uses the action messages.
+The results are not wrong by any means, but MRP will potentially run longer, because it needs to create all the delays and suggestions. Also, the planner might need more time to understand the MRP results. Most importantly, in this case, it’s essential that the planner understands and uses the action messages.
 
-Lowering the negative days to a value that's closer to the item's lead time and using the dynamic negative days setting will give the following result:
+Lowering the negative days to a value that's closer to the item's lead time and using the dynamic negative days setting gives the following result:
 
 ![What follows is a screenshot of the results](./media/negative-days-21.png)
 
-MRP will create a planned order attached to the first sales order. Then the second sales order gets pegged against the existing purchase order, as expected, based on the negative days setting. This planning result is also correct, and MRP will potentially run faster. In this case, it’s not essential that you understand and know how to work with the action messages.
+MRP creates a planned order attached to the first sales order. Then the second sales order gets pegged against the existing purchase order, as expected, based on the negative days setting. This planning result is also correct, and MRP will potentially run faster. In this case, it’s not essential that you understand and know how to work with the action messages.
 
 To have the right values entered for your business, you must think in terms of both funcionality and MRP runtime. This can take a little trial and error to figure out, but you now know some general "do"s and "don't"s to watch out for.
 
