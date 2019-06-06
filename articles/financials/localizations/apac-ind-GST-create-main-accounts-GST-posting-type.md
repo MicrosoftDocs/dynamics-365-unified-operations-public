@@ -37,7 +37,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 - Define a business vertical.
 - Update the state code and union territory.
 - Create a Goods and Services Tax Identification Number (GSTIN) master.
-- Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters.
+- Define GSTINs for the legal entity, warehouse, vendor, or customer masters.
 - Define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs).
 - Create main accounts for the GST posting type.
 - Create a tax settlement period.
