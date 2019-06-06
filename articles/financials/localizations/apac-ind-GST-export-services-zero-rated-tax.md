@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Export services with zero-rated tax
-description:  This topic includes information how to export services with zero-rated tax.
+title: Export services that have zero-rated tax
+description: This topic explains how to export services that have zero-rated tax.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,30 +28,32 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Export services with zero-rated tax
+# Export services that have zero-rated tax
 
-Complete the procedures in this topic to export services with zero-rated tax.
+[!include [banner](../includes/banner.md)]
 
-1. Click **General journal** \> **Journals** \> **Invoices** \> **General journal**.
+Complete the procedures in this topic to export services that have zero-rated tax.
+
+1. Go to **General journal** \> **Journals** \> **Invoices** \> **General journal**.
 2. Create a journal.
-3. Click **Lines**.
+3. Select **Lines**.
 4. Create a sale of services for a foreign customer.
 5. Save the record.
-6. Click **Tax information**.
-7. On the **GST** tab, in the **SAC** field, select a value.
-8. Select the **Customer tax information** tab.
-9. Click **OK**.
+6. Select **Tax information**.
+7. On the **GST** FastTab, in the **SAC** field, select a value.
+8. Select the **Customer tax information** FastTab.
+9. Select **OK**.
 
 ## Validate the tax details
 
-1. Click **Tax document**.
+1. Select **Tax document**.
 
-Example:
+    **Example**
 
-- Taxable value: 10,000.00
-- IGST: 0.00 percent
+    - **Taxable value:** 10,000.00
+    - **IGST:** 0.00 percent
 
-2. Click Close.
-3. Click **Post** \> **Post**.
-4. Close the message.
-5. Click **Inquiries** \> **Voucher**
+2. Select **Close**.
+3. Select **Post** \> **Post**.
+4. Close the message that you receive.
+5. Select **Inquiries** \> **Voucher**.
