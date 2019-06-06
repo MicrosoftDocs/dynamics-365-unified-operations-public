@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import services that have GST
-description:  This topic provides information about how to import services that include GST.
+description: This topic explains how to import services that have Goods and Services Tax (GST).
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -30,30 +30,32 @@ ms.dyn365.ops.version: 10.0.4
 
 # Import services that have GST
 
-Complete the procedures in this topic to import services that have GST.
+[!include [banner](../includes/banner.md)]
 
-1. Click **Accounts payable** \> **Invoices** \> **Invoice journal**.
+Complete the procedures in this topic to import services that have Goods and Services Tax (GST).
+
+1. Go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 2. Create a journal.
-3. Click **Lines**.
-4. Create a purchase of services for a foreign vendor and then save the record.
-5. Click **Tax information**.
-6. On the **GST** tab, in the **SAC** field, select a value.
-7. Click the **Vendor tax information** tab.
-8. Click **OK**.
+3. Select **Lines**.
+4. Create a purchase of services for a foreign vendor, and save the record.
+5. Select **Tax information**.
+6. On the **GST** FastTab, in the **SAC** field, select a value.
+7. Select the **Vendor tax information** FastTab.
+8. Select **OK**.
 
 ### Validate the tax details
 
-1. Click **Tax document**.
+1. Select **Tax document**.
 
-For example, the tax document might look like this:
+    **Example**
 
-- Taxable value: 20,000.00
-- IGST: 20 percent
-- Normal exchange rate: 1 USD = 60 INR
+    - **Taxable value:** 20,000.00
+    - **IGST:** 20 percent
+    - **Normal exchange rate:** 1 USD = 60 INR
 
-2. Click **Close**.
-3. Click **Post** \> **Post**.
-4. Close the message.
-5. Click **Inquiries** \> **Voucher**.
+2. Select **Close**.
+3. Select **Post** \> **Post**.
+4. Close the message that you receive.
+5. Select **Inquiries** \> **Voucher**.
 
-![](media/Annotation-2019-05-21-104142.png)
+![Example](media/Annotation-2019-05-21-104142.png)
