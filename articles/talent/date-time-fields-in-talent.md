@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Understanding Date Time fields & Time Zones on the Dynamics 365 platform 
-description: Date time fields are a fundamental concept in Dynamics 365 for Talent and Dynamics 365 for Finance and Operations. The intent of this document is to provide some clarity into what a user should expect when interacting with date time data in a Dynamics 365 form, an external (Data management framework) source or the database.  
+title: Work with date and time in Microsoft Dynamics 365 for Talent 
+description: Understand what to expect when using date and time fields in Microsoft Dynamics 365 for Talent. Gain clarity in what to expect when interacting with date and time data in a form in Dynamics 365 for Talent, an external source, or the Common Data Service.  
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/06/2019
