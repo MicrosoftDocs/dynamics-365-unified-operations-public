@@ -33,26 +33,29 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 for Talent: Attract.
 
 ## Coming soon in Attract
 
-### Job approvals on home page
+### Job approvals on the home page
 
-Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which displays the job ID, title, other approvers, and date assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which displays the approvers who still need to approve the submitted job.
+Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**. This section shows the job ID, title, other approvers, and the date when the job was assigned. Users who submit a job for approval can review their jobs under **Requested by you**. This section shows the approvers who must still approve the submitted job.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2330.
+
+The changes that are described in this section apply to build number 8.1.2330.
 
 ### New page to validate position hierarchy data
 
-HR and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported. You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.
+Human resources (HR) staff and admins can validate the managerial hierarchy for any circular references that were inadvertently imported. You can access this new page at **Organizational administration \> Links \> Positions \> Position hierarchy validation**.
 
 ### Specify reason codes on leave types
 
@@ -64,39 +67,38 @@ Organizations might require reason codes for specific leave types when employees
 
 ### Provide a leave and absence transaction list for HR
 
-The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.
+The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions but also helps guarantee accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.
 
-### Deleting a record from Talent is does not remove the record from CDS
+### Deleting a record from Talent doesn't remove the record from Common Data Service
 
-With this change, records removed from Core HR Talent are now also removed from CDS.
+Records that are removed from Talent Core HR are now also removed from Common Data Service.
 
-### Variable compensation plan valid from/to dates are not being honored
+### Variable compensation plan valid from/to dates aren't being honored
 
-With this release, You will not be able to enroll an employee in a variable compensation plan with a start date that is before the plans start date or an end date that exceeds the plans end date. 
+In this release, you can't enroll an employee in a variable compensation plan if the start date is before the plan's start date or the end date is after the plan's end date. 
 
-### Performance review comments are removed when user clicks cancel
+### Performance review comments are removed when users select Cancel
 
-This release corrects an issue where canceling changes to a review comment, removes the comments. 
+This release corrects an issue where review comments are removed if a user starts to change a comment but then selects **Cancel**. 
 
 ## In preview
 
-### Preview features are only enabled in sandbox instances
+### Preview features are enabled only in sandbox instances
 
-When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**. Instances of the **Sandbox** type allow for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 ### Restrict leave types in time-off requests
 
-Organizations can offer many different types of leave to employees. Some of these leave types might not be appropriate for employees to submit time off for and are managed by Human Resources (HR) instead. With this release, you can configure which leave types employees can submit time-off requests for. 
+Organizations can offer many different types of leave to employees. However, it might not be appropriate for employees to submit time-off requests for some leave types. Those leave types might be managed by HR instead. In this release, you can configure which leave types employees can submit time-off requests for. 
 
 ## Coming soon in Core HR
 
-### Ability to view extended reports performance information in manager self service
+### View extended reports performance information in manager self-service
 
-A new option will allow managers to view the performance of both their direct and extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which is co-managed by their employees. In addition, direct managers and their employees can maintain and update performance journals to help guarantee the performance review process goes smoothly. With this change, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
+A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which is co-managed by their employees. In addition, direct managers and their employees can maintain and update performance journals to help guarantee that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
 
 ### Print performance reviews
 
-Employees, managers, and HR will be able to print an employee’s performance review.
-
+Employees, managers, and HR will be able to print an employee's performance review.
