@@ -54,9 +54,9 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 
 ## Adjust batch job status
 1. Go to System administration > Inquiries > Batch jobs.
-2. Select the appropriate batch job
-3. On the Action Pane, click Batch job > Functions > Change status
+2. Select the appropriate batch job.
+3. On the Action Pane, click Batch job > Functions > Change status.
 4. Select the appropriate status:
-    - Withhold - Set the batch job as **withhold** so it is withheld from the batch job scheduler. Equivalent to 'stop'.
-    - Waiting - Set the batch job as **waiting** so it is waiting to be picked up by the batch job scheduler. Equivalent to 'go'.
-5. Click Ok.
+    - **Withhold**: Set the batch job as **withhold** so it is withheld from the batch job scheduler. Equivalent to *stop*.
+    - **Waiting**: Set the batch job as **waiting** so it is waiting to be picked up by the batch job scheduler. Equivalent to *go*.
+5. Click OK.
