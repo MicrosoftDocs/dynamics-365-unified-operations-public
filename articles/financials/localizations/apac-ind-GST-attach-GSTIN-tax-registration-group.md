@@ -2,7 +2,7 @@
 # required metadata
 
 title: Attach the GSTIN to a tax registration group
-description:  This topic provides information about how to attach the GSTIN to a tax registration group.
+description: This topic explains how to attach the Goods and Services Tax Identification Number (GSTIN) to a tax registration group. This task is part of the master data setup that is required to make the India localization solution for GST available.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -30,18 +30,19 @@ ms.dyn365.ops.version: 10.0.4
 
 # Attach the GSTIN to a tax registration group
 
-To enable the India localization solution for GST in Microsoft Dynamics 365 for Finance and Operation, the following master data setup configurations are required:
+[!include [banner](../includes/banner.md)]
 
-- Define business vertical
-- Update the state code and union territory
-- Create a GSTIN master
-- Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
-- HSN codes and Service accounting codes
-- Create main accounts for the GST posting type
-- Create a tax settlement period
-- Attach the GSTIN to a tax registration group
+To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 for Finance and Operation available, you must complete the following master data setup:
 
+- Define a business vertical.
+- Update the state code and union territory.
+- Create a Goods and Services Tax Identification Number (GSTIN) master.
+- Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters.
+- Define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs).
+- Create main accounts for the GST posting type.
+- Create a tax settlement period.
+- Attach the GSTIN to a tax registration group.
 
-To attach the GSTIN to a tax regisration group, click **Tax** \> **Setup** \> **Sales tax** \> **Tax registration group**, create a group, and define the required GSTIN.
+To attach the GSTIN to a tax registration group, go to **Tax** \> **Setup** \> **Sales tax** \> **Tax registration group**, create a group, and define the required GSTIN.
 
-![tax registration group](media/tax-registration-group.PNG)
+![GSTINs attached to a tax registration group](media/tax-registration-group.PNG)
