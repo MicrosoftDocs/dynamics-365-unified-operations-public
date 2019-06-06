@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 05/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -140,10 +140,34 @@ Yes. SharePoint storage is supported natively and can be selected as the storage
 
 For on-premises environments, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
 
-### If I accidentally delete an attachment stored in Azure Blob Storage, can it be restored?
+### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 
-If an attachment stored in Azure Blob Storage is accidentally deleted, it cannot be restored or recovered because it has been permanently deleted and the reference to it has also been deleted.
+If an attachment stored in Azure Blob storage is accidentally deleted, it cannot be restored or recovered because it has been permanently deleted and the reference to it has also been deleted.
 
 ### Is the database information about attachments stored separately from the attachments themselves?
 
 Record attachment information is stored in the DocuRef and DocuView tables. The DocuRef table is the record that represents the attachment. The DocuRef record points to the record being attached to and to a DocuView record. The DocuView record points to the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.
+
+### Can attachments be stored in the database?
+
+No. By default, attachments are stored in Azure Blob storage.
+
+### What are the main differences between Azure Blob storage and database storage?
+
+Database storage is Azure SQL Database. File storage is Azure Blob storage. Azure Blob storage is simpler and much less expensive.
+
+### How much storage do we get for Azure Blob storage?
+
+That information is in the [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf). Currently, you get 40 gigabytes (GB) of storage.
+
+### What is the cost for additional storage?
+
+The cost for additional storage varies, but it's similar to the [standard Azure costs for storage](https://azure.microsoft.com/pricing/details/storage/page-blobs/). In other words, the cost is about $0.05 per GB.
+
+### How can we learn how much storage we've already used?
+
+There will be proactive communications when you're approaching your database and file storage limits. However, Microsoft Dynamics Lifecycle Services (LCS) provides some information, and you can log support requests for additional information. 
+
+### Is there an option to export all document attachments from the system?
+
+Although attachments can be exported, that capability isn't a standard capability, because there isn't a standard attachment entity. Entities that provide attachments for a specific business document or record must be built.
