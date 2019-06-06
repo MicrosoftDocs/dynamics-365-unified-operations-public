@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a GSTIN master
-description:  This topic provides information about how to create a GSTIN master.
+description: This topic explains how to create a Goods and Services Tax Identification Number (GSTIN) master. This task is part of the master data setup that is required to make the India localization solution for GST available.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -30,58 +30,60 @@ ms.dyn365.ops.version: 10.0.4
 
 # Create a GSTIN master
 
-To enable the India localization solution for GST in Microsoft Dynamics 365 for Finance and Operation, the following master data setup configurations are required:
+[!include [banner](../includes/banner.md)]
 
-- Define business vertical
-- Update the state code and union territory
-- Create a GSTIN master
-- Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
-- HSN codes and Service accounting codes
-- Create main accounts for the GST posting type
-- Create a tax settlement period
-- Attach the GSTIN to a tax registration group
+To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 for Finance and Operation available, you must complete the following master data setup:
+
+- Define a business vertical.
+- Update the state code and union territory.
+- Create a Goods and Services Tax Identification Number (GSTIN) master.
+- Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters.
+- Define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs).
+- Create main accounts for the GST posting type.
+- Create a tax settlement period.
+- Attach the GSTIN to a tax registration group.
 
 ## Define company registration numbers for the GST tax type
 
-1. Click **Tax** \> **Setup** \> **Sales Tax** \> **Enterprise tax registration numbers**.
-2. Create a record, and in the **Tax type** field, select **GST**.
-3. In the **Registration number type** field, select **Company** to create state-wide company registration numbers.
-4. In the **Type** field, verify that **GSTIN**, **GDI**, and **UID** appear in the list, and then select a value.
-5. In the **Registration number** field, enter a value.
-6. In the **Description** field, enter a value.
-7. In the **Business vertical** field, select a value.
+1. Go to **Tax** \> **Setup** \> **Sales Tax** \> **Enterprise tax registration numbers**.
+2. Create a record.
+3. In the **Tax type** field, select **GST**.
+4. In the **Registration number type** field, select **Company** to create state-wide company registration numbers.
+5. In the **Type** field, verify that **GSTIN**, **GDI**, and **UID** appear in the list, and then select a value.
+6. In the **Registration number** field, enter a value.
+7. In the **Description** field, enter a value.
+8. In the **Business vertical** field, select a value.
 
-![](media/IND-GST-GSTIN-1.png)
+    ![New company registration number](media/IND-GST-GSTIN-1.png)
 
-8. On the **Casual registration** FastTab, click **Add**.
-9. In the **From date** and **To date** fields, define the valid period for the casual registration number.
-10. In the **Description** field, enter a value.
-11. On the **Number sequences** FastTab, define number sequences for the **GST invoice** and **Bill of supply** references.
+9. On the **Casual registration** FastTab, select **Add**.
+10. In the **From date** and **To date** fields, define the valid period for the casual registration number.
+11. In the **Description** field, enter a value.
+12. On the **Number sequences** FastTab, define number sequences for the **GST invoice** and **Bill of supply** references.
 
-   - The **GST invoice** number sequence will be used when customer sales that have GST transactions are posted.
-   - The **Bill of supply** number sequence will be used when customer sales that have non-GST transactions are posted.
+    - The **GST invoice** number sequence will be used when customer sales that have GST transactions are posted.
+    - The **Bill of supply** number sequence will be used when customer sales that have non-GST transactions are posted.
 
-![](media/IND-GST-GSTIN-2.png)
+![Company registration numbers](media/IND-GST-GSTIN-2.png)
 
 ## Define vendor registration numbers for the GST tax type
 
 1. In the **Registration number type** field, select **Vendors** to create state-wide vendor registration numbers.
-2. Click **New** to create a record, and in the **Tax type** field, select **GST**.
-3. In the **Registration number field**, enter value.
-4. In the **Description** field, enter a value.
-5. In the **Business vertical** field, select a value.
+2. Select **New** to create a record.
+3. In the **Tax type** field, select **GST**.
+4. In the **Registration number field**, enter a value.
+5. In the **Description** field, enter a value.
+6. In the **Business vertical** field, select a value.
 
-![](media/IND-GST-GSTIN-3.png)
+![Vendor registration numbers](media/IND-GST-GSTIN-3.png)
 
 ## Define customer registration numbers for the GST tax type
 
-1. In the **Registration number type** field, select **Customers** to create state-wide vendor registration numbers.
-2. Click **New** to create a record, and in the **Tax type** field, select **GST**.
-3. In the **Registration number field**, enter value.
-4. In the **Description** field, enter a value.
-5. In the **Business vertical** field, select a value.
+1. In the **Registration number type** field, select **Customers** to create state-wide customer registration numbers.
+2. Select **New** to create a record.
+3. In the **Tax type** field, select **GST**.
+4. In the **Registration number field**, enter a value.
+5. In the **Description** field, enter a value.
+6. In the **Business vertical** field, select a value.
 
-![](media/IND-GST-GSTIN-4.png)
-
-
-
+![Customer registration numbers](media/IND-GST-GSTIN-4.png)
