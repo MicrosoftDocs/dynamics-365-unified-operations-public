@@ -2,7 +2,7 @@
 # required metadata
 
 title: Free text invoices
-description:  This topic provides information about creating a free text invoice.
+description: This topic explains how to create a free text invoice.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -30,32 +30,34 @@ ms.dyn365.ops.version: 10.0.4
 
 # Free text invoices
 
-1. Click **Accounts receivable** \> **Free text invoices** \> **All free text invoices**.
-2. Create a free text invoice for taxable services and save the record.
-3. Click **Tax information**, and on the **GST** tab, in the **SAC** field, select a value.
-4. Click the **Customer tax information** tab.
-5. Click **OK**.
-6. On the Action Pane, on the **Invoice** tab, in the **Details** group, click **Tax document**. You should see something similiar to the following example:
+[!include [banner](../includes/banner.md)]
 
-  - Taxable value: 10,000.00
-  - CGST: 10 percent
-  - SGST: 10 percent
+## Create a free text invoice
 
-7. Click **Close**.
+1. Go to **Accounts receivable** \> **Free text invoices** \> **All free text invoices**.
+2. Create a free text invoice for taxable services, and save the record.
+3. Select **Tax information**.
+4. On the **GST** tab, in the **SAC** field, select a value.
+5. Select the **Customer tax information** tab.
+6. Select **OK**.
+7. On the Action Pane, on the **Invoice** tab, in the **Details** group, select **Tax document**.
+
+    You should see something that resembles the following example:
+
+    - **Taxable value:** 10,000.00
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+
+8. Select **Close**.
 
 ## Post the invoice
 
-1. On the Action Pane, on the **Invoice** tab, click **Post** \> **Post**.
-2. Click **OK** and then close the message.
+1. On the Action Pane, on the **Invoice** tab, select **Post** \> **Post**.
+2. Select **OK**, and then close the message that you receive.
 
 ## Validate the voucher
 
-1. On the Action Pane, on the **Invoice** tab, in the **Related information** group, click **Invoice journal**.
-2. Click **Voucher**.
-
-
+1. On the Action Pane, on the **Invoice** tab, in the **Related information** group, select **Invoice journal**.
+2. Select **Voucher**.
 
 ![Financial entries for both the intrastate and interstate transactions](media/Annotation-2019-05-20-133425.png)
-
-
-
