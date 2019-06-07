@@ -854,7 +854,7 @@
         href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
       - name: Financial dimensions
         href: ../financials/general-ledger/financial-dimensions.md
-      - name: Account structures
+      - name: Financial dimensions and posting
         href: ../financials/general-ledger/Default-dimensions.md
       - name: Add financial dimensions to the CFO workspace
         href: ../financials/general-ledger/CFO-workspace.md
