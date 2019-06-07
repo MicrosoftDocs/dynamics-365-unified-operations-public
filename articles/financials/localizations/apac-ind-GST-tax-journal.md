@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a tax journal
-description:  This topic provides information about creating a tax journal.
+description: This topic explains how to create a tax journal.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/05/2019
@@ -30,18 +30,26 @@ ms.dyn365.ops.version: 10.0.4
 
 # Create a tax journal
 
-You can use a tax journal to post a tax adjustment journal. In the case of reverse charge transactions where the tax credit should be claimed after the authority settlement, you can use a tax journal to claim the tax credit.
+[!include [banner](../includes/banner.md)]
 
-1. Click **Tax** \> **Journals entries** \> **Tax journals** and create a new record.
-2. In the **Date** field, enter a value.
-3. On the **Tax journal lines** FastTab, click **Add**, and on the **Tax account** FastTab, in the **Account type** field, select **Tax**.
-4. In the **Tax type** field, select **GST**.
-5. In the **Tax component** field, select a value, and in the **Tax posting type** field, select **Interim recoverable**.
-6. In the **Account** field, select a value, and in the **Offset account type** field, select **Tax**.
-7. In the **Tax type** field, select **GST**, and in the **Tax component** field, select a value.
-8. In the **Tax posting type** field, select **Tax recoverable**.
+You can use a tax journal to post a tax adjustment journal. For reverse charge transactions where the tax credit should be claimed after the authority settlement, you can use a tax journal to claim the tax credit.
+
+1. Go to **Tax** \> **Journals entries** \> **Tax journals**.
+2. Create a record.
+3. In the **Date** field, enter a value.
+4. On the **Tax journal lines** FastTab, select **Add**.
+5. On the **Tax account** FastTab, in the **Account type** field, select **Tax**.
+6. In the **Tax type** field, select **GST**.
+7. In the **Tax component** field, select a value.
+8. In the **Tax posting type** field, select **Interim recoverable**.
 9. In the **Account** field, select a value.
-10. On the journal line, in the **Credit** field, enter a value, and then click **Tax information**.
-11. On the **GST** tab, click **OK** and then click **Tax document**
-12. Click **Close**, and then click **Post**.
-13. Close the message and then click **Voucher**.
+10. In the **Offset account type** field, select **Tax**.
+11. In the **Tax type** field, select **GST**.
+12. In the **Tax component** field, select a value.
+13. In the **Tax posting type** field, select **Tax recoverable**.
+14. In the **Account** field, select a value.
+15. On the journal line, in the **Credit** field, enter a value, and then select **Tax information**.
+16. On the **GST** tab, select **OK**.
+17. Select **Tax document**.
+18. Select **Close**, and then select **Post**.
+19. Close the message that you receive, and then select **Voucher**.
