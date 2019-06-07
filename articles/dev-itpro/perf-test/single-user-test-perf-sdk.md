@@ -62,7 +62,7 @@ Before you run a single-user test, you must work with your business team to defi
 
 ## Configure a Finance and Operations development environment
 
-1. Download the [selenium-dotnet-strongnamed-3.13.1.zip](https://selenium-release.storage.googleapis.com/index.html?path=3.13/0) and [IEDriverServer\_Win32\_3.13.0.zip](https://selenium-release.storage.googleapis.com/index.html?path=3.13/) files.
+1. Download the [selenium-dotnet-strongnamed-3.13.1.zip](https://selenium-release.storage.googleapis.com/index.html?path=3.13/) and [IEDriverServer\_Win32\_3.13.0.zip](https://selenium-release.storage.googleapis.com/index.html?path=3.13/) files.
 2. Unblock and unzip the files.
 3. In the **dist** folder, rename the .nupkg files as .zip files, and then unzip them.
 
