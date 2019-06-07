@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax inquiry
-description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+description:  This topic provides information about how to view various types of tax information.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/05/2019
@@ -30,24 +30,23 @@ ms.dyn365.ops.version: 10.0.4
 
 # Tax inquiry
 
-1. Click **Tax > Inquiries and reports > Tax document transactions > Posted tax document transactions**.
-2. Select the registration number
-3. Click OK
+1. Click **Tax** \> **Inquiries and reports** \> **Tax document transactions** \> **Posted tax document transactions**.
+2. Select the registration number and then click **OK**.
 
 ![](media/Capture2019052111.PNG)
 
-4. Click Voucher to view the financial entry that is posted for the transaction
+3. Click **Voucher** to view the financial entry that is posted for the transaction.
 
 ![](media/Capture2019052112.PNG)
 
-5. Click Close
-6. Click Tax document to view the tax that is calculated on the transaction
+4. Click **Close**.
+5. Click **Tax document** to view the tax that is calculated on the transaction.
 
 ![](media/Capture2019052113.PNG)
 
-7. Click Close.
-8. Click Posted sales tax
+6. Click **Close**.
+7. Click **Posted sales tax**.
 
 ![](media/Capture2019052114.PNG)
 
-9. Click Close.
+8. Click **Close**.
