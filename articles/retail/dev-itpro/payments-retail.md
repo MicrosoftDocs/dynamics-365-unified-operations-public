@@ -72,4 +72,4 @@ Related topics:
 - [Deploying a Payment Connector](deploy-payment-connector.md)
 - [Create a Windows Installer for Payment Connector](create-windows-installer-payment-connector.md)
 - [Verifone Payment Connector](https://dynamics.verifone.com/repo/)
-- [MasterCard Payment Connector](https://www.simplify.com/microsoft/) 
+
