@@ -56,7 +56,7 @@ Note that all these steps need to be performed manually. The new ER capabilities
 To complete the steps in this example, you must first complete the steps of the example in [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) page till the section **Add a new baseline for a designed ER format** inclusively.
 
 ### Review added baseline
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 
 Note that the **Baselines** option is available on the **Action Pane** meaning that the ER user parameter **Run in debug mode** is turned on for the current company.
 
@@ -67,7 +67,7 @@ Note that the baseline has been added for the selected **Format to learn ER base
 ![Electronic reporting baselines](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot of the Electronic reporting baselines page")
 
 ### Make a new baseline rule
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 2.	In the tree, expand **Model to learn ER baselines**.
 3.	In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
 4.	Select **Run** in the **Versions** Fast tab.
@@ -103,7 +103,7 @@ To complete the steps in this example, you must first complete the steps of the 
 
 ### Modify configured ER format
 
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 2.	In the tree, expand **Model to learn ER baselines**.
 3.	In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
 4.	Select **Designer**.
@@ -133,7 +133,7 @@ Note that the **Test results** pane indicates that the configured expression ret
 
 ### Remove earlier added baseline rule
 
-1.	On the **Organization administration > Electronic reporting > Configurations** page, select **Baselines**.
+1.	On the **Organization administration \> Electronic reporting \> Configurations** page, select **Baselines**.
 2.	In the list of baselines, select the baseline configured for the **Format to learn ER baselines** format.
 3.	In the **Baselines** Fast tab, select **Delete** to remove the earlier configured baseline rule.
 
@@ -173,7 +173,7 @@ You can suppress this kind of warnings in Infolog by turning on the appropriate 
 
 ### Review generated baseline file
 
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 2.	Select **Baselines**.
 3.	Select **Attachments**.
 
@@ -185,13 +185,13 @@ Note that the generated file contains the processing date & time text **“#”*
 
 ### Run designed ER format and review the log to analyze the results
 
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 2.	In the tree, expand **Model to learn ER baselines**.
 3.	In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
 4.	Select **Run** in the **Versions** Fast tab.
 5.	In the **Enter Id** field, type **1**.
 6.	Select **OK**.
-7.	Go to **Organization administration > Electronic reporting > Configuration debug logs**.
+7.	Go to **Organization administration \> Electronic reporting \> Configuration debug logs**.
 
 Note that the execution log contains information about the results of the comparison of the generated file with the configured baseline. It indicates that they are equal despite the fact that the executed format contains the binding to populate to the outbound file a constantly changing date & time value.
 
