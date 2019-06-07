@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up rate and percentage tables
-description:  This topic provides information about how to set up rate and percentage tables.
+description: This topic explains how to set up rate and percentage tables.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/05/2019
@@ -30,24 +30,25 @@ ms.dyn365.ops.version: 10.0.4
 
 # Set up rate and percentage tables
 
-1. Expand the **Tax component** node, select the **Rate** node, and in the **Value** field, enter the tax rates.
+[!include [banner](../includes/banner.md)]
 
-![tax rate](media/tax-rate.png)
+1. Expand the **Tax component** node, and select the **Rate** node.
+2. In the **Value** field, enter the tax rates.
 
-2. Select the **Reverse Charge Percentage** node, and  in the **Value** field, enter the reverse charge percentage.
+    ![Tax rates](media/tax-rate.png)
 
-![reverse charge](media/reverse-charge.png)
+3. Select the **Reverse Charge Percentage** node.
+4. In the **Value** field, enter the reverse charge percentage.
 
-3. Select the **Load on Inventory Percentage** node, and in the **Value** field, enter the load on inventory percentage.
+    ![Reverse charge percentage](media/reverse-charge.png)
 
-![load on invertory](media/load-on-invertory.png)
+5. Select the **Load on Inventory Percentage** node.
+6. In the **Value** field, enter the load on inventory percentage.
 
-4. Click **Save**, and then click **Close**.
-5. On the **Companies** tab, Click **Parameters**.
+    ![Load on inventory percentage](media/load-on-invertory.png)
 
-![tax parameter](media/tax-parameter.PNG)
+7. Select **Save**, and then select **Close**.
+8. On the **Companies** FastTab, select **Parameters**.
+9. Enter the parameter values, and then select **OK**.
 
-6. Enter the parameter values, and then click **OK**.
-
-
-
+    ![Tax setup parameters dialog box](media/tax-parameter.PNG)
