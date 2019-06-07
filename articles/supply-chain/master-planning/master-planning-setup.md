@@ -115,7 +115,7 @@ For each of the plans, you can select how far in the future (the "the time fence
 Coverage represents the scheduling period, or how far out the demand should be included. In other words, it indicates what your planning horizon is. You can select this option to override the coverage time fence for the item during master scheduling. Enter the number of days that the master scheduling calculation should cover requirements. The coverage time fence is calculated forward from the current date. Requirements that occur before the current date are always processed.
 
 > ![Note]
-> We recommend that you adjust the coverage time fence to your planning horizon to obtain the best performance from MRP. 
+> We recommend that you adjust the coverage time fence to your planning horizon to obtain the best performance from material requirements planning (MRP). 
 
 ### Freeze
 Freeze represents the period in which existing planned orders are not changed when running a new master schedule. The planned orders are frozen and no new planned orders will be suggested. 
@@ -176,7 +176,7 @@ Delays options ensure that the orders have feasible planned dates. The following
 - **Planned transfer orders**: Add the calculated delay to the requirements.
 - **Planned Kanban** - Add the calculated delay to the requirements.
 
-For each of the **Add the calculated delay to the requirements** parameters, you must select or unselect the option of adding the delay to the requirements. When adding the delays, the system will take into account the capacities of the resources and create feasible planned orders. Recalculating the planned order dates increases the master planning running time, so if you do not need to use the delays, unselect this option.  
+For each of the **Add the calculated delay to the requirements** parameters, you must select or unselect the option of adding the delay to the requirements. When adding the delays, the system will take into account the capacities of the resources and create feasible planned orders. Recalculating the planned order dates increases the MRP running time, so if you do not need to use the delays, unselect this option.  
 
 
 ## Positive and negative days
