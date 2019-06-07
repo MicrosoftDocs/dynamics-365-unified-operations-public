@@ -169,7 +169,7 @@ You can suppress this kind of warnings in Infolog by turning on the appropriate 
 3.	Select **Yes** in the **Suppress baseline warnings** field.
 4.	Select **OK**.
 
-![Electronic reporting user parameters](media/GER-BaselineSample-ERUserParameters1.PNG "Screenshot of the Electronic reporting user parameters page")
+![Electronic reporting user parameters](media/GER-BaselineSample-ERUserParameters1.png "Screenshot of the Electronic reporting user parameters page")
 
 ### Review generated baseline file
 
