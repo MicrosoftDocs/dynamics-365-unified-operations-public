@@ -56,7 +56,7 @@ To complete the steps in this example, you must first complete the steps in [Cre
 2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the configuration provider for the Litware, Inc. sample company is listed, and that it's marked as **Active**. If you don't see this configuration provider, follow the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ### Configure document management parameters
-1.	In Finance and Operations, on the **Organization administration >  Document management > Document types page**, create a new document type that will be used to store baseline files. Enter **Attach file** in the **Class** field and **File** in the **Group** field.
+1.	In Finance and Operations, on the **Organization administration \>  Document management \> Document types page**, create a new document type that will be used to store baseline files. Enter **Attach file** in the **Class** field and **File** in the **Group** field.
 
 ![Document management settings](media/GER-BaselineSample-SetupDocumentType.PNG "Screenshot of the Document types page")
 
@@ -168,7 +168,7 @@ Based on the designed structure, configured format will generate an XML file con
 ![Electronic reporting user parameters](media/GER-BaselineSample-ERUserParameters.PNG "Screenshot of the Electronic reporting user parameters page")
 
 ### Add a new baseline for designed ER format
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 2.	Select **Baselines**.
 
 ![Electronic reporting configurations](media/GER-BaselineSample-OpenBaselinePage.PNG "Screenshot of the Electronic reporting configurations page")
@@ -201,13 +201,13 @@ The baseline has been added for the selected **Format to learn ER baselines** fo
 ![Electronic reporting baselines](media/GER-BaselineSample-SetupBaselineLine.PNG "Screenshot of the Electronic reporting baselines page")
 
 ### Run designed ER format and review the log to analyze the results
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 2.	In the tree, expand **Model to learn ER baselines**.
 3.	In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
 4.	Select **Run** in the **Versions** Fast tab.
 5.	In the **Enter Id** field, type **1**.
 6.	Select **OK**.
-7.	Go to **Organization administration > Electronic reporting > Configuration debug logs**.
+7.	Go to **Organization administration \> Electronic reporting \> Configuration debug logs**.
 
 ![Electronic reporting run logs](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Screenshot of the Electronic reporting run logs page")
 
@@ -216,13 +216,13 @@ Note that the execution log contains information about the results of the compar
 8.	Select **Delete all**.
 
 ### Run designed ER format and review the log to analyze the results
-1.	Go to **Organization administration > Electronic reporting > Configurations**.
+1.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 2.	In the tree, expand **Model to learn ER baselines**.
 3.	In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
 4.	Select **Run** in the **Versions** Fast tab.
 5.	In the **Enter Id** field, type **2**.
 6.	Select **OK**.
-7.	Go to **Organization administration > Electronic reporting > Configuration debug logs**.
+7.	Go to **Organization administration \> Electronic reporting \> Configuration debug logs**.
 
 Note that the execution log contains information about the results of the comparison of the generated file with the configured baseline. It indicates that they are different.
 
