@@ -72,6 +72,13 @@ For the latest regulatory update plans, refer to the following table.
 |      Pending            |   10.0.3      | Poland     |   SAF invoices (JPK_FA) v.2 from 1Jul2019  |
 |      Pending            |   10.0.3      | Brazil   |   ICMS fiscal document adjustments enable table 5.2   |
 |      Pending            |   10.0.3      | Brazil    |   NF-e Decree 54.308/18 (RS)   |
+  | Pending            |   10.0.4      | Brazil    |   Incoming fiscal document 66   |
+   | Pending            |   10.0.4      | Brazil    |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags output in NF-e.   |
+   | Pending            |   10.0.4      | India   |   Display of "Place of supply" and "State" in the GST Tax Invoice  |
+   | Pending            |   10.0.4      | Mexico   |  DIOT third party declaration - changes in layout 2019   |
+   | Pending            |   10.0.4      | Brazil    |   NF-e ICMS-ST - ordinance CAT 42/18 for SP state - CAT 42/18
+   | Pending            |   10.0.4      | Brazil    |   NF-e Decree 54.308/18 - RS NF   |
+   
 
 
 ## Additional resources
