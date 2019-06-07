@@ -2,7 +2,7 @@
 # required metadata
 
 title: Free text invoices
-description:  This topic includes information about Indis GST Whitepaper in Microsoft Dynamics 365 for Finance and Operations.
+description:  This topic provides information about creating a free text invoice.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend 
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
