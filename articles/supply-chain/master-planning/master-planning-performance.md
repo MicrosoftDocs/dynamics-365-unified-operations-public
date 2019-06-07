@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.0
 This topic explains options to improve the performance of master planning and troubleshoot issues. It includes parameters and settings as well as recommended configurations and actions. It is intended for system administrators or IT users with capability to troubleshoot, as well as for the production or supply planner, as it includes parameters focused on the business planning requirements. This topic also includes a checklist summary of all the important parameters to consider when facing long running master planning jobs.  
 
 ## Parameters relating to master planning performance 
-There are different parameters to consider that will influence your master planning run time.  
+There are different parameters to consider that will influence your material requrements planning (MRP) run time.  
 
 
 ### Number of threads 
@@ -47,7 +47,7 @@ Otherwise: #ofThreads = #Items / 1000
 The number of helpers used during master planning needs to be less than or equal to the maximum number of threads allowed on the batch server. If you increase the number higher than the threads on the batch server, the extra threads will not perform any work. 
 
 > ![Note]
-> Setting the number of threads to zero increases the master planning running time. Therefore, it is recommended to always set a value higher than zero. 
+> Setting the number of threads to zero increases the MRP running time. Therefore, it is recommended to always set a value higher than zero. 
 
 ### Number of tasks in helper task bundle (bundle size)
 Changing the number of tasks in the task bundle may have a positive effect on the runtime. The number of tasks in a bundle controls how many items are planned together by a single helper. This parameter can be found under **Master planning > Setup > Master planning parameters**, on the **General** tab, under the **Performance** section. For this value, we recommend that you follow a trial and error process before an optimal value is determined, as the optimal value will depend on your data. 
@@ -59,7 +59,7 @@ As a general rule, we recommend that you increase the number of tasks when the n
 Start with a bundle size of one and then follow a trial and error process to find the optimal value. 
 
 > ![Tip]
-> If you have performance issues, we recommend you reduce the number of helpers in task bundle to one. Then you can start the trial and error process to find the optimal value for your setup. In general, performance issues are found when a single item takes longer time to process than the rest of the items. If this is the case, you will be able to see that two subsequent tasks with the status "Coverage" in the master planning run take significantly different amounts of time, in extreme cases up to 30 minutes. You can infer the time that the tasks are taking by looking at the duration of each of the tasks. 
+> If you have performance issues, we recommend you reduce the number of helpers in task bundle to one. Then you can start the trial and error process to find the optimal value for your setup. In general, performance issues are found when a single item takes longer time to process than the rest of the items. If this is the case, you will be able to see that two subsequent tasks with the status "Coverage" in the MRP run take significantly different amounts of time, in extreme cases up to 30 minutes. You can infer the time that the tasks are taking by looking at the duration of each of the tasks. 
 
 ### Use of cache
 With the cache parameter, you can adjust the master scheduling process so that the process performs better on the specific data set. For example, you adjust it for the following benefits.
@@ -77,7 +77,7 @@ It is difficult to predict which option is always better, because each case depe
 The **Number or orders in firming bundle** parameter indicates the total amount of orders that will be processed at a time by each thread/batch, which leads to parallelization of the autofirming. This parameter is found under **Master planning > Setup > Master planning parameters**, on the **General** tab, under the **Performance** section. Autofirming parallelization is based on the orders to be processed together, which means if it is set to for instance "50", for example, each thread/batch task will pick up 50 orders at a time and process them together. It is recommended to follow a trial and error process to find the optimal value. To start with, try using the following formula: #ofOrdersPerBundle = #DemandItems / #ofThreads.
 
 > ![Note]
-> Setting the **Number of orders in firming bundle** to "0" will result in no parallelization of the autofirming. The whole process will run on a single batch task and will have a cumulative runtime, increasing the running time of your master planning. Therefore, we recommend setting this parameter to a value larger than zero. 
+> Setting the **Number of orders in firming bundle** to "0" will result in no parallelization of the autofirming. The whole process will run on a single batch task and will have a cumulative runtime, increasing the running time of your MRP. Therefore, we recommend setting this parameter to a value larger than zero. 
 
 ### Time fences
 Time fences indicate how far in the future the calculations and other requirements must be calculated by master planning. The bigger the time fence is, the longer it will take to run master planning. Therefore, set the time fences according to your business requirements. You can read more about time fences in the [Set up master planning](master-planning-setup.md) topic.
@@ -86,7 +86,7 @@ Time fences indicate how far in the future the calculations and other requiremen
 Among the time fences you can also find the **Action message** parameter. Calculating action messages leads to longer master planning runtime. If action messages are not analyzed and applied on a regular basis (daily, weekly, etc), consider disabling the calculation during the master plan run, by making sure the **Action message** time fence is "0" on the master plan you are running (set on the **Master planning > Setup > Plans > Master plans** page). Also make sure all the coverage groups have the **Action message** setting disabled. 
 
 ### Futures
-Calculating futures leads to longer master planning runtime. If you are not planning BOMs or if propagating delays from supply to demand during planning is not needed, consider disabling futures calculations during master planning, by making sure the **Futures** time fence is "0" on the master plan you are running. Also make sure all the coverage groups have the **Futures** setting disabled.
+Calculating futures leads to longer master planning runtime. If you are not planning BOMs or if propagating delays from supply to demand during planning is not needed, consider disabling futures calculations during MRP, by making sure the **Futures** time fence is "0" on the master plan you are running. Also make sure all the coverage groups have the **Futures** setting disabled.
 
 
 ## One heavy routine at a time
@@ -120,6 +120,6 @@ Using filters in the **Master planning run** dialog affects the duration of the 
 - **Number of helpers in helper task bundle**: set to higher than "0" (follow formulas above).
 - **Actions and futures**: disable if you do not use them.
 - **Time fences**: adjust to your business needs.
-- **One heavy routine at a time**: do not run master planning with any other heavy routine.
+- **One heavy routine at a time**: do not run MRP with any other heavy routine.
 - Review session log.
 - **Filtering of items**: use the lifecycle state to exclude items from the master planning run (do not use the item numbers). 
