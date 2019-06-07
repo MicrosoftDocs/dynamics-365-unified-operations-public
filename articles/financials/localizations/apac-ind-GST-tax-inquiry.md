@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax inquiry
-description:  This topic provides information about how to view various types of tax information.
+description: This topic explains how to view various types of tax information.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/05/2019
@@ -30,23 +30,23 @@ ms.dyn365.ops.version: 10.0.4
 
 # Tax inquiry
 
-1. Click **Tax** \> **Inquiries and reports** \> **Tax document transactions** \> **Posted tax document transactions**.
-2. Select the registration number and then click **OK**.
+1. Go to **Tax** \> **Inquiries and reports** \> **Tax document transactions** \> **Posted tax document transactions**.
+2. Select the registration number, and then select **OK**.
 
-![](media/Capture2019052111.PNG)
+    ![Posted tax document transactions page](media/Capture2019052111.PNG)
 
-3. Click **Voucher** to view the financial entry that is posted for the transaction.
+3. Select **Voucher** to view the financial entry that is posted for the transaction.
 
-![](media/Capture2019052112.PNG)
+    ![Voucher transactions page](media/Capture2019052112.PNG)
 
-4. Click **Close**.
-5. Click **Tax document** to view the tax that is calculated on the transaction.
+4. Select **Close**.
+5. Select **Tax document** to view the tax that is calculated on the transaction.
 
-![](media/Capture2019052113.PNG)
+    ![Tax document page](media/Capture2019052113.PNG)
 
-6. Click **Close**.
-7. Click **Posted sales tax**.
+6. Select **Close**.
+7. Select **Posted sales tax**.
 
-![](media/Capture2019052114.PNG)
+    ![Posted sales tax page](media/Capture2019052114.PNG)
 
-8. Click **Close**.
+8. Select **Close**.
