@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a sales tax hierarchy and the setoff rules
-description:  This topic provides information about how to set up a sale tax hierarchy and the setoff rules.
+description: This topic explains how to set up a sale tax hierarchy and the setoff rules.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/05/2019
@@ -30,53 +30,57 @@ ms.dyn365.ops.version: 10.0.4
 
 # Set up a sales tax hierarchy and the setoff rules
 
-1. Click **Tax** \> **Setup** \> **Sales tax** \> **Sales tax hierarchies**.
-2. Click **New**, and in the **Name** field, enter a value.
-3. In the **Structure** field, select **GTE hierarchy**.
+[!include [banner](../includes/banner.md)]
 
-![](media/Annotation-2019-05-15-145825.png)
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax hierarchies**.
+2. Select **New**.
+3. In the **Name** field, enter a value.
+4. In the **Structure** field, select **GTE hierarchy**.
 
-4. Click **OK**, and on the **Versions** FastTab, click **Synchronize**.
-5. Close the message.
-6. Click **View**.
+    ![Create a sales tax hierarchy dialog box](media/Annotation-2019-05-15-145825.png)
 
-![](media/Annotation-2019-05-15-150106.png)
+5. Select **OK**.
+6. On the **Versions** FastTab, select **Synchronize**.
+7. Close the message that you receive.
+8. Select **View**.
 
-  The **Sales tax hierarchy designer** page shows the tax type and tax components per the configuration.
+    ![Versions FastTab](media/Annotation-2019-05-15-150106.png)
 
-![](media/Annotation-2019-05-15-150259.png)
+    The **Sales tax hierarchy designer** page shows the tax type and tax components, based on the configuration.
 
-7. Click **Setoff rules for sales tax hierarchy**, and then click **New**.
-8. In the **Name** field, enter a value and then save the record.
-9. On the **Recoverable** and **Payable** FastTabs, select the tax components, and adjust the priority values.
-10. Define the setoff rules per the legal requirement.
+    ![Sales tax hierarchy designer page](media/Annotation-2019-05-15-150259.png)
 
-![](media/Annotation-2019-05-15-150432.png)
+9. Select **Setoff rules for sales tax hierarchy**, and then select **New**.
+10. In the **Name** field, enter a value, and then save the record.
+11. On the **Recoverable** and **Payable** FastTabs, select the tax components, and adjust the priority values.
+12. Define the setoff rules according to the legal requirement.
 
-11. Click **Save** and then click **Close**.
-12. Close the **Sales tax hierarchy designer** page.
-13. Click **Activate**, and then click **Close**.
+    ![Setoff rules for sales tax hierarchies page](media/Annotation-2019-05-15-150432.png)
 
+13. Select **Save**, and then select **Close**.
+14. Close the **Sales tax hierarchy designer** page.
+15. Select **Activate**, and then select **Close**.
 
 ## Maintain setoff hierarchy profiles
 
-1. Click **Tax** \> **Setup** \> **Sales Tax** \> **Maintain setoff hierarchy profiles**.
-2. Click **New**, and in the **Effective date** field, enter a value.
-3. In the **Hierarchy** field, select a value.
+1. Go to **Tax** \> **Setup** \> **Sales Tax** \> **Maintain setoff hierarchy profiles**.
+2. Select **New**.
+3. In the **Effective date** field, enter a value.
+4. In the **Hierarchy** field, select a value.
 
-![](media/Annotation-2019-05-15-150613.png)
+    ![Create a setoff hierarchy profile dialog box](media/Annotation-2019-05-15-150613.png)
 
-4. Click **OK**, and then click **Activate**.
-5. Click **Yes**.
-6. Close the message, and then close the page.
+5. Select **OK**, and then select **Activate**.
+6. Select **Yes**.
+7. Close the message that you receive, and then close the page.
 
 ## GST minor codes
 
-1. Click **Tax** \> **Setup** \> **Sales tax** \> **GST minor codes**.
-2. Click **New** to create a record.
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **GST minor codes**.
+2. Select **New** to create a record.
 3. In the **Tax component** field, select a value.
 4. In the **Minor code** field, enter a value.
 5. In the **Description** field, enter a value.
-6. Click **Save** and then click **Close**.
+6. Select **Save**, and then select **Close**.
 
-![](media/Annotation-2019-05-15-151254.png)
+![GST minor code page](media/Annotation-2019-05-15-151254.png)
