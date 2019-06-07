@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define a tax configuration and deploy it to legal entities
-description:  This topic provides information about how to define a tax configuration and then deploy it to one or more legal entities. 
+description: This topic explains how to define a tax configuration, and then deploy it to one or more legal entities. 
 author: EricWang
 manager: RichardLuan
 ms.date: 06/05/2019
@@ -30,71 +30,71 @@ ms.dyn365.ops.version: 10.0.4
 
 # Define a tax configuration and deploy it to legal entities
 
-1. Click **Tax** \> **Setup** \> **Tax Configuration** \> **Tax Setup**.
-2. Click **New**, and in the **Tax Setup** field, enter a value.
-3. In the **Description** field, enter a value and then click **Save**.
+[!include [banner](../includes/banner.md)]
 
-![tax setup](media/tax-setup.PNG)
+1. Go to **Tax** \> **Setup** \> **Tax Configuration** \> **Tax Setup**.
+2. Select **New**.
+3. In the **Tax Setup** field, enter a value.
+4. In the **Description** field, enter a value, and then select **Save**.
 
-4. Click **Configurations**, and on the **Tax configuration** tab, under **Available configurations**, click **New**.
-5. In the **Configurations version** field, select a value. The new tax configuration is listed in the **Available configurations** grid.
+    ![Tax setup](media/tax-setup.PNG)
 
-![](media/configuration-version.PNG)
+5. Select **Configurations**.
+6. On the **Tax configuration** tab, in the **Available configurations** section, select **New**.
+7. In the **Configuration version** field, select a value.
 
-6. Click **Save** and then click **Synchronize**.
+    The new tax configuration is listed in the **Available configurations** grid.
 
-![synchronize](media/synchronize.png)
+    ![Selecting a configuration version](media/configuration-version.PNG)
 
-7. Click **Activate**
+8. Select **Save**, and then select **Synchronize**.
 
-![active](media/active.PNG)
+    ![Synchronization progress indicator](media/synchronize.png)
 
-> [!NOTE]
-> The activated configuration is updated as the current configuration.
+9. Select **Activate**.
 
-8. Click the **Report configurations** tab.
+    ![Active configuration](media/active.PNG)
 
-> [!NOTE]
-> The **Available configurations** grid lists the configurations that are related to the report.
+    The configuration that you activated is updated as the current configuration.
 
-9. Mark the **Select** check box and in the **Report controller** field, select a value.
+10. Select the **Report configurations** tab.
 
-10. **Save** and **Close**
+    The **Available configurations** grid lists the configurations that are related to the report.
 
-![GST reports](media/GST-reports.png)
+11. Select the **Select** check box.
+12. In the **Report controller** field, select a value.
+13. Select **Save**, and then select **Close**.
 
-11. On the **Companies** FastTab, create a record, and in the **Companies** field, select a value.
+    ![GST reports](media/GST-reports.png)
 
-> [!NOTE]
-> Note: Only one legal entity can be assigned to one tax configuration.
+14. On the **Companies** FastTab, create a record.
+15. In the **Companies** field, select a value.
 
-12. **Save** the record.
-13. Click **Activate** to activate the configuration for the company.
+    > [!NOTE]
+    > Only one legal entity can be assigned to each tax configuration.
 
-![gst company](media/gst-company.PNG)
+16. Save the record.
+17. Select **Activate** to activate the configuration for the company.
 
+![GST company](media/gst-company.PNG)
 
 ## Update the configuration version
 
-1. Click **Deactivate**.
-2. Click **Configurations**, and on the **Tax configuration** tab, under **Available configurations**, click **New**.
-3. In the **Configurations** field, select a value. 
+1. Select **Deactivate**.
+2. Select **Configurations**.
+3. On the **Tax configuration** tab, in the **Available configurations** section, select **New**.
+4. In the **Configurations** field, select a value. 
 
-> [!NOTE]
-> The new tax configuration is listed in the **Available configurations** grid.
+    The new tax configuration is listed in the **Available configurations** grid.
 
-![update configuration](media/update-configuration.png)
+    ![Updating the configuration](media/update-configuration.png)
 
-4. Click **Save**
-5. Select the record, and then click **Synchronize**.
-6. Click **Activate**.
+5. Select **Save**.
+6. Select the record, and then select **Synchronize**.
+7. Select **Activate**.
 
-> [!NOTE]
-> The activated configuration is updated as the current configuration.
+    The configuration that you activated is updated as the current configuration.
 
-7. Click **Save** and then click **Close**
+8. Select **Save**, and then select **Close**
 
-![](media/update-configuration-2.png)
-
-
-
+![New active configuration](media/update-configuration-2.png)
