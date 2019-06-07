@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up rule-based tax settlement
-description:  This topic provides information about how to work with rule-based tax settlements.
+title: Rule-based tax settlement
+description: This topic explains how to set up and work with rule-based tax settlements.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/05/2019
@@ -30,65 +30,69 @@ ms.dyn365.ops.version: 10.0.4
 
 # Rule-based tax settlement
 
-1. Click **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
-2. Enter the appropriate values and then click **OK**.
+[!include [banner](../includes/banner.md)]
 
-![](media/Capture2019052109.PNG)
+## Set up rule-based tax settlement
+
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
+2. Enter the appropriate values, and then select **OK**.
+
+![Sales tax settlement incl. corrections dialog box](media/Capture2019052109.PNG)
 
 ## Validate the tax settlement voucher entries
 
-1. Click **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
-2. Select the settlement period, and then click **Sales tax payments**.
-3. Verify that the settlement for the selected registration for the period is posted successfully.
-4. Click **Print report**.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
+2. Select the settlement period, and then select **Sales tax payments**.
+3. Verify that the settlement for the selected registration for the period is successfully posted.
+4. Select **Print report**.
 
-![](media/Capture2019052110.PNG)
+![Sales tax payments report](media/Capture2019052110.PNG)
 
 ## GST authority payment
 
-1. Click **Accounts payable** \> **Payments** \> **Payment journal** and create a new journal.
-2. Click **Lines**.
-3. Create a journal voucher for the Authority account.
-4. Click **Settle transactions**.
-5. Select the appropriate transaction and click **Post** \> **Post**.
-6. Click **Inquiries** \> **Voucher**
+1. Go to **Accounts payable** \> **Payments** \> **Payment journal**.
+2. Create a journal.
+3. Select **Lines**.
+4. Create a journal voucher for the authority account.
+5. Select **Settle transactions**.
+6. Select the appropriate transaction, and then select **Post** \> **Post**.
+7. Select **Inquiries** \> **Voucher**.
 
 ## Update challan information
 
-To update challan information, click **Functions** \> **Challan information**.
+To update challan information, select **Functions** \> **Challan information**.
 
 ## Manually adjust a tax settlement
 
-1. Click **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 2. Enter the appropriate values.
-3. Click **Tax adjustment**
+3. Select **Tax adjustment**.
 
 ## Exclude transactions from the settlement
 
 1. Expand the **GST** node.
-2. Select the **CGST** node, and then click **Transaction**.
-3. Clear the selection of the transaction to exclude from the settlement.
-4. Click **Update**.
+2. Select the **CGST** node, and then select **Transaction**.
+3. Cancel the selection of the transaction that should be excluded from the settlement.
+4. Select **Update**.
 
-> [!NOTE]
-> When the tax setoff rule is recalculated, the components are adjusted.
+> [!NOTE] When the tax set-off rule is recalculated, the components are adjusted accordingly.
 
 ## Partial settlement of the transactions
 
-1. Select the **SGST** node, and then click **Transaction**.
+1. Select the **SGST** node, and then select **Transaction**.
 2. Select the transaction, and then update the **Recoverable amount to settle** field.
-3. Click **Update**.
+3. Select **Update**.
 
-> [!NOTE]
-> - When the tax setoff rule is recalculated, the components are adjusted accordingly.
-> - Excess recoverable, unsettled transactions, and partially settled transactions should be part of the next settlement period.
+    > [!NOTE]
+    > - When the tax set-off rule is recalculated, the components are adjusted accordingly.
+    > - Excess recoverable, unsettled transactions, and partially settled transactions should be part of the next settlement period.
 
-4. Click **Close**.
+4. Select **Close**.
 5. Select the **Update** check box.
-6. Click **OK** and close the report.
+6. Select **OK**, and close the report.
 
 ## Validate the tax settlement voucher entries
 
-1. Click **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
-2. Select the settlement period, and then click **Sales tax payments**.
-3. Verify that the settlement for the selected registration for the period is posted successfully.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
+2. Select the settlement period, and then select **Sales tax payments**.
+3. Verify that the settlement for the selected registration for the period is successfully posted.
