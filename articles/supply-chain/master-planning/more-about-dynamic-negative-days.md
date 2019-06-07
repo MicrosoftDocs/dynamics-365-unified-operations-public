@@ -99,7 +99,7 @@ If you both set the negative days to be greater than the item’s lead time and 
 
 You might get demand sometime during your item's lead time. Here's an example of this situation:
 
-- Item "DemoProduct" has a six days purchase lead time  
+- Item "DemoProduct" has a six days purchase lead tim. 
 - On day zero (January 1st), the inventory level for item "DemoProduct" is zero.  
 - On day four (January 5th), inside the item’s lead time, you get a sales order for item "DemoProduct", quantity 10.  
 - On day seven (January 8th), there is a purchase order for item "DemoProduct", quantity 10.  
