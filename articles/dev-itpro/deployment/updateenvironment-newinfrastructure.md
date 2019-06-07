@@ -5,7 +5,7 @@ title: Update an environment
 description: This topic explains how to update an environment that was deployed using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 12/14/2018
+ms.date: 06/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
