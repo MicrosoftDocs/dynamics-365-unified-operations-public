@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a credit note against a sales invoice
-description: This topic provides information about creating a credit note against a sales invoice.
+description: This topic explains how to create a credit note against a sales invoice.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,45 +28,47 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Credit note against the sales invoice
+# Create a credit note against a sales invoice
+
+[!include [banner](../includes/banner.md)]
 
 ## Create a sales order
 
-1. Click **Accounts receivable** \> **Sales orders** \> **All sales orders**.
+1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
 2. Create a sales credit note for a taxable item.
 3. In the **Original invoice number** field, select a value.
 4. Verify that the **Original invoice date** field is automatically set based on the original invoice number that you selected, and then save the record.
-5. Click **Tax information**, and then click the **GST** tab.
-6. Click the **Customer tax information** tab
-7. Click OK.
-8. On the Action Pane, on the **Sell** tab, in the **Tax** group, click **Tax document**. For example, you might see something like the following:
+5. Select **Tax information**.
+6. Select the **GST** tab.
+7. Select the **Customer tax information** tab.
+8. Select **OK**.
+9. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
 
-  - Taxable amount: -5,000
-  - IGST: 20 percent
-  - CESS: 1 percent
+    You should see something that resembles the following example:
 
-9. Click **Close**.
+    - **Taxable amount:** -5,000
+    - **IGST:** 20 percent
+    - **CESS:** 1 percent
+
+10. Select **Close**.
 
 ## Post the invoice
 
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
+1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 2. In the **Quantity** field, select **All**.
 3. On the **Others** tab, verify that the **Invoice type** field is set to **Original**.
 
-> [!NOTE]
-> You can post a revised credit note by selecting **Revised** in the **Invoice type** field and adding a reference to the original credit note.
+    > [!NOTE]
+    > You can post a revised credit note by selecting **Revised** in the **Invoice type** field and then adding a reference to the original credit note.
 
-4. Click **OK**, and then click **Yes** to acknowledge the warning message.
+4. Select **OK**, and then select **Yes** to acknowledge the warning message that you receive.
 
 ## Validate the voucher
 
-1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**.
-2. Click **Voucher**.
+1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+2. Select **Voucher**.
 
-![](media/Annotation-2019-05-20-162812.png)
+![Example](media/Annotation-2019-05-20-162812.png)
 
 > [!NOTE]
 > You can create a sales credit note through the general ledger and a free text invoice.
-
-
-
