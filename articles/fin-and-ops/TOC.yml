@@ -854,7 +854,7 @@
         href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
       - name: Financial dimensions
         href: ../financials/general-ledger/financial-dimensions.md
-      - name: Account structures
+      - name: Financial dimensions and posting
         href: ../financials/general-ledger/Default-dimensions.md
       - name: Add financial dimensions to the CFO workspace
         href: ../financials/general-ledger/CFO-workspace.md
@@ -1085,6 +1085,8 @@
           href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
         - name: Create account structures
           href: ../financials/general-ledger/tasks/create-account-structures.md
+        - name: Financial dimensions and posting
+          href: ../financials/general-ledger/default-dimensions.md
         - name: Create accrual schemes
           href: ../financials/general-ledger/tasks/create-accrual-schemes.md
         - name: Financial consolidations and currency translation
