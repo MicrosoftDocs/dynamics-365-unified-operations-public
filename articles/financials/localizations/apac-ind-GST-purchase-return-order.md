@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Purchase return order
-description:  This topic provides information about a return order on a purchase.
+title: Purchase return orders
+description: This topic provides information about return orders on purchases.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,32 +28,31 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Purchase return order
+# Purchase return orders
 
-1. Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-2. Create a purchase order and set the **Purchase type** field to **Returned order**.
-3. In the **RMA number**, enter a value, and then click **OK**.
-4. Create purchase order lines that have a negative quantity and then save the record.
-5. Click **Tax information**.
-6. Click the **GST** tab.
-7. Click the **Vendor tax information** tab.
-8. Click **OK**
+1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+2. Create a purchase order.
+3. In the **Purchase type** field, select **Returned order**.
+4. In the **RMA number** field, enter a value.
+5. Select **OK**.
+4. Create purchase order lines that have a negative quantity, and then save the record.
+5. Select **Tax information**.
+6. Select the **GST** FastTab.
+7. Select the **Vendor tax information** FastTab.
+8. Select **OK**.
 
 ## Validate the tax details
 
-1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, click **Tax document**.
-2. Click **Close** and then click **Confirm**.
+1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
+2. Select **Close**, and then select **Confirm**.
 
 ## Post the purchase invoice
 
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
+1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 2. In the **Default quantity for lines** field, select **Ordered quantity**.
 3. Enter the invoice number.
-4. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post** \> **Post**.
-5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. 
-6. On the **Overview** tab, click **Voucher**
+4. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Post** \> **Post**.
+5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
+6. On the **Overview** tab, select **Voucher**.
 
-![](media/Annotation-2019-05-16-113209.png)
-
-
-
+![Example](media/Annotation-2019-05-16-113209.png)
