@@ -239,8 +239,9 @@
     - name: Delivering ISV solutions using One Version
       href: ../dev-itpro/lifecycle-services/oneversion-isv.md
     - name: Regression Suite Automation tool
-      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
       items:
+      - name: Create and automate user acceptance tests
+        href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
       - name: Set up and install Regression suite automation tool
         href: get-started/hol-set-up-regression-suite-automation-tool.md
       - name: Use Regression suite automation tool
