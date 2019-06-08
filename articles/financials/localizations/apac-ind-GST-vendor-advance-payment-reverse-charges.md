@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Vendor advance payment where there are reverse charges
-description:  This topic provides information about creating vendor advance payments that contain reverse charges.
+title: Vendor advance payments where there are reverse charges
+description: This topic explains how to create vendor advance payments that have reverse charges.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/042019
@@ -28,38 +28,42 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Vendor advance payment where there are reverse charges
+# Vendor advance payments where there are reverse charges
 
-1. Click **Accounts payable** \> **Payments** \> **Vendor Payment journal** and create a new record.
-2. In the **Name** field, select a value and then click **Lines**.
-3. Create a vendor advance payment journal and then save the record.
-4. Click **Tax information**.
-5. On the **GST** tab, in the **HSN code** field, select a value.
-6. Click the **Vendor tax information** tab.
-7. Click OK.
+1. Go to **Accounts payable** \> **Payments** \> **Vendor Payment journal**.
+2. Create a record.
+3. In the **Name** field, select a value.
+4. Select **Lines**.
+5. Create a vendor advance payment journal, and then save the record.
+6. Select **Tax information**.
+7. On the **GST** FastTab, in the **HSN code** field, select a value.
+8. Select the **Vendor tax information** FastTab.
+9. Select **OK**.
 
 ## Validate the tax details
 
-1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, click **Tax document**. You should see something similar to the following:
+1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
 
-  - CGST: 10 percent
-  - SGST: 10 percent
-  - CESS: 1 percent
-  - Reverse charge percentage: 70 percent for all the three components
+    What you see should resemble the following example:
 
-2. Click **Close**.
-3. Click **Post** \> **Post**.
-4. Close the message.
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+    - **CESS:** 1 percent
+    - **Reverse charge percentage:** 70 percent for all the three components
+
+2. Select **Close**.
+3. Select **Post** \> **Post**.
+4. Close the message that you receive.
 
 ## Update the transaction ID
 
-1. Click **Functions** \> **GST transaction ID**.
+1. Select **Functions** \> **GST transaction ID**.
 2. In the **Date** field, enter a value.
 3. In the **Text** field, enter a value.
-4. Click **Close**.
+4. Select **Close**.
 
 ## Validate the financial entries
 
-To validate the financial entries, click **Inquiries** \> **Voucher**.
+To validate the financial entries, select **Inquiries** \> **Voucher**.
 
-![](media/Annotation-2019-05-16-113421.png)
+![Example](media/Annotation-2019-05-16-113421.png)
