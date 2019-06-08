@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revise a purchase invoice that has taxable goods
-description:  This topic provides information about revising a purchase invoice that contains taxable goods.
+description: This topic explains how to revise a purchase invoice that has taxable goods.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,36 +28,37 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Revised purchase invoice that has taxable goods
+# Revise a purchase invoice that has taxable goods
 
-1. Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+[!include [banner](../includes/banner.md)]
+
+1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 2. Create a purchase order for a taxable item.
 
 ## Validate the tax details
 
-1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, click **Tax document**.
-2. On the **Tax details** FastTab, review the tax calculation. For example, it might look like the following:
+1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
+2. On the **Tax details** FastTab, review the tax calculation.
 
-  - Line amount: 10,000.00
-  - CGST: 10 percent
-  - SGST: 10 percent
-  - CESS: 1 percent
+    What you see might resemble the following example:
 
-3. Click **Close**, and then click **Confirm**.
+    - **Line amount:** 10,000.00
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+    - **CESS:** 1 percent
+
+3. Select **Close**, and then select **Confirm**.
 
 ## Post the purchase invoice
 
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
+1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 2. In the **Default quantity for lines** field, select **Ordered quantity**.
 3. On the **Lines** FastTab, enter the invoice number.
 4. In the **Invoice type** field, select **Revised**.
 5. In the **Original invoice number** field, select a value.
 6. Verify that the **Original invoice date field** is automatically set, based on the original invoice number that you selected.
-7. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post** \> **Post**.
-8. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. 
-9. On the **Overview** tab, click **Voucher**.
+7. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Post** \> **Post**.
+8. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+9. On the **Overview** tab, select **Voucher**.
 
-![](media/Annotation-2019-05-16-103252.png)
-
-
-
+![Example](media/Annotation-2019-05-16-103252.png)
