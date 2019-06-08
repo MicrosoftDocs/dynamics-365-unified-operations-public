@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Purchases from a registered vendor
-description: This topic provides information about working with purchases made by registered vendors..
+title: Purchases from registered vendors
+description: This topic explains how to work with purchases that are made by registered vendors.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,118 +28,123 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Purchases from a registered vendor
+# Purchases from registered vendors
+
+[!include [banner](../includes/banner.md)]
 
 ## Request for quotation
-1. Click **Procurement and sourcing** \> **Requests for quotations** \> **All requests for quotations**.
-2. Create a new record for a taxable item.
-3. On the Action Pane, on the **Quotation** tab, in the **Process** group, click **Send** and publish to the Vendor portal.
-4. Click **OK**.
-5. Close the message.
+
+1. Go to **Procurement and sourcing** \> **Requests for quotations** \> **All requests for quotations**.
+2. Create a record for a taxable item.
+3. On the Action Pane, on the **Quotation** tab, in the **Process** group, select **Send**, and publish the request for quotation (RFQ) to the vendor portal.
+4. Select **OK**.
+5. Close the message that you receive.
 6. Close the **Request for quotation details** page.
 
-![](media/Annotation-2019-05-15-171525.png)
+![Request for quotation case page](media/Annotation-2019-05-15-171525.png)
 
 ## Request for quotation replies
 
-1. Click **Procurement and sourcing** \> **Requests for quotations** \> **Request for quotation replies**.
+1. Go to **Procurement and sourcing** \> **Requests for quotations** \> **Request for quotation replies**.
 2. Select the record.
-3. On the Action Pane, on the **Reply** tab, in the **Maintain** group, click **Edit**.
-4. On the Action Pane, on the **Reply** tab, in the **Process** group, click **Copy data to reply**.
-5. On the **Purchase quotation lines** FastTab, click **Tax information**.
+3. On the Action Pane, on the **Reply** tab, in the **Maintain** group, select **Edit**.
+4. On the Action Pane, on the **Reply** tab, in the **Process** group, select **Copy data to reply**.
+5. On the **Purchase quotation lines** FastTab, select **Tax information**.
 
-    ![](media/Annotation-2019-05-15-171959.png)
+    ![Tax information dialog box](media/Annotation-2019-05-15-171959.png)
 
-6. Click the **GST** tab.
+6. Select the **GST** FastTab.
 
-    ![](media/Annotation-2019-05-15-172049.png)
+    ![GST FastTab](media/Annotation-2019-05-15-172049.png)
 
-7. Click the **Vendor tax information** tab.
+7. Select the **Vendor tax information** FastTab.
 
-    ![](media/Annotation-2019-05-15-172136.png)
+    ![Vendor tax information FastTab](media/Annotation-2019-05-15-172136.png)
 
-8. Click **OK**.
+8. Select **OK**.
 
 ## Validate the tax details
 
-1. On the Action Pane, on the **Reply** tab, in the **Financials** group, click **Tax document**.
+1. On the Action Pane, on the **Reply** tab, in the **Financials** group, select **Tax document**.
 2. Select the **GST** node.
-3. Review the tax applicability, tax attributes, and tax calculation. For example, it might look like the following:
+3. Review the tax applicability, tax attributes, and tax calculation.
 
-    - Taxable value: 10,000.00
-    - CGST: 10 percent
-    - SGST: 10 percent
+    What you see might resemble the following example:
 
-4. Click **Close**.
-5. On the Action Pane, on the **Reply** tab, in the **Process** group, click **Accept**.
-6. Click **OK** and close the message.
+    - **Taxable value:** 10,000.00
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+
+4. Select **Close**.
+5. On the Action Pane, on the **Reply** tab, in the **Process** group, select **Accept**.
+6. Select **OK**, and close the message that you receive.
 7. Close the **Request for quotation reply** page.
 
-## Purchase order form
+## Purchase order page
 
-1. Click **Accounts payable** \> **Purchase orders \> **All purchase orders**.
+1. Select **Accounts payable** \> **Purchase orders \> **All purchase orders**.
 2. Select the purchase order that was created through the RFQ.
-3. On the Action Pane, on the **Purchase order** tab, in the **Maintain** group, click **Edit**.
-4. On the **Purchase order lines** FastTab, click **Tax information**.
+3. On the Action Pane, on the **Purchase order** tab, in the **Maintain** group, select **Edit**.
+4. On the **Purchase order lines** FastTab, select **Tax information**.
 
-    ![](media/Annotation-2019-05-15-171959.png)
+    ![Tax information dialog box](media/Annotation-2019-05-15-171959.png)
 
-5. Click the **GST** tab.
-    
-    ![](media/Annotation-2019-05-15-172049.png)
-    
-6. Click the **Vendor tax information** tab.
-    
-    ![](media/Annotation-2019-05-15-172136.png)
+5. Select the **GST** FastTab.
 
-7. Click **OK**.
+    ![GST FastTab](media/Annotation-2019-05-15-172049.png)
+
+6. Select the **Vendor tax information** FastTab.
+
+    ![Vendor tax information FastTab](media/Annotation-2019-05-15-172136.png)
+
+7. Select **OK**.
 
 ## Validate the tax details
 
-1. On the **Action** Pane, on the **Purchase** tab, in the **Tax** group, click **Tax document**.
-2. Review the tax applicability, tax attributes, and tax calculation. For example, you might see the following:
+1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
+2. Review the tax applicability, tax attributes, and tax calculation.
 
-    - Taxable value: 10,000.00
-    - CGST: 10 percent
-    - SGST: 10 percent
+    What you see might resemble the following example:
 
-3. Click **Close**, and then click **Confirm**.
+    - **Taxable value:** 10,000.00
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+
+3. Select **Close**, and then select **Confirm**.
 
 ## Post the purchase invoice
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
+
+1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 2. In the **Default quantity for lines** field, select **Ordered quantity**.
 3. Enter the invoice number.
-4. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, click **Post** \> **Post**.
-5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**. 
-6. On the **Overview** tab, click **Voucher**.
+4. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Post** \> **Post**.
+5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+6. On the **Overview** tab, select **Voucher**.
 
-- Financial entry for the purchase of goods
+The following illustration shows the financial entry for the purchase of goods.
 
 ![Financial entry for the purchase of goods](media/Annotation-2019-05-15-173233.png)
 
-- Financial entry for the purchase of services
+The following illustration shows the financial entry for the purchase of services.
 
 ![Financial entry for the purchase of services](media/Annotation-2019-05-15-173325.png)
 
-- Financial entry for the purchase of goods where the ITC category is set to Others
+The following illustration shows the financial entry for the purchase of goods where the ITC category is set to **Others**.
 
 ![Financial entry for the purchase of goods where the ITC category is set to Others](media/Annotation-2019-05-15-173406.png)
 
-- Financial entry for the purchase of services where the service category is set to Others
+The following illustration shows the financial entry for the purchase of services where the service category is set to **Others**.
 
 ![Financial entry for the purchase of services where the service category is set to Others](media/Annotation-2019-05-15-173457.png)
 
-- Financial entry for the purchase of goods where the load on inventory is set to 100 percent
+The following illustration shows the financial entry for the purchase of goods where the load on inventory is set to 100 percent.
 
-![Financial entry for hte purchase of goods where the load on inventory is set to 100 percent](media/Annotation-2019-05-15-173548.png)
+![Financial entry for the purchase of goods where the load on inventory is set to 100 percent](media/Annotation-2019-05-15-173548.png)
 
-- Financial entry for the purchase of goods where the reverse charge is set to 100 percent
+The following illustration shows the financial entry for the purchase of goods where the reverse charge is set to 100 percent.
 
-![Financial entry for the purchase of goods whree the reverse charge is set to 100 percent](media/Annotation-2019-05-15-173632.png)
+![Financial entry for the purchase of goods where the reverse charge is set to 100 percent](media/Annotation-2019-05-15-173632.png)
 
-- Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others
+The following illustration shows the financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to **Others**.
 
-![Financial entry for the purchase of goods wehre the reverse charge is setto 70 percent and the ITC category is set to Others](media/Annotation-2019-05-15-173734.png)
-
-
-
+![Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others](media/Annotation-2019-05-15-173734.png)
