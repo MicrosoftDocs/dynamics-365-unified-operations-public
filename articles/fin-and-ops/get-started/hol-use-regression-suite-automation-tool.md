@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 [!include [banner](../includes/banner.md)]
 
-[!NOTE]
+> [!NOTE]
 > Use your internet browser tools to download and save this page in pdf format. 
 
 ## Features of RSAT/Task recorder
