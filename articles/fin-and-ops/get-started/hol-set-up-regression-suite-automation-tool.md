@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 [!include [banner](../includes/banner.md)]
 
+[!NOTE]
+> Use your internet browswer tools to download and save this page in pdf format. 
+
 ## Key concepts
 
 - Understand the installation and prerequisite setup that are required for the various applications that suppport Regression suite automation tool (RSAT).
