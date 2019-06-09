@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales where prices include and exclude tax
-description:  This topic provides information about sales that include or exclude sales tax.
+description: This topic provides information about sales where the prices on some order lines include sales tax and the prices on other order lines exclude sales tax.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -30,49 +30,52 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales where prices include and exclude tax
 
-## Createa sales order 
-1. Click **Accounts receivable** \> **Sales orders** \> **All sales orders**.
-2. Create a sales order for taxable goods and add two sales order lines:
+[!include [banner](../includes/banner.md)]
 
-  - For order line 1, clear the **Prices include sales tax** check box.
-  - For order line 2, select the **Prices include sales tax** check box.
+## Create a sales order
+
+1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
+2. Create a sales order for taxable goods, and add two sales order lines:
+
+    - For order line 1, clear the **Prices include sales tax** check box.
+    - For order line 2, select the **Prices include sales tax** check box.
 
 3. Save the records.
-4. Select order line one, and then click **Tax information**.
-5. Click the **GST** tab
-6. Click the **Customer tax information** tab and then click **OK**.
-8. Repeat steps 4 through 6 for order line 2.
-9. On the Action Pane, on the **Sell** tab, in the **Tax** group, click **Tax document**. For example, you might see something similar to the following:
+4. Select order line 1, and then select **Tax information**.
+5. Select the **GST** FastTab.
+6. Select the **Customer tax information** FastTab.
+7. Select **OK**.
+8. Repeat steps 4 through 7 for order line 2.
+9. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
 
-    Order line 1:
+    What you see might resemble the following example:
 
-    - Taxable amount: 10,000
-    - CGST: 10 percent
-    - SGST: 10 percent
-    - CESS: 1 percent
+    **Order line 1**
 
-    Order line 2:
+    - **Taxable amount:** 10,000
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+    - **CESS:** 1 percent
 
-    - Taxable amount: 5,000
-    - CGST: 10 percent
-    - SGST: 10 percent
-    - CESS: 1 percent
+    **Order line 2**
+
+    - **Taxable amount:** 5,000
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+    - **CESS:** 1 percent
     - Price inclusive
 
-10. Click **Close**.
+10. Select **Close**.
 
 ## Post the invoice
 
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
+1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 2. In the **Quantity** field, select **All**.
-3. Click **OK** and then click **Yes** to acknowledge the warning message.
+3. Select **OK**, and then select **Yes** to acknowledge the warning message that you receive.
 
 ## Validate the voucher
 
-1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**.
-2. Click **Voucher**.
+1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+2. Select **Voucher**.
 
-![](media/Annotation-2019-05-20-153808.png)
-
-
-
+![Example](media/Annotation-2019-05-20-153808.png)
