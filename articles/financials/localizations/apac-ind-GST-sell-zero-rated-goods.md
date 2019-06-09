@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sale of zero-rated goods
-description:  This topic provides information about the sale of zero-rated goods.
+title: Sales of zero-rated goods
+description: This topic provides information about the sale of zero-rated goods.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,29 +28,29 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Sale of zero-rated goods
+# Sales of zero-rated goods
 
-1. Click **Accounts receivable** \> **Sales orders** \> **All sales orders**.
+[!include [banner](../includes/banner.md)]
+
+1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
 2. Create a sales order for a zero-rated item.
-3. Select the record, and then click **Tax information**.
-4. On the **GST** tab, verify that the **Exempted** check box is selected.
-5. Click the **Customer tax information** tab, and then click **OK**.
-6. On the Action Pane, on the **Sell** tab, in the **Tax** group, click **Tax document**.
-7. Click **Close**.
+3. Select the record, and then select **Tax information**.
+4. On the **GST** FastTab, verify that the **Exempted** check box is selected.
+5. Select the **Customer tax information** FastTab.
+6. Select **OK**.
+7. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
+8. Select **Close**.
 
 ## Post the invoice
 
-1. On the Action Pane, on the **Invoice tab**, in the **Generate** group, click **Invoice**.
+1. On the Action Pane, on the **Invoice tab**, in the **Generate** group, select **Invoice**.
 2. In the **Quantity** field, select **All**.
-3. Click **OK**.
-4. Click **Yes** to acknowledge the warning message
+3. Select **OK**.
+4. Select **Yes** to acknowledge the warning message that you receive.
 
 ## Validate the voucher
 
-1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**.
-2. Click **Voucher**.
+1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+2. Select **Voucher**.
 
-![](media/Annotation-2019-05-20-150217.png)
-
-
-
+![Example](media/Annotation-2019-05-20-150217.png)
