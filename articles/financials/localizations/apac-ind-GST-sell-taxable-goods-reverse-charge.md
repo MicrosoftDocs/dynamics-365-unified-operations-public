@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sale of taxable goods where there is a reverse charge
-description:  This topic provides information about the sale of taxable goods where there is a reverse charge.
+title: Sales of taxable goods where there is a reverse charge
+description: This topic provides information about the sale of taxable goods where there is a reverse charge.
 author: EricWang
 manager: RichardLuan
 ms.date: 06/04/2019
@@ -28,37 +28,39 @@ ms.dyn365.ops.version: 10.0.4
 
 ---
 
-# Sale of taxable goods where there is a reverse charge
+# Sales of taxable goods where there is a reverse charge
 
-1. Click **Accounts receivable** \> **Sales orders** \> **All sales orders**.
-2. Create a sales order for a taxable item.
-3. Save the record, and then click **Tax information**.
-4. Click the **GST** tab.
-5. Click the **Customer tax information** tab, and then click **OK**.
-6. On the Action Pane, on the **Sell** tab, in the **Tax** group, click **Tax document** to review the calculated taxes. For example, you might see something similar to the following:
+[!include [banner](../includes/banner.md)]
 
-  - Taxable value: 10,000.00
-  - CGST: 10 percent
-  - SGST: 10 percent
-  - Reverse charge percentage: 70 percent
+1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
+2. Create a sales order for a taxable item, and save the record.
+3. Select **Tax information**.
+4. Select the **GST** FastTab.
+5. Select the **Customer tax information** FastTab.
+6. Select **OK**.
+7. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
 
-7. Click **Close**.
+    What you see might resemble the following example:
+
+    - **Taxable value:** 10,000.00
+    - **CGST:** 10 percent
+    - **SGST:** 10 percent
+    - **Reverse charge percentage:** 70 percent
+
+8. Select **Close**.
 
 ## Post the invoice
 
-1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
+1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 2. In the **Quantity** field, select **All**.
 3. Select the **Print invoice** check box.
-4. Click **OK** and then click **Yes** to acknowledge the warning message.
+4. Select **OK**, and then select **Yes** to acknowledge the warning message that you receive.
 
 ## Validate the voucher
 
-1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, click **Invoice**.
-2. Click **Voucher**.
+1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
+2. Select **Voucher**.
 
-- Financial entries for both the intrastate and interstate transactions
+The following illustration shows the financial entries for both the intrastate transactions and the interstate transactions.
 
-![](media/Annotation-2019-05-20-144319.png)
-
-
-
+![Financial entries for intrastate and interstate transactions](media/Annotation-2019-05-20-144319.png)
