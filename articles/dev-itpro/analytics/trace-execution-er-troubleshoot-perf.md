@@ -352,3 +352,29 @@ If you use one of these versions of Finance and Operations, you can analyze the 
 Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution.
+
+![Trace information for executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## Use external tools to review the execution trace that includes database queries
+
+With the improvements of the ER framework, the generated performance trace in PerfView format will offer you more details about ER format execution. Starting from the 10.0.3 version, this trace may also include details of executed SQL queries to the application database.
+
+### Configure user parameters
+
+1. In Finance and Operations, go to **Organization administration \> Electronic reporting \> Configurations**.
+2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
+3. In the **User parameters** dialog box, in the **Execution tracing** section, in the **Execution trace format** field, select the following:
+
+    1. In the **Execution trace format** field, select **PerfView XML**.
+    2. In the **Collect query statistics** field, select **Yes**.
+    3. In the **Trace query** field, select **Yes**.
+
+![User parameters dialog box in Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### Run the ER format
+
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+
+Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution. Now this trace includes the details of SQL database access during the execution of ER format.
+
+![Trace information for executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
