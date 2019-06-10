@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.3 (June 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/03/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,6 +67,9 @@ In this release of Finance and Operations, numerous enhancements have been made 
 ### Calculate tax in accounting currency for Import/Export Order
 
 In this release of Finance and Operations, a new parameter is added to the **Tax setup parameters** page, which allows user to choose based on which currency the tax should be calculated for Import/Export Order. By default, the **Transaction currency** allows you to choose which currency the tax should be calculated for an import/export order. By default, the **Transaction currency** is the same as the original system behavior. If you choose **Accounting currency**, the system will calculate the tax based on the assessable value in accounting currency.
+
+## Regulatory updates
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ## Additional resources
 
