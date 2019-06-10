@@ -75,7 +75,8 @@ To update challan information, select **Functions** \> **Challan information**.
 3. Cancel the selection of the transaction that should be excluded from the settlement.
 4. Select **Update**.
 
-> [!NOTE] When the tax set-off rule is recalculated, the components are adjusted accordingly.
+> [!NOTE] 
+> When the tax set-off rule is recalculated, the components are adjusted accordingly.
 
 ## Partial settlement of the transactions
 
