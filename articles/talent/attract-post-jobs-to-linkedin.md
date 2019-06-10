@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Post jobs to external career sites from Attract
-description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to external recruiting sites
+title: Post jobs to LinkedIn from Attract
+description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to LinkedIn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/28/2019
@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to LinkedIn directly from Attract. After you [create a job](./creating-jobs-attract.md), all you have to do is push a button to put your job in front of thousands of potential candidates on LinkedIn.
+LinkedIn is the largest online professional network, giving you access to the world's top talent. Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to LinkedIn directly from Attract. Attract provides the option to post a Limited Listing with LinkedIn at no extra cost. These listings are only available through LinkedIn software partners like Attract. They don't appear on the Careers panel on your company's LinkedIn page, because that requires a paid listing, but they display when potential candidates view all available jobs. Limited Listings also display in LinkedIn job searches.
+
+After you [create a job](./creating-jobs-attract.md) in Attract, all you have to do is push a button to put your job in front of thousands of potential candidates on LinkedIn.
 
 The following table shows the actions you can perform on LinkedIn, depending on your user role.
 
@@ -60,6 +62,8 @@ If you're an admin who needs more information about configuring LinkedIn integra
 5. In the **Submit for posting** window, select **Confirm**.
 
 After LinkedIn successfully completes the posting, the **Postings** section of the job in Attract shows the LinkedIn status as **Posted**.
+
+When interested candidates select **View** next to your listing, they'll see the full job details, along with your information about how to apply.
 
 It can take up to 24 hours for your job to appear in LinkedIn. All job postings done with attract are Limited Listings. For more information about Limited Listings in LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049).
 

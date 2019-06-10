@@ -34,19 +34,27 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
+Help your recruiters and hiring managers attract top talent by configuring LinkedIn integration with Microsoft Dynamics 365 for Talent: Attract. Attract allows you to post jobs directly to LinkedIn, the largest professional online network. Jobs posted to LinkedIn through Attract are Limited Listings, and are provided at no extra cost to your company. These listings are only available through LinkedIn software partners like Attract. They don't appear on the Careers panel on your company's LinkedIn page, because that requires a paid listing, but they display when potential candidates view all available jobs. Limited Listings also display in LinkedIn job searches.
+
 Microsoft Dynamics 365 for Talent: Attract provides two ways to integrate with LinkedIn to help you source candidates from this popular career site:
 
 - Post jobs from Attract to LinkedIn
 - Source candidates from LinkedIn to Attract
 
+You configure both of these options on the **LinkedIn Integration** tab in the **Admin center**.
+
 > [!NOTE]
-> You need the Comprehensive hiring add-on and LinkedIn Recruiter licenses to be able to use LinkedIn Recruiter integration with Attract. For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md).
+> You need the Comprehensive hiring add-on and LinkedIn Recruiter licenses to be able to use LinkedIn Recruiter integration with Attract. For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md)
 
 If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md).
+
+If you want information about other ways to post jobs to LinkedIn, see [LinkedIn FAQ](Integration with LinkedIn FAQ).
 
 ## Configure job posting to LinkedIn
 
 Before you can post jobs from Attract to LinkedIn, you need a LinkedIn Company ID. Your LinkedIn Company ID is a string of numbers that uniquely identifies your company within LinkedIn. For more information, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://aka.ms/findID).
+
+Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day, so it can take up to 24 hours for your jobs to post to the site.
 
 1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
 
@@ -59,41 +67,13 @@ Before you can post jobs from Attract to LinkedIn, you need a LinkedIn Company I
 5. Select **Save**.
 
 > [!NOTE]
-> Keep in mind the following about posting jobs to LinkedIn:
-> 1. Without further configuration, Attract posts jobs to LinkedIn as Limited Listing jobs. These are free job postings that candidates can see on LinkedIn while they're activily searching for jobs or while viewing your company page on LinkedIn. You can't promote Limited Listing jobs on LinkedIn. If you want to promote Limited Listings, you need to work with LinkedIn to enable Job Wrapping. For more information about Job Wrapping, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping) and [Job Wrapping Plus - FAQs](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions).
+> Keep the following in mind about posting jobs to LinkedIn:
+> 
+> 1. LinkedIn links jobs to your company based on the organization information provided by the job created in Attract. If your job is listed with the wrong company on LinkedIn, check to make sure your Microsoft 365 organization name matches the company name on LinkedIn. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972). If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more). If you still have problems, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
 >
-> 2. When posting jobs to LinkedIn, Attract provides the Microsoft 365 organization with the job. LinkedIn links the job to a company based on the organization name provided. If your job is listed with the wrong company on LinkedIn, check that your Microsoft 365 organization name matches the company name on LinkedIn. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972). If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more). If you still have problems, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
+> 2. Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs. 
 >
-> 3. Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs. 
->
-> 4. It can take up to 24 hours for posted jobs to appear on LinkedIn, due to LinkedIn's process for batch job posting.
-
-### Synchronization between Attract and LinkedIn
-
-LinkedIn offers the following types of job postings:
-
-- **Limited Listing** - free job postings that appear in search results when candidates search for jobs on LinkedIn and on a company's LinkedIn page. Limited Listings are targeted toward active job seekers.
-- **Premium Job Slot** - purchased postings that appear in various places across LinkedIn, including the LinkedIn feed, emails, and the Jobs You Might be Interested in area. Premium Job Slots are targeted toward passive candidates, but also appear in job searches.
-
-At this time, Attract only supports Limited Listings. Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day, so it can take up to 24 hours for your jobs to post to the site. For more information about the types of job postings available on LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping).
-
-The following table describes the products available for job delivery into LinkedIn. At this time, Attract uses the Limited Listings product.
-
->[!NOTE]
->You don't need a LinkedIn Recruiter System Connect (RSC) license to post jobs to LinkedIn with Attract.
-
-| Product | Limited Listings (Attract) | Job Wrapping (XML or career site) | Job Posting API | Recruiter System Connect (RSC) API |
-|---|---|---|---|---|
-| Description | Attract, or other Applicant Tracking System (ATS), sends an XML job feed to LinkedIn | LinkedIn ingests jobs from a designated source (XML or career site) | ATS enables job posting API and customer posts job through ATS | Customer sends jobs to RSC as Public |
-| Job posted on LinkedIn as... | Limited Listing | Premium Job Slot (or Limited Listing when Premium Job Slot not available) | Premium Job Slot | Limited Listing |
-| Job Promotion on LinkedIn | None | Premium Job Slots - yes; Limited Listings - none | Yes | None |
-| LinkedIn ingestion frequency | Once a day | Once a day | Defined by API (multiple per day) | Defined by API (multiple per day) |
-| Recommended by LinkedIn? | No | Yes | Yes | No |
-| Requirements | Contract Agreement | Purchase of Premium Job Slots | API agreement | API agreement | 
-
-For more information about LinkedIn's Job Wrapping, see [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037) and [Job Wrapping Plus - FAQs](https://www.linkedin.com/help/recruiter/answer/79050).
-
-For more information about developing solutions around Attract and Recruiter System Connect, see [Recruiter System Connect](https://docs.microsoft.com/en-us/linkedin/talent/recruiter-system-connect).
+> 3. It can take up to 24 hours for posted jobs to appear on LinkedIn, because LinkedIn uses batch processing to post them.
 
 ## Set up LinkedIn Recruiter with Attract 
 

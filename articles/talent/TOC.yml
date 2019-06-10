@@ -102,18 +102,22 @@
       href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
+    - name: LinkedIn integration FAQ
+      href: attract-linkedin-faq.md
     - name: Create a process template in Attract
       href: Process-templates-Attract.md
     - name: Create and post jobs
       href: Creating-jobs-Attract.md
-    - name: Post jobs to external career sites from Attract
+    - name: Set up integration with LinkedIn
+      href: attract-admin-linkedin.md
+    - name: Post jobs to LinkedIn from Attract
+      href: attract-post-jobs-to-linkedin.md
+    - name: Post jobs to Broadbean from Attract
       href: posting-jobs-external.md
     - name: Source candidates by using talent pools
       href: attract-talent-pools.md
     - name: Source candidates with LinkedIn Recruiter
       href: attract-linked-in-recruiter.md
-    - name: Post jobs to LinkedIn
-      href: attract-post-jobs-to-linkedin.md
     - name: Activities in the hiring processes 
       href: activities-attract.md
     - name: Interview scheduling and feedback

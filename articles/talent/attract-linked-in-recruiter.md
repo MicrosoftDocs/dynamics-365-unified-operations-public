@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 # Source candidates with LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
-LinkedIn is the world’s largest talent database and often the primary system that recruiters use to find, communicate with, and source candidates for their positions. Integration between Dynamics 365 for Talent: Attract and LinkedIn Recruiter makes it easier for you to find and hire top candidates, and to sync data between Attract and LinkedIn.
+LinkedIn is the world's largest online professional network, giving you access to the world's top talent. With Microsoft Dynamics 365 for Talent: Attract, you can source candidates directly from LinkedIn, which makes it easier than ever to find the talent you need to fill your open positions. After you set up your connection with LinkedIn through Attract, you can view potential LinkedIn candidates for your position and export them into Attract with just one click.
 
-Before you can take advantage of LinkedIn Recruiter from within Attract, your admin needs to [set up integration with LinkedIn](./attract-admin-linkedin.md). Once this is complete, you can set up your connection with LinkedIn Recruiter and start finding candidates.
+If it appears you don't have this capability, contact your admin. Before you can take advantage of LinkedIn Recruiter from within Attract, your admin needs to [set up integration with LinkedIn](./attract-admin-linkedin.md). Once this is complete, you can set up your connection with LinkedIn Recruiter and start finding candidates.
 
 ## Set up your connection with LinkedIn Recruiter
 
