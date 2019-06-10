@@ -296,7 +296,7 @@ The **ProcessGuideStepWithoutPrompt** abstract class implements the default beha
 
 The following code example shows the class and the **doExecute()** method implementation. The method simply retrieves the order ID and user ID from the session state and invokes the method to start this production order.
 
-![](media/class-and-method-implementation.png)
+![doExecute() method implementation](media/class-and-method-implementation.png)
 
 In case of an exception, the framework exception handling logic ensures that the process is rolled back to the previous step.
 

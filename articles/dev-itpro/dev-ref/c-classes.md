@@ -4181,7 +4181,7 @@ A data type value that is a new Statement object.
 
 #### Remarks
 
-There is risk of an SQL injection threat when you use the createStatement method to create an SQL statement and then allow a user to control input to the statement. For information about SQL injection, see http://go.microsoft.com/fwlink/?LinkId=114986. You can use Query Elements in the AOT, views, and X++ Select statements as safer alternatives to executing SQL statements.
+There is risk of an SQL injection threat when you use the createStatement method to create an SQL statement and then allow a user to control input to the statement. For information, see [SQL Injection](https://go.microsoft.com/fwlink/?LinkId=114986). You can use Query Elements in the AOT, views, and X++ Select statements as safer alternatives to executing SQL statements.
 
 ### Method odbcGetInfoInt
 

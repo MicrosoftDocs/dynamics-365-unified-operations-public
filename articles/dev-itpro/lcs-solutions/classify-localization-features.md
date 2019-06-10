@@ -51,7 +51,7 @@ The following table explains the components of the naming convention.
 
 | Component name      | Format      | Description                                                                                                                   | Example                 |
 |---------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| Country/region code | XX          | The two-letter ISO country/region code (from the [ISO 3166 standard](http://www.iso.org/iso/country_names_and_code_elements)) | PT (= Portugal)         |
+| Country/region code | XX          | The two-letter ISO country/region code (from the [ISO 3166 standard](https://www.iso.org/iso/country_names_and_code_elements)) | PT (= Portugal)         |
 | Feature type        | REG or COMP | The type of feature                                                                                                           | REG                     |
 | Feature name        | Text        | A short feature title that describes what the feature is used for                                                             | Direct sales tax report |
 

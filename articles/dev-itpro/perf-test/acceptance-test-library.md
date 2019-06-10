@@ -46,6 +46,9 @@ The Acceptance test library (ATL) is an X++ test library that offers the followi
 ## Example of a test that is written in ATL
 
 ```
+// Create the data root node
+var data = AtlDataRootNode::construct();
+
 // Get a reference to a well-known warehouse 
 var warehouse = data.invent().warehouses().default();
  

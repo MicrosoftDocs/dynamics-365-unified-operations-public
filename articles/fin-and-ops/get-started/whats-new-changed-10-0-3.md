@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.3 (June 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June.
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/09/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,11 +50,6 @@ Bank foreign currency revaluation was released in version 10.0.2 and it included
 
 For more information, see [Bank foreign currency revaluation](https://go.microsoft.com/fwlink/?linkid=2079802).
 
-## Set up interest distribution for cash accounts
-Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
-
-For more information, see [Interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607).
-
 ## Expense reports re-imagined
 Expense report entry has been redesigned to simplify and decrease the time to complete your expense report. You can enable this functionality in feature management to add a new setup form to configure expense fields visibility to determine what data is required, optional, or not enabled for entering expense reports. A new expense workspace is enabled with this feature, replacing the previous expense workspace and is the landing page for the improved entry experience. 
 
@@ -63,6 +58,18 @@ For more information, see [Expense reports re-imagined](https://go.microsoft.com
 ## Extensibility enhancements
 
 In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3](../../dev-itpro/extensibility/extensibility-changes-10-3.md).
+
+## Tax engine
+
+> [!NOTE]
+> The tax engine (GTE) is currently only available for India.
+
+### Calculate tax in accounting currency for Import/Export Order
+
+In this release of Finance and Operations, a new parameter is added to the **Tax setup parameters** page, which allows user to choose based on which currency the tax should be calculated for Import/Export Order. By default, the **Transaction currency** allows you to choose which currency the tax should be calculated for an import/export order. By default, the **Transaction currency** is the same as the original system behavior. If you choose **Accounting currency**, the system will calculate the tax based on the assessable value in accounting currency.
+
+## Regulatory updates
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ## Additional resources
 
