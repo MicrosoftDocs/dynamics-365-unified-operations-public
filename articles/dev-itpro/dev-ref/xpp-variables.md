@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ Variables
+title: X++ variables
 description: This topic describes variables and data types in X++.
 author: RobinARH
 manager: AnnBe
