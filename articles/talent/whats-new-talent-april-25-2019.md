@@ -50,7 +50,7 @@ With this week's release, the following entities support custom fields: Compensa
 ### Additional OData entities (302992)
 The following entities are now supported within OData: Worker professional experience and Worker education.
    
-### Performance journal attachments for Managers and employees (308248)
+### Performance journal attachments for managers and employees (308248)
 With this release, attachments are now available for both managers and employees when creating and updating performance journal entries.
 
 ### Employee rehire flag always available (310047)
