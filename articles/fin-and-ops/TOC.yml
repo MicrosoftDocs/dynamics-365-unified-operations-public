@@ -1958,7 +1958,7 @@
               href: ../financials/localizations/apac-ind-GST-hsn-service-accounting-codes.md
             - name: Create main accounts for the GST posting type
               href: ../financials/localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
-            - name:Create a tax settlement period 
+            - name: Create a tax settlement period 
               href: ../financials/localizations/apac-ind-GST-create-tax-settlement-period.md
             - name: Attach the GSTIN to a tax registration group
               href: ../financials/localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
