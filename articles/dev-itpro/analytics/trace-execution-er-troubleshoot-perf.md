@@ -357,7 +357,7 @@ Notice that the web browser offers a zip file for download. This file contains t
 
 ## Use external tools to review the execution trace that includes database queries
 
-With the improvements of the ER framework, the generated performance trace in PerfView format will offer you more details about ER format execution. Starting from the 10.0.3 version, this trace may also include details of executed SQL queries to the application database.
+With the improvements of the ER framework, the generated performance trace in PerfView format will offer you more details about ER format execution. Starting from the 10.0.4 version, this trace may also include details of executed SQL queries to the application database.
 
 ### Configure user parameters
 
