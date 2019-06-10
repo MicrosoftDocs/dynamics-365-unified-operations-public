@@ -84,7 +84,7 @@ Follow these steps in the development environment.
 
     [![TestRoot environment variable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
-2. Download the **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** files from [http://selenium-release.storage.googleapis.com/index.html?path=2.42/](http://selenium-release.storage.googleapis.com/index.html?path=2.42/), and extract the files.
+2. Download the **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** files from [https://selenium-release.storage.googleapis.com/index.html?path=2.42/](https://selenium-release.storage.googleapis.com/index.html?path=2.42/), and extract the files.
 3. Copy the dynamic-link libraries (DLLs) from the **selenium-dotnet-strongnamed-2.42.0.zip\net40** folder to the **PerfSDK\\Common\\External\\Selenium** folder. Also copy the **IEDriverServer.exe** from the **IEDriverServer\_Win32\_2.42.0.zip** to the **PerfSDK\\Common\\External\\Selenium** folder.
 
     [![DLLs in the PerfSDK\Common\External\Selenium folder](./media/perf103d.png)](./media/perf103d.png)
