@@ -119,9 +119,6 @@ Support for creating project-based sales orders where the project contract has m
 
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
-
 ### Deprecated APIs and potential breaking changes
 
 
