@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. Target timeframe for the functionality to be removed is July 2020. |
 
-=======
+
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
 
 > [!IMPORTANT]
