@@ -41,7 +41,7 @@ The following procedure is for one-box development environments only.
 The following procedure is for one-box development environments only.
 
 -   Download the patch .zip file from Lifecycle Services (LCS).
--   If there are any font files in the Reporting Service patch’s data folder, install these to the machine where SQL Server Reporting Services (SSRS) is running. For more information about installing fonts on Windows, see [TrueType overview](patch-reporting-service-environment).  Any fonts that have already been installed do not need to be installed again.
+-   If there are any font files in the Reporting Service patch’s data folder, install these to the machine where SQL Server Reporting Services (SSRS) is running. For more information about installing fonts on Windows, see [How to install or remove a font in Windows](https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows).  Any fonts that have already been installed do not need to be installed again.
 -   Copy the files in the Reporting Services patch scripts folder to the Report plug-in folder located under C:\\Packages\\Plugins\\AxReportVmRoleStartupTask.
 -   Change the directory to the Report plug-in folder where you stored the script files.
 -   Using one of the methods listed below, replace the old instance of reporting extensions.
