@@ -8,7 +8,7 @@
     href: get-started/whats-new-10-0-3.md
   - name: What's new or changed in Dynamics 365 for Retail 10.0.2
     href: get-started/whats-new-10-0-2.md
-  - name: What's new ot changed in Dynamics 365 for Retail 10.0.1
+  - name: What's new or changed in Dynamics 365 for Retail 10.0.1
     href: get-started/whats-new-10-0-1.md
   - name: What's new or changed in Dynamics 365 for Retail (April 2019)
     href: get-started/april-whats-new.md
@@ -602,7 +602,7 @@
       href: dev-itpro/extend-metadata.md
     - name: Call the CRT service in offline mode
       href: dev-itpro/call-crt-service-offline.md
-  - name: Commerce runtime (CRT) extensibility
+  - name: Commerce Runtime (CRT) extensibility
     items:
     - name: CRT architecture and configuration
       href: dev-itpro/commerce-runtime-overview.md
