@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.4 (July 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,6 +48,9 @@ For more information, see [Interest distribution for cash accounts](https://go.m
 Similar to the Budget analysis inquiry, you can now use the new **Budget analysis** report to generate a summarized report that compares budgeted amounts to actual expense and revenue activity during a period that you specify. For each account, the report lists budgeted amounts, actual expenses or revenue, encumbrance amounts from purchase orders, and pre-encumbrance amounts from purchase requisitions. Additionally, the report lists the remaining budget amount for each account and fund.
 
 For more information, see [Budget analysis report](https://go.microsoft.com/fwlink/?linkid=2087447).
+
+## Regulatory updates
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ## Additional resources
 
