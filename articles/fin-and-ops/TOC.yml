@@ -2064,37 +2064,37 @@
             href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
           - name: Customer payment refunds
             href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
-       - name: Direct tax transaction
-         items:
-         - name: Include GST when calculating tax deductions
-           href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-         - name: Include GST when calculating tax collections
-           href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-       - name: Tax amount adjustment
-         href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
-       - name: Rule-based tax settlement
-         href: ../financials/localizations/apac-ind-GST-tax-settlement.md
-       - name: Create a tax journal
-         href: ../financials/localizations/apac-ind-GST-tax-journal.md
-       - name: Generate the GSTR report data for tax returns
-         href: ../financials/localizations/apac-ind-GST-tax-returns.md
-       - name: Tax inquiry
-         href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
-       - name: Deployment guidelines for cash registers
-         href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-       - name: Tax engine overview
-         href: ../financials/general-ledger/tax-engine.md
-         items:     
-         - name: Import configuration
-           href: ../financials/general-ledger/tax-engine-import-configuration.md
-         - name: Tax engine applicability
-           href: ../financials/general-ledger/tax-engine-applicability.md
-         - name: Tax engine integration
-           href: ../financials/general-ledger/tax-engine-integration.md
-         - name: Extending the Tax engine
-           href: ../financials/general-ledger/extend-tax-engine-configurations.md
-       - name: Tax thresholds FAQ
-         href: ../financials/localizations/apac-ind-tax-thresholds.md          
+        - name: Direct tax transaction
+          items:
+          - name: Include GST when calculating tax deductions
+            href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+          - name: Include GST when calculating tax collections
+            href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+        - name: Tax amount adjustment
+          href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
+        - name: Rule-based tax settlement
+          href: ../financials/localizations/apac-ind-GST-tax-settlement.md
+        - name: Create a tax journal
+          href: ../financials/localizations/apac-ind-GST-tax-journal.md
+        - name: Generate the GSTR report data for tax returns
+          href: ../financials/localizations/apac-ind-GST-tax-returns.md
+        - name: Tax inquiry
+          href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
+        - name: Deployment guidelines for cash registers
+          href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+        - name: Tax engine overview
+          href: ../financials/general-ledger/tax-engine.md
+          items:     
+          - name: Import configuration
+            href: ../financials/general-ledger/tax-engine-import-configuration.md
+          - name: Tax engine applicability
+            href: ../financials/general-ledger/tax-engine-applicability.md
+          - name: Tax engine integration
+            href: ../financials/general-ledger/tax-engine-integration.md
+          - name: Extending the Tax engine
+            href: ../financials/general-ledger/extend-tax-engine-configurations.md
+        - name: Tax thresholds FAQ
+          href: ../financials/localizations/apac-ind-tax-thresholds.md          
       - name: Italy
         href: ../financials/localizations/italy.md
         items:
