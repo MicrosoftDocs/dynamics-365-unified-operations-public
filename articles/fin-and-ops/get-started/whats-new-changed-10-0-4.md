@@ -49,6 +49,9 @@ Similar to the Budget analysis inquiry, you can now use the new **Budget analysi
 
 For more information, see [Budget analysis report](https://go.microsoft.com/fwlink/?linkid=2087447).
 
+## Regulatory updates
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+
 ## Additional resources
 
 ### Bug fixes
