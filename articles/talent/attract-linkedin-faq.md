@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 LinkedIn is the world's largest online professional network. Microsoft Dynamics for Talent: Attract integrates with LinkedIn to give you access to the world's top talent. Attract allows you to post jobs directly into LinkedIn, and it also allows you to draw candidate information from LinkedIn into Attract.
 
-# Frequently asked questions for recruiters and hiring managers
+# For recruiters and hiring managers
 
 Here are answers to frequently asked questions about how to use Attract and LinkedIn together.
 
@@ -50,9 +50,9 @@ After you create a job in Attract, all you need to do is select the **Post Now**
 
 ## Can I get candidate information from LinkedIn into Attract?
 
-Yes! If you see a good candidate in LinkedIn, you can easily port that candidate's information into Attract. For more information, see [Source candidates with LinkedIn Recruiter](attract-linked-in-recruiter.md).
+Yes! If you see a good candidate in LinkedIn, you can easily port that candidate's information into Attract. For more information, see [Source candidates with LinkedIn Recruiter](attract-linkedin-recruiter.md).
 
-# Frequently asked questions for admins and developers
+# For admins and developers
 
 Here are answers to frequently asked questions about how to configure integration between Attract and LinkedIn.
 
@@ -94,7 +94,7 @@ The following table lists each option for posting jobs to LinkedIn, along with t
 | How often does LinkedIn post jobs? | Once per day | Once per day | Multiple times per day, as defined by API |
 | Recommended by LinkedIn? | No | Yes | No |
 | What do I need? | Purchase of Attract | Job wrapping contract with LinkedIn and purchase of Premium Job Slots | API agreement with LinkedIn | 
-| Where can I find more information? | ./attract-admin-linkedin.md | [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/en-us/linkedin/talent/recruiter-system-connect) |
+| Where can I find more information? | [Set up integration with LinkedIn](./attract-admin-linkedin.md) | [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/en-us/linkedin/talent/recruiter-system-connect) |
 
 >[!NOTE]
 >You don't need a LinkedIn Recruiter System Connect license to post jobs to LinkedIn with Attract.
