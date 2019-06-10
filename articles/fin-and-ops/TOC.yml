@@ -2038,7 +2038,7 @@
             href: ../financials/localizations/apac-ind-GST-return-order-form.md
         - name: Foreign transactions
           items:
-          - name:Import goods that have GST 
+          - name: Import goods that have GST 
             href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
           - name: Import services that have GST
             href: ../financials/localizations/apac-ind-import-services-gst.md
