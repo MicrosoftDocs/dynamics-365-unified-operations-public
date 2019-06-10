@@ -113,7 +113,7 @@ When you schedule master planning, don't schedule any other batch job at the sam
 
 The system can collect more information about the tasks that run during master planning. To have the system collect this information, turn on the **Track processing time** setting in the **Master planning run** dialog box. The information that is collected can help you find bottlenecks in the run. For example, when the **Number of tasks in helper task bundle** parameter is set to **1**, you can identify the item that has the longest running time. You can also compare the running times for the various threads that have a status of **Coverage** and compare the duration for each task.
 
-To review the master planning runs of your system, follow these steps.
+To review the master planning runs of your system, followo one of these steps.
 
 - In the **Master planning** workspace, select a master plan in the drop-down field, and then, on the **Master planning** tile, select **History**. Select a job, select **Inquiries** on the FastTab, and then select **Process task duration**.
 - On the **Master plans** page, select a plan in the left pane, and then select **History** on the FastTab. Select a job, select **Inquiries** on the FastTab, and then select **Process task duration**.
