@@ -111,6 +111,7 @@ If candidates agree to share their LinkedIn profiles with any user in your organ
 
 ## See also
 
+[LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
 [Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
 [Create jobs](./creating-jobs-attract.md)<p></p>
 [Post jobs to external sites from Attract](./posting-jobs-external.md)

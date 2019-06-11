@@ -71,6 +71,8 @@ If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot postin
 
 ## See also
 
+[LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
 [Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
 [Create jobs](./creating-jobs-attract.md)<p></p>
+[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
 [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md)

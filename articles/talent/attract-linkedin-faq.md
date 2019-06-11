@@ -42,7 +42,7 @@ Here are answers to frequently asked questions about how to use Attract and Link
 
 ## What do I need before I can post jobs to LinkedIn?
 
-Your admin needs to [configure LinkedIn configuration in Attract](./attract-admin-linkedin.md). After that, you're ready to go!
+Your admin needs to [configure LinkedIn integration in Attract](./attract-admin-linkedin.md). After that, you're ready to go!
 
 ## How do I post jobs to LinkedIn from Attract?
 
@@ -99,3 +99,8 @@ The following table lists each option for posting jobs to LinkedIn, along with t
 >[!NOTE]
 >You don't need a LinkedIn Recruiter System Connect license to post jobs to LinkedIn with Attract.
 
+## See also
+
+[Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
+[Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)<p></p>
+[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)

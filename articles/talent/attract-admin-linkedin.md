@@ -125,8 +125,12 @@ You can allow candidates to apply to your jobs with their LinkedIn profiles.
 
 ## See also
 
+[LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
 [Post jobs to external sites from Attract](./posting-jobs-external.md)<p></p>
 [Source candidates with LinkedIn Recruiter](./attract-linked-in-recruiter.md)<p></p>
 [Create jobs](./creating-jobs-attract.md)<p></p>
 [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+
 
