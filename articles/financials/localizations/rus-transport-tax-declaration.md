@@ -89,7 +89,7 @@ Here is an overview of the steps for setting up transport tax:
 4.  [Set up tax allowances](#set-up-tax-allowances)
 
 5.  [Assign tax allowances to a sales tax code as a reduction of the tax rate
-    and a reduction of the tax amount](#section)
+   -and-a-reduction-of-the-tax-amount](#assign-tax-allowances-to-a-sales-tax-code-as-a-reduction-of-the-tax-rate-and-a-reduction-of-the tax amount)
 
 6.  [Set up transport tax increasing factor groups and
     values](#set-up-transport-tax-increasing-factor-groups-and-values)
