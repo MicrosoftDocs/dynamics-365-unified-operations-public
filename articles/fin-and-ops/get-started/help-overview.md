@@ -5,7 +5,7 @@ title: Finance and Operations Help system
 description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
