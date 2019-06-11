@@ -303,7 +303,7 @@ When a company is ready to interoperate in real life with MTD for VAT, it must c
 
 To work with MTD for VAT, the VAT registration number of your legal entity must be defined in the registration ID. For more information, see [Registration IDs](emea-registration-ids.md). 
 
-1. Create a registration type that you will use for VAT registration numbers. For more information, see [Registration type](emea-registration-ids#registration-type-creation.md). 
+1. Create a registration type that you will use for VAT registration numbers. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation). 
 2. Associate the registration type with a **VAT ID**. For more information, see [Registration category](emea-registration-ids.md#supported-registration-categories).
 3. Go to **Organization administration** \> **Global Address Book** \> **Legal entities**, and on the Action Pane, select **Registration ID**.
 4. Define the VAT registration number as a **Registration ID** which is associated with the **VAT ID**” registration category.
