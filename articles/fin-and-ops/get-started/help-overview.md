@@ -104,7 +104,12 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement. After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.
 
-To get started, click the **Edit** (pencil) button on a topic, or go to our repo at <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>.
+To get started, click the **Edit** (pencil) button on a topic, or go to our repo at <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. The following video shows how you can contribute to our documentation.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
+
+The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the [What's new in Dynamics 365 playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9) available on YouTube.
+
 
 For more information, please refer to our contributor's guide: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
 
