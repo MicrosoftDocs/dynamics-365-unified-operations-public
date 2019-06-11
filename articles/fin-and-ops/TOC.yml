@@ -2006,82 +2006,82 @@
               href: ../financials/localizations/apac-ind-GST-purchase-return-order.md
             - name: Vendor advance payments where there are reverse charges
               href: ../financials/localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
-        - name: Sales transaction
-          items:
-          - name: Sales of taxable goods to consumers
-            href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-consumer.md
-          - name: Sales to registered customers
-            href: ../financials/localizations/apac-ind-GST-sell-registered-customer.md
-          - name: Free text invoices
-            href: ../financials/localizations/apac-ind-GST-free-text-invoices.md
-          - name: Sales of taxable goods where there is a reverse charge
-            href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
-          - name: Sales of exempted items
-            href: ../financials/localizations/apac-ind-GST-sales-exempted-item.md
-          - name: Sales of zero-rated goods
-            href: ../financials/localizations/apac-ind-GST-sell-zero-rated-goods.md
-          - name: Sales of non-GST goods
-            href: ../financials/localizations/apac-ind-GST-sell-non-gst-goods.md
-          - name: Sales of taxable goods that have a discount and a provisional assessment
-            href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
-          - name: Sales of taxable goods that have tax on shipping charges
-            href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
-          - name: Sales where prices include and exclude tax
-            href: ../financials/localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
-          - name: Create a debit note against a sales invoice
-            href: ../financials/localizations/apac-ind-GST-debit-note-against-sales-invoice.md
-          - name: Create a credit note against a sales invoice
-            href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
-          - name: Sales invoices that are split based on delivery addresses
-            href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
-          - name: Return oders
-            href: ../financials/localizations/apac-ind-GST-return-order-form.md
-        - name: Foreign transactions
-          items:
-          - name: Import goods that have GST 
-            href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
-          - name: Import services that have GST
-            href: ../financials/localizations/apac-ind-import-services-gst.md
-          - name: Export goods that have zero-rated tax
-            href: ../financials/localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-          - name: Export services that have zero-rated tax
-            href: ../financials/localizations/apac-ind-GST-export-services-zero-rated-tax.md
-        - name: Stock transaction
-          items:
-          - name: Stock transfer orders that have tax on the transfer price
-            href: ../financials/localizations/apac-ind-GST-stock-transfer-transactions.md
-        - name: Customer payment transaction
-          items:
-          - name: Advance payments that include tax
-            href: ../financials/localizations/apac-ind-GST-advance-payment-includes-tax.md
-          - name: Advance payments that are settled during invoice posting
-            href: ../financials/localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
-          - name: Manual settlement of an advance payment and invoice that include tax
-            href: ../financials/localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
-          - name: Payment of invoices that include tax
-            href: ../financials/localizations/apac-ind-GST-pay-invoice-includes-tax.md
-          - name: Revise advance payments that include tax
-            href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
-          - name: Customer payment refunds
-            href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
-        - name: Direct tax transaction
-          items:
-          - name: Include GST when calculating tax deductions
-            href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-          - name: Include GST when calculating tax collections
-            href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-        - name: Tax amount adjustment
-          href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
-        - name: Rule-based tax settlement
-          href: ../financials/localizations/apac-ind-GST-tax-settlement.md
-        - name: Create a tax journal
-          href: ../financials/localizations/apac-ind-GST-tax-journal.md
-        - name: Generate the GSTR report data for tax returns
-          href: ../financials/localizations/apac-ind-GST-tax-returns.md
-        - name: Tax inquiry
-          href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
-        - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+          - name: Sales transaction
+            items:
+            - name: Sales of taxable goods to consumers
+              href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+            - name: Sales to registered customers
+              href: ../financials/localizations/apac-ind-GST-sell-registered-customer.md
+            - name: Free text invoices
+              href: ../financials/localizations/apac-ind-GST-free-text-invoices.md
+            - name: Sales of taxable goods where there is a reverse charge
+              href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+            - name: Sales of exempted items
+              href: ../financials/localizations/apac-ind-GST-sales-exempted-item.md
+            - name: Sales of zero-rated goods
+              href: ../financials/localizations/apac-ind-GST-sell-zero-rated-goods.md
+            - name: Sales of non-GST goods
+              href: ../financials/localizations/apac-ind-GST-sell-non-gst-goods.md
+            - name: Sales of taxable goods that have a discount and a provisional assessment
+              href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+            - name: Sales of taxable goods that have tax on shipping charges
+              href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+            - name: Sales where prices include and exclude tax
+              href: ../financials/localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+            - name: Create a debit note against a sales invoice
+              href: ../financials/localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+            - name: Create a credit note against a sales invoice
+              href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+            - name: Sales invoices that are split based on delivery addresses
+              href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+            - name: Return oders
+              href: ../financials/localizations/apac-ind-GST-return-order-form.md
+          - name: Foreign transactions
+            items:
+            - name: Import goods that have GST 
+              href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
+            - name: Import services that have GST
+              href: ../financials/localizations/apac-ind-import-services-gst.md
+            - name: Export goods that have zero-rated tax
+              href: ../financials/localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+            - name: Export services that have zero-rated tax
+              href: ../financials/localizations/apac-ind-GST-export-services-zero-rated-tax.md
+          - name: Stock transaction
+            items:
+            - name: Stock transfer orders that have tax on the transfer price
+              href: ../financials/localizations/apac-ind-GST-stock-transfer-transactions.md
+          - name: Customer payment transaction
+            items:
+            - name: Advance payments that include tax
+              href: ../financials/localizations/apac-ind-GST-advance-payment-includes-tax.md
+            - name: Advance payments that are settled during invoice posting
+              href: ../financials/localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+            - name: Manual settlement of an advance payment and invoice that include tax
+              href: ../financials/localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+            - name: Payment of invoices that include tax
+              href: ../financials/localizations/apac-ind-GST-pay-invoice-includes-tax.md
+            - name: Revise advance payments that include tax
+              href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
+            - name: Customer payment refunds
+              href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
+          - name: Direct tax transaction
+            items:
+            - name: Include GST when calculating tax deductions
+              href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+            - name: Include GST when calculating tax collections
+              href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+          - name: Tax amount adjustment
+            href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
+          - name: Rule-based tax settlement
+            href: ../financials/localizations/apac-ind-GST-tax-settlement.md
+          - name: Create a tax journal
+            href: ../financials/localizations/apac-ind-GST-tax-journal.md
+          - name: Generate the GSTR report data for tax returns
+            href: ../financials/localizations/apac-ind-GST-tax-returns.md
+          - name: Tax inquiry
+            href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
+          - name: Deployment guidelines for cash registers
+            href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
           items:     
