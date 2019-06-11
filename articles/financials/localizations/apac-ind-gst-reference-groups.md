@@ -5,7 +5,7 @@ title: Set up GST reference number groups
 description: This topic explains how to set up reference number groups for Goods and Services Tax (GST) in Microsoft Dynamics 365 for Finance and Operations. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/06/2018
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
