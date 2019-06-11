@@ -5,7 +5,7 @@ title: Acceptance test library
 description: This topic provides information about the Acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 The Acceptance test library (ATL) is an X++ test library that offers the following benefits:
 
@@ -47,6 +46,9 @@ The Acceptance test library (ATL) is an X++ test library that offers the followi
 ## Example of a test that is written in ATL
 
 ```
+// Create the data root node
+var data = AtlDataRootNode::construct();
+
 // Get a reference to a well-known warehouse 
 var warehouse = data.invent().warehouses().default();
  

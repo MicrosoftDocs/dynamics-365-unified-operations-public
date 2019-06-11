@@ -5,7 +5,7 @@ title: One Version service updates overview
 description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: meeram
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 24
 
 The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later**. This is applicable for cloud releases only.
 
-- [Standard and First release service updates](../../fin-and-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
+- [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
 - [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This topic provides information about the service updates, availability, and end of service.
 - [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md) – This topic answers questions about the update process, tools, planning, and Retail service updates.
 
@@ -68,7 +68,7 @@ Additionally, a notification email will be sent five days in advance, and a noti
 
 After notifications have been sent, Microsoft will apply the update (**auto update**) during the designated maintenance window. After this operation is completed, a notification email will be sent to indicate the status of the update. Customers will also be able to **self-update** by using the standard update experience in LCS. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). 
 
-Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments early. To sign up for the First release program, go to [http://experience.dynamics.com](http://experience.dynamics.com).
+Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments early. To sign up for the First release program, go to [https://experience.dynamics.com](https://experience.dynamics.com).
 
 Customers will also be able to **self-update** by using the standard update experience in LCS, as shown in the following illustration.
 

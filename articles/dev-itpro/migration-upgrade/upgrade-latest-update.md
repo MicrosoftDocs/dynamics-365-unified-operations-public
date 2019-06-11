@@ -49,7 +49,7 @@ For information about One Version service updates, see the [One Version service 
 - **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade.
 
 ## Paths to One Version
-<img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" />
+<img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />
 There are three primary paths to get to the latest version of Finance and Operations.  Each path is referenced below with a link to detailed steps.
 
 ### Self-service upgrade

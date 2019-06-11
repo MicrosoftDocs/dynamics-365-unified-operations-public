@@ -96,7 +96,7 @@ All new updates are intended to be runtime backward-compatible. This compatibili
 
 Runtime compatibility also means that changes to the platform will be backward-compatible with customizations that were compiled on an earlier platform. These changes include changes to the compiler.
 
-The compatibility is only backwards. A customization can be compiled on a newer platform and then deployed in a customer environment that hasn't yet been updated to that version or a later version.
+Binary compatibility is backwards only. You can compile a customization on an older application and platform, and deploy it to a customer environment that has been updated to a later version. You cannot deploy code compiled on a later version than the one running on the environment you deploy to.
 
 ### Design-time compatibility
 

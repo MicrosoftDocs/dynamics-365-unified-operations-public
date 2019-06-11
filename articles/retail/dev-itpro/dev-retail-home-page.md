@@ -135,7 +135,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 
 ## Payment connectors
 - [Payment integration with a payment terminal](end-to-end-payment-extension.md)
-- [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 

@@ -67,7 +67,7 @@ To obtain support for Retail, use the resources in the following table. These re
 <li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
 <li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit a new Incident</strong> to submit the issue.</li>
 </ul>
-<blockquote>[!NOTE] Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</blockquote>
+<p><strong>Note:</strong> Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</p>
 </td>
 </tr>
 <tr>
@@ -90,4 +90,4 @@ For technical questions that are related to signing in to and accessing Customer
 </tbody>
 </table>
 
-For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://dynamics.microsoft.com/en-us/support/).
+For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://dynamics.microsoft.com/support/).

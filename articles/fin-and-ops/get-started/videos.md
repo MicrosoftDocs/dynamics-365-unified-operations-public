@@ -5,7 +5,7 @@ title: Videos for Finance and Operations
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -69,6 +69,11 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+- [Expense experience](https://youtu.be/Ocy-MsTvEE0)
+
+#### Help system
+
+- [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg)
 
 #### Intelligence
 

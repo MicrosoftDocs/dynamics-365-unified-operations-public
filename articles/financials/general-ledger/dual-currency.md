@@ -5,7 +5,7 @@ title: Dual currency
 description: This topic provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018 
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,6 +66,9 @@ For various reports and inquiries, logic was also added to suppress the reportin
 ## Financial journals
 
 The financial journals, such as the general journal and vendor invoice journal, have been updated so that they include additional information about the reporting currency. Totals for the voucher and journal are now shown in the reporting currency. Additionally, information about the reporting currency's exchange rate now appears on the **General** tab of the journal lines. Therefore, you can override the reporting currency's exchange rate when you enter transactions.
+
+## Vendor invoices, sales orders, and sales agreements
+Vendor invoices, sales orders, and sales agreements have been updated to include a fixed exchange rate for the reporting currency. A fixed exchange rate can be defined for both the accounting currency and reporting currency when the transaction currency is different. When the accounting currency and reporting currency are the same, the fixed exchange rate will be kept in sync by using the accounting currency’s fixed rate as the reporting currency’s fixed rate. The reporting currency fixed exchange rate cannot be changed for this configuration. When the accounting currency and reporting currency differ, a fixed exchange rate can be defined for both the accounting currency and reporting currency during transaction entry. If the reporting currency has not been defined on the ledger, the **Reporting currency fixed exchange rate** field is not enabled, and no reporting currency amount is calculated.
 
 ## Module changes
 

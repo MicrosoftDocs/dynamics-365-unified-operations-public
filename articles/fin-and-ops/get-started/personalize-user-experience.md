@@ -3,9 +3,9 @@
 
 title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
-author: TLeforMicrosoft
+author: jasongre
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Personalize the user experience
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 
@@ -80,7 +79,7 @@ Some of the most typical and important changes that can be made to a page are av
 
 Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this method of personalization, the element's property window appears.
 
-[![Personalizing an element's properties](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
+![Personalizing an element's properties](./media/personalization-element-properties.png)
 
 You can use the property window to personalize an element in the following ways:
 
@@ -175,6 +174,6 @@ Users who have administrator privileges can also manage personalizations for oth
 
 When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, you use personalization to hide a column for the Batch number inventory dimension, but the column appears the next time that the page is opened. This behavior occurs because the **Dimension display** settings control the inventory dimension columns that are shown.
 
-The **Dimension display** settings apply across all pages and override any personalized setup of inventory dimension fields on individual pages.
+The **Dimension display** settings apply across all pages and override any personalized setup of inventory dimension fields on each individual page.
 
-As a result, in the preceding example, if you don't want the column for the Batch number inventory dimension to appear, you must clear that dimension as part of the **Display dimensions** option for the table. Eventually, this change will apply not only on one specific page but across all pages.
+As a result, in the preceding example, if you don't want the column for the Batch number inventory dimension to appear on a page, you must clear that dimension as part of the **Display dimensions** option for that page.

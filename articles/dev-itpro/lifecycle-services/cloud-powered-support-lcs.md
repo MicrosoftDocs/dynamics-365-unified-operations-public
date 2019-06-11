@@ -95,11 +95,11 @@ To link your contract ID/access ID to your account, complete the following steps
 1. From within a project, select **Support** from the main menu, and then select **Manage Support plans**. 
 2. Select **Add contract**.
 
-   ![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+   ![Add contract](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 3. Enter your access ID and your password or contract ID, and then select **Add contract**.
 
-   ![](media/4abba1127549ef484a58daf51609d924.png)
+   ![Add contract credentials](media/4abba1127549ef484a58daf51609d924.png)
 
 ### PartnerSource Business Center account
 The following support plan incidents can be used as part of your PartnerSource Business Center (PSBC) account if they exist: 
@@ -113,7 +113,7 @@ The following support plan incidents can be used as part of your PartnerSource B
 
 If you do not find the PartnerSource Business Center account, ensure that your sign in is added as a professional in your organization in PSBC. Make sure that you are signing in with the same Microsoft or work account login. This account is only applicable in an on-premises project.
 
-![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+![Add contract](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 ### Sign-in specfic options
 The following incidents and support benefits will appear based on your sign in, if applicable:
@@ -139,7 +139,7 @@ The following entitlements can be added by linking a subscription number and con
 
 To add, select **Add a Software Assurance plan** when you create the support incident. Enter the subscription number and the contact email, and then click **Continue**.
 
-![](media/cd8f65a32c30722ea687dfbc5cc30874.png)
+![Software Assurance plan](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## Report production outage
 For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).

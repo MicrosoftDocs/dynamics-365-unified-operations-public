@@ -6,7 +6,7 @@ title: Fiscal registration service integration sample for Czech Republic
 description: This topic provides an overview of the fiscal integration sample for Czech Republic.
 author: josaw
 manager: annbe
-ms.date: 04/01/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: 10.0.2
 ---
 # Fiscal registration service integration sample for Czech Republic
 
-[!include[banner](../includes/preview-banner.md)]
+
 [!include[banner](../includes/banner.md)]
 
 ## Introduction
 
-To meet local fiscal requirements for cash registers in the Czech Republic, the Microsoft Dynamics 365 for Retail functionality for the Czech Republic includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) solution from [EFSTA](http://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service ensures Electronic Registration of Sales (EET - Elektronická evidence tržeb), that is, the online transmission of the sales data to a fiscal web service of tax authorities.
+To meet local fiscal requirements for cash registers in the Czech Republic, the Microsoft Dynamics 365 for Retail functionality for the Czech Republic includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) solution from [EFSTA](https://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service ensures Electronic Registration of Sales (EET - Elektronická evidence tržeb), that is, the online transmission of the sales data to a fiscal web service of tax authorities.
 
 The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
-Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](http://efsta.org/kontakt/).
+Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://efsta.org/kontakt/).
 
 ## Scenarios
 
@@ -58,7 +58,7 @@ The following scenarios are covered by the fiscal registration service integrati
     - Create a customer order and register a deposit for the order.
     - Edit a customer order and override the deposit for the order.
     - Cancel a customer order and refund the deposit for the order.
-    
+
 - Error handling, such as the following options.
 
     - Retry fiscal registration if a retry is possible, such as if the fiscal registration service isn't available, isn't ready, or isn't responding.
@@ -72,15 +72,15 @@ The following default data mapping is included in the fiscal document provider c
 
 - Value-added tax (VAT) rates mapping:
 
-  *A: 21.00; B: 15.00; C: 10.00; Z: 0.00*
+    *A: 21.00; B: 15.00; C: 10.00; Z: 0.00*
 
 - Default VAT group mapping. Any VAT amounts that cannot be mapped to one of the predetermined VAT groups will be attributed to the default (basic) VAT group:
 
-  *A*
+    *A*
 
 - Deposit VAT group mapping. Customer deposit amounts and customer order deposit amounts will be attributed to the deposit VAT group:
 
-  *Z*
+    *Z*
 
 ### Gift cards
 
@@ -138,10 +138,11 @@ Set up POS functionality profiles.
 
 ### Set up registration numbers
 
-1. Go to **Organization administration > Global address book > Registration types > Registration types.** Create a new registration type. Specify the **Country/region** field to **CZE** (Czech Republic) and make it restricted to Organization.
-2. Go to **Organization administration > Global address book > Registration types > Registration categories.** Create a new registration category. Select the registration type from the previous step and set the **Registration category** to **Business Premise ID**.
-3. Go to **Organization administration > Organizations > Operating units.** For each store located in the Czech Republic, select the unit related to the store. On the **Address** FastTab expand the **More options** drop-down list and select **Advanced**. 
+1. Go to **Organization administration \> Global address book \> Registration types \> Registration types**. Create a new registration type. Specify the **Country/region** field to **CZE** (Czech Republic) and make it restricted to Organization.
+2. Go to **Organization administration \> Global address book \> Registration types \> Registration categories**. Create a new registration category. Select the registration type from the previous step and set the **Registration category** to **Business Premise ID**.
+3. Go to **Organization administration \> Organizations \> Operating units**. For each store located in the Czech Republic, select the unit related to the store. On the **Address** FastTab expand the **More options** drop-down list and select **Advanced**. 
 4. On the opened **Manage addresses** page you must specify following setting.
+
     - On the **Address** FastTab set the **Country/region** field to **CZE**.
     - On the **Registration ID** FastTab create a new record. Select the registration type created earlier and set the registration number.
 
@@ -153,14 +154,14 @@ On the **Language text** page, add the following records for the labels of the c
 
 Add the following POS labels to the **POS** section of **Language text** from the table:
 
-| Language ID | Text ID | Text                      |
-|-------------|---------|---------------------------|
-| en-US       | 900001  | ID provozovny/pokladny    |
-| en-US       | 900002  | BKP                       |
-| en-US       | 900003  | FIK                       |
-| en-US       | 900004  | PKP                       |
-| en-US       | 900005  | Info                      |
-| en-US       | 900006  | Sequence number           |
+| Language ID | Text ID | Text                   |
+|-------------|---------|------------------------|
+| en-US       | 900001  | ID provozovny/pokladny |
+| en-US       | 900002  | BKP                    |
+| en-US       | 900003  | FIK                    |
+| en-US       | 900004  | PKP                    |
+| en-US       | 900005  | Info                   |
+| en-US       | 900006  | Sequence number        |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page:
 
@@ -187,16 +188,15 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 - **Lines:** Add the following fields.
 
-    - **Item name**.
-    - **Qty**.
-    - **Total price with tax**.
+    - **Item name**
+    - **Qty**
+    - **Total price with tax**
 
 - **Footer:** Add the following fields.
 
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
-
     - **ID provozovny/pokladny**: this field prints the identifiers of the business premises and the cash register.
-    - **BKP**: this field prints the taxpayer’s security code that is assigned by the fiscal registration service.
+    - **BKP**: this field prints the taxpayer's security code that is assigned by the fiscal registration service.
     - **FIK**: this field prints the fiscal identification code of the transaction that is assigned by the web-service of tax authorities in case of successful online registration.
     - **PKP**: this field prints the taxpayer's signature code that is generated by the fiscal registration service in case of offline registration.
     - **Info**: this field prints the additional information from the fiscal registration service.
@@ -388,7 +388,7 @@ The purpose of this file is to enable settings for the document provider to be c
 
 - VAT rates mapping
 - Default VAT group
-- Deposit VAT group.
+- Deposit VAT group
 
 ### Hardware station extension design
 

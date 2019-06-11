@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/01/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -106,7 +106,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                                  | Description |
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
-| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time for the **Exchange** mail provider. But the on-premises Exchange servers work fine via the **SMTP** mail provider. |
+| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time for the **Exchange** mail provider. |
 | Use the Microsoft Dynamics 365 for Finance and Operations email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
@@ -263,6 +263,11 @@ There are a few standard steps that can help you troubleshoot the configuration 
 4. In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
 5. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
 6. If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
+
+## Troubleshoot the Exchange mail provider
+
+The **Email parameters** page allows an administrator to select Exchange as an interactive email provider and as the Batch email provider. The Exchange mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
+If troubleshooting is needed, ensure that the current user's account can be signed into and that emails can be sent from that account to the intended recipients.
 
 ## Other notes
 
