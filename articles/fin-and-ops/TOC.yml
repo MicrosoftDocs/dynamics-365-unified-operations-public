@@ -2519,6 +2519,10 @@
             href: ../financials/localizations/rus-accounting-reporting.md
           - name: Assessed tax declaration
             href: ../financials/localizations/rus-assessed-tax-declaration.md
+          - name: Transport tax declaration
+            href: ../financials/localizations/rus-transport-tax-declaration.md
+            - name: Land tax declaration
+            href: ../financials/localizations/rus-land-tax-declaration.md
         - name: Organization administration
           items:    
           - name: Tax registration info related to address
