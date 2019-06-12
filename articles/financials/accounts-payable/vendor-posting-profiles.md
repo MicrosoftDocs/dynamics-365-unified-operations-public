@@ -87,7 +87,7 @@ If you want all vendor transactions to have the same posting profile, set up onl
 </tr>
 <tr class="odd">
 <td><strong>Summary account</strong></td>
-<td>Select the ledger account that will be used as the summary account for the vendors that the posting profile relates to. The "Do not allow manual entry" parameter for this main account will be marked. If you subsequently remove this account from the posting profile, validate the "Do not allow manual entry" setting on the Main accounts page.
+<td>Select the ledger account that will be used as the summary account for the vendors that the posting profile relates to. The **Do not allow manual entry** parameter for this main account will be marked. If you subsequently remove this account from the posting profile, validate the **Do not allow manual entry** setting on the Main accounts page.
 <div class="alert">
 <table>
 <thead>
