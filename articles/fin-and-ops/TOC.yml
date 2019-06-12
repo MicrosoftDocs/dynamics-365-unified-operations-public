@@ -2519,6 +2519,10 @@
             href: ../financials/localizations/rus-accounting-reporting.md
           - name: Assessed tax declaration
             href: ../financials/localizations/rus-assessed-tax-declaration.md
+          - name: Transport tax declaration
+            href: ../financials/localizations/rus-transport-tax-declaration.md
+          - name: Land tax declaration
+            href: ../financials/localizations/rus-land-tax-declaration.md
         - name: Organization administration
           items:    
           - name: Tax registration info related to address
@@ -2939,6 +2943,8 @@
         href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
       - name: Create custom designs for business documents
         href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
+      - name: Preview PDF documents with an embedded viewer
+        href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
     - name: Electronic reporting
       href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
       items:

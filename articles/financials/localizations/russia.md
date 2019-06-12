@@ -92,6 +92,8 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Configure financial reports in Excel](rus-excel-financial-report.md)
 - [Accounting reporting in electronic format](rus-accounting-reporting.md)
 - [Assessed tax declaration](rus-assessed-tax-declaration.md)
+- [Transport tax declaration](rus-transport-tax-declaration.md)
+- [Land tax declaration](rus-land-tax-declaration.md)
 
 ## Organization administration
 
