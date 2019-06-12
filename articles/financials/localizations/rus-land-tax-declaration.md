@@ -1,5 +1,35 @@
-Land tax declaration
-====================
+---
+# required metadata
+title: Land tax declaration 
+description: This topic provides information about the land tax declaration for Russia.
+author: anasyash
+manager: AnnBe
+ms.date: 06/12/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2019-01-04
+ms.dyn365.ops.version: 10.0.1
+
+---
+
+# Land tax declaration 
+
+[!include [banner](../includes/banner.md)]
+
 
 According to the tax code of the Russian Federation, land assets are subject to
 land tax. The tax period for land tax is one year. At the end of the tax period,
