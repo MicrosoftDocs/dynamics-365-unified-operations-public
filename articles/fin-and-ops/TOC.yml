@@ -3262,6 +3262,8 @@
           href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
         - name: Explosion of a BOM version
           href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+      - name: Negative days and dynamic negative days
+        href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
       - name: Create an intercompany plan
         href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
       - name: View outbound planned intercompany demand
