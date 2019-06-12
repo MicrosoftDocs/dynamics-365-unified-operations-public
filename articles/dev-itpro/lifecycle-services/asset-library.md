@@ -59,7 +59,7 @@ The Asset library supports multiple types of assets. Here are some asset types t
 Every asset that the Asset library supports has multiple scopes. Here are some of the supported asset scopes:
 
 - **Me** – When an asset is uploaded, it's set to the **Me** scope. An asset that has the **Me** scope is visible only to the person who uploaded the asset.
-- **Project** – When a project is imported from the **Global** scope to another project, it's set to the **Project** scope.
+- **Project** – When an asset is imported from the **Global** scope to another project, it's set to the **Project** scope.
 - **Organization** – When an asset must be shared with multiple users within a tenant, the tenant admin can promote the asset to the **Organization** scope.
 - **Global** – Only Microsoft can upload assets to the **Global** scope. These assets are assets that Microsoft wants to be made publicly available to all LCS projects and users.
 
