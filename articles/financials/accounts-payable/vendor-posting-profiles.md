@@ -87,21 +87,9 @@ If you want all vendor transactions to have the same posting profile, set up onl
 </tr>
 <tr class="odd">
 <td><strong>Summary account</strong></td>
-<td>Select the ledger account that will be used as the summary account for the vendors that the posting profile relates to. The <strong>Do not allow manual entry</strong> parameter for this main account will be marked. If you subsequently remove this account from the posting profile, validate the <strong>Do not allow manual entry</strong> setting on the <strong>Main accounts</strong> page. Note, If the <strong>Use posting definitions</strong> option is selected on the <strong>General ledger parameters</strong> page, the transaction posting definition for vendor invoices is used instead of the summary account. 
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Note" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Note</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>If the <strong>Use posting definitions</strong> option is selected on the <strong>General ledger parameters</strong> page, the transaction posting definition for vendor invoices is used instead of the summary account.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<td>Select the ledger account that will be used as the summary account for the vendors that the posting profile relates to. The <strong>Do not allow manual entry</strong> parameter for this main account will be marked. If you subsequently remove this account from the posting profile, validate the <strong>Do not allow manual entry</strong> setting on the <strong>Main accounts</strong> page. 
+<p><strong>Note:</strong> If the <strong>Use posting definitions</strong> option is selected on the <strong>General ledger parameters</strong> page, the transaction posting definition for vendor invoices is used instead of the summary account.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Settle account</strong></td>
@@ -110,20 +98,8 @@ If you want all vendor transactions to have the same posting profile, set up onl
 <tr class="odd">
 <td><strong>Sales tax prepayments</strong></td>
 <td>Select the account for sales tax payments that are received in advance.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Note" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Note</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The posting profile that is used when the payment is marked as a prepayment is selected in the <strong>Posting</strong> profile with <strong>Prepayment journal voucher</strong> field in the <strong>Ledger and sales tax</strong> area on the <strong>Accounts payable parameters</strong> page.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<p><strong>Note:</strong> The posting profile that is used when the payment is marked as a prepayment is selected in the <strong>Posting</strong> profile with <strong>Prepayment journal voucher</strong> field in the <strong>Ledger and sales tax</strong> area on the <strong>Accounts payable parameters</strong> page.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Arrival</strong></td>
