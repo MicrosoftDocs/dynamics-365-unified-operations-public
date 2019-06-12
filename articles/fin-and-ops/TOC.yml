@@ -2943,6 +2943,8 @@
         href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
       - name: Create custom designs for business documents
         href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
+      - name: Preview PDF documents with an embedded viewer
+        href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
     - name: Electronic reporting
       href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
       items:
