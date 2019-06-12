@@ -353,28 +353,28 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution.
 
-![Trace information for executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Trace information for the executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
-## Use external tools to review the execution trace that includes database queries
+## Use external tools to review an execution trace that includes database queries
 
-With the improvements of the ER framework, the generated performance trace in PerfView format offers more details about ER format execution. Starting with the 10.0.4 version, this trace may also include details of executed SQL queries to the application database.
+Because of improvements that have been made to the ER framework, the performance trace that is generated in PerfView format now offers more details about ER format execution. In Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (July 2019), this trace can also include details of executed SQL queries to the application database.
 
 ### Configure user parameters
 
 1. In Finance and Operations, go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
-3. In the **User parameters** dialog box, in the **Execution tracing** section, in the **Execution trace format** field, select the following:
+3. In the **User parameters** dialog box, in the **Execution tracing** section, set the following parameters:
 
-- In the **Execution trace format** field, select **PerfView XML**.
-- In the **Collect query statistics** field, select **Yes**.
-- In the **Trace query** field, select **Yes**.
+    - In the **Execution trace format** field, select **PerfView XML**.
+    - Set the **Collect query statistics** option to **Yes**.
+    - Set the **Trace query** option to **Yes**.
 
-![User parameters dialog box in Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![User parameters dialog box in Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### Run the ER format
 
 Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
 
-Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can use the PerfView performance analysis tool to analyze the details of ER format execution. Now this trace includes the details of SQL database access during the execution of ER format.
+Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution. This trace now includes the details of SQL database access during the execution of the ER format.
 
-![Trace information for executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Trace information for the executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
