@@ -39,7 +39,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 ### Search engine optimization for job posts: 
 
-If **Seach Engine Optimization** is turned on in **Attract Admin settings**, every time a job gets activated and posted or a job post is updated, we will inform the Google Indexing API to crawl the web page and the job should start appearing in Google and other web search results pages. Similarly, when a job gets unposted, the indexing APIs will be updated so that the unposted jobs do not show up search results. For existing jobs to be picked up, please re-post them to the Talent Careers site. 
+If **Search Engine Optimization** is turned on in **Attract Admin settings**, every time a job gets activated and posted or a job post is updated, we will inform the Google Indexing API to crawl the web page and the job should start appearing in Google and other web search results pages. Similarly, when a job gets unposted, the indexing APIs will be updated so that the unposted jobs do not show up search results. For existing jobs to be picked up, please re-post them to the Talent Careers site. 
 **Please note**: there is no defined time frame within which web crawlers will look at job updates to update results on their end.  
 
 ## Coming soon in Attract
@@ -54,7 +54,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2337.
 
-### Platform Upadate 27
+### Platform Update 27
 
 For additional details about Platform update 27, see [Preview features in Dynamics 365 for Finance and Operations platform update 27 (June 2019)]
 https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27
