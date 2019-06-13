@@ -37,6 +37,8 @@ With Dynamics 365 for Talent: Onboard, you can help your new employees perform m
 
 With Onboard, you can quickly create an onboarding guide that will welcome your new talent and make them excited about joining your organization.
 
+[![Onboard - onboarding guide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
+
 To find out how to get and use the Onboard app, see the following articles:
 
 - [Get the Onboard app](./onboard-get-app.md)

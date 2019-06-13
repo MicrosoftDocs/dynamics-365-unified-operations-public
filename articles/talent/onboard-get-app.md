@@ -58,9 +58,14 @@ When you start Onboard for the first time, you're invited to start a tour of the
 To get to the Onboard app:
 
 1. Go to the [Microsoft sign in page](https://portal.office.com/).
+
 2. When prompted, enter your Microsoft 365 email and password.
+
 3. Select the app launcher icon in the upper-left and choose **Dynamics 365**. 
+   [![Onboard - access Dynamics 365](./media/onboard-start-dynamics365.png)](./media/onboard-start-dynamics365.png)
+
 4. Select the **Talent: Onboard** tile.
+   [![Onboard - start Onboard](./media/onboard-start-onboard.png)](./media/onboard-start-onboard.png)
 
 Your first sign in might take a few minutes while the environment initializes.
 
@@ -75,8 +80,10 @@ If you skip the walkthrough and want to access it at a later date, select the He
 If you accepted the default domain name (ending in **onmicrosoft.com**) when signing up with Onboard, you can change it to another domain if you prefer. 
 
 1. Go to the [Microsoft sign in page](https://portal.office.com/).
+
 2. When prompted, enter your Microsoft 365 email and password.
-3. If you see a recommendation to add your own domain under **Recommended for you**, select **View recommendation** and follow the prompts. If you don't see that recommendation, select **Setup** in the menu on the left side, select **Domains** and select either **Add domain** or **Buy domain**. Follow the prompts.
+
+3. If you see a recommendation to add your own domain under **Recommended for you**, select **View recommendation** and follow the prompts. If you don't see that recommendation, select **Show all** in the menu on the left side, select **Setup**, select **Domains**, and then select either **Add domain** or **Buy domain**. Follow the prompts.
 
 ## Next steps
 

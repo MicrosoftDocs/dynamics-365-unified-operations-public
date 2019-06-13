@@ -43,17 +43,23 @@ Dynamics 365 for Talent: Onboard provides you with a variety of templates to get
 
 3. If this is a template from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**. If this is a template from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.
 
+   [![Create template from existing](./media/onboard-save-template.png)](./media/onboard-save-template.png)
+
 ## Create a new onboarding guide template
 
 1. On the left-hand menu, select **Templates**.
 
 2. Under **My templates**, select the **Add** (**+**) tile.
 
+   [![Create a new onboarding template](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)
+
 3. In the **Create a guide template** window, enter a name for your template and then select **Save**.
 
 ## Add or edit an introduction
 
 1. On the **Introduction** tab, enter a title for your guide and enter an opening message. To use the sample text, select **Use this message**. 
+
+   [![Introduction tab in Onboard template](./media/onboard-template-introduction.png)](./media/onboard-template-introduction.png)
 
 2. Use the formatting buttons to call out text as necessary, or to add images or links.
 
