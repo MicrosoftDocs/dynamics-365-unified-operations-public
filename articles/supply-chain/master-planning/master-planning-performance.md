@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # Improve master planning performance
 
+[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic explains the various options that can help you improve the performance of master planning and troubleshoot issues. It includes information about parameters and settings, and about recommended configurations and actions. It also includes a summary of all the important parameters that you should consider when you have long-running master planning jobs.
