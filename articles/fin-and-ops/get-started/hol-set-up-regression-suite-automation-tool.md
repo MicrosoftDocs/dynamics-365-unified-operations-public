@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up and install Regression suite automation tool
+title: Set up and install Regression suite automation tool tutorial
 description: This topic is a tutorial that shows how to set up and install Regression suite automation tool (RSAT).
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Set up and install Regression suite automation tool
+# Set up and install Regression suite automation tool tutorial
 
 [!include [banner](../includes/banner.md)]
 
