@@ -242,9 +242,9 @@
       items:
       - name: Create and automate user acceptance tests
         href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-      - name: Set up and install Regression suite automation tool
+      - name: Set up and install Regression suite automation tool tutorial
         href: get-started/hol-set-up-regression-suite-automation-tool.md
-      - name: Use Regression suite automation tool
+      - name: Use Regression suite automation tool tutorial
         href: get-started/hol-use-regression-suite-automation-tool.md
   - name: Business events
     href: ../dev-itpro/business-events/home-page.md
@@ -2519,6 +2519,10 @@
             href: ../financials/localizations/rus-accounting-reporting.md
           - name: Assessed tax declaration
             href: ../financials/localizations/rus-assessed-tax-declaration.md
+          - name: Transport tax declaration
+            href: ../financials/localizations/rus-transport-tax-declaration.md
+          - name: Land tax declaration
+            href: ../financials/localizations/rus-land-tax-declaration.md
         - name: Organization administration
           items:    
           - name: Tax registration info related to address
@@ -2939,6 +2943,8 @@
         href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
       - name: Create custom designs for business documents
         href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
+      - name: Preview PDF documents with an embedded viewer
+        href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
     - name: Electronic reporting
       href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
       items:
@@ -3215,6 +3221,8 @@
     - name: Master plans
       href: ../supply-chain/master-planning/master-plans.md
       items:
+      - name: Set up master plans
+        href: ../supply-chain/master-planning/master-planning-setup.md
       - name: Coverage settings
         href: ../supply-chain/master-planning/coverage-settings.md
       - name: Define coverage rules for items
@@ -3241,6 +3249,8 @@
         href: ../supply-chain/master-planning/tasks/create-plan-site.md
       - name: Calendars and master planning
         href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+      - name: Improve master planning performance
+        href: ../supply-chain/master-planning/master-planning-performance.md
       - name: Master plans and multisite functionality
         href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
         items:
@@ -3256,6 +3266,8 @@
           href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
         - name: Explosion of a BOM version
           href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+      - name: Negative days and dynamic negative days
+        href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
       - name: Create an intercompany plan
         href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
       - name: View outbound planned intercompany demand
