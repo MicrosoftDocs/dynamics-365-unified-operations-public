@@ -49,15 +49,7 @@ Microsoft Dynamics 365 for Talent: Onboard lets you view the progress of your ne
 
 2. To drill down, select the desire task. Follow up with the new hire as needed. When you've completed the task, mark it as complete by checking the circle next to it.
 
-
-
-
-
-## Next steps
-
-- 
-
-### See also
+## See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/en-us/talent/onboard/)
 - [What's new](./whats-new.md)
