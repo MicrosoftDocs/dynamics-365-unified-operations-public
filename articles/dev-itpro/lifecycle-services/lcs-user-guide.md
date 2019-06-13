@@ -5,7 +5,7 @@ title: Lifecycle Services (LCS) user guide
 description: This topic provides information about the tools that are available in Lifecycle Services (LCS) and when to use them as you move through the phases of your work in LCS.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
