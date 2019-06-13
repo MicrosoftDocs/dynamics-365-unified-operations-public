@@ -154,28 +154,151 @@
       href: onboard-view-status.md
     - name: Create a hiring team in Onboard
       href: onboard-create-team.md
-  - name: Motivate employees
-    items:
-    - name: Compensation plans
-      href: compensation-plans.md
-    - name: Create fixed compensation plans
-      href: create-fixed-compensation-plans.md
-    - name: Create variable compensation plans
-      href: create-variable-compensation-plans.md
-    - name: Process compensation
-      href: process-compensation.md
-    - name: Set up the components of a job
-      href: create-job.md
-  - name: Develop and train employees
-    items:
-    - name: Performance management
-      href: performance-management-overview.md
-    - name: Align workforce skills with business needs
-      href: skills.md
-    - name: Set up training courses
-      href: courses.md
-  - name: Define and manage a benefits program
-    items:
+  - name: Manage your workforce with Core HR
+    items: 
+    - name: Organize your workforce
+      items: 
+      - name: Organize your workforce by using departments, jobs, and positions
+        href: departments-jobs-positions.md
+      - name: Set up the components of a job
+        href: create-job.md
+      - name: Create departments and include them in the department hierarchy
+        href: create-department-add-department-hierarchy.md
+      - name: Set up HR parameters across legal entities
+        href: set-up-hr-parameters-across-legal-entities.md
+      - name: Set up company-specific HR parameters
+        href: set-up-company-specific-hr-parameters.md
+      - name: Personnel actions FAQ
+        href: personnel-actions-faq.md
+      - name: Formalize business processes
+        href: formalize-business-processes.md
+      - name: Use workflows to manage employee information
+        href: workflow-manage-employee-information.md
+      - name: Set up number sequences
+        items:
+        - name: Number sequence overview
+          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Set up number sequences on an individual basis
+          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Set up number sequences by using a wizard
+          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Configure organizations and organizational hierarchies
+        items:
+        - name: Organizations overview
+          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Plan your organizational hierarchy
+          href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Create an organizational hierarchy
+          href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Create a legal entity
+          href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Create an operating unit
+          href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Set up a global address book
+        items:
+        - name: Global address book overview
+          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Plan for the global address book and others
+          href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Configure the global address book
+          href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Address books FAQ
+          href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Configure workflows
+        items:
+        - name: Workflow overview
+          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Workflow elements
+          href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Actions in workflow approval processes
+          href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Create workflows
+          href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+          - name: Configure workflow properties
+            href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure manual tasks
+            href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure automated tasks
+            href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure approval processes
+            href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure approval steps
+            href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure manual decisions
+            href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure conditional decisions
+            href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure parallel activities
+            href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure parallel branches
+            href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+          - name: Configure line-item workflows
+            href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Configure the message processing batch job
+          href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Delegate work items in a workflow
+          href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: View workflow history
+          href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Enable users to receive workflow-related email messages
+          href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Set up alerts
+        items:
+        - name: Alerts overview
+          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Create alert rules
+          href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Batch processing of alerts
+          href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json 
+      - name: Manage cases
+        items:
+        - name: Case management overview
+          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Plan case security, processes, and categories
+          href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Configure document management
+        href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Configure and send email
+        href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Date/time data and time zones
+        href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Set up leave and absence
+      items:
+      - name: Manage leave and absence
+        href: leave-absence-overview.md
+      - name: Leave and absence concepts
+        href: leave-absence-concepts.md
+      - name: Accrue time off based on hours worked
+        href: leave-accrue-hours-worked.md
+      - name: Working time calendars
+        href: working-time-calendars.md
+    - name: Set up compensation plans
+      items:
+      - name: Compensation plans overview
+        href: compensation-plans.md
+      - name: Create fixed compensation plans
+        href: create-fixed-compensation-plans.md
+      - name: Create variable compensation plans
+        href: create-variable-compensation-plans.md
+      - name: Process compensation
+        href: process-compensation.md
+      - name: Set up the components of a job
+        href: create-job.md
+    - name: Develop and train employees
+      items:
+      - name: Performance management
+        href: performance-management-overview.md
+      - name: Align workforce skills with business needs
+        href: skills.md
+      - name: Set up training courses
+        href: courses.md
+      - name: Add to your performance journal and send praise to someone
+        href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json    
+      - name: Create a goal
+        href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
+      - name: Create a performance review
+        href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json     
     - name: Define and manage a benefits program
       items:
       - name: Define and manage a benefits program
