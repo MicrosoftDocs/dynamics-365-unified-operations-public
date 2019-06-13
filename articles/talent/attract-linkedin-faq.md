@@ -36,39 +36,49 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 LinkedIn is the world's largest online professional network. Microsoft Dynamics for Talent: Attract integrates with LinkedIn to give you access to the world's top talent. Attract allows you to post jobs directly into LinkedIn, and it also allows you to draw candidate information from LinkedIn into Attract.
 
-# For recruiters and hiring managers
+## For recruiters and hiring managers
 
 Here are answers to frequently asked questions about how to use Attract and LinkedIn together.
 
-## What do I need before I can post jobs to LinkedIn?
+### What LinkedIn features do I get with Attract?
 
-Your admin needs to [configure LinkedIn integration in Attract](./attract-admin-linkedin.md). After that, you're ready to go!
+Attract's integration with LinkedIn lets you do the following:
 
-## How do I post jobs to LinkedIn from Attract?
+- Post jobs to LinkedIn (as free Limited Limited Listings).
 
-After you create a job in Attract, all you need to do is select the **Post Now** button that corresponds with LinkedIn. For more information, see [Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md).
+- Export candidate information from LinkedIn to Attract.
 
-## Can I get candidate information from LinkedIn into Attract?
+- Allow job candidates to apply to your jobs with LinkedIn.
+
+### What do I need before I can post jobs to LinkedIn?
+
+Your admin needs to [configure LinkedIn integration in Attract](./attract-admin-linkedin.md#configure-job-posting-to-linkedin). After that, you're ready to go!
+
+### How do I post jobs to LinkedIn from Attract?
+
+After you create a job in Attract, all you need to do is select the **Post Now** button that corresponds with LinkedIn. For more information, see [Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin).
+
+### Can I get candidate information from LinkedIn into Attract?
 
 Yes! If you see a good candidate in LinkedIn, you can easily port that candidate's information into Attract. For more information, see [Source candidates with LinkedIn Recruiter](attract-linkedin-recruiter.md).
 
-# For admins and developers
+## For admins and developers
 
 Here are answers to frequently asked questions about how to configure integration between Attract and LinkedIn.
 
-## How do I configure Attract so recruiters and hiring managers can post jobs to LinkedIn?
+### How do I configure Attract so recruiters and hiring managers can post jobs to LinkedIn?
 
 You can configure both of these options on the **LinkedIn Integration** tab in the **Admin center**. For more information, see [Set up integration with LinkedIn](./attract-admin-linkedin.md).
 
-## Can I export candidate information from LinkedIn?
+### Can I export candidate information from LinkedIn?
 
 Yes! First, you'll need to configure integration with LinkedIn Recruiter. For more information, see [Set up integration with LinkedIn](./attract-admin-linkedin.md).
 
-## How can I post jobs to Premium Job Slots in LinkedIn?
+### How can I post jobs to Premium Job Slots in LinkedIn?
 
 While Attract provides a powerful solution for posting jobs to LinkedIn, you might find you need additional flexibility. For example, you might want to be able to post Premium Job Slots as well as the free Limited Listings, or you might want LinkedIn to process your batch job posts more than once per day.
 
-### Types of LinkedIn job posts
+#### Types of LinkedIn job posts
 
 LinkedIn offers the following types of job postings:
 
@@ -78,11 +88,11 @@ LinkedIn offers the following types of job postings:
 
 Attract posts jobs to LinkedIn as Limited Listings. If you want to use Premium Job Slots, you need to use Job Wrapping through LinkedIn Recruiter, which requires a job wrapping contract through LinkedIn. For more information, see [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037).
 
-### Frequency of batch processing in LinkedIn
+#### Frequency of batch processing in LinkedIn
 
 LinkedIn processes job posts in batch through Attract and other Applicant Tracking Systems (ATSs) once per day. This means it could take up to 24 hours for jobs to appear on LinkedIn after being posted through Attract. If you need jobs to appear sooner on LinkedIn, or any additional flexibility, you can use the Recruiter System Connect API from LinkedIn. For more information, see [Recruiter System Connect](https://docs.microsoft.com/en-us/linkedin/talent/recruiter-system-connect).
 
-### Table of options for job posting to LinkedIn
+#### Table of options for job posting to LinkedIn
 
 The following table lists each option for posting jobs to LinkedIn, along with their advantages and additional information.
 
@@ -103,4 +113,5 @@ The following table lists each option for posting jobs to LinkedIn, along with t
 
 [Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
 [Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)<p></p>
-[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
+[Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)

@@ -55,12 +55,12 @@ Once you're connected to LinkedIn Recruiter, you can view candidates' LinkedIn p
 
 2. In the candidate's profile, select the **LinkedIn** tab. You can view the candidate's profile, along with InMail history and LinkedIn notes history.
 
-From here, you can save the candidate to a LinkedIn Recruiter project, sned inMail, or set an alert in LinkedIn Recruiter with Update Me.
+From here, you can save the candidate to a LinkedIn Recruiter project, send inMail, or set an alert in LinkedIn Recruiter with Update Me.
 
 > [!NOTE]
 > A candidate's LinkedIn profile will display in Attract when the candidate's Attract information matches the LinkedIn information as follows:
 > <p></p>
-> 1. If the email address and LinkedIn member ID match in Attract and LinkedIn, the candidate's profile will display. Candidates still have the option to link or unlinke their LinkedIn profile from Attract.
+> 1. If the email address and LinkedIn member ID match in Attract and LinkedIn, the candidate's profile will display. Candidates still have the option to link or unlink their LinkedIn profile from Attract.
 > <p></P>
 > 2. If the email address or LinkedIn member ID don't match, you will see a list of possible candidates to choose from and link the profile.
 > <p></P>
@@ -70,7 +70,7 @@ From here, you can save the candidate to a LinkedIn Recruiter project, sned inMa
 
 While reviewing candidates in LinkedIn Recruiter, you can export the candidate to jobs you currently have open in Attract. You'll need Recruiter or Hiring Manager permissions in Attract. For more information about roles in Attract, see [Security and role management in Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/security-attract).
 
-Also make sure that the job has a Prospect stage.
+Also make sure that the job has a Prospect stage. For more information, see [Prospect activity](./activities-attract.md#prospect-activity).
 
 1. In Attract, create a job, assign the appropriate roles, and activate the job.
 
@@ -80,7 +80,7 @@ Also make sure that the job has a Prospect stage.
 
 4. Select the job and then select **Export**.
 
-5. In Attract, open the job. The exported candidate will appear in the **Prospect** stage of the job.
+5. In Attract, open the job. The exported candidate will appear in the **Prospect** tab of the job.
 
 ## View Attract information from within LinkedIn Recruiter
 
@@ -114,4 +114,5 @@ If candidates agree to share their LinkedIn profiles with any user in your organ
 [LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
 [Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
 [Create jobs](./creating-jobs-attract.md)<p></p>
-[Post jobs to external sites from Attract](./posting-jobs-external.md)
+[Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)<p></p>
+[Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)

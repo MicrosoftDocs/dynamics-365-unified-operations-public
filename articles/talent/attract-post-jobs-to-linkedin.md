@@ -52,6 +52,8 @@ For more information about user roles in Attract, see [Security and role managem
 
 If you're an admin who needs more information about configuring LinkedIn integration with Attract, see [Set up integration with LinkedIn](./attract-admin-linkedin.md).
 
+Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs, so make sure you don't accidentally post any test jobs. 
+
 ## Post jobs to LinkedIn
 
 1. In Attract, open the job that you want to post to LinkedIn.
@@ -75,4 +77,4 @@ If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot postin
 [Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
 [Create jobs](./creating-jobs-attract.md)<p></p>
 [Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
-[Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md)
+[Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)

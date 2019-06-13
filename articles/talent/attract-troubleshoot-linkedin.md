@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshooting posting jobs to LinkedIn from Dynamics 365 for Talent - Attract
+title: Troubleshooting integration with LinkedIn from Dynamics 365 for Talent - Attract
 description: This topic explains how to troubleshoot problems with posting jobs to LinkedIn from Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Troubleshoot posting jobs to LinkedIn
+# Troubleshoot integration with LinkedIn
 
 [!include [banner](../includes/banner.md)]
 
 Use the following information to help troubleshoot problems you might be having with posting jobs to LinkedIn from Microsoft Dynamics 365 for Talent: Attract.
 
-## Troubleshoot signing in to LinkedIn from Attract
+## Not able to sign in to LinkedIn from Attract
 
 If you're having trouble signing in to LinkedIn from Attract, try the following:
 
@@ -45,7 +45,7 @@ If you're having trouble signing in to LinkedIn from Attract, try the following:
 
 3. If the issue persists, contact [Microsoft support](./talent-support.md).
 
-## Troubleshoot job posts from Attract not appearing in LinkedIn
+## Job posts from Attract aren't appearing in LinkedIn
 
 If your job hasn't appeared in LinkedIn after 24 hours, try the following:
 
@@ -55,4 +55,10 @@ If your job hasn't appeared in LinkedIn after 24 hours, try the following:
 
 3. Ensure the job doesn't duplicate another job posted on LinkedIn. LinkedIn won't post jobs that are duplicates of either LinkedIn premium listings or limited listings from another source. Verify another person at your company didn't already post the job manually.
 
+## See Also
 
+[LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
+[Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)<p></p>
+[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
+[Create jobs](./creating-jobs-attract.md)<p></p>
+[Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)

@@ -41,45 +41,36 @@ Microsoft Dynamics 365 for Talent: Attract provides two ways to integrate with L
 - Post jobs from Attract to LinkedIn
 - Source candidates from LinkedIn to Attract
 
-You configure both of these options on the **LinkedIn Integration** tab in the **Admin center**.
+You configure both of these options on the **LinkedIn Integration** tab in the **Admin center**. (Click [here](https://attract.talent.dynamics.com/adminsettings) to go to the Admin center.)
 
 > [!NOTE]
-> You need the Comprehensive hiring add-on and LinkedIn Recruiter licenses to be able to use LinkedIn Recruiter integration with Attract. For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md)
+> You need the [Comprehensive hiring add-on] and [LinkedIn Recruiter licenses](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18) to be able to use LinkedIn Recruiter integration with Attract. For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md)
 
-If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md).
+If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md).
 
-If you want information about other ways to post jobs to LinkedIn, see [LinkedIn FAQ](Integration with LinkedIn FAQ).
+If you want information about other ways to post jobs to LinkedIn, see [LinkedIn FAQ](./attract-linkedin-faq.md).
 
 ## Configure job posting to LinkedIn
 
-Before you can post jobs from Attract to LinkedIn, you need a LinkedIn Company ID. Your LinkedIn Company ID is a string of numbers that uniquely identifies your company within LinkedIn. For more information, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://aka.ms/findID).
+Before you can post jobs from Attract to LinkedIn, you need a [LinkedIn Company ID](https://aka.ms/findID). Your LinkedIn Company ID is a string of numbers that uniquely identifies your company within LinkedIn. For more information, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://aka.ms/findID).
 
 Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day, so it can take up to 24 hours for your jobs to post to the site.
 
-1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
+Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs, so make sure you don't accidentally post any test jobs. 
+
+1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**, or click [here](https://attract.talent.dynamics.com/adminsettings).
 
 2. Select the **LinkedIn Integration** tab.
 
-3. Under **Company name**, enter the name of your company.
-
-4. Under **Company ID**, enter your LinkedIn Company ID.
+3. Under **Company name**, enter the name of your company, and under **Company ID**, enter your LinkedIn Company ID. Make sure the **Company name** matches your company's LinkedIn page. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972). If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more). If you still have problems, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
 
 5. Select **Save**.
-
-> [!NOTE]
-> Keep the following in mind about posting jobs to LinkedIn:
-> 
-> 1. LinkedIn links jobs to your company based on the organization information provided by the job created in Attract. If your job is listed with the wrong company on LinkedIn, check to make sure your Microsoft 365 organization name matches the company name on LinkedIn. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972). If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more). If you still have problems, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
->
-> 2. Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs. 
->
-> 3. It can take up to 24 hours for posted jobs to appear on LinkedIn, because LinkedIn uses batch processing to post them.
 
 ## Set up LinkedIn Recruiter with Attract 
 
 To allow recruiters to source jobs through LinkedIn Recruiter, you need to configure integration with LinkedIn Recruiter in Attract. To complete the configuration process, you must work with the user who is an admin on your organization's LinkedIn Recruiter contract.
 
-1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
+1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**, or click [here](https://attract.talent.dynamics.com/adminsettings).
 
 2. Select the **LinkedIn Integration** tab.
 
@@ -113,9 +104,11 @@ To allow recruiters to source jobs through LinkedIn Recruiter, you need to confi
 
 ## Set up Apply with LinkedIn in Attract
 
-You can allow candidates to apply to your jobs with their LinkedIn profiles.
+You can allow candidates to apply to your jobs with their LinkedIn profiles. For more information about Apply with LinkedIn, see [The Power of LinkedIn Everywhere: Apply with LinkedIn](https://blog.linkedin.com/2011/07/24/apply-with-linkedin).
 
-1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
+This feature is currently in preview. Make sure **Apply with LinkedIn** is enabled before following these steps. For more information about enabling preview features, see [Access preview features in Talent](./access-preview-feature.md).
+
+1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**, or click [here](https://attract.talent.dynamics.com/adminsettings).
 
 2. Select the **LinkedIn Integration** tab.
 
@@ -129,7 +122,7 @@ You can allow candidates to apply to your jobs with their LinkedIn profiles.
 [Post jobs to external sites from Attract](./posting-jobs-external.md)<p></p>
 [Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
 [Create jobs](./creating-jobs-attract.md)<p></p>
-[Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md)
+[Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
 
 
 
