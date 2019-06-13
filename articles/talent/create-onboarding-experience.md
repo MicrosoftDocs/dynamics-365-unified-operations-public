@@ -42,6 +42,7 @@ To find out how to get and use the Onboard app, see the following articles:
 - [Get the Onboard app](./onboard-get-app.md)
 - [Plan your onboarding guide](./onboard-plan-guide.md)
 - [Create an onboarding guide template](./onboard-create-template.md)
+- [Share an onboarding guide template with other contributors](./onboard-share-template.md)
 - [Create an onboarding guide](./onboard-create-guide.md)
 - [View the status of tasks and onboarding employees](./onboard-view-status.md)
 - [Create hiring teams in Onboard](./onboard-create-team.md)

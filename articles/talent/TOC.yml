@@ -147,7 +147,9 @@
     - name: Plan your onboarding guide
       href: onboard-plan-guide.md  
     - name: Create an onboarding guide template
-      href: onboard-create-template.md  
+      href: onboard-create-template.md 
+    - name: Share an onboarding guide template with other contributors
+      href: onboard-share-template.md
     - name: Create and send an onboarding guide
       href: onboard-create-guide.md
     - name: View the status of tasks and onboarding employees
