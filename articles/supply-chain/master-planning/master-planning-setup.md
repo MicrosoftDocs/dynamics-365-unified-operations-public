@@ -82,7 +82,7 @@ You can specify which plans will be used for the static plan and the dynamic pla
 
 ## Types of planning methods
 
-Two calculation methods can be used to run master planning: regeneration and net change. Each method produces a different plan when it's run.
+Three calculation methods can be used to run master planning: regeneration and net change. Each method produces a different plan when it's run.
 
 You specify the planning method in the **Master planning run** dialog box. To open this dialog box, go to **Master planning \> Master planning \> Run \> Master planning**, or select **Run** in the **Master planning** workspace.
 
@@ -124,7 +124,7 @@ Job scheduling is a more detailed scheduling method, where each operation is div
 For each plan, you can select how far in the future the various requirements and other considerations must be calculated by master planning. The period is known as a *time fence*. For the best performance in master planning, we recommend that you adjust the various time fences to meet your business requirements. For each plan, you can find the time fences on the **Time fences in days** FastTab of the **Master plans** page (**Master planning \> Setup \> Plans \> Master plans**).
 
 > [!NOTE]
-> The time fences indicate how far in the future the various requirements and other considerations are calculated by master planning. If you don't have to use an option, set it to **Yes**, and then set the time fence to **0** (zero) days.
+> The time fences indicate how far in the future the various requirements and other considerations are calculated by master planning. The time fences selected in this page will override the time fences defined in the coverage group. This means setting a time fence option to yes and definiting the days will override the time fence defined in the coverage group. When setting to No, the time fence will be defined in the coverage group. Finally, if you don't want or need to use an option (for example you do not want to use action messages), set it to **Yes**, and then set the time fence to **0** (zero) days.
 
 ### Coverage
 
@@ -133,7 +133,7 @@ The coverage time fence represents the scheduling period, or how far out the dem
 By setting the **Coverage** option to **Yes**, you can override the coverage time fence that is defined for the item during master scheduling. In this case, enter the number of days that the master scheduling calculation should cover requirements. The coverage time fence is calculated forward from the current date. Requirements that occur before the current date are always processed.
 
 > [!NOTE]
-> For the best performance in material requirements planning (MRP), we recommend that you adjust the coverage time fence to your planning horizon.
+> For the best performance in master planning, we recommend that you adjust the coverage time fence to your planning horizon.
 
 ### Freeze
 
@@ -184,7 +184,7 @@ By setting the **Approved requisitions time fence** option to **Yes** on the **T
 
 ### Sequencing
 
-Sequencing enables planned orders to be ordered out from sequencing attributes that are associated with the finished product. It's often used to prepare production orders for packaging. For example, it can be used to pack boxes in a specific sequence, based on color and size.
+Sequencing enables planned orders to be arranged based on sequencing attributes that are associated with the finished product. It's often used to prepare production orders for packaging. For example, it can be used to pack boxes in a specific sequence, based on color and size.
 
 By setting the **Sequencing** option to **Yes**, you can specify how far in the future the operations or jobs should be sequenced. Keep in mind that the longer the time fence is, the longer it will take for master planning to run.
 
@@ -202,21 +202,21 @@ When you set the **Add the calculated delay to the requirement date** options to
 
 ## Positive and negative days
 
-Positive and negative days affect how master planning suggests planned orders. Positive and negative days are set on the item coverage group of the item. You can define the various coverage groups and set their parameters on the **Coverage groups** page (**Master planning \> Setup \> Coverage \> Coverage groups**).
+Positive and negative days affect how master planning suggests planned orders and actions. Positive and negative days are set on the item coverage group of the item. You can define the various coverage groups and set their parameters on the **Coverage groups** page (**Master planning \> Setup \> Coverage \> Coverage groups**).
 
 ### Positive days
 
-Positive days indicate how far in the future master planning considers the current inventory or receipts to fulfill a future demand. For example, if the positive days are set to **100**, the current inventory can be used to fulfill demand in the next 100 days. If there is an order 150 days from the current date, master planning will create a planned order to satisfy that demand, even though the on-hand inventory for the item can satisfy the order. For fast-moving items that have a short lead time, you might not want to use the on-hand inventory for an order that is far in the future. The current on-hand inventory will be gone quickly, and more orders can be placed in the future for a future demand on time, because it has a short lead time.
+Positive days indicate how far in the future master planning considers the current inventory or receipts to fulfill a future demand. For example, if the positive days are set to **100**, the current inventory can be used to fulfill demand in the next 100 days. If there is an order 150 days from the current date, master planning will create a planned order to satisfy that demand, even though the on-hand inventory for the item can satisfy the order. For fast-moving items that have a short lead time, you might not want to use the on-hand inventory for an order that is far in the future. In this fast-moving case, the current on-hand inventory will be gone quickly, and more orders could be placed in the future to fulfill a future demand on time, which would be possible due to the short lead time of the item.
 
 The positive days also affect the action messages. For example, the system might recommend that you increase a planned purchase order so that it includes a demand that is within the number of positive days in the future. If the positive days are set to **100**, and if there is demand for an item in 30 days from the current date, the system will create a planned order to satisfy that demand. If there is demand for the same item in 90 days from the current date, the system will recommend that you increase the quantity of the order in 30 days from the current date, so that the order also covers the demand in 90 days. However, if there is demand for the item in 150 days from the current date, the system won't recommend that you increase the quantity of the order that was already planned. Instead, a new planned order will be created.
 
-As a rule, the positive days are set to a number that is between the lead time of the item and the coverage time fence. We recommend that you assign items that are regularly procured or produced to a coverage group where the positive days equal the item's lead time.
+As a rule, the positive days are set to a number that is between the longest lead time of the items and the coverage time fence. We recommend that you assign items that are regularly procured or produced to a coverage group where the positive days equal the item's lead time.
 
 ### Negative days
 
 Negative days indicate how late item receipts will be allowed. They represent the number of days that you're willing to wait before you order new replenishment when you have negative inventory or don't have enough inventory. Negative days answer the question, Should we create a new purchase order for the item, or should we use an existing purchase, even though we know that the item will be late?
 
-For example, you have a sales order for an item 15 days from the current date. You also have a purchase order for the same item. This purchase order will be received in 20 days from the current date. Do you want the system to create a purchase order for that sales order, or do you want to use the existing order, even though you can't fulfill the sales order on time? If the negative days are set to more than **5** to indicate the item can be delayed a maximum of five days, the system creates a new planned purchase order to satisfy the sales order. If the negative days are set to less than **5**, the system uses the existing order for the item.
+For example, you have a sales order for an item 15 days from the current date. You also have a purchase order for the same item. This purchase order will be received in 20 days from the current date. Do you want the system to create a purchase order for that sales order, or do you want to use the existing order, even though you can't fulfill the sales order on time? If the negative days are set to less than **5** to indicate the item can be delayed a maximum of five days, the system creates a new planned purchase order to satisfy the sales order. If the negative days are set to greater than **5**, the system uses the existing order for the item.
 
 The negative days also affect the performance of master planning. If the negative days are set to a high number, lots of action messages will be generated.
 
@@ -228,6 +228,6 @@ Dynamic negative days consider the item's lead time and the negative days that y
 
 Lead time + Negative days + Current date – Requirement date
 
-The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that the planned receipts are used only when the item won't arrive on time.
+The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that it will include the individual product lead time, to reuse existing orders and avoid creating new planned orders that will end up with a later day, due to delays caused by lead time. 
 
 For more information, see [The Significance of Planning Data for Negative Days and Positive Days in Microsoft Dynamics AX](https://msdynamicsworld.com/story/ax-2012/significance-planning-data-negative-days-and-positive-days-microsoft-dynamics-ax).
