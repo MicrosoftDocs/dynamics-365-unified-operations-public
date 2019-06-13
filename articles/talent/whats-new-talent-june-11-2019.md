@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (June 11, 2019)"
+# What's new or changed in Dynamics 365 for Talent (June 11, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,10 +37,14 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 ## Changes in Attract
 
-### Search engine optimization for job posts: 
+### Search engine optimization for job posts
 
-If **Search Engine Optimization** is turned on in **Attract Admin settings**, every time a job gets activated and posted or a job post is updated, we will inform the Google Indexing API to crawl the web page and the job should start appearing in Google and other web search results pages. Similarly, when a job gets unposted, the indexing APIs will be updated so that the unposted jobs do not show up search results. For existing jobs to be picked up, please re-post them to the Talent Careers site. 
-**Please note**: there is no defined time frame within which web crawlers will look at job updates to update results on their end.  
+When you turn on **Search Engine Optimization** in the Attract Admin center, Attract informs Google's Indexing API to crawl the webpage when you activate and post a new job or update an existing one, so the job will appear in the search results for Google and other search engines.
+
+Likewise, when you unpost a job, Attract will update the Indexing API so the unposted job will stop appearing in search results.
+
+> [!NOTE]
+> Web crawlers don't have a set timeframe for crawling web pages or updating search results.
 
 ## Coming soon in Attract
 
@@ -56,8 +60,7 @@ Changes described in this section apply to build number 8.1.2337.
 
 ### Platform Update 27
 
-For additional details about Platform update 27, see [Preview features in Dynamics 365 for Finance and Operations platform update 27 (June 2019)]
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27
+For additional details about Platform update 27, see [Preview features in Dynamics 365 for Finance and Operations platform update 27 (June 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### Feature management workspace in Talent
 
