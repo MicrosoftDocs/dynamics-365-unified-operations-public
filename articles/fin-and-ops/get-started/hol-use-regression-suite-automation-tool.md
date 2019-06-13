@@ -5,7 +5,7 @@ title: Use Regression suite automation tool
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting. 
 author: kfend
 manager: AnnBe
-ms.date: 06/9/2019
+ms.date: 06/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
