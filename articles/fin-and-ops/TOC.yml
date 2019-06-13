@@ -3221,6 +3221,8 @@
     - name: Master plans
       href: ../supply-chain/master-planning/master-plans.md
       items:
+      - name: Set up master plans
+        href: ../supply-chain/master-planning/master-planning-setup.md
       - name: Coverage settings
         href: ../supply-chain/master-planning/coverage-settings.md
       - name: Define coverage rules for items
@@ -3247,6 +3249,8 @@
         href: ../supply-chain/master-planning/tasks/create-plan-site.md
       - name: Calendars and master planning
         href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+      - name: Improve master planning performance
+        href: ../supply-chain/master-planning/master-planning-performance.md
       - name: Master plans and multisite functionality
         href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
         items:
