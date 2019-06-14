@@ -2,7 +2,7 @@
 # required metadata
 
 title: X++ variables
-description: This topic describes variables and data types in X++.
+description: This topic describes variables in X++.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/10/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes variables and data types in X++.
+This topic describes variables in X++.
 
 A *variable* is an identifier that points to a memory location where information of a specific data type is stored. The size, precision, default value, implicit and explicit [conversion](xpp-conversion-run-time-functions.md) functions, and range depend on the variable's data type. The *scope* of a variable defines the area in the code where an item can be accessed. *Instance variables* are declared in class declarations, and can be accessed from any methods in the class or from methods that extend the class. *Local variables* can be accessed only in the block where they were defined. When a variable is declared, memory is allocated, and the variable is initialized to the default value. You can assign values to both static fields and instance fields as part of the declaration statement. Variables can be declared anywhere in a code block in a method. They don't have to be declared at the beginning of a method. *Constants* are variables where the value can't be changed when the variable is declared. They use the **const** or **readonly** keyword. Constants differ from *read-only fields* in only one way. Read-only fields can be assigned a value only one time, and that value never changes. The field can be assigned its value either inline, at the place where the field is declared, or in the constructor. When you declare variables of managed types that aren't authored in X++, you have two options. You can fully qualify the type names in the declaration by including the full namespace, or you can add a **using** statement to your file and then omit the namespace from the type name.
 
