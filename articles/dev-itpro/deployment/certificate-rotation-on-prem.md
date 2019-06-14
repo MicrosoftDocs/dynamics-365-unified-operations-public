@@ -39,13 +39,13 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 
 ## Preparation steps 
 
-1. Rename the original **Infrastructure** folder you created during **Set up and deploy on-premises environments** [on-premises setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts) to **InfrastructureOld**
+1. Rename the original **Infrastructure** folder you created during **Set up and deploy on-premises environments** [on-premises setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts) to **InfrastructureOld**.
 
 2. Download the latest [on-premises setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
 
-3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**
+3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. For more information, see [Configure certificates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurecert)
+4. Configure certificates as needed in **ConfigTemplate.xml**. Proceed with [Configure certificates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurecert), specifically 
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -78,9 +78,9 @@ You may need to rotate the certificates used by your Finance and Operations on-p
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. If axdataenciphermentcert certificates is rotated, you need to regenerate credentials.json file. For more information, see [Encrypt credentials](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred)
+6. If axdataenciphermentcert certificates is rotated, you need to regenerate credentials.json file. For more information, see [Encrypt credentials](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred).
 
-7. Run following PowerShell command to have values to be used in LCS later. For more information, see [Deploy your Finance and Operations (on-premises) environment from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#deploy)
+7. Run following PowerShell command to have values to be used in LCS later. For more information, see [Deploy your Finance and Operations (on-premises) environment from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#deploy).
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     `````
@@ -155,82 +155,56 @@ You may need to rotate the certificates used by your Finance and Operations on-p
     "clusterConfigurationVersion": "2.0.0",
     "apiVersion": "10-2017",
     ```
-5. Save the new ClusterConfig.json
+5. Save the new ClusterConfig.json.
 
-6. Run following PowerShell command
+6. Run following PowerShell command.
     ```powershell
+    # Connect to the Service Fabric cluster
     Connect-ServiceFabricCluster
 
-    # If using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check.
-    Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
+    # Get path of ClusterConfig.json for following command
+    # Note after running following command, manually cancel via red button (Stop Operation) in Windows PowerShell ISE or Ctrl + C in Windows PowerShell as otherwise note will receive "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware upgrade will proceed.
     Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
+
+    # If using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check as otherwise will timeout
+    Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
+    
+    # To monitor status of upgrade run following and note UpgradeState and UpgradeReplicaSetCheckTimeout
+    Get-ServiceFabricClusterUpgrade
+    
+    # While monitoring status of upgrade, if UpgradeReplicaSetCheckTimeout was reset back to default (example 49710.06:28:15), run following command again
+    Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
+    
+    # When UpgradeState shows RollingForwardCompleted, upgrade is done
     ```
-
-> [!NOTE] If you have a Service Fabric JSON file format issue, please add required comma as below
-
-![C:\\Users\\laionel\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\14673ECF.tmp](media/7c1a988596e5f59244c2ea1fa04835d1.png)
 
 ### Service fabric with or without expired Certificates (cluster not accessible)
 
-1. Download PowerShell script ChangeCert.ps1.
-2. Change the first section so that it fits the environment:
-    ```
-    Param(
-    [Parameter(Mandatory=\$false)]
-    [ValidateNotNullOrEmpty()]
-    [string] \$clusterDataRootPath="C:\\ProgramData\\SF", (Service Fabric installation folder)
-    [Parameter(Mandatory=\$false)] \#\$true
-    [ValidateNotNullOrEmpty()]
-    [string]\$oldThumbprintServer="Old Server Thumbprint(Star/SF)",
-    [Parameter(Mandatory=\$false)] \#\$true
-    [ValidateNotNullOrEmpty()]
-    [string]\$newThumbprintServer="New Server Thumbprint(Star/SF)",
-    [Parameter(Mandatory=\$false)] \#\$true
-    [ValidateNotNullOrEmpty()]
-    [string]\$oldThumbprintClient="Old Client Thumbprint",
-    [Parameter(Mandatory=\$false)] \#\$true
-    [ValidateNotNullOrEmpty()]
-    [string]\$newThumbprintClient="New Client Thumbprint",
-    [Parameter(Mandatory=\$false)]
-    [ValidateNotNullOrEmpty()]
-    [string]\$certStoreLocation='Cert:\\LocalMachine\\My\\',
-    [Parameter(Mandatory=\$false)] \#\$true
-    [ValidateNotNullOrEmpty()]
-    [string[]]\$nodeIpArray=\@("10.0.0.11", "10.0.0.12", "10.0.0.13") (Add all IPs from all member server of the SF cluster)
-    )
-    ```
-3.  Save the changes.
-
-4. Run following PowerShell command on one of the Cluster members 
-    ChangeCert.ps1
-
-5. A login screen will popup. Use an admin user that is present on all Nodes.
-
-6. Script will run on all nodes remotely and makes the necessary changes to get the cluster up and running again.
+Proceed with [Clean up an existing environment and redeploy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#clean-up-an-existing-environment-and-redeploy).
 
 ## LocalAgent Certificate update (if needed)
 
-1. Run following PowerShell command on one of the Orchestrator nodes
+1. Run following PowerShell command on one of the Orchestrator nodes.
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. Run following PowerShell command to note new LocalAgent thumbprint
+2. Run following PowerShell command to note new LocalAgent thumbprint.
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-3. Proceed with [Configure LCS connectivity for the tenant](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurelcs)
+3. Proceed with [Configure LCS connectivity for the tenant](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurelcs).
 
-> [!NOTE] If receive error **Update to existing credential with KeyId '\<key\>' is not allowed.**, follow [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#error-updates-to-existing-credential-with-keyid-key-is-not-allowed)
+> [!NOTE] If receive error **Update to existing credential with KeyId '\<key\>' is not allowed.**, follow [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
-4. Proceed with [Configure a connector and install an on-premises local agent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configureconnector), specifically following changes. 
-**Client certificate thumbprint**
-**Server Certificate thumbprint**
-**Tenant service principle certificate thumbprint**
+4. Proceed with [Configure a connector and install an on-premises local agent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configureconnector), specifically following changes 
+- Client certificate thumbprint
+- Server Certificate thumbprint
+- Tenant service principle certificate thumbprint
 
 ## Update deployment settings in LCS:
-> [!NOTE] Make a backup of local Dynamics database
+> [!NOTE] Make a backup of local Dynamics database.
 
 1. In LCS, click on the "Full Details" link of the environment where you want to change the certificates.
 
@@ -266,6 +240,6 @@ Here is an example of how the name of the same thumbprint might differ.
 
 ## Update other certificates as needed
 
-1. SQL server. For more information, see []Set up SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql)
+1. SQL server. For more information, see []Set up SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).
 
 2. AD FS
