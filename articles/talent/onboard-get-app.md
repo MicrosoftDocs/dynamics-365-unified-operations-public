@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 You can view a demo and try the Dynamics 365 for Talent: Onboard app for free from the [Onboard product page](https://dynamics.microsoft.com/en-us/talent/onboard/).
 
-(**Embed video https://dynamics.microsoft.com/en-us/talent/demo/onboard/**)
-
 >[!NOTE]
 >The free trial requires a business email account.
 
