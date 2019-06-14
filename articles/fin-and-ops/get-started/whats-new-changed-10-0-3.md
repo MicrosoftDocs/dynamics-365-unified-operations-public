@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Finance and Operations version 10.0.3 (June 2019)
+title: What's new or changed in Finance and Operations version 10.0.3 (June 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,15 +29,14 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.3
 
 ---
-# Preview features in Finance and Operations version 10.0.3 (June 2019)
+# What's new or changed in Finance and Operations version 10.0.3 (June 2019)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June and has a build number of 10.0.107. For more information about version 10.0.3, see [Additional resources](whats-new-changed-10-0-3.md#additional-resources).
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3).
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3).
 
 ## Feature management
 
@@ -77,7 +76,7 @@ For information about the regulatory updates for Finance and Operations, see [Lo
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.3, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34).
 
 ### Platform update 27
-Microsoft Dynamics 365 for Finance and Operations version 10.0.3 includes Platform update 27. To learn more about Platform update 27, see [Preview features in Finance and Operations platform update 27 (June 2019)](whats-new-platform-update-27.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0.3 includes Platform update 27. To learn more about Platform update 27, see [What's new or changed in Finance and Operations platform update 27 (June 2019)](whats-new-platform-update-27.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?

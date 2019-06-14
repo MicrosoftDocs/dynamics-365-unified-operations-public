@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use Regression suite automation tool
+title: Use Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting. 
 author: kfend
 manager: AnnBe
-ms.date: 06/9/2019
+ms.date: 06/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Use Regression suite automation tool
+# Use Regression suite automation tool tutorial
 
 [!include [banner](../includes/banner.md)]
 

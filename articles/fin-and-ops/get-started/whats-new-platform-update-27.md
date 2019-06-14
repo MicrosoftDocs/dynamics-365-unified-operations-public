@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Finance and Operations platform update 27 (June 2019)
+title: What's new or changed in Dynamics 365 for Finance and Operations platform update 27 (June 2019)
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 27 (June 2019). 
 author: tonyafehr
 manager: AnnBe
@@ -29,10 +29,9 @@ ms.search.validFrom: 2019-06-30
 ms.dyn365.ops.version: Platform 27
 
 ---
-# Preview features in Dynamics 365 for Finance and Operations platform update 27 (June 2019)
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 27 (June 2019)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 27. This version has a build number of 7.0.5286. For more information about Platform update 27, see [Additional resources](whats-new-platform-update-27.md#additional-resources).
 

@@ -658,6 +658,11 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <td>For the EN-US culture, <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> returns <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returns <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
+<td>NUMBERFORMAT (number, format, culture)</td>
+<td>Return a string representation of the specified number in the specified format and given culture. (For information about the supported formats, see <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">standard</a> and <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">custom</a>.).</td>
+<td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> returns <strong>3,33</strong> while <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> returns <strong>3.33</strong>.</td>
+</tr>
+<tr>
 <td>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</td>
 <td>Return the specified number after it has been spelled out (converted to text strings) in the specified language. The language code is optional. When it's defined as an empty string, the language code for the running context is used. (The language code for the running context is defined for a generating folder or file.) The currency code is also optional. When it's defined as an empty string, the company currency is used.
 <blockquote>[!NOTE] The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</blockquote>

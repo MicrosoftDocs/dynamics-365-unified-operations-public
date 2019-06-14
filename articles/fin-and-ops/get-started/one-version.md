@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 06/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,6 +70,8 @@ A regulatory update is a new feature or an existing feature change required by l
 ### What's the upcoming schedule of updates?
 
 Service updates are available since November 2018. You have the option to apply the update when it is convenient for you, or let Microsoft auto-apply the service updates based on the selected maintenance window. You are required to have an update no older than 3 months.
+
+To see a targeted release schedule, see [Service update availability](public-preview-releases.md).
 
 ### Are there any major updates post 8.1?
 
