@@ -87,6 +87,8 @@ Dynamics 365 for Talent: Onboard provides you with a variety of templates to get
 
 2. If desired, in the right-hand area of each activity, assign activities to a person or role, add a due date and contact person, and assign a category color. When you assign an activity to a person or a role, this creates a task for each individual, which appears in the **Tasks** menu in Onboard.
 
+   [![Assign activity in onboarding guide template](./media/onboard-assign-activity.png)](./media/onboard-assign-activity.png)
+
 3. Select **Save** to save your work. 
 
 If you need to delete an activity or section, select the **Delete** (trash can) button on the upper right-hand corner of the activity or section.
