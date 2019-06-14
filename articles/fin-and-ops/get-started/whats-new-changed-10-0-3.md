@@ -5,7 +5,7 @@ title: What's new or changed in Finance and Operations version 10.0.3 (June 2019
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Release 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.3. This version will be released in June and has a build number of 10.0.107. For more information about version 10.0.3, see [Additional resources](whats-new-changed-10-0-3.md#additional-resources).
 
