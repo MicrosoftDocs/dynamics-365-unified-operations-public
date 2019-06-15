@@ -3215,6 +3215,8 @@
         href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
       - name: Tracking running average cost per inventory dimension
         href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+  - name: Supply chain
+    href: ../supply-chain/index.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
