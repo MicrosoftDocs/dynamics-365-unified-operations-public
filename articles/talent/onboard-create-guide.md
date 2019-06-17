@@ -43,7 +43,7 @@ With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guide
 
 4. When you're done editing, select **Create guide**.
 
-   [![Create a guide from an onboarding template](./media/onboard-guide-create.png)](./media/onboard-guide-create.png)
+   [![Create a guide from an onboarding template](./media/onboard-create-guide.png)](./media/onboard-create-guide.png)
 
 5. In the **Create a guide** window, enter your new hire's name or email address under **Who are you onboarding**. If your new hire isn't in the system yet, select **Add now** and enter the employee's information.
 
