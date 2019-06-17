@@ -47,14 +47,16 @@ With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guide
 
 5. In the **Create a guide** window, enter your new hire's name or email address under **Who are you onboarding**. If your new hire isn't in the system yet, select **Add now** and enter the employee's information.
 
-6. Select a start date under **When do they start**. 7. If desired, select an automatic send date. If you want to send the guide immediately, turn the **Schedule an automatic send date** toggle button off. Select **Done**.
+6. Select a start date under **When do they start**. 
 
-7. Select **Send** in the upper-right corner of the screen. Then do one of the following:
+7. If desired, select an automatic send date. If you want to send the guide immediately, turn the **Schedule an automatic send date** toggle button off. Select **Done**.
+
+8. Select **Send** in the upper-right corner of the screen. Then do one of the following:
     - If you want to send your new hire a link to the onboarding guide on your own, select **copy a link** and then select **Copy**.
     - If you want to customize the email for the onboarding guide, select **Customize the email before sending** and then select **Next**, customize the email as desired, and select **Send**.
     - If you don't want to customize the email, select **Next** and then select **Send**.
 
-8. If you want to send your customized guide to another new hire, select **Save as template**, enter a new template name, select **Save**, and start the process over again.
+9. If you want to send your customized guide to another new hire, select **Save as template**, enter a new template name, select **Save**, and start the process over again.
 
 ## Send on onboarding guide to multiple new hires
 
@@ -70,12 +72,20 @@ Onboard lets you send an onboarding guide to multiple new hires at the same time
 
 5. In the **Create a guide** window, select **Need to onboard multiple people at once**. 
 
+   [![Send onboarding guide to multiple new hires](./media/onboard-send-guide-multiple-people.png)](./media/onboard-send-guide-multiple-people.png)
+
 6. Select **new hire template**, click **Open** when the .xlsx file finishes downloading, enter your employees' information in the Excel spreadsheet, and save the spreadsheet.
+
+   [![Download Excel template for sending onboarding guide to multiple new hires](./media/onboard-send-guide-download-spreedsheet.png)](./media/onboard-send-guide-download-spreedsheet.png)
 
     > [!NOTE]
     > You'll need to click **Enable editing** in Excel before you can edit the spreadsheet.
 
+   [![Enable editing before adding new hires to the spreadsheet](onboard-send-guide-enable-editing.png)](onboard-send-guide-enable-editing.png)
+
 7. Drag and drop the Excel spreadsheet to the designated area in the **Create multiple guides** window, or click the area to browse for the file on your computer.
+
+   [![Drag and drop your edited spreadsheet](./media/onboard-send-guide-drag-spreadsheet.png)](./media/onboard-send-guide-drag-spreadsheet.png)
 
 8. Select **Send** in the upper-right corner of the screen. Then do one of the following:
     - If you want to send your new hire a link to the onboarding guide on your own, select **copy a link** and then select **Copy**.
