@@ -462,7 +462,7 @@ Customer order returns are processed in the same way (either CFDI Global or CFDI
 
 
 
-#### Limitations of the feature 
+#### Limitations 
 
 
 
