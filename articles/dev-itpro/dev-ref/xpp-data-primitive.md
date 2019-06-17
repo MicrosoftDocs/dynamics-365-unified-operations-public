@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Primitive data types
-The primitive data types in X++ are **anytype**, **boolean**, **date**, **enum**, **guid**, **int**, **int64**, **real**, **str**, **timeOfDay**, and **utcdatetime**.
+This topic describes primitive data types in X++. The primitive data types in X++ are **anytype**, **boolean**, **date**, **enum**, **guid**, **int**, **int64**, **real**, **str**, **timeOfDay**, and **utcdatetime**.
 
 ## anytype
 
