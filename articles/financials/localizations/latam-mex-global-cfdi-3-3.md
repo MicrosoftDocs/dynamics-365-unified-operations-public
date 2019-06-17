@@ -1,15 +1,6 @@
 ---
 
-
-
 # required metadata
-
-
-
-
-
-
-
 title: Global CFDI e-invoices for Mexico
 
 
