@@ -2185,6 +2185,8 @@
           href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
         - name: Cancel an electronic invoice
           href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
+        - name: Global CFDI e-invoices for Mexico
+          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
         - name: CFDI Version 3.3
           href: ../financials/localizations/latam-mex-cfdi-3-3.md
         - name: Customer registration IDs and other information
