@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Entity Store for On-Premise Deployments
+title: PowerBI.com integration with on-premises environments
 description: This topic describes how to enable Entity Store for On-premise deployments.
 author: MilindaV
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Entity Store for On-Premise Deployments
+# PowerBI.com integration with on-premises environments
 
 [!include [banner](../includes/banner.md)]
 
