@@ -4427,8 +4427,8 @@
         href: ../supply-chain/warehousing/tasks/create-work-class.md
       - name: Manage warehouse workers
         href: ../supply-chain/warehousing/manage-warehouse-workers.md
-    - name: Deferred processing of warehouse work
-      href: ../supply-chain/warehousing/deferred-put.md
+      - name: Deferred processing of warehouse work
+        href: ../supply-chain/warehousing/deferred-put.md
     - name: Partial release and partial shipment
       items:
       - name: Partial shipment of a transport load
