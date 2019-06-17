@@ -96,7 +96,7 @@ If the **Specify related CFDI in returns parameter** is enabled, then electronic
 
   - An xml-file that is generated with the **CFDI relacionados** section that contains the list of related electronic invoices. You can view the list of related electronic invoices using the **Inquiries - Related e-invoices** menu item. It is also possible to add a new related electronic invoice manually on the same form. 
 
-The status of electronic invoices is updated automatically later, when all related electronic invoices get their UUIDs. To update the status of an electronic invoice manually, you can use the  **Mark as ready** function. As a result, the status of an electronic invoice will be changed, and it will become available for export. 
+     The status of electronic invoices is updated automatically later, when all related electronic invoices get their UUIDs. To update the status of an electronic invoice manually, you can use the  **Mark as ready** function. As a result, the status of an electronic invoice will be changed, and it will become available for export. 
 
 ### Excluding customer orders from Global CFDI electronic invoices
 
