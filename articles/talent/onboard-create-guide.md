@@ -76,12 +76,12 @@ Onboard lets you send an onboarding guide to multiple new hires at the same time
 
 6. Select **new hire template**, click **Open** when the .xlsx file finishes downloading, enter your employees' information in the Excel spreadsheet, and save the spreadsheet.
 
-   [![Download Excel template for sending onboarding guide to multiple new hires](./media/onboard-send-guide-download-spreedsheet.png)](./media/onboard-send-guide-download-spreedsheet.png)
+   [![Download Excel template for sending onboarding guide to multiple new hires](./media/onboard-send-guide-download-spreadsheet.png)](./media/onboard-send-guide-download-spreadsheet.png)
 
     > [!NOTE]
     > You'll need to click **Enable editing** in Excel before you can edit the spreadsheet.
 
-   [![Enable editing before adding new hires to the spreadsheet](onboard-send-guide-enable-editing.png)](onboard-send-guide-enable-editing.png)
+   [![Enable editing before adding new hires to the spreadsheet](./media/onboard-send-guide-enable-editing.png)](./media/onboard-send-guide-enable-editing.png)
 
 7. Drag and drop the Excel spreadsheet to the designated area in the **Create multiple guides** window, or click the area to browse for the file on your computer.
 

@@ -47,7 +47,7 @@ Microsoft Dynamics 365 for Talent: Onboard lets you view the progress of your ne
 
 1. On the left-hand menu, select **Tasks**. This provides an overview of all the onboarding tasks assigned to you from onboarding guides sent to employees.
 
-2. To drill down, select the desire task. Follow up with the new hire as needed. When you've completed the task, mark it as complete by checking the circle next to it.
+2. To drill down, select the desired task. Follow up with the new hire as needed. When you've completed the task, mark it as complete by checking the circle next to it.
 
 ## See also
 
