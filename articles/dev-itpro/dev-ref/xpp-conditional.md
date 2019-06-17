@@ -1,0 +1,174 @@
+---
+# required metadata
+
+title: X++ conditional statements
+description: This topic describes conditional statements in X++.
+author: RobinARH
+manager: AnnBe
+ms.date: 06/17/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom: 150213
+ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: robinr
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Conditional statements: if, if...else, switch, and ternary operator (?)
+
+This topic describes conditional statements in X++. The conditional statements are **if**, **if**...**else**, **switch**, and the ternary operator (**?**). You use conditional statements to specify whether a block of code is executed. Different conditional statements offer advantages in different situations.
+
+## if and if...else statements
+
+The **if** statement evaluates a conditional expression, and then executes a statement or a set of statements if the conditional expression is evaluated as **true**. You can use the **else** clause to provide an alternative statement or set of statements that is executed if the condition is evaluated as **false**. Here is the syntax for an **if**...**else** statement:
+
+**if (** *expression* **)** *statement* **\[ else** *statement* **\]**
+
+In this syntax, both occurrences of *statement* can be compound statements. The *expression* in the parentheses (the conditional expression) can be any valid expression that is evaluated as **true** or **false**. All numbers except 0 (zero) are **true**. All non-empty strings are also **true**. You can nest **if** statements. However, if the nesting of **if** statements becomes too deep, you should consider using a **switch** statement instead.
+
+### Examples of if and if...else statements
+
+    // if statement
+    if(a > 4)
+    {
+       print a;
+    }
+
+    // if... else statement 
+    if(a > 4)
+    {
+       print a;
+    }
+    else
+    {
+       print "a is less than or equal to 4";
+    }
+
+## switch statements
+
+The **switch** statement is a multibranch language construct, unlike the **if** statement, where you must nest **if** statements to create the same effect. The conditional expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. If a case constant matches the **switch** expression, the **case** statement is executed. If the case also contains a **break** statement, the program then jumps out of the switch. If the case doesn't contain a **break** statement, the program continues and executes the next set of **case** statements. If no matches are found, the **default** statement is executed. If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. Here is the syntax for a **switch** statement:
+
+**switch (** *expression* **) { { case } \[ default:** *statement* **\] }**
+
+Here is the syntax for a **case** statement:
+
+**case** *expression* **{ ,** *expression* **} :** *statement*
+
+In the syntax for both a **switch** statement and a **case** statement, every occurrence of s*tatement* can be replaced with a block of statements by enclosing the block in braces ({}).
+
+### Examples of switch statements
+
+    // When the break keyword is used within a switch statement, the execution of 
+    // the case branch terminates, and the statement following the 
+    // switch is executed as shown in the following example.
+    // If the Debtor account number is 1000, the program executes 
+    // "do something", and then continues execution after the switch statement.
+    switch (Debtor.AccountNo)
+    {
+        case "1000":
+            // do something
+            break;
+        case "2000":
+            // do something else
+            break;
+        default:
+            // default statement
+            break;
+    }
+
+    // Switch statement example to make the execution drop 
+    // through case branches by omitting a break statement. 
+    // If x is 10, b is assigned to a, and d is assigned to c, the break 
+    // statement is omitted after the case 10: statement. If x is 11, d 
+    // is assigned to c. If x is 12, f is assigned to e.
+    switch (x)
+    {
+        case 10:
+            a = b;
+        case 11:
+            c = d;
+            break;
+        case 12:
+            e = f;
+            break;
+    }
+
+    // If you do not use the break statement, the program flow in the switch
+    // statement continues into the next case. Code segments A and B
+    // have the same behavior. 
+    // Code segment A (break omitted)
+    case 13:
+    case 17:
+    case 21:
+    case 500:
+        print "g";
+        break;
+    // Code segment B (the values are comma-delimited)
+    case 13, 17, 21, 500;
+        print "g";
+        break;
+
+    // Break statement example within a while loop. When used within
+    // a loop, the loop is terminated and execution continues
+    // from the statement following the loop. This works for do... while
+    // and for loops as well. 
+    var mainMenu = SysDictMenu::newMainMenu();
+    var enum = mainMenu.getEnumerator();
+    var found = false;
+    while (enum.moveNext())
+    {
+        var menuItem = enum.current();
+        if (menuItem.label() == "StringOfInterest")
+        {
+            found = true;
+            break;
+        }
+    }
+    if (found) 
+    {
+        // do something
+    }
+
+## Ternary operator (?)
+
+The ternary operator (**?**) is a conditional statement that is resolved to one of two expressions. The result can be assigned to a variable. By contrast, an **if** statement provides conditional branching of the program flow but can't be assigned to a variable. Here is the syntax for the ternary operator:
+
+*expression1* **?** *expression2* **:** *expression3*
+
+In this syntax, *expression1* must return a value of **true** or **false**. If *expression1* is **true**, the whole ternary statement returns *expression2*. Otherwise, the statement returns *expression3*. Both *expression2* and *expression3* must have the same type.
+
+### Examples of the ternary operator (?)
+
+    // Returns one of two strings based on a Boolean return value from a method call. 
+    // The Boolean expression indicated whether the CustTable table has a row
+    // with a RecId field value of 1. If this Boolean expression is true 
+    // (meaning RecId != 0), found is assigned to result. 
+    // Otherwise, the alternative not found is assigned to result.
+    result = (custTable::find("1").RecId) ? "found" : "not found";
+
+    // An example of a nested ternary statement. 
+    // If z is not greater than 1000, the expression is equal to the third 
+    // expression and low is printed. If AccountNum is greater than 1000, the second 
+    // expression is evaluated, and this also contains a ternary operator. If AccountNum 
+    // is greater than 1000 and less than 2000, In interval is printed. If AccountNum is 
+    // greater than 1000 and greater than or equal to 2000, Above 2000 is printed.str z = "5";
+    print( (z > "1000") ?
+             ( (z < "2000") ? "In interval" : "Above 2000")
+             : "low");
+    ); 
