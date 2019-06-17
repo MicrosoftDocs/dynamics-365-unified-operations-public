@@ -60,11 +60,11 @@ To get a Global CFDI electronic invoice generated and submitted to PAC, do the f
 
   5. Run the **Post CFDI – Electronic invoices** periodic operation to create Global CFDI electronic invoices based on a posted retail statement. You can select a statement number for this periodic operation. If a statement number was not selected, the system will create Global CFDI electronic invoices for all posted retail statements that haven't been processed yet. 
 
-As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices will be created - one of them collects all receipts related to sales operations, and the other - all receipts related to returns. An electronic invoice, which is related to returns, has the **Return** attribute marked as **Yes**. 
+     As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices will be created - one of them collects all receipts related to sales operations, and the other - all receipts related to returns. An electronic invoice, which is related to returns, has the **Return** attribute marked as **Yes**. 
 
-You can view these electronic invoices on the **CFDI (electronic invoices)** page, from the **Retail > Inquiries and reports** menu.
+     You can view these electronic invoices on the **CFDI (electronic invoices)** page, from the **Retail > Inquiries and reports** menu.
 
-All further workflow including communication with a service provider, printing form output and manual functions are the same as for the CFDI Normal electronic invoices.
+     All further workflow including communication with a service provider, printing form output and manual functions are the same as for the CFDI Normal electronic invoices.
 
   6. Run the **Export/import electronic invoice process** periodic operation to submit electonic invoices to PAC.
 
@@ -74,11 +74,11 @@ In Finance and Operations monthly update version 10.0.2, the Global CFDI functio
 
   - Generate a separate CFDI Normal electronic invoice based on sales or return operation registered on POS, when a customer demands it. 
 
-In that case a sale or return operation should be registered as a customer order. You can find more information about the functionality of customer orders in [Customer orders in Retail Modern POS (MPOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/customer-orders-overview). 
+     In that case a sale or return operation should be registered as a customer order. You can find more information about the functionality of customer orders in [Customer orders in Retail Modern POS (MPOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/customer-orders-overview). 
 
   - Specify UUID of CFDI electonic invoices, which are related to the original sales operations, in a CFDI electronic invoice generated based on the returns. 
 
-Also starting from the 10.0.2 monthly update, the Global CFDI functionality supports the following additional scenarios.
+     Also starting from the 10.0.2 monthly update, the Global CFDI functionality supports the following additional scenarios.
 
   - [Return items across multiple customer orders and invoices](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/multireturn).
 
