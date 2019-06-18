@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guides from templates you created on your own or from those available in the gallery. After you've created at least one onboarding guide template, you can create a guide for your new hire.
+With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guides from templates you created on your own or from those available in the gallery. After you've created at least one onboarding template, you can create a guide for your new hire.
+
+## Create and send an onboarding guide to a single new hire
 
 1. On the left-hand menu, select **Templates**.
 
@@ -58,7 +60,7 @@ With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guide
 
 9. If you want to send your customized guide to another new hire, select **Save as template**, enter a new template name, select **Save**, and start the process over again.
 
-## Send on onboarding guide to multiple new hires
+## Create and send on onboarding guide to multiple new hires
 
 Onboard lets you send an onboarding guide to multiple new hires at the same time.
 

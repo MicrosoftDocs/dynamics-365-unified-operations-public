@@ -87,10 +87,9 @@ If you accepted the default domain name (ending in **onmicrosoft.com**) when sig
 
 ## Next steps
 
-- [Plan your onboarding guide](./onboard-plan-guide.md)
-- [Create an onboarding guide template](./onboard-create-template.md)
+- [Create an onboarding template](./onboard-create-template.md)
 - [Create an onboarding guide](./onboard-create-guide.md)
-- [Share an onboarding guide template with other contributors](./onboard-share-template.md)
+- [Share an onboarding template with other contributors](./onboard-share-template.md)
 - [View the status of tasks and onboarding employees](./onboard-view-status.md)
 - [Create hiring teams in Onboard](./onboard-create-team.md)
 

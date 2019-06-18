@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Share an onboarding guide template with other contributors in Microsoft Dynamics 365 for Talent - Onboard.
+title: Share an onboarding template with other contributors in Microsoft Dynamics 365 for Talent - Onboard.
 description: Track where new hires are in their onboarding process with the Microsoft Dynamics 365 for Talent - Onboard app.
 author: andreabichsel
 manager:
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Share an onboarding guide template with other contributors
+# Share an onboarding template with other contributors
 
 [!include [banner](includes/banner.md)]
 
-With Microsoft Dynamics 365 for Talent: Onboard, you can share onboarding guide templates with other contributors so they can review and make changes.
+With Microsoft Dynamics 365 for Talent: Onboard, you can share onboarding templates with other contributors so they can review and make changes.
 
 1. On the left-hand menu, select **Templates**.
 

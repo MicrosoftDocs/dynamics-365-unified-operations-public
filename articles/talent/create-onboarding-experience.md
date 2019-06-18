@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create an engaging onboarding experience
-description: When onboarding is done well, it helps new employees realize a sense of belonging in their new organization.
+title: Get started with Onboard
+description: Microsoft Dynamics 365 for Talent - Onboard helps your new hires get off to a strong start, giving them a guide to take them smoothly through the onboarding process.
 author: andreabichsel
 manager:
-ms.date: 05/06/2019
+ms.date: 06/21/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-talent
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ---
 
-# Welcome new hires with Onboard
+# Get started with Onboard
 
 [!include [banner](includes/banner.md)]
 
@@ -42,9 +42,8 @@ With Onboard, you can quickly create an onboarding guide that will welcome your 
 To find out how to get and use the Onboard app, see the following articles:
 
 - [Get the Onboard app](./onboard-get-app.md)
-- [Plan your onboarding guide](./onboard-plan-guide.md)
-- [Create an onboarding guide template](./onboard-create-template.md)
-- [Share an onboarding guide template with other contributors](./onboard-share-template.md)
+- [Create an onboarding template](./onboard-create-template.md)
+- [Share an onboarding template with other contributors](./onboard-share-template.md)
 - [Create an onboarding guide](./onboard-create-guide.md)
 - [View the status of tasks and onboarding employees](./onboard-view-status.md)
 - [Create hiring teams in Onboard](./onboard-create-team.md)

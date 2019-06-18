@@ -144,17 +144,15 @@
       href: create-onboarding-experience.md
     - name: Get the Onboard app
       href: onboard-get-app.md
-    - name: Plan your onboarding guide
-      href: onboard-plan-guide.md  
-    - name: Create an onboarding guide template
-      href: onboard-create-template.md 
-    - name: Share an onboarding guide template with other contributors
-      href: onboard-share-template.md
     - name: Create and send an onboarding guide
       href: onboard-create-guide.md
-    - name: View the status of tasks and onboarding employees
+    - name: Create an onboarding template
+      href: onboard-create-template.md 
+    - name: Share an onboarding template
+      href: onboard-share-template.md
+    - name: View status
       href: onboard-view-status.md
-    - name: Create a hiring team in Onboard
+    - name: Create a hiring team
       href: onboard-create-team.md
   - name: Manage your workforce with Core HR
     items: 

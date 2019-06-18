@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create an onboarding guide template with Dynamics 365 for Talent - Onboard
+title: Create an onboarding template with Dynamics 365 for Talent - Onboard
 description: Use the Dynamics 365 for Talent - Onboard app to create an onboarding guide template for your new hires. This is an essential first step in your human capital management hire-to-retire strategy.
 author: andreabichsel
 manager:
@@ -29,13 +29,13 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Create an onboarding guide template
+# Create an onboarding template
 
 [!include [banner](includes/banner.md)]
 
 Dynamics 365 for Talent: Onboard provides you with a variety of templates to get you up and running with an onboarding guide as quickly as possible. You can use one or more of these, or you can create your own templates. Onboard provides sample text you can use when creating your own templates, so it's even easy to start from scratch.
 
-## Create an onboarding guide template from an existing template
+## Create an onboarding template from an existing template
 
 1. On the left-hand menu, select **Templates**.
 
@@ -45,7 +45,7 @@ Dynamics 365 for Talent: Onboard provides you with a variety of templates to get
 
    [![Create template from existing](./media/onboard-save-template.png)](./media/onboard-save-template.png)
 
-## Create a new onboarding guide template
+## Create a new onboarding template
 
 1. On the left-hand menu, select **Templates**.
 
@@ -133,7 +133,7 @@ If you need to edit a contact, select the **Edit** (pencil) button to the right 
 
 ## Next steps
 
-- [Share an onboarding guide template with other contributors](./onboard-share-template.md)
+- [Share an onboarding template with other contributors](./onboard-share-template.md)
 - [Create an onboarding guide](./onboard-create-guide.md)
 - [View the status of tasks and onboarding employees](./onboard-view-status.md)
 - [Create hiring teams in Onboard](./onboard-create-team.md)

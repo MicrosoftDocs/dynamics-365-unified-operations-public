@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# View the status of tasks and onboarding employees
+# View the status of onboarding employees and tasks
 
 [!include [banner](includes/banner.md)]
 
