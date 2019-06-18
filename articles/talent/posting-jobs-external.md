@@ -35,6 +35,8 @@ ms.dyn365.ops.version: Platform update 24
 
 Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to Broadbean directly from Attract. After you [create a job](./creating-jobs-attract.md), all you have to do is push a button to put your job in front of all the potential job candidates on Broadbean.
 
+Posting jobs to Broadbean requires an appropriate Broadbean license. Broadbean offers a variety of products and plans. For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).
+
 If you're an admin who needs more information about configuring Broadbean integration with Attract, see [Enter settings for external job boards](./attract-admin-job-board-settings.md).
 
 ## Post jobs to Broadbean
