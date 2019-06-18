@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Conditional statements: if, if...else, switch, and ternary operator (?)
 
+[!include [banner](../includes/banner.md)]
+
 This topic describes conditional statements in X++. The conditional statements are **if**, **if**...**else**, **switch**, and the ternary operator (**?**). You use conditional statements to specify whether a block of code is executed. Different conditional statements offer advantages in different situations.
 
 ## if and if...else statements
