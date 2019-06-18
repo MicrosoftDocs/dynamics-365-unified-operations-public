@@ -32,12 +32,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Statements
 
-[!include [banner](../includes/banner.md)]
-
 This topic describes statements in X++.
+----------
 
 ## Comments
---------
 
 It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/\*** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
 
