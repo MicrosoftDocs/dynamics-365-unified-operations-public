@@ -1,8 +1,7 @@
 ---
-
 # required metadata
-title: Global CFDI e-invoices for Mexico
-description: This topic is a functionality overview for Global CFDI e-invoices for Mexico.
+title: Global CFDI electronic invoices for Mexico
+description: This topic gives an overview of the functionality for Global CFDI electronic invoices for Mexico.
 author: v-kikozl
 manager: annbe
 ms.date: 06/17/2018
@@ -33,93 +32,74 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include[banner](../includes/banner.md)]
 
+The Microsoft Dynamics 365 for Retail functionality for Mexico supports the Comprobantes fiscales digitales por internet (CFDI) format for Mexican retail companies. For more information about CFDI electronic invoices, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices). When a company closes the daily process, it must issue a Global CFDI document to consolidate all receipts that were issued to the final consumers. This document includes the following information for each transaction that is registered during the period:
 
-The Microsoft Dynamics 365 for Retail functionality for Mexico supports the Comprobantes fiscales digitales por internet (CFDI) format for the Mexican retail companies. See [Electronic invoices (CFDI)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices) to find more information about the CFDI electronic invoices. When a company closes the daily process, it is required to issue a Global CFDI to consolidate all receipts issued to the final consumers in a Global CFDI document that indicates the following.
+- A receipt number
+- A corresponding amount
 
-  - A receipt number for each transaction registered during the period.
+## Processing Global CFDI documents
 
-  - A corresponding amount for each transaction registered during the period.
+The Global CFDI functionality lets you perform the following tasks:
 
-## Processing of Global CFDI
+- Create an electronic invoice that is based on the posted retail statement in Global CFDI format (layout 3.3). For more information about the layout, see [CFDI layout version 3.3](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-3-3).
+- Create and post electronic invoices that are based on posted retail statements, and send the .pdf and .xml files as email attachments for customers. The Global CFDI electronic invoices are generated, and then they are verified and certified by a digital signature service provider (PAC) in the same way as other CFDI documents. For more information, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices) and [Inquire and print an electronic invoice](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice).
 
-With the Global CFDI functionality, you can do the following tasks.
+To generate and submit a Global CFDI electronic invoice, follow these steps.
 
-  - Create an electronic invoice based on the posted retail statement in the format of Global CFDI (layout 3.3). See [CFDI layout version 3.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-3-3) for more details about the layout.
+1. As a preparatory step, on the **Retail** tab of the **Electronic invoice parameters** page (**Organization administration \> Setup \> EInvoice \> Electronic invoice parameters**), you must specify the default values for some parameters that are used in the Global CFDI format.
+2. Close the shift at the point of sale (POS).
+3. Run the P-job in the distribution schedule to transfer retail transactions from the channel database to Retail headquarters.
+4. Calculate and post a retail statement by following the steps in [Create, calculate, and post a statement for a retail store](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+5. Run the **Post CFDI – Electronic invoices** periodic operation to create Global CFDI electronic invoices that are based on a posted retail statement. You can select a statement number for this periodic operation. If you don't select a statement number, the system creates Global CFDI electronic invoices for all posted retail statements that haven't yet been processed.
 
-  - Create and post electronic invoices based on posted retail statements, and send the .pdf and .xml files as e-mail attachments for customers. The Global CFDI electronic invoices are generated, and then they are verified and certified by a digital signature service provider (PAC) the same way other CFDI documents are. See [Electronic invoices (CFDI)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices) and [Inquire and print an electronic invoice](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice) for more details.
+    As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices are created. One electronic invoice collects all receipts that are related to sales operations, and the other collects all receipts that are related to returns. For the electronic invoice that is related to returns, the **Return** attribute is set to **Yes**. You can view these electronic invoices on the **CFDI (electronic invoices)** page (**Retail \> Inquiries and reports \> CFDI (electronic invoices)**).
 
-To get a Global CFDI electronic invoice generated and submitted to PAC, do the following.
+    All further workflows, such as communication with a service provider, printing of the page output, and manual functions are the same as the workflows for CFDI Normal electronic invoices.
 
-  1. As a preparation step, the default values for some parameters that are used in the format of Global CFDI should be specified on the **Retail** tab of **Electronic invoice parameters** form.
-
-  2. Close the shift on the point of sale (POS).
-
-  3. Run P-job in the disctribution schedule to transfer retail transactions from the channel database to the Retail Headquarters.
-
-  4. Calculate and post a retail statement following the steps provided in [Create, calculate, and post a statement for a retail store](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
-
-  5. Run the **Post CFDI – Electronic invoices** periodic operation to create Global CFDI electronic invoices based on a posted retail statement. You can select a statement number for this periodic operation. If a statement number was not selected, the system will create Global CFDI electronic invoices for all posted retail statements that haven't been processed yet. 
-
-     As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices will be created - one of them collects all receipts related to sales operations, and the other - all receipts related to returns. An electronic invoice, which is related to returns, has the **Return** attribute marked as **Yes**. 
-
-     You can view these electronic invoices on the **CFDI (electronic invoices)** page, from the **Retail > Inquiries and reports** menu.
-
-     All further workflow including communication with a service provider, printing form output and manual functions are the same as for the CFDI Normal electronic invoices.
-
-  6. Run the **Export/import electronic invoice process** periodic operation to submit electonic invoices to PAC.
+6. Run the **Export/import electronic invoice process** periodic operation to submit electronic invoices to the PAC.
 
 ## Updates for the Global CFDI functionality
 
-In Finance and Operations monthly update version 10.0.2, the Global CFDI functionality was extended to support new requirements introduced in the second revision of the *_Global CFDI filling guide_*. Starting in update version 10.0.2, you can do the following.
+In Microsoft Dynamics 365 for Finance and Operations monthly update version 10.0.2, the Global CFDI functionality was extended to support new requirements that were introduced in the second revision of the *Global CFDI filling guide*. Starting in the 10.0.2 monthly update, you can perform the following tasks:
 
-  - Generate a separate CFDI Normal electronic invoice based on sales or return operation registered on POS, when a customer demands it. 
+- At the customer's request, generate a separate CFDI Normal electronic invoice that is based on a sale or return operation that is registered at the POS.
 
-     In that case a sale or return operation should be registered as a customer order. You can find more information about the functionality of customer orders in [Customer orders in Retail Modern POS (MPOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/customer-orders-overview). 
+    In this case, the sale or return operation should be registered as a customer order. For more information about the functionality for customer orders, see [Customer orders in Retail Modern POS (MPOS)](https://docs.microsoft.com/dynamics365/unified-operations/retail/customer-orders-overview).
 
-  - Specify UUID of CFDI electonic invoices, which are related to the original sales operations, in a CFDI electronic invoice generated based on the returns. 
+- In a CFDI electronic invoice that is generated based on returns, specify universally unique identifiers (UUIDs) for CFDI electronic invoices that are related to the original sales operations.
 
-     Also starting from the 10.0.2 monthly update, the Global CFDI functionality supports the following additional scenarios.
+Starting in the 10.0.2 monthly update, the Global CFDI functionality also supports the following additional scenarios:
 
-  - [Return items across multiple customer orders and invoices](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/multireturn).
+- [Item returns across multiple customer orders and invoices](https://docs.microsoft.com/dynamics365/unified-operations/retail/multireturn)
+- Customer order returns that involve an exchange, when a customer invoice includes both lines that have positive amounts and lines that have negative amounts
 
-  - Customer order return with an exchange, when a customer invoice includes lines with both positive and negative amounts. 
+### Showing related CFDI documents in a CFDI electronic invoice
 
-### Displaying related CFDI documents in a CFDI electronic invoice
+To show the UUIDs of the original sales in CFDI electronic invoices for returns, turn on the **Specify related CFDI in returns** parameter on the **Retail** tab of the **Electronic invoice parameters** page (**Organization administration \> Setup \> EInvoice \> Electronic invoice parameters**). After you turn on this parameter, both Global CFDI and CFDI Normal documents are generated that include the following information:
 
-The **Specify related CFDI in returns** parameter was added on the **Retail** tab of the **Electronic invoices parameters** page (**Organization administration > Setup > EInvoice > Electronic invoice parameters**). Enable this option to display UUID of original sales in CFDI electronic invoices for returns.
+- A list of related electronic invoices.
+- A status of **Draft**. (This status is a new status that was introduced in version 10.0.2). An electronic invoice is automatically set to this status if a UUID isn't specified for all the related electronic invoices. The **Export/import electronic invoice process** periodic procedure skips all electronic invoices that have a status of **Draft**.
+- An XML file that is generated, where the **CFDI relacionados** section contains the list of related electronic invoices. You can view the list of related electronic invoices by selecting **Inquiries \> Related e-invoices**. You can also manually add a new related electronic invoice on the same page.
 
-If the **Specify related CFDI in returns parameter** is enabled, then electronic invoices for returns, both CFDI Global and CFDI Normal, are generated with the following.
-
-  - A list of related e-invoices.
-
-  - The **Draft** status (a new status introduced within this update). An electonic invoice gets this status automatically, if not all of the related electronic invoices have UUID specified. The **Export/import electronic invoice process** periodic procedure skips all electronic invoices having the  **Draft** status. 
-
-  - An xml-file that is generated with the **CFDI relacionados** section that contains the list of related electronic invoices. You can view the list of related electronic invoices using the **Inquiries - Related e-invoices** menu item. It is also possible to add a new related electronic invoice manually on the same form. 
-
-     The status of electronic invoices is updated automatically later, when all related electronic invoices get their UUIDs. To update the status of an electronic invoice manually, you can use the  **Mark as ready** function. As a result, the status of an electronic invoice will be changed, and it will become available for export. 
+    The status of electronic invoices is automatically updated later, when all related electronic invoices get their UUIDs. To manually update the status of an electronic invoice, you can use the **Mark as ready** function. The status of the electronic invoice will be changed, and it will become available for export.
 
 ### Excluding customer orders from Global CFDI electronic invoices
 
-Enable the **Exclude customer orders from CFDI Global** option on the **Retail** tab of the **Electronic invoices parameters** page (**Organization administration > Setup > EInvoice > Electronic invoice parameters**) to process customer orders as CFDI Normal electonic invoices in the same way as sales orders in the Accounts Receivable module, and exclude such operations from the Global CFDI electronic invoices. 
+To process customer orders as CFDI Normal electronic invoices in the same way that sales orders are processed in the **Accounts receivable** module, and to exclude those operations from the Global CFDI electronic invoices, turn on the **Exclude customer orders from CFDI Global** parameter on the **Retail** tab of the **Electronic invoice parameters** page (**Organization administration \> Setup \> EInvoice \> Electronic invoice parameters**). After you turn on this parameter, a separate electronic invoice is created based on each sale or return operation that is posted via a customer order at the POS.
 
-If the **Exclude customer orders from CFDI Global** parameter is enabled, then a separate electronic invoice will be created based on each sale or return operation posted via a customer order on POS. 
+The following customer order operations can cause a CFDI Normal electronic invoice to be posted:
 
-The following customer order operations could lead to posting a CFDI Normal electronic invoice.
+- Customer order pickup
+- Customer order return
+- Hybrid customer order (For more information about this scenario, see [Hybrid customer orders](https://docs.microsoft.com/dynamics365/unified-operations/retail/hybrid-customer-orders).)
 
-  - Customer order pick up. 
+When the **Exclude customer orders from CFDI Global** parameter is turned off, and no previous customer invoice was posted from the same customer order and processed as a separate electronic invoice (CFDI Normal), customer orders are included in Global CFDI electronic invoices. Otherwise, customer orders are processed as separate electronic invoices (CFDI Normal). Therefore, they are excluded from Global CFDI electronic invoices.
 
-  - Customer order return. 
+Customer order returns are processed in the same way (either CFDI Global or CFDI Normal) as the original sales operations.
 
-  - Hybrid customer order. For more details about this scenario see [Hybrid customer orders](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/hybrid-customer-orders). 
+#### Limitations
 
-Customer orders are included in Global CFDI electronic invoices when the **Exclude customer orders from CFDI Global**  parameter is disabled and there is no any previous customer invoice that was posted from the same customer order and processed as a separate electonic invoice (CFDI Normal). Otherwise, customer orders are processed as separate electronic invoices (CFDI Normal), and are therefore excluded from Global CFDI electronic invoices.
+Note the following limitations:
 
-Customer order returns are processed in the same way (either CFDI Global or CFDI Normal), as the original sales operations. 
-
-#### Limitations 
-
-The following limitations should be noted.
-
-  - All invoices from an original sales order are included in a return electronic invoice as the related CFDI documents.
-
-  - The scenario of a customer order return with exchange is supported for the Global CFDI electronic invoices only.
+- All invoices from an original sales order are included in a return electronic invoice as the related CFDI documents.
+- The scenario of a customer order return that involves an exchange is supported only for Global CFDI electronic invoices.
