@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1
 # In-place upgrade process for on-premises environments
 
 > [!NOTE]
-> Please do the upgrade process with your sandbox environment before upgrading your production environment.
+> Please perform the upgrade with your sandbox environment before upgrading your production environment.
 
 This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations from version 7.x to 8.1.  
 
