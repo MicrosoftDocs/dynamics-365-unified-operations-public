@@ -33,6 +33,9 @@ ms.dyn365.ops.version: Platform update 27
 # Abort an executing batch job
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE] 
+> This feature is available as of Platform update 27.
+
 Sometimes canceling a batch job can take a long time if already executing tasks will take a long time to finish. The abort option provides a system administrator or batch job manager with the ability to abort already executing tasks for jobs which are in the process of being canceled. This provides a much faster mechanism to cancel a long running job which is impacting system usage elsewhere.
 
 >[!NOTE]
