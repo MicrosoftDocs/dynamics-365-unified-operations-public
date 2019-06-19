@@ -29,12 +29,11 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
 ---
-# How to: Create a Workflow Category 
+# How to create a workflow category 
 
+This topic describes how to create a workflow category in Dynamics 365 for Finance and Operations.
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
-
-When you create a workflow type in Microsoft Dynamics AX, it must be assigned to a workflow category. The workflow category determines whether a workflow type is available in a specific module. If an appropriate workflow category does not already exist, you must create one.
+When you create a workflow type, it must be assigned to a workflow category. The workflow category determines whether a workflow type is available in a specific module. If an appropriate workflow category does not already exist, you must create one.
 
 For example, a workflow type for a customer invoice should not be available in the **Master planning** module. To make the workflow type available only in the **Customer** module, create a workflow category with the **Customer** module selected.
 
@@ -94,8 +93,8 @@ After a workflow category is created, you can bind the workflow type to the new 
 
 ## See also
 
-[Creating a Workflow Type](creating-a-workflow-type.md)
+[Creating a workflow type](creating-a-workflow-type.md)
 
-[How to: Create a New Workflow Type](how-to-create-a-new-workflow-type.md)
+[How to create a new workflow type](how-to-create-a-new-workflow-type.md)
 
-[Walkthrough: Creating a Workflow Type](walkthrough-creating-a-workflow-type.md)
+[Walkthrough: creating a workflow type](walkthrough-creating-a-workflow-type.md)
