@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to create a new workflow type
-description: This topic describes how to create a workflow type in the Application Object Tree (AOT).
+description: This topic describes how to create a workflow type in the Application Object Tree (AOT) in Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
