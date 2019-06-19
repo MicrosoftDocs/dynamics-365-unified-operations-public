@@ -30,14 +30,11 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Workflow Type Checklist 
+# Workflow type checklist 
 
+This topic describes the steps to follow to create a new workflow type for Finance and Operations. Workflow types are used to create configurations for a workflow in a Finance and Operations application. For more information about workflow configuration, see [Design and configure workflows for Dynamics 365 for Finance and Operations](https://msdn.microsoft.com/en-us/library/gg751350\(v=ax.60\)).
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
-
-The following checklist describes the steps to follow to create a new workflow type for Microsoft Dynamics AX. Workflow types are used to create configurations for a workflow in a Microsoft Dynamics AX application. For more information about workflow configuration, see [Design and configure workflows for Microsoft Dynamics AX](https://msdn.microsoft.com/en-us/library/gg751350\(v=ax.60\)).
-
-## Workflow Type Checklist
+## Workflow type checklist
 
 1.  If an existing category is not appropriate, create a new workflow category to use for the workflow type. For more information, see [How to: Create a Workflow Category](how-to-create-a-workflow-category.md).
 
@@ -57,7 +54,7 @@ We recommend that you use the Workflow Wizard to create a workflow type. When yo
 
 5.  Create an **Action** menu item for the workflow **SubmitToWorkflowMenuItem** property and optionally, for the **CancelMenuItem** property, and then bind the actions to the workflow type. For more information, see [How to: Create a New Workflow Type](how-to-create-a-new-workflow-type.md).
 
-### ![Cc637397.collapse\_all(en-us,AX.60).gif](images/Gg863931.collapse_all(en-us,AX.60).gif "Cc637397.collapse_all(en-us,AX.60).gif")Next Steps
+### ![Cc637397.collapse\_all(en-us,AX.60).gif](images/Gg863931.collapse_all(en-us,AX.60).gif "Cc637397.collapse_all(en-us,AX.60).gif")Next steps
 
 After you create a workflow type, you can add tasks, automated tasks, and approvals. For more information, see [Creating Workflow Tasks, Automated Tasks, and Approvals](creating-workflow-tasks-automated-tasks-and-approvals.md).
 
@@ -65,6 +62,6 @@ After you create a workflow type, you can add tasks, automated tasks, and approv
 
 [Walkthrough: Creating a Workflow Type](walkthrough-creating-a-workflow-type.md)
 
-[Implementing Workflow for Microsoft Dynamics AX](implementing-workflow-for-microsoft-dynamics-ax.md)
+[Implementing Workflow for Dynamics 365 for Finance and Operations](implementing-workflow-for-microsoft-dynamics-ax.md)
 
 [Creating Workflow Tasks, Automated Tasks, and Approvals](creating-workflow-tasks-automated-tasks-and-approvals.md)
