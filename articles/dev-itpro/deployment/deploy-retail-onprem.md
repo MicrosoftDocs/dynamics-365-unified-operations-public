@@ -48,20 +48,35 @@ Before you can start installation of Retail channel components, you must first c
 
 ## Installation steps
 
-1.	On the previously created [file share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile), create a new folder called **selfservicepackages** in the root directory of the share location.  
-2.	On each AOS computer, create an easily accessible directory, such as **C:/selfservicepackages**.  Then run the following PowerShell script on that AOS computer:
+1.	On the previously created [Application share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile) (Not **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
+2.	On each AOS computer, create an easily accessible directory, such as **C:/selfservicepackages**.
+3.  On one AOS computer (Which does not matter), run the following PowerShell script:
 
 ```powershell
-.\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
+.\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -SendProductSupportTelemetryToMicrosoft
 ```
+  > [!IMPORTANT]
+  > The above functions on version 10.0 and above.  For the original 8.1.3 release of Retail functionality on premises, the original version of the script delimiters must be used:
+  > ```powershell
+  > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
+  > ```
+
   > [!NOTE]
-  > - The parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
   > - The parameter **-envName** should be known based on creation when the environment is generated.
-  > - The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
+  > - The legacy parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
   > - The parameter **-SendProductSupportTelemetryToMicrosoft** is a required value to enable telemetry to Microsoft.  This is critical to maximize support from Microsoft.
   > - This script will perform a variety of actions, including updating the Retail Service user and role and updating Retail registry keys.
-  
-3.	Download the binary update from LCS. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+
+4. On each AOS computer, run the following PowerShell script:
+
+```powershell
+.\RetailUpdateDatabase.ps1 -RetailSelfServicePackages 'C:\RetailSelfService\Packages'
+```
+
+  > [!NOTE]
+  > - The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
+
+3.	Download the appropriate binary update from LCS to have the Retail installers. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 4.	Extract the zip file and copy all self-service installers into the folder **C:/selfservicepackages** defined and created in step 2 in each of the AOS machines. The six self-service installers include: 
     - AsyncServerConnectorServiceSetup.exe
     - RealtimeServiceAX63Setup.exe
