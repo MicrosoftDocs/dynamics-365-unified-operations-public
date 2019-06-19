@@ -47,7 +47,7 @@ There is currently a limitation in the workflow export feature that prevents wor
 Yes, a submitter of a workflow can also approve the workflow if it is configured that way. To prevent this behavior, set **Workflow parameters > General > Approver > Disallow approval by submitter** to **Yes**.
 
 ## Can I add alerts to workflows to provide notifications to users?
-There are a couple of things to comment on here:
+Here are a few issues to note about adding alerts to workflows to provide notification:
 - Alerts versus workflow notification mechanisms
     - Alerts can be set up for record changes. Workflows change records, so it's possible to set up an alert related to a record change caused by a workflow. However, because workflows have different built-in notification options, using alerts isn’t ideal.
 - Standard notifications from workflows 
