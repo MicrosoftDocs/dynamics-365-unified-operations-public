@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Event terminology and keywords
+
+[!include [banner](../includes/banner.md)]
+
 This topic describes event terminology and keywords in X++. You can use the event design pattern to make your code more modular and reusable. The term *event* is a metaphor that explains how delegates are used. When something important occurs during a program run, other modules might have to process the occurrence. These important occurrences are known as *events*. When an event occurs, the program tells its notifier for the event that the notifier must send notifications about the event. A notification must be sent to all the event handlers that are subscribers of the notifier. When the program tells its notifier to send the notifications, we call that process *raising* an event. The following table shows the terms that are used to describe the event metaphor.
 
 | Term          | Description                                                                                                               |
