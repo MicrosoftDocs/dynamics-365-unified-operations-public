@@ -32,36 +32,34 @@ ms.dyn365.ops.version: Platform update 1
 
 # Workflow type checklist 
 
-This topic describes the steps to follow to create a new workflow type for Finance and Operations. Workflow types are used to create configurations for a workflow in a Finance and Operations application. For more information about workflow configuration, see [Design and configure workflows for Dynamics 365 for Finance and Operations](https://msdn.microsoft.com/en-us/library/gg751350\(v=ax.60\)).
+This topic describes the steps to follow to create a new workflow type for Finance and Operations. Workflow types are used to create configurations for a workflow in a Finance and Operations application.
 
 ## Workflow type checklist
 
-1.  If an existing category is not appropriate, create a new workflow category to use for the workflow type. For more information, see [How to: Create a Workflow Category](how-to-create-a-workflow-category.md).
+1.  If an existing category is not appropriate, create a new workflow category to use for the workflow type. For more information, see [How to create a workflow category](workflow-category.md).
 
-2.  Create a query that accesses the document for which the new workflow type is being created. For more information, see [How to: Create a Query for a Workflow Type](how-to-create-a-query-for-a-workflow-type.md).
+2.  Create a query that accesses the document for which the new workflow type is being created. For more information, see [How to create a query for a workflow type](query-workflow-type).
 
-3.  Create a workflow type in the Application Object Tree (AOT). Typically, you do this using the Workflow Wizard. For more information, see [How to: Create a New Workflow Type](how-to-create-a-new-workflow-type.md).
+3.  Create a workflow type in the Application Object Tree (AOT). Typically, you do this using the Workflow Wizard. For more information, see [How to create a new workflow type](new-workflow-type.md).
 
 We recommend that you use the Workflow Wizard to create a workflow type. When you use the wizard to create a workflow type, the following tasks are performed by the wizard. In some cases you must add more code for your workflow type. These procedures are provided so that you can see the details of the actions that the wizard performs, and the additional steps that you must perform to complete your workflow type.
 
-1.  Create a workflow document class, and then bind the query used for the workflow to the class. For more information, see [How to: Create a Workflow Document Class](how-to-create-a-workflow-document-class.md).
+1.  Create a workflow document class, and then bind the query used for the workflow to the class. For more information, see [How to create a workflow document class](workflow-document-create.md).
 
-2.  Bind the workflow document class to the workflow type. For more information, see [How to: Associate a Workflow Document Class with a Workflow Type](how-to-associate-a-workflow-document-class-with-a-workflow-type.md).
+2.  Bind the workflow document class to the workflow type. For more information, see [How to associate a workflow document class with a workflow type](associate-document-to-type.md).
 
-3.  Create workflow event handlers for started, completed, configuration change, and canceled, and then bind them to the workflow type. For more information, see [How to: Create a Workflow Event Handler](how-to-create-a-workflow-event-handler.md).
+3.  Create workflow event handlers for started, completed, configuration change, and canceled, and then bind them to the workflow type. For more information, see [How to create a workflow event handler](how-to-create-a-workflow-event-handler.md).
 
-4.  Create a class for the SubmitToWorkflowMenuItem and optionally, for the CancelMenuItem. Bind the classes to the **Action** menu items that you will create in the next step. For more information, see [Classes in X++](classes-in-x.md).
+4.  Create a class for the SubmitToWorkflowMenuItem and optionally, for the CancelMenuItem. Bind the classes to the **Action** menu items that you will create in the next step. For more information, see [Classes in X++](dev-itpro/dev-ref/xpp-classes.md).
 
-5.  Create an **Action** menu item for the workflow **SubmitToWorkflowMenuItem** property and optionally, for the **CancelMenuItem** property, and then bind the actions to the workflow type. For more information, see [How to: Create a New Workflow Type](how-to-create-a-new-workflow-type.md).
+5.  Create an **Action** menu item for the workflow **SubmitToWorkflowMenuItem** property and optionally, for the **CancelMenuItem** property, and then bind the actions to the workflow type. For more information, see [How to create a new workflow type](new-workflow-type.md).
 
 ### ![Cc637397.collapse\_all(en-us,AX.60).gif](images/Gg863931.collapse_all(en-us,AX.60).gif "Cc637397.collapse_all(en-us,AX.60).gif")Next steps
 
-After you create a workflow type, you can add tasks, automated tasks, and approvals. For more information, see [Creating Workflow Tasks, Automated Tasks, and Approvals](creating-workflow-tasks-automated-tasks-and-approvals.md).
+After you create a workflow type, you can add tasks, automated tasks, and approvals. For more information, see [Creating workflow tasks, automated tasks, and approvals](creating-workflow-tasks-automated-tasks-and-approvals.md).
 
 ## See also
 
-[Walkthrough: Creating a Workflow Type](walkthrough-creating-a-workflow-type.md)
-
 [Implementing Workflow for Dynamics 365 for Finance and Operations](implementing-workflow-for-microsoft-dynamics-ax.md)
 
-[Creating Workflow Tasks, Automated Tasks, and Approvals](creating-workflow-tasks-automated-tasks-and-approvals.md)
+[Creating workflow tasks, automated tasks, and approvals](creating-workflow-tasks-automated-tasks-and-approvals.md)
