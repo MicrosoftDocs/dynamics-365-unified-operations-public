@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a query for a workflow type
+title: Create a query for a workflow type
 description: This topic describes how to create a query for a workflow type in Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# How to create a query for a workflow type 
+# Create a query for a workflow type 
 
 Before you create a workflow type, you must first create a query that will access the table fields for the workflow document. This topic describes how to create a query for a workflow type in Dynamics 365 for Finance and Operations.
 
