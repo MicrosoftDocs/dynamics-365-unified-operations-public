@@ -73,7 +73,9 @@ Your first sign in might take a few minutes while the environment initializes.
 
 When you first start Onboard, you can select **Start the walkthrough** to get started with a working template.
 
-If you skip the walkthrough and want to access it at a later date, select the Help icon (**?**) and then select **Get started**.
+If you skip the walkthrough and want to access it at a later date, select the Help button (**?**) and then select **Get started**.
+
+![[Start the Onboard walkthrough](./media/onboard-start-walkthrough.png)](./media/onboard-start-walkthrough.png)
 
 ## Change your domain name
 
