@@ -997,6 +997,8 @@
         href: deployment/deploy-retail-onprem.md
     - name: Develop and deploy custom models to on-premises environments
       href: deployment/develop-deploy-custom-models-on-premises.md
+    - name: PowerBI.com integration with on-premises environments
+      href: analytics/entity-store-on-prem.md
     - name: Configure reverse proxies for on-premises environments
       href: deployment/onprem-reverseproxy.md
     - name: Apply updates to an on-premises deployment
