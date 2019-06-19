@@ -36,9 +36,9 @@ This topic describes how to create a workflow document class in Dynamics 365 for
 
 Finance and Operations table fields are defined in a query to create workflow conditions. A limitation of a Finance and Operations query is that you cannot define calculated fields in the query itself. It is a common scenario to use calculated fields to determine the behavior of a workflow. For example, a dynamic sales total of all records in a table can be used as a workflow condition to determine whether the step should be used. To overcome this query limitation, you must use a workflow document class.
 
-The workflow document class that you create defines table fields for conditions in two ways: the Application Object Tree (AOT) query and parameter methods. The getQueryName method of the [WorkflowDocument Class](https://msdn.microsoft.com/en-us/library/gg798542\(v=ax.60\)) must be overridden to return the name of the query. You can optionally add calculated fields by adding parameter methods with a specific signature on the class. For more information about workflow conditions, see [Design and configure workflows for Finance and Operations](https://msdn.microsoft.com/en-us/library/gg751350\(v=ax.60\)).
+The workflow document class that you create defines table fields for conditions in two ways: the Application Object Tree (AOT) query and parameter methods. The getQueryName method of the [WorkflowDocument Class](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)) must be overridden to return the name of the query. You can optionally add calculated fields by adding parameter methods with a specific signature on the class. For more information about workflow conditions, see [Configure workflow properties](configure-workflow-properties.md) and [Configure conditional decisions in a workflow](configure-conditional-decision-workflow.md).
 
-Before you begin these procedures, you must create a query that specifies the data that will be accessed. For more information about workflow queries, see [How to create a query for a workflow type](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/how-to-create-a-query-for-a-workflow-type).
+Before you begin these procedures, you must create a query that specifies the data that will be accessed. For more information about workflow queries, see [How to create a query for a workflow type](query-workflow-type.md).
 
 The following procedures show how to create a workflow document class including a parameter method for a calculated field.
 
@@ -72,7 +72,7 @@ The following procedures show how to create a workflow document class including 
     
 
     > [!NOTE]
-    > <P>Be sure to select getQueryName as the method to override. The <A href="https://msdn.microsoft.com/en-us/library/gg798533(v=ax.60)">WorkflowDocument.getQuery Method</A> is used only internally to retrieve the actual query based on the string returned by the <A href="https://msdn.microsoft.com/en-us/library/gg798541(v=ax.60)">WorkflowDocument.getQueryName Method</A>.</P>
+    > <P>Be sure to select getQueryName as the method to override. The <A href="https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)">WorkflowDocument.getQuery Method</A> is used only internally to retrieve the actual query based on the string returned by the <A href="https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)">WorkflowDocument.getQueryName Method</A>.</P>
 
 
 
@@ -85,7 +85,7 @@ The following procedures show how to create a workflow document class including 
         }
        ```
 
-After you create the workflow document class, you can bind it to the workflow type. For more information, see [How to associate a workflow document class with a workflow type].
+After you create the workflow document class, you can bind it to the workflow type. For more information, see [How to associate a workflow document class with a workflow type](associate-document-to-type.md).
 
 To add a calculated field to the workflow document class, it must:
 
@@ -115,6 +115,4 @@ The following code example shows how to add a calculated field to determine the 
 
 ## See also
 
-[How to associate a workflow document class with a workflow type]
-
-[How to associate a workflow document class with a workflow type]: https://docs.microsoft.com/en-us/dynamicsax-2012/developer/how-to-associate-a-workflow-document-class-with-a-workflow-type
+[How to associate a workflow document class with a workflow type](associate-document-to-type.md)
