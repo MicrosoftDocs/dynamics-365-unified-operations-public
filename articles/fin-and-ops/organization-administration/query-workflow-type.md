@@ -30,12 +30,9 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# How to: Create a Query for a Workflow Type 
+# How to create a query for a workflow type 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
-
-Before you create a workflow type, you must first create a query that will access the table fields for the workflow document. The following procedure describes how to create a query that will be used by the workflow type.
+Before you create a workflow type, you must first create a query that will access the table fields for the workflow document. This topic describes how to create a query for a workflow type in Dynamics 365 for Finance and Operations.
 
 ### To create a query for a workflow type
 
@@ -51,4 +48,4 @@ Before you create a workflow type, you must first create a query that will acces
 
 6.  In the AOT, right-click the new query and then click **Save**.
 
-For more information about how to create queries, see [How to: Create Queries by using the AOT](how-to-create-queries-by-using-the-aot.md).
+For more information about how to create queries, see [How to create queries by using the AOT](how-to-create-queries-by-using-the-aot.md).
