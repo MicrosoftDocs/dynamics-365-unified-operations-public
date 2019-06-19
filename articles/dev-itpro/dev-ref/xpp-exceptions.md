@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Exception handling: throw, try...catch, finally, and retry
+
+[!include [banner](../includes/banner.md)]
+
 This topic describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions. An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown. The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
 
 ## throw statements
