@@ -72,11 +72,11 @@ A workflow type defines information about:
     </tr>
     <tr class="even">
     <td><p><strong>Category</strong></p></td>
-    <td><p>Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see <a href="how-to-create-a-workflow-category.md">How to create a workflow category</a>.</p></td>
+    <td><p>Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see <a href="workflow-category.md">How to create a workflow category</a>.</p></td>
     </tr>
     <tr class="odd">
     <td><p><strong>Query</strong></p></td>
-    <td><p>Choose the query that will access the table fields for the workflow document. For more information, see <a href="how-to-create-a-query-for-a-workflow-type.md">How to create a query for a workflow type</a>.</p></td>
+    <td><p>Choose the query that will access the table fields for the workflow document. For more information, see <a href="query-workflow-type.md">How to create a query for a workflow type</a>.</p></td>
     </tr>
     <tr class="even">
     <td><p><strong>Document menu item</strong></p></td>
@@ -98,13 +98,11 @@ A workflow type defines information about:
 
 8.  A dialog box will be displayed that indicates the status. Click **OK**. The project that contains the workflow type resources is displayed.
 
-After a workflow type is created, the next step is to complete the workflow document class to expose document data for conditions. For more information, see [How to create a workflow document class](how-to-create-a-workflow-document-class.md).
+After a workflow type is created, the next step is to complete the workflow document class to expose document data for conditions. For more information, see [How to create a workflow document class](workflow-document-create.md).
 
 ## See also
 
-[Creating a workflow type](creating-a-workflow-type.md)
+[Creating a workflow type](workflow-type.md)
 
-[How to create a workflow category](how-to-create-a-workflow-category.md)
-
-[Walkthrough: creating a workflow type](walkthrough-creating-a-workflow-type.md)
+[How to create a workflow category](workflow-category.md)
 
