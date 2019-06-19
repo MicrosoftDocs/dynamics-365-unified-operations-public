@@ -55,8 +55,8 @@ If either the trigger or the flow is deleted or disabled, the business event is 
 
 Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity.
 
-> [!Note]
-> The Flow end point in Finance and Operations must not be attempted to be configured manually in Finance and Operations. The endpoint will automatically get created from Flow as explained above.
+> [!NOTE]
+> The Flow endpoint in Finance and Operations must not be configured manually in Finance and Operations. The endpoint will automatically get created from Flow as explained above.
 
 ## Other ways to consume business events in Microsoft Flow
 
