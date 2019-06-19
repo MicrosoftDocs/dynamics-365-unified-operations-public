@@ -2939,7 +2939,7 @@
         href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
       - name: Expand Application Suite report data sets
         href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-      - name: Extend report menu items to redirect user navigations
+      - name: Extend report menu items to redirect user navigation
         href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
       - name: Create custom designs for business documents
         href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
