@@ -30,12 +30,9 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# How to: Create a New Workflow Type 
+# How to create a new workflow type 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
-
-This topic describes how to create a workflow type in the Application Object Tree (AOT). In Microsoft Dynamics AX, you enable the workflow process for a workflow document by creating workflow types that are used in the workflow configuration user interface.
+This topic describes how to create a workflow type in the Application Object Tree (AOT). In Finance and Operations, you enable the workflow process for a workflow document by creating workflow types that are used in the workflow configuration user interface.
 
 A workflow type defines information about:
 
@@ -93,7 +90,7 @@ A workflow type defines information about:
     </table>
 
 
-5.  Specify which types of menu items you want to create. You can create menu items for the Microsoft Dynamics AX client, web menu items for Enterprise Portal, or items for both.
+5.  Specify which types of menu items you want to create. You can create menu items for the Finance and Operations client, web menu items for Enterprise Portal, or items for both.
 
 6.  Click **Next**. A list of all of the resources that will be created for the workflow type is displayed.
 
@@ -101,13 +98,13 @@ A workflow type defines information about:
 
 8.  A dialog box will be displayed that indicates the status. Click **OK**. The project that contains the workflow type resources is displayed.
 
-After a workflow type is created, the next step is to complete the workflow document class to expose document data for conditions. For more information, see [How to: Create a Workflow Document Class](how-to-create-a-workflow-document-class.md).
+After a workflow type is created, the next step is to complete the workflow document class to expose document data for conditions. For more information, see [How to create a workflow document class](how-to-create-a-workflow-document-class.md).
 
 ## See also
 
-[Creating a Workflow Type](creating-a-workflow-type.md)
+[Creating a workflow type](creating-a-workflow-type.md)
 
-[How to: Create a Workflow Category](how-to-create-a-workflow-category.md)
+[How to create a workflow category](how-to-create-a-workflow-category.md)
 
-[Walkthrough: Creating a Workflow Type](walkthrough-creating-a-workflow-type.md)
+[Walkthrough: creating a workflow type](walkthrough-creating-a-workflow-type.md)
 
