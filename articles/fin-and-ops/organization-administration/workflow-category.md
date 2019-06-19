@@ -93,8 +93,6 @@ After a workflow category is created, you can bind the workflow type to the new 
 
 ## See also
 
-[Creating a workflow type](creating-a-workflow-type.md)
+[Creating a workflow type](workflow-type.md)
 
-[How to create a new workflow type](how-to-create-a-new-workflow-type.md)
-
-[Walkthrough: creating a workflow type](walkthrough-creating-a-workflow-type.md)
+[How to create a new workflow type](new-workflow-type.md)
