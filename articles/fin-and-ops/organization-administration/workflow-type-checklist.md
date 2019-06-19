@@ -54,7 +54,7 @@ We recommend that you use the Workflow Wizard to create a workflow type. When yo
 
 5.  Create an **Action** menu item for the workflow **SubmitToWorkflowMenuItem** property and optionally, for the **CancelMenuItem** property, and then bind the actions to the workflow type. For more information, see [How to create a new workflow type](new-workflow-type.md).
 
-### ![Cc637397.collapse\_all(en-us,AX.60).gif](images/Gg863931.collapse_all(en-us,AX.60).gif "Cc637397.collapse_all(en-us,AX.60).gif")Next steps
+### Next steps
 
 After you create a workflow type, you can add tasks, automated tasks, and approvals. For more information, see [Creating workflow tasks, automated tasks, and approvals](creating-workflow-tasks-automated-tasks-and-approvals.md).
 
