@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Inheritance
+
+[!include [banner](../includes/banner.md)]
+
 This topic describes inheritance in X++, including how to create a subclass and override a method.
 
 ## Creating a subclass
