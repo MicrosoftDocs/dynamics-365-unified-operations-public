@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Static class members
+
+[!include [banner](../includes/banner.md)]
+
 This topic describes static classes in X++. You declare static class members by using the **static** keyword. The **static** keyword instructs the system to create only one instance of the method, regardless of the number of times that you call **new**. This one instance is used throughout your session. In general, static methods are intended for cases where the following criteria are met:
 
 -   The method has no reason to access the member variables that are declared in the class.
