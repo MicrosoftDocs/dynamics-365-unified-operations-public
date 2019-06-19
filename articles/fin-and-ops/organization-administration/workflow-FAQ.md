@@ -47,14 +47,14 @@ There is currently a limitation in the workflow export feature that prevents wor
 Yes, a submitter of a workflow can also approve the workflow if it is configured that way. To prevent this behavior, set **Workflow parameters > General > Approver > Disallow approval by submitter** to **Yes**.
 
 ## Can I add alerts to workflows to provide notifications to users?
-Here are a few issues to note about adding alerts to workflows to provide notification:
+Here are a few key areas to note about adding alerts to workflows to provide notifications:
 - Alerts versus workflow notification mechanisms
     - Alerts can be set up for record changes. Workflows change records, so it's possible to set up an alert related to a record change caused by a workflow. However, because workflows have different built-in notification options, using alerts isn’t ideal.
 - Standard notifications from workflows 
-    - Workflows have built in email notifications. A customer can configure the notifications so that the users are sent emails. Those notifications don’t result in Action Center messages for those users.
+    - Workflows have built in email notifications. A customer can configure the notifications so that the users are sent emails. Those notifications don’t result in Action Center messages for users.
     - In a future update we will be adding an Action Center message so a user is assigned a workflow work item. 
 - Adding notifications to workflows
-    - Action Center messages can be created for specific users, such as created from a workflow in X++.
-    - [Workflows have Business Events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) that the customer could use to trigger Flows that have the notifications that they are looking for.   
+    - Action Center messages can be created for specific users, such as a message created from a workflow in X++.
+    - [Workflows have Business Events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) that the customer could use to trigger Flows have the notifications that they are looking for.   
 
 In summary, if the automatic "Action Center message to a user when they are assigned a workflow work item" is not providing the notification that a user needs, then leverage [Workflow Business Events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) with Microsoft Flow to provide additional or different notifications.
