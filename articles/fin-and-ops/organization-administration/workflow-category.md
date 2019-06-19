@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to: create a workflow category
-description: This topic describes how to create a workflow category in Dynamics 365 for Finance and Operations.
+title: 
+description: 
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
@@ -27,6 +27,7 @@ ms.search.region: Global
 ms.author: RobinARH
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+
 ---
 # How to: Create a Workflow Category 
 
