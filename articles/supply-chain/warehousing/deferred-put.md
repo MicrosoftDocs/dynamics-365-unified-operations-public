@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deferred processing of warehouse work
-description: This topic describes the functionality that allows deferred processing of warehouse work put operations in Dynamics 365 for Finance and Operations.
+description: This topic describes the functionality that makes deferred processing of warehouse work put operations available in Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
 ms.date: 06/17/2019
@@ -36,86 +36,84 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/pivate-preview-banner.md)]
 
-This topic describes the functionality that enables deferred processing of warehouse work put operations in Dynamics 365 for Finance and Operations.
+This topic describes the functionality that makes deferred processing of put operations for warehouse work available in Microsoft Dynamics 365 for Finance and Operations.
 
-Deferred processing functionality allows warehouse workers to continue with other work while the put operation is processed in the background. Deferred processing is useful when a large number of work lines needs to be processed and the worker can let that work process asynchronously, or when the server can have ad-hoc or unplanned increases of processing time that would have a negative impact on the user's productivity.
+The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
 
-Background processing is achieved by using the SysOperation framework. For more information, see [SysOperation Framework Overview](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/sysoperation-framework-overview).
+Background processing is achieved by using the SysOperation framework. For more information, see [SysOperation Framework Overview](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
 
-## Configuration of the work processing policies
+## Configuring the work processing policies
 
-To use the deferred processing, a work processing policy must be configured and used.
+To use deferred processing, you must configure and use a work processing policy.
 
-Policies are configured on the **Work processing policy** page.
+Policies are configured on the **Work processing policy** page. The following table describes the fields on that page.
 
-| **Option**                      | **Description**           |
-|---------------------------------|--------------------------------------------------------------|
-| Work processing policy name     | The name of the work processing policy.                      |
-| Work order type                 | The work order type for which the policy will be applied to.                             |
-| Operation                       | The operation that is processed using the policy.                                               |
-| Work processing method          | The method used to process the work line. If Immediate processing is used the behavior will be similar to processing the line without using work processing policies. If the method is set to Deferred the deferred processing using the batch framework will be used.                                                                |
-| Deferred processing threshold   | If the threshold is set to zero it will be interpreted as no threshold and the deferred processing will be used if possible. If the specific threshold calculation is below the threshold the immediate method will be used; otherwise, the deferred method will be used if possible. For Sales and Transfer related work the threshold is calculated as the number of associated source load lines that is being processed for the work. For replenishment work the threshold is calculated as the number of work lines that are being replenished by the work. By setting a threshold of e.g. 5 for sales, small works with less than 5 initial source load lines will not use deferred processing but larger works will. If the processing method is not Deferred the threshold will not have any impact. |
-| Deferred processing batch group | The batch group that will be used for processing.                                            |
+| Field                           | Description |
+|---------------------------------|-------------|
+| Work processing policy name     | The name of the work processing policy. |
+| Work order type                 | The work order type that the policy is applied to. |
+| Operation                       | The operation that is processed by using the policy. |
+| Work processing method          | The method that is used to process the work line. If the method is set to **Immediate**, the behavior resembles the behavior when no work processing policies are used to process the line. If the method is set to **Deferred**, deferred processing that uses the batch framework is used. |
+| Deferred processing threshold   | A value of **0** (zero) indicates that there is no threshold. In this case, deferred processing is used if it can be used. If the specific threshold calculation is below the threshold, the Immediate method is used. Otherwise, the Deferred method is used if it can be used. For sales and transfer-related work, the threshold is calculated as the number of associated source load lines that are being processed for the work. For replenishment work, the threshold is calculated as the number of work lines that are being replenished by the work. By setting a threshold of, for example, **5** for sales, smaller works that have fewer than five initial source load lines won't use deferred processing, but larger works will use it. The threshold has an effect only if the work processing method is set to **Deferred**. |
+| Deferred processing batch group | The batch group that is used for processing. |
 
 ## Assigning the work creation policy
 
-The work creation policy can be assigned at the warehouse management parameters as well as at the individual warehouses. If the policy is assigned to the warehouse, it will be applied for work created for that warehouse. If no policy is set at the warehouse level, the policy from the warehouse management parameters will be applied.
+The work creation policy can be assigned in the warehouse management parameters. It can also be assigned at the level of individual warehouses. If the policy is assigned to a warehouse, it's applied only to work that is created for that warehouse. If no policy is assigned at the warehouse level, the policy from the warehouse management parameters is applied.
 
 ## Viewing the deferred put processing tasks
 
-The deferred put processing tasks can be viewed on the **Deferred put processing tasks** page.
+You can view deferred put processing tasks on the **Deferred put processing tasks** page.
 
-By default, the **Completed tasks** are  shown.
+By default, the **Completed** tasks are shown.
 
-| **Field**        | **Description**    |
-|------------------|--------------|
-| Status           | The status of the task.    |
-| Batch job status | The status of the related batch job. If the batch job has been processed the Batch history will contain the log and information from the batch job. |
+| Field            | Description |
+|------------------|-------------|
+| Status           | The status of the task. |
+| Batch job status | The status of the related batch job. If the batch job has been processed, the batch history contains the log and information from the batch job. |
 
--   Awaiting: The related batch job is awaiting processing on the batch server.
+Here is an explanation of the possible statuses:
 
--   Failed: The processing failed. Either task can be reprocessed by using the action **Process deferred put**, or the task can be canceled by using the action **Cancel deferred put**.
-
--   Completed: The job completed.
+- **Awaiting** – The related batch job is awaiting processing on the batch server.
+- **Failed** – The processing failed. The task can be reprocessed by using the **Process deferred put** action, or it can be canceled by using the **Cancel deferred put** action.
+- **Completed** – The job was completed.
 
 ## Impact on closed work dates
 
-When using deferred put processing, the closed work date is set as the created date/time value of the deferred put processing tasks, since this is the best estimate for when the put operation completed.
+When deferred put processing is used, the closed work date is set as the created date/time of the deferred put processing tasks. The closed work date is used because it's the best estimate for when the put operation was completed.
 
 ## Reprocessing a failed task
 
-A failed task can be processed by selecting it on the page and clicking **Process deferred put**. Reprocessing corresponds to the user completing the put-away from the mobile device as if it was set to immediate processing.
+You can reprocess a failed task by selecting it on the page and then selecting **Process deferred put**. Reprocessing corresponds to a situation where the user completes the put-away from the mobile device as if it was set for immediate processing.
 
-## Cancelling failed tasks
+## Canceling failed tasks
 
-Only failed tasks can be cancelled. When cancelling, a task can be assigned to a new user or remain assigned to the user that processed the work. The cancel action corresponds to bringing back the work to the mobile device as if the last pick step has just completed and the work needs to be put-away. However, the user will have an indication that the work is "different", as the work will contain only a put-away step with a location corresponding to the location the first user that processed the work had as a final put location.
+Only failed tasks can be canceled. When you cancel a task, you can assign it to a new user. Alternatively, the task can remain assigned to the user who processed the work. Cancellation corresponds to a situation where the work is brought back to the mobile device as if the last pick step was just completed and the work must be put away. However, the user will be able to determine that the work is "different," because it will have only a put-away step, and the location will correspond to the location that the first user who processed the work had as a final put location.
 
-When the task is cancelled, the work is no longer blocked by the deferred put processing blocking reason and it can be reprocessed using the mobile device. The task record is deleted when it is cancelled.
+When a task is canceled, the work is no longer blocked by the deferred put processing blocking reason. It can be reprocessed by using the mobile device.
+
+The task record is deleted when it's canceled.
 
 ## Configuring the mobile device menu to skip the deferred processing policy
 
-The mobile device menu item can be configured so the deferred processing policy is not used and the work is processed like it would have been when no deferred processing policy was used. This is done by setting the **Deferred put processing policy** to **Override settings and process put synchronously.** This functionality enables a supervisor to use a specific menu item where the deferred put is not used.
+You can configure the mobile device menu item so that the deferred processing policy isn't used. The work is then processed as it is when no deferred processing policy is used. This functionality lets a supervisor use a specific menu item where deferred put isn't used. To configure it, set the **Deferred put processing policy** to **Override settings and process put synchronously**. 
 
-## Restrictions when the deferred put processing is not applied
+## Restrictions when the deferred put processing isn't applied
 
-There are multiple scenarios where the deferred put processing will not be applied although the policy is configured. Some examples are listed below.
+There are several scenarios where deferred put processing isn't applied even though the policy is configured. Here are some examples:
 
--   Manual work completion is used.
-
--   The work is completed using auto-completion.
-
--   Audit templates are used.
-
--   The work uses containers.
+- Manual work completion is used.
+- The work is completed by using auto-completion.
+- Audit templates are used.
+- The work uses containers.
 
 ## Monitoring the deferred processing tasks from the Outbound work monitoring workspace
 
-The **Outbound work monitoring** workspace has two tiles that help you monitor deferred put processing tasks.
+The **Outbound work monitoring** workspace has two tiles that help you monitor deferred put processing tasks:
 
-The **Failed deferred put processing tasks** tile shows the number of failed tasks. If there are failed tasks, they must either be reprocessed or cancelled by the warehouse manager since they will not be reprocessed automatically.
-
-The **Awaiting deferred put processing tasks** tile shows the number of tasks that have been in the awaiting state for more than 10 minutes. If the tile is populated, it may indicate a problem with the batch processing. It is possible to manually process the awaiting tasks. If the batch job for the task is processed afterwards it will simply fail because the task is already processed, and there will be no impact.
+- **Failed deferred put processing tasks** – This tile shows the number of failed tasks. If there are failed tasks, the warehouse manager must either reprocess them or cancel them, because they won't be reprocessed automatically.
+- **Awaiting deferred put processing tasks** – This tile shows the number of tasks that have been in the **Awaiting** status for more than 10 minutes. If the tile shows a number, it might indicate that an issue occurred during batch processing. You can manually process the **Awaiting** tasks. If the batch job for a task is processed later, it will just fail, because it has already been processed. There will be no impact.
 
 ## Deleting completed tasks
 
-Deferred put processing tasks that are completed can be deleted by multiselecting them and deleting them on the page.
+You can delete deferred put processing tasks that have been completed by selecting them and deleting them on the page.
