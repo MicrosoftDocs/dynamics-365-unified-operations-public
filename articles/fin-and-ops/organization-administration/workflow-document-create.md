@@ -119,6 +119,3 @@ The following code example shows how to add a calculated field to determine the 
 [How to: Associate a Workflow Document Class with a Workflow Type]
 
 [How to: Associate a Workflow Document Class with a Workflow Type]: https://docs.microsoft.com/en-us/dynamicsax-2012/developer/how-to-associate-a-workflow-document-class-with-a-workflow-type
-
-  
-**Announcements:** New book: "Inside Microsoft Dynamics AX 2012 R3" now available. Get your copy at the [MS Press Store](https://www.microsoftpressstore.com/store/inside-microsoft-dynamics-ax-2012-r3-9780735685109).
