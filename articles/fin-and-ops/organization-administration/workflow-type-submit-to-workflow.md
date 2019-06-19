@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a SubmitToWorkflow class
+title: Create a SubmitToWorkflow class
 description: This topic describes how to create a SubmitToWorkflow class in Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# How to create a SubmitToWorkflow class 
+# Create a SubmitToWorkflow class 
 
 In Finance and operations, a workflow is started when the user clicks the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the main method on a class that you create to activate a workflow. This topic describes how to create a SubmitToWorkflow class using the workflow type name to activate the workflow.
 
