@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 In Finance and operations, a workflow is started when the user clicks the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the main method on a class that you create to activate a workflow. This topic describes how to create a SubmitToWorkflow class using the workflow type name to activate the workflow.
 
-The same procedure can be used to activate a workflow by using the workflow configuration ID or the workflow sequence number. For more information, see [Activating a workflow](activating-a-workflow.md).
+The same procedure can be used to activate a workflow by using the workflow configuration ID or the workflow sequence number. For more information, see [Activating a workflow](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/activating-a-workflow).
 
 
 > [!NOTE]
@@ -50,7 +50,7 @@ The same procedure can be used to activate a workflow by using the workflow conf
 
 3.  Right-click the new class, and then click **New Method**. A new method node displays under the **Classes** node.
 
-4.  Right-click the new method and then click **Edit**. Enter the following main method code to activate the workflow from the workflow type name. This example applies to workflow submissions for the Finance and Operations client. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](adding-enterprise-portal-support-for-workflow-submission.md).
+4.  Right-click the new method and then click **Edit**. Enter the following main method code to activate the workflow from the workflow type name. This example applies to workflow submissions for the Finance and Operations client. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
     ```X++  
         public static void main(Args args)
         {
@@ -104,12 +104,12 @@ The same procedure can be used to activate a workflow by using the workflow conf
 
 ## See also
 
-[Activating a workflow](activating-a-workflow.md)
+[Activating a workflow](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/activating-a-workflow)
 
-[How to create a new workflow type](how-to-create-a-new-workflow-type.md)
+[How to create a new workflow type](new-workflow-type.md)
 
-[Workflow::activateFromWorkflowType method](https://msdn.microsoft.com/en-us/library/gg812416\(v=ax.60\))
+[Workflow::activateFromWorkflowType method](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
 
-[Workflow::activateFromWorkflowSequenceNumber method](https://msdn.microsoft.com/en-us/library/gg812415\(v=ax.60\))
+[Workflow::activateFromWorkflowSequenceNumber method](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
 
-[Workflow::activateFromWorkflowConfigurationId method](https://msdn.microsoft.com/en-us/library/gg812414\(v=ax.60\))
+[Workflow::activateFromWorkflowConfigurationId method](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
