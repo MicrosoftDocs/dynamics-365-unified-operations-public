@@ -90,7 +90,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 12. In the **Name** field, enter a unique name for the channel profile.
 
     > [!IMPORTANT]
-    > For on-premises deployments, use the value **Default** in this field.
+    > For on-premises deployments, any value may be entered in this field, however, the value **Default** is common.
 
 13. On the Action Pane, select **Save**.
 14. On the **Profile properties** FastTab for the new channel profile, select **Add**.
@@ -123,6 +123,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > After the first Retail Store Scale Unit is created, it requires less data generation to perform a full data sync from the Channel database instead of the Channel data group.
+    
+    > [!IMPORTANT]
+    > For on-premises deployments, there is no **Default** channel data group.  Create a new data group (And associate to the channel database and distribution schedule jobs).
 
 ### Download the Retail Store Scale Unit installer
 
