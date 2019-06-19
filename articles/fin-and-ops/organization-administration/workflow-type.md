@@ -30,12 +30,9 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Creating a Workflow Type 
+# Creating a workflow type 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
-
-To add workflow support for a document in Microsoft Dynamics AX, you must create a workflow type. This section describes the procedures to create a workflow type in Microsoft Dynamics AX. The workflow type can then be used to create workflow configurations for the document the Microsoft Dynamics AX.
+To add workflow support for a document in Finance and Operations, you must create a workflow type. This topic describes the procedures to create a workflow type. The workflow type can then be used to create workflow configurations for the document in Finance and Operations.
 
 You create workflow types to define:
 
@@ -49,7 +46,7 @@ You create workflow types to define:
 
   - A SubmitToWorkflowMenuItem.
 
-## In This Section
+## In this section
 
   - [Workflow Type Checklist](workflow-type-checklist.md)  
 
