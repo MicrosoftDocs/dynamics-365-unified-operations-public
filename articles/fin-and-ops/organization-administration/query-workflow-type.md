@@ -48,4 +48,4 @@ Before you create a workflow type, you must first create a query that will acces
 
 6.  In the AOT, right-click the new query and then click **Save**.
 
-For more information about how to create queries, see [How to create queries by using the AOT](how-to-create-queries-by-using-the-aot.md).
+For more information about how to create queries, see [How to create queries by using the AOT](query-workflow-type.md).
