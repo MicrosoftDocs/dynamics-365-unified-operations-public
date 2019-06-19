@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: How to: create a workflow category
@@ -28,9 +27,7 @@ ms.search.region: Global
 ms.author: RobinARH
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
 ---
-
 # How to: Create a Workflow Category 
 
 
