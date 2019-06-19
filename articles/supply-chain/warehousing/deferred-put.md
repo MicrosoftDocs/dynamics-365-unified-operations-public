@@ -46,7 +46,7 @@ Background processing is achieved by using the SysOperation framework. For more 
 
 To use deferred processing, you must configure and use a work processing policy.
 
-Policies are configured on the **Work processing policy** page. The following table describes the fields on that page.
+Policies are configured on the **Work processing policies** page. The following table describes the fields on that page.
 
 | Field                           | Description |
 |---------------------------------|-------------|
@@ -55,7 +55,7 @@ Policies are configured on the **Work processing policy** page. The following ta
 | Operation                       | The operation that is processed by using the policy. |
 | Work processing method          | The method that is used to process the work line. If the method is set to **Immediate**, the behavior resembles the behavior when no work processing policies are used to process the line. If the method is set to **Deferred**, deferred processing that uses the batch framework is used. |
 | Deferred processing threshold   | A value of **0** (zero) indicates that there is no threshold. In this case, deferred processing is used if it can be used. If the specific threshold calculation is below the threshold, the Immediate method is used. Otherwise, the Deferred method is used if it can be used. For sales and transfer-related work, the threshold is calculated as the number of associated source load lines that are being processed for the work. For replenishment work, the threshold is calculated as the number of work lines that are being replenished by the work. By setting a threshold of, for example, **5** for sales, smaller works that have fewer than five initial source load lines won't use deferred processing, but larger works will use it. The threshold has an effect only if the work processing method is set to **Deferred**. |
-| Deferred processing batch group | The batch group that is used for processing. |
+| Deferred processing batch group |The batch group that is used for processing. |
 
 ## Assigning the work creation policy
 
@@ -92,11 +92,11 @@ Only failed tasks can be canceled. When you cancel a task, you can assign it to 
 
 When a task is canceled, the work is no longer blocked by the deferred put processing blocking reason. It can be reprocessed by using the mobile device.
 
-The task record is deleted when it's canceled.
+The task record is deleted when the task canceled.
 
 ## Configuring the mobile device menu to skip the deferred processing policy
 
-You can configure the mobile device menu item so that the deferred processing policy isn't used. The work is then processed as it is when no deferred processing policy is used. This functionality lets a supervisor use a specific menu item where deferred put isn't used. To configure it, set the **Deferred put processing policy** to **Override settings and process put synchronously**. 
+You can configure the mobile device menu item so that the deferred processing policy isn't used. The work is then processed as it is when no deferred processing policy is used. This functionality lets a supervisor use a specific menu item where deferred put isn't used. To configure it, set the **Deferred put processing policy** field to **Override settings and process put synchronously**. 
 
 ## Restrictions when the deferred put processing isn't applied
 
