@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Interfaces
+
+[!include [banner](../includes/banner.md)]
+
 This topic describes interfaces in X++. An <em>interface</em> is a specification for a set of public instance methods. An interface defines and enforces similarities between unrelated classes without having to derive one class from the other. All interfaces are public, even if you don't explicitly add the <strong>public</strong> keyword *<strong><em>in front of the *</em>interface</strong> keyword *<strong><em>in the *</em>classDeclaration</strong> code. The methods on an interface are also public. Once again, explicit inclusion of the keyword <strong>public</strong> is optional. To create an interface, follow these steps.
 
 1.  In Server Explorer, right-click the project, and then click **Add**.
