@@ -5,7 +5,7 @@ title: Workflow FAQ
 description: This topic answers frequently asked questions about the workflow system in Microsoft Dynamics 365 for Finance and Operations.
 author: ChrisGarty 
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,5 +47,5 @@ There is currently a limitation in the workflow export feature that prevents wor
 
 ## Can the submitter of a workflow also approve the workflow?
 
-Yes, a submitter of a workflow can also approve the workflow if configured that way. That behavior can be guarded against by setting  **Workflow parameters > General > Approver > Disallow approval by submitter** to **Yes**.
+Yes, a submitter of a workflow can also approve the workflow if it is configured that way. To prevent this behavior, set **Workflow parameters > General > Approver > Disallow approval by submitter** to **Yes**.
 
