@@ -1,11 +1,33 @@
 ---
-title: 'How to: Create a SubmitToWorkflow Class'
-TOCTitle: 'How to: Create a SubmitToWorkflow Class'
-ms:assetid: 134385b2-6cdc-46f7-b641-c66668b7ad5a
-ms:mtpsurl: https://msdn.microsoft.com/en-us/library/Cc583139(v=AX.60)
-ms:contentKeyID: 35240587
-ms.date: 05/18/2015
-mtps_version: v=AX.60
+# required metadata
+
+title: How to create a SubmitToWorkflow class
+description: This topic describes how to create a SubmitToWorkflow class in Dynamics 365 for Finance and Operations.
+author: RobinARH
+manager: AnnBe
+ms.date: 06/19/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: RobinARH
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 202694
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: RobinARH
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: Platform update 1
+
 ---
 
 # How to: Create a SubmitToWorkflow Class 
