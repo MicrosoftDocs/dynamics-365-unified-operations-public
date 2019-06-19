@@ -141,7 +141,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, **https://myContosoURL.com/namespaces/AXSF/**).
     > - AADTokenIssuerPrefix should have the value **https://NOTUSED.microsoft.com**
     > - TransactionServiceAzureAuthority should have the value **https://<ADFS FQDN including .com>/adfs**.
-    > - TransactionServiceAzureResource should have the same value as the **StoreSystemAosUrl** listed in the same configuration file.
+    > - TransactionServiceAzureResource should have the base URL value of the **StoreSystemAosUrl** edited as shown above. As an example, based on the above example **https://myContosoURL.com** would be used as the value, removing the **/namespaces/AXSF/** portion of the URL.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
