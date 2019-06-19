@@ -72,11 +72,11 @@ A workflow type defines information about:
     </tr>
     <tr class="even">
     <td><p><strong>Category</strong></p></td>
-    <td><p>Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see <a href="how-to-create-a-workflow-category.md">How to: Create a Workflow Category</a>.</p></td>
+    <td><p>Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see <a href="how-to-create-a-workflow-category.md">How to create a workflow category</a>.</p></td>
     </tr>
     <tr class="odd">
     <td><p><strong>Query</strong></p></td>
-    <td><p>Choose the query that will access the table fields for the workflow document. For more information, see <a href="how-to-create-a-query-for-a-workflow-type.md">How to: Create a Query for a Workflow Type</a>.</p></td>
+    <td><p>Choose the query that will access the table fields for the workflow document. For more information, see <a href="how-to-create-a-query-for-a-workflow-type.md">How to create a query for a workflow type</a>.</p></td>
     </tr>
     <tr class="even">
     <td><p><strong>Document menu item</strong></p></td>
