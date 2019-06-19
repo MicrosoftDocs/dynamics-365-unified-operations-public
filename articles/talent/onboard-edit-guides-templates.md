@@ -70,8 +70,6 @@ Once you create an onboarding guide or template in Microsoft Dynamics 365 for Ta
 
     - To add a YouTube video, drag and drop **YouTube** to the editing area, enter a name and description for the activity, and then enter a YouTube video URL.
 
-      ![[Add a YouTube video to your onboarding guide or template](./media/onboard-edit-add-youtube-video.png)](./media/onboard-edit-add-youtube-video.png)
-
     - To add a Sway presentation or newsletter, drag and drop **Sway** to the editing area, enter a name and description for the activity, and then enter a Sway embedded URL.
 
     - To add a PowerApps app, drag and drop **PowerApps** to the editing area, enter a name and description for the activity, and then choose a PowerApps app or enter a PowerApps app ID.
