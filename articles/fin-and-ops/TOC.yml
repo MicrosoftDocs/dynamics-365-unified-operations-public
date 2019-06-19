@@ -3389,24 +3389,24 @@
         href: organization-administration/tasks/view-workflow-history.md
       - name: Configure the system to send workflow-related email to users
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
-      - name: Creating a workflow type
+      - name: Workflow types
         items:
         - name: Creating a workflow type
-          href: organization-administration/workflow-type.md
+          href: organization-administration/workflow-type-create.md
         - name: Workflow type checklist
           href: organization-administration/workflow-type-checklist.md
-        - name: How to create a workflow category
-          href: organization-administration/workflow-category.md
-        - name: How to create a query for a workflow type
-          href: organization-administration/query-workflow-type.md
-        - name: How to create a new workflow type
-          href: organization-administration/new-workflow-type.md
-        - name: How to create a workflow document class
-          href: organization-administration/workflow-document-create.md
-        - name: How to create a SubmitToWorkflow class
-          href: organization-administration/submit-to-workflow.md
-        - name: How to associate a workflow document class with a workflow type
-          href: organization-administration/associate-document-to-type.md
+        - name: Create a workflow category
+          href: organization-administration/workflow-type-category.md
+        - name: Create a query for a workflow type
+          href: organization-administration/workflow-type-query.md
+        - name: Create a new workflow type
+          href: organization-administration/workflow-type-create-new.md
+        - name: Create a workflow document class
+          href: organization-administration/workflow-type-document-create.md
+        - name: Create a SubmitToWorkflow class
+          href: organization-administration/workflow-type-submit-to-workflow.md
+        - name: Associate a workflow document class with a workflow type
+          href: organization-administration/workflow-type-associate-document.md
       - name: Workflow types report
         href: organization-administration/workflow-types-report.md
       - name: Workflow FAQ
