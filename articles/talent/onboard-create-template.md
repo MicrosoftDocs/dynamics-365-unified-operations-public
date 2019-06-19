@@ -58,8 +58,8 @@ Dynamics 365 for Talent: Onboard provides you with a variety of templates to get
 
 ## Next steps
 
-- [Share an onboarding template with other contributors](./onboard-share-template.md)
-- [Create an onboarding guide](./onboard-create-guide.md)
+- [Edit onboarding guides and templates](./onboard-edit-guides-templates.md)
+- [Share content with other contributors](./onboard-share-template.md)
 - [View the status of tasks and onboarding employees](./onboard-view-status.md)
 - [Create hiring teams in Onboard](./onboard-create-team.md)
 

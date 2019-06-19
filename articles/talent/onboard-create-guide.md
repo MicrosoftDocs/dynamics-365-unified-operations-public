@@ -133,6 +133,8 @@ You can save an onboarding guide as a template to save you time while creating g
 
 ## Next steps
 
+- [Edit onboarding guides and templates](./onboard-edit-guides-templates.md)
+- [Share content with other contributors](./onboard-share-template.md)
 - [View the status of tasks and onboarding employees](./onboard-view-status.md)
 - [Create hiring teams in Onboard](./onboard-create-team.md)
 

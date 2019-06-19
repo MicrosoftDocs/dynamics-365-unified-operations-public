@@ -129,3 +129,16 @@ You can add useful files, maps, and links to the **Resources** section of your g
 If you need to delete a resource, select the **Delete** (trash can) button to the right of the resource.
 
 If you need to edit a contact, select the **Edit** (pencil) button to the right of the resource.
+
+## Next steps
+
+- [Share content with other contributors](./onboard-share-template.md)
+- [View the status of tasks and onboarding employees](./onboard-view-status.md)
+- [Create hiring teams in Onboard](./onboard-create-team.md)
+
+### See also
+
+- [Try or buy the Onboard app](https://dynamics.microsoft.com/en-us/talent/onboard/)
+- [What's new](./whats-new.md)
+- [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/index)
+- [Get support](./talent-support.md)

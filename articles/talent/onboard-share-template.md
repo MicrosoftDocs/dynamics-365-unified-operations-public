@@ -73,9 +73,9 @@ With Microsoft Dynamics 365 for Talent: Onboard, you can share onboarding guides
 
 ## Next steps
 
-- [Create an onboarding guide](./onboard-create-guide.md)
+- [Share content with other contributors](./onboard-share-template.md)
 - [View the status of tasks and onboarding employees](./onboard-view-status.md)
-- [Create hiring teams in Onboard](./onboard-create-team.md) 
+- [Create hiring teams in Onboard](./onboard-create-team.md)
 
 ### See also
 
