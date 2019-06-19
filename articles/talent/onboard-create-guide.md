@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guides from templates you created on your own or from those available in the gallery. After you've created at least one onboarding template, you can create a guide for your new hire.
+With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guides from templates you created on your own, from those available in the gallery, or from scratch.
+
+After you've created an onboarding guide, you can send it to a single new hire, or you can send a guide to multiple new hires that you specify in an Excel file that you download from the Onboard app.
 
 ## Create and send an onboarding guide to a single new hire from a template
 
@@ -55,12 +57,10 @@ With Microsoft Dynamics 365 for Talent: Onboard, you can create onboarding guide
 
 7. If desired, select an automatic send date. If you want to send the guide immediately, turn the **Schedule an automatic send date** toggle button off. Select **Done**.
 
-8. Select **Send** in the upper-right corner of the screen. Then do one of the following:
+8. When you're done editing your guide, select **Send** in the upper-right corner of the screen. Then do one of the following:
     - If you want to send your new hire a link to the onboarding guide on your own, select **copy a link** and then select **Copy**.
     - If you want to customize the email for the onboarding guide, select **Customize the email before sending** and then select **Next**, customize the email as desired, and select **Send**.
     - If you don't want to customize the email, select **Next** and then select **Send**.
-
-9. If you want to send your customized guide to another new hire, select **Save as template**, enter a new template name, select **Save**, and start the process over again.
 
 ## Create and send on onboarding guide to multiple new hires from a template
 
@@ -91,16 +91,14 @@ Onboard lets you send an onboarding guide to multiple new hires at the same time
 
    [![Drag and drop your edited spreadsheet](./media/onboard-send-guide-drag-spreadsheet.png)](./media/onboard-send-guide-drag-spreadsheet.png)
 
-8. Select **Send** in the upper-right corner of the screen. Then do one of the following:
-    - If you want to send your new hire a link to the onboarding guide on your own, select **copy a link** and then select **Copy**.
+8. When you're done editing your guide, select **Send** in the upper-right corner of the screen. Then do one of the following:
+    - If you want to send your new hires a link to the onboarding guide on your own, select **copy a link** and then select **Copy**.
     - If you want to customize the email for the onboarding guide, select **Customize the email before sending** and then select **Next**, customize the email as desired, and select **Send**.
     - If you don't want to customize the email, select **Next** and then select **Send**.
 
-9. If you want to send your customized guide to other new hires, select **Save as template**, enter a new template name, select **Save**, and start the process over again.
-
 ## Create a guide without a template
 
-You don't always have to create a guide from a template. If your guide is meant for only one new hire, you can create a guide from scratch instead.
+You don't always have to create a guide from a template. If you prefer, you can create a guide from scratch instead.
 
 1. On the left-hand menu, select **Guides** and then select **Add** (plus sign).
 
@@ -111,13 +109,6 @@ You don't always have to create a guide from a template. If your guide is meant 
 3. Select a start date under **When do they start**. 
 
 4. If desired, select an automatic send date. If you want to send the guide immediately, turn the **Schedule an automatic send date** toggle button off. Select **Done**.
-
-5. Select **Send** in the upper-right corner of the screen. Then do one of the following:
-    - If you want to send your new hire a link to the onboarding guide on your own, select **copy a link** and then select **Copy**.
-    - If you want to customize the email for the onboarding guide, select **Customize the email before sending** and then select **Next**, customize the email as desired, and select **Send**.
-    - If you don't want to customize the email, select **Next** and then select **Send**.
-
-6. If you want to send your customized guide to another new hire, select **Save as template**, enter a new template name, select **Save**, and start the process over again. 
 
 ## Save a guide as a template
 
