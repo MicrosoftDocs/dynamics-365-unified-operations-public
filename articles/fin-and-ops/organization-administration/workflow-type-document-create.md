@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a workflow document class
+title: Create a workflow document class
 description: This topic describes how to create a workflow document class in Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# How to create a workflow document class 
+# Create a workflow document class 
 
 This topic describes how to create a workflow document class in Dynamics 365 for Finance and Operations.
 
