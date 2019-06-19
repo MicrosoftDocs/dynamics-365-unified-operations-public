@@ -30,12 +30,9 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# How to: Associate a Workflow Document Class with a Workflow Type 
+# How to associate a workflow document class with a workflow type 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
-
-To create a workflow in Microsoft Dynamics AX, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields used by the workflow. This procedure describes how to bind the workflow document class to a workflow type.
+To create a workflow in Dynamics 365 for Finance and Operations, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields used by the workflow. This topic describes how to bind the workflow document class to a workflow type.
 
 
 > [!NOTE]
@@ -43,7 +40,7 @@ To create a workflow in Microsoft Dynamics AX, you must bind a workflow document
 
 
 
-Before you begin this procedure, you must create a workflow document class to expose table fields used for conditions in the configuration user interface. For more information, see [How to: Create a Workflow Document Class](how-to-create-a-workflow-document-class.md).
+Before you begin this procedure, you must create a workflow document class to expose table fields used for conditions in the configuration user interface. For more information, see [How to create a workflow document class](how-to-create-a-workflow-document-class.md).
 
 ### To bind a workflow document class to a workflow type
 
@@ -55,8 +52,8 @@ Before you begin this procedure, you must create a workflow document class to ex
 
 ## See also
 
-[How to: Create a New Workflow Type](how-to-create-a-new-workflow-type.md)
+[How to create a new workflow type](how-to-create-a-new-workflow-type.md)
 
-[Walkthrough: Creating a Workflow Type](walkthrough-creating-a-workflow-type.md)
+[Walkthrough: creating a workflow type](walkthrough-creating-a-workflow-type.md)
 
-[How to: Create a Workflow Document Class](how-to-create-a-workflow-document-class.md)
+[How to create a workflow document class](how-to-create-a-workflow-document-class.md)
