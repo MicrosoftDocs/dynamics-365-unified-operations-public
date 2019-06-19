@@ -1,11 +1,33 @@
 ---
-title: 'How to: Create a Workflow Document Class'
-TOCTitle: 'How to: Create a Workflow Document Class'
-ms:assetid: 6ca32cdb-772f-412a-bd73-19be04882e29
-ms:mtpsurl: https://msdn.microsoft.com/en-us/library/Cc592495(v=AX.60)
-ms:contentKeyID: 35244798
-ms.date: 05/18/2015
-mtps_version: v=AX.60
+# required metadata
+
+title: How to create a workflow document class
+description: This topic describes how to create a workflow document class.
+author: RobinARH
+manager: AnnBe
+ms.date: 06/19/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: RobinARH
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 202694
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: RobinARH
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: Platform update 1
+
 ---
 
 # How to: Create a Workflow Document Class 
