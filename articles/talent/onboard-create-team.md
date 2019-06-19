@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Talent: Onboard, you can create hiring teams and assign onboarding guide templates to each team.
+In Microsoft Dynamics 365 for Talent: Onboard, you can create hiring teams and assign onboarding guides and templates to each team.
 
 ## Create a hiring team
 
@@ -43,21 +43,41 @@ In Microsoft Dynamics 365 for Talent: Onboard, you can create hiring teams and a
 
 3. In the **Create a new team** window, enter a name for the hiring team under **Team name**.
 
+   ![[Create a new team in Onboard](./media/onboard-create-team.png)](./media/onboard-create-team.png)
+
 4. Under **Choose team members**, enter the names or email addresses of each team member. You can remove team members by clicking the **X** that appears by their name under the box.
 
 5. If you want to email new team members, set the toggle next to **Send an email to the new members**.
 
 6. Select **Create**. If you indicated you want to email new team members, edit the email in the next window and select **Done**.
 
-## Assign onboarding guide templates to a hiring team
+## Assign onboarding guides to a hiring team
 
 1. In the left-hand menu, select **Teams**.
 
 2. Select the desired team.
 
-3. Select **Add templates**.
+3. Select **Guides** and then select **Add guides**.
+
+   ![[Add templates to the team](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
 
 4. Check each template you want to assign to the team and then select **Add**.
+
+   ![[Select templates to add to the team](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+
+## Assign onboarding templates to a hiring team
+
+1. In the left-hand menu, select **Teams**.
+
+2. Select the desired team.
+
+3. Select **Templates** and then select **Add templates**.
+
+   ![[Add templates to the team](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
+
+4. Check each template you want to assign to the team and then select **Add**.
+
+   ![[Select templates to add to the team](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### See also
 

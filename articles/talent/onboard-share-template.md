@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Share an onboarding template with other contributors in Microsoft Dynamics 365 for Talent - Onboard.
-description: Track where new hires are in their onboarding process with the Microsoft Dynamics 365 for Talent - Onboard app.
+title: Share content with other contributors in Microsoft Dynamics 365 for Talent - Onboard
+description: Share onboarding guides and templates with other contributors the Microsoft Dynamics 365 for Talent - Onboard app.
 author: andreabichsel
 manager:
 ms.date: 05/20/2019
@@ -29,11 +29,31 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Share an onboarding template with other contributors
+# Share content with other contributors
 
 [!include [banner](includes/banner.md)]
 
-With Microsoft Dynamics 365 for Talent: Onboard, you can share onboarding templates with other contributors so they can review and make changes.
+With Microsoft Dynamics 365 for Talent: Onboard, you can share onboarding guides and templates with other contributors so they can review and make changes.
+
+## Share an onboarding guide with other contributors
+
+1. On the left-hand menu, select **Guides** and then select the guide you want to share.
+
+2. Select **More** (ellipsis) on the top right-hand corner of the screen, and then select **Share**.
+
+   ![[Share an onboarding guide](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
+
+3. Under **Share with**, if you want recipients to be able to revise the guide, set the toggle for **Can these people make edits?** to On. If you want recipients to be notified by email that you've shared the guide with them, se the toggle for **Send email notification to recipients** to On.
+
+   ![[Share guide with contributors](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+
+4. Enter a name or email address and select the desired recipient from the dropdown.
+
+5. If you want to review or change what recipients can do with your guide, select the **Manage access** tab. Select the dropdown next to a recipient's name and select **Can View**, **Can edit**, or **Remove**, as appropriate.
+
+6. When you're done adding or modifying recipients, select **Update**.
+
+## Share an onboarding template with other contributors
 
 1. On the left-hand menu, select **Templates**.
 

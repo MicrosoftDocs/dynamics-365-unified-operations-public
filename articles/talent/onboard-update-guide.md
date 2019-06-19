@@ -47,7 +47,9 @@ If you need to make changes to onboarding guides in Microsoft Dynamics 365 for T
 
 3. Make all desired changes and then select **Save** (the disk icon).
 
-Onboard will automatically send the new hire an email saying what the changes are.
+   ![[Save changes to onboarding guide](./media/onboard-save.png)](./media/onboard-save.png)
+
+Onboard will automatically send the new hire an email saying what the changes are. A red **New** tag appears next to each change for easy identification.
 
 ## Edit multiple guides by editing the onboarding template
 
@@ -61,4 +63,4 @@ Onboard will automatically send the new hire an email saying what the changes ar
 
    ![[Push changes in onboarding template to all guides created from it](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
-While these changes will be visible to new hires who open the onboarding guides, Onboard does not send email alerts to new hires letting them know their onboarding guide has changed. 
+While these changes will be visible to new hires who open the onboarding guides, Onboard does not send email alerts to new hires letting them know their onboarding guide has changed.  A red **New** tag appears next to each change for easy identification.

@@ -147,8 +147,10 @@
     - name: Create and send an onboarding guide
       href: onboard-create-guide.md
     - name: Create an onboarding template
-      href: onboard-create-template.md 
-    - name: Share an onboarding template
+      href: onboard-create-template.md
+    - name: Edit guides and templates
+      href: onboard-edit-guides-templates.md   
+    - name: Share content
       href: onboard-share-template.md
     - name: View status
       href: onboard-view-status.md

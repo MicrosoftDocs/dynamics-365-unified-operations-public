@@ -39,9 +39,13 @@ Microsoft Dynamics 365 for Talent: Onboard lets you view the progress of your ne
 
 1. On the left-hand menu, select **Guides**. This provides an overview of the progress for all the guides you've sent.
 
+   ![[View status of onboarding guides](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+
 2. To drill down, select the guide you want to view.
 
 3. Select **Activities** to see which activities your new hire has completed.
+
+   ![[View activities completed by new hire](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## View onboarding tasks assigned to you
 
