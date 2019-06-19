@@ -38,6 +38,9 @@ This topic is intended to help architects and developers make sound design decis
 
 The topic describes integration patterns, integration scenarios, and integration solutions and best practices for Finance and Operations. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
+> [!NOTE]
+> When providing guidance and discussing scenarios for choosing a pattern, data volume numbers are mentioned. These numbers must be only used to guage the pattern and must not be considered as hard system limits. The absolute numbers will vary in real production environments due to various factors, of which, configurations are just one aspect.
+
 The following table lists the integration patterns that are available for Finance and Operations.
 
 | Pattern                       | Documentation |
