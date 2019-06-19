@@ -48,20 +48,16 @@ You create workflow types to define:
 
 ## In this section
 
-  - [Workflow type checklist](workflow-type-checklist.md)  
+  - [Workflow type checklist](organization-administration/workflow-type-checklist.md)  
 
-  - [How to create a workflow category](how-to-create-a-workflow-category.md)  
+  - [How to create a workflow category](organization-administration/workflow-category.md)  
 
-  - [How to create a query for a workflow type](how-to-create-a-query-for-a-workflow-type.md)  
+  - [How to create a query for a workflow type](organization-administration/query-workflow-type.md)  
 
-  - [How to create a new workflow type](how-to-create-a-new-workflow-type.md)  
+  - [How to create a new workflow type](organization-administration/new-workflow-type.md)  
 
-  - [How to create a workflow document class](how-to-create-a-workflow-document-class.md)  
+  - [How to create a workflow document class](organization-administration/workflow-document-create.md)  
 
-  - [How to create a SubmitToWorkflow class](how-to-create-a-submittoworkflow-class.md)  
+  - [How to create a SubmitToWorkflow class](organization-administration/submit-to-workflow.md)  
 
-  - [How to associate a workflow document class with a workflow type](how-to-associate-a-workflow-document-class-with-a-workflow-type.md)  
-
-## See also
-
-[Walkthrough: creating a workflow type](walkthrough-creating-a-workflow-type.md)
+  - [How to associate a workflow document class with a workflow type](organization-administration/associate-document-to-type.md)  
