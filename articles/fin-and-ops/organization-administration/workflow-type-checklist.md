@@ -48,7 +48,7 @@ We recommend that you use the Workflow Wizard to create a workflow type. When yo
 
 2.  Bind the workflow document class to the workflow type. For more information, see [How to associate a workflow document class with a workflow type](associate-document-to-type.md).
 
-3.  Create workflow event handlers for started, completed, configuration change, and canceled, and then bind them to the workflow type. For more information, see [How to create a workflow event handler](how-to-create-a-workflow-event-handler.md).
+3.  Create workflow event handlers for started, completed, configuration change, and canceled, and then bind them to the workflow type. For more information, see [How to create a workflow event handler](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler).
 
 4.  Create a class for the SubmitToWorkflowMenuItem and optionally, for the CancelMenuItem. Bind the classes to the **Action** menu items that you will create in the next step. For more information, see [Classes in X++](dev-itpro/dev-ref/xpp-classes.md).
 
@@ -56,10 +56,14 @@ We recommend that you use the Workflow Wizard to create a workflow type. When yo
 
 ### Next steps
 
-After you create a workflow type, you can add tasks, automated tasks, and approvals. For more information, see [Creating workflow tasks, automated tasks, and approvals](creating-workflow-tasks-automated-tasks-and-approvals.md).
+After you create a workflow type, you can add tasks, automated tasks, and approvals. For more information, select the links below in the **See also** section.
 
 ## See also
 
-[Implementing Workflow for Dynamics 365 for Finance and Operations](implementing-workflow-for-microsoft-dynamics-ax.md)
+[Configure workflow properties](configure-workflow-properties.md)
 
-[Creating workflow tasks, automated tasks, and approvals](creating-workflow-tasks-automated-tasks-and-approvals.md)
+[Configure manual tasks in a workflow](configure-manual-task-workflow.md)
+
+[Configure automated tasks in workflow](configure-automated-task-workflow.md)
+
+[Configure approval processes in a workflow](configure-approval-process-workflow.md)
