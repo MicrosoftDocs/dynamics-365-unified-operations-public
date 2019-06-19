@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to associate a workflow document class with a workflow type
+title: Associate a workflow document class with a workflow type
 description: The topic describes how to associate a workflow document class with a workflow type in Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# How to associate a workflow document class with a workflow type 
+# Associate a workflow document class with a workflow type 
 
 To create a workflow in Dynamics 365 for Finance and Operations, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields used by the workflow. This topic describes how to bind the workflow document class to a workflow type.
 
