@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry:
 ms.author: tjvass
 ms.search.validFrom: 2019-07-18 
-ms.dyn365.ops.version: Platform update 27
+ms.dyn365.ops.version: Platform update 26
 ---
 
 # Select Analytical Workspace from PowerBI.com
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 27
 ## Analytical Workspaces
 Analytical Workspaces that are bundled with the application Suite offer users relevant insights into their business data. However, there will be cases where it makes sense to replace the standard reports with custom solutions that are designed specifically for users in your organization.  
 
-PowerBI.com provides world-class tooling for producing analytical solutions that contain mash-up views with data from external sources.  With the release of Microsoft Dynamics Finance and Operations Platform update 28, power users can replace the standard embedded solutions with reports that are hosted on PowerBI.com.    
+PowerBI.com provides world-class tooling for producing analytical solutions that contain mash-up views with data from external sources.  With the release of Microsoft Dynamics Finance and Operations Platform update 26, power users can replace the standard embedded solutions with reports that are hosted on PowerBI.com.    
 
 > [!IMPORTANT]
 > This is not an exercise of personalization. Customizing analytical workspaces applies to all users within the active Legal Entity.
