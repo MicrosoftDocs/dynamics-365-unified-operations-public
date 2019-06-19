@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 27
 [!include[banner](../includes/banner.md)]
 
 ## Analytical Workspaces
-Analytical Workspaces bundled with the application Suite offer users relevant insights into their business data.  However, there will be cases where it makes sense to replace the standard reports with custom solutions more appropriate for users within your organization.  
+Analytical Workspaces bundled with the application Suite offer users relevant insights into their business data.  However, there will be cases where it makes sense to replace the standard reports with custom solutions designed specifically for users within your organization.  
 
 PowerBI.com provides world-class tooling for producing analytical solutions containing mash-up views with data from external sources.  With the latest Platform update, power users are able to replace the standard embedded solutions with reports hosted on PowerBI.com.    
 
