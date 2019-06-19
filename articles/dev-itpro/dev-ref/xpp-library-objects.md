@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Class library
+
+[!include [banner](../includes/banner.md)]
+
 This topic describes the library of classes in X++. There are two kinds of classes: *application classes* and *system classes*.
 
 -   **Application classes** – These classes are implemented in X++. They are available in the **Classes** node in Application Explorer.
