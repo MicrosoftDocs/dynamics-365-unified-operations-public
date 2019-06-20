@@ -35,7 +35,7 @@ This procedure shows you how to create a sales order. You can use the procedure 
 ## Enter sales order header details
 1. Go to Sales and marketing > Sales orders > All sales orders.
 
-[screenshot1](../media/create-sales-order-1.jpg)
+![screenshot1](../media/create-sales-order-1.jpg)
 
 2. Click New.
 3. In the Customer account field, click the drop-down button to open the lookup.
