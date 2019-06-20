@@ -72,6 +72,9 @@ The operations schedule also drives master planning and determines calculations 
 -   **Material availability** – Inventory, subproductions, suppliers, and vendors
 -   **Capacity availability** – Resources that are required for production
 
+> [Note!]
+When using multi-threaded master planning and Operations scheduling then finiste capacity will not considered. 
+
 ## Cancellations
 When you run operations scheduling, you can cancel specific parts of the routing. These parts include the queue time, setup time, process time, overlap time, and transport times.
 
