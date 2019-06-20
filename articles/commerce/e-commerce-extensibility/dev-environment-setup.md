@@ -39,7 +39,7 @@ A source code editor such as Visual Studio Code is recommended.  Visual Studio C
 
 Navigate to https://code.visualstudio.com and download the latest stable build. When the installation is complete, Visual Studio Code will auto launch and should look similar to the below image.
 
-![Installing Visual Studio Code](media/setup-install-vs-code-2.png)
+![Installing Visual Studio Code](media/setup-vs-code.png)
 
 ## Installing Node.js
 Node.js is a JavaScript runtime built on [Chrome’s V8 JavaScript Engine](https://v8.dev/).
