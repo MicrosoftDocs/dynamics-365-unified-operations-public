@@ -39,7 +39,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 
 ## Preparation steps 
 
-1. Rename the original **Infrastructure** folder you created during **Set up and deploy on-premises environments** [on-premises setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts) to **InfrastructureOld**.
+1. Rename the original **Infrastructure** folder you created during **Set up and deploy on-premises environments** [on-premises setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts) to **InfrastructureOld**.
 
 2. Download the latest [on-premises setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
 
