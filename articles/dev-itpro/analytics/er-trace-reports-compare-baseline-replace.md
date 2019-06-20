@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Improvements in tracing results of generated ER reports and comparing them with baseline values
-description: This topic provides information about how the ER baseline feature has been improved with the release of 10.0.3.
+title: Improvements in tracing the results of generated ER reports and comparing them with baseline values
+description: This topic provides information about how the ER baseline feature has been improved in Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (June 2019).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -30,182 +30,196 @@ ms.dyn365.ops.version: Release 8.0
 
 ---
 
-# Improvements in tracing results of generated ER reports and comparing them with baseline values
+# Improvements in tracing the results of generated ER reports and comparing them with baseline values
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the first set of improvements that have been made to the Electronic reporting (ER) framework baseline feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations starting from the 10.0.3 version.
+This topic describes the first set of improvements that have been made to the baseline feature of the Electronic reporting (ER) framework. These improvements are available in Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (June 2019) and later.
 
 ## Automate the setting of baseline rules
 
-The [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic explains how to configure the Electronic reporting (ER) framework to collect information about ER format executions and evaluate the results of those executions. The example in this topic provides the set of steps that must be completed.
+The [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic explains how to configure the ER framework to collect information about ER format executions and evaluate the results of those executions. The example in this topic shows the steps that must be completed.
 
-Some of the steps include:
+Here are some of the steps:
 
-- Execute an ER format to generate an outbound file and store it locally
-- Add the locally stored file as an attachment of the baseline added for an ER format
-- Configure the baseline rule for an added baseline that includes the following:
+- Run an ER format to generate an outbound file, and store the file locally.
+- Add the locally stored file as an attachment of the baseline that was added for an ER format.
+- Configure the baseline rule for the added baseline. This configuration includes the following steps:
 
-    - Specify an ER format element that is used to generate an outbound file
-    - Select the attachment that refers to generated outbound file
+    - Specify an ER format element that is used to generate an outbound file.
+    - Select the attachment that refers to the generated outbound file.
 
 > [!NOTE]
-> These steps need to be performed manually even though the new ER capabilities allow them to be automated. To learn more about this feature, complete the example in this topic below.
+> These steps must be done manually, even though the new ER capabilities enable them to be automated. To learn more about this feature, complete the following example.
 
 ## Example: Automate the setting of baseline rules
 
-To complete the steps in this example, you must first complete the steps of the example in [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) up to the section, **Add a new baseline for a designed ER format** inclusively.
+To complete the steps in this example, you must first complete the steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic, up through the "Add a new baseline for a designed ER format" section.
 
 ### Review added baseline
+
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
-
-The **Baselines** option is available on the Action Pane. This means that the ER user parameter **Run in debug mode** is turned on for the current company.
-
 2. Select **Baselines**.
 
-The baseline has been added for the selected **Format to learn ER baselines** format and the baseline rules have not been added for this baseline yet.
+    > [!NOTE]
+    > The **Baselines** button on the Action Pane is available only when the **Run in debug mode** ER user parameter is turned on for the current company.
 
-![Electronic reporting baselines](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot of the Electronic reporting baselines page")
+The baseline has been added for the selected **Format to learn ER baselines** format, but the baseline rules haven't yet been added for this baseline.
+
+![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot of the Electronic reporting format baselines page")
 
 ### Make a new baseline rule
+
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. In the tree, expand **Model to learn ER baselines**.
-3. In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
+3. In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.
 4. On the **Versions** FastTab, select **Run**.
-5. In the **Enter ID** field, type **1**.
-6. In the **Make baseline files** field select **Yes** and then select **OK**.
+5. In the **Enter Id** field, enter **1**.
+6. Set the **Make baseline files** option to **Yes**.
+7. Select **OK**.
 
-![User dialog](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Screenshot of the dialog page of a user running an ER format")
+    ![Electronic report parameters dialog box](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Screenshot of the Electronic report parameters dialog box")
 
-7. Select **Baselines**.
+8. Select **Baselines**.
 
-![Electronic reporting baselines](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot of the Electronic reporting baselines page")
+    ![Electronic reporting format baselines page](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot of the Electronic reporting format baselines page")
+
+    The generated outbound file has been automatically attached to the baseline of the executed ER format. The baseline rule has been automatically added to this baseline and also contains the reference to the attached file.
+
+9. In the **Name** field, enter **Baseline 1**.
+10. In the **File name mask** field, enter **.xml**.
+11. Select **Save**.
+
+### Run the format
+
+You're now ready to complete the remaining steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic, starting from the "Run the designed ER format and review the log to analyze the results" section.
 
 > [!NOTE]
-> The generated outbound file has been automatically attached to the baseline of the executed ER format. The baseline rule has been automatically added to this baseline as well as containing the reference to the attached file.
+> When you delete the automatically added baseline rule on the **Baselines** FastTab, the referenced attachment isn't automatically deleted.
 
-8. In the **Name** field, type **Baseline 1**.
-9. In the **File name mask** field, type **.xml** and then select **Save**.
+## Configure the baseline so that it ignores constantly changing parts of the ER output
 
-### Run format
+When an ER format has been designed to contain information that is changed when the format is run, the format must be required to use the ER baseline feature to compare the generated results with baseline values. For example, the information might be the processing date and time or the unique identifier of a generated document in different formats (globally unique identifier \[GUID\], and so on). The new ER capabilities let you configure the baseline rule so that it ignores changeable elements of an ER format when the format is run with the purpose of comparing baseline values with the results of the format's execution. To learn more about this feature, complete the following example.
 
-Now you are ready to complete the remaining steps in the example in [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) page continuing from the section **Run the designed ER format and review the log to analyze the results**.
+## Example: Configure the baseline so that it ignores constantly changing parts of the ER output
 
-> [!NOTE]
-> When you delete the automatically added baseline rule on the **Baselines** FastTab, the referred attachment is not deleted automatically.
-
-## Configure baseline as insensitive to constantly changing parts of ER output
-
-When an ER format has been designed to contain information that is changed when the format is executed, the format must be required to use the ER baseline feature to compare with basline values. For example, it can be the processing date & time or the unique identifier of a generated document in different formats (GUID, etc.). The new ER capabilities allow you to configure your baseline rule to ignore such changeable elements of an ER format when the format is executed with the purpose of comparing baseline values with the results of its execution. To learn more about this feature, complete the following example.
-
-## Example: Configure baseline as insensitive to constantly changing parts of ER output
-
-To complete the steps in this example, you must first complete the steps of the example in [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md).
+To complete the steps in this example, you must first complete the steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic.
 
 ### Modify a configured ER format
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. In the tree, expand **Model to learn ER baselines**.
-3. In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
-4. Select **Designer**, and in the tree, select **Output\Document**.
-5. Select **Add** to open the drop dialog.
-6. In the tree, select **XML\Attribute**.
-7. In the **Name** field, type **ProcessingDateTime** and then click **OK**.
-8. Select the **Mapping** tab, and in the tree, select **Output\Document\ProcessingDateTime**.
-9. Select **Edit formula**.
-10. In the **Formula** field, enter the following expression: **DATETIMEFORMAT(NOW(), "O")**
-11.	Select **Save** and then select **Test**.
-12.	Select **Test** again to text the configured expression once more.
+3. In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.
+4. Select **Designer**.
+5. In the tree, select **Output\\Document**.
+6. Select **Add**.
+7. In the drop-down dialog box, in the tree, select **XML\\Attribute**.
+8. In the **Name** field, enter **ProcessingDateTime**.
+9. Select **OK**.
+10. On the **Mapping** tab, in the tree, select **Output\\Document\\ProcessingDateTime**.
+11. Select **Edit formula**.
+12. In the **Formula** field, enter the following expression: **DATETIMEFORMAT(NOW(), "O")**
+13. Select **Save**, and then select **Test**.
+14. Select **Test** again to retest the configured expression.
 
-![Electronic reporting Formula designer](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Screenshot of the Electronic reporting Formula designer page")
+    ![Formula designer page](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Screenshot of the Formula designer page")
 
-> [!NOTE]
-> The **Test results** pane indicates that the configured expression returns a different date & time value whenever this expression is called.
+    > [!NOTE]
+    > The **Test result** tab shows that the configured expression returns a different date and time value whenever it's called.
 
-13.	Close the **Formula designer** page and then click **Save**.
+15. Close the **Formula designer** page, and then select **Save**.
 
-![Electronic reporting Operations designer](media/GER-BaselineSample-FormatMappingDesign2.PNG "Screenshot of the Electronic reporting Operations designer page")
+    ![Format designer page](media/GER-BaselineSample-FormatMappingDesign2.PNG "Screenshot of the Format designer page")
 
-16.	Close the Electronic reporting Operations designer page.
+16. Close the **Format designer** page.
 
 ### Remove an existing baseline rule
 
-1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**, and on the **Configurations** page, select **Baselines**.
-2. In the list of baselines, select the baseline configured for the **Format to learn ER baselines** format.
-3. On the **Baselines** FastTab, select **Delete** to remove the earlier configured baseline rule.
+1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
+2. Select **Baselines**.
+3. In the list of baselines, select the baseline that is configured for the **Format to learn ER baselines** format.
+4. On the **Baselines** FastTab, select **Delete** to remove the baseline rule that you configured earlier.
 
-![Electronic reporting baselines](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot of the Electronic reporting baselines page")
+![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot of the Electronic reporting format baselines page")
 
 ### Define replacements for bindings of designed ER format
 
-1. On the **Replacements** FastTab, select **Select components**.
-2. In the format components tree, expand **Output**, expand **Output\Document**, and then check **Output\Document\ProcessingDateTime**.
+1. On the **Configurations** page, on the **Replacements** FastTab, select **Select components**.
+2. In the format components tree, expand **Output**, expand **Output\\Document**, and then select the check box for **Output\\Document\\ProcessingDateTime**.
 
-![User dialog page to select format components for binding replacement](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Screenshot of the Finance and Operations user dialog page")
+    ![Select Components dialog box](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Screenshot of the Select Components dialog box")
 
 3. Select **OK**.
 
-![Electronic reporting baselines](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot of the Electronic reporting baselines page")
+![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot of the Electronic reporting format baselines page")
 
-> [!NOTE]
-> The selected ER format component has been added to the list of components on the **Replacements** FastTab. These components will behave in a special way when the base ER format is executed in debug mode. The actual format’s binding of each of such component will be replaced by the binding that is shown in the **Binding** column. Select **Edit** to modify the default binding for a component in the grid of the **Replacements** FastTab.
+The selected ER format component has been added to the list of components on the **Replacements** FastTab. When the base ER format is run in debug mode, the format's binding for each component will be replaced by the binding that is shown in the **Binding** column. To change the default binding for a component that is listed on the **Replacements** FastTab, select **Edit**.
 
 ### Make a new baseline rule
 
-Complete the steps in the **Automate the setting of baseline rules example** section earlier in this topic. Because the outbound file has been generated by using baseline settings, forcing a replacement of real format bindings, the user is informed from an Infolog.
+Follow the steps in the "Example: Automate the setting of baseline rules" section earlier in this topic. A notification warns you that the outbound file has been generated by using baseline settings, and that a forced replacement of the format bindings has occurred.
 
-![Electronic reporting configurations page](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Screenshot of the Electronic reporting configurations page")
+![Notification on the Configurations page](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Screenshot of the notification on the Configurations page")
 
 ### Suppress warnings about the replacement of format bindings
 
-You can suppress Infolog warnings about the replacement of format bindings by enabling specific ER parameters. This supression can be useful when format bingings are replaced in and unattended model by using the Regression Suite Automation Tool. In this case, the warning can be considered as a failure of the running test case.
+By setting specific ER parameters, you can suppress notifications that warn about the replacement of format bindings. This suppression can be useful when format bindings are replaced in an unattended model by using the Regression Suite Automation Tool. In this case, the warning can be considered a failure of the test case that is running.
 
-1. On the Action Pane, select **Configurations** and then select **User parameters**.
-2. In the **Suppress baseline warnings** field select **Yes**, and then select **OK**.
+1. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, select **User parameters**.
+2. Set the **Suppress baseline warnings** option to **Yes**, and then select **OK**.
 
-![Electronic reporting user parameters](media/GER-BaselineSample-ERUserParameters1.png "Screenshot of the Electronic reporting user parameters page")
+![User parameters dialog box](media/GER-BaselineSample-ERUserParameters1.png "Screenshot of the User parameters dialog box")
 
-### Review generated baseline file
+### Review the generated baseline file
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
-2. Select **Baselines** and then select **Attachments**.
+2. Select **Baselines**.
+3. Select **Attachments**.
 
-![Document management attachment](media/GER-BaselineSample-AttachedBaselineFile.PNG "Screenshot of the Document management attachment page")
+    ![Attachments page](media/GER-BaselineSample-AttachedBaselineFile.PNG "Screenshot of the Attachments page")
 
-> [!NOTE]
-> The generated file contains the processing date and time text **“#”** from the binding that has been configured in the added baseline rule, not from the format’s binding.
+    > [!NOTE]
+    > The generated file contains the processing date and time text (**"#"**) from the binding that was configured in the added baseline rule, not from the format's binding.
 
-3. Close the **Attachments** page.
+4. Close the **Attachments** page.
 
 ### Run the designed ER format and review the log to analyze the results
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. In the tree, expand **Model to learn ER baselines**.
-3. In the tree, select **Model to learn ER baselines\Format to learn ER baselines**.
+3. In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.
 4. On the **Versions** FastTab select **Run**.
-5. In the **Enter ID** field, type **1** and then select **OK*.
-6. Go to **Organization administration** \> **Electronic reporting** \> **Configuration debug logs**.
+5. In the **Enter Id** field, type **1**.
+6. Select **OK**.
+7. Go to **Organization administration** \> **Electronic reporting** \> **Configuration debug logs**.
+
+The execution log contains information about the results of the comparison of the generated file with the configured baseline. The log indicates that the generated file and the baseline are equal, even though the executed format contains the binding to enter a constantly changing date and time value in the outbound file.
 
 > [!NOTE]
-> The execution log contains information about the results of the comparison of generated file with the configured baseline. The log indicates that they are equal despite the fact that the executed format contains the binding to populate to the outbound file a constantly changing date and time value.
-> Despite the fact that the outbound file has been generated by using baseline settings which force the replacement of real format bindings, the Infolog does not contain warnings about that.
+> Although the outbound file has been generated by using baseline settings that force the replacement of the format's bindings, you don't receive any warnings about the replacement.
 
-## Exchange settings of baselines
+## Exchange baseline settings between environments
 
-The new ER capabilities allow you to export baseline settings for the selected ER format from the current Finance and Operations environment and store them as XML files. Select **Export** on the **Electronic reporting Format baselines** page.
+### Export baseline settings
 
-Exported baseline settings can be imported to another Finance and Operations environment. The environment must be imported as an ER format first and then it's baseline settings can be imported.
+The new ER capabilities let you export baseline settings for the selected ER format from the current Finance and Operations environment and store them as XML files. 
 
-On the **Electronic reporting Format baselines** page, select **Import** if you want to import baseline settings from the locally stored XML file that is selected manually.
+To export baseline settings, on the **Electronic reporting format baselines** page, select **Export**.
 
-![User dialog page](media/GER-BaselineSample-ImportBaseline1.PNG "Screenshot of the dialog page of a user importing baseline settings")
+### Import baseline settings
 
-On the **Electronic reporting Format baselines** page, select **Import from source** to import baseline settings from the manually selected XML file stored on the SharePoint server based on the current Document management settings and the selected document type. The required document type to access the SharePoint folder must configured in advance.
+Exported baseline settings can be imported into a different Finance and Operations environment. The environment must first be imported as an ER format. You can then import the baseline settings.
 
-![User dialog page](media/GER-BaselineSample-ImportBaseline2.PNG "Screenshot of the dialog page of a user importing baseline settings from a selected source")
+To import baseline settings from a locally stored XML file, on the **Electronic reporting format baselines** page, select **Import**, and then select **Browse** to select the XML file.
+
+![Import baseline settings dialog box](media/GER-BaselineSample-ImportBaseline1.PNG "Screenshot of the Import baseline settings dialog box")
+
+To import baseline settings from an XML file that is stored on the Microsoft SharePoint Server, based on the current Document management settings and the selected document type, on the **Electronic reporting format baselines** page, select **Import from source**. Then select the document type and the XML file. The required document type to access the SharePoint folder must be configured in advance.
+
+![Import from source dialog box](media/GER-BaselineSample-ImportBaseline2.PNG "Screenshot of the Import from source dialog box")
 
 > [!NOTE]
-> The steps for entering the required document type and file name in the dialog page of a user importing baseline settings can be recorded by using the Task Recorder. It allows you to keep necessary baseline settings in SharePoint server and import them automatically by playing a task recording as part of execution of automated tests by using the Regression Suite Automation Tool.
+> You can use Task recorder to record the steps for selecting the required document type and the file name in the **Import from source** dialog box. In this way, you can keep required baseline settings on SharePoint Server and then automatically import them by playing a task recording when you run automated tests by using the Regression Suite Automation Tool.
 
 ## Additional resources
 
