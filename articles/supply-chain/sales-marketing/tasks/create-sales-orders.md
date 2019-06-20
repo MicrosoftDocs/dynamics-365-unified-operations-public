@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor. 
 
-
-
-
 ## Enter sales order header details
 1. Go to Sales and marketing > Sales orders > All sales orders.
+
+[screenshot1](../media/create-sales-order-1.jpg)
+
 2. Click New.
 3. In the Customer account field, click the drop-down button to open the lookup.
 4. In the list, find and select the customer record.
