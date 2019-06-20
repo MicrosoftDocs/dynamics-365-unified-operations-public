@@ -41,7 +41,7 @@ The following procedure describes how to create a new workflow category.
 
 ### To create a workflow category
 
-1.  In the **AOT**, expand the **Workflow** node.
+1.  In **Application Explorer**, expand the **Business Process and Workflow** node.
 
 2.  Right-click the **Workflow Categories** node, and then click **New Workflow Category**. A new workflow category group displays under the **Workflow Categories** node.
 
@@ -85,7 +85,7 @@ After a workflow category is created, you can bind the workflow type to the new 
 
 ### To bind a workflow type to a workflow category
 
-1.  In the **AOT**, expand the **Workflow** node, and then expand the **Workflow Types** node.
+1.  In **Application Explorer**, expand the **Business Process and Workflow** node, and then expand the **Workflow Types** node.
 
 2.  Right-click the workflow type that you want to bind a workflow category to, and then select **Properties**.
 
@@ -93,6 +93,6 @@ After a workflow category is created, you can bind the workflow type to the new 
 
 ## See also
 
-[Creating a workflow type](workflow-type.md)
+[Creating a workflow type](workflow-type-create.md)
 
-[How to create a new workflow type](new-workflow-type.md)
+[Create a new workflow type](workflow-type-create-new.md)
