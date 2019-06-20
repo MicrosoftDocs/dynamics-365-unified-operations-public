@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (June 18, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/18/2019
+ms.date: 06/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,13 +29,14 @@ ms.search.validFrom: 2019-06-18
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (June 18, 2019)"
+# What's new or changed in Dynamics 365 for Talent (June 18, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Coming soon in Attract
@@ -45,9 +46,11 @@ This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which shows the job ID, the job title, other approvers, and the date when the job was assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which shows the approvers who must still approve the submitted job.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
+
 Changes described in this section apply to build number 8.1.2347.
 
 ### Confirming course participants throws an error.
@@ -73,10 +76,12 @@ Organizations can offer many types of leave to employees. However, it might not 
 ## Coming soon in Core HR
 
 ### Common Data Service entity support for custom fields
-The following entities will support custom fields: Payroll earnings code and Compensation reference point 
 
-### New CDS Entities
-Reason codes entity added to CDS
+The following entities will support custom fields: Payroll earnings code and Compensation reference point. 
+
+### New Common Data Service entities
+
+The Reason codes entity will be added to Common Data Service.
 
 ### View performance information for direct and extended reports in manager self-service
 
