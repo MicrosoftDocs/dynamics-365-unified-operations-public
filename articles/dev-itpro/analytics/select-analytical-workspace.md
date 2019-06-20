@@ -34,28 +34,28 @@ ms.dyn365.ops.version: Platform update 26
 
 ## Analytical workspaces
 
-The analytical workspaces that are bundled with the application suite offer users relevant insights into their business data. However, in some cases, it might make sense to replace the standard reports with custom solutions that are designed specifically for the users in your organization.
+The analytical workspaces that are bundled with the application suite offer users relevant insights into their business data. However, in some cases, it might make sense to replace standard reports with custom reports that are designed specifically for the users in your organization.
 
-The world-class tooling that PowerBI.com provides lets you produce analytical solutions that contain mashup views that use data from external sources. In Microsoft Dynamics 365 for Finance and Operations platform update 26 (May 2019), power users can replace the standard embedded solutions with reports that are hosted on PowerBI.com.
+The world-class tooling that PowerBI.com provides lets you produce analytical reports that contain mashup views that use data from external sources. In Microsoft Dynamics 365 for Finance and Operations platform update 26 (May 2019), power users can replace the standard embedded reports with those that are hosted on PowerBI.com.
 
 > [!IMPORTANT]
 > The functionality that this topic describes isn't a personalization. The customization of analytical workspaces applies to all users in the active legal entity.
 
 ### Motivations for embedding PowerBI.com reports
 
-Although the standard solutions deliver insights that are tailored for a given business persona, an organization might prefer a custom solution in some cases. Finance and Operations lets power users promote custom solutions that are hosted on PowerBI.com and shared with members of the organization.
+Although standard reports deliver insights that are tailored for a given business persona, an organization might prefer a custom report in some cases. Finance and Operations lets power users promote custom reports that are hosted on PowerBI.com and shared with members of the organization.
 
 Here are some of the top motivations for selecting reports that are hosted on PowerBI.com:
 
 - PowerBI.com reports support data mashups that use external data sources and can be accessed outside Finance and Operations.
 - The reports are appropriate for demonstrating custom solutions that are hosted on PowerBI.com and embedded in the application in one-box deployments.
-- Organizations that have Microsoft Power BI Premium services want to augment the standard solutions.
+- Organizations that have Microsoft Power BI Premium services want to augment the standard reports.
 
 ### Embed a PowerBI.com report in an analytical workspace
 
-To replace the standard solutions, you must be a member of the System Report Editors security group. Members of this security group can access the options in application workspaces that let them customize the standard solutions. This example shows how to replace the standard analytical workspace with a customer report that is hosted on PowerBI.com
+To replace the standard reports, you must be a member of the System Report Editors security group. Members of this security group can access the options in application workspaces that let them customize the standard reports. This example shows how to replace the standard analytical report with a customized report that is hosted on PowerBI.com.
 
-1. Sign in to Finance and Operations, and open the application workspace that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
+1. Sign in to Finance and Operations, and open the application report that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
 
     ![Compensation management workspace](media/compensation-management-workspace.png)
 
@@ -83,7 +83,7 @@ To replace the standard solutions, you must be a member of the System Report Edi
 
 ### Revert to the standard solution
 
-After a PowerBI.com report has been embedded in an application workspace, updates to the solution are reflected immediately for Finance and Operations users. However, to replace the report with another PowerBI.com solution, a power user must first revert to the standard application solution. Follow these steps to revert to the standard application solution.
+After a PowerBI.com report has been embedded in an application workspace, updates to the report are reflected immediately for Finance and Operations users. However, to replace the report with another PowerBI.com solution, a power user must first revert to the standard application solution. Follow these steps to revert to the standard application solution.
 
 1. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Restore Analytics**.
 
