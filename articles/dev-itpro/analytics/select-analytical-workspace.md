@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 26
 
 [!include[banner](../includes/banner.md)]
 
+[!include[banner](../includes/preview-banner.md)]
+
 ## Analytical workspaces
 
 The analytical workspaces that are bundled with the application suite offer users relevant insights into their business data. However, in some cases, it might make sense to replace standard reports with custom reports that are designed specifically for the users in your organization.
