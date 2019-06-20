@@ -40,7 +40,7 @@ This topic describes the steps to follow to create a new workflow type for Finan
 
 2.  Create a query that accesses the document for which the new workflow type is being created. For more information, see [Create a query for a workflow type](workflow-type-query.md).
 
-3.  Create a workflow type in the Application Object Tree (AOT). Typically, you do this using the Workflow Wizard. For more information, see [Create a new workflow type](workflow-type-document-create.md).
+3.  Create a workflow type in Application Explorer. Typically, you do this using the Workflow Wizard. For more information, see [Create a new workflow type](workflow-type-document-create.md).
 
 We recommend that you use the Workflow Wizard to create a workflow type. When you use the wizard to create a workflow type, the following tasks are performed by the wizard. In some cases you must add more code for your workflow type. These procedures are provided so that you can see the details of the actions that the wizard performs, and the additional steps that you must perform to complete your workflow type.
 
