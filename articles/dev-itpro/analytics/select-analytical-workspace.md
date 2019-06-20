@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Select Analytical Workspace from PowerBI.com 
-description: This topic explains how to select a report hosted on PowerBI.com for an application workspace.
+title: Select analytical workspaces from PowerBI.com 
+description: This topic explains how to select a report that is hosted on PowerBI.com and use it for an application workspace.
 author: tjvass
 manager: AnnBe
 ms.date: 06/19/2019
@@ -28,58 +28,66 @@ ms.search.validFrom: 2019-07-18
 ms.dyn365.ops.version: Platform update 26
 ---
 
-# Select Analytical Workspace from PowerBI.com
+# Select analytical workspaces from PowerBI.com
 
 [!include[banner](../includes/banner.md)]
 
-## Analytical Workspaces
-Analytical Workspaces that are bundled with the application Suite offer users relevant insights into their business data. However, there will be cases where it makes sense to replace the standard reports with custom solutions that are designed specifically for users in your organization.  
+## Analytical workspaces
 
-PowerBI.com provides world-class tooling for producing analytical solutions that contain mash-up views with data from external sources.  With the release of Microsoft Dynamics Finance and Operations Platform update 26, power users can replace the standard embedded solutions with reports that are hosted on PowerBI.com.    
+The analytical workspaces that are bundled with the application suite offer users relevant insights into their business data. However, in some cases, it might make sense to replace the standard reports with custom solutions that are designed specifically for the users in your organization.
+
+The world-class tooling that PowerBI.com provides lets you produce analytical solutions that contain mashup views that use data from external sources. In Microsoft Dynamics 365 for Finance and Operations platform update 26 (May 2019), power users can replace the standard embedded solutions with reports that are hosted on PowerBI.com.
 
 > [!IMPORTANT]
-> This is not an exercise of personalization. Customizing analytical workspaces applies to all users within the active Legal Entity.
+> The functionality that this topic describes isn't a personalization. The customization of analytical workspaces applies to all users in the active legal entity.
 
+### Motivations for embedding PowerBI.com reports
 
-### Motivations for embedding PowerBI.com report
-Although standard solutions deliver insights tailored for a given business persona, there will be cases where an organization prefers a custom solution. Finance and Operations allows a Power User to promote custom solutions hosted on PowerBI.com which are shared with members of the organization.  
+Although the standard solutions deliver insights that are tailored for a given business persona, an organization might prefer a custom solution in some cases. Finance and Operations lets power users promote custom solutions that are hosted on PowerBI.com and shared with members of the organization.
 
-The following are a few of the top motivations for selecting reports hosted on PowerBI.com:
+Here are some of the top motivations for selecting reports that are hosted on PowerBI.com:
 
-- PowerBI.com reports support data-mashups with external data sources and are accessible outside of Finance and Operations.
-- These reports are appropriate for demonstrating custom solutions hosted on PowerBI.com that are embedded in the application on 1-Box deployment. 
-- Organizations with Power BI Premium services want to augment the standard solutions.
+- PowerBI.com reports support data mashups that use external data sources and can be accessed outside Finance and Operations.
+- The reports are appropriate for demonstrating custom solutions that are hosted on PowerBI.com and embedded in the application in one-box deployments.
+- Organizations that have Microsoft Power BI Premium services want to augment the standard solutions.
 
-### Embedding a PowerBI.com report into an Analytical Workspace
-To replace the standard application solutions, you must be a member of the System Report Editors security group. Members of this security group have access to options in the Application Workspaces that allow them to customize the standard solution. In this example, we will replace the standard Analytical Workspace with a customer report hosted on PowerBI.com
+### Embed a PowerBI.com report in an analytical workspace
 
-1. Log into Finance and Operations and access the Application Workspace you'll be customizing. Here, we'll replace the standard analytical report embedded in the **Compensation management** Workspace.
-![Compensation management workspace](media/compensation-management-workspace.png)
-  
+To replace the standard solutions, you must be a member of the System Report Editors security group. Members of this security group can access the options in application workspaces that let them customize the standard solutions. This example shows how to replace the standard analytical workspace with a customer report that is hosted on PowerBI.com
+
+1. Sign in to Finance and Operations, and open the application workspace that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
+
+    ![Compensation management workspace](media/compensation-management-workspace.png)
+
 2. Select the **Analytics** tab to access the workspace's embedded analytical report.
-![Compensation management analytical workspace](media/compensation-management-analytics.png)
- 
-By default, you will see the standard Analytical Workspace solution that is packaged with your Finance and Operations application.  These reports are automatically deployed and configured for your environment during the provisioning process.
 
-> [!NOTE]
-> The Analytical Workspaces require a hosted Power BI service which is only available for dedicated environments. Review related articles for insights on **Accessing Analytical Workspaces on 1-Box environment**.
+    ![Analytics tab in the Compensation management analytical workspace](media/compensation-management-analytics.png)
 
-3. In the top navigation, select the **Options** menu, locate the **POWER BI** section, and then select **Select Analytics**. This will expand the **Power BI Reports** portfolio selection control.
-![Select Power BI reports](media/select-powerbi-report-analytics.png)
-  
-This form allows you to select from the collection of reports that have been shared on PowerBI.com service. The reports are organized into Workspace collections.
+    By default, you will see the standard analytical workspace solution that is included with your Finance and Operations application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
 
-4. Expand the drop-down to choose the workspace that contains the report.
-5. Select the report to embed in the Application Workspace and then click **OK**.
-6. Reload the page to view the workspace. To do this, you can navigate away fromthe workspace and return, or refresh your browser. 
-7. In the **Compensation management** workspace, select the **Analytics** to access the PowerBI.com report embedded in the Analytical Workspace.
-![Custom analytical workspace](media/custom-powerbi-report-analytics.png)
+    > [!NOTE]
+    > The analytical workspaces require a hosted Power BI service that is available only for dedicated environments. Review related articles for insights on **Accessing Analytical Workspaces on 1-Box environment**.
+
+3. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Select Analytics** to open the **Power BI Reports** dialog box.
+
+    ![Power BI Reports dialog box](media/select-powerbi-report-analytics.png)
+
+    This dialog box lets you select among the reports that have been shared on the PowerBI.com service. The reports are organized by workspace.
+
+4. In the drop-down list, select the workspace that contains the report.
+5. Select the report to embed in the application workspace, and then select **OK**.
+6. To view the updates to the workspace, you must reload the page. Either move away from the workspace and then return, or refresh your browser.
+7. In the **Compensation management** workspace, select the **Analytics** tab to access the PowerBI.com report that is now embedded in the analytical workspace.
+
+    ![Custom analytical workspace](media/custom-powerbi-report-analytics.png)
 
 ### Revert to the standard solution
-After a PowerBI.com report has been embedded into an Application Workspace, updates to the solution are reflected immediately for Finance and Operations users. However, to replace the report with another PowerBI.com solution, a Power user must first revert back to the standard application solution. Use the following steps to revert back to the standard application solution.
 
-1. In the top navigation, on the **Options** menu,  locate the **POWER BI** section, and then select **Restore Analytics**.  
-![Restore analytical workspace](media/restore-powerbi-report-analytics.png)
-  
-2. To view the workspace updates you must reload the page be either navigating away or refreshing your browser. Enter the **Compensation management** workspace and then click on the **Analytics** tab to access the standard solution embedded in the Analytical Workspace.
+After a PowerBI.com report has been embedded in an application workspace, updates to the solution are reflected immediately for Finance and Operations users. However, to replace the report with another PowerBI.com solution, a power user must first revert to the standard application solution. Follow these steps to revert to the standard application solution.
 
+1. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Restore Analytics**.
+
+    ![Restore Analytics button](media/restore-powerbi-report-analytics.png)
+
+2. To view the updates to the workspace, you must reload the page. Either move away from the workspace and then return, or refresh your browser.
+3. In the **Compensation management** workspace, select the **Analytics** tab to access the standard solution that is now embedded in the analytical workspace.
