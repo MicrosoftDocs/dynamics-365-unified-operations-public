@@ -98,11 +98,11 @@ A workflow type defines information about:
 
 8.  A dialog box will be displayed that indicates the status. Click **OK**. The project that contains the workflow type resources is displayed.
 
-After a workflow type is created, the next step is to complete the workflow document class to expose document data for conditions. For more information, see [How to create a workflow document class](workflow-document-create.md).
+After a workflow type is created, the next step is to complete the workflow document class to expose document data for conditions. For more information, see [Create a workflow document class](workflow-type-document-create.md).
 
 ## See also
 
-[Creating a workflow type](workflow-type.md)
+[Creating a workflow type](workflow-type-create.md)
 
-[How to create a workflow category](workflow-category.md)
+[Create a workflow category](workflow-type-category.md)
 
