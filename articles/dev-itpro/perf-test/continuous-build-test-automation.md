@@ -113,19 +113,6 @@ Click **Advanced settings**, select **Azure DevOps**
 
    ![Settings](media/settings.jpg)
 
-## Use a Developer VM environment
-When a Developer VM gets deployed, it’s auto-configured with a workspace that will be used to synchronize your code from source control (Azure DevOps). As this Developer VM has Microsoft Dynamics 365 for Finance and Operations deployed on it, it can also be used as a test VM.
-
-### Configure Visual Studio to connect to Azure DevOps
-
-When you open Visual Studio the first time on a Developer VM, connect to Azure DevOps using your credentials.
-
-1.  Open **Team explorer** and click **Select Team projects**.
-2.  Enter the Azure DevOps URL and click **OK**. You will be prompted for your Azure DevOps username and password.
-3.  After you are logged into the Azure DevOps, your **Default workspace** that you will use for your development.
-
-    ![manage workspaces](media/manage-workspaces.png)
-
 ## Test integration with the build
 There are two ways to integrate test as part of build process for testing and validation:
 
