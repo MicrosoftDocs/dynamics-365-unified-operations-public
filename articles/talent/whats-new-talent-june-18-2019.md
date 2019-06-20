@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 
 ## Changes in Attract
 
@@ -51,23 +51,23 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
-Changes described in this section apply to build number 8.1.2347.
+The changes that are described in this section apply to build number 8.1.2347.
 
-### Confirming course participants throws an error.
+### Confirmation of course participants causes an error
 
-With this change the dialog to print the report has been removed. This report is not supported in Dynamcis 365 for Talent.
+The dialog box for printing the report has been removed. This report isn't supported in Talent.
 
-### Compensation section of transfer not enabled in certain scenarios
+### Compensation section of transfer isn't available in some scenarios
 
-This change allows for compensation data to be entered when filling out the transfer worker form.
+This change lets users enter compensation data when they fill in the transfer worker page.
 
 ## In preview
 
 ### Preview features will be enabled only in sandbox environments
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
-When you provision a new instance of Talent, you can indicate whether the instance type is Production or Sandbox. The Sandbox instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**. The **Sandbox** instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
 ### Restrict the leave types in time-off requests
 
