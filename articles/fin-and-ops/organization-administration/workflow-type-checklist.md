@@ -36,23 +36,23 @@ This topic describes the steps to follow to create a new workflow type for Finan
 
 ## Workflow type checklist
 
-1.  If an existing category is not appropriate, create a new workflow category to use for the workflow type. For more information, see [How to create a workflow category](workflow-category.md).
+1.  If an existing category is not appropriate, create a new workflow category to use for the workflow type. For more information, see [Create a workflow category](workflow-type-category.md).
 
-2.  Create a query that accesses the document for which the new workflow type is being created. For more information, see [How to create a query for a workflow type](query-workflow-type).
+2.  Create a query that accesses the document for which the new workflow type is being created. For more information, see [Create a query for a workflow type](workflow-type-query.md).
 
-3.  Create a workflow type in the Application Object Tree (AOT). Typically, you do this using the Workflow Wizard. For more information, see [How to create a new workflow type](new-workflow-type.md).
+3.  Create a workflow type in the Application Object Tree (AOT). Typically, you do this using the Workflow Wizard. For more information, see [Create a new workflow type](workflow-type-document-create.md).
 
 We recommend that you use the Workflow Wizard to create a workflow type. When you use the wizard to create a workflow type, the following tasks are performed by the wizard. In some cases you must add more code for your workflow type. These procedures are provided so that you can see the details of the actions that the wizard performs, and the additional steps that you must perform to complete your workflow type.
 
-1.  Create a workflow document class, and then bind the query used for the workflow to the class. For more information, see [How to create a workflow document class](workflow-document-create.md).
+1.  Create a workflow document class, and then bind the query used for the workflow to the class. For more information, see [Create a workflow document class](workflow-type-document-create.md).
 
-2.  Bind the workflow document class to the workflow type. For more information, see [How to associate a workflow document class with a workflow type](associate-document-to-type.md).
+2.  Bind the workflow document class to the workflow type. For more information, see [Associate a workflow document class with a workflow type](workflow-type-associate-document.md).
 
-3.  Create workflow event handlers for started, completed, configuration change, and canceled, and then bind them to the workflow type. For more information, see [How to create a workflow event handler](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler).
+3.  Create workflow event handlers for started, completed, configuration change, and canceled, and then bind them to the workflow type. For more information, see [Create a workflow event handler](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler).
 
 4.  Create a class for the SubmitToWorkflowMenuItem and optionally, for the CancelMenuItem. Bind the classes to the **Action** menu items that you will create in the next step. For more information, see [Classes in X++](dev-itpro/dev-ref/xpp-classes.md).
 
-5.  Create an **Action** menu item for the workflow **SubmitToWorkflowMenuItem** property and optionally, for the **CancelMenuItem** property, and then bind the actions to the workflow type. For more information, see [How to create a new workflow type](new-workflow-type.md).
+5.  Create an **Action** menu item for the workflow **SubmitToWorkflowMenuItem** property and optionally, for the **CancelMenuItem** property, and then bind the actions to the workflow type. For more information, see [Create a new workflow type](workflow-type-create-new.md).
 
 ### Next steps
 
