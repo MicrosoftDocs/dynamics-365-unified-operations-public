@@ -45,7 +45,8 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 
 3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. Proceed with [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically 
+4. Configure certificates as needed in **ConfigTemplate.xml**. Proceed with [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically:
+
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -54,15 +55,17 @@ You may need to rotate the certificates used by your Finance and Operations on-p
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. Proceed with [Setup VMs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupvms). Specific steps that are needed are:
+5. Proceed with [Setup VMs](setup-deploy-on-premises-pu12.md#setupvms). Specific steps that are needed are:
 
     1. Export the scripts that must be run on each VM.
+    
         ```powershell
         # Exports the script files to be execute on each VM into a directory VMs\<VMName>.
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
     2. Copy the contents of each infrastructure\\VMs<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts, if they exist, as an Administrator.
+	
         ```powershell
         # If Remoting, only execute
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -74,13 +77,15 @@ You may need to rotate the certificates used by your Finance and Operations on-p
         ```
         
     3. Run the following script to validate the VM setup.
+    
         ```powershell
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. If axdataenciphermentcert certificates is rotated, you need to regenerate credentials.json file. For more information, see [Encrypt credentials](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred).
+6. If axdataenciphermentcert certificates is rotated, you need to regenerate credentials.json file. For more information, see [Encrypt credentials](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred).
 
-7. Run following PowerShell command to have values to be used in LCS later. For more information, see [Deploy your Finance and Operations (on-premises) environment from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#deploy).
+7. Run following PowerShell command to have values to be used in LCS later. For more information, see [Deploy your Finance and Operations (on-premises) environment from LCS](setup-deploy-on-premises-pu12.md#deploy).
+
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     `````
@@ -115,7 +120,8 @@ You may need to rotate the certificates used by your Finance and Operations on-p
                                     },
     ```
 
-2. Replace section with following
+2. Replace section with following:
+
     ```
                        "security":  {
                                         "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
@@ -149,6 +155,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 3. Edit new and old thumbprint values. 
 
 4. Change clusterConfigurationVersion in the top to new version, example 2.0.0.
+
     ```
     {
     "name": "Dynamics365Operations",
@@ -158,6 +165,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 5. Save the new ClusterConfig.json.
 
 6. Run following PowerShell command.
+
     ```powershell
     # Connect to the Service Fabric cluster
     Connect-ServiceFabricCluster
@@ -180,63 +188,69 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 
 ### Service fabric with or without expired Certificates (cluster not accessible)
 
-Proceed with [Clean up an existing environment and redeploy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#clean-up-an-existing-environment-and-redeploy).
+Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
 ## LocalAgent Certificate update (if needed)
 
 1. Run following PowerShell command on one of the Orchestrator nodes.
+
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
 2. Run following PowerShell command to note new LocalAgent thumbprint.
+
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-3. Proceed with [Configure LCS connectivity for the tenant](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurelcs).
+3. Proceed with [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
 
-> [!NOTE] If receive error **Update to existing credential with KeyId '\<key\>' is not allowed.**, follow [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
+	> [!NOTE] 
+	> If receive error **Update to existing credential with KeyId '\<key\>' is not allowed.**, follow [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
-4. Proceed with [Configure a connector and install an on-premises local agent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configureconnector), specifically following changes 
-- Client certificate thumbprint
-- Server Certificate thumbprint
-- Tenant service principle certificate thumbprint
+4. Proceed with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically following changes:
 
-## Update deployment settings in LCS:
-> [!NOTE] Make a backup of local Dynamics database.
+	- Client certificate thumbprint
+	- Server Certificate thumbprint
+	- Tenant service principle certificate thumbprint
+
+## Update deployment settings in LCS
+
+> [!NOTE] 
+> Make a backup of local Dynamics database.
 
 1. In LCS, click on the "Full Details" link of the environment where you want to change the certificates.
 
 2. Click **Maintain** button and select **Update Settings**.
 
-![](media/addf4f1d0c0a86d840a6a412f774e474.png)
+	![](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. Change the thumbprints with the new ones that you have previously configured (you can find these in the ConfigTemplate.xml in the InfrastructureScripts folder).
 
-![](media/07da4d7e02f11878ee91c61b4f561a50.png)
+	![](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-![](media/785caaf4ee652d66c0d88cf615a57e26.png)
+	![](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. Click “Prepare”.
 
 5. After downloading and preparing is complete, the "Update environment" button will show up.
 
-![](media/0a9d43044593450f1a828c0dd7698024.png)
+	![](media/0a9d43044593450f1a828c0dd7698024.png)
 
 6. Click "Update environment" to start updating you environment.
 
 7. During this period the environment will be unavailable.
 
-![](media/bbc38a913888afa5b0410d05af38216e.png)
+	![](media/bbc38a913888afa5b0410d05af38216e.png)
 
 8. After the environment is successfully updated with the new certificates, you can check the new thumbprints in Service Fabric Cluster Explorer. Please note that the name of the thumbprint name from SF Explorer might differ from the names of the thumbprints you see in the LCS page. However, their values should be the same.
 
-Here is an example of how the name of the same thumbprint might differ.
+	Here is an example of how the name of the same thumbprint might differ.
 
-![](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+	![](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-![](media/642f6434da9cdeac3651b765acca08fa.png)
+	![](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## Update other certificates as needed
 
