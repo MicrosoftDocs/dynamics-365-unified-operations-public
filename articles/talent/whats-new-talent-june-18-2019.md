@@ -55,11 +55,11 @@ The changes that are described in this section apply to build number 8.1.2347.
 
 ### Confirmation of course participants causes an error
 
-The dialog box for printing the report has been removed. This report isn't supported in Talent.
+The dialog box for printing the report about course participants has been removed. This report isn't supported in Talent.
 
-### Compensation section of transfer isn't available in some scenarios
+### The Compensation section of the Transfer worker page isn't available in some scenarios
 
-This change lets users enter compensation data when they fill in the transfer worker page.
+This change lets users enter compensation data when they fill in the **Transfer worker** page.
 
 ## In preview
 
