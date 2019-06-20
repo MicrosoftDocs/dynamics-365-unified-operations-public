@@ -106,7 +106,7 @@ The same procedure can be used to activate a workflow by using the workflow conf
 
 [Activating a workflow](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/activating-a-workflow)
 
-[How to create a new workflow type](new-workflow-type.md)
+[Create a new workflow type](workflow-type-create-new.md)
 
 [Workflow::activateFromWorkflowType method](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
 
