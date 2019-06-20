@@ -5,7 +5,7 @@ title: Certificate rotation
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
