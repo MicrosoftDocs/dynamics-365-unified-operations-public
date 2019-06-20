@@ -55,6 +55,9 @@ If either the trigger or the flow is deleted or disabled, the business event is 
 
 Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity.
 
+> [!NOTE]
+> The Flow endpoint in Finance and Operations must not be configured manually in Finance and Operations. The endpoint will automatically get created from Flow as explained above.
+
 ## Other ways to consume business events in Microsoft Flow
 
 The previous section explains how you can subscribe to business events directly from Microsoft Flow by using the trigger in the Finance and Operations connector. However, you can also consume business events in Microsoft Flow from Microsoft Azure Event Grid, by using the [Event Grid connector for Microsoft Flow](https://docs.microsoft.com/connectors/azureeventgrid/).
