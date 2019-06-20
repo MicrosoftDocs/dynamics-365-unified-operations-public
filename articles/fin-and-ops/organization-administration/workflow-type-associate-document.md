@@ -40,7 +40,7 @@ To create a workflow in Dynamics 365 for Finance and Operations, you must bind a
 
 
 
-Before you begin this procedure, you must create a workflow document class to expose table fields used for conditions in the configuration user interface. For more information, see [How to create a workflow document class](workflow-document-create.md).
+Before you begin this procedure, you must create a workflow document class to expose table fields used for conditions in the configuration user interface. For more information, see [Create a workflow document class](workflow-type-document-create.md).
 
 ### To bind a workflow document class to a workflow type
 
@@ -52,6 +52,6 @@ Before you begin this procedure, you must create a workflow document class to ex
 
 ## See also
 
-[How to create a new workflow type](new-workflow-type.md)
+[Create a new workflow type](workflow-type-create-new.md)
 
-[How to create a workflow document class](workflow-document-create.md)
+[Create a workflow document class](workflow-type-document-create.md)
