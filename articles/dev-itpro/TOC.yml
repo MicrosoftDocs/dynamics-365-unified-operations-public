@@ -122,7 +122,7 @@
           href: dev-ref/xpp-classes-methods.md
         - name: Inheritance
           href: dev-ref/xpp-inheritance.md
-        - name: Static classes and methods
+        - name: Static class members
           href: dev-ref/xpp-static-classes.md
         - name: Interfaces
           href: dev-ref/xpp-interfaces.md
