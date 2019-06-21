@@ -42,14 +42,12 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 
 ## Create a recurrence
 1. On the Action Pane, click **Batch job**.
-2. Click **Recurrence**.
-    * Use these options to enter a range and pattern for the recurrence.  
+2. Click **Recurrence**. Use these options to enter a range and pattern for the recurrence.  
 3. Click **OK**.
 
 ## Add alerts
 1. On the Action Pane, click **Batch job**.
-2. Click **Alerts**.
-    * Indicate if you want alert messages sent when the batch job ends, has an error, or is canceled. Then specify if you want the alerts to be displayed as pop-up messages.   
+2. Click **Alerts**. Indicate if you want alert messages sent when the batch job ends, has an error, or is canceled. Then specify if you want the alerts to be displayed as pop-up messages.   
 3. Click **OK**.
 
 ## Adjust batch job status
