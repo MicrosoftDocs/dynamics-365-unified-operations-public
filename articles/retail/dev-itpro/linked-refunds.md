@@ -51,7 +51,7 @@ To turn on the linked refunds functionality, go to **Retail \> Headquarters setu
 
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
-When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Retail Modern POS \[MPOS\]) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. However, call center, MPOS, and e-Commerce applications will continue to have the same behavior that they have historically had with regard to manual entry of card numbers for payment.
+When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Retail Modern POS \[MPOS\]) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. However, for call center, MPOS, and e-Commerce applications will continue to have the same behavior that they have historically had with regard to manual entry of card numbers for payment.
 
 ### Supported flows
 
