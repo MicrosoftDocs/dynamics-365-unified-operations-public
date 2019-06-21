@@ -46,9 +46,9 @@ After go-live, the Production environment must be updated at regular intervals. 
   - Platform hotfixes are cumulative binary hotfixes that Microsoft releases to address any issues in the platform.
   - Release of a new platform. When Microsoft releases a new update to the platform, use the information provided in [Upgrade to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md), to uptake the new release.
 - **Application**
-  - Application hotfixes are X++ hotfixes that address issues in the application.
+  - Application hotfixes are X++ hotfixes that address issues in the application. This applies to customers that are on version 8.0 and below.
   - Application customizations are customizations that partners/ISVs develop on the base product that is shipped by Microsoft.
-  - New release of the application. For more information about this kind of update, see [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md).
+  - New release of the application. For customers that are on version 8.1 and above, all updates are cumulative and are provided as a single binary update. 
 
 **Cloud infrastructure**
 - Microsoft is responsible for managing the infrastructure for your environments. Because of this, there are certain updates, such as operating system updates, that must be done on a monthly basis in a planned maintenance window. Other kinds of updates could include changes to the infrastructure components. 
