@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Creating a workflow type 
 
-To add workflow support for a document in Finance and Operations, you must create a workflow type. This topic describes the procedures to create a workflow type. The workflow type can then be used to create workflow configurations for the document in Finance and Operations.
+To add workflow support for a document, you must create a workflow type. This topic describes the procedures to create a workflow type. The workflow type can then be used to create workflow configurations for the document.
 
 You create workflow types to define:
 
