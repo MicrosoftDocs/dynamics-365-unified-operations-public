@@ -1,6 +1,8 @@
 
-This topic covers position budgeting functionality available for the public sector.  
+## Forecast Position distribution template grid and validation
 
+This topic covers position budgeting functionality available for the public sector.  
+ 
 You can maintain financial dimension default templates for forecast positions on the Forecast positions page by using controls on the Financial dimensions FastTab.  The upper portion of the Financial dimensions FastTab displays all of the the distribution lines along with their percentage as a grid.  The lower portion of the Financial dimensions FastTab displays the position default dimensions.
 
 You can validate whether a forecast position's default dimensions are correct for your organization's chart of accounts. For any forecast position, click the new Validate button on the Action Pane to see whether the financial dimension setup for your forecast position is valid. The validations are made against the account structure that you identify on the Configure account structures page. This quick validation can help you catch errors before you attempt to generate a budget plan from a forecast position. You can also validate many positions from the Forecast positions list page.
