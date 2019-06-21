@@ -250,4 +250,3 @@ The baseline is added for the **Format to learn ER baselines** format.
 ## Additional resources
 
 - [Configure ER framework](electronic-reporting-er-configure-parameters.md)
-- [Automate testing with electronic reporting](er-automate-testing.md)
