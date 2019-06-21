@@ -42,13 +42,15 @@ In the cloud version of Microsoft Dynamics 365 for Finance and Operations, a key
 After go-live, the Production environment must be updated at regular intervals. Lifecycle Services (LCS) provides a self-serve experience to continuously update your environments.
 
 ### Update types
-- **Platform**
-  - Platform hotfixes are cumulative binary hotfixes that Microsoft releases to address any issues in the platform.
-  - Release of a new platform. When Microsoft releases a new update to the platform, use the information provided in [Upgrade to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md), to uptake the new release.
-- **Application**
-  - Application hotfixes are X++ hotfixes that address issues in the application. This applies to customers that are on version 8.0 and below.
-  - Application customizations are customizations that partners/ISVs develop on the base product that is shipped by Microsoft.
-  - New release of the application. For customers that are on version 8.1 and above, all updates are cumulative and are provided as a single binary update. 
+For customers that are on **version 8.0 and below**, following are the different types of updates:
+1) Platform updates - Single cumulative binary update of all the platform fixes.
+2) Application hotfixes - Application hotfixes released as granular X++ updates.
+3) Application release - New major release of the application. This typically requires an upgrade.
+3) Application customizations - Customizations built on top of the application. The best practice is to apply a single deployable package consisting of all your ISV solutions and customizations.
+
+For customers that are on **version 8.1 and above**, following are the different types of updates:
+1) Application updates - Single cumulative binary update of the application and the platform fixes. You can self-update using the regular update flows or you will be automatically updated by Microsoft.
+2) Application customizations - Customizations built on top of the application. The best practice is to apply a single deployable package consisting of all your ISV solutions and customizations.
 
 **Cloud infrastructure**
 - Microsoft is responsible for managing the infrastructure for your environments. Because of this, there are certain updates, such as operating system updates, that must be done on a monthly basis in a planned maintenance window. Other kinds of updates could include changes to the infrastructure components. 
