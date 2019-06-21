@@ -37,9 +37,9 @@ The following procedure lists the steps that system administrators can use to up
 3. Expand **Dashboard image** tab.
 4. Select **Change**.
     
-    [!NOTE] The ideal resolution for a banner image is 1920 x 281 pixels. The ideal width for a logo image is 350 pixels.
+    The ideal resolution for a banner image is 1920 x 281 pixels. The ideal width for a logo image is 350 pixels.
     
 5. Select **Save**.
-8. Go to **Navigation pane > Modules > Common > Common > Default dashboard**. You should see the new banner or logo image on the dashboard.  
+6. Go to **Navigation pane > Modules > Common > Common > Default dashboard**. You should see the new banner or logo image on the dashboard.  
     
-    [!NOTE] You may need to change your company, using the company picker, to the one you uploaded the banner for.  
+    You may need to change your company, using the company picker, to the one you uploaded the banner for.  
