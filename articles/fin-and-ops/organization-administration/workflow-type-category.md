@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a workflow category
-description: This topic describes how to create a workflow category in Dynamics 365 for Finance and Operations.
+description: This topic describes how to create a workflow category.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
@@ -24,14 +24,14 @@ ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: RobinARH
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
 ---
 # Create a workflow category 
 
-This topic describes how to create a workflow category in Dynamics 365 for Finance and Operations.
+This topic describes how to create a workflow category.
 
 When you create a workflow type, it must be assigned to a workflow category. The workflow category determines whether a workflow type is available in a specific module. If an appropriate workflow category does not already exist, you must create one.
 
@@ -49,7 +49,14 @@ The following procedure describes how to create a new workflow category.
 
 4.  In the **Properties** sheet, set the following properties as required.
     
-    <table>
+| Property | Value |
+|-----------|---|
+| Name      | The name that is used to reference the workflow category. |
+| Label     | The label used for the workflow category in the user interface. |
+| Help Text | The description of the workflow category displayed in the configuration user interface. |
+| Module    | The module that the workflow will be available in. The default is **Ledger**. |
+
+<table>
     <colgroup>
     <col style="width: 50%" />
     <col style="width: 50%" />
