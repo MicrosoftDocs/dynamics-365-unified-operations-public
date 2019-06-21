@@ -48,51 +48,13 @@ A workflow type defines information about:
 3.  Click **Next**.
 4.  Set the following values for the wizard.
     
-Value | Description
-|---|---|
-| Name | The name that will be used for the workflow type. |
-| Category | Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see [How to create a workflow category](workflow-category.md). |
-| Query | Choose the query that will access the table fields for the workflow document. For more information, see <a href="query-workflow-type.md">How to create a query for a workflow type</a>. |
-| Document menu item | Choose the menu item that points to the main form that displays the document for which you are creating a workflow type. |
-| Document web menu item | Choose the web menu item that points to the Enterprise Portal page that displays the document for which you are creating a workflow type. |
-
-
-
-<table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>Value</p></th>
-    <th><p>Description</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p><strong>Name</strong></p></td>
-    <td><p>The name that will be used for the workflow type.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Category</strong></p></td>
-    <td><p>Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see <a href="workflow-category.md">How to create a workflow category</a>.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>Query</strong></p></td>
-    <td><p>Choose the query that will access the table fields for the workflow document. For more information, see <a href="query-workflow-type.md">How to create a query for a workflow type</a>.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Document menu item</strong></p></td>
-    <td><p>Choose the menu item that points to the main form that displays the document for which you are creating a workflow type.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>Document web menu item</strong></p></td>
-    <td><p>Choose the web menu item that points to the Enterprise Portal page that displays the document for which you are creating a workflow type.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
+    Value | Description
+    |---|---|
+    | Name | The name that will be used for the workflow type. |
+    | Category | Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see [How to create a workflow category](workflow-type-category.md). |
+    | Query | Choose the query that will access the table fields for the workflow document. For more information, see [How to create a query for a workflow type](workflow-type-query.md). |
+    | Document menu item | Choose the menu item that points to the main form that displays the document for which you are creating a workflow type. |
+    | Document web menu item | Choose the web menu item that points to the Enterprise Portal page that displays the document for which you are creating a workflow type. |
 
 5.  Specify which types of menu items you want to create. You can create menu items for the Finance and Operations client, web menu items for Enterprise Portal, or items for both.
 6.  Click **Next**. A list of all of the resources that will be created for the workflow type is displayed.
