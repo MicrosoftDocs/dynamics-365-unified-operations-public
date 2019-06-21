@@ -117,7 +117,8 @@ Before you can start installation of Retail channel components, you must first c
 
   > [!NOTE]
   > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In headquarters, when the **Download** functionality is attempted (for example, Retail Store Scale Unit or Retail Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
-  > The Peripheral Simulator (Downloaded on the Hardware profile page in headquarters) will still not be available until at least one Hardware profile has been created and would be functional.  After that point has been achieved, the following script can be run:
+  > [!IMPORTANT]
+  > The Peripheral Simulator (Downloaded on the Hardware profile page in headquarters) will still not be available until at least one Hardware profile has been created and functional.  After that point has been achieved, the following script can be run:
   > ```powershell
   > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
   > ```
