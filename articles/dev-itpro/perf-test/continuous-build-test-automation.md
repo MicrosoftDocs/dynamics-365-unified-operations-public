@@ -48,7 +48,7 @@ After you configure an Azure DevOps subscription in Microsoft Dynamics Lifecycle
 
 This workflow includes an LCS deployment of a developer VM and a build/test VM in Azure.
 
-+ LCS creates developer and the build/test environments in Azure. To create a buid/test environment, LCS must be able to determine where the source code for the Azure DevOps project is.
++ LCS creates developer and the build/test environments in Azure. To create a build/test environment, LCS must be able to determine where the source code for the Azure DevOps project is.
 + The developer works on source code on the developer VM, and the work is synced to the Azure DevOps project.
 + The build process synchonizes the code from Azure DevOps onto the build/test VM and produces deployable packages that you can apply to sandbox and production environments. The source code doesn't flow directly from the development VM to the build/test VM. They are synced through Azure DevOps.
 
