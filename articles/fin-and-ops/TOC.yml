@@ -3093,6 +3093,8 @@
         href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
       - name: Power BI Embedded integration
         href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
+      - name: Select analytical workspaces from PowerBI.com
+        href: ../dev-itpro/analytics/select-analytical-workspace.md
     - name: Personalization options with PowerBI.com
       items:
       - name: Features and services available via Power BI integration
