@@ -3046,6 +3046,8 @@
         href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
       - name: Trace generated report results and compare with baseline values
         href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+      - name: Improvements in tracing results of generated ER reports and comparing them with baseline values
+        href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
       - name: Cross-company data sources in Electronic reporting
         href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
       - name: Embed images and shapes in documents that you generate
