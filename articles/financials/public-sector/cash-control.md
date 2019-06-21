@@ -1,5 +1,5 @@
 ## Using cash control limits
-Cash control allows you to define a limit for preventing additional transactions from posting if no cash balance is available or if the transaction causes the balance to be reduced below the defined limit. Accounts payable (AP) vendor invoices and General ledger (GL) advanced ledger entries are validated when they are created, edited, and posted. If the transaction’s posting would cause the related cash account’s balance to be reduced below the limit defined for the account, the user receives an error message and must change the account to continue.
+Cash control allows you to define a limit for preventing additional transactions from posting if no cash balance is available or if the transaction causes the balance to be reduced below the defined limit. Accounts payable vendor invoices and General ledger Advanced ledger entries are validated when they are created, edited, and posted. If the transaction’s posting would cause the related cash account’s balance to be reduced below the limit defined for the account, the user receives an error message and must change the account to continue.
 You can also allow specified user groups to override cash control. If a user in a specified user group receives a warning that the cash balance for the account will be reduced below the limit, he or she can optionally choose to continue with posting the transaction. Users might override the cash control limit when the expenditure must be posted in advance of receiving the funds to cover it; or when an approved transfer must happen, but has not been entered or posted yet.
 The cash control limit is compared to the cash control balance (cash account balance minus all posted, unpaid AP invoices). The limit is surpassed when the cash control balance is less than the cash control limit (threshold).
 
@@ -12,20 +12,20 @@ The cash control limit is compared to the cash control balance (cash account bal
 
 ## Set up cash control accounts. 
 1. Go to **General ledger > Ledger setup > Posting setup > Cash control** configuration.
-2. Select the **Display account names** check box to view the account names for cash and Accounts payable (AP) accounts that you enter in the grid area.
+2. Select the **Display account names** check box to view the account names for cash and Accounts payable accounts that you enter in the grid area.
 3. Enter each cash account; it is recommended to add all cash account financial dimension strings. You can then specify which cash accounts are included in the cash control limitation.
 4. In the **Cash account** field, enter the cash account. You must enter a complete account number.
-5. Select the **Participate** check box to indicate that the cash account is subject to cash control. These cash accounts and the corresponding AP accounts are validated against the cash control configuration rules.
-6. Optional: Enter the AP account used with vendor invoices (AP account field). You must enter a complete account number.
+5. Select the **Participate** check box to indicate that the cash account is subject to cash control. These cash accounts and the corresponding Accounts payable accounts are validated against the cash control configuration rules.
+6. Optional: Enter the Accounts payable account used with vendor invoices (Accounts payable account field). You must enter a complete account number.
 7. In the **Threshold** field, enter the amount that must remain in the cash account to pass validation. You can enter a negative number if the cash account is allowed to be overdrawn (more transactions paid than are in the account).
 
 ## View accounts in cash control
 You can review the current balances of the accounts you defined in the Cash control configuration form. Go to **General ledger > Inquiries > Cash control inquiry**.
 The inquiry includes the following information:
 - Current cash account balance
-- Balance of all posted, unpaid AP invoices applied to the cash account's corresponding AP account
-- Cash control balance, which is the current cash account balance minus all of the posted, unpaid AP invoices and ALEs
-- Cash control threshold so you can compare the cash control balance to see if paying the AP invoices would put the cash account balance below the threshold
+- Balance of all posted, unpaid Accounts payable invoices applied to the cash account's corresponding Accounts payable account
+- Cash control balance, which is the current cash account balance minus all of the posted, unpaid Accounts payable invoices and ALEs
+- Cash control threshold so you can compare the cash control balance to see if paying the Accounts payable invoices would put the cash account balance below the threshold
 
 ## Process transactions with cash control validation
 Cash account balances are validated for Accounts payable invoices and Advanced ledger entries. The line item amount is validated against the cash and accounts paayble accounts that the line's financial distributions are associated with.
