@@ -50,13 +50,13 @@ We recommend that you use the Workflow Wizard to create a workflow type. When yo
 
 3.  Create workflow event handlers for started, completed, configuration change, and canceled, and then bind them to the workflow type. For more information, see [Create a workflow event handler](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler).
 
-4.  Create a class for the SubmitToWorkflowMenuItem and optionally, for the CancelMenuItem. Bind the classes to the **Action** menu items that you will create in the next step. For more information, see [Classes in X++](./dev-itpro/dev-ref/xpp-classes.md).
+4.  Create a class for the SubmitToWorkflowMenuItem and optionally, for the CancelMenuItem. Bind the classes to the **Action** menu items that you will create in the next step. For more information, see [Classes in X++](./dev-itpro/dev-ref/xpp-classes-methods.md).
 
 5.  Create an **Action** menu item for the workflow **SubmitToWorkflowMenuItem** property and optionally, for the **CancelMenuItem** property, and then bind the actions to the workflow type. For more information, see [Create a new workflow type](workflow-type-create-new.md).
 
 ### Next steps
 
-After you create a workflow type, you can add tasks, automated tasks, and approvals. For more information, select the links below in the **See also** section.
+After you create a workflow type, you can add tasks, automated tasks, and approvals.
 
 ## See also
 
