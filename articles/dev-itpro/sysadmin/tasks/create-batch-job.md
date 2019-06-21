@@ -34,7 +34,7 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 
 
 ## Create the batch job
-1. Go to **System administration > Inquiries > Batch jobs**.
+1. Go to **Navigation pane > Modules > System administration > Inquiries > Batch jobs**.
 2. Click **New**.
 3. In the **Job description** field, type a value.
 4. In the **Scheduled start date/time** field, enter a date and time.
