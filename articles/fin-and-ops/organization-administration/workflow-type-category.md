@@ -39,7 +39,7 @@ For example, a workflow type for a customer invoice should not be available in t
 
 The following procedure describes how to create a new workflow category.
 
-### To create a workflow category
+## Create a workflow category
 
 1.  In **Application Explorer**, expand the **Business Process and Workflow** node.
 
@@ -56,41 +56,9 @@ The following procedure describes how to create a new workflow category.
 | Help Text | The description of the workflow category displayed in the configuration user interface. |
 | Module    | The module that the workflow will be available in. The default is **Ledger**. |
 
-<table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>Property</p></th>
-    <th><p>Value</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p><strong>Name</strong></p></td>
-    <td><p>The name that is used to reference the workflow category.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Label</strong></p></td>
-    <td><p>The label used for the workflow category in the user interface.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>Help Text</strong></p></td>
-    <td><p>The description of the workflow category displayed in the configuration user interface.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Module</strong></p></td>
-    <td><p>The module that the workflow will be available in. The default is <strong>Ledger</strong>.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-
 After a workflow category is created, you can bind the workflow type to the new category. Typically, this is performed by the Workflow Wizard. The following procedure describes how to manually bind a workflow type to a workflow category.
 
-### To bind a workflow type to a workflow category
+## Bind a workflow type to a workflow category
 
 1.  In **Application Explorer**, expand the **Business Process and Workflow** node, and then expand the **Workflow Types** node.
 
