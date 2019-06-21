@@ -163,7 +163,7 @@ Follow the steps in the "Example: Automate the setting of baseline rules" sectio
 
 ### Suppress warnings about the replacement of format bindings
 
-By setting specific ER parameters, you can suppress notifications that warn about the replacement of format bindings. This suppression can be useful when format bindings are replaced in an unattended model by using the Regression Suite Automation Tool. In this case, the warning can be considered a failure of the test case that is running.
+By setting specific ER parameters, you can suppress notifications that warn about the replacement of format bindings. This suppression can be useful when format bindings are replaced in an unattended mode by using the Regression Suite Automation Tool. In this case, the warning can be considered a failure of the test case that is running.
 
 1. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, select **User parameters**.
 2. Set the **Suppress baseline warnings** option to **Yes**, and then select **OK**.
