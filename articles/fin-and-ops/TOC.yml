@@ -3046,6 +3046,8 @@
         href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
       - name: Trace generated report results and compare with baseline values
         href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+      - name: Improvements in tracing results of generated ER reports and comparing them with baseline values
+        href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
       - name: Cross-company data sources in Electronic reporting
         href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
       - name: Embed images and shapes in documents that you generate
@@ -3093,6 +3095,8 @@
         href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
       - name: Power BI Embedded integration
         href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
+      - name: Select analytical workspaces from PowerBI.com
+        href: ../dev-itpro/analytics/select-analytical-workspace.md
     - name: Personalization options with PowerBI.com
       items:
       - name: Features and services available via Power BI integration
