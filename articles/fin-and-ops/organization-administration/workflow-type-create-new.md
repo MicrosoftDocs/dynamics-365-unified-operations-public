@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Create a new workflow type 
 
-This topic describes how to create a workflow type in the Application Object Tree (AOT). In Finance and Operations, you enable the workflow process for a workflow document by creating workflow types that are used in the workflow configuration user interface.
+This topic describes how to create a workflow type in the Application Explorer. You enable the workflow process for a workflow document by creating workflow types that are used in the workflow configuration user interface.
 
 A workflow type defines information about:
 
