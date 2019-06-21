@@ -51,8 +51,8 @@ A workflow type defines information about:
     Value | Description
     |---|---|
     | Name | The name that will be used for the workflow type. |
-    | Category | Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see [How to create a workflow category](workflow-type-category.md). |
-    | Query | Choose the query that will access the table fields for the workflow document. For more information, see [How to create a query for a workflow type](workflow-type-query.md). |
+    | Category | Choose the workflow category to use for the workflow type. The category controls which module that the workflow type is available in. You can use an existing category or one that you created. For more information, see [Create a workflow category](workflow-type-category.md). |
+    | Query | Choose the query that will access the table fields for the workflow document. For more information, see [Create a query for a workflow type](workflow-type-query.md). |
     | Document menu item | Choose the menu item that points to the main form that displays the document for which you are creating a workflow type. |
     | Document web menu item | Choose the web menu item that points to the Enterprise Portal page that displays the document for which you are creating a workflow type. |
 
