@@ -43,7 +43,7 @@ A workflow type defines information about:
 
 ### To create a new workflow type
 
-1.  In the AOT, expand the **Workflow** node.
+1.  In the Application Explorer, expand the **Workflow** node.
 2.  Right-click the **Workflow Types** node, and then click **Add-Ins** \> **Workflow type wizard**. The **Workflow wizard** is displayed. This wizard will help you create a new workflow type.
 3.  Click **Next**.
 4.  Set the following values for the wizard.
