@@ -40,7 +40,7 @@ This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS)
 > Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
-All environments deployed through Lifecycle Services are supported. 
+All environments deployed through Lifecycle Services(LCS) are supported. 
 
 > [!NOTE]
 > If you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
