@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up and install Regression suite automation tool tutorial
+title: Get started with the Regression Suite Automation Tool - A tutorial
 description: This topic is a tutorial that shows how to set up and install Regression suite automation tool (RSAT).
 author: kfend
 manager: AnnBe
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Set up and install Regression suite automation tool tutorial
+# Get started with the Regression Suite Automation Tool (RSAT) - A tutorial
+This article is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT. 
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,13 +50,10 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 - A Finance and Operations environment that runs Microsoft Dynamics 365 for Finance and Operations version 10.0 (April 2019) or later is required for this tutorial. For customers who are using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, Platform update 20 (PU20) or later is also supported.
 - The user must have admin rights to the Finance and Operations environment.
 - You must have access to the customer tenant LCS and Azure DevOps (previously known as Microsoft Visual Studio Team Services \[VSTS\]).
-- You must have one of the following licenses for the user who is creating and managing test suites:
-
-    - Azure DevOps Test Manager license
+- The user that is creating and managing tests suites must have an Azure DevOps Test Plans or Test Manager license. The following licenses will also give you access to Test Plans:
     - Visual Studio Enterprise license
     - Visual Studio Test Professional license
     - MSDN Platforms subscriber license
-
 - RSAT must have access to the test environment via a web browser.
 - To generate and edit test parameters, you must have Microsoft Excel installed.
 
@@ -63,9 +61,10 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 #### User eligibility
 
-Make sure that the user is created in Azure DevOps and has a subscription level that provides access to Azure Test Plans. An Azure DevOps Test Manager license is required only if the user will create and manage test cases (that is, not all RSAT users require this license). For information about the license requirements, see [License requirements](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
+Make sure that the user is created in Azure DevOps and has a subscription level that provides access to Azure Test Plans. An Azure DevOps Test Plans license is required only if the user will create and manage test cases (that is, not all RSAT users require this license). For information about the license requirements, see [License requirements](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
 
 #### Create a new Azure DevOps project
+RSAT uses Azure Devops for test case and test suite management, reporting and investigating test run results. 
 
 > [!NOTE]
 > You can use an existing Azure DevOps project. However, if your existing Azure DevOps project is set up so that it has a custom template, you will receive a "VSTS Sync Failure" error when you sync test cases from Business process modeler (BPM) to Azure DevOps (see the [Test the synchronization from BPM to Azure DevOps](#test-the-synchronization-from-bpm-to-azure-devops) section). If the following best practices have been followed for the custom template, you will be able to sync the test cases to Azure DevOps. (These best practices are listed in the error message.)
@@ -76,7 +75,7 @@ Make sure that the user is created in Azure DevOps and has a subscription level 
 
 ![Error message with a list of best practices](./media/setup_rsa_tool_02.png)
 
-Otherwise, we recommend that you create a new Azure DevOps project. For more information, see [Issues when syncing to BPM using a custom Azure DevOps (VSTS) process template](https://blogs.msdn.microsoft.com/lcs/2018/11/28/issues-when-syncing-to-bpm-using-a-custom-azure-devops-vsts-process-template/).
+Otherwise, for the purpose of this tutorial, we recommend that you create a new Azure DevOps project. For more information, see [Issues when syncing to BPM using a custom Azure DevOps (VSTS) process template](https://blogs.msdn.microsoft.com/lcs/2018/11/28/issues-when-syncing-to-bpm-using-a-custom-azure-devops-vsts-process-template/).
 
 1. Open the Azure DevOps URL (`https://dev.azure.com/<Azure DevOps Name>`).
 2. Select **Create project** in the upper-right corner of the Azure DevOps page.
@@ -93,7 +92,7 @@ Otherwise, we recommend that you create a new Azure DevOps project. For more inf
 
 #### Create a personal access token
 
-A personal access token lets you sync LCS with Azure DevOps.
+In this tutorial, you will use the LCS Business Process Modeler (BPM) to create a test case library and synchronize your test cases with Azure DevOps. You will need a personal access token to sync BPM with Azure DevOps.
 
 1. Select the profile icon in the upper-right corner of the page for your Azure DevOps project, and then select **Security**.
 
@@ -118,7 +117,7 @@ A personal access token lets you sync LCS with Azure DevOps.
 
 ### LCS project
 
-Use the existing customer implementation project in LCS.
+For your LCS project, you can use an existing customer implementation or partner project.
 
 #### Update the LCS language
 
@@ -134,9 +133,9 @@ Use the existing customer implementation project in LCS.
 
     ![Language preference tab in User settings](./media/setup_rsa_tool_10.png)
 
-#### Configure the LCS project with the Azure DevOps project
+#### Configure the LCS project to connect to the Azure DevOps project
 
-If you created a new Azure DevOps project earlier, configure the LCS project with it. Otherwise, you can continue to the next section.
+If you created a new Azure DevOps project earlier, configure the LCS project with it. Otherwise, if your LCS project is already connected to your Azure DevOps project, you can continue to the next section.
 
 1. Go to the LCS implementation project.
 2. Select the **Menu** button, and then select **Project settings**.
@@ -181,7 +180,7 @@ If you created a new Azure DevOps project earlier, configure the LCS project wit
 
 ### Business process library
 
-BPM is used as the master library for your project's test cases. Test cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this topic.
+BPM is used as the master library for your project's test cases. BPM is used to manage and distribute test libraries across LCS projects. For example: A Microsoft partner or independent software vendor (ISV) building test libraries will release test cases in the form of BPM libraries. In BPM, Test cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this topic.
 
 #### Create a new BPM library
 
