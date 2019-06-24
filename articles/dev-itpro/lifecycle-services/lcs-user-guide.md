@@ -3,12 +3,12 @@
 
 title: Lifecycle Services (LCS) user guide
 description: This topic provides information about the tools that are available in Lifecycle Services (LCS) and when to use them as you move through the phases of your work in LCS.
-author: kfend
+author: manalidongre
 manager: AnnBe
-ms.date: 06/13/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6034
 ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -54,7 +54,7 @@ The following table lists the tools that are provided in LCS and describes the p
 
 | [Asset Library](asset-library.md)                             | The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics Lifecycle Services (LCS).
                                                                                                                                                                       |
-| [Get updates](dev-itpro/migration-upgrade/download-hotfix-lcs.md)                            | Way for customers that are running Dynamics 365 Finance and Operations or Dynamics 365 for Retail to get access to the updates that are available for their environments.  
+| [Get updates](dev-itpro/migration-upgrade/download-hotfix-lcs.md)                            | Provides a way for customers that are running Dynamics 365 Finance and Operations or Dynamics 365 for Retail to get access to the updates that are available for their environments.  
 
                           |
 
@@ -68,7 +68,7 @@ The following table lists the tools that are provided in LCS and describes the p
 | [Regulatory updates](regulatory-watch-communication.md)                      | Enable customers, partners, ISV solution providers stay upto date on the regulatory updates by setting up alerts through Lifecycle Services.
                                         |
 
-| [System diagnostics](ax-2012/system-diagnostics-lcs.md)                       | System diagnostics helps administrators monitor the Dynamics Ax 2012 environments.                                                                                                                                                                                                                                                                                      |
+| [System diagnostics](ax-2012/system-diagnostics-lcs.md)                       | System diagnostics helps administrators monitor the Dynamics AX 2012 environments.                                                                                                                                                                                                                                                                                      |
 | [Updates](ax-2012/update-2012-r3-lcs.md)                                  | The Updates page  hosts the details about updates that are available for a 2012 environment. It also provides access to groups of updates that can be used for slipstream installations.                                                                                                                                                                                                                                                                                                                               |
 | [Upgrade analysis](ax-2012/upgrade-analysis-lcs.md)                         | Upgrade analysis helps you plan your upgrade to the latest version of Microsoft Dynamics 365 for Finance and Operations by analyzing code artifacts from Microsoft Dynamics AX 4.0, Dynamics AX 2009, or Dynamics AX 2012.                                                                                                                                                                                                                                                                                                    |
 | [Usage profiler](ax-2012/usage-profiler-lcs.md)                           | Usage profiler is a data-gathering tool that helps you describe your projected or current usage of an. The usage profile that is generated can be used for various purposes, such as hardware sizing and support.                                                                                                                                                                                                                                                                                                 |
