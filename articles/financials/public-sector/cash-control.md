@@ -32,9 +32,6 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/preview-banner.md)]
-
-
 Cash control allows you to define a limit that prevents transactions from posting if no cash balance is available or if the transaction causes the balance to fall below the defined limit. Accounts payable vendor invoices and General ledger advanced ledger entries are validated when they are created, edited, and posted. If the transaction’s posting would cause the related cash account’s balance to be reduced below the limit defined for the account, the user receives an error message and must change the account to continue.
 
 You can also allow specified user groups to override cash control. If a user in a specified user group receives a warning that the cash balance for the account will be reduced below the limit, he or she can choose to continue with posting the transaction. Users might override the cash control limit when the expenditure must be posted in advance of receiving the funds to cover it; or when an approved transfer must happen, but has not been entered or posted yet.
