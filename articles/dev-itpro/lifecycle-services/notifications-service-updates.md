@@ -5,7 +5,7 @@ title: Get notified about service updates through Lifecycle Services (LCS)
 description: This topic explains the various ways that you can be notified about service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
