@@ -2,7 +2,7 @@
 # required metadata
 
 title: Certificate rotation
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
 ms.date: 06/24/2019
@@ -32,20 +32,20 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include[banner](../includes/banner.md)]
 
-You may need to rotate the certificates used by your Finance and Operations on-premises environment, as they approach their expiration date. In this topic, you can learn how to replace the existing certificates with new ones and update the references within the environment to use the new certificates.
+You may need to rotate the certificates used by your Finance and Operations on-premises environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
 > [!NOTE]
-> Old certificates must remain in place until the certificate rotation process is complete, removing them beforehand will cause the rotation process to fail.
+> Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
 ## Preparation steps 
 
-1. Rename the original **Infrastructure** folder you created during the [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts) to **InfrastructureOld**.
+1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Rename the folder to **InfrastructureOld**.
 
-2. Download the latest [setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
+2. Download the latest setup scripts based on [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
 
 3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. Proceed with [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically:
+4. Configure certificates as needed in **ConfigTemplate.xml**. Do this by following [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically following these steps:
 
     ```powershell
     # Create self-signed certs
@@ -55,7 +55,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. Proceed with [Setup VMs](setup-deploy-on-premises-pu12.md#setupvms). Specific steps that are needed are:
+5. Proceed with [Setup VMs](setup-deploy-on-premises-pu12.md#setupvms). The specific steps that are needed are:
 
     1. Export the scripts that must be run on each VM.
     
@@ -64,7 +64,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-    2. Copy the contents of each infrastructure\\VMs<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts, if they exist, as an Administrator.
+    2. Copy the contents of each infrastructure\\VMs<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts, if they exist. Perform these stesps as an Administrator.
 	
         ```powershell
         # If Remoting, only execute
@@ -81,7 +81,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. If axdataenciphermentcert certificates is rotated, you need to regenerate credentials.json file. For more information, see [Encrypt credentials](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred).
+6. If axdataenciphermentcert certificates are rotated, you need to regenerate credentials.json file. For more information, see [Encrypt credentials](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred).
 
 7. Run following PowerShell command to have values to be used in LCS later. For more information, see [Deploy your Finance and Operations (on-premises) environment from LCS](setup-deploy-on-premises-pu12.md#deploy).
 
@@ -90,11 +90,11 @@ You may need to rotate the certificates used by your Finance and Operations on-p
     `````
 
 
-## Activation of New Certificates within Service Fabric Cluster
+## Activation of new certificates within Service Fabric Cluster
 
 ### Service fabric with not expired Certificates
 
-1. Edit the Clusterconfig.json file. Find the following section:  
+1. Edit the Clusterconfig.json file. Find the following section.  
     ```
                        "security":  {
                                         "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
@@ -119,7 +119,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
                                     },
     ```
 
-2. Replace section with following:
+2. Replace that section with following.
 
     ```
                        "security":  {
@@ -151,9 +151,9 @@ You may need to rotate the certificates used by your Finance and Operations on-p
                                     },
     ```
 
-3. Edit new and old thumbprint values. 
+3. Edit the new and old thumbprint values. 
 
-4. Change clusterConfigurationVersion in the top to new version, example 2.0.0.
+4. Change clusterConfigurationVersion to the new version, for example 2.0.0.
 
     ```
     {
@@ -170,43 +170,43 @@ You may need to rotate the certificates used by your Finance and Operations on-p
     Connect-ServiceFabricCluster
 
     # Get path of ClusterConfig.json for following command
-    # Note after running following command, manually cancel via red button (Stop Operation) in Windows PowerShell ISE or Ctrl + C in Windows PowerShell as otherwise note will receive "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware upgrade will proceed.
+    # Note that after running the following command, manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell, otherwise you will receive the following notifiation "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
     Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
 
-    # If using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check as otherwise will timeout
+    # If using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
     Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
     
-    # To monitor status of upgrade run following and note UpgradeState and UpgradeReplicaSetCheckTimeout
+    # To monitor the status of the upgrade, run the following and note UpgradeState and UpgradeReplicaSetCheckTimeout
     Get-ServiceFabricClusterUpgrade
     
-    # While monitoring status of upgrade, if UpgradeReplicaSetCheckTimeout was reset back to default (example 49710.06:28:15), run following command again
+    # While monitoring the status of the upgrade, if UpgradeReplicaSetCheckTimeout was reset to the default (example 49710.06:28:15), run following command again
     Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
     
     # When UpgradeState shows RollingForwardCompleted, upgrade is done
     ```
 
-### Service fabric with or without expired Certificates (cluster not accessible)
+### Service fabric with or without expired certificates (cluster not accessible)
 
-Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
+Continue this process following [Clean up an existing environment and redeploy](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
-## LocalAgent Certificate update (if needed)
+## LocalAgent certificate update (if needed)
 
-1. Run following PowerShell command on one of the Orchestrator nodes.
+1. Run the following PowerShell command on one of the Orchestrator nodes.
 
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. Run following PowerShell command to note new LocalAgent thumbprint.
+2. Run the following PowerShell command and note the new LocalAgent thumbprint.
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-3. Proceed with [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
+3. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
 
 	> [!NOTE] 
-	> If receive error **Update to existing credential with KeyId '\<key\>' is not allowed.**, follow [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
+	> If you receive error **Update to existing credential with KeyId '\<key\>' is not allowed**[Error: "Updates to existing credential with KeyId '<key>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
 4. Proceed with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically following changes:
 
@@ -217,35 +217,35 @@ Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-pre
 ## Update deployment settings in LCS
 
 > [!NOTE}
-> Please keep in mind that Client, Data Signing, and Encipherment certificates will only be replaced. You will also need to recreate the Credentials.json file like described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
+>  Note tha that Client, Data Signing, and Encipherment certificates will only be replaced. You will also need to recreate the Credentials.json file, as described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
 
 
 > [!NOTE] 
-> Make a backup of local Dynamics database.
+> Before you continue, make a backup of local Dynamics database.
 
-1. In LCS, click on the "Full Details" link of the environment where you want to change the certificates.
+1. In LCS, select the "Full Details" link of the environment where you want to change the certificates.
 
-2. Click **Maintain** button and select **Update Settings**.
+2. Select the **Maintain** button and then select **Update Settings**.
 
 	![](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. Change the thumbprints with the new ones that you have previously configured (you can find these in the ConfigTemplate.xml in the InfrastructureScripts folder).
+3. Change the thumbprints to the new ones that you have previously configured (you can find these in ConfigTemplate.xml in the InfrastructureScripts folder).
 
 	![](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
 	![](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
-4. Click “Prepare”.
+4. Select **Prepare**.
 
-5. After downloading and preparing is complete, the "Update environment" button will show up.
+5. After downloading and prepartion is complete, the **Update environment** button will display.
 
 	![](media/0a9d43044593450f1a828c0dd7698024.png)
 
-6. Click "Update environment" to start updating you environment.
+6. Select **Update environment** to start updating your environment.
 
-7. During this period the environment will be unavailable.
+7. During the update, the environment will be unavailable.
 
-8. After the environment is successfully updated with the new certificates, you can check the new thumbprints in Service Fabric Cluster Explorer. Please note that the name of the thumbprint name from SF Explorer might differ from the names of the thumbprints you see in the LCS page. However, their values should be the same.
+8. After the environment is successfully updated with the new certificates, you can check the new thumbprints in Service Fabric Cluster Explorer. Note that the name of the thumbprint name from Service Fabric Explorer might differ from the names of the thumbprints that you in Lifecycle Services. However, their values should be the same.
 
 	Here is an example of how the name of the same thumbprint might differ.
 
@@ -257,4 +257,4 @@ Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-pre
 
 1. Be aware if the SQL server certificate has expired. For more information, see [Set up SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).
 
-2. Be aware if the AD FS certificate has expired. 
+2. Check to be sure that the Azure Active Directory Fabrice Service certificate has not expired. 
