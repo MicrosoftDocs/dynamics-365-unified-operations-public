@@ -5,7 +5,7 @@ title: Configure the payroll integration between Talent and Dayforce
 description: This topic explains how to configure the integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce so that you can process a pay run.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -65,10 +65,11 @@ For more information about Azure storage accounts and Azure Storage connection s
 
 Turning on the payroll integration has two primary effects:
 
-1. A data export project named "Payroll integration export" is created. This project contains the entities and fields required for the payroll integration. The project can be examined by navigating to **System administration**, selecting the **Data management** tile, and then opening the data project from the list of projects.
-2. A batch job with job description "Payroll integration scheduled sync" is created. This batch job is responsible for executing the data export project, encrypting the resulting data package, and transferring the data package file to the SFTP endpoint configured on the **Integration configuration** screen.
+- A data export project named "Payroll integration export" is created. This project contains the entities and fields required for the payroll integration. To examine the project, go to **System administration**, select the **Data management** tile, and then open the data project from the list of projects.
+- This batch job executes the data export project, encrypts the resulting data package, and transfers the data package file to the SFTP endpoint configured on the **Integration configuration** screen.
 
-[!NOTE] The data package transferred to the SFTP endpoint is encrypted using a key unique to the package. The key is in an Azure Key Vault accessible only by Ceridian. It will not be possible to decrypt and examine the data package contents. If you need to examine the contents of the data package, you should export the "Payroll integration export" data project manually, download it, and then open it. Manual export will not apply encyrption or transfer the package.
+> [!NOTE]
+> The data package transferred to the SFTP endpoint is encrypted using a key that is unique to the package. The key is in an Azure Key Vault that is accessible only by Ceridian. It is not possible to decrypt and examine the data package contents. If you need to examine the contents of the data package, you need to export the "Payroll integration export" data project manually, download it, and then open it. Manual export will not apply encryption or transfer the package.
 
 ## Configure your data 
 
