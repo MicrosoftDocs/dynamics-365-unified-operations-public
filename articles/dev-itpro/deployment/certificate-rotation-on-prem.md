@@ -71,7 +71,6 @@ You may need to rotate the certificates used by your Finance and Operations on-p
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-        .\Add-GMSAOnVM.ps1
         .\Import-PfxFiles.ps1
         .\Set-CertificateAcls.ps1
         ```
@@ -216,6 +215,10 @@ Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-pre
 	- Tenant service principle certificate thumbprint
 
 ## Update deployment settings in LCS
+
+> [!NOTE}
+> Please keep in mind that Client, Data Signing, and Encipherment certificates will only be replaced. You will also need to recreate the Credentials.json file like described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
+
 
 > [!NOTE] 
 > Make a backup of local Dynamics database.
