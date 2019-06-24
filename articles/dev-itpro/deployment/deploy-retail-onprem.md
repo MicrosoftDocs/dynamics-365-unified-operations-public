@@ -5,7 +5,7 @@ title: Installation steps for Retail channel components in an on-premises enviro
 description: This topic covers the installation steps for Retail channel components in an on-premises environment. 
 author: jashanno
 manager: AnnBe
-ms.date: 12/17/2018
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
