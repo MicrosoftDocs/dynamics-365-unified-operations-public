@@ -257,6 +257,6 @@ Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-pre
 
 ## Update other certificates as needed
 
-1. Be aware if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu12.md2#-13-set-up-sql-server).
+1. Be aware if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu12.md2#setupsql).
 
 2. Be aware if the AD FS certificate has expired. 
