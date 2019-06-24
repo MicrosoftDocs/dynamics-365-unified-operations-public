@@ -32,16 +32,16 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include[banner](../includes/banner.md)]
 
-You may need to rotate the certificates used by your Finance and Operations on-premises environment, as they approach their expiry date. In this article you can understand how to replace the existing certificates with new ones and update the references within the environment to use the new certificates.
+You may need to rotate the certificates used by your Finance and Operations on-premises environment, as they approach their expiration date. In this topic, you can learn how to replace the existing certificates with new ones and update the references within the environment to use the new certificates.
 
 > [!NOTE]
 > Old certificates must remain in place until the certificate rotation process is complete, removing them beforehand will cause the rotation process to fail.
 
 ## Preparation steps 
 
-1. Rename the original **Infrastructure** folder you created during **Set up and deploy on-premises environments** [on-premises setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts) to **InfrastructureOld**.
+1. Rename the original **Infrastructure** folder you created during the [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts) to **InfrastructureOld**.
 
-2. Download the latest [on-premises setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
+2. Download the latest [setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
 
 3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
@@ -94,7 +94,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 
 ### Service fabric with not expired Certificates
 
-1. Edit the Clusterconfig.json file. Find the Part:  
+1. Edit the Clusterconfig.json file. Find the following section:  
     ```
                        "security":  {
                                         "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
