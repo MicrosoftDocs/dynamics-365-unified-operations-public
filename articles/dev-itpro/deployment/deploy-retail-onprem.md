@@ -48,7 +48,7 @@ Before you can start installation of Retail channel components, you must first c
 
 ## Installation steps
 
-1.	On the previously created [Application share](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile) (Not **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
+1.	On the previously created [Application share](setup-deploy-on-premises-pu12.md#setupfile), (not the **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
 2.	On each AOS computer, create an easily accessible directory, such as **C:/selfservicepackages**.
 3.  On one AOS computer (Which does not matter), run the following PowerShell script:
 
@@ -56,7 +56,8 @@ Before you can start installation of Retail channel components, you must first c
 .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -SendProductSupportTelemetryToMicrosoft
 ```
   > [!IMPORTANT]
-  > The above functions on version 10.0 and above.  For the original 8.1.3 release of Retail functionality on premises, the original version of the script delimiters must be used:
+  > The above steps apply to version 10.0 and above.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used:
+  
   > ```powershell
   > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
   > ```
@@ -69,9 +70,9 @@ Before you can start installation of Retail channel components, you must first c
 
 4. On each AOS computer, run the following PowerShell script:
 
-```powershell
-.\RetailUpdateDatabase.ps1 -RetailSelfServicePackages 'C:\RetailSelfService\Packages'
-```
+  ```powershell
+  .\RetailUpdateDatabase.ps1 -RetailSelfServicePackages 'C:\RetailSelfService\Packages'
+  ```
 
   > [!NOTE]
   > - The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
@@ -117,8 +118,10 @@ Before you can start installation of Retail channel components, you must first c
 
   > [!NOTE]
   > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In headquarters, when the **Download** functionality is attempted (for example, Retail Store Scale Unit or Retail Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
+  
   > [!IMPORTANT]
-  > The Peripheral Simulator (Downloaded on the Hardware profile page in headquarters) will still not be available until at least one Hardware profile has been created and functional.  After that point has been achieved, the following script can be run:
+  > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will still not be available until at least one Hardware profile has been created and is functional.  After that point has been achieved, the following script can be run:
+  
   > ```powershell
   > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
   > ```
