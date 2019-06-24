@@ -5,7 +5,7 @@ title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,5 +74,8 @@ In other situations, when you don’t see certain business events, doing a manua
 
 Typically this indicates that the business events batch processor is not running. As a result, the business events are not getting processed to be sent out to the endpoints. The batch processor can be started from **System parameters > Business events - Preview** tab. The job must be scheduled to run in batch, in a recurring manner, to ensure continued processing of business events.
 
-**0 is an invalid bundle size** When running the business events batch processor (applies to PU24, PU25, PU26 and PU27)
-This refers to an update issue due to which some of the business events parameters are not set correctly. On a non-production environment, you must update BusinessEventsParamters table to update Enabled =1; BundleSize = 50; EndPointsPerEvent = 10. After this update, restart batch service to pick up the latest values. This issue has been fixed in PU28.
+**0 is an invalid bundle size**
+
+This occurs when running the business events batch processor (applies to Platform updates 24, 25, 26, and 27).
+
+This refers to an update issue as a result of some of the business events parameters not being set correctly. On a non-production environment, you must update the **BusinessEventsParamters** table to update Enabled =1; BundleSize = 50; EndPointsPerEvent = 10. After this update, restart the batch service to pick up the latest values. This issue has been fixed in Platform update 28.
