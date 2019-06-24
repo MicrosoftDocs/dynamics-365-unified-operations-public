@@ -245,8 +245,6 @@ Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-pre
 
 7. During this period the environment will be unavailable.
 
-	![](media/bbc38a913888afa5b0410d05af38216e.png)
-
 8. After the environment is successfully updated with the new certificates, you can check the new thumbprints in Service Fabric Cluster Explorer. Please note that the name of the thumbprint name from SF Explorer might differ from the names of the thumbprints you see in the LCS page. However, their values should be the same.
 
 	Here is an example of how the name of the same thumbprint might differ.
