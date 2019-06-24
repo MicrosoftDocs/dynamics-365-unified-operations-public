@@ -211,7 +211,7 @@ Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-pre
 4. Proceed with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically following changes:
 
 	- Client certificate thumbprint
-	- Server Certificate thumbprint
+	- Server certificate thumbprint
 	- Tenant service principle certificate thumbprint
 
 ## Update deployment settings in LCS
