@@ -57,7 +57,7 @@ This article is a tutorial that helps you get setup and get started with RSAT an
 - RSAT must have access to the test environment via a web browser.
 - To generate and edit test parameters, you must have Microsoft Excel installed.
 
-### Azure DevOps
+## Configure Azure DevOps
 
 #### User eligibility
 
@@ -115,11 +115,13 @@ In this tutorial, you will use the LCS Business Process Modeler (BPM) to create 
 
     ![Personal access token](./media/setup_rsa_tool_08.png)
 
-### LCS project
+## Configure the LCS project
+
+You need a Lifecycle Sercices (LCS) project for your master test library. The LCS Business Process Modeler (BPM) is used as the master library for your test cases. BPM is used to manage and distribute test libraries across LCS projects. For example: A Microsoft partner or independent software vendor (ISV) building test libraries will release test cases in the form of BPM libraries. In BPM, Test cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this topic.  
 
 For your LCS project, you can use an existing customer implementation or partner project.
 
-#### Update the LCS language
+### Update the LCS language
 
 > [!NOTE]
 > For the user interface (UI) to correctly show business processes, the LCS preferred language must be set to **English (United States)**.
@@ -133,7 +135,7 @@ For your LCS project, you can use an existing customer implementation or partner
 
     ![Language preference tab in User settings](./media/setup_rsa_tool_10.png)
 
-#### Configure the LCS project to connect to the Azure DevOps project
+### Configure the LCS project to connect to the Azure DevOps project
 
 If you created a new Azure DevOps project earlier, configure the LCS project with it. Otherwise, if your LCS project is already connected to your Azure DevOps project, you can continue to the next section.
 
@@ -178,11 +180,7 @@ If you created a new Azure DevOps project earlier, configure the LCS project wit
 
     ![Authorized user](./media/setup_rsa_tool_19.png)
 
-### Business process library
-
-BPM is used as the master library for your project's test cases. BPM is used to manage and distribute test libraries across LCS projects. For example: A Microsoft partner or independent software vendor (ISV) building test libraries will release test cases in the form of BPM libraries. In BPM, Test cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this topic.
-
-#### Create a new BPM library
+### Create a new BPM library
 
 1. Go to the LCS implementation project.
 2. Select the **Menu** button, and then select **Business process modeler**.
@@ -206,20 +204,20 @@ BPM is used as the master library for your project's test cases. BPM is used to 
 
     ![Name and Description fields](./media/setup_rsa_tool_24.png)
 
-### Finance and Operations
+## Finance and Operations Environment
 
-#### Version requirement
+### Version requirement
 
 A Finance and Operations environment that runs version 10 is required. For customers that are using version 7.3, PU20 or later is also supported.
 
 > [!NOTE]
 > RSAT must have access to your Finance and Operations test environment via a web browser.
 
-#### User criteria
+### User criteria
 
 The user must have admin rights to this environment.
 
-#### Set up Help settings to connect with LCS
+### Set up Help settings to connect with LCS
 
 This step is required in order to connect with LCS so that task recordings can be saved to the appropriate BPM library in LCS through the Finance and Operations client.
 
@@ -236,12 +234,12 @@ This step is required in order to connect with LCS so that task recordings can b
 
     ![Notification about refreshing the browser](./media/setup_rsa_tool_26.png)
 
-### Task recording
+## Task recordings
 
 > [!NOTE]
 > Make sure that all your task recordings start on the main dashboard of Finance and Operations. Keep individual recordings short, and focus on one business task, such as creating a sales order.
 
-#### Create a task recording and save it to the BPM library
+### Create a task recording and save it to the BPM library
 
 Create a corresponding task recording that you can attach to the simple business process that was created in the new BPM library.
 
@@ -297,7 +295,7 @@ Create a corresponding task recording that you can attach to the simple business
 
         ![Selecting the .axtr file to upload](./media/setup_rsa_tool_38.png)
 
-#### Test the synchronization from BPM to Azure DevOps
+### Test the synchronization from BPM to Azure DevOps
 
 Now that a task recording is attached to the business process, you must validate that the business process and the associated task recording can be synced to Azure DevOps as a feature and a test case (respectively) by using the VSTS sync feature in LCS.
 
@@ -338,11 +336,7 @@ Now that a task recording is attached to the business process, you must validate
 
     ![Work item and test case](./media/setup_rsa_tool_45.png)
 
-### Excel
-
-To generate and edit test parameters, you must have Excel installed.
-
-## Installation
+## Install and Configure RSAT
 
 RSAT can be installed on any computer that runs Windows 10 and that can connect to the Finance and Operations environment via a web browser (Internet Explorer or Google Chrome).
 
@@ -454,7 +448,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### Install Selenium and browser drivers
 
-In older versions of RSAT, you had to install Selenium and browser drivers. You no longer have to install these drivers.
+In older versions of RSAT, you had to install Selenium and browser drivers. You no longer have to install these drivers, the are automatically installed.
 
 1. The first time that you open RSAT, you're prompted to automatically download and install Selenium. For more information, see the [Configure RSAT](#configure-rsat) section.
 2. Before you can run a test case, you're prompted to automatically download and install the browser driver that corresponds to the default browser that is selected in the RSAT configuration. For more information, see the [Load and run test cases](#load-and-run-test-cases) section.
