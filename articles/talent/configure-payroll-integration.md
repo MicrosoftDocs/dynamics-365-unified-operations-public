@@ -61,6 +61,15 @@ For more information about Azure storage accounts and Azure Storage connection s
 - [About Azure storage accounts](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
 
+### Technical details when payroll integration is enabled
+
+Turning on the payroll integration has two primary effects:
+
+1. A data export project named "Payroll integration export" is created. This project contains the entities and fields required for the payroll integration. The project can be examined by navigating to **System administration**, selecting the **Data management** tile, and then opening the data project from the list of projects.
+2. A batch job with job description "Payroll integration scheduled sync" is created. This batch job is responsible for executing the data export project, encrypting the resulting data package, and transferring the data package file to the SFTP endpoint configured on the **Integration configuration** screen.
+
+[!NOTE] The data package transferred to the SFTP endpoint is encrypted using a key unique to the package. The key is in an Azure Key Vault accessible only by Ceridian. It will not be possible to decrypt and examine the data package contents. If you need to examine the contents of the data package, you should export the "Payroll integration export" data project manually, download it, and then open it. Manual export will not apply encyrption or transfer the package.
+
 ## Configure your data 
 
 To process payroll, you must configure human resource data in Talent. You must set up organizational data, such as jobs and positions, together with benefits and compensation information. This information provides the employment, pay, and deduction information that is required in order to generate employee pay.
