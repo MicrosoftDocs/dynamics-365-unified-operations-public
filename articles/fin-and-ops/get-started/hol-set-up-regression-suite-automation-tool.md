@@ -135,9 +135,9 @@ For your LCS project, you can use an existing customer implementation or partner
 
     ![Language preference tab in User settings](./media/setup_rsa_tool_10.png)
 
-### Configure the LCS project to connect to the Azure DevOps project
+### Configure LCS to connect to the Azure DevOps project
 
-If you created a new Azure DevOps project earlier, configure the LCS project with it. Otherwise, if your LCS project is already connected to your Azure DevOps project, you can continue to the next section.
+If you created a new Azure DevOps project earlier, configure the LCS project to connect to it. Otherwise, if your LCS project is already connected to your Azure DevOps project, you can continue to the next section.
 
 1. Go to the LCS implementation project.
 2. Select the **Menu** button, and then select **Project settings**.
@@ -208,7 +208,7 @@ If you created a new Azure DevOps project earlier, configure the LCS project wit
 
 ### Version requirement
 
-A Finance and Operations environment that runs version 10 is required. For customers that are using version 7.3, PU20 or later is also supported.
+A Finance and Operations environment test or sandbox that runs version 10 is required. For customers that are using version 7.3, PU20 or later is also supported.
 
 > [!NOTE]
 > RSAT must have access to your Finance and Operations test environment via a web browser.
