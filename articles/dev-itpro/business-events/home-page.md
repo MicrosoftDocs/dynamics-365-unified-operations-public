@@ -5,7 +5,7 @@ title: Business events
 description: This topic provides information about business events, which s provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -135,6 +135,9 @@ To create an endpoint to a Service Bus topic, select **New**, and then, in the *
 ### Create an Azure Event Grid endpoint
 
 To create an endpoint, you need to create and configure an **Azure Event Grid Topic** in Azure Portal, and then create an endpoint to the Event Grid Topic in the **Business Events Workspace**. Go to the **Endpoints** tab, select **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. This is the **Topic Endpoint** value in the **Overview** section of your Event Grid Topic.
+
+> [!IMPORTANT]
+> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
 
 ![Business events Event Grid Endpoint value](../media/BusinessEventsEGTopicsEndpoint.PNG)
 
