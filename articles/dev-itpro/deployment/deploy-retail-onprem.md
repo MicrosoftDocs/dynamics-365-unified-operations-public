@@ -75,7 +75,7 @@ Before you can start installation of Retail channel components, you must first c
   ```
 
   > [!NOTE]
-  > - The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
+  > The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
 
 5.	Download the appropriate binary update from LCS to have the Retail installers. For instructions, see [Get updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 6.	Extract the zip file and copy all self-service installers into the folder **C:/selfservicepackages** defined and created in step 2 in each of the AOS machines. The six self-service installers include: 
