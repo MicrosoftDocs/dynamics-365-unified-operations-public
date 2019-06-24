@@ -56,7 +56,7 @@ Before you can start installation of Retail channel components, you must first c
     .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -       SendProductSupportTelemetryToMicrosoft
     ```
   > [!IMPORTANT]
-  > The above steps apply to version 10.0 and above.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used:
+  > The above steps apply to version 10.0 and later.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used:
   
   > ```powershell
   > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
@@ -85,8 +85,8 @@ Before you can start installation of Retail channel components, you must first c
     - ModernPosSetup.exe
     - ModernPosSetupOffline.exe
     - StoreSystemSetup.exe
-7.  Navigate to the ADFS machine, then go to the InfrastructureScripts folder. This is the same file directory where the previously run Retail PowerShell script was located (**RetailUpdateDatabase.ps1**). Find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
-8.  On the ADFS machine currently viewing, run this script in a new PowerShell window using the command **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'**, where the **HostUrl** value can be found in Service Fabric.  To find the **HostUrl** value, navigate to **Service Fabric** &gt; **Application fabric:/AXSF** &gt; **Details** &gt; **Aad_AADValidAudience**.
+7.  Navigate to the AD FS machine, then go to the InfrastructureScripts folder. This is the same file directory where the previously run Retail PowerShell script was located (**RetailUpdateDatabase.ps1**). Find the PowerShell script **Create-ADFSServerApplicationForRetail.ps1**.
+8.  On the AD FS machine that you're currently using, run this script in a new PowerShell window using the command **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'**, where the **HostUrl** value can be found in Service Fabric.  To find the **HostUrl** value, navigate to **Service Fabric** &gt; **Application fabric:/AXSF** &gt; **Details** &gt; **Aad_AADValidAudience**.
 9.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
 10.  Edit the newly generated Server application and select **Reset the Secret**.
 
