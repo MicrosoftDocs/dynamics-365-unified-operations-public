@@ -1,6 +1,6 @@
 ---
 title: Impact analysis report
-description: This topic provides information about the impact analysis report in Lifecycle Services (LCS).
+description: This topic provides information about the Impact analysis report in Lifecycle Services (LCS).
 author: dfroslieMSFT 
 manager: AnnBe
 ms.date: 06/24/2019
@@ -39,7 +39,7 @@ A key measure in the report is the amount of code change, or churn, that Microso
 
 Code changes can be aggregated to a module level using a standardized naming convention that is part of the Microsoft engineering system.  This enables a user to determine the relative amount of change in different parts of the product for one or more releases.
 
-Besides release and module filters, the code changes can be filtered based on the phase of the engineering cycle.  The Engineering branch is where changes are made before the release is made available as a preview.  This branch has the majority of the changes. The Stabilization branch includes changes made between preview and general availability of the release.  Filtering on changes made during Stabilization can be useful for organizations who start their release review and testing with the preview.
+Besides release and module filters, the code changes can be filtered based on the phase of the engineering cycle.  The Engineering branch is where changes are made before the release is made available as a preview.  This branch has the majority of the changes. The Stabilization branch includes changes made between preview and general availability of the release.  Filtering on changes made during stabilization can be useful for organizations who start their release review and testing with the preview.
 
 ## Usage
 
