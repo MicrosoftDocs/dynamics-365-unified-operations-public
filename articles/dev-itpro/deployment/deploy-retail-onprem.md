@@ -50,11 +50,11 @@ Before you can start installation of Retail channel components, you must first c
 
 1.	On the previously created [Application share](setup-deploy-on-premises-pu12.md#setupfile), (not the **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
 2.	On each AOS computer, create an easily accessible directory, such as **C:/selfservicepackages**.
-3.  On one AOS computer (Which does not matter), run the following PowerShell script:
+3.  On one AOS computer (which one does not matter), run the following PowerShell script:
 
-```powershell
-.\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -SendProductSupportTelemetryToMicrosoft
-```
+  ```powershell
+  .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -       SendProductSupportTelemetryToMicrosoft
+  ```
   > [!IMPORTANT]
   > The above steps apply to version 10.0 and above.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used:
   
