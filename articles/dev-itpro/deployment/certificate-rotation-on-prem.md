@@ -5,7 +5,7 @@ title: Certificate rotation
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/20/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -254,6 +254,6 @@ Proceed with [Clean up an existing environment and redeploy](troubleshoot-on-pre
 
 ## Update other certificates as needed
 
-1. SQL server. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu1.md2#setupsql).
+1. SQL server. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu12.md2#-13-set-up-sql-server).
 
 2. AD FS
