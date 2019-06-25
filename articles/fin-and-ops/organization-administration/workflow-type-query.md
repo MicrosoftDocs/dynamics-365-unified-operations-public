@@ -38,7 +38,7 @@ Before you create a workflow type, you must first create a query that will acces
 
 
 1.  Create a new query by using one of these methods:
-    + In the AOT, right-click the **Queries** node, and then click **New Query**. A query group displays under the **Queries** node. Right-click the new query and then click **Rename**. Enter a name for the query.
+    + In the Application Explorer, right-click the **Queries** node, and then click **New Query**. A query group displays under the **Queries** node. Right-click the new query and then click **Rename**. Enter a name for the query.
     + In the **Project** menu, select **Add new item**. In the **Add new item** dialog, select **Query**. Give the query a name and then click **Create**.
 1.  Expand the new query, right-click the **Data Sources** node, and then click **New Data Source**. A data source group displays under the **Data Sources** node.
 1.  Right-click the new data source group and then click **Properties**.
