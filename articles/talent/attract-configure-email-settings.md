@@ -52,6 +52,8 @@ You can connect your company account to create a branded email experience for yo
 
    ![Connect a company email service account in Attract](./media/attract-admin-email-service-accounts.png)
 
+   For more information about creating a shared email account, see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/en-us/exchange/collaboration-exo/shared-mailboxes).
+
 3. In the Microsoft sign-in window, sign in with your corporate credentials.
 
 4. If you haven't yet set up an email service account, or if you want to add a new one, select **Add new service account** and enter your email information. If you already have an email service account set up, select the email service account you want to use.
