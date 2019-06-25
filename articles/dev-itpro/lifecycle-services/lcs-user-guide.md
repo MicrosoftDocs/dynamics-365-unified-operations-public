@@ -54,7 +54,7 @@ The following table lists the tools that are provided in LCS and describes the p
 
 | [Asset Library](asset-library.md)                             | The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics Lifecycle Services (LCS).
                                                                                                                                                                       |
-| [Get updates](dev-itpro/migration-upgrade/download-hotfix-lcs.md)                            | Provides a way for customers that are running Dynamics 365 Finance and Operations or Dynamics 365 for Retail to get access to the updates that are available for their environments.  
+| [Get updates](../migration-upgrade/download-hotfix-lcs.md)                            | Provides a way for customers that are running Dynamics 365 Finance and Operations or Dynamics 365 for Retail to get access to the updates that are available for their environments.  
 
                           |
 
@@ -65,7 +65,7 @@ The following table lists the tools that are provided in LCS and describes the p
 | [Translation service](translation-service-overview.md)                      | The Microsoft Dynamics 365 Translation Service (DTS) is hosted in Microsoft Dynamics Lifecycle Services (LCS). It's designed to enhance the experience for partners and independent software vendors (ISVs) when they translate their solutions or add a new language for the supported Dynamics products.      
                                                             |
                                                             
-| [Regulatory updates](regulatory-watch-communication.md)                      | Enable customers, partners, ISV solution providers stay upto date on the regulatory updates by setting up alerts through Lifecycle Services.
+| [Regulatory updates](../lcs-solutions/regulatory-watch-communication.md)                      | Enable customers, partners, ISV solution providers stay upto date on the regulatory updates by setting up alerts through Lifecycle Services.
                                         |
 
 | [System diagnostics](ax-2012/system-diagnostics-lcs.md)                       | System diagnostics helps administrators monitor the Dynamics AX 2012 environments.                                                                                                                                                                                                                                                                                      |
