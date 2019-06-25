@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.2
 # Impact Analysis report in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
+[!include [private preview banner](../includes/private-preview-banner.md)]
 
 The Impact Analysis report can help focus testing efforts for a new release by providing insight into what Microsoft code has changed in the release along with usage information for the production environment(s) associated with the LCS project.  This content provides an overview of the capabilities along with some important considerations.  The report does not provide comprehensive information, so the report information should be used in combination with other tools when planning test activities for a release.
 
