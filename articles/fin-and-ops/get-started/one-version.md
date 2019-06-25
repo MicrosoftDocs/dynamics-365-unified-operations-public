@@ -36,10 +36,10 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 ## Schedule for April 10.0 release
 
 ### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
-Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. The ability to set up this configuration or pause updates is available through LCS. Customers will be able to pause up to 2 consecutive updates. Here are a few examples:
+Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. The ability to set up this configuration or pause updates is available through LCS. Customers will be able to pause up to 3 consecutive updates. Here are a few examples:
 
-- The customer is currently on version 8.1.2 and can choose to pause version 10. The customer will be required to take version 10.0.1
-- The customer is currently on version 8.1.3, the customer can choose to pause version 10 and version 10.0.1. The customer will be required to take the service update 10.0.2.  
+- The customer is currently on version 8.1.2 and can choose to pause version 10. The customer will be required to take version 10.0.2
+- The customer is currently on version 8.1.3, the customer can choose to pause version 10 and version 10.0.1. The customer will be required to take the service update 10.0.3.  
 
 
 ### With a release date in early April, when will the GA package be made available?
