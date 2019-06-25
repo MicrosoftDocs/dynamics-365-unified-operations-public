@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Platform extensibility overview
-description: The Dynamics 365 Commerce Platform provides a rich e-Commerce eeveloper extensibility SDK and starter kit with a set of ready built modules and data actions for your site.
+title: eCommerce platform extensibility
+description: The Dynamics 365 for Commerce platform provides a rich eCommerce developer extensibility SDK and starter kit with a set of ready-built modules and data actions for your site.
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -28,13 +28,13 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# Platform Extensibility Overview
+# eCommerce platform extensibility
 
-The Dynamics 365 Commerce Platform provides a rich e-Commerce eeveloper extensibility SDK and starter kit with a set of ready built modules and data actions for your site.
+The Dynamics 365 for Commerce platform provides a rich eCommerce developer extensibility SDK and starter kit with a set of ready-built modules and data actions for your site.
 
-E-Commerce pages such as the home page, product details page or category page are made up of componentized 'modules' (ex: header, hero, feature,...) that leverage 'data actions' to fetch data (ex: Dynamics 365 Retail data, Ratings and Reviews, ...) and render html to make up a customer page.  Each module can surface configuration fields that a page author or site administrator can fill out, these could include layout options such as image placement within the module, links to products or pages, images or strings to be displayed in the module.
+eCommerce pages such as the home page, product details page, and category page are made up of componentized modules such as header, hero, and feature. The modules leverage data actions to fetch data (for example, Dynamics 365 for Retail data, ratings and reviews, etc.) and render html to make up a customer page. Each module can surface configuration fields that a page author or site administrator can fill out. Fields include layout options such as image placement within the module, links to products or pages, and images or strings to be displayed in the module.
 
-## E-Commerce SDK
+## eCommerce SDK
 The e-Commerce SDK enables a developer to customize e-Commerce modules, data actions and themes.
 
 ## Starter Kit
