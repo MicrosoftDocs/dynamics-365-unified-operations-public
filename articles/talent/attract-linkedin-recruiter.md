@@ -47,11 +47,15 @@ Before you can start working with LinkedIn Recruiter through Attract, you need t
 
 3. On the **Connections** tab, select **Connect** next to LinkedIn. Follow the instructions provided by LinkedIn.
 
+   ![[Set up connection to LinkedIn Recruiter from Attract](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+
 ## View LinkedIn candidates in Attract
 
 Once you're connected to LinkedIn Recruiter, you can view candidates' LinkedIn profiles in Attract.
 
 1. In Attract, select **Jobs** or **Talent pools** on the left and select an applicant.
+
+   ![[View LinkedIn candidates in Attract](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
 2. In the candidate's profile, select the **LinkedIn** tab. You can view the candidate's profile, along with InMail history and LinkedIn notes history.
 
@@ -97,6 +101,8 @@ You can track whether a candidate applied to other jobs in your organization, se
     - **Interview Feedback** - see feedback that interviewers have submitted in Attract
 
     - **Notes** - see any notes for this applicant in Attract
+
+   ![[View Attract information from LinkedIn Recruiter](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
 
 > [!NOTE]
 > Candidate and application data won't sync with LinkedIn Recruiter if the candidate hasn't moved past the prospect stage.
