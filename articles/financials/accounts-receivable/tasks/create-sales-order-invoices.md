@@ -5,7 +5,7 @@ title: Create sales order invoices
 description: This task guide describes invoicing a sales order, including merging invoices and batch processing. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -34,20 +34,19 @@ This task guide describes invoicing a sales order, including merging invoices an
 
 
 ## Create an invoice from a sales order
-1. Go to Accounts receivable > Orders > Shipped but not invoiced sales orders.
+1. Go to **Navigation pane > Modules > Accounts receivable > Orders > Shipped but not invoiced sales orders**.
 2. Select a sales order in the list. 
-3. On the Action Pane, click Invoice.
-4. Click Invoice.
-    * Note that this sales order has multiple packing slips associated with it. It will only show the word <multiple> instead of the packing slip number.  
-5. Expand the Parameters section.
-    * Posting must be set to Yes to post the invoice. You can also turn off posting and just print the invoice. However, you can accomplish the same result by creating a proforma invoice instead of an invoice.  
-    * This option is used for batch jobs. The query is run when the batch job is run.    
-6. In the Print field, select 'After'.
-7. Select Yes for Print invoice.
-    * Print management can print  multiple copies of the invoice and also send the invoice via email as a PDF file.  
-8. In the Print charges field, select 'Summarize'.
-9. In the Check credit limit field, select 'Balance'.
-10. Click Cancel.
+3. On the **Action Pane**, click **Invoice**.
+    - Note that this sales order has multiple packing slips associated with it. It will only show the word <multiple> instead of the packing slip number.  
+4. Expand the **Parameters** section.
+    - Posting must be set to Yes to post the invoice. You can also turn off posting and just print the invoice. However, you can accomplish the same result by creating a proforma invoice instead of an invoice.  
+    - This option is used for batch jobs. The query is run when the batch job is run.    
+5. In the **Print** field, select 'After'.
+6. Select **Yes** for **Print invoice**.
+    - Print management can print  multiple copies of the invoice and also send the invoice via email as a PDF file.  
+7. In the **Print charges** field, select 'Summarize'.
+8. In the **Check credit limit** field, select 'Balance'.
+9. Click **Cancel**.
 
 ## Combine orders into a single invoice
 1. Go to Accounts receivable > Orders > All sales orders.
