@@ -43,10 +43,11 @@ A workflow type defines information about:
 
 ### To create a new workflow type
 
-1.  In the Application Explorer, expand the **Workflow** node.
-2.  Right-click the **Workflow Types** node, and then click **Add-Ins** \> **Workflow type wizard**. The **Workflow wizard** is displayed. This wizard will help you create a new workflow type.
-3.  Click **Next**.
-4.  Set the following values for the wizard.
+
+1.  Create a new workflow type by using one of these methods:
+    + In the Application Explorer, right-click the **Business Process and Workflow** node, and then click **Add-Ins** \> **Workflow type wizard**. The **Workflow wizard** is displayed. This wizard will help you create a new workflow type.
+    + In the **Project** menu, select **Add new item**. In the **Add new item** dialog, select **Workflow type**. Give the query a name and then click **Create**. The **Workflow wizard** is displayed. This wizard will help you create a new workflow type.
+1.  Set the following values for the wizard.
     
     Value | Description
     |---|---|
@@ -56,10 +57,10 @@ A workflow type defines information about:
     | Document menu item | Choose the menu item that points to the main form that displays the document for which you are creating a workflow type. |
     | Document web menu item | Choose the web menu item that points to the Enterprise Portal page that displays the document for which you are creating a workflow type. |
 
-5.  Specify which types of menu items you want to create. You can create menu items for the Finance and Operations client, web menu items for Enterprise Portal, or items for both.
-6.  Click **Next**. A list of all of the resources that will be created for the workflow type is displayed.
-7.  Click **Finish** to create the resources. The wizard will create classes, menu items, web menu items, the workflow type, and a project that contains all of the items.
-8.  A dialog box will be displayed that indicates the status. Click **OK**. The project that contains the workflow type resources is displayed.
+1.  Specify which types of menu items you want to create. You can create menu items for the Finance and Operations client, web menu items for Enterprise Portal, or items for both.
+1.  Click **Next**. A list of all of the resources that will be created for the workflow type is displayed.
+1.  Click **Finish** to create the resources. The wizard will create classes, menu items, web menu items, the workflow type, and a project that contains all of the items.
+1.  A dialog box will be displayed that indicates the status. Click **OK**. The project that contains the workflow type resources is displayed.
 
 After you create a workflow type, the next step is to complete the workflow document class to expose document data for conditions. For more information, see [Create a workflow document class](workflow-type-document-create.md).
 
