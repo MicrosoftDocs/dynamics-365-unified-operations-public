@@ -44,7 +44,7 @@ The same procedure can be used to activate a workflow by using the workflow conf
 
 ### To create a SubmitToWorkflow class
 
-1.  In the Application Object Tree (AOT), expand the **Classes** node.
+1.  In the Application Explorer, expand the **Classes** node.
 
 2.  Right-click the **Classes** node, and then select **New Class**. A class group displays under the **Classes** node.
 
