@@ -30,12 +30,12 @@ ms.dyn365.ops.version: 10.0.3
 
 # Forecast position distribution 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
  
-You can maintain financial dimension default templates for forecast positions on the **Forecast position** page by using controls on the **Financial dimensions** FastTab. The upper portion of the **Financial dimensions** FastTab displays all of the the distribution lines along with their percentage as a grid. The lower portion of the **Financial dimensions** FastTab displays the position default dimensions.
+You can maintain financial dimension default templates for forecast positions by using the controls on the **Financial dimensions** FastTab of the **Forecast position** page. The grid in the upper part of the FastTab shows all the distribution lines together with their percentage. The lower part of the FastTab shows the forecast position's default dimensions.
 
-You can validate whether a forecast position's default dimensions are correct for your organization's chart of accounts. For any forecast position, on the Action Pane, select **Validate** to see whether the financial dimension setup for your forecast position is valid. The validations are made against the account structure that you identify on the **Configure account structures** page. This quick validation can help you catch errors before you attempt to generate a budget plan from a forecast position. You can also validate many positions from the **Forecast positions** list page.
+You can validate whether a forecast position's default dimensions are correct for your organization's chart of accounts. For any forecast position, select **Validate** on the Action Pane to determine whether the setup of financial dimensions for that forecast position is valid. The validation is done against the account structure that you define on the **Configure account structures** page. This validation is quick and can help you identify errors before you try to generate a budget plan from a forecast position. You can also validate many forecast positions on the **Forecast positions** list page.
 
-You can see the when the position was last validated on the **Budget planning** FastTab in the **Forecast position validation** section.  The validation fields are also included on the **Forecast positions** list page.
+You can see when a forecast position was last validated in the **Forecast position validation** section on the **Budget planning** FastTab. The validation fields are also included on the **Forecast positions** list page.
 
-For more information, see, [Position forecasting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/budgeting/position-forecasting).
+For more information, see, [Position forecasting](https://docs.microsoft.com/dynamics365/unified-operations/financials/budgeting/position-forecasting).
