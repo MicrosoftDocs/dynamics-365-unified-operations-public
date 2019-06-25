@@ -5,7 +5,7 @@ title: Cash overview Power BI content
 description: This topic describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
 author: saraschi2
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,13 +39,14 @@ The **Cash overview** Power BI content was created for individuals who are respo
 
 ## Setup needed to view Power BI content
 
-Following setup needs to be completed for data to show in **Cash overview** and **Bank management** Power BI visuals:
-1. Set **System currency** and **System Exchange Rate** in **System administration > Setup > System Parameters** form.
-2. Set **Accounting Currency** and **Exchange Rate Type** in **General Ledger > Setup > Ledger** form.
-2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency, and Accounting currency and Bank currencies in **General Ledger > Currencies > Currency exchange rates** form.
-3. Configure and run Cash Flow Forecasting. For more information on how to setup Cash Flow Forecasting visit, <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+The following setup needs to be completed in order for data to display in **Cash overview** and **Bank management** Power BI visuals.
+
+1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
+2. Go to **General Ledger > Setup > Ledger** to set **Accounting Currency** and **Exchange Rate Type**.
+2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency, and Accounting currency and Bank currencies. To do this, go **General Ledger > Currencies > Currency exchange rates**.
+3. Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
 ">Cash flow forecasting</a>. 
-4. Refresh the LedgerCovLiquidityMeasurement aggregate measurement on the **System administration > Setup > Entity Store** form.
+4. Go to **System administration > Setup > Entity Store** to refresh the LedgerCovLiquidityMeasurement aggregate measurement.
 
 ## Accessing the Power BI content
 
