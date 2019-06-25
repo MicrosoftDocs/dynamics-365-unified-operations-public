@@ -1015,6 +1015,8 @@
       href: user-interface/client-disconnected.md
     - name: Troubleshoot on-premises deployments
       href: deployment/troubleshoot-on-prem.md
+    - name: Certificate rotation
+      href: deployment/certificate-rotation-on-prem.md
   - name: Deploy custom code
     items:
     - name: Create deployable packages of models
