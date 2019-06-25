@@ -41,6 +41,11 @@ The SysDA API lets you create queries that perform like X++ query statments and 
 This is the reason we avoid converting select statements to queries in performance critical paths.
 + Queries have a limited set of capabilities. For example, `delete_from` is not supported. `update_recordset` and `insert_recordset` are partly supported by using some arcane static methods on **SysQuery**.
 
+The SysDa APIs includes an extensive set of APIs for creating custom queries, but there are a smaller set of types that drive the primary query activities:
++ Select: **SysDaQueryObject** and **SysDaSearchStatement**
++ Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
++ Insert: **SysDaInsertObject** and **SysDaInsertStatement**
++ Delete: **SysDaQueryObject** and **SysDaDeleteStatement**
 
 ## Select queries
 
@@ -241,6 +246,22 @@ class VEDASDemo
         VEDASDemo::Insert();
         VEDASDemo::Delete();
     }
+
+## Projection
+
+## Execution
+
+
+
+## Clauses
+
+SysDa queries support several clauses:
+
++ `whereClause`
++ `orderByClause`
++ `groupByClause`
++ `joinClause` with `joinClauseKind`
++ `joinedQuery`
 
 
 
