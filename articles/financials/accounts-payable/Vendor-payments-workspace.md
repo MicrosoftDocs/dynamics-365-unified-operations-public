@@ -35,6 +35,14 @@ ms.dyn365.ops.version: July 2017 update
 
 The **Vendor payments** workspace shows information that is related to the processing of vendor payments. This workspace includes a **My work** view and an **Analytics** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor payments.
 
+## Setup needed to view Power BI content
+
+Following setup needs to be completed for data to show in **Vendor payments** Power BI visuals:
+1. Set **System currency** and **System Exchange Rate** in **System administration > Setup > System Parameters** form.
+2. Set **Accounting Currency** and **Exchange Rate Type** in **General Ledger > Setup > Ledger** form.
+2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency in **General Ledger > Currencies > Currency exchange rates** form.
+3. Refresh the **VendPaymentBIMeasure** aggregate measurement on the **System administration > Setup > Entity Store** form.
+
 ## My work view
 
 ### Summary tiles
