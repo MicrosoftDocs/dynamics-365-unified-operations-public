@@ -47,11 +47,12 @@ The following procedures show how to create a workflow document class including 
 
 ## Create a workflow document class
 
-1.  In the Application Explorer, expand the **Classes** node.
-2.  Right-click the **Classes** node, and then select **New Class**. A class group displays under the **Classes** node.
-3.  Right-click the new class, click **Rename**, and then enter a name for the workflow document class.
-4.  Expand the new class, select **classDeclaration**, right-click the class declaration, and then click **Edit**.
-5.  Enter the following code in the class declaration.
+1.  Create a new query by using one of these methods:
+    + In the Application Explorer, expand the **Classes** node. Right-click the **Classes** node, and then select **New Class**. A class group displays under the **Classes** node. Right-click the new class, click **Rename**, and then enter a name for the workflow document class.
+    + In the **Project** menu, select **Add new item**. In the **Add new item** dialog, select **Class**. Give the class a name and then click **Create**.
+
+1.  Expand the new class, select **classDeclaration**, right-click the class declaration, and then click **Edit**.
+1.  Enter the following code in the class declaration.
 
        ```X++
        class <MyWorkflowDocumentClassName> extends WorkflowDocument
@@ -59,8 +60,8 @@ The following procedures show how to create a workflow document class including 
        }
        ```
 
-6.  Close the **Editor** window and click **Yes** to save changes.
-7.  Right-click the new class, point to **Override Method**, and then click getQueryName. A method node named **getQueryName** displays under the workflow document class node and the **Editor** window opens.
+1.  Close the **Editor** window and click **Yes** to save changes.
+1.  Right-click the new class, point to **Override Method**, and then click getQueryName. A method node named **getQueryName** displays under the workflow document class node and the **Editor** window opens.
 
     > [!NOTE]
     > <P>Be sure to select getQueryName as the method to override. The <A href="https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)">WorkflowDocument.getQuery Method</A> is used only internally to retrieve the actual query based on the string returned by the <A href="https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)">WorkflowDocument.getQueryName Method</A>.</P>
