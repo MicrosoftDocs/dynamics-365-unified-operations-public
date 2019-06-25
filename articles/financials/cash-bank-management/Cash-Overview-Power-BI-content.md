@@ -37,6 +37,16 @@ This topic describes the **Cash overview** Microsoft Power BI content. It explai
 
 The **Cash overview** Power BI content was created for individuals who are responsible for cash in their organization. The **Cash overview** Power BI content provides visibility into your cash flow. It also provides forecasts that can help you make better decisions and therefore improve the health of your cash flow. You can analyze cash by legal entity, currency, and bank account to get a better understanding of surpluses and shortfalls.
 
+## Setup needed to view Power BI content
+
+Following setup needs to be completed for data to show in **Cash overview** and **Bank management** Power BI visuals:
+1. Set **System currency** and **System Exchange Rate** in **System administration > Setup > System Parameters** form.
+2. Set **Accounting Currency** and **Exchange Rate Type** in **General Ledger > Setup > Ledger** form.
+2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency, and Accounting currency and Bank currencies in **General Ledger > Currencies > Currency exchange rates** form.
+3. Configure and run Cash Flow Forecasting. For more information on how to setup Cash Flow Forecasting visit, <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+">Cash flow forecasting</a>. 
+4. Refresh the LedgerCovLiquidityMeasurement aggregate measurement on the **System administration > Setup > Entity Store** form.
+
 ## Accessing the Power BI content
 
 Reports from the **Cash overview** Power BI content are displayed in the **Cash overview** and **Bank management** workspaces.
@@ -46,6 +56,7 @@ To view the Cash flow forecasting reports with data, you must first run the fore
 For demonstration purposes, you can add cash flow forecasting demo data using the **Generate data** page from the Demo data module.  This script will insert data into the cash flow forecasting tables to quickly populate information necessary for reports.  This module is only available if you have the Demo data suite model deployed on the environment. 
 
 ## Reports that are included in the Power BI content
+
 The following table provides details about the metrics that are found on each report page in the **Cash overview** Power BI content.
 
 | Report                                | Contents |
@@ -71,5 +82,3 @@ The following table shows the entities that the **Cash overview** Power BI conte
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Summarized cash inflows, outflows, and balance using each company’s accounting currency |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Summarized cash inflows, outflows, and balance using the system currency for all companies |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Summarized net transaction amount and balance of currencies using the transaction currency |
-
-
