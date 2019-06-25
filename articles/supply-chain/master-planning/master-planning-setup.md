@@ -15,7 +15,7 @@ ms.technology:
 
 ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
-audience: Application UserTypes of
+audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
