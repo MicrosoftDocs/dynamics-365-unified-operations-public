@@ -37,7 +37,7 @@ This task guide will walk you through various methods used to create vendor paym
 3. Select the payment journal in which to save the vendor payments. 
 4. Select the journal or manually enter it.
 5. Click **Lines**.
-6. Click **Payment proposal**.
+6. On **Ation pane**, click **Payment proposal**.
 7. Click **Create payment proposal**.
    
    The payment proposal is a query used to select invoices for payment. You can edit the list of invoices to pay before creating or generating the vendor payments.
@@ -52,7 +52,7 @@ This task guide will walk you through various methods used to create vendor paym
     
     The minimum payment date will be the earliest date used when creating payments. For example, if an invoice has a due date after the minimum payment date, the due date will become the payment date instead of the minimum payment date in order to pay the invoice on the latest possible date.
     
-12. Enter additional query restrictions under **Records to include**.
+12. Enter additional query restrictions under **Records to include** section.
     
     The filter is often used to restrict the invoices selected for payment by vendor group or method of payment. For example, you may add a filter to only pay invoices by check in this pay run.
     
@@ -81,8 +81,8 @@ This task guide will walk you through various methods used to create vendor paym
 20. Select the vendor to whom the payment will be made.
 21. If an invoice exists to pay, select **Settle transactions** to select the invoice for payment.
     
-    If this is a prepayment, this step is optional. You can create the payment without selecting any invoice.  
-
+    If this is a prepayment, this step is optional. You can create the payment without selecting any invoice. 
+    
 22. Mark any invoices that will be paid.
     
     If you use the **Settle transactions** to select the invoices for payment, the payment amount will automatically be calculated based on what invoices you mark for payment, and what amount you enter in the **Amount to settle**.
@@ -95,7 +95,7 @@ This task guide will walk you through various methods used to create vendor paym
     
 26. Click **Yes**.
 
-27. Choose **Generate payment to print Checks or create the electronic payment file**.
+27. Choose **Generate payment** to print checks or create the electronic payment file.
 28. Select the method of payment that you want to generate.
     
     The payment journal can contain payments for both Checks and electronic payments, but you can only generate one payment type at a time.
@@ -108,5 +108,5 @@ This task guide will walk you through various methods used to create vendor paym
 31. If you are generating **Checks**, choose **Document** to ensure the correct print destination for the checks.
 32. Click **OK**.
 33. Click **OK** to generate the payments.
-34. Click **Post if all the payments are approved and generated**. 
+34. Click **Post** if all the payments are approved and generated. 
 
