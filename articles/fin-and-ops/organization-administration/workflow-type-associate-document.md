@@ -44,7 +44,7 @@ Before you begin this procedure, you must create a workflow document class to ex
 
 ### To bind a workflow document class to a workflow type
 
-1.  In the AOT, expand the **Workflow** node.
+1.  In the Application Explorer, expand the **Workflow** node.
 
 2.  In the **Workflow Types** node, right-click the workflow type that you want to bind a workflow document class to, and then click **Properties**.
 
