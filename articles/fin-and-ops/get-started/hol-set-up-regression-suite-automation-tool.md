@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get started with the Regression Suite Automation Tool - A tutorial
+title: Set up and install Regression suite automation tool tutorial
 description: This topic is a tutorial that shows how to set up and install Regression suite automation tool (RSAT).
 author: kfend
 manager: AnnBe
-ms.date: 06/09/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Get started with the Regression Suite Automation Tool (RSAT) - A tutorial
+# Set up and install Regression suite automation tool tutorial
 This article is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT. 
 
 [!include [banner](../includes/banner.md)]
@@ -59,11 +59,11 @@ This article is a tutorial that helps you get setup and get started with RSAT an
 
 ## Configure Azure DevOps
 
-#### User eligibility
+### User eligibility
 
 Make sure that the user is created in Azure DevOps and has a subscription level that provides access to Azure Test Plans. An Azure DevOps Test Plans license is required only if the user will create and manage test cases (that is, not all RSAT users require this license). For information about the license requirements, see [License requirements](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
 
-#### Create a new Azure DevOps project
+### Create a new Azure DevOps project
 RSAT uses Azure Devops for test case and test suite management, reporting and investigating test run results. 
 
 > [!NOTE]
@@ -90,7 +90,7 @@ Otherwise, for the purpose of this tutorial, we recommend that you create a new 
 
     ![Create new project dialog box](./media/setup_rsa_tool_04.png)
 
-#### Create a personal access token
+### Create a personal access token
 
 In this tutorial, you will use the LCS Business Process Modeler (BPM) to create a test case library and synchronize your test cases with Azure DevOps. You will need a personal access token to sync BPM with Azure DevOps.
 
@@ -117,7 +117,7 @@ In this tutorial, you will use the LCS Business Process Modeler (BPM) to create 
 
 ## Configure the LCS project
 
-You need a Lifecycle Sercices (LCS) project for your master test library. The LCS Business Process Modeler (BPM) is used as the master library for your test cases. BPM is used to manage and distribute test libraries across LCS projects. For example: A Microsoft partner or independent software vendor (ISV) building test libraries will release test cases in the form of BPM libraries. In BPM, Test cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this topic.  
+You need a Lifecycle Sercices (LCS) project for your master test library. The LCS Business Process Modeler (BPM) is used as the master library for your test cases. BPM is used to manage and distribute test libraries across LCS projects. For example, a Microsoft partner or independent software vendor (ISV) building test libraries will release test cases in the form of BPM libraries. In BPM, etst cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this topic.  
 
 For your LCS project, you can use an existing customer implementation or partner project.
 
@@ -204,7 +204,7 @@ If you created a new Azure DevOps project earlier, configure the LCS project to 
 
     ![Name and Description fields](./media/setup_rsa_tool_24.png)
 
-## Finance and Operations Environment
+## Finance and Operations environment
 
 ### Version requirement
 
@@ -448,7 +448,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### Install Selenium and browser drivers
 
-In older versions of RSAT, you had to install Selenium and browser drivers. You no longer have to install these drivers, the are automatically installed.
+In older versions of RSAT, you had to install Selenium and browser drivers. You no longer have to install these drivers because they are automatically installed.
 
 1. The first time that you open RSAT, you're prompted to automatically download and install Selenium. For more information, see the [Configure RSAT](#configure-rsat) section.
 2. Before you can run a test case, you're prompted to automatically download and install the browser driver that corresponds to the default browser that is selected in the RSAT configuration. For more information, see the [Load and run test cases](#load-and-run-test-cases) section.
