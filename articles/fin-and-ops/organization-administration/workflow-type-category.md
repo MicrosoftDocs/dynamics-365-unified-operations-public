@@ -43,11 +43,11 @@ The following procedure describes how to create a new workflow category.
 
 1.  In **Application Explorer**, expand the **Business Process and Workflow** node.
 
-2.  Right-click the **Workflow Categories** node, and then click **New Workflow Category**. A new workflow category group displays under the **Workflow Categories** node.
+2.  Create the workflow category, by using one of these methods:
+    + Right-click the **Workflow Categories** node, and then click **New Workflow Category**. A new workflow category group displays under the **Workflow Categories** node. Right-click the new workflow category and then click **Properties**.
+    + In the **Project** menu, select **Add new item**. In the **Add new item** dialog, select **Workflow category**. Give the category a name and then click **Create**.
 
-3.  Right-click the new workflow category and then click **Properties**.
-
-4.  In the **Properties** sheet, set the following properties as required.
+3.  In the **Properties** sheet, set the following properties as required.
     
 | Property | Value |
 |-----------|---|
