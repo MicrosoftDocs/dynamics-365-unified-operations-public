@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to create extensible queries by using the SysDA API. 
-The SysDA API lets you create queries that perform like X++ query statments and are extensible like queries. X++ query statements are not extensible. If you want to add a new range, join, or field to your query, then you need to convert your statement to a query. While queries work fine, they have their own limitations:
+The SysDA API lets you create queries that perform like X++ query statments and are extensible like queries. X++ query statements are not extensible. If you want to add a new range, join, or field to your query, then you need to convert your statement to a query. Queries do have their own limitations:
 
 + Queries are slower than query statements. Even when the resulting TSQL is the same, queries need more compute to prepare the TSQL. The execution time in SQL server is of course the same (which often overshadows the overhead).
 This is the reason we avoid converting select statements to queries in performance critical paths.
