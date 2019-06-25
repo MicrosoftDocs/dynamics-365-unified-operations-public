@@ -94,8 +94,8 @@ This procedure demonstrates how to process customer rebates from claim generatio
 9. In the **Customer** field, enter or select a value.
 10. Click **OK**.
 
-    A message shows that the rebate was processed successfully, and the status of the claims has been changed to Mark. This means that as a result of a Rebate accrual journal being posted: 
-        - The claims have now been transferred to the temporary customer balance as deductions.
-        - The Rebate accrual account has been credited to represent the future liability towards the customer.
-        - The Rebate expense account has been debited, in recognition of the cost incurred in connection with the sales.   
+    A message shows that the rebate was processed successfully, and the status of the claims has been changed to Mark. This means that as a result of a Rebate accrual journal being posted:
+    - The claims have now been transferred to the temporary customer balance as deductions.
+    - The Rebate accrual account has been credited to represent the future liability towards the customer.
+    - The Rebate expense account has been debited, in recognition of the cost incurred in connection with the sales.   
 
