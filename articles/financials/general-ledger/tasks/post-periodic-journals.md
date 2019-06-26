@@ -71,7 +71,7 @@ Periodic journals are sometimes called recurring journals because the amount, te
 25. Click **Retrieve journal**.
 26. In the **To date** field, enter a date.
     
-    The To date serves as the cutoff date for the periodic voucher lines. Based on the recurrence setting, the Last date and To date the same line might be included more than once in the resulting journal. To date is automatically updated based on  session date of the last time the periodic line was transferred to a journal.
+    The **To date** serves as the cutoff date for the periodic voucher lines. Based on the recurrence setting, the Last date and To date the same line might be included more than once in the resulting journal. To date is automatically updated based on  session date of the last time the periodic line was transferred to a journal.
     
 27. In the **Periodic journal number** field, enter or select a value.
 28. In the list, click the link in the selected row.
