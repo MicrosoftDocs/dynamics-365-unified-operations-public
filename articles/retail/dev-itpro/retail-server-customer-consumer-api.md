@@ -457,5 +457,14 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetStoreSafes | QueryResultSettings settings | PageResult&lt;StoreSafe&gt; | Employee,                | Get store safe list. |
 
 
+**Warehouse controller:**
+
+| API              | Parameter                                                                         | Return value                        | Supported Commerce Roles       | Description                                                                                         |
+|------------------|-----------------------------------------------------------------------------------|-------------------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------|
+| GetWarehouseById | string inventLocation                                                             | PageResult&lt;StoreSafe&gt;         | Employee, Customer             | Gets a Warehouse by its record identifier.                                                          |
+| SearchWarehouses | string searchText, QueryResultSettings queryResultSettings                        | PageResult&lt;Warehouse&gt;         | Application,Employee, Customer | Retrieves a list of warehouses that matches the given search text.                                  |
+| GetLocations     | string inventLocation, QueryResultSettings queryResultSettings                    | PageResult&lt;WarehouseLocation&gt; | Application,Employee, Customer | Gets the warehouse locations of the specified Warehouse.                                            |
+| SearchLocations  | string inventLocation, string searchText, QueryResultSettings queryResultSettings | PageResult&lt;WarehouseLocation&gt; | Application,Employee, Customer | Retrieves a list of warehouse locations for the given warehouse that matches the given search text. |
+
 
 
