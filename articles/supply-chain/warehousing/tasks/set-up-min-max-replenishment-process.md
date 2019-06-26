@@ -145,18 +145,19 @@ This procedure shows you how to set up a new replenishment process which uses th
 26. Close the page.
 
 ## Set the replenishment process to run as a batch job
-1. Go to Warehouse management > Replenishment > Replenishments.
-    * The Replenishments page allows you to set up replenishment to run as a batch job, or to require that it’s started manually.  
-2. Click Filter.
+1. Go to **Warehouse management > Replenishment > Replenishments**.
+    
+    The Replenishments page allows you to set up replenishment to run as a batch job, or to require that it’s started manually.
+    
+2. Click **Filter**.
 3. In the list, mark the selected row.
-4. In the Criteria field, enter or select a value.
-5. Click OK.
-6. Expand the Run in the background section.
-7. Set the Batch processing option to Yes.
-8. Click Recurrence.
-9. Select the No end date option.
-10. Set the Recurrance pattern.
-    * For example, select Days.  
-11. Click OK.
-12. Click OK.
+4. In the **Criteria** field, enter or select a value.
+5. Click **OK**.
+6. Expand the **Run in the background** section.
+7. Set the **Batch processing** option to 'Yes'.
+8. Click **Recurrence**.
+9. Select the **No end date** option.
+10. Set the **Recurrance pattern**. For example, select Days.  
+11. Click **OK**.
+12. Click **OK**.
 
