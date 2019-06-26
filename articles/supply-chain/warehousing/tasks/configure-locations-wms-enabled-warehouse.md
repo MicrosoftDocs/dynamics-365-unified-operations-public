@@ -80,45 +80,59 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 20. Close the page.
 
 ## Define location types
-1. Go to Location types.
-    * Location types can be used as filtering options to control the different warehouse management processes. As a minimum, you need to create staging and final shipping location types in order to define the outbound warehouse management process.  
-2. Click New.
-3. In the Location type field, type a value.
-4. In the Description field, type a value.
+1. Go to **Navigation pane > Modules > Warehouse management > setup > Warehouse > Location types.
+    
+    Location types can be used as filtering options to control the different warehouse management processes. As a minimum, you need to create staging and final shipping location types in order to define the outbound warehouse management process.
+    
+2. Click **New**.
+3. In the **Location** type field, type a value.
+4. In the **Description** field, type a value.
 5. Close the page.
 
 ## Define location profile
-1. Go to Location profiles.
-    * The definition of location profiles is very important. Grouped locations capacity can be controlled here, as well as the policies related to what inventory gets stored, and how it is stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable the warehouse management processes.  
-2. Click New.
-3. In the Location profile ID field, type a value.
-4. In the Name field, type a value.
-5. In the Location format field, click the drop-down button to open the lookup.
+1. Go to **Navigation pane > modules > Warehouse management > Setup > Warehouse > Location profiles**.
+    
+    The definition of location profiles is very important. Grouped locations capacity can be controlled here, as well as the policies related to what inventory gets stored, and how it is stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable the warehouse management processes.
+    
+2. Click **New**.
+3. In the **Location profile ID** field, type a value.
+4. In the **Name** field, type a value.
+5. In the **Location format** field, click the drop-down button to open the lookup.
 6. In the list, find and select the desired record.
 7. In the list, click the link in the selected row.
-8. In the Location type field, click the drop-down button to open the lookup.
+8. In the **Location type** field, click the drop-down button to open the lookup.
 9. In the list, find and select the desired record.
 10. In the list, click the link in the selected row.
-11. Select or clear the Allow mixed  inventory statuses check box.
-    * Enable this option if you want to allow mixed inventory status values in the locations that are going to be grouped by this location profile.  
-12. Select or clear the Override rules for batch days check box.
-    * Enable this option to override the rule for how many days the inventory batch expiration dates can differ, to allow mixing of inventory batches that don’t obeying this rule.  
-13. Select or clear the Allow cycle counting check box.
-    * Enable this option to allow cycle counting processing in all the locations that are going to be grouped by this location profile.  
-14. Expand or collapse the Dimensions section.
-    * The Dimensions tab allows you to define parameters and methods to enable precise calculations of the load capacity within each of the locations.  
+11. Select or clear the **Allow mixed inventory statuses** check box.
+    
+    Enable this option if you want to allow mixed inventory status values in the locations that are going to be grouped by this location profile.
+    
+12. Select or clear the **Override rules for batch days** check box.
+    
+    Enable this option to override the rule for how many days the inventory batch expiration dates can differ, to allow mixing of inventory batches that don’t obeying this rule.  
+
+13. Select or clear the **Allow cycle counting** check box.
+    
+    Enable this option to allow cycle counting processing in all the locations that are going to be grouped by this location profile.
+    
+14. Expand or collapse the **Dimensions** section.
+    
+    The Dimensions tab allows you to define parameters and methods to enable precise calculations of the load capacity within each of the locations.  
+
 15. Close the page.
 
 ## Enable warehouse management parameters
-1. Go to Warehouse management parameters.
-    * To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to ‘Picked’.  
-2. Expand or collapse the Location profiles section.
-3. In the User location field, click the drop-down button to open the lookup.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse management parameters**.
+    
+    To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to ‘Picked’.
+    
+2. Expand the **Location profiles** section.
+3. In the **User location** field, click the drop-down button to open the lookup.
 4. In the list, click the link in the selected row.
-5. Expand or collapse the Location types section.
-6. In the Staging location type field, click the drop-down button to open the lookup.
+5. Expand the **Location types** section.
+6. In the **Staging location type** field, click the drop-down button to open the lookup.
 7. In the list, click the link in the selected row.
-8. In the Final shipping location type field, click the drop-down button to open the lookup.
+8. In the **Final shipping location type** field, click the drop-down button to open the lookup.
 9. In the list, click the link in the selected row.
 10. Close the page.
 
