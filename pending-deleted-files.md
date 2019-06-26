@@ -9,6 +9,7 @@ These files have been redirected, but the actual .md topic files can't been remo
 articles\dev-itpro\database\copy-database-from-sql-server-to-azure-sql.md
 articles\dev-itpro\database\request-point-in-time-restore.md
 articles\dev-itpro\database\copy-database-from-azure-sql-to-sql-server.md
+articles\financials\accounts-receivable\customer-payment-insights.md
 
 These files have been redirected, and the .md topic files have been deleted. This list hasn't been provided to loc yet.
 
