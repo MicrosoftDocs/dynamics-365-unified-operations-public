@@ -75,12 +75,12 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 4. In the **Customer account** field, type a value.
 5. Click **Check**. Make sure you see a message that the account number you typed in is free to use.  
 6. Click **OK**. The system has now created a new customer account for the prospect on the quotation.  
-6. Close the page.
-7. On the **Action Pane**, click **Follow up**.
-8. Click **Confirm**.
-9. In the **Reason** field, enter or select a value.
-10. Click **OK**.
-11. On the **Action Pane**, click **General**.
-12. Click **Sales orders**.
-13. Close the page.
+7. Close the page.
+8. On the **Action Pane**, click **Follow up**.
+9. Click **Confirm**.
+10. In the **Reason** field, enter or select a value.
+11. Click **OK**.
+12. On the **Action Pane**, click **General**.
+13. Click **Sales orders**.
+14. Close the page.
 
