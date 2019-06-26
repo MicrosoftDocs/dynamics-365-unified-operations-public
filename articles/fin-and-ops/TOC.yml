@@ -2946,13 +2946,15 @@
       - name: Preview PDF documents with an embedded viewer
         href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
     - name: Electronic reporting
-      href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
       items:
-      - name: Configure the Electronic reporting framework
-        href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
-      - name: Create configurations
-        href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+      - name: Electronic reporting overview
+        href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+      - name: Configurations
         items:
+        - name: Formula designer in Electronic reporting
+          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+        - name: Create configurations
+          href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
         - name: Create configuration providers and mark them as active
           href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
         - name: Design domain-specific data models
@@ -2968,11 +2970,8 @@
         - name: Generate electronic documents for payments using format configurations
           href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
         - name: Upgrade formats by adopting new base versions
-          href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
-        - name: Design ER configurations to fill in PDF templates
-          href: ../dev-itpro/analytics/er-fillable-pdf.md
-      - name: Formula designer in Electronic reporting
-        href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+          href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json 
+
       - name: Configure Electronic reporting to pull data into Power BI
         href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
       - name: Destinations
@@ -3046,8 +3045,6 @@
         href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
       - name: Trace generated report results and compare with baseline values
         href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-      - name: Improvements in tracing results of generated ER reports and comparing them with baseline values
-        href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
       - name: Cross-company data sources in Electronic reporting
         href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
       - name: Embed images and shapes in documents that you generate
@@ -3059,8 +3056,6 @@
           href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
         - name: Import configurations from Lifecycle Services
           href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-        - name: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
-          href: ../dev-itpro/analytics/rcs-download-configurations.md
         - name: Download configurations from Lifecycle Services
           href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
         - name: Import configurations
@@ -3078,8 +3073,6 @@
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
       - name: Parse incoming documents in CSV format
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-      - name: Trace the execution of ER formats to troubleshoot performance issues
-        href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
       - name: Split generated XML files based on file size and content quantity
         href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
         items:
@@ -3087,8 +3080,6 @@
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Electronic reporting framework API changes for Application update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
-        - name: Specify a custom storage for generated documents
-          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: Embedded analytical solutions
       items:
       - name: Embedded Power BI in workspaces
