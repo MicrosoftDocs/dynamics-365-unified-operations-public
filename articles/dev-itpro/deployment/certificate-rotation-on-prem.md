@@ -255,4 +255,4 @@ Continue this process following [Clean up an existing environment and redeploy](
 
 1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).
 
-2. Check to be sure that the Azure Active Directory Fabrice Service certificate has not expired. 
+2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired. 
