@@ -69,19 +69,18 @@ This procedure demonstrates how to create and update a sales quotation. You can 
     The report may take a minute to generate. Don’t close the page until it does so.
 
 ## Update a sales quotation
-1. On the Action Pane, click Follow up.
-2. Click Convert to customer.
-3. In the Customer account field, type a value.
-4. Click Check.
-    * Make sure you see a message that the account number you typed in is free to use.  
-5. Click OK.
-    * The system has now created a new customer account for the prospect on the quotation.  
+1. Go to **Navigation pane > Modules > Sales and marketing > Sales quotations > All quotations**.
+2. On the **Action Pane**, click **Follow up**.
+3. Click **Convert to customer**.
+4. In the **Customer account** field, type a value.
+5. Click **Check**. Make sure you see a message that the account number you typed in is free to use.  
+6. Click **OK**. The system has now created a new customer account for the prospect on the quotation.  
 6. Close the page.
-7. On the Action Pane, click Follow up.
-8. Click Confirm.
-9. In the Reason field, enter or select a value.
-10. Click OK.
-11. On the Action Pane, click General.
-12. Click Sales orders.
+7. On the **Action Pane**, click **Follow up**.
+8. Click **Confirm**.
+9. In the **Reason** field, enter or select a value.
+10. Click **OK**.
+11. On the **Action Pane**, click **General**.
+12. Click **Sales orders**.
 13. Close the page.
 
