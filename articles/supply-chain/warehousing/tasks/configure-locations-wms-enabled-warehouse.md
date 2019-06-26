@@ -199,31 +199,37 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 6. Close the page.
 
 ## Define Pack size categories
-1. Go to Pack size categories.
-    * Pack size categories can be used to group items that have similar physical packing sizes. In this example the pack size category will be used to control the capacity at the picking locations within a specific zone of the warehouse. Please note that the pack size category ID must be assigned to the released product entity in order to be used as part of the stocking limits processing.  
-2. Click New.
-3. In the Pack size category ID field, type a value.
-4. In the Pack size category name field, type a value.
+1. Go to **Warehouse management > Setup > Warehouse > Pack size categories**.
+    
+    Pack size categories can be used to group items that have similar physical packing sizes. In this example the pack size category will be used to control the capacity at the picking locations within a specific zone of the warehouse. Please note that the pack size category ID must be assigned to the released product entity in order to be used as part of the stocking limits processing. 
+    
+2. Click **New**.
+3. In the **Pack size category ID** field, type a value.
+4. In the **Pack size category name** field, type a value.
 5. Close the page.
 
 ## Define location stocking limits
-1. Go to Location stocking limits.
-    * Location stocking limits help to make sure that work isn't created to request that inventory to be put in a location that doesn't have the physical capacity to carry the inventory.  
-2. Click New.
-3. In the Warehouse field, type a value.
-4. In the Location profile ID field, type a value.
-5. In the Pack size category ID field, type a value.
-6. In the Quantity field, enter a number.
-7. Click Save.
+1. Go to **Warehouse management > Setup > Warehouse > Location stocking limits**.
+    
+    Location stocking limits help to make sure that work isn't created to request that inventory to be put in a location that doesn't have the physical capacity to carry the inventory.  
+
+2. Click **New**.
+3. In the **Warehouse** field, type a value.
+4. In the **Location profile ID** field, type a value.
+5. In the **Pack size category ID** field, type a value.
+6. In the **Quantity** field, enter a number.
+7. Click **Save**.
 8. Close the page.
 
 ## Define fixed picking locations
-1. Go to Fixed locations.
-    * You can define the locations to be used per product or per product variant. It is possible to create multiple fixed locations for the same product within the same warehouse.  
-2. Click New.
-3. In the Item number field, type a value.
-4. In the Warehouse field, type a value.
-5. In the Location field, click the drop-down button to open the lookup.
+1. Go to **Warehouse management > Setup > Warehouse > Fixed locations**.
+    
+    You can define the locations to be used per product or per product variant. It is possible to create multiple fixed locations for the same product within the same warehouse.
+    
+2. Click **New**.
+3. In the **Item number** field, type a value.
+4. In the **Warehouse** field, type a value.
+5. In the **Location** field, click the drop-down button to open the lookup.
 6. In the list, click the link in the selected row.
 7. Close the page.
 
