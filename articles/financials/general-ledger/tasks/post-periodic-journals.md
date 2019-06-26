@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. When you create the periodic journal, you specify the period interval for the recurrence, such as days or months. This task guide will create a periodic journal with a monthly recurrence.
 
-1. Go to **Nvigation pane > Modules > General ledger > Periodic tasks > Periodic journals**.
+1. Go to **Navigation pane > Modules > General ledger > Periodic tasks > Periodic journals**.
 2. Click **New**.
 3. In the **Name** field, enter or select a value.
 4. In the list, click the link in the selected row.
