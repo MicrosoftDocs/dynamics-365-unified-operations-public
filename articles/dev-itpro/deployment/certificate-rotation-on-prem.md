@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/24/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -216,7 +216,7 @@ Continue this process following [Clean up an existing environment and redeploy](
 
 ## Update deployment settings in LCS
 
-> [!NOTE}
+> [!NOTE]
 >  Note that the Client, Data Signing, and Encipherment certificates will only be replaced. You will also need to recreate the Credentials.json file, as described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
 
 > Before you continue, you need to make a backup of the local Dynamics database.
