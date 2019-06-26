@@ -137,57 +137,65 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 10. Close the page.
 
 ## Define warehouse zone groups
-1. Go to Warehouse zone groups.
-    * Warehouse zones can be used as filters for options to control the different warehouse management processes. You need to create a zone group before you can define a zone.  
-2. Click New.
-3. In the Zone group ID field, type a value.
-4. In the Zone group name field, type a value.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse > Warehouse zone groups**.
+    
+    Warehouse zones can be used as filters for options to control the different warehouse management processes. You need to create a zone group before you can define a zone.  
+
+2. Click **New**.
+3. In the **Zone group ID** field, type a value.
+4. In the **Zone group name** field, type a value.
 5. Close the page.
 
 ## Define Warehouse zones
-1. Go to Zones.
-2. Click New.
-3. In the Zone ID field, type a value.
-4. In the Zone name field, type a value.
-5. In the Zone group ID field, click the drop-down button to open the lookup.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse > Zones**.
+2. Click **New**.
+3. In the **Zone ID** field, type a value.
+4. In the **Zone name** field, type a value.
+5. In the **Zone group ID** field, click the drop-down button to open the lookup.
 6. In the list, find and select the desired record.
 7. In the list, click the link in the selected row.
 8. Close the page.
 
 ## Create locations using the Location setup wizard
-1. Go to Location setup wizard.
-2. In the Warehouse field, click the drop-down button to open the lookup.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse > Location setup wizard**.
+2. In the **Warehouse** field, click the drop-down button to open the lookup.
 3. In the list, find and select the desired record.
 4. In the list, click the link in the selected row.
-5. In the Zone ID field, click the drop-down button to open the lookup.
+5. In the **Zone ID** field, click the drop-down button to open the lookup.
 6. In the list, find and select the desired record.
 7. In the list, click the link in the selected row.
-8. In the Location profile ID field, click the drop-down button to open the lookup.
+8. In the **Location profile ID** field, click the drop-down button to open the lookup.
 9. In the list, find and select the desired record.
 10. In the list, click the link in the selected row.
 11. In the list, mark the selected row.
-12. In the From number field, enter a number.
-    * The From number and To number fields define how many locations will be created. For example, if you set From number to 1 and To number to 3 for all four lines in the location format, 81 locations will be created (3x3x3x3).  
-13. In the To number field, enter a number.
+12. In the **From number** field, enter a number.
+    
+    The From number and To number fields define how many locations will be created. For example, if you set From number to 1 and To number to 3 for all four lines in the location format, 81 locations will be created (3x3x3x3).  
+
+13. In the **To number** field, enter a number.
 14. In the list, find and select the desired record.
-15. In the From number field, enter a number.
-16. In the To number field, enter a number.
+15. In the **From number** field, enter a number.
+16. In the **To number** field, enter a number.
 17. In the list, find and select the desired record.
-18. In the From number field, enter a number.
-19. In the To number field, enter a number.
+18. In the **From number** field, enter a number.
+19. In the **To number** field, enter a number.
 20. In the list, find and select the desired record.
-21. In the From number field, enter a number.
-22. In the To number field, enter a number.
+21. In the **From number** field, enter a number.
+22. In the **To number** field, enter a number.
 23. Click Create.
 
 ## Create locations manually
-1. Go to Locations.
-    * Manually creation of locations within a warehouse can easily be done. The location name and the Location profile ID are mandatory values.  
-2. Click New.
-3. In the Warehouse field, type a value.
-4. In the Location field, type a value.
-    * Note that you're creating a new location here, so you need to type a new unique name, rather than selecting an existing one.  
-5. In the Location profile ID field, type a value.
+1. Go to **Warehouse management > Setup > Warehouse > Locations**.
+    
+    Manually creation of locations within a warehouse can easily be done. The location name and the location profile ID are mandatory values.  
+
+2. Click **New**.
+3. In the **Warehouse** field, type a value.
+4. In the **Location** field, type a value.
+    
+    Note that you're creating a new location here, so you need to type a new unique name, rather than selecting an existing one.
+    
+5. In the **Location profile ID** field, type a value.
 6. Close the page.
 
 ## Define Pack size categories
