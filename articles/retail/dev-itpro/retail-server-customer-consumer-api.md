@@ -3,9 +3,9 @@
 
 title: Retail Server customer and consumer APIs
 description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
-author: RobinARH
+author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 84383
-ms.assetid: c60de19f-06e5-4e57-8956-7fd17c460e52
+ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
+ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
@@ -39,20 +39,20 @@ This article provides an overview of the APIs that are available across various 
 Overview
 --------
 
--   Retail Server business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
--   The embedded commerce runtime (CRT) enables a unified omni-channel platform.
--   The application programming interfaces (APIs) are stateless and can process requests from many channels.
--   The APIs have a linear scale-out model (“brick” scale-out).
--   You use a composition pattern for plug-and-play customizations.
--   The APIs are built on the .NET stack by using C\#.
+- Retail Server business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
+- The embedded commerce runtime (CRT) enables a unified omni-channel platform.
+- The application programming interfaces (APIs) are stateless and can process requests from many channels.
+- The APIs have a linear scale-out model (“brick” scale-out).
+- You use a composition pattern for plug-and-play customizations.
+- The APIs are built on the .NET stack by using C\#.
 
 ## Roles
-Every request to Retail Server (via retail proxy) operates under four main roles:
+Every request to Retail Server (via retail proxy) operates under these main roles:
 
--   CommerceRole.Employee
--   CommerceRole.Anonymous
--   CommerceRole.Customer
--   CommerceRole.Application
+- CommerceRole.Employee
+- CommerceRole.Anonymous
+- CommerceRole.Customer
+- CommerceRole.Application
 
 The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Retail Server. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them.
 
@@ -60,11 +60,11 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 > By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
 
 
-**Customer controller:**
+## Customer controller
 
-| API           | Parameter          | Return value       | Supported Commerce Roles      | Description                |
-|-------------|------------------------------------------------|------------------------------|--------------------------|-----------------------------------|
-| GetOrderShipmentsHistory                  | string accountNumber, QueryResultSettings queryResultSettings       | PageResult&lt;OrderShipments&gt;       | Employee,Customer,Application | Gets order shipments history for the customers                    |
+| API | Parameter | Return value | Supported Commerce Roles | Description                |
+|-----|-----------|--------------|--------------------------|----------------------------|
+| GetOrderShipmentsHistory                  | string accountNumber, QueryResultSettings queryResultSettings       | PageResult<OrderShipments>       | Employee,Customer,Application | Gets order shipments history for the customers                    |
 | GetOrderHistory                           | string accountNumber, QueryResultSettings queryResultSettings           | PageResult&lt;SalesOrder&gt;           | Employee,Customer,Application | Returns the collection of sales orders.                           |
 | Search                                    | CustomerSearchCriteria customerSearchCriteria, QueryResultSettings queryResultSettings    | PageResult&lt;GlobalCustomer&gt;       | Employee, Application         | Searches for the customers                                        |
 | GetPurchaseHistory                        | string accountNumber, QueryResultSettings queryResultSettings      | PageResult&lt;PurchaseHistory&gt;      | Employee,Customer,Application | Gets purchase history for the customers                           |
