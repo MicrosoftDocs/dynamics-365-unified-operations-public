@@ -46,15 +46,15 @@ Follow these steps to set up cash control and cash control accounts.
 2. In the **Cash control validation** group, in the **Financial dimension set** field, select the financial dimension set to use to validate cash control balances.
 3. In the **Cash control override** field, select the user group that can override cash control. Users in this security group will then be able to post transactions that exceed the cash control limit.
 4. Go to **General ledger** \> **Ledger setup** \> **Posting setup** \> **Cash control**.
-5. Select the **Display account names** check box to show the account names for cash accounts and Accounts payable accounts that you enter in the grid.
+5. Set the **Display account names** option to **Yes** to show the account names for cash accounts and Accounts payable accounts that you enter in the grid.
 6. Enter each cash account.
 
-    We recommend that you add all valid cash account financial dimension strings. You can then specify which cash accounts are included in the cash control limit.
+We recommend that you add all financial dimension strings for all valid cash accounts. You can then specify which cash accounts are subject to the cash control limit.
 
-7. In the **Cash account** field, enter the cash account financial dimension string. You must enter all the account numbers.
+7. In the **Cash account** field, enter the cash account financial dimension string. You must enter complete account numbers.
 8. Select the **Participate** check box to indicate that the cash account financial dimension string is subject to cash control. These cash accounts and the corresponding Accounts payable accounts are validated against the cash control configuration rules.
 9. Optional: In the **Accounts payable** account field, enter the Accounts payable account financial dimension string that is used with vendor invoices. You must enter a complete account number.
-10. In the **Threshold** field, enter the amount that must remain in the cash account to pass validation. You can enter a negative number if the cash account can be overdrawn (that is, if more transactions can be paid than are in the account).
+10. In the **Threshold** field, enter the amount that must remain in the cash account to pass validation. You can enter a negative number if the cash account can be overdrawn (that is, the transaction amounts can exceed the account balance).
 
 ## View accounts in cash control
 
@@ -64,7 +64,7 @@ The inquiry includes the following information:
 
 - The current cash account balance
 - The balance of all posted, unpaid Accounts payable invoices that are applied to the cash account's corresponding Accounts payable account
-- The cash control balance, or the current cash account balance minus all posted, unpaid Accounts payable invoices and advanced ledger entries
+- The cash control balance, or the current cash account balance minus all posted, unpaid Accounts payable invoices
 - The cash control limit, so that you can compare it to the cash control balance and determine whether payment of the Accounts payable invoices will cause the cash account balance to fall below the cash control limit
 
 ## Process transactions by using cash control validation
