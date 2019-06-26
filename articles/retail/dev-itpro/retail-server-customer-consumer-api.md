@@ -73,7 +73,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | SearchByFields                            | Customer entity                                                                                            | PageResult&lt;GlobalCustomer&gt;       | Employee,Customer,Application | Searches for customers by specified fields                        |
 | PostNonTransactionalActivityLoyaltyPoints | string loyaltyCardNumber, long channelId, long affiliationId, string activityTypeId                        | void                                   | Employee,Customer,Application | Post non-transactional activity loyalty points                    |
 
-**Sales order controller:**
+## Sales order controller
 
 | API                                                    | Parameter              | Return value                   | Supported Commerce Roles | Description     |
 |-------------|-----------------------------------------------------------------------------------------|------------------------------|--------------------------|---------------------------------------------------------------------|
@@ -95,7 +95,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetSalesOrderDetailsBySalesId                          | string salesId                                                                                                                                     | SalesOrder                     | Employee,Customer        | Gets the sales order details by sales id.                                                               |
 | GetSalesOrderDetailsByQuotationId                      | string quotationId                                                                                                                                 | SalesOrder                     | Employee,Customer        | Gets the sales order details by Quotation id.                                                           |
 
-**Cart controller:**
+## Cart controller
 
 | API                                              | Parameter                                                                                                                                                                     | Return value                              | Supported Commerce Roles | Description                                                                                                                                                                                                         |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -148,37 +148,37 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetDeclinedOrVoidedCardReceipts                  | string cartId, TenderLine preprocessedTenderLine, ReceiptRetrievalCriteria criteria, QueryResultSettings queryResultSettings                                                  | PageResult&lt;Receipt&gt;                 | Employee                 | Gets a collection of gift receipts for a declined or terminated card tender line.                                                                                                                                   |
 | ResetAllCharges                                  | string id                                                                                                                                                                     | Cart                                      | Employee, Application               | Recalculates charges (including deleting all manually added and overridden charges) for the cart.                                                                                                                   |
 
-**Address controller:**
+## Address controller
 
 | API                | Parameter                               | Return value                     | Supported Commerce Roles | Description               |
 |--------------------|-----------------------------------------|----------------------------------|--------------------------|---------------------------|
 | GetAddressPurposes | QueryResultSettings queryResultSettings | PageResult&lt;AddressPurpose&gt; | Employee, Customer,  Anonymous, Application               | Gets the address purposes |
 
-**Barcode controller:**
+## Barcode controller
 
 | API            | Parameter        | Return value | Supported Commerce Roles | Description                 |
 |----------------|------------------|--------------|--------------------------|-----------------------------|
 | GetBarcodeById | string barcodeId | Barcode      | Employee                 | Gets barcode by identifier. |
 
-**Cash declaration controller:**
+## Cash declaration controller
 
 | API                 | Parameter                               | Return value                      | Supported Commerce Roles | Description                 |
 |---------------------|-----------------------------------------|-----------------------------------|--------------------------|-----------------------------|
 | GetCashDeclarations | QueryResultSettings queryResultSettings | PageResult&lt;CashDeclaration&gt; | Employee                 | Gets barcode by identifier. |
 
-**Cities controller:**
+## Cities controller
 
 | API       | Parameter                                                                                                | Return value               | Supported Commerce Roles | Description                                                               |
 |-----------|----------------------------------------------------------------------------------------------------------|----------------------------|--------------------------|---------------------------------------------------------------------------|
 | GetCities | string countryRegionId, string stateProvinceId, string countyId, QueryResultSettings queryResultSettings | PageResult&lt;CityInfo&gt; | Employee                 | Get all the cities filtered by Country/Region, State Province and County. |
 
-**Counties controller:**
+## Counties controller
 
 | API         | Parameter                                                                               | Return value                 | Supported Commerce Roles | Description                                                         |
 |-------------|-----------------------------------------------------------------------------------------|------------------------------|--------------------------|---------------------------------------------------------------------|
 | GetCounties | string countryRegionId, string stateProvinceId, QueryResultSettings queryResultSettings | PageResult&lt;CountyInfo&gt; | Employee                 | Get all the counties filtered by country/region and state province. |
 
-**Country region controller:**
+## Country region controller
 
 | API         | Parameter                                                                               | Return value                 | Supported Commerce Roles | Description                                                         |
 |-------------------------------|------------------------------------------------------------|-------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------|
@@ -186,56 +186,56 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetCountryRegionsByLanguageId | string languageId, QueryResultSettings queryResultSettings | PageResult&lt;CountryRegionInfo&gt; | Employee, Customer, Anonymous,  Application               | Get all the countries/regions filter by Language Id.                                          |
 | GetCountryRegions             | QueryResultSettings queryResultSettings                    | PageResult&lt;CountryRegionInfo&gt; | Employee                 | Get all the countries/regions.                                                                |
 
-**Credit memo controller:**
+## Credit memo controller
 
 | API               | Parameter           | Return value | Supported Commerce Roles | Description                    |
 |-------------------|---------------------|--------------|--------------------------|--------------------------------|
 | GetCreditMemoById | string creditMemoId | CreditMemo   | Employee                 | Get credit memo by identifier. |
 
-**Delivery options controller:**
+## Delivery options controller
 
 | API                | Parameter             | Return value                     | Supported Commerce Roles | Description                               |
 |--------------------|-----------------------------------------------------------------------------|----------------------------------|--------------------------|-------------------------------------------|
 | GetDeliveryOptions | string id, Address shippingAddress, QueryResultSettings queryResultSettings | PageResult&lt;DeliveryOption&gt; | Employee, Customer,  Anonymous, Application               | Get the delivery options for the channel. |
 
-**Customer group controller:**
+## Customer group controller
 
 | API               | Parameter                               | Return value                    | Supported Commerce Roles | Description                        |
 |-------------------|-----------------------------------------|---------------------------------|--------------------------|------------------------------------|
 | GetCustomerGroups | QueryResultSettings queryResultSettings | PageResult&lt;CustomerGroup&gt; | Employee, Customer,  Anonymous, Application               | Gets collection of customer group. |
 
-**Currency controller:**
+## Currency controller
 
 | API         | Parameter                                                                               | Return value                 | Supported Commerce Roles | Description                                                         |
 |------------------------------|--------------------------------------------------------------------------------|----------------------------------|--------------------------|---------------------------------------|
 | GetCurrenciesAmount          | string currencyCode, decimal amount, QueryResultSettings queryResultSettings   | PageResult&lt;CurrencyAmount&gt; | Employee                 | Gets the currencies amount.           |
 | CalculateTotalCurrencyAmount | System.Collections.Generic.IEnumerable&lt;CurrencyRequest&gt; currenciesAmount | CurrencyAmount                   | Employee                 | Calculates the total currency amount. |
 
-**Customer balance controller:**
+## Customer balance controller
 
 | API                | Parameter                                         | Return value     | Supported Commerce Roles | Description                |
 |--------------------|---------------------------------------------------|------------------|--------------------------|----------------------------|
 | GetCustomerBalance | string accountNumber, string invoiceAccountNumber | CustomerBalances | Employee                 | Gets the customer balance. |
 
-**Device configuration controller:**
+## Device configuration controller
 
 | API                    | Parameter | Return value        | Supported Commerce Roles | Description                         |
 |------------------------|-----------|---------------------|--------------------------|-------------------------------------|
 | GetDeviceConfiguration |           | DeviceConfiguration | Employee                 | Gets a single device configuration. |
 
-**District controller:**
+## District controller
 
 | API          | Parameter                                                                                                                 | Return value                   | Supported Commerce Roles | Description                                                                         |
 |--------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------|--------------------------|-------------------------------------------------------------------------------------|
 | GetDistricts | string countryRegionId, string stateProvinceId, string countyId, string cityName, QueryResultSettings queryResultSettings | PageResult&lt;DistrictInfo&gt; | Employee                 | Get all the district info filtered by country/region, state province, county, city. |
 
-**State province controller:**
+## State province controller
 
 | API               | Parameter                                                       | Return value                        | Supported Commerce Roles | Description                                                 |
 |-------------------|-----------------------------------------------------------------|-------------------------------------|--------------------------|-------------------------------------------------------------|
 | GetStateProvinces | string countryRegionId, QueryResultSettings queryResultSettings | PageResult&lt;StateProvinceInfo&gt; | Employee,  Customer,  Anonymous,  Application               | Get all the states or provinces filtered by country region. |
 
-**Discount controller:**
+## Discount controller
 
 | API                       | Parameter                                                                          | Return value                   | Supported Commerce Roles | Description                                                     |
 |---------------------------|------------------------------------------------------------------------------------|--------------------------------|--------------------------|-----------------------------------------------------------------|
@@ -244,58 +244,58 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetDiscountCodesByKeyword | string keyword, DateTimeOffset activeDate, QueryResultSettings queryResultSettings | PageResult&lt;DiscountCode&gt; | Employee                 | Searches the discount codes.                                    |
 | GetDiscountCode           | string discountCode                                                                | DiscountCode                   | Employee                 | Gets the discount code.                                         |
 
-**Zipcodes controller:**
+## Zipcodes controller
 
 | API                   | Parameter                                                                                                                                  | Return value                  | Supported Commerce Roles | Description                                                                                  |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|--------------------------|----------------------------------------------------------------------------------------------|
 | GetZipCodes           | string countryRegionId, string stateProvinceId, string countyId, string cityName, string district, QueryResultSettings queryResultSettings | PageResult&lt;ZipCodeInfo&gt; | Employee                 | Get all the zip codes filtered by country/region, state province, county, city and district. |
 | GetAddressFromZipCode | string countryRegionId, string zipPostalCode, QueryResultSettings queryResultSettings                                                      | PageResult&lt;ZipCodeInfo&gt; | Employee, Customer, Anonymous,  Application               | Get details of addresses associated with zip code filtered by country/region.                |
 
-**Suspended cart controller:**
+## Suspended cart controller
 
 | API                  | Parameter                               | Return value                    | Supported Commerce Roles | Description               |
 |----------------------|-----------------------------------------|---------------------------------|--------------------------|---------------------------|
 | GetAllSuspendedCarts | QueryResultSettings queryResultSettings | PageResult&lt;SuspendedCart&gt; | Employee                 | Gets all suspended carts. |
 
-**Tender types controller:**
+## Tender types controller
 
 | API                     | Parameter                               | Return value                 | Supported Commerce Roles | Description                  |
 |-------------------------|-----------------------------------------|------------------------------|--------------------------|------------------------------|
 | GetTenderTypes          | QueryResultSettings queryResultSettings | PageResult&lt;TenderType&gt; | Employee, Customer, Anonymous,  Application               | Gets tender types.           |
 | RoundAmountByTenderType | decimal amount, string tenderTypeId     | decimal                      | Employee                 | Round amount by tender type. |
 
-**Publishing controller:**
+## Publishing controller
 
 | API                           | Parameter                                            | Return value | Supported Commerce Roles | Description                               |
 |-------------------------------|------------------------------------------------------|--------------|--------------------------|-------------------------------------------|
 | SetOnlineChannelPublishStatus | int publishingStatus, string publishingStatusMessage | void         | Application              | Updates Online Channel publishing status. |
 
-**Language controller:**
+## Language controller
 
 | API          | Parameter                               | Return value                        | Supported Commerce Roles | Description                             |
 |--------------|-----------------------------------------|-------------------------------------|--------------------------|-----------------------------------------|
 | GetLanguages | QueryResultSettings queryResultSettings | PageResult&lt;SupportedLanguage&gt; | Employee                 | Gets collection of supported languages. |
 
-**Localized string controller:**
+## Localized string controller
 
 | API                 | Parameter                                                               | Return value                      | Supported Commerce Roles | Description                                                                  |
 |---------------------|-------------------------------------------------------------------------|-----------------------------------|--------------------------|------------------------------------------------------------------------------|
 | GetLocalizedStrings | string languageId, int? textId, QueryResultSettings queryResultSettings | PageResult&lt;LocalizedString&gt; | Employee                 | Gets all localized strings filtered by language identifier, text identifier. |
 
-**Notification controller:**
+## Notification controller
 
 | API                      | Parameter                                                                            | Return value                        | Supported Commerce Roles | Description                |
 |--------------------------|--------------------------------------------------------------------------------------|-------------------------------------|--------------------------|----------------------------|
 | GetNotifications         | IEnumerable&lt;int&gt; subscribedOperations, QueryResultSettings queryResultSettings | ICollection&lt;NotificationItem&gt; | Employee                 | Gets the notifications.    |
 | AcknowledgeNotifications | DateTimeOffset lastPullDateTime                                                      | void                                | Employee                 | Acknowledge notifications. |
 
-**Number sequence controller:**
+## Number sequence controller
 
 | API                     | Parameter                               | Return value                      | Supported Commerce Roles | Description                                             |
 |-------------------------|-----------------------------------------|-----------------------------------|--------------------------|---------------------------------------------------------|
 | GetLatestNumberSequence | QueryResultSettings queryResultSettings | PageResult&lt;LocalizedString&gt; | Employee                 | Gets the next number sequence for the current terminal. |
 
-**ReasonCodes controller:**
+## ReasonCodes controller
 
 | API                       | Parameter                                                         | Return value                 | Supported Commerce Roles | Description                                          |
 |---------------------------|-------------------------------------------------------------------|------------------------------|--------------------------|------------------------------------------------------|
@@ -303,14 +303,14 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetReturnOrderReasonCodes | QueryResultSettings queryResultSettings                           | PageResult&lt;ReasonCode&gt; | Employee                 | Gets return order reason codes.                      |
 | GetReasonCodesById        | string reasonCodeGroupId, QueryResultSettings queryResultSettings | PageResult&lt;ReasonCode&gt; | Employee                 | Gets the reason codes by group or single identifier. |
 
-**Receipt controller:**
+## Receipt controller
 
 | API                             | Parameter                                                            | Return value                  | Supported Commerce Roles | Description                                                                     |
 |---------------------------------|----------------------------------------------------------------------|-------------------------------|--------------------------|---------------------------------------------------------------------------------|
 | GetReceiptMasks                 | int? receiptTransactionType, QueryResultSettings queryResultSettings | PageResult&lt;ReceiptMask&gt; | Employee                 | Gets the receipts masks.                                                        |
 | ValidatePrintReceiptCopyAllowed | SalesOrder salesOrderToPrint                                         | void                          | Employee                 | Performs validation, whether receipt copy printing operation is allowed or not. |
 
-**Report datasets controller:**
+## Report datasets controller
 
 | API                  | Parameter                                                            | Return value  | Supported Commerce Roles | Description                                                                           |
 |----------------------|----------------------------------------------------------------------|---------------|--------------------------|---------------------------------------------------------------------------------------|
@@ -318,39 +318,39 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetReportDataSetById | SalesOrder salesOrderToPrint                                         | ReportDataSet | Employee                 | Gets report data set by id.                                                           |
 | GetSrsReportDataSet  |                                                                      | ReportDataSet | Employee                 | Gets SSRS report data set.                                                            |
 
-**Search controller:**
+## Search controller
 
 | API                    | Parameter                                                                 | Return value                       | Supported Commerce Roles | Description                                         |
 |------------------------|---------------------------------------------------------------------------|------------------------------------|--------------------------|-----------------------------------------------------|
 | GetSearchSuggestions   | SearchSuggestionCriteria suggestionCriteria, QueryResultSettings settings | PageResult&lt;SearchSuggestion&gt; | Employee, Customer, Anonymous,  Application               | Gets Search suggestions.                            |
 | GetSearchConfiguration |                                                                           | SearchConfiguration                | Employee, Customer, Anonymous,  Application               | Gets Channel Search Configuration from Azure Search |
 
-**Tax controller:**
+## Tax controller
 
 | API               | Parameter                                                                 | Return value                    | Supported Commerce Roles | Description                                                        |
 |-------------------|---------------------------------------------------------------------------|---------------------------------|--------------------------|--------------------------------------------------------------------|
 | GetTaxOverrides   | SearchSuggestionCriteria suggestionCriteria, QueryResultSettings settings | PageResult&lt;TaxOverride&gt;   | Employee                 | Searches for any tax overrides matching the given search criteria. |
 | GetSalesTaxGroups |                                                                           | PageResult&lt;SalesTaxGroup&gt; | Employee                 | Gets the sales tax groups.                                         |
 
-**Tender drop and declare operation controller:**
+## Tender drop and declare operation controller
 
 | API                             | Parameter                                           | Return value              | Supported Commerce Roles | Description                                               |
 |---------------------------------|-----------------------------------------------------|---------------------------|--------------------------|-----------------------------------------------------------|
 | CreateDropAndDeclareTransaction | DropAndDeclareTransaction dropAndDeclareTransaction | DropAndDeclareTransaction | Employee                 | Performs saving tender drop and declare store operations. |
 
-**Unit of measure controller:**
+## Unit of measure controller
 
 | API               | Parameter                               | Return value                    | Supported Commerce Roles | Description                                          |
 |-------------------|-----------------------------------------|---------------------------------|--------------------------|------------------------------------------------------|
 | GetUnitsOfMeasure | QueryResultSettings queryResultSettings | PageResult&lt;UnitOfMeasure&gt; | Employee                 | Get all the units of measure supported by the store. |
 
-**Income expense accounts controller:**
+## Income expense accounts controller
 
 | API                      | Parameter                                                             | Return value                           | Supported Commerce Roles | Description                          |
 |--------------------------|-----------------------------------------------------------------------|----------------------------------------|--------------------------|--------------------------------------|
 | GetIncomeExpenseAccounts | int incomeExpenseAccountType, QueryResultSettings queryResultSettings | PageResult&lt;IncomeExpenseAccount&gt; | Employee                 | Gets the income or expense accounts. |
 
-**Products controller:**
+## Products controller
 
 | API                               | Parameter                                                                                                                                                                                                                                                                   | Return value                               | Supported Commerce Roles | Description                                                                                                                               |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -402,7 +402,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetChannelProductAttributes       | QueryResultSettings queryResultSettings                                                                                                                                                                                                                                     | PageResult&lt;AttributeProduct&gt;         | Employee, Customer, Anonymous,  Application               | Gets the channel product attributes.                                                                                                      |
 | GetProductRatings                 | IEnumerable&lt;long&gt; productIds, QueryResultSettings settings                                                                                                                                                                                                            | PageResult&lt;ProductRating&gt;            | Employee, Customer, Anonymous,  Application              | Gets a collection of product ratings based on product identifiers.                                                                        |
 
-**Sales orders fulfillment controller:**
+## Sales orders fulfillment controller
 
 | API                            | Parameter                                                                                                                                  | Return value                       | Supported Commerce Roles | Description                                                                |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|--------------------------|----------------------------------------------------------------------------|
@@ -419,45 +419,45 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | RejectFulfillmentLines         | IEnumerable&lt;RejectFulfillmentLine&gt; fulfillmentLines                                                                                  | void                               | Employee                 | Updates the status of the fulfillment lines to Rejected.                   |
 | GetPackingSlipsData            | string salesId                                                                                                                             | IEnumerable&lt;PackingSlipData&gt; | Employee                 | Gets the list of packing slip data given a sales identifier.               |
 
-**Hardware profiles controller:**
+## Hardware profiles controller
 
 | API                        | Parameter                               | Return value                             | Supported Commerce Roles | Description                                   |
 |----------------------------|-----------------------------------------|------------------------------------------|--------------------------|-----------------------------------------------|
 | GetHardwareProfileById     | string hardwareProfileId                | HardwareProfile                          | Employee                 | Gets hardware profile by id.                  |
 | GetHardwareStationProfiles | QueryResultSettings queryResultSettings | PageResult&lt;HardwareStationProfile&gt; | Employee                 | Gets collection of hardware station profiles. |
 
-**Income expense account controller:**
+## Income expense account controller
 
 | API                      | Parameter                                                             | Return value                           | Supported Commerce Roles | Description                          |
 |--------------------------|-----------------------------------------------------------------------|----------------------------------------|--------------------------|--------------------------------------|
 | GetIncomeExpenseAccounts | int incomeExpenseAccountType, QueryResultSettings queryResultSettings | PageResult&lt;IncomeExpenseAccount&gt; | Employee                 | Gets the income or expense accounts. |
 
-**Kits controller:**
+## Kits controller
 
 | API                        | Parameter                     | Return value   | Supported Commerce Roles | Description                                        |
 |----------------------------|-------------------------------|----------------|--------------------------|----------------------------------------------------|
 | DisassembleKitTransactions | KitTransaction | KitTransaction | Employee                 | Performs kit (disassembly) transaction operations. |
 
-**Gift card controller:**
+## Gift card controller
 
 | API                | Parameter         | Return value | Supported Commerce Roles | Description                                              |
 |--------------------|-------------------|--------------|--------------------------|----------------------------------------------------------|
 | GetGiftCardInquiry | string giftCardId | GiftCard     | Employee, Customer, Anonymous,  Application              | Get gift card with additional information by identifier. |
 
-**Image controller:**
+## Image controller
 
 | API          | Parameter    | Return value | Supported Commerce Roles | Description                          |
 |--------------|--------------|--------------|--------------------------|--------------------------------------|
 | GetImageBlob | long imageId | MediaBlob    | Employee, Customer, Anonymous,  Application               | Gets image blob by image identifier. |
 
-**Store safe controller:**
+## Store safe controller
 
 | API           | Parameter                    | Return value                | Supported Commerce Roles | Description          |
 |---------------|------------------------------|-----------------------------|--------------------------|----------------------|
 | GetStoreSafes | QueryResultSettings settings | PageResult&lt;StoreSafe&gt; | Employee,                | Get store safe list. |
 
 
-**Warehouse controller:**
+## Warehouse controller
 
 | API              | Parameter                                                                         | Return value                        | Supported Commerce Roles       | Description                                                                                         |
 |------------------|-----------------------------------------------------------------------------------|-------------------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -466,7 +466,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetLocations     | string inventLocation, QueryResultSettings queryResultSettings                    | PageResult&lt;WarehouseLocation&gt; | Application,Employee, Customer | Gets the warehouse locations of the specified Warehouse.                                            |
 | SearchLocations  | string inventLocation, string searchText, QueryResultSettings queryResultSettings | PageResult&lt;WarehouseLocation&gt; | Application,Employee, Customer | Retrieves a list of warehouse locations for the given warehouse that matches the given search text. |
 
-**Recommendation controller:**
+## Recommendation controller
 
 | API         | Parameter                                                                               | Return value                          | Supported Commerce Roles                  | Description                                                                                          |
 |-------------|-----------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
