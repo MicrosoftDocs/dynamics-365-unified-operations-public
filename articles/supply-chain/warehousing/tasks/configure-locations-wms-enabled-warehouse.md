@@ -5,7 +5,7 @@ title: Configure locations in a WMS-enabled warehouse
 description: This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes). 
 author: perlynne
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -34,40 +34,49 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 
 ## Create a new warehouse
-1. Go to Warehouses.
-2. Click New.
-3. In the Warehouse field, type a value.
-4. In the Name field, type a value.
-5. In the Site field, type a value.
-6. Expand or collapse the Warehouse section.
-7. Set the Use warehouse management processes option to Yes.
-    * This setting allows you to  run advanced warehousing processes using warehouse work and mobile devices.  
+1. Go to **Navigation pane > Modules > Inventory management > Setup > Inventory breakdown > Warehouses**.
+2. Click **New**.
+3. In the **Warehouse** field, type a value.
+4. In the **Name** field, type a value.
+5. In the **Site** field, type a value.
+6. Expand the **Warehouse** section.
+7. Set the **Use warehouse management processes option** to Yes.
+   
+   This setting allows you to run advanced warehousing processes using warehouse work and mobile devices.
+   
 8. Close the page.
 
 ## Define a location format
-1. Go to Location formats.
-    * Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we’ll create a name with four components. For example, these could be aisle, rack, shelf, and bin.  
-2. Click New.
-3. In the Location format field, type a value.
-4. In the Name field, type a value.
-5. In the Segment description field, type a value.
-    * This describes what the first component of the location name represents. For example, it could be Aisle.  
-6. In the Length field, enter a number.
-    * This determines how many characters this part of the location name must have. Note that the total of all components in the name, including the separators, cannot exceed 10 characters.  
-7. In the Separator field, type a value.
-    * This determines which character or symbol is used between the first and second component of the name.  
-8. Click New.
-9. In the Segment description field, type a value.
-10. In the Length field, enter a number.
-11. In the Separator field, type a value.
-12. Click New.
-13. In the Segment description field, type a value.
-14. In the Length field, enter a number.
-15. In the Separator field, type a value.
-16. Click New.
-17. In the Segment description field, type a value.
-18. In the Length field, enter a number.
-19. Click Save.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse >Location formats**.
+    
+    Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we’ll create a name with four components. For example, these could be aisle, rack, shelf, and bin.
+    
+2. Click **New**.
+3. In the **Location format** field, type a value.
+4. In the **Name** field, type a value.
+5. In the **Segment description** field, type a value.
+    
+    This describes what the first component of the location name represents. For example, it could be 'Aisle'.
+    
+6. In the **Length** field, enter a number.
+    
+    This determines how many characters this part of the location name must have. Note that the total of all components in the name, including the separators, cannot exceed 10 characters.
+    
+7. In the **Separator** field, type a value.
+    
+    This determines which character or symbol is used between the first and second component of the name.  
+8. In the **Details** section, click **New**.
+9. In the **Segment description** field, type a value.
+10. In the **Length** field, enter a number.
+11. In the **Separator** field, type a value.
+12. In the **Details** section, click **New**.
+13. In the **Segment description** field, type a value.
+14. In the **Length** field, enter a number.
+15. In the **Separator** field, type a value.
+16. In the **Details** section, click **New**.
+17. In the **Segment description** field, type a value.
+18. In the **Length** field, enter a number.
+19. Click **Save**.
 20. Close the page.
 
 ## Define location types
