@@ -466,5 +466,13 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetLocations     | string inventLocation, QueryResultSettings queryResultSettings                    | PageResult&lt;WarehouseLocation&gt; | Application,Employee, Customer | Gets the warehouse locations of the specified Warehouse.                                            |
 | SearchLocations  | string inventLocation, string searchText, QueryResultSettings queryResultSettings | PageResult&lt;WarehouseLocation&gt; | Application,Employee, Customer | Retrieves a list of warehouse locations for the given warehouse that matches the given search text. |
 
+**Recommendation controller:**
+
+| API         | Parameter                                                                               | Return value                          | Supported Commerce Roles                  | Description                                                                                          |
+|-------------|-----------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Get         |                                                                                         | PageResult&lt;Recommendation&gt;      | Application,Employee, Customer, Anonymous | Gets the list of recommendations.                                                                    |
+| GetElements | string listId, RecommendationCriteria criteria, QueryResultSettings queryResultSettings | PagedResult&lt;RecommendedElement&gt; | Application,Employee, Customer, Anonymous | Gets the collection of recommended elements given the (optional) contextual information as criteria. |
+
+
 
 
