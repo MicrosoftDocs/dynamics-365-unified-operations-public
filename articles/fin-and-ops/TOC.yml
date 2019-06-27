@@ -2945,16 +2945,214 @@
         href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
       - name: Preview PDF documents with an embedded viewer
         href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
-    - name: Electronic reporting
+  - name: Electronic reporting
+    items:
+    - name: Electronic reporting overview
+      href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+    - name: Configurations
       items:
-      - name: Electronic reporting overview
-        href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
-      - name: Configurations
+      - name: Create configurations
+        href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+      - name: Prepare components of the Electronic reporting solution
         items:
-        - name: Formula designer in Electronic reporting
-          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-        - name: Create configurations
-          href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+        - name: Design domain specific data model
+          href: 
+        - name: Prepare application specific metadata
+          items: 
+          - name: (ER) Prepare application metadata to be used in RCS
+            href:
+          - name: (RCS) Access application metadata by using ER configuration
+            href: 
+          - name: (RCS) Access application metadata by using connected applications
+            href:
+        - name: Define model mappings and select data sources 
+          href:
+        - name: Map data model to selected data sources
+          href: 
+        - name: Create a format configuration
+          href:
+        - name: Map components of the created format to data model elements
+          href: 
+      - name: Test the prepared ER solution in the target application
+        items:
+        -name: (ER) Import configurations from RCS
+         href:
+       - name: Generate electronic documents for payments using a format configuration
+         href: 
+      - name: Upgrade your format by adopting a new base version of that format
+        href:
+    - name: Formula designer in Electronic reporting
+      href:
+    - name: Manage ER model mpaping in separate ER configurations
+      href: 
+    - name: Select data model definitions when you create formats
+      href: 
+    - name: Generate reports by adding content as raw XML
+      href: 
+    - name: (ER) Cross-company data sources in Electronic reporting
+      href: 
+    - name: Design ER formats to generate outgoing electronic documents in various formats
+      items:
+      - name: (ER) Design a configuration for generating reports in OPENXML format
+        href: 
+      - name: (ER) Design configurations to generate reports in Word format
+        href: 
+      - name: Design configurations to fill out PDF templates
+        href: 
+    - name: Embed images and shapes
+      items:
+      - name: (ER) Embed imaes and shapes in documents that you generate
+        href:
+      - name: Example of embedding images and shapes
+        items: 
+        - name: Design configurations to generate reports in Office formats that have embedded images
+          href: 
+        - name: Review configurations to generate reports in Office formats that have embedded images
+          href: 
+        - name: Generate reports in Office formats that have embedded images
+    - name: Modify Electronic reporting formats by reapplying Excel templates
+      href:
+    - name: Design Finance and Operation version dependent ER configurations
+      items: 
+      - name: Define the dependency of ER configurations on other components
+        href:
+    - name: Design an ER solution to use financial dimensions
+      items:
+      - name: Design data models to use financial dimensions as data sources
+        href:
+      - name: Map models to use financial dimensions as data sources
+        href: 
+      - name: Design reports to use financial dimensions as data sources
+        href: 
+      - name: Run reports that use financial dimensions as data sources
+        href: 
+    - name: Design ER formats to perform counting and summing by using information from generated output
+      items: 
+      - name: Create formats to perform counting and summing
+        href:
+      - name: Configure format to perform counting and summing
+        href: 
+      - name: Use computations to generate the output for counting and summing
+        href: 
+      - name: Run formats to perform counting and summing
+        href: 
+    - name: Dynamically add columns to Excel reports as horizontally expandable ranges
+      items:
+      - name: Design formats to dynamically addcolumns to Excel repots as horizontally expandable ranges
+        href: 
+      - name: Run formats to dynamically add columns to Excel repots as horizontally expandable ranges
+        href: 
+    - name: Use Document management files in format outputs
+      items: 
+     - name: Prepare data models to use Document management files in ER outputs
+       href: 
+     - name: Extend dtaa models to use Document management files in ER outputs
+       href: 
+     - name: Create formats to use Document management files in ER outputs
+       href: 
+     - name: Run formats to use Document management files in ER outputs
+       href: 
+     - name: Modify and run formats to use Document management files in ER outputs
+       href: 
+    - name: Update application data using Electronic reporting
+      items:
+      - name: Generate electronic documents and update application data
+        href:
+      - name: Import configurations to generate documents iwth application data
+        href:
+      - name: Design configurations to generate documents iwth applciation data
+        href: 
+      - name: Modify models and mappings to generate documents with applciation data
+        href: 
+      - name: Modify formats to generate documents with applciation data
+        href:
+      - name: Generate documents that have application data
+        href: 
+    - name: Import data from incoming files by using ER solutions
+      items: 
+      - name: Parse incoming documents in different formats
+        href: 
+      - name: Configure data import from manually selected files
+        items:
+        - name: Create configurations to import data from an external XML file
+          href:
+      - name: Configure data import in batch mode from SharePoint located files
+        href: 
+      - name: Import files in XML format
+        items:
+        - name: Import files in XML format with optional atrributes
+          href: 
+        - name: Configure ER formtas to import XML format files with optional attributes
+          href: 
+       - name: Split generated XML files based on file size and content quantity
+         href: 
+    - name: Configuration lifecycle
+      items:
+      - name: Manage configurations lifecycle
+        href:
+      - name: Upload configurations into lifecycle Services
+        href: 
+      - name: Import configurations from Lifecycle Services
+        href: 
+      - name: Download configurations from Lifecycle Services
+        href: 
+      - name: Import configurations
+        href: 
+      - name: Download ER configurations from the RCS repository
+        items: 
+        - name: Download configurations from the ER repository fo the RCS type
+          href: 
+        - name: Import configurations from RCS
+          href: 
+    - name: Use Electronic reporting solutions in Finance and Operations
+      items: 
+      - name: Configure the framework
+        items: 
+        - name: Configure the Electronic rpeorting framework
+          href: 
+        - name: Cretae configuration provides and mark them as active
+          href: 
+      - name: Destinations
+        items: 
+        - name: Destimations overview
+          href: 
+        - name: Configure destinations
+          href: 
+      - name: Automatically validate generated reports
+        items: 
+        - name: Trace generated report results and compare them with baseline values
+          href: 
+        - name Improvements in tracing resultsof generated ER reports and comparisons with baseline values
+          href: 
+        - name: Automate testing with Electronic reporting
+          href: 
+      - name: Automate business processes by using Electronic reporting configurations
+        items: 
+        - name: Configure Electronic reporting to pull data into Power BI
+          href: 
+        - name: Generate printable free text invoice (FTI) forms
+          href: 
+        - name: Other examples
+          items:
+          - name: Printing payment cheques
+            href: 
+          - name: Financial reporting
+            href: 
+          - name: Communication with web service
+            href: 
+          - name: Enterprise-wide reporting based on company-specific data
+            href:
+      - name: Trace execution of ER ormats to troublehsoot performance issues
+        href: 
+    - name: ER framework API
+      items: 
+      - name: Extend teh list of Electronic reporting functions
+        href: 
+      - name: Electronic reporting framework API changes for Application update 7.3
+        href: 
+      - name: Specify acustomstorage location for generated documents
+        href: 
+      
         - name: Create configuration providers and mark them as active
           href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
         - name: Design domain-specific data models
