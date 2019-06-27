@@ -181,7 +181,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 
 | API         | Parameter                                                                               | Return value                 | Supported Commerce Roles | Description                                                         |
 |-------------------------------|------------------------------------------------------------|-------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------|
-| GetCountryRegionsFor- Shipping  | QueryResultSettings queryResultSettings   PageResult\<CountryRegionInfo\> | Employee, Customer,  Anonymous, Application    | Gets the translated countries/regions with delivery modes configured for the current channel. |
+| GetCountryRegionsFor- Shipping  | QueryResultSettings queryResultSettings   PageResult\<CountryRegionInfo\> | | Employee, Customer,  Anonymous, Application    | Gets the translated countries/regions with delivery modes configured for the current channel. |
 | GetCountryRegionsBy- LanguageId | string languageId, QueryResultSettings queryResultSettings | PageResult\<CountryRegionInfo\> | Employee, Customer, Anonymous,  Application               | Get all the countries/regions filter by Language Id.                                          |
 | GetCountryRegions             | QueryResultSettings queryResultSettings                    | PageResult\<CountryRegionInfo\> | Employee                 | Get all the countries/regions.                                                                |
 
