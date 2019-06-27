@@ -35,101 +35,92 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to create extensible queries by using the SysDA API. 
-The SysDA API lets you create queries that perform like X++ query statments and are extensible like queries. X++ query statements are not extensible. If you want to add a new range, join, or field to your query, then you need to convert your statement to a query. Queries do have their own limitations:
 
-+ Queries are slower than query statements. Even when the resulting TSQL is the same, queries need more compute to prepare the TSQL. The execution time in SQL server is of course the same (which often overshadows the overhead).
-This is the reason we avoid converting select statements to queries in performance critical paths.
-+ Queries have a limited set of capabilities. For example, `delete_from` is not supported. `update_recordset` and `insert_recordset` are partly supported by using some arcane static methods on **SysQuery**.
+The SysDA API lets you create queries that perform like X++ query statments and that are extensible like queries. The performance of a SysDA query is similar to a query statement. In contrast, a query if typically slower than a query statement. Unlike queries, SysDA queries support insertion, deletion, and updates.
 
-The SysDa APIs includes an extensive set of APIs for creating custom queries, but there are a smaller set of types that drive the primary query activities:
+The SysDa APIs include an extensive set of APIs for creating custom queries, but there are a smaller set of types that drive the primary query activities:
 + Select: **SysDaQueryObject** and **SysDaSearchStatement**
 + Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
 + Insert: **SysDaInsertObject** and **SysDaInsertStatement**
 + Delete: **SysDaQueryObject** and **SysDaDeleteStatement**
 
+The following sections provide examples of each type of query, and the customizations they support. The examples use a table named TestTable that has two fields, a string field named **stringField** and an integer field named **intField**.
+
 ## Select queries
 
-Select queries are built using **SysDaQueryObject**. To fetch the data, you generate a SQL string from **SysDaQueryObject** and pass it to an **SysDaSearchObject**. You use **SysDaSearchStatement** to interate over the results in the **SysDaSearchObject**.
+Select queries are built using **SysDaQueryObject**. To fetch the data, you generate a SQL string from the **SysDaQueryObject** object and pass the SQL string to an **SysDaSearchObject** object. You use a **SysDaSearchStatement** object to interate over the results in the **SysDaSearchObject** object.
 
 
-    /// <summary>
-    /// Shows how to query using the VEDAS. The example is very simple, and
-    /// does not contain joins, cross company and other features.
-    /// </summary>
-    private static void Query()
+```X++
+private static void Query()
+{
+    // The table buffer that will hold the result.
+    TestTable t; 
+
+    // Create the query.
+    var qe = new SysDaQueryObject(t);
+
+    // Add clauses to the query. First the projection.
+    var s = qe.projection()
+        .add(fieldStr(TestTable, intField))
+        .add(fieldStr(TestTable, stringField));
+
+    // Add a where clause to include the first 5 records.
+    qe.WhereClause(new SysDaLessThanOrEqualsExpression(
+        new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
+        new SysDaValueExpression(5)));
+
+    // Order the results by the integer field.
+    qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
+
+    // The query is now been built. Use it to fetch data.
+    var sql = qe.toString();
+
+    var so = new SysDaSearchObject(qe);
+    var ss = new SysDaSearchStatement();
+
+    while (ss.next(so))
     {
-        TestTable t; // This is the table buffer that will hold the result.
-
-
-        // Create the query:
-        var qe = new SysDaQueryObject(t);
-
-
-        // Now add clauses to the query. First the projection:
-        var s = qe.projection()
-            .add(fieldStr(TestTable, intField))
-            .add(fieldStr(TestTable, stringField));
-        
-        // add a where clause to include the first 5 records
-        qe.WhereClause(new SysDaLessThanOrEqualsExpression(
-            new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
-            new SysDaValueExpression(5)));
-
-
-        // order the results by the integer field:
-        qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
-
-
-        // Not the object model has been built. Not use it to fetch data.
-        var sql = qe.toString();
-
-
-        var so = new SysDaSearchObject(qe);
-        var ss = new SysDaSearchStatement();
-
-
-        while (ss.next(so))
-        {
-            info(t.stringField);
-        }
+        info(t.stringField);
     }
-
+}
+```
 
 ## Update queries
 
-Update queries are built using **SysDaUpdateObject**. To update the data, you pass the **SysDaUpdateObject** object to the **execute** method of the **SysDaUpdateStatement**. The **execute** method must be wrapped in `ttsbegin` and `ttscommit` statements.
+Update queries are built using **SysDaUpdateObject**. To update data, you pass a **SysDaUpdateObject** object to the **execute** method of a **SysDaUpdateStatement** object. The **execute** method must be wrapped in `ttsbegin` and `ttscommit` statements.
 
 ```X++
+// Updates stringField to "Updated Value" for all rows where intField = 50.
 private static void Update()
-    {
-        TestTable t;
+{
+    TestTable t;
 
+    // Create an update query to find rows where intField = 50.
+    var uo = new SysDaUpdateObject(t);
+    uo.whereClause(new SysDaEqualsExpression(
+        new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
+        new SysDaValueExpression(50)));
 
-        var uo = new SysDaUpdateObject(t);
-        uo.whereClause(new SysDaEqualsExpression(
-            new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
-            new SysDaValueExpression(50)));
+    // Set stringField to "Updated Value".
+    uo.settingClause()
+       .add(fieldStr(TestTable, stringField), new SysDaValueExpression("Updated Value"));
 
+    // Get the SQL string for the update query.
+    // s IS NOT USED IN THIS EXAMPLE
+    var s = uo.toString();
 
-        uo.settingClause()
-           .add(fieldStr(TestTable, stringField), new SysDaValueExpression("Updated Value"));
-        
-        var s = uo.toString();
+    // Update the rows.
+    ttsbegin;
+    new SysDaUpdateStatement().execute(uo);
+    ttscommit;
 
-
-        ttsbegin;
-        new SysDaUpdateStatement().execute(uo);
-        ttscommit;
-
-
-        TestTable t1;
-        select * from t1 where t1.intField == 50;
-
-
-        var updatedValue = t1.stringField;
-    }
+    // Verify the results of the update query.
+    TestTable t1;
+    select * from t1 where t1.intField == 50;
+    var updatedValue = t1.stringField;
+}
 ```
-
 
 ## Insert queries
 
@@ -264,6 +255,7 @@ SysDa queries support several clauses:
 + `groupByClause`
 + `joinClause` with `joinClauseKind`
 + `joinedQuery`
++ `settingClause`
 
 
 
