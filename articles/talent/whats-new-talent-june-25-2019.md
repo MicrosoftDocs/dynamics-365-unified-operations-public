@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (June 25, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/25/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -54,7 +54,7 @@ Changes described in this section apply to build number 8.1.2357.
 
 ### Incorrect value displayed for Primary position (314266)
 
-This changes will consistently display the **Primary position** setting on all forms.
+These changes will consistently display the **Primary position** setting on all pages.
 
 ### Can't edit after recalling the workflow in Review (318180)
 
@@ -92,7 +92,7 @@ The **Reason codes** entity will be added to Common Data Service.
 
 ### View performance information for direct and extended reports in manager self-service
 
-A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews. In addition, direct managers and their employees can maintain and update performance journals to help guarantee that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.
+A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.
 
 ### Print performance reviews
 
