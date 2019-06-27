@@ -65,24 +65,24 @@ Create a vendor invoice to record a purchase that was made with a Purchasing car
 2. On the **Action Pane, click Invoice > Vendor invoice**.
 3. In the Vendor invoice page, in the Invoice account field, enter the account number for the vendor that sent the invoice for the goods or services.
 4. In the Number field, enter the invoice number.
-5. On the Action Pane, click Header view to enter additional information for the invoice header.
+5. On the Action Pane, click **Header** view to enter additional information for the invoice header.
 6. In the **Purchasing card invoice** field, select **Record purchase** as the type of Purchasing card transaction you are entering the invoice for. 
 
 [Note!] **Balance payoff** indicates an invoice that will pay off a balance owed to the Purchasing card services vendor (financial institution). **N/A** indicates an invoice that does not involve a Purchasing card.
 
-7. On the Setup FastTab, in the Posting definition field, select the purchasing card-specific posting definition. The posting definition you enter must have been set up to record the purchase but not post to Accounts payable. For more information, see Setting up to track purchasing card transactions.
-8. On the Payment FastTab, enter information about the purchasing card used to make the purchase: 
-9. Enter the last four digits of the card.
-10. The name of the bank that issued the card appear once you enter the card number.
-11. The card holder name that will appear, based on the card number entered.
-12. The account number for the vendor that provides the Purchasing card service.
-13. The name of the Purchasing card services provider.
-14. In the Purchasing card invoice field, enter the vendor invoice number of the related “Balance payoff” invoice that was created to pay off the purchasing card statement that included this purchase. This field must be the posted invoice number designated as the “Balance payoff” invoice. It will appear in the list if the invoice was marked appropriately.
-15. On the Action Pane, click Line view to enter information about the purchase amount.
-16. In the Lines grid area, click Add line, and enter information about the line. If you enter an item number, lines that are not for a purchase order must have a product type of Item or Service, and must not be stocked.
-17. To specify additional information about the line, click the Line details FastTab, and enter the information. 
-18. Optional: Submit the invoice to workflow for review and approval process, and then post the invoice. On the Action Pane, click Post, and then click Post in the page that appears.
-19. To save the invoice without posting, close the page. You can view the invoice on the Pending vendor invoices list page.
+7. On the **Setup** FastTab, in the **Posting definition** field, select the purchasing card-specific posting definition. The posting definition you enter must have been set up to record the purchase but not post to Accounts payable. For more information, see Setting up to track purchasing card transactions.
+8. On the **Payment** FastTab, enter information about the purchasing card used to make the purchase: 
+- Enter the Purchasing card reference number of the card.
+- The name of the bank that issued the card appear once you enter the reference number.
+- The card holder name that will appear, based on the reference number entered.
+- The account number for the vendor that provides the Purchasing card service.
+- The name of the Purchasing card services provider will appear, based on the account number entered.
+- In the Purchasing card invoice field, enter the vendor invoice number of the related “Balance payoff” invoice that was created to pay off the purchasing card statement that included this purchase. This field must be the posted invoice number designated as the “Balance payoff” invoice. It will appear in the list if the invoice was marked appropriately.
+9. On the Action Pane, click **Line view** to enter information about the purchase amount.
+10. In the **Lines** grid area, click **Add line**, and enter information about the line. 
+11. To specify additional information about the line, click the **Line details** FastTab, and enter the information. 
+12. Optional: Submit the invoice to workflow for review and approval process, and then post the invoice. On the Action Pane, click **Post**, and then click **Post** in the page that appears.
+13. To save the invoice without posting, close the page. You can view the invoice on the **Pending vendor invoices** list page.
 
 
 
