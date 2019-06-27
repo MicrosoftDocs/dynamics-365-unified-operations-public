@@ -29,13 +29,14 @@ ms.search.validFrom: 2019-06-25
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (June 25, 2019)"
+# What's new or changed in Dynamics 365 for Talent (June 25, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Coming soon in Attract
@@ -48,25 +49,26 @@ Approvals appear in an **Approvals** section on the dashboard. Approvers can rev
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
+
 Changes described in this section apply to build number 8.1.2357.
 
 ### Incorrect value displayed for Primary position (314266)
 
-This changes will consistently display the primary position setting on all forms.
+This changes will consistently display the **Primary position** setting on all forms.
 
 ### Can't edit after recalling the workflow in Review (318180)
 
-With this week's changes reviews that have been recalled via workflow can now be edited.
+Reviews that have been recalled via workflow can now be edited.
 
-### "Final comments" field in Reviews is not translated (325921)
+### Final comments field in Reviews isn't translated (325921)
 
-With this change the "Final comments" label will be translated in Talent.
+The **Final comments** label will be translated in Talent.
 
 ### Preview features will be enabled only in sandbox environments
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
-
 When you provision a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**. The **Sandbox** instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+
+For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 ## In preview
 
@@ -76,17 +78,17 @@ Organizations can offer many types of leave to employees. However, it might not 
 
 ## Coming soon in Core HR
 
-### Feature management workspace in Talent
+### Feature management area in Talent
 
-The feature management workspace will be removed from the System Administration. Issues have been identified and the workspace will re-introduced in a future release. 
+**Feature management** will be removed from **System administration** because of issues with the feature. We'll re-introduce **Feature management** in a future release. 
 
 ### Common Data Service entity support for custom fields
 
-The following entities will support custom fields: Payroll earning code, Fixed compensation event, Compensation grid, Pay period and Compensation reference point. 
+The following entities will support custom fields: **Payroll earning code**, **Fixed compensation event**, **Compensation grid**, **Pay period**, and **Compensation reference point**. 
 
 ### New Common Data Service entities
 
-The Reason codes entity will be added to Common Data Service.
+The **Reason codes** entity will be added to Common Data Service.
 
 ### View performance information for direct and extended reports in manager self-service
 
