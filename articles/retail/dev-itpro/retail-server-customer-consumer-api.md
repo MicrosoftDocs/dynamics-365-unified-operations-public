@@ -232,7 +232,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 
 | API               | Parameter                                                       | Return value                        | Supported Commerce Roles | Description                                                 |
 |-------------------|-----------------------------------------------------------------|-------------------------------------|--------------------------|-------------------------------------------------------------|
-| GetStateProvinces | string countryRegionId, QueryResultSettings queryResultSettings | PageResult\<StateProvinceInfo\> | Employee,  Customer,  Anonymous,  Application               | Get all the states or provinces filtered by country region. |
+| GetStateProvinces | string countryRegionId, QueryResultSettings queryResultSettings | PageResult\<StateProvinceInfo\> | Employee,  Customer,  Anonymous,  Application               | Get all the states or provinces filtered by country/region. |
 
 ## Discount controller
 
