@@ -13,9 +13,11 @@ Enter information about the Purchasing cards that have been issued to employees 
 2. On the list page, select the bank account for the Purchasing card services provider.
 3. On the Action Pane, click the **Set up** tab, and then click **Purchasing cards**.
 4. In the **Bank purchasing card** page, click **New** to create a new Purchasing card record.
-5. In the **Bank purchasing card** page, enter information about the Purchasing card. 
-- In the **Purchasing card reference number** field, enter reference number for the credit card, for example the last four digits.
-  [Note!] that you cannot change this number after you have saved the Purchasing card reference number.
+5. In the **Bank purchasing card** page, enter the following information about the Purchasing card:
+- In the **Purchasing card reference number** field, enter reference number for the credit card. For example, the last four digits.
+
+[Note!] You cannot change this number after you have saved the Purchasing card reference number.
+
 - In the **Card holder name** field, enter the card holder's name as it appears on the Purchasing card.
 - In the **Employee** field, select the employee whom the card is issued.
 6. Optional: For the record you entered, enter additional information about the Purchasing card: 
@@ -26,7 +28,11 @@ Enter information about the Purchasing cards that have been issued to employees 
 
 ## Set up a posting definition for vendor invoices that track employee purchases
 
-Create a new posting definition for the vendor invoices that you enter to record purchases made with a Purchasing card. When these invoices are posted, balancing entries for the expenditure are created in General ledger. When the vendor invoice is settled, the invoice is moved to history, but checks are not created. Use this posting definition when you import invoices from an external file and when you manually enter vendor invoices for employee purchases.
+Create a new Posting definition for the vendor invoices that you enter to record purchases made with a Purchasing card. When these invoices are posted, balancing entries for the expenditure are created in General ledger. When the vendor invoice is settled, the invoice is moved to history, but a payment to the vendor is not generated. Use this Posting definition when you import invoices from an external file and when you manually enter vendor invoices for employee purchases.   
+
+Optional: You can set the Posting definition to default when you create vendor invoices to record purchasing card transactions.
+1. Go to **Accounts payable > Setup > Accounts payable parameters**.
+2. On the Invoice tab, in the **Default posting definition for record purchase** field select the Posting definition you want defaulted.
 
 ## Overview: Processing invoices for Purchasing card transactions
 
@@ -49,7 +55,7 @@ Create a vendor invoice to record the periodic statement balance for a Purchasin
 7. In the Action strip, click **Financials** to add or modify the financial distribution information for the invoice line.
 8. On the Action Pane, click **Header** view to enter additional information for the invoice header.
 9. On the Action Pane, on the **General** tab, in the **Purchasing card invoice** field, select **Balance payoff** to specify that you are paying off your agency's Purchasing card balance.
-10. Optional: Post the invoice. On the Action Pane, click **Post**.
+10. Optional: Submit the invoice to workflow for review and approval process, and then post the invoice. .
 
 [NOTE!] Before you create a Purchasing card invoice, you must post the “Balance payoff” invoice to the Purchasing card services vendor. All of the Purchasing card invoices will be posted against this.
 
@@ -59,31 +65,30 @@ Create a vendor invoice to record the periodic statement balance for a Purchasin
 
 Create a vendor invoice to record a purchase that was made with a Purchasing card. This invoice will be settled, but not paid, to the vendor who supplied the purchased goods or service.
 
-[NOTE!] The invoice for the statement that is set as “Balance payoff” must already be posted to the vendor account prior to your creating a PCARD invoice.
+[NOTE!] The invoice for the statement that is set as “Balance payoff” must already be posted to the vendor account prior to your creating a Purchasing card invoice.
 
 1. Go to **Accounts payable > Common > Vendor invoices > Open vendor invoices**.
 2. On the **Action Pane, click Invoice > Vendor invoice**.
-3. In the Vendor invoice page, in the Invoice account field, enter the account number for the vendor that sent the invoice for the goods or services.
-4. In the Number field, enter the invoice number.
+3. On the Vendor invoice page, in the **Invoice account** field, enter the account number for the vendor that sent the invoice for the goods or services.
+4. In the **Number** field, enter the invoice number.
 5. On the Action Pane, click **Header** view to enter additional information for the invoice header.
 6. In the **Purchasing card invoice** field, select **Record purchase** as the type of Purchasing card transaction you are entering the invoice for. 
 
 [Note!] **Balance payoff** indicates an invoice that will pay off a balance owed to the Purchasing card services vendor (financial institution). **N/A** indicates an invoice that does not involve a Purchasing card.
 
-7. On the **Setup** FastTab, in the **Posting definition** field, select the Purchasing card specific posting definition. The posting definition you enter must have been set up to record the purchase but not post to Accounts payable. 
+7. On the **Setup** FastTab, in the **Posting definition** field, select the Purchasing card specific Posting definition if a default value was not selected on the **Accounts payable parameters** page. 
+
+[Note!] The Posting definition you select must have been set up to record the purchase but not post to Accounts payable otherwise a payment will be made to the vendor providing the good or service procured with the purchasing card. 
+
 8. On the **Payment** FastTab, enter information about the Purchasing card used to make the purchase: 
 - In the **Purchasing card reference number** field, enter the reference number of the card.
 - The name of the bank that issued the card appear once you enter the reference number.
 - The card holder name that will appear, based on the reference number entered.
 - In the **Account** field, enter the account number for the vendor that provides the Purchasing card service.
 - The name of the Purchasing card services provider will appear, based on the account number entered.
-- In the Purchasing card invoice field, enter the vendor invoice number of the related “Balance payoff” invoice that was created to pay off the purchasing card statement that included this purchase. This field must be the posted invoice number designated as the “Balance payoff” invoice. It will appear in the list if the invoice was marked appropriately.
+- In the **Purchasing card invoice** field, enter the vendor invoice number of the related “Balance payoff” invoice that was created to pay off the purchasing card statement that included this purchase. This field must be the posted invoice number designated as the “Balance payoff” invoice. It will appear in the list if the invoice was marked appropriately.
 9. On the Action Pane, click **Line view** to enter information about the purchase amount.
 10. In the **Lines** grid area, click **Add line**, and enter information about the line. 
 11. To specify additional information about the line, click the **Line details** FastTab, and enter the information. 
-12. Optional: Submit the invoice to workflow for review and approval process, and then post the invoice. On the Action Pane, click **Post**.
+12. Optional: Submit the invoice to workflow for review and approval process, and then post the invoice. 
 13. To save the invoice without posting, close the page. You can view the invoice on the **Pending vendor invoices** list page.
-
-
-
-
