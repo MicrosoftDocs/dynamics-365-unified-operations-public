@@ -112,6 +112,13 @@ intent discussed previously must be used for such decisions.
 | Provides additional context of the business process, which can significantly improve the durability and the quality of payload. | Business process context is most likely lost due to the lower level capturing of events.                             |
 
 
+> [!NOTE]
+> In general, implementing business events at the table level may pose additional challenges than what is described above. For example,
+> if the business logic is executed via a stored procedure which updates data in the underlying table, then, it is quite possible for
+> the business event to not even get generated since it was implemented in the table insert method in X++. One could encounter
+> additional challenges based on specific use cases. Hence, it is not recommended to implement business events at the table level.
+
+
 ## Implementing a business event
 
 Implementing a business event and sending it is a fairly straightforward process:
