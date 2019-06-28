@@ -555,6 +555,8 @@ Only user accounts that have the Global Administrator directory role can add cer
 2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 3. Run the following script from the **Infrastructure** folder.
     ```powershell
+    Install-Module AzureRM
+    Import-Module AzureRM
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 
