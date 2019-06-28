@@ -52,16 +52,17 @@ Exercise 1: Create a new Microsoft Flow
 
 3.  Select **New \> Create from blank**
 
-    ![](../media/BEF-Howto-Flow-01.png  | width=100)
+    ![](../media/BEF-Howto-Flow-01.png) {:height="700px" width="400px"}
+    <img src="../media/BEF-Howto-Flow-01.png" width="100">
 
 4.  Search for **Dynamics 365 for Finance and Operations** and **select** the connector.
 
-    ![](../media/BEF-Howto-Flow-02.png)
+    ![](../media/BEF-Howto-Flow-02.png){:height="50%" width="50%"}
 
 5.  You will notice a new trigger for Finance and Operations called “**When a
     Business Event occurs**”. Select it.
 
-    ![](../media/BEF-Howto-Flow-03.png)
+    ![](../media/BEF-Howto-Flow-03.png){:class="img-responsive"}
 
 6.  Then **select** your environment instance, Category, Event Name and Legal
     entity.
