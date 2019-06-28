@@ -5,7 +5,7 @@ title: Source candidates by using talent pools
 description: This topic explains how to create and set up talent pools in Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -115,15 +115,16 @@ All users have a common view of candidate profiles. The **Profile** tab shows an
 
 - You can view the contact details for the candidate. You can also edit or update the information as you require by using the **Edit details** button.
 
-- You can add more skills tags to help identify a candidate's skills.
-
 - You can view the candidate's whole application history. You can see all the jobs that the candidate has applied for in your organization and the status of those applications. If you're part of a job's hiring team, you can select **View** to look at the application in detail.
 
-- The **Documents** tab shows any documents that the candidate has added from his or her profile or during job applications. This tab can be used to manage the candidate's resumes, cover letters, portfolio work, and so on. You can also use this tab to add documents.
+- The **Documents** tab shows any documents that the candidate has added from his or her profile or during job applications. You can use this tab o manage the candidate's resumes, cover letters, portfolio work, and so on. You can also use this tab to add documents.
 
     To view a document, select the document name in the list of documents. You can view Microsoft Word documents in the application by using Microsoft Office 365. You can also download the documents to your local computer by using the **Download** option for each document.
 
 - The **LinkedIn** tab shows the candidate's LinkedIn information. To use this tab, you must connect your LinkedIn account in the user settings, and your environment's LinkedIn Recruiter connection must be established. For more information, see [Sourcing with LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Only candidates can update their skills, education history, and work experience.
 
 ## Add candidates from a talent pool to a job
 
