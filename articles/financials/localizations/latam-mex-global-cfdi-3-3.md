@@ -4,7 +4,7 @@ title: Global CFDI electronic invoices for Mexico
 description: This topic gives an overview of the functionality for Global CFDI electronic invoices for Mexico.
 author: v-kikozl
 manager: annbe
-ms.date: 06/17/2018
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
