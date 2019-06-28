@@ -52,35 +52,35 @@ Exercise 1: Create a new Microsoft Flow
 
 3.  Select **New \> Create from blank**
 
-    ![](media/d1b47e45fb90231dfae9cff0a299def5.png)
+    ![](../media/BEF-Howto-Flow-01.png  | width=100)
 
-4.  Search for **Dynamics 365 for Operations** and **select** the connector.
+4.  Search for **Dynamics 365 for Finance and Operations** and **select** the connector.
 
-    ![](media/3f2f4a68586a88323d3153b4b76e594c.png)
+    ![](../media/BEF-Howto-Flow-02.png)
 
 5.  You will notice a new trigger for Finance and Operations called “**When a
     Business Event occurs**”. Select it.
 
-    ![](media/3f8cfbec74e3ff1b85fb540817ffae8c.png)
+    ![](../media/BEF-Howto-Flow-03.png)
 
 6.  Then **select** your environment instance, Category, Event Name and Legal
     entity.
 
-    ![](media/c2575d2abd290c30eda59cbc6552570c.png)
+    ![](../media/BEF-Howto-Flow-04.png)
 
 7.  **Select New Step** button to add a new action:
 
-    ![](media/3e23a40eaf2fb6870c436e31c48efefe.png)
+    ![](../media/BEF-Howto-Flow-05.png)
 
 8.  **Search** for **Parse Json** data operation. This step is needed to be able
     to parse our message with the schema of our data contract provided by F&O.
 
-    ![](media/bca42b29815107c993962bee32b31969.png)
+    ![](../media/BEF-Howto-Flow-06.png)
 
 9.  **Select** the content field of “**Parse Json**” action then the **Body**
     output from the previous step should appear as an option. Select **Body**.
 
-    ![](media/99aa7b662dd91b3b65bc2ea2af00465c.png)
+    ![](../media/BEF-Howto-Flow-07.png)
 
 10. Now we need to type in the schema of the contract received from F&O.
     However, F&O provides only a sample payload instead. Hence, we can use
@@ -89,12 +89,12 @@ Exercise 1: Create a new Microsoft Flow
     example) and **click on download Schema** link. This will download a text
     file. **Open** the text file and **copy** the content.
 
-    ![](media/3c26e6048126849dd9804dbe3c2a5e92.png)
+    ![](../media/BEF-Howto-Flow-08.png)
 
 11. **Go Back** to Microsoft Flow **click** on “**Use sample payload to generate
     schema**” link. Then **past** your text file content and click **Done**
 
-    ![](media/06141f6f5a01394ca8b21ef21e62395c.png)
+    ![](../media/BEF-Howto-Flow-09.png)
 
 12. Depending on the quality of your sample payload, your generator will note
     recognize an Integer from a real especially if the real is provided as a
