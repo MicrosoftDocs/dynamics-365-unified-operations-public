@@ -26,7 +26,7 @@ ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Business events in Microsoft Flow
+# Consume Business events with Microsoft Flow
 
 [!include[banner](../includes/banner.md)]
 The objective of this lab is to provide guided steps of how to configure and
