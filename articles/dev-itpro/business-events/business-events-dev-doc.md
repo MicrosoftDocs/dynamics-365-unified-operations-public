@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/23/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -111,6 +111,9 @@ intent discussed previously must be used for such decisions.
 | Makes it easy to remain noiseless.                                                                                       | Difficult to remain noiseless unless additional effort is taken to put sound logic in place to filter out the noise. |
 | Provides additional context of the business process, which can significantly improve the durability and the quality of payload. | Business process context is most likely lost due to the lower level capturing of events.                             |
 
+
+> [!NOTE]
+> In general, implementing business events at the table level may pose additional challenges than what is described above. For example, if the business logic is executed via a stored procedure that updates data in the underlying table, then it is possible that the business event will not even get generated because it was implemented in the table insert method in X++. You could potentially encounter additional challenges based on specific use cases. As a result, it is not recommended that you implement business events at the table level.
 
 ## Implementing a business event
 
