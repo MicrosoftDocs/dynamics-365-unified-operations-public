@@ -94,7 +94,7 @@ Exercise 1: Create a new Microsoft Flow
 11. **Go Back** to Microsoft Flow **click** on “**Use sample payload to generate
     schema**” link. Then **past** your text file content and click **Done**
 
-    <img src="../media/BEF-Howto-Flow-09.png" width="50%">
+    <img src="../media/BEF-Howto-Flow-09.png" width="70%">
 
 12. Depending on the quality of your sample payload, your generator will note
     recognize an Integer from a real especially if the real is provided as a
@@ -109,11 +109,11 @@ Exercise 1: Create a new Microsoft Flow
     notify with customer payment details. **Search** for **send email** action,
     then login to your Office365 account.
 
-    <img src="../media/BEF-Howto-Flow-11.png" width="50%">
+   <img src="../media/BEF-Howto-Flow-11.png" width="70%">
 
 14.  Then fill-in the message with the required fields.
 
-    <img src="../media/BEF-Howto-Flow-12.png" width="70%">
+   <img src="../media/BEF-Howto-Flow-12.png" width="70%">
 
 15.  Then **Save** Flow.
 
@@ -138,12 +138,12 @@ the endpoint has been correctly configured then triggering an event.
 6.  Then Verify that a new Endpoint has been created with a GUID appended in the
     name.
 
-    <img src="../media/BEF-Howto-Flow-13.png" width="70%">
+    <img src="../media/BEF-Howto-Flow-13.png" width="100%">
 
 7.  If you check the **Active events** tab you can also verify that “**Payment
     Posted**” is activated for GBSI
 
-<img src="../media/BEF-Howto-Flow-14.png" width="100%">
+    <img src="../media/BEF-Howto-Flow-14.png" width="100%">
 
 8.  Then final step is to **trigger the Business Event** of a customer payment
     posted and check whether the Flow runs and whether you receive an email with
