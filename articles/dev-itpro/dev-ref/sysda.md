@@ -55,7 +55,7 @@ To run a select query:
 
 
 ```X++
-// Finds all rows where intField <= 5.
+// Find all rows where intField <= 5.
 
 // t is the table buffer that will hold the result.
 TestTable t; 
@@ -92,7 +92,7 @@ To run an update query:
 + Update data by by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. You must wrap the call to  **execute** in `ttsbegin` and `ttscommit` statements.
 
 ```X++
-// Updates stringField to "Updated Value" for all rows where intField = 50.
+// Update stringField to "Updated Value" for all rows where intField = 50.
 
 TestTable t;
 
@@ -128,42 +128,39 @@ To run an insert query:
 + Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
 
 ```X++
-private static void Insert()
-{
-    TestTable t;
+// Insert rows with intField = 40 and stringField = "en-us".
+TestTable t;
 
-    // Specify the fields in the new row.
-    var insertObject = new SysDaInsertObject(t);
-    insertObject.fields()
-        .add(fieldStr(TestTable, stringField))
-        .add(fieldStr(TestTable, intField));
+// Specify the fields in the new row.
+var insertObject = new SysDaInsertObject(t);
+insertObject.fields()
+    .add(fieldStr(TestTable, stringField))
+    .add(fieldStr(TestTable, intField));
 
-    // Retrieve the data to insert from the LanguageTable.
-    LanguageTable source;
-    var qe = new SysDaQueryObject(source);
+// Retrieve the data to insert from the LanguageTable.
+LanguageTable source;
+var qe = new SysDaQueryObject(source);
 
-    var s1 = qe.projection()
-        .Add(fieldStr(LanguageTable, LanguageId))
-        .AddValue(40);
+var s1 = qe.projection()
+    .Add(fieldStr(LanguageTable, LanguageId))
+    .AddValue(40);
 
-    qe.WhereClause(new SysDaEqualsExpression(
-                    new SysDaFieldExpression(source, fieldStr(LanguageTable, LanguageId)),
-                    new SysDaValueExpression("en-us")));
+qe.WhereClause(new SysDaEqualsExpression(
+                new SysDaFieldExpression(source, fieldStr(LanguageTable, LanguageId)),
+                new SysDaValueExpression("en-us")));
 
-    // Assign the query to the insert statement.
-    insertObject.query(qe);
+// Assign the query to the insert statement.
+insertObject.query(qe);
 
-    var insertStmt = new SysDaInsertStatement();
-    ttsbegin;
+var insertStmt = new SysDaInsertStatement();
+ttsbegin;
     insertStmt.executeQuery(insertObject);
-    ttscommit;
-    
-    // Verify the results of the insert query.
-    TestTable t1;
-    select * from t1 where t1.stringField == "en-us";
-    // Prints 40.
-    info(any2Str(t1.intField) + ":" + t1.stringField); 
-}
+ttscommit;
+
+// Verify the results of the insert query.
+TestTable t1;
+select * from t1 where t1.stringField == "en-us";
+info(any2Str(t1.intField) + ":" + t1.stringField); 
 ```
 
 ## Delete query
@@ -175,6 +172,7 @@ To run an delete query:
 + Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
 
 ```X++
+// Delete rows where intField is even.
 TestTable t;
 
 var qe = new SysDaQueryObject(t);
@@ -182,7 +180,7 @@ var qe = new SysDaQueryObject(t);
 var s = qe.projection()
     .add(fieldStr(TestTable, intField));
 
-// Get rid of all the even values.
+// Delete rows where intField is even.
 qe.WhereClause(new SysDaEqualsExpression(
     new SysDaModExpression(
         new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
@@ -203,9 +201,9 @@ info("Number of rows after deletion: " + any2Str(t.RowCount()));
 
 SysDa queries support several clauses:
 
-+ `whereClause`
-+ `orderByClause`
-+ `groupByClause`
++ `whereClause`: The where clause is constructed from objects that inherit from **SysDaQueryExpression**. Examples are **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**. You can find the full list by filtering in the Application Explorer.
++ `orderByClause`: .add and .addDescending 
++ `groupByClause`:
 + `joinClause` with `joinClauseKind`
 + `joinedQuery`
 + `settingClause`
