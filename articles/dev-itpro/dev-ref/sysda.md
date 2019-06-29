@@ -166,7 +166,13 @@ private static void Insert()
 }
 ```
 
-## Delete queries
+## Delete query
+
+To run an delete query:
+
++ Create and configure a **SysDaQueryObject** object to specify which rows to delete.
++ Create a **SysDaDeleteObject** object, passing the **SysDaQueryObject** to the constructor.
++ Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
 
     /// <summary>
     /// Shows the support for delete in the VEDAS
@@ -175,13 +181,10 @@ private static void Insert()
     {
         TestTable target;
 
-
         var qe = new SysDaQueryObject(target);
-
 
         var s = qe.projection()
             .add(fieldStr(TestTable, intField));
-
 
         // Get rid of all the even values.
         qe.WhereClause(new SysDaEqualsExpression(
@@ -190,10 +193,8 @@ private static void Insert()
                         new SysDaValueExpression(2)),
                 new SysDaValueExpression(0)));
 
-
-        var ds = new SysDaDeleteStatement();
         var delobj =  new SysDaDeleteObject(qe);
-
+        var ds = new SysDaDeleteStatement();
 
         var r = delobj.toString();
 
