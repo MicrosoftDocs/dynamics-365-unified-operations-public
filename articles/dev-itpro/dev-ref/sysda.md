@@ -38,7 +38,7 @@ This topic explains how to create extensible queries by using the SysDA API.
 The SysDA API lets you create queries that perform like X++ query statments and that are extensible like queries. The performance of a SysDA query is similar to a query statement. In contrast, a query if typically slower than a query statement. Unlike queries, SysDA queries support insertion, deletion, and updates.
 
 The SysDa APIs include an extensive set of APIs for creating custom queries, but there are a smaller set of types that drive the primary query activities:
-+ Select: **SysDaQueryObject** and **SysDaSearchStatement**
++ Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**
 + Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
 + Insert: **SysDaInsertObject** and **SysDaInsertStatement**
 + Delete: **SysDaQueryObject** and **SysDaDeleteStatement**
@@ -92,7 +92,10 @@ private static void Query()
 
 ## Update query
 
-You build an update query by configuring an **SysDaUpdateObject** object. To update data, you pass a **SysDaUpdateObject** object to the **execute** method of a **SysDaUpdateStatement** object. The **execute** method must be wrapped in `ttsbegin` and `ttscommit` statements.
+To run an update query:
+
++ Create an configure a **SysDaUpdateObject** object. 
++ Update data by by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. You must wrap the call to  **execute** in `ttsbegin` and `ttscommit` statements.
 
 ```X++
 // Updates stringField to "Updated Value" for all rows where intField = 50.
@@ -116,7 +119,7 @@ private static void Update()
 
     // Update the rows.
     ttsbegin;
-    new SysDaUpdateStatement().execute(uo);
+        new SysDaUpdateStatement().execute(uo);
     ttscommit;
 
     // Verify the results of the update query.
