@@ -56,34 +56,31 @@ To run a select query:
 
 ```X++
 // Finds all rows where intField <= 5.
-private static void Query()
+
+// t is the table buffer that will hold the result.
+TestTable t; 
+
+// Create the query.
+var qe = new SysDaQueryObject(t);
+// Add clauses to the query. First the projection.
+var s = qe.projection()
+    .add(fieldStr(TestTable, intField))
+    .add(fieldStr(TestTable, stringField));
+
+// Add a where clause to include rows where intField is <= 5.
+qe.WhereClause(new SysDaLessThanOrEqualsExpression(
+    new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
+    new SysDaValueExpression(5)));
+
+// Order the results by intField.
+qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
+
+var so = new SysDaSearchObject(qe);
+var ss = new SysDaSearchStatement();
+
+while (ss.next(so))
 {
-    // The table buffer that will hold the result.
-    TestTable t; 
-
-    // Create the query.
-    var qe = new SysDaQueryObject(t);
-
-    // Add clauses to the query. First the projection.
-    var s = qe.projection()
-        .add(fieldStr(TestTable, intField))
-        .add(fieldStr(TestTable, stringField));
-
-    // Add a where clause to include rows where intField is <= 5.
-    qe.WhereClause(new SysDaLessThanOrEqualsExpression(
-        new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
-        new SysDaValueExpression(5)));
-
-    // Order the results by the intField.
-    qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
-
-    var so = new SysDaSearchObject(qe);
-    var ss = new SysDaSearchStatement();
-
-    while (ss.next(so))
-    {
-        info(t.stringField);
-    }
+    info(t.stringField);
 }
 ```
 
@@ -96,34 +93,29 @@ To run an update query:
 
 ```X++
 // Updates stringField to "Updated Value" for all rows where intField = 50.
-private static void Update()
-{
-    TestTable t;
 
-    // Create an update query to find rows where intField = 50.
-    var uo = new SysDaUpdateObject(t);
-    uo.whereClause(new SysDaEqualsExpression(
-        new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
-        new SysDaValueExpression(50)));
+TestTable t;
 
-    // Set stringField to "Updated Value".
-    uo.settingClause()
-       .add(fieldStr(TestTable, stringField), new SysDaValueExpression("Updated Value"));
+// Create an update query to find rows where intField = 50.
+var uo = new SysDaUpdateObject(t);
+uo.whereClause(new SysDaEqualsExpression(
+    new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
+    new SysDaValueExpression(50)));
 
-    // Get the SQL string for the update query.
-    // s IS NOT USED IN THIS EXAMPLE
-    var s = uo.toString();
+// Set stringField to "Updated Value".
+uo.settingClause()
+   .add(fieldStr(TestTable, stringField), new SysDaValueExpression("Updated Value"));
 
-    // Update the rows.
-    ttsbegin;
-        new SysDaUpdateStatement().execute(uo);
-    ttscommit;
+// Update the rows.
+ttsbegin;
+    new SysDaUpdateStatement().execute(uo);
+ttscommit;
 
-    // Verify the results of the update query.
-    TestTable t1;
-    select * from t1 where t1.intField == 50;
-    var updatedValue = t1.stringField;
-}
+// Verify the results of the update query.
+TestTable t1;
+select * from t1 where t1.intField == 50;
+var updatedValue = t1.stringField;
+info("Updated value is: " + t1.stringField);
 ```
 
 ## Insert query
@@ -170,10 +162,9 @@ private static void Insert()
     TestTable t1;
     select * from t1 where t1.stringField == "en-us";
     // Prints 40.
-    info(t1.intField); 
+    info(any2Str(t1.intField) + ":" + t1.stringField); 
 }
 ```
-
 
 ## Delete queries
 
