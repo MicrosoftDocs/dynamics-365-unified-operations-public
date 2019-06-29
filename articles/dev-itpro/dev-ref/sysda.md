@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how to create extensible queries by using the SysDA API. 
 
-The SysDA API lets you create queries that perform like X++ query statments and that are extensible like queries. The performance of a SysDA query is similar to a query statement. In contrast, a query if typically slower than a query statement. Unlike queries, SysDA queries support insertion, deletion, and updates.
+The SysDA API lets you create queries that perform like X++ query statments and that are extensible like queries. The performance of a SysDA query is similar to a query statement. In contrast, a query is typically slower than a query statement. Unlike queries, SysDA queries support insertion, deletion, and updates.
 
 The SysDa APIs include an extensive set of APIs for creating custom queries, but there are a smaller set of types that drive the primary query activities:
 + Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**
