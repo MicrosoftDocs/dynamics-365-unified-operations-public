@@ -27,7 +27,6 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Query using the SysDA API
@@ -46,12 +45,13 @@ The SysDa APIs include an extensive set of APIs for creating custom queries, but
 
 The following sections provide examples of each type of query, and the customizations they support. The examples use a table named TestTable that has two fields, a string field named **stringField** and an integer field named **intField**.
 
-## Select queries
+## Select query
 
-Select queries are built using **SysDaQueryObject**. To fetch the data, you generate a SQL string from the **SysDaQueryObject** object and pass the SQL string to an **SysDaSearchObject** object. You use a **SysDaSearchStatement** object to interate over the results in the **SysDaSearchObject** object.
+You build a select query by configuring a **SysDaQueryObject** object. After you biuld the query, you fetch the data, by generating a SQL string from the **SysDaQueryObject** object and passing the SQL string to an **SysDaSearchObject** object. You use a **SysDaSearchStatement** object to interate over the results in the **SysDaSearchObject** object.
 
 
 ```X++
+// Finds all rows where intField <= 5.
 private static void Query()
 {
     // The table buffer that will hold the result.
@@ -65,12 +65,12 @@ private static void Query()
         .add(fieldStr(TestTable, intField))
         .add(fieldStr(TestTable, stringField));
 
-    // Add a where clause to include the first 5 records.
+    // Add a where clause to include rows where intField is <= 5.
     qe.WhereClause(new SysDaLessThanOrEqualsExpression(
         new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
         new SysDaValueExpression(5)));
 
-    // Order the results by the integer field.
+    // Order the results by the intField.
     qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
 
     // The query is now been built. Use it to fetch data.
@@ -86,9 +86,9 @@ private static void Query()
 }
 ```
 
-## Update queries
+## Update query
 
-Update queries are built using **SysDaUpdateObject**. To update data, you pass a **SysDaUpdateObject** object to the **execute** method of a **SysDaUpdateStatement** object. The **execute** method must be wrapped in `ttsbegin` and `ttscommit` statements.
+You build an update query by configuring an **SysDaUpdateObject** object. To update data, you pass a **SysDaUpdateObject** object to the **execute** method of a **SysDaUpdateStatement** object. The **execute** method must be wrapped in `ttsbegin` and `ttscommit` statements.
 
 ```X++
 // Updates stringField to "Updated Value" for all rows where intField = 50.
