@@ -41,7 +41,7 @@ The SysDa APIs include an extensive set of APIs for creating custom queries, but
 + Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**
 + Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
 + Insert: **SysDaInsertObject** and **SysDaInsertStatement**
-+ Delete: **SysDaQueryObject** and **SysDaDeleteStatement**
++ Delete: **SysDaQueryObject**, **SysDaDeleteObject** and **SysDaDeleteStatement**
 
 The following sections provide examples of each type of query, and the customizations they support. The examples use a table named TestTable that has two fields, a string field named **stringField** and an integer field named **intField**.
 
