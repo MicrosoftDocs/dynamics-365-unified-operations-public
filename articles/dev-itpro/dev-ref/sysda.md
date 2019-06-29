@@ -47,7 +47,11 @@ The following sections provide examples of each type of query, and the customiza
 
 ## Select query
 
-You build a select query by configuring a **SysDaQueryObject** object. After you biuld the query, you fetch the data, by generating a SQL string from the **SysDaQueryObject** object and passing the SQL string to an **SysDaSearchObject** object. You use a **SysDaSearchStatement** object to interate over the results in the **SysDaSearchObject** object.
+To run a select query:
+
++ Create and configure a **SysDaQueryObject** object. 
++ Create a **SysDaSearchObject** object, passing the **SysDaQueryObject** to the constructor. 
++ Iterate over the results of the query by passing the **SysDaSearchObject** to the **SysDaSearchStatement.next()** method.
 
 
 ```X++
