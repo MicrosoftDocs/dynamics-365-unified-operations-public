@@ -174,81 +174,30 @@ To run an delete query:
 + Create a **SysDaDeleteObject** object, passing the **SysDaQueryObject** to the constructor.
 + Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
 
-    /// <summary>
-    /// Shows the support for delete in the VEDAS
-    /// </summary>
-    private static void Delete()
-    {
-        TestTable target;
+```X++
+TestTable t;
 
-        var qe = new SysDaQueryObject(target);
+var qe = new SysDaQueryObject(t);
 
-        var s = qe.projection()
-            .add(fieldStr(TestTable, intField));
+var s = qe.projection()
+    .add(fieldStr(TestTable, intField));
 
-        // Get rid of all the even values.
-        qe.WhereClause(new SysDaEqualsExpression(
-                new SysDaModExpression(
-                        new SysDaFieldExpression(target, fieldStr(TestTable, intField)),
-                        new SysDaValueExpression(2)),
-                new SysDaValueExpression(0)));
+// Get rid of all the even values.
+qe.WhereClause(new SysDaEqualsExpression(
+    new SysDaModExpression(
+        new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
+        new SysDaValueExpression(2)),
+        new SysDaValueExpression(0)));
 
-        var delobj =  new SysDaDeleteObject(qe);
-        var ds = new SysDaDeleteStatement();
+var ds = new SysDaDeleteStatement();
+var delobj =  new SysDaDeleteObject(qe);
 
-        var r = delobj.toString();
+ttsbegin;
+    ds.executeQuery(delobj);
+ttscommit;
 
-
-        ttsbegin;
-        ds.executeQuery(delobj);
-        ttscommit;
-
-
-    }
-
-
-## More code
-
+info("Number of rows after deletion: " + any2Str(t.RowCount()));
 ```
-class VEDASDemo
-{
-    private static void GenerateData()
-    {
-        TestTable t;
-
-
-        ttsbegin;
-        delete_from t;
-        for (int i = 1; i < 100; i++)
-        {
-            t.intField = i;
-            t.stringField = "Value is " + int2Str(i);
-            t.insert();
-        }
-        ttscommit;
-    }
-
-    /// <summary>
-    /// Demo of the VEDAS
-    /// </summary>
-    /// <param name = "a"></param>
-    public static void Main(Args a)
-    {
-        VEDASDemo::GenerateData();
-
-
-        VEDASDemo::Query();
-        VEDASDemo::Update();
-        VEDASDemo::Insert();
-        VEDASDemo::Delete();
-    }
-```
-
-## Projection
-
-## Execution
-
-
 
 ## Clauses
 
@@ -260,10 +209,3 @@ SysDa queries support several clauses:
 + `joinClause` with `joinClauseKind`
 + `joinedQuery`
 + `settingClause`
-
-
-
-
-
-
-
