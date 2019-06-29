@@ -77,9 +77,6 @@ private static void Query()
     // Order the results by the intField.
     qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
 
-    // The query is now been built. Use it to fetch data.
-    var sql = qe.toString();
-
     var so = new SysDaSearchObject(qe);
     var ss = new SysDaSearchStatement();
 
@@ -133,9 +130,9 @@ private static void Update()
 
 To run an insert query:
 
-+ Create and configure a **SysDaInsertObject** to specify which fields are updated during the insertion.
-+ Create and configure a **SysDaQueryObject** that specifies the source of the rows to insert. The order of the fields in  **SysDaQueryObject.projection()** must match the order of the fields in the **SysDaInsertObject.fields()**.
-+ Assign the **SysDaQueryObject** to the **SysDaInsertObject**.
++ Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.
++ Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert. The order of the fields in  **SysDaQueryObject.projection()** must match the order of the fields in the **SysDaInsertObject.fields()**.
++ Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.
 + Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
 
 ```X++
@@ -149,7 +146,7 @@ private static void Insert()
         .add(fieldStr(TestTable, stringField))
         .add(fieldStr(TestTable, intField));
 
-    //
+    // Retrieve the data to insert from the LanguageTable.
     LanguageTable source;
     var qe = new SysDaQueryObject(source);
 
@@ -164,10 +161,16 @@ private static void Insert()
     // Assign the query to the insert statement.
     insertObject.query(qe);
 
-    var istmt = new SysDaInsertStatement();
+    var insertStmt = new SysDaInsertStatement();
     ttsbegin;
-    istmt.executeQuery(io);
+    insertStmt.executeQuery(insertObject);
     ttscommit;
+    
+    // Verify the results of the insert query.
+    TestTable t1;
+    select * from t1 where t1.stringField == "en-us";
+    // Prints 40.
+    info(t1.intField); 
 }
 ```
 
