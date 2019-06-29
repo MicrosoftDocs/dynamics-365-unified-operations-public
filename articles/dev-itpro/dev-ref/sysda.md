@@ -129,45 +129,47 @@ private static void Update()
 }
 ```
 
-## Insert queries
+## Insert query
 
-    /// <summary>
-    /// Demonstrates insert statements using the VEDAS. In this test a
-    /// literal value is inserted into the target, along with a field
-    /// value.
-    /// </summary>
-    private static void Insert()
-    {
-        TestTable target;
-        var io = new SysDaInsertObject(target);
-        io.fields()
-            .add(fieldStr(TestTable, stringField))
-            .add(fieldStr(TestTable, intField));
-        
-        LanguageTable source;
-        var qe = new SysDaQueryObject(source);
+To run an insert query:
 
++ Create and configure a **SysDaInsertObject** to specify which fields are updated during the insertion.
++ Create and configure a **SysDaQueryObject** that specifies the source of the rows to insert. The order of the fields in  **SysDaQueryObject.projection()** must match the order of the fields in the **SysDaInsertObject.fields()**.
++ Assign the **SysDaQueryObject** to the **SysDaInsertObject**.
++ Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
 
-        var s1 = qe.projection()
-            .Add(fieldStr(LanguageTable, LanguageId))
-            .AddValue(40);
+```X++
+private static void Insert()
+{
+    TestTable t;
 
+    // Specify the fields in the new row.
+    var insertObject = new SysDaInsertObject(t);
+    insertObject.fields()
+        .add(fieldStr(TestTable, stringField))
+        .add(fieldStr(TestTable, intField));
 
-        qe.WhereClause(new SysDaEqualsExpression(
-                        new SysDaFieldExpression(source, fieldStr(LanguageTable, LanguageId)),
-                        new SysDaValueExpression("en-us")));
+    //
+    LanguageTable source;
+    var qe = new SysDaQueryObject(source);
 
+    var s1 = qe.projection()
+        .Add(fieldStr(LanguageTable, LanguageId))
+        .AddValue(40);
 
-        // Assign the query to the insert statement.
-        io.query(qe);
+    qe.WhereClause(new SysDaEqualsExpression(
+                    new SysDaFieldExpression(source, fieldStr(LanguageTable, LanguageId)),
+                    new SysDaValueExpression("en-us")));
 
+    // Assign the query to the insert statement.
+    insertObject.query(qe);
 
-        var istmt = new SysDaInsertStatement();
-        ttsbegin;
-        istmt.executeQuery(Io);
-        ttscommit;
-    }
-
+    var istmt = new SysDaInsertStatement();
+    ttsbegin;
+    istmt.executeQuery(io);
+    ttscommit;
+}
+```
 
 
 ## Delete queries
