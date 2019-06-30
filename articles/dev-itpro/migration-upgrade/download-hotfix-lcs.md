@@ -58,12 +58,12 @@ To view available updates:
 Based on your product and version, you will have difference update options from Lifecycle Services (LCS).  
 
 ### Dynamics 365 for Retail 
-- Application version 8.0 and lower  - There will be a single tile that is a cumulative combined binary update of all the application and platform changes.
+- **Application version 8.0 and lower**  - There will be a single tile that is a cumulative combined binary update of all the application and platform changes.
 
-- Application version 8.1 and higher - Same update options as Dynamics 365 for Finance and Operations with v8.1 and higher that is described below.
+- **Application version 8.1 and higher** - Same update options as Dynamics 365 for Finance and Operations with v8.1 and higher that is described below.
 
 ### Dynamics 365 for Finance and Operations
-- Application version 8.1 and higher - All update for v8.1 and higher will be a cumulative combined binary update of all of the application and platform updates.  There will be no granular X++ updates starting with this release.  
+- **Application version 8.1 and higher** - All update for v8.1 and higher will be a cumulative combined binary update of all of the application and platform updates.  There will be no granular X++ updates starting with this release.  
 
   Base on your environment version and the [service update availability](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases), you will have the option to choose the updates available to your environment.  Each update option is associated with a version number and a build number.  
 
@@ -75,7 +75,7 @@ Based on your product and version, you will have difference update options from 
    | Service update     | <ul><li>Service update is the version currently automatically applied to customer environments based on the LCS project update settings.</li>  <li>Service update is a cumulative roll-up build that contains the new features, functionality, and related quality update generally available.</li></ul> | <ul><li>Service update is available if your environment has not been updated to the current service update version available for auto-update.</li> <li>Only the designated sandbox or production environment will be auto updated if you have configured the update settings for the LCS project, but you can manually apply the current service update version to other sandbox environments or your cloud hosted environments.</li></ul> |
    | Upcoming service update | <ul><li>Upcoming service update is the latest version generally available for self-update.</li> <li>Upcoming service update is a cumulative roll-up build that contains the new features, functionality, and related quality update generally available.</li></ul> | <ul><li>Upcoming service update will be made generally available for self-deployment approximately 2 weeks prior to Microsoft start automatically applying this version based on your update settings for the LCS project.</li></ul>|
 
-- Application version 7.x or 8.0 with Platform update 4 or higher - this release will still have the granular X++ updates. Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the Platform binary updates tile is available to provide the platform updates as a cumulative update.
+- **Application version 7.x or 8.0 with Platform update 4 or higher** - this release will still have the granular X++ updates. Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the Platform binary updates tile is available to provide the platform updates as a cumulative update.
  
    For customers that are on this combination, you will see all the 4 tiles - 
    1. **All X++ updates** - This tile shows all the granular X++ updates released by Microsoft. 
@@ -86,7 +86,7 @@ Based on your product and version, you will have difference update options from 
         
    4. **Platform binary updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
 
-- Application version 7.x with Platform update 3 or lower
+- **Application version 7.x with Platform update 3 or lower** - 
    For customers that are on this combination, you will see 3 tiles - All X++ updates, Critical X++ updates, and All binary updates. Because this release platform can still be overlayered, there is no Platform binary updates tile.
    > [!NOTE]
     > If you are on this release, you need to upgrade as soon as possible. 
