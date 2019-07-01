@@ -5,7 +5,7 @@ title: Set up master planning
 description: This topic describes various important strategies and parameters that are used to set up master planning.
 author: t-benebo
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -232,4 +232,4 @@ Lead time + Negative days + Current date – Requirement date
 
 The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that it will include the individual product lead time, to reuse existing orders and avoid creating new planned orders that will end up with a later day, due to delays caused by lead time. 
 
-For more information, see [Negative days and dynamic negative days](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+For more information, see [Negative days and dynamic negative days](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
