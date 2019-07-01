@@ -90,6 +90,6 @@ This task guide will show you how to set up the parameters for write-offs and th
 2. Select a customer account. For example, select US-001 (Contoso Retail San Diego).
 3. On the **Action Pane**, click **Collect**.
 4. Click **Write off**.
-5. Click **OK*.
+5. Click **OK**.
 6. Close the page.
 
