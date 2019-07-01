@@ -95,9 +95,7 @@ Based on your product and version, you will have difference update options from 
 ## Download binary updates
 
 1. Select any of the binary update option, including Quality update, Service update, All binary updates, and Platform binary updates to view the combined list of application and platform binary updates. 
-
-   ![Binary tiles](./media/BinaryUpdateTiles.jpg)
-
+  
 2. On the **Binary updates** page, select **Save package**.
 
    ![Save Binary Package](./media/ReviewAndSaveBinaryPackage.jpg)
