@@ -48,20 +48,19 @@ This task guide steps through creating an account structure. The steps use demo 
 13. In the **through** field, type a value. For example, 699999.  
 14. In the **Allowed value details** section, click **Apply**.
 15. Repeat step 10 to 15 as needed.  
-24. In the **Allowed value details** section, click **Add new criteria**.
-25. In the Operator field, select an option, such as is between and includes.
-26. In the **Value** field, type a value. For example, 033.  
-27. In the **through** field, type a value. For example, 034.  
-28. Click **Apply**.
-29. In the grid, select the segment to edit the allowed values. For example, Cost Center.  
-30. In the **CostCenter field**, type a value. For example, 007..021.  
-31. In the **Segments and allowed values**, click **Add**.
-32. In the **MainAccount*8 field, type a value.
-    * For example, 600000..699999  
-33. In the grid, select the segment to edit the allowed values. For example, Department.  
-34. In the Department field, type a value. For example, 032.  
-35. In the CostCenter field, type a value. For example, 086.  
-36. On the **Action pane**, click **Validate**.
-37. On the **Action pane**, click **Activate**.
-38. Click **Activate**.
+16. In the **Allowed value details** section, click **Add new criteria**.
+17. In the Operator field, select an option, such as is between and includes.
+18. In the **Value** field, type a value. For example, 033.  
+19. In the **through** field, type a value. For example, 034.  
+20. Click **Apply**.
+21. In the grid, select the segment to edit the allowed values. For example, Cost Center.  
+22. In the **CostCenter field**, type a value. For example, 007..021.  
+23. In the **Segments and allowed values**, click **Add**.
+24. In the **MainAccount** field, type a value. For example, 600000..699999  
+25. In the grid, select the segment to edit the allowed values. For example, Department.  
+26. In the Department field, type a value. For example, 032.  
+27. In the CostCenter field, type a value. For example, 086.  
+28. On the **Action pane**, click **Validate**.
+29. On the **Action pane**, click **Activate**.
+30. Click **Activate**.
 
