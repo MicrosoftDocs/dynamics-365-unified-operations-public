@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 # Consume Business events with Microsoft Flow
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 The objective of this lab is to provide guided steps of how to configure and
 consume a Dynamics 365 Finance and Operation Business Event from a Microsoft Flow Endpoint .
 
