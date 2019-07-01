@@ -51,35 +51,35 @@ Exercise 1: Create a new Microsoft Flow
 
 3.  Select **New \> Create from blank**
 
-    <img src="../media/BEF-Howto-Flow-01.png" width="50%">
+    <img src="../../media/BEF-Howto-Flow-01.png" width="50%">
 
 4.  Search for **Dynamics 365 for Finance and Operations** and **select** the connector.
 
-     <img src="../media/BEF-Howto-Flow-02.png" width="50%">
+     <img src="../../media/BEF-Howto-Flow-02.png" width="50%">
      
 5.  You will notice a new trigger for Finance and Operations called “**When a
     Business Event occurs**”. Select it.
 
-    <img src="../media/BEF-Howto-Flow-03.png" width="50%">
+    <img src="../../media/BEF-Howto-Flow-03.png" width="50%">
 
 6.  Then **select** your environment instance, Category, Event Name and Legal
     entity.
 
-    <img src="../media/BEF-Howto-Flow-04.png" width="50%">
+    <img src="../../media/BEF-Howto-Flow-04.png" width="50%">
 
 7.  **Select New Step** button to add a new action:
 
-    <img src="../media/BEF-Howto-Flow-05.png" width="20%">
+    <img src="../../media/BEF-Howto-Flow-05.png" width="20%">
 
 8.  **Search** for **Parse Json** data operation. This step is needed to be able
     to parse our message with the schema of our data contract provided by F&O.
 
-    <img src="../media/BEF-Howto-Flow-06.png" width="50%">
+    <img src="../../media/BEF-Howto-Flow-06.png" width="50%">
 
 9.  **Select** the content field of “**Parse Json**” action then the **Body**
     output from the previous step should appear as an option. Select **Body**.
 
-    <img src="../media/BEF-Howto-Flow-07.png" width="50%">
+    <img src="../../media/BEF-Howto-Flow-07.png" width="50%">
 
 10. Now we need to type in the schema of the contract received from F&O.
     However, F&O provides only a sample payload instead. Hence, we can use
@@ -88,12 +88,12 @@ Exercise 1: Create a new Microsoft Flow
     example) and **click on download Schema** link. This will download a text
     file. **Open** the text file and **copy** the content.
 
-    <img src="../media/BEF-Howto-Flow-08.png" width="50%">
+    <img src="../../media/BEF-Howto-Flow-08.png" width="50%">
 
 11. **Go Back** to Microsoft Flow **click** on “**Use sample payload to generate
     schema**” link. Then **past** your text file content and click **Done**
 
-    <img src="../media/BEF-Howto-Flow-09.png" width="70%">
+    <img src="../../media/BEF-Howto-Flow-09.png" width="70%">
 
 12. Depending on the quality of your sample payload, your generator will note
     recognize an Integer from a real especially if the real is provided as a
@@ -101,18 +101,18 @@ Exercise 1: Create a new Microsoft Flow
     if you need to change an “integer” filed into “number”. (in Json a “number”
     data type means real).
 
-    <img src="../media/BEF-Howto-Flow-10.png" width="100%">
+    <img src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
 13.  Then choose another final action to consume the business event content. For
     instance we can send an email (or posting a text message into Teams) to
     notify with customer payment details. **Search** for **send email** action,
     then login to your Office365 account.
 
-   <img src="../media/BEF-Howto-Flow-11.png" width="70%">
+   <img src="../../media/BEF-Howto-Flow-11.png" width="70%">
 
 14.  Then fill-in the message with the required fields.
 
-   <img src="../media/BEF-Howto-Flow-12.png" width="70%">
+   <img src="../../media/BEF-Howto-Flow-12.png" width="70%">
 
 15.  Then **Save** Flow.
 
@@ -137,12 +137,12 @@ the endpoint has been correctly configured then triggering an event.
 6.  Then Verify that a new Endpoint has been created with a GUID appended in the
     name.
 
-    <img src="../media/BEF-Howto-Flow-13.png" width="100%">
+    <img src="../../media/BEF-Howto-Flow-13.png" width="100%">
 
 7.  If you check the **Active events** tab you can also verify that “**Payment
     Posted**” is activated for GBSI
 
-    <img src="../media/BEF-Howto-Flow-14.png" width="100%">
+    <img src="../../media/BEF-Howto-Flow-14.png" width="100%">
 
 8.  Then final step is to **trigger the Business Event** of a customer payment
     posted and check whether the Flow runs and whether you receive an email with
