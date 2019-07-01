@@ -39,7 +39,7 @@ Microsoft uses service updates to update your configured sandbox and production 
 
 Here are the different types of notifications that you will receive:
 
-- **Notification when an update is made available:** Microsoft will surface a notification in your implementation projects' action center when a new release is made generally available. At that time, you have the option to save that update to your projects' asset library if you want to apply this update to your environments before Microsoft does an auto-update. When Microsoft does an auto-update, we save a copy of the update on your projects' asset library as well. 
+- **Notification when an update is made available:** When a new release is made generally available, Microsoft surfaces a notification in your implementation projects' action center. You can then save that update in your projects' asset library, if you want to apply the update to your environments before Microsoft does an automatic update. When Microsoft does an automatic update, it also saves a copy of the update in your projects' asset library. 
 - **Notification that is sent five days before the update:** Microsoft notifies you five days before it updates your environment. After you've configured your update cadence, you will receive notifications about upcoming updates five days before they occur. These notifications take three forms:
 
     - **Email notification:** Project owners, environment managers, and users who are listed as additional stakeholders for an environment are notified by email about the upcoming update.
