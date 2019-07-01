@@ -108,46 +108,52 @@ This procedure shows you how to enable a quality management process where incomi
 13. Close the page.
 
 ## Create a test group
-1. Go to Inventory management > Setup > Quality control > Test groups.
-2. Click New.
-3. In the Test group field, type a value.
-    * Give the Test group a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it’s to be used with a quality group that selects items starting with “T”, you could call it “T-item tests”.  
-4. In the Description field, type a value.
-5. In the Item sampling field, select the item sampling line that you created before.
+1. Go to **Inventory management > Setup > Quality control > Test groups**.
+2. Click **New**.
+3. In the **Test group** field, type a value.
+    
+    Give the **Test group** a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it’s to be used with a quality group that selects items starting with “T”, you could call it “T-item tests”.  
+4. In the **Description** field, type a value.
+5. In the **Item sampling** field, select the item sampling line that you created before.
 6. In the list, find and select the desired record.
-7. Click Add.
-8. In the Sequence number field, enter a number.
-9. In the Test field, select the test that you created earlier.
+7. Click **Add**.
+8. In the **Sequence number** field, enter a number.
+9. In the **Test** field, select the test that you created earlier.
 10. In the list, find and select the desired record.
-11. Click the Test tab.
-12. In the Variable field, select the test variable that you created before
+11. Click the **Test** tab.
+12. In the **Variable** field, select the test variable that you created before
 13. In the list, find and select the desired record.
-14. In the Default outcome field, click the drop-down button to open the lookup.
+14. In the **Default outcome** field, click the drop-down button to open the lookup.
 15. In the list, click the link in the selected row.
-16. Click Save.
+16. Click **Save**.
 17. Close the page.
 
 ## Define when quality orders will be created
-1. Go to Inventory management > Setup > Quality control > Quality associations.
-2. Click New.
-3. In the Reference type field, select an option.
-4. In the Item code field, select 'Group'.
-    * In this example, we’ll select "Group" and use the quality group we created before. You could also set this to "Table" to specify the items manually, or select "All" to add all items to the quality order.  
-5. In the Item field, select the quality group that you created before.
-    * The options available in the Item field depend on what you set in the Item code field.  
+1. Go to **Inventory management > Setup > Quality control > Quality associations**.
+2. Click **New**.
+3. In the **Reference type** field, select an option.
+4. In the **Item code** field, select 'Group'.
+    
+    In this example, we’ll select "Group" and use the quality group we created before. You could also set this to "Table" to specify the items manually, or select "All" to add all items to the quality order.  
+5. In the **Item** field, select the quality group that you created before.
+    
+    The options available in the Item field depend on what you set in the Item code field.  
 6. In the list, find and select the desired record.
 7. Expand or collapse the Process section.
-8. In the Event type field, select an option.
-    * This is the event that triggers the test. The options available here depend on which process you selected in the Reference type field.  
-9. In the Execution field, select an option.
-10. Expand or collapse the Quality order process section.
-11. In the Event blocking field, click the drop-down button to open the lookup.
-    * This field shows the list of processes that it’s possible to block if the quality order is still open. The options depend on what you selected in the Event type field.  
+8. In the **Event type** field, select an option.
+    
+    This is the event that triggers the test. The options available here depend on which process you selected in the Reference type field.  
+9. In the **Execution** field, select an option.
+10. Expand or collapse the **Quality order process** section.
+11. In the **Event blocking** field, click the drop-down button to open the lookup.
+    
+    This field shows the list of processes that it’s possible to block if the quality order is still open. The options depend on what you selected in the Event type field.  
 12. In the list, click the link in the selected row.
-    * This will be depending on the previous selected values. Select if the following processes must be blocked while having open quality orders linked to a source document line.  
-13. Expand or collapse the Specifications section.
-14. In the Test group field, select the test group that you created before.
+    
+    This will be depending on the previous selected values. Select if the following processes must be blocked while having open quality orders linked to a source document line.  
+13. Expand or collapse the **Specifications** section.
+14. In the **Test group** field, select the test group that you created before.
 15. In the list, find and select the desired record.
-16. Click Save.
+16. Click **Save**.
 17. Close the page.
 
