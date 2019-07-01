@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 ---
 
-# Microsoft FastTrack for Finance and Operations
+# Microsoft FastTrack for Finance and Operations#s
 
 [!include [banner](../includes/banner.md)]
 
