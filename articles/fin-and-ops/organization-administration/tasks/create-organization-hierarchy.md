@@ -5,7 +5,7 @@ title: Create an organization hierarchy
 description: Use the following procedure to create an organizational hierarchy. 
 author: sericks007
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -42,21 +42,24 @@ The demo data company used to create this procedure is USMF.
 
 
 ## Create a hierarchy
-1. Go to Organization administration > Organizations > Organization hierarchies.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Assign purpose.
+1. Go to **Navigation pane > Modules > Organization administration > Organizations > Organization hierarchies**.
+2. On the **Action pane**, click **New**.
+3. In the **Name** field, type a value.
+4. In the **Purpose** section, click **Assign purpose**.
 5. In the list, find and select the desired record.
-    * Select a purpose to assign to your organization hierarchy.  
-6. Click Add.
+    
+    Select a purpose to assign to your organization hierarchy.  
+6. In the **Assigned hierarchies** sectiom, click **Add**.
 7. In the list, mark the selected row.
-    * Find the hierarchy you just created.  
-8. Click OK.
+    
+    Find the hierarchy you just created.  
+8. Click **OK**.
 
 ## Add organizations to the hierarchy
 1. In the list, find and select the desired record.
-    * Select your hierarchy.  
-2. Click View hierarchy.
-    * Add organizations, as necessary.  
-    * To add an organization, click Edit and then Insert to add the organization.     When you are done making changes you can save a draft and/or publish the changes.  
+    
+    Select your hierarchy.  
+2. In the **Assigned hierarchies** section, click **View hierarchy**.
+    - Add organizations, as necessary.  
+    - To add an organization, click **Edit** and then **Insert** to add the organization. When you are done making changes you can **Save** a draft and/or **Publish** the changes.  
 
