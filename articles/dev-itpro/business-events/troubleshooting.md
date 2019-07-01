@@ -5,7 +5,7 @@ title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/24/2019
+ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,7 +75,6 @@ In other situations, when you don’t see certain business events, doing a manua
 Typically this indicates that the business events batch processor is not running. As a result, the business events are not getting processed to be sent out to the endpoints. The batch processor can be started from **System parameters > Business events - Preview** tab. The job must be scheduled to run in batch, in a recurring manner, to ensure continued processing of business events.
 
 **0 is an invalid bundle size**
-
-This occurs when running the business events batch processor (applies to Platform updates 24, 25, 26, and 27).
-
-This refers to an update issue as a result of some of the business events parameters not being set correctly. On a non-production environment, you must update the **BusinessEventsParamters** table to update Enabled =1; BundleSize = 50; EndPointsPerEvent = 10. After this update, restart the batch service to pick up the latest values. This issue has been fixed in Platform update 28.
+**Business events are not getting triggered**
+**Microsoft Flow is not getting triggered by business events**
+One of the reasons why this issue can occur is if certain parameters are not set as expected in the **BusinessEventsParameters** table. This is due to an update in which some of the business events parameters not being set correctly. In a non-production environment, you must update the **BusinessEventsParamters** table so that Enabled =1; ProcessorThreads = 4; EndPointRetryCount = 3; BundleSize = 50; EndPointsPerEvent = 10. After this update, restart the batch service and perform IISreset to pick up the latest values. For production environments, please log a support request with Microsoft to get these updated.
