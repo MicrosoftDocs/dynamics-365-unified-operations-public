@@ -5,7 +5,7 @@ title: Microsoft FastTrack for Finance and Operations
 description: This topic provides an overview of Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations. FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster.
 author: margoc
 manager: AnnBe
-ms.date: 08/02/2018
+ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 ---
 
-# Microsoft FastTrack for Finance and Operations#s
+# Microsoft FastTrack for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
