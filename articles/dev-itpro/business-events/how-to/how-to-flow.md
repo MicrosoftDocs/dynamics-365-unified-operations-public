@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: "How-To Consume Business events with Microsoft Flow"
+title: How-To Consume Business events with Microsoft Flow
 description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
