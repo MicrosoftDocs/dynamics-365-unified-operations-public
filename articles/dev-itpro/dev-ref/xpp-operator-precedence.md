@@ -48,7 +48,7 @@ The operators in the following table are listed in precedence order. The higher 
 | multiplicative, shift, bitwise AND, bitwise exclusive OR |    \* / % DIV &lt;&lt; &gt;&gt; & ^    |
 |              additive, bitwise inclusive OR              |                  + -                   |
 |                   relational, equality                   | &lt; &lt;= == != &gt; &gt;= like as is |
-|               logical operators (AND, OR)                |                   &&                   |
+|               logical operators (AND, OR)                |            && &#124;&#124;             |
 |                       conditional                        |                  ? :                   |
 
 Operators on the same line have equal precedence. If there is more than one of these operators in an expression, the expression is evaluated from left to right unless assignment operators are used (these are evaluated from right to left). For example, && (logical AND) and || (logical OR) have the same precedence and are evaluated from left to right. This means that:0&&0||1 == 1, and 1||0&&0 == 0
