@@ -3,7 +3,7 @@
 
 title: "How-To Consume Business events with Microsoft Flow"
 description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
-author: Imad-Benbouzid
+author: ibenbouzid
 manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
