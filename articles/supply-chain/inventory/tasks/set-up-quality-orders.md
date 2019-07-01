@@ -74,16 +74,18 @@ This procedure shows you how to enable a quality management process where incomi
 17. Close the page.
 
 ## Set up item sampling
-1. Go to Inventory management > Setup > Quality control > Item sampling.
-2. Click New.
-3. In the Item sampling field, type a value.
-4. In the Description field, type a value.
-5. In the Value field, enter a number.
-    * This value relates to the Quantity specification that’s selected in the adjacent field.  
-6. Expand or collapse the Process section.
-7. Select or clear the Full blocking check box.
-    * If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.  
-8. Click Save.
+1. Go to **Inventory management > Setup > Quality control > Item sampling**.
+2. Click **New**.
+3. In the **Item sampling** field, type a value.
+4. In the **Description** field, type a value.
+5. In the **Value** field, enter a number.
+    
+    This value relates to the Quantity specification that’s selected in the adjacent field.  
+6. Expand or collapse the **Process** section.
+7. Select or clear the **Full blocking** check box.
+    
+    If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.  
+8. Click **Save**.
 9. Close the page.
 
 ## Create a quality group
