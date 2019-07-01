@@ -5,7 +5,7 @@ title: Set up quality orders
 description: This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. 
 author: perlynne
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -34,40 +34,42 @@ This procedure shows you how to enable a quality management process where incomi
 
 
 ## Enable quality management
-1. Go to Inventory management > Setup > Inventory and warehouse management parameters.
-2. Click the Quality management tab.
-3. Set the Use quality management option to Yes.
-4. Click Report setup.
-    * In USMF, the report setup for quality management is already defined. If this wasn’t done, you’d add new lines here for the different report types, and select the type of document to be used for each report.  
+1. Go to **Navigation pane > Modules > Inventory management > Setup > Inventory and warehouse management parameters**.
+2. Click the **Quality management** tab.
+3. Set the **Use quality management option** to 'Yes'.
+4. Click **Report setup**.
+    
+    In USMF, the report setup for quality management is already defined. If this wasn’t done, you’d add new lines here for the different report types, and select the type of document to be used for each report.  
 5. Close the page.
 6. Close the page.
 
 ## Create a test
-1. Go to Inventory management > Setup > Quality control > Tests.
-2. Click New.
-3. In the Test field, type a value.
-4. In the Description field, type a value.
-5. In the Type field, select 'Option'.
-    * In this example, we'll select "Option" which will make it possible to assign the test results based on pre-defined values.  
-6. Click Save.
+1. Go to **Inventory management > Setup > Quality control > Tests**.
+2. Click **New**.
+3. In the **Test** field, type a value.
+4. In the **Description** field, type a value.
+5. In the **Type** field, select 'Option'.
+    
+    In this example, we'll select "Option" which will make it possible to assign the test results based on pre-defined values.  
+6. Click **Save**.
 7. Close the page.
 
 ## Create Test variables to define the way test results are recorded
-1. Go to Inventory management > Setup > Quality control > Test variables.
-2. Click New.
-3. In the Variable field, type a value.
-4. In the Description field, type a value.
-5. Click Save.
-6. Click Outcomes.
-7. Click New.
-8. In the Outcome field, type a value.
-9. In the Description field, type a value.
-10. In the Outcome status field, select 'Pass'.
-11. Click Save.
-12. Click New.
-13. In the Outcome field, type a value.
-14. In the Description field, type a value.
-15. Click Save.
+1. Go to **Inventory management > Setup > Quality control > Test variables**.
+2. Click **New**.
+3. In the **Variable** field, type a value.
+4. In the **Description** field, type a value.
+5. Click **Save**.
+6. Click **Outcomes**.
+7. Click **New**.
+8. In the **Outcome** field, type a value.
+9. In the **Description** field, type a value.
+10. In the **Outcome status** field, select 'Pass'.
+11. Click **Save**.
+12. Click **New**.
+13. In the **Outcome** field, type a value.
+14. In the **Description** field, type a value.
+15. Click **Save**.
 16. Close the page.
 17. Close the page.
 
@@ -85,20 +87,23 @@ This procedure shows you how to enable a quality management process where incomi
 9. Close the page.
 
 ## Create a quality group
-1. Go to Inventory management > Setup > Quality control > Quality groups.
-2. Click New.
-3. In the Quality group field, type a value.
-    * Use a descriptive name to help you identify which kind of items the group will contain (your sampling criteria).  
-4. In the Description field, type a value.
-5. Click Save.
-6. Click Add items.
-7. Select the Item number row
-    * In this example the filtering will be run based on  the item number.  
-8. In the Criteria field, type a value.
-    * For example, type T* to filter on the item numbers that start with T.  
-9. Click OK.
-10. Click OK.
-11. Click Item quality groups.
+1. Go to **Inventory management > Setup > Quality control > Quality groups**.
+2. Click **New**.
+3. In the **Quality group** field, type a value.
+    
+    Use a descriptive name to help you identify which kind of items the group will contain (your sampling criteria).  
+4. In the **Description** field, type a value.
+5. Click **Save**.
+6. Click **Add items**.
+7. Select the **Item number** row.
+    
+    In this example the filtering will be run based on  the item number.  
+8. In the **Criteria** field, type a value.
+    
+    For example, type T* to filter on the item numbers that start with T.  
+9. Click **OK**.
+10. Click **OK**.
+11. Click **Item quality groups**.
 12. Close the page.
 13. Close the page.
 
