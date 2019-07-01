@@ -51,7 +51,7 @@ Exercise 1: Create a new Microsoft Flow
 
 3.  Select **New \> Create from blank**
 
-    <img src="../../media/BEF-Howto-Flow-01.png" width="50%">
+    <img src="../../media/BEF-Howto-Flow-01.png" width="30%">
 
 4.  Search for **Dynamics 365 for Finance and Operations** and **select** the connector.
 
