@@ -31,9 +31,6 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include[banner](../includes/banner.md)]
 
-
-# Reconcile a bank account 
-
 When you receive a bank statement, you should periodically reconcile legal entity bank transactions with the transactions on the bank statement.
 
 You cannot reconcile a bank statement with a bank account if any of the checks or deposit slip payments that are listed on the statement currently have a status of **Pending cancellation**. After a reviewer posts or rejects a check reversal or deposit slip payment cancellation, the status is no longer **Pending cancellation**, and you can reconcile the bank account.
