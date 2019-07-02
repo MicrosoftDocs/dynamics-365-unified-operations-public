@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure email settings in Microsoft Dynamics 365 for Talent - Attract
-description: Configure settings for emails sent by Microsoft Dynamcis 365 for Talent - Attract.
+description: This topic explains how to configure settings for email that is sent by Microsoft Dynamcis 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -30,69 +30,65 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Configure email settings
+# Configure email settings in Microsoft Dynamics 365 for Talent - Attract
 [!include[banner](../includes/banner.md)]
 
-Your brand establishes trust and helps you to build a relationship with candidates before they even apply for your positions. Positive brand perception attracts top talent and increases loyalty with existing employees. With Microsoft Dynamics 365 for Talent: Attract, you can configure emails to reflect your company's brand to provide a consistent experience for job candidates as they progress through the application process. Attract lets you:
+Your brand establishes trust and helps you build a relationship with candidates before they even apply for your positions. Positive brand perception attracts top talent and increases the loyalty of existing employees. Microsoft Dynamics 365 for Talent: Attract lets you configure emails so that they reflect your company's brand. Therefore, you can provide a consistent experience to job candidates as they progress through the application process.
 
-- Configure email settings to use your company's Exchange email service account. That way, candidates know your emails are coming from your company. For example, instead of candidates receiving emails from contoso@microsoft.com, you can configure your emails to be from recruiting@contoso.com.
+Attract lets you perform these actions:
 
-- Create consistent branding for all your email communications by setting the global header and footer for email templates. 
+- Configure email settings so that your company's Microsoft Exchange email service account is used. In this way, candidates know that the emails are coming from your company. For example, you can configure your settings so that candidates receive emails from `recruiting@contoso.com` instead of `contoso@microsoft.com`.
+- Create consistent branding for all your email communications by setting a global header and footer for email templates. 
 
 > [!NOTE]
-> You need the Comprehensive hiring add-on to configure Attract to use your company's email service account for sending emails.
+> To configure Attract so that it uses your company's email service account to send email, you need the Comprehensive hiring add-on.
 
 ## Connect an email service account
 
-You can connect your company account to create a branded email experience for your job candidates. If you don't connect your company account, Attract will use the default Microsoft-branded email service account.
+By connecting your company's email service account, you can create a branded email experience for your job candidates. If you don't connect your company account, Attract uses the default Microsoft-branded email service account.
 
-1. Select **Settings** (the gear symbol in the upper-right corner) and then select **Admin center**.
-
+1. Select **Settings** (the gear symbol in the upper-right corner), and then select **Admin center**.
 2. On the **Email settings** tab, under **Email service accounts**, select **Connect a company account**.
 
-   ![Connect a company email service account in Attract](./media/attract-admin-email-service-accounts.png)
+    ![Connecting your company's email service account in Attract](./media/attract-admin-email-service-accounts.png)
 
-   For more information about creating a shared email account, see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/en-us/exchange/collaboration-exo/shared-mailboxes).
+    For more information about how to create a shared email account, see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes).
 
-3. In the Microsoft sign-in window, sign in with your corporate credentials.
+3. In the Microsoft sign-in window, sign in by using your corporate credentials.
+4. If you haven't yet set up an email service account, or if you want to add a new one, select **Add new service account**, and then enter your email information. If you've already set up the email service account that you want to use, select it.
 
-4. If you haven't yet set up an email service account, or if you want to add a new one, select **Add new service account** and enter your email information. If you already have an email service account set up, select the email service account you want to use.
-
-When your email service account is successfully configured, you'll see it listed under **Email service accounts**.
+When your email service account is successfully configured, you will see it listed under **Email service accounts**.
 
 ## Disconnect an email service account
 
-If you want to stop using your company's domain in email communications through Attract, you can disconnect an email account.
+If you want to stop using your company's domain in email communications through Attract, you can disconnect an email service account.
 
-1. Select **Settings** (the gear symbol in the upper-right corner) and then select **Admin center**.
-
-2. On the **Email settings** tab, under **Email service accounts**, select **More** (three dots) next to the email service account you want to disconnect.
-
+1. Select **Settings** (the gear symbol in the upper-right corner), and then select **Admin center**.
+2. On the **Email settings** tab, under **Email service accounts**, select the **More** button (three vertical dots) next to the email service account that you want to disconnect.
 3. Select **Disconnect email account**.
 
-   ![Disconnect your company's email service account](./media/attract-admin-disconnect-email-account.png)
+    ![Disconnecting your company's email service account](./media/attract-admin-disconnect-email-account.png)
 
-4. When prompted, select **Disconnect**.
+4. When you're prompted to confirm the operation, select **Disconnect**.
 
-   ![Confirm disconnecting your company's email service account](./media/attract-admin-email-confirm-disconnect.png)
+    ![Confirming disconnection of your company's email service account](./media/attract-admin-email-confirm-disconnect.png)
 
-If you don't connect a different email service account, emails sent from Attract will use the default Microsoft-branded email service.
+If you don't connect a different email service account, emails that are sent from Attract will use the default Microsoft-branded email service account.
 
 ## Configure email template settings
 
-You can upload an image with your company's logo and other information as a branded header for your emails, and provide links to your privacy policy and terms of use for your email footers.
+You can upload an image of your company's logo and other information as a branded header for your emails. You can also provide links to your privacy policy and terms of use in email footers.
 
 > [!NOTE]
-> You must comply with all applicable laws, including anti-spam regulations, of your country and of the country that governs the email recipient.
+> You must comply with all applicable laws of your country or region, and also the country or region that governs the email recipient. These laws include anti-spam regulations.
 
-1. Select **Settings** (the gear symbol in the upper-right corner) and then select **Admin center**.
+1. Select **Settings** (the gear symbol in the upper-right corner), and then select **Admin center**.
+2. On the **Email settings** tab, under **Email template settings**, drag the image that you want to use as your email header into the image box, or click in the image box to browse for the file. To replace an existing image, you must first select **Remove** next to it. The image must be a JPEG, JPG, PNG, or SVG file. The recommended size for images is between 25 and 800 pixels wide, and between 25 and 150 pixels high. The maximum file size for the header is 1 megabyte (MB).
 
-2. On the **Email settings** tab, under **Email template settings**, drag and drop an image to use as your email header, or click the image box to browse for the file. If you want to change an existing image, select **Remove** next to the image first. The image must be a JPEG, JPG, PNG, or SVG file. The recommended size for your image is between 25 and 800 pixels wide and between 25 and 150 pixels high. The maximum file size for the header is 1 MB.
+    ![Adding an image for your company's email header](./media/attract-admin-email-header.png)
 
-   ![Add an image for your company's email header](./media/attract-admin-email-header.png)
+3. Under **Your Privacy policy for communications**, provide a link to your company's privacy policy. Under **Your Terms and conditions for communication**, provide a link to your company's terms of use.
 
-3. Under **Your Privacy policy for communications**, provide a link to your company's privacy policy, and under **Your Terms and conditions for communication**, provide a link to your company's terms of use.
-
-   ![Add links to your company's privacy policy and terms of use for the email footer](./media/attract-admin-email-footer.png)
+    ![Adding links to your company's privacy policy and terms of use for the email footer](./media/attract-admin-email-footer.png)
 
 4. Select **Save** to save your email template settings.
