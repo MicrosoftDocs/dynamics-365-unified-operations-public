@@ -5,7 +5,7 @@ title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explans how to pause service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 05/10/2019
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,7 +48,7 @@ Only users (customers or partners) who are assigned to the **project owner** rol
 
 Staying current with service updates helps guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
 
-You can't use LCS to pause updates if you're three or more updates behind the latest update that Microsoft has released. For example, if you're on version 8.1 and later, and the latest update that Microsoft has released is version 10.0.0, customers who are on version 8.1.3, version 8.1.2, and version 8.1.1 **can** pause updates. However, customers who are on version 8.1.0 **can't** pause updates, because they are more than three updates behind. For customers who are on version 7.3, you can get only platform updates. For example, if the last platform update that Microsoft has released is Platform update 25, customers who are on Platform update 24, Platform update 23, and Platform update 22 **can** pause updates. However, if you are on Platform update 21, then you **can't** pause.
+You can't use LCS to pause updates if you're three or more updates behind the latest update that Microsoft has released. For example, if the latest update that Microsoft has released is version 10.0.0, customers who are on version 8.1.3, version 8.1.2, and version 8.1.1 **can** pause updates. However, customers who are on version 8.1.0 **can't** pause updates, because they are more than three updates behind. Customers who are on version 7.3 can get only platform updates. For example, if the last platform update that Microsoft has released is Platform update 25, customers who are on Platform update 24, Platform update 23, and Platform update 22 **can** pause updates. However, customers who are on Platform update 21 **can't** pause updates.
 
 ## What can I pause?
 
