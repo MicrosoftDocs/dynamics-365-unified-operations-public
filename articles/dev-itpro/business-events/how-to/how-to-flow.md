@@ -31,9 +31,9 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This topic provides steps detailing how to configure and consume a Dynamics 365 for Finance and Operations business event from a Microsoft Flow endpoint.
+This topic provides steps detailing how to configure and consume a Microsoft Dynamics 365 for Finance and Operations business event from a Microsoft Flow endpoint.
 
-This topic illustrates the following tasks:
+This topic shows how to perform the following tasks:
 
 -   Create a new Microsoft Flow.
 -   Trigger a business event.
@@ -42,7 +42,7 @@ This topic illustrates the following tasks:
 
 1.  Sign in to Microsoft Flow portal.
 
-2.  Select an existing environment where you have the permissions needed to create a flow resource - (default) environment is open to all company.
+2.  Select an existing environment where you have the permissions needed to create a flow resource. The default environment is open to all companies.
 
 3.  Select **New \> Create from blank**.
 
@@ -56,7 +56,7 @@ This topic illustrates the following tasks:
 
 7.  Select the **New Step** button to add a new action.
 
-8.  Search for the **Parse Json** data operation. This step is needed to be able to parse themessage with the schema of the data contract provided by Finance and Operations.
+8.  Search for the **Parse JSON** data operation. This step is needed to parse the message with the schema of the data contract provided by Finance and Operations.
 
     <img src="../../media/BEF-Howto-Flow-06.png" width="50%">
 
@@ -102,7 +102,7 @@ Microsoft Flow can configure Finance and Operations automatically for you. After
 
     <img src="../../media/BEF-Howto-Flow-13.png" width="100%">
 
-7.  If you check the **Active events** tab you can also verify that “**Payment Posted**” is activated for GBSI.
+7.  If you check the **Active events** tab you can also verify that “**Payment Posted**” is activated for legal entity GBSI.
 
     <img src="../../media/BEF-Howto-Flow-14.png" width="100%">
 
