@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to Broadbean directly from Attract. After you [create a job](./creating-jobs-attract.md), all you have to do is push a button to put your job in front of all the potential job candidates on Broadbean.
+Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs directly from Attract to Broadbean. After you [create a job](./creating-jobs-attract.md), all you have to do is click a button to put your job in front of all the potential job candidates on Broadbean.
 
-Posting jobs to Broadbean requires an appropriate Broadbean license. Broadbean offers a variety of products and plans. For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).
+Posting jobs to Broadbean requires an appropriate Broadbean license. Broadbean offers various products and plans. For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).
 
-If you're an admin who needs more information about configuring Broadbean integration with Attract, see [Enter settings for external job boards](./attract-admin-job-board-settings.md).
+If you're an admin who needs more information about how to configure Broadbean integration with Attract, see [Enter settings for external job boards](./attract-admin-job-board-settings.md).
 
 ## Post jobs to Broadbean
 
@@ -96,7 +96,7 @@ After Broadbean removes the job, the Broadbean item in Attract has a **Post Now*
 
 ### Troubleshoot job posting to Broadbean
 
-If you're having trouble posting a job to Broadbean, try these steps:
+If you're having trouble posting a job to Broadbean, try these steps.
 
 1. Verify that the Broadbean credentials that you entered in Attract are valid and correct.
 2. If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).
@@ -104,5 +104,6 @@ If you're having trouble posting a job to Broadbean, try these steps:
 
 ## See also
 
-[Create jobs](./creating-jobs-attract.md)<p></p>
+[Create jobs](./creating-jobs-attract.md)
+
 [Enter settings for external job boards](./attract-admin-job-board-settings.md)
