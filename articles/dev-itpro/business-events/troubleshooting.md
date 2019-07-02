@@ -77,4 +77,6 @@ Typically this indicates that the business events batch processor is not running
 **0 is an invalid bundle size**
 **Business events are not getting triggered**
 **Microsoft Flow is not getting triggered by business events**
+**Unable to configure business event becauseit has reached the limit of 0 configured endpoints **
+
 One of the reasons why this issue can occur is if certain parameters are not set as expected in the **BusinessEventsParameters** table. This is due to an update in which some of the business events parameters not being set correctly. In a non-production environment, you must update the **BusinessEventsParamters** table so that Enabled =1; ProcessorThreads = 4; EndPointRetryCount = 3; BundleSize = 50; EndPointsPerEvent = 10. After this update, restart the batch service and perform IISreset to pick up the latest values. For production environments, please log a support request with Microsoft to get these updated.
