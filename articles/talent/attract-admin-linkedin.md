@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up integration with LinkedIn for Microsoft Dynamics 365 for Talent - Attract
-description: Configure LinkedIn integration for Microsoft Dynamics 365 for Talent - Attract so you can easily post jobs to LinkedIn from Attract and so your recruiters can sync their recruiting information with a candidate's LinkedIn profile.
+title: Set up integration with LinkedIn for Attract
+description: This topic explains how to configure LinkedIn integration for Microsoft Dynamics 365 for Talent - Attract so that you can easily post jobs to LinkedIn from Attract, and so that your recruiters can sync their recruiting information with a candidate's LinkedIn profile.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/20/2019
@@ -30,100 +30,96 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Set up integration with LinkedIn
+# Set up integration with LinkedIn for Attract
 
 [!include[banner](../includes/banner.md)]
 
-Help your recruiters and hiring managers attract top talent by configuring LinkedIn integration with Microsoft Dynamics 365 for Talent: Attract. Attract allows you to post jobs directly to LinkedIn, the largest professional online network. Jobs posted to LinkedIn through Attract are Limited Listings, and are provided at no extra cost to your company. These listings are only available through LinkedIn software partners like Attract. They don't appear on the Careers panel on your company's LinkedIn page, because that requires a paid listing, but they display when potential candidates view all available jobs. Limited Listings also display in LinkedIn job searches.
+Help your recruiters and hiring managers attract top talent by configuring LinkedIn integration with Microsoft Dynamics 365 for Talent: Attract. Attract lets you post jobs directly to LinkedIn, the largest professional online network.
 
-Microsoft Dynamics 365 for Talent: Attract provides two ways to integrate with LinkedIn to help you source candidates from this popular career site:
+Jobs that you post to LinkedIn through Attract are Limited Listings and are provided at no extra cost to your company. These listings are available only through LinkedIn software partners such as Attract. They don't appear in the **Careers** panel on your company's LinkedIn page, because only paid listings appear there. However, they are shown when potential candidates view all available jobs. Limited Listings are also shown in LinkedIn job searches.
 
-- Post jobs from Attract to LinkedIn
-- Source candidates from LinkedIn to Attract
+Attract provides two ways to integrate with LinkedIn to help you source candidates from this popular career site:
 
-You configure both of these options on the **LinkedIn Integration** tab in the **Admin center**. (Click [here](https://attract.talent.dynamics.com/adminsettings) to go to the Admin center.)
+- Post jobs from Attract to LinkedIn.
+- Source candidates from LinkedIn to Attract.
+
+You configure both options on the **LinkedIn Integration** tab in the Admin center. To open the Admin center, go to <https://attract.talent.dynamics.com/adminsettings>.
 
 > [!NOTE]
-> You need the [Comprehensive hiring add-on] and [LinkedIn Recruiter licenses](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18) to be able to use LinkedIn Recruiter integration with Attract. For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md)
+> To use LinkedIn Recruiter integration with Attract, you need the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) and [LinkedIn Recruiter licenses](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). For more information, see [Which version of Attract?](./attract-comprehensive-hiring.md).
 
-If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md).
+If you're having trouble posting jobs to LinkedIn, see [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md).
 
-If you want information about other ways to post jobs to LinkedIn, see [LinkedIn FAQ](./attract-linkedin-faq.md).
+For information about other ways to post jobs to LinkedIn, see [LinkedIn FAQ](./attract-linkedin-faq.md).
 
 ## Configure job posting to LinkedIn
 
-Before you can post jobs from Attract to LinkedIn, you need a [LinkedIn Company ID](https://aka.ms/findID). Your LinkedIn Company ID is a string of numbers that uniquely identifies your company within LinkedIn. For more information, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://aka.ms/findID).
+Before you can post jobs from Attract to LinkedIn, you need a [LinkedIn Company ID](https://aka.ms/findID). Your LinkedIn Company ID is a string of numbers that uniquely identifies your company in LinkedIn. For more information, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://aka.ms/findID).
 
-Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day, so it can take up to 24 hours for your jobs to post to the site.
+Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day. Therefore, it can take up to 24 hours for your jobs to be posted to the site.
 
-Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs, so make sure you don't accidentally post any test jobs. 
+Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs. Therefore, make sure that you don't accidentally post any test jobs. 
 
-1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**, or click [here](https://attract.talent.dynamics.com/adminsettings).
-
+1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**. Alternatively, go to <https://attract.talent.dynamics.com/adminsettings>.
 2. Select the **LinkedIn Integration** tab.
+3. Under **Company name**, enter the name of your company, and under **Company ID**, enter your LinkedIn Company ID. Make sure that the company name matches your company's LinkedIn page. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
 
-3. Under **Company name**, enter the name of your company, and under **Company ID**, enter your LinkedIn Company ID. Make sure the **Company name** matches your company's LinkedIn page. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972). If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more). If you still have problems, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
+    If you must change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/office365/admin/manage/change-address-contact-and-more). If you still have issues, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
 
-5. Select **Save**.
+4. Select **Save**.
 
 ## Set up LinkedIn Recruiter with Attract 
 
-To allow recruiters to source jobs through LinkedIn Recruiter, you need to configure integration with LinkedIn Recruiter in Attract. To complete the configuration process, you must work with the user who is an admin on your organization's LinkedIn Recruiter contract.
+To allow recruiters to source jobs through LinkedIn Recruiter, you must configure integration with LinkedIn Recruiter in Attract. To complete the configuration process, you must work with the user who is an admin on your organization's LinkedIn Recruiter contract.
 
-1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**, or click [here](https://attract.talent.dynamics.com/adminsettings).
-
+1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**. Alternatively, go to <https://attract.talent.dynamics.com/adminsettings>.
 2. Select the **LinkedIn Integration** tab.
 
-[![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
+    [![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
-3.  Select **Connect** to start the setup, which will guide you through the LinkedIn sign-in process.
+3. Select **Connect** to start the setup. You will be guided through the LinkedIn sign-in process.
+4. If you have seats on multiple LinkedIn contracts, select the contract that you want to connect to the Attract system. If you have a seat on only one LinkedIn contract, you can skip this step.
+5. Under **Recruiter System Connect (RSC)**, select **Request**.
 
-4.  If you have seats on multiple LinkedIn contracts, select the contract that you would like to connect to the Attract system. If you have a seat on only one LinkedIn contract, you can skip this step.
+    [![Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
-5.  Under **Recruiter System Connect (RSC)**, select **Request**.
+6. The **Recruiter System Connect (RSC)** setting should now appear as **Partner ready**. If you see **Notify partner** on this page, wait a few seconds, select **Notify partner**, and then refresh the page. The setting should now appear as **Partner ready**.
 
-[![Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
+    [![Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
 
-6.  The **Recruiter System Connect (RSC)** setting should now show as **Partner ready**. If you see **Notify partner** on this page, wait a few seconds, click **Notify partner**, and then refresh the page. It should now show as **Partner ready**.
+7. To complete the following steps, you must have admin privileges on your LinkedIn Recruiter contract.
 
-[![Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
+    1. Sign in to LinkedIn by using your admin account, and then select **LinkedIn Recruiter** in the upper right. 
+    2. On the **More** menu at the top of the page, select **Admin Settings**, and then select the **ATS** tab.
+    3. To enable one-click export for just one contract, turn on **Contract Level access (for every seat on this contract**. To enable it for the whole company, turn on **Company Level access (for every contract in your company**.
 
-7. To complete the following steps, you need to have admin privileges on your LinkedIn Recruiter Contract.
+    [![Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)](./media/EnableRSC.png)
 
-    a.  Sign in to LinkedIn using your admin account and select **LinkedIn Recruiter** on the top right. 
+8. In the Attract Admin center, select the **LinkedIn integration** tab. The **Recruiter System Connect (RSC)** setting should now appear as **Enabled**.
 
-    b. On the **More** menu at the top of the screen, click **Admin Settings**, and then click the **ATS** tab.
-
-    c. To enable one-click export for just one contract, turn on **Contract Level access (for every seat on this contract**. If you want to enable it for the entire company, turn on **Company Level access (for every contract in your company**.
-
-[![Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)](./media/EnableRSC.png)
-
-9. In the Attract Admin center, select the **LinkedIn integration** tab. The **Recruiter System Connect (RSC)** setting should now display as **Enabled**.
-
-[![LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+    [![LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
 ## Set up Apply with LinkedIn in Attract
 
-You can allow candidates to apply to your jobs with their LinkedIn profiles. For more information about Apply with LinkedIn, see [The Power of LinkedIn Everywhere: Apply with LinkedIn](https://blog.linkedin.com/2011/07/24/apply-with-linkedin).
+You can allow candidates to apply to your jobs by using their LinkedIn profiles. For more information about Apply with LinkedIn, see [The Power of LinkedIn Everywhere: Apply with LinkedIn](https://blog.linkedin.com/2011/07/24/apply-with-linkedin).
 
-This feature is currently in preview. Make sure **Apply with LinkedIn** is enabled before following these steps. For more information about enabling preview features, see [Access preview features in Talent](./access-preview-feature.md).
+This feature is currently in preview. Before you follow these steps, make sure that Apply with LinkedIn is enabled. For more information about how to enable preview features, see [Access preview features in Talent](./access-preview-feature.md).
 
-1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**, or click [here](https://attract.talent.dynamics.com/adminsettings).
-
+1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**. Alternatively, go to <https://attract.talent.dynamics.com/adminsettings>.
 2. Select the **LinkedIn Integration** tab.
 
-[![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
+    [![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
-3.  Select **Connect** next to **Apply with LinkedIn** to start the setup, which will guide you through the rest of the process with LinkedIn.
+3. Next to **Apply with LinkedIn**, select **Connect** to start the setup. You will be guided through the rest of the process with LinkedIn.
 
 ## See also
 
-[LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
-[Post jobs to external sites from Attract](./posting-jobs-external.md)<p></p>
-[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
-[Create jobs](./creating-jobs-attract.md)<p></p>
+[LinkedIn FAQ](./attract-linkedin-faq.md)
+
+[Post jobs to external sites from Attract](./posting-jobs-external.md)
+
+[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+
+[Create jobs](./creating-jobs-attract.md)
+
 [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
-
-
-
-
