@@ -44,7 +44,7 @@ Activities can be added as a part of the hiring process in Microsoft Dynamics 36
 The Prospect activity controls whether prospects can be added to a job. By default, prospects can be added to a job. To turn off the Prospect activity, set the **Enable prospects** option to **Off**. When the Prospect activity is turned on, hiring managers can add and view prospects, and the **Prospect** tab is shown on the job.
 
 > [!NOTE]
-> To allow adding candidates to a job from LinkedIn, you must set **Enable prospects** to **On**.
+> To allow candidates to be added to a job from LinkedIn, you must set the **Enable prospects** option to **On**.
 
 ## Application activity
 
