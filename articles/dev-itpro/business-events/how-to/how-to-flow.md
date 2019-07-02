@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consume business events with Microsoft Flow
-description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
+description: This topics provides information about the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 07/02/2019
@@ -30,76 +30,75 @@ ms.dyn365.ops.version: 2019-6-30
 # Consume business events with Microsoft Flow
 
 [!include[banner](../../includes/banner.md)]
-This topic provides guided steps of how to configure and consume a Dynamics 365 for Finance and Operation business event from a Microsoft Flow endpoint.
 
-## Scenario overview
+This topic provides steps detailing how to configure and consume a Dynamics 365 for Finance and Operations business event from a Microsoft Flow endpoint.
 
 This topic illustrates the following tasks:
 
--   Exercise 1: Create a new Microsoft Flow
--   Exercise 2: Trigger a Business Event
+-   Create a new Microsoft Flow.
+-   Trigger a business event.
 
-## Exercise 1: Create a new Microsoft Flow
+## Create a new Microsoft Flow
 
-1.  Log into Microsoft Flow portal.
+1.  Sign in to Microsoft Flow portal.
 
-2.  Select an existing environment where you have the right to create a flow resource - (default) environment is open to all company.
+2.  Select an existing environment where you have the permissions needed to create a flow resource - (default) environment is open to all company.
 
 3.  Select **New \> Create from blank**.
 
 4.  Search for **Dynamics 365 for Finance and Operations** and select the connector.
      
-5.  You will notice a new trigger for Finance and Operations called **When a Business Event occurs**. Select it.
+5.  You will notice a trigger for Finance and Operations named **When a Business Event occurs**. Select this trigger.
 
-6.  Then select your environment instance, category, event name and legal entity.
+6.  Select your environment instance, category, event name, and legal entity.
 
     <img src="../../media/BEF-Howto-Flow-04.png" width="50%">
 
 7.  Select the **New Step** button to add a new action.
 
-8.  Search for the **Parse Json** data operation. This step is needed to be able to parse our message with the schema of our data contract provided by Finance and Operations.
+8.  Search for the **Parse Json** data operation. This step is needed to be able to parse themessage with the schema of the data contract provided by Finance and Operations.
 
     <img src="../../media/BEF-Howto-Flow-06.png" width="50%">
 
-9.  Select the content field of **Parse Json** action then the **Body** output from the previous step should appear as an option. Select **Body**.
+9.  Select the content field of **Parse Json** action, then the **Body** output from the previous step should appear as an option. Select **Body**.
 
     <img src="../../media/BEF-Howto-Flow-07.png" width="50%">
 
-10. Now type in the schema of the contract received from Finance and Operations. However, Finance and Operations provides only a sample payload instead. Hence, we can use Microsoft Flow capability to generate a schema from a payload. Go back to Finance and Operations, select an event in the catalog (here Customer Payment as example) and click the **Download schema** link. This will download a text file. Open the text file and copy the content.
+10. Enter the schema of the contract received from Finance and Operations. Because Finance and Operations provides only a sample payload you can use the Microsoft Flow capability to generate a schema from a payload. Go back to Finance and Operations, select an event in the catalog (for example, Customer Payment) and select the **Download schema** link. This will download a text file. Open the text file and copy the content.
 
     <img src="../../media/BEF-Howto-Flow-08.png" width="50%">
 
-11. Go Back to Microsoft Flow and click on the **Use sample payload to generate schema** link. Then paste your text file content and click **Done**.
+11. Go Back to Microsoft Flow and select the **Use sample payload to generate schema** link. Paste your text file content and select **Done**.
 
     <img src="../../media/BEF-Howto-Flow-09.png" width="70%">
 
-12. Depending on the quality of your sample payload, your generator will note recognize an Integer from a real especially if the real is provided as a whole number in the sample payload. Review your generated schema and check if you need to change an “integer” filed into “number”. (In Json a “number” data type means real).
+12. Depending on the quality of your sample payload, your generator will not recognize an integer from a real number. This is true if the real number is provided as a whole number in the sample payload. Review your generated schema and check if you need to change an “integer” into “number”. (In JSON, a “number” data type means real number).
 
     <img src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
-13.  Choose another final action to consume the business event content. For instance, you can send an email (or posting a text message into Teams) to notify with customer payment details. Search for the **send email** action, then login to your Office365 account.
+13.  Choose another final action to consume the business event content. For instance, you can send an email (or post a text message to Teams) to notify the customer about payment details. Search for the **Send email** action, then sign in to your Office 365 account.
 
-14.  Then fill-in the message with the required fields.
+14.  Fill in the message with the required fields.
 
    <img src="../../media/BEF-Howto-Flow-12.png" width="70%">
 
-15.  **Save** Flow.
+15. Save Flow.
 
-## Exercise 2: Trigger a Business Event
+## Trigger a Business Event
 
-Microsoft Flow can configure Finance and Operations automatically for you. Once you save your Flow it creates an endpoint in Finance and Operations, then it activates the business event for you. There is no remaining configuration step in Finance and Operations apart from verifying that the endpoint has been correctly configured then triggering an event.
+Microsoft Flow can configure Finance and Operations automatically for you. After you save your Flow it creates an endpoint in Finance and Operations, then it activates the business event for you. There is no remaining configuration step in Finance and Operations apart from verifying that the endpoint has been correctly configured before triggering an event.
 
-1.  Log into the Financne and Operations client.
+1. Sign in to the Finance and Operations client.
 
 2.  Go to **System Administration \> Setup \> System Parameters**.
 
-3.  Click on the **Business events** tab.
+3.  Select the **Business events** tab.
 
-4.  Click on **Business events**.
+4.  Select **Business events**.
 
 5.  Click **Endpoints**.
 
-6.  Then verify that a new endpoint has been created with a GUID appended in the name.
+6.  Verify that a new endpoint has been created with a GUID appended in the name.
 
     <img src="../../media/BEF-Howto-Flow-13.png" width="100%">
 
@@ -107,4 +106,4 @@ Microsoft Flow can configure Finance and Operations automatically for you. Once 
 
     <img src="../../media/BEF-Howto-Flow-14.png" width="100%">
 
-8.  Then final step is to trigger the business event of a customer payment posted and check whether the Flow runs and whether you receive an email with customer payment details.
+8.  The final step is to trigger the business event of a posted customer payment and check whether the Flow runs and you receive an email with customer payment details.
