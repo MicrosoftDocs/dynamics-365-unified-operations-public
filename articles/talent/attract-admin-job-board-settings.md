@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enter settings for external job boards in Microsoft Dynamics 365 for Talent - Attract
-description: Configure Attract to post jobs to external job boards such as Broadbean.
+title: Enter settings for external job boards in Attract
+description: This topic explains how to configure Microsoft Dynamics 365 for Talent - Attract to post jobs to external job boards such as Broadbean.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/20/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Enter settings for external job boards
+# Enter settings for external job boards in Attract
 
 [!include[banner](../includes/banner.md)]
 
-You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites such as Broadbean help you accomplish this goal. Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.
+You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites such as Broadbean help you accomplish this goal. Microsoft Dynamics 365 for Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.
 
 > [!NOTE]
 > - To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
@@ -53,5 +53,3 @@ You want to get your open positions in front of as many qualified candidates as 
 
 > [!NOTE]
 > Microsoft and Attract aren't involved in creating and maintaining these values. It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.
-
-
