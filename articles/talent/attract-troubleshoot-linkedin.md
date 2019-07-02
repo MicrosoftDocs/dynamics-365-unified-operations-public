@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshooting integration with LinkedIn from Dynamics 365 for Talent - Attract
-description: This topic explains how to troubleshoot problems with posting jobs to LinkedIn from Dynamics 365 for Talent - Attract.
+title: Troubleshooting integration with LinkedIn
+description: This topic explains how to troubleshoot issues when you try to post jobs to LinkedIn from Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -33,32 +33,32 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-Use the following information to help troubleshoot problems you might be having with posting jobs to LinkedIn from Microsoft Dynamics 365 for Talent: Attract.
+Use the following information to help troubleshoot issues that you might have when you try to post jobs to LinkedIn from Microsoft Dynamics 365 for Talent: Attract.
 
-## Not able to sign in to LinkedIn from Attract
+## You can't sign in to LinkedIn from Attract
 
-If you're having trouble signing in to LinkedIn from Attract, try the following:
+If you're having trouble signing in to LinkedIn from Attract, try these steps:
 
 1. Verify that the LinkedIn credentials that you entered in Attract are valid and correct.
-
 2. If the credentials are valid and correct, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
-
 3. If the issue persists, contact [Microsoft support](./talent-support.md).
 
-## Job posts from Attract aren't appearing in LinkedIn
+## Job posts from Attract don't appear on LinkedIn
 
-If your job hasn't appeared in LinkedIn after 24 hours, try the following:
+If your job hasn't appeared on LinkedIn after 24 hours, try these steps:
 
-1. Make sure your LinkedIn Company ID maps to your LinkedIn company page and is correctly entered in the Attract Admin center. For more information about changing LinkedIn settings in the Admin center, see [Set up integration with LinkedIn](attract-admin-linkedin.md). For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Make sure that your LinkedIn Company ID maps to your LinkedIn company page and is correctly entered in the Attract Admin center. For more information about how to change LinkedIn settings in the Admin center, see [Set up integration with LinkedIn](attract-admin-linkedin.md). For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
+2. Check the job details on LinkedIn to make sure that the address is complete. To post a job successfully, LinkedIn needs at least the city and country or region of the job.
+3. Make sure that the job doesn't duplicate another job that has been posted on LinkedIn. LinkedIn won't post jobs that are duplicates of either LinkedIn Premium Job Slots or Limited Listings from another source. Verify that another person at your company didn't already post the job manually.
 
-2. Check the job details in LinkedIn to make sure the address is complete. LinkedIn needs at least the city and country of the job to post successfully.
+## See also
 
-3. Ensure the job doesn't duplicate another job posted on LinkedIn. LinkedIn won't post jobs that are duplicates of either LinkedIn premium listings or limited listings from another source. Verify another person at your company didn't already post the job manually.
+[LinkedIn FAQ](./attract-linkedin-faq.md)
 
-## See Also
+[Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)
 
-[LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
-[Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)<p></p>
-[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
-[Create jobs](./creating-jobs-attract.md)<p></p>
+[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+
+[Create jobs](./creating-jobs-attract.md)
+
 [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
