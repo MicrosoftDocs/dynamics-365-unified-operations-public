@@ -49,7 +49,7 @@ To view available updates:
         
     If you're running an environment that has Retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.    
     
-    For all verions of Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Finance and Operations version 8.1 and later, all updates, including updates for application models, are released as binary updates.
+    For all versions of Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Finance and Operations version 8.1 and later, all updates, including updates for application models, are released as binary updates.
 
 - **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Dependent X++ updates are automatically selected and downloaded. Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations version 8.0 and earlier. 
 
@@ -119,7 +119,7 @@ Based on your product and version, you will have different update options from L
 
 ## Download X++ updates
 
-1. Select the **All X++ updates** tile to view the list of available application updates to an environment, or select the **Critical X++ updates** tile for application updates that are recommeded for your production environment. 
+1. Select the **All X++ updates** tile to view the list of available application updates to an environment, or select the **Critical X++ updates** tile for application updates that are recommended for your production environment. 
 
    ![Application X++ update tile](./media/X++UpdateTiles.jpg)   
   
