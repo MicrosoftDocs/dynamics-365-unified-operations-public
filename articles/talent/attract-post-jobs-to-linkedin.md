@@ -33,48 +33,55 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn is the largest online professional network, giving you access to the world's top talent. Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs to LinkedIn directly from Attract. Attract provides the option to post a Limited Listing with LinkedIn at no extra cost. These listings are only available through LinkedIn software partners like Attract. They don't appear on the Careers panel on your company's LinkedIn page, because that requires a paid listing, but they display when potential candidates view all available jobs. Limited Listings also display in LinkedIn job searches.
+LinkedIn is the largest online professional network, giving you access to the world's top talent. Microsoft Dynamics 365 for Talent: Attract helps you get the talent that you need by letting you post your jobs directly from Attract to LinkedIn.
 
-After you [create a job](./creating-jobs-attract.md) in Attract, all you have to do is push a button to put your job in front of thousands of potential candidates on LinkedIn.
+Attract lets you post Limited Listings to LinkedIn at no extra cost. These listings are available only through LinkedIn software partners such as Attract. They don't appear in the **Careers** panel on your company's LinkedIn page, because only paid listings appear there. However, they are shown when potential candidates view all available jobs. Limited Listings are also shown in LinkedIn job searches.
 
-The following table shows the actions you can perform on LinkedIn, depending on your user role.
+After you [create a job](./creating-jobs-attract.md) in Attract, you just have to select a button to put your job in front of thousands of potential candidates on LinkedIn.
 
-| Your role | Actions you can take |
-| --- | --- |
-| Admin | post, re-post, unpost |
-| Hiring manager | read only |
-| Recruiter | post, re-post, unpost |
-| Interviewer | no access |
-| Read-only | read only |
+The following table shows the actions that you can perform on LinkedIn, depending on your user role.
 
+| Role | Actions that you can take |
+|---|---|
+| Admin | Post, repost, and unpost |
+| Hiring manager | Read only |
+| Recruiter | Post, repost, and unpost |
+| Interviewer | No access |
+| Read-only | Read only |
 
 For more information about user roles in Attract, see [Security and role management in Attract](./security-attract.md).
 
-If you're an admin who needs more information about configuring LinkedIn integration with Attract, see [Set up integration with LinkedIn](./attract-admin-linkedin.md).
+If you're an admin and need more information about how to configure LinkedIn integration with Attract, see [Set up integration with LinkedIn](./attract-admin-linkedin.md).
 
-Jobs posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs, so make sure you don't accidentally post any test jobs. 
+Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs. Therefore, make sure that you don't accidentally post any test jobs.
 
 ## Post jobs to LinkedIn
 
 1. In Attract, open the job that you want to post to LinkedIn.
 2. On the **Postings** tab, select the **Post Now** button that corresponds to LinkedIn.
-[![Attract post job to LinkedIn](./media/attract-post-job-to-linkedin.png)](./media/attract-post-job-to-linkedin.png)
-3. In the **Create an "Apply now" web address** window, select an option under **Candidates can apply using a**. We recommend you select **Link in Attract**.
+
+    [![Attract post job to LinkedIn](./media/attract-post-job-to-linkedin.png)](./media/attract-post-job-to-linkedin.png)
+
+3. In the **Create an "Apply now" web address** window, select an option under **Candidates can apply using a**. We recommend that you select **Link in Attract**.
 4. Select **Done**.
 5. In the **Submit for posting** window, select **Confirm**.
 
-After LinkedIn successfully completes the posting, the **Postings** section of the job in Attract shows the LinkedIn status as **Posted**.
+After LinkedIn successfully completes the posting, the **Postings** section of the job in Attract shows the LinkedIn status as **Posted**. It can take up to 24 hours for your job to appear in LinkedIn.
 
-When interested candidates select **View** next to your listing, they'll see the full job details, along with your information about how to apply.
+When interested candidates select **View** next to your listing, they will see the full job details, together with your information about how to apply.
 
-It can take up to 24 hours for your job to appear in LinkedIn. All job postings done with attract are Limited Listings. For more information about Limited Listings in LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049).
+All job postings that are done through Attract are Limited Listings. For more information about Limited Listings on LinkedIn, see [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049).
 
-If you're having trouble with posting jobs to LinkedIn, see [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md).
+If you're having trouble posting jobs to LinkedIn, see [Troubleshoot posting jobs to LinkedIn](./attract-troubleshoot-linkedin.md).
 
 ## See also
 
-[LinkedIn FAQ](./attract-linkedin-faq.md)<p></p>
-[Set up integration with LinkedIn](./attract-admin-linkedin.md)<p></p>
-[Create jobs](./creating-jobs-attract.md)<p></p>
-[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)<p></p>
+[LinkedIn FAQ](./attract-linkedin-faq.md)
+
+[Set up integration with LinkedIn](./attract-admin-linkedin.md)
+
+[Create jobs](./creating-jobs-attract.md)
+
+[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+
 [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
