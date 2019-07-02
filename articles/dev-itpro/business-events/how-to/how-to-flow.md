@@ -47,23 +47,15 @@ This topic illustrates the following tasks:
 
 3.  Select **New \> Create from blank**.
 
-    <img src="../../media/BEF-Howto-Flow-01.png" width="30%">
-
 4.  Search for **Dynamics 365 for Finance and Operations** and select the connector.
-
-     <img src="../../media/BEF-Howto-Flow-02.png" width="50%">
      
 5.  You will notice a new trigger for Finance and Operations called **When a Business Event occurs**. Select it.
-
-    <img src="../../media/BEF-Howto-Flow-03.png" width="50%">
 
 6.  Then select your environment instance, category, event name and legal entity.
 
     <img src="../../media/BEF-Howto-Flow-04.png" width="50%">
 
 7.  Select the **New Step** button to add a new action.
-
-    <img src="../../media/BEF-Howto-Flow-05.png" width="20%">
 
 8.  Search for the **Parse Json** data operation. This step is needed to be able to parse our message with the schema of our data contract provided by Finance and Operations.
 
@@ -86,8 +78,6 @@ This topic illustrates the following tasks:
     <img src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
 13.  Choose another final action to consume the business event content. For instance, you can send an email (or posting a text message into Teams) to notify with customer payment details. Search for the **send email** action, then login to your Office365 account.
-
-   <img src="../../media/BEF-Howto-Flow-11.png" width="70%">
 
 14.  Then fill-in the message with the required fields.
 
