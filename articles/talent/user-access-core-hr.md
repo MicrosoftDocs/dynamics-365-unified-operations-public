@@ -47,7 +47,7 @@ User B can access Core HR, but can't access the Talent: Attract or Talent: Onboa
 
 User B must be assigned the rights to view the Microsoft PowerApps environment that user A created during the provisioning process.
 
-For information, see the "Granting access to the environment" section in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+For information, see the "Granting access to the environment" section in [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 **Long-term solution**
 

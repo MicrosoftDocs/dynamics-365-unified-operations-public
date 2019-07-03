@@ -48,7 +48,7 @@ business’s data is highly valuable. Data gathered and maintained by one part o
 the business relates to data gathered by another part of the business, and these
 relations can be used to improve business processes and business intelligence
 across your organization. Providing easy, secure, stable access to your business
-data, regardless of which system “owns” the data is a key tenet to the vision we
+data, regardless of which system “owns� the data is a key tenet to the vision we
 have for data integration with Dynamics 365 for Talent.
 
 Historically, integrating data between multiple systems has been difficult.
@@ -68,7 +68,7 @@ available for use with Dynamics 365 for Talent (Core HR).
 
 ### Common Data Service entities
 Common Data Service is the preferred public data interface for Dynamics 365 for Talent. Common Data Service is
-built on a mature platform, having grown out of the Dynamics 365 “XRM” platform,
+built on a mature platform, having grown out of the Dynamics 365 “XRM� platform,
 upon which the [Dynamics 365 Customer
 Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement)
 solutions are built.

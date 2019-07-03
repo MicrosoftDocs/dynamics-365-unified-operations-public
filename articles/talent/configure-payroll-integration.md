@@ -58,8 +58,8 @@ When the integration is turned on, the data export package and files are created
 
 For more information about Azure storage accounts and Azure Storage connection strings, see the following Azure topics:
 
-- [About Azure storage accounts](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [About Azure storage accounts](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Configure Azure Storage connection strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### Technical details when payroll integration is enabled
 
@@ -129,10 +129,10 @@ Dayforce creates the following deductions, based on the payroll impact that is d
 
 For more information about how to define and manage a benefits program, see the following topics:
 
-- [Deliver an employee benefits program](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Create a new benefit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Define benefit eligibility rules and policies](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Enroll and remove benefits from workers](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Deliver an employee benefits program](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Create a new benefit](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Define benefit eligibility rules and policies](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Enroll and remove benefits from workers](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### Compensation 
 
@@ -142,20 +142,20 @@ Dayforce uses compensation information to calculate an employee's hourly or annu
 
 For more information about compensation plans, see the following topics:
 
-- [Create fixed compensation plans](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Create variable compensation plans](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Develop salary/compensation structure and plans](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Process compensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Define compensation process and calculate results](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Enroll an employee in a fixed compensation plan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Enroll an employee in a variable compensation plan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Create fixed compensation plans](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Create variable compensation plans](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Develop salary/compensation structure and plans](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Process compensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Define compensation process and calculate results](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Enroll an employee in a fixed compensation plan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Enroll an employee in a variable compensation plan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### Jobs 
 
 A job is a collection of the tasks and responsibilities that are required of a person who performs a job. For more information, see the following topics:
 
-- [Setting up the components of a job](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Define new jobs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Setting up the components of a job](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Define new jobs](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### Positions
 
@@ -179,8 +179,8 @@ If multiple positions in the same department are associated with the same job, t
 
 For more information, see the following topics:
 
-- [Organize your workforce using departments, jobs, and positions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Set up positions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organize your workforce using departments, jobs, and positions](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Set up positions](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### Departments
 
@@ -188,8 +188,8 @@ A department is an operating unit that represents a category or functional area 
 
 For more information, see the following topics:
 
-- [Create a department and associate it with the department hierarchy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Define new departments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Create a department and associate it with the department hierarchy](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Define new departments](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### Pay cycles and pay periods
 

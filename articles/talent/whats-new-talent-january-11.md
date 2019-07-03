@@ -46,7 +46,7 @@ Changes made in this release allow employees to request future leave time withou
 This feature enables viewing of balances for future leave periods by HR, managers, and employees. Employees can view future balances in the **Employee Self-Service** workspace and HR has access to the same information using the **People** workspace.
 
 ### Notifications for changing leave balances
-Leave balances will display the employees current balance. Future balances are available on the **Employee Self-Service** and **People** workspaces by entering an “as of date” to calculate the forecasted balance.
+Leave balances will display the employees current balance. Future balances are available on the **Employee Self-Service** and **People** workspaces by entering an “as of date� to calculate the forecasted balance.
 
 Navigation has been added to view forecasted balances in the following areas:
   - **Time off** card on the **Employee Self-Service** workspace.

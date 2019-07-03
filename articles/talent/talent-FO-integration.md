@@ -47,7 +47,7 @@ For Attract and Onboard, all data is native to Common Data Service.
 
 Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
-more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## Can I map financial dimensions to transfer between Talent and Finance and Operations?
 
@@ -172,7 +172,7 @@ supported in the integration. To include additional data in Common Data Service,
 If the entity is supported and the data is available in Common Data Service, verify the mapping
 is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during
-the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## The addresses for my employees are incorrect after I import them into Finance and Operations. What should I do?
 
@@ -189,7 +189,7 @@ identical where data may be maintained in both systems.
 
 Make sure when creating your connections, you choose Dynamics 365 for Finance and Operations (currently in preview) and Common Data Service.
 
-## When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.” What should I do?
+## When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.� What should I do?
 
 Ensure that you are mapping to the correct legal entities. Legal entity syncing
 is not part of the default template, so it is expected that each legal
@@ -209,12 +209,12 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
 - Data Integrator (DI): 
 
-  - [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 
-  - [Data management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

@@ -81,7 +81,7 @@ If there are no errors, the personnel action becomes read-only. (You can view th
 **All worker actions** list page, but you can’t change the personnel action.) When the status of a
 personnel action is **Completed**, the position or worker record has already been updated. To view the changes that were performed, open the **Positions** or **Workers** list page.
 
-## Why do I receive the following error when I enter a non-zero value in the Pay rate field? “The value is out of its valid range – it much be between 0.00 and 0.00”
+## Why do I receive the following error when I enter a non-zero value in the Pay rate field? “The value is out of its valid range – it much be between 0.00 and 0.00�
 You receive this message because the Level field in the Job form is blank for the job that is associated with the selected position.
 
 To resolve this error, follow these steps:

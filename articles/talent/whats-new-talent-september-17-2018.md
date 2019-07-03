@@ -50,7 +50,7 @@ Platform update 18 is now part of the Talent release.
 
 -   In Platform update 18, the Talent web client now aligns its visuals with Microsoft Fluent Design.
 
-    -   When fields are in “read mode”, you can simply select the edit option in the fields to switch the form to edit.
+    -   When fields are in “read mode�, you can simply select the edit option in the fields to switch the form to edit.
 
     -   Changes in how fields display when in read mode.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-You can add custom fields to pages in Dynamics 365 for Talent: Core HR. For more information about how to create custom fields on a page, see [Create and work with custom fields](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
+You can add custom fields to pages in Dynamics 365 for Talent: Core HR. For more information about how to create custom fields on a page, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
 The following entities in Common Data Service support custom fields created in Core HR:
 
@@ -46,5 +46,5 @@ The following entities in Common Data Service support custom fields created in C
 - Position
 - Position type
 
-Be sure to enable any custom fields that you create so you can use them in Common Data Service. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+Be sure to enable any custom fields that you create so you can use them in Common Data Service. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 

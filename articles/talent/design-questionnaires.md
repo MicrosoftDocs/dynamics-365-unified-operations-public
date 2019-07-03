@@ -208,7 +208,7 @@ You're using a questionnaire for a leadership test that has 15 questions in thre
 
 To use point-based messages, you set up text intervals for each result group. Each question is assigned two points. Therefore, the maximum point total in each result group is 10. 
 
-The following table shows the point-based messages that you define for the “leadership abilities” result group.
+The following table shows the point-based messages that you define for the “leadership abilities� result group.
 
 | Point interval | Text                                       |
 |----------------|--------------------------------------------|

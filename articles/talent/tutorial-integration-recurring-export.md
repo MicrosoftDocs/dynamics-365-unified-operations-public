@@ -44,16 +44,16 @@ In one typical business scenario for Microsoft Dynamics 365 integrations, data m
 
 This tutorial uses the following technologies:
 
-- **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/en-us/talent/overview/)** – The master data source for workers that will be exported.
+- **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/talent/overview/)** – The master data source for workers that will be exported.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
-    - **[Connectors](https://docs.microsoft.com/en-us/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.
+    - **[Connectors](https://docs.microsoft.com/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.
 
         - [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) connector
         - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector
 
 - **[DMF package REST API](../dev-itpro/data-entities/data-management-api.md)** – The technology that is used to trigger the export and monitor its progress.
-- **[OneDrive for Business](https://onedrive.live.com/about/en-us/business/)** – The destination for the exported workers.
+- **[OneDrive for Business](https://onedrive.live.com/about/business/)** – The destination for the exported workers.
 
 ## Prerequisites
 

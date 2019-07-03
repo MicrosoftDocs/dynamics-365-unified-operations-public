@@ -108,7 +108,7 @@ To update your LinkedIn company, select **Admin center** on the **Settings**�
 >
 > 1. When posting jobs to LinkedIn, Attract passes the Microsoft 365 Organization name against the job. LinkedIn links the jobs to a company on the LinkedIn side based on the organization name that is passed. If your job is listed against the wrong company on LinkedIn, check that your Microsoft 365 Organization name matches the company name on LinkedIn.  
 >
->    [Change Address Contact and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>    [Change Address Contact and more](https://docs.microsoft.com/office365/admin/manage/change-address-contact-and-more)
 >
 >    If you have problems after this step, please contact LinkedIn support. 
 > 
@@ -151,7 +151,7 @@ If a user edits the job after it is approved, but not activated, the job status 
 The people who are listed as approvers will receive a notification in Attract and an email to inform them they have an item to approve.  In the email, approvers can click the link to open the job, review the details, and either approve or reject. After the job's status is set to **Approved** or **Rejected**, the submitter will be notified in Attract and they will receive an email. Also, the approvers will receive a reminder email if they have not responded to the approval request within 24 hours.
 
 > [!NOTE]
-> You can create custom email templates for Approval emails. For more information, see [Creating and managing email templates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> You can create custom email templates for Approval emails. For more information, see [Creating and managing email templates](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## Create a job
 
