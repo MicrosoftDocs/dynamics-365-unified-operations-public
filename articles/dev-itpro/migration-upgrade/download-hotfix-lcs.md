@@ -78,13 +78,13 @@ Based on your product and version, you will have different update options from L
 - **Application version 7.x or 8.0 with Platform update 4 or later** - This release will still have the granular X++ updates. Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the **Platform binary updates** tile is available to provide the platform updates as a cumulative update.
  
    For customers that are on this combination, you will see the following tiles: 
-   1. **All X++ updates** - This tile shows all the granular X++ updates released by Microsoft. 
+   - **All X++ updates** - This tile shows all the granular X++ updates released by Microsoft. 
         
-   2. **Critical X++ updates** - This tile shows recommended KBs that are based on the telemetry data in your production environment. This tile will only show Production environments and a subset of the updates shown under the **All X++ updates** tile that are recommended for your environments. 
+   - **Critical X++ updates** - This tile shows recommended KBs that are based on the telemetry data in your production environment. This tile will only show Production environments and a subset of the updates shown under the **All X++ updates** tile that are recommended for your environments. 
         
-   3. **All binary updates** - This tile shows a combined cumulative binary update for both the Application and Platform.
+   - **All binary updates** - This tile shows a combined cumulative binary update for both the Application and Platform.
         
-   4. **Platform binary updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
+   - **Platform binary updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
 
 - **Application version 7.x with Platform update 3 or earlier** - 
    For customers that are on this combination, you will see 3 tiles: **All X++ updates**, **Critical X++ updates**, and **All binary updates**. Because this release platform can still be overlayered, there is no **Platform binary updates** tile.
@@ -107,19 +107,11 @@ To download binary updates, follow these steps in LCS.
 
 3. On the **Review and save updates** page, select **Save package**.
 
-   ![Review and Save updates](./media/ReviewBinaryPackage.jpg)
-
 4. In the **Save package to asset library**, enter the **Name** and **Description**, and select **Save package**.
 
-   ![Save package to asset library](./media/SaveBinaryPackage.jpg)
-
 5. Select **Done** to return to environment page.
-
-   ![DoneSavingBinaryPackage](./media/DoneSavingBinaryPackage.jpg)
  
 6. You'll see the saved binary package in the asset library. 
-
-   ![ViewSavedBinaryPackageInAssetLibrary](./media/ViewSavedBinaryPackageInAssetLibrary.jpg)
 
 ## Download X++ updates
 To download X++ updates, follow these steps in LCS. 
@@ -130,22 +122,15 @@ To download X++ updates, follow these steps in LCS.
   
 2. On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then select **Add** to add selected KBs to the download package.
 
-    ![Add X++ updates](./media/AddX++Updates.jpg)
-
     > [!NOTE]
     > For X++ updates, you can download all available updates at this point. Click **Select all**, and then click **Add** to add all KBs to the download package.
 
 3. Select **Download package**.
 
-    ![Download X++ package](./media/DownloadX++UpdatePackage.jpg)
-
 4. On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.
-
-    ![Review and download X++ updates](media/ReviewAndDownloadX++Package.jpg)
     
 5. Download the package, and select **Done**.
-    
-    ![downloaded](media/X++UpdatesDownloadBegin.jpg)
+   
 
 ## Additional resources
 - [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)
