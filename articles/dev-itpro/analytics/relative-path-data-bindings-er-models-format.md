@@ -51,7 +51,7 @@ When the relative path usage parameter is turned on, a single @ character replac
  
 When you start designing a new ER expression, you need to enter only one character to define a binding to a field of the parent item.
 
-[![Formula designer](./media/relative-path-03.png)](./media/relative-path.03.png)
+[![Formula designer](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 When you decide to change the data source of the parent model item, with absolute path usage, you have to manually rebind this model item, as well as all nested items, to a new data source. When relative path usage is turned on, and you select a new data source to be bound to a parent item, you are offered an option to automatically rebind all nested elements of this parent item with one click.
 
