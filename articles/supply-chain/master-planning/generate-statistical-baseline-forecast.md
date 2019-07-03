@@ -52,6 +52,7 @@ When the forecast strategy is set to **Copy over historical demand**, the end of
 To prevent confusion in the production plans, a certain number of forecast buckets can be frozen. This number is set in the **Freeze time fence** field. On the **Adjusted demand forecast** page, the cells for the frozen buckets are disabled, to give a visual indication that those values should not be changed. 
 
 The start date for the baseline demand forecast doesn’t have to be the current date or a date in the future. To set a different start date, use the **Baseline forecast start date - From date** field. For example, in June, users can generate a forecast for the next year. Because the forecast buckets between the end of historical demand and the start of the baseline are missing, the predictions might not be accurate. If you are using the Microsoft Dynamics 365 for Finance and Operations Demand forecasting service, there are four ways in which you can fill in the missing gaps. You can choose the method that you want by setting the MISSING\_VALUE\_SUBSTITUTION parameter on the **Demand forecasting parameters** page. 
+Note that missing value substitution only works for the gaps in data in between the start and end dates for historical data. It will not fill in data before or after the last physical data point, i.e. only acts as extrapolation between actual existing data points. 
 
 The **Baseline forecast start date** - **From date** field has to be set to the beginning of a forecast bucket, for example, in the United States, a Sunday if the forecasting bucket is the week. The system automatically adjusts the **Baseline forecast start date** - **From date** field to match the beginning of a forecast bucket. 
 
@@ -66,6 +67,8 @@ The intercompany planning group, item allocation keys, and other filters can be 
 **Tip**: Sometimes users might receive errors while generating a demand forecast, or forecast generation is completed with no session log. This can happen because of leftover data in the query that was previously used for forecast generation. To fix this issue, click **Select** to open the **Query** page, click **Reset**, and then regenerate the baseline forecast. 
 
 If the forecast is not generated for a big set of items, but, for example, for one item or one item allocation key at a time, then in order to get better performance, you can select the **Use request response mode** check box on the **Master planning - Setup - Demand forecasting** - **Demand forecasting parameters - Azure Machine Learning** tab.
+
+NOTE: A potentially flat looking forecast can be due to the historical data which has to be of a longer historical timeframe (minimum 3 time periods long to be able to pick out patterns - e.g. 3 years with monthly forecast). To get a better result you can try changing the granularity of the time range or increate the time range.
 
 Additional resources
 --------
