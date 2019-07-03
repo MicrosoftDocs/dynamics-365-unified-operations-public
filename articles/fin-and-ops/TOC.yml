@@ -257,14 +257,16 @@
       href: ../dev-itpro/business-events/alerts-business-events.md
     - name: Business events in Microsoft Flow
       href: ../dev-itpro/business-events/business-events-flow.md
-    - name: Consume business events with Microsoft Flow
-      href: ../dev-itpro/business-events/how-to/how-to-flow.md
     - name: Business events developer documentation
       href: ../dev-itpro/business-events/business-events-dev-doc.md
     - name: Troubleshoot business events
       href: ../dev-itpro/business-events/troubleshooting.md
     - name: Use cases for business events
       href: ../dev-itpro/business-events/potential-use-cases.md
+    - name: Tutorials
+      items: 
+      - name: Consume business events with Microsoft Flow
+        href: ../dev-itpro/business-events/how-to/how-to-flow.md
   - name: Compliance
     items:
     - name: Audit policy rules
