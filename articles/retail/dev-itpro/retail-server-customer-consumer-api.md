@@ -41,7 +41,7 @@ Overview
 - Retail Server business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
 - The application programming interfaces (APIs) are stateless and can process requests from many channels.
-- The APIs have a linear scale-out model (“brick” scale-out).
+- The APIs have a linear scale-out model (“brick� scale-out).
 - You use a composition pattern for plug-and-play customizations.
 - The APIs are built on the .NET stack by using C\#.
 
@@ -56,7 +56,7 @@ Every request to Retail Server (via retail proxy) operates under these main role
 The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Retail Server. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them.
 
 > [!NOTE]
-> By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
+> By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
 
 
 ## Customer controller

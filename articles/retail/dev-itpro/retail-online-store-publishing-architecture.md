@@ -54,7 +54,7 @@ After you've completed these steps, you're ready to publish the product schema t
 5.  The Retail publishing job runs from the CRT application programming interface (API) and creates hierarchies for the site that you created in the online store.
 6.  Commerce Data Exchange: Real-time Service receives the status of the Retail publishing job actions from the CRT API and publishes that status. The status is either **Published** or **Error**.
 
-For the specific procedures to publish a channel, see [Set up an online store](https://msdn.microsoft.com/en-us/jj682095). After you've published the channel, you can publish a catalog.
+For the specific procedures to publish a channel, see [Set up an online store](https://msdn.microsoft.com/jj682095). After you've published the channel, you can publish a catalog.
 
 ## Publish a Retail online store catalog
 A retail product catalog lets you identify the products that you want to offer in your online stores. When you create a catalog, you identify the online stores where the products will be offered, add products, and enhance the product offerings by adding merchandising details. After the catalog is approved, you publish it to make products available in the online store. Before you can publish a retail product catalog, you must complete the following setup tasks:
@@ -66,8 +66,8 @@ After you've completed these steps, you're ready to publish the Retail online st
 
 1.  Finances and Operations reads the product tables in the Retail database.
 2.  Async Server synchronizes all products in the channel database.
-3.  The CRT/Publishing Connector creates a *listing*. A listing is an instance of a product for a channel at a given point in time. For example, you have a product that is named “jeans”, and this product has a variant that is named “red”. In this case, the system creates a listing for “red jeans”.
-4.  The system determines whether any new attributes were added for the listing. If new attribute were added (for example, if the “red jeans” listing includes a new attribute that is named **texture**, and this attribute is marked as **Included** at the channel level), the system creates a custom site column for that attribute. The system also creates a new rule for the list item and completes the process in SharePoint by creating a new row for the “red jeans” listing.
+3.  The CRT/Publishing Connector creates a *listing*. A listing is an instance of a product for a channel at a given point in time. For example, you have a product that is named “jeans�, and this product has a variant that is named “red�. In this case, the system creates a listing for “red jeans�.
+4.  The system determines whether any new attributes were added for the listing. If new attribute were added (for example, if the “red jeans� listing includes a new attribute that is named **texture**, and this attribute is marked as **Included** at the channel level), the system creates a custom site column for that attribute. The system also creates a new rule for the list item and completes the process in SharePoint by creating a new row for the “red jeans� listing.
 5.  The CRT records the publishing status for the listing.
 6.  Async Server synchronizes the publishing status of the listing with all other publishing statuses. The status is either **Published** or **Error**.
 

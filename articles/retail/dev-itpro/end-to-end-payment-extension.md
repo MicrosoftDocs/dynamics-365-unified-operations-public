@@ -553,7 +553,7 @@ To help guarantee that the Hardware Station loads the payment connector, you mus
         <add source="type" 
             value="Contoso.Commerce.HardwareStation.NewPeripheralDevice, Contoso.Commerce.HardwareStation.NewPeripheralDevice" />
         <add source="assembly" 
-            value="Contoso.Commerce.HardwareStation.NewPeripheralDeviceâ€ />
+            value="Contoso.Commerce.HardwareStation.NewPeripheralDeviceâ€ />
         -->
         <add source="assembly" value="Contoso.Commerce.HardwareStation.PaymentSample" />
     </composition>
