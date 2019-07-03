@@ -2979,8 +2979,6 @@
          href: ../dev-itpro/analytics/tasks/er-import-configurations.md?toc=/fin-and-ops/toc.json
        - name: Generate electronic documents for payments using a format configuration
          href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-     - name: Upgrade your format by adopting a new base version of that format
-       href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
     - name: Formula designer in Electronic reporting
       href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
     - name: Manage ER model mpaping in separate ER configurations
