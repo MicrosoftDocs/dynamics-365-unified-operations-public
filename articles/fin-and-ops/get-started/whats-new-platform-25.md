@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/14/2019
+ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -71,7 +71,7 @@ For more information about business events, see [Business events](../../dev-itpr
 > The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 ## Batch jobs single scheduler
-Improvements made in the batch framework optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which will reduce contention on Batch tables and may increase throughput. This is enabled by default in Platform update 25.
+Improvements made in the batch framework optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which will reduce contention on batch tables and may increase throughput. This is enabled by default in Platform update 25.
 
 ## Batch Jobs enhanced forms
 The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Batch enhanced forms](../../dev-itpro/sysadmin/enhanced-forms.md).
