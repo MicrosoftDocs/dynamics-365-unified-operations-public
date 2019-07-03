@@ -69,10 +69,10 @@ For users in legal entities in the Czech Republic, according VAT declaration in 
 | 2402                         | ř.240 - se zákl. sazbou daně  - Daň                     |
 | 2451                         | ř.245 - se sníž. sazbou daně  - Základ                  |
 | 2452                         | ř.245 - se sníž. sazbou daně  - Daň                     |
-| 2501                         | ř.250 - od osob reg. v jiném čl.státě - Základ          |
-| 2502                         | ř.250 - od osob reg. v jiném čl.státě - Daň             |
-| 2551                         | ř.255 - od osob nereg. v jiném čl.státě - Základ        |
-| 2552                         | ř.255 - od osob nereg. v jiném čl.státě - Daň           |
+| 2501                         | ř.250 - od osob reg. v jiném �l.státě - Základ          |
+| 2502                         | ř.250 - od osob reg. v jiném �l.státě - Daň             |
+| 2551                         | ř.255 - od osob nereg. v jiném �l.státě - Základ        |
+| 2552                         | ř.255 - od osob nereg. v jiném �l.státě - Daň           |
 | 2601                         | ř.260 - se zákl. sazbou daně – Základ                   |
 | 2602                         | ř.260 - se zákl. sazbou daně – Daň                      |
 | 2651                         | ř.265 - se sníž. sazbou daně – Základ                   |
@@ -111,37 +111,37 @@ For users in legal entities in the Czech Republic, according VAT declaration in 
 | 3551                         | ř.355 - se sníž. sazbou daně  - Základ                  |
 | 3552                         | ř.355 - se sníž. sazbou daně  - Daň, plný nárok         |
 | 3553                         | ř.355 - se sníž. sazbou daně  - Daň, krác. nárok        |
-| 3601                         | ř.360 - od osob reg. v jiném čl.státě - Základ          |
-| 3602                         | ř.360 - od osob reg. v jiném čl.státě - Daň             |
-| 3603                         | ř.360 - od osob reg. v jiném čl.státě - Daň, krác.      |
-| 3651                         | ř.365 - od osob nereg. v jiném čl.státě - Základ        |
-| 3652                         | ř.365 - od osob nereg. v jiném čl.státě - Daň           |
-| 3653                         | ř.365 - od osob nereg. v jiném čl.státě - Daň, kr.      |
+| 3601                         | ř.360 - od osob reg. v jiném �l.státě - Základ          |
+| 3602                         | ř.360 - od osob reg. v jiném �l.státě - Daň             |
+| 3603                         | ř.360 - od osob reg. v jiném �l.státě - Daň, krác.      |
+| 3651                         | ř.365 - od osob nereg. v jiném �l.státě - Základ        |
+| 3652                         | ř.365 - od osob nereg. v jiném �l.státě - Daň           |
+| 3653                         | ř.365 - od osob nereg. v jiném �l.státě - Daň, kr.      |
 | 3702                         | ř.370 - při změně režimu  - Daň, plný nárok             |
 | 3703                         | ř.370 - při změně režimu  - Daň, krác. nárok            |
-| 3803                         | ř.380 - celková suma pro krácení nároku na odpočet daně |
-| 3902                         | ř.390 - celková suma plného nároku na odpočet daně      |
-| 4102                         | ř.410 - dodání zboží do jiného čl.státu                 |
+| 3803                         | ř.380 - celková suma pro krácení nároku na odpo�et daně |
+| 3902                         | ř.390 - celková suma plného nároku na odpo�et daně      |
+| 4102                         | ř.410 - dodání zboží do jiného �l.státu                 |
 | 4202                         | ř.420 - dodání nového dopr.prostř. osobě reg.           |
 | 4252                         | ř.425 - dodání nového dopr. prostř. osobě nereg.        |
 | 4302                         | ř.430 - vývoz zboží (§66)                               |
-| 4402                         | ř.440 - Ost.plnění osv.od daně s nárok. na odpočet      |
-| 5102                         | ř.510 - Celk. usk.plnění s nárokem na odpočet daně      |
-| 5202                         | ř.520 - Uskut. plnění, která se nezapoč. do koef.       |
-| 5302                         | ř.530 - Celk. osv.usk.plnění bez nároku na odpočet      |
-| 5402                         | ř.540 - Usk.plnění nezapoč. do výpočtu koeficientu      |
-| 5503                         | ř.550 - Vypočt. poměr.část odp.daně (§76) - Koef.       |
-| 5502                         | ř.550 - Vypočt. poměr.část odp.daně (§76)               |
+| 4402                         | ř.440 - Ost.plnění osv.od daně s nárok. na odpo�et      |
+| 5102                         | ř.510 - Celk. usk.plnění s nárokem na odpo�et daně      |
+| 5202                         | ř.520 - Uskut. plnění, která se nezapo�. do koef.       |
+| 5302                         | ř.530 - Celk. osv.usk.plnění bez nároku na odpo�et      |
+| 5402                         | ř.540 - Usk.plnění nezapo�. do výpo�tu koeficientu      |
+| 5503                         | ř.550 - Vypo�t. poměr.�ást odp.daně (§76) - Koef.       |
+| 5502                         | ř.550 - Vypo�t. poměr.�ást odp.daně (§76)               |
 | 5603                         | ř.560 - Vypoř. odp. daně (§76 odst.7-10) - Koef.        |
 | 5602                         | ř.560 - Vypoř. odp. daně (§76 odst.7-10)                |
-| 5702                         | ř.570 - Úprava odpočtu daně (§78)                       |
-| 5802                         | ř.580 - Vyrovnání odpočtu daně (§79)                    |
+| 5702                         | ř.570 - Úprava odpo�tu daně (§78)                       |
+| 5802                         | ř.580 - Vyrovnání odpo�tu daně (§79)                    |
 | 6002                         | ř.600 - Vrácení daně                                    |
 | 7102                         | ř.710 - Vypořádání daně na výstupu (§91)                |
 | 7302                         | ř.730 - Daň na výstupu                                  |
-| 7502                         | ř.750 - Odpočet daně                                    |
+| 7502                         | ř.750 - Odpo�et daně                                    |
 | 7532                         | ř.753 - Vlastní daňová povinnost                        |
-| 7542                         | ř.754 - Nadměrný odpočet                                |
+| 7542                         | ř.754 - Nadměrný odpo�et                                |
 | 7802                         | ř.780 - Změna daň.povinnosti při podání dod. přiz.      |
 | 8101                         | ř.810 - Pořízení zboží prostřední osobou                |
 | 8151                         | ř.815 - Dodání zboží prostřední osobou                  |

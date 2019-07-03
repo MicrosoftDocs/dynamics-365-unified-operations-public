@@ -764,8 +764,8 @@ Generate an assessed tax declaration and an assessed tax advance payments calcul
 
 | **Processing**                            | **Processing code**  | **Name**                                                |
 |-------------------------------------------|----------------------|---------------------------------------------------------|
-| Property tax declaration                  | НалИмущД 5.05 (2019) | Декларация по налогу на имущество(2019)                 |
-| Property tax advance payments calculation | НалИмущР 5.05 (2019) | Расчет авансовых платежей по налогу на имущество (2019) |
+| Property tax declaration                  | �алИмущД 5.05 (2019) | Деклараци� по налогу на имуще�тво(2019)                 |
+| Property tax advance payments calculation | �алИмущР 5.05 (2019) | Ра�чет аван�овых платежей по налогу на имуще�тво (2019) |
 
 3.  Set up the ER format that is run when accounting reporting is generated in
     electronic format.
@@ -801,9 +801,9 @@ assessed tax register for the same period.
 2.  Select the report format to generate.
 
     For example, to generate an assessed tax declaration in XML format for the
-    year 2019, select **НалИмущД 5.05 (2019)**. To generate an assessed tax
+    year 2019, select **�алИмущД 5.05 (2019)**. To generate an assessed tax
     advance payments calculation in XML format for the year 2019, select
-    **НалИмущР 5.05 (2019)**.
+    **�алИмущР 5.05 (2019)**.
 
 3.  On the **Messages** FastTab, select **New**.
 

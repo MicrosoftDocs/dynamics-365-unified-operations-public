@@ -44,7 +44,7 @@ The objective of this lab is to provide a guided view of Microsoft Dynamics 365 
 Prerequisites 
 ------------------
 
-For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials. When signing into Finance and Operations, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
+For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials. When signing into Finance and Operations, you **MUST** check the “Keep me signed in� checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in� in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in� checkbox. If clicking “Sign in� in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
 
 ## **Scenario overview**
 Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF). As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year. Budget preparation looks as follows:
@@ -110,7 +110,7 @@ Budget planning uses special security policies to configure access to budget pla
 
 [![Assign org](./media/screenshot13.png)](./media/screenshot13.png)
 
-2.5. Select “Grant access to specific organizations”. Pick Organizational hierarchy created in the first step. Pick Finance node and click Grant with children button 
+2.5. Select “Grant access to specific organizations�. Pick Organizational hierarchy created in the first step. Pick Finance node and click Grant with children button 
 
 ***Important!*** *Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity* 
 
@@ -171,7 +171,7 @@ Based on the budget plan layout definition we can create an Excel template to be
 
 5.2. For the layout created in the 5.1. step, click button Template &gt; Generate. Confirm the warning message. To view the template, click Template &gt; View. 
 
-*Note: Make sure to select “Save as” and select the place where template should be stored in order to edit it. If user selects “Open” in the dialog without saving, the changes done to the file will not be retained when the file is closed.* 
+*Note: Make sure to select “Save as� and select the place where template should be stored in order to edit it. If user selects “Open� in the dialog without saving, the changes done to the file will not be retained when the file is closed.* 
 [![Template view](./media/screenshot25.png)](./media/screenshot25.png) 
 
 5.3. &lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload 

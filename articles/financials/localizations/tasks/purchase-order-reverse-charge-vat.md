@@ -34,7 +34,7 @@ This task walks you through creating a purchase order that includes items subjec
 
 This walkthrough was created using the demo company GBSI.
 
-Prior to this task, the “Set up reverse charge VAT” tasks should be completed.
+Prior to this task, the “Set up reverse charge VAT� tasks should be completed.
 
 
 ## Create a purchase order

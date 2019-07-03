@@ -55,7 +55,7 @@ When the **Use fiscal data from invoice account** parameter is set, three fields
 -   Tax exemption
 
 ## Accounts receivable and Sales and marketing
-To manage the opportunity of fiscal data automatic update on **Invoice account** change in the **Accounts receivable** module you need to set up a parameter “**Use fiscal data from invoice account**” on the **Invoice** fasttab of the **Updates** tab of the **Account receivable parameters** page. The following options are available:
+To manage the opportunity of fiscal data automatic update on **Invoice account** change in the **Accounts receivable** module you need to set up a parameter “**Use fiscal data from invoice account**� on the **Invoice** fasttab of the **Updates** tab of the **Account receivable parameters** page. The following options are available:
 
 -   **Never** – Information is updated from the customer account.
 -   **Always** – Information is updated from the invoice account.

@@ -65,11 +65,11 @@ ms.dyn365.ops.version: 10.0.1
 
     | Report           | Report code | Description                                             |
     |------------------|-------------|---------------------------------------------------------|
-    | Balance sheet    | Баланс      | Бухгалтерский баланс (2016)                             |
-    | Income statement | ПрибУб      | Отчет о прибылях и убытках (2016)                       |
+    | Balance sheet    | Балан�      | Бухгалтер�кий балан� (2016)                             |
+    | Income statement | ПрибУб      | Отчет о прибыл�х и убытках (2016)                       |
     | Equity statement | ОтчетИзмКап | Отчет об изменении капитала (2016)                      |
-    | Cash flow        | ДвижениеДен | Отчет о движении денежных средств (2016)                |
-    | Funds usage      | ЦелИсп      | Отчет о целевом использовании полученных средств (2016) |
+    | Cash flow        | ДвижениеДен | Отчет о движении денежных �ред�тв (2016)                |
+    | Funds usage      | ЦелИ�п      | Отчет о целевом и�пользовании полученных �ред�тв (2016) |
 
 4. Set up financial report cell operations for the financial reports that are imported. Set up all required cells. These required cells include cells for totals.
 
@@ -79,7 +79,7 @@ ms.dyn365.ops.version: 10.0.1
 
     | Processing           | Processing code    | Description                     |
     |----------------------|--------------------|---------------------------------|
-    | Accounting reporting | БухОтч 5.07 (2016) | Бухгалтерская отчетность (2016) |
+    | Accounting reporting | БухОтч 5.07 (2016) | Бухгалтер�ка� отчетно�ть (2016) |
 
 6. Set up the organization codes that are used in accounting reporting.
 
@@ -115,9 +115,9 @@ ms.dyn365.ops.version: 10.0.1
 
     | Field name       | Description                 | Field value |
     |------------------|-----------------------------|-------------|
-    | CorrectionNumber | Номер коррекции             | Enter the number of the correction for corrective accounting reporting. |
-    | ReportingDate    | Отчетная дата для коррекции | Enter the reporting date for corrective accounting reporting. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
-    | ApprovalDate     | Дата утверждения отчетности | Enter the date when the accounting reporting was approved. |
+    | CorrectionNumber | �омер коррекции             | Enter the number of the correction for corrective accounting reporting. |
+    | ReportingDate    | Отчетна� дата дл� коррекции | Enter the reporting date for corrective accounting reporting. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
+    | ApprovalDate     | Дата утверждени� отчетно�ти | Enter the date when the accounting reporting was approved. |
 
 6. On the **Messages** FastTab, select **Update status**. Then, in the **Run processing** dialog box, select **OK**.
 7. Validate that the message status is changed to **Ready to generate**.

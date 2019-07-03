@@ -118,7 +118,7 @@ For example, consider this scenario: you use ISO20022 payments to generate credi
 
  - **Payment model**
  - **Payment model mapping 1611** – this mapping will be used to generate the export file
- - **Payment model mapping to destination ISO20022** – this configuration includes all mappings which will be used to import the data (“to destination” mapping direction)
+ - **Payment model mapping to destination ISO20022** – this configuration includes all mappings which will be used to import the data (“to destination� mapping direction)
  - **ISO20022 Credit transfer** – this configuration includes a format component that is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as a format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)
  - **ISO20022 Credit transfer (CE)**, where CE correspond to country extension – derived format to the ISO20022 Credit transfer with the same structure and with certain country-specific differences
  - **Pain.002** – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal

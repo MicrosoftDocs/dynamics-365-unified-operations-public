@@ -68,10 +68,10 @@ To start to work with the VAT declaration, follow these steps.
 
     | Report | Report code | Description |
     |---|---|---|
-    | VAT declaration 2018 | НДС 2018 | Декларация по налогу на добавленную стоимость (2018) |
-    | VAT declaration 2019 | НДС 2019 | Декларация по налогу на добавленную стоимость (2019) |
+    | VAT declaration 2018 | �ДС 2018 | Деклараци� по налогу на добавленную �тоимо�ть (2018) |
+    | VAT declaration 2019 | �ДС 2019 | Деклараци� по налогу на добавленную �тоимо�ть (2019) |
 
-4. Select the line for the **НДС 2019** report code, and then, on the Action Pane, select **Setup**.
+4. Select the line for the **�ДС 2019** report code, and then, on the Action Pane, select **Setup**.
 5. On the **Requisites setup** page, sort the financial report cells by the **Description** column. Then review the list of the financial report cells.
 6. Optional: Set up a financial report for the VAT declaration, and set up calculation rules for financial report cells.
 
@@ -84,8 +84,8 @@ To start to work with the VAT declaration, follow these steps.
 
     | Processing | Processing code | Description |
     |---|---|---|
-    | VAT declaration 2018 | НДС 5.05 (2018) | Декларация по налогу на добавленную стоимость (2018) |
-    | VAT declaration 2019 | НДС 5.06 (2019) | Декларация по налогу на добавленную стоимость (2019) |
+    | VAT declaration 2018 | �ДС 5.05 (2018) | Деклараци� по налогу на добавленную �тоимо�ть (2018) |
+    | VAT declaration 2019 | �ДС 5.06 (2019) | Деклараци� по налогу на добавленную �тоимо�ть (2019) |
 
 8. Follow these steps to set up the ER format that is run when the VAT declaration is generated in electronic format:
 
@@ -146,30 +146,30 @@ Section 3 of the VAT declaration contains the amounts of the registered factures
 
 | Line number | Column number | Name | XML attribute/element name | Description | Comment |
 |---|---|---|---|---|---|
-| 010 | 3 | Transfer of goods, services and property rights | РеалТов20/НалБаза | The tax base of outgoing customer invoices that have VAT at 20 percent, except for invoices to foreign customers | New tax rate for 2019 reporting |
-| 010 | 4 | Transfer of goods, services and property rights | РеалТов20/СумНал | The VAT amount of outgoing customer invoices that have VAT at 20 percent, except for invoices to foreign customers | New tax rate for 2019 reporting |
-| 020 | 3 | Transfer of goods, services and property rights | РеалТов10/НалБаза | The tax base of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers | |
-| 020 | 4 | Transfer of goods, services and property rights | РеалТов10/СумНал | The VAT amount of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers | |
-| 041 | 3 | Transfer of goods, services and property rights | РеалТов18/НалБаза | The tax base of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2018 |
-| 041 | 4 | Transfer of goods, services and property rights | РеалТов18/СумНал | The VAT amount of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2018 |
-| 043 | 3 | Transfer of goods, services and property rights as per the point 7 of article 164 | РеалТов7.164/НалБаза | The tax base of outgoing customer invoices to foreign customers that have VAT at a non-zero percentage | New line for 2019 reporting |
-| 043 | 4 | Transfer of goods, services and property rights | РеалТов7.164/СумНал | The VAT amount of outgoing customer invoices to foreign customers that have VAT at a non-zero percentage | New line for 2019 reporting |
-| 070 | 3 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/НалБаза | The tax base of factures on prepayments that were received from customers for future shipments | |
-| 070 | 4 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/СумНал | The VAT amount of factures on prepayments that were received from customers for future shipments | |
-| 080 | 4 | Tax amounts that were accepted for deduction, which are subject to restoration, total | СумНалВосст/СумНалВс | The amount of restored VAT, based on the following outgoing VAT processing data:<ul><li>Incoming factures that are related to non-taxable shipments for the current reporting period</li><li>Outgoing factures on prepayments that were made to vendors</li><li>Fixed assets that were used in non-taxable operations</li></ul> | |
-| 090 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration, for prepayments to vendors | СумНалВосст/СумНал170.3.3 | The amount of restored VAT, based on outgoing factures on prepayments that were made to vendors. VAT restoration occurs in the current reporting period. | |
-| 100 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration for operations subject to 0% VAT rate | СумНалВосст/СумНалОперСт0 | The amount of restored VAT for all export factures during the current reporting period | |
+| 010 | 3 | Transfer of goods, services and property rights | РеалТов20/�алБаза | The tax base of outgoing customer invoices that have VAT at 20 percent, except for invoices to foreign customers | New tax rate for 2019 reporting |
+| 010 | 4 | Transfer of goods, services and property rights | РеалТов20/Сум�ал | The VAT amount of outgoing customer invoices that have VAT at 20 percent, except for invoices to foreign customers | New tax rate for 2019 reporting |
+| 020 | 3 | Transfer of goods, services and property rights | РеалТов10/�алБаза | The tax base of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers | |
+| 020 | 4 | Transfer of goods, services and property rights | РеалТов10/Сум�ал | The VAT amount of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers | |
+| 041 | 3 | Transfer of goods, services and property rights | РеалТов18/�алБаза | The tax base of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2018 |
+| 041 | 4 | Transfer of goods, services and property rights | РеалТов18/Сум�ал | The VAT amount of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2018 |
+| 043 | 3 | Transfer of goods, services and property rights as per the point 7 of article 164 | РеалТов7.164/�алБаза | The tax base of outgoing customer invoices to foreign customers that have VAT at a non-zero percentage | New line for 2019 reporting |
+| 043 | 4 | Transfer of goods, services and property rights | РеалТов7.164/Сум�ал | The VAT amount of outgoing customer invoices to foreign customers that have VAT at a non-zero percentage | New line for 2019 reporting |
+| 070 | 3 | Prepayments or partial payments received from customers for future shipments | ОплПредПо�т/�алБаза | The tax base of factures on prepayments that were received from customers for future shipments | |
+| 070 | 4 | Prepayments or partial payments received from customers for future shipments | ОплПредПо�т/Сум�ал | The VAT amount of factures on prepayments that were received from customers for future shipments | |
+| 080 | 4 | Tax amounts that were accepted for deduction, which are subject to restoration, total | Сум�алВо��т/Сум�алВ� | The amount of restored VAT, based on the following outgoing VAT processing data:<ul><li>Incoming factures that are related to non-taxable shipments for the current reporting period</li><li>Outgoing factures on prepayments that were made to vendors</li><li>Fixed assets that were used in non-taxable operations</li></ul> | |
+| 090 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration, for prepayments to vendors | Сум�алВо��т/Сум�ал170.3.3 | The amount of restored VAT, based on outgoing factures on prepayments that were made to vendors. VAT restoration occurs in the current reporting period. | |
+| 100 | 4 | Tax amounts that were accepted for deduction and which are subject to restoration for operations subject to 0% VAT rate | Сум�алВо��т/Сум�алОперСт0 | The amount of restored VAT for all export factures during the current reporting period | |
 
 ### VAT receivable/deductible
 
 | Line number | Column number | Name | XML attribute/element name | Description |
 |---|---|---|---|---|
-| 120 | 3 | Tax amount accepted during acquisition of goods, services, and property rights that are subject to tax deduction | НалПредНППриоб | The amount of incoming VAT that is subject to reimbursement of factures on purchase invoices. The purchases include goods, services, and property rights that are subject to tax deduction. |
-| 130 | 3 | Tax amounts accepted when prepayments are made to vendors for future acquisitions that are subject to tax deduction | НалПредНППок | The amount of incoming VAT that is subject to reimbursement of factures on prepayments that were made to vendors |
-| 150 | 3 | Tax amount that was accepted for deduction when goods were imported for internal consumption | НалУплТамож | The VAT amount of factures of the GTD (Custom declaration) and KTS (Customs values correction) types when goods are imported from territories other than Belarus |
-| 160 | 3 | Tax amount that was accepted for deduction when goods were imported from Belarus | НалУплНОТовТС | The VAT amount of factures of the GTD and KTS types when goods are imported from Belarus |
-| 170 | 3 | Tax amount that was accepted for deduction after delivery of goods to customers | НалИсчПрод | The incoming VAT amount of factures on prepayments that were received from customers for future shipments. The amount is subject to refund after goods are delivered or services are rendered. |
-| 180 | 3 | Tax amount that was accepted for deduction for a buyer-tax agent | НалУплПокНА | The VAT amount of factures on tax agent transactions where the **Facture source** value is **Tax correction** |
+| 120 | 3 | Tax amount accepted during acquisition of goods, services, and property rights that are subject to tax deduction | �алПред�ППриоб | The amount of incoming VAT that is subject to reimbursement of factures on purchase invoices. The purchases include goods, services, and property rights that are subject to tax deduction. |
+| 130 | 3 | Tax amounts accepted when prepayments are made to vendors for future acquisitions that are subject to tax deduction | �алПред�ППок | The amount of incoming VAT that is subject to reimbursement of factures on prepayments that were made to vendors |
+| 150 | 3 | Tax amount that was accepted for deduction when goods were imported for internal consumption | �алУплТамож | The VAT amount of factures of the GTD (Custom declaration) and KTS (Customs values correction) types when goods are imported from territories other than Belarus |
+| 160 | 3 | Tax amount that was accepted for deduction when goods were imported from Belarus | �алУпл�ОТовТС | The VAT amount of factures of the GTD and KTS types when goods are imported from Belarus |
+| 170 | 3 | Tax amount that was accepted for deduction after delivery of goods to customers | �алИ�чПрод | The incoming VAT amount of factures on prepayments that were received from customers for future shipments. The amount is subject to refund after goods are delivered or services are rendered. |
+| 180 | 3 | Tax amount that was accepted for deduction for a buyer-tax agent | �алУплПок�� | The VAT amount of factures on tax agent transactions where the **Facture source** value is **Tax correction** |
 
 In section 3, you can also get the amounts of the financial report that is set up for the VAT declaration.
 
@@ -181,53 +181,53 @@ You should define the following names for financial report cells. In this way, t
 
 | Name of cell | Line-column in section 3 | Comment |
 |---|---|--|
-| РеалТов20НалБаза | 010-3\* | New tax rate for 2019 reporting |
-| РеалТов20СумНал | 010-4\* | New tax rate for 2019 reporting |
-| РеалТов10НалБаза | 020-3\* | |
-| РеалТов10СумНал | 020-4\* | |
-| РеалТов18НалБаза | 041-3\* |Tax rate for documents up to the end of 2018 | 
-| РеалТов18СумНал | 041-4\* | Tax rate for documents up to the end of 2018 |
-| РеалТов118НалБаза | 042-3 | |
-| РеалТов118СумНал | 042-4 | |
-| РеалТов7.164НалБаза | 043-3\* | New line for 2019 reporting |
-| РеалТов7.164СумНал | 043-4\* | New line for 2019 reporting |
-| РеалТовРознЧекНалБаза | 044-3 | New line for 2019 reporting |
-| РеалТовРознЧекСумНал | 044-4 | New line for 2019 reporting |
-| РеалСрок151.1\_20НалБаза | 045-3 | New line for 2019 reporting |
-| РеалСрок151.1\_20СумНал | 045-4 | New line for 2019 reporting |
-| РеалСрок151.1\_10НалБаза | 046-3 | New line for 2019 reporting |
-| РеалСрок151.1\_10СумНал | 046-4 | New line for 2019 reporting |
-| РеалПредИКНалБаза | 050-3 | |
-| РеалПредИКСумНал | 050-4 | |
-| ВыпСМРСобНалБаза | 060-3 | |
-| ВыпСМРСобСумНал | 060-4 | |
-| ОплПредПостНалБаза | 070-3\* | |
-| ОплПредПостСумНал | 070-4\* | |
-| СумНалВосстСумНалВс | 080-4\* | |
-| СумНалВосстСумНал170.3.3 | 090-4\* | |
-| СумНалВосстСумНалОперСт0 | 100-4\* | |
-| КорРеалТовНалБаза | 105-3 | Updated line for 2019 reporting |
-| КорРеалТовСумНал | 105-4 | Updated line for 2019 reporting |
-| КорРеалПредИКНалБаза | 109-3 | |
-| КорРеалПредИКСумНал | 109-4 | |
-| УплДеклар151.1НалБаза | 110-3 | |
-| УплДеклар151.1СумНал | 110-4 | |
-| УплДеклар173.6НалБаза | 115-3 | |
-| УплДеклар173.6СумНал | 115-4 | |
+| РеалТов20�алБаза | 010-3\* | New tax rate for 2019 reporting |
+| РеалТов20Сум�ал | 010-4\* | New tax rate for 2019 reporting |
+| РеалТов10�алБаза | 020-3\* | |
+| РеалТов10Сум�ал | 020-4\* | |
+| РеалТов18�алБаза | 041-3\* |Tax rate for documents up to the end of 2018 | 
+| РеалТов18Сум�ал | 041-4\* | Tax rate for documents up to the end of 2018 |
+| РеалТов118�алБаза | 042-3 | |
+| РеалТов118Сум�ал | 042-4 | |
+| РеалТов7.164�алБаза | 043-3\* | New line for 2019 reporting |
+| РеалТов7.164Сум�ал | 043-4\* | New line for 2019 reporting |
+| РеалТовРознЧек�алБаза | 044-3 | New line for 2019 reporting |
+| РеалТовРознЧекСум�ал | 044-4 | New line for 2019 reporting |
+| РеалСрок151.1\_20�алБаза | 045-3 | New line for 2019 reporting |
+| РеалСрок151.1\_20Сум�ал | 045-4 | New line for 2019 reporting |
+| РеалСрок151.1\_10�алБаза | 046-3 | New line for 2019 reporting |
+| РеалСрок151.1\_10Сум�ал | 046-4 | New line for 2019 reporting |
+| РеалПредИК�алБаза | 050-3 | |
+| РеалПредИКСум�ал | 050-4 | |
+| ВыпСМРСоб�алБаза | 060-3 | |
+| ВыпСМРСобСум�ал | 060-4 | |
+| ОплПредПо�т�алБаза | 070-3\* | |
+| ОплПредПо�тСум�ал | 070-4\* | |
+| Сум�алВо��тСум�алВ� | 080-4\* | |
+| Сум�алВо��тСум�ал170.3.3 | 090-4\* | |
+| Сум�алВо��тСум�алОперСт0 | 100-4\* | |
+| КорРеалТов�алБаза | 105-3 | Updated line for 2019 reporting |
+| КорРеалТовСум�ал | 105-4 | Updated line for 2019 reporting |
+| КорРеалПредИК�алБаза | 109-3 | |
+| КорРеалПредИКСум�ал | 109-4 | |
+| УплДеклар151.1�алБаза | 110-3 | |
+| УплДеклар151.1Сум�ал | 110-4 | |
+| УплДеклар173.6�алБаза | 115-3 | |
+| УплДеклар173.6Сум�ал | 115-4 | |
 
 **Tax receivable/deductible**
 
 | Name of cell | Line-column in section 3 |
 |---|---|
-| НалПредНППриоб | 120-3\* |
-| НалПредНПКапСтр | 125-3 |
-| НалПредНППок | 130-3\* |
-| НалИсчСМР | 140-3 |
-| НалУплТамож | 150-3\* |
-| НалУплНОТовТС | 160-3\* |
-| НалИсчПрод | 170-3\* |
-| НалУплПокНА | 180-3\* |
-| НалВыч171.14 | 185-3 |
+| �алПред�ППриоб | 120-3\* |
+| �алПред�ПКапСтр | 125-3 |
+| �алПред�ППок | 130-3\* |
+| �алИ�чСМР | 140-3 |
+| �алУплТамож | 150-3\* |
+| �алУпл�ОТовТС | 160-3\* |
+| �алИ�чПрод | 170-3\* |
+| �алУплПок�� | 180-3\* |
+| �алВыч171.14 | 185-3 |
 
 
 > [!NOTE]
@@ -409,15 +409,15 @@ For the earlier example, the following data will be present in section 6 of the 
 ## Generate a VAT declaration in electronic format
 
 1. To generate VAT declaration files, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. Select the format to generate the report in. For example, select **НДС 5.06 (2019)**.
+2. Select the format to generate the report in. For example, select **�ДС 5.06 (2019)**.
 3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
 4. Select the row for the message that was created. Enter a description, and specify the start and end dates for the report. The end date is treated as the base date for financial reports.
 5. Optional: On the **Message additional fields** FastTab, enter the following information.
 
     | Field name | Description | Field value |
     |---|---|---|
-    | CorrectionNumber | Номер коррекции | Enter the number of the correction for corrective accounting reporting. |
-    | ReportingDate | Отчетная дата для коррекции | Optionally enter the reporting date for corrective accounting reporting. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
+    | CorrectionNumber | �омер коррекции | Enter the number of the correction for corrective accounting reporting. |
+    | ReportingDate | Отчетна� дата дл� коррекции | Optionally enter the reporting date for corrective accounting reporting. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
 
 6. On the **Messages** FastTab, select **Update status**, and then, in the **Run processing** dialog box, select **OK**. Validate that the message status is changed to **Ready to generate**.
 7. On the **Messages** FastTab, select **Generate report**.

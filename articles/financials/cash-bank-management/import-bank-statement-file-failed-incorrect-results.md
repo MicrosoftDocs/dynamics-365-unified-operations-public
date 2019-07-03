@@ -67,7 +67,7 @@ The BAI2 and MT940 files are text-based files and require an adjustment to enabl
 
 ### Debug the XSLT
 
-For more information, see <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.
+For more information, see <https://msdn.microsoft.com/library/ms255605.aspx>.
 
 1.  Start Microsoft Visual Studio.
 2.  Create a console application.

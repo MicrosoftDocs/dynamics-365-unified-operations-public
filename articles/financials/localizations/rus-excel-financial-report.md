@@ -41,7 +41,7 @@ Set up a financial report so that it has the list of financial report cells and 
 
 1. Upload data management package settings. For this example, upload the **RU Accounting reporting 5.07 (2016).zip** data management package settings as described in [Accounting reporting in electronic format](rus-accounting-reporting.md).
 2. Go to **General ledger \> Financial reports setup \> Financial reports**.
-3. Select the line that has the value **Баланс** in the **Report code** column.
+3. Select the line that has the value **Балан�** in the **Report code** column.
 4. Select **Setup**.
 5. On the **Requisites setup** page, set up calculation rules for report cells, as described in [Financial reporting (Russia)](rus-financial-reports.md#set-up-calculation-rules-for-report-cells).
 
@@ -89,7 +89,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 5. Configure the **Balance sheet format Excel example (RU)** ER format:
 
     1. On the **Configurations** page, select the **Balance sheet format Excel example (RU)** ER configuration, and then, on the Action Pane, select **Designer**.
-    2. Expand the **Excel = "Balance sheet"** format element and then the **Sheet\<стр.1_2\>** format element. Review all cells that will contain data in the output for the financial report.
+    2. Expand the **Excel = "Balance sheet"** format element and then the **Sheet\<�тр.1_2\>** format element. Review all cells that will contain data in the output for the financial report.
     3. On the **Mapping** tab, review the elements of the **Financial reports model** that are sources for financial report cells.
     4. Review the cells from **DD** through **PrevPrevYear** (**DD**, **MM**, **YYYY**, **Company name**, and so on). Make sure that they are mapped to model elements from the **Header** group that contains various information about the organization and report.
 
@@ -106,7 +106,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
         - [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
         - [ER Map data model to selected data sources](../../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
 
-    5. Review the cells that the financial report values are exported to. For example, the **АктивВнеОбАНематАктПояснения**, **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв** cells are mapped to the following calculated field: **Calculations.'\$Values'("\<Input parameter = Cell name\>").Value** or **Calculations.'\$Values'("\<Input parameter = Cell code\>").Text**.
+    5. Review the cells that the financial report values are exported to. For example, the **�ктивВнеОб��емат�ктПо��нени�**, **�ктивВнеОб��емат�ктСумОтч**, **�ктивВнеОб��емат�ктСумПрдщ**, and **�ктивВнеОб��емат�ктСумПрдшв** cells are mapped to the following calculated field: **Calculations.'\$Values'("\<Input parameter = Cell name\>").Value** or **Calculations.'\$Values'("\<Input parameter = Cell code\>").Text**.
 
         The **Calculations.'\$Values'** calculated field contains the value of the financial report cell that has a code that equals the "Input parameter."
 
@@ -114,19 +114,19 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
 5. Bind the calculated values of financial report cells to elements of the ER format cells:
 
-    1. Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
-    2. Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
-    3. For all four ER format cells, on the **Format** tab, enter a value in the **Name** field. The value of the **Name** field must equal the value of the **Cell code** field in the financial report. For this example, the value that you enter in the **Name** field should equal the value of the **Excel range** field: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, or **АктивВнеОбАНематАктСумПрдшв**.
+    1. Select the **�ктивВнеОб��емат�ктПо��нени�** ER format cell, and then select **Unbind**.
+    2. Repeat the previous step for the following three ER format cells: **�ктивВнеОб��емат�ктСумОтч**, **�ктивВнеОб��емат�ктСумПрдщ**, and **�ктивВнеОб��емат�ктСумПрдшв**.
+    3. For all four ER format cells, on the **Format** tab, enter a value in the **Name** field. The value of the **Name** field must equal the value of the **Cell code** field in the financial report. For this example, the value that you enter in the **Name** field should equal the value of the **Excel range** field: **�ктивВнеОб��емат�ктСумОтч**, **�ктивВнеОб��емат�ктСумПрдщ**, or **�ктивВнеОб��емат�ктСумПрдшв**.
 
         ![Format mapping field name](media/rus-format-designer-format.jpg)
 
     4. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
-    5. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
+    5. In the list of Excel format cells, select the **�ктивВнеОб��емат�ктПо��нени�** cell, and then select **Bind**.
 
         ![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
 
     6. On the **Mapping** tab, select the **Value** element.
-    7. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
+    7. In the list of Excel format cells, select the **�ктивВнеОб��емат�ктСумОтч** cell, and then select **Bind**.
     8. Repeat the previous two steps for the other two Excel cells that you unbound earlier.
 
 ## Run the financial report format
@@ -149,7 +149,7 @@ To run the ER format that is based on the **Financial reports model**, follow th
     | Economic activity type code                                      | Enter the economic activity type code ("ОКВЭД"). |
     | Organizational form code                                         | Enter the organizational form code ("ОКОПФ"). |
     | Ownership form code                                              | Enter the ownership form code ("ОКФС"). |
-    | Report                                                           | Select the financial report that should be calculated. For this example, select **Баланс**. |
+    | Report                                                           | Select the financial report that should be calculated. For this example, select **Балан�**. |
 
 5. Select **OK**.
 6. Review the Excel report that is generated.

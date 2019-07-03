@@ -52,7 +52,7 @@ Use this task guide to create a collection letter sequence. This task uses the U
 13. In the list, click the link in the selected row.
 14. Enter the minimum overdue balance required before a collection letter is sent.
 15. Enter the number of grace days that you will allow.
-    * This is the number of days after the due date that a collection letter can be generated. The due date that is used for the calculation depends on the position of the collection letter in the collection letter sequence:   ‚¶Å	The grace period for collection letter 1 is relative to the due date on the invoice.  ‚¶Å	The grace period for collection letters 2 and higher is relative to the date that the previous collection letter is posted or printed, depending on the selection in the Update collection letter code field in the Accounts receivable parameters page.  
+    * This is the number of days after the due date that a collection letter can be generated. The due date that is used for the calculation depends on the position of the collection letter in the collection letter sequence:   ‚¶	The grace period for collection letter 1 is relative to the due date on the invoice.  ‚¶	The grace period for collection letters 2 and higher is relative to the date that the previous collection letter is posted or printed, depending on the selection in the Update collection letter code field in the Accounts receivable parameters page.  
 16. Click Add to add the last collection letter in the sequence.
     * You can add up to five collection letter codes for a collection letter sequence.  
 17. In the collection letter code field, select the next collection letter that will be sent in the sequence.

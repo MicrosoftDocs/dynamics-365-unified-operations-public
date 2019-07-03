@@ -90,7 +90,7 @@ The Action Pane contains buttons that display related information for the select
 ## Waive, reinstate, or reverse interest and fees
 You can waive, reinstate, or reverse complete interest notes, or fees and transaction interest that are a part of interest notes. You can do this from the Collect tab on the Action Pane on the All customers list page by clicking Interest note, Transaction interest, or Fee. 
 
-These adjustments affect only interest notes, and the interest and fees that they include. Use the steps in the “Create write-off transactions in one step” section to write off all of the charges that a customer owes.
+These adjustments affect only interest notes, and the interest and fees that they include. Use the steps in the “Create write-off transactions in one step� section to write off all of the charges that a customer owes.
 
 For more information see, [Create an interest code with a range](tasks/create-interest-code-range.md) and [Process interest](tasks/process-interest.md). 
 
