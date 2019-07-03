@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module. You can walk through this procedure in demo data company USMF, or using your own data. If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals. Inventory counting is normally carried out by a warehouse employee.
+This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. The procedure applies to “basic warehousing� functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module. You can walk through this procedure in demo data company USMF, or using your own data. If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals. Inventory counting is normally carried out by a warehouse employee.
 
 
 ## Create an inventory counting journal

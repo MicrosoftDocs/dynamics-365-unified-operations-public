@@ -39,7 +39,7 @@ This procedure demonstrates how to process customer rebates from claim generatio
     * The agreement is for an individual customer, in this example customer US-009.  
     * Rebates are given to the customer when they purchase a specific product. In this case, the product has item number T0020.   
     * The customer's sales performance, against which the rebate amounts are estimated, is to be accumulated on a weekly basis.  
-    * The setting for “Price taken from” is Gross, which means that line's sales amount on which basis the claim is estimated is not reduced by the line discount.  
+    * The setting for “Price taken from� is Gross, which means that line's sales amount on which basis the claim is estimated is not reduced by the line discount.  
     * The Rebate line break type field shows the method for calculating rebates. In this case, the sales target against which the rebates are to be estimated is set to Quantity.   
     * The agreement's lines specify the rebate amount type, the actual rebate value, and the thresholds. In this example, the customer will qualify for a rebate of 20 USD per unit sold, if their weekly purchases of the product fall within 1 to 50 units; and a rebate of 40 USD per unit sold, if they purchase above 50 units.  
 2. Close the page.
@@ -74,7 +74,7 @@ This procedure demonstrates how to process customer rebates from claim generatio
     * The Rebates page acts a workbench in which you can review, approve, and process rebate claims. You’ll now process the claims that were created as a result of invoicing a sales order for customer US-009, who is the subject of the rebate agreement USMF-000001.   
     * The first line represents a rebate claim for 800 USD, which is based on the sales of 40 units of product T0020, calculated at 20 USD per unit. This matches the conditions of the first quantity break in the rebate agreement.  
     * The second claim is for 2,400 USD, which is based on the sales of 60 units of product T0020, calculated at 40 USD per unit, as per the second quantity break in the agreement.  
-    * Both claims are in the “To be calculated” state. This means that they are associated with an agreement that tracks the customer's sales performance on periodic basis and that they have to be re-calculated to account for the total sales volume within the respective period.   
+    * Both claims are in the “To be calculated� state. This means that they are associated with an agreement that tracks the customer's sales performance on periodic basis and that they have to be re-calculated to account for the total sales volume within the respective period.   
 2. Click Cumulate.
 3. In the Customer field, enter or select a value.
 4. In the Start date field, select today's date.

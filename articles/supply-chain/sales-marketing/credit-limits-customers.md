@@ -134,7 +134,7 @@ and stored when you create an aging snapshot, and is displayed in the
 **Collections** form. The amounts that are displayed in the **Collections** form
 might not include all transaction activity until a new aging snapshot is
 created. For more information, see [Collections and credit in Accounts
-receivable](https://technet.microsoft.com/en-us/library/hh209221.aspx).
+receivable](https://technet.microsoft.com/library/hh209221.aspx).
 
 Depending on the documents that are selected, information about a customer’s
 balance and remaining credit amount is calculated when sales orders, packing
@@ -189,7 +189,7 @@ master (CustCustomersMaintain) duty assigned to it to make changes in this form.
     identification in the **Government identification** field.
 
 > [!NOTE]
-> In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this topic. 
+> In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?� in this topic. 
 
 **How do I manually check credit limits on sales orders?**
 

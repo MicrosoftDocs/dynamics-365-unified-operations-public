@@ -105,8 +105,8 @@ The following transactions are illustrated in the graphic below:
 -   4a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 14.00 each.
 -   4b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
 -   5. Inventory close is performed.
--   6a. “Weighted average inventory close transaction” financial issue is created to sum the settlements of all the inventory financial receipts.
--   6b. “Weighted average inventory close transaction” financial receipt is created as the offset to 5a.
+-   6a. “Weighted average inventory close transaction� financial issue is created to sum the settlements of all the inventory financial receipts.
+-   6b. “Weighted average inventory close transaction� financial receipt is created as the offset to 5a.
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
@@ -167,8 +167,8 @@ The following transactions are illustrated in the graphic below:
 -   5a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 14.00 each.
 -   5b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
 -   6. Inventory close is performed. During inventory close, the system will disregard all inventory transactions that are updated only physically. The summarized settlement principle will be used because only one financial receipt exists. An adjustment of USD 1.50 will be posted to the inventory transaction that has been financially issued as of the inventory closing date. After inventory close, the on- hand inventory will be a quantity of 3 with a running average cost price of USD 15.00.
--   7a. “Weighted average inventory close transaction” financial issue is created to sum the settlements of all the inventory financial receipts.
--   7b. “Weighted average inventory close transaction” financial receipt is created as the offset to 5a.
+-   7a. “Weighted average inventory close transaction� financial issue is created to sum the settlements of all the inventory financial receipts.
+-   7b. “Weighted average inventory close transaction� financial receipt is created as the offset to 5a.
 
 The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 

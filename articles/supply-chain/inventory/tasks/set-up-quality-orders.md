@@ -106,7 +106,7 @@ This procedure shows you how to enable a quality management process where incomi
 1. Go to Inventory management > Setup > Quality control > Test groups.
 2. Click New.
 3. In the Test group field, type a value.
-    * Give the Test group a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it’s to be used with a quality group that selects items starting with “T”, you could call it “T-item tests”.  
+    * Give the Test group a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it’s to be used with a quality group that selects items starting with “T�, you could call it “T-item tests�.  
 4. In the Description field, type a value.
 5. In the Item sampling field, select the item sampling line that you created before.
 6. In the list, find and select the desired record.

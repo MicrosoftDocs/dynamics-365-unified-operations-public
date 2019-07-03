@@ -160,7 +160,7 @@ New vendor collaboration users are provisioned via the workflow that you set up 
 
 If the email address of a new vendor collaboration user belongs to a domain that is registered with Azure as a tenant (that is, if it's a managed domain account), the email address must be an existing Azure AD account. Otherwise, the provisioning process can't be completed.
 
-For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Azure AD account management, see [Azure Active Directory B2B collaboration](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/).
+For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Azure AD account management, see [Azure Active Directory B2B collaboration](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/).
 
 ## Additional resources
 

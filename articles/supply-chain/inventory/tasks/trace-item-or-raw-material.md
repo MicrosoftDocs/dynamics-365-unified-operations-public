@@ -45,9 +45,9 @@ This procedure demonstrates how to use item tracing to identify where items or r
 ## Identify an item, trace it forward, and make an analysis
     * The top node of the tree represents the on hand quantity of the selected item and batch. You need to expand the nodes of the tree to find the item that the forward trace should be executed on.   
 1. In the tree, expand 'the nodes described below, and then select the last node'.
-    * Expand: 'P9100 / 1 / 10 / as-12-344-01 â— 2 keg â— 7.00 gal  \P9100 â— Picked â— Sales order 000072 â— 12/22/2015  â— -1 keg â— -4.00 gal â— Site=1, Warehouse=10, Batch number=as-12-344-01  \P9100 â— Production B-000050 â— 12/9/2015â— 7 keg â— 27.00 gal â— Site=1,Warehouse=10,Batch number=as-12-344-01 â— Co-products: P9101' and then select that node.     
+    * Expand: 'P9100 / 1 / 10 / as-12-344-01 â— 2 keg â— 7.00 gal  \P9100 â— Picked â— Sales order 000072 â— 12/22/2015  â— -1 keg â— -4.00 gal â— Site=1, Warehouse=10, Batch number=as-12-344-01  \P9100 â— Production B-000050 â— 12/9/2015â— 7 keg â— 27.00 gal â— Site=1,Warehouse=10,Batch number=as-12-344-01 â— Co-products: P9101' and then select that node.     
 2. In the tree, expand 'the node described below and then select that node'.
-    * Starting from the node that youâ€™ve just selected,  expand 'M9103 â— Production line B-000050 â— 12/9/2015  â— -160.00 lb â— Size=70, Color=OK, Site=1, Warehouse=10, Batch number=App01' and then select that node.  
+    * Starting from the node that youâ€™ve just selected,  expand 'M9103 â— Production line B-000050 â— 12/9/2015  â— -160.00 lb â— Size=70, Color=OK, Site=1, Warehouse=10, Batch number=App01' and then select that node.  
 3. Click Trace from node.
 4. Click Forward.
 5. On the Action Pane, click Tracing.

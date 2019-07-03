@@ -84,14 +84,14 @@ Below you can find a description of the tags that are included in the template:
 
 | Field | Description | 
 |---------|---------|
-|< Header >< From >< Credential domain=â€â€ >|The domain of the buyerâ€™s company.|
+|< Header >< From >< Credential domain=â€â€ >|The domain of the buyerâ€™s company.|
 |< Header >< From >< Credential>< Identity >< /Identity > | The identity of the buyerâ€™s company.|
-|< Header >< To >< Credential domain=â€â€ > | The domain of the vendorâ€™s company.|
+|< Header >< To >< Credential domain=â€â€ > | The domain of the vendorâ€™s company.|
 |< Header >< To >< Credential>< Identity >< /Identity> | The identity of the vendorâ€™s company.|
-|< Header >< Sender >< Credential domain=â€â€ > | The domain of the buyerâ€™s company.|
+|< Header >< Sender >< Credential domain=â€â€ > | The domain of the buyerâ€™s company.|
 |< Header >< Sender >< Credential >< Identity >< /Identity> | The identity of the buyerâ€™s company.|
 |< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|The shared secret for the buyerâ€™s company.|
-|< Request deploymentMode=â€â€ >|The test or production deployment.|
+|< Request deploymentMode=â€â€ >|The test or production deployment.|
 |< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|The URL of the vendorâ€™s punchout endpoint.|
 
 ### Extrinsic elements
@@ -106,15 +106,15 @@ The post back message isÂ the message that is received from the vendor when the 
 
 | Message received from vendor | Copied to requisition line in Finance and Operations|
 |------------------------------|----------------------------------------------------------|
-|< ItemIn quantity=â€â€ > |Quantity|
+|< ItemIn quantity=â€â€ > |Quantity|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|External item ID|
-|< ItemDetail>< UnitPrice >< Money currency=â€â€ >| Currency|
+|< ItemDetail>< UnitPrice >< Money currency=â€â€ >| Currency|
 |< ItemDetail >< UnitPrice >< Money >< /Money >| Unit price|
-|< ItemDetail >< Description ShortName=â€â€ >|Product name|
+|< ItemDetail >< Description ShortName=â€â€ >|Product name|
 |< ItemDetail >< Description >< /Description >|Included in item description; Product name if ShortName is not specified.|
 |< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure >|Unit|
 |< ItemDetail >< Classification >< /Classification >|Included in item description|
-|< ItemDetail >< Classification domain=â€â€ >|Included in item description|
+|< ItemDetail >< Classification domain=â€â€ >|Included in item description|
 
 ## Delete an external catalog
 Delete an external catalog with the Delete action on the page.

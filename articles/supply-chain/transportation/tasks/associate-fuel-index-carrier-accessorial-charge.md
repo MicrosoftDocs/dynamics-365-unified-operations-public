@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier. You need to have set up a carrier fuel index before you run this guide. You can use the “Set up a carrier fuel index” guide to do this. These setup tasks are typically done by a Logistics manager. The demo data used to create this procedure is USMF.
+This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier. You need to have set up a carrier fuel index before you run this guide. You can use the “Set up a carrier fuel index� guide to do this. These setup tasks are typically done by a Logistics manager. The demo data used to create this procedure is USMF.
 
 
 ## Create an accessorial master

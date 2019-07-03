@@ -111,14 +111,14 @@ When checking if the location directive line is applicable, this will be based o
 
 This option is only used for put/locate quantity into the warehouse. It is only for the put work type. The valid values are:
 
--	**License Plate Qty** - When evaluating whether the quantity is within the “From” and “To” quantity ranges, use the quantity on the license plate being received.
--	**Unitized Qty** - When evaluating whether the quantity is within the “From” and “To” quantity ranges, use the quantity being unitized during the specific transaction.
--	**Remaining Qty** - When evaluating whether the quantity is within the “From” and “To” quantity ranges, use the quantity left to be received on the purchase order line currently being checked in.
--	**Expected Qty** - When evaluating whether the quantity is within the “From” and “To” quantity ranges, use the total quantity of the purchase order line, regardless of what has already been received.
+-	**License Plate Qty** - When evaluating whether the quantity is within the “From� and “To� quantity ranges, use the quantity on the license plate being received.
+-	**Unitized Qty** - When evaluating whether the quantity is within the “From� and “To� quantity ranges, use the quantity being unitized during the specific transaction.
+-	**Remaining Qty** - When evaluating whether the quantity is within the “From� and “To� quantity ranges, use the quantity left to be received on the purchase order line currently being checked in.
+-	**Expected Qty** - When evaluating whether the quantity is within the “From� and “To� quantity ranges, use the total quantity of the purchase order line, regardless of what has already been received.
 
 ### Restrict by unit
 
-This allows a location directive line to be made specific to a unit of measure or multiple units of measure. When reserving quantity, if you only want to reserve pallets from a specific set of locations, then the middle-grid sequence would restrict that particular sequence to “PL” so that any quantity less than a pallet would not select the sequence. Select **Restrict by unit** to set up the units. You can also restrict the line to more than one unit. This works only with location directives of type pick. 
+This allows a location directive line to be made specific to a unit of measure or multiple units of measure. When reserving quantity, if you only want to reserve pallets from a specific set of locations, then the middle-grid sequence would restrict that particular sequence to “PL� so that any quantity less than a pallet would not select the sequence. Select **Restrict by unit** to set up the units. You can also restrict the line to more than one unit. This works only with location directives of type pick. 
 
 ### Round up to unit
 

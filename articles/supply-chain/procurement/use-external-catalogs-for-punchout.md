@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 By using external catalogs for PunchOut e-procurement, you don't have to maintain information about your vendors' products in your own master data. 
 Instead, the shopping cart on a vendor's website is converted to requisition lines that have the correct product information. 
 
-You should avoid maintaining the descriptions and prices of your vendors’ products in your own product master data. Instead, use external catalogs for PunchOut e-procurement. Then, when employees create requisitions, they can “punch out” to a vendor’s external catalog site (in other words, they leave your system and go to the vendor’s site). The products that are added to the shopping cart on the vendor’s website can then be converted to requisition lines. Therefore, you get the correct product information: product ID, name, price, and so on.
+You should avoid maintaining the descriptions and prices of your vendors’ products in your own product master data. Instead, use external catalogs for PunchOut e-procurement. Then, when employees create requisitions, they can “punch out� to a vendor’s external catalog site (in other words, they leave your system and go to the vendor’s site). The products that are added to the shopping cart on the vendor’s website can then be converted to requisition lines. Therefore, you get the correct product information: product ID, name, price, and so on.
 
 To use external catalogs, an employee must create a requisition on the **My purchase requisitions** page.
 

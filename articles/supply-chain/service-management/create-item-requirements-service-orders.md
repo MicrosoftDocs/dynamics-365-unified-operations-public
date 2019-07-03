@@ -48,7 +48,7 @@ Item requirements for service orders are processed through a project. To create 
 
 3.  On the **Action Pane**, on the **Dispatch** tab, click **Item requirement**.
 
-4.  In the **Item requirements** form, enter information for the required item. For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).
+4.  In the **Item requirements** form, enter information for the required item. For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## Create an item requirement for a service agreement
 

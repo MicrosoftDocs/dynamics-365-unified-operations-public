@@ -59,7 +59,7 @@ The setup of the tracking dimension group that is assigned to the product determ
 You can create partial invoices and packing slips for sales orders, and register only the serial numbers for the items that those invoices and packing slips include. If you want to create a partial invoice, and you have more than one packing slip for the sales order, you can include serial numbers from more than one packing slip. However, there can be only one packing slip that doesn't include all serial numbers. For example, if you have three packing slips, and each packing slip includes two serialized items, you can't create a partial invoice for one item from each packing slip.
 
 ## What do I do when a serial number isn't readable?
-If a serial number can't be read or scanned, you can create a blank line for the item by clicking **Not readable** on the **Serial numbers** page. If the serial number becomes available later, you can update the invoice or packing slip. For more information, see the next section, “Can I correct or change the serial numbers I have registered for a sales order?”
+If a serial number can't be read or scanned, you can create a blank line for the item by clicking **Not readable** on the **Serial numbers** page. If the serial number becomes available later, you can update the invoice or packing slip. For more information, see the next section, “Can I correct or change the serial numbers I have registered for a sales order?�
 
 ## Can I correct or change the serial numbers that I have registered for a sales order?
 Yes, you can correct serial numbers if the following conditions are met:

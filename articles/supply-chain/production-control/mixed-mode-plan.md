@@ -57,7 +57,7 @@ Finance and Operations makes sure that the material flow follows the model.
 
 The warehouse for picking material is assigned dynamically at run time, after the supply policy has been defined.  
 
-Typically, kanbans aren't created for future dates, because a kanban has a short life cycle. To maintain full visibility into the supply chain, we have introduced the new planning concept of a “planned kanban,” which is used to calculate derived requirements and helps guarantee that the requirements are sourced based on the same logic that is used when the actual kanban is created.  
+Typically, kanbans aren't created for future dates, because a kanban has a short life cycle. To maintain full visibility into the supply chain, we have introduced the new planning concept of a “planned kanban,� which is used to calculate derived requirements and helps guarantee that the requirements are sourced based on the same logic that is used when the actual kanban is created.  
 
 The same logic is present for all other supply policy types. Therefore, long-term materials planning is based on the same logic that you expect to run with the actual orders after production and supply are approved.
 
