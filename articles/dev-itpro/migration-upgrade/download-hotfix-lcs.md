@@ -5,7 +5,7 @@ title: Download updates from Lifecycle Services (LCS)
 description: This topic covers what updates you should expect to see and how you can get the updates from Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -75,35 +75,39 @@ Based on your product and version, you will have different update options from L
    | Service update     | A service update is the version currently automatically applied to customer environments based on the LCS project update settings.<br><br>A service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | A service update is available if your environment has not been updated to the current service update version available for auto-update.<br><br>Only the designated sandbox or production environment will be auto-updated if you have configured the update settings for the LCS project. However, you can manually apply the current service update version to other sandbox environments or your cloud-hosted environments.|
    | Upcoming service update | An upcoming service update is the latest version that is generally available for self-update.<br><br>An upcoming service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | An upcoming service update will be made generally available for self-deployment approximately 2 weeks prior to when Microsoft starts automatically applying this version based on your update settings for the LCS project.|
 
-- **Application version 7.x or 8.0 with Platform update 4 or higher** - this release will still have the granular X++ updates. Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the Platform binary updates tile is available to provide the platform updates as a cumulative update.
+- **Application version 7.x or 8.0 with Platform update 4 or later** - This release will still have the granular X++ updates. Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the **Platform binary updates** tile is available to provide the platform updates as a cumulative update.
  
    For customers that are on this combination, you will see the following tiles: 
    1. **All X++ updates** - This tile shows all the granular X++ updates released by Microsoft. 
         
-   2. **Critical X++ updates** - This tile shows recommended KBs that are based on the telemetry data in your production environment. This tile will only show *Production environments* and a subset of the updates shown under the **All X++ updates** tile that are recommended for your environments. 
+   2. **Critical X++ updates** - This tile shows recommended KBs that are based on the telemetry data in your production environment. This tile will only show Production environments and a subset of the updates shown under the **All X++ updates** tile that are recommended for your environments. 
         
    3. **All binary updates** - This tile shows a combined cumulative binary update for both the Application and Platform.
         
    4. **Platform binary updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
 
-- **Application version 7.x with Platform update 3 or lower** - 
-   For customers that are on this combination, you will see 3 tiles - All X++ updates, Critical X++ updates, and All binary updates. Because this release platform can still be overlayered, there is no Platform binary updates tile.
-   > [!NOTE]
+- **Application version 7.x with Platform update 3 or earlier** - 
+   For customers that are on this combination, you will see 3 tiles: **All X++ updates**, **Critical X++ updates**, and **All binary updates**. Because this release platform can still be overlayered, there is no **Platform binary updates** tile.
+   
+    > [!NOTE]
     > If you are on this release, you need to upgrade as soon as possible. 
 
   
 ## Download binary updates
+To download binary updates, follow these steps in LCS.
 
 1. Select any of the binary update options, including Quality update, Service update, All binary updates, and Platform binary updates to view the combined list of application and platform binary updates. 
   
 2. On the **Binary updates** page, select **Save package**.
+   
    > [!NOTE]
    > You will not be able to select KBs to be saved because binary updates will automatically save all KBs in an update package.        
+   
    ![Save Binary Package](./media/ReviewAndSaveBinaryPackage.jpg)
 
 3. On the **Review and save updates** page, select **Save package**.
 
-![Review and Save updates](./media/ReviewBinaryPackage.jpg)
+   ![Review and Save updates](./media/ReviewBinaryPackage.jpg)
 
 4. In the **Save package to asset library**, enter the **Name** and **Description**, and select **Save package**.
 
@@ -118,17 +122,18 @@ Based on your product and version, you will have different update options from L
    ![ViewSavedBinaryPackageInAssetLibrary](./media/ViewSavedBinaryPackageInAssetLibrary.jpg)
 
 ## Download X++ updates
+To download X++ updates, follow these steps in LCS. 
 
-1. Select the **All X++ updates** tile to view the list of available application updates to an environment, or select the **Critical X++ updates** tile for application updates that are recommended for your production environment. 
+1. Select the **All X++ updates** tile to view the list of available application updates for an environment, or select the **Critical X++ updates** tile for the application updates that are recommended for your production environment. 
 
    ![Application X++ update tile](./media/X++UpdateTiles.jpg)   
   
-2. On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then select **Add** to add selected KBs to the **Download package**.
+2. On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then select **Add** to add selected KBs to the download package.
 
     ![Add X++ updates](./media/AddX++Updates.jpg)
 
     > [!NOTE]
-    > For X++ updates, you can download all available updates at this point. Click **Select all**, and then click **Add** to add all KBs to  the **Download package**.
+    > For X++ updates, you can download all available updates at this point. Click **Select all**, and then click **Add** to add all KBs to the download package.
 
 3. Select **Download package**.
 
