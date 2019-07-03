@@ -125,7 +125,7 @@ This release includes the following features for Electronic reporting (ER).
 ### Performance optimization of customer-built configurations
 A functional consultant persona can enable tracing of execution of electronic reporting configuration. This consultant can also analyze a generated trace and optimize electronic reporting configuration performance by setting caching on frequently used nodes.
 
-Before this release, caching supported only a flat list of records, which meant that any related records were not cached. This feature allows caching of nested records. It also allows users to enable “lazy” caching, when only referenced records are being cached, not the whole list.
+Before this release, caching supported only a flat list of records, which meant that any related records were not cached. This feature allows caching of nested records. It also allows users to enable “lazy� caching, when only referenced records are being cached, not the whole list.
 
 ### Setting up parameters by legal entity
 
@@ -199,7 +199,7 @@ Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.

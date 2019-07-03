@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-# MICROSOFT DYNAMICS  PROJECT “RUSHMORE” STORE STARTER KIT (PRIVATE PREVIEW)
+# MICROSOFT DYNAMICS  PROJECT “RUSHMORE� STORE STARTER KIT (PRIVATE PREVIEW)
 
 These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THIS AGREEMENT, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THIS AGREEMENT. 
 
@@ -50,7 +50,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 **2. ADDITIONAL LICENSING REQUIREMENTS AND/OR USE RIGHTS.** 
 
-**a) Extensible Code.**  The software may include sample code, modules, templates, styles, or text files (available in the SRC folder in the GitHub repository for the software) that you, or your consultants, are permitted to modify (“Modifiable Code”).   You may copy, modify, and incorporate copies of the modified version of the Modifiable Code only in the customization package that you develop for your websites and for use only for your internal business purposes.  Microsoft is not responsible for any problems that result from modifications made to the Modifiable Code.  Microsoft will not provide technical or other support for any modifications made to the Modifiable Code. 
+**a) Extensible Code.**  The software may include sample code, modules, templates, styles, or text files (available in the SRC folder in the GitHub repository for the software) that you, or your consultants, are permitted to modify (“Modifiable Code�).   You may copy, modify, and incorporate copies of the modified version of the Modifiable Code only in the customization package that you develop for your websites and for use only for your internal business purposes.  Microsoft is not responsible for any problems that result from modifications made to the Modifiable Code.  Microsoft will not provide technical or other support for any modifications made to the Modifiable Code. 
 
 **b) Third Party Images and Videos.**  The software may include third party images and videos that are for personal use only and may not be copied except as provided by Microsoft within the demo websites.  You may install and use an unlimited number of copies of the demo websites., You may not publish, rent, lease, lend, or redistribute any images or videos without authorization from the rights holder, except and only to the extent that the applicable copyright law expressly permits doing so. 
 
@@ -97,7 +97,7 @@ share, publish, distribute, or lend the software, provide the software as a stan
 
 **11. EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit http://aka.ms/exporting. 
 
-**12. SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind. 
+**12. SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is�, “with all faults�, and without warranty of any kind. 
 
 **13. UPDATES.** The software may periodically check for updates and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices. 
 
@@ -119,7 +119,7 @@ ii.Limitation of Liability. In case of intentional conduct, gross negligence, cl
 
 Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence. 
 
-**17. DISCLAIMER OF WARRANTY. THE SOFTWARE IS LICENSED “AS IS.” YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES, OR CONDITIONS. TO THE EXTENT PERMITTED UNDER APPLICABLE LAWS, MICROSOFT EXCLUDES ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.** 
+**17. DISCLAIMER OF WARRANTY. THE SOFTWARE IS LICENSED “AS IS.� YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES, OR CONDITIONS. TO THE EXTENT PERMITTED UNDER APPLICABLE LAWS, MICROSOFT EXCLUDES ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.** 
 
 **18. LIMITATION ON AND EXCLUSION OF DAMAGES. IF YOU HAVE ANY BASIS FOR RECOVERING DAMAGES DESPITE THE PRECEDING DISCLAIMER OF WARRANTY, YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT, OR INCIDENTAL DAMAGES.**
 

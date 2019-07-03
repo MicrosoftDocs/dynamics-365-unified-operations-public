@@ -104,7 +104,7 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 You can contribute and make edits to the Finance and Operations documentation. To get started, click the **Edit** (pencil) button on a topic, or go to our repo at <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. The following video shows how you can contribute to our documentation.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the [What's new in Dynamics 365 playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9) available on YouTube.
 
