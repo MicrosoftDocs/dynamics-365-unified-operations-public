@@ -2979,8 +2979,8 @@
          href: 
        - name: Generate electronic documents for payments using a format configuration
          href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-      - name: Upgrade your format by adopting a new base version of that format
-        href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+       - name: Upgrade your format by adopting a new base version of that format
+         href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
     - name: Formula designer in Electronic reporting
       href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
     - name: Manage ER model mpaping in separate ER configurations
@@ -3072,7 +3072,7 @@
     - name: Import data from incoming files by using ER solutions
       items: 
       - name: Parse incoming documents in different formats
-        href: 
+        href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
       - name: Configure data import from manually selected files
         items:
         - name: Create configurations to import data from an external XML file
@@ -3084,7 +3084,7 @@
         - name: Import files in XML format with optional atrributes
           href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
         - name: Configure ER formtas to import XML format files with optional attributes
-          href: 
+          href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
        - name: Split generated XML files based on file size and content quantity
          href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
     - name: Configuration lifecycle
@@ -3123,10 +3123,10 @@
         items: 
         - name: Trace generated report results and compare them with baseline values
           href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-        - name Improvements in tracing resultsof generated ER reports and comparisons with baseline values
+        - name Improvements in tracing results of generated ER reports and comparisons with baseline values
           href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
         - name: Automate testing with Electronic reporting
-          href: 
+          href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
       - name: Automate business processes by using Electronic reporting configurations
         items: 
         - name: Configure Electronic reporting to pull data into Power BI
