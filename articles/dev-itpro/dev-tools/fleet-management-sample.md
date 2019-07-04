@@ -69,7 +69,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 
     [![New Customer](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
 
-4.  On the Action Pane, click the Microsoft Office logo, then click on **Customers** under **Export to Excel **to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
+4.  On the Action Pane, click the Microsoft Office logo, then click on **Customers** under **Export to Excel** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
 
     [![Export to excel](./media/exporttoexcel.jpg)](./media/exporttoexcel.jpg)
 
@@ -143,7 +143,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 ## Create a new KPI definition
 The web client enables users who have appropriate permissions to modify KPI definitions that have been modeled and deployed by developers. Users also have the ability to create new KPI definitions in the client. In this walkthrough, you create a new KPI definition in the client.
 
-1.  Open the **Reservation Management** workspace. On the navigation bar, go to** Fleet Management **&gt;** Workspaces &gt; Reservation Management**.
+1.  Open the **Reservation Management** workspace. On the navigation bar, go to **Fleet Management &gt; Workspaces &gt; Reservation Management**.
 2.  Notice the Total revenue KPI tile shown on the bottom left of the workspace. Click the **Total Revenue KPI** tile. Details of the total revenue KPI tile along with charts indicating top and bottom contributors to revenue will be shown on screen.
 3.  Next, you will define a new KPI to monitor the number of rentals.
 4.  On the Action Pane, click **New**. The **New KPI** dialog will open.
@@ -173,9 +173,9 @@ The web client enables users who have appropriate permissions to modify KPI defi
     | **Green if more than** | 110       |
 
 
-9.  In the application bar, click **Save 
+9.  In the application bar, click **Save** 
 
-    [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)**
+    [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)
 
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
