@@ -2976,7 +2976,7 @@
       - name: Test the prepared ER solution in the target application
         items:
         - name: (ER) Import configurations from RCS
-          href: ../dev-itpro/analytics/tasks/er-import-configurations.md?toc=/fin-and-ops/toc.json
+          href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
         - name: Generate electronic documents for payments using a format configuration
           href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
       - name: Upgrade your format by adopting a new base version of that format
