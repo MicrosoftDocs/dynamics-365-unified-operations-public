@@ -3045,16 +3045,16 @@
         href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
     - name: Use Document management files in format outputs
       items: 
-     - name: Prepare data models to use Document management files in ER outputs
-       href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-     - name: Extend dtaa models to use Document management files in ER outputs
-       href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-     - name: Create formats to use Document management files in ER outputs
-       href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-     - name: Run formats to use Document management files in ER outputs
-       href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-     - name: Modify and run formats to use Document management files in ER outputs
-       href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
+      - name: Prepare data models to use Document management files in ER outputs
+        href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
+      - name: Extend dtaa models to use Document management files in ER outputs
+        href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
+      - name: Create formats to use Document management files in ER outputs
+        href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
+      - name: Run formats to use Document management files in ER outputs
+        href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
+      - name: Modify and run formats to use Document management files in ER outputs
+        href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
     - name: Update application data using Electronic reporting
       items:
       - name: Generate electronic documents and update application data
