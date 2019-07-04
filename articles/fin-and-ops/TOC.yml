@@ -257,14 +257,16 @@
       href: ../dev-itpro/business-events/alerts-business-events.md
     - name: Business events in Microsoft Flow
       href: ../dev-itpro/business-events/business-events-flow.md
-    - name: Consume business events with Microsoft Flow
-      href: ../dev-itpro/business-events/how-to/how-to-flow.md
     - name: Business events developer documentation
       href: ../dev-itpro/business-events/business-events-dev-doc.md
     - name: Troubleshoot business events
       href: ../dev-itpro/business-events/troubleshooting.md
     - name: Use cases for business events
       href: ../dev-itpro/business-events/potential-use-cases.md
+    - name: Tutorials
+      items: 
+      - name: Consume business events with Microsoft Flow
+        href: ../dev-itpro/business-events/how-to/how-to-flow.md
   - name: Compliance
     items:
     - name: Audit policy rules
@@ -3105,6 +3107,8 @@
         href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
       - name: Pin Power BI reports to workspaces
         href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+      - name: Customize embedded reports in Analytical workspaces 
+        href: ../dev-itpro/analytics/customize-analytical-workspace.md
     - name: Tools for creating and extending solutions
       items:
       - name: Analytics, aggregate measurements, and KPI modeling
