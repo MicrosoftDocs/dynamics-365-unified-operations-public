@@ -771,22 +771,22 @@ The **container** type resembles other constructs, such as arrays and collection
         myContainer33 += [34, "banana"];
     }
 
-    // List class example. In this example, variable2 and variable3 refer to the same List object.
+    // Container example. The variable2 and variable3 hold different containers.
     static void JobC(Args _args)
     {
-        container variable2, variable33;
+        container variable2, variable3;
         variable2 += [98];
-        variable33 = variable2;
+        variable3 = variable2;
         variable2 += [97];
     }
 
-    // Container example. The variable2 and variable3 hold different containers.
+    // List class example. In this example, variable2 and variable3 refer to the same List object.
     static void JobL(Args _args)
     {
-        List variable2,variable33;
+        List variable2,variable3;
         variable2 = new List(Types::Integer);
         variable2.addEnd(98);
-        variable33 = variable2;
+        variable3 = variable2;
         variable2.addEnd(97);
     }
 
