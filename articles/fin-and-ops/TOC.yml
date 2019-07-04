@@ -3123,7 +3123,7 @@
         items: 
         - name: Trace generated report results and compare them with baseline values
           href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-        - name Improvements in tracing results of generated ER reports and comparisons with baseline values
+        - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
           href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
         - name: Automate testing with Electronic reporting
           href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
