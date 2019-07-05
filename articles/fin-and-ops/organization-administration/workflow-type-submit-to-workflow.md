@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a SubmitToWorkflow class
-description: This topic describes how to create a SubmitToWorkflow class in Dynamics 365 for Finance and Operations.
+description: This topic describes how to create a SubmitToWorkflow class in Microsoft Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
@@ -32,84 +32,76 @@ ms.dyn365.ops.version: Platform update 1
 
 # Create a SubmitToWorkflow class 
 
-In Finance and operations, a workflow is started when the user clicks the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the main method on a class that you create to activate a workflow. This topic describes how to create a SubmitToWorkflow class using the workflow type name to activate the workflow.
+[!include [banner](../includes/banner.md)]
 
-The same procedure can be used to activate a workflow by using the workflow configuration ID or the workflow sequence number. For more information, see [Activating a workflow](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/activating-a-workflow).
+In Microsoft Dynamics 365 for Finance and operations, a workflow is started when the user selects the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the **main** method of a class that you create to activate a workflow. This topic describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
 
+You can also activate a workflow by using the workflow configuration ID or the workflow sequence number. The basic procedure is the same. For more information, see [Activating a workflow](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow).
 
 > [!NOTE]
-> <P>If you used the Workflow Wizard to create the workflow type, a workflow submit manager class will have already been created by the wizard. You will need to add code to this class.</P>
+> If you used the **Workflow** wizard to create the workflow type, the wizard has already created a workflow submission manager class. You just have to add code to it.
 
+## Create a SubmitToWorkflow class
 
-
-### To create a SubmitToWorkflow class
-
-1.  In the Application Explorer, expand the **Classes** node.
-
-2.  Right-click the **Classes** node, and then select **New Class**. A class group displays under the **Classes** node.
-
-3.  Right-click the new class, and then click **New Method**. A new method node displays under the **Classes** node.
-
-4.  Right-click the new method and then click **Edit**. Enter the following main method code to activate the workflow from the workflow type name. This example applies to workflow submissions for the Finance and Operations client. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
-    ```X++  
-        public static void main(Args args)
-        {
-            // Variable declaration.
-            recId _recId = args.record().RecId;
-            WorkflowCorrelationId _workflowCorrelationId;
-            // Hardcoded workflow type name.
-            WorkflowTypeName _workflowTypeName = workflowtypestr("MyWorkflowType");
-            // Initial note is the information that users enter when they
-            // submit the document for workflow.
-            WorkflowComment _initialNote = "";
-            WorkflowSubmitDialog workflowSubmitDialog;
-        
-            // Opens the submit to workflow dialog box for user comments.
-            workflowSubmitDialog = WorkflowSubmitDialog::construct(args.caller().getActiveWorkflowConfiguration());
-            workflowSubmitDialog.run();
-        
-            if (workflowSubmitDialog.parmIsClosedOK())
-            {
-                _recId = args.record().RecId;
-                // Get user comments from the submit to workflow dialog box.
-                _initialNote = workflowSubmitDialog.parmWorkflowComment();
-        
-                try
-                {
-                    ttsbegin;
-        
-                    // Activate the workflow from a template.
-                    _workflowCorrelationId = Workflow::activateFromWorkflowType(_workflowTypeName, _recId, _initialNote, NoYes::No);
-        
-                    ttscommit;
-        
-                        // Updates the workflow button to diplay Actions instead of Submit.
-                        args.caller().updateWorkflowControls();
-                }
-        
-                catch(exception::Error)
-                {
-                    // ToDo Insert your error code here.
-                }
-            }
-        }
-    ```
-5.  Close the **Editor** window and click **Yes** to save changes.
-    
+1. In Application Explorer, expand the **Classes** node.
+2. Right-click the **Classes** node, and then select **New Class**. A class group appears under the **Classes** node.
+3. Right-click the new class, and then select **New Method**. A new method node appears under the **Classes** node.
+4. Right-click the new method, and then select **Edit**.
+5. Enter the following code for the **main** method to use the name of the workflow type to activate the workflow.
 
     > [!NOTE]
-    > <P>When you save this code, you will get the <STRONG>Empty compound statement</STRONG> warning message in the <STRONG>Compiler Output</STRONG> window unless you add valid code in the catch(exception::Error) block.</P>
+    > This example applies to workflow submissions for the Finance and Operations client. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](https://docs.microsoft.com/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
 
+    ```X++
+    public static void main(Args args)
+    {
+        // Variable declaration.
+        recId _recId = args.record().RecId;
+        WorkflowCorrelationId _workflowCorrelationId;
+        // Hardcoded workflow type name.
+        WorkflowTypeName _workflowTypeName = workflowtypestr("MyWorkflowType");
+        // Initial note is the information that users enter when they
+        // submit the document for workflow.
+        WorkflowComment _initialNote = "";
+        WorkflowSubmitDialog workflowSubmitDialog;
+        // Opens the submit to workflow dialog box for user comments.
+        workflowSubmitDialog = WorkflowSubmitDialog::construct(args.caller().getActiveWorkflowConfiguration());
+        workflowSubmitDialog.run();
+        if (workflowSubmitDialog.parmIsClosedOK())
+        {
+            _recId = args.record().RecId;
+            // Get user comments from the submit to workflow dialog box.
+            _initialNote = workflowSubmitDialog.parmWorkflowComment();
+            try
+            {
+                ttsbegin;
+                // Activate the workflow from a template.
+                _workflowCorrelationId = Workflow::activateFromWorkflowType(_workflowTypeName, _recId, _initialNote, NoYes::No);
+                ttscommit;
+                // Updates the workflow button to display Actions instead of Submit.
+                args.caller().updateWorkflowControls();
+            }
+            catch(exception::Error)
+            {
+                // ToDo Insert your error code here.
+            }
+        }
+    }
+    ```
 
+6. Close the **Editor** window, and select **Yes** to save your changes.
+
+    > [!NOTE]
+    > When you save this code, you will receive an "Empty compound statement" warning message in the **Compiler Output** window unless you add valid code in the **catch(exception::Error)** block.
 
 ## See also
 
-[Activating a workflow](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/activating-a-workflow)
+[Activating a workflow](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow)
 
 [Create a new workflow type](workflow-type-create-new.md)
 
-[Workflow::activateFromWorkflowType method](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
+[Workflow::activateFromWorkflowType method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
 
-[Workflow::activateFromWorkflowSequenceNumber method](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
+[Workflow::activateFromWorkflowSequenceNumber method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
 
-[Workflow::activateFromWorkflowConfigurationId method](https://docs.microsoft.com/en-us/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
+[Workflow::activateFromWorkflowConfigurationId method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
