@@ -322,7 +322,7 @@ Next, you will next see how to include an additional list in the workspace. This
     | Property       | Value              |
     |----------------|--------------------|
     | Name           | VehicleQuickFilter |
-    | Target Control | VehicleGrid        |
+    | Target Control | VehicleList        |
 
 23. Press **Ctrl+S** to save.
 
@@ -337,7 +337,7 @@ Next, you will next see how to include an additional list in the workspace. This
 
     | Property        | Value       |
     |-----------------|-------------|
-    | Table           | FMTVehicles |
+    | Table           | FMTVehicle  |
     | Dynamics Fields | Yes         |
 
 7.  Right-click **Ranges**, and then click **New Range**.
@@ -360,7 +360,7 @@ Next, you will next see how to include an additional list in the workspace. This
 
     | Property       | Value                |
     |----------------|----------------------|
-    | Menu item name | FMTAvailableVehicles |
+    | Object         | FMTAvailableVehicles |
     | Query          | FMTAvailableVehicles |
 
 6.  Press **Ctrl+S** to save.
