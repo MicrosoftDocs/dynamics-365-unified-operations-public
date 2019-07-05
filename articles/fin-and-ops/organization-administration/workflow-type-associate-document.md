@@ -2,7 +2,7 @@
 # required metadata
 
 title: Associate a workflow document class with a workflow type
-description: The topic describes how to associate a workflow document class with a workflow type in Dynamics 365 for Finance and Operations.
+description: The topic describes how to associate a workflow document class with a workflow type in Microsoft Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
@@ -32,23 +32,20 @@ ms.dyn365.ops.version: Platform update 1
 
 # Associate a workflow document class with a workflow type 
 
-To create a workflow in Dynamics 365 for Finance and Operations, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields used by the workflow. This topic describes how to bind the workflow document class to a workflow type.
+[!include [banner](../includes/banner.md)]
 
+To create a workflow in Microsoft Dynamics 365 for Finance and Operations, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields that the workflow uses. This topic describes how to bind a workflow document class to a workflow type.
 
 > [!NOTE]
-> <P>If you used the Workflow Wizard to create the workflow type, the workflow document class will have already been bound to the workflow type by the wizard.</P>
+> If you used the **Workflow** wizard to create the workflow type, the wizard has already bound the workflow document class to the workflow type.
 
+Before you begin the following procedure, you must create a workflow document class to expose the table fields that are used for conditions in the configuration user interface (UI). For more information, see [Create a workflow document class](workflow-type-document-create.md).
 
+## Bind a workflow document class to a workflow type
 
-Before you begin this procedure, you must create a workflow document class to expose table fields used for conditions in the configuration user interface. For more information, see [Create a workflow document class](workflow-type-document-create.md).
-
-### To bind a workflow document class to a workflow type
-
-1.  In the Application Explorer, expand the **Workflow** node.
-
-2.  In the **Workflow Types** node, right-click the workflow type that you want to bind a workflow document class to, and then click **Properties**.
-
-3.  In the **Properties** sheet, set the **Document** property to the workflow document class that defines the workflow document.
+1. In Application Explorer, expand the **Workflow** node.
+2. In the **Workflow Types** node, right-click the workflow type that you want to bind a workflow document class to, and then select **Properties**.
+3. On the **Properties** sheet, set the **Document** property to the workflow document class that defines the workflow document.
 
 ## See also
 
