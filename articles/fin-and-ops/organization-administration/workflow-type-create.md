@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Creating a workflow type
-description: This topic describes how to create a workflow type in Dynamics 365 for Finance and Operations.
+title: Create a workflow type
+description: This topic describes how to create a workflow type in Microsoft Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
@@ -30,24 +30,26 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Creating a workflow type 
+# Create a workflow type
 
-To add workflow support for a document, you must create a workflow type. This topic describes the procedures to create a workflow type. The workflow type can then be used to create workflow configurations for the document.
+[!include [banner](../includes/banner.md)]
 
-You create workflow types to define:
+To add workflow support for a document, you must create a workflow type. After you create a workflow type, it can be used to create workflow configurations for the document. This topic provides links to the procedures for creating a workflow type.
 
-  - The workflow document to assign the workflow to.
-  - A category that defines the module that the workflow type is available in.
-  - Tasks, automated tasks, and approvals supported for the workflow.
-  - The workflow started, completed, configuration data change, and canceled event handlers.
-  - A SubmitToWorkflowMenuItem.
+You create workflow types to define the following elements:
+
+- The workflow document to assign the workflow to
+- A category that defines the module that the workflow type is available in
+- Tasks, automated tasks, and approvals that are supported for the workflow
+- The workflow started, completed, configuration data change, and canceled event handlers
+- A **SubmitToWorkflowMenuItem** menu item
 
 ## In this section
 
-  - [Workflow type checklist](workflow-type-checklist.md)  
-  - [Create a workflow category](workflow-type-category.md)  
-  - [Create a query for a workflow type](workflow-type-query.md)  
-  - [Create a new workflow type](workflow-type-create-new.md)  
-  - [Create a workflow document class](workflow-type-document-create.md)  
-  - [Create a SubmitToWorkflow class](workflow-type-submit-to-workflow.md)  
-  - [Associate a workflow document class with a workflow type](workflow-type-associate-document.md)  
+- [Workflow type checklist](workflow-type-checklist.md)
+- [Create a workflow category](workflow-type-category.md)
+- [Create a query for a workflow type](workflow-type-query.md)
+- [Create a new workflow type](workflow-type-create-new.md)
+- [Create a workflow document class](workflow-type-document-create.md)
+- [Create a SubmitToWorkflow class](workflow-type-submit-to-workflow.md)
+- [Associate a workflow document class with a workflow type](workflow-type-associate-document.md)
