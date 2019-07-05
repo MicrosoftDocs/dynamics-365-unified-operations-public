@@ -74,11 +74,14 @@ select the **Career site management** tab.
 
 -   **Search Engine Optimization** - When enabled, all public jobs posted to
     Attract career site will be searchable using search engines like Bing
-    and Google.
+    and Google. 
 
     > [!NOTE] 
     > There might be a delay between turning this setting on and search results appearing, depending on the search engine that you are using.
-         
+    
+-   **Terms and Conditions** - When enabled, all candidates must consent to the organization's terms and conditions when applying for any job. The Attract Administrator is able to configure their own Consent text as well as the link to their Terms and Conditions page. 
+
+        
 ## Career site URLs
 
 The following list contains the commonly used career site URLs and how to access them.
