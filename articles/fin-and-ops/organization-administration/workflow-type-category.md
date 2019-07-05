@@ -29,42 +29,40 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
 ---
-# Create a workflow category 
+# Create a workflow category
+
+[!include [banner](../includes/banner.md)]
+
+When you create a workflow type, you must assign it to a workflow category. The workflow category determines whether the workflow type is available in a specific module. If an appropriate workflow category doesn't already exist, you must create it.
+
+For example, a workflow type for a customer invoice should not be available in the **Master planning** module. To make the workflow type available only in the **Customer** module, select the **Customer** module when you create a workflow category.
 
 This topic describes how to create a workflow category.
 
-When you create a workflow type, it must be assigned to a workflow category. The workflow category determines whether a workflow type is available in a specific module. If an appropriate workflow category does not already exist, you must create one.
-
-For example, a workflow type for a customer invoice should not be available in the **Master planning** module. To make the workflow type available only in the **Customer** module, create a workflow category with the **Customer** module selected.
-
-The following procedure describes how to create a new workflow category.
-
 ## Create a workflow category
 
-1.  In **Application Explorer**, expand the **Business Process and Workflow** node.
+1. In Application Explorer, expand the **Business Process and Workflow** node.
+2. Follow one of these steps to create the workflow category:
 
-2.  Create the workflow category, by using one of these methods:
-    + Right-click the **Workflow Categories** node, and then click **New Workflow Category**. A new workflow category group displays under the **Workflow Categories** node. Right-click the new workflow category and then click **Properties**.
-    + In the **Project** menu, select **Add new item**. In the **Add new item** dialog, select **Workflow category**. Give the category a name and then click **Create**.
+    + Right-click the **Workflow Categories** node, and then select **New Workflow Category**. A new workflow category group appears under the **Workflow Categories** node. Right-click the new workflow category, and then select **Properties**.
+    + On the **Project** menu, select **Add new item**. In the **Add new item** dialog box, select **Workflow category**. Enter a name for the category, and then select **Create**.
 
-3.  In the **Properties** sheet, set the following properties as required.
-    
-| Property | Value |
-|-----------|---|
-| Name      | The name that is used to reference the workflow category. |
-| Label     | The label used for the workflow category in the user interface. |
-| Help Text | The description of the workflow category displayed in the configuration user interface. |
-| Module    | The module that the workflow will be available in. The default is **Ledger**. |
+3. On the **Properties** sheet, set the following properties, as required.
 
-After a workflow category is created, you can bind the workflow type to the new category. Typically, this is performed by the Workflow Wizard. The following procedure describes how to manually bind a workflow type to a workflow category.
+    | Property | Value |
+    |---|---|
+    | Name | Specify the name that is used to reference the workflow category. |
+    | Label | Specify the label that is used for the workflow category in the user interface (UI). |
+    | Help Text | Specify the description that is shown for the workflow category in the workflow configuration UI. |
+    | Module | Specify the module that the workflow will be available in. The default module is **Ledger**. |
+
+After you create a workflow category, a workflow type can be bound to it. Typically, the **Workflow** wizard completes this step. However, the following procedure explains how to manually bind a workflow type to a workflow category.
 
 ## Bind a workflow type to a workflow category
 
-1.  In **Application Explorer**, expand the **Business Process and Workflow** node, and then expand the **Workflow Types** node.
-
-2.  Right-click the workflow type that you want to bind a workflow category to, and then select **Properties**.
-
-3.  In the **Properties** sheet, set the **Category** property to the workflow category created in the previous procedure.
+1. In Application Explorer, expand the **Business Process and Workflow** node, and then expand the **Workflow Types** node.
+2. Right-click the workflow type that you want to bind to a workflow category, and then select **Properties**.
+3. On the **Properties** sheet, set the **Category** property to the workflow category that you created in the previous procedure.
 
 ## See also
 
