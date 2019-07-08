@@ -43,7 +43,7 @@ Content modules, as their name suggests, contain actual content and media primit
 
 # Add or remove modules
 ## Add a module
-
+To add a module from to slot or container within your page:
 1)  First select a container or slot that allows a child module to be added to it.
     > [!NOTE]
     > Controlling which modules are allowed within a specific container or slot is defined by the either page’s template or the container module's definition.
