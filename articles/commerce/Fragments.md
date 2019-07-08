@@ -27,7 +27,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 
 ---
-# Fragments
+# Fragments overview
 ---
 Fragments enable a centralized authoring experience for re-usable module configurations needed throughout your site. For example: headers, footers, and banners are often configured as fragments because they are shared across many pages. A great way to think of fragments is that they act like mini webpages that can be inserted into other pages within your site. Fragments have their own lifecycle, which means they are created, referenced, updated, and deleted as independent entities within the authoring tools. Once fragments are configured, they are available to use everywhere that a module can be used within your site structure. Fragments can be referenced within pages, templates, master templates, and even within other fragments (note: fragments can nest up to 7 levels deep).
 
