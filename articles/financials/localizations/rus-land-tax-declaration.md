@@ -718,7 +718,7 @@ Generate a land tax declaration
 
 >   For more information, see [Download Electronic reporting configurations from
 >   Lifecycle
->   Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+>   Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 1.  You can upload Data management package settings to work with the assessed
     tax declaration. Follow these steps:
@@ -752,7 +752,7 @@ Generate a land tax declaration
 
 | **Processing**       | **Processing code**  | **Name**                               |
 |----------------------|----------------------|----------------------------------------|
-| Land tax declaration | Зем�алог 5.06 (2018) | Деклараци� по земельному налогу (2018) |
+| Land tax declaration | ЗемНалог 5.06 (2018) | Декларация по земельному налогу (2018) |
 
 3.  Set up the ER format that is run when accounting reporting is generated in
     electronic format:
@@ -781,7 +781,7 @@ quarter.
 2.  Select the report format to generate.
 
     For example, to generate a land tax declaration in XML format for the year
-    2018, select **Зем�алог 5.06 (2018)**.
+    2018, select **ЗемНалог 5.06 (2018)**.
 
 3.  On the **Messages** FastTab, select **New**.
 
