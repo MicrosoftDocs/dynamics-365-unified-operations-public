@@ -50,7 +50,7 @@ The existing test drive environment will be removed. When it is removed, you can
 
 This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
 
-Since a single Talent environment is “contained� within a single PowerApps environment, there are two options to consider. The first option involves removing the entire PowerApps environment; the second option involves removing only Talent. The first option is preferred when you have created a PowerApps environment expressly for the purpose of provisioning Talent, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established PowerApps environment populated with rich data that's leveraged in PowerApps and Flows.
+Since a single Talent environment is "contained" within a single PowerApps environment, there are two options to consider. The first option involves removing the entire PowerApps environment; the second option involves removing only Talent. The first option is preferred when you have created a PowerApps environment expressly for the purpose of provisioning Talent, and you've just begun implementation, or you don't have any established integrations. The second option is appropriate when you have an established PowerApps environment populated with rich data that's leveraged in PowerApps and Flows.
 
 > [!Important]
 > Before removing the PowerApps environment, ensure it is not being used for rich data integrations outside the scope of Talent. Also note that the default PowerApps environments cannot be removed. 
