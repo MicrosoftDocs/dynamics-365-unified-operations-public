@@ -71,7 +71,7 @@ To add a fragment to your page:
 
 6)  Click “OK”, and the new fragment will be added to your page within the originally selected container/slot.
 
-## Remove a Fragment
+## Remove a fragment
 To remove a fragment from a slot or container within your page:
 
 1)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the name of the fragment you wish to remove.
