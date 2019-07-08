@@ -65,24 +65,24 @@ Exercise 1: Create a new Event Grid Topic
 
 2.  Select **All services \> Integration \> Event Grid Topics**
 
-    <img src="../../media/BEF-Howto-EventGrid-01.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-01.png" width="70%">
 
 3.  Click **Add** to create a new **Event Grid Topic** then fill in the
     parameters and click on **Create**. You can create a new **resource group**
     as a container for your lab or use an existing one.
 
-    <img src="../../media/BEF-Howto-EventGrid-02.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-02.png" width="70%">
 
 4.  Once deployment is complete **select** you newly created event grid. Click
     on **Overview** and **Note** the Topic Endpoint value, you will need this
     later in the F&O.
 
-    <img src="../../media/BEF-Howto-EventGrid-03.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-03.png" width="70%">
 
 5.  Back on the property blade **select Access Keys** and **copy** the **Key 1**
     value, you will need this later when configuring the **Key Vault**
 
-    <img src="../../media/BEF-Howto-EventGrid-04.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-04.png" width="70%">
 
 Exercise 2: Create a Key Vault
 ==============================
@@ -96,7 +96,7 @@ vault on behalf of F&O.
 
 1.  Select **All services \> Security \> key vaults**
 
-    <img src="../../media/BEF-Howto-Keyvault-01.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-01.png" width="70%">
 
 2.  **Create** a new key vault within your resource group and **default
     parameters**
@@ -106,13 +106,13 @@ vault on behalf of F&O.
 2.  Select **Overview** and **copy** the key vault URL **DNS Name** and save it
     for later use.
 
-    <img src="../../media/BEF-Howto-Keyvault-03.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
 3.  Then **select** new **BE-key vault \>Secrets\>Generate/Import**, choose a
     new name for your secret and **copy** the **Event Grid Topic key** you saved
     earlier on exercise 1.
 
-    <img src="../../media/BEF-Howto-Keyvault-04.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 
 4.  Click **Create**
 
@@ -125,12 +125,12 @@ used by F&O to retrieve Event Grid Secrets
 
 1.  Select **All services \> Security \> Azure Active Directory**
 
-    <img src="../../media/BEF-Howto-Keyvault-05.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-05.png" width="70%">
 
 2.  Select **App registrations (preview) \> New registration** then type a new
     name for your application
 
-    <img src="../../media/BEF-Howto-Keyvault-06.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-06.png" width="70%">
 
 3.  Click on **Register**
 
@@ -143,21 +143,21 @@ used by F&O to retrieve Event Grid Secrets
 5.  **Copy your new secret** for later step. Secrets are visible only once, if
     you forget to copy it you will need to delete it and create a new one.
 
-   <img src="../../media/BEF-Howto-Keyvault-08.png" width="50%">
+   <img src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
 
 6.  Select **Overview** and **copy your application ID** and save it for later
     usage
 
-    <img src="../../media/BEF-Howto-Keyvault-09.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-09.png" width="70%">
 
 7.  Then go back to the previously created Key vault by selecting **All services
     \> Security \> key vaults**
 
-    <img src="../../media/BEF-Howto-Keyvault-10.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-10.png" width="70%">
 
 8.  Select **your key vault \> Access policies\> Add new**
 
-    <img src="../../media/BEF-Howto-Keyvault-11.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-11.png" width="70%">
 
 9.  **Select** your **new registered application** in the principal field then
     you need only **Get and List** Secret permissions to retrieve key vault
@@ -167,7 +167,7 @@ used by F&O to retrieve Event Grid Secrets
 
 10.  **Save** your new access policy.
     
-   <img src="../../media/BEF-Howto-Keyvault-13.png" width="50%">
+     <img src="../../media/BEF-Howto-Keyvault-13.png" width="30%">
 
 Exercise 4: Configure a Business Events Endpoint in F&O
 =======================================================
@@ -186,7 +186,7 @@ Exercise 4: Configure a Business Events Endpoint in F&O
 
 7.  Select **Azure Event Grid**
 
-    <img src="../../media/BEF-Howto-EventGrid-05.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-05.png" width="30%">
 
       
 8.  Click **Next**
@@ -209,7 +209,7 @@ Account Number, Customer Name and Total of Invoice.
 
 1.  **Activate** the Free Text Invoice posted business event for USMF.
 
-    <img src="../../media/BEF-Howto-EventGrid-07.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-07.png" width="30%">
 
 2.  Once you activate a Business Event with a new endpoint, F&O sends a test
     message to verify that the configuration was right and to cash the
@@ -220,12 +220,12 @@ Account Number, Customer Name and Total of Invoice.
     both showing a value of at least 1. If this is not the case wait for the
     batch job to pick up your message.
 
-    <img src="../../media/BEF-Howto-EventGrid-08.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-08.png" width="70%">
 
 4.  If the above is fine, then we will create a new Logic Apps to subscribe to
     our Event Grid Topic. Select **All services\> Integration\> Logic Apps**
 
-    <img src="../../media/BEF-Howto-EventGrid-09.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-09.png" width="70%">
 
 5.  Then **Create** a new logic apps in your resource group
 
@@ -272,7 +272,7 @@ Account Number, Customer Name and Total of Invoice.
     schema**” link. Then **past** you’re the text file content and click on
     **Done**
 
-    <img src="../../media/BEF-Howto-EventGrid-16.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-16.png" width="70%">
 
 14. Depending on the quality of your sample payload, your generator will note
     recognize an Integer from a real especially if the real is provided as a
@@ -280,17 +280,17 @@ Account Number, Customer Name and Total of Invoice.
     if you need to change an “integer” filed into “number”. (in Json a “number”
     data type means real).
 
-    <img src="../../media/BEF-Howto-EventGrid-17.png" width="50%">
+    <img src="../../media/BEF-Howto-EventGrid-17.png" width="100%">
 
 15.  Then choose another final action like to send an email to notify with
     customer payment details. **Search** for **send email** action, then login
     to your Office365 account.
 
    <img src="../../media/BEF-Howto-EventGrid-18.png" width="50%">
-
+   
 16.  Then fill-in the message with the required fields.
 
-   <img src="../../media/BEF-Howto-EventGrid-19.png" width="50%">
+     <img src="../../media/BEF-Howto-EventGrid-19.png" width="50%">
 
 17.  **Save** your logic apps.
 
