@@ -56,7 +56,7 @@ After you've created an LCS project, you can provision Talent into an environmen
     > [!NOTE]
     > The Talent instance type is separate from the instance type of the PowerApps environment, which you set in the PowerApps Admin center.
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Talent Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
-4. Talent is always provisioned into a Microsoft PowerApps environment to enable PowerApps integration and extensibility. Read the â€œSelecting a PowerApps environmentâ€ section of this topic before you continue. If you don't already have a PowerApps environment, select Manage environments in LCS or navigate to the PowerApps Admin center. Then follow the steps to [Create a PowerApps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Talent is always provisioned into a Microsoft PowerApps environment to enable PowerApps integration and extensibility. Read the "Selecting a PowerApps environment" section of this topic before you continue. If you don't already have a PowerApps environment, select Manage environments in LCS or navigate to the PowerApps Admin center. Then follow the steps to [Create a PowerApps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > To view existing environments or create new environments, the tenant admin who provisions Talent must be assigned to the PowerApps P2 license. If your organization doesn't have a PowerApps P2 license, you can get one from your CSP or from the [PowerApps pricing page](https://powerapps.microsoft.com/pricing/).
@@ -81,7 +81,7 @@ Use the following guidance when determining which PowerApps environment to deplo
 
 1. In LCS, select **Manage environments**, or go directly to the PowerApps Admin center where you can view existing environments and create new environments.
 2. A single Talent environment is mapped to a single PowerApps environment.
-3. A PowerApps environment â€œcontainsâ€ the Talent application, along with the corresponding PowerApps, Flow, and Common Data Service applications. If the PowerApps environment is deleted, so are the apps within it. When provisioning a Talent environment, either "Trial" or "Production" can be provisioned. Choose the type of environment based on how the environment will be used. 
+3. A PowerApps environment "contains" the Talent application, along with the corresponding PowerApps, Flow, and Common Data Service applications. If the PowerApps environment is deleted, so are the apps within it. When provisioning a Talent environment, either "Trial" or "Production" can be provisioned. Choose the type of environment based on how the environment will be used. 
 4. Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production. We recommend that you consider the various implications for your deployment, because it isn't easy to later change which Talent environment is mapped to a PowerApps environment.
 5. The following PowerApps environments cannot be used for Talent and will be filtered from the selection list within LCS:
  
