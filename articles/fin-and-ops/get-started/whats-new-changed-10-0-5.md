@@ -41,7 +41,8 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 ## Gender in currency declension for Eastern Europe 
 
-You can now define the currency gender.
+You can now define the currency gender. 
+On **Currecnies** page, click **Declension**. In the **Gender** field, select **Masculine**, **Feminine**, or **Neuter**. This parameter may have influence on declension of amount written in text in local language on Cash order. For example, amount 1,01 EUR is written in English text as *One euro 01 cent* on Cash order. When you set up **Gender** for EUR currency as **Neuter**, this amount will be translated to Czech language and written on Cash order as *Edno euro 01 cent*
 
 For more information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms).
 
