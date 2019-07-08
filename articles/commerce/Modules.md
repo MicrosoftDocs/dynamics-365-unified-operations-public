@@ -47,7 +47,7 @@ Below is a simple diagram to illustrate how modules nest into parent container m
 To add a module to slot or container within your page:
 1)  First select a container or slot that allows a child module to be added to it.
     > [!NOTE]
-    > Controlling which modules are allowed within a specific container or slot is defined by the either page’s template or the container module's definition.
+    > The list of allowed modules types that can be added to a specific module slot is defined by the module developer within the module's definition.  Template authors can then further refine the allowed module options to ensure authoring and SEO consistency and efficiency.  These workflows are documented elsewhere.
 
 2)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the container or slot’s name to show the action dropdown menu.
 
