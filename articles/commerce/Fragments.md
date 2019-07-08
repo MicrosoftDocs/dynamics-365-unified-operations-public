@@ -39,9 +39,48 @@ We can then configure this Hero fragment with our specific promotional content, 
 
 ![Common Concepts - Fragments Diagram 1](../commerce/media/fragment-figure1.png)
 # Create a fragment
-Todo
-# Add fragments to a page
-Todo
+
+## Save as Fragment
+
+To convert a module into a reusable fragment:
+
+1)  Follow the previous instructions to configure your module.
+
+2)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the name of the module you wish to convert into a fragment.
+
+3)  In the dropdown action menu, select “Save as Fragment”. This will launch a new fragment modal window.
+
+4)  Enter a name/metadata for your fragment.
+
+5)  Click “OK”. This will save your module configuration as a fragment that can be added to other pages.
+
+
+# Add or remove fragments within a page
+## Add a fragment
+To add a fragment to your page:
+
+1)  First select a container or slot that allows children to be added to it. \[Controlling what is allowed for a container or slot is defined by the page’s template and module definitions, which is covered elsewhere\].
+
+2)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the container or slot’s name to show the action dropdown menu.
+
+3)  Select the “Add Fragment” option from the dropdown \[Note: As mentioned above, if the container or slot does not allow new child modules, the “Add Fragment” option will be disabled\].
+
+4)  After selecting “Add Fragment” option, the Fragment Picker modal window will launch. The Fragment Picker modal is automatically filtered to show allowable fragments for the chosen container/slot (as determined by the page’s template or the container module definition).
+
+5)  From the fragment options, search for and select one to add (If there are no options, you may first need to create a fragment from a supported module type for your container/slot).
+
+6)  Click “OK”, and the new fragment will be added to your page within the originally selected container/slot.
+
+## Remove a Fragment
+To remove a fragment from a slot or container within your page:
+
+1)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the name of the fragment you wish to remove.
+
+2)  In the actions dropdown menu select “Delete”. This will launch a confirmation dialog asking is you are sure you want to remove the fragment.
+
+3)  Assuming you wish to remove it, click “OK” and the canvas will refresh without the fragment.
+  > [!NOTE]
+  > Removing a fragment from a page will *not* delete the fragment from your site, and will only remove the reference to it from within the current page.  Deleting a fragment from your site must be done from the fragment inspector UI, and can only be performed if no pages, templates, or other fragments reference it.
 # Edit a fragment
 Todo
 
