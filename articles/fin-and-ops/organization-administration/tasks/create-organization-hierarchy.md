@@ -34,7 +34,7 @@ Use the following procedure to create an organizational hierarchy. You can use o
 
 
 
-Before you create an organizational hierarchy, you must create organizations. For more information, see the “Create a legal entity� or “Create an operating unit� tasks. You can also create departments and teams. 
+Before you create an organizational hierarchy, you must create organizations. For more information, see the “Create a legal entity” or “Create an operating unit” tasks. You can also create departments and teams. 
 
 
 
