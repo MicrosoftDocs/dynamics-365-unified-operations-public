@@ -38,7 +38,7 @@ This article explains how to prepare to import and create multiple one-time vend
 
 Typically, if you plan to mass-import vendor and invoice information, you first create a data file in spreadsheet format and save it in CSV (comma-separated values) format.
 
--   Because commas are used to separate the fields in a CSV file, don't use commas in the text of an entry. For example, to specify a company name of “Smith, Smith, and Jones,� enter it as **Smith Smith and Jones**.
+-   Because commas are used to separate the fields in a CSV file, don't use commas in the text of an entry. For example, to specify a company name of “Smith, Smith, and Jones,” enter it as **Smith Smith and Jones**.
 -   If you don't set values for fields on this page, the newly created vendor accounts use values from the one-time vendor profile that is referenced on the **Accounts payable parameters** page. For example, if the method of payment is set to **Check** for the one-time vendor profile on the **Accounts payable parameters** page, that method of payment will also be set for the one-time vendors that you're adding.
 -   The **One-time supplier** Accounts payable number sequence is used to assign the one-time vendor accounts and must not be set to **Continuous** for this service. Invoices are generated in a draft state. Before you create payment proposals for payment, you must post the invoices.
 
