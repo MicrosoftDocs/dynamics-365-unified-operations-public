@@ -45,8 +45,8 @@ The following scenario shows a pull-based replenishment system where a pull sign
 [![Pull signal triggers the creation of a kanban to replenish material for a production process](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Withdrawal kanban
-2.  Kanban “from� location and put location for warehouse work
-3.  Kanban “to� location and production input location
+2.  Kanban “from” location and put location for warehouse work
+3.  Kanban “to” location and production input location
 4.  Manufacturing process
 5.  Warehouse work for kanban picking
 6.  Warehouse locations for raw material
@@ -61,7 +61,7 @@ To enable raw material picking for the withdrawal kanban, configure wave templat
 
 ## Configure the withdrawal kanban
 
-The transfer activity that is used for the withdrawal kanban is configured as part of an activated activity plan in a Lean production flow. As part of the configuration of the transfer activity, you specify the “from� and “to� locations for the transfer. After you configure the transfer activity, you can assign it to a kanban rule of the **Withdrawal** type. The kanban rule sets the policies and configurations for the withdrawal kanban. The quantity of the kanban defines how many units of the handling unit the kanban carries during the transfer process. The fixed kanban quantity is used when the Fixed replenishment strategy is selected. This quantity defines how many kanbans that are required in order to prevent stock or build inventory from running out at the source of demand. The fixed quantity can be calculated based on actual demand, historical demand, and service levels. The following two scenarios describe how you can manage material replenishment that uses the withdrawal kanban.
+The transfer activity that is used for the withdrawal kanban is configured as part of an activated activity plan in a Lean production flow. As part of the configuration of the transfer activity, you specify the “from” and “to” locations for the transfer. After you configure the transfer activity, you can assign it to a kanban rule of the **Withdrawal** type. The kanban rule sets the policies and configurations for the withdrawal kanban. The quantity of the kanban defines how many units of the handling unit the kanban carries during the transfer process. The fixed kanban quantity is used when the Fixed replenishment strategy is selected. This quantity defines how many kanbans that are required in order to prevent stock or build inventory from running out at the source of demand. The fixed quantity can be calculated based on actual demand, historical demand, and service levels. The following two scenarios describe how you can manage material replenishment that uses the withdrawal kanban.
 
 ## Scenario 1: Replenish a production input location by using a fixed withdrawal kanban
 
@@ -69,7 +69,7 @@ A manufacturing process consumes a purchased raw material from a production inpu
 
 The empty signal can be configured to occur automatically when a kanban is completed. Alternatively, the empty signal can be set up as a manual interaction that is given either from the Kanban transfer board or from a menu on the hand-held device. The Kanban transfer board is the workspace where all activities in the kanban life cycle are managed. 
 
-When the kanban is created, a wave line for the raw material is added to a kanban wave for the material warehouse. In the picking list section of the Kanban transfer board, the status of the material and related warehouse processes can be monitored from wave creation to work creation, until the material is on-hand in the “transfer from� location and is ready to be transferred to the production input locations. The kanban can be completed either from the Kanban transfer board or from a menu on the hand-held device. 
+When the kanban is created, a wave line for the raw material is added to a kanban wave for the material warehouse. In the picking list section of the Kanban transfer board, the status of the material and related warehouse processes can be monitored from wave creation to work creation, until the material is on-hand in the “transfer from” location and is ready to be transferred to the production input locations. The kanban can be completed either from the Kanban transfer board or from a menu on the hand-held device. 
 
 In this scenario, the picking work in the material warehouse is processed as one activity. The transfer activity between the material warehouse and the production warehouse is processed as a separate activity. This approach can be useful if, for example, there is a large physical distance between the two warehouses. In this case, the kanban transfer activity can represent a truck load. 
 
@@ -83,7 +83,7 @@ In the following scenario, the transfer activity of the withdrawal kanban is con
 
 1.  Shared warehouse for raw materials and production
 2.  Warehouse locations for raw materials
-3.  Kanban “from� location and put location for warehouse work
+3.  Kanban “from” location and put location for warehouse work
 4.  Withdrawal kanban
 5.  Production input location
 6.  Manufacturing process
