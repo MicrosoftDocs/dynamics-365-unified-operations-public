@@ -55,8 +55,8 @@ Follow the steps below to create and share a talent pool.
 1. Select **Add** to create the talent pool.
      > [!NOTE]
      > Alternatively, you can add contributors to a talent pool after you have created it. You can also manage access to a talent pool. For example, you can revoke a user's access to the talent pool.
-     > - To add contributors to an existing talent pool that you own, on the **My talent pools** tab, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Find the people by using the people picker, and add them to the list. 
-     > - To revoke a user's access to the talent pool, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. On the **Manage access** tab, select the trash can button next to the user.
+     > - To add contributors to an existing talent pool that you own, on the **My talent pools** tab, in the upper right of the talent pool card, select the ellipsis button (**â€¦**), and then select **Edit**. Find the people by using the people picker, and add them to the list. 
+     > - To revoke a user's access to the talent pool, in the upper right of the talent pool card, select the ellipsis button (**â€¦**), and then select **Edit**. On the **Manage access** tab, select the trash can button next to the user.
 
 6. Select **Update** to complete and save the operation.
 
@@ -106,7 +106,7 @@ The search results show highlights for the various attributes that matched your 
 | Operator | Usage                                                      | Example              |
 |----------|------------------------------------------------------------|----------------------|
 | \*       | Searches for substrings; can be used to return all records | Input: Mi\* <br></br> Result: All records containing fields that begin with "Mi", such as Microsoft, Micro systems, Midtown Enterprises, or Middleton <br></br>Input: \* <br></br> Result: All records in database |
-| “�       | Searches for an exact match                                | Input: “Microsoft� <br></br> Result: All records containing “Microsoft�                    |
+| ""       | Searches for an exact match                                | Input: "Microsoft" <br></br> Result: All records containing â€œMicrosoftâ€                    |
 
 >[!WARNING]
 > Don't turn off relevance search for your Common Data Service instance. This will disable the search experience in Attract.
