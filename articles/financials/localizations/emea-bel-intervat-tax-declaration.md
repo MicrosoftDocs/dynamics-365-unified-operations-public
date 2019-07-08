@@ -134,11 +134,6 @@ To enter correction, click **Tax corrections** &gt; **Adjustments**, and fill in
 
 
 
-Additional resources
---------
-
-[Belgian sales tax reporting codes](http://www.taxexpert.be/bestand/Betekenis%20vakken%20BTW-aangifte.pdf)
-
 
 
 

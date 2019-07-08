@@ -4,7 +4,7 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
-  - name: Preview features in Dynamics 365 for Retail 10.0.3
+  - name: What's new or changed in Dynamics 365 for Retail 10.0.3
     href: get-started/whats-new-10-0-3.md
   - name: What's new or changed in Dynamics 365 for Retail 10.0.2
     href: get-started/whats-new-10-0-2.md
@@ -407,6 +407,10 @@
     items:
     - name: Fiscal printer integration sample for Italy
       href: localizations/emea-ita-fpi-sample.md
+  - name: Mexico
+    items:
+    - name: Global CFDI e-invoices for Mexico
+      href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
   - name: Norway
     items:
     - name: Cash register functionality

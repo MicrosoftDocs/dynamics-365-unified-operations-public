@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.4
 1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 2. Create a purchase order for an exempted item, and save the record.
 3. Select **Tax information**.
-4. On the **GST** FastTab, verify that the **Exempted** check box is selected.
+4. On the **General** Tab, verify that the **Exempt** option is set to **Yes**.
 5. Select **OK**.
 
 ![Tax information dialog box](media/Annotation-2019-05-15-175528.png)

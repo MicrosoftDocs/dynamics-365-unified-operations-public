@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,7 +46,10 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Dynamics 365 for Finance and Operations 10.0.4 
+## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### France: FEC Accounting data export in XML
 
@@ -58,17 +61,12 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. Target timeframe for the functionality to be removed is July 2020. |
 
-=======
-## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### Legacy navigation bar
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Replaced by another feature?**   | Starting in Platform update 24, a restyled navigation bar that features search was introduced. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
@@ -77,8 +75,6 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### Legacy default action behavior
 
@@ -122,9 +118,6 @@ Support for creating project-based sales orders where the project contract has m
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is April 2020. |
 
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### Deprecated APIs and potential breaking changes
 

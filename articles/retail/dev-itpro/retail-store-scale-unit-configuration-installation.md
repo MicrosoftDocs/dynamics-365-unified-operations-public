@@ -5,7 +5,7 @@ title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 12/17/2018
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -90,7 +90,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 12. In the **Name** field, enter a unique name for the channel profile.
 
     > [!IMPORTANT]
-    > For on-premises deployments, use the value **Default** in this field.
+    > For on-premises deployments, any value can be entered in this field, however, the value **Default** is common.
 
 13. On the Action Pane, select **Save**.
 14. On the **Profile properties** FastTab for the new channel profile, select **Add**.
@@ -123,6 +123,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > After the first Retail Store Scale Unit is created, it requires less data generation to perform a full data sync from the Channel database instead of the Channel data group.
+    
+    > [!IMPORTANT]
+    > For on-premises deployments, there is no **Default** channel data group.  Create a new data group (and associate it to the channel database and distribution schedule jobs).
 
 ### Download the Retail Store Scale Unit installer
 
@@ -138,7 +141,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, **https://myContosoURL.com/namespaces/AXSF/**).
     > - AADTokenIssuerPrefix should have the value **https://NOTUSED.microsoft.com**
     > - TransactionServiceAzureAuthority should have the value **https://<ADFS FQDN including .com>/adfs**.
-    > - TransactionServiceAzureResource should have the same value as the **StoreSystemAosUrl** listed in the same configuration file.
+    > - TransactionServiceAzureResource should have the base URL value of the **StoreSystemAosUrl** edited as shown above. For instance, based on the above example **https://myContosoURL.com** would be used as the value, removing the **/namespaces/AXSF/** portion of the URL.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
@@ -223,6 +226,9 @@ The last steps require validation and verification that the Azure application ID
 1. After the application ID (client ID) and key (secret) are created for Retail Store Scale Unit and entered in the installer, the application ID (client ID) must be accepted in Retail headquarters. In Retail headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 2. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Retail.
+
+    > [!IMPORTANT] 
+    > In an on-premises environment, this step is not required to be completed.
 
     1. In Retail headquarters, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
