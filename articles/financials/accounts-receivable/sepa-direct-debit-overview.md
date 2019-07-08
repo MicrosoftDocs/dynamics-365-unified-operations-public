@@ -53,7 +53,7 @@ The SEPA Core Direct Debit Scheme is the basic scheme. It has the following attr
 -   Mandates expire 36 months after the last initiated collection.
 -   The creditor must store mandates for as long as the mandate is valid and for at least 14 months after the last collection.
 -   The scheme may be used for single (one-time) or recurring direct debit collections.
--   Customers have a “no questions asked� right to receive a refund for up to eight weeks after the debit of their account.
+-   Customers have a “no questions asked” right to receive a refund for up to eight weeks after the debit of their account.
 
 ## What is the SEPA Business to Business (B2B) Direct Debit scheme?
 The SEPA B2B Direct Debit Scheme applies to business-to-business transactions and builds on the SEPA Core Direct Debit Scheme. The main differences are:
