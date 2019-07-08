@@ -44,11 +44,11 @@ make informed decisions regarding which technologies best fit their needs.
 
 ## Data integration vision
 Microsoft sees business data as a key asset that makes your company unique. Your
-business’s data is highly valuable. Data gathered and maintained by one part of
+businessâ€™s data is highly valuable. Data gathered and maintained by one part of
 the business relates to data gathered by another part of the business, and these
 relations can be used to improve business processes and business intelligence
 across your organization. Providing easy, secure, stable access to your business
-data, regardless of which system “owns� the data is a key tenet to the vision we
+data, regardless of which system "owns" the data is a key tenet to the vision we
 have for data integration with Dynamics 365 for Talent.
 
 Historically, integrating data between multiple systems has been difficult.
@@ -68,7 +68,7 @@ available for use with Dynamics 365 for Talent (Core HR).
 
 ### Common Data Service entities
 Common Data Service is the preferred public data interface for Dynamics 365 for Talent. Common Data Service is
-built on a mature platform, having grown out of the Dynamics 365 “XRM� platform,
+built on a mature platform, having grown out of the Dynamics 365 "XRM" platform,
 upon which the [Dynamics 365 Customer
 Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement)
 solutions are built.
@@ -248,7 +248,7 @@ and OData-enabled entities.
 Your business data is a valuable asset, but its value can be greatly diminished
 if it is hard to use the data for your specific purposes (such as reporting, data
 mashups, or custom applications). Dynamics 365 for Talent provides several
-technologies for working with your data outside of the Talent application’s user interface (UI),
+technologies for working with your data outside of the Talent applicationâ€™s user interface (UI),
 allowing integrating applications access to the data. This topic has described
 the available integration technologies and some of their key characteristics.
 This information should help you make better decisions on which approaches to
