@@ -77,7 +77,7 @@ When posting the invoice, such as sales order, free text invoice, or project inv
 
 ### Booking example for sales invoice
 
-The following table shows an example of general ledger transactions for two customer transactions —reated for a split payment invoice.
+The following table shows an example of general ledger transactions for two customer transactions —Åreated for a split payment invoice.
 
 ** **
 
