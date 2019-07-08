@@ -1,21 +1,45 @@
+---
+# required metadata
 
+title: Set up master planning
+description: This topic describes various important strategies and parameters that are used to set up master planning.
+author: t-benebo
+manager: AnnBe
+ms.date: 07/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
+# optional metadata
 
+ms.search.form: ReqCreatePlanWorkspace
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: benebotg
+ms.search.validFrom: 2019-05-31
+ms.dyn365.ops.version: AX 10.0.0
 
+---
 
+# Set up master planning
+
+[!include [banner](../includes/banner.md)]
 
 
 # Master planning  setup wizard 
 
-
-
 This page will guide you through the master planning setup wizard. It will guide you through every page of the wizard and give you details of how the parameter suggestions are calculated. Examples of how different companies setup their master planning depending on their business needs will also be provided. 
 
-
-
 ## Specific requirements of your company
-
- 
 
 The first page in the wizard asks you about the specific requirements of your company. It asks you the following questions:
 
@@ -27,11 +51,7 @@ The first page in the wizard asks you about the specific requirements of your co
 
 	- --Approximately what is the highest BOM level among the manufactured items?--
 
-
-
 Note that your answers don't need to be exact, but a rough approximation of how many items and planned orders will be for the legal entity. With these questions, the wizard will configure parameters applying to your legal entity (not only to the master plan you selected). The following parameters according to the formulas shown:
-
-
 
 -**Number of threads**:
 
@@ -67,15 +87,9 @@ Note that your answers don't need to be exact, but a rough approximation of how 
 
 Finally, if you manufacture items, a manufacturing page setup will be shown later on in the wizard. 
 
-
-
 ## Scope of the current plan
 
-
-
 In this page you will answer questions related to how far in the future various requirements will be considered and calculated in master planning. Each of the questions asks if you would like to use a feature, and at the same time how do you want to configure it. 
-
-
 
 Let's take the forecast plan as an example. The question asks you: --"Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?"-- and you can answer the following options:
 
@@ -84,8 +98,6 @@ Let's take the forecast plan as an example. The question asks you: --"Do you wan
 	- --Yes, as defined in this master plan--: when you select this option you will see that the following field after the possible answers enables. In it you can enter the number of days for which master planning will suggest planned orders to fulfill the forecasted demand. The wizard will set the forecast plan time fence flag to "yes" and to the number of days that you indicated the option Forecast plan, under the Time fences tab in the master plans page. This will override the values set in the coverage groups. 
 
 	- --Yes, as defined in the coverage--: when you select this option the Forecast plan time fence in the master plans page will be set to No. Then, the time fences you establish on the coverage group will be used to indicate how long will you be planning for the forecast. 
-
-
 
 The rest of questions and their respective answers will follow the same schema as shown before, depending on your answer:
 
@@ -99,13 +111,7 @@ The rest of questions and their respective answers will follow the same schema a
 
 For more information about [time fences parameters] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling)
 
-
-
-
-
 ## Scheduling options
-
-
 
 This page will only be shown in the wizard if you answered yes to --"Do you manufacture any of the items planned?"-- in the first page. 
 
@@ -115,17 +121,9 @@ In this page you find the first question: --"Do you need to schedule operations 
 
 - --No--: operations scheduling
 
-
-
 You can read more about [job scheduling page] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) and [operations scheduling page]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling)
 
-
-
-
-
 ## Updates of demand and supply
-
-
 
 The questions in this page are related to different options you can use to update supply and demand. These are firming, action messages and delays. 
 
@@ -137,8 +135,6 @@ The wizard will update master planning setup following the schema that was shown
 
 - --Yes, as defined in the coverage group--: it will set the time fence for the option in the master plans page to No. 
 
-
-
 For calculated delays, you will find more questions:
 
 - You can select which order types you would like master planning to update the requested date with the delayed date. 
@@ -147,11 +143,7 @@ For calculated delays, you will find more questions:
 
 For both of these questions, the wizard will update the corresponding parameters that can be found under the Calculated delays tab in the master plans page. 
 
-
-
 ## Summary of your changes
-
-
 
 This last page will show you the changes that the master planning setup wizard recommends for you. You will see the value in your setup (Current setup) and the value suggested by the wizard (new configuration). You are also able to modify the parameters in the new configuration. It is divided into the parameters applying to your legal entity and the ones only applying to the master plan selected. 
 
@@ -160,20 +152,11 @@ You are able to see all parameters that can be modified through the wizard with 
 Finally, when you press "Finish" the wizard will apply the new configuration. If you press Cancel none of the changes will be applied. In all the pages of the wizard you are able to cancel and no changes will be applied. 
 
 
-
-
-
 ## Examples of setup
-
-
 
 In this section two fictional companies and their respective setup is shown to illustrate how the setup can change according to the business needs
 
-
-
 ### Contoso Manufacturer
-
-
 
 Contoso Manufacturer is a manufacturing company that produces speakers. It purchases different raw materials and components used for the final speaker from different suppliers. Some of the characteristics of its supply and manufacturing are:
 
@@ -186,8 +169,6 @@ Contoso Manufacturer is a manufacturing company that produces speakers. It purch
 - The manufacturing plant produces the items. It has a defined number of milling and drilling machines used to process the components. The different components need to be processed by these machines. 
 
 - Many different suppliers. The average lead time for the items is 1 week, expect for a group of items from the same supplier whose lead time is 7 weeks.
-
-
 
 Among the setup for Contoso Manufacturer:
 
@@ -215,11 +196,7 @@ Each of the final items has a route defined for its production and therefore, ma
 
 All the items used for the production are needed to be planned and as they have very different lead times, master planning will have a better performance when using the coverage groups. Again, a margin of 1 week can be given and explosion can be made for the same time as the coverage.
 
-
-
 ### Contoso Retailer
-
-
 
 Contoso Retailer is a distribution company in the fashion industry. It will use master planning to calculate when to place purchase orders according to its forecasted sales. These are some of its characteristics:
 
@@ -228,8 +205,6 @@ Contoso Retailer is a distribution company in the fashion industry. It will use 
 - Retail stores use requisitions to be replenished. 
 
 - The lead time from the main warehouse to each of the stores is approximately 2 weeks for all the items. 
-
-
 
 Among the setup for Contoso Retailer:
 
