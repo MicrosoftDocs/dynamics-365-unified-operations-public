@@ -58,7 +58,7 @@ This guide shows how to add price and vendor information to a purchase requisiti
 2. Click View history.
 3. Refresh the page.
 4. Expand the Tracking details section.
-5. In the tree, select 'the line that starts with “Line workflow activated on�'.
+5. In the tree, select 'the line that starts with “Line workflow activated on”'.
 6. Click View workflow details.
 7. Expand the Work items section.
 8. Click Reassign.
