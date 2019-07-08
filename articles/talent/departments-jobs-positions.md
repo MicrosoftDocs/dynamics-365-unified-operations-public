@@ -74,13 +74,13 @@ You can create job tasks that describe the basic tasks that a worker in a positi
 <tr class="odd">
 <td>Sales manager</td>
 <td><ul>
-<li><span class="input">Perf-review</span> – Review each salesperson’s job performance.</li>
-<li><span class="input">Abs-review</span> – Approve or reject each salesperson’s absence requests or registrations.</li>
+<li><span class="input">Perf-review</span> â€“ Review each salespersonâ€™s job performance.</li>
+<li><span class="input">Abs-review</span> â€“ Approve or reject each salespersonâ€™s absence requests or registrations.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Accountant</td>
-<td><span class="input">FIN-Report</span> – Present weekly financial reports to chief financial officer.</td>
+<td><span class="input">FIN-Report</span> â€“ Present weekly financial reports to chief financial officer.</td>
 </tr>
 </tbody>
 </table>
@@ -91,8 +91,8 @@ Job functions are like job tasks. A job function describes one or more tasks, du
 
 | Job           | Job function                                                |
 |---------------|-------------------------------------------------------------|
-| Sales manager | Mng-people – Manage people who report to you.               |
-| Accountant    | FIN-Review – Maintain financial data for a set of accounts. |
+| Sales manager | Mng-people â€“ Manage people who report to you.               |
+| Accountant    | FIN-Review â€“ Maintain financial data for a set of accounts. |
 
 ### Job types
 
@@ -104,12 +104,12 @@ Use job types to classify similar jobs into categories. Job types, just like job
 
 ### Areas of responsibility
 
-Use areas of responsibility to indicate the work roles, processes, and products that a worker in a position for that job would be responsible for. An example of an area of responsibility for a job titled “Accountant� might be “Financial reporting for Product A�.
+Use areas of responsibility to indicate the work roles, processes, and products that a worker in a position for that job would be responsible for. An example of an area of responsibility for a job titled "Accountant" might be "Financial reporting for Product A".
 
 Positions
 ----------
 
-Positions are an important element of the lower level of an organization hierarchy. A position is an individual instance of a job. For example, the position, “Sales manager (East),� is just one of the positions that is associated with the job, “Sales manager.� Positions exist in a department and are assigned to workers.
+Positions are an important element of the lower level of an organization hierarchy. A position is an individual instance of a job. For example, the position, "Sales manager (East)," is just one of the positions that is associated with the job, "Sales manager." Positions exist in a department and are assigned to workers.
 ### Position creation and maintenance
 
 -   You can view a history of position-related system changes in an easy-to-access list page.
@@ -127,12 +127,12 @@ When you assign a worker to a position, you fill that position. You can assign w
 
 ### Reporting relationships
 
-Positions are important elements of the lower level of an organization hierarchy. In the Position form, you can specify the position that a position reports to. When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions. For example, position “Accountant-A� reports to position “Accounting Supervisor�. Kim Akers is assigned to position “Accounting Supervisor� and Sanjay Patel is assigned to position “Accountant-A�. This means that Sanjay Patel reports to Kim Akers. 
+Positions are important elements of the lower level of an organization hierarchy. In the Position form, you can specify the position that a position reports to. When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions. For example, position "Accountant-A" reports to position "Accounting Supervisor". Kim Akers is assigned to position "Accounting Supervisor" and Sanjay Patel is assigned to position "Accountant-A". This means that Sanjay Patel reports to Kim Akers. 
 
-If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Lori Penor is a general manager at Adventure Works and is assigned to the “General Manager� position. Lori manages the development of a product that is used to clean widgets. Lori requires an accountant to help her with the finances for developing the product. Therefore, she has recruited Sanjay Patel to be her accountant. Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner. 
+If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Lori Penor is a general manager at Adventure Works and is assigned to the "General Manager" position. Lori manages the development of a product that is used to clean widgets. Lori requires an accountant to help her with the finances for developing the product. Therefore, she has recruited Sanjay Patel to be her accountant. Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner. 
 
 For the previous example, you would complete the following tasks to set up the working relationship between Sanjay Patel and Lori Penor:
-1.  Create a custom position hierarchy type called “Widget� to create a hierarchy that includes positions responsible for working on the widget cleaner product.
+1.  Create a custom position hierarchy type called "Widget" to create a hierarchy that includes positions responsible for working on the widget cleaner product.
 2.  Assign the General Manager position to be the position that the Accountant-A position reports to in the Widget hierarchy.
 
 Use the position hierarchy to view the reporting structure of positions. If you have multiple position hierarchies, you can view the hierarchy for each hierarchy type in the position hierarchy. Also, you can search for a position by position ID or by the name of the worker who is assigned to the position. The position hierarchy is an organizational hierarchy.
@@ -168,7 +168,7 @@ For some records, you can specify future changes to the record. The following in
 </tbody>
 </table>
 
-You can modify the information mentioned in the previous table for a position or a job and specify a date when the modifications to the position or job should take effect. For example, a position can only be assigned to one worker, but Sanjay Patel, who is assigned to the position Accountant-A, will be leaving in two weeks. Joe Healy will replace Sanjay Patel when he leaves. Even though Sanjay is still assigned to his position, you can assign Joe Healy to the same position so that the assignment is effective only after Sanjay’s last day.
+You can modify the information mentioned in the previous table for a position or a job and specify a date when the modifications to the position or job should take effect. For example, a position can only be assigned to one worker, but Sanjay Patel, who is assigned to the position Accountant-A, will be leaving in two weeks. Joe Healy will replace Sanjay Patel when he leaves. Even though Sanjay is still assigned to his position, you can assign Joe Healy to the same position so that the assignment is effective only after Sanjay's last day.
 
 
 
