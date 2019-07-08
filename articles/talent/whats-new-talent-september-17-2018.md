@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Talent
 
 This topic describes features that are either new or changed in Core HR.
 
-## Leave and Absence – Accrue time based on hours worked
+## Leave and Absence - Accrue time based on hours worked
 
 A new accrual type has been added to Leave plans. The accrual schedule can now be based on months of service or hours worked. For more information, see [Accrue time off based on hours worked](leave-accrue-hours-worked.md).
 
@@ -50,7 +50,7 @@ Platform update 18 is now part of the Talent release.
 
 -   In Platform update 18, the Talent web client now aligns its visuals with Microsoft Fluent Design.
 
-    -   When fields are in “read mode�, you can simply select the edit option in the fields to switch the form to edit.
+    -   When fields are in "read mode", you can simply select the edit option in the fields to switch the form to edit.
 
     -   Changes in how fields display when in read mode.
 
