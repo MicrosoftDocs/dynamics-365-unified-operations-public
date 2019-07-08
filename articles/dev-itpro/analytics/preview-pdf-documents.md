@@ -5,7 +5,7 @@ title: Preview PDF documents with an embedded viewer
 description: This topic explains how to use the embedded PDF Preview option to view business documents.
 author: tjvass
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Platform update 28
 # Preview PDF documents with an embedded viewer
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 You can streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Microsoft Dynamics 365 for Finance and Operations applications deliver a modern experience to preview business documents that are produced by the service. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
 
