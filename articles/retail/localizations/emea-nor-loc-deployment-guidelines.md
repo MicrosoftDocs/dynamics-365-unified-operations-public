@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Retail localization for Norway.
 author: AlexChern0v
 manager: olegkl
-ms.date: 10/10/2018
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -1540,7 +1540,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ---
 
-4. Modify the following files to include the resource-files for Norway in deployable packages:
+4. Modify the following files to include the resource files for Norway in deployable packages:
     - Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj
     - Packages\RetailServer\Sdk.RetailServerSetup.proj
   
@@ -1551,7 +1551,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <<File_name> Include="$(SdkReferencesPath)\nb-NO\*" />
         ```
     > [Note]
-    > Instead of the <File_name> specify a name of the resource-file. The same is relevant for the other examples given below.
+    > Instead of the <File_name> specify a name of the resource file. The same is relevant for the other examples given below.
  
     - Add line to the **Target Name="CopyPackageFiles"** section
        ``` xml
