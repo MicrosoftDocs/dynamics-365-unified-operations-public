@@ -72,7 +72,7 @@ The **FieldBaseType** property on the **TsTimesheetCustom** object determines th
 
 - If the **stringOptions** property is provided on the **TSTimesheetCustomField** object, those list elements are the only values that users can select by using option buttons (radio buttons).
 
-    In this case, the string field can act as an enum value for the purpose of user entry. To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database� section later in this topic for an example).
+    In this case, the string field can act as an enum value for the purpose of user entry. To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).
 
 ### fieldExtendedType (TSCustomFieldExtendedType)
 
@@ -114,7 +114,7 @@ This property specifies the label that is shown next the field in the app.
 
 ### stringOptions (List of Strings)
 
-This property is applicable only when **fieldBaseType** is set to **String**. If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list. If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database� section later in this topic for an example).
+This property is applicable only when **fieldBaseType** is set to **String**. If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list. If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).
 
 ### stringLength (int)
 
@@ -174,7 +174,7 @@ Below is a screenshot from the mobile app of the user selecting one of the enum 
 
 In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table. However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).
 
-Note that custom fields don't have to have any backing database records. They can be dynamically generated based on X++ logic. This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details� section for an example of dynamically generated custom field values.)
+Note that custom fields don't have to have any backing database records. They can be dynamically generated based on X++ logic. This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)
 
 Below is a screenshot from Visual Studio of the Application Object Tree. It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.
 
@@ -328,7 +328,7 @@ Below is a screenshot from the mobile app of a user viewing a timesheet. The "Mo
 
 
 
-Below is a screenshot from the mobile app showing the “More� section of a timesheet. A custom field called “Utilization rate of this timesheet (computed custom field)� has been added to the timesheet header section. A read-only value of "0.667" is set on the custom field.
+Below is a screenshot from the mobile app showing the “More” section of a timesheet. A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section. A read-only value of "0.667" is set on the custom field.
 
 ![More section](media/more-section.jpg)
 
