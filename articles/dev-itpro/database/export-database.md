@@ -5,7 +5,7 @@ title: Export a database
 description: This topic explains how to export a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,8 +62,8 @@ Additionally, all users except the admin are disabled, and all batch jobs are se
 
 ### Export ran for some time and then reached a "Preparation failed" state
 
-The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so that it can add them to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can export manually by exporting the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
+The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can export manually by exporting the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
 
 ### Export doesn't show any progress in LCS
 
-The export process differs from other database movement operations and also general package deployment in that it doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, as it would typically show in other scenarios. The Lifecycle Services team is working to improve this behavior in a future release of LCS. If you encounter an issue, you can export manually by exporting the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
+The export process differs from other database movement operations and the general package deployment in that it doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, as it would typically show in other scenarios. The Lifecycle Services team is working to improve this behavior in a future release of LCS. If you encounter an issue, you can export manually by exporting the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
