@@ -72,10 +72,10 @@ As a result, the redesign is the sustainable option, with a goal to have clearly
 
 In the redesigned framework, the core strategy revolves around two principles: divide the execution flow into individual components with well-defined responsibilities and have well-defined extension points in each of the components.
 
-The name for the new framework is “ProcessGuide�. This is because the aim of these classes is to guide a user through a business process (as opposed to the rich client which is a form-based experiences where the user has more flexibility in how they interact with the data or in which order they perform tasks).
+The name for the new framework is “ProcessGuide”. This is because the aim of these classes is to guide a user through a business process (as opposed to the rich client which is a form-based experiences where the user has more flexibility in how they interact with the data or in which order they perform tasks).
 
 > [!NOTE]
-> One notable detail is the deliberate omission of the “WHS� prefix. While the mobile processes were initially introduced for warehousing, subsequently they have transcended boundaries to support various production and inventory management processes. As a result, the warehouse reference was excluded in the name of the framework.
+> One notable detail is the deliberate omission of the “WHS” prefix. While the mobile processes were initially introduced for warehousing, subsequently they have transcended boundaries to support various production and inventory management processes. As a result, the warehouse reference was excluded in the name of the framework.
 
 To identify the components, the first step is to look at the Production Start process (**WhsWorkExecuteDisplayProdStart** class). Here is a schematic of the process.
 
@@ -157,7 +157,7 @@ Let’s start by understanding the process flow. In the first step, the user is 
 
 When the user enters the production order ID, the order number is validated. Some of the validations that are run are based on whether the order is in the same warehouse as the user is signed in to, and the status of the order. If the validation fails, the user is shown an error message. If the validation succeeds, then the user is shown details of the production order and item.
 
-The user can either cancel to go back to the start of the process or click **OK** to confirm. In the latter case, the production order is set to **Started** status, the corresponding journals are posted, the control moves back to the first step, and the “Work Completed� message is shown to the user.
+The user can either cancel to go back to the start of the process or click **OK** to confirm. In the latter case, the production order is set to **Started** status, the corresponding journals are posted, the control moves back to the first step, and the “Work Completed” message is shown to the user.
 
 
 ## Creating the controller
@@ -301,7 +301,7 @@ The following code example shows the class and the **doExecute()** method implem
 In case of an exception, the framework exception handling logic ensures that the process is rolled back to the previous step.
 
 > [!NOTE]
-> The invoke to **addProcessCompletionMessage()** adds the “Work completed� message to the navigation parameters. The next step (assuming it has a user interface) will display this message. The base classes handle this logic, and no specific code needs to be added to the process classes to achieve this behavior.
+> The invoke to **addProcessCompletionMessage()** adds the “Work completed” message to the navigation parameters. The next step (assuming it has a user interface) will display this message. The base classes handle this logic, and no specific code needs to be added to the process classes to achieve this behavior.
 
 
 ### Building the navigation through the steps
