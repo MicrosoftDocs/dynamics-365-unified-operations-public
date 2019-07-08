@@ -43,7 +43,7 @@ This topic explains how to update the local agent. The latest version of the loc
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
 | 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
 | 2.1.1               | This version fixes an issue that occurs when the download fails and the LCS Maintain button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.  |
-| 2.1.2               | This version contains updated azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still see them as missing a few bytes and therefore fail the download.  |
+| 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still see them as missing a few bytes and therefore fail the download.  |
 | 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisits for supporting an ADFS that also is used for Office365. |
 
 ## What's new in local agent 2.1.0?
