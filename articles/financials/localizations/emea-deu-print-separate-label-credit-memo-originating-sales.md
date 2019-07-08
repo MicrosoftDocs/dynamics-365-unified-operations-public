@@ -38,7 +38,7 @@ This article explains how to specify the label that appears on credit memos that
 On the **Legal entities** page, you can use the **Print corrective invoice on a sales memo** option on the **Foreign trade and logistics** tab to specify the label that appears on credit memos that originate from sales (sales orders, non-item sales, and project sales).
 
 -   If the **Print corrective invoice on a sales memo** option is set to **No**, the label "Gutschrift" will be printed on all credit memos.
--   If the **Print corrective invoice on a sales memo** option is set to **Yes**, the label "Rechnungskorrektur‚Ä will be printed on credit memos from sales orders, free text invoices, and project invoices.
+-   If the **Print corrective invoice on a sales memo** option is set to **Yes**, the label "Rechnungskorrektur‚Äù will be printed on credit memos from sales orders, free text invoices, and project invoices.
 
 
 
