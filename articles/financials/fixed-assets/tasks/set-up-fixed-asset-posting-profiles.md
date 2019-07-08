@@ -39,7 +39,7 @@ This task guide will set up Fixed asset posting profiles.  It uses the Accountan
     * You will need to create a posting profile for each fixed asset transaction type you will be using when working with fixed assets.  This task guide will start with the Acquisition transaction type.  
 5. Click Add.
 6. In the Book field, enter or select a value.
-    * The Groupings field allows you to define the posting profile down to the Table (one account set up for each fixed asset) or Group (one account set up for each fixed asset group).  For this task guide I will leave the value set to “All� to apply to all fixed assets with the specified Book.  
+    * The Groupings field allows you to define the posting profile down to the Table (one account set up for each fixed asset) or Group (one account set up for each fixed asset group).  For this task guide I will leave the value set to “All” to apply to all fixed assets with the specified Book.  
 7. In the Main account field, specify the desired values.
     * For Acquisitions, you can enter an offset account or leave it blank to be filled in for the specific transaction.    
 8. In the Transaction type field, select 'Acquisition adjustment'.
@@ -76,7 +76,7 @@ This task guide will set up Fixed asset posting profiles.  It uses the Accountan
 32. In the Book field, enter or select a value.
 33. In the Post value field, select 'Acquisition value'.
     * Acquisition value will address Acquisition and Acquisition adjustment values for all years.  You can also define accounts for these transaction types separately.  
-    * You can set the disposal process to use different accounts depending upon if the disposal results in a gain or loss.  I will set the Sales value type to “All� to use the same accounts for all types of disposals.  
+    * You can set the disposal process to use different accounts depending upon if the disposal results in a gain or loss.  I will set the Sales value type to “All” to use the same accounts for all types of disposals.  
 34. In the Main account field, specify the desired values.
 35. In the Offset account field, specify the desired values.
 36. Click Add.
