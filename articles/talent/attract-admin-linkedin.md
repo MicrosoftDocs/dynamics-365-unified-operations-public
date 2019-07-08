@@ -5,7 +5,7 @@ title: Set up integration with LinkedIn for Attract
 description: This topic explains how to configure LinkedIn integration for Microsoft Dynamics 365 for Talent - Attract so that you can easily post jobs to LinkedIn from Attract, and so that your recruiters can sync their recruiting information with a candidate's LinkedIn profile.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/20/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,7 +25,7 @@ ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2019-05-20
+ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
 
 ---
@@ -62,9 +62,9 @@ Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn does
 
 1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**. Alternatively, go to <https://attract.talent.dynamics.com/adminsettings>.
 2. Select the **LinkedIn Integration** tab.
-3. Under **Company name**, enter the name of your company, and under **Company ID**, enter your LinkedIn Company ID. Make sure that the company name matches your company's LinkedIn page. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
+3. Under **Company name**, enter the name of your company, and under **Company ID**, enter your LinkedIn Company ID. Make sure that the company name matches the name that appears on your company's LinkedIn page. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
 
-    If you must change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/office365/admin/manage/change-address-contact-and-more). If you still have issues, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
+    If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/office365/admin/manage/change-address-contact-and-more). If you still have issues, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
 
 4. Select **Save**.
 

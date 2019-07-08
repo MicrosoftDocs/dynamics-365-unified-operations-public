@@ -5,7 +5,7 @@ title: Source candidates with LinkedIn Recruiter
 description: Use the LinkedIn integration provided by Microsoft Dynamics 365 for Talent - Attract to source job candidates through LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/20/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -57,7 +57,7 @@ After you're connected to LinkedIn Recruiter, you can view candidates' LinkedIn 
 
 2. In the candidate's profile, select the **LinkedIn** tab. You can view the candidate's profile, together with InMail history and LinkedIn notes history.
 
-From here, you can save the candidate to a LinkedIn Recruiter project, send inMail, or set an alert in LinkedIn Recruiter with Update Me.
+From here, you can save the candidate to a LinkedIn Recruiter project, send inMail, or use Update Me to set an alert in LinkedIn Recruiter.
 
 > [!NOTE]
 > A candidate's LinkedIn profile will be shown in Attract when the candidate's Attract information matches the LinkedIn information. Here are the matching rules that are used:
@@ -100,7 +100,7 @@ In LinkedIn Recruiter, you can track whether a candidate applied to other jobs i
 If candidates agree to share their LinkedIn profiles with any user in your organization, a new candidate record is created in Attract. These candidates then appear in a system-created LinkedIn talent pool.
 
 1. In Attract, select **Talent pools** on the left.
-2. Select the LinkedIn talent pool. You will see a list of candidates their stub profiles from LinkedIn. Stub profiles contain the candidate's first and last names and email address, if the candidate chose to share it.
+2. Select the LinkedIn talent pool. You will see a list of candidates and their stub profiles from LinkedIn. Stub profiles contain the candidate's first and last names and email address, if the candidate chose to share it.
 
 ## See also
 
