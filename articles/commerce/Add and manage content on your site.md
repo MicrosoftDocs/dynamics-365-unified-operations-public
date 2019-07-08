@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes...
+title: Add and manage content on your site
+description: This topic describes how to add and manage content on your website.
 author: Nick Holman
 manager: Brendan Sullivan
 ms.date: 07/08/2019
