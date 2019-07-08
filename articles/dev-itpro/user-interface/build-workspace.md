@@ -5,7 +5,7 @@ title: Build workspaces
 description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 author: jasongre
 manager: AnnBe
-ms.date: 08/25/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -322,7 +322,7 @@ Next, you will next see how to include an additional list in the workspace. This
     | Property       | Value              |
     |----------------|--------------------|
     | Name           | VehicleQuickFilter |
-    | Target Control | VehicleGrid        |
+    | Target Control | VehicleList        |
 
 23. Press **Ctrl+S** to save.
 
@@ -337,7 +337,7 @@ Next, you will next see how to include an additional list in the workspace. This
 
     | Property        | Value       |
     |-----------------|-------------|
-    | Table           | FMTVehicles |
+    | Table           | FMTVehicle  |
     | Dynamics Fields | Yes         |
 
 7.  Right-click **Ranges**, and then click **New Range**.
@@ -360,7 +360,7 @@ Next, you will next see how to include an additional list in the workspace. This
 
     | Property       | Value                |
     |----------------|----------------------|
-    | Menu item name | FMTAvailableVehicles |
+    | Object         | FMTAvailableVehicles |
     | Query          | FMTAvailableVehicles |
 
 6.  Press **Ctrl+S** to save.
