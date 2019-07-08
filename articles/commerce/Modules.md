@@ -35,12 +35,12 @@ Modules are logical building blocks that make up your page structure, and they c
 
 As mentioned above, some modules are designed to contain other modules. This family of modules are aptly named “Containers” and they allow a hierarchy of nested modules within one another. Container modules utilize an authoring concept called “Slots”, which communicate the layout and purpose for child modules within the container. A good example of this is a basic page container module (which is the top level module for any given page) and defines several important slots: 1) a header slot, 2) a body slot, and 3) a footer slot. The module itself dictates these slots and determines which, and how many, child modules can be directly contained within it. For the page container module example above, the header slot might allow only one module of type Header Module, and the body slot might allow unlimited modules of any type (with the exception of another page container module). Within the authoring toolset, page authors don’t need explicit knowledge of which modules are allowed or not allowed in each slot. When an author initially selects a slot and goes to pick a module to add, they will see a filtered view of module types that are supported for that slot. 
 
-Below is a simple diagram to illustrate how modules nest into parent container module slots:
-![Nesting Modules](../commerce/media/basic-module-nesting.png)
-
 ### Content Modules
 
-Content modules, as their name suggests, contain actual content and media primitives, such as text (headlines, paragraphs, links) or asset references (images, video, PDFs, etc.). Examples of common content modules are Hero, Feature, Banner, etc., each of which can contain text /media and don’t require any further child modules to actually render something visible on a page. Content modules represent the heart of typical day-to-day page and content authoring activities, primarily because they represent the actual information rendered within their parent container modules. There are many different content modules to choose from, and a main takeaway here is that content modules are generally the final pieces in your page’s module nesting hierarchy.
+Content modules, as their name suggests, contain actual content and media primitives, such as text (headlines, paragraphs, links) or asset references (images, video, PDFs, etc.). Examples of common content modules are Hero, Feature, Banner, etc., each of which can contain text /media and don’t require any further child modules to actually render something visible on a page. Content modules represent the majority of typical day-to-day page and content authoring activities, primarily because they define the actual content rendered within their parent container modules. There are many different content modules to choose from, and the main takeaway here is that content modules are generally the final pieces in your page’s module nesting hierarchy.
+
+Below is a simple diagram to illustrate how modules nest into parent container module slots:
+![Nesting Modules](../commerce/media/basic-module-nesting.png)
 
 # Add or remove modules
 ## Add a module
