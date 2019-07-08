@@ -47,7 +47,7 @@ This procedure shows you how to create purchasing policies to align with your bu
 1. Click New.
 2. In the Name field, type a value.
 3. In the Description field, type a value.
-    * A single purchasing policy can only apply to one organization hierarchy. For example, you could have one hierarchy called “Geographic� and one called “Department�, and have a different purchasing policy for each.  
+    * A single purchasing policy can only apply to one organization hierarchy. For example, you could have one hierarchy called “Geographic” and one called “Department”, and have a different purchasing policy for each.  
     * Select an organization that the policy should apply to.  
 4. Click the arrow to add the selected organization.
     * You can repeat this process to add more organizations.  
