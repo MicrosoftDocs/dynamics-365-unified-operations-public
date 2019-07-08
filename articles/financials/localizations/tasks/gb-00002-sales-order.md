@@ -34,7 +34,7 @@ This task walks you through creating a sales order that includes items subject t
 
 This walkthrough was created using the demo company GBSI.
 
-Prior to this task, the “Set up reverse charge VAT� tasks should be completed.
+Prior to this task, the “Set up reverse charge VAT” tasks should be completed.
 
 
 ## 07 Create a sales order that includes items subject to reverse charge VAT
