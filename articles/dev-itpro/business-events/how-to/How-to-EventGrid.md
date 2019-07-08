@@ -286,11 +286,11 @@ Account Number, Customer Name and Total of Invoice.
     customer payment details. **Search** for **send email** action, then login
     to your Office365 account.
 
-    <img src="../../media/BEF-Howto-EventGrid-18.png" width="50%">
+   <img src="../../media/BEF-Howto-EventGrid-18.png" width="50%">
 
 16.  Then fill-in the message with the required fields.
 
-    <img src="../../media/BEF-Howto-EventGrid-19.png" width="50%">
+   <img src="../../media/BEF-Howto-EventGrid-19.png" width="50%">
 
 17.  **Save** your logic apps.
 
