@@ -49,7 +49,7 @@ Prerequisites
 | An Android or iOS or a Windows device that has the mobile app installed for Finance and Operations | Search for the app in the appropriate app store.                                                                                                                     |
 
 ## Introduction
-Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites� section. These hotfixes don’t provide a workspace for the invoice approvals. To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites� section. The invoice approvals workspace must be designed. 
+Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section. These hotfixes don’t provide a workspace for the invoice approvals. To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section. The invoice approvals workspace must be designed. 
 
 Every organization orchestrates and defines its business process for vendor invoices differently. Before you design a mobile experience for vendor invoice approvals, you should consider the following aspects of the business process. The idea is to use these data points as much as possible to optimize the user experience on the device.
 
