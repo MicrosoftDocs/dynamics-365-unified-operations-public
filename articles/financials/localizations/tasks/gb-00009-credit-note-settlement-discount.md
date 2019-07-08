@@ -34,7 +34,7 @@ This walkthrough was created using the demo company DEMF with country context sw
 
 This task walks you through creating a customer invoice that includes cash discount, with further prompt payment and generating credit note on cash discount to adjust the VAT entries posted on the original invoice. 
 
-Prior to this task, the “Setup parameters for credit note on prompt payment discount� tasks should be completed.
+Prior to this task, the “Setup parameters for credit note on prompt payment discount” tasks should be completed.
 
 1. Go to Accounts receivable > Invoices > All free text invoices.
 2. Click New.
