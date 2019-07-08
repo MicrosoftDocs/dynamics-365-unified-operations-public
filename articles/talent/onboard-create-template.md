@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create an onboarding template with Dynamics 365 for Talent - Onboard
-description: Use the Dynamics 365 for Talent - Onboard app to create an onboarding guide template for your new hires. This is an essential first step in your human capital management hire-to-retire strategy.
+title: Create an onboarding template by using Dynamics 365 for Talent - Onboard
+description: This topic explains you to use the Dynamics 365 for Talent - Onboard app to create a template for an onboarding guide for your new hires. This task is an essential first step in a human capital management (HCM) hire-to-retire strategy.
 author: andreabichsel
 manager:
 ms.date: 05/02/2019
@@ -29,32 +29,31 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Create an onboarding template
+# Create an onboarding template by using Dynamics 365 for Talent: Onboard
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent: Onboard provides you with a variety of templates to get you up and running with an onboarding guide as quickly as possible. You can use one or more of these, or you can create your own templates. Onboard provides sample text you can use when creating your own templates, so it's even easy to start from scratch.
+Microsoft Dynamics 365 for Talent: Onboard provides various templates that can help you create an onboarding guide as quickly as possible. You can use one or more of these templates, or you can create your own templates. Onboard provides sample text that you can use when you create your own templates. Therefore, the process is easy even if you start from scratch.
 
 ## Create an onboarding template from an existing template
 
-1. On the left-hand menu, select **Templates**.
+1. On the left menu, select **Templates**.
+2. Under **Popular templates from the gallery** or **My templates**, select a template. To view more templates, select **More in template gallery**.
+3. Follow one of these steps:
 
-2. Select a template under **Popular templates from the gallery** or under **My templates**. To view more templates, select **More in template gallery**.
+    - If the template is from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**.
+    - If the template is from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.
 
-3. If this is a template from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**. If this is a template from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.
-
-   [![Create template from existing](./media/onboard-save-template.png)](./media/onboard-save-template.png)
+    [![Creating a template from an existing template](./media/onboard-save-template.png)](./media/onboard-save-template.png)
 
 ## Create a new onboarding template
 
-1. On the left-hand menu, select **Templates**.
+1. On the left menu, select **Templates**.
+2. Under **My templates**, select the **Add** (plus sign \[**+**\]) tile.
 
-2. Under **My templates**, select the **Add** (**+**) tile.
+    [![Creating a new template](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)
 
-   [![Create a new onboarding template](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)
-
-3. In the **Create a guide template** window, enter a name for your template and then select **Save**.
-
+3. In the **Create a guide template** window, enter a name for the template, and then select **Save**.
 
 ## Next steps
 
@@ -65,9 +64,7 @@ Dynamics 365 for Talent: Onboard provides you with a variety of templates to get
 
 ### See also
 
-- [Try or buy the Onboard app](https://dynamics.microsoft.com/en-us/talent/onboard/)
+- [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/index)
+- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support](./talent-support.md)
-
-
