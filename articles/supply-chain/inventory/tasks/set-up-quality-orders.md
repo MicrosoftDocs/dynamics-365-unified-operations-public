@@ -38,7 +38,7 @@ This procedure shows you how to enable a quality management process where incomi
 2. Click the Quality management tab.
 3. Set the Use quality management option to Yes.
 4. Click Report setup.
-    * In USMF, the report setup for quality management is already defined. If this wasn’t done, you’d add new lines here for the different report types, and select the type of document to be used for each report.  
+    * In USMF, the report setup for quality management is already defined. If this wasn't done, you'd add new lines here for the different report types, and select the type of document to be used for each report.  
 5. Close the page.
 6. Close the page.
 
@@ -77,7 +77,7 @@ This procedure shows you how to enable a quality management process where incomi
 3. In the Item sampling field, type a value.
 4. In the Description field, type a value.
 5. In the Value field, enter a number.
-    * This value relates to the Quantity specification that’s selected in the adjacent field.  
+    * This value relates to the Quantity specification that's selected in the adjacent field.  
 6. Expand or collapse the Process section.
 7. Select or clear the Full blocking check box.
     * If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.  
@@ -106,7 +106,7 @@ This procedure shows you how to enable a quality management process where incomi
 1. Go to Inventory management > Setup > Quality control > Test groups.
 2. Click New.
 3. In the Test group field, type a value.
-    * Give the Test group a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it’s to be used with a quality group that selects items starting with “T�, you could call it “T-item tests�.  
+    * Give the Test group a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it's to be used with a quality group that selects items starting with "T", you could call it "T-item tests".  
 4. In the Description field, type a value.
 5. In the Item sampling field, select the item sampling line that you created before.
 6. In the list, find and select the desired record.
@@ -127,7 +127,7 @@ This procedure shows you how to enable a quality management process where incomi
 2. Click New.
 3. In the Reference type field, select an option.
 4. In the Item code field, select 'Group'.
-    * In this example, we’ll select "Group" and use the quality group we created before. You could also set this to "Table" to specify the items manually, or select "All" to add all items to the quality order.  
+    * In this example, we'll select "Group" and use the quality group we created before. You could also set this to "Table" to specify the items manually, or select "All" to add all items to the quality order.  
 5. In the Item field, select the quality group that you created before.
     * The options available in the Item field depend on what you set in the Item code field.  
 6. In the list, find and select the desired record.
@@ -137,7 +137,7 @@ This procedure shows you how to enable a quality management process where incomi
 9. In the Execution field, select an option.
 10. Expand or collapse the Quality order process section.
 11. In the Event blocking field, click the drop-down button to open the lookup.
-    * This field shows the list of processes that it’s possible to block if the quality order is still open. The options depend on what you selected in the Event type field.  
+    * This field shows the list of processes that it's possible to block if the quality order is still open. The options depend on what you selected in the Event type field.  
 12. In the list, click the link in the selected row.
     * This will be depending on the previous selected values. Select if the following processes must be blocked while having open quality orders linked to a source document line.  
 13. Expand or collapse the Specifications section.
