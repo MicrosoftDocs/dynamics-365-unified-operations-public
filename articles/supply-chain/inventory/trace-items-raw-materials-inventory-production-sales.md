@@ -68,7 +68,7 @@ The criteria that are required for an item trace are the item number, a tracking
 <tbody>
 <tr class="odd">
 <td>Item number</td>
-<td>Enter the identifier for the item or raw material that you’re tracing.</td>
+<td>Enter the identifier for the item or raw material that you're tracing.</td>
 </tr>
 <tr class="even">
 <td>Product dimensions</td>
@@ -76,7 +76,7 @@ The criteria that are required for an item trace are the item number, a tracking
 </tr>
 <tr class="odd">
 <td>Tracking dimensions</td>
-<td>Enter a batch number, vendor batch number, or serial number tracking dimension. When you use the batch number as a criterion, the vendor batch number is displayed if you’ve captured that information.</td>
+<td>Enter a batch number, vendor batch number, or serial number tracking dimension. When you use the batch number as a criterion, the vendor batch number is displayed if you've captured that information.</td>
 </tr>
 <tr class="even">
 <td>Storage dimensions</td>
@@ -90,8 +90,8 @@ The criteria that are required for an item trace are the item number, a tracking
 <td>Forward or backward</td>
 <td>Select the direction for the trace. You can trace forward or backward:
 <ul>
-<li><strong>Backward</strong> – Trace downstream to identify the source, the quantity that remains on hand, and any production orders that are at least partially reported as finished.</li>
-<li><strong>Forward</strong> – Trace upstream to identify the destination. You can find the sales orders, and the customers that the traced item or raw material has been at least partially shipped to.</li>
+<li><strong>Backward</strong> - Trace downstream to identify the source, the quantity that remains on hand, and any production orders that are at least partially reported as finished.</li>
+<li><strong>Forward</strong> - Trace upstream to identify the destination. You can find the sales orders, and the customers that the traced item or raw material has been at least partially shipped to.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -100,15 +100,15 @@ The criteria that are required for an item trace are the item number, a tracking
 ## What information is included in the trace details?
 The results of a trace appear in chronological order in the tree on the **Details** FastTab of the **Item tracing** page. The order varies, depending on the trace direction. The details include all transactions from the purchase of the item from the vendor to the sale of the item to the customer. Trace results also include interim products that are related to the item or the tracking dimension that was specified in the trace criteria. The top node shows the quantity of the item, in the inventory unit, that remains on hand, based on the storage dimensions that were specified in the trace criteria. **Note:** The trace details provide a snapshot of the information that was available when the trace was done. The trace details aren't updated if the information changes after the trace is done.
 
-## Why don’t some nodes contain any details?
-To reduce the amount of information in the trace details, only the node for the first instance of the item or raw material includes details. If a selected node doesn’t contain details, you can view the node that does contain details by clicking **Go to traced line**. You can then return to the node that you left by clicking **Go back**.
+## Why don't some nodes contain any details?
+To reduce the amount of information in the trace details, only the node for the first instance of the item or raw material includes details. If a selected node doesn't contain details, you can view the node that does contain details by clicking **Go to traced line**. You can then return to the node that you left by clicking **Go back**.
 
 ## Can I view only a particular type of document? For example, can I view only production orders, customers, or vendors?
 Yes, from the trace details, you can open list pages that include only a particular type of document or transaction. You can access these pages from the **Tracing** menu item on the Action Pane, in the **Item**, **Sales**, **Purchase**, **Production**, and **Quality** groups. For example, to view a list of the vendors in the trace details, click **Tracing** &gt; **Purchase** &gt; **Vendors**. The list pages summarize the documents or transactions from the trace details. The **Pending transactions**, **Pending orders**, and **Not shipped sales orders** list pages also show other information that isn't included in the trace details. Additionally, they always show results as of the current date, even if a date range was specified. The following table describes the additional details that these pages can include.
 
 | Lists                    | Description                                                                                                                                                                                                                                                                                                                   |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Not shipped sales orders | View sales order lines that haven’t been picked, and that therefore aren't shown in the trace details.                                                                                                                                                                                                                        |
+| Not shipped sales orders | View sales order lines that haven't been picked, and that therefore aren't shown in the trace details.                                                                                                                                                                                                                        |
 | Pending orders           | View all pending production orders for the traced item, regardless of the tracking dimensions that were used in the trace criteria. You can also view pending production orders where the traced item is an ingredient, and where no registrations have been made and no transactions are reported as finished for the order. |
 | Pending transactions     | View pending inventory transactions for the traced item that includes the specified tracking dimensions or a blank tracking dimension. You can also view pending inventory transactions for items and tracking dimension combinations, or a blank value, in the trace details.                                                |
 
@@ -126,8 +126,8 @@ Some FastTabs give you access to additional information about the selected node.
 ## Can I run more than one trace and then compare the details?
 After you run the trace, you can use the following options on the **Trace from node** button to run a new trace on the transaction in the selected node:
 
--   **Backward** or **Forward** – Start a new trace for the selected node, and overwrite the details of the current trace.
--   **New backward** or **New forward** – Start a new trace in a new window, and keep the details of the current trace.
+-   **Backward** or **Forward** - Start a new trace for the selected node, and overwrite the details of the current trace.
+-   **New backward** or **New forward** - Start a new trace in a new window, and keep the details of the current trace.
 
 If you want to use the **New backward** or **New forward** option, you must use the **Open in a new window** functionality to have a new trace appear in a new window.
 
@@ -141,7 +141,7 @@ You can export the information from the summary pages to Microsoft Excel. Open t
 The trace details include information about quality orders and nonconformances that involve the item or raw material. To view a summary of quality orders and nonconformances, click **Quality orders** or **Non conformances** on the Action Pane. **Note:** Destructive quality orders can appear more than one time in the trace details. When a destructive quality order is created for a document, such as a purchase order, it appears for each transaction for that document.
 
 ## Are there any reporting capabilities that are related to item tracing?
-You can generate the **Shipped to customers** report to identify the amount of the item or raw material that has been shipped and the customers that it was shipped to. For an inquiry that is related to compliance, you can generate the report for all customers. For an inquiry that is related to customer service, you can generate the report for a selected customer. If the product was a raw material that was used in the production of a finished item, the finished item is also included. **Note:** If you’re using the features for deleting or archiving sales orders, the report results also include any sales orders that have been deleted or archived.
+You can generate the **Shipped to customers** report to identify the amount of the item or raw material that has been shipped and the customers that it was shipped to. For an inquiry that is related to compliance, you can generate the report for all customers. For an inquiry that is related to customer service, you can generate the report for a selected customer. If the product was a raw material that was used in the production of a finished item, the finished item is also included. **Note:** If you're using the features for deleting or archiving sales orders, the report results also include any sales orders that have been deleted or archived.
 
 ## Can I trace coproducts and byproducts?
-You can trace co-products, but you can’t trace a by-product, because tracking dimensions aren't typically assigned to by-products. When you trace an item, the trace details include any related co-products. A node that contains a co-product includes the word “co-product� in the details. You can also view details about a co-product by selecting the node in the trace details and then clicking the **Production** FastTab.
+You can trace co-products, but you can't trace a by-product, because tracking dimensions aren't typically assigned to by-products. When you trace an item, the trace details include any related co-products. A node that contains a co-product includes the word "co-product" in the details. You can also view details about a co-product by selecting the node in the trace details and then clicking the **Production** FastTab.
