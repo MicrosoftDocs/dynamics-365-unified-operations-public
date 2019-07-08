@@ -161,15 +161,15 @@ To implement the three-time limit, create a new class and implement the IPreVoid
 
 ## Build the project
 1.  Compile and rebuild the project.
-2.  Deploy the MPOS in Local Machine by clicking the **Deploy** button in Visual Studio. If you get an error which states that â€œThe project POS.App needs to be deployed before it can be started.â€, then follow the steps below to resolve the error and try again.
+2.  Deploy the MPOS in Local Machine by clicking the **Deploy** button in Visual Studio. If you get an error which states that "The project POS.App needs to be deployed before it can be started.", then follow the steps below to resolve the error and try again.
 3.  Right-click the ModernPOS solution in Visual Studio and click **Properties**.
 4.  In the **Property** window, select **Configuration**.
 5.  Select the **Deploy** check box for the Pos.App project and click **OK**.
 
 ## Validate the customization
 1.  Log in to MPOS using 000160 as the operator ID and 123 as the password. Complete a sales transaction.
-2.  Click **Show Journal** and try to return the merchandise. You will get the error message â€œCannot return, you are past return dateâ€.
-3.  Create another new transaction and add four different items. Try to return all four items. You will get an error for the fourth item with the message, "Void is not allowed anymore.â€
+2.  Click **Show Journal** and try to return the merchandise. You will get the error message "Cannot return, you are past return date".
+3.  Create another new transaction and add four different items. Try to return all four items. You will get an error for the fourth item with the message, "Void is not allowed anymore."
 
 > [!NOTE]
 > In the sample code, the return the time period is configured as 100 ms, so that you can test your code immediately. You should change the configuration as needed.
