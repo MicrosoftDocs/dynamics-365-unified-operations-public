@@ -2,7 +2,7 @@
 # required metadata
 
 title: View the status of onboarding employees and your tasks
-description: Track where new hires are in their onboarding process with the Dynamics 365 for Talent - Onboard app.
+description: This topic explains how to use the Microsoft Dynamics 365 for Talent - Onboard app to track where new hires are in their onboarding process.
 author: andreabichsel
 manager:
 ms.date: 05/02/2019
@@ -29,29 +29,29 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# View the status of onboarding employees and tasks
+# View the status of onboarding employees and your tasks
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard lets you view the progress of your new hires with their onboarding activities. You can also see any tasks that have been assigned to you from onboarding guides.
+Microsoft Dynamics 365 for Talent: Onboard lets you view the progress that your new hires are making in their onboarding activities. You can also view any tasks that have been assigned to you from onboarding guides.
 
 ## View the status of onboarding employees
 
-1. On the left-hand menu, select **Guides**. This provides an overview of the progress for all the guides you've sent.
+1. On the left menu, select **Guides**. You see an overview of the progress for all the onboarding guides that you've sent.
 
-   ![[View status of onboarding guides](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Viewing the status of onboarding guides](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
-2. To drill down, select the guide you want to view.
+2. To drill down, select the guide that you want to view.
+3. Select the **Activities** tab to see which activities your new hire has completed.
 
-3. Select **Activities** to see which activities your new hire has completed.
+    ![[Viewing activities that the new hire has completed](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
-   ![[View activities completed by new hire](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+## View onboarding tasks that are assigned to you
 
-## View onboarding tasks assigned to you
-
-1. On the left-hand menu, select **Tasks**. This provides an overview of all the onboarding tasks assigned to you from onboarding guides sent to employees.
-
-2. To drill down, select the desired task. Follow up with the new hire as needed. When you've completed the task, mark it as complete by checking the circle next to it.
+1. On the left menu, select **Tasks**. You see an overview of all the onboarding tasks that have been assigned to you from the onboarding guides that were sent to employees.
+2. To drill down, select the desired task.
+3. Follow up with the new hire as required.
+4. When you've completed the task, mark it as completed by adding a check mark to the circle.
 
 ## Next steps
 
@@ -59,7 +59,7 @@ Microsoft Dynamics 365 for Talent: Onboard lets you view the progress of your ne
 
 ### See also
 
-- [Try or buy the Onboard app](https://dynamics.microsoft.com/en-us/talent/onboard/)
+- [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/index)
+- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support](./talent-support.md)
