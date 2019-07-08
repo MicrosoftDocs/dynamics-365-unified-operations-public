@@ -109,7 +109,7 @@ The following illustration shows the flyout that appears to show additional comm
 
 ### System-defined buttons
 
-Several system-defined buttons are added automatically to pages. The following table shows the list of system-defined buttons that are added to the Action Pane. For more information about how these buttons behave and how to manage them, see the How to: System-defined buttons article.
+Several system-defined buttons are added automatically to pages. The following table shows the list of system-defined buttons that are added to the Action Pane. For more information about how these buttons behave and how to manage them, see the [System-defined buttons](system-defined-buttons.md) article.
 
 | Button                                                                                                                                                              | Name                     | Comments                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------------|
