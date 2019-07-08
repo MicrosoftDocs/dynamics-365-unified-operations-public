@@ -50,7 +50,7 @@ This procedure shows how to create a vendor account, and add an address and cont
 1. Expand the Addresses section.
 2. Click Add.
 3. In the Purpose field, enter or select a value.
-    * You can select one or more purposes. These are used to select the correct address for a given purpose. For example, if the purpose is “Invoice� that address will be used when you send invoices.  
+    * You can select one or more purposes. These are used to select the correct address for a given purpose. For example, if the purpose is “Invoice” that address will be used when you send invoices.  
 4. In the Name or description field, type a value.
 5. In the Country/region field, enter or select a value.
     * Enter the address details. The country/region that you selected will determine the fields you are presented with, corresponding to the address format for the country/region.   
