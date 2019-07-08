@@ -2,10 +2,10 @@
 # required metadata
 
 title: Using Microsoft Forms Pro
-description: This tutorial walks through steps to be followed to enable a scenario where a survey is sent to users when a product has been shipped. The survey is gathered using Microsoft Forms Pro.
+description: This tutorial provides the steps to enable a scenario where a survey is sent to users when a product has been shipped. The survey is gathered using Microsoft Forms Pro.
 author: mufife, sunilg
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
