@@ -74,13 +74,13 @@ You can create job tasks that describe the basic tasks that a worker in a positi
 <tr class="odd">
 <td>Sales manager</td>
 <td><ul>
-<li><span class="input">Perf-review</span> â€“ Review each salespersonâ€™s job performance.</li>
-<li><span class="input">Abs-review</span> â€“ Approve or reject each salespersonâ€™s absence requests or registrations.</li>
+<li><span class="input">Perf-review</span> - Review each salesperson's job performance.</li>
+<li><span class="input">Abs-review</span> - Approve or reject each salesperson's absence requests or registrations.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Accountant</td>
-<td><span class="input">FIN-Report</span> â€“ Present weekly financial reports to chief financial officer.</td>
+<td><span class="input">FIN-Report</span> - Present weekly financial reports to chief financial officer.</td>
 </tr>
 </tbody>
 </table>
@@ -91,8 +91,8 @@ Job functions are like job tasks. A job function describes one or more tasks, du
 
 | Job           | Job function                                                |
 |---------------|-------------------------------------------------------------|
-| Sales manager | Mng-people â€“ Manage people who report to you.               |
-| Accountant    | FIN-Review â€“ Maintain financial data for a set of accounts. |
+| Sales manager | Mng-people - Manage people who report to you.               |
+| Accountant    | FIN-Review - Maintain financial data for a set of accounts. |
 
 ### Job types
 
