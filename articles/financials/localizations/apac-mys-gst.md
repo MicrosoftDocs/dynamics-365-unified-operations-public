@@ -60,7 +60,7 @@ On the **General ledger parameters** page, on the **Sales tax** tab, on the **GS
 
 The GST Act specifies the requirements for issuing credit and debit notes for a supply or purchase. You can now create and manage debit notes and credit notes for sales orders, free text invoices, purchase orders, and project invoices. When you print debit notes and credit notes, you will see the following additional information:
 
--   The words “Debit note� or “Credit note� in a prominent place
+-   The words “Debit note” or “Credit note” in a prominent place
 -   The reasons why the debit note or credit note has been issued
 -   The number and date of the original tax invoice
 
@@ -95,7 +95,7 @@ When the Minister grants your customers relief from the payment of all or part o
 
 In some circumstances, the value of a supply is determined by the person who receives the goods. Therefore, for GST purposes, the recipient of the goods is allowed to issue an invoice to himself or herself. This invoice is considered a tax invoice for the supply of goods or services to that person by another registered person. You can issue self-billed invoices only if you receive approval from the Director General. The reference number of the approval must be stated on the self-billed invoice. You can print a self-billed invoice only if the invoice type is set to **GST invoice**. You must also enter the approval number on the purchase order header. On the invoice, you will see the following additional information:
 
--   The words “Self-billed invoice� in a prominent place
+-   The words “Self-billed invoice” in a prominent place
 -   The approval number
 -   The GST summary
 
