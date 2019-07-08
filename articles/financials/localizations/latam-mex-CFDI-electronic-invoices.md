@@ -54,7 +54,7 @@ There are two methods for generating electronic invoices:
 -   **Comprobantes fiscales digitales por internet (CFDI)** – This is the current method for generating electronic invoices in the format that SAT requires. In this method, the invoices are verified and certified by a digital signature service provider (PAC). Before you can use the CFDI method to generate electronic invoices, your organization must set up a web service connection to an authorized PAC. For the CFDI method, you send an XML message from Finance and Operations to the PAC. The PAC validates each invoice, assigns a folio number, and then incorporates the digital stamp that the service tax authorities provide. After the PAC completes the approval process, your organization receives the approved XML message, and can then submit the invoice to the customer in XML or PDF format.
 
 > [!NOTE]
->  Integration with the PAC web service is not part of the Mexican localization. For information about how to customize a web service connection with a PAC, see “Customizing the integration with PAC web services� later in this article. 
+>  Integration with the PAC web service is not part of the Mexican localization. For information about how to customize a web service connection with a PAC, see “Customizing the integration with PAC web services” later in this article. 
 
 The following illustration shows the process for generating an electronic invoice by using the CFDI method. ![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
 
