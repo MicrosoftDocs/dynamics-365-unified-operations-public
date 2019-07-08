@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: GST project transactions
-description:  
+title: Goods and Service Tax (GST) project transactions
+description: This topic provides information about transactions for Goods and Service Tax (GST) projects.
 author: kfend
 manager: AnnBe
 ms.date: 07/02/2019
@@ -28,248 +28,270 @@ ms.dyn365.ops.version: 7.3.1
 ms.search.validFrom: 2019-7-02
 ---
 
-
-# GST project transactions
+# Goods and Service Tax (GST) project transactions
 
 [!include [banner](../includes/banner.md)]
 
-
 ## Project category
-1. Go to **Project management and accounting** \> **Setup** \> **Categories** \> **Project categories.**
-2. On the **Project** fast tab, in the **Service accounting code** field, select a value.
-3. Click **Close**.
 
-## Project through approved project quotation
+1. Go to **Project management and accounting** \> **Setup** \> **Categories** \> **Project categories**.
+2. On the **Project** FastTab, in the **Service accounting code** field, select a value.
+3. Close the page.
+
+## Project through an approved project quotation
+
 1. Go to **Project management and accounting** \> **Quotations** \> **Project quotations**.
 2. Create a project quotation.
 
-    ![](media/gst-proj-trans-01.png)
+    ![Project quotations page](media/gst-proj-trans-01.png)
 
 3. Select **Tax information**.
 
-    ![](media/gst-proj-trans-02.png)
+    ![Tax information dialog box](media/gst-proj-trans-02.png)
 
-4. Click **OK**
-5. On the Action Pane, on the **Quote** tab, in the **Tax** group, select **Tax
-    document**.
+4. Select **OK**.
+5. On the Action Pane, on the **Quote** tab, in the **Tax** group, select **Tax document**.
 
-![](media/gst-proj-trans-03.png)
+    ![Tax document page](media/gst-proj-trans-03.png)
 
-6. Close the form.
-7. On the Action Pane, cick **Workflow** \> **Submit**, to start the quotation workflow.
+6. Close the page.
+7. On the Action Pane, select **Workflow** \> **Submit** to start the quotation workflow.
 8. Update the comment, and then select **Submit**.
 
-### After the quotation is approved 
-1. On the Action Pane, click **Quote** \> **Process** \> **Send quotation**.
-2. Click **OK**.
-3. On the Action Pane, click **Follow up** \> **Generate** \> **Confirm**.
-4. Click **OK**.
+### After the quotation is approved
+
+1. On the Action Pane, on the **Quote** tab, in the **Process** group, select **Send quotation**.
+2. Select **OK**.
+3. On the Action Pane, on the **Follow up** tab, in the **Generate** group, select **Confirm**.
+4. Select **OK**.
 
 ## Create a project contract
-1.  Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
-2.  Create a new project contract.
-3.  On the Action Pane, on the **Project contract** tab, in the **Attachments** group, select **Tax information**.
 
-    ![](media/gst-proj-trans-04.png)
+1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+2. Create a project contract.
+3. On the Action Pane, on the **Project contract** tab, in the **Attachments** group, select **Tax information**.
+
+    ![Tax information dialog box](media/gst-proj-trans-04.png)
 
 ## Create a project
-1. On the Action Pane, on the **Maintain** tab, in the **New** group, click **Project**.
+
+1. On the **Project contracts** page, on the Action Pane, on the **Maintain** tab, in the **New** group, select **Project**.
 2. In the **Project type** field, select **Time and material**.
-3. Enter a project name and select a project group.
-4. Select the project contract ID and then select **Create project**.
-5. On the Action Pane, on the **Project** tab, in the **Setup** group, click **Tax information**.
+3. Enter a project name.
+4. Select a project group.
+5. Select the project contract ID.
+6. Select **Create project**.
+7. On the Action Pane, on the **Project** tab, in the **Setup** group, select **Tax information**.
 
-    ![](media/gst-proj-trans-05.png)
+    ![Tax information dialog box](media/gst-proj-trans-05.png)
 
-6. Click **OK**.
+8. Select **OK**.
 
 ## Create an Expense journal
-1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, click **Expense**.
-2. Click **New** to create a new journal and then select **Lines** to create a project expense journal.
 
-![](media/gst-proj-trans-06.png)
+1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, select **Expense**.
+2. Select **New** to create a journal, and then select **Lines** to create a project expense journal.
 
-3. Click **General** tab.
-4. Click **Invoice** tab and then enter the invoice information.
+    ![Journal voucher page](media/gst-proj-trans-06.png)
+
+3. Select the **General** tab.
+4. On the **Invoice** tab, enter the invoice information.
 5. Select **Tax information** \> **Cost**.
 
-    ![](media/gst-proj-trans-07.png)
+    ![Tax information dialog box](media/gst-proj-trans-07.png)
 
-6. Click **OK**, and then select **Tax information** \> **Invoice**.
+6. Select **OK**, and then select **Tax information** \> **Invoice**.
 
-    ![](media/gst-proj-trans-08.png)
+    ![Tax information dialog box](media/gst-proj-trans-08.png)
 
-7. Click **OK** and then click **Tax document**.
+7. Select **OK**, and then select **Tax document**.
 
-    ![](media/gst-proj-trans-09.png)
+    ![Tax document page](media/gst-proj-trans-09.png)
 
-8. Close the form.
-9. Click **Post** \> **Post**.
+8. Close the page.
+9. Select **Post** \> **Post**.
 10. Select **Inquiries** \> **Voucher**.
 
-| Ledger account name      | Debit amount (Rs.) | Credit amount (Rs.) |
-|--------------------------|--------------------|---------------------|
-| Purchases account        | 5,000.00           |                     |
-| CGST recoverable account | 500                |                     |
-| SGST recoverable account | 500                |                     |
-| Vendor account           |                    | 6,000.00            |
+    The following illustration shows an example of what you will see.
 
-11. Close the form.
+    | Ledger account name      | Debit amount (Rs.) | Credit amount (Rs.) |
+    |--------------------------|--------------------|---------------------|
+    | Purchases account        | 5,000.00           |                     |
+    | CGST recoverable account | 500                |                     |
+    | SGST recoverable account | 500                |                     |
+    | Vendor account           |                    | 6,000.00            |
+
+11. Close the page.
 
 ## Create an Hour journal
-1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, click
-    **Hour**.
-2. Click **New** to create a new journal, and then select **Lines.**
+
+1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, select **Hour**.
+2. Select **New** to create a journal, and then select **Lines**.
 3. Create a project hour journal.
 
-    ![](media/gst-proj-trans-10.png)
+    ![Journal lines for hours page](media/gst-proj-trans-10.png)
 
 4. Select the **General** tab.
 
-    ![](media/gst-proj-trans-11.png)
-
-5. Save the record and then select **Tax information**.
-
-    ![](media/gst-proj-trans-12.png)
-
-6. Click **OK**.
-7. Click **Post**.
-8. Click **OK** and then close the form.
-
-## Create an Item journal
-1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, click **Item**.
-2. Click **New** to create a new journal, and then select **Lines**
-3. Create an item journal.
-
-    ![](media/gst-proj-trans-13.png)
-
-4. Select the **Project** tab.
-
-    ![](media/gst-proj-trans-14.png)
+    ![General tab of the Journal lines for hours page](media/gst-proj-trans-11.png)
 
 5. Save the record, and then select **Tax information**.
 
-    ![](media/gst-proj-trans-15.png)
+    ![Tax information dialog box](media/gst-proj-trans-12.png)
 
-6. Click **OK**.
-7. Click **Post**.
-8. Click **OK**, and then close the form.
+6. Select **OK**.
+7. Select **Post**.
+8. Select **OK**.
+9. Close the page.
+
+## Create an Item journal
+
+1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, select **Item**.
+2. Select **New** to create a journal, and then select **Lines**.
+3. Create an item journal.
+
+    ![Journal lines, inventory page](media/gst-proj-trans-13.png)
+
+4. Select the **Project** tab.
+
+    ![Project tab of the Journal lines, inventory page](media/gst-proj-trans-14.png)
+
+5. Save the record, and then select **Tax information**.
+
+    ![Tax information dialog box](media/gst-proj-trans-15.png)
+
+6. Select **OK**.
+7. Select **Post**.
+8. Select **OK**.
+9. Close the page.
 
 ## Create a Fee journal
-1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, click **Fee**.
-2. Click **New** to create a new journal, and then select **Lines**.
-3. Create a new journal line,and then select the **General** tab.
 
-    ![](media/gst-proj-trans-16.png)
+1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, select **Fee**.
+2. Select **New** to create a journal, and then select **Lines**.
+3. Create a journal line.
+4. Select the **General** tab.
 
-4. Select **Tax information**.
+    ![Journal lines page](media/gst-proj-trans-16.png)
 
-    ![](media/gst-proj-trans-17.png)
+5. Select **Tax information**.
 
-5. Click **OK**.
-6. Click **Post**.
-7. Click **OK**, and then close the form.
+    ![Tax information dialog box](media/gst-proj-trans-17.png)
+
+6. Select **OK**.
+7. Select **Post**.
+8. Select **OK**.
+9. Close the page.
 
 ## Create an on-account transaction
 
-1. On the **Projects** page, on the Action Pane, on the **Manage** tab, in the **Bill** group, click **On-account transactions**.
-2. Click **New** and enter a sales price.
+1. On the **Projects** page, on the Action Pane, on the **Manage** tab, in the **Bill** group, select **On-account transactions**.
+2. Select **New**, and enter a sales price.
 
-    ![](media/gst-proj-trans-18.png)
+    ![On-account page](media/gst-proj-trans-18.png)
 
-3. Select **Tax information** and then select the **GST** FastTab.
-4. Select the SAC code.
+3. Select **Tax information**.
+4. On the **GST** FastTab, in the **Service accounting codes** field, select the Services Accounting Code (SAC).
 
-    ![](media/gst-proj-trans-19.png)
+    ![Tax information dialog box](media/gst-proj-trans-19.png)
 
-5. Click **OK**, and then close the form.
+5. Select **OK**.
+6. Close the page.
 
 ## Create a project invoice proposal
-1. On the **Projects** page, on the Action Pane, on the **Manage** tab, in the **New** group, click **Invoice proposal**.
-2. Select the project transactions for invoicing and then click **OK**.
+
+1. On the **Projects** page, on the Action Pane, on the **Manage** tab, in the **New** group, select **Invoice proposal**.
+2. Select the project transactions for invoicing, and then select **OK**.
 3. Select **View details**.
-4. Click **Tax information**.
+4. Select **Tax information**.
 
-    ![](media/gst-proj-trans-20.png)
+    ![Tax information dialog box](media/gst-proj-trans-20.png)
 
-5. Click **OK**, and then close the form.
-6. Click **Tax document**.
+5. Select **OK**.
+6. Close the page.
+7. Select **Tax document**.
 
-    ![](media/gst-proj-trans-21.png)
+    ![Tax document page](media/gst-proj-trans-21.png)
 
-7. Close the form.
+8. Close the page.
 
 ### Update additional fees
-1. Click **Create Fees**.
-2. Define the values and then click **OK**.
-3. Select the **Fee** tab.
-4. Select the additional fee record and then select **View details**.
-5. Click **Tax information.**
 
-    ![](media/gst-proj-trans-22.png)
+1. Select **Create Fees**.
+2. Define the values, and then select **OK**.
+3. On the **Fee** tab, select the additional fee record, and then select **View details**.
+4. Select **Tax information**.
 
-6. Click **OK**, and then close the form.
-7. Click **Tax document**.
+    ![Tax information dialog box](media/gst-proj-trans-22.png)
 
-    ![](media/gst-proj-trans-23.png)
+5. Select **OK**.
+6. Close the page.
+7. Select **Tax document**.
 
-8. Close the form.
-9. Click **Post**.
-10. Click **OK**.
-11. Click **OK**.
+    ![Tax document page](media/gst-proj-trans-23.png)
+
+8. Close the page.
+9. Select **Post**.
+10. Select **OK**.
+11. Select **OK**.
 
 ## Create a customer advance invoice
-1. On the **Projects** page, on the Action Pane, go to the **Manage** tab, and in the **Bill** group, select **Customer advance** \> **Request a customer advance**.
+
+1. On the **Projects** page, on the Action Pane, on the **Manage** tab, in the **Bill** group, select **Customer advance** \> **Request a customer advance**.
 2. Enter a description and the customer advance amount.
-3. Click **OK**.
-4. Click **View details**.
-5. Click **Tax information.**
-6. On the **GST** FastTab, select the SAC code.
+3. Select **OK**.
+4. Select **View details**.
+5. Select **Tax information**.
+6. On the **GST** FastTab, in the **Service accounting codes** field, select the SAC.
 
-    ![](media/gst-proj-trans-24.png)
+    ![Tax information dialog box](media/gst-proj-trans-24.png)
 
-7. Click **OK**, and then close the form.
-8. Click **Tax document** to validate the tax computation.
-9. Close the form.
-10. Click **Post**.
-11. Select **Print invoice**, and then click **OK**.
-12. Click **OK**.
+7. Select **OK**.
+8. Close the page.
+9. Select **Tax document** to validate the tax computation.
+10. Close the page.
+11. Select **Post**.
+12. Select **Print invoice**, and then select **OK**.
+13. Select **OK**.
 
 ## Validate the tax report
 
-![](media/gst-proj-trans-25.png)
+The following illustration shows an example of the **Tax invoice** report.
+
+![Tax invoice report](media/gst-proj-trans-25.png)
 
 ## Service management
 
-1.  Go to **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
-2.  Create a new service agreement.
-3.  Select **Create service orders**.
+1. Go to **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+2. Create a service agreement.
+3. Select **Create service orders**.
 
-    ![](media/gst-proj-trans-26.png)
+    ![Create service orders dialog box](media/gst-proj-trans-26.png)
 
-4.  Click **OK**.
+4. Select **OK**.
 
 ### Validate a service order
 
-1.  On the Action Pane, on the **Deliver** tab, in the **Service order** group, click **View**.
+1. On the **Service agreements** page, on the Action Pane, on the **Deliver** tab, in the **Service orders** group, select **View**.
 
-    ![](media/gst-proj-trans-27.png)
+    ![Service orders page](media/gst-proj-trans-27.png)
 
-2.  Click **Edit**.
-3.  On the Action Pane, on the **Service order** tab, in the **Show** group, switch to the header view.
-4.  Mark the **Sign off** check box.
-5.  On the Action Pane, on the **Dispatch** tab, in the **Service stage** group, click **Next stage**.
-6.  On the Action Pane, on the **Invoice** tab, in the **Post** group, click **Service order**.
+2. Select **Edit**.
+3. On the Action Pane, on the **Service order** tab, in the **Show** group, switch to the header view.
+4. Select the **Sign off** check box.
+5. On the Action Pane, on the **Dispatch** tab, in the **Service stage** group, select **Next stage**.
+6. On the Action Pane, on the **Invoice** tab, in the **Post** group, select **Service order**.
 
-    ![](media/gst-proj-trans-28.png)
+    ![Post service orders dialog box](media/gst-proj-trans-28.png)
 
-7.  Click **OK**.
+7. Select **OK**.
 
 ## Create a project invoice proposal
-1. On the Action Pane, on the **Invoice** tab, in the **Related information** group, click **Project invoice proposals**.
-2.  Click **New** \> **Invoice proposal**.
-3.  Select a project, and then click **Search.**
-4.  Click **OK**.
-5.  Click **Post**.
-6.  Click **OK**.
-7.  Click **OK**.
+
+1. On the Action Pane, on the **Invoice** tab, in the **Related information** group, select **Project invoice proposals**.
+2. Select **New** \> **Invoice proposal**.
+3. Select a project, and then select **Search**.
+4. Select **OK**.
+5. Select **Post**.
+6. Select **OK**.
+7. Select **OK**.
