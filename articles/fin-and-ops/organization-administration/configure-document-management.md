@@ -69,7 +69,7 @@ To configure SharePoint storage, follow these steps.
 
     Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
 
-4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are correctly. 
+4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
 
 ### Troubleshooting SharePoint communication
