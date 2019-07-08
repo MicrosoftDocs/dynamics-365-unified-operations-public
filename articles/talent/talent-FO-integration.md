@@ -51,7 +51,7 @@ more information about data integrator (DI), templates, and projects, see [Integ
 
 ## Can I map financial dimensions to transfer between Talent and Finance and Operations?
 
-Financial dimensions aren’t currently in Common Data Service and as a result aren’t
+Financial dimensions aren't currently in Common Data Service and as a result aren't
 part of the default template. This entity is planned, but currently no release timeline is available.
 
 For data that resides in Finance and Operations but does not exist in Talent,
@@ -62,7 +62,7 @@ information about how to configure links between Talent and Finance and Operatio
 
 ## Sometimes when I import employees, they go into inactive workers in Finance and Operations. Why?
 
-You may get this error if employees don’t have an active employment detail
+You may get this error if employees don't have an active employment detail
 record in Talent. To resolve this, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.
 
 ## If I select to map only a subset of fields, will changes made to non-mapped fields trigger a sync?
@@ -88,7 +88,7 @@ Additional data can be populated via PowerApps.
 
 ## I set up integration as a batch job, but Talent lost connection to the destination system. How can I send the same set of changes to the destination system?
 
-No special setup is required for exception handling. The Data Integrator will automatically catch and report errors which occur at the source and destination and will allow manual retries. However, it doesn’t allow manual data correction. If data updates are needed, that should happen either at the source or the destination.
+No special setup is required for exception handling. The Data Integrator will automatically catch and report errors which occur at the source and destination and will allow manual retries. However, it doesn't allow manual data correction. If data updates are needed, that should happen either at the source or the destination.
 
 ## Can I set up bi-directional integration?
 
@@ -107,7 +107,7 @@ The first run of Data Integrator is always a full run. Subsequent runs are
 based on change tracking. When an error run is executed, it extracts the records
 in scope of the run and sends out the most recent changes from Common Data Service.
 
-## When I save the project, I get the error: “Project has mapping errors." What do I do?
+## When I save the project, I get the error: "Project has mapping errors." What do I do?
 
 Check the setup of your integration keys, make any required changes to the setup, then refresh the entities in the project.
 
@@ -157,7 +157,7 @@ the execution time in Step 2.
 
 ![Identify index](media/IdentifyIndex.png)
 
-## After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
+## After integrating Talent and Finance and Operations, I don't see my Talent data in Finance and Operations. What do I do?
 
 The integration to Finance and Operations is a two-step process. First, verify
 that the Talent data is updated and available in Common Data Service. This is a near real-time
@@ -189,7 +189,7 @@ identical where data may be maintained in both systems.
 
 Make sure when creating your connections, you choose Dynamics 365 for Finance and Operations (currently in preview) and Common Data Service.
 
-## When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.� What should I do?
+## When syncing employments, I get the errors "CompanyInfo_FK doesn't exist" or "The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'." What should I do?
 
 Ensure that you are mapping to the correct legal entities. Legal entity syncing
 is not part of the default template, so it is expected that each legal
