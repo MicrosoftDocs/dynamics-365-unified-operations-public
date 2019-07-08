@@ -693,7 +693,7 @@ Generate a transport tax declaration
 
 | **Processing**            | **Processing code**  | **Name**                                  |
 |---------------------------|----------------------|-------------------------------------------|
-| Transport tax declaration | Тран��ал 5.05 (2019) | Деклараци� по тран�портному налогу (2019) |
+| Transport tax declaration | ТрансНал 5.05 (2019) | Декларация по транспортному налогу (2019) |
 
 3.  Set up the ER format that is run when accounting reporting is generated in
     electronic format:
@@ -731,7 +731,7 @@ quarter, and third quarter.
 2.  Select the report format to generate.
 
     For example, to generate a transport tax declaration in XML format for the
-    year 2019, select **Тран��ал 5.05 (2019)**.
+    year 2019, select **ТрансНал 5.05 (2019)**.
 
 3.  On the **Messages** FastTab, select **New**.
 
