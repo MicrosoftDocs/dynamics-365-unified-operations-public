@@ -204,8 +204,8 @@ public OpenPaymentTerminalDeviceRequest(string token, string deviceName, Setting
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
 | deviceName | The name of the device, as defined on the **POS hardware profile** page in the Finance and Operations client. |
-| terminalSettings | The set of payment terminalâspecific configuration properties that are defined in the Finance and Operations client, such as the minimum amount for signature capture and the debit cash-back limit. |
-| deviceConfig | The set of payment terminalâspecific configuration properties in the form of name/value pairs, such as the IP address and port in the case of network devices. |
+| terminalSettings | The set of payment terminalâ-specific configuration properties that are defined in the Finance and Operations client, such as the minimum amount for signature capture and the debit cash-back limit. |
+| deviceConfig | The set of payment terminalâ-specific configuration properties in the form of name/value pairs, such as the IP address and port in the case of network devices. |
 | extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### BeginTransactionPaymentTerminalDeviceRequest
@@ -537,7 +537,7 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 | extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 #### State in the payment connector
-The payment connector can be hosted as part of the dllhost.exe process when it's hosted through the in-process Hardware Station inside the POS. Alternatively, the payment connector can be hosted as a w3wp.exe process when it's hosted in the Hardware Station that is based on Microsoft Internet Information Services (IIS). In some circumstances, both processes can be terminated or stop responding between or during payment flows. Therefore, we recommend that payment connectors not have state dependencies, and that they be able to recover if they are terminated at any point during the payment flowârelated requests that are described earlier.
+The payment connector can be hosted as part of the dllhost.exe process when it's hosted through the in-process Hardware Station inside the POS. Alternatively, the payment connector can be hosted as a w3wp.exe process when it's hosted in the Hardware Station that is based on Microsoft Internet Information Services (IIS). In some circumstances, both processes can be terminated or stop responding between or during payment flows. Therefore, we recommend that payment connectors not have state dependencies, and that they be able to recover if they are terminated at any point during the payment flow-related requests that are described earlier.
 
 ### Configure the payment connector in the Hardware Station config
 To help guarantee that the Hardware Station loads the payment connector, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
