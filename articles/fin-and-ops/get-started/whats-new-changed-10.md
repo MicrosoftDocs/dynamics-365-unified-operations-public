@@ -125,7 +125,7 @@ This release includes the following features for Electronic reporting (ER).
 ### Performance optimization of customer-built configurations
 A functional consultant persona can enable tracing of execution of electronic reporting configuration. This consultant can also analyze a generated trace and optimize electronic reporting configuration performance by setting caching on frequently used nodes.
 
-Before this release, caching supported only a flat list of records, which meant that any related records were not cached. This feature allows caching of nested records. It also allows users to enable “lazy� caching, when only referenced records are being cached, not the whole list.
+Before this release, caching supported only a flat list of records, which meant that any related records were not cached. This feature allows caching of nested records. It also allows users to enable "lazy" caching, when only referenced records are being cached, not the whole list.
 
 ### Setting up parameters by legal entity
 
@@ -164,8 +164,8 @@ This feature allows you to use a fillable PDF document as a template for generat
 This functionality allows you to do the following:
 - Obtain a cash flow forecast and perform an analysis.
 - Manage payments on a daily basis using payment schedule journals.
-- Control the company’s cash position.
-- Maintain the company’s cash flows with centralized control.
+- Control the company's cash position.
+- Maintain the company's cash flows with centralized control.
 
 For more information, see [Cash flow management (Russia)](../../financials/localizations/rus-cash-flow.md).
 
@@ -191,7 +191,7 @@ Basic localization in the following two areas is available:
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156). 
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features - Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ### Platform update 24
 Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new and changed in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
