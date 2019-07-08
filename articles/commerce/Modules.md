@@ -28,8 +28,11 @@ ms.dyn365.ops.version:
 
 ---
 # Add or remove modules
+Todo
 # Configuring modules
+Todo
 # Configure an image, video, or link in a module
+Todo
 
 ---
 # Original article:
