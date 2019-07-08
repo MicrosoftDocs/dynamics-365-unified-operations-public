@@ -121,7 +121,7 @@ All users have a common view of candidate profiles. The **Profile** tab shows an
 
     To view a document, select the document name in the list of documents. You can view Microsoft Word documents in the application by using Microsoft Office 365. You can also download the documents to your local computer by using the **Download** option for each document.
 
-- The **LinkedIn** tab shows the candidate's LinkedIn information. To use this tab, you must connect your LinkedIn account in the user settings, and your environment's LinkedIn Recruiter connection must be established. For more information, see [Sourcing with LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- The **LinkedIn** tab shows the candidate's LinkedIn information. To use this tab, you must connect your LinkedIn account in the user settings, and your environment's LinkedIn Recruiter connection must be established. For more information, see [Sourcing with LinkedIn Recruiter](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Only candidates can update their skills, education history, and work experience.
