@@ -129,7 +129,7 @@ Additionally, forms below are supplemented by the **Documents to update** field:
 -   Sales Posting invoice form,
 -   Purchasing Posting product receipt form.
 
-The “**Documents to update**� field influences on the “**Document status**� field in “**Packing slip journal**� and "**Invoice Journal**". On **Packing slip** creation, the “**Document status**� field value is equal to “**None**�. If any **Packing slip** was chosen in field “**Documents to update**� then its “**Document status**� would be “**Broken**� and the “**Document status**� of **Packing slip** where it was done will be “**Canceled**�.
+The “**Documents to update**” field influences on the “**Document status**” field in “**Packing slip journal**” and "**Invoice Journal**". On **Packing slip** creation, the “**Document status**” field value is equal to “**None**”. If any **Packing slip** was chosen in field “**Documents to update**” then its “**Document status**” would be “**Broken**” and the “**Document status**” of **Packing slip** where it was done will be “**Canceled**”.
 
 
 
