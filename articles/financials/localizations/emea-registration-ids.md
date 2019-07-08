@@ -90,7 +90,7 @@ The following table lists the supported registration types in Finance and Operat
 | VAT ID                                                        | All countries of the European Union (EU)|  Tax exempt number (Legislative type TAX ID in AX 2012 R3)|
 | Enterprise ID (COID)                                          | Belgium Czech Republic Estonia Hungary Latvia Lithuania Poland Switzerland | Enterprise number (EnterpriseNumber) Registration number (RegNum\_W) Registration number (RegNum\_W) Registration number (RegNum\_W) Registration number (RegNum\_W) Enterprise code (EnterpriseCode) Registration number (RegNum\_W) UID (Legislative type UID in AX 2012 R3) |
 | Branch ID                                                     | Belgium            | Branch number (BranchNumber)|
-| Spisová zna�ka (Registration number, Issuing agency, Section) | Czech Republic     | Inset number (CommercialRegisterInsetNumber) Kept at commercial register (CommercialRegister) Section of commercial register (CommercialRegisterSection)|
+| Spisová značka (Registration number, Issuing agency, Section) | Czech Republic     | Inset number (CommercialRegisterInsetNumber) Kept at commercial register (CommercialRegister) Section of commercial register (CommercialRegisterSection)|
 | Customs customer ID                                           | Finland | Customs customer number (CustomsCustomerNumber\_FI)|
 | INN                                                           | Russian Federation| INN (Legislative type INN in AX 2012 R3)|
 | RRC                                                           | Russian Federation| RRC (Legislative type RRC in AX 2012 R3)|
