@@ -28,8 +28,11 @@ ms.dyn365.ops.version:
 
 ---
 # Create a fragment
+Todo
 # Add fragments to a page
+Todo
 # Edit a fragment
+Todo
 
 ---
 # Original Article:
