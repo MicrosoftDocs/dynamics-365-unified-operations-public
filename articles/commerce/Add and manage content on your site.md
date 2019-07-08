@@ -27,6 +27,14 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 
 ---
+# Ways to add content
+TODO
+
+# Page elements
+TODO
+
+# Document states and lifecycle
+TODO
 
 # Page Editing
 
