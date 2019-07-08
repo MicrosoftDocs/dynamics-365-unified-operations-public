@@ -27,6 +27,13 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 
 ---
+# Add or remove modules
+# Configuring modules
+# Configure an image, video, or link in a module
+
+---
+# Original article:
+
 ## Modules
 
 Modules are logical building blocks that make up your page structure, and they come in a variety of purposes and scopes. Some modules are high-level containers whose sole purpose is to organize other child modules. Other modules can have a very granular purpose, like a simple image placement module. And others, like a Carousel module, fall somewhere in between. By default, your D365 for Commerce site comes with a starter kit module library that will enable you to achieve most fundamental e-Commerce scenarios. You should be able to construct an end-to-end e-Commerce site with just these modules, but a day will likely come when you want to customize or build brand-new modules for specific needs. For this, there is a module design SDK available for your SI or in-house front-end JavaScript/React developer to create a custom module library to suite those needs. A whole set of documentation is available to drill into the module SDK, but for the moment we’ll stick to foundational module concepts focused around page authoring workflows.
