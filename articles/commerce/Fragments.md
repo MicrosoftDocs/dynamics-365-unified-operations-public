@@ -44,7 +44,7 @@ We can then configure this Hero fragment with our specific promotional content, 
 
 To convert a module into a reusable fragment:
 
-1)  Follow the previous instructions to configure your module.
+1)  Select an already configured module within your page.
 
 2)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the name of the module you wish to convert into a fragment.
 
