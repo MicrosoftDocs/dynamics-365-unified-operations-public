@@ -141,7 +141,7 @@ info("Updated value is: " + t1.stringField);
 
 ## Insert statement
 
-To run an insert query:
+To run an insert statement:
 
 + Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.
 + Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert. The order of the fields in  **SysDaQueryObject.projection()** must match the order of the fields in the **SysDaInsertObject.fields()**.
@@ -186,7 +186,7 @@ info(any2Str(t1.intField) + ":" + t1.stringField);
 
 ## Delete statement
 
-To run an delete query:
+To run an delete statement:
 
 + Create and configure a **SysDaQueryObject** object to specify which rows to delete.
 + Create a **SysDaDeleteObject** object, passing the **SysDaQueryObject** to the constructor.
@@ -209,7 +209,7 @@ qe.WhereClause(new SysDaEqualsExpression(
         new SysDaValueExpression(0)));
 
 var ds = new SysDaDeleteStatement();
-var delobj =  new SysDaDeleteObject(qe);
+var delobj = new SysDaDeleteObject(qe);
 
 ttsbegin;
     ds.executeQuery(delobj);
