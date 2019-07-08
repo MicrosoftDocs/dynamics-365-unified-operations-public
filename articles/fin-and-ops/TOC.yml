@@ -3289,6 +3289,8 @@
       items:
       - name: Set up master plans
         href: ../supply-chain/master-planning/master-planning-setup.md
+      - name: Master planning setup wizard
+        href: ../supply-chain/master-planning/master-planning-setup-wizard.md
       - name: Coverage settings
         href: ../supply-chain/master-planning/coverage-settings.md
       - name: Define coverage rules for items
