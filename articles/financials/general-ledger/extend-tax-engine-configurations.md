@@ -70,7 +70,7 @@ For union territories that don’t have a legislature, the GST Council introduce
 -   Dadra and Nagar Haveli
 -   Andaman and Nicobar Islands
 
-SGST can also be applied in union territories such as New Delhi and Puducherry, which have their own legislatures and can be considered “states� per the GST process.
+SGST can also be applied in union territories such as New Delhi and Puducherry, which have their own legislatures and can be considered “states” per the GST process.
 
 For UTGST, the following combinations of taxes can be applied for any transaction:
 
