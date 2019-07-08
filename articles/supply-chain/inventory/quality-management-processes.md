@@ -41,7 +41,7 @@ Quality assurance involves product testing and the management of nonconforming m
 ## Controlling the quality management process
 Here are some of the ways that you can control the quality management process:
 
--   Create quality orders that are based on trigger points such as â€œat product receiptâ€ for inbound operations or â€œat product pick-upâ€ for outbound operations.
+-   Create quality orders that are based on trigger points such as "at product receipt" for inbound operations or "at product pick-up" for outbound operations.
 -   Document test results, and determine whether the results meet the established test criteria and acceptable quality levels.
 -   Use document management for detailed product specifications and user-specific notes as part of reporting during the inspection process.
 -   Maintain nonconforming products, and correlate these products with additional nonconformance information to track down the original cause of a problem.
