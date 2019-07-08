@@ -176,7 +176,7 @@ In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and selec
 After the UK MTD-VAT setup.zip file is downloaded, open Finance and Operations, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
 
 Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synchronized. To do this, complete the following steps.
-1.	In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for the confirmation that the refresh has completed. For more information about refreshing the entity list, see [“Entity list refresh�](../../dev-itpro/data-entities/data-entities.md#entity-list-refresh) for details.
+1.	In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for the confirmation that the refresh has completed. For more information about refreshing the entity list, see [“Entity list refresh”](../../dev-itpro/data-entities/data-entities.md#entity-list-refresh) for details.
 2.	Validate that the source data and target data are mapped correctly. For more information, see the validation section in the topic, [Data import and export jobs](../../dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 3.	Before the data entities are used for the first time to import the data from the package, synchronize the source data and target data mapping. Select each data entity in the list of the package, on the Action Pane select **Map target mapping**, and then click **Generate mapping** on top of the grid to create a mapping from scratch. Save the mapping. Repeat this step for each of the data entities in the package before you start import.
 For more information about data management, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md). 
@@ -306,7 +306,7 @@ To work with MTD for VAT, the VAT registration number of your legal entity must 
 1. Create a registration type that you will use for VAT registration numbers. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation). 
 2. Associate the registration type with a **VAT ID**. For more information, see [Registration category](emea-registration-ids.md#supported-registration-categories).
 3. Go to **Organization administration** \> **Global Address Book** \> **Legal entities**, and on the Action Pane, select **Registration ID**.
-4. Define the VAT registration number as a **Registration ID** which is associated with the **VAT ID**� registration category.
+4. Define the VAT registration number as a **Registration ID** which is associated with the **VAT ID**” registration category.
 
 ![Sales tax inquiry](media/reg-ids-setup.png)
 
@@ -574,7 +574,7 @@ If for some reason a company decides to address requests to the HMRC without tra
 
 4. Repeat steps 1-3 for other fraud prevention headers including Gov-Client-Timezone, Gov-Client-User-Agent, Gov-Vendor-Version, and Gov-Client-MAC-Addresses.
 5.Save and complete your configuration..
-6. Go to **Tax** \> **Setup** \> **Electronic reporting** \> **Web service settings** and select your child format in the “**Request headers format mapping**� field of all the web services used for interoperation with the HMRC, instead of the parent format used by default.
+6. Go to **Tax** \> **Setup** \> **Electronic reporting** \> **Web service settings** and select your child format in the “**Request headers format mapping**” field of all the web services used for interoperation with the HMRC, instead of the parent format used by default.
     
 ![JSON object](media/web-service-format-setup.png)
 
