@@ -166,8 +166,8 @@ used by F&O to retrieve Event Grid Secrets
     <img src="../../media/BEF-Howto-Keyvault-12.png" width="50%">
 
 10.  **Save** your new access policy.
-
-    <img src="../../media/BEF-Howto-Keyvault-13.png" width="50%">
+    
+   <img src="../../media/BEF-Howto-Keyvault-13.png" width="50%">
 
 Exercise 4: Configure a Business Events Endpoint in F&O
 =======================================================
