@@ -39,7 +39,7 @@ This article describes the various elements that you use to plan transportation 
 You can use route plans and route guides for complex transportation routes that have multiple stops. If the same route will be used on a regular basis, you can set up a scheduled route.
 
 ## Route plans
-A route plan contains route segments that provide information about the stops that are visited on the route and the carriers that are used for each segment. You must define the stops on the route as hubs. A hub can be a vendor, a warehouse, a customer, or even just a reloading place where you change carrier. For each segment, you can define “spot rates� for various charges. Here are some examples:
+A route plan contains route segments that provide information about the stops that are visited on the route and the carriers that are used for each segment. You must define the stops on the route as hubs. A hub can be a vendor, a warehouse, a customer, or even just a reloading place where you change carrier. For each segment, you can define “spot rates” for various charges. Here are some examples:
 
 -   Charges for travelling to the given segments
 -   Charges for a picking up the goods
