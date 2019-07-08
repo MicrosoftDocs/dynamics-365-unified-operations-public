@@ -5,7 +5,7 @@ title: Build workspaces
 description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 author: jasongre
 manager: AnnBe
-ms.date: 08/25/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
