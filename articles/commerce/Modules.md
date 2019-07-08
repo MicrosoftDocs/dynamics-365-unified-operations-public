@@ -27,18 +27,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 
 ---
-# Add or remove modules
-Todo
-# Configuring modules
-Todo
-# Configure an image, video, or link in a module
-Todo
-
----
-# Original article:
-
-## Modules
-
+# Modules
 Modules are logical building blocks that make up your page structure, and they come in a variety of purposes and scopes. Some modules are high-level containers whose sole purpose is to organize other child modules. Other modules can have a very granular purpose, like a simple image placement module. And others, like a Carousel module, fall somewhere in between. By default, your D365 for Commerce site comes with a starter kit module library that will enable you to achieve most fundamental e-Commerce scenarios. You should be able to construct an end-to-end e-Commerce site with just these modules, but a day will likely come when you want to customize or build brand-new modules for specific needs. For this, there is a module design SDK available for your SI or in-house front-end JavaScript/React developer to create a custom module library to suite those needs. A whole set of documentation is available to drill into the module SDK, but for the moment we’ll stick to foundational module concepts focused around page authoring workflows.
 
 ### Container Modules and “Slots”
@@ -51,3 +40,61 @@ Below is a simple diagram to illustrate how modules nest into parent container m
 ### Content Modules
 
 Content modules, as their name suggests, contain actual content and media primitives, such as text (headlines, paragraphs, links) or asset references (images, video, PDFs, etc.). Examples of common content modules are Hero, Feature, Banner, etc., each of which can contain text /media and don’t require any further child modules to actually render something visible on a page. Content modules represent the heart of typical day-to-day page and content authoring activities, primarily because they represent the actual information rendered within their parent container modules. There are many different content modules to choose from, and a main takeaway here is that content modules are generally the final pieces in your page’s module nesting hierarchy.
+
+# Add or remove modules
+## Add a module
+
+1)  First select a container or slot that allows a child module to be added to it.
+    > [!NOTE]
+    > Controlling which modules are allowed within a specific container or slot is defined by the either page’s template or the container module's definition.
+
+2)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the container or slot’s name to show the action dropdown menu.
+
+3)  Select the “Add Module” option from the dropdown.
+    > [!NOTE]
+    > If the container or slot does not allow new child modules, the “Add Module” option will be disabled.
+
+4)  After selecting “Add Module” option, the Module Picker modal window will launch. The Module Picker modal is automatically filtered to show only allowable modules for the chosen container/slot (as determined by the page’s template or the container module definition).
+
+5)  From the module options, search for and select one to add to your page (‘Feature’ or ‘Hero’ modules are good ‘*Hello World’* options if trying out for the first time). Click “OK”, and the new module will be added to your page within the originally selected container/slot.
+
+## Remove a module
+
+To remove a module from a slot or container within your page:
+
+1)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the name of the module you wish to remove.
+
+2)  In the actions dropdown menu select “Delete”. This will launch a confirmation dialog asking is you are sure you want to remove the module.
+
+3)  Assuming you wish to remove it, click “OK” and the canvas will refresh without the deleted module.
+
+# Configuring modules
+## Configure a content module
+
+To configure a content module that is in your page:
+
+1)  Select a content module on your page (examples: Feature, Hero, Banner, etc.).
+
+2)  Notice that the selected module’s settings and content controls are displayed in the Property Panel on the right. Expand some of the nested controls in the property panel by clicking on the headers. Set any required control values, which are indicated by “\*” and validation warnings.
+
+3)  If there is a “Data Configuration” section in the Property Panel, click to expand it.
+
+4)  If there is a “Add Data Source” dropdown button, click it and select any content items you want to add \[For ‘Feature’ or ‘Hero’ modules, add ‘Heading’ and ‘Image’ to begin with\].
+
+5)  Enter settings for any required or desired module controls.
+
+6)  In the Action Button bar above the canvas click the ‘Save’ button. This will refresh the canvas with your new module settings.
+
+## Configure a container module
+
+To configure a container module that is in your page:
+
+1)  Select a container module within your page (examples: Carousel, Fluid Container).
+
+2)  Notice that the selected module’s settings and content controls are displayed in the Property Panel on the right. Expand some of the nested controls in the property panel by clicking on the headers. Set any required control values, which are indicated by “\*” or by validation warnings.
+
+3)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the container’s name or next to any slots within the container. The action menu will display and you can follow the same steps enumerated in the “Add a Module” section above to populate your selected container with child modules.
+
+
+# Configure an image, video, or link in a module
+Todo
