@@ -47,7 +47,7 @@ To reverse the transactions and post the reversing transactions as storno transa
 |Sales revenue      |        |-100.00  |
 |Accounts receivable|-100.00 |         |
 
-Each reversing transaction appears in the same debit or credit column as the original transaction. By keeping amounts in their original columns and reversing the sign on the amounts, you effectively “zero out� the original transaction.
+Each reversing transaction appears in the same debit or credit column as the original transaction. By keeping amounts in their original columns and reversing the sign on the amounts, you effectively “zero out” the original transaction.
 
 After you complete the following procedure, a transaction is created that automatically reverses storno transactions.
 
