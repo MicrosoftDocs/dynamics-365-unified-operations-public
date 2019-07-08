@@ -60,5 +60,5 @@ Use this procedure to set up rules for ordering products in a category. The rule
 6. In the Vendor selection field, select an option.
     * Select a rule to control which kind of vendors can be selected for the category when requisitions are created.  
 7. Click Close.
-    * The policy rules that you have defined have been for requisitions of type Consumption. If you wanted to define policies for requisitions of type Replenishment, you would create a rule for the Policy rule type called “Replenishment category access policy rule�.  
+    * The policy rules that you have defined have been for requisitions of type Consumption. If you wanted to define policies for requisitions of type Replenishment, you would create a rule for the Policy rule type called “Replenishment category access policy rule”.  
 
