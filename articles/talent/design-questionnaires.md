@@ -44,7 +44,7 @@ A carefully designed questionnaire can help increase the quality of the data tha
 -   Be sure that the questionnaire flows logically, so that respondents remain engaged.
 -   Arrange questions and answers in the order that they should be presented to respondents in.
 -   Decide how the results should be evaluated, if applicable.
--   Decide whether youâ€™ll need additional features. For example, determine whether and how results should be categorized, whether a time limit is required, or whether all the questions will be mandatory.
+-   Decide whether you'll need additional features. For example, determine whether and how results should be categorized, whether a time limit is required, or whether all the questions will be mandatory.
 
 The design phase includes four categories of tasks that you must complete in this order:
 
@@ -79,7 +79,7 @@ Questionnaire types are required and must be assigned when you create a question
 
 ### Question types
 
-Question types are requiredÂ and must be assigned when you create a question. 
+Question types are required and must be assigned when you create a question. 
 
 Use question types to categorize questions for reporting. Question types also make it easier to find questions, because you can use types as filters on the **Questions** page. Here are some examples of question types:
 
@@ -89,7 +89,7 @@ Use question types to categorize questions for reporting. Question types also ma
 
 ### Questionnaire parameters
 
-Questionnaire parameters are optional. You might not use them, depending on your companyâ€™s requirements. 
+Questionnaire parameters are optional. You might not use them, depending on your company's requirements. 
 
 Questionnaire parameters define the anonymity, number sequence codes, and reference types of a questionnaire. When an organization distributes a questionnaire, the option to allow respondents to remain anonymous might be of concern. 
 
@@ -106,7 +106,7 @@ Questionnaires comprise three main elements: answer groups that contain the answ
 
 Respondents can answer a question in two ways, depending on the subject of the question:
 
--   Open-ended questions donâ€™t require responses in a specific format. Respondents can type a response as text, a number, a date, or a time. These questions typically require that the respondents provide subjective information in their answers, such as an opinion, description, evaluation, or estimate.
+-   Open-ended questions don't require responses in a specific format. Respondents can type a response as text, a number, a date, or a time. These questions typically require that the respondents provide subjective information in their answers, such as an opinion, description, evaluation, or estimate.
 -   Closed-ended questions require that the respondent select an answer in a list of possible correct answers.
 
 To provide a list of possible answers for closed-ended questions, you can create answers on the **Answer groups** page. 
@@ -178,7 +178,7 @@ Result groups are optional when you attach questions to a questionnaire.
 A result group is used to calculate points and categorize the results of a questionnaire. If you use result groups, you can perform the following tasks:
 
 -   Evaluate questionnaire results, based on point statistics.
--   Evaluate a respondentâ€™s score for each result group that you set up.
+-   Evaluate a respondent's score for each result group that you set up.
 -   Generate statistics for each result group to help you analyze results.
 -   Print a report that shows results for each result group, and also optional points/texts that are based on points that are earned in each result group.
 
@@ -216,7 +216,7 @@ The following table shows the point-based messages that you define for the "lead
 | 4 to 7         | You have good leadership abilities.        |
 | 8 to 10        | You have outstanding leadership abilities. |
 
-You can set up point intervals and texts for each result group on a questionnaire. Texts that correspond to each respondentâ€™s score are displayed for each result group. 
+You can set up point intervals and texts for each result group on a questionnaire. Texts that correspond to each respondent's score are displayed for each result group. 
 
 **Note:** You can change intervals and texts. However, if a questionnaire has been completed, changes might cause differences between previous and new result reports.
 
@@ -226,7 +226,7 @@ Conditional question hierarchies are optional when you set up a questionnaire.
 
 **Note:** Before you can set up a conditional question hierarchy, you must attach questions that have assigned answer groups to the questionnaire. 
 
-To use conditional questions to create a question hierarchy in a questionnaire, you can make the sequence that questions are presented inÂ depend on the answer that a respondent selects for each question. By basing the question sequence on a respondentâ€™s answer, you can modify the questionnaire as the respondent completes it.
+To use conditional questions to create a question hierarchy in a questionnaire, you can make the sequence that questions are presented inÂ depend on the answer that a respondent selects for each question. By basing the question sequence on a respondent's answer, you can modify the questionnaire as the respondent completes it.
 
 #### Examples
 
