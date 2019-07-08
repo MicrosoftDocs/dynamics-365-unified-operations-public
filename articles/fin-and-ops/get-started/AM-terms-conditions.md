@@ -41,7 +41,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 a)	General. You may install and use any number of copies of the software on your devices. You may not use the software in a live operating environment unless Microsoft permits you to do so under another agreement.
 
-b)	Microsoft Dynamics 365 for Finance and Operations Subscription.  Use of the software requires a valid subscription to the Microsoft Dynamics 365 for Finance and Operations online service (“Online Service�).  The Online Service is not licensed or authorized for use under this agreement. Your access to the Online Service through the software must comply with the existing terms for the service that apply to you through your or your organization's subscription. You may lose access to the Online service (i) if your or your organization’s subscription to the Online Service expires or is terminated, or (ii) your or your organization’s license to this software is terminated.
+b)	Microsoft Dynamics 365 for Finance and Operations Subscription.  Use of the software requires a valid subscription to the Microsoft Dynamics 365 for Finance and Operations online service (“Online Service”).  The Online Service is not licensed or authorized for use under this agreement. Your access to the Online Service through the software must comply with the existing terms for the service that apply to you through your or your organization's subscription. You may lose access to the Online service (i) if your or your organization’s subscription to the Online Service expires or is terminated, or (ii) your or your organization’s license to this software is terminated.
 c)	Third Party Software. The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at http://aka.ms/thirdpartynotices or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
 
 2.	TIME-SENSITIVE SOFTWARE.
@@ -88,7 +88,7 @@ g)	share, publish, distribute, or lend the software, provide the software as a s
 
 8.	EXPORT RESTRICTIONS. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit http://aka.ms/exporting.
 
-9.	SUPPORT SERVICES. Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is�, “with all faults�, and without warranty of any kind.
+9.	SUPPORT SERVICES. Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
 10.	ENTIRE AGREEMENT. This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 
@@ -106,7 +106,7 @@ c)	Germany and Austria.
    ii.	Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as, in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
 Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence.
 
-13.	DISCLAIMER OF WARRANTY. THE SOFTWARE IS LICENSED “AS IS.� YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES, OR CONDITIONS. TO THE EXTENT PERMITTED UNDER APPLICABLE LAWS, MICROSOFT EXCLUDES ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+13.	DISCLAIMER OF WARRANTY. THE SOFTWARE IS LICENSED “AS IS.” YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES, OR CONDITIONS. TO THE EXTENT PERMITTED UNDER APPLICABLE LAWS, MICROSOFT EXCLUDES ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
 
 14.	LIMITATION ON AND EXCLUSION OF DAMAGES. IF YOU HAVE ANY BASIS FOR RECOVERING DAMAGES DESPITE THE PRECEDING DISCLAIMER OF WARRANTY, YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.
 
