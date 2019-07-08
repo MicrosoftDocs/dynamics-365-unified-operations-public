@@ -39,7 +39,7 @@ In Microsoft Dynamics 365 for Talent: Onboard, you can create hiring teams. You 
 
 1. On the left menu, select **Teams**.
 2. Under **Teams**, select the **Add** (plus sign \[**+**\]) tile.
-3. In the **Create a new team** window, under **Team name**, enter a name for the hiring team.
+3. In the **Create a new team** dialog box, under **Team name**, enter a name for the hiring team.
 
     ![[Creating a new team in Onboard](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
@@ -49,7 +49,7 @@ In Microsoft Dynamics 365 for Talent: Onboard, you can create hiring teams. You 
 
 5. To email new team members, turn on the **Send an email to the new members** option.
 6. Select **Create**.
-7. If you indicated that you want to email new team members, edit the email in the next window, and then select **Done**.
+7. If you indicated that you want to email new team members, edit the email in the next dialog box, and then select **Done**.
 
 ## Assign onboarding guides to a hiring team
 

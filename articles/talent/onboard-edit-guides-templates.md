@@ -88,7 +88,7 @@ To rearrange activities and sections, drag them to a new location.
 You can add contact people who can help your new hire succeed from day one. These contacts can be recruiters, teammates, onboarding buddies, mentors, admins, and IT support staff.
 
 1. On the **Contacts** tab, select **New contact**.
-2. In the **Add team member** pane, enter the contact person's name or email address, enter a short description that explains how the contact person can help the new hire, and then select **Add**. 
+2. In the **Add team member** dialog box, enter the contact person's name or email address, enter a short description that explains how the contact person can help the new hire, and then select **Add**. 
 
     ![[Adding contacts to an onboarding guide or template](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
