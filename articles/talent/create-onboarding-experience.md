@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with Onboard
-description: Microsoft Dynamics 365 for Talent - Onboard helps your new hires get off to a strong start, giving them a guide to take them smoothly through the onboarding process.
+description: This topic will help you get started with Microsoft Dynamics 365 for Talent - Onboard. Onboard helps your new hires get off to a strong start by giving them a guide that takes them smoothly through the onboarding process.
 author: andreabichsel
 manager:
 ms.date: 06/21/2019
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-With Dynamics 365 for Talent: Onboard, you can help your new employees perform more effectively and gain a sense of belonging in their new roles. An effective onboarding process helps your new hires understand their new roles and provides them with a head start on establishing valuable relationships to ensure their success.
+By using Microsoft Dynamics 365 for Talent: Onboard, you can help your new employees perform more effectively and gain a sense of belonging in their new roles. An effective onboarding process helps new hires understand their new roles. It also gives them a head start in establishing valuable relationships that will help ensure their success.
 
-With Onboard, you can quickly create an onboarding guide that will welcome your new talent and make them excited about joining your organization.
+Onboard lets you quickly create an onboarding guide that will welcome your new hires and make them excited about joining your organization.
 
-[![Onboard - onboarding guide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
+[![Onboarding guide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
 
-To find out how to get and use the Onboard app, see the following articles:
+To learn how to get and use the Onboard app, see the following topics:
 
 - [Get the Onboard app](./onboard-get-app.md)
 - [Create an onboarding guide](./onboard-create-guide.md)
@@ -51,7 +51,7 @@ To find out how to get and use the Onboard app, see the following articles:
 
 ## See also
 
-- [Try or buy the Onboard app](https://dynamics.microsoft.com/en-us/talent/onboard/)
+- [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/index)
+- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support](./talent-support.md)
