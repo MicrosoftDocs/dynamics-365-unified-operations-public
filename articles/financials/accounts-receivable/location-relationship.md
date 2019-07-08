@@ -72,7 +72,7 @@ There are two ways to add a new relationship type:
 
     1.  Create an extension to the **DirSystemRelationshipType** enum and add the new relationship type.
 
-    2. Create an initializer for this new type. You can find several examples in the core code, one of them is  **DirRelationshipTypeChildInitialize**. This is an initializer class for party relationship type “Child�. You can start with your initializer by copying and pasting this code and then update the highlighted areas.
+    2. Create an initializer for this new type. You can find several examples in the core code, one of them is  **DirRelationshipTypeChildInitialize**. This is an initializer class for party relationship type “Child”. You can start with your initializer by copying and pasting this code and then update the highlighted areas.
     
     ![DirRelationshipChild](media/DirRelationship.PNG)
 
