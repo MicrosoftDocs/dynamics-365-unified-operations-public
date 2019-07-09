@@ -286,8 +286,6 @@ The page builder class overrides the **addDataControls()** method to add three l
 
 The **addActionControls()** is then overridden to add 2 buttons – the **OK** button, and the **Cancel** button to cancel the process and go back to the start of the process.
 
-![Process guide page builder code](media/process-guide-page-builder-code.png)
-
 ```X++
 /// <summary>
 /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
@@ -320,8 +318,8 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
     }
 ```
 
-
-
+> [!NOTE]
+> You can find the same source code for the X++ methods in this topic by using the Application Explorer. Filter on the class name, and then right-click the class name and select **View code**.
 
 ### Step 3: Start the production order
 
@@ -330,8 +328,6 @@ The third step is where the business logic of starting the production order is e
 The **ProcessGuideStepWithoutPrompt** abstract class implements the default behavior for such steps. The current step, therefore, should extend the **ProcessGuideStepWithoutPrompt** class and override the **doExecute()** method.
 
 The following code example shows the class and the **doExecute()** method implementation. The method simply retrieves the order ID and user ID from the session state and invokes the method to start this production order.
-
-![doExecute() method implementation](media/class-and-method-implementation.png)
 
 ```X++
 /// <summary>
@@ -365,8 +361,6 @@ In case of an exception, the framework exception handling logic ensures that the
 ### Building the navigation through the steps
 
 The **ProcessGuideController** base class instantiates the **ProcessGuideNavigationAgentDefault** class, which relies on a pre-defined navigation route, which is a simple map of source and destination steps. For the production start scenario, because there is no conditional branching, this implementation would suffice. Therefore, you only need to override the **initializeNavigationRoute()** method to define the navigation route.
-
-![Override method code](media/override-method-code.png)
 
 ```X++
     protected ProcessGuideNavigationRoute initializeNavigationRoute()
@@ -432,7 +426,6 @@ To summarize everything that's been explained in this topic, here's a comprehens
     1.  Override **initialStepName()** to provide the name of the first step.
     2.  Override **initializeNavigationRoute()** to construct the navigation map.
 
-        ![Construct navigation map](media/construct-navigation-map.png)
 
 ```X++
 /// <summary>
@@ -465,8 +458,6 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
     1.  Override **isComplete()** to specify when the step is considered complete.
     2.  Override **pageBuilderName()** to specify the page builder to be used.
 
-![Specify page builder](media/specify-page-builder.png)
-
 ```X++
 /// <summary>
 /// The <c>ProdProcessGuidePromptProductionIdStep</c> represents a step that 
@@ -495,9 +486,6 @@ public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
 
     1.  Override **addDataControls()** to add the **Prod ID** textbox.
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
-
-        ![Override addActionControls](media/override-add-data-controls.png)
-        
         
 ```X++
 /// <summary>
@@ -528,8 +516,8 @@ public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuideP
 
         ![Override pageBuilderName](media/override-page-builder-name.png)
         
-        ```X++
-        /// <summary>
+```X++
+/// <summary>
 /// The <c>ProdProcessGuideConfirmProductionOrderStep</c> class represents the step for viewing production order
 /// details and confirming the same.
 /// </summary>
