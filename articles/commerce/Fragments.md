@@ -74,13 +74,13 @@ To add a fragment to your page:
 ## Remove a fragment
 To remove a fragment from a slot or container within your page:
 
-1)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the name of the fragment you wish to remove.
+1)  If you wish to use the controls in the outline view, click the ellipse button (“…”) next to the name of the fragment you wish to remove.
 
-2)  In the actions dropdown menu select “Delete”. This will launch a confirmation dialog asking is you are sure you want to remove the fragment.
+2)  In the actions menu for the fragment in either the outline or canvas, click the trashcan “Remove” button. This will launch a confirmation dialog asking is you are sure you want to remove the fragment.
 
 3)  Assuming you wish to remove it, click “OK” and the canvas will refresh without the fragment.
   > [!NOTE]
-  > Removing a fragment from a page will *not* delete the fragment from your site, and will only remove the reference to it from within the current page.  Deleting a fragment from your site must be done from the fragment inspector UI, and can only be performed if no pages, templates, or other fragments reference it.
+  > Removing a fragment from a page will *not* delete the fragment from your site, and will only remove the reference to it from within the current page.  Fragments can only be deleted from your site within the fragment inspector UI, and deletion can only be performed if the fragment is not currently referenced by other pages, templates, or other fragments.
 # Edit a fragment
 Todo
 
