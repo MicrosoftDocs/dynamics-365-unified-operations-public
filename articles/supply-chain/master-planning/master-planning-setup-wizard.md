@@ -34,25 +34,15 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This page will guide you through the master planning setup wizard. It will guide you through every page of the wizard and give you details of how the parameter suggestions are calculated. Examples of how different companies setup their master planning depending on their business needs will also be provided. 
+This topic provides a guide for the master planning setup wizard and includes details of how parameter suggestions are calculated. It also provides examples of how different companies set up their master planning based on their business needs. 
 
 ## Specific requirements of your company
 
-The first page in the wizard asks you about the specific requirements of your company. It asks you the following questions:
-
-	- --Approximately how many items are you planning for?--
-
-	- --Approximately how many planned orders do you expect every time you run Master planning?--
-
-	- --Do you manufacture any of the planned items?--
-
-	- --Approximately what is the highest BOM level among the manufactured items?--
-
-Note that your answers don't need to be exact, but a rough approximation of how many items and planned orders will be for the legal entity. With these questions, the wizard will configure parameters applying to your legal entity (not only to the master plan you selected). The following parameters according to the formulas shown:
+The first page in the wizard asks you about the specific requirements of your company. Your answers don't need to be exact, but you should be able to provide a rough approximation of how many items and planned orders there will be for the legal entity. The data you enter for these questions are used to configure parameters applying to your legal entity (not only to the master plan you selected). The following parametersare calculated according to the formulas below.
 
 -**Number of threads**:
 
-		○ In you **manufacture** any of the items: 
+		○ If you **manufacture** any of the items: 
 
 			§ Number of threads = Planned Orders/1000
 
