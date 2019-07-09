@@ -270,21 +270,21 @@ Now that the environment has been deployed on Azure, you must set up and configu
 
 ### Log on to the AOS virtual machine
 
-Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?� section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ### Compile AX 2012 R3
 
-Compile AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](https://technet.microsoft.com/EN-US/library/dn528954.aspx).
+Compile AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](https://technet.microsoft.com/library/dn528954.aspx).
 
 ### Initailize AX 2012 R3
 
-Open the AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](https://technet.microsoft.com/EN-US/library/aa497061.aspx).
+Open the AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](https://technet.microsoft.com/library/aa497061.aspx).
 
 ### Install sample data
 
 If you want sample data installed in your environment, complete the following steps.
 
-1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?� section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 2.  Go to the following location on the virtual machine: F:TestTransferTool
 3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
 4.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
@@ -297,7 +297,7 @@ If you want sample data installed in your environment, complete the following st
 To enable your users to access AX 2012 R3, complete the following tasks:
 
 -   Add each user’s domain account to the Remote Desktop Users group on the CLI-&lt;GUID&gt; virtual machine.
--   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/EN-US/library/aa548139.aspx).
+-   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/library/aa548139.aspx).
 
 **Note: **If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.
 
@@ -318,10 +318,10 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <tr class="even">
 <td>See the instructions on TechNet</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg732218.aspx">System setup for Microsoft Dynamics AX</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg732158.aspx">The Microsoft Dynamics AX client</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731868.aspx">Application Object Servers</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/ee873263.aspx">Reporting in Microsoft Dynamics AX</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732218.aspx">System setup for Microsoft Dynamics AX</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732158.aspx">The Microsoft Dynamics AX client</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731868.aspx">Application Object Servers</a></li>
+<li><a href="https://technet.microsoft.com/library/ee873263.aspx">Reporting in Microsoft Dynamics AX</a></li>
 </ul>
 <table>
 <tbody>
@@ -329,13 +329,13 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <td><strong>Note</strong></td>
 </tr>
 <tr class="even">
-<td>Be sure to <a href="https://technet.microsoft.com/EN-US/library/dd309703.aspx">deploy the default reports</a> and <a href="https://technet.microsoft.com/EN-US/library/aa496432.aspx">grant users access</a> to them.</td>
+<td>Be sure to <a href="https://technet.microsoft.com/library/dd309703.aspx">deploy the default reports</a> and <a href="https://technet.microsoft.com/library/aa496432.aspx">grant users access</a> to them.</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li><a href="https://www.microsoft.com/download/details.aspx?id=5916">Management Reporter 2012</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/ee873272.aspx">Analytics in Microsoft Dynamics AX</a></li>
+<li><a href="https://technet.microsoft.com/library/ee873272.aspx">Analytics in Microsoft Dynamics AX</a></li>
 </ul>
 <table>
 <tbody>
@@ -348,8 +348,8 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 </tbody>
 </table>
 <ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg866975.aspx">Help server</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg751374.aspx">Enterprise Portal and Role Centers</a></li>
+<li><a href="https://technet.microsoft.com/library/gg866975.aspx">Help server</a></li>
+<li><a href="https://technet.microsoft.com/library/gg751374.aspx">Enterprise Portal and Role Centers</a></li>
 </ul>
 <table>
 <tbody>
@@ -362,18 +362,18 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 </tbody>
 </table>
 <ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731850.aspx">Enterprise Search</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731810.aspx">Services and Application Integration Framework (AIF)</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/jj710398.aspx">Microsoft Dynamics AX Retail for IT pros and developers</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/aa834453.aspx">.NET Business Connector</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731779.aspx">Security</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731850.aspx">Enterprise Search</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731810.aspx">Services and Application Integration Framework (AIF)</a></li>
+<li><a href="https://technet.microsoft.com/library/jj710398.aspx">Microsoft Dynamics AX Retail for IT pros and developers</a></li>
+<li><a href="https://technet.microsoft.com/library/aa834453.aspx">.NET Business Connector</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731779.aspx">Security</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>View printable guides and white papers</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg732268.aspx">Printable guides</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg188985.aspx">White papers for system administrators</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732268.aspx">Printable guides</a></li>
+<li><a href="https://technet.microsoft.com/library/gg188985.aspx">White papers for system administrators</a></li>
 </ul></td>
 </tr>
 <tr class="even">
