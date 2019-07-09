@@ -428,3 +428,7 @@ The following is a list of APIs exposed to perform store operations-related func
 | GetCurrenciesServiceRequest                     |
 | GetSrsReportDataSetServiceRequest               |
 | SearchCommissionSalesGroupsServiceRequest       |
+| IssueLoyaltyCardOperationRequest                |
+| GetPickingAndReceivingOrdersClientRequest       |
+
+
