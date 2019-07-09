@@ -39,7 +39,7 @@ We can then configure this Hero fragment with our specific promotional content, 
 
 ![Common Concepts - Fragments Diagram 1](../commerce/media/fragment-figure1.png)
 # Create a fragment
-There are two options to create fragments: 
+There are two methods to create a new fragment: 
 ## Option 1: Create a new page fragment from scratch
 To create a new fragment from scratch:
 
