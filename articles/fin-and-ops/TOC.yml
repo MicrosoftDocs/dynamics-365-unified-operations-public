@@ -475,7 +475,7 @@
     - name: Consuming external web services
       href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: Electronic messaging
-      href: ../financials/general-ledger/electronic-messaging
+      href: ../financials/general-ledger/electronic-messaging.md
   - name: Data management
     href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
     items:
