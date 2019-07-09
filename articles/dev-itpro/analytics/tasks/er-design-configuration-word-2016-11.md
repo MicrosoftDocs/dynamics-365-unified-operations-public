@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting (ER) formats to generate reports as Microsoft Word files. These steps can be performed in the GBSI company.
 
-To complete these steps, you must first complete the steps in the “Create an ER configuration for generating reports in OPENXML format� task guide. In advance, you must also download and save the following templates locally for the sample report:
+To complete these steps, you must first complete the steps in the “Create an ER configuration for generating reports in OPENXML format” task guide. In advance, you must also download and save the following templates locally for the sample report:
 
 - [Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
 - [Bounded Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
