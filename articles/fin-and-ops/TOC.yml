@@ -2538,7 +2538,7 @@
           - name: Set up deferrals
             href: ../financials/localizations/rus-set-up-deferrals.md
           - name: Create or generate referrals
-            href: ../financials/localizations/rus-create-generate-referrals.md
+            href: ../financials/localizations/rus-create-generate-deferrals.md
           - name: Deferrals counting
             href: ../financials/localizations/rus-counting-deferrals.md
           - name: Write-off deferrals
