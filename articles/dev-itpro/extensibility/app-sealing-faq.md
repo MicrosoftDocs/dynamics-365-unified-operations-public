@@ -86,7 +86,7 @@ Some extensibility requests break changes. Some of the more common potentially b
 ### Why can't EDT.StringSize be made extensible?
 
 - Request: Make EDT.StringSize changeable via extension.
-- Problem: When a table string field (FieldX) is of type “parent EDT" and is associated (through table relations) with another table’s field (FieldY) of type EDT2 (EDT2 is derived from “parent EDT�). If FieldY could have a larger string by allowing EDT2.StringSize to increase, FieldX would not be able to handle the new string size. 
+- Problem: When a table string field (FieldX) is of type “parent EDT" and is associated (through table relations) with another table’s field (FieldY) of type EDT2 (EDT2 is derived from “parent EDT”). If FieldY could have a larger string by allowing EDT2.StringSize to increase, FieldX would not be able to handle the new string size. 
 - Workaround: Create a new EDT and use that for the table field FieldY.
 
 ### Why can't a unique table index be made extensible?
