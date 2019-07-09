@@ -55,6 +55,7 @@ To set up full and short names for currency units and subunits for a language, c
    |    <strong>Shortcut name of units (Short name field group)</strong>    |                                                                                         Enter the ISO code to identify the currency. For example, enter LTL to identify Litas.                                                                                         |
    |   <strong>Shortcut name for parts (Short name field group)</strong>    |                                                                                               Enter the denomination of the currency subunit. For example, enter Centas.                                                                                               |
    |       <strong>Conjunction 'and' between units and parts</strong>       |                                     Select to print the conjunction “and” between the currency units and unit parts. For example, on invoices or reports, the amount for LTL 100.20 will be displayed as 100 Litas and 20 Centas.                                      |
+   |       <strong>Gender</strong>       |  Select **Masculine**, **Feminine**, or **Neuter**. This parameter may have influence on declension of amount written in text in local language on Cash order. For example, when you set up **Gender** for EUR currency as **Neuter**, the amount 1,01 EUR is written in Czech language on Cash order as *Edno euro 01 cent*  |
 
 
 5. Click **Save**.
