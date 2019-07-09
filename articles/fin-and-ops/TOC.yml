@@ -2531,6 +2531,22 @@
             href: ../financials/localizations/rus-officials.md 
           - name: Company divisions
             href: ../financials/localizations/rus-company-divisions.md
+        - name: Deferrals
+          items:
+          - name: Deferral transactions
+            href: ../financials/localizations/rus-deferral-transactions.md
+          - name: Set up deferrals
+            href: ../financials/localizations/rus-set-up-deferrals.md
+          - name: Create or generate referrals
+            href: ../financials/localizations/rus-create-generate-referrals.md
+          - name: Deferrals counting
+            href: ../financials/localizations/rus-counting-deferrals.md
+          - name: Write-off deferrals
+            href: ../financials/localizations/rus-write-off-deferral.md
+          - name: Dispose of deferrals 
+            href: ../financials/localizations/rus-dispose-deferrals.md
+          - name: Reporting for deferrals
+            href: ../financials/localizations/rus-reporting-deferrals.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
