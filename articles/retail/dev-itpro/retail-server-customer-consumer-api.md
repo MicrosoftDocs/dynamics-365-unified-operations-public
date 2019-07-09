@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail Server customer and consumer APIs
-description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
+description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 author: mugunthanm
 manager: AnnBe
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
+This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 
 Overview
 --------
@@ -472,7 +472,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | Get         |                                                                                         | PageResult\<Recommendation\>      | Application,Employee, Customer, Anonymous | Gets the list of recommendations.                                                                    |
 | GetElements | string listId, RecommendationCriteria criteria, QueryResultSettings queryResultSettings | PagedResult\<RecommendedElement\> | Application,Employee, Customer, Anonymous | Gets the collection of recommended elements given the (optional) contextual information as criteria. |
 
-**Transfer order controller:**
+**Transfer order controller**
 
 | API                      | Parameter                                                                                                        | Return value                           | Supported Commerce Roles | Description                                                       |
 |--------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------|--------------------------|-------------------------------------------------------------------|
@@ -491,7 +491,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | DeleteEntity             | TransferOrder entity                                                                                             | void                                   | Employee                 | Deletes the specified transfer order.                             |
 | CreateEntity             | TransferOrder entity                                                                                             | TransferOrder                          | Employee                 | Creates transfer order.                                           |
 
-**Purchase order controller:**
+**Purchase order controller**
 
 | API            | Parameter                               | Return value                    | Supported Commerce Roles | Description                                   |
 |----------------|-----------------------------------------|---------------------------------|--------------------------|-----------------------------------------------|
@@ -510,7 +510,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetAvailableInventory              | string itemId, string variantId, string barcode, QueryResultSettings queryResultSettings                                                                                          | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Get available inventory across all stores for an item identifier or barcode.                            |
 | GetProductAvailability             | long productId, QueryResultSettings queryResultSettings                                                                                                                           | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Get available inventory across all stores for a product.                                                |
 | SearchProductAvailability          | long productId, OrgUnitAvailabilitySearchCriteria orgUnitAvailabilitySearchCriteria, QueryResultSettings queryResultSettings                                                      | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Search available inventory across all stores for a product.                                             |
-| GetAvailableInventoryNearby        | IEnumerable&lt;ItemUnit&gt; itemIds, SearchArea searchArea, QueryResultSettings queryResultSettings                                                                               | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Get available inventory of near by stores for given list of items in defined search area.               |
+| GetAvailableInventoryNearby        | IEnumerable&lt;ItemUnit&gt; itemIds, SearchArea searchArea, QueryResultSettings queryResultSettings                                                                               | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Get available inventory of nearby stores for given list of items in defined search area.               |
 | GetTillLayout                      | int? height, int? width                                                                                                                                                           | TillLayout                            | Application,Employee, Customer, Anonymous | Gets a single till layout.                                                                              |
 | GetOrgUnitConfiguration            |                                                                                                                                                                                   | ChannelConfiguration                  | Application,Employee, Customer, Anonymous | Gets the configuration for the current organization unit.                                               |
 | Search                             | SearchStoreCriteria storeSearchCriteria, QueryResultSettings queryResultSettings                                                                                                  | PageResult&lt;OrgUnit&gt;             | Application,Employee, Customer, Anonymous | Searches for organization unit by the given search query.                                               |
