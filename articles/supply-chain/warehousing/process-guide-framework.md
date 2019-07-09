@@ -513,8 +513,6 @@ public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuideP
 4.  **ProdProcessGuideConfirmProductionOrderStep**
 
     1.  Override **pageBuilderName()** to specify the page builder to be used.
-
-        ![Override pageBuilderName](media/override-page-builder-name.png)
         
 ```X++
 /// <summary>
@@ -537,8 +535,6 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
     1.  Override **addDataControls()** to add the order, item, and quantity information labels.
 
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
-
-        ![Override addActionControls](media/override-controls.png)
         
  ```X++
 /// <summary>
