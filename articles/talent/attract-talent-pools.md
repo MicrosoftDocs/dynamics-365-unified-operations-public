@@ -106,7 +106,7 @@ The search results show highlights for the various attributes that matched your 
 | Operator | Usage                                                      | Example              |
 |----------|------------------------------------------------------------|----------------------|
 | \*       | Searches for substrings; can be used to return all records | Input: Mi\* <br></br> Result: All records containing fields that begin with "Mi", such as Microsoft, Micro systems, Midtown Enterprises, or Middleton <br></br>Input: \* <br></br> Result: All records in database |
-| ""       | Searches for an exact match                                | Input: "Microsoft" <br></br> Result: All records containing "Microsoft"                    |
+| “”       | Searches for an exact match                                | Input: “Microsoft” <br></br> Result: All records containing “Microsoft”                    |
 
 >[!WARNING]
 > Don't turn off relevance search for your Common Data Service instance. This will disable the search experience in Attract.
