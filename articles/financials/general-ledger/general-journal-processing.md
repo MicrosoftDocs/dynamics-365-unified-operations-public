@@ -105,4 +105,5 @@ You can find **Simulate posting** on the **Validate** menu for most journals. Wh
 ## Journal unlock
 A new button is available on the journal page to unlock a journal that has a status of "locked by system" set to yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named 'Journal Unlock button' in the feature management page. 
 
-
+## Workflow recall 
+The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled from the workflow button on a journal, and in the workflow history page. This is enabled by the feature named 'Resetting the workflow status for journals' in the feature management page. 
