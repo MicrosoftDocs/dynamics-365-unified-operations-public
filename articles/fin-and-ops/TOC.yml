@@ -267,6 +267,8 @@
       items: 
       - name: Consume business events with Microsoft Flow
         href: ../dev-itpro/business-events/how-to/how-to-flow.md
+      - name: Use Microsoft Forms Pro with business events
+        href: ../dev-itpro/business-events/how-to/FormsPro.md
   - name: Compliance
     items:
     - name: Audit policy rules

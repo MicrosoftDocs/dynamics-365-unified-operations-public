@@ -1129,7 +1129,7 @@
       href: migration-upgrade/on-prem-upgrade.md
   - name: Hotfixes
     items:
-    - name: Download hotfixes from Lifecycle Services
+    - name: Get updates from Lifecycle Services
       href: migration-upgrade/download-hotfix-lcs.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md
