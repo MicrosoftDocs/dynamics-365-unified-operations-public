@@ -5,7 +5,7 @@ title: Images on a page or in a grid
 description: This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
 author: RobinARH
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
