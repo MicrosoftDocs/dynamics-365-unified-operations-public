@@ -39,10 +39,10 @@ limits work  and answers the following questions:
 
 -   What documents and processes can I check credit limits for?
 
--   Where do I configure the way that the customer's remaining credit is
+-   Where do I configure the way that the customer’s remaining credit is
     calculated?
 
--   Where is information about a customer's remaining credit used?
+-   Where is information about a customer’s remaining credit used?
 
 -   Where do I specify whether identification is required for credit to be
     extended to a customer, and also the credit limit amount that requires
@@ -93,10 +93,10 @@ settings.
 |    Sales   order (manually entered)            |    In the Accounts receivable parameters   form, in the Credit rating area, select Check credit limit on sales   order.           |
 |    Sales   order (electronically received)     |    In the Accounts receivable parameters   form, in the AIF area, select Check credit limit for sales orders.                     |
 
-**Where do I configure the way that a customer's remaining credit is
+**Where do I configure the way that a customer’s remaining credit is
 calculated?**
 
-You can configure Dynamics 365 to calculate a customer's remaining
+You can configure Dynamics 365 to calculate a customer’s remaining
 credit in any of the following ways:
 
 -   Compare the credit limit against the customer balance.
@@ -114,29 +114,29 @@ security role to make changes in this form. In the **Credit limit type** field,
 select whether to perform credit limit checks and what transaction information
 to include when the credit limit is checked. Select from the following options:
 
--   **None** - Do not check credit limits. You can override this option for a
+-   **None** – Do not check credit limits. You can override this option for a
     specific customer by selecting the **Mandatory credit limit** check box in
     the **Customers** form. If you do this, the credit limit is checked against
     the customer balance.
 
--   **Balance** - The credit limit is checked against the customer balance.
+-   **Balance** – The credit limit is checked against the customer balance.
 
--   **Balance + packing slip or product receipt** - The credit limit is checked
+-   **Balance + packing slip or product receipt** – The credit limit is checked
     against the customer balance and deliveries.
 
--   **Balance+All** - The credit limit is checked against the customer balance,
+-   **Balance+All** – The credit limit is checked against the customer balance,
     deliveries, and open orders.
 
-**Where is information about a customer's remaining credit used?**
+**Where is information about a customer’s remaining credit used?**
 
-Information about a customer's balance and remaining credit amount is calculated
+Information about a customer’s balance and remaining credit amount is calculated
 and stored when you create an aging snapshot, and is displayed in the
 **Collections** form. The amounts that are displayed in the **Collections** form
 might not include all transaction activity until a new aging snapshot is
 created. For more information, see [Collections and credit in Accounts
 receivable](https://technet.microsoft.com/library/hh209221.aspx).
 
-Depending on the documents that are selected, information about a customer's
+Depending on the documents that are selected, information about a customer’s
 balance and remaining credit amount is calculated when sales orders, packing
 slips, and customer invoices are updated. If the amount of the document that you
 are working with would cause the credit limit to be exceeded, a message is
@@ -153,7 +153,7 @@ make changes in this form.
 
 |    Field                                    |    Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Require   identification with credit     |    Select the type of identification that must be   entered for customers to whom your legal entity extends credit. The option   that you select in this field determines when and what type of information is   required in the Government identification fields in the Customers   form:        No - No government-issued        identification is required, regardless of the customer's credit limit.     Yes - A        government-issued license number or other government-issued        identification is required if the customer's credit limit is higher than        or equal to zero.     Minimum limit - A        government-issued license number or other government-issued        identification is required if the customer's credit limit is higher than        or equal to the limit that you enter in the Limit field in this        form.        |
+|    Require   identification with credit     |    Select the type of identification that must be   entered for customers to whom your legal entity extends credit. The option   that you select in this field determines when and what type of information is   required in the Government identification fields in the Customers   form:        No – No government-issued        identification is required, regardless of the customer's credit limit.     Yes – A        government-issued license number or other government-issued        identification is required if the customer's credit limit is higher than        or equal to zero.     Minimum limit – A        government-issued license number or other government-issued        identification is required if the customer's credit limit is higher than        or equal to the limit that you enter in the Limit field in this        form.        |
 |    Limit                                    |    Enter the credit limit at which a   government-issued license number or other identification is required for   customers.    For example, type 2000 to require that an   identification number, such as a driver's license number, must be entered for   customers who have a credit limit of 2,000 or higher.    This field is available if you selected Minimum   limit in the Require identification with credit field.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 **Where do I specify whether to display a warning or error if the credit limit
@@ -168,8 +168,8 @@ this form.
 
 |    Field                                                               |    Description                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Message when exceeding credit limit (in the Credit rating area)     |    Select how messages about credit limits being   exceeded are displayed to users. Select from the following options:        Error - An        error message is displayed. This usually stops the current operation and        the conflict must be resolved before the process can continue.     Warning - A        warning message is displayed, but the process can continue.                     |
-|    Message when exceeding credit limit (in the AIF area)               |    Select how messages about credit limits being   exceeded are delivered in a log. Select from the following options:        Error - An        error message is displayed in the Exceptions form, and the        document will not be processed until the error is resolved.     Warning - A        warning message is displayed in the Exceptions form, but the        process can continue.        |
+|    Message when exceeding credit limit (in the Credit rating area)     |    Select how messages about credit limits being   exceeded are displayed to users. Select from the following options:        Error – An        error message is displayed. This usually stops the current operation and        the conflict must be resolved before the process can continue.     Warning – A        warning message is displayed, but the process can continue.                     |
+|    Message when exceeding credit limit (in the AIF area)               |    Select how messages about credit limits being   exceeded are delivered in a log. Select from the following options:        Error – An        error message is displayed in the Exceptions form, and the        document will not be processed until the error is resolved.     Warning – A        warning message is displayed in the Exceptions form, but the        process can continue.        |
 
 **How do I specify the credit limit amount for a specific customer?**
 
@@ -189,12 +189,12 @@ master (CustCustomersMaintain) duty assigned to it to make changes in this form.
     identification in the **Government identification** field.
 
 > [!NOTE]
-> In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer's credit limit against the customer's balance. For more information about credit limit types, see "What documents and processes can I check credit limits for?" in this topic. 
+> In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this topic. 
 
 **How do I manually check credit limits on sales orders?**
 
-Sometimes, you might have to manually check a customer's credit limit. For
-example, you might manually check a customer's credit limit before you start
+Sometimes, you might have to manually check a customer’s credit limit. For
+example, you might manually check a customer’s credit limit before you start
 entering a sales order. You can use the **Sales order** form to manually check
 credit limits. You must be a member of a security role that has the Maintain
 sales order (SalesOrderMaintain) duty assigned to it to make changes in this
