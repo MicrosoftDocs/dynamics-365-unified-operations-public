@@ -65,18 +65,18 @@ To remove a module from a slot or container within your page:
 
 1)  In either the Outline View or the Canvas, click the ellipse button (“…”) next to the name of the module you wish to remove.
 
-2)  In the actions dropdown menu select “Delete”. This will launch a confirmation dialog asking is you are sure you want to remove the module.
+2)  In the actions dropdown menu select the trashcan “Remove” button. This should launch a confirmation dialog asking if you are sure you want to remove the module.
 
 3)  Assuming you wish to remove it, click “OK” and the canvas will refresh without the deleted module.
 
 # Configuring modules
 ## Configure a content module
 
-To configure a content module that is in your page:
+To configure a content module within your page:
 
-1)  Select a content module on your page (examples: Feature, Hero, Banner, etc.).
+1)  Select a content module on your page by clicking on it in either the outline or canvas (examples: Feature, Hero, Banner, etc.).
 
-2)  Notice that the selected module’s settings and content controls are displayed in the Property Panel on the right. Expand some of the nested controls in the property panel by clicking on the headers. Set any required control values, which are indicated by “\*” and validation warnings.
+2)  Notice that the selected module’s settings and content controls are displayed in the Property Panel on the right. Expand any nested controls in the property panel by clicking on the headers. Set any required control values, which are indicated by “\*” and validation warnings.
 
 3)  If there is a “Data Configuration” section in the Property Panel, click to expand it.
 
