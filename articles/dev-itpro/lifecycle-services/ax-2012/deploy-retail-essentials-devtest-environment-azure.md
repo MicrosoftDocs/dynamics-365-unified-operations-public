@@ -179,7 +179,7 @@ Now that the Retail essentials environment has been deployed on Azure, you must 
 
 ### Log on to the Retails essentials virtual machine
 
-Log on to the ESSEN-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?� section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) topic.
+Log on to the ESSEN-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) topic.
 
 ### Compile Dynamics AX 2012 R3
 
