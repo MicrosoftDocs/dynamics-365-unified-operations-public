@@ -5,7 +5,7 @@ title: Russia
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/28/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
