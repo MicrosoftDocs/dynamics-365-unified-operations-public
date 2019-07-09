@@ -41,7 +41,7 @@ Overview
 - Retail Server business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
 - The application programming interfaces (APIs) are stateless and can process requests from many channels.
-- The APIs have a linear scale-out model ("brick" scale-out).
+- The APIs have a linear scale-out model (“brick” scale-out).
 - You use a composition pattern for plug-and-play customizations.
 - The APIs are built on the .NET stack by using C\#.
 
