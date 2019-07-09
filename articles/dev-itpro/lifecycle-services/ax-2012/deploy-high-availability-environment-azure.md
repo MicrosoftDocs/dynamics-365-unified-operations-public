@@ -328,7 +328,7 @@ Now that the environment has been deployed on Azure, you must set up and configu
 
 ### Log on to an AOS virtual machine
 
-Log on to an AOS- virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?� section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+Log on to an AOS- virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ### Compile AX 2012 R3
 
@@ -342,7 +342,7 @@ Open the AX 2012 R3 client and complete the initialization checklists. For instr
 
 If you want sample data installed in your environment, complete the following steps.
 
-1.  Log on to a SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?� section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+1.  Log on to a SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 2.  Go to the following location on the virtual machine: F:TestTransferTool
 3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
 4.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
@@ -381,9 +381,9 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <li><a href="https://technet.microsoft.com/library/gg731868.aspx">Application Object Servers</a></li>
 <li><a href="https://technet.microsoft.com/library/ee873263.aspx">Reporting in Microsoft Dynamics AX</a> <strong>Note:</strong> Be default, reports are deployed to one business intelligence (BI) virtual machine. For each additional BI virtual machine in your environment, you’ll need to:
 <ol>
-<li><a href="https://technet.microsoft.com/EN-US/library/dd309703.aspx">Deploy the default reports.</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/aa496432.aspx">Grant users access to the reports.</a></li>
-<li>Open the <a href="https://technet.microsoft.com/EN-US/library/aa548504.aspx">Report servers form</a> to connect each AOS instance with each SSRS instance. To see a step-by-step procedure of how to this is done, see <a href="https://technet.microsoft.com/library/hh389773.aspx">Connect Microsoft Dynamics AX to the new Reporting Services instance</a>.</li>
+<li><a href="https://technet.microsoft.com/library/dd309703.aspx">Deploy the default reports.</a></li>
+<li><a href="https://technet.microsoft.com/library/aa496432.aspx">Grant users access to the reports.</a></li>
+<li>Open the <a href="https://technet.microsoft.com/library/aa548504.aspx">Report servers form</a> to connect each AOS instance with each SSRS instance. To see a step-by-step procedure of how to this is done, see <a href="https://technet.microsoft.com/library/hh389773.aspx">Connect Microsoft Dynamics AX to the new Reporting Services instance</a>.</li>
 </ol></li>
 <li><a href="https://www.microsoft.com/download/details.aspx?id=5916">Management Reporter 2012</a></li>
 <li><a href="https://technet.microsoft.com/library/ee873272.aspx">Analytics in Microsoft Dynamics AX</a> <strong>Note:</strong> To process the cubes that are included with AX 2012 R3, we recommend that you increase the ExternalCommandTimeout value to 7200.</li>
