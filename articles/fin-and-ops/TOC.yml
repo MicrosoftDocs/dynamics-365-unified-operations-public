@@ -32,7 +32,7 @@
         - name: Buy Finance and Operations (on-premises)
           href: get-started/purchase-on-premises.md
     - name: Learning catalog
-      href: get-started/index.yml
+      href: get-started/learning-catalog-table.md
       items: 
       - name: Business decision makers
         href: get-started/learning-catalog-bdm.md
