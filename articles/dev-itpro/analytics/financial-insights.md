@@ -135,7 +135,7 @@ Users can filter the report by using the **Filter** pane on the left. This pane 
 - **Report-level filters** – These filters are applied to all visuals on all pages (tabs).
 - **Page-level filters** – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.
 - **Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
-- **Drill-through filter** – This filter filters from a “source� visual that is applied to the current visual when you drill through from the source visual to the current visual.
+- **Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
 ![Filter](./media/filter.png)
 
