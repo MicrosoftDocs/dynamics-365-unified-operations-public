@@ -47,11 +47,11 @@ Use this procedure to enable nonconformance management processes. A nonconforman
 
 ## Enable user for nonconformance processing
 1. Go to System administration > Users > Users.
-    * To process the approval of a nonconformance the user who  approves or rejects nonconformances must have a "Name" value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options.  
+    * To process the approval of a nonconformance the user who  approves or rejects nonconformances must have a “Name” value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options.  
 2. Use the Quick Filter to find records. For example, filter on the Name field with a value of 'Ricardo'.
     * Use the filter to find the user who will be approving or rejecting the nonconformance records.  
 3. In the list, click the link in the selected row.
-    * To process the approval of a nonconformance, make sure the user who approves or rejects nonconformances has a "Name" value assigned on the Users page.  
+    * To process the approval of a nonconformance, make sure the user who approves or rejects nonconformances has a “Name” value assigned on the Users page.  
 4. Click User options.
 5. Click the Preferences tab.
 6. Select Yes in the Enable document handling field.
