@@ -5,7 +5,7 @@ title: Onboard a Finance and Operations implementation project
 description: This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 02/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: margoc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -37,24 +37,11 @@ This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Ope
 
 After you've purchased and activated a subscription to Finance and Operations, an **Implementation project** workspace is provisioned in LCS when the tenant administrator signs in for the first time. If you're a customer and require help to get started with LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). For a comprehensive overview of LCS, see [Overview of Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
-## LCS Project onboarding 
-For a new Finance and Operations implementation project in LCS, it is recommended to complete the **Project onboarding** setup before start deploying new environments.  
-
->[!Note] 
-> Project onboarding is only available for implementation project type. 
-
-**Project onboarding** is a step-by-step, self-paced, wizard-driven onboarding experience.  It guides the tenant administrator to set up the key configuration components for the new implementation project provisioned in LCS.  At each of the project onboarding steps, there is video reference and description that provide guidance on the information needed to complete the onboarding process for a successful implementation.  During the project onboarding setup, you can save and exit the wizard anytime and return to continue it throughout the implementation.   After you complete the project onboarding, the Microsoft FastTrack team will contact your project team and provide information about the FastTrack program. 
-
-You can access **Project onboarding** from the hamburger dropdown menu of an implementation project.  Besides the tenant administrator, only users in the **project owner** or **environment manager** LCS security roles will be able to access the project onboarding tool.  
-
-![Project onboarding](./media/ProjectOnboarding.jpg)
-
-
 ## FastTrack onboarding services
 
-After completing your LCS **project onboarding** set up, the Microsoft FastTrack team will contact your project team to discuss onboarding services. For more information about the FastTrack program and the services that it offers, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
+After your LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will contact your project team to discuss onboarding services. For more information about the FastTrack program and the services that it offers, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
 
-The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype. During this call, the team will introduce the FastTrack program and help you with the initial configuration of the LCS project and related tasks:
+The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype. During this call, the team will introduce the FastTrack program. The team will also help you with the initial configuration of the LCS project and related tasks:
 
 - Tenant validation
 - Introduction to LCS
@@ -82,7 +69,7 @@ We recommend that the people in the following project roles participate in the m
 
 We recommend that you add key project members (such as project managers) to the LCS project. Be sure to include each person's work email address. In this way, you help us work best with you and help guarantee that project members don't miss important communication from us.
 
-Keep the milestone dates in your LCS project current to help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.
+Be sure to keep the milestone dates in your LCS project current. In this way, you help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.
 
 Milestone dates are stored in the LCS implementation methodology. For more information, see the [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) section of the "LCS for Customers" topic.
 
