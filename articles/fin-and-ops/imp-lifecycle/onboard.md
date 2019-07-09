@@ -42,7 +42,8 @@ For a new Microsoft Dynamics 365 Finance and Operations implementation project i
 
 **Project onboarding** is a step-by-step, self-paced, wizard-driven onboarding experience.  It guides the tenant administrator to setup the key configuration components for the new implementation project provisioned in LCS.  At each of the project onboarding steps, there is video reference and description that provide guidance on the information needed in order to complete the onboarding process for a successful implementation.  During the project onboarding setup, you can save and exist the wizard anytime and return to continue throughout the implementation.   After you completed the project onboarding, Microsoft FastTrack team will contact your project team and provide information about the FastTrack program. 
 
-You can access Project onboarding from the hamburger dropdown menu of an implementation project.  Besides the tenant administrator, only users with the **project owner** or **environment manager** LCS security role will be able to access the project onboarding tool.  
+You can access **Project onboarding** from the hamburger dropdown menu of an implementation project.  Besides the tenant administrator, only users with the **project owner** or **environment manager** LCS security role will be able to access the project onboarding tool.  
+![Project onboarding](./media/ProjectOnboarding.jpg)
 
 
 ## FastTrack onboarding services
