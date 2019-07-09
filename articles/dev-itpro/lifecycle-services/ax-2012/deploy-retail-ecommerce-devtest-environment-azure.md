@@ -72,7 +72,7 @@ Connect the LCS project to your Azure subscription. This will enable LCS to depl
 
 4. Click **Next**.
 5. Click **Download** to download a management certificate. This management certificate enables LCS to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
-6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
+6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/azure/azure-api-management-certs).
 
 7. Go back to the browser that displays the **Microsoft Azure setup** panel in LCS. Click **Next**.
 8. Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
@@ -169,7 +169,7 @@ Complete the following procedure to deploy a Retail e-commerce dev/test environm
 11. Click **Done**. The **Deploy environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
     -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 14. Click **Next**.
@@ -194,15 +194,15 @@ Before you complete the following procedures, make sure that the following prere
 ### Complete configuration tasks on the AOS server/virtual machine
 
 Log on to the server or virtual machine where the AOS is installed and complete the following steps.
-1.  Set up endpoints for the server or virtual machine. For instructions on how to set up endpoints for a virtual machine, see the “Getting Started” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
-2.  Configure the Real-time service and update the profile. For instructions, see the “Configure Real-time Service” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
-3.  Run the scheduler jobs to populate the channel database. For instructions, see the “Run Scheduler Jobs to Populate Channel Database” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+1.  Set up endpoints for the server or virtual machine. For instructions on how to set up endpoints for a virtual machine, see the “Getting Started� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+2.  Configure the Real-time service and update the profile. For instructions, see the “Configure Real-time Service� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+3.  Run the scheduler jobs to populate the channel database. For instructions, see the “Run Scheduler Jobs to Populate Channel Database� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
 
 ### Complete configuration tasks on the E-COM virtual machine
 
 On the **Cloud-hosted environments** page, select your Retail e-commerce dev/test environment. Then scroll to the right and click the **E-COM-&lt;GUID&gt;** link to log on to the virtual machine. After you have logged on to the machine, complete the following steps:
-1.  If using a self-signed certificate, install the certificate on the E-COM-&lt;GUID&gt; virtual machine. For instructions, see the “Install the Cert on the External Machine” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
-2.  Update Async Client to use the URL of the Async Server. For instructions, see the “Install CDX Async Client” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+1.  If using a self-signed certificate, install the certificate on the E-COM-&lt;GUID&gt; virtual machine. For instructions, see the “Install the Cert on the External Machine� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+2.  Update Async Client to use the URL of the Async Server. For instructions, see the “Install CDX Async Client� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
 
 ### Access the e-commerce site
 

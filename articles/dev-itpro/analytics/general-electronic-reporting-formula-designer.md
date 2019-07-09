@@ -220,12 +220,12 @@ The following tables describe the data manipulation functions that you can use t
 | TODAY () | Return the current Finance and Operations application server date as a date value. | |
 | NULLDATE () | Return a **null** date value. | |
 | NULLDATETIME () | Return a **null** date/time value. | |
-| DATETIMEFORMAT (datetime, format) | Convert the specified date/time value to a string in the specified format. (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current Finance and Operations application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| DATETIMEFORMAT (datetime, format) | Convert the specified date/time value to a string in the specified format. (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current Finance and Operations application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
+| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
 | SESSIONTODAY () | Return the current Finance and Operations session date as a date value. | |
 | SESSIONNOW () | Return the current Finance and Operations session date and time as a date/time value. | |
 | DATEFORMAT (date, format) | Return a string representation of the specified date in the specified format. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Finance and Operations session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
 | DAYOFYEAR (date) | Return an integer representation of the number of days between January 1 and the specified date. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**. |
 | DAYS (date 1, date 2) | Return the number of days between the first specified date and the second specified date. Return a positive value when the first date is later than the second date, return **0** (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**. |
 
@@ -448,7 +448,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>INDEX (list, index)</td>
 <td>This function returns a record that is selected by a specific numeric index in the list. An exception is thrown if the index is out of range of the records in the list.</td>
-<td>If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|”), 2</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”. The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> also returns the “B” text value.</td>
+<td>If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|�), 2</strong>, the expression <strong>DS.Value</strong> returns the text value, “B�. The expression <strong>INDEX (SPLIT ("A|B|C", “|�), 2).Value</strong> also returns the “B� text value.</td>
 </tr>
 </tbody>
 </table>
@@ -595,7 +595,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <td>CHAR (number)</td>
 <td>Return the string of characters that is referenced by the specified Unicode number.</td>
 <td><strong>CHAR (255)</strong> returns <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE] The string that this function returns depends on the encoding that is selected in the parent FILE format element. For the list of supported encodings, see <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
+<blockquote>[!NOTE] The string that this function returns depends on the encoding that is selected in the parent FILE format element. For the list of supported encodings, see <a href="https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -654,13 +654,13 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (number, format)</td>
-<td>Return a string representation of the specified number in the specified format. (For information about the supported formats, see <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> and <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">custom</a>.) The context that this function is run in determines the culture that is used to format numbers.</td>
+<td>Return a string representation of the specified number in the specified format. (For information about the supported formats, see <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">standard</a> and <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">custom</a>.) The context that this function is run in determines the culture that is used to format numbers.</td>
 <td>For the EN-US culture, <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> returns <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returns <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (number, format, culture)</td>
-<td>Return a string representation of the specified number in the specified format and given culture. (For information about the supported formats, see <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">standard</a> and <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">custom</a>.).</td>
-<td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> returns <strong>3,33</strong> while <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> returns <strong>3.33</strong>.</td>
+<td>Return a string representation of the specified number in the specified format and given culture. (For information about the supported formats, see <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">standard</a> and <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">custom</a>.).</td>
+<td><strong>NUMBERFORMAT (10/3, “F2�, "de")</strong> returns <strong>3,33</strong> while <strong>NUMBERFORMAT (10/3, “F2�, "en-us")</strong> returns <strong>3.33</strong>.</td>
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</td>

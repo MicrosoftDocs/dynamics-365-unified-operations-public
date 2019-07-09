@@ -164,7 +164,7 @@ After you have a test suite, you are ready to use it for regression testing afte
 
 ![VSTS test marked](./media/vsts_test_marked.png.png "VSTS test marked")
 
-Azure DevOps also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
+Azure DevOps also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/vsts/manual-test/getting-started/run-manual-tests).
 
 We recommend that you take advantage of Azure DevOps as it provides a rich set of management features not only for testing, but result management and mitigation.
 
@@ -174,7 +174,7 @@ The Dynamics 365 Unified Operations platform provides developers with tools to a
 
 Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md).
 
-Functional power users can automate the execution of their test cases using the **Regression suite automation tool**. Download the tool and user manual from [here](https://www.microsoft.com/en-us/download/details.aspx?id=57357).
+Functional power users can automate the execution of their test cases using the **Regression suite automation tool**. Download the tool and user manual from [here](https://www.microsoft.com/download/details.aspx?id=57357).
 
 To learn more about using the Regression suite automation tool, see the following:
 
@@ -187,5 +187,5 @@ For a hands-on lab experience, see the following topics:
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
-For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops).
+For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops).
 

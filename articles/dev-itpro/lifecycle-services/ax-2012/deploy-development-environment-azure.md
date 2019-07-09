@@ -82,15 +82,15 @@ The following sections provide information about how to configure the Azure virt
 
 To enable corporate users to access resources on the virtual machines in the Azure virtual network, you’ll need to create a site-to-site VPN connection between the Azure virtual network and your on-premises, corporate network. For information about how to do this, see:
 
--   [Virtual network overview](https://msdn.microsoft.com/en-us/library/windowsazure/jj156007.aspx)
--   [Virtual network configuration tasks](https://msdn.microsoft.com/en-us/library/jj156206.aspx)
--   [Set up a simulated hybrid cloud environment for testing](http://azure.microsoft.com/en-us/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
+-   [Virtual network overview](https://msdn.microsoft.com/library/windowsazure/jj156007.aspx)
+-   [Virtual network configuration tasks](https://msdn.microsoft.com/library/jj156206.aspx)
+-   [Set up a simulated hybrid cloud environment for testing](http://azure.microsoft.com/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
 -   [Site-to-site VPN in Azure virtual network using Windows Server 2012 Routing and Remote Access Service (RRAS)](https://msdn.microsoft.com/library/dn636917.aspx)
--   [Configure a virtual network gateway in the management portal](https://msdn.microsoft.com/en-us/library/azure/jj156210.aspx)
+-   [Configure a virtual network gateway in the management portal](https://msdn.microsoft.com/library/azure/jj156210.aspx)
 
 ### Create an active directory in Azure
 
-An Active Directory is required in the Azure virtual network. An Active Directory can be deployed to the Azure virtual network. Please follow [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://msdn.microsoft.com/en-us/library/azure/jj156090.aspx). Please note that Active Directory Federation Services is not presently supported with AX 2012 R3. If you are providing the Active Directory, you will need to create the following service accounts within it that can be used by LCS deployment services when you deploy the environment.
+An Active Directory is required in the Azure virtual network. An Active Directory can be deployed to the Azure virtual network. Please follow [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://msdn.microsoft.com/library/azure/jj156090.aspx). Please note that Active Directory Federation Services is not presently supported with AX 2012 R3. If you are providing the Active Directory, you will need to create the following service accounts within it that can be used by LCS deployment services when you deploy the environment.
 
 <table>
 <colgroup>
@@ -154,7 +154,7 @@ You will need to provide the passwords for these accounts when you deploy the en
 
 ### Create a domain trust
 
-To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](https://technet.microsoft.com/en-us/library/cc754626.aspx). This process is the same process you would use to create a trust between two on-premises domains.
+To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](https://technet.microsoft.com/library/cc754626.aspx). This process is the same process you would use to create a trust between two on-premises domains.
 
 ### Give the Administrators group the right to log on as a batch job
 
@@ -259,7 +259,7 @@ Complete the following procedure to deploy a development environment on Azure.
 11. Click **Done.** The **Deploy environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
     -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 14. Click **Next**.
@@ -270,7 +270,7 @@ Now that the environment has been deployed on Azure, you must set up and configu
 
 ### Log on to the AOS virtual machine
 
-Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?� section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ### Compile AX 2012 R3
 
@@ -284,13 +284,13 @@ Open the AX 2012 R3 client and complete the initialization checklists. For instr
 
 If you want sample data installed in your environment, complete the following steps.
 
-1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?� section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 2.  Go to the following location on the virtual machine: F:TestTransferTool
 3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
 4.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
 5.  Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**Note: **The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028).
+**Note: **The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028).
 
 ### Give users access
 
@@ -334,7 +334,7 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 </tbody>
 </table>
 <ul>
-<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=5916">Management Reporter 2012</a></li>
+<li><a href="https://www.microsoft.com/download/details.aspx?id=5916">Management Reporter 2012</a></li>
 <li><a href="https://technet.microsoft.com/EN-US/library/ee873272.aspx">Analytics in Microsoft Dynamics AX</a></li>
 </ul>
 <table>

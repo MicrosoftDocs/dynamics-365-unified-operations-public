@@ -31,14 +31,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document. In this procedure, you will import the required ER configurations that have been created for the sample company, Litware, Inc. and use them for parsing incoming electronic documents. To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active.”
+This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document. In this procedure, you will import the required ER configurations that have been created for the sample company, Litware, Inc. and use them for parsing incoming electronic documents. To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active.�
 
 This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. 
 
-These steps can be completed using any dataset. Before you begin, download and save the files listed in the topic, “Parse incoming documents to update application data” (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). The files are: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+These steps can be completed using any dataset. Before you begin, download and save the files listed in the topic, “Parse incoming documents to update application data� (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). The files are: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, “Create a configuration provider and mark it as active”.  
+    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, “Create a configuration provider and mark it as active�.  
 2. Click Reporting configurations.
     * The following scenario will be used to show the capabilities of parsing incoming electronic documents in XML format: ERP application (Dynamics 365 for Finance and Operations)  requests data from the web service (such as http://efsta.org/ EFSTA fiscal service) and parses the incoming responses to update application data accordingly. For the most efficient way to parse, a single ER format is used despite the different structure of expected incoming documents in XML format.   
 

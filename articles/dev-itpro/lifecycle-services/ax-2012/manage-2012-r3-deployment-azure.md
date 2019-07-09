@@ -91,7 +91,7 @@ You can add (or remove) virtual machines to AX 2012 R3 environments that you’v
 5.  Click the Edit (pencil) icon near the top of the page.
 6.  Indicate how many virtual machines you want to add to the environment. Then specify the size of those virtual machines.
     -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 7.  Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 8.  Click **Next**.
@@ -240,6 +240,6 @@ Test and high availability environments utilize Azure Internal Load Balancer (IL
 ## How do I set up Remote Desktop access via Corpnet connected users?
 If you want users to use Remote Desktop via tunneled access to the Azure Virtual Network, you will need to configure Remote Desktop Services (RDS) in your deployment to enable it. When RDS is deployed by using Lifecycle Services, an Azure Internal Load Balancer endpoint is created for the RDS Connection Broker VMs deployed.
 
-1.  The Azure Internal Load Balancer endpoint created by Lifecycle Services can be found in the details pane of the Cloud-Hosted Environments page in Lifecycle Services. Specifically, it is the endpoint domain specified by the link “RDS Farm Access”. It will appear like this: RDSFarm\#\#\#\#\#.domain.com
+1.  The Azure Internal Load Balancer endpoint created by Lifecycle Services can be found in the details pane of the Cloud-Hosted Environments page in Lifecycle Services. Specifically, it is the endpoint domain specified by the link “RDS Farm Access�. It will appear like this: RDSFarm\#\#\#\#\#.domain.com
 2.  Obtain the IP address created for this domain by opening [http://manage.windowsazure.com](http://manage.windowsazure.com/) in a browser and logging into your subscription. Open **Cloud Services** and click the Cloud Service name associated with the RDS machines. Locate the RDS\* VM IP that is an internal IP (eg. 10.1.3.4) with port 3389. This is the IP of the Azure Internal Load Balancer associated with the RDSFarm\#\#\#.domain.com address.
 3.  Set up the appropriate routing and DNS entries for your users on the corporate network to reach that domain name/IP/load balancer. Once that is done, the users will be able to use Remote Desktop access from the corporate network.
