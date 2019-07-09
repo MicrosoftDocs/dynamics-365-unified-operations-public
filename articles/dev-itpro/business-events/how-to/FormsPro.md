@@ -31,9 +31,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This topic will walk you thorugh the scenario where Forms Pro can be used to create a survey, which can be used with business events.  
-
-This topic provides the steps to enable a scenario where a survey is sent to users when a product has been shipped. The survey is gathered using Microsoft Forms Pro.
+This topic will walk you thorugh the scenario where Forms Pro can be used to create a survey, which can be used with business events. In this scenario a survey is sent to users when a product has been shipped. The survey is gathered using Microsoft Forms Pro.
 
 If you have not tried Forms Pro yet, the [Microsoft Forms Pro documentation](https://docs.microsoft.com/en-us/forms-pro/) is a prerequisite to first learn how to use Foms Pro.
 
