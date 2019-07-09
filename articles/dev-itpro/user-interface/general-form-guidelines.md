@@ -51,7 +51,7 @@ The verification checklist shows the steps for manually verifying that the form 
   - Avoid setting the form caption programmatically. Instead, consider setting the **TitleDataSource** property on the form design node to enable the framework to provide the caption dynamically.
   - If you can't avoid setting the form caption programmatically, make sure that it's short (no more than 30 characters). This guideline exists because a large font size is used for the form in some form types<em>.</em>
     -   **Exceptions:** Custom Lookups, FactBoxes
-  - Form captions should provide the user with the context of the “type� of entity. The font size and the position of the form caption will vary, depending on the type of form.
+  - Form captions should provide the user with the context of the “type” of entity. The font size and the position of the form caption will vary, depending on the type of form.
   - Don't use the form caption to convey contextual information such as the parent record or other status information.
 
 - All labels in the form are in sentence case. The framework guarantees consistency by putting some elements, such as Group labels, FactBox captions, Action Pane tab labels, and Button Group labels, in ALL CAPS. These strings should still be added in sentence case, but the framework will display them in all caps.
@@ -98,7 +98,7 @@ It's important that the state of a field be set correctly. The state of the fiel
 <td>Enabled=No</td>
 <td>Disabled fields tell the user that the field isn&#39;t valid in the current state of the entity. Use the <strong>Enabled</strong> property to disable a field and prevent data input. A disabled field (<strong>Enabled</strong>=<strong>No</strong>) has these characteristics:
 <ul>
-<li>The field is visually presented so that it looks unavailable. The text will be gray to indicate a “not valid� appearance.</li>
+<li>The field is visually presented so that it looks unavailable. The text will be gray to indicate a “not valid” appearance.</li>
 <li>The field’s value is unimportant and won&#39;t be sent to the server for processing.</li>
 <li>The field is skipped in the tab sequence.</li>
 </ul>
@@ -118,7 +118,7 @@ A disabled field might become enabled by actions that the user takes in the for
 </tr>
 <tr class="odd">
 <td>Not available</td>
-<td>Similar to secured fields, data can appear in a grid where each row has a different set of columns. In this case, cells that aren&#39;t applicable to a row display a “not� symbol. This isn&#39;t an application-controlled ability and occurs automatically.</td>
+<td>Similar to secured fields, data can appear in a grid where each row has a different set of columns. In this case, cells that aren&#39;t applicable to a row display a “not” symbol. This isn&#39;t an application-controlled ability and occurs automatically.</td>
 </tr>
 </tbody>
 </table>
