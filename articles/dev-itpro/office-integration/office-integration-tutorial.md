@@ -91,7 +91,7 @@ You can suppress the static Export to Excel mechanism for a grid or change the l
 ## Generated Open in Excel experiences
 ### Generated Open in Excel
 
-Generated Open in Excel options are automatically added to forms when the system finds data entities that have the same root data source as the form. The workbook that is generated will contain a single table data source where the data from that entity is loaded. The Open in Excel experiences are listed on the **Open in** **Microsoft Office** menu. (When an entity has the same root data source as a form, it's added as an option in the **Open in Excel** section of the **Open in Microsoft Office** menu. This option is referred to as a “generated� option.)
+Generated Open in Excel options are automatically added to forms when the system finds data entities that have the same root data source as the form. The workbook that is generated will contain a single table data source where the data from that entity is loaded. The Open in Excel experiences are listed on the **Open in** **Microsoft Office** menu. (When an entity has the same root data source as a form, it's added as an option in the **Open in Excel** section of the **Open in Microsoft Office** menu. This option is referred to as a “generated” option.)
 
 1.  In Internet Explorer, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 2.  Click **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers (unfiltered)**.
