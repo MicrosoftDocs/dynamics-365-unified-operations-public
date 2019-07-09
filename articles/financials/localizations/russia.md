@@ -105,8 +105,8 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 
 - [Deferral transactions](rus-deferral-transactions.md)
 - [Set up deferrals](rus-set-up-deferrals.md)
-- [Create or generate referrals](rus-create-generate-referrals.md)
-- [Deferrals counting](rus-counting-deferrals)
+- [Create or generate referrals](rus-create-generate-deferrals.md)
+- [Deferrals counting](rus-counting-deferrals.md)
 - [Write-off deferrals](rus-write-off-deferral.md)
 - [Dispose of deferrals](rus-dispose-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)
