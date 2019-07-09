@@ -76,7 +76,7 @@ To remove a fragment from a slot or container within your page:
 
 1)  If you wish to use the controls in the outline view, click the ellipse button (“…”) next to the name of the fragment you wish to remove.
 
-2)  In the actions menu for the fragment in either the outline or canvas, click the trashcan “Remove” button. This will launch a confirmation dialog asking is you are sure you want to remove the fragment.
+2)  In the actions menu for the fragment in either the outline or canvas, click the trashcan “Remove” button. This should launch a confirmation dialog asking if you are sure you want to remove the fragment.
 
 3)  Assuming you wish to remove it, click “OK” and the canvas will refresh without the fragment.
   > [!NOTE]
