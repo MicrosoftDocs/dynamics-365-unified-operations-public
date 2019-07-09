@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. The procedure applies to "basic warehousing" functionality, available in the Inventory management module, not to the warehousing functionality that's available in the Warehouse management module. You can walk through this procedure in demo data company USMF, or using your own data. If you're using your own data, make sure that you have products and locations set up, and that you've created an inventory journal name for counting journals. Inventory counting is normally carried out by a warehouse employee.
+This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module. You can walk through this procedure in demo data company USMF, or using your own data. If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals. Inventory counting is normally carried out by a warehouse employee.
 
 
 ## Create an inventory counting journal
@@ -59,12 +59,12 @@ This procedure walks you through the process of creating and posting an inventor
 9. In the list, find and select the desired record.
     * If you are using demo data company USMF, select location 'BULK-001'  
 10. In the Counted field, enter a number.
-    * If you enter a counted number that's different to the number shown in the On-hand field, the Quantity field is updated to show the discrepancy.  
+    * If you enter a counted number that’s different to the number shown in the On-hand field, the Quantity field is updated to show the discrepancy.  
 11. Click Save.
 
 ## Post the inventory counting journal
 1. Click Post.
-    * When you post an inventory counting journal, if the counted amount differs from amount that's reported in the On-hand field an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.  
+    * When you post an inventory counting journal, if the counted amount differs from amount that’s reported in the On-hand field an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.  
 2. Click OK.
 
 ## View inventory transactions
