@@ -39,8 +39,16 @@ We can then configure this Hero fragment with our specific promotional content, 
 
 ![Common Concepts - Fragments Diagram 1](../commerce/media/fragment-figure1.png)
 # Create a fragment
+There are two options to create fragments: 
+## Option 1: Create a new page fragment from scratch
+To create a new fragment from scratch:
 
-## Save as Fragment
+1) Navigate to the fragments tab in the authoring UX.
+2) Click the "New Page Fragment" button in the action bar. This will launch a modal window showing all module type options.
+3) Choose a module type for your fragment, and click "Ok".
+    > [!NOTE]
+    > As mentioned above, fragments can be created from any module type.  *Tip: A generic container module type will allow the most flexibility for future updates and configurations of your fragment. 
+## Option 2: Save an existing module configuration as a fragment
 
 To convert a module into a reusable fragment:
 
