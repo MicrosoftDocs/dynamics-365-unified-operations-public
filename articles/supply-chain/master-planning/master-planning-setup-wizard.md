@@ -40,63 +40,61 @@ This topic provides a guide for the master planning setup wizard and includes de
 
 The first page in the wizard asks you about the specific requirements of your company. Your answers don't need to be exact, but you should be able to provide a rough approximation of how many items and planned orders there will be for the legal entity. The data you enter for these questions are used to configure parameters applying to your legal entity (not only to the master plan you selected). The following parametersare calculated according to the formulas below.
 
--**Number of threads**:
+### Number of threads
 
-		○ If you **manufacture** any of the items: 
+- If you manufacture any of the items, number of threads = planned orders/1000,
 
-			§ Number of threads = Planned Orders/1000
+- If you don't manufacture any of the items, number of threads = number Of items/1000.
 
-		○ If you **don't manufacture** any of the items :
+If the resulting number of threads obtained is larger than 75% of the available threads, it will be capped to 75% of the available in number of threads for each customer (the available threads will be determined for each customer).
 
-			§ Number of threads = Number Of Items/1000
+Read the [number of threads](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) topic for more information.
 
-		○ If the resulted number of threads obtained is larger than 75% of the available threads, it will be capped to 75% of the available in number of threads for each customer (the available threads will be determined for each customer)
+### Bundle size
 
-	 Read more about the [number of threads] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads)
+Bundle size will be set to **1**. This is commonly the best value for the bundle size, as it will improve master planning performance.  
+Read the [bundle size](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle) topic for more information.
 
--**Bundle size**:it will be set to **1**. It is commonly the best value for the bundle size as it will improve master planning performance.  Read more about [bundle size](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle)
+### Firming bundle size**
 
--**Firming bundle size**: it will be equal to the maximum of the two values:
+Firming bundle size will be equal to the maximum of the two values below.
 
-		○ In you manufacture any of the items: 
+- If you manufacture any of the items, maximum between 10 and the bundle calculation,
 
-			§ Maximum between 10 and the bundle calculation
+- If you don't manufacture any of the items, maximum between 50 and the bundle calculation,
 
-		○ If you don't manufacture any of the items :
+ The bundle calculation  = (number of planned orders * (Firming Time Fence/ Coverage Time Fence)/ number of threads)/10.
 
-			§ Maximum between  50 and the bundle calculation
+### Cache size
 
-    Being the bundle calculation  = (number of planned orders * (Firming Time Fence/ Coverage Time Fence)/ number of threads)/10
+Cache size will be set to **Maximum**, which is commonly the best value for cache size, because it will improve master planning performance. For more information, see [Allocate time to jobs in a job bundle](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
--**Cache size**: set to **Maximum**. It is commonly the best value for cache size as it will improve master planning performance. Read more about bundle size: [add link] 
+### Manufacturing setup
 
+If you manufacture items, a manufacturing setup page will be shown later in the wizard. 
 
-
-Finally, if you manufacture items, a manufacturing page setup will be shown later on in the wizard. 
 
 ## Scope of the current plan
 
-In this page you will answer questions related to how far in the future various requirements will be considered and calculated in master planning. Each of the questions asks if you would like to use a feature, and at the same time how do you want to configure it. 
+On this page of the wizard, you will answer questions related to how far in the future various requirements will be considered and calculated in master planning. Each of the questions asks if you would like to use a feature and how you want to configure it. 
 
-Let's take the forecast plan as an example. The question asks you: --"Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?"-- and you can answer the following options:
+Using the forecast plan as an example, the wizard asks: **Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?**. The following options are available.
 
-	- --No-- : when No is selected, master planning will not suggest planned orders to fulfill a forecast. Then, in the master plans page (found under Master planning > setup > plans > master plans) under the tab Time fences in the days and the option Forecast plan, the wizard will select for you the "yes" option and then set the number of days to zero. This setup will override the time fence specified in the coverage group, and by setting it to zero the feature will not be used. 
+- **No**: master planning will not suggest planned orders to fulfill a forecast. In the master plans page, under **Master planning > Setup > Plans > Master plans**, on the **Time fences** tab, the wizard will set the **Forecast plan** option to **Yes**, and set the number of days to zero. This setup will override the time fence specified in the coverage group. By setting the number of days to zero, the feature will not be used. 
 
-	- --Yes, as defined in this master plan--: when you select this option you will see that the following field after the possible answers enables. In it you can enter the number of days for which master planning will suggest planned orders to fulfill the forecasted demand. The wizard will set the forecast plan time fence flag to "yes" and to the number of days that you indicated the option Forecast plan, under the Time fences tab in the master plans page. This will override the values set in the coverage groups. 
+- **Yes, as defined in this master plan**: when this option is selected, a field is enabled into which you can enter the number of days that master planning will suggest planned orders to fulfill the forecasted demand. The wizard will set the **Forecast plan time fence** flag to **Yes** and set it to the number of days entered in the **Forecast plan** (on the **Master plans** page, on the **Time fences** tab). This will override the values set in the coverage groups. 
 
-	- --Yes, as defined in the coverage--: when you select this option the Forecast plan time fence in the master plans page will be set to No. Then, the time fences you establish on the coverage group will be used to indicate how long will you be planning for the forecast. 
+- **Yes, as defined in the coverage**: when this opition is selected, the wizard will set the **Forecast plan** option to **No**. The time fences specified in the coverage group will be used to indicate how long you will be planning for the forecast. 
 
-The rest of questions and their respective answers will follow the same schema as shown before, depending on your answer:
+The rest of questions on this page and their respective answers will follow the same schema as above, depending on your answer.
 
-	- --No--: it will set the time fence for the option in master plans page to yes and zero to the number of days.
+- **No**: the **Forecast plan time fence** flag will be set to **Yes**, and the number of days set to zero. 
 
-	- --Yes, as defined in this master plan--: it will set the time fence for the option in master plans page to yes and the number of days that you enter. It will override the values set in the coverage groups. 
+- **Yes, as defined in this master plan**: the **Forecast plan time fence** flag will be set to **Yes**, and the number of days that you enter will be used, overriding the values set in the coverage groups. 
 
-	- --Yes, as defined in the coverage group--: it will set the time fence for the option in the master plans page to No. 
+- **Yes, as defined in the coverage group**: the **Forecast plan** option will be set to **No**.
 
-
-
-For more information about [time fences parameters] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling)
+Read the [time fences parameters](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) topic for more information.
 
 ## Scheduling options
 
