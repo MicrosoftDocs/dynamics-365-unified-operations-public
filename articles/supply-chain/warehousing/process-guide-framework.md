@@ -288,6 +288,41 @@ The **addActionControls()** is then overridden to add 2 buttons – the **OK** b
 
 ![Process guide page builder code](media/process-guide-page-builder-code.png)
 
+```X++
+/// <summary>
+/// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
+/// and then confirm.
+/// </summary>
+[ProcessGuidePageBuilderName(classStr(ProdProcessGuideConfirmProductionOrderPageBuilder))]
+public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGuidePageBuilder
+{
+    protected void addDataControls(ProcessGuidePage _page)
+    {
+        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+        ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+        UnitOfMeasureSymbol inventUOM = InventTableModule::find(prodTable.ItemId, ModuleInventPurchSales::Invent).UnitId;
+        
+        _page.addLabel(ProcessGuideDataTypeNames::ProdIdLabelName, strFmt("@WAX1684", prodTable.ProdId), extendedTypeNum(ProdId));
+        _page.addLabel(ProcessGuideDataTypeNames::ItemInfo, this.generateItemInfoForProdId(pass.lookup(ProcessGuideDataTypeNames::ProdId)), extendedTypeNum(WHSRFUndefinedDataType));
+        _page.addLabel(ProcessGuideDataTypeNames::QtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId)), inventUOM), extendedTypeNum(WHSRFQuantityAndUOM));
+
+        if (PdsGlobal::pdsIsCWItem(prodTable.ItemId))
+        {
+            _page.addLabel(ProcessGuideDataTypeNames::InventQtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::pdsCWProposalStartupQty(prodTable.ProdId)), PdsCatchWeightItem::pdsCWUnitId(prodTable.ItemId)), extendedTypeNum(WHSRFQuantityAndUOM));
+        }
+    }
+
+    protected void addActionControls(ProcessGuidePage _page)
+    {
+        #ProcessGuideActionNames
+        _page.addButton(step.createAction(#ActionOK), true);
+        _page.addButton(step.createAction(#ActionCancelResetProcess));
+    }
+```
+
+
+
+
 ### Step 3: Start the production order
 
 The third step is where the business logic of starting the production order is executed. This step is somewhat different from the previous steps, in that, this step does not have a user interface. This step gets executed silently when the user clicks **OK** in the previous step.
@@ -297,6 +332,29 @@ The **ProcessGuideStepWithoutPrompt** abstract class implements the default beha
 The following code example shows the class and the **doExecute()** method implementation. The method simply retrieves the order ID and user ID from the session state and invokes the method to start this production order.
 
 ![doExecute() method implementation](media/class-and-method-implementation.png)
+
+```X++
+/// <summary>
+/// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
+/// </summary>
+[ProcessGuideStepName(classStr(ProdProcessGuideStartProductionOrderStep))]
+public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWithoutPrompt
+{
+    protected final void doExecute()
+    {
+        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+        WHSUserId userId = pass.lookup(ProcessGuideDataTypeNames::UserId);
+        ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+        WhsWorkExecute workExecute = WhsWorkExecute::construct();
+        workExecute.prodStartUp(prodTable.ProdId, ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId), userId);
+
+        this.addProcessCompletionMessage();
+
+        super();
+    }
+
+}
+```
 
 In case of an exception, the framework exception handling logic ensures that the process is rolled back to the previous step.
 
@@ -309,6 +367,18 @@ In case of an exception, the framework exception handling logic ensures that the
 The **ProcessGuideController** base class instantiates the **ProcessGuideNavigationAgentDefault** class, which relies on a pre-defined navigation route, which is a simple map of source and destination steps. For the production start scenario, because there is no conditional branching, this implementation would suffice. Therefore, you only need to override the **initializeNavigationRoute()** method to define the navigation route.
 
 ![Override method code](media/override-method-code.png)
+
+```X++
+    protected ProcessGuideNavigationRoute initializeNavigationRoute()
+    {
+        ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuidePromptProductionIdStep), classStr(ProdProcessGuideConfirmProductionOrderStep));
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuideConfirmProductionOrderStep), classStr(ProdProcessGuideStartProductionOrderStep));
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuideStartProductionOrderStep), classStr(ProdProcessGuidePromptProductionIdStep));
+
+        return navigationRoute;
+    }
+```
 
 There are processes where there will be conditional branching (based on user actions, or any other conditions). Such processes need to do the following:
 
@@ -324,7 +394,8 @@ There are processes where there will be conditional branching (based on user act
 
 Action classes represent user actions, so this example uses the **OK** action to show how the actions are created.
 
-``[ProcessGuideActionName(#ActionOK)]
+```X++
+[ProcessGuideActionName(#ActionOK)]
 public class ProcessGuideOKAction extends ProcessGuideAction
 {
     public final str label()
@@ -335,7 +406,8 @@ public class ProcessGuideOKAction extends ProcessGuideAction
      {
         step.executeOKAction();
       }
-  }``    
+  }
+  ```    
 
 The class must implement 2 abstract methods:
 
@@ -345,7 +417,9 @@ The class must implement 2 abstract methods:
 
 The actions are instantiated using **SysExtension** framework based on the **ProcessGuideActionName** attribute. Similar to the instantiation of page builders, the step class implements the default action factory, and it is possible to override that. The page builder adds a button control like this.
 
-``_page.addButton(step.createAction(#ActionOK), true);``
+```X++
+_page.addButton(step.createAction(#ActionOK), true);
+```
 
 In doing so, it asks the step to create an action class for the passed name and ties that action to the button.
 
@@ -360,6 +434,32 @@ To summarize everything that's been explained in this topic, here's a comprehens
 
         ![Construct navigation map](media/construct-navigation-map.png)
 
+```X++
+/// <summary>
+/// The <c>ProdProcessGuideProductionStartController</c> class is the controller class for the production order start process guide.
+/// </summary>
+[WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
+public class ProdProcessGuideProductionStartController extends ProcessGuideController
+{
+    protected ProcessGuideStepName initialStepName()
+    {
+        return classStr(ProdProcessGuidePromptProductionIdStep);
+    }
+
+    protected ProcessGuideNavigationRoute initializeNavigationRoute()
+    {
+        ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuidePromptProductionIdStep), classStr(ProdProcessGuideConfirmProductionOrderStep));
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuideConfirmProductionOrderStep), classStr(ProdProcessGuideStartProductionOrderStep));
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuideStartProductionOrderStep), classStr(ProdProcessGuidePromptProductionIdStep));
+
+        return navigationRoute;
+    }
+
+}
+```
+
+
 2.  **ProdProcessGuidePromptProductionIdStep**
 
     1.  Override **isComplete()** to specify when the step is considered complete.
@@ -367,18 +467,82 @@ To summarize everything that's been explained in this topic, here's a comprehens
 
 ![Specify page builder](media/specify-page-builder.png)
 
+```X++
+/// <summary>
+/// The <c>ProdProcessGuidePromptProductionIdStep</c> represents a step that 
+/// that prompts the user for a production order id.
+/// </summary>
+[ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))]
+public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
+{
+    protected boolean isComplete()
+    {
+        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+        ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
+
+        return (prodId != '');
+    }
+
+    protected ProcessGuidePageBuilderName pageBuilderName()
+    {
+        return classStr(ProdProcessGuidePromptProductionIdPageBuilder);
+    }
+
+}
+```
+
 3.  **ProdProcessGuidePromptProductionIdPageBuilder**
 
     1.  Override **addDataControls()** to add the **Prod ID** textbox.
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
 
         ![Override addActionControls](media/override-add-data-controls.png)
+        
+        
+```X++
+/// <summary>
+/// The <c>ProdProcessGuidePromptProductionIdPageBuilder</c> class builds a page 
+/// that prompts the user for a production order id.
+/// </summary>
+[ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))]
+public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder
+{
+    protected void addDataControls(ProcessGuidePage _page)
+    {
+        _page.addTextBox(ProcessGuideDataTypeNames::ProdId, "@SYS4398", extendedTypeNum(ProdId));
+    }
+
+    protected void addActionControls(ProcessGuidePage _page)
+    {
+        #ProcessGuideActionNames
+        _page.addButton(step.createAction(#ActionOK), true);
+        _page.addButton(step.createAction(#ActionCancelExitProcess));
+    }
+
+}
+```
 
 4.  **ProdProcessGuideConfirmProductionOrderStep**
 
     1.  Override **pageBuilderName()** to specify the page builder to be used.
 
         ![Override pageBuilderName](media/override-page-builder-name.png)
+        
+        ```X++
+        /// <summary>
+/// The <c>ProdProcessGuideConfirmProductionOrderStep</c> class represents the step for viewing production order
+/// details and confirming the same.
+/// </summary>
+[ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
+public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
+{    
+    protected ProcessGuidePageBuilderName pageBuilderName()
+    {
+        return classStr(ProdProcessGuideConfirmProductionOrderPageBuilder);
+    }
+
+}
+```
 
 3.  **ProdProcessGuideConfirmProductionOrderPageBuilder**
 
@@ -387,6 +551,40 @@ To summarize everything that's been explained in this topic, here's a comprehens
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
 
         ![Override addActionControls](media/override-controls.png)
+        
+ ```X++
+/// <summary>
+/// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
+/// and then confirm.
+/// </summary>
+[ProcessGuidePageBuilderName(classStr(ProdProcessGuideConfirmProductionOrderPageBuilder))]
+public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGuidePageBuilder
+{
+    protected void addDataControls(ProcessGuidePage _page)
+    {
+        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+        ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+        UnitOfMeasureSymbol inventUOM = InventTableModule::find(prodTable.ItemId, ModuleInventPurchSales::Invent).UnitId;
+        
+        _page.addLabel(ProcessGuideDataTypeNames::ProdIdLabelName, strFmt("@WAX1684", prodTable.ProdId), extendedTypeNum(ProdId));
+        _page.addLabel(ProcessGuideDataTypeNames::ItemInfo, this.generateItemInfoForProdId(pass.lookup(ProcessGuideDataTypeNames::ProdId)), extendedTypeNum(WHSRFUndefinedDataType));
+        _page.addLabel(ProcessGuideDataTypeNames::QtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId)), inventUOM), extendedTypeNum(WHSRFQuantityAndUOM));
+
+        if (PdsGlobal::pdsIsCWItem(prodTable.ItemId))
+        {
+            _page.addLabel(ProcessGuideDataTypeNames::InventQtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::pdsCWProposalStartupQty(prodTable.ProdId)), PdsCatchWeightItem::pdsCWUnitId(prodTable.ItemId)), extendedTypeNum(WHSRFQuantityAndUOM));
+        }
+    }
+
+    protected void addActionControls(ProcessGuidePage _page)
+    {
+        #ProcessGuideActionNames
+        _page.addButton(step.createAction(#ActionOK), true);
+        _page.addButton(step.createAction(#ActionCancelResetProcess));
+    }
+
+```
+
 
         > [!NOTE]
         > The **generateItemInfoForProdId()** method, which is used for generating the item information labels, is excluded from this topic. This method queries a few tables to get item ID, description, and dimensions. If you want a better understanding of **generateItemInfoForProdId()**, look at the source code.
@@ -397,6 +595,32 @@ To summarize everything that's been explained in this topic, here's a comprehens
         process completion message.
 
 ![ProdProcessGuideStartProductionOrderStep](media/add-process-completion-message.png)
+
+```X++
+/// <summary>
+/// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
+/// </summary>
+[ProcessGuideStepName(classStr(ProdProcessGuideStartProductionOrderStep))]
+public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWithoutPrompt
+{
+    protected final void doExecute()
+    {
+        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+        WHSUserId userId = pass.lookup(ProcessGuideDataTypeNames::UserId);
+        ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+        WhsWorkExecute workExecute = WhsWorkExecute::construct();
+        workExecute.prodStartUp(prodTable.ProdId, ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId), userId);
+
+        this.addProcessCompletionMessage();
+
+        super();
+    }
+
+}
+```
+
+
+
 
 > [!NOTE]
 > Note that a lot of the common patterns (regeneration of UI on error, setting process completion message, **OK** and **Cancel** behavior) have been moved to the framework – thus saving the application developer from writing boilerplate code that is both error prone, and has a risk of inconsistent behavior across processes. Where the scenario needs to deviate from the common path, though, the application developer is provided the option of overriding suitable methods – but then that is an intentional deviation that is both explicit and trackable.
