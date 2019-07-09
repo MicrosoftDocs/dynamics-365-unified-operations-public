@@ -64,7 +64,7 @@ Exercise 1: Create a new Service Bus Namespace
 
 2.  Select **All services \> Integration \> Service Bus**
 
-    ![](media/58aa3963f5ffe8ae88305a7bf8b6d903.png)
+    <img src="../../media/BEF-Howto-servicebus-01.png" width="100%">
 
 3.  Click **Add** to create a new **Service Bus Namespace** then fill in the
     parameters. Select a **Standard** pricing tier. You can create a new
@@ -73,7 +73,7 @@ Exercise 1: Create a new Service Bus Namespace
     **Note**. With **Basic** pricing tier you can create only Queues, you need
     to select a **Standard** pricing tier for Topics.
 
-    ![](media/30dd2841d862202727317cf9982da473.png)
+    <img src="../../media/BEF-Howto-servicebus-02.png" width="70%">
 
 4.  Once all parameters are filled click on **Create**
 
@@ -83,23 +83,23 @@ Exercise 2: Create a new Service Bus Topic and Subscription
 1.  **Select** your Service Bus you just created, then **Create** a new topic as
     shown on the image below.
 
-    ![](media/5b56bdc6e6dd4d29259cb783069a9f4a.png)
+    <img src="../../media/BEF-Howto-servicebus-03.png" width="70%">
 
 2.  **Select** the newly created Topic then **Create** a new **Subscription**
     called BE-USMF
 
-    ![](media/8a05a5ffe5cf6bc920ad8d701bc3ac56.png)
+    <img src="../../media/BEF-Howto-servicebus-04.png" width="70%">
 
 3.  **Go Back** to your Service Bus panel and **Create** a new **Shared Access
     Policy** to send events. Only **Send policy** is needed to send events to
     the Service Bus Topic.
 
-    ![](media/9f3f40e88232594870acb275c1cadcb1.png)
+    <img src="../../media/BEF-Howto-servicebus-05.png" width="70%">
 
 4.  **Select** the new send policy then copy the **Primary Connection Key** and
     save it into your OneNote for later usage.
 
-    ![](media/0e9635c33663916143b64f383bc9a79f.png)
+    <img src="../../media/BEF-Howto-servicebus-06.png" width="70%">
 
 Exercise 3: Create a Key Vault
 ==============================
@@ -113,7 +113,7 @@ secret form the key vault on behalf of F&O.
 
 1.  Select **All services \> Security \> key vaults**
 
-    <img src="../../media/BEF-Howto-Keyvault-01.png" width="70%">
+    <img src="../../media/BEF-Howto-Keyvault-01.png" width="100%">
 
 2.  **Create** a new key vault within your resource group and **default
     parameters**
@@ -142,7 +142,7 @@ used by F&O to retrieve Service Bus Secrets
 
 1.  Select **All services \> Security \> Azure Active Directory**
 
-    <img src="../../media/BEF-Howto-Keyvault-05.png" width="70%">
+    <img src="../../media/BEF-Howto-Keyvault-05.png" width="100%">
 
 2.  Select **App registrations (preview) \> New registration** then type a new
     name for your application
@@ -203,13 +203,13 @@ Exercise 5: Configure a Business Events Endpoint in F&O
 
 7.  Select **Azure Service Bus Topic**
 
-    ![](media/2dcca82a5dfb31028f03719bb45386fa.png)
+    <img src="../../media/BEF-Howto-servicebus-07.png" width="30%">
 
 8.  Click **Next**
 
 9.  Provide the necessary parameters value
 
-    ![](media/ed5a6d44757e763ac613c388685fa6fd.png)
+    <img src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
 10. Then click **OK**
 
@@ -223,11 +223,9 @@ whenever a customer payment has been posted for USMF. The message needs to
 contain some details as the Customer Account Number, Customer Name and Amount of
 payment.
 
-Lab actions
-
 1.  **Activate** the Customer payment posted business event for USMF.
 
-    ![](media/d6780f06b3361ed09db7ea8816e04432.png)
+    <img src="../../media/BEF-Howto-servicebus-09.png" width="30%">
 
 2.  Once you activate a Business Event with a new endpoint, F&O sends a test
     message to verify that the configuration was right and to cash the
@@ -241,24 +239,22 @@ Lab actions
     at least 1. If this is not the case **wait for the batch job** to pick up
     your message.
 
-    ![](media/9be9790339af8129718c4715d49d25e4.png)
+    <img src="../../media/BEF-Howto-servicebus-10.png" width="70%">
 
 5.  Select **All services\> Integration\> Logic Apps**
 
-    ![](media/564d481529c9929238cca29835b27fce.png)
+    <img src="../../media/BEF-Howto-servicebus-11.png" width="70%">
 
 6.  Then **Create** a new logic apps in your resource group
 
-    ![](media/a0da3c8a0aebc1b4921b8618003c46a2.png)
+    <img src="../../media/BEF-Howto-servicebus-12.png" width="70%">
 
 7.  Once your Logic Apps resource has been created choose option to create a
     **Blank Logic Apps**
 
-    ![](media/f66f8f0022b7c2b4f9c7b8ed5f0366a9.png)
-
 8.  Then **search** for **Service Bus** and **select** it.
 
-    ![](media/4484c59b1850ebbd586b86b613373936.png)
+    <img src="../../media/BEF-Howto-servicebus-13.png" width="70%">
 
 9.  **Select** trigger called **“When a message is received in a topic
     subscription (auto-complete)”**.
@@ -268,14 +264,14 @@ Lab actions
     consumers and will need a call to Service Bus “complete” API command to
     delete the message.
 
-    ![](media/0147785eca87ccad1b2b3b1aed31f72e.png)
+    <img src="../../media/BEF-Howto-servicebus-14.png" width="50%">
 
 10. As it is the first time Logic Apps will access your Service Bus it asks you
     for a **new connection** that will cash connection details as Service Bus
     Namespace URL and Credential. **Select** your **Service Bus namespace** and
     **give a name** to your new connection.
 
-    ![](media/f7191702dca295fa16895d715dfa7bd7.png)
+    <img src="../../media/BEF-Howto-servicebus-15.png" width="70%">
 
 11. Then choose the **RootManageSharedAccessKey** policy for your Logic Apps and
     select **Create**.
@@ -284,7 +280,7 @@ Lab actions
     instead. A best practice would have been to create a new policy for our use
     case with Listen permission only.
 
-    ![](media/ae324408282b819050bb819d75247c32.png)
+    <img src="../../media/BEF-Howto-servicebus-16.png" width="70%">
 
 12. **Select** your trigger parameters with the right **topic name** and
     **subscription name** you created.
@@ -292,36 +288,33 @@ Lab actions
     **Note** that this API polls Service Bus for new messages continually with a
     configurable recurrence (each 3 minutes by default). If the volume of
     messages is low this API will have a cost impact for unnecessary triggers as
-    Logic Apps is priced per trigger calls and actions run. However, a push
+    Logic Apps is priced per trigger calls and action runs. However, a push
     architecture is possible leveraging Event Grid in the middle. Service Bus
-    can emit events to Event Grid when there are messages in a queue or a
+    can push events to Event Grid when there are messages in a queue or a
     subscription. For more details please refer to following article:
-
     <https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept>
 
-    ![](media/6b599f92297d17fba22aeec612bdff5a.png)
+    <img src="../../media/BEF-Howto-servicebus-17.png" width="70%">
 
-13. **Select New Step** button to add a new action:
-
-    ![](media/3e23a40eaf2fb6870c436e31c48efefe.png)
+13. **Select New Step** button to add a new action.
 
 14. **Search** for **Parse Json** data operation. This step is needed to be able
     to parse our message with the schema of our data contract provided by F&O.
 
-    ![](media/bca42b29815107c993962bee32b31969.png)
+    <img src="../../media/BEF-Howto-servicebus-18.png" width="70%">
 
 15. The body content received form the service bus is encoded into **base64** so
     we need to transform into string before parsing the json payload. **Select**
     the **Content** input Field and on the side bar select **Expression** tab
     then type the following expression **Base64ToString().**
 
-    ![](media/f514c1f500b4b012949cb0c134943c63.png)
+    <img src="../../media/BEF-Howto-servicebus-19.png" width="70%">
 
 16. Put your **cursor** between the parenthesis and **select** the **Dynamic
     content** tab to look for the **Content of the message** from the previous
     service bus trigger. Then select the Content and click on **OK**.
 
-    ![](media/f13cbc0b84f583a2b501e83d6541a9bd.png)
+    <img src="../../media/BEF-Howto-servicebus-20.png" width="50%">
 
 17. Now we need to type in the schema of the contract received from F&O.
     However, F&O provides only a sample payload instead. Hence, we can use Logic
@@ -330,13 +323,13 @@ Lab actions
     link. This will download a text file. **Open** the text file and **copy**
     the content.
 
-    ![](media/3c26e6048126849dd9804dbe3c2a5e92.png)
+    <img src="../../media/BEF-Howto-servicebus-21.png" width="50%">
 
 18. **Go Back** to Logic Apps **click** on “**Use sample payload to generate
     schema**” link. Then **past** you’re the text file content and click on
     **Done**
 
-    ![](media/6ccdad1edc2e8cee7bbe2dd2495414db.png)
+    <img src="../../media/BEF-Howto-servicebus-22.png" width="70%">
 
 19. Depending on the quality of your sample payload, your generator will note
     recognize an Integer from a real especially if the real is provided as a
@@ -344,20 +337,20 @@ Lab actions
     if you need to change an “integer” filed into “number”. (in Json a “number”
     data type means real).
 
-![](media/f31847d40cbd248dfb890f9704457c04.png)
+    <img src="../../media/BEF-Howto-servicebus-23.png" width="70%">
 
-20.  Then choose another final action like to send an email to notify with
+20. Then choose another final action like to send an email to notify with
     customer payment details. **Search** for **send email** action, then login
     to your Office365 account.
 
-    ![](media/b9f0452cded69a53c8ca728397b5f5e9.png)
+    <img src="../../media/BEF-Howto-servicebus-24.png" width="70%">
 
-21.  Then fill-in the message with the required fields.
+21. Then fill-in the message with the required fields.
 
-    ![](media/52bb1538821beb163ae51cb7f7da503c.png)
+    <img src="../../media/BEF-Howto-servicebus-25.png" width="70%">
 
 22.  **Save** your logic apps.
 
-23.  Then final step is to **trigger the Business Event** by posting a customer payment
+23. Then final step is to **trigger the Business Event** by posting a customer payment
     then check whether the logic Apps runs and whether you receive an
     email with customer payment details
