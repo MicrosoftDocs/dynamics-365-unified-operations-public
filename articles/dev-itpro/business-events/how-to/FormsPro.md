@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Using Microsoft Forms Pro
+title: Use Microsoft Forms Pro
 description: This tutorial provides the steps to enable a scenario where a survey is sent to users when a product has been shipped. The survey is gathered using Microsoft Forms Pro.
 author: mufife, sunilg
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 
-# Using Microsoft Forms Pro with business events
+# Use Microsoft Forms Pro with business events
 
 [!include[banner](../../includes/banner.md)]
 
