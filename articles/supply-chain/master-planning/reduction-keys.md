@@ -142,14 +142,14 @@ For this example, you include the following demand forecast in a master plan.
 | Date       | Demand forecast |
 |------------|-----------------|
 | January 1  | 1,000           |
-| February 1 | 500             |
+| February 1 | 1,000             |
 
 You also create the following sales orders.
 
 | Date        | Sales order quantity |
 |-------------|----------------------|
-| January 15  | 500                  |
-| February 15 | 100                  |
+| January 15  | 200                  |
+| February 15 | 400                  |
 
 In this case, the following planned orders are created.
 
