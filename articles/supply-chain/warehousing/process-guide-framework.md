@@ -181,14 +181,18 @@ The task of instantiating the class is delegated to a step factory, which is inv
 
 -   Decorate the **ProdProcessGuidePromptProductionIdStep** class with a **ProcessGuideStepName** attribute.
 
-    ``[ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep``
+    ```X++
+    [ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
+    ```
 
 -   In the controller class, implement the abstract method **initialStepName()** to return the step name.
 
-    ``protected final ProcessGuideStepName initialStepName()
+    ```X++
+    protected final ProcessGuideStepName initialStepName()
     {
         return classStr(ProdProcessGuidePromptProductionIdStep);
-     }``   
+     }
+     ````   
     
 > [!NOTE]
 > The value in the **ProcessGuideStepName** attribute does not need to exactly match the class name as shown above. However, implementing this allows for uniformity and type-safety around cross-references when using the class. Using this naming convention is recommended.
@@ -426,109 +430,107 @@ To summarize everything that's been explained in this topic, here's a comprehens
     1.  Override **initialStepName()** to provide the name of the first step.
     2.  Override **initializeNavigationRoute()** to construct the navigation map.
 
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideProductionStartController</c> class is the controller class for the production order start process guide.
+        /// </summary>
+        [WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
+        public class ProdProcessGuideProductionStartController extends ProcessGuideController
+        {
+            protected ProcessGuideStepName initialStepName()
+            {
+                return classStr(ProdProcessGuidePromptProductionIdStep);
+            }
 
-```X++
-/// <summary>
-/// The <c>ProdProcessGuideProductionStartController</c> class is the controller class for the production order start process guide.
-/// </summary>
-[WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
-public class ProdProcessGuideProductionStartController extends ProcessGuideController
-{
-    protected ProcessGuideStepName initialStepName()
-    {
-        return classStr(ProdProcessGuidePromptProductionIdStep);
-    }
+            protected ProcessGuideNavigationRoute initializeNavigationRoute()
+            {
+                ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
+                navigationRoute.addFollowingStep(classStr(ProdProcessGuidePromptProductionIdStep), classStr(ProdProcessGuideConfirmProductionOrderStep));
+                navigationRoute.addFollowingStep(classStr(ProdProcessGuideConfirmProductionOrderStep), classStr(ProdProcessGuideStartProductionOrderStep));
+                navigationRoute.addFollowingStep(classStr(ProdProcessGuideStartProductionOrderStep), classStr(ProdProcessGuidePromptProductionIdStep));
 
-    protected ProcessGuideNavigationRoute initializeNavigationRoute()
-    {
-        ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
-        navigationRoute.addFollowingStep(classStr(ProdProcessGuidePromptProductionIdStep), classStr(ProdProcessGuideConfirmProductionOrderStep));
-        navigationRoute.addFollowingStep(classStr(ProdProcessGuideConfirmProductionOrderStep), classStr(ProdProcessGuideStartProductionOrderStep));
-        navigationRoute.addFollowingStep(classStr(ProdProcessGuideStartProductionOrderStep), classStr(ProdProcessGuidePromptProductionIdStep));
+                return navigationRoute;
+            }
 
-        return navigationRoute;
-    }
-
-}
-```
-
+        }
+        ```
 
 2.  **ProdProcessGuidePromptProductionIdStep**
 
     1.  Override **isComplete()** to specify when the step is considered complete.
     2.  Override **pageBuilderName()** to specify the page builder to be used.
 
-```X++
-/// <summary>
-/// The <c>ProdProcessGuidePromptProductionIdStep</c> represents a step that 
-/// that prompts the user for a production order id.
-/// </summary>
-[ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))]
-public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
-{
-    protected boolean isComplete()
-    {
-        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
-        ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuidePromptProductionIdStep</c> represents a step that 
+        /// that prompts the user for a production order id.
+        /// </summary>
+        [ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))]
+        public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
+        {
+            protected boolean isComplete()
+            {
+                WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+                ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
 
-        return (prodId != '');
-    }
+                return (prodId != '');
+            }
 
-    protected ProcessGuidePageBuilderName pageBuilderName()
-    {
-        return classStr(ProdProcessGuidePromptProductionIdPageBuilder);
-    }
+            protected ProcessGuidePageBuilderName pageBuilderName()
+            {
+                return classStr(ProdProcessGuidePromptProductionIdPageBuilder);
+            }
 
-}
-```
+        }
+        ```
 
 3.  **ProdProcessGuidePromptProductionIdPageBuilder**
 
     1.  Override **addDataControls()** to add the **Prod ID** textbox.
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
         
-```X++
-/// <summary>
-/// The <c>ProdProcessGuidePromptProductionIdPageBuilder</c> class builds a page 
-/// that prompts the user for a production order id.
-/// </summary>
-[ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))]
-public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder
-{
-    protected void addDataControls(ProcessGuidePage _page)
-    {
-        _page.addTextBox(ProcessGuideDataTypeNames::ProdId, "@SYS4398", extendedTypeNum(ProdId));
-    }
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuidePromptProductionIdPageBuilder</c> class builds a page 
+        /// that prompts the user for a production order id.
+        /// </summary>
+        [ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))]
+        public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder
+        {
+            protected void addDataControls(ProcessGuidePage _page)
+            {
+                _page.addTextBox(ProcessGuideDataTypeNames::ProdId, "@SYS4398", extendedTypeNum(ProdId));
+            }
 
-    protected void addActionControls(ProcessGuidePage _page)
-    {
-        #ProcessGuideActionNames
-        _page.addButton(step.createAction(#ActionOK), true);
-        _page.addButton(step.createAction(#ActionCancelExitProcess));
-    }
+            protected void addActionControls(ProcessGuidePage _page)
+            {
+                #ProcessGuideActionNames
+                _page.addButton(step.createAction(#ActionOK), true);
+                _page.addButton(step.createAction(#ActionCancelExitProcess));
+            }
 
-}
-```
+        }
+        ```
 
 4.  **ProdProcessGuideConfirmProductionOrderStep**
 
     1.  Override **pageBuilderName()** to specify the page builder to be used.
         
-```X++
-/// <summary>
-/// The <c>ProdProcessGuideConfirmProductionOrderStep</c> class represents the step for viewing production order
-/// details and confirming the same.
-/// </summary>
-[ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
-public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
-{    
-    protected ProcessGuidePageBuilderName pageBuilderName()
-    {
-        return classStr(ProdProcessGuideConfirmProductionOrderPageBuilder);
-    }
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideConfirmProductionOrderStep</c> class represents the step for viewing production order
+        /// details and confirming the same.
+        /// </summary>
+        [ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
+        public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
+        {    
+            protected ProcessGuidePageBuilderName pageBuilderName()
+            {
+                return classStr(ProdProcessGuideConfirmProductionOrderPageBuilder);
+            }
 
-}
-```
+        }
+        ```
 
 3.  **ProdProcessGuideConfirmProductionOrderPageBuilder**
 
