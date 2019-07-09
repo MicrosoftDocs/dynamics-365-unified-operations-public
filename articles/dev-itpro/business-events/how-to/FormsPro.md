@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Use Microsoft Forms Pro
-description: This topic provides the steps to enable a scenario where a survey is sent to users when a product has been shipped. The survey is gathered using Microsoft Forms Pro.
+title: Use Microsoft Forms Pro with business events
+description: This topic goes through a scenario where a survey is sent to users when a product has been shipped. The survey information is gathered by using Microsoft Forms Pro.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 07/09/2019
@@ -31,45 +31,38 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This topic will walk you thorugh the scenario where Microsoft Forms Pro can be used to create a survey, which can be used with business events. In this scenario a survey is sent to users when a product has been shipped. The survey is gathered using Forms Pro.
+This topic goes through a scenario where Microsoft Forms Pro is used to create a survey that can be used with business events. Specifically, in the scenario that is described here, a survey is sent to customers when a product has been shipped. The survey information is gathered by using Forms Pro.
 
-## Prerequisite
-If you have not used Forms Pro, the [Forms Pro documentation](https://docs.microsoft.com/en-us/forms-pro/) is a prerequisite to first learn how to use Foms Pro.
+## Prerequisites
+
+If you haven't used Forms Pro before, you should first read the [Forms Pro documentation](https://docs.microsoft.com/forms-pro/) to learn how to use it.
 
 ## Scenario
-1. Create a new survey. Based on the title of the survey, suggested questions will be provided.
 
-    ![Microsoft Forms Pro](../../media/Forms_Pro1.png)
+1. Create a survey. Based on the title that you enter for the survey, Forms Pro suggests survey questions.
 
-2. The sales order tracks the shipment, and when the product is shipped, the status is changed to **Delivered**.
+    ![Suggested survey questions in Forms Pro](../../media/Forms_Pro1.png)
 
-    ![Sales Order](../../media/SalesOrder1.png)
+2. The sales order tracks the shipment. When the product has been shipped, the status of the sales order is changed to **Delivered**.
 
-     Configure an alert on the sales order such that, whenever the **Status** field is changed, it creates an alert. Be sure to enable the alert to **Send External**. This will ensure that the alert is sent out as a business event.
+    ![Sales order that has a status of Delivered](../../media/SalesOrder1.png)
 
-     ![Alert](../../media/Alerts1.png)
+    Therefore, configure an alert on the sales order, so that an alert is created whenever the value of the **Status** field is changed. Be sure to set the **Send externally** option to **Yes**, so that the alert will be sent out as a business event.
 
-3. The Flow is shown below which gets triggered by the business event every time the status on a sales order is updated. The Flow then goes on to use the Forms connector to get the survey to the customer email address that is registered on the order. The customer email address and other needed information must be in the payload of the business event. If the payload does not have the required data as needed by a given scenario, the payload can be extended to include such fields. This is covered in the [Business events developer documentation](../business-events/business-events-dev-doc.md).
+    ![Alert](../../media/Alerts1.png)
 
-4. Since Flow is being used to orchestrate this scenario, let Flow subscribe to the **When a change based alert occurs** business event directly, as opposed to activating the business event in Finance and Operations.
+3. Set up the flow that will be triggered by the business event whenever the status of the sales order is updated (see the illustration in the next step). After it's triggered, the flow will use the Forms connector to send the survey to the customer email address that is registered on the sales order.
 
-      ![Flow](../../media/Flow1.png)
+    The customer email address and other information that is required for the scenario must be in the payload of the business event. If the payload doesn't have this data, it can be extended so that it includes the appropriate fields. For more information, see the [Business events developer documentation](../business-events/business-events-dev-doc.md).
 
-5. Once the Flow is completed, it is ready to go in action. Once the sales order's status is updated, the Flow gets triggered and it will send the survey. As users fill in the survey and submit, Forms Pro also shows some analytics.
+4. Because Microsoft Flow is used to orchestrate this scenario, don't activate the **When a change based alert occurs** business event in Microsoft Dynamics 365 for Finance and Operations. Instead, set up Microsoft Flow so that it subscribes directly to the business event.
 
-     ![Microsoft Forms Pro](../../media/Survey1.png)
+    ![Flow](../../media/Flow1.png)
 
+5. After you've finished setting up the flow, it will be triggered and send out the survey whenever the sales order's status is updated.
 
-      ![Microsoft Forms Pro](../../media/Forms_Pro2.png)
+    ![Survey](../../media/Survey1.png)
 
+    As users fill in the survey and submit it, Forms Pro shows some analytics.
 
-
-
-
-
-
-
-
-
-
-
+    ![Survey analytics in Forms Pro](../../media/Forms_Pro2.png)
