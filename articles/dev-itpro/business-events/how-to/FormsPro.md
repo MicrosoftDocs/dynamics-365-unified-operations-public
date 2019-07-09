@@ -39,7 +39,7 @@ This tutorial will walk you thorugh the scenario where Forms Pro can be used to 
 
 I created a new survey, and just from the title of the survey, it pretty much built the entire set of satisfaction questions for me through the suggestions.
 
-![Microsoft Forms Pro](../media/Forms_Pro1.png)
+![Microsoft Forms Pro](../../media/Forms_Pro1.png)
 
 On the sales order in Finance & Operations, we are tracking the shipment, and when the product is shipped, the status is changed to **Delivered**.
 
