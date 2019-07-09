@@ -27,15 +27,13 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 
-# Using Microsoft Forms Pro
+# Using Microsoft Forms Pro with business events
 
 [!include[banner](../../includes/banner.md)]
 
-This morning I got a notification that an order had been shipped, and it had a link to a survey.  This made me think – how hard is this to do in Dynamics 365 for Finance & Operations?
+This topic will walk you thorugh the scenario where Forms Pro can be used to create a survey, which can be used with business events.  
 
-If you have not tried Forms Pro yet, this documentation [Microsoft Forms Pro](https://docs.microsoft.com/en-us/forms-pro/) is a pre-requisite to first learn how to use Foms Pro.
-
-This tutorial will walk you thorugh the scenario where Forms Pro can be used to create the survey and be used with business events in Finance & Operations to make this working end to end.  
+If you have not tried Forms Pro yet, the [Microsoft Forms Pro documentation](https://docs.microsoft.com/en-us/forms-pro/) is a prerequisite to first learn how to use Foms Pro.
 
 I created a new survey, and just from the title of the survey, it pretty much built the entire set of satisfaction questions for me through the suggestions.
 
