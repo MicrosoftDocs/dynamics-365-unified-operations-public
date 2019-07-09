@@ -457,10 +457,10 @@ The second step is to define a table that has the fields that are returned from 
 
     | Field type    | Field name            | EDT/enum type               |
     |---------------|-----------------------|-----------------------------|
-    | String        | First Name            | FirstName (EDT)             |
-    | String        | Last Name             | LastName (EDT)              |
+    | String        | FirstName             | FirstName (EDT)             |
+    | String        | LastName              | LastName (EDT)              |
     | Container     | Image                 | Bitmap (EDT)                |
-    | Int64         | Vehicle               | FMTVehicleRecID (EDT)       |
+    | Int64         | Vehicle               | FMTVehicleRecId (EDT)       |
     | Utc Date Time | StartDate             | StartDateTime (EDT)         |
     | Utc Date Time | EndDate               | EndDateTime (EDT)           |
     | Int64         | SysDataCacheContextId | SysDataCacheContextId (EDT) |
