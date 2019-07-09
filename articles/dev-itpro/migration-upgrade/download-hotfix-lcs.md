@@ -65,7 +65,7 @@ Based on your product and version, you will have different update options from L
 ### Dynamics 365 for Finance and Operations
 - **Application version 8.1 and later** - All updates for version 8.1 and later will be a cumulative, combined binary update of all of the application and platform updates. There will be no granular X++ updates starting with this release.  
 
-     Based on your environment version and the [service update availability](../fin-and-ops/get-started/public-preview-releases.md), you will have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  
+     Based on your environment version and the [service update availability](../../fin-and-ops/get-started/public-preview-releases.md), you will have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  
 
     You may see one or more of the following update options. 
 
