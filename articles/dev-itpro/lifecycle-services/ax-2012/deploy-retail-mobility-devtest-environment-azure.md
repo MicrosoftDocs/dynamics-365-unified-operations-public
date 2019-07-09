@@ -196,22 +196,22 @@ Before you complete the following procedures, make sure that the following prere
 
 Log on to the server or virtual machine where the AOS is installed and complete the following steps.
 
-1.  Set up endpoints for the server or virtual machine. For instructions on how to set up endpoints for a virtual machine, see the “Getting Started� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
-2.  Configure the Real-time service and update the profile. For instructions, see the “Configure Real-time Service� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
-3.  Run the scheduler jobs to populate the channel database. For instructions, see the “Run Scheduler Jobs to Populate Channel Database� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+1.  Set up endpoints for the server or virtual machine. For instructions on how to set up endpoints for a virtual machine, see the “Getting Started” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+2.  Configure the Real-time service and update the profile. For instructions, see the “Configure Real-time Service” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+3.  Run the scheduler jobs to populate the channel database. For instructions, see the “Run Scheduler Jobs to Populate Channel Database” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
 
 ### Complete configuration tasks on the MOBIL virtual machine
 
 From the **Cloud-hosted environments** page, select your Retail mobility environment. Then scroll to the right and click the **MOBIL-&lt;GUID&gt;** link to log on to the virtual machine. After you have logged on to the machine, complete the following steps:
 
-1.  If using a self-signed certificate, install the certificate on the MOBIL-&lt;GUID&gt; virtual machine. For instructions, see the “Install the Cert on the External Machine� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
-2.  Update Async Client to use the URL of the Async Server. For instructions, see the “Install CDX Async Client� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
-3.  Set up an endpoint for port 35080. For instructions on how to set up endpoints for a virtual machine, see the “Getting Started� section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+1.  If using a self-signed certificate, install the certificate on the MOBIL-&lt;GUID&gt; virtual machine. For instructions, see the “Install the Cert on the External Machine” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+2.  Update Async Client to use the URL of the Async Server. For instructions, see the “Install CDX Async Client” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
+3.  Set up an endpoint for port 35080. For instructions on how to set up endpoints for a virtual machine, see the “Getting Started” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
 4.  Configure Windows Firewall to exclude port 35080. For more information about Windows Firewall, see the Windows documentation.
 
 ### Install Modern POS on external devices
 
-Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones. For instructions about how to install it, see [Install Retail Modern POS](https://technet.microsoft.com/EN-US/library/dn741434.aspx).
+Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones. For instructions about how to install it, see [Install Retail Modern POS](https://technet.microsoft.com/library/dn741434.aspx).
 
 ## 6. Learn more about the service accounts for this environment
 The following sections provide information about the service accounts that were created when you deployed the environment.
