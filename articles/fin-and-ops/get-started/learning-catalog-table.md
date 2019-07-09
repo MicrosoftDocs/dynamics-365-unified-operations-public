@@ -13,7 +13,7 @@ Find the right online training, in person workshops, and events for your role as
     :::column:::
         <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
-        ## Business and Technical Decision Makers
+        ### Business and Technical Decision Makers
 
         Do you decide whether to invest in new technologies? Start here.
 
@@ -26,72 +26,141 @@ Find the right online training, in person workshops, and events for your role as
     :::column-end:::
     :::column:::
 
-        <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+        ### Business users
 
-        ## Business users
+        Did you just get a new application to use? Start here.
 
-        Did you just get a new application to use? Start here
         [Get an introduction](learning-catalog-business-user.md)
+
         [Distribution](learning-catalog-business-user.md)
+
         [Financial management](learning-catalog-business-user.md)
+
         [Human resources](learning-catalog-business-user.md)
-        [Manufacturing]
-        [Retail]
-        [Sales]
-        [Purchasing]
-        [Distribution]
+
+        [Manufacturing](learning-catalog-business-user.md)
+
+        [Retail](learning-catalog-business-user.md)
+
+        [Sales](learning-catalog-business-user.md)
+
+        [Purchasing](learning-catalog-business-user.md)
+
+        [Distribution](learning-catalog-business-user.md)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        ![WPF platform](images/platform-wpf.png)
 
-        ### Windows Presentation Foundation (WPF)
+        ### Administrators
 
-        Develop accessible apps and tools on the established platform for managed Windows applications with a XAML UI model and the .NET Framework.
+        Do you need to keep data flowing round-the-clock?
 
-        [Accessibility Best Practices](https://docs.microsoft.com/dotnet/framework/ui-automation/accessibility-best-practices)
+        [Start here](learning-catalog-administrator.md)
 
-        [UI Automation Fundamentals](https://docs.microsoft.com/dotnet/framework/ui-automation/index)
+        [Onboarding](learning-catalog-administrator.md)
 
-        [UI Automation Providers for Managed Code](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-providers-for-managed-code)
+        [Deployment](learning-catalog-administrator.md)
 
-        [UI Automation Clients for Managed Code](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-clients-for-managed-code)
+        [Upgrade](learning-catalog-administrator.md)
 
-        [UI Automation Control Patterns](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-control-patterns)
+        [Support](learning-catalog-administrator.md)
 
-        [UI Automation Text Pattern](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-text-pattern)
+        [Maintenance](learning-catalog-administrator.md)
 
-        [UI Automation Control Types](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-control-types)
-
-        [UI Automation Specification and Community Promise](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-specification-and-community-promise)
         :::column-end:::
     :::column:::
-        ![Windows Forms platform apps](images/platform-winforms.png)
 
-        ### Windows Forms (WinForms)
+        ### Developers
 
-        Develop accessible apps and tools for managed Windows applications with a XAML UI model and the .NET Framework.
+        Do you need to keep data flowing round-the-clock?
 
-        [Windows Forms Accessibility](https://docs.microsoft.com/dotnet/framework/winforms/advanced/windows-forms-accessibility)
+        [Get started](learning-catalog-developer.md)
 
-        [Creating an Accessible Windows Application](https://docs.microsoft.com/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)
+        [Build](learning-catalog-developer.md)
 
-        [Properties on Windows Forms Controls That Support Accessibility Guidelines](https://docs.microsoft.com/dotnet/framework/winforms/advanced/properties-on-windows-forms-controls-that-support-accessibility-guidelines)
+        [Connect](learning-catalog-developer.md)
 
-        [Providing Accessibility Information for Controls on a Windows Form](https://docs.microsoft.com/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+        [Extend](learning-catalog-developer.md)
     :::column-end:::
-<!--         
-    :::column:::
-![.NET platform](images/platform-dotnet.png)
-
-        ### .NET
-
-        Develop accessible apps and tools for managed Windows applications with the .NET Framework.
-    :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
 
+        ### Implementation Project Managers
+
+        Are you in charge of making sure an implementation goes smoothly? Start here.
+
+        [Core platform knowledge](learning-catalog-project-manager.md)
+
+        [Financial management](learning-catalog-project-manager.md)
+
+        [Human resource management](learning-catalog-project-manager.md)
+
+        [Manufacturing](learning-catalog-project-manager.md)
+
+        [Public](learning-catalog-project-manager.md)
+
+        [Sales](learning-catalog-project-manager.md)
+
+        [Purchasing](learning-catalog-project-manager.md)
+
+        [Distribution](learning-catalog-project-manager.md)
+
     :::column-end:::
- -->    
+    :::column:::
+
+        ### Functional consultants
+
+        Did you just get a new application to use? Start here.
+
+        [Get an introduction](learning-catalog-functional-consultant.md)
+
+        [Distribution](learning-catalog-functional-consultant.md)
+
+        [Financial management](learning-catalog-functional-consultant.md)
+
+        [Human resources](learning-catalog-functional-consultant.md)
+
+        [Manufacturing](learning-catalog-functional-consultant.md)
+
+        [Purchasing](learning-catalog-functional-consultant.md)
+
+        [Retail](learning-catalog-functional-consultant.md)
+
+        [Sales](learning-catalog-functional-consultant.md)
+
+
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+        ### Partner Sales and Marketing
+
+       Are you responsible for helping your customers buy the right solution? Start here.
+
+        [Ramp up on business value](learning-catalog-partner-sales.md)
+
+        [Get an overview of our technical capabilities](learning-catalog-partner-sales.md)
+
+        [Keep up with what's new](learning-catalog-partner-sales.md)
+
+        [Industry case studies](learning-catalog-partner-sales.md)
+
+
+    :::column-end:::
+    :::column:::
+
+        ### Solution architects
+
+        Do you design solutions that meet your customers' needs and budgets? Start here.
+
+        [Integration architectures](learning-catalog-solution-architect.md)
+
+        [Key solution patterns and practices](learning-catalog-solution-architect.md)
+
+
+    :::column-end:::
 :::row-end:::
