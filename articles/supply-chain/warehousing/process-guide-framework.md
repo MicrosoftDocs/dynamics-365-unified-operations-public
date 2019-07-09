@@ -536,39 +536,38 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
         
-    ```X++
-    /// <summary>
-    /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
-    /// and then confirm.
-    /// </summary>
-    [ProcessGuidePageBuilderName(classStr(ProdProcessGuideConfirmProductionOrderPageBuilder))]
-    public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGuidePageBuilder
-    {
-        protected void addDataControls(ProcessGuidePage _page)
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
+        /// and then confirm.
+        /// </summary>
+        [ProcessGuidePageBuilderName(classStr(ProdProcessGuideConfirmProductionOrderPageBuilder))]
+        public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGuidePageBuilder
         {
-            WhsrfPassthrough pass = controller.parmSessionState().parmPass();
-            ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
-            UnitOfMeasureSymbol inventUOM = InventTableModule::find(prodTable.ItemId, ModuleInventPurchSales::Invent).UnitId;
-
-            _page.addLabel(ProcessGuideDataTypeNames::ProdIdLabelName, strFmt("@WAX1684", prodTable.ProdId), extendedTypeNum(ProdId));
-            _page.addLabel(ProcessGuideDataTypeNames::ItemInfo, this.generateItemInfoForProdId(pass.lookup(ProcessGuideDataTypeNames::ProdId)), extendedTypeNum(WHSRFUndefinedDataType));
-            _page.addLabel(ProcessGuideDataTypeNames::QtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId)), inventUOM), extendedTypeNum(WHSRFQuantityAndUOM));
-
-            if (PdsGlobal::pdsIsCWItem(prodTable.ItemId))
+            protected void addDataControls(ProcessGuidePage _page)
             {
-                _page.addLabel(ProcessGuideDataTypeNames::InventQtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::pdsCWProposalStartupQty(prodTable.ProdId)), PdsCatchWeightItem::pdsCWUnitId(prodTable.ItemId)), extendedTypeNum(WHSRFQuantityAndUOM));
+                WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+                ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+                UnitOfMeasureSymbol inventUOM = InventTableModule::find(prodTable.ItemId, ModuleInventPurchSales::Invent).UnitId;
+
+                _page.addLabel(ProcessGuideDataTypeNames::ProdIdLabelName, strFmt("@WAX1684", prodTable.ProdId), extendedTypeNum(ProdId));
+                _page.addLabel(ProcessGuideDataTypeNames::ItemInfo, this.generateItemInfoForProdId(pass.lookup(ProcessGuideDataTypeNames::ProdId)), extendedTypeNum(WHSRFUndefinedDataType));
+                _page.addLabel(ProcessGuideDataTypeNames::QtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId)), inventUOM), extendedTypeNum(WHSRFQuantityAndUOM));
+
+                if (PdsGlobal::pdsIsCWItem(prodTable.ItemId))
+                {
+                    _page.addLabel(ProcessGuideDataTypeNames::InventQtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::pdsCWProposalStartupQty(prodTable.ProdId)), PdsCatchWeightItem::pdsCWUnitId(prodTable.ItemId)), extendedTypeNum(WHSRFQuantityAndUOM));
+                }
             }
-        }
 
-        protected void addActionControls(ProcessGuidePage _page)
-        {
-            #ProcessGuideActionNames
-            _page.addButton(step.createAction(#ActionOK), true);
-            _page.addButton(step.createAction(#ActionCancelResetProcess));
-        }
+            protected void addActionControls(ProcessGuidePage _page)
+            {
+                #ProcessGuideActionNames
+                _page.addButton(step.createAction(#ActionOK), true);
+                _page.addButton(step.createAction(#ActionCancelResetProcess));
+            }
 
-    ```
-
+        ```
 
         > [!NOTE]
         > The **generateItemInfoForProdId()** method, which is used for generating the item information labels, is excluded from this topic. This method queries a few tables to get item ID, description, and dimensions. If you want a better understanding of **generateItemInfoForProdId()**, look at the source code.
@@ -578,28 +577,28 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
     1.  Override **doExecute()** to perform the production start process and add the
         process completion message.
 
-```X++
-/// <summary>
-/// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
-/// </summary>
-[ProcessGuideStepName(classStr(ProdProcessGuideStartProductionOrderStep))]
-public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWithoutPrompt
-{
-    protected final void doExecute()
-    {
-        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
-        WHSUserId userId = pass.lookup(ProcessGuideDataTypeNames::UserId);
-        ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
-        WhsWorkExecute workExecute = WhsWorkExecute::construct();
-        workExecute.prodStartUp(prodTable.ProdId, ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId), userId);
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
+        /// </summary>
+        [ProcessGuideStepName(classStr(ProdProcessGuideStartProductionOrderStep))]
+        public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWithoutPrompt
+        {
+            protected final void doExecute()
+            {
+                WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+                WHSUserId userId = pass.lookup(ProcessGuideDataTypeNames::UserId);
+                ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+                WhsWorkExecute workExecute = WhsWorkExecute::construct();
+                workExecute.prodStartUp(prodTable.ProdId, ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId), userId);
 
-        this.addProcessCompletionMessage();
+                this.addProcessCompletionMessage();
 
-        super();
-    }
+                super();
+            }
 
-}
-```
+        }
+        ```
 
 > [!NOTE]
 > Note that a lot of the common patterns (regeneration of UI on error, setting process completion message, **OK** and **Cancel** behavior) have been moved to the framework – thus saving the application developer from writing boilerplate code that is both error prone, and has a risk of inconsistent behavior across processes. Where the scenario needs to deviate from the common path, though, the application developer is provided the option of overriding suitable methods – but then that is an intentional deviation that is both explicit and trackable.
