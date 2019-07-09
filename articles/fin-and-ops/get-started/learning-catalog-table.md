@@ -17,7 +17,7 @@ Find the right online training, in person workshops, and events for your role as
 
         Do you decide whether to invest in new technologies? Start here.
 
-        [Join us at an eventg](learning-catalog-business-user.md)
+        [Join us at an event](learning-catalog-business-user.md)
 
         [Get started](learning-catalog-business-user.md)
 
@@ -74,7 +74,7 @@ Find the right online training, in person workshops, and events for your role as
 
         ### Developers
 
-        Do you need to keep data flowing round-the-clock?
+        Do you need to build an application, connect to a new data source, or extend core functionality? Start here.
 
         [Get started](learning-catalog-developer.md)
 
@@ -113,7 +113,7 @@ Find the right online training, in person workshops, and events for your role as
 
         ### Functional consultants
 
-        Did you just get a new application to use? Start here.
+        Are you an implementation expert for a business domain? Start here.
 
         [Get an introduction](learning-catalog-functional-consultant.md)
 
@@ -139,7 +139,7 @@ Find the right online training, in person workshops, and events for your role as
 
         ### Partner Sales and Marketing
 
-       Are you responsible for helping your customers buy the right solution? Start here.
+        Are you responsible for helping your customers buy the right solution? Start here.
 
         [Ramp up on business value](learning-catalog-partner-sales.md)
 
