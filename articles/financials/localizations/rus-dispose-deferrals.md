@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.1
 4. On the Action Pane, select **Lines** to open the **Journal voucher** page.
 5. On the Action Pane, select **Group operations** \> **Disposal** to open the **Disposal** dialog box.
 6. In the **Disposal date** field, select the disposal date of the transaction.
-7. Set the **Retirement on life time** option to **Yes** to generate the disposal based on the disposal date that is specified in the deferrals card.
+7. Set the **Retirement on life time** option to **Yes** to remove of the **Disposal date** value in the deferrals value model.
 8. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can set up the selection criteria.
 9. Select **OK** to return to the **Journal voucher** page. The disposal voucher details are shown for the selected deferrals on the specified date.
 10. To dispose of one deferral voucher, on the **Overview** FastTab, select **New** to open the **Create new line** dialog box.
