@@ -87,8 +87,8 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
     -   If you're using Internet Explorer, a webpage will open. Right-click in the page, and then click **View source**. Then save the contents of the page source to a file path.
 
 11. In a text editor such as Notepad++, open the XML file that you just saved, and follow these steps.
-    1.  Search for the following line: **&lt;Table name="RetailCustTable"&gt;**. There are two instances, at approximately line 29 and line 744.
-    2.  Add the following code after the last line in both **&lt;Table name="RetailCustTable"&gt;** code blocks. You add the code after the **&lt;/Table&gt;** tag.
+    1.  Search for the following line: **&lt;Table name=“RetailCustTable”&gt;**. There are two instances, at approximately line 29 and line 744.
+    2.  Add the following code after the last line in both **&lt;Table name=“RetailCustTable”&gt;** code blocks. You add the code after the **&lt;/Table&gt;** tag.
 
             <Table name="RetailCustPreference">
                 <LinkGroup>
@@ -101,6 +101,6 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
 14. In the dialog box that opens, click **Browse**, select the XML file that you just edited, and then click **OK** to import the file.
 15. Close the **Retail channel schema** page.
 16. Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler job**.
-17. On the **Scheduler job** page, click **1010** to select the "Customers" job.
+17. On the **Scheduler job** page, click **1010** to select the “Customers” job.
 18. On the **Subjobs** tab, click **New**, and then enter **RetailCustPreference** as the subjob number. Click **Save**.
 19. On the <strong>Retail channel schema</strong> page, select **Dynamics 365 for Retail** as the schema name, and then click **Generate queries**.
